@@ -1,98 +1,137 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Lägg till ett meddelande i en resa
-description: Lär dig hur du lägger till ett meddelande under en resa
+title: Lägg till en inbyggd kanalåtgärd till en resa
+description: Lär dig hur du lägger till en inbyggd kanalåtgärd till en resa
 feature: Journeys, Activities, Channels Activity
 topic: Content Management
 role: User
 level: Intermediate
-keywords: resa, meddelande, push, sms, e-post, i appen
+keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: f81fde0076fc8689c689fae7a0ee8c7aa9fdbeed
+source-git-commit: 4d6890c8e0e8673ca5d793b9bf9a6cbb7add8ee5
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
 
-# Skicka e-post, meddelanden i appen, push-meddelanden och textmeddelanden {#add-a-message-in-a-journey}
+# Använd inbyggda kanalåtgärder {#add-a-message-in-a-journey}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_activity"
->title="Meddelandeaktivitet"
->abstract="Journey Optimizer har inbyggda meddelandefunktioner. Du kan enkelt lägga till ett push-meddelande (SMS/MMS), en meddelandeaktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
+>title="Inbyggd kanalåtgärd"
+>abstract="Journey Optimizer har inbyggda funktioner för kanalåtgärder. Du kan enkelt lägga till en utgående (e-post, SMS/MMS), push) eller inkommande (In-app, webb, kodbaserad upplevelse, innehållskort) aktivitet under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
-[!DNL Journey Optimizer] har inbyggda meddelandefunktioner. Du kan enkelt lägga till en push-funktion, ett SMS/MMS-meddelande, en aktivitet i appen eller ett e-postmeddelande under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
+[!DNL Journey Optimizer] har inbyggda funktioner för kanalåtgärder. Du kan enkelt lägga till en utgående (e-post, SMS/MMS), push) eller inkommande (In-app, webb, kodbaserad upplevelse, innehållskort) aktivitet under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
 
-Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
+>[!NOTE]
+>
+>Du kan också ange specifika åtgärder för att skicka meddelanden till dig. [Läs mer](#recommendation)
 
-* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. Läs mer i det här [avsnittet](../action/action.md).
+Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
+
+1. Starta din resa med en [Event](general-events.md)- eller [Read Audience](read-audience.md)-aktivitet.
+
+1. Dra och släpp en utgående (**e-post**, **push**, **SMS**) eller en inkommande (**In-app**, **web**, **kodbaserad upplevelse**, **innehållskort**) från avsnittet **Åtgärder** till arbetsytan.
+
+   ![](assets/journey-web-activity.png)
+
+1. Konfigurera aktiviteten.
+
+   * Lär dig de detaljerade stegen för att skapa meddelandeinnehåll enligt följande:
+
+     <table style="table-layout:fixed">
+      <tr style="border: 0;">
+      <td>
+      <a href="../email/create-email.md">
+      <img alt="Lead" src="../assets/do-not-localize/email.jpg">
+      </a>
+      <div><a href="../email/create-email.md"><strong>Skapa e-post</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../push/create-push.md">
+      <img alt="Sällan" src="../assets/do-not-localize/push.jpg">
+      </a>
+      <div>
+      <a href="../push/create-push.md"><strong>Skapa push-meddelanden<strong></a>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../sms/create-sms.md">
+      <img alt="Validering" src="../assets/do-not-localize/sms.jpg">
+      </a>
+      <div>
+      <a href="../sms/create-sms.md"><strong>Skapa textmeddelanden (SMS/MMS)</strong></a>
+      </div>
+      <p>
+      </td>
+      </tr>
+      </table>
+
+   * Lär dig de detaljerade stegen för att skapa en inkommande åtgärd på följande sätt:
+
+     <table style="table-layout:fixed">
+      <tr style="border: 0;">
+      <td>
+      <a href="../in-app/create-in-app.md">
+      <img alt="Lead" src="../assets/do-not-localize/in-app.jpg">
+      </a>
+      <div><a href="../in-app/create-in-app.md"><strong>Skapa meddelanden i programmet</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../web/create-web.md">
+      <img alt="Lead" src="../assets/do-not-localize/web-create.jpg">
+      </a>
+      <div><a href="../web/create-web.md"><strong>Skapa webbupplevelser</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../content-card/create-content-card.md">
+      <img alt="Lead" src="../assets/do-not-localize/sms-config.jpg">
+      </a>
+      <div><a href="../content-card/create-content-card.md"><strong>Skapa innehållskort</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../code-based/create-code-based.md">
+      <img alt="Sällan" src="../assets/do-not-localize/web-design.jpg">
+      </a>
+      <div>
+      <a href="../code-based/create-code-based.md"><strong>Skapa kodbaserade upplevelser<strong></a>
+      </div>
+      <p>
+      </td>
+      </tr>
+      </table>
+
+     >[!NOTE]
+     >
+     >Varje inkommande meddelandeaktivitet levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
+
+## Rekommendation {#recommendation}
+
+[!DNL Journey Optimizer] har inbyggd meddelandefunktion. Med anpassade åtgärder kan du emellertid konfigurera anslutningen för ett tredjepartssystem för att skicka meddelanden eller API-anrop.
+
+* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. [Läs mer](../action/action.md)
 
 * Om du arbetar med Campaign och Journey Optimizer, se följande avsnitt:
 
    * [[!DNL Journey Optimizer] och Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] och Campaign Standard](../action/acs-action.md)
 
-Följ stegen nedan om du vill lägga till ett meddelande under en resa:
-
-1. Starta din resa med en [Event](general-events.md)- eller [Read Audience](read-audience.md)-aktivitet.
-
-1. Dra och släpp en **e-postadress**, en **i appen**, en **SMS** eller en **push** -aktivitet på arbetsytan från **Åtgärder** på paletten.
-
-1. Konfigurera aktiviteten.
-
-   Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
-
-   <table style="table-layout:fixed">
-   <tr style="border: 0;">
-   <td>
-   <a href="../email/create-email.md">
-   <img alt="Lead" src="../assets/do-not-localize/email.jpg">
-   </a>
-   <div><a href="../email/create-email.md"><strong>Skapa e-post</strong>
-   </div>
-   <p>
-   </td>
-   <td>
-   <a href="../in-app/create-in-app.md">
-   <img alt="Lead" src="../assets/do-not-localize/in-app.jpg">
-   </a>
-   <div><a href="../in-app/create-in-app.md"><strong>Skapa meddelanden i programmet</strong>
-   </div>
-   <p>
-   </td>
-   <td>
-   <a href="../push/create-push.md">
-   <img alt="Sällan" src="../assets/do-not-localize/push.jpg">
-   </a>
-   <div>
-   <a href="../push/create-push.md"><strong>Skapa push-meddelanden<strong></a>
-   </div>
-   <p>
-   </td>
-   <td>
-   <a href="../sms/create-sms.md">
-   <img alt="Validering" src="../assets/do-not-localize/sms.jpg">
-   </a>
-   <div>
-   <a href="../sms/create-sms.md"><strong>Skapa textmeddelanden (SMS/MMS)</strong></a>
-   </div>
-   <p>
-   </td>
-   </tr>
-   </table>
-
->[!NOTE]
->
->Varje inkommande meddelandeaktivitet (meddelande i appen, kodbaserad upplevelse eller kort) levereras med en 3-dagars **Wait** -aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
->
-
 ## Uppdatera liveinnehåll{#update-live-content}
 
-Du kan uppdatera innehållet i ett meddelande (e-post, i appen, push, SMS) under en direktresa.
+Ni kan uppdatera innehållet i en inbyggd kanalåtgärd i en direktresa.
 
-Det gör du genom att öppna din liveresa, välja meddelandeaktiviteten och klicka på **Redigera innehåll**.
+Det gör du genom att öppna din direktresa, välja kanalaktiviteten och klicka på **Redigera innehåll**.
 
 ![](assets/add-a-message2.png)
 
@@ -114,10 +153,12 @@ Observera att för aktiviteten i appen kan ändringar göras i innehållet medan
 >[!NOTE]
 >
 >Den här funktionen är inte aktiverad som standard. Du kan kontakta din Adobe-representant för att aktivera den.
+>
+>Funktionen för optimering av sändningstid gäller endast för e-post- och push-kanaler.
 
 ### Om optimering vid sändning {#about-send-time}
 
-Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. Använd vår maskininlärningsmodell för att schemalägga personliga sändningstider för varje användare så att de kan utöka öppnings- och klickfrekvensen för dina meddelanden.
+Adobe Journey Optimizer funktion för optimering av sändningstid, som drivs av Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka ett **e-postmeddelande** eller **push-meddelande** för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. Använd vår maskininlärningsmodell för att schemalägga personliga sändningstider för varje användare så att de kan utöka öppnings- och klickfrekvensen för dina meddelanden.
 
 Modellen för optimering av sändningstid (Send-Time Optimization) innehåller information om dina Adobe Journey Optimizer-data och tittar på användarnivå som är öppen (för e-post och push) och klickar (för e-post) för att avgöra när kunderna är mest benägna att interagera med dina meddelanden. För optimering av sändningstid krävs minst en månads meddelandespårningsdata för att kunna ge välgrundade rekommendationer. För varje användare väljer systemet automatiskt den bästa tiden med följande poäng:
 
