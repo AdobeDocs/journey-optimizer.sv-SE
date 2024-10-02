@@ -6,16 +6,16 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1043'
 ht-degree: 1%
 
 ---
 
 # Redigera webbinnehåll {#edit-web-content}
 
-När du har [lagt till en webbåtgärd](create-web.md#create-web-campaign) i kampanjen kan du redigera innehållet på webbplatsen med webbdesignern.
+När du [har lagt till en webbupplevelse](create-web.md#create-web-experience) på en resa eller en kampanj kan du redigera innehållet på din webbplats med webbdesignern.
 
 [Lär dig hur du skapar en webbkampanj i den här videon](#video)
 
@@ -29,7 +29,7 @@ Gå till följande avsnitt för att lära dig mer om varje ämne:
 
 * [Hantera ändringar](manage-web-modifications.md)
 
-* [Övervaka era webbkampanjer](monitor-web-campaigns.md)
+* [Övervaka era webbkampanjer](monitor-web-experiences.md)
 
 ## Arbeta med webbdesignern {#work-with-web-designer}
 
@@ -45,9 +45,9 @@ Gå till följande avsnitt för att lära dig mer om varje ämne:
 >abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
-Följ stegen nedan när du vill börja skapa webbkampanjer.
+Följ stegen nedan för att börja skapa din webbupplevelse.
 
-1. Välj **[!UICONTROL Edit content]** på fliken **[!UICONTROL Action]** i [kampanjen](create-web.md#create-web-campaign).<!--change screen with rule-->
+1. Välj **[!UICONTROL Edit content]** på fliken **[!UICONTROL Action]** i kampanjen eller webbupplevelseaktiviteten under resan.<!--change screen with rule-->
 
    ![](assets/web-campaign-edit-content.png)
 

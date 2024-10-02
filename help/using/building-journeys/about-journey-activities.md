@@ -9,10 +9,10 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 9562a194244e2a3323680d98cc8aa5ed65d93a67
+source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 9%
+source-wordcount: '554'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
 På paletten, till vänster på skärmen, under **[!UICONTROL Events]** och **[!UICONTROL Orchestration]**, hittar du kategorin **[!UICONTROL Actions]**. Följande åtgärdsaktiviteter är tillgängliga:
 
-* [E-post, SMS, push](../building-journeys/journeys-message.md)
+* [Inbyggda kanalåtgärder](../building-journeys/journeys-message.md)
 * [Anpassade åtgärder](../building-journeys/using-custom-actions.md)
 * [Hoppa](../building-journeys/jump.md)
 
@@ -62,7 +62,16 @@ På paletten, till vänster på skärmen, under **[!UICONTROL Events]** och **[!
 
 Dessa aktiviteter representerar olika tillgängliga kommunikationskanaler. Du kan kombinera dem för att skapa ett flerkanalsscenario.
 
-Om du har konfigurerat anpassade åtgärder visas de också här. [Läs mer](../building-journeys/using-custom-actions.md)).
+<!--If you have configured custom actions, they also appear here. [Learn more](../building-journeys/using-custom-actions.md)-->
+
+Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
+
+* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en särskild anpassad åtgärd. [Läs mer](../action/action.md)
+
+* Om du arbetar med Campaign och Journey Optimizer, se följande avsnitt:
+
+   * [[!DNL Journey Optimizer] och Campaign v7/v8](../action/acc-action.md)
+   * [[!DNL Journey Optimizer] och Campaign Standard](../action/acs-action.md)
 
 ## Bästa praxis {#best-practices}
 

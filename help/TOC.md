@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: aeafadeac819d25518de879747866a71d032b4b0
+source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2054'
 ht-degree: 25%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 25%
       + [Villkor](using/building-journeys/condition-activity.md)
       + [Vänta](using/building-journeys/wait-activity.md)
       + [Läs målgrupp](using/building-journeys/read-audience.md)
-      + [E-post, i appen, push, SMS](using/building-journeys/journeys-message.md)
+      + [Inbyggda kanalåtgärder](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
       + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-v7-v8.md)
@@ -262,7 +262,7 @@ ht-degree: 25%
    + Skapa webbsidor {#author-web-pages}
       + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
       + [Hantera ändringar](using/web/manage-web-modifications.md)
-      + [Övervaka era webbkampanjer](using/web/monitor-web-campaigns.md)
+      + [Övervaka era webbupplevelser](using/web/monitor-web-experiences.md)
       + [Skapa single-page-appar](using/web/web-spa.md)
 + Kodbaserad upplevelse {#code-based-experience}
    + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)

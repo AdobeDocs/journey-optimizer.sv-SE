@@ -6,30 +6,66 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
+source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 1%
+source-wordcount: '1129'
+ht-degree: 2%
 
 ---
 
 # Skapa kodbaserade upplevelser {#create-code-based}
 
-I [!DNL Journey Optimizer] kan du för närvarande bara skapa kodbaserade upplevelser i **kampanjer**.
+I [!DNL Journey Optimizer] kan du skapa kodbaserade upplevelser under en resa eller en kampanj.
 
 Specifika skyddsutkast och rekommendationer för kodbaserade upplevelser finns på [den här sidan](code-based-prerequisites.md).
 
-## Skapa en kodbaserad kampanj {#create-code-based-campaign}
+## Lägg till en kodbaserad upplevelse genom en resa eller en kampanj {#create-code-based-experience}
 
-Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampanj.
+Följ stegen nedan för att börja bygga upp din kodbaserade upplevelse genom en resa eller en kampanj.
 
-1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**. [Läs mer](../campaigns/create-campaign.md)
+>[!BEGINTABS]
+
+>[!TAB Lägg till en kodbaserad upplevelse på en resa]
+
+Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
+
+1. [Skapa en resa](../building-journeys/journey-gs.md).
+
+1. Starta din resa med en [Event](../building-journeys/general-events.md)- eller [Read Audience](../building-journeys/read-audience.md)-aktivitet.
+
+1. Dra och släpp en **[!UICONTROL Code-based experience]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
+
+   ![](assets/code-based-activity-journey.png)
+
+   >[!NOTE]
+   >
+   >Eftersom **Kodbaserad upplevelse** är en inkommande meddelandeaktivitet levereras den med en 3-dagars **Wait**-aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
+
+1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
+
+1. Välj eller skapa den [kodbaserade upplevelsekonfigurationen](code-based-configuration.md) som ska användas.
+
+   ![](assets/code-based-activity-config.png)
+
+1. Markera knappen **[!UICONTROL Edit content]** och redigera ditt innehåll efter behov med hjälp av anpassningsredigeraren. [Läs mer](#edit-code)
+
+1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+
+1. När kodbasupplevelsen är klar kan du slutföra konfigurationen och publicera resan för att aktivera den. [Läs mer](../building-journeys/publishing-the-journey.md)
+
+Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
+
+>[!TAB Skapa en kodbaserad upplevelsekampanj]
+
+Följ stegen nedan för att börja skapa din **kodbaserade**-upplevelse via en kampanj.
+
+1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
 
 1. Välj den typ av kampanj som du vill köra
 
-   * **Schemalagd - marknadsföring**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka marknadsföringsmeddelanden. De konfigureras och körs från användargränssnittet.
+   * **[!UICONTROL Scheduled - Marketing]**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföringsmeddelanden**. De konfigureras och körs från användargränssnittet.
 
-   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
+   * **[!UICONTROL API-triggered - Marketing/Transactional]**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marketing** - eller **transactional** -meddelanden, d.v.s. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](../campaigns/api-triggered-campaigns.md)
 
 1. Slutför stegen för att skapa en kampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
@@ -41,7 +77,11 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 1. Redigera ditt innehåll med personaliseringsredigeraren. [Läs mer](#edit-code)
 
-   ![](assets/code-based-campaign-edit-content.png)
+   <!--![](assets/code-based-campaign-edit-content.png)-->
+
+Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
+
+>[!ENDTABS]
 
 ## Redigera kodinnehållet {#edit-code}
 
@@ -51,7 +91,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Kom igång med personaliseringsredigeraren"
 
-1. Välj **[!UICONTROL Edit code]** på skärmen för kampanjversionen.
+1. Välj **[!UICONTROL Edit code]** från reseaktiviteten eller kampanjversionen.
 
    ![](assets/code-based-campaign-edit-code.png)
 
@@ -71,7 +111,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
    Du kan också spara en del av kodinnehållet som fragment. [Lär dig hur](../content-management/fragments.md#save-as-expression-fragment)
 
-1. I kodbaserade kampanjer kan ni använda funktionen för upplevelsebeslut. Välj ikonen **[!UICONTROL Decisions]** i det vänstra fältet och klicka på **[!UICONTROL Create decision]**. [Läs mer](../experience-decisioning/create-decision.md)
+1. Med kodbaserade upplevelser kan ni använda funktionen för upplevelsebeslut. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md) <!--UI labels TBC + TBC for journeys (visible in UI so probably confirmed) -->
 
    ![](assets/code-based-campaign-create-decision.png)
 
@@ -84,7 +124,7 @@ Följ stegen nedan för att börja skapa en kodbaserad upplevelse genom en kampa
 
 Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen tillämpas ändringarna på webbsidan eller appen.
 
-## Testa den kodbaserade kampanjen {#test-code-based-campaign}
+## Testa den kodbaserade upplevelsen {#test-code-based-experience}
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview"
@@ -97,7 +137,7 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
 >
 >Du måste ha testprofiler tillgängliga för att simulera vilka erbjudanden som ska levereras till dem. Lär dig hur du [skapar testprofiler](../audience/creating-test-profiles.md).
 
-1. Välj **[!UICONTROL Simulate content]** i anpassningsredigeraren eller på skärmen för att redigera innehåll.
+1. Välj **[!UICONTROL Simulate content]** på resan eller i kampanjen, antingen från personaliseringsredigeraren eller från redigeringsfönstret för innehåll.
 
    ![](assets/code-based-campaign-simulate.png)
 
@@ -112,17 +152,43 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
 
     When copying the test URI, the content displayed is the one personalized for the test profile used when the content simulation was generated in [!DNL Journey Optimizer].-->
 
-## Aktivera den kodbaserade kampanjen {#activate-code-based-campaign}
+## Ge liv åt er kodbaserade upplevelse {#code-based-experience-live}
 
 >[!IMPORTANT]
 >
 >Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
 
-När du har definierat din kodbaserade kampanj och redigerat innehållet som du vill med den [kodbaserade redigeraren](#edit-code) kan du granska och aktivera den. Följ stegen nedan.
+När du har definierat din kodbaserade upplevelse och redigerat ditt innehåll efter behov med den [kodbaserade redigeraren](#edit-code) kan du aktivera din resa eller kampanj för att göra ändringarna synliga för din målgrupp.
+
+Du kan också förhandsgranska det kodbaserade upplevelseinnehållet innan du publicerar det. [Läs mer](#test-code-based-experience)
 
 >[!NOTE]
 >
->Du kan också förhandsgranska kampanjinnehållet innan du aktiverar det. [Läs mer](#test-code-based-campaign)
+>Om du aktiverar en kodbaserad resa/kampanj som påverkar samma sidor som en annan resa eller kampanj som redan är aktiv, kommer alla ändringar att tillämpas på innehållet.
+>
+>Om flera kodbaserade resor eller kampanjer uppdaterar samma element i innehållet prioriteras den högsta prioriterade resan/kampanjen.
+
+### Publish är en kodbaserad resa {#publish-code-based-journey}
+
+Följ stegen nedan för att göra din kodbaserade upplevelse levande från en resa.
+
+1. Kontrollera att din resa är giltig och att det inte finns något fel. [Läs mer](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
+
+1. Välj alternativet **[!UICONTROL Publish]** i den övre högra menyn på resan.
+
+   ![](assets/code-based-journey-publish.png)
+
+   >[!NOTE]
+   >
+   >Läs mer om publicering av resor i [det här avsnittet](../building-journeys/publishing-the-journey.md).
+
+Din kodbaserade resa har statusen **[!UICONTROL Live]** och är nu synlig för den valda målgruppen. Varje mottagare av resan kan se dina ändringar.
+
+>[!NOTE]
+>
+>När du har klickat på **[!UICONTROL Publish]** kan det ta upp till 15 minuter innan ändringarna är tillgängliga live.
+
+### Aktivera en kodbaserad kampanj {#activate-code-based-campaign}
 
 1. Välj **[!UICONTROL Review to activate]** från din kodbaserade kampanj.
 
@@ -136,83 +202,94 @@ När du har definierat din kodbaserade kampanj och redigerat innehållet som du 
 
    >[!NOTE]
    >
-   >När du har klickat på **[!UICONTROL Activate]** kan det ta upp till en minut innan kodbaserade kampanjändringar är tillgängliga direkt på din plats.
+   >Läs mer om hur du aktiverar kampanjer i [det här avsnittet](../campaigns/review-activate-campaign.md).
 
-Din kodbaserade kampanj har statusen **[!UICONTROL Live]** och är nu synlig för den valda målgruppen. Alla mottagare av kampanjen kan se dina ändringar.
+Din kodbaserade kampanj har statusen **[!UICONTROL Live]** och är nu synlig för den valda målgruppen. Alla mottagare av kampanjen kan se de ändringar du har lagt till i innehållet.
 
 >[!NOTE]
 >
->Om du har definierat ett schema för den kodbaserade kampanjen har den statusen **[!UICONTROL Scheduled]** tills startdatumet och starttiden nås.
+>När du har klickat på **[!UICONTROL Activate]** kan det ta upp till 15 minuter innan dina ändringar är tillgängliga live.
 >
->Om du aktiverar en kodbaserad kampanj som påverkar samma platser som en annan kampanj som redan är aktiv, tillämpas alla ändringar på dina platser.
+>Om du har definierat ett schema för den kodbaserade kampanjen har den statusen **[!UICONTROL Scheduled]** tills startdatumet och starttiden nås.
 
-Läs mer om hur du aktiverar kampanjer i [det här avsnittet](../campaigns/review-activate-campaign.md).
+## Stoppa en kodbaserad resa eller kampanj {#stop-code-based-experience}
 
-## Stoppa en kodbaserad kampanj {#stop-code-based-campaign}
+När en kodbaserad upplevelse är aktiv kan ni stoppa den för att hindra publiken från att se ändringarna. Följ stegen nedan.
 
-När en kodbaserad kampanj är aktiv kan ni stoppa den för att hindra publiken från att se ändringarna. Följ stegen nedan.
+1. Välj en direktresa eller kampanj i respektive lista.
 
-1. Välj en livekampanj i listan.
+1. Utför lämplig åtgärd utifrån ditt fall:
 
-1. Välj **[!UICONTROL Stop campaign]** på den översta menyn.
+   * Välj **[!UICONTROL Stop campaign]** på den översta kampanjmenyn.
 
-   ![](assets/code-based-campaign-stop.png)
+     ![](assets/code-based-campaign-stop.png)
+
+   * Klicka på knappen **[!UICONTROL More]** på den översta menyn på resan och välj **[!UICONTROL Stop]**.
+
+     ![](assets/code-based-journey-stop.png)
 
 1. De ändringar du har lagt till visas inte längre för den målgrupp du har definierat.
 
 >[!NOTE]
 >
->När en kodbaserad kampanj har stoppats kan du inte redigera eller aktivera den igen. Du kan bara duplicera den och aktivera den duplicerade kampanjen.
+>När en kodbaserad resa eller kampanj har stoppats kan du inte redigera eller aktivera den igen. Du kan bara duplicera den och aktivera den duplicerade resan/kampanjen.
 
-## Kodbaserade kampanjrapporter
+<!--Reporting TBC
 
-Du kan få tillgång till kodbaserade kampanjrapporter från kampanjsammanfattningsskärmen.
+## Check the code-based experience reports {#check-code-based-reports}
 
-Globala rapporter visar händelser som inträffade för minst två timmar sedan och täcker händelser under en vald tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
+Once your code-based experience is live, you can check the **[!UICONTROL Code-based]** tab of the  [Journey report](../reports/journey-global-report-cja.md#web-cja) and [Campaign report](../reports/campaign-global-report-cja.md#web) to compare elements such as the number of experiences delivered to your audience, and the number of engagements with your content.-->
 
-### Kodbaserad live-rapport {#live-report-code-based}
+<!--## Code-based reports
 
-Från din kampanj **[!UICONTROL Live report]** anger fliken **[!UICONTROL Code-based experience]** huvudinformationen i förhållande till dina appar eller webbsidor. [Läs mer i live-rapporten](../reports/campaign-live-report.md)
+You can access code-based journey or campaign reports from the summary screen.
 
-+++Läs mer om de olika mätvärden och widgetar som är tillgängliga för den kodbaserade upplevelserapporten.
+Global reports display events that occurred at least two hours ago and cover events over a selected time period. In comparison, Live reports focus on events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence.
 
-KPI:erna för **[!UICONTROL Code-based experience performance]** detaljerar huvudinformationen i relation till besökarnas engagemang med dina kodbaserade upplevelser, som:
+### Code-based live report {#live-report-code-based}
 
-* **[!UICONTROL Impressions]**: Totalt antal upplevelser som levereras till alla användare.
+From your campaign **[!UICONTROL Live report]**, the **[!UICONTROL Code-based experience]** tab details the main information relative to your apps or web pages. [Learn more on live report](../reports/campaign-live-report.md)
 
-* **[!UICONTROL Interactions]**: totalt antal ärenden för din app/sida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
++++Learn more on the different metrics and widgets available for the Code-based experience report.
 
-Diagrammet **[!UICONTROL Code-based experience summary]** visar hur dina upplevelser har utvecklats (visningar, unika visningar och interaktioner) de senaste 24 timmarna.
+The **[!UICONTROL Code-based experience performance]** KPIs detail the main information relative to your visitors' engagement with your code-based experiences, such as:
 
-<!--The **[!UICONTROL Interactions by element]** table details the main information relative to your visitors' engagement with the various elements on your app/pages.-->
+* **[!UICONTROL Impressions]**: total number of experiences delivered to all users.
+
+* **[!UICONTROL Interactions]**:  total number of engagements with your app/page. This includes any actions taken by the users, such as clicks or any other interactions.
+
+The **[!UICONTROL Code-based experience summary]** graph shows the evolution of your experiences (impressions, unique impressions and interactions) for the last 24 hours.
+
+TBC: The **[!UICONTROL Interactions by element]** table details the main information relative to your visitors' engagement with the various elements on your app/pages.
 +++
 
-### Kodbaserad global rapport {#global-report-code-based}
+### Code-based global report {#global-report-code-based}
 
-Kodbaserad global kampanjrapport kan nås direkt från din kampanj med knappen **[!UICONTROL View report]**. [Läs mer om global rapport](../reports/campaign-global-report.md)
+Code-based campaign global report can be accessed directly from your journey or campaign with the **[!UICONTROL View report]** button. [Learn more on global report](../reports/campaign-global-report.md)
 
-Från din kampanj **[!UICONTROL Global report]** anger fliken **[!UICONTROL Code-based experience]** huvudinformationen i förhållande till dina appar eller webbsidor.
+From your Campaign **[!UICONTROL Global report]**, the **[!UICONTROL Code-based experience]** tab details the main information relative to your apps or web pages.
 
 ![](assets/code-based-campaign-global-report.png)
 
-<!--image-->
+Add image TBC
 
-+++Läs mer om de olika mätvärden och widgetar som är tillgängliga för den kodbaserade upplevelserapporten.
++++Learn more on the different metrics and widgets available for the Code-based experience report.
 
-KPI:erna för **[!UICONTROL Code-based experience performance]** detaljerar huvudinformationen i relation till besökarnas engagemang med dina upplevelser, som:
+The **[!UICONTROL Code-based experience performance]** KPIs detail the main information relative to your visitors' engagement with your experiences, such as:
 
-* **[!UICONTROL Unique impressions]**: antal unika användare som upplevelsen har levererats till.
+* **[!UICONTROL Unique impressions]**: number of unique users to whom the experience was delivered.
 
-* **[!UICONTROL Impressions]**: Totalt antal upplevelser som levereras till alla användare.
+* **[!UICONTROL Impressions]**: total number of experiences delivered to all users.
 
-* **[!UICONTROL Interactions]**: procentandel av engagemang med din app/sida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
+* **[!UICONTROL Interactions]**: percentage of engagements with your app/page. This includes any actions taken by the users, such as clicks or any other interactions.
 
-Diagrammet **[!UICONTROL Code-based experience summary]** visar hur dina upplevelser har utvecklats (unika intryck, visningar och interaktioner) under den aktuella perioden.
+The **[!UICONTROL Code-based experience summary]** graph shows the evolution of your experiences (unique impressions, impressions and interactions) for the concerned period.
 
-<!--The **[!UICONTROL Interactions by element]** table details the main information relative to your visitors' engagement with the various elements on your apps/pages.-->
+TBC: The **[!UICONTROL Interactions by element]** table details the main information relative to your visitors' engagement with the various elements on your apps/pages.
 +++
 
-<!--
+TBC video if existing
+
 ## How-to video{#video}
 
 The video below shows how to create a code-based campaign, configure its properties, review, and publish it.
