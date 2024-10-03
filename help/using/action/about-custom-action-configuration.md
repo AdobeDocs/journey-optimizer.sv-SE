@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 7dda0468c91a6e5e74426179bd363bb4dede7b33
+source-git-commit: b429082f44090033e0fdef64f05ab1e9964297b6
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 2%
 
 ---
@@ -153,13 +153,13 @@ Du kan definiera nyttolastparametern så som beskrivs nedan:
 
    Aktivera alternativet **[!UICONTROL Allow NULL values]** om du vill behålla Null-värden i det externa anropet. Observera att sändande arrayer av int, string osv. med Null-värden i stöds inte fullständigt. Följande array med heltal `[1, null, 2, 3]` skickas som `[1, 2, 3]` även om det här alternativet är markerat. Om arrayen är null skickas den dessutom som en tom array.
 
-1. Klistra in ett exempel på nyttolasten som returneras av anropet i avsnittet **[!UICONTROL Response]**. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Mer information om hur du använder API-anropssvar i anpassade åtgärder finns på [den här sidan](../action/action-response.md).
+   ![](assets/null-values.png)
 
-![](assets/action-response2bis.png){width="70%" align="left"}
+1. Klistra in ett exempel på nyttolasten som returneras av anropet i avsnittet **[!UICONTROL Response]**. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Mer information om hur du använder API-anropssvar i anpassade åtgärder finns på [den här sidan](../action/action-response.md).
 
 >[!NOTE]
 >
->Fältnamn i nyttolasten får inte innehålla &quot;.&quot; tecken. De kan inte börja med tecknet &quot;$&quot;.
+>Fältnamn i nyttolasten får inte innehålla en punkt `.` eller börja med ett `$`-tecken.
 >
 
 ![](assets/customactionpayloadmessage2.png)
