@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: d43ae701-6e3b-4dcf-8da1-11c07be10fcf
-source-git-commit: b80d794f3782056a10310c65144a8eecbddaaf3e
+source-git-commit: 66504f7affb767d5b102cd1a91934147638c68e5
 workflow-type: tm+mt
-source-wordcount: '3821'
+source-wordcount: '3829'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Tabellen **[!UICONTROL Journey Statistics]** innehåller en detaljerad sammanfat
 
 ![](assets/cja-journey-canvas.png)
 
-Med widgeten **[!UICONTROL Journey Canvas]** kan du visuellt spåra sökvägen för dina målprofiler när de navigerar genom din resa.
+Med widgeten **[!UICONTROL Journey Canvas]** kan du visuellt spåra sökvägen för dina målprofiler när de navigerar genom din resa. [Läs mer i Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)
 
 Förbättra anpassningen av arbetsytan med följande alternativ:
 
