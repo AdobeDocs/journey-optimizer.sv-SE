@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 9f990d2b311237e49c3b93201cd7e9c2b02facef
+source-git-commit: 7dda0468c91a6e5e74426179bd363bb4dede7b33
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1617'
 ht-degree: 2%
 
 ---
@@ -149,7 +149,9 @@ Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen
 
 Du kan definiera nyttolastparametern så som beskrivs nedan:
 
-1. I avsnittet **[!UICONTROL Request]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT. <!--DOCAC-10562 - Enable the **[!UICONTROL Allow NULL values]** option to keep Null values in the external call. Note that sending arrays of int, string, etc. with Null values within is not fully supported. For example the following array of integers [1, null, 2, 3] is sent as [1, 2, 3] even if this option is checked.-->
+1. I avsnittet **[!UICONTROL Request]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT.
+
+   Aktivera alternativet **[!UICONTROL Allow NULL values]** om du vill behålla Null-värden i det externa anropet. Observera att sändande arrayer av int, string osv. med Null-värden i stöds inte fullständigt. Följande array med heltal `[1, null, 2, 3]` skickas som `[1, 2, 3]` även om det här alternativet är markerat. Om arrayen är null skickas den dessutom som en tom array.
 
 1. Klistra in ett exempel på nyttolasten som returneras av anropet i avsnittet **[!UICONTROL Response]**. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Mer information om hur du använder API-anropssvar i anpassade åtgärder finns på [den här sidan](../action/action-response.md).
 
@@ -170,9 +172,9 @@ I fältkonfigurationen måste du:
 
    * **Konstant** betyder att parameterns värde definieras av en teknisk person i åtgärdskonfigurationsfönstret. Värdet är alltid detsamma oavsett resa. Den varierar inte och marknadsföraren kan inte se den när den anpassade åtgärden används under resan. Det kan till exempel vara ett ID som tredjepartssystemet förväntar sig. I så fall ställs konstantvärdet in i fältet till höger om växlingskonstanten/variabeln.
 
-   * **Variabel** innebär att parameterns värde varierar. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
+   * **Variabel** innebär att parameterns värde kan variera. Marknadsförare som använder den här anpassade åtgärden under en resa kan skicka det värde de vill ha eller ange var värdet för den här parametern ska hämtas (t.ex. från händelsen, från Adobe Experience Platform). I så fall är fältet till höger om växlingskonstanten/variabeln den etikett marknadsförarna kommer att se under resan för att namnge den här parametern.
 
-<!--DOCAC-10562 - For optional parameters, enable the **[!UICONTROL Is optional]** option at the end of the line. By checking this option, you mark the parameter as non-mandatory, and let the journey practitioners choose to fill it or not when authoring that custom action in a journey.-->
+  Aktivera alternativet **[!UICONTROL Is optional]** i slutet av raden för valfria parametrar. Genom att markera det här alternativet markerar du parametern som icke-obligatorisk och låter resenärerna välja att fylla i den eller inte när de redigerar den anpassade åtgärden under en resa.
 
 >[!NOTE]
 >
