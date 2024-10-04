@@ -5,9 +5,9 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 9688a0303726d706106ba7c89157529e02ecbfca
+source-git-commit: b29179518dec9a4c034e6dd21972aa2145839739
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '391'
 ht-degree: 17%
 
 ---
@@ -20,7 +20,7 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB September-version]
+>[!TAB 24 september ]
 
 Septemberversionen är nu aktiv, inklusive innehållskort för mobilappar och webbplatser, godkännandepolicyer för resor och kampanjer (LA), globala exitkriterier för resor med mera.
 
