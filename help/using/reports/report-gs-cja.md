@@ -9,18 +9,18 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
-source-git-commit: 40fde856e76d7e2d609ba90f93d4e07fe90f858f
+source-git-commit: bccbf4af4610486dd2d4141b902737c6328b1034
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '364'
+ht-degree: 1%
 
 ---
 
 # Kom igång med det nya rapporteringsgränssnittet {#channel-report-gs-cja}
 
->[!NOTE]
+>[!IMPORTANT]
 >
-> Om du vill återgå till Journey Optimizer traditionella rapportering växlar du bara till alternativet **[!UICONTROL Use new Experience]**.
+>Rapportering i Adobe Journey Optimizer är för närvarande standardiserat med UTC. Möjligheten att anpassa tidszonen för rapportering kommer att introduceras i en framtida version.
 
 Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.
 
@@ -39,6 +39,10 @@ Journey Optimizer rapportering har en förbättrad interoperabilitet med Custome
 * Om du vill ange mätvärden för alla kampanjer och resor inom din miljö, öppnar du **översiktsrapporten** genom att gå till **[!UICONTROL Reports]**-menyn i **[!UICONTROL Journey Management]** -avsnittet. [Läs mer i översiktsrapporten](channel-report-cja.md)
 
   ![](assets/gs-cja-report-1.png)
+
+>[!NOTE]
+>
+> Om du vill återgå till Journey Optimizer traditionella rapportering växlar du bara till alternativet **[!UICONTROL Use new Experience]**.
 
 ## Förhandskrav {#prerequisites}
 
