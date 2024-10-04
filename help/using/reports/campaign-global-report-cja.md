@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
-source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
+source-git-commit: d816b12ea88631d6682cf444e176622f8fc36d85
 workflow-type: tm+mt
-source-wordcount: '4234'
+source-wordcount: '4157'
 ht-degree: 0%
 
 ---
@@ -844,14 +844,3 @@ Tabellen **[!UICONTROL Tracked labels]** innehåller en omfattande översikt öv
 
 +++
 
-### URL för spårad länk {#tracked-link-url}
-
-Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de URL:er på dina innehållskort som lockar till sig den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de populäraste länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll på era innehållskort.
-
-+++ Läs mer om URL:er för spårade länkar
-
-* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina innehållskort.
-
-* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina innehållskort.
-
-+++

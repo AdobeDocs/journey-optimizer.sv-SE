@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: d43ae701-6e3b-4dcf-8da1-11c07be10fcf
-source-git-commit: 66504f7affb767d5b102cd1a91934147638c68e5
+source-git-commit: d816b12ea88631d6682cf444e176622f8fc36d85
 workflow-type: tm+mt
-source-wordcount: '3829'
+source-wordcount: '4387'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,8 @@ Sidan **[!UICONTROL Journey report]** visas med följande flikar beroende på vi
 * [I appen](#in-app-global)
 * [Webb](#web-cja)
 * [Direktmeddelande](#direct-mail-cja)
+* [Kodbaserad](#code-based)
+* [Innehållskort](#content-card)
 
 Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
@@ -641,16 +643,15 @@ Diagrammet **[!UICONTROL Clicks]** visar klickvärden för webbsidor, som visar 
 
 ![](assets/cja-web-displays.png)
 
-Diagrammet **[!UICONTROL Displays]** hjälper dig att förstå både meddelandets övergripande räckvidd och antalet unika profiler som är kopplade till det.
+Diagrammet **[!UICONTROL Displays]** hjälper dig att förstå både den övergripande räckvidden för den kodbaserade upplevelsen som öppnades och antalet unika profiler som är kopplade till den.
 
 +++ Läs mer om visningsmått
 
-* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
+* **[!UICONTROL Displays]**: Antal gånger som den kodbaserade upplevelsen öppnades.
 
-* **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
+* **[!UICONTROL Unique displays]**: Antal gånger som den kodbaserade upplevelsen öppnades, tas inte hänsyn till flera interaktioner för en profil.
 
 +++
-
 
 ### Spårningsdata {#track-data-web}
 
@@ -761,3 +762,119 @@ I tabellen **[!UICONTROL Error Reasons]** kan du identifiera de specifika fel so
 Tabellen **[!UICONTROL Exclude Reasons]** visar de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen, vilket förhindrar dem från att ta emot dina direktutskick.
 
 Se [den här sidan](exclusion-list.md) för en utförlig lista över orsaker till undantag.
+
+## Kodbaserad upplevelse
+
+### Visa och klicka {#impressions-code}
+
+![](assets/code-based-display.png)
+
+Diagrammen **[!UICONTROL Display & Click]** innehåller en detaljerad analys av hur era profiler interagerar med era kodbaserade upplevelser och ger värdefulla insikter om hur profilerna interagerar med ert innehåll.
+
++++ Läs mer om Impression &amp; Click-statistik
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina upplevelser.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina upplevelser.
+
+* **[!UICONTROL Displays]**: Antal gånger som upplevelsen öppnades.
+
+* **[!UICONTROL Unique displays]**: Antal gånger som upplevelsen öppnades, tas inte hänsyn till flera interaktioner för en profil.
+
++++
+
+### Spårningsdata {#track-data-code}
+
+![](assets/code-based-tracking-data.png)
+
+Tabellen **[!UICONTROL Tracking data]** erbjuder en detaljerad ögonblicksbild av profilaktivitet som är kopplad till dina kodbaserade upplevelser, vilket ger viktiga insikter i engagemang och upplevelseeffektivitet.
+
++++ Läs mer om att spåra datamätningar
+
+* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina upplevelser.
+
+* **[!UICONTROL Click through rate (CTR)]**: Procentandel användare som interagerade med dina upplevelser.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina upplevelser.
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina upplevelser.
+
+* **[!UICONTROL Displays]**: Antal gånger som din upplevelse öppnats.
+
+* **[!UICONTROL Unique displays]**: Det antal gånger som din upplevelse öppnades beaktas inte flera interaktioner för en profil.
+
++++
+
+### Spårade länketiketter {#track-link-code}
+
+Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översikt över länketiketterna i dina kodbaserade upplevelser, som framhäver de som genererar den högsta besökstrafiken. Med den här funktionen kan du identifiera och prioritera de mest populära länkarna.
+
++++ Läs mer om mätvärden för spårade länketiketter
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickade på ett innehåll i dina kodbaserade upplevelser.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina kodbaserade upplevelser.
+
+* **[!UICONTROL Displays]**: Antal gånger som upplevelsen öppnades.
+
+* **[!UICONTROL Unique displays]**: Antal gånger som upplevelsen öppnades, tas inte hänsyn till flera interaktioner för en profil.
+
++++
+
+## Innehållskort {#content-card}
+
+### Visa och klicka {#displays-content-card}
+
+![](assets/content-card-jo-display.png)
+
+Diagrammen **[!UICONTROL Display & Click]** innehåller en detaljerad analys av hur dina profiler interagerar med dina innehållskort, vilket ger värdefulla insikter om hur profilerna interagerar med ditt innehåll.
+
++++ Läs mer om mått för bildskärmar och klick
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina innehållskort.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina innehållskort.
+
+* **[!UICONTROL Displays]**: Antal gånger ditt innehållskort öppnades.
+
+* **[!UICONTROL Unique displays]**: Det antal gånger som innehållskortet öppnades tas ingen hänsyn till flera interaktioner för en profil.
+
++++
+
+### Spårningsdata {#track-data-content}
+
+![](assets/code-based-tracking-data.png)
+
+Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina innehållskort, vilket ger viktiga insikter i engagemang och upplevelseeffektivitet.
+
++++ Läs mer om att spåra datamätningar
+
+* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar som målprofiler för dina innehållskort.
+
+* **[!UICONTROL Click through rate (CTR)]**: Procentandel användare som interagerade med dina innehållskort.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina innehållskort.
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina innehållskort.
+
+* **[!UICONTROL Displays]**: Antal gånger ditt innehållskort öppnades.
+
+* **[!UICONTROL Unique displays]**: Det antal gånger ditt innehållskort öppnades tas ingen hänsyn till flera interaktioner i en profil.
+
++++
+
+### Spårade länketiketter {#track-link-content}
+
+Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översikt över länketiketterna på dina innehållskort, som visar de som genererar den högsta besökstrafiken. Med den här funktionen kan du identifiera och prioritera de mest populära länkarna.
+
++++ Läs mer om mätvärden för spårade länketiketter
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina innehållskort.
+
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina innehållskort.
+
+* **[!UICONTROL Displays]**: Antal gånger som innehållskortet öppnades.
+
+* **[!UICONTROL Unique displays]**: Det antal gånger som innehållskortet öppnades tas ingen hänsyn till flera interaktioner för en profil.
+
++++
