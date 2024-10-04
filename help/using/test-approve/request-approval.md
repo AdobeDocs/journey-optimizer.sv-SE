@@ -3,8 +3,9 @@ title: Begär godkännande
 description: Lär dig hur du begär godkännande innan du publicerar dina resor och kampanjer.
 role: User
 level: Beginner
+feature: Approval
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
+source-git-commit: 94114fac56b68aa0940ae9843f672823d64c19df
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
