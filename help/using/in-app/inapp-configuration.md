@@ -6,9 +6,9 @@ feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: d4dce7b31d898d86c330048e6d0a1587e87a617c
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 1%
 
 ---
@@ -109,19 +109,21 @@ För att meddelanden i appen ska kunna levereras på rätt sätt måste följand
 
 Du kan nu välja din konfiguration när du skapar ett meddelande i appen.
 
-## Förutsättningar för innehållsexperiment {#experiment-prerequisites}
-
-Om du vill aktivera innehållsexperiment för InApp-kanal måste du se till att [datamängden](../data/get-started-datasets.md) som används i implementeringen av [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} också ingår i rapportkonfigurationen.
-
-Om du lägger till en datauppsättning som inte finns i webbdataströmmen när du konfigurerar experimentrapporter, kommer webbdata alltså inte att visas i innehållsexperimentrapporter.
-
-Lär dig hur du lägger till datauppsättningar för rapportering av innehållsexperiment i [det här avsnittet](../content-management/reporting-configuration.md#add-datasets).
+## Krav för rapportering {#experiment-prerequisites}
 
 >[!NOTE]
 >
 >Datauppsättningen används skrivskyddat av rapportsystemet [!DNL Journey Optimizer] och påverkar inte datainsamling eller datainmatning.
 
+Om du vill aktivera rapportering för in-app-kanal måste du se till att den [datamängd](../data/get-started-datasets.md) som används i implementeringen av [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} också ingår i rapportkonfigurationen.
+
+Om du lägger till en datauppsättning som inte finns i appens datastam visas med andra ord inte appdata i dina rapporter när du konfigurerar rapporter.
+
+Lär dig hur du lägger till datauppsättningar för rapportering i [det här avsnittet](../reports/reporting-configuration.md#add-datasets).
+
 Om du **inte** använder följande fördefinierade [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} för datamängdsschemat: `AEP Web SDK ExperienceEvent` och `Consumer Experience Event` (enligt definition i [den här sidan](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html#add-field-groups){target="_blank"}), måste du lägga till följande fältgrupper: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details` och `Web Details`. Dessa behövs av [!DNL Journey Optimizer]-innehållsexperimentets rapportering när de spårar vilka experiment och behandlingar varje profil deltar i.
+
+[Läs mer om rapportkonfiguration](../reports/reporting-configuration.md)
 
 >[!NOTE]
 >

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 7403058fac2e88a27b2e4dfc2f56bb4e3c2b1528
+source-git-commit: d4dce7b31d898d86c330048e6d0a1587e87a617c
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1456'
 ht-degree: 4%
 
 ---
@@ -126,7 +126,7 @@ Styr din sekretesshantering och dina förfrågningar från det här avsnittet.
 
 * **[!UICONTROL Configurations]** - Använd den här menyn för att konfigurera [händelser](../event/about-events.md), [datakällor](../datasource/about-data-sources.md) och [åtgärder](../action/action.md) att använda på dina resor.
 
-  Du kan även komma åt avsnittet **Rapportering** för att konfigurera rapportering för kampanjexperiment. [Läs mer](../content-management/reporting-configuration.md)
+  Du kan även komma åt avsnittet **Rapportering** för att konfigurera rapportering för kampanjexperiment och webb/mobil. [Läs mer](../reports/reporting-configuration.md)
 
 * **[!UICONTROL Business rules]** - Använd det här avsnittet om du vill skapa affärsregler för flera kanaler för att styra hur ofta användare tar emot ett meddelande eller deltar i en resa. [Läs mer](../configuration/frequency-rules.md)
 

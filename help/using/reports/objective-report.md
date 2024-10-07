@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 exl-id: ec1af88c-7b0a-4eaf-97e1-0d9676268fed
 badge: label="Beta" type="Informative"
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: d4dce7b31d898d86c330048e6d0a1587e87a617c
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 2%
@@ -50,7 +50,7 @@ Widgeten **[!UICONTROL Campaign's Statistics]** visar huvudinformationen i förh
 
 På fliken **[!UICONTROL Objectives]** kan du finjustera leveransrapporter bättre genom att ange ett specifikt mätvärde.
 
-**[!UICONTROL Objectives]** i listan är länkad till **[!UICONTROL Datasets]** som definierar en anslutning till ett system för att hämta ytterligare information. En lista med inbyggda **[!UICONTROL Objectives]** är tillgänglig, men du kan lägga till egna genom att lägga till nya **[!UICONTROL Dataset]**. Detaljerade anvisningar finns i det här [avsnittet](../content-management/reporting-configuration.md).
+**[!UICONTROL Objectives]** i listan är länkad till **[!UICONTROL Datasets]** som definierar en anslutning till ett system för att hämta ytterligare information. En lista med inbyggda **[!UICONTROL Objectives]** är tillgänglig, men du kan lägga till egna genom att lägga till nya **[!UICONTROL Dataset]**. Detaljerade anvisningar finns i det här [avsnittet](../reports/reporting-configuration.md).
 
 När du har valt de mål som du vill ha som mål på, kommer de två **[!UICONTROL Performance overview]**- och **[!UICONTROL Campaign objective]**-widgetarna att ge en detaljerad sammanfattning av leveransresultaten.
 

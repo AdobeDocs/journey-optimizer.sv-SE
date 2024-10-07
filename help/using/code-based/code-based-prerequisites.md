@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
-source-git-commit: b8a71c43ad5b456bfc9ec9b9d3fba06049e604ed
+source-git-commit: d4dce7b31d898d86c330048e6d0a1587e87a617c
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---
@@ -59,13 +59,13 @@ För att de kodbaserade upplevelserna ska kunna levereras på rätt sätt måste
 
   [Läs mer om Edge Delivery-vyn](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
-## Förutsättningar för innehållsexperiment {#experiment-prerequisites}
+## Krav för rapportering {#experiment-prerequisites}
 
-Om du vill aktivera innehållsexperiment för den kodbaserade kanalen måste du se till att den [datamängd](../data/get-started-datasets.md) som används i appimplementeringen [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} också ingår i rapportkonfigurationen.
+Om du vill aktivera rapportering för den kodbaserade kanalen måste du se till att den [datamängd](../data/get-started-datasets.md) som används i appimplementeringen [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} också ingår i rapportkonfigurationen.
 
-Om du lägger till en datauppsättning som inte finns i appens datastam, visas alltså inte appdata i innehållsexperimentrapporter när du konfigurerar experimentrapporter.
+Om du lägger till en datauppsättning som inte finns i appens datastam visas med andra ord inte appdata i dina rapporter när du konfigurerar rapporter.
 
-Lär dig hur du lägger till datauppsättningar för rapportering av innehållsexperiment i [det här avsnittet](../content-management/reporting-configuration.md#add-datasets).
+Lär dig hur du lägger till datauppsättningar för rapportering i [det här avsnittet](../reports/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >

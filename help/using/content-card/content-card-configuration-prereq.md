@@ -5,7 +5,7 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
+source-git-commit: d4dce7b31d898d86c330048e6d0a1587e87a617c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 1%
@@ -45,4 +45,4 @@ Lägg till fältgruppen **Experience Event - Proposition Interaction** i dataupp
 
   Kontrollera att datauppsättningen som används i din apps [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview#_blank) också ingår i rapportkonfigurationen för ditt innehållsexperiment. Appdata visas inte i rapporter om datauppsättningarna inte matchar.
 
-  Lär dig hur du lägger till datauppsättningar för rapportering av innehållsexperiment i [det här avsnittet](../content-management/reporting-configuration.md).
+  Lär dig hur du lägger till datauppsättningar för rapportering av innehållsexperiment i [det här avsnittet](../reports/reporting-configuration.md).
