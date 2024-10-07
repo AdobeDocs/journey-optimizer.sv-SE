@@ -4,9 +4,9 @@ description: Lär dig designa innehåll för innehållskort
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
+source-git-commit: 96a218d54851cc9b309e08e120e9a4bca5c4e74f
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -39,17 +39,19 @@ Skriv texten i fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att
 
 ![](assets/content-card-design-2.png)
 
-+++Fler alternativ med avancerad formatering
-
-Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du välja för **[!UICONTROL Header]** och **[!UICONTROL Body]**:
-
-* **[!UICONTROL Font]**
-* **[!UICONTROL Pt size]**
-* **[!UICONTROL Font Color]**
-* **[!UICONTROL Alignment]**
-+++
-
 Om du vill anpassa meddelandet ytterligare kan du använda ikonen **[!UICONTROL Personalization]** för att lägga till anpassade element. Detaljerade instruktioner om hur du använder personaliseringsfunktionerna finns i [det här avsnittet](../personalization/personalize.md).
+
+<!--
++++More options with advanced formatting
+
+If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Header]** and **[!UICONTROL Body]**:
+
+* the **[!UICONTROL Font]**
+* the **[!UICONTROL Pt size]**
+* the **[!UICONTROL Font Color]**
+* the **[!UICONTROL Alignment]**
++++
+-->
 
 ### Media {#add-media}
 
@@ -59,11 +61,13 @@ I fältet **[!UICONTROL Media]** kan du förbättra dina innehållskort genom at
 
 Om du vill ta med media skriver du antingen in URL-adressen för det medium som du vill använda eller klickar på ikonen **[!UICONTROL Select Assets]** för att välja bland resurser som lagras i ditt Assets-bibliotek. [Läs mer om resurshantering](../content-management/assets.md).
 
-+++Fler alternativ med avancerad formatering
+<!--
++++More options with advanced formatting
 
-Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du lägga till en **[!UICONTROL Alternative text]** för skärmläsarprogram och en annan resurs i fältet **[!UICONTROL Dark Mode Media URL]**.
+If the **[!UICONTROL Advanced formatting mode]** is switched on, you can add an **[!UICONTROL Alternative text]** for screen reading applications and another asset in the **[!UICONTROL Dark Mode Media URL]** field.
 
 +++
+-->
 
 ### Knappar {#add-buttons}
 
@@ -79,16 +83,18 @@ Lägg till knappar så att användarna kan interagera med dina innehållskort.
 
 1. I fältet **[!UICONTROL Target]** anger du webb-URL:en eller länken till den plats där användarna ska dirigeras efter att ha interagerat med knappen.
 
-+++Fler alternativ med avancerad formatering
+<!--
++++More options with advanced formatting
 
-Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du välja för **[!UICONTROL Buttons]**:
+If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Buttons]**:
 
-* **[!UICONTROL Font]**
-* **[!UICONTROL Pt size]**
-* **[!UICONTROL Font Color]**
-* **[!UICONTROL Alignment]**
+* the **[!UICONTROL Font]**
+* the **[!UICONTROL Pt size]**
+* the **[!UICONTROL Font Color]**
+* the **[!UICONTROL Alignment]**
 
 +++
+-->
 
 ### Vid klickning, beteende
 
