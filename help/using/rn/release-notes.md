@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: e6d6fe4ef068f806126de1c9a417fa0155bdc25d
+source-git-commit: 02df00b74dd07ff422f26f16120233b17a342c21
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1277'
 ht-degree: 9%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 9%
 
 ## Oktober 2024-uppdateringar {#24-10-rn}
 
+### Nya funktioner {#24-10-features}
+
 De senaste funktionerna i Adobe Journey Optimizer listas nedan.
 
 <table>
@@ -39,6 +41,7 @@ De senaste funktionerna i Adobe Journey Optimizer listas nedan.
 <tbody>
 <tr>
 <td>
+<p>Tillgänglighetsdatum: 1 okt</p>
 <p>Med den kodbaserade upplevelsekanalen kan du med Adobe Journey Optimizer utföra avancerad personalisering och testning för alla dina inkommande egenskaper, vilket möjliggör smidig leverans av skräddarsydda upplevelser över olika kontaktytor som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta tv-apparater, kioskdatorer, ATM-enheter, IoT-enheter med mera. Den kodbaserade upplevelsekanalen är nu tillgänglig på arbetsytan för resan.</p>
 <p>Mer information finns i den <a href="../code-based/create-code-based.md">detaljerade dokumentationen</a>.</p>
 <img src="../assets/do-not-localize/code-based-journey.gif"/>
@@ -56,6 +59,7 @@ De senaste funktionerna i Adobe Journey Optimizer listas nedan.
 <tbody>
 <tr>
 <td>
+<p>Tillgänglighetsdatum: 1 okt</p>
 <p>Med webbkanalen kan Adobe Journey Optimizer personalisera webbupplevelsen som ni levererar till era kunder via inkommande webbresor. Webbkanalen är nu tillgänglig på arbetsytan.</p>
 <p>Mer information finns i den <a href="../web/create-web.md">detaljerade dokumentationen</a>.</p>
 <img src="../assets/do-not-localize/web-journey.gif"/>
@@ -64,8 +68,9 @@ De senaste funktionerna i Adobe Journey Optimizer listas nedan.
 </tbody>
 </table>
 
+### Förbättringar {#24-10-improvements}
 
-**Reseförbättringar**
+**Resor**
 
 * (Tillgänglighetsdatum: 3 okt) **Parametrar i anpassade åtgärder** - NULL och valfria parametrar stöds nu i anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
