@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: bbc64b4274cee083e6c35147314b230391b35317
+source-git-commit: de90083d67787495a28ee45f5912d2cbb0c0ff0c
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%
@@ -244,22 +244,23 @@ Så här sätter du ihop BCC-händelsen med motsvarande feedback-händelse för 
 
 ```
 SELECT
-  mfe.timestamp as OriginalRecipientFeedbackEventTime,
+  mfe.timestamp AS OriginalRecipientFeedbackEventTime,
   mfe._experience.customerJourneyManagement.emailChannelContext.address AS OriginalRecipientEmailAddress,
+  bcc._experience.customerJourneyManagement.emailChannelContext.address AS BCCEmailAddress,
   mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus AS OriginalRecipientMessageFeedbackStatus,
   mfe._experience.customerJourneyManagement.messageExecution.campaignID AS CampaignID,
   mfe._experience.customerJourneyManagement.messageExecution.campaignActionID AS CampaignActionID,
   mfe._experience.customerJourneyManagement.messageExecution.batchInstanceID AS BatchInstanceID,
-  mfe._experience.customerJourneyManagement.messageExecution.messageID AS MessageID AS MessageID
+  mfe._experience.customerJourneyManagement.messageExecution.messageID AS MessageID
 FROM ajo_bcc_feedback_event_dataset bcc
-LEFT JOIN cjm_message_feedback_event_dataset mfe
+LEFT JOIN ajo_message_feedback_event_dataset mfe
 ON bcc._experience.customerJourneyManagement.messageProfile.messageProfileID =
     mfe._experience.customerJourneyManagement.messageProfile.messageProfileID AND 
     mfe.timestamp > now() - INTERVAL '30' day
 WHERE 
   bcc.timestamp > now() - INTERVAL '30' DAY AND 
-  bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = 'x-message-profile-id'
-ORDER BY timestamp DESC;
+  bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = '<x-message-profile-id>'
+ORDER BY mfe.timestamp DESC;
 ```
 
 **Fråga 2**
@@ -268,20 +269,22 @@ Så här sätter du ihop BCC-händelsen med motsvarande feedback-händelse för 
 
 ```
 SELECT
-  mfe.timestamp as OriginalRecipientFeedbackEventTime,
+  mfe.timestamp AS OriginalRecipientFeedbackEventTime,
   mfe._experience.customerJourneyManagement.emailChannelContext.address AS OriginalRecipientEmailAddress,
+  bcc._experience.customerJourneyManagement.emailChannelContext.address AS BCCEmailAddress,
   mfe._experience.customerjourneymanagement.messagedeliveryfeedback.feedbackstatus AS OriginalRecipientMessageFeedbackStatus,
+  mfe._experience.customerJourneyManagement.messageExecution.journeyActionID AS journeyActionID,
   mfe._experience.customerJourneyManagement.messageExecution.journeyVersionID AS JourneyVersionID,
   mfe._experience.customerJourneyManagement.messageExecution.journeyVersionInstanceID AS JourneyVersionInstanceID,
   mfe._experience.customerJourneyManagement.messageExecution.batchInstanceID AS BatchInstanceID,
-  mfe._experience.customerJourneyManagement.messageExecution.messageID AS MessageID AS MessageID
+  mfe._experience.customerJourneyManagement.messageExecution.messageID AS MessageID
 FROM ajo_bcc_feedback_event_dataset bcc
-LEFT JOIN cjm_message_feedback_event_dataset mfe
+LEFT JOIN ajo_message_feedback_event_dataset mfe
 ON bcc._experience.customerJourneyManagement.messageProfile.messageProfileID =
     mfe._experience.customerJourneyManagement.messageProfile.messageProfileID AND 
     mfe.timestamp > now() - INTERVAL '30' day
 WHERE 
   bcc.timestamp > now() - INTERVAL '30' DAY AND 
-  bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = 'x-message-profile-id'
-ORDER BY timestamp DESC;
+  bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = '<x-message-profile-id>'
+ORDER BY mfe.timestamp DESC;
 ```
