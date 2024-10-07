@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: 794724670c41e5d36ff063072a2e29c37dd5fadd
+source-git-commit: bbc64b4274cee083e6c35147314b230391b35317
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Regler som HIPAA kräver att [!DNL Journey Optimizer] ska tillhandahålla ett s�
 
 >[!NOTE]
 >
->[!DNL Journey Optimizer] har inte stöd för SMS-arkiveringskrav. Om du vill ha dedikerat stöd för arkivering kan du arbeta med din SMS-leverantör (Synch, Infobip eller Twilio).
+>[!DNL Journey Optimizer] har inte stöd för SMS-arkiveringskrav. Om du vill ha dedikerad arkiveringssupport kan du arbeta med din SMS-leverantör (Sinch, Infobip eller Twilio).
 
 ## Så här använder du BCC för e-post {#bcc-email}
 
