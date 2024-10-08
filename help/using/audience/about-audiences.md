@@ -9,9 +9,9 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 64eb253efbe73d151dd1c94f4e4cb51a35e9d1a4
+source-git-commit: e96aefefd8391d1a59a5a4f9d50c6ac819bf60f8
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2265'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ I kampanjer och resor kan ni välja alla målgrupper som genereras med segmentde
 
 >[!AVAILABILITY]
 >
->Användningen av målgrupper och attribut från målgruppssammansättning och målgrupper med anpassad uppladdning (CSV-fil) är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
+>Användningen av målgrupper och attribut från målgruppssammansättning är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
 
 Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
