@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: e96aefefd8391d1a59a5a4f9d50c6ac819bf60f8
+source-git-commit: 5c9802eaa3fa35a43f53ef5dd86495b502149a04
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1333'
 ht-degree: 9%
 
 ---
@@ -74,7 +74,7 @@ De senaste funktionerna i Adobe Journey Optimizer listas nedan.
 
 * (Tillgänglighetsdatum: 3 okt) **Parametrar i anpassade åtgärder** - NULL och valfria parametrar stöds nu i anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
-**Publiker**
+**Publiker** - Tillgänglighetsdatum: 8 okt
 
 * När ni riktar er till en publik med CSV-filer kan ni nu använda attribut från filen i personaliseringsredigeraren och i regelbyggaren för resor och kampanjer. [Läs mer](../audience/about-audiences.md)
 
