@@ -9,9 +9,9 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 8b92f0c2bc5dd44e9059154e4a9b40872ad802f8
+source-git-commit: 9b1153b321a0e73412eac45c66d469bbe4b81d38
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '2271'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Målgrupper kan genereras på olika sätt:
 * **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform segmenteringstjänst. [Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
 * **Anpassad överföring**: Importera en målgrupp med en CSV-fil. Lär dig hur du importerar målgrupper i Adobe Experience Platform [dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
 * **Målgruppskomposition**: Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper. [Kom igång med målgruppsdisposition](get-started-audience-orchestration.md)
-* **Federated Audience Composition**: Federate-datauppsättningar direkt från ditt befintliga datalager för att skapa och berika Adobe Experience Platform-målgrupper och attribut i ett och samma system. Läs guiden om [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home).
+* **Federated Audience Composition**: Federate-datauppsättningar direkt från ditt befintliga datalager för att skapa och berika Adobe Experience Platform-målgrupper och attribut i ett och samma system. Läs guiden om [Federated Audience Composition](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home).
 
   >[!AVAILABILITY]
   >
@@ -67,25 +67,15 @@ Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
 ## Använd attribut för målgruppsberikning {#enrichment}
 
-När ni riktar in er på en målgrupp som skapats med arbetsflöden för dispositioner kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
+När ni riktar in er på en målgrupp som skapats med kompositionsarbetsflöden eller en anpassad (CSV-fil) målgrupp kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
 
-Om du vill använda anrikningsattribut i en resa måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform.
+>[!NOTE]
+>
+>Publiker som har skapats via anpassad CSV-filöverföring före 1 oktober 2024 är inte berättigade till personlig anpassning. Om du vill använda attribut från dessa målgrupper och utnyttja den här funktionen fullt ut kan du återskapa och överföra externa CSV-mottagare som importerats före detta datum.
+>
+>Samtyckesprofiler stöder inte anrikningsattribut. Alla regler för samtyckespolicy bör därför endast baseras på attribut som finns i profilen.
 
-+++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp
-
-1. Navigera till Administration > Konfiguration > Datakällor.
-1. Markera Experience Platform och skapa eller redigera en fältgrupp.
-1. Öppna fältväljaren, sök efter de anrikningsattribut som du vill lägga till och markera kryssrutan bredvid dem.
-1. Spara ändringarna.
-
-Detaljerad information om datakällor finns i följande avsnitt:
-
-* [Arbeta med Adobe Experience Platform datakälla](../datasource/adobe-experience-platform-data-source.md)
-* [Konfigurera en datakälla](../datasource/configure-data-sources.md)
-
-+++
-
-När anrikningsattributen har lagts till i en fältgrupp kan du utnyttja dem på olika platser i Journey Optimizer:
+Här är de åtgärder du kan utföra med hjälp av målgruppernas anrikningsattribut:
 
 * **Skapa flera sökvägar i en resa** baserat på regler som utnyttjar målpublikens anrikningsattribut. Det gör du genom att rikta in målgruppen med en [Läs målgrupp](../building-journeys/read-audience.md) -aktivitet och sedan skapa regler i en [Villkor](../building-journeys/condition-activity.md) -aktivitet baserat på målgruppens anrikningsattribut.
 
@@ -95,9 +85,41 @@ När anrikningsattributen har lagts till i en fältgrupp kan du utnyttja dem på
 
   ![](assets/audience-enrichment-attribute-perso.png){width="70%" zoomable="yes"}
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Anpassade attribut för berikning av överföring är ännu inte tillgängliga för användning i Journey Optimizer.
+>Om du vill använda anrikningsattribut från målgrupper som skapats med dispositionsarbetsflöden måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform.
+>
++++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp>
+>
+1. Navigera till Administration > Konfiguration > Datakällor.
+1. Markera Experience Platform och skapa eller redigera en fältgrupp.
+2. Välj lämpligt schema i schemaväljaren. Schemats namn kommer att ha följande format: &#39;Schema for audiensId:&#39; + målgruppens ID. Du kan hitta målgruppens ID på skärmen med målgruppsinformation i målgruppslagret.
+1. Öppna fältväljaren, sök efter de anrikningsattribut som du vill lägga till och markera kryssrutan bredvid dem.
+1. Spara ändringarna.
+1. När anrikningsattributen har lagts till i en fältgrupp kan du använda dem i Journey Optimizer på de platser som listas ovan.
+>
+Detaljerad information om datakällor finns i följande avsnitt:
+>
+* [Arbeta med Adobe Experience Platform datakälla](../datasource/adobe-experience-platform-data-source.md)
+* [Konfigurera en datakälla](../datasource/configure-data-sources.md)
+>
++++
+
+## Anpassad uppladdning (CSV-fil) {#csv}
+
+I det här avsnittet finns viktig information som du bör tänka på när du arbetar med målgrupper för anpassad överföring (CSV-filer):
+
+* **Stöd för förhandsgranskning och korrektur för CSV-målgrupper:** För närvarande stöds inte förhandsgranskning och korrektur för målgrupper som skapats med CSV-överföring. Tänk på detta när ni planerar era kampanjer.
+
+* **Snabb aktivering och fördröjning av identitetssammanfogning:** Adobe Experience Platform-arkitekturen fördröjer identitetssammanfogningen för att göra anpassade uppladdningsmålgrupper omedelbart tillgängliga för aktivering i Journey Optimizer, med följande effekter:
+
+   * Publiken är redo att användas i Journey Optimizer direkt efter att intaget har slutförts. Detta är vanligtvis inom en timme, men kan variera.
+   * Antalet aktiverade poster kan skilja sig från antalet profiler efter identitetssammanfogning.
+   * Alla poster i CSV-filen aktiveras, inklusive eventuella dubbletter. Under nästa UPS-profilexport kommer dessa poster att genomgå identitetssammanfogning.
+
+* **Målgruppsanpassade nya profiler från CSV-överföringar:** Om det inte går att hitta någon matchning mellan en CSV-post och en UPS-profil skapas en ny tom profil. Den här profilen är kopplad till anrikningsattributen som lagras i datasjön. Eftersom den nya profilen är tom är målfält som vanligtvis används i Journey Optimizer (t.ex. personalEmail.address, mobilePhone.number) tomma och kan därför inte användas som mål.
+
+  För att lösa detta kan du ange &quot;körningsfält&quot; (eller &quot;körningsadress&quot; beroende på kanal) i kanalkonfigurationen som &#39;identityMap&#39;. Detta säkerställer att det attribut som väljs som identitet under CSV-överföringen är det som används för målgruppsanpassning i Journey Optimizer.
 
 ## Metoder för utvärdering av målgrupper {#evaluation-method-in-journey-optimizer}
 
@@ -111,7 +133,7 @@ Direktuppspelningssegmentering är en kontinuerlig process för datamarkering so
 
 >[!NOTE]
 >
->Se till att använda rätt händelser som villkor för direktuppspelningssegmentering. [Läs mer](#streaming-segmentation-events-guardrails)
+Se till att använda rätt händelser som villkor för direktuppspelningssegmentering. [Läs mer](#streaming-segmentation-events-guardrails)
 
 +++
 
@@ -161,7 +183,7 @@ Därför bör du undvika följande händelser för optimala prestanda vid direkt
 
 >[!NOTE]
 >
->Du kan använda händelserna **Meddelande öppnat** och **Meddelande skickat** i gruppsegmentering utan några prestandaproblem.
+Du kan använda händelserna **Meddelande öppnat** och **Meddelande skickat** i gruppsegmentering utan några prestandaproblem.
 
 
 ## Vanliga frågor och svar om målgruppskomposition och anpassad överföring {#faq}
@@ -178,7 +200,7 @@ Målgrupper från målgruppssammansättning och anpassad uppladdning kan hämtas
 
   >[!NOTE]
   >
-  >Om&quot;Inkrementell läsning&quot; är aktiverat i en återkommande resa hämtas profiler endast vid den första upprepningen, eftersom dessa målgrupper är fasta.
+  Om&quot;Inkrementell läsning&quot; är aktiverat i en återkommande resa hämtas profiler endast vid den första upprepningen, eftersom dessa målgrupper är fasta.
 
 Dessutom kan dessa målgrupper användas i personaliseringsredigeraren för att personalisera meddelanden under resor och kampanjer. [Lär dig arbeta med personaliseringsredigeraren](../personalization/personalization-build-expressions.md)
 
@@ -200,15 +222,11 @@ Anrikningsattribut från publikens komposition kan användas inom följande omr�
 * Anpassade åtgärdsattribut (resor)
 * Meddelandepersonalisering (resor och kampanjer)
 
->[!AVAILABILITY]
->
->Anpassade attribut för berikning av överföring är ännu inte tillgängliga för användning i Journey Optimizer.
-
 +++
 
 +++ Hur aktiverar jag anrikningsattribut i Journeys?
 
-Om du vill använda anrikningsattribut i en resa måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform. Information om hur du lägger till anrikningsattribut i en fältgrupp finns i [det här avsnittet](#enrichment)
+Om du vill använda anrikningsattribut från målgrupper som skapats med dispositionsarbetsflöden måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform. Information om hur du lägger till anrikningsattribut i en fältgrupp finns i [det här avsnittet](#enrichment)
 
 +++
 
