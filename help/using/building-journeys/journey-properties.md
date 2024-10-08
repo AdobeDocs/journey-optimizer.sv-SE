@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: a3a0820565bbd8b2d8d0ce37e5b3e5ad37b064cf
+source-git-commit: e6da92e2459c83019a9bb72b79809fdf7cf68c98
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
@@ -277,19 +277,16 @@ Avslutskriterier ställs in på resenivå. En resa kan ha flera exitkriterier. N
 
 Följ de här stegen för att **skapa** och avsluta villkor:
 
-1. Öppen för er resa.
+1. Öppna din resa.
+
 1. Klicka på ikonen **[!UICONTROL Show Exit Criteria]** som finns i det övre högra avsnittet på arbetsytan.
-
-![](assets/exitcriteria_icon.png){width="40%" align="left"}
-
+   ![](assets/exitcriteria_icon.png){width="40%" align="left"}
 1. Klicka på knappen **[!UICONTROL Add exit criteria]**.
-
-![](assets/exitcriteria.png){width="40%" align="left"}
-
-1. Ange en **etikett** och välj om ditt avslutsvillkor är baserat på en händelse eller en målgrupp.
+   ![](assets/exitcriteria.png){width="40%" align="left"}
+1. Ange en **etikett** och välj om ditt avslutsvillkor är baserat på en **händelse** eller en **publik**.
 
 * För avslutningskriterier baserade på en händelse väljer du endast en händelse.
-* Välj en målgrupp för avslutningskriterier som baseras på en målgrupp. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används med en målgrupp.
+* Välj en målgrupp för avslutningskriterier som baseras på en målgrupp. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används för att bli effektiva.
 
 Du kan lägga till flera avslutningskriterier.
 
