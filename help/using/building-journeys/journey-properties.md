@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: a0c7dad29aabe6c377468a64b9638d7363f0b6f6
+source-git-commit: a3a0820565bbd8b2d8d0ce37e5b3e5ad37b064cf
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '2035'
 ht-degree: 0%
 
 ---
@@ -261,45 +261,45 @@ Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-do
 >title="Utträdeskriterier för resor"
 >abstract="I det här avsnittet visas alternativen för avslutningskriterier. Du kan skapa en eller flera regler för avslutningskriterier för din resa."
 
-### Beskrivning
+### Beskrivning {#exit-criteria-desc}
 
-Marknadsförarna vill ofta ta bort profiler från en resa när de inte längre uppfyller kundens syfte. Detta uppnås med **globala avslutningskriterier**, som är nära kopplade till målhantering.
+Genom att lägga till kriterier för att avsluta resan gör du så att profilerna avslutas så snart en händelse inträffar (t.ex. köp) eller så kvalificerar de sig för en viss målgrupp. Detta förhindrar användaren från att få ut mer information från resan.
 
-**Exempel på användning:**
+Du kanske vill ta bort profiler från en resa när de inte längre uppfyller resans syfte. Detta kan uppnås med **globala avslutningskriterier**, som är nära kopplade till målhantering.
+
+**Exempel på användning**
 
 En marknadsförare har en marknadsföringsresa som har en serie kommunikationer. Alla dessa meddelanden syftar till att få kunden att göra ett inköp. Så snart köpet är klart bör kunden inte få resten av meddelandena i serien. Genom att definiera ett avslutningskriterium tas alla profiler som har gjort ett köp bort från resan.
 
-### Konfiguration och användning
+### Konfiguration och användning {#exit-criteria-config}
 
-Avslutskriterier ställs in på resenivå. En resa kan ha flera exitkriterier. När du har angett flera avslutsvillkor utförs utvärderingen uppifrån och ned med en ELLER-logik. Om du har avslutningskriterium n o.1 och avslutningskriterium n o.2 utvärderas det som n o.m. 1 **eller** n o.2. Kriterierna utvärderas under varje steg av resan.
+Avslutskriterier ställs in på resenivå. En resa kan ha flera exitkriterier. När du har angett flera avslutsvillkor utförs utvärderingen uppifrån och ned med en `OR`-logik. Om du har avslutningskriterier A och avslutningskriterier B utvärderas det som A **OR** B. Kriterierna utvärderas under varje steg av resan.
 
-Så här **skapar du** och slutvillkor:
+Följ de här stegen för att **skapa** och avsluta villkor:
 
-* Klicka på följande ikon ![](assets/exitcriteria_icon.png){width="40%" align="left"} till höger.
-* Klicka på knappen **Lägg till avslutsvillkor**.
+1. Öppen för er resa.
+1. Klicka på ikonen **[!UICONTROL Show Exit Criteria]** som finns i det övre högra avsnittet på arbetsytan.
+
+![](assets/exitcriteria_icon.png){width="40%" align="left"}
+
+1. Klicka på knappen **[!UICONTROL Add exit criteria]**.
 
 ![](assets/exitcriteria.png){width="40%" align="left"}
 
-* Du kan lägga till flera avslutningskriterier.
-* Ange en **etikett** och välj om ditt avslutsvillkor är baserat på en händelse eller en målgrupp.
+1. Ange en **etikett** och välj om ditt avslutsvillkor är baserat på en händelse eller en målgrupp.
 
-### Avslutningskriterier baserade på en händelse
+* För avslutningskriterier baserade på en händelse väljer du endast en händelse.
+* Välj en målgrupp för avslutningskriterier som baseras på en målgrupp. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används med en målgrupp.
 
-Välj endast enställig händelse.
+Du kan lägga till flera avslutningskriterier.
 
-![](assets/exitcriteria_event.png){width="40%" align="left"}
+![](assets/exitcriteria-sample.png){width="40%" align="left"}
 
-### Avslutningskriterier baserade på en målgrupp
+### Skyddsritningar och begränsningar {#exit-criteria-guardrails}
 
-Välj en målgrupp.
+Följande skyddsförslag och begränsningar gäller för möjligheten att avsluta resan:
 
-![](assets/exitcriteria_audience.png){width="40%" align="left"}
-
-Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används med en målgrupp.
-
-### Begränsningar och begränsningar
-
-* Avslutningskriterier definieras i utkastläge
+* Utgångskriterier definieras endast i utkastläge
 * Samstämmighet mellan händelser och händelsebaserade kriterier för utträde på resan
 
 

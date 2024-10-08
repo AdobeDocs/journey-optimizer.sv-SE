@@ -5,7 +5,7 @@ role: User
 level: Beginner
 feature: Approval
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 94114fac56b68aa0940ae9843f672823d64c19df
+source-git-commit: a3a0820565bbd8b2d8d0ce37e5b3e5ad37b064cf
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 0%
@@ -85,6 +85,6 @@ Den globala godkännandeprocessen är följande:
 
 ## Övervaka godkännandebegäranden {#monitor}
 
-Du kan övervaka alla begäranden om godkännande och ändring som har skickats in för en viss resa eller kampanj. Det gör du genom att klicka på knappen **[!UICONTROL Show Audit Trail]** som finns i det övre högra avsnittet på arbetsytan för resan eller på granskningsskärmen för kampanjer.
+Du kan övervaka alla begäranden om godkännande och ändring som har skickats in för en viss resa eller kampanj. Det gör du genom att klicka på ikonen **[!UICONTROL Show Audit Trail]** som finns i det övre högra avsnittet på arbetsytan för resan eller på granskningsskärmen för kampanjer.
 
 ![](assets/monitor-requests.png)
