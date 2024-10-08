@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
-source-git-commit: 7f21098d5ae157f1c0d3de3aa584564c6f73310a
+source-git-commit: 20d99c082ef8d1f2442900dc6a6e6db6b0aaa46f
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '669'
 ht-degree: 1%
 
 ---
@@ -53,10 +53,10 @@ The **[!UICONTROL End]** activity allows you to mark the end of each path of the
 En resa kan avslutas på grund av följande orsaker:
 
 * Resan stängs manuellt med knappen **[!UICONTROL Close to new entrances]**.
-* En segmentbaserad resa som utförts i ett enda steg.
+* En enstegsbaserad resa som har slutförts och nått den globala tidsgränsen på 91 dagar.
 * Efter den sista förekomsten av en återkommande målgruppsbaserad resa.
 
-Genom att stänga en resa manuellt försäkrar du dig om att kunder som redan har gått in på resan kan slutföra sin resa, men att nya användare inte kan ta sig in på resan. När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
+Genom att stänga en resa manuellt försäkrar du dig om att kunder som redan har gått in på resan kan slutföra sin resa, men att nya användare inte kan ta sig in på resan. När en resa stängs (av någon av anledningarna ovan) får den statusen **[!UICONTROL Closed]**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt. Efter den globala standardtidsgränsen på 91 dagar växlar resan till statusen Slutförd. Se [det här avsnittet](journey-properties.md#timeout).
 
 Efter den [globala tidsgränsen ](journey-properties.md#timeout) på 91 dagar ändras målgruppsresan till statusen **Slutförd**. Det här beteendet är inställt för endast 91 dagar (dvs. [globalt tidsgränsvärde för resa](journey-properties.md#global_timeout)) eftersom all information om profiler som har gått in i resan tas bort 91 dagar efter att de har gått in. Personer som fortfarande befinner sig på resan påverkas automatiskt. De avslutar resan efter 91-dagarstimeout.
 
