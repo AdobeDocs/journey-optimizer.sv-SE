@@ -9,7 +9,7 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 9b1153b321a0e73412eac45c66d469bbe4b81d38
+source-git-commit: 64eb253efbe73d151dd1c94f4e4cb51a35e9d1a4
 workflow-type: tm+mt
 source-wordcount: '2271'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Här är de åtgärder du kan utföra med hjälp av målgruppernas anrikningsatt
 >
 1. Navigera till Administration > Konfiguration > Datakällor.
 1. Markera Experience Platform och skapa eller redigera en fältgrupp.
-2. Välj lämpligt schema i schemaväljaren. Schemats namn kommer att ha följande format: &#39;Schema for audiensId:&#39; + målgruppens ID. Du kan hitta målgruppens ID på skärmen med målgruppsinformation i målgruppslagret.
+1. Välj lämpligt schema i schemaväljaren. Schemats namn kommer att ha följande format: &#39;Schema for audiensId:&#39; + målgruppens ID. Du kan hitta målgruppens ID på skärmen med målgruppsinformation i målgruppslagret.
 1. Öppna fältväljaren, sök efter de anrikningsattribut som du vill lägga till och markera kryssrutan bredvid dem.
 1. Spara ändringarna.
 1. När anrikningsattributen har lagts till i en fältgrupp kan du använda dem i Journey Optimizer på de platser som listas ovan.
