@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: f61bd7d8d03ba2fd4e92c277f0cbfb730b3703c1
+source-git-commit: 21b30d75bac657acb28500b143b7b1f9018a13ff
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1389'
 ht-degree: 0%
 
 ---
@@ -172,3 +172,9 @@ The following data is taken into account for consent:
 -->
 
 De andra stegen för att konfigurera en anpassad åtgärd under en resa beskrivs i [det här avsnittet](../building-journeys/using-custom-actions.md).
+
+## Instruktionsvideo {#video}
+
+Läs om hur dataanvändningsetiketter används i Journey Optimizer-kanaler.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3434901/?learn=on)
