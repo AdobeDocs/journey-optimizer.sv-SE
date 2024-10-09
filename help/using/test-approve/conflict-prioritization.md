@@ -7,9 +7,9 @@ level: Beginner
 badge: label="Beta"
 hide: true
 hidefromtoc: true
-source-git-commit: 0322a13304875c4ba9ae8a9e7710fa2e71e459b3
+source-git-commit: ff529c9319a6eb5fe6762f30b739f2c39c3d5685
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 >
 >Konflikthanterings- och prioriteringsverktygen är för närvarande bara tillgängliga som betaversion för utvalda användare.
 
-I Journey Optimizer är det viktigt att hantera kampanjernas och resornas volym och tidpunkter för att undvika överväldigande kunder med alltför många interaktioner. I följande två avsnitt presenteras viktiga verktyg som hjälper dig att upprätthålla balansen och prioritera kommunikationen effektivt.
+I Journey Optimizer är det viktigt att hantera kampanjernas och resornas volym och tidpunkter för att undvika överväldigande kunder med alltför många interaktioner. I följande två avsnitt presenteras viktiga verktyg som hjälper dig att upprätthålla balansen och prioritera kommunikationen effektivt
 
-## Visa potentiella konflikter i resor och kampanjer {#conflict}
+## Identifiera potentiella konflikter i resor och kampanjer {#conflict}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_conflict"
@@ -43,9 +43,21 @@ De viktigaste områdena att övervaka för eventuell överlappning är:
 * **Målgrupp**: Vilken procentandel av min kundresa är också del av andra resor?
 * **Kanal**: Finns det annan kommunikation schemalagd för samma tidsram och, om så är fallet, hur många?
 * **Begränsningsregeluppsättning**: Vilka typer av resor är jag capping och överlappar de?
-* **Kanalkonfiguration**: Finns det andra resor eller kampanjer som använder den här kanalkonfigurationen som kan förhindra att kampanjen visas för användaren?
+* **Kanalkonfiguration**: Finns det andra resor eller kampanjer som använder någon kanalkonfiguration som används i samma resa eller kampanj som kan förhindra att resan eller kampanjen visas för slutanvändaren?
 
-Med Journey Optimizer kan ni kontrollera närhelst det finns en möjlighet att överlappa andra resor eller kampanjer. Följ dessa steg för att göra detta:
+### Hur Journey Optimizer identifierar konflikter {#detection}
+
+Nedan följer en sammanfattning av hur Journey Optimizer identifierar potentiella konflikter för resor och kampanjer:
+
+* **Konfliktidentifieringsomfång**: Konflikter visas bara för live- eller schemalagda kampanjer och resor.
+* **Unitära resor**: Om den valda resan är enhetlig visas andra resor som börjar med samma händelse, eftersom den här händelsen utlöser alla sådana resor.
+* **Målgruppskvalificering och Läs målgrupps-/affärshändelse**-resor: Om den valda resan antingen är en målgruppskompetens eller en läs målgrupps-/affärshändelseresa visas alla andra resor av samma typ med en giltig målgrupp, eftersom det kan finnas överlappningar mellan målgrupperna.
+* **Kampanjer**: Eftersom alla kampanjer riktar sig till målgrupper och det inte finns något koncept för händelser, kan alla kampanjer vara i konflikt med segmentutlösta resor (med början från en läs- och målgruppsaktivitet).
+* **Live/schemalagda kampanjer**: Live-kampanjer och schemalagda kampanjer kan hamna i konflikt med varandra på grund av potentiell målgruppsöverlappning. Alla livekampanjer eller schemalagda kampanjer listas i konfliktvisningsprogrammet för alla angivna kampanjer.
+
+### Visa identifierade konflikter för en viss resa eller kampanj {#view}
+
+När ni skapar en resa eller kampanj kan ni i Journey Optimizer kontrollera om det finns en möjlighet att överlappa andra resor eller kampanjer. Följ dessa steg för att göra detta:
 
 1. När du redigerar en resa eller kampanj klickar du på knappen **[!UICONTROL View Potential Conflicts]** i resans eller kampanjens egenskaper.
 
@@ -61,11 +73,15 @@ Med Journey Optimizer kan ni kontrollera närhelst det finns en möjlighet att �
 
    ![](assets/potential-conflicts.png)
 
->[!NOTE]
->
->Om du vill förfina din sökning efter potentiella överlappningar kan du filtrera listan över kampanjer och resor baserat på vilket fält som är relevant. Det gör du genom att välja filterikonen i lagervyn. [Lär dig arbeta med filter](../start/search-filter-categorize.md#filter-lists)
+   >[!NOTE]
+   >
+   >Det kan ta upp till 5 minuter att visa nya publicerade kampanjer i konfliktvisningsprogrammet på grund av cachelagring som har implementerats
 
-När potentiella överlappningar har identifierats kan Journey Optimizer åtgärda dem på flera olika sätt.
+Om du vill förfina din sökning efter potentiella överlappningar kan du filtrera listan över kampanjer och resor baserat på vilket fält som är relevant. Det gör du genom att välja filterikonen i lagervyn. [Lär dig arbeta med filter](../start/search-filter-categorize.md#filter-lists)
+
+### Lös konflikter {#resolve}
+
+Här följer några tips för att minska antalet potentiella konflikter när de har identifierats:
 
 * Justera **start-/slutdatum** för att undvika överlappande kampanjer eller resor.
 * Förfina **målgruppsanpassningen** för att minimera överlappning mellan resor.
@@ -99,4 +115,4 @@ Om du vill tilldela en prioritetspoäng till en resa eller kampanj anger du ett 
 
 ![](assets/priority-score.png)
 
-I situationer där två kampanjer har samma prioritetspoäng visas den senast aktiverade kampanjen.
+I situationer där två kampanjer har samma prioritetspoäng visas den kampanj som aktiverades först.
