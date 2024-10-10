@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: e5c1ae1b3ec50dd28736412cde738f3152325c79
+source-git-commit: 9bd4f854292f4928216c9ad4602098930743c1bd
 workflow-type: tm+mt
-source-wordcount: '4393'
+source-wordcount: '4383'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 8%
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2023.
 
 
-## Versionsinformation oktober 2023 {#oct-rn-2023}
+## 23 oktober {#oct-rn-2023}
 
 ### Nya funktioner{#oct-2023-features}
 
@@ -101,7 +101,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 
 
-## Versionsinformation september 2023 {#sept-rn-2023}
+## 23 september {#sept-rn-2023}
 
 ### Nya funktioner{#sept-2023-features}
 
@@ -233,7 +233,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.    -->
 
-## Versionsinformation augusti 2023 {#aug-rn-2023}
+## Version 23 augusti {#aug-rn-2023}
 
 ### Nya funktioner{#aug-2023-features}
 
@@ -322,7 +322,7 @@ A new option is available in the email surface settings to include email address
 
 
 
-## Versionsinformation juli 2023 {#july-rn-2023}
+## Version 23 juli {#july-rn-2023}
 
 ### Nya funktioner{#july-2023-features}
 
@@ -446,7 +446,7 @@ Journey Optimizer datamängdsexport till molnlagringsdestinationer är nu tillg�
 
 
 
-## Versionsinformation juni 2023 {#june-rn-2023}
+## Version 23 juni {#june-rn-2023}
 
 <table>
 <thead>
@@ -496,7 +496,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 * A new type of system alert has been introduced. You can now get notified when a custom action fails.
 -->
 
-## Versionsinformation maj 2023 {#may-rn-2023}
+## Version 23 maj {#may-rn-2023}
 
 ### Nya funktioner{#may-2023-features}
 
@@ -649,7 +649,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 * Meddelanden i appen - Korrigerade ett fel där kampanjplaneringen stod i konflikt med inställningarna för meddelandefrekvens.
 
 
-## Versionsinformation april 2023 {#apr-rn-2023}
+## 23 april {#apr-rn-2023}
 
 <!--Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added in this page.
 
@@ -730,7 +730,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 
 
-## Versionsinformation mars 2023 {#mar-2023}
+## 23 mars-utgåvan {#mar-2023}
 
 ### Nya funktioner{#mar-2023-features}
 
@@ -826,7 +826,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
   Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [den detaljerade dokumentationen](../reports/global-report.md#modify-dashboard).
 
-## Versionsinformation februari 2023 {#feb-2023}
+## Version 23 februari {#feb-2023}
 
 ### Nya funktioner{#feb-2023-features}
 
@@ -954,7 +954,7 @@ Note that each widget can be resized and deleted as needed.
 
 * **URL-personalisering** - När du lägger till URL:er som innehåll till dina erbjudanden kan du nu anpassa dessa URL:er med uttrycksredigeraren. [Läs mer](../offers/offer-library/add-representations.md)
 
-## Versionsinformation januari 2023{#jan-2023-release}
+## 23 januari-versionen {#jan-2023-release}
 
 ### Nya funktioner{#jan-2023-features}
 

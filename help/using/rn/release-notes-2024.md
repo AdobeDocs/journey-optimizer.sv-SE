@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
-source-git-commit: 12c3c1e2d6dabdc5c9b741742fd36c35c8b0992c
+source-git-commit: 9bd4f854292f4928216c9ad4602098930743c1bd
 workflow-type: tm+mt
-source-wordcount: '3846'
+source-wordcount: '3838'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2024.
 
 
-## Versionsinformation augusti 2024 {#8-2024}
+## Version 24 augusti {#8-2024}
 
 **Releasedatum**: 20-21 augusti 2024
 
@@ -148,7 +148,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 
 
-## Versionsinformation juli 2024 {#24-7-2024}
+## Version 24 juli {#24-7-2024}
 
 **Releasedatum**: 30-31 juli 2024
 
@@ -199,7 +199,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 
 
-## Versionsinformation juni 2024 {#24-6-2024}
+## 24 juni {#24-6-2024}
 
 **Releasedatum**: 18-19 juni 2024
 
@@ -344,7 +344,6 @@ Läs mer i dokumentationen för [innehållsfragment](../content-management/fragm
 * **Sammanslagningsprinciper** är nu GA - Sammanslagningsprinciper som används av en resa är nu synliga och konsekventa under hela resan. [Läs mer](../building-journeys/journey-properties.md#merge-policies)
 
 
-
 #### Kampanjer
 
 * När du skapar en kampanj i Adobe Journey Optimizer kan du nu välja kampanjtyp (schemalagd eller utlöst) i en ny modal. [Läs mer](../campaigns/create-campaign.md)
@@ -376,7 +375,7 @@ Läs mer i dokumentationen för [innehållsfragment](../content-management/fragm
 
 
 
-## Versionsinformation maj 2024 {#may-2024}
+## Version 24 maj {#may-2024}
 
 **Releasedatum**: 21-22 maj 2024
 
@@ -525,9 +524,7 @@ Från betaversion till den här versionen har följande förbättringar lagts ti
 Som en del av vårt pågående arbete med att leverera en enhetlig användarupplevelse harmoniserar vi terminologin som används i Adobe Experience Cloud produkter och appar. Det här påverkar den tyska termen &quot;Titel&quot; som ändras till &quot;Label&quot; när det gäller namnet på ett objekt. Ändringarna införs stegvis i användargränssnittet och dokumentationen.
 
 
-
-
-## Versionsinformation april 2024 {#apr-2024}
+## 24 april {#apr-2024}
 
 **Releasedatum**: 2 maj 2024
 
@@ -636,7 +633,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 
 
-## Versionsinformation mars 2024 {#mar-2024}
+## Mars 24-utgåvan {#mar-2024}
 
 **Releasedatum**: 19-20 mars 2024
 
@@ -686,7 +683,7 @@ Nya mellanliggande statusvärden har lagts till i reseutvecklingscykeln:
 
 När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad. [Läs mer](../building-journeys/journey-gs.md#filter)
 
-## Versionsinformation februari 2024 {#feb-2024}
+## Version 24 februari {#feb-2024}
 
 **Releasedatum**: 21-22 feb 2024
 
@@ -772,7 +769,7 @@ Tidigare i Beta är följande förbättringar nu tillgängliga för alla använd
 * **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.-->
 
 
-## Versionsinformation januari 2024 {#jan-2024}
+## Januari 24-versionen {#jan-2024}
 
 **Releasedatum**: 30-31 januari 2024
 
