@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5c9802eaa3fa35a43f53ef5dd86495b502149a04
+source-git-commit: ff2ad535b0919c3c9d8cf098dfcedf3f9ea8bba6
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1331'
 ht-degree: 9%
 
 ---
@@ -26,11 +26,11 @@ ht-degree: 9%
 
 ![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsnyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till din inkorg varje kvartal.
 
-## Oktober 2024-uppdateringar {#24-10-rn}
+## Uppdateringar från 24 oktober {#24-10-rn}
 
 ### Nya funktioner {#24-10-features}
 
-De senaste funktionerna i Adobe Journey Optimizer listas nedan.
+De nya funktionerna i Adobe Journey Optimizer listas nedan.
 
 <table>
 <thead>
@@ -41,11 +41,10 @@ De senaste funktionerna i Adobe Journey Optimizer listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Tillgänglighetsdatum: 1 okt</p>
 <p>Med den kodbaserade upplevelsekanalen kan du med Adobe Journey Optimizer utföra avancerad personalisering och testning för alla dina inkommande egenskaper, vilket möjliggör smidig leverans av skräddarsydda upplevelser över olika kontaktytor som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta tv-apparater, kioskdatorer, ATM-enheter, IoT-enheter med mera. Den kodbaserade upplevelsekanalen är nu tillgänglig på arbetsytan för resan.</p>
 <p>Mer information finns i den <a href="../code-based/create-code-based.md">detaljerade dokumentationen</a>.</p>
 <img src="../assets/do-not-localize/code-based-journey.gif"/>
-<p>Tillgänglighetsdatum: 1 okt</p>
+<p>Tillgänglighetsdatum: 1 oktober 2024</p>
 </tr>
 </tbody>
 </table>
@@ -59,28 +58,27 @@ De senaste funktionerna i Adobe Journey Optimizer listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Tillgänglighetsdatum: 1 okt</p>
 <p>Med webbkanalen kan Adobe Journey Optimizer personalisera webbupplevelsen som ni levererar till era kunder via inkommande webbresor. Webbkanalen är nu tillgänglig på arbetsytan.</p>
 <p>Mer information finns i den <a href="../web/create-web.md">detaljerade dokumentationen</a>.</p>
 <img src="../assets/do-not-localize/web-journey.gif"/>
-<p>Tillgänglighetsdatum: 1 okt</p>
+<p>Tillgänglighetsdatum: 1 oktober 2024</p>
 </tr>
 </tbody>
 </table>
 
 ### Förbättringar {#24-10-improvements}
 
-**Resor**
+**Resor** - Tillgänglighetsdatum: 3 okt 2024
 
-* (Tillgänglighetsdatum: 3 okt) **Parametrar i anpassade åtgärder** - NULL och valfria parametrar stöds nu i anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#define-the-message-parameters)
+* **Parametrar i anpassade åtgärder** - NULL och valfria parametrar stöds nu i anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
-**Publiker** - Tillgänglighetsdatum: 8 okt
+**Publiker** - Tillgänglighetsdatum: 8 okt 2024
 
 * När ni riktar er till en publik med CSV-filer kan ni nu använda attribut från filen i personaliseringsredigeraren och i regelbyggaren för resor och kampanjer. [Läs mer](../audience/about-audiences.md)
 
 * Målgrupper och attribut från anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
-## Versionsinformation september 2024 {#24-9-rn}
+## 24 september {#24-9-rn}
 
 <!--
 >[!CAUTION]
@@ -164,36 +162,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
-<!--table>
-<thead>
-<tr>
-<th><strong>Code-based experiences in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>With the Code-based experience channel, Adobe Journey Optimizer allows you to do advanced personalization and testing for any of your inbound properties, enabling seamless delivery of tailored experiences across diverse touchpoints such as web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, IoT devices, and more. The Code-based experience channel is now available in the journey canvas.</p>
-<p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p>
-</tr>
-</tbody>
-</table-->
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Web experiences in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>With the Web channel, Adobe Journey Optimizer allows you to personalize the web experience you deliver to your customers through inbound web journeys. The Web channel is now available in the journey canvas.</p>
-<p>For more information, refer to the <a href="../web/get-started-web.md">detailed documentation</a>.</p>
-</tr>
-</tbody>
-</table-->
-
 <table>
 <thead>
 <tr>
@@ -207,7 +175,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <p>Fördjupa dig i en praktisk upplevelse med <a href="https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator">vår förhandsvisning av aktiva funktioner</a>, som är utformad för att du först ska kunna utforska dess funktioner och till fullo förstå dess funktioner.</a>.</p>
 <p>Mer information finns i den <a href="../content-management/gs-generative.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ai-content.gif"/>
-<p>Tillgänglighetsdatum: 12 sept</p>
+<p>Tillgänglighetsdatum: 12 september 2024</p>
 </td>
 </tr>
 </tbody>
@@ -225,7 +193,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <p>Med Guided Channel Setup kan man automatisera och validera kanalkonfigurationen i en enhetlig upplevelse och därmed få igång Journey Optimizer snabbare. Denna nya guidade installation effektiviserar konfigurationen av kanaler så att alla nödvändiga resurser snabbt kan installeras och användas i Experience Platform, Journey Optimizer och datainsamling. På så sätt kan marknadsförings-, produkt- och datateknikteam snabbt börja med att skapa kampanjer och resor.</p>
 <p>Mer information finns i den <a href="../configuration/set-mobile-config.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/guided-setup.gif"/>
-<p>Tillgänglighetsdatum: 3 september</p>
+<p>Tillgänglighetsdatum: 3 september 2024</p>
 </br>
 </td>
 </tr>
@@ -243,10 +211,10 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 
 Den här versionen innehåller de förbättringar som anges nedan.
 
-**Publiker**
+**Publiker** - Tillgänglighetsdatum: 17 september 2024
 
 <!--* The use of audiences from custom upload (CSV file) is now available for use with Privacy and Security Shield add-on.-->
-* (Tillgänglighetsdatum: 17 september) **Licensanvändning** - Kontrollpanelen för licensanvändning visar nu de aktiveringsbara profilerna i stället för de engagerande målgrupperna. [Läs mer](../audience/license-usage.md)
+* **Licensanvändning** - Kontrollpanelen för licensanvändning visar nu de aktiveringsbara profilerna i stället för de engagerande målgrupperna. [Läs mer](../audience/license-usage.md)
 
 **Innehållshantering**
 
