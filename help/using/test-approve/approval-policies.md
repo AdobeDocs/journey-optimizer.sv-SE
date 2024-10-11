@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 94114fac56b68aa0940ae9843f672823d64c19df
+source-git-commit: cd46b3346e284958e6f3f9fa641b548f68672000
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Med godkännandeprinciper kan administratörer upprätta en valideringsprocess f
 
 ## Skapa godkännandepolicyer {#create-policies}
 
-1. Öppna **[!UICONTROL Permissions]** och sedan **[!UICONTROL Policies]** på menyn **[!UICONTROL Administration]**.
+1. Gå till **[!UICONTROL Permissions]** och sedan **[!UICONTROL Policies]** från menyn **[!UICONTROL Administration]** i Journey Optimizer.
 
    ![](assets/policy_create_1.png)
 
