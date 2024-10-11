@@ -8,7 +8,7 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 979cb8270a4be4c7ad08db8f0a2e072d590906de
+source-git-commit: 72bda999c9e866398375422d8419516e5fea97b5
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -43,8 +43,6 @@ Som standard visas bara de datauppsättningar som du har kapslat in i. Om du vil
 >* 13 månader för data i sjön
 >
 >Dessutom kommer vid den tidpunkten direktuppspelningssegmentering inte längre att stödja användning av skicka- och öppna-händelser från spårnings- och feedbackdatauppsättningar.
-
-
 
 Markera namnet på en datauppsättning för att komma åt aktivitetsskärmen för datauppsättningen och se information om den datauppsättning du valde. Fliken Aktivitet innehåller ett diagram som visar hur många meddelanden som har förbrukats samt en lista över lyckade och misslyckade batchar.
 

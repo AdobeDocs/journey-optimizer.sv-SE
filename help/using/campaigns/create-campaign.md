@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: e96aefefd8391d1a59a5a4f9d50c6ac819bf60f8
+source-git-commit: 72bda999c9e866398375422d8419516e5fea97b5
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -33,11 +33,6 @@ Om du vill skapa en ny kampanj öppnar du menyn **[!UICONTROL Campaigns]** och k
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
 >abstract="**Schemalagda kampanjer** körs omedelbart eller på ett angivet datum och är avsedda att skicka meddelanden av marknadsföringstyp. **API-utlösta** kampanjer körs med ett API-anrop. Syftet är att skicka antingen marknadsföringsmeddelanden (reklammeddelanden som kräver användarens samtycke) eller transaktionsmeddelanden (icke-kommersiella meddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang)."
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_campaign_category"
->title="Kampanjkategori"
->abstract="Om du skapar en schemalagd kampanj väljs typen **marketing** automatiskt. För API-utlösta kampanjer väljer du om du vill skicka ett **marknadsföringsmeddelande** (kampanjmeddelande som kräver användarens samtycke) eller **transaktionsmeddelande** (icke-kommersiellt meddelande, som också kan skickas till profiler som inte har prenumererats i specifika sammanhang)."
 
 1. Välj den typ av kampanj som du vill köra
 
