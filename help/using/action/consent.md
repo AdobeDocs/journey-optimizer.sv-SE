@@ -8,38 +8,35 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
-exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-source-git-commit: 21b30d75bac657acb28500b143b7b1f9018a13ff
+source-git-commit: 6b721c04db34fecae2274604113061e4e97db149
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1230'
 ht-degree: 0%
 
 ---
 
 # Arbeta med policyer för samtycke {#consent-management}
 
-Dina data kan begränsas av din organisation eller av juridiska bestämmelser. Det är därför viktigt att se till att dataåtgärderna i Journey Optimizer är kompatibla med [dataanvändningsprinciper](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html){target="_blank"}. Dessa profiler är Adobe Experience Platform-regler som definierar vilka [marknadsföringsåtgärder](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html#marketing-actions){target="_blank"} du får utföra på data.
+Dina data kan begränsas av din organisation eller av juridiska bestämmelser. Det är därför viktigt att se till att dataåtgärderna i Journey Optimizer är kompatibla med [dataanvändningsprinciper](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html){target="_blank"}. Dessa profiler är Adobe Experience Platform-regler som definierar vilka marknadsföringsåtgärder du får utföra på data.
 
-En typ av dataanvändningsprinciper som är tillgängliga är **medgivandeprinciper**. De gör det möjligt för er att enkelt anta och tillämpa marknadsföringspolicyer för att respektera kundernas samtycke. [Läs mer om policytillämpning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html){target="_blank"}
+Som standard, om en profil har valt att inte ta emot meddelanden från dig, kommer motsvarande profil att uteslutas från efterföljande leveranser. Du kan skapa en **medgivandeprincip** som åsidosätter den här standardlogiken. Du kan till exempel skapa medgivandeprinciper i Experience Platform för att exkludera kunder som inte har samtyckt till att ta emot kommunikation för en viss kanal. Om det inte finns någon anpassad princip gäller standardprincipen.
 
 >[!IMPORTANT]
 >
 >Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt tillägget **Adobe Healthcare Shield** eller **Privacy and Security Shield**.
 
-Du kan till exempel [skapa medgivandeprinciper](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"} i Experience Platform för att utesluta kunder som inte har samtyckt till att ta emot e-post, push eller SMS-meddelanden.
+De viktigaste stegen för att tillämpa policyer för samtycke är följande:
 
-* För de interna utgående kanalerna (e-post, push, SMS, direktreklam) är logiken följande:
+1. Skapa en samtyckespolicy i Adobe Experience Platform med en associerad marknadsföringsåtgärd. [Lär dig hur du skapar en medgivandeprincip](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"}
 
-   * Som standard, om en profil har valt att inte ta emot meddelanden från dig, kommer motsvarande profil att uteslutas från efterföljande leveranser.
+2. Använd samtyckesregler i Adobe Journey Optimizer med kanalkonfigurationer eller utför anpassade åtgärder.
 
-   * Om du har Adobe **hälso- och sjukvårdsskölden** eller **skölden för sekretess och säkerhet** kan du skapa en anpassad samtyckespolicy som åsidosätter standardlogiken. Du kan till exempel definiera en profil som endast skickar e-postmeddelanden till alla personer som har valt att delta. Om det inte finns någon anpassad princip gäller standardprincipen.
+   * Skapa en kanalkonfiguration med en associerad marknadsföringsåtgärd. När du skapar en kommunikation med kanalkonfigurationen ärver den marknadsföringsåtgärd som har associerats och tillämpar de motsvarande medgivandepolicyer som definieras i Adobe Experience Platform. [Lär dig hur du kan utnyttja medgivandeprinciper via kanalkonfigurationer](#surface-marketing-actions)
 
-  Om du vill tillämpa en anpassad profil måste du definiera en marknadsföringsåtgärd i den principen och associera den med en kanalkonfiguration. [Läs mer](#surface-marketing-actions)
+   * På resenivå kan du antingen:
 
-På kundresenivån kan du tillämpa medgivandeprinciper för dina anpassade åtgärder:
-
-* När **konfigurerar en anpassad åtgärd** kan du definiera en kanal- och marknadsföringsåtgärd. [Läs mer](#consent-custom-action)
-* När du lägger till den anpassade **åtgärden i en resa** kan du definiera ytterligare en marknadsföringsåtgärd. [Läs mer](#consent-journey)
+      * Koppla en kanal och en marknadsföringsåtgärd till en anpassad åtgärd när den konfigureras. [Lär dig hur du kan utnyttja medgivandeprinciper när du konfigurerar en anpassad åtgärd](#consent-custom-action)
+      * Definiera ytterligare en marknadsföringsåtgärd när du lägger till en anpassad åtgärd under en resa. [Lär dig hur du kan utnyttja medgivandeprinciper när du lägger till en anpassad åtgärd under en resa](#consent-journey)
 
 ## Utnyttja samtyckespolicyer via kanalkonfigurationer {#surface-marketing-actions}
 
@@ -107,16 +104,11 @@ There are two types of latency regarding the use of consent policies:
 * **Consent policy latency**: the delay from the time a consent policy is created or updated to the moment it is applied. This can take up to 6 hours
 -->
 
-### Konfigurera den anpassade åtgärden {#consent-custom-action}
-
->[!CONTEXTUALHELP]
->id="ajo_consent_required_marketing_action"
->title="Definiera en obligatorisk marknadsföringsåtgärd"
->abstract="Med den obligatoriska marknadsföringsåtgärden kan ni definiera de marknadsföringsåtgärder som är kopplade till er anpassade åtgärd. Om du till exempel använder den anpassade åtgärden för att skicka e-post kan du välja E-postmarknadsföring. När de används under en resa hämtas och utnyttjas alla medgivandepolicyer som är kopplade till den marknadsföringsåtgärden. Detta kan inte ändras på arbetsytan."
+### Utnyttja medgivandeprinciper när en anpassad åtgärd konfigureras{#consent-custom-action}
 
 När du konfigurerar en anpassad åtgärd kan två fält användas för samtyckeshantering.
 
-I fältet **Kanal** kan du välja kanal som är relaterad till den här anpassade åtgärden: **E-post**, **SMS** eller **Push-meddelande**. Det fyller i fältet **Obligatorisk marknadsföringsåtgärd** med standardmarknadsföringsåtgärden för den valda kanalen. Om du väljer **other** definieras ingen marknadsföringsåtgärd som standard.
+I fältet **Kanal** kan du välja kanalen som är relaterad till den här anpassade åtgärden. Det fyller i fältet **Obligatorisk marknadsföringsåtgärd** med standardmarknadsföringsåtgärden för den valda kanalen. Om du väljer **other** definieras ingen marknadsföringsåtgärd som standard.
 
 ![](assets/consent1.png)
 
@@ -128,22 +120,7 @@ För vissa typer av viktig kommunikation, t.ex. ett transaktionsmeddelande som s
 
 De andra stegen för att konfigurera en anpassad åtgärd beskrivs i [det här avsnittet](../action/about-custom-action-configuration.md#consent-management).
 
-### Bygga resan {#consent-journey}
-
->[!CONTEXTUALHELP]
->id="ajo_consent_required_marketing_action_canvas"
->title="Obligatorisk marknadsföringsåtgärd"
->abstract="En nödvändig marknadsföringsåtgärd definieras när en anpassad åtgärd skapas. Denna nödvändiga marknadsföringsåtgärd kan inte tas bort från åtgärden eller ändras."
-
->[!CONTEXTUALHELP]
->id="ajo_consent_additional_marketing_action_canvas"
->title="Ytterligare marknadsföringsåtgärder"
->abstract="Lägg till ytterligare en marknadsföringsåtgärd utöver den som krävs. Samtyckesprinciper som är relaterade till båda marknadsföringsåtgärderna kommer att verkställas."
-
->[!CONTEXTUALHELP]
->id="ajo_consent_refresh_policies_canvas"
->title="Visualisera medgivandeprinciper som ska gälla vid körning"
->abstract="Marknadsföringsåtgärder lägger in medgivandeprinciper som kombinerar åtgärdsparametrar och individuella profiler för att filtrera bort användare. Hämta den senaste definitionen av dessa profiler genom att klicka på knappen för att uppdatera."
+### Utnyttja policyer för samtycke när du lägger till en anpassad åtgärd under en resa {#consent-journey}
 
 När du lägger till den anpassade åtgärden på en resa kan du hantera samtycke med flera alternativ. Klicka på **Visa skrivskyddade fält** om du vill visa alla parametrar.
 
@@ -172,9 +149,3 @@ The following data is taken into account for consent:
 -->
 
 De andra stegen för att konfigurera en anpassad åtgärd under en resa beskrivs i [det här avsnittet](../building-journeys/using-custom-actions.md).
-
-## Instruktionsvideo {#video}
-
-Läs om hur dataanvändningsetiketter används i Journey Optimizer-kanaler.
-
->[!VIDEO](https://video.tv.adobe.com/v/3434901/?learn=on)
