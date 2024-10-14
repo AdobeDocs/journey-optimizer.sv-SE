@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 1b8442a13e046855bd3670e0ebdee60518f09bd4
+source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
 workflow-type: tm+mt
-source-wordcount: '5551'
+source-wordcount: '5606'
 ht-degree: 13%
 
 ---
@@ -19,7 +19,13 @@ ht-degree: 13%
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer]-dokumentationen.
 
-## Sept 2024 {#sept-2024}
+## Oktober 2024 {#oct-2024}
+
+* Sidan Konfigurera din kodbaserade upplevelse har förbättrats för att göra processen tydligare, inklusive avsnittet som förklarar vad en yt-URI är. [Läs mer](../code-based/code-based-configuration.md)
+
+* Konfigurationssidan Skapa webbkanal har uppdaterats för att klargöra stegen när du skapar en sidmatchningsregel, som även gäller för kodbaserad upplevelsekonfiguration. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
+
+## September 2024 {#sept-2024}
 
 * Alla nya funktioner och förbättringar som kommer med versionen [!DNL Journey Optimizer], avsnitt 24, har beskrivits i dokumentationen. [Läs mer](release-notes.md)
 * Lagt till ett avsnitt om hantering av reseåterförsök. [Läs mer](../building-journeys/read-audience.md#read-audience-retry)

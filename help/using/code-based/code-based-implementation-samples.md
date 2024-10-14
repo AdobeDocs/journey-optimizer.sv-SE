@@ -6,7 +6,7 @@ topic: Content Management
 role: Developer
 level: Experienced
 exl-id: e5ae8b4e-7cd2-4a1d-b2c0-8dafd5c4cdfd
-source-git-commit: 75dcd6d4a36b09809cdf4db3a0ae3ba3a1cb35b5
+source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Om du har en implementering på klientsidan kan du använda någon av AEP-klient
 
 1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} ingår på sidan.
 
-1. Du måste använda kommandot `sendEvent` och ange ytans URI för att hämta personaliseringsinnehåll.
+1. Du måste använda kommandot `sendEvent` och ange [yt-URI](code-based-configuration.md#surface-definition)<!--( or location/path)--> för att hämta personaliseringsinnehåll.
 
    ```javascript
    alloy("sendEvent", {
@@ -120,8 +120,8 @@ Cookies används för att bevara användaridentitet och klusterinformation. När
 
 | Cookie | Syfte | Lagrad av | Skickat av |
 | ------------------------ | -------------------------------------------------------------------------- | --------- | ------- |
-| kndctr_AdobeOrg_identity | Innehåller information om användaridentitet | Webb-SDK | Webb-SDK |
-| kndctr_AdobeOrg_Cluster | Anger vilket kluster med upplevelsekanter som ska användas för att slutföra begäranden | Webb-SDK | Webb-SDK |
+| kndctr_AdobeOrg_identity | Innehåller information om användaridentitet | Web SDK | Web SDK |
+| kndctr_AdobeOrg_Cluster | Anger vilket kluster med upplevelsekanter som ska användas för att slutföra begäranden | Web SDK | Web SDK |
 
 **Begär placering**
 

@@ -6,26 +6,20 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 2161baf0-38b7-4397-bffe-083929e8033a
-source-git-commit: 37e60e5d7c0ad164cde67015b72341e1f4eda6a9
+source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
 
-# Skapa webbkanalskonfiguration {#web-configuration}
+# Konfigurera era webbupplevelser {#web-configuration}
 
->[!CONTEXTUALHELP]
->id="ajo_admin_page_rule"
->title="Matchningsregel för sidor"
->abstract="Skapa en regel för sidmatchning för att effektivt hantera och ange en grupp URL:er som delar samma villkor som mål. Med den här regeln kan du konsolidera flera URL:er under en riktlinje, vilket förenklar användningen av konsekventa inställningar och åtgärder på dessa sidor."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_default_url"
->title="URL för standardredigering och förhandsgranskning"
->abstract="Det här fältet ser till att sidorna som genereras eller matchas av regeln har en angiven URL-adress, vilket är nödvändigt för att både skapa och förhandsgranska innehåll effektivt."
+## Skapa en webbkanalskonfiguration {#create-web-configuration}
 
 En webbkonfiguration är en webbegenskap som identifieras av en URL där innehållet levereras. Den kan matcha en eller flera sidors URL-adresser så att du kan leverera ändringar för en eller flera webbsidor.
+
+Följ stegen nedan för att skapa en webbkanalskonfiguration.
 
 1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** och klicka sedan på **[!UICONTROL Create channel configuration]**.
 
@@ -37,37 +31,65 @@ En webbkonfiguration är en webbegenskap som identifieras av en URL där innehå
    >
    > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
 
-1. Om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till konfigurationen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+1. Om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till konfigurationen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
-1. Välj **Webbkanal**.
+1. Välj **webbkanalen**.
 
    ![](assets/web_config_2.png)
 
 1. Välj **[!UICONTROL Marketing action]** om du vill associera medgivandeprinciper till meddelanden som använder den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
 
-1. Du kan antingen ange **[!UICONTROL Page URL]** om du bara vill tillämpa ändringarna på en sida.
+1. Välj något av följande alternativ i avsnittet **[!UICONTROL Web settings]**:
 
-1. Eller så kan du skapa en **[!UICONTROL Pages matching rule]** som mål för flera URL:er som matchar samma regel, till exempel om du vill tillämpa ändringarna på en hjältebanderoll på en hel webbplats eller lägga till en toppbild som visas på alla produktsidor på en webbplats.
+   * **[!UICONTROL Single page]** - Om du bara vill tillämpa ändringarna på en sida anger du **[!UICONTROL Page URL]**.
 
-   Välj **[!UICONTROL Pages matching rule]** om du vill göra det.
+   * **[!UICONTROL Pages matching rule]** - Om du vill ha flera URL:er som matchar samma regel som mål skapar du en sidmatchningsregel och anger en **[!UICONTROL Default authoring and preview URL]**. [Läs mer](#web-page-matching-rule)
 
-1. Definiera dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**.
+1. Klicka på **[!UICONTROL Submit]** om du vill spara ändringarna.
+
+Du kan nu välja den här konfigurationen när du använder webbkanalen i dina kampanjer eller resor.
+
+## Bygg en sidmatchningsregel {#web-page-matching-rule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_page_rule"
+>title="Bygg en sidmatchningsregel"
+>abstract="Skapa en regel för sidmatchning för att effektivt hantera och ange en grupp URL:er som delar samma villkor som mål. Med den här regeln kan du konsolidera flera URL:er under en riktlinje, vilket förenklar användningen av konsekventa inställningar och åtgärder på dessa sidor."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_default_url"
+>title="Definiera en URL för redigering och förhandsgranskning av innehåll"
+>abstract="Det här fältet ser till att sidorna som genereras eller matchas av regeln har en angiven URL-adress, vilket är nödvändigt för att både skapa och förhandsgranska innehåll effektivt."
+
+När du skapar en webb- eller [kodbaserad upplevelse](../code-based/get-started-code-based.md)-konfiguration kan du skapa en **[!UICONTROL Pages matching rule]** som mål för flera URL:er som matchar samma regel. Du kan därför använda samma innehållsändringar på flera sidor samtidigt.
+
+Du kanske vill använda ändringarna på en hjältebanderoll på en hel webbplats, eller lägga till en översta bild som visas på alla produktsidor på en webbplats.
+
+1. Välj **[!UICONTROL Pages matching rule]** när du konfigurerar din [webb](#web-configuration) eller [kodbaserade upplevelse](../code-based/code-based-configuration.md).
+
+1. Definiera dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**. Kontrollera tillgängliga operatorer i [det här avsnittet](#available-operators).
 
    Om du till exempel vill redigera element som visas på alla sidor med produkter för kvinnor på din Luma-webbplats väljer du **[!UICONTROL Domain]** > **[!UICONTROL Starts with]** > `luma` och **[!UICONTROL Page]** > **[!UICONTROL Contains]** > `women`.
 
    ![](assets/web_config_3.png)
 
-1. Om du har skapat en **[!UICONTROL Page matching rule]** måste du ange redigerings- och förhandsgransknings-URL:en **Standard** . Detta steg säkerställer att sidorna som genereras eller matchas av regeln har en angiven URL-adress för både innehållsskapande och förhandsgranskning. Läs mer om reglerna för sidmatchning i [avsnittet nedan](#web-page-matching-rule).
+1. Om ditt användningsfall inte kan modelleras med en regel kan du lägga till flera regler. Klicka på **[!UICONTROL Add another page rule]** och upprepa steget ovan.
 
-1. Spara ändringarna.
+   >[!NOTE]
+   >
+   >Du kan lägga till upp till 10 regler.
 
-Nu kan du välja din konfiguration när du använder webbkanalen i kampanjer eller resor.
+1. Du kan använda operatorerna **[!UICONTROL Or]** eller **[!UICONTROL Exclude]** mellan de olika reglerna.
 
-## Sidmatchningsregel {#web-page-matching-rule}
+   **[!UICONTROL Exclude]** är användbart när en av sidorna som matchar den definierade regeln inte ska ha något mål. Du kan till exempel ange alla `luma.com` sidor som innehåller `product` som mål, med undantag för följande sida: `https://luma.com/blogs/productinfo`.
 
-När du skapar en regel som matchar flera sidor så att du kan tillämpa samma innehållsändringar på flera sidor samtidigt, kan du använda olika operatorer i avsnitten **Domän** och **Sökväg** för att skapa önskad regel. Kontrollera tillgängliga operatorer nedan.
+   ![](assets/web_config_4.png)
 
-Tillgängliga operatorer för att skapa sidmatchningsregler:
+1. Ange **[!UICONTROL Default authoring and preview URL]**. Detta steg säkerställer att sidorna som genereras eller matchas av regeln har en angiven URL-adress för både innehållsskapande och förhandsgranskning.
+
+### Tillgängliga operatorer för att skapa sidmatchningsregler {#available-operators}
+
+När du skapar en [regel som matchar flera sidor](#web-page-matching-rule) kan du använda olika operatorer i avsnitten **[!UICONTROL Domain]** och **[!UICONTROL Path]** för att skapa önskad regel. De tillgängliga operatorerna listas nedan.
 
 * **Domän**
 
@@ -123,5 +145,3 @@ Tillgängliga operatorer för att skapa sidmatchningsregler:
     </tr>
     </tbody>
 </table>
-
-Om ditt användningsfall inte kan modelleras med en regel har du möjlighet att lägga till flera sidregler och du kan använda operatorerna Eller eller Exkludera mellan dem. Exkludera är användbart när en av sidorna som matchar den definierade regeln inte ska ha något mål: till exempel alla exempel&quot;example.com&quot;-sidor som innehåller&quot;product&quot;, exklusive följande sida: `https://example.com/blogs/productinfo`.

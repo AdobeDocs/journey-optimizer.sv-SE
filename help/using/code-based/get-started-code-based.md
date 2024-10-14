@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: b8a71c43ad5b456bfc9ec9b9d3fba06049e604ed
+source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '720'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ När ska den kodbaserade kanalen användas i stället för de andra [!DNL Journe
 
 * Du kan också använda den kodbaserade kanalen som ett alternativ till webbkanalen eller webbkanalen i appen [!DNL Journey Optimizer] om du har en API-baserad, headless- eller serversidesimplementering.
 
-### Kodbaserad kontra webbkanal
+### Kodbaserad kontra webbkanal {#code-based-vs-web}
 
 Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller den kodbaserade upplevelsen, men beroende på ditt sammanhang kan ett alternativ vara mer lämpligt än det andra. De viktigaste skillnaderna listas nedan så att du kan fatta ett välgrundat beslut om vad du ska använda när.
 
@@ -103,18 +103,20 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 
 >[!CAUTION]
 >
->Den här funktionen är avsedd för utvecklare och/eller erfarna användare. Den kan användas av marknadsförare med viss kodskrivningskompetens, förutsatt att ytimplementeringarna och den inledande konfigurationen hanteras av utvecklingsteamet.
+>Den här funktionen är avsedd för utvecklare och/eller erfarna användare. Den kan användas av marknadsförare med viss kodskrivningskompetens, förutsatt att kanalkonfigurationerna och den inledande konfigurationen hanteras av utvecklingsteamet.
 
-Om du vill redigera ditt innehåll med den kodbaserade funktionen [!DNL Journey Optimizer] måste dina sidor eller appar vara instrumenterade. Om du vill göra det måste du deklarera de specifika enskilda platserna (kallas [ytor](code-based-configuration.md#surface-definition)) i förväg där du vill infoga eller ersätta innehåll<!--HOW??-->.
+Om du vill redigera ditt innehåll med den kodbaserade funktionen [!DNL Journey Optimizer] måste dina sidor eller appar vara instrumenterade. Om du vill göra det måste du deklarera de specifika enskilda platserna (så kallade [ytor](code-based-configuration.md#surface-definition)) i förväg där du vill infoga eller ersätta innehåll.
 
 >[!NOTE]
 >
->Innehållet som är associerat med en konfiguration kan för närvarande bara vara HTML eller JSON. <!--WILL COME LATER: text, image or another format depending on the application-->
+>Innehållet som är kopplat till en konfiguration kan för närvarande bara vara HTML eller JSON.
 
 De viktigaste stegen för att implementera en kodbaserad kampanj är följande.
 
-1. Definiera en [yta](code-based-configuration.md#surface-definition) i programimplementeringen, som i princip är den plats där du vill lägga till din kodbaserade upplevelse, skapa sedan en kodbaserad upplevelsekanalskonfiguration som refererar till den platsen och skapa sedan en kampanj i [!DNL Journey Optimizer] med den här konfigurationen. [Lär dig hur](create-code-based.md#create-code-based-campaign)
+1. Definiera en [yta](code-based-configuration.md#surface-definition) i programimplementeringen, som i princip är den plats där du vill lägga till din kodbaserade upplevelse, och skapa en kodbaserad upplevelsekanalskonfiguration som refererar till den platsen. [Lär dig hur](code-based-configuration.md#create-code-based-configuration)
+
+1. Skapa en resa eller kampanj i [!DNL Journey Optimizer] med den här konfigurationen. [Lär dig hur](create-code-based.md#create-code-based-campaign)
 
 1. Skapa en upplevelse genom att ange innehåll för den valda konfigurationen med personaliseringsredigeraren [!DNL Journey Optimizer]. [Lär dig hur](create-code-based.md#edit-code)
 
-1. Appimplementeringsteamet gör explicita API- eller SDK-anrop för att hämta innehåll för namngivna ytor, som&quot;Banner Text&quot; eller&quot;Recommendations Tray 1&quot;, eller icke-UI-relaterade beslutspunkter i ett program, som&quot;sökalgoritmparametrar&quot;. I det här fallet är implementeringsteamet ansvarigt för återgivning eller annan tolkning och åtgärd för det returnerade innehållet.<!--TBC with Robert - should link to a new section with API/SDK call samples-->
+1. Appimplementeringsteamet gör explicita API- eller SDK-anrop för att hämta innehåll för namngivna ytor, som&quot;Banner Text&quot; eller&quot;Recommendations Tray 1&quot;, eller icke-UI-relaterade beslutspunkter i ett program, som&quot;sökalgoritmparametrar&quot;. I det här fallet är implementeringsteamet ansvarigt för återgivning eller annan tolkning och åtgärd för det returnerade innehållet. [Läs mer](code-based-implementation-samples.md)

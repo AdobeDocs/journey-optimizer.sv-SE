@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: 77e2892dc188ebdd79031792434b4f55913ee811
+source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1460'
 ht-degree: 1%
 
 ---
@@ -16,38 +16,27 @@ ht-degree: 1%
 # Konfigurera din kodbaserade upplevelse {#code-based-configuration}
 
 >[!CONTEXTUALHELP]
->id="ajo_admin_app_id"
->title="Program-ID"
->abstract="Tillhandahåll program-ID:t för korrekt identifiering och konfiguration i appens operativmiljö, vilket ger smidig integrering och funktionalitet."
+>id="ajo_code_based_surface"
+>title="Definiera en kodbaserad upplevelsekonfiguration"
+>abstract="En kodbaserad konfiguration definierar sökvägen och platsen i programmet, som identifieras unikt av en URI i programimplementeringen, där innehållet levereras och förbrukas."
+
+Innan du [skapar din upplevelse](create-code-based.md) måste du skapa en kodbaserad upplevelsekonfiguration där du anger var innehållet ska levereras och användas i programmet.
+
+En kodbaserad upplevelsekonfiguration måste referera till ytan, som i princip är den plats där du vill återge ändringarna. Enligt den valda plattformen måste du ange en plats/sökväg eller en URI för hela ytan. [Läs mer](#surface-definition)
+
+## Skapa en kodbaserad upplevelsekonfiguration {#create-code-based-configuration}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_location"
->title="Plats på sida"
->abstract="Platsen eller sökvägen i programfältet anger exakt destinationen i programmet som du vill att användarna ska ha tillgång till. Detta kan vara ett visst avsnitt eller en viss sida i programmets navigeringsstruktur."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_surface_uri"
->title="Surface URI"
->abstract="En Surface URI fungerar som en exakt identifierare som dirigerar till distinkta användargränssnittselement eller -komponenter i ett program."
+>title="Ange den specifika platsen"
+>abstract="I det här fältet anges det exakta målet på sidan eller i programmet som du vill att användarna ska ha tillgång till. Detta kan vara ett visst avsnitt eller en viss sida i navigeringsstrukturen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_default_mobile_url"
->title="URL för standardredigering och förhandsgranskning"
+>title="Definiera en URL för att skapa och förhandsgranska innehåll"
 >abstract="Det här fältet ser till att sidorna som genereras eller matchas av regeln har en angiven URL-adress, vilket är nödvändigt för att både skapa och förhandsgranska innehåll effektivt."
 
->[!CONTEXTUALHELP]
->id="ajo_admin_default_web_url"
->title="URL för standardredigering och förhandsgranskning"
->abstract="Det här fältet ser till att sidorna som genereras eller matchas av regeln har en angiven URL-adress, vilket är nödvändigt för att både skapa och förhandsgranska innehåll effektivt."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_mobile_url_preview"
->title="Förhandsgranska URL"
->abstract="Det här fältet är viktigt för att du ska kunna simulera och förhandsgranska ditt innehåll direkt på enheten i programmet."
-
-## Skapa en kanalkonfiguration {#reatte-code-based-configuration}
-
-Så här skapar du en kanalkonfiguration:
+Så här skapar du en kodbaserad upplevelsekanalkonfiguration:
 
 1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** och klicka sedan på **[!UICONTROL Create channel configuration]**.
 
@@ -59,58 +48,105 @@ Så här skapar du en kanalkonfiguration:
    >
    > Namn måste börja med en bokstav (A-Z). Det får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
 
-1. Om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till konfigurationen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md).
+1. Om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till konfigurationen kan du välja **[!UICONTROL Manage access]**. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
 1. Välj **[!UICONTROL Marketing action]** om du vill associera medgivandeprinciper till meddelanden som använder den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
 
-1. Välj **Kodbaserad**-kanal.
+1. Välj kanalen **Kodbaserad upplevelse**.
 
    ![](assets/code_config_2.png)
 
-1. Välj plattformen som kodbaserad upplevelse ska användas för.
+1. Välj den plattform som kodbaserad upplevelse ska användas för:
 
-1. För webben:
+   * [Webb](#web)
+   * [iOS och/eller Android](#mobile)
+   * [Övriga](#other)
 
-   * Ange en **[!UICONTROL Page URL]** om du endast vill tillämpa ändringar på en enda sida.
-
-   * Eller skapa en **[!UICONTROL Pages matching rule]** som mål för flera URL:er som matchar den angivna regeln. Detta kan till exempel användas för att göra ändringar på en webbplats, till exempel uppdatera en hjältebanderoll på alla sidor eller lägga till en översta bild som ska visas på varje produktsida. [Läs mer](../web/web-configuration.md)
-
-1. För iOS och Android:
-
-   * Ange din **[!UICONTROL App id]** och **[!UICONTROL Location or path inside the app]**.
-
-     ![](assets/code_config_3.png){width="500"}
-
-1. Välj Annan som plattform om implementeringen inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er som mål. När du väljer flera plattformar eller lägger till flera URI:er levereras innehållet till alla valda sidor eller appar.
-
-   * Ange **[!UICONTROL Surface URI]**.
-
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >Kontrollera att den yt-URI som används i din kodbaserade kampanj matchar den som används i din egen implementering. Annars levereras inte ändringarna.
+   >Du kan välja flera plattformar. När du väljer flera plattformar levereras innehållet till alla valda sidor eller appar.
 
-1. Fyll i fältet **[!UICONTROL Preview URL]** om du vill aktivera förhandsvisningar på enheten. Den här URL:en informerar förhandsgranskningstjänsten om den specifika URL:en som ska användas när en förhandsgranskning aktiveras.
+1. Välj det format som programmet förväntar sig för den här platsen. Detta kommer att användas vid utvecklingen av den kodbaserade upplevelsen i kampanjer och resor.
 
-   * För webben:
+   ![](assets/code_config_4.png)
 
-      * Om du anger en URL för en sida används den URL:en för förhandsgranskningen.
-      * Om en sidmatchningsregel är markerad måste du ange en standardförhandsvisnings-URL som ska användas för att förhandsgranska upplevelsen i webbläsaren.
+1. Klicka på **[!UICONTROL Submit]** om du vill spara ändringarna.
 
-   * För mobilplattformar (iOS/Android):
+Du kan nu välja den här konfigurationen när du [skapar en kodbaserad upplevelse](create-code-based.md) i dina kampanjer och resor.
 
-      * Förhandsgransknings-URL är en överordnad länk som konfigurerats av apputvecklaren i din app. Detta garanterar att alla URL:er som matchar deplink-schemat öppnas i appen i stället för i en mobil webbläsare. Kontakta apputvecklaren för att få ett deplink-schema som är konfigurerat för din app.
+>[!NOTE]
+>
+>Appimplementeringsteamet ansvarar för att göra explicita API- eller SDK-anrop för att hämta innehåll för de ytor som definieras i den valda kodbaserade upplevelsekonfigurationen. Läs mer om olika kundimplementeringar i [det här avsnittet](code-based-implementation-samples.md).
+
+### Webbplattformar {#web}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_default_web_url"
+>title="Definiera en URL för redigering och förhandsgranskning av innehåll"
+>abstract="Det här fältet ser till att sidorna som genereras eller matchas av regeln har en angiven URL-adress, vilket är nödvändigt för att både skapa och förhandsgranska innehåll effektivt."
+
+Följ stegen nedan för att definiera de kodbaserade inställningarna för upplevelsekonfiguration för webbplattformar.
+
+1. Välj något av följande alternativ:
+
+   * **[!UICONTROL Single page]** - Om du vill använda ändringarna på en enda sida enbart anger du **[!UICONTROL Page URL]**.
+
+     ![](assets/code_config_single_page.png)
+
+   * **[!UICONTROL Pages matching rule]** - Om du vill ha flera URL:er som matchar samma regel som mål ska du skapa en eller flera regler. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
+
+     <!--This could be used to apply changes universally across a website, such as updating a hero banner across all pages or adding a top image to display on every product page.-->
+
+     Om du till exempel vill redigera element som visas på alla sidor med produkter för kvinnor på din Luma-webbplats väljer du **[!UICONTROL Domain]** > **[!UICONTROL Starts with]** > `luma` och **[!UICONTROL Page]** > **[!UICONTROL Contains]** > `women`.
+
+     ![](assets/code_config_matching_rules.png)
+
+1. Följande gäller för förhandsvisnings-URL:en:
+
+   * Om du anger en URL för en sida används den URL:en för förhandsgranskningen - du behöver inte ange en annan URL.
+   * Om du väljer en [sida som matchar regeln ](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i webbläsaren.
+
+     ![](assets/code_config_matching_rules_preview.png)
+
+1. Fältet **[!UICONTROL Location on page]** anger det exakta målet på webbplatsen som du vill att användarna ska få åtkomst till. Detta kan vara ett visst avsnitt eller en viss sida i webbplatsens navigeringsstruktur.
+
+   ![](assets/code_config_location_on_page.png)
+
+### Mobila plattformar (iOS och Android) {#mobile}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_app_id"
+>title="Ange ditt program-ID"
+>abstract="Ange program-ID:t för korrekt identifiering och konfiguration i programmets driftsmiljö, vilket ger smidig integrering och funktionalitet."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_mobile_url_preview"
+>title="Ange URL-adressen för förhandsgranskning av innehåll"
+>abstract="Det här fältet är viktigt för att du ska kunna simulera och förhandsgranska ditt innehåll direkt på enheten i programmet."
+
+Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsinställningarna för mobila plattformar.
+
+1. Ange din **[!UICONTROL App id]**. Detta gör att programmet kan identifieras och konfigureras korrekt i dess operativmiljö och säkerställer smidig integrering och funktionalitet.
+
+1. Ange **[!UICONTROL Location or path inside the app]**. I det här fältet anges det exakta målet i programmet som du vill att användarna ska ha tillgång till. Detta kan vara ett visst avsnitt eller en viss sida i programmets navigeringsstruktur.
+
+   ![](assets/code_config_3.png){width="500"}
+
+1. Fyll i fältet **[!UICONTROL Preview URL]** om du vill aktivera förhandsvisningar på enheten. Den här URL:en informerar förhandsgranskningstjänsten om den specifika URL:en som ska användas när förhandsgranskningen <!--on device. Learn more--> aktiveras.
+
+   URL:en för förhandsgranskning är en djup länk som har konfigurerats av apputvecklaren i din app. Detta garanterar att alla URL:er som matchar djuplänksschemat öppnas i appen i stället för i en mobilwebbläsare. Kontakta din apputvecklare för att få tillgång till det djuplänksschema som konfigurerats för din app.
 
 +++  Följande resurser kan hjälpa dig att konfigurera djupa länkar för appimplementeringen
 
-      * För Android:
+   * För Android:
 
-         * [Skapa djupa länkar till appkontext](https://developer.android.com/training/app-links/deep-linking)
+      * [Skapa djupa länkar till appkontext](https://developer.android.com/training/app-links/deep-linking)
 
-      * För iOS:
+   * För iOS:
 
-         * [Definiera ett anpassat URL-schema för din app](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app)
+      * [Definiera ett anpassat URL-schema för din app](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app)
 
-         * [Supporting Universal Links in your app](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app)
+      * [Supporting Universal Links in your app](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app)
 
 +++
 
@@ -118,25 +154,37 @@ Så här skapar du en kanalkonfiguration:
    >
    >Om du stöter på problem när du förhandsgranskar upplevelsen kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
 
-1. Välj det format som programmet förväntar sig på den aktuella platsen. Detta kommer att användas vid utvecklingen av den kodbaserade upplevelsen i kampanjer och resor.
+### Andra plattformar {#other}
 
-1. Skicka in ändringarna.
+Följ stegen nedan för att definiera de kodbaserade inställningarna för upplevelsekonfiguration för andra plattformar (t.ex. videokonsoler, tv-anslutna enheter, smarta tv-apparater, kioskdatorer, ATM-enheter, röstassistenter, IoT-enheter).
 
-Nu kan du välja din konfiguration när du skapar en kodbaserad upplevelse.
+1. Välj **[!UICONTROL Other]** som plattform om din implementering inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er som mål.
 
+1. Ange **[!UICONTROL Surface URI]**. [Läs mer](#surface-definition)
 
-## Vad är en yta? {#surface-definition}
+   ![](assets/code_config_5.png)
+
+   >[!CAUTION]
+   >
+   >Se till att du anger en yt-URI som matchar den som används i din egen implementering. Annars kan ändringarna inte levereras.
+
+1. **[!UICONTROL Add another surface URI]** om det behövs. Du kan lägga till upp till 10 URI:er.
+
+   >[!NOTE]
+   >
+   >När du lägger till flera URI:er levereras innehållet till alla de angivna komponenterna.
+
+## Vad är en yt-URI? {#surface-definition}
 
 >[!CONTEXTUALHELP]
->id="ajo_code_based_surface"
->title="Definiera en kodbaserad upplevelsekonfiguration"
->abstract="En kodbaserad konfiguration definierar sökvägen och platsen i programmet, som identifieras unikt av en URI i programimplementeringen, där innehållet levereras och förbrukas."
+>id="ajo_admin_surface_uri"
+>title="Lägg till yt-URI för komponenten"
+>abstract="Om implementeringen inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er, anger du en yt-URI, som är en unik identifierare som dirigerar till enheten där du vill leverera upplevelsen. Se till att du anger en yt-URI som matchar den som används i din egen implementering."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/code-based-configuration#other" text="Skapa en kodbaserad upplevelsekonfiguration för andra plattformar"
 
-En **kodbaserad upplevelseyta** är en entitet som utformats för användar- eller systeminteraktion, som identifieras unikt av en URI. Ytan anges i programimplementeringen och ska motsvara den som ingår i den kodbaserade upplevelsekanalskonfigurationen.
+En kodbaserad upplevelse **surface** är en entitet som utformats för användar- eller systeminteraktion, som identifieras unikt av en **URI**. Ytan anges i programimplementeringen och måste matcha den yta som refereras i den kodbaserade upplevelsekanalskonfigurationen.
 
-När du skapar en kodbaserad upplevelsekanalskonfiguration - för webben, iOS och Android måste du ange en sökväg och en plats för att komponera ytan. Om plattformen är Annan måste du ange den fullständiga URI:n, som i exemplen nedan.
-
-En yta kan med andra ord ses som en behållare på vilken hierarkinivå som helst med en entitet (kontaktyta) som finns.<!--good idea to illustrate how it can be seen, but to clarify-->
+En yta kan ses som en behållare på vilken hierarkinivå som helst med en entitet (kontaktyta) som finns.
 
 * Det kan vara en webbsida, en mobilapp, en skrivbordsapp, en specifik innehållsplats inom en större enhet (till exempel en `div`) eller ett visningsmönster som inte är standard (till exempel en kioskdator eller en banner för datorprogram).<!--In retail, a kiosk is a digital display or small structure that businesses often place in high-traffic areas to engage customers.-->
 
@@ -144,7 +192,14 @@ En yta kan med andra ord ses som en behållare på vilken hierarkinivå som hels
 
 * Det kan också vara en jokeryta som matchar en mängd olika klientytdefinitioner (en hjältebildsplats på varje sida på webbplatsen kan till exempel översättas i en yt-URI som web://mydomain.com/*#hero_image).
 
-En yt-URI består i princip av flera avsnitt:
+När du skapar en kodbaserad upplevelsekanalskonfiguration kan du ange ytan på två sätt enligt den valda plattformen:
+
+* För plattformarna **[!UICONTROL Web]**, **[!UICONTROL iOS]** och **[!UICONTROL Android]** måste du ange en **plats eller sökväg** för att skapa ytan.
+
+* Om plattformen är **[!UICONTROL Other]** måste du ange den fullständiga **yt-URI**, som i exemplen nedan.
+
+En yt-URI fungerar som en exakt identifierare som dirigerar till distinkta användargränssnittselement eller -komponenter i ett program. En yts-URI består i princip av flera avsnitt:
+
 1. **Typ**: webb, mobilapp, atm, kiosk, tvcd, service osv.
 1. **Egenskap**: sid-URL eller apppaket
 1. **Behållare**: plats i sid-/appaktiviteten

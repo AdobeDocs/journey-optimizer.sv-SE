@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
+source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 2%
+source-wordcount: '1172'
+ht-degree: 1%
 
 ---
 
@@ -167,6 +167,8 @@ Du kan också förhandsgranska det kodbaserade upplevelseinnehållet innan du pu
 >Om du aktiverar en kodbaserad resa/kampanj som påverkar samma sidor som en annan resa eller kampanj som redan är aktiv, kommer alla ändringar att tillämpas på innehållet.
 >
 >Om flera kodbaserade resor eller kampanjer uppdaterar samma element i innehållet prioriteras den högsta prioriterade resan/kampanjen.
+
+När den kodbaserade resan eller kampanjen är live kan ditt programimplementeringsteam skapa explicita API- eller SDK-anrop för att hämta innehåll för de ytor som definierats i den valda [kodbaserade upplevelsekonfigurationen](code-based-configuration.md). Läs mer om olika kundimplementeringar i [det här avsnittet](code-based-implementation-samples.md).
 
 ### Publish är en kodbaserad resa {#publish-code-based-journey}
 
