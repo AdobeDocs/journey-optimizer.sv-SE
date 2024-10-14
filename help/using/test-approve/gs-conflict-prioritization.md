@@ -1,14 +1,14 @@
 ---
 title: Konflikthantering och -prioritering
-description: Lär dig mer om xxxx.
+description: Lär dig utnyttja Journey Optimizer verktyg för konfliktlösning och prioritering.
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
 hide: true
 hidefromtoc: true
-source-git-commit: e1121d998711ea4751da5293efdd7c1578ee44a2
+source-git-commit: 3438a5edceacab13c7241e18454d84228579ebc4
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
