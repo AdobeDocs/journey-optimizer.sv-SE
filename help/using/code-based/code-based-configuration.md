@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
+source-git-commit: 83c8417d4aee278eba33e4adf6ccd033bcc6be1a
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1477'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
 
 1. Välj **[!UICONTROL Other]** som plattform om din implementering inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er som mål.
 
-1. Ange **[!UICONTROL Surface URI]**. [Läs mer](#surface-definition)
+1. Ange **[!UICONTROL Surface URI]**. En yt-URI är en unik identifierare som motsvarar den enhet där du vill leverera din upplevelse. [Läs mer](#surface-definition)
 
    ![](assets/code_config_5.png)
 
@@ -174,7 +174,7 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
    >
    >När du lägger till flera URI:er levereras innehållet till alla de angivna komponenterna.
 
-## Vad är en yt-URI? {#surface-definition}
+## Vad är en yta? {#surface-definition}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_uri"

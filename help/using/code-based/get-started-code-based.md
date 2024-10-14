@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
+source-git-commit: 83c8417d4aee278eba33e4adf6ccd033bcc6be1a
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 
 >[!CAUTION]
 >
->Den här funktionen är avsedd för utvecklare och/eller erfarna användare. Den kan användas av marknadsförare med viss kodskrivningskompetens, förutsatt att kanalkonfigurationerna och den inledande konfigurationen hanteras av utvecklingsteamet.
+>Den här funktionen är avsedd för utvecklare och/eller erfarna användare. Den kan användas av marknadsförare med vissa kodskrivningskunskaper, förutsatt att kanalkonfigurationerna och den inledande konfigurationen hanteras av ditt utvecklingsteam.
 
 Om du vill redigera ditt innehåll med den kodbaserade funktionen [!DNL Journey Optimizer] måste dina sidor eller appar vara instrumenterade. Om du vill göra det måste du deklarera de specifika enskilda platserna (så kallade [ytor](code-based-configuration.md#surface-definition)) i förväg där du vill infoga eller ersätta innehåll.
 
