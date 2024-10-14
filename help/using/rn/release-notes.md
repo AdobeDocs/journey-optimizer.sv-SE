@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 6b721c04db34fecae2274604113061e4e97db149
+source-git-commit: b5528c50a04de73a0af3d7ea2ba21fd562a88e1a
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1496'
 ht-degree: 8%
 
 ---
@@ -20,17 +20,15 @@ ht-degree: 8%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen.
-
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
-
-![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsnyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till din inkorg varje kvartal.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Uppdateringar från 24 oktober {#24-10-rn}
 
-### Nya funktioner {#24-10-features}
+Kommande **versionsdatum**: 28-30 oktober 2024
 
-De nya funktionerna i Adobe Journey Optimizer listas nedan.
+[funktionerna](#24-10-features) och [förbättringarna](#24-10-improvements) som anges nedan har släppts den här månaden.
+
+### Nya funktioner {#24-10-features}
 
 <table>
 <thead>
@@ -279,3 +277,6 @@ Den här versionen innehåller de förbättringar som anges nedan.
 **Konfiguration**
 
 * **IP-beredskapsplaner** - Den här funktionen är nu tillgänglig för alla kunder, inklusive organisationer som har köpt tillägget **Hälsovårdssköld** eller **sekretess och säkerhetssköld** för Adobe. [Läs mer](../configuration/ip-warmup-gs.md)
+
+
+![Nyhetsbrev](../assets/do-not-localize/nl-icon.png) Registrera dig för [Adobe Journey Optimizer kvartalsnyhetsbrev](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} idag och få de senaste produktuppdateringarna, spännande historier, användningsexempel, tips och mycket mer levererade direkt till din inkorg varje kvartal.
