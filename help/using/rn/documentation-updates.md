@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
+source-git-commit: 943969584b917d3172b0677118e8407eb3e153fd
 workflow-type: tm+mt
-source-wordcount: '5606'
+source-wordcount: '5622'
 ht-degree: 13%
 
 ---
@@ -21,9 +21,10 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Oktober 2024 {#oct-2024}
 
-* Sidan Konfigurera din kodbaserade upplevelse har förbättrats för att göra processen tydligare, inklusive avsnittet som förklarar vad en yt-URI är. [Läs mer](../code-based/code-based-configuration.md)
+* Sidan **Konfigurera din kodbaserade upplevelse** har förbättrats för att göra processen tydligare, inklusive avsnittet som förklarar vad en yt-URI är. [Läs mer](../code-based/code-based-configuration.md)
+* Sidan **Skapa webbkanalskonfiguration** har uppdaterats för att klargöra stegen när du skapar en sidmatchningsregel, som även gäller för kodbaserad upplevelsekonfiguration. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
+* En anteckning om det kommande TTL-skyddsutkastet (time-to-live) för systemgenererade datauppsättningar har lagts till. [Läs mer](../data/get-started-datasets.md)
 
-* Konfigurationssidan Skapa webbkanal har uppdaterats för att klargöra stegen när du skapar en sidmatchningsregel, som även gäller för kodbaserad upplevelsekonfiguration. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
 
 ## September 2024 {#sept-2024}
 
@@ -31,7 +32,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Lagt till ett avsnitt om hantering av reseåterförsök. [Läs mer](../building-journeys/read-audience.md#read-audience-retry)
 * Vanliga frågor om begränsning/begränsning av begränsning för anpassade åtgärder har uppdaterats för att ange standardregel för begränsning. [Läs mer](../configuration/external-systems.md#faq)
 * Avsnittet Kontroll av åtkomst har uppdaterats med behörigheter för innehållsgeneratorn i AI Assistant. [Läs mer](../administration/high-low-permissions.md#ai-permission)
-* En video om hur AI Assistant Content Generator for email genereras har lagts till. [Läs mer](../content-management/generative-email.md#video)
+* En video om AI Assistant Content Generator för e-postgenerering har lagts till. [Läs mer](../content-management/generative-email.md#video)
 
 
 ## Augusti 2024 {#aug-2024}
