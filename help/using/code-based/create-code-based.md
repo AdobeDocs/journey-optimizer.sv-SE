@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: c53fc226be1b6ab858c5cd75bcae363769fefa74
+source-git-commit: 3c4aef3e062eb6a8b106ce00b86cd0594e94d7b0
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -213,7 +213,7 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
 
    <!--When creating a content experiment, you need to select a given treatment and click the **[!UICONTROL Simulate content]** button to obtain the link corresponding to that treatment, then select another treatment, click the **[!UICONTROL Simulate content]** button to obtain a new preview link, and so on.-->
 
-   När du väljer en annan testprofil eller behandling ändras förhandsgranskningslänken så att du kan ha en länk för varje testprofil och/eller behandling och jämföra upplevelserna.
+   När du uppdaterar innehållet eller väljer en annan testprofil eller behandling uppdateras länken för förhandsgranskning automatiskt. Du kan kopiera länken till olika webbläsarflikar och jämföra upplevelserna.
 
 ## Ge liv åt er kodbaserade upplevelse {#code-based-experience-live}
 
