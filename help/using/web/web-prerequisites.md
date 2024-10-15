@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: 573d6e8611e90df2390576912929d5f85e386537
+source-git-commit: c5308cfdb237fcf563886db1dfca257d23bb4449
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,10 @@ Om du vill kunna komma åt och skapa webbsidor i användargränssnittet för [!D
 
 * För att webbupplevelsen ska kunna levereras på rätt sätt måste du definiera de Adobe Experience Platform-inställningar som anges [här](#delivery-prerequisites).
 
-## Observera varningar {#caution-notes-web}
-
-* Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>[!IMPORTANT]
+>
+>Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
+>
 
 ## Krav för implementering {#implementation-prerequisites}
 
