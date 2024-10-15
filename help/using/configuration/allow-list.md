@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 6c35809af2aaf4803eef7a8e5b3d8b0f351c8ba0
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 2%
@@ -140,7 +140,7 @@ Följ stegen nedan för att göra detta.
 
    >[!NOTE]
    >
-   >Alla ASCII-tecken mellan 32 och 126 tillåts i fältet **[!UICONTROL Reason]**. Den fullständiga listan finns till exempel på [den här sidan](https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters){target="_blank"}.
+   >Alla ASCII-tecken mellan 32 och 126 tillåts i fältet **[!UICONTROL Reason]**. Den fullständiga listan finns till exempel på [den här sidan](https://en.wikipedia.org/wiki/ASCII#Printable_characters){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Submit]**.
 
