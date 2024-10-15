@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
+source-git-commit: 573d6e8611e90df2390576912929d5f85e386537
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Om du vill kunna komma åt och skapa webbsidor i användargränssnittet för [!D
 
 * Om du vill lägga till ändringar på webbplatsen måste du ha en specifik implementering. [Läs mer](#implementation-prerequisites)
 
-* Om du vill komma åt webbdesignern [!DNL Journey Optimizer] måste du ha ett specifikt webbläsartillägg för Google Chrome installerat. [Läs mer](#visual-authoring-prerequesites)
+* Om du vill komma åt webbdesignern [!DNL Journey Optimizer] måste du ha ett specifikt webbläsartillägg för Google Chrome installerat. [Läs mer](#visual-authoring-prerequisites)
 
 * För att webbupplevelsen ska kunna levereras på rätt sätt måste du definiera de Adobe Experience Platform-inställningar som anges [här](#delivery-prerequisites).
 
