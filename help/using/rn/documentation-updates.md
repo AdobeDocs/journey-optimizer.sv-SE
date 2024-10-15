@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 943969584b917d3172b0677118e8407eb3e153fd
+source-git-commit: c53fc226be1b6ab858c5cd75bcae363769fefa74
 workflow-type: tm+mt
-source-wordcount: '5622'
+source-wordcount: '5663'
 ht-degree: 13%
 
 ---
@@ -25,6 +25,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Sidan **Skapa webbkanalskonfiguration** har uppdaterats för att klargöra stegen när du skapar en sidmatchningsregel, som även gäller för kodbaserad upplevelsekonfiguration. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
 * En anteckning om det kommande TTL-skyddsutkastet (time-to-live) för systemgenererade datauppsättningar har lagts till. [Läs mer](../data/get-started-datasets.md)
 
+
+* Ett nytt avsnitt har lagts till som beskriver hur du förhandsgranskar dina kodbaserade personaliserade upplevelser direkt i webbläsaren eller på dina mobila enheter, med alternativet Förhandsgranska på enhet när du simulerar innehåll under en resa eller en kampanj. [Läs mer](../code-based/create-code-based.md#preview-on-device)
 
 ## September 2024 {#sept-2024}
 

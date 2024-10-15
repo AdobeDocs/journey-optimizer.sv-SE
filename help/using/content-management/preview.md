@@ -5,14 +5,16 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
-source-git-commit: feae2cb9d0bed35f12eb117cf2969c9290ebc06f
+source-git-commit: c53fc226be1b6ab858c5cd75bcae363769fefa74
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 3%
+source-wordcount: '189'
+ht-degree: 4%
 
 ---
 
-# Förhandsgranska ditt innehåll {#preview}
+# Kontrollera innehåll {#preview}
+
+<!--## Preview your content {#preview-content}-->
 
 När [testprofiler](test-profiles.md) har valts kan du förhandsgranska innehållet. Följ stegen nedan:
 
@@ -37,3 +39,8 @@ När [testprofiler](test-profiles.md) har valts kan du förhandsgranska innehål
    ![](../email/assets/preview-test-profile.png)
 
 1. Välj andra testprofiler om du vill förhandsgranska din e-post för varje variant av meddelandet.
+
+>[!NOTE]
+>
+>När ni skapar kodbaserade upplevelser kan ni förhandsgranska ert personaliserade innehåll direkt i webbläsaren eller på era mobila enheter för att få en simulering i verkligheten. [Läs mer](../code-based/create-code-based.md#preview-on-device)
+

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
+source-git-commit: c53fc226be1b6ab858c5cd75bcae363769fefa74
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1667'
 ht-degree: 1%
 
 ---
@@ -111,7 +111,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
    Du kan också spara en del av kodinnehållet som fragment. [Lär dig hur](../content-management/fragments.md#save-as-expression-fragment)
 
-1. Med kodbaserade upplevelser kan ni använda funktionen för upplevelsebeslut. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md) <!--UI labels TBC + TBC for journeys (visible in UI so probably confirmed) -->
+1. Med kodbaserade upplevelser kan ni använda funktionen för upplevelsebeslut. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md)
 
    ![](assets/code-based-campaign-create-decision.png)
 
@@ -131,7 +131,7 @@ Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll f�
 >title="Förgranska din kodbaserade upplevelse"
 >abstract="Få en simulering av hur er kodbaserade upplevelse kommer att se ut."
 
-Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse. Detaljerad information om hur du väljer testprofiler och förhandsgranskar ditt innehåll finns på [Förhandsgranska och testa din innehållssida](../content-management/preview-test.md).
+Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse.
 
 >[!CAUTION]
 >
@@ -145,12 +145,75 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
 
 1. En förhandsgranskning av den ändrade kodbaserade upplevelsen visas.
 
-<!--
-    ![](assets/code-based-designer-preview.png)
+Detaljerad information om hur du väljer testprofiler och förhandsgranskar ditt innehåll finns i [det här avsnittet](../content-management/preview.md).
 
-    You can also open it in the default browser, or copy the test URI to paste it in any browser. This allows you to share the link with your team and stakeholders who will be able to preview the new web experience in any browser before the campaign goes live.
+### Förhandsgranska på enhet {#preview-on-device}
 
-    When copying the test URI, the content displayed is the one personalized for the test profile used when the content simulation was generated in [!DNL Journey Optimizer].-->
+>[!CONTEXTUALHELP]
+>id="ajo_code_based_preview_device"
+>title="Förgranska din kodbaserade upplevelse på en riktig enhet"
+>abstract="Få en förgranskning av era personaliserade upplevelser direkt i webbläsaren eller på era mobila enheter för att se hur de ser ut på riktiga enheter."
+
+>[!CONTEXTUALHELP]
+>id="ajo_code_based_preview_device_web"
+>title="Förhandsgranska din kodbaserade webbupplevelse på enheten"
+>abstract="Skanna QR-koden eller kopiera länken för att förhandsgranska på enheten."
+
+>[!CONTEXTUALHELP]
+>id="ajo_code_based_preview_device_mobile"
+>title="Förgranska din kodbaserade mobilupplevelse på enheten"
+>abstract="Skanna QR-koden eller kopiera länken för att förhandsgranska på enheten. När du är ansluten anger du stiftet på enheten. Du kan behöva starta om appen för att se ändringarna varje gång du uppdaterar förhandsgranskningslänkarna."
+
+>[!CONTEXTUALHELP]
+>id="ajo_code_based_preview_device_refresh"
+>title="Uppdatera förhandsgranskningslänken så att den återspeglar den aktuella vyn"
+>abstract="Förhandsvisningen på enheten visar innehållet när du skapade eller uppdaterade förhandsgranskningslänken. Om du har ändrat innehållet eller valt en annan testprofil eller behandling, uppdaterar du förhandsvisningen så att den återspeglar den aktuella vyn."
+
+När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni förhandsgranska era personaliserade upplevelser direkt i webbläsaren eller på era mobila enheter för att se hur upplevelserna ser ut på riktiga enheter.
+
+>[!WARNING]
+>
+>Förhandsgranskning på enhet är inte tillgängligt när kontextattribut för [beslutsprinciper](../experience-decisioning/create-decision.md) eller [personalisering](../personalization/personalization-build-expressions.md) används.
+
+1. Klicka på knappen **[!UICONTROL Open preview options]** på skärmen **[!UICONTROL Simulate]**. Förhandsvisningsalternativen beror på vilken plattform du har valt i den [kodbaserade konfigurationen](code-based-configuration.md#create-code-based-configuration).
+
+1. Om du använder en [webbplattform](code-based-configuration.md#web) i din kodbaserade konfiguration är det **[!UICONTROL Device preview URL]** skrivskyddade fältet ifyllt med den URL som angetts för den aktuella kanalkonfigurationen.
+
+   ![](assets/preview-on-device-web.png)
+
+   Du kan antingen:
+
+   * Markera knappen **[!UICONTROL Copy link]** och klistra in länken på en webbläsarflik. Du kan också dela länken med ditt team och intressenter, som kan förhandsgranska den nya upplevelsen i vilken webbläsare som helst innan ändringarna publiceras.
+
+   * Klicka på **[!UICONTROL Open in new tab]** för att öppna länken i din webbläsare.
+
+   * Skanna QR-koden med din mobila enhet för att öppna förhandsgranskningslänken i en mobilwebbläsare.
+
+1. Om du använder [Mobila plattformar](code-based-configuration.md#mobile) (iOS/Android) i din kodbaserade konfiguration är det **[!UICONTROL Deeplink]** skrivskyddade fältet förfyllt med det **[!UICONTROL Preview URL]**-värde som anges i kanalkonfigurationen för den valda plattformen.
+
+   Växla mellan flikarna **[!UICONTROL iOS]** och **[!DNL Android]** för att förhandsgranska din upplevelse för den plattform du väljer.
+
+   ![](assets/preview-on-device-mobile.png)
+
+   Du kan antingen:
+
+   * Välj knappen **[!UICONTROL Copy link]** och dela länken med ditt team och intressenter, som kan förhandsgranska den nya upplevelsen i vilken mobilwebbläsare som helst innan ändringarna publiceras.
+
+   * Skanna QR-koden med din mobila enhet för att öppna förhandsgranskningslänken direkt i mobilprogrammet. Du måste ange PIN-koden på enheten för att kunna upprätta [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/implement-assurance){target="_blank"}-sessionen.
+
+     >[!NOTE]
+     >
+     >**Adobe Experience Platform Assurance** är en produkt från Adobe Experience Cloud som hjälper dig att inspektera, verifiera, simulera och validera hur du samlar in data eller levererar upplevelser i din mobilapp. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
+
+1. Länkar för förhandsgranskning genereras för den valda testprofilen och, om du använder [innehållsexperiment](../content-management/content-experiment.md) under din resa eller kampanj, för den valda behandlingen.
+
+   <!--If you have modified the content or selected a different treatment or test profile, scroll down to the bottom of the **[!UICONTROL Preview on device]** pop-up and click **[!UICONTROL Refresh preview link]** to reflect the current state.
+
+   ![](assets/preview-on-device-refresh.png)-->
+
+   <!--When creating a content experiment, you need to select a given treatment and click the **[!UICONTROL Simulate content]** button to obtain the link corresponding to that treatment, then select another treatment, click the **[!UICONTROL Simulate content]** button to obtain a new preview link, and so on.-->
+
+   När du väljer en annan testprofil eller behandling ändras förhandsgranskningslänken så att du kan ha en länk för varje testprofil och/eller behandling och jämföra upplevelserna.
 
 ## Ge liv åt er kodbaserade upplevelse {#code-based-experience-live}
 
@@ -168,7 +231,7 @@ Du kan också förhandsgranska det kodbaserade upplevelseinnehållet innan du pu
 >
 >Om flera kodbaserade resor eller kampanjer uppdaterar samma element i innehållet prioriteras den högsta prioriterade resan/kampanjen.
 
-När den kodbaserade resan eller kampanjen är live kan ditt programimplementeringsteam skapa explicita API- eller SDK-anrop för att hämta innehåll för de ytor som definierats i den valda [kodbaserade upplevelsekonfigurationen](code-based-configuration.md). Läs mer om olika kundimplementeringar i [det här avsnittet](code-based-implementation-samples.md).
+När den kodbaserade resan eller kampanjen är live ansvarar ditt programimplementeringsteam för att göra explicita API- eller SDK-anrop för att hämta innehåll för de ytor som definieras i den valda [kodbaserade upplevelsekonfigurationen](code-based-configuration.md). Läs mer om olika kundimplementeringar i [det här avsnittet](code-based-implementation-samples.md).
 
 ### Publish är en kodbaserad resa {#publish-code-based-journey}
 

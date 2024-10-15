@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: 83c8417d4aee278eba33e4adf6ccd033bcc6be1a
+source-git-commit: c53fc226be1b6ab858c5cd75bcae363769fefa74
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1483'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
 1. Följande gäller för förhandsvisnings-URL:en:
 
    * Om du anger en URL för en sida används den URL:en för förhandsgranskningen - du behöver inte ange en annan URL.
-   * Om du väljer en [sida som matchar regeln ](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i webbläsaren.
+   * Om du väljer en [sida som matchar regeln ](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i webbläsaren. [Läs mer](../code-based/create-code-based.md#preview-on-device)
 
      ![](assets/code_config_matching_rules_preview.png)
 
@@ -132,9 +132,9 @@ Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsins
 
    ![](assets/code_config_3.png){width="500"}
 
-1. Fyll i fältet **[!UICONTROL Preview URL]** om du vill aktivera förhandsvisningar på enheten. Den här URL:en informerar förhandsgranskningstjänsten om den specifika URL:en som ska användas när förhandsgranskningen <!--on device. Learn more--> aktiveras.
+1. Fyll i fältet **[!UICONTROL Preview URL]** om du vill aktivera förhandsvisningar på enheten. Den här URL:en informerar förhandsgranskningstjänsten om den specifika URL:en som ska användas när förhandsgranskning aktiveras på enheten. [Läs mer](../code-based/create-code-based.md#preview-on-device)
 
-   URL:en för förhandsgranskning är en djup länk som har konfigurerats av apputvecklaren i din app. Detta garanterar att alla URL:er som matchar djuplänksschemat öppnas i appen i stället för i en mobilwebbläsare. Kontakta din apputvecklare för att få tillgång till det djuplänksschema som konfigurerats för din app.
+   Förhandsgransknings-URL:en är en djup länk som konfigureras av apputvecklaren i din app. Detta garanterar att alla URL:er som matchar djuplänksschemat öppnas i appen i stället för i en mobilwebbläsare. Kontakta din apputvecklare för att få tillgång till det djuplänksschema som konfigurerats för din app.
 
 +++  Följande resurser kan hjälpa dig att konfigurera djupa länkar för appimplementeringen
 
