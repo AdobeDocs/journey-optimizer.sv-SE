@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8dd48bb2-a805-4c46-a16c-c68173a9ac08
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 903378c3bc28c4b4c5773238e422d0a3a448246a
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,13 @@ ht-degree: 0%
 Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera påverkan och prestanda för dina resor och dina meddelanden på en inbyggd kontrollpanel.
 Data är tillgängliga i **[!UICONTROL Live report]** så snart din leverans har skickats eller din resa har körts från fliken **[!UICONTROL Last 24hrs]**.
 
-* Om du vill rikta in dig på en resa i sammanhanget för en resa går du till **[!UICONTROL Journeys]**-menyn, öppnar din resa och klickar på knappen **[!UICONTROL View report]** .
+* Om du vill rikta in dig på en resa i sammanhanget för en resa går du till **[!UICONTROL Journeys]**-menyn för din resa och klickar på knappen **[!UICONTROL More actions]**.**[!UICONTROL View last 24hrs report]**
 
   ![](assets/report_journey.png)
 
-* Om du vill rikta in dig på en kampanj går du till **[!UICONTROL Campaigns]**-menyn och klickar på knappen **[!UICONTROL Reports]**.
+* Om du vill rikta in dig på en kampanj går du till **[!UICONTROL Campaigns]**-menyn och klickar på knappen **[!UICONTROL Reports]** och sedan **[!UICONTROL View last 24hrs report]**.
 
   ![](assets/report_campaign.png)
-
-* Om du vill växla från **Customer Journey Analytics-rapporter** till **[!UICONTROL Live report]** för leveransen klickar du på **[!UICONTROL Last 24hrs]** i flikväljaren.
-
-  ![](assets/report_3.png)
 
 En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](#list-of-components-live).
 
@@ -92,7 +88,7 @@ Din rapport är nu tillgänglig för visning eller delning i en PDF-fil.
 
    ![](assets/export_4.png)
 
-1. Du kan också välja att exportera data från en viss widget. Klicka på **[!UICONTROL Export widget data to CSV]** bredvid den valda widgeten.
+1. Du kan också välja att exportera data från en viss widget. Klicka på **[!UICONTROL Download CSV file]** bredvid den valda widgeten.
 
    ![](assets/export_5.png)
 
