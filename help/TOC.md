@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1e46321de543196277613889c438dc6756e45652
+source-git-commit: 9e810d5dcc9099411e7a81d18e22e9915c170bc2
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 25%
+source-wordcount: '2136'
+ht-degree: 24%
 
 ---
 
@@ -384,17 +384,47 @@ ht-degree: 25%
       + [Campaign Live-rapport](using/reports/campaign-live-report.md)
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
-   + Global rapport {#global-report}
-      + [Kom igång med global rapport](using/reports/global-report.md)
-      + [Lista över komponenter](using/reports/global-report-components.md)
-      + [Rapport om global resa](using/reports/journey-global-report.md)
-      + [Global kampanjrapport](using/reports/campaign-global-report.md)
-      + [Målrapport](using/reports/objective-report.md)
-      + [Global rapport för landningssida](using/reports/lp-report-global.md)
-      + [Global rapport om prenumerationslista](using/reports/subscription-report-global.md)
-   + Kanalrapporter {#channel-report}
-      + [Kom igång med kanalrapporter](using/reports/channel-report-gs.md)
-      + [Kanalrapporter](using/reports/channel-report.md)
+   + Customer Journey Analytics rapporterar {#channel-report}
+      + [Kom igång med Customer Journey Analytics-rapporter](using/reports/report-gs-cja.md)
+      + [Konfigurera Customer Journey Analytics manuellt](using/reports/cja-ajo.md)
+      + [Hantera dina rapporter](using/reports/report-cja-manage.md)
+      + [Krav för rapportering och experimenterande](using/reports/reporting-configuration.md)
+      + Kampanjrapporter {#reporting}
+         + [Kampanjrapport](using/reports/campaign-global-report-cja.md)
+         + [Kodbaserad kampanjrapport](using/reports/campaign-global-report-cja-code.md)
+         + [Kampanjrapport för innehållskort](using/reports/campaign-global-report-cja-content.md)
+         + [Rapport om direktreklamkampanj](using/reports/campaign-global-report-cja-direct.md)
+         + [Rapport om e-postkampanj](using/reports/campaign-global-report-cja-email.md)
+         + [Rapport om experimentkampanjer](using/reports/campaign-global-report-cja-experimentation.md)
+         + [Kampanjrapport i appen](using/reports/campaign-global-report-cja-inapp.md)
+         + [Kampanjrapport för push-meddelanden](using/reports/campaign-global-report-cja-push.md)
+         + [SMS-kampanjrapport](using/reports/campaign-global-report-cja-sms.md)
+         + [Webbkampanjrapport](using/reports/campaign-global-report-cja-web.md)
+      + Reserapporter{#reporting}
+         + [Reserapport](using/reports/journey-global-report-cja.md)
+         + [Kodbaserad reserapport](using/reports/journey-global-report-cja-code.md)
+         + [Rapport om resan med innehållskort](using/reports/journey-global-report-cja-content.md)
+         + [Rapport om direktreklam](using/reports/journey-global-report-cja-direct.md)
+         + [Rapport om e-postresa](using/reports/journey-global-report-cja-email.md)
+         + [Rapport om resan i appen](using/reports/journey-global-report-cja-inapp.md)
+         + [Rapport om push-resa](using/reports/journey-global-report-cja-push.md)
+         + [SMS-reserapport](using/reports/journey-global-report-cja-sms.md)
+         + [Rapport om webbresa](using/reports/journey-global-report-cja-web.md)
+      + [Översiktsrapport](using/reports/channel-report-cja.md)
+      + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
+      + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
+   + Tidigare rapportinstrumentpanel {#reports}
+      + Global rapport {#global-report}
+         + [Kom igång med global rapport](using/reports/global-report.md)
+         + [Lista över komponenter](using/reports/global-report-components.md)
+         + [Rapport om global resa](using/reports/journey-global-report.md)
+         + [Global kampanjrapport](using/reports/campaign-global-report.md)
+         + [Målrapport](using/reports/objective-report.md)
+         + [Global rapport för landningssida](using/reports/lp-report-global.md)
+         + [Global rapport om prenumerationslista](using/reports/subscription-report-global.md)
+      + Kanalrapporter {#channel-report}
+         + [Kom igång med kanalrapporter](using/reports/channel-report-gs.md)
+         + [Kanalrapporter](using/reports/channel-report.md)
    + Reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
@@ -411,17 +441,7 @@ ht-degree: 25%
       + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
       + [Nytt DMARC-krav](using/configuration/dmarc-record-update.md)
    + [Aviseringar](using/reports/alerts.md)
-   + [Arbeta med Customer Journey Analytics](using/reports/cja-ajo.md)
    + [Uteslutningsorsaker](using/reports/exclusion-list.md)
-+ Nytt rapporteringsgränssnitt (LA){#channel-report}
-   + [Kom igång med det nya rapporteringsgränssnittet](using/reports/report-gs-cja.md)
-   + [Krav för rapportering och experimenterande](using/reports/reporting-configuration.md)
-   + [Hantera dina rapporter](using/reports/report-cja-manage.md)
-   + [Reserapport](using/reports/journey-global-report-cja.md)
-   + [Kampanjrapport](using/reports/campaign-global-report-cja.md)
-   + [Översiktsrapport](using/reports/channel-report-cja.md)
-   + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
-   + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
 + Avgör {#decisioning}
    + Beslutshantering {#offer-decisioning}
       + Kom igång med beslutshantering {#get-started-decision}
