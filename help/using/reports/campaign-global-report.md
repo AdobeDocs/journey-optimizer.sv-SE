@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 94d6ebe6e0ad5fa48eaad9d8cfa8cff584f2b819
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Den aktuella rapportupplevelsen kommer att tas ur bruk i oktober-versionen. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig. [Kom igång med Journey Optimizer nya rapporteringsgränssnitt.](report-gs-cja.md)
+>Den nuvarande rapportupplevelsen kommer att upphöra i januari 2025. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig. [Kom igång med Journey Optimizer nya rapporteringsgränssnitt.](report-gs-cja.md)
 
 Globala rapporter, som du kommer åt från fliken **All time**, visar händelser som inträffade för minst två timmar sedan och täcker händelser under en vald tidsperiod. Live-rapporter fokuserar på händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten.
 
@@ -81,50 +81,51 @@ The **[!UICONTROL Objectives]** listed are linked to **[!UICONTROL Datasets]** t
 After selecting the Objectives you want to target on, the two **[!UICONTROL Performance overview]** and **[!UICONTROL Campaign objective]** widgets will provide a detailed summary of your delivery performance. 
 
 With the **[!UICONTROL Campaign objective]** widget, you can also choose to compare your main objective with another metric.
--->
 
-### Experimentationsrapport {#experimentation-global}
+
+### Experimentation report {#experimentation-global}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_click"
->title="Resultatmått"
->abstract="Det totala värdet för resultatmåttet, som tidigare valts när du skapade dina experiment, delat med antalet profiler."
+>title="Success metric"
+>abstract="The total value of the Success metric, previously selected when creating your Experiments, divided by the number of profiles."
 
 ![](assets/experimentation_report_3.png)
 
-Fliken **[!UICONTROL Experimentation]** ger viktiga insikter om prestanda för varje variant och identifierar den som fungerar bäst.
+The **[!UICONTROL Experimentation]** tab provides key insights into the performance of each variant, and identifies the most successful one.
 
-Observera att det kan ta lite tid att definiera den bästa utföraren, men den representeras av den här ikonen ![](assets/experimentation_report_1.png).
+Note that defining the best performer might take some time, it will be represented by this icon ![](assets/experimentation_report_1.png).
 
-+++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Experimentation.
++++Learn more on the different metrics and widgets available for the Experimentation report.
 
-Widgeten **[!UICONTROL Experiment result]** visar prestanda för varje variant. Du kan ändra din baslinje genom att välja en av behandlingarna i listrutan **[!UICONTROL Baseline]**. Den bästa behandlingen visas med en stjärnikon.
+The **[!UICONTROL Experiment result]** widget details the performance of each variant. You can change your baseline by selecting one of the treatment from the **[!UICONTROL Baseline]** the drop-down. The best treatment will be represented with a star icon.
 
-En djupdykning i dessa resultat och hur du tolkar dem finns på [den här sidan](../content-management/get-started-experiment.md#interpret-results).
+For a deep-dive in these results and how to interpret them, refer to [this page](../content-management/get-started-experiment.md#interpret-results).
 
-Tabellen visar följande mått:
+The table presents the following metrics:
 
-* **[!UICONTROL Lift over baseline]**: Mät den procentuella förbättringen av konverteringsgraden för en given behandling över baslinjen.
+* **[!UICONTROL Lift over baseline]**: Measure of the percentage improvement in conversion rate of a given treatment over the baseline.
 
-* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]**: Evidence that a given treatment is the same as the baseline treatment. [Learn more](../content-management/experiment-calculations.md#understand-confidence)
 
-* **[!UICONTROL Unique outbound clicks]**: Totalt antal klick över utgående kanaler.
+* **[!UICONTROL Unique outbound clicks]**: Total count of clicks across outbound channels.
 
-* **[!UICONTROL Profiles]**: Antal profiler som är avsedda för den här behandlingen.
+* **[!UICONTROL Profiles]**: Number of profiles targeted for this treatment.
 
-* **[!UICONTROL Unique outbound clicks/profiles]**: Det totala värdet för resultatmåttet, som tidigare valdes när du skapade dina experiment, delat med antalet profiler.
+* **[!UICONTROL Unique outbound clicks/profiles]**: Total value of the Success metric, previously selected when creating your Experiments, divided by the number of profiles.
 
-Diagrammet **[!UICONTROL Confidence interval]** mäter osäkerheten kring förbättringen. Här anges den procentuella skillnaden i prestanda mellan baslinjen och den bästa behandlingen. [Läs mer](../content-management/experiment-calculations.md#confidence-intervals).
+The **[!UICONTROL Confidence interval]** graph measures uncertainty around improvement. It details the percentage difference in performance between the baseline and the best performing treatment. [Learn more](../content-management/experiment-calculations.md#confidence-intervals). 
 
 ![](assets/experimentation_report_4.png)
 
-Den sista widgeten innehåller data som är relaterade till **[!UICONTROL Success metric]** som du tidigare har valt för dina behandlingar. Du kan välja ett annat målmått på den nedrullningsbara menyn **[!UICONTROL Metric]** för att spåra alternativa data.
-
+The last widget provides data related to the **[!UICONTROL Success metric]** you previously selected for your Treatments. You have the option to select a different targeted metric from the **[!UICONTROL Metric]** drop-down menu to track alternative data.
+    
 >[!CAUTION]
 >
->När du arbetar med experimentellt filtrerade mätvärden bör du tänka på att om du ändrar måttvalet från listrutan på jämförelsesidan för experimenterande behålls inte filtervärdet. Om du till exempel växlar från&quot;Klickningar&quot; till&quot;Unika klickningar&quot; kommer det använda filtret att gå förlorat, vilket gör jämförelsen felaktig eller ogiltig.
+>When working with experimentation filtered metrics, please note that changing the Metric selection from the drop-down on the comparison page for experimentation will not retain the filter value. For example, switching from "Clicks" to "Unique clicks" will lead to the loss of the applied filter, rendering the comparison inaccurate or invalid.
 
 +++
+-->
 
 ## Fliken E-post {#email-global}
 
