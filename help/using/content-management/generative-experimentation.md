@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
-source-git-commit: a531f4b0a9f3fbc3185a0e84d9c2634e3b589011
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 4%
@@ -52,4 +52,4 @@ När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt in
 
 1. Kontrollera att alla konfigurationer är korrekta innan du startar kampanjen och klicka sedan på **[!UICONTROL Activate]**.
 
-När ni har konfigurerat och personaliserat kampanjen kan ni spåra kampanjen i kampanjrapporten. [Läs mer](../reports/campaign-global-report.md)
+När ni har konfigurerat och personaliserat kampanjen kan ni spåra kampanjen i kampanjrapporten. [Läs mer](../reports/campaign-global-report-cja.md)

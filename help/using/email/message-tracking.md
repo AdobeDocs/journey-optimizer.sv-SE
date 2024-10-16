@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '996'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ Med [e-post-Designer](content-from-scratch.md) kan du hantera spårade URL-adres
    * **[!UICONTROL Mirror page]**: Den här URL:en är en URL för en spegelsida.
    * **[!UICONTROL Never]**: Aktiverar aldrig spårning av den här URL:en.
 
-Rapportering om öppningar och klick finns i [Live-rapporten](../reports/live-report.md) och i [Global-rapporten](../reports/global-report.md).
+Det finns rapporter om öppningar och klick i [Live-rapporten](../reports/live-report.md) och i [Customer Journey Analytics-rapporten](../reports/report-gs-cja.md).
 
 ## Anpassa URL-spårning {#url-tracking}
 

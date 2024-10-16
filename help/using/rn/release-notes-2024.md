@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
-source-git-commit: 9bd4f854292f4928216c9ad4602098930743c1bd
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '3838'
 ht-degree: 6%
@@ -816,7 +816,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Rapportering**
 
-* **Nya domänbaserade nedbrytningswidgetar** - Nya widgetar har lagts till för att förbättra dina Campaign- och Journey-rapporter. Widgetarna **Studsa orsaker efter domän**, **Skickat och levererat av domäner**, **Öppnar och klickar efter domän** och **Studsa och fel efter domän** ger en detaljerad fördelning på domännivå för viktiga e-postleveranser och spårningsmått. [Läs mer](../reports/channel-report.md)
+* **Nya domänbaserade nedbrytningswidgetar** - Nya widgetar har lagts till för att förbättra dina Campaign- och Journey-rapporter. Widgetarna **Studsa orsaker efter domän**, **Skickat och levererat av domäner**, **Öppnar och klickar efter domän** och **Studsa och fel efter domän** ger en detaljerad fördelning på domännivå för viktiga e-postleveranser och spårningsmått. [Läs mer](../reports/channel-report-cja.md)
 
 **SMS-kanal**
 

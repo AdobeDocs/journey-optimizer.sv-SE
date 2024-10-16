@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 9e9c235a-b78c-4669-af82-822b6f1e6fca
-source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 3%
@@ -64,11 +64,11 @@ Gör så här:
 
 Din kampanj är nu aktiverad. Det meddelande i appen som konfigurerats i kampanjen skickas omedelbart, eller på det angivna datumet.
 
-När ni har skickat dem kan ni mäta effekten av era meddelanden i appen i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report.md#inapp-report).
+När ni har skickat dem kan ni mäta effekten av era meddelanden i appen i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report-cja-inapp.md).
 
 **Relaterade ämnen:**
 
 * [Skapa ett meddelande i appen](create-in-app.md)
 * [Design In-app-meddelande](design-in-app.md)
-* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
+* [Rapport i appen](../reports/campaign-global-report-cja-inapp.md)
 * [Konfiguration i appen](inapp-configuration.md)

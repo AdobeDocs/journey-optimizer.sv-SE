@@ -8,18 +8,14 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8dd48bb2-a805-4c46-a16c-c68173a9ac08
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
 # Kom igång med Live Report {#live-report}
-
->[!AVAILABILITY]
->
->Den aktuella rapportupplevelsen kommer att tas ur bruk i oktober-versionen. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig. [Kom igång med Journey Optimizer nya rapporteringsgränssnitt.](report-gs-cja.md)
 
 Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera påverkan och prestanda för dina resor och dina meddelanden på en inbyggd kontrollpanel.
 Data är tillgängliga i **[!UICONTROL Live report]** så snart din leverans har skickats eller din resa har körts från fliken **[!UICONTROL Last 24hrs]**.
@@ -32,7 +28,7 @@ Data är tillgängliga i **[!UICONTROL Live report]** så snart din leverans har
 
   ![](assets/report_campaign.png)
 
-* Om du vill växla från **[!UICONTROL Global report]** till **[!UICONTROL Live report]** för leveransen klickar du på **[!UICONTROL Last 24hrs]** i flikväljaren.
+* Om du vill växla från **Customer Journey Analytics-rapporter** till **[!UICONTROL Live report]** för leveransen klickar du på **[!UICONTROL Last 24hrs]** i flikväljaren.
 
   ![](assets/report_3.png)
 

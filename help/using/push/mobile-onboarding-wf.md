@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 badge: label="Beta" type="Informative"
 exl-id: 364ef926-3f92-4297-acbd-a283668106ac
-source-git-commit: c4ab97999d000d969f6f09f4d84be017d1288f94
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 2%
@@ -75,5 +75,5 @@ Automatiserad installation är klar. Nu kan du gå till taggens mobila egenskap 
 * [Kom igång med push-meddelanden](get-started-push.md)
 * [Dataflöde och komponenter för push-meddelanden](push-gs.md)
 * [Konfigurera push-kanalen](push-configuration.md)
-* [Rapport om push-meddelanden](../reports/journey-global-report.md#push-global)
+* [Rapport om push-meddelanden](../reports/journey-global-report-cja-push.md#push-global)
 * [Skapa ett push-meddelande](create-push.md)

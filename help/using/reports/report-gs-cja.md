@@ -2,17 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Rapporterar nytt användargränssnitt
-description: Kom igång med det nya gränssnittet Rapportera
+description: Kom igång med CJA-rapport
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
-source-git-commit: bccbf4af4610486dd2d4141b902737c6328b1034
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '333'
+ht-degree: 2%
 
 ---
 
@@ -40,10 +39,6 @@ Journey Optimizer rapportering har en förbättrad interoperabilitet med Custome
 
   ![](assets/gs-cja-report-1.png)
 
->[!NOTE]
->
-> Om du vill återgå till Journey Optimizer traditionella rapportering växlar du bara till alternativet **[!UICONTROL Use new Experience]**.
-
 ## Förhandskrav {#prerequisites}
 
 * Om du **inte** äger Customer Journey Analytics, eller om du äger den men **inte** har tillgång till någon produktprofil för Customer Journey Analytics, hanteras behörigheter i Journey Optimizer. I så fall behöver du:
@@ -57,10 +52,6 @@ Journey Optimizer rapportering har en förbättrad interoperabilitet med Custome
    * **[!UICONTROL Manage profiles]** behörighet för Adobe Journey Optimizer. [Läs mer](../administration/permissions.md)
 
 * Customer Journey Analytics-datavyer måste konfigureras med följande inställning: **Ange som standarddatavy i Adobe Journey Optimizer**. [Läs mer om datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
-
-* Aktivera alternativet **[!UICONTROL Use new Experience]** i din rapport om du vill få åtkomst till instrumentpanelen för Customer Journey Analytics i Journey Optimizer.
-
-  ![](assets/cja-option.png)
 
 ## Instruktionsvideo{#video}
 

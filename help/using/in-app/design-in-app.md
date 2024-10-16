@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 7%
@@ -243,7 +243,7 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du anpassa meddel
 **Relaterade ämnen:**
 
 * [Skapa meddelande i appen](create-in-app.md)
-* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
+* [Rapport i appen](../reports/campaign-global-report-cja-inapp.md)
 * [Konfiguration i appen](inapp-configuration.md)
 
 ## Instruktionsvideo{#video}

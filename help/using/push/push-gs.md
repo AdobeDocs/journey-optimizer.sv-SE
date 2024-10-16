@@ -8,9 +8,9 @@ feature: Push, Overview
 role: Admin
 level: Intermediate
 exl-id: 9718c4b6-2558-4dfd-9d8f-f8845def19ba
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
 1. Personaliserade push-nyttolaster vidarebefordras till en intern push-meddelandeleveranstjänst
 1. Den här interna tjänsten validerar sedan inloggningsuppgifterna för programmet som är kopplat till meddelandet, och
 1. Skickar meddelandet till Apple &amp; Google meddelandetjänster för slutleverans
-1. Feedback från meddelandetjänster noteras, fel och framgångar loggas för rapportering i Journey Live &amp; Global-rapporter
+1. Feedback från meddelandetjänster noteras, fel och framgångar loggas för rapportering i Journey Live &amp; Customer Journey Analytics-rapporten
 1. Push-meddelanden skickas till slutanvändarenheter
 1. Interaktioner med push-meddelanden för slutanvändare skickas in som Experience Events från slutanvändarens klient via SDK-integrering
 
@@ -75,7 +75,7 @@ I följande bild visas de olika stegen, från början till slut, som används f�
 **Relaterade ämnen**
 
 * [Konfigurera push-kanal](push-configuration.md)
-* [Rapport om push-meddelanden](../reports/journey-global-report.md#push-global)
+* [Rapport om push-meddelanden](../reports/journey-global-report-cja-push.md)
 * [Skapa ett push-meddelande](create-push.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
 * [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)

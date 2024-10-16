@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 4d6890c8e0e8673ca5d793b9bf9a6cbb7add8ee5
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '1268'
 ht-degree: 0%
@@ -190,7 +190,7 @@ Du kan se det övergripande poängtalet i gränssnittet **Profiler**. För var o
 
 +++Vilken rapportering finns tillgänglig?
 
-Kom åt din resa genom att klicka på knappen **Visa rapport** i det övre högra hörnet och välja fliken **Resa** till vänster. [Läs mer](../reports/journey-global-report.md)
+Kom åt din resa genom att klicka på knappen **Visa rapport** i det övre högra hörnet och välja fliken **Resa** till vänster. [Läs mer](../reports/journey-global-report-cja.md)
 
 +++
 

@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: d4dce7b31d898d86c330048e6d0a1587e87a617c
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '687'
 ht-degree: 1%
 
 ---
@@ -45,10 +45,6 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 ## Skapa innehåll {#campaign-experiment}
 
 1. Börja med att skapa och konfigurera e-post, SMS eller push-meddelanden [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journeys-message.md) enligt dina krav.
-
-   >[!AVAILABILITY]
-   >
-   >Experimentation i Journey är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 1. Börja personalisera behandling A från fönstret **[!UICONTROL Edit content]**.
 
@@ -128,4 +124,4 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
 1. När meddelandeinnehållet har definierats klickar du på knappen **[!UICONTROL Simulate content]** för att kontrollera återgivningen av leveransen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../content-management/preview-test.md)
 
-När du har konfigurerat dina experiment kan du följa resultatet av leveransen med din rapport. [Läs mer](../reports/campaign-global-report.md#experimentation-report)
+När du har konfigurerat dina experiment kan du följa resultatet av leveransen med din rapport. [Läs mer](../reports/campaign-global-report-cja-experimentation.md)

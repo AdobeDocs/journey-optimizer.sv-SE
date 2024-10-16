@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '3320'
+source-wordcount: '3276'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,7 @@ ht-degree: 0%
 >title="Kampanjrapport"
 >abstract="Med rapporten Campaign live kan ni i realtid mäta och visualisera effekten och resultatet av era kampanjer bara under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
->[!AVAILABILITY]
->
->Den aktuella rapportupplevelsen kommer att tas ur bruk i oktober-versionen. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig. [Kom igång med Journey Optimizer nya rapporteringsgränssnitt.](report-gs-cja.md)
-
-Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse fokuserar Global-rapporter på händelser som inträffade för minst två timmar sedan och täcker händelser under en vald tidsperiod.
+Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics i fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
 
 Du kan komma åt kampanjens Live-rapport direkt från kampanjen med knappen **[!UICONTROL Live view]**.
 
@@ -610,4 +606,4 @@ Se [den här sidan](exclusion-list.md) för en utförlig lista över orsaker til
 * [Skapa en kampanj](../campaigns/create-campaign.md)
 * [Skapa API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)
 * [Ändra eller stoppa en kampanj](../campaigns/modify-stop-campaign.md)
-* [Global kampanjrapport](campaign-global-report.md)
+* [Kampanjrapport](campaign-global-report-cja.md)

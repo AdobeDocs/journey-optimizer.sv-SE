@@ -8,23 +8,24 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 5349b0cf-da4e-458c-89be-c75a38e4721a
-source-git-commit: c2f2dde40385f56ea86be15a5857fa9e5e2e2fed
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-# Arbeta med [!DNL Customer Journey Analytics] {#cja-ajo}
-
+# Konfigurera [!DNL Customer Journey Analytics] manuellt {#cja-ajo}
 
 Integrationen av [!DNL Journey Optimizer] med [!DNL Customer Journey Analytics] ger en helhetsbild av alla dina resor med automatiserad rapportdistribution och anpassade visualiseringar av data.
+
+I följande avsnitt beskrivs hur du manuellt kan utnyttja Journey Optimizer-genererade data för en djupgående analys i Customer Journey Analytics. Observera att denna integrering kan konfigureras automatiskt. [Läs mer](report-gs-cja.md)
 
 ![](assets/cja.png)
 
 När du har skapat din resa i [!DNL Journey Optimizer] kan du importera dina kunddata till [!DNL Customer Journey Analytics] för att starta rapporter och förstå effekten av varje interaktion en kund har med dina resor.
 
-➡️ [Upptäck Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=sv){target="_blank"}
+➡️ [Upptäck Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#manually-configure-a-data-view-to-be-used-with-journey-optimizer){target="_blank"}
 
 >[!NOTE]
 >

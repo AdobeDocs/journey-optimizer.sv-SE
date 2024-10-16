@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 9bd4f854292f4928216c9ad4602098930743c1bd
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '4383'
+source-wordcount: '4376'
 ht-degree: 8%
 
 ---
@@ -136,7 +136,7 @@ Beräknade attribut förenklar dessutom arbetsflödena för segmentering och res
 <p>Med funktionen Kanalrapport kan analytiker och marknadsförare få en heltäckande översikt över trafik- och engagemangsmått på kanalnivå.</p>
 <p>Om du vill få åtkomst till menyn <b>Rapport</b> måste du ha behörigheten <b>Visa kanalrapporter</b> .</p>
 <img src="assets/channel-reports.png"/>
-<p>Mer information finns i <a href="../reports/channel-report.md">detaljerad dokumentation</a> och <a href="../reports/channel-report.md#channel-report-video">instruktionsvideo</a>.</p>
+<p>Mer information finns i den <a href="../reports/channel-report-cja.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -223,7 +223,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Rapportering**
 
-* Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. Läs mer i den [detaljerade dokumentationen](../reports/global-report.md#export-reports) och videon [Handledning](../reports/global-report.md#video-csv).
+* Nu kan du exportera Journey Optimizer-rapporter som CSV-filer. Läs mer i den [detaljerade dokumentationen](../reports/report-gs-cja.md).
 
 **Assets**
 
@@ -531,7 +531,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <td>
 <p>You can now measure the performance of your campaigns across inbound and outbound through dedicated reports. Adobe Journey Optimizer reports can retrieve additional metrics to use in the Objectives tab of your campaign reports.</p>
 <img src="assets/do-not-localize/performance_report.gif"/>
-<p>For more information, refer to the <a href="../reports/campaign-global-report.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../reports/campaign-global-report-cja.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -722,7 +722,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **Rapportering**
 
-* Nu kan du exportera Journey Optimizer-rapporter som PDF. [Läs mer](../reports/global-report.md#export-reports)
+* Nu kan du exportera Journey Optimizer-rapporter som PDF. [Läs mer](../reports/report-gs-cja.md)
 
 **Innehåll i Designer**
 
@@ -824,7 +824,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 * Rapportwidgetfunktionen har förbättrats med möjligheten att anpassa hur användarna visar sina data. Med den här förbättringen kan man nu välja mellan flera visualiseringsalternativ, inklusive diagram-, tabell- och dondiagram.
 
-  Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [den detaljerade dokumentationen](../reports/global-report.md#modify-dashboard).
+  Observera att du måste återställa de olika rapportinstrumentpanelerna för att få tillgång till de senaste widgetarna. Mer information om anpassning av kontrollpanelen finns i [den detaljerade dokumentationen](../reports/report-gs-cja.md).
 
 ## Version 23 februari {#feb-2023}
 

@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: ab4219c7045f9c4ba77fceb2cbb46fbbe6f536ac
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1663'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Listan **[!UICONTROL Landing Pages]** visar alla objekt som skapats. Du kan filt
 
 ![](assets/lp_access-list-filter.png)
 
-Från den här listan kan du komma åt [landningssidans Live-rapport](../reports/lp-report-live.md) eller [landningssidans globala rapport](../reports/lp-report-global.md) för publicerade objekt.
+Från den här listan kan du komma åt [landningssidans Live-rapport](../reports/lp-report-live.md) eller [landningssidans rapport](../reports/lp-report-global-cja.md) för publicerade objekt.
 
 Du kan också ta bort, duplicera och avpublicera en landningssida.
 

@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 8%
@@ -132,7 +132,7 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 <td>
 <p>Nya mätvärden är tillgängliga vid rapportering: Riktade och exkluderade för e-post- och push-meddelanden är synliga i både live- och globala rapporter. </br> Observera att du måste återställa de olika rapportinstrumentpanelerna för varje kanal och rapporttyp för att få tillgång till de senaste mätvärdena. Mer information om anpassning av kontrollpanelen finns i den <a href="../reports/live-report.md">detaljerade dokumentationen.</a></p>
 <p>En ny kolumn i meddelandekörningslistan visar antalet målprofiler för varje meddelandekörning. </p>
-<p>Mer information finns i den <a href="../reports/global-report.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../reports/report-gs-cja.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>

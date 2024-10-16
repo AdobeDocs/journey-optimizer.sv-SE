@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 140c858d-9566-403c-a0e7-395437bb4e42
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,7 @@ ht-degree: 0%
 >title="Direktprenumerationsrapport"
 >abstract="Med prenumerationens Live-rapport kan du bara mäta och visualisera dina prenumeranters aktivitet i realtid under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som detaljerar dina prenumerationer och avbeställningar. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
->[!AVAILABILITY]
->
->Den aktuella rapportupplevelsen kommer att tas ur bruk i oktober-versionen. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig. [Kom igång med Journey Optimizer nya rapporteringsgränssnitt.](report-gs-cja.md)
-
-Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse fokuserar Global-rapporter på händelser som inträffade för minst två timmar sedan och täcker händelser under en vald tidsperiod.
+Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics i fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
 
 Du öppnar dina rapporter genom att klicka på ikonen **[!UICONTROL Report]** i den valda prenumerationslistan.
 

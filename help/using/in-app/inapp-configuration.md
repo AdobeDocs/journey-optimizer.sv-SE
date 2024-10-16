@@ -6,7 +6,7 @@ feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: d4dce7b31d898d86c330048e6d0a1587e87a617c
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 1%
@@ -134,5 +134,5 @@ Om du **inte** använder följande fördefinierade [fältgrupper](https://experi
 * [Skapa ett meddelande i appen](create-in-app.md)
 * [Skapa en kampanj](../campaigns/create-campaign.md)
 * [Design In-app-meddelande](design-in-app.md)
-* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
+* [Rapport i appen](../reports/campaign-global-report-cja-inapp.md)
 

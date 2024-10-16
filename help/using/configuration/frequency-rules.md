@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: f47f4e783dd66d9031c7f7c447c1b20418a583c0
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Följ stegen nedan för att tillämpa en affärsregel på ett meddelande.
    >
    >Meddelanden där den valda kategorin är **[!UICONTROL Transactional]** utvärderas inte mot frekvensregler.
 
-1. Du kan visa antalet profiler som har uteslutits från leverans i den [globala rapporten](../reports/global-report.md) och i [Live-rapporten](../reports/live-report.md), där affärsregler listas som en möjlig orsak för användare som inte har levererats.
+1. Du kan visa antalet profiler som har uteslutits från leverans i [Customer Journey Analytics-rapporten](../reports/report-gs-cja.md) och i [Live-rapporten](../reports/live-report.md), där affärsregler listas som en möjlig orsak för användare som har uteslutits från leverans.
 
 >[!NOTE]
 >

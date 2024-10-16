@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: b8a71c43ad5b456bfc9ec9b9d3fba06049e604ed
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -47,11 +47,11 @@ Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upp
 </div>
 <p></td>
 <td>
-<a href="../reports/campaign-global-report.md#inapp-global">
+<a href="../reports/campaign-global-report-cja-inapp.md">
 <img alt="Validering" src="../assets/do-not-localize/inapp-report.jpg">
 </a>
 <div>
-<a href="../reports/campaign-global-report.md#inapp-global"><strong>Åtkomst till rapporter i appen</strong></a>
+<a href="../reports/campaign-global-report-cja-inapp.md"><strong>Åtkomst till rapporter i appen</strong></a>
 </div>
 <p>
 </td>

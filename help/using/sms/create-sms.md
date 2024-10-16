@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 2%
@@ -159,12 +159,12 @@ Använd knappen **[!UICONTROL Simulate content]** om du vill förhandsgranska di
 
 När du har utfört testerna och validerat innehållet kan du skicka textmeddelandet till mottagarna. De här stegen beskrivs i [den här sidan](send-sms.md)
 
-När ni har skickat det kan ni mäta effekten av ert SMS i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report.md#sms-tab).
+När ni har skickat det kan ni mäta effekten av ert SMS i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report-cja-sms.md).
 
 **Relaterade ämnen**
 
 * [Förhandsgranska, testa och skicka ditt textmeddelande](send-sms.md)
 * [Konfigurera SMS-kanal](sms-configuration.md)
-* [SMS-/MMS-rapporter](../reports/journey-global-report.md#sms-global)
+* [SMS-/MMS-rapporter](../reports/journey-global-report-cja-sms.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)
 * [Lägg till ett meddelande i en kampanj](../campaigns/create-campaign.md)

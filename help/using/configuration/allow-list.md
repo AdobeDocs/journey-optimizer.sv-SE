@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: 6c35809af2aaf4803eef7a8e5b3d8b0f351c8ba0
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1100'
 ht-degree: 2%
 
 ---
@@ -201,7 +201,7 @@ När tillåtelselista är [active](#enable-allow-list) gäller följande logik:
 >
 >Profilerna med statusen **[!UICONTROL Not allowed]** har uteslutits under meddelandeöverföringsprocessen. Det innebär att även om **reserapporterna** visar att de här profilerna har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)) så inkluderas de inte i **e-postrapporterna** i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelanden skickas.
 >
->Läs mer i [Live-rapporten](../reports/live-report.md) och [Global rapport](../reports/global-report.md).
+>Läs mer i [Live-rapporten](../reports/live-report.md) och [Customer Journey Analytics ](../reports/report-gs-cja.md).
 
 När tillåtelselista är [deaktiverad](#deactivate-allow-list) skickas alla e-postmeddelanden som du skickar från den aktuella sandlådan ut till alla mottagare (förutsatt att de inte finns med i listan över inaktiveringar), inklusive riktiga kundadresser.
 

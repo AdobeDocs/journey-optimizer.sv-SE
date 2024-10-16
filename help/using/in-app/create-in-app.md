@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 1%
@@ -256,5 +256,5 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
 * [Design In-app-meddelande](design-in-app.md)
 * [Testa och skicka meddelandet i appen](send-in-app.md)
-* [Rapport i appen](../reports/campaign-global-report.md#inapp-report)
+* [Rapport i appen](../reports/campaign-global-report-cja-inapp.md)
 * [Konfiguration i appen](inapp-configuration.md)
