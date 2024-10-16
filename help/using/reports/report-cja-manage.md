@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: a04f60d946845725e09855b4aa19bc6ef4b4db99
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -72,51 +72,51 @@ Din rapport är nu tillgänglig för visning, hämtning eller delning i en PDF-f
 
 >[!ENDTABS]
 
-<!--
-## Schedule exports {#schedule-export}
 
-The **Schedule export** lets you automate the delivery of up to 10 reports at weekly, monthly or yearly intervals. You can also easily manage your scheduled reports, with options to update, edit, cancel, or delete any of your scheduled exports.
+## Schemalägg export {#schedule-export}
 
-1. From your report, click **[!UICONTROL Share]** and select **[!UICONTROL Schedule export]**.
+Med **Schemalägg export** kan du automatisera leveransen av upp till 10 rapporter varje vecka, månad eller år. Du kan också enkelt hantera dina schemalagda rapporter med alternativ för att uppdatera, redigera, avbryta eller ta bort någon av dina schemalagda exporter.
+
+1. Klicka på **[!UICONTROL Share]** i rapporten och välj **[!UICONTROL Schedule export]**.
 
    ![](assets/export-schedule-1.png)
 
-1. Choose your **[!UICONTROL File type]** between CSV and PDF.
+1. Välj **[!UICONTROL File type]** mellan CSV och PDF.
 
-1. If needed, you can add a **[!UICONTROL Description]** to your export.
+1. Om det behövs kan du lägga till en **[!UICONTROL Description]** i din export.
 
-1. Enter the name of the recipients who will receive this automated delivery.
+1. Ange namnet på mottagarna som ska få den här automatiska leveransen.
 
    ![](assets/export-schedule-2.png)
 
-1. Choose the **[!UICONTROL Frequency]**.
+1. Välj **[!UICONTROL Frequency]**.
 
-1. Based on the selected frequency, provide the relevant scheduling details, such as:
+1. Baserat på vald frekvens, ange relevant schemaläggningsinformation, till exempel:
 
-   * Start and end dates
-   
-   * Interval (e.g., every few weeks)
+   * Start- och slutdatum
 
-   * Specific day of the week
-   
-   * Week within the month
+   * Intervall (t.ex. var vecka)
 
-   * Day within the month
-   
-   * Month of the year
+   * Specifik veckodag
 
-1. Click **[!UICONTROL Send on schedule]**.
+   * Vecka inom månaden
 
-1. To edit previously created scheduled export, click **[!UICONTROL Share]** and select **[!UICONTROL Manage schedules]**.
+   * Dag inom månaden
+
+   * Månad på året
+
+1. Klicka på **[!UICONTROL Send on schedule]**.
+
+1. Om du vill redigera tidigare skapad schemalagd export klickar du på **[!UICONTROL Share]** och väljer **[!UICONTROL Manage schedules]**.
 
    ![](assets/export-schedule-3.png)
 
-1. From the list of scheduled exports, choose the one you want to update and make the necessary changes.
+1. I listan över schemalagda exporter väljer du den som du vill uppdatera och gör de nödvändiga ändringarna.
 
-1. To delete a scheduled report, select one from the managed schedules list and click **[!UICONTROL Delete]**.
+1. Om du vill ta bort en schemalagd rapport markerar du en i listan med hanterade scheman och klickar på **[!UICONTROL Delete]**.
 
    ![](assets/export-schedule-4.png)
--->
+
 
 ## Skapa ett enkelt mått {#create-simple-metric}
 
