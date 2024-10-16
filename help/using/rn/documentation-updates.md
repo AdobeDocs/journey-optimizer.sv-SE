@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: c53fc226be1b6ab858c5cd75bcae363769fefa74
+source-git-commit: 1948bc304da8af9a83a2f0f81854a701d0d65e2b
 workflow-type: tm+mt
-source-wordcount: '5663'
+source-wordcount: '5668'
 ht-degree: 13%
 
 ---
@@ -24,9 +24,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Sidan **Konfigurera din kodbaserade upplevelse** har förbättrats för att göra processen tydligare, inklusive avsnittet som förklarar vad en yt-URI är. [Läs mer](../code-based/code-based-configuration.md)
 * Sidan **Skapa webbkanalskonfiguration** har uppdaterats för att klargöra stegen när du skapar en sidmatchningsregel, som även gäller för kodbaserad upplevelsekonfiguration. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
 * En anteckning om det kommande TTL-skyddsutkastet (time-to-live) för systemgenererade datauppsättningar har lagts till. [Läs mer](../data/get-started-datasets.md)
-
-
 * Ett nytt avsnitt har lagts till som beskriver hur du förhandsgranskar dina kodbaserade personaliserade upplevelser direkt i webbläsaren eller på dina mobila enheter, med alternativet Förhandsgranska på enhet när du simulerar innehåll under en resa eller en kampanj. [Läs mer](../code-based/create-code-based.md#preview-on-device)
+* En ny sida har lagts till om hur du använder anpassade uppladdningsmålgrupper för beslut. [Läs mer](../offers/custom-upload-decisioning.md)
 
 ## September 2024 {#sept-2024}
 
@@ -131,7 +130,6 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Uppdatera parametern **duration** i funktionen `toString`. [Läs mer](../building-journeys/functions/functiontostring.md)
 * För vissa externa datakällor bör du använda anpassade åtgärder.
 * Syntaxen för händelsefältet har uppdaterats. Följande syntax är inaktuell `@(my_event.myfield}` och ersatt med `@event{my_event.myfield}`. [Läs mer](../building-journeys/expression/field-references.md)
-* Den globala rapporten och Live-rapportguiderna har omstrukturerats. [Läs mer](../reports/campaign-global-report.md)
 
 +++ 2023
 
@@ -179,7 +177,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Anteckningen om **hantering av autentiseringscache** under resan har uppdaterats för att visa i detalj att token inte delas mellan olika resor. [Läs mer](../datasource/external-data-sources.md#custom-authentication-mode)
 * Sidan om resan **hantering av inträde** har uppdaterats för att förtydliga beteendet. [Läs mer](../building-journeys/entry-management.md)
 * Offera decisioningen **exportdatamängder** är nu aktiverat som standard. Anteckningen om det tidigare beteendet har tagits bort.  [Läs mer](../offers/export-catalog/get-started-export.md)
-* Olika **kampanjrapportmått** har bytt namn i både Live- och Global-rapporter. [Läs mer](../reports/campaign-global-report.md)
+* Olika **kampanjrapportmått** har bytt namn i både Live- och Global-rapporter. [Läs mer](../reports/campaign-live-report.md)
 * Ett nytt avsnitt har lagts till om krav för innehållsexperiment för webbkanalen. [Läs mer](../web/web-prerequisites.md#experiment-prerequisites)
 * En varning har lagts till på sidan **Arbeta med innehållsmallar** för att ange att spårning inte stöds när du testar mallar för e-postinnehåll. Om du vill testa spårning måste du använda innehållsmallen i ett e-postmeddelande och skicka ett korrektur. [Läs mer](../content-management/content-templates.md#test-template)
 * Flera varningar har lagts till i avsnittet **Skapa och publicera landningssidor** för att ange att du inte kan komma åt din landningssida genom att kopiera och klistra in URL-adressen som angavs när sidan skapades i en webbläsare, även om den publicerades. I stället kan du testa den med förhandsvisningsfunktionen. [Läs mer](../landing-pages/create-lp.md)
@@ -297,9 +295,9 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Uppdaterade sidor relaterade till funktionerna [toDateOnly](../building-journeys/functions/functiontodateonly.md) och [toString](../building-journeys/functions/functiontostring.md).
 * Information om tidsvillkorsparametrar har lagts till. [Läs mer](../building-journeys/condition-activity.md#time_condition)
 * Ytterligare information om inbyggda datauppsättningar. [Läs mer](../data/get-started-datasets.md#access-datasets)
-* Delarna i den globala rapporten och Live-rapporten har förbättrats och omorganiserats. [Läs mer](../reports/global-report.md)
+* Delarna i den globala rapporten och Live-rapporten har förbättrats och omorganiserats. [Läs mer](../reports/report-gs-cja.md)
 * En lista över alla rapporteringsmått som är tillgängliga i Adobe Journey Optimizer har lagts till.
-  [Läs mer](../reports/global-report.md#email-and-sms-metrics)
+  [Läs mer](../reports/report-gs-cja.md#email-and-sms-metrics)
 * BCC-e-postavsnittet har flyttats till den nya sidan Stöd för arkivering. [Läs mer](../configuration/archiving-support.md)
 
 ## Augusti 2022 {#august-2022}
@@ -444,7 +442,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Konfigurationsproceduren för anpassade åtgärder med dynamiska URL-sökvägar och dynamiska huvuden har uppdaterats. [Läs mer](../action/about-custom-action-configuration.md#url-configuration)
 * Ett avsnitt om tillgänglighetsfunktioner och genvägar har lagts till. [Läs mer](../start/user-interface.md#accessibility)
 * Ett avsnitt om metoder för målgruppsutvärdering har lagts till. [Läs mer](../audience/about-audiences.md#evaluation-method-in-journey-optimizer)
-* Anteckningar har lagts till i avsnitten om Suppression-listan, Tillåtelselista och e-post, global/liverapport, för att ange att profiler med statusen Inaktiverad och Inte tillåten ska uteslutas från e-postrapporten Skickade mått. [Läs mer](../reports/global-report.md)
+* Anteckningar har lagts till i avsnitten om Suppression-listan, Tillåtelselista och e-post, global/liverapport, för att ange att profiler med statusen Inaktiverad och Inte tillåten ska uteslutas från e-postrapporten Skickade mått. [Läs mer](../reports/report-gs-cja.md)
 * Ett nytt avsnitt har lagts till som beskriver hur du hämtar e-postadresser eller domäner som har uteslutits från en sändning eftersom de inte fanns på tillåtelselista. [Läs mer](../configuration/allow-list.md#reporting)
 * Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 * Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](../configuration/channel-surfaces.md#monitor-channel-surfaces)
