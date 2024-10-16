@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: b5528c50a04de73a0af3d7ea2ba21fd562a88e1a
+source-git-commit: ac2e0eb18e21c79ba44a76eb6bd1258eccaaa10c
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 8%
@@ -63,6 +63,12 @@ Kommande **versionsdatum**: 28-30 oktober 2024
 </tr>
 </tbody>
 </table>
+
+>[!IMPORTANT]
+>
+>Den nuvarande rapportupplevelsen kommer att upphöra i januari 2025. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig.
+>
+> [Lär dig hur du kommer igång med Journey Optimizer nya rapporteringsgränssnitt](../reports/report-gs-cja.md)
 
 ### Förbättringar {#24-10-improvements}
 
@@ -207,12 +213,6 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tr>
 </tbody>
 </table>
-
->[!IMPORTANT]
->
->Den aktuella rapportupplevelsen kommer att tas ur bruk i oktober-versionen. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig.
->
-> [Lär dig hur du kommer igång med Journey Optimizer nya rapporteringsgränssnitt](../reports/report-gs-cja.md)
 
 
 ### Förbättringar {#24-9-improvements}
