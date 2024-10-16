@@ -8,9 +8,9 @@ topic: Content Management
 role: Admin
 level: Intermediate, Experienced
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: e34c39c02f71361277f28b1a116a54390875f93d
+source-git-commit: f8a6c2a3b27d5dca422dfdc868f802c6a10b001d
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -83,11 +83,17 @@ Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdom�
 
 För att minska risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och för att förhindra leveransproblem, kan du med [!DNL Journey Optimizer] konfigurera DMARC-posten för alla underdomäner som du delegerar till Adobe.
 
-Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning av obehöriga aktörer.
+Domänbaserad meddelandeautentisering, rapportering och överensstämmelse (DMARC) är en e-postautentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning av skadliga aktörer.
 
-[Läs mer på DMARC-posten](../configuration/dmarc-record.md)
+[Läs mer på DMARC Record](../configuration/dmarc-record.md)
 
 ## Lär dig mer om feedback-loopar {#feedback-loops}
+
+>[!CONTEXTUALHELP]
+>id="ajo_surface_dynamic_subdomain_list"
+>title="Vissa underdomäner kanske inte är tillgängliga"
+>abstract="Vissa underdomäner är för närvarande inte tillgängliga för val på grund av väntande registrering av feedbackloop. Den här processen kan ta upp till 10 arbetsdagar. När du är klar kan du välja bland alla tillgängliga underdomäner."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Kom igång med delegering till underdomäner"
 
 En feedbackslinga (FBL) är en tjänst som erbjuds av vissa Internet-leverantörer som gör att e-postavsändaren automatiskt kan meddelas när den användare som tar emot ett e-postmeddelande väljer att markera det som skräppost (kallas även för ett klagomål).
 

@@ -10,9 +10,9 @@ level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 badge: label="Begränsad tillgänglighet"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: f8a6c2a3b27d5dca422dfdc868f802c6a10b001d
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,12 +36,6 @@ För större flexibilitet och kontroll över e-postinställningarna kan du med [
 >id="ajo_surface_dynamic_subdomain"
 >title="Aktivera dynamiska underdomäner"
 >abstract="När du skapar en e-postkonfiguration kan du konfigurera dynamiska underdomäner baserat på villkor som du definierar med personaliseringsredigeraren. Du kan lägga till upp till 50 dynamiska underdomäner."
-
->[!CONTEXTUALHELP]
->id="ajo_surface_dynamic_subdomain_list"
->title="Vissa underdomäner kanske inte är tillgängliga"
->abstract="Vissa underdomäner är för närvarande inte tillgängliga för val på grund av väntande registrering av feedbackloop. Den här processen kan ta upp till 10 arbetsdagar. När du är klar kan du välja bland alla tillgängliga underdomäner."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Kom igång med delegering till underdomäner"
 
 När du skapar en e-postkonfiguration kan du konfigurera dynamiska underdomäner baserat på specifika villkor.
 
