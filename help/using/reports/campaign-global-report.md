@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: fa64f5b8-75f2-40e6-8566-5766fafe6cd6
-source-git-commit: 94d6ebe6e0ad5fa48eaad9d8cfa8cff584f2b819
+source-git-commit: c9505b482d2dedc10c4025574cccb662fe149510
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4218'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,10 @@ Campaign **[!UICONTROL Global report]** är uppdelad i olika widgetar som beskri
 En detaljerad lista över alla tillgängliga mätvärden i Adobe Journey Optimizer finns på [den här sidan](global-report.md#list-of-components-global.md)
 
 ## Fliken Kampanj {#campaign-global}
+
+>[!NOTE]
+>
+>Experimentationsrapporten finns endast i rapporter från Customer Journey Analytics. [Läs mer](campaign-global-report-cja-experimentation.md)
 
 ### Leverans {#delivery-global}
 
