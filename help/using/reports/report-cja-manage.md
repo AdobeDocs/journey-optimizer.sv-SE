@@ -1,16 +1,16 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Rapporterar nytt användargränssnitt
-description: Kom igång med det nya gränssnittet Rapportera
+title: Rapportering
+description: Kom igång med rapportering
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
-source-git-commit: ea016af2dc08321bcf2e5110538031f66c888b90
+source-git-commit: b3d1d02605ff5e759c665847efad2d78bef6a1cf
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
