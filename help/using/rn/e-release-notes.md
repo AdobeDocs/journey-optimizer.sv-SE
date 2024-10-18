@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 5714e0aab20bce91ecf588c6b170a975be1f7d89
+source-git-commit: 5eea9467660ba19bbd2d95e8a82490e645266f69
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1672'
 ht-degree: 3%
 
 ---
@@ -100,26 +100,6 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 </tbody>
 </table>
 
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Integrering med Movable Ink och Adobe Journey Optimizer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du integrera Movable Ink Da Vinci och Adobe Journey Optimizer. Med den nya integreringen kan du </p>
-<p><ul><li>Utnyttja de kraftfulla funktionerna i Movable Inks Da Vinci-produkt för att sammanställa och personalisera e-postvarianter för gruppkampanjer</li>
-<li>Snabba upp arbetsflödena för användare av Journey Optimizer med Da Vinci för framställning och AJO för optimering och leverans</li>
-<li>Optimera Da Vinci-modeller med data från Adobe.</li></ul></p>
-<!--p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p-->
-</tr>
-</tbody>
-</table>
-
 <table>
 <thead>
 <tr>
@@ -172,20 +152,39 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 </tbody>
 </table>
 
-
 <table>
 <thead>
 <tr>
-<th><strong>Uppdaterad rapportupplevelse (allmän tillgänglighet)</strong><br/>Tillgänglig sedan 16 oktober 2024<br/></th>
+<th><strong>Integrering med Movable Ink och Adobe Journey Optimizer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
+<p>Nu kan du integrera Movable Ink Da Vinci och Adobe Journey Optimizer. Med den nya integreringen kan du </p>
+<p><ul><li>Utnyttja de kraftfulla funktionerna i Movable Inks Da Vinci-produkt för att sammanställa och personalisera e-postvarianter för gruppkampanjer</li>
+<li>Snabba upp arbetsflödena för användare av Journey Optimizer med Da Vinci för framställning och AJO för optimering och leverans</li>
+<li>Optimera Da Vinci-modeller med data från Adobe.</li></ul></p>
+<!--p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p-->
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Uppdaterad rapportupplevelse (allmän tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Tillgänglig sedan 16 oktober 2024</p>
 <p>Journey Optimizer rapportering är nu allmänt tillgänglig (GA) och har förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering för båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.</p>
 <p>Med allmän tillgänglighet introduceras fyra nya funktioner: möjlighet att skapa enkla mätvärden, skapa och publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter som automatiskt ska skickas till viktiga mottagare.</p>
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
+<p>Viktigt:Den nuvarande rapportupplevelsen kommer att upphöra i januari 2025. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig. <a href="../reports/report-gs-cja.md">Lär dig hur du kommer igång med Journey Optimizer nya rapporteringsgränssnitt</a></p>
 </tr>
 </tbody>
 </table>
@@ -199,10 +198,10 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <tbody>
 <tr>
 <td>
+<p>Tillgänglig sedan 1 oktober 2024</p>
 <p>Med den kodbaserade upplevelsekanalen kan du med Adobe Journey Optimizer utföra avancerad personalisering och testning för alla dina inkommande egenskaper, vilket möjliggör smidig leverans av skräddarsydda upplevelser över olika kontaktytor som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta tv-apparater, kioskdatorer, ATM-enheter, IoT-enheter med mera. Den kodbaserade upplevelsekanalen är nu tillgänglig på arbetsytan för resan.</p>
 <p>Mer information finns i den <a href="../code-based/create-code-based.md">detaljerade dokumentationen</a>.</p>
 <img src="../assets/do-not-localize/code-based-journey.gif"/>
-<p>Tillgänglighetsdatum: 1 oktober 2024</p>
 </tr>
 </tbody>
 </table>
@@ -216,20 +215,13 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <tbody>
 <tr>
 <td>
+<p>Tillgänglig sedan 1 oktober 2024</p>
 <p>Med webbkanalen kan Adobe Journey Optimizer personalisera webbupplevelsen som ni levererar till era kunder via inkommande webbresor. Webbkanalen är nu tillgänglig på arbetsytan.</p>
 <p>Mer information finns i den <a href="../web/create-web.md">detaljerade dokumentationen</a>.</p>
 <img src="../assets/do-not-localize/web-journey.gif"/>
-<p>Tillgänglighetsdatum: 1 oktober 2024</p>
 </tr>
 </tbody>
 </table>
-
->[!IMPORTANT]
->
->Den nuvarande rapportupplevelsen kommer att upphöra i januari 2025. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig.
->
-> [Lär dig hur du kommer igång med Journey Optimizer nya rapporteringsgränssnitt](../reports/report-gs-cja.md)
-
 
 ### Förbättringar {#e-improvements}
 
@@ -270,11 +262,11 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
    * 90 dagar för data i profilarkivet
    * 13 månader för data i sjön
 
-Dessutom kommer vid den tidpunkten direktuppspelningssegmentering inte längre att stödja användning av skicka- och feedback-händelser från spårnings- och feedbackdatauppsättningar. Vi har rekommenderat att inte använda dessa händelser för direktuppspelningssegmentering ett tag, och nu inaktiverar vi dem helt och hållet.
+  Dessutom kommer vid den tidpunkten direktuppspelningssegmentering inte längre att stödja användning av skicka- och feedback-händelser från spårnings- och feedbackdatauppsättningar. Vi har rekommenderat att inte använda dessa händelser för direktuppspelningssegmentering ett tag, och nu inaktiverar vi dem helt och hållet.
 
-* Den här ändringen begränsar endast användningen av skicka/öppna-händelser i direktuppspelningssegmentering. Klickhändelser kan fortfarande användas i ett direktuppspelningssegment. Dessutom kan skicka/öppna-händelser fortfarande användas i ett gruppsegment.
-* Spårningsdata samlas fortfarande in. Den här ändringen påverkar inte spårning. Du kan fortfarande spåra till vem ett e-postmeddelande skickades och vem som klickade på ett e-postmeddelande.
-* Reaktionshändelser i resor påverkas inte av denna förändring.
+   * Den här ändringen begränsar endast användningen av skicka/öppna-händelser i direktuppspelningssegmentering. Klickhändelser kan fortfarande användas i ett direktuppspelningssegment. Dessutom kan skicka/öppna-händelser fortfarande användas i ett gruppsegment.
+   * Spårningsdata samlas fortfarande in. Den här ändringen påverkar inte spårning. Du kan fortfarande spåra till vem ett e-postmeddelande skickades och vem som klickade på ett e-postmeddelande.
+   * Reaktionshändelser i resor påverkas inte av denna förändring.
 
 * **Parametrar i anpassade åtgärder** (Tillgänglighetsdatum: 3 oktober 2024) - NULL och valfria parametrar stöds nu i anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
