@@ -5,7 +5,7 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: b29179518dec9a4c034e6dd21972aa2145839739
+source-git-commit: 3235d53b09d140e61a9e83f6b07ce8351f0fa245
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 17%
@@ -36,7 +36,7 @@ Septemberversionen är nu aktiv, inklusive innehållskort för mobilappar och we
 
 Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet.
 
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/reports/cja-ajo.md)
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/reports/report-gs-cja.md)
 
 >[!TAB Content Fragments]
 
