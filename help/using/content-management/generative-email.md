@@ -2,15 +2,15 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: E-postgenerering med AI Assistant i Journey Optimizer Content Accelerator
-description: Börja generera e-postinnehåll och resurser med AI-assistenten i Journey Optimizer för innehållsacceleration
+description: Börja generera e-postinnehåll och resurser med AI Assistant Content Accelerator i Journey Optimizer
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
-source-git-commit: a531f4b0a9f3fbc3185a0e84d9c2634e3b589011
+source-git-commit: f316ec79958ac23e0e416f0cafd49c017f2b6d4c
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1458'
 ht-degree: 1%
 
 ---
@@ -22,19 +22,19 @@ ht-degree: 1%
 >Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
 ></br>
 >
->Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI-assistenten i Journey Optimizer för innehållsacceleration. Kontakta din Adobe-representant om du vill veta mer.
+>Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI Assistant Content Accelerator i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
-När du har skapat och anpassat dina e-postmeddelanden kan du utnyttja kraften i AI Assistant i Journey Optimizer for Content Acceleration, som drivs av generativ AI, för att lyfta fram ditt innehåll.
+När du har skapat och anpassat dina e-postmeddelanden kan du utnyttja kraften i AI Assistant Content Accelerator i Journey Optimizer, som drivs av generativ AI, för att lyfta fram ditt innehåll.
 
-Använd AI Assistant i Journey Optimizer for Content Acceleration för att effektivisera era kampanjer genom att skapa kompletta e-postmeddelanden, skräddarsydda textutdrag och skräddarsydda bilder som talar direkt till er målgrupp, vilket ökar engagemanget och interaktionen.
+Använd AI Assistant Content Accelerator i Journey Optimizer för att effektivisera era kampanjer genom att skapa kompletta e-postmeddelanden, skräddarsydda textfragment och anpassade bilder som talar direkt till er målgrupp, vilket ökar engagemanget och interaktionen.
 
-Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey Optimizer för innehållsacceleration.
+Gå igenom flikarna nedan och lär dig hur du använder AI Assistant Content Accelerator i Journey Optimizer.
 
 >[!BEGINTABS]
 
 >[!TAB Fullständig e-postgenerering]
 
-I följande exempel använder vi AI Assistant för innehållsacceleration för att förfina en befintlig e-postmall.
+I följande exempel använder vi AI Assistant Content Accelerator för att förfina en befintlig e-postmall.
 
 1. När du har skapat och konfigurerat din e-postkampanj klickar du på **[!UICONTROL Edit content]**.
 
@@ -44,7 +44,7 @@ I följande exempel använder vi AI Assistant för innehållsacceleration för a
 
    ![](assets/full-email-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Use original content]** för AI-assistenten för innehållsacceleration för att anpassa nytt innehåll baserat på det valda innehållet.
+1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant Content Accelerator för att anpassa nytt innehåll baserat på det valda innehållet.
 
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
@@ -101,7 +101,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 >[!TAB Generering av endast text]
 
-I följande exempel använder vi AI Assistant för innehållsacceleration för att förbättra innehållet i e-postmeddelandet.
+I följande exempel använder vi AI Assistant Content Accelerator för att förbättra innehållet i vår e-post.
 
 1. När du har skapat och konfigurerat din e-postkampanj klickar du på **[!UICONTROL Edit content]**.
 
@@ -111,7 +111,7 @@ I följande exempel använder vi AI Assistant för innehållsacceleration för a
 
    ![](assets/text-genai-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Use original content]** för AI-assistenten för innehållsacceleration för att anpassa nytt innehåll baserat på det valda innehållet.
+1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant Content Accelerator för att anpassa nytt innehåll baserat på det valda innehållet.
 
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
@@ -163,19 +163,19 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 >[!TAB Generering av endast bild]
 
-I exemplet nedan kan du lära dig hur du använder AI Assistant för innehållsacceleration för att optimera och förbättra dina resurser och få en mer användarvänlig upplevelse.
+I exemplet nedan kan du lära dig hur du använder AI Assistant Content Accelerator för att optimera och förbättra dina resurser och få en mer användarvänlig upplevelse.
 
 1. När du har skapat och konfigurerat din e-postkampanj klickar du på **[!UICONTROL Edit content]**.
 
    Mer information om hur du konfigurerar din e-postkampanj finns på [den här sidan](../email/create-email.md).
 
-1. Markera den resurs som du vill ändra med AI-assistenten för innehållsacceleration.
+1. Markera den resurs som du vill ändra med AI Assistant Content Accelerator .
 
 1. Välj **[!UICONTROL AI Assistant]** på den högra menyn.
 
    ![](assets/image-genai-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Reference style]** för AI-assistenten för innehållsacceleration för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
+1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant Content Accelerator för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
@@ -219,6 +219,6 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för innehållsa
 
 ## Instruktionsvideo {#video}
 
-Lär dig hur du använder AI Assistant i Journey Optimizer för innehållsacceleration för att generera fullständig e-post, text eller bilder.
+Lär dig hur du använder AI Assistant Content Accelerator i Journey Optimizer för att generera komplett e-post, text eller bilder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433552)
