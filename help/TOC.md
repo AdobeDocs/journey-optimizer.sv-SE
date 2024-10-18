@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 9e810d5dcc9099411e7a81d18e22e9915c170bc2
+source-git-commit: a64cfe6a474864df02e18fdb772974d73ec58cc5
 workflow-type: tm+mt
-source-wordcount: '2136'
+source-wordcount: '2135'
 ht-degree: 24%
 
 ---
@@ -384,8 +384,8 @@ ht-degree: 24%
       + [Campaign Live-rapport](using/reports/campaign-live-report.md)
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
-   + Customer Journey Analytics rapporterar {#channel-report}
-      + [Kom igång med Customer Journey Analytics-rapporter](using/reports/report-gs-cja.md)
+   + Rapporteringsupplevelsen {#channel-report} har uppdaterats
+      + [Kom igång med den uppdaterade rapportupplevelsen](using/reports/report-gs-cja.md)
       + [Konfigurera Customer Journey Analytics manuellt](using/reports/cja-ajo.md)
       + [Hantera dina rapporter](using/reports/report-cja-manage.md)
       + [Krav för rapportering och experimenterande](using/reports/reporting-configuration.md)
@@ -413,7 +413,7 @@ ht-degree: 24%
       + [Översiktsrapport](using/reports/channel-report-cja.md)
       + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
       + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
-   + Tidigare rapportinstrumentpanel {#reports}
+   + Tidigare rapportupplevelse {#reports}
       + Global rapport {#global-report}
          + [Kom igång med global rapport](using/reports/global-report.md)
          + [Lista över komponenter](using/reports/global-report-components.md)

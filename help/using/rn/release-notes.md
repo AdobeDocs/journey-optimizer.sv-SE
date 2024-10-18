@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: c9505b482d2dedc10c4025574cccb662fe149510
+source-git-commit: a64cfe6a474864df02e18fdb772974d73ec58cc5
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1602'
 ht-degree: 8%
 
 ---
@@ -33,7 +33,7 @@ Kommande **versionsdatum**: 28-30 oktober 2024
 <table>
 <thead>
 <tr>
-<th><strong>Rapporter från Customer Journey Analytics (allmän tillgänglighet)</strong><br/></th>
+<th><strong>Uppdaterad rapportupplevelse (allmän tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -43,7 +43,7 @@ Kommande **versionsdatum**: 28-30 oktober 2024
 <p>Med allmän tillgänglighet introduceras fyra nya funktioner: möjlighet att skapa enkla mätvärden, skapa och publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter som automatiskt ska skickas till viktiga mottagare.</p>
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
-<p>Tillgänglighetsdatum: 1 oktober 2024</p>
+<p>Tillgänglighetsdatum: 16 oktober 2024</p>
 </tr>
 </tbody>
 </table>
