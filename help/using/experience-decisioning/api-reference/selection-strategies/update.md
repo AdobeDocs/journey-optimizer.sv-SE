@@ -5,19 +5,19 @@ feature: Decision Management, API, Collections
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
+exl-id: 060f8c5f-4750-44dc-83aa-630afbc180eb
+source-git-commit: b057d198d3c5b12121ee50d7a97ff4b33b8209b4
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 1%
 
 ---
 
-
 # Uppdatera en urvalsstrategi {#update-selection-strategy}
 
 Du kan ändra eller uppdatera en urvalsstrategi genom att göra en PATCH-begäran till Offer Library API.
 
-Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](http://jsonpatch.com/).
+Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](https://jsonpatch.com/).
 
 **API-format**
 

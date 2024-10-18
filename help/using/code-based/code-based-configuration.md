@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: c3300b240bd0dc0563ed6d4e6de40bd9fa36a92e
+source-git-commit: b057d198d3c5b12121ee50d7a97ff4b33b8209b4
 workflow-type: tm+mt
 source-wordcount: '1504'
 ht-degree: 1%
@@ -130,7 +130,7 @@ Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsins
 
 1. Ange **[!UICONTROL Location or path inside the app]**. I det här fältet anges det exakta målet i programmet som du vill att användarna ska ha tillgång till. Det kan vara ett visst avsnitt eller en viss sida i programmets navigeringsstruktur, till exempel&quot;hero-banner&quot; eller&quot;product-rail&quot;.
 
-   ![](assets/code_config_3.png){width="500"}
+   ![](assets/code_config_3.png)
 
 1. Fyll i fältet **[!UICONTROL Preview URL]** om du vill aktivera förhandsvisningar på enheten. Den här URL:en informerar förhandsgranskningstjänsten om den specifika URL:en som ska användas när förhandsgranskning aktiveras på enheten. [Läs mer](../code-based/create-code-based.md#preview-on-device)
 

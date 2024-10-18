@@ -5,7 +5,7 @@ feature: Decision Management
 role: User
 level: Intermediate
 exl-id: 810c05b3-2bae-4368-bf12-3ea8c2f31c01
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: b057d198d3c5b12121ee50d7a97ff4b33b8209b4
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Innan du konfigurerar en jobbförfrågan bör du kontrollera att du har skapat:
 
 * **En datauppsättning** i Adobe Experience Platform. Den här datauppsättningen används för att lagra beslutsresultatet med ODE-schema för beslutshändelser. Läs mer i [dokumentationen för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **En målgrupp** i Adobe Experience Platform. Publiken bör utvärderas och sedan uppdateras. Lär dig hur du uppdaterar utvärdering av målgruppsmedlemskap i [dokumentationen för segmenteringstjänsten](http://www.adobe.com/go/segmentation-overview-en)
+* **En målgrupp** i Adobe Experience Platform. Publiken bör utvärderas och sedan uppdateras. Lär dig hur du uppdaterar utvärdering av målgruppsmedlemskap i [dokumentationen för segmenteringstjänsten](https://www.adobe.com/go/segmentation-overview-en)
 
   >[!NOTE]
   >
