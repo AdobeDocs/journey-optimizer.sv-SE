@@ -6,9 +6,9 @@ topic: Content Management
 role: Developer
 level: Experienced
 exl-id: e5ae8b4e-7cd2-4a1d-b2c0-8dafd5c4cdfd
-source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
+source-git-commit: c3300b240bd0dc0563ed6d4e6de40bd9fa36a92e
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '799'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Kodbaserad upplevelse stöder alla typer av kundimplementeringar. På den här s
 
 Om du har en implementering på klientsidan kan du använda någon av AEP-klientens SDK: AEP Web SDK eller AEP Mobile SDK.
 
-* Stegen [ nedan](#client-side-how) beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsekampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
+* Stegen [ nedan](#client-side-how) beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsegångarna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
 
 * Stegen för att implementera kodbaserad kanal med **Mobile SDK** beskrivs i [den här självstudiekursen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
@@ -54,7 +54,7 @@ Om du har en implementering på klientsidan kan du använda någon av AEP-klient
 
 1. Kodbaserade upplevelseobjekt ska tillämpas manuellt av implementeringskoden (med metoden [`applyPersonalization`](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/ajo/personalization-client-side/public/script.js){target="_blank"}) för att uppdatera DOM baserat på beslutet.
 
-1. För kodbaserade upplevelsekampanjer måste visningshändelser skickas manuellt för att ange när innehållet har visats. Detta görs via kommandot `sendEvent`.
+1. För kodbaserade upplevelseresor och kampanjer måste visningshändelser skickas manuellt för att ange när innehållet har visats. Detta görs via kommandot `sendEvent`.
 
    ```javascript
    function sendDisplayEvent(decision) {
@@ -80,7 +80,7 @@ Om du har en implementering på klientsidan kan du använda någon av AEP-klient
    }
    ```
 
-1. För kodbaserade upplevelsekampanjer måste interaktionshändelser skickas manuellt för att ange när en användare har interagerat med innehållet. Detta görs via kommandot `sendEvent`.
+1. För kodbaserade upplevelseresor och kampanjer måste interaktionshändelser skickas manuellt för att ange när en användare har interagerat med innehållet. Detta görs via kommandot `sendEvent`.
 
    ```javascript
    function sendInteractEvent(label, proposition) {
@@ -140,7 +140,7 @@ Begäranden till Adobe Experience Platform API krävs för att få förslag och 
 
 Om du har en implementering på serversidan kan du använda ett API för AEP Edge Network.
 
-Stegen nedan beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsekampanjerna i en exempelimplementering av Edge Network API för en webbsida och visa det personaliserade innehållet.
+Stegen nedan beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelseflödena och kampanjerna i en exempelimplementering av Edge Network-API för en webbsida och visa det personaliserade innehållet.
 
 ### Så fungerar det
 
@@ -226,8 +226,9 @@ Stegen nedan beskriver processen att hämta det innehåll som publiceras på kan
    ).then((res) => res.json());
    ```
 
-1. JSON-upplevelsen från den kodbaserade upplevelsekampanjen läses från svaret och används när svaret från HTML tas fram.
-1. För kodbaserade upplevelsekampanjer måste visningshändelser skickas manuellt i implementeringen för att ange när kampanjinnehållet har visats. I det här exemplet skickas meddelandet på serversidan under livscykeln för begäran.
+1. JSON-upplevelsen från de kodbaserade upplevelseresorna och kampanjen läses från svaret och används när svaret från HTML tas fram.
+
+1. För kodbaserade upplevelseresor och kampanjer måste displayhändelser skickas manuellt i implementeringen för att ange när resan eller kampanjinnehållet har visats. I det här exemplet skickas meddelandet på serversidan under livscykeln för begäran.
 
    ```javascript
    function sendDisplayEvent(aepEdgeClient, req, propositions, cookieEntries) {

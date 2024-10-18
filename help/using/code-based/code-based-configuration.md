@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: c53fc226be1b6ab858c5cd75bcae363769fefa74
+source-git-commit: c3300b240bd0dc0563ed6d4e6de40bd9fa36a92e
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1504'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,8 @@ En kodbaserad upplevelsekonfiguration måste referera till ytan, som i princip �
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_location"
->title="Ange den specifika platsen"
->abstract="I det här fältet anges det exakta målet på sidan eller i programmet som du vill att användarna ska ha tillgång till. Detta kan vara ett visst avsnitt eller en viss sida i navigeringsstrukturen."
+>title="Ange den specifika platsen på sidan eller i appen"
+>abstract="I det här fältet anges det exakta målet på en sida eller i det program som du vill att användarna ska ha tillgång till. Det kan vara ett visst avsnitt på en webbsida, eller en sida som är djup i programmets navigeringsstruktur."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_default_mobile_url"
@@ -108,7 +108,7 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
 
      ![](assets/code_config_matching_rules_preview.png)
 
-1. Fältet **[!UICONTROL Location on page]** anger det exakta målet på webbplatsen som du vill att användarna ska få åtkomst till. Detta kan vara ett visst avsnitt eller en viss sida i webbplatsens navigeringsstruktur.
+1. Fältet **[!UICONTROL Location on page]** anger det exakta målet på sidan som du vill att användarna ska få åtkomst till. Det kan vara ett visst avsnitt på en sida i webbplatsens navigeringsstruktur, till exempel&quot;hjälte-banner&quot; eller&quot;product-rail&quot;.
 
    ![](assets/code_config_location_on_page.png)
 
@@ -128,7 +128,7 @@ Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsins
 
 1. Ange din **[!UICONTROL App id]**. Detta gör att programmet kan identifieras och konfigureras korrekt i dess operativmiljö och säkerställer smidig integrering och funktionalitet.
 
-1. Ange **[!UICONTROL Location or path inside the app]**. I det här fältet anges det exakta målet i programmet som du vill att användarna ska ha tillgång till. Detta kan vara ett visst avsnitt eller en viss sida i programmets navigeringsstruktur.
+1. Ange **[!UICONTROL Location or path inside the app]**. I det här fältet anges det exakta målet i programmet som du vill att användarna ska ha tillgång till. Det kan vara ett visst avsnitt eller en viss sida i programmets navigeringsstruktur, till exempel&quot;hero-banner&quot; eller&quot;product-rail&quot;.
 
    ![](assets/code_config_3.png){width="500"}
 
