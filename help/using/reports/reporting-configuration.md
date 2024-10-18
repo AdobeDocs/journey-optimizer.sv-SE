@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: konfiguration, experiment, rapportering, optimering
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-source-git-commit: d4dce7b31d898d86c330048e6d0a1587e87a617c
+source-git-commit: f7a0feb38b902b14c402f631cb5c77c1e329886e
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '565'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,10 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 -->
 
 ## Lägg till datauppsättningar {#add-datasets}
+
+>[!NOTE]
+>
+>Alla nyskapade datauppsättningar är bara tillgängliga i Customer Journey Analytics-rapporter.
 
 1. Välj **[!UICONTROL Configurations]** på menyn **[!UICONTROL Administration]**. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Reporting]**.
 
