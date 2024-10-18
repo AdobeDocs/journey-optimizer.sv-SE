@@ -8,7 +8,7 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: c54ad4cddeb7115f9a069102c67c41f0850a11ed
+source-git-commit: 5714e0aab20bce91ecf588c6b170a975be1f7d89
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 3%
@@ -176,7 +176,7 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <table>
 <thead>
 <tr>
-<th><strong>Uppdaterad rapportupplevelse (allmän tillgänglighet)</strong><br/></th>
+<th><strong>Uppdaterad rapportupplevelse (allmän tillgänglighet)</strong><br/>Tillgänglig sedan 16 oktober 2024<br/></th>
 </tr>
 </thead>
 <tbody>
@@ -186,7 +186,6 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <p>Med allmän tillgänglighet introduceras fyra nya funktioner: möjlighet att skapa enkla mätvärden, skapa och publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter som automatiskt ska skickas till viktiga mottagare.</p>
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
-<p>Tillgänglighetsdatum: 16 oktober 2024</p>
 </tr>
 </tbody>
 </table>
