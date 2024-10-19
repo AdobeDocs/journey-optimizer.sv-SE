@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5714e0aab20bce91ecf588c6b170a975be1f7d89
+source-git-commit: f16ce53f61d64d23f530d007e0124a84e2cc3405
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2140'
 ht-degree: 24%
 
 ---
@@ -618,6 +618,7 @@ ht-degree: 24%
 + Datahantering {#data-management}
    + [Kom igång med datahantering](using/data/gs-data.md)
    + [Arbeta med scheman](using/data/get-started-schemas.md)
+   + [segmenteringsuppdateringar i realtid och direktuppspelning](using/data/datasets-ttl.md)
    + Journey Optimizer-datauppsättningar {#datasets}
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)

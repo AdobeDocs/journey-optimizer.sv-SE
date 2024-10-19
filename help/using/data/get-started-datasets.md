@@ -8,9 +8,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 72bda999c9e866398375422d8419516e5fea97b5
+source-git-commit: f16ce53f61d64d23f530d007e0124a84e2cc3405
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,7 @@ Som standard visas bara de datauppsättningar som du har kapslat in i. Om du vil
 
 >[!NOTE]
 >
->Från och med 1 november 2024 kommer ett TTL-skyddsutkast att tillämpas på Journey Optimizer systemgenererade datauppsättningar enligt följande:
->
->* 90 dagar för data i profilarkivet
->* 13 månader för data i sjön
->
->Dessutom kommer vid den tidpunkten direktuppspelningssegmentering inte längre att stödja användning av skicka- och öppna-händelser från spårnings- och feedbackdatauppsättningar.
+>Från och med 1 november 2024 kommer ett TTL-skyddsprotokoll att tillämpas på Journey Optimizer systemgenererade datauppsättningar. Dessutom kommer vid den tidpunkten direktuppspelningssegmentering inte längre att stödja användning av skicka- och öppna-händelser från spårnings- och feedbackdatauppsättningar. [Läs mer](datasets-ttl.md)
 
 Markera namnet på en datauppsättning för att komma åt aktivitetsskärmen för datauppsättningen och se information om den datauppsättning du valde. Fliken Aktivitet innehåller ett diagram som visar hur många meddelanden som har förbrukats samt en lista över lyckade och misslyckade batchar.
 
