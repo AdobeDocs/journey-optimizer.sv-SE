@@ -1,21 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Om det nya TTL-skyddsräcket (Time-to-live)
-description: Ny TTL-garanti (Time-to-live) i Adobe Journey Optimizer
+title: Om TTL (Time-to-live) och segmenteringsändringar för direktuppspelning
+description: Segmenteringsförändringar i realtid och direktuppspelning i Adobe Journey Optimizer
 feature: Data Model, Datasets, Data Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
-source-git-commit: f16ce53f61d64d23f530d007e0124a84e2cc3405
+source-git-commit: 1be920fb8b3ea825e38084f459523ccde0ad979b
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 
-# TTL- och direktuppspelningssegmenteringsuppdateringar {#ttl-guardrail}
+# Segmenteringsförändringar i realtid och direktuppspelning {#ttl-guardrail}
 
 ## TTL-skydd (Time-to-live) {#ttl}
 
@@ -49,7 +49,7 @@ Data i CJA hålls synkroniserade med Experience Platform. En borttagning av data
 
 ## Direktuppspelad segmenteringsuppdatering {#segmentation-update}
 
-Dessutom kommer direktuppspelningssegmentering den 1 november inte längre att stödja användning av skicka- och feedback-händelser från spårnings- och feedbackdatauppsättningar. Information om varför den här proceduren har inaktiverats tidigare finns [här](../audience/about-audiences.md#streaming-segmentation-events-guardrails).
+Dessutom kommer direktuppspelningssegmentering den 1 november inte längre att stödja användning av skicka- och feedback-händelser från spårnings- och feedbackdatauppsättningar.  Information om varför den här proceduren har inaktiverats tidigare finns [här](../audience/about-audiences.md#streaming-segmentation-events-guardrails).
 
 
 **Vanliga frågor**
