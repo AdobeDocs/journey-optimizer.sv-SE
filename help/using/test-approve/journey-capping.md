@@ -6,9 +6,9 @@ level: Beginner
 badge: label="Begränsad tillgänglighet"
 hide: true
 hidefromtoc: true
-source-git-commit: e1121d998711ea4751da5293efdd7c1578ee44a2
+source-git-commit: ea947514012c342fd28155e6610b2eb13547b465
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,10 @@ Vad du hittar i den här handboken:
 
 Färttappning hjälper dig att begränsa antalet resor som en profil kan registreras på, vilket förhindrar att kommunikationen överbelastas. I Journey Optimizer kan du ange två typer av regler för begränsning:
 
-* **Ankomstbegränsning** begränsar antalet poster i en resa under en viss period för en profil.
-* **Samtidighetsbegränsning** begränsar hur många resor en profil kan registreras samtidigt. Den här typen av begränsning utnyttjar resans prioritetspoäng till godtyckliga poster om profiler är berättigade till flera resor samtidigt under en viss period.
+* **Ankomstbegränsning** begränsar antalet reseposter under en viss period för en profil.
+* **Samtidighetsbegränsning** begränsar hur många resor en profil kan registreras samtidigt.
+
+Båda typerna av resefackning använder prioritetspoäng till godtyckliga poster.
 
 ## Skapa en regel för spärrning av resan {#create-rule}
 
@@ -67,21 +69,28 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
      +++Konfigurera en regel för bockning av resepost
 
-      1. I fältet **[!UICONTROL Capping]** anger du det maximala antalet gånger som en profil kan gå in på resan.
-      1. I fältet **[!UICONTROL Duration]** definierar du tidsperioden som ska beaktas.
+      1. I fältet **[!UICONTROL Capping]** anger du det maximala antalet resor som en profil kan ange.
+      1. I fältet **[!UICONTROL Duration]** definierar du tidsperioden som ska beaktas. Observera att längden baseras på UTC-tidszonen. Till exempel återställs daglig ändpunkt vid midnatt UTC.
 
-     I det här exemplet vill vi begränsa profiler från att resa in mer än 5 gånger per månad.
+     I det här exemplet vill vi begränsa profiler från att ange fler än fem resor per månad.
 
      ![](assets/journey-capping-entry-example.png)
+
+     >[!NOTE]
+     >
+     >Systemet kommer att beakta prioriteringen av kommande schemalagda resor som har samma regel tillämpad på det.
+     >
+     >I det här exemplet, om marknadsföraren redan har gått in i fyra resor och det finns en annan schemalagd resa den här månaden med högre prioritet, kommer kunderna inte att kunna delta i den resa som har lägre prioritet.
 
 +++
 
      +++Konfigurera en regel för samtidighetsbegränsning för resa
 
       1. I fältet **[!UICONTROL Capping]** anger du det maximala antalet resor som en profil kan registreras i samtidigt.
+
       1. Använd fältet **[!UICONTROL Prioritization look ahead]** för att dela upp reseposter baserat på prioritetspoäng under en vald period (t.ex. 1 dag, 7 dagar, 30 dagar). Detta gör det lättare att prioritera inträde på större kundresor om en profil är berättigad till flera kundresor.
 
-     I det här exemplet vill vi begränsa profiler från att resa om de redan är inskrivna på en annan resa. Om en annan resa inom de kommande 7 dagarna har ett högre prioritetspoäng kommer profilen att gå in på den här resan.
+     I det här exemplet vill vi hindra profiler från att komma in på resan om de redan är inskrivna i en annan resa som innehåller samma regeluppsättning. Om en annan resa inom de kommande 7 dagarna har ett högre prioritetspoäng kommer profilen inte att gå in på den här resan.
 
      ![](assets/journey-capping-concurrency-example.png){width="50%" zommable="yes"}
 
@@ -98,6 +107,11 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 ## Tillämpa regler för begränsning av resor {#apply-capping}
 
 Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till resan och öppnar dess egenskaper. Välj den relevanta regeluppsättningen i listrutan **[!UICONTROL Capping rules]**.
+
 När resan har aktiverats gäller de regler som definieras i regeluppsättningen.
 
 ![](assets/journey-capping-apply.png)
+
+>[!IMPORTANT]
+>
+>Om en resa aktiveras omedelbart kan det ta upp till 15 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 15 minuter framåt för att förhindra den här möjligheten.
