@@ -6,7 +6,7 @@ level: Beginner
 badge: label="Begränsad tillgänglighet"
 hide: true
 hidefromtoc: true
-source-git-commit: d53d4ee40771e3f74ccd801cf22598b69661a403
+source-git-commit: 9e7c70c45fc49946c18617c6a5b81383b73da248
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
 1. Aktivera hela regeluppsättningen genom att klicka på ellipsknappen bredvid knappen Lägg till regel i skärmens övre högra hörn.
 
-   ![](assets/journey-capping-activate-rule-set.png){width="50%" zommable="yes"}
+   ![](assets/journey-capping-activate-rule-set.png)
 
 ## Tillämpa regler för begränsning av resor {#apply-capping}
 
