@@ -9,9 +9,9 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 1e46321de543196277613889c438dc6756e45652
+source-git-commit: b09a66743770eff9da7f183a1bf8de0d241db3d0
 workflow-type: tm+mt
-source-wordcount: '2265'
+source-wordcount: '2278'
 ht-degree: 0%
 
 ---
@@ -45,11 +45,12 @@ Målgrupper kan genereras på olika sätt:
 
 ## Målgrupper i [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
-I kampanjer och resor kan ni välja alla målgrupper som genereras med segmentdefinitioner, anpassade arbetsflöden för uppladdning och disposition.
+I kampanjer och resor kan ni välja alla målgrupper som genereras med segmentdefinitioner, anpassad uppladdning, arbetsflöden för disposition eller Federated Audience Composition.
 
 >[!AVAILABILITY]
 >
->Användningen av målgrupper och attribut från målgruppssammansättning är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
+>
+Användningen av målgrupper och attribut från målgruppssammansättning är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
 
 Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
@@ -63,11 +64,11 @@ Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
   >[!NOTE]
   >
-  >På grund av batchbeskaffenheten hos målgrupper som skapats med arbetsflöden för disposition och anpassad överföring kan du inte rikta in dig på dessa målgrupper i en&quot;målgruppskompetens&quot;-aktivitet. Endast målgrupper som skapats med segmentdefinitioner kan utnyttjas i den här aktiviteten.
+  >På grund av gruppbeskaffenheten hos målgrupper som skapats med kompositionsarbetsflöden, anpassad uppladdning eller Federated Audience Composition, kan du inte rikta in dessa målgrupper i en&quot;Audience Qualification&quot;-aktivitet. Endast målgrupper som skapats med segmentdefinitioner kan utnyttjas i den här aktiviteten.
 
 ## Använd attribut för målgruppsberikning {#enrichment}
 
-När ni riktar in er på en målgrupp som skapats med kompositionsarbetsflöden eller en anpassad (CSV-fil) målgrupp kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
+När ni riktar in er på en målgrupp som skapats med kompositionsarbetsflöden, en anpassad (CSV-fil) målgrupp eller Federated Audience Composition, kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
 
 >[!NOTE]
 >
@@ -105,21 +106,21 @@ Detaljerad information om datakällor finns i följande avsnitt:
 >
 +++
 
-## Anpassad uppladdning (CSV-fil) {#csv}
+## Anpassad uppladdning och sammanställning av externa målgrupper {#csv}
 
-I det här avsnittet finns viktig information som du bör tänka på när du arbetar med målgrupper för anpassad överföring (CSV-filer):
+I det här avsnittet finns viktig information som du bör tänka på när du arbetar med en anpassad överföring (CSV-filer) och en federerad målgrupp för publikdisposition:
 
-* **Stöd för förhandsgranskning och korrektur för CSV-målgrupper:** För närvarande stöds inte förhandsgranskning och korrektur för målgrupper som skapats med CSV-överföring. Tänk på detta när ni planerar era kampanjer.
+* **Stöd för förhandsgranskning och korrektur:** För närvarande stöds inte förhandsgranskning och korrektur för målgrupper som skapats med CSV-överföring eller sammanställning av federerade målgrupper. Tänk på detta när ni planerar era kampanjer.
 
-* **Snabb aktivering och fördröjning av identitetssammanfogning:** Adobe Experience Platform-arkitekturen fördröjer identitetssammanfogningen för att göra anpassade uppladdningsmålgrupper omedelbart tillgängliga för aktivering i Journey Optimizer, med följande effekter:
+* **Snabb aktivering och fördröjning av identitetssammanfogning:** Adobe Experience Platform-arkitekturen fördröjer identitetssammanfogningen för att göra Custom-överföring och Federated Audience Composition-målgrupper omedelbart tillgängliga för aktivering i Journey Optimizer, med följande effekter:
 
    * Publiken är redo att användas i Journey Optimizer direkt efter att intaget har slutförts. Detta är vanligtvis inom en timme, men kan variera.
    * Antalet aktiverade poster kan skilja sig från antalet profiler efter identitetssammanfogning.
-   * Alla poster i CSV-filen aktiveras, inklusive eventuella dubbletter. Under nästa UPS-profilexport kommer dessa poster att genomgå identitetssammanfogning.
+   * Alla poster i publiken aktiveras, inklusive eventuella dubbletter. Under nästa UPS-profilexport kommer dessa poster att genomgå identitetssammanfogning.
 
-* **Målgruppsanpassade nya profiler från CSV-överföringar:** Om det inte går att hitta någon matchning mellan en CSV-post och en UPS-profil skapas en ny tom profil. Den här profilen är kopplad till anrikningsattributen som lagras i datasjön. Eftersom den nya profilen är tom är målfält som vanligtvis används i Journey Optimizer (t.ex. personalEmail.address, mobilePhone.number) tomma och kan därför inte användas som mål.
+* **Nya profiler:** Om det inte går att hitta någon matchning mellan en post och en UPS-profil skapas en ny tom profil. Den här profilen är kopplad till anrikningsattributen som lagras i datasjön. Eftersom den nya profilen är tom är målfält som vanligtvis används i Journey Optimizer (t.ex. personalEmail.address, mobilePhone.number) tomma och kan därför inte användas som mål.
 
-  För att lösa detta kan du ange &quot;körningsfält&quot; (eller &quot;körningsadress&quot; beroende på kanal) i kanalkonfigurationen som &#39;identityMap&#39;. Detta säkerställer att det attribut som väljs som identitet under CSV-överföringen är det som används för målgruppsanpassning i Journey Optimizer.
+  För att lösa detta kan du ange &quot;körningsfält&quot; (eller &quot;körningsadress&quot; beroende på kanal) i kanalkonfigurationen som &#39;identityMap&#39;. På så sätt säkerställs att det attribut som väljs som identitet när målgrupper skapas blir det som används för målgruppsanpassning i Journey Optimizer.
 
 ## Metoder för utvärdering av målgrupper {#evaluation-method-in-journey-optimizer}
 
