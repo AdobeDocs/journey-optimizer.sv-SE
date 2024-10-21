@@ -7,9 +7,9 @@ feature: Data Model, Datasets, Data Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
-source-git-commit: 1be920fb8b3ea825e38084f459523ccde0ad979b
+source-git-commit: a88cb8fbf324bc9c03bc7570b6637e8c95f43a20
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,7 @@ Data i CJA hålls synkroniserade med Experience Platform. En borttagning av data
 
 ## Direktuppspelad segmenteringsuppdatering {#segmentation-update}
 
-Dessutom kommer direktuppspelningssegmentering den 1 november inte längre att stödja användning av skicka- och feedback-händelser från spårnings- och feedbackdatauppsättningar.  Information om varför den här proceduren har inaktiverats tidigare finns [här](../audience/about-audiences.md#streaming-segmentation-events-guardrails).
-
+Dessutom kommer direktuppspelningssegmentering den 1 november inte längre att stödja användning av skicka- och feedback-händelser från spårnings- och feedbackdatauppsättningar.  Information om varför den här proceduren har inaktiverats tidigare finns [här](../audience/about-audiences.md#streaming-segmentation-events-guardrails). Den här ändringen gäller för alla kundsandlådor och organisationer vid den tidpunkten.
 
 **Vanliga frågor**
 
