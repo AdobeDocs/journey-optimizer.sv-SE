@@ -9,7 +9,7 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: b09a66743770eff9da7f183a1bf8de0d241db3d0
+source-git-commit: 0da5f10953ca3b5e14ddd2dd41eac14d5edca767
 workflow-type: tm+mt
 source-wordcount: '2278'
 ht-degree: 0%
@@ -49,8 +49,7 @@ I kampanjer och resor kan ni välja alla målgrupper som genereras med segmentde
 
 >[!AVAILABILITY]
 >
->
-Användningen av målgrupper och attribut från målgruppssammansättning är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
+>Användningen av målgrupper och attribut från målgruppssammansättning är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten. [Lär dig använda attribut för målgruppsberikning i Journey Optimizer](../audience/about-audiences.md#enrichment)
 
 Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
