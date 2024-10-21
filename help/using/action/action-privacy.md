@@ -8,9 +8,9 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
-source-git-commit: 6b721c04db34fecae2274604113061e4e97db149
+source-git-commit: 7f54200facc8845d5c39bb5d16751ed49579ea8a
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1284'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Kom igång med policyer för datastyrning {#gs}
 
-Med sitt [ramverk för dataanvändningsetiketter och tvång(DULE)-styrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html){_blank} kan du med Adobe Experience Platform hantera och tillämpa datastyrningsprinciper i alla kanaler genom att **etikettera dina fält** och skapa **marknadsföringsåtgärder** för varje kanal.
+Med sitt [ramverk för dataanvändningsetiketter och tvång(DULE)-styrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html){target="_blank"} kan du med Adobe Experience Platform hantera och tillämpa datastyrningsprinciper i alla kanaler genom att **etikettera dina fält** och skapa **marknadsföringsåtgärder** för varje kanal.
 
 När etiketter och marknadsföringsåtgärder har definierats kan du skapa **datastyrningsprinciper** som länkar dessa två element. Du kan till exempel skapa en profil som associerar en ePHI-etikett med en marknadsföringsåtgärd som riktar sig mot e-postmarknadsföring, så att fält som är märkta som ePHI inte används för att anpassa e-postmeddelanden. [Lär dig hur du skapar datastyrningsprinciper](#governance-policies)
 
