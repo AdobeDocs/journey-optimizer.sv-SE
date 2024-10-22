@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+source-git-commit: 3ab4e6a7ff6c7e0ec97ee2021eb8b38e321b138c
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1657'
 ht-degree: 8%
 
 ---
@@ -42,6 +42,7 @@ Kommande **versionsdatum**: 28-30 oktober 2024
 <p>Med godkännandepolicyer kan ni nu skapa en godkännandeprocess i Journey Optimizer som gör det möjligt för marknadsföringsteamen att se till att kampanjer och resor granskas och signeras av lämpliga intressenter innan de publiceras.</p>
 <p>Mer information finns i den <a href="../test-approve/gs-approval.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/approval.gif"/>
+<p>Tillgänglighetsdatum: 21 oktober 2024</p>
 </td>
 </tr>
 </tbody>
