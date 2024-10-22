@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 9e9c235a-b78c-4669-af82-822b6f1e6fca
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '373'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ Detaljerad information om hur du väljer testprofiler och förhandsgranskar inne
 
 >[!IMPORTANT]
 >
->Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
+> Om din kampanj omfattas av en godkännandeprincip måste du begära godkännande för att kunna skicka meddelanden i appen. [Läs mer](../test-approve/gs-approval.md)
 
 När ditt meddelande i appen har skapats och dess innehåll har definierats och anpassats kan du granska och aktivera det.
 

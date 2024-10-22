@@ -10,9 +10,9 @@ level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: dd4173698d7034173b7ae9f44afec397d62a6f78
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
@@ -228,7 +228,7 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 
    >[!IMPORTANT]
    >
-   >Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
+   > Om din kampanj omfattas av en policy för godkännande måste du begära godkännande för att kunna skicka din flerspråkiga kampanj. [Läs mer](../test-approve/gs-approval.md)
 
 Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta effekten av er flerspråkiga resa eller kampanj i rapporter.
 

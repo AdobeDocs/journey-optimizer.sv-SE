@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1125'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ Detaljerad information om hur du väljer testprofiler och förhandsgranskar inne
 
 >[!IMPORTANT]
 >
->Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
+> Om er kampanj omfattas av en policy för godkännande måste ni begära godkännande för att kunna aktivera era webbupplevelser. [Läs mer](../test-approve/gs-approval.md)
 
 När du har definierat din webbupplevelse och du har redigerat ditt innehåll efter behov med [webbdesignern](edit-web-content.md#work-with-web-designer) kan du aktivera din resa eller kampanj så att dina ändringar blir synliga för din målgrupp.
 

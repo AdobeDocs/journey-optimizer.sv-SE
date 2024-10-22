@@ -4,20 +4,15 @@ description: Lär dig hur du skapar en godkännandeprocess för era resor och ka
 role: User
 level: Beginner
 feature: Approval
-badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: a3a0820565bbd8b2d8d0ce37e5b3e5ad37b064cf
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
 
 # Kom igång med godkännande av resor och kampanjer {#send-proofs}
-
->[!AVAILABILITY]
->
-> Godkännandepolicyer är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 ## Kom igång med godkännandepolicyer {#gs}
 

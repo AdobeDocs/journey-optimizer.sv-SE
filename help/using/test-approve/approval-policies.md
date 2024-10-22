@@ -4,10 +4,9 @@ description: Lär dig hur du skapar och hanterar godkännandepolicyer.
 role: User
 level: Beginner
 feature: Approval
-badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: cd46b3346e284958e6f3f9fa641b548f68672000
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '385'
 ht-degree: 1%
 
 ---
@@ -15,9 +14,9 @@ ht-degree: 1%
 
 # Skapa och hantera godkännandepolicyer {#approval-policies}
 
->[!AVAILABILITY]
+>[!NOTE]
 >
-> Godkännandepolicyer är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+>Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 
 Med godkännandeprinciper kan administratörer upprätta en valideringsprocess för resor och kampanjer. Det här systemet anger specifika villkor som avgör om en resa eller kampanj kräver godkännande. Dessa profiler kan variera i komplexitet, från att kräva att alla kampanjer granskas av en viss användare eller team, till att fastställa kriterier baserade på vem som skapade kampanjen.
 

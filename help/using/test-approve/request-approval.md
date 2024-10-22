@@ -4,20 +4,15 @@ description: Lär dig hur du begär godkännande innan du publicerar dina resor 
 role: User
 level: Beginner
 feature: Approval
-badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 94114fac56b68aa0940ae9843f672823d64c19df
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 
 # Begär godkännande {#request-approval}
-
->[!AVAILABILITY]
->
-> Godkännandepolicyer är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 Om arbetsflödeskapaciteten för godkännande har aktiverats för din organisation kommer du att märka att knapparna **[!UICONTROL Activate]** och **[!UICONTROL Publish]** inte längre är tillgängliga i arbetsflödena för att skapa kampanj och skapa resande. Dessa knappar har ersatts av knappen **[!UICONTROL Request Approval]**.
 

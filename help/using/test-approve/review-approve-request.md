@@ -4,20 +4,15 @@ description: Lär dig hur du granskar och godkänner en förfrågan om rese- och
 role: User
 level: Beginner
 feature: Approval
-badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 94114fac56b68aa0940ae9843f672823d64c19df
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
 
 
 # Granska och godkänn en begäran {#approve-requests}
-
->[!AVAILABILITY]
->
-> Godkännandepolicyer är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 Om en policy för godkännande gäller för en resa eller kampanj måste den skickas in för godkännande för att kunna publiceras. För att göra detta skickar den som skapat resan/kampanjen en begäran till den eller de godkännare som definierats i godkännandeprincipen och resan/kampanjen får statusen **[!UICONTROL In review]**.
 
@@ -51,3 +46,7 @@ Klicka på knappen **[!UICONTROL Request changes]** om du vill göra det. I ruto
 ![](assets/request-changes.png)
 
 När begäran har skickats meddelas den som skapat resan/kampanjen via ett e-postmeddelande och en avisering från Journey Optimizer. Kampanjen återgår till statusen Utkast. När ändringarna har integrerats kan den som skapat resan/kampanjen skicka in den på nytt för godkännande.
+
+>[!NOTE]
+>
+> Om du inte får något meddelande om godkännande via ett e-postmeddelande måste du uppdatera dina prenumerationsinställningar i dina Experience Cloud-profiler. [Läs mer](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences)

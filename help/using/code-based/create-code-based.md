@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -219,7 +219,7 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
 
 >[!IMPORTANT]
 >
->Från och med versionen från september kan ni med en ny kampanjupplevelse och upplevelse av aktivering av resor hantera hela godkännandeprocessen och säkerställa att kampanjer och resor granskas noggrant och godkänns av lämpliga intressenter innan de publiceras. Den här funktionen är tillgänglig med begränsad tillgänglighet. [Läs mer](../test-approve/gs-approval.md)
+> Om kampanjen omfattas av en policy för godkännande måste ni begära godkännande för att kunna aktivera era kodbaserade upplevelser. [Läs mer](../test-approve/gs-approval.md)
 
 När du har definierat din kodbaserade upplevelse och redigerat ditt innehåll efter behov med den [kodbaserade redigeraren](#edit-code) kan du aktivera din resa eller kampanj för att göra ändringarna synliga för din målgrupp.
 

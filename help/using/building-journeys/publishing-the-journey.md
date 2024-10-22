@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: d741a34a0418dc88db730d0b953cb5c7db8dc103
+source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,13 @@ Om du behöver göra ändringar i en publicerad resa måste du skapa en ny versi
 Om du avbryter en resa stoppas den permanent. Alla personer som flyter på resan kommer att stoppas permanent och resan kommer att upphöra så att nya deltagare tillåts. Om du behöver använda resan igen måste du duplicera den och publicera den.
 
 1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna publicera en resa med fel. Se [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing). Vi rekommenderar även att du testar din resa innan du publicerar den. Läs [den här sidan](../building-journeys/testing-the-journey.md).
+
 1. Om du vill publicera resan klickar du på alternativet **[!UICONTROL Publish]** som finns i den övre högra menyn.
+
+   >[!NOTE]
+   >
+   > Om din resa omfattas av en policy för godkännande måste du begära godkännande för att kunna publicera din resa. [Läs mer](../test-approve/gs-approval.md)
+
 
    ![](assets/journeyuc1_18.png)
 
