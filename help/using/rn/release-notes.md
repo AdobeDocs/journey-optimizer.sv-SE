@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 3ab4e6a7ff6c7e0ec97ee2021eb8b38e321b138c
+source-git-commit: 5ffa0937bd9f23f29c8f02d2951cccac73d75f1b
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1717'
 ht-degree: 8%
 
 ---
@@ -127,6 +127,10 @@ Kommande **versionsdatum**: 28-30 oktober 2024
 * När ni riktar er till en publik med CSV-filer kan ni nu använda attribut från filen i personaliseringsredigeraren och i regelbyggaren för resor och kampanjer. [Läs mer](../audience/about-audiences.md)
 
 * Målgrupper och attribut från anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
+
+**Beslut** - Tillgänglighetsdatum: 8 okt 2024
+
+När du lägger till en beslutspolicy till en kodbaserad kampanj med Decisioning (tidigare kallat Experience Decisioning) kan du nu manuellt välja enstaka beslutsposter, utöver urvalsstrategier. Dessutom kan du nu välja mer än ett reserverbjudande. Detta garanterar att det finns ett visst antal återlämnade beslutsposter. [Läs mer](../experience-decisioning/create-decision.md)
 
 ## 24 september {#24-9-rn}
 

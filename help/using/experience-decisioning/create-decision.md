@@ -7,10 +7,10 @@ role: User
 level: Experienced
 badge: label="Begränsad tillgänglighet"
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 5ffa0937bd9f23f29c8f02d2951cccac73d75f1b
 workflow-type: tm+mt
-source-wordcount: '1456'
-ht-degree: 1%
+source-wordcount: '1769'
+ht-degree: 0%
 
 ---
 
@@ -29,6 +29,12 @@ Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna vä
 >[!NOTE]
 >
 >Beslutsprinciper anges som beslut <!--but they are decision policies. TBC if this note is needed--> i användargränssnittet [!DNL Journey Optimizer].
+
+De viktigaste stegen för att utnyttja beslutsregler i era kodbaserade kampanjer är följande:
+
+1. [Skapa en beslutspolicy i en kodbaserad kampanj](#add-decision)
+1. [Använd beslutsprincipen i den kodbaserade kampanjen](#use-decision-policy)
+1. [Skapa anpassade instrumentpaneler för Customer Journey Analytics-rapportering](#cja)
 
 ## Lägga till en beslutsprincip i en kodbaserad kampanj {#add-decision}
 
@@ -51,6 +57,8 @@ Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna vä
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj. Följ stegen nedan för att göra det.
 
+### Skapa beslutsprincipen {#add}
+
 1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
 
 1. I [kodredigeraren](../code-based/create-code-based.md#edit-code) väljer du ikonen **[!UICONTROL Decision policy]** och klickar på **[!UICONTROL Add decision policy]**.
@@ -63,50 +71,45 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
    >
    >För närvarande är bara standardkatalogen **[!UICONTROL Offers]** tillgänglig.
 
+1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen. Klicka på **[!UICONTROL Next]**.
+
    ![](assets/decision-code-based-details.png)
 
-1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen. Klicka på **[!UICONTROL Next]**
+### Välj objekt och urvalsstrategier {#select}
 
-1. Använd knappen **[!UICONTROL Add strategy]** för att definiera urvalsstrategier för din beslutspolicy. Varje strategi består av en erbjudandesamling som är kopplad till en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas. [Läs mer](selection-strategies.md)
+I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt och urvalsstrategier som ska presenteras med beslutspolicyn.
 
-   ![](assets/decision-code-based-strategies.png)
+1. Klicka på knappen **[!UICONTROL Add]** och välj sedan den typ av objekt som ska inkluderas i profilen:
 
-   >[!NOTE]
-   >
-   >Minst en strategi krävs. Du kan inte lägga till fler än 10 strategier.
+   * **[!UICONTROL Selection strategy]**: Lägg till en eller flera markeringsstrategier. Beslutsstrategier utnyttjar samlingar som är kopplade till behörighetskrav och rangordningsmetoder för att fastställa vilka poster som ska visas. Du kan välja en befintlig urvalsstrategi eller skapa en ny med knappen **[!UICONTROL Create selection strategy]**.[Lär dig hur du skapar urvalsstrategier](selection-strategies.md)
 
-1. Från skärmen **[!UICONTROL Add strategy]** kan du även skapa en strategi. Knappen **[!UICONTROL Create selection strategy]** dirigerar om dig till menyn **[!UICONTROL Experience decisioning]** > **[!UICONTROL Strategy setup]**. [Läs mer](selection-strategies.md)
+   * **[!UICONTROL Decision item]**: Lägg till enskilda beslutsobjekt som ska visas utan att behöva köra en urvalsstrategi. Du kan bara välja ett beslutsobjekt i taget. Alla villkor som anges för artikeln gäller.
 
-   ![](assets/decision-code-based-add-strategy.png)
-
-1. När du lägger till flera strategier utvärderas de i en viss ordning. Den första strategin som lades till i sekvensen utvärderas först och så vidare. [Läs mer](#evaluation-order)
-
-   Om du vill ändra standardsekvensen kan du dra och släppa strategierna och/eller grupperna för att ordna om dem som du vill.
-
-   ![](assets/decision-code-based-strategy-groups.png)
-
-1. Lägg till ett reserv. Ett reservobjekt visas för användaren om ingen av ovanstående urvalsstrategier är kvalificerad.
-
-   ![](assets/decision-code-based-strategy-fallback.png)
-
-   Du kan välja valfritt objekt i listan, som visar alla beslutsobjekt som har skapats i den aktuella sandlådan. Om ingen urvalsstrategi är kvalificerad visas reservdelen för användaren oavsett vilka datum och villkor för behörighet som gäller för det valda objektet <!--nor frequency capping when available - TO CLARIFY-->.
+   ![](assets/decision-code-based-strategy-sequence.png)
 
    >[!NOTE]
    >
-   >En reservlösning är valfri. Om ingen reservlösning har valts och ingen strategi är kvalificerad visas ingenting av [!DNL Journey Optimizer].
+   >Minst en beslutsuppgift eller strategi krävs. Du kan inte lägga till fler än 10 strategier.
 
-1. Spara markeringen och klicka på **[!UICONTROL Create]**. Nu när beslutspolicyn har skapats kan du använda beslutsattributen i ditt kodbaserade upplevelseinnehåll. [Läs mer](#use-decision-policy)
+1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare.     Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer om utvärderingsordning för beslutsprinciper](#evaluation-order)
 
-   ![](assets/decision-code-based-decision-added.png)
+### Hantera utvärderingsordning i en beslutspolicy {#evaluation-order}
 
-## Utvärderingsorder {#evaluation-order}
+När du har lagt till beslutsposter och urvalsstrategier i din policy kan du ordna dem för att fastställa deras utvärderingsordning och kombinera urvalsstrategier för att utvärdera dem tillsammans.
 
-Som beskrivs ovan består en strategi av en samling, en rangordningsmetod och begränsningar för behörighet.
+Den **sekventiella ordningen** i vilken objekt och strategier utvärderas anges med siffror till vänster om varje objekt eller grupp av objekt. Om du vill flytta positionen för en urvalsstrategi (eller en grupp strategier) i sekvensen drar och släpper du den till en annan position.
 
-Du kan:
+>[!NOTE]
+>
+>Endast markeringsstrategier kan dras och släppas i en sekvens. Om du vill ändra positionen för ett beslutsobjekt måste du ta bort det och lägga tillbaka det med knappen **[!UICONTROL Add]** när du har lagt till de andra objekten som du vill utvärdera tidigare.
 
-* Ange den sekventiella ordning du vill att strategierna ska utvärderas,
-* Kombinera olika strategier så att de utvärderas tillsammans och inte separat.
+![](assets/decision-code-based-strategy-groups.png)
+
+Du kan också **kombinera** flera markeringsstrategier i grupper så att de utvärderas tillsammans och inte separat. Om du vill göra det klickar du på knappen **`+`** under en urvalsstrategi för att kombinera den med en annan. Du kan också dra och släppa en markeringsstrategi på en annan om du vill gruppera de två strategierna i en grupp.
+
+>[!NOTE]
+>
+>Beslutsobjekt kan inte grupperas tillsammans med andra objekt eller urvalsstrategier.
 
 Flera strategier och grupperingar av dem avgör prioriteringen av strategierna och rangordningen av godtagbara erbjudanden. Den första strategin har högsta prioritet och de strategier som kombineras inom samma grupp har samma prioritet.
 
@@ -159,6 +162,22 @@ Strategi 3-erbjudanden utvärderas (erbjudande 5, erbjudande 6). Låt oss säga 
 Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1, Erbjudande 6.
 
 +++
+
+### Lägg till reserverbjudanden {#fallback}
+
+När du har valt beslutsobjekt och/eller urvalsstrategier kan du lägga till reserverbjudanden som visas för användarna om inga av ovanstående objekt eller urvalsstrategier är kvalificerade.
+
+![](assets/decision-code-based-strategy-fallback.png)
+
+Du kan välja valfritt objekt i listan, som visar alla beslutsobjekt som har skapats i den aktuella sandlådan. Om ingen urvalsstrategi är kvalificerad visas reservdelen för användaren oavsett vilka datum och villkor för behörighet som gäller för det valda objektet <!--nor frequency capping when available - TO CLARIFY-->.
+
+>[!NOTE]
+>
+>En reservlösning är valfri. Om ingen reservlösning har valts och ingen strategi är kvalificerad visas ingenting av [!DNL Journey Optimizer]. Du kan lägga till upp till det antal objekt som beslutsprincipen begär. Detta garanterar att ett visst antal artiklar returneras om så önskas för användningsfallet.
+
+När din beslutsprincip är klar sparar du den och klickar på **[!UICONTROL Create]**. Nu när beslutspolicyn har skapats kan du använda beslutsattributen i ditt kodbaserade upplevelseinnehåll. [Läs mer](#use-decision-policy)
+
+![](assets/decision-code-based-decision-added.png)
 
 ## Använd beslutsprincipen i kodredigeraren {#use-decision-policy}
 
