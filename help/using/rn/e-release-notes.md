@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 4663cecda07bdccd1bd0651047d83e2f7e0512d8
+source-git-commit: f2282fc4d0bbe67a945c43a191648e28b6b60c00
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1885'
 ht-degree: 3%
 
 ---
@@ -309,5 +309,6 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 * Målgrupper och attribut från anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
+**Kodbaserad kanal**
 
-
+När du redigerar en kodbaserad upplevelsekampanj omfattar nu de mallar som är tillgängliga att välja mellan HTML eller JSON baserat på den kanalkonfiguration som har valts tidigare.
