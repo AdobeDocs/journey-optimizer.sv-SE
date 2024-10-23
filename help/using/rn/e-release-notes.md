@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: d953f4e411b6d73886c9cb1d6d47152a0480de36
+source-git-commit: 0e8c9927f7516abf1927606fd8236b8506b54c96
 workflow-type: tm+mt
-source-wordcount: '1674'
+source-wordcount: '1775'
 ht-degree: 3%
 
 ---
@@ -120,14 +120,14 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <table>
 <thead>
 <tr>
-<th><strong>Affärsregler (allmän tillgänglighet)</strong><br/></th>
+<th><strong>Regeluppsättningar (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du skapa regler för exakt frekvensbegränsning och tillämpa dem på olika typer av marknadsföringskommunikation via regeluppsättningar. Med den här nya funktionen kan ni styra hur ofta era målgrupper får ett meddelande genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p>
-<p>Regeluppsättningar som tidigare var tillgängliga för en uppsättning organisationer (LA) är nu tillgängliga för alla användare (GA).</p>
+<p>Nu kan du skapa detaljerade regler för frekvensbegränsning och tillämpa dem på meddelanden eller resor via regeluppsättningar. Med den här nya funktionen kan ni styra hur ofta era målgrupper får ett meddelande genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p><p>Det gör det även möjligt att begränsa antalet resor per dag, vecka eller månad samt att kontrollera antalet samtidiga resor som körs samtidigt.</p>
+<p> Regeluppsättningar är tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för den här funktionen.</p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -234,13 +234,17 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 * Ni kan definiera och hantera unika nyckelord för era SMS-kampanjer och resor, vilket möjliggör mer personaliserad och effektiv kommunikation.
 * Du kan skapa och leverera ett standard-SMS-meddelande när ett nyckelord inte känns igen.
 
-**Hantering av frekvens och prioritet**
+**Hantering av konflikter och prioritet**
 
-* **Frekvensbegränsning per kampanj eller resa** - Nu kan du skapa frekvensregler som ska gälla för dina resor, så att du kan begränsa antalet resor per dag, vecka eller månad, samt styra antalet samtidiga resor som körs samtidigt.
+* **Frekvensbegränsning med resa** - Nu kan du skapa regeluppsättningar som ska användas på dina resor, så att du kan begränsa antalet resor per dag, vecka eller månad, samt kontrollera antalet samtidiga resor som körs samtidigt.
 
 * **Prioritetspoäng** - Du kan nu tilldela en kampanj eller en resa ett prioritetspoäng mellan 0 och 100. Ett högre tal anger en högre prioritet. När två kampanjer eller resor använder samma kanalkonfiguration väljer Journey Optimizer den som har högst prioritet. Om kampanjerna har samma poäng väljs den senaste kampanjen. Prioritetspoäng finns för alla inkommande kanaler i kampanjer och för in-app-kanalen under resor.
 
 * **Visa konflikter** - En ny **Visa konflikter**-knapp under resor och kampanjer gör nu att du kan kontrollera om det finns en risk för att de överlappar andra resor eller kampanjer, som startdatum, målgrupp eller den valda kanalkonfigurationen.
+
+>[!AVAILABILITY]
+>
+>Funktioner för hantering av konflikter och prioriteter är tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för den här funktionen.
 
 **Beslutshantering**
 
