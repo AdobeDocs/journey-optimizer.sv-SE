@@ -12,9 +12,9 @@ badge: label="Beta"
 hide: true
 hidefromtoc: true
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: fd644d4d4a92eb0e0770c1d04fe8e7cd90f3ebae
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1908'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,15 @@ ht-degree: 0%
 >
 >Regeluppsättningar är för närvarande endast tillgängliga som betaversioner för valda användare. Kontakta din Adobe-representant för att få delta i Beta.
 
-## Vad är regeluppsättningar? {#what}
+## Kom igång med regeluppsättningar {#gs}
+
+### Vad är regeluppsättningar? {#what}
 
 Förutom globala affärsregler som begränsar antalet gånger som användare får meddelanden i en eller flera kanaler, kan du med regeluppsättningar **gruppera flera regler i regeluppsättningar** och tillämpa dem på de kampanjer du väljer. Detta ger en förbättrad detaljrikedom som styr hur ofta användarna får ett meddelande beroende på kommunikationstypen.
 
 Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjmeddelanden** som skickas till dina kunder och en annan regeluppsättning som begränsar antalet **nyhetsbrev** som skickas till dem. Beroende på vilken typ av kampanj du skapar kan du sedan välja att använda antingen kampanjkommunikationen eller regeluppsättningen för nyhetsbrev.
 
-## Globala och anpassade regeluppsättningar {#global-custom}
+### Globala och anpassade regeluppsättningar {#global-custom}
 
 När du använder regeluppsättningar för första gången från menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** skapas en standardregeluppsättning och är aktiv: **Global standardregeluppsättning**.
 
@@ -50,9 +52,18 @@ Utöver den här regeluppsättningen för global standardregel kan du skapa **an
 >
 >Just nu kan anpassade regeluppsättningar endast användas för **kampanjer**. Endast de regler som definieras i regeluppsättningen&quot;Global standardregel&quot; gäller för både resor och kampanjkommunikation.
 
+### Kanaler och resor {#domain}
+
+När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättningen ska tillämpa regler för appning som är specifika för kommunikationskanaler eller för resor.
+
+Detta gör du genom att välja en kanal- eller resedomän för regeluppsättningen när du skapar den. [Lär dig skapa en regeluppsättning]
+
+* **Kanal**-domän: tillämpa regler för begränsning för kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag.
+* **Resa**-domän: Använd regler för start och begränsning av samtidighet på en resa. Ange till exempel inte profiler i mer än en resa samtidigt.
+
 ## Skapa din första anpassade regeluppsättning {#create-rule-set}
 
-### Skapa regeluppsättningen {#create}
+### Skapa regeluppsättningen och välj dess domän {#create}
 
 Följ stegen nedan för att skapa en regeluppsättning.
 
@@ -64,13 +75,16 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
    ![](assets/rule-sets-create-button.png)
 
-1. Definiera regeluppsättningens namn, lägg till en beskrivning om det behövs och klicka på **[!UICONTROL Save]**.
+1. Definiera ett unikt namn för regeluppsättningen och lägg till en beskrivning.
+
+1. Välj regeluppsättningens domän. Domänen tillåter dig att ange om regeluppsättningen ska innehålla regler för appning som är specifika för kommunikationskanaler eller resor:
+
+   * **Kanal**: Tillämpa regler för appning för kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag.
+   * **Resa**: Använd regler för inmatning och begränsning av samtidighet på en resa. Ange till exempel inte profiler i mer än en resa samtidigt.
 
    ![](assets/rule-sets-create.png)
 
-   >[!NOTE]
-   >
-   >Regeluppsättningsnamnet måste vara unikt.
+1. Klicka på **[!UICONTROL Save]**.
 
 1. Nu kan du [definiera reglerna](#create-new-rule) som du vill lägga till i den här regeluppsättningen.
 
@@ -96,13 +110,15 @@ Följ stegen nedan för att skapa en regeluppsättning.
 >title="Välj meddelanderegelkategori"
 >abstract="När det aktiveras och används för ett meddelande, kommer alla frekvensregler som matchar den valda kategorin automatiskt att tillämpas på det här meddelandet. För närvarande är endast marknadsföringskategorin tillgänglig."
 
-Följ stegen nedan om du vill lägga till en regel i en regeluppsättning.
+Om du vill lägga till en regel i en regeluppsättning öppnar du regeluppsättningen och klickar på **[!UICONTROL Add rule]**.
 
-1. Klicka på **[!UICONTROL Add rule]** i den regeluppsättning du nyss skapade.
+Vilka parametrar som är tillgängliga för regeln beror på vilken regeluppsättningsdomän som valdes när regeln skapades.
 
-   ![](assets/rule-sets-create-rule-button.png)
++++Konfigurera regler för kanalbegränsning (**Kanal** domän)
 
-1. Definiera ett unikt **regelnamn**.
+![](assets/rule-set-channels.png)
+
+1. Definiera ett unikt namn för regeln.
 
 1. Fältet **Kategori** anger vilken meddelandekategori regeln gäller för. För tillfället är det här fältet skrivskyddat eftersom endast kategorin **[!UICONTROL Marketing]** är tillgänglig.
 
@@ -130,8 +146,6 @@ Följ stegen nedan om du vill lägga till en regel i en regeluppsättning.
 
 1. Markera kanalen som du vill använda för den här regeln: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]** eller **[!UICONTROL Direct mail]**.
 
-   ![](assets/rule-set-channels.png)
-
    >[!NOTE]
    >
    >Du måste välja minst en kanal för att kunna skapa regeln.
@@ -139,6 +153,23 @@ Följ stegen nedan om du vill lägga till en regel i en regeluppsättning.
 1. Markera flera kanaler om du vill tillämpa begränsning för alla markerade kanaler som ett totalt antal.
 
    Ange till exempel 5 som capping och markera både e-postkanalen och sms-kanalen. Om en profil redan har fått 3 marknadsföringsmeddelanden och 2 marknadsföringsmeddelanden för den valda perioden, kommer profilen att uteslutas från nästa leverans av marknadsföringsmeddelanden eller sms.
+
++++
+
++++Konfigurera regler för begränsning av kundresan (**Resa** domän)
+
+![](assets/rule-set-journey.png)
+
+1. Ange ett unikt namn för regeln.
+
+1. Ange regelns typ av begränsning i listrutan **[!UICONTROL Rule Type]**.
+
+   * **[!UICONTROL Journey Entry Cap]**: Begränsar antalet poster i resan under en viss period för en profil.
+   * **[!UICONTROL Journey Concurrency Cap]**: Begränsar hur många resor en profil kan registreras samtidigt.
+
+1. Detaljerad information om hur du konfigurerar regler för att appa resan finns i avsnittet [Resebegränsning och medling](../test-approve/journey-capping.md).
+
++++
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta att regeln har skapats. Meddelandet läggs till i regeluppsättningen med statusen **[!UICONTROL Draft]**.
 
@@ -206,9 +237,11 @@ Users with the **[!UICONTROL View frequency rules]** permission are able to view
 
 Learn more about permissions in [this section](../administration/high-low-permissions.md).-->
 
-## Använda en regeluppsättning i ett meddelande {#apply-frequency-rule}
+## Använd regeluppsättningar för ett meddelande eller en resa {#apply-frequency-rule}
 
-Följ stegen nedan för att tillämpa en affärsregel på ett meddelande.
+Du kan tillämpa en regeluppsättning på ett meddelande eller en resa, beroende på vilken domän som valts när regeluppsättningen skapades. Expandera avsnitten nedan om du vill ha mer information.
+
++++ Använda en regeluppsättning i ett meddelande
 
 1. När du skapar en [kampanj](../campaigns/create-campaign.md) väljer du en av de kanaler som du har definierat för regeluppsättningen och redigerar innehållet i meddelandet.
 
@@ -266,3 +299,17 @@ In this scenario, an individual profile:
 * but will be excluded from marketing push notifications after they have received 4 push notifications.-->
 
 När du testar frekvensregler rekommenderar vi att du använder en ny [testprofil](../audience/creating-test-profiles.md) eftersom det inte finns något sätt att återställa räknaren förrän nästa period när en profils frekvensgräns har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
+
++++
+
++++ Tillämpa en regeluppsättning på en resa
+
+Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till resan och öppnar dess egenskaper. Välj den relevanta regeluppsättningen i listrutan **[!UICONTROL Capping rules]**.
+
+![](assets/journey-capping-apply.png)
+
+>[!IMPORTANT]
+>
+>Om en resa aktiveras omedelbart kan det ta upp till 15 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 15 minuter framåt för att förhindra den här möjligheten.
+
++++
