@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1be920fb8b3ea825e38084f459523ccde0ad979b
+source-git-commit: 972d517ec2a5779f8c3196b40f1418b9c207d791
 workflow-type: tm+mt
-source-wordcount: '2140'
+source-wordcount: '2147'
 ht-degree: 24%
 
 ---
@@ -195,94 +195,96 @@ ht-degree: 24%
       + [Skapa och hantera godkännandepolicyer](using/test-approve/approval-policies.md)
       + [Begär godkännande](using/test-approve/request-approval.md)
       + [Godkänn en begäran](using/test-approve/review-approve-request.md)
-+ E-postkanal {#email}
-   + [Kom igång med e-post](using/email/get-started-email.md)
-   + [Skapa ett e-postmeddelande](using/email/create-email.md)
-   + Designa ditt e-postinnehåll {#design-email}
-      + [Kom igång med e-postdesign](using/email/get-started-email-design.md)
-      + Börja skapa innehåll {#start-creating-content}
-         + [Designa innehåll från grunden](using/email/content-from-scratch.md)
-         + [Importera innehåll](using/email/existing-content.md)
-         + [Koda eget innehåll](using/email/code-content.md)
-         + [Använd e-postmallar](using/email/use-email-templates.md)
-      + Designa ditt innehåll {#add-content}
-         + [Använda innehållskomponenter](using/email/content-components.md)
-         + [Utnyttja visuella fragment](using/email/use-visual-fragments.md)
-         + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
-         + [Infoga personaliserade erbjudanden](using/email/add-offers-email.md)
-         + [Generera textversionen](using/email/text-version-email.md)
-         + [Lägga till en förrubrik](using/email/preheader.md)
-      + Redigera stil {#edit-style}
-         + [Kom igång med e-postformat](using/email/get-started-email-style.md)
-         + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
-         + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
-         + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
-   + [Använd Experience Manager-mallar](using/email/aem-templates.md)
-   + [Hantera e-postavanmälan](using/email/email-opt-out.md)
-   + Konfigurera e-postkanal {#configure-email}
-      + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
-      + [Konfigurera e-postkonfigurationsinställningar](using/email/email-settings.md)
-      + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
-+ Kanal i appen {#in-app}
-   + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
-   + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
-   + [Skapa ett mobilt meddelande i appen](using/in-app/create-in-app.md)
-   + [Skapa ett meddelande i appen för webben](using/in-app/create-in-app-web.md)
-   + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
-   + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
-+ Push-meddelandekanal {#push}
-   + [Kom igång med push-meddelanden](using/push/get-started-push.md)
-   + [Skapa ett push-meddelande](using/push/create-push.md)
-   + [Utforma ett push-meddelande](using/push/design-push.md)
-   + [Kontrollera och skicka push-meddelanden](using/push/send-push.md)
-   + Konfigurera push-meddelanden {#push-config}
-      + [Push-meddelandeflöde](using/push/push-gs.md)
-      + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
-      + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
-+ SMS-/MMS-kanal{#sms}
-   + [Kom igång med textmeddelanden](using/sms/get-started-sms.md)
-   + [Skapa ett textmeddelande (SMS/MMS)](using/sms/create-sms.md)
-   + [Kontrollera och skicka textmeddelanden](using/sms/send-sms.md)
-   + [Hantera avanmälan av textmeddelande](using/sms/sms-opt-out.md)
-   + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
-   + Konfigurera SMS-/MMS-kanal{#configure-sms}
-      + [Kom igång med SMS-konfiguration](using/sms/sms-configuration.md)
-      + [Konfigurera Sinch-provider](using/sms/sms-configuration-sinch.md)
-      + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
-      + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
-      + [Konfigurera en anpassad leverantör (Beta)](using/sms/sms-configuration-custom.md)
-      + [Skapa en SMS-konfiguration](using/sms/sms-configuration-surface.md)
-+ Direktutskick {#direct-mail}
-   + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
-   + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
-   + [Kontrollera och skicka ett direktutskick](using/direct-mail/test-send-direct-mail.md)
-   + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
-+ Webbkanal {#web}
-   + [Kom igång med webbkanalen](using/web/get-started-web.md)
-   + Konfigurera webbkanal {#configure-web-channel}
-      + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
-      + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
-      + [Skapa webbkanalskonfiguration](using/web/web-configuration.md)
-   + [Skapa webbupplevelser](using/web/create-web.md)
-   + Skapa webbsidor {#author-web-pages}
-      + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
-      + [Hantera ändringar](using/web/manage-web-modifications.md)
-      + [Övervaka era webbupplevelser](using/web/monitor-web-experiences.md)
-      + [Skapa single-page-appar](using/web/web-spa.md)
-+ Kodbaserad upplevelse {#code-based-experience}
-   + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
-   + [Garantier och krav](using/code-based/code-based-prerequisites.md)
-   + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
-   + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
-   + [Skapa kodbaserade upplevelser](using/code-based/create-code-based.md)
-+ Innehållskort{#content-card}
-   + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
-   + Konfigurera innehållskortskanalen {#configure}
-      + [Krav för innehållskort](using/content-card/content-card-configuration-prereq.md)
-      + [Konfigurera innehållskortskanal i Journey Optimizer](using/content-card/content-card-configuration.md)
-      + [Konfigurera stöd för innehållskort i Web SDK](using/content-card/content-card-configuration-sdk.md)
-   + [Skapa innehållskort](using/content-card/create-content-card.md)
-   + [Utforma innehållskort](using/content-card/design-content-card.md)
++ Kommunikationskanaler {#communication-channels}
+   + [Kom igång med kommunikationskanaler](using/channels/gs-channels.md)
+   + E-postkanal {#email}
+      + [Kom igång med e-post](using/email/get-started-email.md)
+      + [Skapa ett e-postmeddelande](using/email/create-email.md)
+      + Designa ditt e-postinnehåll {#design-email}
+         + [Kom igång med e-postdesign](using/email/get-started-email-design.md)
+         + Börja skapa innehåll {#start-creating-content}
+            + [Designa innehåll från grunden](using/email/content-from-scratch.md)
+            + [Importera innehåll](using/email/existing-content.md)
+            + [Koda eget innehåll](using/email/code-content.md)
+            + [Använd e-postmallar](using/email/use-email-templates.md)
+         + Designa ditt innehåll {#add-content}
+            + [Använda innehållskomponenter](using/email/content-components.md)
+            + [Utnyttja visuella fragment](using/email/use-visual-fragments.md)
+            + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
+            + [Infoga personaliserade erbjudanden](using/email/add-offers-email.md)
+            + [Generera textversionen](using/email/text-version-email.md)
+            + [Lägga till en förrubrik](using/email/preheader.md)
+         + Redigera stil {#edit-style}
+            + [Kom igång med e-postformat](using/email/get-started-email-style.md)
+            + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
+            + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
+            + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
+      + [Använd Experience Manager-mallar](using/email/aem-templates.md)
+      + [Hantera e-postavanmälan](using/email/email-opt-out.md)
+      + Konfigurera e-postkanal {#configure-email}
+         + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
+         + [Konfigurera e-postkonfigurationsinställningar](using/email/email-settings.md)
+         + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
+   + Kanal i appen {#in-app}
+      + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
+      + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
+      + [Skapa ett mobilt meddelande i appen](using/in-app/create-in-app.md)
+      + [Skapa ett meddelande i appen för webben](using/in-app/create-in-app-web.md)
+      + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
+      + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
+   + Push-meddelandekanal {#push}
+      + [Kom igång med push-meddelanden](using/push/get-started-push.md)
+      + [Skapa ett push-meddelande](using/push/create-push.md)
+      + [Utforma ett push-meddelande](using/push/design-push.md)
+      + [Kontrollera och skicka push-meddelanden](using/push/send-push.md)
+      + Konfigurera push-meddelanden {#push-config}
+         + [Push-meddelandeflöde](using/push/push-gs.md)
+         + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
+         + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
+   + SMS-/MMS-kanal{#sms}
+      + [Kom igång med textmeddelanden](using/sms/get-started-sms.md)
+      + [Skapa ett textmeddelande (SMS/MMS)](using/sms/create-sms.md)
+      + [Kontrollera och skicka textmeddelanden](using/sms/send-sms.md)
+      + [Hantera avanmälan av textmeddelande](using/sms/sms-opt-out.md)
+      + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
+      + Konfigurera SMS-/MMS-kanal{#configure-sms}
+         + [Kom igång med SMS-konfiguration](using/sms/sms-configuration.md)
+         + [Konfigurera Sinch-provider](using/sms/sms-configuration-sinch.md)
+         + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
+         + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
+         + [Konfigurera en anpassad leverantör (Beta)](using/sms/sms-configuration-custom.md)
+         + [Skapa en SMS-konfiguration](using/sms/sms-configuration-surface.md)
+   + Direktutskick {#direct-mail}
+      + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
+      + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
+      + [Kontrollera och skicka ett direktutskick](using/direct-mail/test-send-direct-mail.md)
+      + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
+   + Webbkanal {#web}
+      + [Kom igång med webbkanalen](using/web/get-started-web.md)
+      + Konfigurera webbkanal {#configure-web-channel}
+         + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
+         + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
+         + [Skapa webbkanalskonfiguration](using/web/web-configuration.md)
+      + [Skapa webbupplevelser](using/web/create-web.md)
+      + Skapa webbsidor {#author-web-pages}
+         + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
+         + [Hantera ändringar](using/web/manage-web-modifications.md)
+         + [Övervaka era webbupplevelser](using/web/monitor-web-experiences.md)
+         + [Skapa single-page-appar](using/web/web-spa.md)
+   + Kodbaserad upplevelse {#code-based-experience}
+      + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
+      + [Garantier och krav](using/code-based/code-based-prerequisites.md)
+      + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
+      + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
+      + [Skapa kodbaserade upplevelser](using/code-based/create-code-based.md)
+   + Innehållskort{#content-card}
+      + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
+      + Konfigurera innehållskortskanalen {#configure}
+         + [Krav för innehållskort](using/content-card/content-card-configuration-prereq.md)
+         + [Konfigurera innehållskortskanal i Journey Optimizer](using/content-card/content-card-configuration.md)
+         + [Konfigurera stöd för innehållskort i Web SDK](using/content-card/content-card-configuration-sdk.md)
+      + [Skapa innehållskort](using/content-card/create-content-card.md)
+      + [Utforma innehållskort](using/content-card/design-content-card.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
@@ -701,3 +703,4 @@ ht-degree: 24%
       + [Arbeta med policyer för samtycke](using/action/consent.md)
    + [Dataförvaltning](using/action/action-privacy.md)
    + [Konfigurera och hantera kundhanterade nycklar](using/privacy/cmk.md)
+
