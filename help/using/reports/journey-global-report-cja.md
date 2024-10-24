@@ -7,9 +7,9 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: a2219bf7791bc5c598228af883d0507180628abf
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,12 @@ Förbättra anpassningen av arbetsytan med följande alternativ:
 * Justera **[!UICONTROL Percentage value]** för att fastställa flödesfördelningen mellan olika resevägar.
 * Anpassa **[!UICONTROL Arrow settings]** så att den innehåller etiketter, villkor eller väljer en ren visning.
 * Aktivera alternativet **[!UICONTROL Show fallout]** för att visualisera profiler som slutade din resa direkt på arbetsytan.
+
+Följande regler gäller när **[!UICONTROL Node Type]**-filtrering används:
+
+* När du skapar ett segment på en nod kommer det fortfarande att omfatta noder från tidigare faser av resan, även om dessa noder har uteslutits via filtret **[!UICONTROL Node type]**.
+
+* Du kan inte skapa segment som har formats från en pil om noder i tidigare skeden av resan har uteslutits via filtret **[!UICONTROL Node type]**. I det här fallet inaktiveras högerklicksfunktionen på dessa pilar.
 
 ## Åtgärdens prestanda {#action-performance}
 
