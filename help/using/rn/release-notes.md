@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 87cba1d13af7a80cfe3b37a7b79e5fdd95ee5521
+source-git-commit: 7ae8a92be62f6b699a6b222ee5440540fbacffaa
 workflow-type: tm+mt
-source-wordcount: '3162'
+source-wordcount: '3096'
 ht-degree: 5%
 
 ---
@@ -44,8 +44,8 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tr>
 <td>
 <p>Med Journey Optimizer kan du nu låsa innehåll i e-postmallar, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. På så sätt kan ni förhindra oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer.</p>
-<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>-->
-<img src="assets/do-not-localize/ai-content.gif">
+<p>Mer information finns i den <a href="../content-management/content-locking.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/gif-content-locking.gif">
 </td>
 </tr>
 </tbody>
@@ -138,10 +138,10 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <p>I Journey Optimizer är det viktigt att hantera kampanjernas och resornas volym och tidpunkter för att undvika överväldigande kunder med alltför många interaktioner. Journey Optimizer har nu flera verktyg för konflikthantering och -prioritering.</p><p><ul><li><b>Resefrekvensbegränsning</b>: Nu kan du skapa regeluppsättningar som ska användas på dina resor, så att du kan begränsa antalet resor för en profil per dag, vecka eller månad, samt styra antalet samtidiga resor som körs samtidigt.</li>
 <li><b>Prioritetspoäng</b>: Du kan nu tilldela en kampanj eller en resa ett prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. När två kampanjer eller reseåtgärder använder samma kanalkonfiguration väljer Journey Optimizer den som har högst prioritet. Om kampanjerna har samma poäng väljs den kampanj som senast ändrades.</li>
 <li><b>Visa potentiella konflikter</b>: Med en ny knapp för att visa potentiella konflikter under resor och kampanjer kan du nu identifiera överlappning med andra resor eller kampanjer, till exempel startdatum, målgrupp eller den valda kanalkonfigurationen.</li>
-<li><b>Reseskiljeförfarande</b>: Med den här nya funktionen kan du prioritera de viktigaste kundresorna. Du kan skapa en regel som förhindrar inträde på en resa med lägre prioritet när en kund kvalificerar sig för en resa med högre prioritet.</li></ul></p>
+<li><b>Reseskiljeförfarande</b>: Med den här nya funktionen kan du prioritera de viktigaste kundresorna. Du kan skapa en regel som förhindrar inträde på en resa med lägre prioritet när en kund kvalificerar sig för en resa med högre prioritet.</li>
+<li><b>Frekvensbegränsning per kommunikationstyp: </b>Med regeluppsättningar kan du nu ange detaljerade regler per kommunikationstyp (till exempel Försäljning, Kampanj) för att förhindra att kunder med liknande meddelanden överbelastas. Ni kan styra frekvensen över flera kanaler och automatiskt utesluta överbegärda profiler för att få en bättre kundupplevelse.</li></ul>
 <!--<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>-->
 <p>Funktioner för hantering av konflikter och prioriteter är tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för dessa funktioner.</p>
-
 </td>
 </tr>
 </tbody>
@@ -191,34 +191,13 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <tbody>
 <tr>
 <td>
-<p>Beslutsfattandet, som tidigare fanns för en uppsättning organisationer (LA) och som kallas Experience Decisioning, är nu tillgängligt för alla användare (GA). Det förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person. Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den kodbaserade upplevelsekanalen.</p>
+<p>Beslutsfattandet, som tidigare fanns för en uppsättning organisationer (LA) och som kallas Experience Decision, är nu tillgängligt för alla användare (GA), inklusive organisationer som har köpt tillägget Adobe Healthcare Shield eller Privacy and Security Shield.</p><p>Beslutsfattandet förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person. Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den kodbaserade upplevelsekanalen.</p>
 
-<p>För närvarande är beslut inte tillgängligt för kunder som har köpt tillägget Adobe Healthcare Shield och Privacy and Security Shield.</p>
-
-<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../experience-decisioning/gs-experience-decisioning.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Regeluppsättningar (begränsad tillgänglighet)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du skapa detaljerade regler för frekvensbegränsning och tillämpa dem på meddelanden eller resor via regeluppsättningar. Med den här nya funktionen kan ni styra hur ofta era målgrupper får ett meddelande genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p><p>Det gör det även möjligt att begränsa antalet resor per dag, vecka eller månad samt att kontrollera antalet samtidiga resor som körs samtidigt.</p>
-<p>Regeluppsättningar är tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för den här funktionen.</p>
-<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
-
 
 <table>
 <thead>
