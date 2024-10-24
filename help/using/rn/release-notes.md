@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ff18cda7556240b9770639edca42ea9321d00d7a
+source-git-commit: acc3d61b571f577187503157b78de1d27ce5e1ee
 workflow-type: tm+mt
 source-wordcount: '3066'
 ht-degree: 5%
@@ -44,8 +44,8 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tr>
 <td>
 <p>Med Journey Optimizer kan du nu låsa innehåll i e-postmallar, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. På så sätt kan ni förhindra oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer.</p>
-<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
-<img src="assets/do-not-localize/ai-content.gif"/-->
+<!--p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>-->
+<img src="assets/do-not-localize/ai-content.gif">
 </td>
 </tr>
 </tbody>
