@@ -4,9 +4,9 @@ description: Lär dig hur du begär godkännande innan du publicerar dina resor 
 role: User
 level: Beginner
 feature: Approval
-source-git-commit: ade30d6b33467ad05146ddee3ea1c1a4115d38b2
+source-git-commit: 509ebc377ac8c24db464728b7544eaa96e8e5da4
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,11 @@ ht-degree: 0%
 
 * **Aktiva godkännandeprinciper finns**
 
-   * **Kampanjer**: Om det finns en eller flera aktiva godkännandeprinciper för Campaign-objektet i en sandlåda visas knappen **[!UICONTROL Request Approval]** för alla kampanjer i den sandlådan. Detta innebär att kampanjer inte kan aktiveras direkt utan godkännande.
+   * **Kampanjer**: Om det finns en eller flera aktiva godkännandeprinciper för Campaign-objektet i en sandlåda visas knappen **[!UICONTROL Request Approval]** för alla kampanjer i den sandlådan.
+Om ingen godkännandeprincip gäller för det markerade objektet när användaren klickar på knappen **[!UICONTROL Request Approval]**, kommer arbetsflödet för automatiskt godkännande att aktiveras.
 
-   * **Resor**: Om det finns en eller flera aktiva godkännandeprinciper för reseobjektet i en sandlåda visas knappen **[!UICONTROL Request Approval]** för alla resor. På samma sätt som kampanjer kan resor inte publiceras direkt om en godkännandepolicy är aktiv.
+   * **Resor**: Om det finns en eller flera aktiva godkännandeprinciper för reseobjektet i en sandlåda visas knappen **[!UICONTROL Request Approval]** för alla resor.
+Om ingen godkännandeprincip gäller för det markerade objektet när användaren klickar på knappen **[!UICONTROL Request Approval]**, kommer arbetsflödet för automatiskt godkännande att aktiveras.
 
 ## Skicka godkännandebegäran
 
