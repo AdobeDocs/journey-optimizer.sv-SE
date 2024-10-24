@@ -12,7 +12,7 @@ badge: label="Beta"
 hide: true
 hidefromtoc: true
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 0eedadee1e8c1d4642d8602d48bcc9a49a0a2e53
+source-git-commit: 87e2308b2d6a9aeb3cbc0ef4bb28ea7aeb3b869a
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 0%
@@ -56,9 +56,7 @@ Utöver den här regeluppsättningen för global standardregel kan du skapa **an
 
 ### Kanaler och resor {#domain}
 
-När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättningen ska tillämpa regler för appning som är specifika för kommunikationskanaler eller för resor.
-
-Detta gör du genom att välja en kanal- eller resedomän för regeluppsättningen när du skapar den. [Lär dig skapa en regeluppsättning]
+När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättningen ska tillämpa regler för appning som är specifika för kommunikationskanaler eller för resor.  Detta gör du genom att välja en kanal- eller resedomän för regeluppsättningen när du skapar den. [Lär dig skapa en regeluppsättning](#create)
 
 * **Kanal**-domän: tillämpa regler för begränsning för kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag.
 * **Resa**-domän: Använd regler för start och begränsning av samtidighet på en resa. Ange till exempel inte profiler i mer än en resa samtidigt.
