@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 2f56a072f7ae6ee2dfa65597cf5597b63dacdbe3
+source-git-commit: 08754b850f26c95f3c09ab5277e4f2ea156d2da7
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1942'
 ht-degree: 2%
 
 ---
@@ -206,7 +206,7 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <tr>
 <td>
 <p>Nu kan ni enkelt skapa innehåll på flera språk i en enda kampanj eller resa. Med den här funktionen kan ni växla mellan olika språk när ni redigerar kampanjer eller hela kundresan, effektivisera hela redigeringsprocessen och förbättra möjligheterna att effektivt hantera flerspråkigt innehåll.</p>
-<p>Tidigare var flerspråkiga meddelanden tillgängliga för en uppsättning organisationer (LA), men nu är de tillgängliga för alla användare (GA).</p>
+<p>Med allmän tillgänglighet är flerspråkigt innehåll nu tillgängligt över alla kanaler. </p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -293,7 +293,10 @@ Den här versionen innehåller de förbättringar som anges nedan.
 SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 * Ni kan definiera och hantera unika nyckelord för era SMS-kampanjer och resor, vilket möjliggör mer personaliserad och effektiv kommunikation.
+
 * Du kan skapa och leverera ett standard-SMS-meddelande när ett nyckelord inte känns igen.
+
+* Nu kan du redigera eller ta bort en konfiguration för SMS API-kanal.
 
 <!--**Journeys**-->
 
