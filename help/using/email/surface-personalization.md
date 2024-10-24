@@ -10,9 +10,9 @@ level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 badge: label="Begränsad tillgänglighet"
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: f8a6c2a3b27d5dca422dfdc868f802c6a10b001d
+source-git-commit: 87cba1d13af7a80cfe3b37a7b79e5fdd95ee5521
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,6 @@ ht-degree: 0%
 # Anpassa inställningar för e-postkonfiguration {#surface-personalization}
 
 För större flexibilitet och kontroll över e-postinställningarna kan du med [!DNL Journey Optimizer] definiera anpassade värden för underdomäner och rubriker <!--and URL tracking parameters--> när du skapar e-postkonfigurationer.
-
->[!AVAILABILITY]
->
->Anpassning av e-postkonfiguration är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 ## Lägg till dynamiska underdomäner {#dynamic-subdomains}
 
@@ -110,13 +106,19 @@ Följ stegen nedan om du vill använda personaliserade variabler för konfigurat
 
    ![](assets/surface-email-personalize-header.png)
 
-1. [Anpassningsredigeraren](../personalization/personalization-build-expressions.md) öppnas. Definiera ditt tillstånd så som du vill ha det och spara dina ändringar.
+1. [Anpassningsredigeraren](../personalization/personalization-build-expressions.md) öppnas. Definiera ditt tillstånd efter behov och spara ändringarna.
 
-   Ange till exempel ett villkor som varje mottagare får ett e-postmeddelande från sin egen varumärkesrepresentant.
+   <!--For example, set a condition such as each recipient receives an email from their own brand representative.-->
 
    >[!NOTE]
    >
    >Du kan bara välja **[!UICONTROL Profile attributes]** och **[!UICONTROL Helper functions]**.
+
+   Säg att du vill hantera dynamiskt skickade e-postmeddelanden för en säljassistent, där säljassistenten hämtas från en händelse eller kontextuella parametrar för kampanjer. Exempel:
+
+   * Om en köphändelse är länkad till säljassistenten för en viss butik i en [resa](../building-journeys/journey-gs.md), kan e-posthuvudet (avsändarens namn, avsändarens e-postadress, svarsadressen) anpassas med försäljningsassistentparametrarna utifrån händelseattributen.
+
+   * I en [API-utlöst kampanj](../campaigns/api-triggered-campaigns.md), som initierats externt av en säljare, kan det utlösta e-postmeddelandet skickas för försäljningsassistentens räkning och huvudpersonaliseringsvärdena från parametrar för kampanjkontext.
 
 1. Upprepa stegen ovan för varje parameter som du vill lägga till personalisering i.
 
@@ -138,7 +140,7 @@ Now when the email is sent out, this parameter will be automatically appended to
 
 ## Visa konfigurationsinformation {#view-surface-details}
 
-När du använder en konfiguration med anpassade inställningar i en kampanj eller konfiguration kan du visa konfigurationsinformationen direkt i kampanjen eller konfigurationen. Följ stegen nedan.
+När du använder en konfiguration med anpassade inställningar i en kampanj eller resa kan du visa konfigurationsinformationen direkt i kampanjen eller under resan. Följ stegen nedan.
 
 1. Skapa ett [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journey-gs.md) via e-post.
 
@@ -157,3 +159,33 @@ När du använder en konfiguration med anpassade inställningar i en kampanj ell
 1. Välj **[!UICONTROL Expand]** om du vill visa information om de dynamiska underdomänerna.
 
    ![](assets/campaign-delivery-settings-subdomain-expand.png)
+
+## Kontrollera konfigurationen {#check-configuration}
+
+När du använder en anpassad konfiguration i en kampanj eller resa kan du förhandsgranska ditt e-postinnehåll för att kontrollera om det finns potentiella fel med de dynamiska inställningar du har definierat. Följ stegen nedan.
+
+1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer. [Läs mer](../content-management/preview.md)
+
+1. Välj en [testprofil](../content-management/test-profiles.md).
+
+1. Om ett fel visas klickar du på knappen **[!UICONTROL View configuration details]**.
+
+   ![](assets/campaign-simulate-config-error.png)
+
+1. Kontrollera **[!UICONTROL Delivery settings]**-skärmen för felinformation.
+
+   ![](assets/campaign-simulate-config-details.png)
+
+Möjliga fel kan vara följande:
+
+* **underdomänen** löstes inte för den valda testprofilen. I konfigurationen används till exempel flera sändande underdomäner som motsvarar olika länder, men den valda profilen har inget definierat värde för attributet `Country`, eller så är attributet inställt på `France`, men det här värdet är inte associerat med någon underdomän i den konfigurationen.
+
+* Den valda profilen har inga associerade värden för en eller flera **rubrikparametrar**.
+
+Vid något av dessa fel skickas inte e-post till den valda testprofilen.
+
+Om du vill undvika den här typen av fel kontrollerar du att de rubrikparametrar du definierar använder anpassade attribut med värden för de flesta av dina profiler. Värden som saknas kan påverka e-postleveransen.
+
+>[!NOTE]
+>
+>Läs mer om leveransbarhet i [det här avsnittet](../reports/deliverability.md)

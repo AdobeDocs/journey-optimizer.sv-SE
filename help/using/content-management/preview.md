@@ -5,9 +5,9 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
-source-git-commit: c53fc226be1b6ab858c5cd75bcae363769fefa74
+source-git-commit: 87cba1d13af7a80cfe3b37a7b79e5fdd95ee5521
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '203'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 <!--## Preview your content {#preview-content}-->
 
-När [testprofiler](test-profiles.md) har valts kan du förhandsgranska innehållet. Följ stegen nedan:
+När [testprofiler](test-profiles.md) har definierats kan du förhandsgranska innehållet. Följ stegen nedan:
 
 1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer.
 
@@ -42,5 +42,7 @@ När [testprofiler](test-profiles.md) har valts kan du förhandsgranska innehål
 
 >[!NOTE]
 >
->När ni skapar kodbaserade upplevelser kan ni förhandsgranska ert personaliserade innehåll direkt i webbläsaren eller på era mobila enheter för att få en simulering i verkligheten. [Läs mer](../code-based/create-code-based.md#preview-on-device)
+>Om det finns ett fel i konfigurationsinformationen klickar du på knappen **[!UICONTROL View configuration details]**. [Läs mer](../email/surface-personalization.md#check-configuration)
+
+När ni skapar kodbaserade upplevelser kan ni förhandsgranska ert personaliserade innehåll direkt i webbläsaren eller på era mobila enheter för att få en simulering i verkligheten. [Läs mer](../code-based/create-code-based.md#preview-on-device)
 

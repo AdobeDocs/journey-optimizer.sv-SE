@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: acc3d61b571f577187503157b78de1d27ce5e1ee
+source-git-commit: 87cba1d13af7a80cfe3b37a7b79e5fdd95ee5521
 workflow-type: tm+mt
-source-wordcount: '3066'
+source-wordcount: '3162'
 ht-degree: 5%
 
 ---
@@ -51,6 +51,25 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassning av e-postkonfiguration (allmän tillgänglighet) </strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>För större flexibilitet och kontroll över e-postinställningarna kan du definiera dynamiska underdomäner och anpassade rubrikparametrar när du skapar e-postkanalskonfigurationer.
+</p>
+<p>Tidigare var e-postkonfigurationspersonalisering tillgänglig för en uppsättning organisationer (LA) och nu även för alla användare (GA).</p>
+<p>Mer information finns i den <a href="../email/surface-personalization.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/surface-perso.gif"/>
+<p>Tillgänglighetsdatum: 23 oktober 2024</p>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -342,7 +361,10 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 * Målgrupper och attribut från anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
-**Kodbaserad kanal**
+**Konfiguration** - Tillgänglighetsdatum: 23 okt 2024
+
+* När du använder en anpassad konfiguration i en kampanj eller en resa kan du nu förhandsgranska ditt e-postinnehåll för att kontrollera om det finns potentiella fel med de dynamiska inställningar du har definierat. [Läs mer](../email/surface-personalization.md#check-configuration)
+  **Kodbaserad kanal**
 
 * Innehållsmallar är nu tillgängliga. Ni kan snabba upp utvecklingen av era kodbaserade upplevelser med utgångspunkt i en innehållsmall som byggts av era utvecklare. Om du använder en innehållsmall kan marknadsföraren bara ändra vissa värden eller fält, i stället för att disponera hela HTML eller JSON-innehållets nyttolast.
 
