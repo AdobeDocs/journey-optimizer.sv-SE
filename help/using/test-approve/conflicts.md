@@ -6,9 +6,9 @@ level: Beginner
 badge: label="Begränsad tillgänglighet"
 hide: true
 hidefromtoc: true
-source-git-commit: e1121d998711ea4751da5293efdd7c1578ee44a2
+source-git-commit: 0eedadee1e8c1d4642d8602d48bcc9a49a0a2e53
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -40,6 +40,8 @@ De viktigaste områdena att övervaka för eventuell överlappning är:
 * **Kanal**: Finns det annan kommunikation schemalagd för samma tidsram och, om så är fallet, hur många?
 * **Begränsningsregeluppsättning**: Vilka typer av resor är jag capping och överlappar de?
 * **Kanalkonfiguration**: Finns det andra resor eller kampanjer som använder någon kanalkonfiguration som används i samma resa eller kampanj som kan förhindra att resan eller kampanjen visas för slutanvändaren?
+
+➡️ [Upptäck den här funktionen i videon](#video)
 
 ## Hur Journey Optimizer identifierar konflikter {#detection}
 
@@ -86,3 +88,7 @@ Här följer några tips för att minska antalet potentiella konflikter när de 
 * Ange **prioritet** för inkommande åtgärder för att se till att den viktigaste åtgärden visas för kunderna.
 
 Genom att utnyttja dessa funktioner kan ni se till att era marknadsföringssatsningar är anpassade efter varandra och att ni upprätthåller rätt balans i er kommunikationsstrategi.
+
+## Instruktionsvideo {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435528?quality=12)

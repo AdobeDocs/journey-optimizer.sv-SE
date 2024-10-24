@@ -12,9 +12,9 @@ badge: label="Beta"
 hide: true
 hidefromtoc: true
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: d458cf01c9d14682deb080083ab8bb468b3b4fd7
+source-git-commit: 0eedadee1e8c1d4642d8602d48bcc9a49a0a2e53
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1916'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 0%
 Förutom globala affärsregler som begränsar antalet gånger som användare får meddelanden i en eller flera kanaler, kan du med regeluppsättningar **gruppera flera regler i regeluppsättningar** och tillämpa dem på de kampanjer du väljer. Detta ger en förbättrad detaljrikedom som styr hur ofta användarna får ett meddelande beroende på kommunikationstypen.
 
 Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjmeddelanden** som skickas till dina kunder och en annan regeluppsättning som begränsar antalet **nyhetsbrev** som skickas till dem. Beroende på vilken typ av kampanj du skapar kan du sedan välja att använda antingen kampanjkommunikationen eller regeluppsättningen för nyhetsbrev.
+
+➡️ [Upptäck den här funktionen i videon](#video)
 
 ### Globala och anpassade regeluppsättningar {#global-custom}
 
@@ -313,3 +315,7 @@ Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till res
 >Om en resa aktiveras omedelbart kan det ta upp till 15 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 15 minuter framåt för att förhindra den här möjligheten.
 
 +++
+
+## Instruktionsvideo {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

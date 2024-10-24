@@ -6,9 +6,9 @@ level: Beginner
 badge: label="Begränsad tillgänglighet"
 hide: true
 hidefromtoc: true
-source-git-commit: e1121d998711ea4751da5293efdd7c1578ee44a2
+source-git-commit: 0eedadee1e8c1d4642d8602d48bcc9a49a0a2e53
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ Med Journey Optimizer kan ni tilldela en prioritetspoäng till en resa eller kam
 >
 >Prioritetspoäng är tillgängligt för inkommande kanaler: webbkanaler, appkanaler och kodbaserade kanaler. Prioritetspoäng är endast tillgänglig för kanalerna **i appen** och **kodbaserad**.
 
+➡️ [Upptäck den här funktionen i videon](#video)
+
 Det är viktigt att du tilldelar en prioritetspoäng för inkommande kommunikation, som webben, mobiler och appar. Om du har flera kampanjer med samma kanalkonfiguration (t.ex. en banderoll högst upp på webbsidan) kan det vara problematiskt eftersom bara innehåll från en kampanj kan visas. Prioritetspoängen är den plats där du infogar din inställning för vilken kampanj ska visas när mottagaren kan kvalificera sig för mer än en kampanj.
 
 Om du vill tilldela en prioritetspoäng till en resa eller kampanj anger du ett numeriskt värde (från 0-100) i fältet **[!UICONTROL Priority score]** som finns i resans eller kampanjens egenskaper. Observera att ju högre tal desto högre prioritet. Om ni redigerade den här kampanjen och ville se till att kampanjinnehållet visas ger ni den 100 poäng.
@@ -44,3 +46,7 @@ Om du vill tilldela en prioritetspoäng till en resa eller kampanj anger du ett 
 ![](assets/priority-score.png)
 
 I situationer där två kampanjer har samma prioritetspoäng visas den kampanj som aktiverades först.
+
+## Instruktionsvideo {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)

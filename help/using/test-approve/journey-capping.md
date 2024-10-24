@@ -6,9 +6,9 @@ level: Beginner
 badge: label="Begränsad tillgänglighet"
 hide: true
 hidefromtoc: true
-source-git-commit: fd644d4d4a92eb0e0770c1d04fe8e7cd90f3ebae
+source-git-commit: 0eedadee1e8c1d4642d8602d48bcc9a49a0a2e53
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ Färttappning hjälper dig att begränsa antalet resor som en profil kan registr
 * **Samtidighetsbegränsning** begränsar hur många resor en profil kan registreras samtidigt.
 
 Båda typerna av resefackning använder prioritetspoäng till godtyckliga poster.
+
+➡️ [Upptäck den här funktionen i videon](#video)
 
 ## Skapa en regel för spärrning av resan {#create-rule}
 
@@ -115,3 +117,7 @@ När resan har aktiverats gäller de regler som definieras i regeluppsättningen
 >[!IMPORTANT]
 >
 >Om en resa aktiveras omedelbart kan det ta upp till 15 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 15 minuter framåt för att förhindra den här möjligheten.
+
+## Instruktionsvideo {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)
