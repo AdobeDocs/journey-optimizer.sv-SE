@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: c9943f9b8dbd7668bf520c9e3e7a26251d6d3f0b
+source-git-commit: ff18cda7556240b9770639edca42ea9321d00d7a
 workflow-type: tm+mt
-source-wordcount: '3060'
+source-wordcount: '3066'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## Oktober&quot;24&quot; förhandsversionsinformation {#24-10-rn}
+## Versionsinformation, 24 oktober {#24-10-rn}
 
 >[!CAUTION]
 >
@@ -211,7 +211,7 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <tr>
 <td>
 <p>Nu kan ni enkelt skapa innehåll på flera språk i en enda kampanj eller resa. Med den här funktionen kan ni växla mellan olika språk när ni redigerar kampanjer eller hela kundresan, effektivisera hela redigeringsprocessen och förbättra möjligheterna att effektivt hantera flerspråkigt innehåll.</p>
-<p>Med allmän tillgänglighet är flerspråkigt innehåll nu tillgängligt över alla kanaler. </p>
+<p>Tidigare var flerspråkiga meddelanden tillgängliga för en uppsättning organisationer (LA), men nu är de tillgängliga för alla användare (GA).</p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
