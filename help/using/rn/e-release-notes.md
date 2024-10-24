@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: f2282fc4d0bbe67a945c43a191648e28b6b60c00
+source-git-commit: af3ed02a1af6c0fea3078bdfca6f568356c06eb4
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1853'
 ht-degree: 3%
 
 ---
@@ -83,6 +83,29 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 </tbody>
 </table>
 
+
+<table>
+<thead>
+<tr>
+<th><strong>Hantering av konflikter och prioritet (begränsad tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>I Journey Optimizer är det viktigt att hantera kampanjernas och resornas volym och tidpunkter för att undvika överväldigande kunder med alltför många interaktioner. Journey Optimizer har nu flera verktyg för konflikthantering och -prioritering.</p><p><ul><li><b>Resefrekvensbegränsning</b>: Du kan nu skapa regeluppsättningar som ska användas på dina resor, så att du kan begränsa antalet resor per dag, vecka eller månad, samt kontrollera antalet samtidiga resor som körs samtidigt.</li>
+<li><b>Prioritetspoäng</b>: Du kan nu tilldela en kampanj eller en resa ett prioritetspoäng, från 0 till 100. Ett högre tal anger en högre prioritet. När två kampanjer eller reseåtgärder använder samma kanalkonfiguration väljer Journey Optimizer den som har högst prioritet. Om kampanjerna har samma poäng väljs den kampanj som senast ändrades.</li>
+<li><b>Visa potentiella konflikter</b>: Med en ny knapp för att visa potentiella konflikter under resor och kampanjer kan du nu identifiera överlappning med andra resor eller kampanjer, till exempel startdatum, målgrupp eller den valda kanalkonfigurationen.</li>
+<li><b>Reseskiljeförfarande</b>: Med den här nya funktionen kan du prioritera de viktigaste kundresorna. Du kan skapa en regel som förhindrar inträde på en resa med lägre prioritet när en kund kvalificerar sig för en resa med högre prioritet.</li></ul></p>
+<!--<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>-->
+<p>Funktioner för hantering av konflikter och prioriteter är tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för dessa funktioner.</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
 <table>
 <thead>
 <tr>
@@ -147,7 +170,7 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <tr>
 <td>
 <p>Nu kan du skapa detaljerade regler för frekvensbegränsning och tillämpa dem på meddelanden eller resor via regeluppsättningar. Med den här nya funktionen kan ni styra hur ofta era målgrupper får ett meddelande genom att ställa in flerkanalsregler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p><p>Det gör det även möjligt att begränsa antalet resor per dag, vecka eller månad samt att kontrollera antalet samtidiga resor som körs samtidigt.</p>
-<p> Regeluppsättningar är tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för den här funktionen.</p>
+<p>Regeluppsättningar är tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för den här funktionen.</p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -254,18 +277,6 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 * Ni kan definiera och hantera unika nyckelord för era SMS-kampanjer och resor, vilket möjliggör mer personaliserad och effektiv kommunikation.
 * Du kan skapa och leverera ett standard-SMS-meddelande när ett nyckelord inte känns igen.
 
-**Hantering av konflikter och prioritet**
-
-* **Frekvensbegränsning med resa** - Nu kan du skapa regeluppsättningar som ska användas på dina resor, så att du kan begränsa antalet resor per dag, vecka eller månad, samt kontrollera antalet samtidiga resor som körs samtidigt.
-
-* **Prioritetspoäng** - Du kan nu tilldela en kampanj eller en resa ett prioritetspoäng mellan 0 och 100. Ett högre tal anger en högre prioritet. När två kampanjer eller resor använder samma kanalkonfiguration väljer Journey Optimizer den som har högst prioritet. Om kampanjerna har samma poäng väljs den senaste kampanjen. Prioritetspoäng finns för alla inkommande kanaler i kampanjer och för in-app-kanalen under resor.
-
-* **Visa konflikter** - En ny **Visa konflikter**-knapp under resor och kampanjer gör nu att du kan kontrollera om det finns en risk för att de överlappar andra resor eller kampanjer, som startdatum, målgrupp eller den valda kanalkonfigurationen.
-
->[!AVAILABILITY]
->
->Funktioner för hantering av konflikter och prioriteter är tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för den här funktionen.
-
 **Konfiguration**
 
 * **Kanalkonfigurationspersonalisering** - När du använder en anpassad konfiguration i en kampanj eller en resa kan du nu förhandsgranska ditt e-postinnehåll för att kontrollera om det finns potentiella fel med de dynamiska inställningar du har definierat.
@@ -276,16 +287,14 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 * **Max antal Live-resor** - Journey Optimizer har nu 500 live-resor i produktionssandlådor, i stället för 100. Antalet direktresor visas på arbetsytan. <!-- DOCAC-10977-->
 
-* **Tid-till-live-garanti** - Från och med 1 november 2024 tillämpas ett TTL-skyddsprotokoll (time-to-live) på Journey Optimizer systemgenererade datauppsättningar enligt följande:
+* **Tid-till-live-garanti** - Från och med 1 november 2024 kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i nya sandlådor och nya organsar enligt följande:
 
    * 90 dagar för data i profilarkivet
    * 13 månader för data i sjön
 
-  Dessutom kommer vid den tidpunkten direktuppspelningssegmentering inte längre att stödja användning av skicka- och feedback-händelser från spårnings- och feedbackdatauppsättningar. Vi har rekommenderat att inte använda dessa händelser för direktuppspelningssegmentering ett tag, och nu inaktiverar vi dem helt och hållet.
+  Den här ändringen kommer att införas i befintliga kundsandlådor senare i en andra fas.
 
-   * Den här ändringen begränsar endast användningen av skicka/öppna-händelser i direktuppspelningssegmentering. Klickhändelser kan fortfarande användas i ett direktuppspelningssegment. Dessutom kan skicka/öppna-händelser fortfarande användas i ett gruppsegment.
-   * Spårningsdata samlas fortfarande in. Den här ändringen påverkar inte spårning. Du kan fortfarande spåra till vem ett e-postmeddelande skickades och vem som klickade på ett e-postmeddelande.
-   * Reaktionshändelser i resor påverkas inte av denna förändring.
+  Från och med den 1 november har dessutom direktuppspelningssegmentering inte längre stöd för att skicka och öppna händelser från spårnings- och feedbackdatauppsättningar. Den här ändringen gäller för alla kundsandlådor och organ vid den tidpunkten. [Läs mer](../data/datasets-ttl.md)
 
 * **Parametrar i anpassade åtgärder** (Tillgänglighetsdatum: 3 oktober 2024) - NULL och valfria parametrar stöds nu i anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
@@ -308,7 +317,3 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 * När ni riktar er till en publik med CSV-filer kan ni nu använda attribut från filen i personaliseringsredigeraren och i regelbyggaren för resor och kampanjer. [Läs mer](../audience/about-audiences.md)
 
 * Målgrupper och attribut från anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
-
-**Kodbaserad kanal**
-
-När du redigerar en kodbaserad upplevelsekampanj omfattar nu de mallar som är tillgängliga att välja mellan HTML eller JSON baserat på den kanalkonfiguration som har valts tidigare.
