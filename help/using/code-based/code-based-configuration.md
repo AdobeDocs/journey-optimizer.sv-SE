@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: f715fb9135c446d569a4384ce73e9e92c72cb9ff
+source-git-commit: bcccc7b385f031fba2c2b57ec62cae127eda8466
 workflow-type: tm+mt
 source-wordcount: '1504'
 ht-degree: 1%
@@ -180,7 +180,7 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
 >id="ajo_admin_surface_uri"
 >title="Lägg till yt-URI för komponenten"
 >abstract="Om implementeringen inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er, anger du en yt-URI, som är en unik identifierare som dirigerar till enheten där du vill leverera upplevelsen. Se till att du anger en yt-URI som matchar den som används i din egen implementering."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/communication-channels/code-based-experience/code-based-configuration#other" text="Skapa en kodbaserad upplevelsekonfiguration för andra plattformar"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based-experience/code-based-configuration#other" text="Skapa en kodbaserad upplevelsekonfiguration för andra plattformar"
 
 En kodbaserad upplevelse **surface** är en entitet som utformats för användar- eller systeminteraktion, som identifieras unikt av en **URI**. Ytan anges i programimplementeringen och måste matcha den yta som refereras i den kodbaserade upplevelsekanalskonfigurationen.
 
