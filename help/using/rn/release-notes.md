@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 2ea81c13e25f1b5a3808bd956a588794f460a521
+source-git-commit: bfd0c7c976146c0cccdb51a720c27653b3e5a7b4
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 5%
@@ -343,7 +343,8 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 **Konfiguration** - Tillgänglighetsdatum: 23 okt 2024
 
 * När du använder en anpassad konfiguration i en kampanj eller en resa kan du nu förhandsgranska ditt e-postinnehåll för att kontrollera om det finns potentiella fel med de dynamiska inställningar du har definierat. [Läs mer](../email/surface-personalization.md#check-configuration)
-  **Kodbaserad kanal**
+
+**Kodbaserad kanal**
 
 * Innehållsmallar är nu tillgängliga. Ni kan snabba upp utvecklingen av era kodbaserade upplevelser med utgångspunkt i en innehållsmall som byggts av era utvecklare. Om du använder en innehållsmall kan marknadsföraren bara ändra vissa värden eller fält, i stället för att disponera hela HTML eller JSON-innehållets nyttolast.
 
