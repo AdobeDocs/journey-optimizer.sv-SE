@@ -7,9 +7,9 @@ feature: Data Model, Datasets, Data Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
-source-git-commit: a88cb8fbf324bc9c03bc7570b6637e8c95f43a20
+source-git-commit: f9fdb738210c5450376bdbf86b44d385cd740fd0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -17,39 +17,9 @@ ht-degree: 0%
 
 # Segmenteringsförändringar i realtid och direktuppspelning {#ttl-guardrail}
 
-## TTL-skydd (Time-to-live) {#ttl}
-
-Från och med 1 november 2024 kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i **nya sandlådor och nya organisationer** enligt följande:
-
-* 90 dagar för data i profilarkivet
-* 13 månader för data i sjön
-
-Den här ändringen kommer att introduceras till **befintliga kundsandlådor** i en senare fas.
-
-**Vanliga frågor**
-
-+++ Gäller den här ändringen endast för produktionssandlådor eller gäller den även för dev-sandlådor?
-
-Den här ändringen gäller för alla sandlådetyper.
-
-+++
-
-
-+++ Påverkas själva profilerna för den 90-dagars TTL-värdet i profilbutiken?
-
-Systemgenererade data i profilen tas bort efter 90 dagar, inte själva profilerna.
-
-+++
-
-+++ Om data från en systemgenererad datauppsättning överförs till Customer Journey Analytics (CJA), kommer data i CJA också att påverkas av TTL-värdet?
-
-Data i CJA hålls synkroniserade med Experience Platform. En borttagning av data på grund av en TTL på systemgenererade datauppsättningsdata kommer därför också att påverka data i CJA.
-
-+++
-
 ## Direktuppspelad segmenteringsuppdatering {#segmentation-update}
 
-Dessutom kommer direktuppspelningssegmentering den 1 november inte längre att stödja användning av skicka- och feedback-händelser från spårnings- och feedbackdatauppsättningar.  Information om varför den här proceduren har inaktiverats tidigare finns [här](../audience/about-audiences.md#streaming-segmentation-events-guardrails). Den här ändringen gäller för alla kundsandlådor och organisationer vid den tidpunkten.
+Från och med 1 november 2024 har direktuppspelningssegmentering inte längre stöd för användning av skicka och öppna händelser från Journey Optimizer spårnings- och feedbackdatauppsättningar. Den här ändringen gäller för alla kundsandlådor och organisationer. Information om varför den här proceduren har inaktiverats tidigare finns [här](../audience/about-audiences.md#streaming-segmentation-events-guardrails).
 
 **Vanliga frågor**
 
@@ -82,5 +52,40 @@ Reaktionshändelser i resor påverkas inte av denna förändring.
 +++ Gäller den här ändringen endast för produktionssandlådor eller gäller den även för dev-sandlådor?
 
 Den här ändringen gäller för alla sandlådetyper.
+
++++
+
++++ Påverkas även feedbackhändelser som är ett resultat av sändningshändelsen av ändringen?
+
+Den här ändringen gäller även för uteslutningshändelser och avhopps-/fördröjningshändelser som är ett resultat av sändningen.
+
++++
+
+## TTL-uppdatering (Phased time-to-live) {#ttl}
+
+Från och med februari 2025 kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i **nya sandlådor och nya organisationer** enligt följande:
+
+* 90 dagar för data i profilarkivet
+* 13 månader för data i sjön
+
+Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en efterföljande fas.
+
+**Vanliga frågor**
+
++++ Gäller den här ändringen endast för produktionssandlådor eller gäller den även för dev-sandlådor?
+
+Den här ändringen gäller för alla sandlådetyper.
+
++++
+
++++ Påverkas själva profilerna för den 90-dagars TTL-värdet i profilbutiken?
+
+Systemgenererade data i profilen tas bort efter 90 dagar, inte själva profilerna.
+
++++
+
++++ Om data från en systemgenererad datauppsättning överförs till Customer Journey Analytics (CJA), kommer data i CJA också att påverkas av TTL-värdet?
+
+Data i CJA hålls synkroniserade med Experience Platform. En borttagning av data på grund av en TTL på systemgenererade datauppsättningsdata kommer därför också att påverka data i CJA.
 
 +++

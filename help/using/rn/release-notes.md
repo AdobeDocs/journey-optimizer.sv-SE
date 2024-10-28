@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 7ae8a92be62f6b699a6b222ee5440540fbacffaa
+source-git-commit: f9fdb738210c5450376bdbf86b44d385cd740fd0
 workflow-type: tm+mt
-source-wordcount: '3096'
+source-wordcount: '3101'
 ht-degree: 5%
 
 ---
@@ -309,14 +309,14 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 **Datauppsättningar**
 
-* **Tid-till-live-garanti** - Från och med 1 november 2024 kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i nya sandlådor och nya organsar enligt följande:
+* **Skicka och öppna händelser** - Med början 1 november 2024 har direktuppspelningssegmentering inte längre stöd för att skicka och öppna händelser från Journey Optimizer spårnings- och feedbackdatauppsättningar. Den här ändringen gäller för alla kundsandlådor och organisationer. [Läs mer](../data/datasets-ttl.md#segmentation-update)
+
+* **Datauppsättning TTL (Time-to-live)** - Från och med februari 2025 introduceras ett TTL-skyddsprotokoll (time-to-live) i Journey Optimizer systemgenererade datauppsättningar i nya sandlådor och nya organ enligt följande:
 
    * 90 dagar för data i profilarkivet
    * 13 månader för data i sjön
 
-  Den här ändringen kommer att införas i befintliga kundsandlådor senare i en andra fas.
-
-  Från och med den 1 november har dessutom direktuppspelningssegmentering inte längre stöd för att skicka och öppna händelser från spårnings- och feedbackdatauppsättningar. Den här ändringen gäller för alla kundsandlådor och organ vid den tidpunkten. [Läs mer](../data/datasets-ttl.md)
+  Den här ändringen kommer att introduceras i befintliga kundsandlådor i en efterföljande fas. [Läs mer](../data/datasets-ttl.md#ttl)
 
 * **Parametrar i anpassade åtgärder** (Tillgänglighetsdatum: 3 oktober 2024) - NULL och valfria parametrar stöds nu i anpassade åtgärder. [Läs mer](../action/about-custom-action-configuration.md#define-the-message-parameters)
 
