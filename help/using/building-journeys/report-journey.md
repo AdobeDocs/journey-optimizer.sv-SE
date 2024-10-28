@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 59a597a563074fa4daa74c64e97f6bb5c0f6834d
+source-git-commit: 9b4ff0325d099252a5785aa13cfe0f1fe42acac6
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ De visade händelserna inträffade under de senaste 24 timmarna, med ett minsta 
 
 Du har tillgång till följande för din direktresa:
 
-* **[!UICONTROL Entered profiles]**: Totalt antal personer som har gått in i den här aktiviteten.
+* **[!UICONTROL Entered profiles]**: Totalt antal personer som avbrutit resan (inklusive fel).
 * **[!UICONTROL Exited profiled]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
 * **[!UICONTROL Profiles in error]**: Totalt antal personer som påträffade ett fel under sin resa.
 * **[!UICONTROL Discarded profiles]**: Totalt antal personer som tagits bort från resan av någon av följande orsaker:
@@ -41,6 +41,6 @@ Du har tillgång till följande för din direktresa:
 
 För varje aktivitet inom varje live-resa har du tillgång till:
 
-* **[!UICONTROL Entered profiles]**: Totalt antal personer som har gått in i den här aktiviteten.
-* **[!UICONTROL Exited profile]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
+* **[!UICONTROL Entered]**: Totalt antal personer som har gått in i den här aktiviteten.
+* **[!UICONTROL Exited (met exit criteria)]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
 * **[!UICONTROL Error]**: Totalt antal personer som hade ett fel i den aktiviteten.
