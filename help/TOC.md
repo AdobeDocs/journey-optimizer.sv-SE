@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 2a666364144cf320a9ed20741da7d6f5d22b0d96
+source-git-commit: b6705059782a872939fa51fd51d335b1386a3e91
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 24%
@@ -195,7 +195,7 @@ ht-degree: 24%
       + [Skapa och hantera godkännandepolicyer](using/test-approve/approval-policies.md)
       + [Begär godkännande](using/test-approve/request-approval.md)
       + [Godkänn en begäran](using/test-approve/review-approve-request.md)
-+ Kommunikationskanaler {#communication-channels}
++ Kommunikationskanaler {#channels}
    + [Kom igång med kommunikationskanaler](using/channels/gs-channels.md)
    + E-postkanal {#email}
       + [Kom igång med e-post](using/email/get-started-email.md)
