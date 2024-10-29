@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 1948bc304da8af9a83a2f0f81854a701d0d65e2b
+source-git-commit: d83339f8b6e02e6035b759b6b52bd18ea9a626e3
 workflow-type: tm+mt
-source-wordcount: '5668'
+source-wordcount: '5703'
 ht-degree: 13%
 
 ---
@@ -21,6 +21,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Oktober 2024 {#oct-2024}
 
+* Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] oktoberversionen 24 finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
+* Alla kommunikationskanaler som är tillgängliga i [!DNL Journey Optimizer] grupperas nu i ett dedikerat avsnitt i dokumentationen. [Läs mer](../channels/gs-channels.md)
 * Sidan **Konfigurera din kodbaserade upplevelse** har förbättrats för att göra processen tydligare, inklusive avsnittet som förklarar vad en yt-URI är. [Läs mer](../code-based/code-based-configuration.md)
 * Sidan **Skapa webbkanalskonfiguration** har uppdaterats för att klargöra stegen när du skapar en sidmatchningsregel, som även gäller för kodbaserad upplevelsekonfiguration. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
 * En anteckning om det kommande TTL-skyddsutkastet (time-to-live) för systemgenererade datauppsättningar har lagts till. [Läs mer](../data/get-started-datasets.md)

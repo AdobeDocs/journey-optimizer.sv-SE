@@ -5,7 +5,7 @@ title: Kom igång med kommunikationskanaler i  [!DNL Adobe Journey Optimizer]
 description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommunikationskanaler.
 role: User
 level: Beginner
-source-git-commit: 972d517ec2a5779f8c3196b40f1418b9c207d791
+source-git-commit: d83339f8b6e02e6035b759b6b52bd18ea9a626e3
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -22,27 +22,30 @@ I dagens dynamiska marknadsföringslandskap är det viktigt att effektivt nå ut
 ## Inkommande och utgående kanaler {#inbound-outbound}
 
 Att förstå skillnaden mellan inkommande och utgående kanaler är avgörande för att optimera er kommunikationsstrategi:
+
 * Inkommande kanaler: Med dessa kanaler kan kunderna starta interaktioner. Exempel är meddelanden i appen och webbaserad interaktion, där användarna kan interagera med innehållet på sina egna villkor.
+
 * Utgående kanaler: Det handlar om att skicka meddelanden till kunder utan föregående interaktion. Exempel är e-postkampanjer och push-meddelanden, där ni aktivt når ut till er målgrupp.
+
 Genom att utnyttja båda kanaltyperna effektivt kan ni förbättra kundupplevelserna och öka engagemanget.
 
 ## Tillgängliga kanaler {#channels}
 
-Adobe Journey Optimizer erbjuder en mängd olika kommunikationskanaler för att effektivt interagera med er målgrupp. Här är en lista över de kanaler ni kan utnyttja:
+Adobe Journey Optimizer erbjuder en mängd olika kommunikationskanaler för att effektivt interagera med er målgrupp. Här är en lista över de kanaler du kan utnyttja:
 
-Utgående kanaler:
+* Utgående kanaler
 
-* **E-post**: Leverera personaliserade meddelanden direkt till dina kunders inkorgar.
-* **SMS/MMS**: Skicka textmeddelanden till användare på deras mobila enheter.
-* **Push-meddelande**: Engagera användarna med snabbmeddelanden på deras enheter och få dem att agera direkt.
-* **Direkt e-post**: Använd fysisk e-post för att skapa en faktisk anslutning till din målgrupp.
+   * **E-post**: Leverera personaliserade meddelanden direkt till dina kunders inkorgar.
+   * **SMS/MMS**: Skicka textmeddelanden till användare på deras mobila enheter.
+   * **Push-meddelande**: Engagera användarna med snabbmeddelanden på deras enheter och få dem att agera direkt.
+   * **Direkt e-post**: Använd fysisk e-post för att skapa en faktisk anslutning till din målgrupp.
 
-Inkommande kanaler:
+* Inkommande kanaler
 
-* **I appen**: Kommunicera med användare i dina mobil- eller webbprogram för att förbättra deras upplevelse.
-* **Webb**: Använd webbaserade meddelanden för att interagera med användare som surfar på webbplatsen.
-* **Kodbaserad upplevelse**: Implementera anpassade upplevelser genom att koda för unika engagemangsmöjligheter.
-* **Innehållskort**: Dela dynamiskt innehåll direkt inifrån program eller webbplatser för att hålla användarna informerade och engagerade.
+   * **I appen**: Kommunicera med användare i dina mobil- eller webbprogram för att förbättra deras upplevelse.
+   * **Webb**: Använd webbaserade meddelanden för att interagera med användare som surfar på webbplatsen.
+   * **Kodbaserad upplevelse**: Implementera anpassade upplevelser genom att koda för unika engagemangsmöjligheter.
+   * **Innehållskort**: Dela dynamiskt innehåll direkt inifrån program eller webbplatser för att hålla användarna informerade och engagerade.
 
 ## Utnyttja kanaler under resor och kampanjer {#leverage}
 
@@ -51,7 +54,7 @@ I Adobe Journey Optimizer kan du utnyttja kommunikationskanaler i två primära 
 * **Resor**: Skapa sömlösa kundupplevelser över flera kontaktytor. Automatisera interaktioner baserat på användarbeteende och preferenser, och säkerställ att användarens kommunikation vägleder användarna genom hela kundresan med ert varumärke.
 * **Kampanjer**: Distribuera specifika marknadsföringskampanjer som använder en viss kanal för att uppnå målinriktade mål. Vare sig ni marknadsför en ny produkt eller driver säsongsförsäljningen kan ni med kampanjer skapa fokuserade meddelandestrategier som är skräddarsydda för er målgrupp.
 
-Kom igång! Klicka på kanalerna nedan för att fördjupa dig i var och en och se hur ni kan utnyttja dem effektivt i er marknadsföringsstrategi.
+Kom så börjar vi! Klicka på kanalerna nedan för att fördjupa dig i var och en och se hur ni kan utnyttja dem effektivt i er marknadsföringsstrategi.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../email/get-started-email.md"><img alt="e-post" src="assets/do-not-localize/email.png"></a>
