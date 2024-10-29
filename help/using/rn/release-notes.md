@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 92dbfedcd4dbc94674f0fb89c6dee3fdb082c918
+source-git-commit: 6f517ca209ae992f8daf3b285ccabebac100081b
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1414'
 ht-degree: 6%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card1"
 >title="Nyheter?"
->abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i dessa versionsinformation."
+>abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i dessa versionsinformation. [!DNL Adobe Journey Optimizer] har skapats på [!DNL Adobe Experience Platform] och ärver från sina senaste innovationer och förbättringar. Läs mer om dessa ändringar i [Versionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## Oktober 24-utgåvan {#24-10-rn}
+## 24 oktober {#24-10-rn}
 
 **Releasedatum**: 29-30 oktober 2024
 
@@ -108,16 +108,16 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan:
 <table>
 <thead>
 <tr>
-<th><strong>Integrering med Mobile Ink och Adobe Journey Optimizer</strong><br/></th>
+<th><strong>Integrering med Movable Ink och Adobe Journey Optimizer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du integrera Movable Ink Da Vinci och Adobe Journey Optimizer. Med denna nya integrering kan du: </p>
-<p><ul><li>Utnyttja kraftfulla funktioner i Movable Inks Da Vinci-produkt för att montera och anpassa e-postvarianter för gruppkampanjer</li>
-<li>Påskynda arbetsflöden för administratörer för Journey Optimizer-kunder med Da Vinci för redigering och Adobe Journey Optimizer för optimering och leverans</li>
-<li>Optimera Da Vinci-modellerna med data från Adobe.</li></ul></p>
+<p>Nu kan du integrera Movable Ink Da Vinci och Adobe Journey Optimizer. Med den nya integreringen kan du </p>
+<p><ul><li>Utnyttja de kraftfulla funktionerna i Movable Inks Da Vinci-produkt för att sammanställa och personalisera e-postvarianter för gruppkampanjer</li>
+<li>Snabba upp arbetsflödena för användare av Journey Optimizer med Da Vinci för framställning och Adobe Journey Optimizer för optimering och leverans</li>
+<li>Optimera Da Vinci-modeller med data från Adobe.</li></ul></p>
 <p>Mer information finns i <a href="https://movableink.com/adobe-and-movable-ink">Dokumentationen för Da Vinci med flyttbara bläck</a>.</p>
 </tr>
 </tbody>
@@ -223,7 +223,7 @@ Tidigare tillgängligt för en uppsättning organisationer (LA), men nu är föl
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer rapportering är nu allmänt tillgänglig (GA) och har förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering för båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Den här sömlösa integreringen mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningar, så att användare kan fatta mer välgrundade beslut.</p>
+<p>Journey Optimizer rapportering är nu allmänt tillgänglig (GA) och har förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering för båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.</p>
 <p>Med General Availability introduceras fyra nya funktioner: möjlighet att skapa enkla mätvärden, skapa och publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter som automatiskt ska skickas till viktiga mottagare.</p>
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
@@ -292,14 +292,14 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 **Webbkanal**
 
-* **Icke-visuellt redigeringsläge för webbdesigner** - Som ett alternativ till webbdesignern i Journey Optimizer kan du nu lägga till ändringar på webbplatsen med en icke-visuell redigerare. Det gör att du kan ange dina ändringar manuellt utan att öppna sidorna i den visuella redigeraren. Det här icke-visuella redigeringsläget är användbart om du inte kan installera webbläsartillägg, som Adobe Experience Cloud Visual Helper, som krävs för att läsa in sidorna i webbdesignern.
+* **Icke-visuellt redigeringsläge för webbdesignern** - Som ett alternativ till Journey Optimizer webbdesigners kan du nu lägga till ändringar på webbplatsen med en icke-visuell redigerare. Du kan ange ändringarna manuellt utan att öppna sidorna i den visuella redigeraren. Det här icke-visuella redigeringsläget är användbart om du inte kan installera webbläsartillägg som Adobe Experience Cloud Visual Helper, som krävs för att läsa in sidorna i webbdesignern. [Läs mer](../web/web-non-visual-editor.md)
 
 
-**Datamängder**
+**Datauppsättningar**
 
-* **Skicka och öppna händelser** - Från och med 1 november 2024 stöder inte längre segmentering av direktuppspelning användning av skicka och öppna händelser från Journey Optimizer-spårning och feedbackdatamängder. Den här ändringen gäller alla kundsandlådor och organisationer. [Läs mer](../data/datasets-ttl.md#segmentation-update)
+* **Skicka och öppna händelser** - Med början 1 november 2024 har direktuppspelningssegmentering inte längre stöd för att skicka och öppna händelser från Journey Optimizer spårnings- och feedbackdatauppsättningar. Den här ändringen gäller för alla kundsandlådor och organisationer. [Läs mer](../data/datasets-ttl.md#segmentation-update)
 
-* **Datauppsättningslivstid (TTL)** - Från och med februari 2025 kommer ett TTL-skydd (time-to-live) att distribueras till systemgenererade Journey Optimizer-datauppsättningar i nya sandlådor och nya organisationer enligt följande:
+* **Datauppsättning TTL (Time-to-live)** - Från och med februari 2025 introduceras ett TTL-skyddsprotokoll (time-to-live) i Journey Optimizer systemgenererade datauppsättningar i nya sandlådor och nya organ enligt följande:
 
    * 90 dagar för data i profilarkivet
    * 13 månader för data i sjön
@@ -310,7 +310,7 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 **Rapportering**
 
-* **Rapportering om Experience Decisioning** finns nu tillgänglig och ger viktiga insikter i hur era besökare interagerar med era upplevelser.
+* **Rapportering om Experience Decisioning** finns nu tillgänglig och ger viktiga insikter i hur era besökare interagerar med era upplevelser. [Läs mer](../reports/campaign-global-report-cja-code.md##decisioning-kpis)
 
 **Datastyrning och samtycke** - Tillgänglighetsdatum: 7 okt 2024
 
@@ -326,11 +326,11 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 * När ni riktar er till en publik med CSV-filer kan ni nu använda attribut från filen i personaliseringsredigeraren och i regelbyggaren för resor och kampanjer. [Läs mer](../audience/about-audiences.md)
 
-* Användningen av målgrupper och attribut från anpassad överföring (CSV-fil) är nu tillgänglig för användning med Healthcare Shield eller Privacy and Security Shield.
+* Målgrupper och attribut från anpassad uppladdning (CSV-fil) kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
-**Konfiguration** - tillgänglighetsdatum: 23 okt 2024
+**Konfiguration** - Tillgänglighetsdatum: 23 okt 2024
 
-* När du använder en personlig konfiguration i en kampanj eller en resa kan du nu förhandsgranska ditt e-postinnehåll för att söka efter potentiella fel med de dynamiska inställningar du har definierat. [Läs mer](../email/surface-personalization.md#check-configuration)
+* När du använder en anpassad konfiguration i en kampanj eller en resa kan du nu förhandsgranska ditt e-postinnehåll för att kontrollera om det finns potentiella fel med de dynamiska inställningar du har definierat. [Läs mer](../email/surface-personalization.md#check-configuration)
 
 **Kodbaserad kanal**
 

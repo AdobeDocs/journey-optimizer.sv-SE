@@ -5,7 +5,7 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Experienced
-source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
+source-git-commit: 6f517ca209ae992f8daf3b285ccabebac100081b
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
