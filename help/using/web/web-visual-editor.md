@@ -5,14 +5,16 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 72959e1079b59d51042cdf6843f1a9fb7dd37f9c
+source-git-commit: 7cf58ae33c0b3e6d6b9ce19aa71ba105db40c602
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 1%
 
 ---
 
+
 # Arbeta med webbdesignern {#work-with-web-designer}
+
 <!--
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
@@ -27,7 +29,7 @@ ht-degree: 1%
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
 -->
 
-I [!DNL Journey Optimizer] drivs visuell webbredigering av webbläsartillägget **Adobe Experience Cloud Visual Helper**. [Läs mer](web-prerequisites.md#visual-authoring-prerequisites)
+I [!DNL Journey Optimizer] hanteras visuell webbutveckling av webbläsartillägget **Adobe Experience Cloud Visual Helper** i Chrome. [Läs mer](web-prerequisites.md#visual-authoring-prerequisites)
 
 >[!CAUTION]
 >
@@ -55,13 +57,13 @@ Följ stegen nedan för att börja skapa din webbupplevelse med den visuella web
 
 1. I webbdesignern markerar du ett element på arbetsytan, till exempel bild, knapp, stycke, text, behållare, rubrik, länk osv. [Läs mer](#content-components)
 
-1. Så här redigerar du ett element:
+1. Om du vill redigera ett element kan du använda:
 
-   * Snabbmenyn för att redigera innehåll, layout, infoga länkar eller anpassning osv.
+   * Den sammanhangsbaserade menyn där du kan redigera innehåll, layout, infoga länkar eller personalisering, osv.
 
      ![](assets/web-designer-contextual-bar.png)
 
-   * Ikonerna ovanpå den högra panelen om du vill redigera, duplicera, ta bort eller dölja varje element.
+   * Ikonerna överst på den högra panelen för att redigera, duplicera, ta bort eller dölja varje element.
 
      ![](assets/web-designer-right-panel-icons.png)
 
@@ -79,8 +81,8 @@ När du har redigerat webbinnehållet kan du hantera ändringarna. [Läs mer](ma
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_components"
->title="Lägga till komponenter på din webbsida"
->abstract="Du kan lägga till ett antal komponenter på din webbsida och redigera dem efter behov."
+>title="Lägga till komponenter på webbsidan"
+>abstract="Du kan lägga till ett antal komponenter på webbsidan och redigera dem efter behov."
 
 1. Markera ett objekt i rutan **[!UICONTROL Components]** till vänster. Du kan lägga till följande komponenter på webbsidan och redigera dem efter behov:
 
@@ -105,29 +107,29 @@ När du har redigerat webbinnehållet kan du hantera ändringarna. [Läs mer](ma
 
    ![](assets/web-designer-edit-header.png)
 
-1. Justera formaten som visas i det sammanhangsberoende fönstret till höger, t.ex. bakgrund, textfärg, kant, storlek och placering. - beroende på den valda komponenten.
+1. Justera de format som visas i rutan till höger, t.ex. bakgrund, textfärg, kant, storlek, position. - beroende på vald komponent.
 
    ![](assets/web-designer-header-style.png)
 
-## Lägg till anpassning
+## Lägg till personalisering
 
-Om du vill lägga till anpassning väljer du en behållare och väljer anpassningsikonen på snabbmenyraden som visas. Lägg till dina ändringar med anpassningsredigeraren. [Läs mer](../personalization/personalization-build-expressions.md)
+Om du vill lägga till personalisering markerar du en behållare och väljer personaliseringsikonen på den snabbmenyrad som visas. Lägg till ändringarna med personaliseringsredigeraren. [Läs mer](../personalization/personalization-build-expressions.md)
 
 ![](assets/web-designer-personalization.png)
 
 ## Navigera i webbdesignern {#navigate-web-designer}
 
-I det här avsnittet beskrivs olika sätt att navigera i webbdesignern. Om du vill visa och hantera ändringarna som lagts till i webbupplevelsen kan du läsa mer i [det här avsnittet](manage-web-modifications.md).
+I det här avsnittet beskrivs olika sätt att navigera i webbdesignern. Information om hur du visar och hanterar de ändringar som har lagts till i webbupplevelsen finns i [det här avsnittet](manage-web-modifications.md).
 
-### Använd brödsmulor {#breadcrumbs}
+### Använd vägbeskrivningar {#breadcrumbs}
 
 1. Markera ett element på arbetsytan.
 
-1. Klicka på knappen **[!UICONTROL Expand/Collapse Breadcrumbs]** längst ned till vänster på skärmen för att snabbt visa information om det valda elementet.
+1. Klicka på knappen **[!UICONTROL Expand/Collapse Breadcrumbs]** längst ned till vänster på skärmen för att snabbt visa information om det markerade elementet.
 
    ![](assets/web-designer-breadcrumbs.png)
 
-1. När du hovrar över brödsmulorna markeras motsvarande element i redigeraren.
+1. När du håller muspekaren över vägbeskrivningarna markeras motsvarande element i redigeraren.
 
 1. Med den kan du enkelt navigera till alla överordnade, jämställda eller underordnade element i den visuella redigeraren.
 
@@ -142,11 +144,11 @@ Du kan växla från standardläget **[!UICONTROL Design]** till läget **[!UICON
 
 ![](assets/web-designer-browse-mode.png)
 
-Från läget **[!UICONTROL Browse]** kan du navigera till den exakta sidan från den valda konfigurationen som du vill anpassa.
+I **[!UICONTROL Browse]**-läget kan du navigera till den exakta sidan från den valda konfigurationen som du vill anpassa.
 
-Det är särskilt användbart när det handlar om sidor som ligger bakom autentisering eller som inte är tillgängliga från början vid en viss URL. Du kan till exempel autentisera, gå till kontosidan eller kundvagnssidan och sedan växla tillbaka till läget **[!UICONTROL Design]** för att utföra ändringarna på den önskade sidan.
+Det är särskilt användbart när du hanterar sidor som är bakom autentisering eller som inte är tillgängliga från början på en viss URL. Du kan till exempel autentisera, navigera till din kontosida eller till kundvagnssidan och sedan växla tillbaka till läget **[!UICONTROL Design]** för att kunna utföra ändringarna på den önskade sidan.
 
-Genom att använda läget **[!UICONTROL Browse]** kan du också navigera i alla vyer på webbplatsen när du redigerar enkelsidiga program. [Läs mer](web-spa.md)
+I **[!UICONTROL Browse]**-läget kan du även navigera i alla vyer på webbplatsen när du redigerar ensidiga program. [Läs mer](web-spa.md)
 
 ### Ändra enhetsstorlek {#change-device-size}
 
@@ -160,9 +162,9 @@ Möjligheten att ändra enhetsstorleken är utformad för responsiva sajter som 
 
 >[!CAUTION]
 >
->Du kan redigera en webbupplevelse med en viss enhetsstorlek. Så länge väljarna är desamma gäller dock dessa ändringar för alla storlekar och enheter, inte bara för den enhetsstorlek som du arbetar i. När du redigerar en upplevelse i den normala skrivbordsvyn tillämpas ändringarna på samma sätt på alla skärmstorlekar, inte bara på skrivbordet.
+>Du kan redigera en webbupplevelse med en viss enhetsstorlek. Så länge väljarna är desamma gäller dock dessa ändringar för alla storlekar och enheter, inte bara för den enhetsstorlek som du arbetar i. På samma sätt tillämpas ändringarna på alla skärmstorlekar, inte bara på skrivbordsvyn, när du redigerar en upplevelse i den normala skrivbordsvyn.
 >
->För närvarande stöder inte [!DNL Journey Optimizer] enhetsstorleksspecifika sidändringar. Det innebär att om du till exempel har en separat mobilwebbplats med en separat webbplatsstruktur, bör du göra ändringarna specifika för din mobilwebbplats i en annan kampanj.
+>[!DNL Journey Optimizer] stöder för närvarande inte enhetsstorleksspecifika sidändringar. Det innebär att om du till exempel har en separat mobilwebbplats med en separat webbplatsstruktur, bör du göra ändringarna specifika för din mobilwebbplats i en annan kampanj.
 
 ## Instruktionsvideo{#video}
 
