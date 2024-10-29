@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Följ de nya DMARC-kraven
-description: Läs varför och när du måste ange en DMARC-post i Journey Optimizer
+title: Uppfyll nya krav från DMARC
+description: Läs varför och när du måste ange DMARC-post i Journey Optimizer
 feature: Subdomains, Channel Configuration, Deliverability
 topic: Administration
 role: Admin
@@ -16,14 +16,14 @@ ht-degree: 0%
 
 ---
 
-# Följ de nya DMARC-kraven {#dmarc-record-update}
+# Uppfyll nya krav från DMARC {#dmarc-record-update}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_banner_link"
 >title="Läs mer om obligatorisk DMARC-uppdatering"
->abstract="Som en del av deras branschledande praxis kräver både Google och Yahoo att du har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem, med början den **1 februari 2024**.<br>Du måste därför se till att DMARC-posten har konfigurerats för alla underdomäner som du har delegerat till Adobe i Journey Optimizer."
+>abstract="Som en del av deras branschledande praxis kräver både Google och Yahoo att du har en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem, med början den **1 februari 2024**.<br>Du måste därför se till att du har angett en DMARC-post för alla underdomäner som du har delegerat till Adobe i Journey Optimizer."
 
-Domänbaserad Message Authentication, Reporting och Conformance (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. Genom att erbjuda en tydlig profil till e-postleverantörer/Internet-leverantörer hjälper den till att förhindra att oseriösa aktörer skickar e-postmeddelanden som påstår sig vara från din domän. Implementering av DMARC minskar risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och förbättrar e-postleveransen.
+Domänbaserad meddelandeautentisering, rapportering och överensstämmelse (DMARC) är en e-postautentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. Genom att erbjuda en tydlig profil till e-postleverantörer/Internet-leverantörer hjälper den till att förhindra att oseriösa aktörer skickar e-postmeddelanden som påstår sig vara från din domän. Implementering av DMARC minskar risken för att legitima e-postmeddelanden markeras som skräppost eller avvisas, och förbättrar e-postleveransen.
 
 Google och Yahoo är en del av deras branschledande arbetsmetoder! båda kräver en **DMARC-post** för alla domäner som du använder för att skicka e-post till dem. Det nya kravet gäller från och med den **1 februari 2024**.
 
@@ -31,7 +31,7 @@ Google och Yahoo är en del av deras branschledande arbetsmetoder! båda kräver
 >
 >Misslyckas med att uppfylla det nya kravet från Gmail och Yahoo! förväntas resultera i att e-postmeddelanden landar i skräppostmappen eller blockeras.
 
-Därför rekommenderar Adobe att du ser till att DMARC-posten har konfigurerats för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ stegen nedan som gäller ditt ärende:
+Därför rekommenderar Adobe starkt att du ser till att du har DMARC-post konfigurerad för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ stegen nedan som gäller ditt ärende:
 
 * Om du har [delegerat](delegate-subdomain.md#full-subdomain-delegation) dina sändande underdomäner till Adobe följer du ett av alternativen nedan:
 

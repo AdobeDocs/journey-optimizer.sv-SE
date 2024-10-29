@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_locking_governance"
 >title="Styrning"
->abstract="Aktivera styrning om du vill låsa innehållet i mallen, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. På så sätt kan ni förhindra oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer."
+>abstract="Växla till styrning om du vill låsa innehåll i mallen, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. På så sätt kan ni förhindra oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer."
 
 >[!CONTEXTUALHELP]
 >id="ajo_locking_mode"
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_locking_content_addition"
 >title="Aktivera tillägg av innehåll"
->abstract="Växla till det här alternativet om du vill definiera ytterligare hur användare kan interagera med mallen. Välj **Tillåt struktur- och innehållstillägg** om du vill tillåta användare att lägga till strukturer mellan befintliga strukturer och lägga till innehållskomponenter eller fragment inom redigerbara strukturer. **Med** kan du lägga till innehållskomponenter eller fragment i redigerbara strukturer utan att kunna lägga till eller duplicera strukturer."
+>abstract="Växla till det här alternativet om du vill definiera ytterligare hur användare kan interagera med mallen. Välj **Tillåt struktur- och innehållstillägg** om du vill tillåta användare att lägga till strukturer mellan befintliga och lägga till innehållskomponenter eller fragment inom redigerbara strukturer. **Tillåt endast tillägg av innehåll** tillåter användare att lägga till innehållskomponenter eller fragment i redigerbara strukturer utan att kunna lägga till eller duplicera strukturer."
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_locking_activated"
@@ -40,17 +40,17 @@ ht-degree: 0%
 >title="Skrivskyddad"
 >abstract="Det här innehållet är skrivskyddat och kan inte ändras."
 
-Med Journey Optimizer kan du låsa innehåll i e-postmallar, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. Detta gör att du kan förhindra oavsiktliga redigeringar eller borttagningar, vilket ger dig större kontroll över mallanpassningen och förbättrar effektiviteten och tillförlitligheten i dina e-postkampanjer.
+Med Journey Optimizer kan du låsa innehåll i e-postmallar, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. På så sätt kan ni förhindra oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer.
 
 >[!AVAILABILITY]
 >
->Användare med behörighet att skapa innehållsmallar kan aktivera innehållslåsning.
+>Användare med behörighet att skapa innehållsmallar kan aktivera låsning av innehåll.
 
-Låsning av innehåll kan tillämpas antingen på **strukturnivå** eller på **komponentnivå**. Här är de huvudprinciper som gäller på struktur- och komponentnivå vid låsning av innehåll i mallen.
+Innehållslås kan användas antingen på **strukturnivå** eller på **komponentnivå**. Här är huvudprinciperna som gäller på struktur- och komponentnivå när innehåll låses i mallen.
 
 * När en struktur är låst:
 
-   * Allt innehåll i strukturen är också låst som standard.
+   * Allt innehåll i den strukturen är också låst som standard.
    * Inget innehåll kan läggas till i strukturen.
    * Som standard kan du inte ta bort strukturen. Du kan åsidosätta den här begränsningen genom att aktivera alternativet&quot;Tillåt borttagning&quot;.
    * Enskilda innehållskomponenter i den låsta strukturen kan anges som redigerbara.
@@ -88,9 +88,9 @@ Du kan aktivera innehållslås för en e-postmall direkt i e-postmallen Designer
    * [Lär dig låsa strukturer](#lock-structures)
    * [Lär dig låsa komponenter](#lock-components)
 
-   Om du valde läget **[!UICONTROL Read only]** kan du fortsätta med att slutföra och spara mallen som vanligt.
+   Om du väljer läget **[!UICONTROL Read only]** kan du fortsätta med att slutföra och spara mallen som vanligt.
 
-Du kan när som helst justera **[!UICONTROL Governance]**-inställningarna när du utformar mallen genom att välja malltexten. Du gör detta genom att klicka på länken **[!UICONTROL Body]** i navigeringslisten högst upp i det högra fönstret.
+Du kan justera inställningarna för **[!UICONTROL Governance]** när som helst när du designar mallen genom att välja mallbrödtexten. Det gör du genom att klicka på länken **[!UICONTROL Body]** i navigeringsfältet som finns högst upp på den högra panelen.
 
 ![](assets/template-lock-body.png)
 
@@ -98,7 +98,7 @@ Du kan när som helst justera **[!UICONTROL Governance]**-inställningarna när 
 
 >[!CONTEXTUALHELP]
 >id="ajo_locking_structure"
->title="Låsning av innehåll i strukturen"
+>title="Låsning av innehåll i struktur"
 >abstract="Om du vill låsa strukturen i mallen väljer du **Låst** i listrutan **Lås typ**. Som standard kan användare inte ta bort låsta strukturer. Du kan åsidosätta den här begränsningen genom att aktivera alternativet **[!UICONTROL Allow delete]**."
 
 Så här låser du en struktur i mallen:
@@ -127,8 +127,8 @@ När du har låst en struktur kan inga ytterligare innehållskomponenter eller f
 
 >[!CONTEXTUALHELP]
 >id="ajo_locking_component"
->title="Använda specifik låsning i komponent"
->abstract="Om du vill låsa komponenten i mallen aktiverar du alternativet **Använd specifik låsning**. I listrutan **[!UICONTROL Lock type]** väljer du önskat låsalternativ: **Endast redigerbart innehållslås** gör att du kan låsa komponentens format men tillåter innehållsredigering, medan **Låst** helt låser både komponentens innehåll och stilar."
+>title="Använd specifik låsning i komponenten"
+>abstract="Om du vill låsa komponenten i mallen aktiverar du alternativet **Använd specifikt låsning**. Välj önskat låsalternativ i listrutan **[!UICONTROL Lock type]**: **Endast redigerbart innehållslås** gör att du kan låsa komponentens format men tillåta innehållsredigering, medan **Låst** helt låser både komponentens innehåll och format."
 
 Så här låser du en specifik komponent i en struktur:
 
@@ -151,16 +151,16 @@ Så här låser du en specifik komponent i en struktur:
 
 Använd **[!UICONTROL Navigation tree]** på den vänstra menyn för att enkelt identifiera låsta strukturer och komponenter i mallen. Den här menyn innehåller en visuell översikt över alla mallelement. Låsta objekt markeras med en låsikon och redigerbara objekt med en pennikon.
 
-I exemplet nedan är styrning aktiverat för mallbrödtexten. *Struktur 2* är låst med *komponent 1* redigerbar, medan *struktur 3* är helt låst.
+I exemplet nedan är styrning aktiverat för mallbrödtexten. *Struktur 2* är låst med *Komponent 1* redigerbar, medan *Struktur 3* är helt låst.
 
 ![](assets/template-lock-navigation.png)
 
-## Använda mallar med låst innehåll {#use}
+## Använd mallar med låst innehåll {#use}
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_editable_areas"
 >title="Markera redigerbara områden"
->abstract="Beroende på vilken typ av låsning som används på mallen kan du utföra olika åtgärder på mallens strukturer och komponenter. Om du snabbt vill identifiera alla redigerbara områden i mallen aktiverar du alternativet **[!UICONTROL Highlight editable areas]**."
+>abstract="Beroende på vilken typ av låsning som används för mallen kan du utföra olika åtgärder för mallens strukturer och komponenter. Om du snabbt vill identifiera alla redigerbara områden i mallen aktiverar du alternativet **[!UICONTROL Highlight editable areas]**."
 
 När du använder en mall med låst innehåll visas meddelandet **[!UICONTROL Governance enabled]** i den högra rutan.
 
