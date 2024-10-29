@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 9509fd67-6d12-4440-aad8-59690936be97
-source-git-commit: 5f261b4c097023557f95831635f2be141dfc5bc8
+source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 0%
@@ -21,9 +21,9 @@ Om du vill kunna komma åt och skapa webbsidor i användargränssnittet för [!D
 
 * Om du vill komma åt webbdesignern [!DNL Journey Optimizer] måste du ha ett specifikt webbläsartillägg för Google Chrome installerat. [Läs mer](#visual-authoring-prerequisites)
 
-* För att webbupplevelsen ska kunna levereras på rätt sätt måste du definiera de Adobe Experience Platform-inställningar som anges [här](#delivery-prerequisites).
+* Om webbupplevelsen ska levereras korrekt måste du definiera Adobe Experience Platform-inställningarna som beskrivs [här](#delivery-prerequisites).
 
-* Om du vill aktivera rapportering för webbkanalen måste du se till att datauppsättningen som används i ditt webbimplementeringsdatastam också inkluderas i din rapportkonfiguration. [Läs mer](#experiment-prerequisites)
+* Om du vill aktivera rapportering för webbkanalen måste du se till att datauppsättningen som används i webbimplementeringsdataströmmen också ingår i rapporteringskonfigurationen. [Läs mer](#experiment-prerequisites)
 
 >[!IMPORTANT]
 >
@@ -52,35 +52,35 @@ Två typer av implementeringar stöds för att skapa och leverera webbkanalskamp
 
 <!--In order to rapidly author and preview your web experiences, the Adobe Experience Cloud Visual Editing Helper browser extension for Google Chrome lets you load websites reliably within the Adobe [!DNL Journey Optimizer] web designer.-->
 
-Om du vill kunna öppna, redigera och förhandsgranska dina webbsidor på ett tillförlitligt sätt i webbdesignern [!DNL Journey Optimizer] måste du ha webbläsartillägget [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} installerat i webbläsaren.
+Om du vill kunna öppna, skapa och förhandsgranska dina webbsidor i webbdesignern [!DNL Journey Optimizer] måste du ha webbläsartillägget [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} installerat i webbläsaren.
 
 >[!CAUTION]
 >
 >Google Chrome och Microsoft Edge är för närvarande de enda webbläsare som har stöd för att skapa webbsidor i [!DNL Journey Optimizer].
 
-### Installera tillägget Hjälp för visuell redigering {#install-visual-editing-helper}
+### Installera hjälptillägget för visuell redigering {#install-visual-editing-helper}
 
-Följ stegen nedan om du vill hämta och installera tillägget för hjälpen för visuell redigering.
+Följ stegen nedan för att hämta och installera webbläsartillägget Visual Editing Helper.
 
 1. Öppna en ny flik i webbläsaren (Google Chrome eller Microsoft Edge).
 
 1. Gå till [Google Chrome Web Store](https://chrome.google.com/webstore/category/extensions){target="_blank"}.
 
-1. Om du använder Microsoft Edge väljer du **[!UICONTROL Allow extensions from other stores]** på den översta banderollen. Då kan du lägga till tillägg från Chrome Web Store till Microsoft Edge.
+1. Om du använder Microsoft Edge väljer du **[!UICONTROL Allow extensions from other stores]** i den övre banderollen. Detta gör att du kan lägga till tillägg från Chrome Web Store till Microsoft Edge.
 
-1. Sök och navigera till webbläsartillägget [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} .
+1. Sök efter och gå till webbläsartillägget [Adobe Experience Cloud Hjälp för visuell redigering](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Add to Chrome]** > **[!UICONTROL Add Extension]**.
 
    >[!NOTE]
    >
-   >Om du använder Microsoft Edge läggs tillägget till i Edge även om knappen har etiketten **[!UICONTROL Add to Chrome]**.
+   >Om du använder Microsoft Edge läggs tillägget till i Edge även om knappen är märkt **[!UICONTROL Add to Chrome]**.
 
 1. Kontrollera att webbläsartillägget Visuell redigeringshjälp är korrekt aktiverat i webbläsarens verktygsfält.
 
    ![](assets/web-visual-editing-extension-edge.png)
 
-Hjälpprogrammet för visuell redigering i Adobe Experience Cloud aktiveras nu automatiskt när en webbplats öppnas i [!DNL Journey Optimizer] [webbdesignern](edit-web-content.md#work-with-web-designer) som kan användas för redigering.
+Hjälpprogrammet för visuell redigering i Adobe Experience Cloud aktiveras nu automatiskt när en webbplats öppnas i [!DNL Journey Optimizer] [webbdesignern](web-visual-editor.md) som kan användas för redigering.
 
 Tillägget har inga villkorsinställningar och hanterar automatiskt alla inställningar, inklusive cookies för SameSite.
 
@@ -89,14 +89,14 @@ Tillägget har inga villkorsinställningar och hanterar automatiskt alla instäl
 >Vissa webbplatser kanske inte kan öppnas på ett tillförlitligt sätt i webbdesignern [!DNL Journey Optimizer] på grund av någon av följande orsaker:
 >
 > * Webbplatsen har strikta säkerhetsprinciper.
-> * Webbplatsen ligger i en iframe.
-> * Kundens QA- eller stage-sajt är inte tillgänglig för omvärlden (webbplatsen är intern).
+> * Webbplatsen är i en iframe.
+> * Kundens frågor och svar eller plats är inte tillgänglig för omvärlden (platsen är intern).
 
-### Felsök webbplatsen som inte läses in {#troubleshooting}
+### Felsökning av webbplats läses inte in {#troubleshooting}
 
-När du använder webbdesignern [!DNL Journey Optimizer] i Adobe visas ett meddelande om att du har installerat webbläsartillägget [Hjälp för visuell redigering](#install-visual-editing-helper) om du försöker läsa in en webbplats som inte kan läsas in.
+Om du försöker läsa in en webbplats som inte kan läsas in när du använder webbdesignern Adobe [!DNL Journey Optimizer] visas ett meddelande om att du bör installera webbläsartillägget [Visual Editing Helper](#install-visual-editing-helper).
 
-1. Kontrollera att webbläsartillägget för hjälpen för visuell redigering är korrekt installerat.
+1. Kontrollera att webbläsartillägget Visual Editing Helper är korrekt installerat.
 
 1. Om webbplatsen fortfarande uppför sig oväntat bör du kontrollera att cookies från tredje part tillåts i webbläsaren, annars kan webbsidan inte läsas in i webbdesignern [!DNL Journey Optimizer].
 
@@ -108,7 +108,7 @@ För sidor som autentiseras, om inloggningssidan inte kan läsas in eller om du 
 
 ## Leveransvillkor {#delivery-prerequisites}
 
-För att webbupplevelsen ska kunna levereras på rätt sätt måste följande inställningar definieras:
+För att webbupplevelsen ska levereras korrekt måste följande inställningar definieras:
 
 * I [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"} kontrollerar du att du har en datastream definierad, till exempel under **[!UICONTROL Adobe Experience Platform]**-tjänsten som du har alternativet **[!UICONTROL Adobe Journey Optimizer]** aktiverat.
 
@@ -130,15 +130,15 @@ För att webbupplevelsen ska kunna levereras på rätt sätt måste följande in
 
 ## Krav för rapportering {#experiment-prerequisites}
 
-Om du vill aktivera rapportering för webbkanalen måste du se till att den [datamängd](../data/get-started-datasets.md) som används i din webbimplementering [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} också ingår i rapportkonfigurationen.
+Om du vill aktivera rapportering för webbkanalen måste du se till att [datauppsättningen](../data/get-started-datasets.md) som används i webbimplementeringen [dataströmmen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} också ingår i rapporteringskonfigurationen.
 
-Om du lägger till en datauppsättning som inte finns i webbdataströmmen när du konfigurerar rapporter, visas alltså inte webbdata i dina rapporter.
+Med andra ord, om du lägger till en datauppsättning när du konfigurerar rapporter som inte finns i webbdataströmmen, kommer webbdata inte att visas i dina rapporter.
 
 Lär dig hur du lägger till datauppsättningar för rapportering i [det här avsnittet](../reports/reporting-configuration.md#add-datasets).
 
 >[!NOTE]
 >
->Datauppsättningen används skrivskyddat av rapportsystemet [!DNL Journey Optimizer] och påverkar inte datainsamling eller datainmatning.
+>Datauppsättningen är skrivskyddad av rapporteringssystemet [!DNL Journey Optimizer] och påverkar inte datainsamling eller datainhämtning.
 
 Om du **inte** använder följande fördefinierade [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} för datamängdsschemat: `AEP Web SDK ExperienceEvent` och `Consumer Experience Event` (enligt definition i [den här sidan](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html#add-field-groups){target="_blank"}), måste du lägga till följande fältgrupper: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details` och `Web Details`. Dessa behövs av [!DNL Journey Optimizer] som rapporterar när de spårar vilka kampanjer och resor varje profil deltar i.
 
@@ -148,6 +148,6 @@ Om du **inte** använder följande fördefinierade [fältgrupper](https://experi
 >
 >När du lägger till dessa fältgrupper påverkas inte den normala datainsamlingen. Det är endast additivt för de sidor där en kampanj eller resa pågår, och lämnar all annan spårning orörd.
 
-## Varumärkesdomäner för resurser {#branded-domains-for-assets}
+## Varumärkta domäner för resurser {#branded-domains-for-assets}
 
-Om du lägger till innehåll från biblioteket [Adobe Experience Manager Assets](../content-management/assets.md) när du skapar webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet. [Läs mer](web-delegated-subdomains.md)
+Om du lägger till innehåll från biblioteket [Adobe Experience Manager Assets](../content-management/assets.md) när du utvecklar webbupplevelser, måste du konfigurera underdomänen som ska användas för att publicera detta innehåll. [Läs mer](web-delegated-subdomains.md)

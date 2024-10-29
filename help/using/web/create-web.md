@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 1%
+source-wordcount: '1326'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Med [!DNL Journey Optimizer] kan du anpassa webbupplevelsen som du levererar till dina kunder via inkommande resor eller kampanjer.
 
-## Lägga till en webbupplevelse via en resa eller en kampanj {#create-web-experience}
+## Definiera en webbupplevelse genom en resa eller en kampanj {#create-web-experience}
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_surface"
@@ -59,7 +59,7 @@ Så här lägger du till en **webbaktivitet** på en resa:
 
    ![](assets/web-activity-configuration.png)
 
-1. Markera knappen **[!UICONTROL Edit content]** och redigera ditt innehåll efter behov med webbdesignern. [Läs mer](edit-web-content.md)
+1. Markera knappen **[!UICONTROL Edit content]** och redigera innehållet efter behov. [Läs mer](#edit-web-content)
 
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
@@ -87,7 +87,7 @@ Följ stegen nedan för att börja skapa en webbupplevelse genom en kampanj.
 
    ![](assets/web-campaign-steps.png)
 
-1. Klicka på knappen **[!UICONTROL Edit content]** om du vill redigera ditt innehåll med webbdesignern. [Läs mer](edit-web-content.md)
+1. Klicka på knappen **[!UICONTROL Edit content]** om du vill redigera innehållet. [Läs mer](#edit-web-content)
 
    <!--![](assets/web-campaign-edit-content.png)-->
 
@@ -97,6 +97,41 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
 >[!ENDTABS]
 
+## Redigera webbinnehåll {#edit-web-content}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_url_to_edit_surface"
+>title="Bekräfta den URL som ska redigeras"
+>abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_url_to_edit_rule"
+>title="Ange den URL som ska redigeras"
+>abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
+
+När du har [lagt till en webbåtgärd](#create-web-experience) på en resa eller en kampanj kan du redigera innehållet på din webbplats med:
+
+* [webbdesignern](web-visual-editor.md) för att skapa din upplevelse med en visuell redigerare;
+* eller [den icke-visuella redigeraren](web-non-visual-editor.md).
+
+Följ stegen nedan för att börja skapa din webbupplevelse.
+
+1. Välj **[!UICONTROL Edit content]** på fliken **[!UICONTROL Action]** i kampanjen eller **[!UICONTROL Web]**-aktiviteten i resan.
+
+   ![](assets/web-campaign-edit-content.png)
+
+1. Versionsskärmen visas. Du kan antingen:
+
+   * Klicka på knappen **[!UICONTROL Edit web page]** för att börja skapa ditt innehåll med webbdesignern för en visuell upplevelse. [Läs mer](web-visual-editor.md)
+
+     ![](assets/web-campaign-edit-web-page.png)
+
+   * Avmarkera alternativet **[!UICONTROL Visual editor]** om du vill använda det icke-visuella versionsläget i stället och klicka på **[!UICONTROL Add a modification]** om du vill börja redigera webbinnehållet utan att läsa in den visuella redigeraren. [Läs mer](web-non-visual-editor.md)
+
+     ![](assets/web-campaign-add-modification.png)
+
 ## Testa webbupplevelsen {#test-web-experience}
 
 >[!CONTEXTUALHELP]
@@ -104,7 +139,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >title="Förhandsgranska din webbupplevelse"
 >abstract="Få en simulering av hur webbupplevelsen kommer att se ut."
 
-När du [har skapat din webbupplevelse](edit-web-content.md) med webbdesignern kan du använda testprofiler för att förhandsgranska dina ändrade webbsidor. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas med hjälp av testprofilsdata.
+När du [har skapat din webbupplevelse](web-visual-editor.md) med webbdesignern kan du använda testprofiler för att förhandsgranska dina ändrade webbsidor. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas med hjälp av testprofilsdata.
 
 Om du vill göra det klickar du på **[!UICONTROL Simulate content]** på skärmen för att redigera innehåll för resan eller kampanjen och lägger sedan till en testprofil för att kontrollera din webbsida med hjälp av testprofildata.
 
@@ -124,7 +159,7 @@ Detaljerad information om hur du väljer testprofiler och förhandsgranskar inne
 >
 > Om er kampanj omfattas av en policy för godkännande måste ni begära godkännande för att kunna aktivera era webbupplevelser. [Läs mer](../test-approve/gs-approval.md)
 
-När du har definierat din webbupplevelse och du har redigerat ditt innehåll efter behov med [webbdesignern](edit-web-content.md#work-with-web-designer) kan du aktivera din resa eller kampanj så att dina ändringar blir synliga för din målgrupp.
+När du har definierat webbupplevelsen och redigerat innehållet efter behov kan du aktivera resan eller kampanjen för att göra ändringarna synliga för målgruppen.
 
 Du kan också förhandsgranska webbupplevelseinnehållet innan du publicerar det. [Läs mer](#test-web-experience)
 
@@ -156,7 +191,7 @@ Din webbresa har statusen **[!UICONTROL Live]** och är nu skrivskyddad. Varje m
 
 ### Aktivera en webbkampanj {#activate-web-campaign}
 
-När du har definierat inställningarna för webbkampanjen och redigerat innehållet som du vill med [webbdesignern](edit-web-content.md#work-with-web-designer) kan du granska och aktivera webbkampanjen. Följ stegen nedan.
+När du har definierat inställningarna för webbkampanjen och redigerat innehållet efter behov kan du granska och aktivera webbkampanjen. Följ stegen nedan.
 
 1. Välj **[!UICONTROL Review to activate]** från webbkampanjen.
 
@@ -177,6 +212,8 @@ Din webbkampanj har statusen **[!UICONTROL Live]** och är nu synlig för den va
 >När du har klickat på **[!UICONTROL Activate]** kan det ta upp till 15 minuter innan webbkampanjer blir tillgängliga live på din webbplats.
 >
 >Om du har definierat ett schema för webbkampanjen har den statusen **[!UICONTROL Scheduled]** tills startdatumet och starttiden nås.
+
+När upplevelsen är klar kan ni övervaka era webbresor och kampanjer. [Läs mer](monitor-web-experiences.md)
 
 ## Stoppa en webbresa eller kampanj {#stop-web-experience}
 

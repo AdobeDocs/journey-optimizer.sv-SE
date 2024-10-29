@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+source-git-commit: 2a7707f5538a8d01a7b0d7e531d94d9ef922097a
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1742'
 ht-degree: 1%
 
 ---
@@ -49,6 +49,8 @@ Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
 
 1. Markera knappen **[!UICONTROL Edit content]** och redigera ditt innehåll efter behov med hjälp av anpassningsredigeraren. [Läs mer](#edit-code)
 
+   Du kan också använda en befintlig innehållsmall som bas för kodinnehållet. Observera att mallarna som är tillgängliga att välja omfattar antingen HTML eller JSON baserat på den kanalkonfiguration som har valts tidigare. [Lär dig använda innehållsmallar](../content-management/use-content-templates.md)
+
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
 1. När kodbasupplevelsen är klar kan du slutföra konfigurationen och publicera resan för att aktivera den. [Läs mer](../building-journeys/publishing-the-journey.md)
@@ -76,6 +78,8 @@ Följ stegen nedan för att börja skapa din **kodbaserade**-upplevelse via en k
    ![](assets/code-based-campaign-surface.png)
 
 1. Redigera ditt innehåll med personaliseringsredigeraren. [Läs mer](#edit-code)
+
+   Du kan också använda en befintlig innehållsmall som bas för kodinnehållet. Observera att mallarna som är tillgängliga att välja omfattar antingen HTML eller JSON baserat på den kanalkonfiguration som har valts tidigare. [Lär dig använda innehållsmallar](../content-management/use-content-templates.md)
 
    <!--![](assets/code-based-campaign-edit-content.png)-->
 

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b6705059782a872939fa51fd51d335b1386a3e91
+source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2157'
 ht-degree: 24%
 
 ---
@@ -260,14 +260,15 @@ ht-degree: 24%
       + [Kontrollera och skicka ett direktutskick](using/direct-mail/test-send-direct-mail.md)
       + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
    + Webbkanal {#web}
-      + [Kom igång med webbkanalen](using/web/get-started-web.md)
+      + [Kom igång med en webbkanal](using/web/get-started-web.md)
       + Konfigurera webbkanal {#configure-web-channel}
          + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
          + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
          + [Skapa webbkanalskonfiguration](using/web/web-configuration.md)
       + [Skapa webbupplevelser](using/web/create-web.md)
       + Skapa webbsidor {#author-web-pages}
-         + [Redigera webbsidesinnehåll](using/web/edit-web-content.md)
+         + [Arbeta med webbdesignern](using/web/web-visual-editor.md)
+         + [Använda den icke-visuella redigeraren](using/web/web-non-visual-editor.md)
          + [Hantera ändringar](using/web/manage-web-modifications.md)
          + [Övervaka era webbupplevelser](using/web/monitor-web-experiences.md)
          + [Skapa single-page-appar](using/web/web-spa.md)
@@ -321,7 +322,7 @@ ht-degree: 24%
       + [Arbeta med Experience Manager Assets](using/content-management/assets.md)
       + [Arbeta med Adobe Stock](using/content-management/stock.md)
    + Personalisering {#personalization}
-      + [Kom igång med personalisering](using/personalization/personalize.md)
+      + [Kom igång med anpassning](using/personalization/personalize.md)
       + [Personalization-kontexter](using/personalization/personalization-contexts.md)
       + [Personalization syntax](using/personalization/personalization-syntax.md)
       + [Använd Adobe Experience Platform-data för personalisering](using/personalization/lookup-aep-data.md)
@@ -381,7 +382,7 @@ ht-degree: 24%
    + [Licensanvändning](using/audience/license-usage.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
-      + [Kom igång med Live Report](using/reports/live-report.md)
+      + [Kom igång med Live-rapport](using/reports/live-report.md)
       + [Lista över komponenter](using/reports/live-report-components.md)
       + [Journey Live-rapport](using/reports/journey-live-report.md)
       + [Campaign Live-rapport](using/reports/campaign-live-report.md)
@@ -407,16 +408,16 @@ ht-degree: 24%
          + [Reserapport](using/reports/journey-global-report-cja.md)
          + [Kodbaserad reserapport](using/reports/journey-global-report-cja-code.md)
          + [Rapport om resan med innehållskort](using/reports/journey-global-report-cja-content.md)
-         + [Rapport om direktreklam](using/reports/journey-global-report-cja-direct.md)
-         + [Rapport om e-postresa](using/reports/journey-global-report-cja-email.md)
-         + [Rapport om resan i appen](using/reports/journey-global-report-cja-inapp.md)
-         + [Rapport om push-resa](using/reports/journey-global-report-cja-push.md)
+         + [Färdrapport för direktreklam](using/reports/journey-global-report-cja-direct.md)
+         + [Rapport över e-postresa](using/reports/journey-global-report-cja-email.md)
+         + [Reserapport i appen](using/reports/journey-global-report-cja-inapp.md)
+         + [Push-färdrapport](using/reports/journey-global-report-cja-push.md)
          + [SMS-reserapport](using/reports/journey-global-report-cja-sms.md)
-         + [Rapport om webbresa](using/reports/journey-global-report-cja-web.md)
+         + [Rapport över webbresa](using/reports/journey-global-report-cja-web.md)
       + [Översiktsrapport](using/reports/channel-report-cja.md)
-      + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
+      + [Landningssidesrapport](using/reports/lp-report-global-cja.md)
       + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
-   + Tidigare rapportupplevelse {#reports}
+   + Tidigare rapporteringsupplevelse {#reports}
       + Global rapport {#global-report}
          + [Kom igång med global rapport](using/reports/global-report.md)
          + [Lista över komponenter](using/reports/global-report-components.md)
@@ -440,9 +441,9 @@ ht-degree: 24%
          + [Identitetsfält](using/reports/sharing-identity-fields.md)
       + [Exempel på frågor](using/reports/query-examples.md)
    + Leverans {#deliverability}
-      + [Kom igång med leverans](using/reports/deliverability.md)
-      + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
-      + [Nytt DMARC-krav](using/configuration/dmarc-record-update.md)
+      + [Kom igång med leveransmöjligheter](using/reports/deliverability.md)
+      + [Förstå listan med hämmande](using/reports/suppression-list.md)
+      + [Nytt krav från DMARC](using/configuration/dmarc-record-update.md)
    + [Aviseringar](using/reports/alerts.md)
    + [Uteslutningsorsaker](using/reports/exclusion-list.md)
 + Avgör {#decisioning}
@@ -469,7 +470,7 @@ ht-degree: 24%
       + Skapa och hantera erbjudanden {#managing-offers-in-the-offer-library}
          + Konfigurera erbjudanden {#configure-offers}
             + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)
-            + [Lägg till representationer](using/offers/offer-library/add-representations.md)
+            + [Lägg till framställningar](using/offers/offer-library/add-representations.md)
             + [Lägg till begränsningar](using/offers/offer-library/add-constraints.md)
          + [Skapa reserverbjudanden](using/offers/offer-library/creating-fallback-offers.md)
          + [Skapa samlingar](using/offers/offer-library/creating-collections.md)

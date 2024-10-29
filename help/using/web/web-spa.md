@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b33e4bca-d2e9-4610-9f04-008d47f686d0
-source-git-commit: 45f19563c79d298eeec6cb757636a9ce47e54adf
+source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '451'
 ht-degree: 1%
 
 ---
@@ -41,13 +41,13 @@ Om du vill kunna komma åt och redigera vyer i användargränssnittet för [!DNL
 
 När SPA har konfigurerats i Adobe Experience Platform Web SDK-implementeringen måste du navigera bland alla vyer på webbplatsen som du vill ändra. Följ stegen nedan.
 
-1. [Skapa en webbkampanj](create-web.md) och få tillgång till [webbdesignern](edit-web-content.md).
+1. [Skapa en webbresa eller kampanj](create-web.md) och få tillgång till [webbdesignern](web-visual-editor.md).
 
    Den vy du befinner dig i visas längst upp till vänster.
 
    ![](assets/web-designer-view-home.png)
 
-1. Växla till läget **[!UICONTROL Browse]**. [Läs mer](../web/edit-web-content.md#browse-mode)
+1. Växla till läget **[!UICONTROL Browse]**. [Läs mer](web-visual-editor.md#browse-mode)
 
    ![](assets/web-designer-view-browse.png)
 

@@ -2,24 +2,24 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Användargränssnitt
-description: Läs mer om Journey Optimizer användargränssnitt
+description: Läs mer om användargränssnittet i Journey Optimizer
 feature: Overview, Get Started
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 72bda999c9e866398375422d8419516e5fea97b5
+source-git-commit: e3ebbb021b7336fa859deb19d4e5786a4f4fdf30
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1395'
 ht-degree: 4%
 
 ---
 
 # Användargränssnitt {#cjm-user-interface}
 
-Om du vill komma åt [!DNL Adobe Journey Optimizer] ansluter du till [Adobe Experience Cloud](https://experience.adobe.com) med din Adobe ID och väljer [!DNL Journey Optimizer].
+Om du vill komma åt [!DNL Adobe Journey Optimizer] ansluter du till [Adobe Experience Cloud](https://experience.adobe.com) med ditt Adobe ID och väljer [!DNL Journey Optimizer].
 
-De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"}.
+Viktiga begrepp när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"}.
 
 Vilka komponenter och funktioner som är tillgängliga i användargränssnittet beror på dina [behörigheter](../administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager för alla frågor.
 
@@ -72,11 +72,11 @@ Skapa erbjudanden och komponenter från det här avsnittet.
 
 Skapa och hantera innehåll från det här avsnittet.
 
-* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](../content-management/assets.md)
+* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets] är ett centraliserat lager med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](../content-management/assets.md)
 
-* **[!UICONTROL Content templates]** - Skapa fristående mallar för att enkelt återanvända anpassat innehåll i Journey Optimizer kampanjer och resor för en snabbare och bättre designprocess. [Läs mer](../content-management/content-templates.md)
+* **[!UICONTROL Content templates]** - Skapa fristående mallar för en snabbare och förbättrad designprocess så att du enkelt kan återanvända anpassat innehåll i Journey Optimizer kampanjer och resor. [Läs mer](../content-management/content-templates.md)
 
-* **[!UICONTROL Fragments]** - Skapa och hantera fragment för att underlätta e-postdesignprocessen: skapa anpassade innehållsblock som kan användas för att snabbt sammanställa e-postinnehåll. [Läs mer](../content-management/fragments.md)
+* **[!UICONTROL Fragments]** - Skapa och hantera fragment för att jämna ut e-postdesignprocessen: förskapa anpassade innehållsblock som kan användas för att snabbt sammanställa e-postinnehåll. [Läs mer](../content-management/fragments.md)
 
 ### [!UICONTROL DATA MANAGEMENT] {#left-nav-data}
 
@@ -96,15 +96,15 @@ Hantera dataanslutningar med andra appar och moln i det här avsnittet.
 
 * **[!UICONTROL Sources]** - Använd den här menyn om du vill importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lagringsplatser, databaser med mera. Du kan strukturera, etikettera och förbättra inkommande data. [Läs mer](get-started-sources.md)
 
-* **[!UICONTROL Destinations]** - Använd den här menyn för att skapa en liveanslutning med molnlagringsplatser för att exportera innehållet i dina datauppsättningar. [Läs mer](../data/export-datasets.md)
+* **[!UICONTROL Destinations]** - Använd den här menyn om du vill skapa en direktanslutning till molnlagringsplatser för att exportera innehållet i dina datauppsättningar. [Läs mer](../data/export-datasets.md)
 
 ### [!UICONTROL CUSTOMER] {#left-nav-customers}
 
-Hantera era målgrupper och profildata från det här avsnittet.
+Hantera målgrupper och profildata från det här avsnittet.
 
-* **[!UICONTROL Audiences]** - Skapa och hantera målgrupper i Experience Platform och använd dem på dina resor. [Läs mer](../audience/about-audiences.md)
+* **[!UICONTROL Audiences]** - Skapa och hantera Experience Platform-målgrupper och använd dem på dina resor. [Läs mer](../audience/about-audiences.md)
 
-* **[!UICONTROL Subscription lists]** - I [!DNL Journey Optimizer] samlas kunder som har anmält sig till en prenumerationstjänst in i en prenumerationslista. [Läs mer](../landing-pages/subscription-list.md)
+* **[!UICONTROL Subscription lists]** - Om [!DNL Journey Optimizer] samlas kunder som har valt en prenumerationstjänst i en prenumerationslista. [Läs mer](../landing-pages/subscription-list.md)
 
 * **[!UICONTROL Profiles]** - Kundprofilen i realtid skapar en helhetsbild av alla dina enskilda kunder och kombinerar data från flera kanaler, inklusive online-, offline-, CRM- och tredjepartsdata. [Läs mer](../audience/get-started-profiles.md)
 
@@ -124,7 +124,7 @@ Styr din sekretesshantering och dina förfrågningar från det här avsnittet.
 
 ### [!UICONTROL ADMINISTRATION] {#left-nav-admin}
 
-* **[!UICONTROL Configurations]** - Använd den här menyn för att konfigurera [händelser](../event/about-events.md), [datakällor](../datasource/about-data-sources.md) och [åtgärder](../action/action.md) att använda på dina resor.
+* **[!UICONTROL Configurations]** - Använd den här menyn för att konfigurera [aktiviteter](../event/about-events.md), [datakällor](../datasource/about-data-sources.md) och [åtgärder](../action/action.md) som ska användas i dina resor.
 
   Du kan även komma åt avsnittet **Rapportering** för att konfigurera rapportering för kampanjexperiment och webb/mobil. [Läs mer](../reports/reporting-configuration.md)
 
@@ -191,7 +191,7 @@ Så här byter du språk:
 * Klicka på **Inställningar** i din avatar högst upp till höger.
   ![](assets/preferences.png)
 * Klicka sedan på det språk som visas under din e-postadress
-* Välj önskat språk och klicka på **Spara**. Du kan välja ett andra språk om komponenten som du använder inte är lokaliserad på ditt första språk.
+* Välj önskat språk och klicka på **Spara**. Du kan välja ett andra språk om komponenten du använder inte är lokaliserad till ditt första språk.
   ![](assets/select-language.png)
 
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
@@ -205,8 +205,8 @@ Så här byter du språk:
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_capping_rule"
->title="Använd regeluppsättning för resor"
->abstract="Använd en regeluppsättning för att exkludera den här resan till en del av målgruppen baserat på regler för frekvensbegränsning."
+>title="Använd regeln som är inställd på resor"
+>abstract="Använd en regeluppsättning för att utesluta den här resan till en del av din målgrupp baserat på regler för frekvensbegränsning."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_rule_type"
@@ -232,45 +232,7 @@ Så här byter du språk:
 
 <!--CONTENT LOCKING-->
 
->[!CONTEXTUALHELP]
->id="ajo_locking_governance"
->title="Styrning"
->abstract="Styrning"
 
->[!CONTEXTUALHELP]
->id="ajo_locking_mode"
->title="Läge"
->abstract="Läge"
-
->[!CONTEXTUALHELP]
->id="ajo_locking_content_addition"
->title="Aktivera tillägg av innehåll"
->abstract="Aktivera tillägg av innehåll"
-
->[!CONTEXTUALHELP]
->id="ajo_locking_structure"
->title="Låsning av innehåll i struktur"
->abstract="Låsning av innehåll i struktur"
-
->[!CONTEXTUALHELP]
->id="ajo_locking_component"
->title="Använd specifik låsning i komponenten"
->abstract="Använd specifik låsning i komponenten"
-
->[!CONTEXTUALHELP]
->id="ajo_email_editable_areas"
->title="Markera redigerbara områden"
->abstract="Markera redigerbara områden"
-
->[!CONTEXTUALHELP]
->id="ajo_email_locking_activated"
->title="Styrning har aktiverats"
->abstract="Lås innehåll aktiveras och kan förhindra att du gör ändringar."
-
->[!CONTEXTUALHELP]
->id="ajo_email_locking_read_only"
->title="Skrivskyddad"
->abstract="Det här innehållet är skrivskyddat och kan inte ändras."
 
 <!--APPROVAL POLICIES-->
 

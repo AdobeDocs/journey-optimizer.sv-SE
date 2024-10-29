@@ -8,21 +8,196 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
-source-git-commit: f316ec79958ac23e0e416f0cafd49c017f2b6d4c
+source-git-commit: e3ebbb021b7336fa859deb19d4e5786a4f4fdf30
 workflow-type: tm+mt
-source-wordcount: '3838'
-ht-degree: 6%
+source-wordcount: '4772'
+ht-degree: 7%
 
 ---
 
 # Versionsinformation för 2024 {#release-notes-2024}
 
-På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2024.
+Den här sidan visar alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2024.
+
+## September 24-utgåvan {#24-9-rn}
+
+<!--
+>[!CAUTION]
+>
+>**Early release notes below are subject to change without prior notice until the release date**. Links, screens and updated documentation are published at the release date.
+>
+-->
+
+**Utgivningsdatum**: 24-26 september 2024
+
+### Nya funktioner {#24-9-features}
+
+Den här versionen innehåller de nya funktionerna som beskrivs nedan.
+
+<table>
+<thead>
+<tr>
+<th><strong>Innehållskort för mobilappar och webbplatser</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Innehållskort är en ny funktion för digitala meddelanden i Adobe Journey Optimizer som levererar personaliserat och engagerande innehåll direkt inifrån mobilappar och webbplatser. Till skillnad från traditionella push-meddelanden integreras Content Cards smidigt i användargränssnittet med permanenta, icke-påträngande uppdateringar som förbättrar användarinteraktionen och upplevelsen.</p>
+<p>Med den här funktionen kan marknadsförarna presentera relevant, multimediematerial för användarna, vilket ökar engagemanget och säkerställer att viktiga meddelanden syns utan att störa användarresan.</p>
+<p>Mer information finns i den <a href="../content-card/get-started-content-card.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/content-card.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Godkännanden av resor och kampanjer (LA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med godkännandepolicyer kan ni nu skapa en godkännandeprocess i Journey Optimizer som gör det möjligt för marknadsföringsteamen att se till att kampanjer och resor granskas och signeras av lämpliga intressenter innan de publiceras.</p>
+<p>Godkännandepolicyer är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Mer information finns i den <a href="../test-approve/gs-approval.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/approval.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--<table>
+<thead>
+<tr>
+<th><strong>Email Content Locking</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now allows you to lock content in email templates, either by locking the entire template or specific structures and component. This allows you to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.</p>
+<p>For more information, refer to the <a href="../content-management/gs-generative.md">detailed documentation</a>.</p>
+<img src="assets/do-not-localize/gif-content-locking.gif">
+</td>
+</tr>
+</tbody>
+</table>-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Kriterier för globalt utträde under resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu definierar ni utträdeskriterier på resenivå. Genom att lägga till kriterier för att avsluta resan gör du så att profilerna avslutas så snart en händelse inträffar (t.ex. köp) eller så kvalificerar de sig för en viss målgrupp. Detta förhindrar användaren från att få ut mer information från resan.</p>
+<p>Mer information finns i den <a href="../building-journeys/journey-properties.md#exit-criteria">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>AI Assistant Content Accelerator </strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>När du har skapat och personaliserat ditt budskap går du ett steg längre med AI Assistant Content Accelerator i Journey Optimizer. Nu kan du använda AI-assistenten för att optimera budskapets effekt genom att experimentera med olika huvudtitlar och bilder. Varje variant hanteras som en unik behandling för att mäta och jämföra vilken titel som effektivt genererar fler klick.</p>
+<p>Fördjupa dig i en praktisk upplevelse med <a href="https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator">vår förhandsvisning av aktiva funktioner</a>, som är utformad för att du först ska kunna utforska dess funktioner och till fullo förstå dess funktioner.</a>.</p>
+<p>Mer information finns i den <a href="../content-management/gs-generative.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/ai-content.gif"/>
+<p>Tillgänglighetsdatum: 12 september 2024</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Inställningar för guidad kanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Guided Channel Setup kan man automatisera och validera kanalkonfigurationen i en enhetlig upplevelse och därmed få igång Journey Optimizer snabbare. Denna nya guidade installation effektiviserar konfigurationen av kanaler så att alla nödvändiga resurser snabbt kan installeras och användas i Experience Platform, Journey Optimizer och datainsamling. På så sätt kan marknadsförings-, produkt- och datateknikteam snabbt börja med att skapa kampanjer och resor.</p>
+<p>Mer information finns i den <a href="../configuration/set-mobile-config.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/guided-setup.gif"/>
+<p>Tillgänglighetsdatum: 3 september 2024</p>
+</br>
+</td>
+</tr>
+</tbody>
+</table>
 
 
-## Version 24 augusti {#8-2024}
+### Förbättringar {#24-9-improvements}
 
-**Releasedatum**: 20-21 augusti 2024
+Den här versionen innehåller de förbättringar som anges nedan.
+
+**Publiker** - Tillgänglighetsdatum: 17 september 2024
+
+**Licensanvändning** - Kontrollpanelen för licensanvändning visar nu de aktiveringsbara profilerna i stället för de engagerande målgrupperna. [Läs mer](../audience/license-usage.md)
+
+**Innehållshantering**
+
+Nu kan du exportera innehållsmallar och fragment mellan sandlådor. [Läs mer](../configuration/copy-objects-to-sandbox.md)
+
+**Resor**
+
+* **Förbättringar av Live-rapportering** - Live-rapportering ger insikter om hur dina resor har fungerat de senaste 24 timmarna. Vi har förbättrat den genom att lägga till nya mätvärden (som anges, utelämnas, tas bort och profiler av misstag) så att du får en djupare förståelse för användarbeteende och prestanda direkt från arbetsytan på resan. [Läs mer](../building-journeys/report-journey.md)
+
+
+* (Tillgänglighetsdatum: 10 september) **Automatiska återförsök vid läsning av målgrupp** - återförsök används nu som standard på målgruppsinställda resor (med början från en **läsning** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden. [Läs mer](../building-journeys/read-audience.md#retries)
+
+**E-postkanal**
+
+* **Meddelanderubrik i skickat e-postmeddelande och BCC-kopia** - En ny rubrik har lagts till i alla e-postmeddelanden. Det här rubrikens värde är unikt för alla skickade e-postmeddelanden och för motsvarande BCC-e-postkopia. Den här rubriken lagras också i datamängderna för meddelanden och feedback från BCC, som gör att du kan stämma av BCC-kopian och motsvarande skickade e-postinformation. [Läs mer](../configuration/archiving-support.md#bcc-header)
+
+* **Spam-poäng** (GA) - Nu kan du kontrollera ditt innehåll-spam-poäng i en dedikerad **Spam-rapport**. Med SpamAssassin kan Adobe Journey Optimizer nu testa ditt e-postinnehåll och ge det ett poängvärde som anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta det som skräppost eller inte. [Läs mer](../content-management/spam-report.md)
+
+**SMS-kanal**
+
+* **Redigera API-autentiseringsuppgifter** - Nu kan du redigera inställningar i SMS API-autentiseringsuppgifter, inklusive uppdateringar av nyckelord för avanmälan/utanmälan och svar.
+
+**API:er**
+
+* **API för kampanjsimulering** - Använd det här API:t för att utlösa ett korrekturjobb för en kampanj. Att skicka Campaign-korrektur är en asynkron process. API:t returnerar ett proofJobId som kan användas för att kontrollera korrekturets status. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"}
+
+* (Tillgänglighetsdatum: 10 september) Nu är [Adobe Journey Optimizer API-dokumentationen](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} interaktiv. Utforska API-slutpunkterna direkt från dokumentationssidorna för att få omedelbar feedback och snabba upp din tekniska implementering.
+
+
+  Alla API-referenssidor har nu en **Prova-funktion** som du kan använda för att testa API-anrop direkt på dokumentationswebbsidan. [Hämta nödvändiga autentiseringsuppgifter](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} och börja använda funktionen för att utforska API-slutpunkterna.
+
+  Använd den här nya funktionen för att utforska förfrågningar och svar från API-slutpunkter, för att få omedelbar feedback och snabba upp den tekniska implementeringen.
+
+  >[!CAUTION]
+  >
+  >Tänk på att du gör riktiga API-anrop till slutpunkterna när du använder den interaktiva API-funktionen på dokumentationssidorna. Tänk på detta när du experimenterar med produktionssandlådor.
+
+**Konfiguration**
+
+* **IP-värmekopplingsplaner** - Den här funktionen är nu tillgänglig för alla kunder, inklusive organisationer som har köpt tilläggserbjudanden för Adobe **Healthcare Shield** eller **Privacy and Security Shield**. [Läs mer](../configuration/ip-warmup-gs.md)
+
+<!--
+![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.-->
+
+
+
+## Augusti 2024-utgåvan {#8-2024}
+
+**Utgivningsdatum**: 20-21 augusti 2024
 
 ### Nya funktioner {#8-features}
 
@@ -191,7 +366,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 
 ### Förbättringar {#27-4-improvements}
 
-Den här versionen innehåller de förbättringar som anges nedan.
+Den här versionen innehåller förbättringarna som anges nedan.
 
 **Resor**
 
@@ -210,7 +385,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Anpassning av innehållsfragment</strong><br/></th>
+<th><strong>Anpassning av Content Fragments</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -356,9 +531,9 @@ Läs mer i dokumentationen för [innehållsfragment](../content-management/fragm
 
 #### SMS-kanal
 
-* Nu kan du lägga till unika korta koder för varje sandlåda med en enda API-konfiguration, vilket gör processen effektivare och smidigare. [Läs mer](../sms/sms-configuration.md)
+* Nu kan du lägga till unika korta koder för varje sandlåda med en enda API-konfiguration, vilket gör processen mer effektiv och smidig. [Läs mer](../sms/sms-configuration.md)
 
-* Efter skapandet maskeras fältet **API-token** på sidan **API-autentiseringsinformation**.
+* Efter skapandet maskeras nu fältet **API-token** på sidan **API-inloggningsuppgifter**.
 
 <!--* You can now modify existing SMS configurations.-->
 
@@ -375,9 +550,9 @@ Läs mer i dokumentationen för [innehållsfragment](../content-management/fragm
 
 
 
-## Version 24 maj {#may-2024}
+## Maj 24-utgåvan {#may-2024}
 
-**Releasedatum**: 21-22 maj 2024
+**Utgivningsdatum**: 21-22 maj 2024
 
 ### Nya funktioner {#e-features}
 
@@ -557,9 +732,9 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>I den här versionen finns ett förbättrat användargränssnitt på arbetsytan för resor och en mer intuitiv och effektiv användarupplevelse. Aktiviteterna blir tydligare och ger mer information om arbetsytan med färre klick.</p>
+<p>I den här versionen finns ett förbättrat användargränssnitt på arbetsytan för resor och en mer intuitiv och effektiv användarupplevelse. Aktiviteterna är tydligare och visar mer information på researbetsytan med färre klick.</p>
 <img src="assets/new-canvas3.gif"/>
-<p>Förutom den förbättrade utformningen av arbetsytan på resan introducerar vi möjligheten att se de senaste 24 timmarnas rapportvärden direkt i arbetsytan på resan. </p>
+<p>Vid sidan av den förbättrade designen av researbetsytan introducerar vi möjligheten att se de senaste 24 timmarna rapportera mätvärden direkt i arbetsytan. </p>
 <img src="assets/new-canvas6bis.png"/>
 <p><strong>Obs!</strong> De här ändringarna kommer gradvis att lanseras i alla miljöer från och med aprilversionen.</p>
 <p>Mer information finns i den <a href="new-canvas.md">detaljerade dokumentationen</a>.</p>
@@ -619,7 +794,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Konfiguration**
 
-* Nu kan du välja en marknadsföringsåtgärd på kanalkonfigurationsnivå. När de används i en konfiguration används alla medgivandeprinciper som är kopplade till den marknadsföringsåtgärden för att ta hänsyn till kundernas önskemål. [Läs mer](../action/consent.md#surface-marketing-actions)
+* Du kan nu välja en marknadsföringsåtgärd på kanalkonfigurationsnivå. När de används i en konfiguration utnyttjas alla samtyckespolicyer som är kopplade till den marknadsföringsåtgärden för att respektera dina kunders preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
 * Åtkomstkontroll på objektnivå är nu tillgänglig för kanalkonfigurationer. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * När du aktiverar avbrytande av prenumerationslista i en kanalkonfiguration kan du nu definiera medgivandenivån så att den anpassas till hur du hanterar samtycke från alla andra källor. [Läs mer](../email/email-settings.md#list-unsubscribe)
 
@@ -786,7 +961,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer stöder nu tekniken för DMARC-autentisering.</p>
+<p>Journey Optimizer har nu stöd för DMARC autentiseringsteknik.</p>
 <p>Från 1 februari 2024, Google och Yahoo! kräver att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. Se till att du har ställt in DMARC-posten för alla underdomäner som du har delegerat eller delegerat till Adobe i Journey Optimizer.</p>
 <p>Mer information finns i den <a href="../configuration/dmarc-record-update.md">detaljerade dokumentationen</a>.</p>
 <br/><img src="assets/do-not-localize/dmarc.gif"/>

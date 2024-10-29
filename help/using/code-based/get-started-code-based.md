@@ -6,7 +6,7 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 83c8417d4aee278eba33e4adf6ccd033bcc6be1a
+source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 1%
@@ -75,7 +75,7 @@ När ska den kodbaserade kanalen användas i stället för de andra [!DNL Journe
 
 * Du kan använda kodbaserade upplevelser när som helst när din digitala egenskap inte nås via en webbläsare eller en mobilapp - situationer där du troligen bättre kan använda [!DNL Journey Optimizer] [webbkanalen](../web/get-started-web.md){target="_blank"} eller [!DNL Journey Optimizer] [meddelandekanalen i appen](../in-app/get-started-in-app.md){target="_blank"}.
 
-* Du kan använda den kodbaserade kanalen som ett alternativ till webbkanalen [!DNL Journey Optimizer] om din webbplats inte kan läsas in i den visuella redigeraren för [ webbdesignern](../web/edit-web-content.md#work-with-web-designer){target="_blank"} eller om du inte kan använda [webbläsartillägget](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} som används för visuell redigering för webbkanal.
+* Du kan använda den kodbaserade kanalen som ett alternativ till webbkanalen [!DNL Journey Optimizer] om din webbplats inte kan läsas in i den visuella redigeraren för [ webbdesignern](../web/web-visual-editor.md){target="_blank"} eller om du inte kan använda [webbläsartillägget](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} som används för visuell redigering för webbkanal.
 
 * Du kan också använda den kodbaserade kanalen som ett alternativ till webbkanalen eller webbkanalen i appen [!DNL Journey Optimizer] om du har en API-baserad, headless- eller serversidesimplementering.
 
@@ -85,9 +85,9 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 
 **Webb**
 
-* Redigera ditt innehåll med den visuella redigeraren i [webbdesignern](../web/edit-web-content.md#work-with-web-designer){target="_blank"}.
+* Redigera ditt innehåll med den visuella redigeraren i [webbdesignern](../web/web-visual-editor.md){target="_blank"}.
 * Du måste ha implementeringen av [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} och tillägget [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} installerat i webbläsaren. [Läs mer](../web/web-prerequisites.md){target="_blank"}
-* Med webbkanalen kan du ändra allt på sidan och ha en fördefinierad lista över åtgärder som du kan använda för att göra ändringar. [Läs mer](../web/edit-web-content.md#work-with-web-designer){target="_blank"}
+* Med webbkanalen kan du ändra allt på sidan och ha en fördefinierad lista över åtgärder som du kan använda för att göra ändringar. [Läs mer](../web/web-visual-editor.md){target="_blank"}
 * Det är enkelt att konfigurera och komma igång snabbt.
 * Det är fokuserat på marknadsföring och personalisering.
 

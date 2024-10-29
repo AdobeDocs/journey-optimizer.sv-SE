@@ -2,15 +2,15 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Versionsinformation
-description: Journey Optimizer tidiga versionsinformation
+description: Tidig versionsinformation om Journey Optimizer
 feature: Release Notes
 topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 92ecd1261e6c734743c4ab5173969da6e54cd15a
+source-git-commit: 42b9bfcc9079570a047462c23001d102abda58c9
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '2000'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 2%
 
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras i slutet av varje månad i [versionsinformationen](release-notes.md).
 
-**Noteringar om tidig version nedan kan ändras utan föregående meddelande till releasedatum**. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformationen](release-notes.md) på releasedatum.
+**Tidig versionsinformation nedan kan ändras utan föregående meddelande fram till publiceringstillgänglighetsdatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformationen](release-notes.md), på utgivningsdatumet.
 
-## Versionsinformation oktober 2024 {#e-2024}
+## Versionsinformation om den tidiga versionen av oktober 2024 {#e-2024}
 
-**Releasedatum**: 29-30 oktober 2024
+**Utgivningsdatum**: 29-30 oktober 2024
 
 ### Nya funktioner {#e-features}
 
@@ -93,8 +93,8 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Med reseoptimeraren kan du nu testa olika varianter av ditt e-postinnehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV-fil eller lagts till manuellt. Alla profilattribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.</p>
-<p>Den här funktionen är för närvarande tillgänglig som betaversion.</p>
+<p>Med reseoptimeraren kan du nu testa olika varianter av ditt e-postinnehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV-fil eller lagts till manuellt. Alla profilattribut som används i ditt innehåll för anpassning identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.</p>
+<p>Den här funktionen är för närvarande tillgänglig som en betaversion.</p>
 <!--<p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p>-->
 </td>
 </tr>
@@ -105,7 +105,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Hantering av konflikter och prioritet (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Konflikter och prioritetshantering (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -127,14 +127,14 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Icke-visuellt redigeringsläge för webbdesignern</strong><br/></th>
+<th><strong>Icke-visuellt redigeringsläge för webbdesigner</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Som ett alternativ till Journey Optimizer webbdesigner kan du nu lägga till ändringar på webbplatsen med en icke-visuell redigerare. Du kan ange ändringarna manuellt utan att öppna sidorna i den visuella redigeraren.
-Det här icke-visuella redigeringsläget är användbart om du inte kan installera webbläsartillägg som Adobe Experience Cloud Visual Helper, som krävs för att läsa in sidorna i webbdesignern.</p>
+<p>Som ett alternativ till webbdesignern Journey Optimizer kan du nu lägga till ändringar på webbplatsen med en icke-visuell redigerare. Det gör att du kan ange dina ändringar manuellt utan att öppna sidorna i den visuella redigeraren.
+Det här icke-visuella redigeringsläget är användbart om du inte kan installera webbläsartillägg, som Adobe Experience Cloud Visual Helper, som krävs för att läsa in sidorna i webbdesignern.</p>
 <!--p>For more information, refer to the <a href="../email/surface-personalization.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -144,13 +144,13 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <table>
 <thead>
 <tr>
-<th><strong>Innehållsexperiment under resor (allmän tillgänglighet)</strong><br/></th>
+<th><strong>Innehållsexperiment på resor (allmän tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer finns redan i kampanjer och stöder nu experiment på resor. Experimentella tester är randomiserade, vilket i samband med onlinetestning innebär att du exponerar vissa slumpmässigt utvalda användare för en viss variant av ett meddelande och en annan slumpmässigt utvald uppsättning användare för annan variation eller behandling. Efter exponering kan du mäta de resultatvärden du är intresserad av, som öppningar av e-post, prenumerationer eller inköp.</p>
+<p>Adobe Journey Optimizer är redan tillgängligt i kampanjer och stöder nu experiment på resor. Experiment är slumpmässiga experiment, vilket i samband med onlinetester betyder att du exponerar några slumpmässigt utvalda användare för en viss variant av ett meddelande och en annan slumpmässigt vald uppsättning användare för någon annan variation eller behandling. Efter exponeringen kan du sedan mäta de resultatmått du är intresserad av, t.ex. öppningar i e-postmeddelanden, prenumerationer eller köp.</p>
 <p>Tidigare fanns det för en uppsättning organisationer (LA), och nu finns körningsexperiment för alla användare (GA).</p>
 </td>
 </tr>
@@ -167,9 +167,9 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <tbody>
 <tr>
 <td>
-<p>Beslutsfattandet, som tidigare fanns för en uppsättning organisationer (LA) och som kallas Experience Decisioning, är nu tillgängligt för alla användare (GA). Det förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person. Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den kodbaserade upplevelsekanalen.</p>
+<p>Beslutsfattandet, som tidigare var tillgängligt för en uppsättning organisationer (LA) och känt som Experience Decisioning, är nu tillgängligt för alla användare (GA). Det förenklar personaliseringen genom att erbjuda en centraliserad katalog över marknadsföringserbjudanden som kallas "beslutsobjekt" och en sofistikerad beslutsmotor. Denna motor utnyttjar regler och rangordningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje individ. Dessa beslutsobjekt integreras sömlöst i ett stort antal inkommande ytor via den kodbaserade erfarenhetskanalen.</p>
 
-<p>För närvarande är beslut inte tillgängligt för kunder som har köpt tillägget Adobe Healthcare Shield och Privacy and Security Shield.</p>
+<p>För närvarande är Decisioning inte tillgängligt för kunder som har köpt tilläggserbjudanden för Adobe Healthcare Shield och Privacy and Security Shield.</p>
 
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
@@ -205,8 +205,8 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni enkelt skapa innehåll på flera språk i en enda kampanj eller resa. Med den här funktionen kan ni växla mellan olika språk när ni redigerar kampanjer eller hela kundresan, effektivisera hela redigeringsprocessen och förbättra möjligheterna att effektivt hantera flerspråkigt innehåll.</p>
-<p>Med allmän tillgänglighet är flerspråkigt innehåll nu tillgängligt över alla kanaler. </p>
+<p>Nu kan du enkelt skapa innehåll på flera språk i en och samma kampanj eller resa. Med den här funktionen kan du växla mellan olika språk när du redigerar en kampanj eller en resa, effektiviserar hela redigeringsprocessen och förbättrar din förmåga att effektivt hantera flerspråkigt innehåll.</p>
+<p>Flerspråkigt innehåll är nu tillgängligt i alla kanaler. </p>
 <!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -216,16 +216,16 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <table>
 <thead>
 <tr>
-<th><strong>Integrering med Movable Ink och Adobe Journey Optimizer</strong><br/></th>
+<th><strong>Integrering med Mobile Ink och Adobe Journey Optimizer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du integrera Movable Ink Da Vinci och Adobe Journey Optimizer. Med den nya integreringen kan du </p>
-<p><ul><li>Utnyttja de kraftfulla funktionerna i Movable Inks Da Vinci-produkt för att sammanställa och personalisera e-postvarianter för gruppkampanjer</li>
-<li>Snabba upp arbetsflödena för användare av Journey Optimizer med Da Vinci för framställning och AJO för optimering och leverans</li>
-<li>Optimera Da Vinci-modeller med data från Adobe.</li></ul></p>
+<p>Nu kan du integrera Movable Ink Da Vinci och Adobe Journey Optimizer. Med denna nya integrering kan du: </p>
+<p><ul><li>Utnyttja kraftfulla funktioner i Movable Inks Da Vinci-produkt för att montera och anpassa e-postvarianter för gruppkampanjer</li>
+<li>Påskynda arbetsflöden för administratörer för Journey Optimizer-kunder med Da Vinci för redigering och AJO för optimering och leverans</li>
+<li>Optimera Da Vinci-modellerna med data från Adobe.</li></ul></p>
 <!--p>For more information, refer to the <a href="../code-based/get-started-code-based.md">detailed documentation</a>.</p-->
 </tr>
 </tbody>
@@ -234,18 +234,18 @@ Det här icke-visuella redigeringsläget är användbart om du inte kan installe
 <table>
 <thead>
 <tr>
-<th><strong>Uppdaterad rapportupplevelse (allmän tillgänglighet)</strong><br/></th>
+<th><strong>Uppdaterad rapporteringsupplevelse (allmän tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Tillgänglig sedan 16 oktober 2024</p>
-<p>Journey Optimizer rapportering är nu allmänt tillgänglig (GA) och har förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering för båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.</p>
-<p>Med allmän tillgänglighet introduceras fyra nya funktioner: möjlighet att skapa enkla mätvärden, skapa och publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter som automatiskt ska skickas till viktiga mottagare.</p>
+<p>Tillgängligt sedan 16 okt 2024</p>
+<p>Journey Optimizer rapportering är nu allmänt tillgänglig (GA) och har förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering för båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Den här sömlösa integreringen mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningar, så att användare kan fatta mer välgrundade beslut.</p>
+<p>Med allmän tillgänglighet introduceras fyra nya funktioner: möjligheten att skapa enkla mätvärden, skapa och publicera målgrupper, ställa ad hoc-frågor med hjälp av Insight Builder och schemalägga att rapporter automatiskt skickas till viktiga mottagare via e-post.</p>
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
-<p>Viktigt:Den nuvarande rapportupplevelsen kommer att upphöra i januari 2025. Efter detta datum kommer den nya rapportupplevelsen att bli standard. Vi rekommenderar att du behärskar de nya funktionerna så att övergången blir smidig. <a href="../reports/report-gs-cja.md">Lär dig hur du kommer igång med Journey Optimizer nya rapporteringsgränssnitt</a></p>
+<p>Viktigt:Den aktuella rapporteringsupplevelsen kommer att upphöra i januari 2025. Efter detta datum kommer den nya rapporteringsupplevelsen att bli standard. Vi rekommenderar att du bekantar dig med de nya funktionerna för att få en smidig övergång. <a href="../reports/report-gs-cja.md">Lär dig komma igång med Journey Optimizer nya rapporteringsgränssnitt</a></p>
 </tr>
 </tbody>
 </table>
@@ -290,13 +290,17 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **SMS-kanal**
 
+>[!AVAILABILITY]
+>
+>Följande förbättringar är bara tillgängliga för Sinch- och Infobip-leverantörer.
+
 SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
-* Ni kan definiera och hantera unika nyckelord för era SMS-kampanjer och resor, vilket möjliggör mer personaliserad och effektiv kommunikation.
+* Du kan definiera och hantera unika nyckelord för dina SMS-kampanjer och resor, vilket möjliggör mer personlig och effektiv kommunikation.
 
-* Du kan skapa och leverera ett standard-SMS-meddelande när ett nyckelord inte känns igen.
+* Du kan skapa och leverera ett standardmeddelande via SMS när ett nyckelord inte känns igen.
 
-* Nu kan du redigera eller ta bort en konfiguration för SMS API-kanal.
+* Nu kan du redigera eller ta bort en kanalkonfiguration för SMS API.
 
 <!--**Journeys**-->
 
@@ -323,7 +327,7 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 **Datastyrning och samtycke** - Tillgänglighetsdatum: 7 okt 2024
 
-* **Tillämpning av datastyrningsprinciper** sker nu i alla kanaler i Journey Optimizer. För kunder som har skapat policyer i Adobe Experience Platform tillämpas dessa på marknadsföringsåtgärder som en del av kanalkonfigurationsinställningarna. När du skapar innehåll med en konfiguration kontrollerar systemet om det finns några datastyrningsfel i alla anpassningsfält. Om en överträdelse hittas går det inte att publicera en resa eller kampanj. [Läs mer](../action/action-privacy.md)
+* **Principer för datareglering** tillämpas nu på alla kanaler i Journey Optimizer. För kunder som har skapat policyer i Adobe Experience Platform tillämpas dessa på marknadsföringsåtgärder som en del av kanalkonfigurationsinställningarna. När du skapar innehåll med en konfiguration kontrollerar systemet alla anpassningsfält för eventuella brott mot dataregleringen. Om en överträdelse hittas går det inte att publicera en resa eller kampanj. [Läs mer](../action/action-privacy.md)
 
 * **Egna medgivandeprinciper** gäller nu för alla Journey Optimizer-kanaler. Vid behov innan ett meddelande skickas eller en inkommande upplevelse levereras, kontrollerar systemet att användaren har gett sitt medgivande till att använda personaliseringsfält i innehållet som han/hon får. Om inget samtycke ges visas inte upplevelsen. [Läs mer](../action/consent.md)
 
@@ -343,4 +347,4 @@ SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
 
 **Beslut**
 
-[Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html)-användare kan nu välja anpassade modeller att optimera när de ställer in en AI-modell i Decisioning (tidigare Experience Decisioning). Det gör att du till exempel kan optimera en anpassad&quot;inköps&quot;-tabell i stället för definierade begränsningar som klickfrekvens.&quot;
+[Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html)-användare kan nu välja anpassade modeller att optimera på när de konfigurerar en AI-modell i Decisioning (tidigare kallat Experience Decisioning). På så sätt kan du till exempel optimera en anpassad &quot;inköps&quot;-tabell i stället för definierade begränsningar som klickningsfrekvensen.&quot;

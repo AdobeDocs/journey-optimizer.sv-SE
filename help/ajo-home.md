@@ -1,13 +1,13 @@
 ---
-keywords: Journey Optimizer;home;populära topics
-title: Journey Optimizer produktdokumentation
+keywords: Journey Optimizer;hem;populära ämnen
+title: Produktdokumentation för Journey Optimizer
 description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 3235d53b09d140e61a9e83f6b07ce8351f0fa245
+source-git-commit: e3ebbb021b7336fa859deb19d4e5786a4f4fdf30
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '381'
 ht-degree: 17%
 
 ---
@@ -16,33 +16,33 @@ ht-degree: 17%
 
 ## Nyheter
 
-Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](using/rn/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssidan](using/rn/documentation-updates.md).
+Få en snabbtitt på de senaste förbättringarna av Journey Optimizer produkter och dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](using/rn/release-notes.md). Håll dig uppdaterad om de senaste ändringarna i vår dokumentation genom att besöka [dokumentuppdateringssidan](using/rn/documentation-updates.md).
 
 >[!BEGINTABS]
 
->[!TAB 24 september ]
+>[!TAB Oktober 24-utgåvan]
 
-Septemberversionen är nu aktiv, inklusive innehållskort för mobilappar och webbplatser, godkännandepolicyer för resor och kampanjer (LA), globala exitkriterier för resor med mera.
+Oktober-versionen är nu tillgänglig, inklusive låsning av e-postinnehåll, konflikt- och prioritetshantering (LA) och integrering med flyttbart bläck. Tidigare i Begränsad tillgänglighet (LA) var nu följande funktioner tillgängliga för alla: Anpassning av e-postkonfiguration, godkännandepolicyer, Innehållsexperiment på resor, Beslutsfattande, Flerspråkiga meddelanden, Förbättrad rapporteringsupplevelse.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
->[!TAB AI-assistenten]
+>[!TAB AI-assistent]
 
-✨ fördjupa dig i en praktisk upplevelse med vår förhandsgranskning av funktionen [AI Assistant Content Accelerator](../help/using/content-management/gs-generative.md) som gör att du kan utforska dess funktioner först och fullt ut förstår dess funktioner.
+✨ Låt dig uppslukas av en praktisk upplevelse med vår [förhandsgranskning av AI Assistant-innehåll](../help/using/content-management/gs-generative.md), som är utformad för att du ska kunna utforska dess funktioner direkt och till fullo.
 
 [![läs mer](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}
 
 >[!TAB Rapportering med CJA]
 
-Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet.
+Journey Optimizer rapportering är kompatibelt med Customer Journey Analytics funktioner, vilket standardiserar rapportering över båda plattformarna och förbättrar dataöverensstämmelse och -tillförlitlighet.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/reports/report-gs-cja.md)
 
->[!TAB Content Fragments]
+>[!TAB Webbupplevelser i resor]
 
-Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -kampanjer där de används.
+Med webbkanalen kan du med Adobe Journey Optimizer anpassa webbupplevelsen som du levererar till dina kunder genom inkommande webbresor. Webbkanalen är nu tillgänglig på arbetsytan.
 
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/fragments.md)
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/web/create-web.md)
 
 >[!ENDTABS]
 
@@ -52,7 +52,7 @@ Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -k
   <tr style="border: 0;">
     <td>
     <a href="using/start/quick-start.md"><img src="using/assets/do-not-localize/start-quick.png"></a>
-    <div><strong>Snabbstartguider</strong><br/>Lär dig hur du uppnår dina mål snabbare i Journey Optimizer med ditt personaliserade tillvägagångssätt beroende på din roll.</div>
+    <div><strong>Snabbstartsguider</strong><br/>Lär dig hur du uppnår dina mål snabbare i Journey Optimizer med ditt personliga tillvägagångssätt beroende på din roll.</div>
     </td>
     <td>
     <a href="using/start/user-interface.md"><img src="using/assets/do-not-localize/start-interface.jpeg"></a>
@@ -86,7 +86,7 @@ Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -k
     </td>
     <td>
       <img src="using/assets/do-not-localize/icon-configure.svg" width="35px"><br/>
-      <strong> Konfiguration<br/>administration</strong><br/><a href="using/configuration/channel-surfaces.md">Kanalytor</a> - <a href="using/configuration/about-data-sources-events-actions.md">Konfigurera resor</a> - <a href="using/administration/permissions-overview.md">Åtkomstkontroll</a> - <a href="using/administration/sandboxes.md">Hantering av sandlådor</a>
+      <strong>Konfiguration<br/>administration</strong><br/><a href="using/configuration/channel-surfaces.md">Kanalytor</a> - <a href="using/configuration/about-data-sources-events-actions.md">Konfigurera resor</a> - <a href="using/administration/permissions-overview.md">Åtkomstkontroll</a> - <a href="using/administration/sandboxes.md">Sandlådehantering</a>
     </td>
     <td>
       <img src="using/assets/do-not-localize/icon-campaign.svg" width="35px"><br/>
@@ -96,15 +96,15 @@ Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -k
   <tr style="border: 0;">
     <td>
       <img src="using/assets/do-not-localize/icon-content.svg" width="35px"><br/>
-      <strong> Innehållshantering</strong><br/><a href="using/content-management/assets.md">Assets/images</a> - <a href="using/personalization/personalize.md">Personalization</a> - <a href="using/content-management/content-templates.md">Återanvändbart</a> &amp; <a href="using/personalization/dynamic-content.md">dynamiskt</a> innehåll - <a href="using/content-management/preview-test.md">Testa och förhandsgranska innehåll</a>
+      <strong>Innehållshantering</strong><br/><a href="using/content-management/assets.md">Resurser/bilder</a> - <a href="using/personalization/personalize.md">Anpassning</a> - <a href="using/content-management/content-templates.md">Återanvändbart</a> och <a href="using/personalization/dynamic-content.md">dynamiskt</a> innehåll - <a href="using/content-management/preview-test.md">Testa och förhandsgranska innehåll</a>
     </td>
     <td>
       <img src="using/assets/do-not-localize/icon_profile-audience.svg" width="35px"><br/>
-      <strong> Profiler och målgrupper </strong><br/><a href="using/audience/about-audiences.md">Publiker</a> - <a href="using/audience/get-started-profiles.md">Profiler</a> - <a href="using/audience/get-started-identity.md">Identiteter</a> - <a href="using/audience/license-usage.md">Licensanvändning</a> - <a href="using/privacy/get-started-privacy.md">Sekretesshantering</a>
+      <strong>Profiler och målgrupper</strong><br/><a href="using/audience/about-audiences.md">Målgrupper</a> - <a href="using/audience/get-started-profiles.md">Profiler</a> - <a href="using/audience/get-started-identity.md">Identiteter</a> - <a href="using/audience/license-usage.md">Licensanvändning</a> - <a href="using/privacy/get-started-privacy.md">Sekretesshantering</a>
     </td>
     <td>
       <img src="using/assets/do-not-localize/icon-data.svg" width="35px"><br/>
-      <strong> Datahantering </strong><br/><a href="using/data/get-started-schemas.md">Scheman</a> - <a href="using/data/get-started-datasets.md">Datauppsättningar</a> - <a href="using/data/get-started-queries.md">Frågor</a>
+      <strong>Datahantering</strong><br/><a href="using/data/get-started-schemas.md">Scheman</a> - <a href="using/data/get-started-datasets.md">Datauppsättningar</a> - <a href="using/data/get-started-queries.md">Frågor</a>
     </td>
   </tr>
 </table>
@@ -113,13 +113,13 @@ Fragment kan nu redigeras och ändringar kan spridas över alla liveresor och -k
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schemaordlista</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:ereferens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer schemaläggningsordlista</a>
 
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
+<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Utvecklarresurser</a>
 </td>
 </tr></table>
 
-<table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
-<b>Håll dig informerad och lyft din Adobe Journey Optimizer-upplevelse!</b><br/>Registrera dig för vårt kvartalsvisa nyhetsbrev. Få exklusiv tillgång till de senaste produktuppdateringarna, fängslande berättelser, användningsexempel från verkligheten, värdefulla tips med mera - allt levereras direkt till inkorgen varje kvartal. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Registrera dig idag!</a></td></tr></table>
+<!--table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
+<b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table-->

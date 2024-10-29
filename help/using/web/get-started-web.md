@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
-source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
+source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,9 @@ Tack vare ett intuitivt visuellt gränssnitt kan ni enkelt ändra era webbegensk
 
 ![](../rn/assets/do-not-localize/web-authoring.gif)
 
-
 Om ni redan använder utgående kanaler som e-post, SMS eller push-meddelanden kan ni nu utnyttja den inkommande webbkanalen för att erbjuda en verkligt personaliserad upplevelse som sträcker sig över alla kanaler.
 
-När du har skapat en kampanj väljer du **Webb** som åtgärd och definierar grundläggande inställningar. Mer information om hur du konfigurerar kampanjen finns på [sidan](../campaigns/create-campaign.md#configure).
+När du har skapat en resa eller kampanj väljer du **Webb** som åtgärd och definierar grundläggande inställningar. Mer information om hur du konfigurerar din resa/kampanj finns på [sidan](create-web.md#create-web-experience).
 
 >[!NOTE]
 >
@@ -50,11 +49,11 @@ Upptäck de detaljerade stegen för att skapa en webbkampanj i [den här videon]
 </div>
 <p></td>
 <td>
-<a href="edit-web-content.md">
+<a href="web-visual-editor.md">
 <img alt="Validering" src="../assets/do-not-localize/web-design.jpg">
 </a>
 <div>
-<a href="edit-web-content.md"><strong>Skapa webbsidor</strong></a>
+<a href="web-visual-editor.md"><strong>Skapa webbsidor</strong></a>
 </div>
 <p>
 </td>
