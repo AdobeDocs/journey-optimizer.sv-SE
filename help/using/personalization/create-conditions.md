@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, villkorsstyrd, regler
 exl-id: 246a4a55-059e-462c-ac1e-43b90f4abda4
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 6f9bdb179f2bfff30494495b68a15aaac77d6b9e
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -56,17 +56,17 @@ Så här skapar du en villkorlig regel:
 
 1. Bygg den villkorliga regeln efter dina behov. Det gör du genom att dra och släppa och ordna de önskade attributen från den vänstra menyn på arbetsytan.
 
-Stegen för att kombinera attribut på arbetsytan liknar de som används för att skapa segment. Mer information om hur du arbetar med regelbyggararbetsytan finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#rule-builder-canvas).
+   Stegen för att kombinera attribut på arbetsytan liknar de som används för att skapa segment. Mer information om hur du arbetar med regelbyggararbetsytan finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#rule-builder-canvas).
 
-    ![](assets/conditions-create.png)
-    
-    Attribut är ordnade i tre flikar:
-    
-    * **[!UICONTROL Profile]**:
-    * **[!UICONTROL Audiences]** visar alla målgruppsattribut (dvs. status, version osv.) för [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
-    * **[!UICONTROL XDM Individual profiles]** listar alla profilattribut som är kopplade till [Experience Data Model (XDM) schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) som definierats i Adobe Experience Platform.
-    * **[!UICONTROL Contextual]**: När ditt meddelande används i en resa är sammanhangsberoende resefält tillgängliga via den här fliken.
-    * **[!UICONTROL Audiences]**: visar alla målgrupper som genererats från segmentdefinitioner som skapats i [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
+   ![](assets/conditions-create.png)
+
+   Attribut är ordnade i tre flikar:
+
+   * **[!UICONTROL Profile]**:
+      * **[!UICONTROL Audiences]** visar alla målgruppsattribut (t.ex. status, version osv.) för [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html),
+      * **[!UICONTROL XDM Individual profiles]** visar alla profilattribut som är associerade med [XDM-schemat (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) som definierats i Adobe Experience Platform.
+   * **[!UICONTROL Contextual]**: När ditt meddelande används i en resa är fält för sammanhangsbaserad resa tillgängliga via den här fliken.
+   * **[!UICONTROL Audiences]**: visar alla målgrupper som genererats från segmentdefinitioner som skapats i [Adobe Experience Platform Segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 1. När den villkorliga regeln är klar kan du lägga till den i meddelandet för att skapa dynamiskt innehåll. [Lär dig hur du lägger till dynamiskt innehåll](dynamic-content.md)
 
