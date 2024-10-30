@@ -20,11 +20,11 @@ ht-degree: 0%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="About Decisioning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
-Decision policies are containers for your offers that leverage the Decisioning engine in order to pick the best content to deliver, depending on the audience.
+Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att välja det bästa innehållet att leverera, beroende på målgruppen.
 
-Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. Their goal is to select the best offers for each profile while the campaign authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message.
+Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet.
 
 >[!NOTE]
 >
@@ -53,9 +53,9 @@ De viktigaste stegen för att utnyttja beslutsregler i era kodbaserade kampanjer
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Evaluation order"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Utvärderingsorder"
 
-To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign. Följ stegen nedan för att göra det.
+Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj. Följ stegen nedan för att göra det.
 
 ### Skapa beslutsprincipen {#add}
 
@@ -69,13 +69,13 @@ To present the best dynamic offer and experience to your visitors on your websit
 
    >[!NOTE]
    >
-   >**[!UICONTROL Offers]**
+   >För närvarande är bara standardkatalogen **[!UICONTROL Offers]** tillgänglig.
 
-1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration. Klicka på **[!UICONTROL Next]**.
+1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen. Klicka på **[!UICONTROL Next]**.
 
    ![](assets/decision-code-based-details.png)
 
-### Select items and selection strategies {#select}
+### Välj objekt och urvalsstrategier {#select}
 
 I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt och urvalsstrategier som ska presenteras med beslutspolicyn.
 
@@ -83,15 +83,15 @@ I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt
 
    * **[!UICONTROL Selection strategy]**: Lägg till en eller flera markeringsstrategier. Beslutsstrategier utnyttjar samlingar som är kopplade till behörighetskrav och rangordningsmetoder för att fastställa vilka poster som ska visas. Du kan välja en befintlig urvalsstrategi eller skapa en ny med knappen **[!UICONTROL Create selection strategy]**.[Lär dig hur du skapar urvalsstrategier](selection-strategies.md)
 
-   * **[!UICONTROL Decision item]**: Lägg till enskilda beslutsobjekt som ska visas utan att behöva köra en urvalsstrategi. Du kan bara välja ett beslutsobjekt i taget. Any eligibility constraints set for the item will apply.
+   * **[!UICONTROL Decision item]**: Lägg till enskilda beslutsobjekt som ska visas utan att behöva köra en urvalsstrategi. Du kan bara välja ett beslutsobjekt i taget. Alla villkor som anges för artikeln gäller.
 
    ![](assets/decision-code-based-strategy-sequence.png)
 
    >[!NOTE]
    >
-   >At least one decision item or strategy is required. You cannot add more than 10 strategies.
+   >Minst en beslutsuppgift eller strategi krävs. Du kan inte lägga till fler än 10 strategier.
 
-1. When adding several decision items and/or strategies, they will be evaluated in a specific order. The first object that was added to the sequence will be evaluated first, and so on.     To change the default sequence, you can drag and drop the objetcs and/or the groups to reorder them as wanted. [](#evaluation-order)
+1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare.     Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer om utvärderingsordning för beslutsprinciper](#evaluation-order)
 
 ### Hantera utvärderingsordning i en beslutspolicy {#evaluation-order}
 
@@ -101,11 +101,11 @@ Den **sekventiella ordningen** i vilken objekt och strategier utvärderas anges 
 
 >[!NOTE]
 >
->Endast markeringsstrategier kan dras och släppas i en sekvens. **[!UICONTROL Add]**
+>Endast markeringsstrategier kan dras och släppas i en sekvens. Om du vill ändra positionen för ett beslutsobjekt måste du ta bort det och lägga tillbaka det med knappen **[!UICONTROL Add]** när du har lagt till de andra objekten som du vill utvärdera tidigare.
 
 ![](assets/decision-code-based-strategy-groups.png)
 
-**** Om du vill göra det klickar du på knappen **`+`** under en urvalsstrategi för att kombinera den med en annan. Du kan också dra och släppa en markeringsstrategi på en annan om du vill gruppera de två strategierna i en grupp.
+Du kan också **kombinera** flera markeringsstrategier i grupper så att de utvärderas tillsammans och inte separat. Om du vill göra det klickar du på knappen **`+`** under en urvalsstrategi för att kombinera den med en annan. Du kan också dra och släppa en markeringsstrategi på en annan om du vill gruppera de två strategierna i en grupp.
 
 >[!NOTE]
 >
@@ -129,13 +129,13 @@ Låt oss nu titta på ett exempel där du har flera strategier indelade i olika 
 
 Du definierade tre strategier. Strategi 1 och strategi 2 kombineras i grupp 1 och strategi 3 är oberoende (grupp 2).
 
-The eligible offers for each strategy and their priority (used in the ranking function evaluation) are as follows:
+De berättigade erbjudandena för varje strategi och deras prioritet (används vid rankningsfunktionens utvärdering) är följande:
 
-* Group 1:
-   * Strategy 1 - (Offer 1, Offer 2, Offer 3) - Priority 1
-   * Strategy 2 - (Offer 3, Offer 4, Offer 5) - Priority 1
+* Grupp 1:
+   * Strategi 1 - (erbjudande 1, erbjudande 2, erbjudande 3) - prioritet 1
+   * Strategi 2 - (erbjudande 3, erbjudande 4, erbjudande 5) - prioritet 1
 
-* Group 2:
+* Grupp 2:
    * Strategi 3 - (erbjudande 5, erbjudande 6) - Prioritet 0
 
 Strategierbjudanden med högst prioritet utvärderas först och läggs till i listan med rankade erbjudanden.
@@ -173,7 +173,7 @@ Du kan välja valfritt objekt i listan, som visar alla beslutsobjekt som har ska
 
 >[!NOTE]
 >
->A fallback is optional. [!DNL Journey Optimizer] Du kan lägga till upp till det antal objekt som beslutsprincipen begär. Detta garanterar att ett visst antal artiklar returneras om så önskas för användningsfallet.
+>En reservlösning är valfri. Om ingen reservlösning har valts och ingen strategi är kvalificerad visas ingenting av [!DNL Journey Optimizer]. Du kan lägga till upp till det antal objekt som beslutsprincipen begär. Detta garanterar att ett visst antal artiklar returneras om så önskas för användningsfallet.
 
 När din beslutsprincip är klar sparar du den och klickar på **[!UICONTROL Create]**. Nu när beslutspolicyn har skapats kan du använda beslutsattributen i ditt kodbaserade upplevelseinnehåll. [Läs mer](#use-decision-policy)
 
@@ -204,22 +204,22 @@ När beslutsprincipen har skapats kan den användas i [personaliseringsredigerar
    >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
    >`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
-1. Klicka på varje mapp för att expandera den. Placera musmarkören på önskad plats och klicka på ikonen + bredvid det attribut du vill lägga till. You can add as many attributes as you want to the code.
+1. Klicka på varje mapp för att expandera den. Placera musmarkören på önskad plats och klicka på ikonen + bredvid det attribut du vill lägga till. Du kan lägga till så många attribut du vill i koden.
 
    ![](assets/decision-code-based-add-decision-attributes.png)
 
-1. You can also add any other attribute available in the personalization editor, such as profile attributes.
+1. Du kan också lägga till andra attribut som är tillgängliga i personaliseringsredigeraren, till exempel profilattribut.
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
 
-## Reporting in Customer Journey Analytics {#cja}
+## Rapportering i Customer Journey Analytics {#cja}
 
-If you are working with Customer Journey Analytics, you can create custom reporting dashboards for your code-based campaigns leveraging Decisioning.
+Om du arbetar med Customer Journey Analytics kan du skapa anpassade rapportinstrumentpaneler för kodbaserade kampanjer med hjälp av Beslutsfattande.
 
-De huvudsakliga stegen visas nedan. [](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing){target="_blank"}
+De huvudsakliga stegen visas nedan. Detaljerad information om hur du arbetar med Customer Journey Analytics finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing){target="_blank"}.
 
 1. Skapa och konfigurera en **anslutning** i Customer Journey Analytics. På så sätt kan du ansluta till den datauppsättning som du vill ha rapporter för. [Lär dig skapa en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}
 
-1. Skapa en **datavy** och koppla den till anslutningen som skapades tidigare. På fliken **[!UICONTROL Components]** väljer du de relevanta schemafält som du vill visa i rapporter. ******** [Lär dig hur du skapar och konfigurerar datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}
+1. Skapa en **datavy** och koppla den till anslutningen som skapades tidigare. På fliken **[!UICONTROL Components]** väljer du de relevanta schemafält som du vill visa i rapporter. Kontrollera att du inkluderar fälten **propositionInteract** och **propositionDisplay** för beslut. [Lär dig hur du skapar och konfigurerar datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}
 
-1. ****[](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects){target="_blank"}
+1. Kombinera datakomponenter, tabeller och visualiseringar i **arbetsyteprojekt** för att skapa och dela rapporter för den kodbaserade kampanjen.[Lär dig skapa arbetsyteprojekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects){target="_blank"}

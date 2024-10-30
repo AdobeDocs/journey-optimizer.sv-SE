@@ -20,17 +20,17 @@ ht-degree: 1%
 >title="Hantera enkelt alla ändringar"
 >abstract="I den här rutan kan du navigera och hantera alla justeringar och format som du har lagt till på webbsidan."
 
-Du kan enkelt hantera alla komponenter, justeringar och format som du har lagt till på din webbsida. Du kan också lägga till ändringar direkt från den särskilda rutan.
+Du kan enkelt hantera alla komponenter, justeringar och format som du har lagt till på webbsidan. Du kan också lägga till ändringar direkt från den dedikerade rutan.
 
 ## Arbeta med rutan Ändringar {#use-modifications-pane}
 
-1. Välj ikonen **[!UICONTROL Modifications]** för att visa motsvarande ruta till vänster.
+1. Markera ikonen **[!UICONTROL Modifications]** om du vill visa motsvarande ruta till vänster.
 
    ![](assets/web-designer-modifications-pane.png)
 
-1. Du kan granska alla ändringar som du har gjort på sidan.
+1. Du kan granska alla ändringar du har gjort på sidan.
 
-1. Välj en oönskad ändring och klicka på alternativet **[!UICONTROL Delete modification]** från knappen **[!UICONTROL More actions]** för att ta bort den.
+1. Markera en oönskad ändring och klicka på alternativet **[!UICONTROL Delete modification]** från knappen **[!UICONTROL More actions]** för att ta bort den.
 
    ![](assets/web-designer-modifications-delete.png)
 
@@ -73,17 +73,17 @@ När du redigerar en sida med webbdesignern kan du lägga till nya ändringar i 
 
 1. Ange ditt innehåll och **[!UICONTROL Save]** dina ändringar.
 
-1. Klicka på knappen **[!UICONTROL More actions]** bredvid din ändring och välj **[!UICONTROL Info]** för att visa information om den.
+1. Klicka på knappen **[!UICONTROL More actions]** bredvid din ändring och välj **[!UICONTROL Info]** för att visa informationen.
 
    ![](assets/web-designer-add-modification-info.png)
 
 ### CSS-väljare {#css-selector}
 
-Följ stegen nedan om du vill lägga till en ändring av typen **CSS-väljare**.
+Följ stegen nedan om du vill lägga till en **CSS-väljartypändring**.
 
 1. Välj **[!UICONTROL CSS Selector]** som ändringstyp.
 
-1. Fältet **[!UICONTROL CSS Element Selector]** hjälper dig att hitta och markera de HTML-element (eller noder i DOM-trädet) som du vill använda ändringar på. <!--specify the desired CSS element that you want to modify.-->
+1. Fältet **[!UICONTROL CSS Element Selector]** hjälper dig att hitta och markera elementen (eller noderna i DOM-trädet) som du vill använda ändringarna på. <!--specify the desired CSS element that you want to modify.-->
 
    ![](assets/web-designer-add-modification-css.png)
 
@@ -106,7 +106,7 @@ Du kan lägga till anpassad kod med ändringstypen **[!UICONTROL Page `<head>`]*
 
 Elementet `<head>` är en behållare för metadata (data om data) och placeras mellan taggen `<html>` och taggen `<body>`. I det här fallet väntar koden inte på body- eller page-load-händelser - den körs i början av sidinläsningen.
 
-Elementet `<head>` används ofta för att lägga till JavaScript- eller CSS-kod överst på sidan. Vilka väljare som ska användas vid efterföljande visuella åtgärder beror på vilka HTML-element som läggs till på den här fliken.
+Elementet `<head>` används ofta för att lägga till JavaScript- eller CSS-kod högst upp på sidan. Väljare för efterföljande visuella åtgärder beror på vilka HTML-element som läggs till på den här fliken.
 
 Följ stegen nedan om du vill lägga till en **sidtypsändring`<head>`**.
 
@@ -163,7 +163,7 @@ Exempel:
 </script>
 ```
 
-Gör ändringarna i behållaren om ändringar behövs.
+Om några ändringar behövs gör du ändringarna i behållaren.
 
 Om du inte behöver den anpassade koden längre lämnar du den här behållaren tom, men tar inte bort den. Detta säkerställer att andra upplevelseändringar inte påverkas.
 
@@ -171,18 +171,18 @@ Om du inte behöver den anpassade koden längre lämnar du den här behållaren 
 
 +++ **Utför inte document.write-åtgärder i egna kodskript.**
 
-Skript körs asynkront. Detta gör ofta att document.write-åtgärder visas på fel plats på sidan. Vi rekommenderar inte att du använder document.write i skript som skapats med anpassad kod.
+Skript körs asynkront. Detta medför ofta att dokumentet.write-åtgärder visas på fel plats på sidan. Du bör inte använda document.write i skript som skapats med anpassad kod.
 
 +++
 
-+++ **Ta inte bort det ursprungliga elementet om du skapar ett element och sedan ändrar det.**
++++ **Om du skapar ett element och sedan ändrar det ska du inte ta bort det ursprungliga elementet.**
 
-Varje ändring skapar ett nytt element i panelen **[!UICONTROL Modifications]**. Om du tar bort element 1 har den andra åtgärden inte längre något att ändra. Ändringen fungerar därför inte längre.
+Varje ändring skapar ett nytt element på panelen **[!UICONTROL Modifications]**. Eftersom den andra åtgärden ändrar element 1 har den åtgärden inte längre något att ändra om du tar bort element 1, så ändringen fungerar inte längre.
 
 +++
 
-+++ **Var försiktig när du använder modifieringstypen **[!UICONTROL Page `<head>`]**för två kampanjer som påverkar samma URL.**
++++ **Var försiktig när du använder ändringstypen **[!UICONTROL Page `<head>`]**för två kampanjer som påverkar samma URL.**
 
-Om du använder modifieringstypen **[!UICONTROL Page `<head>`]** för två kampanjer som påverkar samma URL, injiceras JavaScript-skriptet i sidan från båda kampanjerna. [!DNL Journey Optimizer] bestämmer automatiskt ordningen för det levererade innehållet. Kontrollera att koden inte är beroende av placering. Det är upp till dig att se till att det inte finns några konflikter i koden.
+Om du använder ändringstypen **[!UICONTROL Page `<head>`]** för två kampanjer som påverkar samma URL, kommer JavaScript att matas in på sidan från båda kampanjerna. [!DNL Journey Optimizer] bestämmer automatiskt ordningen för det levererade innehållet. Kontrollera att koden inte är beroende av placering. Det är upp till dig att se till att det inte finns några konflikter i koden.
 
 +++
