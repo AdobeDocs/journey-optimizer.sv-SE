@@ -5,9 +5,9 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Experienced
-source-git-commit: 6f517ca209ae992f8daf3b285ccabebac100081b
+source-git-commit: 59fae238326186092a29d4a451655efabaabb4b2
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '374'
 ht-degree: 1%
 
 ---
@@ -66,8 +66,8 @@ Följ stegen nedan för att skapa webbupplevelser med den icke-visuella redigera
    Du kan också växla till webbdesignern om du vill. Alla ändringar bevaras.
 
 
-1. Du kan aktivera klickspårning och definiera vilka åtgärder som ska spåras från den andra ikonen på den vänstra listen, enligt nedan:
+1. Du kan markera ett element på webbplatsen och spåra klickningarna på det elementet. Om du vill aktivera klickspårning och definiera vilka åtgärder som ska spåras, klickar du på den andra ikonen i den vänstra listen enligt nedan:
 
    ![](assets/web-campaign-click.png)
 
-   Klicka på knappen **Lägg till komponent** för att välja en ny åtgärd att spåra.
+   Använd knappen **Lägg till komponent** för att välja en ny åtgärd att spåra. Läs mer om hur du använder klickspårning i [det här avsnittet](monitor-web-experiences.md#use-click-tracking).
