@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c858d16ec520418148fb28ad2ecec0d3a6377ba9
+source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2161'
 ht-degree: 24%
 
 ---
@@ -175,13 +175,12 @@ ht-degree: 24%
    + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
    + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
++ Konflikthantering och prioritering {#conflict-prioritization}
+   + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
+   + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
+   + [Tilldela prioritetspoäng](using/conflict-prioritization/priority-scores.md)
+   + [Resebegränsning och skiljeförfarande](using/conflict-prioritization/journey-capping.md)
 + Testa och godkänn {#test}
-   + [Konflikthantering och -prioritering](using/test-approve/conflict-prioritization.md)
-   + Konflikthantering och prioritering {#conflict-prioritization}
-      + [Kom igång med konflikthantering och -prioritering](using/test-approve/gs-conflict-prioritization.md)
-      + [Identifiera potentiella konflikter](using/test-approve/conflicts.md)
-      + [Tilldela prioritetspoäng](using/test-approve/priority-scores.md)
-      + [Resebegränsning och skiljeförfarande](using/test-approve/journey-capping.md)
    + Förhandsgranska och testa innehåll {#preview-test}
       + [Testa innehållet med exempelindata](using/test-approve/simulate-sample-input.md)
       + [Kom igång med förhandsgranskning och test](using/content-management/preview-test.md)
@@ -658,7 +657,7 @@ ht-degree: 24%
    + [Stöd för arkivering](using/configuration/archiving-support.md)
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera affärsregler](using/configuration/frequency-rules.md)
-   + [Arbeta med regeluppsättningar](using/configuration/rule-sets.md)
+   + [Arbeta med regeluppsättningar (LA)](using/configuration/rule-sets.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + Integrera med externa system {#external-systems}

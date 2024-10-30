@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 1b8442a13e046855bd3670e0ebdee60518f09bd4
+source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2217'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ I det här avsnittet kan du definiera namnet på resan, lägga till en beskrivni
 * definiera en [timeout-varaktighet](#timeout) i reseaktiviteter (endast för administratörsanvändare),
 * välj resan och profilen [tidszoner](#timezone)
 * Tilldela enhetliga Adobe Experience Platform-taggar till din resa för att enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
+* övervaka konflikter och prioritera dina resor med [konflikthanteringsverktyg](#conflict).
 
 ![](assets/journey32.png)
 
@@ -45,7 +46,6 @@ I det här avsnittet kan du definiera namnet på resan, lägga till en beskrivni
 Med den tekniska informationen för **Kopiera** kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`.
 
 Läs mer om tekniska fält som rör en resa för en viss profil och hur du använder dem [på den här sidan](expression/journey-properties.md).
-
 
 ## Ingång och återinträde {#entrance}
 
@@ -299,3 +299,14 @@ Följande skyddsförslag och begränsningar gäller för möjligheten att avslut
 * Utgångskriterier definieras endast i utkastläge
 * Samstämmighet mellan händelser och händelsebaserade kriterier för utträde på resan
 
+## Konflikthantering {#conflict}
+
+Avsnittet **[!UICONTROL Conflict management]** i resans egenskaper gör att du kan övervaka konflikter och prioritera dina resor. Du kan:
+
+* Använd en **regeluppsättning** för att exkludera den här resan till en del av målgruppen baserat på appningsregler. [Lär dig arbeta med regeluppsättningar](../configuration/rule-sets.md)
+
+* Tilldela en **prioritetspoäng** till resan, från 0 till 100. Ett högre tal anger en högre prioritet. Prioritetsvärdet som infogas här ärvs av alla inkommande åtgärder (till exempel i appen) som ingår i den här resan. [lär dig hur du arbetar med prioriteringspoäng](../conflict-prioritization/priority-scores.md)
+
+  I situationer där samma konfiguration för inkommande kanal används i andra kampanjer eller resor visas den inkommande åtgärden med högsta prioritet för mottagaren. Om flera resor eller kampanjer har samma poäng väljs det element som senast ändrades.
+
+* **Visa konflikter** med andra resor, kampanjer eller kanalkonfigurationer. Om du vill identifiera överlappning för målgrupper, start- och slutdatum, kanalkonfiguration, kanal eller regeluppsättning kan du visa potentiella konflikter här. [Lär dig identifiera potentiella konflikter under resan](../conflict-prioritization/conflicts.md)

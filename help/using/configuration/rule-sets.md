@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Arbeta med regeluppsättningar
+title: Arbeta med regeluppsättningar (LA)
 description: Lär dig hur du skapar och använder regeluppsättningar
 feature: Rules
 topic: Content Management
@@ -12,9 +12,9 @@ badge: label="Beta"
 hide: true
 hidefromtoc: true
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 87e2308b2d6a9aeb3cbc0ef4bb28ea7aeb3b869a
+source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1936'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Regeluppsättningar är för närvarande endast tillgängliga som betaversioner för valda användare. Kontakta din Adobe-representant för att få delta i Beta.
+>Regeluppsättningar är för närvarande tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att den här funktionen gradvis kommer att lanseras för fler användare i framtiden. Kontakta ert kontoteam om ni är intresserade av att läggas till i väntelistan.
 
 ## Kom igång med regeluppsättningar {#gs}
 
@@ -167,7 +167,7 @@ Vilka parametrar som är tillgängliga för regeln beror på vilken regeluppsät
    * **[!UICONTROL Journey Entry Cap]**: Begränsar antalet poster i resan under en viss period för en profil.
    * **[!UICONTROL Journey Concurrency Cap]**: Begränsar hur många resor en profil kan registreras samtidigt.
 
-1. Detaljerad information om hur du konfigurerar regler för att appa resan finns i avsnittet [Resebegränsning och medling](../test-approve/journey-capping.md).
+1. Detaljerad information om hur du konfigurerar regler för att appa resan finns i avsnittet [Resebegränsning och medling](../conflict-prioritization/journey-capping.md).
 
 +++
 
@@ -306,7 +306,7 @@ När du testar frekvensregler rekommenderar vi att du använder en ny [testprofi
 
 Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till resan och öppnar dess egenskaper. Välj den relevanta regeluppsättningen i listrutan **[!UICONTROL Capping rules]**.
 
-![](../test-approve/assets/journey-capping-apply.png)
+![](../conflict-prioritization//assets/journey-capping-apply.png)
 
 >[!IMPORTANT]
 >
