@@ -5,9 +5,9 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Experienced
-source-git-commit: 59fae238326186092a29d4a451655efabaabb4b2
+source-git-commit: 23ce5d1f2bafcb3ef37e2351efb8edc6da1ce805
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '396'
 ht-degree: 1%
 
 ---
@@ -32,12 +32,14 @@ Följ stegen nedan för att skapa webbupplevelser med den icke-visuella redigera
 
    ![](assets/web-non-visual-editor.png)
 
-1. Välj ändringstyp:
+1. Välj ändringstyp i listrutan.
+
+   Det finns två typer. De har olika alternativ. Se länkarna nedan för mer information:
 
    * **[!UICONTROL CSS Selector]** - [Läs mer](manage-web-modifications.md#css-selector)
-   * **[!UICONTROL Page `<Head>`]** - [Läs mer](manage-web-modifications.md#page-head)
+   * **[!UICONTROL Page `<head>`]** - [Läs mer](manage-web-modifications.md#page-head)
 
-1. Klicka på knappen **[!UICONTROL Advanced editing options]**. Anpassningsredigeraren öppnas.
+1. Klicka på knappen **[!UICONTROL Add personalization]**. Anpassningsredigeraren öppnas.
 
    Du kan utnyttja personaliseringsredigeraren [!DNL Journey Optimizer] med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
@@ -47,7 +49,7 @@ Följ stegen nedan för att skapa webbupplevelser med den icke-visuella redigera
 
 1. Den första ändringen visas ovanpå rutan **[!UICONTROL Modifications]**.
 
-   Klicka på knappen **[!UICONTROL More actions]** bredvid din ändring och välj **[!UICONTROL Info]** för att visa informationen. Du kan också **[!UICONTROL Edit]** eller **[!UICONTROL Delete]** ändra.
+   Klicka på knappen **[!UICONTROL More actions]** bredvid din ändring och välj **[!UICONTROL Info]** för att visa informationen. Du kan också **[!UICONTROL Delete the modification]** om det behövs.
 
    ![](assets/web-non-visual-editor-ex-more.png)
 
@@ -55,19 +57,18 @@ Följ stegen nedan för att skapa webbupplevelser med den icke-visuella redigera
    >
    >**[!UICONTROL Modifications]**-rutan är densamma som när du använder [webbdesignern](web-visual-editor.md). Alla åtgärder du kan utföra med den beskrivs i [det här avsnittet](manage-web-modifications.md#use-modifications-pane).
 
-1. Klicka på knappen **[!UICONTROL More actions]** ovanför rutan **[!UICONTROL Modifications]** till **[!UICONTROL Add a modification]** och upprepa stegen ovan. [Läs mer](manage-web-modifications.md#add-modifications)
-
-   ![](assets/web-non-visual-editor-more.png)
-
-1. Välj pilen längst upp till vänster på skärmen för att komma tillbaka till skärmen för resan eller kampanjutgåvan. Du kan se det aktuella antalet ändringar och lägga till fler.
-
-   ![](assets/web-campaign-modifications.png)
-
-   Du kan också växla till webbdesignern om du vill. Alla ändringar bevaras.
+1. Klicka på knappen **[!UICONTROL Add]** ovanpå rutan **[!UICONTROL Modifications]** om du vill lägga till ytterligare en ändring och upprepa stegen ovan.
 
 
-1. Du kan markera ett element på webbplatsen och spåra klickningarna på det elementet. Om du vill aktivera klickspårning och definiera vilka åtgärder som ska spåras, klickar du på den andra ikonen i den vänstra listen enligt nedan:
+1. Dessutom kan du markera ett element på webbplatsen och spåra klickningarna på det elementet. Om du vill aktivera klickspårning och definiera vilka åtgärder som ska spåras, klickar du på den andra ikonen i den vänstra listen enligt nedan:
 
    ![](assets/web-campaign-click.png)
 
    Använd knappen **Lägg till komponent** för att välja en ny åtgärd att spåra. Läs mer om hur du använder klickspårning i [det här avsnittet](monitor-web-experiences.md#use-click-tracking).
+
+
+1. Klicka på pilen längst upp till vänster på skärmen för att bläddra tillbaka till resan eller kampanjutgåvan. Du kan se det aktuella antalet ändringar och lägga till fler.
+
+   ![](assets/web-campaign-modifications.png)
+
+   Du kan också växla till webbdesignern om du vill. Alla ändringar bevaras.
