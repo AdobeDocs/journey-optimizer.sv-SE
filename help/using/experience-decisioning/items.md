@@ -1,85 +1,85 @@
 ---
-title: Beslutsobjekt
-description: Lär dig hur du arbetar med beslutsobjekt
+title: Decision items
+description: Learn how to work with decision items
 feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet"
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: b6c5bb09d7a1cb7f61a532cd5ffd262436e09039
+source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 0%
 
 ---
 
-# Skapa ditt första beslutsobjekt {#items}
+# Create your first decision item {#items}
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_items"
->title="Hantera beslutsobjekt"
->abstract="Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. För närvarande konsolideras alla skapade beslutsobjekt i en enda katalog för erbjudanden. Från den här skärmen kan du även komma åt katalogschemat med knappen **Redigera schema** och skapa anpassade attribut för dina beslutsobjekt."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
+>title="Manage decision items"
+>abstract="Journey Optimizer allows you to create marketing offers, known as decision items, that you can create and organize into a centralized catalog and collections. Currently, all created decision items are consolidated within a single &quot;Offers&quot; catalog. ****"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Configure the item catalog"
 
 Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. De består av standardattribut och anpassade attribut som är anpassade efter just dina behov. Dessutom innehåller de profilbegränsningar som gör att du kan definiera till vilka ett beslutsobjekt kan visas.
 
 Innan du skapar ett beslutsobjekt måste du se till att du har skapat en **beslutsregel** om du vill ange villkor för att avgöra vem beslutsobjektet kan visas för. [Lär dig skapa beslutsregler](rules.md).
 
-Om du vill skapa ett beslutsobjekt går du till **[!UICONTROL Experience Decisioning]** > **[!UICONTROL  Catalogs]** och klickar sedan på **[!UICONTROL Create item]**. Följ sedan stegen som beskrivs i avsnitten nedan.
+Om du vill skapa ett beslutsobjekt går du till **[!UICONTROL Decisioning]** > **[!UICONTROL  Catalogs]** och klickar sedan på **[!UICONTROL Create item]**. Följ sedan stegen som beskrivs i avsnitten nedan.
 
 ## Definiera beslutsobjektets attribut {#attributes}
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_priority"
->title="Definiera beslutsobjektets prioritet"
->abstract="Om en profil kvalificerar för flera artiklar kan prioriteten jämföra det här beslutsobjektet med andra. En högre prioritet ger objektet företräde framför andra."
+>title="Define the decision item&#39;s priority"
+>abstract="If a profile qualifies for multiple items, the priority enables to compare this decision item to others. A higher priority grants the item precedence over others."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_custom_attributes"
->title="Definiera anpassade attribut"
->abstract="Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De skapas i beslutsobjektens katalogschema. Det här avsnittet visas bara om du har lagt till minst ett anpassat attribut i katalogschemat."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
+>title="Define the custom attributes"
+>abstract="Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. They are created in the decision items&#39; catalog schema. Det här avsnittet visas bara om du har lagt till minst ett anpassat attribut i katalogschemat."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Configure the item catalog"
 
-Börja med att definiera beslutsobjektets standardattribut och anpassade attribut:
+Start by defining the decision item&#39;s standard and custom attributes :
 
 ![](assets/item-attributes.png)
 
-1. Ange ett namn och en beskrivning.
+1. Provide a name and a description.
 1. Ange start- och slutdatum. Posten kommer endast att beaktas av beslutsmotorn inom dessa datum.
-1. Ange **[!UICONTROL Priority]** för beslutsobjektet jämfört med andra, om en profil kvalificerar för flera objekt. En högre prioritet ger objektet företräde framför andra.
-1. I fältet **Taggar** kan du tilldela enhetliga Adobe Experience Platform-taggar till dina beslutsobjekt. På så sätt kan du enkelt klassificera dem och förbättra sökningen. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
+1. **[!UICONTROL Priority]** A higher priority grants the item precedence over others.
+1. **** This allows you to easily classify them and improve search. [](../start/search-filter-categorize.md#tags)
 
    >[!NOTE]
    >
-   >Prioriteten är en heltalsdatatyp. Alla attribut som är heltalsdatatyper ska innehålla heltalsvärden (inga decimaler).
+   >The priority is an integer data type. All attributes that are integer data types should contain integer values (no decimals).
 
-1. Ange anpassade attribut (valfritt). Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De definieras i beslutsobjektens katalogschema. [Lär dig arbeta med kataloger](catalogs.md)
+1. Specify custom attributes (optional). Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De definieras i beslutsobjektens katalogschema. [Lär dig arbeta med kataloger](catalogs.md)
 
-1. När beslutsobjektets attribut har definierats klickar du på **[!UICONTROL Next]**.
+1. **[!UICONTROL Next]**
 
-## Konfigurera berättigandet för beslutsobjektet {#eligibility}
+## Configure the decision item&#39;s eligibility {#eligibility}
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_constraints"
->title="Lägga till målgrupper eller beslutsregler"
->abstract="Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart vissa profiler."
+>title="Add audiences or decision rules"
+>abstract="By default, all profiles are eligible to receive the decision item, but you can use audiences or rules to restrict the item to specific profiles only."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Använda målgrupper"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
 
 Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart specifika profiler, båda lösningarna som motsvarar olika användningar. Expandera avsnittet nedan om du vill ha mer information:
 
-+++Använda målgrupper kontra decimalregler
++++Using audiences vs decisiong rules
 
-En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel är en funktion som körs på begäran mot en enskild profil under beslutsprocessen.
+Basically, the output of an audience is a list of profiles, whereas a decision rule is a function executed on demand against a single profile during the decisioning process.
 
-* **Publiker**: Å ena sidan är målgrupper en grupp Adobe Experience Platform-profiler som matchar en viss logik baserat på profilattribut och upplevelsehändelser. Erbjudandehanteringen innebär dock inte att publiken beräknas om, vilket kanske inte är aktuellt när erbjudandet presenteras.
+* **** However, Offer Management does not recompute the audience, which may not be up-to-date when presenting the offer.
 
-* **Beslutsregler**: Å andra sidan baseras en beslutsregel på data som är tillgängliga i Adobe Experience Platform och avgör till vem ett erbjudande kan visas. När regeln har valts i ett erbjudande eller i ett beslut för en viss placering verkställs den varje gång ett beslut fattas, vilket säkerställer att varje profil får det senaste och bästa erbjudandet.
+* **** Once selected in an offer or a decision for a given placement, the rule is executed every single time a decision is made, which ensures that each profile gets the latest and the best offer.
 
 +++
 
-* Om du vill begränsa presentationen av beslutsobjektet till medlemmar i en eller flera Adobe Experience Platform-målgrupper väljer du alternativet **[!UICONTROL Visitors who fall into one or multiple audiences]**, lägger sedan till en eller flera målgrupper från den vänstra rutan och kombinerar dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** . [Läs mer om målgrupper](../audience/about-audiences.md).
+* **[!UICONTROL Visitors who fall into one or multiple audiences]****[!UICONTROL And]****[!UICONTROL Or]** [Läs mer om målgrupper](../audience/about-audiences.md).
 
 * Om du vill koppla en specifik beslutsregel till beslutsobjektet väljer du **[!UICONTROL By rule]** och drar sedan önskad regel från den vänstra rutan till den centrala delen. [Läs mer om beslutsregler](rules.md).
 
@@ -89,7 +89,7 @@ När du väljer målgrupper eller beslutsregler kan du se information om de upps
 
 >[!NOTE]
 >
->Profiluppskattningar är inte tillgängliga när regelparametrar innehåller data som inte finns i profilen, till exempel kontextdata. Exempel: en regel som kräver att det aktuella vädret är ≥80 grader.
+>Profile estimates are unavailable when rule parameters include data not in the profile such as context data. For example, an eligibility rule that requires the current weather to be ≥80 degrees.
 
 ## Ange regler för begränsning {#capping}
 
@@ -102,20 +102,20 @@ Begränsning används som en begränsning för att definiera det maximala antal 
 >
 >Det kan ta upp till 3 sekunder att uppdatera värdet för den räknare som används. Anta att du visar en webbanderoll som visar ett erbjudande på din webbplats. Om en viss användare bläddrar till nästa sida på webbplatsen på mindre än 3 sekunder ökas inte räknarvärdet för den användaren.
 
-Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stegen för att ange regler för fästning för beslutsobjektet:
+**[!UICONTROL Create capping]**
 
-1. Ange vilken **[!UICONTROL Capping event]** som ska beaktas för att öka räknaren.
+1. **[!UICONTROL Capping event]**
 
-   * **[!UICONTROL Decision event]** (standardvärde): Maximalt antal gånger ett erbjudande kan presenteras.
-   * **[!UICONTROL Impression]** (endast inkommande kanaler): Maximalt antal gånger som erbjudandet kan visas för en användare.
-   * **[!UICONTROL Clicks]**: Maximalt antal gånger en användare kan klicka på beslutsobjektet.
-   * **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att ange hur många gånger objektet ska skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de är lika med 10000 eller tills en viss profil har lösts in 1 gång. Använd [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}-scheman för att skapa en anpassad händelseregel.
+   * **[!UICONTROL Decision event]**
+   * **[!UICONTROL Impression]**
+   * **[!UICONTROL Clicks]**
+   * **[!UICONTROL Custom event]** For example, you can cap on the number of redemptions until they equal 10000, or until a given profile has redeemed 1 time. [](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}
 
    >[!NOTE]
    >
-   >För alla takthändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, vilket kan leda till att appningsräknaren inte ökas korrekt. För att vara säker på att varje takthändelse spåras och tas med i appningsräknaren måste du se till att schemat som används för att samla in upplevelsehändelser innehåller rätt fältgrupp för den händelsen. Detaljerad information om datainsamling finns i Journey Optimizer beslutsdokumentation:
-   >* [Datainsamling för beslutshantering](../offers/data-collection/data-collection.md)
-   >* [Konfigurera datainsamling](../offers/data-collection/schema-requirement.md)
+   >For all capping events except decision event, the decision management feedback may not be automatically collected, which could result in the capping counter not being correctly incremented. To make sure each capping event is tracked and accounted for in the capping counter, ensure that the schema used to collect experience events includes the correct field group for that event. Detailed information on data collection is available in Journey Optimizer Decision management documentation:
+   >* [](../offers/data-collection/data-collection.md)
+   >* [](../offers/data-collection/schema-requirement.md)
 
 1. Välj typ av begränsning:
 
@@ -125,44 +125,44 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stege
 
 1. I fältet **[!UICONTROL Capping count limit]** anger du hur många gånger erbjudandet kan visas för alla användare eller per profiler, beroende på den valda begränsningstypen. Talet måste vara ett heltal större än 0.
 
-   Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i fältet **[!UICONTROL Capping count limit]** skickas inga fler erbjudanden efter 10 utcheckningar.
+   For example, you defined a custom capping event such as the number of checkouts is taken into account. **[!UICONTROL Capping count limit]**
 
-1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
+1. **[!UICONTROL Reset capping frequency]** To do this, define the time period for the counting (daily, weekly or monthly) and enter the number of days/weeks/months of your choice. **[!UICONTROL Weekly]******
 
    >[!NOTE]
    >
    >Räknaren för frekvensbegränsning återställs kl. **12 UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **Söndag**. En varaktighet som du väljer får inte vara längre än **2 år** (d.v.s. motsvarande antal månader, veckor eller dagar).
    >
-   >När du har publicerat din beslutspost kan du inte ändra tidsperioden (månadsvis, veckovis eller dagligen) som du har valt för frekvensen. Du kan fortfarande redigera frekvensbegränsningen om objektet har statusen **[!UICONTROL Draft]** och aldrig har publicerats tidigare med frekvensbegränsning aktiverad.
+   >After publishing your decision item, you will not be able to change the time period (monthly, weekly or daily) you selected for the frequency. **[!UICONTROL Draft]**
 
-1. Klicka på **[!UICONTROL Create]** för att bekräfta skapandet av begränsningsregeln. Du kan skapa upp till 10 regler för ett enskilt beslutsobjekt. Om du vill göra det klickar du på knappen **[!UICONTROL Create capping]** och upprepar stegen ovan.
+1. **[!UICONTROL Create]** You can create up to 10 rules for a single decision item. **[!UICONTROL Create capping]**
 
    ![](assets/item-capping-rules.png)
 
 1. När du har definierat beslutsobjektets regler för behörighet och begränsning klickar du på **[!UICONTROL Next]** för att granska och spara objektet.
 
-1. Beslutsobjektet visas nu i listan med statusen **[!UICONTROL Draft]**. Klicka på ellipsknappen och välj **[!UICONTROL Approve]** när det är klart att visas för profiler.
+1. Beslutsobjektet visas nu i listan med statusen **[!UICONTROL Draft]**. **[!UICONTROL Approve]**
 
    ![](assets/item-approve.png)
 
 <!--* Identifying how many times a given customer has been shown a decision item. 
 If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event-->
 
-## Hantera beslutsobjekt {#manage}
+## Manage decision items {#manage}
 
-I listan över beslutsobjekt kan du redigera ett beslutsobjekt, ändra dess status (**Utkast**, **Godkänt**, **Arkiverat**), duplicera eller ta bort det.
+************
 
-Om du vill ändra ett beslutsobjekt öppnar du det, gör ändringarna och sparar det.
+To modify a decision item, open it, make your modifications and save it.
 
-Om du väljer ett beslutsobjekt eller klickar på ellipsknappen aktiveras de åtgärder som beskrivs nedan.
+Selecting a decision item or clicking the ellipsis button enables the actions described below.
 
-* **[!UICONTROL Approve]**: Anger beslutsobjektets status till Godkänd.
+* **[!UICONTROL Approve]**
 * **[!UICONTROL Undo approve]**: Anger beslutsobjektets status tillbaka till **[!UICONTROL Draft]**.
-* **[!UICONTROL Duplicate]**: Skapar ett beslutsobjekt med identiska attribut och begränsningar. Som standard har det nya objektet statusen **[!UICONTROL Draft]**.
-* **[!UICONTROL Delete]**: Tar bort beslutsobjektet från listan.
+* **[!UICONTROL Duplicate]** **[!UICONTROL Draft]**
+* **[!UICONTROL Delete]**
 
   >[!IMPORTANT]
   >
-  >När den tagits bort är beslutsobjektet och dess innehåll inte längre tillgängliga. Det går inte att ångra den här åtgärden. Om beslutsobjektet används i en samling eller ett beslut kan det inte tas bort. Du måste ta bort beslutsobjektet från alla objekt först.
+  >Once deleted, the decision item and its content are not accessible anymore. This action cannot be undone. If the decision item is used in a collection or a decision, it cannot be deleted. Du måste ta bort beslutsobjektet från alla objekt först.
 
-* **[!UICONTROL Archive]**: Anger beslutsobjektets status till **[!UICONTROL Archived]**. Beslutsobjektet är fortfarande tillgängligt från listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
+* **[!UICONTROL Archive]****[!UICONTROL Archived]** **[!UICONTROL Draft]****[!UICONTROL Approved]** You can only duplicate or delete it.

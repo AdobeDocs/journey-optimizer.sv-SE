@@ -1,19 +1,19 @@
 ---
-title: Skapa kodbaserade upplevelser
-description: Lär dig skapa kodbaserade upplevelser i Journey Optimizer
+title: Create code-based experiences
+description: Learn how to create code-based experiences in Journey Optimizer
 feature: Code-based Experiences
 topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 2a7707f5538a8d01a7b0d7e531d94d9ef922097a
+source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1740'
 ht-degree: 1%
 
 ---
 
-# Skapa kodbaserade upplevelser {#create-code-based}
+# Create code-based experiences {#create-code-based}
 
 I [!DNL Journey Optimizer] kan du skapa kodbaserade upplevelser under en resa eller en kampanj.
 
@@ -27,7 +27,7 @@ Följ stegen nedan för att börja bygga upp din kodbaserade upplevelse genom en
 
 >[!TAB Lägg till en kodbaserad upplevelse på en resa]
 
-Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
+****
 
 1. [Skapa en resa](../building-journeys/journey-gs.md).
 
@@ -41,19 +41,19 @@ Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
    >
    >Eftersom **Kodbaserad upplevelse** är en inkommande meddelandeaktivitet levereras den med en 3-dagars **Wait**-aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
 
-1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
+1. **[!UICONTROL Label]****[!UICONTROL Description]**
 
-1. Välj eller skapa den [kodbaserade upplevelsekonfigurationen](code-based-configuration.md) som ska användas.
+1. [](code-based-configuration.md)
 
    ![](assets/code-based-activity-config.png)
 
-1. Markera knappen **[!UICONTROL Edit content]** och redigera ditt innehåll efter behov med hjälp av anpassningsredigeraren. [Läs mer](#edit-code)
+1. **[!UICONTROL Edit content]** [Läs mer](#edit-code)
 
-   Du kan också använda en befintlig innehållsmall som bas för kodinnehållet. Observera att mallarna som är tillgängliga att välja omfattar antingen HTML eller JSON baserat på den kanalkonfiguration som har valts tidigare. [Lär dig använda innehållsmallar](../content-management/use-content-templates.md)
+   You can also use an existing content template as a basis for your code content. Note that the templates available to choose are scoped to either HTML or JSON based on the channel configuration that has been chosen beforehand. [](../content-management/use-content-templates.md)
 
-1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
+1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Läs mer](../building-journeys/about-journey-activities.md)
 
-1. När kodbasupplevelsen är klar kan du slutföra konfigurationen och publicera resan för att aktivera den. [Läs mer](../building-journeys/publishing-the-journey.md)
+1. Once your code-base experience is ready, finalize the configuration and publish your journey to activate it. [Läs mer](../building-journeys/publishing-the-journey.md)
 
 Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
@@ -61,19 +61,19 @@ Mer information om hur du konfigurerar en resa finns på [den här sidan](../bui
 
 Följ stegen nedan för att börja skapa din **kodbaserade**-upplevelse via en kampanj.
 
-1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
+1. Create a campaign. [Läs mer](../campaigns/create-campaign.md)
 
-1. Välj den typ av kampanj som du vill köra
+1. Select the type of campaign that you want to execute
 
-   * **[!UICONTROL Scheduled - Marketing]**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföringsmeddelanden**. De konfigureras och körs från användargränssnittet.
+   * **[!UICONTROL Scheduled - Marketing]** **** They are configured and executed from the user interface.
 
-   * **[!UICONTROL API-triggered - Marketing/Transactional]**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marketing** - eller **transactional** -meddelanden, d.v.s. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](../campaigns/api-triggered-campaigns.md)
+   * **[!UICONTROL API-triggered - Marketing/Transactional]** ******** [](../campaigns/api-triggered-campaigns.md)
 
-1. Slutför stegen för att skapa en kampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
+1. [](../audience/about-audiences.md)[](../campaigns/create-campaign.md#schedule) [](../campaigns/get-started-with-campaigns.md)
 
-1. Välj åtgärden **[!UICONTROL Code-based experience]**.
+1. **[!UICONTROL Code-based experience]**
 
-1. Välj eller skapa den kodbaserade upplevelsekonfigurationen. [Läs mer](code-based-configuration.md)
+1. Select or create the code-based experience configuration. [Läs mer](code-based-configuration.md)
 
    ![](assets/code-based-campaign-surface.png)
 
@@ -87,41 +87,41 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
 >[!ENDTABS]
 
-## Redigera kodinnehållet {#edit-code}
+## Edit the code content {#edit-code}
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
->abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Kom igång med personaliseringsredigeraren"
+>abstract="Insert and edit the code you want to deliver as part of this code-based experience action."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Get started with the personalization editor"
 
-1. Välj **[!UICONTROL Edit code]** från reseaktiviteten eller kampanjversionen.
+1. **[!UICONTROL Edit code]**
 
    ![](assets/code-based-campaign-edit-code.png)
 
-1. [Anpassningsredigeraren](../personalization/personalization-build-expressions.md) öppnas. Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
+1. [](../personalization/personalization-build-expressions.md) Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
 
-1. Du kan växla mellan redigeringsläget HTML och JSON, och vice versa.
+1. You can switch the authoring mode from HTML to JSON, and vice versa.
 
    ![](assets/code-based-campaign-code-editor.png)
 
    >[!CAUTION]
    >
-   >Om du ändrar redigeringsläget förlorar du all aktuell kod, så se till att växla läge innan du börjar redigera.
+   >Changing the authoring mode will result in losing all of your current code, so make sure to switch modes before you start authoring.
 
-1. Ange koden efter behov. Du kan utnyttja personaliseringsredigeraren [!DNL Journey Optimizer] med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+1. Enter your code as needed. [!DNL Journey Optimizer] [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Du kan lägga till HTML eller JSON-uttrycksfragment om det behövs. [Lär dig hur](../personalization/use-expression-fragments.md)
+1. You can add HTML or JSON expression fragments if needed. [Lär dig hur](../personalization/use-expression-fragments.md)
 
    Du kan också spara en del av kodinnehållet som fragment. [Lär dig hur](../content-management/fragments.md#save-as-expression-fragment)
 
-1. Med kodbaserade upplevelser kan ni använda funktionen för upplevelsebeslut. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md)
+1. Med kodbaserade upplevelser kan ni använda beslutsfunktionen. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md)
 
    ![](assets/code-based-campaign-create-decision.png)
 
    >[!NOTE]
    >
-   >Experience Decision är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+   >Beslut är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). To gain access, contact your Adobe representative.
 
 
 1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
@@ -132,8 +132,8 @@ Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll f�
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview"
->title="Förgranska din kodbaserade upplevelse"
->abstract="Få en simulering av hur er kodbaserade upplevelse kommer att se ut."
+>title="Preview your code-based experience"
+>abstract="Get a simulation of what your code-based experience will look like."
 
 Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaserade upplevelse.
 
@@ -165,19 +165,19 @@ Detaljerad information om hur du väljer testprofiler och förhandsgranskar ditt
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview_device_mobile"
->title="Förgranska din kodbaserade mobilupplevelse på enheten"
->abstract="Skanna QR-koden eller kopiera länken för att förhandsgranska på enheten. När du är ansluten anger du stiftet på enheten. Du kan behöva starta om appen för att se ändringarna varje gång du uppdaterar förhandsgranskningslänkarna."
+>title="Preview your code-based mobile experience on device"
+>abstract="Scan the QR code or copy the link to preview on device. Once connected, enter the pin on the device. You may need to restart your app to see the changes each time you update your preview links."
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview_device_refresh"
->title="Uppdatera förhandsgranskningslänken så att den återspeglar den aktuella vyn"
->abstract="Förhandsvisningen på enheten visar innehållet när du skapade eller uppdaterade förhandsgranskningslänken. Om du har ändrat innehållet eller valt en annan testprofil eller behandling, uppdaterar du förhandsvisningen så att den återspeglar den aktuella vyn."
+>title="Refresh the preview link to reflect the current view"
+>abstract="The on-device preview will show the content as of when you created or refreshed the preview link. If you&#39;ve modified the content or selected a different test profile or treatment, refresh the preview to have it reflect the current view."
 
-När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni förhandsgranska era personaliserade upplevelser direkt i webbläsaren eller på era mobila enheter för att se hur upplevelserna ser ut på riktiga enheter.
+When building code-based experiences for web pages or mobile apps, you can preview your personalized experiences right on your browser or on your mobile devices, in order to see how these experiences look on real devices.
 
 >[!WARNING]
 >
->Förhandsgranskning på enhet är inte tillgängligt när kontextattribut för [beslutsprinciper](../experience-decisioning/create-decision.md) eller [personalisering](../personalization/personalization-build-expressions.md) används.
+>[](../experience-decisioning/create-decision.md)[](../personalization/personalization-build-expressions.md)
 
 1. Klicka på knappen **[!UICONTROL Open preview options]** på skärmen **[!UICONTROL Simulate]**. Förhandsvisningsalternativen beror på vilken plattform du har valt i den [kodbaserade konfigurationen](code-based-configuration.md#create-code-based-configuration).
 
@@ -187,27 +187,27 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
 
    Du kan antingen:
 
-   * Markera knappen **[!UICONTROL Copy link]** och klistra in länken på en webbläsarflik. Du kan också dela länken med ditt team och intressenter, som kan förhandsgranska den nya upplevelsen i vilken webbläsare som helst innan ändringarna publiceras.
+   * **[!UICONTROL Copy link]** You can also share the link with your team and stakeholders, who can preview the new experience in any browser before the changes go live.
 
-   * Klicka på **[!UICONTROL Open in new tab]** för att öppna länken i din webbläsare.
+   * **[!UICONTROL Open in new tab]**
 
-   * Skanna QR-koden med din mobila enhet för att öppna förhandsgranskningslänken i en mobilwebbläsare.
+   * Scan the QR code with your mobile device to open the preview link on a mobile browser.
 
-1. Om du använder [Mobila plattformar](code-based-configuration.md#mobile) (iOS/Android) i din kodbaserade konfiguration är det **[!UICONTROL Deeplink]** skrivskyddade fältet förfyllt med det **[!UICONTROL Preview URL]**-värde som anges i kanalkonfigurationen för den valda plattformen.
+1. [](code-based-configuration.md#mobile)**[!UICONTROL Deeplink]****[!UICONTROL Preview URL]**
 
-   Växla mellan flikarna **[!UICONTROL iOS]** och **[!DNL Android]** för att förhandsgranska din upplevelse för den plattform du väljer.
+   **[!UICONTROL iOS]****[!DNL Android]**
 
    ![](assets/preview-on-device-mobile.png)
 
-   Du kan antingen:
+   You can either:
 
-   * Välj knappen **[!UICONTROL Copy link]** och dela länken med ditt team och intressenter, som kan förhandsgranska den nya upplevelsen i vilken mobilwebbläsare som helst innan ändringarna publiceras.
+   * **[!UICONTROL Copy link]**
 
-   * Skanna QR-koden med din mobila enhet för att öppna förhandsgranskningslänken direkt i mobilprogrammet. Du måste ange PIN-koden på enheten för att kunna upprätta [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/implement-assurance){target="_blank"}-sessionen.
+   * Scan the QR code with your mobile device to open the preview link directly in the mobile application. [](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/implement-assurance){target="_blank"}
 
      >[!NOTE]
      >
-     >**Adobe Experience Platform Assurance** är en produkt från Adobe Experience Cloud som hjälper dig att inspektera, verifiera, simulera och validera hur du samlar in data eller levererar upplevelser i din mobilapp. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
+     >**** [](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
 
 1. Länkar för förhandsgranskning genereras för den valda testprofilen och, om du använder [innehållsexperiment](../content-management/content-experiment.md) under din resa eller kampanj, för den valda behandlingen.
 
@@ -217,39 +217,39 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
 
    <!--When creating a content experiment, you need to select a given treatment and click the **[!UICONTROL Simulate content]** button to obtain the link corresponding to that treatment, then select another treatment, click the **[!UICONTROL Simulate content]** button to obtain a new preview link, and so on.-->
 
-   När du uppdaterar innehållet eller väljer en annan testprofil eller behandling uppdateras länken för förhandsgranskning automatiskt. Du kan kopiera länken till olika webbläsarflikar och jämföra upplevelserna.
+   When updating the content, or selecting a different test profile or treatment, the preview link is automatically refreshed. You can copy the link into different browser tabs, and compare the experiences.
 
-## Ge liv åt er kodbaserade upplevelse {#code-based-experience-live}
+## Make your code-based experience live {#code-based-experience-live}
 
 >[!IMPORTANT]
 >
-> Om kampanjen omfattas av en policy för godkännande måste ni begära godkännande för att kunna aktivera era kodbaserade upplevelser. [Läs mer](../test-approve/gs-approval.md)
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to activate your code-based experiences. [Läs mer](../test-approve/gs-approval.md)
 
 När du har definierat din kodbaserade upplevelse och redigerat ditt innehåll efter behov med den [kodbaserade redigeraren](#edit-code) kan du aktivera din resa eller kampanj för att göra ändringarna synliga för din målgrupp.
 
-Du kan också förhandsgranska det kodbaserade upplevelseinnehållet innan du publicerar det. [Läs mer](#test-code-based-experience)
+You can also preview your code-based experience content before making it live. [Läs mer](#test-code-based-experience)
 
 >[!NOTE]
 >
->Om du aktiverar en kodbaserad resa/kampanj som påverkar samma sidor som en annan resa eller kampanj som redan är aktiv, kommer alla ändringar att tillämpas på innehållet.
+>If you activate a code-based journey/campaign impacting the same pages as another journey or campaign which is already live, all the changes will be applied to your content.
 >
->Om flera kodbaserade resor eller kampanjer uppdaterar samma element i innehållet prioriteras den högsta prioriterade resan/kampanjen.
+>If multiple code-based journeys or campaigns update the same element(s) of your content, the highest priority journey/campaign takes precedence.
 
-När den kodbaserade resan eller kampanjen är live ansvarar ditt programimplementeringsteam för att göra explicita API- eller SDK-anrop för att hämta innehåll för de ytor som definieras i den valda [kodbaserade upplevelsekonfigurationen](code-based-configuration.md). Läs mer om olika kundimplementeringar i [det här avsnittet](code-based-implementation-samples.md).
+[](code-based-configuration.md) [](code-based-implementation-samples.md)
 
-### Publish är en kodbaserad resa {#publish-code-based-journey}
+### Publish a code-based journey {#publish-code-based-journey}
 
-Följ stegen nedan för att göra din kodbaserade upplevelse levande från en resa.
+To make your code-based experience live from a journey, follow the steps below.
 
-1. Kontrollera att din resa är giltig och att det inte finns något fel. [Läs mer](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
+1. Verify that your journey is valid and that there is no error. [Läs mer](../building-journeys/troubleshooting.md#checking-for-errors-before-testing)
 
-1. Välj alternativet **[!UICONTROL Publish]** i den övre högra menyn på resan.
+1. **[!UICONTROL Publish]**
 
    ![](assets/code-based-journey-publish.png)
 
    >[!NOTE]
    >
-   >Läs mer om publicering av resor i [det här avsnittet](../building-journeys/publishing-the-journey.md).
+   >[](../building-journeys/publishing-the-journey.md)
 
 Din kodbaserade resa har statusen **[!UICONTROL Live]** och är nu synlig för den valda målgruppen. Varje mottagare av resan kan se dina ändringar.
 
@@ -263,7 +263,7 @@ Din kodbaserade resa har statusen **[!UICONTROL Live]** och är nu synlig för d
 
    ![](assets/code-based-campaign-review.png)
 
-1. Kontrollera och redigera vid behov innehåll, egenskaper, konfiguration, målgrupp och schema.
+1. Check and edit if needed the content, properties, configuration, audience and schedule.
 
 1. Välj **[!UICONTROL Activate]**.
 
@@ -277,9 +277,9 @@ Din kodbaserade kampanj har statusen **[!UICONTROL Live]** och är nu synlig fö
 
 >[!NOTE]
 >
->När du har klickat på **[!UICONTROL Activate]** kan det ta upp till 15 minuter innan dina ändringar är tillgängliga live.
+>**[!UICONTROL Activate]**
 >
->Om du har definierat ett schema för den kodbaserade kampanjen har den statusen **[!UICONTROL Scheduled]** tills startdatumet och starttiden nås.
+>**[!UICONTROL Scheduled]**
 
 ## Stoppa en kodbaserad resa eller kampanj {#stop-code-based-experience}
 

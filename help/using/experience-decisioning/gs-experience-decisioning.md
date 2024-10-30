@@ -1,39 +1,39 @@
 ---
-title: Kom igång med Experience Decision
-description: Läs mer om Experience Decision
+title: Kom igång med beslutsfattande
+description: Läs mer om beslutsfattande
 feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet"
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '402'
 ht-degree: 1%
 
 ---
 
-# Kom igång med Experience Decision {#get-started-experience-decisioning}
+# Kom igång med beslutsfattande {#get-started-experience-decisioning}
 
 >[!AVAILABILITY]
 >
->Experience Decision är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+>Beslut är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 >
 >För närvarande är funktionen inte tillgänglig för kunder som har köpt tilläggserbjudandena Adobe **Healthcare Shield** och **Privacy and Security Shield** .
 
-## Vad är Experience Decision? {#about}
+## Vad är beslut? {#about}
 
-Experience Decision förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en sofistikerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person.
+Beslutsfattandet förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person.
 
-Dessa beslutsobjekt integreras smidigt i ett brett urval av inkommande ytor via den [nya kodbaserade upplevelsekanalen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), som nu är tillgänglig inom Journey Optimizer-kampanjer. Policy för Experience Decision-beslut är endast tillgängliga för kodbaserade upplevelsekampanjer.
+Dessa beslutsobjekt integreras smidigt i ett brett urval av inkommande ytor via den [nya kodbaserade upplevelsekanalen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), som nu är tillgänglig inom Journey Optimizer-kampanjer. Beslutspolicyer är endast tillgängliga för kodbaserade upplevelsekampanjer.
 
 
-## Viktiga steg i Experience Decision {#steps}
+## Viktiga steg för beslut {#steps}
 
-De viktigaste stegen för Experience Decision är följande:
+De viktigaste stegen för att arbeta med beslut är följande:
 
-1. **Tilldela rätt behörigheter**. Experience Decisioning är bara tillgängligt för användare med tillgång till ett Experience Decision-relaterat **[!UICONTROL role]** som till exempel Beslutsfattare. Om du inte kan komma åt Experience Decision måste du utöka din behörighet.
+1. **** **[!UICONTROL role]** Om du inte kan komma åt Beslutsfattandet måste du utöka din behörighet.
 
    +++Lär dig hur du tilldelar rollen Beslutsledare
 
@@ -59,9 +59,9 @@ De viktigaste stegen för Experience Decision är följande:
 
 1. **Skapa beslutsobjekt** som ska visas för målgruppen.
 
-1. **Ordna med samlingar**: Använd samlingar för att kategorisera beslutsobjekt baserat på attributbaserade regler. Införliva samlingar i era urvalsstrategier för att avgöra vilken samling av beslutsobjekt som ska övervägas.
+1. **** Införliva samlingar i era urvalsstrategier för att avgöra vilken samling av beslutsobjekt som ska övervägas.
 
-1. **Skapa beslutsregler**: Beslutsregler används i beslutsobjekt och/eller urvalsstrategier för att avgöra till vilka ett beslutsobjekt kan visas.
+1. ****
 
 1. **Implementera rangordningsmetoder**: Skapa rangordningsmetoder och tillämpa dem inom beslutsstrategier för att fastställa prioritetsordningen för val av beslutsobjekt.
 

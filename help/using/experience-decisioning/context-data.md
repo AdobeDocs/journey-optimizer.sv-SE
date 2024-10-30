@@ -1,32 +1,32 @@
 ---
-title: Utnyttja kontextdata i Experience Decision
-description: Lär dig använda kontextdata i Experience Decision
+title: Utnyttja kontextdata i beslutet
+description: Lär dig använda kontextdata i beslut
 feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet"
 exl-id: ddc4b681-020b-4433-b4b3-3791c41907c9
-source-git-commit: 2349145fcf698769d16326a19a48a413a3c1dd95
+source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# Utnyttja kontextdata i Experience Decision {#context}
+# Utnyttja kontextdata i beslutet {#context}
 
-Med Experience Decision kan du utnyttja all information som finns i Adobe Experience Platform för att utföra olika åtgärder, som att skapa [beslutsregler](rules.md) eller [rankningsformler](ranking.md). Du kan till exempel utforma en beslutsregel som kräver att det aktuella vädret är ≥80 grader när beslutsbegäran görs.
+Med Decisioning kan du utnyttja all information som finns i Adobe Experience Platform för att utföra olika åtgärder, som att skapa [beslutsregler](rules.md) eller [rankningsformler](ranking.md). Du kan till exempel utforma en beslutsregel som kräver att det aktuella vädret är ≥80 grader när beslutsbegäran görs.
 
 >[!NOTE]
 >
 >Kontextdata definieras i Adobe Experience Platform och skickas in när en beslutsbegäran görs. Den omfattar inte historiska data.
 
-Om du vill använda kontextdata måste du först definiera de data som du vill göra tillgängliga i Experience Decision. När du är klar integreras dessa data sömlöst i Experience Decisioning på fliken **[!UICONTROL Context Data]** som är tillgänglig när du skapar en beslutsregel. Du kan också utnyttja data när du redigerar en rankningsformel.
+Om du vill använda kontextdata måste du först definiera de data som du vill göra tillgängliga i Beslutsfattandet. När du är klar integreras dessa data sömlöst i beslut på fliken **[!UICONTROL Context Data]** som är tillgängliga när du skapar en beslutsregel. Du kan också utnyttja data när du redigerar en rankningsformel.
 
 ![](assets/decision-rules-context.png)
 
-Stegen för att mata Experience Decision med Adobe Experience Platform-data är följande:
+Stegen för att mata in beslut med Adobe Experience Platform-data är följande:
 
 1. Skapa ett **Experience Event-schema** i Adobe Experience Platform och dess associerade **datauppsättning**. [Lär dig skapa scheman](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas){target="_blank"}
 
@@ -42,7 +42,7 @@ Stegen för att mata Experience Decision med Adobe Experience Platform-data är 
 
       ![](assets/decision-rules-context-datastream-service.png)
 
-När datastream har sparats hämtas den markerade datauppsättningens information automatiskt och integreras i Experience Decision, som vanligtvis blir tillgänglig inom cirka 24 timmar.
+När datastream har sparats hämtas den markerade datauppsättningens information automatiskt och integreras i beslutet, som vanligtvis blir tillgänglig inom cirka 24 timmar.
 
 Mer information om hur du arbetar med Adobe Experience Platform finns i följande resurser:
 
