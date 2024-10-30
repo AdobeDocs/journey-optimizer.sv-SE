@@ -9,49 +9,34 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
-badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+source-git-commit: c858d16ec520418148fb28ad2ecec0d3a6377ba9
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
 
 # Skapa flerspråkigt innehåll med manuell översättning {#multilingual-manual}
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Flerspråkigt innehåll är för närvarande endast tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+>För manuellt flöde måste användare beviljas behörigheten **[!UICONTROL Manage Language settings]**.
 
-Med det manuella flödet kan ni enkelt översätta ert innehåll direkt i kampanjen och resan för e-post, push-meddelanden eller SMS, vilket ger er precis kontroll och anpassningsbara alternativ för flerspråkiga meddelanden. Dessutom kan du enkelt importera redan befintligt flerspråkigt innehåll med alternativet Importera HTML.
+Med det manuella flödet kan ni enkelt översätta ert innehåll direkt i era kampanjer och resor, vilket ger er precis kontroll och anpassningsbara alternativ för flerspråkiga meddelanden. Dessutom kan du enkelt importera redan befintligt flerspråkigt innehåll med alternativet Importera HTML.
 
 Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av manuell översättning:
 
-1. [Skapa din språkinställning](#create-locale).
+1. [Lägg till din leverantör (valfritt)](multilingual-provider.md)
 
-1. [Skapa språkinställningar](#create-language-settings).
+1. [Lägg till nationella inställningar (valfritt)](multilingual-locale.md)
 
-1. [Skapa ett flerspråkigt innehåll](#create-a-multilingual-campaign).
+1. [Skapa språkinställningar](#create-language-settings)
 
-## Skapa nationella inställningar {#create-locale}
-
-När du konfigurerar språkinställningarna, enligt beskrivningen i avsnittet [Skapa språkinställningar](#language-settings) , kan du skapa så många nya språkinställningar som behövs på menyn **[!UICONTROL Translation]** om det inte finns någon tillgänglig språkinställning för det flerspråkiga innehållet.
-
-1. Gå till **[!UICONTROL Translation]** på menyn **[!UICONTROL Content management]**.
-
-1. Klicka på **[!UICONTROL Add locale]** på fliken **[!UICONTROL Locale dictionary]**.
-
-   ![](assets/locale_1.png)
-
-1. Välj din språkkod i listan **[!UICONTROL Language]** och tillhörande **[!UICONTROL Region]**.
-
-1. Klicka på **[!UICONTROL Save]** för att skapa din språkinställning.
-
-   ![](assets/locale_2.png)
+1. [Skapa flerspråkigt innehåll](#create-a-multilingual-campaign)
 
 ## Skapa språkinställningar {#language-settings}
 
-I det här avsnittet kan du ange ditt primära språk och tillhörande språk för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket
+I det här avsnittet kan du ange olika språkområden för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket
 
 1. Gå till **[!UICONTROL Channel]** > **[!UICONTROL General settings]** på menyn **[!UICONTROL Administration]**.
 
@@ -59,7 +44,7 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 
    ![](assets/language_settings_1.png)
 
-1. Ange namnet på din **[!UICONTROL Language settings]**.
+1. Ange namnet på din **[!UICONTROL Language settings]** och välj **[!UICONTROL Manual Translation]**.
 
 1. Välj **[!UICONTROL Locales]** som är associerad med de här inställningarna. Du kan lägga till högst 50 språkområden.
 
@@ -67,23 +52,83 @@ I det här avsnittet kan du ange ditt primära språk och tillhörande språk f�
 
    ![](assets/multilingual-settings-2.png)
 
-1. På menyn **[!UICONTROL Sending preference]** väljer du det attribut du vill söka efter för att hitta information om profilspråk.
+1. Välj en **[!UICONTROL Fallback preferences]** som du vill definiera ett säkerhetskopieringsalternativ för när en profil inte uppfyller de nödvändiga villkoren för innehållsleverans.
+
+   Observera att kampanjen eller resan inte skickas om inget reservalternativ väljs.
+
+1. Välj sändningsinställning bland följande alternativ:
+
+   * **[!UICONTROL Select profile language preference attributes]**
+   * **[!UICONTROL Create custom conditional rules]**
+
+1. Om du väljer **[!UICONTROL Select profile language preference attributes]** väljer du det relevanta attributet på menyn **[!UICONTROL Profile language preference attributes]** för att söka efter profilspråksinformation.
 
    ![](assets/multilingual-settings-3.png)
 
-1. Klicka på **[!UICONTROL Edit]** bredvid din **[!UICONTROL Locale]** om du vill anpassa den ytterligare och lägga till **[!UICONTROL Profile preferences]**.
+1. Om du väljer **[!UICONTROL Create custom conditional rules]** väljer du den språkinställning som du vill skapa villkor för. Bygg sedan regler baserat på faktorer som användarplats, språkinställningar eller andra sammanhangsberoende element.
 
    ![](assets/multilingual-settings-4.png)
 
-1. Välj andra **[!UICONTROL Locales]** i listrutan Profilinställningar och klicka på **[!UICONTROL Add profiles]**.
+1. Börja skapa villkor genom att lägga till ett attribut, en händelse eller en målgrupp för att definiera målgruppen.
 
-1. Gå till den avancerade menyn i **[!UICONTROL Locale]** för att definiera din **[!UICONTROL Primary locale]**, d.v.s. standardspråket om profilattributet inte har angetts.
+   >[!IMPORTANT]
+   >
+   >Sammanhangsbaserade data är tillgängliga exklusivt för kanalerna Web, In-App, Code-based Experience och Content Card. Om den används för e-post, SMS, push-meddelanden eller direktreklam, utan ytterligare attribut, skickas kampanjen eller resan på det språk som används för det första alternativet i listan.
 
-   Du kan även ta bort språkområdet från den här avancerade menyn.
+   ![](assets/multilingual-settings-6.png)
+
+   +++Förutsättningar för att använda sammanhangsberoende händelser under dina förhållanden
+
+   När användarna visar ditt innehåll skickas en personaliseringsbegäran tillsammans med upplevelsehändelsen. Om du vill utnyttja sammanhangsbaserade data i dina villkor måste du bifoga ytterligare data till nyttolasten för personaliseringsbegäran. För att göra detta måste du skapa en regel i Adobe Experience Platform Data Collection som anger: Om en personaliseringsbegäran skickas, bifogar SEDAN extra data till begäran och definierar vilket attribut som ska matcha språkfältet i ditt schema.
+
+   >[!NOTE]
+   >
+   >Dessa krav är endast obligatoriska för kanalerna In-App och Content Card.
+
+   1. Gå till menyn **[!UICONTROL Rules]** i Adobe Experience Platform Data Collection och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [Datainsamlingsdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+
+   2. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
+
+      ![](assets/multilingual-experience-events-rule-if.png)
+
+      * Välj den **[!UICONTROL Extension]** du arbetar med.
+      * I fältet **[!UICONTROL Event type]** väljer du&quot;AEP Request Event&quot;.
+      * Välj &quot;XDM Event Type equals personalization.request&quot; i den högra rutan
+      * Bekräfta genom att klicka på knappen **[!UICONTROL Keep changes]**.
+
+   3. Lägg till en åtgärd som konfigurerats enligt nedan i regelns **[!UICONTROL THEN]**-avsnitt:
+
+      ![](assets/multilingual-experience-events-rule-then.png)
+
+      * Välj den **[!UICONTROL Extension]** du arbetar med.
+      * Välj Bifoga data i fältet **[!UICONTROL Action Type]**.
+      * I avsnittet JSON-nyttolast kontrollerar du att attributet som används för att hämta språket som ska användas (i exemplet nedan &quot;språk&quot;) matchar namnet på attributet som anges i schemat där datainsamlingsdataströmmen flödar in.
+
+        ```JSON
+        {
+            "xdm":{
+                "application":{
+                    "_dc":{
+                        "language":"{%%Language%%}"
+                    }
+                }
+            }
+        }
+        ```
+
+      * Klicka på knappen **[!UICONTROL Keep changes]** för att bekräfta och spara regeln.
+
++++
+
+1. Dra och släpp språkinställningarna för att ordna om dem och hantera deras prioritet i listan.
+
+1. Om du vill ta bort en språkinställning klickar du på behållarikonen.
 
    ![](assets/multilingual-settings-5.png)
 
 1. Klicka på **[!UICONTROL Submit]** för att skapa din **[!UICONTROL Language settings]**.
+
+Observera att när du har konfigurerat språkinställningarna kan du inte längre redigera dem.
 
 <!--
 1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
@@ -100,13 +145,13 @@ När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en k
 
 1. Börja med att skapa och konfigurera e-post, SMS eller push-meddelanden [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journeys-message.md) enligt dina krav.
 
-   >[!AVAILABILITY]
+   >[!IMPORTANT]
    >
    >Vi rekommenderar att du endast inkluderar ett översättningsprojekt per resa.
 
 1. Skapa eller importera ditt ursprungliga innehåll och anpassa det efter behov.
 
-1. När det primära innehållet har skapats klickar du på **[!UICONTROL Save]** och går tillbaka till kampanjkonfigurationsskärmen.
+1. När innehållet har skapats klickar du på **[!UICONTROL Save]** och går tillbaka till konfigurationsskärmen för kampanjen.
 
    ![](assets/multilingual-campaign-2.png)
 
@@ -114,11 +159,13 @@ När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en k
 
    ![](assets/multilingual-campaign-3.png)
 
-1. Gå till de avancerade inställningarna på menyn **[!UICONTROL Locales]** och välj **[!UICONTROL Copy primary to all locales]**.
+1. Välj önskad språkinställning på den nedrullningsbara menyn som du vill använda för det befintliga redigerade innehållet.
+
+1. Gå till de avancerade inställningarna på menyn **[!UICONTROL Locales]** och välj **[!UICONTROL Copy to all locales]**.
 
    ![](assets/multilingual-campaign-4.png)
 
-1. Nu när ditt primära innehåll har duplicerats genom hela den valda **[!UICONTROL Locales]** kan du komma åt varje språkinställning och klicka på **[!UICONTROL Edit email body]** för att översätta ditt innehåll.
+1. Nu när ditt innehåll är duplicerat i hela den valda **[!UICONTROL Locales]** kan du komma åt varje språkinställning och klicka på **[!UICONTROL Edit email body]** för att översätta ditt innehåll.
 
    ![](assets/multilingual-campaign-5.png)
 

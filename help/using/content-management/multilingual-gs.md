@@ -9,10 +9,9 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
-badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: 7a324f3ece4d30085e3e447526cd0a2ff7fa72dd
+source-git-commit: c858d16ec520418148fb28ad2ecec0d3a6377ba9
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '474'
 ht-degree: 1%
 
 ---
@@ -24,9 +23,10 @@ ht-degree: 1%
 >title="Översättningar"
 >abstract="Med den flerspråkiga funktionen kan ni enkelt skapa innehåll på flera språk i en enda kampanj eller resa. På sidan Översättningar kan du konfigurera projekt, välja översättningsleverantörer eller hantera språkspecifika ordlistor"
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Flerspråkigt innehåll är för närvarande endast tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+>Om du vill börja skapa flerspråkigt innehåll måste användarna ha behörighet **[!UICONTROL Manage Language settings]**.
+>För automatiserat flöde behöver användare även behörigheter som är relaterade till **[!UICONTROL Translation Service]**-funktionerna. [Läs mer om behörigheter](../administration/permissions.md)
 
 Med den flerspråkiga funktionen kan ni enkelt skapa innehåll på flera språk i en enda kampanj eller resa. Med den här funktionen kan ni växla mellan olika språk när ni redigerar kampanjer, effektivisera hela redigeringsprocessen och förbättra möjligheterna att effektivt hantera flerspråkigt innehåll.
 
@@ -55,7 +55,9 @@ Användningen av en översättningsleverantörs översättningstjänster reglera
 
 Om du har frågor eller vill ha hjälp med dina översättningar kontaktar du tillämplig översättningsleverantör.
 
-Om du inte kommer åt översättningssidan måste du aktivera översättningsfunktionen.
+Om du vill använda översättningsfunktionen i Journey Optimizer måste du tilldela API till motsvarande roll. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
+
+Om du inte kan komma åt översättningssidan måste du aktivera översättningsfunktionen och beviljas **[!UICONTROL Translation service]**-relaterade behörigheter. [Läs mer](../administration/ootb-permissions.md)
 
 +++ Lär dig aktivera översättningsfunktionen
 
