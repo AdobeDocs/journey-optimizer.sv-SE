@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
+source-git-commit: 53efa1af8089b7cec9c94f4a17295a544c3ab4d1
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 24%
@@ -182,12 +182,12 @@ ht-degree: 24%
    + [Resebegränsning och skiljeförfarande](using/conflict-prioritization/journey-capping.md)
 + Testa och godkänn {#test}
    + Förhandsgranska och testa innehåll {#preview-test}
-      + [Testa innehållet med exempelindata](using/test-approve/simulate-sample-input.md)
       + [Kom igång med förhandsgranskning och test](using/content-management/preview-test.md)
       + [Välj testprofiler](using/content-management/test-profiles.md)
       + [Förhandsgranska ditt innehåll](using/content-management/preview.md)
       + [Skicka e-postkorrektur](using/content-management/proofs.md)
       + [Testa e-poståtergivning](using/content-management/rendering.md)
+      + [Testa innehåll med exempelindata (Beta)](using/test-approve/simulate-sample-input.md)
       + [Rapport om skräppost](using/content-management/spam-report.md)
    + Godkänn resor och kampanjer {#approve}
       + [Kom igång med godkännanden](using/test-approve/gs-approval.md)
