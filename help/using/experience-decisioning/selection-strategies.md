@@ -1,6 +1,6 @@
 ---
-title: Create selection strategies
-description: Learn how to create selection strategies
+title: Skapa urvalsstrategier
+description: Lär dig hur du skapar urvalsstrategier
 feature: Experience Decisioning
 topic: Integrations
 role: User
@@ -14,22 +14,22 @@ ht-degree: 1%
 
 ---
 
-# Create selection strategies {#selection-strategies}
+# Skapa urvalsstrategier {#selection-strategies}
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_strategies"
->title="Define your selection strategies"
->abstract="A selection strategy is reusable and consists of a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a decision policy."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html" text="Create decision policies"
+>title="Definiera era urvalsstrategier"
+>abstract="En urvalsstrategi kan återanvändas och består av en samling som är associerad med en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs ut i en beslutspolicy."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html" text="Skapa beslutsprofiler"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_strategy_eligibility"
->title="Restrict the eligible profiles"
->abstract="You can restrict the selection of offers for this selection strategy. By default, all profiles are eligible, but you can use audiences or rules to limit the offer selection to specific profiles only."
+>title="Begränsa giltiga profiler"
+>abstract="Du kan begränsa urvalet av erbjudanden för den här urvalsstrategin. Som standard är alla profiler berättigade, men du kan använda målgrupper eller regler för att begränsa urvalet av erbjudanden till enbart specifika profiler."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Använda målgrupper"
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
 
-[](create-decision.md)
+En urvalsstrategi kan återanvändas och består av en samling som är associerad med en berättigandebegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs i en [beslutspolicy](create-decision.md).
 
 ## Få tillgång till och hantera urvalsstrategier
 
@@ -45,43 +45,43 @@ ht-degree: 1%
 
    ![](assets/strategy-list-edit-collection.png)
 
-## Create a selection strategy
+## Skapa en urvalsstrategi
 
-To create a selection strategy, follow the steps below.
+Följ stegen nedan för att skapa en urvalsstrategi.
 
-1. **[!UICONTROL Selection strategies]****[!UICONTROL Create selection strategy]**
+1. Klicka på **[!UICONTROL Create selection strategy]** i **[!UICONTROL Selection strategies]**-lagret.
 
    ![](assets/strategy-create-button.png)
 
-1. Add a name for your strategy.
+1. Lägg till ett namn för strategin.
 
    >[!NOTE]
    >
    >För närvarande är bara standardkatalogen **[!UICONTROL Offers]** tillgänglig.
 
-1. Fill in the details for your selection strategy, starting by the name.
+1. Fyll i informationen för din urvalsstrategi med början av namnet.
 
    ![](assets/strategy-create-screen.png)
 
-1. [](collections.md)
+1. Välj den [samling](collections.md) som innehåller de erbjudanden som ska övervägas.
 
-1. **[!UICONTROL Eligibility]**
+1. Använd fältet **[!UICONTROL Eligibility]** för att begränsa urvalet av erbjudanden för den här urvalsstrategin.
 
    ![](assets/strategy-create-eligibility.png)
 
-   * **[!UICONTROL Audiences]** [](../audience/about-audiences.md)
+   * Om du vill begränsa urvalet av erbjudanden till medlemmarna i en Experience Platform-målgrupp väljer du **[!UICONTROL Audiences]** och väljer en målgrupp i listan. [Lär dig arbeta med målgrupper](../audience/about-audiences.md)
 
-   * **[!UICONTROL Decision rule]** [](rules.md)
+   * Om du vill lägga till en markeringsbegränsning med en beslutsregel använder du alternativet **[!UICONTROL Decision rule]** och väljer önskad regel. [Lär dig skapa en regel](rules.md)
 
 1. Definiera den rangordningsmetod som du vill använda för att välja det bästa erbjudandet för varje profil. [Läs mer](#select-ranking-method)
 
    ![](assets/strategy-create-ranking.png)
 
-   * [](#offer-priority)
+   * Om flera erbjudanden är berättigade för den här strategin använder metoden [Erbjudandeprioritet](#offer-priority) det värde som definieras i erbjudandena.
 
-   * [](#ranking-formula)[](#ai-ranking)
+   * Om du vill använda en viss beräknad poäng för att välja vilket erbjudande som ska levereras väljer du [Formel](#ranking-formula) eller [AI-modell](#ai-ranking).
 
-1. Klicka på **[!UICONTROL Create]**. [](create-decision.md)
+1. Klicka på **[!UICONTROL Create]**. Den är nu klar att användas i en [beslutspolicy](create-decision.md)
 
 ## Välj en rangordningsmetod {#select-ranking-method}
 
@@ -91,15 +91,15 @@ To create a selection strategy, follow the steps below.
 >abstract="Om flera erbjudanden är berättigade till en viss urvalsstrategi väljer du den metod som ska välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi: prioritet eller rankningsformel."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html" text="Skapa beslutsprofiler"
 
-Om flera erbjudanden är berättigade till en viss urvalsstrategi kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi. You can rank offers by:
+Om flera erbjudanden är berättigade till en viss urvalsstrategi kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi. Du kan rangordna erbjudanden genom att:
 
-* [Offer priority](#offer-priority)
-* [Formula](#ranking-formula)
+* [Prioritet](#offer-priority)
+* [Formel](#ranking-formula)
 * [AI-rankning](#ai-ranking)
 
-### Offer priority {#offer-priority}
+### Prioritet {#offer-priority}
 
-****
+När flera erbjudanden är berättigade till en viss placering i en beslutspolicy levereras som standard de objekt som har högst **prioritet** till kunderna först.
 
 ![](assets/item-priority.png)
 
@@ -107,9 +107,9 @@ Prioritetspoäng för erbjudanden tilldelas när ett [beslutsobjekt](items.md) s
 
 ### Rankningsformel {#ranking-formula}
 
-Förutom att erbjuda prioritet kan du med Journey Optimizer skapa **rankningsformler**. These are formulas that determine which offer should be presented first for a given placement, rather than taking into account the offers&#39; priority scores.
+Förutom att erbjuda prioritet kan du med Journey Optimizer skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
 
-For example, you can boost the priority of all offers where the end date is less than 24 hours from now, or boost offers from the &quot;running&quot; category if the profile&#39;s point of interest is &quot;running&quot;. [](ranking.md)
+Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;. Lär dig hur du skapar en rankningsformel i [det här avsnittet](ranking.md).
 
 När du har skapat den kan du använda den här formeln i en urvalsstrategi. Om flera erbjudanden kan presenteras när den här urvalsstrategin används kommer den valda formeln att användas för att beräkna vilket erbjudande som ska levereras först.
 

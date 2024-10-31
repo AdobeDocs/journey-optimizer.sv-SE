@@ -1,6 +1,6 @@
 ---
-title: Decisioning use case
-description: Learn how to create decisions using experiments with the code-based channel
+title: Användningsfall vid beslut
+description: Lär dig hur du skapar beslut med hjälp av experiment med den kodbaserade kanalen
 feature: Experience Decisioning
 topic: Integrations
 role: User
@@ -13,57 +13,57 @@ ht-degree: 6%
 
 ---
 
-# Decisioning use case {#experience-decisioning-uc}
+# Användningsfall vid beslut {#experience-decisioning-uc}
 
-In this use case, you define two delivery treatments each containing a different decision policy in order to measure which one performs best for your target audience.
+I det här fallet definierar ni två leveransbehandlingar som var och en innehåller olika beslutsprinciper för att mäta vilken som fungerar bäst för målgruppen.
 
-## Create items and strategies
+## Skapa artiklar och strategier
 
-You first need to create items, group them together in collections, set up rules and ranking methods. These elements will allow you to build selection strategies.
+Först måste du skapa objekt, gruppera dem i samlingar, ställa in regler och rangordningsmetoder. Med dessa element kan du skapa urvalsstrategier.
 
-1. **[!UICONTROL Decisioning]****[!UICONTROL  Catalogs]** Set constraints using audiences or rules to restrict each item to specific profiles only. [Läs mer](items.md)
+1. Navigera till **[!UICONTROL Decisioning]** > **[!UICONTROL  Catalogs]** och skapa flera erbjudandeobjekt. Ange begränsningar med målgrupper eller regler för att begränsa varje objekt till enbart specifika profiler. [Läs mer](items.md)
 
    <!--
    1. From the items list, click the **[!UICONTROL Edit schema]** button  and edit the custom attributes if needed. [Learn how to work with catalogs](catalogs.md)-->
 
-1. **** [Läs mer](collections.md)
+1. Skapa **samlingar** för att kategorisera och gruppera dina beslutsobjekt enligt dina önskemål. [Läs mer](collections.md)
 
-1. **** [Läs mer](rules.md)
+1. Skapa **beslutsregler** för att avgöra till vilka ett beslutsobjekt kan visas. [Läs mer](rules.md)
 
-1. **** [Läs mer](ranking.md)
+1. Skapa **rankningsmetoder** och tillämpa dem inom beslutsstrategier för att fastställa prioritetsordningen för val av beslutsobjekt. [Läs mer](ranking.md)
 
-1. **** [Läs mer](selection-strategies.md)
+1. Bygg **urvalsstrategier** som utnyttjar samlingar, beslutsregler och rangordningsmetoder för att identifiera de beslutsobjekt som passar för visning i profiler. [Läs mer](selection-strategies.md)
 
-## Create decision policies
+## Skapa beslutsprofiler
 
-To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign.
+Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj.
 
-Define two delivery treatments each containing a different decision policy.
+Definiera två leveransbehandlingar som var och en innehåller olika beslutspolicyer.
 
-1. **[!UICONTROL Code-base experience]** [Läs mer](../code-based/create-code-based.md)
+1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
 
-1. **[!UICONTROL Create experiment]** [Läs mer](../content-management/content-experiment.md)
+1. Klicka på **[!UICONTROL Create experiment]** på kampanjsammanfattningssidan för att börja konfigurera ditt innehållsexperiment. [Läs mer](../content-management/content-experiment.md)
 
-1. **[!UICONTROL Decisions]****[!UICONTROL Create a decision]** [Läs mer](create-decision.md)
+1. Välj ikonen **[!UICONTROL Decisions]**, klicka på **[!UICONTROL Create a decision]** och fyll i beslutsinformationen. [Läs mer](create-decision.md)
 
    ![](assets/decision-code-based-create.png)
 
-1. Define the selection strategies for your decision. Klicka på **[!UICONTROL Add strategy]**.
+1. Definiera urvalsstrategierna för ditt beslut. Klicka på **[!UICONTROL Add strategy]**.
 
-1. Klicka på **[!UICONTROL Create]**. **[!UICONTROL Decisions]**
+1. Klicka på **[!UICONTROL Create]**. Det nya beslutet läggs till under **[!UICONTROL Decisions]**.
 
    ![](assets/decision-code-based-decision-added.png)
 
-1. Klicka på ikonen för fler åtgärder (tre punkter) och välj **[!UICONTROL Add]**. Now you can add all the decision attributes you want inside this.
+1. Klicka på ikonen för fler åtgärder (tre punkter) och välj **[!UICONTROL Add]**. Nu kan du lägga till alla beslutsattribut som du vill ha i det här.
 
    ![](assets/decision-code-based-add-decision.png)
 
-1. You can also add any other attribute available in the personalization editor, such as profile attributes.
+1. Du kan också lägga till andra attribut som är tillgängliga i personaliseringsredigeraren, till exempel profilattribut.
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
 
-1. Build treatment B and repeat the steps above to create another decision.
+1. Bygg behandlingen B och upprepa stegen ovan för att skapa ett nytt beslut.
 
-1. Save your content.
+1. Spara innehållet.
 
 

@@ -27,7 +27,7 @@ ht-degree: 1%
 
 Den här utvecklarhandboken innehåller steg som hjälper dig att börja använda API:t för [!DNL Offer Library]. Handboken innehåller sedan exempel på API-anrop för att utföra nyckelåtgärder med beslutsmotorn.
 
-[](#video)
+➡️ [Läs mer om komponenterna i Beslutshantering i den här videon](#video)
 
 ## Förhandskrav {#prerequisites}
 
@@ -40,9 +40,9 @@ Handboken kräver en fungerande förståelse av följande komponenter i Adobe Ex
 
 ## Läser exempel-API-anrop {#reading-sample-api-calls}
 
-Den här guiden innehåller exempel på API-anrop som visar hur du formaterar dina begäranden. These include paths, required headers, and properly formatted request payloads. Sample JSON returned in API responses is also provided. [](https://experienceleague.adobe.com/docs/experience-platform/landing/troubleshooting.html#how-do-i-format-an-api-request){target="_blank"}[!DNL Experience Platform]
+Den här guiden innehåller exempel på API-anrop som visar hur du formaterar dina begäranden. Det kan vara sökvägar, obligatoriska rubriker och korrekt formaterade begärandenyttolaster. Ett exempel på JSON som returneras i API-svar finns också. Information om de konventioner som används i dokumentationen för exempel-API-anrop finns i avsnittet [Så här läser du exempel-API-anrop](https://experienceleague.adobe.com/docs/experience-platform/landing/troubleshooting.html#how-do-i-format-an-api-request){target="_blank"} i felsökningsguiden för [!DNL Experience Platform].
 
-## Gather values for required headers {#gather-values-for-required-headers}
+## Samla in värden för obligatoriska rubriker {#gather-values-for-required-headers}
 
 För att kunna anropa [!DNL Adobe Experience Platform] API:er måste du först slutföra [autentiseringssjälvstudiekursen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target="_blank"}. När du slutför självstudiekursen för autentisering visas värdena för var och en av de obligatoriska rubrikerna i alla [!DNL Experience Platform] API-anrop, vilket visas nedan:
 

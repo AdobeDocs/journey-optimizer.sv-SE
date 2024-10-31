@@ -33,7 +33,7 @@ Dessa beslutsobjekt integreras smidigt i ett brett urval av inkommande ytor via 
 
 De viktigaste stegen för att arbeta med beslut är följande:
 
-1. **** **[!UICONTROL role]** Om du inte kan komma åt Beslutsfattandet måste du utöka din behörighet.
+1. **Tilldela rätt behörigheter**. Beslutsfattandet är endast tillgängligt för användare med tillgång till ett beslutsrelaterat **[!UICONTROL role]**, t.ex. beslutshanterare. Om du inte kan komma åt Beslutsfattandet måste du utöka din behörighet.
 
    +++Lär dig hur du tilldelar rollen Beslutsledare
 
@@ -59,9 +59,9 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
 1. **Skapa beslutsobjekt** som ska visas för målgruppen.
 
-1. **** Införliva samlingar i era urvalsstrategier för att avgöra vilken samling av beslutsobjekt som ska övervägas.
+1. **Ordna med samlingar**: Använd samlingar för att kategorisera beslutsobjekt baserat på attributbaserade regler. Införliva samlingar i era urvalsstrategier för att avgöra vilken samling av beslutsobjekt som ska övervägas.
 
-1. ****
+1. **Skapa beslutsregler**: Beslutsregler används i beslutsobjekt och/eller urvalsstrategier för att avgöra till vilka ett beslutsobjekt kan visas.
 
 1. **Implementera rangordningsmetoder**: Skapa rangordningsmetoder och tillämpa dem inom beslutsstrategier för att fastställa prioritetsordningen för val av beslutsobjekt.
 
