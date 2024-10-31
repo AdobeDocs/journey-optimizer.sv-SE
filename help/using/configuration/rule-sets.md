@@ -10,9 +10,9 @@ level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 badge: label="Begränsad tillgänglighet"
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: a7fdde15f7c491fd9a3b1fef898f018ba9954cde
+source-git-commit: 9c49786385db782bd2fa70b19003261284e980a5
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -44,13 +44,9 @@ När du använder regeluppsättningar för första gången från menyn **[!UICON
 
 Den här regeluppsättningen innehåller globala regler som du kan tillämpa för att styra hur ofta användare får meddelanden i en eller flera kanaler, på samma sätt som nuvarande affärsregler fungerar. Alla regler som definieras i den här regeluppsättningen gäller för alla valda kanaler, oavsett om kommunikationen skickas från en resa eller en kampanj. [Lär dig arbeta med affärsregler](frequency-rules.md)
 
-Utöver den här regeluppsättningen för global standardregel kan du skapa **anpassade regeluppsättningar** som du kan tillämpa på alla kampanjer för att begränsa antalet meddelanden som skickas inom kampanjen. [Lär dig skapa anpassade regeluppsättningar](#create)
+Utöver den här regeluppsättningen Global standardregeluppsättning kan du skapa **anpassade regeluppsättningar** som du kan tillämpa på alla kampanjer för att begränsa antalet meddelanden som skickas inom kampanjen. [Lär dig skapa anpassade regeluppsättningar](#create)
 
 ![](assets/rule-sets-default.png)
-
->[!IMPORTANT]
->
->Just nu kan anpassade regeluppsättningar endast användas för **kampanjer**. Endast de regler som definieras i regeluppsättningen&quot;Global standardregel&quot; gäller för både resor och kampanjkommunikation.
 
 ### Kanaler och resor {#domain}
 
@@ -75,10 +71,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
 1. Definiera ett unikt namn för regeluppsättningen och lägg till en beskrivning.
 
-1. Välj regeluppsättningens domän. Domänen tillåter dig att ange om regeluppsättningen ska innehålla regler för appning som är specifika för kommunikationskanaler eller resor:
-
-   * **Kanal**: Tillämpa regler för appning för kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag.
-   * **Resa**: Använd regler för inmatning och begränsning av samtidighet på en resa. Ange till exempel inte profiler i mer än en resa samtidigt.
+1. Välj regeluppsättningens domän. Domänen tillåter dig att ange om regeluppsättningen ska innehålla regler för appning som är specifika för kommunikationskanaler eller resor. [Läs mer om regler för att appa kanaler och resor](#domain)
 
    ![](assets/rule-sets-create.png)
 
