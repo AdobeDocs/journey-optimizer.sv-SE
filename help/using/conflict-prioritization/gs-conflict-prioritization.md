@@ -4,9 +4,9 @@ description: Lär dig utnyttja Journey Optimizer verktyg för konfliktlösning o
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
+source-git-commit: a7fdde15f7c491fd9a3b1fef898f018ba9954cde
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ Med **konfliktidentifieringsverktyget** kan du identifiera potentiella överlapp
 
 Dessutom hjälper **prioritetspoäng** dig att styra vilka kampanjer eller resor som har företräde när en kund kvalificerar sig för flera kommunikationer. Detta är särskilt användbart för inkommande kanaler som webben och mobiler, där endast en kampanj kan visas åt gången. Genom att tilldela varje resa eller kampanj en prioritetspoäng kan ni se till att det viktigaste meddelandet levereras först. [Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer](priority-scores.md)
 
-Slutligen kan du med **resefackning och skiljeförfarande** begränsa hur ofta och hur många resor en kund kan ta sig in inom en viss tidsram. Du kan ställa in regler för att begränsa antalet reseposter för en profil eller begränsa antalet resor som en kund kan registrera samtidigt. Dessutom kan ni använda skiljedomsinställningar för att bestämma vilken resa en kund ska ange om de är kvalificerade för flera resor, och använda prioriteringspoäng för att avgöra vilken resa som passar bäst. [Lär dig hur du arbetar med capping och medling på resan](journey-capping.md)
+Med **resekap och skiljevägg** kan du begränsa hur ofta och hur många resor en kund kan ta sig in inom en viss tidsperiod. Du kan ställa in regler för att begränsa antalet reseposter för en profil eller begränsa antalet resor som en kund kan registrera samtidigt. Dessutom kan ni använda skiljedomsinställningar för att bestämma vilken resa en kund ska ange om de är kvalificerade för flera resor, och använda prioriteringspoäng för att avgöra vilken resa som passar bäst. [Lär dig hur du arbetar med capping och medling på resan](journey-capping.md)
+
+Slutligen kan du även använda regeluppsättningar för att ange **frekvensbegränsning per kommunikationstyp** (t.ex. Försäljning, Marknadsföring) för att förhindra att kunder med liknande meddelanden överbelastas. Ni kan styra frekvensen över flera kanaler och automatiskt utesluta överbegärda profiler för att få en bättre kundupplevelse. [Lär dig arbeta med regeluppsättningar](../configuration/rule-sets.md)</li></ul>
 
 Genom att utnyttja dessa funktioner kan ni säkerställa smidigare och mer riktad marknadsföring och leverera rätt budskap vid rätt tidpunkt samtidigt som ni undviker konflikter och överbelastningar.
