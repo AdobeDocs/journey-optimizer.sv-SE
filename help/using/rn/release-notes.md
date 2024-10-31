@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 35b0304df8bdb885ca494b561cb6a0eaa5e96545
+source-git-commit: 7f7edaa8d3bb917e7020bb79eb72f7807cf46622
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1910'
 ht-degree: 6%
 
 ---
@@ -275,15 +275,16 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **SMS-kanal**
 
-SMS-förbättringar har införts för att förbättra dina meddelandefunktioner:
-
-* Ni kan definiera och hantera unika nyckelord för era SMS-kampanjer och resor, vilket möjliggör mer personaliserad och effektiv kommunikation.
-
-* Du kan skapa och leverera ett standard-SMS-meddelande när ett nyckelord inte känns igen.
-
 * Nu kan du redigera eller ta bort en konfiguration för SMS API-kanal.
 
-Läs mer om de här förbättringarna i SMS-konfigurationsdokumentationen för [Infobip](../sms/sms-configuration-infobip.md) och [Sinch](../sms/sms-configuration-sinch.md).
+* Följande förbättringar har införts för att förbättra SMS-meddelandefunktionerna med Infobip och Sinch:
+
+   * Ni kan definiera och hantera unika nyckelord för era SMS-kampanjer och resor, vilket möjliggör mer personaliserad och effektiv kommunikation.
+
+   * Du kan skapa och leverera ett standard-SMS-meddelande när ett nyckelord inte känns igen.
+
+  Läs mer om de här förbättringarna i SMS-konfigurationsdokumentationen för [Infobip](../sms/sms-configuration-infobip.md) och [Sinch](../sms/sms-configuration-sinch.md).
+
 
 <!--**Journeys**-->
 
