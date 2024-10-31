@@ -6,9 +6,9 @@ description: Lär dig hur du låser innehåll i e-postmallar.
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-source-git-commit: 38aaa3005e72a8300cef0e28a6fecd9f5d06c1f1
+source-git-commit: 9bb2b287f6f470f817a7f7dd89346bbe2aa7d090
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,9 @@ ht-degree: 0%
 
 Med Journey Optimizer kan du låsa innehåll i e-postmallar, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. På så sätt kan ni förhindra oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer.
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->Användare med behörighet att skapa innehållsmallar kan aktivera låsning av innehåll.
+>Lås innehåll är en funktion på redigeringsnivå för författare och garanterar inte att innehållet inte redigeras när det importeras eller skapas via API.
 
 Innehållslås kan användas antingen på **strukturnivå** eller på **komponentnivå**. Här är huvudprinciperna som gäller på struktur- och komponentnivå när innehåll låses i mallen.
 
@@ -59,6 +59,10 @@ Innehållslås kan användas antingen på **strukturnivå** eller på **komponen
 
    * Enskilda innehållskomponenter kan låsas inuti den strukturen.
    * Som standard kan du inte ta bort en komponent om den är låst eller om&quot;Endast redigerbart innehållslås&quot; är markerat. Du kan åsidosätta den här begränsningen genom att aktivera alternativet&quot;Tillåt borttagning&quot;.
+
+>[!AVAILABILITY]
+>
+>Användare med behörighet att skapa innehållsmallar kan aktivera låsning av innehåll.
 
 ## Lås en e-postmall {#define}
 
