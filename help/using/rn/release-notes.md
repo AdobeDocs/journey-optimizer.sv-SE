@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ab6289ff4b1a9302adb94d9cdf150210eece3a27
+source-git-commit: 850aacd1873a63b6ff2010f097655244b9dea027
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1911'
 ht-degree: 6%
 
 ---
@@ -236,6 +236,8 @@ Tidigare tillgängligt för en uppsättning organisationer (LA), men nu är föl
 </tbody>
 </table>
 
+<!--The following capabilities are available to all customers in public beta:-->
+
 <table>
 <thead>
 <tr>
@@ -245,15 +247,15 @@ Tidigare tillgängligt för en uppsättning organisationer (LA), men nu är föl
 <tbody>
 <tr>
 <td>
-<p>Med reseoptimeraren kan du nu testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en fil eller lagts till manuellt. Alla profilattribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.</p>
+<p>Med reseoptimeraren kan du nu testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka e-postkorrektur med exempelindata som överförts från en fil eller lagts till manuellt. Alla profilattribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.</p>
 <p>Den här funktionen är för närvarande tillgänglig för alla kunder som en offentlig betaversion av meddelandekanalerna för e-post, SMS och push.</p>
 <p>Mer information finns i den <a href="../test-approve/simulate-sample-input.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/gif-simulate.gif">
 </td>
 </tr>
 </tbody>
 </table>
 
-<!--The following capabilities are available to all customers in public beta:
 
 <!--<table>
 <thead>
