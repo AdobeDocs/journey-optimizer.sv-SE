@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 850aacd1873a63b6ff2010f097655244b9dea027
+source-git-commit: 4de613f38865a3b4f177ce809e1e051f9211e86e
 workflow-type: tm+mt
 source-wordcount: '1911'
 ht-degree: 6%
@@ -280,7 +280,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **SMS-kanal**
 
-* Nu kan du redigera eller ta bort en konfiguration för SMS API-kanal.
+* Nu kan du redigera eller ta bort en konfiguration för SMS API-kanal. [Läs mer](../sms/sms-configuration.md)
 
 * Följande förbättringar har införts för att förbättra SMS-meddelandefunktionerna med Infobip och Sinch:
 
@@ -317,7 +317,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Rapportering**
 
-* **Rapportering om Experience Decisioning** finns nu tillgänglig och ger viktiga insikter i hur era besökare interagerar med era upplevelser. [Läs mer](../reports/campaign-global-report-cja-code.md#decisioning-kpis)
+* **Nu finns det beslutsrapporter** som ger viktiga insikter i hur besökarna interagerar med upplevelserna. [Läs mer](../reports/campaign-global-report-cja-code.md#decisioning-kpis)
 
 **Datastyrning och samtycke** - Tillgänglighetsdatum: 7 okt 2024
 
@@ -347,4 +347,4 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 <!--* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) users can now choose custom models to optimize on when setting up an AI model in Decisioning (formerly known as Experience Decisioning). This allows you, for example, to optimize on a custom "purchases" table rather than defined constraints such as clickthrough rate."-->
 
-* När du lägger till en beslutspolicy till en kodbaserad kampanj med Experience Decisioning kan du nu manuellt välja enstaka beslutsposter, utöver urvalsstrategier. Dessutom kan du nu välja mer än ett reserverbjudande. Detta garanterar att det finns ett visst antal återlämnade beslutsposter. [Läs mer](../experience-decisioning/create-decision.md)
+* När du lägger till en beslutspolicy till en kodbaserad kampanj med Beslutsfattning kan du nu välja enskilda beslutsposter manuellt, utöver urvalsstrategier. Dessutom kan du nu välja mer än ett reserverbjudande. Detta garanterar att det finns ett visst antal återlämnade beslutsposter. [Läs mer](../experience-decisioning/create-decision.md)
