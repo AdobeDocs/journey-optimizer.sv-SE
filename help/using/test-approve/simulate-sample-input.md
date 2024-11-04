@@ -2,15 +2,15 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Testa materialet med exempeldata (Beta)
-description: Lär dig hur du förhandsgranskar innehåll och skickar e-postkorrektur med exempelindata.
-feature: Overview, Get Started
+description: Lär dig hur du förhandsgranskar innehåll och skickar e-postkorrektur med exempelindata från en CSV- eller JSON-fil eller lägger till manuellt.
+feature: Email, Email Rendering, Personalization, Preview, Proofs
 topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta"
-source-git-commit: 53efa1af8089b7cec9c94f4a17295a544c3ab4d1
+source-git-commit: 678a2fbce1b4048aad6a2214bb41ec3722db2b2d
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '865'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion.
 
-Med reseoptimering kan du testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en fil eller lagts till manuellt. Alla profilattribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.
+Med reseoptimering kan du testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV- eller JSON-fil eller lagts till manuellt. Alla profilattribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.
 
 >[!NOTE]
 >
