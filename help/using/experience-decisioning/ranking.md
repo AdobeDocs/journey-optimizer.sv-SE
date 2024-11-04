@@ -7,10 +7,10 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet"
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
-source-git-commit: 5ce388e5d86950e5cc6b173aab48225825f1c648
+source-git-commit: 018ff365780c5064afd94c8f842ca0498fe06065
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 1%
+source-wordcount: '546'
+ht-degree: 0%
 
 ---
 
@@ -46,6 +46,31 @@ Så här skapar du en rangordningsmetod:
    * [Rankningsformler](../offers/ranking/create-ranking-formulas.md)
    * [AI-modeller](../offers/ranking/ai-models.md)
 
++++ Optimera modeller på anpassade [!DNL Customer Journey Analytics]-mått
+
+>[!NOTE]
+>
+>Den här funktionen är bara tillgänglig för [!DNL Customer Journey Analytics]-kunder med administratörsbehörighet.
+>
+>Innan du börjar bör du se till att du har integrerat Journey Optimizer med Customer Journey Analytics för att exportera Journey Optimizer-datauppsättningar till standarddatavyer. [Lär dig utnyttja [!DNL Journey Optmizer] data i [!DNL Customer Journey Analytics]](../reports/cja-ajo.md)
+
+Personaliserade optimeringsmodeller är en typ av AI-modell som gör att ni kan definiera affärsmål och använda kunddata för att utbilda affärsorienterade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal. Detaljerad information om hur du skapar en anpassad AI-modell finns i [dokumentationen för beslutshantering](../offers/ranking/personalized-optimization-model.md).
+
+Som standard använder personaliserade optimeringsmodeller **erbjudandeklick** som optimeringsmått. Om du arbetar med [!DNL Customer Journey Analytics] kan du med [!DNL Decisioning] utnyttja dina egna anpassade mått för att optimera din modell.
+
+Det gör du genom att gå till skärmen för att skapa en anpassad AI-modell och expandera listrutan **[!UICONTROL Conversion event]**. Alla mätvärden från din standardvy för [!DNL Customer Journey Analytics] [data](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} visas i listan. Välj det mätvärde som du vill optimera modellen på och slutför sedan skapandet av AI-modellen som vanligt.
+
+![](assets/ai-ranking-custom-metrics.png)
+
+>[!NOTE]
+>
+>Som standard använder måtten i [!DNL Customer Journey Analytics] en attribueringsmodell med&quot;sista handen&quot;, som tilldelar 100 % av krediten till kontaktytan som inträffar senast före konverteringen.
+>
+>Även om det går att ändra attribueringsmodellen är inte alla attribueringsmodeller idealiska för optimering av AI-modeller. Vi rekommenderar att du väljer en attribueringsmodell som är anpassad efter dina optimeringsmål för att säkerställa att modellen är korrekt och fungerar korrekt.
+>
+>Mer information om tillgängliga attribueringsmodeller och vägledning om hur de används finns i [[!DNL Customer Journey Analytics] dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution){target="_blank"}
+
++++
 
 ## Utnyttja attribut för beslutsunderlag i formler {#items}
 
