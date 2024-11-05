@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 88e7140183700da0283fa00d89f6fff2c71c138f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '769'
 ht-degree: 2%
 
 ---
@@ -38,6 +38,16 @@ Listan med anpassade erbjudanden finns på menyn **[!UICONTROL Offers]**.
 >id="ajo_decisioning_offer_attributes"
 >title="Erbjudandeattribut"
 >abstract="Med attribut för erbjudanden kan du koppla nyckelvärdepar till erbjudandet i rapporterings- och analyssyfte."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_new_personalized"
+>title="Personligt erbjudande"
+>abstract="Ett personaliserat erbjudande är ett anpassningsbart meddelande baserat på regler och begränsningar för behörighet."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_new_fallback"
+>title="Reserverbjudande"
+>abstract="Ett reserverbjudande är standarderbjudande som visas när en slutanvändare inte är berättigad till något av de anpassade erbjudandena."
 
 Så här skapar du ett **erbjudande**:
 

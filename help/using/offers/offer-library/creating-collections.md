@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 0c8808e3-9148-4a33-9fd5-9218e02c2dfd
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 88e7140183700da0283fa00d89f6fff2c71c138f
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 1%
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -19,6 +19,26 @@ ht-degree: 1%
 >id="ajo_decisioning_decision_collection"
 >title="Om erbjudandesamlingar"
 >abstract="Med erbjudandesamlingar kan ni ordna era erbjudanden genom att gruppera om dem i olika kategorier."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_collection_dynamic"
+>title="Dynamisk samling"
+>abstract="Använd samlingskvalificerare för att dynamiskt kvalificera erbjudanden för en samling."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_collection_static"
+>title="Statisk samling"
+>abstract="Välj och gruppera erbjudanden manuellt med hjälp av villkor som status, samlingskvalificerare, datum och kanal."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_collection_static_select"
+>title="Förhandsgranskning av statisk samling"
+>abstract="Statiska samlingar byggs genom att du manuellt väljer enskilda erbjudanden som ska ingå i samlingen. Samlingen kan bara uppdateras genom att fler erbjudanden läggs till manuellt."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_collection_dynamic_select"
+>title="Dynamisk förhandsgranskning av samling"
+>abstract="Dynamiska samlingar samlar in erbjudanden baserat på samlingskvalificerare. Dessa samlingar uppdateras automatiskt. Om ett nytt erbjudande till exempel skapas med en kvalificerare för &quot;sport&quot;-samlingen läggs det automatiskt till i motsvarande samling."
 
 Med samlingar kan du ordna dina erbjudanden genom att gruppera om dem i olika kategorier. Du kan till exempel skapa en&quot;sport&quot;-samling som bara innehåller sportrelaterade erbjudanden.
 

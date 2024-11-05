@@ -7,10 +7,10 @@ feature: Ranking, Decision Management
 role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 88e7140183700da0283fa00d89f6fff2c71c138f
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 
@@ -23,6 +23,11 @@ Med [!DNL Journey Optimizer] kan du skapa **AI-modeller** för att rangordna erb
 >Om du vill skapa, redigera eller ta bort AI-modeller måste du ha behörigheten **Hantera rankningsstrategier**. [Läs mer](../../administration/high-low-permissions.md#manage-ranking-strategies)
 
 ## Skapa en AI-modell {#create-ranking-strategy}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_ai_model_metric"
+>title="Optimeringsmått"
+>abstract="[!DNL Journey Optimizer] rangordnade erbjudanden baserat på **konverteringsgrad** (konverteringsgrad = totalt antal konverteringshändelser/totalt antal inställningshändelser). Konverteringsgraden beräknas med två typer av mätvärden: **Impression-händelser** (erbjudanden som visas) och **Conversion-händelser** (erbjudanden som resulterar i klick via e-post eller webben). Dessa händelser hämtas automatiskt med Web SDK eller Mobile SDK som har angetts."
 
 Så här skapar du en AI-modell:
 

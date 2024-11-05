@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 88e7140183700da0283fa00d89f6fff2c71c138f
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,16 @@ ht-degree: 1%
 >id="ajo_decisioning_placement"
 >title="Placement"
 >abstract="En placering är en behållare som används för att visa erbjudanden. Det hjälper er att se till att rätt erbjudandeinnehåll visas på rätt plats i ert budskap. Placeringar skapas från menyn Komponenter."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_placement_request"
+>title="Inställningar för begäran"
+>abstract="Aktivera alternativet **[!UICONTROL Allow Duplicates across placements]** om du vill att systemet ska ta hänsyn till samma erbjudande för flera placeringar. Använd fältet **[!UICONTROL Request offer]** för att justera antalet returnerade erbjudanden. Om du till exempel väljer 2 visas de två bästa erbjudandena för det valda beslutsområdet."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_placement_response"
+>title="Svarsformat"
+>abstract="Med alternativen **[!UICONTROL Include content]** och **[!UICONTROL Include metadata]** kan du ange om erbjudandets innehåll och metadata ska returneras i API-svaret. Du kan endast inkludera alla metadata eller specifika fält. Som standard är Inkludera metadata inställt på true."
 
 En placering säkerställer att rätt erbjudandeinnehåll visas på rätt plats i ert meddelande. När du lägger till innehåll i ett erbjudande blir du ombedd att välja en placering där innehållet kan visas.
 
@@ -46,7 +56,6 @@ Så här skapar du en placering:
    * **[!UICONTROL Description]**: En beskrivning av placeringen (valfritt).
 
    ![](../assets/offers_placement_creation_properties.png)
-
 
 1. Avsnitten **[!UICONTROL Request settings]** och **[!UICONTROL Response format]** innehåller ytterligare parametrar:
 

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 88e7140183700da0283fa00d89f6fff2c71c138f
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2445'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,11 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
 ## Skapa beslutet {#create-activity}
 
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_details"
+>title="Information om beslut om erbjudande"
+>abstract="Ange beslutets namn och definiera ett start- och slutdatum och en sluttid om det behövs. Välj **[!UICONTROL Manage access]** om du vill tilldela etiketter för anpassad eller viktig dataanvändning till beslutet."
+
 1. Gå till beslutslistan och klicka sedan på **[!UICONTROL Create decision]**.
 
 1. Ange beslutets namn.
@@ -43,6 +48,21 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 1. Välj **[!UICONTROL Manage access]** om du vill tilldela etiketter för anpassad eller viktig dataanvändning till beslutet. [Läs mer om OLAC (Object Level Access Control)](../../administration/object-based-access.md)
 
 ## Definiera beslutsomfattningar {#add-decision-scopes}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_scopes"
+>title="Beslutsomfattningar"
+>abstract="Konfigurera ett eller flera scope för erbjudandebeslutet för att avgöra vilka erbjudanden som ska visas. Detta gör du genom att välja en placering och ett tillhörande utvärderingskriterier för den här placeringen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_placement"
+>title="Placement"
+>abstract="Välj en plats där erbjudanden ska levereras."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_evaluation"
+>title="Utvärderingskriterier"
+>abstract="Utvärderingskriterierna består av en erbjudandesamling som är kopplad till en kvalificeringsbegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas i placeringen. Sekvensen med utvärderingskriterier avgör vilken samling som ska utvärderas först. Minst ett utvärderingskriterium krävs."
 
 1. Välj en placering i listrutan. Den kommer att läggas till i det första beslutsomfånget i ditt beslut.
 
@@ -285,6 +305,11 @@ Markeringen ser ut så här:
 +++
 
 ## Lägg till ett reserverbjudande {#add-fallback}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_decision_fallback"
+>title="Lägg till ett enkelt erbjudande"
+>abstract="När du har definierat beslutsomfattningarna definierar du det reserverbjudande som presenteras som en sista utväg till de kunder som inte matchar reglerna och begränsningarna för erbjudanden."
 
 När du har definierat beslutsomfattningarna definierar du det reserverbjudande som presenteras som en sista utväg till de kunder som inte matchar reglerna och begränsningarna för erbjudanden.
 
