@@ -4,15 +4,30 @@ description: Lär dig hur du skapar regler för bockning för dina resor och hur
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
+source-git-commit: 2375ea3e8fb100642dee07e9c46640d47e393b44
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
 
 
 # Resebegränsning och skiljeförfarande {#journey-capping}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_capping_rule"
+>title="Använd regeluppsättning för resor"
+>abstract="Använd en regeluppsättning för att exkludera den här resan till en del av målgruppen baserat på regler för frekvensbegränsning."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_concurrency_prioritization"
+>title="Prioriteringstidens försprång"
+>abstract=" Om en resa med högre prioritet schemaläggs inom den tidsperiod som anges här, kommer kunden inte att kunna delta i den här resan. För situationer där du vill att resor ska påbörjas, kan vi först och främst tjäna på att välja perioden för daglig look ahead och se till att prioriteringspoängen för andra resor den dagen är mindre än prioriteringspoängen för resan. Att ge 100 poäng för en resa är också en garanti för att den görs."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_prioritization"
+>title="Faktor i prioritering"
+>abstract="TBD"
 
 >[!AVAILABILITY]
 >

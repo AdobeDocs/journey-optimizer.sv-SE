@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: c858d16ec520418148fb28ad2ecec0d3a6377ba9
+source-git-commit: 2375ea3e8fb100642dee07e9c46640d47e393b44
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 4%
+source-wordcount: '1254'
+ht-degree: 5%
 
 ---
 
@@ -196,39 +196,7 @@ Så här byter du språk:
 
 <!--CONTEXTUAL HELP TO DISPATCH IN DOCS ONCE FEATURE LIVE-->
 
-<!--PRIORITIZATION & CONFLICT MANAGEMENT-->
 
->[!CONTEXTUALHELP]
->id="ajo_rule_set_domain"
->title="Objekttyp"
->abstract="Objekttyp"
-
->[!CONTEXTUALHELP]
->id="ajo_journey_capping_rule"
->title="Använd regeluppsättning för resor"
->abstract="Använd en regeluppsättning för att exkludera den här resan till en del av målgruppen baserat på regler för frekvensbegränsning."
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_rule_type"
->title="Regeltyp"
->abstract="Regeltyp"
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_rule_capping"
->title="Regelfästning"
->abstract="Regelfästning"
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_concurrency_prioritization"
->title="Prioriteringstidens försprång"
->abstract=" Om en resa med högre prioritet schemaläggs inom den tidsperiod som anges här, kommer kunden inte att kunna delta i den här resan. För situationer där du vill att resor ska påbörjas, kan vi först och främst tjäna på att välja perioden för daglig look ahead och se till att prioriteringspoängen för andra resor den dagen är mindre än prioriteringspoängen för resan. Att ge 100 poäng för en resa är också en garanti för att den görs."
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_prioritization"
->title="Faktor i prioritering"
->abstract="TBD"
-
-<!--TO REMOVE?-->
 
 <!--CONTENT LOCKING-->
 
