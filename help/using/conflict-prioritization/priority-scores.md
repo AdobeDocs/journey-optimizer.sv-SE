@@ -4,15 +4,25 @@ description: Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
+source-git-commit: 4ab4b48ba87c73552a15c9815877517934029d57
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 
 # Tilldela prioritetspoäng till resor och kampanjer {#priority}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_priority"
+>title="Prioritet"
+>abstract="Tilldela kampanjens prioritetspoäng. Prioritet är viktigt för att prioritera en kampanj när det finns en begränsning, till exempel en frekvensbegränsning. Ange ett numeriskt värde (från 0-100). Observera att ju högre tal desto högre prioritet. I situationer där två kampanjer har samma prioritetspoäng visas den kampanj som aktiverades först."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_priority"
+>title="Prioritet"
+>abstract="Tilldela en prioritetspoäng till resan. Prioritet är viktigt för att prioritera en resa när det finns en angiven begränsning, t.ex. en övre frekvensgräns. Ange ett numeriskt värde (från 0 till 100). Observera att ju högre tal desto högre prioritet. I situationer där två resor har samma prioriteringspoäng visas den resa som först aktiverades."
 
 >[!AVAILABILITY]
 >

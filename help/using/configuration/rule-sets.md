@@ -10,9 +10,9 @@ level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 badge: label="Begränsad tillgänglighet"
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 2375ea3e8fb100642dee07e9c46640d47e393b44
+source-git-commit: 4ab4b48ba87c73552a15c9815877517934029d57
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -20,24 +20,9 @@ ht-degree: 0%
 # Arbeta med regeluppsättningar {#rule-sets}
 
 >[!CONTEXTUALHELP]
->id="ajo_rule_set_domain"
->title="Objekttyp"
->abstract="Objekttyp"
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_rule_type"
->title="Regeltyp"
->abstract="Regeltyp"
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_rule_capping"
->title="Regelfästning"
->abstract="Regelfästning"
-
->[!CONTEXTUALHELP]
 >id="ajo_business_rules_rule_sets"
 >title="Regeluppsättningar"
->abstract="Använd regeluppsättningar för att tillämpa frekvensbegränsning för olika typer av marknadsföringskommunikation. Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjmeddelanden** som skickas till dina kunder och skapa en annan regeluppsättning som begränsar antalet **nyhetsbrev** som skickas till dem."
+>abstract="Använd regeluppsättningar för att tillämpa frekvensbegränsning för olika typer av marknadsföringskommunikation. Du kan också skapa regeluppsättningar för att exkludera resor till en del av målgruppen baserat på regler för frekvensbegränsning."
 
 >[!AVAILABILITY]
 >
@@ -65,7 +50,12 @@ Utöver den här regeluppsättningen Global standardregeluppsättning kan du ska
 
 ### Kanaler och resor {#domain}
 
-När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättningen ska tillämpa regler för appning som är specifika för kommunikationskanaler eller för resor.  Detta gör du genom att välja en kanal- eller resedomän för regeluppsättningen när du skapar den. [Lär dig skapa en regeluppsättning](#create)
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_domain"
+>title="Regeluppsättningsdomän"
+>abstract="När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättningen ska tillämpa regler för appning som är specifika för kommunikationskanaler eller för resor."
+
+När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättningen ska tillämpa regler för appning som är specifika för kommunikationskanaler eller för resor. Detta gör du genom att välja en kanal- eller resedomän för regeluppsättningen när du skapar den. [Lär dig skapa en regeluppsättning](#create)
 
 * **Kanal**-domän: tillämpa regler för begränsning för kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag.
 * **Resa**-domän: Använd regler för start och begränsning av samtidighet på en resa. Ange till exempel inte profiler i mer än en resa samtidigt.
@@ -101,10 +91,11 @@ Följ stegen nedan för att skapa en regeluppsättning.
 >title="Välj meddelanderegelkategori"
 >abstract="När det aktiveras och används för ett meddelande, kommer alla frekvensregler som matchar den valda kategorin automatiskt att tillämpas på det här meddelandet. För närvarande är endast marknadsföringskategorin tillgänglig."
 
->[!CONTEXTUALHELP]
+<!--NOT USED?
+[!CONTEXTUALHELP]
 >id="ajo_rule_sets_capping"
->title="Ange begränsning för din regel"
->abstract="Ange det maximala antalet meddelanden som skickas till en kundprofil inom den valda tidsramen. Frekvensgränsen baseras på den valda kalenderperioden och återställs i början av motsvarande tidsram."
+>title="Set the capping for your rule"
+>abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_channel"
@@ -115,6 +106,11 @@ Följ stegen nedan för att skapa en regeluppsättning.
 >id="ajo_rule_sets_duration"
 >title="Välj meddelanderegelkategori"
 >abstract="När det aktiveras och används för ett meddelande, kommer alla frekvensregler som matchar den valda kategorin automatiskt att tillämpas på det här meddelandet. För närvarande är endast marknadsföringskategorin tillgänglig."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_capping"
+>title="Regelfästning"
+>abstract="Ange begränsning för din regel. Beroende på regeluppsättningsdomänen och valet i fältet Regeltyp kan det här fältet definiera det maximala antalet meddelanden som kan skickas till en profil, eller det högsta antal resor som profilen kan ange eller registreras samtidigt."
 
 Om du vill lägga till en regel i en regeluppsättning öppnar du regeluppsättningen och klickar på **[!UICONTROL Add rule]**.
 

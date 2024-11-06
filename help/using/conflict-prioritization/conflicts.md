@@ -4,9 +4,9 @@ description: Lär dig identifiera potentiella konflikter i resor och kampanjer.
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
+source-git-commit: 4ab4b48ba87c73552a15c9815877517934029d57
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '766'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,16 @@ Nedan följer en sammanfattning av hur Journey Optimizer identifierar potentiell
 * **Live/schemalagda kampanjer**: Live-kampanjer och schemalagda kampanjer kan hamna i konflikt med varandra på grund av potentiell målgruppsöverlappning. Alla livekampanjer eller schemalagda kampanjer listas i konfliktvisningsprogrammet för alla angivna kampanjer.
 
 ## Visa identifierade konflikter för en viss resa eller kampanj {#view}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_campaign_conflict"
+>title="Visa potentiella konflikter"
+>abstract="Kontrollera när det finns risk för att kampanjer överlappar andra. Konflikter visas endast för direktsända och schemalagda kampanjer. Observera att knappen blir tillgänglig så snart du har tilldelat någon av följande inställningar: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]** och **[!UICONTROL Rule set]**."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_conflict"
+>title="Visa potentiella konflikter"
+>abstract="Kontrollera om det finns risk för att resorna överlappar andra. Konflikter visas endast för direktsända och schemalagda resor. Observera att knappen blir tillgänglig så snart du har tilldelat någon av följande inställningar: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]** och **[!UICONTROL Rule set]**."
 
 När ni skapar en resa eller kampanj kan ni i Journey Optimizer kontrollera om det finns en möjlighet att överlappa andra resor eller kampanjer. Följ dessa steg för att göra detta:
 

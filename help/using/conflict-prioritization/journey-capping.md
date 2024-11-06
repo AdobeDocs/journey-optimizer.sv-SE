@@ -4,30 +4,15 @@ description: Lär dig hur du skapar regler för bockning för dina resor och hur
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 2375ea3e8fb100642dee07e9c46640d47e393b44
+source-git-commit: 4ab4b48ba87c73552a15c9815877517934029d57
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
 
 
 # Resebegränsning och skiljeförfarande {#journey-capping}
-
->[!CONTEXTUALHELP]
->id="ajo_journey_capping_rule"
->title="Använd regeluppsättning för resor"
->abstract="Använd en regeluppsättning för att exkludera den här resan till en del av målgruppen baserat på regler för frekvensbegränsning."
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_concurrency_prioritization"
->title="Prioriteringstidens försprång"
->abstract=" Om en resa med högre prioritet schemaläggs inom den tidsperiod som anges här, kommer kunden inte att kunna delta i den här resan. För situationer där du vill att resor ska påbörjas, kan vi först och främst tjäna på att välja perioden för daglig look ahead och se till att prioriteringspoängen för andra resor den dagen är mindre än prioriteringspoängen för resan. Att ge 100 poäng för en resa är också en garanti för att den görs."
-
->[!CONTEXTUALHELP]
->id="ajo_rule_set_prioritization"
->title="Faktor i prioritering"
->abstract="TBD"
 
 >[!AVAILABILITY]
 >
@@ -43,6 +28,16 @@ Båda typerna av resefackning använder prioritetspoäng till godtyckliga poster
 ➡️ [Upptäck den här funktionen i videon](#video)
 
 ## Skapa en regel för spärrning av resan {#create-rule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_concurrency_prioritization"
+>title="Prioriteringstidens försprång"
+>abstract=" Om en resa med högre prioritet schemaläggs inom den tidsperiod som anges här, kommer kunden inte att kunna delta i den här resan. För situationer där du vill att resor ska påbörjas, kan vi först och främst tjäna på att välja perioden för daglig look ahead och se till att prioriteringspoängen för andra resor den dagen är mindre än prioriteringspoängen för resan. Att ge 100 poäng för en resa är också en garanti för att den görs."
+
+>[!CONTEXTUALHELP]
+>id="ajo_rule_set_rule_type"
+>title="Regeltyp"
+>abstract="Ange typ av begränsning för regeln. **[!UICONTROL Journey Entry Cap]** begränsar antalet poster i resan under en viss period för en profil, medan **[!UICONTROL Journey Concurrency Cap]** begränsar hur många resor en profil kan registreras samtidigt."
 
 Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
@@ -109,6 +104,11 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
    ![](assets/journey-capping-activate-rule-set.png)
 
 ## Tillämpa regler för begränsning av resor {#apply-capping}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_capping_rule"
+>title="Använd regeluppsättning för resor"
+>abstract="Använd en regeluppsättning för att exkludera den här resan till en del av målgruppen baserat på regler för frekvensbegränsning."
 
 Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till resan och öppnar dess egenskaper. Välj den relevanta regeluppsättningen i listrutan **[!UICONTROL Capping rules]**. När resan har aktiverats gäller de regler som definieras i regeluppsättningen.
 
