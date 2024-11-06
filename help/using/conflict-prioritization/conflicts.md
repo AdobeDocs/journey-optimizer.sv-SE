@@ -4,9 +4,9 @@ description: Lär dig identifiera potentiella konflikter i resor och kampanjer.
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 4ab4b48ba87c73552a15c9815877517934029d57
+source-git-commit: 8b1ae663accf6b6c049dc7cc2a427811369a42bc
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,10 @@ De viktigaste områdena att övervaka för eventuell överlappning är:
 * **Kanal**: Finns det annan kommunikation schemalagd för samma tidsram och, om så är fallet, hur många?
 * **Begränsningsregeluppsättning**: Vilka typer av resor är jag capping och överlappar de?
 * **Kanalkonfiguration**: Finns det andra resor eller kampanjer som använder någon kanalkonfiguration som används i samma resa eller kampanj som kan förhindra att resan eller kampanjen visas för slutanvändaren?
+
+>[!NOTE]
+>
+>I kampanjer är prioritetspoäng endast tillgängligt för webben, appar och kodbaserade inkommande kanaler.
 
 ➡️ [Upptäck den här funktionen i videon](#video)
 

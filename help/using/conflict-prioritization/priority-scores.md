@@ -4,9 +4,9 @@ description: Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 4ab4b48ba87c73552a15c9815877517934029d57
+source-git-commit: 8b1ae663accf6b6c049dc7cc2a427811369a42bc
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Med Journey Optimizer kan ni tilldela en prioritetspoäng till en resa eller kam
 
 >[!NOTE]
 >
->Prioritetspoäng är tillgängligt för inkommande kanaler: webbkanaler, appkanaler och kodbaserade kanaler. Prioritetspoäng är endast tillgänglig för kanalerna **i appen** och **kodbaserad**.
+>I kampanjer är prioritetspoäng endast tillgängligt för webben, appar och kodbaserade inkommande kanaler.
 
 ➡️ [Upptäck den här funktionen i videon](#video)
 
