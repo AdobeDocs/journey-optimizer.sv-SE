@@ -5,22 +5,15 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-badge: label="Begränsad tillgänglighet"
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
+source-git-commit: 22eae783ec2a7db2209b2a12b78b286e4f97ee1b
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
 
 # Kom igång med beslutsfattande {#get-started-experience-decisioning}
-
->[!AVAILABILITY]
->
->Beslut är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
->
->För närvarande är funktionen inte tillgänglig för kunder som har köpt tilläggserbjudandena Adobe **Healthcare Shield** och **Privacy and Security Shield** .
 
 ## Vad är beslut? {#about}
 

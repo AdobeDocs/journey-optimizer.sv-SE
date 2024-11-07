@@ -5,11 +5,10 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-badge: label="Begränsad tillgänglighet"
-source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
+source-git-commit: 22eae783ec2a7db2209b2a12b78b286e4f97ee1b
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 6%
+source-wordcount: '310'
+ht-degree: 5%
 
 ---
 

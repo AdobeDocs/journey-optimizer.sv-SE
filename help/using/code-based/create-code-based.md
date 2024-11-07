@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
+source-git-commit: 22eae783ec2a7db2209b2a12b78b286e4f97ee1b
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1721'
 ht-degree: 1%
 
 ---
@@ -118,11 +118,6 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 1. Med kodbaserade upplevelser kan ni använda beslutsfunktionen. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md)
 
    ![](assets/code-based-campaign-create-decision.png)
-
-   >[!NOTE]
-   >
-   >Beslut är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-
 
 1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
 
