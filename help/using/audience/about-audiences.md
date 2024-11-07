@@ -9,9 +9,9 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 0da5f10953ca3b5e14ddd2dd41eac14d5edca767
+source-git-commit: 26d311802236a1f9e8f6273c1291bcb54138aad2
 workflow-type: tm+mt
-source-wordcount: '2278'
+source-wordcount: '2048'
 ht-degree: 0%
 
 ---
@@ -35,13 +35,18 @@ Med [!DNL Journey Optimizer] kan du skapa Adobe Experience Platform-målgrupper 
 Målgrupper kan genereras på olika sätt:
 
 * **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform segmenteringstjänst. [Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
+
 * **Anpassad överföring**: Importera en målgrupp med en CSV-fil. Lär dig hur du importerar målgrupper i Adobe Experience Platform [dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}.
+
 * **Målgruppskomposition**: Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper. [Kom igång med målgruppsdisposition](get-started-audience-orchestration.md)
+
 * **Federated Audience Composition**: Federate-datauppsättningar direkt från ditt befintliga datalager för att skapa och berika Adobe Experience Platform-målgrupper och attribut i ett och samma system. Läs guiden om [Federated Audience Composition](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home).
 
   >[!AVAILABILITY]
   >
   >Federated Audience Composition är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
+
+Mer information om hur du använder målgrupper med anpassad uppladdning och federerad målgruppskomposition i [!DNL Journey Optimizer] finns i [det här avsnittet](custom-upload-fac.md).
 
 ## Målgrupper i [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
@@ -104,22 +109,6 @@ Detaljerad information om datakällor finns i följande avsnitt:
 * [Konfigurera en datakälla](../datasource/configure-data-sources.md)
 >
 +++
-
-## Anpassad uppladdning och sammanställning av externa målgrupper {#csv}
-
-I det här avsnittet finns viktig information som du bör tänka på när du arbetar med en anpassad överföring (CSV-filer) och en federerad målgrupp för publikdisposition:
-
-* **Stöd för förhandsgranskning och korrektur:** För närvarande stöds inte förhandsgranskning och korrektur för målgrupper som skapats med CSV-överföring eller sammanställning av federerade målgrupper. Tänk på detta när ni planerar era kampanjer.
-
-* **Snabb aktivering och fördröjning av identitetssammanfogning:** Adobe Experience Platform-arkitekturen fördröjer identitetssammanfogningen för att göra Custom-överföring och Federated Audience Composition-målgrupper omedelbart tillgängliga för aktivering i Journey Optimizer, med följande effekter:
-
-   * Publiken är redo att användas i Journey Optimizer direkt efter att intaget har slutförts. Detta är vanligtvis inom en timme, men kan variera.
-   * Antalet aktiverade poster kan skilja sig från antalet profiler efter identitetssammanfogning.
-   * Alla poster i publiken aktiveras, inklusive eventuella dubbletter. Under nästa UPS-profilexport kommer dessa poster att genomgå identitetssammanfogning.
-
-* **Nya profiler:** Om det inte går att hitta någon matchning mellan en post och en UPS-profil skapas en ny tom profil. Den här profilen är kopplad till anrikningsattributen som lagras i datasjön. Eftersom den nya profilen är tom är målfält som vanligtvis används i Journey Optimizer (t.ex. personalEmail.address, mobilePhone.number) tomma och kan därför inte användas som mål.
-
-  För att lösa detta kan du ange &quot;körningsfält&quot; (eller &quot;körningsadress&quot; beroende på kanal) i kanalkonfigurationen som &#39;identityMap&#39;. På så sätt säkerställs att det attribut som väljs som identitet när målgrupper skapas blir det som används för målgruppsanpassning i Journey Optimizer.
 
 ## Metoder för utvärdering av målgrupper {#evaluation-method-in-journey-optimizer}
 
@@ -184,7 +173,6 @@ Därför bör du undvika följande händelser för optimala prestanda vid direkt
 >[!NOTE]
 >
 Du kan använda händelserna **Meddelande öppnat** och **Meddelande skickat** i gruppsegmentering utan några prestandaproblem.
-
 
 ## Vanliga frågor och svar om målgruppskomposition och anpassad överföring {#faq}
 
@@ -264,3 +252,8 @@ Dessutom är förbättrade attribut i målgrupper för målgruppssammansättning
 
 +++
 
+## Instruktionsvideo {#video}
+
+Läs om enhetliga kundprofiler och målgrupper i Journey Optimizer.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3432671?quality=12)
