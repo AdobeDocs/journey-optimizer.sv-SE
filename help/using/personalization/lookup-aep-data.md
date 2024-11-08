@@ -1,32 +1,82 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd Adobe Experience Platform-data för personalisering (beta)
+title: Använd Adobe Experience Platform-data för personalisering (Beta)
 description: Lär dig hur du använder Adobe Experience Platform-data för personalisering.
 feature: Personalization, Rules
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
-hidefromtoc: true
-hide: true
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-source-git-commit: a03541b5f1d9c799c30bf1d38b6f187d94c21dff
+source-git-commit: cb7842209e03c579904979480304e543a6b50f50
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
 
-# Använd Adobe Experience Platform-data för personalisering (beta) {#aep-data}
+# Använd Adobe Experience Platform-data för personalisering (Beta) {#aep-data}
 
 >[!AVAILABILITY]
 >
->Den här funktionen är för närvarande endast tillgänglig som en privat betaversion.
+>Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion.
 >
->För närvarande är den bara tillgänglig för **e-postkanalen** och för testning i den icke-produktionssandlåda som du har angett för Adobe och för de datauppsättningar som begärts för betaversionen.
+>För att kunna använda den här funktionen måste du först godkänna betavillkor för din organisation som visas när du lägger till de nya hjälpfunktionerna&quot;datasetLookup&quot; i personaliseringsredigeraren.
 
-Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att [anpassa ditt innehåll](../personalization/personalize.md). Stegen är följande:
+Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att [anpassa ditt innehåll](../personalization/personalize.md). För att göra detta måste datauppsättningar som behövs för sökpersonalisering först aktiveras via ett API-anrop enligt beskrivningen nedan. När du är klar kan du använda deras data för att anpassa ditt innehåll till [!DNL Journey Optimizer].
+
+## Beta begränsningar och riktlinjer {#guidelines}
+
+Läs följande begränsningar och riktlinjer innan du börjar:
+
+### Aktivera datauppsättningar {#enablement}
+
+* **Datauppsättningsstorleken** är begränsad till 5 GB för produktionsdatamängder och 1 GB för dev sandbox-datamängder
+* **Högst 50 datauppsättningar kan aktiveras** för sökning per organisation när som helst.
+* **Antalet poster** är begränsat till 5 miljoner i produktionsdatamängder och 1 MB i dev sandbox-datamängder.
+* **Dataanvändningsetiketter och -tvång** används inte för närvarande för datauppsättningar som har aktiverats för sökning.
+* **Datauppsättningar som är aktiverade för sökning och används för personalisering är inte skyddade från borttagning**. Det är upp till dig att hålla reda på vilka datauppsättningar som används för personalisering för att säkerställa att de inte tas bort eller tas bort.
+
+### Personalization använder [!DNL Adobe Experience Platform]-data {#perso}
+
+* **Kanaler som stöds**: För närvarande är den här funktionen bara tillgänglig för e-post, SMS, push och direktreklam.
+* **Dataanvändningsetiketter och -tvång** används inte för närvarande för datauppsättningar som har aktiverats för sökning.
+* **Uttrycksfragment**: Det går inte att placera datauppslagspersonalisering i uttrycksfragment just nu.
+
+## Aktivera en datauppsättning för datasökning {#enable}
+
+För att kunna utnyttja data från datauppsättningen för personalisering måste du använda ett API-anrop för att hämta dess status och aktivera sökningstjänsten.
+
+### Förhandskrav {#prerequisites-enable}
+
+* Följ anvisningarna i [den här dokumentationen](https://developer.adobe.com/journey-optimizer-apis/references/authentication/) för att konfigurera miljön för att skicka API-kommandon.
+* Utvecklarprojektet måste ha Adobe Journey Optimizer- och Adobe Experience Platform-API:erna tillagda i projektet.
+
+  ![](assets/aep-data-api.png)
+
+* Du måste ha behörighet att hantera datauppsättningar som en del av din roll.
+* Schemat som datauppsättningen baseras på måste innehålla en **primär identitet** som kan fungera som söknyckeln.
+
+### API-anropsstruktur {#call}
+
+```
+curl -s -XPATCH "https://platform.adobe.io/data/core/entity/lookup/dataSets/${DATASET_ID}/${ACTION}" \ -H "Authorization: Bearer ${ACCESS_TOKEN}" \ -H "x-api-key: ${API_KEY}" \ -H "x-gw-ims-org-id: ${IMS_ORG}" \ -H "x-sandbox-name: ${SANDBOX_NAME}"
+```
+
+Var:
+
+* **URL** är `https://platform.adobe.io/data/core/entity/lookup/dataSets/${DATASET_ID}/${ACTION}`
+* **Datauppsättnings-ID** är den datauppsättning som du vill aktivera.
+* **Åtgärd** har aktiverats eller inaktiverats.
+* **Åtkomsttoken** kan hämtas från utvecklarkonsolen.
+* **API-nyckeln** kan hämtas från utvecklarkonsolen.
+* **IMS-organisation-ID** är din Adobe IMS-ORG.
+* **Sandlådenamn** är namnet på sandlådan som datauppsättningen finns i (d.v.s. prod, dev.s.).
+
+## Utnyttja en datauppsättning för personalisering {#leverage}
+
+När en datauppsättning har aktiverats för sökpersonalisering med ett API-anrop kan du använda dess data för att anpassa ditt innehåll till [!DNL Journey Optimizer].
 
 1. Öppna personaliseringsredigeraren, som är tillgänglig i alla sammanhang där du kan definiera personalisering, till exempel meddelanden. [Lär dig arbeta med personaliseringsredigeraren](../personalization/personalization-build-expressions.md)
 
@@ -37,17 +87,21 @@ Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i per
 1. Den här funktionen har en fördefinierad syntax som gör att du kan anropa fält från Adobe Experience Platform datamängder. Syntaxen är följande:
 
    ```
-   {{entity.datasetId="datasetId" id="key" result="store"}}
+   {{datasetLookup datasetId="datasetId" id="key" result="store" required=false}}
    ```
 
-   * **entity.datasetId** är ID:t för den datauppsättning som du arbetar med.
+   * **datasetId** är ID:t för den datauppsättning som du arbetar med.
    * **id** är ID:t för källkolumnen som ska kopplas till den primära identiteten för sökdatauppsättningen.
 
      >[!NOTE]
      >
-     >Det värde som anges för det här fältet kan antingen vara ett fält-ID (*profile.couponValue*), ett fält som skickas i en resthändelse (*context.travel.events.event_ID.couponValue*) eller ett statiskt värde (*couponAbcd*). I vilket fall som helst använder systemet värdet och sökningen i datauppsättningen för att kontrollera om den matchar en nyckel.
+     >Det värde som anges för det här fältet kan vara antingen ett fält-ID (*profile.packages.packageSKU*), ett fält som skickas i en resthändelse (*context.travel.events.event_ID.productSKU*) eller ett statiskt värde (*sku07653*). I vilket fall som helst använder systemet värdet och sökningen i datauppsättningen för att kontrollera om den matchar en nyckel.
+     >
+     >Om du använder ett strängvärde för tangenten ska texten stå inom citattecken. Exempel: `{{datasetLookup datasetId="datasetId" id="SKU1234" result="store" required=false}}`. Om du använder ett attributvärde som en dynamisk nyckel tar du bort citattecknen. Exempel: `{{datasetLookup datasetId="datasetId" id=category.product.SKU result="SKU" required=false}}`
 
    * **result** är ett godtyckligt namn som du måste ange för att kunna referera till alla fältvärden som du kommer att hämta från datauppsättningen. Det här värdet används i koden för att anropa varje fält.
+
+   * **required=false**: Om det krävs anges till TRUE kommer meddelandet endast att levereras om en matchande nyckel hittas. Om värdet är false krävs ingen matchande nyckel och meddelandet kan fortfarande levereras. Observera att om värdet är false bör du ta hänsyn till reservvärden eller standardvärden i meddelandeinnehållet.
 
    +++Var hämtar du ett datauppsättnings-ID?
 
@@ -60,7 +114,7 @@ Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i per
 1. Anpassa syntaxen efter dina behov. I det här exemplet vill vi hämta data om passagerarnas flygningar. Syntaxen är följande:
 
    ```
-   {{entity.datasetId="1234567890abcdtId" id=profile.upcomingFlightId result="flight"}}
+   {{datasetLookup datasetId="1234567890abcdtId" id=profile.upcomingFlightId result="flight"}}
    ```
 
    * Vi arbetar i datauppsättningen med ID:t &quot;1234567890abcdtId&quot;,
@@ -73,8 +127,12 @@ Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i per
    {{result.fieldId}}
    ```
 
+   >[!NOTE]
+   >
+   >När du refererar till ett datamängdsfält måste du se till att du matchar den fullständiga fältsökvägen enligt definitionen i schemat.
+
    * **result** är det värde som du har tilldelat parametern **result** i hjälpfunktionen **MultiEntity**. I det här exemplet &quot;flight&quot;.
-   * **fieldID** är ID:t för det fält som du vill hämta. Detta ID visas i Adobe Experience Platform användargränssnitt när du bläddrar bland datauppsättningarna. Expandera avsnittet nedan för att visa ett exempel:
+   * **fieldID** är ID:t för det fält som du vill hämta. Detta ID visas i användargränssnittet för [!DNL Adobe Experience Platform] när du bläddrar i postschemat som är relaterat till din datauppsättning:
 
      +++Var ska ett fält-ID hämtas?
 
