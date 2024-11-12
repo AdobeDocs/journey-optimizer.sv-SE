@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 393f02c0-f54c-4222-b668-0931b67590ce
-source-git-commit: ea016af2dc08321bcf2e5110538031f66c888b90
+source-git-commit: b9dbda18b2e997d6c3acc9763cbb0088abbece1b
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ KPI:erna för **[!UICONTROL Highlights]** fungerar som en omfattande kontrollpan
 
 +++ Läs mer om Highlights metrics
 
-* **[!UICONTROL Journey engagement]**: Totalt antal personer som interagerat med meddelanden som skickats från resan.
+* **[!UICONTROL Journey engagement]**: Totalt antal unika personer som tagit emot meddelanden som skickats genom resan, vilket representerar distinkta profiler som nått en angiven åtgärdspunkt under resan.
 
 * **[!UICONTROL Journey Enters]**: Totalt antal personer som har nått resans anmälningshändelse.
 

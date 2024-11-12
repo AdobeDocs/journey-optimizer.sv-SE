@@ -7,9 +7,10 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: a2219bf7791bc5c598228af883d0507180628abf
+exl-id: 30d4f967-e085-44f1-973d-11e79f693e6e
+source-git-commit: b9dbda18b2e997d6c3acc9763cbb0088abbece1b
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ Rapporten **[!UICONTROL Journey]** ger dig en tydlig bild av de viktigaste spår
 
 +++ Läs mer om nyckeltal för resan
 
-* **[!UICONTROL Journey engagement]**: Totalt antal personer som interagerat med meddelanden som skickats från resan
+* **[!UICONTROL Journey engagement]**: Totalt antal unika personer som tagit emot meddelanden som skickats genom resan, vilket representerar distinkta profiler som nått en angiven åtgärdspunkt under resan.
 
 * **[!UICONTROL Journey enters]**: Totalt antal personer som har nått resans anmälningshändelse.
 
@@ -54,7 +55,7 @@ Tabellen **[!UICONTROL Journey Statistics]** innehåller en detaljerad sammanfat
 
 +++ Läs mer om statistik om resan
 
-* **[!UICONTROL Journey engagement]**: Totalt antal personer som interagerat med meddelanden som skickats från resan.
+* **[!UICONTROL Journey engagement]**: Totalt antal unika personer som tagit emot meddelanden som skickats genom resan, vilket representerar distinkta profiler som nått en angiven åtgärdspunkt under resan.
 
 * **[!UICONTROL Journey enters]**: Totalt antal personer som har nått resans anmälningshändelse.
 
