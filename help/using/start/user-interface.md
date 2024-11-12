@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 2375ea3e8fb100642dee07e9c46640d47e393b44
+source-git-commit: d9fde8bfc7fd3ab3139c4212e2fef490dd9a8cce
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1300'
 ht-degree: 5%
 
 ---
@@ -250,3 +250,18 @@ Så här byter du språk:
 >id="ajo_email_enable_experience_decisioning"
 >title="Aktivera beslut"
 >abstract="Aktivera beslut"
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_decision_policy"
+>title="Välj beslutsattribut från katalog"
+>abstract="Beslutsattribut lagras i katalogschemat. Välj ett attribut som du vill använda här från den valda katalogen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_placements"
+>title="Beslutspolitik"
+>abstract="Med en beslutspolicy kan ni välja ut de bästa elementen från beslutsmotorn och leverera till varje målgrupp."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_decision_attribute"
+>title="Placement"
+>abstract="Placement"
