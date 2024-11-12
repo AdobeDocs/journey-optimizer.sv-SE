@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
-source-git-commit: d63b12c9c7d3b16309661ffbe20baf8a9c140945
+source-git-commit: 40f46fd815a567934f886dd086102d830dea5ade
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,11 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >För automatiserat flöde behöver användare behörigheter som är relaterade till funktionen **[!UICONTROL Translation Service]**. [Läs mer om behörigheter](../administration/permissions.md)
+
+>[!AVAILABILITY]
+>
+> Det automatiska flödet är tillfälligt otillgängligt för användare i EMEA-regionen.
+
 
 Med hjälp av det automatiserade flödet kan du helt enkelt välja målspråk och språkleverantör. Ditt innehåll skickas sedan direkt till översättningen, klart för slutgranskning när det är klart.
 
