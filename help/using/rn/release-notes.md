@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: cb7842209e03c579904979480304e543a6b50f50
+source-git-commit: 97b6041d4b8523b11b13dd78cd8b241a6410f1bc
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2103'
 ht-degree: 6%
 
 ---
@@ -295,7 +295,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 <!--* **Path experiment in journeys** - With the journey path experiment, you can now define and track key metrics for your journey paths, allowing you to measure the impact of your activities and to provide clearer insights into your performance. -->
 
-&lt;!—* **Maximalt antal Live-resor** - Journey Optimizer har nu 500 live-resor på produktionssandlådor i stället för 100. Antalet direktresor visas på arbetsytan. <!-- DOCAC-10977-->
+<!--* **Max number of Live journeys** - Journey Optimizer now has a guardrail of 500 live journeys on production sandboxes, instead of 100. The number of live journeys is visible in the journey canvas. (DOCAC-10977) -->
 
 **Webbkanal**
 
