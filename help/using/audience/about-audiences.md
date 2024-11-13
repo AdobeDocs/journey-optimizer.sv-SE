@@ -9,9 +9,9 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 26d311802236a1f9e8f6273c1291bcb54138aad2
+source-git-commit: 3951201f24f5277774f192944ca479e8354c13bc
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2031'
 ht-degree: 0%
 
 ---
@@ -218,10 +218,9 @@ Om du vill använda anrikningsattribut från målgrupper som skapats med disposi
 
 +++
 
-+++ När kan jag publicera en målgrupp från en publikkomposition eller en anpassad uppladdning i Journey Optimizer?
++++ När kan jag publicera en målgrupp från en publikkomposition i Journey Optimizer?
 
-* Målgrupper från **målgruppskomposition** körs dagligen, så du kan behöva vänta upp till 24 timmar på att använda dem i Journey Optimizer.
-* Publikationer från **anpassad överföring** blir tillgängliga i Journey Optimizer cirka 2 timmar efter publicering.
+Målgrupper från **målgruppskomposition** körs dagligen, så du kan behöva vänta upp till 24 timmar på att använda dem i Journey Optimizer.
 
 +++
 
