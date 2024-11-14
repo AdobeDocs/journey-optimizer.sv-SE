@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 87bb8739be76d9535fb9c77ceada0ea5f179b099
+source-git-commit: a98312d9ac5a457bfd6789bf79ad80a24d894a0b
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2165'
 ht-degree: 24%
 
 ---
@@ -375,7 +375,7 @@ ht-degree: 24%
          + [Skapa kompositionsarbetsflöden](using/audience/create-compositions.md)
          + [Arbeta med arbetsytan](using/audience/composition-canvas.md)
          + [Få åtkomst till och hantera målgrupper](using/audience/access-audiences.md)
-      + [Sammansatt målgruppskomposition (begränsad tillgänglighet)](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home)
+      + [Federerad målgruppssammansättning](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home)
    + Profiler{#profiles}
       + [Kom igång med profiler](using/audience/get-started-profiles.md)
       + [Skapa testprofiler](using/audience/creating-test-profiles.md)

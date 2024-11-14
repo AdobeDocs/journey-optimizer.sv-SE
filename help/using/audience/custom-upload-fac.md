@@ -8,10 +8,11 @@ topic: Content Management
 role: User
 level: Beginner
 mini-toc-levels: 1
-source-git-commit: 26d311802236a1f9e8f6273c1291bcb54138aad2
+exl-id: d2365e3f-fbef-43c2-bf2a-0a868cb93015
+source-git-commit: a98312d9ac5a457bfd6789bf79ad80a24d894a0b
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 2%
+source-wordcount: '394'
+ht-degree: 0%
 
 ---
 
@@ -24,10 +25,6 @@ Förutom segmentdefinitioner och målgruppskomposition kan du med [!DNL Journey 
 * **Anpassad överföring**: Importera en målgrupp med en CSV-fil. Lär dig hur du importerar målgrupper i Adobe Experience Platform [dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}.
 
 * **Federated Audience Composition**: Federate-datauppsättningar direkt från ditt befintliga datalager för att skapa och berika Adobe Experience Platform-målgrupper och attribut i ett och samma system. Läs guiden om [Federated Audience Composition](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home).
-
-  >[!AVAILABILITY]
-  >
-  >Federated Audience Composition är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
 
 Du kan rikta in de här målgrupperna i Journey Optimizer eller aktivera dem till vilket mål som helst som stöds av Adobe Experience Platform
 

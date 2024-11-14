@@ -9,9 +9,9 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 3951201f24f5277774f192944ca479e8354c13bc
+source-git-commit: a98312d9ac5a457bfd6789bf79ad80a24d894a0b
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ Målgrupper kan genereras på olika sätt:
 * **Målgruppskomposition**: Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper. [Kom igång med målgruppsdisposition](get-started-audience-orchestration.md)
 
 * **Federated Audience Composition**: Federate-datauppsättningar direkt från ditt befintliga datalager för att skapa och berika Adobe Experience Platform-målgrupper och attribut i ett och samma system. Läs guiden om [Federated Audience Composition](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home).
-
-  >[!AVAILABILITY]
-  >
-  >Federated Audience Composition är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
 
 Mer information om hur du använder målgrupper med anpassad uppladdning och federerad målgruppskomposition i [!DNL Journey Optimizer] finns i [det här avsnittet](custom-upload-fac.md).
 
