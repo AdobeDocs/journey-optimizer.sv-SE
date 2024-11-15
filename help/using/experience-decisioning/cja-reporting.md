@@ -1,20 +1,31 @@
 ---
-title: Rapportering i Customer Journey Analytics
-description: Lär dig hur du utför rapportering i Customer Journey Analytics
+title: Rapport om beslut
+description: Lär dig hur du rapporterar om beslut.
 feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Experienced
 badge: label="Begränsad tillgänglighet"
 exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
-source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
+source-git-commit: 841a114610bfee743f5ebb349e3eef6312de0f7b
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 1%
+source-wordcount: '220'
+ht-degree: 0%
 
 ---
 
-# Rapportering i Customer Journey Analytics {#cja}
+
+# Rapport om beslut {#decisioning-report}
+
+## Kodbaserad kampanjrapportering {#campaigns}
+
+När den kodbaserade upplevelsen är live kan ni få tillgång till dedikerade rapporter för att övervaka KPI:er (Key Performance Indicators) som en heltäckande kontrollpanel och leverera en analys av viktig statistik som är kopplad till kampanjen.
+
+Detta innefattar information om resultaten av beslutsartiklar och hur användarna interagerade med dem. [Lär dig arbeta med kodbaserade upplevelserapporter](../reports/campaign-global-report-cja-code.md)
+
+![](../reports/assets/cja-decisioning-item-performance.png)
+
+## Rapportering i Customer Journey Analytics {#cja}
 
 Om du arbetar med Customer Journey Analytics kan du skapa anpassade rapportinstrumentpaneler för kodbaserade kampanjer med hjälp av Beslutsfattande.
 
