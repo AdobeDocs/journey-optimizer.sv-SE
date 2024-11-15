@@ -5,22 +5,22 @@ feature: Experience Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-source-git-commit: 22eae783ec2a7db2209b2a12b78b286e4f97ee1b
+source-git-commit: 3fb9e6cd61e73e9ddf1971f6aa8e15c8b82b8445
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '323'
 ht-degree: 5%
 
 ---
 
 # Användningsfall vid beslut {#experience-decisioning-uc}
 
-I det här fallet definierar ni två leveransbehandlingar som var och en innehåller olika beslutsprinciper för att mäta vilken som fungerar bäst för målgruppen.
+I det här fallet skapar ni en kampanj där ni definierar två leveransbehandlingar - som vart och ett innehåller en egen beslutspolicy för att mäta vilken som fungerar bäst för er målgrupp.
 
-## Skapa artiklar och strategier
+## Skapa beslutsposter och urvalsstrategier
 
 Först måste du skapa objekt, gruppera dem i samlingar, ställa in regler och rangordningsmetoder. Med dessa element kan du skapa urvalsstrategier.
 
-1. Navigera till **[!UICONTROL Decisioning]** > **[!UICONTROL  Catalogs]** och skapa flera erbjudandeobjekt. Ange begränsningar med målgrupper eller regler för att begränsa varje objekt till enbart specifika profiler. [Läs mer](items.md)
+1. Navigera till **[!UICONTROL Decisioning]** > **[!UICONTROL  Catalogs]** och skapa flera beslutsobjekt. Ange begränsningar med målgrupper eller regler för att begränsa varje objekt till enbart specifika profiler. [Läs mer](items.md)
 
    <!--
    1. From the items list, click the **[!UICONTROL Edit schema]** button  and edit the custom attributes if needed. [Learn how to work with catalogs](catalogs.md)-->
@@ -37,11 +37,11 @@ Först måste du skapa objekt, gruppera dem i samlingar, ställa in regler och r
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj.
 
-Definiera två leveransbehandlingar som var och en innehåller olika beslutspolicyer.
+<!--Define two delivery treatments each containing a different decision policy.-->
 
 1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
 
-1. Klicka på **[!UICONTROL Create experiment]** på kampanjsammanfattningssidan för att börja konfigurera ditt innehållsexperiment. [Läs mer](../content-management/content-experiment.md)
+1. Börja personalisera behandling A från fönstret **[!UICONTROL Edit content]**.
 
 1. Välj ikonen **[!UICONTROL Decisions]**, klicka på **[!UICONTROL Create a decision]** och fyll i beslutsinformationen. [Läs mer](create-decision.md)
 
@@ -61,7 +61,9 @@ Definiera två leveransbehandlingar som var och en innehåller olika beslutspoli
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
 
-1. Bygg behandlingen B och upprepa stegen ovan för att skapa ett nytt beslut.
+1. Klicka på **[!UICONTROL Create experiment]** på kampanjsammanfattningssidan för att börja konfigurera ditt innehållsexperiment. [Läs mer](../content-management/content-experiment.md)
+
+1. I fönstret **[!UICONTROL Edit content]** väljer du din behandling B för att ändra innehållet och upprepar stegen ovan för att skapa ett annat beslut.
 
 1. Spara innehållet.
 
