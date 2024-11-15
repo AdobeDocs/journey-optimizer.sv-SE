@@ -9,9 +9,9 @@ role: Admin, Architect
 level: Intermediate
 keywords: behörigheter, rättigheter, begränsningar, åtkomst, sandlåda
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: 9f43387ff63c3d2c2849fad1ca6a98310b3915b3
+source-git-commit: c2f68054cb0c378b188797a2b3aa4fb2841b7384
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,10 @@ Användarhantering i [!DNL Journey Optimizer] baseras på tre koncept:
 
 ![](assets/do-not-localize/permissions_2.png)
 
-## Instruktionsvideo{#video}
+<!--
+## How-to video{#video}
 
-Läs mer om åtkomstkontrollssystem och anpassade profiler i Adobe Journey Optimizer. Lär dig hur du hanterar roller och behörigheter och hur du lägger till och hanterar användare.
+Learn more about access control system and custom proles in Adobe Journey Optimizer. Learn how to manage roles and permissions and how to add and manage users.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333998?quality=12)
+-->
