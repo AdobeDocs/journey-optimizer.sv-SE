@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: 2ca6659319482db09efd86ded418b151a022442c
+source-git-commit: 05ce9083d9f45332c718adc9d01ec3410ca84050
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 1%
+source-wordcount: '542'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +20,26 @@ ht-degree: 1%
 Beslutsfattandet förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person.
 
 Dessa beslutsobjekt integreras smidigt i ett brett urval av inkommande ytor via den [nya kodbaserade upplevelsekanalen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), som nu är tillgänglig inom Journey Optimizer-kampanjer. Beslutspolicyer är endast tillgängliga för kodbaserade upplevelsekampanjer.
+
+## Skyddsritningar och begränsningar {#guardrails}
+
+För att säkerställa optimal användning av beslut bör du tänka på följande skyddsförslag och begränsningar:
+
+### Allmänna skyddsräcken {#general}
+
+* **Erbjudandeobjekt**: Varje objektsamling kan innehålla upp till 500 erbjudandeobjekt.
+* **Anpassade attribut**: Ett beslutsobjekt kan innehålla maximalt 100 anpassade attribut.
+* **Urvalsstrategier och manuella artiklar per princip**: En beslutspolicy stöder upp till 10 markeringsstrategier och manuella artiklar tillsammans.
+
+### Villkor för deltagande {#eligibility}
+
+* **Kapslingsnivåer**: Inkapslingsdjupet är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen.
+* **Regelsträngsstorlek**: En regelsträng kan vara upp till 15 kB för UTF-8-kodade tecken. Detta motsvarar 15 000 ASCII-tecken (1 byte vardera), eller 3 750-7 500 icke-ASCII-tecken (2-4 byte vardera).
+
+### Rankningsformler {#ranking}
+
+* **Kapslingsnivåer**: Kapslingsdjupet är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen.
+* **Formelsträngsstorlek**: En regelsträng kan vara upp till 8 kB för UTF-8-kodade tecken. Det är upp till 8 000 ASCII-tecken (1 byte vardera), eller 2 000-4 000 icke-ASCII-tecken (2-4 byte vardera).
 
 ## Viktiga steg för beslut {#steps}
 

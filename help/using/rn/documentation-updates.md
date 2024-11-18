@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 9c5dd4a8de32ccc037d6c8d57667ce3a5f455535
+source-git-commit: 05ce9083d9f45332c718adc9d01ec3410ca84050
 workflow-type: tm+mt
-source-wordcount: '5720'
+source-wordcount: '5732'
 ht-degree: 13%
 
 ---
@@ -29,6 +29,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Ett nytt avsnitt har lagts till som beskriver hur du förhandsgranskar dina kodbaserade personaliserade upplevelser direkt i webbläsaren eller på dina mobila enheter, med alternativet Förhandsgranska på enhet när du simulerar innehåll under en resa eller en kampanj. [Läs mer](../code-based/create-code-based.md#preview-on-device)
 * En ny sida har lagts till om hur du använder anpassade uppladdningsmålgrupper för beslut. [Läs mer](../offers/custom-upload-decisioning.md)
 * En ny sida har lagts till för att presentera beslutsmöjligheterna i Journey Optimizer. [Läs mer](../experience-decisioning/gs-decision.md)
+* Garantier och begränsningar har lagts till i beslutsdokumentationen. [Läs mer](../experience-decisioning/gs-experience-decisioning.md#guardrails)
 
 ## September 2024 {#sept-2024}
 
