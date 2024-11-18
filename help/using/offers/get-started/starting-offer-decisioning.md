@@ -6,14 +6,14 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: fcd8c4077bead912d709b726c6ff15464357a8be
+source-git-commit: 2ca6659319482db09efd86ded418b151a022442c
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '894'
 ht-degree: 49%
 
 ---
 
-# Om beslutshantering {#about-decision-management}
+# Kom igång med Beslutshantering {#about-decision-management}
 
 Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och upplevelsen till dina kunder via alla kontaktpunkter vid rätt tidpunkt. När ni väl utformat er målgrupp kan ni inrikta er på personaliserade erbjudanden.
 
