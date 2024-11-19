@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 22eae783ec2a7db2209b2a12b78b286e4f97ee1b
+source-git-commit: 4acb6777994c9f4252d106fe8e9e5405e73c9349
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 1%
@@ -332,8 +332,6 @@ TBC: The **[!UICONTROL Interactions by element]** table details the main informa
 Code-based campaign global report can be accessed directly from your journey or campaign with the **[!UICONTROL View report]** button. [Learn more on global report](../reports/campaign-global-report-cja.md)
 
 From your Campaign **[!UICONTROL Global report]**, the **[!UICONTROL Code-based experience]** tab details the main information relative to your apps or web pages.
-
-![](assets/code-based-campaign-global-report.png)
 
 Add image TBC
 

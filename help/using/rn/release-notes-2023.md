@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 4acb6777994c9f4252d106fe8e9e5405e73c9349
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 8%
@@ -285,7 +285,6 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <td>
 <p>Once you have created and personalized your message, take your content to the next level with the Content assistant. You can now use the Content assistant to optimize your message's impact by experimenting with different main titles, and images. Each variant is managed as a unique Treatment, to measure and compare which title effectively generates more clicks.</p>
 <p>This capability is currently available as a private beta.</p>
-<img src="assets/gen-ai-image-2.png"/>
 <p>For more information, refer to the <a href="../start/search-filter-categorize.md#tags">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -622,7 +621,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 **Kanal i appen**
 
 * Nya regler för meddelandeutlösare för tjänsten Adobe Places har lagts till. [Läs mer](../in-app/inapp-configuration.md)
-* Nya Adobe Experience Platform Assurance-funktioner har lagts till för att fånga in enhetshändelser som ska läggas till som utlösarregler.
+* Nya funktioner i Adobe Experience Platform Assurance för att fånga in enhetshändelser som ska läggas till som utlösarregler har lagts till.
 
 <!--
 **Journeys**

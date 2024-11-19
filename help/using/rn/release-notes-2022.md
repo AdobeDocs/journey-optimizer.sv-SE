@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 4acb6777994c9f4252d106fe8e9e5405e73c9349
 workflow-type: tm+mt
 source-wordcount: '3598'
 ht-degree: 8%
@@ -449,7 +449,6 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Integreringspluginen Adobe Stock och Adobe Journey Optimizer Email Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning vid framtagning av meddelanden. </br> Med det nya alternativet <b>Sök efter liknande Stock-foton</b> kan du även söka efter Stock-foton som matchar innehållet, färgen och kompositionen för dina bilder. </p>
-<!--img src="assets/do-not-localize/stock-rn.gif"/-->
 <p>Mer information finns i den <a href="../content-management/stock.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -466,7 +465,6 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Nu kan du använda funktionen för hemlig kopia (Email BCC) för att lagra e-postmeddelanden som skickas av Adobe Journey Optimizer. Aktivera det här alternativet i dina e-postförinställningar så att alla e-postmeddelanden som skickas blir blinda och kopieras till din BCC-adress.</p>
-<!--img src="assets/do-not-localize/bcc-rn.gif"/-->
 <p>Mer information finns i den <a href="../configuration/archiving-support.md#bcc-email">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -547,7 +545,6 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Nu kan du ange affärsregler för flera kanaler som automatiskt utesluter överbegärda profiler från meddelanden och åtgärder.</p>
-<!--img src="assets/do-not-localize/frequency-rn.gif"/-->
 <p>Mer information finns i den <a href="../configuration/frequency-rules.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -564,7 +561,6 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Du kan nu använda utbildade modellsystem i Beslutshantering. Den nya funktionen rankar erbjudanden som kan visas för en viss profil.</p>
-<!--img src="assets/do-not-localize/optimization.gif"/-->
 <p>Mer information finns i den <a href="../offers/offer-activities/configure-offer-selection.md#use-ranking-strategy">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -598,7 +594,6 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Nu kan du övervaka åtgärder som utförs av användare på Adobe Journey Optimizer-resurser.</p>
-<!--img src="assets/do-not-localize/audit-rn.gif"/-->
 <p>Mer information finns i den <a href="../privacy/audit-logs.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
