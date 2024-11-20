@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 22eae783ec2a7db2209b2a12b78b286e4f97ee1b
+source-git-commit: c179d81e664fea2b03bf734cafaf287709fa10a0
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,9 @@ I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt
 
    >[!NOTE]
    >
-   >Minst en beslutsuppgift eller strategi krävs. Du kan inte lägga till fler än 10 strategier.
+   >En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsammans. [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
 
-1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare.     Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer om utvärderingsordning för beslutsprinciper](#evaluation-order)
+1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare. Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer om utvärderingsordning för beslutsprinciper](#evaluation-order)
 
 ### Hantera utvärderingsordning i en beslutspolicy {#evaluation-order}
 

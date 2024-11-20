@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 099d1439-34f7-47fe-9181-0e9ce2032a01
-source-git-commit: 22eae783ec2a7db2209b2a12b78b286e4f97ee1b
+source-git-commit: c179d81e664fea2b03bf734cafaf287709fa10a0
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '376'
 ht-degree: 1%
 
 ---
@@ -50,3 +50,7 @@ Så här skapar du en samling:
    ![](assets/collection-create.png)
 
 1. När samlingsreglerna har definierats klickar du på **[!UICONTROL Create]**. Samlingen visas nu i listan.
+
+>[!NOTE]
+>
+>Varje artikelsamling kan innehålla upp till 500 erbjudandeartiklar. [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
