@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 88e7140183700da0283fa00d89f6fff2c71c138f
+source-git-commit: 8535040fd3fe1622d4358a762f92bd93f5694cfa
 workflow-type: tm+mt
 source-wordcount: '2445'
 ht-degree: 0%
@@ -308,7 +308,7 @@ Markeringen ser ut så här:
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_fallback"
->title="Lägg till ett enkelt erbjudande"
+>title="Lägg till ett reserverbjudande"
 >abstract="När du har definierat beslutsomfattningarna definierar du det reserverbjudande som presenteras som en sista utväg till de kunder som inte matchar reglerna och begränsningarna för erbjudanden."
 
 När du har definierat beslutsomfattningarna definierar du det reserverbjudande som presenteras som en sista utväg till de kunder som inte matchar reglerna och begränsningarna för erbjudanden.
@@ -384,7 +384,7 @@ Du kan också ta bort eller ändra status för flera beslut samtidigt genom att 
 
 ![](../assets/decision_multiple-selection.png)
 
-Om du vill ändra status för flera beslut med olika status, ändras bara statusen.
+Om du vill ändra status för flera beslut med olika statusvärden, ändras bara statusvärdena.
 
 ![](../assets/decision_change-status.png)
 
