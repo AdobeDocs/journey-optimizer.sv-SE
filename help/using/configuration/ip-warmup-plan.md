@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: cf946f8d59728a743b3c4b571c07fc70e3c6cf87
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1669'
 ht-degree: 0%
 
 ---
@@ -92,108 +92,108 @@ Nedan visas ett exempel på en fil som innehåller en IP-värmerapport.
 
 ![](assets/ip-warmup-sample-file.png)
 
-### Fliken IP Warmup Plan {#ip-warmup-plan-tab}
+### Fliken Warmup Plan {#ip-warmup-plan-tab}
 
-* I det här exemplet har en plan förberetts för att sträcka sig över 17 dagar (kallas **kör**) för att nå en målvolym på över en miljon profiler.
+Om du vill skapa en IP-värdplan fyller du i den första fliken med de data du behöver för att skicka din plan.
+
+* I exemplet ovan har en plan förberetts för att sträcka sig över 17 dagar (kallas **kör**) för att nå en målvolym på över en miljon profiler.
 
 * Den här planerade åtgärden utförs genom sex **faser**, där var och en innehåller minst en körning.
 
 * Du kan ha upp till sex kolumner (fyra kolumner för domängrupper, en för kolumnen **Övriga** och en för kolumnen **Förlovningsdagar**). I det här exemplet är planen uppdelad i sex kolumner:
 
-   * Tre av dessa motsvarar **färdiga domängrupper** som du kan använda i din plan (Gmail, Microsoft och Orange).
-   * Den ena motsvarar en anpassad domängrupp (som du måste lägga till på fliken [Anpassad domängrupp](#custom-domain-group-tab)).
+   * Tre av dessa motsvarar **färdiga domängrupper** som du kan använda i din plan (Gmail, Yahoo och Microsoft). De körklara domängrupperna visas alla på fliken [OTB-domängrupper](#ootb-domain-groups-tab) .
+   * En kolumn motsvarar en anpassad domängrupp (som du måste lägga till på fliken [Anpassad domängrupp](#custom-domain-group-tab)).
    * Den femte kolumnen, **Övrigt**, innehåller alla återstående adresser från andra domäner som inte omfattas uttryckligen i planen. Den här kolumnen är valfri: om den utelämnas kommer e-post endast att skickas till de angivna domänerna.
    * I den sista kolumnen, **Förlovningsdagar**, kan du ange hur många dagar som förlovningen ska spåras eller utvärderas.
 
 Tanken är att stegvis öka antalet måladresser i varje körning och samtidigt minska antalet körningar för varje fas.
 
-De färdiga huvuddomängrupperna som du kan lägga till i din plan visas nedan:
+### Fliken Anpassad domängrupp {#custom-domain-group-tab}
 
-<!--
-* Gmail
-* Adobe
-* WP
-* Comcast
-* Yahoo
-* Bigpond
-* Orange
-* Softbank
-* Docomo
-* United Internet
-* Microsoft
-* KDDI
-* Italia Online
-* La Poste
-* Apple
--->
+Du kan också lägga till fler kolumner i din plan genom att ta med anpassade domängrupper.
+
+Använd fliken **[!UICONTROL Custom Domain Group]** för att definiera en ny domängrupp. För varje domän kan du lägga till alla underdomäner som den omfattar.
+
+>[!IMPORTANT]
+>
+>Kontrollera att varje domän är unik för sin domängrupp och inte överlappar andra domängrupper eller [ej ifyllda domängrupper](#ootb-domain-groups-tab).
+
+Om du till exempel lägger till den anpassade domänen Roadrunner vill du att följande underdomäner ska inkluderas, som i exemplet nedan: roadrunner.com, nc.rr.com, tampabay.rr.com, rochester.rr.com osv.
+
+![](assets/ip-warmup-sample-file-custom.png)
+
+>[!NOTE]
+>
+>Om du inte behöver anpassade domäner lämnar du fliken **[!UICONTROL Custom Domain Group]** tom.
+
+### Fliken OTB-domängrupper {#ootb-domain-groups-tab}
+
+Fliken **OTB-domängrupper** i programmallen för IP Warmup innehåller alla körklara huvuddomängrupper som du kan lägga till i din plan.
+
+![](assets/ip-warmup-sample-file-ootb.png)
+
+>[!NOTE]
+>
+>Om en domängrupp inte finns med på den här fliken måste du skapa en anpassad domängrupp på motsvarande flik. [Läs mer](#custom-domain-group-tab)
+
+De körklara huvuddomängrupperna anges också nedan:
 
 +++ Gmail
 gmail.com;google.com;googlemail.com;googlemail.co.uk
-+++
-
-+++WP
-wp.pl;o2.pl
-+++
-
-+++Comcast
-comcast.net
-+++
-
-+++Yahoo
-aol.fi;games.com;cs.com;;yahoo.com.in;y7mail.com;yahoo.co.uk;yahoo.hu;yahoo.co.hu;yahoo.cn;yahoogroups.com.sg;yahoogroups.com.au;aol.es;yahoo.com.au;yahoo.com.vn;yahoo.ca;aol.hk;din;din tur;aolpoland.pl;aolnorge.no;din;yahoo.fi;din;din;din;din;din;din;din;din;på;på;på;på;på;på;på;din;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;;;;;;;;;aol.cz;yahoo.ee;aol.be;aolcom.tr;yahoo.si;din tur;aol.it;din tur;yahoo.es;yahoo.dk;yahoogroups.ca;din tur;din;aol.kr;yahoo.ie;aol.jp;din;yahoo.lt;ahoo;ahoo;ahoo.se;ahoo;ahoo.se;ahoo;ahoo;ahoo;ahoo.se;se;ahoo.ahoo;ahoo;aoeaoeahoo.aeaeaeaeaeahoo.se;ahoo.aeaoeaoeaeaeae;aol.nl;åååå.bg;åååå;åååå;åååå;åååå;åååå;åååå;åååå;ååååå;ååååå;ååååå;åahoo.cz;åååååå;ååååå;ååååå;ååååååå;åååååååååååååååå;ååååååååååååååååååå;åååååååååååååååååå;åå;åå;ååååååååååååååååå;åååååååå;åå;åååååahoogroups.de;yahoo.gr;inrapportering;yahoo.ro;inbud;åahoo.at;inrapportering;inrapportering;aol.fr;yahoo.in;aol.in;din inrapportering;yahoo.rs;aol.de;din inrapportering;din inrapportering;inrapportering;inrapportering;infallande;yahoo.se;myahoo.yahoo.se;myaool.jp inrapportering;yahoo.pt;inrapportering;inrapportering;yahoodina.dk;yahoo.fr;inrapportering;inrapportering;aol.pl;inrapportering;aol.ch;yahoo.it;inrapportering;inrapportering;aolpolcka.pl;inrapportering;yahoogruppi.it;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;yahoo.be;åligganden;åå.tw;åligganden;åligganden;åligganden;åligganden;åååå;åååå;åååå;åååååååå.lv;aolpolska.pl;aol.at;yahoo.pl
-+++
-
-+++Bigpond
-bigpond.com;bigpond.com.au;bigpond.net;telstra.com;bigpond.net.au
-+++
-
-+++Orange
-voila.com;francetelecom.com;orange.com;orange.fr;wanadoo.fr;voila.fr
-+++
-
-+++Softbank
-c.vodafone.ne.jp;jp-h.ne.jp;k.vodafone.ne.jp;jp-d.ne.jp;jp-q.ne.jp;jp-c.ne.jp;t.vodafone.ne.jp;h.vodafone.ne.jp;r.vodafone.ne.jp;q.vodafone.ne.jp;jp-t.ne.jp;åligganden;åligganden;åligganden;åligganden;avslutning
-+++
-
-+++Docomo
-docomo.ne.jp
-+++
-
-+++United Internet
-gmx.de;1and1.com;gmx.fr;mail.com;1und1.de;gmx.com;gmx.net;gmx.at;web.de;gmx.ch
 +++
 
 +++Microsoft
 hotmail.com.tr;live.de;live.ru;live.nl;windowslive.com;live.jp;mts.net;xbox.com;hotmail.fr;hotmail.cl;hotmail.jp;live.cl;live.at;live.com.au;live.hk;hotmail.com.au;hotmail.com;live.com.my;hotmail.co.kr;live.ie;dina tjänster;hotmail.dk;din tur;din;din;outlook.ie;live.cn;åligganden;väntande;hotmail.es;live.fr;live.no;live.dk;hotmail.it;dina aktiviteter;live.se;klart.att;live.in;live.in;hotmail.se;din tur;hotmail.ch;dina aktiviteter;din tur;hotmail.gr;livedatmail.ca;dina aktiviteter;live.ca;hotmail.de
 +++
 
-+++KDDI
-au.com;ezweb.ne.jp;uqmobile.jp
-+++
-
-+++Italia online
-inwind.it;blu.it;virgilio.it;giallo.it;iol.it;libero.it
-+++
-
-+++La Poste
-laposte.net
++++Yahoo
+aol.fi;games.com;cs.com;;yahoo.com.in;y7mail.com;yahoo.co.uk;yahoo.hu;yahoo.co.hu;yahoo.cn;yahoogroups.com.sg;yahoogroups.com.au;aol.es;yahoo.com.au;yahoo.com.vn;yahoo.ca;aol.hk;din;din tur;aolpoland.pl;aolnorge.no;din;yahoo.fi;din;din;din;din;din;din;din;din;på;på;på;på;på;på;på;din;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;på;;;;;;;;;aol.cz;yahoo.ee;aol.be;aolcom.tr;yahoo.si;din tur;aol.it;din tur;yahoo.es;yahoo.dk;yahoogroups.ca;din tur;din;aol.kr;yahoo.ie;aol.jp;din;yahoo.lt;ahoo;ahoo;ahoo.se;ahoo;ahoo.se;ahoo;ahoo;ahoo;ahoo.se;se;ahoo.ahoo;ahoo;aoeaoeahoo.aeaeaeaeaeahoo.se;ahoo.aeaoeaoeaeaeae;aol.nl;åååå.bg;åååå;åååå;åååå;åååå;åååå;åååå;åååå;ååååå;ååååå;ååååå;åahoo.cz;åååååå;ååååå;ååååå;ååååååå;åååååååååååååååå;ååååååååååååååååååå;åååååååååååååååååå;åå;åå;ååååååååååååååååå;åååååååå;åå;åååååahoogroups.de;yahoo.gr;inrapportering;yahoo.ro;inbud;åahoo.at;inrapportering;inrapportering;aol.fr;yahoo.in;aol.in;din inrapportering;yahoo.rs;aol.de;din inrapportering;din inrapportering;inrapportering;inrapportering;infallande;yahoo.se;myahoo.yahoo.se;myaool.jp inrapportering;yahoo.pt;inrapportering;inrapportering;yahoodina.dk;yahoo.fr;inrapportering;inrapportering;aol.pl;inrapportering;aol.ch;yahoo.it;inrapportering;inrapportering;aolpolcka.pl;inrapportering;yahoogruppi.it;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;inrapportering;yahoo.be;åligganden;åå.tw;åligganden;åligganden;åligganden;åligganden;åååå;åååå;åååå;åååååååå.lv;aolpolska.pl;aol.at;yahoo.pl
 +++
 
 +++Apple
 mac.com;icloud.com;apple.com;me.com
 +++
 
-### Fliken Anpassad domängrupp {#custom-domain-group-tab}
++++Comcast
+comcast.net
++++
 
-Du kan också lägga till fler kolumner i din plan genom att ta med anpassade domängrupper.
++++Orange
+voila.com;francetelecom.com;orange.com;orange.fr;wanadoo.fr;voila.fr
++++
 
-Använd fliken **[!UICONTROL Custom Domain Group]** för att definiera en ny domängrupp. För varje domän kan du lägga till alla underdomäner som den omfattar.<!--TBC-->
++++La Poste
+laposte.net
++++
 
-För domängrupper som används i den planen måste du se till att varje domän är unik för sin domängrupp och inte överlappar andra domängrupper. Eftersom globala domängrupper definieras automatiskt bör användare tänka på detta när de skapar anpassade domängrupper.
++++Italia online
+inwind.it;blu.it;virgilio.it;giallo.it;iol.it;libero.it
++++
 
-Om du till exempel lägger till den anpassade domänen Luma vill du att följande underdomäner ska inkluderas: luma.com, luma.co.uk, luma.it, luma.fr, luma.de osv.
++++WP
+wp.pl;o2.pl
++++
 
-![](assets/ip-warmup-sample-file-custom.png)
++++United Internet
+gmx.de;1and1.com;gmx.fr;mail.com;1und1.de;gmx.com;gmx.net;gmx.at;web.de;gmx.ch
++++
+
++++Bigpond
+bigpond.com;bigpond.com.au;bigpond.net;telstra.com;bigpond.net.au
++++
+
++++Docomo
+docomo.ne.jp
++++
+
++++Softbank
+c.vodafone.ne.jp;jp-h.ne.jp;k.vodafone.ne.jp;jp-d.ne.jp;jp-q.ne.jp;jp-c.ne.jp;t.vodafone.ne.jp;h.vodafone.ne.jp;r.vodafone.ne.jp;q.vodafone.ne.jp;jp-t.ne.jp;åligganden;åligganden;åligganden;åligganden;avslutning
++++
+
++++KDDI
+au.com;ezweb.ne.jp;uqmobile.jp
++++
 
 ### Exempel {#example}
 
@@ -208,13 +208,13 @@ Domäner utanför Hotmail och från domängruppen Microsoft samlas i kolumnen **
 
 1. Lägg till alla Hotmail-domäner på samma rad.
 
-   Du kan [kopiera och klistra in](#copy-paste) alla Hotmail-domäner som listas på fliken [IP Warmup Plan](#ip-warmup-plan-tab).
+   Du kan [kopiera och klistra in](#copy-paste) alla Hotmail-domäner som listas på fliken [OTB-domängrupper](#ootb-domain-groups-tab).
 
 1. Lägg till en till rad.
 
 1. Skapa domängruppen **Microsoft_X**.
 
-1. Lägg till alla Microsoft-domäner som inte är Hotmail på samma rad. På samma sätt kan du kopiera och klistra in dem från listan ovan. [Läs mer](#copy-paste)
+1. Lägg till alla Microsoft-domäner som inte är Hotmail på samma rad. På samma sätt kan du [kopiera och klistra in](#copy-paste) dem från listan ovan.
 
 1. Gå tillbaka till fliken **[!UICONTROL IP Warmup Plan]**.
 
@@ -226,7 +226,7 @@ Domäner utanför Hotmail och från domängruppen Microsoft samlas i kolumnen **
 
 ### Kopiera och klistra in standarddomäner {#copy-paste}
 
-Om du till exempel vill skapa en anpassad domängrupp som innehåller alla Hotmail-domäner kan du kopiera och klistra in domänerna från standardlistan [ovan](#ip-warmup-plan-tab).
+Om du till exempel vill skapa en anpassad domängrupp som innehåller alla Hotmail-domäner kan du kopiera och klistra in domänerna från fliken **OTB-domängrupper** i [planmallen för IP-värdskap](assets/IPWarmupPlan-Template.xlsx), eller från listan [ovan](#ip-warmup-plan-tab).
 
 Använd sedan Excel-konverteringsverktyget för att konvertera text till kolumner:
 

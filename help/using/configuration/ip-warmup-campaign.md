@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: IP, pooler, leveransbarhet
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: cf946f8d59728a743b3c4b571c07fc70e3c6cf87
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!NOTE]
    >
-   >Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postkonfiguration i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
+   >* Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postkonfiguration i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
    >
    >* Arbeta med din leveranskonsult för att identifiera den domän och de IP-adresser som ska användas för din IP-warmup-plan.<!--TBC-->
 
@@ -55,13 +55,17 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
 1. Slutför stegen för att skapa en e-postkampanj, som att definiera kampanjegenskaperna, [målgrupp](../audience/about-audiences.md)<!--best practices for IP warmup in terms of audience?--> och [innehåll](../email/get-started-email-design.md#key-steps).
 
-   Observera att ni måste välja en regelbaserad målgrupp för er IP-värmare. [Läs mer](../audience/creating-a-segment-definition.md)
+   >[!IMPORTANT]
+   >
+   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
 
    Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
 1. [Aktivera](../campaigns/review-activate-campaign.md) kampanjen. Dess status ändras till **[!UICONTROL Live]**.
 
-   Observera att affärsregler inte ska användas för IP-värmerapport. Om dessa regler tillämpas kan det bli svårt att nå det önskade antalet målgruppsprofiler för kampanjer.
+   >[!NOTE]
+   >
+   >[Affärsregler](rule-sets.md#apply-frequency-rule) ska inte användas i IP-värmeringsplaner. Om dessa regler tillämpas kan det bli svårt att nå det önskade antalet målgruppsprofiler för kampanjer.
 
    Knappen **[!UICONTROL Delete]** är tillgänglig tills den är associerad med en IP-värmeringsplan för en aktiv kampanj med en IP-värmeringsplan aktiverad. När kampanjen väl har använts i en plan kan den inte längre tas bort.
 

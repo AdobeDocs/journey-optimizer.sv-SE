@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: cf946f8d59728a743b3c4b571c07fc70e3c6cf87
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
       >
       >Det här avsnittet kan inte redigeras.
 
-1. Om det behövs kan du ersätta kampanjen med knappen **[!UICONTROL Replace]**. Du kan också **[!UICONTROL Clear]** den valda kampanjen med knappen **[!UICONTROL Clear]**. Den här åtgärden rensar inte bara kampanjen utan även andra fasnivåegenskaper som t.ex. Uteslutning av domängrupp, Campaign, Uteslutning av resor med flera. När ni har rensat kan ni välja en ny kampanj antingen direkt eller vid ett senare tillfälle.
+1. Om det behövs kan du ersätta kampanjen med knappen **[!UICONTROL Replace]**. Du kan också **[!UICONTROL Clear]** den valda kampanjen med knappen **[!UICONTROL Clear]**. Den här åtgärden rensar inte bara kampanjen utan även andra fasnivåegenskaper (domängrupper exkluderar, Campaign, Resursundantag med flera). När ni har rensat kan ni välja en ny kampanj antingen direkt eller vid ett senare tillfälle.
 
    ![](assets/ip-warmup-plan-replace-campaign.png)
 
@@ -187,6 +187,12 @@ At phase level, system ensures that previously targeted + new profiles are picke
 1. Välj alternativet **[!UICONTROL Cancel activated runs in case of errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen. I så fall får körningen statusen **[!UICONTROL Failed]**.
 
    ![](assets/ip-warmup-plan-pause.png)
+
+   Om antalet kvalificerade profiler inte matchar antalet målprofiler (till exempel 1 500 Gmail-adresser anges som mål i körningen, men det finns bara 700 Gmail-profiler som är kvalificerade):
+
+   * Om alternativet är aktiverat misslyckas körningen. Du kan sedan antingen välja att ha färre profiler som mål i nästa körning eller [dela körningen](#split-phase) till en ny fas och välja en ny kampanj för den nya fasen för att ange samma profiler som mål igen.
+
+   * Om alternativet inte är aktiverat körs körningen, men bara det tillgängliga antalet profiler anges.
 
 1. **[!UICONTROL Activate]** körningen. [Läs mer](#activate-run)
 
