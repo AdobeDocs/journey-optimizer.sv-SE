@@ -9,7 +9,7 @@ role: Admin, Developer, Architect
 level: Experienced
 keywords: objekt, nivå, åtkomst, kontroll, etiketter, plats, auktorisering
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
-source-git-commit: f9f2cd339680d0dbff1812e64c5082ca97a34771
+source-git-commit: fbcd5ae83c024d672d608d5f5aefc6a4252ec8c0
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 >title="Åtkomsthanteringsetiketter"
 >abstract="Du kan begränsa åtkomsten till den här kampanjen baserat på åtkomstetiketter. Om du vill lägga till en åtkomstbegränsning bläddrar du till knappen **Hantera åtkomst** högst upp på den här sidan. Se till att endast markera etiketter som du har behörighet för."
 
-Med åtkomstkontrollen på objektnivå (OLAC) kan du definiera behörigheter för att hantera dataåtkomst till ett urval av objekt:
+Med OLAC-funktionen (Object level access control) kan du definiera behörigheter för att hantera dataåtkomst till ett urval av objekt:
 
 * Resa
 * Campaign
@@ -36,15 +36,13 @@ Med åtkomstkontrollen på objektnivå (OLAC) kan du definiera behörigheter fö
 * Kanalkonfiguration
 * IP-värmerapport
 
-Med standardiserade etiketter kan ni kategorisera målgrupper utifrån deras styrnings- och åtkomstkontrollprinciper. En målgruppsetikett kan till exempel användas för att hindra ett varumärke från att rikta sig till medlemmar av en viss målgrupp med annonsering på webbplatsen.
-
 Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
 
 ## Förhandskrav {#prereq-labels}
 
 Om du vill kunna [skapa etiketter](#create-labels) måste du vara en del av en roll med behörigheten **[!UICONTROL Manage usage labels]**.
 
-Om du vill kunna [tilldela etiketter](#assign-labels) måste du vara en del av en roll med behörigheten **Hantera**, dvs. [!DNL Manage journeys], [!DNL Manage Campaigns] eller [!DNL Manage decisions]. Utan den här behörigheten kommer knappen **[!UICONTROL Manage access]** att vara nedtonad.
+Om du vill kunna [tilldela etiketter](#assign-labels) måste du vara en del av en roll med behörigheten **Hantera**, dvs. [!DNL Manage journeys], [!DNL Manage Campaigns] eller [!DNL Manage decisions]. Utan den här behörigheten är knappen **[!UICONTROL Manage access]** nedtonad.
 
 Läs mer om behörigheter i [det här avsnittet](../administration/permissions.md).
 

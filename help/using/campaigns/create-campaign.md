@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: f9f2cd339680d0dbff1812e64c5082ca97a34771
+source-git-commit: fbcd5ae83c024d672d608d5f5aefc6a4252ec8c0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 3%
 
 ---
 
@@ -34,29 +34,40 @@ Om du vill skapa en ny kampanj öppnar du menyn **[!UICONTROL Campaigns]** och k
 >title="Kampanjtyp"
 >abstract="**Schemalagda kampanjer** körs omedelbart eller på ett angivet datum och är avsedda att skicka meddelanden av marknadsföringstyp. **API-utlösta** kampanjer körs med ett API-anrop. Syftet är att skicka antingen marknadsföringsmeddelanden (reklammeddelanden som kräver användarens samtycke) eller transaktionsmeddelanden (icke-kommersiella meddelanden, som också kan skickas till profiler som inte längre prenumererar i specifika sammanhang)."
 
-1. Välj den typ av kampanj som du vill köra
+När du skapar en ny kampanj måste du först välja kampanjtyp. Det finns tre typer av kampanjer:
 
-   * **[!UICONTROL Scheduled - Marketing]**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföringsmeddelanden**. De konfigureras och körs från användargränssnittet.
+1. **[!UICONTROL Scheduled - Marketing]** - Dessa kampanjer körs omedelbart eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföringsmeddelanden** eller skapa inkommande åtgärder. De konfigureras och körs från användargränssnittet.
 
-   * **[!UICONTROL API-triggered - Marketing/Transactional]**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marketing** - eller **transactional** -meddelanden, d.v.s. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+1. **[!UICONTROL API-triggered - Marketing]** - Dessa kampanjer körs med ett API-anrop. Välj den här typen av kampanj för att skicka personaliserad marknadskommunikation till målgrupper.  [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
+
+1. **[!UICONTROL API-triggered - Transactional]** - Samma som för API-utlösta - marknadsföringskampanjer körs de här kampanjerna med ett API-anrop. API-utlösta transaktionskampanjer syftar till att skicka **transaktionsmeddelanden**, d.v.s. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, kundvagn, osv.  [Lär dig hur du utlöser en kampanj med API:er](api-triggered-campaigns.md)
 
    ![](assets/create-campaign-modal.png)
 
-1. Klicka på **[!UICONTROL Create]** för att skapa kampanjen.
-
 ## Definiera kampanjegenskaperna {#create}
+
+När kampanjen har skapats måste du definiera dess egenskaper. Följ stegen nedan:
 
 1. Ange kampanjens namn och en beskrivning i avsnittet **[!UICONTROL Properties]**.
 
    <!--To test the content of your message, toggle the **[!UICONTROL Content experiment]** option on. This allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.[Learn more about content experiment](../content-management/content-experiment.md).-->
 
-1. Använd fältet **Taggar** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
+1. (valfritt) Använd fältet **Taggar** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
 
-1. Du kan begränsa åtkomsten till den här kampanjen baserat på åtkomstetiketter. Om du vill lägga till en åtkomstbegränsning bläddrar du till knappen **[!UICONTROL Manage access]** högst upp på sidan. Se till att endast markera etiketter som du har behörighet för. [Läs mer om åtkomstkontroll på objektnivå](../administration/object-based-access.md).
+1. (valfritt) Du kan begränsa åtkomsten till den här kampanjen baserat på åtkomstetiketter. Om du vill lägga till en åtkomstbegränsning bläddrar du till knappen **[!UICONTROL Manage access]** högst upp på sidan. Se till att endast markera etiketter som du har behörighet för. [Läs mer om åtkomstkontroll på objektnivå](../administration/object-based-access.md).
 
 ## Definiera kampanjmålgruppen {#audience}
 
-En målgrupp är en uppsättning personer som har liknande beteenden och/eller egenskaper. Så här definierar du målgruppen för kampanjen:
+Nu kan ni välja målgrupp för er kampanj. En målgrupp är en uppsättning personer som har liknande beteenden och/eller egenskaper.
+
+>[!IMPORTANT]
+>
+>* Användning av målgrupper och attribut från [målgruppskomposition](../audience/get-started-audience-orchestration.md) är för närvarande inte tillgängligt för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
+>
+>* För API-utlösta kampanjer måste målgruppen anges via API-anrop.
+
+
+Så här definierar du målgruppen för en schemalagd marknadsföringskampanj:
 
 1. Klicka på knappen **[!UICONTROL Select audience]** i avsnittet **Målgrupp** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. Läs mer om målgrupper i [det här avsnittet](../audience/about-audiences.md).
 
@@ -70,18 +81,15 @@ En målgrupp är en uppsättning personer som har liknande beteenden och/eller e
 
    <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 
->[!IMPORTANT]
->
->* Användning av målgrupper och attribut från [målgruppskomposition](../audience/get-started-audience-orchestration.md) är för närvarande inte tillgängligt för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
->
->* För API-utlösta kampanjer måste målgruppen anges via API-anrop.
 
 
 ## Skapa meddelandet och konfigurera spårning {#content}
 
-1. Markera kanalen i avsnittet **[!UICONTROL Actions]**.
+Du kan nu definiera innehållet i meddelandet. Följ stegen nedan:
 
-   Listan över tillgängliga kanaler beror på din licensmodell. För API-utlösta transaktionskampanjer är endast e-post-, SMS- och push-meddelandekanaler tillgängliga.
+1. Välj kommunikationskanalen i avsnittet **[!UICONTROL Actions]**.
+
+   Listan över tillgängliga kanaler beror på din licensmodell och tillägg. För API-utlösta kampanjer är endast e-post-, SMS- och push-meddelandekanaler tillgängliga.
 
 1. Välj kanalkonfiguration.
 
@@ -132,7 +140,7 @@ En målgrupp är en uppsättning personer som har liknande beteenden och/eller e
 
    ![](assets/create-campaign-design.png)
 
-1. I avsnittet **[!UICONTROL Content experiment]** kan du använda knappen **[!UICONTROL Create experiment]** för att testa vilket innehåll som fungerar bäst. Funktionerna för innehållsexperimenterande beskrivs i [det här avsnittet](../content-management/content-experiment.md).
+1. (valfritt) I avsnittet **[!UICONTROL Content experiment]** kan du använda knappen **[!UICONTROL Create experiment]** för att testa vilket innehåll som fungerar bäst. Funktionerna för innehållsexperimenterande beskrivs i [det här avsnittet](../content-management/content-experiment.md).
 
 1. I avsnittet **[!UICONTROL Actions tracking]** anger du om du vill spåra hur mottagarna svarar på leveransen: du kan spåra klick och/eller öppningar.
 
@@ -160,12 +168,23 @@ En målgrupp är en uppsättning personer som har liknande beteenden och/eller e
 >title="Kampanjåtgärdsutlösare"
 >abstract="Definiera en frekvens som kampanjens meddelande ska skickas med."
 
-Som standard börjar kampanjer när de har aktiverats manuellt och avslutas så snart meddelandet har skickats en gång.
+Som standard startar schemalagda kampanjer när de aktiveras manuellt och avslutas så snart meddelandet har skickats en gång.
 
-Du kan definiera hur ofta kampanjens meddelande ska skickas. Det gör du genom att använda alternativen **[!UICONTROL Action triggers]** på skärmen för att skapa kampanjer för att ange om kampanjen ska köras varje dag, varje vecka eller varje månad.
-
-Om du inte vill köra kampanjen direkt efter aktiveringen kan du ange ett datum och en tidpunkt då meddelandet ska skickas med alternativet **[!UICONTROL Campaign start]**. Med alternativet **[!UICONTROL Campaign end]** kan du ange när en återkommande kampanj ska sluta köras.
+Om du inte vill köra kampanjen direkt efter aktiveringen kan du ange ett datum och en tidpunkt då meddelandet ska skickas med alternativet **[!UICONTROL Campaign start]**. Med alternativet **[!UICONTROL Campaign end]** kan du ange när en kampanj ska sluta köras.
 
 ![](assets/create-campaign-schedule.png)
 
-När kampanjen är klar kan ni granska och aktivera den. [Läs mer](review-activate-campaign.md)
+För e-post-, SMS- och push-meddelandekampanjer kan du definiera en frekvens som kampanjens meddelande ska skickas med. Det gör du genom att använda alternativen **[!UICONTROL Action triggers]** på skärmen för att skapa kampanjer för att ange om kampanjen ska köras varje dag, varje vecka eller varje månad.
+
+## Andra inställningar {#settings}
+
+Vissa inställningar är specifika för den kommunikationskanal som har valts för kampanjen eller används för särskilda användningsfall. De beskrivs nedan.
+
+* För e-postmeddelanden kan ni skapa specifika aktiveringskampanjer för IP-warmup-plan. Läs mer i [det här avsnittet](../configuration/ip-warmup-campaign.md).
+* För webben, appar och kodbaserade kanaler kan ni tilldela kampanjens prioritetspoäng. Läs mer i [det här avsnittet](../conflict-prioritization/priority-scores.md).
+* För innehållskortkampanjer kan du aktivera ytterligare leveransregler för att välja vilka händelser och villkor som utlöser meddelandet. Läs mer i [det här avsnittet](../content-card/create-content-card.md).
+* För meddelanden i programmet kan du använda knappen **[!UICONTROL Edit triggers]** för att välja händelser och villkor som utlöser meddelandet. Läs mer i [det här avsnittet](../in-app/create-in-app.md).
+
+## Nästa steg {#next}
+
+När kampanjens konfiguration och innehåll är klart kan du granska och aktivera det. [Läs mer](review-activate-campaign.md)

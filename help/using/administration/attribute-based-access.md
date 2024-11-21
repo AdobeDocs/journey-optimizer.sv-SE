@@ -9,16 +9,16 @@ role: Admin,Leader
 level: Intermediate
 keywords: abac, attribute, authorized, data, access, sensitive, assets
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
-source-git-commit: 72bd00dedb943604b2fa85f7173cd967c3cbe5c4
+source-git-commit: fbcd5ae83c024d672d608d5f5aefc6a4252ec8c0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 0%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
 # Attributbaserad åtkomstkontroll {#attribute-based-access}
 
-Med attributbaserad åtkomstkontroll (ABAC) kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare. Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
+Med den attributbaserade åtkomstkontrollen (ABAC) kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare. Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
 
 I Adobe Journey Optimizer kan du med ABAC skydda data och ge specifik åtkomst till specifika fältelement, inklusive XDM-scheman (Experience Data Model), profilattribut och målgrupper.
 

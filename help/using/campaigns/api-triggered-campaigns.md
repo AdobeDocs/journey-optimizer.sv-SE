@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: fbcd5ae83c024d672d608d5f5aefc6a4252ec8c0
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Om API-utlösta kampanjer {#about}
 
-Med [!DNL Journey Optimizer] kan du skapa kampanjer och sedan anropa dem från ett externt system baserat på användarutlösaren med hjälp av [REST API:t för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). På så sätt kan ni täcka olika behov av marknadsföring och transaktionsmeddelanden, som lösenordsåterställningar, OTP-token, bland annat.
+Med [!DNL Journey Optimizer] kan du skapa kampanjer och sedan köra dem från ett externt system baserat på användarutlösare med hjälp av [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution). På så sätt kan ni täcka olika behov av marknadsföring och transaktionsmeddelanden, som lösenordsåterställningar, OTP-token, bland annat.
 
 För att göra detta måste du först skapa en API-utlöst kampanj i Journey Optimizer och sedan starta körningen via ett API-anrop.
 
