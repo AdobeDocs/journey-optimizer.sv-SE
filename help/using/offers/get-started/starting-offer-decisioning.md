@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: 2ca6659319482db09efd86ded418b151a022442c
+source-git-commit: c9efdf634831822e670257f6ee738310081a96fb
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 49%
+source-wordcount: '931'
+ht-degree: 47%
 
 ---
 
@@ -34,10 +34,11 @@ Några fördelar:
 
 ➡️ [Läs mer om beslutshantering i dessa videofilmer](#video)
 
+## Måste läsas {#must-read}
 
->[!NOTE]
->
->Om du är en [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"}-användare som använder **Offer decisioning** -programmet gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
+* Beslutshantering har för närvarande inte stöd för dessa funktioner: åtkomstkontroll på objektnivå, åtkomstkontroll på fältnivå och efterlevnadsprincip. Om du vill använda någon av dem bör du överväga att använda funktionen [Beslutsfattning](../../experience-decisioning/gs-experience-decisioning.md) i Journey Optimizer.
+
+* Om du är en [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"}-användare som använder **Offer decisioning** -programmet gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
 
 ## Om erbjudanden och beslut {#about-offers-and-decisions}
 
