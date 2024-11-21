@@ -9,23 +9,18 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: fbcd5ae83c024d672d608d5f5aefc6a4252ec8c0
+source-git-commit: d39d46ad5376bb8418331f788e4287e21e4322a4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1183'
 ht-degree: 3%
 
 ---
 
 # Skapa en kampanj {#create-campaign}
 
-Om du vill skapa en ny kampanj öppnar du menyn **[!UICONTROL Campaigns]** och klickar sedan på **[!UICONTROL Create campaign]**. Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate)
+Om du vill skapa en ny kampanj bläddrar du till menyn **[!UICONTROL Campaigns]** till vänster och klickar sedan på **[!UICONTROL Create campaign]**. Du kan också duplicera en befintlig livekampanj och skapa en ny. [Lär dig hur](modify-stop-campaign.md#duplicate).
 
->[!NOTE]
->
->Innan du skapar en ny kampanj måste du se till att du har en kanalkonfiguration (dvs. meddelandeyta) och en Adobe Experience Platform-målgrupp klar att använda. Läs mer i följande avsnitt:
->
->* [Skapa kanalkonfigurationer](../configuration/channel-surfaces.md)
->* [Kom igång med målgrupper](../audience/about-audiences.md)
+Läs igenom kampanjkraven i [den här sidan](get-started-with-campaigns.md#before-starting-campaign-prerequisites) innan du startar.
 
 ## Välj kampanjtyp {#campaigntype}
 
@@ -82,12 +77,11 @@ Så här definierar du målgruppen för en schemalagd marknadsföringskampanj:
    <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
 
 
+## Välj kanalen {#channel}
 
-## Skapa meddelandet och konfigurera spårning {#content}
+Nu kan du välja kanalen och dess konfiguration. Följ stegen nedan:
 
-Du kan nu definiera innehållet i meddelandet. Följ stegen nedan:
-
-1. Välj kommunikationskanalen i avsnittet **[!UICONTROL Actions]**.
+1. Välj kommunikationskanalen i avsnittet **[!UICONTROL Action]**.
 
    Listan över tillgängliga kanaler beror på din licensmodell och tillägg. För API-utlösta kampanjer är endast e-post-, SMS- och push-meddelandekanaler tillgängliga.
 
@@ -103,42 +97,40 @@ Du kan nu definiera innehållet i meddelandet. Följ stegen nedan:
    >
    >Om du skapar en kampanj för push-meddelanden kan du aktivera **[!UICONTROL Rapid delivery mode]**, som är ett Journey Optimizer-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer. [Läs mer](../push/create-push.md#rapid-delivery)
 
-1. Klicka på knappen **[!UICONTROL Edit content]** för att skapa och utforma meddelandet. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
+## Redigera innehållet {#content}
 
-   <table style="table-layout:fixed">
-    <tr style="border: 0;">
-    <td>
-    <a href="../email/create-email.md">
-    <img alt="Lead" src="../assets/do-not-localize/email.jpg">
-    </a>
-    <div><a href="../email/create-email.md"><strong>Skapa e-post</strong>
-    </div>
-    <p>
-    </td>
-    <td>
-    <a href="../push/create-push.md">
-      <img alt="Sällan" src="../assets/do-not-localize/push.jpg">
-    </a>
-    <div>
-    <a href="../push/create-push.md"><strong>Skapa push-meddelanden</strong></a>
-    </div>
-    <p>
-    </td>
-    <td>
-    <a href="../sms/create-sms.md">
-      <img alt="Validering" src="../assets/do-not-localize/sms.jpg">
-    </a>
-    <div>
-    <a href="../sms/create-sms.md"><strong>Skapa SMS-meddelanden</strong></a>
-    </div>
-    <p>
-    </td>
-    </tr>
-    </table>
+Du kan nu definiera innehållet i meddelandet från knappen **[!UICONTROL Edit content]**. Hur du skapar innehåll beror på vilken kanal du har valt.
 
-   När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../content-management/preview-test.md). Klicka på vänsterpilen om du vill gå tillbaka till skärmen där kampanjen skapades.
+Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
 
-   ![](assets/create-campaign-design.png)
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../email/create-email.md"><img alt="e-post" src="../channels/assets/do-not-localize/email.png"></a>
+<div align="center"><a href="../email/create-email.md"><strong>E-post</strong></a></div></td>
+<td><a href="../sms/create-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><a href="../sms/create-sms.md"><strong>SMS</strong></a></div></td>
+<td><a href="../push/create-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
+<div align="center"><a href="../push/create-push.md"><strong>Push-meddelande</strong></a></div></td>
+<td><a href="../direct-mail/create-direct-mail.md"><img alt="direktreklam" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
+<div align="center"><a href="../direct-mail/create-direct-mail.md"><strong>Direktutskick</strong></a></div></td>
+</tr></table>
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../in-app/create-in-app.md"><img alt="i appen" src="../channels/assets/do-not-localize/inapp.jpg"></a>
+<div align="center"><a href="../in-app/create-in-app.md"><strong>I appen</strong></a></div></td>
+<td><a href="../web/create-web.md"><img alt="webb" src="../channels/assets/do-not-localize/web.jpg"></a>
+<div align="center"><a href="../web/create-web.md"><strong>Webb</strong></a></div></td>
+<td><a href="../code-based/create-code-based.md"><img alt="kodbaserad upplevelse" src="../channels/assets/do-not-localize/code.png"></a>
+<div align="center"><a href="../code-based/create-code-based.md"><strong>Kodbaserad upplevelse</strong></a></div></td>
+<td><a href="../content-card/create-content-card.md"><img alt="innehållskort" src="../channels/assets/do-not-localize/cards.png"></a>
+<div align="center"><a href="../content-card/create-content-card.md"><strong>Innehållskort</strong></a></div></td>
+</tr></table>
+
+När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../content-management/preview-test.md). Klicka på vänsterpilen om du vill gå tillbaka till skärmen där kampanjen skapades.
+
+![](assets/create-campaign-design.png)
+
+Förutom själva meddelandeinnehållet kan du konfigurera följande inställningar:
 
 1. (valfritt) I avsnittet **[!UICONTROL Content experiment]** kan du använda knappen **[!UICONTROL Create experiment]** för att testa vilket innehåll som fungerar bäst. Funktionerna för innehållsexperimenterande beskrivs i [det här avsnittet](../content-management/content-experiment.md).
 
