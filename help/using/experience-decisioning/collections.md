@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 099d1439-34f7-47fe-9181-0e9ce2032a01
-source-git-commit: c179d81e664fea2b03bf734cafaf287709fa10a0
+source-git-commit: 6b0735f619379e01e87012ba4300c0ec41334fd4
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 1%
@@ -34,11 +34,11 @@ Med samlingar kan du kategorisera och gruppera dina beslutsobjekt enligt dina ö
 
 Anta att du har lagt till ett anpassat kategoriattribut i beslutsobjektens katalogschema. På så sätt kan du skapa en samling som innehåller alla beslutsobjekt med värdet Yoga i attributet Kategori.
 
-Listan med samlingar finns på menyn **[!UICONTROL  Catalogs]**.
+Listan med samlingar finns på menyn **[!UICONTROL Catalogs]**.
 
 Så här skapar du en samling:
 
-1. Navigera till **[!UICONTROL  Catalogs]** > **[!UICONTROL Collections]** och klicka på **[!UICONTROL Create collection]**.
+1. Navigera till **[!UICONTROL Catalogs]** > **[!UICONTROL Collections]** och klicka på **[!UICONTROL Create collection]**.
 1. Ange ett namn och en beskrivning för samlingen.
 1. Lägg till en eller flera regler för att bestämma vilka objekt som ska inkluderas i samlingen. Så här gör du:
 

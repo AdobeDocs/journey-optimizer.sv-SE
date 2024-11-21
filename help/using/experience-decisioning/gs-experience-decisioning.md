@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: c179d81e664fea2b03bf734cafaf287709fa10a0
+source-git-commit: 6b0735f619379e01e87012ba4300c0ec41334fd4
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -69,14 +69,28 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
 1. **Konfigurera anpassade attribut**: Anpassa objektkatalogen efter dina specifika krav genom att konfigurera anpassade attribut i katalogschemat.
 
+   ➡️ [Lär dig konfigurera objektkatalogen](catalogs.md)
+
 1. **Skapa beslutsobjekt** som ska visas för målgruppen.
+
+   ➡️ [Lär dig skapa avgörande objekt](items.md) ([API-dokumentation](api-reference/decisions-items/create.md))
 
 1. **Ordna med samlingar**: Använd samlingar för att kategorisera beslutsobjekt baserat på attributbaserade regler. Införliva samlingar i era urvalsstrategier för att avgöra vilken samling av beslutsobjekt som ska övervägas.
 
+   ➡️ [Lär dig hantera objektsamlingar](collections.md) ([API-dokumentation](api-reference/items-collections/create.md))
+
 1. **Skapa beslutsregler**: Beslutsregler används i beslutsobjekt och/eller urvalsstrategier för att avgöra till vilka ett beslutsobjekt kan visas.
+
+   ➡️ [Lär dig skapa beslutsregler](rules.md)
 
 1. **Implementera rangordningsmetoder**: Skapa rangordningsmetoder och tillämpa dem inom beslutsstrategier för att fastställa prioritetsordningen för val av beslutsobjekt.
 
+   ➡️ [Lär dig hur du skapar rankningsmetoder](ranking.md)
+
 1. **Skapa urvalsstrategier**: Bygg urvalsstrategier som utnyttjar samlingar, beslutsregler och rangordningsmetoder för att identifiera de beslutsobjekt som är lämpliga att visa för profiler.
 
-1. **Bädda in en beslutspolicy i din kodbaserade kampanj**: Beslutspolicyer kombinerar flera urvalsstrategier för att bestämma vilka valbara beslutsposter som ska visas för den avsedda målgruppen.
+   ➡️ [Lär dig skapa urvalsstrategier](selection-strategies.md) ([API-dokumentation](api-reference/selection-strategies/create.md))
+
+1. **Skapa en beslutspolicy och bädda in den i din kodbaserade kampanj**: Beslutspolicyer kombinerar flera urvalsstrategier för att bestämma vilka valbara beslutsposter som ska visas för den avsedda målgruppen.
+
+   ➡️ [Lär dig hur du arbetar med beslutsprofiler](create-decision.md)
