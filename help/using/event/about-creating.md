@@ -11,8 +11,8 @@ keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
 source-git-commit: f9f2cd339680d0dbff1812e64c5082ca97a34771
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
