@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: fec6b15db9f8e6b2a07b55bc9e8fc4d9cb0d73d7
+source-git-commit: f9f2cd339680d0dbff1812e64c5082ca97a34771
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 6%
 
 ---
 
@@ -52,12 +52,13 @@ I listorna kan du utföra grundläggande åtgärder för varje element. Du kan t
 >title="Taggar"
 >abstract="I det här fältet kan du tilldela enhetliga Adobe Experience Platform-taggar till din kampanj. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan."
 
-Med Adobe Experience Platform [enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html) kan du enkelt klassificera dina Journey Optimizer-resor och -kampanjer för att förbättra sökningen från listorna.
+Med Adobe Experience Platform [enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html) kan du enkelt klassificera dina Journey Optimizer-objekt och förbättra sökningen från listorna.
 
 ![](../rn/assets/do-not-localize/campaigns-tag.gif)
 
+Genom att lägga till meningsfulla taggar till målgrupper i Journey Optimizer kan ni senare filtrera och söka efter målgrupper enklare. Taggar kan även användas för att ordna målgrupper i relevanta, sökbara mappar, skapa personaliserade erbjudanden och upplevelser och använda dem i regler för upplevelsebeslut.
 
-### Lägga till taggar i ett objekt
+### Lägga till taggar i ett objekt {#add-tags}
 
 I fältet **[!UICONTROL Tags]** kan du definiera taggar för objektet. Taggar är tillgängliga för följande objekt:
 
@@ -79,7 +80,7 @@ Du kan antingen markera en befintlig tagg eller skapa en ny. Följ stegen nedan 
    >
    > Taggar är inte skiftlägeskänsliga.
 
-1. Om taggen som du söker efter inte är tillgänglig klickar du på **[!UICONTROL Create ""]** för att definiera en ny. Den läggs automatiskt till i det aktuella objektet och blir tillgänglig för alla andra objekt.
+1. Om taggen som du söker efter inte är tillgänglig klickar du på **[!UICONTROL Create ""]** för att definiera en ny tagg. Den läggs automatiskt till i det aktuella objektet och blir tillgänglig för alla andra objekt.
 
    ![](assets/tags4.png)
 
@@ -89,7 +90,7 @@ Du kan antingen markera en befintlig tagg eller skapa en ny. Följ stegen nedan 
 > 
 > Om du duplicerar eller skapar en ny version av ett objekt behålls taggarna.
 
-### Filtrera på taggar
+### Filtrera på taggar {#filter-on-tags}
 
 I varje objektlista visas en dedikerad kolumn så att du enkelt kan se dina taggar.
 
@@ -101,7 +102,7 @@ Du kan lägga till eller ta bort taggar från alla typer av resor och kampanjer 
 
 ![](assets/tags3.png)
 
-### Hantera taggar
+### Hantera taggar {#manage-tags}
 
 Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **[!UICONTROL Tags]** under **[!UICONTROL ADMINISTRATION]**. Läs mer om tagghantering i [dokumentationen för enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/ui/managing-tags.html).
 

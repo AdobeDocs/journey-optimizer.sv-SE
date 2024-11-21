@@ -9,14 +9,16 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: f9f2cd339680d0dbff1812e64c5082ca97a34771
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '959'
 ht-degree: 1%
 
 ---
 
 # Skapa en kampanj {#create-campaign}
+
+Om du vill skapa en ny kampanj öppnar du menyn **[!UICONTROL Campaigns]** och klickar sedan på **[!UICONTROL Create campaign]**. Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate)
 
 >[!NOTE]
 >
@@ -24,8 +26,6 @@ ht-degree: 1%
 >
 >* [Skapa kanalkonfigurationer](../configuration/channel-surfaces.md)
 >* [Kom igång med målgrupper](../audience/about-audiences.md)
-
-Om du vill skapa en ny kampanj öppnar du menyn **[!UICONTROL Campaigns]** och klickar sedan på **[!UICONTROL Create campaign]**. Du kan också duplicera en befintlig livekampanj och skapa en ny. [Läs mer](modify-stop-campaign.md#duplicate)
 
 ## Välj kampanjtyp {#campaigntype}
 
@@ -46,37 +46,44 @@ Om du vill skapa en ny kampanj öppnar du menyn **[!UICONTROL Campaigns]** och k
 
 ## Definiera kampanjegenskaperna {#create}
 
-1. I avsnittet **[!UICONTROL Properties]** anger du ett namn och en beskrivning för kampanjen.
+1. Ange kampanjens namn och en beskrivning i avsnittet **[!UICONTROL Properties]**.
 
    <!--To test the content of your message, toggle the **[!UICONTROL Content experiment]** option on. This allows you to test multiple variables of a delivery on populations samples, in order to define which treatment has the biggest impact on the targeted population.[Learn more about content experiment](../content-management/content-experiment.md).-->
 
-1. I fältet **Taggar** kan du tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
+1. Använd fältet **Taggar** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
 
-1. Klicka på knappen **[!UICONTROL Manage access]** om du vill tilldela etiketter för anpassad eller viktig dataanvändning till kampanjen. [Läs mer om OLA (Object Level Access Control)](../administration/object-based-access.md)
+1. Du kan begränsa åtkomsten till den här kampanjen baserat på åtkomstetiketter. Om du vill lägga till en åtkomstbegränsning bläddrar du till knappen **[!UICONTROL Manage access]** högst upp på sidan. Se till att endast markera etiketter som du har behörighet för. [Läs mer om åtkomstkontroll på objektnivå](../administration/object-based-access.md).
 
 ## Definiera kampanjmålgruppen {#audience}
 
-Definiera målgruppen för kampanjen genom att följa dessa steg:
+En målgrupp är en uppsättning personer som har liknande beteenden och/eller egenskaper. Så här definierar du målgruppen för kampanjen:
 
->[!IMPORTANT]
->
->Användning av målgrupper och attribut från [målgruppskomposition](../audience/get-started-audience-orchestration.md) är för närvarande inte tillgängligt för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
->
->För API-utlösta kampanjer måste målgruppen anges via API-anrop.
+1. Klicka på knappen **[!UICONTROL Select audience]** i avsnittet **Målgrupp** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. Läs mer om målgrupper i [det här avsnittet](../audience/about-audiences.md).
 
-1. Klicka på knappen **[!UICONTROL Select audience]** i avsnittet **Målgrupp** för att visa en lista över tillgängliga Adobe Experience Platform-målgrupper. [Läs mer om målgrupper](../audience/about-audiences.md)
+1. I fältet **[!UICONTROL Identity type]** väljer du vilken typ av nyckel som ska användas för att identifiera personer från den valda målgruppen. Du kan antingen skapa en befintlig identitetstyp eller skapa en ny med hjälp av Adobe Experience Platform identitetstjänst. Standardidentitetsnamnutrymmen visas på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#standard){target="_blank"}.
 
-1. I fältet **[!UICONTROL Identity namespace]** väljer du det namnutrymme som ska användas för att identifiera individerna från det valda segmentet.
-
-   Individer som tillhör ett segment som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kommer inte att omfattas av kampanjen. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace)
+   Endast en identitetstyp tillåts per kampanj. Individer som tillhör ett segment som inte har den valda identitetstypen bland sina olika identiteter kan inte omfattas av kampanjen.
 
    ![](assets/create-campaign-namespace.png)
 
+   Läs mer om identitetstyper och namnutrymmen i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.
+
    <!--If you are are creating an API-triggered campaign, the **[!UICONTROL cURL request]** section allows you to retrieve the **[!UICONTROL Campaign ID]** to use in the API call. [Learn more](api-triggered-campaigns.md)-->
+
+>[!IMPORTANT]
+>
+>* Användning av målgrupper och attribut från [målgruppskomposition](../audience/get-started-audience-orchestration.md) är för närvarande inte tillgängligt för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
+>
+>* För API-utlösta kampanjer måste målgruppen anges via API-anrop.
+
 
 ## Skapa meddelandet och konfigurera spårning {#content}
 
-1. I avsnittet **[!UICONTROL Actions]** väljer eller skapar du en ny konfiguration.
+1. Markera kanalen i avsnittet **[!UICONTROL Actions]**.
+
+   Listan över tillgängliga kanaler beror på din licensmodell. För API-utlösta transaktionskampanjer är endast e-post-, SMS- och push-meddelandekanaler tillgängliga.
+
+1. Välj kanalkonfiguration.
 
    En konfiguration definieras av en [systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Läs mer](../configuration/channel-surfaces.md).
 
@@ -121,11 +128,11 @@ Definiera målgruppen för kampanjen genom att följa dessa steg:
     </tr>
     </table>
 
-1. När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../content-management/preview-test.md).
-
-1. Klicka på pilen för att gå tillbaka till skärmen för att skapa kampanjer.
+   När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../content-management/preview-test.md). Klicka på vänsterpilen om du vill gå tillbaka till skärmen där kampanjen skapades.
 
    ![](assets/create-campaign-design.png)
+
+1. I avsnittet **[!UICONTROL Content experiment]** kan du använda knappen **[!UICONTROL Create experiment]** för att testa vilket innehåll som fungerar bäst. Funktionerna för innehållsexperimenterande beskrivs i [det här avsnittet](../content-management/content-experiment.md).
 
 1. I avsnittet **[!UICONTROL Actions tracking]** anger du om du vill spåra hur mottagarna svarar på leveransen: du kan spåra klick och/eller öppningar.
 
@@ -136,7 +143,7 @@ Definiera målgruppen för kampanjen genom att följa dessa steg:
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule"
 >title="Kampanjschema"
->abstract="Som standard börjar kampanjer vid manuell aktivering och avslutas omedelbart efter att meddelandet har skickats en gång. Du kan dock ange ett specifikt datum och en viss tid för när meddelandet ska skickas. Dessutom kan du ange ett slutdatum för återkommande eller API-utlösta kampanjer. I åtgärdsutlösarna kan du även konfigurera meddelandets sändningsfrekvens så att den passar dina inställningar."
+>abstract="Som standard börjar kampanjer vid manuell aktivering och avslutas omedelbart efter att meddelandet har skickats en gång. Du kan ange ett specifikt datum och en speciell tid för meddelandet som ska skickas. Dessutom kan du ange ett slutdatum för återkommande eller API-utlösta kampanjer. I åtgärdsutlösarna kan du även konfigurera meddelandets sändningsfrekvens så att den passar dina inställningar."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule_start"
@@ -161,4 +168,4 @@ Om du inte vill köra kampanjen direkt efter aktiveringen kan du ange ett datum 
 
 ![](assets/create-campaign-schedule.png)
 
-När kampanjen är klar kan ni granska och publicera den. [Läs mer](review-activate-campaign.md)
+När kampanjen är klar kan ni granska och aktivera den. [Läs mer](review-activate-campaign.md)

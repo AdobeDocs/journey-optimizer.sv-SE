@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: ca80a7bc1fbf819d27db2d9518832c9345cdaa18
+source-git-commit: f9f2cd339680d0dbff1812e64c5082ca97a34771
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 9%
+source-wordcount: '1593'
+ht-degree: 7%
 
 ---
 
@@ -73,9 +73,9 @@ Nedan följer de första stegen för att konfigurera en ny händelse:
    >
    >Om du ändrar schemat med nya uppräkningsvärden efter att du har skapat händelsen måste du följa de här stegen för att tillämpa ändringarna på den befintliga händelsen: avmarkera uppräkningsfältet från händelsefälten, bekräfta valet och sedan markera uppräkningsfältet igen. Det nya uppräkningsvärdet visas nu.
 
-1. Lägg till en namnrymd. Det här steget är valfritt men rekommenderas eftersom du kan lägga till en namnrymd vilket innebär att du kan utnyttja information som lagras i realtidskundprofilen. Denna definierar vilken typ av nyckel händelsen har. Se [det här avsnittet](../event/about-creating.md#select-the-namespace).
+1. Lägg till en identitetstyp. Det här steget är valfritt, men rekommenderas eftersom du kan lägga till en identitetstyp för att utnyttja information som lagras i kundprofiltjänsten i realtid. Denna definierar vilken typ av nyckel händelsen har. Läs mer i [det här avsnittet](../event/about-creating.md#select-the-namespace).
 
-1. Definiera profilidentifieraren: välj ett fält bland dina nyttolastfält eller definiera en formel för att identifiera den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en namnrymd. Resor väljer nyckeln som ska motsvara namnutrymmet (om du t.ex. väljer ett e-postnamnutrymme markeras e-postnyckeln). Se [det här avsnittet](../event/about-creating.md#define-the-event-key).
+1. Definiera profilidentifieraren: välj ett fält bland dina nyttolastfält eller definiera en formel för att identifiera den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en identitetstyp. Resor väljer nyckeln som ska motsvara identitetstypen (om du t.ex. väljer en e-postadresstyp väljs e-postnyckeln). Läs mer i [det här avsnittet](../event/about-creating.md#define-the-event-key).
 
    ![](assets/jo-event7.png)
 
@@ -111,32 +111,32 @@ Nyttolastdefinitionen gör att du kan välja vilken information systemet förvä
 
    ![](assets/journey12.png)
 
-## Markera namnutrymmet {#select-the-namespace}
+## Välj identitetstyp {#select-the-namespace}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_namespace"
->title="Identitetsnamnutrymme"
+>title="Identitetstyp"
 >abstract="Välj nyckeln för att identifiera kundprofilen som är kopplad till händelsen."
 
-Med namnutrymmet kan du definiera vilken typ av nyckel som används för att identifiera den person som är associerad med händelsen. Dess konfiguration är valfri. Det krävs om du i dina resor vill hämta ytterligare information som kommer från [kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}. Namnutrymmesdefinitionen behövs inte om du bara använder data från ett tredjepartssystem via en anpassad datakälla.
+Med identitetstypen (som tidigare kallades &#39;namnutrymme&#39;) kan du definiera vilken typ av nyckel som används för att identifiera den person som är associerad med händelsen. Dess konfiguration är valfri. Det krävs om du i dina resor vill hämta ytterligare information som kommer från [kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}. Identitetstypdefinitionen behövs inte om du bara använder data från ett tredjepartssystem via en anpassad datakälla.
 
-Du kan antingen använda en av de fördefinierade eller skapa en ny med hjälp av tjänsten Identity Namespace. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.
+Du kan antingen skapa en befintlig identitetstyp eller skapa en ny med hjälp av Adobe Experience Platform identitetstjänst. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.
 
-Om du väljer ett schema som har en primär identitet fylls fälten **[!UICONTROL Profiler identifier]** och **[!UICONTROL Namespace]** i automatiskt. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du markera ett namnutrymme och nyckeln fylls i automatiskt (under fältet **[!UICONTROL Namespace]**) med _identityMap > id_.
+Om du väljer ett schema som har en primär identitet fylls fälten **[!UICONTROL Profiler identifier]** och **[!UICONTROL Identity type]** i automatiskt. Om ingen identitet har definierats väljer vi _identityMap > id_ som primärnyckel. Sedan måste du välja en identitetstyp och nyckeln fylls i i automatiskt (under fältet **[!UICONTROL Identity type]**) med _identityMap > id_.
 
 När du markerar fält taggas primära identitetsfält.
 
 ![](assets/primary-identity.png)
 
-Välj ett namnutrymme i listrutan.
+Välj en identitetstyp i listrutan.
 
 ![](assets/journey17.png)
 
-Endast ett namnutrymme tillåts per resa. Om du använder flera händelser under samma resa måste de använda samma namnutrymme. Läs [den här sidan](../building-journeys/journey.md).
+Endast en identitetstyp tillåts per resa. Om du använder flera händelser under samma resa måste de använda samma identitetstyp. Läs [den här sidan](../building-journeys/journey.md).
 
 >[!NOTE]
 >
->Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnområde för en uppslagstabell (till exempel: ProductID-namnområde för en produktsökning), är det inte tillgängligt i listrutan **Namespace**.
+>Du kan bara välja en personbaserad identitetstyp. Om du har definierat en identitetstyp för en uppslagstabell (till exempel: ProductID-identitetstyp för en produktsökning), är den inte tillgänglig i listrutan **Identitetstyp**.
 
 ## Definiera profilidentifieraren {#define-the-event-key}
 
@@ -144,7 +144,7 @@ Nyckeln är fältet, eller kombinationen av fält, som är en del av händelseny
 
 Om du vill använda data som lagras i kundprofildatabasen för Adobe i realtid måste händelsenyckeln vara den information som du har definierat som en profils identitet i [kundprofiltjänsten för realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
-Profilidentifieraren gör det möjligt för systemet att utföra avstämningen mellan händelsen och personens profil. Om du väljer ett schema som har en primär identitet fylls fälten **[!UICONTROL Profile identifier]** och **[!UICONTROL Namespace]** i automatiskt. Om ingen identitet har definierats är _identityMap > id_ primärnyckeln. Sedan måste du markera ett namnutrymme och nyckeln fylls i automatiskt med _identityMap > id_.
+Profilidentifieraren gör det möjligt för systemet att utföra avstämningen mellan händelsen och personens profil. Om du väljer ett schema som har en primär identitet fylls fälten **[!UICONTROL Profile identifier]** och **[!UICONTROL Identity type]** i automatiskt. Om ingen identitet har definierats är _identityMap > id_ primärnyckeln. Sedan måste du välja en identitetstyp och nyckeln fylls i automatiskt med _identityMap > id_.
 
 När du markerar fält taggas primära identitetsfält.
 
@@ -158,7 +158,7 @@ Om du behöver använda en annan nyckel, t.ex. ett CRM-ID eller en e-postadress,
 
 1. Välj det fält som valts som nyckel i listan över nyttolastfält.
 
-När händelsen tas emot kan nyckelns värde göra det möjligt för systemet att identifiera den person som är associerad med händelsen. Nyckeln är associerad med ett namnområde (se [det här avsnittet](../event/about-creating.md#select-the-namespace)) och kan användas för att utföra frågor på Adobe Experience Platform. Se [den här sidan](../building-journeys/about-journey-activities.md#orchestration-activities).
+När händelsen tas emot kan nyckelns värde göra det möjligt för systemet att identifiera den person som är associerad med händelsen. Nyckeln är associerad med en [identitetstyp](../event/about-creating.md#select-the-namespace) och kan användas för att utföra frågor på Adobe Experience Platform. Se [den här sidan](../building-journeys/about-journey-activities.md#orchestration-activities).
 Nyckeln används också för att kontrollera att en person befinner sig på en resa. En person kan faktiskt inte befinna sig på två olika platser på samma resa. Därför tillåter systemet inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
 
 ## Avancerad uttrycksredigerare {#adv-exp-editor}
