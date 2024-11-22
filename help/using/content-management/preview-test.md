@@ -5,9 +5,9 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
-source-git-commit: f6b158ffdde66d6e6d9d706a6b067a2746a9be1d
+source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -24,30 +24,54 @@ ht-degree: 0%
 >title="Kontrollera hur innehållet renderar"
 >abstract="När innehållet har definierats kan du förhandsgranska det och kontrollera om återgivningen är korrekt enligt den kanal du använder."
 
-## Förhandsgranska och testa innehåll {#about}
+## Förhandsgranska och testa {#about}
 
-När innehållet har definierats kan du använda testprofiler för att [förhandsgranska](preview.md) innehållet innan du skickar meddelandet. Detta är ett viktigt steg för att säkerställa att det är korrekt, men även fritt från fel, både i innehålls- och personaliseringsinställningarna.
+När innehållet har definierats kan du förhandsgranska innehållet innan du skickar meddelandet. Detta är ett viktigt steg för att säkerställa att det är korrekt, men även fritt från fel, både i innehålls- och personaliseringsinställningarna.
 
-Dessutom kan du [skicka testleveranser](proofs.md) (korrektur) av dina e-postmeddelanden till specifika mottagare eller prenumeranter för testning och validering, och [kontrollera deras återgivning](rendering.md) i vanliga dator-, mobil- och webbaserade klienter.
-
-Alla dessa åtgärder kan utföras med knappen **[!UICONTROL Simulate Content]**, som du kommer åt från redigeringsfönstret i ditt meddelande, eller från e-post- och webbdesigners för e-post- och webbkanalerna.
-
-![](../email/assets/email-preview-button.png)
+Du kan också skicka testleveranser av e-postmeddelanden till specifika mottagare eller prenumeranter för testning och validering, och kontrollera återgivningen i populära dator-, mobil- och webbaserade klienter.
 
 >[!CAUTION]
 >
 >När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalization baserat på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsexemplet](../personalization/personalization-use-case.md).
 
-➡️ [Lär dig hur du förhandsgranskar och korrektur av e-postmeddelanden i den här videon](#video-preview)
+Alla dessa åtgärder kan utföras med knappen **[!UICONTROL Simulate Content]**, som du kommer åt från redigeringsfönstret i ditt meddelande, eller från e-post- och webbdesigners för e-post- och webbkanalerna.
 
-## Förhandskrav {#prerequisites}
+![](../email/assets/email-preview-button.png)
 
-Om du vill simulera innehåll måste du ha behörigheten **[!DNL Manage Simulate Content]** i produktprofilen **[!DNL Content Library Manager]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager).
+Observera att du måste ha behörigheten **[!DNL Manage Simulate Content]** inkluderad i produktprofilen **[!DNL Content Library Manager]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager).
 
-Du måste också ha testprofiler tillgängliga för att kunna förhandsgranska dina meddelanden. [Lär dig skapa testprofiler](../audience/creating-test-profiles.md)
+## Testa med testprofiler eller exempelindata {#methods}
+
+Du kan förhandsgranska och testa ditt innehåll med:
+
+* **Testprofiler**
+
+  Använd testprofiler för att förhandsgranska ditt innehåll, skicka e-postkorrektur och kontrollera e-poståtergivningen. Om du har lagt till anpassade fält kan du kontrollera hur de visas med testprofildata.
+
+  ➡️ [Välj testprofiler](test-profiles.md)
+
+  ➡️ [Förhandsgranska ditt innehåll med testprofiler](preview.md)
+
+  ➡️ [Skicka e-postkorrektur](proofs.md)
+
+  ➡️ [Kontrollera e-poståtergivning](rendering.md)
+
+  ➡️ [Lär dig hur du förhandsgranskar och korrektur av e-postmeddelanden i den här videon](#video-preview)
+
+* **Exempelindata**
+
+  Med [!DNL Journey optimizer] kan du testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt.
+
+  Alla profilattribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.
+
+  ➡️ [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
+
+  >[!NOTE]
+  >
+  >Den här funktionen är för närvarande tillgänglig för alla kunder som en offentlig betaversion av enbart meddelandekanalerna för e-post, SMS och push.
 
 ## Instruktionsvideo {#video-preview}
 
-Lär dig hur du testar e-poståtergivning i olika inkorgar, hur du förhandsgranskar anpassade e-postmeddelanden mot testprofiler och skickar korrektur.
+Lär dig hur du använder testprofiler för att testa e-poståtergivning i inkorgar, förhandsgranska dina personaliserade e-postmeddelanden mot testprofiler och skicka korrektur.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425026?quality=12)

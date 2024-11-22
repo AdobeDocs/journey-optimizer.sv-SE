@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '775'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
 1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för konfiguration av resan för att konfigurera push-innehållet. [Designa ett push-meddelande](design-push.md)
 
-1. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet.
+1. När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet.
 
 1. När din push-funktion är klar slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) för att skicka den.
 
@@ -87,7 +87,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
 1. Klicka på knappen **[!UICONTROL Edit content]** på konfigurationsskärmen för kampanjen för att konfigurera push-innehållet. [Designa ett push-meddelande](design-push.md)
 
-1. När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet.
+1. När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet.
 
 1. Slutför konfigurationen av din [kampanj](../campaigns/create-campaign.md) för att skicka den när din push-funktion är klar.
 

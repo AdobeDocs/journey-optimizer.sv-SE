@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: 9b4ff0325d099252a5785aa13cfe0f1fe42acac6
+source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,13 @@ När du använder en konfiguration med anpassade inställningar i en kampanj ell
 
 ## Kontrollera konfigurationen {#check-configuration}
 
-När du använder en anpassad konfiguration i en kampanj eller resa kan du förhandsgranska ditt e-postinnehåll för att kontrollera om det finns potentiella fel med de dynamiska inställningar du har definierat. Följ stegen nedan.
+När du använder en anpassad konfiguration i en kampanj eller en resa kan du förhandsgranska ditt e-postinnehåll med testprofiler för att kontrollera om det finns potentiella fel med de dynamiska inställningar du har definierat. Följ stegen nedan.
+
+>[!NOTE]
+>
+>Utöver testprofiler kan du i [!DNL Journey optimizer] även testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
+
+Så här förhandsgranskar du ditt innehåll med testprofiler:
 
 1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer. [Läs mer](../content-management/preview.md)
 

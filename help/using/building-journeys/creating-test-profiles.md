@@ -9,9 +9,9 @@ role: User, Data Engineer
 level: Intermediate
 keywords: testprofiler, testning, test, resa
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1322'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 1%
 # Skapa testprofiler {#create-test-profiles}
 
 Testprofiler krävs när [testläget](../building-journeys/testing-the-journey.md) används i en resa och när du [förhandsgranskar och testar ditt innehåll](../content-management/preview-test.md).
+
+>[!NOTE]
+>
+>I [!DNL Journey optimizer] kan du också testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
 
 Det finns flera sätt att skapa testprofiler. På den här sidan hittar du information om:
 

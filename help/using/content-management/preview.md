@@ -5,18 +5,24 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
-source-git-commit: 87cba1d13af7a80cfe3b37a7b79e5fdd95ee5521
+source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 4%
+source-wordcount: '251'
+ht-degree: 2%
 
 ---
 
-# Kontrollera innehåll {#preview}
+# Förhandsgranska innehåll med testprofiler {#preview}
 
 <!--## Preview your content {#preview-content}-->
 
-När [testprofiler](test-profiles.md) har definierats kan du förhandsgranska innehållet. Följ stegen nedan:
+När [testprofiler](test-profiles.md) har definierats kan du förhandsgranska innehållet.
+
+>[!NOTE]
+>
+>I [!DNL Journey optimizer] kan du också testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
+
+Så här förhandsgranskar du ditt innehåll med testprofiler:
 
 1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer.
 

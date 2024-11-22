@@ -7,9 +7,9 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,9 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    ![](../assets/offers-e2e-offers-displayed.png)
 
-1. **Testa och validera**. När innehållet har definierats kan du använda testprofiler för att förhandsgranska innehållet. Om du infogade [anpassat innehåll](../../personalization/personalize.md) kan du med hjälp av testprofildata kontrollera hur det här innehållet visas i meddelandet. Använd dessutom ditt **Litmus**-konto i [!DNL Journey Optimizer] för att omedelbart förhandsgranska din **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar dina meddelanden [i det här avsnittet](../../content-management/preview-test.md).
+1. **Testa och validera**. När innehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet.
+
+   Om du infogade [anpassat innehåll](../../personalization/personalize.md) kan du kontrollera hur det här innehållet visas i meddelandet. Använd dessutom ditt **Litmus**-konto i [!DNL Journey Optimizer] för att omedelbart förhandsgranska din **e-poståtergivning** i vanliga e-postklienter. Sedan kan ni se till att e-postinnehållet ser bra ut och fungerar som det ska i alla inkorgar. Lär dig hur du testar och validerar dina meddelanden [i det här avsnittet](../../content-management/preview-test.md).
 
 1. **Utforma kundresor** för att leverera personaliserade, sammanhangsbaserade upplevelser. [!DNL Journey Optimizer] låter dig skapa användningsfall för realtidssamordning med kontextuella data som lagras i händelser eller datakällor. Utforma avancerade scenarier i flera steg med följande funktioner:
 

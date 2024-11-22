@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: becd2d8bdb93abbe21a24c3767179b4e90c01523
+source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1197'
 ht-degree: 3%
 
 ---
@@ -126,7 +126,7 @@ Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor
 <div align="center"><a href="../content-card/create-content-card.md"><strong>Innehållskort</strong></a></div></td>
 </tr></table>
 
-När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler. [Läs mer](../content-management/preview-test.md). Klicka på vänsterpilen om du vill gå tillbaka till skärmen där kampanjen skapades.
+När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt. [Läs mer](../content-management/preview-test.md). Klicka på vänsterpilen om du vill gå tillbaka till skärmen där kampanjen skapades.
 
 ![](assets/create-campaign-design.png)
 

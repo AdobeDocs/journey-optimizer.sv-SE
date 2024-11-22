@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 01726ab6-f581-4d19-aedd-2541bc0f27c6
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 1%
+source-wordcount: '204'
+ht-degree: 0%
 
 ---
 
@@ -37,4 +37,4 @@ Du kan testa återgivningen av vissa e-postmallar, oavsett om de har skapats fr�
 
 >[!CAUTION]
 >
->Spårning stöds för närvarande inte vid testning av mallar för e-postinnehåll, vilket innebär att spårningshändelser, UTM-parametrar och länkar på landningssidor inte kommer att vara effektiva i korrektur som skickas från en mall. Om du vill testa spårning [använder du innehållsmallen](../email/use-email-templates.md) i ett e-postmeddelande och [skickar ett korrektur](../content-management/preview-test.md#send-proofs).
+>Spårning stöds för närvarande inte vid testning av mallar för e-postinnehåll, vilket innebär att spårningshändelser, UTM-parametrar och länkar på landningssidor inte kommer att vara effektiva i korrektur som skickas från en mall. Om du vill testa spårning [använder du innehållsmallen](../email/use-email-templates.md) i ett e-postmeddelande och skickar ett korrektur med testprofiler, eller exempelindata som överförts från en CSV-/JSON-fil, eller läggs till manuellt. [Lär dig hur du förhandsgranskar och testar innehåll](../content-management/preview-test.md)
