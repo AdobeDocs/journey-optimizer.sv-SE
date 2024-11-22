@@ -5,17 +5,15 @@ title: Kom igång med kommunikationskanaler i  [!DNL Adobe Journey Optimizer]
 description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommunikationskanaler.
 role: User
 level: Beginner
-source-git-commit: d83339f8b6e02e6035b759b6b52bd18ea9a626e3
+exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
+source-git-commit: ac71350cd344845582e09fa039fb796e9408b048
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
 
-
 # Kom igång med [!DNL Adobe Journey Optimizer] kommunikationskanaler {#get-started-email}
-
-## [!DNL Adobe Journey Optimizer] kanaler {#overview}
 
 I dagens dynamiska marknadsföringslandskap är det viktigt att effektivt nå ut till er målgrupp på olika plattformar för att skapa varaktiga relationer och öka engagemanget. I det här avsnittet finns en omfattande översikt över de kommunikationskanaler som är tillgängliga i [!DNL Adobe Journey Optimizer], som hjälper dig att förstå hur du använder varje kanal effektivt i dina marknadsföringsstrategier.
 
