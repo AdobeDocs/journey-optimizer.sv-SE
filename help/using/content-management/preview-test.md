@@ -5,9 +5,9 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: a5eacd7a746b2f17804062b23aee3146db0434c9
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Du kan förhandsgranska och testa ditt innehåll med:
 
 * **Testprofiler**
 
-  Använd testprofiler för att förhandsgranska ditt innehåll, skicka e-postkorrektur och kontrollera e-poståtergivningen. Om du har lagt till anpassade fält kan du kontrollera hur de visas med testprofildata.
+  Använd testprofiler för att förhandsgranska ditt innehåll, skicka e-postkorrektur och kontrollera e-poståtergivningen. Om du har lagt till anpassade fält kan du kontrollera hur de visas med testprofildata. Mer information finns i följande avsnitt:
 
   ➡️ [Välj testprofiler](test-profiles.md)
 
@@ -56,7 +56,7 @@ Du kan förhandsgranska och testa ditt innehåll med:
 
   ➡️ [Kontrollera e-poståtergivning](rendering.md)
 
-  ➡️ [Lär dig hur du förhandsgranskar och korrektur av e-postmeddelanden i den här videon](#video-preview)
+  ➡️ [Förhandsgranska och korrekturgranska din e-post (video)](#video-preview)
 
 * **Exempelindata**
 
