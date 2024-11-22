@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 05ce9083d9f45332c718adc9d01ec3410ca84050
+source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
 workflow-type: tm+mt
 source-wordcount: '5732'
 ht-degree: 13%
@@ -26,7 +26,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Sidan **Konfigurera din kodbaserade upplevelse** har förbättrats för att göra processen tydligare, inklusive avsnittet som förklarar vad en yt-URI är. [Läs mer](../code-based/code-based-configuration.md)
 * Sidan **Skapa webbkanalskonfiguration** har uppdaterats för att klargöra stegen när du skapar en sidmatchningsregel, som även gäller för kodbaserad upplevelsekonfiguration. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
 * En anteckning om det kommande TTL-skyddsutkastet (time-to-live) för systemgenererade datauppsättningar har lagts till. [Läs mer](../data/get-started-datasets.md)
-* Ett nytt avsnitt har lagts till som beskriver hur du förhandsgranskar dina kodbaserade personaliserade upplevelser direkt i webbläsaren eller på dina mobila enheter, med alternativet Förhandsgranska på enhet när du simulerar innehåll under en resa eller en kampanj. [Läs mer](../code-based/create-code-based.md#preview-on-device)
+* Ett nytt avsnitt har lagts till som beskriver hur du förhandsgranskar dina kodbaserade personaliserade upplevelser direkt i webbläsaren eller på dina mobila enheter, med alternativet Förhandsgranska på enhet när du simulerar innehåll under en resa eller en kampanj. [Läs mer](../code-based/test-code-based.md#preview-on-device)
 * En ny sida har lagts till om hur du använder anpassade uppladdningsmålgrupper för beslut. [Läs mer](../offers/custom-upload-decisioning.md)
 * En ny sida har lagts till för att presentera beslutsmöjligheterna i Journey Optimizer. [Läs mer](../experience-decisioning/gs-decision.md)
 * Garantier och begränsningar har lagts till i beslutsdokumentationen. [Läs mer](../experience-decisioning/gs-experience-decisioning.md#guardrails)

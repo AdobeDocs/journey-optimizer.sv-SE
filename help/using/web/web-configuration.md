@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 2161baf0-38b7-4397-bffe-083929e8033a
-source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
+source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 0%
@@ -67,7 +67,11 @@ Du kanske vill använda ändringarna på en hjältebanderoll på en hel webbplat
 
 1. Välj **[!UICONTROL Pages matching rule]** när du konfigurerar din [webb](#web-configuration) eller [kodbaserade upplevelse](../code-based/code-based-configuration.md).
 
-1. Definiera dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**. Kontrollera tillgängliga operatorer i [det här avsnittet](#available-operators).
+1. Definiera dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**.
+
+   >[!NOTE]
+   >
+   >Kontrollera tillgängliga operatorer i [det här avsnittet](#available-operators).
 
    Om du till exempel vill redigera element som visas på alla sidor med produkter för kvinnor på din Luma-webbplats väljer du **[!UICONTROL Domain]** > **[!UICONTROL Starts with]** > `luma` och **[!UICONTROL Page]** > **[!UICONTROL Contains]** > `women`.
 

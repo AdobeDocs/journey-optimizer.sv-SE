@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: bcccc7b385f031fba2c2b57ec62cae127eda8466
+source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -104,11 +104,15 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
 1. Följande gäller för förhandsvisnings-URL:en:
 
    * Om du anger en URL för en sida används den URL:en för förhandsgranskningen - du behöver inte ange en annan URL.
-   * Om du väljer en [sida som matchar regeln ](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i webbläsaren. [Läs mer](../code-based/create-code-based.md#preview-on-device)
+   * Om du väljer en [sida som matchar regeln ](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i en webbläsare. [Läs mer](test-code-based.md#preview-on-device)
 
      ![](assets/code_config_matching_rules_preview.png)
 
 1. Fältet **[!UICONTROL Location on page]** anger det exakta målet på sidan som du vill att användarna ska få åtkomst till. Det kan vara ett visst avsnitt på en sida i webbplatsens navigeringsstruktur, till exempel&quot;hjälte-banner&quot; eller&quot;product-rail&quot;.
+
+   >[!CAUTION]
+   >
+   >Strängen eller sökvägen som anges i det här fältet måste matcha den som deklarerats i din app- eller sidimplementering. Detta garanterar att innehållet levereras till önskad plats inuti den angivna appen eller sidan. [Läs mer](code-based-surface.md#uri-composition)
 
    ![](assets/code_config_location_on_page.png)
 
@@ -132,7 +136,7 @@ Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsins
 
    ![](assets/code_config_3.png)
 
-1. Fyll i fältet **[!UICONTROL Preview URL]** om du vill aktivera förhandsvisningar på enheten. Den här URL:en informerar förhandsgranskningstjänsten om den specifika URL:en som ska användas när förhandsgranskning aktiveras på enheten. [Läs mer](../code-based/create-code-based.md#preview-on-device)
+1. Fyll i fältet **[!UICONTROL Preview URL]** om du vill aktivera förhandsvisningar på enheten. Den här URL:en informerar förhandsgranskningstjänsten om den specifika URL:en som ska användas när förhandsgranskning aktiveras på enheten. [Läs mer](test-code-based.md#preview-on-device)
 
    Förhandsgransknings-URL:en är en djup länk som konfigureras av apputvecklaren i din app. Detta garanterar att alla URL:er som matchar djuplänksschemat öppnas i appen i stället för i en mobilwebbläsare. Kontakta din apputvecklare för att få tillgång till det djuplänksschema som konfigurerats för din app.
 
@@ -160,73 +164,16 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
 
 1. Välj **[!UICONTROL Other]** som plattform om din implementering inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er som mål.
 
-1. Ange **[!UICONTROL Surface URI]**. En yt-URI är en unik identifierare som motsvarar den enhet där du vill leverera din upplevelse. [Läs mer](#surface-definition)
+1. Ange **[!UICONTROL Surface URI]**. En yt-URI är en unik identifierare som motsvarar den enhet där du vill leverera din upplevelse. [Läs mer](code-based-surface.md#surface-uri)
 
    ![](assets/code_config_5.png)
 
    >[!CAUTION]
    >
-   >Se till att du anger en yt-URI som matchar den som används i din egen implementering. Annars kan ändringarna inte levereras.
+   >Se till att du anger en yt-URI som matchar den som används i din egen implementering. Annars kan ändringarna inte levereras. [Läs mer](code-based-surface.md#uri-composition)
 
 1. **[!UICONTROL Add another surface URI]** om det behövs. Du kan lägga till upp till 10 URI:er.
 
    >[!NOTE]
    >
    >När du lägger till flera URI:er levereras innehållet till alla de angivna komponenterna.
-
-## Vad är en yta? {#surface-definition}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_surface_uri"
->title="Lägg till yt-URI för komponenten"
->abstract="Om implementeringen inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er, anger du en yt-URI, som är en unik identifierare som dirigerar till enheten där du vill leverera upplevelsen. Se till att du anger en yt-URI som matchar den som används i din egen implementering."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based-experience/code-based-configuration#other" text="Skapa en kodbaserad upplevelsekonfiguration för andra plattformar"
-
-En kodbaserad upplevelse **surface** är en entitet som utformats för användar- eller systeminteraktion, som identifieras unikt av en **URI**. Ytan anges i programimplementeringen och måste matcha den yta som refereras i den kodbaserade upplevelsekanalskonfigurationen.
-
-En yta kan ses som en behållare på vilken hierarkinivå som helst med en entitet (kontaktyta) som finns.
-
-* Det kan vara en webbsida, en mobilapp, en skrivbordsapp, en specifik innehållsplats inom en större enhet (till exempel en `div`) eller ett visningsmönster som inte är standard (till exempel en kioskdator eller en banner för datorprogram).<!--In retail, a kiosk is a digital display or small structure that businesses often place in high-traffic areas to engage customers.-->
-
-* Den kan även omfatta specifika innehållsbehållare för icke-visning eller abstraherad visning (t.ex. JSON-blober som levereras till tjänster).
-
-* Det kan också vara en jokeryta som matchar en mängd olika klientytdefinitioner (en hjältebildsplats på varje sida på webbplatsen kan till exempel översättas i en yt-URI som web://mydomain.com/*#hero_image).
-
-När du skapar en kodbaserad upplevelsekanalskonfiguration kan du ange ytan på två sätt enligt den valda plattformen:
-
-* För plattformarna **[!UICONTROL Web]**, **[!UICONTROL iOS]** och **[!UICONTROL Android]** måste du ange en **plats eller sökväg** för att skapa ytan.
-
-* Om plattformen är **[!UICONTROL Other]** måste du ange den fullständiga **yt-URI**, som i exemplen nedan.
-
-En yt-URI fungerar som en exakt identifierare som dirigerar till distinkta användargränssnittselement eller -komponenter i ett program. En yts-URI består i princip av flera avsnitt:
-
-1. **Typ**: webb, mobilapp, atm, kiosk, tvcd, service osv.
-1. **Egenskap**: sid-URL eller apppaket
-1. **Behållare**: plats i sid-/appaktiviteten
-
-Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
-
-**Webb och mobil**
-
-| Typ | URI | Beskrivning |
-| --------- | ----------- | ------- | 
-| Webb | `web://domain.com/path/page.html#element` | Representerar ett enskilt element på en viss sida i en viss domän, där ett element kan vara en etikett som i följande exempel: hero_banner, top_nav, menu, footer osv. |
-| iOS | `mobileapp://com.vendor.bundle/activity#element` | Representerar ett specifikt element i en intern programaktivitet, till exempel en knapp eller ett annat vyelement. |
-| Android | `mobileapp://com.vendor.bundle/#element` | Representerar ett specifikt element i ett systemspecifikt program. |
-
-**Andra enhetstyper**
-
-| Typ | URI | Beskrivning |
-| --------- | ----------- | ------- | 
-| Skrivbord | `desktop://com.vendor.bundle/#element` | Representerar ett specifikt element i ett program, t.ex. en knapp, en meny, en hjältebanderoll. |
-| TV-app | `tvcd://com.vendor.bundle/#element` | Representerar ett specifikt element i en app som är ansluten till en smart TV eller TV - paket-ID. |
-| Tjänst | `service://servicename/#element` | Representerar en process på serversidan eller en annan manuell enhet. |
-| Kiosk | `kiosk://location/screen#element` | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
-| ATM | `atm://location/screen#element` | Exempel på möjliga ytterligare yttyper som enkelt kan läggas till. |
-
-**Ytor med jokertecken**
-
-| Typ | URI | Beskrivning |
-| --------- | ----------- | ------- | 
-| Webben med jokertecken | `wildcard:web://domain.com/*#element` | Jokertecknets yta - representerar ett enskilt element på varje sida under en specifik domän. |
-| Webben med jokertecken | `wildcard:web://*domain.com/*#element` | Jokerteckenyta - representerar ett enskilt element på varje sida under alla domäner som slutar med &quot;domain.com&quot;. |

@@ -6,20 +6,24 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
-source-git-commit: e3c597f66436e8e0e22d06f1905fc7ca9a9dd570
+source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
-# Garantier och krav {#web-prerequisites}
+# Garantier och krav {#code-based-prerequisites}
 
 Om du vill kunna använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] och leverera kodinnehållets nyttolast som kan användas av dina program följer du kraven nedan:
 
 * Om du vill lägga till ändringar i dina program måste du ha en specifik implementering. [Läs mer](#implementation-prerequisites)
 
 * För att de kodbaserade upplevelserna ska kunna levereras på rätt sätt måste du definiera Adobe Experience Platform-inställningarna som anges [här](#delivery-prerequisites).
+
+* Om du vill att data ska kunna visas i dina kodbaserade upplevelserapporter måste du följa dessa [rapporteringskrav](#reporting-prerequisites).
+
+* När du skapar en [kodbaserad upplevelsekanalkonfiguration](code-based-configuration.md) måste du ange en sträng/sökväg eller en yt-URI som matchar den som deklarerats i din egen implementering. Detta garanterar att innehållet levereras till önskad plats inuti den angivna appen eller sidan. Annars kan ändringarna inte levereras. [Läs mer](code-based-surface.md)
 
 ## Krav för implementering {#implementation-prerequisites}
 
@@ -55,7 +59,7 @@ För att de kodbaserade upplevelserna ska kunna levereras på rätt sätt måste
 
   [Läs mer om Edge Delivery-vyn](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
-## Krav för rapportering {#experiment-prerequisites}
+## Krav för rapportering {#reporting-prerequisites}
 
 Om du vill aktivera rapportering för den kodbaserade kanalen måste du se till att den [datamängd](../data/get-started-datasets.md) som används i appimplementeringen [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} också ingår i rapportkonfigurationen.
 

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 2ca6659319482db09efd86ded418b151a022442c
+source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2185'
 ht-degree: 24%
 
 ---
@@ -273,10 +273,15 @@ ht-degree: 24%
          + [Skapa single-page-appar](using/web/web-spa.md)
    + Kodbaserad upplevelse {#code-based-experience}
       + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
-      + [Garantier och krav](using/code-based/code-based-prerequisites.md)
-      + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
-      + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
-      + [Skapa kodbaserade upplevelser](using/code-based/create-code-based.md)
+      + Konfigurera kodbaserad kanal {#configure-code-based-channel}
+         + [Garantier och krav](using/code-based/code-based-prerequisites.md)
+         + [Kodbaserade upplevelseytor](using/code-based/code-based-surface.md)
+         + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
+         + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
+      + Skapa kodbaserade upplevelser {#create-code-based-experiences}
+         + [Skapa och sammanställ kodbaserade upplevelser](using/code-based/create-code-based.md)
+         + [Testa kodbaserade upplevelser](using/code-based/test-code-based.md)
+         + [Hantera kodbaserade upplevelser](using/code-based/publish-code-based.md)
    + Innehållskort{#content-card}
       + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
       + Konfigurera innehållskortskanalen {#configure}

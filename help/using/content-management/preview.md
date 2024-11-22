@@ -5,7 +5,7 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 2%
@@ -50,5 +50,5 @@ Så här förhandsgranskar du ditt innehåll med testprofiler:
 >
 >Om det finns ett fel i konfigurationsinformationen klickar du på knappen **[!UICONTROL View configuration details]**. [Läs mer](../email/surface-personalization.md#check-configuration)
 
-När ni skapar kodbaserade upplevelser kan ni förhandsgranska ert personaliserade innehåll direkt i webbläsaren eller på era mobila enheter för att få en simulering i verkligheten. [Läs mer](../code-based/create-code-based.md#preview-on-device)
+När ni skapar kodbaserade upplevelser kan ni förhandsgranska ert personaliserade innehåll direkt i webbläsaren eller på era mobila enheter för att få en simulering i verkligheten. [Läs mer](../code-based/test-code-based.md#preview-on-device)
 

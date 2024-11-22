@@ -6,7 +6,7 @@ topic: Content Management
 role: Developer
 level: Experienced
 exl-id: e5ae8b4e-7cd2-4a1d-b2c0-8dafd5c4cdfd
-source-git-commit: c3300b240bd0dc0563ed6d4e6de40bd9fa36a92e
+source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Om du har en implementering på klientsidan kan du använda någon av AEP-klient
 
 1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} ingår på sidan.
 
-1. Du måste använda kommandot `sendEvent` och ange [yt-URI](code-based-configuration.md#surface-definition)<!--( or location/path)--> för att hämta personaliseringsinnehåll.
+1. Du måste använda kommandot `sendEvent` och ange [yt-URI](code-based-surface.md)<!--( or location/path)--> för att hämta personaliseringsinnehåll.
 
    ```javascript
    alloy("sendEvent", {
