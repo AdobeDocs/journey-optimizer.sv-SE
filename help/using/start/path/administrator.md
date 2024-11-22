@@ -7,9 +7,9 @@ feature: Get Started
 role: Admin
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 13cbb0877326b772c3750bd3339e21eee5c3f323
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '665'
 ht-degree: 1%
 
 ---
@@ -18,24 +18,22 @@ ht-degree: 1%
 
 Innan du börjar använda [!DNL Adobe Journey Optimizer] krävs flera steg för att förbereda miljön.  Du måste utföra de här stegen så att [datateknikern](data-engineer.md) och [reseassistenten](marketer.md) kan börja arbeta med [!DNL Adobe Journey Optimizer].
 
+Som **systemadministratör** måste du **förstå roller och tilldela behörigheter** för sandlådeadministration och kanalkonfiguration. Du måste också konfigurera sandlådor och hantera dem för de tillgängliga rollerna. Sedan kan du tilldela teammedlemmar till roller.
 
-Som **systemadministratör** måste du **förstå produktprofiler och tilldela behörigheter** för sandlådeadministration och kanalkonfiguration. Du måste också konfigurera sandlådor och hantera dem för de tillgängliga produktprofilerna. Sedan kan du tilldela teammedlemmar till produktprofiler.
-
-Dessa funktioner kan hanteras av **[!UICONTROL Product administrators]** som har åtkomst till Admin Console. [Läs mer om Adobe Admin Console](https://helpx.adobe.com/se/enterprise/admin-guide.html){target="_blank"}.
+Dessa funktioner kan hanteras av **[!UICONTROL Product administrators]** som har åtkomst till produkten Behörigheter. [Läs mer om behörigheter](../../administration/permissions.md){target="_blank"}.
 
 Lär dig mer om åtkomsthantering på följande sidor:
 
 1. **Skapa sandlådor** för att partitionera dina instanser i separata, isolerade virtuella miljöer. **Sandlådor** skapas i [!DNL Journey Optimizer]. Läs mer i avsnittet [Sandlådor](../../administration/sandboxes.md).
 
    >[!NOTE]
-   >Om du är **systemadministratör** och inte kan se menyn **[!UICONTROL Sandboxes]** i [!DNL Journey Optimizer] måste du uppdatera dina behörigheter i [Admin Console](https://adminconsole.adobe.com/){target="_blank"}. Lär dig hur du uppdaterar din produktprofil på [den här sidan](../../administration/permissions.md#edit-product-profile).
-   >
+   >Om du som **systemadministratör** inte kan se menyn **[!UICONTROL Sandboxes]** i [!DNL Journey Optimizer] måste du uppdatera dina behörigheter. Lär dig hur du uppdaterar din roll på [den här sidan](../../administration/permissions.md#edit-product-profile).
 
-1. **Produktprofiler**. Produktprofiler är en uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Läs mer i avsnittet [Färdiga produktprofiler](../../administration/ootb-product-profiles.md).
+1. **Förstå roller**. Roller är en uppsättning enhetsbehörigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Läs mer i avsnittet [färdiga roller](../../administration/ootb-product-profiles.md).
 
-1. **Ange behörigheter** för produktprofiler, inklusive **Sandlådor**, och ge teammedlemmarna åtkomst genom att tilldela dem till olika produktprofiler. Det här steget utförs i [Admin Console](https://adminconsole.adobe.com/){target="_blank"}. Behörigheter är enhetsbehörigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Product profile]**. Varje behörighet samlas in under funktioner, t.ex. Resor eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Läs mer i avsnittet [Behörighetsnivåer](../../administration/high-low-permissions.md).
+1. **Ange behörigheter** för roller, inklusive **Sandlådor**, och ge teammedlemmarna åtkomst genom att tilldela dem till olika roller. Behörigheter är enhetsbehörigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Role]**. Varje behörighet samlas in under funktioner, t.ex. Resor eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Läs mer i avsnittet [Behörighetsnivåer](../../administration/high-low-permissions.md).
 
-Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users** . [Läs mer i Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
+Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials-användare** eller **Assets Essentials-användare**. [Läs mer i Assets Essentials-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 >[!NOTE]
 >För Journey Optimizer-produkter som inhämtats före 6 januari 2022 måste du distribuera [!DNL Adobe Experience Manager Assets Essentials] för din organisation. Läs mer i avsnittet [Distribuera Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
@@ -45,7 +43,7 @@ När du använder [!DNL Journey Optimizer] för första gången tilldelas du en 
 Om du vill kunna skapa dina resor och skicka meddelanden går du till menyn **ADMINISTRATION** . Bläddra i menyn **[!UICONTROL Channels]** för att konfigurera meddelanden och kanalkonfigurationer (t.ex. meddelandeförinställningar).
 
 >[!NOTE]
->Om du är **systemadministratör** och inte kan se menyn **[!UICONTROL Channels]** i [!DNL Journey Optimizer] måste du uppdatera dina behörigheter i [Admin Console](https://adminconsole.adobe.com/){target="_blank"}. Lär dig hur du uppdaterar din produktprofil på [den här sidan](../../administration/permissions.md#edit-product-profile).
+>Om du är **systemadministratör** och inte kan se menyn **[!UICONTROL Channels]** i [!DNL Journey Optimizer] måste du uppdatera dina behörigheter i produkten [Permissions](../../administration/permissions.md){target="_blank"} .
 >
 
 Följ stegen nedan:
