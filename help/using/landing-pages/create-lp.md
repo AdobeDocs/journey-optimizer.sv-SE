@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 13f07c2c6af38661ad6d58b2f1505c8199c0cc0b
+source-git-commit: 47b549f3e1e220b7e8f0c82d9a1f9ecfd5dd2340
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1677'
 ht-degree: 1%
 
 ---
@@ -30,29 +30,33 @@ Om du vill dirigera dina kunder till en definierad webbsida som du vill visa nä
 
 ## Åtkomst till landningssidor {#access-landing-pages}
 
-Välj **[!UICONTROL Journey Management]** > **[!UICONTROL Landing pages]** på den vänstra menyn för att komma åt landningssidans lista.
+Välj **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** på den vänstra menyn för att komma åt landningssidans lista.
 
 ![](assets/lp_access-list.png)
 
-Listan **[!UICONTROL Landing Pages]** visar alla objekt som skapats. Du kan filtrera dem baserat på deras status eller ändringsdatum.
+Listan **[!UICONTROL Landing Pages]** visar alla objekt som skapats. Du kan filtrera dem baserat på deras status, ändringsdatum eller taggar.
 
 ![](assets/lp_access-list-filter.png)
 
-Från den här listan kan du komma åt [landningssidans Live-rapport](../reports/lp-report-live.md) eller [landningssidans rapport](../reports/lp-report-global-cja.md) för publicerade objekt.
-
-Du kan också ta bort, duplicera och avpublicera en landningssida.
-
->[!CAUTION]
->
->Om du avpublicerar en landningssida som det refereras till i ett meddelande bryts länken till landningssidan och en felsida visas.
-
-Klicka på de tre punkterna bredvid en landningssida för att välja önskad åtgärd.
+I den här listan kan du komma åt ett antal åtgärder. Klicka på de tre punkterna bredvid en landningssida för att välja önskad åtgärd:
 
 ![](assets/lp_access-list-actions.png)
 
->[!NOTE]
->
->Du kan inte ta bort en [publicerad](#publish-landing-page)-landningssida. Om du vill ta bort den måste du först avpublicera den.
+* För publicerade objekt kan du öppna [landningssidans rapport](../reports/lp-report-global-cja.md) eller [den senaste 24 timmars Live-rapporten](../reports/lp-report-live.md).
+
+* Du kan ta bort eller duplicera en landningssida.
+
+  >[!NOTE]
+  >
+  >Du kan inte ta bort en [publicerad](#publish-landing-page)-landningssida. Om du vill ta bort den måste du först avpublicera den.
+
+* Du kan avpublicera en publicerad landningssida.
+
+  >[!CAUTION]
+  >
+  >Om du avpublicerar en landningssida som det refereras till i ett meddelande bryts länken till landningssidan och en felsida visas.
+
+* Du kan också redigera en landningssidas associerade [taggar](../start/search-filter-categorize.md#tags).
 
 ## Skapa en landningssida {#create-landing-page}
 
@@ -279,11 +283,6 @@ Två typer av varningar kan inträffa:
 
 **Errors**:
 
-* 
-
->[!CAUTION]
->
-> To be able to publish your message, you must resolve all **error** alerts.
 -->
 
 ## Publish landningssida {#publish-landing-page}
