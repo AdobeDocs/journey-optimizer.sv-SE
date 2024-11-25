@@ -5,7 +5,9 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-source-git-commit: 616e1dd9fbfd029f7209356d5c19cfff9d4b4f06
+hide: true
+hidefromtoc: true
+source-git-commit: 5a64190203563d66309c897fe3ee806a74e8bfc9
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 5%
@@ -20,7 +22,7 @@ I det här fallet skapar ni en kampanj där ni definierar två leveransbehandlin
 
 Först måste du skapa objekt, gruppera dem i samlingar, ställa in regler och rangordningsmetoder. Med dessa element kan du skapa urvalsstrategier.
 
-1. Navigera till **[!UICONTROL Decisioning]** > **[!UICONTROL  Catalogs]** och skapa flera beslutsobjekt. Ange begränsningar med målgrupper eller regler för att begränsa varje objekt till enbart specifika profiler. [Läs mer](items.md)
+1. Navigera till **[!UICONTROL Decisioning]** > **[!UICONTROL Catalogs]** och skapa flera beslutsobjekt. Ange begränsningar med målgrupper eller regler för att begränsa varje objekt till enbart specifika profiler. [Läs mer](items.md)
 
    <!--
    1. From the items list, click the **[!UICONTROL Edit schema]** button  and edit the custom attributes if needed. [Learn how to work with catalogs](catalogs.md)-->

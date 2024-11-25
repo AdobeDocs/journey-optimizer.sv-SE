@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
+source-git-commit: 5a64190203563d66309c897fe3ee806a74e8bfc9
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2188'
 ht-degree: 24%
 
 ---
@@ -487,6 +487,7 @@ ht-degree: 24%
       + [Skapa urvalsstrategier](using/experience-decisioning/selection-strategies.md)
       + [Skapa beslutsprofiler](using/experience-decisioning/create-decision.md)
       + [Rapport om beslut](using/experience-decisioning/cja-reporting.md)
+      + [Användningsfall vid beslut](using/experience-decisioning/experience-decisioning-uc.md)
    + Beslutshantering {#offer-decisioning}
       + Kom igång med beslutshantering {#get-started-decision}
          + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
