@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: cf946f8d59728a743b3c4b571c07fc70e3c6cf87
+source-git-commit: 88dff9f42636a81b54b7050da3542f839c14164e
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2493'
 ht-degree: 0%
 
 ---
@@ -184,13 +184,13 @@ At phase level, system ensures that previously targeted + new profiles are picke
    >
    >Om du inte vill använda någon åtagandeperiod för en körning anger du 0 i fältet **[!UICONTROL Last engaged]**.
 
-1. Välj alternativet **[!UICONTROL Cancel activated runs in case of errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen. I så fall får körningen statusen **[!UICONTROL Failed]**.
+1. Välj alternativet **[!UICONTROL Cancel activated runs in case of errors]** om du vill avbryta en körning om de kvalificerade profilerna är mindre än målprofilerna när målgruppen har utvärderats för den körningen.
 
    ![](assets/ip-warmup-plan-pause.png)
 
-   Om antalet kvalificerade profiler inte matchar antalet målprofiler (till exempel 1 500 Gmail-adresser anges som mål i körningen, men det finns bara 700 Gmail-profiler som är kvalificerade):
+   Om antalet kvalificerade profiler inte matchar antalet målprofiler (till exempel 1 500 Gmail-adresser anges som mål i körningen, men det finns bara 700 Gmail-kvalificerade profiler):
 
-   * Om alternativet är aktiverat misslyckas körningen. Du kan sedan antingen välja att ha färre profiler som mål i nästa körning eller [dela körningen](#split-phase) till en ny fas och välja en ny kampanj för den nya fasen för att ange samma profiler som mål igen.
+   * Om alternativet är aktiverat misslyckas körningen och körningen får statusen **[!UICONTROL Failed]**. <!--You can then either choose to target less profiles in the next run, or to [split the run](#split-phase) to a new phase and select a new campaign for the new phase to target the same profiles again.-->
 
    * Om alternativet inte är aktiverat körs körningen, men bara det tillgängliga antalet profiler anges.
 
