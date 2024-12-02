@@ -1,13 +1,13 @@
 ---
 title: Innehållskortsrapport
 description: Lär dig hur du använder data från Content Card-rapporten
-feature: Reporting
+feature: Reporting, Content Cards
 topic: Content Management
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 8a902298bbbac5689b4f84266dd9c9027e45fad5
+source-git-commit: c24dc217567cc65f8ce0dc79d648f016cd8ad740
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
