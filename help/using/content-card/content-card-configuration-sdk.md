@@ -1,11 +1,12 @@
 ---
 title: Konfiguration av Web SDK för innehållskort
 description: Konfigurera stöd för innehållskort i Web SDK
-feature: Channel Configuration
+feature: Channel Configuration, Content Cards
 topic: Content Management
 role: Admin
 level: Experienced
-source-git-commit: 02c4b61f22591a99824eb727aaccfd0cbe1facfc
+exl-id: bb67b55f-2eac-4775-a9f5-78288009477e
+source-git-commit: 37862682a25843ce138c076e443f6d9b6229ece3
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%

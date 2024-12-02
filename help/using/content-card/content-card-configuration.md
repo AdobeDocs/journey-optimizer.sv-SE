@@ -1,11 +1,12 @@
 ---
 title: Konfiguration av innehållskort
 description: Kanalkonfiguration för innehållskort
-feature: Channel Configuration
+feature: Channel Configuration, Content Cards
 topic: Content Management
 role: Admin
 level: Experienced
-source-git-commit: 12cf3f9ed82350dd55b74de4596e10be9d5654ef
+exl-id: 50e47e83-4b9e-4088-aa09-dea76393c035
+source-git-commit: 37862682a25843ce138c076e443f6d9b6229ece3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 1%
@@ -96,4 +97,3 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 1. Skicka in ändringarna.
 
 Nu kan du välja din konfiguration när du skapar en upplevelse av ditt innehållskort.
-

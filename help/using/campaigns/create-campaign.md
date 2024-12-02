@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: 37862682a25843ce138c076e443f6d9b6229ece3
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 3%
@@ -60,7 +60,6 @@ Nu kan ni välja målgrupp för er kampanj. En målgrupp är en uppsättning per
 >* Användning av målgrupper och attribut från [målgruppskomposition](../audience/get-started-audience-orchestration.md) är för närvarande inte tillgängligt för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 >
 >* För API-utlösta kampanjer måste målgruppen anges via API-anrop.
-
 
 Så här definierar du målgruppen för en schemalagd marknadsföringskampanj:
 
