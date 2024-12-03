@@ -7,16 +7,25 @@ role: User
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 5a64190203563d66309c897fe3ee806a74e8bfc9
+exl-id: 09770df2-c514-4217-a71b-e31c248df543
+source-git-commit: 196caffc918ef4f8fd97c2eb2c790ae4583aa311
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 5%
+source-wordcount: '374'
+ht-degree: 4%
 
 ---
 
 # Användningsfall vid beslut {#experience-decisioning-uc}
 
+Du är osäker på om en viss rankningsformel kommer att fungera bättre än de förtilldelade prioriteterna.
+
 I det här fallet skapar ni en kampanj där ni definierar två leveransbehandlingar - som vart och ett innehåller en egen beslutspolicy för att mäta vilken som fungerar bäst för er målgrupp.
+
+Gör så att experimentet
+
+* Den första behandlingen innehåller en urvalsstrategi med prioritet som rangordningsmetod.
+* Den andra behandlingen innehåller en annan urvalsstrategi där en formel är rangordningsmetoden.
+
 
 ## Skapa beslutsposter och urvalsstrategier
 
@@ -68,5 +77,3 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 1. I fönstret **[!UICONTROL Edit content]** väljer du din behandling B för att ändra innehållet och upprepar stegen ovan för att skapa ett annat beslut.
 
 1. Spara innehållet.
-
-
