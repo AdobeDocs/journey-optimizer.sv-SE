@@ -8,9 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
-source-git-commit: c858d16ec520418148fb28ad2ecec0d3a6377ba9
+exl-id: 62327f8c-7a9d-44c3-88f9-3048ff8bd326
+source-git-commit: e2024a9418374bed224db7d701d1a7642121f293
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -33,6 +34,10 @@ Kontrollera att du har skapat ett konto hos respektive leverantör innan du läg
 
 1. Välj önskad leverantör i listrutan **[!UICONTROL Providers]**.
 
+   >[!NOTE]
+   >
+   >Om du vill lägga till en leverantör i listan kan du be din leverantör att följa instruktionerna i [det här dokumentet](https://developer.adobe.com/gcs/partner/) för att slutföra sin introduktionsprocess.
+
    ![](assets/provider_2.png)
 
 1. Om du använder Microsoft Translator som provider anger du **[!UICONTROL Subscription Key]** och **[!UICONTROL Endpoint URL]**.
@@ -44,4 +49,3 @@ Kontrollera att du har skapat ett konto hos respektive leverantör innan du läg
    ![](assets/provider_4.png)
 
 1. När du har slutfört konfigurationen klickar du på **[!UICONTROL Save]** för att slutföra konfigurationen.
-
