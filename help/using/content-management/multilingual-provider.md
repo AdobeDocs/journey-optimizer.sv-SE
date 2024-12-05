@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 62327f8c-7a9d-44c3-88f9-3048ff8bd326
-source-git-commit: 424ebfb3670396d91c4b15b670eda26dc999699b
+source-git-commit: e2b35cfb2cdaf0dac002ff74a11b2fe98206cd6f
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Kontrollera att du har skapat ett konto hos respektive leverantör innan du läg
 
    >[!NOTE]
    >
-   >Om du vill lägga till en ny **Provider** i listan kan du be din **Provider** att följa instruktionerna i [det här dokumentet](https://developer.adobe.com/gcs/partner/) för att slutföra sin introduktionsprocess.
+   >Om du vill lägga till en ny **Provider** i listan kan du be din **Provider** att följa instruktionerna i [det här dokumentet](https://developer.adobe.com/gcs/partner/) för att slutföra introduktionsprocessen.
 
    ![](assets/provider_2.png)
 
