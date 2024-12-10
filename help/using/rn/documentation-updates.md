@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
+source-git-commit: d0419710c12bd7726bc161069b9c2ebff986826a
 workflow-type: tm+mt
-source-wordcount: '5732'
+source-wordcount: '5763'
 ht-degree: 13%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 13%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer]-dokumentationen.
+
+## December 2024 {#nov-2024}
+
+* En anteckning har lagts till för att hjälpa till att felsöka ett eventuellt felmeddelande när du gör ett API-anrop för att aktivera datauppsättningar för personalisering med hjälp av Adobe Experience Platform-data. [Läs mer](../personalization/lookup-aep-data.md)
 
 ## Oktober 2024 {#oct-2024}
 
