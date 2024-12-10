@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-source-git-commit: cb7842209e03c579904979480304e543a6b50f50
+source-git-commit: a2e09052ef5cb38ca34cd8faa476ca750ea1965f
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 
 ### Personalization använder [!DNL Adobe Experience Platform]-data {#perso}
 
-* **Kanaler som stöds**: För närvarande är den här funktionen bara tillgänglig för e-post, SMS, push och direktreklam.
+* **Kanaler som stöds**: För närvarande är den här funktionen bara tillgänglig för e-post, SMS och direktreklam.
 * **Dataanvändningsetiketter och -tvång** används inte för närvarande för datauppsättningar som har aktiverats för sökning.
 * **Uttrycksfragment**: Det går inte att placera datauppslagspersonalisering i uttrycksfragment just nu.
 
@@ -73,6 +73,17 @@ Var:
 * **API-nyckeln** kan hämtas från utvecklarkonsolen.
 * **IMS-organisation-ID** är din Adobe IMS-ORG.
 * **Sandlådenamn** är namnet på sandlådan som datauppsättningen finns i (d.v.s. prod, dev.s.).
+
+>[!NOTE]
+>
+>Om du får ett felmeddelande nedan när du försöker aktivera datauppsättningar kan du försöka ta bort Adobe Journey Optimizer API:er från ditt utvecklarkonsolprojekt och sedan lägga till dem igen.
+>
+>```
+>
+>"error_code": "403003", 
+>"message": "Api Key is invalid"
+>
+>```
 
 ## Utnyttja en datauppsättning för personalisering {#leverage}
 
