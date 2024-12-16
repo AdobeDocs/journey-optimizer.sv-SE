@@ -9,10 +9,10 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: 57a309956ebe2997dce3fe0eb1b6bb70b911da5e
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 2%
+source-wordcount: '600'
+ht-degree: 1%
 
 ---
 
@@ -35,6 +35,12 @@ Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyt
 När du skickar e-postmeddelanden är det viktigt att tänka på att mottagarna kan vidarebefordra dem, vilket ibland kan orsaka problem med e-postens återgivning. Detta gäller särskilt när du använder CSS-klasser som kanske inte stöds av e-postleverantören som används för vidarebefordran, till exempel om du använder CSS-klassen&quot;is-desktop-hidden&quot; för att dölja en bild på mobila enheter.
 
 För att minimera dessa återgivningsproblem rekommenderar vi att du håller e-postdesignstrukturen så enkel som möjligt. Försök använda en enda design som fungerar bra för både datorer och mobila enheter, och undvik att använda komplexa CSS-klasser eller andra designelement som kanske inte stöds fullt ut av alla e-postklienter. Genom att följa dessa rutiner kan du se till att dina e-postmeddelanden återges korrekt, oavsett hur mottagarna visar eller vidarebefordrar dem.
+
+I tabellen nedan finns information om de effektivaste strategierna för e-postdesign:
+
+| Rekommenderas | Använd med försiktighet | Rekommenderas inte |
+|-|-|-|
+| <ul><li><b>Statiska, tabellbaserade layouter</b> för strukturen</li> <li><b>HTML-tabeller och kapslade tabeller</b> för enhetlig layout</li> <li><b>Mallbredder</b> mellan 600px och 800px </li> <li><b>Enkel, infogad CSS</b> för formatering </li> <li><b>Webbsäkra teckensnitt</b> för universell kompatibilitet</li> | <ul><li><b>Bakgrundsbilder</b> kanske inte visas på vissa e-postplattformar.</li><li><b>Anpassade webbteckensnitt</b> saknar universellt stöd.</li><li><b>Bred layout</b> kan visas dåligt på mindre skärmar.</li><li><b>Bildscheman</b> har begränsad funktionalitet.</li><li><b>Inbäddad CSS</b> tas ibland bort under e-postleverans.</li> | <ul><li><b>JavaScript</b> stöds vanligtvis inte i e-postmiljöer.</li> <li> <b>`<iframe>`</b> taggar blockeras på de flesta plattformar. </li> <li><b>Flash</b> är inaktuell och stöds inte längre.</li> <li><b>Inbäddat ljud</b> spelas ofta inte upp.</li> <li><b>Inbäddad video</b> är inte kompatibel med många e-postplattformar.</li> <li> <b>Forms</b> fungerar inte i e-postmeddelanden.</li> <li> `<div>`-lager kan leda till återgivningsproblem.</li> |
 
 ## Viktiga steg för att skapa e-postinnehåll {#key-steps}
 
