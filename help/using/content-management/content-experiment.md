@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 84cb51a3fdb01fab0b23289993bbcdd30c68cd01
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '682'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
 ## Skapa innehåll {#campaign-experiment}
 
-1. Börja med att skapa och konfigurera e-post, SMS eller push-meddelanden [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journeys-message.md) enligt dina krav.
+1. Börja med att skapa och konfigurera din [kampanj](../campaigns/create-campaign.md) eller [resa](../building-journeys/journeys-message.md) enligt dina krav.
 
 1. Börja personalisera behandling A från fönstret **[!UICONTROL Edit content]**.
 
