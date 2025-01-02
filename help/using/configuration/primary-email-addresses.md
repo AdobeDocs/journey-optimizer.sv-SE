@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 953adc90278a984ca8b73576274ec73fe98c08a1
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,15 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 
 <!--1. You can also select an additional field to use as secondary email address. This allows you to determine which field to use if the primary field is empty for a profile. -->
 
-## Åsidosätta ett värde i transportparametrarna {#journey-parameters}
+## Åsidosätt standardvärdet {#override-default-execution-address}
+
+### I e-postkonfigurationen
+
+Du kan ändra standardfältinställningen för körning på sandlådenivå när du definierar en e-postkanalskonfiguration. [Läs mer](../email/email-settings.md#execution-address)
+
+När körningsadressen definieras på konfigurationsnivån används den som primär adress och åsidosätter den allmänna inställningen på sandlådenivå.
+
+### I resans parametrar {#journey-parameters}
 
 Endast för särskilda användningsfall kan du åsidosätta det körningsfält som ställts in globalt och definiera ett annat värde på resenivån, särskilt för e-postkanalen.
 
@@ -84,3 +92,4 @@ Att åsidosätta det här värdet kan vara användbart för att:
 
 * Testa ett mejl. Du kan lägga till en egen e-postadress: när du har publicerat resan skickas e-postmeddelandet till dig.
 * Skicka ett e-postmeddelande till prenumeranterna av en lista. Läs mer i [det här användningsexemplet](../building-journeys/message-to-subscribers-uc.md).
+

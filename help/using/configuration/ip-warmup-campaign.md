@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: IP, pooler, leveransbarhet
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: cf946f8d59728a743b3c4b571c07fc70e3c6cf87
+source-git-commit: 953adc90278a984ca8b73576274ec73fe98c08a1
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,13 @@ Innan du skapar IP-värmeringsplanen i [!DNL Journey Optimizer] måste du först
 
 Följ stegen nedan om du vill skapa en IP-värmare.
 
-1. Skapa en [e-post](../email/email-settings.md) kanal [konfiguration](channel-surfaces.md) för domänen och IP-adresserna som du har identifierat för din värdplan.
+1. Skapa en [konfiguration](channel-surfaces.md) för e-postkanalen för domänen och IP-adresserna som du har identifierat för din värdplan.
+
+   Samarbeta med er leveranskonsult för att identifiera vilken domän och vilka IP-adresser som ska användas. Lär dig hur du väljer dem i en e-postkonfiguration i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
 
    >[!NOTE]
    >
-   >* Lär dig hur du väljer vilken domän och vilka IP-adresser som ska användas i en e-postkonfiguration i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
-   >
-   >* Arbeta med din leveranskonsult för att identifiera den domän och de IP-adresser som ska användas för din IP-warmup-plan.<!--TBC-->
+   >Även om du ändrar [körningsadressen](../email/email-settings.md#execution-address) i e-postkonfigurationen används fortfarande standardfältet som angetts på sandlådenivå. [Läs mer](primary-email-addresses.md)
 
 1. Skapa en [kampanj](../campaigns/create-campaign.md) för den schemalagda marknadsföringen och välj åtgärden [E-post](../email/create-email.md#create-email-journey-campaign).
 

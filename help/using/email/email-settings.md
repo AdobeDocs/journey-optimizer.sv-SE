@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 953adc90278a984ca8b73576274ec73fe98c08a1
 workflow-type: tm+mt
-source-wordcount: '2456'
+source-wordcount: '2603'
 ht-degree: 0%
 
 ---
@@ -340,3 +340,26 @@ Du kan dynamiskt förhandsgranska den resulterande spårnings-URL:en. Varje gån
 >[!NOTE]
 >
 >Du kan också lägga till dynamiska, anpassade spårningsparametrar till länkarna i ditt e-postinnehåll, men detta är inte möjligt på konfigurationsnivå. Du måste göra detta när du redigerar meddelandet med e-postdesignern. [Läs mer](message-tracking.md#url-tracking)
+
+## Körningsadress {#execution-address}
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_config_execution_address"
+>title="Definiera vilken adress som ska användas"
+>abstract="När det finns flera e-postadresser eller telefonnummer i databasen (personliga, professionella, osv.) kan du välja vilken som ska prioriteras för sändning."
+
+När du anger en profil som mål kan det finnas flera e-postadresser i databasen (professionell e-postadress, personlig e-postadress osv.).
+
+I så fall använder [!DNL Journey Optimizer] den adress som anges i **[!UICONTROL Execution fields]** på sandlådenivå för att avgöra vilken e-postadress som ska användas från profiltjänsten i prioritetsordning. [Läs mer](../configuration/primary-email-addresses.md)
+
+>[!NOTE]
+>
+>Om du vill kontrollera de fält som används som standard går du till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]** .
+
+Du kan dock ändra det här standardkörningsfältet på e-postkanalens konfigurationsnivå.
+
+Om du vill göra det redigerar du fältet **[!UICONTROL Delivery address]** och väljer ett objekt i listan med tillgängliga XDM-fält för e-posttyp.
+
+![](assets/email-config-delivery-address.png)
+
+Körningsfältet uppdateras och används sedan som primär adress. Den åsidosätter den allmänna inställningen på sandlådenivå.
