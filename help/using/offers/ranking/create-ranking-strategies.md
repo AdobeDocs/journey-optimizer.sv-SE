@@ -27,7 +27,7 @@ Med [!DNL Journey Optimizer] kan du skapa **AI-modeller** för att rangordna erb
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_ai_model_metric"
 >title="Optimeringsmått"
->abstract="[!DNL Journey Optimizer] rangordnade erbjudanden baserat på **konverteringsgrad** (konverteringsgrad = totalt antal konverteringshändelser/totalt antal inställningshändelser). Konverteringsgraden beräknas med två typer av mätvärden: **Impression-händelser** (erbjudanden som visas) och **Conversion-händelser** (erbjudanden som resulterar i klick via e-post eller webben). Dessa händelser hämtas automatiskt med Web SDK eller Mobile SDK som har angetts."
+>abstract="[!DNL Journey Optimizer] rangordnade erbjudanden baserat på **konverteringsgrad** (konverteringsgrad = totalt antal konverteringshändelser/totalt antal inställningshändelser). Konverteringsgraden beräknas med två typer av mätvärden: **Impression-händelser** (erbjudanden som visas) och **Conversion-händelser** (erbjudanden som resulterar i klick via e-post eller webben). Dessa händelser spelas in automatiskt med Web SDK eller Mobile SDK som medföljer."
 
 Så här skapar du en AI-modell:
 
@@ -56,7 +56,7 @@ Så här skapar du en AI-modell:
    >* **Impression-händelser** (erbjudanden som visas)
    >* **Konverteringshändelser** (erbjudanden som resulterar i klickningar via e-post eller webben).
    >
-   >Dessa händelser hämtas automatiskt med Web SDK eller Mobile SDK som har angetts. Läs mer om detta i [Adobe Experience Platform Web SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
+   >Dessa händelser spelas in automatiskt med Web SDK eller Mobile SDK som medföljer. Läs mer om detta i [Adobe Experience Platform Web SDK - översikt](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
 
 1. Välj den eller de datauppsättningar där konverterings- och inställningshändelser samlas in. Lär dig hur du skapar en sådan datauppsättning i [det här avsnittet](../data-collection/create-dataset.md). <!--This dataset needs to be associated with a schema that must have the **[!UICONTROL Proposition Interactions]** field group (previously known as mixin) associated with it.-->
 
@@ -86,7 +86,7 @@ Så här skapar du en AI-modell:
 * defined which type of event you want to capture - offer displayed (impression) and/or offer clicked (conversion),
 * and in which dataset you want to collect the event data.-->
 
-Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händelse ska hämtas automatiskt av fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK.
+Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händelse automatiskt ska fångas av fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK.
 
 För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klickas) måste du ange rätt värde för varje händelsetyp i en upplevelsehändelse som skickas till Adobe Experience Platform. [Lär dig hur](../data-collection/schema-requirement.md)
 
