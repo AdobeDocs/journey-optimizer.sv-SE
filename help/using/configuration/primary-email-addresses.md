@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: 953adc90278a984ca8b73576274ec73fe98c08a1
+source-git-commit: 462928883ae22998f8c16dcbe6f37f062487c5ad
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -66,17 +66,17 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 
 <!--1. You can also select an additional field to use as secondary email address. This allows you to determine which field to use if the primary field is empty for a profile. -->
 
-## Åsidosätt standardvärdet {#override-default-execution-address}
+## Åsidosätt standardkörningsfältet {#override-default-execution-address}
+
+För specifika användningsfall kan du åsidosätta körningsfältet som ställts in globalt och definiera ett annat värde på e-postkonfigurationsnivån eller på resenivån.
 
 ### I e-postkonfigurationen
 
-Du kan ändra standardfältinställningen för körning på sandlådenivå när du definierar en e-postkanalskonfiguration. [Läs mer](../email/email-settings.md#execution-address)
+Du kan ändra standardfältinställningen för körning i de [allmänna inställningarna](#admin-settings) när du definierar en e-postkanalskonfiguration. [Läs mer](../email/email-settings.md#execution-address)
 
-När körningsadressen definieras på konfigurationsnivån används den som primär adress och åsidosätter den allmänna inställningen på sandlådenivå.
+När en körningsadress definieras i e-postkonfigurationen används den som primär adress och åsidosätter den allmänna inställningen på sandlådenivå.
 
 ### I resans parametrar {#journey-parameters}
-
-Endast för särskilda användningsfall kan du åsidosätta det körningsfält som ställts in globalt och definiera ett annat värde på resenivån, särskilt för e-postkanalen.
 
 När du lägger till en **[!UICONTROL Email]**-åtgärd för en [resa](../email/create-email.md#create-email-journey-campaign) visas den primära e-postadressen under de avancerade parametrarna för resan.
 

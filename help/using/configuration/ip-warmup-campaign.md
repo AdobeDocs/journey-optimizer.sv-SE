@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: IP, pooler, leveransbarhet
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: 953adc90278a984ca8b73576274ec73fe98c08a1
+source-git-commit: 462928883ae22998f8c16dcbe6f37f062487c5ad
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!NOTE]
    >
-   >Även om du ändrar [körningsadressen](../email/email-settings.md#execution-address) i e-postkonfigurationen används fortfarande standardfältet som angetts på sandlådenivå. [Läs mer](primary-email-addresses.md)
+   >Även om du ändrar [körningsadressen](../email/email-settings.md#execution-address) i e-postkonfigurationen, används fortfarande standardfältet som angetts på sandlådenivå för IP-värmare. [Läs mer](primary-email-addresses.md)
 
 1. Skapa en [kampanj](../campaigns/create-campaign.md) för den schemalagda marknadsföringen och välj åtgärden [E-post](../email/create-email.md#create-email-journey-campaign).
 
