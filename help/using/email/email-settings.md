@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 953adc90278a984ca8b73576274ec73fe98c08a1
+source-git-commit: 8d6ac8b3d201baf8115d92b35639d5d6e22b9b2d
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2632'
 ht-degree: 0%
 
 ---
@@ -57,9 +57,11 @@ När du skapar ett meddelande måste du välja en giltig kanalkonfiguration som 
 
 Välj den underdomän som ska användas för att skicka e-postmeddelanden.
 
-Om du vill bevara domänens anseende, snabba upp processen för IP-uppvärmning och förbättra leveransmöjligheterna delegerar du dina sändande underdomäner till Adobe. [Läs mer](../configuration/about-subdomain-delegation.md)
+>[!NOTE]
+>
+>Om du vill ha större kontroll över e-postinställningarna kan du definiera dynamiska underdomäner. [Läs mer](../email/surface-personalization.md#dynamic-subdomains)
 
-<!--If needed, you can define dynamic subdomains. [Learn more](../email/surface-personalization.md#dynamic-subdomains)-->
+Om du vill bevara domänens anseende, snabba upp processen för IP-uppvärmning och förbättra leveransmöjligheterna delegerar du dina sändande underdomäner till Adobe. [Läs mer](../configuration/about-subdomain-delegation.md)
 
 
 ## Information om IP-pool {#ip-pools}
@@ -127,6 +129,10 @@ Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina m
 ## Huvudparametrar {#email-header}
 
 I avsnittet **[!UICONTROL Header parameters]** anger du avsändarnamn och e-postadresser som är associerade med den typ av e-post som skickas med den konfigurationen.
+
+>[!NOTE]
+>
+>Om du vill ha större kontroll över e-postinställningarna kan du anpassa rubrikparametrarna. [Läs mer](../email/surface-personalization.md#personalize-header)
 
 * **[!UICONTROL Sender name]**: Avsändarens namn, till exempel ditt varumärkes namn.
 * **[!UICONTROL Sender email]**: Den e-postadress som du vill använda för din kommunikation.
