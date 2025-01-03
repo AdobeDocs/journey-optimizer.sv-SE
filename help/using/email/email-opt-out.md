@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: cb7e2e209872176c67020add47242f95a7304c6c
+source-git-commit: fb14db58f9facac87e83a85e8f163ea31732a374
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ När ni skickar meddelanden från resor eller kampanjer måste ni alltid se till
 
 Om du vill infoga en länk för att avbryta prenumerationen i ditt e-postinnehåll kan du:
 
-* Lägg till en avbeställnings-URL med ett klick i e-postrubriken. Om du aktiverar alternativet **[!UICONTROL List-Unsubscribe Header]** på kanalkonfigurationsnivå läggs en länk för avanmälan till i e-posthuvudet. [Läs mer om avanmälan i e-postmeddelandehuvudet](#unsubscribe-header)
+* Lägg till en avbeställnings-URL med ett klick i e-postrubriken. Alternativet **[!UICONTROL Enable List-Unsubscribe]** på kanalkonfigurationsnivå lägger till en länk för att avanmäla sig till e-posthuvudet. [Läs mer om avanmälan i e-postmeddelandehuvudet](#unsubscribe-header)
 
 * Aktivera länken **för avanmälan med ett klick** för ditt e-postmeddelande.  [Lär dig hur du lägger till en länk för avanmälan med ett enda klick](#one-click-opt-out)
 
@@ -41,9 +41,9 @@ Om du vill infoga en länk för att avbryta prenumerationen i ditt e-postinnehå
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_unsubscribe"
->title="Lägg till avbeställnings-URL i e-posthuvudet"
->abstract="Aktivera rubriken List-Unsubscribe Header om du vill lägga till en URL för att avbryta prenumerationen i e-posthuvudet. Om du vill ange en avanmälnings-URL infogar du en länk för avanmälan med ett klick i e-postinnehållet."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#one-click-opt-out" text="Avanmäl dig med ett klick"
+>title="Lägg till en avbruten URL till e-posthuvudet"
+>abstract="Aktivera List-Unsubscribe om du vill lägga till en URL för att avbryta prenumerationen i e-posthuvudet. Om du vill ange en avanmälnings-URL i ett meddelande infogar du en avanmälningslänk i e-postinnehållet med ett klick."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="Avanmäl dig från e-postinnehållet med ett klick"
 
 En länk eller knapp för att avbryta prenumerationen med ett klick visas bredvid e-postavsändarinformationen och gör att mottagarna direkt kan välja bort dina e-postlistor med ett enda klick. I Adobe Journey Optimizer, när alternativet **Aktivera List-Unsubscribe** är aktiverat, innehåller e-posthuvudet både ett mailto och/eller en URL som standard som mottagarna kan använda för att avbryta prenumerationen från din e-postlista.
 

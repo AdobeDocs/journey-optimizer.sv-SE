@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: f5f8855f23200253a2cb8fca3e01ca7d5b31f274
+source-git-commit: fb14db58f9facac87e83a85e8f163ea31732a374
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2640'
 ht-degree: 0%
 
 ---
@@ -63,9 +63,7 @@ Välj den underdomän som ska användas för att skicka e-postmeddelanden.
 
 Om du vill bevara domänens anseende, snabba upp processen för IP-uppvärmning och förbättra leveransmöjligheterna delegerar du dina sändande underdomäner till Adobe. [Läs mer](../configuration/about-subdomain-delegation.md)
 
-
 ## Information om IP-pool {#ip-pools}
-
 
 Välj den IP-pool som ska associeras med konfigurationen. [Läs mer](../configuration/ip-pools.md)
 
@@ -83,10 +81,9 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 >
 >Om en PTR-post inte är konfigurerad kan du kontakta Adobe.
 
-## Avbeställ sidhuvud{#list-unsubscribe}
+## Avsluta prenumeration{#list-unsubscribe}
 
 <!--Do not modify - Legal Review Done -->
-
 
 När [du väljer en underdomän ](#subdomains-and-ip-pools) i listan visas alternativet **[!UICONTROL Enable List-Unsubscribe]**.
 
@@ -94,20 +91,23 @@ Det här alternativet är aktiverat som standard för att inkludera en avbruten 
 
 ![](assets/preset-list-unsubscribe-header.png)
 
-Om du inaktiverar det här alternativet visas ingen avbruten URL i e-posthuvudet med ett enda klick.
+>[!NOTE]
+>
+>Om du inaktiverar det här alternativet visas ingen avbruten URL i e-posthuvudet med ett enda klick.
 
 Du kan välja medgivandenivå i listrutan **[!UICONTROL Consent level]**. Den kan vara specifik för kanalen eller för profilens identitet. Baserat på den här inställningen uppdateras medgivandet i Adobe Journey Optimizer antingen på kanalnivå eller på ID-nivå när en användare avbeställer prenumerationen med hjälp av den listadress för avbeställning som finns i huvudet i ett e-postmeddelande.
 
-Listan Avbeställ sidhuvud har två funktioner (mailto och One-click unsubscribe URL, som förklaras nedan) som är aktiverade som standard om du inte avmarkerar en eller båda funktionerna:
+Rubriken för att avbryta prenumerationen i List har två funktioner som är aktiverade som standard om du inte avmarkerar en eller båda funktionerna:
+
+![](assets/surface-list-unsubscribe-mailto.png){width="80%"}
+
+<!--![](assets/surface-list-unsubscribe.png){width="80%"}-->
 
 * En **e-postadress (avbeställ)**, som är den måladress dit avbeställningar skickas för automatisk bearbetning.
 
   I Journey Optimizer är e-postadressen för avanmälan den **e-postadress (unsubscribe)** som är standard och som visas i kanalkonfigurationen, baserat på din [valda underdomän](#subdomains-and-ip-pools).
 
-  ![](assets/surface-list-unsubscribe-mailto.png){width="80%" align="left"}
-
-
-* **En-klicksavbehör-URL**, som är standardvärdet för vårt enklicksmeddelande för att välja URL-genererad lista för att avbryta prenumeration, baserat på den underdomän som du har angett och konfigurerat i kanalkonfigurationsinställningarna.
+* URL:en **Ett klick för att avbryta prenumerationen**, vilket som standard är den URL som genereras för att avbryta prenumerationen som genereras av en klickning, baserat på den underdomän som du har angett och konfigurerat i kanalkonfigurationsinställningarna.
 
 <!--
     >[!AVAILABILITY]
@@ -116,15 +116,19 @@ Listan Avbeställ sidhuvud har två funktioner (mailto och One-click unsubscribe
     >
 -->
 
-Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL One-click Unsubscribe URL]** är valfria. Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. Om du lägger till en [-klicksavanmälningslänk ](../privacy/opt-out.md#one-click-opt-out) i ett meddelande som skapats med den här konfigurationen, kommer rubriken för att avbryta prenumerationen att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksavanmälan. I scenariot där alternativet **[!UICONTROL Opt-out configuration]** är aktiverat och funktionen **[!UICONTROL One-click Unsubscribe URL]** inte är markerad.
+Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL One-click unsubscribe URL]** är valfria.
+
+Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. Om du lägger till en [-klicksavanmälningslänk ](../privacy/opt-out.md#one-click-opt-out) i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat och funktionen **[!UICONTROL One-click Unsubscribe URL]** inte är markerad.
 
 ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
 >[!NOTE]
 >
->Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet och standardadressen för ett klick avmarkeras i kanalkonfigurationsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumerationen.
+>Om du inte lägger till en länk för avanmälan med ett enda klick i ditt meddelandeinnehåll och standardURL:en för att avbryta prenumerationen är avmarkerad i kanalkonfigurationsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumerationen på listan.
 
 Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
+
+<!--![](assets/surface-list-unsubscribe-custom.png){width="80%"}-->
 
 ## Huvudparametrar {#email-header}
 
@@ -146,7 +150,7 @@ I avsnittet **[!UICONTROL Header parameters]** anger du avsändarnamn och e-post
 >
 >**[!UICONTROL Sender email]**- och **[!UICONTROL Error email]**-adresserna måste använda den valda [delegerade underdomänen](../configuration/about-subdomain-delegation.md). Om den delegerade underdomänen till exempel är *marketing.luma.com* kan du använda *contact@marketing.luma.com* och *error@marketing.luma.com*.
 
-![](assets/preset-header.png)
+![](assets/preset-header.png){width="80%"}
 
 >[!NOTE]
 >
@@ -255,7 +259,7 @@ Med en startvärdeslista i [!DNL Journey Optimizer] kan du automatiskt inkludera
 
 Välj den lista som är relevant för dig i avsnittet **[!UICONTROL Seed list]**. Lär dig hur du skapar en startvärdeslista i [det här avsnittet](../configuration/seed-lists.md#create-seed-list).
 
-![](../configuration/assets/seed-list-surface.png)
+![](../configuration/assets/seed-list-surface.png){width="80%"}
 
 >[!NOTE]
 >
@@ -305,7 +309,7 @@ Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:
 
 Du kan lägga till upp till 10 spårningsparametrar med knappen **[!UICONTROL Add new parameter]**.
 
-![](assets/preset-url-tracking.png)
+![](assets/preset-url-tracking.png){width="80%"}
 
 Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i fälten **[!UICONTROL Name]** och **[!UICONTROL Value]**.
 
