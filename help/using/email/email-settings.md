@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 8d6ac8b3d201baf8115d92b35639d5d6e22b9b2d
+source-git-commit: f5f8855f23200253a2cb8fca3e01ca7d5b31f274
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
@@ -351,8 +351,8 @@ Du kan dynamiskt förhandsgranska den resulterande spårnings-URL:en. Varje gån
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_execution_address"
->title="Definiera vilken adress som ska användas"
->abstract="När det finns flera e-postadresser eller telefonnummer i databasen (personliga, professionella, osv.) kan du välja vilken som ska prioriteras för sändning."
+>title="Åsidosätt den standardadress som ska användas"
+>abstract="När det finns flera e-postadresser tillgängliga i databasen (personliga, professionella, osv.) kan du välja vilken som ska prioriteras för sändning. Den primära adressen definieras på sandlådenivå, men här kan du åsidosätta standardinställningen för den här specifika e-postkonfigurationen."
 
 När du anger en profil som mål kan det finnas flera e-postadresser i databasen (professionell e-postadress, personlig e-postadress osv.).
 
