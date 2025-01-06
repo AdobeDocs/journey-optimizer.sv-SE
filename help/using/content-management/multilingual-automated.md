@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
-source-git-commit: 3d9fc6480719cf46a3485914c57a883451f2a058
+source-git-commit: eea6cbaf29f3558f85b462d3dd3750d7f716bbcc
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 0%
@@ -168,7 +168,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
    1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [Datainsamlingsdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
-   2. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
+   1. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
 
       ![](assets/multilingual-experience-events-rule-if.png)
 
@@ -177,7 +177,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
       * Välj &quot;XDM Event Type equals personalization.request&quot; i den högra rutan
       * Bekräfta genom att klicka på knappen **[!UICONTROL Keep changes]**.
 
-   3. Lägg till en åtgärd som konfigurerats enligt nedan i regelns **[!UICONTROL THEN]**-avsnitt:
+   1. Lägg till en åtgärd som konfigurerats enligt nedan i regelns **[!UICONTROL THEN]**-avsnitt:
 
       ![](assets/multilingual-experience-events-rule-then.png)
 
