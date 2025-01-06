@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
-source-git-commit: 1b48cb825eb1f3110a27389d1e780cb1d7e80fad
+source-git-commit: 3d9fc6480719cf46a3485914c57a883451f2a058
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1877'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,9 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
    >
    >Dessa krav är endast obligatoriska för kanalerna In-App och Content Card.
 
-   1. Gå till menyn **[!UICONTROL Rules]** i Adobe Experience Platform Data Collection och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [Datainsamlingsdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+   1. Gå till taggegenskaper i Adobe Experience Platform Data Collection.
+
+   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [Datainsamlingsdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
    2. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
 

@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 62327f8c-7a9d-44c3-88f9-3048ff8bd326
-source-git-commit: e2b35cfb2cdaf0dac002ff74a11b2fe98206cd6f
+source-git-commit: 3d9fc6480719cf46a3485914c57a883451f2a058
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,8 @@ Kontrollera att du har skapat ett konto hos respektive leverantör innan du läg
    ![](assets/provider_2.png)
 
 1. Om du använder Microsoft Translator som provider anger du **[!UICONTROL Subscription Key]** och **[!UICONTROL Endpoint URL]**.
+
+   Klicka på **[!UICONTROL Validate Credentials]** för att testa anslutningen.
 
    ![](assets/provider_3.png)
 
