@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: fb14db58f9facac87e83a85e8f163ea31732a374
+source-git-commit: 8a9f0b42acb19f0b28340f11dada19f5b6524c66
 workflow-type: tm+mt
-source-wordcount: '2640'
+source-wordcount: '2651'
 ht-degree: 0%
 
 ---
@@ -366,7 +366,7 @@ I så fall använder [!DNL Journey Optimizer] den adress som anges i **[!UICONTR
 >
 >Om du vill kontrollera de fält som används som standard går du till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]** .
 
-Du kan dock ändra det här standardkörningsfältet på e-postkanalens konfigurationsnivå.
+Du kan dock ändra det här standardkörningsfältet på e-postkanalens konfigurationsnivå. Du kan sedan använda den här inställningen för specifika kampanjer eller resor.
 
 Om du vill göra det redigerar du fältet **[!UICONTROL Delivery address]** och väljer ett objekt i listan med tillgängliga XDM-fält för e-posttyp.
 

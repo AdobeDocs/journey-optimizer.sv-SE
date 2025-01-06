@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: 8a9f0b42acb19f0b28340f11dada19f5b6524c66
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
@@ -113,11 +113,11 @@ Följ stegen nedan om du vill använda personaliserade variabler för konfigurat
    >
    >Du kan bara välja **[!UICONTROL Profile attributes]** och **[!UICONTROL Helper functions]**.
 
-   Säg att du vill hantera dynamiskt skickade e-postmeddelanden för en säljassistent, där säljassistenten hämtas från en händelse eller kontextuella parametrar för kampanjer. Exempel:
+   Du vill till exempel hantera dynamiskt skickade e-postmeddelanden för en relationshanterare, vars information lagras i kundprofilen, så att alla kunder är länkade till en relationshanterare. I en [resa](../building-journeys/journey-gs.md) kan e-posthuvudet (avsändarens namn, avsändarens e-postadress, svarsadressen) anpassas med relationshanterarens parametrar utifrån profilattributen.
 
-   * Om en köphändelse är länkad till säljassistenten för en viss butik i en [resa](../building-journeys/journey-gs.md), kan e-posthuvudet (avsändarens namn, avsändarens e-postadress, svarsadressen) anpassas med försäljningsassistentparametrarna utifrån händelseattributen.
-
-   * I en [API-utlöst kampanj](../campaigns/api-triggered-campaigns.md), som initierats externt av en säljare, kan det utlösta e-postmeddelandet skickas för försäljningsassistentens räkning och huvudpersonaliseringsvärdena från parametrar för kampanjkontext.
+   <!--The examples below use event parameters, which are currently not available.
+    
+    Let's say you want to handle dynamically emails sent on behalf of a sales assistant, where the sales assistant is retrieved from an event or campaign contextual parameters. For example: In a [journey](../building-journeys/journey-gs.md), when a purchase event is linked to the sales assistant of a specific shop, the email header (sender name, sender email, reply to address) can be personalized with the sales assistant parameters, taken from the event attributes. In an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), initiated externally by a sales assistant, the triggered email can be sent on behalf of the sales assistant and the header personalization values taken from campaign contextual parameters.-->
 
 1. Upprepa stegen ovan för varje parameter som du vill lägga till personalisering i.
 
