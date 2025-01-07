@@ -5,20 +5,22 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: e742c04e-2987-4466-84af-bdaf4d714552
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: 83da97926138c867ea2dacca6e5cf5e40c926eda
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
 # Skicka e-postkorrektur {#send-proofs}
 
+>[!PREREQUISITES]
+>
+>Användarna måste ha behörighet **Godkänn och publicera** för den specifika resursen, kampanjen eller resan som är kopplad till e-postmeddelandet för att kunna skicka korrektur. [Läs mer om behörigheter](../administration/ootb-permissions.md)
+
 Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas till huvudmålgruppen. Mottagarna av beviset ansvarar för att godkänna meddelandet: rendering, innehåll, personaliseringsinställningar, konfiguration.
 
->[!NOTE]
->
->I [!DNL Journey optimizer] kan du också testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
+Observera att [!DNL Journey optimizer] även låter dig testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV-/JSON-fil, eller läggs till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
 
 Så här skickar du e-postkorrektur när [testprofiler](test-profiles.md) har valts:
 
