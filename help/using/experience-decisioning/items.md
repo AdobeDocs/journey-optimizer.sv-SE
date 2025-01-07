@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: 5a64190203563d66309c897fe3ee806a74e8bfc9
+source-git-commit: 83ad828a4d342bba10284cdd20d22eb325e3e1f7
 workflow-type: tm+mt
 source-wordcount: '1682'
 ht-degree: 0%
@@ -47,11 +47,12 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 1. Ange ett namn och en beskrivning.
 1. Ange start- och slutdatum. Posten kommer endast att beaktas av beslutsmotorn inom dessa datum.
 1. Ange **[!UICONTROL Priority]** för beslutsobjektet jämfört med andra, om en profil kvalificerar för flera objekt. En högre prioritet ger objektet företräde framför andra.
-1. I fältet **Taggar** kan du tilldela enhetliga Adobe Experience Platform-taggar till dina beslutsobjekt. På så sätt kan du enkelt klassificera dem och förbättra sökningen. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
 
    >[!NOTE]
    >
    >Prioriteten är en heltalsdatatyp. Alla attribut som är heltalsdatatyper ska innehålla heltalsvärden (inga decimaler).
+
+1. I fältet **Taggar** kan du tilldela enhetliga Adobe Experience Platform-taggar till dina beslutsobjekt. På så sätt kan du enkelt klassificera dem och förbättra sökningen. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
 
 1. Ange anpassade attribut (valfritt). Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De definieras i beslutsobjektens katalogschema. [Lär dig arbeta med kataloger](catalogs.md)
 

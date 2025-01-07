@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
-source-git-commit: 616e1dd9fbfd029f7209356d5c19cfff9d4b4f06
+source-git-commit: 83ad828a4d342bba10284cdd20d22eb325e3e1f7
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -44,7 +44,7 @@ En urvalsstrategi kan återanvändas och består av en samling som är associera
 
    ![](assets/strategy-list-edit-collection.png)
 
-## Skapa en urvalsstrategi
+## Skapa en urvalsstrategi {#create-selection-strategy}
 
 Följ stegen nedan för att skapa en urvalsstrategi.
 
