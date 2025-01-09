@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: bfc16476f525328b2b8451bfdd57b6b2027db916
+source-git-commit: 3abaa58fa4fa3baae5c7072bdc112de4a5e9119a
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -221,14 +221,3 @@ När beslutsprincipen har skapats kan den användas i [personaliseringsredigerar
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
 
-## Rapportering i Customer Journey Analytics {#cja}
-
-Om du arbetar med Customer Journey Analytics kan du skapa anpassade rapportinstrumentpaneler för kodbaserade kampanjer med hjälp av Beslutsfattande.
-
-De huvudsakliga stegen visas nedan. Detaljerad information om hur du arbetar med Customer Journey Analytics finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing){target="_blank"}.
-
-1. Skapa och konfigurera en **anslutning** i Customer Journey Analytics. På så sätt kan du ansluta till den datauppsättning som du vill ha rapporter för. [Lär dig skapa en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}
-
-1. Skapa en **datavy** och koppla den till anslutningen som skapades tidigare. På fliken **[!UICONTROL Components]** väljer du de relevanta schemafält som du vill visa i rapporter. Kontrollera att du inkluderar fälten **propositionInteract** och **propositionDisplay** för beslut. [Lär dig hur du skapar och konfigurerar datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}
-
-1. Kombinera datakomponenter, tabeller och visualiseringar i **arbetsyteprojekt** för att skapa och dela rapporter för den kodbaserade kampanjen.[Lär dig skapa arbetsyteprojekt](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects){target="_blank"}
