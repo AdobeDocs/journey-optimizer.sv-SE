@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 616e1dd9fbfd029f7209356d5c19cfff9d4b4f06
+source-git-commit: bfc16476f525328b2b8451bfdd57b6b2027db916
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1773'
 ht-degree: 0%
 
 ---
@@ -60,9 +60,15 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 
 1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
 
-1. I [kodredigeraren](../code-based/create-code-based.md#edit-code) väljer du ikonen **[!UICONTROL Decision policy]** och klickar på **[!UICONTROL Add decision policy]**.
+1. Välj **[!UICONTROL Decision policy]** i [kodredigeraren](../code-based/create-code-based.md#edit-code) och klicka på **[!UICONTROL Add decision policy]**.
 
    ![](assets/decision-code-based-create.png)
+
+1. Som standard skapar du en ny profil.
+
+   >[!NOTE]
+   >
+   >Du kan också välja att välja en befintlig profil.
 
 1. Fyll i informationen för din beslutsprincip: lägg till ett namn och välj en katalog.
 
@@ -78,9 +84,11 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 
 I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt och urvalsstrategier som ska presenteras med beslutspolicyn.
 
-1. Klicka på knappen **[!UICONTROL Add]** och välj sedan den typ av objekt som ska inkluderas i profilen:
+1. Klicka på knappen **[!UICONTROL Add]**.
 
-   * **[!UICONTROL Selection strategy]**: Lägg till en eller flera markeringsstrategier. Beslutsstrategier utnyttjar samlingar som är kopplade till behörighetskrav och rangordningsmetoder för att fastställa vilka poster som ska visas. Du kan välja en befintlig urvalsstrategi eller skapa en ny med knappen **[!UICONTROL Create selection strategy]**.[Lär dig hur du skapar urvalsstrategier](selection-strategies.md)
+1. Välj vilken typ av objekt som ska ingå i profilen:
+
+   * **[!UICONTROL Selection strategy]**: Lägg till en eller flera markeringsstrategier. Beslutsstrategier utnyttjar samlingar som är kopplade till behörighetskrav och rangordningsmetoder för att fastställa vilka poster som ska visas. Du kan välja en befintlig urvalsstrategi eller skapa en ny med knappen **[!UICONTROL Create selection strategy]**. [Lär dig hur du skapar urvalsstrategier](selection-strategies.md)
 
    * **[!UICONTROL Decision item]**: Lägg till enskilda beslutsobjekt som ska visas utan att behöva köra en urvalsstrategi. Du kan bara välja ett beslutsobjekt i taget. Alla villkor som anges för artikeln gäller.
 
@@ -90,7 +98,9 @@ I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt
    >
    >En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsammans. [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
 
-1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare. Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer om utvärderingsordning för beslutsprinciper](#evaluation-order)
+1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare.
+
+   Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer](#evaluation-order)
 
 ### Hantera utvärderingsordning i en beslutspolicy {#evaluation-order}
 

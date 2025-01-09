@@ -8,10 +8,10 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
-source-git-commit: ff17e7609eb6504632d35671a4bd2aa11a613372
+source-git-commit: bfc16476f525328b2b8451bfdd57b6b2027db916
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '705'
+ht-degree: 4%
 
 ---
 
@@ -30,6 +30,10 @@ Om du vill mäta vilken som fungerar bäst för målgruppen skapar du en kampanj
 
 Först måste du bygga två urvalsstrategier: en med prioritet som rangordningsmetod och en med en formel som rangordningsmetod.
 
+>[!NOTE]
+>
+>Du kan också skapa enskilda beslutsobjekt utan att behöva gå igenom en urvalsstrategi. Prioriteten som anges för varje objekt gäller.
+
 ### Skapa den första urvalsstrategin
 
 Följ stegen nedan för att bygga upp den första urvalsstrategin med prioritet som rangordningsmetod.
@@ -38,7 +42,7 @@ Följ stegen nedan för att bygga upp den första urvalsstrategin med prioritet 
 
 1. Ange **[!UICONTROL Priority]** för beslutsobjektet jämfört med andra. Om en profil kvalificerar för flera objekt ger en högre prioritet objektets prioritet framför andra.
 
-   ![](assets/exd-uc-item-priority.png)
+   ![](assets/exd-uc-item-priority.png){width="80%"}
 
    >[!NOTE]
    >
@@ -58,7 +62,7 @@ Följ stegen nedan för att bygga upp den första urvalsstrategin med prioritet 
 
 1. [Välj den rangordningsmetod](#select-ranking-method) som du vill använda för att välja det bästa erbjudandet för varje profil. I det här fallet väljer du **[!UICONTROL Offer priority]**: om flera erbjudanden är berättigade för den här strategin använder beslutsmotorn det värde som angetts som **[!UICONTROL Priority]** i erbjudandena. [Läs mer](selection-strategies.md#offer-priority)
 
-   ![](assets/exd-uc-strategy-priority.png)
+   ![](assets/exd-uc-strategy-priority.png){width="80%"}
 
 ### Skapa den andra urvalsstrategin
 
@@ -66,7 +70,7 @@ Om du vill bygga den andra urvalsstrategin med en formel som rangordningsmetod f
 
 1. Skapa ett beslutsobjekt. [Lär dig hur](items.md)
 
-   <!--1. Set the same **[!UICONTROL Priority]** as for the first decision item. TBC?-->
+   <!--Do you need to set the same **[!UICONTROL Priority]** as for the first decision item, or it won't be considered at all?-->
 
 1. Ange berättigandestatus för beslutsobjektet:
 
@@ -90,46 +94,52 @@ Om du vill bygga den andra urvalsstrategin med en formel som rangordningsmetod f
 
 Define two delivery treatments each containing a different decision policy.-->
 
-När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad upplevelsekampanj där du definierar olika behandlingar för varje strategi för att jämföra vilken som fungerar bäst.
+När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad upplevelsekampanj där du definierar olika behandlingar för varje strategi, för att jämföra vilken som fungerar bäst.
 
 1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
 
 1. Klicka på **[!UICONTROL Create experiment]** på kampanjsammanfattningssidan för att börja konfigurera ditt innehållsexperiment. [Läs mer](../content-management/content-experiment.md)
 
-   ![](assets/exd-uc-create-experiment.png)
+   ![](assets/exd-uc-create-experiment.png){width="80%"}
 
-1. Välj eller skapa en kodbaserad konfiguration på kampanjsammanfattningssidan och klicka på **[!UICONTROL Edit content]**.
+1. Välj en kodbaserad konfiguration på kampanjsammanfattningssidan och klicka på **[!UICONTROL Edit content]**.
 
-   ![](assets/exd-uc-edit-cbe-content.png)
+   ![](assets/exd-uc-edit-cbe-content.png){width="80%"}
 
-<!--1. Sart personalizing **Treatment A** by clicking **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Edit code]** i innehållsutgåvans fönster för att börja personalisera **Behandling A**.
 
-    ![](assets/exd-uc-create-treatment-a.png)-->
+   ![](assets/exd-uc-experiment-treatment-a.png){width="80%"}
 
-1. Börja personalisera **Behandling A** från innehållsutgåvans fönster genom att klicka på **[!UICONTROL Edit code]**.
-
-   ![](assets/exd-uc-experiment-treatment-a.png)
-
-1. Välj **[!UICONTROL Decision policy]**, klicka på **[!UICONTROL Add decision policy]** och fyll i beslutsinformationen. [Läs mer](create-decision.md)
+1. I [kodredigeraren](../code-based/create-code-based.md#edit-code) väljer du **[!UICONTROL Decision policy]**, klickar på **[!UICONTROL Add decision policy]** och fyller i beslutsinformationen. [Läs mer](create-decision.md#add)
 
    ![](assets/decision-code-based-create.png)
 
-1. Välj den första strategi som du skapade. Klicka på **[!UICONTROL Add strategy]**.
+1. Klicka på knappen **[!UICONTROL Add]** i avsnittet **[!UICONTROL Strategy sequence]** och välj **[!UICONTROL Selection strategy]**. [Läs mer](create-decision.md#select)
 
-1. Klicka på **[!UICONTROL Create]**. Det nya beslutet läggs till under **[!UICONTROL Decisions]**.
+   ![](assets/decision-code-based-strategy-sequence.png){width="80%"}
 
-   ![](assets/decision-code-based-decision-added.png)
+   >[!NOTE]
+   >
+   >Du kan också välja **[!UICONTROL Decision item]** om du vill lägga till enskilda objekt utan att behöva köra igenom en urvalsstrategi. Prioriteten som anges för varje objekt gäller.
 
-1. Klicka på ikonen för fler åtgärder (tre punkter) och välj **[!UICONTROL Add]**. Nu kan du lägga till alla beslutsattribut som du vill ha i det här.
+1. Välj den första strategi som du skapade.
 
-   ![](assets/decision-code-based-add-decision.png)
+   ![](assets/exd-uc-experiment-strategy-priority.png){width="80%"}
 
-1. Du kan också lägga till andra attribut som är tillgängliga i personaliseringsredigeraren, till exempel profilattribut.
+1. Spara ändringarna och klicka på **[!UICONTROL Create]**. Det nya beslutet läggs till under **[!UICONTROL Decision policy]**.
 
-   ![](assets/decision-code-based-decision-profile-attribute.png)
+1. Klicka på knappen **[!UICONTROL Insert policy]**. Koden som motsvarar beslutspolicyn läggs till. Lägg sedan till alla attribut du vill använda i koden, inklusive profilattribut. [Läs mer](create-decision.md#use-decision-policy)
 
-1. I innehållsutgåvans fönster väljer du **Behandling B** och upprepar stegen ovan för att skapa en annan beslutsprincip och väljer den andra urvalsstrategi som du har skapat.
+   ![](assets/exd-uc-experiment-insert-policy.png){width="80%"}
 
-   ![](assets/exd-uc-experiment-treatment-b.png)
+1. Spara ändringarna.
 
-1. Spara innehållet.
+1. Gå tillbaka till innehållsutgåvans fönster, välj plusknappen (+) för att lägga till **Behandling B**, markera den och klicka på **[!UICONTROL Edit code]**.
+
+   ![](assets/exd-uc-experiment-treatment-b.png){width="80%"}
+
+1. Upprepa stegen ovan om du vill skapa en annan beslutsprincip och välja den andra urvalsstrategin som du skapade. <!--Do you need to create exactly the same content to compare only the ranking method?-->
+
+1. Spara ändringarna och [publicera din kodbaserade upplevelsekampanj](../code-based/publish-code-based.md).
+
+Du kan spåra hur din kampanj fungerar med [rapporten om experimentella kampanjer](../reports/campaign-global-report-cja-experimentation.md) och [rapporten om beslut](cja-reporting.md). <!--TBC how to check which treatment performs best-->
