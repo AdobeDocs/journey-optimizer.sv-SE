@@ -8,10 +8,10 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
-source-git-commit: 7da07ebb5fd2ded0f86ee1ca8fc355e422f01502
+source-git-commit: ff17e7609eb6504632d35671a4bd2aa11a613372
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 4%
+source-wordcount: '617'
+ht-degree: 3%
 
 ---
 
@@ -19,16 +19,12 @@ ht-degree: 4%
 
 I det här användningsexemplet beskrivs alla steg som behövs för att använda Decisionering med den kodbaserade kanalen [!DNL Journey Optimizer].
 
-<!--In this use case, you create a campaign where you define two delivery treatments - each containing a different decision policy in order to measure which one performs best for your target audience.-->
-
-I det här fallet är du osäker på om en viss rankningsformel kommer att fungera bättre än de förtilldelade prioriteterna.
+I det här exemplet är du osäker på om en viss rankningsformel fungerar bättre än de förtilldelade prioriteterna.
 
 Om du vill mäta vilken som fungerar bäst för målgruppen skapar du en kampanj med [Innehållsexperiment](../content-management/content-experiment.md) där du definierar två leveranssätt:
 
-<!--Set up the experiment such that:-->
-
-* Den första behandlingen innehåller en urvalsstrategi med prioritet som rangordningsmetod.
-* Den andra behandlingen innehåller en annan urvalsstrategi där en formel är rangordningsmetoden.
+* I den första behandlingen används prioritet som rangordningsmetod.
+* Den andra behandlingen använder en formel som rangordningsmetod.
 
 ## Skapa urvalsstrategier
 
@@ -36,7 +32,7 @@ Först måste du bygga två urvalsstrategier: en med prioritet som rangordningsm
 
 ### Skapa den första urvalsstrategin
 
-I den första urvalsstrategin väljer du prioritet som rangordningsmetod. Följ stegen nedan.
+Följ stegen nedan för att bygga upp den första urvalsstrategin med prioritet som rangordningsmetod.
 
 1. Skapa ett beslutsobjekt. [Lär dig hur](items.md)
 
@@ -60,19 +56,17 @@ I den första urvalsstrategin väljer du prioritet som rangordningsmetod. Följ 
 
 1. Skapa en [urvalsstrategi](selection-strategies.md#create-selection-strategy) och välj den [samling](collections.md) som innehåller de erbjudanden som ska beaktas.
 
-1. [Välj den rangordningsmetod](#select-ranking-method) som du vill använda för att välja det bästa erbjudandet för varje profil.
-
-   I det här fallet väljer du **[!UICONTROL Offer priority]**: om flera erbjudanden är berättigade för den här strategin använder beslutsmotorn det värde som angetts som **[!UICONTROL Priority]** i erbjudandena. [Läs mer](selection-strategies.md#offer-priority)
+1. [Välj den rangordningsmetod](#select-ranking-method) som du vill använda för att välja det bästa erbjudandet för varje profil. I det här fallet väljer du **[!UICONTROL Offer priority]**: om flera erbjudanden är berättigade för den här strategin använder beslutsmotorn det värde som angetts som **[!UICONTROL Priority]** i erbjudandena. [Läs mer](selection-strategies.md#offer-priority)
 
    ![](assets/exd-uc-strategy-priority.png)
 
 ### Skapa den andra urvalsstrategin
 
-I den andra urvalsstrategin väljer du en formel som rangordningsmetod. Följ stegen nedan.
+Om du vill bygga den andra urvalsstrategin med en formel som rangordningsmetod följer du stegen nedan.
 
 1. Skapa ett beslutsobjekt. [Lär dig hur](items.md)
 
-<!--1. Set the same **[!UICONTROL Priority]** as for the first decision item. TBC?-->
+   <!--1. Set the same **[!UICONTROL Priority]** as for the first decision item. TBC?-->
 
 1. Ange berättigandestatus för beslutsobjektet:
 
@@ -86,9 +80,7 @@ I den andra urvalsstrategin väljer du en formel som rangordningsmetod. Följ st
 
 1. Skapa en [urvalsstrategi](selection-strategies.md#create-selection-strategy) och välj den [samling](collections.md) som innehåller de erbjudanden som ska beaktas.
 
-1. [Välj den rangordningsmetod](#select-ranking-method) som du vill använda för att välja det bästa erbjudandet för varje profil.
-
-   I det här fallet väljer du **[!UICONTROL Formula]** om du vill använda en viss beräknad poäng för att välja vilket kvalificerat erbjudande som ska levereras. [Läs mer](selection-strategies.md#ranking-formula)
+1. [Välj den rangordningsmetod](#select-ranking-method) som du vill använda för att välja det bästa erbjudandet för varje profil. I det här fallet väljer du **[!UICONTROL Formula]** om du vill använda ett specifikt beräknat poängvärde för att avgöra vilket kvalificerat erbjudande som ska levereras. [Läs mer](selection-strategies.md#ranking-formula)
 
    ![](assets/exd-uc-strategy-formula.png)
 
@@ -106,7 +98,9 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
 
    ![](assets/exd-uc-create-experiment.png)
 
-1. Klicka på **[!UICONTROL Edit content]**.
+1. Välj eller skapa en kodbaserad konfiguration på kampanjsammanfattningssidan och klicka på **[!UICONTROL Edit content]**.
+
+   ![](assets/exd-uc-edit-cbe-content.png)
 
 <!--1. Sart personalizing **Treatment A** by clicking **[!UICONTROL Create]**.
 
