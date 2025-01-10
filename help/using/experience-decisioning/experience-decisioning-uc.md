@@ -8,9 +8,9 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
-source-git-commit: bfc16476f525328b2b8451bfdd57b6b2027db916
+source-git-commit: aa0791b7ca3eb4c39f700fbe23937b5529f44376
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '707'
 ht-degree: 4%
 
 ---
@@ -19,12 +19,10 @@ ht-degree: 4%
 
 I det här användningsexemplet beskrivs alla steg som behövs för att använda Decisionering med den kodbaserade kanalen [!DNL Journey Optimizer].
 
-I det här exemplet är du osäker på om en viss rankningsformel fungerar bättre än de förtilldelade prioriteterna.
-
-Om du vill mäta vilken som fungerar bäst för målgruppen skapar du en kampanj med [Innehållsexperiment](../content-management/content-experiment.md) där du definierar två leveranssätt:
+I det här exemplet är du osäker på om en viss rankningsformel fungerar bättre än de förtilldelade prioriteterna. Om du vill mäta vilken som fungerar bäst för målgruppen skapar du en kampanj med [Content Experiment](../content-management/content-experiment.md) där du definierar två leveranssätt:
 
 * I den första behandlingen används prioritet som rangordningsmetod.
-* Den andra behandlingen använder en formel som rangordningsmetod.
+* I den andra behandlingen används en formel som rangordningsmetod.
 
 ## Skapa urvalsstrategier
 
@@ -34,7 +32,7 @@ Först måste du bygga två urvalsstrategier: en med prioritet som rangordningsm
 >
 >Du kan också skapa enskilda beslutsobjekt utan att behöva gå igenom en urvalsstrategi. Prioriteten som anges för varje objekt gäller.
 
-### Skapa den första urvalsstrategin
+### Skapa en strategi med prioritet
 
 Följ stegen nedan för att bygga upp den första urvalsstrategin med prioritet som rangordningsmetod.
 
@@ -64,7 +62,7 @@ Följ stegen nedan för att bygga upp den första urvalsstrategin med prioritet 
 
    ![](assets/exd-uc-strategy-priority.png){width="80%"}
 
-### Skapa den andra urvalsstrategin
+### Skapa en annan strategi med hjälp av en formel
 
 Om du vill bygga den andra urvalsstrategin med en formel som rangordningsmetod följer du stegen nedan.
 
