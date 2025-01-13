@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: 62b5cfd480414c898ab6f123de8c6b9f99667b7d
+source-git-commit: d93ef15df4a25e7a6d6fab3df1f9838a0c3d31df
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Om du vill redigera ett fragment följer du stegen nedan.
 
    >[!NOTE]
    >
-   >När du redigerar ett uttrycksfragment kan du ta bort alla anpassningsfält, men inte lägga till nya i fragmentinnehållet. Om du vill lägga till anpassningsfält duplicerar du fragmentet för att skapa ett nytt.
+   >När du redigerar ett fragment kan du ta bort alla anpassningsfält, men inte lägga till nya i fragmentinnehållet. Om du vill lägga till anpassningsfält duplicerar du fragmentet för att skapa ett nytt.
 
    Du kan också kontrollera listan över resor, kampanjer och innehållsmallar där fragmentet används för närvarande genom att välja alternativet **Utforskaren-referenser**. [Läs mer](#explore-references)
 
