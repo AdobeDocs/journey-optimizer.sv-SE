@@ -8,10 +8,10 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
-source-git-commit: fbe07345079c6e8cf5ae081094fbc8c25f6d0e57
+source-git-commit: 98b7a5493a4e325328ab349c405af423b3836807
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 4%
+source-wordcount: '757'
+ht-degree: 3%
 
 ---
 
@@ -96,7 +96,7 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
 
 1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
 
-1. Klicka på **[!UICONTROL Create experiment]** på kampanjsammanfattningssidan för att börja konfigurera ditt innehållsexperiment. [Läs mer](../content-management/content-experiment.md)
+1. Klicka på **[!UICONTROL Create experiment]** på kampanjsammanfattningssidan för att konfigurera ditt innehållsexperiment. [Lär dig hur](../content-management/content-experiment.md)
 
    ![](assets/exd-uc-create-experiment.png){width="90%"}
 
@@ -140,4 +140,6 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
 
 1. Spara ändringarna och [publicera din kodbaserade upplevelsekampanj](../code-based/publish-code-based.md).
 
-Du kan spåra hur din kampanj fungerar med [rapporten om experimentella kampanjer](../reports/campaign-global-report-cja-experimentation.md) och [rapporten om beslut](cja-reporting.md). <!--TBC how to check which treatment performs best-->
+När du har kört din upplevelse kan du följa upp hur kampanjbehandlingarna fungerar med [rapporten om experimentella kampanjer](../reports/campaign-global-report-cja-experimentation.md).<!-- and [report on decisioning](cja-reporting.md).--> Du kan sedan tolka resultatet av ditt experiment. [Lär dig hur](../content-management/get-started-experiment.md#interpret-results)
+
+Om resultatet av ditt experiment är klart kan du ge behandlingen bästa resultat till alla dina kunder. Du kan också skapa en ny kampanj med hjälp av urvalsstrategin där rankningsmetoden som ger bästa resultat replikeras.
