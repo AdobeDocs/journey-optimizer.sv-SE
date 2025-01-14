@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: a9efa676242b1e3453033c77f1f5afb9da931a3d
+source-git-commit: abdfa7fa107e8be5d395c634057c38a512a4a03d
 workflow-type: tm+mt
 source-wordcount: '2154'
 ht-degree: 24%
@@ -397,7 +397,7 @@ ht-degree: 24%
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
    + Heltidsrapport{#channel-report}
-      + [Kom igång med rapporten All time](using/reports/report-gs-cja.md)
+      + [Kom igång med hela tidsrapporten](using/reports/report-gs-cja.md)
       + [Konfigurera Customer Journey Analytics manuellt](using/reports/cja-ajo.md)
       + [Hantera dina rapporter](using/reports/report-cja-manage.md)
       + [Krav för rapportering och experimenterande](using/reports/reporting-configuration.md)
