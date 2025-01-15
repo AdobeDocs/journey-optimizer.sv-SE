@@ -8,9 +8,9 @@ topic: Content Management
 role: Admin
 level: Intermediate, Experienced
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: f8a6c2a3b27d5dca422dfdc868f802c6a10b001d
+source-git-commit: 0eeb9f6aa6276b99a4d38efc2d371ebdb58c141d
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -55,11 +55,14 @@ För att skydda leveransen utesluts de mottagare vars adresser finns med i lista
 
 ## Använd övervakningsverktyg {#monitoring-tools}
 
-Använd de funktioner som [!DNL Journey Optimizer] erbjuder för att övervaka din leveransbarhet.
+Använd rapportfunktionerna från [!DNL Journey Optimizer] för att övervaka din leveransbarhet.
 
-Fliken **[!UICONTROL Executions]** i meddelandelistan gör att du kan kontrollera hur dina leveranser fungerar med hjälp av en uppsättning realtidsindikatorer. På den här fliken visas bland annat:
+Med kampanjrapporter och reserapporter kan ni kontrollera hur era leveranser fungerar med hjälp av en uppsättning realtidsindikatorer. De visar bland annat:
+
 * Antalet meddelanden som har körts, skickats och levererats.
 * Antalet meddelanden som har öppnats och antalet meddelanden/länkar som har klickats.
+
+Läs mer om [live-rapport](../reports/live-report.md) och [heltidsrapport](../reports/report-gs-cja.md)
 
 ## Anpassa meddelandeinnehåll {#adapt-message-content}
 
@@ -76,6 +79,12 @@ Om du vill förbättra leveransgraden och se till att dina e-postmeddelanden nå
 ## Ange ditt rykte som avsändare {#reputation}
 
 Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du ange ditt rykte som avsändare. Annars kan leveranserna blockeras eller flyttas till skräppostmappen i mottagarens postlåda.
+
+När du skickar e-post till en helt ny IP-adress kan du nu enkelt utföra arbetsflöden för IP-värmare direkt från användargränssnittet.
+
+Adobe Journey Optimizer erbjuder ett standardiserat och effektivt sätt att värma upp era IP-adresser som följer de bästa metoderna för optimal leverans.
+
+[Lär dig mer om IP-warmritningar](../configuration/ip-warmup-gs.md)
 
 <!--To warm up your IP, you can gradually ramp up the number of your deliveries. Learn more in this [use case](../building-journeys/ramp-up-deliveries-uc.md).-->
 
