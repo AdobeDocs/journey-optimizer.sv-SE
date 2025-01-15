@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 97b6041d4b8523b11b13dd78cd8b241a6410f1bc
+source-git-commit: 4eef896bd139cfb4acb4b817527dee67e246082d
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2172'
 ht-degree: 6%
 
 ---
@@ -21,6 +21,25 @@ ht-degree: 6%
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
+
+## Uppdateringar från 25 januari {#25-01-rn}
+
+<table>
+<thead>
+<tr>
+<th><strong>Customer Journey Analytics-mallar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. Med den här nya funktionen kan ni effektivisera rapporteringsprocessen med fördesignade mallar som är anpassade efter era analysbehov.
+</p>
+<p>Mer information finns i den <a href="../reports/report-cja-manage.md#cja-template">detaljerade dokumentationen</a>.</p>
+<p> Funktionen <b>Mall</b> introduceras stegvis med fullständig allmän tillgänglighet planerad till slutet av januari</p>
+</tr>
+</tbody>
+</table>
 
 ## 24 oktober {#24-10-rn}
 

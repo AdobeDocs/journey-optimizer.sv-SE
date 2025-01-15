@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
-source-git-commit: b3d1d02605ff5e759c665847efad2d78bef6a1cf
+source-git-commit: 4eef896bd139cfb4acb4b817527dee67e246082d
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 # Hantera dina rapporter {#channel-cja-manage}
 
 ## Analysera i Customer Journey Analytics {#analyze}
+
+>[!AVAILABILITY]
+>
+> Funktionen **Analysera i CJA** är endast tillgänglig för användare med en [!DNL Customer Journey Analytics]-licens.
 
 ![](assets/cja-analyze.png)
 
@@ -211,3 +215,47 @@ Nu kan du markera specifika data i tabellen och direkt skapa en målgrupp utifr�
 
 Du kan nu fortsätta att använda den nya målgruppen med en resa eller kampanj.
 
+## Hantera mallar {#cja-template}
+
+>[!AVAILABILITY]
+>
+> Funktionen **Template** introduceras stegvis, med fullständig allmän tillgänglighet planerad till slutet av januari och exklusivt tillgänglig för användare med en [!DNL Customer Journey Analytics]-licens.
+
+Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. [Läs mer om mallen Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
+
+När du får åtkomst till dina rapporter kan du välja mellan två malltyper i listrutan **[!UICONTROL Select a template]**:
+
+* Standardmall som tillhandahålls av Adobe
+* Kundgenererade mallar
+
+![](assets/cja_template_5.png)
+
+Om ingen mall har skapats visas inte listrutan **[!UICONTROL Select a template]** i rapportgränssnittet.
+
+Så här skapar du en mall:
+
+1. I [!DNL Customer Journey Analytics] går du till menyn **[!UICONTROL Workspace]** och väljer **[!UICONTROL Adobe templates]**. [Läs mer om tillgängliga mallar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#available-templates)
+
+1. Bläddra bland de tillgängliga färdiga mallarna och klicka på **[!UICONTROL Use template]** för att välja en.
+
+   ![](assets/cja_template_1.png)
+
+1. Anpassa rapporten efter era behov. Mer information finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+
+1. När den anpassade mallen är klar går du till menyn **[!UICONTROL Project]** och väljer **[!UICONTROL Save as template]**.
+
+   ![](assets/cja_template_2.png)
+
+1. Ange nödvändig information för mallen. Mer information finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#edit-or-delete-a-template).
+
+   >[!IMPORTANT]
+   >
+   > Välj **Journey Optimizer** under **[!UICONTROL Use cases]** och ange motsvarande **Journey Optimizer-aktivitetstyp** och **aktivitet**. Då kan din rapport visas i Journey Optimizer.
+
+   ![](assets/cja_template_3.png)
+
+1. I [!DNL Journey Optimizer] öppnar du rapporten från din rapport och väljer en mall som du skapat tidigare i listrutan **[!UICONTROL Select a template]**.
+
+   ![](assets/cja_template_4.png)
+
+Om du vill skapa en mall direkt från din Journey-optimeringsrapport öppnar du bara din kampanj- eller reserapport, väljer **[!UICONTROL Analyze in CJA]** och anpassar standardmallen genom att följa stegen ovan.
