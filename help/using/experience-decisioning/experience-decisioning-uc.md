@@ -8,9 +8,9 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
-source-git-commit: 98b7a5493a4e325328ab349c405af423b3836807
+source-git-commit: d9b64dd5bc1553583da23a24aadf4d15d0b6874f
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '754'
 ht-degree: 3%
 
 ---
@@ -140,6 +140,6 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
 
 1. Spara ändringarna och [publicera din kodbaserade upplevelsekampanj](../code-based/publish-code-based.md).
 
-När du har kört din upplevelse kan du följa upp hur kampanjbehandlingarna fungerar med [rapporten om experimentella kampanjer](../reports/campaign-global-report-cja-experimentation.md).<!-- and [report on decisioning](cja-reporting.md).--> Du kan sedan tolka resultatet av ditt experiment. [Lär dig hur](../content-management/get-started-experiment.md#interpret-results)
+När du har kört experimentet kan du följa upp hur kampanjbehandlingarna fungerar med [rapporten om experimentella kampanjer](../reports/campaign-global-report-cja-experimentation.md).<!-- and [report on decisioning](cja-reporting.md).--> Du kan sedan tolka resultatet av ditt experiment. [Lär dig hur](../content-management/get-started-experiment.md#interpret-results)
 
-Om resultatet av ditt experiment är klart kan du ge behandlingen bästa resultat till alla dina kunder. Du kan också skapa en ny kampanj med hjälp av urvalsstrategin där rankningsmetoden som ger bästa resultat replikeras.
+Om resultatet är entydigt kan du ge behandlingen bästa resultat till alla dina kunder. Du kan också skapa en ny kampanj med hjälp av urvalsstrategin där rankningsmetoden som ger bästa resultat replikeras.
