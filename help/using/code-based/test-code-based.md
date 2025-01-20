@@ -5,9 +5,10 @@ feature: Code-based Experiences
 topic: Content Management
 role: User
 level: Experienced
-source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
+exl-id: 9a1c148c-a6c3-406b-8f2e-1cf8b8239e75
+source-git-commit: c402a8ab41eb588eae47463fd0217693853d8ca7
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -95,6 +96,14 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
      >
      >**Adobe Experience Platform Assurance** är en produkt från Adobe Experience Cloud som hjälper dig att inspektera, verifiera, simulera och validera hur du samlar in data eller levererar upplevelser i din mobilapp. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
 
+1. Om du använder någon [annan plattform](code-based-configuration.md#other) i din kodbaserade konfiguration väljer du den [yt-URI](code-based-surface.md#surface-uri) som du vill förhandsgranska i listrutan.
+
+   ![](assets/preview-on-device-other.png)
+
+   * Välj knappen **[!UICONTROL Copy link]** om du vill klistra in länken på en webbläsarflik eller dela länken med ditt team och intressenter.
+
+   * Om du har lagt till flera URI:er i konfigurationen (upp till 10) kan du välja vilken som helst av dem för förhandsgranskning.
+
 1. Länkar för förhandsgranskning genereras för den valda testprofilen och, om du använder [innehållsexperiment](../content-management/content-experiment.md) under din resa eller kampanj, för den valda behandlingen.
 
    <!--If you have modified the content or selected a different treatment or test profile, scroll down to the bottom of the **[!UICONTROL Preview on device]** pop-up and click **[!UICONTROL Refresh preview link]** to reflect the current state.
@@ -103,7 +112,4 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
 
    <!--When creating a content experiment, you need to select a given treatment and click the **[!UICONTROL Simulate content]** button to obtain the link corresponding to that treatment, then select another treatment, click the **[!UICONTROL Simulate content]** button to obtain a new preview link, and so on.-->
 
-   >[!TIP]
-   >
-   >När du uppdaterar innehållet eller väljer en annan testprofil eller behandling uppdateras länken för förhandsgranskning automatiskt. Du kan kopiera länken till olika webbläsarflikar och jämföra upplevelserna.
-
+   När du uppdaterar innehållet eller väljer en annan testprofil eller behandling uppdateras länken för förhandsgranskning automatiskt. Du kan kopiera länken till olika webbläsarflikar och jämföra upplevelserna.
