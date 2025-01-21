@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: bab4cd8065830e36fd6188d3ebf0bd62a63947f3
+source-git-commit: d2451bbaf9830ce3d928e71a609627c23a7566fa
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,14 @@ curl -X POST 'https://platform.adobe.io/data/core/dwm/workloads/decisions' \
 
 | Egenskap | Beskrivning | Exempel |
 | -------- | ----------- | ------- |
-| `xdm:segmentIds` | Värdet är en array som innehåller målgruppens unika identifierare. Den får bara innehålla ett värde. | `609028e4-e66c-4776-b0d9-c782887e2273` |
+| `xdm:activityId` | Beslutets unika identifierare. |
 | `xdm:dataSetId` | DataSet-utdata som beslutshändelser kan skrivas till. | `6196b4a1a63bd118dafe093c` |
-| `xdm:propositionRequests` | En wrapper som innehåller `placementId` och `activityId` |  |
-| `xdm:activityId` | Beslutets unika identifierare. | `xcore:offer-activity:1410cdcda196707b` |
-| `xdm:placementId` | Den unika placeringsidentifieraren. | `xcore:offer-placement:1410c4117306488a` |
-| `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per scope. | `1` |
+| `xdm:enrichedAudience` | Lägg till den här parametern och ange den till&quot;true&quot; om du riktar dig till en CSV-målgrupp | `true` |
 | `xdm:includeContent` | Det här är ett valfritt fält och är `false` som standard. Om `true` inkluderas erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
+| `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per scope. | `1` | `xcore:offer-activity:1410cdcda196707b` |
+| `xdm:placementId` | Den unika placeringsidentifieraren. | `xcore:offer-placement:1410c4117306488a` |
+| `xdm:propositionRequests` | En wrapper som innehåller `placementId` och `activityId` |
+| `xdm:segmentIds` | Värdet är en array som innehåller målgruppens unika identifierare. Den får bara innehålla ett värde. | `609028e4-e66c-4776-b0d9-c782887e2273` |
 
 I [beslutsdokumentationen](../../get-started/starting-offer-decisioning.md) finns en översikt över de viktigaste begreppen och egenskaperna.
 
