@@ -8,13 +8,13 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Beta"
-source-git-commit: 678a2fbce1b4048aad6a2214bb41ec3722db2b2d
+exl-id: 8462c75e-4f4b-4c4f-8734-19efbbc70c7a
+source-git-commit: e6e7890d2ff1fc91155da14e1e6c1cde01f25447
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
-
 
 # Testa materialet med exempeldata (Beta) {#custom-profiles}
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion.
 
-Med reseoptimering kan du testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV- eller JSON-fil eller lagts till manuellt. Alla profilattribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.
+Med reseoptimering kan du testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV- eller JSON-fil eller lagts till manuellt. Alla profilattribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter. En variant refererar till en version av innehållet med olika värden för dess attribut.
 
 >[!NOTE]
 >
@@ -66,13 +66,29 @@ Du kan lägga till upp till 30 varianter för att testa innehållet, antingen me
 Så här lägger du till en variant från en fil:
 
 1. Klicka på länken **[!UICONTROL download sample]** för att hämta en filmall och välj sedan det filformat som du vill använda (CSV, JSON eller JSONLINES).
-
 1. Klicka på **[!UICONTROL Download]** och lagra sedan mallen på önskad plats.
-
 1. Öppna filen och fyll sedan i mallen efter dina behov. Mallen innehåller en kolumn för varje profilattribut som används i ditt innehåll för personalisering.
 
-1. När filen är klar klickar du på **[!UICONTROL Upload Input data]** för att läsa in den och testa innehållet.
+   +++Exempel på fil
 
+   ```
+   {
+   "profile": {
+       "attributes": {
+       "person": {
+           "name": {
+               "lastName": "Doe",
+               "firstName": "John"
+               }
+           }
+       }
+   }
+   }
+   ```
+
++++
+
+1. När filen är klar klickar du på **[!UICONTROL Upload Input data]** för att läsa in den och testa innehållet.
 1. När filen har överförts läggs en ruta till i den vänstra rutan för varje rad från filen. Varje ruta innehåller alla profilattribut som används i ditt innehåll för personalisering. Du kan nu använda varianterna för att förhandsgranska ditt innehåll i den högra rutan och skicka korrektur.
 
    ![](assets/simulate-custom-variants.png)
@@ -95,9 +111,13 @@ Så här lägger du till en variant manuellt:
 
 Om du vill förhandsgranska ditt innehåll med någon av varianterna markerar du den relevanta rutan för att uppdatera innehållsförhandsvisningen i det högra avsnittet med den information som har angetts för varianten.
 
-Du kan när som helst ta bort en variant med hjälp av ellipsknappen i det övre högra hörnet och välja **[!UICONTROL Remove]**. Om du vill redigera information för en variant klickar du på ellipsknappen och väljer **[!UICONTROL Edit]**.
+I exemplet nedan har vi lagt till två varianter för e-postämnesraden:
 
-![](assets/simulate-custom-boxes.png)
+| Val för variant 1 | Val för variant 2 |
+|----------|-------------|
+| ![](assets/simulate-custom-boxes.png) | ![](assets/simulate-custom-boxes2.png) |
+
+Du kan när som helst ta bort en variant med hjälp av ellipsknappen i det övre högra hörnet och välja **[!UICONTROL Remove]**. Om du vill redigera information för en variant klickar du på ellipsknappen och väljer **[!UICONTROL Edit]**.
 
 ## Skicka korrektur {#proofs}
 
