@@ -8,9 +8,9 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
-source-git-commit: d9b64dd5bc1553583da23a24aadf4d15d0b6874f
+source-git-commit: bb66785f0b699d0ccf6cced035e64f206b104293
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '785'
 ht-degree: 3%
 
 ---
@@ -19,10 +19,10 @@ ht-degree: 3%
 
 I det här användningsexemplet beskrivs alla steg som behövs för att använda Decisionering med den kodbaserade kanalen [!DNL Journey Optimizer].
 
-I det här exemplet är du osäker på om en viss rankningsformel fungerar bättre än de förtilldelade prioriteterna. Om du vill mäta vilken som fungerar bäst för målgruppen skapar du en kampanj med [Content Experiment](../content-management/content-experiment.md) där du definierar två leveranssätt:
+I det här exemplet är du osäker på om en viss rankningsformel fungerar bättre än de förtilldelade prioriteterna. Om du vill mäta vilken som fungerar bäst för målgruppen skapar du en kampanj med [Innehållsexperiment](../content-management/content-experiment.md) där du definierar två leveranssätt:
 
-* I den första behandlingen används prioritet som rangordningsmetod.
-* I den andra behandlingen används en formel som rangordningsmetod.
+* I den första behandlingen används **priority** som rangordningsmetod.
+* Den andra behandlingen använder **en formel** som rangordningsmetod.
 
 ## Skapa urvalsstrategier
 
@@ -120,7 +120,7 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
    >
    >Du kan också välja **[!UICONTROL Decision item]** om du vill lägga till enskilda objekt utan att behöva köra igenom en urvalsstrategi. Prioriteten som anges för varje objekt gäller.
 
-1. Välj den första strategi som du skapade.
+1. Välj den första strategin som du skapade - den med prioritet som rangordningsmetod.
 
    ![](assets/exd-uc-experiment-strategy-priority.png){width="90%"}
 
@@ -136,10 +136,17 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
 
    ![](assets/exd-uc-experiment-treatment-b.png){width="90%"}
 
-1. Upprepa stegen ovan om du vill skapa en annan beslutsprincip och välja den andra urvalsstrategin som du skapade. <!--Do you need to create exactly the same content to compare only the ranking method?-->
+1. Upprepa steg 5 och 6 ovan om du vill skapa en annan beslutsprincip och välja den andra urvalsstrategin som du skapade - den med formeln som rangordningsmetod. <!--Do you need to create exactly the same content to compare only the ranking method?-->
+
+   ![](assets/exd-uc-experiment-strategy-formula.png){width="90%"}
+
+1. Redigera din beslutspolicy som du vill (se steg 8 och 9 ovan).
 
 1. Spara ändringarna och [publicera din kodbaserade upplevelsekampanj](../code-based/publish-code-based.md).
 
 När du har kört experimentet kan du följa upp hur kampanjbehandlingarna fungerar med [rapporten om experimentella kampanjer](../reports/campaign-global-report-cja-experimentation.md).<!-- and [report on decisioning](cja-reporting.md).--> Du kan sedan tolka resultatet av ditt experiment. [Lär dig hur](../content-management/get-started-experiment.md#interpret-results)
 
-Om resultatet är entydigt kan du ge behandlingen bästa resultat till alla dina kunder. Du kan också skapa en ny kampanj med hjälp av urvalsstrategin där rankningsmetoden som ger bästa resultat replikeras.
+Om resultatet är klart:
+
+* Ni kan göra behandlingen med bästa resultat rankad för alla era kunder.
+* Du kan också skapa en ny kampanj med hjälp av urvalsstrategin där rankningsmetoden som ger bästa resultat replikeras.
