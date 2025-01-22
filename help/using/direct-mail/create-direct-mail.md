@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 88f8a5e3e7314992cdb5835b9676b78127f20960
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 2%
+source-wordcount: '706'
+ht-degree: 3%
 
 ---
 
@@ -75,23 +75,17 @@ Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktme
 >title="Filformatering för extrahering"
 >abstract="För varje fält anger du en etikett och den information som ska visas med personaliseringsredigeraren. <br/><br/> Med alternativet <b>Sortera efter</b> kan du använda det valda fältet för att sortera extraheringsfilens kolumner."
 
-1. Konfigurera kolumnerna och den information som ska visas i extraheringsfilen:
-
-   1. Klicka på knappen **[!UICONTROL Add]** för att skapa en ny kolumn.
-
-   1. Fönstret **[!UICONTROL Formatting]** visas till höger, så att du kan ställa in den markerade kolumnen. Ange en **[!UICONTROL Label]** för kolumnen.
-
-   1. I fältet **[!UICONTROL Data]** väljer du de profilattribut som ska visas med [anpassningsredigeraren](../personalization/personalization-build-expressions.md).
-
-   1. Om du vill sortera extraheringsfilen med en kolumn markerar du kolumnen och växlar till alternativet **[!UICONTROL Sort by]**. Ikonen **[!UICONTROL Sort By]** visas bredvid kolumnens etikett i avsnittet **[!UICONTROL Data Fields]**.
-
 Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post till dina kunder. Så här definierar du extraheringsfilens konfiguration:
 
 1. Klicka på knappen **[!UICONTROL Edit content]** på konfigurationsskärmen för kampanjen för att konfigurera innehållet i extraheringsfilen.
 
 1. Justera extraheringsfilens egenskaper:
 
-   1. Ange önskad **[!UICONTROL Filename]** för extraheringsfilen.
+   1. Ange ett namn för extraheringsfilen i fältet **[!UICONTROL Filename]**.
+
+      >[!NOTE]
+      >
+      >Som standard skrivs filen till rotkatalogen. Fältet **[!UICONTROL Filename]** accepterar formatet /your/path/here/Filename.csv, där den angivna sökvägen är målkatalogen på den valda servern. <!--TBC if for SFTP and Azure only, or for all servers including S3-->
 
    1. Du kan också aktivera alternativet **[!UICONTROL Append timestamp to export filename]** om du vill lägga till en automatisk tidsstämpel till det angivna filnamnet.
 
@@ -116,3 +110,4 @@ Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post til
       Om du vill ändra en kolumns position drar och släpper du den till önskad plats i avsnittet **[!UICONTROL Data field]**. Om du vill ta bort en kolumn markerar du den och klickar på knappen **[!UICONTROL Remove]** i rutan **[!UICONTROL Formatting]**.
 
 Nu kan du testa ditt direktutskick och skicka det till din publik. [Lär dig hur du testar och skickar direktmeddelanden](test-send-direct-mail.md)
+

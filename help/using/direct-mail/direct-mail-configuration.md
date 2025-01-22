@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: bcccc7b385f031fba2c2b57ec62cae127eda8466
+source-git-commit: 88f8a5e3e7314992cdb5835b9676b78127f20960
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1318'
 ht-degree: 1%
 
 ---
@@ -124,6 +124,10 @@ Följ stegen nedan för att konfigurera filflödet.
 
    ![](assets/file-routing-config-sftp-detail.png)
 
+   >[!NOTE]
+   >
+   >Om du vill ange en sökväg på servern för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att det innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
+
 1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
 1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
@@ -152,7 +156,7 @@ Följ stegen nedan för att konfigurera filflödet.
 
    * **Behållarnamn**: Om du vill hitta **Behållarnamn** kan du läsa [den här sidan](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
 
-     **Behållarnamnet** får bara innehålla behållarens namn utan snedstreck. Om du vill ange en sökväg i behållaren för att spara filen uppdaterar du filnamnet för direktreklamkampanjen så att den innehåller den önskade sökvägen.
+     **Behållarnamnet** får bara innehålla behållarens namn utan snedstreck. Om du vill ange en sökväg i behållaren för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att den innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
 
 1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
