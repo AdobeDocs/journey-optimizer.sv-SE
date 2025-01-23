@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 8a9f0b42acb19f0b28340f11dada19f5b6524c66
+source-git-commit: 397bc830f1f4991d19142c6eccf68e929a4ac0ea
 workflow-type: tm+mt
-source-wordcount: '2651'
+source-wordcount: '2720'
 ht-degree: 0%
 
 ---
@@ -84,6 +84,11 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 ## Avsluta prenumeration{#list-unsubscribe}
 
 <!--Do not modify - Legal Review Done -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_config_unsubscribe_custom"
+>title="Lägg till en avbruten URL till e-posthuvudet"
+>abstract="Om du hanterar samtycke utanför Adobe väljer du alternativet **Kundhanterad** för att ange en anpassad e-postadress för att avbryta prenumerationen och en egen adress för att avsluta prenumerationen med ett klick. I det här fallet bör du vara medveten om att Adobe inte lagrar någon information om att prenumerera. Ägaren till dina kunders medgivandeinformation ansvarar för att hantera deras medgivandedata och för att de skickas tillbaka till Journey Optimizer."
 
 När [du väljer en underdomän ](#subdomains-and-ip-pools) i listan visas alternativet **[!UICONTROL Enable List-Unsubscribe]**.
 
