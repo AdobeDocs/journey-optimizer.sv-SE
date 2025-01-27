@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 397bc830f1f4991d19142c6eccf68e929a4ac0ea
+source-git-commit: 8559fce278974dcf18ba038996fd65b9f72400f4
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2714'
 ht-degree: 0%
 
 ---
@@ -83,12 +83,12 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 
 ## Avsluta prenumeration{#list-unsubscribe}
 
-<!--Do not modify - Legal Review Done -->
-
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_unsubscribe_custom"
->title="Lägg till en avbruten URL till e-posthuvudet"
+>title="Ange egna List-Unsubscribe-slutpunkter"
 >abstract="Om du hanterar samtycke utanför Adobe väljer du alternativet **Kundhanterad** för att ange en anpassad e-postadress för att avbryta prenumerationen och en egen adress för att avsluta prenumerationen med ett klick. I det här fallet bör du vara medveten om att Adobe inte lagrar någon information om att prenumerera. Ägaren till dina kunders medgivandeinformation ansvarar för att hantera deras medgivandedata och för att de skickas tillbaka till Journey Optimizer."
+
+<!--Do not modify - Legal Review Done -->
 
 När [du väljer en underdomän ](#subdomains-and-ip-pools) i listan visas alternativet **[!UICONTROL Enable List-Unsubscribe]**.
 
@@ -123,13 +123,13 @@ Rubriken för att avbryta prenumerationen i List har två funktioner som är akt
 
 Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL One-click unsubscribe URL]** är valfria.
 
-Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. Om du lägger till en [-klicksavanmälningslänk ](../privacy/opt-out.md#one-click-opt-out) i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat och funktionen **[!UICONTROL One-click Unsubscribe URL]** inte är markerad.
+Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. Om du lägger till en [-klicksavanmälningslänk ](../email/email-opt-out.md#one-click-opt-out) i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat och funktionen **[!UICONTROL One-click Unsubscribe URL]** inte är markerad.
 
 ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
 >[!NOTE]
 >
->Om du inte lägger till en länk för avanmälan med ett enda klick i ditt meddelandeinnehåll och standardURL:en för att avbryta prenumerationen är avmarkerad i kanalkonfigurationsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumerationen på listan.
+>Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet och standardinställningen **[!UICONTROL One-click unsubscribe URL]** inte är markerad i kanalkonfigurationsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumeration av lista.
 
 Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
 
