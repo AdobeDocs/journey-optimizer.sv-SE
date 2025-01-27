@@ -8,16 +8,28 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: d0419710c12bd7726bc161069b9c2ebff986826a
+source-git-commit: 1365e84642d08d2e196f350530a39eaf93cdcb5f
 workflow-type: tm+mt
-source-wordcount: '5763'
-ht-degree: 13%
+source-wordcount: '5882'
+ht-degree: 12%
 
 ---
 
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer]-dokumentationen.
+
+## Januari 2025 {#jan-2025}
+
+* Ett nytt avsnitt om alternativet **[!UICONTROL Execution address]** i e-postkonfigurationen har lagts till. Den primära adressen definieras på sandlådenivå, men standardinställningen kan åsidosättas för en viss e-postkonfiguration. [Läs mer](../email/email-settings.md#execution-address)
+
+* Sidan **Kom igång med leverans** har uppdaterats med möjligheten att skapa arbetsflöden för IP-värmare direkt från användargränssnittet. [Läs mer](../reports/deliverability.md#reputation)
+
+* Avsnittet **Huvudparametrar** har uppdaterats för att återspegla de nya etiketterna och ändringarna i användargränssnittet. [Läs mer](../email/email-settings.md#email-header)
+
+* Avsnittet **Vidarebefordra e-post** har uppdaterats för att ange att alla e-postmeddelanden som skickas till adressen **Från e-post** vidarebefordras till e-postadressen för vidarebefordran. Om inget vidarebefordrande e-postmeddelande anges, ignoreras dessa e-postmeddelanden. [Läs mer](../email/email-settings.md##forward-email)
+
+<!--* A new use case has been added to present all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel. [Read more](../experience-decisioning/experience-decisioning-uc.md)-->
 
 ## December 2024 {#nov-2024}
 
@@ -30,7 +42,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Sidan **Konfigurera din kodbaserade upplevelse** har förbättrats för att göra processen tydligare, inklusive avsnittet som förklarar vad en yt-URI är. [Läs mer](../code-based/code-based-configuration.md)
 * Sidan **Skapa webbkanalskonfiguration** har uppdaterats för att klargöra stegen när du skapar en sidmatchningsregel, som även gäller för kodbaserad upplevelsekonfiguration. [Läs mer](../web/web-configuration.md#web-page-matching-rule)
 * En anteckning om det kommande TTL-skyddsutkastet (time-to-live) för systemgenererade datauppsättningar har lagts till. [Läs mer](../data/get-started-datasets.md)
-* Ett nytt avsnitt har lagts till som beskriver hur du förhandsgranskar dina kodbaserade personaliserade upplevelser direkt i webbläsaren eller på dina mobila enheter, med alternativet Förhandsgranska på enhet när du simulerar innehåll under en resa eller en kampanj. [Läs mer](../code-based/test-code-based.md#preview-on-device)
+* Ett nytt avsnitt har lagts till som beskriver hur du förhandsgranskar dina kodbaserade, personaliserade upplevelser direkt i webbläsaren eller på dina mobila enheter, med alternativet **Förhandsgranska på enhet** när du simulerar innehåll under en resa eller en kampanj. [Läs mer](../code-based/test-code-based.md#preview-on-device)
 * En ny sida har lagts till om hur du använder anpassade uppladdningsmålgrupper för beslut. [Läs mer](../offers/custom-upload-decisioning.md)
 * En ny sida har lagts till för att presentera beslutsmöjligheterna i Journey Optimizer. [Läs mer](../experience-decisioning/gs-decision.md)
 * Garantier och begränsningar har lagts till i beslutsdokumentationen. [Läs mer](../experience-decisioning/gs-experience-decisioning.md#guardrails)
@@ -156,7 +168,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Garantier för beslutshantering har lagts till på sidan Guardsutkast och begränsningar. [Läs mer](../start/guardrails.md#decision-management)
 * Avsnittet med rubrikparametrar har uppdaterats för att återspegla hur utomstående meddelanden och utmaningssvar hanteras (de tas emot på **[!UICONTROL Error email]**). [Läs mer](../email/email-settings.md#email-header)
 * Ett nytt avsnitt om hur du förhandsgranskar och testar innehåll har skapats. [Läs mer](../content-management/preview-test.md)
-* Sidan Implementera enkelsidiga program har flyttats till Adobe Experience Platform Web SDK-dokumentationen. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
+* Sidan Implementera ensidiga program har flyttats till Adobe Experience Paltform Web SDK-dokumentationen. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
 * Facksektionen har uppdaterats för att återspegla de etikettändringar som har att göra med begränsningen av erbjudanden i beslutsgränssnittet. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 * Alternativet Lägg till dynamiskt innehåll i e-postmeddelanden har uppdaterats med information om hur du tar bort en variant. [Läs mer](../personalization/dynamic-content.md#emails)
 * Exemplet för capping &amp; Throttling-konfigurationer har uppdaterats. [Läs mer](../configuration/external-systems.md)
