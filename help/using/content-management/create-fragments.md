@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: bcccc7b385f031fba2c2b57ec62cae127eda8466
+source-git-commit: c32f1e86eb803a0a4b25111d07989872b33a3bed
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 Fragment kan skapas från grunden på den vänstra menyn **[!UICONTROL Fragments]**. Dessutom kan du spara en del av befintligt innehåll som fragment när du utformar innehåll. [Lär dig hur](#save-as-fragment)
 
-När fragmentet har sparats är det tillgängligt för användning under en resa, en kampanj eller en mall. Du kan använda det här fragmentet när du skapar innehåll på resor och i kampanjer. Se [Lägg till visuella fragment](../email/use-visual-fragments.md) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md)
+När fragmentet har sparats är det tillgängligt för användning under en resa, en kampanj eller en mall. Du kan använda det här fragmentet när du skapar innehåll på resor och i kampanjer. Se [Lägg till visuella fragment](../email/use-visual-fragments.md) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md).
 
 Följ stegen nedan för att skapa ett fragment.
 
@@ -71,7 +71,7 @@ När du har konfigurerat fragmentets egenskaper öppnas e-post-Designer eller pe
 
   ![](assets/fragment-expression-editor.png)
 
-Klicka på knappen **Spara** när innehållet är klart. Fragmentet skapas och läggs till i fragmentlistan med statusen **Utkast**. Ni kan förhandsgranska den och publicera den för att göra den tillgänglig på resor och i kampanjer.
+När innehållet är klart klickar du på knappen **[!UICONTROL Save]**. Fragmentet skapas och läggs till i fragmentlistan med statusen **[!UICONTROL Draft]**. Ni kan förhandsgranska den och publicera den för att göra den tillgänglig på resor och i kampanjer.
 
 ## Förhandsgranska och publicera fragmentet {#publish}
 
@@ -79,23 +79,23 @@ Klicka på knappen **Spara** när innehållet är klart. Fragmentet skapas och l
 >
 >Om du vill publicera ett fragment måste du ha användarbehörigheten [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) .
 
-Om ditt fragment är klart att publiceras kan du förhandsgranska och publicera det så att det blir tillgängligt på dina resor och i kampanjer. Gör så här:
+Om ditt fragment är klart att publiceras kan du förhandsgranska och publicera det så att det blir tillgängligt på dina resor och i kampanjer. Följ stegen nedan för att göra det.
 
 1. Gå tillbaka till skärmen för att skapa fragment när du har utformat dess innehåll, eller öppna den från listan med fragment.
 
-1. En förhandsgranskning av fragmentet finns under fältet **Taggar**, vilket gör att återgivningen kan kontrolleras. Om du behöver göra några ändringar klickar du på knappen **Redigera** i skärmens övre del för att öppna e-post-Designer eller anpassningsredigeraren beroende på fragmenttypen.
+1. En förhandsgranskning av fragmentet är tillgänglig under fältet **[!UICONTROL Tags]**, vilket gör att återgivningen kan kontrolleras. Om du behöver göra några ändringar klickar du på knappen **[!UICONTROL Edit]** i skärmens övre del för att öppna e-post-Designer eller anpassningsredigeraren beroende på fragmenttypen.
 
    ![](assets/fragment-preview.png)
 
-1. Klicka på knappen **Publish** i det övre högra hörnet för att publicera fragmentet.
+1. Klicka på knappen **[!UICONTROL Publish]** i det övre högra hörnet för att publicera fragmentet.
 
-   Om fragmentet används i en direktresa eller kampanj öppnas ett meddelande som informerar dig. Klicka på länken **Visa mer** för att få tillgång till listan över resor och/eller kampanjer där det refereras. [Lär dig hur du utforskar referenser till ett fragment](../content-management/manage-fragments.md#explore-references)
-
-   Klicka på **Bekräfta** för att publicera fragmentet och uppdatera det i de direktresor/kampanjer som använder det.
+1. Om fragmentet används i en direktresa eller kampanj öppnas ett meddelande som informerar dig. Klicka på länken **[!UICONTROL See more]** om du vill visa listan över resor och/eller kampanjer där det refereras. [Lär dig hur du utforskar referenser till ett fragment](../content-management/manage-fragments.md#explore-references)
 
    ![](assets/fragment-publish.png){width="70%" align="center"}
 
-Fragmentet är nu **Live** och blir tillgängligt när du skapar innehåll i [!DNL Journey Optimizer] e-postredigeraren Designer eller personaliseringsredigeraren:
+   Klicka på **[!UICONTROL Confirm]** för att publicera fragmentet och uppdatera det i de direktresor/kampanjer som använder det.
+
+Fragmentet är nu **[!UICONTROL Live]** och blir tillgängligt när du skapar innehåll i [!DNL Journey Optimizer] e-postredigeraren för Designer eller personalisering.
 
 * [Lär dig använda visuella fragment](../email/use-visual-fragments.md)
 * [Lär dig använda uttrycksfragment](../personalization/use-expression-fragments.md)

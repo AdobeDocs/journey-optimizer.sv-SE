@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: d93ef15df4a25e7a6d6fab3df1f9838a0c3d31df
+source-git-commit: c32f1e86eb803a0a4b25111d07989872b33a3bed
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,12 @@ Du kan också välja att visa alla fragment eller bara de objekt som den aktuell
 
 Från knappen **[!UICONTROL More actions]** bredvid varje fragment kan du:
 
-* Duplicera ett fragment.
+<!--* Add to package
+* Open draft version-->
+* Duplicera fragmentet.
 * Använd alternativet **[!UICONTROL Explore references]** om du vill visa de resor, kampanjer eller mallar där det används. [Läs mer](#explore-references)
-* Arkivera ett fragment. [Läs mer](#archive-fragments)
-* Redigera ett fragments taggar [Lär dig hur du arbetar med enhetliga taggar](../start/search-filter-categorize.md#tags).
+* Arkivera fragmentet. [Läs mer](#archive-fragments)
+* Redigera fragmentets taggar. [Lär dig arbeta med enhetliga taggar](../start/search-filter-categorize.md#tags)
 
 ![](assets/fragment-list-more-actions.png)
 
@@ -47,7 +49,7 @@ Från knappen **[!UICONTROL More actions]** bredvid varje fragment kan du:
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"
 >title="Nya fragmentstatusar"
->abstract="Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen Utkast, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. <br/>Publicering kräver användarbehörighet för <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publish Fragment</a>."
+>abstract="Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen **Utkast**, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem **Live** och sprida ändringarna till associerade kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. <br/>Publicering kräver användarbehörighet för <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publish Fragment</a>."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Läs mer om behörigheter för innehållsfragment"
 
 Fragment kan ha flera statusar:
@@ -63,7 +65,7 @@ Fragment kan ha flera statusar:
 
 >[!CAUTION]
 >
->Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen Utkast, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem&quot;Live&quot; och sprida ändringarna till tillhörande kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet för [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager).
+>Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen **Utkast**, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem **Live** och sprida ändringarna till associerade kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet för [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager).
 
 ## Redigera fragment {#edit-fragments}
 
@@ -83,21 +85,47 @@ Om du vill redigera ett fragment följer du stegen nedan.
 
 1. Fragmentegenskaperna öppnas med en förhandsgranskning av innehållet.
 
-1. Om fragmentet som redigeras har statusen **Live** klickar du på knappen **Ändra** för att skapa ett utkast av fragmentet. Den aktuella versionen av fragmentet fortsätter att vara aktiv tills du publicerar utkastet.
-
-1. Gör önskade ändringar av fragmentet. Om du vill redigera innehållet klickar du på knappen **Redigera** och redigerar sedan innehållet på samma sätt som när du skapar ett fragment från grunden. [Lär dig skapa ett fragment](#create-from-scratch)
+1. Om fragmentet som redigeras har statusen **[!UICONTROL Live]** klickar du på knappen **[!UICONTROL Modify]** för att skapa ett utkast av fragmentet.
 
    >[!NOTE]
    >
-   >När du redigerar ett fragment kan du ta bort alla anpassningsfält, men inte lägga till nya i fragmentinnehållet. Om du vill lägga till anpassningsfält duplicerar du fragmentet för att skapa ett nytt.
+   >Den aktuella versionen av fragmentet fortsätter att vara aktiv tills du publicerar utkastet.
 
-   Du kan också kontrollera listan över resor, kampanjer och innehållsmallar där fragmentet används för närvarande genom att välja alternativet **Utforskaren-referenser**. [Läs mer](#explore-references)
+1. Gör önskade ändringar av fragmentet. Om du vill redigera innehållet klickar du på knappen **[!UICONTROL Edit]** och uppdaterar innehållet som du gör när du skapar ett fragment från början. [Lär dig skapa ett fragment](#create-from-scratch)
+
+   >[!NOTE]
+   >
+   >När du redigerar ett publicerat fragment kan du ta bort alla anpassningsfält, men du kan inte lägga till nya i fragmentinnehållet. Om du vill lägga till anpassade attribut måste du duplicera fragmentet. [Läs mer](#adding-new-attributes)
+
+1. Du kan också kontrollera listan över resor, kampanjer och innehållsmallar där fragmentet används för närvarande genom att välja alternativet **Utforskaren-referenser**. [Läs mer](#explore-references)
 
    ![](assets/fragment-edit.png)
 
 1. När ändringarna är klara klickar du på **Publish** för att göra ändringarna tillgängliga.
 
-När du redigerar ett fragment sprids ändringarna automatiskt till allt innehåll som använder det fragmentet, inklusive direktresor och kampanjer, med undantag för innehåll där du har brutit arv från det ursprungliga fragmentet. Lär dig hur du bryter arv i avsnitten [Lägg till visuella fragment i e-postmeddelanden](../email/use-visual-fragments.md#break-inheritance) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md#break-inheritance).
+När du redigerar ett fragment sprids ändringarna automatiskt till allt innehåll som använder det fragmentet, inklusive direktresor och kampanjer - förutom innehåll där du har brutet arv från det ursprungliga fragmentet.
+
+>[!NOTE]
+>
+>Lär dig hur du bryter arv i avsnitten [Lägg till visuella fragment i e-postmeddelanden](../email/use-visual-fragments.md#break-inheritance) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md#break-inheritance).
+
+## Lägga till nya attribut i ett live-fragment {#adding-new-attributes}
+
+>[!WARNING]
+>
+>Det går inte att lägga till nya attribut i ett live-fragment.
+
+När ett fragment har publicerats låses uppsättningen med anpassade eller kontextuella attribut för alla kampanjer och resor som refererar till det.
+
+Följ stegen nedan om du vill lägga till ytterligare attribut till ett live-fragment.
+
+1. Duplicera det befintliga fragmentet.
+
+1. Lägg till de nödvändiga attributen i den duplicerade utkastversionen.
+
+1. Publish den nya versionen.
+
+1. Uppdatera kampanjer eller resor för att referera till det uppdaterade fragmentet där de nya attributen lades till.
 
 ## Utforska referenser {#explore-references}
 
