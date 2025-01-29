@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: 129863516a4b027906d1ed809148053ffd1df22e
+source-git-commit: f415209a7a62c8b7936abdb474b1b5b70c788973
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1012'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,6 @@ Med Beslutshantering kan ni skapa och leverera personaliserade erbjudandeuppleve
 Du kan skapa och leverera erbjudanden genom att göra en POST-förfrågan till API:t [!DNL Decisioning].
 
 Den här självstudiekursen kräver en fungerande förståelse av API:er, särskilt när det gäller beslutshantering. Mer information finns i [Utvecklarhandboken för API:t för beslutshantering](../getting-started.md). Den här självstudien kräver också att du har ett unikt värde för placering-ID och beslut-ID tillgängligt. Om du inte har inhämtat dessa värden kan du gå till självstudiekurserna för att [skapa en placering](../offers-api/placements/create.md) och [skapa ett beslut](../activities-api/activities/create.md).
-
-➡️ [Upptäck den här funktionen i videon](#video)
 
 ## Obligatoriska rubriker {#required-headers}
 
