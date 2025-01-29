@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: 8c7fca7789931fbae6ac5d4821bc051ff9eb0923
+source-git-commit: 129863516a4b027906d1ed809148053ffd1df22e
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 1%
@@ -65,8 +65,8 @@ curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
 -d '{
     "xdm:propositionRequests": [
         {
-            "xdm:activityId": "xcore:offer-activity:15ded04b1786ea27",
-            "xdm:placementId": "xcore:offer-placement:15d9bc01d35e1238"
+            "xdm:activityId": "dps:offer-activity:15ded04b1786ea27",
+            "xdm:placementId": "dps:offer-placement:15d9bc01d35e1238"
         }
     ],
     "xdm:profiles": [
@@ -105,8 +105,8 @@ curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
 | Egenskap | Beskrivning | Exempel |
 | -------- | ----------- | ------- |
 | `xdm:propositionRequests` | Det här objektet innehåller placerings- och beslutsidentifierare. |
-| `xdm:propositionRequests.xdm:placementId` | Den unika placeringsidentifieraren. | `"xdm:placementId": "xcore:offer-placement:ffed0456"` |
-| `xdm:propositionRequests.xdm:activityId` | Den unika beslutsidentifieraren. | `"xdm:activityId": "xcore:offer-activity:ffed0123"` |
+| `xdm:propositionRequests.xdm:placementId` | Den unika placeringsidentifieraren. | `"xdm:placementId": "dps:offer-placement:ffed0456"` |
+| `xdm:propositionRequests.xdm:activityId` | Den unika beslutsidentifieraren. | `"xdm:activityId": "dps:offer-activity:ffed0123"` |
 | `xdm:itemCount` | Antalet erbjudanden som ska returneras. Det högsta antalet är 30. | `"xdm:itemCount": 2` |
 | `xdm:profiles` | Det här objektet innehåller information om den profil som beslutet begärs för. För en API-begäran innehåller detta en profil. |
 | `xdm:profiles.xdm:identityMap` | Det här objektet innehåller en uppsättning slutanvändaridentiteter baserat på ID:ts namnutrymmesintegrationskod. Identitetskartan kan innehålla mer än en identitet för varje namnutrymme. Mer information om namnutrymmen finns på [den här sidan](../../../audience/get-started-identity.md). | `Email: [{"xdm:id": "123@abc.com"}]` |
@@ -132,22 +132,22 @@ Ett godkänt svar returnerar information om ditt förslag, inklusive dess unika 
   "xdm:propositions": [
     {
       "xdm:activity": {
-        "xdm:id": "xcore:activity:ffed0123",
+        "xdm:id": "dps:activity:ffed0123",
         "repo:etag": 4
       },
       "xdm:placement": {
-        "xdm:id": "xcore:placement:ffed0456",
+        "xdm:id": "dps:placement:ffed0456",
         "repo:etag": 1
       },
       "xdm:options": [
         {
-          "xdm:id": "xcore:personalized-option:ccc0111",
+          "xdm:id": "dps:personalized-option:ccc0111",
           "repo:etag": 3,
           "@type": "https://ns.adobe.com/experience/decisioning/content-component-html-template",
           "xdm:content": "<html>some html</html>"
         },
         {
-          "xdm:id": "xcore:personalized-option:ccc0222",
+          "xdm:id": "dps:personalized-option:ccc0222",
           "repo:etag": 5,
           "@type": "https://ns.adobe.com/experience/decisioning/content-component-html-template",
           "xdm:content": "<html>hello, world</html>",
@@ -157,15 +157,15 @@ Ett godkänt svar returnerar information om ditt förslag, inklusive dess unika 
     },
     {
       "xdm:activity": {
-        "xdm:id": "xcore:activity:ffed0123",
+        "xdm:id": "dps:activity:ffed0123",
         "repo:etag": 4
       },
       "xdm:placement": {
-        "xdm:id": "xcore:placement:ffed0789",
+        "xdm:id": "dps:placement:ffed0789",
         "repo:etag": 2
       },
       "xdm:fallback": {
-        "xdm:id": "xcore:fallback:ccc0222",
+        "xdm:id": "dps:fallback:ccc0222",
         "repo:etag": 5,
         "@type": "https://ns.adobe.com/experience/decisioning/content-component-imagelink",
         "dc:format": "image/png",
@@ -182,13 +182,13 @@ Ett godkänt svar returnerar information om ditt förslag, inklusive dess unika 
 | -------- | ----------- | ------- |
 | `xdm:propositionId` | Den unika identifieraren för den förslagsenhet som är associerad med en XDM DecisionEvent. | `"xdm:propositionId": "5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8"` |
 | `xdm:propositions` | Det här objektet innehåller ett enda beslutsförslag. Flera alternativ kan returneras för beslutet. Om inga alternativ hittas returneras beslutets reserverbjudande. Enstaka beslutsförslag innehåller alltid antingen en `options`-egenskap eller en `fallback`-egenskap. Egenskapen `options` får inte vara tom om den finns. |
-| `xdm:propositions.xdm:activity` | Det här objektet innehåller den unika identifieraren för ett beslut. | `"xdm:id": "xcore:activity:ffed0123"` |
-| `xdm:propositions.xdm:placement` | Det här objektet innehåller den unika identifieraren för en offertplacering. | `"xdm:id": "xcore:placement:ffed0456"` |
-| `xdm:propositions.xdm:options` | Det här objektet innehåller ett enda alternativ, inklusive dess unika identifierare. Om det finns något kan det här objektet inte vara tomt. | `xdm:id": "xcore:personalized-option:ccc0111` |
+| `xdm:propositions.xdm:activity` | Det här objektet innehåller den unika identifieraren för ett beslut. | `"xdm:id": "dps:activity:ffed0123"` |
+| `xdm:propositions.xdm:placement` | Det här objektet innehåller den unika identifieraren för en offertplacering. | `"xdm:id": "dps:placement:ffed0456"` |
+| `xdm:propositions.xdm:options` | Det här objektet innehåller ett enda alternativ, inklusive dess unika identifierare. Om det finns något kan det här objektet inte vara tomt. | `xdm:id": "dps:personalized-option:ccc0111` |
 | `xdm:propositions.xdm:options.@type` | Definierar komponenttypen. `@type` fungerar som processkontrakt för klienten. När upplevelsen är sammanställd söker dispositionen efter de komponenter som har en viss typ. | `https://ns.adobe.com/experience/offer-management/content-component-imagelink` |
 | `xdm:propositions.xdm:content` | Svarsinnehållets format. | Svarsinnehållet kan vara: `text`, `html block` eller `image link` |
 | `xdm:score` | Poängen för ett alternativ som beräknas som ett resultat av en rangordningsfunktion som är kopplad till alternativet eller beslutet. Detta fält returneras av API:t om en rangordningsfunktion är involverad i att fastställa poängen för ett erbjudande under rangordningen. | `"xdm:score": 45.65` |
-| `xdm:propositions.xdm:fallback` | Det här objektet innehåller ett enda reserverbjudande, inklusive dess unika identifierare. | `"xdm:id": "xcore:fallback:ccc0222"` |
+| `xdm:propositions.xdm:fallback` | Det här objektet innehåller ett enda reserverbjudande, inklusive dess unika identifierare. | `"xdm:id": "dps:fallback:ccc0222"` |
 | `xdm:propositions.xdm:fallback.dc:format` | Resursens fysiska eller digitala manifestation. Formatet bör vanligtvis innehålla resursens medietyp. Formatet kan användas för att avgöra vilken programvara, maskinvara eller annan utrustning som behövs för att visa eller använda resursen. Vi rekommenderar att du väljer ett värde i en kontrollerad vokabulär, t.ex. listan med [Internetmedietyper](https://www.iana.org/assignments/media-types/) som definierar datormediaformat. | `"dc:format": "image/png"` eller `"image/jpeg"` |
 | `xdm:propositions.xdm:fallback.xdm:deliveryURL` | En valfri URL för att läsa resursen från ett leveransnätverk eller en tjänstslutpunkt. Den här URL:en används för att komma åt resursen offentligt från en användaragent. | `https://d37yhxrr0p3l3l.cloudfront.net/0fd0f090-a148-11ea-89e3-f1f2ad52f7e8/urn:aaid:sc:US:a68c86a6-9295-4940-a083-11916b665500/0/40d78a12-f8b6-3f07-8e67-7cb8ae2cc7ec` |
 | `ode:createDate` | Den tid då beslutssvarsmeddelandet skapades. Detta representeras som epoktid. | `"ode:createDate": 1566497582038` |
