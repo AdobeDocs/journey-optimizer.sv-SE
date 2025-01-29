@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: c32f1e86eb803a0a4b25111d07989872b33a3bed
+source-git-commit: abbc5c77545f30ac2d70d718f605acd30f7e7830
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -81,27 +81,31 @@ Fragment kan ha flera statusar:
 
 Om du vill redigera ett fragment följer du stegen nedan.
 
-1. Klicka på önskat fragment i listan **[!UICONTROL Fragments]**.
+1. Klicka på önskat fragment i listan **[!UICONTROL Fragments]**. Skärmen för fragmentegenskaper öppnas och innehållet förhandsgranskas.
 
-1. Fragmentegenskaperna öppnas med en förhandsgranskning av innehållet.
+1. Du kan kontrollera listan över resor, kampanjer och innehållsmallar där fragmentet används för närvarande genom att välja alternativet **[!UICONTROL Explore references]**. [Läs mer](#explore-references)
+
+   ![](assets/fragment-edit-references.png)
 
 1. Om fragmentet som redigeras har statusen **[!UICONTROL Live]** klickar du på knappen **[!UICONTROL Modify]** för att skapa ett utkast av fragmentet.
 
+   <!--![](assets/fragment-live-modify.png)-->
+
    >[!NOTE]
    >
-   >Den aktuella versionen av fragmentet fortsätter att vara aktiv tills du publicerar utkastet.
+   >Den aktuella versionen av fragmentet fortsätter att vara aktiv tills du publicerar den nya uppdaterade versionen.
 
-1. Gör önskade ändringar av fragmentet. Om du vill redigera innehållet klickar du på knappen **[!UICONTROL Edit]** och uppdaterar innehållet som du gör när du skapar ett fragment från början. [Lär dig skapa ett fragment](#create-from-scratch)
+1. Gör önskade ändringar av fragmentet.
+
+1. Om du vill ändra innehållet klickar du på knappen **[!UICONTROL Edit]** och uppdaterar ditt innehåll på samma sätt som när du skapar ett fragment från början. [Lär dig skapa ett fragment](#create-from-scratch)
+
+   ![](assets/fragment-edit.png)
 
    >[!NOTE]
    >
    >När du redigerar ett publicerat fragment kan du ta bort alla anpassningsfält, men du kan inte lägga till nya i fragmentinnehållet. Om du vill lägga till anpassade attribut måste du duplicera fragmentet. [Läs mer](#adding-new-attributes)
 
-1. Du kan också kontrollera listan över resor, kampanjer och innehållsmallar där fragmentet används för närvarande genom att välja alternativet **Utforskaren-referenser**. [Läs mer](#explore-references)
-
-   ![](assets/fragment-edit.png)
-
-1. När ändringarna är klara klickar du på **Publish** för att göra ändringarna tillgängliga.
+1. När ändringarna är klara sparar du dem och klickar på knappen **Publish** för att göra ändringarna aktuella.
 
 När du redigerar ett fragment sprids ändringarna automatiskt till allt innehåll som använder det fragmentet, inklusive direktresor och kampanjer - förutom innehåll där du har brutet arv från det ursprungliga fragmentet.
 
@@ -113,17 +117,19 @@ När du redigerar ett fragment sprids ändringarna automatiskt till allt innehå
 
 >[!WARNING]
 >
->Det går inte att lägga till nya attribut i ett live-fragment.
+>Det går inte att lägga till nya [anpassade attribut](../personalization/personalization-build-expressions.md) i ett live-fragment.
 
 När ett fragment har publicerats låses uppsättningen med anpassade eller kontextuella attribut för alla kampanjer och resor som refererar till det.
 
 Följ stegen nedan om du vill lägga till ytterligare attribut till ett live-fragment.
 
-1. Duplicera det befintliga fragmentet.
+1. Duplicera det befintliga fragmentet med knappen **[!UICONTROL More actions]**.
 
-1. Lägg till de nödvändiga attributen i den duplicerade utkastversionen.
+   ![](assets/fragment-list-more-actions.png)
 
-1. Publish den nya versionen.
+1. [Lägg till de nya önskade attributen](../personalization/personalization-build-expressions.md#add) i den duplicerade utkastversionen.
+
+1. Publish den nya versionen. [Lär dig hur](create-fragments.md#publish)
 
 1. Uppdatera kampanjer eller resor för att referera till det uppdaterade fragmentet där de nya attributen lades till.
 
