@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
-source-git-commit: 2f5195f209c5e0e5665722b7c1e12e164acc587e
+source-git-commit: 5d3fc7c818e984da414e1f0e52ccc5d4f3a20ab3
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ ht-degree: 0%
 >id="ajo_create_fragment"
 >title="Definiera egna fragment"
 >abstract="Skapa och hantera fristående fragment för att göra innehållet återanvändbart på flera resor och i flera kampanjer."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/create-fragments" text="Skapa fragment"
+
+<!--
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/create-fragments" text="Create fragments"-->
 
 Ett fragment är en återanvändbar komponent som kan refereras i en eller flera e-postmeddelanden över [!DNL Journey Optimizer] kampanjer och resor. Med den här funktionen kan ni skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa e-postinnehåll i en förbättrad designprocess.
 
