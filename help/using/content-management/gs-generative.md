@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: f316ec79958ac23e0e416f0cafd49c017f2b6d4c
+source-git-commit: 2de3766c9fea36422c017ccaab3eb0a2501c6740
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt ins
 
 Allmänna riktlinjer för hur du använder AI Assistant Content Accelerator i Adobe Journey Optimizer för e-postgenerering anges nedan:
 
-* Kvaliteten på det genererade innehållet påverkas i hög grad av det marknadsföringsmål/den uppmaning du anger. Använd en väldefinierad uppmaning för GenAI-modellen att tolka korrekt. 
+* Kvaliteten på det genererade innehållet påverkas i hög grad av det marknadsföringsmål / den uppmaning du anger. Använd en väldefinierad uppmaning för GenAI-modellen att tolka korrekt. 
 * Ladda upp varumärkesresurser för att få korrekt varumärkesinnehåll. Annars baseras innehållet på offentligt tillgänglig information. Det överförda innehållet kan ha följande format: PDF, JPEG, PNG eller ZIP-filer (med filformat som stöds).
 * Den maximala storleken för överförda varumärkesresurser är 50 MB. Större filer eller mycket bilder kan fungera, men bearbetningstiden ökar.
 * Använd en varumärkesspecifik eller anpassad mall för att skapa e-postinnehåll med AI Assistant Content Accelerator i Adobe Journey Optimizer. E-postmallar med upp till 8-10 bilder rekommenderas.
