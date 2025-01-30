@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: abbc5c77545f30ac2d70d718f605acd30f7e7830
+source-git-commit: 69aa2eb79ac5a86c8cc5e27951d3b4edd2a5d8bf
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 0%
+source-wordcount: '1110'
+ht-degree: 1%
 
 ---
 
@@ -21,8 +21,6 @@ Om du vill hantera dina fragment kan du komma åt fragmentlistan från den väns
 
 Alla fragment som skapades i den aktuella sandlådan - antingen [ från **[!UICONTROL Fragments]**-menyn](#create-fragments), antingen med alternativet [Spara som fragment](#save-as-fragment) - visas.
 
-![](assets/fragment-list-filters.png)
-
 Du kan filtrera fragment på deras:
 
 * Status (utkast eller Live)
@@ -31,18 +29,20 @@ Du kan filtrera fragment på deras:
 * Delstat (arkiverad eller ej)
 * Taggar
 
+![](assets/fragment-list-filters.png){width="90%" align="left"}
+
 Du kan också välja att visa alla fragment eller bara de objekt som den aktuella användaren har skapat eller ändrat.
 
 Från knappen **[!UICONTROL More actions]** bredvid varje fragment kan du:
 
-<!--* Add to package
-* Open draft version-->
+* Lägg till den i ett paket för export. [Läs mer](#export)
+* Om fragmentet är live öppnar du ett utkast för att redigera det. [Läs mer](#edit-fragments)
 * Duplicera fragmentet.
 * Använd alternativet **[!UICONTROL Explore references]** om du vill visa de resor, kampanjer eller mallar där det används. [Läs mer](#explore-references)
 * Arkivera fragmentet. [Läs mer](#archive-fragments)
 * Redigera fragmentets taggar. [Lär dig arbeta med enhetliga taggar](../start/search-filter-categorize.md#tags)
 
-![](assets/fragment-list-more-actions.png)
+![](assets/fragment-list-more-actions.png){width="70%" align="left"}
 
 ## Fragmentstatus
 
@@ -67,7 +67,7 @@ Fragment kan ha flera statusar:
 >
 >Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen **Utkast**, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem **Live** och sprida ändringarna till associerade kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. Publicering kräver användarbehörighet för [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager).
 
-## Redigera fragment {#edit-fragments}
+## Redigera ett fragment {#edit-fragments}
 
 >[!CONTEXTUALHELP]
 >id="ajo_fragments_update_campaigns"
@@ -83,29 +83,27 @@ Om du vill redigera ett fragment följer du stegen nedan.
 
 1. Klicka på önskat fragment i listan **[!UICONTROL Fragments]**. Skärmen för fragmentegenskaper öppnas och innehållet förhandsgranskas.
 
-1. Du kan kontrollera listan över resor, kampanjer och innehållsmallar där fragmentet används för närvarande genom att välja alternativet **[!UICONTROL Explore references]**. [Läs mer](#explore-references)
+1. Du kan kontrollera listan över resor, kampanjer och innehållsmallar där fragmentet används. Om du vill göra det väljer du alternativet **[!UICONTROL Explore references]** från åtgärdsknappen Mer. [Läs mer](#explore-references)
 
-   ![](assets/fragment-edit-references.png)
+1. Om fragmentet som redigeras har statusen **[!UICONTROL Live]** klickar du på knappen **[!UICONTROL Modify]** för att skapa ett utkast av fragmentet. Klicka på **[!UICONTROL Confirm]**.
 
-1. Om fragmentet som redigeras har statusen **[!UICONTROL Live]** klickar du på knappen **[!UICONTROL Modify]** för att skapa ett utkast av fragmentet.
-
-   <!--![](assets/fragment-live-modify.png)-->
+   ![](assets/fragment-live-modify.png){width="70%" align="left"}
 
    >[!NOTE]
    >
    >Den aktuella versionen av fragmentet fortsätter att vara aktiv tills du publicerar den nya uppdaterade versionen.
 
-1. Gör önskade ändringar av fragmentet.
+1. Gör önskade ändringar av fragmentinformationen om det behövs.
 
-1. Om du vill ändra innehållet klickar du på knappen **[!UICONTROL Edit]** och uppdaterar ditt innehåll på samma sätt som när du skapar ett fragment från början. [Lär dig skapa ett fragment](#create-from-scratch)
+1. Om du vill ändra fragmentets innehåll klickar du på knappen **[!UICONTROL Edit]** och uppdaterar ditt innehåll på samma sätt som när du skapar ett fragment från början. [Lär dig skapa ett fragment](create-fragments.md#content)
 
-   ![](assets/fragment-edit.png)
+   ![](assets/fragment-edit.png){width="70%" align="left"}
 
    >[!NOTE]
    >
    >När du redigerar ett publicerat fragment kan du ta bort alla anpassningsfält, men du kan inte lägga till nya i fragmentinnehållet. Om du vill lägga till anpassade attribut måste du duplicera fragmentet. [Läs mer](#adding-new-attributes)
 
-1. När ändringarna är klara sparar du dem och klickar på knappen **Publish** för att göra ändringarna aktuella.
+1. När ändringarna är klara sparar du dem och klickar på knappen **[!UICONTROL Publish]** för att göra ändringarna aktuella. [Läs mer](create-fragments.md#publish)
 
 När du redigerar ett fragment sprids ändringarna automatiskt till allt innehåll som använder det fragmentet, inklusive direktresor och kampanjer - förutom innehåll där du har brutet arv från det ursprungliga fragmentet.
 
@@ -125,23 +123,30 @@ Följ stegen nedan om du vill lägga till ytterligare attribut till ett live-fra
 
 1. Duplicera det befintliga fragmentet med knappen **[!UICONTROL More actions]**.
 
-   ![](assets/fragment-list-more-actions.png)
+   ![](assets/fragment-list-more-actions.png){width="70%" align="left"}
 
-1. [Lägg till de nya önskade attributen](../personalization/personalization-build-expressions.md#add) i den duplicerade utkastversionen.
+1. Markera det duplicerade fragmentet för att öppna det och klicka på knappen **[!UICONTROL Edit]**.
 
-1. Publish den nya versionen. [Lär dig hur](create-fragments.md#publish)
+1. [Lägg till de nya önskade attributen](../personalization/personalization-build-expressions.md#add) i det duplicerade fragmentet, till exempel anpassningsfält.
+
+   ![](assets/fragment-add-new-attribute.png){width="70%" align="left"}
+
+1. Spara ändringarna och publicera det nya fragmentet. [Lär dig hur](create-fragments.md#publish)
 
 1. Uppdatera kampanjer eller resor för att referera till det uppdaterade fragmentet där de nya attributen lades till.
 
+   * [Lär dig använda visuella fragment](../email/use-visual-fragments.md)
+   * [Lär dig använda uttrycksfragment](../personalization/use-expression-fragments.md)
+
 ## Utforska referenser {#explore-references}
 
-Du kan visa en lista över de resor, kampanjer och innehållsmallar som för närvarande använder ett fragment. Om du vill göra det väljer du **[!UICONTROL Explore references]** antingen på menyn **[!UICONTROL More actions]** i fragmentlistan eller på skärmen för fragmentegenskaper.
+Du kan visa en lista över de resor, kampanjer och innehållsmallar som för närvarande använder ett fragment. Om du vill göra det väljer du **[!UICONTROL Explore references]** på menyn **[!UICONTROL More actions]** antingen i fragmentlistan eller i skärpan för fragmentegenskaper.
 
-![](assets/fragment-explore-references.png)
+![](assets/fragment-explore-references.png){width="70%" align="left"}
 
 Välj en flik för att växla mellan resor, kampanjer, mallar och fragment. Du kan se deras status och klicka på ett namn som ska omdirigeras till motsvarande objekt där fragmentet refereras.
 
-![](assets/fragment-usage-screen.png)
+![](assets/fragment-usage-screen.png){width="70%" align="left"}
 
 >[!NOTE]
 >
@@ -153,7 +158,7 @@ Du kan rensa fragmentlistan från objekt som inte längre är relevanta för ert
 
 Om du vill göra det klickar du på knappen **[!UICONTROL More actions]** bredvid det önskade fragmentet och väljer **[!UICONTROL Archive]**. Den försvinner från fragmentlistan, vilket förhindrar att den används i framtida e-postmeddelanden eller mallar.
 
-![](assets/fragment-list-archive.png)
+![](assets/fragment-list-archive.png){width="70%" align="left"}
 
 >[!NOTE]
 >
@@ -161,10 +166,10 @@ Om du vill göra det klickar du på knappen **[!UICONTROL More actions]** bredvi
 
 Om du vill arkivera ett fragment, filtrerar du på **[!UICONTROL Archived]**-objekten och väljer **[!UICONTROL Unarchive]** på **[!UICONTROL More actions]**-menyn. Det är nu igen tillgängligt från fragmentlistan och kan användas i alla e-postmeddelanden och mallar.
 
-![](assets/fragment-list-unarchive.png)
+![](assets/fragment-list-unarchive.png){width="70%" align="left"}
 
 ## Exportera fragment till en annan sandlåda {#export}
 
 Med Journey Optimizer kan du kopiera ett fragment från en sandlåda till en annan. Du kan t.ex. kopiera ett fragment från sandlådemiljön på scenen till produktionssandlådan.
 
-Kopieringsprocessen utförs via en **paketexport och import** mellan käll- och målsandlådorna. Detaljerad information om hur du exporterar objekt och importerar dem till en målsandlåda finns i det här avsnittet: [Kopiera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)
+Kopieringsprocessen utförs via en **paketexport och import** mellan käll- och målsandlådorna. Detaljerad information om hur du exporterar objekt och importerar dem till en målsandlåda finns i det här avsnittet: [Kopiera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md).

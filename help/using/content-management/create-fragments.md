@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: 5951428b9317af9c1e40fac64f0d18c6c80c15b0
+source-git-commit: 69aa2eb79ac5a86c8cc5e27951d3b4edd2a5d8bf
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Följ stegen nedan för att skapa ett fragment.
 
 1. Välj eller skapa Adobe Experience Platform-taggar från fältet **[!UICONTROL Tags]** för att kategorisera ditt fragment för förbättrad sökning. [Lär dig arbeta med enhetliga taggar](../start/search-filter-categorize.md#tags)
 
-1. Välj fragmenttypen: **Visual fragment** eller **Expression fragment**. [Läs mer om visuella fragment och uttrycksfragment](../content-management/fragments.md#visual-expression)
+1. Välj fragmenttypen: **Visual fragment** eller **Expression fragment**. [Läs mer](../content-management/fragments.md#visual-expression)
 
    >[!NOTE]
    >
