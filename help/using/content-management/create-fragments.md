@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: c30b7f4d75222db0553fbf576b90791af58cda57
+source-git-commit: 730e3da767ba54973ea886057262fe0210b46dd2
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 0%
+source-wordcount: '617'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ Om ditt fragment är klart att publiceras kan du förhandsgranska och publicera 
 
 1. Gå tillbaka till skärmen för att skapa fragment när du har utformat dess innehåll, eller öppna den från listan med fragment.
 
-1. En förhandsgranskning av fragmentet är tillgänglig under fältet **[!UICONTROL Tags]**, vilket gör att återgivningen kan kontrolleras. Om du behöver göra några ändringar klickar du på knappen **[!UICONTROL Edit]** i skärmens övre del för att öppna e-post-Designer eller anpassningsredigeraren beroende på fragmenttypen.
+1. En förhandsgranskning av fragmentet är tillgänglig under fältet **[!UICONTROL Tags]**, vilket gör att återgivningen kan kontrolleras. Om du behöver göra några ändringar klickar du på knappen **[!UICONTROL Edit]** i skärmens övre del för att öppna e-post-Designer eller anpassningsredigeraren, beroende på fragmenttypen. [Läs mer](manage-fragments.md#edit-fragments)
 
    ![](assets/fragment-preview.png)
 
