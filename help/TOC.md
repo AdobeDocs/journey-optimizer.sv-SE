@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: abdfa7fa107e8be5d395c634057c38a512a4a03d
+source-git-commit: a54f298b5d2a053c8e50874477a72ff656a37abc
 workflow-type: tm+mt
 source-wordcount: '2154'
 ht-degree: 24%
@@ -304,7 +304,6 @@ ht-degree: 24%
       + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
       + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
 + Innehållshantering {#content-management}
-   + [Adobe Experience Manager Content Fragments](using/content-management/aem-fragments.md)
    + Arbeta med AI-assistenten{#ai-assistant}
       + [Kom igång med AI Assistant Content Accelerator](using/content-management/gs-generative.md)
       + [E-postgenerering med AI](using/content-management/generative-email.md)
@@ -371,6 +370,7 @@ ht-degree: 24%
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
       + [Skapa dynamiskt innehåll](using/personalization/dynamic-content.md)
+   + [Adobe Experience Manager Content Fragments](using/content-management/aem-fragments.md)
 + Målgrupper, profiler och identitet{#audiences-profiles-identities}
    + Målgrupper {#audiences}
       + [Kom igång med målgrupper](using/audience/about-audiences.md)
