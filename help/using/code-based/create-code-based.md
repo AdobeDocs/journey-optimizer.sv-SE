@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
+source-git-commit: 5951428b9317af9c1e40fac64f0d18c6c80c15b0
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '682'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,8 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Kom igång med personaliseringsredigeraren"
+
+<!-- additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Get started with the personalization editor"-->
 
 1. Välj **[!UICONTROL Edit code]** från reseaktiviteten eller kampanjversionen.
 
@@ -123,7 +124,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
 1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
 
-Så snart utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen tillämpas ändringarna på webbsidan eller appen.
+När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen, tillämpas ändringarna på webbsidan eller appen.
 
 ## Instruktionsvideo{#video}
 
