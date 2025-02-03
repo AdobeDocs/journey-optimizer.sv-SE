@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: dfe59dc0533fca394ee197193ad4558568c4c11c
+source-git-commit: a1bdbc741a96325d71562b8f5ce5279096689cf0
 workflow-type: tm+mt
-source-wordcount: '2761'
+source-wordcount: '2741'
 ht-degree: 0%
 
 ---
@@ -85,8 +85,8 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_unsubscribe_custom"
->title="Ange egna List-Unsubscribe-slutpunkter"
->abstract="Om du hanterar samtycke utanför Adobe väljer du alternativet **Kundhanterad** för att ange en anpassad e-postadress för att avbryta prenumerationen och en egen adress för att avsluta prenumerationen med ett klick. I det här fallet bör du vara medveten om att Adobe inte lagrar någon information om att prenumerera. Ägaren till dina kunders medgivandeinformation ansvarar för att hantera deras medgivandedata och för att de skickas tillbaka till Journey Optimizer."
+>title="Definiera hur data för att avbryta prenumerationen hanteras"
+>abstract="**Adobe hanterad**: Medgivandedata hanteras av dig i Adobe-systemet.<br>**Kundhanterad**: Medgivandedata hanteras av dig i ett externt system och ingen synkronisering av medgivandedata uppdateras i Adobe-systemet såvida det inte initieras av dig."
 
 <!--Do not modify - Legal Review Done -->
 
