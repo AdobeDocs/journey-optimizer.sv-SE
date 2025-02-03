@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4eef896bd139cfb4acb4b817527dee67e246082d
+source-git-commit: 50687bad19e4866ace1e3e94f3efcdad84e98c96
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2196'
 ht-degree: 6%
 
 ---
@@ -40,6 +40,14 @@ ht-degree: 6%
 </tr>
 </tbody>
 </table>
+
+### Förbättringar {#25-01-improvements}
+
+Den här versionen innehåller de förbättringar som anges nedan.
+
+**Beslut**
+
+* Beslutsfattandet har nu stöd för datatyperna Object när objektkatalogens schema redigeras. [Läs mer](../experience-decisioning/catalogs.md)
 
 ## 24 oktober {#24-10-rn}
 

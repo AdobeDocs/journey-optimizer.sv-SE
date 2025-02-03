@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
-source-git-commit: 5a64190203563d66309c897fe3ee806a74e8bfc9
+source-git-commit: 50687bad19e4866ace1e3e94f3efcdad84e98c96
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ I beslut fungerar kataloger som centrala behållare för att organisera beslutso
 För närvarande konsolideras alla beslutsobjekt som skapats i en enda katalog för erbjudanden som nås via menyn **[!UICONTROL Catalogs]**.
 
 ![](assets/catalogs-list.png)
+
+## Skyddsritningar och begränsningar
+
+För att säkerställa optimal prestanda och enhetlighet tillämpar beslut följande säkerhetsförslag och begränsningar:
+
+* **Datatyper som stöds**
+
+  För närvarande har Decisioning exklusivt stöd för följande datatyper: String, Integer, Boolean, Date, DateTime, Decisioning Asset och Object. Fält som ligger utanför dessa datatyper är inte tillgängliga för redigering av beslutsobjekt eller kataloger.
+
+
+* **Anpassad attributgräns**
+
+  Varje beslutsobjekt kan innehålla upp till 100 anpassade attribut.
+
+* **Kapslingsbegränsningar**
+
+  Högst fyra kapslingsnivåer stöds. Bilder stöds inte på den sista nivån.
+
+## Åtkomst till och redigering av katalogschemat
 
 Följ de här stegen för att komma åt katalogschemat där beslutsobjektens attribut lagras:
 
@@ -38,16 +57,14 @@ Följ de här stegen för att komma åt katalogschemat där beslutsobjektens att
 
 1. Fyll i de fält som krävs för det tillagda attributet och klicka på **[!UICONTROL Apply]**.
 
-   >[!CAUTION]
-   >
-   >För närvarande har Decisioning exklusivt stöd för följande datatyper: String, Integer, Boolean, Date, DateTime och Decisioning Asset. Fält som ligger utanför dessa datatyper är inte tillgängliga för redigering av beslutsobjekt eller kataloger.
-
    Värdet som anges för ett attribut med ett decimalresursattribut är en publik url. För det mesta pekar detta på en bild.
 
    Detaljerad information om hur du arbetar med Adobe Experience Platform-scheman finns i [XDM-systemdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
 1. Spara schemat när du har lagt till de anpassade attributen. Det nya fältet är nu tillgängligt på skärmen för att skapa beslutsobjekt i avsnittet **[!UICONTROL Custom attributes]**.
 
->[!NOTE]
->
->Ett beslutsobjekt kan innehålla maximalt 100 anpassade attribut. [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
+
+   I exemplet nedan visas en skärm för att skapa objekt med anpassade attribut, till exempel objekt som definierats i schemat.
+
+   ![](assets/custom-attributes.png)
+
