@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 0dc8f4700a9ffe9073aecfda1b3ad31e0d30610e
+source-git-commit: 962366b6e7eb959d24411a5b383678a5a183ad75
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 53%
@@ -90,7 +90,7 @@ Nedan beskrivs de viktigaste stegen för att skapa och konfigurera en ny extern 
    * **[!UICONTROL Value]**: &quot;1234&quot; (det här är värdet på vår API-nyckel)
    * **[!UICONTROL Location]**: &quot;Frågeparameter&quot; (API-nyckeln finns i webbadressen)
 
-   ![](assets/journey28.png)
+     ![](assets/journey28.png)
 
 1. Klicka på **[!UICONTROL Add a New Field Group]** för att lägga till en ny fältgrupp för varje API-parameteruppsättning. Endast alfanumeriska tecken och understreck tillåts i fältgruppsnamnet. Maximala längden är 30 tecken. I vårt exempel behöver vi skapa två fältgrupper. En för varje parameteruppsättning (&quot;city&quot; och &quot;long/lat&quot;).
 
@@ -100,19 +100,19 @@ För parameteruppsättningen &quot;long/lat&quot; skapar vi en fältgrupp med f�
 * **[!UICONTROL Method]**: välj metoden POST eller GET. I vårt fall väljer vi metoden GET.
 * **[!UICONTROL Dynamic Values]**: ange de olika parametrarna avgränsade med kommatecken – &quot;long,lat&quot; i vårt exempel. Eftersom parameterns värden är beroende av körningens sammanhang definieras de i resorna. [Läs mer](../building-journeys/expression/expressionadvanced.md)
 * **[!UICONTROL Response Payload]**: klicka inuti fältet **[!UICONTROL Payload]** och klistra in ett exempel på nyttolasten som returneras av anropet. Vi har till exempel använt en nyttolast som finns på en API-webbplats för väder. Kontrollera att fälttyperna är korrekta. Varje gång API:et anropas hämtas alla fält som ingår i exemplets nyttolast. Observera att du kan klicka på **[!UICONTROL Paste a new payload]** för att ändra den nyttolast som för närvarande används.
-
 * **[!UICONTROL Sent Payload]**: det här fältet visas inte i vårt exempel. Det är endast tillgängligt om du väljer metoden POST. Klistra in nyttolasten som ska skickas till tredjepartssystemet.
 
-Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Dynamic Values]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
+  Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fältet **[!UICONTROL Dynamic Values]** och de läggs sedan till automatiskt i slutet av anropet. Om ett POST-anrop används måste du:
 
-* lista de parametrar som ska skickas vid anropet i fältet **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
-* även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;name of your parameter&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
+   * lista de parametrar som ska skickas vid anropet i fältet **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
+   * även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;name of your parameter&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
-  ```json
-  {"id":{"param":"identifier"}}
-  ```
+     ```json
+     {"id":{"param":"identifier"}}
+     ```
 
-![](assets/journey29.png)
+     ![](assets/journey29.png)
+
 
 1. Klicka på **[!UICONTROL Save]**.
 
