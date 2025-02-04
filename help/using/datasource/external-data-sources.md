@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 0dc8f4700a9ffe9073aecfda1b3ad31e0d30610e
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 61%
+source-wordcount: '1549'
+ht-degree: 53%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 61%
 >title="Externa datakällor"
 >abstract="Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs."
 
+## Arbeta med externa datakällor {#gs-ext-data-sources}
+
 Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs.
 
 >[!NOTE]
 >
->Garantier visas på [den här sidan](../configuration/external-systems.md) när du arbetar med externa system.
-
->[!NOTE]
+>* Garantier visas på [den här sidan](../configuration/external-systems.md) när du arbetar med externa system.
 >
->Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [avsnittet](../action/action-response.md)
+>* Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [avsnittet](../action/action-response.md)
 
 Stöd finns för REST API:er som använder POST eller GET och returnerar JSON. API-nyckel samt grundläggande och anpassade autentiseringslägen stöds.
 
@@ -44,7 +44,10 @@ Här är två exempel på API-anropet:
 
 Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två parameteruppsättningar (&quot;city&quot; för staden och &quot;lat/long&quot; för latitud och longitud) och API-nyckeln (appid).
 
-Här följer de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
+
+## Skapa och konfigurera en extern datakälla {#create-ext-data-sources}
+
+Nedan beskrivs de viktigaste stegen för att skapa och konfigurera en ny extern datakälla:
 
 1. Klicka på **[!UICONTROL Create Data Source]** i listan med datakällor för att skapa en ny extern datakälla.
 
@@ -75,9 +78,12 @@ Här följer de viktigaste stegen för att skapa och konfigurera en ny extern da
 
    >[!NOTE]
    >
-   >När autentiseringsanropet utförs läggs strängen `<username>:<password>`, som är kodad i base64, till i autentiseringshuvudet.
+   >* När autentiseringsanropet utförs läggs strängen `<username>:<password>`, som är kodad i base64, till i autentiseringshuvudet.
+   >
+   >* Adobe Journey Optimizer krypterar automatiskt hemligheter som definieras i anpassade åtgärder. Varje organisations krypteringsnycklar hanteras på ett säkert sätt i ett dedikerat valv som är kopplat till organisationen. När inloggningsuppgifter visas i gränssnittet maskeras de som standard för att förhindra oavsiktlig exponering.
 
-   Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode). I det här exemplet väljer vi autentiseringsläget för API-nyckel:
+
+   Mer information om det anpassade autentiseringsläget finns i [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode). I vårt exempel väljer vi autentiseringsläget för API-nycklar enligt nedan:
 
    * **[!UICONTROL Type]**: &quot;API-nyckel&quot;
    * **[!UICONTROL Name]**: &quot;appid&quot; (det här är API-nyckelns parameternamn)
@@ -108,28 +114,28 @@ Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fäl
 
 ![](assets/journey29.png)
 
-Klicka på **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Save]**.
 
 Datakällan är nu konfigurerad och redo att användas i dina resor. Du kan till exempel använda den i dina villkor eller för att personalisera ett e-postmeddelande. Om temperaturen är över 30 °C kan du välja att skicka ett visst meddelande.
 
-## Anpassat autentiseringsläge{#custom-authentication-mode}
+## Anpassat autentiseringsläge {#custom-authentication-mode}
 
 >[!CONTEXTUALHELP]
 >id="jo_authentication_payload"
 >title="Om anpassad autentisering"
 >abstract="Det anpassade autentiseringsläget används vid komplex autentisering för att anropa API-omslutningsprotokoll som OAuth2. Körningen av åtgärden är en process i två steg. Först görs ett anrop till slutpunkten för att generera en åtkomsttoken. Denna åtkomsttoken injiceras sedan i åtgärdens HTTP-begäran."
 
-Det här autentiseringsläget används vid komplex autentisering som ofta används för att anropa API-omslutningsprotokoll som OAuth2 och för att hämta en åtkomsttoken som ska injiceras i den faktiska HTTP-begäran för åtgärden.
+Det anpassade autentiseringsläget används för komplex autentisering, som ofta används för att anropa API-omslutningsprotokoll som OAuth2, för att hämta en åtkomsttoken som ska injiceras i den faktiska HTTP-begäran för åtgärden.
 
-När du konfigurerar den anpassade autentiseringen kan du klicka på knappen nedan för att kontrollera om den anpassade autentiserade nyttolasten är korrekt konfigurerad.
+När du konfigurerar den anpassade autentiseringen använder du knappen **[!UICONTROL Click to check the authentication]** för att kontrollera om den anpassade autentiseringsnyttolasten är korrekt konfigurerad.
 
 ![](assets/journey29-bis.png)
 
-Om testet godkänns blir knappen grön.
+När testet är klart blir knappen grön.
 
 ![](assets/journey29-ter.png)
 
-Med den här autentiseringen blir åtgärdskörningen en process med två steg:
+I det här autentiseringsläget är åtgärdskörningen en tvåstegsprocess:
 
 1. Anropa slutpunkten för att generera en åtkomsttoken.
 1. Anropa REST API:et genom att injicera åtkomsttoken på rätt sätt.
