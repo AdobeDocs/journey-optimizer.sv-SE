@@ -7,14 +7,23 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: 82558447-9d42-4fac-8fc1-fded9bf4bfcc
+source-git-commit: 87a9baf1ee042bb4386fdc2bd631637e3cc9859e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
 
 # Rapport om e-postresa {#journey-global-report}
+
+>[!BEGINSHADEBOX]
+
+Eftersom Apple har infört nya funktioner för integritetsskydd för sin egen e-postapp, bland annat skydd av personuppgifter, kan avsändare inte längre använda spårningspixlar för att samla in data om profiler som har aktiverat Apple skydd av personuppgifter. Därför kan Adobe Journey Optimizer förmåga att spåra e-postöppningar med hjälp av spårningspixlar påverkas. [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/the-impact-of-apple-ios-privacy-changes-on-email-marketing-and/ba-p/699780) om hur Apple iOS sekretessändringar påverkar e-postmarknadsföring.
+
+Vi rekommenderar att ni fokuserar på klick och konverteringsvärden i stället för öppna frekvenser för mer korrekta insikter.
+
+>[!ENDSHADEBOX]
 
 ## Levererat kontra klicktrend {#delivered-click}
 
