@@ -7,14 +7,21 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: 33b6cc18-dd63-48d9-8d85-526500d83d37
+source-git-commit: 673e86ccd07c7afdf0b87859434145f16f7b7d26
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
 # Kodbaserad reserapport {#journey-global-report}
+
+>[!BEGINSHADEBOX]
+
+Din reserapport kan visa information från flera resor samtidigt, eftersom användare kan vara inblandade i mer än en resa i taget. Detta innebär att inkommande kommunikation (In-App, Web och Code-based) kan visas på flera resor om de utlöstes för en användare som deltar i samtidiga aktiva resor, vilket kan resultera i överlappande data.
+
+>[!ENDSHADEBOX]
 
 ## Visa och klicka {#impressions-code}
 

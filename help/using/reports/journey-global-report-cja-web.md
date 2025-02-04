@@ -7,14 +7,21 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: 7591a07b-1680-4081-a745-192755d35371
+source-git-commit: 673e86ccd07c7afdf0b87859434145f16f7b7d26
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
 
 # Rapport om webbresa {#journey-global-report}
+
+>[!BEGINSHADEBOX]
+
+Din reserapport kan visa information från flera resor samtidigt, eftersom användare kan vara inblandade i mer än en resa i taget. Detta innebär att inkommande kommunikation (In-App, Web och Code-based) kan visas på flera resor om de utlöstes för en användare som deltar i samtidiga aktiva resor, vilket kan resultera i överlappande data.
+
+>[!ENDSHADEBOX]
 
 ## Trend för tryck och klickning {#impressions-web}
 
@@ -115,4 +122,3 @@ Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt 
 * **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
 
 +++
-
