@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 594bb029c7d8b711fe60697c5c2e06d9943189fa
+source-git-commit: cb6b73db76c710dd8e736e710f5eb758337be696
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 4%
+source-wordcount: '1319'
+ht-degree: 5%
 
 ---
 
@@ -245,11 +245,6 @@ Så här byter du språk:
 >abstract="Godkänn (resor)"
 
 <!-- ExD in email-->
-
->[!CONTEXTUALHELP]
->id="ajo_email_enable_experience_decisioning"
->title="Aktivera beslut"
->abstract="Aktivera beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_attribute"
