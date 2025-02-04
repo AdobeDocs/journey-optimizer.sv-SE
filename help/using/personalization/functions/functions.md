@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 3eab04f28b1daab556c4b4395d67f28d292fc52b
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '2390'
 ht-degree: 0%
 
 ---
@@ -102,37 +102,116 @@ Klicka på ikonen `...` för att visa beskrivningen av funktionen och lägga til
 
 <table>
     <tr>
-        <td><a href="dates.md#age">Ålder</a></td><td>Den här funktionen hämtar åldern från ett visst datum</td>
+        <td><a href="dates.md#add-days">Lägg till dagar</a></td><td>Den här funktionen justerar ett givet datum med ett angivet antal dagar, och använder positiva värden för att öka och negativa värden för minskning.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#current">Aktuell tid i millisekunder</a></td><td>Den här funktionen hämtar aktuell tid i epok millisekunder</td>
+        <td><a href="dates.md#add-hours">Lägg till timmar</a></td><td>Den här funktionen justerar ett givet datum med ett angivet antal timmar, och använder positiva värden för att öka och negativa värden för minskning.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#date-diff">Datumdifferens</a></td><td>Den här funktionen hämtar skillnaden mellan två datum i antal dagar</td>
+        <td><a href="dates.md#add-minutes">Lägg till minuter</a></td><td>Den här funktionen justerar ett givet datum med ett angivet antal minuter, och använder positiva värden för att öka och negativa värden för att minska.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#day-week">Veckodag</a></td><td>Den här funktionen hämtar veckodag</td>
+        <td><a href="dates.md#add-months">Lägg till månader</a></td><td>Den här funktionen justerar ett givet datum med ett angivet antal månader, och använder positiva värden för att öka och negativa värden för minskning.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#day-year">Dag på året</a></td><td>Den här funktionen hämtar dagen på året</td>
+        <td><a href="dates.md#add-seconds">Lägg till sekunder</a></td><td>Den här funktionen justerar ett givet datum med ett angivet antal sekunder och använder positiva värden för att öka och negativa värden för att minska.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#format-date">Formateringsdatum</a></td><td>Den här funktionen formaterar ett datum-/tidsvärde</td>
+        <td><a href="dates.md#add-years">Lägg till år</a></td><td>Den här funktionen justerar ett givet datum med ett angivet antal år och använder positiva värden för ökning och negativa värden för minskning.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#age">Ålder</a></td><td>Den här funktionen hämtar åldern från ett visst datum.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#age-days">Ålder i dagar</a></td><td>Den här funktionen beräknar ett visst datums ålder i dagar, dvs. antalet dagar som förflutit mellan det angivna datumet och det aktuella datumet, negativa för framtida datum och positiva för tidigare datum.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#age-months">Ålder i månader</a></td><td>Med den här funktionen beräknas åldern för ett givet datum i månader, dvs. antalet månader som förflutit mellan det angivna datumet och det aktuella datumet, negativa för framtida datum och positiva för tidigare datum.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#compare-dates">Jämför datum</a></td><td>Den här funktionen jämför det första indatadatumet med det andra. Returnerar 0 om date1 är lika med date2, -1 om date1 kommer före date2 och 1 om date1 kommer efter date2.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#convert-zoned-date-time">Konvertera ZonedDateTime</a></td><td>Den här funktionen konverterar ett datum/tid till en given tidszon.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#current">Aktuell tid i millisekunder</a></td><td>Den här funktionen hämtar aktuell tid i epok millisekunder.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#date-diff">Datumdifferens</a></td><td>Den här funktionen hämtar skillnaden mellan två datum i antal dagar.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#day-month">Dag i månaden</a></td><td>Den här funktionen returnerar talet som representerar dagen i månaden.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#day-week">Veckodag</a></td><td>Den här funktionen hämtar veckodag.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#day-year">Dag på året</a></td><td>Den här funktionen hämtar dagen på året.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#diff-seconds">Skillnad i sekunder</a></td><td>Den här funktionen returnerar skillnaden mellan två datum i sekunder.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#extract-hours">Extrahera timmar</a></td><td>Den här funktionen extraherar timkomponenten från en viss tidsstämpel.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#extract-minutes">Extrahera minuter</a></td><td>Den här funktionen extraherar minutkomponenten från en viss tidsstämpel.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#extract-months">Extrahera månader</a></td><td>Den här funktionen extraherar månadskomponenten från en viss tidsstämpel.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#extract-seconds">Extrahera sekunder</a></td><td>Den här funktionen extraherar den andra komponenten från en viss tidsstämpel.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#format-date">Formateringsdatum</a></td><td>Den här funktionen formaterar ett datum/tid-värde.</td>
     </tr>
     <tr>
         <td><a href="dates.md#format-date-locale">Formatera datum med språkstöd</a></td><td>Den här funktionen formaterar ett datum- och tidsvärde till motsvarande språkkänsliga representation, dvs. i ett önskat språkområde.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#set-days">Ange dagar</a></td><td>Den här funktionen anger dag i månaden för angivet datum/tid</td>
+        <td><a href="dates.md#get-current-zoned-date-time">Hämta CurrentZonedDateTime</a></td><td>Den här funktionen returnerar aktuellt datum och tid med tidszonsinformation.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#set-hours">Ange timmar</a></td><td>Den här funktionen ställer in timmen för datum-/tidsvärdet</td>
+        <td><a href="dates.md#hours-difference">Timskillnad</a></td><td>Den här funktionen returnerar skillnaden mellan två datum i timmar.</td>
     </tr>
     <tr>
-        <td><a href="dates.md#to-utc">Till UTC</a></td><td>Den här funktionen konverterar en datetime till UTC</td>
+        <td><a href="dates.md#diff-minutes">Minutdifferens</a></td><td>Den här funktionen returnerar skillnaden mellan två datum i minuter.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#months-difference">Månadsskillnad</a></td><td>Den här funktionen returnerar skillnaden mellan två datum i månader.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#set-days">Ange dagar</a></td><td>Den här funktionen anger dag i månaden för angivet datum/tid.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#set-hours">Ange timmar</a></td><td>Den här funktionen anger timmen för datum-tid.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#to-date-time">Till datum och tid</a></td><td>Den här funktionen konverterar en sträng till ett datum. Det returnerar epokdatumet som utdata för ogiltiga indata.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#to-utc">Till UTC</a></td><td>Den här funktionen konverterar en datetime till UTC.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#truncate-day">Trunkera till början av dagen</a></td><td>Den här funktionen ändrar ett visst datum-tid genom att ställa in det till början av dagen med tiden inställd på 00:00.</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#truncate-quarter">truncateToStartOfQuarter</a></td><td>Den här funktionen trunkerar ett datum-tid till den första dagen i kvartalet (t.ex. Jan 1, Apr 1, Jul 1, Oct 1) kl. 00:00.
+</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#truncate-week">truncateToStartOfWeek</a></td><td>Den här funktionen ändrar ett visst datum/tid genom att ställa in det till veckans början (måndag 00:00).</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#truncate-year">truncateToStartOfYear</a></td><td>Den här funktionen ändrar ett visst datum/tid genom att trunkera det till årets första dag (1 januari) kl. 00:00.</td>
     </tr>
     <tr>
         <td><a href="dates.md#week-of-year">Vecka på året</a></td><td>Den här funktionen returnerar årets vecka</td>
+    </tr>
+    <tr>
+        <td><a href="dates.md#diff-years">Årets skillnad</a></td><td>Den här funktionen returnerar skillnaden mellan två datum i termer av år.</td>
     </tr>
 </table>
 </table>

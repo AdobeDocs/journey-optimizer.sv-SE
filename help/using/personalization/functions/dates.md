@@ -6,16 +6,118 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: 3a4a58f8601c67e8e9a2b606a47c6b4bcc2dab05
+source-git-commit: 3eab04f28b1daab556c4b4395d67f28d292fc52b
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 2%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
 # Funktioner för datum och tid{#date-time}
 
 Datum- och tidsfunktioner används för att utföra datum- och tidsåtgärder på värden inom Journey Optimizer.
+
+## Lägg till dagar {#add-days}
+
+Funktionen `addDays` justerar ett givet datum med ett angivet antal dagar och använder positiva värden för att öka och negativa värden för minskning.
+
+**Syntax**
+
+```sql
+{%= addDays(date, number) %}
+```
+
++++Exempel
+
+* Indata: `{%= addDays(stringToDate("2024-11-01T17:19:51Z"),10) %}`
+* Utdata: `2024-11-11T17:19:51Z`
+
++++
+
+## Lägg till timmar {#add-hours}
+
+Funktionen `addHours` justerar ett givet datum med ett angivet antal timmar, och använder positiva värden för att öka och negativa värden för minskning.
+
+**Syntax**
+
+```sql
+{%= addHours(date, number) %}
+```
+
++++Exempel
+
+* Indata: `{%= addHours(stringToDate("2024-11-01T17:19:51Z"),1) %}`
+* Utdata: `2024-11-01T18:19:51Z`
+
++++
+
+## Lägg till minuter {#add-minutes}
+
+Funktionen `addMinutes` justerar ett givet datum med ett angivet antal minuter, och använder positiva värden för att öka och negativa värden för minskning
+
+**Syntax**
+
+```sql
+{%= addMinutes(date, number) %}
+```
+
++++Exempel
+
+* Indata: `{%= addMinutes(stringToDate("2024-11-01T17:59:51Z"),10) %}`
+* Utdata: `2024-11-01T18:09:51Z`
+
++++
+
+## Lägg till månader {#add-months}
+
+Funktionen `addMonths` justerar ett givet datum med ett angivet antal månader och använder positiva värden för att öka och negativa värden för minskning.
+
+**Syntax**
+
+```sql
+{%= addMonths(date, number) %}
+```
+
++++Exempel
+
+* Indata: `{%= addMonths(stringToDate("2024-11-01T17:19:51Z"),2) %}`
+* Utdata: `2025-01-01T17:19:51Z`
+
++++
+
+## Lägg till sekunder {#add-seconds}
+
+`addSeconds` justerar ett givet datum med ett angivet antal sekunder och använder positiva värden för att öka och negativa värden för att minska.
+
+**Syntax**
+
+```sql
+{%= addSeconds(date, number) %}
+```
+
++++Exempel
+
+* Indata: `{%= addSeconds(stringToDate("2024-11-01T17:19:51Z"),10) %}`
+* Utdata: `2024-11-01T17:20:01Z`
+
++++
+
+## Lägg till år {#add-years}
+
+`addYears` justerar ett givet datum med ett angivet antal år, och använder positiva värden för att öka och negativa värden för minskning.
+
+**Syntax**
+
+```sql
+{%= addYears(date, number) %}
+```
+
++++Exempel
+
+* Indata: `{%= addYears(stringToDate("2024-11-01T17:19:51Z"),2) %}`
+* Utdata: `2026-11-01T17:19:51Z`
+
++++
 
 ## Ålder{#age}
 
@@ -36,6 +138,78 @@ The following operation gets the value of the identity map for the key `example@
  {%= age(datetime) %}
 ```
 -->
+
+## Ålder i dagar {#age-days}
+
+Funktionen `ageInDays` beräknar ett visst datums ålder i dagar, dvs. antalet dagar som förflutit mellan det angivna datumet och det aktuella datumet, negativa för framtida datum och positiva för tidigare datum.
+
+**Syntax**
+
+```sql
+{%= ageInDays(date) %}
+```
+
++++Exempel
+
+currentDate = 2025-01-07T12:17:10.720122+05:30 (Asien/Kolkata)
+
+* Indata: `{%= ageInDays(stringToDate("2025-01-01T17:19:51Z"))%}`
+* Utdata: `5`
+
++++
+
+## Ålder i månader {#age-months}
+
+Funktionen `ageInMonths` beräknar åldern för ett givet datum i månader, dvs. antalet månader som förflutit mellan det angivna datumet och det aktuella datumet, negativa för framtida datum och positiva för tidigare datum.
+
+**Syntax**
+
+```sql
+{%= ageInMonths(date) %}
+```
+
++++Exempel
+
+currentDate = 2025-01-07T12:22:46.993748+05:30(Asien/Kolkata)
+
+* Indata: `{%=ageInMonths(stringToDate("2024-01-01T00:00:00Z"))%}`
+* Utdata: `12`
+
++++
+
+## Jämför datum {#compare-dates}
+
+Funktionen `compareDates` jämför det första indatadatumet med det andra. Returnerar 0 om date1 är lika med date2, -1 om date1 kommer före date2 och 1 om date1 kommer efter date2.
+
+**Syntax**
+
+```sql
+{%= compareDates(date1, date2) %}
+```
+
++++Exempel
+
+* Indata: `{%=compareDates(stringToDate("2024-12-02T00:00:00Z"), stringToDate("2024-12-03T00:00:00Z"))%}`
+* Utdata: `-1`
+
++++
+
+## Konvertera ZonedDateTime {#convert-zoned-date-time}
+
+Funktionen `convertZonedDateTime` konverterar ett datum/tid till en given tidszon.
+
+**Syntax**
+
+```sql
+{%= convertZonedDateTime(dateTime, timezone) %}
+```
+
++++Exempel
+
+* Indata: `{%=convertZonedDateTime(stringToDate("2019-02-19T08:09:00Z"), "Asia/Tehran")%}`
+* Utdata: `2019-02-19T11:39+03:30[Asia/Tehran]`
+
++++
 
 ## Aktuell tid i millisekunder{#current-time}
 
@@ -77,8 +251,25 @@ The following operation gets all the values for the map `identityMap`.
 ```
 -->
 
+## Dag i månaden {#day-month}
 
-## Veckodag{#day-week}
+`dayOfWeek` returnerar talet som representerar dagen i månaden.
+
+**Syntax**
+
+```sql
+{%= dayOfMonth(datetime) %}
+```
+
++++Exempel
+
+* Indata: `{%= dayOfMonth(stringToDate("2024-11-05T17:19:51Z")) %}`
+* Utdata: `5`
+
++++
+
+
+## Veckodag {#day-week}
 
 Funktionen `dayOfWeek` används för att hämta veckodag.
 
@@ -117,6 +308,91 @@ The following operation gets all the values for the map `identityMap`.
 {%= values(identityMap) %}
 ```
 -->
+
+## Skillnad i sekunder {#diff-seconds}
+
+Funktionen `diffInSeconds` returnerar skillnaden mellan två datum i sekunder.
+
+**Syntax**
+
+```sql
+{%= diffInSeconds(endDate, startDate) %}
+```
+
++++Exempel
+
+* Indata: `{%=diffInSeconds(stringToDate("2024-11-01T17:19:51Z"), stringToDate("2024-11-01T17:19:01Z"))%}`
+* Utdata: `50`
+
++++
+
+## Extrahera timmar {#extract-hours}
+
+Funktionen `extractHours` extraherar timkomponenten från en given tidsstämpel.
+
+**Syntax**
+
+```sql
+{%= extractHours(date) %}
+```
+
++++Exempel
+
+* Indata: `{%= extractHours(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Utdata: `17`
+
++++
+
+## Extrahera minuter {#extract-minutes}
+
+Funktionen `extractMinutes` extraherar minutkomponenten från en given tidsstämpel.
+
+**Syntax**
+
+```sql
+{%= extractMinutes(date) %}
+```
+
++++Exempel
+
+* Indata: `{%= extractMinute(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Utdata: `19`
+
++++
+
+## Extrahera månader {#extract-months}
+
+Funktionen `extractMonth` extraherar månadskomponenten från en viss tidsstämpel.
+
+**Syntax**
+
+```sql
+{%= extractMonths(date) %}
+```
+
++++Exempel
+
+* Indata: `{%=extractMonth(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Utdata: `11`
+
++++
+
+## Extrahera sekunder {#extract-seconds}
+
+Funktionen `extractSeconds` extraherar den andra komponenten från en viss tidsstämpel.
+
+**Syntax**
+
+```sql
+{%= extractSeconds(date) %}
+```
+
++++Exempel
+
+* Indata: `{%=extractSeconds(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Utdata: `51`
+
++++
 
 ## Formateringsdatum{#format-date}
 
@@ -164,7 +440,6 @@ Där den första strängen är datumattributet är det andra värdet hur du vill
 >
 > Du kan använda formatering och giltiga språkinställningar enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språkinställningar som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html).
 
-
 **Exempel**
 
 Följande åtgärd returnerar datumet i följande format: MM/DD/YY och språkområde FRANCE.
@@ -172,6 +447,74 @@ Följande åtgärd returnerar datumet i följande format: MM/DD/YY och språkomr
 ```sql
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/DD/YY", "fr_FR") %}
 ```
+
+## Hämta CurrentZonedDateTime {#get-current-zoned-date-time}
+
+Funktionen `getCurrentZonedDateTime` returnerar aktuellt datum och aktuell tid med tidszonsinformation.
+
+**Syntax**
+
+```sql
+{%= getCurrentZonedDateTime() %}
+```
+
++++Exempel
+
+* Indata: `{%= getCurrentZonedDateTime() %}`
+* Utdata: `2024-12-06T17:22:02.281067+05:30[Asia/Kolkata]`
+
++++
+
+## Timskillnad {#hours-difference}
+
+Funktionen `diffInHours` returnerar skillnaden mellan två datum i timmar.
+
+**Syntax**
+
+```sql
+{%= diffInHours(endDate, startDate) %}
+```
+
++++Exempel
+
+* Indata: `{%= diffInHours(stringToDate("2024-11-01T17:19:51Z"), stringToDate("2024-11-01T07:19:51Z"))%}`
+* Utdata: `10`
+
++++
+
+## Minutdifferens{#diff-minutes}
+
+Funktionen `diffInMinutes` används för att returnera skillnaden mellan två datum i minuter.
+
+**Syntax**
+
+```sql
+{%= diffInMinutes(endDate, startDate) %}
+```
+
++++Exempel
+
+* Indata: `{%= diffInMinutes(stringToDate("2024-11-01T17:19:51Z"), stringToDate("2024-11-01T16:19:51Z"))%}`
+* Utdata: `60`
+
++++
+
+## Månadsskillnad {#months-difference}
+
+Funktionen `diffInMonths` returnerar skillnaden mellan två datum i månader.
+
+**Syntax**
+
+```sql
+{%= diffInMonths(endDate, startDate) %}
+```
+
++++Exempel
+
+* Indata: `{%=diffInMonths(stringToDate("2024-11-01T17:19:51Z"), stringToDate("2024-08-01T17:19:51Z"))%}`
+* Utdata: `3`
+
++++
 
 ## Ange dagar{#set-days}
 
@@ -213,11 +556,26 @@ The following operation gets all the values for the map `identityMap`.
 ```
 -->
 
+## Till datum och tid {#to-date-time}
+
+Funktionen `ToDateTime` konverterar sträng till datum. Det returnerar epokdatumet som utdata för ogiltiga indata.
+
+**Syntax**
+
+```sql
+{%= toDateTime(string, string) %}
+```
+
++++Exempel
+
+* Indata: `{%=toDateTime("2024-11-01T17:19:51Z")%}`
+* Utdata: `2024-11-01T17:19:51Z`
+
++++
 
 ## Till UTC{#to-utc}
 
 Funktionen `toUTC` används för att konvertera en datetime till UTC.
-
 
 **Syntax**
 
@@ -235,8 +593,75 @@ The following operation gets all the values for the map `identityMap`.
 ```
 -->
 
+## Trunkera till början av dagen {#truncate-day}
 
-## Vecka på året UTC{#week-of-year}
+Funktionen `truncateToStartOfDay` används för att ändra ett givet datum/tid genom att ställa in den på början av dagen med tiden inställd på 00:00.
+
+**Syntax**
+
+```sql
+{%= truncateToStartOfDay(date) %}
+```
+
++++Exempel
+
+* Indata: `{%= truncateToStartOfDay(stringToDate("2024-11-01T17:19:51Z")) %}`
+* Utdata: `2024-11-01T00:00Z`
+
++++
+
+## truncateToStartOfQuarter {#truncate-quarter}
+
+Funktionen `truncateToStartOfQuarter` används för att korta av ett datum-tid till den första dagen i kvartalet (t.ex. Jan 1, Apr 1, Jul 1, Oct 1) kl. 00:00.
+
+**Syntax**
+
+```sql
+{%= truncateToStartOfQuarter(dateTime) %}
+```
+
++++Exempel
+
+* Indata: `{%=truncateToStartOfQuarter(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Utdata: `2024-10-01T00:00Z`
+
++++
+
+## truncateToStartOfWeek {#truncate-week}
+
+Funktionen `truncateToStartOfWeek` ändrar ett visst datum/tid genom att ställa in det till veckans början (måndag 00:00).
+
+**Syntax**
+
+```sql
+{%= truncateToStartOfWeek(dateTime) %}
+```
+
++++Exempel
+
+* Indata: `truncateToStartOfWeek(stringToDate("2024-11-19T17:19:51Z"))%} // tuesday`
+* Utdata: `2024-11-18T00:00Z // monday`
+
++++
+
+## truncateToStartOfYear {#truncate-year}
+
+Funktionen `truncateToStartOfYear` används för att ändra ett visst datum-tid genom att trunkera den till årets första dag (1 januari) kl. 00:00.
+
+**Syntax**
+
+```sql
+{%= truncateToStartOfYear(dateTime) %}
+```
+
++++Exempel
+
+* Indata: `{%=truncateToStartOfYear(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Utdata: `2024-01-01T00:00Z`
+
++++
+
+## Vecka på året {#week-of-year}
 
 Funktionen `weekOfYear` används för att hämta årets vecka.
 
@@ -255,3 +680,20 @@ The following operation gets all the values for the map `identityMap`.
 {%= values(identityMap) %}
 ```
 -->
+
+## Årets skillnad {#diff-years}
+
+Funktionen `diffInYears` används för att returnera skillnaden mellan två datum i termer av år.
+
+**Syntax**
+
+```sql
+{%= diffInYears(endDate, startDate) %}: int
+```
+
++++Exempel
+
+* Indata: `{%=diffInYears(stringToDate("2024-11-01T17:19:51Z"), stringToDate("2019-10-01T17:19:51Z"))%}`
+* Utdata: `5`
+
++++
