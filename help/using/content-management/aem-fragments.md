@@ -8,9 +8,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 50b36446ff0e9f4aec9f28056c3c30cc2df3f530
+exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
+source-git-commit: 098fbf3bdc13cb916804c30a77b72944f0902046
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -66,16 +67,9 @@ När du har skapat och personaliserat dina [AEM innehållsfragment](https://expe
 
 1. Välj en **[!UICONTROL Content Fragment]** i den tillgängliga listan för import till ditt Journey Optimizer-innehåll.
 
-   >[!IMPORTANT]
-   >
-   >Endast publicerade **[!UICONTROL Content Fragments]** kan användas.
-
 1. Klicka på **[!UICONTROL Show filters]** för att finjustera listan med innehållsfragment.
 
-   Innehållsfragmentväljaren innehåller förkonfigurerade filter:
-
-   * **[!UICONTROL Status]**: Publicerad, ändrad
-   * **[!UICONTROL Tag]**: Automatiskt definierad baserat på din Journey Optimizer-miljö (Organizational ID och Sandbox)
+   Som standard är filtret Innehållsfragment förinställt så att endast godkänt innehåll visas.
 
    ![](assets/aem_campaign_4.png)
 
@@ -83,11 +77,12 @@ När du har skapat och personaliserat dina [AEM innehållsfragment](https://expe
 
    ![](assets/aem_campaign_5.png)
 
-1. Välj önskade fält från din **[!UICONTROL Content Fragment]** som ska läggas till i ditt innehåll.
+1. Välj önskade fält från din **[!UICONTROL Content Fragment]** som ska läggas till i ditt innehåll. Du kan antingen lägga till ditt innehåll eller kopiera dess värde.
+
+   Observera, att om du väljer att kopiera värdet kommer framtida uppdateringar av **[!UICONTROL Content Fragment]** inte att återspeglas i din kampanj eller resa.
 
    ![](assets/aem_campaign_6.png)
 
 1. Klicka på **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan nu testa och kontrollera meddelandeinnehållet enligt beskrivningen i [det här avsnittet](preview.md).
 
 När du har utfört dina tester och validerat innehållet kan du skicka ditt e-postmeddelande till din publik med din [kampanj](../campaigns/review-activate-campaign.md) eller [resa](../building-journeys/publishing-the-journey.md).
-
