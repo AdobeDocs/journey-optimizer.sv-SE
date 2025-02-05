@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: b6c2b6370c5a68937ebcafcbe70c4a240bc14536
+source-git-commit: 34ecb4b7f30741d88fa69007e1c236eb731dc06c
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -150,11 +150,14 @@ Observera att för aktiviteten i appen kan ändringar göras i innehållet medan
 >title="Om Tidsoptimering för Skickat"
 >abstract="Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser."
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Den här funktionen är inte aktiverad som standard. Du kan kontakta din Adobe-representant för att aktivera den.
+>* Sändningsoptimering är inte aktiverat som standard. Du kan kontakta din Adobe-representant för att aktivera den.
 >
->Funktionen för optimering av sändningstid gäller endast för e-post- och push-kanaler.
+>* Minst 1 000 profiler med aktuella meddelandedata rekommenderas för den inledande utbildningen och poängsättningen för Skicka-Time Optimization.
+>
+>* Tidsoptimering för sändning gäller endast för kanalerna **E-post** och **Push-meddelanden**.
+
 
 ### Om optimering vid sändning {#about-send-time}
 
