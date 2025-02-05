@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: d108d449786d9c3aa3e95aefc1bca07292cd690d
+source-git-commit: ccb4cc944271fb197e7aee87f57b51c28cb3565f
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,15 @@ Adobe [!DNL Journey Optimizer]-gränssnittet är utformat för att fungera optim
 * Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
 * Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
 
+## Skyddsutkast för datauppsättningar {#datasets-guardrails}
+
+Från och med februari 2025 kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i **nya sandlådor och nya organisationer** enligt följande:
+
+* 90 dagar för data i profilarkivet
+* 13 månader för data i sjön
+
+Utforska avsnittet [Vanliga frågor](../data/datasets-ttl.md#ttl) om du vill ha mer information om dessa skyddsförslag.
+
 ## Garantier för landningssidor {#lp-guardrails}
 
 * Endast en **Form**-komponent kan användas på en enda primär sida.
@@ -54,7 +63,6 @@ Adobe [!DNL Journey Optimizer]-gränssnittet är utformat för att fungera optim
 ### Skyddsutkast för webbkanal {#web-guardrails}
 
 Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
-
 
 ## Underdomänsskydd {#subdomain-guardrails}
 
