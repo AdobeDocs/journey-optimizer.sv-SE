@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b4075b722ba07f003b9658b5f399896ce0e85b9a
+source-git-commit: dbe312f332031391c49a973f323994f860e354e3
 workflow-type: tm+mt
-source-wordcount: '5932'
+source-wordcount: '5948'
 ht-degree: 12%
 
 ---
@@ -32,6 +32,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Den maximala storleken på kontextuella attribut som skickas till en API-utlöst kampanjbegäran har uppdaterats till 200 kB. [Läs mer](../campaigns/api-triggered-campaigns.md#contextual)
 
 * Ett nytt avsnitt har lagts till på sidan **Hantera fragment** som beskriver hur du lägger till nya attribut i ett live-fragment. Hela sidan har också förbättrats. [Läs mer](../content-management/manage-fragments.md#adding-new-attributes)
+
+* Ett avsnitt,&quot;Guardsändningar &amp; begränsningar&quot;, har lagts till i dokumentationen för verktygen för konflikthantering och prioritering. [Läs mer](../conflict-prioritization/gs-conflict-prioritization.md)
 
 <!--* A new use case has been added to present all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel. [Read more](../experience-decisioning/experience-decisioning-uc.md)-->
 
