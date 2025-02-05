@@ -7,7 +7,7 @@ feature: Audiences, Profiles
 role: User
 level: Intermediate
 exl-id: 5402a179-263f-46a7-bddf-5b7017cf0f82
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 12449430f48153ebe3fbb30b782f51de4b11d4ef
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Varje beräknat attribut är ett profilattribut som ni kan använda för segment
 
 Om du vill skapa beräknade attribut går du till fliken **[!UICONTROL Computed attributes]** på menyn **[!UICONTROL Profiles]** som finns till vänster.
 
-Från den här skärmen kan du skapa beräknade attribut genom att skapa regler som kombinerar händelseattribut, sammanställningsfunktioner och en angiven uppslagsperiod. Du kan till exempel beräkna summan av inköp som gjorts de senaste tre månaderna, identifiera den senaste artikeln som visas av en profil som inte har gjort ett köp den senaste veckan eller räkna upp de totala belöningspoängen som ackumulerats av varje profil.
+Från den här skärmen kan du skapa beräknade attribut genom att skapa regler som kombinerar händelseattribut, sammanställningsfunktioner, tillsammans med en angiven uppslagsperiod. Du kan till exempel beräkna summan av inköp som gjorts de senaste tre månaderna, identifiera den senaste artikeln som visas av en profil som inte har gjort ett köp den senaste veckan eller räkna upp de totala belöningspoängen som ackumulerats av varje profil.
 
 ![](assets/computed-attributes.png)
 
