@@ -8,13 +8,13 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: marknadsföring, marknadsföra, engagera integreringen
-source-git-commit: 92591457d2189e3c43ea38c4a09d7cf565bb5d57
+exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
+source-git-commit: 844c0f8dc9b14d69cbd87893042f048443d7a5e6
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
-
 
 # Integrera med Marketo Engage {#integrating-with-marketo-engage}
 
@@ -26,7 +26,7 @@ Satsa på en resa med smidig dataintegrering med Marketo Engage. Denna anpassade
 ## Förhandskrav {#prerequisites}
 
 * Kundinstansen av Marketo Engage måste vara IMS-aktiverad.
-* Marketo Engage-instansen och AEP/AJO-instansen måste finnas i samma IMS-organisation.
+* Marketo Engage-instansen och Adobe Experience Platform/Journey Optimizer-instansen måste finnas i samma organisation.
 * Kunden måste etableras med **MktoSync: åtkomst till matningstjänsten**
 
 ## Konfigurera åtgärden {#configure-marketo-action}
@@ -113,4 +113,3 @@ Nu kan du använda din anpassade åtgärd på din dedikerade arbetsyta.
 * I avsnittet **Begäranparametrar** klickar du på Redigera för var och en av parametrarna med dynamiska värden som du har konfigurerat i nyttolasten.
 
 ![](assets/engage-use-canvas.png){width="70%" align="left"}
-

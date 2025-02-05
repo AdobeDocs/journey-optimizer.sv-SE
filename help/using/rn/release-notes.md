@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 3eab04f28b1daab556c4b4395d67f28d292fc52b
+source-git-commit: 0d2c6cca9fa71f6920a934176abf7bfd12142a9d
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2278'
 ht-degree: 6%
 
 ---
@@ -37,6 +37,22 @@ ht-degree: 6%
 </p>
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md#cja-template">detaljerade dokumentationen</a>.</p>
 <p> Funktionen <b>Mall</b> introduceras stegvis med fullständig allmän tillgänglighet planerad till slutet av januari</p>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Flexibel målgruppsutvärdering (begränsad tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med flexibel målgruppsutvärdering kan ni köra ett segmenteringsjobb på begäran för utvalda målgrupper, vilket säkerställer att ni alltid har de senaste målgruppsdata innan ni inriktar dem på Journey Optimizer resor och kampanjer.</p>
+<p>Mer information finns i den <a href="../audience/about-audiences.md#flexible">detaljerade dokumentationen</a>.</p>
+<p> Flexibel målgruppsutvärdering är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
 </tr>
 </tbody>
 </table>

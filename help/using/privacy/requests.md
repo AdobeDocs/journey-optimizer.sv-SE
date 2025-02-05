@@ -7,7 +7,7 @@ feature: Privacy
 role: User
 level: Intermediate
 exl-id: 19ec3410-761e-4a9c-a277-f105fc446d7a
-source-git-commit: 41717213cb75185476f054bd076e67f942be0f1c
+source-git-commit: 844c0f8dc9b14d69cbd87893042f048443d7a5e6
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -58,7 +58,7 @@ De tre tjänsterna är:
 
 Om du vill göra en begäran om åtkomst- och borttagningsdata för Adobe Journey Optimizer måste du ha:
 
-* ett IMS-organisations-ID
+* ett Adobe-organisations-ID
 * en identitetsidentifierare för den person som du vill agera på och motsvarande namnutrymmen. Mer information om namnutrymmen för identiteter i Adobe Journey Optimizer och Experience Platform finns i [översikten över namnområden för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 
 ### Obligatoriska fältvärden i Adobe Journey Optimizer för API-begäranden
@@ -66,7 +66,7 @@ Om du vill göra en begäran om åtkomst- och borttagningsdata för Adobe Journe
 ```json
 "companyContexts":
     "namespace": imsOrgID
-    "value": <Your IMS Org ID Value>
+    "value": <Your Adobe Organization ID Value>
 
 "users":
     "action": either access or delete

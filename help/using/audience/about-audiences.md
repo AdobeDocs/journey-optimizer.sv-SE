@@ -9,9 +9,9 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: a98312d9ac5a457bfd6789bf79ad80a24d894a0b
+source-git-commit: 0d2c6cca9fa71f6920a934176abf7bfd12142a9d
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2161'
 ht-degree: 0%
 
 ---
@@ -152,9 +152,26 @@ När du har definierat en målgrupp för första gången läggs profiler till i 
 
 Det kan ta upp till 24 timmar att fylla målgruppen med tidigare data. När målgruppen har fyllts i på nytt hålls målgruppen kontinuerligt uppdaterad och alltid redo för målinriktning.
 
+### [!BADGE Begränsad tillgänglighet]{type=Informative} Flexibel målgruppsutvärdering (begränsad tillgänglighet) {#flexible}
+
+>[!AVAILABILITY]
+>
+Flexibel målgruppsutvärdering är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+
+Med Adobe Experience Platform Audience Portal kan ni köra ett segmenteringsjobb på begäran för utvalda målgrupper, vilket säkerställer att ni alltid har de senaste målgruppsdata innan ni kan rikta in dem på Journey Optimizer resor och kampanjer.
+
+Med flexibel målgruppsutvärdering kan ni
+
+1. Skapa ett nytt segment baserat på dina senaste data.
+1. Utvärdera målgruppen i realtid för att säkerställa exaktheten. För att göra det väljer du de målgrupper du vill ha utvärderade och väljer&quot;Utvärdera målgrupper&quot;, förutsatt att de uppfyller specifika kriterier (t.ex. personbaserat, ursprung i segmenteringstjänst).
+1. Använda den utvärderade målgruppen i Adobe Journey Optimizer
+kampanjer eller resor för exakt målinriktning.
+
+Ni kan utvärdera upp till 20 målgrupper i taget, och icke berättigade målgrupper utesluts automatiskt. Mer information finns i dokumentationen för [målportalen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation).
+
 ### Händelseanvändning med direktuppspelningssegmentering {#streaming-segmentation-events-guardrails}
 
-Strömmande segmentering är användbart för personalisering i realtid med värdefulla användningsexempel. Det är dock viktigt att välja rätt [händelser](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} som ska användas som segmenteringskriterier.
+Strömmande segmentering är användbart för personalisering i realtid med värdefulla användningsexempel. Det är dock viktigt att välja rätt [händelser](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"}
 
 Därför bör du undvika följande händelser för optimala prestanda vid direktuppspelningssegmentering:
 
