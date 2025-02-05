@@ -8,7 +8,7 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: ae92a1e950822d4a0dbac1aa535078fe535113c0
+source-git-commit: aec3d79ad07ec6904e55afd6fc61ba9b4f403fc8
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 24%
@@ -37,7 +37,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 När du konfigurerar en datakälla eller en åtgärd upprättar du en anslutning till ett system för att antingen hämta ytterligare information som ska användas under dina resor eller skicka meddelanden eller API-anrop.
 
-API:er för resor har stöd för upp till 5 000 händelser per sekund, men vissa externa system eller API:er har kanske inte samma genomströmning. Om du vill förhindra att dessa system överbelastas kan du använda API:erna **Capping** och **Throttling** för att begränsa antalet händelser som skickas per sekund.
+API:er för resor har stöd för upp till 5 000 händelser per sekund, men vissa externa system eller API:er har kanske inte samma genomströmning. Om du vill förhindra att dessa system överbelastas kan du använda API:erna **Capping** och **Throttling** för att begränsa antalet händelser som skickas per sekund.
 
 Varje gång ett API-anrop utförs via resor skickas det via API-motorn. Om gränsvärdet i API:t nås, avvisas anropet antingen om du använder API:t för begränsning, eller köas i upp till 6 timmar och behandlas så snart som möjligt i den ordning som de togs emot om du använder API:t för begränsning.
 
@@ -98,7 +98,7 @@ Låt oss ta ett exempel i 5 sekunder.
 
 **Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?**
 
-Se [det här avsnittet](../configuration/external-systems.md#capping) om du vill skapa regler för begränsning och begränsning. Som standard finns det ingen begränsning, men en begränsning på 300 000 anrop över en minut som definierats för alla anpassade åtgärder, per värd och per sandlåda. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning.
+Se [det här avsnittet](../configuration/external-systems.md#capping) om du vill skapa regler för begränsning och begränsning. Som standard finns det ingen begränsning, men en begränsning på 300 000 anrop över en minut som definierats för alla anpassade åtgärder, per värd och per sandlåda. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste tänka på detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning.
 
 **Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
 

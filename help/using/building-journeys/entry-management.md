@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: 7f21098d5ae157f1c0d3de3aa584564c6f73310a
+source-git-commit: aec3d79ad07ec6904e55afd6fc61ba9b4f403fc8
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Hanteringen av profilentréer beror på typen av resa. I Adobe Journey Optimizer
 
 * **Målgruppskvalificering** resor: dessa resor börjar med en Audience-kvalificeringshändelse. Dessa resor lyssnar på ingångar och utgångar för profiler i målgrupper. När detta händer kommer den associerade profilen in på resan. [Läs mer](#entry-unitary)
 
-I alla typer av resor kan en profil inte finnas flera gånger i samma resa samtidigt. Om du vill kontrollera att en person befinner sig på en resa används profilidentiteten som en nyckel. Systemet tillåter inte att samma nyckel, till exempel nyckeln CRMID=3224, finns på olika platser under samma resa.
+I alla typer av resor kan en profil inte finnas flera gånger i samma resa samtidigt. Om du vill kontrollera att en person befinner sig på en resa används profilidentiteten som en nyckel. Systemet tillåter inte att samma nyckel, till exempel nyckeln `CRMID=3224`, finns på olika platser under samma resa.
 
 ## Unitär event- och målgruppskompetens{#entry-unitary}
 
