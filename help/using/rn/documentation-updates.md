@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 280238fb3f41cef08c4e5a8720839aff5b767cf5
+source-git-commit: b4075b722ba07f003b9658b5f399896ce0e85b9a
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5932'
 ht-degree: 12%
 
 ---
@@ -30,6 +30,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Avsnittet **Vidarebefordra e-post** har uppdaterats för att ange att alla e-postmeddelanden som skickas till adressen **Från e-post** vidarebefordras till e-postadressen för vidarebefordran. Om inget vidarebefordrande e-postmeddelande anges, ignoreras dessa e-postmeddelanden. [Läs mer](../email/email-settings.md#forward-email)
 
 * Den maximala storleken på kontextuella attribut som skickas till en API-utlöst kampanjbegäran har uppdaterats till 200 kB. [Läs mer](../campaigns/api-triggered-campaigns.md#contextual)
+
+* Ett nytt avsnitt har lagts till på sidan **Hantera fragment** som beskriver hur du lägger till nya attribut i ett live-fragment. Hela sidan har också förbättrats. [Läs mer](../content-management/manage-fragments.md#adding-new-attributes)
 
 <!--* A new use case has been added to present all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel. [Read more](../experience-decisioning/experience-decisioning-uc.md)-->
 
