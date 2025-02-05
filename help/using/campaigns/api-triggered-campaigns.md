@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: fbcd5ae83c024d672d608d5f5aefc6a4252ec8c0
+source-git-commit: 280238fb3f41cef08c4e5a8720839aff5b767cf5
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -110,7 +110,7 @@ Syntaxen `{{context.<contextualAttribute>}}` är endast mappad till datatypen St
 
 >[!IMPORTANT]
 >
->Kontextattributen som skickas till begäran får inte överstiga 50 kB och är alltid av typen sträng.
+>Kontextattributen som skickas till begäran får inte överstiga 200 kB och är alltid av typen sträng.
 >
 >Syntaxen `context.system` är begränsad till intern användning i Adobe och ska inte användas för att skicka kontextuella attribut.
 
