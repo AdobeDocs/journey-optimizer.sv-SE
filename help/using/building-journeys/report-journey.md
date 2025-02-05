@@ -8,9 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 9b4ff0325d099252a5785aa13cfe0f1fe42acac6
+exl-id: 186b061d-0941-48be-8917-bbdfff6dae90
+source-git-commit: b604ab6d94f414b96378f15986edbcf92cee77dc
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -29,8 +30,8 @@ De visade händelserna inträffade under de senaste 24 timmarna, med ett minsta 
 
 Du har tillgång till följande för din direktresa:
 
-* **[!UICONTROL Entered profiles]**: Totalt antal personer som avbrutit resan (inklusive fel).
-* **[!UICONTROL Exited profiled]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
+* **[!UICONTROL Entered profiles]**: Totalt antal personer som har passerat resan.
+* **[!UICONTROL Exited profiles]**: Totalt antal personer som avbrutit resan (inklusive fel).
 * **[!UICONTROL Profiles in error]**: Totalt antal personer som påträffade ett fel under sin resa.
 * **[!UICONTROL Discarded profiles]**: Totalt antal personer som tagits bort från resan av någon av följande orsaker:
 
