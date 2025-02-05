@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: b6c2b6370c5a68937ebcafcbe70c4a240bc14536
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1308'
 ht-degree: 0%
 
 ---
@@ -183,8 +183,11 @@ Tidsoptimering försöker förutse den bästa tiden att interagera med kunderna 
 
 +++Var kan jag se den förväntade sändningstiden för varje profil?
 
-Du kan se det övergripande poängtalet i gränssnittet **Profiler**. För var och en av de tre uppsättningarna med 168 poäng går rangordningarna från -83 till 84. Ju högre rankning desto bättre tid valdes att interagera med mottagaren. Eftersom du kan definiera start och varaktighet för en resa kanske den bästa rangordningen (84) inte hamnar i det tidsfönstret. I det här fallet rekommenderar vi att du väljer en timme med det högsta rangvärdet.
+Veckornas rankning är från -83 till 84, men de slås ihop till ett enda värde för att undvika att profilen blir rörig med 168 olika värden. För var och en av de tre uppsättningarna med 168 poäng går rangordningarna från -83 till 84.
 
+Värdet läses av optimeringsalgoritmen. Det här värdet är inte utformat för att vara läsbart för människor.
+
+Ju högre rankning desto bättre tid valdes att interagera med mottagaren. Eftersom du kan definiera start och varaktighet för en resa kanske den bästa rangordningen (84) inte hamnar i det tidsfönstret. I det här fallet rekommenderar vi att du väljer en timme med det högsta rangvärdet.
 +++
 
 
