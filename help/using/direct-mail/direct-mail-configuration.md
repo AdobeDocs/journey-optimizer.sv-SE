@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 88f8a5e3e7314992cdb5835b9676b78127f20960
+source-git-commit: 179d0f8571bf2e4d4ea1c5ad8ab498de9e7b5550
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1312'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Innan du kan generera filen måste du skapa:
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_type"
 >title="Välj servertyp för filen"
->abstract="Välj vilken typ av server du vill använda för att exportera dina direktmeddelandefiler. För närvarande stöds endast Amazon S3 och SFTP av Journey Optimizer."
+>abstract="Välj vilken typ av server du vill använda för att exportera dina direktmeddelandefiler: Amazon S3, SFTP eller Azure."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_aws_region"
