@@ -8,20 +8,26 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: aec3d79ad07ec6904e55afd6fc61ba9b4f403fc8
+source-git-commit: d108d449786d9c3aa3e95aefc1bca07292cd690d
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
 
 # Skyddsritningar och begränsningar {#limitations}
 
+Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
+
 Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 Du måste också känna till [Guardsändningar för kundprofildata i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} innan du börjar.
 
-Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
+
+>[!NOTE]
+>
+>I sällsynta fall kan tillfälliga avbrott i en viss region leda till att giltiga profiler utesluts från resor eller att felaktigt markerade e-postmeddelanden markeras som studsar. När tjänsterna har återställts kontrollerar du reseloggarna på nytt, kontrollerar tillståndsprofilfälten och publicerar sedan resan på nytt om det behövs. Om ett ISP-fel inträffar bör du lära dig hur du tar bort profiler från listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md#remove-from-suppression-list).
+>
 
 ## Webbläsare som stöds {#browsers}
 
