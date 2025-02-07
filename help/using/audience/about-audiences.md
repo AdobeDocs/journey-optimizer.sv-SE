@@ -7,11 +7,10 @@ feature: Audiences, Profiles
 topic: Content Management
 role: User
 level: Beginner
-mini-toc-levels: 1
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 0d2c6cca9fa71f6920a934176abf7bfd12142a9d
+source-git-commit: a48fe20dcd06771c41164ecb1ea6df9d83a9a96c
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2159'
 ht-degree: 0%
 
 ---
@@ -152,7 +151,7 @@ När du har definierat en målgrupp för första gången läggs profiler till i 
 
 Det kan ta upp till 24 timmar att fylla målgruppen med tidigare data. När målgruppen har fyllts i på nytt hålls målgruppen kontinuerligt uppdaterad och alltid redo för målinriktning.
 
-### [!BADGE Begränsad tillgänglighet]{type=Informative} Flexibel målgruppsutvärdering (begränsad tillgänglighet) {#flexible}
+### [!BADGE Begränsad tillgänglighet]{type=Informative} Flexibel målgruppsutvärdering {#flexible}
 
 >[!AVAILABILITY]
 >
