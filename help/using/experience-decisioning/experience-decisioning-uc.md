@@ -1,21 +1,19 @@
 ---
 title: Användningsfall vid beslut
-description: Lär dig hur du skapar beslut med hjälp av experiment med den kodbaserade kanalen
+description: Lär dig hur du skapar beslut och använder dem i innehållsexperiment med den kodbaserade upplevelsekanalen
 feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate, Experienced
-hide: true
-hidefromtoc: true
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
-source-git-commit: bb66785f0b699d0ccf6cced035e64f206b104293
+source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '796'
 ht-degree: 3%
 
 ---
 
-# Användningsfall vid beslut {#experience-decisioning-uc}
+# Använd Beslutsfattandet i en kodbaserad upplevelse med hjälp av innehållsexperimentet {#experience-decisioning-uc}
 
 I det här användningsexemplet beskrivs alla steg som behövs för att använda Decisionering med den kodbaserade kanalen [!DNL Journey Optimizer].
 

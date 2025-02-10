@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: dbe312f332031391c49a973f323994f860e354e3
+source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
 workflow-type: tm+mt
-source-wordcount: '5948'
+source-wordcount: '5975'
 ht-degree: 12%
 
 ---
@@ -35,7 +35,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 * Ett avsnitt,&quot;Guardsändningar &amp; begränsningar&quot;, har lagts till i dokumentationen för verktygen för konflikthantering och prioritering. [Läs mer](../conflict-prioritization/gs-conflict-prioritization.md)
 
-<!--* A new use case has been added to present all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel. [Read more](../experience-decisioning/experience-decisioning-uc.md)-->
+* Ett nytt heltäckande användningsexempel har lagts till för att presentera alla steg som behövs för att använda Decisionering i innehållsexperiment med den kodbaserade [!DNL Journey Optimizer]-upplevelsekanalen. [Läs mer](../experience-decisioning/experience-decisioning-uc.md)
 
 ## December 2024 {#nov-2024}
 
@@ -94,7 +94,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 * Alla nya funktioner och förbättringar som kommer med versionen [!DNL Journey Optimizer] den 24 april finns detaljerade i dokumentationen. [Läs mer](release-notes.md#apr-2024)
 * Konfigurationsstegen för meddelanden i programmet har beskrivits. [Läs mer](../in-app/inapp-configuration.md)
-* Dokumentationen för [Offer decisioning-API:er](../offers/api-reference/offer-delivery-api/decisioning-api.md) och [API:er för gruppbeslut](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md) har uppdaterats.
+* Dokumentationen för [API:er för offertbeslut](../offers/api-reference/offer-delivery-api/decisioning-api.md) och [API:er för gruppbeslut](../offers/api-reference/offer-delivery-api/batch-decisioning-api.md) har uppdaterats.
 * Information om hantering av edge- och navregioner har lagts till i beslutsdokumentationen när frekvenscappning används med Edge Decisioning API. [Läs mer](../offers/offer-library/add-constraints.md#frequency-capping)
 * Information har lagts till om att skapa en identitet med anpassade namnutrymmen när du arbetar med API-utlösta kampanjer. [Läs mer](../campaigns/api-triggered-campaigns.md)
 * Skärmfotona har uppdaterats för att återspegla den förbättrade arbetsytan på resan.
@@ -115,8 +115,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
    * P: Kortkommando för att utlösa en händelse i en målgruppsbaserad resa där alternativet Enstaka profil i taget är aktiverat.
    * L: Kortkommando för att visa testloggarna.
 * Regelsidan för meddelandefrekvens har uppdaterats med ett nytt underavsnitt om dagligt frekvenstak, som är tillgängligt på begäran utöver vecko- eller månadsvisa capping. [Läs mer](../configuration/frequency-rules.md#daily-frequency-cap)
-* Sidan Arbeta med policyer för samtycke har förbättrats och uppdaterats med användbara länkar till dokumentationen för Experience Platform. [Läs mer](../action/consent.md)
-* Ett nytt avsnitt har lagts till för att återspegla det faktum att du kan visa mallar för e-postinnehåll i HTML som miniatyrer i stödrastervisningsläget (begränsad tillgänglighet). [Läs mer](../content-management/content-templates.md#template-thumbnails)
+* Sidan Arbeta med profiler för samtycke har förbättrats och uppdaterats med användbara länkar till Experience Platform-dokumentationen. [Läs mer](../action/consent.md)
+* Ett nytt avsnitt har lagts till för att återspegla att du kan visa HTML mallar för e-postinnehåll som miniatyrbilder i stödrastervisningsläget (begränsad tillgänglighet). [Läs mer](../content-management/content-templates.md#template-thumbnails)
 * Ett nytt avsnitt har lagts till på sidan Leverans för att förklara vilka feedback-slingor som är och hur de kan användas. [Läs mer](../reports/deliverability.md#feedback-loops)
 * En anteckning har lagts till i avsnittet Skapa anpassade erbjudanden för att ange att storleken på ett erbjudande inklusive alla dess representationer inte får överstiga 300 kB. [Läs mer](../offers/offer-library/creating-personalized-offers.md#create-offer)
 
@@ -140,7 +140,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Ett skyddsräcke om resestorleken har lagts till. [Läs mer](../start/guardrails.md#journeys-guardrails-journeys)
 * Resetimeout-hantering har beskrivits [i följande avsnitt](../building-journeys/journey-properties.md#global_timeout).
 * Journey Optimizer [dokumentationsstartsida](../../ajo-home.md) har gjorts om.
-* Recommendations om aktiviteten Uppdatera profiler har lagts till. [Läs mer](../building-journeys/update-profiles.md)
+* Rekommendationer om aktiviteten Uppdatera profiler har lagts till. [Läs mer](../building-journeys/update-profiles.md)
 * Information har lagts till om beteendet för tidsgränser för händelseaktiviteter under resor. Om ingen händelse tas emot under den angivna tidsgränsen fortsätter den enskilda personen resan om ingen tidsgräns anges. [Läs mer](../building-journeys/general-events.md#events-specific-time)
 * Krav för kanalkonfiguration i programmet har uppdaterats med en anteckning om användningen av en anpassad sammanfogningsprincip för datauppsättning. [Läs mer](../in-app/inapp-configuration.md)
 * Mer information om hur du hanterar samlingar i en anpassad åtgärd har lagts till. [Läs mer](../action/action-response.md#exp-syntax).
@@ -169,18 +169,18 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Oktober 2023 {#oct-2023}
 
 * Alla nya funktioner och förbättringar som kommer med versionen [!DNL Journey Optimizer] den 23 oktober finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
-* GIF har lagts till för att illustrera vissa nyckelfunktioner, som: [Innehållsmallar](../content-management/content-templates.md), [Fragment](../content-management/fragments.md), [Beräknade attribut](../audience/computed-attributes.md), [Direktutskick](../direct-mail/get-started-direct-mail.md), [Taggar](../start/search-filter-categorize.md#tags), [Optimeringsmodeller för beslutshantering](../offers/ranking/personalized-optimization-model.md), [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md) och [ Innehållsexperiment ](../content-management/content-experiment.md).
+* GIF-filer har lagts till för att illustrera vissa nyckelfunktioner, som: [Innehållsmallar](../content-management/content-templates.md), [Fragment](../content-management/fragments.md), [Beräknade attribut](../audience/computed-attributes.md), [Direktutskick](../direct-mail/get-started-direct-mail.md), [Taggar](../start/search-filter-categorize.md#tags), [Optimeringsmodeller för beslutshantering](../offers/ranking/personalized-optimization-model.md), [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md) och [ 4}Experimentera med innehåll](../content-management/content-experiment.md).
 * Processen för att skapa scheman har uppdaterats för att återspegla de senaste uppdateringarna i användargränssnittet, som följer med Adobe Experience Platform-ändringar. [Läs mer](../audience/creating-test-profiles.md)
 * Garantier för beslutshantering har lagts till på sidan Guardsutkast och begränsningar. [Läs mer](../start/guardrails.md#decision-management)
 * Avsnittet med rubrikparametrar har uppdaterats för att återspegla hur utomstående meddelanden och utmaningssvar hanteras (de tas emot på **[!UICONTROL Error email]**). [Läs mer](../email/email-settings.md#email-header)
 * Ett nytt avsnitt om hur du förhandsgranskar och testar innehåll har skapats. [Läs mer](../content-management/preview-test.md)
-* Sidan Implementera ensidiga program har flyttats till Adobe Experience Paltform Web SDK-dokumentationen. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
+* Sidan Implementera enkelsidiga program har flyttats till dokumentationen för Adobe Experience Platform Web SDK. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
 * Facksektionen har uppdaterats för att återspegla de etikettändringar som har att göra med begränsningen av erbjudanden i beslutsgränssnittet. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 * Alternativet Lägg till dynamiskt innehåll i e-postmeddelanden har uppdaterats med information om hur du tar bort en variant. [Läs mer](../personalization/dynamic-content.md#emails)
 * Exemplet för capping &amp; Throttling-konfigurationer har uppdaterats. [Läs mer](../configuration/external-systems.md)
 * Begränsningen för skalära arrayer har tagits bort från avsnittet för externa datakällor. [Läs mer](../datasource/external-data-sources.md)
 * Flerkanalsanvändningen har uppdaterats. [Läs mer](../building-journeys/journeys-uc.md)
-* Journey Optimizer-dokumentationsuppsättningen har uppdaterats för att återspegla den nya processen för att skapa Experience Platform-scheman.
+* Dokumentationsuppsättningen för Journey Optimizer har uppdaterats för att återspegla den nya processen för att skapa Experience Platform-scheman.
 
 ## September 2023 {#september-2023}
 
@@ -202,7 +202,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Alla nya funktioner och förbättringar som kommer med versionen [!DNL Journey Optimizer] augusti 23 finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
 * Anteckningen om **hantering av autentiseringscache** under resan har uppdaterats för att visa i detalj att token inte delas mellan olika resor. [Läs mer](../datasource/external-data-sources.md#custom-authentication-mode)
 * Sidan om resan **hantering av inträde** har uppdaterats för att förtydliga beteendet. [Läs mer](../building-journeys/entry-management.md)
-* Offera decisioningen **exportdatamängder** är nu aktiverat som standard. Anteckningen om det tidigare beteendet har tagits bort.  [Läs mer](../offers/export-catalog/get-started-export.md)
+* Erbjudandebeslut för **exportdatamängder** är nu aktiverat som standard. Anteckningen om det tidigare beteendet har tagits bort.  [Läs mer](../offers/export-catalog/get-started-export.md)
 * Olika **kampanjrapportmått** har bytt namn i både Live- och Global-rapporter. [Läs mer](../reports/campaign-live-report.md)
 * Ett nytt avsnitt har lagts till om krav för innehållsexperiment för webbkanalen. [Läs mer](../web/web-prerequisites.md#experiment-prerequisites)
 * En varning har lagts till på sidan **Arbeta med innehållsmallar** för att ange att spårning inte stöds när du testar mallar för e-postinnehåll. Om du vill testa spårning måste du använda innehållsmallen i ett e-postmeddelande och skicka ett korrektur. [Läs mer](../content-management/content-templates.md#test-template)
@@ -255,7 +255,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Journey Optimizer schemaordlista är nu tillgänglig. Du hittar den fullständiga listan med fält och attribut för varje schema.  [Läs mer](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 * Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] mars 23-utgåvan finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
 * Ett steg har lagts till för att aktivera Adobe Analytics-event på dina resor. [Läs mer](../event/about-analytics.md)
-* Ett nytt avsnitt har skapats i beslutshanteringshandboken om hur man samlar in feedback från offera decisioningar i Adobe Experience Platform, inklusive vilka erbjudanden som visas och hur användare interagerar med dem. [Läs mer](../offers/data-collection/data-collection.md)
+* Ett nytt avsnitt har skapats i beslutshanteringshandboken om hur man samlar in feedback om beslut om erbjudanden i Adobe Experience Platform, inklusive vilka erbjudanden som visas och hur användare interagerar med dem. [Läs mer](../offers/data-collection/data-collection.md)
 * Ett nytt underavsnitt har lagts till i avsnittet **Skapa beslut** för att förklara skillnaden mellan att utvärdera villkor i en sekventiell ordning eller samtidigt. [Läs mer](../offers/offer-activities/create-offer-activities.md#evaluation-criteria-order)
 * Ett skyddsräcke har lagts till för läsning av målgruppsresor med stegvis läsning. Du kan inte skapa en ny version, du måste duplicera resan. [Läs mer](../start/guardrails.md#journey-versions-g)
 * Användningsexemplet om hur man begränsar genomströmningen har uppdaterats med information om begränsningsfunktioner. [Läs mer](../building-journeys/limit-throughput.md)
@@ -351,7 +351,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Alla nya funktioner och förbättringar som kommer med versionen [!DNL Journey Optimizer] den 22 juni finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
 * Ett nytt avsnitt om sekretessförfrågningar har lagts till i dokumentationen. [Läs mer](../privacy/requests.md)
 * Ett nytt avsnitt om granskningsloggar på resurser har lagts till i dokumentationen. [Läs mer](../privacy/audit-logs.md)
-* Ett nytt avsnitt om hur du lägger till HTML eller JSON-innehåll som kommer från Adobe Experience Cloud Asset-biblioteket i en offertrepresentation har lagts till i dokumentationen. [Läs mer](../offers/offer-library/add-representations.md#html-json)
+* Ett nytt avsnitt om hur du lägger till HTML- eller JSON-innehåll från Adobe Experience Cloud Asset-biblioteket i en offertrepresentation har lagts till i dokumentationen. [Läs mer](../offers/offer-library/add-representations.md#html-json)
 * En ny sida om resans livscykel har lagts till. [Läs mer](../building-journeys/journey.md#journey-versions)
 * Sidan Vänta aktivitet har uppdaterats. [Läs mer](../building-journeys/wait-activity.md)
 * Listan med Adobe Journey Optimizer-datauppsättningar har lagts till med frågeexempel. [Läs mer](../data/datasets-query-examples.md)
@@ -387,7 +387,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Mars 2022 {#march-2022}
 
 * Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] mars 22-utgåvan finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
-* En ny sida om hur du kommer igång med AI-modeller har lagts till i avsnittet **Offer decisioning**, inklusive en detaljerad beskrivning av [automatisk optimeringsmodellen](../offers/ranking/auto-optimization-model.md), den algoritm som används och mer teknisk information. [Läs mer](../offers/ranking/ai-models.md)
+* En ny sida om hur du kommer igång med AI-modeller har lagts till i avsnittet **Erbjudandebeslut**, inklusive en detaljerad beskrivning av [automatisk optimeringsmodell](../offers/ranking/auto-optimization-model.md), algoritmen som används och mer teknisk information. [Läs mer](../offers/ranking/ai-models.md)
 * Sidan där du skapade testprofilen har flyttats till avsnittet **Målgrupp, profiler och identitet**. [Läs mer](../audience/creating-test-profiles.md)
 * Ett exempel har lagts till om hur du lägger till ett uttryck som ett standardvärde i uttrycksredigeraren. [Läs mer](../building-journeys/expression/field-references.md#default-value)
 * Avsnittet **Skapa anpassade erbjudanden** har organiserats om för förbättrad läsbarhet. [Läs mer](../offers/offer-library/creating-personalized-offers.md)
@@ -403,7 +403,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Januari 2022 {#january-2022}
 
 * Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] Jan 22-utgåvan finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
-* Avsnittet **Offera decisioningens AI-rankningar** har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](../offers/ranking/auto-optimization-model.md)
+* Avsnittet **Erbjudandet om AI-rankningar** har uppdaterats med en mer detaljerad beskrivning av den automatiska optimeringsmodellen. [Läs mer](../offers/ranking/auto-optimization-model.md)
 * Ett nytt avsnitt om schemakraven som behövs för att kunna skicka in händelsetyper när en AI-modell används har lagts till. [Läs mer](../offers/data-collection/schema-requirement.md)
 * Avsnittet om [!DNL Journey Optimizer]-personaliseringsfunktioner har organiserats om för att bli lättare att läsa. [Läs mer](../personalization/personalize.md)
 * Avsnittet **Skapa meddelandeförinställningar** har delats upp i flera avsnitt för att bli tydligare. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
@@ -452,7 +452,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 * Förbättrade sidan **Snabbstart** med steg för olika profiler. [Läs mer](../start/quick-start.md)
 
-* Nu gäller alla funktioner för beslutshantering som beskrivs i det särskilda avsnittet även för de Adobe Experience Platform-användare som använder Offera decisioningen. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
+* Nu gäller alla beslutsfunktioner som beskrivs i det särskilda avsnittet även för Adobe Experience Platform-användare som använder Offer Decisioning-programmet. [Läs mer](../offers/get-started/starting-offer-decisioning.md)
 
 * Lagt till ett underavsnitt för att förtydliga skillnaderna mellan att använda målgrupper jämfört med beslutsregler när en begränsning tillämpas för att begränsa urvalet av erbjudanden för en viss placering. [Läs mer](../offers/offer-activities/create-offer-activities.md#segments-vs-decision-rules)
 
@@ -473,7 +473,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Avsnittet Aktivera tillåtelselista har uppdaterats. [Läs mer](../configuration/allow-list.md#enable-allow-list)
 * Avsnittet Monitor-meddelandets förinställningar har uppdaterats med orsaker till att förinställningarna inte kunde skapas och information om sådana fel. [Läs mer](../configuration/channel-surfaces.md#monitor-channel-surfaces)
 * Uppdaterat och ändrat namn på avsnittet för återförsöksperiod för att återspegla det faktum att du nu kan ändra inställningen för återförsök via e-post i meddelandeförinställningarna. [Läs mer](../configuration/retries.md#retry-duration)
-* Uppdaterade avsnittet Delegera en underdomän med mer detaljerad information om valideringsprocessen som utfördes av Adobe. [Läs mer](../configuration/delegate-subdomain.md#subdomain-validation)
+* Uppdaterade avsnittet Delegera en underdomän med mer detaljerad information om valideringsprocessen som utförs av Adobe. [Läs mer](../configuration/delegate-subdomain.md#subdomain-validation)
 * Ett avsnitt har lagts till som beskriver hur du manuellt lägger till e-postadresser och domäner i listan över inaktiveringar. [Läs mer](../configuration/manage-suppression-list.md#add-addresses-and-domains)
 * [Åtkomst till avsnittet ](../configuration/manage-suppression-list.md#access-suppression-list) med undertryckningslistan och avsnitten [Försök igen](../configuration/retries.md) har uppdaterats för att återspegla det nya användargränssnittet.
 * Det nya flödet för att lägga till och konfigurera representationer när ett erbjudande skapas har dokumenterats. [Läs mer](../offers/offer-library/creating-personalized-offers.md#representations)

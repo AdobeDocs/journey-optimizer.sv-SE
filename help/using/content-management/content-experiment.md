@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 98b7a5493a4e325328ab349c405af423b3836807
+source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,8 @@ Varje person i målgruppen får en version av ett e-postmeddelande med en ämnes
 Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet beroende på det mottagna experimentet. Därför kommer vi att välja **[!UICONTROL Email Opens]** som det primära målmåttet i den här innehållsexperimenten.
 
 ![](assets/content_experiment.png)
+
+➡️ Lär dig hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen i [det här användningsexemplet](experience-decisioning-uc.md).
 
 ## Skapa innehåll {#campaign-experiment}
 
@@ -125,3 +127,4 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 1. När meddelandeinnehållet har definierats klickar du på knappen **[!UICONTROL Simulate content]** för att kontrollera återgivningen av leveransen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../content-management/preview-test.md)
 
 När du har konfigurerat dina experiment kan du följa resultatet av leveransen med din rapport. [Läs mer](../reports/campaign-global-report-cja-experimentation.md)
+

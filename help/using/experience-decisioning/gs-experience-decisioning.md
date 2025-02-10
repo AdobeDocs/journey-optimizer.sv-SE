@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: cb6b73db76c710dd8e736e710f5eb758337be696
+source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,13 @@ ht-degree: 0%
 
 Beslutsfattandet förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person.
 
-Dessa beslutsobjekt integreras smidigt i ett brett urval av inkommande ytor via den [nya kodbaserade upplevelsekanalen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), som nu är tillgänglig inom Journey Optimizer-kampanjer. Beslutspolicyer är endast tillgängliga för kodbaserade upplevelsekampanjer.
+Dessa beslutsobjekt integreras smidigt i ett brett urval av inkommande ytor via den [nya kodbaserade upplevelsekanalen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/code-based-experience/get-started-code-based), som nu är tillgänglig inom Journey Optimizer-kampanjer.
+
+>[!IMPORTANT]
+>
+>Beslutspolicyer är endast tillgängliga för kodbaserade upplevelsekampanjer.
+
+➡️ Ett heltäckande användningsexempel som visar hur du skapar beslut och använder dem i innehållsexperiment med den kodbaserade upplevelsekanalen visas i [det här avsnittet](experience-decisioning-uc.md).
 
 ## Skyddsritningar och begränsningar {#guardrails}
 

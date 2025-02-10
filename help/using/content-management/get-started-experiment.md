@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 0%
 Med hjälp av innehållsexperiment kan ni optimera innehåll för åtgärderna i era kampanjer.
 
 Experiment är en uppsättning randomiserade prövningar, som i samband med onlinetestning innebär att vissa slumpmässigt utvalda användare exponeras för en viss variant av ett meddelande och en annan slumpmässigt utvald uppsättning användare för en annan behandling. När du har skickat meddelandet kan du mäta de resultatvärden du är intresserad av, till exempel öppningar av e-postmeddelanden eller klick.
+
+➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen finns i [det här avsnittet](experience-decisioning-uc.md).
 
 ## Varför ska du köra Experiment?
 
@@ -137,7 +139,7 @@ Konfidensintervall bidrar till att kvantifiera mängden osäkerhet i de uppskatt
 
 Om konfidensintervallen för två behandlingar knappt överlappar varandra betyder det att de två behandlingarna har olika konverteringsgrader. Men om det finns mycket överlappning mellan konfidensintervallen för två behandlingar är det mer sannolikt att de två behandlingarna har samma konverteringsgrad.
 
-Adobe använder 95 % Anytime Valid Confidence Intervals, eller Confidence Sequences, vilket betyder att resultatet kan visas när som helst under försöket.
+Adobe använder 95 % Anytime Valid Confidence Intervals, eller Confidence Sequences, vilket innebär att resultatet kan visas när som helst under försöket.
 
 ### 3. Förstå Lyft {#understand-lift}
 
@@ -145,7 +147,7 @@ Sammanfattningen av experimentrapporten visar **[!UICONTROL Lift over Baseline]*
 
 ### 3. Förstå förtroende {#understand-confidence}
 
-Även om du i första hand bör fokusera på **[!UICONTROL Confidence interval]** för utförandet av varje behandling, så visar Adobe också förtroendet, vilket är ett sannolikhetsmått på hur mycket det finns belägg för att en viss behandling är densamma som basbehandlingen. Ett högre konfidensintervall tyder på att det inte finns tillräckligt med belägg för antagandet att behandlingar före och efter utgångsvärdet har samma resultat. Mer exakt är den säkerhet som visas en sannolikhet (uttryckt i procent) att vi skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss behandling och baslinjen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. När det gäller p-värden är den konfidensnivå som visas 1 - p-värde.
+Även om du i första hand bör fokusera på **[!UICONTROL Confidence interval]** för utförandet av varje behandling, så visar Adobe även förtroendet, vilket är ett sannolikhetsmått på hur mycket det finns belägg för att en viss behandling är densamma som basbehandlingen. Ett högre konfidensintervall tyder på att det inte finns tillräckligt med belägg för antagandet att behandlingar före och efter utgångsvärdet har samma resultat. Mer exakt är den säkerhet som visas en sannolikhet (uttryckt i procent) att vi skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss behandling och baslinjen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. När det gäller p-värden är den konfidensnivå som visas 1 - p-värde.
 
 Adobe använder &quot;Anytime Valid&quot; Confidence, och &quot;Anytime Valid&quot; p-värden som överensstämmer med de Confidence Sequences som beskrivs ovan.
 
