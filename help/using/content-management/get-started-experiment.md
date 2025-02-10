@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
+source-git-commit: 102ea61835144b274c018b28881cacdb5ebba1fa
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Med hjälp av innehållsexperiment kan ni optimera innehåll för åtgärderna i
 
 Experiment är en uppsättning randomiserade prövningar, som i samband med onlinetestning innebär att vissa slumpmässigt utvalda användare exponeras för en viss variant av ett meddelande och en annan slumpmässigt utvald uppsättning användare för en annan behandling. När du har skickat meddelandet kan du mäta de resultatvärden du är intresserad av, till exempel öppningar av e-postmeddelanden eller klick.
 
-➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen finns i [det här avsnittet](experience-decisioning-uc.md).
+➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen finns i [det här avsnittet](../experience-decisioning/experience-decisioning-uc.md).
 
 ## Varför ska du köra Experiment?
 

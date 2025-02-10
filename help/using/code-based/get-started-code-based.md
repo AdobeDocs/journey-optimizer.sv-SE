@@ -6,7 +6,7 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: a0e9800c5909369845f2a243e8967f7037c808d8
+source-git-commit: 102ea61835144b274c018b28881cacdb5ebba1fa
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Med funktionen **kodbaserad upplevelse** kan du definiera inkommande upplevelser
 
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
-➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen finns i [det här avsnittet](experience-decisioning-uc.md).
+➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen finns i [det här avsnittet](../experience-decisioning/experience-decisioning-uc.md).
 
 ## När kodbaserade jämfört med andra kanaler ska användas {#code-based-vs-other-channels}
 
