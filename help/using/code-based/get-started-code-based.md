@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
+source-git-commit: a0e9800c5909369845f2a243e8967f7037c808d8
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -66,6 +66,8 @@ Med funktionen **kodbaserad upplevelse** kan du definiera inkommande upplevelser
 </tr></table>
 
 <!--[Learn how to create a code-based campaign in this video](#video)-->
+
+➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen finns i [det här avsnittet](experience-decisioning-uc.md).
 
 ## När kodbaserade jämfört med andra kanaler ska användas {#code-based-vs-other-channels}
 
@@ -129,13 +131,11 @@ De viktigaste stegen för att skapa och leverera en kodbaserad upplevelse är f�
 
 1. Testa din kodbaserade upplevelse. [Lär dig hur](test-code-based.md)
 
-1. Publish den. [Lär dig hur](publish-code-based.md)
+1. Publicera den. [Lär dig hur](publish-code-based.md)
 
 1. När den kodbaserade upplevelseresan eller kampanjen är live måste det program eller den sidimplementering som begär innehåll för ytan finnas på plats för att innehållet ska kunna hämtas och visas.
 
    >[!INFO]
    >
-   >För att detta ska vara säkert gör ditt programimplementeringsteam explicita API- eller SDK-anrop för att hämta innehåll för den yta som definieras i den kodbaserade konfigurationen, till exempel&quot;Banner Text&quot; eller&quot;Recommendations Tray 1&quot;, eller icke-gränssnittsrelaterade beslutspunkter i ett program, till exempel&quot;sökalgoritmparametrar&quot;. <!--In this case, the implementation team is responsible for rendering or otherwise interpreting and acting on the returned content.--> [Läs mer](code-based-implementation-samples.md)
-
-
+   >För att detta ska vara säkert gör implementeringsteamet för appen explicit API- eller SDK-anrop för att hämta innehåll för den yta som definieras i den kodbaserade konfigurationen, till exempel&quot;Banner Text&quot; eller&quot;Recommendations Tray 1&quot;, eller icke-UI-relaterade beslutspunkter i ett program, till exempel&quot;search algorithm parameters&quot;. <!--In this case, the implementation team is responsible for rendering or otherwise interpreting and acting on the returned content.--> [Läs mer](code-based-implementation-samples.md)
 
