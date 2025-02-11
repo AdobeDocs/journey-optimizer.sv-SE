@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 1c17f1ef543948f74e95efab66dfeabf97af4519
+source-git-commit: fc6a552700a52c5f513299ab861750263aeda98a
 workflow-type: tm+mt
-source-wordcount: '2278'
+source-wordcount: '2270'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 6%
 <p>Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. Med den här nya funktionen kan ni effektivisera rapporteringsprocessen med fördesignade mallar som är anpassade efter era analysbehov.
 </p>
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md#cja-template">detaljerade dokumentationen</a>.</p>
-<p> Funktionen <b>Mall</b> introduceras stegvis med fullständig allmän tillgänglighet planerad till slutet av januari</p>
+<p>Tillgänglighetsdatum: från 15 januari 2025</p>
 </tr>
 </tbody>
 </table>
@@ -54,6 +54,7 @@ ht-degree: 6%
 <img src="assets/do-not-localize/flexible-audience.gif">
 <p>Mer information finns i den <a href="../audience/about-audiences.md#flexible">detaljerade dokumentationen</a>.</p>
 <p> Flexibel målgruppsutvärdering är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Tillgänglighetsdatum: 28 januari 2025</p>
 </tr>
 </tbody>
 </table>
