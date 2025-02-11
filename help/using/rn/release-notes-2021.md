@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 8%
@@ -184,9 +184,9 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 <tbody>
 <tr>
 <td>
-<p>Skicka automatiskt ditt push- eller e-postmeddelande vid den tidpunkt som passar varje kund du interagerar med Adobe Journey Optimizer. Med optimering för sändningstid, baserad på Adobe AI-tjänster, förutspås den bästa tidpunkten för att skicka ett e-postmeddelande eller push-meddelande för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser.</p>
+<p>Skicka automatiskt ditt push- eller e-postmeddelande vid den tidpunkt som passar varje kund du interagerar med Adobe Journey Optimizer. Med optimering för sändningstid, som bygger på Adobe AI-tjänster, förutspås den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser.</p>
 <p>Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.</p>
-<p>Mer information finns i den <a href="../building-journeys/journeys-message.md#send-time-optimization">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../building-journeys/send-time-optimization.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -365,4 +365,4 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 * Ett problem där IP-information saknades på PTR-inspelningsskärmen har korrigerats.
 * Lokalisering i erbjudandefältet i Expression Editor är nu implementerat.
 * Felaktigt avstånd i informationspopup-fönster har korrigerats.
-* Korrigerade ett fel i e-postdesignern vid överföring av en HTML-fil där en intern formatmall med egenskapen `background-image` inte stöds.
+* Korrigerade ett problem i e-postdesignern vid överföring av en HTML-fil där en intern formatmall med egenskapen `background-image` inte stöds.

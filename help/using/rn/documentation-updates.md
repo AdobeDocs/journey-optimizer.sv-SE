@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
+source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
 workflow-type: tm+mt
-source-wordcount: '5975'
+source-wordcount: '6006'
 ht-degree: 12%
 
 ---
@@ -18,6 +18,12 @@ ht-degree: 12%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer]-dokumentationen.
+
+
+## Februari 2025 {#feb-2025}
+
+* Dokumentationen för **[!UICONTROL Send-Time optimization]** och dess relaterade vanliga frågor har uppdaterats, förbättrats och flyttats till en ny dedikerad sida. [Läs mer](../building-journeys/send-time-optimization.md)
+* Nya skyddsutkast har lagts till för resehändelser. [Läs mer](../start/guardrails.md#events-g)
 
 ## Januari 2025 {#jan-2025}
 
@@ -99,7 +105,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Information har lagts till om att skapa en identitet med anpassade namnutrymmen när du arbetar med API-utlösta kampanjer. [Läs mer](../campaigns/api-triggered-campaigns.md)
 * Skärmfotona har uppdaterats för att återspegla den förbättrade arbetsytan på resan.
 * Namnbegränsningar har uppdaterats på följande sida: [Konfigurera en enhetshändelse](../event/about-creating.md), [Konfigurera en affärshändelse](../event/about-creating-business.md#gs-business-events), [Konfigurera en anpassad åtgärd](../action/about-custom-action-configuration.md#configuration-steps), [Externa datakällor](../datasource/external-data-sources.md)
-* En anteckning har lagts till om tillgängligheten för tidsoptimering för sändning. [Läs mer](../building-journeys/journeys-message.md#send-time-optimization)
+* En anteckning har lagts till om tillgängligheten för tidsoptimering för sändning. [Läs mer](../building-journeys/send-time-optimization.md)
 * Ett nytt exempel på teknisk användning har lagts till om hur du skapar en anpassad åtgärd för att skicka data till Experience Platform. [Läs mer](../building-journeys/custom-action-aep.md)
 
 ## Mars 2024 {#march-2024}
@@ -358,7 +364,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Sidan Tillåtelselista har flyttats till avsnittet Konfiguration. [Läs mer](../configuration/allow-list.md)
 * Sidan Suppression List har uppdaterats för att förtydliga viss information, inklusive det faktum att alla ASCII-tecken som finns mellan 32 och 126 tillåts i fältet för undertryckning. [Läs mer](../configuration/manage-suppression-list.md)
 * Länken till skyddsförslag och statiska gränser för beslutshantering har lagts till. [Läs mer](../start/guardrails.md)
-* Tidsoptimering är nu tillgängligt för alla kunder. Betafältet har tagits bort. [Läs mer](../building-journeys/journeys-message.md#send-time-optimization)
+* Tidsoptimering är nu tillgängligt för alla kunder. Betafältet har tagits bort. [Läs mer](../building-journeys/send-time-optimization.md)
 * API:t för gruppbeslut har lagts till i listan över tillgängliga API:er för leverans av personaliserade erbjudanden. [Läs mer](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
 
 ## Maj 2022 {#may-2022}

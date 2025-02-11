@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: sändningstid, skicka, meddelande, optimering, resa, AI, intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -23,22 +23,10 @@ ht-degree: 0%
 >title="Om Tidsoptimering för Skickat"
 >abstract="Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser."
 
-Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. Använd vår maskininlärningsmodell för att schemalägga personliga sändningstider för varje användare så att de kan utöka öppnings- och klickfrekvensen för dina meddelanden.
-
-Modellen för optimering av sändningstid (Send-Time Optimization) innehåller information om dina Adobe Journey Optimizer-data och tittar på användarnivå som är öppen (för e-post och push) och klickar (för e-post) för att avgöra när kunderna är mest benägna att interagera med dina meddelanden. För optimering av sändningstid krävs minst en månads meddelandespårningsdata för att kunna ge välgrundade rekommendationer. För varje användare väljer systemet automatiskt den bästa tiden med följande poäng:
-
-* Den bästa timmen varje dag i veckan för att maximera engagemanget
-* Den bästa veckodagen för maximerat engagemang
-* Den bästa timmen på den bästa veckodagen för att maximera engagemanget
-
-Modellen varierar oavsett om du talar om poängsättning eller utbildning. Utbildningen genomförs varje vecka, inledningsvis och därefter varje kvartal. Poängen är en gång i veckan och därefter en gång i månaden.
-
-* Utbildning - utveckling av den algoritm som används för att göra poängen
-* Poäng - poängsättning för enskilda profiler baserat på den tränade modellen
-
-Den här informationen lagras med användarens profil och hänvisas till vid körning av resan för att tala om för Adobe Journey Optimizer när meddelandet ska skickas.
-
-## Aktivera optimering av sändningstid{#activate-send-time-optimization}
+>[!CONTEXTUALHELP]
+>id="jo_bestsendtime_disabled"
+>title="Om Tidsoptimering för Skickat"
+>abstract="Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser."
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_email"
@@ -50,10 +38,133 @@ Den här informationen lagras med användarens profil och hänvisas till vid kö
 >title="Aktivera optimering av sändningstid"
 >abstract="Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte kan användas för push-meddelanden. Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för Skicka i nästa alternativ."
 
-Aktivera Send-Time Optimization för ett e-postmeddelande eller push-meddelande genom att välja **Send-Time Optimization** från aktivitetsparametrarna.
 
-![](../building-journeys/assets/jo-message5.png)
+Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster för resan, väljer den optimala sändningstiden för e-post och push-meddelanden för att maximera kundengagemanget, baserat på kundernas tidigare öppnings- och klickbeteende.
 
-För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte kan användas för push-meddelanden.
+Sändningsoptimering är endast tillgängligt för Journey Optimizer inbyggda åtgärdstyper för e-post och push och är för närvarande inte tillgängligt för meddelanden som skickas via anpassade åtgärder eller för andra åtgärdstyper. Tidsoptimering för sändning är endast tillgängligt för e-post- och push-åtgärder inom resor och är för närvarande inte tillgängligt för meddelanden som skickas via kampanjer.
 
-Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för alternativet **Skicka inom nästa**. Om du väljer&quot;sex timmar&quot; som värde kontrollerar [!DNL Journey Optimizer] varje användarprofil och väljer den optimala sändningstiden inom sex timmar från körningstiden för resan.
+
+## Aktivera optimering av sändningstid{#enable-send-time-optimization}
+
+Funktionen för optimering av sändningstid är aktiverad för Adobe Journey Optimizer-kunder på begäran. Kontakta Adobe kundtjänst eller en Adobe-representant för att aktivera funktionen för din organisation.
+
+## Använd optimering vid sändning{#use-send-time-optimization}
+
+Använd optimering av sändningstid för ett e-postmeddelande eller push-åtgärd genom att aktivera alternativet för optimering av sändningstid från åtgärdsparametrarna.
+
+![](assets/sto-use.png)
+
+>[!TIP]
+>
+>Optimering av sändningstid ska inte användas för brådskande, tidskänsliga operativa meddelanden, till exempel en orderbekräftelse, ett meddelande om lösenordsåterställning eller ett meddelande om ändring av flygport. Optimering för sändningstid är bäst när det gäller mindre brådskande marknadsföringsmeddelanden, t.ex. en veckoannons, kampanjinformation för en ny produkt eller information om en månadsförsäljning.
+
+För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Push-meddelanden är alltid optimerade för öppning.
+
+>[!TIP]
+>
+>För bästa resultat bör de flesta e-postmeddelanden optimeras för Klickningar. Välj att optimera för Öppnar om ditt e-postmeddelande är av informativ natur och inte är avsett att direkt köra en åtgärd.
+
+För både e-post- och push-meddelanden väljer du det maximala antal timmar som systemet ska vänta innan meddelandet skickas genom att ange ett värde för alternativet&quot;Skicka inom nästa&quot;. Du kan välja mellan 1 och 168 timmar.
+
+>[!TIP]
+>
+>För bästa resultat bör du välja en maximal väntetid mellan 6 och 24 timmar. Om du väljer ett lägre värde för maximal väntetid minskas antalet tillgängliga sändningstider och därför kan det potentiella värdet för optimering av sändningstid minska. Om du väljer ett högre värde för maximal väntetid kan ett meddelande bli inaktuellt eller irrelevant när det skickas.
+
+När kundresan aktiveras och kunden når åtgärden E-post eller push under resan, väljer optimering av sändningstid den bästa förväntade sändningstiden som är tillgänglig för varje användare inom de angivna gränserna.
+
+
+## Så här fungerar optimering vid körning {#how-send-time}
+
+Modellen för optimering av sändningstid innebär att din organisations kundbeteendedata från Adobe Journey Optimizer importeras och att användaren undersöker öppna- och klickhändelser för att avgöra när det är mest troligt att dina kunder interagerar med dina meddelanden.
+
+Med optimering för sändningstid kan man förutse för varje timme i veckan, för varje användare, baserat på tre typer av beteendedata:
+
+1. Beteendet för dina användare generellt
+1. Beteendet för lookalike-användare i samma tidszon
+1. Beteendet för den enskilda användaren
+
+Dessa prognoser vägs och kombineras med hjälp av en bayesisk metod, vilket ger en&quot;värmekarta&quot; för varje mätvärde (e-postöppning, e-postklick och push-öppning) för varje kund, som anger de timmar i veckan som kontaktar användaren mest och minst sannolikt resulterar i önskat engagemangsresultat (öppna/klicka), vilket visas i följande exempelheatmap:
+
+![](assets/heatmap-1.png)
+
+Om en användare med ovanstående sannolikhet för meddelande anges som mål på onsdagen kl. 9 och optimering av sändningstid aktiverat och en maximal väntetid på 7 timmar, kommer den valda sändningstiden för meddelandet att vara 12.00:
+
+![](assets/heatmap-2.png)
+
+## Utbildning och poänginformation om modellerna för optimering av sändningstid  {#model-send-time}
+
+När funktionen för optimering av sändningstid har aktiverats för din organisation har Journey AI-modellen utbildats för e-post och push-sändning, öppna och klicka på händelser under alla organisationens resor och åtgärder under de senaste 16 veckorna - oavsett om dessa åtgärder använder optimering av sändningstid eller inte. Detta gör att optimering av sändningstid kan dra nytta av alla data som genereras av dina kunder.
+
+Modeller är initialt utbildade och poängsätts varje vecka. Efter 16 veckor får modellerna ny utbildning och ny kodning varje månad. Modellpoängen innehåller alla kundprofiler - både befintliga och nya sedan den senaste poängsättningen.
+
+Meddelanden som skickas av optimering av sändningstid får antingen ett meddelande om att utforska sändningstiden som valts för att testa olika sändningstider och observera hur kunderna svarar, eller en optimerad sändningstid för meddelanden som valts för att maximera antalet klickningar/öppningar. 5 % av sändningshändelserna får en utforskande sändningstid och 95 % av sändningshändelserna är&quot;optimerade&quot;.
+
+Utforska sändningstider väljs slumpvis bland de sändningstider som är tillgängliga med den konfigurerade maximala väntetiden. Om ett meddelande till exempel markeras på onsdag 09:00 med optimering för Skicka-tid aktiverat och en maximal väntetid på 3 timmar, kommer meddelandetiden för prospektering att delas jämnt mellan 09:00, 10:00 och 12:00.
+
+
+## Vanliga frågor {#faq-send-time}
+
++++Hur lång tid behöver jag vänta innan jag använder optimering för Skicka-tid?
+
+Din organisation bör använda e-poståtgärden i Journey Optimizer i minst 30 dagar innan du använder optimering av sändningstid i e-postmeddelanden för att tillåta insamling av vissa e-postutskick, öppna och klickningar.
+
+Din organisation bör använda åtgärden Push i Journey Optimizer i minst 30 dagar innan den använder Send-Time Optimization i Push för att samla in push-skicka och öppna händelser.
+
+Om din organisation redan har använt åtgärderna E-post och/eller Push i minst 30 dagar behöver din organisation inte vänta längre för att använda optimering för Skicka-tid efter att den har aktiverats av Adobe. Resultaten kommer att fortsätta att förbättras i takt med att organisationen samlar in data i upp till 16 veckor.
+
++++
+
++++Hur kan jag se den sändningstid som en viss användare får ett meddelande på?
+
+För att minimera modellens påverkan på profilens detaljrikedom lagras modellpoäng i 3 profilattribut som lagras i `_experience.intelligentServices.journeyAI.sendTimeOptimization` och är inte utformade för att vara läsbara för människor.
+
++++
+
+
++++Vilken är den genomsnittliga fördelen med optimering vid sändning?
+
+Sändningsoptimering kan öka e-postklickfrekvensen och öka öppningsfrekvensen i intervallet mellan cirka 2 % och 10 % för alla meddelanden som optimeras av en organisation.
+
+Om en organisation som skickar e-post utan att optimera sändningstiden har en genomsnittlig klickfrekvens på 5,0 %, kan samma uppsättning e-postmeddelanden med optimerad sändningstid resultera i en klickfrekvens på i genomsnitt 5,5 % (5,0 % * (1+10 %) = 5,5 %).
+
+På grund av variationer inom små provstorlekar är det inte säkert att fördelarna med optimering av sändningstid kan observeras vid enskilda meddelanden.
+
+Det är troligare att organisationer får större fördelar av att använda optimering vid sändning när:
+
+* Befintliga resor använder fasta och inte optimerade sändningstider
+* Variabilitet i kundbeteende (klickningar och öppningar) motsvarar kundens position och kundens önskemål
+* Organisationer använder Send-Time Optimization på en större del av e-post och push-meddelanden
+* Organisationer väljer maximal väntetid inom det rekommenderade intervallet på 6-12 timmar
+
++++
+
++++Jag klickar alltid på e-post eller push-meddelanden kl. 12.00, varför skickade inte algoritmen ett meddelande till mig kl. 12.00?
+
+
+Detta kan inträffa av flera orsaker:
+
+* Ditt meddelande valdes som en sändningstid för meddelandet &quot;Exploration&quot; i stället för som en sändningstid för meddelandet &quot;Optimized&quot;.
+* Beteendet hos lookalike-användare påverkade modellen så att den kunde rekommendera en annan sändningstid.
+
++++
+
++++Hur känner optimeringen av Skicka-tid en användares tidszon?
+
+För optimering av sändningstid används profilfältet `timeZone` för att fastställa en användares tidszon. Om den användaren inte är tillgänglig försöker Send-Time Optimization härleda en användares tidszon från annan geografisk information i användarens profil, till exempel land och delstat.
+
++++
+
+
++++Will Send-Time Optimization Skicka push-meddelanden till användare under natten i den lokala tidszonen?
+
+Tidsoptimering för sändning kan skicka push-meddelanden till användare under natten i den lokala tidszonen under följande omständigheter:
+
+* När en användare uppvisar ett beteende som tyder på att de sannolikt kommer att interagera med ett meddelande som skickas nattetid
+* När modellen väljer en utforskande sändningstid
+
+För att undvika att skicka push-meddelanden till kunder under nattetid, schemalägger du push-meddelanden i batch till morgonen eller tidig eftermiddag och väljer en kortare varaktighet för Send-Time Optimization. (Exempelvis en sändningstid på 9 AM och en maximal väntetid på 8 timmar.)
+
++++
+
+
+

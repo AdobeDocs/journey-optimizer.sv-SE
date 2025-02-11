@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: c9505b482d2dedc10c4025574cccb662fe149510
+source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
 workflow-type: tm+mt
 source-wordcount: '3487'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 >title="Rapport om livesändning på resa"
 >abstract="Med reserapporten kan ni i realtid mäta och visualisera påverkan och resultat av era resor bara under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som detaljerar hur framgångsrik och felfri din resa är. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
-Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics i fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
+Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
 
 Du kan komma åt liverapporten för resan direkt från din resa med knappen **[!UICONTROL View report]**.
 
@@ -357,7 +357,7 @@ Widgetarna **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics
 
 >[!NOTE]
 >
->Widgetarna **[!UICONTROL Send time optimization]** och **[!UICONTROL Optimized vs non optimized]** är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leveransen. Mer information om optimering av sändningstid finns på [den här sidan](../building-journeys/journeys-message.md#send-time-optimization).
+>Widgetarna **[!UICONTROL Send time optimization]** och **[!UICONTROL Optimized vs non optimized]** är bara tillgängliga om alternativet för optimering av sändningstid är aktiverat för leveransen. Mer information om optimering av sändningstid finns på [den här sidan](../building-journeys/send-time-optimization.md).
 
 Widgetarna **[!UICONTROL Send time optimization]** och **[!UICONTROL Optimized vs non optimized]** visar hur bra dina e-postmeddelanden är beroende på sändningsmetoden: optimerad eller normal.
 

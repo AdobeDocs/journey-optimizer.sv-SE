@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Om du vill skapa ett e-postmeddelande i [!DNL Journey Optimizer] lägger du till
 
 >[!NOTE]
 >
->Du kan använda alternativet för optimering av sändningstid för att förutsäga den bästa tidpunkten för att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur du arbetar med optimering vid sändning](../building-journeys/journeys-message.md#send-time-optimization)
+>Du kan använda alternativet för optimering av sändningstid för att förutsäga den bästa tidpunkten för att skicka meddelandet för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser. [Lär dig hur du arbetar med optimering vid sändning](../building-journeys/send-time-optimization.md)
 
 Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
@@ -94,13 +94,13 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
    ![](assets/email_designer_edit_email_body.png)
 
-1. Om du deltar i en kampanj kan du även klicka på knappen **[!UICONTROL Code Editor]** för att koda ditt eget innehåll i oformaterad HTML med hjälp av popup-fönstret som visas.
+1. Om du deltar i en kampanj kan du även klicka på knappen **[!UICONTROL Code Editor]** för att koda ditt eget innehåll i vanliga HTML med hjälp av popup-fönstret som visas.
 
    ![](assets/email_designer_edit_code_editor.png)
 
    >[!NOTE]
    >
-   >Om du redan har skapat eller importerat innehåll via e-post-Designer visas det här innehållet i HTML.
+   >Om du redan har skapat eller importerat innehåll via e-post-Designer visas innehållet i HTML.
 
 ## Kontrollera aviseringar {#check-email-alerts}
 
