@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: sändningstid, skicka, meddelande, optimering, resa, AI, intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
-source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
+source-git-commit: b9ec336abbe329c33098880b16aaeabd8ec0c310
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,11 @@ Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger p�
 
 Sändningsoptimering är endast tillgängligt för Journey Optimizer inbyggda åtgärdstyper för e-post och push och är för närvarande inte tillgängligt för meddelanden som skickas via anpassade åtgärder eller för andra åtgärdstyper. Tidsoptimering för sändning är endast tillgängligt för e-post- och push-åtgärder inom resor och är för närvarande inte tillgängligt för meddelanden som skickas via kampanjer.
 
+>[!AVAILABILITY]
+>
+>* Minst 1 000 profiler med aktuella meddelandedata rekommenderas för den inledande utbildningen och poängsättningen för Skicka-Time Optimization.
+>
+>* Tidsoptimering för sändning gäller endast för kanalerna **E-post** och **Push-meddelanden**.
 
 ## Aktivera optimering av sändningstid{#enable-send-time-optimization}
 
