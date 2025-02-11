@@ -2,27 +2,27 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Attributbaserad åtkomstkontroll
-description: Med attributbaserad åtkomstkontroll (ABAC) kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare.
+description: Med attributbaserad åtkomstkontroll kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare.
 feature: Access Management
 topic: Administration
 role: Admin,Leader
 level: Intermediate
 keywords: abac, attribute, authorized, data, access, sensitive, assets
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
-source-git-commit: fbcd5ae83c024d672d608d5f5aefc6a4252ec8c0
+source-git-commit: 79bea396ba1ff482aaa4edcab1a31ca3847b3f52
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '942'
 ht-degree: 1%
 
 ---
 
 # Attributbaserad åtkomstkontroll {#attribute-based-access}
 
-Med den attributbaserade åtkomstkontrollen (ABAC) kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare. Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
+Med den attributbaserade åtkomstkontrollen kan du definiera behörigheter för att hantera dataåtkomst för specifika team eller grupper av användare. Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
 
-I Adobe Journey Optimizer kan du med ABAC skydda data och ge specifik åtkomst till specifika fältelement, inklusive XDM-scheman (Experience Data Model), profilattribut och målgrupper.
+Använd den attributbaserade åtkomstkontrollen i Adobe Journey Optimizer för att skydda data och ge specifik åtkomst till specifika fältelement som XDM-scheman (Experience Data Model), profilattribut och målgrupper.
 
-En mer detaljerad lista över de termer som används med ABAC finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
+En mer detaljerad lista över de termer som används med attributbaserad åtkomstkontroll finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html){target="_blank"}.
 
 I det här exemplet vill vi lägga till en etikett i schemafältet **Nationalitet** för att hindra obehöriga användare från att använda den. För att detta ska fungera måste du utföra följande steg:
 
@@ -32,15 +32,15 @@ I det här exemplet vill vi lägga till en etikett i schemafältet **Nationalite
 
 1. Använd **[!UICONTROL Schema field]** i Adobe Journey Optimizer.
 
-Observera att **[!UICONTROL Roles]**, **[!UICONTROL Policies]** och **[!UICONTROL Products]** också kan nås med det attributbaserade åtkomstkontrolls-API:t. Mer information finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/abac-api/overview.html).
+Observera att **[!UICONTROL Roles]**, **[!UICONTROL Policies]** och **[!UICONTROL Products]** också kan nås med det attributbaserade åtkomstkontrolls-API:t. Mer information finns i [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/abac-api/overview.html){target="_blank"}.
 
 ## Skapa en roll och tilldela etiketter {#assign-role}
 
 >[!IMPORTANT]
 >
->Innan du hanterar behörigheter för en roll måste du skapa en profil. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/policies.html).
+>Innan du hanterar behörigheter för en roll måste du skapa en profil. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/policies.html){target="_blank"}.
 
-**[!UICONTROL Roles]** är en uppsättning användare som delar samma behörigheter, etiketter och sandlådor i din organisation. Alla användare som tillhör en **[!UICONTROL Role]** har rätt till de program och tjänster i Adobe som ingår i produkten.
+**[!UICONTROL Roles]** är en uppsättning användare som delar samma behörigheter, etiketter och sandlådor i din organisation. Varje användare som tillhör en **[!UICONTROL Role]** har rätt till de Adobe-program och -tjänster som ingår i produkten.
 Du kan också skapa en egen **[!UICONTROL Roles]** om du vill finjustera användarnas åtkomst till vissa funktioner eller objekt i gränssnittet.
 
 Vi vill nu ge utvalda användare åtkomst till fältet **Medborgarskap**, märkt C2. För att kunna göra det måste vi skapa en ny **[!UICONTROL Role]** med en specifik uppsättning användare och ge dem etiketten C2 så att de kan använda informationen om **nationalitet** i en **[!UICONTROL Journey]**.
@@ -92,7 +92,7 @@ I det här exemplet vill vi begränsa åtkomsten till fältet **Nationalitet**. 
 
 Observera att du även kan lägga till **[!UICONTROL Label]** i **[!UICONTROL Schema]**, **[!UICONTROL Datasets]** och **[!UICONTROL Audiences]**.
 
-1. Skapa din **[!UICONTROL Schema]**. Mer information finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
+1. Skapa din **[!UICONTROL Schema]**. Mer information finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}.
 
    ![](assets/label_1.png)
 
@@ -104,11 +104,11 @@ Observera att du även kan lägga till **[!UICONTROL Label]** i **[!UICONTROL Sc
 
    ![](assets/label_3.png)
 
-1. Välj motsvarande **[!UICONTROL Label]**, i det här fallet C2 - Data kan inte exporteras till en tredje part. En detaljerad lista över tillgängliga etiketter finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html#contract-labels).
+1. Välj motsvarande **[!UICONTROL Label]**, i det här fallet C2 - Data kan inte exporteras till en tredje part. En detaljerad lista över tillgängliga etiketter finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html#contract-labels){target="_blank"}.
 
    ![](assets/label_4.png)
 
-1. Anpassa schemat ytterligare om det behövs och aktivera det sedan. Detaljerade anvisningar om hur du aktiverar ditt schema finns på [sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile).
+1. Anpassa schemat ytterligare om det behövs och aktivera det sedan. Detaljerade anvisningar om hur du aktiverar ditt schema finns på [sidan](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile){target="_blank"}.
 
 Fältet i schemat är nu bara synligt och kan nu bara användas av användare som är en del av en roll som har angetts med C2-etiketten.
 Genom att tillämpa en **[!UICONTROL Label]** på din **[!UICONTROL Field name]**, observera att **[!UICONTROL Label]** automatiskt kommer att tillämpas på fältet **Nationalitet** i alla skapade scheman.

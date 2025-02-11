@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: kampanj, standard, integrering, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 79bea396ba1ff482aaa4edcab1a31ca3847b3f52
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -22,17 +22,17 @@ Du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Standard Trans
 
 Om du har Adobe Campaign Standard finns det en inbyggd åtgärd som tillåter anslutning till Adobe Campaign Standard.
 
-Campaign Standardens transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Optimizer. Om händelsen publiceras men meddelandet inte visas, visas den inte i Journey Optimizer-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det, visas det i Journey Optimizer-gränssnittet, men det går inte att använda det.
+Campaign Standard transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Optimizer. Om händelsen publiceras men meddelandet inte visas, visas den inte i Journey Optimizer-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det, visas det i Journey Optimizer-gränssnittet, men det går inte att använda det.
 
 ## Viktiga anteckningar {#important-notes}
 
-* En begränsning på 4 000 anrop per 5 minuter definieras automatiskt för Adobe Campaign Standard-åtgärder. Detta motsvarar den officiella skalan för Adobe Campaign Standard Transactional Messaging. Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html).
+* En begränsning på 4 000 anrop per 5 minuter definieras automatiskt för Adobe Campaign Standard-åtgärder. Detta motsvarar den officiella skalan för Adobe Campaign Standard Transactional Messaging. Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html){target="_blank"}.
 
 * Integreringen med Adobe Campaign Standard görs via en särskild inbyggd åtgärd i åtgärdslistan. Detta måste konfigureras för varje sandlåda.
 
 * Du kan inte använda en Campaign Standard-åtgärd med en publikkvalificering eller en målgruppsaktivitet.
 
-* En resa kan inte använda både meddelanden och Campaign Standard-åtgärder.
+* En resa kan inte använda både meddelanden och Campaign Standard åtgärder.
 
 ## Konfigurera åtgärden {#configure-action}
 
@@ -62,6 +62,6 @@ När du utformar din resa är tre åtgärder tillgängliga i kategorin **[!UICON
 
 ![](assets/journey58.png)
 
-Du kan använda en **Reactions**-händelse för att reagera på spårningsdata som är kopplade till ett Campaign Standard-meddelande som skickas inom samma resa. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden. Se [Reaktionshändelser](../building-journeys/reaction-events.md).
+Du kan använda en **Reactions**-händelse för att reagera på spårningsdata som är relaterade till ett Campaign Standard-meddelande som skickas inom samma resa. För push-meddelanden kan du reagera på klickade, skickade eller misslyckade meddelanden. För SMS-meddelanden kan du reagera på skickade eller misslyckade meddelanden. För e-postmeddelanden kan du reagera på klickade, skickade, öppnade eller misslyckade meddelanden. Se [Reaktionshändelser](../building-journeys/reaction-events.md).
 
 Om du använder ett tredjepartssystem för att skicka meddelanden måste du lägga till och konfigurera en anpassad åtgärd. Se [Om konfiguration för anpassad åtgärd](../action/about-custom-action-configuration.md).

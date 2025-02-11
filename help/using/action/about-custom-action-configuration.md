@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: aec3d79ad07ec6904e55afd6fc61ba9b4f403fc8
+source-git-commit: 79bea396ba1ff482aaa4edcab1a31ca3847b3f52
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1597'
 ht-degree: 2%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_configuration"
 >title="Anpassade åtgärder"
->abstract="Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com), Firebase osv."
+>abstract="Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa."
 
-Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase osv.
+Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase, osv.
 
 Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska användare och görs tillgängliga för marknadsförare. När de har konfigurerats visas de i den vänstra paletten på din resa i kategorin **[!UICONTROL Action]**. Läs mer på [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
@@ -149,7 +149,7 @@ Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen
 
 Du kan definiera nyttolastparametern så som beskrivs nedan:
 
-1. I avsnittet **[!UICONTROL Request]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för anropsmetoder för POST och PUT.
+1. I avsnittet **[!UICONTROL Request]** klistrar du in ett exempel på JSON-nyttolasten som ska skickas till den externa tjänsten. Det här fältet är valfritt och endast tillgängligt för POST- och PUT-anropsmetoder.
 
    Aktivera alternativet **[!UICONTROL Allow NULL values]** om du vill behålla Null-värden i det externa anropet. Observera att sändande arrayer av int, string osv. med Null-värden i stöds inte fullständigt. Följande array med heltal `[1, null, 2, 3]` skickas som `[1, 2, 3]` även om det här alternativet är markerat. Om arrayen är null skickas den dessutom som en tom array.
 
