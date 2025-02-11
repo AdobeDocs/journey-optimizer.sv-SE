@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 5b16e3a89a9a39723a2443345c4e8180a490112e
+source-git-commit: 3860916a899b3f1bc0f7563f776cdf8356aee0a9
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2489'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,8 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 ### Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
 
 * Antalet aktiviteter under en resa är begränsat till 50. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan. Detta underlättar läsbarhet, kvalitetskontroll och felsökning.
+* Journey Optimizer har stöd för en toppvolym på 5 000 inkommande resehändelser per sekund.
+* Händelseutlösta resor kan ta upp till fem minuter för att behandla den första åtgärden i resan.
 * När du publicerar resor skalas och justeras vi automatiskt för att säkerställa maximal genomströmning och stabilitet. I närheten av milstolpen för 100 direktresor på en gång visas ett meddelande i användargränssnittet om detta. Om du ser det här meddelandet och behöver förlänga dina resor mer än 100 resor i taget kan du skapa en biljett för kundvård så hjälper vi dig att nå dina mål.
   <!-- DOCAC-10977 * As you publish journeys, we automatically scale and adjust to ensure maximum throughput and stability. As you near the milestone of 500 live journeys at one time, you will see a notification appear in the UI on this achievement. If you see this notification and have a need to extend your journeys beyond 500 live journeys at a time, please create a ticket for customer care and we will help you reach your goals.-->
 * När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
@@ -230,14 +232,14 @@ Begränsningarna för beslutshantering anges nedan.
 
 * **Godkända personliga erbjudanden + reserverbjudanden** - upp till 10 000 kombinerade godkända personliga erbjudanden och godkända reserverbjudanden.
 * **Beslut** - upp till 10 000 beslut.
-* **Live-beslut** - Offer decisioning App Service stöder upp till 1 000 Live-beslut.
-* **Erbjudanden som returneras per svar** - Offera decisioningen stöder upp till 100 erbjudanden som returneras per begäran för alla beslutsomfattningar som begärs.
+* **Live-beslut** - Offer Decisioning App Service stöder upp till 1 000 Live-beslut.
+* **Erbjudanden som returneras per svar** - Offer Decisioning stöder upp till 100 erbjudanden som returneras per begäran för alla beslutsomfattningar som begärs.
 * **Samlingar** - Upp till 10 000 samlingar.
 * **Samlingar per beslut** - Upp till 30 samlingar per beslut.
 * **Beslutsregler + rangordningsfunktioner** Upp till 10 000 kombinerade beslutsregler och rangordningsfunktioner.
 * **Placeringar** - Upp till 1 000 placeringar.
 * **Placeringar per beslut** - upp till 30 praktik per beslut.
-* **Rankningsmetod per beslut** - Offer decisioning App Service har stöd för upp till 30 rankningsfunktioner per beslut.
-* **AI-rankningsmodell** - Offer decisioning App Service stöder upp till 5 AI-rankningsmodeller.
-* **Samlingskvalificerare per erbjudande eller samling** - Offer decisioning App Service har stöd för upp till 20 samlingskvalificerare i ett personligt erbjudande eller en enda samling.
-* **Totalt antal samlingskvalificerare** - Offer decisioning App Service stöder upp till 1 000 samlingskvalificerare.
+* **Rankningsmetod per beslut** - Offer Decisioning App Service stöder upp till 30 rankningsfunktioner per beslut.
+* **AI-rankningsmodell** - Offer Decisioning App Service stöder upp till 5 AI-rankningsmodeller.
+* **Samlingskvalificerare per erbjudande eller samling** - Offer Decisioning App Service stöder upp till 20 samlingskvalificerare i ett personligt erbjudande eller en enda samling.
+* **Totalt antal samlingskvalificerare** - Offer Decisioning App Service stöder upp till 1 000 samlingskvalificerare.
