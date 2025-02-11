@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 7632b144625a02810796d7afc858fcb5809d9220
+source-git-commit: 2ce069f92e11fa9246736a4b71dfd66391d8b06c
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2216'
 ht-degree: 0%
 
 ---
@@ -273,7 +273,7 @@ En marknadsförare har en marknadsföringsresa som har en serie kommunikationer.
 
 ### Konfiguration och användning {#exit-criteria-config}
 
-Avslutskriterier ställs in på resenivå. En resa kan ha flera exitkriterier. När du har angett flera avslutsvillkor utförs utvärderingen uppifrån och ned med en `OR`-logik. Om du har avslutningskriterier A och avslutningskriterier B utvärderas det som A **OR** B. Kriterierna utvärderas under varje steg av resan.
+Avslutskriterier ställs in på resenivå. En resa kan ha flera exitkriterier. Om du har angett flera avslutsvillkor utförs utvärderingen uppifrån och ned med en `OR`-logik. Om du har avslutningskriterier A och avslutningskriterier B utvärderas det därför som A **OR** B. Kriterierna utvärderas under varje steg av resan.
 
 Följ de här stegen för att **skapa** och avsluta villkor:
 
@@ -285,8 +285,8 @@ Följ de här stegen för att **skapa** och avsluta villkor:
    ![](assets/exitcriteria.png){width="40%" align="left"}
 1. Ange en **etikett** och välj om ditt avslutsvillkor är baserat på en **händelse** eller en **publik**.
 
-* För avslutningskriterier baserade på en händelse väljer du endast en händelse.
-* Välj en målgrupp för avslutningskriterier som baseras på en målgrupp. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används för att bli effektiva.
+För avslutningskriterier baserade på en händelse väljer du endast en händelse.
+Välj en målgrupp för avslutningskriterier som baseras på en målgrupp. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används för att bli effektiva.
 
 Du kan lägga till flera avslutningskriterier.
 
