@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: fcad0d71b6de9ae7e21b201fb954e712b2028526
+source-git-commit: 66f8943093670b3310a600a77adcd8123bb213ff
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 1%
@@ -91,7 +91,7 @@ Använd knappen **[!UICONTROL Trigger an event]** för att konfigurera en hände
 >
 >* När du utlöser en händelse i testläge genereras en verklig händelse, vilket innebär att den även kommer att drabba andra resor som lyssnar på den här händelsen.
 >
->*Kontrollera att varje händelse i testläge aktiveras i rätt ordning och i det konfigurerade väntefönstret. Om det till exempel finns en väntetid på 60 sekunder får den andra händelsen bara aktiveras efter att 60-sekundersväntetiden har gått ut och innan tidsgränsen går ut.
+>* Se till att varje händelse i testläge aktiveras i rätt ordning och i det konfigurerade väntefönstret. Om det till exempel finns en väntetid på 60 sekunder får den andra händelsen bara aktiveras efter att 60-sekundersväntetiden har gått ut och innan tidsgränsen går ut.
 >
 
 Du måste känna till vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID eller en e-postadress. Värdet för den här nyckeln måste läggas till i fältet **Profilidentifierare**.
