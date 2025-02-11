@@ -21,7 +21,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname"
 >title="Delegering av underdomän"
->abstract="Med Journey Optimizer kan du delegera dina underdomäner till Adobe. Du kan delegera en underdomän helt till Adobe, vilket är den rekommenderade metoden. Du kan också skapa en underdomän med CNAME för att peka på poster som är specifika för Adobe, men på det här sättet måste du behålla och hantera DNS-poster på egen hand."
+>abstract="Med Journey Optimizer kan du delegera dina underdomäner till Adobe. Du kan delegera en underdomän helt till Adobe, vilket är den rekommenderade metoden. Du kan också skapa en underdomän med CNAME för att peka på Adobe-specifika poster, men på det här sättet måste du behålla och hantera DNS-poster på egen hand."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
 
 >[!CONTEXTUALHELP]
@@ -48,14 +48,14 @@ Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för at
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns"
 >title="Generera matchande DNS-poster"
->abstract="Om du vill delegera en ny underdomän till Adobe måste du kopiera och klistra in Adobe-namnserverinformationen som visas i Journey Optimizer-gränssnittet i din värdlösning för domäner för att generera matchande DNS-poster. Om du vill delegera en underdomän med CNAME måste du också kopiera och klistra in valideringsposten för SSL CDN-URL. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
+>abstract="Om du vill delegera en ny underdomän till Adobe måste du kopiera och klistra in informationen om Adobe-namnservern som visas i Journey Optimizer-gränssnittet i din värdlösning för domäner för att generera matchande DNS-poster. Om du vill delegera en underdomän med CNAME måste du också kopiera och klistra in valideringsposten för SSL CDN-URL. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain#cname-subdomain-delegation" text="CNAME-delegering av underdomän"
 
-Med [!DNL Journey Optimizer] kan du delegera dina underdomäner helt till Adobe direkt från produktgränssnittet. På så sätt kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
+Med [!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe helt och hållet direkt från produktgränssnittet. Genom att göra det kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
 
 Du kan förlita dig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschstandardkraven för leverans för e-postmarknadsföringsavsändardomäner, samtidigt som du fortsätter att underhålla och kontrollera DNS för dina interna e-postdomäner.
 
-Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
+Följ stegen nedan om du vill delegera en ny underdomän till Adobe:
 
 1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Set up subdomain]**.
 
@@ -81,7 +81,7 @@ Följ stegen nedan om du vill delegera en ny underdomän till Adobe helt:
 
    ![](assets/subdomain-submit.png)
 
-1. Ställ in DMARC-post. Om underdomänen har en befintlig DMARC-post, och om den hämtas av [!DNL Journey Optimizer], kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Läs mer](dmarc-record.md)
+1. Konfigurera DMARC-post. Om underdomänen har en befintlig DMARC-post, och om den hämtas av [!DNL Journey Optimizer], kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Läs mer](dmarc-record.md)
 
    ![](assets/dmarc-record-found.png)
 
@@ -118,22 +118,22 @@ När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer] skapas 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns_cname"
 >title="Generera matchande DNS- och valideringsposter"
->abstract="Om du vill delegera en underdomän med CNAME måste du kopiera och klistra in informationen om Adobe-namnservern och den SSL CDN URL-valideringspost som visas i Journey Optimizer-gränssnittet i värdplattformen. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
+>abstract="Om du vill delegera en underdomän med CNAME-filer måste du kopiera och klistra in informationen om Adobe-namnserver och den URL-valideringspost för SSL CDN som visas i Journey Optimizer-gränssnittet i värdplattformen. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_cdn_cname"
 >title="Kopiera valideringsposten"
 >abstract="Adobe genererar en valideringspost. Du måste skapa motsvarande post på värdplattformen för CDN URL-validering."
 
-Om du har domänspecifika begränsningsprinciper och du vill att Adobe endast ska ha partiell kontroll över DNS, kan du välja att utföra alla DNS-relaterade aktiviteter på din sida.
+Om du har domänspecifika begränsningsprinciper och du vill att Adobe endast ska ha partiell kontroll över DNS, kan du välja att utföra alla DNS-relaterade aktiviteter åt dig.
 
 Med funktionen för konfigurering av CNAME-underdomäner kan du skapa en underdomän och använda CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS för att konfigurera miljön för att skicka, återge och spåra e-postmeddelanden.
 
 >[!CAUTION]
 >
->CNAME-metoden rekommenderas om organisationens principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats via CNAME-metoden.
+>CNAME-metoden rekommenderas om organisationens principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats med CNAME-metoden.
 
-➡️ [Lär dig hur du skapar en underdomän med CNAME för att peka på Adobe-specifika poster i den här videon](#video)
+➡️ [Lär dig skapa en underdomän med CNAME för att peka på Adobe-specifika poster i den här videon](#video)
 
 Följ stegen nedan för att konfigurera en underdomän med CNAME:
 
@@ -157,7 +157,7 @@ Följ stegen nedan för att konfigurera en underdomän med CNAME:
 
    ![](assets/subdomain-create-dns-confirm.png)
 
-1. Konfigurera DMARC-posten. Om underdomänen har en befintlig DMARC-post, och om den hämtas av [!DNL Journey Optimizer], kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Läs mer](dmarc-record.md)
+1. Ställ in den på DMARC record. Om underdomänen har en befintlig DMARC-post, och om den hämtas av [!DNL Journey Optimizer], kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Läs mer](dmarc-record.md)
 
    ![](assets/dmarc-record-found.png)
 
@@ -203,19 +203,19 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
 >
 >Dessa steg utförs av Adobe och kan ta upp till 3 timmar.
 
-1. **Förvalidera**: Adobe kontrollerar om underdomänen har delegerats till Adobe DNS (NS-post, SOA-post, zoninställningar, ägarskapspost). Om steget före valideringen misslyckas returneras ett fel tillsammans med motsvarande orsak, annars går Adobe vidare till nästa steg.
+1. **Förvalidera**: Adobe kontrollerar om underdomänen har delegerats till Adobe DNS (NS-post, SOA-post, zoninställningar, ägarskapspost). Om steget före valideringen misslyckas returneras ett fel tillsammans med motsvarande orsak, annars fortsätter Adobe till nästa steg.
 
 1. **Konfigurera DNS för domänen**:
 
    * **MX-post**: E-postpost för e-post för e-postserver som bearbetar inkommande e-post som skickas till underdomänen.
    * **SPF-post**: Post för Sender Policy Framework - Visar IP-adresser för e-postservrar som kan skicka e-post från underdomänen.
-   * **DKIM-post**: Standardpost för DomainKeys Identified Mail - Använder kryptering av offentlig-privat nyckel för att autentisera meddelandet för att undvika förfalskning.
+   * **DKIM-post**: Standardpost för DomainKeys Identified Mail - Använder kryptering med offentlig-privat nyckel för att autentisera meddelandet för att undvika förfalskning.
    * **A**: IP-standardmappning.
    * **CNAME**: Ett kanoniskt namn eller en CNAME-post är en typ av DNS-post som mappar ett aliasnamn till ett sant eller kanoniskt domännamn.
 
 1. **Skapa spårnings- och spegelspårnings-URL:er**: om domänen är email.example.com kommer spårnings-/spegeldomänen att vara data.email.example.com. Den skyddas genom att SSL-certifikatet installeras.
 
-1. **Etablera CDN CloudFront**: Om CDN inte redan är installerat, etablerar Adobe den för din organisations-ID.
+1. **Etablera CDN CloudFront**: Om CDN inte redan är installerat, etablerar Adobe det för din organisations-ID.
 
 1. **Skapa CDN-domän**: Om domänen är email.example.com blir CDN-domänen cdn.email.example.com.
 

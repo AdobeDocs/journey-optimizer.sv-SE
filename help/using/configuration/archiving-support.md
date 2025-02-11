@@ -35,13 +35,13 @@ Regler som HIPAA kräver att [!DNL Journey Optimizer] ska tillhandahålla ett s�
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_bcc"
 >title="Definiera en e-postadress för hemlig kopia"
->abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen måste vara en annan än alla underdomäner som har delegerats till Adobe. Den här funktionen är valfri."
+>abstract="Du kan behålla en kopia av skickade e-postmeddelanden genom att skicka dem till en inkorg för hemlig kopia. Ange den e-postadress du vill använda så att alla e-postmeddelanden som skickas är blinda och kopieras till den här BCC-adressen. Observera att BCC-adressdomänen måste vara en annan än alla underdomäner som delegerats till Adobe. Den här funktionen är valfri."
 
 Du kan skicka en blind kopia (BCC) av ett e-postmeddelande som skickats av [!DNL Journey Optimizer] till en dedikerad BCC-adress. Med den här valfria funktionen kan du behålla kopior av e-postmeddelanden som du skickar till användarna för att uppfylla regelkrav och/eller arkivera. BCC-adressen är inte synlig för andra mottagare av meddelandet.
 
 ### Aktivera BCC-e-post {#enable-bcc}
 
-Om du vill aktivera alternativet **[!UICONTROL BCC email]** anger du den e-postadress du vill ha i det dedikerade fältet i [kanalkonfigurationen](channel-surfaces.md) (d.v.s. meddelandeförinställningen). Du kan ange en extern adress i rätt format, förutom en e-postadress som har definierats för en underdomän som har delegerats till Adobe. Om du till exempel har delegerat underdomänen *marketing.luma.com* till Adobe tillåts inte adresser som *abc@marketing.luma.com*.
+Om du vill aktivera alternativet **[!UICONTROL BCC email]** anger du den e-postadress du vill ha i det dedikerade fältet i [kanalkonfigurationen](channel-surfaces.md) (d.v.s. meddelandeförinställningen). Du kan ange en extern adress i rätt format, förutom en e-postadress som definierats för en underdomän som delegerats till Adobe. Om du till exempel har delegerat underdomänen *marketing.luma.com* till Adobe tillåts inte adresser som *abc@marketing.luma.com*.
 
 >[!CAUTION]
 >
@@ -67,7 +67,7 @@ Inställningen för e-postadress för hemlig kopia sparas och bearbetas omedelba
 
 BCC-adressen hämtas emellertid upp för att skicka kommunikation enligt logiken som beskrivs [här](../email/email-settings.md).
 
-### Recommendations och begränsningar {#bcc-recommendations-limitations}
+### Rekommendationer och begränsningar {#bcc-recommendations-limitations}
 
 * För att säkerställa att din integritet efterlevs måste e-post från innehållsförteckningen behandlas av ett arkiveringssystem som kan lagra säkert personligt identifierbar information (PII).
 

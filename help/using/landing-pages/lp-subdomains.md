@@ -76,11 +76,11 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    ![](assets/lp_prefix-and-subdomain.png)
 
-   Observera att du inte kan använda flera delegerade underdomäner för samma överordnade domän. Om till exempel&quot;marketing1.your.company.com&quot; redan har delegerats till Adobe för dina landningssidor kommer du inte att kunna använda&quot;marketing2.your.company.com&quot;. Om det finns stöd för underdomäner på flera nivåer för landningssidor kan du fortsätta med en underdomän till marketing1.yourcompany.com (till exempel email.marketing1.your.com) eller en annan överordnad domän.
+   Observera att du inte kan använda flera delegerade underdomäner för samma överordnade domän. Om till exempel&quot;marketing1.your.company.com&quot; redan har delegerats till Adobe för dina landningssidor, kommer du inte att kunna använda&quot;marketing2.your.company.com&quot;. Om det finns stöd för underdomäner på flera nivåer för landningssidor kan du fortsätta med en underdomän till marketing1.yourcompany.com (till exempel email.marketing1.your.com) eller en annan överordnad domän.
 
    >[!CAUTION]
    >
-   >Om du väljer en domän som delegerats till Adobe med [CNAME-metoden](../configuration/delegate-subdomain.md#cname-subdomain-delegation) måste du skapa DNS-posten på din värdplattform. För att generera DNS-posten är processen densamma som när du konfigurerar en ny underdomän för landningssida. Lär dig hur i [det här avsnittet](#lp-configure-new-subdomain).
+   >Om du väljer en domän som delegerats till Adobe med metoden [CNAME](../configuration/delegate-subdomain.md#cname-subdomain-delegation) måste du skapa DNS-posten på din värdplattform. För att generera DNS-posten är processen densamma som när du konfigurerar en ny underdomän för landningssida. Lär dig hur i [det här avsnittet](#lp-configure-new-subdomain).
 
 1. Klicka på **[!UICONTROL Submit]**.
 
@@ -99,7 +99,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 >[!CONTEXTUALHELP]
 >id="ajo_admin_lp_subdomain_dns"
 >title="Generera matchande DNS-post"
->abstract="Om du vill konfigurera en ny underdomän för landningssidan måste du kopiera den Adobe-namnserverinformation som visas i Journey Optimizer-gränssnittet och klistra in den i din värdlösning för domäner för att generera matchande DNS-post. När kontrollerna är slutförda kan underdomänen användas för att skapa förinställningar för landningssidor."
+>abstract="Om du vill konfigurera en ny underdomän för landningssidan måste du kopiera den Adobe-namnserverinformation som visas i Journey Optimizer-gränssnittet och klistra in den i din domänvärdslösning för att generera matchande DNS-post. När kontrollerna är slutförda kan underdomänen användas för att skapa förinställningar för landningssidor."
 
 Följ stegen nedan för att konfigurera en ny underdomän.
 

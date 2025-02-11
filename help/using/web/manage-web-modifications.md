@@ -83,7 +83,7 @@ Följ stegen nedan om du vill lägga till en **CSS-väljartypändring**.
 
 1. Välj **[!UICONTROL CSS Selector]** som ändringstyp.
 
-1. Fältet **[!UICONTROL CSS Element Selector]** hjälper dig att hitta och markera elementen (eller noderna i DOM-trädet) som du vill använda ändringarna på. <!--specify the desired CSS element that you want to modify.-->
+1. Fältet **[!UICONTROL CSS Element Selector]** hjälper dig att hitta och välja de HTML-element (eller noder i DOM-trädet) som du vill tillämpa ändringarna på. <!--specify the desired CSS element that you want to modify.-->
 
    ![](assets/web-designer-add-modification-css.png)
 
@@ -100,13 +100,13 @@ Följ stegen nedan om du vill lägga till en **CSS-väljartypändring**.
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_head"
 >title="Lägg till egen kod"
->abstract="Elementet HEAD är en behållare för metadata och placeras mellan taggen HTML och taggen BODY. Lägg bara till SCRIPT- och STYLE-element. Om du lägger till DIV-taggar och andra element kan det leda till att återstående HEAD-element visas i BODY."
+>abstract="HEAD-elementet är en behållare för metadata och placeras mellan HTML-taggen och BODY-taggen. Lägg bara till SCRIPT- och STYLE-element. Om du lägger till DIV-taggar och andra element kan återstående HEAD-element dyka upp i BODY."
 
 Du kan lägga till anpassad kod med ändringstypen **[!UICONTROL Page `<head>`]**.
 
 Elementet `<head>` är en behållare för metadata (data om data) och placeras mellan taggen `<html>` och taggen `<body>`. I det här fallet väntar koden inte på body- eller page-load-händelser - den körs i början av sidinläsningen.
 
-Elementet `<head>` används ofta för att lägga till JavaScript- eller CSS-kod högst upp på sidan. Väljare för efterföljande visuella åtgärder beror på vilka HTML-element som läggs till på den här fliken.
+Elementet `<head>` används ofta för att lägga till JavaScript- eller CSS-kod högst upp på sidan. Väljare för efterföljande visuella åtgärder beror på vilka HTML-element som har lagts till på den här fliken.
 
 Följ stegen nedan om du vill lägga till en **sidtypsändring`<head>`**.
 

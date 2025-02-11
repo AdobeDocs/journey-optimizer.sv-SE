@@ -8,7 +8,8 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
-source-git-commit: 77e2892dc188ebdd79031792434b4f55913ee811
+exl-id: 5a20911d-cc87-4fdc-9b4b-936c19258876
+source-git-commit: 24a178839e29dccffde683a958ccc74da4180a73
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -30,7 +31,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_xcode"
 >title="Starta programmet från Xcode"
->abstract="Starta programmet med Xcode om du vill hämta din push-token. När programmet har startats startar du om det för att kontrollera att valideringsprocessen har slutförts. Adobe kommer sedan att tillhandahålla din push-token som en del av valideringsresultaten. Denna token är väsentlig för att aktivera push-meddelanden och kommer att visas när konfigurationen har validerats."
+>abstract="Starta programmet med Xcode om du vill hämta din push-token. När programmet har startats startar du om det för att kontrollera att valideringsprocessen har slutförts. Adobe kommer sedan att tillhandahålla din push-token som en del av valideringsresultatet. Denna token är väsentlig för att aktivera push-meddelanden och kommer att visas när konfigurationen har validerats."
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_push_certificate_fcm"
@@ -53,7 +54,7 @@ ht-degree: 0%
 >abstract="Team-ID:t, som är ett strängvärde som används för att identifiera ditt team, finns på fliken **Medlemskap** i ditt utvecklarkonto."
 
 
-Den här konfigurationen förenklar den snabba konfigurationen av marknadsföringskanaler och gör alla nödvändiga resurser tillgängliga i apparna Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet snabbt börja skapa kampanjer och resor.
+Den här konfigurationen förenklar den snabba konfigurationen av marknadsföringskanaler och gör alla viktiga resurser tillgängliga i Experience Platform-, Journey Optimizer- och Data Collection-apparna. På så sätt kan marknadsföringsteamet snabbt börja skapa kampanjer och resor.
 
 1. På Journey Optimizer hemsida klickar du på **[!UICONTROL Begin]** från **[!UICONTROL Set up mobile and web channels]**-kortet.
 
@@ -95,7 +96,7 @@ När du har skapat konfigurationen kan du enkelt gå tillbaka till den när som 
 
    ![](assets/guided-setup-config-ios-9.png)
 
-1. När du använder din befintliga konfiguration måste du återansluta till Adobe Assurance. Klicka på **[!UICONTROL Reconnect]** på menyn SDK-inställningar.
+1. När du använder din befintliga konfiguration måste du återansluta till Adobe Assurance. Klicka på **[!UICONTROL Reconnect]** på SDK Setup-menyn.
 
    ![](assets/guided-setup-config-ios-10.png)
 
@@ -104,4 +105,3 @@ När du har skapat konfigurationen kan du enkelt gå tillbaka till den när som 
    ![](assets/guided-setup-config-ios-11.png){zoomable="yes"}
 
 1. Du kan nu uppdatera konfigurationen efter behov.
-

@@ -30,7 +30,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_web_default"
 >title="Ange en webbunderdomän"
->abstract="Markera en underdomän i listan över underdomäner som har delegerats till Adobe. Du kan ange den här webbunderdomänen som standardunderdomän, men bara en standardunderdomän i taget kan användas."
+>abstract="Välj en underdomän i listan över underdomäner som har delegerats till Adobe. Du kan ange den här webbunderdomänen som standardunderdomän, men bara en standardunderdomän i taget kan användas."
 
 Om du lägger till innehåll från biblioteket [Adobe Experience Manager Assets](../content-management/assets.md) när du skapar webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet.
 

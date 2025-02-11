@@ -73,7 +73,7 @@ Du kan inte fortsätta med att skapa konfigurationen medan den valda IP-poolen �
 
 >[!NOTE]
 >
->I icke-produktionsmiljöer skapar inte Adobe körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använda IP-adresserna från poolen som tilldelats din organisation.
+>I icke-produktionsmiljöer skapar Adobe inte körklara testunderdomäner och ger inte heller åtkomst till en delad sändande IP-pool. Du måste [delegera dina egna underdomäner](../configuration/delegate-subdomain.md) och använda IP-adresserna från poolen som tilldelats din organisation.
 
 När en IP-pool har valts visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool. [Läs mer om PTR-poster](../configuration/ptr-records.md)
 
@@ -86,7 +86,7 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_unsubscribe_custom"
 >title="Definiera hur data för att avbryta prenumerationen hanteras"
->abstract="**Adobe hanterad**: Medgivandedata hanteras av dig i Adobe-systemet.<br>**Kundhanterad**: Medgivandedata hanteras av dig i ett externt system och ingen synkronisering av medgivandedata uppdateras i Adobe-systemet såvida det inte initieras av dig."
+>abstract="**Adobe hanterat**: Medgivandedata hanteras av dig i Adobe-systemet.<br>**Kundhanterad**: Medgivandedata hanteras av dig i ett externt system och ingen synkronisering av medgivandedata uppdateras i Adobe-systemet såvida det inte initieras av dig."
 
 <!--Do not modify - Legal Review Done -->
 
@@ -149,7 +149,7 @@ I avsnittet **[!UICONTROL Header parameters]** anger du avsändarnamn och e-post
 * **[!UICONTROL Reply to email]**: Den e-postadress som ska användas när mottagaren klickar på knappen **Svara** i sin e-postklientprogramvara. [Läs mer](#reply-to-email)
 * **[!UICONTROL Error email prefix]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen. Meddelanden och svar på frågor tas också emot på den här adressen.
 
-  Om du vill få meddelanden och svar på frågor om att tjänsten inte är på kontoret på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtriktad process](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.
+  Om du vill få meddelanden och svar på frågor om frånvaro på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtriktad process](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ Om du får ett felmeddelande när du skickar e-postkonfigurationen betyder det a
 
 >[!NOTE]
 >
->Om underdomänen för den adress du angav är en domän som [delegerats](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe, kontaktar du din kontoansvarige på Adobe.
+>Om underdomänen för den adress du angav är en domän som har [delegerats](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe kontaktar du din kontoansvarige på Adobe.
 
 ### Vidarebefordra e-post {#forward-email}
 
@@ -205,7 +205,7 @@ Du måste ange:
 >
 >Det får bara finnas en e-postadress per underdomän. Om flera konfigurationer använder samma underdomän, måste därför samma e-postadress för vidarebefordran användas för alla.
 
-E-postadressen för vidarebefordran konfigureras av Adobe. Detta kan ta 3 till 4 dagar.
+Vidarebefordra e-postadressen har konfigurerats av Adobe. Detta kan ta 3 till 4 dagar.
 
 När du är klar vidarebefordras alla meddelanden som tas emot på **[!UICONTROL Reply to email]**- och **fele-postadresserna** samt alla e-postmeddelanden som skickas till **Från-e-postadressen** till den angivna e-postadressen.
 
