@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 3860916a899b3f1bc0f7563f776cdf8356aee0a9
+source-git-commit: 2bc4dba1353b1d19b1bae0b7718fbbc9e9f37147
 workflow-type: tm+mt
 source-wordcount: '2489'
 ht-degree: 0%
@@ -80,8 +80,6 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 ### Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
 
 * Antalet aktiviteter under en resa är begränsat till 50. Antalet aktiviteter visas i den övre vänstra delen av arbetsytan. Detta underlättar läsbarhet, kvalitetskontroll och felsökning.
-* Journey Optimizer har stöd för en toppvolym på 5 000 inkommande resehändelser per sekund.
-* Händelseutlösta resor kan ta upp till fem minuter för att behandla den första åtgärden i resan.
 * När du publicerar resor skalas och justeras vi automatiskt för att säkerställa maximal genomströmning och stabilitet. I närheten av milstolpen för 100 direktresor på en gång visas ett meddelande i användargränssnittet om detta. Om du ser det här meddelandet och behöver förlänga dina resor mer än 100 resor i taget kan du skapa en biljett för kundvård så hjälper vi dig att nå dina mål.
   <!-- DOCAC-10977 * As you publish journeys, we automatically scale and adjust to ensure maximum throughput and stability. As you near the milestone of 500 live journeys at one time, you will see a notification appear in the UI on this achievement. If you see this notification and have a need to extend your journeys beyond 500 live journeys at a time, please create a ticket for customer care and we will help you reach your goals.-->
 * När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
@@ -122,6 +120,8 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 
 ### Händelser {#events-g}
 
+* Journey Optimizer har stöd för en toppvolym på 5 000 inkommande resehändelser per sekund.
+* Händelseutlösta resor kan ta upp till fem minuter för att behandla den första åtgärden i resan.
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
 * Affärsevenemang kan inte användas tillsammans med enhetsevenemang eller målgruppsaktiviteter.
 * Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
