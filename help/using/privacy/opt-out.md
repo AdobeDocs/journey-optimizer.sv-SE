@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: 4de37520b3ea7842d7f385f38c07cdf4984a5939
+source-git-commit: 435898d7e806e93ee0154c3da22f6a011fc78175
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Lär dig hur du hanterar avanmälan i Journey Optimizer e-post och SMS-meddeland
 
 >[!NOTE]
 >
->I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Medgivandeschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
+>I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
 
 ## Genomför personalisering {#opt-out-personalization}
 
@@ -69,7 +69,7 @@ När du utnyttjar erbjudanden implementeras inte personaliseringsinställningar 
 >
 >Beslutsomfattningar som används i [!DNL Journey Optimizer] skapade kanaler uppfyller detta krav från den resa eller kampanj de tillhör.
 
-1. Skapa en [Adobe Experience Platform-målgrupp](../audience/access-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"} och använd ett profilattribut som **[!UICONTROL Personalize Content = Yes (opt-in)]** för målanvändare som har samtyckt till personalisering.
+1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"} och använd ett profilattribut som **[!UICONTROL Personalize Content = Yes (opt-in)]** för målanvändare som har samtyckt till personalisering.
 
    ![](assets/perso-consent-od-audience.png)
 
@@ -121,7 +121,7 @@ Följ ett av alternativen nedan om du manuellt vill framtvinga godkännande av p
 
 Du kan använda segmentregelbyggaren för att skapa en målgrupp som innehåller avanmälningsprofiler.
 
-1. Skapa en [Adobe Experience Platform-målgrupp](../audience/access-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"}.
+1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"}.
 
    ![](assets/perso-consent-audience-build-rule.png)
 
@@ -137,13 +137,13 @@ Nu kan ni använda den här målgruppen för att filtrera bort profiler som inte
 
 Du kan också lägga till en kontroll för godkännande av personalisering till en målgrupp genom att lägga till en delad aktivitet i ett dispositionsarbetsflöde.
 
-1. Skapa en målgrupp med alternativet **[!UICONTROL Compose Audience]**. [Läs mer om hur du skapar ett dispositionsarbetsflöde](../audience/create-compositions.md)
+1. Skapa en målgrupp med alternativet **[!UICONTROL Compose Audience]**. [Läs mer om hur du skapar ett dispositionsarbetsflöde](../audience/get-started-audience-orchestration.md)
 
    ![](assets/perso-consent-audience-compose.png)
 
 1. Lägg till din första målgrupp med den dedikerade knappen till höger.
 
-1. Klicka på ikonen **+** och välj en **[!UICONTROL Split]**-aktivitet för att skapa en delad målgrupp. [Läs mer om den delade aktiviteten](../audience/composition-canvas.md#split)
+1. Klicka på ikonen **+** och välj en **[!UICONTROL Split]**-aktivitet för att skapa en delad målgrupp.
 
    ![](assets/perso-consent-audience-split.png)
 

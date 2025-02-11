@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: a54f298b5d2a053c8e50874477a72ff656a37abc
+source-git-commit: 435898d7e806e93ee0154c3da22f6a011fc78175
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2143'
 ht-degree: 24%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 24%
       + [Designa din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Simulera din resa](using/building-journeys/journey-simulation.md)
-      + [Publish din resa](using/building-journeys/publishing-the-journey.md)
+      + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
       + [Live-rapport under din resa](using/building-journeys/report-journey.md)
    + Hantera dina resor{#manage-journey}
       + [Profilingångshantering](using/building-journeys/entry-management.md)
@@ -168,7 +168,7 @@ ht-degree: 24%
          + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
          + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
          + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
-         + [Använd anpassade åtgärder för att skriva resehändelser i Experience Platform](using/building-journeys/custom-action-aep.md)
+         + [Använd anpassade åtgärder för att skriva resthändelser i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Kampanjer{#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
@@ -218,7 +218,7 @@ ht-degree: 24%
             + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
             + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
             + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
-      + [Använd Experience Manager-mallar](using/email/aem-templates.md)
+      + [Använda Experience Manager-mallar](using/email/aem-templates.md)
       + [Hantera e-postavanmälan](using/email/email-opt-out.md)
       + Konfigurera e-postkanal {#configure-email}
          + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
@@ -374,14 +374,13 @@ ht-degree: 24%
 + Målgrupper, profiler och identitet{#audiences-profiles-identities}
    + Målgrupper {#audiences}
       + [Kom igång med målgrupper](using/audience/about-audiences.md)
-      + [Anpassad uppladdning (CSV) och sammanställning av externa målgrupper](using/audience/custom-upload-fac.md)
-      + [Skapa segmentdefinitioner](using/audience/creating-a-segment-definition.md)
-      + Disponera målgrupper {#audience-orchestration}
-         + [Kom igång med målgruppsmaterial](using/audience/get-started-audience-orchestration.md)
-         + [Skapa kompositionsarbetsflöden](using/audience/create-compositions.md)
-         + [Arbeta med arbetsytan](using/audience/composition-canvas.md)
-         + [Få åtkomst till och hantera målgrupper](using/audience/access-audiences.md)
-      + [Federerad målgruppssammansättning](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home)
+      + Skapa målgrupper {#create}
+         + [Segmentdefinitioner](using/audience/creating-a-segment-definition.md)
+         + [Målgruppssammansättning](using/audience/get-started-audience-orchestration.md)
+         + [Anpassad överföring](using/audience/custom-upload.md)
+         + [Federated Audience Composition (begränsad tillgänglighet)](using/audience/federated-audience-composition.md)
+      + [Målgruppsaktivering i kampanjer och resor](using/audience/target-audiences.md)
+      + [Utnyttja anrikningsattribut](using/audience/enrichment-attributes.md)
    + Profiler{#profiles}
       + [Kom igång med profiler](using/audience/get-started-profiles.md)
       + [Skapa testprofiler](using/audience/creating-test-profiles.md)

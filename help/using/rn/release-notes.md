@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 0d2c6cca9fa71f6920a934176abf7bfd12142a9d
+source-git-commit: 1c17f1ef543948f74e95efab66dfeabf97af4519
 workflow-type: tm+mt
 source-wordcount: '2278'
 ht-degree: 6%
@@ -51,6 +51,7 @@ ht-degree: 6%
 <tr>
 <td>
 <p>Med flexibel målgruppsutvärdering kan ni köra ett segmenteringsjobb på begäran för utvalda målgrupper, vilket säkerställer att ni alltid har de senaste målgruppsdata innan ni inriktar dem på Journey Optimizer resor och kampanjer.</p>
+<img src="assets/do-not-localize/flexible-audience.gif">
 <p>Mer information finns i den <a href="../audience/about-audiences.md#flexible">detaljerade dokumentationen</a>.</p>
 <p> Flexibel målgruppsutvärdering är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
 </tr>
@@ -167,7 +168,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan:
 <p>Nu kan du integrera Movable Ink Da Vinci och Adobe Journey Optimizer. Med den nya integreringen kan du </p>
 <p><ul><li>Utnyttja de kraftfulla funktionerna i Movable Inks Da Vinci-produkt för att sammanställa och personalisera e-postvarianter för gruppkampanjer</li>
 <li>Snabba upp arbetsflödena för användare av Journey Optimizer med Da Vinci för framställning och Adobe Journey Optimizer för optimering och leverans</li>
-<li>Optimera Da Vinci-modeller med data från Adobe.</li></ul></p>
+<li>Optimera Da Vinci-modeller med Adobe-data.</li></ul></p>
 <p>Mer information finns i <a href="https://movableink.com/adobe-and-movable-ink">Dokumentationen för Da Vinci med flyttbara bläck</a>.</p>
 </tr>
 </tbody>
@@ -239,7 +240,7 @@ Tidigare tillgängligt för en uppsättning organisationer (LA), men nu är föl
 <tbody>
 <tr>
 <td>
-<p>Beslutsfattandet, som tidigare fanns för en uppsättning organisationer (LA) och som kallas Experience Decision, är nu tillgängligt för alla användare (GA), inklusive organisationer som har köpt tillägget Adobe Healthcare Shield eller Privacy and Security Shield.</p><p>Beslutsfattandet förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person. Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den kodbaserade upplevelsekanalen.</p>
+<p>Beslutsfattandet, som tidigare fanns tillgängligt för en uppsättning organisationer (LA) och som kallas Experience Decision, är nu tillgängligt för alla användare (GA), inklusive organisationer som har köpt Adobe Healthcare Shield eller tillägg till Privacy and Security Shield.</p><p>Beslutsfattandet förenklar personaliseringen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person. Dessa beslutsobjekt integreras smidigt i ett stort antal inkommande ytor via den kodbaserade upplevelsekanalen.</p>
 <p>Mer information finns i den <a href="../experience-decisioning/gs-experience-decisioning.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -273,7 +274,7 @@ Tidigare tillgängligt för en uppsättning organisationer (LA), men nu är föl
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer rapportering är nu allmänt tillgänglig (GA) och har förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering för båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.</p>
+<p>Journey Optimizer rapportering är nu allmänt tillgänglig (GA) och har förbättrad interoperabilitet med Customer Journey Analytics-funktioner, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.</p>
 <p>Med General Availability introduceras fyra nya funktioner: möjlighet att skapa enkla mätvärden, skapa och publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter som automatiskt ska skickas till viktiga mottagare.</p>
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ajo-cja.gif">
@@ -374,7 +375,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
   >[!NOTE]
   >
-  >Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt tillägget **Adobe Healthcare Shield** eller **Privacy and Security Shield**.
+  >Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt Adobe **Healthcare Shield** eller **Privacy and Security Shield** som tillägg.
 
 **Publiker** - Tillgänglighetsdatum: 8 okt 2024
 
@@ -388,7 +389,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Kodbaserad kanal**
 
-* Innehållsmallar är nu tillgängliga. Ni kan snabba upp utvecklingen av era kodbaserade upplevelser med utgångspunkt i en innehållsmall som byggts av era utvecklare. Om du använder en innehållsmall kan marknadsföraren bara ändra vissa värden eller fält, i stället för att disponera hela HTML eller JSON-innehållets nyttolast. [Läs mer](../content-management/content-templates.md)
+* Innehållsmallar är nu tillgängliga. Ni kan snabba upp utvecklingen av era kodbaserade upplevelser med utgångspunkt i en innehållsmall som byggts av era utvecklare. Om du använder en innehållsmall kan marknadsföraren bara ändra vissa värden eller fält i stället för att disponera hela HTML- eller JSON-innehållets nyttolast. [Läs mer](../content-management/content-templates.md)
 
 **Beslut**
 

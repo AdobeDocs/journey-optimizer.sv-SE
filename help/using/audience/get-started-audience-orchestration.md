@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
-source-git-commit: e96aefefd8391d1a59a5a4f9d50c6ac819bf60f8
+source-git-commit: 435898d7e806e93ee0154c3da22f6a011fc78175
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,7 @@ Dokumentationen innehåller detaljerad information om hur du arbetar med målgru
 
 Med målgruppskomposition kan du skapa **kompositionsarbetsflöden**, där du kan kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper.
 
-När det är klart sparas de **resulterande målgrupperna** i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas i Journey Optimizer kampanjer och resor till målkunder. [Lär dig målinrikta målgrupper i Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
-
+När det är klart sparas de **resulterande målgrupperna** i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas i Journey Optimizer kampanjer och resor till målkunder. Lär dig målinrikta målgrupper i Journey Optimizer
 ![](assets/audiences-process.png)
 
 >[!IMPORTANT]
@@ -50,13 +49,64 @@ Målgruppskomposition finns på Adobe Journey Optimizer **[!UICONTROL Audiences]
 
 * På fliken **[!UICONTROL Compositions]** kan du skapa kompositionsarbetsflöden där du kan kombinera och ordna målgrupper för att skapa nya.
 
-Klicka på varje kort för att lära dig hur du arbetar med målgruppssammansättning:
+## Skapa ett dispositionsarbetsflöde {#create}
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="create-compositions.md"><img alt="Skapa kompositionsarbetsflöden" src="../assets/do-not-localize/ao-workflows.jpg"></a>
-<div><a href="create-compositions.md"><strong>Skapa ditt första dispositionsarbetsflöde</strong></a></div></td>
-<td><a href="composition-canvas.md"><img alt="Arbeta med arbetsytan" src="../assets/do-not-localize/ao-canvas.jpg"></a>
-<div><a href="composition-canvas.md"><strong>Arbeta med kompositionsytan</strong></a></div></td>
-<td><a href="access-audiences.md"><img alt="Få åtkomst till och hantera målgrupper" src="../assets/do-not-localize/ao-audiences.jpeg"></a>
-<div><a href="access-audiences.md"><strong>Få åtkomst till och hantera målgrupper</strong></a></div></td>
-</tr></table>
+Så här skapar du ett dispositionsarbetsflöde:
+
+1. Gå till menyn **[!UICONTROL Audiences]** och välj **[!UICONTROL Create Audience]**.
+
+1. Välj **[!UICONTROL Compose Audience]**.
+
+   ![](assets/audiences-create.png)
+
+1. Arbetsytan i kompositionen visas med två standardaktiviteter:
+
+   * **[!UICONTROL Audience]**: startpunkten för kompositionen. Med den här aktiviteten kan du välja en eller flera målgrupper som grund för ditt arbetsflöde,
+
+   * **[!UICONTROL Save]**: det sista steget i kompositionen. Med den här aktiviteten kan du spara resultatet av arbetsflödet till en ny målgrupp.
+
+1. Öppna dispositionsegenskaperna för att ange en titel och en beskrivning.
+
+   Om ingen titel har definierats i egenskaperna ställs kompositionens etikett in på &quot;Disposition&quot; följt av datum och tid då den skapades.
+
+   ![](assets/audiences-properties.png)
+
+1. Konfigurera kompositionen genom att lägga till så många aktiviteter som behövs mellan **[!UICONTROL Audience]** och **[!UICONTROL Save]** aktiviteter. Mer information om hur du skapar en komposition finns i [dokumentationen om målgruppskomposition](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition).
+
+   ![](assets/audiences-publish.png)
+
+1. När kompositionen är klar klickar du på knappen **[!UICONTROL Publish]** för att publicera kompositionen och spara målgrupperna i Adobe Experience Platform.
+
+   >[!IMPORTANT]
+   >
+   >Du kan publicera upp till 10 kompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
+
+   Om något fel inträffar under publiceringen visas varningar med information om hur du löser problemet.
+
+   ![](assets/audiences-alerts.png)
+
+1. Dispositionen publiceras. Målgrupperna sparas i Adobe Experience Platform och kan nu användas i Journey Optimizer. [Lär dig målinrikta målgrupper i Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
+
+>[!NOTE]
+>
+>Målgrupper från **målgruppskomposition** körs dagligen, så du kan behöva vänta upp till 24 timmar på att använda dem i Journey Optimizer. Förbättrade attribut i målgrupper för målgruppssammansättning är lika fräscha som den senaste kompositionen, som kan vara upp till 24 timmar tidigare.
+
+## Åtkomst till kompositioner {#access}
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_publish"
+>title="Publicera er målgrupp"
+>abstract="Publicera materialet för att spara målgrupper i Adobe Experience Platform."
+
+Alla skapade kompositioner kan nås från fliken **[!UICONTROL Compositions]**. Du kan när som helst duplicera eller ta bort en befintlig komposition med hjälp av ellipsknappen i listan.
+
+Kompositioner kan ha flera statusvärden:
+
+* **[!UICONTROL Draft]**: kompositionen pågår och har inte publicerats.
+* **[!UICONTROL Published]**: kompositionen har publicerats, resulterande målgrupper har sparats och är tillgängliga för användning.
+
+![](assets/audiences-compositions.png)
+
+>[!NOTE]
+>
+>Målgruppskomposition är för närvarande inte integrerat med funktionen för återställning av sandlådor. Innan du initierar en sandlådeåterställning måste du ta bort dina kompositioner manuellt för att se till att de associerade målgruppsdata rensas ordentligt. Detaljerad information finns i Adobe Experience Platform [sandlådedokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html#delete-audience-compositions)
