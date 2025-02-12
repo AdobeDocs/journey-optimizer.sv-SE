@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: 307655ebfb161ab5023430be801c46b378326ccd
+source-git-commit: abb837b6af232e23bbbc6a1f1b2607dbc2ee2679
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1438'
 ht-degree: 1%
 
 ---
@@ -182,16 +182,6 @@ Du måste ange ett heltalsvärde (i timmar eller minuter) inom följande interva
 Läs mer om återförsök i [det här avsnittet](../configuration/retries.md).
 
 ## URL-uppföljning {#url-tracking}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_utm"
->title="Definiera parametrar för URL-spårning"
->abstract="Använd det här avsnittet om du automatiskt vill lägga till spårningsparametrar till de URL:er som finns i ditt e-postinnehåll. Den här funktionen är valfri."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_url_preview"
->title="Förhandsgranska URL-spårningsparametrar"
->abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
 
 Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effekten av dina marknadsföringssatsningar i alla kanaler. [Läs mer](url-tracking.md)
 
