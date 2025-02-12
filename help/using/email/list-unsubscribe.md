@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
-source-git-commit: d782c668b412cebeacd1289c79bbf86ec710786b
+source-git-commit: 8e299b90f601cd931940a64e691e186894d4012e
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Om du hanterar samtycke utanför Adobe väljer du alternativet **[!UICONTROL Cus
 >
 >Om du använder alternativet **[!UICONTROL Customer managed]** kommer Adobe inte att lagra några data om att prenumerera eller godkänna. Med alternativet **[!UICONTROL Customer managed]** väljer organisationer att använda ett externt system och ansvarar för att hantera sina medgivandedata i ett sådant externt system. Det finns ingen automatisk synkronisering av medgivandedata mellan det externa systemet och [!DNL Journey Optimizer]. Synkronisering av medgivandedata, som kommer från det externa systemet för att uppdatera användarens medgivandedata i [!DNL Journey Optimizer], måste initieras av organisationen som en dataöverföring för att överföra medgivandedata tillbaka till [!DNL Journey Optimizer].
 
-## Konfigurera dekrypterings-API {#configure-decrypt-api}
+### Konfigurera dekrypterings-API {#configure-decrypt-api}
 
 Om du har markerat alternativet **[!UICONTROL Customer managed]** och anger anpassade slutpunkter och använder dem i en kampanj eller resa, lägger [!DNL Journey Optimizer] till vissa standardprofilspecifika parametrar i medgivandeuppdateringshändelsen <!--sent to the custom endpoint --> när dina mottagare klickar på länken Avbeställ.
 
