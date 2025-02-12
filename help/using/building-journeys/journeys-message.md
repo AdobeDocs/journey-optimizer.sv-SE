@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 76b97c513a78def54a520279c178fb24002040b7
+source-git-commit: 40c067d85b278380abd874fc6edc69f32c0c56ef
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Om du vill lägga till en inbyggd kanalåtgärd till din resa drar och släpper 
 
 >[!NOTE]
 >
->Du kan också ställa in anpassade åtgärder för att skicka meddelanden till dig. [Läs mer](#recommendation)
+>Du kan också konfigurera anpassade åtgärder för att skicka meddelanden i [!DNL Journey Optimizer]. [Läs mer](#recommendation)
 
 ## Lägg till ett meddelande i en resa  {#add-msg-in-journey}
 
