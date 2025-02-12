@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 4c1908ad8022ff811537aa25be95db66a55882b4
+source-git-commit: 76b97c513a78def54a520279c178fb24002040b7
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Om du vill lägga till en inbyggd kanalåtgärd till din resa drar och släpper 
 
 ## Lägg till ett meddelande i en resa  {#add-msg-in-journey}
 
-Med inbyggda kanalåtgärder kan du konfigurera utgående eller inkommande meddelanden. Inkommande kanaler som stöds är e-post, textmeddelanden (SMS/MMS) och push-meddelanden. De utgående kanaler som stöds är In-app, webb, kodbaserad upplevelse och innehållskort.
+Med inbyggda kanalåtgärder kan du konfigurera utgående eller inkommande meddelanden. Inkommande kanaler som stöds är e-post, textmeddelanden (SMS/MMS) och push-meddelanden. De utgående kanaler som stöds är appar, webben, kodbaserad upplevelse och innehållskort.
 
 Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
@@ -79,10 +79,6 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
       </tr>
       </table>
 
-     >[!NOTE]
-     >
-     >För e-postmeddelanden och push-meddelanden kan du aktivera optimering av sändningstid. [Läs mer](send-time-optimization.md)
-
    * Lär dig de detaljerade stegen för att skapa en inkommande åtgärd på följande sätt:
 
      <table style="table-layout:fixed">
@@ -123,9 +119,12 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
       </tr>
       </table>
 
-     >[!NOTE]
-     >
-     >Varje inkommande meddelandeaktivitet levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](wait-activity.md#auto-wait-node)
+>[!NOTE]
+>
+>* Varje inkommande meddelandeaktivitet levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](wait-activity.md#auto-wait-node)
+>
+>* För e-postmeddelanden och push-meddelanden kan du aktivera optimering av sändningstid. [Läs mer](send-time-optimization.md)
+
 
 
 ## Uppdatera ett direktinnehåll {#update-live-content}
