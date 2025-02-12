@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
+source-git-commit: 56a1ef1ba256d1aac3593d8a61e67bdc42c17d32
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
@@ -72,6 +72,10 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
       </tr>
       </table>
 
+     >[!NOTE]
+     >
+     >För e-postmeddelanden och push-meddelanden kan du aktivera optimering av sändningstid. [Läs mer](send-time-optimization.md)
+
    * Lär dig de detaljerade stegen för att skapa en inkommande åtgärd på följande sätt:
 
      <table style="table-layout:fixed">
@@ -114,20 +118,10 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
      >[!NOTE]
      >
-     >Varje inkommande meddelandeaktivitet levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
+     >Varje inkommande meddelandeaktivitet levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](wait-activity.md#auto-wait-node)
 
-## Rekommendation {#recommendation}
 
-[!DNL Journey Optimizer] har inbyggd meddelandefunktion. Med anpassade åtgärder kan du emellertid konfigurera anslutningen för ett tredjepartssystem för att skicka meddelanden eller API-anrop.
-
-* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. [Läs mer](../action/action.md)
-
-* Om du arbetar med Campaign och Journey Optimizer, se följande avsnitt:
-
-   * [[!DNL Journey Optimizer] och Campaign v7/v8](../action/acc-action.md)
-   * [[!DNL Journey Optimizer] och Campaign Standard](../action/acs-action.md)
-
-## Uppdatera liveinnehåll{#update-live-content}
+## Uppdatera liveinnehåll {#update-live-content}
 
 Ni kan uppdatera innehållet i en inbyggd kanalåtgärd i en direktresa.
 
@@ -137,8 +131,19 @@ Det gör du genom att öppna din direktresa, välja kanalaktiviteten och klicka 
 
 Du kan dock inte ändra de attribut som används i personaliseringen, vare sig det är profilattribut eller kontextuella data (från händelse- eller reseegenskaper).
 
-Om du ändrade sammanhangsberoende data visas följande felmeddelande: ERR_AUTHORING_JOURNEYVERSION_201
+Om du ändrade sammanhangsbaserade data visas följande felmeddelande: `ERR_AUTHORING_JOURNEYVERSION_201`
 
-Om du har ändrat profilattribut visas följande felmeddelande: ERR_AUTHORING_JOURNEYVERSION_202
+Om du ändrade profilattribut visas följande felmeddelande: `ERR_AUTHORING_JOURNEYVERSION_202`
 
 Observera att för aktiviteten i appen kan ändringar göras i innehållet medan resan pågår, men utlösare i appen kan inte ändras.
+
+## Skicka med anpassade åtgärder {#recommendation}
+
+I stället för att använda de inbyggda meddelandefunktionerna kan du använda anpassade åtgärder för att konfigurera anslutningen för ett tredjepartssystem för att skicka meddelanden eller API-anrop.
+
+* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. [Läs mer](../action/action.md)
+
+* Om du arbetar med Adobe Campaign, se följande avsnitt:
+
+   * [[!DNL Journey Optimizer] och Campaign v7/v8](../action/acc-action.md)
+   * [[!DNL Journey Optimizer] och Campaign Standard](../action/acs-action.md)
