@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 56a1ef1ba256d1aac3593d8a61e67bdc42c17d32
+source-git-commit: 4c1908ad8022ff811537aa25be95db66a55882b4
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
@@ -23,23 +23,30 @@ ht-degree: 1%
 >title="Inbyggd kanalåtgärd"
 >abstract="Journey Optimizer har inbyggda funktioner för kanalåtgärder. Du kan enkelt lägga till en utgående (e-post, SMS/MMS), push) eller inkommande (In-app, webb, kodbaserad upplevelse, innehållskort) aktivitet under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
-[!DNL Journey Optimizer] har inbyggda funktioner för kanalåtgärder. Du kan enkelt lägga till en utgående (e-post, SMS/MMS), push) eller inkommande (In-app, webb, kodbaserad upplevelse, innehållskort) aktivitet under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
+[!DNL Journey Optimizer] innehåller inbyggda funktioner för kanalåtgärder som används för att skicka meddelanden: när en profil anger den här aktiviteten skickas ett meddelande till dem.
+
+Om du vill lägga till en inbyggd kanalåtgärd till din resa drar och släpper du en kanalaktivitet och definierar dess inställningar och innehåll. Sedan utförs den och skickas i samband med resan.
 
 >[!NOTE]
 >
->Du kan också ange specifika åtgärder för att skicka meddelanden till dig. [Läs mer](#recommendation)
+>Du kan också ställa in anpassade åtgärder för att skicka meddelanden till dig. [Läs mer](#recommendation)
+
+## Lägg till ett meddelande i en resa  {#add-msg-in-journey}
+
+Med inbyggda kanalåtgärder kan du konfigurera utgående eller inkommande meddelanden. Inkommande kanaler som stöds är e-post, textmeddelanden (SMS/MMS) och push-meddelanden. De utgående kanaler som stöds är In-app, webb, kodbaserad upplevelse och innehållskort.
 
 Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
 1. Starta din resa med en [Event](general-events.md)- eller [Read Audience](read-audience.md)-aktivitet.
 
-1. Dra och släpp en utgående (**e-post**, **push**, **SMS**) eller en inkommande (**In-app**, **web**, **kodbaserad upplevelse**, **innehållskort**) från avsnittet **Åtgärder** till arbetsytan.
+1. Dra och släpp en kanalaktivitet på arbetsytan från avsnittet **Åtgärder** på paletten.
 
    ![](assets/journey-web-activity.png)
 
-1. Konfigurera aktiviteten.
 
-   * Lär dig de detaljerade stegen för att skapa meddelandeinnehåll enligt följande:
+1. Konfigurera aktiviteten. Detaljerade konfigurationsriktlinjer finns på länkarna nedan.
+
+   * Lär dig de detaljerade stegen för att skapa en utgående åtgärd på följande sätt:
 
      <table style="table-layout:fixed">
       <tr style="border: 0;">
@@ -121,7 +128,7 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
      >Varje inkommande meddelandeaktivitet levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](wait-activity.md#auto-wait-node)
 
 
-## Uppdatera liveinnehåll {#update-live-content}
+## Uppdatera ett direktinnehåll {#update-live-content}
 
 Ni kan uppdatera innehållet i en inbyggd kanalåtgärd i en direktresa.
 
