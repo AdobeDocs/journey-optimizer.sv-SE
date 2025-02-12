@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Skapa en kanalkonfiguration
 description: Lär dig hur du skapar en kanalkonfiguration
-feature: Surface, Channel Configuration
+feature: Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 5a20911d-cc87-4fdc-9b4b-936c19258876
-source-git-commit: 24a178839e29dccffde683a958ccc74da4180a73
+source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%

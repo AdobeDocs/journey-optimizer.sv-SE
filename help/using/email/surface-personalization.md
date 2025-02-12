@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Anpassa inställningar för e-postkonfiguration
 description: Lär dig hur du definierar anpassade värden för dina inställningar på e-postkanalens konfigurationsnivå
-feature: Surface, Subdomains
+feature: Subdomains, Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: 8a9f0b42acb19f0b28340f11dada19f5b6524c66
+source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%

@@ -7,7 +7,7 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
-source-git-commit: bcccc7b385f031fba2c2b57ec62cae127eda8466
+source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Innan du skickar SMS eller MMS måste du konfigurera Adobe Journey Optimizer-mil
    * [Med sinch](sms-configuration-sinch.md)
    * [Med Infobip](sms-configuration-infobip.md)
    * [Med en anpassad provider](sms-configuration-custom.md)
-1. [Skapa en SMS-yta](sms-configuration-surface.md)
+1. [Skapa en SMS-konfiguration](sms-configuration-surface.md)
 
 Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](../start/path/administrator.md).
 
@@ -53,7 +53,7 @@ Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverant�
 
 Innan du konfigurerar SMS-kanalen måste du skapa ett konto hos någon av dessa leverantörer för att få din **API-token** och **tjänst-ID**, som du måste konfigurera anslutningen mellan Adobe Journey Optimizer och den tillämpliga providern.
 
-Din användning av textmeddelanden och MMS-tjänster regleras av ytterligare villkor från tillämplig leverantör. Som tredjepartslösningar är Sinch, Twilio och Infobip tillgängliga för Adobe Journey Optimizer-användare via integrering. Adobe kontrollerar inte, och ansvarar inte för, tredjepartsprodukter. Kontakta din leverantör om du har problem eller vill ha hjälp med SMS/MMS.
+Din användning av textmeddelanden och MMS-tjänster regleras av ytterligare villkor från tillämplig leverantör. Som tredjepartslösningar är Sinch, Twilio och Infobip tillgängliga för Adobe Journey Optimizer-användare via integrering. Adobe kontrollerar inte och ansvarar inte för tredjepartsprodukter. Kontakta din leverantör om du har problem eller vill ha hjälp med SMS/MMS.
 
 >[!CAUTION]
 >

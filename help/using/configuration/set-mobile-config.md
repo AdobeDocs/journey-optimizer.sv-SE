@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera mobil och webb
 description: Lär dig hur du konfigurerar och övervakar mobil- och webbkanaler
-feature: Surface, Channel Configuration
+feature: Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 846e0d11-798b-4f3b-80db-848a17d32830
-source-git-commit: 7a5bed3f4ee16c1a42289779fc53148bf6ab39e8
+source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 3%
@@ -123,7 +123,7 @@ Observera att för varje plattform som du vill konfigurera måste du skapa en se
 
 ## Automatiskt skapade resurser {#auto-create-resources}
 
-Guided Channel Setup förenklar den snabba konfigurationen av marknadsföringskanaler och gör alla nödvändiga resurser tillgängliga i Experience Platform, Journey Optimizer och datainsamlingsapparna. På så sätt kan marknadsföringsteamet snabbt börja skapa kampanjer och resor. Nedan visas en lista över resurser som genereras automatiskt och konfigureras som en del av inställningen för guidad kanal.
+Guided Channel Setup förenklar den snabba konfigurationen av marknadsföringskanaler och gör alla nödvändiga resurser tillgängliga i Experience Platform-, Journey Optimizer- och Data Collection-apparna. På så sätt kan marknadsföringsteamet snabbt börja skapa kampanjer och resor. Nedan visas en lista över resurser som genereras automatiskt och konfigureras som en del av inställningen för guidad kanal.
 
 Bläddra bland flikarna nedan för att få tillgång till en omfattande lista över alla resurser som genereras automatiskt:
 

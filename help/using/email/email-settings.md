@@ -3,16 +3,16 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera e-postinställningar
 description: Lär dig konfigurera e-postinställningar på kanalkonfigurationsnivå
-feature: Email, Surface
+feature: Email, Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: d782c668b412cebeacd1289c79bbf86ec710786b
+source-git-commit: 307655ebfb161ab5023430be801c46b378326ccd
 workflow-type: tm+mt
-source-wordcount: '2406'
-ht-degree: 0%
+source-wordcount: '1481'
+ht-degree: 1%
 
 ---
 
@@ -89,81 +89,7 @@ Det gör att du kan inkludera en avbruten URL-adress med ett klick i e-postmedde
 
 ## Huvudparametrar {#email-header}
 
-I avsnittet **[!UICONTROL Header parameters]** anger du avsändarnamn och e-postadresser som är associerade med den typ av e-post som skickas med den konfigurationen.
-
->[!NOTE]
->
->Om du vill ha större kontroll över e-postinställningarna kan du anpassa rubrikparametrarna. [Läs mer](../email/surface-personalization.md#personalize-header)
-
-* **[!UICONTROL From name]**: Avsändarens namn, till exempel ditt varumärkes namn.
-* **[!UICONTROL From email prefix]**: Den e-postadress som du vill använda för din kommunikation.
-* **[!UICONTROL Reply to name]**: Namnet som ska användas när mottagaren klickar på knappen **Svara** i sin e-postklientprogramvara.
-* **[!UICONTROL Reply to email]**: Den e-postadress som ska användas när mottagaren klickar på knappen **Svara** i sin e-postklientprogramvara. [Läs mer](#reply-to-email)
-* **[!UICONTROL Error email prefix]**: Alla fel som genereras av Internet-leverantörer efter några dagar efter att e-post har levererats (asynkrona studsar) tas emot på den här adressen. Meddelanden och svar på frågor tas också emot på den här adressen.
-
-  Om du vill få meddelanden och svar på frågor om frånvaro på en viss e-postadress som inte har delegerats till Adobe måste du konfigurera en [framåtriktad process](#forward-email). I så fall ska du se till att du har en manuell eller automatiserad lösning för att bearbeta e-postmeddelanden som landar i den här inkorgen.
-
->[!NOTE]
->
->**[!UICONTROL From email prefix]**- och **[!UICONTROL Error email prefix]**-adresserna använder den valda [delegerade underdomänen](../configuration/about-subdomain-delegation.md) för att skicka e-postmeddelandet. Om den delegerade underdomänen till exempel är *marketing.luma.com*:
->* Ange *contact* som **[!UICONTROL From email prefix]**. Avsändarens e-postadress är *contact@marketing.luma.com*.
->* Ange *error* som **[!UICONTROL Error email prefix]**. Feladressen är *error@marketing.luma.com*.
-
-
-![](assets/preset-header.png){width="80%"}
-
->[!NOTE]
->
->Adresser måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
-
-### Svara på e-post {#reply-to-email}
-
-När du definierar **[!UICONTROL Reply to email]**-adressen kan du ange vilken e-postadress som helst, förutsatt att det är en giltig adress, i korrekt format och utan att behöva skriva något.
-
-Inkorgen som används för svar kommer att ta emot alla svar, förutom meddelanden som inte är på kontoret och svar på frågor, som tas emot på **Error email** -adressen.
-
-Följ rekommendationerna nedan för att säkerställa korrekt svarshantering:
-
-* Kontrollera att den dedikerade inkorgen har tillräcklig mottagningskapacitet för att kunna ta emot alla svar som skickas med e-postkonfigurationen. Om inkorgen returnerar studsar kanske vissa svar från dina kunder inte tas emot.
-
-* Svar måste behandlas med hänsyn till sekretess och efterlevnadsskyldigheter eftersom de kan innehålla personligt identifierbar information.
-
-* Markera inte meddelanden som skräppost i svarsinkorgen eftersom det påverkar alla andra svar som skickas till den här adressen.
-
-När du definierar adressen **[!UICONTROL Reply to email]** måste du dessutom se till att använda en underdomän som har en giltig MX-postkonfiguration, annars misslyckas e-postkonfigurationsbearbetningen.
-
-Om du får ett felmeddelande när du skickar e-postkonfigurationen betyder det att MX-posten inte är konfigurerad för underdomänen till den angivna adressen. Kontakta administratören för att konfigurera motsvarande MX-post eller använd en annan adress med en giltig MX-postkonfiguration.
-
->[!NOTE]
->
->Om underdomänen för den adress du angav är en domän som har [delegerats](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe kontaktar du din kontoansvarige på Adobe.
-
-### Vidarebefordra e-post {#forward-email}
-
-Om du vill vidarebefordra alla e-postmeddelanden till en viss e-postadress som tagits emot av [!DNL Journey Optimizer] för den delegerade underdomänen kontaktar du Adobe kundtjänst.
-
->[!NOTE]
->
->Om den underdomän som används för adressen **[!UICONTROL Reply to email]** inte har delegerats till Adobe kan vidarebefordran inte fungera för den här adressen.
-
-Du måste ange:
-
-* Den e-postadress som du väljer. Observera att domänen för e-postadressen för vidarebefordran inte kan matcha någon underdomän som har delegerats till Adobe.
-* Namn på din sandlåda.
-* Konfigurationsnamnet eller underdomänen som e-postadressen för vidarebefordran ska användas för.
-  <!--* The current **[!UICONTROL Reply to (email)]** address or **[!UICONTROL Error email]** address set at the channel configuration level.-->
-
->[!NOTE]
->
->Det får bara finnas en e-postadress per underdomän. Om flera konfigurationer använder samma underdomän, måste därför samma e-postadress för vidarebefordran användas för alla.
-
-Vidarebefordra e-postadressen har konfigurerats av Adobe. Detta kan ta 3 till 4 dagar.
-
-När du är klar vidarebefordras alla meddelanden som tas emot på **[!UICONTROL Reply to email]**- och **fele-postadresserna** samt alla e-postmeddelanden som skickas till **Från-e-postadressen** till den angivna e-postadressen.
-
->[!NOTE]
->
->Om vidarebefordran inte är aktiverat ignoreras e-postmeddelanden som skickas direkt till **Från-e-postadressen**.
+I avsnittet **[!UICONTROL Header parameters]** anger du avsändarnamn och e-postadresser som är associerade med den typ av e-post som skickas med den konfigurationen. [Läs mer](header-parameters.md)
 
 ## BCC-e-post {#bcc-email}
 
@@ -267,53 +193,7 @@ Läs mer om återförsök i [det här avsnittet](../configuration/retries.md).
 >title="Förhandsgranska URL-spårningsparametrar"
 >abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
 
-Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effekten av dina marknadsföringssatsningar i alla kanaler. Den här funktionen är valfri.
-
-Parametrarna som definieras i det här avsnittet läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika prestandarapporter.
-
-Du kan lägga till upp till 10 spårningsparametrar med knappen **[!UICONTROL Add new parameter]**.
-
-![](assets/preset-url-tracking.png){width="80%"}
-
-Om du vill konfigurera en URL-spårningsparameter kan du ange önskade värden direkt i fälten **[!UICONTROL Name]** och **[!UICONTROL Value]**.
-
-Du kan också redigera varje **[!UICONTROL Value]**-fält med [anpassningsredigeraren](../personalization/personalization-build-expressions.md). Klicka på utgåveikonen för att öppna redigeraren. Därifrån kan du välja tillgängliga sammanhangsberoende attribut och/eller redigera texten direkt.
-
-![](assets/preset-url-tracking-editor.png)
-
-Följande fördefinierade värden är tillgängliga via personaliseringsredigeraren:
-
-* **Source åtgärds-ID**: ID för e-poståtgärden som har lagts till i resan eller kampanjen.
-
-* **Source-åtgärdsnamn**: namnet på e-poståtgärden som har lagts till i resan eller kampanjen.
-
-* **Source-id**: ID för resan eller kampanjen som e-postmeddelandet skickades med.
-
-* **Source-namn**: namn på den resa eller kampanj som e-postmeddelandet skickades med.
-
-* **Source version-ID**: ID för resan eller kampanjversionen som e-postmeddelandet skickades med.
-
-* **Erbjudande-ID**: ID för erbjudandet som används i e-postmeddelandet.
-
->[!NOTE]
->
->Du kan kombinera textvärden och använda sammanhangsberoende attribut från personaliseringsredigeraren. Varje **[!UICONTROL Value]**-fält kan innehålla ett antal tecken upp till gränsen på 5 kB.
-
-<!--You can drag and drop the parameters to reorder them.-->
-
-Nedan finns exempel på Adobe Analytics- och Google Analytics-kompatibla URL:er.
-
-* Adobe Analytics-kompatibel URL: `www.YourLandingURL.com?cid=email_AJO_{{context.system.source.id}}_image_{{context.system.source.name}}`
-
-* Google Analytics-kompatibel URL: `www.YourLandingURL.com?utm_medium=email&utm_source=AJO&utm_campaign={{context.system.source.id}}&utm_content=image`
-
-Du kan dynamiskt förhandsgranska den resulterande spårnings-URL:en. Varje gång du lägger till, redigerar eller tar bort en parameter uppdateras förhandsvisningen automatiskt.
-
-![](assets/preset-url-tracking-preview.png)
-
->[!NOTE]
->
->Du kan också lägga till dynamiska, anpassade spårningsparametrar till länkarna i ditt e-postinnehåll, men detta är inte möjligt på konfigurationsnivå. Du måste göra detta när du redigerar meddelandet med e-postdesignern. [Läs mer](message-tracking.md#url-tracking)
+Du kan använda **[!UICONTROL URL tracking parameters]** för att mäta effekten av dina marknadsföringssatsningar i alla kanaler. [Läs mer](url-tracking.md)
 
 ## Körningsadress {#execution-address}
 

@@ -8,9 +8,9 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: bcccc7b385f031fba2c2b57ec62cae127eda8466
+source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 >id="ajo_admin_subdomain_sms"
 >title="Delegera en SMS/MMS-underdomän"
 >abstract="Du måste konfigurera en underdomän att använda för dina textmeddelanden, eftersom du behöver den här underdomänen för att skapa en SMS-konfiguration. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa SMS-ytor"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_sms_subdomain"
 >title="Välj en SMS/MMS-underdomän"
 >abstract="Om du vill kunna skapa en SMS-konfiguration måste du kontrollera att du tidigare har konfigurerat minst en SMS-underdomän att välja från listan över underdomännamn."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa SMS-ytor"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
 
 Om du vill kunna förkorta URL:er som läggs till i dina SMS/MMS-meddelanden måste du konfigurera den underdomän du väljer när du [skapar en SMS-konfiguration](sms-configuration.md#message-preset-sms).
 
@@ -79,7 +79,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    >[!CAUTION]
    >
-   >Om du väljer en domän som delegerats till Adobe med [CNAME-metoden](../configuration/delegate-subdomain.md#cname-subdomain-delegation) måste du skapa DNS-posten på din värdplattform. För att skapa DNS-posten är processen densamma som när du konfigurerar en ny SMS-underdomän. Lär dig hur i [det här avsnittet](#sms-configure-new-subdomain).
+   >Om du väljer en domän som delegerats till Adobe med metoden [CNAME](../configuration/delegate-subdomain.md#cname-subdomain-delegation) måste du skapa DNS-posten på din värdplattform. För att skapa DNS-posten är processen densamma som när du konfigurerar en ny SMS-underdomän. Lär dig hur i [det här avsnittet](#sms-configure-new-subdomain).
 
 1. Klicka på **[!UICONTROL Submit]**.
 
@@ -136,6 +136,6 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
 1. När underdomänsdelegeringen har skickats visas underdomänen med statusen **[!UICONTROL Processing]** i listan. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
-Innan du använder en underdomän för att skicka SMS-meddelanden måste du vänta tills Adobe utför de nödvändiga kontrollerna, som kan ta upp till 4 timmar.<!--Learn more in [this section](#subdomain-validation).--> När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Det är klart att användas för att skapa SMS-kanalkonfigurationer.
+Innan du använder en underdomän för att skicka SMS-meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.<!--Learn more in [this section](#subdomain-validation).--> När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Det är klart att användas för att skapa SMS-kanalkonfigurationer.
 
 Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte kan skapa valideringsposten i din värdlösning.
