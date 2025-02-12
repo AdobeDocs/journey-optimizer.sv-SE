@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 88f8a5e3e7314992cdb5835b9676b78127f20960
+source-git-commit: 6bcfbc835a61aa326d4ee548722a6ad6e2942ea2
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '710'
 ht-degree: 3%
 
 ---
@@ -85,7 +85,7 @@ Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post til
 
       >[!NOTE]
       >
-      >Som standard skrivs filen till rotkatalogen. Fältet **[!UICONTROL Filename]** accepterar formatet /your/path/here/Filename.csv, där den angivna sökvägen är målkatalogen på den valda servern. <!--TBC if for SFTP and Azure only, or for all servers including S3-->
+      >Som standard skrivs filen till rotkatalogen på servern. Fältet **[!UICONTROL Filename]** accepterar även formatet /your/path/here/Filename.csv, där den angivna sökvägen är målkatalog på den valda servern. <!--TBC if for SFTP and Azure only, or for all servers including S3-->
 
    1. Du kan också aktivera alternativet **[!UICONTROL Append timestamp to export filename]** om du vill lägga till en automatisk tidsstämpel till det angivna filnamnet.
 
