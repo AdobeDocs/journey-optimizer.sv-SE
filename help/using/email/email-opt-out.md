@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: 8559fce278974dcf18ba038996fd65b9f72400f4
+source-git-commit: d782c668b412cebeacd1289c79bbf86ec710786b
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Beroende på e-postklienten och [inställningarna för att avbryta prenumeration
 
 ![](../email/assets/surface-list-unsubscribe-mailto.png){width="80%"}
 
-I båda fallen är motsvarande profil för mottagaren omedelbart avanmäld och valet uppdateras i Experience Platform. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+I båda fallen väljs motsvarande profil för mottagaren omedelbart och valet uppdateras i Experience Platform. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
 Om du har aktiverat alternativet **[!UICONTROL Enable List-Unsubscribe]** i konfigurationsinställningarna för [e-post](email-settings.md#list-unsubscribe) rekommenderar vi att du aktiverar båda metoderna - **Mailto (unsubscribe)** och **One-Click Unsubscribe URL**. Alla e-postklienter har inte stöd för HTTP-metoden. Med funktionen för att avbryta prenumeration på e-postlista kan du välja ett alternativ, ditt avsändarrykte kan skyddas bättre och alla mottagare kan använda funktionen för att avbryta prenumerationen. [Läs mer](email-settings.md#list-unsubscribe)
 
@@ -136,7 +136,7 @@ Du kan också använda en extern landningssida. I så fall konfigurerar du API:t
 
 Om du vill att mottagarna ska avanmäla sig när de skickar in sitt val från landningssidan måste du implementera ett **API-anrop för prenumeration** till [Adobe Developer](https://developer.adobe.com){target="_blank"} för att uppdatera inställningarna för motsvarande profiler.
 
-Det här anropet till POSTEN är följande:
+Detta POST-anrop är följande:
 
 Slutpunkt: https://platform.adobe.io/journey/imp/consent/preferences
 
@@ -145,7 +145,7 @@ Frågeparametrar:
 * **parametrar**: innehåller den krypterade nyttolasten
 * **pid**: krypterat profil-ID
 
-Dessa tre parametrar kommer att ingå i den URL till landningssidan som skickas till mottagaren:
+Dessa två parametrar kommer att ingå i den URL till landningssidan som skickas till mottagaren:
 
 ![](assets/opt-out-parameters.png)
 
@@ -215,7 +215,7 @@ När du har konfigurerat länken för att avbryta prenumerationen på din landni
 
    Därför får den här användaren inte information från ert varumärke om han eller hon inte prenumererar igen.
 
-1. Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+1. Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
    ![](assets/opt-out-profile-choice.png)
 

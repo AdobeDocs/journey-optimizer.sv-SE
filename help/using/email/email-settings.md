@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: a1bdbc741a96325d71562b8f5ce5279096689cf0
+source-git-commit: d782c668b412cebeacd1289c79bbf86ec710786b
 workflow-type: tm+mt
-source-wordcount: '2741'
+source-wordcount: '2406'
 ht-degree: 0%
 
 ---
@@ -81,59 +81,11 @@ När en IP-pool har valts visas PTR-information när du hovrar över IP-adresser
 >
 >Om en PTR-post inte är konfigurerad kan du kontakta Adobe.
 
-## Avsluta prenumeration{#list-unsubscribe}
+## Avbeställ lista {#list-unsubscribe}
 
->[!CONTEXTUALHELP]
->id="ajo_email_config_unsubscribe_custom"
->title="Definiera hur data för att avbryta prenumerationen hanteras"
->abstract="**Adobe hanterat**: Medgivandedata hanteras av dig i Adobe-systemet.<br>**Kundhanterad**: Medgivandedata hanteras av dig i ett externt system och ingen synkronisering av medgivandedata uppdateras i Adobe-systemet såvida det inte initieras av dig."
+När du väljer en underdomän från listan visas alternativet **[!UICONTROL Enable List-Unsubscribe]**. Den är aktiverad som standard.
 
-<!--Do not modify - Legal Review Done -->
-
-När [du väljer en underdomän ](#subdomains-and-ip-pools) i listan visas alternativet **[!UICONTROL Enable List-Unsubscribe]**.
-
-Det här alternativet är aktiverat som standard för att inkludera en avbruten URL-adress med ett klick i e-posthuvudet, till exempel:
-
-![](assets/preset-list-unsubscribe-header.png)
-
->[!NOTE]
->
->Om du inaktiverar det här alternativet visas ingen avbruten URL i e-posthuvudet med ett enda klick.
-
-Du kan välja medgivandenivå i listrutan **[!UICONTROL Consent level]**. Den kan vara specifik för kanalen eller för profilens identitet. Baserat på den här inställningen uppdateras medgivandet i Adobe Journey Optimizer antingen på kanalnivå eller på ID-nivå när en användare avbeställer prenumerationen med hjälp av den listadress för avbeställning som finns i huvudet i ett e-postmeddelande.
-
-Rubriken för att avbryta prenumerationen i List har två funktioner som är aktiverade som standard om du inte avmarkerar en eller båda funktionerna:
-
-![](assets/surface-list-unsubscribe-mailto.png){width="80%"}
-
-<!--![](assets/surface-list-unsubscribe.png){width="80%"}-->
-
-* En **e-postadress (avbeställ)**, som är den måladress dit avbeställningar skickas för automatisk bearbetning.
-
-  I Journey Optimizer är e-postadressen för avanmälan den **e-postadress (unsubscribe)** som är standard och som visas i kanalkonfigurationen, baserat på din [valda underdomän](#subdomains-and-ip-pools).
-
-* URL:en **Ett klick för att avbryta prenumerationen**, vilket som standard är den URL som genereras för att avbryta prenumerationen som genereras av en klickning, baserat på den underdomän som du har angett och konfigurerat i kanalkonfigurationsinställningarna.
-
-<!--
-    >[!AVAILABILITY]
-    >
-    >One-click Unsubscribe URL Header will be available in Adobe Journey Optimizer starting June 3, 2024.
-    >
--->
-
-Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL One-click unsubscribe URL]** är valfria.
-
-Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. Om du lägger till en [-klicksavanmälningslänk ](../email/email-opt-out.md#one-click-opt-out) i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat och funktionen **[!UICONTROL One-click Unsubscribe URL]** inte är markerad.
-
-![](assets/preset-list-unsubscribe-opt-out-url.png)
-
->[!NOTE]
->
->Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet och standardinställningen **[!UICONTROL One-click unsubscribe URL]** inte är markerad i kanalkonfigurationsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumeration av lista.
-
-Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
-
-<!--![](assets/surface-list-unsubscribe-custom.png){width="80%"}-->
+Det gör att du kan inkludera en avbruten URL-adress med ett klick i e-postmeddelandehuvudet. [Läs mer](list-unsubscribe.md)
 
 ## Huvudparametrar {#email-header}
 

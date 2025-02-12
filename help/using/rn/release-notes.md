@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: fc6a552700a52c5f513299ab861750263aeda98a
+source-git-commit: d782c668b412cebeacd1289c79bbf86ec710786b
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2346'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,25 @@ ht-degree: 6%
 
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## Uppdateringar från 25 januari {#25-01-rn}
+## Senaste 25 uppdateringarna {#25-01-rn}
+
+### Förbättring i februari {#25-02-improvements}
+
+Förbättringen nedan inkluderar uppdateringen från februari.
+
+**E-postkonfiguration** - Tillgänglighetsdatum: 10 feb 2025
+
+* Om du hanterar samtycke utanför Adobe kan du nu ange en anpassad e-postadress för att avbryta prenumerationen och en anpassad URL för att avsluta prenumerationen som en del av inställningarna för e-postkanalen. [Läs mer](../email/list-unsubscribe.md#custom-managed)
+
+  ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
+
+  >[!AVAILABILITY]
+  >
+  >Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
+
+### Nya funktioner {#25-01-features}
+
+De nya funktionerna som lanserades i januari beskrivs nedan.
 
 <table>
 <thead>
@@ -59,9 +77,9 @@ ht-degree: 6%
 </tbody>
 </table>
 
-### Förbättringar {#25-01-improvements}
+### Förbättringar i januari {#25-01-improvements}
 
-Den här versionen innehåller de förbättringar som anges nedan.
+De förbättringar som släpptes i januari listas nedan.
 
 **Beslut**
 
