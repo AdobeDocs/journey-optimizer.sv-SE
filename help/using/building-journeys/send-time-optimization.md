@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: sändningstid, skicka, meddelande, optimering, resa, AI, intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
-source-git-commit: a0ace8232d6851b7cd41ba4d8a06a2a42bb799e6
+source-git-commit: 78b8b4d6e8cf49ab39150b7bc412bef009bbad2b
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---
@@ -33,30 +33,24 @@ ht-degree: 0%
 >title="Aktivera optimering av sändningstid"
 >abstract="Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte kan användas för push-meddelanden. Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för Skicka i nästa alternativ."
 
-
 Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster för resan, väljer den optimala sändningstiden för e-post och push-meddelanden för att maximera kundengagemanget, baserat på kundernas tidigare öppnings- och klickbeteende.
 
 Sändningsoptimering är endast tillgängligt för Journey Optimizer inbyggda åtgärdstyper för e-post och push och är för närvarande inte tillgängligt för meddelanden som skickas via anpassade åtgärder eller för andra åtgärdstyper. Tidsoptimering för sändning är endast tillgängligt för e-post- och push-åtgärder inom resor och är för närvarande inte tillgängligt för meddelanden som skickas via kampanjer.
 
 >[!AVAILABILITY]
 >
->* Minst 1 000 profiler med aktuella meddelandedata rekommenderas för den inledande utbildningen och poängsättningen för Skicka-Time Optimization.
+>* Funktionen för optimering av sändningstid är aktiverad för Adobe Journey Optimizer-kunder på begäran. Kontakta Adobe kundtjänst eller en Adobe-representant för att aktivera funktionen för din organisation.
 >
 >* Tidsoptimering för sändning gäller endast för kanalerna **E-post** och **Push-meddelanden**.
-
-## Aktivera optimering av sändningstid{#enable-send-time-optimization}
-
-Funktionen för optimering av sändningstid är aktiverad för Adobe Journey Optimizer-kunder på begäran. Kontakta Adobe kundtjänst eller en Adobe-representant för att aktivera funktionen för din organisation.
+>
 
 ## Använd optimering vid sändning{#use-send-time-optimization}
 
 Använd optimering av sändningstid för ett e-postmeddelande eller push-åtgärd genom att aktivera alternativet för optimering av sändningstid från åtgärdsparametrarna.
 
-![](assets/sto-use.png)
+![](assets/jo-message5.png)
 
->[!TIP]
->
->Optimering av sändningstid ska inte användas för brådskande, tidskänsliga operativa meddelanden, till exempel en orderbekräftelse, ett meddelande om lösenordsåterställning eller ett meddelande om ändring av flygport. Optimering för sändningstid är bäst när det gäller mindre brådskande marknadsföringsmeddelanden, t.ex. en veckoannons, kampanjinformation för en ny produkt eller information om en månadsförsäljning.
+Optimering av sändningstid ska inte användas för brådskande, tidskänsliga operativa meddelanden, till exempel en orderbekräftelse, ett meddelande om lösenordsåterställning eller ett meddelande om ändring av flygport. Optimering för sändningstid är bäst när det gäller mindre brådskande marknadsföringsmeddelanden, t.ex. en veckoannons, kampanjinformation för en ny produkt eller information om en månadsförsäljning.
 
 För e-postmeddelanden väljer du om du vill optimera e-postöppningar eller e-postklick genom att välja lämplig alternativknapp. Push-meddelanden är alltid optimerade för öppning.
 
