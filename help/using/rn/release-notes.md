@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: d782c668b412cebeacd1289c79bbf86ec710786b
+source-git-commit: 9538c8c19b242036ce58799b51ef25b8204bf6ec
 workflow-type: tm+mt
 source-wordcount: '2346'
 ht-degree: 6%
@@ -28,7 +28,7 @@ ht-degree: 6%
 
 Förbättringen nedan inkluderar uppdateringen från februari.
 
-**E-postkonfiguration** - Tillgänglighetsdatum: 10 feb 2025
+**E-postkonfiguration** - Tillgänglighetsdatum: 12 feb 2025
 
 * Om du hanterar samtycke utanför Adobe kan du nu ange en anpassad e-postadress för att avbryta prenumerationen och en anpassad URL för att avsluta prenumerationen som en del av inställningarna för e-postkanalen. [Läs mer](../email/list-unsubscribe.md#custom-managed)
 
