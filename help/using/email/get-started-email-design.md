@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: 57a309956ebe2997dce3fe0eb1b6bb70b911da5e
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -22,9 +22,9 @@ Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyt
 
 * Använd [!DNL Journey Optimizer] **e-postdesignfunktioner** för att utforma eller importera responsiva e-postmeddelanden. [Läs mer](content-from-scratch.md)
 
-* Utnyttja **Adobe Experience Manager Assets Essentials** för att utöka dina e-postmeddelanden, bygga och hantera din egen databas för resurser. [Läs mer](../content-management/assets.md)
+* Utnyttja **Adobe Experience Manager Assets Essentials** för att förbättra dina e-postmeddelanden, bygga upp och hantera din egen databas för resurser. [Läs mer](../integrations/assets.md)
 
-* Hitta **Adobe Stock-foton** för att skapa ditt innehåll och förbättra din e-postdesign. [Läs mer](../content-management/stock.md)
+* Hitta **Adobe Stock-foton** för att skapa ditt innehåll och förbättra din e-postdesign. [Läs mer](../integrations/stock.md)
 
 * Förbättra kundernas upplevelse genom att skapa personaliserade och dynamiska meddelanden utifrån deras profilattribut. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md).
 
@@ -52,9 +52,9 @@ När du har [lagt till ett e-postmeddelande](create-email.md) till en resa eller
 
 1. På Designer hemsida för e-post väljer du hur du vill utforma e-postmeddelandet bland följande alternativ:
 
-   * **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../content-management/assets.md). Lär dig hur du utformar ditt e-postinnehåll i [det här avsnittet](content-from-scratch.md).
+   * **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../integrations/assets.md). Lär dig hur du utformar ditt e-postinnehåll i [det här avsnittet](content-from-scratch.md).
 
-   * **Kod eller klistra in Raw-HTML** direkt i e-postdesignern. Lär dig hur du kodar ditt eget innehåll i [det här avsnittet](code-content.md).
+   * **Kodning eller inklistring av Raw-HTML** direkt i e-postdesignern. Lär dig hur du kodar ditt eget innehåll i [det här avsnittet](code-content.md).
 
      >[!NOTE]
      >
@@ -66,7 +66,7 @@ När du har [lagt till ett e-postmeddelande](create-email.md) till en resa eller
 
    ![](assets/email_designer_create_options.png)
 
-1. När e-postinnehållet har definierats och anpassats kan du exportera innehållet för validering eller för senare bruk. Klicka på **[!UICONTROL Export HTML]** om du vill spara en ZIP-fil på datorn som innehåller HTML och resurser.
+1. När e-postinnehållet har definierats och anpassats kan du exportera innehållet för validering eller för senare bruk. Klicka på **[!UICONTROL Export HTML]** om du vill spara en ZIP-fil på datorn som innehåller din HTML och dina resurser.
 
    ![](assets/email_designer_export.png)
 

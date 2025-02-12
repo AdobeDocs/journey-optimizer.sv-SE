@@ -8,7 +8,7 @@ feature: Web Channel, Subdomains
 level: Experienced
 keywords: webb, underdomäner, konfiguration
 exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 >title="Ange en webbunderdomän"
 >abstract="Välj en underdomän i listan över underdomäner som har delegerats till Adobe. Du kan ange den här webbunderdomänen som standardunderdomän, men bara en standardunderdomän i taget kan användas."
 
-Om du lägger till innehåll från biblioteket [Adobe Experience Manager Assets](../content-management/assets.md) när du skapar webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet.
+Om du lägger till innehåll från biblioteket [Adobe Experience Manager Assets](../integrations/assets.md) när du skapar webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet.
 
 Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe i [det här avsnittet](../configuration/delegate-subdomain.md).
 

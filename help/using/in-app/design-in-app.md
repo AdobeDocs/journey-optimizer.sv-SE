@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 7%
@@ -60,7 +60,7 @@ I avsnittet **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layo
 
 * **[!UICONTROL Custom]**: I det anpassade meddelandeläget kan du importera och redigera ett av dina förkonfigurerade HTML-meddelanden direkt.
 
-   * Välj **[!UICONTROL Compose]** om du vill ange eller klistra in Raw-HTML-koden.
+   * Välj **[!UICONTROL Compose]** om du vill ange eller klistra in HTML-råkod.
 
      Använd den vänstra rutan för att utnyttja Journey Optimizer personaliseringsfunktioner. Mer information om detta finns i [det här avsnittet](../personalization/personalize.md).
 
@@ -104,7 +104,7 @@ I fältet **[!UICONTROL Media]** kan du lägga till media i ditt meddelande i ap
 
 ![](assets/in_app_web_design_3.png)
 
-Ange din medie-URL eller klicka på ikonen **[!UICONTROL Select Assets]** för att lägga till resurser som lagras i ditt Assets-bibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../content-management/assets.md).
+Ange din medie-URL eller klicka på ikonen **[!UICONTROL Select Assets]** för att lägga till resurser som lagras i ditt Assets-bibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../integrations/assets.md).
 Du kan också lägga till en **[!UICONTROL Alternative text]** för skärmläsningsprogram.
 
 +++Fler alternativ med avancerad formatering

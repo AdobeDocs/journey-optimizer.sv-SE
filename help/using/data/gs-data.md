@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: data, hantering, plattform
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: 1ed007d5921573dce30df6faa625bb0bce5d6616
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Den flexibilitet du vill ha från dina data är dessutom:
     <div><img alt="mål" src="assets/do-not-localize/dest.png" /> 
     <br> Finns för andra ändamål - Även om [!DNL Adobe Journey Optimizer] kan göra data mer tilltalande och integrerade för en hyperpersonaliserad kundupplevelse, vill du ha dessa data i andra system i det övergripande tekniska landskapet, samtidigt som du letar efter andra sätt att utnyttja dessa data.
     <div>
-     <a href="../start/ajo-integrations.md">Läs mer</a></div>
+     <a href="../integrations/ajo-integrations.md">Läs mer</a></div>
     </div>
     <br>
   </td>
@@ -61,7 +61,7 @@ Den flexibilitet du vill ha från dina data är dessutom:
 
 [!DNL Adobe Experience Platform], som [!DNL Adobe Journey Optimizer] byggs på, ger dig störst kontroll över data - både under engagemanget och i slutet av engagemanget. Inom [!DNL Journey Optimizer] har du fullständig kontroll över data (som hämtas till eller skapas av [!DNL Journey Optimizer]), den styrning som överlagras för dessa data och de destinationer dit dessa data skickas.
 
-Alla data betraktas som kundens egendom och kan bara underhållas, krypteras, distribueras eller förstöras på din begäran. Adobe fungerar som förvaltare, utan några som helst rättigheter till era uppgifter.
+Alla data betraktas som kundens egendom och kan bara underhållas, krypteras, distribueras eller förstöras på din begäran. Adobe fungerar som förvaltare, utan några som helst rättigheter till era data.
 
 Du kan använda flexibiliteten för data i [!DNL Journey Optimizer] för att uppfylla dina specifika krav för datalagring, arkivering eller borttagning:
 
@@ -70,7 +70,7 @@ Du kan använda flexibiliteten för data i [!DNL Journey Optimizer] för att upp
   Observera att innehåll som används i resor eller kampanjer inte kan extraheras via API- eller målmetoder som nämns ovan.
 
 <!--
-* **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer’s default setting of retaining this data for up to 91 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization’s data retention policy.
+* **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer's default setting of retaining this data for up to 91 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization's data retention policy.
 
   Learn more about Experience Event expirations in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/event-expirations.html){target="_blank"}.
 -->
@@ -89,4 +89,4 @@ Du kan använda flexibiliteten för data i [!DNL Journey Optimizer] för att upp
 
 * **Dataextrahering vid avtalsslut/ avslut**: När kontraktet avslutas tas dina data bort helt från Adobe lagringsutrymme. Du kan även hämta fullständiga profilextraheringar innan du säger upp ett avtal. Det kostar inget mer. Detta kan göras när som helst och inte bara när det sägs upp.
 
-Ovannämnda metoder är avtalsenligt definierade och detaljerade i det databehandlingsavtal (DPA) som Adobe ömsesidigt instämmer med dig i början av ett ärende. Adobe-program, inklusive [!DNL Journey Optimizer], är uppbyggda kring principen att varje kunds data ska behandlas som den klientens egna datatillgångar.
+Ovannämnda metoder är avtalsenligt definierade och detaljerade i det databehandlingsavtal (DPA) som Adobe kommer överens med er i början av ett ärende. Adobe-program, inklusive [!DNL Journey Optimizer], är uppbyggda kring principen att varje kunds data behandlas som den klientens egna datatillgångar.

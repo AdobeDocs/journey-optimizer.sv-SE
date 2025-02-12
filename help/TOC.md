@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d782c668b412cebeacd1289c79bbf86ec710786b
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2156'
 ht-degree: 24%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 24%
    + [Tillgänglighet](using/start/accessibility.md)
    + [Use Case Playbooks](using/start/playbooks.md)
    + [Arbeta med AI-assistenten](using/start/ai-assistant.md)
-   + [Integreringar](using/start/ajo-integrations.md)
    + [Guardrails](using/start/guardrails.md)
    + [Bästa praxis](using/start/best-practices.md)
 + Resor {#orchestrate-journeys}
@@ -219,7 +218,6 @@ ht-degree: 24%
             + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
             + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
             + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
-      + [Använda Experience Manager-mallar](using/email/aem-templates.md)
       + [Hantera e-postavanmälan](using/email/email-opt-out.md)
       + Konfigurera e-postkanal {#configure-email}
          + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
@@ -326,9 +324,6 @@ ht-degree: 24%
       + Tekniska anmärkningar {#technotes}
          + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
-   + Assets/Bilder {#assets-images}
-      + [Arbeta med Experience Manager Assets](using/content-management/assets.md)
-      + [Arbeta med Adobe Stock](using/content-management/stock.md)
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Personalization-kontexter](using/personalization/personalization-contexts.md)
@@ -372,7 +367,6 @@ ht-degree: 24%
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
       + [Skapa dynamiskt innehåll](using/personalization/dynamic-content.md)
-   + [Adobe Experience Manager Content Fragments](using/content-management/aem-fragments.md)
 + Målgrupper, profiler och identitet{#audiences-profiles-identities}
    + Målgrupper {#audiences}
       + [Kom igång med målgrupper](using/audience/about-audiences.md)
@@ -389,6 +383,13 @@ ht-degree: 24%
       + [Arbeta med beräknade attribut](using/audience/computed-attributes.md)
    + [Identiteter](using/audience/get-started-identity.md)
    + [Licensanvändning](using/audience/license-usage.md)
++ Integrationer{#assets-images}
+   + [Integrering med andra lösningar](using/integrations/ajo-integrations.md)
+   + [Arbeta med Experience Manager Assets](using/integrations/assets.md)
+   + [Arbeta med Adobe Stock](using/integrations/stock.md)
+   + [Arbeta med Experience Manager-mallar](using/integrations/aem-templates.md)
+   + [Arbeta med Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+   + [Arbeta med Dynamic Media](using/integrations/aem-dynamic.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live-rapporten](using/reports/live-report.md)

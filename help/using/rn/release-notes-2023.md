@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 4acb6777994c9f4252d106fe8e9e5405e73c9349
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 8%
@@ -52,7 +52,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig för Sinch.</p>
+<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF-filer eller videor med dina kunder. Observera att den här funktionen för närvarande endast är tillgänglig för Sinch.</p>
 <img src="assets/do-not-localize/mms.gif"/>
 <p>Mer information finns i den <a href="../sms/create-sms.md#mms-content">detaljerade dokumentationen</a>.</p>
 </tr>
@@ -192,7 +192,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Webbkanal**
 
-* Enkelsidiga program (SPA) kan nu redigeras i den visuella webbredigeraren, där du kan välja vilka specifika vyer du vill använda webbsidesändringarna på. En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor. Det krävs en engångsinstallation av utvecklare för att definiera vyerna i Adobe Experience Platform Web SDK-implementeringen, vilket gör att marknadsförarna kan skapa och köra Adobe Journey Optimizer webbkampanjer SPA. [Läs mer](../web/web-spa.md)
+* Nu kan du skapa SPA-program (Single-page applications) i den visuella webbredigeraren, där du kan välja vilka specifika vyer du vill använda webbsidesändringarna på. En vy kan definieras som en hel webbplats eller som en grupp visuella element på en webbplats, till exempel hemsidan, hela produktwebbplatsen eller leveransinställningsramen på alla utcheckningssidor. Det krävs en engångsinstallation av utvecklare för att definiera vyerna i Adobe Experience Platform Web SDK-implementeringen, vilket gör det möjligt för marknadsförare att skapa och köra Adobe Journey Optimizer webbkampanjer på SPA-program. [Läs mer](../web/web-spa.md)
 
 * När du redigerar en sida med webbdesignern kan du nu lägga till nya ändringar i innehållet direkt från panelen Ändringar, utan att du behöver markera en komponent och redigera den i designergränssnittet. [Läs mer](../web/manage-web-modifications.md#add-modifications)
 
@@ -227,7 +227,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Assets**
 
-* Med ett nytt alternativ för Assets kan du välja databas för din Assets i Journey Optimizer. Du kan välja mellan en Assets Essentials-databas eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../content-management/assets.md)
+* Med ett nytt alternativ för Assets kan du välja databas för din Assets i Journey Optimizer. Du kan välja mellan en databas för Assets Essentials eller en Assets as a Cloud Service-databas, förutsatt att du äger den här lösningen. [Läs mer](../integrations/assets.md)
 
 <!--**Decision management**
 
@@ -370,7 +370,7 @@ A new option is available in the email surface settings to include email address
 <tbody>
 <tr>
 <td>
-<p>Nu kan du importera och konvertera valfritt HTML-innehåll i Journey Optimizer e-postredigerare. Innehållsblocken identifieras automatiskt och är tillgängliga i e-postdesignern: använd de kraftfulla designfunktionerna för att uppdatera och anpassa dem!</p>
+<p>Nu kan du importera och konvertera allt HTML-innehåll i Journey Optimizer e-postredigerare. Innehållsblocken identifieras automatiskt och är tillgängliga i e-postdesignern: använd de kraftfulla designfunktionerna för att uppdatera och anpassa dem!</p>
 <img src="assets/html-convert.png">
 <p>Mer information finns i den <a href="../email/existing-content.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -620,7 +620,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **Kanal i appen**
 
-* Nya regler för meddelandeutlösare för tjänsten Adobe Places har lagts till. [Läs mer](../in-app/inapp-configuration.md)
+* Nya regler för utlösare för meddelanden har lagts till för tjänsten Adobe Places. [Läs mer](../in-app/inapp-configuration.md)
 * Nya funktioner i Adobe Experience Platform Assurance för att fånga in enhetshändelser som ska läggas till som utlösarregler har lagts till.
 
 <!--
@@ -641,7 +641,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **Personalization**
 
-* Du kan nu välja och infoga resursreferenser direkt från Personalization Editor när du arbetar i HTML-innehåll.
+* Du kan nu välja och infoga resursreferenser direkt från Personalization Editor när du arbetar med HTML-innehåll.
 
 ### Korrigeringar{#may-2023-fixes}
 
@@ -811,7 +811,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 * Nu kan du återställa antalet erbjudanden per dag, vecka eller månad. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 
-* Du kan också välja vilken Adobe Experience Platform-händelse som ska användas för att söka efter offer decisioning capping. [Läs mer](../offers/offer-library/add-constraints.md#capping)
+* Du kan också välja vilken Adobe Experience Platform-händelse som ska granskas för att hitta en beslutsgräns. [Läs mer](../offers/offer-library/add-constraints.md#capping)
 
 * Ytterligare parametrar har lagts till på skärmen där placeringar skapas. De gör det möjligt för er att styra om ett erbjudande kan dupliceras över flera ersättningar och ange om erbjudandets innehåll och metadata ska inkluderas i API-svaret. [Läs mer](../offers/offer-library/creating-placements.md)
 
@@ -1003,7 +1003,7 @@ Note that each widget can be resized and deleted as needed.
 
 **Email Designer**
 
-* Du kan nu exportera e-postinnehållet från menyn **Exportera HTML**. Exporterade filer är tillgängliga i en arkivfil (.ZIP).
+* Du kan nu exportera e-postinnehållet från menyn **Exportera HTML** . Exporterade filer är tillgängliga i en arkivfil (.ZIP).
 
 **Administration**
 

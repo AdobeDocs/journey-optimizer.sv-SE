@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    ![](assets/email_designer_structure_component.png)
 
-1. Från **[!UICONTROL Asset picker]** kan du välja resurser som lagras direkt i **[!UICONTROL Assets library]**. [Läs mer om resurshantering](../content-management/assets.md)
+1. Från **[!UICONTROL Asset picker]** kan du välja resurser som lagras direkt i **[!UICONTROL Assets library]**. [Läs mer om resurshantering](../integrations/assets.md)
 
    Dubbelklicka på den mapp som innehåller dina resurser. Dra och släpp dem i en strukturkomponent.
 
@@ -110,7 +110,7 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    ![](assets/email_designer_links.png)
 
-1. Om det behövs kan du anpassa din e-post ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. På så sätt kan du redigera e-postkällkoden, till exempel för att lägga till spårningstaggar eller anpassade HTML-taggar. [Läs mer om kodredigeraren](code-content.md)
+1. Om det behövs kan du anpassa din e-post ytterligare genom att klicka på **[!UICONTROL Switch to code editor]** på den avancerade menyn. På så sätt kan du redigera e-postkällkoden, till exempel för att lägga till spårning eller anpassade HTML-taggar. [Läs mer om kodredigeraren](code-content.md)
 
    >[!CAUTION]
    >

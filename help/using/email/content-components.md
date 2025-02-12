@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: komponenter, e-postdesigner, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 0%
@@ -121,7 +121,7 @@ Använd komponenten **[!UICONTROL Text]** för att infoga text i e-postmeddeland
    * **Teckensnittsstorlek**: välj teckensnittsstorleken för texten i pixlar.
    * **[!UICONTROL Change font color]**: välj färg för teckensnittet.
    * **[!UICONTROL Insert link]**: lägg till alla typer av länkar i ditt innehåll.
-   * **[!UICONTROL Edit image]**: lägg till en bild eller en resurs i textkomponenten. [Läs mer om resurshantering](../content-management/assets.md)
+   * **[!UICONTROL Edit image]**: lägg till en bild eller en resurs i textkomponenten. [Läs mer om resurshantering](../integrations/assets.md)
    * **[!UICONTROL Change font color]**: välj färg för teckensnittet.
    * **[!UICONTROL Add personalization]**: lägg till anpassningsfält för att anpassa innehållet från dina profildata. [Läs mer om innehållspersonalisering](../personalization/personalize.md)
    * **[!UICONTROL Show the source code]**: visa källkoden för texten. Den kan inte ändras.
@@ -143,11 +143,11 @@ Du kan justera formatattribut som linjefärg, format och höjd på flikarna **[!
 
 ## HTML {#HTML}
 
-Använd komponenten **[!UICONTROL HTML]** för att kopiera och klistra in de olika delarna av din befintliga HTML. På så sätt kan du skapa kostnadsfria modulära HTML-komponenter för att återanvända en del externt innehåll.
+Använd komponenten **[!UICONTROL HTML]** för att kopiera och klistra in de olika delarna av din befintliga HTML. På så sätt kan du skapa kostnadsfria modulära HTML-komponenter för att återanvända externt innehåll.
 
 1. Dra och släpp **[!UICONTROL HTML]**-komponenten från **[!UICONTROL Content Components]** till en **[!UICONTROL Structure component]**.
 
-1. Klicka på den nya komponenten och välj sedan **[!UICONTROL Show the source code]** i det sammanhangsberoende verktygsfältet för att lägga till HTML.
+1. Klicka på den nya komponenten och välj sedan **[!UICONTROL Show the source code]** i det sammanhangsberoende verktygsfältet för att lägga till din HTML.
 
    ![](assets/email_designer_html_component.png)
 
@@ -157,7 +157,7 @@ Använd komponenten **[!UICONTROL HTML]** för att kopiera och klistra in de oli
 
 >[!NOTE]
 >
->Adobe rekommenderar att du skapar ett meddelande från grunden och kopierar innehållet från ditt befintliga e-postmeddelande till komponenter för att få ett externt innehåll som är kompatibelt med e-postmeddelandet från Designer.
+>Adobe rekommenderar att du skapar ett meddelande från grunden och kopierar innehållet från ditt befintliga e-postmeddelande till komponenter, så att du enkelt kan göra ett externt innehåll kompatibelt med e-postprogrammet Designer.
 
 ## Bild {#image}
 
@@ -173,18 +173,18 @@ Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från dato
 
    >[!NOTE]
    >
-   > För att länkarna ska förbli aktiva och för att undvika problem med förfallodatum bör du använda Adobe Assets i stället för att förlita dig på en käll-URL för dina bilder.
+   > För att länkarna ska förbli aktiva och för att undvika problem med förfallodatum rekommenderar vi att du använder Adobe Assets istället för att förlita dig på en käll-URL för dina bilder.
 
 1. Du kan även söka direkt i Adobe Stock med alternativet **[!UICONTROL Find Adobe Stock photos]**.
 
 1. Klicka på den nya komponenten och ange bildegenskaper:
 
    * Med **[!UICONTROL Image title]** kan du definiera en titel för bilden.
-   * Med **[!UICONTROL Alt text]** kan du definiera bildtexten som är länkad till bilden. Detta motsvarar alt HTML-attributet.
+   * Med **[!UICONTROL Alt text]** kan du definiera bildtexten som är länkad till bilden. Detta motsvarar alt-HTML-attributet.
 
    ![](assets/email_designer_10.png)
 
-1. Du kan också välja att **[!UICONTROL Find similar Stock photos]**. [Läs mer](../content-management/stock.md)
+1. Du kan också välja att **[!UICONTROL Find similar Stock photos]**. [Läs mer](../integrations/stock.md)
 
 1. På fliken **[!UICONTROL Styles]** justerar du övriga formatattribut som marginal, kant osv. eller lägga till en länk för att dirigera om din målgrupp till ett annat innehåll från rutan **[!UICONTROL Component settings]**.
 

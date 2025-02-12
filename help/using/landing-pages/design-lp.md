@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, design, HTML
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 1%
@@ -24,9 +24,9 @@ Om du vill börja skapa innehåll för din [primära sida](create-lp.md#configur
 
 Därifrån kan man
 
-* **Utforma landningssidan från grunden** via innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../content-management/assets.md). Lär dig hur du utformar ditt innehåll <!--or use built-in templates--> [i det här avsnittet](../email/content-from-scratch.md).
+* **Utforma landningssidan från grunden** via innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../integrations/assets.md). Lär dig hur du utformar ditt innehåll <!--or use built-in templates--> [i det här avsnittet](../email/content-from-scratch.md).
 
-* **Kod eller klistra in Raw-HTML** direkt i innehållsdesignern. Lär dig hur du kodar ditt eget innehåll [i det här avsnittet](../email/code-content.md).
+* **Kod eller klistra in HTML i Raw-format** direkt i innehållsdesignern. Lär dig hur du kodar ditt eget innehåll [i det här avsnittet](../email/code-content.md).
 
 * **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [ i det här avsnittet](../email/existing-content.md).
 

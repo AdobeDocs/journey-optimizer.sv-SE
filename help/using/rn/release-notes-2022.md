@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 4acb6777994c9f4252d106fe8e9e5405e73c9349
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '3598'
 ht-degree: 8%
@@ -449,7 +449,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tr>
 <td>
 <p>Integreringspluginen Adobe Stock och Adobe Journey Optimizer Email Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning vid framtagning av meddelanden. </br> Med det nya alternativet <b>Sök efter liknande Stock-foton</b> kan du även söka efter Stock-foton som matchar innehållet, färgen och kompositionen för dina bilder. </p>
-<p>Mer information finns i den <a href="../content-management/stock.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../integrations/stock.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -512,7 +512,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Beslutshantering**
 
-* **HTML och JSON-filer har stöd för** - Nu kan du dra och släppa externa HTML och JSON-filer från Adobe Experience Cloud Asset-biblioteket till erbjudanderepresentationsinnehållet. [Läs mer](../offers/offer-library/add-representations.md#html-json)
+* **HTML- och JSON-filer stöder** - Nu kan du dra och släppa externa HTML- och JSON-filer från Adobe Experience Cloud Asset-biblioteket till erbjudanderepresentationsinnehållet. [Läs mer](../offers/offer-library/add-representations.md#html-json)
 
 
 **E-post**
@@ -651,7 +651,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Integrering med Adobe Campaign Standard**
 
-Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och SMS med Journey Optimizer. Använd de nya inbyggda funktionerna för att utnyttja Campaign Standarden Transactional Messaging i Journey Optimizer.  [Läs mer](../action/acs-action.md)
+Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och SMS med Journey Optimizer. Använd de nya inbyggda funktionerna för att utnyttja Campaign Standard Transactional Messaging i Journey Optimizer.  [Läs mer](../action/acs-action.md)
 
 <!--
 ### Fixes

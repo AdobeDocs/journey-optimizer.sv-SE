@@ -9,7 +9,7 @@ role: User
 level: Intermediate, Experienced
 keywords: kod, HTML, redigerare
 exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
-source-git-commit: 4899dbe71243184b6283a32a4fe7eb2edb82f872
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 2%
@@ -18,19 +18,19 @@ ht-degree: 2%
 
 # Koda eget innehåll {#code-content}
 
-Använd läget **[!UICONTROL Code your own]** för att importera oformaterat HTML och/eller koda ditt e-postinnehåll. Den här metoden kräver kunskaper i HTML.
+Använd läget **[!UICONTROL Code your own]** för att importera råformaterat HTML och/eller koda ditt e-postinnehåll. Den här metoden kräver HTML kunskaper.
 
 ➡️ [Upptäck den här funktionen i videon](#video)
 
 >[!CAUTION]
 >
-> Det går inte att referera till bilder från [Adobe Experience Manager Assets](../content-management/assets.md) när den här metoden används. De bilder som refereras i HTML-koden måste lagras på en offentlig plats.
+> Det går inte att referera till bilder från [Adobe Experience Manager Assets](../integrations/assets.md) när den här metoden används. De bilder som refereras i din HTML-kod måste lagras på en offentlig plats.
 
 1. Välj **[!UICONTROL Code your own]** på startsidan för e-post till Designer.
 
    ![](assets/code-your-own.png)
 
-1. Ange eller klistra in Raw-HTML-koden.
+1. Ange eller klistra in HTML-råkod.
 
 1. Använd den vänstra rutan för att utnyttja [!DNL Journey Optimizer]-personaliseringsfunktioner. [Läs mer](../personalization/personalize.md)
 

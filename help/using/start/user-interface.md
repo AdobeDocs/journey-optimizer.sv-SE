@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: cb6b73db76c710dd8e736e710f5eb758337be696
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 5%
@@ -72,7 +72,7 @@ Skapa erbjudanden och komponenter från det här avsnittet.
 
 Skapa och hantera innehåll från det här avsnittet.
 
-* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](../content-management/assets.md)
+* **[!UICONTROL Assets]** - [!DNL Adobe Experience Manager Assets] är en central databas med resurser som du kan använda för att fylla i dina meddelanden. [Läs mer](../integrations/assets.md)
 
 * **[!UICONTROL Content templates]** - Skapa fristående mallar för att enkelt återanvända anpassat innehåll i Journey Optimizer kampanjer och resor för en snabbare och bättre designprocess. [Läs mer](../content-management/content-templates.md)
 
@@ -94,7 +94,7 @@ Hantera data från det här avsnittet.
 
 Hantera dataanslutningar med andra appar och moln i det här avsnittet.
 
-* **[!UICONTROL Sources]** - Använd den här menyn om du vill importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lagringsplatser, databaser med mera. Du kan strukturera, etikettera och förbättra inkommande data. [Läs mer](get-started-sources.md)
+* **[!UICONTROL Sources]** - Använd den här menyn om du vill importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lagringsplatser, databaser och annat. Du kan strukturera, etikettera och förbättra inkommande data. [Läs mer](get-started-sources.md)
 
 * **[!UICONTROL Destinations]** - Använd den här menyn för att skapa en liveanslutning med molnlagringsplatser för att exportera innehållet i dina datauppsättningar. [Läs mer](../data/export-datasets.md)
 
@@ -102,7 +102,7 @@ Hantera dataanslutningar med andra appar och moln i det här avsnittet.
 
 Hantera era målgrupper och profildata från det här avsnittet.
 
-* **[!UICONTROL Audiences]** - Skapa och hantera målgrupper i Experience Platform och använd dem på dina resor. [Läs mer](../audience/about-audiences.md)
+* **[!UICONTROL Audiences]** - Skapa och hantera Experience Platform-målgrupper och använd dem på dina resor. [Läs mer](../audience/about-audiences.md)
 
 * **[!UICONTROL Subscription lists]** - I [!DNL Journey Optimizer] samlas kunder som har anmält sig till en prenumerationstjänst in i en prenumerationslista. [Läs mer](../landing-pages/subscription-list.md)
 

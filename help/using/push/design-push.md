@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 3dd2db31a239ec5a81bfd677355aca862602e030
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 4%
@@ -60,7 +60,7 @@ Det finns två alternativ. Du kan:
 
 * Använd knappen **[!UICONTROL Add media]** för att välja en resurs i **[!DNL Adobe Experience Manager Assets]**.
 
-  Lär dig hur du använder **[!DNL Adobe Experience Manager Assets]** på [den här sidan](../content-management/assets.md).
+  Lär dig hur du använder **[!DNL Adobe Experience Manager Assets]** på [den här sidan](../integrations/assets.md).
 
 * Eller ange URL:en för mediet i fältet **[!UICONTROL Add media]**. I så fall kan du lägga till personalisering i URL:en.
 

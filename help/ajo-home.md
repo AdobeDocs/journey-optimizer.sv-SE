@@ -5,14 +5,14 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: a1502d2fa13508650cb9353e53ab3a43de650c27
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 17%
 
 ---
 
-# Dokumentation för Adobe [!DNL Journey Optimizer] {#cjm-documentation}
+# Adobe [!DNL Journey Optimizer] - dokumentation {#cjm-documentation}
 
 ## Nyheter
 
@@ -34,7 +34,7 @@ Oktober-versionen är nu aktiv, inklusive e-postinnehållslåsning, integrering 
 
 >[!TAB Rapportering med CJA]
 
-Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet.
+Journey Optimizer rapportering har förbättrad interoperabilitet med Customer Journey Analytics funktioner, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/reports/report-gs-cja.md)
 
@@ -96,7 +96,7 @@ Med webbkanalen kan Adobe Journey Optimizer personalisera webbupplevelsen som ni
   <tr style="border: 0;">
     <td>
       <img src="using/assets/do-not-localize/icon-content.svg" width="35px"><br/>
-      <strong> Innehållshantering</strong><br/><a href="using/content-management/assets.md">Assets/images</a> - <a href="using/personalization/personalize.md">Personalization</a> - <a href="using/content-management/content-templates.md">Återanvändbart</a> &amp; <a href="using/personalization/dynamic-content.md">dynamiskt</a> innehåll - <a href="using/content-management/preview-test.md">Testa och förhandsgranska innehåll</a>
+      <strong> Innehållshantering</strong><br/><a href="using/integrations/assets.md">Assets/images</a> - <a href="using/personalization/personalize.md">Personalization</a> - <a href="using/content-management/content-templates.md">Återanvändbart</a> &amp; <a href="using/personalization/dynamic-content.md">dynamiskt</a> innehåll - <a href="using/content-management/preview-test.md">Testa och förhandsgranska innehåll</a>
     </td>
     <td>
       <img src="using/assets/do-not-localize/icon_profile-audience.svg" width="35px"><br/>
@@ -113,7 +113,7 @@ Med webbkanalen kan Adobe Journey Optimizer personalisera webbupplevelsen som ni
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schemaordlista</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er, referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
 
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>

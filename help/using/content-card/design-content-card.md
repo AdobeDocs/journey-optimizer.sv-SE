@@ -6,7 +6,7 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
-source-git-commit: 7e5dbd6106b8a5ffd9bee8b1364a7bf5b995668c
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 1%
@@ -61,7 +61,7 @@ I fältet **[!UICONTROL Media]** kan du förbättra dina innehållskort genom at
 
 ![](assets/content-card-design-3.png)
 
-Om du vill ta med media skriver du antingen in URL-adressen för det medium som du vill använda eller klickar på ikonen **[!UICONTROL Select Assets]** för att välja bland resurser som lagras i ditt Assets-bibliotek. [Läs mer om resurshantering](../content-management/assets.md).
+Om du vill ta med media skriver du antingen in URL-adressen för det medium som du vill använda eller klickar på ikonen **[!UICONTROL Select Assets]** för att välja bland resurser som lagras i ditt Assets-bibliotek. [Läs mer om resurshantering](../integrations/assets.md).
 
 <!--
 +++More options with advanced formatting

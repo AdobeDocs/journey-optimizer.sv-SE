@@ -7,7 +7,7 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    ![](../assets/perso_ee2.png)
 
-1. **Skapa och hantera resurser**. [!DNL Adobe Experience Manager Assets] innehåller en enda central databas med resurser som du kan använda för att fylla i dina meddelanden. Läs mer [i det här avsnittet](../../content-management/assets.md).
+1. **Skapa och hantera resurser**. [!DNL Adobe Experience Manager Assets] innehåller en enda central databas med resurser som du kan använda för att fylla i dina meddelanden. Läs mer [i det här avsnittet](../../integrations/assets.md).
 
 1. **Lägg till erbjudanden**. Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och upplevelsen till dina kunder via alla kontaktpunkter vid rätt tidpunkt. När ni väl utformat er målgrupp kan ni inrikta er på personaliserade erbjudanden. Läs mer om beslutshantering [i det här avsnittet](../../offers/get-started/starting-offer-decisioning.md).
 

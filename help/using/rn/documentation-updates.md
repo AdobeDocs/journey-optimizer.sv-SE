@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 6b75f1f1916a20c1ad66f5b89ec706e5b8b6844b
+source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '6016'
 ht-degree: 12%
@@ -130,7 +130,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Februari 2024 {#feb-2024}
 
 * Alla nya funktioner och förbättringar som kommer med [!DNL Journey Optimizer] februari 24-versionen har beskrivits i dokumentationen. [Läs mer](release-notes.md#feb-2024)
-* Integrationen mellan Journey Optimizer och Workfront har lagts till på integreringssidan. [Läs mer](../start/ajo-integrations.md)
+* Integrationen mellan Journey Optimizer och Workfront har lagts till på integreringssidan. [Läs mer](../integrations/ajo-integrations.md)
 * Information har lagts till om hur man personaliserar offerternas representationer baserat på kontextdata. [Läs mer](../offers/offer-library/add-representations.md#context-data)
 * Sidan med skyddsförslag har uppdaterats med en anteckning om anpassade åtgärder som endast stöder JSON-format när nyttolasterna för begäran eller svar används. [Läs mer](../start/guardrails.md#custom-actions-g)
 * Ytterligare information har lagts till om den grundläggande autentiseringstypen i externa datakällor. [Läs mer](../datasource/external-data-sources.md)
@@ -250,7 +250,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * En anteckning har lagts till som anger att inbyggda åtgärder inte kan tas bort. [Läs mer](../start/guardrails.md#custom-actions-g)
 * Information har lagts till om serviceEvents och ett frågeexempel för att kontrollera informationen om en serviceEvent. [Läs mer](../reports/query-examples.md#common-queries)
 * En anteckning har lagts till som anger att du inte kan utföra frågor i tidsserier. [Läs mer](../building-journeys/condition-activity.md)
-* Adobe Experience Manager Assets Essentials och Adobe Stock har lagts till på integreringssidan för flera lösningar. [Läs mer](../start/ajo-integrations.md)
+* Adobe Experience Manager Assets Essentials och Adobe Stock har lagts till på integreringssidan för flera lösningar. [Läs mer](../integrations/ajo-integrations.md)
 * Varningen för e-postunderdomäner på flera nivåer som inte tillåts har tagits bort eftersom de nu stöds. [Läs mer](../configuration/delegate-subdomain.md)
 * En anteckning har lagts till för att ange att om ändringar görs i ett erbjudandebeslut som används i en resa måste du avpublicera resan och publicera den på nytt. [Läs mer](../building-journeys/publishing-the-journey.md)
 * Förklaring om hur du ser till att händelser räknas på rätt sätt i appningsräknaren har klargjorts i avsnittet för beslutshantering **Capping-händelse**. [Läs mer](../offers/offer-library/add-constraints.md#capping-event)
@@ -306,7 +306,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## November 2022 {#november-2022}
 
-* En ny sida om Journey Optimizer integreringar har lagts till. [Läs mer](../start/ajo-integrations.md)
+* En ny sida om Journey Optimizer integreringar har lagts till. [Läs mer](../integrations/ajo-integrations.md)
 * En rekommendation om längden på URL:er för spegelsidor har lagts till. [Läs mer](../email/message-tracking.md)
 * Ett nytt underavsnitt i konfigurationen av e-postinställningarna har lagts till i svaret på e-postadressen, inklusive rekommendationer för att säkerställa korrekt svarshantering. [Läs mer](../email/email-settings.md#reply-to-email)
 * Ett avsnitt har lagts till om hur du ändrar innehållet i ett meddelande i en direktresa. [Läs mer](../building-journeys/journeys-message.md#update-live-content)
