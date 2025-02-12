@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
-source-git-commit: 8e8f2d9fd360438f692a5cf79359d3a64c1220be
+source-git-commit: ad70e369dac61dc3ea261e7931c0b58e46c23dda
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -44,7 +44,7 @@ När du konfigurerar en ny [e-postkanalskonfiguration](email-settings.md) anger 
 >
 >Adresser måste börja med en bokstav (A-Z) och får bara innehålla alfanumeriska tecken. Du kan också använda understreck `_`, punkt `.` och bindestreck `-`.
 
-### Svara på e-post {#reply-to-email}
+## Svara på e-post {#reply-to-email}
 
 När du definierar **[!UICONTROL Reply to email]**-adressen kan du ange vilken e-postadress som helst, förutsatt att det är en giltig adress, i korrekt format och utan att behöva skriva något.
 
@@ -66,7 +66,7 @@ Om du får ett felmeddelande när du skickar e-postkonfigurationen betyder det a
 >
 >Om underdomänen för den adress du angav är en domän som har [delegerats](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe kontaktar du din kontoansvarige på Adobe.
 
-### Vidarebefordra e-post {#forward-email}
+## Vidarebefordra e-post {#forward-email}
 
 Om du vill vidarebefordra alla e-postmeddelanden till en viss e-postadress som tagits emot av [!DNL Journey Optimizer] för den delegerade underdomänen kontaktar du Adobe kundtjänst.
 
