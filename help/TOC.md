@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
+source-git-commit: 8e8f2d9fd360438f692a5cf79359d3a64c1220be
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2160'
 ht-degree: 24%
 
 ---
@@ -221,9 +221,11 @@ ht-degree: 24%
       + [Hantera e-postavanmälan](using/email/email-opt-out.md)
       + Konfigurera e-postkanal {#configure-email}
          + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
-         + [Konfigurera e-postkonfigurationsinställningar](using/email/email-settings.md)
-         + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
+         + [Definiera e-postkonfigurationsinställningar](using/email/email-settings.md)
          + [Aktivera avanmälan av lista](using/email/list-unsubscribe.md)
+         + [Huvudparametrar](using/email/header-parameters.md)
+         + [URL-uppföljning](using/email/url-tracking.md)
+         + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
    + Kanal i appen {#in-app}
       + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
       + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
+source-git-commit: 8e8f2d9fd360438f692a5cf79359d3a64c1220be
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6043'
 ht-degree: 12%
 
 ---
@@ -43,6 +43,8 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Ett avsnitt,&quot;Guardsändningar &amp; begränsningar&quot;, har lagts till i dokumentationen för verktygen för konflikthantering och prioritering. [Läs mer](../conflict-prioritization/gs-conflict-prioritization.md)
 
 * Ett nytt heltäckande användningsexempel har lagts till för att presentera alla steg som behövs för att använda Decisionering i innehållsexperiment med den kodbaserade [!DNL Journey Optimizer]-upplevelsekanalen. [Läs mer](../experience-decisioning/experience-decisioning-uc.md)
+
+* Sidan **Konfigurera e-postinställningar** har delats upp i flera undersidor för förbättrad läsbarhet, inklusive nya fristående sidor som är dedikerade till [Avsluta prenumeration](../email/list-unsubscribe.md), [Huvudparametrar](../email/header-parameters.md) och [URL-spårning](../email/url-tracking.md).
 
 ## December 2024 {#nov-2024}
 
