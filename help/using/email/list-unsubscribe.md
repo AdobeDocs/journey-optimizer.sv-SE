@@ -1,16 +1,17 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Konfigurera e-postinställningar
-description: Lär dig konfigurera List-Unsubscribe på kanalkonfigurationsnivå
+title: Avsluta prenumeration på lista
+description: Lär dig hur du tar med en avbruten URL i e-postmeddelandehuvudet med ett klick när du ställer in kanalkonfigurationen
 feature: Email, Surface
 topic: Administration
 role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
-source-git-commit: 8e299b90f601cd931940a64e691e186894d4012e
+exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
+source-git-commit: 8e8f2d9fd360438f692a5cf79359d3a64c1220be
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
