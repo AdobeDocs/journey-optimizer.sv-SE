@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 9538c8c19b242036ce58799b51ef25b8204bf6ec
+source-git-commit: 8c9e69e35ee2c56215f7fe3f4a1f5f9759a2f9b8
 workflow-type: tm+mt
 source-wordcount: '2346'
 ht-degree: 6%
@@ -53,6 +53,7 @@ De nya funktionerna som lanserades i januari beskrivs nedan.
 <td>
 <p>Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. Med den här nya funktionen kan ni effektivisera rapporteringsprocessen med fördesignade mallar som är anpassade efter era analysbehov.
 </p>
+<img src="assets/do-not-localize/cja-templates.gif">
 <p>Mer information finns i den <a href="../reports/report-cja-manage.md#cja-template">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: från 15 januari 2025</p>
 </tr>
