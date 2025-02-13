@@ -8,10 +8,10 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: e1192f6540ee3317a0e03100dedb7780708f7bec
+source-git-commit: 99f4dc8dc7ba3c6acb886e4a37ba36d9b187c68b
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 4%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
 
@@ -104,6 +104,8 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 Förbättringarna nedan följer med uppdateringen från februari.
 
+* **Resor** - Nu kan du testa anpassade åtgärder för din resa genom att skicka API-anrop från administrationsgränssnittet. Den här nya funktionen hjälper dig att felsöka anpassade åtgärder.
+
 * **Datauppsättning TTL (Time-to-live)** - Från och med den här månaden kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i nya sandlådor och nya orgs enligt följande:
 
    * 90 dagar för data i profilarkivet
@@ -114,6 +116,12 @@ Förbättringarna nedan följer med uppdateringen från februari.
 * **Playbooks** - Nu kan du skapa och publicera egna Use Case Playbooks i Journey Optimizer.
 
 * **Direktutskick** - DLZ (DAta Landing Zone) stöds nu som servertyp för filroutning i konfigurationen för direktutskick.
+
+**Personalization**
+
+* Anpassningsredigeraren har förbättrats med nya funktioner som Komplettera automatiskt, Sök och filtrera. Du kan även visa eller dölja borttagna attribut.
+
+* Tillgänglighetsdatum: 29 januari 2025 - nya hjälpfunktioner för datum/tid finns tillgängliga för användning i personaliseringsredigeraren. [Läs mer](../personalization/functions/dates.md)
 
 **E-postkonfiguration** - Tillgänglighetsdatum: 12 feb 2025
 
@@ -128,7 +136,3 @@ Förbättringarna nedan följer med uppdateringen från februari.
 **Beslut** - Tillgänglighetsdatum: 28 januari 2025
 
 * Beslutsfattandet har nu stöd för datatyperna Object när objektkatalogens schema redigeras. [Läs mer](../experience-decisioning/catalogs.md)
-
-**Personalization** - Tillgänglighetsdatum: 29 januari 2025
-
-* Det finns nya hjälpfunktioner för datum/tid som kan användas i personaliseringsredigeraren. [Läs mer](../personalization/functions/dates.md)
