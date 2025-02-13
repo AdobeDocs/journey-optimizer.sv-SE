@@ -5,9 +5,9 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
+source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 17%
 
 ---
@@ -28,7 +28,7 @@ Oktober-versionen är nu aktiv, inklusive e-postinnehållslåsning, integrering 
 
 >[!TAB AI-assistenten]
 
-✨ fördjupa dig i en praktisk upplevelse med vår förhandsgranskning av funktionen [AI Assistant Content Accelerator](../help/using/content-management/gs-generative.md) som gör att du kan utforska dess funktioner först och fullt ut förstår dess funktioner.
+✨ fördjupa dig i en praktisk upplevelse med vår [AI Assistant](../help/using/content-management/gs-generative.md) -förhandsvisning med dynamiska funktioner, som är utformad för att du ska kunna utforska dess funktioner först och till fullo förstå dess funktioner.
 
 [![läs mer](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}
 

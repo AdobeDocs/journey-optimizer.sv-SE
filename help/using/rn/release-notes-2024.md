@@ -8,18 +8,18 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
-source-git-commit: e3ebbb021b7336fa859deb19d4e5786a4f4fdf30
+source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
 workflow-type: tm+mt
-source-wordcount: '4772'
+source-wordcount: '4768'
 ht-degree: 7%
 
 ---
 
 # Versionsinformation för 2024 {#release-notes-2024}
 
-Den här sidan visar alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2024.
+På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2024.
 
-## September 24-utgåvan {#24-9-rn}
+## 24 september {#24-9-rn}
 
 <!--
 >[!CAUTION]
@@ -28,7 +28,7 @@ Den här sidan visar alla funktioner och förbättringar för [!DNL Journey Opti
 >
 -->
 
-**Utgivningsdatum**: 24-26 september 2024
+**Releasedatum**: 24-26 september 2024
 
 ### Nya funktioner {#24-9-features}
 
@@ -106,13 +106,13 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>AI Assistant Content Accelerator </strong><br/></th>
+<th><strong>AI-assistenten</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>När du har skapat och personaliserat ditt budskap går du ett steg längre med AI Assistant Content Accelerator i Journey Optimizer. Nu kan du använda AI-assistenten för att optimera budskapets effekt genom att experimentera med olika huvudtitlar och bilder. Varje variant hanteras som en unik behandling för att mäta och jämföra vilken titel som effektivt genererar fler klick.</p>
+<p>När du har skapat och personaliserat ditt budskap går du ett steg längre med AI Assistant i Journey Optimizer. Nu kan du använda AI-assistenten för att optimera budskapets effekt genom att experimentera med olika huvudtitlar och bilder. Varje variant hanteras som en unik behandling för att mäta och jämföra vilken titel som effektivt genererar fler klick.</p>
 <p>Fördjupa dig i en praktisk upplevelse med <a href="https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator">vår förhandsvisning av aktiva funktioner</a>, som är utformad för att du först ska kunna utforska dess funktioner och till fullo förstå dess funktioner.</a>.</p>
 <p>Mer information finns i den <a href="../content-management/gs-generative.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ai-content.gif"/>
@@ -131,7 +131,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Med Guided Channel Setup kan man automatisera och validera kanalkonfigurationen i en enhetlig upplevelse och därmed få igång Journey Optimizer snabbare. Denna nya guidade installation effektiviserar konfigurationen av kanaler så att alla nödvändiga resurser snabbt kan installeras och användas i Experience Platform, Journey Optimizer och datainsamling. På så sätt kan marknadsförings-, produkt- och datateknikteam snabbt börja med att skapa kampanjer och resor.</p>
+<p>Med Guided Channel Setup kan man automatisera och validera kanalkonfigurationen i en enhetlig upplevelse och därmed få igång Journey Optimizer snabbare. Denna nya guidade installation effektiviserar konfigurationen av kanaler så att alla nödvändiga resurser snabbt kan installeras och användas i Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsförings-, produkt- och datateknikteam snabbt börja med att skapa kampanjer och resor.</p>
 <p>Mer information finns i den <a href="../configuration/set-mobile-config.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/guided-setup.gif"/>
 <p>Tillgänglighetsdatum: 3 september 2024</p>
@@ -175,10 +175,10 @@ Nu kan du exportera innehållsmallar och fragment mellan sandlådor. [Läs mer](
 
 * **API för kampanjsimulering** - Använd det här API:t för att utlösa ett korrekturjobb för en kampanj. Att skicka Campaign-korrektur är en asynkron process. API:t returnerar ett proofJobId som kan användas för att kontrollera korrekturets status. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"}
 
-* (Tillgänglighetsdatum: 10 september) Nu är [Adobe Journey Optimizer API-dokumentationen](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} interaktiv. Utforska API-slutpunkterna direkt från dokumentationssidorna för att få omedelbar feedback och snabba upp din tekniska implementering.
+* (Tillgänglighetsdatum: 10 sep) [Adobe Journey Optimizer API-dokumentationen ](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} är nu interaktiv. Utforska API-slutpunkterna direkt från dokumentationssidorna för att få omedelbar feedback och snabba upp den tekniska implementeringen.
 
 
-  Alla API-referenssidor har nu en **Prova-funktion** som du kan använda för att testa API-anrop direkt på dokumentationswebbsidan. [Hämta nödvändiga autentiseringsuppgifter](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} och börja använda funktionen för att utforska API-slutpunkterna.
+  Alla API-referenssidor har nu en **Prova**-funktion som du kan använda för att testa API-anrop direkt på dokumentationswebbplatsen. [Hämta nödvändiga autentiseringsuppgifter](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} och börja använda funktionen för att utforska API-slutpunkterna.
 
   Använd den här nya funktionen för att utforska förfrågningar och svar från API-slutpunkter, för att få omedelbar feedback och snabba upp den tekniska implementeringen.
 
@@ -188,16 +188,16 @@ Nu kan du exportera innehållsmallar och fragment mellan sandlådor. [Läs mer](
 
 **Konfiguration**
 
-* **IP-värmekopplingsplaner** - Den här funktionen är nu tillgänglig för alla kunder, inklusive organisationer som har köpt tilläggserbjudanden för Adobe **Healthcare Shield** eller **Privacy and Security Shield**. [Läs mer](../configuration/ip-warmup-gs.md)
+* **IP-beredskapsplaner** - Den här funktionen är nu tillgänglig för alla kunder, inklusive organisationer som har köpt Adobe **Healthcare Shield** eller **Privacy and Security Shield** som tillägg. [Läs mer](../configuration/ip-warmup-gs.md)
 
 <!--
 ![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.-->
 
 
 
-## Augusti 2024-utgåvan {#8-2024}
+## Version 24 augusti {#8-2024}
 
-**Utgivningsdatum**: 20-21 augusti 2024
+**Releasedatum**: 20-21 augusti 2024
 
 ### Nya funktioner {#8-features}
 
@@ -357,7 +357,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 <tbody>
 <tr>
 <td>
-<p>Federated Audience Composition är nu tillgängligt i Adobe Journey Optimizer. Det gör det möjligt för företag att sammanställa data för bättre användning i olika användningsfall. Med detta nya tillvägagångssätt, som Adobe Real-time Customer Data Platform- och/eller Adobe Journey Optimizer-användare, kan ni federera datauppsättningar direkt från ert befintliga datalager för att skapa och berika Adobe Experience Platform målgrupper och attribut i ett och samma system.</p>
+<p>Federated Audience Composition är nu tillgängligt i Adobe Journey Optimizer. Det gör det möjligt för företag att sammanställa data för bättre användning i olika användningsfall. Med detta nya tillvägagångssätt, som Adobe Real-Time Customer Data Platform- och/eller Adobe Journey Optimizer-användare, kan ni federera datauppsättningar direkt från ert befintliga datalager för att skapa och berika Adobe Experience Platform målgrupper och attribut i ett och samma system.</p>
 <p>Mer information finns i den <a href="https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home"  target="_blank">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -366,7 +366,7 @@ Den här versionen innehåller de nya funktionerna som listas nedan.
 
 ### Förbättringar {#27-4-improvements}
 
-Den här versionen innehåller förbättringarna som anges nedan.
+Den här versionen innehåller de förbättringar som anges nedan.
 
 **Resor**
 
@@ -385,7 +385,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Anpassning av Content Fragments</strong><br/></th>
+<th><strong>Anpassning av innehållsfragment</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -409,7 +409,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer rapportering har en förbättrad interoperabilitet med Customer Journey Analytics, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.</p>
+<p>Journey Optimizer rapportering har förbättrad interoperabilitet med Customer Journey Analytics funktioner, standardiserad rapportering på båda plattformarna och förbättrad datakonsekvens och tillförlitlighet. Denna smidiga integrering mellan Journey Optimizer och Customer Journey Analytics ger en tydligare bild av prestandamätningarna, så att användarna kan fatta mer välgrundade beslut.</p>
 <img src="assets/do-not-localize/ajo-cja.gif"/>
 <p>Mer information finns i den <a href="../reports/report-gs-cja.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -426,7 +426,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>AI-assistenten är en funktion i användargränssnittet som du kan använda för att navigera bland och förstå Adobe-koncept och få driftsinsikter för just din miljö. Det finns i flera Adobe Experience Cloud-produkter, inklusive Adobe Journey Optimizer.</p>
+<p>AI Assistant är en gränssnittsfunktion som du kan använda för att navigera bland och förstå Adobe-koncept och få driftsinsikter för just din miljö. Det finns i flera Adobe Experience Cloud-produkter, inklusive Adobe Journey Optimizer.</p>
 <p>Mer information finns i den <a href="../start/ai-assistant.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
@@ -531,9 +531,9 @@ Läs mer i dokumentationen för [innehållsfragment](../content-management/fragm
 
 #### SMS-kanal
 
-* Nu kan du lägga till unika korta koder för varje sandlåda med en enda API-konfiguration, vilket gör processen mer effektiv och smidig. [Läs mer](../sms/sms-configuration.md)
+* Nu kan du lägga till unika korta koder för varje sandlåda med en enda API-konfiguration, vilket gör processen effektivare och smidigare. [Läs mer](../sms/sms-configuration.md)
 
-* Efter skapandet maskeras nu fältet **API-token** på sidan **API-inloggningsuppgifter**.
+* Efter skapandet maskeras fältet **API-token** på sidan **API-autentiseringsinformation**.
 
 <!--* You can now modify existing SMS configurations.-->
 
@@ -550,9 +550,9 @@ Läs mer i dokumentationen för [innehållsfragment](../content-management/fragm
 
 
 
-## Maj 24-utgåvan {#may-2024}
+## Version 24 maj {#may-2024}
 
-**Utgivningsdatum**: 21-22 maj 2024
+**Releasedatum**: 21-22 maj 2024
 
 ### Nya funktioner {#e-features}
 
@@ -675,7 +675,7 @@ Från betaversion till den här versionen har följande förbättringar lagts ti
 
   >[!AVAILABILITY]
   >
-  >Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Om du vill gå med i betaprogrammet kontaktar du Adobe.
+  >Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.
 
 <!--
 **Audiences**
@@ -690,7 +690,7 @@ Från betaversion till den här versionen har följande förbättringar lagts ti
 
 <!--* **Merge policies** (Limited Availability)- Merge policies used by a journey are now visible and consistent throughout the journey.-->
 * **mTLS-stöd** - mTLS-autentisering stöds nu i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](../action/about-custom-action-configuration.md#mtls-protocol-support)
-* **Uppslagstabeller i händelser** - Nu kan du utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden. [Läs mer](../event/experience-event-schema.md#relationships_limitations)
+* **Uppslagstabeller i händelser** - Nu kan du utnyttja data från en uppslagsdatauppsättning när en relation har definierats med ett attribut inuti en objektmatris. Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och meddelandepersonalisering. [Läs mer](../event/experience-event-schema.md#relationships_limitations)
 * **Avancerad uttrycksredigerare i händelsekonfiguration** (LA) - Du kan nu utnyttja den avancerade uttrycksredigeraren när du konfigurerar en händelse, så att du kan definiera mer komplexa uttryck eller använda funktioner i händelse-ID-villkoret. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. [Läs mer](../event/about-creating.md#adv-exp-editor)
 * **Sammanslagningsprinciper** (LA) - Sammanslagningsprinciper som används av en resa är nu synliga och konsekventa under hela resan. Den här funktionen lanseras i begränsad tillgänglighet för utvalda kunder. [Läs mer](../building-journeys/journey-properties.md#merge-policies)
 
@@ -716,7 +716,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF eller videor med dina kunder. MMS finns nu endast i Sinch och finns nu även i Infobip och Twilio.</p>
+<p>Med SMS-kanalen kan du nu förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service) som gör det möjligt att dela bilder, GIF-filer eller videor med dina kunder. MMS finns nu endast i Sinch och finns nu även i Infobip och Twilio.</p>
 <img src="assets/do-not-localize/mms.gif"/>
 </td>
 </tr>
@@ -732,9 +732,9 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>I den här versionen finns ett förbättrat användargränssnitt på arbetsytan för resor och en mer intuitiv och effektiv användarupplevelse. Aktiviteterna är tydligare och visar mer information på researbetsytan med färre klick.</p>
+<p>I den här versionen finns ett förbättrat användargränssnitt på arbetsytan för resor och en mer intuitiv och effektiv användarupplevelse. Aktiviteterna blir tydligare och ger mer information om arbetsytan med färre klick.</p>
 <img src="assets/new-canvas3.gif"/>
-<p>Vid sidan av den förbättrade designen av researbetsytan introducerar vi möjligheten att se de senaste 24 timmarna rapportera mätvärden direkt i arbetsytan. </p>
+<p>Förutom den förbättrade utformningen av arbetsytan på resan introducerar vi möjligheten att se de senaste 24 timmarnas rapportvärden direkt i arbetsytan på resan. </p>
 <img src="assets/new-canvas6bis.png"/>
 <p><strong>Obs!</strong> De här ändringarna kommer gradvis att lanseras i alla miljöer från och med aprilversionen.</p>
 <p>Mer information finns i den <a href="new-canvas.md">detaljerade dokumentationen</a>.</p>
@@ -794,7 +794,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Konfiguration**
 
-* Du kan nu välja en marknadsföringsåtgärd på kanalkonfigurationsnivå. När de används i en konfiguration utnyttjas alla samtyckespolicyer som är kopplade till den marknadsföringsåtgärden för att respektera dina kunders preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
+* Nu kan du välja en marknadsföringsåtgärd på kanalkonfigurationsnivå. När de används i en konfiguration används alla medgivandeprinciper som är kopplade till den marknadsföringsåtgärden för att ta hänsyn till kundernas önskemål. [Läs mer](../action/consent.md#surface-marketing-actions)
 * Åtkomstkontroll på objektnivå är nu tillgänglig för kanalkonfigurationer. [Läs mer](../configuration/channel-surfaces.md#create-channel-surface)
 * När du aktiverar avbrytande av prenumerationslista i en kanalkonfiguration kan du nu definiera medgivandenivån så att den anpassas till hur du hanterar samtycke från alla andra källor. [Läs mer](../email/email-settings.md#list-unsubscribe)
 
@@ -1017,7 +1017,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
   >[!NOTE]
   >
-  >Daglig frekvens finns också tillgänglig vid behov. Kontakta din Adobe-representant.
+  >Daglig frekvens finns också tillgänglig vid behov. Kontakta Adobe.
 
 **Beslutshantering**
 

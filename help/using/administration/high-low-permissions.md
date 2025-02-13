@@ -9,9 +9,9 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
+source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -511,7 +511,7 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
 
 ## AI-stödresurs {#ai-permissions}
 
-* **[!DNL Generate content]** högnivåbehörighet ger användare åtkomst till AI Assistant Content Accelerator i Journey Optimizer.
+* **[!DNL Generate content]**-behörighet på hög nivå ger användare åtkomst till AI-assistenten i Journey Optimizer.
 
 +++ Den innehåller följande lågnivåbehörighet:
 

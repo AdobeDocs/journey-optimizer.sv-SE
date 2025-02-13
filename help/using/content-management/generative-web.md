@@ -2,30 +2,31 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa webbsidor med AI Assistant
-description: Börja generera webbsidesinnehåll och -resurser med AI Assistant Content Accelerator i Journey Optimizer.
+description: Börja generera webbsidesinnehåll och -resurser med AI Assistant i Journey Optimizer.
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: f316ec79958ac23e0e416f0cafd49c017f2b6d4c
+exl-id: ebe2df77-4aaa-45b1-a8ce-931d4191cc67
+source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
 
-# Skapa webbsidor med AI Assistant Content Accelerator {#generative-web}
+# Skapa webbsidor med AI Assistant {#generative-web}
 
 >[!IMPORTANT]
 >
 >Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
 ></br>
 >
->Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI Assistant Content Accelerator i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
+>Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI-assistenten i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
-När du har skapat och personaliserat dina webbsidor kan du använda AI Assistant Content Accelerator i Journey Optimizer med generativ AI för att ta ditt innehåll till nästa nivå.
+När du har skapat och anpassat dina webbsidor kan du använda AI Assistant i Journey Optimizer med generativ AI för att ta ditt innehåll till nästa nivå.
 
-AI Assistant Content Accelerator i Journey Optimizer kan hjälpa er att optimera effekten av era leveranser genom att föreslå olika innehåll som troligtvis får genklang hos er.
+AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era leveranser genom att föreslå olika typer av innehåll som troligtvis får genklang hos er målgrupp.
 
 >[!BEGINTABS]
 
@@ -39,7 +40,7 @@ AI Assistant Content Accelerator i Journey Optimizer kan hjälpa er att optimera
 
    ![](assets/web-gen-full-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant Content Accelerator för att anpassa nytt innehåll baserat på det valda innehållet.
+1. Aktivera alternativet **[!UICONTROL Use original content]** för AI-assistenten för att anpassa nytt innehåll baserat på det valda innehållet.
 
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
@@ -87,19 +88,19 @@ När du har definierat inställningarna för webbkampanjen och redigerat innehå
 
 >[!TAB Skapa webbsidesbilder]
 
-I exemplet nedan kan du lära dig hur du använder AI Assistant Content Accelerator i Journey Optimizer för att optimera och förbättra dina resurser och få en mer användarvänlig upplevelse.
+I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimizer för att optimera och förbättra dina resurser och få en mer användarvänlig upplevelse.
 
 1. När du har skapat och konfigurerat webbsidan klickar du på **[!UICONTROL Edit web page]**.
 
    Mer information om hur du konfigurerar webbsidan finns på [den här sidan](../web/create-web.md).
 
-1. Markera den resurs som du vill ändra med AI Assistant Content Accelerator.
+1. Markera den resurs som du vill ändra med AI-assistenten.
 
 1. Välj **[!UICONTROL Show AI Assistant]** på den högra menyn.
 
    ![](assets/web-gen-img-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant Content Accelerator för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
+1. Aktivera alternativet **[!UICONTROL Reference style]** för AI-assistenten för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
@@ -141,4 +142,3 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant Content Accelera
 När du har definierat inställningarna för webbkampanjen och redigerat innehållet som du vill med webbdesignern kan du granska och aktivera webbkampanjen. [Läs mer](../web/create-web.md#activate-web-campaign)
 
 >[!ENDTABS]
-

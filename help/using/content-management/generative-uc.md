@@ -1,20 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AI Assistant för Content Accelerator - användningsfall
-description: Lär dig använda AI Assistant för Content Accelerator med hjälp av användningsexempel
+title: Användningsexempel för AI Assistant
+description: Lär dig använda AI Assistant med hjälp av användningsexempel
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 5798d4850ef9f8f2bc6761a9468fe6120460c524
+exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
+source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# AI Assistant för Content Accelerator - användningsfall {#generative-uc}
+# Användningsexempel för AI Assistant {#generative-uc}
 
 >[!NOTE]
 >
@@ -28,7 +29,7 @@ ht-degree: 0%
 
 1. Öppna avsnittet **[!UICONTROL AI Assistant]**.
 
-1. Aktivera funktionen **[!UICONTROL Use original content]** i AI-assistenten för Content Accelerator om du vill anpassa nytt innehåll efter kampanjinformationen, inklusive kampanjnamnet och målgruppen.
+1. Aktivera funktionen **[!UICONTROL Use original content]** i AI-assistenten för att anpassa nytt innehåll efter kampanjinformationen, inklusive kampanjnamnet och målgruppen.
 
 1. Justera innehållet genom att ange din begäran i rutan **[!UICONTROL Prompt]** och anpassa inställningarna efter behov.
 
@@ -94,11 +95,11 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 1. Klicka på **[!UICONTROL Edit content]** när du har konfigurerat din e-postkampanj.
 
-1. Välj den resurs som du vill ändra med hjälp av AI-assistenten för Content Accelerator.
+1. Välj den resurs som du vill ändra med hjälp av AI-assistenten.
 
 1. Välj **[!UICONTROL AI Assistant]** på den högra panelmenyn.
 
-1. Aktivera alternativet **[!UICONTROL Reference style]** så att AI-assistenten för Content Accelerator kan generera nytt innehåll med referensmaterialet.
+1. Aktivera alternativet **[!UICONTROL Reference style]** så att AI-assistenten kan generera nytt innehåll med referensmaterialet.
 
 1. Klicka på **[!UICONTROL Upload image]** om du vill inkludera en bild som lägger till kontext i variationen.
 
