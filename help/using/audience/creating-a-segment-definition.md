@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: 435898d7e806e93ee0154c3da22f6a011fc78175
+source-git-commit: 7aaaa566ec9e5a1cf50e067d7c3836bfc305b909
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 2%
+source-wordcount: '971'
+ht-degree: 1%
 
 ---
 
@@ -78,9 +78,14 @@ Profillistan för målgruppen hålls uppdaterad i realtid när nya data flödar 
 
 Direktuppspelningssegmentering är en kontinuerlig process för datamarkering som uppdaterar era målgrupper som svar på användaraktivitet. När en segmentdefinition har skapats och målgruppen har sparats, tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Det innebär att enskilda personer läggs till eller tas bort från målgruppen när deras profildata ändras, vilket säkerställer att målgruppen alltid är relevant. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Se till att använda rätt händelser som villkor för direktuppspelningssegmentering. [Läs mer](#streaming-segmentation-events-guardrails)
+>Från och med den 1 november 2024 har direktuppspelningssegmentering inte längre stöd för användning av **send** - och **open** -händelser från Journey Optimizer spårnings- och feedbackdatauppsättningar.
+>* Den här ändringen gäller alla kundsandlådor och organisationer.
+>* Endast skicka- och öppna-händelser påverkas: Klickningar och andra spårningshändelser är fortfarande tillgängliga för direktuppspelningssegmentering.
+>* Den här ändringen gäller endast för direktuppspelningssegmentering. Send- och open-händelser kan fortfarande användas i gruppsegment, men om de ingår i ett direktuppspelningssegment utvärderas de gruppvis. Dessutom påverkas även undantagshändelser och studs-/fördröjningshändelser som är ett resultat av skicka-händelser av den här ändringen.
+>* Spårning av datainsamling påverkas inte. Evenemang för att skicka och öppna samlas in som vanligt.
+>* Reaktionshändelser under resor påverkas inte av denna förändring.
 
 +++
 

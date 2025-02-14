@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 2bc4dba1353b1d19b1bae0b7718fbbc9e9f37147
+source-git-commit: 7aaaa566ec9e5a1cf50e067d7c3836bfc305b909
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2497'
 ht-degree: 0%
 
 ---
@@ -40,12 +40,12 @@ Adobe [!DNL Journey Optimizer]-gränssnittet är utformat för att fungera optim
 
 ## Skyddsutkast för datauppsättningar {#datasets-guardrails}
 
-Från och med februari 2025 kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i **nya sandlådor och nya organisationer** enligt följande:
+Från och med februari 2025 introduceras ett TTL-skyddsräcke (time-to-live) för Journey Optimizer systemgenererade datauppsättningar i **nya sandlådor och nya organisationer** enligt följande:
 
-* 90 dagar för data i profilarkivet
-* 13 månader för data i sjön
+* 90 dagar för data i profilarkivet,
+* 13 månader för data i sjön.
 
-Utforska avsnittet [Vanliga frågor](../data/datasets-ttl.md#ttl) om du vill ha mer information om dessa skyddsförslag.
+Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en efterföljande fas. [Läs mer om datauppsättningar Tid-att-lämna-skyddsutkast (TTL)](../data/datasets-ttl.md)
 
 ## Garantier för landningssidor {#lp-guardrails}
 
