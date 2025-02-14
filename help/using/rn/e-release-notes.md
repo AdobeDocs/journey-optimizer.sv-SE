@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 4e405fe395c8432ed22d64887631b222df83a3e9
+source-git-commit: 382327f7816340696d8645f04e5079eb56fe07a3
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '715'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>AI Assistant finns nu för leverans av landningssidor, vilket gör att du kan generera text, bilder eller hela sidlayouter.</p>
+<p>Med hjälp av AI-assistenten kan du nu skapa övertygande innehåll för landningssidor, inklusive helsidesdesign, personlig text och anpassade bilder.</p>
 <!--img src="assets/do-not-localize/ai-lp.gif">
 <p>For more information on AI Assistant, refer to the <a href="../email/generative-lp.md">detailed documentation</a>.</p-->
 </td>
