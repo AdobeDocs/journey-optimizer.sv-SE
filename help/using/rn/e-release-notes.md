@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 39e52d7e552859137c9e179f48319ed508caabb5
+source-git-commit: f371f2181b5a4b302e3cb1f47c85d470a58b9f90
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '637'
 ht-degree: 4%
 
 ---
@@ -113,7 +113,7 @@ Förbättringarna nedan följer med uppdateringen från februari.
 
   Den här ändringen kommer att introduceras i befintliga kundsandlådor i en efterföljande fas.
 
-* **Playbooks** - Nu kan du skapa och publicera egna Use Case Playbooks i Journey Optimizer.
+<!--* **Playbooks** - You can now create and publish your own Use Case Playbooks in Journey Optimizer.-->
 
 * **Direktutskick** - DLZ (DAta Landing Zone) stöds nu som servertyp för filroutning i konfigurationen för direktutskick.
 
