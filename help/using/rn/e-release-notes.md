@@ -8,10 +8,10 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1ac5f7362cd0184b7207b0f175d83c5c60921e7e
+source-git-commit: 4e405fe395c8432ed22d64887631b222df83a3e9
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 4%
+source-wordcount: '711'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Affärsregler</strong><br/></th>
+<th><strong>Skapa och hantera affärsregler</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -62,24 +62,41 @@ De nya funktionerna i den här versionen beskrivs nedan.
 </tbody>
 </table>
 
-
 <table>
 <thead>
 <tr>
-<th><strong>Customer Journey Analytics-mallar</strong><br/></th>
+<th><strong>Generera landningssidor med AI Assistant</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. Med den här nya funktionen kan ni effektivisera rapporteringsprocessen med fördesignade mallar som är anpassade efter era analysbehov.
-</p>
-<img src="assets/do-not-localize/cja-templates.gif">
-<p>Mer information finns i den <a href="../reports/report-cja-manage.md#cja-template">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: från 15 januari 2025</p>
+<p>AI Assistant finns nu för leverans av landningssidor, vilket gör att du kan generera text, bilder eller hela sidlayouter.</p>
+<!--img src="assets/do-not-localize/ai-lp.gif">
+<p>For more information on AI Assistant, refer to the <a href="../email/generative-lp.md">detailed documentation</a>.</p-->
+</td>
 </tr>
 </tbody>
 </table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Varumärkesriktlinjer (beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni ange egna varumärkesriktlinjer för att definiera varumärkets visuella och verbala identitet. Observera att funktionen Varumärke släpps som en privat betaversion och kommer att finnas tillgänglig för alla kunder i framtida versioner.</p>
+<!--p>For more information, refer to the <a href="../configuration/business-rules.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 <table>
 <thead>
@@ -100,11 +117,33 @@ De nya funktionerna i den här versionen beskrivs nedan.
 </table>
 
 
+
+<table>
+<thead>
+<tr>
+<th><strong>Customer Journey Analytics-mallar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. Med den här nya funktionen kan ni effektivisera rapporteringsprocessen med fördesignade mallar som är anpassade efter era analysbehov.
+</p>
+<img src="assets/do-not-localize/cja-templates.gif">
+<p>Mer information finns i den <a href="../reports/report-cja-manage.md#cja-template">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: från 15 januari 2025</p>
+</tr>
+</tbody>
+</table>
+
+
+
+
 ### Förbättringar {#25-02-improvements}
 
 Förbättringarna nedan följer med uppdateringen från februari.
 
-* **Resor** - Nu kan du testa anpassade åtgärder för din resa genom att skicka API-anrop från administrationsgränssnittet. Den här nya funktionen hjälper dig att felsöka anpassade åtgärder.
+* **Resor** - Nu kan du testa dina anpassade åtgärder genom att skicka API-anrop från administrationsavsnittet. Den här nya funktionen hjälper dig att felsöka anpassade åtgärder innan du har använt dem under en resa.
 
 * **Datauppsättning TTL (Time-to-live)** - Från och med den här månaden kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i nya sandlådor och nya orgs enligt följande:
 
