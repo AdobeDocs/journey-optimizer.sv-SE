@@ -8,10 +8,10 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 99f4dc8dc7ba3c6acb886e4a37ba36d9b187c68b
+source-git-commit: 39e52d7e552859137c9e179f48319ed508caabb5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 3%
+source-wordcount: '652'
+ht-degree: 4%
 
 ---
 
@@ -119,7 +119,8 @@ Förbättringarna nedan följer med uppdateringen från februari.
 
 **Personalization**
 
-* Anpassningsredigeraren har förbättrats med nya funktioner som Komplettera automatiskt, Sök och filtrera. Du kan även visa eller dölja borttagna attribut.
+<!--
+* The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes.-->
 
 * Tillgänglighetsdatum: 29 januari 2025 - nya hjälpfunktioner för datum/tid finns tillgängliga för användning i personaliseringsredigeraren. [Läs mer](../personalization/functions/dates.md)
 
