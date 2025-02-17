@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: befad89c8f50c92751e5e0995e73df8427a193b3
+source-git-commit: 417d9f1787aced7d41a7374576d3abcc4dd98c1b
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2760'
 ht-degree: 5%
 
 ---
@@ -127,7 +127,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 Förbättringarna nedan följer med uppdateringen från februari.
 
-* **Resor** - Nu kan du testa dina anpassade åtgärder genom att skicka API-anrop från administrationsavsnittet. Den här nya funktionen hjälper dig att felsöka anpassade åtgärder innan du har använt dem under en resa.
+* **Resor** - Nu kan du testa dina anpassade åtgärder genom att skicka API-anrop från administrationsavsnittet. Den här nya funktionen hjälper dig att felsöka anpassade åtgärder före eller efter det att du har använt dem under en resa.
 
 * **Datauppsättning TTL (Time-to-live)** - Från och med den här månaden kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i nya sandlådor och nya orgs enligt följande:
 
@@ -142,33 +142,20 @@ Förbättringarna nedan följer med uppdateringen från februari.
 
 * **Direktutskick** - En ny servertyp, Datalandningszon, stöds nu för filroutning i konfigurationen för direktutskick.
 
-**SMS** - Nu kan du hantera SMS-meddelandeleverans från flerregionala slutpunkter genom att åsidosätta URL:er för leverans, feedback, inkommande och återanrop. För att detta ska fungera har en ny åsidosättnings-URL lagts till i konfigurationen för API-autentiseringsuppgifter. Den här ändringen är endast tillgänglig för SINK-providern. [Läs mer](../sms/sms-configuration-sinch.md)
+* **SMS** - Nu kan du hantera SMS-meddelandeleverans från flerregionala slutpunkter genom att åsidosätta URL:er för leverans, feedback, inkommande och återanrop. För att detta ska fungera har en ny åsidosättnings-URL lagts till i konfigurationen för API-autentiseringsuppgifter. Den här ändringen är endast tillgänglig för SINK-providern. [Läs mer](../sms/sms-configuration-sinch.md)
 
-**Personalization**
+* **Personalization** (Tillgänglighetsdatum: 29 januari 2025) - Det finns nya hjälpfunktioner för datum/tid som kan användas i personaliseringsredigeraren. [Läs mer](../personalization/functions/dates.md)
+
 
 <!--
 * The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes.-->
 
-* Tillgänglighetsdatum: 29 januari 2025 - nya hjälpfunktioner för datum/tid finns tillgängliga för användning i personaliseringsredigeraren. [Läs mer](../personalization/functions/dates.md)
 
-
-**E-postkonfiguration** - Tillgänglighetsdatum: 12 feb 2025
-
-* Om du hanterar samtycke utanför Adobe kan du nu ange en anpassad e-postadress för att avbryta prenumerationen och en anpassad URL för att avsluta prenumerationen som en del av inställningarna för e-postkanalen. [Läs mer](../email/list-unsubscribe.md#custom-managed)
+* **E-postkonfiguration** (Tillgänglighetsdatum: 12 februari 2025) - Om du hanterar samtycke utanför Adobe kan du nu ange en anpassad e-postadress för att avbryta prenumerationen och en anpassad URL för att avsluta prenumerationen med ett klick som en del av inställningarna för e-postkanalskonfigurationen. [Läs mer](../email/list-unsubscribe.md#custom-managed)
 
   ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
 
-  >[!AVAILABILITY]
-  >
-  >Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
-
-* Om du hanterar samtycke utanför Adobe kan du nu ange en anpassad e-postadress för att avbryta prenumerationen och en anpassad URL för att avsluta prenumerationen som en del av inställningarna för e-postkanalen. [Läs mer](../email/list-unsubscribe.md#custom-managed)
-
-  ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
-
-**Beslut** - Tillgänglighetsdatum: 28 januari 2025
-
-* Beslutsfattandet har nu stöd för datatyperna Object när objektkatalogens schema redigeras. [Läs mer](../experience-decisioning/catalogs.md)
+* **Beslut** (Tillgänglighetsdatum: 28 januari 2025) - Beslut stöder nu objekttyper när objektkatalogens schema redigeras. [Läs mer](../experience-decisioning/catalogs.md)
 
 
 ## 24 oktober {#24-10-rn}
