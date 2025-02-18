@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: b134fe166402e4ae49cd96fc09a19e14beb13523
+source-git-commit: 63786170a4aaa5659751a9bb5febd98419e2e64a
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1417'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ Innan du kan generera filen måste du skapa:
 
 >[!NOTE]
 >
->För närvarande stöds Amazon S3, SFTP och Azure i [!DNL Journey Optimizer].
+>För närvarande stöds landningszonen Amazon S3, SFTP, Azure och Data i [!DNL Journey Optimizer].
 
 Om du vill leverera ett direktmeddelande genererar och exporterar [!DNL Journey Optimizer] filen som innehåller målgruppsdata till en server.
 
