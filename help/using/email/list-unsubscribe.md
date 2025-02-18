@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
-source-git-commit: 8e8f2d9fd360438f692a5cf79359d3a64c1220be
+source-git-commit: b3655506dff97756a59a63d5b8f0c358dc7c7510
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -64,10 +64,6 @@ Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina m
 >id="ajo_email_config_unsubscribe_custom"
 >title="Definiera hur data för att avbryta prenumerationen hanteras"
 >abstract="**Adobe hanterat**: Medgivandedata hanteras av dig i Adobe-systemet.<br>**Kundhanterad**: Medgivandedata hanteras av dig i ett externt system och ingen synkronisering av medgivandedata uppdateras i Adobe-systemet såvida det inte initieras av dig."
-
->[!AVAILABILITY]
->
->Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
 
 Om du hanterar samtycke utanför Adobe väljer du alternativet **[!UICONTROL Customer managed]** för att ange en anpassad e-postadress för att avbryta prenumerationen och en egen adress för att avsluta prenumerationen med ett enda klick.
 

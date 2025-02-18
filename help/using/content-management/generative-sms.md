@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
-source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
+source-git-commit: d2c008ab9b63df5b7a0ded317a97a4d26d2319e3
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '904'
 ht-degree: 2%
 
 ---
@@ -46,6 +46,10 @@ Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey O
 
    ![](assets/sms-genai-1.png){zoomable="yes"}
 
+1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
+
+   Observera att funktionen Varumärke släpps som en privat betaversion och kommer att finnas tillgänglig för alla kunder i framtida versioner.
+
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
@@ -55,7 +59,7 @@ Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey O
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
    * **[!UICONTROL Communication strategy]**: Välj önskad kommunikationsmetod för den genererade texten.
-   * **[!UICONTROL Language]**: Välj språk för variantens innehåll.
+   * **[!UICONTROL Languages]**: Spanska, italienska, svenska och norska språken är tillgängliga som en privat betaversion för alla kunder i framtida versioner.
    * **[!UICONTROL Tone]**: Se till att texten passar din målgrupp och ditt syfte.
    * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 
@@ -107,6 +111,10 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 1. Aktivera alternativet **[!UICONTROL Use reference content]** för AI-assistenten för att anpassa nytt innehåll baserat på det valda innehållet.
 
+1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
+
+   Observera att funktionen Varumärke släpps som en privat betaversion och kommer att finnas tillgänglig för alla kunder i framtida versioner.
+
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
@@ -116,7 +124,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
    * **[!UICONTROL Communication strategy]**: Välj önskad kommunikationsmetod för den genererade texten.
-   * **[!UICONTROL Language]**: Välj språk för variantens innehåll.
+   * **[!UICONTROL Languages]**: Spanska, italienska, svenska och norska språken är tillgängliga som en privat betaversion för alla kunder i framtida versioner.
    * **[!UICONTROL Tone]**: Se till att texten passar din målgrupp och ditt syfte.
    * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 

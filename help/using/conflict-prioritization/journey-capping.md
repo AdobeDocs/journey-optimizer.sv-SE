@@ -4,13 +4,13 @@ description: Lär dig hur du skapar regler för bockning för dina resor och hur
 role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
-source-git-commit: 4ab4b48ba87c73552a15c9815877517934029d57
+exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
+source-git-commit: 6e2a2505f1ffb7ff00f5e24763152b759073869d
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
-
 
 # Resebegränsning och skiljeförfarande {#journey-capping}
 
@@ -70,6 +70,10 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
       1. I fältet **[!UICONTROL Capping]** anger du det maximala antalet resor som en profil kan ange.
       1. I fältet **[!UICONTROL Duration]** definierar du tidsperioden som ska beaktas. Observera att längden baseras på UTC-tidszonen. Till exempel återställs daglig ändpunkt vid midnatt UTC.
+
+     >[!AVAILABILITY]
+     >
+     >Varaktigheten&quot;Daglig&quot; är endast tillgänglig vid behov. Kontakta din Adobe-representant för att få åtkomst.
 
      I det här exemplet vill vi begränsa profiler från att ange fler än fem resor per månad.
 

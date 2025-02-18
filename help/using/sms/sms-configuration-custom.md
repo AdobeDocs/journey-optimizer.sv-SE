@@ -4,21 +4,22 @@ product: journey optimizer
 title: Konfigurera din anpassade leverantör
 description: Lär dig hur du konfigurerar miljön för att skicka textmeddelanden med Journey Optimizer via en anpassad leverantör
 feature: SMS, Channel Configuration
+badge: label="Beta" type="Informative"
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: c9a35c2950c061318f673cdd53d0a5fd08063c27
+source-git-commit: f41426bd41078b98a26c32ce259a848ab49d724c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
-# Konfigurera en anpassad leverantör (Beta) {#sms-configuration-custom}
+# Konfigurera en anpassad provider {#sms-configuration-custom}
 
 >[!AVAILABILITY]
 >
->Anpassade leverantörer är för närvarande endast tillgängliga som betaversioner för vissa användare. Kontakta din Adobe-representant för att få delta i Beta.
+>Anpassade leverantörer är för närvarande endast tillgängliga som betaversioner för vissa användare. Kontakta Adobe om du vill vara med i Beta.
 >
 >Observera att denna Beta inte stöder inkommande meddelanden för hantering av anmälan/avanmälan och leveransrapportering.
 

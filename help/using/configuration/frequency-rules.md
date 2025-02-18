@@ -1,22 +1,22 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Affärsregler
-description: Lär dig hur du definierar frekvensregler
+title: Konfigurera affärsregler
+description: Lär dig hur du definierar regler för affärsfrekvens
 feature: Rules
 topic: Content Management
 role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 49248fb6-5a91-45b2-9de8-2f078d59c0fc
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1230'
 ht-degree: 0%
 
 ---
 
-# Affärsregler {#frequency-rules}
+# Konfigurera affärsregler {#frequency-rules}
 
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_message_frequency_rules"
@@ -124,7 +124,7 @@ Räknaren för varje period har följande förfallodatum:
 
 ### Daglig frekvensbegränsning {#daily-frequency-cap}
 
-Förutom månatligt och veckovis finns daglig frekvens tillgänglig vid behov. Kontakta din Adobe-representant om du vill veta mer.
+Förutom månatligt och veckovis finns daglig frekvens tillgänglig vid behov. Kontakta Adobe om du vill ha mer information.
 
 Den dagliga frekvensen gäller för dagen till :59: {59 UTC och återställs till 0 i början av nästa dag.
 

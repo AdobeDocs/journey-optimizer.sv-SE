@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
+source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 1%
+source-wordcount: '866'
+ht-degree: 0%
 
 ---
 
@@ -27,43 +27,15 @@ Du kan exportera datauppsättningar till sex molnlagringsmål som är tillgängl
 
 ![](assets/dataset-export-setup.png)
 
-
 Mer information om respektive mål finns i Adobe Experience Platform-dokumentationen:
 
-* [Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3.html)
-* [Azure-blob](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html)
-* [Azure Data Lake Gen 2](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2.html)
-* [Datalandningszon](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html)
-* [Google Cloud-lagring](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html)
-* [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html)
+* [Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3.html){target="_blank"}
+* [Azure-blob](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html){target="_blank"}
+* [Azure Data Lake Gen 2](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2.html){target="_blank"}
+* [Datalandningszon](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html){target="_blank"}
+* [Google Cloud-lagring](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html){target="_blank"}
+* [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html){target="_blank"}.
 
-## Tillgängliga datauppsättningar för export {#datasets}
-
-Förstå vilka Journey Optimizer-datauppsättningar du kan exportera från tabellen nedan.
-
-| Datauppsättning | Beskrivning |
-| ------- | ------- | 
-| AJO BCC Feedback Event Dataset | AJO BCC Feedback Event Dataset |
-| AJO Klassificeringsdatauppsättning | Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer. Skapat via SDK. |
-| Datamängd för tjänsten AJO Consent | Lagrar information om samtycke för en profil. |
-| AJO Experience Event-datauppsättning för e-postspårning | Interaktionsloggar för e-postkanal som används för att skapa rapporter och målgrupper.  |
-| AJO Entity Dataset | Datauppsättning som lagrar entitetsmetadata för meddelanden som skickas till slutanvändaren.  |
-| Inkommande aktivitetshändelsedatauppsättning för AJO | Datauppsättning för Journey Optimizer web- och inApp-kanaler för leverans- och interaktionshändelser. |
-| AJO Interactive Messaging Profile - datauppsättning | Lagrar profiler som skapats för stöd för API-utlösta kampanjer |
-| AJO Message Feedback Event Dataset | Meddelandeleveransloggar. Information om alla mejl från Journey Optimizer för rapportering och målgruppsframställning. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen. |
-| AJO Profile Counters Extension | Innehåller en karta över objekt som innehåller counter_value och expirationDate, transparenta av counter_id |
-| AJO Push Profile DataSet | Lagrar push-tokens för en profil. |
-| AJO Push Tracking Experience, händelsedatauppsättning | Interaktionsloggar för push-kanal som används för att skapa rapporter och målgrupper.  |
-| AJO Surfaces Dataset | Tom datamängd som är relaterad till schemat för inkommande Journey Optimizer-ytor |
-| AOOutputForUPSDataset | Innehåller alla AO-målgruppsmedlemskap som kan skrivas tillbaka till UPS |
-| Profildatauppsättning för målgruppssamordning | Genereras efter målgruppssammansättning för målgrupper med målgruppssammansättning. Innehåller alla målgrupper, deras attribut och berikande data |
-| Repositionen för beslutsobjekt - aktiviteter | kallas även beslut i användargränssnittet. Men det här är de objekt en användare skapar som sammanför alla byggstenar, inklusive beslutslogiken. Exempel: för en viss placering (plats), som erbjudanden ska beaktas (erbjudandesamling) och vilken rangordningsmetod som ska användas för dessa erbjudanden. |
-| Beslutsobjektarkiv - reserverbjudanden | detta är databasen för den andra typen av erbjudande som en användare skapar. I synnerhet om de inte är berättigade att se ett personaliserat erbjudande och behöver se något, kommer de åtminstone att se reserverbjudandet. Den här datauppsättningen innehåller attributen för den här typen av erbjudande |
-| Repository - Personalized offers | detta är databasen för en typ av erbjudande som en användare skapar. Den här datauppsättningen innehåller attribut om den här typen av erbjudande | Ultimate |
-| Beslutsobjektsdatabas - placeringar | detta är den objektdatabas som definierar var ett erbjudande ska visas. |
-| Resestegshändelser | Hämtar alla händelser av typen&quot;Journey Step Experience&quot; som genererats från Journey Optimizer och som ska användas av tjänster som Reporting. |
-| Resor | Inhysningsinformation för metadatadatauppsättning för varje steg i en resa |
-| ODE-beslutHändelser - preliminär beslut | När vi fattar ett beslut baserat på en begäran räknar vi det som en beslutshändelse |
 
 ## Förhandskrav {#prerequisites}
 
@@ -71,9 +43,9 @@ Om du vill exportera datauppsättningar behöver du de [åtkomstkontrollsbehöri
 
 | Kategori | Behörighet |
 |--|--|
-| Mål  | Hantera och aktivera datauppsättningsmål |
+| Mål | Hantera och aktivera datauppsättningsmål |
 | Datahantering | Visa datauppsättningar |
-| Mål  | Visa mål |
+| Mål | Visa mål |
 
 ## Viktiga steg för att exportera datauppsättningar {#main-steps}
 
@@ -108,3 +80,31 @@ Detaljerad information om varje steg finns i [Adobe Experience Platform-dokument
    <!--![](assets/dataset-export-review.png)-->
 
 När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema som du har konfigurerat. [Lär dig hur du verifierar datauppsättningsexporten](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify){target="_blank"}.
+
+## Tillgängliga datauppsättningar för export {#datasets}
+
+Förstå vilka Journey Optimizer-datauppsättningar du kan exportera från tabellen nedan.
+
+| Datauppsättning | Beskrivning |
+| ------- | ------- | 
+| AJO BCC Feedback Event Dataset | AJO BCC Feedback Event Dataset |
+| AJO Klassificeringsdatauppsättning | Datauppsättning för inmatning av e-post och push-meddelanden från Journey Optimizer. Skapat via SDK. |
+| Datamängd för tjänsten AJO Consent | Lagrar information om samtycke för en profil. |
+| AJO Experience Event-datauppsättning för e-postspårning | Interaktionsloggar för e-postkanal som används för att skapa rapporter och målgrupper.  |
+| AJO Entity Dataset | Datauppsättning som lagrar entitetsmetadata för meddelanden som skickas till slutanvändaren.  |
+| Inkommande aktivitetshändelsedatauppsättning för AJO | Datauppsättning för Journey Optimizer web- och inApp-kanaler för leverans- och interaktionshändelser. |
+| AJO Interactive Messaging Profile - datauppsättning | Lagrar profiler som skapats för stöd för API-utlösta kampanjer |
+| AJO Message Feedback Event Dataset | Meddelandeleveransloggar. Information om alla mejl från Journey Optimizer för rapportering och målgruppsframställning. Feedback från e-postleverantörer om studsar registreras också i den här datauppsättningen. |
+| AJO Profile Counters Extension | Innehåller en karta över objekt som innehåller counter_value och expirationDate, transparenta av counter_id |
+| AJO Push Profile DataSet | Lagrar push-tokens för en profil. |
+| AJO Push Tracking Experience, händelsedatauppsättning | Interaktionsloggar för push-kanal som används för att skapa rapporter och målgrupper.  |
+| AJO Surfaces Dataset | Tom datamängd som är relaterad till schemat för inkommande Journey Optimizer-ytor |
+| AOOutputForUPSDataset | Innehåller alla AO-målgruppsmedlemskap som kan skrivas tillbaka till UPS |
+| Profildatauppsättning för målgruppssamordning | Genereras efter målgruppssammansättning för målgrupper med målgruppssammansättning. Innehåller alla målgrupper, deras attribut och berikande data |
+| Repositionen för beslutsobjekt - aktiviteter | kallas även beslut i användargränssnittet. Men det här är de objekt en användare skapar som sammanför alla byggstenar, inklusive beslutslogiken. Exempel: för en viss placering (plats), som erbjudanden ska beaktas (erbjudandesamling) och vilken rangordningsmetod som ska användas för dessa erbjudanden. |
+| Beslutsobjektarkiv - reserverbjudanden | detta är databasen för den andra typen av erbjudande som en användare skapar. I synnerhet om de inte är berättigade att se ett personaliserat erbjudande och behöver se något, kommer de åtminstone att se reserverbjudandet. Den här datauppsättningen innehåller attributen för den här typen av erbjudande |
+| Repository - Personalized offers | detta är databasen för en typ av erbjudande som en användare skapar. Den här datauppsättningen innehåller attribut om den här typen av erbjudande |
+| Beslutsobjektsdatabas - placeringar | detta är den objektdatabas som definierar var ett erbjudande ska visas. |
+| Resestegshändelser | Hämtar alla händelser av typen&quot;Journey Step Experience&quot; som genererats från Journey Optimizer och som ska användas av tjänster som Reporting. |
+| Resor | Inhysningsinformation för metadatadatauppsättning för varje steg i en resa |
+| ODE-beslutHändelser - preliminär beslut | När vi fattar ett beslut baserat på en begäran räknar vi det som en beslutshändelse |

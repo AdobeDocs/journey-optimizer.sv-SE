@@ -9,24 +9,24 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: datauppsättning, optimering, användningsfall
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
 
-# Användningsexempel för datauppsättning {#tracking-datasets}
+# Frågeexempel {#query-examples}
 
 På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder och relaterade användningsfall:
 
-[Händelsedatauppsättning för e-postspårning](#email-tracking-experience-event-dataset)
-[ Händelsedatauppsättning för meddelandefeedback ](#message-feedback-event-dataset)
-[Push Tracking Experience, händelsedatauppsättning](#push-tracking-experience-event-dataset)
-[Resestegshändelse](#journey-step-event)
-[Information om beslutningshändelse](#ode-decisionevents)
-[BCC Feedback Event DataSet](#bcc-feedback-event-dataset)
-[Entitetsdatauppsättning ](#entity-dataset)
+* [Händelsedatauppsättning för e-postspårning](#email-tracking-experience-event-dataset)
+* [Händelsedatauppsättning för meddelandefeedback](#message-feedback-event-dataset)
+* [Händelsedatauppsättning för push-spårning](#push-tracking-experience-event-dataset)
+* [Resestegshändelse](#journey-step-event)
+* [Datamängd för beslutshändelse](#ode-decisionevents)
+* [BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
+* [Enhetsdatauppsättning](#entity-dataset)
 
 Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
@@ -192,7 +192,7 @@ _Internt namn: Resestegshändelser (systemdatauppsättning)_
 
 Datauppsättning för att importera steghändelser under resan.
 
-Det relaterade schemat är schemat för resesegmenthändelser för Journey Orchestration.
+Det relaterade schemat är schemat för resestegshändelser för Journey Orchestration.
 
 Den här frågan visar hur antalet lyckade åtgärder per åtgärdsetikett för en viss resa har fördelats:
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 2ce069f92e11fa9246736a4b71dfd66391d8b06c
+source-git-commit: 3331fd2ca9277bb634e3df0dd2e5a262bef459d7
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2245'
 ht-degree: 0%
 
 ---
@@ -285,8 +285,8 @@ Följ de här stegen för att **skapa** och avsluta villkor:
    ![](assets/exitcriteria.png){width="40%" align="left"}
 1. Ange en **etikett** och välj om ditt avslutsvillkor är baserat på en **händelse** eller en **publik**.
 
-För avslutningskriterier baserade på en händelse väljer du endast en händelse.
-Välj en målgrupp för avslutningskriterier som baseras på en målgrupp. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används för att bli effektiva.
+* För avslutningskriterier som baseras på en händelse, t.ex. nedladdning av en app eller tillägg av en produkt i en kundvagn, väljer du endast en enhetshändelse.
+* Välj en målgrupp för avslutningskriterier som baseras på en målgrupp, t.ex. en målgrupp som kontrollerar om en kund har köpt under de senaste 24 timmarna. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används för att bli effektiva.
 
 Du kan lägga till flera avslutningskriterier.
 

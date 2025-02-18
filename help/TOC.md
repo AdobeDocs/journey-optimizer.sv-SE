@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7aaaa566ec9e5a1cf50e067d7c3836bfc305b909
+source-git-commit: d2c008ab9b63df5b7a0ded317a97a4d26d2319e3
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2167'
 ht-degree: 24%
 
 ---
@@ -313,7 +313,9 @@ ht-degree: 24%
       + [SMS-generering med AI](using/content-management/generative-sms.md)
       + [Webbgenerering med AI](using/content-management/generative-web.md)
       + [Innehållsexperiment med AI](using/content-management/generative-experimentation.md)
+      + [Landningssida med AI](using/content-management/generative-lp.md)
       + [Användningsexempel för AI-assistenten](using/content-management/generative-uc.md)
+      + [Skapa och hantera varumärken (Beta)](using/content-management/brands.md)
    + Arbeta med flerspråkigt innehåll{#content-multilingual}
       + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
       + [Skapa en språkinställning](using/content-management/multilingual-locale.md)
@@ -376,7 +378,7 @@ ht-degree: 24%
          + [Segmentdefinitioner](using/audience/creating-a-segment-definition.md)
          + [Målgruppssammansättning](using/audience/get-started-audience-orchestration.md)
          + [Anpassad överföring](using/audience/custom-upload.md)
-         + [Federated Audience Composition (begränsad tillgänglighet)](using/audience/federated-audience-composition.md)
+         + [Federerad målgruppssammansättning](using/audience/federated-audience-composition.md)
       + [Målgruppsaktivering i kampanjer och resor](using/audience/target-audiences.md)
       + [Utnyttja anrikningsattribut](using/audience/enrichment-attributes.md)
    + Profiler{#profiles}
@@ -658,7 +660,7 @@ ht-degree: 24%
    + [Stöd för arkivering](using/configuration/archiving-support.md)
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera affärsregler](using/configuration/frequency-rules.md)
-   + [Arbeta med regeluppsättningar (LA)](using/configuration/rule-sets.md)
+   + [Arbeta med regeluppsättningar](using/configuration/rule-sets.md)
    + Konfigurera resor {#configure-journeys}
       + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + Integrera med externa system {#external-systems}
@@ -681,6 +683,7 @@ ht-degree: 24%
       + Åtgärdskonfiguration {#action-journeys}
          + [Om åtgärder](using/action/action.md)
          + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
+         + [Felsök anpassad åtgärd](using/action/troubleshoot-custom-action.md)
          + [Integrera med Adobe Campaign Standard](using/action/acs-action.md)
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
          + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)

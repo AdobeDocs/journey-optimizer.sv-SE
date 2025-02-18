@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med data i Journey Optimizer
+title: Kom igång med datahantering i Journey Optimizer
 description: Lär dig arbeta med data i Journey Optimizer
 feature: Journeys
 topic: Content Management
@@ -9,14 +9,14 @@ role: User
 level: Intermediate
 keywords: data, hantering, plattform
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
+source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
 
 ---
 
-# Kom igång med datahantering i [!DNL Journey Optimizer] {#about-data}
+# Kom igång med datahantering {#about-data}
 
 Riktighet och täckning av slutkundsdata är vad som definierar styrkan och framgången hos alla kundupplevelselösningar, och dessa data är skalbara och av högsta värde för varje enskild kund. Teknikval är nu inbyggt i en strikt utvärdering av datahanteringsfunktioner.
 

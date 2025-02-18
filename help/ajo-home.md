@@ -5,10 +5,10 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
+source-git-commit: 8b0dc1ba58c856cc3a0864e408415c87e10801cf
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 17%
+source-wordcount: '348'
+ht-degree: 18%
 
 ---
 
@@ -20,9 +20,9 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB Oktober &#39;24 utgåva]
+>[!TAB 25 februari]
 
-Oktober-versionen är nu aktiv, inklusive e-postinnehållslåsning, integrering med flyttbara tryckfärger, kodbaserade upplevelser och webbaserade upplevelser på resorna. Tidigare i Limited Availability (LA) fanns nu följande funktioner tillgängliga för alla: personalisering av e-postkonfiguration, policyer för godkännande, experimenterande av innehåll, förbättrad rapportupplevelse, flerspråkigt innehåll med mera.
+Februariutgåvan är nu live! Läs Versionsinformationen för att få reda på nya funktioner och förbättringar.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 

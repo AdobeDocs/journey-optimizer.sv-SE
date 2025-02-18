@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 179d0f8571bf2e4d4ea1c5ad8ab498de9e7b5550
+source-git-commit: b134fe166402e4ae49cd96fc09a19e14beb13523
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1414'
 ht-degree: 1%
 
 ---
@@ -142,7 +142,7 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Ange ett namn för konfigurationen.
 
-1. Välj Azure **[!UICONTROL Server type]** som ska användas för att exportera direktmeddelandefilerna.
+1. Välj Azure som **[!UICONTROL Server type]** som ska användas för att exportera direktmeddelandefilerna.
 
    ![](assets/file-routing-config-type-azure.png){width="800" align="center"}
 
@@ -163,6 +163,28 @@ Följ stegen nedan för att konfigurera filflödet.
 1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
 
    Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
+
+>[!TAB Datalandningszon]
+
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
+
+   ![](assets/file-routing-config-button.png){width="800" align="center"}
+
+1. Ange ett namn för konfigurationen.
+
+1. Välj Datallandningszon som **[!UICONTROL Server type]** som ska användas för export av direktmeddelandefiler.
+
+   ![](assets/file-routing-config-type-dlz.png){width="800" align="center"}
+
+1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**. <!--To find it, ...-->
+
+   ![](assets/file-routing-config-dlz-detail.png)
+
+1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
+
+   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
+
+Läs mer om datalandningszonen i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
 >[!ENDTABS]
 

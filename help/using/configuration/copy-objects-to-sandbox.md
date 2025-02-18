@@ -8,17 +8,17 @@ topic: Content Management
 role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
-source-git-commit: 62b5cfd480414c898ab6f123de8c6b9f99667b7d
+exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
+source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
 
+# Exportera objekt till en annan sandlåda {#copy-to-sandbox}
 
-# Kopiera Journey Optimizer-objekt till en annan sandlåda {#copy-to-sandbox}
-
-Med Sandbox Tooling kan du kopiera objekt som resor, innehållsmallar eller fragment över flera sandlådor genom att utnyttja export och import av paket. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
+Du kan kopiera objekt som resor, innehållsmallar eller fragment över flera sandlådor med hjälp av funktioner för paketexport och -import. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
 
 Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
 
@@ -88,13 +88,13 @@ Om du vill kopiera objekt till en annan sandlåda måste du först lägga till d
 >
 >Vid export av resor kopierar Journey Optimizer även merparten av de objekt som resan är beroende av: målgrupper, scheman, händelser och handlingar. Mer information om reseexport finns i [det här avsnittet](../building-journeys/copy-to-sandbox.md).
 
-## Publish paketet som ska exporteras {#publish}
+## Publicera paketet som ska exporteras {#publish}
 
 Så här publicerar du paketet:
 
 1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Sandboxes]** och välj fliken **Paket**.
 
-1. Öppna det paket som du vill exportera, markera de objekt som du vill exportera och klicka på **Publish**.
+1. Öppna det paket som du vill exportera, markera de objekt som du vill exportera och klicka på **Publicera**.
 
    I det här exemplet vill vi exportera en resa, en innehållsmall och ett fragment.
 

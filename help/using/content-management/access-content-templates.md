@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
-source-git-commit: 62b5cfd480414c898ab6f123de8c6b9f99667b7d
+source-git-commit: 5ce76bd61a61e1ed5e896f8da224fc20fba74b53
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -48,19 +48,19 @@ Du kan också välja att bara visa de objekt som du själv har skapat eller änd
 >
 >När en mall redigeras eller tas bort påverkas inte kampanjer eller resor inklusive innehåll som skapats med den här mallen.
 
-## Visa mallar som miniatyrbilder {#template-thumbnails}
+## [!BADGE Begränsad tillgänglighet]{type=Informative} Visa mallar som miniatyrbilder {#template-thumbnails}
 
 Välj läget **[!UICONTROL Grid view]** om du vill visa varje mall som en miniatyrbild.
 
 >[!AVAILABILITY]
 >
->Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
+Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
 
 ![](assets/content-template-grid-view.png)
 
 >[!NOTE]
 >
->För närvarande kan riktiga miniatyrbilder bara skapas för e-postinnehållsmallar av HTML-typ.
+För närvarande kan riktiga miniatyrbilder bara skapas för HTML-typer email innehållsmallar.
 
 När du uppdaterar ett innehåll kan du behöva vänta några sekunder innan ändringarna visas i miniatyrbilden.
 

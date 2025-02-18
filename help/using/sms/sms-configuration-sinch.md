@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
-source-git-commit: a196a27fd22a03915838ab4a9bb6139f85242f6b
+source-git-commit: 4f077e8223f9afe74288874542f8ef0052640dab
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '707'
 ht-degree: 1%
 
 ---
@@ -30,33 +30,27 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
 
 1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
 
-   * **[!UICONTROL SMS vendor]**: Dra.
++++ Lista över SMS-autentiseringsuppgifter för konfiguration
 
-   * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
+   | Konfigurationsfält | Beskrivning |
+   |---|---|    
+   | SMS-leverantör | Sinch |
+   | Namn | Välj ett namn för API-autentiseringsuppgifterna. |
+   | Tjänst-ID och API-token | Du hittar dina autentiseringsuppgifter på fliken SMS på API:er-sidan. Läs mer i [Signera dokumentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}. |
+   | Nyckelord för deltagande | Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt meddelande om att anmäla dig. Använd kommaseparerade värden för flera nyckelord. |
+   | Opt-in-meddelande | Ange det anpassade svar som automatiskt skickas som ditt meddelande. |
+   | Avanmäl nyckelord | Ange standardnyckelord eller anpassade nyckelord som automatiskt utlöser ditt avanmälningsmeddelande. Använd kommaseparerade värden för flera nyckelord. |
+   | Avanmäl meddelande | Ange det anpassade svar som automatiskt skickas som ditt avanmälningsmeddelande. |
+   | Hjälpnyckelord | Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt **hjälpmeddelande**. Använd kommaseparerade värden för flera nyckelord. |
+   | Hjälpmeddelande | Ange det anpassade svar som automatiskt skickas som **hjälpmeddelande**. |
+   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3427129/?learn=on). |
+   | Dubbelt meddelande om anmälan | Ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan. |
+   | Ingående nummer | Lägg till ditt unika inkommande nummer eller din korta kod. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer eller kort kod. |
+   | Anpassade inkommande nyckelord | Definiera unika nyckelord för specifika åtgärder, t.ex. RABATT, ERBJUDANDEN, REGISTRERING. Dessa nyckelord fångas in och lagras som attribut i profilen, vilket gör att du kan aktivera en segmentkvalificering för direktuppspelning under resan och leverera ett anpassat svar eller en anpassad åtgärd. |
+   | Standardsvarsmeddelande för inkommande trafik | Ange standardsvaret som skickas när en slutanvändare skickar ett inkommande SMS som inte matchar något av de definierade nyckelorden. |
+   | Åsidosätt URL | Ange din anpassade URL för att ersätta standardslutpunkterna för SMS-leveransrapporter, feedbackdata, inkommande meddelanden eller händelsemeddelanden. Sinch skickar alla relevanta uppdateringar till den här URL:en i stället för de fördefinierade. |
 
-   * **[!UICONTROL Service ID]** och **[!UICONTROL API Token]**: gå till API:er-sidan och hitta dina autentiseringsuppgifter på fliken SMS. Läs mer i [Signera dokumentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.
-
-   * **[!UICONTROL Opt-In Keywords]**: ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa **[!UICONTROL Opt-In Message]**. Använd kommaseparerade värden för flera nyckelord.
-
-   * **[!UICONTROL Opt-In Message]**: Ange det anpassade svar som automatiskt skickas som **[!UICONTROL Opt-In Message]**.
-
-   * **[!UICONTROL Opt-Out Keywords]**: ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa **[!UICONTROL Opt-Out Message]**. Använd kommaseparerade värden för flera nyckelord.
-
-   * **[!UICONTROL Opt-Out Message]**: Ange det anpassade svar som automatiskt skickas som **[!UICONTROL Opt-Out Message]**.
-
-   * **[!UICONTROL Help Keywords]**: ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt **hjälpmeddelande**. Använd kommaseparerade värden för flera nyckelord.
-
-   * **[!UICONTROL Help Message]**: ange det anpassade svar som automatiskt skickas som **hjälpmeddelande**.
-
-   * **[!UICONTROL Double Opt-In Keywords]**: ange nyckelorden som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3427129/?learn=on).
-
-   * **[!UICONTROL Double Opt-In Message]**: Ange det anpassade svar som skickas automatiskt som svar på bekräftelsen av dubbel anmälan.
-
-   * **[!UICONTROL Inbound Number]**: lägg till ditt unika inkommande nummer eller din korta kod. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer eller kort kod.
-
-   * **[!UICONTROL Custom Inbound Keywords]**: Definiera unika nyckelord för specifika åtgärder, t.ex. RABATT, ERBJUDANDEN, REGISTRERING. Dessa nyckelord fångas in och lagras som attribut i profilen, vilket gör att du kan aktivera en segmentkvalificering för direktuppspelning under resan och leverera ett anpassat svar eller en anpassad åtgärd.
-
-   * **[!UICONTROL Default Inbound Reply Message]**: Ange det standardsvar som skickas när en slutanvändare skickar ett inkommande SMS som inte matchar något av de definierade nyckelorden.
++++
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 

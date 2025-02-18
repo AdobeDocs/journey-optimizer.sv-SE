@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 88dff9f42636a81b54b7050da3542f839c14164e
+source-git-commit: 0c128feac32baff14f1b71aed688e3bde4c67d35
 workflow-type: tm+mt
-source-wordcount: '2493'
+source-wordcount: '2538'
 ht-degree: 0%
 
 ---
@@ -74,11 +74,15 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
       ![](assets/ip-warmup-plan-exclude-domains.png)
 
-      När du har kört IP-värmning i några dagar inser du att ditt ISP-rykte med en domän (till exempel Adobe) inte är bra och du vill lösa det utan att stoppa IP-värmningsplanen. I så fall kan du utesluta domängruppen Adobe.
+      När du har kört IP-värmning i några dagar inser du att ditt ISP-rykte med en domän (till exempel Adobe) inte är bra och du vill lösa det utan att stoppa IP-värmningsplanen. I så fall kan du utesluta Adobe domängrupp.
 
       >[!NOTE]
       >
       >Du kan bara utesluta en anpassad domängrupp som har lagts till i mallen [för IP-värmerappen](ip-warmup-plan.md#prepare-file). Om så inte är fallet uppdaterar du mallen med den anpassade domängruppen som du vill utesluta och [överför planen](#re-upload-plan) igen.
+
+      >[!CAUTION]
+      >
+      >Om du uppdaterar [körningsadressen](../email/email-settings.md#execution-address) i e-postkanalens [konfiguration](channel-surfaces.md) som används i IP-värmarkampanjen kan det hända att domänundantaget inte fungerar när IP-värmersplanen har körts. Redigera inte e-postkanalens konfiguration efter att IP-värmningsplanen har startats.
 
    1. I avsnittet **[!UICONTROL Campaign for exclusion of profiles]** väljer du de kampanjer som du vill utesluta från den aktuella fasen.
 

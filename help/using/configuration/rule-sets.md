@@ -1,18 +1,17 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Arbeta med regeluppsättningar (LA)
+title: Arbeta med regeluppsättningar
 description: Lär dig hur du skapar och använder regeluppsättningar
 feature: Rules
 topic: Content Management
 role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
-badge: label="Begränsad tillgänglighet"
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 4ab4b48ba87c73552a15c9815877517934029d57
+source-git-commit: 6e2a2505f1ffb7ff00f5e24763152b759073869d
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1881'
 ht-degree: 0%
 
 ---
@@ -23,10 +22,6 @@ ht-degree: 0%
 >id="ajo_business_rules_rule_sets"
 >title="Regeluppsättningar"
 >abstract="Använd regeluppsättningar för att tillämpa frekvensbegränsning för olika typer av marknadsföringskommunikation. Du kan också skapa regeluppsättningar för att exkludera resor till en del av målgruppen baserat på regler för frekvensbegränsning."
-
->[!AVAILABILITY]
->
->Regeluppsättningar är för närvarande tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att den här funktionen gradvis kommer att lanseras för fler användare i framtiden. Kontakta ert kontoteam om ni är intresserade av att läggas till i väntelistan.
 
 ## Kom igång med regeluppsättningar {#gs}
 
@@ -68,7 +63,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
 >[!NOTE]
 >
->Du kan skapa upp till tre anpassade regeluppsättningar.
+>Du kan skapa upp till tre lokala regeluppsättningar för kanaldomänen och upp till 5 lokala regeluppsättningar för resedomänen.
 
 1. Öppna listan **[!UICONTROL Rules sets]** och klicka sedan på **[!UICONTROL Create rule set]**.
 
@@ -127,6 +122,10 @@ Vilka parametrar som är tillgängliga för regeln beror på vilken regeluppsät
 1. I listrutan **[!UICONTROL Duration]** väljer du om du vill att capping ska användas varje månad, vecka eller dag. Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
 
    ![](assets/rule-set-capping-duration.png)
+
+   >[!AVAILABILITY]
+   >
+   >Varaktigheten&quot;Daglig&quot; är endast tillgänglig vid behov. Kontakta din Adobe-representant för att få åtkomst.
 
    Räknaren för varje period har följande förfallodatum:
 
@@ -193,7 +192,7 @@ Du måste också aktivera regeluppsättningen för att kunna komma åt den i kam
 
 >[!NOTE]
 >
->Det kan ta upp till 10 minuter för en regel eller regeluppsättning att aktiveras fullständigt. Du behöver inte ändra meddelanden eller publicera om resor för att en regel ska börja gälla.
+>Det kan ta upp till 20 minuter för en regel eller regeluppsättning att aktiveras fullständigt. Du behöver inte ändra meddelanden eller publicera om resor för att en regel ska börja gälla.
 
 <!--Currently, once a rule set is activated, no more rules can be added to that rule set.-->
 

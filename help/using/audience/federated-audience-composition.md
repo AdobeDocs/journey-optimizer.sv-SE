@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 90328ba9-e6b0-4105-abcf-3e3a9ed41aa6
-source-git-commit: f99ba639b5d47fa334741b7e55e7bce83697626d
+source-git-commit: 5ce76bd61a61e1ed5e896f8da224fc20fba74b53
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%
@@ -28,7 +28,7 @@ som nyligen har lagt beställningar online med varje kunds favoritrestaurang, vi
 * **Effektiv datahantering** - Minimera datakopiering, styr känslig
 dataanvändning och optimera IT-investeringar för att komplettera kanalövergripande användningsfall i realtid på Adobe
 
-Mer information finns i guiden om [Federated Audience Composition](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home).
+Mer information finns i handboken om [Federated Audience Composition](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home){target="_blank"}.
 
 Lär dig mer om Federated Audience Composition i video:
 
