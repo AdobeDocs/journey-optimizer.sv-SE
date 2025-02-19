@@ -9,10 +9,10 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
-source-git-commit: e47c95ac8981356bcfb742105cbf1faa5d53c189
+source-git-commit: d7ef9cb8b74781d5c711bd2958070767735a3b24
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '571'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 Du kan testa dina anpassade åtgärder genom att skicka API-anrop från administrationsdelen av Journey Optimizer användargränssnitt. Den här funktionen hjälper dig att felsöka anpassade åtgärder före eller efter att du har använt dem under en resa.
 
-Som administratör kan du använda funktionen **[!UICONTROL Send Test Request]** för att validera dina anpassade åtgärdskonfigurationer genom att göra riktiga API-anrop direkt från Adobe Journey Optimizer. Med den här funktionen säkerställs att begärandestrukturen, rubrikerna, autentiseringen och nyttolasterna är korrekt formaterade innan de används under en resa.
+Som administratör kan du använda funktionen **[!UICONTROL Send test request]** för att validera dina anpassade åtgärdskonfigurationer genom att göra riktiga API-anrop direkt från Adobe Journey Optimizer. Med den här funktionen säkerställs att begärandestrukturen, rubrikerna, autentiseringen och nyttolasterna är korrekt formaterade innan de används under en resa.
 
 ![](assets/send-test-request.png){width="70%" align="left"}
 
@@ -34,9 +34,9 @@ Använd den här funktionen för att effektivisera testnings- och valideringspro
 
 ## Förhandskrav {#troubleshoot-custom-action-prereq}
 
-Om du vill använda funktionen **[!UICONTROL Send Test Request]** måste en **anpassad åtgärd** vara förkonfigurerad med en URL, rubriker och autentiseringsinställningar.
+Om du vill använda funktionen **[!UICONTROL Send test request]** måste en **anpassad åtgärd** vara förkonfigurerad med en URL, rubriker och autentiseringsinställningar.
 
-För att administratören ska kunna använda den här funktionen krävs följande behörigheter:
+För att administratörerna ska kunna använda den här funktionen krävs följande behörigheter:
 
 * Användare måste ha behörighet **[!DNL Manage journeys events, data sources and actions]**.
 * Den här behörigheten ingår i rollen *Reseadministratörer*.
@@ -48,8 +48,11 @@ Läs mer om resebehörigheter i [det här avsnittet](../administration/high-low-
 
 Så här testar du en anpassad åtgärd:
 
-1. Navigera till konfigurationsskärmen **Anpassade åtgärder**.
-1. Klicka på knappen **[!UICONTROL Send Test Request]**.
+1. Navigera till konfigurationsskärmen **Anpassade åtgärder** och välj en anpassad åtgärd.
+1. Klicka på knappen **[!UICONTROL Send test request]** längst ned i åtgärdskonfigurationsfönstret.
+
+![Skicka testbegärandeknapp på åtgärdskonfigurationspanelen](assets/test-request.png){width="70%" align="left"}
+
 1. I popup-fönstret kan du ange frågeparametrar:
 
    * Om den anpassade åtgärdsmetoden **är GET** krävs ingen nyttolast.
@@ -81,7 +84,7 @@ Som Journey Optimizer-administratör kan du även använda externa verktyg (t.ex
    * Exakt begärandestruktur (inklusive Adobe Journey Optimizer-specifika rubriker) används.
    * Källans IP och rubriker matchar dem som används i direktresor.
 
-* Funktionen **[!UICONTROL Send Test Request]** kan användas för felsökning av **direktresor** eftersom den anpassade åtgärden redan har distribuerats.
+* Funktionen **[!UICONTROL Send test request]** kan användas för felsökning av **direktresor** eftersom den anpassade åtgärden redan har distribuerats.
 
 * Denna testfunktion i produkten eliminerar behovet av att manuellt kopiera konfigurationsinformation mellan verktyg, vilket minskar risken för fel.
 
