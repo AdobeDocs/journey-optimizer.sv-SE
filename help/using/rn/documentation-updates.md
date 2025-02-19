@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 8e8f2d9fd360438f692a5cf79359d3a64c1220be
+source-git-commit: 40bef9a05fef1433773a73d546752e84f81b7366
 workflow-type: tm+mt
-source-wordcount: '6043'
+source-wordcount: '6037'
 ht-degree: 12%
 
 ---
@@ -123,7 +123,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
    * E: Kortkommando som används för att utlösa en händelse i en händelsebaserad resa.
    * P: Kortkommando för att utlösa en händelse i en målgruppsbaserad resa där alternativet Enstaka profil i taget är aktiverat.
    * L: Kortkommando för att visa testloggarna.
-* Regelsidan för meddelandefrekvens har uppdaterats med ett nytt underavsnitt om dagligt frekvenstak, som är tillgängligt på begäran utöver vecko- eller månadsvisa capping. [Läs mer](../configuration/frequency-rules.md#daily-frequency-cap)
+* Regelsidan för meddelandefrekvens har uppdaterats med ett nytt underavsnitt om dagligt frekvenstak, som är tillgängligt på begäran utöver vecko- eller månadsvisa capping.
 * Sidan Arbeta med profiler för samtycke har förbättrats och uppdaterats med användbara länkar till Experience Platform-dokumentationen. [Läs mer](../action/consent.md)
 * Ett nytt avsnitt har lagts till för att återspegla att du kan visa HTML mallar för e-postinnehåll som miniatyrbilder i stödrastervisningsläget (begränsad tillgänglighet). [Läs mer](../content-management/content-templates.md#template-thumbnails)
 * Ett nytt avsnitt har lagts till på sidan Leverans för att förklara vilka feedback-slingor som är och hur de kan användas. [Läs mer](../reports/deliverability.md#feedback-loops)
@@ -140,7 +140,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Listan med funktioner i den avancerade uttrycksredigeraren har uppdaterats. [Läs mer](../building-journeys/expression/functions.md)
 * Sidan i funktionen Dela har uppdaterats. [Läs mer](../building-journeys/functions/functioninaudience.md)
 * Information har lagts till om effekten av push-meddelanden för anmälan eller avanmälan av meddelanden i appen. [Läs mer](../in-app/create-in-app.md)
-* Regelsidan för meddelandefrekvens har uppdaterats för att återspegla de varaktighetsalternativ som är tillgängliga i användargränssnittet (varje vecka eller månad). [Läs mer](../configuration/frequency-rules.md)
+* Regelsidan för meddelandefrekvens har uppdaterats för att återspegla de varaktighetsalternativ som är tillgängliga i användargränssnittet (varje vecka eller månad).
 * Avsnittet Redigera en PTR-post har uppdaterats för att klargöra att PTR-poster inte kan skapas manuellt och att du måste redigera PTR-poster för att tilldela dem nya underdomäner. [Läs mer](../configuration/ptr-records.md#edit-ptr-record)
 
 ## Januari 2024 {#jan-2024}
@@ -338,7 +338,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Augusti 2022 {#august-2022}
 
 * Alla nya funktioner och förbättringar som kommer med versionen [!DNL Journey Optimizer] augusti 22 finns detaljerade i dokumentationen. [Läs mer](release-notes.md)
-* Avsnittet Frekvensregler har uppdaterats för att återspegla det nya textbundna meddelandeflödet. [Läs mer](../configuration/frequency-rules.md#apply-frequency-rule)
+* Avsnittet Frekvensregler har uppdaterats för att återspegla det nya textbundna meddelandeflödet.
 * En video som visar hur du konfigurerar prenumerationer och skapar landningssidor finns nu i avsnittet Kom igång med landningssidor. [Läs mer](../landing-pages/get-started-lp.md#video)
 * En begränsning har lagts till för resor med hjälp av Läs publik-aktiviteter. [Läs mer](../building-journeys/read-audience.md)
 * Operatorsidan för uttrycksredigeraren har förbättrats. [Läs mer](../building-journeys/expression/operators.md)

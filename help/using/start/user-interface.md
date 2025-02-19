@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
+source-git-commit: 40bef9a05fef1433773a73d546752e84f81b7366
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 5%
@@ -128,7 +128,7 @@ Styr din sekretesshantering och dina förfrågningar från det här avsnittet.
 
   Du kan även komma åt avsnittet **Rapportering** för att konfigurera rapportering för kampanjexperiment och webb/mobil. [Läs mer](../reports/reporting-configuration.md)
 
-* **[!UICONTROL Business rules]** - Använd det här avsnittet om du vill skapa affärsregler för flera kanaler för att styra hur ofta användare tar emot ett meddelande eller deltar i en resa. [Läs mer](../configuration/frequency-rules.md)
+* **[!UICONTROL Business rules]** - Använd det här avsnittet om du vill skapa affärsregler för flera kanaler för att styra hur ofta användare tar emot ett meddelande eller deltar i en resa. [Läs mer](../configuration/rule-sets.md)
 
 * **[!UICONTROL Alerts]** - Med användargränssnittet kan du visa en historik över mottagna aviseringar baserat på mätvärden som visas av Adobe Experience Platform observability Insights. I gränssnittet kan du även visa, aktivera och inaktivera tillgängliga varningsregler. [Läs mer](../reports/alerts.md)
 
