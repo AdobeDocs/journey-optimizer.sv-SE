@@ -7,7 +7,7 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 8f296109555edcfdc9e66fae312e6100e98ed78e
+source-git-commit: 0510811c2777fc8483b4220cc5a9f023dd5bf2c6
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 1%
@@ -80,85 +80,85 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Fyll i fälten som är specifika för varje servertyp enligt flikarna nedan.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Amazon S3]
+>[!TAB Amazon S3]
 
-   Om du valde **[!UICONTROL Amazon S3]** som **[!UICONTROL Server type]**:
+Om du valde **[!UICONTROL Amazon S3]** som **[!UICONTROL Server type]**:
 
-   1. Fyll i information och autentiseringsuppgifter för servern
+1. Fyll i information och autentiseringsuppgifter för servern
 
-      * **AWS-bucket**:Information om var du hittar ditt AWS-bucket-namn finns på [den här sidan](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html).
+   * **AWS-bucket**:Information om var du hittar ditt AWS-bucket-namn finns på [den här sidan](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html).
 
-      * **AWS-åtkomstnyckel**: Information om var du hittar ditt AWS-ID finns på [den här sidan](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html#access-keys-and-secret-access-keys).
+   * **AWS-åtkomstnyckel**: Information om var du hittar ditt AWS-ID finns på [den här sidan](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html#access-keys-and-secret-access-keys).
 
-      * **AWS hemlig nyckel**: Om du vill veta var du hittar din hemliga AWS-nyckel kan du läsa [den här sidan](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+   * **AWS hemlig nyckel**: Om du vill veta var du hittar din hemliga AWS-nyckel kan du läsa [den här sidan](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
-      * **AWS-region**: välj **[!UICONTROL AWS region]** där serverinfrastrukturen ska finnas. AWS-regioner är geografiska områden som AWS använder för sin molninfrastruktur. Som allmän praxis är det att föredra att välja den region som ligger närmast din direktreklamleverantörs plats.
+   * **AWS-region**: välj **[!UICONTROL AWS region]** där serverinfrastrukturen ska finnas. AWS-regioner är geografiska områden som AWS använder för sin molninfrastruktur. Som allmän praxis är det att föredra att välja den region som ligger närmast din direktreklamleverantörs plats.
 
-      ![](assets/file-routing-config-aws-region.png){width="800" align="center"}
+   ![](assets/file-routing-config-aws-region.png){width="800" align="center"}
 
-   1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
+1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-   >[!TAB SFTP]
+>[!TAB SFTP]
 
-   Om du valde **[!UICONTROL SFTP]** som **[!UICONTROL Server type]**:
+Om du valde **[!UICONTROL SFTP]** som **[!UICONTROL Server type]**:
 
-   1. Fyll i information och autentiseringsuppgifter för servern:
+1. Fyll i information och autentiseringsuppgifter för servern:
 
-      * **Konto**: Det kontonamn som används för att ansluta till SFTP-servern.
+   * **Konto**: Det kontonamn som används för att ansluta till SFTP-servern.
 
-      * **Serveradress**: &#x200B; URL för SFTP-servern.
+   * **Serveradress**: &#x200B; URL för SFTP-servern.
 
-      * **Port**: FTP-anslutningens portnummer.
+   * **Port**: FTP-anslutningens portnummer.
 
-      * **Lösenord**: &#x200B; lösenord som används för att ansluta till SFTP-servern.
+   * **Lösenord**: &#x200B; lösenord som används för att ansluta till SFTP-servern.
 
-      ![](assets/file-routing-config-sftp-detail.png)
+   ![](assets/file-routing-config-sftp-detail.png)
 
-      >[!NOTE]
-      >
-      >Om du vill ange en sökväg på servern för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att det innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
+   >[!NOTE]
+   >
+   >Om du vill ange en sökväg på servern för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att det innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
 
-   1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
+1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-   >[!TAB Azure]
+>[!TAB Azure]
 
-   Om du valde **[!UICONTROL Azure]** som **[!UICONTROL Server type]**:
+Om du valde **[!UICONTROL Azure]** som **[!UICONTROL Server type]**:
 
-   1. Fyll i information och autentiseringsuppgifter för servern:
+1. Fyll i information och autentiseringsuppgifter för servern:
 
-      * **Azure-anslutningssträng**: Om du vill hitta din **Azure-anslutningssträng** läser du [den här sidan](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string#configure-a-connection-string-for-an-azure-storage-account).
+   * **Azure-anslutningssträng**: Om du vill hitta din **Azure-anslutningssträng** läser du [den här sidan](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string#configure-a-connection-string-for-an-azure-storage-account).
 
-        **Azure-anslutningssträngen** ska följa formatet nedan:
+     **Azure-anslutningssträngen** ska följa formatet nedan:
 
-        `DefaultEndpointsProtocol=[http|https];AccountName=myAccountName;AccountKey=myAccountKey`
+     `DefaultEndpointsProtocol=[http|https];AccountName=myAccountName;AccountKey=myAccountKey`
 
-      * **Behållarnamn**: Om du vill hitta **Behållarnamn** kan du läsa [den här sidan](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
+   * **Behållarnamn**: Om du vill hitta **Behållarnamn** kan du läsa [den här sidan](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
 
-        **Behållarnamnet** får bara innehålla behållarens namn utan snedstreck.
+     **Behållarnamnet** får bara innehålla behållarens namn utan snedstreck.
 
-        >[!NOTE]
-        >
-        >Om du vill ange en sökväg i behållaren för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att den innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
+     >[!NOTE]
+     >
+     >Om du vill ange en sökväg i behållaren för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att den innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
 
-        ![](assets/file-routing-config-azure-detail.png)
+     ![](assets/file-routing-config-azure-detail.png)
 
-   1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
+1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-   >[!TAB Datalandningszon]
+>[!TAB Datalandningszon]
 
-   Om du valde **[!UICONTROL Data Landing Zone]** som **[!UICONTROL Server type]** behövs ingen specifik information.
+Om du valde **[!UICONTROL Data Landing Zone]** som **[!UICONTROL Server type]** behövs ingen specifik information.
 
-   Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
+Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-   ![](assets/file-routing-config-dlz-detail.png)
+![](assets/file-routing-config-dlz-detail.png)
 
-   Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landing Zone-behållare per sandlåda. Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
+Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landing Zone-behållare per sandlåda. Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
-1. Välj **[!UICONTROL Submit]** när du har fyllt i informationen om din servertyp. Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
+5. Välj **[!UICONTROL Submit]** när du har fyllt i informationen om din servertyp. Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
 
    Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
 
