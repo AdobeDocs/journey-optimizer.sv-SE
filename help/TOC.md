@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d2c008ab9b63df5b7a0ded317a97a4d26d2319e3
+source-git-commit: b6c31528784c0c8576e3200e7611a6b6cd43d7a7
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2174'
 ht-degree: 24%
 
 ---
@@ -452,6 +452,7 @@ ht-degree: 24%
    + [Kom igång med beslutsfunktioner](using/experience-decisioning/gs-decision.md)
    + Avgör {#experience-decisioning}
       + [Kom igång med beslutsfattande](using/experience-decisioning/gs-experience-decisioning.md)
+      + [Avgörande av skyddsräcken och begränsningar](using/experience-decisioning/decisioning-guardrails.md)
       + API-referens {#api-reference}
          + Beslutsobjekt {#decision-items}
             + [Skapa beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/create.md)
@@ -486,6 +487,7 @@ ht-degree: 24%
    + Beslutshantering {#offer-decisioning}
       + Kom igång med beslutshantering {#get-started-decision}
          + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
+         + [Avancerade hanteringsgarantier och begränsningar](using/offers/decision-management-guardrails.md)
          + [Användargränssnitt](using/offers/get-started/user-interface.md)
          + [Viktiga steg för att skapa och hantera erbjudanden](using/offers/offer-library/key-steps.md)
          + [Utnyttja anpassade uppladdningsmålgrupper för beslut](using/offers/custom-upload-decisioning.md)

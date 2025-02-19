@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 7aaaa566ec9e5a1cf50e067d7c3836bfc305b909
+source-git-commit: b6c31528784c0c8576e3200e7611a6b6cd43d7a7
 workflow-type: tm+mt
-source-wordcount: '2497'
+source-wordcount: '2289'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,17 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 * Visuella fragment är bara tillgängliga för e-postkanalen.
 * Uttrycksfragment är inte tillgängliga för kanalen i appen.
 
+## Målgrupper och skyddsräcken {#audience}
+
+Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
+
+## Beslutsfattare och beslutsföringsgarantier {#decisioning}
+
+Garantier och begränsningar som ska beaktas när man arbetar med beslut eller beslutshantering beskrivs i dessa avsnitt av beslut och beslutshantering:
+
+* [Avgörande av skyddsräcken och begränsningar](../experience-decisioning/decisioning-guardrails.md)
+* [Garantier och begränsningar för beslutshantering](../offers/decision-management-guardrails.md)
+
 ## Resehanddukar {#journeys-guardrails}
 
 ### Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
@@ -85,7 +96,6 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 * När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
 * En reseinstans för en profil har en maxstorlek på 1 MB. Alla data som samlas in som en del av körningen lagras i den aktuella reseinstansen. Det innebär att data från en inkommande händelse, profilinformation som hämtats från Adobe Experience Platform, anpassade åtgärdssvar osv. lagras i den reseinstansen och påverkar resans storlek. När en resa börjar med en händelse bör du begränsa den maximala nyttolasten för händelsen (t.ex. under 800 kB) för att undvika att nå den gränsen efter några få aktiviteter vid körningen av resan. När gränsen nås har profilen en felstatus och kommer inte att ingå i resan.
 * Förutom den tidsgräns som används i reseaktiviteter finns det också en global tidsgräns för resan som inte visas i gränssnittet och som inte kan ändras. Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan 91 dagar efter att de har gått in. [Läs mer](../building-journeys/journey-properties.md#global_timeout)
-
 
 ### Allmänna åtgärder {#general-actions-g}
 
@@ -127,7 +137,6 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 * Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
 * Journey Optimizer kräver att händelser direktuppspelas till datainsamlingens bastjänst (DCCS) för att kunna utlösa en resa. Händelser som är inkapslade i batch eller händelser från interna Journey Optimizer-datauppsättningar (meddelandefeedback, e-postspårning osv.) kan inte användas för att utlösa en resa. I de fall där du inte kan få direktuppspelade händelser måste du skapa en målgrupp baserat på dessa händelser och använda aktiviteten **Läs målgrupp** i stället. Målgruppskompetens kan användas tekniskt, men rekommenderas inte eftersom den kan orsaka efterföljande utmaningar baserat på de åtgärder som används.
 
-
 ### Datakällor {#data-sources-g}
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
@@ -153,7 +162,6 @@ Du kan välja mellan följande två lösningar:
 
 Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**. De listas på [den här sidan](../building-journeys/update-profiles.md).
 
-
 ### Läs målgrupp {#read-segment-g}
 
 Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Read Audience]**:
@@ -166,18 +174,15 @@ Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Read Audience]**:
 * Se även rekommendationer om hur du använder aktiviteten **Läs målgrupp** i [den här sidan](../building-journeys/read-audience.md).
 * Återförsök används som standard på målgruppsinlösta resor (med början från en **Läs målgrupp** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden.
 
-
 ### Målgruppskvalifikation {#audience-qualif-g}
 
 Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Audience Qualification]**:
 
 * Det går inte att använda aktiviteten Audience-kvalificering med Adobe Campaign-aktiviteter.
 
-
 ### Uttrycksredigerare {#expression-editor}
 
 * Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Du måste skapa en ny målgrupp och använda ett villkor för målgrupp under resan.
-
 
 ### Aktivitet i appen {#in-app-activity-limitations}
 
@@ -197,8 +202,6 @@ Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Audience Qualifica
 
 * Innehållets storlek för meddelanden i appen är begränsad till 2 MB. Om du inkluderar stora bilder kan det försvåra publiceringsprocessen.
 
-
-
 ### Hoppaktivitet {#jump-g}
 
 Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Jump]**. De listas på [den här sidan](../building-journeys/jump.md#jump-limitations).
@@ -209,37 +212,3 @@ Följande skyddsförslag gäller för **[!UICONTROL Campaign v7/v8]**- och **[!U
 
 * Adobe Campaign-aktiviteter kan inte användas med en läs- eller målgruppsaktivitet.
 * Dessa aktiviteter kan inte användas med aktiviteter i appen.
-
-## Målgrupper och skyddsräcken {#audience}
-
-Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
-
-## Handläggningsgaranti {#decision-management}
-
-### Prestandaskydd {#performance-guardrails}
-
-Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrningsapptjänsten under en angiven tidsperiod. Antalet beslut per sekund anges i tabellen nedan.
-
-| API | Beslut per sekund |
-|---------|----------|
-| API-begäranden för beslut | 500 per sekund |
-| Edge Decisioning API requests with Edge Segmentation | 1 500 per sekund |
-| Edge Decisioning API-begäranden utan Edge Segmentering | 5 000 per sekund |
-
-### Begränsningar {#offers-limitations}
-
-Begränsningarna för beslutshantering anges nedan.
-
-* **Godkända personliga erbjudanden + reserverbjudanden** - upp till 10 000 kombinerade godkända personliga erbjudanden och godkända reserverbjudanden.
-* **Beslut** - upp till 10 000 beslut.
-* **Live-beslut** - Offer Decisioning App Service stöder upp till 1 000 Live-beslut.
-* **Erbjudanden som returneras per svar** - Offer Decisioning stöder upp till 100 erbjudanden som returneras per begäran för alla beslutsomfattningar som begärs.
-* **Samlingar** - Upp till 10 000 samlingar.
-* **Samlingar per beslut** - Upp till 30 samlingar per beslut.
-* **Beslutsregler + rangordningsfunktioner** Upp till 10 000 kombinerade beslutsregler och rangordningsfunktioner.
-* **Placeringar** - Upp till 1 000 placeringar.
-* **Placeringar per beslut** - upp till 30 praktik per beslut.
-* **Rankningsmetod per beslut** - Offer Decisioning App Service stöder upp till 30 rankningsfunktioner per beslut.
-* **AI-rankningsmodell** - Offer Decisioning App Service stöder upp till 5 AI-rankningsmodeller.
-* **Samlingskvalificerare per erbjudande eller samling** - Offer Decisioning App Service stöder upp till 20 samlingskvalificerare i ett personligt erbjudande eller en enda samling.
-* **Totalt antal samlingskvalificerare** - Offer Decisioning App Service stöder upp till 1 000 samlingskvalificerare.

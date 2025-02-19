@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
+source-git-commit: b6c31528784c0c8576e3200e7611a6b6cd43d7a7
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -31,26 +31,6 @@ Dessa beslutsobjekt integreras smidigt i ett brett urval av inkommande ytor via 
 >Beslutspolicyer är endast tillgängliga för kodbaserade upplevelsekampanjer.
 
 ➡️ Ett heltäckande användningsexempel som visar hur du skapar beslut och använder dem i innehållsexperiment med den kodbaserade upplevelsekanalen visas i [det här avsnittet](experience-decisioning-uc.md).
-
-## Skyddsritningar och begränsningar {#guardrails}
-
-För att säkerställa optimal användning av beslut bör du tänka på följande skyddsförslag och begränsningar:
-
-### Allmänna skyddsräcken {#general}
-
-* **Erbjudandeobjekt**: Varje objektsamling kan innehålla upp till 500 erbjudandeobjekt.
-* **Anpassade attribut**: Ett beslutsobjekt kan innehålla maximalt 100 anpassade attribut.
-* **Urvalsstrategier och beslutsposter per princip**: En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsammans.
-
-### Villkor för deltagande {#eligibility}
-
-* **Kapslingsnivåer**: Kapslingsdjupet är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen.
-* **Regelsträngsstorlek**: En regelsträng kan vara upp till 15 kB för UTF-8-kodade tecken. Detta motsvarar 15 000 ASCII-tecken (1 byte vardera), eller 3 750-7 500 icke-ASCII-tecken (2-4 byte vardera).
-
-### Rankningsformler {#ranking}
-
-* **Kapslingsnivåer**: Kapslingsdjupet är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen.
-* **Formelsträngsstorlek**: En regelsträng kan vara upp till 8 kB för UTF-8-kodade tecken. Detta motsvarar 8 000 ASCII-tecken (1 byte vardera), eller 2 000-4 000 icke-ASCII-tecken (2-4 byte vardera).
 
 ## Viktiga steg för beslut {#steps}
 
