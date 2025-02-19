@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 27447578dad6bd2612989d79cd0dc8ddbe78d629
+source-git-commit: e798d413a4962bb037ff3cae595bcd87f4121e4f
 workflow-type: tm+mt
 source-wordcount: '1278'
 ht-degree: 1%
@@ -174,9 +174,12 @@ I Adobe Experience Platform kan du skapa profiler genom att överföra en CSV-fi
    ![](assets/test-profiles-21.png)
 
 Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
+
+
 >[!NOTE]
 >
 > Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
+
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 
