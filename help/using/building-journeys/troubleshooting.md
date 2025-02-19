@@ -9,16 +9,18 @@ role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: e47c95ac8981356bcfb742105cbf1faa5d53c189
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 54%
+source-wordcount: '972'
+ht-degree: 52%
 
 ---
 
 # Felsök din resa {#troubleshooting}
 
-I det här avsnittet får du lära dig hur du felsöker resor innan du testar eller publicerar. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs [den här sidan](../building-journeys/testing-the-journey.md).
+I det här avsnittet får du lära dig hur du felsöker resor innan du testar eller publicerar. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs mer om testläget i [den här sidan](../building-journeys/testing-the-journey.md).
+
+Som administratör kan du även testa dina anpassade åtgärdskonfigurationer genom att göra riktiga API-anrop direkt från användargränssnittet. Läs mer på [den här sidan](../action/troubleshoot-custom-action.md).
 
 ## Kontrollera om det finns fel före testning {#checking-for-errors-before-testing}
 

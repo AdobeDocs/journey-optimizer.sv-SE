@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 63786170a4aaa5659751a9bb5febd98419e2e64a
+source-git-commit: e47c95ac8981356bcfb742105cbf1faa5d53c189
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 7%
+source-wordcount: '768'
+ht-degree: 8%
 
 ---
 
@@ -129,7 +129,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 Förbättringarna nedan följer med uppdateringen från februari.
 
-* **Resor** - Nu kan du testa dina anpassade åtgärder genom att skicka API-anrop från administrationsavsnittet. Den här nya funktionen hjälper dig att felsöka anpassade åtgärder före eller efter det att du har använt dem under en resa.
+* **Resor** - Nu kan du testa dina anpassade åtgärder genom att skicka API-anrop från administrationsavsnittet. Den här nya funktionen hjälper dig att felsöka anpassade åtgärder före eller efter det att du har använt dem under en resa. [Läs mer](../action/troubleshoot-custom-action.md)
 
 * **Datauppsättning TTL (Time-to-live)** - Från och med den här månaden kommer ett TTL-skyddsprotokoll att introduceras i Journey Optimizer systemgenererade datauppsättningar i nya sandlådor och nya orgs enligt följande:
 
