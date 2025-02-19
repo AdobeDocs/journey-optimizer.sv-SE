@@ -7,7 +7,7 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 0510811c2777fc8483b4220cc5a9f023dd5bf2c6
+source-git-commit: 850b78afc8f833e503b6ebe2ca5e8b47a0e8ff7a
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 1%
@@ -158,9 +158,9 @@ Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landin
 
 >[!ENDTABS]
 
-5. Välj **[!UICONTROL Submit]** när du har fyllt i informationen om din servertyp. Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
+Välj **[!UICONTROL Submit]** när du har fyllt i informationen om din servertyp. Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
 
-   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
+Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
 
 ## Skapa en konfiguration för direktreklam {#direct-mail-surface}
 
