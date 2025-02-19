@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
-source-git-commit: 8b0dc1ba58c856cc3a0864e408415c87e10801cf
+source-git-commit: 0803edc138aff3cf94abd84d0f462191c1e86f6f
 workflow-type: tm+mt
 source-wordcount: '6781'
 ht-degree: 7%
@@ -18,8 +18,6 @@ ht-degree: 7%
 # Versionsinformation för 2024 {#release-notes-2024}
 
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2024.
-
-
 
 ## 24 oktober {#24-10-rn}
 
