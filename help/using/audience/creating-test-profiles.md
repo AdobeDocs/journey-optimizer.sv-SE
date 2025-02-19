@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 05a882d3dec6b6f62eac432d14bb9ac9ad48257d
+source-git-commit: 1465b110812beba8b58c7dc2e01a65189f984c27
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1317'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,11 @@ ht-degree: 1%
 # Skapa testprofiler {#create-test-profiles}
 
 Testprofiler krävs när [testläget](../building-journeys/testing-the-journey.md) används i en resa och när du [förhandsgranskar och testar ditt innehåll](../content-management/preview-test.md).
+
+
+>[!NOTE]
+>
+>I [!DNL Journey optimizer] kan du också testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
 
 Det finns flera sätt att skapa testprofiler. På den här sidan hittar du information om:
 
