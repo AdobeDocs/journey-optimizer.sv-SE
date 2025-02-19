@@ -7,9 +7,9 @@ badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-source-git-commit: b1ccacd30acb886e06a3305f0c7046d85f558357
+source-git-commit: 288f44de1f92e808aa038020f247a720fefb6b1f
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 0%
 
 Varumärkesriktlinjerna är en detaljerad uppsättning regler och standarder som bygger upp ett varumärkes visuella och verbala identitet. De fungerar som referenser för att upprätthålla en enhetlig varumärkesrepresentation på alla marknadsförings- och kommunikationsplattformar.
 
-I [!DNL Journey Optimizer] har du nu möjlighet att ange och ordna din varumärkesinformation manuellt eller överföra varumärkesriktlinjer för automatisk informationshämtning.
+<!--Upload feature currently behind feature flag--
+
+In [!DNL Journey Optimizer], you now have the option to manually input and organize your brand details or upload brand guideline documents for automatic information extraction.-->
 
 ## Åtkomstvarumärken {#generative-access}
 
@@ -36,7 +38,7 @@ För att få åtkomst till menyn **[!UICONTROL Brands]** i [!DNL Adobe Journey O
 
 1. Lägg till resursen **AI Assistant** och välj sedan **Hanterat varumärkespaket** eller **[!UICONTROL Enable Ai assistant]** i listrutan.
 
-   Observera att behörigheten **[!UICONTROL Enable Ai assistant]** endast ger skrivskyddad åtkomst till menyn Varumärke.
+   Observera att behörigheten **[!UICONTROL Enable Ai assistant]** endast ger skrivskyddad åtkomst till menyn **[!UICONTROL Brands]**.
 
    ![](assets/brands-permission.png){zoomable="yes"}
 
@@ -52,9 +54,13 @@ För att få åtkomst till menyn **[!UICONTROL Brands]** i [!DNL Adobe Journey O
 
 +++
 
-## Skapa ditt varumärke {#create-brand-kit}
+## Skapa ert varumärke {#create-brand-kit}
 
-Om du vill skapa och hantera din varumärkesriktlinje kan du antingen ange detaljerna själv eller överföra ditt varumärkesriktlinjer så att informationen extraheras automatiskt:
+Följ stegen nedan om du vill skapa och hantera riktlinjer för ditt varumärke.
+
+<!--Upload feature currently behind feature flag--
+
+To create and manage your Brand guideline, you can either enter the details yourself, or upload your brand guidelines document to have the information extracted automatically:-->
 
 1. Klicka på **[!UICONTROL Create brand]** på menyn **[!UICONTROL Brands]**.
 
@@ -64,9 +70,7 @@ Om du vill skapa och hantera din varumärkesriktlinje kan du antingen ange detal
 
    ![](assets/brands-2-temp.png)
 
-<!--
-
-[Upload feature currently behind feature flag so hidden from doc - should be available again by EOM (Feb)]
+<!--Upload feature currently behind feature flag so hidden from doc - should be available again by EOM (Feb)--
 
 1. Drag and drop or select your file to upload your brand guidelines and extract automatically relevant brand information. Click **[!UICONTROL Create brand]**.
 
@@ -78,19 +82,23 @@ Om du vill skapa och hantera din varumärkesriktlinje kan du antingen ange detal
 
 -->
 
-1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) på fliken **[!UICONTROL Writing Style]** för att lägga till en stödlinje eller ett undantag. Du kan också lägga till exempel.
+1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) på fliken **[!UICONTROL Writing Style]** om du vill lägga till en stödlinje eller ett undantag, inklusive exempel.
 
    ![](assets/brands-3.png)
 
 1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) på fliken **[!UICONTROL Visual content]** om du vill lägga till ytterligare en stödlinje eller ett undantag.
 
-1. Klicka på **[!UICONTROL Select image]** om du vill lägga till ett bildexempel. Du kan också lägga till en bild som visar felaktig användning som ett exkluderingsexempel.
+1. Om du vill lägga till en bild som visar korrekt användning väljer du **[!UICONTROL Example]** och klickar på **[!UICONTROL Select image]**. Du kan också lägga till en bild som visar felaktig användning som ett exkluderingsexempel.
 
    ![](assets/brands-4.png)
 
-1. Klicka på **[!UICONTROL Save]** och sedan **[!UICONTROL Publish]** för att göra dina varumärkesriktlinjer tillgängliga i AI-assistenten.
+1. När konfigurationen är klar klickar du på **[!UICONTROL Save]** och sedan på **[!UICONTROL Publish]** för att göra din varumärkesriktlinje tillgänglig i AI-assistenten.
 
-1. Klicka på **[!UICONTROL Edit brand]** om du vill ändra det publicerade varumärket. Observera att detta skapar en temporär kopia i redigeringsläge och ersätter den publicerade versionen.
+1. Klicka på **[!UICONTROL Edit brand]** om du vill ändra det publicerade varumärket.
+
+   >[!NOTE]
+   >
+   >Detta skapar en temporär kopia i redigeringsläge och ersätter den publicerade versionen.
 
    ![](assets/brands-8.png)
 
@@ -105,6 +113,6 @@ Om du vill skapa och hantera din varumärkesriktlinje kan du antingen ange detal
 
    ![](assets/brands-6.png)
 
-Riktlinjerna för varumärken finns nu i listrutan Varumärken i AI-assistentmenyn, vilket gör att du kan generera innehåll och resurser som är anpassade efter dina specifikationer. [Läs mer om AI-assistenten](gs-generative.md)
+Riktlinjerna för ditt varumärke är nu tillgängliga från listrutan **[!UICONTROL Brand]** i AI-assistentmenyn, vilket gör att det kan generera innehåll och resurser som är anpassade till dina specifikationer. [Läs mer om AI-assistenten](gs-generative.md)
 
 ![](assets/brands-7.png)
