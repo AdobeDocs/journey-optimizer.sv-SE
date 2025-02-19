@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 63786170a4aaa5659751a9bb5febd98419e2e64a
+source-git-commit: 324e477ca334e2d614265b3ea25428bea089ac69
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1243'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Innan du kan generera filen måste du skapa:
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_type"
 >title="Välj servertyp för filen"
->abstract="Välj vilken typ av server du vill använda för att exportera dina direktmeddelandefiler: Amazon S3, SFTP eller Azure."
+>abstract="Välj vilken typ av server du vill använda för att exportera dina direktmeddelandefiler: Amazon S3, SFTP, Azure eller Data Landing Zone."
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_aws_region"
@@ -60,7 +60,7 @@ Innan du kan generera filen måste du skapa:
 
 >[!NOTE]
 >
->För närvarande stöds landningszonen Amazon S3, SFTP, Azure och Data i [!DNL Journey Optimizer].
+>För närvarande stöds Amazon S3, SFTP, Azure och Data Landing Zone i [!DNL Journey Optimizer].
 
 Om du vill leverera ett direktmeddelande genererar och exporterar [!DNL Journey Optimizer] filen som innehåller målgruppsdata till en server.
 
@@ -68,19 +68,25 @@ Du måste ange den serverinformationen så att din e-postleverantör kan komma �
 
 Följ stegen nedan för att konfigurera filflödet.
 
->[!BEGINTABS]
-
->[!TAB Amazon S3]
-
 1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
 
    ![](assets/file-routing-config-button.png){width="800" align="center"}
 
 1. Ange ett namn för konfigurationen.
 
-1. Välj **Amazon S3** som **[!UICONTROL Server type]** som ska användas för export av direktmeddelandefiler.
+1. Välj vilken typ av server du vill använda för att exportera dina direktmeddelandefiler: Amazon S3, SFTP, Azure eller Data Landing Zone. Fälten som är specifika för respektive servertyp finns på flikarna nedan.
 
    ![](assets/file-routing-config-type.png){width="800" align="center"}
+
+1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
+
+   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
+
+>[!BEGINTABS]
+
+>[!TAB Amazon S3]
+
+1. Välj **[!UICONTROL Amazon S3]** som **[!UICONTROL Server type]**.
 
 1. Fyll i information och autentiseringsuppgifter för servern
 
@@ -96,21 +102,9 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
-
-   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
-
 >[!TAB SFTP]
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
-
-   ![](assets/file-routing-config-button.png){width="800" align="center"}
-
-1. Ange ett namn för konfigurationen.
-
-1. Välj SFTP som **[!UICONTROL Server type]** som ska användas för export av direktmeddelandefiler.
-
-   ![](assets/file-routing-config-type-sftp.png){width="800" align="center"}
+1. Välj **[!UICONTROL SFTP]** som **[!UICONTROL Server type]**.
 
 1. Fyll i information och autentiseringsuppgifter för servern:
 
@@ -130,21 +124,9 @@ Följ stegen nedan för att konfigurera filflödet.
 
 1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
-
-   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
-
 >[!TAB Azure]
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
-
-   ![](assets/file-routing-config-button.png){width="800" align="center"}
-
-1. Ange ett namn för konfigurationen.
-
-1. Välj Azure som **[!UICONTROL Server type]** som ska användas för att exportera direktmeddelandefilerna.
-
-   ![](assets/file-routing-config-type-azure.png){width="800" align="center"}
+1. Välj **[!UICONTROL Azure]** som **[!UICONTROL Server type]**.
 
 1. Fyll i information och autentiseringsuppgifter för servern:
 
@@ -156,35 +138,25 @@ Följ stegen nedan för att konfigurera filflödet.
 
    * **Behållarnamn**: Om du vill hitta **Behållarnamn** kan du läsa [den här sidan](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
 
-     **Behållarnamnet** får bara innehålla behållarens namn utan snedstreck. Om du vill ange en sökväg i behållaren för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att den innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
+     **Behållarnamnet** får bara innehålla behållarens namn utan snedstreck.
+
+     >[!NOTE]
+     >
+     >Om du vill ange en sökväg i behållaren för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att den innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
+
+     ![](assets/file-routing-config-azure-detail.png)
 
 1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
-1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
-
-   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
-
 >[!TAB Datalandningszon]
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File Routing]** och klicka sedan på **[!UICONTROL Create routing configuration]**.
+1. Välj **[!UICONTROL Data Landing Zone]** som **[!UICONTROL Server type]**.
 
-   ![](assets/file-routing-config-button.png){width="800" align="center"}
-
-1. Ange ett namn för konfigurationen.
-
-1. Välj Datallandningszon som **[!UICONTROL Server type]** som ska användas för export av direktmeddelandefiler.
-
-   ![](assets/file-routing-config-type-dlz.png){width="800" align="center"}
-
-1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**. <!--To find it, ...-->
+1. Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
 
    ![](assets/file-routing-config-dlz-detail.png)
 
-1. Välj **[!UICONTROL Submit]**.  Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
-
-   Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
-
-Läs mer om datalandningszonen i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
+Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
 >[!ENDTABS]
 
