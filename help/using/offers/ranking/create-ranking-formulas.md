@@ -5,10 +5,11 @@ feature: Ranking, Decision Management
 topic: Integrations
 role: User
 level: Intermediate
+mini-toc-levels: 1
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
-source-git-commit: baf76d3c571c62105c1f0a59e07ca70e61a83cc6
+source-git-commit: 9b66f4871d8b539bf0201b2974590672205a3243
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -37,7 +38,7 @@ Så här skapar du en rankningsformel:
 
 1. Ange formelnamn, beskrivning och formel.
 
-   I det här exemplet vill vi prioritera alla erbjudanden med attributet&quot;hot&quot; om vädret är varmt. För att göra detta skickades **contextData.wall=hot** i beslutsanropet.
+   I det här exemplet vill vi prioritera alla erbjudanden med attributet&quot;hot&quot; om vädret är varmt. För att göra detta skickades **contextData.wall=hot** i beslutsanropet. [Lär dig arbeta med kontextdata](../context-data.md)
 
    ![](../assets/ranking-syntax.png)
 
@@ -105,42 +106,6 @@ if( offer.characteristics.get("city") = homeAddress.city, offer.rank.priority * 
 if( offer.selectionConstraint.endDate occurs <= 24 hours after now, offer.rank.priority * 3, offer.rank.priority)
 ```
 
-### Förbättra erbjudanden med vissa attribut baserade på kontextdata
-
-Öka vissa erbjudanden baserat på de kontextdata som skickas i beslutsanropet. Om till exempel `contextData.weather=hot` skickas i beslutsanropet måste prioriteten för alla erbjudanden med `attribute=hot` ökas.
-
-**Rankningsformel:**
-
-```
-if (@{_xdm.context.additionalParameters;version=1}.weather.isNotNull()
-and offer.characteristics.get("weather")=@{_xdm.context.additionalParameters;version=1}.weather, offer.rank.priority + 5, offer.rank.priority)
-```
-
-Observera att när du använder API:t för beslutsfattande läggs kontextdata till i elementet profile i begärandebrödtexten, som i exemplet nedan.
-
-**Fragment från begärandeinnehåll:**
-
-```
-"xdm:profiles": [
-{
-    "xdm:identityMap": {
-        "crmid": [
-            {
-            "xdm:id": "CRMID1"
-            }
-        ]
-    },
-    "xdm:contextData": [
-        {
-            "@type":"_xdm.context.additionalParameters;version=1",
-            "xdm:data":{
-                "xdm:weather":"hot"
-            }
-        }
-    ]
- }],
-```
-
 ### Öka erbjudandena baserat på kundernas benägenhet att köpa den produkt som erbjuds
 
 Ni kan höja poängen för ett erbjudande baserat på kundens benägenhetspoäng.
@@ -169,14 +134,100 @@ Med detta i åtanke för en profil som:
 }
 ```
 
-Erbjudandena skulle innehålla ett attribut för *propensityType* som matchar kategorin från poängen:
+### Öka erbjudanden baserat på kontextdata {#context-data}
 
-![](../assets/ranking-example-propensityType.png)
+Med [!DNL Journey Optimizer] kan du öka vissa erbjudanden baserat på de kontextdata som skickas i anropet. Om till exempel `contextData.weather=hot` skickas måste prioriteten för alla erbjudanden med `attribute=hot` öka. Detaljerad information om hur du skickar kontextdata med API:erna **Edge Decisioning** och **Decisioning** finns i [det här avsnittet](../context-data.md)
 
-Din rankningsformel kan sedan ange prioriteten för varje erbjudande till lika med kunderna *propensityScore* för den *propensityType*. Om ingen poäng hittas, använd den statiska prioriteten som angetts i erbjudandet:
+Observera att när du använder API:t **Decisioning** läggs kontextdata till i profilelementet i begärandetexten, som i exemplet nedan.
 
 ```
-let score = (select _Individual_Scoring1 from _salesvelocity.individualScoring
-             where _Individual_Scoring1.core.category.equals(offer.characteristics.get("propensityType"), false)).head().core.propensityScore
-in if(score.isNotNull(), score, offer.rank.priority)
+"xdm:profiles": [
+{
+    "xdm:identityMap": {
+        "crmid": [
+            {
+            "xdm:id": "CRMID1"
+            }
+        ]
+    },
+    "xdm:contextData": [
+        {
+            "@type":"_xdm.context.additionalParameters;version=1",
+            "xdm:data":{
+                "xdm:weather":"hot"
+            }
+        }
+    ]
+    
+}],
 ```
+
+Här är exempel som illustrerar hur man använder kontextdata i rankningsformler för att höja offertens prioritet. Expandera varje avsnitt för att få information om rangordningens syntax.
+
+>[!NOTE]
+>
+>Ersätt `<OrgID>` med ditt organisationskontor-ID i exemplen för Edge Decihering API.
+
++++Öka prioriteten med 10 om kanalen från kontextdata matchar kundens önskade kanal
+
+>[!BEGINTABS]
+
+>[!TAB Besluts-API]
+
+`if (@{_xdm.context.additionalParameters;version=1}.channel.isNotNull() and @{_xdm.context.additionalParameters;version=1}.channel.equals(_abcMobile.preferredChannel), offer.rank.priority + 10, offer.rank.priority)`
+
+>[!TAB Edge Decisioning API]
+
+`if (xEvent.<OrgID>.channel.isNotNull() and xEvent.<OrgID>.channel.equals(_abcMobile.preferredChannel), offer.rank.priority + 10, offer.rank.priority)`
+
+>[!ENDTABS]
+
++++
+
++++Öka prioriteten för alla erbjudanden med&quot;attribute=hot&quot; om&quot;contextData.wall=hot&quot; skickas i anropet.
+
+>[!BEGINTABS]
+
+>[!TAB Besluts-API]
+
+`if (@{_xdm.context.additionalParameters;version=1}.weather.isNotNull() and offer.characteristics.get("weather")=@{_xdm.context.additionalParameters;version=1}.weather, offer.rank.priority + 5, offer.rank.priority)`
+
+>[!TAB Edge Decisioning API]
+
+`if (xEvent.<OrgID>.weather.isNotNull() and offer.characteristics.get("weather")=xEvent.<OrgID>.weather, offer.rank.priority + 5, offer.rank.priority)`
+
+>[!ENDTABS]
+
++++
+
++++Content Origin Boost
+
+>[!BEGINTABS]
+
+>[!TAB Besluts-API]
+
+`if (@{_xdm.context.additionalParameters;version=1}.contentorigin.isNotNull() and offer.characteristics.contentorigin=@{_xdm.context.additionalParameters;version=1}.contentorigin, offer.rank.priority * 100, offer.rank.priority)`
+
+>[!TAB Edge Decisioning API]
+
+`if (xEvent.<OrgID>.contentorigin.isNotNull() and offer.characteristics.contentorigin=xEvent.<OrgID>.contentorigin, offer.rank.priority * 100, offer.rank.priority)`
+
+>[!ENDTABS]
+
++++
+
++++Väderförbättring
+
+>[!BEGINTABS]
+
+>[!TAB Besluts-API]
+
+`if (@{_xdm.context.additionalParameters;version=1}.weather.isNotNull() and offer.characteristics.weather=@{_xdm.context.additionalParameters;version=1}.weather, offer.rank.priority * offer.characteristics.scoringBoost, offer.rank.priority)`
+
+>[!TAB Edge Decisioning API]
+
+`if (xEvent.<OrgID>.weather.isNotNull() and offer.characteristics.weather=xEvent.<OrgID>.weather, offer.rank.priority * offer.characteristics.scoringBoost, offer.rank.priority)`
+
+>[!ENDTABS]
+
++++

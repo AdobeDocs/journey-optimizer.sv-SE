@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b6c31528784c0c8576e3200e7611a6b6cd43d7a7
+source-git-commit: 9b66f4871d8b539bf0201b2974590672205a3243
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2191'
 ht-degree: 24%
 
 ---
@@ -521,6 +521,10 @@ ht-degree: 24%
          + [Komma igång med datainsamling](using/offers/data-collection/data-collection.md)
          + [Skapa en datauppsättning för att samla in händelser](using/offers/data-collection/create-dataset.md)
          + [Konfigurera händelsehämtning](using/offers/data-collection/schema-requirement.md)
+      + Använd kontextdata {#context-data}
+         + [Kom igång med kontextdata](using/offers/context-data.md)
+         + [Kontextdata och Edge Decisioneringsbegäranden](using/offers/context-data-edge.md)
+         + [Kontextdata och beslutsbegäran](using/offers/context-data-decisioning.md)
       + Skapa beslutshanteringsrapporter {#create-reports}
          + [Arbeta med beslutsledningshändelser](using/offers/reports/get-started-events.md)
          + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)

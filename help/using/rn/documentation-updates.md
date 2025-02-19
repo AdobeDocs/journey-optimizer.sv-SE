@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b6c31528784c0c8576e3200e7611a6b6cd43d7a7
+source-git-commit: 9b66f4871d8b539bf0201b2974590672205a3243
 workflow-type: tm+mt
-source-wordcount: '6056'
+source-wordcount: '6109'
 ht-degree: 12%
 
 ---
@@ -25,9 +25,10 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Dokumentationen för **[!UICONTROL Send-Time optimization]** och dess relaterade vanliga frågor har uppdaterats, förbättrats och flyttats till en ny dedikerad sida. [Läs mer](../building-journeys/send-time-optimization.md)
 * Nya skyddsutkast har lagts till för resehändelser. [Läs mer](../start/guardrails.md#events-g)
 * Den inbyggda sidan för kanalåtgärder har omstrukturerats. [Läs mer](../building-journeys/journeys-message.md)
-* Garantier och begränsningar har lagts till i avsnittet om beslutsfattande och beslutshantering.
+* Garantier och begränsningar har lagts till i avsnitten om beslutsfattande och beslutshantering.
    * [Avgörande av skyddsräcken och begränsningar](../experience-decisioning/decisioning-guardrails.md)
    * [Garantier och begränsningar för beslutshantering](../offers/decision-management-guardrails.md)
+* Ett nytt avsnitt om kontextdata har lagts till i dokumentationen för beslutshanteringen. Där finns information om hur man utnyttjar kontextdata i beslutsmotorn, t.ex. för att utforma en beslutsregel som kräver att det aktuella vädret ska vara minst 80 grader vid den tidpunkt då beslutsbegäran görs. [Läs mer](../offers/context-data.md)
 
 ## Januari 2025 {#jan-2025}
 

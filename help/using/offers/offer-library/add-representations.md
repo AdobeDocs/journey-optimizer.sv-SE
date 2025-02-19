@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 9b66f4871d8b539bf0201b2974590672205a3243
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 >[!NOTE]
 >
-> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna tillhör produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
+> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna är en del av produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
 
 1. Välj alternativet **[!UICONTROL Asset library]**.
 
@@ -86,11 +86,11 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
    ![](../assets/offer-select-asset.png)
 
-### Lägg till HTML eller JSON-filer {#html-json}
+### Lägga till HTML- eller JSON-filer {#html-json}
 
-Om den markerade placeringen är av HTML-typ kan du även lägga till HTML eller JSON-innehåll från [Adobe Experience Cloud-resursbiblioteket](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
+Om den valda placeringen är av HTML-typ kan du även lägga till HTML- eller JSON-innehåll från [Adobe Experience Cloud-resursbiblioteket](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
 
-Du har till exempel skapat en HTML-e-postmall i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target="_blank"} och vill använda den filen för ditt erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **resursbiblioteket** för att kunna återanvända den i offertens representationer.
+Du har t.ex. skapat en e-postmall från HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target="_blank"} och vill använda den filen för ditt erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **resursbiblioteket** för att kunna återanvända den i offertens representationer.
 
 Om du vill återanvända ditt innehåll i en representation bläddrar du till **resursbiblioteket** enligt beskrivningen i [det här avsnittet](#images) och väljer den HTML- eller JSON-fil du vill använda.
 
@@ -140,7 +140,7 @@ Du kan också infoga text när du väljer en kompatibel placering.
 
 När kontextdata skickas i [Edge-beslutsanropet](../api-reference/offer-delivery-api/edge-decisioning-api.md) kan du använda dessa data för att anpassa representationer dynamiskt. Du kan till exempel anpassa representationen av ett erbjudande baserat på realtidsfaktorer som aktuella väderförhållanden när beslutet fattas.
 
-Det gör du genom att infoga kontextdatavariabeln direkt i representationsinnehållet med hjälp av namnutrymmet `profile.timeSeriesEvents.`.
+Om du vill använda kontextdata i offertrepresentationer lägger du till kontextdatavariabeln direkt i representationsinnehållet med hjälp av namnutrymmet `profile.timeSeriesEvents.`.
 
 Här följer ett syntaxexempel som används för att anpassa en offerts representation baserat på användarnas operativsystem:
 
