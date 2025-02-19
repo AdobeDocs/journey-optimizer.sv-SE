@@ -7,9 +7,9 @@ badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-source-git-commit: 4919c8c749f9216be526bab2437a815da0136df5
+source-git-commit: b1ccacd30acb886e06a3305f0c7046d85f558357
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,14 @@ ht-degree: 0%
 >[!AVAILABILITY]
 >
 >Den här funktionen är en privat betaversion. Den kommer att finnas tillgänglig successivt för alla kunder i framtida versioner.
->
 
 Varumärkesriktlinjerna är en detaljerad uppsättning regler och standarder som bygger upp ett varumärkes visuella och verbala identitet. De fungerar som referenser för att upprätthålla en enhetlig varumärkesrepresentation på alla marknadsförings- och kommunikationsplattformar.
 
-I Journey Optimizer har du nu möjlighet att ange och ordna din varumärkesinformation manuellt eller ladda upp riktlinjer för varumärken för automatisk informationshämtning.
+I [!DNL Journey Optimizer] har du nu möjlighet att ange och ordna din varumärkesinformation manuellt eller överföra varumärkesriktlinjer för automatisk informationshämtning.
 
 ## Åtkomstvarumärken {#generative-access}
 
-För att få åtkomst till varumärkesmenyn i Adobe Journey Optimizer måste användarna beviljas behörigheterna **Managed brand Kit** eller **[!UICONTROL Enable AI assistant]**. [Läs mer](../administration/permissions.md)
+För att få åtkomst till menyn **[!UICONTROL Brands]** i [!DNL Adobe Journey Optimizer] måste användarna beviljas behörigheterna **[!UICONTROL Managed brand kit]** eller **[!UICONTROL Enable AI assistant]**. [Läs mer](../administration/permissions.md)
 
 +++  Lär dig hur du tilldelar varumärkesrelaterade behörigheter
 
@@ -51,34 +50,41 @@ För att få åtkomst till varumärkesmenyn i Adobe Journey Optimizer måste anv
 
 1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
-
 +++
 
 ## Skapa ditt varumärke {#create-brand-kit}
 
 Om du vill skapa och hantera din varumärkesriktlinje kan du antingen ange detaljerna själv eller överföra ditt varumärkesriktlinjer så att informationen extraheras automatiskt:
 
-1. Klicka på **[!UICONTROL Add brand]** på menyn **[!UICONTROL Brands]**.
+1. Klicka på **[!UICONTROL Create brand]** på menyn **[!UICONTROL Brands]**.
 
    ![](assets/brands-1.png)
 
-1. Ange en **[!UICONTROL Name]** och en **[!UICONTROL Description]** i varumärkesriktlinjerna.
+1. Ange en **[!UICONTROL Name]** för ditt varumärke <!--and a **[!UICONTROL Description]** to your brand guideline-->.
 
-1. Dra och släpp eller markera filen för att ladda upp varumärkesriktlinjerna och extrahera automatiskt relevant varumärkesinformation. Klicka på **[!UICONTROL Add brand]**.
+   ![](assets/brands-2-temp.png)
 
-   Processen för informationsextrahering börjar nu. Observera att det kan ta flera minuter att slutföra.
+<!--
 
-   ![](assets/brands-2.png)
+[Upload feature currently behind feature flag so hidden from doc - should be available again by EOM (Feb)]
 
-1. Standarderna för att skapa innehåll och visuellt innehåll är nu automatiskt ifyllda. Bläddra bland de olika flikarna för att anpassa informationen efter behov.
+1. Drag and drop or select your file to upload your brand guidelines and extract automatically relevant brand information. Click **[!UICONTROL Create brand]**.
 
-1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) i **[!UICONTROL Content creation standards]** om du vill lägga till ytterligare en stödlinje, exempel eller undantag.
+    The information extraction process now begins. Note that it may take several minutes to complete.
+
+    ![](assets/brands-2.png)
+
+1. Your Content and visual creation standards are now automatically populated. Browse through the different tabs to adapt the information as needed.
+
+-->
+
+1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) på fliken **[!UICONTROL Writing Style]** för att lägga till en stödlinje eller ett undantag. Du kan också lägga till exempel.
 
    ![](assets/brands-3.png)
 
-1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) i **[!UICONTROL Visual creation standards]** om du vill lägga till ytterligare en stödlinje, exempel eller undantag.
+1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) på fliken **[!UICONTROL Visual content]** om du vill lägga till ytterligare en stödlinje eller ett undantag.
 
-1. Klicka på **[!UICONTROL Select image]** om du vill lägga till ett bildexempel. Du kan också lägga till felaktiga insikter som identifieras.
+1. Klicka på **[!UICONTROL Select image]** om du vill lägga till ett bildexempel. Du kan också lägga till en bild som visar felaktig användning som ett exkluderingsexempel.
 
    ![](assets/brands-4.png)
 
