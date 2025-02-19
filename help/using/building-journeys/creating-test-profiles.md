@@ -9,7 +9,7 @@ role: User, Data Engineer
 level: Intermediate
 keywords: testprofiler, testning, test, resa
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: 7df2d6a68ce20dbd9d07be3d6cfba9eba5ec0242
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 1%
@@ -179,6 +179,7 @@ I Adobe Experience Platform kan du skapa profiler genom att överföra en CSV-fi
    ![](assets/test-profiles-21.png)
 
 Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
+
 >[!NOTE]
 >
 > Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
