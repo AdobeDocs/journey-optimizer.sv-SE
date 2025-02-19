@@ -9,9 +9,9 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
-source-git-commit: d7ef9cb8b74781d5c711bd2958070767735a3b24
+source-git-commit: d6501c8cc7e3293bd6a057d8e74654bced7dae75
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,9 @@ Läs mer om resebehörigheter i [det här avsnittet](../administration/high-low-
 
 Så här testar du en anpassad åtgärd:
 
-1. Navigera till konfigurationsskärmen **Anpassade åtgärder** och välj en anpassad åtgärd.
+1. Navigera till konfigurationsskärmen **Åtgärder** och välj en anpassad åtgärd.
 1. Klicka på knappen **[!UICONTROL Send test request]** längst ned i åtgärdskonfigurationsfönstret.
-
-![Skicka testbegärandeknapp på åtgärdskonfigurationspanelen](assets/test-request.png){width="70%" align="left"}
-
+   ![Skicka testbegärandeknapp på åtgärdskonfigurationspanelen](assets/test-request.png){width="70%" align="left"}
 1. I popup-fönstret kan du ange frågeparametrar:
 
    * Om den anpassade åtgärdsmetoden **är GET** krävs ingen nyttolast.
