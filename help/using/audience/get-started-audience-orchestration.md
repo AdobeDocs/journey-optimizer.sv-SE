@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
-source-git-commit: 435898d7e806e93ee0154c3da22f6a011fc78175
+source-git-commit: ef7ae0a6ad1f582f91e53fd93dabffa39036a584
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,87 @@ ht-degree: 0%
 >title="Skapa en komposition"
 >abstract="Skapa ett dispositionsarbetsflöde för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, exkludera..) för att skapa nya målgrupper."
 
->[!BEGINSHADEBOX]
+>[!CONTEXTUALHELP]
+>id="ajo_ao_publish"
+>title="Publicera er målgrupp"
+>abstract="Publicera materialet för att spara målgrupper i Adobe Experience Platform."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_audience"
+>title="Målgruppsaktivitet"
+>abstract="Med hjälp av Audience-aktiviteten kan du i din komposition inkludera ytterligare profiler som tillhör en befintlig målgrupp."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_merge_types"
+>title="Sammanfoga typer"
+>abstract="Ange hur profilerna för de valda målgrupperna ska sammanfogas."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_exclude_type"
+>title="Uteslut typ"
+>abstract="Använd typen Uteslut målgrupp för att exkludera profiler som tillhör en befintlig målgrupp. Med attributtypen Uteslut med kan du exkludera profiler baserat på ett specifikt attribut."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_exclude"
+>title="Exkludera aktivitet"
+>abstract="Med aktiviteten Uteslut kan du utesluta profiler från kompositionen genom att välja en befintlig målgrupp eller använda en regel."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich"
+>title="Berika aktivitet"
+>abstract="Använd aktiviteten Enrich för att berika publiken med ytterligare attribut från Adobe Experience Platform datamängder. Du kan t.ex. lägga till information om den köpta produkten, som namn, pris eller tillverkare-ID, och använda dessa uppgifter för att anpassa de leveranser som skickas till målgruppen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_dataset"
+>title="Datauppsättning för berikning"
+>abstract="Välj den datauppsättning för berikning som innehåller de data som du vill associera med målgruppen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_criteria"
+>title="Anrikningskriterier"
+>abstract="Välj de fält som ska användas som avstämningsnyckel mellan källdatauppsättningen, dvs. målgruppen, och datauppsättningen för anrikning."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_enrich_attributes"
+>title="Attribut för berikning"
+>abstract="Välj ett eller flera attribut från datauppsättningen för anrikning som ska kopplas till målgruppen. När kompositionen har publicerats är dessa attribut knutna till målgruppen och kan utnyttjas i Journey Optimizer-kampanjer för att personalisera leveranser."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_ranking"
+>title="Rankningsaktivitet"
+>abstract="Med aktiviteten Rankning kan du rangordna profiler baserat på ett specifikt attribut och inkludera dem i din komposition. Ta till exempel med de 50 profilerna med det största antalet förmånspoäng."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_rank_profilelimit_text"
+>title="Lägg till profilgräns"
+>abstract="Aktivera det här alternativet om du vill ange ett maximalt antal profiler som ska ingå i kompositionen."
+
+<!-- [!CONTEXTUALHELP]
+>id="ajo_ao_control_group_text"
+>title="Control Group"
+>abstract="Use control groups to isolate a portion of the profiles. This allows you to measure the impact of a marketing activity and make a comparison with the behavior of the rest of the population."-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_split"
+>title="Delad aktivitet"
+>abstract="Med aktiviteten Dela kan du dela upp kompositionen i flera banor. När kompositionen publiceras sparas en publik i Adobe Experience Platform för varje bana."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_split_type"
+>title="Delad text"
+>abstract="Använd delningstypen Procent för att slumpmässigt dela upp profiler i flera banor. Med attributdelningstypen kan du dela profiler baserat på ett specifikt attribut."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_split_otherprofiles_text"
+>title="Andra profiler"
+>abstract="Aktivera det här alternativet om du vill skapa en ytterligare sökväg med de återstående profilerna som inte matchar något av villkoren som anges i de andra sökvägarna."
+
+>[!CONTEXTUALHELP]
+>id="ajo_ao_publish"
+>title="Publicera er målgrupp"
+>abstract="Publicera materialet för att spara målgrupper i Adobe Experience Platform."
+>
+[!BEGINSHADEBOX]
 
 Dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du bara är kund i realtid och inte använder Adobe Journey Optimizer klickar du [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
 
