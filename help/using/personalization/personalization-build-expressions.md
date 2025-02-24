@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: bc4ce563fe9af30373ba11279d886b598e1fcdcd
+source-git-commit: 962dbbb070bbfe944e174bc330659599a1101ebe
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 2%
@@ -26,8 +26,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_perso_editor_autocomplete"
 >title="Automatiskt slutförd"
->abstract="Om du växlar till det här alternativet kan systemet automatiskt slutföra koden och ge förslag medan du skriver ditt uttryck. Det här alternativet är endast tillgängligt för HTML och textformat.
-"
+>abstract="Om du växlar till det här alternativet kan systemet automatiskt slutföra koden och ge förslag medan du skriver ditt uttryck. Det här alternativet är endast tillgängligt för HTML och textformat."
 
 Anpassningsredigeraren är navet i personaliseringen i [!DNL Journey Optimizer]. Det finns i alla sammanhang där du behöver definiera personalisering som e-post, push och erbjudanden.
 
