@@ -4,15 +4,27 @@ description: Lär dig hur du skapar och hanterar godkännandepolicyer.
 role: User
 level: Beginner
 feature: Approval
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
+source-git-commit: decd8e222a1cd2f8767a1b88b0af03aa209a741e
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '447'
 ht-degree: 1%
 
 ---
 
-
 # Skapa och hantera godkännandepolicyer {#approval-policies}
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_request_approval"
+>title="Begär godkännande"
+>abstract="Begär godkännande"
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_request_change"
+>title="Begär ändring"
+>abstract="Begär ändring"
+
 
 >[!NOTE]
 >
@@ -21,6 +33,13 @@ ht-degree: 1%
 Med godkännandeprinciper kan administratörer upprätta en valideringsprocess för resor och kampanjer. Det här systemet anger specifika villkor som avgör om en resa eller kampanj kräver godkännande. Dessa profiler kan variera i komplexitet, från att kräva att alla kampanjer granskas av en viss användare eller team, till att fastställa kriterier baserade på vem som skapade kampanjen.
 
 ## Skapa godkännandepolicyer {#create-policies}
+
+>[!CONTEXTUALHELP]
+>id="ajo_permissions_approval_policy"
+>title="Ny godkännandeprincip"
+>abstract="På den här skärmen anger du namnet och väljer sammanhang för godkännandeprincipen, skapar sedan villkoren för att avgöra vem som kan initiera godkännandebegäran och vem som kan validera den."
+
+Så här skapar du en godkännandeprincip:
 
 1. Gå till **[!UICONTROL Permissions]** och sedan **[!UICONTROL Policies]** från menyn **[!UICONTROL Administration]** i Journey Optimizer.
 
@@ -34,9 +53,11 @@ Med godkännandeprinciper kan administratörer upprätta en valideringsprocess f
 
    ![](assets/policy_create_2.png)
 
-Du kan nu förfina villkoren för att ange vem som ska initiera godkännandebegäran och vem som ska validera den.
+Du kan nu förfina villkoren för att ange vem som kan initiera godkännandebegäran och vem som kan validera den.
 
 ## Ange villkor för godkännandeprofiler {#conditions}
+
+Följ de här stegen för att definiera villkoren som är kopplade till en godkännandeprincip:
 
 1. Få åtkomst till din **[!UICONTROL Approval policy]**.
 
@@ -133,4 +154,3 @@ Du kan nu aktivera din godkännandeprincip för att tillämpa den.
 1. Öppna de avancerade alternativen på menyn **[!UICONTROL Policy]** till **[!UICONTROL Edit]**, **[!UICONTROL Deactivate]** eller **[!UICONTROL Duplicate]** profilen efter behov.
 
    ![](assets/policy_activate_2.png)
-
