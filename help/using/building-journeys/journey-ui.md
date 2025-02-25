@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
-source-git-commit: 0f09de039d9d9555327413b2d65dda295e971bde
+source-git-commit: 59bdddbf959505140be7a070dafe3e67aaae691b
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
@@ -79,7 +79,10 @@ Resestatus kan vara:
 
 >[!NOTE]
 >
->Reseutvecklingscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: &quot;Publicera&quot; (mellan &quot;Utkast&quot; och &quot;Live&quot;), &quot;Aktivera testläge&quot; eller &quot;Inaktivera testläge&quot; (mellan &quot;Utkast&quot; och &quot;Utkast (test)&quot;) och &quot;Stoppar&quot; (mellan &quot;Live&quot; och &quot;Stoppad&quot;). När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+>* Reseutvecklingscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: &quot;Publicera&quot; (mellan &quot;Utkast&quot; och &quot;Live&quot;), &quot;Aktivera testläge&quot; eller &quot;Inaktivera testläge&quot; (mellan &quot;Utkast&quot; och &quot;Utkast (test)&quot;) och &quot;Stoppar&quot; (mellan &quot;Live&quot; och &quot;Stoppad&quot;). När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+>
+>* Om du behöver ändra till en **live**-resa [skapar du en ny version](#journey-versions) av din resa.
+
 
 ## Reseversioner {#journey-versions}
 
@@ -91,7 +94,9 @@ I reselistan visas alla reseversioner med versionsnumret. När du söker efter e
 >
 >Vanligtvis kan en profil inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](end-journey.md).
 
-Om du behöver ändra till en direktresa skapar du en ny version av din resa.
+### Skapa en ny version av en resa {#journey-create-new-version}
+
+Om du behöver ändra till en direktresa skapar du en ny version av din resa. Så här skapar du en ny version av en befintlig resa:
 
 1. Öppna den senaste versionen av din liveresa, klicka på **[!UICONTROL Create a new version]** och bekräfta.
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: d3ec39dc08b23f315914be57a617c921903fead8
+source-git-commit: 59bdddbf959505140be7a070dafe3e67aaae691b
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '758'
 ht-degree: 7%
 
 ---
@@ -112,4 +112,6 @@ När den publicerats kan ni övervaka er resa med de dedikerade rapporteringsver
 
 Läs mer om reserapporter i det här [avsnittet](../reports/live-report.md).
 
-Observera att du kan duplicera en befintlig resa eller skapa en ny version av en resa. Lär dig hur i [den här sidan](journey-ui.md)
+>[!NOTE]
+>
+>Om du behöver ändra till en **live**-resa [skapar du en ny version](journey-ui.md#journey-versions) av din resa.
