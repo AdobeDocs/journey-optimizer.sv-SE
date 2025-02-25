@@ -8,9 +8,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: e9964494fa38a9e693eeb6c8bdfd6dd3d21262e0
+source-git-commit: d3ec39dc08b23f315914be57a617c921903fead8
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,8 @@ Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssa
 * Med **resedesignern** kan du skapa dina flerstegsfall: enkelt dra och släppa en anmälningshändelse eller en läsningsaktivitet, lägga till villkor och skicka personaliserade meddelanden.
 
 Lär dig hur du skapar och utformar din första resa på [den här sidan](journey-gs.md).
+
+➡️ [Upptäck Journey Optimizer i video](#video)
 
 ## Användningsfall{#uc-journey}
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
+source-git-commit: d3ec39dc08b23f315914be57a617c921903fead8
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '762'
 ht-degree: 7%
 
 ---
@@ -28,18 +28,15 @@ ht-degree: 7%
 >title="Resor"
 >abstract="Utforma kundresor för att leverera personaliserade, sammanhangsbaserade upplevelser. Med Journey Optimizer kan du skapa användningsfall för realtidssamordning med kontextuella data som lagras i händelser eller datakällor. Fliken **Översikt** visar en instrumentpanel med viktiga mått för dina resor. Fliken **Bläddra** visar en lista över befintliga resor."
 
+Bygg kundresor i flera steg som initierar en sekvens av interaktioner, erbjudanden och meddelanden över alla kanaler i realtid. Detta arbetssätt säkerställer att kunderna engagerar sig i rätt ögonblick baserat på deras handlingar och relevanta affärssignaler.
 
-Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa.
+![exempel på resans arbetsyta](assets/journey38.png)
 
-![](assets/journey38.png)
+Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Användargränssnittet för resan beskrivs på [den här sidan](journey-ui.md).
 
-De viktigaste stegen för att skapa en resa är följande:
+De viktigaste stegen för att skapa en resa finns på den här sidan. De är smidiga enligt följande:
 
-![](assets/journey-creation-process.png)
-
-➡️ [Upptäck den här funktionen i videon](#video)
-
-Användargränssnittet för resan beskrivs på [den här sidan](journey-ui.md).
+![steg för att skapa resa: skapa, utforma, testa och publicera](assets/journey-creation-process.png)
 
 
 ## Förhandskrav {#start-prerequisites}
