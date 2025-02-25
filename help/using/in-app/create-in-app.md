@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: da27bb78de305c0d80737aaf7423cd62962732da
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 1%
@@ -65,7 +65,7 @@ Så här lägger du till ett meddelande i appen under en resa:
       | Programmets livscykel | Programmet stängs | Utlöses när programmet stängs. |
       | Programmets livscykel | Programkrasch | Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas efter kraschen. Kraschrapportering för Adobe Mobile implementerar inte en global hanterare för ej infångade undantag. |
       | Platser | Ange POI | Utlöses av Places SDK när kunden anger den POI (Point of Interest) som du har konfigurerat. |
-      | Platser | Avsluta POI | Utlöses av Places SDK när kunden avslutar det Point of Interest (POI) som du konfigurerade. |
+      | Platser | Avsluta POI | Utlöses av Places SDK när kunden avslutar den POI (Point of Interest) som du konfigurerade. |
 
 +++
 
@@ -95,9 +95,9 @@ Så här lägger du till ett meddelande i appen under en resa:
       | Programmets livscykel | Installationsdatum | Utlöses när det angivna installationsdatumet är uppfyllt. |
       | Programmets livscykel | Startar | Utlöses när det angivna antalet starter uppfylls. |
       | Programmets livscykel | Tid på dagen | Utlöses när den angivna tidpunkten på dagen uppfylls. |
-      | Platser | Aktuell POI | Utlöses av Platser SDK när kunden anger den angivna Intressepunkten (POI). |
-      | Platser | Senaste inmatade POI | Utlöses av Places SDK beroende på vilken kund som senast angav Point of Interest (POI). |
-      | Platser | Senaste utloggad POI | Utlöses av Places SDK beroende på din kunds sista utlämnade punkt för intresse (POI). |
+      | Platser | Aktuell POI | Utlöses av Places SDK när kunden anger den angivna POI (Point of Interest). |
+      | Platser | Senaste inmatade POI | Utlöses av Platser SDK beroende på vilken kund du senast angav. |
+      | Platser | Senaste utloggad POI | Utlöses av Places SDK beroende på kundens sista utlämnade punkt för intresse. |
 
 +++
 
@@ -111,7 +111,7 @@ Så här lägger du till ett meddelande i appen under en resa:
 
       * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som valts i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
       * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången som de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
-      * **[!UICONTROL Show until click through]**: Visa det här meddelandet när de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden &quot;klickad&quot;.
+      * **[!UICONTROL Show until click through]**: Visa det här meddelandet när de händelser som markerats i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
 
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
@@ -167,7 +167,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
       | Programmets livscykel | Programmet stängs | Utlöses när programmet stängs. |
       | Programmets livscykel | Programkrasch | Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas efter kraschen. Kraschrapportering för Adobe Mobile implementerar inte en global hanterare för ej infångade undantag. |
       | Platser | Ange POI | Utlöses av Places SDK när kunden anger den POI (Point of Interest) som du har konfigurerat. |
-      | Platser | Avsluta POI | Utlöses av Places SDK när kunden avslutar det Point of Interest (POI) som du konfigurerade. |
+      | Platser | Avsluta POI | Utlöses av Places SDK när kunden avslutar den POI (Point of Interest) som du konfigurerade. |
 
 +++
 
@@ -197,9 +197,9 @@ Så här lägger du till ett meddelande i appen i en kampanj:
       | Programmets livscykel | Installationsdatum | Utlöses när det angivna installationsdatumet är uppfyllt. |
       | Programmets livscykel | Startar | Utlöses när det angivna antalet starter uppfylls. |
       | Programmets livscykel | Tid på dagen | Utlöses när den angivna tidpunkten på dagen uppfylls. |
-      | Platser | Aktuell POI | Utlöses av Platser SDK när kunden anger den angivna Intressepunkten (POI). |
-      | Platser | Senaste inmatade POI | Utlöses av Places SDK beroende på vilken kund som senast angav Point of Interest (POI). |
-      | Platser | Senaste utloggad POI | Utlöses av Places SDK beroende på din kunds sista utlämnade punkt för intresse (POI). |
+      | Platser | Aktuell POI | Utlöses av Places SDK när kunden anger den angivna POI (Point of Interest). |
+      | Platser | Senaste inmatade POI | Utlöses av Platser SDK beroende på vilken kund du senast angav. |
+      | Platser | Senaste utloggad POI | Utlöses av Places SDK beroende på kundens sista utlämnade punkt för intresse. |
 
 +++
 
@@ -211,7 +211,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
    * **[!UICONTROL Everytime]**: Visa alltid meddelandet när de händelser som valts i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Once]**: Visa endast det här meddelandet första gången som de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Until click through]**: Visa det här meddelandet när de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden &quot;klickad&quot;.
+   * **[!UICONTROL Until click through]**: Visa det här meddelandet när de händelser som markerats i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
    * **[!UICONTROL X number of times]**: Visa det här meddelandet X-tid.
 
 1. Om det behövs väljer du vilken **[!UICONTROL Day of the week]** eller **[!UICONTROL Time of day]** meddelandet i appen ska visas.
@@ -240,7 +240,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
   +++Se video
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3419898)
+  >[!VIDEO](https://video.tv.adobe.com/v/3419898/?learn=on&autoplay=true)
 
 +++
 
@@ -248,7 +248,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
   +++Se video
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3423077)
+  >[!VIDEO](https://video.tv.adobe.com/v/3423077/?learn=on&autoplay=true)
 
 +++
 
