@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: 88e7140183700da0283fa00d89f6fff2c71c138f
+source-git-commit: b4bd7290fca3221798ce677bdbfb2281e34cec37
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,12 @@ Listan med anpassade erbjudanden finns på menyn **[!UICONTROL Offers]**.
 ![](../assets/offers_list.png)
 
 ## Skapa ett erbjudande {#create-offer}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_offer_details"
+>title="Erbjudandeinformation"
+>abstract="Fyll i erbjudandets namn och dess start- och slutdatum.
+Outside of these dates, the offer won't be selected by the Decisioning engine."
 
 >[!CONTEXTUALHELP]
 >id="od_offer_attributes"
