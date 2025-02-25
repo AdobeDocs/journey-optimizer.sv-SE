@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: 341c5c6a1a451819737797bfa70a8625f900388d
 workflow-type: tm+mt
 source-wordcount: '2317'
 ht-degree: 0%
@@ -60,9 +60,11 @@ Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en
 * Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
 * Samtalshantering fungerar på SMS-kanalnivå för MMS.
 
-### Skyddsutkast för webbkanal {#web-guardrails}
+## Skyddsutkast för webbkanal {#web-guardrails}
 
-Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
+
+Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ### Kodbaserade kanalgarantier {#code-based-guardrails}
 
