@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
+source-git-commit: fa1b26900ca4cf56a3ad95429320d1f5e9c920ed
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -53,6 +53,12 @@ Viktiga funktioner:
 
 * **Intelligent Decisioning &amp; Personalization** - Varumärken kan tillämpa centraliserad beslutsfattande och införliva artificiell intelligens och maskininlärning för att konfigurera prediktiva insikter i hela kundupplevelsen, vilket gör det enklare att automatisera beslut och optimera upplevelsen i stor skala. Beslutsfattandet driver centraliserade erbjudanden över flera kanaler i stor skala genom [!DNL Adobe Journey Optimizer].
 
+
+>[!NOTE]
+>
+> Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager eller din Adobe-representant om du har några frågor.
+
+
 ## Arkitektur {#architecture}
 
 Förstå den grundläggande arkitekturen för [!DNL Adobe Journey Optimizer], integreringspunkten och relationen mellan [!DNL Journey Optimizer] och [!DNL Experience Platform] i diagrammet nedan.
@@ -63,7 +69,7 @@ Förstå den grundläggande arkitekturen för [!DNL Adobe Journey Optimizer], in
 >[!NOTE]
 >
 > Adobe Experience Cloud allmänna riktlinjer och procedurer för sekretess gäller för [!DNL Journey Optimizer]. [Läs mer om Adobe Experience Cloud sekretess](https://www.adobe.com/privacy/experience-cloud.html).
-> Du måste också känna till [Guardsändningar för kundprofildata i realtid innan du startar](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
+>
 
 
 >[!MORELIKETHIS]
