@@ -9,22 +9,25 @@ role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: 59bdddbf959505140be7a070dafe3e67aaae691b
+source-git-commit: 3a1e00ecc74ccca5cba0e15ac642eeb7ddb40ae0
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
 # Publicera din resa {#publishing-the-journey}
 
-Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att delta i den. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel. Lär dig hur du testar din resa på [den här sidan](testing-the-journey.md).
+Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att delta i den. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel.
 
 ➡️ [Upptäck den här funktionen i videon](#video)
 
 Steg för att publicera en resa beskrivs nedan:
 
-1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna publicera en resa med fel. Lär dig hur du felsöker din resa i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
+1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna publicera en resa med fel.
+
+   * Lär dig hur du testar din resa på [den här sidan](testing-the-journey.md).
+   * Lär dig hur du felsöker dina resefel i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
 
 1. Om du vill publicera resan klickar du på alternativet **[!UICONTROL Publish]** som finns i den övre högra menyn.
 
