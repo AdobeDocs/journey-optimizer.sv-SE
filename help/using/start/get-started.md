@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 2%
@@ -21,9 +21,14 @@ ht-degree: 2%
 
 [!DNL Adobe Journey Optimizer] hjälper företag att leverera sammankopplade, kontextuella och personaliserade upplevelser till sina kunder. Kundresan är hela processen för en kunds interaktioner med varumärket, från det första kontaktytan tills kunden går ur. Det börjar med informationsfasen, där kunderna lär sig om varumärket och börjar engagera. Kunden kommer sedan att interagera ytterligare med varumärket, besöka webbplatser online och fysiska webbplatser samt göra inköp, skicka meddelanden eller genomföra granskningar.
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och kombinerar en enhetlig kundprofil i realtid, ett API-första öppet ramverk, centraliserad offer decisioning och artificiell intelligens (AI) och maskininlärning (ML) för personalisering och optimering. Med Journey Optimizer kan varumärken på ett intelligent sätt avgöra nästa bästa interaktion med skala, hastighet och flexibilitet under hela kundresan. Med [!DNL Adobe Journey Optimizer] kan företag skapa och leverera både schemalagda marknadsföringskampanjer (till exempel veckokampanjer för en butik) och skräddarsydd individuell kommunikation (till exempel ett push-meddelande för en artikel som en lojalitetsappkund kan ha tittat på som tidigare var ur lager) inom samma program.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och kombinerar en enhetlig kundprofil i realtid, ett API-första öppet ramverk, centraliserat beslut om erbjudanden samt artificiell intelligens (AI) och maskininlärning (ML) för personalisering och optimering. Med Journey Optimizer kan varumärken på ett intelligent sätt avgöra nästa bästa interaktion med skala, hastighet och flexibilitet under hela kundresan. Med [!DNL Adobe Journey Optimizer] kan företag skapa och leverera både schemalagda marknadsföringskampanjer (till exempel veckokampanjer för en butik) och skräddarsydd individuell kommunikation (till exempel ett push-meddelande för en artikel som en lojalitetsappkund kan ha tittat på som tidigare var ur lager) inom samma program.
 
 ➡️ [Upptäck Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html){target="_blank"} (video)
+
+
+<!-- Use [!DNL Adobe Journey Optimizer] to build multi-step customer journeys that initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Learn how to build journeys in [this section](../building-journeys/journey-gs.md).
+
+You can also create audience-based campaigns to send messages.-->
 
 
 ## Användningsfall {#use-cases}
@@ -66,4 +71,4 @@ Förstå den grundläggande arkitekturen för [!DNL Adobe Journey Optimizer], in
 >* [Viktiga steg att starta](quick-start.md)
 >* [Designa resor och skicka meddelanden](../building-journeys/journey-gs.md)
 >* [Live-rapporter](../reports/live-report.md)
->* [Journey Optimizer säkerhetsöversikt](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)
+>* [Journey Optimizer - säkerhetsöversikt](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)

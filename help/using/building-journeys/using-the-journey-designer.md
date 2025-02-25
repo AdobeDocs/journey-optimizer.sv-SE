@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%
@@ -65,7 +65,9 @@ Beroende på resans status kan du utföra olika åtgärder under resan med hjäl
 
 ## Påbörja din resa {#start-your-journey}
 
-När du utformar din resa är den första frågan du vill ställa hur profiler kommer in på resan. Det finns två möjligheter:
+När du utformar din resa är den första frågan du vill ställa hur profiler kommer in på resan.
+
+Det finns två möjligheter:
 
 1. **Börja med en händelse**: När en resa är inställd på att lyssna på händelser, kommer individer in på resan **unitally** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om händelser](../event/about-events.md)
 

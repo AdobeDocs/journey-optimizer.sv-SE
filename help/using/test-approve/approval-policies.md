@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
-source-git-commit: decd8e222a1cd2f8767a1b88b0af03aa209a741e
+source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -140,6 +140,8 @@ Följ de här stegen för att definiera villkoren som är kopplade till en godk�
 Du kan nu aktivera din godkännandeprincip för att tillämpa den.
 
 ## Aktivera och hantera godkännandepolicyer {#activate-policies}
+
+Om du vill tillämpa din godkännandeprincip måste du aktivera den. Gör så här:
 
 1. Få åtkomst till din **[!UICONTROL Approval policy]**.
 
