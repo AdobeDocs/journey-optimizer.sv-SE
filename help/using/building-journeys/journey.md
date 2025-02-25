@@ -8,9 +8,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
+source-git-commit: e9964494fa38a9e693eeb6c8bdfd6dd3d21262e0
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,6 @@ ht-degree: 0%
 # Kom igång med resor{#jo-general-principle}
 
 Journey Optimizer resedesigner har allt som marknadsförare och reseansvariga behöver för att kunna genomföra flerstegsresor i alla kanaler. Detta inkluderar en intuitiv dra-och-släpp-arbetsyta för att samordna varje steg av resan, definiera målgruppen och inkludera de meddelanden, erbjudanden och innehåll i olika kanaler som målgruppsmedlemmarna kan se baserat på beteende, kontextuella data och affärshändelser.
-
-Vi börjar med att definiera den åtgärd eller händelse som startar kundresan, och sedan kontaktytorna där kundåtgärder, händelser,
-eller kontextuella data hjälper dem smidigt till nästa bästa steg. Den här processen börjar med att definiera åtgärden eller händelsen som startar från
-kundresan, följt av att definiera kontaktytor där kundåtgärder, händelser eller sammanhangsbaserade data sömlöst vägleder dem till nästa bästa steg.
 
 Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor. Du kan utforma avancerade scenarier i flera steg med följande funktioner:
 
@@ -33,10 +29,6 @@ Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssa
 * Använd de **inbyggda åtgärderna** för att skicka meddelanden som är utformade i [!DNL Journey Optimizer] eller skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden.
 
 * Med **resedesignern** kan du skapa dina flerstegsfall: enkelt dra och släppa en anmälningshändelse eller en läsningsaktivitet, lägga till villkor och skicka personaliserade meddelanden.
-
->[!NOTE]
->
->Reservoarer och begränsningar för resan finns på [den här sidan](../start/guardrails.md)
 
 Lär dig hur du skapar och utformar din första resa på [den här sidan](journey-gs.md).
 
@@ -53,6 +45,10 @@ Lär dig hur du bygger resor i följande kompletta fall:
 * [Skicka ett meddelande till prenumeranter](message-to-subscribers-uc.md)
 * [Skicka samlingar dynamiskt med anpassade åtgärder](collections.md)
 * [Begränsa genomströmning med externa datakällor och anpassade åtgärder](limit-throughput.md)
+
+>[!NOTE]
+>
+>Reservoarer och begränsningar för resan finns på [den här sidan](../start/guardrails.md)
 
 ## Instruktionsvideo {#video}
 
