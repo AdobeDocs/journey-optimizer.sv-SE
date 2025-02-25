@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 40bef9a05fef1433773a73d546752e84f81b7366
+source-git-commit: 6ba6f697060db83e2703bc0ac7cccbbccf816437
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -258,7 +258,7 @@ Du kan tillämpa en regeluppsättning på ett meddelande eller en resa, beroende
 
    <!--Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against business rules.-->
 
-1. Innan du aktiverar kampanjen måste du schemalägga att den ska köras minst 10 minuter framåt.
+1. Innan du aktiverar kampanjen måste du schemalägga att den ska köras minst 20 minuter framåt.
 
    Detta ger tillräckligt med tid för att fylla i räknarvärdena för profilen för affärsregeln som du har valt. Om du aktiverar kampanjen direkt fylls inte regeluppsättningens räknarvärden i mottagarnas profiler och meddelandet räknas inte mot deras regler för frekvensbegränsning för anpassade regeluppsättningar.
 
