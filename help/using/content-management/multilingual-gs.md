@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
-source-git-commit: c858d16ec520418148fb28ad2ecec0d3a6377ba9
+source-git-commit: 766530a2f443a2795d61161c9d08de299a5363d6
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,6 @@ ht-degree: 1%
 >id="ajo_multi_translation_homepage"
 >title="Översättningar"
 >abstract="Med den flerspråkiga funktionen kan ni enkelt skapa innehåll på flera språk i en enda kampanj eller resa. På sidan Översättningar kan du konfigurera projekt, välja översättningsleverantörer eller hantera språkspecifika ordlistor"
-
->[!IMPORTANT]
->
->Om du vill börja skapa flerspråkigt innehåll måste användarna ha behörighet **[!UICONTROL Manage Language settings]**.
->För automatiserat flöde behöver användare även behörigheter som är relaterade till **[!UICONTROL Translation Service]**-funktionerna. [Läs mer om behörigheter](../administration/permissions.md)
 
 Med den flerspråkiga funktionen kan ni enkelt skapa innehåll på flera språk i en enda kampanj eller resa. Med den här funktionen kan ni växla mellan olika språk när ni redigerar kampanjer, effektivisera hela redigeringsprocessen och förbättra möjligheterna att effektivt hantera flerspråkigt innehåll.
 
@@ -55,23 +50,49 @@ Användningen av en översättningsleverantörs översättningstjänster reglera
 
 Om du har frågor eller vill ha hjälp med dina översättningar kontaktar du tillämplig översättningsleverantör.
 
-Om du vill använda översättningsfunktionen i Journey Optimizer måste du tilldela API till motsvarande roll. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
+För det flerspråkiga innehållet måste följande inställningar definieras:
 
-Om du inte kan komma åt översättningssidan måste du aktivera översättningsfunktionen och beviljas **[!UICONTROL Translation service]**-relaterade behörigheter. [Läs mer](../administration/ootb-permissions.md)
+* Om du vill använda översättningsfunktionen i Journey Optimizer måste du tilldela API till motsvarande roll. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
+
+* Om du vill börja skapa flerspråkigt innehåll måste användarna ha behörighet **[!UICONTROL Manage Language settings]**. För automatiserat flöde behöver användare även behörigheter som är relaterade till **[!UICONTROL Translation Service]**-funktionerna. [Läs mer om behörigheter](../administration/permissions.md)
+
++++ Lär dig hur du tilldelar flerspråkiga behörigheter
+
+   1. Gå till fliken **Roller** i produkten **Behörigheter** och välj önskad **roll**.
+
+   1. Klicka på **Redigera** om du vill ändra behörigheterna.
+
+   1. Lägg till resursen för **översättningstjänsten** och välj sedan lämplig flerspråkig behörighet i listrutan.
+
+      ![](assets/multilingual-permission.png){zoomable="yes"}
+
+   1. Klicka på **Spara** om du vill använda ändringarna.
+
+      Alla användare som redan har tilldelats den här rollen får sina behörigheter automatiskt uppdaterade.
+
+   1. Om du vill tilldela den här rollen till nya användare går du till fliken **Användare** på kontrollpanelen **Roller** och klickar på **Lägg till användare**.
+
+   1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
+
+   1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+
++++
+
+* Om du inte kan komma åt översättningssidan måste du aktivera översättningsfunktionen och beviljas **[!UICONTROL Translation service]**-relaterade behörigheter. [Läs mer](../administration/ootb-permissions.md)
 
 +++ Lär dig aktivera översättningsfunktionen
 
-1. Om följande felsida visas indikerar den att funktionen **[!UICONTROL Translation]** inte har aktiverats än. Kontakta din organisations- och sandlådeadministratör. för att begära åtkomst.
+   1. Om följande felsida visas indikerar den att funktionen **[!UICONTROL Translation]** inte har aktiverats än. Kontakta din organisations- och sandlådeadministratör för att begära åtkomst.
 
-   ![](assets/multi-troubleshoot.png)
+  ![](assets/multi-troubleshoot.png)
 
-1. Administratören måste navigera till menyn **[!UICONTROL Translation]** i den vänstra sidofältet.
+   1. Administratören måste navigera till menyn **[!UICONTROL Translation]** i den vänstra sidofältet.
 
-   Systemet aktiverar översättningsfunktionen automatiskt.
+      Systemet aktiverar översättningsfunktionen automatiskt.
 
-1. När funktionen har aktiverats kan du komma åt sidan **[!UICONTROL Translation]** tillsammans med flikarna **[!UICONTROL Projects]**, **[!UICONTROL Providers]** och **[!UICONTROL Locale]**.
+   1. När funktionen har aktiverats kan du komma åt sidan **[!UICONTROL Translation]** tillsammans med flikarna **[!UICONTROL Projects]**, **[!UICONTROL Providers]** och **[!UICONTROL Locale]**.
 
-1. Om den här proceduren har misslyckats visas fortfarande samma felsida. Kontakta i så fall din Adobe-representant för att få mer hjälp.
+   1. Om den här proceduren har misslyckats visas fortfarande samma felsida. Om så är fallet, kontakta din Adobe-representant för ytterligare hjälp.
 
 +++
 
