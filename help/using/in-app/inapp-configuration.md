@@ -6,9 +6,9 @@ feature: In App
 level: Intermediate
 keywords: in-app, meddelande, konfiguration, plattform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-source-git-commit: 5f261b4c097023557f95831635f2be141dfc5bc8
+source-git-commit: ca296c9aa3705985a1fafcb64ec0f3fbe2fe84fa
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '865'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ För att meddelanden i appen ska kunna levereras på rätt sätt måste följand
 
   ![](assets/inapp_config_6.png)
 
-* I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} kontrollerar du att standardprincipen för sammanslagning har aktiverats med alternativet **[!UICONTROL Active-On-Edge Merge Policy]**. Om du vill göra det väljer du en profil under menyn **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
+* I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} kontrollerar du att standardprincipen för sammanslagning har aktiverats med alternativet **[!UICONTROL Active-On-Edge Merge Policy]**. Om du vill göra det väljer du en princip på menyn **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
 
   Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att aktivera och publicera inkommande kampanjer korrekt. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
 
@@ -53,6 +53,7 @@ För att meddelanden i appen ska kunna levereras på rätt sätt måste följand
   [Läs mer om Edge Delivery-vyn](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery)
 
 ## Skapa en konfiguration i appen {#channel-prerequisites}
+
 
 1. Gå till menyn **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** och klicka sedan på **[!UICONTROL Create channel configuration]**.
 
@@ -72,7 +73,11 @@ För att meddelanden i appen ska kunna levereras på rätt sätt måste följand
 
    ![](assets/inapp_config_9.png)
 
-1. Välj plattformen som meddelandet i appen ska tillämpas på.
+1. Välj den plattform som du vill definiera inställningarna för. På så sätt kan ni ange målappen för varje plattform och säkerställa enhetlig innehållsleverans på flera plattformar.
+
+   >[!NOTE]
+   >
+   >För iOS- och Android-plattformar baseras leveransen enbart på program-ID:t. Om båda apparna har samma program-ID levereras innehåll till båda, oavsett vilken plattform som valts i **[!UICONTROL Channel configuration]**.
 
    ![](assets/inapp_config_10.png)
 
