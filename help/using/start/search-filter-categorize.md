@@ -8,18 +8,18 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: f9f2cd339680d0dbff1812e64c5082ca97a34771
+source-git-commit: cbd121dda4093fdea6f6bded02e8ae3e188e827d
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '565'
 ht-degree: 6%
 
 ---
 
 # Söka, filtrera, ordna {#search-filter-organize}
 
-## Sök{#unified-search}
+## Sök {#unified-search}
 
-Var som helst från Adobe Journey Optimizer-gränssnittet kan du använda sökfunktionen för enhetliga Adobe Experience Cloud i mitten av det övre fältet för att hitta resurser, resor, datauppsättningar med mera i dina sandlådor.
+I Adobe Journey Optimizer-gränssnittet kan du använda den enhetliga sökfunktionen i Adobe Experience Cloud i mitten av det övre fältet för att hitta resurser, resor, datauppsättningar med mera i dina sandlådor.
 
 Börja skriva in innehåll för att visa de bästa resultaten. Hjälpartiklar om de angivna nyckelorden visas också i resultaten.
 
@@ -29,11 +29,11 @@ Tryck på **Retur** för att få tillgång till alla resultat och filtrera efter
 
 ![](assets/search-and-filter.png)
 
-## Filterlistor{#filter-lists}
+## Filterlistor {#filter-lists}
 
 I de flesta av listorna använder du sökfältet för att hitta specifika objekt och definiera filtervillkor.
 
-Du kommer åt filter genom att klicka på filterikonen högst upp till vänster i en lista. Med filtermenyn kan du filtrera de element som visas enligt olika villkor: Du kan välja att endast visa element av en viss typ eller status, de element som du har skapat eller de som har ändrats under de senaste 30 dagarna. Alternativen varierar beroende på sammanhanget.
+Du kommer åt filter genom att klicka på filterikonen högst upp till vänster i en lista. Med filtermenyn kan du filtrera de element som visas enligt olika villkor: du kan välja att endast visa element av en viss typ eller status, de element som du har skapat eller de som har ändrats under de senaste 30 dagarna. Alternativen varierar beroende på sammanhanget.
 
 Dessutom kan du använda enhetliga taggar för att filtrera en lista beroende på vilka taggar som tilldelats ett objekt. För närvarande finns det taggar för resor och kampanjer. [Lär dig arbeta med taggar](#tags)
 
