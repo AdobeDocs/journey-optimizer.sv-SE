@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 341c5c6a1a451819737797bfa70a8625f900388d
+source-git-commit: 9cab78c89d0885b6da6b43a444754e9ad1e17ae0
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2319'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,6 @@ Du måste också känna till [Guardsändningar för kundprofildata i realtid](ht
 
 Adobe [!DNL Journey Optimizer]-gränssnittet är utformat för att fungera optimalt i den senaste versionen av Google Chrome. Du kan ha problem med att använda vissa funktioner i äldre versioner eller i andra webbläsare.
 
-## Meddelandeskyddsutkast {#message-guardrails}
-
-* Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
-* Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
-
 ## Skyddsutkast för datauppsättningar {#datasets-guardrails}
 
 Från och med februari 2025 introduceras ett TTL-skyddsräcke (time-to-live) för Journey Optimizer systemgenererade datauppsättningar i **nya sandlådor och nya organisationer** enligt följande:
@@ -47,20 +42,20 @@ Från och med februari 2025 introduceras ett TTL-skyddsräcke (time-to-live) fö
 
 Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en efterföljande fas. [Läs mer om datauppsättningar Tid-att-lämna-skyddsutkast (TTL)](../data/datasets-ttl.md)
 
-## Garantier för landningssidor {#lp-guardrails}
+## Kanalskyddsräcken {#channel-guardrails}
 
-* Endast en **Form**-komponent kan användas på en enda primär sida.
-* Komponenten **Form** kan inte användas i undersidor.
-* Du kan inte lägga till en förrubrik på en landningssida.
-* Du kan inte välja alternativet **Kod för egen** när du utformar en primär landningssida.
+### E-postskyddsutkast {#message-guardrails}
 
-## SMS-skyddsräcken {#sms-guardrails}
+* Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
+* Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
+
+### SMS-skyddsräcken {#sms-guardrails}
 
 * Mediefiler för MMS kan inkluderas via en URL som stöds. Kontrollera att mediefilen överförs separat.
 * Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
 * Samtalshantering fungerar på SMS-kanalnivå för MMS.
 
-## Skyddsutkast för webbkanal {#web-guardrails}
+### Skyddsutkast för webbkanal {#web-guardrails}
 
 Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
@@ -69,6 +64,13 @@ Licensvärden för varje paket visas på sidan [Journey Optimizer Product Descri
 ### Kodbaserade kanalgarantier {#code-based-guardrails}
 
 Om du vill använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] och leverera kodinnehållets nyttolast som kan användas av dina program följer du de krav som anges på [den här sidan](../code-based/code-based-prerequisites.md).
+
+## Garantier för landningssidor {#lp-guardrails}
+
+* Endast en **Form**-komponent kan användas på en enda primär sida.
+* Komponenten **Form** kan inte användas i undersidor.
+* Du kan inte lägga till en förrubrik på en landningssida.
+* Du kan inte välja alternativet **Kod för egen** när du utformar en primär landningssida.
 
 ## Underdomänsskydd {#subdomain-guardrails}
 
@@ -85,7 +87,7 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 
 Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
 
-## Beslutsfattare och beslutsföringsgarantier {#decisioning}
+## Beslutsfattare och beslutsföringsgarantier {#decisioning-guardrails}
 
 Garantier och begränsningar som ska beaktas när man arbetar med beslut eller beslutshantering beskrivs i dessa avsnitt av beslut och beslutshantering:
 
