@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 817f9c16ae48b1127e5092add6fbcefa8dd3ba9f
+source-git-commit: 5af420f5ba312949e475c772e56c60a0368a4796
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
 * När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
 
-### Konfigurera aktiviteten{#cnfigure-segment-qualification}
+### Konfigurera aktiviteten {#configure-segment-qualification}
 
 Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
 
@@ -130,7 +130,7 @@ Använd inte en gruppmålgrupp i en **[!UICONTROL Audience Qualification]**-akti
 
 ![](assets/segment-error.png)
 
-Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentationen](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök måste du använda en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
+Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök måste du använda en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
 
 Innan ni använder målgruppen i en produktionsresa måste ni först och främst utvärdera mängden individer som är kvalificerade för denna målgrupp varje dag. Om du vill göra det kan du kontrollera menyn **[!UICONTROL Audience]**, öppna målgruppen och sedan titta på diagrammet **[!UICONTROL Profiles over time]**.
 

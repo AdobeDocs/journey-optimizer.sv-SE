@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelser, händelse, resa, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-source-git-commit: aec3d79ad07ec6904e55afd6fc61ba9b4f403fc8
+source-git-commit: 5af420f5ba312949e475c772e56c60a0368a4796
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 28%
+source-wordcount: '986'
+ht-degree: 27%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
 >title="Reseevenemang"
->abstract="En händelse är länkad till en person. Det gäller en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (t.ex. en person som uppnått 10 000 kundpoäng). Detta är vad Journey Optimizer kommer att lyssna på under resor för att samordna de bästa nästa åtgärderna."
+>abstract="En händelse är länkad till en person. Det gäller en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (t.ex. en person som uppnått 10 000 kundpoäng). Journey Optimizer lyssnar på enastående händelser under resor för att samordna de bästa nästa åtgärderna."
 
-Med händelsekonfigurationen kan du definiera vilken information som [!DNL Journey Optimizer] ska tas emot som händelser. Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse.
+Med händelsekonfigurationen kan du definiera den information som [!DNL Journey Optimizer] tar emot som händelser. Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse.
 
 >[!CAUTION]
 >

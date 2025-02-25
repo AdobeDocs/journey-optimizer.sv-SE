@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: aec3d79ad07ec6904e55afd6fc61ba9b4f403fc8
+source-git-commit: 5af420f5ba312949e475c772e56c60a0368a4796
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,11 @@ ht-degree: 1%
 
 # Profilingångshantering {#entry-management}
 
-Hanteringen av profilentréer beror på typen av resa. I Adobe Journey Optimizer finns följande typer av resor:
+Hanteringen av profilentréer beror på typen av resa.
+
+## Resetyper {#types-of-journeys}
+
+I Adobe Journey Optimizer finns följande typer av resor:
 
 * **Unitary event**-resor: de här resorna börjar med en Unitary-händelse. När händelsen tas emot kommer den associerade profilen in i resan. [Läs mer](#entry-unitary)
 

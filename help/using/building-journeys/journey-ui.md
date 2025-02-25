@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
-source-git-commit: 59bdddbf959505140be7a070dafe3e67aaae691b
+source-git-commit: 5af420f5ba312949e475c772e56c60a0368a4796
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 2%
+source-wordcount: '1088'
+ht-degree: 3%
 
 ---
 
@@ -64,11 +64,19 @@ I konfigurationsrutorna Händelse, Datakälla och Åtgärd visar fältet **[!UIC
 
 ## Resetyper {#journey-types}
 
-Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]** eller **[!UICONTROL Business event]**.
+Vilken typ av resa det är beror på vilka aktiviteter som används under resan. Den kan vara:
+
+* **[!UICONTROL Unitary event]** - Rutiner för enhetshändelser är kopplade till en viss profil. Händelser som rör en persons beteende eller något som händer i samband med en person (en person har till exempel nått 10 000 poäng för lojalitet). [Läs mer](../event/about-events.md).
+* **[!UICONTROL Business event]**. Affärsevenemangets resa börjar med en händelse som inte är profilrelaterad. Händelsekonfigurationen utförs av en teknisk användare och kan inte redigeras. [Läs mer](../event/about-events.md).
+* **[!UICONTROL Audience qualification]** - Resor för målgruppskvalifikationer lyssnar på ingångar och utgångar för profiler i Adobe Experience Platform-målgrupper för att få individer att komma in på eller gå framåt under en resa. [Läs mer](audience-qualification-events.md).
+* **[!UICONTROL Read audience]** - Vid målgruppsresor för läsning kommer alla personer i målgruppen in på resan och får de meddelanden som ingår i din resa.  [Läs mer](read-audience.md).
+
+
+Läs mer om resetyper och hantering av associerade poster på [den här sidan](entry-management.md).
 
 ## Resestatyer {#journey-statuses}
 
-Resestatus kan vara:
+Resans status beror på dess livscykel. Den kan vara:
 
 * **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
