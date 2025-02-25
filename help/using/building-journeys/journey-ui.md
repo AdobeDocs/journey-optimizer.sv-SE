@@ -8,22 +8,24 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
+source-git-commit: 0f09de039d9d9555327413b2d65dda295e971bde
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '914'
 ht-degree: 2%
 
 ---
 
 # Bläddra och filtrera dina resor {#browse-journeys}
 
-## Åtkomstresor {#journey-access}
-
-### Kontrollpanel för resan {#dashboard-jo}
+## Kontrollpanel för resan {#dashboard-jo}
 
 Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Det finns två flikar: **[!UICONTROL Overview]** och **[!UICONTROL Browse]**.
 
-* På fliken **[!UICONTROL Overview]** visas en instrumentpanel med nyckelvärden för dina resor:
+
+* Fliken **[!UICONTROL Overview]** visar en instrumentpanel med nyckelvärden för dina resor.
+
+  ![kontrollpanelen för resan markerar fliken Översikt](assets/journeys-dashboard.png)
 
    * **Bearbetade profiler**: totalt antal profiler som har bearbetats under de senaste 24 timmarna
    * **Live-resor**: Totalt antal live-resor med trafik under de senaste 24 timmarna. Live-resor omfattar **Unitary-resor** (händelsebaserade) och **Batch-resor** (läs målgrupp).
@@ -34,36 +36,18 @@ Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Det finns två f
   >
   >På denna kontrollpanel beaktas trafiken under de senaste 24 timmarna. Endast de resor du har åtkomst till visas. Mätvärdena uppdateras var 30:e minut och endast när nya data är tillgängliga.
 
-  ![](assets/journeys-dashboard.png)
 
 * Fliken **[!UICONTROL Browse]** visar en lista över befintliga resor. Du kan söka efter resor, använda filter och utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post.
 
-  ![](assets/journeys-browse.png)
+  ![kontrollpanelen för resan markerar fliken Bläddra](assets/journeys-browse.png)
 
-### Filtrera dina resor {#filter}
+## Filtrera dina resor {#journey-filter}
 
-I listan över resor kan du använda olika filter för att förfina listan över resor för bättre läsbarhet.
+I listan över resor kan du använda olika filter för att förfina listan över resor.
 
 ![](assets/filter-journeys.png)
 
-Här är de olika filtreringsåtgärderna som du kan utföra:
-
-Filtrera resor efter status, typ, version och tilldelade taggar från **[!UICONTROL Status and version filters]**.
-
-Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]** eller **[!UICONTROL Business event]**.
-
-Status kan vara:
-
-* **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
-* **Utkast**: resan är i det första steget. Den har inte publicerats än.
-* **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** .
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
-* **Live**: resan har publicerats med knappen **Publicera** .
-* **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt.
-
->[!NOTE]
->
->Reseutvecklingscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: &quot;Publicera&quot; (mellan &quot;Utkast&quot; och &quot;Live&quot;), &quot;Aktivera testläge&quot; eller &quot;Inaktivera testläge&quot; (mellan &quot;Utkast&quot; och &quot;Utkast (test)&quot;) och &quot;Stoppar&quot; (mellan &quot;Live&quot; och &quot;Stoppad&quot;). När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+Du kan filtrera resor utifrån deras [status](#journey-statuses), [typ](#journey-types), [version](#journey-versions) och tilldelade [taggar](../start/search-filter-categorize.md#tags) från **[!UICONTROL Status and version filters]**.
 
 Använd **[!UICONTROL Creation filters]** om du vill filtrera resorna efter när de skapades eller efter den användare som skapade dem.
 
@@ -77,6 +61,25 @@ I konfigurationsrutorna Händelse, Datakälla och Åtgärd visar fältet **[!UIC
 
 ![](assets/journey3bis.png)
 
+
+## Resetyper {#journey-types}
+
+Typen kan vara: **[!UICONTROL Unitary event]**, **[!UICONTROL Audience qualification]**, **[!UICONTROL Read audience]** eller **[!UICONTROL Business event]**.
+
+## Resestatyer {#journey-statuses}
+
+Resestatus kan vara:
+
+* **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
+* **Utkast**: resan är i det första steget. Den har inte publicerats än.
+* **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** .
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Live**: resan har publicerats med knappen **Publicera** .
+* **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt.
+
+>[!NOTE]
+>
+>Reseutvecklingscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: &quot;Publicera&quot; (mellan &quot;Utkast&quot; och &quot;Live&quot;), &quot;Aktivera testläge&quot; eller &quot;Inaktivera testläge&quot; (mellan &quot;Utkast&quot; och &quot;Utkast (test)&quot;) och &quot;Stoppar&quot; (mellan &quot;Live&quot; och &quot;Stoppad&quot;). När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
 
 ## Reseversioner {#journey-versions}
 
@@ -124,4 +127,3 @@ Gör så här:
    ![](assets/duplicate-jo2.png)
 
 1. Den nya resan skapas och är tillgänglig i reselistan.
-
