@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 6ba6f697060db83e2703bc0ac7cccbbccf816437
+source-git-commit: 53d319454d47260c44a457ed547a4f3c6b33592c
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 0%
@@ -311,7 +311,7 @@ Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till res
 
 >[!IMPORTANT]
 >
->Om en resa aktiveras omedelbart kan det ta upp till 15 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 15 minuter framåt för att förhindra den här möjligheten.
+>Om en resa aktiveras omedelbart kan det ta upp till 20 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 20 minuter framåt för att förhindra den här möjligheten.
 
 +++
 

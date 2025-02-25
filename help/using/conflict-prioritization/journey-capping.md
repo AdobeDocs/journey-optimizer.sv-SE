@@ -5,7 +5,7 @@ role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
 exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
-source-git-commit: 6e2a2505f1ffb7ff00f5e24763152b759073869d
+source-git-commit: 53d319454d47260c44a457ed547a4f3c6b33592c
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till res
 
 >[!IMPORTANT]
 >
->Om en resa aktiveras omedelbart kan det ta upp till 15 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 15 minuter framåt för att förhindra den här möjligheten.
+>Om en resa aktiveras omedelbart kan det ta upp till 20 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 20 minuter framåt för att förhindra den här möjligheten.
 
 När resan är live kan du checka in reserapporten om regeluppsättningen har lett till någon uteslutning från resan, i tabellen **[!UICONTROL Journey Exclusions]**. [Lär dig hur du arbetar med reserapporter](../reports/journey-global-report-cja.md)
 
