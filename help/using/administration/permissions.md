@@ -9,9 +9,9 @@ topic: Administration
 role: Admin
 level: Intermediate
 keywords: produkt, profiler, sandlåda
-source-git-commit: be372f8f80d304067748d539fb8e210df6280721
+source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '685'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 Med produkten [!DNL Journey Optimizer] kan du välja mellan ett intervall av befintliga **[!UICONTROL Roles]**, var och en med olika behörighetsnivåer, som du kan tilldela användarna. Mer information om tillgängliga **[!UICONTROL Roles]** finns på den här [sidan](ootb-product-profiles.md).
 
-När en användare tillhör en **[!UICONTROL Role]** får de tillgång till de program och tjänster i Adobe som ingår i produkten.
+När en användare tillhör en **[!UICONTROL Role]** får de tillgång till de Adobe-program och -tjänster som ingår i produkten.
 
 Om de befintliga rollerna inte uppfyller organisationens specifika behov kan du även skapa anpassade **[!UICONTROL Roles]** för att finjustera åtkomsten till vissa funktioner eller objekt i gränssnittet. På så sätt kan du se till att alla användare bara har tillgång till de resurser och verktyg de behöver för att kunna utföra sina uppgifter på ett effektivt sätt.
 
@@ -77,7 +77,7 @@ Observera, att om du ändrar ett användningsklart eller anpassat **[!UICONTROL 
 
 1. Menyn **[!UICONTROL Resources]** visar en lista med resurser som gäller för produkten **[!UICONTROL Experience Cloud - Platform powered applications]**. Dra och släpp resurser för att tilldela behörighet.
 
-   I resurslistrutan **[!UICONTROL Journeys]** väljer vi här Publish-resan **[!UICONTROL Permission]**.
+   I resurslistrutan **[!UICONTROL Journeys]** väljer vi här Publiceringsresa **[!UICONTROL Permission]**.
 
    ![](assets/do-not-localize/access_control_14.png)
 

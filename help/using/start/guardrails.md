@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: b6c31528784c0c8576e3200e7611a6b6cd43d7a7
+source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,10 @@ Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en
 
 Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
+### Kodbaserade kanalgarantier {#code-based-guardrails}
+
+Om du vill använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] och leverera kodinnehållets nyttolast som kan användas av dina program följer du de krav som anges på [den här sidan](../code-based/code-based-prerequisites.md).
+
 ## Underdomänsskydd {#subdomain-guardrails}
 
 Som standard kan du i [!DNL Journey Optimizer] delegera upp till 10 underdomäner totalt (som omfattar både e-post- och webbkanaler).
@@ -85,6 +89,7 @@ Garantier och begränsningar som ska beaktas när man arbetar med beslut eller b
 
 * [Avgörande av skyddsräcken och begränsningar](../experience-decisioning/decisioning-guardrails.md)
 * [Garantier och begränsningar för beslutshantering](../offers/decision-management-guardrails.md)
+
 
 ## Resehanddukar {#journeys-guardrails}
 

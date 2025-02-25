@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 9e9c235a-b78c-4669-af82-822b6f1e6fca
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 3%
 
 ---

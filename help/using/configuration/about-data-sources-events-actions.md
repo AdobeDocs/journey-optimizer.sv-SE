@@ -9,14 +9,14 @@ role: Admin
 level: Intermediate
 keywords: konfiguration, resa, kontrollpanel, datakällor, händelser, åtgärder
 exl-id: c144d44f-031f-4ca2-800e-d3878af400a5
-source-git-commit: b8065a68ed73102cb2c9da2c2d2675ce8e5fbaad
+source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 30%
+source-wordcount: '404'
+ht-degree: 29%
 
 ---
 
-# Konfigurera resor {#configure-journeys}
+# Konfigurera datakällor, händelser och åtgärder {#configure-journeys}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_configuration_dashboard"
@@ -35,7 +35,7 @@ Med Data Source-konfigurationen kan du definiera en anslutning till ett system f
 
 Med händelser kan ni utlösa era resor helt och hållet för att skicka meddelanden i realtid till den person som flyger in på resan.
 
-I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras efter Adobe Experience Data Model (XDM). Händelser kommer från API:er för direktuppspelning av inmatning för autentiserade och oautentiserade händelser (som Adobe Mobile SDK-händelser). [Läs mer](../../using/event/about-events.md)
+I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API:er för direktuppspelning av inmatning för autentiserade och oautentiserade händelser (t.ex. Adobe Mobile SDK-händelser). [Läs mer](../../using/event/about-events.md)
 
 ## Instruktioner {#actions}
 

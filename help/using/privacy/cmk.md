@@ -7,14 +7,14 @@ feature: Privacy, Monitoring
 role: Developer, User, Admin, Leader
 level: Intermediate
 exl-id: f0985d1f-0bcf-452f-bd46-dfeca0424f01
-source-git-commit: a939d06d26d64a72eaec0ddc7f22b074ad463150
+source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
-# Konfigurera och hantera kundhanterade nycklar för Adobe Journey Optimizer {#cmk}
+# Konfigurera och hantera kundhanterade nycklar {#cmk}
 
 >[!AVAILABILITY]
 >

@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
+source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
 workflow-type: tm+mt
-source-wordcount: '2196'
-ht-degree: 24%
+source-wordcount: '2168'
+ht-degree: 23%
 
 ---
 
@@ -183,7 +183,7 @@ ht-degree: 24%
    + [Resebegränsning och skiljeförfarande](using/conflict-prioritization/journey-capping.md)
 + Testa och godkänn {#test}
    + Förhandsgranska och testa innehåll {#preview-test}
-      + [Kom igång med förhandsgranskning och test](using/content-management/preview-test.md)
+      + [Kom igång med förgranskning och test](using/content-management/preview-test.md)
       + [Välj testprofiler](using/content-management/test-profiles.md)
       + [Förhandsgranska ditt innehåll](using/content-management/preview.md)
       + [Skicka e-postkorrektur](using/content-management/proofs.md)
@@ -282,7 +282,7 @@ ht-degree: 24%
          + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
          + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
       + Skapa kodbaserade upplevelser {#create-code-based-experiences}
-         + [Skapa och sammanställ kodbaserade upplevelser](using/code-based/create-code-based.md)
+         + [Skapa och komponera kodbaserade upplevelser](using/code-based/create-code-based.md)
          + [Testa kodbaserade upplevelser](using/code-based/test-code-based.md)
          + [Hantera kodbaserade upplevelser](using/code-based/publish-code-based.md)
    + Innehållskort{#content-card}
@@ -345,7 +345,7 @@ ht-degree: 24%
          + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
          + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
          + [Datumfunktioner](using/personalization/functions/dates.md)
-         + [Boolean- och jämförelsefunktioner](using/personalization/functions/operators.md)
+         + [Booleska funktioner och jämförelsefunktioner](using/personalization/functions/operators.md)
          + [Hjälpmedel](using/personalization/functions/helpers.md)
          + [Kartfunktioner](using/personalization/functions/maps.md)
          + [Matematiska funktioner](using/personalization/functions/math.md)
@@ -669,7 +669,7 @@ ht-degree: 24%
    + [Konfigurera affärsregler](using/configuration/frequency-rules.md)
    + [Arbeta med regeluppsättningar](using/configuration/rule-sets.md)
    + Konfigurera resor {#configure-journeys}
-      + [Om datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
+      + [Konfigurera datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
       + Integrera med externa system {#external-systems}
          + [Integrering av resor med externa system](using/configuration/external-systems.md)
          + [API för reglering](using/configuration/capping.md)
