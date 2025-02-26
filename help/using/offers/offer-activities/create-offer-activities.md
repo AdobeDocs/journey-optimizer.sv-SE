@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 8535040fd3fe1622d4358a762f92bd93f5694cfa
+source-git-commit: 2e1168f321d6f2c83733c6112e11d834d5e7eb95
 workflow-type: tm+mt
 source-wordcount: '2445'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Innan du bestämmer dig måste du kontrollera att komponenterna nedan har skapat
 
    Den här begränsningen kan tillämpas med en **beslutsregel** eller en eller flera **Adobe Experience Platform-målgrupper**. Båda beskrivs i [det här avsnittet](../offer-library/add-constraints.md#segments-vs-decision-rules).
 
-   * Om du vill begränsa urvalet av erbjudanden till medlemmarna i en Experience Platform-målgrupp väljer du **[!UICONTROL Audiences]** och klickar sedan på **[!UICONTROL Add audiences]**.
+   * Om du vill begränsa urvalet av erbjudanden till medlemmar i en Experience Platform-publik väljer du **[!UICONTROL Audiences]** och klickar sedan på **[!UICONTROL Add audiences]**.
 
      ![](../assets/activity_constraint_segment.png)
 
@@ -220,7 +220,7 @@ Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erb
 
 **Om duplicering är inaktiverat**
 
-När du lägger till flera beslutsomfattningar i ett beslut, och om duplicering inte tillåts på flera platser, väljs de giltiga erbjudandena i tur och ordning i den ordning som beslutsomfattningarna i begäran gäller.
+När du lägger till flera beslutsomfattningar i ett beslut, och om duplicering inte tillåts på flera praktik, väljs de giltiga erbjudandena sekventiellt i den ordning som beslutsomfattningarna i begäran gäller.
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 0362cb5af7845333d5657829b073881e1ee3c542
+source-git-commit: 2e1168f321d6f2c83733c6112e11d834d5e7eb95
 workflow-type: tm+mt
 source-wordcount: '2555'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Om du till exempel anger följande begränsningar:
 
 * Erbjudandet gäller endast användare som matchar&quot;Gold Loyalty Customers&quot;-beslutsregeln.
 * Prioriteten för erbjudandet är 50, vilket innebär att erbjudandet presenteras före erbjudanden med en prioritet mellan 1 och 49, och efter erbjudanden med en prioritet på minst 51.
-* Erbjudandet gäller endast en gång i månaden per användare och gäller alla ersättningar.
+* Erbjudandet gäller endast en gång i månaden per användare på alla ersättningar.
 
 ## Kvalificering {#eligibility}
 
@@ -269,7 +269,7 @@ Varje navområde är associerat med ett eller flera kantområden. Regler för fr
 
 Låt oss till exempel se din organisations navregion som *NLD2* och du skickar en beslutsbegäran från Europa (*IRL1* edge region). I det här scenariot ökar beslutsbegäran profilens räknare eftersom reglerna är tillgängliga i regionen *IRL1* (Irland). Om beslutsbegäran däremot kommer från en region som Japan (*JPN3*), som inte är ett kantområde som är knutet till (Nederländerna) *NLD2* -navet, skapas ingen räknare och reglerna för frekvensbegränsning tillämpas inte.
 
-Om du vill ha mer information om vilka nav- och kantområden som är kopplade till din organisation kan du kontakta din Adobe-representant.
+Om du vill ha mer information om vilka nav- och kantområden som är kopplade till din organisation kontaktar du Adobe.
 
 +++
 
