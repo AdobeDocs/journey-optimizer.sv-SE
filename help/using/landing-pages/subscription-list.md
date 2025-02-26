@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: landning, landningssida, lista, prenumeration, service
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: a5bcd26ff735fc9656814c0df28fb58db5b3ae37
+source-git-commit: 0000d5e4a11c316340382ea9b68f8252f109cb61
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 2%
+source-wordcount: '656'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 En prenumerationstjänst avser marknadsföringsvaror och marknadsföringstjänster som tillhandahålls kunder som har valt att ta emot meddelanden om ett visst ämne/evenemang/intresse/osv. fortlöpande. I [!DNL Journey Optimizer] samlas de här kunderna i en prenumerationslista.
 
-En prenumerationstjänst kan vara:
+En prenumerationstjänst kan användas för:
 
 * ett nyhetsbrev, till exempel:&quot;Serie som körs&quot;
 * en händelse, till exempel:&quot;Summit 2021&quot;
@@ -64,6 +64,27 @@ Följ stegen nedan för att skapa en prenumerationslista.
 
 1. Klicka på **[!UICONTROL Save]**.
 
+## Använda en prenumerationslista {#use-subscription-lists}
+
+När prenumerationslistan har skapats kan du:
+
+* Lägga till profiler i prenumerationslistan
+
+  Du kan bjuda in personer till **att gå med i listan** genom att prenumerera på ett nyhetsbrev eller registrera sig för en händelse. Du kan också **skicka personliga meddelanden** till prenumeranterna.
+
+  Om du till exempel vill bjuda in en publik att registrera sig för ett evenemang eller prenumerera på ett nyhetsbrev kan du skicka ett meddelande till dem med en länk till en landningssida så att de kan gå med i evenemanget eller prenumerationen. Profiler som anmäler sig via landningssidformuläret läggs till i den prenumerationslista som du skapade för detta ändamål.
+
+* Skicka meddelanden till prenumeranter
+
+  Du kan också använda prenumerationslistor som målgrupper när du skapar resor och lägger till personalisering.
+
+  När en kund prenumererar på en direktuppspelningstjänst kan den till exempel utlösa ett omedelbart utskick av en välkomstserie, som uppmanar dem att logga in i appen för första gången och ange sina visningsinställningar.
+
+Lär dig hur du använder din prenumerationslista i [det här användningsexemplet](lp-use-cases.md#subscription-to-a-service).
+
+
+## Bläddra i dina prenumerationslistor {#browse-subscription-lists}
+
 I listan visas alla prenumerationslistor som skapats. Du kan filtrera dem baserat på datum när de skapades eller ändrades och deras status.
 
 ![](assets/lp_subscription-filters.png)
@@ -74,10 +95,15 @@ Möjliga statusvärden är följande:
 * **[!UICONTROL Live]**: Den aktuella dagen ligger mellan prenumerationslistans startdatum och slutdatum, eller så har du inte definierat slut-/startdatum, vilket innebär att prenumerationslistan alltid är aktiv.
 * **[!UICONTROL Expired]**: Slutdatumet har passerats, vilket innebär att prenumerationslistan inte längre är giltig. Prenumerationsprofiler får inte mer information om den här prenumerationslistan.
 
-När prenumerationslistan har skapats kan du använda den på en landningssida. De profiler som anmäler sig via landningssidans formulär läggs till i listan. [Läs mer](design-lp.md)
 
-Du kan också använda prenumerationslistor som målgrupper när du [skapar resor](../building-journeys/journey-gs.md#jo-build) och lägger till personalisering.
+## Övervaka dina prenumerationslistor {#monitor-subscription-lists}
 
->[!NOTE]
->
->Du kan övervaka hur din prenumerationslista påverkas genom specifika rapporter. [Läs mer](../reports/subscription-report-live.md)
+Ni kan övervaka hur din prenumerationslista påverkas genom dedikerade rapporter. Du kan komma åt:
+
+* Live-rapport om prenumerationslista
+
+  Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. [Läs mer](../reports/subscription-report-live.md)
+
+* Prenumerationslista Alla tidsrapporter, med Customer Journey Analytics
+
+  Dessa rapporter fokuserar på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod. **Prenumerationsrapporten** innehåller viktiga insikter om profilernas prenumerationer och avbeställningar som är kopplade till vissa listor, vilket hjälper dig att förstå hur effektiva olika prenumerationskampanjer och -initiativ är när det gäller att öka engagemanget och konverteringarna. [Läs mer](../reports/subscription-report-global-cja.md)
