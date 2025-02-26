@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 93dab17fc74396887e3b68051be777645e02709f
+source-git-commit: 5f48c3df14768e699e174e5a3539438e9b774e1a
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 4%
@@ -38,7 +38,9 @@ De viktigaste stegen för att skapa en resa finns på den här sidan. De är smi
 ![steg för att skapa resa: skapa, utforma, testa och publicera](assets/journey-creation-process.png)
 
 
-Bygg kundresor i flera steg och initiera en sekvens av interaktioner, erbjudanden och meddelanden över alla kanaler i realtid. Detta arbetssätt säkerställer att kunderna engagerar sig i rätt ögonblick baserat på deras handlingar och relevanta affärssignaler. Målgrupper kan definieras baserat på beteende, kontextuella data och affärshändelser. Förutsättningar beror på ditt användningsfall och vilken [typ av resa](entry-management.md#types-of-journeys) du skapar. Innan du börjar designa din resa ska du kontrollera att relevanta konfigurationssteg är gjorda:
+Bygg kundresor i flera steg och initiera en sekvens av interaktioner, erbjudanden och meddelanden över alla kanaler i realtid. Detta arbetssätt säkerställer att kunderna engagerar sig i rätt ögonblick baserat på deras handlingar och relevanta affärssignaler. Målgrupper kan definieras baserat på beteende, kontextuella data och affärshändelser. Förutsättningar beror på ditt användningsfall och vilken [typ av resa](entry-management.md#types-of-journeys) du skapar.
+
+Innan du börjar bygga din resa ska du kontrollera att relevanta konfigurationssteg är gjorda:
 
 * Om du vill utlösa dina resor tills dess när en händelse tas emot, måste du **konfigurera en händelse**. Du definierar den förväntade informationen och hur den ska behandlas. [Läs mer](../event/about-events.md).
 
