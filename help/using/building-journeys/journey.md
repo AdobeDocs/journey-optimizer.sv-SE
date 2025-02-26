@@ -8,7 +8,7 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: d3ec39dc08b23f315914be57a617c921903fead8
+source-git-commit: 7adee85117a3aad1a347f9f0808b0f32531dc548
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -17,8 +17,6 @@ ht-degree: 0%
 
 
 # Kom igång med resor{#jo-general-principle}
-
-Journey Optimizer resedesigner har allt som marknadsförare och reseansvariga behöver för att kunna genomföra flerstegsresor i alla kanaler. Detta inkluderar en intuitiv dra-och-släpp-arbetsyta för att samordna varje steg av resan, definiera målgruppen och inkludera de meddelanden, erbjudanden och innehåll i olika kanaler som målgruppsmedlemmarna kan se baserat på beteende, kontextuella data och affärshändelser.
 
 Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor. Du kan utforma avancerade scenarier i flera steg med följande funktioner:
 
@@ -29,6 +27,8 @@ Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssa
 * Använd de **inbyggda åtgärderna** för att skicka meddelanden som är utformade i [!DNL Journey Optimizer] eller skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden.
 
 * Med **resedesignern** kan du skapa dina flerstegsfall: enkelt dra och släppa en anmälningshändelse eller en läsningsaktivitet, lägga till villkor och skicka personaliserade meddelanden.
+
+Journey Optimizer resedesigner har allt som marknadsförare och reseansvariga behöver för att kunna genomföra flerstegsresor i alla kanaler. Detta inkluderar en intuitiv dra-och-släpp-arbetsyta för att samordna varje steg av resan, definiera målgruppen och inkludera de meddelanden, erbjudanden och innehåll i olika kanaler som målgruppsmedlemmarna kan se baserat på beteende, kontextuella data och affärshändelser.
 
 Lär dig hur du skapar och utformar din första resa på [den här sidan](journey-gs.md).
 
