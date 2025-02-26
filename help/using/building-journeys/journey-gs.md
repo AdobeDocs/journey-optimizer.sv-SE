@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 7adee85117a3aad1a347f9f0808b0f32531dc548
+source-git-commit: 93dab17fc74396887e3b68051be777645e02709f
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 4%
@@ -42,19 +42,19 @@ Bygg kundresor i flera steg och initiera en sekvens av interaktioner, erbjudande
 
 * Om du vill utlösa dina resor tills dess när en händelse tas emot, måste du **konfigurera en händelse**. Du definierar den förväntade informationen och hur den ska behandlas. [Läs mer](../event/about-events.md).
 
-  ![](assets/jo-event7bis.png)
+<!--   ![](assets/jo-event7bis.png)  -->
 
 * Er resa kan även lyssna på Adobe Experience Platform målgrupper för att skicka meddelanden i grupp till en viss uppsättning profiler. För detta måste du **skapa målgrupper**. [Läs mer](../audience/about-audiences.md).
 
-  ![](assets/segment2.png)
+<!--   ![](assets/segment2.png)  -->
 
 * Du kan definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel under dina förhållanden. Den här anslutningen är beroende av en **datakälla**. [Läs mer](../datasource/about-data-sources.md)
 
-  ![](assets/jo-datasource.png)
+<!--   ![](assets/jo-datasource.png)  -->
 
 * Journey Optimizer har [inbyggda meddelandefunktioner](../building-journeys/journeys-message.md). Om du använder ett tredjepartssystem för att skicka meddelanden kan du **skapa en anpassad åtgärd**. Läs mer i det här [avsnittet](../action/action.md).
 
-  ![](assets/custom2.png)
+<!--    ![](assets/custom2.png)  -->
 
 
 Som datatekniker beskrivs stegen för att konfigurera dina resor, inklusive datakällor, händelser och åtgärder i [det här avsnittet](../configuration/about-data-sources-events-actions.md).

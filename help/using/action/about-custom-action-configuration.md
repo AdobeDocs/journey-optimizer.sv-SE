@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 79bea396ba1ff482aaa4edcab1a31ca3847b3f52
+source-git-commit: 2af3cef357bf68091d9b8b5d2750e73a290bc682
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1638'
 ht-degree: 2%
 
 ---
@@ -139,7 +139,13 @@ När du konfigurerar en anpassad åtgärd måste du definiera följande **[!UICO
    >
    >Huvuden valideras enligt fälttolkningsregler. Läs mer i [den här dokumentationen](https://tools.ietf.org/html/rfc7230#section-3.2.4){_blank}.
 
-## Stöd för mTLS-protokoll {#mtls-protocol-support}
+## Transportsäkerhetsskikt {#tls}
+
+### Stöd för TLS-protokoll {#tls-protocol-support}
+
+Adobe Journey Optimizer stöder TLS 1.3 som standard för anpassade åtgärder. Om en kund även stöder TLS 1.3 sker kommunikationen via TLS 1.3. I annat fall kan TLS-förhandlingarna återgå till TLS 1.2.
+
+### Stöd för mTLS-protokoll {#mtls-protocol-support}
 
 Du kan använda mTLS (Mutual Transport Layer Security) för att säkerställa förbättrad säkerhet vid utgående anslutningar till anpassade Adobe Journey Optimizer-åtgärder. mTLS är en heltäckande säkerhetsmetod för ömsesidig autentisering som ser till att båda parter delar information är de som gör anspråk på att vara innan data delas. mTLS innehåller ytterligare ett steg jämfört med TLS, där servern också frågar efter klientens certifikat och verifierar det i slutet.
 
