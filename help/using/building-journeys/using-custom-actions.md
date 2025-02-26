@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 keywords: åtgärd, anpassad, API, resa, konfiguration, tjänst
 exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 8b96c9d4698dc58abdc5ae0261db92b0ce708597
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 23%
+source-wordcount: '407'
+ht-degree: 18%
 
 ---
 
@@ -23,7 +23,11 @@ ht-degree: 23%
 >title="Anpassade åtgärder"
 >abstract="Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast."
 
-Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
+Använd anpassade åtgärder för att aktivera anslutning till ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
+
+Läs mer om anpassade åtgärder i [det här avsnittet](../action/action.md).
+
+Lär dig hur du skapar och konfigurerar en anpassad åtgärd på [den här sidan](../action/about-custom-action-configuration.md).
 
 ## Samtycke- och datahantering {#privacy}
 
@@ -67,6 +71,3 @@ Om du vill ange värdet för dynamiska huvud- och frågeparameterfält klickar d
 
 I avsnittet **[!UICONTROL Action parameters]** ser du meddelandeparametrarna som är definierade som _&quot;Variabel&quot;_. För de här parametrarna kan du definiera var informationen ska hämtas (till exempel händelser, datakällor), skicka värden manuellt eller använda den avancerade uttrycksredigeraren för avancerade användningsfall. Avancerade användningsområden kan vara datahantering och annan funktionsanvändning. Se den här [sidan](expression/expressionadvanced.md).
 
-**Relaterade ämnen**
-
-[Konfigurera en åtgärd](../action/about-custom-action-configuration.md)
