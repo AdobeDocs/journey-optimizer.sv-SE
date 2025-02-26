@@ -8,13 +8,13 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
-source-git-commit: ad70e369dac61dc3ea261e7931c0b58e46c23dda
+exl-id: 5a12280c-b937-4cd9-a1ef-563bab48e42e
+source-git-commit: 5f7e9556a27fb12618f8da35da5427de3a0867dc
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
-
 
 # URL-uppföljning {#url-tracking}
 
@@ -28,11 +28,7 @@ ht-degree: 0%
 >title="Förhandsgranska URL-spårningsparametrar"
 >abstract="Granska hur spårningsparametrar läggs till i de URL:er som finns i ditt e-postinnehåll."
 
-När du konfigurerar en ny [e-postkanalskonfiguration](email-settings.md) kan du definiera **[!UICONTROL URL tracking parameters]** för att mäta effekten av dina marknadsföringssatsningar i olika kanaler.
-
->[!NOTE]
->
->Den här funktionen är valfri.
+När du konfigurerar en ny [e-postkanalskonfiguration](email-settings.md) kan du definiera **[!UICONTROL URL tracking parameters]** för att mäta effekten av dina marknadsföringssatsningar i olika kanaler. Det är valfritt att aktivera den här funktionen.
 
 Parametrarna som definieras i motsvarande avsnitt läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika prestandarapporter.
 
