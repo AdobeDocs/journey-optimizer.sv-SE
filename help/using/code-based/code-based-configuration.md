@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: bf0a6fa496a08348be16896a7f2313882eb97c06
+source-git-commit: 890d3925a418c117451864558be92030a3a0f87f
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 1%
@@ -66,7 +66,7 @@ Så här skapar du en kodbaserad upplevelsekanalkonfiguration:
    >
    >Du kan välja flera plattformar. När du väljer flera plattformar levereras innehållet till alla valda sidor eller appar.
 
-1. Välj det format som programmet förväntar sig för den här platsen. Detta kommer att användas vid utvecklingen av den kodbaserade upplevelsen i kampanjer och resor.
+1. Välj det format som programmet förväntar sig för den här platsen. Detta kommer att användas när den kodbaserade upplevelsen skapas i kampanjer och resor.
 
    ![](assets/code_config_4.png)
 
@@ -76,7 +76,7 @@ Du kan nu välja den här konfigurationen när du [skapar en kodbaserad upplevel
 
 >[!NOTE]
 >
->Appimplementeringsteamet ansvarar för att göra explicita API- eller SDK-anrop för att hämta innehåll för de ytor som definieras i den valda kodbaserade upplevelsekonfigurationen. Läs mer om olika kundimplementeringar i [det här avsnittet](code-based-implementation-samples.md).
+>Programimplementeringsteamet ansvarar för att skapa explicita API- eller SDK-anrop för att hämta innehåll för de ytor som definieras i den valda kodbaserade upplevelsekonfigurationen. Läs mer om olika kundimplementeringar i [det här avsnittet](code-based-implementation-samples.md).
 
 ### Webbplattformar {#web}
 
