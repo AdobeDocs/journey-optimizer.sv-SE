@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 824926a3448acc57ed10074a92cc283cb8bbb658
+source-git-commit: c1dc65616219520a72416a62399f7c2dbca7ca77
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment"
 >title="Innehållsexperiment"
->abstract="Du kan välja att ändra meddelandets innehåll, ämne eller avsändare för att definiera flera behandlingar och fastställa den bästa kombinationen för era målgrupper."
+>abstract="Du kan välja att ändra meddelandets innehåll eller ämne för att definiera flera behandlingar och avgöra den bästa kombinationen för era målgrupper."
 
 >[!NOTE]
 >
 >Innan du börjar med Content Experiment bör du kontrollera att rapportkonfigurationen är inställd för dina anpassade datauppsättningar. Läs mer i [det här avsnittet](../reports/reporting-configuration.md).
 
-Med Journey Optimizer Content Experiment kan ni definiera flera olika leveranssätt för att mäta vilken som fungerar bäst för er målgrupp. Du kan välja att variera leveransinnehåll, ämne eller avsändare. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med det angivna mätvärdet.
+Med Journey Optimizer Content Experiment kan ni definiera flera olika leveranssätt för att mäta vilken som fungerar bäst för er målgrupp. Du kan välja att variera leveransinnehållet eller ämnet. Intressemålgruppen fördelas slumpmässigt till varje behandling för att avgöra vilken som fungerar bäst med det angivna mätvärdet.
 
 ![](../rn/assets/do-not-localize/experiment.gif)
 
