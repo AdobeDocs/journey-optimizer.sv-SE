@@ -9,24 +9,20 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 47b549f3e1e220b7e8f0c82d9a1f9ecfd5dd2340
+source-git-commit: 4a9034c0c875cd504e25c8eb22a2715004416ea1
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1658'
 ht-degree: 1%
 
 ---
 
 # Skapa och publicera landningssidor {#create-lp}
 
->[!CAUTION]
->
->För att kunna testa och publicera landningssidor måste du ha behörighet **[!UICONTROL Publish Messages]**.
-
 Om du vill dirigera dina kunder till en definierad webbsida som du vill visa när de klickar på en viss länk, skapar du en landningssida i [!DNL Journey Optimizer], konfigurerar den primära sidan och eventuella underordnade sidor, testar den och publicerar den.
 
->[!CAUTION]
->
->Du kan inte komma åt din landningssida genom att kopiera och klistra in den URL-adress som definierades när [sidan skapades](#create-landing-page) i en webbläsare, även om den publicerades. I stället kan du testa den med förhandsvisningsfunktionen som beskrivs i [det här avsnittet](#test-landing-page).
+De viktigaste stegen för att skapa landningssidor är följande:
+
+![](assets/lp-creation-process.png)
 
 ## Åtkomst till landningssidor {#access-landing-pages}
 
@@ -71,9 +67,11 @@ I den här listan kan du komma åt ett antal åtgärder. Klicka på de tre punkt
 >abstract="För att skydda känsliga digitala resurser kan du definiera auktoriseringar för att hantera dataåtkomst till din landningssida med hjälp av etiketter."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/object-based-access.html" text="Åtkomstkontroll på objektnivå"
 
-De viktigaste stegen för att skapa landningssidor är följande:
 
-![](assets/lp-creation-process.png)
+Om du vill skapa en landningssida måste du välja en förinställning, konfigurera den primära sidan och underordnade sidor och slutligen testa sidan innan du publicerar den. Dessa steg beskrivs nedan:
+
+
+1. Bläddra till **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** från den vänstra menyn.
 
 1. Klicka på **[!UICONTROL Create landing page]** i listan över landningssidor.
 
@@ -285,11 +283,12 @@ Två typer av varningar kan inträffa:
 
 -->
 
-## Publish landningssida {#publish-landing-page}
+## Publicera landningssidan {#publish-landing-page}
 
 >[!CAUTION]
 >
->Om du vill kunna publicera landningssidor måste du ha behörigheten **[!UICONTROL Publish Messages]**.
+>Användarna måste ha behörighet **[!UICONTROL Publish Messages]** för att kunna publicera landningssidor.
+
 
 När landningssidan är klar kan du publicera den för att göra den tillgänglig för användning i ett meddelande.
 
