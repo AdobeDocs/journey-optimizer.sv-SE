@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 05dc60a4eb33be91ba9cc7b4897fa1f28b5557b6
+source-git-commit: d498f32a42b13bfdee20f32a589dd31c77d88fa8
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2175'
 ht-degree: 23%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 23%
          + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
          + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
          + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
-         + [Använd anpassade åtgärder för att skriva resthändelser i Experience Platform](using/building-journeys/custom-action-aep.md)
+         + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Kampanjer{#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
@@ -683,17 +683,17 @@ ht-degree: 23%
          + [Konfigurera en affärshändelse](using/event/about-creating-business.md)
          + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey.md)
       + Datakällans konfiguration{#data-source-journeys}
-         + [Om datakällor](using/datasource/about-data-sources.md)
+         + [Kom igång med datakällor](using/datasource/about-data-sources.md)
          + [Konfigurera en datakälla](using/datasource/configure-data-sources.md)
          + [Datakällan i Adobe Experience Platform](using/datasource/adobe-experience-platform-data-source.md)
          + [Externa datakällor](using/datasource/external-data-sources.md)
       + Åtgärdskonfiguration {#action-journeys}
-         + [Om åtgärder](using/action/action.md)
-         + [Konfigurera en åtgärd](using/action/about-custom-action-configuration.md)
-         + [Felsök anpassad åtgärd](using/action/troubleshoot-custom-action.md)
+         + [Kom igång med anpassade åtgärder](using/action/action.md)
+         + [Konfigurera en anpassad åtgärd](using/action/about-custom-action-configuration.md)
+         + [Felsöka en anpassad åtgärd](using/action/troubleshoot-custom-action.md)
+         + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
          + [Integrera med Adobe Campaign Standard](using/action/acs-action.md)
          + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
-         + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
          + [Integrera med Marketo Engage](using/action/marketo-engage.md)
    + [Källor](using/start/get-started-sources.md)
    + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)

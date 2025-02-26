@@ -1,45 +1,44 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Om åtgärder
-description: Läs om hur du konfigurerar en åtgärd
+title: Kom igång med funktionsmakron
+description: Lär dig hur du arbetar med åtgärder
 feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärder, resa, meddelanden, sändning, anslutningar
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
+source-git-commit: d498f32a42b13bfdee20f32a589dd31c77d88fa8
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 40%
+source-wordcount: '269'
+ht-degree: 21%
 
 ---
 
-# Om åtgärder {#about_actions}
+# Kom igång med anpassade åtgärder {#about_actions}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_list"
->title="Om åtgärder"
->abstract="Här definierar du anslutningen till systemet som ska skicka meddelanden. De åtgärder som definieras här finns sedan tillgängliga på den vänstra paletten under din resa i kategorin Instruktioner."
+>title="Anpassade åtgärder"
+>abstract="Åtgärder är kopplingar genom vilka ni levererar personaliserade upplevelser i realtid till kunder, till exempel push-meddelanden, e-post eller andra sätt för digitalt engagemang som ni använder i ert företag."
 
 Åtgärder är kopplingar genom vilka ni levererar personaliserade upplevelser i realtid till kunder, till exempel push-meddelanden, e-post eller andra sätt för digitalt engagemang som ni använder i ert företag.
 
+
 ➡️ [Upptäck den här funktionen i videon](#video)
 
-[!DNL Journey Optimizer] har inbyggd meddelandefunktion.
+[!DNL Journey Optimizer] har inbyggd meddelandefunktion. Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
 
-Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
+* Om du använder Adobe Campaign v7 eller v8 blir en integrering tillgänglig på begäran. Se [den här sidan](../action/acc-action.md).
 
-* Om du har Adobe Campaign v7 eller v8 blir en integrering tillgänglig på begäran. Se [den här sidan](../action/acc-action.md).
-
-* Om du använder ett tredjepartssystem för att skicka meddelanden som Epsilon, Facebook, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase osv. måste du lägga till och konfigurera en anpassad åtgärd. Se [den här sidan](../action/about-custom-action-configuration.md).
+* Om du använder ett tredjepartssystem för att skicka meddelanden som Epsilon, Facebook, Adobe Developer, Firebase osv. måste du skapa och konfigurera en anpassad åtgärd. Se [den här sidan](../action/about-custom-action-configuration.md).
 
 >[!CAUTION]
 >
 >Konfigurationen av anpassade åtgärder måste utföras av en **teknisk användare**.
 
-Anpassade åtgärder är tillgängliga på den vänstra paletten av din resa i kategorin **[!UICONTROL Action]**. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
+Anpassade åtgärder är ytterligare åtgärder som har definierats av tekniska användare och gjorts tillgängliga för marknadsförare: när de har konfigurerats visas de i den vänstra paletten av din resa i kategorin **[!UICONTROL Action]**. Läs mer på [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
 Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd väljer du **[!UICONTROL Configurations]** i avsnittet ADMINISTRATION-menyn. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Actions]**. Listan med åtgärder visas. Mer information om gränssnittet finns på [den här sidan](../start/user-interface.md).
 
