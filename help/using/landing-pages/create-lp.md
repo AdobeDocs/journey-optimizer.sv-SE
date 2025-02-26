@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 4a9034c0c875cd504e25c8eb22a2715004416ea1
+source-git-commit: 2f8c59a3c07dfc772cb62efe5665189d7a176d6f
 workflow-type: tm+mt
-source-wordcount: '1658'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -30,29 +30,28 @@ Välj **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** på d
 
 ![](assets/lp_access-list.png)
 
-Listan **[!UICONTROL Landing Pages]** visar alla objekt som skapats. Du kan filtrera dem baserat på deras status, ändringsdatum eller taggar.
+I listan **[!UICONTROL Landing Pages]** visas alla befintliga landningssidor. Du kan filtrera dem baserat på deras status, ändringsdatum eller taggar.
 
 ![](assets/lp_access-list-filter.png)
 
-I den här listan kan du komma åt ett antal åtgärder. Klicka på de tre punkterna bredvid en landningssida för att välja önskad åtgärd:
+Från den här listan kan du även få åtkomst till dubbletter, borttagningar, avpublicering av en landningssida eller få åtkomst till landningssidans rapporter. För detta klickar du på de tre punkterna bredvid en landningssida och väljer önskad åtgärd:
 
 ![](assets/lp_access-list-actions.png)
 
-* För publicerade objekt kan du öppna [landningssidans rapport](../reports/lp-report-global-cja.md) eller [den senaste 24 timmars Live-rapporten](../reports/lp-report-live.md).
 
-* Du kan ta bort eller duplicera en landningssida.
+Du kan:
 
-  >[!NOTE]
-  >
-  >Du kan inte ta bort en [publicerad](#publish-landing-page)-landningssida. Om du vill ta bort den måste du först avpublicera den.
+* Få tillgång till följande **rapporter**, för publicerade landningssidor: [landningssidrapport](../reports/lp-report-global-cja.md) och [senaste 24 timmars live-rapport](../reports/lp-report-live.md).
 
-* Du kan avpublicera en publicerad landningssida.
+* **Ta bort** eller **duplicera** en landningssida. Du kan inte ta bort en [publicerad](#publish-landing-page)-landningssida. Om du vill ta bort den måste du först **avpublicera** den.
+
+* **Avpublicera** landningssida.
 
   >[!CAUTION]
   >
-  >Om du avpublicerar en landningssida som det refereras till i ett meddelande bryts länken till landningssidan och en felsida visas.
+  >Om du avpublicerar en landningssida som det refereras till i ett meddelande bryts länken till landningssidan och användarna får en felsida om de försöker få åtkomst till den.
 
-* Du kan också redigera en landningssidas associerade [taggar](../start/search-filter-categorize.md#tags).
+* Redigera en startsidas associerade [taggar](../start/search-filter-categorize.md#tags).
 
 ## Skapa en landningssida {#create-landing-page}
 
