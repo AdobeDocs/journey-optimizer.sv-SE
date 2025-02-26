@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 9cab78c89d0885b6da6b43a444754e9ad1e17ae0
+source-git-commit: 82a73c9e6d03563ce9dcc5bd4eaa8eb1166caf1f
 workflow-type: tm+mt
 source-wordcount: '2319'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Från och med februari 2025 introduceras ett TTL-skyddsräcke (time-to-live) fö
 
 Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en efterföljande fas. [Läs mer om datauppsättningar Tid-att-lämna-skyddsutkast (TTL)](../data/datasets-ttl.md)
 
-## Kanalskyddsräcken {#channel-guardrails}
+## Kanaler, skyddsräcken {#channel-guardrails}
 
 ### E-postskyddsutkast {#message-guardrails}
 
