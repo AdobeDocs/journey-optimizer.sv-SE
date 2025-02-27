@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: data, hantering, plattform
 exl-id: 25519acb-a017-446a-992b-653d3a8a3d96
-source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
+source-git-commit: da46230b9a086743fea1052b57b48bf18b920abd
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -77,7 +77,7 @@ Du kan använda flexibiliteten för data i [!DNL Journey Optimizer] för att upp
 
 * **Töm- och arkiveringsmekanismer**: Tömning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] för att automatisera datalagringsprinciper. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.
 
-  Med arbetsytan Datahygien kan du skapa och övervaka olika datahygien-uppgifter, som att ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer på [den här sidan](../privacy/data-hygiene.md).
+  Med arbetsytan Datalängd kan du skapa och övervaka olika uppgifter under datalängd, till exempel ta bort konsumentidentiteter och schemalägga förfallodatum för datauppsättningar. Den här arbetsytan är tillgänglig med skölden för skydd och integritet och med hälso- och sjukvårdsskölden. Läs mer på [den här sidan](../privacy/data-hygiene.md).
 
 <!--
 * **Data Lake and Deletions**: Customer Data stored in the Data Lake can be retained by Journey Optimizer:

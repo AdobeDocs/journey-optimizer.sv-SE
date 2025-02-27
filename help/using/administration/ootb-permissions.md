@@ -9,7 +9,7 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5d014017-ca7c-4206-b783-989677ec0e1c
-source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
+source-git-commit: da46230b9a086743fea1052b57b48bf18b920abd
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Inbyggda behörigheter representerar olika behörigheter som kan tilldelas **[!U
 | Kontrollpaneler | **[!DNL View license usage dashboards]**: skrivskyddad åtkomst till kontrollpanelen för [licensanvändning](../audience/license-usage.md). </br>**[!DNL Manage custom dashboards]**: gör att du kan skapa en ny instrumentpanel eller redigera en befintlig instrumentpanel.</br>**[!DNL Manage standard dashboards]**: gör att du kan skapa anpassade widgetar och redigera widgetschemat via widgetbiblioteket.</br>**[!DNL View custom dashboards]**: skrivskyddad åtkomst till användardefinierade instrumentpaneler.</br>**[!DNL View standard dashboards]**: skrivskyddad åtkomst till kontrollpanelerna Profiler, Destinationer och Publiker. |
 | Datainsamling | **[!DNL Manage datastream]**: läsa, skapa och redigera datastreams.</br>**[!DNL View datastream]**: skrivskyddad åtkomst till datastreams. |
 | Dataförvaltning | **[!DNL Manage usage labels]**: läs, skapa, redigera och ta bort etiketter.</br>**[!DNL Manage data usage policies]**: läsa, skapa, redigera och ta bort dataanvändningsprinciper.</br>**[!DNL View data usage policies]**: skrivskyddad åtkomst för dataanvändningsprinciper som tillhör din organisation.</br>**[!DNL View user activity log]**: skrivskyddad åtkomst för att visa inspelade granskningsloggar för plattformsaktiviteter. |
-| Datahygien | **[!DNL Manage data hygiene]**: läs, skapa, redigera och ta bort datatypen.</br>**[!DNL View data hygiene]**: skrivskyddad åtkomst för datahygien. |
+| Datalängd | **[!DNL Manage data lifecycle]**: läs, skapa, redigera och ta bort datalängd.</br>**[!DNL View data lifecycle]**: skrivskyddad åtkomst för datalängd. |
 | Intag av data | **[!DNL Manage sources]**: läsa, skapa, redigera och inaktivera källor.</br>**[!DNL View sources]**: skrivskyddad åtkomst till tillgängliga källor på fliken Katalog och autentiserade källor på fliken Bläddra. |
 | Datahantering | **[!DNL Data monitoring]**: skrivskyddad åtkomst till övervakning av datauppsättningar och strömmar.</br>**[!DNL Manage datasets]**: läsa, skapa, redigera och ta bort datauppsättningar. Skrivskyddad åtkomst för scheman.</br>**[!DNL View datasets]**: skrivskyddad åtkomst för datauppsättningar och scheman. |
 | Datamodellering | **[!DNL Manage identity metadata]**: läs, skapa, redigera och ta bort identitetsmetadata för scheman.</br> **[!DNL Manage relationships]**: läs, skapa, redigera och ta bort schemarelationer.</br>**[!DNL Manage schemas]**: läs, skapa och redigera XDM-scheman (Experience Data Model).</br>**[!DNL View schemas]**: skrivskyddad åtkomst till scheman. |
