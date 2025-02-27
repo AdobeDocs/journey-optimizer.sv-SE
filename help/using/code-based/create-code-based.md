@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: c30b7f4d75222db0553fbf576b90791af58cda57
+source-git-commit: 045fc6f140c9128adebc2513317c4007ed71cafa
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '677'
 ht-degree: 2%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 2%
 # Skapa kodbaserade upplevelser {#create-code-based}
 
 I [!DNL Journey Optimizer] kan du skapa kodbaserade upplevelser under en resa eller en kampanj.
-
-Specifika skyddsutkast och rekommendationer för kodbaserade upplevelser finns på [den här sidan](code-based-prerequisites.md).
 
 ## Lägg till en kodbaserad upplevelse genom en resa eller en kampanj {#create-code-based-experience}
 
@@ -103,7 +101,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
 1. [Anpassningsredigeraren](../personalization/personalization-build-expressions.md) öppnas. Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
 
-1. Du kan växla mellan redigeringsläget HTML och JSON, och vice versa.
+1. Du kan växla mellan redigeringsläget i HTML och JSON, och vice versa.
 
    ![](assets/code-based-campaign-code-editor.png)
 
@@ -113,7 +111,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
 1. Ange koden efter behov. Du kan utnyttja personaliseringsredigeraren [!DNL Journey Optimizer] med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
 
-1. Du kan lägga till HTML eller JSON-uttrycksfragment om det behövs. [Lär dig hur](../personalization/use-expression-fragments.md)
+1. Du kan lägga till HTML- eller JSON-uttrycksfragment om det behövs. [Lär dig hur](../personalization/use-expression-fragments.md)
 
    Du kan också spara en del av kodinnehållet som fragment. [Lär dig hur](../content-management/fragments.md#save-as-expression-fragment)
 

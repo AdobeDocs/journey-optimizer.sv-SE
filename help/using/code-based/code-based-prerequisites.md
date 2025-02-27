@@ -1,19 +1,19 @@
 ---
-title: Kodbaserade upplevelsegarantier och förutsättningar
+title: Kodbaserade upplevelsevillkor
 description: Om du vill kunna redigera program och webbsidor med den kodbaserade funktionen i Journey Optimizer följer du kraven på den här sidan
 feature: Code-based Experiences
 topic: Content Management
 role: Admin
 level: Experienced
 exl-id: ac901f88-5fde-4220-88c6-fe05433866cc
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: 045fc6f140c9128adebc2513317c4007ed71cafa
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
-# Garantier och krav {#code-based-prerequisites}
+# Kodbaserade upplevelsevillkor {#code-based-prerequisites}
 
 Om du vill kunna använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] och leverera kodinnehållets nyttolast som kan användas av dina program följer du kraven nedan:
 

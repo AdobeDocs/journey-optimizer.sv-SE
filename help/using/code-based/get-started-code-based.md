@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 102ea61835144b274c018b28881cacdb5ebba1fa
+source-git-commit: 045fc6f140c9128adebc2513317c4007ed71cafa
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Med funktionen **kodbaserad upplevelse** kan du definiera inkommande upplevelser
 
 >[!IMPORTANT]
 >
->Specifika skyddsutkast och rekommendationer för kodbaserade upplevelser finns på [den här sidan](code-based-prerequisites.md).
+>Specifika rekommendationer för kodbaserade upplevelser finns på [den här sidan](code-based-prerequisites.md).
 
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
