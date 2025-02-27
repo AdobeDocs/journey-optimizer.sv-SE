@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-source-git-commit: f41426bd41078b98a26c32ce259a848ab49d724c
+source-git-commit: 47ff62f7dee5974afbffdd38dfe4a3f967781e93
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 
 * **Kanaler som stöds**: För närvarande är den här funktionen bara tillgänglig för e-post, SMS och direktreklam.
 * **Dataanvändningsetiketter och -tvång** används inte för närvarande för datauppsättningar som har aktiverats för sökning.
-* **Uttrycksfragment**: Det går inte att placera datauppslagspersonalisering i uttrycksfragment just nu.
+* **Fragment**: Det går inte att placera datauppslagspersonalisering inom uttryck eller visuella fragment just nu.
 
 ## Aktivera en datauppsättning för datasökning {#enable}
 
