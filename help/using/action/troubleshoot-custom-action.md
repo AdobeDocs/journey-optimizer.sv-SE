@@ -9,13 +9,13 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
-source-git-commit: d6501c8cc7e3293bd6a057d8e74654bced7dae75
+exl-id: c0bb473a-82dc-4604-bd8a-020447ac0c93
+source-git-commit: 4cedc368d630c0932782ac031fdd904e9b003fa0
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
-
 
 # Felsöka anpassade åtgärder {#troubleshoot-a-custom-action}
 
@@ -71,7 +71,7 @@ När en anpassad åtgärd innehåller autentisering kräver Adobe Journey Optimi
 
 * **Grundläggande autentisering:** Användaren måste ange *lösenordet*.
 * **API-nyckelautentisering:** Användaren måste ange API-nyckeln *värde*.
-* **Anpassad autentisering:** Användaren måste ange autentiseringsparametrarna i begäran *bodyParam*. Två avsnitt som ska slutföras läggs till i det här fallet: **Autentiseringsbegäran** och **Autentiseringssvar**.
+* **Anpassad autentisering:** Användaren måste ange autentiseringsparametrarna i begäran *bodyParam*. Två avsnitt läggs till i det här fallet: **Autentiseringsbegäran** och **Autentiseringssvar**.
 
 ## Viktiga fördelar {#troubleshoot-custom-action-benefits}
 
@@ -94,4 +94,3 @@ Om begäran misslyckas kan du kontrollera:
 * Begärandemetoden (GET kontra POST) och motsvarande nyttolast.
 * API-slutpunkten och -rubrikerna som definieras i den anpassade åtgärden.
 * Använd svarsdata för att identifiera potentiella felkonfigurationer.
-
