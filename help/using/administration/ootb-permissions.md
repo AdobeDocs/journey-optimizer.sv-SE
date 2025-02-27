@@ -9,9 +9,9 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5d014017-ca7c-4206-b783-989677ec0e1c
-source-git-commit: da46230b9a086743fea1052b57b48bf18b920abd
+source-git-commit: 5c84bc726d50df555b9a156233c70f08f3febaba
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '933'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,7 @@ Inbyggda behörigheter representerar olika behörigheter som kan tilldelas **[!U
 | Journey Optimizer Library | **[!DNL Manage Library Items]**: lägg till och ta bort sparade uttryck i [!DNL Journey Optimizer]-biblioteket.</br>**[!DNL Simulate content]**: åtkomst till alternativet Simulera innehåll för förhandsgranskning och korrektur.</br>**[!DNL Publish fragments]**: publicera innehållsfragment. |
 | Journey Optimizer-regler | **[!DNL Manage frequency rules]**: få åtkomst till, skapa, redigera eller ta bort regler för meddelandefrekvens.</br>**[!DNL View frequency rules]**: skrivskyddad åtkomst till regler. |
 | Resor | **[!DNL Approve & publish Journeys]**: rätt att godkänna och publicera resor när en policy tillämpas. </br> **[!DNL Manage journeys]**: läs, skapa, redigera och ta bort resor. Om du vill få åtkomst till och hantera resor kombinerar du den här behörigheten med **[!DNL View journeys events, data sources and actions]**.</br>**[!DNL Manage journeys events, data sources and actions]**: läs, skapa, redigera och ta bort händelser, källor eller åtgärder.</br>**[!DNL Publish journeys]**: publicera resor.</br>**[!DNL View journeys]**: skrivskyddad åtkomst till studsar.</br>**[!DNL View journeys events, data sources and actions]**: Skrivskyddad åtkomst till resehändelser, anpassade reseåtgärder och datakällor för resan.</br>**[!DNL View journeys report]**: läs och redigera reserapport.</br> |
+| Meddelanden | **[!DNL Manage messages]**: läsa, skapa, redigera och ta bort meddelanden. </br>**[!DNL Manage messages preview and test]**: behörighet att godkänna och publicera meddelanden när en princip tillämpas.</br>**[!DNL Publish messages]**: rätt att publicera meddelanden.</br>**[!DNL View messages]**: skrivskyddad åtkomst till meddelanden.</br>**[!DNL View messages report]**: läs och redigera meddelanderapporter. |
 | Profilhantering | **[!DNL Evaluate a segment to an audience]**: generera profiler för en målgrupp genom att utvärdera en segmentdefinition.</br>**[!DNL Export audience segments]**: exportera ett utvärderat målgruppssegment till en datauppsättning.</br>**[!DNL Manage merge policies]**: läsa, skapa, redigera och ta bort sammanfogningsprinciper.</br>**[!DNL Manage profiles]**: läs, skapa, redigera och ta bort datauppsättningar som används för kundprofiler. Skrivskyddad åtkomst till tillgängliga profiler.</br>**[!DNL View merge policies]**: skrivskyddad åtkomst till tillgängliga sammanfogningsprinciper.</br>**[!DNL View profiles]**: skrivskyddad åtkomst till tillgängliga profiler.</br>**[!DNL View segments]**: skrivskyddad åtkomst till tillgängliga målgrupper. |
 | Frågetjänst | **[!DNL Manage queries]**: läsa, skapa, redigera och ta bort strukturerade SQL-frågor för plattformsdata.</br>**[!DNL Manage query service integration]**: skapa, uppdatera och ta bort ej förfallande autentiseringsuppgifter för åtkomst till frågetjänsten. |
 | Rapporter | **[!DNL View channel reports]**: läs och redigera kanalrapporter. |
