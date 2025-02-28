@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: b6c31528784c0c8576e3200e7611a6b6cd43d7a7
+source-git-commit: 5e907e12958055f0a4f75fe99103218288c758fa
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -85,3 +85,4 @@ De viktigaste stegen för att arbeta med beslut är följande:
 1. **Skapa en beslutspolicy och bädda in den i din kodbaserade kampanj**: Beslutspolicyer kombinerar flera urvalsstrategier för att bestämma vilka valbara beslutsposter som ska visas för den avsedda målgruppen.
 
    ➡️ [Lär dig hur du arbetar med beslutsprofiler](create-decision.md)
+➡️ Följ implementeringsstegen i [det här avsnittet](../code-based/code-based-implementation-samples.md) för att leverera erbjudandet via den kodbaserade kanalen.
