@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 82a73c9e6d03563ce9dcc5bd4eaa8eb1166caf1f
+source-git-commit: 7475debd0e6b751725e5b5d7c2efa4b8b9e01a15
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2330'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Från och med februari 2025 introduceras ett TTL-skyddsräcke (time-to-live) fö
 * 90 dagar för data i profilarkivet,
 * 13 månader för data i sjön.
 
-Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en efterföljande fas. [Läs mer om datauppsättningar Tid-att-lämna-skyddsutkast (TTL)](../data/datasets-ttl.md)
+Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en efterföljande fas. [Läs mer om datauppsättningar - TTL-skyddsutkast (Time-To-Live)](../data/datasets-ttl.md)
 
 ## Kanaler, skyddsräcken {#channel-guardrails}
 
@@ -220,4 +220,4 @@ Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Jump]**. De listas
 Följande skyddsförslag gäller för **[!UICONTROL Campaign v7/v8]**- och **[!UICONTROL Campaign Standard]**-aktiviteterna:
 
 * Adobe Campaign-aktiviteter kan inte användas med en läs- eller målgruppsaktivitet.
-* Dessa aktiviteter kan inte användas med aktiviteter i appen.
+* Kampanjaktiviteter kan inte användas med andra kanalaktiviteter: kort, kodbaserad upplevelse, e-post, push, SMS, meddelanden i appen, webb.
