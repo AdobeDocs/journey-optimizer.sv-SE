@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 3eab04f28b1daab556c4b4395d67f28d292fc52b
+source-git-commit: 9fa5330d766aa6fb1998e668a08d769d3fd1b2cc
 workflow-type: tm+mt
-source-wordcount: '2390'
+source-wordcount: '2388'
 ht-degree: 0%
 
 ---
@@ -301,7 +301,7 @@ Klicka på ikonen `...` för att visa beskrivningen av funktionen och lägga til
         <td><a href="string.md#doesNotStartWith">Börjar inte med</a></td><td>Den här funktionen används för att avgöra om en sträng inte börjar med en angiven delsträng</td>
     </tr>
     <tr>
-        <td><a href="string.md#encode64">Koda 64</a></td><td>Den här funktionen används för att koda eller avkoda en sträng</td>
+        <td><a href="string.md#encode64">Koda 64</a></td><td>Den här funktionen används för att koda en sträng</td>
     </tr>
     <tr>
         <td><a href="string.md#endsWith">Slutar med</a></td><td>Den här funktionen används för att avgöra om en sträng avslutas med en angiven delsträng</td>
