@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: a35b8005592aa84dc9a3ac674129064d012e3a56
+source-git-commit: c5873b9ec8cf8302e3af0598245facf571513925
 workflow-type: tm+mt
-source-wordcount: '6145'
+source-wordcount: '6156'
 ht-degree: 12%
 
 ---
@@ -22,6 +22,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Februari 2025 {#feb-2025}
 
+* Resegarantier när kampanjaktiviteter används har uppdaterats. [Läs mer](../start/guardrails.md#ac-g)
 * Stegen för att skapa dina första resor har beskrivits och länkar till dokumentationsavsnitt har lagts till. [Läs mer](../building-journeys/journey-gs.md)
 * Det finns nu en ny sida med information om kontrollpanelen för resan och användargränssnittet för filtrering. [Läs mer](../building-journeys/journey-ui.md)
 * Dokumentationen för **[!UICONTROL Send-Time optimization]** och dess relaterade vanliga frågor har uppdaterats, förbättrats och flyttats till en ny dedikerad sida. [Läs mer](../building-journeys/send-time-optimization.md)
