@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: 24e6d2baf3470df402550a031d26ba33887f4fb9
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '621'
 ht-degree: 25%
 
 ---
@@ -153,6 +153,10 @@ I endast ett API-anrop kan du avbryta driftsättning och radera konfigurationen 
 1. radera med parametern forceDelete
 
 Användningsfall nr 5: **Uppdatera en takkonfiguration som redan distribuerats**
+
+>[!NOTE]
+>
+>Du måste omdistribuera om du uppdaterar en redan distribuerad konfiguration.
 
 1. list
 1. get
