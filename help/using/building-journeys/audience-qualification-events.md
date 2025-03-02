@@ -2,16 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Publikkvalificeringshändelser
-description: Läs mer om kvalificeringshändelser för målgrupper
+description: Lär dig hur du använder och konfigurerar kvalificeringshändelser för målgrupper
 feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 5af420f5ba312949e475c772e56c60a0368a4796
+source-git-commit: d7ebba4144eeb5b29e9e6fa21afde06a7e520e07
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -33,22 +33,29 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
 ➡️ [Upptäck den här funktionen i videon](#video)
 
-### Viktiga anteckningar{#important-notes-segment-qualification}
+### Viktiga anteckningar {#important-notes-segment-qualification}
+
+* Målgruppskompetensresor är främst utformade för att fungera med direktuppspelande målgrupper: kombinationen garanterar en bättre realtidsupplevelse. Vi rekommenderar att du bara använder **direktuppspelad publik** i aktiviteten Audience Qualification.
+
+  Om du vill använda batchbearbetningsbaserade attribut i din direktuppspelande målgrupp, eller en batchmålgrupp för en Audience Qualification-resa, ska du överväga tidsintervallet för målgruppsutvärdering/-aktivering. En batchmålgrupp eller en direktuppspelande målgrupp som använder batchinkapslade attribut ska vara redo att använda i **målkvalificeringsaktiviteten** ungefär **2 timmar** efter att segmenteringsjobbet har slutförts (det här jobbet körs en gång om dagen vid den definierade tidpunkten) av din Adobe-administratör).
 
 * Kom ihåg att Adobe Experience Platform-målgrupper beräknas antingen en gång om dagen (**batch** målgrupper) eller i realtid (för **direktuppspelade** målgrupper, med alternativet High Frequency Audiences i Adobe Experience Platform).
 
    * Om den valda publiken direktuppspelas kan de personer som tillhör den här publiken komma in på resan i realtid.
    * Om målgruppen är en batch kommer personer som nyligen är kvalificerade för den här målgruppen att kunna delta i resan när målgruppsberäkningen görs på Adobe Experience Platform.
 
-  Som en god praxis rekommenderar vi därför att du bara använder direktuppspelade målgrupper i en **målgruppsklassificeringsaktivitet**. Använd en **[Läs målgruppsaktivitet](read-audience.md)** för gruppanvändningsfall.
+  Som en god praxis rekommenderar vi därför att du bara använder direktuppspelade målgrupper i en **målgruppskvalificeringsaktivitet**. Använd en **[Läs målgruppsaktivitet](read-audience.md)** för gruppanvändningsfall.
 
   >[!NOTE]
   >
   >På grund av batchbeskaffenheten hos målgrupper som skapats med arbetsflöden för disposition och anpassad överföring kan du inte rikta in dig på dessa målgrupper i en&quot;målgruppskompetens&quot;-aktivitet. Endast målgrupper som skapats med segmentdefinitioner kan utnyttjas i den här aktiviteten.
 
-* Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet.
+* Det går inte att använda fältgrupper för upplevelsehändelser i resor som börjar med en **Läs målgrupp**, en **målkvalificering** eller en **affärshändelse**-aktivitet.
 
-* När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
+* När du använder en **målgruppskvalifikation**-aktivitet på en resa kan det ta upp till 10 minuter innan aktiviteten är aktiv och avlyssnar profiler som kommer in eller lämnar målgruppen.
+
+
+Se även [Bästa praxis för målgruppskvalifikation](#best-practices-segments) nedan.
 
 ### Konfigurera aktiviteten {#configure-segment-qualification}
 
@@ -100,7 +107,7 @@ Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_conditio
 
 ![](assets/segment8.png)
 
-En ny resa som innefattar ett kvalificeringsevenemang för en målgrupp är i drift tio minuter efter att du har publicerat det. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
+En ny resa som innehåller en **publikkvalificeringshändelse** kan användas tio minuter efter att du har publicerat den. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
 
 ## Bästa praxis {#best-practices-segments}
 
@@ -108,21 +115,21 @@ Aktiviteten **[!UICONTROL Audience Qualification]** gör att enskilda personer s
 
 Mottagningshastigheten för den här informationen är hög. Mätningarna visar en hastighet på 10 000 mottagna händelser per sekund. Därför bör du se till att du förstår hur höga ingångstoppar kan bli, hur du undviker dem och hur du gör din resa redo för dem.
 
-### Gruppera målgrupper{#batch-speed-segment-qualification}
+### Gruppera målgrupper {#batch-speed-segment-qualification}
 
-Observera att när du använder målgruppskvalifikation för en grupppublik kommer det att ske en topp vid tidpunkten för den dagliga beräkningen. Storleken på toppen beror på antalet individer som kommer in (eller avslutar) per dag.
+När du använder Audience Qualification för en batchmålgrupp bör du tänka på att en ingångstopp kommer att inträffa vid tidpunkten för den dagliga beräkningen. Storleken på toppen beror på antalet individer som kommer in (eller avslutar) per dag.
 
 Dessutom, om målgruppen är nyskapad och omedelbart används under en resa, kan den första beräkningsgruppen få ett mycket stort antal personer att komma in på resan.
 
-### Direktuppspelade målgrupper{#streamed-speed-segment-qualification}
+### Direktuppspelade målgrupper {#streamed-speed-segment-qualification}
 
-När man använder målgruppskvalifikationer för direktuppspelade målgrupper är risken mindre för att få stora toppar av ingångar/utgångar på grund av den kontinuerliga utvärderingen av målgruppen. Men om målgruppsdefinitionen leder till att ett stort antal kunder kvalificerar sig samtidigt kan det ändå bli en höjdpunkt.
+När ni använder Audience Qualification för direktuppspelade målgrupper är risken mindre för att få stora toppar av ingångar/utgångar på grund av den kontinuerliga utvärderingen av målgruppen. Men om målgruppsdefinitionen leder till att ett stort antal kunder kvalificerar sig samtidigt kan det ändå bli en höjdpunkt.
 
 Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för att skicka händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md#open-and-send-event-guardrails)
 
 Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html#api).
 
-### Så här undviker du överbelastningar{#overloads-speed-segment-qualification}
+### Så här undviker du överbelastningar {#overloads-speed-segment-qualification}
 
 Här följer några tips som hjälper dig att undvika att överbelasta system som används på resor (datakällor, anpassade åtgärder, kanalåtgärder).
 
@@ -138,6 +145,6 @@ Innan ni använder målgruppen i en produktionsresa måste ni först och främst
 
 ## Instruktionsvideo {#video}
 
-Förstå tillämpliga användningsfall för målgruppskompetensresor. Lär dig hur du bygger en resa med målgruppskvalifikation och vilka metodtips som ska användas.
+Lär dig mer om tillämpliga användningsfall för målgruppskvalificeringsresor i den här videon. Lär dig hur du bygger en resa med målgruppskvalifikation och vilka bästa metoder som ska användas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)
