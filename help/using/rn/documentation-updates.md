@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: d7ebba4144eeb5b29e9e6fa21afde06a7e520e07
+source-git-commit: 4367e39013e87b12848fc172df9b68cd637fc802
 workflow-type: tm+mt
-source-wordcount: '6172'
+source-wordcount: '6185'
 ht-degree: 12%
 
 ---
@@ -22,6 +22,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 ## Mars 2025 {#mar-2025}
 
 * Sidan om Audience Qualification-händelser har uppdaterats med nya rekommendationer. [Läs mer](../building-journeys/audience-qualification-events.md)
+* Funktionen för felsökning av anpassade åtgärder är nu tillgänglig för alla kunder (GA). [Läs mer](../action/troubleshoot-custom-action.md)
 
 ## Februari 2025 {#feb-2025}
 

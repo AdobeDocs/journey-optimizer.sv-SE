@@ -3,26 +3,20 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Felsöka anpassade åtgärder
 description: Lär dig hur du felsöker en anpassad åtgärd
-badge: label="Begränsad tillgänglighet"
 feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: c0bb473a-82dc-4604-bd8a-020447ac0c93
-source-git-commit: 4cedc368d630c0932782ac031fdd904e9b003fa0
+source-git-commit: 4367e39013e87b12848fc172df9b68cd637fc802
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
 
 # Felsöka anpassade åtgärder {#troubleshoot-a-custom-action}
-
->[!AVAILABILITY]
->
->Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
->
 
 Du kan testa dina anpassade åtgärder genom att skicka API-anrop från administrationsdelen av Journey Optimizer användargränssnitt. Den här funktionen hjälper dig att felsöka anpassade åtgärder före eller efter att du har använt dem under en resa.
 
