@@ -8,14 +8,19 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: 88d15684f13b234bcb00227bd609ca387070952a
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
 # Skapa och hantera varumärken {#brands}
+
+>[!CONTEXTUALHELP]
+>id="ajo_brands_overview"
+>title="Varumärken"
+>abstract="Skapa och anpassa egna varumärken för att definiera din unika visuella och verbala identitet samtidigt som det blir enklare att generera innehåll som matchar varumärkets stil och röst."
 
 >[!AVAILABILITY]
 >
@@ -56,6 +61,11 @@ För att få åtkomst till menyn **[!UICONTROL Brands]** i [!DNL Adobe Journey O
 +++
 
 ## Skapa ert varumärke {#create-brand-kit}
+
+>[!CONTEXTUALHELP]
+>id="ajo_brands_create"
+>title="Skapa ert varumärke"
+>abstract="Ange ditt varumärkesnamn och överför din varumärkesstödfil. Verktyget extraherar automatiskt nyckeldetaljer, vilket gör det enklare att behålla varumärkets identitet."
 
 Följ stegen nedan om du vill skapa och hantera riktlinjer för ditt varumärke.
 
