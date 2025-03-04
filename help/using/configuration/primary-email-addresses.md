@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: 462928883ae22998f8c16dcbe6f37f062487c5ad
+source-git-commit: 5b6543fd98b0457652374a34712e91501ace898c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -70,6 +70,11 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 
 För specifika användningsfall kan du åsidosätta körningsfältet som ställts in globalt och definiera ett annat värde på e-postkonfigurationsnivån eller på resenivån.
 
+Att åsidosätta det här värdet kan vara användbart för att:
+
+* Testa ett mejl. Du kan lägga till en egen e-postadress: när du har publicerat resan skickas e-postmeddelandet till dig.
+* Skicka ett e-postmeddelande till prenumeranterna av en lista. Läs mer i [det här användningsexemplet](../building-journeys/message-to-subscribers-uc.md).
+
 ### I e-postkonfigurationen
 
 Du kan ändra standardfältinställningen för körning i de [allmänna inställningarna](#admin-settings) när du definierar en e-postkanalskonfiguration. [Läs mer](../email/email-settings.md#execution-address)
@@ -88,8 +93,4 @@ I vissa specifika sammanhang kan du åsidosätta det här värdet med ikonen **[
 >
 >Åsidosättning av e-postadresser ska endast användas för särskilda användningsfall. Oftast behöver du inte ändra e-postadressen eftersom det värde som definieras som primär adress i **[!UICONTROL Execution fields]** är den som ska användas.
 
-Att åsidosätta det här värdet kan vara användbart för att:
-
-* Testa ett mejl. Du kan lägga till en egen e-postadress: när du har publicerat resan skickas e-postmeddelandet till dig.
-* Skicka ett e-postmeddelande till prenumeranterna av en lista. Läs mer i [det här användningsexemplet](../building-journeys/message-to-subscribers-uc.md).
 
