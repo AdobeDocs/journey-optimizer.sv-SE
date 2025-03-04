@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: 88d15684f13b234bcb00227bd609ca387070952a
+source-git-commit: 7e354b5235aa6a6378ebc3d13a2c99017064379f
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,20 @@ ht-degree: 0%
 # Skapa och hantera varumärken {#brands}
 
 >[!CONTEXTUALHELP]
->id="ajo_brands_overview"
->title="Varumärken"
+>id="ajo_brand_overview"
+>title="Kom igång med varumärken"
 >abstract="Skapa och anpassa egna varumärken för att definiera din unika visuella och verbala identitet samtidigt som det blir enklare att generera innehåll som matchar varumärkets stil och röst."
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_ai_menu"
+>title="Välj ditt varumärke"
+>abstract="Välj ert varumärke för att se till att allt AI-genererat innehåll är anpassat efter varumärkets specifikationer och riktlinjer."
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_score"
+>title="Poäng för varumärkesjustering"
+>abstract="Poängen för varumärkesanpassning mäter hur väl AI-genererat innehåll följer varumärkets riktlinjer och säkerställer enhetlighet vad gäller färger, teckensnitt, logotyp, bilder och stil."
+
 
 >[!AVAILABILITY]
 >
