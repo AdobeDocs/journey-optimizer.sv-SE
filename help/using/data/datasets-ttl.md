@@ -8,10 +8,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 08633a79-5601-4e36-b8cf-080234956d99
-source-git-commit: 7aaaa566ec9e5a1cf50e067d7c3836bfc305b909
+source-git-commit: 0e164877044430509fc7b2f2bf3ca2eda8e7497b
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 3%
+source-wordcount: '655'
+ht-degree: 2%
 
 ---
 
@@ -46,13 +46,6 @@ Tabellen nedan listar alla påverkade datauppsättningar och deras respektive Ti
 | Beslutsobjektsdatabas - placeringar | 13 månader | n/a |
 | Repositionen för beslutsobjekt - aktiviteter | 13 månader | n/a |
 | ODE-beslutHändelser - preliminär beslut | 13 månader | n/a |
-| Datamängd för tjänsten AJO Consent | n/a | 90 dagar |
-| AJO Interactive Messaging Profile - datauppsättning | n/a | 90 dagar |
-| AJO Profile Counters Extension | n/a | 90 dagar |
-| AJO Push Profile DataSet | n/a | 90 dagar |
-| AJO Engagable Profile DataSet | n/a | 90 dagar |
-
-
 
 ## Vanliga frågor {#faq}
 
