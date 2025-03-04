@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: 7aaaa566ec9e5a1cf50e067d7c3836bfc305b909
+source-git-commit: 96f6fe5d1a941a904ecddf66e9b4a51802e5d00b
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 1%
@@ -129,8 +129,7 @@ Med flexibel målgruppsutvärdering kan ni
 
 1. Skapa ett nytt segment baserat på dina senaste data.
 1. Utvärdera målgruppen i realtid för att säkerställa exaktheten. För att göra det väljer du de målgrupper du vill ha utvärderade och väljer&quot;Utvärdera målgrupper&quot;, förutsatt att de uppfyller specifika kriterier (t.ex. personbaserat, ursprung i segmenteringstjänst).
-1. Använda den utvärderade målgruppen i Adobe Journey Optimizer
-kampanjer eller resor för exakt målinriktning.
+1. Använd den utvärderade målgruppen i Adobe Journey Optimizer-kampanjer eller resor för exakt målinriktning.
 
 Ni kan utvärdera upp till 20 målgrupper i taget, och icke berättigade målgrupper utesluts automatiskt. Mer information finns i dokumentationen för [målportalen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation).
 
