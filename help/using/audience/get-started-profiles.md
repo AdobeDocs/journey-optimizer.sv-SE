@@ -7,9 +7,9 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: be3936e4-8185-4031-9daf-95eea58077d0
-source-git-commit: 435898d7e806e93ee0154c3da22f6a011fc78175
+source-git-commit: 12a3520ec05737cbf5cdc813aa22ce16a9270d18
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -22,31 +22,19 @@ Utnyttja kundprofilen i realtid i [!DNL Adobe Journey Optimizer] för att få en
 
 ➡️ [Upptäck den här funktionen i videon](#video)
 
-**Kundprofil i realtid &#x200B;**
+**Kundprofil i realtid &#x200B;** - Integrera kundattribut och händelser från online, offline och pseudonyma källor i en enda, enhetlig profil. &#x200B;Använd profilen för att engagera kunder med personaliserade upplevelser i realtid över flera kontaktytor. &#x200B;
 
-Integrera kundattribut och händelser från online, offline och pseudonyma källor i en enda enhetlig profil. &#x200B;Använd profilen för att engagera kunder med personaliserade upplevelser i realtid över flera kontaktytor. &#x200B;
+**Datainmatning** - Anslut till olika datakällor för att importera beteendedata, transaktionsdata, ekonomiska data och driftsdata. Hämta in data i realtid eller batchvis för att hålla profilerna uppdaterade. &#x200B;
 
-**Datainmatning**
+**Identitetsdiagram** - Kombinera data från olika källor med hjälp av kundidentiteter, till exempel lojalitets-ID:n eller CRM-system-ID:n. &#x200B;Skapa en heltäckande bild av kunden genom att mappa relationer mellan olika identiteter inom ett varumärkes datauppsättningar. &#x200B;
 
-Koppla samman med olika datakällor för att importera beteendedata, transaktionsdata, finansiella data och driftdata. Hämta in data i realtid eller batchvis för att hålla profilerna uppdaterade. &#x200B;
+**Kundengagemang** - Använd kundprofilen i realtid för att leverera kontextuella, personaliserade upplevelser, som riktade erbjudanden och meddelanden. &#x200B;Engagera kunder i olika kanaler, inklusive marknadsföringskampanjer, kundsupport och transaktionsuppdateringar. &#x200B;
 
-**Identitetsdiagram**
-
-Kombinera data från olika källor med hjälp av kundidentiteter, som lojalitets-ID:n eller system-ID:n för CRM. &#x200B;Skapa en heltäckande bild av kunden genom att mappa relationer mellan olika identiteter inom ett varumärkes datauppsättningar. &#x200B;
-
-**Kundengagemang**
-
-Använd kundprofilen i realtid för att leverera kontextuella, personaliserade upplevelser, som riktade erbjudanden och budskap. &#x200B;Engagera kunder i olika kanaler, inklusive marknadsföringskampanjer, kundsupport och transaktionsuppdateringar. &#x200B;
-
-**Datadelning**
-
-Dela kundprofiler med ledande molnlagringsleverantörer som Amazon Web Services, Microsoft Azure och Google Cloud. Använd delade profiler för rapportering, dataarkivering eller djupare analyser med verktyg för affärsinformation.
+**Datadelning** - Dela kundprofiler med de främsta molnlagringsleverantörerna som Amazon Web Services, Microsoft Azure och Google Cloud. Använd delade profiler för rapportering, dataarkivering eller djupare analyser med verktyg för affärsinformation.
 
 ## Kontrollpanel för profiler
 
 Om du vill komma åt profiler går du till menyn **[!UICONTROL Customer]** / **[!UICONTROL Profiles]** i den vänstra navigeringsrutan.
-
-![](assets/profiles-home.png)
 
 >[!NOTE]
 >
@@ -54,9 +42,12 @@ Om du vill komma åt profiler går du till menyn **[!UICONTROL Customer]** / **[
 
 Ni kan sammanföra databygment från flera olika källor och kombinera dem för att få en fullständig bild av varje enskild kund. När du sammanför dessa data är sammanfogningsprinciper de regler som används för att bestämma hur data ska prioriteras och vilka data som ska kombineras för att skapa den enhetliga vyn. Läs mer om **Sammanfoga profiler** i den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}.
 
+![](assets/profiles-home.png)
+
 >[!MORELIKETHIS]
 >
 >* [Kundprofildokumentation i realtid](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target="_blank"}
+>* [Standardgaranti för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
 >* [Översikt över kundprofiler i realtid ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}
 
 ## Instruktionsvideo {#video}
