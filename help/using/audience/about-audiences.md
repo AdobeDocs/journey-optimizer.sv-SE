@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 5ce76bd61a61e1ed5e896f8da224fc20fba74b53
+source-git-commit: c60ad071d41c9b322e9a6b9285a044321df536cc
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,13 @@ Mer information om hur du arbetar med målgrupper i publikportalen finns i [doku
 
 Målgrupper kan genereras på olika sätt:
 
-* **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform segmenteringstjänst. [Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
+* **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform segmenteringstjänst. Målgrupper genereras från segmentdefinitioner och uppdateras vid olika tidpunkter beroende på utvärderingstyp.
+
+   * Direktuppspelningssegmentering: Målgrupperna uppdateras i realtid när nya data flödar in, vilket ger kontinuerlig relevans baserat på användaraktivitet.
+   * Gruppsegmentering: Målgrupperna uppdateras var 24:e timme och en ögonblicksbild av profilerna sparas med ett fast intervall.
+   * Edge Segmentering: Målgrupperna utvärderas direkt i farten, vilket möjliggör personalisering i realtid.
+
+[Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
 
 * **Anpassad överföring**: Importera en målgrupp med en CSV-fil. [Lär dig skapa anpassade överförda målgrupper](custom-upload.md)
 
