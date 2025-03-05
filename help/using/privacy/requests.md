@@ -2,14 +2,14 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Förfrågningar om användarens information
-description: Läs mer om sekretess och Privacy Service.
+description: Läs mer om sekretesskrav och Privacy Service.
 feature: Privacy
 role: User
 level: Intermediate
 exl-id: 19ec3410-761e-4a9c-a277-f105fc446d7a
-source-git-commit: 844c0f8dc9b14d69cbd87893042f048443d7a5e6
+source-git-commit: 95d02900fb9686466fa6b20c90e1c425567db145
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -22,35 +22,41 @@ Sekretessförfrågningar kan skapas och hanteras från menyn **[!UICONTROL Reque
 
 ![](assets/requests.png)
 
-Mer information om Privacy Service och hur du skapar och hanterar sekretessförfrågningar finns i Adobe Experience Platform dokumentation:
+Mer information om Privacy Service och hur du skapar och hanterar sekretessförfrågningar finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target="_blank"}.
 
-* [Översikt över Privacy Servicen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv)
-* [Hantera sekretessjobb i Privacy Servicens användargränssnitt](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
+<!--* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)-->
 
-
-
-## Hantera enskilda förfrågningar om dataintegritet som du kan skicka till Adobe Journey Optimizer {#data-privacy-requests}
+## Hantera enskilda dataförfrågningar som du kan skicka till Adobe Journey Optimizer {#data-privacy-requests}
 
 Du kan skicka enskilda förfrågningar om åtkomst till och radering av konsumentdata från Adobe Journey Optimizer på två sätt:
 
-* Genom användargränssnittet **för** Privacy Servicen. Se dokumentationen [här](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
-* Via **Privacy Services-API**. Se dokumentationen [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) och API-information [här](https://developer.adobe.com/experience-platform-apis/#_blank).
+* Via **Privacy Service-gränssnittet**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html){target="_blank"}
+* Via **Privacy Service API**. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/overview){target="_blank"}
+  <!--More specific information on Privacy Service API [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank).-->
 
-Privacy Servicen stöder två typer av förfrågningar: **dataåtkomst** och **databorttagning**.
+Privacy Service stöder två typer av förfrågningar: **dataåtkomst** och **dataradering**.
 
->[!NOTE]
->
->Den här guiden handlar bara om hur du gör sekretessförfrågningar för Adobe Journey Optimizer. Om du även planerar att göra sekretessförfrågningar för sjön med plattformsdata kan du läsa den här [handboken](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) förutom den här självstudiekursen. Kundprofil i realtid finns i den här [guiden](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) och för identitetstjänsten, se den här [guiden](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy). För borttagnings- och åtkomstbegäranden måste du anropa dessa enskilda system för att se till att förfrågningarna hanteras av var och en av dem. Data tas inte bort från alla dessa system om du gör en sekretessförfrågan till Adobe Journey Optimizer.
+Ange **Adobe Journey Optimizer** från användargränssnittet (eller **CJM** som produktkod i API:t) för **åtkomstbegäranden**.
 
-För **åtkomstbegäranden** anger du&quot;Adobe Journey Optimizer&quot; från användargränssnittet (eller&quot;CJM&quot; som produktkod i API:t).
-
-För **borttagningsbegäranden** måste du, förutom Adobe Journey Optimizer-begäran, även skicka borttagningsbegäranden till tre överordnade tjänster för att förhindra att Journey Optimizer återställer borttagna data. Om dessa tjänster i det överordnade flödet inte anges kommer Adobe Journey Optimizer-begäran att förbli i tillståndet&quot;bearbetar&quot; tills begäranden om borttagning för de överordnade tjänsterna skapas.
+För **borttagningsbegäranden** måste du, förutom **Adobe Journey Optimizer**-begäran, även skicka borttagningsbegäranden till **tre tjänster i uppströmmen** för att förhindra att Journey Optimizer återställer borttagna data. Om dessa tjänster i det överordnade flödet inte anges kommer Adobe Journey Optimizer-begäran att förbli i tillståndet&quot;bearbetar&quot; tills begäranden om borttagning för de överordnade tjänsterna skapas.
 
 De tre tjänsterna är:
 
 * Profil (produktkod: &quot;profileService&quot;)
 * AEP Data Lake (produktkod:&quot;AdobeCloudPlatform&quot;)
 * Identitet (produktkod: &quot;identity&quot;)
+
+>[!NOTE]
+>
+>Den här handboken beskriver bara hur du gör sekretessförfrågningar för [!UICONTROL Adobe Journey Optimizer].
+>
+>* Om du även planerar att göra sekretessförfrågningar för sjön med plattformsdata kan du läsa den här [handboken](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) förutom den här självstudiekursen.
+>
+>* Kundprofil i realtid finns i den här [guiden](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy).
+>* Identitetstjänsten finns i den här [handboken](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy).
+>
+>Om du vill ta bort eller få åtkomst till en begäran måste du anropa dessa enskilda system för att se till att förfrågningarna hanteras av var och en av dem. En sekretessbegäran till [!DNL Adobe Journey Optimizer] tar inte bort data från alla dessa system.
 
 ## Skapa begäranden om åtkomst och borttagning
 
@@ -59,9 +65,13 @@ De tre tjänsterna är:
 Om du vill göra en begäran om åtkomst- och borttagningsdata för Adobe Journey Optimizer måste du ha:
 
 * ett Adobe-organisations-ID
-* en identitetsidentifierare för den person som du vill agera på och motsvarande namnutrymmen. Mer information om namnutrymmen för identiteter i Adobe Journey Optimizer och Experience Platform finns i [översikten över namnområden för identiteter](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* en identitetsidentifierare för den person du vill agera på och motsvarande namnutrymmen. Mer information om identitetsnamnutrymmen i Adobe Journey Optimizer och Experience Platform finns i [översikten över identitetsnamnrymden](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 
-### Obligatoriska fältvärden i Adobe Journey Optimizer för API-begäranden
+>[!IMPORTANT]
+>
+>När du skickar sekretessförfrågningar måste du ange [!DNL '**Adobe Journey Optimizer**] som målproduktnamn och **alla identitetsnamnutrymmen** (t.ex. &#39;E-post&#39;, &#39;ECID&#39; eller &#39;Loyalty ID&#39;) som är associerade med profildata som behöver nås eller tas bort. Om du inte uttryckligen anger produktnamnet och alla tillämpliga namnutrymmen för borttagningsbegäranden finns data kvar i [!DNL Adobe Journey Optimizer] för borttagningsbegäranden.
+
+### Obligatoriska fältvärden i Journey Optimizer för API-begäranden
 
 ```json
 "companyContexts":
@@ -91,7 +101,7 @@ Om du vill göra en begäran om åtkomst- och borttagningsdata för Adobe Journe
 
 Från gränssnittet:
 
-![](assets/accessrequest.png)
+![](assets/accessrequest.png){width="60%" align="center"}
 
 Via API:
 
@@ -171,7 +181,7 @@ Via API:
 
 Från gränssnittet:
 
-![](assets/deleterequest.png)
+![](assets/deleterequest.png){width="60%" align="center"}
 
 Via API:
 
