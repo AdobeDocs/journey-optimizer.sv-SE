@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4367e39013e87b12848fc172df9b68cd637fc802
+source-git-commit: 6480bb7e35d92ba1771b3e5c01310ee93a8c77b1
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '746'
 ht-degree: 8%
 
 ---
@@ -92,7 +92,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Felsöka anpassade åtgärder (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Felsöka anpassade åtgärder</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -100,7 +100,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <td>
 <p>Nu kan du validera en anpassad åtgärdskonfiguration genom att göra riktiga API-anrop direkt från Adobe Journey Optimizer. </p>
 <p>Mer information finns i den <a href="../action/troubleshoot-custom-action.md">detaljerade dokumentationen</a>.</p>
-<p> Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<!--p> This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p-->
 </td>
 </tr>
 </tbody>
