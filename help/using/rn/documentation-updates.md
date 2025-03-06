@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 4367e39013e87b12848fc172df9b68cd637fc802
+source-git-commit: 4407961654a1d55bf20d8091447dc2f1ef703ea3
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6214'
 ht-degree: 12%
 
 ---
@@ -26,6 +26,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## Februari 2025 {#feb-2025}
 
+* Åtgärdsutkast för läsning av målgrupper har uppdaterats för att ange att endast en aktivitet kan användas under en resa och att endast en målgrupp kan nås. [Läs mer](../building-journeys/read-audience.md)
 * Resegarantier när kampanjaktiviteter används har uppdaterats. [Läs mer](../start/guardrails.md#ac-g)
 * Stegen för att skapa dina första resor har beskrivits och länkar till dokumentationsavsnitt har lagts till. [Läs mer](../building-journeys/journey-gs.md)
 * Det finns nu en ny sida med information om kontrollpanelen för resan och användargränssnittet för filtrering. [Läs mer](../building-journeys/journey-ui.md)
