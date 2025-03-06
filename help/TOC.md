@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5e907e12958055f0a4f75fe99103218288c758fa
+source-git-commit: ff6619925a36d2687922d1b631d1cabbcb98167e
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2185'
 ht-degree: 23%
 
 ---
@@ -335,8 +335,7 @@ ht-degree: 23%
       + [Personalization syntax](using/personalization/personalization-syntax.md)
       + [Använd Adobe Experience Platform-data för personalisering (Beta)](using/personalization/lookup-aep-data.md)
       + Arbeta med personaliseringsredigeraren {#expression-editor}
-         + [Om personaliseringsredigeraren](using/personalization/personalization-build-expressions.md)
-         + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
+         + [Kom igång med personaliseringsredigeraren](using/personalization/personalization-build-expressions.md)
          + [Använd uttrycksfragment](using/personalization/use-expression-fragments.md)
          + [Personalization-validering](using/personalization/personalization-validation.md)
       + Hjälpfunktioner {#functions}

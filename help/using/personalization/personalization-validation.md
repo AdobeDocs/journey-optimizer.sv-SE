@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, validering, fel, personalisering
 exl-id: 7abeec5e-743f-48fb-a4a6-056665e8bfda
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: ff6619925a36d2687922d1b631d1cabbcb98167e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -24,13 +24,11 @@ Använd knappen **Validera** på skärmen **personaliseringsredigerare** för at
 
 >[!NOTE]
 > Valideringen körs automatiskt när du klickar på knappen **Lägg till** för att stänga redigeringsfönstret.
->
 
 ![](assets/perso_validation1.png)
 
 >[!IMPORTANT]
 > Om personaliseringssyntaxen inte är giltig kan du inte stänga redigeringsfönstret för personalisering.
->
 
 ## Vanliga fel {#common-errors}
 
