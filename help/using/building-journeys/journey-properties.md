@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 3331fd2ca9277bb634e3df0dd2e5a262bef459d7
+source-git-commit: 43cf43c6ba92d64836222ce872054b5dec6d11fe
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2243'
 ht-degree: 0%
 
 ---
@@ -279,14 +279,14 @@ Följ de här stegen för att **skapa** och avsluta villkor:
 
 1. Öppna din resa.
 
-1. Klicka på ikonen **[!UICONTROL Show Exit Criteria]** som finns i det övre högra avsnittet på arbetsytan.
-   ![](assets/exitcriteria_icon.png){width="40%" align="left"}
-1. Klicka på knappen **[!UICONTROL Add exit criteria]**.
-   ![](assets/exitcriteria.png){width="40%" align="left"}
+1. Klicka på ikonen ![](assets/do-not-localize/Smock_UserCheckedOut_18_N.svg) **[!UICONTROL Show Exit Criteria]** i det övre högra avsnittet på arbetsytan.
+
+1. Välj **[!UICONTROL Add exit criteria]**.
+
 1. Ange en **etikett** och välj om ditt avslutsvillkor är baserat på en **händelse** eller en **publik**.
 
-* För avslutningskriterier som baseras på en händelse, t.ex. nedladdning av en app eller tillägg av en produkt i en kundvagn, väljer du endast en enhetshändelse.
-* Välj en målgrupp för avslutningskriterier som baseras på en målgrupp, t.ex. en målgrupp som kontrollerar om en kund har köpt under de senaste 24 timmarna. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används för att bli effektiva.
+   * För avslutningskriterier som baseras på en händelse, t.ex. nedladdning av en app eller tillägg av en produkt i en kundvagn, väljer du endast en enhetshändelse.
+   * Välj en målgrupp för avslutningskriterier som baseras på en målgrupp, t.ex. en målgrupp som kontrollerar om en kund har köpt under de senaste 24 timmarna. Obs! Det kan ta upp till 10 minuter innan avslutningskriterierna används för att bli effektiva.
 
 Du kan lägga till flera avslutningskriterier.
 
