@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: ff6619925a36d2687922d1b631d1cabbcb98167e
+source-git-commit: 155ae8ef14e5482d94e54b15962afa09aa6826fc
 workflow-type: tm+mt
 source-wordcount: '2388'
 ht-degree: 0%
@@ -16,6 +16,8 @@ ht-degree: 0%
 # Kom igång med hjälp av hjälpfunktioner{#functions}
 
 Använd mallspråket [!DNL Journey Optimizer] för att utföra dataåtgärder, till exempel beräkningar, dataformatering eller konvertering, villkor och ändra dem i personaliseringssammanhang. Lär dig riktlinjerna för anpassningssyntax på [den här sidan](../personalization-syntax.md).
+
+
 
 ➡️ [Lär dig använda hjälpfunktioner i den här videon](#video)
 
