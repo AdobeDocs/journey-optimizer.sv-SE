@@ -5,13 +5,13 @@ feature: Decision Management, API
 topic: Integrations
 role: Data Engineer
 level: Experienced
-source-git-commit: 5e907e12958055f0a4f75fe99103218288c758fa
+exl-id: 6e603bc1-0813-435a-9349-d8585a7a0997
+source-git-commit: dfc0774468710a7b8791c9b2a6c70397a90443fa
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
 
 ---
-
 
 # Leverera erbjudanden med den kodbaserade upplevelsekanalen {#deliver}
 
@@ -26,3 +26,4 @@ Kodbaserad upplevelse stöder alla typer av kundimplementeringar:
 Detaljerad information om de olika implementeringsmetoderna finns i den kodbaserade kanalguiden. I den här guiden hittar du information om de olika implementeringsmetoderna samt exempelimplementeringar för olika användningsfall för personalisering och experimenterande.
 
 ➡️ [Läs mer om kodbaserade implementeringsmetoder](../../code-based/code-based-implementation-samples.md)
+
