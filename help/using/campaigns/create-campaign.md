@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 37862682a25843ce138c076e443f6d9b6229ece3
+source-git-commit: c1ca6175e504dff5e89aaddc2105d150992a8b28
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1239'
 ht-degree: 3%
 
 ---
@@ -166,6 +166,10 @@ Om du inte vill köra kampanjen direkt efter aktiveringen kan du ange ett datum 
 ![](assets/create-campaign-schedule.png)
 
 För e-post-, SMS- och push-meddelandekampanjer kan du definiera en frekvens som kampanjens meddelande ska skickas med. Det gör du genom att använda alternativen **[!UICONTROL Action triggers]** på skärmen för att skapa kampanjer för att ange om kampanjen ska köras varje dag, varje vecka eller varje månad.
+
+>[!NOTE]
+>
+>När du schemalägger kampanjer i [!DNL Adobe Journey Optimizer] måste du se till att startdatumet/starttiden är i linje med den önskade första leveransen. Om den initiala schemalagda tiden redan har passerat för återkommande kampanjer kommer kampanjerna att föras över till nästa tillgängliga tidsrymd enligt reglerna för återkommande kampanjer.
 
 ## Andra inställningar {#settings}
 
