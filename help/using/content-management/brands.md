@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: 3646c67dd23bb786cf2486c5c43748197ba04f85
+source-git-commit: 12dc96bb08f03865c82382baac276f46bc42baeb
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,14 @@ ht-degree: 0%
 >abstract="Välj ert varumärke för att se till att allt AI-genererat innehåll är anpassat efter varumärkets specifikationer och riktlinjer."
 
 >[!CONTEXTUALHELP]
+>id="ajo_brand_score_overview"
+>title="Märkesmarkering"
+>abstract="Välj ert varumärke för att säkerställa att ert innehåll utformas i enlighet med dess specifika riktlinjer, standarder och identitet, samtidigt som ni upprätthåller enhetlighet och varumärkesintegritet."
+
+>[!CONTEXTUALHELP]
 >id="ajo_brand_score"
 >title="Poäng för varumärkesjustering"
->abstract="Poängen för varumärkesanpassning mäter hur väl AI-genererat innehåll följer varumärkets riktlinjer och säkerställer enhetlighet vad gäller färger, teckensnitt, logotyp, bilder och stil."
+>abstract="Poängen för varumärkesanpassning mäter hur väl ert innehåll följer ert varumärkes riktlinjer och säkerställer enhetlighet vad gäller färger, teckensnitt, logotyp, bilder och stil."
 
 
 >[!AVAILABILITY]
