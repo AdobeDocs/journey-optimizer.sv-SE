@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 045fc6f140c9128adebc2513317c4007ed71cafa
+source-git-commit: 5d51554d9d18f517e1ca3a3d02592a45f341110c
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '605'
 ht-degree: 2%
 
 ---
@@ -61,11 +61,7 @@ Följ stegen nedan för att börja skapa din **kodbaserade**-upplevelse via en k
 
 1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md)
 
-1. Välj den typ av kampanj som du vill köra
-
-   * **[!UICONTROL Scheduled - Marketing]**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka **marknadsföringsmeddelanden**. De konfigureras och körs från användargränssnittet.
-
-   * **[!UICONTROL API-triggered - Marketing/Transactional]**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen **marketing** - eller **transactional** -meddelanden, d.v.s. meddelanden som skickas ut efter en åtgärd som utförts av en individ: lösenordsåterställning, kundvagn osv. [Lär dig hur du utlöser en kampanj med API:er](../campaigns/api-triggered-campaigns.md)
+1. Välj kampanjtypen **Schemalagd - marknadsföring**.
 
 1. Slutför stegen för att skapa en kampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule). Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
