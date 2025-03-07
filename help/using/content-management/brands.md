@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: 7e354b5235aa6a6378ebc3d13a2c99017064379f
+source-git-commit: 3646c67dd23bb786cf2486c5c43748197ba04f85
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,7 @@ ht-degree: 0%
 
 Varumärkesriktlinjerna är en detaljerad uppsättning regler och standarder som bygger upp ett varumärkes visuella och verbala identitet. De fungerar som referenser för att upprätthålla en enhetlig varumärkesrepresentation på alla marknadsförings- och kommunikationsplattformar.
 
-<!--Upload feature currently behind feature flag--
-
-In [!DNL Journey Optimizer], you now have the option to manually input and organize your brand details or upload brand guideline documents for automatic information extraction.-->
+I [!DNL Journey Optimizer] har du nu möjlighet att ange och ordna din varumärkesinformation manuellt eller överföra varumärkesriktlinjer för automatisk informationshämtning.
 
 ## Få tillgång till varumärken {#generative-access}
 
@@ -78,31 +76,21 @@ För att få åtkomst till menyn **[!UICONTROL Brands]** i [!DNL Adobe Journey O
 >title="Skapa ert varumärke"
 >abstract="Ange ditt varumärkesnamn och överför din varumärkesstödfil. Verktyget extraherar automatiskt nyckeldetaljer, vilket gör det enklare att behålla varumärkets identitet."
 
-Följ stegen nedan om du vill skapa och hantera riktlinjer för ditt varumärke.
-
-<!--Upload feature currently behind feature flag--
-
-To create and manage your Brand guideline, you can either enter the details yourself, or upload your brand guidelines document to have the information extracted automatically:-->
+Om du vill skapa och hantera varumärkesriktlinjerna kan du antingen ange detaljerna själv eller överföra dokumentet med varumärkesriktlinjer så att informationen extraheras automatiskt:
 
 1. Klicka på **[!UICONTROL Create brand]** på menyn **[!UICONTROL Brands]**.
 
    ![](assets/brands-1.png)
 
-1. Ange en **[!UICONTROL Name]** för ditt varumärke <!--and a **[!UICONTROL Description]** to your brand guideline-->.
+1. Ange en **[!UICONTROL Name]** för ditt varumärke.
 
-   ![](assets/brands-2-temp.png)
+1. Dra och släpp eller markera filen för att ladda upp varumärkesriktlinjerna och extrahera automatiskt relevant varumärkesinformation. Klicka på **[!UICONTROL Create brand]**.
 
-<!--Upload feature currently behind feature flag so hidden from doc - should be available again by EOM (Feb)--
+   Processen för informationsextrahering börjar nu. Observera att det kan ta flera minuter att slutföra.
 
-1. Drag and drop or select your file to upload your brand guidelines and extract automatically relevant brand information. Click **[!UICONTROL Create brand]**.
+   ![](assets/brands-2.png)
 
-    The information extraction process now begins. Note that it may take several minutes to complete.
-
-    ![](assets/brands-2.png)
-
-1. Your Content and visual creation standards are now automatically populated. Browse through the different tabs to adapt the information as needed.
-
--->
+1. Standarderna för att skapa innehåll och visuellt innehåll är nu automatiskt ifyllda. Bläddra bland de olika flikarna för att anpassa informationen efter behov.
 
 1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) på fliken **[!UICONTROL Writing Style]** om du vill lägga till en stödlinje eller ett undantag, inklusive exempel.
 
