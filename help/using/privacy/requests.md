@@ -7,9 +7,9 @@ feature: Privacy
 role: User
 level: Intermediate
 exl-id: 19ec3410-761e-4a9c-a277-f105fc446d7a
-source-git-commit: 95d02900fb9686466fa6b20c90e1c425567db145
+source-git-commit: b400b48d6f0429b05be523d4c2f520c383eef514
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Om du vill göra en begäran om åtkomst- och borttagningsdata för Adobe Journe
 
 >[!IMPORTANT]
 >
->När du skickar sekretessförfrågningar måste du ange [!DNL '**Adobe Journey Optimizer**] som målproduktnamn och **alla identitetsnamnutrymmen** (t.ex. &#39;E-post&#39;, &#39;ECID&#39; eller &#39;Loyalty ID&#39;) som är associerade med profildata som behöver nås eller tas bort. Om du inte uttryckligen anger produktnamnet och alla tillämpliga namnutrymmen för borttagningsbegäranden finns data kvar i [!DNL Adobe Journey Optimizer] för borttagningsbegäranden.
+>När du skickar sekretessförfrågningar måste du ange [!DNL '**Adobe Journey Optimizer**] som målproduktnamn och **alla identitetsnamnutrymmen** (t.ex. &#39;E-post&#39;, &#39;ECID&#39; eller &#39;Loyalty ID&#39;) som är associerade med profildata som behöver nås eller tas bort. Om du inte uttryckligen tar med produktnamnet och alla tillämpliga namnutrymmen tas data inte bort från [!DNL Adobe Journey Optimizer] för Delete-begäranden.
 
 ### Obligatoriska fältvärden i Journey Optimizer för API-begäranden
 
