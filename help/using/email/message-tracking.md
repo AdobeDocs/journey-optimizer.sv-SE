@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 85bc9308402eaf2f13df0ca8d340b96769fc777e
+source-git-commit: b77cac6ba9984139f7fd5cb761759cafb26ccc48
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ Så här definierar du målet för en länk:
 
 1. Markera länken i en **[!UICONTROL Text]**-komponent där en länk infogas.
 
-1. På fliken **[!UICONTROL Settings]** väljer du var länken ska öppnas i listrutan **[!UICONTROL Target]**:
+1. På fliken **[!UICONTROL Settings]** väljer du var länken ska öppnas i listrutan **[!UICONTROL Target]**. Möjliga värden anges nedan:
 
    * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
    * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
