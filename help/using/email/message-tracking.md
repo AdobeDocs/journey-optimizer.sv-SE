@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: 85bc9308402eaf2f13df0ca8d340b96769fc777e
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1134'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Använd [!DNL Journey Optimizer] om du vill lägga till länkar till ditt inneh�
 
 ## Aktivera spårning {#enable-tracking}
 
-Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera alternativen **[!UICONTROL Email opens]** och/eller **[!UICONTROL Click on email]** när du skapar ditt meddelande inuti en resa eller kampanj.
+Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera alternativen **[!UICONTROL Email opens]** och/eller **[!UICONTROL Click on email]** när du skapar ditt meddelande inuti en resa eller kampanj, vilket visas på flikarna nedan:
 
 >[!BEGINTABS]
 
@@ -40,38 +40,34 @@ Du kan aktivera spårning på e-postmeddelandenivå genom att kontrollera altern
 >
 >Båda alternativen är aktiverade som standard.
 
-På så sätt kan du spåra mottagarnas beteende via:
+När det här alternativet är aktiverat spåras beteendet hos mottagarna av dina meddelanden:
 
-* **[!UICONTROL Email opens]**: Meddelanden som har öppnats.
-* **[!UICONTROL Click on email]**: Klicka på länkar i ett e-postmeddelande.
+* Måttet **[!UICONTROL Email opens]** kontrollerar hur många meddelanden som har öppnats.
+* Måttet **[!UICONTROL Click on email]** beräknar antalet klick på länkar i ett e-postmeddelande.
 
 ## Infoga länkar {#insert-links}
 
-När du utformar ett meddelande kan du lägga till länkar till innehållet.
-
->[!NOTE]
->
->När [spårning är aktiverat](#enable-tracking) spåras alla länkar som ingår i meddelandeinnehållet.
+När [spårning är aktiverat](#enable-tracking) spåras alla länkar som ingår i meddelandeinnehållet.
 
 Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
-1. Markera ett element och klicka på **[!UICONTROL Insert link]** i det sammanhangsberoende verktygsfältet.
+1. Markera ett element (text eller bild) och klicka på **[!UICONTROL Insert link]** i det sammanhangsberoende verktygsfältet.
 
    ![](assets/message-tracking-insert-link.png)
 
 1. Välj den typ av länk som du vill skapa:
 
-   * **[!UICONTROL External link]**: Infoga en länk till en extern URL.
+   * Välj **[!UICONTROL External link]** om du vill infoga en länk till en extern URL.
 
-   * **[!UICONTROL Landing page]**: Infoga en länk till en landningssida. [Läs mer](../landing-pages/get-started-lp.md)
+   * Välj **[!UICONTROL Landing page]** om du vill infoga en länk till en landningssida. [Läs mer](../landing-pages/get-started-lp.md)
 
-   * **[!UICONTROL One click Opt-out]**: Infoga en länk så att användare snabbt kan avbryta prenumerationen på dina meddelanden utan att behöva bekräfta att de vill avanmäla sig. [Läs mer](email-opt-out.md#one-click-opt-out).
+   * Välj **[!UICONTROL One click Opt-out]** om du vill infoga en länk så att användare snabbt kan avbryta prenumerationen på dina meddelanden utan att behöva bekräfta att de vill avanmäla sig. [Läs mer](email-opt-out.md#one-click-opt-out).
 
-   * **[!UICONTROL External Opt-in/Subscription]**: Infoga en länk för att ta emot meddelanden från ditt varumärke.
+   * Välj **[!UICONTROL External Opt-in/Subscription]** om du vill infoga en länk för att ta emot meddelanden från ditt varumärke.
 
-   * **[!UICONTROL External Opt-out/Unsubscription]**: Infoga en länk om du vill avbryta prenumerationen på meddelanden från ditt varumärke. Läs mer om hantering av avanmälan i [det här avsnittet](email-opt-out.md#opt-out-management).
+   * Välj **[!UICONTROL External Opt-out/Unsubscription]** om du vill infoga en länk för att avbryta prenumerationen på meddelanden från ditt varumärke. Läs mer om hantering av avanmälan i [det här avsnittet](email-opt-out.md#opt-out-management).
 
-   * **[!UICONTROL Mirror page]**: Lägg till en länk för att visa e-postinnehållet i en webbläsare. [Läs mer](#mirror-page)
+   * Välj **[!UICONTROL Mirror page]** om du vill lägga till en länk på sidan för e-postspegling. [Läs mer](#mirror-page)
 
 1. Ange önskad URL-adress i motsvarande fält eller välj en landningssida och definiera länkinställningar och format. [Läs mer](#adjust-links)
 
@@ -91,13 +87,40 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 >
 >E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalkonfigurationen](../configuration/channel-surfaces.md#email-type) när meddelandet skapas.
 
-## Justera länkar {#adjust-links}
 
-Du kan justera länkarna med rutorna **[!UICONTROL Settings]** och **[!UICONTROL Styles]** till höger. Du kan stryka under en länk, redigera dess färg och välja dess mål.
+## Länka till en spegelsida {#mirror-page}
+
+Spegelsidan är en onlineversion av ditt e-postmeddelande. Att lägga till en länk till spegelsidan är en bra metod för e-postmarknadsföring. Användare kan bläddra till den spegelsida som finns i ett e-postmeddelande, t.ex. om de får problem med återgivningen eller om det finns skadade bilder när de försöker visa dem i sin inkorg. Vi rekommenderar även att du tillhandahåller en onlineversion av tillgänglighetsskäl eller för att uppmuntra social delning.
+
+Spegelsidan som genererats av Adobe Journey Optimizer innehåller alla personaliseringsdata.
+
+Om du vill lägga till en länk till en spegelsida i ditt e-postmeddelande [infogar du en länk](#insert-links) och väljer **[!UICONTROL Mirror page]** som typ av länk.
+
+![](assets/message-tracking-mirror-page.png)
+
+Spegelsidan skapas automatiskt. När e-postmeddelandet har skickats visas innehållet i e-postmeddelandet i sin standardwebbläsare när mottagarna klickar på länken för spegelsidan.
+
+Kvarhållningsperioden för en spegelsida är **60 dagar**. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
+
+>[!CAUTION]
+>
+>* Länkar för spegelsidor genereras automatiskt och kan inte redigeras. De innehåller alla krypterade, personliga data som krävs för att återge det ursprungliga e-postmeddelandet. Om du använder anpassade attribut med stora värden kan det därför generera långa URL-adresser för spegelsidor, vilket kan förhindra länken från att fungera i webbläsare som har en maximal URL-längd.
+>
+>* I det [korrektur](../content-management/proofs.md) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den är bara aktiv i de slutliga meddelandena.
+
+## Anpassa länkutseende och mål {#adjust-links}
+
+Du kan justera länkarna, t.ex. stryka under dem, ändra deras färg eller välja mål.  De här ändringarna anges i rutorna **[!UICONTROL Settings]** och **[!UICONTROL Styles]** till höger i innehållsredigeraren.
+
+### Target {#link-target}
+
+Attributet **target** används för att styra var en länkad sida ska öppnas. Om du lägger till ett målattribut i en ankartagg kan du ange om länken ska öppnas på en ny flik, på samma flik eller i en annan bildruta.
+
+Så här definierar du målet för en länk:
 
 1. Markera länken i en **[!UICONTROL Text]**-komponent där en länk infogas.
 
-1. På fliken **[!UICONTROL Settings]** väljer du hur din målgrupp ska omdirigeras med listrutan **[!UICONTROL Target]**:
+1. På fliken **[!UICONTROL Settings]** väljer du var länken ska öppnas i listrutan **[!UICONTROL Target]**:
 
    * **[!UICONTROL None]**: öppnar länken i samma ram som den klickades på (standard).
    * **[!UICONTROL Blank]**: öppnar länken i ett nytt fönster eller på en ny flik.
@@ -107,37 +130,21 @@ Du kan justera länkarna med rutorna **[!UICONTROL Settings]** och **[!UICONTROL
 
    ![](assets/link_2.png)
 
-1. Markera **[!UICONTROL Underline link]** om du vill stryka under etikettexten för länken.
-
-   ![](assets/link_1.png)
-
-1. Om du vill ändra färg på länken klickar du på **[!UICONTROL Link color]** på fliken **[!UICONTROL Styles]**.
-
-   ![](assets/link_3.png)
-
 1. Spara ändringarna.
 
-## Länka till en spegelsida {#mirror-page}
 
-Spegelsidan är en HTML-sida som är tillgänglig online via en webbläsare. Innehållet är identiskt med innehållet i ditt e-postmeddelande.
+### Understrykningslänk {#link-underline}
 
-Om du vill lägga till en länk till en spegelsida i ditt e-postmeddelande [infogar du en länk](#insert-links) och väljer **[!UICONTROL Mirror page]** som typ av länk.
+Markera alternativet **[!UICONTROL Underline link]** om du vill stryka under etiketten för länken.
 
-![](assets/message-tracking-mirror-page.png)
+![](assets/link_1.png)
 
-Spegelsidan skapas automatiskt.
+### Länkfärg {#link-color}
 
->[!IMPORTANT]
->
->Länkar för spegelsidor genereras automatiskt och kan inte redigeras. De innehåller alla krypterade, personliga data som krävs för att återge det ursprungliga e-postmeddelandet. Om du använder anpassade attribut med stora värden kan det därför generera långa URL-adresser för spegelsidor, vilket kan förhindra länken från att fungera i webbläsare som har en maximal URL-längd.
+Om du vill ändra färg på länken klickar du på **[!UICONTROL Link color]** på fliken **[!UICONTROL Styles]**.
 
-När e-postmeddelandet har skickats visas innehållet i e-postmeddelandet i sin standardwebbläsare när mottagarna klickar på länken för spegelsidan.
+![](assets/link_3.png)
 
->[!NOTE]
->
->I det [korrektur](../content-management/proofs.md) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
-
-Kvarhållningsperioden för en spegelsida är 60 dagar. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
 
 ## Hantera spårning {#manage-tracking}
 
