@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 02f3b545692b7442086d81e22bb6aa2ed6ee006b
+source-git-commit: 170dd966ae9fe9721a92bdebccd76305ad6fa1dc
 workflow-type: tm+mt
-source-wordcount: '2261'
-ht-degree: 22%
+source-wordcount: '2251'
+ht-degree: 23%
 
 ---
 
@@ -172,7 +172,7 @@ ht-degree: 22%
          + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Flerstegskampanjer {#ms-campaigns}
    + [Kom igång med flerstegskampanjer](using/ms/gs-ms-campaigns.md)
-   + Skapa och kör din första flerstegskampanj {#create-ms-campaign}
+   + Skapa din första flerstegskampanj {#create-ms-campaign}
       + [Viktiga principer](using/ms/gs-campaign-creation.md)
       + [Skyddsritningar och begränsningar](using/ms/guardrails.md)
       + [Skapa kampanjen](using/ms/create-ms-campaign.md)
@@ -180,7 +180,7 @@ ht-degree: 22%
       + [Konfigurera kampanjinställningar](using/ms/ms-campaign-settings.md)
       + [Starta och övervaka era kampanjer](using/ms/start-monitor-campaigns.md)
       + [Händelsevariabler i flerstegskampanjer](using/ms/event-variables.md)
-   + Arbeta med kampanjaktiviteter i flera steg {#design-campaigns}
+   + Flerstegskampanjer {#design-campaigns}
       + [Om kampanjaktiviteter i flera steg](using/ms/activities/about-activities.md)
       + [Och-join](using/ms/activities/and-join.md)
       + [Bygg målgrupper](using/ms/activities/build-audience.md)
@@ -198,12 +198,12 @@ ht-degree: 22%
       + [Test](using/ms/activities/test.md)
       + [Uppdatera data](using/ms/activities/update-data.md)
       + [Vänta](using/ms/activities/wait.md)
-+ Enstegskampanjer {#campaigns}
-   + [Kom igång med enstegskampanjer](using/campaigns/get-started-with-campaigns.md)
-   + [Skapa en kampanj i ett enda steg](using/campaigns/create-campaign.md)
-   + [Granska och aktivera en kampanj i ett enda steg](using/campaigns/review-activate-campaign.md)
-   + [Hantera kampanjer i ett enda steg](using/campaigns/modify-stop-campaign.md)
-   + [Trigga kampanjer i ett enda steg med API:er](using/campaigns/api-triggered-campaigns.md)
++ Kampanjer {#campaigns}
+   + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
+   + [Skapa en kampanj](using/campaigns/create-campaign.md)
+   + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
+   + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
+   + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
 + Konflikthantering och prioritering {#conflict-prioritization}
    + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
    + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
