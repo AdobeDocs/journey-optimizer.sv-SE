@@ -8,7 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: fråga, samlingar, funktioner, nyttolast, resa
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
-source-git-commit: 1ba767ba8d2ecaabc17b717a983e7ad285dd52bb
+source-git-commit: 0d6b0cad90dbeded671a79732a6f101289568f81
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Uttrycksspråket innehåller även en uppsättning funktioner för att fråga efter samlingar.
 
-Dessa funktioner förklaras nedan. I följande exempel använder vi händelsenyttolasten som innehåller en samling:
+Dessa funktioner förklaras nedan. I följande exempel använder vi händelsens nyttolast som innehåller en samling:
 
 ```json
                 { 
