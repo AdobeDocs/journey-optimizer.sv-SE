@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: da46230b9a086743fea1052b57b48bf18b920abd
+source-git-commit: 3e9392d65bc4a5cbbb95ed27350c6de56edcbf18
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1315'
 ht-degree: 5%
 
 ---
@@ -248,3 +248,8 @@ Så här byter du språk:
 >id="ajo_exd_placements"
 >title="Placement"
 >abstract="En placering bestämmer var returnerade objekt från beslutsmotorn visas i ett meddelande. Ni kan spåra deras prestanda på olika ställen i rapporteringen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_express_menu"
+>title="Integrering med Adobe Express"
+>abstract="Adobe express"
