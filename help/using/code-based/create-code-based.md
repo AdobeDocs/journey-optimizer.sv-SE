@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 167d42f51bd76d42118b340fe6a1f41962ef9c51
+source-git-commit: b7cd42f89ea6fb4c0359b2be6c75202d5e1ea001
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 3%
@@ -89,8 +89,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
-<!--
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/expression-editor/personalization-build-expressions.html" text="Get started with the personalization editor"-->
+
 
 1. Välj **[!UICONTROL Edit code]** från reseaktiviteten eller kampanjversionen.
 
