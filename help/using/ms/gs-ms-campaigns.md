@@ -5,9 +5,9 @@ title: Kom igång med flerstegskampanjer
 description: Lär dig hur du börjar med kampanjer i flera steg
 hide: true
 hidefromtoc: true
-source-git-commit: a0bdab445a53521be621ce4ace390f83964a0c79
+source-git-commit: f8c7d2a21f87f558e3bf8ee3da7a46abda97326b
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,12 @@ Flerstegskampanjer förbättrar Adobe Journey Optimizer genom att införa stabil
 
 **Innehållsförteckning**
 
-* Kom igång med flerstegskampanjer
-* [Viktiga principer](gs-campaign-creation.md)
-* [Skyddsritningar och begränsningar](guardrails.md)
-* [Skapa kampanjen](create-ms-campaign.md)
-* [Organisera aktiviteter](orchestrate-activities.md)
-* [Konfigurera kampanjinställningar](ms-campaign-settings.md)
+* [Nyckelprinciper](gs-campaign-creation.md) - [Skyddsritningar och begränsningar](guardrails.md)
+* [Skapa en kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md)
 * [Starta och övervaka era kampanjer](start-monitor-campaigns.md)
-* [Händelsevariabler i flerstegskampanjer](event-variables.md)
-* Arbeta med kampanjaktiviteter i flera steg
-   * [Kom igång med aktiviteter](activities/about-activities.md)
-   * Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Läs in fil](activities/load-file.md) 17} - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Schemaläggare](activities/scheduler.md) - [Dela](activities/split.md) - [Testa](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
+* [Händelsevariabler](event-variables.md)
+* [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md)
+* Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Läs in fil](activities/load-file.md) 17} - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Schemaläggare](activities/scheduler.md) - [Dela](activities/split.md) - [Testa](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
 
 >[!ENDSHADEBOX]
 
