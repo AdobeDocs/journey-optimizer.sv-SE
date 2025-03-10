@@ -5,13 +5,13 @@ title: Kom igång med flerstegskampanjer
 description: Lär dig hur du börjar med kampanjer i flera steg
 hide: true
 hidefromtoc: true
-source-git-commit: f8c7d2a21f87f558e3bf8ee3da7a46abda97326b
+exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
+source-git-commit: 040635e03fe4fa0542eeddbc0a2b87c6c838d339
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
 
 ---
-
 
 # Kom igång med flerstegskampanjer {#ms-camp}
 
@@ -31,7 +31,7 @@ Flerstegskampanjer förbättrar Adobe Journey Optimizer genom att införa stabil
 >[!ENDSHADEBOX]
 
 
-## Vad är flerstegskampanjer?
+## Vad är en kampanj i flera steg?
 
 Flerkanalsmarknadsföring är avgörande för alla företag som vill nå ut till sina kunder effektivt. Adobe Journey Optimizer har en omfattande grafisk miljö som gör att ni kan utforma komplexa processer som enkelt kan hantera era marknadsföringskampanjer. Med flerstegskampanjer kan ni samordna alla processer och uppgifter, förbättra hastighet och skala för alla delar av marknadsföringskampanjer, från att skapa segment och förbereda meddelanden till leverans. Dessutom kan ni synkronisera era kanaler med ett enda lättanvänt gränssnitt för kampanjsamordning.
 
