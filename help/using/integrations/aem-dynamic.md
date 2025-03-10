@@ -10,10 +10,10 @@ hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
 exl-id: 3e777cc5-a935-4e68-9de7-60b241e78f63
-source-git-commit: 3a10f8440515bd569f9def6d15ac74d57427c1cf
+source-git-commit: 8d477f724b9bddcfd05df62ea236ebbaa25bc549
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 0%
+source-wordcount: '717'
+ht-degree: 1%
 
 ---
 
@@ -95,6 +95,72 @@ Med experimenteringsfunktionen kan du till exempel uppdatera den befintliga text
 Innehållet innehåller nu din uppdaterade textövertäckning.
 
 ![](assets/dynamic-media-layout-3.png)
+
+## Lägg till och hantera din mall för dynamiska media
+
+Lägg enkelt till din Dynamic Media-mall i Journey Optimizer och uppdatera medieinnehållet när det behövs. Ni kan nu lägga in personaliseringsfält i era medier, så att ni kan skapa mer anpassat och engagerande innehåll i Journey Optimizer.
+
+Läs mer om [mallen för dynamiska media](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
+
+### Med bildkomponent
+
+Du kan infoga den dynamiska mallen direkt i innehållet med komponenten Bild:
+
+1. Öppna kampanjen eller resan och få tillgång till innehållet.
+
+1. Dra och släpp en **bildkomponent** i layouten.
+
+   Mer information om bildkomponenten finns på [den här sidan](../email/content-components.md).
+
+   ![](assets/dynamic-media-template-1.png)
+
+1. Bläddra bland dina AEM-resurser och välj den mall för dynamiska medier som du vill lägga till i ditt innehåll.
+
+   ![](assets/dynamic-media-template-2.png)
+
+1. Gå till parametrarna för mallen för dynamiska media i **bildinställningarna**.
+
+   Vilka fält som är tillgängliga beror på de parametrar som lagts till när [mallen ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters) skapades i Adobe Experience Manager.
+
+   ![](assets/dynamic-media-template-3.png)
+
+1. Fyll i de olika fälten och använd anpassningsredigeraren för att lägga till personaliserat innehåll. Du kan använda alla attribut, till exempel profilnamn, ort eller annan relevant information, för att skapa en mer anpassad upplevelse.
+
+   Läs mer om personalisering på [den här sidan](../personalization/personalize.md).
+
+   ![](assets/do-not-localize/dynamic_media_template.gif)
+
+1. Villkorligt innehåll kan användas på komponenten Dynamic Media för att generera olika varianter av innehållet. [Läs mer](../personalization/dynamic-content.md)
+
+1. Klicka på **[!UICONTROL Save]**.
+
+När du har utfört testerna och validerat innehållet kan du skicka meddelandet till mottagarna.
+
+### Med HTML-komponent
+
+Du kan infoga den dynamiska mallen direkt i ditt innehåll med HTML-komponenten:
+
+1. Öppna kampanjen eller resan och få tillgång till innehållet.
+
+1. Dra och släpp en **HTML-komponent** i layouten.
+
+   ![](assets/dynamic-media-template-4.png)
+
+1. Välj **[!UICONTROL Show the source code]**.
+
+   ![](assets/dynamic-media-template-5.png)
+
+1. Öppna **[!UICONTROL Assets]** och sedan **[!UICONTROL Open asset selector]** på menyn **[!UICONTROL Edit HTML]**.
+
+   Du kan också kopiera och klistra in resursens URL.
+
+1. Justera bildens textparametrar efter behov.
+
+   ![](assets/do-not-localize/dynamic_media_template_html.gif)
+
+1. Klicka på **[!UICONTROL Save]**.
+
+När du har utfört testerna och validerat innehållet kan du skicka meddelandet till mottagarna.
 
 <!--
 ## Personalization with Text Overlay
