@@ -9,9 +9,9 @@ role: Data Engineer
 level: Beginner
 keywords: uttryck, redigerare, start, personalisering
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 78c1464ccddec75e4827cbb1877d8fab5ac08b90
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -23,37 +23,65 @@ ht-degree: 0%
 >title="Personalisera upplevelser"
 >abstract="Använd **Adobe Journey Optimizer** för att anpassa dina meddelanden till varje specifik mottagare genom att utnyttja de data och den information du har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat."
 
-Identifiera [!DNL Adobe Journey Optimizer]-personaliseringsfunktioner för att anpassa dina meddelanden till varje specifik mottagare genom att utnyttja de data och den information du har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat.
+Med personaliseringsfunktionerna i [!DNL Adobe Journey Optimizer] kan du anpassa dina meddelanden till varje specifik mottagare genom att utnyttja de data och den information du har om dem. Det kan vara deras förnamn, intressen, var de bor, vad de har köpt och mycket annat.
 
-➡️ [Lär dig hur du anpassar ett meddelande i dessa videofilmer](#video-perso)
-➡️ [Upptäck användningsfall som utnyttjar personalisering ](personalization-use-case.md)
+## Så fungerar personalisering
 
-## Skapa personaliseringsuttryck med en dedikerad syntax {#syntax}
+Med **personaliseringsredigeraren** kan du välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll, och använda olika verktyg som hjälpfunktioner eller fördefinierade uttryck för att anpassa meddelanden effektivt.
 
-[!DNL Journey Optimizer] använder en **inline** enkel personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll inneslutet av dubbla klammerparenteser **{{}}**. Du kan lägga till flera uttryck i samma innehåll eller fält utan begränsningar. [Läs mer om personaliseringssyntaxen](personalization-syntax.md).
+Journey Optimizer använder en infogad personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll inneslutet av dubbla klammerparenteser **{{}}**.
 
-**Exempel:**
+När du bearbetar meddelandet ersätter Journey Optimizer uttrycket med data som finns i Experience Platform datamängd. Till exempel blir `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamiskt `Hello John Doe`.
 
-* `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}`
-* `Hello {{profile.person.name.fullName}}`
+Med den här syntaxen kan du anpassa meddelanden i flera fält, inklusive ämnesrader, meddelandetexter, push-meddelanden och URL:er.
 
-När du bearbetar meddelandet (e-post och push) ersätter Journey Optimizer uttrycket med data i Experience Platform-databasen: `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` blir&quot;Hello John Doe&quot;.
+## Data som används för personalisering
 
-## Utnyttja profildata för att personalisera era meddelanden {#data}
+Personalization baseras på profildata som hanteras av schemat **XDM Individual Profile** som definierats i Adobe Experience Platform. Schemat **XDM Individual Profile** är det enda schema som du kan använda för att anpassa innehåll i [!DNL Journey Optimizer]. Läs mer i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 
-Anpassningen baseras på profildata som hanteras av schemat **XDM Individual Profile** som definieras i Adobe Experience Platform. Läs mer i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
+Du kan också utnyttja **beräknade attribut** för att anpassa ditt innehåll. Beräknade attribut gör att du kan sammanfatta enskilda beteendehändelser i beräknade profilattribut som är tillgängliga på Adobe Experience Platform. [Lär dig arbeta med beräknade attribut](../audience/computed-attributes.md)
 
->[!CAUTION]
->Schemat **XDM Individual Profile** är det enda schema som du kan använda för att anpassa innehåll i [!DNL Journey Optimizer].
+Dessutom kan du i [!DNL Journey Optimizer] utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att anpassa ditt innehåll. För att göra detta måste datauppsättningar som behövs för sökpersonalisering först aktiveras via ett API-anrop. När du är klar kan du använda deras data för att anpassa ditt innehåll till Journey Optimizer. Funktionen är för närvarande tillgänglig i betaversion. [Läs mer](../personalization/lookup-aep-data.md)
 
-Dessutom kan du använda **beräknade attribut** för att anpassa ditt innehåll. Beräknade attribut baseras på profilaktiverade Experience Event-datamängder som importerats till Adobe Experience Platform och fungerar som aggregerade datapunkter som lagras i kundprofiler som sammanfattar enskilda beteendehändelser [Lär dig hur du arbetar med beräknade attribut](../audience/computed-attributes.md)
+## Låt oss dyka djupare
 
-## Arbeta med personaliseringsredigeraren {#editor}
+Nu när du har en förståelse för personalisering i **[!DNL Journey Optimizer]** är det dags att gå djupare in i dessa dokumentationsavsnitt för att börja arbeta med funktionen.
 
-[!DNL Journey Optimizer] tillhandahåller en personaliseringsredigerare där du kan välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll. Det finns flera verktyg som du kan använda för att bygga ditt personaliseringsinnehåll, till exempel felper-funktioner, fördefinierat uttrycksbibliotek, attribut och mycket mer.
-
-* [Lär dig arbeta med personaliseringsredigeraren](personalization-build-expressions.md)
-* [Lär dig var du kan utföra personalisering](personalization-contexts.md).
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="personalization-build-expressions.md">
+<img alt="lägg till personalisering" src="assets/do-not-localize/add.png">
+</a>
+<div>
+<a href="personalization-build-expressions.md"><strong>Lägg till personalisering</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="../personalization/personalization-syntax.md">
+<img alt="Lead" src="assets/do-not-localize/syntax.png">
+</a>
+<div><a href="../personalization/personalization-syntax.md"><strong>Personalization-syntax</strong>
+</div>
+<p>
+</td>
+<td>
+<a href="../personalization/functions/functions.md">
+<img alt="Sällan" src="assets/do-not-localize/functions.png">
+</a>
+<div>
+<a href="../personalization/functions/functions.md"><strong>Hjälpfunktionslista</strong></a>
+</div>
+<p></td>
+<td>
+<a href="../personalization/personalization-use-case.md">
+<img alt="Sällan" src="assets/do-not-localize/uc.png">
+</a>
+<div>
+<a href="../personalization/personalization-use-case.md"><strong>Användningsexempel för Personalization</strong></a>
+</div>
+<p></td>
+</tr></table>
 
 ## Instruktionsfilmer{#video-perso}
 

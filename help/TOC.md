@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ff31c69255e6d4e0762a57430f112c92f34191c3
+source-git-commit: 78c1464ccddec75e4827cbb1877d8fab5ac08b90
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 22%
+source-wordcount: '2266'
+ht-degree: 23%
 
 ---
 
@@ -359,15 +359,11 @@ ht-degree: 22%
          + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
-      + [Personalization-kontexter](using/personalization/personalization-contexts.md)
+      + [Lägg till personalisering](using/personalization/personalization-build-expressions.md)
       + [Personalization syntax](using/personalization/personalization-syntax.md)
+      + [Återanvänd uttrycksfragment](using/personalization/use-expression-fragments.md)
       + [Använd Adobe Experience Platform-data för personalisering (Beta)](using/personalization/lookup-aep-data.md)
-      + Arbeta med personaliseringsredigeraren {#expression-editor}
-         + [Om personaliseringsredigeraren](using/personalization/personalization-build-expressions.md)
-         + [Lägg till attribut i favoriter](using/personalization/personalization-favorites.md)
-         + [Använd uttrycksfragment](using/personalization/use-expression-fragments.md)
-         + [Personalization-validering](using/personalization/personalization-validation.md)
-      + Hjälpfunktioner {#functions}
+      + Hjälpfunktionslista {#functions}
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
          + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
          + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
