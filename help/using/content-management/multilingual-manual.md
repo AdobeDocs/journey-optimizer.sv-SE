@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
-source-git-commit: d63b12c9c7d3b16309661ffbe20baf8a9c140945
+source-git-commit: a009743e176f81cc0ad843c1c056983d66c5cc48
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 1%
@@ -30,9 +30,9 @@ Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av manuel
 
 1. [Lägg till nationella inställningar (valfritt)](multilingual-locale.md)
 
-1. [Skapa språkinställningar](#create-language-settings)
+1. [Skapa språkinställningar](#language-settings)
 
-1. [Skapa flerspråkigt innehåll](#create-a-multilingual-campaign)
+1. [Skapa flerspråkigt innehåll](#create-multilingual-campaign)
 
 ## Skapa språkinställningar {#language-settings}
 
@@ -48,7 +48,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
 1. Välj **[!UICONTROL Locales]** som är associerad med de här inställningarna. Du kan lägga till högst 50 språkområden.
 
-   Om **[!UICONTROL Locale]** saknas kan du skapa den manuellt på menyn **[!UICONTROL Translation]** eller via API. Se [Skapa en ny språkinställning](#create-locale).
+   Om **[!UICONTROL Locale]** saknas kan du skapa den manuellt på menyn **[!UICONTROL Translation]** eller via API. Se [Skapa en ny språkinställning](multilingual-locale.md).
 
    ![](assets/multilingual-settings-2.png)
 
@@ -155,7 +155,7 @@ När du har konfigurerat ditt flerspråkiga innehåll är du redo att skapa en k
 
    ![](assets/multilingual-campaign-2.png)
 
-1. Klicka på **[!UICONTROL Add languages]** och markera **[!UICONTROL Language settings]** som du skapat tidigare. [Läs mer](#create-language-settings)
+1. Klicka på **[!UICONTROL Add languages]** och markera **[!UICONTROL Language settings]** som du skapat tidigare. [Läs mer](#language-settings)
 
    ![](assets/multilingual-campaign-3.png)
 
