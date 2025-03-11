@@ -10,7 +10,7 @@ hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
 exl-id: 3e777cc5-a935-4e68-9de7-60b241e78f63
-source-git-commit: 8d477f724b9bddcfd05df62ea236ebbaa25bc549
+source-git-commit: a6a601477e29e558bf4f4e9416187b2db3e15942
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Resursväljaren har nu stöd för dynamiska medier, vilket gör att du sömlöst
 
 Mer information om Dynamic Media i Adobe Experience Manager as a Cloud Service finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media).
 
-## Lägga till och hantera dynamiska medier
+## Lägga till och hantera dynamiska medier {#dynamic-media}
 
 Förbättra och optimera materialet för alla skärmar och webbläsare genom att infoga dynamiska medier från Adobe Experience Manager as a Cloud Service direkt i Journey Optimizer-materialet.  Du kan sedan ändra storlek, beskära, förbättra och göra andra justeringar efter behov.
 
@@ -55,7 +55,7 @@ Förbättra och optimera materialet för alla skärmar och webbläsare genom att
 
 Innehållet innehåller nu dynamiska medier. Alla uppdateringar du gör i Experience Manager visas automatiskt i Journey Optimizer.
 
-## Anpassa textöverlägget
+## Anpassa textöverlägget {#text-overlay}
 
 Anpassa enkelt alla dynamiska medier genom att ersätta den befintliga textövertäckningen med valfri ny text, vilket möjliggör smidiga uppdateringar och personalisering.
 
@@ -96,13 +96,13 @@ Innehållet innehåller nu din uppdaterade textövertäckning.
 
 ![](assets/dynamic-media-layout-3.png)
 
-## Lägg till och hantera din mall för dynamiska media
+## Lägg till och hantera din mall för dynamiska media {#dynamic-media-template}
 
 Lägg enkelt till din Dynamic Media-mall i Journey Optimizer och uppdatera medieinnehållet när det behövs. Ni kan nu lägga in personaliseringsfält i era medier, så att ni kan skapa mer anpassat och engagerande innehåll i Journey Optimizer.
 
 Läs mer om [mallen för dynamiska media](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
 
-### Med bildkomponent
+### Med bildkomponent {#image-component}
 
 Du kan infoga den dynamiska mallen direkt i innehållet med komponenten Bild:
 
@@ -136,7 +136,7 @@ Du kan infoga den dynamiska mallen direkt i innehållet med komponenten Bild:
 
 När du har utfört testerna och validerat innehållet kan du skicka meddelandet till mottagarna.
 
-### Med HTML-komponent
+### Med HTML-komponent {#html-component}
 
 Du kan infoga den dynamiska mallen direkt i ditt innehåll med HTML-komponenten:
 
