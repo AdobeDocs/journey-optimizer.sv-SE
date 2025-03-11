@@ -6,7 +6,7 @@ description: Lär dig hur du börjar med kampanjer i flera steg
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 326a0a47c859f475d9036c6142b057a5b59b0ae9
+source-git-commit: 3ecb1691cc8a1c429d9bd9919b06ddc5a316eff7
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -19,8 +19,7 @@ ht-degree: 0%
 
 **Innehållsförteckning**
 
-* Kom igång med flerstegskampanjer
-* [Nyckelobjekt](gs-campaign-creation.md)
+* Kom igång med flerstegskampanjer - [Nyckelobjekt](gs-campaign-creation.md)
 * Konfiguration: [Arbeta med scheman](ms-schemas.md) - [Arbeta med händelsevariabler](event-variables.md)
 * Kom igång: [Skapa en strukturerad kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md) - [Starta och övervaka kampanjer](start-monitor-campaigns.md) - [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md) - [Personalization](ms-personalization.md)
 * Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Läs in fil](activities/load-file.md) 17} - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Schemaläggare](activities/scheduler.md) - [Dela](activities/split.md) - [Testa](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
