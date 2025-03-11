@@ -6,20 +6,21 @@ description: Lär dig grunderna för flerstegskampanjer med Adobe Journey Optimi
 hide: true
 hidefromtoc: true
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
-source-git-commit: 271c4739a5537a99da981913606bc9eb099b5139
+source-git-commit: 326a0a47c859f475d9036c6142b057a5b59b0ae9
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
 # Viktiga principer för samordnade kampanjer {#ms-campaign-creation}
 
+>[!CONTEXTUALHELP]
+>id="ajo_targeting_workflow_list"
+>title="Flerstegskampanj"
+>abstract="På den här skärmen kan du få tillgång till den fullständiga listan över flerstegskampanjer, kontrollera deras aktuella status, senaste/nästa körningsdatum och skapa en ny flerstegskampanj."
+
 Med Adobe Journey Optimizer kan ni skapa flerstegskampanjer i en visuell arbetsyta för att utforma flerkanalsprocesser som segmentering, kampanjutförande och filhantering.
-
-## Skapa en fråga
-
-## Personalization riktlinjer
 
 ## Vad ingår i en flerstegskampanj? {#gs-ms-campaign-inside}
 
@@ -43,7 +44,23 @@ Så här skapar du flerstegskampanjer:
 
 ![](assets/workflow-creation-process.png){zoomable="yes"}
 
-## Status och livscykel
+## Få tillgång till flerstegskampanjer
+
+På menyn **[!UICONTROL Campaigns]** kan du bläddra till fliken Flersteg för att få tillgång till den fullständiga listan över flerstegskampanjer.
+
+Varje kampanj i flera steg i listan visar information om dess aktuella [status](#status), den senaste gången den kördes eller ändrades samt nästa schemalagda körningsdatum och -tid.
+
+Du kan anpassa de kolumner som visas genom att klicka på ikonen **[!UICONTROL Configure column for a custom layout]** i det övre högra hörnet av listan. På så sätt kan du lägga till ytterligare information i listan, t.ex. den senaste felaktiviteten för varje flerstegskampanj eller den använda måldimensionen.
+
+Dessutom finns det ett sökfält och filter som gör det enklare att söka i listan. Du kan t.ex. filtrera flerstegskampanjer så att de endast visas för kampanjer som tillhör en kampanj, eller kampanjer som bearbetas under ett visst datumintervall.
+
+Om du vill duplicera eller ta bort en kampanj i flera steg klickar du på ellipsknappen och väljer sedan **[!UICONTROL Duplicate]** eller **[!UICONTROL Delete]**.
+
+>[!NOTE]
+>
+>När en kampanj i flera steg pågår kan du duplicera den, men du kan inte ta bort den.
+
+## Status och livscykel {#status}
 
 Kampanjer kan ha flera statusvärden:
 
@@ -53,3 +70,7 @@ Kampanjer kan ha flera statusvärden:
 * **[!UICONTROL Paused]**: Flerstegskampanjen har pausats.
 * **[!UICONTROL Erroneous]**: Ett fel uppstod i flerstegskampanjen. Öppna flerstegskampanjen och gå till loggarna och aktiviteterna för att identifiera felet och åtgärda det.
 
+
+## Skapa en fråga
+
+## Personalization riktlinjer

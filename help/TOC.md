@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 271c4739a5537a99da981913606bc9eb099b5139
+source-git-commit: 326a0a47c859f475d9036c6142b057a5b59b0ae9
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2267'
 ht-degree: 23%
 
 ---
@@ -173,7 +173,6 @@ ht-degree: 23%
 + Flerstegskampanjer {#ms-campaigns}
    + [Kom igång med flerstegskampanjer](using/ms/gs-ms-campaigns.md)
    + [Viktiga principer](using/ms/gs-campaign-creation.md)
-   + [Skyddsritningar och begränsningar](using/ms/guardrails.md)
    + Konfiguration {#ms-config}
       + [Scheman](using/ms/ms-schemas.md)
       + [Arbeta med händelsevariabler](using/ms/event-variables.md)
