@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 78c1464ccddec75e4827cbb1877d8fab5ac08b90
+source-git-commit: 271c4739a5537a99da981913606bc9eb099b5139
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2270'
 ht-degree: 23%
 
 ---
@@ -172,14 +172,17 @@ ht-degree: 23%
          + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Flerstegskampanjer {#ms-campaigns}
    + [Kom igång med flerstegskampanjer](using/ms/gs-ms-campaigns.md)
+   + [Viktiga principer](using/ms/gs-campaign-creation.md)
+   + [Skyddsritningar och begränsningar](using/ms/guardrails.md)
+   + Konfiguration {#ms-config}
+      + [Scheman](using/ms/ms-schemas.md)
+      + [Arbeta med händelsevariabler](using/ms/event-variables.md)
    + Skapa din första flerstegskampanj {#create-ms-campaign}
-      + [Viktiga principer](using/ms/gs-campaign-creation.md)
-      + [Skyddsritningar och begränsningar](using/ms/guardrails.md)
-      + [Skapa kampanjen](using/ms/create-ms-campaign.md)
+      + [Skapa en orkestrerad kampanj](using/ms/create-ms-campaign.md)
       + [Organisera aktiviteter](using/ms/orchestrate-activities.md)
       + [Konfigurera kampanjinställningar](using/ms/ms-campaign-settings.md)
       + [Starta och övervaka era kampanjer](using/ms/start-monitor-campaigns.md)
-      + [Händelsevariabler i flerstegskampanjer](using/ms/event-variables.md)
+      + [Hantera personalisering](using/ms/ms-personalization.md)
    + Flerstegskampanjer {#design-campaigns}
       + [Om kampanjaktiviteter i flera steg](using/ms/activities/about-activities.md)
       + [Och-join](using/ms/activities/and-join.md)

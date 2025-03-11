@@ -1,25 +1,35 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Skapa flerstegskampanj med Journey Optimizer
+title: Skapa flerstegskampanjer med Journey Optimizer
 description: Lär dig skapa en kampanj i flera steg med Adobe Journey Optimizer
 hide: true
 hidefromtoc: true
-source-git-commit: 00f843300a9cfe798ea4d3a92fbe89ba80e70bc5
+exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
+source-git-commit: 271c4739a5537a99da981913606bc9eb099b5139
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 0%
+source-wordcount: '694'
+ht-degree: 1%
 
 ---
 
-
-# Skapa en kampanj i flera steg {#create-first-campaign}
+# Skapa en orkestrerad kampanj {#create-first-campaign}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_creation_workflow"
 >title="Lista över flerstegskampanjer"
 >abstract="Fliken **Flersteg** visar alla flerstegskampanjer. Klicka på namnet på en kampanj i flera steg för att redigera den. Använd knappen **Skapa flerstegskampanj** för att lägga till en ny flerstegskampanj."
 
+## Förhandskrav
+
+### Behörigheter
+
+### Inställningar
+
+Översikt över nya administratörsinställningar> scheman, körningsfält, sammanfogningsprincip. [Läs mer](ms-schemas.md)
+
+
+## Skapandesteg
 
 Så här skapar du en kampanj i flera steg:
 

@@ -6,30 +6,28 @@ description: Lär dig hur du börjar med kampanjer i flera steg
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 040635e03fe4fa0542eeddbc0a2b87c6c838d339
+source-git-commit: 271c4739a5537a99da981913606bc9eb099b5139
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
 
 # Kom igång med flerstegskampanjer {#ms-camp}
 
-Flerstegskampanjer förbättrar Adobe Journey Optimizer genom att införa stabila funktioner för varumärkesinitierade batchkampanjer, så att ni kan planera och samordna flerkanalskampanjer med avancerade segmenteringsstrategier.
-
 >[!BEGINSHADEBOX]
 
 **Innehållsförteckning**
 
-* [Nyckelprinciper](gs-campaign-creation.md) - [Skyddsritningar och begränsningar](guardrails.md)
-* [Skapa en kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md)
-* [Starta och övervaka era kampanjer](start-monitor-campaigns.md)
-* [Händelsevariabler](event-variables.md)
-* [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md)
+* Kom igång med flerstegskampanjer
+* [Nyckelobjekt](gs-campaign-creation.md) - [Skyddsritningar och begränsningar](guardrails.md)
+* Konfiguration: [Arbeta med scheman](ms-schemas.md) - [Arbeta med händelsevariabler](event-variables.md)
+* Kom igång: [Skapa en strukturerad kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md) - [Starta och övervaka kampanjer](start-monitor-campaigns.md) - [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md) - [Personalization](ms-personalization.md)
 * Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Läs in fil](activities/load-file.md) 17} - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Schemaläggare](activities/scheduler.md) - [Dela](activities/split.md) - [Testa](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
 
 >[!ENDSHADEBOX]
 
+Flerstegskampanjer förbättrar Adobe Journey Optimizer genom att införa stabila funktioner för varumärkesinitierade batchkampanjer, så att ni kan planera och samordna flerkanalskampanjer med avancerade segmenteringsstrategier.
 
 ## Vad är en kampanj i flera steg?
 
@@ -41,12 +39,10 @@ Flerstegskampanjer är otroligt mångsidiga och kan användas i olika sammanhang
 
 Med en omfattande grafisk miljö kan du utforma processer som segmentering, kampanjutförande och filbearbetning. Flerstegskampanjer kan även omfatta användare genom att tilldela dem uppgifter eller låta dem godkänna utförda uppgifter, vilket gör det enklare att hantera teamets arbete och se till att allt görs på rätt sätt.
 
-Här är några exempel på hur ni kan använda flerstegskampanjer i Adobe Journey Optimizer:
 
-* Starta en uppföljningskampanj för inaktiva kunder,
-* Skicka ett välkomstmeddelande till alla nya prenumeranter på en tjänst,
-* Anpassa flerkanalsleveranser baserat på kundens lojalitetsprogram eller intressepunkter.
+## Resesamordning och kampanjsamordning
 
+Journeys vs Campaigns - Förklara skillnaderna, användningsexempel och bästa praxis
 
 ## Låt oss dyka djupare
 

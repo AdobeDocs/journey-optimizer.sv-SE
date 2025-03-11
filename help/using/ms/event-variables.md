@@ -1,18 +1,19 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Variabler för kampanjhändelser i flera steg
+title: Arbeta med händelsevariabler i flerstegskampanjer
 description: Lär dig hur du utnyttjar händelsevariabler i flerstegskampanjer
 hide: true
 hidefromtoc: true
-source-git-commit: dfa6c6e11db10f3e843035d32e322b212361548c
+exl-id: f86dd262-0209-42f6-a180-736f1de98d78
+source-git-commit: 271c4739a5537a99da981913606bc9eb099b5139
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
-# Variabler för kampanjhändelser i flera steg {#event-variables}
+# Arbeta med händelsevariabler {#event-variables}
 
 Med vissa kampanjaktiviteter i flera steg kan du redigera skript i uttrycksredigeraren för att utföra specifika åtgärder som att hämta data från tidigare aktiviteter, skapa villkor eller beräkna filnamn baserat på händelsevariabler.
 

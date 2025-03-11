@@ -5,9 +5,10 @@ title: Skapa flerstegskampanjer med Journey Optimizer
 description: Lär dig skapa flerstegskampanjer med Journey Optimizer
 hide: true
 hidefromtoc: true
-source-git-commit: 00f843300a9cfe798ea4d3a92fbe89ba80e70bc5
+exl-id: 8c80010f-e432-48ea-87cf-af635932d26b
+source-git-commit: 271c4739a5537a99da981913606bc9eb099b5139
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 0%
 >title="Flerstegskampanj"
 >abstract="På den här skärmen kan du få tillgång till den fullständiga listan över flerstegskampanjer, kontrollera deras aktuella status, senaste/nästa körningsdatum och skapa en ny flerstegskampanj."
 
-Menyn **[!UICONTROL Campaigns]** går till fliken Flerstegsfliken för att få tillgång till den fullständiga listan över flerstegskampanjer.
+På menyn **[!UICONTROL Campaigns]** kan du bläddra till fliken Flersteg för att få tillgång till den fullständiga listan över flerstegskampanjer.
 
 
 Varje kampanj i flera steg i listan visar information om dess aktuella [status](#status), den senaste gången den kördes eller ändrades samt nästa schemalagda körningsdatum och -tid.
@@ -33,16 +34,6 @@ Om du vill duplicera eller ta bort en kampanj i flera steg klickar du på ellips
 >[!NOTE]
 >
 >Du kan duplicera en pågående kampanj i flera steg, men du kan inte ta bort den.
-
-## Arbetsflödenas status {#status}
-
-Arbetsflöden kan ha flera statusvärden:
-
-* **[!UICONTROL Draft]**: Flerstegskampanjen har skapats och sparats.
-* **[!UICONTROL In progress]**: Flerstegskampanjen körs för närvarande.
-* **[!UICONTROL Finished]**: Flerstegskampanjen har slutförts.
-* **[!UICONTROL Paused]**: Flerstegskampanjen har pausats.
-* **[!UICONTROL Erroneous]**: Ett fel uppstod i flerstegskampanjen. Öppna flerstegskampanjen och gå till loggarna och aktiviteterna för att identifiera felet och åtgärda det.
 
 
 ## Mallar för flerstegskampanjer {#templates}
