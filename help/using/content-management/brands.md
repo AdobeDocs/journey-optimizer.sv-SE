@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: 12dc96bb08f03865c82382baac276f46bc42baeb
+source-git-commit: d80f9309cfff4307b1b37ce44b037730a374d4a2
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,30 @@ ht-degree: 0%
 >title="Poäng för varumärkesjustering"
 >abstract="Poängen för varumärkesanpassning mäter hur väl ert innehåll följer ert varumärkes riktlinjer och säkerställer enhetlighet vad gäller färger, teckensnitt, logotyp, bilder och stil."
 
+>[!CONTEXTUALHELP]
+>id="ajo_brand_colors"
+>title="Färgskala"
+>abstract="Färgskala"
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_fonts"
+>title="Teckensnittsmusik"
+>abstract="Teckensnittsmusik"
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_logos"
+>title="Logos score"
+>abstract="Logos score"
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_imagery"
+>title="Bildstreck"
+>abstract="Bildstreck"
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_writing_style"
+>title="Skriva formatpoäng"
+>abstract="Skriva formatpoäng"
 
 >[!AVAILABILITY]
 >
