@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d80f9309cfff4307b1b37ce44b037730a374d4a2
+source-git-commit: 6097688141767e85e5180cb0e382d4d130c570f7
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2267'
 ht-degree: 23%
 
 ---
@@ -440,7 +440,6 @@ ht-degree: 23%
          + [Kampanjrapport för innehållskort](using/reports/campaign-global-report-cja-content.md)
          + [Rapport om direktreklamkampanj](using/reports/campaign-global-report-cja-direct.md)
          + [Rapport om e-postkampanj](using/reports/campaign-global-report-cja-email.md)
-         + [Målrapport](using/reports/objective-report.md)
          + [Rapport om experimentkampanjer](using/reports/campaign-global-report-cja-experimentation.md)
          + [Kampanjrapport i appen](using/reports/campaign-global-report-cja-inapp.md)
          + [Kampanjrapport för push-meddelanden](using/reports/campaign-global-report-cja-push.md)
