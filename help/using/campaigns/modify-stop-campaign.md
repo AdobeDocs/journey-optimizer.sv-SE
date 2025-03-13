@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 0a7c1ebf01a0aec9f84e86b14df14bbfcd24a7b4
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '574'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,11 @@ När en kampanj har aktiverats kan du när som helst ändra eller stoppa den. De
 Dessutom kan ni duplicera live-kampanjer (som körs en gång eller med en återkommande körning) för att skapa nya, och arkivera slutförda eller stoppade kampanjer.
 
 ## Åtkomst till kampanjer {#access}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_view"
+>title="Vyer för tabeller och tidslinje för CAmpaigns"
+>abstract="Kampanjtabell- och tidslinjevyer"
 
 Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**.
 

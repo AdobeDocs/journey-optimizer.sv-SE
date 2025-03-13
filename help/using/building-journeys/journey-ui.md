@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
-source-git-commit: d7ebba4144eeb5b29e9e6fa21afde06a7e520e07
+source-git-commit: 0a7c1ebf01a0aec9f84e86b14df14bbfcd24a7b4
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1098'
 ht-degree: 3%
 
 ---
@@ -20,8 +20,12 @@ ht-degree: 3%
 
 ## Kontrollpanel för resan {#dashboard-jo}
 
-Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Det finns två flikar: **[!UICONTROL Overview]** och **[!UICONTROL Browse]**.
+>[!CONTEXTUALHELP]
+>id="ajo_journey_view"
+>title="Resetabell- och tidslinjevyer"
+>abstract="Resetabell- och tidslinjevyer"
 
+Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Det finns två flikar: **[!UICONTROL Overview]** och **[!UICONTROL Browse]**.
 
 * Fliken **[!UICONTROL Overview]** visar en instrumentpanel med nyckelvärden för dina resor.
 
@@ -35,7 +39,6 @@ Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Det finns två f
   >[!NOTE]
   >
   >På denna kontrollpanel beaktas trafiken under de senaste 24 timmarna. Endast de resor du har åtkomst till visas. Mätvärdena uppdateras var 30:e minut och endast när nya data är tillgängliga.
-
 
 * Fliken **[!UICONTROL Browse]** visar en lista över befintliga resor. Du kan söka efter resor, använda filter och utföra grundläggande åtgärder för varje element. Du kan till exempel skapa dubbletter eller radera en post.
 
