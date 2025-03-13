@@ -7,7 +7,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 9ff7a378fb18c72e7fdcff3c6052dcc428f240c9
+source-git-commit: 163a4cc533b5c24e762b2be95a1f2c7dea0eea96
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Läs följande dokumentationssidor om du vill veta mer om hur du integrerar inne
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/displaying-content-cards/">
-<img alt="Hämta" src="../assets/do-not-localize/fetch.jpeg">
+<img alt="Hämta" src="assets/do-not-localize/fetch.jpeg">
 </a>
 <div><a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/displaying-content-cards/"><strong>Hämta och visa innehållskort</strong>
 </div>
@@ -32,7 +32,7 @@ Läs följande dokumentationssidor om du vill veta mer om hur du integrerar inne
 </td>
 <td>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/customizing-content-card-templates/">
-<img alt="Anpassa" src="../assets/do-not-localize/sms-create.jpeg">
+<img alt="Anpassa" src="assets/do-not-localize/customize.jpeg">
 </a>
 <div>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/customizing-content-card-templates/"><strong>Anpassa innehållskort</strong></a>
@@ -40,7 +40,7 @@ Läs följande dokumentationssidor om du vill veta mer om hur du integrerar inne
 <p></td>
 <td>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/listening-content-card-events/">
-<img alt="Lyssna" src="../assets/do-not-localize/customize.jpeg">
+<img alt="Lyssna" src="assets/do-not-localize/listen.jpeg">
 </a>
 <div>
 <a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/listening-content-card-events/"><strong>Lyssna på innehållskortshändelser</strong></a>
