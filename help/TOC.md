@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 9ff7a378fb18c72e7fdcff3c6052dcc428f240c9
+source-git-commit: 0351f0ffafe73245582453ab35742951bb42af7c
 workflow-type: tm+mt
 source-wordcount: '2274'
 ht-degree: 23%
@@ -317,10 +317,10 @@ ht-degree: 23%
          + [Hantera kodbaserade upplevelser](using/code-based/publish-code-based.md)
    + Innehållskort{#content-card}
       + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
-      + [Konfigurera stöd för innehållskort i Web SDK](using/content-card/content-card-lp.md)
       + Konfigurera innehållskortskanalen {#configure}
          + [Krav för innehållskort](using/content-card/content-card-configuration-prereq.md)
          + [Konfigurera innehållskortskanal i Journey Optimizer](using/content-card/content-card-configuration.md)
+         + [Konfigurera stöd för innehållskort i Mobile SDK](using/content-card/content-card-lp.md)
          + [Konfigurera stöd för innehållskort i Web SDK](using/content-card/content-card-configuration-sdk.md)
       + [Skapa innehållskort](using/content-card/create-content-card.md)
       + [Utforma innehållskort](using/content-card/design-content-card.md)
