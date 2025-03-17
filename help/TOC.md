@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: e8ab0c9aab8186b1336eee9260ac424bf22500b9
+source-git-commit: ac9c3687100da33149e6d237b35ffbf6d22afac3
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2279'
 ht-degree: 23%
 
 ---
@@ -482,36 +482,37 @@ ht-degree: 23%
       + [Kom igång med beslutsfattande](using/experience-decisioning/gs-experience-decisioning.md)
       + [Avgörande av skyddsräcken och begränsningar](using/experience-decisioning/decisioning-guardrails.md)
       + API-referens {#api-reference}
-         + Beslutsobjekt {#decision-items}
-            + [Skapa beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/create.md)
-            + [Lista över beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
-            + [Radera beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/delete.md)
-            + [Söka efter beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/lookup.md)
-            + [Uppdatera beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/update.md)
-         + Objektsamlingar{#items-collections}
-            + [Skapa objektsamlingar](using/experience-decisioning/api-reference/items-collections/create.md)
-            + [Ta bort objektsamlingar](using/experience-decisioning/api-reference/items-collections/delete.md)
-            + [Lista över objektsamlingar](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
-            + [Söka efter objektsamlingar](using/experience-decisioning/api-reference/items-collections/lookup.md)
-            + [Uppdatera artikelsamlingar](using/experience-decisioning/api-reference/items-collections/update.md)
-         + Markeringsstrategier{#selection-strategies}
-            + [Skapa urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/create.md)
-            + [Ta bort urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/delete.md)
-            + [Sökstrategier för markering](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
-            + [Urvalsstrategilista](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
-            + [Uppdatera urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/update.md)
-         + Rankningsformler {#ranking-formulas}
-            + [Skapa rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/create.md)
-            + [Ta bort rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/delete.md)
-            + [Sök efter rangordningsformler](using/experience-decisioning/api-reference/ranking-formulas/lookup.md)
-            + [Urvalsrankningsformler](using/experience-decisioning/api-reference/ranking-formulas/ranking-formulas-list.md)
-            + [Uppdatera rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/update.md)
-         + Kvalifikationsregler{#eligibility-rules}
-            + [Skapa berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/create.md)
-            + [Ta bort berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/delete.md)
-            + [Uppslagsberättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
-            + [Lista över bidragsregler](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
-            + [Uppdatera berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/update.md)
+         + Skapa och hantera erbjudandeobjekt {#create-manage}
+            + Beslutsobjekt {#decision-items}
+               + [Skapa beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/create.md)
+               + [Lista över beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
+               + [Radera beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/delete.md)
+               + [Söka efter beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/lookup.md)
+               + [Uppdatera beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/update.md)
+            + Objektsamlingar{#items-collections}
+               + [Skapa objektsamlingar](using/experience-decisioning/api-reference/items-collections/create.md)
+               + [Ta bort objektsamlingar](using/experience-decisioning/api-reference/items-collections/delete.md)
+               + [Lista över objektsamlingar](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+               + [Söka efter objektsamlingar](using/experience-decisioning/api-reference/items-collections/lookup.md)
+               + [Uppdatera artikelsamlingar](using/experience-decisioning/api-reference/items-collections/update.md)
+            + Markeringsstrategier{#selection-strategies}
+               + [Skapa urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/create.md)
+               + [Ta bort urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/delete.md)
+               + [Sökstrategier för markering](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
+               + [Urvalsstrategilista](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
+               + [Uppdatera urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/update.md)
+            + Rankningsformler {#ranking-formulas}
+               + [Skapa rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/create.md)
+               + [Ta bort rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/delete.md)
+               + [Sök efter rangordningsformler](using/experience-decisioning/api-reference/ranking-formulas/lookup.md)
+               + [Urvalsrankningsformler](using/experience-decisioning/api-reference/ranking-formulas/ranking-formulas-list.md)
+               + [Uppdatera rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/update.md)
+            + Kvalifikationsregler{#eligibility-rules}
+               + [Skapa berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/create.md)
+               + [Ta bort berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/delete.md)
+               + [Uppslagsberättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
+               + [Lista över bidragsregler](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
+               + [Uppdatera berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/update.md)
          + [Leverera erbjudanden med den kodbaserade upplevelsekanalen](using/experience-decisioning/api-reference/deliver.md)
       + Hantera beslutsobjekt {#decision-items}
          + [Konfigurera artikelkatalogen](using/experience-decisioning/catalogs.md)
