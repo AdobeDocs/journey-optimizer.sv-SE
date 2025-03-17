@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, publicering
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-source-git-commit: 2f8c59a3c07dfc772cb62efe5665189d7a176d6f
+source-git-commit: 5af58cd9efc465b30386fad5dc6cd073626c3aed
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -157,9 +157,9 @@ Följ stegen nedan för att definiera inställningarna för den primära sidan.
 
    ![](assets/lp_expiry-date.png)
 
-1. I avsnittet **[!UICONTROL Additional data]** definierar du en eller flera nycklar och deras motsvarande parametervärden. Du kan använda dessa nycklar i innehållet på din primära sida och dina underordnade sidor med [anpassningsredigeraren](../personalization/personalization-build-expressions.md). Läs mer i [det här avsnittet](lp-content.md#use-form-component#use-additional-data).
+<!--1. In the **[!UICONTROL Additional data]** section, define one or more keys and their corresponding parameter values. You will be able to leverage these keys in the content of your primary page and subpages using the [personalization editor](../personalization/personalization-build-expressions.md). Learn more in [this section](lp-content.md#use-form-component#use-additional-data).
 
-   ![](assets/lp_create-lp-additional-data.png)
+    ![](assets/lp_create-lp-additional-data.png)-->
 
 1. Om du valde en eller flera prenumerationslistor när [du designade den primära sidan](design-lp.md) visas de i avsnittet **[!UICONTROL Subscription list]**.
 
