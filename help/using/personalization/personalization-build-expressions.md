@@ -10,9 +10,9 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 47b8308030ca73b3383938a4be025e332265540e
+source-git-commit: 4240f64cd7b6473f589d2324a2ebf87e2c60d394
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1364'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ I personaliseringsredigeringsgränssnittet kan du välja, ordna, anpassa och val
 
 ## Var kan jag lägga till personalisering?
 
-Du kan lägga till personalisering i **[!DNL Journey Optimizer]** i alla fält med ikonen ![Lägg till personalisering](assets/do-not-localize/add-perso-icon.svg) .
+Du kan lägga till personalisering i **[!DNL Journey Optimizer]** i alla fält med ikonen ![Lägg till personalisering](assets/do-not-localize/add-perso-icon.svg) . Expandera avsnitten nedan om du vill ha mer information.
 
-### Meddelanden
++++Meddelanden
 
 I meddelanden kan personalisering läggas till på olika platser i dina meddelanden, till exempel i fältet **[!UICONTROL Subject line]**.
 
@@ -42,28 +42,32 @@ I meddelanden kan personalisering läggas till på olika platser i dina meddelan
 
 Den kan också läggas till i andra avsnitt av ditt innehåll. För [push-meddelanden](../push/push-gs.md) kan till exempel personalisering läggas till i fälten **Rubrik**, **Brödtext**, **Anpassat ljud**, **Badges** och **Anpassade data** .
 
-### E-postdesigner
++++
+
++++e-post Designer
 
 När du redigerar e-postinnehåll i [e-post-Designer](../email/get-started-email-design.md) kan du lägga till anpassning i textblock och i URL-adresser med hjälp av ikonen i det sammanhangsberoende verktygsfältet.
 
 ![](assets/perso_insert.png)
 
-### Erbjudanden
++++
+
++++Erbjudanden
 
 Du kan lägga till personalisering när du använder textinnehåll i **erbjudandenas**-representationer. [Lär dig skapa personaliserade erbjudanden](../offers/offer-library/creating-personalized-offers.md)
 
-### URL:er
++++
+
++++URL:er
 
 I Journey Optimizer kan du också anpassa **URL:er** i ditt meddelande.  Personaliserade URL:er tar mottagarna till specifika sidor på en webbplats eller till en personlig mikrowebbplats, beroende på profilattributen. URL-personalisering är tillgängligt för följande typer av länkar: **Extern länk**, **Avprenumerationslänk** och **Avanmäl dig**.
 
-+++Se exempel på personliga URL:er
+Exempel på personaliserade URL:er:
 
 * `https://www.adobe.com/users/{{profile.person.name.lastName}}`
 * `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`
 * `https://www.adobe.com/usera?uid={{context.journey.technicalProperties.journeyUID}}`
 * `https://www.adobe.com/users?uid={{profile.person.crmid}}&token={{context.token}}`
-
-+++
 
 ![](assets/perso-url.png){width="50%"}
 
@@ -73,9 +77,11 @@ I Journey Optimizer kan du också anpassa **URL:er** i ditt meddelande.  Persona
 >
 >Blanksteg stöds inte i personaliseringstoken som används i URL:er.
 
++++
+
 ## Personalization-källor {#sources}
 
-I den vänstra delen av skärmen visas en domänväljare där du kan välja källa för personalisering. Tillgängliga källor är:
+I navigeringsrutan kan du välja källa för personalisering. Tillgängliga källor är:
 
 * **[!UICONTROL Profile attributes]** : visar alla referenser som är kopplade till profilschemat som beskrivs i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 * **[!UICONTROL Audiences]**: visar alla målgrupper som skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
@@ -93,9 +99,9 @@ I den vänstra delen av skärmen visas en domänväljare där du kan välja käl
 >title="Automatiskt slutförd"
 >abstract="Om du växlar till det här alternativet kan systemet automatiskt föreslå och slutföra kod medan du skriver. Den här funktionen är endast tillgänglig för HTML- och textformat och har stöd för attribut för profil och kontext. Om det är inaktiverat via växlingsknappen kommer redigeraren att tillhandahålla HTML-kod som fylls i automatiskt i stället."
 
-På den centrala arbetsytan skapar du din personaliseringssyntax. Om du vill anpassa meddelandet med ett attribut går du till den vänstra navigeringsrutan och klickar på knappen `+` för att lägga till det i uttrycket.
+På den centrala arbetsytan skapar du din personaliseringssyntax. Om du vill använda ett attribut för att anpassa meddelandet, letar du reda på det i navigeringsrutan och klickar på knappen `+` för att lägga till det i uttrycket.
 
-Med ellipsmenyn bredvid ikonen `+` kan du få mer information om varje attribut och lägga till de attribut som du använder mest i favoriter. Attribut som läggs till i favoriter är tillgängliga från menyn **[!UICONTROL Favorites]** i den vänstra navigeringsrutan.
+Med ellipsmenyn bredvid ikonen `+` kan du få mer information om varje attribut och lägga till de attribut som du använder mest i favoriter. Attribut som läggs till i favoriter är tillgängliga på menyn **[!UICONTROL Favorites]** i navigeringsrutan.
 
 Dessutom kan du definiera standardreservtext som visas om ett profilattribut av strängtyp är tomt. Det gör du genom att klicka på ellipsknappen bredvid attributet och välja **[!UICONTROL Insert with fallback text]**. Skriv den text som ska visas som standard om attributets värde är tomt för en profil och klicka sedan på **[!UICONTROL Add]**.
 
