@@ -8,10 +8,10 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1badd589ee3722b28e9a404a9ffbe53eb0ae7c69
+source-git-commit: 636c1f6e03017f166da70707d03835feceab1a00
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 3%
+source-wordcount: '659'
+ht-degree: 2%
 
 ---
 
@@ -50,6 +50,48 @@ De nya funktionerna i den här versionen beskrivs nedan.
 </tr>
 </tbody>
 </table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Kalendervy för resor (begränsad tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>I en kalendervy kan du nu visualisera alla resereffekter. Den här funktionen lanseras som en begränsad tillgänglighet för en viss kundgrupp.<p>
+<p>Den här ändringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Integrering med Dynamic Media (begränsad tillgänglighet)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Dynamiska medieresurser är nu tillgängliga direkt i Journey Optimizer. Integreringen gör att du kan:
+<ul>
+<li>Hantera resurser centralt med uppdateringar i realtid</li>
+<li>Ändra inställningar för resurser som bredd och höjd direkt</li>
+<li>Anpassa innehållet med bilder med textöverlägg</li>
+<li>Anpassa dynamiska mediamallar genom att uppdatera innehållet och lägga till anpassningsfält</li>
+</ul>
+<p>
+<p>Den här integreringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
 
 
 <table>
@@ -103,3 +145,25 @@ Journey Optimizer personaliseringsredigerare har uppdaterats med nya funktioner:
 ![Video med den nya funktionen i Personalization Editor](assets/do-not-localize/personalization-editor.gif)
 
 Mer information finns i den [detaljerade dokumentationen](../personalization/personalization-build-expressions.md).
+
+
+**Kampanjer**
+
+* Om du väljer en kampanj i kampanjlistan öppnas nu en ruta med information om kampanjen.
+* Nu kan ni kopiera kampanjer från en sandlåda till en annan.
+
+**Personalization**
+
+En ny&quot;Pills&quot;-knapp har skickats till personaliseringsredigeraren. När det här alternativet är aktiverat visas profil- och kontextuella attribut som tabletter, vilket förbättrar läsbarheten för koden.
+
+**Godkännanden**
+
+När du definierar villkoren för en godkännandeprincip kan du nu välja att filtrera efter tagg och/eller objektkategori.
+
+**Kanalkonfiguration**
+
+Nu kan du tilldela enhetliga Adobe Experience Platform-taggar till kanalkonfigurationer. På så sätt kan du enkelt klassificera dem och förbättra sökning och navigering i alla listor.
+
+**Levererbarhet**
+
+Nu kan du delegera underdomäner med DMARC som hanteras från den överordnade sidan.
