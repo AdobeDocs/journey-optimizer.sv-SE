@@ -6,10 +6,10 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 45d51918-1106-4b6b-b383-8ab4d9a4f7af
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: b3fed5a48480647010f59fa471c505b4031b8701
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 4%
+source-wordcount: '283'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
-Du kan visa en lista över alla anpassade erbjudanden genom att utföra en enda GET-förfrågan till API:t [!DNL Offer Library].
+Du kan visa en lista över alla personaliserade erbjudanden genom att utföra en enda GET-begäran till API:t [!DNL Offer Library].
 
 **API-format**
 
@@ -123,6 +123,76 @@ Ett lyckat svar returnerar en lista med personaliserade erbjudanden som finns ti
         "self": {
             "href": "/offers?offer-type=personalized&href={SELF_HREF}",
             "type": "application/json"
+        }
+    }
+}
+```
+
+Utför sidnumrering om flera personaliserade erbjudanden saknas i svaret.
+
+**Svar**
+
+```json
+{
+    "results": [...],
+    "count": 2,
+    "total": 43,
+    "_links": {
+        "self": {
+        "href": "/offers?orderby=-modified&limit=2&offer-type=PERSONALIZED",
+        "type": "application/json"
+        },
+        "next": {
+        "href": "/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED",
+        "type": "application/json"
+        }
+    }
+    }
+```
+
+| Mått | Beskrivning |
+|---------|-------------|
+| `total` | Antalet personaliserade erbjudanden. |
+| `count` | Antalet erbjudanden som returneras i det här svaret. |
+
+Hämta slutpunkten från `_links.next.href`, till exempel `/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED`, och lägg till den i API:t.
+
+**API-format**
+
+```http
+GET /{ENDPOINT_PATH}/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED
+```
+
+```json
+{
+    "results": [...],
+    "count": 2,
+    "total": 43,
+    "_links": {
+        "self": {...},
+        "next": {
+        "href": "/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED",
+        "type": "application/json"
+        }
+    }
+}
+```
+
+Om du inte är på den första sidan och behöver hämta föregående sida med personaliserade erbjudanden använder du värdet `href` från `_links.prev`. Gör en begäran till URL:en om att hämta föregående resultatuppsättning, vilket visas i exemplet nedan.
+
+**Svar**
+
+```json
+{
+    "results": [...],
+    "count": 2,
+    "total": 43,
+    "_links": {
+        "self": {...},
+        "next": {...},
+        "prev": {
+        "href": "/offers?orderby=-modified&limit=2&start={TIMESTAMP}&offer-type=PERSONALIZED",
+        "type": "application/json"
         }
     }
 }
