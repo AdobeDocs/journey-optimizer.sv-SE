@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: d2039ce0efdefaa0708a790135599d2ce97e48f1
+source-git-commit: c4961af2653e8135c72dd57997131c56f54b24a5
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '713'
 ht-degree: 2%
 
 ---
@@ -167,3 +167,7 @@ Nu kan du tilldela enhetliga Adobe Experience Platform-taggar till kanalkonfigur
 **Levererbarhet**
 
 Nu kan du delegera underdomäner med DMARC som hanteras från den överordnade sidan.
+
+**Affärsregler**
+
+Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
