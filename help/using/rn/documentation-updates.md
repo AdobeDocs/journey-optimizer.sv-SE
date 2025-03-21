@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 4407961654a1d55bf20d8091447dc2f1ef703ea3
+source-git-commit: 6acfe14469a74216b196e4d5ee059839aea32226
 workflow-type: tm+mt
-source-wordcount: '6214'
+source-wordcount: '6325'
 ht-degree: 12%
 
 ---
@@ -23,11 +23,19 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 * Sidan om Audience Qualification-händelser har uppdaterats med nya rekommendationer. [Läs mer](../building-journeys/audience-qualification-events.md)
 * Funktionen för felsökning av anpassade åtgärder är nu tillgänglig för alla kunder (GA). [Läs mer](../action/troubleshoot-custom-action.md)
+* Datahygien är nu Data Lifecycle i produktanvändargränssnittet. Dokumentationen har uppdaterats för att återspegla den här ändringen. [Läs mer](../privacy/data-hygiene.md)
+* De inbyggda behörigheterna för Landing Page som saknas har lagts till i dokumentationen. [Läs mer](../administration/ootb-permissions.md)
+* En anteckning har lagts till om schemaläggning av återkommande kampanjer. [Läs mer](../campaigns/create-campaign.md)
+* Avsnittet om att infoga länkar och aktivera spårning i ett e-postmeddelande har uppdaterats och omorganiserats. [Läs mer](../email/message-tracking.md)
+* Avsnittet om personaliseringsfunktioner i Adobe Journey Optimizer har omstrukturerats och förbättrats. [Läs mer](../personalization/personalize.md)
+* API:t för beslutshantering för att lista personaliserade erbjudanden har uppdaterats med ett exempel för att utföra paginering om flera personaliserade erbjudanden saknas i svaret. [Läs mer](../offers/api-reference/offers-api/personalized-offers/offers-list.md)
+
+
 
 ## Februari 2025 {#feb-2025}
 
-* Åtgärdsutkast för läsning av målgrupper har uppdaterats för att ange att endast en aktivitet kan användas under en resa och att endast en målgrupp kan nås. [Läs mer](../building-journeys/read-audience.md)
-* Resegarantier när kampanjaktiviteter används har uppdaterats. [Läs mer](../start/guardrails.md#ac-g)
+* Åtgärdsprofilerna för läsning av målgrupp har uppdaterats för att ange att endast en aktivitet kan användas under en resa och att endast en målgrupp kan nås. [Läs mer](../building-journeys/read-audience.md)
+* Reservoarerna för resan när Adobe Campaign används har uppdaterats. [Läs mer](../start/guardrails.md#ac-g)
 * Stegen för att skapa dina första resor har beskrivits och länkar till dokumentationsavsnitt har lagts till. [Läs mer](../building-journeys/journey-gs.md)
 * Det finns nu en ny sida med information om kontrollpanelen för resan och användargränssnittet för filtrering. [Läs mer](../building-journeys/journey-ui.md)
 * Dokumentationen för **[!UICONTROL Send-Time optimization]** och dess relaterade vanliga frågor har uppdaterats, förbättrats och flyttats till en ny dedikerad sida. [Läs mer](../building-journeys/send-time-optimization.md)
