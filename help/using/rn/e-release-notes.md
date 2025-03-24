@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: c4961af2653e8135c72dd57997131c56f54b24a5
+source-git-commit: 666ad2af2b6a2206e6c43b2f56cbacb5c164b152
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '738'
 ht-degree: 2%
 
 ---
@@ -171,3 +171,7 @@ Nu kan du delegera underdomäner med DMARC som hanteras från den överordnade s
 **Affärsregler**
 
 Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+
+**Innehållshantering**
+
+För att enkelt hantera fragment och innehållsmallar kan du nu använda mappar för att ordna dem mer effektivt i en strukturerad hierarki.
