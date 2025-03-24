@@ -5,9 +5,9 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: 98cc28a942626576666a3f0f3cc8ee7b50c2354c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,9 @@ Du kan också skicka testleveranser av e-postmeddelanden till specifika mottagar
 
 >[!CAUTION]
 >
->När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalization baserat på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsexemplet](../personalization/personalization-use-case.md).
+>* När du förhandsgranskar ett meddelande eller skickar korrektur visas endast profilpersonaliseringsdata. Personalization baserat på kontextdata, t.ex. händelseinformation, kan bara testas i samband med en resa. Lär dig hur du testar personalisering i [det här användningsexemplet](../personalization/personalization-use-case.md).
+>
+>* När du simulerar eller återger korrektur för e-postmeddelanden som innehåller flera villkorliga varianter kan Journey Optimizer kräva mer bearbetningstid. Om du får timeout eller felmeddelanden kan du minska det totala antalet varianter eller förenkla villkorliga regler. Läs mer om villkorligt innehåll på [den här sidan](../personalization/dynamic-content.md).
 
 Alla dessa åtgärder kan utföras med knappen **[!UICONTROL Simulate Content]**, som du kommer åt från redigeringsfönstret i ditt meddelande, eller från e-post- och webbdesigners för e-post- och webbkanalerna.
 

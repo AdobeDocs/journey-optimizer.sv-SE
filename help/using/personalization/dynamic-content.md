@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, dynamiskt innehåll
 exl-id: 639ad7df-0d0f-4c9b-95d1-f3101267aae2
-source-git-commit: 78c1464ccddec75e4827cbb1877d8fab5ac08b90
+source-git-commit: 98cc28a942626576666a3f0f3cc8ee7b50c2354c
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -87,9 +87,13 @@ Stegen för att skapa varianter av en innehållskomponent i e-post-Designer är 
 1. Lägg till så många varianter som behövs för innehållskomponenten. Du kan när som helst växla mellan de olika varianterna för att kontrollera hur innehållskomponenten visas beroende på villkorsreglerna.
 
    >[!NOTE]
-   >Om inga av reglerna som definieras i varianterna uppfylls när meddelandet skickas, kommer innehållskomponenten att visa innehållet som definierats i **[!UICONTROL Default variant]**.
    >
-   >Villkorligt innehåll utvärderas mot kopplade regler i den ordning som varianterna visas. Standardvarianten visas alltid om inga andra villkor uppfylls.
+   >* Om inga av reglerna som definieras i varianterna uppfylls när meddelandet skickas, kommer innehållskomponenten att visa innehållet som definierats i **[!UICONTROL Default variant]**.
+   >
+   >* Villkorligt innehåll utvärderas mot kopplade regler i den ordning som varianterna visas. Standardvarianten visas alltid om inga andra villkor uppfylls.
+   >
+   >* När du simulerar eller återger korrektur för e-postmeddelanden som innehåller flera villkorliga varianter kan Journey Optimizer kräva mer bearbetningstid. Om du får timeout eller felmeddelanden kan du minska det totala antalet varianter eller förenkla villkorliga regler. Läs mer om hur du testar ditt innehåll på [den här sidan](../content-management/preview-test.md).
+
 
 1. Om du vill ta bort en variant klickar du på ikonen Fler åtgärder bredvid den önskade varianten och väljer **[!UICONTROL Delete]**.
 
