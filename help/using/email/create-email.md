@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
+source-git-commit: e052e7bfea5381583ad8d2d7b785d44486cb9975
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '893'
 ht-degree: 2%
 
 ---
@@ -89,6 +89,12 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
    ![](assets/email_designer_edit_content_header.png)
 
 1. Lägg till en ämnesrad för meddelandet. Klicka på ikonen **[!UICONTROL Open personalization dialog]** om du vill konfigurera och anpassa ämnesraden med personaliseringsredigeraren. [Läs mer](../personalization/personalization-build-expressions.md)
+
+   >[!NOTE]
+   >
+   >* Ämnesraden är obligatorisk.
+   >
+   >* Ämnesraden får inte innehålla radbrytningar.
 
 1. Klicka på knappen **[!UICONTROL Edit email body]** för att komma åt e-post-Designer och börja skapa ditt innehåll. [Läs mer](get-started-email-design.md)
 
