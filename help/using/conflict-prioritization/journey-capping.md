@@ -5,9 +5,9 @@ role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
 exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
-source-git-commit: 1e494c6e0b3dd45a5bef372b43c25928a2932355
+source-git-commit: 4c1c0b17b6dc1d5b2e35cb9f250c82f0d5d31faa
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
      >[!AVAILABILITY]
      >
-     >Varaktigheten&quot;Daglig&quot; är endast tillgänglig vid behov. Kontakta din Adobe-representant för att få åtkomst.
+     >Varaktigheten&quot;Daglig&quot; är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
      I det här exemplet vill vi begränsa profiler från att ange fler än fem resor per månad.
 
