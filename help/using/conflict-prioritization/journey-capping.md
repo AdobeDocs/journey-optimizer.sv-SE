@@ -5,9 +5,9 @@ role: User
 level: Beginner
 badge: label="Begränsad tillgänglighet"
 exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
-source-git-commit: 53d319454d47260c44a457ed547a4f3c6b33592c
+source-git-commit: 1e494c6e0b3dd45a5bef372b43c25928a2932355
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Färttappning hjälper dig att begränsa antalet resor som en profil kan registr
 
 Båda typerna av resefackning använder prioritetspoäng till godtyckliga poster.
 
+>[!AVAILABILITY]
+>
+>Domänregeluppsättningarna **Resurs** är bara tillgängliga för en begränsad uppsättning användare (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+
 ➡️ [Upptäck den här funktionen i videon](#video)
 
 ## Skapa en regel för spärrning av resan {#create-rule}
@@ -41,7 +45,7 @@ Båda typerna av resefackning använder prioritetspoäng till godtyckliga poster
 
 Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
-1. Gå till menyn **[!UICONTROL Business rules (Beta)]** för att komma åt lagret för regeluppsättningar.
+1. Gå till menyn **[!UICONTROL Business rules]** för att komma åt lagret för regeluppsättningar.
 
 1. Välj den regeluppsättning där du vill lägga till begränsningsregeln eller skapa en ny regeluppsättning:
 

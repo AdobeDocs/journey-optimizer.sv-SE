@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 53d319454d47260c44a457ed547a4f3c6b33592c
+source-git-commit: 1e494c6e0b3dd45a5bef372b43c25928a2932355
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1963'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjm
 
 ### Globala och anpassade regeluppsättningar {#global-custom}
 
-När du använder regeluppsättningar för första gången från menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]** skapas en standardregeluppsättning och är aktiv: **Global standardregeluppsättning**.
+När du använder regeluppsättningar för första gången från menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** skapas en standardregeluppsättning och är aktiv: **Global standardregeluppsättning**.
 
 Den här regeluppsättningen innehåller globala regler som du kan tillämpa för att styra hur ofta användare får meddelanden i en eller flera kanaler, på samma sätt som nuvarande affärsregler fungerar. Alla regler som definieras i den här regeluppsättningen gäller för alla valda kanaler, oavsett om kommunikationen skickas från en resa eller en kampanj. [Lär dig arbeta med affärsregler](../configuration/rule-sets.md)
 
@@ -55,6 +55,10 @@ När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättni
 * **Kanal**-domän: tillämpa regler för begränsning för kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag.
 * **Resa**-domän: Använd regler för start och begränsning av samtidighet på en resa. Ange till exempel inte profiler i mer än en resa samtidigt.
 
+>[!AVAILABILITY]
+>
+>Domänregeluppsättningarna **Kanal** är tillgängliga för alla användare, men domänregeluppsättningarna **Resurs** är bara tillgängliga för en begränsad uppsättning användare (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+
 ## Skapa din första anpassade regeluppsättning {#create-rule-set}
 
 ### Skapa regeluppsättningen och välj dess domän {#create}
@@ -62,6 +66,8 @@ När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättni
 Följ stegen nedan för att skapa en regeluppsättning.
 
 >[!NOTE]
+>
+>Om du vill skapa en regeluppsättning måste du ha behörigheten `Manage Messages Presets`. [Läs mer om användarhantering](../administration/permissions-overview.md)
 >
 >Du kan skapa upp till tre lokala regeluppsättningar för kanaldomänen och upp till 5 lokala regeluppsättningar för resedomänen.
 
@@ -74,6 +80,10 @@ Följ stegen nedan för att skapa en regeluppsättning.
 1. Välj regeluppsättningens domän. Domänen tillåter dig att ange om regeluppsättningen ska innehålla regler för appning som är specifika för kommunikationskanaler eller resor. [Läs mer om regler för att appa kanaler och resor](#domain)
 
    ![](assets/rule-sets-create.png)
+
+   >[!AVAILABILITY]
+   >
+   >Domänregeluppsättningarna **Kanal** är tillgängliga för alla användare, men domänregeluppsättningarna **Resurs** är bara tillgängliga för en begränsad uppsättning användare (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -208,7 +218,7 @@ Dess status ändras till **[!UICONTROL Inactive]** och regeln gäller inte för 
 
 ## Få åtkomst till och hantera regeluppsättningar {#access-rule-sets}
 
-Alla skapade regeluppsättningar visas på menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules (Beta)]**. De sorteras efter senaste ändringsdatum.
+Alla skapade regeluppsättningar visas på menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules]**. De sorteras efter senaste ändringsdatum.
 
 ![](assets/rule-sets-list.png)
 
