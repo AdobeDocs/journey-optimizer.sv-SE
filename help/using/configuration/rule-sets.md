@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 1e494c6e0b3dd45a5bef372b43c25928a2932355
+source-git-commit: 74bb16aa01c442ad9d427cdd2c79c9e8b7b8a394
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1974'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,20 @@ Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjm
 
 ➡️ [Upptäck den här funktionen i videon](#video)
 
+### Behörigheter {#permissions-frequency-rules}
+
+Om du vill arbeta med affärsregler behöver du följande behörigheter:
+
+* **[!UICONTROL View Frequency Rules]**: Få åtkomst till och visa affärsregler.
+* **[!UICONTROL Manage Frequency Rules]**: Skapa, redigera eller ta bort affärsregler.
+
+Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
+
 ### Globala och anpassade regeluppsättningar {#global-custom}
 
 När du använder regeluppsättningar för första gången från menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** skapas en standardregeluppsättning och är aktiv: **Global standardregeluppsättning**.
 
-Den här regeluppsättningen innehåller globala regler som du kan tillämpa för att styra hur ofta användare får meddelanden i en eller flera kanaler, på samma sätt som nuvarande affärsregler fungerar. Alla regler som definieras i den här regeluppsättningen gäller för alla valda kanaler, oavsett om kommunikationen skickas från en resa eller en kampanj. [Lär dig arbeta med affärsregler](../configuration/rule-sets.md)
+Den här regeluppsättningen innehåller globala regler som du kan tillämpa för att styra hur ofta användare tar emot meddelanden i en eller flera kanaler, på samma sätt som nuvarande affärsregler fungerar. Alla regler som definieras i den här regeluppsättningen gäller för alla valda kanaler, oavsett om kommunikationen skickas från en resa eller en kampanj. [Lär dig arbeta med affärsregler](../configuration/rule-sets.md)
 
 Utöver den här regeluppsättningen Global standardregeluppsättning kan du skapa **anpassade regeluppsättningar** som du kan tillämpa på alla kampanjer för att begränsa antalet meddelanden som skickas inom kampanjen. [Lär dig skapa anpassade regeluppsättningar](#create)
 
@@ -66,8 +75,6 @@ När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättni
 Följ stegen nedan för att skapa en regeluppsättning.
 
 >[!NOTE]
->
->Om du vill skapa en regeluppsättning måste du ha behörigheten `Manage Messages Presets`. [Läs mer om användarhantering](../administration/permissions-overview.md)
 >
 >Du kan skapa upp till tre lokala regeluppsättningar för kanaldomänen och upp till 5 lokala regeluppsättningar för resedomänen.
 
@@ -141,7 +148,7 @@ Vilka parametrar som är tillgängliga för regeln beror på vilken regeluppsät
 
    * **[!UICONTROL Monthly]**: Frekvensgränsen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
-   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:{59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet är oberoende av hur regeln skapas. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:{59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
 
    * **[!UICONTROL Daily]**: Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställs till 0 i början av nästa dag.
 
@@ -151,7 +158,7 @@ Vilka parametrar som är tillgängliga för regeln beror på vilken regeluppsät
 
    Observera att profilräknarvärdet uppdateras när kommunikationen har skickats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt).
 
-   Detta gäller om en mottagare får två kommunikationer nära ihop. Vi föreslår att kommunikationen ska hållas isär med minst två timmar om det är möjligt, så att mottagaren får tillräckligt med tid för att kunna ta emot kommunikationen och räknarvärdet för att kunna uppdatera.
+   Detta gäller om en mottagare får två kommunikationer nära ihop. Vi föreslår att kommunikationen ska hållas isär med minst två timmar om det är möjligt, så att mottagaren får tillräckligt med tid för att kunna ta emot kommunikationen och räkningsvärdet för att kunna uppdatera den.
 
 1. Ange begränsningen för din regel, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad, vecka eller dag enligt vad du väljer ovan.
 
@@ -237,16 +244,6 @@ För varje regel i regeluppsättningen kan du med knappen **[!UICONTROL More act
 * Ta bort regeln
 
 ![](assets/rule-set-example-rules.png)
-
-<!--### Permissions{#permissions-frequency-rules}
-
-To access, create, edit or delete message frequency rules, you must have the **[!UICONTROL Manage frequency rules]** permission. 
-
-Users with the **[!UICONTROL View frequency rules]** permission are able to view rules, but not to modify or delete them.
-
-![](assets/message-rules-access.png)
-
-Learn more about permissions in [this section](../administration/high-low-permissions.md).-->
 
 ## Använd regeluppsättningar för ett meddelande eller en resa {#apply-frequency-rule}
 
