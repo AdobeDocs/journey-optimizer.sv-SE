@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 666ad2af2b6a2206e6c43b2f56cbacb5c164b152
+source-git-commit: 80376fda31f1e24ed3443e6ae1c5bde7ca700311
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '768'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,22 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tr>
 <td>
 <p>Tack vare Adobe Express-integrationen i Adobe Journey Optimizer kan du använda Adobe Express redigeringsverktyg direkt när du skapar innehåll. Du kan ändra storlek på, ta bort bakgrunder, beskära och konvertera resurser till JPEG eller PNG.<p>
+<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Resemått</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med hjälp av resemätningar kan ni mäta effekten av era aktiviteter i de mätvärden som är viktigast för ert företag och få tydligare insikter i hur ni presterar.</p>
 <!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
 </td>
 </tr>
