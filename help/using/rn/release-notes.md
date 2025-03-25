@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 666ad2af2b6a2206e6c43b2f56cbacb5c164b152
+source-git-commit: d023eaba1205ea8bfb402b195bfd341dae4f59d3
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 5%
+source-wordcount: '1410'
+ht-degree: 4%
 
 ---
 
@@ -82,7 +82,6 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <ul>
 <li>Hantera resurser centralt med uppdateringar i realtid</li>
 <li>Ändra inställningar för resurser som bredd och höjd direkt</li>
-<li>Anpassa innehållet med bilder med textöverlägg</li>
 <li>Anpassa dynamiska mediamallar genom att uppdatera innehållet och lägga till anpassningsfält</li>
 </ul>
 <p>
@@ -135,6 +134,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 **Personalization-redigerare** (tillgänglighetsdatum: 12 mars)
 
 Journey Optimizer personaliseringsredigerare har uppdaterats med nya funktioner:
+
 * **Uppdaterad design för kodredigeraren** - ett renare och modernt gränssnitt för förbättrad användbarhet och fokus.
 * **Sök och ersätt** - Funktioner har lagts till för att snabbt hitta och ersätta innehåll i redigeraren.
 * **Stöd för Ångra och Gör om** - Gör det enkelt att ångra eller göra om ändringar.
@@ -174,7 +174,7 @@ Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchse
 
 **Innehållshantering**
 
-För att enkelt hantera fragment och innehållsmallar kan du nu använda mappar för att ordna dem mer effektivt i en strukturerad hierarki.
+För att enkelt hantera fragment och innehållsmallar kan du nu använda mappar för att ordna dem mer effektivt i en strukturerad hierarki. Den här förbättringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 
 ## Versionsinformation 25 februari {#25-02-rn}
