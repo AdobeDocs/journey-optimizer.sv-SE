@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 7475debd0e6b751725e5b5d7c2efa4b8b9e01a15
+source-git-commit: 41448cfa8efc4a7b74b0a490f02e53efdbc0a2e7
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2457'
 ht-degree: 0%
 
 ---
@@ -22,12 +22,6 @@ Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL 
 Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 Du måste också känna till [Guardsändningar för kundprofildata i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} innan du börjar.
-
-
->[!NOTE]
->
->I sällsynta fall kan tillfälliga avbrott i en viss region leda till att giltiga profiler utesluts från resor eller att felaktigt markerade e-postmeddelanden markeras som studsar. När tjänsterna har återställts kontrollerar du reseloggarna på nytt, kontrollerar tillståndsprofilfälten och publicerar sedan resan på nytt om det behövs. Om ett ISP-fel inträffar bör du lära dig hur du tar bort profiler från listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md#remove-from-suppression-list).
->
 
 ## Webbläsare som stöds {#browsers}
 
@@ -44,12 +38,21 @@ Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en
 
 ## Kanaler, skyddsräcken {#channel-guardrails}
 
+>[!NOTE]
+>
+>I sällsynta fall kan tillfälliga avbrott i en viss region leda till att giltiga profiler utesluts från resor eller att felaktigt markerade e-postmeddelanden markeras som studsar. När tjänsterna har återställts kontrollerar du reseloggarna på nytt, kontrollerar tillståndsprofilfälten och publicerar sedan resan på nytt om det behövs. Om ett ISP-fel inträffar bör du lära dig hur du tar bort profiler från listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md#remove-from-suppression-list).
+>
+
 ### E-postskyddsutkast {#message-guardrails}
+
+Följande skyddsutkast gäller för [e-postkanalen](../email/get-started-email.md):
 
 * Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
 * Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
 
 ### SMS-skyddsräcken {#sms-guardrails}
+
+Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 * Mediefiler för MMS kan inkluderas via en URL som stöds. Kontrollera att mediefilen överförs separat.
 * Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
@@ -57,7 +60,7 @@ Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en
 
 ### Skyddsutkast för webbkanal {#web-guardrails}
 
-Webbkampanjer för [!DNL Journey Optimizer] har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
+[!DNL Journey Optimizer] [webbkampanjer](../web/get-started-web.md) har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
 Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
@@ -66,6 +69,8 @@ Licensvärden för varje paket visas på sidan [Journey Optimizer Product Descri
 Om du vill använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] och leverera kodinnehållets nyttolast som kan användas av dina program följer du de krav som anges på [den här sidan](../code-based/code-based-prerequisites.md).
 
 ## Garantier för landningssidor {#lp-guardrails}
+
+Följande skyddsutkast gäller för [landningssidorna](../landing-pages/get-started-lp.md):
 
 * Endast en **Form**-komponent kan användas på en enda primär sida.
 * Komponenten **Form** kan inte användas i undersidor.
@@ -78,7 +83,11 @@ Som standard kan du i [!DNL Journey Optimizer] delegera upp till 10 underdomäne
 
 Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
 
+Läs mer om domändelegering på [den här sidan](../configuration/delegate-subdomain.md).
+
 ## Fragmentskyddsräcken {#fragments-guardrails}
+
+Följande skyddsutkast gäller för [fragment](../content-management/fragments.md):
 
 * Visuella fragment är bara tillgängliga för e-postkanalen.
 * Uttrycksfragment är inte tillgängliga för kanalen i appen.
@@ -86,6 +95,8 @@ Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. K
 ## Målgrupper och skyddsräcken {#audience}
 
 Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
+
+Läs mer om målgruppskompositioner i [den här sidan](../audience/get-started-audience-orchestration.md).
 
 ## Beslutsfattare och beslutsföringsgarantier {#decisioning-guardrails}
 
@@ -108,12 +119,16 @@ Garantier och begränsningar som ska beaktas när man arbetar med beslut eller b
 
 ### Allmänna åtgärder {#general-actions-g}
 
+Följande skyddsutkast gäller för [åtgärderna](../building-journeys/about-journey-activities.md) på dina resor:
+
 * Tre försök utförs systematiskt om ett fel uppstår. Du kan inte justera antalet försök enligt det mottagna felmeddelandet. Alla HTTP-fel utom HTTP 401, 403 och 404 anges på nytt.
 * Den inbyggda **Reaction**-händelsen gör att du kan reagera på åtgärder som inte är i kartong. Läs mer på [den här sidan](../building-journeys/reaction-events.md). Om du vill reagera på ett meddelande som skickas via en anpassad åtgärd måste du konfigurera en dedikerad händelse.
 * Du kan inte placera två åtgärder parallellt. Du måste lägga till dem en i taget.
 * En profil kan inte finnas flera gånger på samma resa samtidigt. Om återinträde är aktiverat kan en profil återansluta en resa, men kan inte göra det förrän den tidigare instansen av resan har avslutats helt. [Läs mer](../building-journeys/end-journey.md)
 
 ### Reseversioner {#journey-versions-g}
+
+Följande skyddsutkast gäller för [reseversionerna](../start/user-interface.md):
 
 * En resa som börjar med en händelseaktivitet i v1 kan inte börja med något annat än en händelse i andra versioner. Du kan inte starta en resa med en **målgruppskvalificeringshändelse**.
 * En resa som börjar med en **målgruppskvalifikation**-aktivitet i v1 måste alltid börja med en **målgruppskompetens** i andra versioner.
@@ -123,6 +138,8 @@ Garantier och begränsningar som ska beaktas när man arbetar med beslut eller b
 * Du kan inte skapa en ny version av en läsande målgruppsresa med inkrementell läsning. Du måste duplicera resan.
 
 ### Anpassade åtgärder {#custom-actions-g}
+
+Följande skyddsutkast gäller för [anpassade åtgärder](../action/action.md) på dina resor:
 
 * En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder, per värd och per sandlåda. Se [den här sidan](../action/about-custom-action-configuration.md). Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste tänka på detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar.
@@ -139,6 +156,8 @@ Garantier och begränsningar som ska beaktas när man arbetar med beslut eller b
 
 ### Händelser {#events-g}
 
+Följande skyddsutkast gäller för [händelserna](../event/about-events.md) på dina resor:
+
 * Journey Optimizer har stöd för en toppvolym på 5 000 inkommande resehändelser per sekund.
 * Händelseutlösta resor kan ta upp till fem minuter för att behandla den första åtgärden i resan.
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
@@ -147,6 +166,8 @@ Garantier och begränsningar som ska beaktas när man arbetar med beslut eller b
 * Journey Optimizer kräver att händelser direktuppspelas till datainsamlingens bastjänst (DCCS) för att kunna utlösa en resa. Händelser som är inkapslade i batch eller händelser från interna Journey Optimizer-datauppsättningar (meddelandefeedback, e-postspårning osv.) kan inte användas för att utlösa en resa. I de fall där du inte kan få direktuppspelade händelser måste du skapa en målgrupp baserat på dessa händelser och använda aktiviteten **Läs målgrupp** i stället. Målgruppskompetens kan användas tekniskt, men rekommenderas inte eftersom den kan orsaka efterföljande utmaningar baserat på de åtgärder som används.
 
 ### Datakällor {#data-sources-g}
+
+Följande skyddsutkast gäller för [datakällorna](../datasource/about-data-sources.md) på dina resor:
 
 * Externa datakällor kan utnyttjas inom en kundresa för att söka efter externa data i realtid. Dessa källor måste kunna användas via REST API, ha stöd för JSON och kunna hantera antalet begäranden.
 * Interna Adobe-adresser (`.adobe.*`) tillåts inte i URL:er och API:er.
@@ -173,7 +194,7 @@ Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**.
 
 ### Läs målgrupp {#read-segment-g}
 
-Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Read Audience]**:
+Följande skyddsutkast gäller för [Läs målgruppsaktiviteten](../building-journeys/read-audience.md):
 
 * Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
 * För resor som använder en **Läs målgrupp**-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med **Läs målgrupp**, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tid genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter.
@@ -185,15 +206,19 @@ Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Read Audience]**:
 
 ### Målgruppskvalifikation {#audience-qualif-g}
 
-Följande skyddsutkast gäller för aktiviteten **[!UICONTROL Audience Qualification]**:
+Följande skyddsutkast gäller för [Målgruppskvalificering](../building-journeys/audience-qualification-events.md)-reseaktiviteten:
 
 * Det går inte att använda aktiviteten Audience-kvalificering med Adobe Campaign-aktiviteter.
 
 ### Uttrycksredigerare {#expression-editor}
 
+Följande skyddsutkast gäller för [reseuttrycksredigeraren](../building-journeys/expression/expressionadvanced.md):
+
 * Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Du måste skapa en ny målgrupp och använda ett villkor för målgrupp under resan.
 
 ### Aktivitet i appen {#in-app-activity-limitations}
+
+Följande skyddsutkast gäller för åtgärden **[!UICONTROL In-app message]**. Läs mer om meddelanden i appen på [den här sidan](../in-app/create-in-app.md).
 
 * Den här funktionen är för närvarande inte tillgänglig för vårdkunder.
 

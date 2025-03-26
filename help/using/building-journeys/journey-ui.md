@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
-source-git-commit: 0a7c1ebf01a0aec9f84e86b14df14bbfcd24a7b4
+source-git-commit: 41448cfa8efc4a7b74b0a490f02e53efdbc0a2e7
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1114'
 ht-degree: 3%
 
 ---
@@ -126,6 +126,9 @@ Reseversioner kan stoppas individuellt. Alla versioner av resor har samma namn.
 När du publicerar en ny version av en resa avslutas den tidigare versionen automatiskt och ändras till statusen **Stängd** . Ingen inträde på resan kan ske. Även om du stoppar den senaste versionen förblir den tidigare versionen stängd.
 
 
+>[!NOTE]
+>
+>Särskilda skyddsräcken och begränsningar gäller för versionshantering av resorna. Läs mer på [den här sidan](../start/guardrails.md#journey-versions-journey-versions-g).
 
 ## Duplicera en resa {#duplicate-a-journey}
 
