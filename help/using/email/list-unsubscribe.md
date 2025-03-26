@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
-source-git-commit: b3655506dff97756a59a63d5b8f0c358dc7c7510
+source-git-commit: a36f3dd1b58b2c40a99d9c2820427f710aa87660
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,44 @@ ht-degree: 0%
 
 <!--Do not modify - Legal Review Done -->
 
-När du konfigurerar en ny e-postkanalskonfiguration visas alternativet **[!UICONTROL Enable List-Unsubscribe]** när [du väljer en underdomän](email-settings.md#subdomains-and-ip-pools) i listan.
+När du konfigurerar en ny e-postkanalskonfiguration i [!DNL Adobe Journey Optimizer] visas alternativet **[!UICONTROL Enable List-Unsubscribe]** när du [väljer en underdomän](email-settings.md#subdomains-and-ip-pools) i listan. Den är aktiverad som standard.
 
 ![](assets/preset-list-unsubscribe.png)
 
-## Aktivera avanmälan av lista {#enable-list-unsubscribe}
+En länk för att avbryta prenumerationen eller klicka på knappen som visas bredvid e-postavsändarinformationen. Mottagarna kan också avanmäla sig från sändlistan med ett enda klick.
 
-Det här alternativet är aktiverat som standard för att inkludera en avbruten URL-adress med ett klick i e-posthuvudet, till exempel:
+En länk visas till exempel nedan i Gmail med en klickning för att avbryta prenumerationen:
 
 ![](assets/preset-list-unsubscribe-header.png)
+
+>[!IMPORTANT]
+>
+>Om du vill visa URL:en för att avsluta prenumerationen med ett klick i e-posthuvudet måste mottagarens e-postklient ha stöd för den här funktionen.
+
+Beroende på e-postklienten och inställningarna för att avbryta prenumerationen för e-postkonfigurationen kan du klicka på länken för att avbryta prenumerationen i e-posthuvudet om du vill ha följande effekter:
+
+* När funktionen **Mailto (unsubscribe)** är aktiverad skickas begäran om att avbryta prenumerationen till den standardadress för att avbryta prenumerationen som baseras på den underdomän som du har konfigurerat.
+* När funktionen **Ett klick för att avbryta prenumeration på URL** är aktiverad - eller om du har infogat en URL för att avsluta prenumeration i ditt e-postinnehåll - är mottagaren direkt avanmäld, antingen på kanalnivå eller på ID-nivå (beroende på hur medgivandet är konfigurerat), när mottagaren klickar på den URL för att avbryta prenumerationen (baserat på den underdomän du har konfigurerat).
+
+>[!NOTE]
+>
+>Lär dig hur du hanterar avprenumerationsinställningarna i [det här avsnittet](#enable-list-unsubscribe) nedan.
+
+I båda fallen är motsvarande profil för mottagaren omedelbart avanmäld och valet uppdateras i [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+
+>[!NOTE]
+>
+>I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
+
+## Aktivera avanmälan av lista {#enable-list-unsubscribe}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_preset_unsubscribe"
+>title="Lägg till en avbruten URL i dina e-postmeddelanden"
+>abstract="Aktivera det här alternativet om du automatiskt vill lägga till en URL för att avbryta prenumerationen i e-postrubriken. Du kan också ange en avanmälnings-URL i ett meddelande genom att infoga en länk för avanmälan med ett klick i e-postinnehållet."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="Ange avanmälan med ett klick från e-postinnehållet"
+
+När alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat, om det stöds av mottagarnas e-postklient, innehåller e-posthuvudet både ett mailto och/eller en URL som standard som mottagarna kan använda för att avbryta prenumerationen från din e-postlista.
 
 >[!NOTE]
 >
@@ -38,23 +67,27 @@ Rubriken för att avbryta prenumerationen på List har två alternativ som är a
 
 ![](assets/surface-list-unsubscribe.png){width="80%"}
 
-* En **[!UICONTROL Mailto (unsubscribe)]**-adress, som är den måladress dit begäran om att avbryta prenumerationen dirigeras för automatisk bearbetning.
+* En **[!UICONTROL Mailto (unsubscribe)]**-adress, som är den måladress dit begäran om att avbryta prenumerationen dirigeras för automatisk bearbetning. I [!DNL Journey Optimizer] är e-postadressen för att avbryta prenumerationen den **[!UICONTROL Mailto (unsubscribe)]** standardadress som visas i kanalkonfigurationen, baserat på den [valda underdomänen](email-settings.md#subdomains). <!--With this method, clicking the Unsubscribe link sends a pre-filled email to the unsubscribe address specified in the email header.-->
 
-  I [!DNL Journey Optimizer] är e-postadressen för att avbryta prenumerationen den **[!UICONTROL Mailto (unsubscribe)]** standardadress som visas i kanalkonfigurationen utifrån din [valda underdomän](#subdomains-and-ip-pools). <!--With this method, clicking the Unsubscribe link sends a pre-filled email to the unsubscribe address specified in the email header.-->
-
-* **[!UICONTROL One-click unsubscribe URL]**, som som standard är den enklicksavanmälnings-URL som genereras för att avbryta prenumerationen, baserat på den underdomän som du anger och konfigurerar i kanalkonfigurationsinställningarna. <!--With this method, clicking the Unsubscribe link directly unsubscribes the user, requiring only a single action to unsubscribe.-->
+* **[!UICONTROL One-click unsubscribe URL]**, som som standard är den URL som genereras av en klickning för att avbryta prenumerationen, baserat på den [valda underdomänen](email-settings.md#subdomains). <!--With this method, clicking the Unsubscribe link directly unsubscribes the user, requiring only a single action to unsubscribe.-->
 
 Du kan välja **[!UICONTROL Consent level]** i motsvarande listruta. Den kan vara specifik för kanalen eller för profilens identitet. Baserat på den här inställningen uppdateras medgivandet i [!DNL Adobe Journey Optimizer], antingen på kanalnivå eller på ID-nivå, när en användare avbeställer prenumerationen med hjälp av URL:en för att avbryta prenumerationen i huvudet i ett e-postmeddelande.
 
+## Skyddsutkast och rekommendationer {#list-unsubscribe-guardrails}
+
+Med funktionen för att avbeställa en prenumeration på en lista kan mottagarna enkelt avanmäla sig från din kommunikation. Eftersom inte alla e-postklienter stöder den här länken i e-posthuvudet rekommenderar Adobe att du även lägger till en [länk för att avanmäla dig med ett klick](email-opt-out.md#one-click-opt-out) eller en [länk för att avbryta prenumerationen](email-opt-out.md#add-unsubscribe-link) i e-postmeddelandets brödtext.
+
 Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL One-click unsubscribe URL]** är valfria.
 
-Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen. Om du lägger till en [-klicksavanmälningslänk ](../email/email-opt-out.md#one-click-opt-out) i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat och funktionen **[!UICONTROL One-click Unsubscribe URL]** inte är markerad.
+* Om du har aktiverat alternativet **[!UICONTROL Enable List-Unsubscribe]** i konfigurationsinställningarna för [e-post](email-settings.md) rekommenderar vi att du aktiverar båda metoderna - **Mailto (unsubscribe)** och **One-Click Unsubscribe URL**. Alla e-postklienter har inte stöd för HTTP-metoden. Med funktionen för att avbryta prenumeration på e-postlista kan du välja ett alternativ, ditt avsändarrykte kan skyddas bättre och alla mottagare kan använda funktionen för att avbryta prenumerationen.
 
-![](assets/preset-list-unsubscribe-opt-out-url.png)
+* Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen.
 
->[!NOTE]
->
->Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet och standardinställningen **[!UICONTROL One-click unsubscribe URL]** inte är markerad i kanalkonfigurationsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumeration av lista.
+   * Om du lägger till en [-klicksavanmälningslänk ](../email/email-opt-out.md#one-click-opt-out) i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat och funktionen **[!UICONTROL One-click Unsubscribe URL]** inte är markerad.
+
+     ![](assets/preset-list-unsubscribe-opt-out-url.png)
+
+   * Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet och standardinställningen **[!UICONTROL One-click unsubscribe URL]** inte är markerad i kanalkonfigurationsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumeration av lista.
 
 Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
 
@@ -65,9 +98,16 @@ Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina m
 >title="Definiera hur data för att avbryta prenumerationen hanteras"
 >abstract="**Adobe hanterat**: Medgivandedata hanteras av dig i Adobe-systemet.<br>**Kundhanterad**: Medgivandedata hanteras av dig i ett externt system och ingen synkronisering av medgivandedata uppdateras i Adobe-systemet såvida det inte initieras av dig."
 
+>[!CONTEXTUALHELP]
+>id="ajo_email_config_unsubscribe_custom_url"
+>title="Ange en egen adress för att avsluta prenumerationen med ett klick"
+>abstract="**En-klicknings-URL** för att avbryta prenumerationen måste använda metoden POST-begäran."
+
 Om du hanterar samtycke utanför Adobe väljer du alternativet **[!UICONTROL Customer managed]** för att ange en anpassad e-postadress för att avbryta prenumerationen och en egen adress för att avsluta prenumerationen med ett enda klick.
 
 ![](assets/surface-list-unsubscribe-custom.png){width="80%"}
+
+**[!UICONTROL One-click Unsubscribe URL]** måste vara POST-URL.
 
 >[!WARNING]
 >
@@ -75,7 +115,7 @@ Om du hanterar samtycke utanför Adobe väljer du alternativet **[!UICONTROL Cus
 
 ### Konfigurera dekrypterings-API {#configure-decrypt-api}
 
-Om du har markerat alternativet **[!UICONTROL Customer managed]** och anger anpassade slutpunkter och använder dem i en kampanj eller resa, lägger [!DNL Journey Optimizer] till vissa standardprofilspecifika parametrar i medgivandeuppdateringshändelsen <!--sent to the custom endpoint --> när dina mottagare klickar på länken Avbeställ.
+Om du har markerat alternativet **[!UICONTROL Customer managed]** och anger anpassade slutpunkter och använder dem i en kampanj eller resa, lägger [!DNL Journey Optimizer] till vissa standardprofilspecifika parametrar i medgivandeuppdateringshändelsen <!--sent to the custom endpoint --> när mottagarna klickar på länken för att avbryta prenumerationen.
 
 Dessa parametrar skickas till slutpunkten på ett krypterat sätt. Det externa tillståndssystemet måste därför implementera ett specifikt API via [Adobe Developer](https://developer.adobe.com){target="_blank"} för att dekryptera de parametrar som skickas av Adobe.
 
@@ -104,6 +144,28 @@ Huvudkrav:
 * x-gw-ims-org-id
 * behörighet (användartoken från ditt tekniska konto)
 
+Nedan visas exempelparametrar och samtycke:
+
+| Frågeparameter | Exempel på nyttolast |
+|---------|----------|
+| pid | {<br>&quot;pid&quot; : &quot;514273041546020095851529937068211571&quot;,<br>&quot;pns&quot; : &quot;CRMID&quot;,<br> 2}&quot;e&quot;    :&quot;john@google.com&quot;,<br>&quot;ens&quot; :&quot;Email&quot;,<br>} |
+| parametrar | {<br>&quot;m&quot; : &quot;messageExecutionId&quot;,<br>&quot;ci&quot; : &quot;campaignId&quot;,<br>&quot;jv&quot; : &quot;travelVersionId&quot;,<br>&quot;ja&quot; : &quot;travelActionId&quot;,<br>&quot;s&quot; : &quot;sandboxId&quot;,<br>&quot;us&quot; : &quot;unsubscribeScope&quot;<br>} |
+
+Samtyckessvar:
+
+```
+{
+    "profileNameSpace": " CRMID ",
+    "profileId": "5142733041546020095851529937068211571",
+    "emailAddress": "john@google.com",
+    "emailNameSpace": "Email",
+    "sandboxId": "sandboxId",
+    "optOutLevel": "channel",
+    "channelType": "email",
+    "timestamp": "2024-11-26T14:25:09.316930Z"
+}
+```
+
 +++
 
 +++ Mailto (avsluta prenumeration)
@@ -125,5 +187,26 @@ Huvudkrav:
 * x-api-key
 * x-gw-ims-org-id
 * behörighet (användartoken från ditt tekniska konto)
+
+Nedan visas exempelparametrar och samtycke:
+
+| Frågeparameter | Exempel på nyttolast |
+|---------|----------|
+| emailParams | {<br>&quot;p&quot; : &quot;profileId&quot;,<br>&quot;pn&quot; : &quot;profileNamespace&quot;,<br>&quot;en&quot; : &quot;emailNamespace&quot;,<br>&quot;ci&quot; : &quot;campaignId&quot;,<br>&quot;jv&quot; : &quot;travelVersionId&quot;,<br>&quot;ja&quot; : &quot;travelActionId&quot;,<br>&quot;si&quot; : &quot;sandboxId&quot;,<br>&quot;us&quot;: &quot;unsubscribeScope&quot;<br> |
+
+Samtyckessvar:
+
+```
+{
+    "profileNameSpace": " CRMID ",
+    "profileId": "5142733041546020095851529937068211571",
+    "emailAddress": "john@google.com",
+    "emailNameSpace": "Email",
+    "sandboxId": "sandboxId",
+    "optOutLevel": "channel",
+    "channelType": "email",
+    "timestamp": "2024-11-26T14:25:09.316930Z"
+}
+```
 
 +++

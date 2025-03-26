@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
+source-git-commit: a36f3dd1b58b2c40a99d9c2820427f710aa87660
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -41,51 +41,7 @@ När en mottagare klickar på länken för avanmälan med ett klick behandlas mo
 
 ### Avbeställ en URL med ett klick i e-postrubriken {#unsubscribe-header}
 
-<!--Do not modify - Legal Review Done -->
-
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_unsubscribe"
->title="Lägg till en avbruten URL i dina e-postmeddelanden"
->abstract="Aktivera List-Unsubscribe om du automatiskt vill lägga till en URL för att avbryta prenumerationen i e-posthuvudet. Du kan också ange en avanmälnings-URL i ett meddelande genom att infoga en länk för avanmälan med ett klick i e-postinnehållet."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="Avanmäl dig från e-postinnehållet med ett klick"
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="Aktivera List-Unsubscribe i e-postkonfigurationen"
-
-Den enklickslistade avanmälnings-URL:en är en länk eller knapp för att avbryta prenumerationen som visas bredvid e-postavsändarinformationen och gör att mottagarna kan avanmäla sig direkt från sändlistan med ett enda klick.
-
-I [!DNL Adobe Journey Optimizer], när alternativet **Aktivera List-Unsubscribe** är aktiverat, innehåller e-posthuvudet både ett mailto och/eller en URL som standard som mottagarna kan använda för att avbryta prenumerationen från din e-postlista.
-
-Växeln [Aktivera list-unsubscribe](email-settings.md#list-unsubscribe) måste aktiveras på kanalkonfigurationsnivå så att e-post som använder den här konfigurationen innehåller en-klicks-URL för att avbryta prenumerationen i e-posthuvudet.
-
->[!NOTE]
->
->Om du vill visa URL:en för att avsluta prenumerationen med ett klick i e-posthuvudet måste mottagarens e-postklient ha stöd för den här funktionen.
-
-
-En länk för att avbryta prenumerationen visas till exempel nedan i Gmail:
-
-![](assets/unsubscribe-header.png)
-
-
-<!--With Adobe Journey Optimizer, you can configure your email configuration settings with an auto-generated one-click unsubscribe URL and mailto address in the email header, or include a one-click opt-out URL in your email body: when a recipient clicks the one-click opt-out link, recipient's unsubscribe request is processed accordingly.-->
-
-<!--
->[!AVAILABILITY]
->
->One-click Unsubscribe URL Header will be available in Adobe Journey Optimizer starting June 3, 2024.
->
--->
-
-Beroende på e-postklienten och [inställningarna för att avbryta prenumerationen](email-settings.md#list-unsubscribe) för e-postkonfigurationen kan du klicka på länken för att avbryta prenumerationen i e-posthuvudet om du vill ha följande effekter:
-
-* När funktionen **Mailto (unsubscribe)** är aktiverad skickas begäran om att avbryta prenumerationen till den standardadress för att avbryta prenumerationen som baseras på den underdomän som du har konfigurerat.
-* När funktionen **Ett klick för att avbryta prenumeration på URL** är aktiverad - eller om du har infogat en URL för att avsluta prenumeration i ditt e-postinnehåll - är mottagaren direkt avanmäld, antingen på kanalnivå eller på ID-nivå (beroende på hur medgivandet är konfigurerat), när mottagaren klickar på den URL för att avbryta prenumerationen (baserat på den underdomän du har konfigurerat).
-
-![](../email/assets/surface-list-unsubscribe-mailto.png){width="80%"}
-
-I båda fallen väljs motsvarande profil för mottagaren omedelbart och valet uppdateras i Experience Platform. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
-
-Om du har aktiverat alternativet **[!UICONTROL Enable List-Unsubscribe]** i konfigurationsinställningarna för [e-post](email-settings.md#list-unsubscribe) rekommenderar vi att du aktiverar båda metoderna - **Mailto (unsubscribe)** och **One-Click Unsubscribe URL**. Alla e-postklienter har inte stöd för HTTP-metoden. Med funktionen för att avbryta prenumeration på e-postlista kan du välja ett alternativ, ditt avsändarrykte kan skyddas bättre och alla mottagare kan använda funktionen för att avbryta prenumerationen. [Läs mer](email-settings.md#list-unsubscribe)
-
+Den enklickslistade avanmälnings-URL:en är en länk eller knapp för att avbryta prenumerationen som visas bredvid e-postavsändarinformationen och gör att mottagarna kan avanmäla sig direkt från sändlistan med ett enda klick. Lär dig hantera alternativet **[!UICONTROL List unsubscribe]** i [det här avsnittet](list-unsubscribe.md).
 
 ### Avanmäl dig från e-postinnehållet med ett klick {#one-click-opt-out}
 
@@ -100,7 +56,7 @@ Om du vill ange en personlig avanmälnings-URL infogar du en länk för att väl
 
    >[!NOTE]
    >
-   >Om du har aktiverat alternativet **[!UICONTROL List-Unsubscribe]** på [kanalkonfigurationsnivån](email-settings.md#list-unsubscribe) och har standardalternativet **[!UICONTROL One-click unsubscribe URL]** avmarkerat, används även den här URL:en för landningssidan när användarna klickar på länken för att avbryta prenumerationen i e-posthuvudet. [Läs mer](#unsubscribe-header)
+   >Om du har aktiverat alternativet **[!UICONTROL List-Unsubscribe]** på [kanalkonfigurationsnivån](email-settings.md#list-unsubscribe) och har standardalternativet **[!UICONTROL One-click unsubscribe URL]** avmarkerat, används även den här URL:en för landningssidan när användarna klickar på länken för att avbryta prenumerationen i e-posthuvudet. [Läs mer](list-unsubscribe.md)
 
    ![](assets/message-tracking-opt-out-confirmation.png)
 
