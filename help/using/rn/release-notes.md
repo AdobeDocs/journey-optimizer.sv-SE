@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: e10ffbbe553495b1f9d7a2aeafc3d10e54561389
+source-git-commit: e29586f24f6ef84869a277ae6121d83f962405f7
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 5%
+source-wordcount: '1328'
+ht-degree: 7%
 
 ---
 
@@ -26,48 +26,63 @@ ht-degree: 5%
 ## Versionsinformation 25 mars {#25-3-rn}
 
 
-**Noteringar om tidig version nedan kan ändras utan föregående meddelande till releasedatum**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
-
-**Releasedatum**: 26-27 mars 2025
-
-
 ### Nya funktioner {#25-03-features}
 
 De nya funktionerna i den här versionen beskrivs nedan.
 
-
 <table>
 <thead>
 <tr>
-<th><strong>Integrering med Adobe Express</strong><br/></th>
+<th><strong>Integrering med Adobe Express (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>Tack vare Adobe Express-integrationen i Adobe Journey Optimizer kan du använda Adobe Express redigeringsverktyg direkt när du skapar innehåll. Du kan ändra storlek på, ta bort bakgrunder, beskära och konvertera resurser till JPEG eller PNG.<p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Adobe Express-integrering i Adobe Journey Optimizer är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Den får inte användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.</p>
+<p>Mer information finns i den <a href="../integrations/express.md">detaljerade dokumentationen</a>.</p>
+</br>
+<img src="assets/do-not-localize/express_resize.gif"/>
 </td>
 </tr>
 </tbody>
 </table>
 
+
 <table>
 <thead>
 <tr>
-<th><strong>Kalendervy för resor (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Resemått</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>I en kalendervy kan du nu visualisera alla resereffekter. Den här funktionen lanseras som en begränsad tillgänglighet för en viss kundgrupp.<p>
-<p>Den här ändringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Nu finns det resestatistik som gör det möjligt att mäta effekten av dina aktiviteter över nyckeltalen i ditt företag och att ge tydligare insikter i hur det fungerar.</p>
+<p>Mer information finns i den <a href="../building-journeys/success-metrics.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/success-metric.gif"/>
 </td>
 </tr>
 </tbody>
 </table>
+
+<!-- table>
+<thead>
+<tr>
+<th><strong>Calendar view for journeys (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A calendar view is now available in Journey Optimizer to visualize all journeys activations. From this view, you can browse your journeys and check details and properties.<p>
+<p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table-->
 
 <table>
 <thead>
@@ -86,7 +101,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 </ul>
 <p>
 <p>Den här integreringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../integrations/aem-dynamic.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -105,28 +120,30 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <td>
 <p>För att effektivisera marknadsföringen och bibehålla varumärkets enhetlighet kan ni nu smidigt integrera GenStudio for Performance Marketing-upplevelser med Journey Optimizer. På så sätt kan du utnyttja GenStudio AI-kraftfulla funktioner för att skapa innehåll tillsammans med Journey Optimizer avancerade orkestreringsfunktioner.<p>
 <p>Användningen av GenStudio integrering i Journey Optimizer är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten (begränsad tillgänglighet).</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Mer information finns i den <a href="../integrations/genstudio.md">detaljerade dokumentationen</a>.</p>
+<img src="assets/do-not-localize/genstudio.gif"/>
 </td>
 </tr>
 </tbody>
 </table>
 
-<table>
+
+<!--table>
 <thead>
 <tr>
-<th><strong>LINE-kanal (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>LINE channel (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer har utökat sina flerkanalsfunktioner så att de har stöd för LINE-kanalen. Den här förbättringen gör att du kan skapa, redigera och förhandsgranska LINE-upplevelser, vilket möjliggör mer personaliserade och engagerande interaktioner. Med LINE kan ni få kontakt med fler kunder, skicka relevant innehåll och förbättra engagemanget.<p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.<p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 ### Förbättringar {#25-03-improv}
@@ -134,7 +151,6 @@ De nya funktionerna i den här versionen beskrivs nedan.
 **Personalization-redigerare** (tillgänglighetsdatum: 12 mars)
 
 Journey Optimizer personaliseringsredigerare har uppdaterats med nya funktioner:
-
 * **Uppdaterad design för kodredigeraren** - ett renare och modernt gränssnitt för förbättrad användbarhet och fokus.
 * **Sök och ersätt** - Funktioner har lagts till för att snabbt hitta och ersätta innehåll i redigeraren.
 * **Stöd för Ångra och Gör om** - Gör det enkelt att ångra eller göra om ändringar.
@@ -153,17 +169,25 @@ När du definierar villkoren för en godkännandeprincip kan du nu välja att fi
 
 **Konfiguration**
 
-* Nu kan du tilldela enhetliga Adobe Experience Platform-taggar till kanalkonfigurationer. På så sätt kan du enkelt klassificera dem och förbättra sökning och navigering i alla listor.
+* Nu kan du tilldela enhetliga Adobe Experience Platform-taggar till kanalkonfigurationer. På så sätt kan du enkelt klassificera dem och förbättra sökning och navigering i alla listor. [Läs mer](../configuration/channel-surfaces.md#channel-config-tags)
 
-* När du konfigurerar eller redigerar en e-postunderdomän i Journey Optimizer kan du nu välja att hantera den associerade DMARC-posten på egen hand, om den är tillgänglig på den överordnade domänen.
+* När du konfigurerar eller redigerar en e-postunderdomän i Journey Optimizer kan du nu välja att hantera den associerade DMARC-posten på egen hand, om den är tillgänglig på den överordnade domänen. [Läs mer](../configuration/dmarc-record.md#set-up-dmarc)
 
 **Affärsregler**
 
 Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
-**Innehållshantering**
+Som påminnelse är den dagliga frekvensbegränsningen i regeluppsättningar bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
-För att enkelt hantera fragment och innehållsmallar kan du nu använda mappar för att ordna dem mer effektivt i en strukturerad hierarki. Den här förbättringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+Mer information om affärsregler finns i [detaljerad dokumentation](../configuration/rule-sets.md).
+
+<!--**Content management**
+
+To easily manage your fragments and your content templates, you can now use folders to organize them more effectively into a structured hierarchy. This improvement is only available for a set of organizations (Limited Availability). <!--To gain access, contact your Adobe representative.
+
+**Deliverability**
+
+You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.-->
 
 
 ## Versionsinformation 25 februari {#25-02-rn}
