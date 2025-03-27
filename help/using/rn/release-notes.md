@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 1776d9fa7352fc41d52f685c0a402e60bced348d
+source-git-commit: e10ffbbe553495b1f9d7a2aeafc3d10e54561389
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 4%
+source-wordcount: '1389'
+ht-degree: 5%
 
 ---
 
@@ -146,15 +146,6 @@ Journey Optimizer personaliseringsredigerare har uppdaterats med nya funktioner:
 ![Video med den nya funktionen i Personalization Editor](assets/do-not-localize/personalization-editor.gif)
 
 Mer information finns i den [detaljerade dokumentationen](../personalization/personalization-build-expressions.md).
-
-**Kampanjer**
-
-* Om du väljer en kampanj i kampanjlistan öppnas nu en ruta med information om kampanjen.
-* Nu kan ni kopiera kampanjer från en sandlåda till en annan.
-
-**Personalization**
-
-En ny&quot;Pills&quot;-knapp har skickats till personaliseringsredigeraren. När det här alternativet är aktiverat visas profil- och kontextuella attribut som tabletter, vilket förbättrar läsbarheten för koden.
 
 **Godkännanden**
 
