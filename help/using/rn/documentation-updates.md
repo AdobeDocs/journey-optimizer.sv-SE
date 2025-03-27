@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 65aed24e1df7bf2cfa2d8afbddbadb14a353da38
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '912'
 ht-degree: 10%
 
 ---
@@ -29,7 +29,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Avsnittet om att infoga länkar och aktivera spårning i ett e-postmeddelande har uppdaterats och omorganiserats. [Läs mer](../email/message-tracking.md)
 * Avsnittet om personaliseringsfunktioner i Adobe Journey Optimizer har omstrukturerats och förbättrats. [Läs mer](../personalization/personalize.md)
 * API:t för beslutshantering för att lista personaliserade erbjudanden har uppdaterats med ett exempel för att utföra paginering om flera personaliserade erbjudanden saknas i svaret. [Läs mer](../offers/api-reference/offers-api/personalized-offers/offers-list.md)
-
+* En ny sida med all information om funktionen för att avbryta prenumerationen i List har skapats för att bli tydligare. [Läs mer](../email/list-unsubscribe.md)
 
 
 ## Februari 2025 {#feb-2025}

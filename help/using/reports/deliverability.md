@@ -8,9 +8,9 @@ topic: Content Management
 role: Admin
 level: Intermediate, Experienced
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: 0eeb9f6aa6276b99a4d38efc2d371ebdb58c141d
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1138'
 ht-degree: 0%
 
 ---
@@ -106,13 +106,13 @@ Domänbaserad meddelandeautentisering, rapportering och överensstämmelse (DMAR
 
 En feedbackslinga (FBL) är en tjänst som erbjuds av vissa Internet-leverantörer som gör att e-postavsändaren automatiskt kan meddelas när den användare som tar emot ett e-postmeddelande väljer att markera det som skräppost (kallas även för ett klagomål).
 
-När en slutanvändare har genererat ett klagomål som skickas tillbaka till Adobe från Internet-leverantören, läggs e-postadressen automatiskt till i [listan över inaktiveringar](../reports/suppression-list.md) och tas inte med i kommande leveranser. Om du skickar e-post till användare som har markerat dem som skräppost påverkas avsändarens anseende negativt, vilket kan orsaka leveransproblem. [Läs mer om skräppostklagomål](../reports/suppression-list.md#spam-complaints)
+När en slutanvändare har genererat ett klagomål som skickas tillbaka till Adobe av Internet-leverantören, läggs e-postadressen automatiskt till i [listan över inaktiveringar](../reports/suppression-list.md) och tas inte med i kommande leveranser. Om du skickar e-post till användare som har markerat dem som skräppost påverkas avsändarens anseende negativt, vilket kan orsaka leveransproblem. [Läs mer om skräppostklagomål](../reports/suppression-list.md#spam-complaints)
 
 >[!IMPORTANT]
 >
 >Alla Internet-leverantörer tillhandahåller inte en traditionell FBL, som Gmail. Gmail ger inte feedback på individnivå och kan inte användas för att spåra skräppostklagomål till enskilda mottagare, utan istället fokusera på aggregerad nivårapportering i sina Google Postmaster Tools. [Läs mer](https://support.google.com/a/answer/6254652?hl=en){target="_blank"}
 
-Alla Adobe-kunder registreras automatiskt i de traditionella FBL:erna för följande ISP:
+Alla Adobe-kunder registreras automatiskt i de traditionella FBL:erna hos följande Internet-leverantörer:
 
 * 1&amp;1
 
@@ -170,4 +170,14 @@ Alla Adobe-kunder registreras automatiskt i de traditionella FBL:erna för följ
 
 * Ziggo
 
-Adobe granskar dessa FBL regelbundet för att säkerställa att de senaste tillgängliga FBL:erna läggs till.
+Adobe granskar dessa FBL:er regelbundet för att säkerställa att de senaste tillgängliga FBL:erna läggs till.
+
+## Använd SMTP-relä {#smtp-relay}
+
+[!DNL Journey Optimizer] använder Adobe-ägda MTA-agenter (Mail Transfer Agents) och IP-adresser för att leverera dina e-postmeddelanden till Internet-leverantörer. I vissa fall kanske du vill skicka e-postleveranser via dina egna MTA och IP-adresser, eller utföra slutgiltiga valideringar av e-postmeddelanden innan du skickar dem till mottagarna.
+
+I det här fallet kan du välja att få dina e-postmeddelanden skickade till SMTP-servrar som din organisation är värd för i stället för att skickas direkt från Journey Optimizer till Internet-leverantörer.
+
+>[!AVAILABILITY]
+>
+>SMTP-reläkapaciteten är tillgänglig vid behov - kontakta din Adobe-representant.

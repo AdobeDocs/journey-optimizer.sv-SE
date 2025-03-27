@@ -7,7 +7,7 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 0d541520-016e-468f-b011-808712847556
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Så här skapar du en kanalkonfiguration:
 
    >[!NOTE]
    >
-   >Om kontrollerna inte lyckas kan du läsa mer om möjliga felorsaker i [det här avsnittet](#monitor-channel-surfaces).
+   >Om kontrollerna inte lyckas kan du läsa mer om möjliga felorsaker i [det här avsnittet](../configuration/channel-surfaces.md).
 
 1. När kontrollerna har slutförts får kanalkonfigurationen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
 

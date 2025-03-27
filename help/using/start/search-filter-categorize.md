@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: cbd121dda4093fdea6f6bded02e8ae3e188e827d
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '567'
 ht-degree: 6%
 
 ---
@@ -69,6 +69,7 @@ I fältet **[!UICONTROL Tags]** kan du definiera taggar för objektet. Taggar ä
 * [Landningssidor](../landing-pages/create-lp.md)
 * [Prenumerationslistor](../landing-pages/subscription-list.md)
 * [Mallar](../content-management/content-templates.md)
+* [Kanalkonfigurationer](../configuration/channel-surfaces.md#channel-config-tags)
 
 Du kan antingen markera en befintlig tagg eller skapa en ny. Följ stegen nedan för att göra det.
 

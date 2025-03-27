@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
 exl-id: f9e217f8-5aa8-4d3a-96fc-65defcb5d340
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1452'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ För att du ska kunna förhindra leveransproblem och få kontroll över e-post s
 
 ### Hur fungerar DMARC? {#how-dmarc-works}
 
-SPF och DKIM används båda för att associera ett e-postmeddelande med en domän och fungerar tillsammans för att autentisera e-post. DMARC går ett steg längre och hjälper till att förhindra förfalskning genom att matcha domänen som kontrolleras av DKIM och SPF.
+SPF och DKIM används båda för att associera ett e-postmeddelande med en domän och fungerar tillsammans för att autentisera e-post. DMARC tar detta steg längre och hjälper till att förhindra förfalskning genom att matcha domänen som kontrolleras av DKIM och SPF.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ SPF och DKIM används båda för att associera ett e-postmeddelande med en domä
 För att skicka DMARC måste ett meddelande skicka SPF eller DKIM:
 
 * SPF (Sender Policy Framework) hjälper till att verifiera att e-postmeddelandet kommer från en auktoriserad källa genom att kontrollera den avsändande serverns IP-adress mot en lista över auktoriserade IP-adresser för domänen.
-* DKIM (DomainKeys Identified Mail) lägger till en digital signatur i e-postmeddelanden, vilket gör att mottagaren kan verifiera meddelandets integritet och autenticitet.
+* DKIM (DomainKeys Identified Mail) lägger till en digital signatur i e-postmeddelanden så att mottagaren kan verifiera meddelandets integritet och autenticitet.
 
 Om båda eller någon av dessa inte kan autentiseras, kommer DMARC att misslyckas och e-postmeddelandet levereras enligt din valda DMARC-policy.
 
@@ -76,7 +76,7 @@ Adobe rekommenderar därför att du vidtar följande åtgärder:
 
 ## Implementera DMARC i [!DNL Journey Optimizer] {#implement-dmarc}
 
-Med administrationsgränssnittet i [!DNL Journey Optimizer] kan du konfigurera DMARC-posten för alla underdomäner som du redan har delegerat eller delegerar till Adobe. De detaljerade stegen beskrivs nedan.
+Med administrationsgränssnittet [!DNL Journey Optimizer] kan du konfigurera DMARC-posten för alla underdomäner som du redan har delegerat eller delegerar till Adobe. De detaljerade stegen beskrivs nedan.
 
 ### Kontrollera dina befintliga underdomäner för DMARC {#check-subdomains-for-dmarc}
 
@@ -94,17 +94,21 @@ Följ stegen nedan för att se till att du har konfigurerat en DMARC-post för a
 
 1. Välj en underdomän utan någon associerad DMARC-post och fyll i avsnittet **[!UICONTROL DMARC record]** efter organisationens behov. Stegen för att fylla i DMARC-postfält beskrivs i [det här avsnittet](#implement-dmarc).
 
-1. Tänk på de två alternativen nedan:
+   <!--![](assets/dmarc-record-edit-full.png)-->
 
-   * Om du redigerar en underdomän som har konfigurerats med [CNAME](delegate-subdomain.md#cname-subdomain-delegation) måste du kopiera DNS-posten för DMARC till din värdlösning för att skapa matchande DNS-poster.
+   >[!NOTE]
+   >
+   >Beroende på om en DMARC-post hittas med den överordnade domänen eller inte kan du välja att använda värdena från den överordnade domänen eller att låta Adobe hantera DMARC-posten. [Läs mer](#implement-dmarc)
+
+1. Om du redigerar en underdomän:
+
+   * [Fullt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe, ingen ytterligare åtgärd krävs.
+
+   * Konfigurera med [CNAME](delegate-subdomain.md#cname-subdomain-delegation), du måste kopiera DNS-posten för DMARC till din värdlösning för att kunna generera matchande DNS-poster.
 
      ![](assets/dmarc-record-edit-cname.png)
 
      Kontrollera att DNS-posten har genererats i din domänvärdslösning och markera kryssrutan Jag bekräftar...
-
-   * Om du redigerar en underdomän, [helt delegerad](delegate-subdomain.md#full-subdomain-delegation), till Adobe fyller du bara i de **[!UICONTROL DMARC record]** fält som finns i [det här avsnittet](#implement-dmarc). Ingen ytterligare åtgärd krävs.
-
-     ![](assets/dmarc-record-edit-full.png)
 
 1. Spara ändringarna.
 
@@ -122,13 +126,33 @@ När nya underdomäner delegeras till Adobe i [!DNL Journey Optimizer] skapas en
 
 1. Gå till avsnittet **[!UICONTROL DMARC record]**.
 
-   Om underdomänen har en befintlig DMARC-post, och om den hämtas av [!DNL Journey Optimizer], kan du använda samma värden som markeras i gränssnittet, eller ändra dem efter behov.
+1. Om det finns en DMARC-post på den överordnade domänen som är kopplad till din underdomän visas två alternativ:
 
    ![](assets/dmarc-record-found.png)
 
-   >[!NOTE]
-   >
-   >Om du inte lägger till några värden används de förfyllda standardvärdena.
+   * **[!UICONTROL Manage with Adobe]**: Adobe kan hantera DMARC-posten för din underdomän. Följ stegen som beskrivs i [det här avsnittet](#manage-dmarc-with-adobe).
+
+   * **[!UICONTROL Manage on your own]**: <!--This option is selected by default.-->Med det här alternativet kan du hantera DMARC-posten utanför [!DNL Journey Optimizer] med värden från den överordnade domänen. Dessa värden visas i gränssnittet, men du kan inte redigera dem.
+
+     ![](assets/dmarc-record-found-own.png){width="80%"}
+
+1. Om ingen DMARC-post hittas på den överordnade domänen är endast alternativet **[!UICONTROL Manage with Adobe]** tillgängligt. Följ stegen [nedan](#manage-dmarc-with-adobe) för att konfigurera DMARC-posten för din underdomän.
+
+   ![](assets/dmarc-record-not-found.png){width="80%"}
+
+### Hantera DMARC-post med Adobe {#manage-dmarc-with-adobe}
+
+Om du vill låta Adobe hantera DMARC-posten åt dig väljer du alternativet **[!UICONTROL Manage with Adobe]** och följer stegen nedan.
+
+>[!NOTE]
+>
+>Om den hämtas av [!DNL Journey Optimizer] kan du använda samma värden som markeras i gränssnittet, eller ändra dem efter behov.
+
+![](assets/dmarc-record-with-adobe-ex.png){width="80%"}
+
+>[!NOTE]
+>
+>Om du inte lägger till några värden används de förfyllda standardvärdena.
 
 1. Definiera åtgärden som mottagarservern ska utföra om DMARC misslyckas. Beroende på vilken [DMARC-princip](#dmarc-policies) du vill tillämpa väljer du något av följande tre alternativ:
 
@@ -167,12 +191,11 @@ När nya underdomäner delegeras till Adobe i [!DNL Journey Optimizer] skapas en
 
 1. Välj ett **rapporteringsintervall** mellan 24 och 168 timmar. Det gör det möjligt för domänägare att få regelbundna uppdateringar om resultaten av e-postautentiseringen och vidta nödvändiga åtgärder för att förbättra e-postsäkerheten.
 
-   <!--The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
+<!--The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
 
-    The default value (24 hours) is generally the email providers' expectation.-->
+The default value (24 hours) is generally the email providers' expectation.
 
-
-<!--
+**********
 
 Setting up a DMARC record involves adding a DNS TXT record to your domain's DNS settings. This record specifies your DMARC policy, such as whether to quarantine or reject messages that fail authentication. Implementing DMARC is a proactive step towards enhancing email security and protecting both your organization and your recipients from email-based threats.
 

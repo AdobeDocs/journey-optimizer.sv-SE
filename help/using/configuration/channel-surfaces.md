@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: '1735'
 ht-degree: 0%
 
 ---
@@ -271,6 +271,19 @@ Du kan inte redigera en inaktiverad kanalkonfiguration direkt. Du kan dock dupli
 
 ![](assets/preset-activate.png)
 
+## Lägga till taggar i en kanalkonfiguration {#channel-config-tags}
+
+1. Öppna listan Kanalkonfigurationer.
+
+1. Klicka på knappen **[!UICONTROL More actions]** om du vill se den aktiva konfigurationen.
+
+1. Klicka på **[!UICONTROL Edit Tags]**.
+
+1. Välj Adobe Experience Platform-taggar i listan för att kategorisera kanalkonfigurationen för bättre sökning. [Lär dig arbeta med enhetliga taggar](../start/search-filter-categorize.md#tags)
+
+   ![](assets/config-edit-tags.png)
+
+1. När du har tilldelat taggar till kanalkonfigurationerna kan du [filtrera](../start/search-filter-categorize.md#filter-on-tags) dem på taggar.
 
 ## Instruktionsvideo{#video-presets}
 

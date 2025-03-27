@@ -9,10 +9,10 @@ role: User
 level: Beginner, Intermediate
 keywords: vertikal justering, e-postredigerare, utfyllnad
 exl-id: 1e1d90ff-df5d-4432-a63a-a32d0d281d48
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 2%
+source-wordcount: '183'
+ht-degree: 1%
 
 ---
 
@@ -41,3 +41,7 @@ I det här exemplet justerar vi utfyllnad och lodrät justering inuti en struktu
 1. Gör på samma sätt om du vill justera justeringen och utfyllnaden för de andra kolumnerna.
 
 1. Spara ändringarna.
+
+>[!TIP]
+>
+>När du utformar e-postinnehåll för Gmail på Android-enheter måste du se till att kolumnutfyllnad används i stället för stora, fasta marginaler för bilder och delare. Gmail på Android återger ofta överdimensionerade bilder och marginaler felaktigt, vilket kan orsaka layoutspill eller reducerade avdelarlinjer. Använd en mindre bildbredd eller använd kolumnbaserad utfyllnad för enhetlig visning.

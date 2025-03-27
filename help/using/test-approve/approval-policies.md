@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
-source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
@@ -109,6 +109,14 @@ Följ de här stegen för att definiera villkoren som är kopplade till en godk�
     </tr>
     <tr>
     <td>Innehållskort</td>
+    </tr>
+    <tr>
+    <td>Taggar</td>
+    <td>Namnet på taggen som används för att ordna era målgrupper. </td>
+    </tr>
+    <tr>
+    <td>Objektnamn</td>
+    <td>Objektets namn.</td>
     </tr>
     <tr>
     <td>Användarnamn för begärande</td>

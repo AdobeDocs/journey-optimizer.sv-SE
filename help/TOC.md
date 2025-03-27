@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ac9c3687100da33149e6d237b35ffbf6d22afac3
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '2279'
-ht-degree: 23%
+source-wordcount: '2314'
+ht-degree: 22%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 23%
    + Skapa en resa {#create-journey}
       + [Skapa den första resan](using/building-journeys/journey-gs.md)
       + [Ange egenskaper för din resa](using/building-journeys/journey-properties.md)
+      + [Konfigurera och spåra dina resemått](using/building-journeys/success-metrics.md)
       + [Designa din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Simulera din resa](using/building-journeys/journey-simulation.md)
@@ -324,6 +325,11 @@ ht-degree: 23%
          + [Konfigurera stöd för innehållskort i Web SDK](using/content-card/content-card-configuration-sdk.md)
       + [Skapa innehållskort](using/content-card/create-content-card.md)
       + [Utforma innehållskort](using/content-card/design-content-card.md)
+   + WhatsApp{#whatsapp}
+      + [Kom igång med whatsApp-meddelanden](using/whatsapp/get-started-whatsapp.md)
+      + [Konfigurera WhatsApp-kanalen i Journey Optimizer](using/whatsapp/whatsapp-configuration.md)
+      + [Skapa ett WhatsApp-meddelande](using/whatsapp/create-whatsapp.md)
+      + [Kontrollera och skicka dina meddelanden om whatsApp](using/whatsapp/send-whatsapp.md)
 + Landningssidor {#landing-pages}
    + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
    + [Skapa en landningssida](using/landing-pages/create-lp.md)
@@ -419,9 +425,11 @@ ht-degree: 23%
    + [Integrering med andra lösningar](using/integrations/ajo-integrations.md)
    + [Arbeta med Experience Manager Assets](using/integrations/assets.md)
    + [Arbeta med Adobe Stock](using/integrations/stock.md)
+   + [Arbeta med Adobe Express](using/integrations/express.md)
    + [Arbeta med Experience Manager-mallar](using/integrations/aem-templates.md)
    + [Arbeta med Experience Manager Content Fragments](using/integrations/aem-fragments.md)
    + [Arbeta med Dynamic Media](using/integrations/aem-dynamic.md)
+   + [Arbeta med GenStudio](using/integrations/genstudio.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live-rapporten](using/reports/live-report.md)

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 43cf43c6ba92d64836222ce872054b5dec6d11fe
+source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
 workflow-type: tm+mt
-source-wordcount: '2243'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -243,16 +243,19 @@ Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala 
 
 ## Sammanfoga profiler {#merge-policies}
 
-Resan använder sammanfogningsprinciper när profildata hämtas från Adobe Experience Platform. Beroende på resetyp används olika kopplingsprofiler:
+Adobe Journey Optimizer använder sammanfogningsprinciper när profildata hämtas från Adobe Experience Platform. Beroende på resetyp används olika kopplingsprofiler:
 
 * På läs målgrupps- eller målgruppsklassificeringsresor: målgruppspolicyn används
 * Vid Unitary-händelseresor: standardprincipen för sammanslagning används
 * Vid affärsevenemangsresor: sammanfogningspolicyn från målgruppen i följande Läs målgruppsaktivitet används
 
-Resan kommer att respektera den sammanslagningspolicy som används under hela resan. Om flera målgrupper används i en resa (t.ex. i&quot;inAudience&quot;-funktioner), vilket skapar inkonsekvenser med den sammanfogningspolicy som används under resan, uppstår därför ett fel och publiceringen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
+Adobe Journey Optimizer tillämpar den kopplingsregel som används under hela kundresan. Om flera målgrupper används i en resa (t.ex. i&quot;inAudience&quot;-funktioner), vilket skapar inkonsekvenser med den sammanfogningspolicy som används under resan, uppstår därför ett fel och publiceringen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
 Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
+>[!NOTE]
+>
+>När en princip för målgruppssammanfogning uppdateras måste en aktiv resa som refererar till den målgruppen publiceras på nytt (eller dupliceras). Genom att ändra sammanslagningspolicyn på ett effektivt sätt skapas en&quot;ny&quot; målgrupp som den pågående resan inte har tillgång till, vilket säkerställer att alla data är enhetliga.
 
 ## Avslutningskriterier {#exit-criteria}
 
