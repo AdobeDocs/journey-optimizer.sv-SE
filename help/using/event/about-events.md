@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelser, händelse, resa, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-source-git-commit: 5af420f5ba312949e475c772e56c60a0368a4796
+source-git-commit: e80554570d62d1ddb52516366be55711387c5d19
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 27%
+source-wordcount: '1017'
+ht-degree: 21%
 
 ---
 
@@ -23,32 +23,36 @@ ht-degree: 27%
 >title="Reseevenemang"
 >abstract="En händelse är länkad till en person. Det gäller en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (t.ex. en person som uppnått 10 000 kundpoäng). Journey Optimizer lyssnar på enastående händelser under resor för att samordna de bästa nästa åtgärderna."
 
-Med händelsekonfigurationen kan du definiera den information som [!DNL Journey Optimizer] tar emot som händelser. Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse.
+Med händelser kan ni utlösa resorna individuellt och leverera meddelanden i realtid till varje användare när de går in på resan.
 
->[!CAUTION]
->
->Händelsekonfigurationen är **obligatorisk** och måste utföras av en **datatekniker**.
+I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobe Experience Data Model (XDM). Händelser kommer från API:er för direktuppspelning av inmatning för autentiserade och oautentiserade händelser (t.ex. Adobe Mobile SDK-händelser). Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse.
 
-Du kan konfigurera två typer av händelser:
+Du kan konfigurera två typer av händelser: **Unitära händelser** och **Affärshändelser**.
 
-* **Unitära**-händelser: de här händelserna är länkade till en person. De rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (t.ex. en person som uppnått 10 000 förmånspoäng). Det här är vad [!DNL Journey Optimizer] lyssnar på under resor för att samordna de bästa nästa åtgärderna. Enhetshändelser kan vara regelbaserade eller systemgenererade. Mer information om hur du skapar en enhetshändelse finns på [sidan](../event/about-creating.md).
-
-* **Business**-händelser: en affärshändelse är en händelse som, i motsats till en enhetshändelse, inte är länkad till en viss profil. Det kan till exempel vara en nyhetsvarning, en idrottsuppdatering, en flygändring eller inställd flygning, en inventeringsuppdatering, väderhändelser osv. Även om dessa händelser inte är specifika för en profil kan de vara av intresse för ett obegränsat antal profiler: individer som abonnerar på särskilda nyhetsfrågor, passagerare på ett flyg, kunder som är intresserade av en produkt som inte finns i lager osv. Affärshändelser är alltid regelbaserade. När du släpper en affärshändelse under en resa läggs automatiskt en **Läs målgrupp** -aktivitet till efter. Mer information om hur du skapar en affärshändelse finns på [sidan](../event/about-creating-business.md).
-
-
->[!NOTE]
->
->Om du redigerar en händelse som används i ett utkast eller en resa i realtid kan du bara ändra namn eller beskrivning eller lägga till fält för nyttolast. Vi begränsar strikt utgåvan av utkast eller resor i realtid för att undvika att resor avbryts.
-
-Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
 
 ➡️ [Upptäck den här funktionen i videon](#video)
 
-## Händelse-ID-typ{#event-id-type}
+## Enhetshändelser {#unitary-events}
 
-För affärshändelser är händelse-ID-typen alltid regelbaserad.
+Händelsen **Unitary** är länkad till en person. De rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (t.ex. en person som uppnått 10 000 förmånspoäng). Det här är vad [!DNL Journey Optimizer] lyssnar på under resor för att samordna de bästa nästa åtgärderna. Enhetshändelser kan vara regelbaserade eller systemgenererade. Mer information om hur du skapar en enhetshändelse finns på [sidan](../event/about-creating.md).
 
-För unitära händelser finns det två typer av händelse-ID:
+Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa kl. 12:01 för en viss profil och en annan tar emot kl. 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) kommer den resan inte att starta igen för den här profilen.
+
+## Affärshändelser {#business-events}
+
+**Business**-händelser är inte länkade till en viss profil. Det kan till exempel vara en nyhetsvarning, en idrottsuppdatering, en flygändring eller inställd flygning, en inventeringsuppdatering, väderhändelser osv. Även om dessa händelser inte är specifika för en profil kan de vara av intresse för ett obegränsat antal profiler: individer som abonnerar på särskilda nyhetsfrågor, passagerare på ett flyg, kunder som är intresserade av en produkt som inte finns i lager osv. Affärshändelser är alltid regelbaserade. När du släpper en affärshändelse under en resa läggs automatiskt en **Läs målgrupp** -aktivitet till efter.Lär dig hur du skapar en affärshändelse [på den här sidan](../event/about-creating-business.md).
+
+## Rekommendationer
+
+Händelsekonfigurationen är **obligatorisk** och måste utföras av en datatekniker.
+
+För att undvika att bryta befintliga resor kan du bara ändra namn, beskrivning eller lägga till nyttolastfält när du redigerar en händelse som används i ett utkast eller en direktresa.
+
+## Händelse-ID-typ {#event-id-type}
+
+För **business**-händelser är händelse-ID-typen alltid regelbaserad.
+
+Det finns två typer av händelse-ID för **unitary**-händelser:
 
 * **Regelbaserade** händelser: Den här händelsetypen genererar inget eventID. Med den enkla uttrycksredigeraren definierar du helt enkelt en regel som ska användas av systemet för att identifiera de relevanta händelserna som utlöser dina resor. Den här regeln kan baseras på alla fält som är tillgängliga i händelsenyttolasten, till exempel profilens plats eller antalet objekt som läggs till i profilens kundvagn.
 
@@ -66,7 +70,7 @@ För unitära händelser finns det två typer av händelse-ID:
 
 Händelser är POST API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Händelsers nyttolast följer XDM-formateringen.
 
-Nyttolasten innehåller information som krävs för att API:er för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för att [!DNL Journey Optimizer] ska kunna arbeta och information som ska användas på resor (i brödtexten, till exempel, mängden övergiven vagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Se [den här länken](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html) för mer information om API:er för strömningsinmatning.
+Nyttolasten innehåller information som krävs för att API:er för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för att [!DNL Journey Optimizer] ska kunna arbeta och information som ska användas på resor (i brödtexten, till exempel, mängden övergiven vagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Mer information om API:er för direktuppspelning av inmatning finns på [den här länken](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"}.
 
 Efter att ha kommit via API:er för direktuppspelning av inmatning flödar händelserna till en intern tjänst som kallas Pipeline och sedan i Adobe Experience Platform. Om händelseschemat har tjänstflaggan realtidskundprofil aktiverad och ett datauppsättnings-ID som även har flaggan realtidskundprofil flödar det in i tjänsten realtidskundprofil.
 
