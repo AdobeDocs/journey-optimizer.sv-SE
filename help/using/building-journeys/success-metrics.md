@@ -8,9 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
+exl-id: 95d0267e-fab4-4057-8ab5-6f7c9c866b0f
+source-git-commit: 1e35c2ea2b0a6c8edd5b870311bb32b4b4b58e9a
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '474'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ Genom att följa upp dessa mätvärden kan ni se hur bra kundresan går, identif
 
 ## Förhandskrav {#prerequisites}
 
-Innan du kan använda resemått måste du lägga till en datamängd som innehåller `Commerce Details` [fältgruppen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
+Innan du använder resemätverket måste du lägga till en datamängd som innehåller fältgrupperna `Commerce Details`, `Web` och `Mobile` [](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
 
 ## Tillgängliga mått {#metrics}
 
