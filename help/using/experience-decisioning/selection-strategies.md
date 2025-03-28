@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
-source-git-commit: 83ad828a4d342bba10284cdd20d22eb325e3e1f7
+source-git-commit: 12a36b38958e2a3cdb702b4789a1a6dadf45e911
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Följ stegen nedan för att skapa en urvalsstrategi.
 
    ![](assets/strategy-create-eligibility.png)
 
-   * Om du vill begränsa urvalet av erbjudanden till medlemmarna i en Experience Platform-målgrupp väljer du **[!UICONTROL Audiences]** och väljer en målgrupp i listan. [Lär dig arbeta med målgrupper](../audience/about-audiences.md)
+   * Om du vill begränsa urvalet av erbjudanden till medlemmar i en Experience Platform-publik väljer du **[!UICONTROL Audiences]** och väljer en målgrupp i listan. [Lär dig arbeta med målgrupper](../audience/about-audiences.md)
 
    * Om du vill lägga till en markeringsbegränsning med en beslutsregel använder du alternativet **[!UICONTROL Decision rule]** och väljer önskad regel. [Lär dig skapa en regel](rules.md)
 
@@ -114,6 +114,11 @@ När du har skapat den kan du använda den här formeln i en urvalsstrategi. Om 
 
 ### AI-rankning {#ai-ranking}
 
-Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig hur du skapar en AI-modell i [det här avsnittet](ranking.md).
+Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig hur du skapar en AI-modell i [det här avsnittet](../offers/ranking/ai-models.md).
 
 När en AI-modell har skapats kan du använda den i en urvalsstrategi. Om flera erbjudanden är berättigade avgör det tränade modellsystemet vilket erbjudande som ska presenteras först för denna urvalsstrategi.
+
+>[!NOTE]
+>
+>För närvarande är rapporten [Lyft mätning](../offers/ranking/auto-optimization-model.md#lift) bara tillgänglig för AI-modellen [Personlig optimering](../offers/ranking/personalized-optimization-model.md).
+

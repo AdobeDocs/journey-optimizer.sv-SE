@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
-source-git-commit: 2e1168f321d6f2c83733c6112e11d834d5e7eb95
+source-git-commit: 12a36b38958e2a3cdb702b4789a1a6dadf45e911
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2638'
 ht-degree: 0%
 
 ---
@@ -258,9 +258,9 @@ I fältet **[!UICONTROL Reset capping frequency]** kan du definiera hur ofta ant
 >
 >När du har publicerat ditt erbjudande kan du inte ändra den tidsperiod (månadsvis, veckovis eller dagligen) som du har valt för frekvensen. Du kan fortfarande redigera frekvensbegränsningen om erbjudandet har statusen **[!UICONTROL Draft]** och aldrig har publicerats tidigare med frekvensbegränsning aktiverad.
 
-+++ **Måste läsas: API för frekvensappning och Edge Decisioning**
++++ **Måste-läsas: API:er för frekvensappning och beslutshantering**
 
-Räknaren för frekvensbegränsning uppdateras och är tillgänglig i ett beslut av Edge Decisioning API på mindre än 3 sekunder.
+Räknaren för frekvensbegränsning uppdateras och är tillgänglig i ett beslut av typen [Edge Decisioning API](../api-reference/offer-delivery-api/start-offer-delivery-apis.md#edge) på mindre än 3 sekunder.
 
 Varje navområde är associerat med ett eller flera kantområden. Regler för frekvensbegränsning genereras och exporteras från varje navregion till de associerade kantområdena. När ett beslut fattas med hjälp av Edge Decisioning API verkställer systemet de regler som finns i samma kantregion:
 
@@ -269,7 +269,17 @@ Varje navområde är associerat med ett eller flera kantområden. Regler för fr
 
 Låt oss till exempel se din organisations navregion som *NLD2* och du skickar en beslutsbegäran från Europa (*IRL1* edge region). I det här scenariot ökar beslutsbegäran profilens räknare eftersom reglerna är tillgängliga i regionen *IRL1* (Irland). Om beslutsbegäran däremot kommer från en region som Japan (*JPN3*), som inte är ett kantområde som är knutet till (Nederländerna) *NLD2* -navet, skapas ingen räknare och reglerna för frekvensbegränsning tillämpas inte.
 
+>[!NOTE]
+>
+>När räknare sprids från kant till nav eller från nav till kant kan en fördröjning på några minuter gälla.
+
 Om du vill ha mer information om vilka nav- och kantområden som är kopplade till din organisation kontaktar du Adobe.
+
+Med de andra API:erna uppdateras räknaren för frekvensbegränsning enligt följande:
+
+* I ett [Decisioning API](../api-reference/offer-delivery-api/start-offer-delivery-apis.md#decisioning) -beslut kan räknaren för frekvensbegränsning uppdateras med några minuters fördröjning, beroende på trafik.
+
+* I ett [API för gruppbeslut](../api-reference/offer-delivery-api/batch-decisioning-api.md) används ögonblicksbilder där frekvensbegränsningsräknaren förblir fast. Räknaren ändras inte så länge som samma ögonblicksbild används.
 
 +++
 

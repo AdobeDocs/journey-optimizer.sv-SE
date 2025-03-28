@@ -6,13 +6,13 @@ description: Lär dig hur du skickar kontextdata i Edge Decisioning-begäranden.
 feature: Decision Management
 role: Developer, Data Engineer
 level: Experienced
-source-git-commit: 9b66f4871d8b539bf0201b2974590672205a3243
+exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
+source-git-commit: 12a36b38958e2a3cdb702b4789a1a6dadf45e911
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
 
 ---
-
 
 # Kontextdata och Edge Decisioneringsbegäranden {#edge}
 
@@ -21,7 +21,7 @@ I det här avsnittet får du hjälp med att skicka kontextdata i Edge Decisionin
 Det här exemplet innehåller flera viktiga steg:
 
 1. [Konfigurera förutsättningar](#prerequisites): Kontrollera att alla nödvändiga steg har slutförts för att skicka kontextdata i dina begäranden.
-1. [Använd kontextdata i berättiganderegler](#rule): Skapa regler som avgör vilka erbjudanden som ska visas baserat på användarens enhetstyp.
+1. [Använd kontextdata i berättiganderegler](#rules): Skapa regler som avgör vilka erbjudanden som ska visas baserat på användarens enhetstyp.
 1. [Designa enhetsspecifika erbjudanden](#offers): Skapa anpassade erbjudanden för varje enhetstyp och länka dem till motsvarande regler.
 1. [Skapa en erbjudandesamling](#collection): Gruppera alla erbjudanden till en statisk samling.
 1. [Konfigurera ett beslut](#decision) : Skapa ett nytt beslut som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska visas för användare baserat på deras enhetstyp.
@@ -149,33 +149,33 @@ Här är ett exempel på en begäran som skickar kontextdata.
 
 ```
 {
-	"events": [{
-		"xdm": {
-			"identityMap": {
-				"customerId": [{
-					"id": "0000158216",
-					"authenticatedState": "authenticated",
-					"primary": true
-				}]
-			},
-			"_experienceplatform": {
-				"identity": {
-					"core": {
-						"customerId": "0000158216"
-					}
-				},
+    "events": [{
+        "xdm": {
+            "identityMap": {
+                "customerId": [{
+                    "id": "0000158216",
+                    "authenticatedState": "authenticated",
+                    "primary": true
+                }]
+            },
+            "_experienceplatform": {
+                "identity": {
+                    "core": {
+                        "customerId": "0000158216"
+                    }
+                },
                 "offerContextData" : {
                     "language" : "NL",
                     "deviceType" : "iphone"
                 }
-			}
-		}
-	}],
-	"query": {
-		"personalization": {
-			"decisionScopes": ["eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE3M2I1MGM5Mjg0ZGQ4NzkiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTZhMzQxZWQ4ZDYyMzc2MSJ9"]
-		}
-	}
+            }
+        }
+    }],
+    "query": {
+        "personalization": {
+            "decisionScopes": ["eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE3M2I1MGM5Mjg0ZGQ4NzkiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTZhMzQxZWQ4ZDYyMzc2MSJ9"]
+        }
+    }
 }
 ```
 
