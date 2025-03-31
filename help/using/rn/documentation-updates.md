@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: b7e3edff9191d1dab15376c70839f6e2b5a318aa
+source-git-commit: b441c1edaf50104ae63f4cd9f14f3c268dee02dd
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '945'
 ht-degree: 10%
 
 ---
@@ -30,8 +30,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Avsnittet om personaliseringsfunktioner i Adobe Journey Optimizer har omstrukturerats och förbättrats. [Läs mer](../personalization/personalize.md)
 * API:t för beslutshantering för att lista personaliserade erbjudanden har uppdaterats med ett exempel för att utföra paginering om flera personaliserade erbjudanden saknas i svaret. [Läs mer](../offers/api-reference/offers-api/personalized-offers/offers-list.md)
 * En ny sida med all information om funktionen för att avbryta prenumerationen i List har skapats för att bli tydligare. [Läs mer](../email/list-unsubscribe.md)
-* Avsnittet Frequency capping har uppdaterats med information om hur frekvenscapping-räknaren har uppdaterats för API:erna för beslut och gruppbeslut, utöver Edge Decisioning API.
-
+* Avsnittet Frequency capping har uppdaterats med information om hur frekvenscapping-räknaren har uppdaterats för API:erna för beslut och gruppbeslut, utöver Edge Decisioning API. [Läs mer](../offers/offer-library/add-constraints.md#frequency-capping)
 
 ## Februari 2025 {#feb-2025}
 
