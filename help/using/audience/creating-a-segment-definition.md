@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: c60ad071d41c9b322e9a6b9285a044321df536cc
+source-git-commit: ec3f4b69e510d477d65fedb126cec50e15a3f072
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 1%
@@ -81,6 +81,7 @@ Direktuppspelningssegmentering är en kontinuerlig process för datamarkering so
 >[!IMPORTANT]
 >
 >Från och med den 1 november 2024 har direktuppspelningssegmentering inte längre stöd för användning av **send** - och **open** -händelser från Journey Optimizer spårnings- och feedbackdatauppsättningar.
+>
 >* Den här ändringen gäller alla kundsandlådor och organisationer.
 >* Endast skicka- och öppna-händelser påverkas: Klickningar och andra spårningshändelser är fortfarande tillgängliga för direktuppspelningssegmentering.
 >* Den här ändringen gäller endast för direktuppspelningssegmentering. Send- och open-händelser kan fortfarande användas i gruppsegment, men om de ingår i ett direktuppspelningssegment utvärderas de gruppvis. Dessutom påverkas även undantagshändelser och studs-/fördröjningshändelser som är ett resultat av skicka-händelser av den här ändringen.

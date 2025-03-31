@@ -7,10 +7,10 @@ feature: Push, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: ec3f4b69e510d477d65fedb126cec50e15a3f072
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 3%
+source-wordcount: '1688'
+ht-degree: 2%
 
 ---
 
@@ -23,19 +23,7 @@ Med [!DNL Journey Optimizer] kan du skapa dina resor och skicka meddelanden till
 >Det nya **snabbstartsarbetsflödet för mobil introduktion** är nu tillgängligt. Använd den här nya produktfunktionen för att snabbt konfigurera Mobile SDK för att börja samla in och validera mobilhändelsedata och skicka push-meddelanden till mobiler. Den här funktionen är tillgänglig via startsidan för datainsamling som en betaversion. [Läs mer](mobile-onboarding-wf.md)
 >
 
-
-## Före start {#before-starting}
-
-<!--
-### Check provisioning
-
-Your Adobe Experience Platform account must be provisioned to contain following schemas and datasets for push notification data flow to function correctly:
-
-| Schema <br>Dataset                                                                       | Group of fields                                                                                                                                                                         | Operation                                                |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| CJM Push Profile Schema <br>CJM Push Profile Dataset                                     | Push Notification Details<br>Adobe CJM ExperienceEvent - Message Profile Details<br>Adobe CJM ExperienceEvent - Message Execution Details<br>Application Details<br>Environment Details | Register Push Token                                      |
-| CJM Push Tracking Experience Event Schema<br>CJM Push Tracking Experience Event Dataset | Push Notification Tracking                                                                                                                                                              | Track interactions and provide data for the reporting UI |
--->
+## Före start {#start-push}
 
 ### Konfigurera behörigheter {#setup-permissions}
 
@@ -110,6 +98,25 @@ Följ stegen nedan för att tilldela **[!UICONTROL Product profile]** till anvä
 
    ![](assets/push_product_7.png)
 
+
+### Kontrollera datauppsättningarna {#push-datasets}
+
+Följande scheman och datauppsättningar är tillgängliga med push-meddelandekanalen:
+
+| Schema <br>Datamängd | Grupp med fält | Åtgärd |
+| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| CJM push-profilschema <br>CJM push-profildatauppsättning | Information om push-meddelanden<br>Adobe CJM ExperienceEvent - Information om meddelandeprofil<br>Adobe CJM ExperienceEvent - Information om meddelandekörning<br>Programinformation<br>Miljöinformation | Registrera push-token |
+| CJM Push Tracking Experience Event Schema<br>CJM Push Tracking Experience Event Dataset | Spårning av push-meddelanden | Spåra interaktioner och ange data för rapportgränssnittet |
+
+
+>[!NOTE]
+>
+>När push-spårningshändelser infogas i händelsedatauppsättningen CJM Push Tracking Experience kan vissa fel inträffa, även om data delvis har importerats korrekt. Detta kan inträffa om vissa fält i din mappning inte finns i inkommande händelser: systemet loggar varningar men förhindrar inte att giltiga delar av data matas in. Dessa varningar visas i batchstatus som&quot;misslyckades&quot; men avspeglar en partiell slutförd import.
+>
+>Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+
+
+
 ### Konfigurera din app {#configure-app}
 
 Den tekniska konfigurationen innefattar nära samarbete mellan apputvecklaren och företagsadministratören. Innan du börjar skicka push-meddelanden med [!DNL Journey Optimizer] måste du skapa push-autentiseringsuppgifter, en push-kanalskonfiguration i Adobe Journey Optimizer och integrera din mobilapp med Adobe Experience Platform Mobile SDK:er.
@@ -121,9 +128,9 @@ Följ implementeringsstegen som beskrivs i länkarna nedan:
 
 ### Integrera mobilappen med Adobe Experience Platform SDK {#integrate-mobile-app}
 
-Adobe Experience Platform Mobile SDK innehåller API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. Följ [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera med Adobe Experience Platform Mobile SDK i din app.
+Adobe Experience Platform Mobile SDK erbjuder API:er för integrering på klientsidan för mobiler via Android och iOS-kompatibla SDK:er. Följ [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} om du vill konfigurera Adobe Experience Platform Mobile SDK:er i din app.
 
-I slutet av detta bör du även ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [Adobe Experience Platform Mobile SDK-dokumentationen](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+I slutet av detta bör du även ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 
 ## Steg 1: Lägg till dina push-autentiseringsuppgifter för appar i Journey Optimizer {#push-credentials-launch}
