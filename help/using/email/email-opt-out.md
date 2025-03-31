@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: a36f3dd1b58b2c40a99d9c2820427f710aa87660
+source-git-commit: 564dcb691d61a2f48694d208644847d7bb65d664
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,19 @@ Om du vill infoga en länk för att avbryta prenumerationen i ditt e-postinnehå
 
 * Infoga en **länk till en landningssida**. [Lär dig hur du lägger till en startsida för avanmälan](#opt-out-external-lp)
 
+När en mottagare klickar på avanmälningslänken behandlas deras avanmälningsförfrågan därefter.
+
+Om du vill kontrollera att den motsvarande profilens val har uppdaterats går du till Experience Platform och [bläddrar till profilen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes-tab). På fliken **[!UICONTROL Attributes]** kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
+
+![](assets/opt-out-profile-choice.png)
+
+>[!NOTE]
+>
+>Ibland kan det ta längre tid att reflektera på profilnivå på grund av databearbetning i efterföljande steg. Ge systemet lite tid att uppdatera.
 
 ## Avanmäl dig i ett steg {#opt-out-one-step}
 
 Med [!DNL Adobe Journey Optimizer] kan du konfigurera dina [e-postkonfigurationsinställningar](email-settings.md#list-unsubscribe) med en automatiskt genererad adress för att avbryta prenumerationen och en e-postadress i e-posthuvudet, eller inkludera en URL för att avanmäla dig med ett enda klick i e-postbrödtexten.
-
-När en mottagare klickar på länken för avanmälan med ett klick behandlas mottagarens begäran om att avbryta prenumerationen därefter.
 
 ### Avbeställ en URL med ett klick i e-postrubriken {#unsubscribe-header}
 
@@ -170,10 +177,4 @@ När du har konfigurerat länken för att avbryta prenumerationen på din landni
    ![](assets/opt-out-confirmation-example.png)
 
    Därför får den här användaren inte information från ert varumärke om han eller hon inte prenumererar igen.
-
-1. Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
-
-   ![](assets/opt-out-profile-choice.png)
-
-   På fliken **[!UICONTROL Attributes]** kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**.
 

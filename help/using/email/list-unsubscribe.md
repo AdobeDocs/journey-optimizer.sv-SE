@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
-source-git-commit: a36f3dd1b58b2c40a99d9c2820427f710aa87660
+source-git-commit: 0fd6c054b9b4df9e3ed900c610e0d1186e479750
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ Beroende på e-postklienten och inställningarna för att avbryta prenumeratione
 >
 >Lär dig hur du hanterar avprenumerationsinställningarna i [det här avsnittet](#enable-list-unsubscribe) nedan.
 
-I båda fallen är motsvarande profil för mottagaren omedelbart avanmäld och valet uppdateras i [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+I båda fallen bearbetas deras begäran om att avbryta prenumerationen när en mottagare klickar på länken för att avanmäla sig. Motsvarande profil är omedelbart avanmäld och det här valet uppdateras i [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
 >[!NOTE]
 >
->I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
+>Ibland kan det ta längre tid att reflektera på profilnivå på grund av databearbetning i efterföljande steg. Ge systemet lite tid att uppdatera.
 
 ## Aktivera avanmälan av lista {#enable-list-unsubscribe}
 
@@ -89,7 +89,13 @@ Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL On
 
    * Om du inte lägger till en länk för avanmälan med ett enda klick i meddelandeinnehållet och standardinställningen **[!UICONTROL One-click unsubscribe URL]** inte är markerad i kanalkonfigurationsinställningarna, skickas ingen URL till e-posthuvudet som en del av rubriken för att avbryta prenumeration av lista.
 
-Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
+  >[!NOTE]
+  >
+  >Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
+
+I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
+
+[!DNL Journey Optimizer] lägger för närvarande inte till någon specifik tagg för att avbryta prenumerationshändelser som utlöses av funktionen för att avsluta prenumerationen. Om du behöver skilja ut avbeställningsklickningar i List från andra avbeställningsåtgärder måste du implementera anpassad taggning externt eller utnyttja en extern landningssida för spårning.
 
 ## Hantera avbeställningsdata externt {#custom-managed}
 
