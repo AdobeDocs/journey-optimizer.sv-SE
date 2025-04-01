@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
-source-git-commit: 514e9072ba2154bdb5d587ed91111f1b3941f6d1
+source-git-commit: 87931614150d6f764f565f683f83db4f63d88ee0
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -69,6 +69,7 @@ Följande funktioner kommer inte att ingå i den här betaversionen:
 * **Svarsmeddelanden**: Automatiska eller fördefinierade svarsmeddelanden stöds inte i den här versionen.
 
 ## Instruktionsvideo {#video}
+
 
 I videon nedan visas hur du skapar en resa med en WhatsApp-åtgärd.
 

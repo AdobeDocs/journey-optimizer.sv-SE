@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
-source-git-commit: 514e9072ba2154bdb5d587ed91111f1b3941f6d1
+source-git-commit: 87931614150d6f764f565f683f83db4f63d88ee0
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 2%
@@ -99,7 +99,7 @@ Observera att din whatsApp-mall först måste godkännas av Meta innan den kan a
 1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för resan eller kampanjkonfigurationen för att konfigurera innehållet i WhatsApp-meddelandet.
 
 <!--
-1. Select **[!UICONTROL Template message]**. 
+1. Select **[!UICONTROL Template message]**.
 -->
 
 1. Välj din **mallkategori**:
