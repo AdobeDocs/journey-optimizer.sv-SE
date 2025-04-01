@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
-source-git-commit: d4ecfecdc74c26890658d68d352c36b75f7c9039
+source-git-commit: ecb479f0875cfe1865a60667da6e2f84fad5044a
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 91%
+source-wordcount: '880'
+ht-degree: 62%
 
 ---
 
@@ -29,7 +29,9 @@ Det här avsnittet innehåller global information om hur du arbetar med API:t. E
 >
 >När gränsvärdet i API:t har uppnåtts köas ytterligare händelser i upp till sex timmar. Detta värde kan inte ändras.
 
-## Beskrivning av API:et för begränsing {#description}
+## Beskrivningar av begränsnings-API och Postman-samling {#description}
+
+I tabellen nedan visas tillgängliga kommandon för begränsnings-API:t. Detaljerad information, inklusive frågeexempel, parametrar och svarsformat, finns i [Adobe Journey Optimizer API:s dokumentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
 
 | Metod | Sökväg | Beskrivning |
 |---|---|---|
@@ -41,6 +43,15 @@ Det här avsnittet innehåller global information om hur du arbetar med API:t. E
 | [!DNL PUT] | /throttlingConfigs/`{uid}` | Uppdatera en begränsningskonfiguration |
 | [!DNL GET] | /throttlingConfigs/`{uid}` | Hämta en begränsningskonfiguration |
 | [!DNL DELETE] | /throttlingConfigs/`{uid}` | Radera en begränsningskonfiguration |
+
+Dessutom finns en Postman-samling [här](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json) som kan hjälpa dig med testkonfigurationen.
+
+Den här samlingen har konfigurerats för att dela Postman Variable-samlingen som genereras via __[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations) > Testa > Hämta för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
+
+När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
+* `{JO_HOST}` : [!DNL Journey Optimizer] Gateway-URL.
+* `{BASE_PATH}` : startpunkt för API.
+* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) för mer information.
 
 ## Begränsningskonfiguration {#configuration}
 
@@ -134,57 +145,6 @@ När du försöker skapa en annan konfiguration:
     "requestId": "A7ezT8JhOQT4WIAf1Fv7K2wCDA8281qM"
 }
 ```
-
-## Användningsfall {#uc}
-
-Det finns en Postman-samling som kan hjälpa dig med testning och konfiguration [här](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json).
-
-Den här Postman-samlingen har konfigurerats för att dela den samling med Postman-variabler som genererats via __[Integreringar i Adobe I/O Console](https://console.adobe.io/integrations) > Testa > Hämta för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
-
-När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
-* `{JO_HOST}`: [!DNL Journey Optimizer] Gateway-URL
-* `{BASE_PATH}` : startpunkt för API.
-* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) för mer information.
-
-I följande avsnitt hittar du listan över Rest API-anrop ordnade för att utföra fallstudien.
-
-Första användningsfallet: **Skapa och driftsätt en ny begränsningskonfiguration**
-
-1. list
-1. create
-1. candeploy
-1. deploy
-
-Andra användningsfallet: **Uppdatera och driftsätt en begränsningskonfiguration som inte har distribuerats ännu**
-
-1. list
-1. get
-1. update
-1. candeploy
-1. deploy
-
-Tredje användningsfallet: **Avbryta driftsättning och radera en driftsatt begränsningskonfiguration**
-
-1. list
-1. undeploy
-1. delete
-
-Fjärde användningsfallet: **Radera en driftsatt begränsningskonfiguration**
-
-I endast ett API-anrop kan du avbryta driftsättning och radera konfigurationen med hjälp av parametern forceDelete.
-
-1. list
-1. radera med parametern forceDelete
-
-Femte användningsfallet: **Uppdatera en begränsningskonfiguration som redan har driftsatts**
-
->[!NOTE]
->
->Du behöver inte avbryta driftsättningen av konfigurationen innan du uppdaterar
-
-1. list
-1. get
-1. update
 
 ## Konfigurationens livscykel på körningsnivå {#config}
 
@@ -338,3 +298,67 @@ När du uppdaterar en konfiguration som redan har driftsatts beaktas de nya vär
     }
 }
 ```
+
+## Användningsfall {#uc}
+
+I det här avsnittet visas viktiga användningsfall för hantering av begränsningskonfigurationer i [!DNL Journey Optimizer] och associerade API-kommandon som krävs för att implementera användningsexemplet.
+
+Information om varje API-kommando finns i [API-beskrivningen och Postman-samlingen](#description).
+
++++Skapa och distribuera en ny begränsningskonfiguration
+
+API-anrop som ska användas:
+
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`create`** - Skapar en ny konfiguration.
+1. **`candeploy`** - Kontrollerar om konfigurationen kan distribueras.
+1. **`deploy`** - Distribuerar konfigurationen.
+
++++
+
++++Uppdatera och distribuera en begränsningskonfiguration (ännu ej distribuerad)
+
+API-anrop som ska användas:
+
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`get`** - Hämtar information om en viss konfiguration.
+1. **`update`** - Ändrar konfigurationen.
+1. **`candeploy`** - Kontrollerar distributionsbehörighet.
+1. **`deploy`** - Distribuerar konfigurationen.
+
++++
+
++++Avdistribuera och ta bort en distribuerad begränsningskonfiguration
+
+API-anrop som ska användas:
+
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`undeploy`** - Avdistribuerar konfigurationen.
+1. **`delete`** - Tar bort konfigurationen.
+
++++
+
++++Ta bort en distribuerad begränsningskonfiguration
+
+I endast ett API-anrop kan du avdistribuera och ta bort konfigurationen med hjälp av parametern `forceDelete`.
+
+API-anrop som ska användas:
+
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`delete`(med parametern `forceDelete`)** - Tvingar borttagning av en distribuerad konfiguration i ett enda steg.
+
++++
+
++++Uppdatera en begränsningskonfiguration som redan har distribuerats
+
+>[!NOTE]
+>
+>Du behöver inte avbryta driftsättningen av konfigurationen innan du uppdaterar
+
+API-anrop som ska användas:
+
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`get`** - Hämtar information om en viss konfiguration.
+1. **`update`** - Ändrar konfigurationen.
+
++++

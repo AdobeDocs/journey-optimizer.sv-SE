@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
-source-git-commit: fd89412703d015fa173f58fa117f65323b954fec
+source-git-commit: ecb479f0875cfe1865a60667da6e2f84fad5044a
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 25%
+source-wordcount: '725'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,9 @@ Med API:t för att hämta innehåll kan du skapa, konfigurera och övervaka dina
 
 Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [dokumentationen för Adobe Journey Optimizer API](https://developer.adobe.com/journey-optimizer-apis/).
 
-## Beskrivning av API för begränsning
+## Beskrivning av API-begränsning och Postman-samling {#description}
+
+Tabellen nedan visar tillgängliga kommandon för API:t för appning. Detaljerad information, inklusive frågeexempel, parametrar och svarsformat, finns i [Adobe Journey Optimizer API:s dokumentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
 
 | Metod | Sökväg | Beskrivning |
 |---|---|---|
@@ -36,6 +38,15 @@ Det här avsnittet innehåller global information om hur du arbetar med API:t. E
 
 När en konfiguration skapas eller uppdateras utförs en kontroll automatiskt för att garantera nyttolastens syntax och integritet.
 Om det uppstår problem returneras en varning eller felmeddelanden som hjälper dig att korrigera konfigurationen.
+
+Dessutom finns en Postman-samling [här](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Capping-API_postman-collection.json) som kan hjälpa dig med testkonfigurationen.
+
+Den här samlingen har konfigurerats för att dela Postman Variable-samlingen som genereras via __[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations) > Testa > Hämta för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
+
+När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
+* `{JO_HOST}` : [!DNL Journey Optimizer] Gateway-URL.
+* `{BASE_PATH}` : startpunkt för API.
+* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) för mer information.
 
 ## Konfiguration av slutpunkt
 
@@ -66,7 +77,7 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
 >
 >Om inget värde för maxHttpConnection har angetts när konfigurationen för begränsning av socket distribueras läggs standardvärdet för maxHttpConnection = -1 till i den distribuerade konfigurationen, vilket innebär att Journey Optimizer kommer att använda standardsystemvärdet.
 
-### Exempel:
+Exempel:
 
 ```
 `{
@@ -112,55 +123,66 @@ Den potentiella varningen är:
 
 ## Användningsfall
 
-I det här avsnittet hittar du de fem huvudsakliga användningsfall som du kan använda för att hantera din appkonfiguration i [!DNL Journey Optimizer].
+I det här avsnittet visas viktiga användningsfall för hantering av appningskonfigurationer i [!DNL Journey Optimizer] och associerade API-kommandon som krävs för att implementera användningsfallet.
 
-Det finns en Postman-samling som kan hjälpa dig med testning och konfiguration [här](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Capping-API_postman-collection.json).
+Information om varje API-kommando finns i [API-beskrivningen och Postman-samlingen](#description).
 
-Den här Postman-samlingen har konfigurerats för att dela den samling med Postman-variabler som genererats via __[Integreringar i Adobe I/O Console](https://console.adobe.io/integrations) > Testa > Hämta för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
++++Skapa och distribuera en ny takkonfiguration
 
-När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
-* `{JO_HOST}`: [!DNL Journey Optimizer] Gateway-URL
-* `{BASE_PATH}` : startpunkt för API.
-* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) för mer information.
+API-anrop som ska användas:
 
-I följande avsnitt hittar du listan över Rest API-anrop ordnade för att utföra fallstudien.
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`create`** - Skapar en ny konfiguration.
+1. **`candeploy`** - Kontrollerar om konfigurationen kan distribueras.
+1. **`deploy`** - Distribuerar konfigurationen.
 
-Användningsfall n°1: **Skapande och distribution av en ny takkonfiguration**
++++
 
-1. list
-1. create
-1. candeploy
-1. deploy
++++Uppdatera och distribuera en capping-konfiguration (inte distribuerad än)
 
-Användningsfall n°2: **Uppdatera och distribuera en takkonfiguration som inte har distribuerats än**
+API-anrop som ska användas:
 
-1. list
-1. get
-1. update
-1. candeploy
-1. deploy
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`get`** - Hämtar information om en viss konfiguration.
+1. **`update`** - Ändrar konfigurationen.
+1. **`candeploy`** - Kontrollerar distributionsbehörighet.
+1. **`deploy`** - Distribuerar konfigurationen.
 
-Användningsfall nr 3: **Avdistribuera och ta bort en distribuerad capping-konfiguration**
++++
 
-1. list
-1. undeploy
-1. delete
++++Avdistribuera och ta bort en distribuerad cachekonfiguration
 
-Användningsfall nr 4: **Ta bort en distribuerad takkonfiguration.**
+API-anrop som ska användas:
 
-I endast ett API-anrop kan du avbryta driftsättning och radera konfigurationen med hjälp av parametern forceDelete.
-1. list
-1. radera med parametern forceDelete
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`undeploy`** - Avdistribuerar konfigurationen.
+1. **`delete`** - Tar bort konfigurationen.
 
-Användningsfall nr 5: **Uppdatera en takkonfiguration som redan distribuerats**
++++
+
++++Ta bort en distribuerad capping-konfiguration i ett enda steg
+
+I endast ett API-anrop kan du avdistribuera och ta bort konfigurationen med hjälp av parametern `forceDelete`.
+
+API-anrop som ska användas:
+
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`delete`(med parametern `forceDelete`)** - Tvingar borttagning av en distribuerad konfiguration i ett enda steg.
+
++++
+
++++Uppdatera en takkonfiguration som redan har distribuerats
 
 >[!NOTE]
 >
->Du måste omdistribuera om du uppdaterar en redan distribuerad konfiguration.
+>En omdistribution krävs efter uppdatering av en redan distribuerad konfiguration.
 
-1. list
-1. get
-1. update
-1. undeploy
-1. candeploy
-1. deploy
+API-anrop som ska användas:
+1. **`list`** - Hämtar befintliga konfigurationer.
+1. **`get`** - Hämtar information om en viss konfiguration.
+1. **`update`** - Ändrar konfigurationen.
+1. **`undeploy`** - Avdistribuerar konfigurationen innan ändringarna tillämpas.
+1. **`candeploy`** - Kontrollerar distributionsbehörighet.
+1. **`deploy`** - Distribuerar den uppdaterade konfigurationen.
+
++++
