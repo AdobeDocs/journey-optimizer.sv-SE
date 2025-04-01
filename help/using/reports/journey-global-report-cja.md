@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 30d4f967-e085-44f1-973d-11e79f693e6e
-source-git-commit: b9dbda18b2e997d6c3acc9763cbb0088abbece1b
+source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,6 @@ Rapporten **[!UICONTROL Journey]** ger dig en tydlig bild av de viktigaste spår
 
 * **[!UICONTROL Journey exits]**: Totalt antal personer som avbrutit resan.
 
-* **[!UICONTROL Journey failures]**: Totalt antal enskilda resor som inte kördes korrekt.
-
 +++
 
 ### Resestatistik {#journey-stats}
@@ -54,6 +52,8 @@ Rapporten **[!UICONTROL Journey]** ger dig en tydlig bild av de viktigaste spår
 Tabellen **[!UICONTROL Journey Statistics]** innehåller en detaljerad sammanfattning av viktiga data om dina resor. Det innehåller viktiga mätvärden som antalet misslyckanden och lyckade tävlingsbidrag, som ger värdefulla insikter om hur väl era e-postmeddelanden och resor fungerar och når ut.
 
 +++ Läs mer om statistik om resan
+
+* **[!UICONTROL Journey exclusion]**: Totalt antal personer som har uteslutits från resan på grund av fördefinierade kriterier eller undertryckningsregler.
 
 * **[!UICONTROL Journey engagement]**: Totalt antal unika personer som tagit emot meddelanden som skickats genom resan, vilket representerar distinkta profiler som nått en angiven åtgärdspunkt under resan.
 
@@ -70,6 +70,16 @@ Tabellen **[!UICONTROL Journey Statistics]** innehåller en detaljerad sammanfat
 * **[!UICONTROL Unique Journey failures]**: Totalt antal enskilda resor som inte har utförts, flera interaktioner i en profil beaktas inte.
 
 +++
+
+## Uteslutning av resor {#journey-exclusion}
+
+Tabellen **[!UICONTROL Journey exclusion]** innehåller en heltäckande bild av de olika faktorer som ledde till att användarprofiler exkluderades.
+
+## Åtgärdsfel {#action-error}
+
+![](assets/cja-journey-action-error.png)
+
+Widgeten **[!UICONTROL Action errors]** innehåller information om de olika fel som uppstod för kundens åtgärder.
 
 ## Reseduk {#journey-canvas}
 
@@ -106,9 +116,11 @@ Tabellen **[!UICONTROL Action overview]** fungerar som en omfattande kontrollpan
 
 +++ Läs mer om mätvärden i Åtgärdsöversikt
 
-* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina åtgärder.
+* **[!UICONTROL Node enters]**: Totalt antal personer som har angett en specifik nod under resan.
 
-* **[!UICONTROL Click trough rate]**: Procentandel användare som interagerade med åtgärden.
+* **[!UICONTROL Journey failure]**: Totalt antal enskilda resor som inte kördes korrekt.
+
+* **[!UICONTROL Click through rate]**: Procentandel användare som interagerade med åtgärden.
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina åtgärder.
 

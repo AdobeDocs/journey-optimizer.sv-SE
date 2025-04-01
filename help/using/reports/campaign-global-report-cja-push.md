@@ -7,9 +7,10 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: 43b10f54-0c19-46a1-8d51-eb6bf22e6da9
+source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -24,15 +25,13 @@ Tabellen **[!UICONTROL Sending Statistics]** innehåller en omfattande sammanfat
 
 +++ Läs mer om Skicka statistik-statistik
 
-* **[!UICONTROL People]**: Antal användarprofiler som är kvalificerade som målprofiler för dina push-meddelanden.
-
 * **[!UICONTROL Targeted]**: Totalt antal push-meddelanden som bearbetats under analysen.
 
 * **[!UICONTROL Sends]**: Totalt antal skickade för push-meddelandet.
 
 * **[!UICONTROL Delivered]**: Antal push-meddelanden som har skickats, i relation till det totala antalet skickade push-meddelanden.
 
-* **[!UICONTROL Bounces for outbound channels]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal push-meddelanden.
+* **[!UICONTROL Unique delivered]**: Antal profiler som har tagit emot minst ett push-meddelande.
 
 * **[!UICONTROL Outbound errors]**: Totalt antal fel som har inträffat som förhindrar att den skickas till profiler.
 
@@ -50,18 +49,15 @@ Tabellen **[!UICONTROL Tracking statistics]** erbjuder en detaljerad ögonblicks
 
 * **[!UICONTROL Click through rate (CTR)]**: Procentandel användare som interagerade med push-meddelanden.
 
-* **[!UICONTROL Click through open rate (CTOR)]**: Antal gånger som push-meddelanden öppnades.
-
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina push-meddelanden.
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina push-meddelanden.
 
-<!--
-* **[!UICONTROL Push custom actions]**: 
--->
+* **[!UICONTROL Push custom actions]**: Antal anpassade åtgärder som vidtas av profiler som svar på push-meddelanden.
+
 +++
 
-## Spårade länketiketter {#track-link-label-push}
+## Spårade etiketter {#track-link-label-push}
 
 ![](assets/cja-campaign-push-link-labels.png)
 
@@ -97,7 +93,7 @@ Tabellen **[!UICONTROL Bounces Reasons]** innehåller en omfattande översikt ö
 
 I tabellen **[!UICONTROL Error Reasons]** kan du identifiera de specifika fel som uppstod under sändningsprocessen för dina push-meddelanden, vilket underlättar en grundlig analys av eventuella problem som uppstått.
 
-## Undantagna orsaker {#exclude-reasons-push}
+## Exkludera orsaker {#exclude-reasons-push}
 
 ![](assets/cja-campaign-push-excluded.png)
 

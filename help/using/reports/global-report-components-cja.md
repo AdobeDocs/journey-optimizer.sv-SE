@@ -7,9 +7,10 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 25122d6770750e6ae58d3dd8a890547a068a484e
+exl-id: aa060d8e-23e2-4bab-b709-636077eb5d20
+source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1362'
 ht-degree: 0%
 
 ---
@@ -28,149 +29,181 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
  </thead> 
  <tbody> 
-  <tr> 
-   <td>Åtgärderna har utförts<br/> </td> 
-   <td> Totalt antal slutförda åtgärder för en resa.<br/> </td> 
+<tr> 
+<td>Reseengagemang</td> 
+<td>Totalt antal unika personer som tagit emot meddelanden som skickats genom resan, vilket representerar distinkta profiler som nått en angiven åtgärdspunkt under resan.</td> 
 </tr> 
-  <tr> 
-   <td> Angivna profiler<br/> </td> 
-   <td> Totalt antal personer som har nått resans anmälningshändelse.<br/> </td> 
+<tr> 
+<td>Resenärer</td> 
+<td>Totalt antal personer som har nått resans inträde.</td> 
 </tr>
-  <tr> 
-   <td> Fel i åtgärd <br/> </td> 
-   <td>Totalt antal fel som uppstod för åtgärder.<br/> </td> 
-</tr> 
-  <tr> 
-   <td> Avslutade profiler<br/> </td> 
-   <td> Totalt antal personer som avbrutit resan.<br/> </td> 
-</tr> 
-  <tr> 
-   <td> Enskild resa misslyckades <br/> </td> 
-   <td> Totalt antal enskilda resor som inte gick att utföra.<br/> </td> 
-</tr> 
+<tr> 
+<td>Reseutträde</td> 
+<td>Totalt antal personer som avbrutit resan.</td> 
+</tr>
+<tr> 
+<td>Resefel</td> 
+<td>Totalt antal enskilda resor som inte har slutförts.</td> 
+</tr>
+<tr> 
+<td>Unika resebyråer</td> 
+<td>Totalt antal personer som har nått ingångshändelsen för resan, där flera interaktioner med samma profil inte har beaktats.</td> 
+</tr>
+<tr> 
+<td>Unika reseutträden</td> 
+<td>Totalt antal personer som avbrutit resan, där flera interaktioner med samma profil inte beaktas.</td> 
+</tr>
+<tr> 
+<td>Unika misslyckade resor</td> 
+<td>Totalt antal enskilda resor som inte har slutförts utan flera interaktioner med samma profil beaktas inte.</td> 
+</tr>
  </tbody> 
 </table>
 
-## Dimensioner och mått för e-post och SMS {#email-and-sms-metrics}
+## E-postmått {#email-metrics}
 
 <table> 
  <thead> 
   <tr> 
    <th> Mått <br/> </th> 
    <th> Definition <br/> </th> 
-</tr>
+  </tr>
  </thead> 
  <tbody>
   <tr> 
    <td> studsar<br/> </td> 
    <td> Totalt antal fel som har kumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal skickade meddelanden.<br/> </td> 
-</tr> 
+  </tr> 
   <tr> 
-   <td> Studsfrekvens <br/> </td> 
-   <td> Procentandel e-postmeddelanden som studsade jämfört med skickade e-postmeddelanden.<br/> </td> 
-</tr>
+   <td> Klicka genom öppningsfrekvens (CTOR)<br/> </td> 
+   <td> Antal gånger som e-postmeddelandet öppnades.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Klicka genom frekvens (CTR)<br/> </td> 
+   <td> Procentandel användare som interagerade med e-postmeddelandet.<br/> </td> 
+  </tr>
   <tr> 
    <td> Klicka <br/> </td> 
    <td> Antal gånger som ett innehåll klickades i ett e-postmeddelande.<br/> </td> 
-</tr> 
+  </tr> 
   <tr> 
    <td> Levererat <br/> </td> 
    <td> Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.<br/></td> 
-</tr> 
+  </tr> 
   <tr> 
    <td> Leveransnivå <br/> </td> 
    <td> Procentandel meddelanden som skickades.<br/> </td> 
-</tr>
-  <tr> 
-   <td> Fel <br/> </td> 
-   <td> Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.<br/> </td> 
-</tr> 
-  <tr> 
-   <td> Felfrekvens <br/> </td> 
-   <td> Procentandel fel som uppstod under sändningsprocessen som förhindrade att den skickades jämfört med skickade e-postmeddelanden.<br/> </td> 
-</tr>
-</tr> 
+  </tr>
   <tr> 
    <td> Felorsak<br/> </td> 
    <td> Namnet på den specifika ursprungliga orsaken till felet. <a href="exclusion-list.md">Läs mer om felorsaker</a>.<br/> </td> 
-</tr>
+  </tr>
   <tr> 
-   <td> Utesluten<br/> </td> 
-   <td> Antal profiler som har uteslutits av Adobe Journey Optimizer.<br/> </td> 
-</tr>
+   <td> Erbjud klickfrekvens <br/> </td> 
+   <td> Procentandel användare som interagerade med erbjudandet.<br/> </td> 
+  </tr>
   <tr> 
-   <td> Hårt studs<br/> </td> 
-   <td> Det totala antalet permanenta fel, t.ex. fel e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.<br/> </td>
-</tr>
+   <td> Erbjud visningsfrekvens <br/> </td> 
+   <td> Procentandel öppnade erbjudanden jämfört med antalet skickade erbjudanden.<br/> </td> 
+  </tr>
   <tr> 
-   <td> Ignorerad<br/> </td> 
-   <td> Det totala antalet tillfälliga, till exempel frånvaro, eller ett tekniskt fel, till exempel om avsändartypen är postmaster.<br/> </td> 
-</tr>
-   <tr> 
-   <td>Erbjud klickfrekvens <br/> </td> 
-   <td>Procentandel användare som interagerade med erbjudandet.<br/> </td> 
-</tr>
-   <tr> 
-   <td>Erbjud visningsfrekvens <br/> </td> 
-   <td>Procentandel öppnade erbjudanden jämfört med antalet skickade erbjudanden.<br/> </td> 
-</tr>
-   <tr> 
-   <td>Erbjudandenamn <br/> </td> 
+   <td> Erbjudandenamn <br/> </td> 
    <td> Namn på erbjudandet som lagts till i leveransen. Mer information om placering finns på <a href="../offers/offer-library/creating-personalized-offers.md">sidan</a>.<br/> </td> 
-</tr>
-   <tr> 
-   <td>Erbjudandet har skickats<br/> </td> 
-   <td>Totalt antal utskick för erbjudandet.<br/> </td> 
-</tr> 
-  <tr>
-   <td>Öppnar <br/> </td> 
+  </tr>
+  <tr> 
+   <td> Erbjudandet har skickats<br/> </td> 
+   <td> Totalt antal utskick för erbjudandet.<br/> </td> 
+  </tr> 
+  <tr> 
+   <td> Öppnar <br/> </td> 
    <td> Antal gånger som meddelandet öppnades.<br/> </td> 
-</tr> 
+  </tr> 
   <tr> 
-   <td> Öppningsfrekvens <br/> </td> 
-   <td> Totalt antal öppnade e-postmeddelanden jämfört med antalet levererade e-postmeddelanden.<br/> </td> 
-</tr>
+   <td> Utgående fel <br/> </td> 
+   <td> Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.<br/> </td> 
+  </tr> 
   <tr> 
-   <td>Placeringsnamn <br/> </td> 
+   <td> Utgående undantag <br/> </td> 
+   <td> Antal profiler som har uteslutits av Adobe Journey Optimizer.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Placeringsnamn <br/> </td> 
    <td> Namn på den placering som användes för att visa ditt erbjudande. Mer information om placering finns på den här <a href="../offers/offer-library/creating-placements.md">sidan</a>. </td> 
-</tr> 
-  <tr> 
-   <td> Försök <br/> igen </td> 
-   <td> Antal e-postmeddelanden i kön för återförsök.<br/> </td> 
-</tr> 
-  <tr> 
-   <td> Skickat <br/> </td> 
-   <td> Totalt antal försändelser för leveransen.<br/> </td> 
-</tr>
-  <tr> 
-   <td> Mjuk studs <br/> </td> 
-   <td> Totalt antal tillfälliga fel, t.ex. en fullständig inkorg.<br/> </td> 
-</tr>
+  </tr>
   <tr> 
    <td> Skräppost<br/> </td> 
    <td> Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.<br/> </td> 
-</tr>
+  </tr> 
   <tr> 
    <td> Målinriktad<br/> </td> 
    <td> Totalt antal meddelanden som bearbetats under leveransanalysen.<br/> </td> 
-</tr> 
+  </tr> 
   <tr> 
    <td> Unika klick<br/> </td> 
-   <td> Antal mottagare som klickat på ett innehåll i ett e-postmeddelande.<br> Observera att de senaste tio dagarna beaktas när unika klick beräknas. Om en profil registrerar flera klick inom 10-dagarsperioden räknas de som unika klick. Om en profil har 2 klick med mer än 10 dagars mellanrum betraktas de inte som unika klick.<br/> </td> 
-</tr> 
+   <td> Antal profiler som klickat på ett innehåll i ett e-postmeddelande.<br> Observera att de senaste tio dagarna beaktas när unika klick beräknas. Om en profil registrerar flera klick inom 10-dagarsperioden räknas de som unika klick. Om en profil har 2 klick med mer än 10 dagars mellanrum betraktas de inte som unika klick.<br/> </td> 
+  </tr>
   <tr> 
-   <td>Unik klickfrekvens <br/> </td> 
-   <td> Procentandel användare som interagerade med leveransen.<br/> </td> 
-</tr>
+   <td> Unik avbeställning av e-post<br/> </td> 
+   <td> Antal profiler som avbrutit prenumerationen på dina e-postmeddelanden.<br/> </td> 
+  </tr>
   <tr> 
    <td> Unika öppna<br/> </td> 
-   <td>Antal mottagare som öppnade leveransen. <br> Observera att de senaste tio dagarna beaktas när unika öppningar beräknas. Om en profil registrerar flera öppningar inom 10-dagarsperioden räknas de som unika öppningar. Om en profil har 2 öppningar med mer än 10 dagars mellanrum räknas de inte som unika öppningar.<br/> </td> 
-</tr> 
+   <td> Antal profiler som öppnade leveransen. <br> Observera att de senaste tio dagarna beaktas när unika öppningar beräknas. Om en profil registrerar flera öppningar inom 10-dagarsperioden räknas de som unika öppningar. Om en profil har 2 öppningar med mer än 10 dagars mellanrum räknas de inte som unika öppningar.<br/> </td> 
+  </tr> 
   <tr> 
-   <td> Avbeställer <br/> </td> 
+   <td> Avbeställer<br/> </td> 
    <td> Antal klick på länken för att avbryta prenumerationen.<br/> </td> 
-</tr> 
+  </tr> 
  </tbody> 
+</table>
+
+## SMS-mått
+
+<table> 
+  <thead> 
+    <tr> 
+      <th> SMS-mått </th> 
+      <th> Definition </th> 
+    </tr>
+  </thead> 
+  <tbody> 
+    <tr> 
+      <td>Levererat</td> 
+      <td>Antal SMS-meddelanden som har skickats, i relation till totalt antal SMS-meddelanden.</td> 
+    </tr>
+    <tr> 
+      <td>Klickningar</td> 
+      <td>Antal gånger som en länk i ett SMS-meddelande klickades.</td> 
+    </tr>
+    <tr> 
+      <td>Avrundningar för utgående SMS-meddelanden</td> 
+      <td>Totalt antal fel som uppstått under sändningsprocessen och automatisk returbehandling i relation till totalt antal skickade SMS-meddelanden.</td> 
+    </tr>
+    <tr> 
+      <td>Utgående SMS-fel</td> 
+      <td>Totalt antal fel som inträffat, vilket förhindrar att SMS-meddelandet skickas till mottagarna.</td> 
+    </tr>
+    <tr> 
+      <td>Utgående SMS-undantag</td> 
+      <td>Antal profiler som har uteslutits från att ta emot SMS-meddelanden från Adobe Journey Optimizer.</td> 
+    </tr>
+    <tr> 
+      <td>Unika klick</td> 
+      <td>Antal unika mottagare som klickat på en länk i ett SMS-meddelande.</td> 
+    </tr>
+    <tr> 
+      <td>Visar</td> 
+      <td>Antal gånger ett SMS-meddelande visades eller öppnades.</td> 
+    </tr>
+    <tr> 
+      <td>Unika bildskärmar</td> 
+      <td>Antal unika mottagare som öppnade SMS-meddelandet, exklusive flera interaktioner från samma användare.</td> 
+    </tr>
+    <tr> 
+      <td>Folk</td> 
+      <td>Antal unika användarprofiler som har tagit emot eller interagerat med ett SMS-meddelande.</td> 
+    </tr>
+  </tbody> 
 </table>
 
 <!--
@@ -229,11 +262,11 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
   <tr> 
    <td>Unique email opens<br/> </td> 
-   <td>Number of recipients who opened the email.<br/> </td>
+   <td>Number of profiles who opened the email.<br/> </td>
 <tr>
   <tr> 
    <td>Unique email unsubscribes<br/> </td> 
-   <td>Number of recipients who clicked on the unsubscription link.<br/> </td>
+   <td>Number of profiles who clicked on the unsubscription link.<br/> </td>
 </tr>
   <tr> 
    <td>Unique installs<br/> </td> 
@@ -259,35 +292,70 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 -->
 
 ## Mätvärden i appen {#inapp-metrics}
-
 <table> 
  <thead> 
   <tr> 
    <th> Mått <br/> </th> 
    <th> Definition <br/> </th> 
-</tr>
+  </tr>
  </thead> 
  <tbody>
- <tr> 
+  <tr> 
    <td>Klicka <br/> </td> 
-   <td>Totalt antal mottagare som interagerat med knapparna i meddelandet i appen.<br/> </td> 
-</tr>
+   <td>Totalt antal profiler som interagerat med knapparna i meddelandet i appen.<br/> </td> 
+  </tr>
   <tr> 
    <td>Klickfrekvens <br/> </td> 
    <td>Procentandel användare som interagerade med knapparna i meddelandet i appen jämfört med användare som såg meddelandet.<br/> </td> 
-</tr> 
+  </tr>
   <tr> 
    <td>Frånkopplingsfrekvens <br/> </td> 
-   <td> Procentandel av meddelanden i appen som mottagarna avvisade.<br/> </td> 
-</tr> 
+   <td>Procentandel av meddelanden i appen som profiler stängs.<br/> </td> 
+  </tr>
   <tr> 
    <td>Impressions<br/> </td> 
-   <td> Totalt antal meddelanden i appen som levereras till alla användare.<br/> </td>
-</tr>
+   <td>Totalt antal meddelanden i appen som levereras till alla användare.<br/> </td>
+  </tr>
   <tr> 
    <td>Unika avtryck <br/> </td> 
    <td>Antal unika användare som meddelandet i appen levererades till.<br/> </td>
-</tr>
+  </tr>
+  <tr> 
+   <td>Visar<br/> </td>
+   <td>Antal gånger som meddelandet i appen öppnades.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Unika skärmar <br/> </td>
+   <td>Antal gånger som meddelandet i appen öppnades, exklusive flera interaktioner från samma profil.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Unika klick<br/> </td>
+   <td>Antal profiler som klickat på innehåll i meddelanden i appen.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Klicka <br/> </td>
+   <td>Antal gånger som innehåll klickades på i dina meddelanden i appen.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Klicka genom frekvens (CTR)<br/> </td>
+   <td>Procentandel användare som interagerade med meddelanden i appen.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Klicka genom öppningsfrekvens (CTOR)<br/> </td>
+   <td>Antal gånger som meddelandet i appen öppnades.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Skickar<br/> </td>
+   <td>Totalt antal skickade meddelanden i appen.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Inkommande utlöst <br/> </td>
+   <td>Antal gånger ett meddelande i appen utlöstes av en användarinteraktion eller en fördefinierad händelse.<br/> </td>
+  </tr>
+  <tr> 
+   <td>Inkommande avhopp <br/> </td>
+   <td>Antal gånger som användare har stängt meddelandet i appen utan att interagera med det.<br/> </td>
+  </tr>
  </tbody> 
 </table>
 
@@ -352,7 +420,11 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   <tr> 
    <td> Öppen frekvens <br/> </td> 
    <td> Procentandel öppna push-meddelanden.<br/> </td> 
-</tr> 
+</tr>
+  <tr> 
+   <td> Skjut anpassade åtgärder <br/> </td> 
+   <td>Antal anpassade åtgärder som har vidtagits av profiler som svar på push-meddelanden.<br/> </td> 
+</tr>
   <tr> 
    <td> Skickat <br/> </td> 
    <td> Totalt antal försändelser för leveransen.<br/> </td> 
@@ -409,15 +481,15 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
  <tr> 
    <td>Totalt antal besök <br/> </td> 
-   <td> Totalt antal besök på din landningssida som kommer från resor och externa källor, inklusive flera besök av en mottagare.<br/> </td> 
+   <td> Totalt antal besök på din landningssida som kommer från resor och externa källor, inklusive flera besök av en profil.<br/> </td> 
 </tr>
  <tr> 
    <td>Unika besökare<br/> </td> 
-   <td>Antal personer som besökte din landningssida, flera besök av en mottagare räknas inte.<br/> </td> 
+   <td>Antal personer som besökte din landningssida, flera besök i en profil räknas inte.<br/> </td> 
 </tr>
  <tr> 
    <td>Besök<br/> </td> 
-   <td>Antal besök på din landningssida, inklusive flera besök av en mottagare.<br/> </td> 
+   <td>Antal besök på din landningssida, inklusive flera besök på en profil.<br/> </td> 
 </tr>
  </tbody> 
 </table>

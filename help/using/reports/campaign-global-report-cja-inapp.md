@@ -9,16 +9,16 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
 # Kampanjrapport i appen {#campaign-global-report-cja-inapp}
 
-## Trend för tryck och klickning {#impression-click-trend}
+## Visa och klicka på trend {#impression-click-trend}
 
 ![](assets/cja-inapp-impressions-click.png)
 
@@ -34,6 +34,8 @@ Diagrammet **[!UICONTROL Impression & Click trend]** innehåller en detaljerad a
 
 ## Klickningar {#clicks-inapp}
 
+![](assets/cja-campaign-inapp-clicks.png)
+
 Diagrammet **[!UICONTROL Clicks]** visar klickvärden i appen, som visar både det totala antalet innehållsklickningar och antalet unika profiler som klickade på innehållet.
 
 +++ Läs mer om klickningsstatistik
@@ -46,6 +48,8 @@ Diagrammet **[!UICONTROL Clicks]** visar klickvärden i appen, som visar både d
 
 ## Visa {#display-inapp}
 
+![](assets/cja-campaign-inapp-displays.png)
+
 Diagrammet **[!UICONTROL Displays]** hjälper dig att förstå både meddelandets övergripande räckvidd och antalet unika profiler som är kopplade till det.
 
 +++ Läs mer om visningsmått
@@ -57,6 +61,8 @@ Diagrammet **[!UICONTROL Displays]** hjälper dig att förstå både meddelandet
 +++
 
 ## Spårningsdata {#tracking-data-inapp}
+
+![](assets/cja-campaign-inapp-tracking-data.png)
 
 Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina meddelanden i appen, vilket ger viktiga insikter i hur engagemanget och i appmeddelanden fungerar.
 
@@ -78,11 +84,11 @@ Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbil
 
 * **[!UICONTROL Sends]**: Totalt antal skickade meddelanden i appen.
 
-<!--
-* **[!UICONTROL Inbound triggered]**: 
+* **[!UICONTROL Inbound triggered]**: Antal gånger ett meddelande i appen utlöstes av en användarinteraktion eller en fördefinierad händelse.
 
-* **[!UICONTROL Inbound dismisses]**: 
--->
+* **[!UICONTROL Inbound dismisses]**: Antal gånger som användare har stängt meddelandet i appen utan att interagera med det.
+
+
 +++
 
 ## Spårade länketiketter {#track-link-label-inapp}

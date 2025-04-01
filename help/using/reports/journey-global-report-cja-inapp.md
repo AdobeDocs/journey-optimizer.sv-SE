@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f10b3ab9-db0a-4759-98e4-2ac1988eb8c4
-source-git-commit: 673e86ccd07c7afdf0b87859434145f16f7b7d26
+source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -83,11 +83,10 @@ Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbil
 
 * **[!UICONTROL Sends]**: Totalt antal skickade meddelanden i appen.
 
-<!--
-* **[!UICONTROL Inbound triggered]**: 
+* **[!UICONTROL Inbound triggered]**: Antal gånger ett meddelande i appen utlöstes av en användarinteraktion eller en fördefinierad händelse.
 
-* **[!UICONTROL Inbound dismisses]**: 
--->
+* **[!UICONTROL Inbound dismisses]**: Antal gånger som användare har stängt meddelandet i appen utan att interagera med det.
+
 +++
 
 ## Spårade länketiketter {#track-link-label-inapp}

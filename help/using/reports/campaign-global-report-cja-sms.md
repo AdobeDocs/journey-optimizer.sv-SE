@@ -7,7 +7,8 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: bd743a3b-0317-45d9-8e76-98d5cc258752
+source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
@@ -17,6 +18,8 @@ ht-degree: 0%
 # SMS-kampanjrapport {#campaign-global-report-cja-sms}
 
 ## Levererat kontra klicktrend {#delivered-click-sms}
+
+![](assets/cja-campaign-sms-delivered.png)
 
 Diagrammet **[!UICONTROL Delivered vs Click trend]** innehåller en detaljerad analys av hur dina profiler interagerar med dina e-postmeddelanden, och ger värdefulla insikter om hur profiler interagerar med ditt innehåll.
 
@@ -29,6 +32,8 @@ Diagrammet **[!UICONTROL Delivered vs Click trend]** innehåller en detaljerad a
 +++
 
 ## Leveransstatus {#delivery-status-sms}
+
+![](assets/cja-campaign-sms-status.png)
 
 Tabellen **[!UICONTROL Delivery status]** innehåller en detaljerad redovisning av profilaktivitet som är relaterad till dina SMS-kampanjer. Detta inkluderar mätvärden för levererade data, klickningar och andra relevanta interaktionsindikatorer, som ger en heltäckande bild av hur profiler interagerar med ert SMS-innehåll.
 

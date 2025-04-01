@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 82558447-9d42-4fac-8fc1-fded9bf4bfcc
-source-git-commit: 32f34b6e2a5cd3eda6de9177c5a4b5c2be7b8058
+source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -65,15 +65,15 @@ Tabellen **[!UICONTROL Sending Statistics]** ger en tydlig bild av hur dina e-po
 
 +++ Läs mer om Skicka statistik-statistik
 
-* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
-
 * **[!UICONTROL Targeted]**: Totalt antal e-postmeddelanden som bearbetats under sändningsprocessen.
 
 * **[!UICONTROL Sends]**: Totalt antal skickade meddelanden för din e-post.
 
 * **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
-* **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal skickade meddelanden.
+* **[!UICONTROL Unique Delivered]**: Antal profiler som har tagit emot minst ett e-postmeddelande.
+
+* **[!UICONTROL Bounces for outbound channels]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal skickade meddelanden.
 
 * **[!UICONTROL Outbound Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
 
@@ -91,25 +91,26 @@ Tabellen **[!UICONTROL Email - Tracking statistics]** innehåller en detaljerad 
 
 * **[!UICONTROL Click through rate (CTR)]**: Procentandel användare som interagerade med e-postmeddelandet.
 
-* **[!UICONTROL Click-through open rate (CTOR)]**: Antal gånger som e-postmeddelandet öppnades.
+* **[!UICONTROL Click through open rate (CTOR)]**: Antal gånger som e-postmeddelandet öppnades.
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina e-postmeddelanden.
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i ett e-postmeddelande.
 
-* **[!UICONTROL Email Opens]**: Antal gånger som dina e-postmeddelanden öppnats under en resa.
+* **[!UICONTROL Email Opens]**: Antal gånger som dina e-postmeddelanden öppnats i en kampanj.
 
-* **[!UICONTROL Unique Email Opens]**: Procentandel öppnade e-postmeddelanden.
+* **[!UICONTROL Unique Email Opens]**: Antal profiler som öppnade e-postmeddelanden.
 
 * **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
 
 * **[!UICONTROL Unsubscribes]**: Antal klick på länken för att avbryta prenumerationen.
 
+* **[!UICONTROL Unique Email Unsubscribes]**: Antal profiler som avbröt prenumerationen på dina e-postmeddelanden.
 +++
 
 ## E-postdomäner {#email-domains}
 
-![](assets/cja-journey-email-domain.png)
+![](assets/cja-email-email-domains.png)
 
 Tabellen **[!UICONTROL Email Domains]** innehåller en detaljerad beskrivning av e-postmeddelanden kategoriserade efter domän, vilket ger omfattande insikter om prestandamätningarna för dina e-postresor. Denna omfattande analys gör att ni kan förstå beteendet hos olika domäner som svar på ert e-postinnehåll.
 
@@ -126,6 +127,9 @@ Tabellen **[!UICONTROL Email Domains]** innehåller en detaljerad beskrivning av
 * **[!UICONTROL Bounces for outbound channels]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal skickade e-postmeddelanden.
 
 * **[!UICONTROL Outbound Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
+
+* **[!UICONTROL Outbound Exclusions]**: Antal profiler som har undantagits av Adobe Journey Optimizer.
+
 +++
 
 ## Spårade länketiketter {#track-link-label}
@@ -154,31 +158,33 @@ Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt 
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina e-postmeddelanden.
 
-* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
-
-* **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
-
 +++
+
 
 ## E-postämnen {#email-subject}
 
-![](assets/cja-journey-email-subjects.png)
+![](assets/cja-email-subject.png)
 
 Tabellen **[!UICONTROL Email subjects]** innehåller en grundlig översikt över e-postämnen som har fått den högsta besökstrafiken. Den här resursen ger värdefulla insikter om målgruppsengagemangets dynamik.
 
 +++ Läs mer om ämnesstatistik för e-post
 
-* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina e-postmeddelanden.
+* **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade e-postmeddelanden.
 
+* **[!UICONTROL Unique Delivered]**: Antal distinkta profiler som lyckades ta emot minst ett e-postmeddelande, vilket säkerställer att dubbletter inte räknas.
 +++
 
 ## Brytningsorsaker {#email-bounce-reasons}
+
+![](assets/cja-journey-email-bounce.png)
 
 Tabellen **[!UICONTROL Bounce Reasons]** kompilerar tillgängliga data som är relaterade till studsade meddelanden och ger detaljerade insikter om de specifika orsakerna bakom e-poststudsar.
 
 Mer information om studsar finns på sidan [Suppressionslista](../reports/suppression-list.md).
 
 ## Undantagna orsaker {#email-excluded}
+
+![](assets/cja-journey-email-excluded.png)
 
 Tabellen **[!UICONTROL Excluded reasons]** ger en heltäckande bild av de olika faktorer som har lett till att användarprofiler har exkluderats från målgruppen, vilket leder till att meddelandet inte tas emot.
 
