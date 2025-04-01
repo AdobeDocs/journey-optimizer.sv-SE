@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 48ef8d42057ffe51c27221c2176192d4e637fb96
+source-git-commit: 6ce4bc2874b90b7ff9634fc56d8a0f89a8bead31
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '564'
 ht-degree: 8%
 
 ---
@@ -30,24 +30,24 @@ ht-degree: 8%
 
 De nya funktionerna i den här versionen beskrivs nedan.
 
-<table>
+<!--table>
 <thead>
 <tr>
-<th><strong>Integrering med Adobe Express (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Integration with Adobe Express (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Tack vare Adobe Express-integrationen i Adobe Journey Optimizer kan du använda Adobe Express redigeringsverktyg direkt när du skapar innehåll. Du kan ändra storlek på, ta bort bakgrunder, beskära och konvertera resurser till JPEG eller PNG.<p>
-<p>Adobe Express-integrering i Adobe Journey Optimizer är för närvarande bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Den får inte användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.</p>
-<p>Mer information finns i den <a href="../integrations/express.md">detaljerade dokumentationen</a>.</p>
+<p>The Adobe Express integration in Adobe Journey Optimizer lets you use Adobe Express's editing tools directly during content creation, enabling you to resize, remove backgrounds, crop, and convert assets to JPEG or PNG.<p>
+<p>Adobe Express integration in Adobe Journey Optimizer is currently only available for a set of organizations (Limited Availability). It cannot be deployed for use with Healthcare Shield or Privacy and Security Shield.</p>
+<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>
 </br>
 <img src="assets/do-not-localize/express_resize.gif"/>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 
 <!--table>
