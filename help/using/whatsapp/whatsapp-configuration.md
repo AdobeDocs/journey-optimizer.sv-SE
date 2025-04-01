@@ -9,9 +9,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
-source-git-commit: 22664437fb1f548f4c1524ea5fa7ac9e7fdc7f59
+exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
+source-git-commit: a40907925c7f8c783a3baf9673009a54f433b960
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '431'
 ht-degree: 2%
 
 ---
@@ -42,7 +43,7 @@ Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](
 
 1. Konfigurera dina API-autentiseringsuppgifter enligt nedanstående:
 
-   * **API-token**: https://developers.facebook.com/docs/facebook-login/guides/access-tokens/
+   * **API-token**: Ange din API-token. Läs mer i [Metadatadokumentation](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/)
    * **Konto-ID**: Ange det unika nummer som hör till din företagsportfölj. Läs mer i [Metadatadokumentation](https://www.facebook.com/business/help/1181250022022158?id=180505742745347).
 
    ![](assets/whatsapp-api.png)
@@ -88,7 +89,7 @@ När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du n
 
 1. Välj **[!UICONTROL Marketing action(s)]** om du vill associera medgivandeprinciper till meddelanden med den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. Läs mer
 
-1. Markera tidigare skapade **[!UICONTROL WhatsApp configuration]**.
+1. Markera tidigare skapade **[!UICONTROL WhatsApp API configuration]**.
 
    ![](assets/whatsapp-config-3.png)
 

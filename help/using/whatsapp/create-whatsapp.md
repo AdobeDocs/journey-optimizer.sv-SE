@@ -10,9 +10,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
-source-git-commit: 22664437fb1f548f4c1524ea5fa7ac9e7fdc7f59
+exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
+source-git-commit: a40907925c7f8c783a3baf9673009a54f433b960
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '584'
 ht-degree: 2%
 
 ---
@@ -31,8 +32,6 @@ ht-degree: 2%
 >[!ENDSHADEBOX]
 
 Med Adobe Journey Optimizer kan du utforma och skicka engagerande meddelanden om whatsApp. Lägg bara till en whatsApp-åtgärd till resan eller kampanjen och skapa meddelandeinnehållet enligt beskrivningen nedan. Med Adobe Journey Optimizer kan du också testa dina whatsApp-meddelanden innan du skickar dem, vilket ger perfekt återgivning, korrekt personalisering och korrekt konfiguration av alla inställningar.
-
->[!VIDEO](https://video.tv.adobe.com/v/3451621?learn=on)
 
 ## Lägg till ett WhatsApp-meddelande {#create-whatsapp-journey-campaign}
 
@@ -76,7 +75,7 @@ Nu kan du börja designa innehållet i ditt whatsApp-meddelande från knappen **
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
-1. Välj **[!UICONTROL Frequency]** i SMS-meddelandet på menyn **[!UICONTROL Action triggers]**:
+1. På menyn **[!UICONTROL Action triggers]** väljer du **[!UICONTROL Frequency]** för ditt WhatsApp-meddelande:
 
    * En gång
    * Dagligen
@@ -89,9 +88,13 @@ Nu kan du börja designa innehållet i ditt whatsApp-meddelande från knappen **
 
 ## Definiera innehållet i whatsApp{#whatsapp-content}
 
->[!IMPORTANT]
->
->Innan du utformar whatsApp-meddelandet i Journey Optimizer måste du först skapa mallen i Meta. [Läs mer](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
+>[!BEGINSHADEBOX]
+
+Innan du utformar whatsApp-meddelandet i Journey Optimizer måste du först skapa och utforma mallen i Meta. Endast utgående meddelandeelement stöds i Journey Optimizer. [Läs mer](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
+
+Observera att din whatsApp-mall först måste godkännas av Meta innan den kan användas i Journey Optimizer. Denna process tar vanligtvis några timmar, men kan ta upp till 24 timmar. [Läs mer](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#approval-process)
+
+>[!ENDSHADEBOX]
 
 1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för resan eller kampanjkonfigurationen för att konfigurera innehållet i WhatsApp-meddelandet.
 

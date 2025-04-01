@@ -10,9 +10,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
-source-git-commit: 22664437fb1f548f4c1524ea5fa7ac9e7fdc7f59
+exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
+source-git-commit: a40907925c7f8c783a3baf9673009a54f433b960
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,22 @@ Du kan nu skicka meddelanden om whatsApp direkt via Journey Optimizer. Den här 
 
 ![](assets/do-not-localize/whatsapp-beta.png){zoomable="yes"}
 
-## Begränsningar {#limitations}
+## Krav {#prereq}
+
+Integrering av WhatsApp med Journey Optimizer kräver följande:
+
+* Meta Business Manager-konto
+* WhatsApp Business-konto
+* WhatsApp-telefonnummer
+
+Du måste även känna till följande innan du fortsätter med integreringen:
+
+* [Innehållsregler för whatsApp](https://www.whatsapp.com/legal/messaging-guidelines)
+* [Efterlevnad med metaprinciper](https://www.whatsapp.com/legal)
+* [Konversationsgränsen 24 timmar](https://developers.facebook.com/docs/whatsapp/messaging-limits/)
+* [Godkända metamallar](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/)
+
+## Beta begränsningar {#limitations}
 
 Följande funktioner kommer inte att ingå i den här betaversionen:
 
@@ -51,3 +67,13 @@ Följande funktioner kommer inte att ingå i den här betaversionen:
 * **Nyckelord för anmälan/avanmälan**: Användarna har inte möjlighet att prenumerera eller avbryta prenumerationen med specifika nyckelord i det här skedet.
 
 * **Svarsmeddelanden**: Automatiska eller fördefinierade svarsmeddelanden stöds inte i den här versionen.
+
+## Instruktionsvideo {#video}
+
+I videon nedan visas hur du skapar en resa med en Whatsapp-åtgärd.
+
++++ Se videon
+
+>[!VIDEO](https://video.tv.adobe.com/v/3451621?learn=on)
+
++++
