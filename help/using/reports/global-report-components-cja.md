@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: aa060d8e-23e2-4bab-b709-636077eb5d20
-source-git-commit: 3de7826ae4a7efc2837288779fb444fa15688d3f
+source-git-commit: 5849d1d52f3b1b075e804efbd3473d83cbac9fbe
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -444,53 +444,214 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   <tr> 
    <th> Mått <br/> </th> 
    <th> Definition <br/> </th> 
-</tr>
+  </tr>
  </thead> 
  <tbody>
  <tr> 
-  <td>studsar<br/> </td> 
-   <td>Antal personer som inte interagerade med landningssidan och inte slutförde prenumerationsåtgärden.<br/> </td> 
+   <td>Studsfrekvens <br/> </td> 
+   <td>Procentandel personer som visade landningssidan men som inte interagerade eller abonnerade, i förhållande till det totala antalet besök.<br/> </td> 
 </tr>
  <tr> 
-   <td>Studsfrekvens <br/> </td> 
-   <td>Antal personer som inte interagerade med landningssidan och inte slutförde prenumerationsåtgärden i förhållande till det totala antalet besök.<br/> </td> 
-</tr>
- <tr>
-  <tr> 
    <td>Klicka <br/> </td> 
    <td>Antal gånger som ett innehåll klickades på på landningssidan.<br/> </td> 
 </tr>
+
+<tr> 
+   <td>Konvertering av landningssida <br/> </td> 
+   <td>Antal personer som interagerat med landningssidan, t.ex. prenumererade på ett formulär.<br/> </td> 
+</tr>
+<tr> 
+   <td>Konverteringsgrad för landningssida <br/> </td> 
+   <td>Procentandel personer som interagerade med landningssidan, t.ex. prenumererade på ett formulär, i förhållande till det totala antalet besök.<br/> </td> 
+</tr>
  <tr> 
-   <td>Klickfrekvens <br/> </td> 
-   <td>Procentandel klick på landningssidan.<br/> </td>
+   <td>Vyer för landningssida<br/> </td> 
+   <td>Totalt antal besök på din landningssida från resor och externa källor, inklusive flera besök från samma profil.<br/> </td> 
 </tr>
-<tr>
-<td>Konvertering <br/> </td> 
-   <td>Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär.<br/> </td> 
+<tr> 
+   <td>Unika konverteringar för landningssidor <br/> </td> 
+   <td>Antal unika personer som interagerade med landningssidan, exklusive flera interaktioner från samma profil.<br/> </td> 
 </tr>
-<tr>
+ <tr> 
+   <td>Unika startsidesvyer <br/> </td> 
+   <td>Antal unika personer som besökte din landningssida, exklusive flera besök från samma profil.<br/> </td> 
+</tr>
+ </tbody> 
+</table>
+
+## Direktmeddelande {#direct-mail}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Mått <br/> </th> 
+   <th> Definition <br/> </th> 
+  </tr>
+ </thead> 
+ <tbody>
+<tr> 
+   <td>Levererad<br/> </td> 
+   <td>Antal e-postmeddelanden som levererats till mottagare.<br/> </td> 
+</tr>
+<tr> 
+   <td>Utgående fel <br/> </td> 
+   <td>Antal direktmeddelandemeddelanden som påträffade fel under bearbetning eller sändning, vilket förhindrar slutförd leverans.<br/> </td> 
+</tr>
+<tr> 
+   <td>Utgående undantag <br/> </td> 
+   <td>Antal profiler som har uteslutits från att ta emot direktreklam på grund av fördefinierade villkor eller filtrering från Adobe Journey Optimizer.<br/> </td> 
+</tr>
+<tr> 
+   <td>Profiler<br/> </td> 
+   <td>Antal användarprofiler som identifierats som målpublik för direktreklamkampanjen.<br/> </td> 
+</tr>
+<tr> 
+   <td>Skickat <br/> </td> 
+   <td>Totalt antal direktmeddelandemeddelanden som skickats som en del av kampanjen.<br/> </td> 
+</tr>
+<tr> 
+   <td>Målinriktad<br/> </td> 
+   <td>Totalt antal direktmeddelandemeddelanden som har förberetts och bearbetats för sändning.<br/> </td> 
+</tr>
+ </tbody> 
+</table>
+
+
+## Innehållskortsmått {#content-based}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Mått <br/> </th> 
+   <th> Definition <br/> </th> 
+  </tr>
+ </thead> 
+ <tbody>
+<tr> 
+   <td>Klicka genom frekvens (CTR)<br/> </td> 
+   <td>Procentandel användare som interagerade med innehållskortet.<br/> </td> 
+</tr>
+<tr> 
+   <td>Klicka <br/> </td> 
+   <td>Antal gånger som ett innehåll har klickats på på ditt innehållskort.<br/> </td> 
+</tr>
+<tr> 
+   <td>Visar<br/> </td> 
+   <td>Antal gånger som meddelandet öppnades.<br/> </td> 
+</tr>
+<tr> 
+   <td>Personer <br/> </td> 
+   <td>Antal användarprofiler som är kvalificerade som målprofiler för dina innehållskort.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unika klick<br/> </td> 
+   <td>Antal profiler som klickat på ett innehåll på ditt innehållskort.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unika skärmar <br/> </td> 
+   <td>Antal gånger som meddelandet öppnades, tas inte hänsyn till flera interaktioner för en profil.<br/> </td> 
+</tr>
+ </tbody> 
+</table>
+
+## Mätvärden för webbsidor {#web}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Mått <br/> </th> 
+   <th> Definition <br/> </th> 
+  </tr>
+ </thead> 
+ <tbody>
+<tr> 
+   <td>Klicka <br/> </td> 
+   <td>Antal gånger som ett innehåll har klickats på på dina webbsidor.<br/> </td> 
+</tr>
+<tr> 
+   <td>Klicka genom frekvens (CTR)<br/> </td> 
+   <td>Procentandel användare som interagerade med webbsidorna.<br/> </td> 
+</tr>
+<tr> 
+   <td>Visar<br/> </td> 
+   <td>Antal gånger som webbsidan öppnades.<br/> </td> 
+</tr>
+<tr> 
+   <td>Personer <br/> </td> 
+   <td>Antal profiler som är kvalificerade som målprofiler för dina webbsidor.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unika klick<br/> </td> 
+   <td>Antal profiler som klickat på ett innehåll på dina webbsidor.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unika skärmar <br/> </td> 
+   <td>Antal gånger som webbsidan öppnades, tas inte hänsyn till flera interaktioner för en profil.<br/> </td> 
+</tr>
+ </tbody> 
+</table>
+
+## Kodbaserade upplevelsemått {#code-based}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Mått <br/> </th> 
+   <th> Definition <br/> </th> 
+  </tr>
+ </thead> 
+ <tbody>
+<tr> 
+   <td>Klicka <br/> </td> 
+   <td>Totalt antal gånger som användare klickat på personaliserade upplevelser som visades för dem.<br/> </td> 
+</tr>
+<tr> 
+   <td>Klickfrekvens (CTR)<br/> </td> 
+   <td>Procentandel användare som klickar på en länk, annons eller rekommendation jämfört med antalet gånger som den visades.<br/> </td> 
+</tr>
+<tr> 
    <td>Konverteringsgrad <br/> </td> 
-   <td>Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär, i förhållande till det totala antalet besök.<br/> </td> 
+   <td>Procentandel av visningar som resulterade i användaråtgärder (t.ex. klick), vilket indikerar modellens framgång när det gäller att engagera användare.<br/> </td> 
 </tr>
- <tr> 
-   <td>Resa(er) <br/> </td> 
-   <td>Antal besök på din landningssida som kommer från en resa.<br/> </td> 
+<tr> 
+   <td>Prestanda för beslutsobjekt <br/> </td> 
+   <td>Utvärderar hur väl varje objekt fungerar för att engagera användare och få fram önskade åtgärder, till exempel köp, klick eller andra svar.<br/> </td> 
 </tr>
- <tr> 
-   <td>Andra källor <br/> </td> 
-   <td>Antal besök på din landningssida som kommer från en extern källa i stället för en resa.<br/> </td> 
+<tr> 
+   <td>Bestämmer KPI:er <br/> </td> 
+   <td>Viktiga insikter om besökarnas engagemang med upplevelser, inklusive totalt antal objekt, antal klick, totalt antal visningar och reservfrekvens.<br/> </td> 
 </tr>
- <tr> 
-   <td>Totalt antal besök <br/> </td> 
-   <td> Totalt antal besök på din landningssida som kommer från resor och externa källor, inklusive flera besök av en profil.<br/> </td> 
+<tr> 
+   <td>Visar<br/> </td> 
+   <td>Totalt antal gånger personaliserade upplevelser har visats eller presenterats för användare över olika kontaktytor.<br/> </td> 
 </tr>
- <tr> 
-   <td>Unika besökare<br/> </td> 
-   <td>Antal personer som besökte din landningssida, flera besök i en profil räknas inte.<br/> </td> 
+<tr> 
+   <td>Förlovningsgrupp <br/> </td> 
+   <td>Övervakar prestanda för personaliserade upplevelser genom att utvärdera hur effektivt varje fas i tratten driver användarinteraktioner.<br/> </td> 
 </tr>
- <tr> 
-   <td>Besök<br/> </td> 
-   <td>Antal besök på din landningssida, inklusive flera besök på en profil.<br/> </td> 
+<tr> 
+   <td>Engagement Trnel by Selection Strategy<br/> </td> 
+   <td>Övervakar och analyserar hur effektivt olika urvalsstrategier engagerar användare med personaliserade upplevelser.<br/> </td> 
+</tr>
+<tr> 
+   <td>Personer <br/> </td> 
+   <td>Antal användarprofiler som kvalificerar sig som målprofiler för dina kodbaserade upplevelser.<br/> </td> 
+</tr>
+<tr> 
+   <td>Rankningsstrategi<br/> </td> 
+   <td>Insikter i prestanda för AI-drivna rankningsmodeller som jämför två trafiktyper: Model Driven och Holdout.<br/> </td> 
+</tr>
+<tr> 
+   <td>De viktigaste beslutsobjekten efter CTR<br/> </td> 
+   <td>Framhäver enskilda objekts prestanda baserat på deras klickfrekvens (CTR), vilket hjälper dig att avgöra vilka objekt som är mest effektiva för att engagera användare.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unika klick<br/> </td> 
+   <td>Antal profiler som klickade på ett innehåll i dina kodbaserade upplevelser.<br/> </td> 
+</tr>
+<tr> 
+   <td>Unika skärmar <br/> </td> 
+   <td>Antal gånger som upplevelsen öppnades, tas inte hänsyn till flera interaktioner för en profil.<br/> </td> 
 </tr>
  </tbody> 
 </table>

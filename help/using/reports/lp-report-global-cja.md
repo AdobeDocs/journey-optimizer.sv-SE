@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e73cdca9-3e83-4642-a2bb-d5453afa77fe
-source-git-commit: ea016af2dc08321bcf2e5110538031f66c888b90
+source-git-commit: 5849d1d52f3b1b075e804efbd3473d83cbac9fbe
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Om du vill få åtkomst till dina rapporter väljer du **[!UICONTROL Report]** p
 
 ![](assets/cja-lp.png)
 
-Mer information om arbetsytan i Customer Journey Analytics och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+Mer information om Customer Journey Analytics arbetsyta och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Konverteringsgrad för landningssida {#lp-conversion}
 
@@ -65,7 +65,7 @@ Diagrammet **[!UICONTROL Landing page performance over time]** mäter dina landn
 
 * **[!UICONTROL Landing page Views]**: Totalt antal besök på din landningssida som kommer från resor och externa källor, inklusive flera besök i en profil.
 
-* **[!UICONTROL Landing page Conversion rate]**: Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär, i förhållande till det totala antalet besök.
+* **[!UICONTROL Landing page Conversion]**: Antal personer som interagerat med landningssidan, t.ex. prenumererat på ett formulär, i förhållande till det totala antalet besök.
 
 ## Prestanda för landningssida {#lp-performance}
 
@@ -79,7 +79,7 @@ Tabellen **[!UICONTROL Landing page performance]** fungerar som en omfattande in
 
 * **[!UICONTROL Unique Landing page Views]**: Antal personer som besökte din landningssida, flera besök i en profil beaktas inte.
 
-* **[!UICONTROL Unique Landing page Conversion rate]**: Antal personer som interagerade med landningssidan, flera interaktioner i en profil beaktas inte.
+* **[!UICONTROL Unique Landing page Conversion]**: Antal personer som interagerade med landningssidan, flera interaktioner i en profil beaktas inte.
 
 * **[!UICONTROL Landing page Views]**: Totalt antal besök på din landningssida som kommer från resor och externa källor, inklusive flera besök i en profil.
 
