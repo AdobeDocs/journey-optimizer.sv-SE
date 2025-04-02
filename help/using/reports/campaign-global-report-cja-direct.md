@@ -7,14 +7,23 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: b0771fd9-72bd-4891-a394-f08e3dde6126
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
 
 # Rapport om direktreklamkampanj {#campaign-global-report-cja-direct}
+
+>[!BEGINSHADEBOX]
+
+Du kommer åt kampanjrapporten för direktreklam genom att klicka på knappen **[!UICONTROL Reports]** i kampanjen och sedan välja **[!UICONTROL View all time report]**. [Läs mer](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
 
 ## Skicka statistik {#sending-statistics-directmail}
 

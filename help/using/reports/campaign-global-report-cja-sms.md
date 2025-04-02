@@ -8,14 +8,22 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd743a3b-0317-45d9-8e76-98d5cc258752
-source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
 # SMS-kampanjrapport {#campaign-global-report-cja-sms}
+
+>[!BEGINSHADEBOX]
+
+Du kommer åt SMS-kampanjrapporten genom att klicka på knappen **[!UICONTROL Reports]** i kampanjen och sedan välja **[!UICONTROL View all time report]**. [Läs mer](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
 
 ## Levererat kontra klicktrend {#delivered-click-sms}
 

@@ -9,14 +9,22 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
-source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
 # Kampanjrapport i appen {#campaign-global-report-cja-inapp}
+
+>[!BEGINSHADEBOX]
+
+Du kommer åt kampanjrapporten i appen genom att klicka på knappen **[!UICONTROL Reports]** i kampanjen och sedan välja **[!UICONTROL View all time report]**. [Läs mer](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
 
 ## Visa och klicka på trend {#impression-click-trend}
 

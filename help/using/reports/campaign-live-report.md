@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: c9505b482d2dedc10c4025574cccb662fe149510
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '3276'
+source-wordcount: '3280'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 >title="Kampanjrapport"
 >abstract="Med rapporten Campaign live kan ni i realtid mäta och visualisera effekten och resultatet av era kampanjer bara under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som detaljerat beskriver kampanjens framgångar och fel. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
-Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics i fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
+Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
 
-Du kan komma åt kampanjens Live-rapport direkt från kampanjen med knappen **[!UICONTROL Live view]**.
+Du kan komma åt den aktiva kampanjrapporten direkt från din kampanj genom att klicka på knappen **[!UICONTROL Reports]** och sedan välja **[!UICONTROL View last 24hrs report]**.
 
 Sidan Campaign **[!UICONTROL Live report]** visas med följande flikar:
 

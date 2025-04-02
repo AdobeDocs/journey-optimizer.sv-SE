@@ -8,18 +8,24 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 33b6cc18-dd63-48d9-8d85-526500d83d37
-source-git-commit: 673e86ccd07c7afdf0b87859434145f16f7b7d26
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
 
 # Kodbaserad reserapport {#journey-global-report}
 
+>[!INFO]
+>
+> Din reserapport kan visa information från flera resor samtidigt, eftersom användare kan vara inblandade i mer än en resa i taget. Detta innebär att inkommande kommunikation (In-App, Web och Code-based) kan visas på flera resor om de utlöstes för en användare som deltar i samtidiga aktiva resor, vilket kan resultera i överlappande data.
+
 >[!BEGINSHADEBOX]
 
-Din reserapport kan visa information från flera resor samtidigt, eftersom användare kan vara inblandade i mer än en resa i taget. Detta innebär att inkommande kommunikation (In-App, Web och Code-based) kan visas på flera resor om de utlöstes för en användare som deltar i samtidiga aktiva resor, vilket kan resultera i överlappande data.
+Du kan komma åt din kodbaserade reserapport genom att klicka på knappen **[!UICONTROL View report]** under din resa. [Läs mer](report-gs-cja.md)
+
+![](assets/report-access-jo.png)
 
 >[!ENDSHADEBOX]
 

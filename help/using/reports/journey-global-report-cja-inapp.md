@@ -8,28 +8,34 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f10b3ab9-db0a-4759-98e4-2ac1988eb8c4
-source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
 # Rapport om resan i appen {#journey-global-report}
 
+>[!INFO]
+>
+>Din reserapport kan visa information från flera resor samtidigt, eftersom användare kan vara inblandade i mer än en resa i taget. Detta innebär att inkommande kommunikation (In-App, Web och Code-based) kan visas på flera resor om de utlöstes för en användare som deltar i samtidiga aktiva resor, vilket kan resultera i överlappande data.
+
 >[!BEGINSHADEBOX]
 
-Din reserapport kan visa information från flera resor samtidigt, eftersom användare kan vara inblandade i mer än en resa i taget. Detta innebär att inkommande kommunikation (In-App, Web och Code-based) kan visas på flera resor om de utlöstes för en användare som deltar i samtidiga aktiva resor, vilket kan resultera i överlappande data.
+Du kan komma åt din rapport om resan i appen genom att klicka på knappen **[!UICONTROL Reports]** under din resa. [Läs mer](report-gs-cja.md)
+
+![](assets/report-access.png)
 
 >[!ENDSHADEBOX]
 
-## Trend för tryck och klickning {#impression-click-trend}
+## Visa och klicka på trend {#display-click-trend}
 
 ![](assets/cja-inapp-impressions-click.png)
 
-Diagrammet **[!UICONTROL Impression & Click trend]** innehåller en detaljerad analys av hur dina profiler interagerar med dina meddelanden i appen och ger värdefulla insikter om hur profilerna interagerar med ditt innehåll.
+Diagrammet **[!UICONTROL Display & Click trend]** innehåller en detaljerad analys av hur dina profiler interagerar med dina meddelanden i appen och ger värdefulla insikter om hur profilerna interagerar med ditt innehåll.
 
-+++ Läs mer om intryckt- och klicktrendstatistik
++++ Läs mer om trendstatistik för visning och klickning
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden i appen.
 

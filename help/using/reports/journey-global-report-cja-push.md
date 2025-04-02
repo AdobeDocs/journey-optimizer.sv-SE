@@ -7,14 +7,23 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: 6d4b7669-7852-42f0-9347-399a3994011f
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
 # Push-rapport om meddelanderesa {#journey-global-report}
+
+>[!BEGINSHADEBOX]
+
+Du kan komma åt din push-meddelandereserapport genom att klicka på knappen **[!UICONTROL View report]** under din resa. [Läs mer](report-gs-cja.md)
+
+![](assets/report-access-jo.png)
+
+>[!ENDSHADEBOX]
 
 ## Skicka statistik {#sending-statistics-push}
 
@@ -56,9 +65,7 @@ Tabellen **[!UICONTROL Tracking statistics]** erbjuder en detaljerad ögonblicks
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i ditt push-meddelande.
 
-<!--
-* **[!UICONTROL Push custom actions]**: 
--->
+* **[!UICONTROL Push custom actions]**: Antal anpassade åtgärder som vidtas av profiler som svar på push-meddelanden.
 +++
 
 ## Spårade länketiketter {#track-link-label-push}

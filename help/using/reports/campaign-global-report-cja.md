@@ -7,14 +7,23 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: b74d3137-2dd9-4302-a56e-73503d318d18
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # Kampanjrapport {#campaign-global-report-cja}
+
+>[!BEGINSHADEBOX]
+
+Du kommer åt din Campaign-rapport genom att klicka på knappen **[!UICONTROL Reports]** i kampanjen och sedan välja **[!UICONTROL View all time report]**. [Läs mer](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
 
 ## KPI:er för kampanj {#campaign-kpis}
 

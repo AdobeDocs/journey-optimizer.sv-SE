@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3489'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
 
-Du kan komma åt liverapporten för resan direkt från din resa med knappen **[!UICONTROL View report]**.
+Öppna livesändningsrapporten på menyn [!UICONTROL Journeys] genom att öppna kundens [!UICONTROL More actions]-meny och välja [!UICONTROL View last 24hrs report].
 
 ![](assets/report_journey.png)
 

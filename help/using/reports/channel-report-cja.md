@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 393f02c0-f54c-4222-b668-0931b67590ce
-source-git-commit: b9dbda18b2e997d6c3acc9763cbb0088abbece1b
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,11 @@ Genom att klicka på namnet på en kampanj i den här tabellen kan du enkelt utf
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
 
+* **[!UICONTROL Click through rate (CTR)]**: Procentandel klick i dina meddelanden.
+
 * **[!UICONTROL Sends]**: Totalt antal skickade meddelanden för varje kampanj.
+
+* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats.
 
 * **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
 
@@ -107,9 +111,9 @@ Tabellen **[!UICONTROL Channels]** innehåller en detaljerad beskrivning av hur 
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
 
-* **[!UICONTROL Click through rate]**: Procentandel klick i dina meddelanden.
+* **[!UICONTROL Click through rate (CTR)]**: Procentandel klick i dina meddelanden.
 
-* **[!UICONTROL Sends]**: Totalt antal skickade meddelanden för varje kampanj.
+* **[!UICONTROL Delivered]**: Antal meddelanden som har skickats.
 
 * **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
 

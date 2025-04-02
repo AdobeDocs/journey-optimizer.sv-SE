@@ -7,14 +7,23 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 2fe9fb915e4aaf13458e46d5eeb177862416907d
+exl-id: d35a0e1c-2376-4cc5-88fc-5f8dfcfae666
+source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
 # Kodbaserad kampanjrapport {#campaign-global-report-cja-code}
+
+>[!BEGINSHADEBOX]
+
+Du kommer åt den kodbaserade kampanjrapporten genom att klicka på knappen **[!UICONTROL Reports]** i kampanjen och sedan välja **[!UICONTROL View all time report]**. [Läs mer](report-gs-cja.md)
+
+![](assets/report-access.png)
+
+>[!ENDSHADEBOX]
 
 ## Visa och klicka {#impressions-code}
 
@@ -38,15 +47,15 @@ Diagrammen **[!UICONTROL Display & Click]** innehåller en detaljerad analys av 
 
 ![](assets/code-based-tracking-data-campaign.png)
 
-Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad överblicksbild av profilaktiviteten som är kopplad till dina kodbaserade upplevelser och ger viktiga insikter om engagemang och effektivitet för upplevelser.
+Tabellen **[!UICONTROL Tracking data]** erbjuder en detaljerad ögonblicksbild av profilaktivitet som är kopplad till dina kodbaserade upplevelser, vilket ger viktiga insikter i engagemang och upplevelseeffektivitet.
 
-+++ Läs mer om att spåra datamått
++++ Läs mer om att spåra datamätningar
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina upplevelser.
 
 * **[!UICONTROL Click through rate (CTR)]**: Procentandel användare som interagerade med dina upplevelser.
 
-* **[!UICONTROL Clicks]**: Antal gånger som du klickat på ett innehåll i dina upplevelser.
+* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina upplevelser.
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina upplevelser.
 
@@ -90,13 +99,13 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 ![](assets/cja-engagement-funnel.png)
 
-Tabellen **[!UICONTROL Engagement Funnel]** övervakar prestandan för personliga upplevelser genom att utvärdera hur effektivt varje steg i tratten driver användarinteraktioner.
+Tabellen **[!UICONTROL Engagement Funnel]** övervakar prestanda för personaliserade upplevelser genom att utvärdera hur effektivt varje fas i tratten genererar användarinteraktioner.
 
-* **[!UICONTROL Displays]**: Det totala antalet gånger som personliga upplevelser visades eller presenterades för användare via olika kontaktpunkter.
+* **[!UICONTROL Displays]**: Totalt antal gånger personaliserade upplevelser har visats eller presenterats för användare över olika kontaktytor.
 
-* **[!UICONTROL Clicks]**: Totalt antal gånger som användarna klickat på anpassade upplevelser som visats för dem.
+* **[!UICONTROL Clicks]**: Totalt antal gånger användare klickat på personaliserade upplevelser som visades för dem.
 
-## De viktigaste beslutsobjekten efter genomklickningsfrekvens {#top-decision}
+## De viktigaste beslutsobjekten efter klickfrekvens {#top-decision}
 
 ![](assets/cja-top-decisions-ctr.png)
 
@@ -132,11 +141,11 @@ Tabellen **[!UICONTROL Decision Items Performance]** utvärderar hur väl varje 
 
 ![](assets/cja-decision-ranking-strategy.png)
 
-Tabellen **[!UICONTROL Ranking Strategy]** innehåller information om prestanda för AI-drivna rankningsmodeller i personliga upplevelser där två trafiktyper jämförs:
+Tabellen **[!UICONTROL Ranking Strategy]** ger insikter om hur AI-drivna rankningsmodeller presterar i personaliserade upplevelser som jämför två trafiktyper:
 
-* **Modelldriven**: Användarna får innehåll som rangordnas efter AI-modellen, optimerat för relevans och engagemang.
+* **Modellstyrd**: användare får innehåll som rangordnats av AI-modellen, optimerat för relevans och engagemang.
 
-* **Avbrott**: Användarna ser en generisk version av innehållet som fungerar som en kontrollgrupp för att mäta AI-modellens effektivitet.
+* **Holdout**: användare ser en allmän version av innehållet, som fungerar som en kontrollgrupp för att mäta AI-modellens effektivitet.
 
 Viktiga mätvärden som visas är:
 
