@@ -12,7 +12,7 @@ exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
 source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,22 +20,22 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ac_content_components_email"
->title="Om innehållskomponenter"
+>title="Om Innehållskomponenter"
 >abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för ett e-postmeddelande."
 
 >[!CONTEXTUALHELP]
 >id="ac_content_components_landing_page"
->title="Om innehållskomponenter"
+>title="Om Innehållskomponenter"
 >abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för en landningssida."
 
 >[!CONTEXTUALHELP]
 >id="ac_content_components_fragment"
->title="Om innehållskomponenter"
+>title="Om Innehållskomponenter"
 >abstract="Innehållskomponenter är tomma platshållare för innehåll som du kan använda för att skapa layouten för ett fragment."
 
 >[!CONTEXTUALHELP]
 >id="ac_content_components_template"
->title="Om innehållskomponenter"
+>title="Om Innehållskomponenter"
 >abstract="Innehållskomponenter är tomma platshållare för innehåll som du kan använda för att skapa layouten för en mall."
 
 När du skapar ditt e-postinnehåll kan du i **[!UICONTROL Content components]** anpassa din e-post ytterligare med raw-komponenter som du kan redigera när du väl har placerat i ett e-postmeddelande.
