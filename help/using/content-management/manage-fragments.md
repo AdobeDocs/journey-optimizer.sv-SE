@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: 730e3da767ba54973ea886057262fe0210b46dd2
+source-git-commit: 67ebea8b1b46ee20735eee0680656e82f2839c41
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1424'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,16 @@ ht-degree: 1%
 Om du vill hantera dina fragment kan du komma åt fragmentlistan från den vänstra menyn **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**.
 
 Alla fragment som skapades i den aktuella sandlådan - antingen [ från **[!UICONTROL Fragments]**-menyn](#create-fragments), antingen med alternativet [Spara som fragment](#save-as-fragment) - visas.
+
+I rutan till vänster kan du ordna fragment i mappar. Som standard visas alla fragment. När du väljer en mapp visas endast de fragment och mappar som finns i den valda mappen. [Läs mer](#folders)
+
+>[!NOTE]
+>
+>Fragmentmappar är bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet) och kommer gradvis att lanseras för fler användare.
+
+![](assets/fragment-list-folders.png)
+
+Om du vill söka efter ett visst objekt börjar du skriva ett namn i sökfältet. När en [mapp](#folders) är markerad tillämpas sökningen på alla fragment eller mappar på den första nivån i hierarkin i den mappen<!--(not nested items)-->.
 
 Du kan filtrera fragment på deras:
 
@@ -43,10 +53,54 @@ Från knappen **[!UICONTROL More actions]** bredvid varje fragment kan du:
 * Använd alternativet **[!UICONTROL Explore references]** om du vill visa de resor, kampanjer eller mallar där det används. [Läs mer](#explore-references)
 * Arkivera fragmentet. [Läs mer](#archive-fragments)
 * Redigera fragmentets taggar. [Lär dig arbeta med enhetliga taggar](../start/search-filter-categorize.md#tags)
+* Flytta fragmentet till en mapp. [Läs mer](#folders)
 
-![](assets/fragment-list-more-actions.png){width="70%" align="left"}
+![](assets/fragment-list-more-actions.png)
 
-## Fragmentstatus
+## Använd mappar för att hantera fragment {#folders}
+
+>[!CONTEXTUALHELP]
+>id="ajo_fragments_folders"
+>title="Ordna dina fragment i mappar"
+>abstract="Använd mappar för att kategorisera och hantera dina fragment efter organisationens behov."
+
+>[!AVAILABILITY]
+>
+>Fragmentmappar är bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet) och kommer gradvis att lanseras för fler användare.
+
+Om du enkelt vill navigera bland dina fragment kan du använda mappar för att ordna dem mer effektivt i en strukturerad hierarki. På så sätt kan du kategorisera och hantera objekten efter organisationens behov.
+
+![](assets/fragment-folders.png)
+
+1. Klicka på knappen **[!UICONTROL All Fragments]** om du vill visa alla objekt som tidigare skapats utan mappgruppering.
+
+1. Klicka på mappen **[!UICONTROL Root]** för att visa alla mappar som skapats.
+
+   >[!NOTE]
+   >
+   >Om du inte har skapat mappar än visas alla fragment.
+
+1. Klicka på en mapp i mappen **[!UICONTROL Root]** för att visa dess innehåll.
+
+1. När du klickar på mappen **[!UICONTROL Root]** eller någon annan mapp visas knappen **[!DNL Create folder]** . Markera den.
+
+   ![](assets/fragment-create-folder.png)
+
+1. Ange ett namn för den nya mappen och klicka på **[!UICONTROL Save]**. Den nya mappen visas ovanpå fragmentlistan i mappen **[!UICONTROL Root]** eller inuti den markerade mappen.
+
+1. Du kan klicka på knappen **[!UICONTROL More actions]** om du vill byta namn på eller ta bort mappen.
+
+   ![](assets/fragment-folder-more-actions.png)
+
+1. Med knappen **[!UICONTROL More actions]** kan du också flytta fragmentet till en annan befintlig mapp.
+
+   ![](assets/fragment-folder-moved.png)
+
+1. Nu kan du navigera till mappen som du nyss skapade. Varje nytt fragment som du [skapar](create-fragments.md) från här sparas i den aktuella mappen.
+
+   ![](assets/fragment-folder-create.png)
+
+## Fragmentstatus {#fragments-statuses}
 
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"

@@ -6,9 +6,10 @@ description: Lär dig hur du låser innehåll i e-postmallar.
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-source-git-commit: 9bb2b287f6f470f817a7f7dd89346bbe2aa7d090
+exl-id: f64fe1c4-3e30-4b74-80f8-b801a5f1d4c4
+source-git-commit: 67ebea8b1b46ee20735eee0680656e82f2839c41
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -63,6 +64,8 @@ Innehållslås kan användas antingen på **strukturnivå** eller på **komponen
 >[!AVAILABILITY]
 >
 >Användare med behörighet att skapa innehållsmallar kan aktivera låsning av innehåll.
+
+➡️ [Upptäck den här funktionen i videon](#video)
 
 ## Lås en e-postmall {#define}
 
@@ -189,3 +192,9 @@ Här är några exempel på e-postutgåvan och den tillhörande konfigurationen 
 | Låst struktur som inte kan tas bort | ![](assets/locking-sample-structure-locked-conf.png){zoomable="yes"} | ![](assets/locking-sample-structure-locked.png){zoomable="yes"} |
 | Komponent med låsta format som inte kan tas bort. Användarna kan bara ändra innehållet. | ![](assets/locking-sample-content-only-conf.png){zoomable="yes"} | ![](assets/locking-sample-content-only.png){zoomable="yes"} |
 | Redigerbar komponent i en låst struktur. | ![](assets/locking-sample-editable-component-conf.png){zoomable="yes"} | ![](assets/locking-sample-editable-component.png){zoomable="yes"} |
+
+## Instruktionsvideo {#video}
+
+Lär dig låsa innehåll i e-postmallar.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3451591?quality=12)
