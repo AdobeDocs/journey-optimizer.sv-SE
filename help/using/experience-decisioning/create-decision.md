@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: baf3a8dba9e83e3b82390bd2ab0725b9fc844138
+source-git-commit: a82c9e2d999b28ed97374f3a3804e11d4acd7983
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1729'
 ht-degree: 0%
 
 ---
@@ -227,27 +227,26 @@ När beslutsprincipen har skapats kan den användas i [personaliseringsredigerar
 
 Följ stegen nedan för att slutföra den kodbaserade upplevelsen och göra ändringarna aktuella.
 
-1. Innan publiceringen visar du en förhandsgranskning av den kodbaserade upplevelsen för att testa den.
-
-   >[!CAUTION]
-   >
-   >För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](../code-based/create-code-based.md) -kampanj eller resa med hjälp av beslut.
-
-   Om du vill testa ett beslut kan du lägga till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
-
-   ```
-   {
-   "data": {
-       "__adobe": {
-       "ajo":
-   {         "dryRun": true       }
-       }
-   }
-   }
-   ```
-
 1. Granska och publicera er kodbaserade kampanj eller resa. [Lär dig hur](../code-based/publish-code-based.md)
 
    När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen, tillämpas ändringarna på webbsidan eller appen.
 
+1. För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](../code-based/create-code-based.md) -kampanj eller resa med hjälp av beslut.
+
+   Som en tillfällig lösning kan du testa beslutet efter att du har publicerat kampanjen genom att lägga till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
+
+   ```
+   {
+       "data": {
+           "__adobe": {
+               "ajo": {
+                   "dryRun": true
+               }
+           }
+       }
+   }
+   ```
+
 1. Om du vill se hur dina beslut fungerar kan du nu skapa anpassade [Customer Journey Analytics-rapportinstrumentpaneler](cja-reporting.md).
+
+
