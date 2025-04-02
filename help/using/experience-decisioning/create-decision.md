@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 3abaa58fa4fa3baae5c7072bdc112de4a5e9119a
+source-git-commit: baf3a8dba9e83e3b82390bd2ab0725b9fc844138
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att välja det bästa innehållet att leverera, beroende på målgruppen.
 
-Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet.
+<!--Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. -->Deras mål är att välja de bästa erbjudandena för varje profil, medan kampanjen/resan gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet.
 
 >[!NOTE]
 >
@@ -31,11 +31,11 @@ Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna vä
 
 De viktigaste stegen för att utnyttja beslutsregler i era kodbaserade kampanjer är följande:
 
-1. [Skapa en beslutspolicy i en kodbaserad kampanj](#add-decision)
-1. [Använd beslutsprincipen i den kodbaserade kampanjen](#use-decision-policy)
-1. [Skapa anpassade instrumentpaneler för Customer Journey Analytics-rapportering](#cja)
+1. [Lägga till en beslutsprincip i en kodbaserad upplevelse](#add-decision)
+1. [Använd beslutsprincipen](#use-decision-policy)
+1. [Skapa anpassade Customer Journey Analytics rapportpaneler](cja-reporting.md)
 
-## Lägga till en beslutsprincip i en kodbaserad kampanj {#add-decision}
+## Lägga till en beslutsprincip i en kodbaserad upplevelse {#add-decision}
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_item_number"
@@ -54,7 +54,7 @@ De viktigaste stegen för att utnyttja beslutsregler i era kodbaserade kampanjer
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Utvärderingsorder"
 
-Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp lägger du till en beslutspolicy i en kodbaserad kampanj. Följ stegen nedan för att göra det.
+Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp, lägger du till en beslutspolicy till en kodbaserad kampanj eller resa. Följ stegen nedan för att göra det.
 
 ### Skapa beslutsprincipen {#add}
 
@@ -221,3 +221,33 @@ När beslutsprincipen har skapats kan den användas i [personaliseringsredigerar
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
 
+1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
+
+## Testa och publicera din kodbaserade upplevelse {#test-and-publish}
+
+Följ stegen nedan för att slutföra den kodbaserade upplevelsen och göra ändringarna aktuella.
+
+1. Innan publiceringen visar du en förhandsgranskning av den kodbaserade upplevelsen för att testa den.
+
+   >[!CAUTION]
+   >
+   >För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](../code-based/create-code-based.md) -kampanj eller resa med hjälp av beslut.
+
+   Om du vill testa ett beslut kan du lägga till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
+
+   ```
+   {
+   "data": {
+       "__adobe": {
+       "ajo":
+   {         "dryRun": true       }
+       }
+   }
+   }
+   ```
+
+1. Granska och publicera er kodbaserade kampanj eller resa. [Lär dig hur](../code-based/publish-code-based.md)
+
+   När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen, tillämpas ändringarna på webbsidan eller appen.
+
+1. Om du vill se hur dina beslut fungerar kan du nu skapa anpassade [Customer Journey Analytics-rapportinstrumentpaneler](cja-reporting.md).

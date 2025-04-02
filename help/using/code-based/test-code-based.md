@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 9a1c148c-a6c3-406b-8f2e-1cf8b8239e75
-source-git-commit: c402a8ab41eb588eae47463fd0217693853d8ca7
+source-git-commit: baf3a8dba9e83e3b82390bd2ab0725b9fc844138
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,11 @@ Följ stegen nedan för att visa en förhandsgranskning av din ändrade kodbaser
 1. En förhandsgranskning av den ändrade kodbaserade upplevelsen visas.
 
 Detaljerad information om hur du väljer testprofiler och förhandsgranskar ditt innehåll finns i [det här avsnittet](../content-management/preview.md).
+
+>[!NOTE]
+>
+>För närvarande kan du inte simulera innehåll från användargränssnittet i en kodbaserad upplevelsekampanj eller upplevelseresa med [Beslutsfattning](../experience-decisioning/gs-experience-decisioning.md). Det finns en tillfällig lösning i [det här avsnittet](../experience-decisioning/create-decision.md).
+
 
 ## Förhandsgranska på enhet {#preview-on-device}
 

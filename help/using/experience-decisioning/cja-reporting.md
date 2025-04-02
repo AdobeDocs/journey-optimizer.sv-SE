@@ -7,7 +7,7 @@ role: User
 level: Experienced
 badge: label="Begränsad tillgänglighet"
 exl-id: 7c45cd8a-8e86-4646-ba0a-db393e92d9da
-source-git-commit: bfc16476f525328b2b8451bfdd57b6b2027db916
+source-git-commit: baf3a8dba9e83e3b82390bd2ab0725b9fc844138
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Kodbaserad kampanjrapportering {#campaigns}
 
-När den kodbaserade upplevelsen är live kan ni få tillgång till dedikerade rapporter för att övervaka KPI:er (Key Performance Indicators) som en heltäckande kontrollpanel och leverera en analys av viktig statistik som är kopplad till kampanjen.
+När de kodbaserade upplevelserna är live kan ni få tillgång till dedikerade rapporter för att övervaka nyckeltal (KPI) som en heltäckande kontrollpanel och leverera en analys av viktig statistik som är kopplad till kampanjen.
 
 Detta innefattar information om resultaten av beslutsartiklar och hur användarna interagerade med dem. [Lär dig arbeta med kodbaserade upplevelserapporter](../reports/campaign-global-report-cja-code.md)
 
