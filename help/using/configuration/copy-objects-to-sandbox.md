@@ -9,9 +9,9 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
-source-git-commit: bf18b629c23f9ef48d53b0042d466ba7c1f57c78
+source-git-commit: 0533051314530b90a19e3b170d94f7761927053e
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,21 @@ Journey Optimizer tillåter export av resor, innehållsmallar och fragment till 
 * De kopierade objekten i målsandlådan är unika och det finns ingen risk för att befintliga element skrivs över. Både resan och alla meddelanden under resan överförs i utkastläge. På så sätt kan du utföra en grundlig validering innan den publiceras i målsandlådan.
 
 * Kopieringsprocessen kopierar bara metadata om resan och objekten i den resan. Inga profil- eller datauppsättningsdata kopieras som en del av den här processen.
+
+### Kampanjer (#campaign)
+
+Kampanjer kopieras tillsammans med alla objekt som hör till profilen, målgruppen, schemat, textbundna meddelanden och beroende objekt.
+
+Följande objekt kopieras **inte**:
+
+* Flerspråkiga varianter och språkinställningar
+* Experimentera med varianter
+* Beslutspolicy och beslutsposter
+* Affärsregler
+* Taggar
+* Etiketter för användning av data och tillämpning (DULE)
+
+När kampanjer har kopierats måste kanalkonfigurationer väljas manuellt.
 
 ### Innehållsmallar {#content-templates}
 

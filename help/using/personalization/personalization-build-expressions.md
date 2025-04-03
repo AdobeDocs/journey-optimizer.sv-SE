@@ -10,7 +10,7 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 1171888c277e58f45590cc17cb01885bd385b740
+source-git-commit: 0533051314530b90a19e3b170d94f7761927053e
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Med ellipsmenyn bredvid ikonen `+` kan du få mer information om varje attribut 
 
 >[!NOTE]
 >
->Som standard visas endast ifyllda attribut i attributrutan. Om du vill visa alla attribut markerar du knappen ![](assets/do-not-localize/settings-icon.svg) ovanför sökfältet och växlar mellan alternativet **[!UICONTROL Show only populated attributes]**.
+>Som standard visas endast ifyllda attribut i attributrutan. Om du vill visa alla attribut markerar du knappen ![](assets/do-not-localize/settings-icon.svg) ovanför sökfältet och avaktiverar alternativet **[!UICONTROL Show only populated attributes]**.
 
 Dessutom kan du definiera standardreservtext som visas om ett profilattribut av strängtyp är tomt. Det gör du genom att klicka på ellipsknappen bredvid attributet och välja **[!UICONTROL Insert with fallback text]**. Skriv den text som ska visas som standard om attributets värde är tomt för en profil och klicka sedan på **[!UICONTROL Add]**.
 
