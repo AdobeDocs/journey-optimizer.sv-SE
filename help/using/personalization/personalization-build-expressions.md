@@ -10,9 +10,9 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 4240f64cd7b6473f589d2324a2ebf87e2c60d394
+source-git-commit: 1171888c277e58f45590cc17cb01885bd385b740
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -99,9 +99,15 @@ I navigeringsrutan kan du välja källa för personalisering. Tillgängliga käl
 >title="Automatiskt slutförd"
 >abstract="Om du växlar till det här alternativet kan systemet automatiskt föreslå och slutföra kod medan du skriver. Den här funktionen är endast tillgänglig för HTML- och textformat och har stöd för attribut för profil och kontext. Om det är inaktiverat via växlingsknappen kommer redigeraren att tillhandahålla HTML-kod som fylls i automatiskt i stället."
 
-På den centrala arbetsytan skapar du din personaliseringssyntax. Om du vill använda ett attribut för att anpassa meddelandet, letar du reda på det i navigeringsrutan och klickar på knappen `+` för att lägga till det i uttrycket.
+På den centrala arbetsytan skapar du din personaliseringssyntax. Om du vill använda ett attribut för att anpassa meddelandet, letar du reda på det i attributrutan och klickar på knappen `+` för att lägga till det i uttrycket.
+
+![](assets/personalization-add-attribute.png)
 
 Med ellipsmenyn bredvid ikonen `+` kan du få mer information om varje attribut och lägga till de attribut som du använder mest i favoriter. Attribut som läggs till i favoriter är tillgängliga på menyn **[!UICONTROL Favorites]** i navigeringsrutan.
+
+>[!NOTE]
+>
+>Som standard visas endast ifyllda attribut i attributrutan. Om du vill visa alla attribut markerar du knappen ![](assets/do-not-localize/settings-icon.svg) ovanför sökfältet och växlar mellan alternativet **[!UICONTROL Show only populated attributes]**.
 
 Dessutom kan du definiera standardreservtext som visas om ett profilattribut av strängtyp är tomt. Det gör du genom att klicka på ellipsknappen bredvid attributet och välja **[!UICONTROL Insert with fallback text]**. Skriv den text som ska visas som standard om attributets värde är tomt för en profil och klicka sedan på **[!UICONTROL Add]**.
 
