@@ -5,16 +5,25 @@ title: Starta och övervaka flerstegskampanjer med Adobe Journey Optimizer
 description: Lär dig hur du startar och övervakar flerstegskampanjer med Adobe Journey Optimizer
 hide: true
 hidefromtoc: true
-source-git-commit: f73d847c1d335260a0198e844d237a652e346729
+exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
+source-git-commit: 70864a3e14a748562518c699513184e0f63c1139
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-# Starta och övervaka era flerstegskampanjer {#start-monitor}
+# Starta och övervaka era samordnade kampanjer {#start-monitor}
 
-När du har skapat arbetsflödet och utformat de uppgifter som ska utföras på arbetsytan kan du starta det och övervaka hur det körs.
+<audio controls><source src="../ms/assets/do-not-localize/sound.mp3" type="audio/mpeg">Webbläsaren stöder inte ljudelementet.</audio>
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_publication"
+>title="Publicera orkestrerad kampanj"
+>abstract="Du måste publicera kampanjen för att kunna starta den. Kontrollera att alla varningar är rensade före publiceringen."
+
+
+När du har skapat dina arbetsytor och utformat arbetsytan kan du publicera den och övervaka hur den körs.
 
 ## Starta en kampanj i flera steg {#start}
 
