@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 9a1c148c-a6c3-406b-8f2e-1cf8b8239e75
-source-git-commit: baf3a8dba9e83e3b82390bd2ab0725b9fc844138
+source-git-commit: effc706cfa56eca21cde0f26fe7b6332d3728b74
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Detaljerad information om hur du väljer testprofiler och förhandsgranskar ditt
 
 >[!NOTE]
 >
->För närvarande kan du inte simulera innehåll från användargränssnittet i en kodbaserad upplevelsekampanj eller upplevelseresa med [Beslutsfattning](../experience-decisioning/gs-experience-decisioning.md). Det finns en tillfällig lösning i [det här avsnittet](../experience-decisioning/create-decision.md).
+>För närvarande kan du inte simulera innehåll från användargränssnittet i en kodbaserad upplevelsekampanj eller upplevelseresa med [Beslutsfattning](../experience-decisioning/gs-experience-decisioning.md). Det finns en tillfällig lösning i [det här avsnittet](../experience-decisioning/create-decision.md#test-and-publish).
 
 
 ## Förhandsgranska på enhet {#preview-on-device}
