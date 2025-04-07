@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8675df765f2b45ac101d814777a5013e996db4c6
+source-git-commit: 50491d039f2baf8c30a6af0c1b59fe9041244ac7
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2317'
 ht-degree: 22%
 
 ---
@@ -245,7 +245,7 @@ ht-degree: 22%
             + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
             + [Infoga personaliserade erbjudanden](using/email/add-offers-email.md)
             + [Generera textversionen](using/email/text-version-email.md)
-            + [Lägga till en förrubrik](using/email/preheader.md)
+            + [Lägg till metadata](using/email/email-metadata.md)
          + Redigera stil {#edit-style}
             + [Kom igång med e-postformat](using/email/get-started-email-style.md)
             + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
