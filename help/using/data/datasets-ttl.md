@@ -8,9 +8,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 08633a79-5601-4e36-b8cf-080234956d99
-source-git-commit: 0e164877044430509fc7b2f2bf3ca2eda8e7497b
+source-git-commit: 7243da6ecab9bce2afeb86a35d35b7bc94d4d196
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '672'
 ht-degree: 2%
 
 ---
@@ -81,7 +81,7 @@ TTL-tillägg stöds för närvarande inte. Det finns dock planer på att optimer
 
 +++Kan kunder öka TTL-värdet för [!DNL Journey Optimizer]-systemdatauppsättningsdata i datasjön?
 
-TTL-tillägg stöds för närvarande inte. Kunder som har Real-Time CDP-berättigande kan exportera data via Destinations för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}
+TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank}
 
 +++
 
@@ -96,7 +96,7 @@ TTL-tillägg stöds för närvarande inte. Kunder som har Real-Time CDP-berätti
 
   >[!NOTE]
   >
-  >En TTL har redan implementerats på [!DNL Customer Journey Analytics] (CJA)-anslutningen, vilket minskar den effektiva perioden för maximal summering av data som påverkas till 13 månader.
+  >En TTL har redan implementerats på [!DNL Customer Journey Analytics] (CJA)-anslutningen, vilket minskar den effektiva maximala kontrollperioden för data som påverkas till 13 månader.
 
 * **Experience Platform-datakälla**: Ja - Hämtning av upplevelsehändelser sker enligt TTL-värdet på 90 dagar.
 * **Beräknade attribut**: Ja - Den initiala efterfyllningsberäkningen begränsas till de senaste 90 dagarnas data. Det beräknade attributet uppdateras baserat på inkrementella händelser för efterföljande uppdateringar. Så snart de följande uppdateringarna når summeringsperioden (max 6 månader) påverkar TTL-värdet inte längre det beräknade attributet. Läs mer.
