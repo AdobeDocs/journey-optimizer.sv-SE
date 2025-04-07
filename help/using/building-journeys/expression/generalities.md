@@ -8,7 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: syntax, redigerare, resa
 exl-id: c9434b28-2750-4a53-985e-c4a3f940472c
-source-git-commit: 2de94e8ce3fe77399c8dc1d515ae73d58cb8f43d
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%

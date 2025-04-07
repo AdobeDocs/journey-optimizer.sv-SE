@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 247b966d-4f84-453b-8178-9c9ebcd494ef
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Kanalrapporterna är ett kraftfullt verktyg som ger en omfattande översikt öve
 
 Kanalrapporterna är helt anpassningsbara, så du kan ändra storlek på eller ta bort widgetar och skapa en instrumentpanel som passar dina specifika behov. Du kan också exportera rapportdata till en PDF- eller CSV-fil för ytterligare analys.
 
-Läs mer om de olika mätvärden och widgetar som är tillgängliga för kanalrapporterna på den här [sidan](channel-report.md).
+Läs mer om de olika mätvärden och widgetar som är tillgängliga för kanalrapporter på [den här sidan](channel-report.md).
 
 ## Före start {#manage-reports-prereq}
 
@@ -85,7 +85,7 @@ Följ de här stegen för att få åtkomst till och hantera dina kanalrapporter:
 
 ## Exportera rapporter {#export-reports}
 
-Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att du kan dela, ändra och skriva ut dem. Detaljerade anvisningar för hur du exporterar kanalrapporter finns på följande flikar:
+Du kan enkelt exportera dina olika rapporter till PDF- eller CSV-format så att du kan dela, ändra och skriva ut dem. Detaljerade anvisningar för hur du exporterar kanalrapporter finns på följande flikar:
 
 >[!BEGINTABS]
 

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 994eac32591f4ca352d310bc06057bd20ea03886
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
 1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL Push notification]** och väljer eller skapar en ny konfiguration.
 
-   Läs mer om push-konfiguration i [den här sidan](push-configuration.md).
+   Läs mer om push-konfiguration på [den här sidan](push-configuration.md).
 
    ![](assets/push_create_3.png)
 

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 41448cfa8efc4a7b74b0a490f02e53efdbc0a2e7
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 0%
@@ -96,7 +96,7 @@ Följande skyddsutkast gäller för [fragment](../content-management/fragments.m
 
 Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
 
-Läs mer om målgruppskompositioner i [den här sidan](../audience/get-started-audience-orchestration.md).
+Läs mer om målgruppskompositioner på [den här sidan](../audience/get-started-audience-orchestration.md).
 
 ## Beslutsfattare och beslutsföringsgarantier {#decisioning-guardrails}
 
@@ -190,7 +190,7 @@ Du kan välja mellan följande två lösningar:
 
 ### Uppdatera profil {#update-profile-g}
 
-Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**. De listas på [den här sidan](../building-journeys/update-profiles.md).
+Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**. De visas på [den här sidan](../building-journeys/update-profiles.md).
 
 ### Läs målgrupp {#read-segment-g}
 
@@ -201,7 +201,7 @@ Följande skyddsutkast gäller för [Läs målgruppsaktiviteten](../building-jou
 * Det går inte att använda aktiviteten **Läs målgrupp** med Adobe Campaign-aktiviteter.
 * Aktiviteten **Läs målgrupp** kan bara användas som en första aktivitet i en resa, efter en affärshändelseaktivitet.
 * En resa kan bara ha en **Läs målgrupp**-aktivitet.
-* Se även rekommendationer om hur du använder aktiviteten **Läs målgrupp** i [den här sidan](../building-journeys/read-audience.md).
+* Se även rekommendationer om hur du använder aktiviteten **Läs målgrupp** på [den här sidan](../building-journeys/read-audience.md).
 * Återförsök används som standard på målgruppsinlösta resor (med början från en **Läs målgrupp** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden.
 
 ### Målgruppskvalifikation {#audience-qualif-g}
@@ -238,7 +238,7 @@ Följande skyddsutkast gäller för åtgärden **[!UICONTROL In-app message]**. 
 
 ### Hoppaktivitet {#jump-g}
 
-Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Jump]**. De listas på [den här sidan](../building-journeys/jump.md#jump-limitations).
+Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Jump]**. De visas på [den här sidan](../building-journeys/jump.md#jump-limitations).
 
 ### Kampanjaktiviteter {#ac-g}
 

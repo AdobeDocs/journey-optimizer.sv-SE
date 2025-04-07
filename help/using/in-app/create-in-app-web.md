@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 5a67177e-a7cf-41a8-9e7d-37f7fe3d34dc
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 3%
@@ -92,7 +92,7 @@ Följ stegen nedan för att konfigurera webbkanalen i appen:
 
    * **[!UICONTROL Everytime]**: Visa alltid meddelandet när de händelser som valts i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
    * **[!UICONTROL Once]**: Visa endast det här meddelandet första gången som de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
-   * **[!UICONTROL Until click through]**: Visa det här meddelandet när de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden &quot;klickad&quot;.
+   * **[!UICONTROL Until click through]**: Visa det här meddelandet när de händelser som markerats i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
    * **[!UICONTROL X number of times]**: Visa det här meddelandet X-tid.
 
 1. Om det behövs väljer du vilken **[!UICONTROL Day of the week]** eller **[!UICONTROL Time of day]** meddelandet i appen ska visas.

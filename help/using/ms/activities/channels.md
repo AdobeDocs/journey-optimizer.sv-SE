@@ -6,7 +6,7 @@ description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampan
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: 040c8387c73f9d867840225ddff6cf940cc96ac5
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Kanalaktiviteter {#channel}
 
-Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i både inkommande och utgående kanaler. Ni kan kombinera kanalaktiviteter i kampanjarbetsytan i flera steg för att skapa flerkanaliga kampanjer som kan utlösa åtgärder baserat på kundbeteende och data. Kanaler som stöds listas på [den här sidan](../../channels/gs-channels.md).
+Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i både inkommande och utgående kanaler. Ni kan kombinera kanalaktiviteter i kampanjarbetsytan i flera steg för att skapa flerkanaliga kampanjer som kan utlösa åtgärder baserat på kundbeteende och data. Kanaler som stöds visas på [den här sidan](../../channels/gs-channels.md).
 
 Du kan till exempel skapa en välkomstkampanj för e-post som innehåller en serie meddelanden i olika kanaler, som e-post, SMS, push och direktreklam. Du kan också skicka ett uppföljningsmeddelande via e-post när en kund har slutfört ett köp eller skicka ett personligt födelsedagmeddelande till en kund via SMS.
 

@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärder, resa, meddelanden, sändning, anslutningar
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: d498f32a42b13bfdee20f32a589dd31c77d88fa8
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 21%
+ht-degree: 20%
 
 ---
 

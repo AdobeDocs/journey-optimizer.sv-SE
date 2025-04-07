@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
-source-git-commit: 6268989c14ccb0ae6fd5ac271a33efe4877dd903
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Med Adobe Journey Optimizer kan du utforma och skicka engagerande meddelanden om
 
 Observera att endast utgående meddelandeelement stöds i Journey Optimizer.
 
-+++ Läs mer om meddelandeelement som stöds och uppmaningar till åtgärder
++++ Läs mer om meddelandeelement som stöds och anrop till åtgärder
 
 Följande meddelandetyper stöds i WhatsApp:
 
@@ -96,7 +96,7 @@ Nu kan du börja designa innehållet i ditt whatsApp-meddelande från knappen **
 
 1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL WhatsApp]** och väljer eller skapar en ny konfiguration.
 
-   Läs mer om konfigurationen för whatsApp i [den här sidan](whatsapp-configuration.md).
+   Läs mer om konfigurationen för whatsApp på [den här sidan](whatsapp-configuration.md).
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
@@ -149,7 +149,7 @@ Observera att din whatsApp-mall först måste godkännas av Meta innan den kan a
 
 1. Använd knappen **[!UICONTROL Simulate content]** för att förhandsgranska innehållet i dina WhatsApp-meddelanden, förkortade URL:er och anpassat innehåll. [Läs mer](send-whatsapp.md)
 
-När du har utfört testerna och validerat innehållet kan du skicka ditt whatsApp-meddelande till din publik. De här stegen beskrivs i [den här sidan](send-whatsapp.md)
+När du har utfört testerna och validerat innehållet kan du skicka ditt whatsApp-meddelande till din publik. De här stegen beskrivs på [den här sidan](send-whatsapp.md)
 
 
 <!--
@@ -173,7 +173,7 @@ När du har utfört testerna och validerat innehållet kan du skicka ditt whatsA
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
-Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed in [this page](send-whatsapp.md)
+Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed on [this page](send-whatsapp.md)
 
 >[!TAB Response message]
 
@@ -187,7 +187,7 @@ Once you have performed your tests and validated the content, you can send your 
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
-Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed in [this page](send-whatsapp.md)
+Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed on [this page](send-whatsapp.md)
 
 >[!ENDTABS]
 -->

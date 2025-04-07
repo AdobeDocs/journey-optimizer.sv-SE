@@ -5,7 +5,7 @@ feature: A/B Testing, Experimentation
 role: User
 level: Experienced
 exl-id: 67ba8861-be6f-42ae-b9b8-96168d0dd15c
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Lyftet mellan varianten *ν* och kontrollvarianten *ν<sub>0</sub>* är det rela
 
 På panelen Journey Experimentation visas &quot;närsomhelst giltiga&quot; konfidensintervall (konfidenssekvenser) för enskilda behandlingar i ett experiment.
 
-Konfidenssekvensen för en enskild variant `ν` är central för den statistiska metod som används av Adobe. Du hittar dess definition på [den här sidan](https://doi.org/10.48550/arXiv.2103.06476) (återges från [Waudby-Smith et al.]).
+Konfidenssekvensen för en enskild variant `ν` är central för den statistiska metod som används av Adobe. Definitionen finns på [den här sidan](https://doi.org/10.48550/arXiv.2103.06476) (reproducerad från [Waudby-Smith et al.]).
 
 Om du är intresserad av att uppskatta målparametern `ψ`, t.ex. konverteringsgraden för en variant i en expert, kan dichotomin mellan en sekvens med &#39;fast tid&#39; konfidensintervall (CI) och en tidsenhetlig konfidenssekvens (CS) sammanfattas enligt följande:
 
@@ -56,7 +56,7 @@ Detta har några viktiga konsekvenser som är mycket viktiga för onlinetestning
 * Experimentera kan övervakas kontinuerligt, stoppas på ett adaptivt sätt eller fortsätta.
 * Type-I-felet kontrolleras vid alla stopptider, inklusive databeroende tider.
 
-Adobe använder sekvenser med asymptotisk konfidenssekvens, som för en enskild variant med medeluppskattningen `μ` har formen:
+Adobe använder sekvenser med asymtomatisk konfidenssekvens, som för en enskild variant med medeluppskattningen `μ` har följande format:
 
 ![](assets/statistical_5.png){width="300" align="center"}
 
@@ -69,7 +69,7 @@ Var:
 
 ## Förtroende {#confidence}
 
-Den konfidensgrad som används av Adobe är en&quot; alltid giltig&quot; konfidensgrad, som erhålls genom att invertera konfidenssekvensen för den genomsnittliga behandlingseffekten.
+Den tillförlitlighet som Adobe använder är en tillförsikt som kan erhållas när som helst genom att invertera konfidenssekvensen för den genomsnittliga behandlingseffekten.
 
 För att vara exakt finns det i ett *t* -test för skillnaden i medelvärde mellan två varianter en 1:1-mappning mellan *p*-värdet för det här testet och konfidensintervallet för mellanskillnaden. Ett *p*-värde kan erhållas när som helst genom att invertera (när som helst giltig) konfidenssekvens för den genomsnittliga uppskattaren av behandlingseffekt:
 

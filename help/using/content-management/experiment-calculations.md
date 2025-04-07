@@ -9,7 +9,7 @@ role: User
 level: Experienced
 keywords: innehåll, experiment, statistik, beräkning
 exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
-source-git-commit: 59ecb9a5376e697061ddac4cc68f09dee68570c0
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Experimentationen använder [avancerade statistiska metoder](../content-manageme
 
 Den här artikeln beskriver hur Experimentationen fungerar och ger en intuitiv introduktion till Adobe **Valfri tidsbegränsad konfidenssekvens**.
 
-För expertanvändare beskrivs den tekniska informationen och referenserna på [den här sidan](../content-management/assets/confidence_sequence_technical_details.pdf).
+För expertanvändare finns detaljerad teknisk information och referenser på [den här sidan](../content-management/assets/confidence_sequence_technical_details.pdf).
 
 ## Statistisk testning och kontroll av fel {#statistical-testing}
 
@@ -50,7 +50,7 @@ Tabellen ovan visar olika typer av fel:
 
 De flesta statistiska startmetoder kräver att du korrigerar din provstorlek i förväg, baserat på den effektstorlek som du vill bestämma samt din feltolerans (`\alpha` och `\beta`) i förväg. Adobe Journey Optimizer metod är dock utformad för att du kontinuerligt ska kunna se dina resultat, oavsett provstorlek.
 
-## Adobe Statistisk metod: Valfri tidsbestämd ordningsföljd för tillförlitlighet
+## Adobe statistiska metod: Alla tidssäkra sekvenser
 
 En **konfidenssekvens** är en sekventiell analog till ett **konfidensintervall**, t.ex. om du upprepar dina experiment etthundra gånger och beräknar en uppskattning av medelvärdet och dess associerade 95 %-konfidenssekvens för varje ny användare som deltar i experimentet. En 95-procentig konfidenssekvens inkluderar det verkliga värdet för mätvärdet i 95 av de 100 experiment du utförde. Ett 95-procentigt konfidensintervall kunde endast beräknas en gång per experiment för att ge samma 95-procentiga garanti, inte för varje enskild ny användare. Med Confidence Sequences kan du därför kontinuerligt övervaka experiment utan att öka andelen falskt positiva fel.
 
@@ -74,7 +74,7 @@ Det är viktigt att notera att eftersom konfidenssekvenser är&quot;när som hel
 
 ![](assets/experimentation_report_2.png)
 
-Varje gång du tittar på experimentrapporten analyserar Adobe de data som har ackumulerats i experimentet fram till den här tidpunkten och deklarerar ett experiment som &quot;semikoloniserande&quot; när det giltiga konfidensintervallet för varje tidpunkt överskrider ett tröskelvärde på 95 % för minst en av behandlingarna.
+Varje gång du tittar på experimentrapporten analyserar Adobe de data som har ackumulerats i experimentet fram till nu och deklarerar att ett experiment är &quot;kvalificerat&quot; när det giltiga förtroendet överskrider ett tröskelvärde på 95 % för minst en av behandlingarna.
 
 I det här skedet kommer den behandling som ger bäst resultat (baserat på konverteringsgraden eller det profilnormaliserade måttvärdet) att markeras överst på rapportskärmen och markeras med en stjärna i tabellrapporten. Endast behandlingar med ett konfidensintervall på mer än 95% tillsammans med utgångsvärdet beaktas vid denna bestämning.
 

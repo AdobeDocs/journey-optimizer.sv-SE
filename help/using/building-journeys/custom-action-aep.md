@@ -1,21 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd anpassade åtgärder för att skriva resehändelser i AEP
-description: Använd anpassade åtgärder för att skriva resehändelser i AEP
+title: Använd anpassade åtgärder för att skriva resthändelser i AEP
+description: Använd anpassade åtgärder för att skriva resthändelser i AEP
 feature: Journeys, Use Cases, Custom Actions
 topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
-source-git-commit: f00b157ec843eacdee480dcfe00a8724ab4a3495
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# Använd skiftläge: Använd anpassade åtgärder för att skriva resthändelser i Experience Platform {#custom-action-aep}
+# Användningsfall: Använd anpassade åtgärder för att skriva resehändelser i Experience Platform {#custom-action-aep}
 
 Det här användningsexemplet förklarar hur du skriver anpassade händelser till Adobe Experience Platform från Journeys med hjälp av anpassade åtgärder och autentiserade samtal.
 
@@ -96,7 +96,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 ## Konfigurera den anpassade åtgärden {#custom-action-config}
 
-Konfigurationen av anpassade åtgärder beskrivs på [den här sidan](../action/about-custom-action-configuration.md).
+Konfigurationen av anpassade åtgärder anges på [den här sidan](../action/about-custom-action-configuration.md).
 
 I det här exemplet gör du så här:
 

@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 Varje roll består av behörigheter som gör att användarna kan komma åt de olika funktionerna.
 De kan delas in i två typer:
 
-* **Hög behörighet**: representerar olika behörigheter som kan tilldelas **[!UICONTROL Role]**, till exempel **[!DNL Publish journeys]** och **[!DNL Manage subdomains delegation]**. Höga behörigheter omfattar behörigheter på låg nivå. Behörigheter på hög nivå anges på [den här sidan](ootb-permissions.md).
+* **Hög behörighet**: representerar olika behörigheter som kan tilldelas **[!UICONTROL Role]**, till exempel **[!DNL Publish journeys]** och **[!DNL Manage subdomains delegation]**. Höga behörigheter omfattar behörigheter på låg nivå. Behörigheter på hög nivå finns på [den här sidan](ootb-permissions.md).
 
 * **Lågnivåbehörighet**: representerar de olika behörigheter som kommer från högnivåbehörigheten.
 

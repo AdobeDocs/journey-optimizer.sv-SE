@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 25ca0dd72622ef15db3edeedfd16b91d392127d4
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 2%
@@ -69,7 +69,7 @@ Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL
 
 1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL SMS]** och väljer eller skapar en ny konfiguration.
 
-   Läs mer om SMS-konfigurationen på [den här sidan](sms-configuration.md).
+   Läs mer om SMS-konfiguration på [den här sidan](sms-configuration.md).
 
    ![](assets/sms_create_3.png)
 
@@ -131,11 +131,11 @@ Följ stegen nedan för att konfigurera ditt SMS-innehåll. Inställningarna fö
 
 ## Definiera ditt MMS-innehåll{#mms-content}
 
-Du kan förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service), vilket möjliggör delning av media som videor, bilder, ljudklipp och GIF med mera. Dessutom kan MMS innehålla upp till 1 600 tecken i meddelandet.
+Du kan förbättra kommunikationen genom att skicka MMS-meddelanden (Multimedia Message Service), vilket möjliggör delning av media som videor, bilder, ljudklipp och GIF-filer med mera. Dessutom kan MMS innehålla upp till 1 600 tecken i meddelandet.
 
 >[!NOTE]
 >
-> MMS-kanalen har några begränsningar som anges på [den här sidan](../start/guardrails.md#sms-guardrails).
+> MMS-kanalen har några begränsningar angivna på [den här sidan](../start/guardrails.md#sms-guardrails).
 
 Så här skapar du MMS-innehåll:
 
@@ -161,7 +161,7 @@ Använd knappen **[!UICONTROL Simulate content]** om du vill förhandsgranska di
 
 ![](assets/sms-content-preview.png)
 
-När du har utfört testerna och validerat innehållet kan du skicka textmeddelandet till mottagarna. De här stegen beskrivs i [den här sidan](send-sms.md)
+När du har utfört testerna och validerat innehållet kan du skicka textmeddelandet till mottagarna. De här stegen beskrivs på [den här sidan](send-sms.md)
 
 När ni har skickat det kan ni mäta effekten av ert SMS i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report-cja-sms.md).
 

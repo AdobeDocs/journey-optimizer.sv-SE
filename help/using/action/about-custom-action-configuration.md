@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 2af3cef357bf68091d9b8b5d2750e73a290bc682
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '1638'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska anvä
 
 ## Begränsningar{#custom-actions-limitations}
 
-Anpassade åtgärder har några begränsningar som anges på [den här sidan](../start/guardrails.md).
+Anpassade åtgärder har några begränsningar angivna på [den här sidan](../start/guardrails.md).
 
 I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling med objekt. Läs mer om samlingsbegränsningar på [den här sidan](../building-journeys/collections.md#limitations).
 

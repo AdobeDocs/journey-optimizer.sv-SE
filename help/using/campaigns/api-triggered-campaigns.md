@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 280238fb3f41cef08c4e5a8720839aff5b767cf5
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Syntaxen `{{context.<contextualAttribute>}}` är endast mappad till datatypen St
 >
 >Kontextattributen som skickas till begäran får inte överstiga 200 kB och är alltid av typen sträng.
 >
->Syntaxen `context.system` är begränsad till intern användning i Adobe och ska inte användas för att skicka kontextuella attribut.
+>Syntaxen `context.system` är begränsad till Adobe enbart för intern användning och ska inte användas för att skicka kontextuella attribut.
 
 Observera att det för närvarande inte finns något sammanhangsberoende attribut tillgängligt för användning på den vänstra menyn. Attribut måste anges direkt i ditt personaliseringsuttryck utan att någon kontroll utförs av [!DNL Journey Optimizer].
 

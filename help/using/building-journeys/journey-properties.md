@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Läs mer om tekniska fält som rör en resa för en viss profil och hur du anvä
 
 Profilinmatningsläget definieras på resenivån i den högra konfigurationsrutan. Inställningarna beskrivs nedan.
 
-Profilingångshantering beror på typen av resor. Läs mer om hantering av profilinträde och återinträde på webben på [den här sidan](entry-management.md).
+Profilingångshantering beror på typen av resor. Läs mer om hantering av profilinträde och återinträde på [den här sidan](entry-management.md).
 
 ### Tillåt återinträde  {#allow-reentrance}
 

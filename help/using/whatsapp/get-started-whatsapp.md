@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
-source-git-commit: 87931614150d6f764f565f683f83db4f63d88ee0
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 Du kan nu skicka meddelanden om whatsApp direkt via Journey Optimizer. Den här funktionen möjliggör smidig integrering av WhatsApp i resor och kampanjer, vilket förbättrar kommunikationen och engagemanget med mottagarna.
 
-* På en **resa**. Skapa en resa, lägg till en **whatsApp**-aktivitet och definiera grundläggande inställningar. Bläddra sedan till den högra panelen i **[!UICONTROL Actions: WhatsApp]** för att skapa innehållet för WhatsApp-meddelandet. Lär dig hur du skapar en resa på [den här sidan](../building-journeys/journey-gs.md).
+* På en **resa**. Skapa en resa, lägg till en **whatsApp**-aktivitet och definiera grundläggande inställningar. Bläddra sedan till den högra panelen i **[!UICONTROL Actions: WhatsApp]** för att skapa innehållet för WhatsApp-meddelandet. Lär dig skapa en resa på [den här sidan](../building-journeys/journey-gs.md).
 
-* I en **kampanj**. Skapa en kampanj, välj **WhatsApp** som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera det WhatsApp-meddelande som ska skickas. Lär dig hur du skapar en kampanj på [den här sidan](../campaigns/create-campaign.md#configure).
+* I en **kampanj**. Skapa en kampanj, välj **WhatsApp** som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera det WhatsApp-meddelande som ska skickas. Lär dig skapa en kampanj på [den här sidan](../campaigns/create-campaign.md#configure).
 
 ![](assets/do-not-localize/whatsapp-beta.png){zoomable="yes"}
 

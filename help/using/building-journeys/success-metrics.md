@@ -11,7 +11,7 @@ keywords: publicera, resa, live, giltighet, kontrollera
 hide: true
 hidefromtoc: true
 exl-id: 95d0267e-fab4-4057-8ab5-6f7c9c866b0f
-source-git-commit: 48ef8d42057ffe51c27221c2176192d4e637fb96
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%

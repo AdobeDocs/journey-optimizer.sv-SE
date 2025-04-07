@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 5f48c3df14768e699e174e5a3539438e9b774e1a
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 4%
@@ -28,7 +28,7 @@ ht-degree: 4%
 >title="Resor"
 >abstract="Utforma kundresor för att leverera personaliserade, sammanhangsbaserade upplevelser. Med Journey Optimizer kan du skapa användningsfall för realtidssamordning med kontextuella data som lagras i händelser eller datakällor. Fliken **Översikt** visar en instrumentpanel med viktiga mått för dina resor. Fliken **Bläddra** visar en lista över befintliga resor."
 
-Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Användargränssnittet för resan beskrivs på [den här sidan](journey-ui.md).
+Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Användargränssnittet för resan visas på [den här sidan](journey-ui.md).
 
 ![exempel på resans arbetsyta](assets/journey38.png)
 
@@ -64,7 +64,7 @@ Som datatekniker beskrivs stegen för att konfigurera dina resor, inklusive data
 
 >[!NOTE]
 >
->Reservoarer och begränsningar för resan finns på [den här sidan](../start/guardrails.md)
+>Resegarantier och begränsningar finns på [den här sidan](../start/guardrails.md)
 
 ## Skapa en resa {#jo-build}
 

@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 keywords: åtgärd, anpassad, API, resa, konfiguration, tjänst
 exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
-source-git-commit: 8b96c9d4698dc58abdc5ae0261db92b0ce708597
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 18%
@@ -27,7 +27,7 @@ Använd anpassade åtgärder för att aktivera anslutning till ett tredjepartssy
 
 Läs mer om anpassade åtgärder i [det här avsnittet](../action/action.md).
 
-Lär dig hur du skapar och konfigurerar en anpassad åtgärd på [den här sidan](../action/about-custom-action-configuration.md).
+Lär dig skapa och konfigurera en anpassad åtgärd på [den här sidan](../action/about-custom-action-configuration.md).
 
 ## Samtycke- och datahantering {#privacy}
 

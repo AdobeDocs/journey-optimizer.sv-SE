@@ -8,7 +8,7 @@ level: Beginner
 keywords: i appen, meddelande, skapa, börja
 hide: true
 hidefromtoc: true
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 10%
@@ -55,7 +55,7 @@ I avsnittet **[!UICONTROL Message Layout]** väljer du ett av de fyra olika layo
 
 * **[!UICONTROL Custom]**: I det anpassade meddelandeläget kan du importera och redigera ett av dina förkonfigurerade HTML-meddelanden direkt.
 
-   * Välj **[!UICONTROL Compose]** om du vill ange eller klistra in Raw-HTML-koden.
+   * Välj **[!UICONTROL Compose]** om du vill ange eller klistra in HTML-råkod.
 
      Använd den vänstra rutan för att utnyttja Journey Optimizer personaliseringsfunktioner. Mer information om detta finns i [det här avsnittet](../personalization/personalize.md).
 

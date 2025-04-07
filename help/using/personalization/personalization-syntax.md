@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 78c1464ccddec75e4827cbb1877d8fab5ac08b90
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 1%
@@ -92,7 +92,7 @@ där:
 
   Mer information om beslut-API och om offertrepresentationer finns på [den här sidan](../offers/api-reference/offer-delivery-api/decisioning-api.md)
 
-  Alla referenser valideras mot offertschema med en valideringsmekanism som beskrivs i [den här sidan](../personalization/personalization-build-expressions.md)
+  Alla referenser valideras mot offertschema med en valideringsmekanism som beskrivs på [den här sidan](../personalization/personalization-build-expressions.md)
 
   +++Exempelreferenser
 

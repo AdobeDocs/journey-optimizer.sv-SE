@@ -8,7 +8,7 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 7adee85117a3aad1a347f9f0808b0f32531dc548
+source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Lär dig hur du bygger resor i följande kompletta fall:
 
 >[!NOTE]
 >
->Reservoarer och begränsningar för resan finns på [den här sidan](../start/guardrails.md)
+>Resegarantier och begränsningar finns på [den här sidan](../start/guardrails.md)
 
 ## Instruktionsvideo {#video}
 
