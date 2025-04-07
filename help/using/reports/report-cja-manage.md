@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
-source-git-commit: 4eef896bd139cfb4acb4b817527dee67e246082d
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Förbättra dataanalysupplevelsen med din **[!DNL Customer Journey Analytics]**-
 
 Det här kraftfulla alternativet dirigerar om dig till din **[!DNL Customer Journey Analytics]**-miljö, så att du kan anpassa dina rapporter i stor utsträckning. Ni kan berika era widgetar med specialiserade Customer Journey Analytics-mätvärden och ta era insikter till en helt ny nivå.
 
-[Läs mer i Customer Journey Analytics-gränssnittet.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-getting-started)
+[Läs mer om Customer Journey Analytics gränssnitt.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-getting-started)
 
 ## Definiera rapportperioden {#report-period}
 
@@ -45,7 +45,7 @@ Rapporten uppdateras automatiskt när filtret tillämpas eller ändras.
 
 ## Exportera rapporter {#export-reports}
 
-Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att du kan dela och skriva ut dem. Hur du exporterar rapporter beskrivs på flikarna nedan.
+Du kan enkelt exportera dina olika rapporter till PDF- eller CSV-format så att du kan dela och skriva ut dem. Hur du exporterar rapporter beskrivs på flikarna nedan.
 
 >[!BEGINTABS]
 
@@ -153,7 +153,7 @@ Du kan skapa anpassade beräknade mätvärden direkt i dina rapporter. Ni kan ge
 
    ![](assets/cja-create-metric_3.png)
 
-Det nya måttet inkluderas när du exporterar rapporten som PDF eller CSV. Den tas dock bort från rapporten när du har avslutat den.
+De nya mätvärdena inkluderas när du exporterar rapporten som en PDF eller CSV. Den tas dock bort från rapporten när du har avslutat den.
 
 ## Utforska data med Exploratory Analysis {#exploratory}
 
@@ -179,7 +179,7 @@ Nu kan du analysera data med hjälp av anpassade tabell- och visualiseringsverkt
 
 <!--## Create a down-funnel metric {#down-funnel}
 
-1. Create a new journey or open an existing one. [Learn more on journey creation](../building-journeys/journey-gs.md)
+1. Create a new journey or open an existing one. [Learn more about journey creation](../building-journeys/journey-gs.md)
 
 1. On the canvas editor, select the option to "add a metric".
 
@@ -221,7 +221,7 @@ Du kan nu fortsätta att använda den nya målgruppen med en resa eller kampanj.
 >
 > Funktionen **Template** introduceras stegvis, med fullständig allmän tillgänglighet planerad till slutet av januari och exklusivt tillgänglig för användare med en [!DNL Customer Journey Analytics]-licens.
 
-Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. [Läs mer om mallen Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
+Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. [Läs mer om Customer Journey Analytics-mallen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
 
 När du får åtkomst till dina rapporter kan du välja mellan två malltyper i listrutan **[!UICONTROL Select a template]**:
 
@@ -240,7 +240,7 @@ Så här skapar du en mall:
 
    ![](assets/cja_template_1.png)
 
-1. Anpassa rapporten efter era behov. Mer information finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+1. Anpassa rapporten efter era behov. Läs [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 1. När den anpassade mallen är klar går du till menyn **[!UICONTROL Project]** och väljer **[!UICONTROL Save as template]**.
 

@@ -4,13 +4,13 @@ description: Läs mer om hur du bestämmer skyddsprofiler och begränsningar.
 feature: Decisioning
 role: User
 level: Intermediate
-source-git-commit: b6c31528784c0c8576e3200e7611a6b6cd43d7a7
+exl-id: 73548973-ff8d-4d6c-b383-dd3679fa159a
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 6%
 
 ---
-
 
 # Avgörande av skyddsräcken och begränsningar {#decisioning-guardrails}
 

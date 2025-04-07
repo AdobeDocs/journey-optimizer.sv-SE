@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: b77cac6ba9984139f7fd5cb761759cafb26ccc48
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 1%

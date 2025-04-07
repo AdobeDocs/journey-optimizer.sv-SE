@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: df13e473-8003-4dde-aaf8-df8385c9ee21
-source-git-commit: 47b549f3e1e220b7e8f0c82d9a1f9ecfd5dd2340
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 >title="Landningssidans Live-rapport"
 >abstract="Med landningssidans Live-rapport kan du i realtid mäta och visualisera landningssidans effekt och prestanda endast under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som beskriver hur landningssidan fungerar och vilka fel den innehåller. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
-Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics i fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
+Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
 
 Om du vill få åtkomst till dina rapporter väljer du **[!UICONTROL View Last 24hrs report]** på den avancerade menyn på den valda landningssidan.
 

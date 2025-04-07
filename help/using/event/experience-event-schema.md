@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: scheman, XDM, plattform, direktuppspelning, förtäring, resa
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: 7c55cc25fe1286d466f2de719aa42dcb76154881
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Du kan definiera en schemarelation för en array med strängar, till exempel en 
 
 ![](assets/schema15.png)
 
-Du kan också definiera en schemarelation med ett attribut inuti en objektmatris, till exempel en lista med inköpsinformation (produkt-ID, produktnamn, pris, rabatt). Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och personalisering av meddelanden.
+Du kan också definiera en schemarelation med ett attribut inuti en objektmatris, till exempel en lista med inköpsinformation (produkt-ID, produktnamn, pris, rabatt). Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och meddelandepersonalisering.
 
 ![](assets/schema16.png)
 

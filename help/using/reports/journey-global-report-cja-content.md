@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f68df6ee-d74e-46b4-a53f-b0eb50101e85
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Diagrammen **[!UICONTROL Display & Click]** innehåller en detaljerad analys av 
 
 Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina innehållskort, vilket ger viktiga insikter i engagemang och upplevelseeffektivitet.
 
-+++ Läs mer om att spåra datamätningar
++++ Läs mer om att spåra datamått
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar som målprofiler för dina innehållskort.
 

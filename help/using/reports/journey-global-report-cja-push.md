@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6d4b7669-7852-42f0-9347-399a3994011f
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Du kan komma åt din push-meddelandereserapport genom att klicka på knappen **[
 
 Tabellen **[!UICONTROL Sending Statistics]** hjälper dig att förstå hur push-meddelanden fungerar. Det innehåller viktiga mätvärden som leveransfrekvens och målgruppsstorlek som ger er värdefulla insikter om hur effektiva och omfattande era resor är.
 
-+++ Läs mer om Skicka statistik-statistik
++++ Läs mer om att skicka statistik
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina SMS-meddelanden.
 
@@ -88,7 +88,7 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de URL:er i dina push-meddelanden som lockar den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de populäraste länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll i era push-meddelanden.
 
-+++ Läs mer om URL:er för spårade länkar
++++ Läs mer om URL-mått för spårad länk
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina push-meddelanden.
 

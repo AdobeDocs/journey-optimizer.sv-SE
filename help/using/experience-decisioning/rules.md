@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
-source-git-commit: 616e1dd9fbfd029f7209356d5c19cfff9d4b4f06
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 2%
@@ -60,4 +60,4 @@ Så här skapar du en beslutsregel:
 
    >[!NOTE]
    >
-   >Inkapslingsdjupet i en berättiganderegel är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen. En regelsträng kan vara upp till 15 kB för UTF-8-kodade tecken. Detta motsvarar 15 000 ASCII-tecken (1 byte vardera), eller 3 750-7 500 icke-ASCII-tecken (2-4 byte vardera). [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
+   >Inkapslingsdjupet i en berättiganderegel är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen. En regelsträng kan vara upp till 15 kB för UTF-8-kodade tecken. Detta motsvarar 15 000 ASCII-tecken (1 byte vardera), eller 3 750-7 500 icke-ASCII-tecken (2-4 byte vardera). [Läs mer om hur du bestämmer dig för skyddsprofiler och begränsningar](gs-experience-decisioning.md#guardrails)

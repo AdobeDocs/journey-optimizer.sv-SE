@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 9b66f4871d8b539bf0201b2974590672205a3243
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 >[!NOTE]
 >
-> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna är en del av produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer på [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
+> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna är en del av produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer om [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
 
 1. Välj alternativet **[!UICONTROL Asset library]**.
 

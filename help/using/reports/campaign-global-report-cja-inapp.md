@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 51cbe27f-3f3f-471e-a5d9-e3a88fcfdd68
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Du kommer åt kampanjrapporten i appen genom att klicka på knappen **[!UICONTRO
 
 Diagrammet **[!UICONTROL Impression & Click trend]** innehåller en detaljerad analys av hur dina profiler interagerar med dina meddelanden i appen och ger värdefulla insikter om hur profilerna interagerar med ditt innehåll.
 
-+++ Läs mer om intryckt- och klicktrendstatistik
++++ Läs mer om mått för tryck och klickning
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden i appen.
 
@@ -74,7 +74,7 @@ Diagrammet **[!UICONTROL Displays]** hjälper dig att förstå både meddelandet
 
 Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina meddelanden i appen, vilket ger viktiga insikter i hur engagemanget och i appmeddelanden fungerar.
 
-+++ Läs mer om att spåra datamätningar
++++ Läs mer om att spåra datamått
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar som målprofiler för meddelanden i appen.
 
@@ -123,7 +123,7 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de URL:er i dina meddelanden i appen som lockar den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de populäraste länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll i era meddelanden i appen.
 
-+++ Läs mer om URL:er för spårade länkar
++++ Läs mer om URL-mått för spårad länk
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i meddelanden i appen.
 

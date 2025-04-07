@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: 2acb883b66e5da9c06ba1551f708bb8ab47ce343
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 49%
@@ -36,7 +36,7 @@ Några fördelar:
 
 >[!NOTE]
 >
->Om du är en [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"}-användare som använder **Offer decisioning** -programmet gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
+>Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"}-användare och använder **Offer Decisioning**-programmet gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
 
 ## Om erbjudanden och beslut {#about-offers-and-decisions}
 

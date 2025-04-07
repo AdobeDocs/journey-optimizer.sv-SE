@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, optimering, delegering
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 23%
@@ -44,7 +44,7 @@ På så sätt kan du bevara domänens och andra underdomäners rykte. Om t.ex. u
 
 När du implementerar en lösning finns det krav på komponenter som riktas mot utsidan: bland annat att ställa in länkar och webbsidor som ska spåras, visa spegelsidor osv.
 
-Dessa krav hanteras via komponenter som finns både på Adobe och hos kunden, men de innehåller URL:er som kan ses av mottagarna av e-postmeddelandena. För att undvika att ha URL:er som anger den underliggande tekniska lösningen eller värdtjänstleverantören, kan underdomäner konfigureras så att de blir genomskinliga för e-postmeddelandets mottagare.
+Dessa krav hanteras via komponenter som finns både hos Adobe och kunden, men de innehåller URL:er som kan ses av mottagarna av e-postmeddelandena. För att undvika att ha URL:er som anger den underliggande tekniska lösningen eller värdtjänstleverantören, kan underdomäner konfigureras så att de blir genomskinliga för e-postmeddelandets mottagare.
 
 **Läs mer**
 
@@ -58,13 +58,13 @@ Med subdomänkonfigurationen kan du konfigurera ett underavsnitt av din domän (
 
 * **Fullständig underdomändelegering till Adobe** (rekommenderas): Underdomänen har delegerats till Adobe. Adobe kan styra och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden. [Läs mer om fullständig delegering av underdomäner](delegate-subdomain.md#full-subdomain-delegation)
 
-* **Använda CNAME**: Skapa en underdomän och använd CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS. [Läs mer om delegering av CNAME-underdomäner](delegate-subdomain.md#cname-subdomain-delegation)
+* **Använda CNAME**: Skapa en underdomän och använd CNAME för att peka på Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS. [Läs mer om delegering av CNAME-underdomäner](delegate-subdomain.md#cname-subdomain-delegation)
 
 >[!CAUTION]
 >
 >* Den fullständiga underdomänsdelegeringen är den rekommenderade metoden.
 >
->* CNAME-metoden rekommenderas om organisationens principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats via CNAME-metoden.
+>* CNAME-metoden rekommenderas om organisationens principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats med CNAME-metoden.
 
 Tabellen nedan tillhandahåller en sammanfattning av hur dessa metoder fungerar samt den troliga ansträngningsnivån:
 
@@ -75,7 +75,7 @@ Tabellen nedan tillhandahåller en sammanfattning av hur dessa metoder fungerar 
 
 Ytterligare information om domänkonfiguration finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html).
 
-Om du har några frågor om konfigureringsmetoder för subdomäner kan du kontakta Adobe eller så småningom kontakta kundtjänst för att beställa rådgivning om leveransen.
+Om du har några frågor om konfigureringsmetoder för subdomäner kan du kontakta Adobe eller så småningom kontakta kundtjänst för att få rådgivning om slutprodukten.
 
 ## Åtkomst till delegerade underdomäner {#access-delegated-subdomains}
 

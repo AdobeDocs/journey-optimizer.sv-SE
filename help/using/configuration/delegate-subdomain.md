@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1777'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för at
 
 >[!CAUTION]
 >
->Den fullständiga underdomänsdelegeringen rekommenderas. Lär dig mer om skillnaderna mellan de båda [metoderna för underdomänskonfiguration](about-subdomain-delegation.md#subdomain-delegation-methods).
+>Den fullständiga underdomänsdelegeringen rekommenderas. Läs mer om skillnaderna mellan de båda [metoderna för konfiguration av underdomäner](about-subdomain-delegation.md#subdomain-delegation-methods).
 >
 >Underdomänskonfigurationen är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.
 
@@ -223,7 +223,7 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
 
 1. **Skapa framåtriktad DNS**: Om det här är den första underdomänen som du delegerar skapar Adobe den framåtriktade DNS som krävs för att skapa PTR-poster - en för varje IP-adress.
 
-1. **Skapa PTR-post**: PTR-posten, som även kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar en underdomän för första gången, en för varje IP-adress, alla IP-adresser som pekar på den underdomänen. Om IP-adressen till exempel är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1 PTR1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen. [Läs mer om PTR-poster](ptr-records.md)
+1. **Skapa PTR-post**: PTR-posten, som även kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar en underdomän för första gången, en för varje IP-adress, alla IP-adresser som pekar på den underdomänen. Om IP-adressen till exempel är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1PTR r1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen. [Läs mer om PTR-poster](ptr-records.md)
 
 ## Instruktionsvideo{#video}
 

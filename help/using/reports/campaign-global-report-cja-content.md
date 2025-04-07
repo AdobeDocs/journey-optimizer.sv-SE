@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1603a696-33cc-42d8-a52a-623d85f61584
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Du kommer åt kampanjrapporten för ditt innehållskort genom att klicka på kna
 
 Diagrammen **[!UICONTROL Display & click trend]** hjälper dig att förstå både meddelandets övergripande räckvidd och antalet unika profiler som är kopplade till det.
 
-+++ Läs mer om Visa och klicka på mätvärden
++++ Läs mer om mått för visning och klickning
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på på i innehållskortet.
 
@@ -47,7 +47,7 @@ Diagrammen **[!UICONTROL Display & click trend]** hjälper dig att förstå båd
 
 Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina innehållskort, vilket ger viktiga insikter i engagemanget och innehållskortets effektivitet.
 
-+++ Läs mer om att spåra datamätningar
++++ Läs mer om att spåra datamått
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar som målprofiler för dina innehållskort.
 

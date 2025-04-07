@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 39441fe9-5cdc-4787-9267-798de80e3af2
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Du kommer åt webbkampanjrapporten genom att klicka på knappen **[!UICONTROL Re
 
 Diagrammet **[!UICONTROL Impression & Click trend]** innehåller en detaljerad analys av hur dina profiler interagerar med dina webbsidor, och ger värdefulla insikter om hur profiler interagerar med ditt innehåll.
 
-+++ Läs mer om intryckt- och klicktrendstatistik
++++ Läs mer om mått för tryck och klickning
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll har klickats på på dina webbsidor.
 
@@ -74,7 +74,7 @@ Diagrammet **[!UICONTROL Displays]** hjälper dig att förstå både meddelandet
 
 Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina webbsidor, vilket ger viktiga insikter i hur engagemanget och webbsidorna fungerar.
 
-+++ Läs mer om att spåra datamätningar
++++ Läs mer om att spåra datamått
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina webbsidor.
 
@@ -114,7 +114,7 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de webbadresser på dina webbsidor som tillför den högsta besökstrafiken. På så sätt kan du identifiera och prioritera de populäraste länkarna och öka din förståelse för hur proffsen interagerar med specifikt innehåll på dina webbsidor.
 
-+++ Läs mer om URL:er för spårade länkar
++++ Läs mer om URL-mått för spårad länk
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll på dina webbsidor.
 

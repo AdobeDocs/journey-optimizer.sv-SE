@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -118,7 +118,7 @@ När du har bekräftat redigeringen av PTR-posten visas ikonen **[!UICONTROL Pro
 >
 >[Uppdateringsbearbetningen](#processing) kan ta upp till 3 timmar.
 
-Om du vill kontrollera uppdateringsinformationen för PTR-posten klickar du på ikonen bredvid den. Läs mer om de statusar som är associerade med de olika ikonerna i [det här avsnittet](#ptr-record-update-statuses).
+Om du vill kontrollera uppdateringsinformationen för PTR-posten klickar du på ikonen bredvid den. Läs mer om statusvärdena som är associerade med de olika ikonerna i [det här avsnittet](#ptr-record-update-statuses).
 
 ![](assets/ptr-record-recent-update.png)
 

@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 2%
@@ -169,7 +169,7 @@ Du kan också förhandsgranska webbupplevelseinnehållet innan du publicerar det
 >
 >Om flera resor eller kampanjer uppdaterar samma element på webbplatsen har den högsta prioriteringen företräde.
 
-### Publish en webbresa {#activate-web-journey}
+### Publicera en webbresa {#activate-web-journey}
 
 Följ stegen nedan för att göra din webbupplevelse levande från en resa.
 
@@ -181,7 +181,7 @@ Följ stegen nedan för att göra din webbupplevelse levande från en resa.
 
    >[!NOTE]
    >
-   >Läs mer om publicering av resor i [det här avsnittet](../building-journeys/publishing-the-journey.md).
+   >Läs mer om att publicera resor i [det här avsnittet](../building-journeys/publishing-the-journey.md).
 
 Din webbresa har statusen **[!UICONTROL Live]** och är nu skrivskyddad. Varje mottagare av resan kan se de ändringar du har lagt till på webbplatsen.
 

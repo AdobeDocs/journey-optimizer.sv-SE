@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: 69a19190-d2e2-4858-a1df-ffd008226e2b
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -48,12 +48,12 @@ När ni har skickat det kan ni mäta effekten av er direktreklamkampanj i Campai
 
 ## Hantera samtycke för direktreklam {#dm-consent-management}
 
-I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Medgivandeschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden.
+I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden.
 
-Om en profil har valt att inte ta emot direktreklam, kommer värdet för `consents.marketing.postalMail.val` att vara `n` i motsvarande Experience Platform-profilattribut och motsvarande profil kommer att uteslutas från efterföljande leveranser.
+Om en profil har valt att inte ta emot direktreklam, i motsvarande Experience Platform-profilattribut, kommer värdet för `consents.marketing.postalMail.val` att vara `n` och motsvarande profil kommer att uteslutas från efterföljande leveranser.
 
 Om du vill aktivera det igen måste profilattributet ändras tillbaka till `consents.marketing.postalMail.val` : `y`.
 
-Om du vill hantera en profils attribut går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+Om du vill hantera en profils attribut går du till Experience Platform och öppnar profilen genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
 Läs mer om hur du hanterar avanmälan i Journey Optimizer i [det här avsnittet](../privacy/opt-out.md).

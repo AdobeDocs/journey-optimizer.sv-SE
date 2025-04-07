@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
-source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
@@ -51,7 +51,7 @@ För att kunna anropa [!DNL Adobe Experience Platform] API:er måste du först s
 * `x-gw-ims-org-id: {IMS_ORG}`
 * `x-sandbox-name: {SANDBOX_NAME}`
 
-Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver ytterligare en rubrik:
+Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver ytterligare ett huvud:
 
 * `Content-Type: application/json`
 

@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 5a20911d-cc87-4fdc-9b4b-936c19258876
-source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%

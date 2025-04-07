@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 173d73996a676be4ebcad471f396b5f5256b80a5
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 0%

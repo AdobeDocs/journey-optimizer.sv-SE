@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
-source-git-commit: eea6cbaf29f3558f85b462d3dd3750d7f716bbcc
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 0%
@@ -295,7 +295,7 @@ Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta e
 >title="Översättningsprojekt läggs in"
 >abstract="Genom att lägga in översättningsprojekt kan ni hantera och utföra översättningar direkt i översättningsprojektet, effektivisera processen och behålla större kontroll över översättningskvalitet och konsekvens."
 
-Om du valde Insourcing när du konfigurerade språkinställningarna kan du översätta innehållet direkt i översättningsprojektet.
+Om du valde Insourcing när du konfigurerade språkinställningarna kan du översätta ditt innehåll direkt i översättningsprojektet.
 
 1. Gå till menyn **[!UICONTROL More actions]** från din **[!UICONTROL Translation project]** och välj **[!UICONTROL Insourcing]**.
 

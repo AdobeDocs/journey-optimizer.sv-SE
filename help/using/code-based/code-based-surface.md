@@ -5,7 +5,8 @@ feature: Code-based Experiences, Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-source-git-commit: e9181c333fb9188cdfcee3fd96c1d3bb94b8dd75
+exl-id: 07ec74fb-7fbc-48c6-a8fc-f58f24a60723
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
@@ -72,7 +73,7 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 I [!DNL Journey Optimizer] har den kodbaserade upplevelsekanalen stöd för två typer av kundimplementeringar:
 
 * Baserat på [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} för dina webbplatser eller på [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} för dina mobilappar;
-* Server-side eller hybrid med [API:er för AEP Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"}.
+* Server-side eller hybrid med [AEP Edge Network Server-API:er](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"}.
 
 >[!NOTE]
 >
@@ -82,7 +83,7 @@ Med kodbaserade upplevelser kan du ändra innehåll på detaljerade platser <!--
 
 Dessa yt-URI:er disponeras och hanteras beroende på implementeringsmetoden:
 
-* **Webb/mobil-SDK**: Webb-/mobilutvecklaren måste definiera dessa detaljerade platser som enkla strängar eftersom webb/mobil-SDK automatiskt kan disponera yt-URI baserat på aktuell URL/app-ID och platssträngen.
+* **Webb/mobil-SDK**: Din webb-/mobilutvecklare måste definiera dessa detaljerade platser som enkla strängar, eftersom webb-/mobil-SDK automatiskt kan disponera yt-URI baserat på aktuell URL/app-ID och platssträngen.
 
 * **Edge Network-API:er**: App-/sidutvecklaren måste definiera URI:er med fullständig yta som innehåller den fullständiga sökvägen och platsen där innehållet ska användas, eftersom fullständiga URI:er krävs för den här typen av implementering.
 

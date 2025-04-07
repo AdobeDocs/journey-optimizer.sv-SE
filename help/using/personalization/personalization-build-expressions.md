@@ -10,7 +10,7 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 0533051314530b90a19e3b170d94f7761927053e
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%

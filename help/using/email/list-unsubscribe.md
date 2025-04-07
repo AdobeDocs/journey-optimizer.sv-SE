@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
-source-git-commit: 0fd6c054b9b4df9e3ed900c610e0d1186e479750
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 0%

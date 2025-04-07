@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Följ stegen nedan för att börja skapa din webbupplevelse.
 
 >[!NOTE]
 >
->Webbinnehållsdesignern liknar oftast e-postdesignern. Läs mer om [att utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>Webbinnehållsdesignern liknar oftast e-postdesignern. Läs mer om att [utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).
 
 ## Använda komponenter {#content-components}
 

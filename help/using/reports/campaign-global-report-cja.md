@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b74d3137-2dd9-4302-a56e-73503d318d18
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Observera att mätvärdena varierar beroende på vilka kanaler som används i ka
 
 Diagrammet **[!UICONTROL Campaign funnel results]** innehåller en detaljerad analys av hur era profiler interagerar med dina meddelanden, och ger värdefulla insikter om hur olika profiler interagerade med ditt innehåll.
 
-+++ Läs mer om resultatstatistik för kampanjtrattar
++++ Läs mer om resultatstatistik för Campaign-tratten
 
 * **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 

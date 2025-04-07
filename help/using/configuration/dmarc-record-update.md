@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
 exl-id: 15b10a61-6ecd-4ffa-b1c2-21e862263f6d
-source-git-commit: da5b8d6c95e76af98b27ffcff11e75c26b90200a
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Google och Yahoo är en del av deras branschledande arbetsmetoder! båda kräver
 >
 >Misslyckas med att uppfylla det nya kravet från Gmail och Yahoo! förväntas resultera i att e-postmeddelanden landar i skräppostmappen eller blockeras.
 
-Därför rekommenderar Adobe starkt att du ser till att du har DMARC-post konfigurerad för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ stegen nedan som gäller ditt ärende:
+Därför rekommenderar Adobe att du ser till att du har DMARC-post konfigurerad för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ stegen nedan som gäller ditt ärende:
 
 * Om du har [delegerat](delegate-subdomain.md#full-subdomain-delegation) dina sändande underdomäner till Adobe följer du ett av alternativen nedan:
 

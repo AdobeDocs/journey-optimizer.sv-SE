@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6fae8beb-ca40-40a1-8939-c309fbf46c4f
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Du kan komma åt din rapport om direktutskick genom att klicka på knappen **[!U
 
 Tabellen **[!UICONTROL Sending Statistics]** ger dig en inblick i hur direktreklamresorna fungerar. Se viktiga mätvärden, som antalet mottagare och levererade delar, som hjälper dig att mäta hur omfattande och effektiva utskicken är.
 
-+++ Läs mer om Skicka statistik-statistik
++++ Läs mer om att skicka statistik
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
 

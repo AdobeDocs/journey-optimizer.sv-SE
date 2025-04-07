@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
-source-git-commit: 616e1dd9fbfd029f7209356d5c19cfff9d4b4f06
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -47,9 +47,9 @@ Så här skapar du en rangordningsmetod:
 
    >[!NOTE]
    >
-   >Inkapslingsdjupet i en rankningsformel är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen. En regelsträng kan vara upp till 8 kB för UTF-8-kodade tecken. Detta motsvarar 8 000 ASCII-tecken (1 byte vardera), eller 2 000-4 000 icke-ASCII-tecken (2-4 byte vardera). [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
+   >Inkapslingsdjupet i en rankningsformel är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen. En regelsträng kan vara upp till 8 kB för UTF-8-kodade tecken. Detta motsvarar 8 000 ASCII-tecken (1 byte vardera), eller 2 000-4 000 icke-ASCII-tecken (2-4 byte vardera). [Läs mer om hur du bestämmer dig för skyddsprofiler och begränsningar](gs-experience-decisioning.md#guardrails)
 
-En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsammans. [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
+En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsammans. [Läs mer om hur du bestämmer dig för skyddsprofiler och begränsningar](gs-experience-decisioning.md#guardrails)
 
 +++ Optimera modeller på anpassade [!DNL Customer Journey Analytics]-mått
 
@@ -57,7 +57,7 @@ En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsamm
 >
 >Den här funktionen är bara tillgänglig för [!DNL Customer Journey Analytics]-kunder med administratörsbehörighet.
 >
->Innan du börjar bör du se till att du har integrerat Journey Optimizer med Customer Journey Analytics för att exportera Journey Optimizer-datauppsättningar till standarddatavyer. [Lär dig utnyttja [!DNL Journey Optmizer] data i [!DNL Customer Journey Analytics]](../reports/cja-ajo.md)
+>Innan du börjar bör du kontrollera att du har integrerat Journey Optimizer med Customer Journey Analytics för att exportera Journey Optimizer-datauppsättningar till standarddatavyer. [Lär dig utnyttja [!DNL Journey Optmizer] data i [!DNL Customer Journey Analytics]](../reports/cja-ajo.md)
 
 Personaliserade optimeringsmodeller är en typ av AI-modell som gör att ni kan definiera affärsmål och använda kunddata för att utbilda affärsorienterade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal. Detaljerad information om hur du skapar en anpassad AI-modell finns i [dokumentationen för beslutshantering](../offers/ranking/personalized-optimization-model.md).
 

@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: a82c9e2d999b28ed97374f3a3804e11d4acd7983
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 0%
@@ -96,7 +96,7 @@ I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt
 
    >[!NOTE]
    >
-   >En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsammans. [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
+   >En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsammans. [Läs mer om hur du bestämmer dig för skyddsprofiler och begränsningar](gs-experience-decisioning.md#guardrails)
 
 1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare.
 
@@ -204,7 +204,7 @@ När beslutsprincipen har skapats kan den användas i [personaliseringsredigerar
    >
    >Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [du skapar beslutet](#add-decision) kommer samma sekvens att upprepas två gånger.
 
-1. Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga attributen lagras i **[!UICONTROL Offers]**-katalogens schema. Anpassade attribut lagras i mappen **`_<imsOrg`>** och standardattribut i mappen **`_experience`**. [Läs mer i offertkatalogens schema](catalogs.md)
+1. Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga attributen lagras i **[!UICONTROL Offers]**-katalogens schema. Anpassade attribut lagras i mappen **`_<imsOrg`>** och standardattribut i mappen **`_experience`**. [Läs mer om offertkatalogens schema](catalogs.md)
 
    ![](assets/decision-code-based-decision-attributes.png)
 

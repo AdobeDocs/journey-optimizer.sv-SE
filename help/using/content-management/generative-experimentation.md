@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
-source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 4%
@@ -44,7 +44,7 @@ När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt in
 
    ![](assets/experiment-genai-3.png)
 
-1. I fönstret Innehållsexperiment öppnar du knappen **[!UICONTROL Experiment settings]** för att konfigurera ditt experiment. [Läs mer om innehållsexperiment](../content-management/content-experiment.md)
+1. I fönstret Innehållsexperiment öppnar du knappen **[!UICONTROL Experiment settings]** för att konfigurera ditt experiment. [Läs mer om Content Experiment](../content-management/content-experiment.md)
 
    ![](assets/experiment-genai-4.png)
 

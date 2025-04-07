@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: e052e7bfea5381583ad8d2d7b785d44486cb9975
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '893'
 ht-degree: 2%

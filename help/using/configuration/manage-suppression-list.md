@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: dämpning, lista, studsa, e-post, optimering, karantän
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-source-git-commit: d108d449786d9c3aa3e95aefc1bca07292cd690d
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Läs mer om konceptet för inaktiveringslistan och användningen i [det här avs
 
 >[!NOTE]
 >
->Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
+>Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
 Dessutom kan du använda Journey Optimizer **Suppression REST API** för att styra dina utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
@@ -81,7 +81,7 @@ Möjliga orsaker till leveransfel är:
 
 >[!NOTE]
 >
->Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer], och deras e-postadresser kan därför inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om att avanmäla dig](../privacy/opt-out.md)
+>Användare som avbeställer prenumerationen får inte e-post från [!DNL Journey Optimizer], och deras e-postadresser kan därför inte skickas till listan över inaktiveringar. Deras val hanteras på Experience Platform-nivå. [Läs mer om avanmälan](../privacy/opt-out.md)
 
 
 ### Undertryckningsregler  {#suppression-rules}

@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 0%
@@ -253,7 +253,7 @@ Om du vill göra en **[!UICONTROL Active]**-kanalkonfiguration otillgänglig fö
 
 >[!NOTE]
 >
->Du kan inte inaktivera en kanalkonfiguration medan en uppdatering bearbetas. Du måste vänta tills uppdateringen har slutförts eller misslyckats. Läs mer om [att redigera kanalkonfigurationer](#edit-channel-surface) och om [uppdateringsstatus](#update-statuses).
+>Du kan inte inaktivera en kanalkonfiguration medan en uppdatering bearbetas. Du måste vänta tills uppdateringen har slutförts eller misslyckats. Läs mer om [redigering av kanalkonfigurationer](#edit-channel-surface) och om [uppdateringsstatus](#update-statuses).
 
 1. Öppna listan Kanalkonfigurationer.
 

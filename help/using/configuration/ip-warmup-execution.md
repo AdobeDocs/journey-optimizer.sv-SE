@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 0c128feac32baff14f1b71aed688e3bde4c67d35
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 0%
@@ -300,7 +300,7 @@ En körning kan ha följande status:
 
 ### Använd rapporter {#reports}
 
-Mer generellt kan du mäta effekten av din plan genom att kontrollera resultatet för dina IP-uppvärmningskampanjer med hjälp av kampanjrapporterna för [!DNL Journey Optimizer]. För varje slutförd körning kan du klicka på knappen **[!UICONTROL View reports]**. Läs mer i kampanjmeddelandet [live report](../reports/campaign-live-report.md#email-live) och [Customer Journey Analytics report](../reports/campaign-global-report-cja-email.md).
+Mer generellt kan du mäta effekten av din plan genom att kontrollera resultatet för dina IP-uppvärmningskampanjer med hjälp av kampanjrapporterna för [!DNL Journey Optimizer]. För varje slutförd körning kan du klicka på knappen **[!UICONTROL View reports]**. Läs mer om kampanjmeddelandet [live report](../reports/campaign-live-report.md#email-live) och [Customer Journey Analytics report](../reports/campaign-global-report-cja-email.md).
 
 ![](assets/ip-warmup-plan-reports.png)
 

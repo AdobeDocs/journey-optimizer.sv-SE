@@ -8,7 +8,7 @@ topic: Content Management
 role: Admin
 level: Intermediate, Experienced
 exl-id: 8f33dda7-9bd5-4293-8d0d-222205cbc7d5
-source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 0%
@@ -84,7 +84,7 @@ När du skickar e-post till en helt ny IP-adress kan du nu enkelt utföra arbets
 
 Adobe Journey Optimizer erbjuder ett standardiserat och effektivt sätt att värma upp era IP-adresser som följer de bästa metoderna för optimal leverans.
 
-[Lär dig mer om IP-warmritningar](../configuration/ip-warmup-gs.md)
+[Läs mer om planer för IP-värmare](../configuration/ip-warmup-gs.md)
 
 <!--To warm up your IP, you can gradually ramp up the number of your deliveries. Learn more in this [use case](../building-journeys/ramp-up-deliveries-uc.md).-->
 
@@ -94,7 +94,7 @@ För att minska risken för att legitima e-postmeddelanden markeras som skräppo
 
 Domänbaserad meddelandeautentisering, rapportering och överensstämmelse (DMARC) är en e-postautentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning av skadliga aktörer.
 
-[Läs mer på DMARC Record](../configuration/dmarc-record.md)
+[Läs mer om inspelning av DMARC](../configuration/dmarc-record.md)
 
 ## Lär dig mer om feedback-loopar {#feedback-loops}
 

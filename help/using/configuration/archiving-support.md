@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%

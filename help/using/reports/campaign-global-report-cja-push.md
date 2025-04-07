@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 43b10f54-0c19-46a1-8d51-eb6bf22e6da9
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Du kommer åt rapporten för push-meddelandekampanjen genom att klicka på knapp
 
 Tabellen **[!UICONTROL Sending Statistics]** innehåller en omfattande sammanfattning av viktiga data om push-meddelandekampanjer. Den innehåller viktiga mätvärden, som målgruppens storlek och antalet push-meddelanden som levererats, och ger värdefulla insikter om hur effektivt och relevant ditt push-meddelande är.
 
-+++ Läs mer om Skicka statistik-statistik
++++ Läs mer om att skicka statistik
 
 * **[!UICONTROL Targeted]**: Totalt antal push-meddelanden som bearbetats under analysen.
 
@@ -85,7 +85,7 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de URL:er i dina push-meddelanden som lockar den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de populäraste länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll i era push-meddelanden.
 
-+++ Läs mer om URL:er för spårade länkar
++++ Läs mer om URL-mått för spårad länk
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina push-meddelanden.
 

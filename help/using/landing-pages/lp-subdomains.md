@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%

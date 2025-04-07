@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
-source-git-commit: 766530a2f443a2795d61161c9d08de299a5363d6
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 1%

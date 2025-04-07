@@ -8,7 +8,7 @@ role: User
 level: Beginner
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
-source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Detaljerad information om varje steg finns i [Adobe Experience Platform-dokument
    >
    >Om du använder Adobe Journey Optimizer tillsammans med kundprofiler i realtid, kommer målkorten att visa en **Aktivera**-knapp, så att du kan både exportera datauppsättningar och aktivera målgrupper för det här målet, beroende på vilka behörigheter du har aktiverat.
 
-1. **Markera de datauppsättningar** som du vill exportera till det valda målet. [Läs mer om Journey Optimizer datauppsättningar som är tillgängliga för export](#datasets)
+1. **Markera de datauppsättningar** som du vill exportera till det valda målet. [Läs mer om Journey Optimizer datauppsättningar som kan exporteras](#datasets)
 
    <!--![](assets/dataset-export-dataset-selection.png)-->
 

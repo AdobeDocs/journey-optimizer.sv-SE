@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 82558447-9d42-4fac-8fc1-fded9bf4bfcc
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Du kommer åt din e-postreserapport genom att klicka på knappen **[!UICONTROL V
 
 Diagrammet **[!UICONTROL Delivered vs Click trend]** innehåller en detaljerad analys av hur era profiler interagerar med era e-postmeddelanden och ger värdefulla insikter om hur olika domäner interagerar med ert innehåll.
 
-+++ Läs mer om Levererat jämfört med Click-trendstatistik
++++ Läs mer om Levererade jämfört med klicktrendstatistik
 
 * **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade e-postmeddelanden.
 
@@ -70,7 +70,7 @@ I diagrammet **[!UICONTROL Delivery status]** kan du snabbt se hur dina e-postme
 
 Tabellen **[!UICONTROL Sending Statistics]** ger en tydlig bild av hur dina e-postmeddelanden fungerar på dina resor. Den håller koll på viktiga mätvärden som leveransfrekvenser och interaktioner och ger er värdefulla insikter för att optimera er e-poststrategi för bättre räckvidd och engagemang.
 
-+++ Läs mer om Skicka statistik-statistik
++++ Läs mer om att skicka statistik
 
 * **[!UICONTROL Targeted]**: Totalt antal e-postmeddelanden som bearbetats under sändningsprocessen.
 
@@ -159,7 +159,7 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de URL:er i ditt e-postmeddelande som lockar den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de mest populära länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll i era e-postmeddelanden.
 
-+++ Läs mer om URL:er för spårade länkar
++++ Läs mer om URL-mått för spårad länk
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i ett e-postmeddelande.
 

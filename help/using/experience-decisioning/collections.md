@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 099d1439-34f7-47fe-9181-0e9ce2032a01
-source-git-commit: 616e1dd9fbfd029f7209356d5c19cfff9d4b4f06
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 1%
@@ -53,4 +53,4 @@ Så här skapar du en samling:
 
 >[!NOTE]
 >
->Varje artikelsamling kan innehålla upp till 500 erbjudandeartiklar. [Läs mer om att bestämma skyddsmekanismer och begränsningar](gs-experience-decisioning.md#guardrails)
+>Varje artikelsamling kan innehålla upp till 500 erbjudandeartiklar. [Läs mer om hur du bestämmer dig för skyddsprofiler och begränsningar](gs-experience-decisioning.md#guardrails)

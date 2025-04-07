@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: cf50ce33-7934-4e37-a757-08cda14e97ac
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Du kommer åt din SMS-reserapport genom att klicka på knappen **[!UICONTROL Vie
 
 Diagrammet **[!UICONTROL Delivered vs Click trend]** innehåller en detaljerad analys av dina profilers engagemang i dina SMS-meddelanden och ger värdefulla insikter om hur olika domäner interagerar med ditt innehåll.
 
-+++ Läs mer om Levererat jämfört med Click-trendstatistik
++++ Läs mer om Levererade jämfört med klicktrendstatistik
 
 * **[!UICONTROL Delivered]**: Antal SMS-meddelanden som har skickats, i relation till totalt antal SMS-meddelanden.
 
@@ -69,7 +69,7 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de URL:er i dina SMS-meddelanden som lockar den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de mest populära länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll i era SMS-meddelanden.
 
-+++ Läs mer om URL:er för spårade länkar
++++ Läs mer om URL-mått för spårad länk
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickade på ett innehåll i SMS-meddelandet.
 

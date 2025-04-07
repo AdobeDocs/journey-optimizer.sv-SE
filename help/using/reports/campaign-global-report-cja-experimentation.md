@@ -7,10 +7,11 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+exl-id: 69742163-7378-49ab-929e-86213d6e65e3
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '262'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +51,7 @@ Observera att det kan ta en stund att definiera den bästa utföraren. Om ditt e
 Widgeten **[!UICONTROL Variant by Inbound clicks]** visar prestanda för varje variant.
 En djupdykning i dessa resultat och hur du tolkar dem finns på [den här sidan](../content-management/get-started-experiment.md#interpret-results).
 
-+++ Läs mer om Mätvärden för inkommande klick för Variant
++++ Läs mer om statistik för inkommande klickningar på Variant
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
 

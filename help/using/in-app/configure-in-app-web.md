@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Förhandskrav {#prerequisites}
 
-* Kontrollera att du använder den senaste versionen för ditt **Adobe Experience Platform Web SDK**-tillägg.
+* Kontrollera att du använder den senaste versionen för tillägget **Adobe Experience Platform Web SDK**.
 
 * Installera tillägget **Adobe Experience Platform Web SDK** i **taggegenskaperna** och aktivera alternativet **Personalization Storage**.
 

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '3489'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Observera att antalet profiler för en nod endast uppdateras när profilen har s
 
 **[!UICONTROL Journey Statistics]** KPI:er (Key Performance Indicators) fungerar som en heltäckande kontrollpanel, som tillhandahåller en analys av viktig statistik som är kopplad till din resa under de senaste 24 timmarna. Detta omfattar detaljer som antalet inskrivna profiler och förekomster av misslyckade enskilda resor, vilket ger en heltäckande insikt i hur effektiv resan är och hur hög engagemanget är.
 
-+++ Läs mer om statistik från Journey
++++ Läs mer om Journeys statistik
 
 * **[!UICONTROL Entered profiles]**: Totalt antal personer som har nått resans anmälningshändelse.
 
@@ -185,7 +185,7 @@ Från din resa **[!UICONTROL Live report]** anger fliken **[!UICONTROL Email]** 
 
 Diagrammet **[!UICONTROL Email - Sending performance]** ger en heltäckande bild av data relaterade till skickade e-postmeddelanden under din resa, och ger insikter i viktiga mått som levererade och studsar som har hänt under de senaste 24 timmarna. Detta möjliggör en detaljerad analys av e-postsändningsprocessen och ger värdefull information om hur effektiva och effektiva era resor är.
 
-+++ Läs mer om e-post - Sändande prestandamått
++++ Läs mer om e-post - Sändning av prestandamått
 
 * **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats.
 
@@ -245,7 +245,7 @@ Tabellen **[!UICONTROL Email - Statistics]** innehåller en omfattande sammanfat
 
 Widgeten **[!UICONTROL Email - Performance by date]** ger en detaljerad översikt över viktig information om dina e-postmeddelanden, som presenteras i ett diagram, och ger insikter om prestandatrender under de senaste 24 timmarna.
 
-+++ Läs mer om e-post - prestanda efter datummått
++++ Läs mer om e-post - prestation efter datummått
 
 * **[!UICONTROL Sent]**: Totalt antal skickade e-postmeddelanden.
 
@@ -278,7 +278,7 @@ Widgetarna **[!UICONTROL Bounce Reasons]** och **[!UICONTROL Bounce categories]*
 
 Mer information om studsar finns på sidan [Suppressionslista](../reports/suppression-list.md).
 
-+++ Läs mer om e-post - studskategorier och anledningsstatistik
++++ Läs mer om e-post - studskategorier och orsaker
 
 * **[!UICONTROL Hard bounce]**: Det totala antalet permanenta fel, till exempel en felaktig e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.
 
@@ -336,7 +336,7 @@ Diagrammet och tabellen **[!UICONTROL Email - Best recipient domain]** innehåll
 
 Widgetarna **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics over time]** mäter hur väl erbjudandet lyckats och påverkat målgruppen. Den innehåller detaljerad huvudinformation om meddelandet med KPI:er.
 
-+++ Läs mer om e-post - ger statistik
++++ Läs mer om e-post - ger mätvärden
 
 * **[!UICONTROL Offer sent]**: Totalt antal utskick för erbjudandet.
 

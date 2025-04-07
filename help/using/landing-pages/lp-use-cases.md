@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: landning, landningssida, fallstudie
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 4de37520b3ea7842d7f385f38c07cdf4984a5939
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Anta att du organiserar en händelse nästa månad och vill starta en händelser
 
    ![](assets/lp_subscription-uc-thanks.png)
 
-1. [Publish](create-lp.md#publish) landningssidan.
+1. [Publicera](create-lp.md#publish) landningssidan.
 
 1. I en [resa](../building-journeys/journey.md) lägger du till en **e-post**-aktivitet för att köra trafik till startsidan för registrering.
 
@@ -141,7 +141,7 @@ Följ stegen nedan för att göra det möjligt för mottagarna av ett e-postmedd
    >
    >Om du vill kunna skicka ditt meddelande kontrollerar du att landningssidan du valt inte har gått ut ännu. Lär dig hur du uppdaterar förfallodatumet [i det här avsnittet](create-lp.md#configure-primary-page).
 
-1. Publish och kör kundresan. [Läs mer](../building-journeys/journey.md).
+1. Publicera och kör resan. [Läs mer](../building-journeys/journey.md).
 
 1. När meddelandet har tagits emot visas din startsida om en mottagare klickar på länken för att avbryta prenumerationen i e-postmeddelandet.
 
@@ -153,7 +153,7 @@ Följ stegen nedan för att göra det möjligt för mottagarna av ett e-postmedd
 
    * Profildata uppdateras och kommer inte att få information från ert varumärke om ni inte prenumererar igen.
 
-Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att markera ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
+Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
 ![](assets/lp_opt-out-profile-choice.png)
 

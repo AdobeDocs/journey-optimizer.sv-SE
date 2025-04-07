@@ -8,7 +8,7 @@ topic: Content Management
 role: Admin
 level: Intermediate, Experienced
 exl-id: a4653378-b70f-454c-a446-ab4a14d2580a
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Den samlar in e-postadresser och domäner som inte används i alla e-postmeddela
 
 >[!NOTE]
 >
->Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
+>Adobe håller en uppdaterad lista över kända dåliga adresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
 Dessutom kan du använda Journey Optimizer **Suppression REST API** för att styra dina utgående meddelanden med hjälp av suppression och tillåtelselista. [Lär dig hur du arbetar med Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
@@ -33,7 +33,7 @@ Dessutom kan du använda Journey Optimizer **Suppression REST API** för att sty
 
 För att kontrollera de e-postmeddelanden som tas emot av deras inkorgsägare och se till att de bara får de som de vill ha, har Internet-leverantörer (ISP) och kommersiella skräppostfilter sina egna algoritmer för att spåra e-postavsändarens allmänna anseende baserat på IP-adresserna och de avsändande domänerna de använder.
 
-Om du inte tar emot synpunkter (t.ex. skräppost, studsar) Med tanke på detta kommer de att sätta ditt rykte på en nedgång. Supprestionslistan hjälper dig att följa Internet-leverantörernas feedback.
+Om du inte tar hänsyn till deras synpunkter (t.ex. skräppost, studsar osv.) kommer de att minska ditt rykte. Supprestionslistan hjälper dig att följa Internet-leverantörernas feedback.
 
 Mottagare vars e-postadresser inte visas exkluderas automatiskt från meddelandeleveransen. Detta snabbar upp leveranserna eftersom felfrekvensen avsevärt påverkar leveranshastigheten.
 
@@ -53,13 +53,13 @@ Läs mer om hårda studsar och mjuka studsar i [det här avsnittet](#delivery-fa
 >
 >Det går inte att skicka adresser för att avbryta prenumerationen till listan över inaktiveringar eftersom de inte får e-post från [!DNL Journey Optimizer]. Deras val hanteras på Experience Platform-nivå. Läs mer om [avanmälan](../privacy/opt-out.md).
 
-För varje adress, den grundläggande orsaken till inaktiveringen och undertryckningskategorin (mjuk, hård, osv.) visas i listan. Läs mer om hur du får åtkomst till och hanterar listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md).
+För varje adress visas den grundläggande orsaken till inaktiveringen och undertryckningskategorin (mjuk, hård, osv.) i undertryckningslistan. Läs mer om hur du får åtkomst till och hanterar listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md).
 
 >[!NOTE]
 >
 >Profilerna med statusen **[!UICONTROL Suppressed]** har uteslutits under meddelandeöverföringsprocessen. Det innebär att även om **reserapporterna** visar att de här profilerna har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)) så inkluderas de inte i **e-postrapporterna** i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelanden skickas.
 >
->Läs mer i [Live-rapporten](../reports/live-report.md) och [Customer Journey Analytics ](../reports/report-gs-cja.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}.
+>Läs mer om [Live-rapporten](../reports/live-report.md) och [Customer Journey Analytics-rapporten](../reports/report-gs-cja.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}.
 
 ### Leveransfel {#delivery-failures}
 

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-source-git-commit: a36f3dd1b58b2c40a99d9c2820427f710aa87660
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Men användningen av högerbaserade åtkomstkontrollsetiketter gör det möjligt
 
 >[!NOTE]
 >
->Läs mer om OLAC (Object level access control) i [det här avsnittet](../administration/object-based-access.md).
+>Läs mer om åtkomstkontroll på objektnivå (OLAC) i [det här avsnittet](../administration/object-based-access.md).
 
 I [!DNL Journey Optimizer] kampanjer tillämpas principen för samtycke på följande sätt:
 

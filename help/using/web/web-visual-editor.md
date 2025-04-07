@@ -5,13 +5,13 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7cf58ae33c0b3e6d6b9ce19aa71ba105db40c602
+exl-id: 98e99978-8538-40b4-92ac-7184864017eb
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 1%
 
 ---
-
 
 # Arbeta med webbdesignern {#work-with-web-designer}
 
@@ -73,7 +73,7 @@ Följ stegen nedan för att börja skapa din webbupplevelse med den visuella web
 
 >[!NOTE]
 >
->Webbinnehållsdesignern liknar oftast e-postdesignern. Läs mer om [att utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>Webbinnehållsdesignern liknar oftast e-postdesignern. Läs mer om att [utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).
 
 När du har redigerat webbinnehållet kan du hantera ändringarna. [Läs mer](manage-web-modifications.md)
 

@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
@@ -193,4 +193,4 @@ Om du vill undvika den här typen av fel kontrollerar du att de rubrikparametrar
 
 >[!NOTE]
 >
->Läs mer om leveransbarhet i [det här avsnittet](../reports/deliverability.md)
+>Läs mer om levererbarhet i [det här avsnittet](../reports/deliverability.md)

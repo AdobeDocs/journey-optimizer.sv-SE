@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '3280'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Från din kampanj **[!UICONTROL Live report]** anger fliken **[!UICONTROL Email]
 
 **[!UICONTROL Email - Sending Performance]** erbjuder en detaljerad översikt över data relaterade till e-postmeddelanden som skickats de senaste 24 timmarna. Den ger insikter i viktiga mätvärden som levererade och studsade, vilket möjliggör en detaljerad granskning av e-postsändningsprocessen.
 
-+++ Läs mer om prestanda för e-postsändning
++++ Läs mer om prestandamått för e-postsändning
 
 * **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats.
 
@@ -146,7 +146,7 @@ Widgetarna **[!UICONTROL Bounce reasons]** och **[!UICONTROL Bounce categories]*
 
 Mer information om studsar finns på sidan [Suppressionslista](../reports/suppression-list.md).
 
-+++ Läs mer om e-post - studskategorier och anledningsstatistik
++++ Läs mer om e-post - studskategorier och orsaker
 
 * **[!UICONTROL Hard bounce]**: Det totala antalet permanenta fel, till exempel en felaktig e-postadress. Detta inbegriper ett felmeddelande som uttryckligen anger att adressen är ogiltig, till exempel Okänd användare.
 
@@ -230,7 +230,7 @@ Diagrammet och tabellen **[!UICONTROL Email - Best recipient domain]** innehåll
 
 Widgetarna **[!UICONTROL Offers statistic]** och **[!UICONTROL Offers statistics over time]** mäter hur väl erbjudandet lyckats och påverkat målgruppen. Den innehåller detaljerad huvudinformation om meddelandet med KPI:er.
 
-+++ Läs mer om e-post - ger statistik
++++ Läs mer om e-post - ger mätvärden
 
 * **[!UICONTROL Offer sent]**: Totalt antal utskick för erbjudandet.
 
@@ -564,7 +564,7 @@ Från din kampanj **[!UICONTROL Live report]** anger fliken **[!UICONTROL Direct
 
 Tabellen **[!UICONTROL Direct Mail - Sending statistics]** innehåller en kortfattad sammanfattning av viktiga data relaterade till dina Direct Mail-meddelanden. Den innehåller nyckeltal som antalet målmeddelanden och antalet lyckade meddelanden som levererats under de senaste 24 timmarna.
 
-+++ Läs mer om direktreklam - statistik skickas
++++ Läs mer om Direct Mail - Sending Statistics metrics
 
 * **[!UICONTROL Targeted]**: Antal användarprofiler som kvalificerar sig som målprofiler.
 

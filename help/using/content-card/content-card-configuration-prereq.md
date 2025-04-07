@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: df92e319-1e42-486f-b688-595964a762c9
-source-git-commit: 37862682a25843ce138c076e443f6d9b6229ece3
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 1%
@@ -19,12 +19,12 @@ För att Adobe Journey Optimizer ska kunna visa innehållskort på rätt sätt m
 
 * **Adobe Experience Platform-datainsamling**
 
-  [Skapa en datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) och [lägg till tjänsten Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#aep). Aktivera alternativen **[!UICONTROL Edge Segmentation]** och **[!UICONTROL Adobe Journey Optimizer]**. Detta säkerställer att Journey Optimizer-händelser hanteras av Adobe Experience Platform Edge Network.
+  [Skapa en datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) och [lägg till Experience Platform-tjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#aep). Aktivera alternativen **[!UICONTROL Edge Segmentation]** och **[!UICONTROL Adobe Journey Optimizer]**. Detta säkerställer att Journey Optimizer-händelser hanteras av Adobe Experience Platform Edge Network.
 Lägg till fältgruppen **Experience Event - Proposition Interaction** i datauppsättningen för att inkludera dessa data i dina rapporter. [Läs mer om datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
 
 * **Adobe Experience Platform**
 
-  Kontrollera att **Aktiv-på-Edge-sammanslagningsprincip** är aktiverat i standardsammanslagningsprincipen under **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
+  Kontrollera att standardprincipen för sammanslagning har **Aktiv-på-Edge-princip** aktiverad under **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform-menyn. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
 
   >[!NOTE]
   >

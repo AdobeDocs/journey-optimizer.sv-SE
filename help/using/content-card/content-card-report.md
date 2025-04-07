@@ -7,7 +7,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: c24dc217567cc65f8ce0dc79d648f016cd8ad740
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Du kan komma åt innehållskortsrapporten direkt från din kampanj med knappen *
 
 Diagrammen **[!UICONTROL Display & click trend]** hjälper dig att förstå både meddelandets övergripande räckvidd och antalet unika profiler som är kopplade till det.
 
-+++ Läs mer om Visa och klicka på mätvärden
++++ Läs mer om mått för visning och klickning
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på på i innehållskortet.
 
@@ -55,7 +55,7 @@ Diagrammen **[!UICONTROL Display & click trend]** hjälper dig att förstå båd
 
 Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina innehållskort, vilket ger viktiga insikter i engagemanget och innehållskortets effektivitet.
 
-+++ Läs mer om att spåra datamätningar
++++ Läs mer om att spåra datamått
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar som målprofiler för dina innehållskort.
 
@@ -91,7 +91,7 @@ Tabellen **[!UICONTROL Tracked labels]** innehåller en omfattande översikt öv
 
 Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt över de URL:er på dina innehållskort som lockar till sig den högsta besökstrafiken. På så sätt kan ni identifiera och prioritera de populäraste länkarna och öka er förståelse för hur proffsen interagerar med specifikt innehåll på era innehållskort.
 
-+++ Läs mer om URL:er för spårade länkar
++++ Läs mer om URL-mått för spårad länk
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i dina innehållskort.
 

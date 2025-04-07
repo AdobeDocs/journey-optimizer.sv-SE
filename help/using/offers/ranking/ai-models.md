@@ -7,7 +7,7 @@ feature: Ranking, Decision Management
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
-source-git-commit: 260b9ec0a70526ac37da444e183fc1d01b97b22b
+source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 3%
@@ -52,6 +52,6 @@ De viktigaste stegen för att skapa och använda AI-modeller är följande:
 
    >[!IMPORTANT]
    >
-   >Rankningsmodeller kräver att feedback-händelser skickas in som upplevelsehändelser för att samlas in. [Läs mer om insamling av data för beslutshantering](../data-collection/data-collection.md)
+   >Rankningsmodeller kräver att feedback-händelser skickas in som upplevelsehändelser för att samlas in. [Läs mer om datainsamling för beslutshantering](../data-collection/data-collection.md)
 
 1. Tilldela AI-modellen till en placering i ett beslut om att rangordna kvalificerade erbjudanden. [Läs mer](../offer-activities/configure-offer-selection.md)
