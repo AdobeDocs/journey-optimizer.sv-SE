@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d1c4ae5f-2f5c-4e25-a8b4-4c5fe254bfb9
-source-git-commit: ea016af2dc08321bcf2e5110538031f66c888b90
+source-git-commit: 1af75a0e6bfc2c3b9c565c3190f46d137a68d32e
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Om du vill få tillgång till dina rapporter klickar du på ikonen **[!UICONTROL
 
 ![](assets/cja-sub-access.png)
 
-Mer information om arbetsytan i Customer Journey Analytics och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+Mer information om Customer Journey Analytics arbetsyta och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Prenumerationslistan lägger till
 

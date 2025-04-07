@@ -9,7 +9,7 @@ role: Admin, Data Engineer, User
 level: Intermediate, Experienced
 keywords: resa, meddelande, kampanj, integrering
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 1af75a0e6bfc2c3b9c565c3190f46d137a68d32e
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![](assets/accintegration-uc-3.png)
 
-1. Publish din transaktionsmall.
+1. Publicera din transaktionsmall.
 
    ![](assets/accintegration-uc-4.png)
 

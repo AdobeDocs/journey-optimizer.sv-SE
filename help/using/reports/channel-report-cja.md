@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 393f02c0-f54c-4222-b668-0931b67590ce
-source-git-commit: 7d1b89ca851442d2a67dda1e5c08d50d74d44028
+source-git-commit: 1af75a0e6bfc2c3b9c565c3190f46d137a68d32e
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Tabellen **[!UICONTROL Journey]** fungerar som en omfattande kontrollpanel som g
 
 Genom att klicka på namnet på en resa som listas i tabellen kan du enkelt utforska varje resa individuellt och få omedelbar tillgång till den fullständiga rapporten på en ny flik.
 
-+++ Läs mer om resestatistik
++++ Läs mer om Journey-statistik
 
 * **[!UICONTROL Journey Enters]**: Totalt antal personer som har nått resans anmälningshändelse.
 

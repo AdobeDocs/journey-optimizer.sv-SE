@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 30d4f967-e085-44f1-973d-11e79f693e6e
-source-git-commit: 8feb2e74f4ca3321ba4c96204cbdd2343a4ba92b
+source-git-commit: 1af75a0e6bfc2c3b9c565c3190f46d137a68d32e
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Rapporten **[!UICONTROL Journey]** ger dig en tydlig bild av de viktigaste spår
 
 **[!UICONTROL Journey]** KPI:er (Key Performance Indicators) fungerar som en heltäckande kontrollpanel, som tillhandahåller en analys av viktiga mått som är kopplade till din resa. Detta omfattar detaljer som antalet inskrivna profiler och förekomster av misslyckade enskilda resor, vilket ger en heltäckande insikt i hur effektiv resan är och hur hög engagemanget är.
 
-+++ Läs mer om nyckeltal för resan
++++ Läs mer om KPI:er för Journey
 
 * **[!UICONTROL Journey engagement]**: Totalt antal unika personer som tagit emot meddelanden som skickats genom resan, vilket representerar distinkta profiler som nått en angiven åtgärdspunkt under resan.
 
@@ -114,7 +114,7 @@ I diagrammet **[!UICONTROL Performance Over time]** kan du identifiera och analy
 
 Tabellen **[!UICONTROL Action overview]** fungerar som en omfattande kontrollpanel som innehåller en analys av viktiga mått relaterade till åtgärderna under din resa. Detta inkluderar viktiga detaljer som antalet interaktioner och klickfrekvensen
 
-+++ Läs mer om mätvärden i Åtgärdsöversikt
++++ Läs mer om mätvärden för åtgärdsöversikt
 
 * **[!UICONTROL Node enters]**: Totalt antal personer som har angett en specifik nod under resan.
 
