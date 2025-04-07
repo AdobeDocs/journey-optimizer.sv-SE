@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
-source-git-commit: 87931614150d6f764f565f683f83db4f63d88ee0
+source-git-commit: 6268989c14ccb0ae6fd5ac271a33efe4877dd903
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '780'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,35 @@ ht-degree: 2%
 >[!ENDSHADEBOX]
 
 Med Adobe Journey Optimizer kan du utforma och skicka engagerande meddelanden om whatsApp. Lägg bara till en whatsApp-åtgärd till resan eller kampanjen och skapa meddelandeinnehållet enligt beskrivningen nedan. Med Adobe Journey Optimizer kan du också testa dina whatsApp-meddelanden innan du skickar dem, vilket ger perfekt återgivning, korrekt personalisering och korrekt konfiguration av alla inställningar.
+
+Observera att endast utgående meddelandeelement stöds i Journey Optimizer.
+
++++ Läs mer om meddelandeelement som stöds och uppmaningar till åtgärder
+
+Följande meddelandetyper stöds i WhatsApp:
+
+| Meddelandefunktion | Beskrivning |
+|-|-|
+| Sidhuvuden | Valfri text som visas ovanför meddelandetexten. |
+| Text | Stöder dynamiskt innehåll via parametrar. |
+| Bilder (JPEG, PNG) | Måste vara i 8-bitars RGB- eller RGBA-format och mindre än 5 MB. |
+| Videor | Måste vara 3GPP eller MP4, mindre än 16 MB, och vara värd via URL. |
+| Ljud | Endast tillgängligt för svarsmeddelanden. Måste vara AAC-, AMR-, MP3-, MP4- eller OGG-format, värd på en URL och under 16 MB. |
+| Dokument | Måste vara mindre än 100 MB, finnas på en URL och i något av följande format: .txt, .xls/.xlsx, .doc/.docx, .ppt/.pptx eller .pdf. |
+| Brödtext | Stöder dynamiskt innehåll via parametrar. |
+| Sidfotstext | Stöder dynamiskt innehåll via parametrar. |
+
+Följande alternativ för att anropa till åtgärd är tillgängliga för dina WhatsApp-meddelanden:
+
+| Utlysning av åtgärder | Beskrivning |
+|-|-|
+| Telefonnummer | Endast tillgängligt i meddelandemallar. Begränsat till en knapp. |
+| Anpassade snabbsvarsknappar | Stöder upp till tre knappar. |
+| Avanmälningsknapp för marknadsföring | Uppdaterar inte prenumerationsstatus automatiskt. |
+| Mallar för kupongkodmeddelanden | Endast tillgängligt i meddelandemallar. |
+| CTA svarsmeddelanden | Tillåter att en knapp för att ringa till åtgärd inkluderas i ett svarsmeddelande. |
+
++++
 
 ## Lägg till ett WhatsApp-meddelande {#create-whatsapp-journey-campaign}
 
@@ -90,7 +119,7 @@ Nu kan du börja designa innehållet i ditt whatsApp-meddelande från knappen **
 
 >[!BEGINSHADEBOX]
 
-Innan du utformar whatsApp-meddelandet i Journey Optimizer måste du först skapa och utforma mallen i Meta. Endast utgående meddelandeelement stöds i Journey Optimizer. [Läs mer](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
+Innan du utformar whatsApp-meddelandet i Journey Optimizer måste du först skapa och utforma mallen i Meta. [Läs mer](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
 
 Observera att din whatsApp-mall först måste godkännas av Meta innan den kan användas i Journey Optimizer. Denna process tar vanligtvis några timmar, men kan ta upp till 24 timmar. [Läs mer](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#approval-process)
 
