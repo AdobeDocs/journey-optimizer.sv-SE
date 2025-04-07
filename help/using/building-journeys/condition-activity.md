@@ -9,19 +9,25 @@ role: User
 level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
-source-git-commit: 85a8d0713f87a8b3505a2294402156ba6598c8bb
+source-git-commit: 8a4315940595113441a5f5fb51a3c6573c79cff3
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1503'
 ht-degree: 5%
 
 ---
 
-# Villkorsaktivitet{#condition-activity}
+# Villkorsaktivitet {#condition-activity}
+
+## Lägg till en villkorsaktivitet {#add-condition-activity}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_condition"
 >title="Villkorsaktivitet"
->abstract="Med den här aktiviteten kan du definiera hur personen ska flöda under resan. Flera sökvägar skapas baserat på olika villkor. Du kan också skapa en alternativ sökväg om en timeout eller ett fel inträffar."
+>abstract="Med aktiviteten **Villkor** kan du definiera hur enskilda personer ska gå igenom din resa genom att skapa flera sökvägar baserat på specifika kriterier. Du kan också konfigurera en alternativ sökväg för att hantera timeout eller fel, vilket ger en smidig upplevelse."
+
+Med aktiviteten **Villkor** kan du definiera hur enskilda personer ska gå igenom din resa genom att skapa flera sökvägar baserat på specifika kriterier. Du kan också konfigurera en alternativ sökväg för att hantera timeout eller fel, vilket ger en smidig upplevelse.
+
+![](assets/journey49.png)
 
 Följande typer av villkor är tillgängliga:
 
@@ -31,9 +37,9 @@ Följande typer av villkor är tillgängliga:
 * [Datumvillkor](#date_condition)
 * [Profilände](#profile_cap)
 
-![](assets/journey49.png)
+Du kan också använda en målgrupp i ett resevillkor. [Läs mer](#using-a-segment)
 
-## Om villkorsaktiviteten {#about_condition}
+## Lägga till och hantera villkorssökvägar {#about_condition}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_simple"
@@ -48,7 +54,7 @@ Klicka på **[!UICONTROL Add a path]** om du vill definiera flera villkor. För 
 
 Observera att utformningen av resorna har funktionell inverkan. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. Det innebär att du kan ändra prioriteringen av banor genom att placera dem över eller under varandra.
 
-Låt oss till exempel ta ett exempel på en första sökvägs villkor&quot;Personen är en VIP&quot; och en andra sökvägs villkor&quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är VIP) klarar det här steget väljs den första vägen även om den personen också är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
+Låt oss ta exemplet med den första sökvägens villkor &quot;Personen är en VIP&quot; och en andra sökvägs villkor &quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är VIP) klarar det här steget väljs den första vägen även om den personen också är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
 
 ![](assets/journey48.png)
 
@@ -102,7 +108,7 @@ Tre filtreringsalternativ är tillgängliga:
 
 ## Procentdelning {#percentage_split}
 
-Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se den här [sidan](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html)).
+Med det här alternativet kan du slumpmässigt dela målgruppen för att definiera olika åtgärder för varje grupp. Definiera antalet delningar och partitioneringen för varje sökväg. Delningsberäkningen är statistisk eftersom systemet inte kan förutse hur många personer som kommer att flöda i den här kundresan. Därför har delningen en mycket låg felmarginal. Den här funktionen är baserad på en slumpmässig Java-mekanism (se den här [sidan](https://docs.oracle.com/javase/7/docs/api/java/util/Random.html){target="_blank"}).
 
 I testläge väljs alltid den översta grenen när en delning nås. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana. Se [den här sidan](../building-journeys/testing-the-journey.md)
 
