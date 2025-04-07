@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: d7ebba4144eeb5b29e9e6fa21afde06a7e520e07
+source-git-commit: ce05723342af3e0016965df7fb7a2e0b79856f6f
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 0%
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Publikkvalificeringshändelser {#segment-qualification}
 
-## Om kvalificeringshändelser för målgrupper{#about-segment-qualification}
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification"
 >title="Elevkvalificeringshändelser"
 >abstract="Med den här aktiviteten kan din resa lyssna på ingångar och utgångar för profiler i Adobe Experience Platform-målgrupper för att få individer att komma in på eller gå framåt under en resa."
+
+## Om kvalificeringshändelser för målgrupper{#about-segment-qualification}
 
 Med den här aktiviteten kan din resa lyssna på ingångar och utgångar för profiler i Adobe Experience Platform-målgrupper för att få individer att komma in på eller gå framåt under en resa. Mer information om att skapa målgrupper finns i det här [avsnittet](../audience/about-audiences.md).
 
