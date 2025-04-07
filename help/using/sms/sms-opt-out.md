@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: 0571a11eabffeb5e318bebe341a8df18da7db598
+source-git-commit: 478706e893354d59be5d2010da84546aa4385d99
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,7 @@ När du använder Infobip måste du se till att Vidarebefordringsåtgärden är 
 
 Inga steg krävs för att säkerställa att SMS-avanmälningsfunktioner fungerar i Adobe Journey Optimizer när nyckelordssvaren STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE identifieras automatiskt. Profilernas avanmälningsstatus uppdateras i realtid i Adobe Journey Optimizer.
 
+Observera att om en kund svarar STOP på ett textmeddelande blockerar leverantören alla efterföljande SMS från det specifika avsändar-ID:t (kort kod eller långt nummer), inklusive transaktionsmeddelanden. Använd ett separat avsändar-ID som inte tidigare har valts ut för att säkerställa oavbruten leverans av transaktionsmeddelanden.
 
 ## Blockeringslista {#sms-blocklists}
 
@@ -56,7 +57,7 @@ Journey Optimizer stöder dock globala avanmälningar baserade på inkommande ny
 
 ## Avsändarens alfanumeriska ID {#alphanumeric}
 
-De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och kan inte ta emot inkommande meddelanden. Därför gäller Adobe Journey Optimizer SMS STOP-, START- och HELP-nyckelord inte för Alpha avsändar-ID:n. Du måste ange andra instruktioner, till exempel skriva till supportteamet, ringa en telefonlinje till supporten eller skicka ett annat telefonnummer eller en annan kod så att användarna kan välja bort meddelanden som skickas via ett alfanumeriskt avsändar-ID.
+De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och kan inte ta emot inkommande meddelanden. Därför gäller inte Adobe Journey Optimizer SMS STOP-, START- och HELP-nyckelord för Alpha avsändar-ID:n. Du måste ange andra instruktioner, till exempel skriva till supportteamet, ringa en telefonlinje till supporten eller skicka ett annat telefonnummer eller en annan kod så att användarna kan välja bort meddelanden som skickas via ett alfanumeriskt avsändar-ID.
 
 ## Video {#video-sms}
 
