@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
+source-git-commit: 1a4c452adeb6bca876d5c108065e0219353a2540
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1319'
 ht-degree: 4%
 
 ---
@@ -107,7 +107,7 @@ Använd avsnittet **[!UICONTROL Custom data]** för att lägga till nyckelvärde
 >title="Konfigurera anpassade data för push-meddelanden."
 >abstract="Lägg till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration."
 
-I avsnittet **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform och Adobe Launch finns i [det här avsnittet](push-gs.md)
+I avsnittet **[!UICONTROL Custom data]** kan du lägga till anpassade variabler i nyttolasten, beroende på din mobilprogramkonfiguration. Mer information om hur du ställer in push-meddelanden i Adobe Experience Platform finns i [det här avsnittet](push-gs.md)
 
 ## Avancerade alternativ {#advanced-options-push}
 
