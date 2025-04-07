@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 88c938199412e38a08b4c94f283cb4d4e09ded2f
+source-git-commit: b7148ebeedf8bfce8d244f676fe96172ea8904e0
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 8%
+source-wordcount: '704'
+ht-degree: 7%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 8%
 
 ### Förbättringar {#25-04-improv}
 
-**Verktyg i sandlådan**
+**Verktyg i sandlådan** - Tillgänglighetsdatum: 3 april 2025
 
 Nu kan ni kopiera kampanjer över flera sandlådor med hjälp av funktioner för paketexport och -import. Kampanjer kopieras tillsammans med alla objekt som hör till profilen, målgruppen, schemat, textbundna meddelanden och beroende objekt. Vissa objekt kopieras inte, t.ex. beslutsobjekt, dataanvändningsetiketter och språkinställningar. [Läs mer](../configuration/copy-objects-to-sandbox.md)
 
-**Personalization**
+**Personalization** - Tillgänglighetsdatum: 2 april 2025
 
 Attributrutan i anpassningsredigeraren visar nu endast ifyllda attribut som standard. Om du vill visa alla attribut använder du inställningsknappen för att inaktivera alternativet **[!UICONTROL Show only populated attributes]**. [Läs mer](../personalization/personalization-build-expressions.md)
 
