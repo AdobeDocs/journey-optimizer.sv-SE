@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 48a1ef9a48cecddf340031fcbbec4fe574cb2839
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1753'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,41 @@ ht-degree: 0%
 >id="ajo_journey_read_segment"
 >title="Läs målgruppsaktivitet"
 >abstract="Med aktiviteten Läs målgrupp kan du få alla som tillhör en Adobe Experience Platform-målgrupp att delta i en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_start_date"
+>title="Startdatum/tid"
+>abstract="Definiera det datum och den tid som du vill ska utlösa den här resan."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_repeat_until"
+>title="Upprepa tills"
+>abstract="Definiera slutdatum för återkommande."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_repeat_every"
+>title="Upprepa var"
+>abstract="Definiera frekvensen för registrering av schemaläggare."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_incremental_read"
+>title="Inkrementell läsning"
+>abstract="Tillåt endast nya profiler att gå in på resan sedan senaste läsningen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_force_reentrance"
+>title="Tvinga återinträde"
+>abstract="Släpp alla deltagare innan varje målgrupp läser."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_synchronize_audience"
+>title="Synkronisera resan med målgruppsexport"
+>abstract="Växla till det här alternativet om du vill utlösa resan när det finns en ny export av målgruppen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
+>title="Synkronisera resan med målgruppsexport"
+>abstract="Ange hur lång tid resan ska ta att vänta på att en ny export av publiken ska vara tillgänglig."
 
 Använd aktiviteten **Läs målgrupp** för att få alla personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
