@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Beta" type="Informative"
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: f57a89e249c41e76f9ebf1a77dfe383129ae9250
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '739'
 ht-degree: 2%
 
 ---
@@ -50,15 +50,12 @@ Följande meddelandetyper stöds i WhatsApp:
 | Brödtext | Stöder dynamiskt innehåll via parametrar. |
 | Sidfotstext | Stöder dynamiskt innehåll via parametrar. |
 
-Följande alternativ för att anropa till åtgärd är tillgängliga för dina WhatsApp-meddelanden:
+Följande call-to-action-alternativ är tillgängligt för dina WhatsApp-meddelanden:
 
 | Utlysning av åtgärder | Beskrivning |
 |-|-|
-| Telefonnummer | Endast tillgängligt i meddelandemallar. Begränsat till en knapp. |
-| Anpassade snabbsvarsknappar | Stöder upp till tre knappar. |
-| Avanmälningsknapp för marknadsföring | Uppdaterar inte prenumerationsstatus automatiskt. |
-| Mallar för kupongkodmeddelanden | Endast tillgängligt i meddelandemallar. |
-| CTA svarsmeddelanden | Tillåter att en knapp för att ringa till åtgärd inkluderas i ett svarsmeddelande. |
+| Besök webbplatsen | Endast en knapp tillåts med variabelparametrar. |
+
 
 +++
 
@@ -97,6 +94,8 @@ Nu kan du börja designa innehållet i ditt whatsApp-meddelande från knappen **
 1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL WhatsApp]** och väljer eller skapar en ny konfiguration.
 
    Läs mer om konfigurationen för whatsApp på [den här sidan](whatsapp-configuration.md).
+
+   ![](assets/whatsapp-campaign-1.png)
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
@@ -139,13 +138,19 @@ Observera att din whatsApp-mall först måste godkännas av Meta innan den kan a
 
    [Läs mer om mallkategorier](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines/#template-category-guidelines)
 
+   ![](assets/whatsapp-design-1.png)
+
 1. I listrutan **whatsApp-mall** väljer du den mall du skapade tidigare i Meta.
 
    [Läs mer om hur du skapar dina whatsApp-mallar](https://www.facebook.com/business/help/2055875911147364?id=2129163877102343)
 
+   ![](assets/whatsapp-design-2.png)
+
 1. Använd personaliseringsredigeraren för att lägga till personalisering i mallen. Du kan använda alla attribut, till exempel profilnamnet eller stad.
 
    Bläddra igenom följande sida om du vill veta mer om [personalisering](../personalization/personalize.md).
+
+   ![](assets/whatsapp-design-3.png)
 
 1. Använd knappen **[!UICONTROL Simulate content]** för att förhandsgranska innehållet i dina WhatsApp-meddelanden, förkortade URL:er och anpassat innehåll. [Läs mer](send-whatsapp.md)
 
