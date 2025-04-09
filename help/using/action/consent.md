@@ -8,7 +8,8 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: politik, styrning, plattform, hälso- och sjukvård, samtycke
-source-git-commit: 6b721c04db34fecae2274604113061e4e97db149
+exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
+source-git-commit: 060d65e8d3fb1442b04626170a35d463d1faa514
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Som standard, om en profil har valt att inte ta emot meddelanden från dig, komm
 
 >[!IMPORTANT]
 >
->Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt tillägget **Adobe Healthcare Shield** eller **Privacy and Security Shield**.
+>Samtyckespolicyer är för närvarande bara tillgängliga för organisationer som har köpt Adobe **Healthcare Shield** eller **Privacy and Security Shield** som tillägg.
 
 De viktigaste stegen för att tillämpa policyer för samtycke är följande:
 
@@ -40,13 +41,13 @@ De viktigaste stegen för att tillämpa policyer för samtycke är följande:
 
 ## Utnyttja samtyckespolicyer via kanalkonfigurationer {#surface-marketing-actions}
 
-I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Medgivandeschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
+I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
 
 Om du vill ändra värdet på fältet för samtycke kan du skapa en anpassad samtyckespolicy där du definierar en marknadsföringsåtgärd och de villkor som åtgärden utförs under. [Läs mer om marknadsföringsåtgärder](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html#marketing-actions){target="_blank"}
 
 Om du till exempel vill skapa en samtyckespolicy för att endast rikta sig till profiler som har samtyckt till att ta emot e-postmeddelanden följer du stegen nedan.
 
-1. Kontrollera att din organisation har köpt tillägget **Hälsovårdssköld** eller **sekretess och säkerhetssköld** för Adobe. [Läs mer](https://experienceleague.adobe.com/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield.html){target="_blank"}
+1. Kontrollera att din organisation har köpt Adobe **Healthcare Shield** eller **Privacy and Security Shield** som tillägg. [Läs mer](https://experienceleague.adobe.com/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield.html){target="_blank"}
 
 1. Skapa en anpassad princip (från menyn **[!UICONTROL Privacy]** > **[!UICONTROL Policies]**) i Adobe Experience Platform. [Lär dig hur](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-policy){target="_blank"}
 
@@ -60,7 +61,7 @@ Om du till exempel vill skapa en samtyckespolicy för att endast rikta sig till 
 
       >[!NOTE]
       >
-      >De viktigaste marknadsföringsåtgärderna som tillhandahålls av Adobe direkt visas i [den här tabellen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions){target="_blank"}. Stegen för att skapa en anpassad marknadsföringsåtgärd visas i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-marketing-action){target="_blank"}.
+      >De viktigaste marknadsföringsåtgärderna som tillhandahålls av Adobe visas i [den här tabellen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions){target="_blank"}. Stegen för att skapa en anpassad marknadsföringsåtgärd visas i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-marketing-action){target="_blank"}.
 
    1. Välj vad som ska hända när marknadsföringsåtgärden gäller. I det här exemplet väljer du **[!UICONTROL Email Marketing Consent]**.
 
