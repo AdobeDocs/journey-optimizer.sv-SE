@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: ec3f4b69e510d477d65fedb126cec50e15a3f072
+source-git-commit: 9fcf0e07edad27ab1eac3c29b26888fd99e26751
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 1%
+source-wordcount: '1007'
+ht-degree: 0%
 
 ---
 
@@ -120,11 +120,7 @@ Om du vet vilken utvärderingsmetod du vill använda väljer du den i listrutan.
 
 När du har definierat en målgrupp för första gången läggs profiler till i målgruppen när de kvalificerar sig. Det kan ta upp till 24 timmar att fylla målgruppen med tidigare data. När målgruppen har fyllts i på nytt hålls målgruppen kontinuerligt uppdaterad och alltid redo för målinriktning.
 
-## [!BADGE Begränsad tillgänglighet]{type=Informative} Flexibel målgruppsutvärdering {#flexible}
-
->[!AVAILABILITY]
->
-Flexibel målgruppsutvärdering är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+## Flexibel utvärdering av målgrupper {#flexible}
 
 Med Adobe Experience Platform Audience Portal kan ni köra ett segmenteringsjobb på begäran för utvalda målgrupper, vilket säkerställer att ni alltid har de senaste målgruppsdata innan ni kan rikta in dem på Journey Optimizer resor och kampanjer.
 
