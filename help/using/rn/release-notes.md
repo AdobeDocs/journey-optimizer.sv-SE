@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: aa5170ec5d195ec22684d748cd3520dfa8400fed
+source-git-commit: d28341dd39ec3ab838a5fbb3ae49539b8776c60b
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 7%
+source-wordcount: '861'
+ht-degree: 8%
 
 ---
 
@@ -24,8 +24,28 @@ ht-degree: 7%
 
 ## Uppdateringar 25 april
 
-### Förbättringar {#25-04-improv}
+### Nya funktioner {#25-04-feature}
 
+<table>
+<thead>
+<tr>
+<th><strong>Resemått</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu finns det resestatistik som gör det möjligt att mäta effekten av dina aktiviteter över nyckeltalen i ditt företag och att ge tydligare insikter i hur det fungerar.</p>
+<p>Mer information finns i den <a href="../building-journeys/success-metrics.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 9 april 2025</p>
+</br>
+<img src="assets/do-not-localize/success-metric.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Förbättringar {#25-04-improv}
 
 * **Verktyg i sandlådan** - Tillgänglighetsdatum: 3 april 2025
 
