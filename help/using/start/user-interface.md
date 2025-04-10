@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
+source-git-commit: 384ec210fa5414966257b26d1d8b2b87ce962d76
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 5%
+source-wordcount: '1348'
+ht-degree: 4%
 
 ---
 
@@ -248,3 +248,10 @@ Så här byter du språk:
 >id="ajo_exd_placements"
 >title="Placement"
 >abstract="En placering bestämmer var returnerade objekt från beslutsmotorn visas i ett meddelande. Ni kan spåra deras prestanda på olika ställen i rapporteringen."
+
+<!-- Journey Dry Run - DOCAC-12459-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_dry_run"
+>title="Torka din resa"
+>abstract="När du har utformat din resa kan du utföra en torr körning för att bekräfta att den fungerar och se till att stegen är korrekta. I det här publiceringsläget kan du röka en resa utan att skicka kommunikation till någon profil."
