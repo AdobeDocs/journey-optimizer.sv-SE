@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttrycksredigerare, data, resa
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: 2de94e8ce3fe77399c8dc1d515ae73d58cb8f43d
+source-git-commit: 4a60b9f8c754e161ca156c7644d7241adb9bfc1f
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 63%
+source-wordcount: '675'
+ht-degree: 61%
 
 ---
 
@@ -47,9 +47,9 @@ När det är möjligt kan du växla mellan de två lägena med hjälp av knappen
 
 >[!NOTE]
 >
->Villkor kan definieras i den enkla eller avancerade uttrycksredigeraren. De returnerar alltid en boolesk typ.
+>* Villkor kan definieras i den enkla eller avancerade uttrycksredigeraren. De returnerar alltid en boolesk typ.
 >
->Åtgärdsparametrar kan definieras genom fältval eller via den avancerade uttrycksredigeraren. De returnerar en viss datatyp enligt sina uttryck.
+>* Åtgärdsparametrar kan definieras genom fältval eller via den avancerade uttrycksredigeraren. De returnerar en viss datatyp enligt sina uttryck.
 
 Du kan komma åt den avancerade uttrycksredigeraren på olika sätt.
 
@@ -84,9 +84,15 @@ En mekanism för syntaxvalidering kontrollerar kodens integritet. Fel visas öve
 
 ![](../assets/journey69.png)
 
+
+>[!TIP]
+>
+>När du skapar villkor i den avancerade uttrycksredigeraren ska du se till att uttrycken inte innehåller dolda eller ej utskrivbara tecken. Använd dessutom enkelradsuttryck för att undvika tolkningsfel.
+
+
 **Behovet av parametrar när du skapar villkor med den avancerade uttrycksredigeraren**
 
-Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../../datasource/external-data-sources.md)) visas en ny flik till höger där du kan ange den här parametern. Parametervärdet kan komma från händelser som är placerade i resan eller Experience Platform-datakällan (och inte från andra externa datakällor). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
+Om du väljer ett fält från en extern datakälla som kräver att en parameter anropas (se [den här sidan](../../datasource/external-data-sources.md)) visas en ny flik till höger där du kan ange den här parametern. Parametervärdet kan komma från händelser som placerats under resan eller Experience Platform-datakällan (och inte från andra externa datakällor). I en väderrelaterad datakälla används till exempel parametern &quot;city&quot; ofta. Därför måste du välja var du vill hämta den här parametern &quot;city&quot;. Funktioner kan även tillämpas på parametrar om man vill utföra formateringsändringar eller sammansättningar.
 
 ![](../assets/journeyuc2_19.png)
 
