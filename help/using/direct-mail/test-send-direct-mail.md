@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: 69a19190-d2e2-4858-a1df-ffd008226e2b
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 02571632e5f49ebf4fcc97d27c4025e9938795c0
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Kontrollera att kampanjen och extraheringsfilen är korrekt konfigurerade innan 
 
 Klicka på knappen **[!UICONTROL Activate]** när din direktreklamkampanj är klar. När kampanjen startar genereras extraheringsfilen automatiskt och exporteras till den server som anges i [filroutningskonfigurationen](../direct-mail/direct-mail-configuration.md).
 
-När ni har skickat det kan ni mäta effekten av er direktreklamkampanj i Campaign-rapporterna. Mer information om rapportering finns i det här avsnittet.
+När ni har skickat det kan ni mäta effekten av er direktreklamkampanj i Campaign-rapporterna. Mer information om rapportering av direktreklam finns i [det här avsnittet](../reports/campaign-global-report-cja-direct.md).
 
 ## Hantera samtycke för direktreklam {#dm-consent-management}
 

@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 02571632e5f49ebf4fcc97d27c4025e9938795c0
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1281'
 ht-degree: 1%
 
 ---
@@ -24,11 +24,14 @@ Innan du kan generera filen måste du skapa:
 
 1. [En filroutningskonfiguration](#file-routing-configuration) som anger på vilken server filen ska exporteras och krypterar filen om det behövs.
 
-   >[!CAUTION]
-   >
-   >Om du vill skapa en filroutningskonfiguration måste du ha den inbyggda behörigheten **[!DNL Manage file routing]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
-
 1. [En direktadresskonfiguration](#direct-mail-configuration) som refererar till filroutningskonfigurationen. Om du inte har konfigurerat något alternativ för filroutning kommer du inte att kunna skapa en direktadresskonfiguration.
+
+
+>[!CAUTION]
+>
+>* Om du vill skapa en filroutningskonfiguration måste du ha den inbyggda behörigheten **[!DNL Manage file routing]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+>
+>* Direktutskick genereras endast vid exporttillfället. Systemet lagrar inte i oändlighet äldre exporter. Konfigurera ett alternativ för filroutning (SFTP eller molnlagring) för längre eller permanent säkerhetskopiering.
 
 ## Konfigurera filroutning {#file-routing-configuration}
 
