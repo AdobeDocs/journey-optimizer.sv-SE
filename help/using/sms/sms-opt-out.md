@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 7973f56c26c01d4845138f70cd00bce8ab7fc09c
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,12 @@ När du använder Infobip måste du se till att Vidarebefordringsåtgärden är 
 Inga steg krävs för att säkerställa att SMS-avanmälningsfunktioner fungerar i Adobe Journey Optimizer när nyckelordssvaren STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE identifieras automatiskt. Profilernas avanmälningsstatus uppdateras i realtid i Adobe Journey Optimizer.
 
 Observera att om en kund svarar STOP på ett textmeddelande blockerar leverantören alla efterföljande SMS från det specifika avsändar-ID:t (kort kod eller långt nummer), inklusive transaktionsmeddelanden. Använd ett separat avsändar-ID som inte tidigare har valts ut för att säkerställa oavbruten leverans av transaktionsmeddelanden.
+
+
+>[!NOTE]
+>
+>Om du planerar att använda tvåvägs-SMS (svara med STOP, QUIT, osv.) måste du först skicka minst ett envägs-SMS för att fastställa mappningen mellan telefonnummer och profil. Utgångna eller felkonfigurerade autentiseringsuppgifter för providern förhindrar att inkommande nyckelord uppdaterar användarprofilen, vilket leder till saknade eller fördröjda poster för avanmälan.
+
 
 ## Blockeringslista {#sms-blocklists}
 
