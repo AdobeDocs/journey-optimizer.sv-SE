@@ -7,9 +7,9 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: inAudience, funktion, uttryck, resa
 exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560
-source-git-commit: 85a8d0713f87a8b3505a2294402156ba6598c8bb
+source-git-commit: 6e733e94e492fb46014e140b90e2aa47d64d584f
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '229'
 ht-degree: 3%
 
 ---
@@ -64,3 +64,8 @@ Returnerar ett booleskt värde.
 Förklaring:
 
 Funktionen returnerar **[!UICONTROL true]** om personen i reseinstansen är en del av Adobe Experience Platform-publiken med namnet&quot;män över 50&quot;, annars **[!UICONTROL false]**.
+
+
+>[!CAUTION]
+>
+>Om du ändrar namnet på en befintlig målgrupp uppdateras inte automatiskt några referenser till den målgruppen i dina reseuttryck. Om villkorsnoden använder inAudience(&#39;oldAudienceName&#39;) måste du redigera uttrycket manuellt för att använda det nya namnet. Om du inte gör det kommer transportvillkoret att brytas.
