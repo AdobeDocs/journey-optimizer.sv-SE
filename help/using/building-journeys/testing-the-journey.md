@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 99099cb6b705cb5a7b97652154c42f0565fdfdb9
+source-git-commit: 1ee75284f3c5f0c7870e8bd8779d4daf9879aa40
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1724'
 ht-degree: 1%
 
 ---
@@ -87,6 +87,17 @@ Så här använder du testläget:
 
 Använd knappen **[!UICONTROL Trigger an event]** för att konfigurera en händelse som får en person att gå in på resan.
 
+
+### Förhandskrav {#trigger-events-prerequisites}
+
+Du måste känna till vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan.
+
+Händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID eller en e-postadress. Värdet för den här nyckeln måste läggas till i fältet **Profilidentifierare**.
+
+Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
+
+Identitetsnamnutrymmet används för att unikt identifiera testprofilerna. Om e-post till exempel används för att identifiera testprofilerna bör identitetsnamnområdet **E-post** markeras. Om den unika identifieraren är telefonnumret bör identitetsnamnområdet **Telefon** väljas.
+
 >[!NOTE]
 >
 >* När du utlöser en händelse i testläge genereras en verklig händelse, vilket innebär att den även kommer att drabba andra resor som lyssnar på den här händelsen.
@@ -94,8 +105,7 @@ Använd knappen **[!UICONTROL Trigger an event]** för att konfigurera en hände
 >* Se till att varje händelse i testläge aktiveras i rätt ordning och i det konfigurerade väntefönstret. Om det till exempel finns en väntetid på 60 sekunder får den andra händelsen bara aktiveras efter att 60-sekundersväntetiden har gått ut och innan tidsgränsen går ut.
 >
 
-Du måste känna till vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan och händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID eller en e-postadress. Värdet för den här nyckeln måste läggas till i fältet **Profilidentifierare**.
-
+### Händelsekonfiguration {#trigger-events-configuration}
 
 Om resan innehåller flera händelser använder du listrutan för att välja en händelse. Konfigurera sedan de fält som skickats och körningen av den händelse som skickats för varje händelse. Gränssnittet hjälper dig att skicka rätt information i händelsens nyttolast och kontrollera att informationstypen är korrekt. Testläget sparar de senaste parametrarna som användes i en testsession för senare bruk.
 
