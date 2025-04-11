@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '1081'
 ht-degree: 10%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 10%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer]-dokumentationen.
+
+
+## April 2025 {#apr-2025}
+
+* En anteckning om tillfällig lagring av utdatafilen har lagts till på konfigurationssidan för direktreklam. [Läs mer](../direct-mail/direct-mail-configuration.md)
+* Ett tips har lagts till i avsnittet avancerad uttrycksredigerare om riktlinjerna för villkorsformat. [Läs mer](../building-journeys/expression/expressionadvanced.md)
+* En varningsanteckning har lagts till i funktionsavsnittet `inAudience` om påverkan och bästa praxis när en målgrupp ska namnges. [Läs mer](../building-journeys/functions/functioninaudience.md)
+* En rekommendation om användning av inbyggda nyckelord har lagts till när tvåvägs-SMS används. [Läs mer](../sms/sms-opt-out.md)
+* Uppdaterade testsidan för resan med en anteckning om behovet av att inkludera ett identitetsnamn i händelsen som används. [Läs mer](../building-journeys/testing-the-journey.md)
+* Du kan för närvarande inte avdelegera underdomäner via användargränssnittet [!UICONTROL Journey Optimizer]. Du måste kontakta din Adobe-representant. Avsnitten e-post, landningssida, SMS och webbunderdomän har uppdaterats med den här informationen och de steg som ska utföras innan du når ut till Adobe. [Läs mer](../configuration/delegate-subdomain.md#undelegate-subdomain)
 
 ## Mars 2025 {#mar-2025}
 

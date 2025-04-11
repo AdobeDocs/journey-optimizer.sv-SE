@@ -8,9 +8,9 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
@@ -139,3 +139,37 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 Innan du använder en underdomän för att skicka SMS-meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.<!--Learn more in [this section](#subdomain-validation).--> När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Det är klart att användas för att skapa SMS-kanalkonfigurationer.
 
 Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte kan skapa valideringsposten i din värdlösning.
+
+## Avdelegera en underdomän {#undelegate-subdomain}
+
+Kontakta din Adobe-representant om du inte längre vill delegera en SMS-underdomän.
+
+Du måste dock utföra flera steg i användargränssnittet innan du kommer till Adobe.
+
+>[!NOTE]
+>
+>Du kan bara avdelegera underdomäner med statusen **[!UICONTROL Success]**. Underdomäner med statusvärdena **[!UICONTROL Draft]** och **[!UICONTROL Failed]** kan bara tas bort från användargränssnittet.
+
+Utför följande steg i [!DNL Journey Optimizer]:
+
+1. Inaktivera alla kanalkonfigurationer som är associerade med underdomänen. [Lär dig hur](../configuration/channel-surfaces.md#deactivate-a-surface)
+
+<!--
+1. If the SMS subdomain is using an email subdomain that was [already delegated](#lp-use-existing-subdomain) to Adobe, undelegate the email subdomain. [Learn how](../configuration/delegate-subdomain.md#undelegate-subdomain)-->
+
+1. Stoppa aktiva kampanjer som är associerade med underdomänerna. [Lär dig hur](../campaigns/modify-stop-campaign.md#stop)
+
+1. Stoppa de aktiva resorna som är kopplade till underdomänerna. [Lär dig hur](../building-journeys/end-journey.md#stop-journey)
+
+1. Om SMS-underdomänen var en [ny delegerad underdomän](#sms-configure-new-subdomain) tar du bort de DNS-poster som är associerade med den underdomänen.
+
+När du är klar kontaktar du Adobe-representanten med den underdomän du vill avdelegera.
+
+När du har hanterat din begäran av Adobe visas inte längre den odelegerade domänen på underdomänens lagersida.
+
+>[!CAUTION]
+>
+>När en underdomän inte har delegerats:
+>
+>   * Du kan inte återaktivera kanalkonfigurationerna som använder den underdomänen.
+>   * Du kan inte delegera den exakta underdomänen igen via användargränssnittet. Kontakta Adobe om du vill göra det.

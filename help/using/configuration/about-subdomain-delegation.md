@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, optimering, delegering
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 23%
@@ -104,3 +104,4 @@ Du kan:
 >[!CAUTION]
 >
 >Underdomänskonfigurationen är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.
+

@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -68,7 +68,7 @@ När du väljer IP-adresser kan du se de PTR-poster som är associerade med IP-a
 
 >[!NOTE]
 >
->Om ingen PTR-post har konfigurerats för en IP-adress kan du inte välja den IP-adressen. Kontakta din Adobe-representant om du vill konfigurera PTR-posten för den IP-adressen.
+>Om ingen PTR-post har konfigurerats för en IP-adress kan du inte välja den IP-adressen. Kontakta din Adobe-representant för att konfigurera PTR-posten för den IP-adressen.<!--Now this only happens when first subdomain delegated to Adobe is with CNAME method.-->
 
 När en IP-pool har skapats visas PTR-information när du hovrar över IP-adresserna som visas under listrutan IP-pool.
 

@@ -8,9 +8,9 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -144,3 +144,38 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Den är klar att användas för att skapa förinställningar för landningssidor.
 
    Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte kan skapa valideringsposten i din värdlösning.
+
+## Avdelegera en underdomän {#undelegate-subdomain}
+
+Om du inte längre vill delegera en underdomän till en landningssida kontaktar du din Adobe-representant.
+
+Du måste dock utföra flera steg i användargränssnittet innan du kommer till Adobe.
+
+>[!NOTE]
+>
+>Du kan bara avdelegera underdomäner med statusen **[!UICONTROL Success]**. Underdomäner med statusvärdena **[!UICONTROL Draft]** och **[!UICONTROL Failed]** kan bara tas bort från användargränssnittet.
+
+Utför följande steg i [!DNL Journey Optimizer]:
+
+1. Avpublicera alla landningssidor som är kopplade till underdomänen. [Lär dig hur](create-lp.md#access-landing-pages)
+
+1. Inaktivera alla kanalkonfigurationer som är associerade med underdomänen. [Lär dig hur](../configuration/channel-surfaces.md#deactivate-a-surface)
+
+<!--
+1. If the landing page subdomain is using an email subdomain that was [already delegated](#lp-use-existing-subdomain) to Adobe, undelegate the email subdomain. [Learn how](../configuration/delegate-subdomain.md#undelegate-subdomain)
+
+1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
+
+1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)
+-->
+
+När du är klar kontaktar du Adobe-representanten med den underdomän du vill avdelegera.
+
+När du har hanterat din begäran av Adobe visas inte längre den odelegerade domänen på underdomänens lagersida.
+
+>[!CAUTION]
+>
+>När en underdomän inte har delegerats:
+>
+>   * Du kan inte återaktivera kanalkonfigurationerna som använder den underdomänen.
+>   * Du kan inte delegera den exakta underdomänen igen via användargränssnittet. Kontakta Adobe om du vill göra det.

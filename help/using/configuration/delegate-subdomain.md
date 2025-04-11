@@ -9,10 +9,10 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 5%
+source-wordcount: '1995'
+ht-degree: 4%
 
 ---
 
@@ -43,7 +43,7 @@ Du kan delegera en underdomän helt eller skapa en underdomän med CNAME för at
 >
 >Underdomänskonfigurationen är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.
 
-## Fullständig delegering av underdomäner {#full-subdomain-delegation}
+## Delegera en underdomän till Adobe {#full-subdomain-delegation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns"
@@ -113,7 +113,7 @@ När en underdomän har delegerats till Adobe i [!DNL Journey Optimizer] skapas 
 >
 >Parallell körning av underdomäner stöds inte i [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har statusen **[!UICONTROL Processing]** får du ett felmeddelande.
 
-## Konfigurera CNAME-underdomän {#cname-subdomain-delegation}
+## Konfigurera en underdomän med CNAME {#cname-subdomain-delegation}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns_cname"
@@ -224,6 +224,47 @@ Kontrollerna och åtgärderna nedan utförs tills underdomänen har verifierats 
 1. **Skapa framåtriktad DNS**: Om det här är den första underdomänen som du delegerar skapar Adobe den framåtriktade DNS som krävs för att skapa PTR-poster - en för varje IP-adress.
 
 1. **Skapa PTR-post**: PTR-posten, som även kallas omvänd DNS-post, krävs av Internet-leverantörer så att de inte markerar e-postmeddelanden som skräppost. Gmail rekommenderar också att du har PTR-poster för varje IP. Adobe skapar PTR-poster endast när du delegerar en underdomän för första gången, en för varje IP-adress, alla IP-adresser som pekar på den underdomänen. Om IP-adressen till exempel är *192.1.2.1* och underdomänen är *email.example.com* blir PTR-posten: *192.1.2.1PTR r1.email.example.com*. Du kan uppdatera PTR-posten efteråt för att peka på den nya delegerade domänen. [Läs mer om PTR-poster](ptr-records.md)
+
+## Avdelegera en underdomän {#undelegate-subdomain}
+
+Om du vill avdelegera en underdomän kontaktar du Adobe representant.
+
+Du måste dock utföra flera steg i användargränssnittet innan du kommer till Adobe.
+
+>[!NOTE]
+>
+>Du kan bara avdelegera underdomäner med statusen **[!UICONTROL Success]**. Underdomäner med statusvärdena **[!UICONTROL Draft]** och **[!UICONTROL Failed]** kan bara tas bort från användargränssnittet.
+
+Utför följande steg i [!DNL Journey Optimizer]:
+
+1. Inaktivera alla kanalkonfigurationer som är associerade med underdomänen. [Lär dig hur](../configuration/channel-surfaces.md#deactivate-a-surface)
+
+1. Avdelegera alla underdomäner för landningssidor, SMS-underdomäner och webbunderdomäner som är kopplade till den här underdomänen.
+
+   >[!NOTE]
+   >
+   >Du måste skapa en dedikerad begäran för varje [landningssida](../landing-pages/lp-subdomains.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-subdomain) eller [webbunderdomän](../web/web-delegated-subdomains.md#undelegate-subdomain).
+
+1. Stoppa aktiva kampanjer som är associerade med underdomänerna. [Lär dig hur](../campaigns/modify-stop-campaign.md#stop)
+
+1. Stoppa de aktiva resorna som är kopplade till underdomänerna. [Lär dig hur](../building-journeys/end-journey.md#stop-journey)
+
+1. Peka på de [PTR-poster](ptr-records.md#edit-ptr-record) som är länkade till underdomänen till en annan underdomän.
+
+   >[!NOTE]
+   >
+   >Om det här är den enda delegerade underdomänen kan du hoppa över det här steget.
+
+När du är klar kontaktar du Adobe-representanten med den underdomän du vill avdelegera.
+
+När du har hanterat din begäran av Adobe visas inte längre den odelegerade domänen på underdomänens lagersida.
+
+>[!CAUTION]
+>
+>När en underdomän inte har delegerats:
+>
+>   * Du kan inte återaktivera kanalkonfigurationerna som använder den underdomänen.
+>   * Du kan inte delegera den exakta underdomänen igen via användargränssnittet. Kontakta Adobe om du vill göra det.
 
 ## Instruktionsvideo{#video}
 
