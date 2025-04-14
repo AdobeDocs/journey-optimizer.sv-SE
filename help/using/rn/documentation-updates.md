@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
+source-git-commit: 847fb5dda4e8747ea61a2ffafb9adcddda1ddada
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1108'
 ht-degree: 10%
 
 ---
@@ -28,6 +28,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * En rekommendation om användning av inbyggda nyckelord har lagts till när tvåvägs-SMS används. [Läs mer](../sms/sms-opt-out.md)
 * Uppdaterade testsidan för resan med en anteckning om behovet av att inkludera ett identitetsnamn i händelsen som används. [Läs mer](../building-journeys/testing-the-journey.md)
 * Du kan för närvarande inte avdelegera underdomäner via användargränssnittet [!UICONTROL Journey Optimizer]. Du måste kontakta din Adobe-representant. Avsnitten e-post, landningssida, SMS och webbunderdomän har uppdaterats med den här informationen och de steg som ska utföras innan du når ut till Adobe. [Läs mer](../configuration/delegate-subdomain.md#undelegate-subdomain)
+* Ett förtydligande har lagts till om den valfria parametern `maxHttpConnections` i Resor Capping API, inklusive vägledning om hur den ska användas tillsammans med begränsningskonfigurationer för samma slutpunkt. [Läs mer](../configuration/throttling.md)
 
 ## Mars 2025 {#mar-2025}
 

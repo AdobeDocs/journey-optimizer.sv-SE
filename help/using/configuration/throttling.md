@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
-source-git-commit: ecb479f0875cfe1865a60667da6e2f84fad5044a
+source-git-commit: 847fb5dda4e8747ea61a2ffafb9adcddda1ddada
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 62%
+source-wordcount: '1014'
+ht-degree: 49%
 
 ---
 
@@ -21,13 +21,14 @@ API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina b
 
 Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [dokumentationen för Adobe Journey Optimizer API](https://developer.adobe.com/journey-optimizer-apis/).
 
->[!IMPORTANT]
->
->Endast en konfiguration är för närvarande tillåten per organisation. En konfiguration måste definieras i en produktionssandlåda (anges via x-sandbox-name i rubrikerna).
->
->En konfiguration tillämpas på organisationsnivå.
->
->När gränsvärdet i API:t har uppnåtts köas ytterligare händelser i upp till sex timmar. Detta värde kan inte ändras.
+## Måste läsas
+
+* **En konfiguration per organisation:** Endast en konfiguration tillåts för närvarande per organisation. En konfiguration måste definieras i en produktionssandlåda (anges via `x-sandbox-name` i rubrikerna).
+* **Program på organisationsnivå:** En konfiguration används på organisationsnivå.
+* **Hantering av API-begränsning:** När gränsen som anges i API:t nås köas ytterligare händelser i upp till 6 timmar. Detta värde kan inte ändras.
+* **`maxHttpConnections`-parameter:** Parametern maxHttpConnections är en valfri parameter som bara är tillgänglig i API:t för att du ska kunna begränsa antalet anslutningar som Journey Optimizer öppnar till det externa systemet. [Lär dig hur du arbetar med API:t för tak](../configuration/capping.md)
+
+  Om du vill begränsa antalet anslutningar men även begränsa dessa externa anrop kan du konfigurera två konfigurationer, en begränsning och en begränsning, på samma slutpunkt. Båda konfigurationerna kan finnas samtidigt för en slutpunkt. Om du vill ange maxHttpConnections för en begränsad slutpunkt använder du API:t för begränsning och API:t för begränsning för att ange maxHttpConnections. När du anropar API:t för begränsning kan du ange ett tröskelvärde för begränsning till något högre än tröskelvärdet, så att reglerna för begränsning aldrig kommer att börja gälla.
 
 ## Beskrivningar av begränsnings-API och Postman-samling {#description}
 
