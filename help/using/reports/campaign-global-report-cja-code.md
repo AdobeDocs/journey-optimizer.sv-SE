@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d35a0e1c-2376-4cc5-88fc-5f8dfcfae666
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 24cb77484172117f2308d2949588ee98fa8421dd
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Tabellen **[!UICONTROL Ranking Strategy]** ger insikter om hur AI-drivna ranknin
 
 * **Modellstyrd**: användare får innehåll som rangordnats av AI-modellen, optimerat för relevans och engagemang.
 
-* **Holdout**: användare ser en allmän version av innehållet, som fungerar som en kontrollgrupp för att mäta AI-modellens effektivitet.
+* **Holdout**: användare tar emot innehåll som skickas slumpmässigt under modellens undersökningsfas.
 
 Viktiga mätvärden som visas är:
 
@@ -167,4 +167,4 @@ Diagrammet **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]**
 
 * **Modellstyrd**: användare får innehåll som rangordnats av AI-modellen, optimerat för relevans och engagemang.
 
-* **Holdout**: användare ser en allmän version av innehållet, som fungerar som en kontrollgrupp för att mäta AI-modellens effektivitet.
+* **Holdout**: användare tar emot innehåll som skickas slumpmässigt under modellens undersökningsfas.
