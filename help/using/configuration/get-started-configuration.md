@@ -1,39 +1,58 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med  [!DNL Journey Optimizer] konfiguration
-description: Läs mer om  [!DNL Journey Optimizer] konfiguration
+title: Kom igång med  [!DNL Journey Optimizer] kanalkonfiguration
+description: 'Läs mer om kanalkonfiguration för [!DNL Journey Optimizer] '
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
 keywords: konfiguration, konfigurera, meddelanden, kanal, sandlåda, optimerare
-source-git-commit: 40bef9a05fef1433773a73d546752e84f81b7366
+source-git-commit: e052cf9bcd42cecbaaeb9047990ed603dd0730a0
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 10%
+source-wordcount: '244'
+ht-degree: 5%
 
 ---
 
 
-# Kom igång med konfigurationen [!DNL Journey Optimizer] {#start-optimizer-configuration}
+# Kom igång med kanalkonfiguration {#start-optimizer-configuration}
 
 När du använder [!DNL Journey Optimizer] för första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
-För att kunna skapa dina resor och skicka meddelanden måste du gå igenom konfigurationsstegen nedan.
 
-## Konfigurera meddelanden och kanaler
+För att kunna skicka meddelanden måste du gå igenom konfigurationsstegen som anges nedan:
 
-1. För att kunna skapa och skicka meddelanden måste du utföra specifika konfigurationer beroende på kanalen.
+1. Som [Adobe Journey Optimizer-systemadministratör](../start/path/administrator.md) definierar du kanalkonfigurationerna. Lär dig hur du konfigurerar dessa konfigurationer på följande sidor:
 
-   * För kanalen **Email** måste du delegera underdomäner till Adobe och skapa IP-pooler för att gruppera IP-adresser. [Läs mer](../email/get-started-email-config.md)
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../email/get-started-email-config.md"><img alt="e-post" src="../channels/assets/do-not-localize/email.png"></a>
+<div align="center"><a href="../email/get-started-email-config.md"><strong>E-post</strong></a></div></td>
+<td><a href="../sms/sms-configuration.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><a href="../sms/sms-configuration.md"><strong>SMS</strong></a></div></td>
+<td><a href="../push/push-configuration.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
+<div align="center"><a href="../push/push-configuration.md"><strong>Push-meddelande</strong></a></div></td>
+<td><a href="../direct-mail/direct-mail-configuration.md"><img alt="direktreklam" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
+<div align="center"><a href="../direct-mail/direct-mail-configuration.md"><strong>Direktutskick</strong></a></div></td>
+</tr></table>
 
-   * För kanalen **Push** måste du definiera inställningar för push-meddelanden i både [!DNL Adobe Experience Platform] och [!DNL Adobe Experience Platform Launch]. [Läs mer](../push/push-configuration.md)
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../in-app/inapp-configuration.md"><img alt="i appen" src="../channels/assets/do-not-localize/inapp.jpg"></a>
+<div align="center"><a href="../in-app/inapp-configuration.md"><strong>I appen</strong></a></div></td>
+<td><a href="../web/web-configuration.md"><img alt="webb" src="../channels/assets/do-not-localize/web.jpg"></a>
+<div align="center"><a href="../web/web-configuration.md"><strong>Webb</strong></a></div></td>
+<td><a href="../code-based/code-based-configuration.md"><img alt="kodbaserad upplevelse" src="../channels/assets/do-not-localize/code.png"></a>
+<div align="center"><a href="../code-based/code-based-configuration.md"><strong>Kodbaserad upplevelse</strong></a></div></td>
+<td><a href="../content-card/content-card-configuration-prereq.md"><img alt="innehållskort" src="../channels/assets/do-not-localize/cards.png"></a>
+<div align="center"><a href="../content-card/content-card-configuration-prereq.md"><strong>Innehållskort</strong></a></div></td>
+</tr></table>
 
-   * För **SMS**-kanalen måste du konfigurera instansen för att skicka SMS, inklusive att integrera providerinställningarna med [!DNL Journey Optimizer]. [Läs mer](../sms/sms-configuration.md)
+>[!NOTE]
+>
+>För mobilkanaler underlättar [konfigurationen av den guidade kanalen](set-mobile-config.md) den snabba konfigurationen av marknadsföringskanaler och ser till att alla nödvändiga resurser är tillgängliga inom Experience Platform, Journey Optimizer och datainsamling. På så sätt kan marknadsföringsteamet börja med att skapa kampanjer och resor.
 
-1. När du är klar måste du skapa **kanalkonfigurationer** för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer](channel-surfaces.md)
+1. När du är klar måste du skapa **kanalkonfigurationer** för att konfigurera alla tekniska parametrar som krävs för att leverera meddelanden. [Läs mer om kanalkonfigurationer](channel-surfaces.md)
 
 1. Du kan även:
 
@@ -44,21 +63,3 @@ För att kunna skapa dina resor och skicka meddelanden måste du gå igenom konf
    * Konfigurera **affärsregler** för att undvika att dina mottagare blir överdrivna. [Läs mer](../configuration/rule-sets.md)
 
    * Avgör vilken e-postadress och/eller vilket telefonnummer som ska användas i prioritetsordning för dina mottagare när flera adresser/nummer är tillgängliga i Adobe Experience Platform. [Läs mer](primary-email-addresses.md)
-
-<!--* Understand the push notification flow. [Learn more](../push/push-gs.md)-->
-
->[!NOTE]
->
->Dessa steg måste utföras av en [Adobe Journey Optimizer-systemadministratör](../start/path/administrator.md).
-
-## Konfigurera resor
-
-För att kunna skapa resor måste du konfigurera **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** och **[!UICONTROL Actions]**. [Läs mer](about-data-sources-events-actions.md)
-
-![](assets/admin-menu.png)
-
-* Med konfigurationen för **datakälla** kan du definiera en anslutning till ett system för att hämta ytterligare information som ska användas på dina resor. [Läs mer](../datasource/about-data-sources.md)
-
-* **Med händelser** kan du utlösa dina resor åt gången för att skicka meddelanden i realtid till den person som flyger in på resan. I händelsekonfigurationen konfigurerar du de händelser som förväntas under resorna. Data för inkommande händelser normaliseras enligt Adobes upplevelsedatamodell (XDM). Händelser kommer från API:er för direktuppspelning av inmatning för autentiserade och oautentiserade händelser (t.ex. Adobe Mobile SDK-händelser). [Läs mer](../event/about-events.md)
-
-* [!DNL Journey Optimizer] har inbyggda meddelandefunktioner som gör att du kan utforma och skicka ditt innehåll. Om du använder ett tredjepartssystem för att skicka meddelanden skapar du en **anpassad åtgärd**. [Läs mer](../action/action.md)
