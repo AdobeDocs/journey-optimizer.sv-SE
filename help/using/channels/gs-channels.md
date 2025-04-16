@@ -6,9 +6,9 @@ description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommuni
 role: User
 level: Beginner
 exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
-source-git-commit: ac71350cd344845582e09fa039fb796e9408b048
+source-git-commit: bebc2ac362603f56b3c386ec972f274f87fa662f
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,19 @@ ht-degree: 0%
 
 I dagens dynamiska marknadsföringslandskap är det viktigt att effektivt nå ut till er målgrupp på olika plattformar för att skapa varaktiga relationer och öka engagemanget. I det här avsnittet finns en omfattande översikt över de kommunikationskanaler som är tillgängliga i [!DNL Adobe Journey Optimizer], som hjälper dig att förstå hur du använder varje kanal effektivt i dina marknadsföringsstrategier.
 
-## Inkommande och utgående kanaler {#inbound-outbound}
 
-Att förstå skillnaden mellan inkommande och utgående kanaler är avgörande för att optimera er kommunikationsstrategi:
+Adobe Journey Optimizer erbjuder en mängd olika kommunikationskanaler för att effektivt interagera med er målgrupp. Du kan kombinera utgående och inkommande kanaler.
 
-* Inkommande kanaler: Med dessa kanaler kan kunderna starta interaktioner. Exempel är meddelanden i appen och webbaserad interaktion, där användarna kan interagera med innehållet på sina egna villkor.
+## Utgående kanaler {#outbound-channels}
 
-* Utgående kanaler: Det handlar om att skicka meddelanden till kunder utan föregående interaktion. Exempel är e-postkampanjer och push-meddelanden, där ni aktivt når ut till er målgrupp.
+Det handlar om att skicka meddelanden till kunderna utan föregående interaktion. Exempel är e-postkampanjer och push-meddelanden, där ni aktivt når ut till er målgrupp. I [!DNL Adobe Journey Optimizer] stöds utgående kanaler:
 
-Genom att utnyttja båda kanaltyperna effektivt kan ni förbättra kundupplevelserna och öka engagemanget.
+* **E-post**: Leverera personaliserade meddelanden direkt till dina kunders inkorgar.
+* **SMS/MMS**: Skicka textmeddelanden till användare på deras mobila enheter.
+* **Push-meddelande**: Engagera användarna med snabbmeddelanden på deras enheter och få dem att agera direkt.
+* **Direkt e-post**: Använd fysisk e-post för att skapa en faktisk anslutning till din målgrupp.
 
-## Tillgängliga kanaler {#channels}
-
-Adobe Journey Optimizer erbjuder en mängd olika kommunikationskanaler för att effektivt interagera med er målgrupp. Här är en lista över de kanaler du kan utnyttja:
-
-* Utgående kanaler
-
-   * **E-post**: Leverera personaliserade meddelanden direkt till dina kunders inkorgar.
-   * **SMS/MMS**: Skicka textmeddelanden till användare på deras mobila enheter.
-   * **Push-meddelande**: Engagera användarna med snabbmeddelanden på deras enheter och få dem att agera direkt.
-   * **Direkt e-post**: Använd fysisk e-post för att skapa en faktisk anslutning till din målgrupp.
-
-* Inkommande kanaler
-
-   * **I appen**: Kommunicera med användare i dina mobil- eller webbprogram för att förbättra deras upplevelse.
-   * **Webb**: Använd webbaserade meddelanden för att interagera med användare som surfar på webbplatsen.
-   * **Kodbaserad upplevelse**: Implementera anpassade upplevelser genom att koda för unika engagemangsmöjligheter.
-   * **Innehållskort**: Dela dynamiskt innehåll direkt inifrån program eller webbplatser för att hålla användarna informerade och engagerade.
-
-## Utnyttja kanaler under resor och kampanjer {#leverage}
-
-I Adobe Journey Optimizer kan du utnyttja kommunikationskanaler i två primära sammanhang:
-
-* **Resor**: Skapa sömlösa kundupplevelser över flera kontaktytor. Automatisera interaktioner baserat på användarbeteende och preferenser, och säkerställ att användarens kommunikation vägleder användarna genom hela kundresan med ert varumärke.
-* **Kampanjer**: Distribuera specifika marknadsföringskampanjer som använder en viss kanal för att uppnå målinriktade mål. Vare sig ni marknadsför en ny produkt eller driver säsongsförsäljningen kan ni med kampanjer skapa fokuserade meddelandestrategier som är skräddarsydda för er målgrupp.
-
-Kom så börjar vi! Klicka på kanalerna nedan för att fördjupa dig i var och en och se hur ni kan utnyttja dem effektivt i er marknadsföringsstrategi.
+Välj en kanal för att dyka djupare och upptäck hur ni kan utnyttja dem effektivt i er marknadsföringsstrategi.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../email/get-started-email.md"><img alt="e-post" src="assets/do-not-localize/email.png"></a>
@@ -65,6 +42,17 @@ Kom så börjar vi! Klicka på kanalerna nedan för att fördjupa dig i var och 
 <div align="center"><a href="../direct-mail/get-started-direct-mail.md"><strong>Direktutskick</strong></a></div></td>
 </tr></table>
 
+## Inkommande kanaler {#inbound-channels}
+
+Med dessa kanaler kan kunderna starta interaktioner. Exempel är meddelanden i appen och webbaserad interaktion, där användarna kan interagera med innehållet på sina egna villkor. I [!DNL Adobe Journey Optimizer] stöds följande inkommande kanaler:
+
+* **I appen**: Kommunicera med användare i dina mobil- eller webbprogram för att förbättra deras upplevelse.
+* **Webb**: Använd webbaserade meddelanden för att interagera med användare som surfar på webbplatsen.
+* **Kodbaserad upplevelse**: Implementera anpassade upplevelser genom att koda för unika engagemangsmöjligheter.
+* **Innehållskort**: Dela dynamiskt innehåll direkt inifrån program eller webbplatser för att hålla användarna informerade och engagerade.
+
+Välj en kanal för att dyka djupare och upptäck hur ni kan utnyttja dem effektivt i er marknadsföringsstrategi.
+
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../in-app/get-started-in-app.md"><img alt="i appen" src="assets/do-not-localize/inapp.jpg"></a>
 <div align="center"><a href="../in-app/get-started-in-app.md"><strong>I appen</strong></a></div></td>
@@ -75,3 +63,13 @@ Kom så börjar vi! Klicka på kanalerna nedan för att fördjupa dig i var och 
 <td><a href="../content-card/get-started-content-card.md"><img alt="innehållskort" src="assets/do-not-localize/cards.png"></a>
 <div align="center"><a href="../content-card/get-started-content-card.md"><strong>Innehållskort</strong></a></div></td>
 </tr></table>
+
+
+## Utnyttja kanaler under resor och kampanjer {#leverage}
+
+I Adobe Journey Optimizer kan du utnyttja kommunikationskanaler i två primära sammanhang:
+
+* **Resor**: Skapa sömlösa kundupplevelser över flera kontaktytor. Automatisera interaktioner baserat på användarbeteende och preferenser, och säkerställ att användarens kommunikation vägleder användarna genom hela kundresan med ert varumärke. [Lär dig hur du skapar och kör en resa](../building-journeys/journey-gs.md).
+
+* **Kampanjer**: Distribuera specifika marknadsföringskampanjer som använder en viss kanal för att uppnå målinriktade mål. Vare sig ni marknadsför en ny produkt eller driver säsongsförsäljningen kan ni med kampanjer skapa fokuserade meddelandestrategier som är skräddarsydda för er målgrupp. [Lär dig skapa och köra en kampanj](../campaigns/get-started-with-campaigns.md).
+
