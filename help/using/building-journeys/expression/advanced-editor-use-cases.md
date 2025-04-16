@@ -8,9 +8,9 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttryck, villkor, användningsfall, händelser
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
-source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
+source-git-commit: 773f5430242901a08c1609f3229f21d5d4e100ea
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '535'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,18 @@ ht-degree: 1%
 
 Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. Dessa villkor gör att ni kan inrikta er på användare i tid, på datum, plats, varaktighet eller åtgärder som att köpa eller avstå från kundvagnar så att de kan återställas under resan.
 
->[!NOTE]
+>[!CAUTION]
 >
->Händelser börjar med @, datakällor med #.
+>Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck ](../../building-journeys/functions/functioninaudience.md).
+
 
 ## Bygga villkor för upplevelsehändelser
 
 Den avancerade uttrycksredigeraren är obligatorisk för att utföra frågor på tidsserier som en lista över inköp eller tidigare klick på meddelanden. Sådana frågor kan inte utföras med den enkla redigeraren.
+
+>[!NOTE]
+>
+>Händelser börjar med @, datakällor med #.
 
 Experience Events hämtas från Adobe Experience Platform som en samling i omvänd kronologisk ordning, vilket innebär att
 
@@ -40,7 +45,7 @@ Först och främst målkunder som surfar i onlinebutiken men inte slutfört best
 
 <!--**This expression looks for a specified value in a string value:**
 
-`In (“addToCart”, #{field reference from experience event})`-->
+`In ("addToCart", #{field reference from experience event})`-->
 
 **Det här uttrycket söker efter alla händelser för den här användaren som har angetts under de senaste 7 dagarna:**
 

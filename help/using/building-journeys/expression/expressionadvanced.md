@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttrycksredigerare, data, resa
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: 4a60b9f8c754e161ca156c7644d7241adb9bfc1f
+source-git-commit: 773f5430242901a08c1609f3229f21d5d4e100ea
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 61%
+source-wordcount: '717'
+ht-degree: 57%
 
 ---
 
@@ -69,6 +69,11 @@ Med den här skärmen kan du ange ett uttryck manuellt.
 Till vänster på skärmen visas tillgängliga fält och funktioner:
 
 * **[!UICONTROL Events]**: välj ett av fälten som har tagits emot från den inkommande händelsen. Den visade listan med händelsefält är sammanhangsberoende och varierar beroende på vilka händelser som läggs till under resan. [Läs mer](../../event/about-events.md)
+
+  >[!CAUTION]
+  >
+  >Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck ](../../building-journeys/functions/functioninaudience.md).
+
 * **[!UICONTROL Audiences]**: Om du har släppt en **[!UICONTROL Audience qualification]** -händelse väljer du den målgrupp du vill använda i ditt uttryck. [Läs mer](../condition-activity.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: välj i listan över fält som är tillgängliga från fältgrupperna i datakällorna. [Läs mer](../../datasource/about-data-sources.md)
 * **[!UICONTROL Journey properties]**: I det här avsnittet grupperas de tekniska fält som är relaterade till resan för en viss profil om. [Läs mer](journey-properties.md)
