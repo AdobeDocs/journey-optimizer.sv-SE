@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: ce8818e0216d4f633770fecadd4e74c2651a62f3
+source-git-commit: 8e5a904f9310385f5a8186159dedde9942624268
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1966'
 ht-degree: 4%
 
 ---
@@ -28,6 +28,8 @@ ht-degree: 4%
 >id="ajo_admin_subdomainname_header"
 >title="Delegering av underdomän"
 >abstract="För att börja skicka e-post delegerar du din underdomän till Adobe. När du är klar konfigureras DNS-poster, inkorgar, avsändare, svar och studsadresser åt dig."
+
+## Kom igång med e-postunderdomäner {#gs-delegate-subdomain}
 
 Domännamnsdelegering är en metod som gör att ägaren av ett domännamn (tekniskt: en DNS-zon) kan delegera en underavdelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan enhet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe. Läs mer om [delegering av underdomäner](about-subdomain-delegation.md)
 

@@ -8,9 +8,9 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: ce8818e0216d4f633770fecadd4e74c2651a62f3
+source-git-commit: 8e5a904f9310385f5a8186159dedde9942624268
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -34,14 +34,15 @@ ht-degree: 0%
 >abstract="Om du vill kunna skapa en SMS-konfiguration måste du kontrollera att du tidigare har konfigurerat minst en SMS-underdomän att välja från listan över underdomännamn."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
 
+# Kom igång med SMS-underdomäner {#gs-sms-mms-subdomains}
+
 Om du vill kunna förkorta URL:er som läggs till i dina SMS/MMS-meddelanden måste du konfigurera den underdomän du väljer när du [skapar en SMS-konfiguration](sms-configuration.md#message-preset-sms).
 
-Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe i [det här avsnittet](../configuration/delegate-subdomain.md).
+Du kan antingen använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe i [det här avsnittet](../configuration/delegate-subdomain.md).
 
 SMS-underdomänskonfigurationen **delas mellan alla miljöer**. Därför påverkar alla ändringar av en SMS-underdomän även andra produktionssandlådor.
 
 Om du vill komma åt och redigera SMS-underdomäner måste du ha behörigheten **[!UICONTROL Manage SMS Subdomains]** i produktionssandlådan. Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
-
 
 ## Använd en befintlig underdomän {#sms-use-existing-subdomain}
 
@@ -79,9 +80,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
 1. När den har skickats visas underdomänen i listan med statusen **[!UICONTROL Processing]**. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
-   >[!NOTE]
-   >
-   >Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
+   Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta **upp till 4 timmar**.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
 
 1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Det är klart att användas för att skapa SMS-kanalkonfigurationer.
 

@@ -8,9 +8,9 @@ feature: Web Channel, Subdomains
 level: Experienced
 keywords: webb, underdomäner, konfiguration
 exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
-source-git-commit: ce8818e0216d4f633770fecadd4e74c2651a62f3
+source-git-commit: 8e5a904f9310385f5a8186159dedde9942624268
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 0%
 >title="Ange en webbunderdomän"
 >abstract="Välj en underdomän i listan över underdomäner som har delegerats till Adobe. Du kan ange den här webbunderdomänen som standardunderdomän, men bara en standardunderdomän i taget kan användas."
 
+## Kom igång med webbunderdomäner {#gs-web-subdomains}
+
 Om du lägger till innehåll från biblioteket [Adobe Experience Manager Assets](../integrations/assets.md) när du skapar webbupplevelser måste du konfigurera den underdomän som ska användas för att publicera det här innehållet.
 
 Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe i [det här avsnittet](../configuration/delegate-subdomain.md).
@@ -46,7 +48,9 @@ Du kan skapa flera webbunderdomäner, men endast underdomänen **default** anvä
 
 ## Få åtkomst till och hantera webbunderdomäner {#access-web-subdomains}
 
-1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**. Alla underdomäner som har konfigurerats med den aktuella sandlådan visas.
+Följ de här stegen för att få åtkomst till underdomäner för webbupplevelser:
+
+1. Bläddra till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**. Alla underdomäner som har konfigurerats med den aktuella sandlådan visas.
 
    ![](assets/web-access-subdomains.png)
 
@@ -62,7 +66,7 @@ Du kan skapa flera webbunderdomäner, men endast underdomänen **default** anvä
 
 ## Använd en befintlig underdomän {#web-use-existing-subdomain}
 
-Om du vill använda en underdomän som redan har delegerats till Adobe följer du stegen nedan.
+Om du vill använda en underdomän som redan har delegerats till Adobe följer du stegen nedan:
 
 1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**.
 
@@ -94,7 +98,6 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 >id="ajo_admin_web_subdomain_dns"
 >title="Generera matchande DNS-post"
 >abstract="Om du vill konfigurera en ny webbunderdomän måste du kopiera den Adobe-namnserverinformation som visas i Journey Optimizer-gränssnittet och klistra in den i din domänvärdslösning för att generera den matchande DNS-posten. När kontrollen är klar kan underdomänen användas för att publicera innehåll som kommer från Adobe Experience Manager Assets-biblioteket."
-
 
 Som standard kan du i [!DNL Journey Optimizer] delegera **upp till 10 underdomäner** totalt (som omfattar både e-post- och webbkanaler). Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
 
