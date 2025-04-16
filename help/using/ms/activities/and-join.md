@@ -2,10 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använda aktiviteten OCH-join
-description: Lär dig hur du använder AND-join-aktiviteten i en flerstegskampanj
+description: Lär dig använda AND-join-aktiviteten i en iscensatt kampanj
 hide: true
 hidefromtoc: true
-source-git-commit: dfa6c6e11db10f3e843035d32e322b212361548c
+exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -17,11 +18,11 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_and-join"
 >title="AND-join activity"
->abstract="Med aktiviteten **And-join** kan du synkronisera flera körningsgrenar för en flerstegskampanj. Den aktiveras när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter är slutförda innan du fortsätter att köra flerstegskampanjen."
+>abstract="Med aktiviteten **And-join** kan du synkronisera flera körningsgrenar för en orkestrerad kampanj. Den aktiveras när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter är slutförda innan du fortsätter att köra den orkestrerade kampanjen."
 
-Aktiviteten **And-join** är en **Flow control** -aktivitet. Med den kan ni synkronisera flera körningsgrenar för en flerstegskampanj.
+Aktiviteten **And-join** är en **Flow control** -aktivitet. Det gör att ni kan synkronisera flera körningsgrenar för en orkestrerad kampanj.
 
-Den här aktiviteten utlöser endast den utgående övergången när alla inkommande övergångar har aktiverats, det vill säga när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter har slutförts innan du fortsätter att köra flerstegskampanjen.
+Den här aktiviteten utlöser endast den utgående övergången när alla inkommande övergångar har aktiverats, det vill säga när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter har slutförts innan du fortsätter att köra den orkestrerade kampanjen.
 
 ## Konfigurera aktiviteten Och-join{#and-join-configuration}
 
@@ -41,6 +42,6 @@ Följ de här stegen för att konfigurera aktiviteten **AND-join**:
 
 ## Exempel{#and-join-example}
 
-I följande exempel visas två kampanjgrenar i flera steg med e-post och SMS-leverans. AND-join utlöses när båda inkommande övergångar är aktiverade. Push-meddelandena skickas sedan först när båda leveranserna är klara.
+I följande exempel visas två samordnade kampanjgrenar med e-post och SMS-leverans. AND-join utlöses när båda inkommande övergångar är aktiverade. Push-meddelandena skickas sedan först när båda leveranserna är klara.
 
 ![](../assets/workflow-andjoin-example.png){zoomable="yes"}

@@ -2,10 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använda aktiviteten Dela
-description: Lär dig hur du använder aktiviteten Dela i en kampanj i flera steg
+description: Lär dig hur du använder aktiviteten Dela i en iscensatt kampanj
 hide: true
 hidefromtoc: true
-source-git-commit: 00f843300a9cfe798ea4d3a92fbe89ba80e70bc5
+exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Aktiviteten **Dela** är en **målaktivitet** som gör att du kan segmentera ink
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_segments"
 >title="Segment för delad aktivitet"
->abstract="Lägg till så många delmängder som du vill för att segmentera den inkommande populationen.<br/></br>När aktiviteten **Dela** körs segmenteras populationen mellan de olika delmängderna i den ordning som de läggs till i aktiviteten. Innan du påbörjar en flerstegskampanj måste du se till att du har beställt delmängderna i den ordning som passar dina behov med pilknapparna."
+>abstract="Lägg till så många delmängder som du vill för att segmentera den inkommande populationen.<br/></br>När aktiviteten **Dela** körs segmenteras populationen mellan de olika delmängderna i den ordning som de läggs till i aktiviteten. Innan du påbörjar din samordnade kampanj måste du se till att du har beställt delmängderna i den ordning som passar dina behov med pilknapparna."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_filter"
@@ -65,7 +66,7 @@ Aktiviteten **Dela** är en **målaktivitet** som gör att du kan segmentera ink
 
 Följ de här stegen för att konfigurera aktiviteten **Dela**:
 
-1. Lägg till en **delad**-aktivitet i din flerstegskampanj.
+1. Lägg till en **delad**-aktivitet i din samordnade kampanj.
 
 1. Aktivitetskonfigurationsrutan öppnas med en standarddelmängd. Klicka på knappen **Lägg till segment** om du vill lägga till så många delmängder som behövs för att segmentera den inkommande populationen.
 
@@ -75,9 +76,9 @@ Följ de här stegen för att konfigurera aktiviteten **Dela**:
    >
    >När aktiviteten **Dela** körs segmenteras populationen över de olika delmängderna i den ordning som de läggs till i aktiviteten. Om till exempel den första delmängden återställer 70 % av den ursprungliga populationen, kommer nästa tillagda delmängd endast att tillämpa sina urvalskriterier på de återstående 30 %, och så vidare.
    >
-   >Innan du påbörjar en flerstegskampanj måste du se till att du har beställt delmängderna i den ordning som passar dina behov. Det gör du genom att använda pilknapparna för att ändra positionen för en delmängd.
+   >Innan du påbörjar en strukturerad kampanj måste du se till att du har beställt delmängderna i den ordning som passar dina behov. Det gör du genom att använda pilknapparna för att ändra positionen för en delmängd.
 
-1. När deluppsättningar har lagts till visar aktiviteten så många utdataövergångar som det finns deluppsättningar. Vi rekommenderar starkt att du ändrar etiketten för varje delmängd så att du enkelt kan identifiera dem på arbetsytan för flerstegskampanjer.
+1. När deluppsättningar har lagts till visar aktiviteten så många utdataövergångar som det finns deluppsättningar. Vi rekommenderar starkt att du ändrar etiketten för varje delmängd för att enkelt identifiera dem i den orkestrerade kampanjarbetsytan.
 
 1. Konfigurera hur varje delmängd ska filtrera den inkommande populationen. Följ dessa steg för att göra detta:
 
@@ -87,7 +88,7 @@ Följ de här stegen för att konfigurera aktiviteten **Dela**:
 
    1. Om du vill begränsa antalet profiler som markeras av delmängden aktiverar du alternativet **[!UICONTROL Enable limit]** och anger antalet eller procentsatserna för den population som ska inkluderas.
 
-   1. Om du vill inaktivera en övergång om den inkommande populationen är tom aktiverar du alternativet **[!UICONTROL Skip empty transition]**. Om ingen profil matchar delmängden kommer flerstegskampanjen inte att övergå till nästa aktivitet.
+   1. Om du vill inaktivera en övergång om den inkommande populationen är tom aktiverar du alternativet **[!UICONTROL Skip empty transition]**. Om ingen profil matchar delmängden kommer den orkestrerade kampanjen inte att övergå till nästa aktivitet.
 
       ![](../assets/workflow-split-subset.png)
 
@@ -104,7 +105,7 @@ Följ de här stegen för att konfigurera aktiviteten **Dela**:
    * När rutan inte är markerad ser delningsaktiviteten till att en mottagare inte kan finnas i flera utdataövergångar, även om den uppfyller villkoren för flera delmängder. De kommer att vara i målet för den första fliken med matchande villkor.
    * När rutan är markerad kan mottagarna hittas i flera delmängder om de uppfyller filtervillkoren. Det bästa sättet är att använda exklusiva kriterier.
 
-Aktiviteten är nu konfigurerad. Vid kampanjutförande i flera steg kommer populationen att segmenteras i olika delmängder, i den ordning som de har lagts till i aktiviteten.
+Aktiviteten är nu konfigurerad. Vid genomförande av samordnade kampanjer kommer populationen att segmenteras i olika delmängder, i den ordning som de har lagts till i aktiviteten.
 
 ## Exempel{#split-example}
 

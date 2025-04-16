@@ -2,10 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använd aktiviteten Skapa målgrupp
-description: Lär dig hur du använder aktiviteten Skapa målgrupper i en flerstegskampanj
+description: Lär dig hur du använder aktiviteten Skapa målgrupp i en orkestrerad kampanj
 hide: true
 hidefromtoc: true
-source-git-commit: 00f843300a9cfe798ea4d3a92fbe89ba80e70bc5
+exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
@@ -17,9 +18,9 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_build_audience"
 >title="Bygg målgruppsaktivitet"
->abstract="Med aktiviteten **Skapa målgrupp** kan du definiera målgruppen som ska delta i flerstegskampanjen. När du skickar meddelanden i samband med en flerstegskampanj definieras inte meddelandemålgruppen i kanalaktiviteten, utan i aktiviteten **Skapa målgrupp**."
+>abstract="Med aktiviteten **Skapa målgrupp** kan du definiera målgruppen som ska gå in i den orkestrerade kampanjen. När du skickar meddelanden i samband med en orkestrerad kampanj definieras inte meddelandemålgruppen i kanalaktiviteten, utan i aktiviteten **Bygg målgrupp**."
 
-Aktiviteten **Skapa målgrupp** är en **målgruppsaktivitet**. Med den här aktiviteten kan ni definiera målgruppen som ska delta i flerstegskampanjen. När du skickar meddelanden i samband med en flerstegskampanj definieras inte meddelandemålgruppen i kanalaktiviteten, utan i aktiviteten **Skapa målgrupp**.
+Aktiviteten **Skapa målgrupp** är en **målgruppsaktivitet**. Med den här aktiviteten kan ni definiera målgruppen som ska delta i den orkestrerade kampanjen. När du skickar meddelanden i samband med en orkestrerad kampanj definieras inte meddelandemålgruppen i kanalaktiviteten, utan i aktiviteten **Bygg målgrupp**.
 
 Om du vill definiera målgruppspopulationen kan du:
 
@@ -73,6 +74,6 @@ Så här väljer du en befintlig målgrupp:
 
 ## Exempel{#build-audience-examples}
 
-Här är ett exempel på en flerstegskampanj med två **Build-målgruppsaktiviteter**. Det första riktar sig till pokerspelarna, följt av ett mejlerbjudande. Det andra riktar sig till VIP kunder, följt av SMS-leverans.
+Här är ett exempel på en orkestrerad kampanj med två **Build-målgruppsaktiviteter**. Det första riktar sig till pokerspelarna, följt av ett mejlerbjudande. Det andra riktar sig till VIP kunder, följt av SMS-leverans.
 
 ![](../assets/workflow-audience-example.png)

@@ -5,7 +5,8 @@ title: Använd anrikningsaktiviteten
 description: Lär dig använda anrikningsaktiviteten
 hide: true
 hidefromtoc: true
-source-git-commit: 00f843300a9cfe798ea4d3a92fbe89ba80e70bc5
+exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 0%
@@ -24,7 +25,7 @@ Aktiviteten **Enrichment** är en **Target**-aktivitet. Det gör att du kan för
 
 Anrikningsdata kan komma antingen:
 
-* **Från samma arbetstabell** som den som är avsedd för din flerstegskampanj:
+* **Från samma arbetstabell** som den som är riktad till din samordnade kampanj:
 
   *Ange en grupp kunder som mål och lägg till fältet &quot;Födelsedatum&quot; i den aktuella arbetstabellen*.
 
@@ -32,9 +33,9 @@ Anrikningsdata kan komma antingen:
 
   *Aktivera en grupp kunder och lägg till fälten Belopp och Produkttyp som kommer från tabellen Inköp*.
 
-När berikningsdata har lagts till i flerstegskampanjen kan de användas i aktiviteter som lagts till efter **Enrichment** -aktiviteten för att segmentera kunder i distinkta grupper baserat på deras beteenden, önskemål och behov, eller för att skapa personaliserade marknadsföringsmeddelanden och kampanjer som troligtvis får genklang hos målgruppen.
+När anrikningsdata har lagts till i den orkestrerade kampanjen kan de användas i aktiviteter som lagts till efter **Enrichment** -aktiviteten för att segmentera kunder i distinkta grupper baserat på deras beteenden, önskemål och behov, eller för att skapa personaliserade marknadsföringsmeddelanden och kampanjer som troligtvis får genklang hos målgruppen.
 
-Du kan till exempel lägga till information om kundernas köp i arbetsregistret för flerstegskampanjer och använda dessa data för att anpassa e-postmeddelanden med deras senaste köp eller hur mycket som spenderas på dessa inköp.
+Du kan till exempel lägga till information om kundernas inköp i den samordnade kampanjarbetstabellen och använda dessa data för att anpassa e-postmeddelanden med deras senaste köp eller hur mycket som spenderas på dessa inköp.
 
 ## Lägg till en anrikningsaktivitet {#enrichment-configuration}
 
@@ -42,19 +43,19 @@ Så här konfigurerar du aktiviteten **Enrichment**:
 
 1. Lägg till aktiviteter som **Skapa målgrupp** och **Kombinera** aktiviteter.
 1. Lägg till en **anrikningsaktivitet**.
-1. Om flera övergångar har konfigurerats i din flerstegskampanj kan du använda fältet **[!UICONTROL Primary set]** för att definiera vilken övergång som ska användas som primär uppsättning för att utöka med data.
+1. Om flera övergångar har konfigurerats i din samordnade kampanj kan du använda fältet **[!UICONTROL Primary set]** för att definiera vilken övergång som ska användas som primär uppsättning för att utöka med data.
 
 ## Lägg till anrikningsdata {#enrichment-add}
 
 >[!CONTEXTUALHELP]
 >id="ajo_targetdata_personalization_enrichmentdata"
 >title="Anrikningsdata"
->abstract="Välj de data som ska användas för att berika er flerstegskampanj. Du kan välja två typer av anrikningsdata: ett enskilt anrikningsattribut från måldimensionen, eller en samlingslänk, som är en länk med en 1-N-kardinalitet mellan tabellerna."
+>abstract="Välj de data som ska användas för att berika er samordnade kampanj. Du kan välja två typer av anrikningsdata: ett enskilt anrikningsattribut från måldimensionen, eller en samlingslänk, som är en länk med en 1-N-kardinalitet mellan tabellerna."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment_data"
 >title="Anrikningsaktivitet"
->abstract="När data för berikning har lagts till i flerstegskampanjen kan de användas i aktiviteter som lagts till efter Enrichment-aktiviteten för att segmentera kunder i olika grupper baserat på deras beteenden, önskemål och behov, eller för att skapa personaliserade marknadsföringsmeddelanden och kampanjer som troligtvis får genklang hos målgruppen."
+>abstract="När data om berikning har lagts till i den orkestrerade kampanjen kan de användas i aktiviteter som lagts till efter Enrichment-aktiviteten för att segmentera kunder i distinkta grupper baserat på deras beteenden, önskemål och behov, eller för att skapa personaliserade marknadsföringsmeddelanden och kampanjer som troligtvis får genklang hos målgruppen."
 
 1. Klicka på **Lägg till anrikningsdata** och markera attributet som ska användas för att utöka data.
 
@@ -120,7 +121,7 @@ Följ stegen för att konfigurera en **anrikningsaktivitet** med en avstämnings
 1. Identifiera de data som du vill skapa en avstämningslänk med.
 
    * Om du vill skapa en avstämningslänk med data från Campaign-databasen väljer du **Databasschema** och väljer det schema där målet lagras.
-   * Om du vill skapa en avstämningslänk med data från indataövergången väljer du **Tillfälligt schema** och väljer den flerstegskampanjövergång där måldata lagras.
+   * Om du vill skapa en avstämningslänk med data från indataövergången väljer du **Tillfälligt schema** och väljer den orkestrerade kampanjövergång där måldata lagras.
 
 1. Fälten **Etikett** och **Namn** fylls i automatiskt baserat på det valda målschemat. Du kan ändra deras värden om det behövs.
 
@@ -134,7 +135,7 @@ Följ stegen för att konfigurera en **anrikningsaktivitet** med en avstämnings
 
    * **Avancerad join**: Använd frågemodelleraren för att konfigurera avstämningsvillkoren. Det gör du genom att klicka på knappen **Skapa villkor** och sedan definiera dina avstämningsvillkor genom att skapa en egen regel med hjälp av AND- och OR-åtgärder.
 
-I exemplet nedan visas en kampanj i flera steg som konfigurerats för att skapa en länk mellan Journey Optimizer-profiltabellen och en tillfällig tabell som genererats en **Läs in fil** -aktivitet. I det här exemplet avstäms båda tabellerna av aktiviteten **Enrichment** med e-postadressen som avstämningskriterier.
+I exemplet nedan visas en strukturerad kampanj som konfigurerats för att skapa en länk mellan Journey Optimizer-profiltabellen och en tillfällig tabell som genererats en **Läs in fil** -aktivitet. I det här exemplet avstäms båda tabellerna av aktiviteten **Enrichment** med e-postadressen som avstämningskriterier.
 
 ![](../assets/enrichment-reconciliation.png)
 
@@ -169,7 +170,7 @@ Nu kan du använda erbjudandet i leveransaktiviteten.
 
 ### Använda erbjudanden från anrikningsaktiviteten
 
-Om du vill använda erbjudanden från en anrikningsaktivitet i leveransen i en flerstegskampanj följer du stegen nedan:
+Om du vill använda erbjudanden från en anrikningsaktivitet i leveransen i en orkestrerad kampanj följer du stegen nedan:
 
 1. Öppna leveransaktiviteten och gå till innehållsutgåvan. Klicka på knappen **[!UICONTROL Offers settings]** och välj den **[!UICONTROL Offers space]** som motsvarar ditt erbjudande i listrutan.
 Om du bara vill visa erbjudanden från anrikningsaktiviteten anger du antalet **[!UICONTROL Propositions]** till 0 och sparar ändringarna.
@@ -257,7 +258,7 @@ Vi måste nu använda sortering för att kunna hämta de tre **senaste** inköpe
 
 ### Berika med länkade data {#link-example}
 
-I exemplet nedan visas en kampanj i flera steg som konfigurerats för att skapa en länk mellan två övergångar. De första övergångarna avser profildata med hjälp av en **Query**-aktivitet, medan den andra övergången innehåller inköpsdata som lagras i en fil som läses in via en Läs in filaktivitet.
+I exemplet nedan visas en orkestrerad kampanj som konfigurerats för att skapa en länk mellan två övergångar. De första övergångarna avser profildata med hjälp av en **Query**-aktivitet, medan den andra övergången innehåller inköpsdata som lagras i en fil som läses in via en Läs in filaktivitet.
 
 ![](../assets/enrichment-uc-link.png)
 
@@ -265,7 +266,6 @@ I exemplet nedan visas en kampanj i flera steg som konfigurerats för att skapa 
 
   ![](../assets/enrichment-uc-link-purchases.png)
 
-* En andra **anrikningsaktivitet** läggs till för att berika data från flerstegskampanjtabellen med inköpsdata från aktiviteten **Läs in fil**. Detta gör att vi kan använda dessa data i ytterligare aktiviteter, till exempel för att anpassa meddelanden som skickas till kunderna med information om deras köp.
+* En andra **berikning**-aktivitet läggs till för att berika data från den orkestrerade kampanjtabellen med inköpsdata från aktiviteten **Läs in fil**. Detta gör att vi kan använda dessa data i ytterligare aktiviteter, till exempel för att anpassa meddelanden som skickas till kunderna med information om deras köp.
 
   ![](../assets/enrichment-uc-link-data.png)
-

@@ -2,10 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använda aktiviteten Spara målgrupp
-description: Lär dig hur du använder gaffelaktiviteten i en flerstegskampanj
+description: Lär dig hur du använder gaffelaktiviteten i en orkestrerad kampanj
 hide: true
 hidefromtoc: true
-source-git-commit: dfa6c6e11db10f3e843035d32e322b212361548c
+exl-id: 84e34d21-dca1-4203-8539-f2b20e461936
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 1%
@@ -17,16 +18,16 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_save_audience"
 >title="Spara en publik"
->abstract="Använd den här aktiviteten för att uppdatera en befintlig målgrupp eller skapa en ny målgrupp från populationen som beräknas uppströms i flerstegskampanjen. De målgrupper som skapas läggs till i listan över målgrupper och är tillgängliga via menyn **Publiker** ."
+>abstract="Använd den här aktiviteten för att uppdatera en befintlig målgrupp eller skapa en ny målgrupp från populationen som beräknas uppströms i den orkestrerade kampanjen. De målgrupper som skapas läggs till i listan över målgrupper och är tillgängliga via menyn **Publiker** ."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_saveaudience_outbound"
 >title="Generera utgående övergång"
 >abstract="Använd det här alternativet om du vill lägga till en övergång efter aktiviteten **Spara målgrupp**."
 
-Aktiviteten **Spara målgrupp** är en **målaktivitet**. Med den här aktiviteten kan ni uppdatera en befintlig målgrupp eller skapa en ny målgrupp utifrån populationen som beräknas uppströms i en flerstegskampanj. De målgrupper som skapas läggs till i listan över programmålgrupper och blir tillgängliga via menyn **Publiker** .
+Aktiviteten **Spara målgrupp** är en **målaktivitet**. Med den här aktiviteten kan ni uppdatera en befintlig målgrupp eller skapa en ny målgrupp utifrån populationen som beräknas uppströms i en orkestrerad kampanj. De målgrupper som skapas läggs till i listan över programmålgrupper och blir tillgängliga via menyn **Publiker** .
 
-Denna aktivitet används i huvudsak för att hålla populationsgrupper beräknade i samma flerstegskampanj genom att konvertera dem till återanvändbara målgrupper. Koppla det till andra målinriktningsaktiviteter som **Skapa målgrupp** eller en **Kombinera**-aktivitet.
+Denna aktivitet används i huvudsak för att hålla populationsgrupper beräknade i samma samordnade kampanj genom att konvertera dem till återanvändbara målgrupper. Koppla det till andra målinriktningsaktiviteter som **Skapa målgrupp** eller en **Kombinera**-aktivitet.
 
 ## Konfigurera aktiviteten Spara målgrupp{#save-audience-configuration}
 
@@ -34,7 +35,7 @@ Så här konfigurerar du aktiviteten **Spara målgrupp**:
 
 ![](../assets/workflow-save-audience.png)
 
-1. Lägg till en **Spara målgruppsaktivitet** i din flerstegskampanj.
+1. Lägg till en **Spara målgruppsaktivitet** i den orkestrerade kampanjen.
 
 1. I listrutan **Läge** väljer du den åtgärd som du vill utföra:
 
@@ -50,9 +51,9 @@ Så här konfigurerar du aktiviteten **Spara målgrupp**:
 
 1. Markera alternativet **Generera en utgående övergång** om du vill lägga till en övergång efter aktiviteten **Spara målgrupp**.
 
-Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för målgruppen, som du kommer åt på menyn **Publiker** . Kolumnerna som är tillgängliga från den här vyn motsvarar kolumnerna för den inkommande övergången för flerstegskampanjens **Spara målgruppsaktivitet**.
+Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för målgruppen, som du kommer åt på menyn **Publiker** . Kolumnerna som är tillgängliga från den här vyn motsvarar kolumnerna för den inkommande övergången för den orchestrerade kampanjens **Spara målgruppsaktivitet**.
 
 
 ## Exempel{#save-audience-example}
 
-I följande exempel visas en enkel målgruppsuppdatering från målinriktning. En schemaläggare läggs till för att köra flerstegskampanjen en gång i månaden. En fråga återställer alla profiler som prenumererar på de olika program som är tillgängliga. Aktiviteten **Spara målgrupp** uppdaterar målgruppen genom att ta bort profiler som har avbeställt tjänsten sedan den senaste körningen av en flerstegskampanj och genom att lägga till de nya prenumerationsprofilerna.
+I följande exempel visas en enkel målgruppsuppdatering från målinriktning. En schemaläggare läggs till för att köra den orkestrerade kampanjen en gång i månaden. En fråga återställer alla profiler som prenumererar på de olika program som är tillgängliga. Aktiviteten **Spara målgrupp** uppdaterar målgruppen genom att ta bort profiler som har avbeställt tjänsten sedan den senaste kampanjkörningen och genom att lägga till de nya prenumerationsprofilerna.
