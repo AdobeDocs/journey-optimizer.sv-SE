@@ -8,9 +8,9 @@ feature: Web Channel, Subdomains
 level: Experienced
 keywords: webb, underdomäner, konfiguration
 exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
-source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
+source-git-commit: ce8818e0216d4f633770fecadd4e74c2651a62f3
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,11 @@ Om du lägger till innehåll från biblioteket [Adobe Experience Manager Assets]
 
 Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe i [det här avsnittet](../configuration/delegate-subdomain.md).
 
->[!CAUTION]
->
->Konfigurationen av webbunderdomäner är gemensam för alla miljöer. Därför:
->
->* Om du vill komma åt och redigera webbunderdomäner måste du ha behörigheten **[!UICONTROL Manage Web Subdomains]** i produktionssandlådan.
->
-> * Eventuella ändringar av en webbunderdomän påverkar också produktionssandlådorna.
+Webbunderdomänskonfigurationen är **vanlig i alla miljöer**. Därför:
+
+* Om du vill komma åt och redigera webbunderdomäner måste du ha behörigheten **[!UICONTROL Manage Web Subdomains]** i produktionssandlådan.
+
+* Eventuella ändringar av en webbunderdomän påverkar också produktionssandlådorna.
 
 Du kan skapa flera webbunderdomäner, men endast underdomänen **default** används. Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
 
@@ -60,9 +58,7 @@ Du kan skapa flera webbunderdomäner, men endast underdomänen **default** anvä
 
    ![](assets/web-subdomain-default.png)
 
-   >[!NOTE]
-   >
-   >Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
+   Du kan ändra standardwebbunderdomänen, men bara en åt gången kan användas.
 
 ## Använd en befintlig underdomän {#web-use-existing-subdomain}
 
@@ -86,15 +82,11 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    ![](assets/web-subdomain-details-default.png)
 
-   >[!NOTE]
-   >
-   >Endast underdomänen **default** kommer att användas.
+   Endast underdomänen **default** kommer att användas.
 
 1. Klicka på **[!UICONTROL Submit]**. Underdomänen får statusen **[!UICONTROL Success]**. Det är klart att användas för era webbupplevelser.
 
-   >[!NOTE]
-   >
-   >I mycket sällsynta fall kan en underdomänskonfiguration misslyckas. I det här fallet kan du ta bort underdomänen **[!UICONTROL Failed]** och rensa listan med knappen **[!UICONTROL Delete]** från ikonen **[!UICONTROL More actions]** .
+   I mycket sällsynta fall kan en underdomänskonfiguration misslyckas. I det här fallet kan du ta bort underdomänen **[!UICONTROL Failed]** och rensa listan med knappen **[!UICONTROL Delete]** från ikonen **[!UICONTROL More actions]** .
 
 ## Konfigurera en ny underdomän {#web-configure-new-subdomain}
 
@@ -103,11 +95,10 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 >title="Generera matchande DNS-post"
 >abstract="Om du vill konfigurera en ny webbunderdomän måste du kopiera den Adobe-namnserverinformation som visas i Journey Optimizer-gränssnittet och klistra in den i din domänvärdslösning för att generera den matchande DNS-posten. När kontrollen är klar kan underdomänen användas för att publicera innehåll som kommer från Adobe Experience Manager Assets-biblioteket."
 
-Följ stegen nedan för att konfigurera en ny underdomän.
 
->[!NOTE]
->
->Som standard kan du i [!DNL Journey Optimizer] delegera upp till 10 underdomäner totalt (som omfattar både e-post- och webbkanaler). Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
+Som standard kan du i [!DNL Journey Optimizer] delegera **upp till 10 underdomäner** totalt (som omfattar både e-post- och webbkanaler). Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
+
+Så här konfigurerar du en ny underdomän:
 
 1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och välj sedan **[!UICONTROL Web settings]** > **[!UICONTROL Web subdomains]**.
 
@@ -119,17 +110,15 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    >[!CAUTION]
    >
-   >Du kan inte använda en befintlig webbunderdomän.
+   >* Du kan inte använda en befintlig webbunderdomän.
    >
-   >Versaler tillåts inte i underdomäner.
+   >* Versaler tillåts inte i underdomäner.
 
    ![](assets/web-add-your-own-domain.png)
 
    Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
 
-   >[!NOTE]
-   >
-   >Underdomäner på flera nivåer (av samma överordnade domän) stöds. Du kan till exempel använda &#39;web.marketing.your.com&#39;.
+   Underdomäner på flera nivåer (av samma överordnade domän) stöds. Du kan till exempel använda &#39;web.marketing.your.com&#39;.
 
 1. Om du vill ange den här underdomänen som standard väljer du motsvarande alternativ.
 
@@ -143,15 +132,11 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    ![](assets/web-add-your-own-domain-confirm.png)
 
-   >[!NOTE]
-   >
-   >När du konfigurerar en ny webbunderdomän pekar den alltid på en CNAME-post.
+   När du konfigurerar en ny webbunderdomän pekar den alltid på en CNAME-post.
 
 1. När underdomänsdelegeringen har skickats visas underdomänen med statusen **[!UICONTROL Processing]** i listan. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
-   >[!NOTE]
-   >
-   >Innan du kan använda den underdomänen för att skicka webbmeddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta upp till 4 timmar.
+   Innan du kan använda den underdomänen för att skicka webbmeddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta **upp till 4 timmar**.
 
 1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Det är klart att användas för att skapa webbkanalskonfigurationer.
 
@@ -194,4 +179,5 @@ När du har hanterat din begäran av Adobe visas inte längre den odelegerade do
 >När en underdomän inte har delegerats:
 >
 >   * Du kan inte återaktivera kanalkonfigurationerna som använder den underdomänen.
+>
 >   * Du kan inte delegera den exakta underdomänen igen via användargränssnittet. Kontakta Adobe om du vill göra det.

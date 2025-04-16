@@ -8,9 +8,9 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
+source-git-commit: ce8818e0216d4f633770fecadd4e74c2651a62f3
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -38,12 +38,10 @@ Om du vill kunna förkorta URL:er som läggs till i dina SMS/MMS-meddelanden må
 
 Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en annan underdomän. Läs mer om hur du delegerar underdomäner till Adobe i [det här avsnittet](../configuration/delegate-subdomain.md).
 
->[!CAUTION]
->
->* SMS-underdomänskonfigurationen delas mellan alla miljöer. Därför påverkar alla ändringar av en SMS-underdomän även andra produktionssandlådor.
->
->* Om du vill komma åt och redigera SMS-underdomäner måste du ha behörigheten **[!UICONTROL Manage SMS Subdomains]** i produktionssandlådan. Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
->
+SMS-underdomänskonfigurationen **delas mellan alla miljöer**. Därför påverkar alla ändringar av en SMS-underdomän även andra produktionssandlådor.
+
+Om du vill komma åt och redigera SMS-underdomäner måste du ha behörigheten **[!UICONTROL Manage SMS Subdomains]** i produktionssandlådan. Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md).
+
 
 ## Använd en befintlig underdomän {#sms-use-existing-subdomain}
 
@@ -61,15 +59,11 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
 1. Ange det prefix som ska visas i SMS-URL:en.
 
-   >[!NOTE]
-   >
-   >Endast alfanumeriska tecken och bindestreck tillåts.
+   Endast alfanumeriska tecken och bindestreck tillåts.
 
 1. Välj en delegerad underdomän i listan.
 
-   >[!NOTE]
-   >
-   >Du kan inte välja en underdomän som redan används som SMS-underdomän.
+   Du kan inte välja en underdomän som redan används som SMS-underdomän.
 
    <!--Capital letters are not allowed in subdomains. TBC by PM-->
 
@@ -120,9 +114,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
 
-   >[!NOTE]
-   >
-   >Underdomäner på flera nivåer (av samma överordnade domän) stöds. Du kan till exempel använda sms.marketing.your.com.
+   Underdomäner på flera nivåer (av samma överordnade domän) stöds. Du kan till exempel använda sms.marketing.your.com.
 
 1. Posten som ska placeras i dina DNS-servrar visas. Kopiera den här posten eller hämta en CSV-fil och navigera sedan till din värdlösning för domänen för att generera den matchande DNS-posten.
 
@@ -130,9 +122,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    ![](assets/sms_add-your-own-subdomain-confirm.png)
 
-   >[!NOTE]
-   >
-   >När du konfigurerar en ny SMS-underdomän pekar den alltid på en CNAME-post.
+   När du konfigurerar en ny SMS-underdomän pekar den alltid på en CNAME-post.
 
 1. När underdomänsdelegeringen har skickats visas underdomänen med statusen **[!UICONTROL Processing]** i listan. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
 
