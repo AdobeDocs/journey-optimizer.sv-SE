@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, integrering, standard, kampanj, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
-source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
+source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 1%
@@ -33,7 +33,7 @@ För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transacti
 
 >[!NOTE]
 >
->Campaign Standardens transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Optimizer. Om händelsen publiceras men meddelandet inte visas, visas den inte i Journey Optimizer-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det, visas det i Journey Optimizer-gränssnittet, men det går inte att använda det.
+>Campaign Standard transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Optimizer. Om händelsen publiceras men meddelandet inte visas, visas den inte i Journey Optimizer-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det, visas det i Journey Optimizer-gränssnittet, men det går inte att använda det.
 
 ![](assets/journey59.png)
 
@@ -53,7 +53,7 @@ Parametrarna är identiska för **[!UICONTROL Email]** och **[!UICONTROL SMS]**.
 
 >[!NOTE]
 >
->När du använder en profils transaktionsmall för e-post hanteras avprenumerationsfunktionen automatiskt av Adobe Campaign Standard. För att implementera detta kan du enkelt inkludera ett **[!UICONTROL Unsubscription link]**-innehållsblock i [e-postmallen för transaktioner](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv). Om du däremot använder en händelsebaserad mall (rtEvent) måste du infoga en länk i meddelandet som skickar mottagarens e-post som en URL-parameter och dirigerar dem till en startsida som inte är en prenumeration. Det är nödvändigt att skapa denna landningssida och se till att mottagarens beslut att säga upp prenumerationen verkligen vidarebefordras till Adobe.
+>När du använder en profils transaktionsmall för e-post hanteras avprenumerationsfunktionen automatiskt av Adobe Campaign Standard. För att implementera detta kan du enkelt inkludera ett **[!UICONTROL Unsubscription link]**-innehållsblock i [e-postmallen för transaktioner](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv). Om du däremot använder en händelsebaserad mall (rtEvent) måste du infoga en länk i meddelandet som skickar mottagarens e-post som en URL-parameter och dirigerar dem till en startsida som inte är en prenumeration. Det är nödvändigt att skapa denna landningssida och se till att mottagarens beslut om att avbryta prenumerationen verkligen skickas till Adobe.
 
 Först måste du välja en transaktionsmall.
 

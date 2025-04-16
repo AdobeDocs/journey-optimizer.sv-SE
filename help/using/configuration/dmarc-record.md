@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
 exl-id: f9e217f8-5aa8-4d3a-96fc-65defcb5d340
-source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
+source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
 workflow-type: tm+mt
 source-wordcount: '1452'
 ht-degree: 0%
@@ -173,7 +173,7 @@ Om du vill låta Adobe hantera DMARC-posten åt dig väljer du alternativet **[!
    Det finns två olika rapporter som genereras av Internet-leverantörer och som avsändare kan få via RUA/RUF-taggarna i sin DMARC-policy:
 
    * **Aggregerade rapporter** (RUA): De innehåller inga PII-filer (personligt identifierbar information) som kan vara GDPR-känsliga.
-   * **Rapporter om tekniska fel** (RUF): De innehåller GDPR-känsliga e-postadresser. Kontrollera internt hur man hanterar information som måste uppfylla GDPR innan informationen används.
+   * **Rapporter om tekniska fel** (RUF): De innehåller GDPR-känsliga e-postadresser. Innan du använder programmet bör du kontrollera internt hur man hanterar information som måste vara GDPR-kompatibel.
 
    >[!NOTE]
    >

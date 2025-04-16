@@ -5,7 +5,7 @@ feature: Decisioning
 role: User
 level: Intermediate
 exl-id: 73548973-ff8d-4d6c-b383-dd3679fa159a
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 6%
@@ -22,7 +22,7 @@ Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsn
 
 | Guardrail | Gräns |
 | ------- | ------- |
-| Kodbaserad API-begäran för upplevelser med beslutspolicy som använder Edge-segmentering | 1500 |
+| Kodbaserad API-begäran för upplevelser med beslutspolicy med Edge segmentering | 1500 |
 | Kodbaserad API-begäran för upplevelser med beslutspolicy som inte använder Edge-segmentering | 5000 |
 
 ## Artikelsamlingar

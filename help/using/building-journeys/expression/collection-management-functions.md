@@ -8,7 +8,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: fråga, samlingar, funktioner, nyttolast, resa
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
-source-git-commit: 773f5430242901a08c1609f3229f21d5d4e100ea
+source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%

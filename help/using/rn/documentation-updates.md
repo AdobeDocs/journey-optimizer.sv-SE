@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 847fb5dda4e8747ea61a2ffafb9adcddda1ddada
+source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1156'
 ht-degree: 10%
 
 ---
@@ -22,6 +22,9 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## April 2025 {#apr-2025}
 
+* Kapitlet Konfiguration har nu delats upp i tre kapitel: [Kanalkonfiguration](../configuration/get-started-configuration.md), [Resurskonfiguration](../configuration/about-data-sources-events-actions.md) och [Anslut dina system](../configuration/ajo-apis.md).
+* En varning om att använda upplevelsehändelser i reseuttryck och villkor har lagts till. [Läs mer](../building-journeys/expression/expressionadvanced.md#discovering-the-interface)
+* Steg för att avdelegera en underdomän finns nu detaljerade för [e-post](../configuration/delegate-subdomain.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-a-subdomain-undelegate-subdomain), [webbupplevelser](../web/web-delegated-subdomains.md#undelegate-a-subdomain-undelegate-subdomain) och [landningssidor](../landing-pages/lp-subdomains.md#undelegate-subdomain).
 * En anteckning om tillfällig lagring av utdatafilen har lagts till på konfigurationssidan för direktreklam. [Läs mer](../direct-mail/direct-mail-configuration.md)
 * Ett tips har lagts till i avsnittet avancerad uttrycksredigerare om riktlinjerna för villkorsformat. [Läs mer](../building-journeys/expression/expressionadvanced.md)
 * En varningsanteckning har lagts till i funktionsavsnittet `inAudience` om påverkan och bästa praxis när en målgrupp ska namnges. [Läs mer](../building-journeys/functions/functioninaudience.md)
