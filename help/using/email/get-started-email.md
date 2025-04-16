@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: e-post, börja, skapa, förhandsgranska
 exl-id: 621c4256-449d-4376-96cd-02cbdcd4de05
-source-git-commit: 0ccc6453594aaf501f15e5342331b1649346bfa3
+source-git-commit: f670eddab41c2317d2dbe76ad7aea5a77bb87f2a
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 11%
+source-wordcount: '186'
+ht-degree: 10%
 
 ---
 
@@ -68,6 +68,43 @@ E-postleveranser kan skapas:
 </a>
 <div>
 <a href="email-settings.md"><strong>Konfigurera e-postkanal</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="../content-management/generative-email.md">
+<img alt="AI-assistenten" src="../assets/do-not-localize/email-generate.jpg">
+</a>
+<div><a href="../content-management/generative-email.md"><strong>AI-assistenten för innehållsgenerering</strong>
+</div>
+<p>
+</td>
+<td>
+<a href="../content-management/fragments.md">
+<img alt="Innehållsfragment" src="../assets/do-not-localize/patterns.jpg">
+</a>
+<div>
+<a href="../content-management/fragments.md"><strong>Använd fragment för e-postinnehåll</strong></a>
+</div>
+<p></td>
+<td>
+<a href="../personalization/personalize.md">
+<img alt="Anpassa innehållet" src="../assets/do-not-localize/personalize.jpg">
+</a>
+<div>
+<a href="../personalization/personalize.md"><strong>Anpassa ditt e-postinnehåll</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="../integrations/assets.md">
+<img alt="Kombinera era lösningar" src="../assets/do-not-localize/colors.jpeg">
+</a>
+<div>
+<a href="../integrations/assets.md"><strong>Kombinera appar och lösningar från Adobe</strong></a>
 </div>
 <p>
 </td>
