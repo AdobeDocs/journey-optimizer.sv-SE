@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 50491d039f2baf8c30a6af0c1b59fe9041244ac7
+source-git-commit: 31e88f02ed2569357a31552db717225d7f37a1eb
 workflow-type: tm+mt
-source-wordcount: '2317'
-ht-degree: 22%
+source-wordcount: '2329'
+ht-degree: 21%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 22%
       + [2021](using/rn/release-notes-2021.md)
    + [Dokumentationsuppdateringar](using/rn/documentation-updates.md)
    + [Förbättrad arbetsyta](using/rn/new-canvas.md)
-+ Komma igång{#get-started}
++ Kom igång{#get-started}
    + [Vad är Journey Optimizer?](using/start/get-started.md)
    + Snabbstartguider{#quick-start}
       + [Översikt](using/start/quick-start.md)
@@ -43,7 +43,7 @@ ht-degree: 22%
    + [Bästa praxis](using/start/best-practices.md)
 + Resor {#orchestrate-journeys}
    + [Kom igång med resor](using/building-journeys/journey.md)
-   + Skapa en resa {#create-journey}
+   + Skapa en resa{#create-journey}
       + [Skapa den första resan](using/building-journeys/journey-gs.md)
       + [Ange egenskaper för din resa](using/building-journeys/journey-properties.md)
       + [Konfigurera och spåra dina resemått](using/building-journeys/success-metrics.md)
@@ -75,7 +75,7 @@ ht-degree: 22%
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-v7-v8.md)
       + [Hoppa](using/building-journeys/jump.md)
       + [Uppdatera profil](using/building-journeys/update-profiles.md)
-   + Bygga uttryck {#building-advanced-conditions-journeys}
+   + Skapa uttryck {#building-advanced-conditions-journeys}
       + [Arbeta med den avancerade uttrycksredigeraren](using/building-journeys/expression/expressionadvanced.md)
       + Syntax {#syntax}
          + [Syntax för avancerad uttrycksredigerare](using/building-journeys/expression/generalities.md)
@@ -90,7 +90,7 @@ ht-degree: 22%
          + [Huvudfunktioner](using/building-journeys/expression/functions.md)
          + Adobe Experience Platform {#adobe-experience-platform}
             + [inAudience](using/building-journeys/functions/functioninaudience.md)
-         + Aggregera {#aggregation}
+         + Aggregering {#aggregation}
             + [avg](using/building-journeys/functions/functionavg.md)
             + [count](using/building-journeys/functions/functioncount.md)
             + [countOnlyNull](using/building-journeys/functions/functioncountonlynull.md)
@@ -163,7 +163,7 @@ ht-degree: 22%
             + [övre](using/building-journeys/functions/functionupper.md)
             + [uuid](using/building-journeys/functions/functionuuid.md)
    + Användningsfall {#journey-use-cases}
-      + Affärsanvändningsfall {#business-use-cases}
+      + Användningsexempel {#business-use-cases}
          + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
          + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/ajo-ac.md)
          + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
@@ -172,20 +172,20 @@ ht-degree: 22%
          + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
          + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
          + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Flerstegskampanjer {#ms-campaigns}
-   + [Kom igång med flerstegskampanjer](using/ms/gs-ms-campaigns.md)
++ Samordnade kampanjer {#ms-campaigns}
+   + [Kom igång med samordnade kampanjer](using/ms/gs-ms-campaigns.md)
    + [Viktiga principer](using/ms/gs-campaign-creation.md)
    + Konfiguration {#ms-config}
       + [Scheman](using/ms/ms-schemas.md)
       + [Arbeta med händelsevariabler](using/ms/event-variables.md)
-   + Skapa din första flerstegskampanj {#create-ms-campaign}
+   + Skapa din första samordnade kampanj {#create-ms-campaign}
       + [Skapa en orkestrerad kampanj](using/ms/create-ms-campaign.md)
       + [Organisera aktiviteter](using/ms/orchestrate-activities.md)
       + [Konfigurera kampanjinställningar](using/ms/ms-campaign-settings.md)
       + [Starta och övervaka era kampanjer](using/ms/start-monitor-campaigns.md)
       + [Hantera personalisering](using/ms/ms-personalization.md)
-   + Flerstegskampanjer {#design-campaigns}
-      + [Om kampanjaktiviteter i flera steg](using/ms/activities/about-activities.md)
+   + Samordnade kampanjaktiviteter {#design-campaigns}
+      + [Om samordnade kampanjaktiviteter](using/ms/activities/about-activities.md)
       + [Och-join](using/ms/activities/and-join.md)
       + [Bygg målgrupper](using/ms/activities/build-audience.md)
       + [Ändra dimension](using/ms/activities/change-dimension.md)
@@ -208,7 +208,7 @@ ht-degree: 22%
    + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
    + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
    + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
-+ Konflikthantering och prioritering {#conflict-prioritization}
++ Konflikthantering och -prioritering {#conflict-prioritization}
    + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
    + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
    + [Tilldela prioritetspoäng](using/conflict-prioritization/priority-scores.md)
@@ -232,14 +232,14 @@ ht-degree: 22%
    + E-postkanal {#email}
       + [Kom igång med e-post](using/email/get-started-email.md)
       + [Skapa ett e-postmeddelande](using/email/create-email.md)
-      + Designa ditt e-postinnehåll {#design-email}
+      + Designa e-postinnehåll {#design-email}
          + [Kom igång med e-postdesign](using/email/get-started-email-design.md)
          + Börja skapa innehåll {#start-creating-content}
             + [Designa innehåll från grunden](using/email/content-from-scratch.md)
             + [Importera innehåll](using/email/existing-content.md)
             + [Koda eget innehåll](using/email/code-content.md)
             + [Använd e-postmallar](using/email/use-email-templates.md)
-         + Designa ditt innehåll {#add-content}
+         + Designa innehåll {#add-content}
             + [Använda innehållskomponenter](using/email/content-components.md)
             + [Utnyttja visuella fragment](using/email/use-visual-fragments.md)
             + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
@@ -259,19 +259,19 @@ ht-degree: 22%
          + [Huvudparametrar](using/email/header-parameters.md)
          + [URL-uppföljning](using/email/url-tracking.md)
          + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
-   + Kanal i appen {#in-app}
+   + Kanal i appen{#in-app}
       + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
-      + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
-      + [Skapa ett mobilt meddelande i appen](using/in-app/create-in-app.md)
-      + [Skapa ett meddelande i appen för webben](using/in-app/create-in-app-web.md)
+      + [Krav för kanal i appen](using/in-app/inapp-configuration.md)
+      + [Skapa ett mobilmeddelande i appen](using/in-app/create-in-app.md)
+      + [Skapa ett webbmeddelande i appen](using/in-app/create-in-app-web.md)
       + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
       + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
-   + Push-meddelandekanal {#push}
+   + Push-meddelandekanal{#push}
       + [Kom igång med push-meddelanden](using/push/get-started-push.md)
       + [Skapa ett push-meddelande](using/push/create-push.md)
       + [Utforma ett push-meddelande](using/push/design-push.md)
       + [Kontrollera och skicka push-meddelanden](using/push/send-push.md)
-      + Konfigurera push-meddelanden {#push-config}
+      + Konfigurera push-meddelanden{#push-config}
          + [Push-meddelandeflöde](using/push/push-gs.md)
          + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
          + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
@@ -288,7 +288,7 @@ ht-degree: 22%
          + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
          + [Konfigurera en anpassad leverantör (Beta)](using/sms/sms-configuration-custom.md)
          + [Skapa en SMS-konfiguration](using/sms/sms-configuration-surface.md)
-   + Direktutskick {#direct-mail}
+   + Direktmeddelande {#direct-mail}
       + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
       + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
       + [Kontrollera och skicka ett direktutskick](using/direct-mail/test-send-direct-mail.md)
@@ -319,14 +319,14 @@ ht-degree: 22%
          + [Hantera kodbaserade upplevelser](using/code-based/publish-code-based.md)
    + Innehållskort{#content-card}
       + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
-      + Konfigurera innehållskortskanalen {#configure}
+      + Konfigurera innehållskortskanal {#configure}
          + [Krav för innehållskort](using/content-card/content-card-configuration-prereq.md)
-         + [Konfigurera innehållskortskanal i Journey Optimizer](using/content-card/content-card-configuration.md)
+         + [Konfigurera kanal för innehållskort i Journey Optimizer](using/content-card/content-card-configuration.md)
          + [Konfigurera stöd för innehållskort i Mobile SDK](using/content-card/content-card-lp.md)
          + [Konfigurera stöd för innehållskort i Web SDK](using/content-card/content-card-configuration-sdk.md)
       + [Skapa innehållskort](using/content-card/create-content-card.md)
       + [Utforma innehållskort](using/content-card/design-content-card.md)
-   + WhatsApp{#whatsapp}
+   + WhatApp{#whatsapp}
       + [Kom igång med whatsApp-meddelanden](using/whatsapp/get-started-whatsapp.md)
       + [Konfigurera WhatsApp-kanalen i Journey Optimizer](using/whatsapp/whatsapp-configuration.md)
       + [Skapa ett WhatsApp-meddelande](using/whatsapp/create-whatsapp.md)
@@ -345,7 +345,7 @@ ht-degree: 22%
       + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
       + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
 + Innehållshantering {#content-management}
-   + AI-assistenten för innehållsgenerering {#ai-assistant}
+   + AI Assistant för innehållsgenerering{#ai-assistant}
       + [Kom igång med AI-assistenten](using/content-management/gs-generative.md)
       + [E-postgenerering med AI](using/content-management/generative-email.md)
       + [Push-generering med AI](using/content-management/generative-push.md)
@@ -361,7 +361,7 @@ ht-degree: 22%
       + [Skapa en språkleverantör](using/content-management/multilingual-provider.md)
       + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
       + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
-   + Arbeta med innehållsexperiment {#content-experiment}
+   + Experimentera med material {#content-experiment}
       + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
       + [Skapa ett innehållsexperiment](using/content-management/content-experiment.md)
       + Tekniska anmärkningar {#technotes}
@@ -383,9 +383,9 @@ ht-degree: 22%
          + [Hjälpmedel](using/personalization/functions/helpers.md)
          + [Kartfunktioner](using/personalization/functions/maps.md)
          + [Matematiska funktioner](using/personalization/functions/math.md)
-         + [Objektfunktioner](using/personalization/functions/objects.md)
+         + [Objektets funktioner](using/personalization/functions/objects.md)
          + [Strängfunktioner](using/personalization/functions/string.md)
-      + Personalization-användningsfall{#personalization-use-cases}
+      + Användningsexempel för Personalization{#personalization-use-cases}
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
          + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
          + [E-post om förskrivningar av hälsoplaner](using/personalization/perso-uc-plan-prescriptions.md)
@@ -415,14 +415,14 @@ ht-degree: 22%
          + [Anpassad överföring](using/audience/custom-upload.md)
          + [Federerad målgruppssammansättning](using/audience/federated-audience-composition.md)
       + [Målgruppsaktivering i kampanjer och resor](using/audience/target-audiences.md)
-      + [Utnyttja anrikningsattribut](using/audience/enrichment-attributes.md)
+      + [Attribut för berikning av hävstångseffekt](using/audience/enrichment-attributes.md)
    + Profiler{#profiles}
       + [Kom igång med profiler](using/audience/get-started-profiles.md)
       + [Skapa testprofiler](using/audience/creating-test-profiles.md)
       + [Arbeta med beräknade attribut](using/audience/computed-attributes.md)
    + [Identiteter](using/audience/get-started-identity.md)
    + [Licensanvändning](using/audience/license-usage.md)
-+ Integrationer{#integrations}
++ Integreringar{#integrations}
    + [Integrering med andra lösningar](using/integrations/ajo-integrations.md)
    + [Arbeta med Experience Manager Assets](using/integrations/assets.md)
    + [Arbeta med Adobe Stock](using/integrations/stock.md)
@@ -441,11 +441,11 @@ ht-degree: 22%
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
    + Heltidsrapport{#channel-report}
       + [Kom igång med hela tidsrapporten](using/reports/report-gs-cja.md)
-      + [Förteckning över mätvärden](using/reports/global-report-components-cja.md)
+      + [Lista över mätvärden](using/reports/global-report-components-cja.md)
       + [Konfigurera Customer Journey Analytics manuellt](using/reports/cja-ajo.md)
       + [Hantera dina rapporter](using/reports/report-cja-manage.md)
       + [Krav för rapportering och experimenterande](using/reports/reporting-configuration.md)
-      + Kampanjrapporter {#reporting}
+      + Kampanjrapporter{#reporting}
          + [Kampanjrapport](using/reports/campaign-global-report-cja.md)
          + [Kodbaserad kampanjrapport](using/reports/campaign-global-report-cja-code.md)
          + [Kampanjrapport för innehållskort](using/reports/campaign-global-report-cja-content.md)
@@ -469,31 +469,31 @@ ht-degree: 22%
       + [Översiktsrapport](using/reports/channel-report-cja.md)
       + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
       + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
-   + Reserapporter {#reports}
+   + Rapporter om resor {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
-      + Äldre steghändelsefält {#legacy-step-event-fields}
+      + Händelsefält för äldre steg {#legacy-step-event-fields}
          + [Om äldre fält](using/reports/sharing-legacy-fields.md)
-         + [Resefält](using/reports/sharing-journey-fields.md)
-         + [Vanliga fält](using/reports/sharing-common-fields.md)
-         + [Körningsfält för åtgärd](using/reports/sharing-execution-fields.md)
+         + [Fält för färd](using/reports/sharing-journey-fields.md)
+         + [Gemensamma fält](using/reports/sharing-common-fields.md)
+         + [Fält för åtgärdsutförande](using/reports/sharing-execution-fields.md)
          + [Fält för datahämtning](using/reports/sharing-fetch-fields.md)
-         + [Identitetsfält](using/reports/sharing-identity-fields.md)
+         + [Fält för identitet](using/reports/sharing-identity-fields.md)
       + [Exempel på frågor](using/reports/query-examples.md)
-   + Leverans {#deliverability}
+   + Levererbarhetsstrategi {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
       + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
       + [Nytt krav från DMARC](using/configuration/dmarc-record-update.md)
    + [Aviseringar](using/reports/alerts.md)
    + [Uteslutningsorsaker](using/reports/exclusion-list.md)
-+ Beslutsfunktioner {#decisioning}
++ Beslutsförmåga {#decisioning}
    + [Kom igång med beslutsfunktioner](using/experience-decisioning/gs-decision.md)
-   + Avgör {#experience-decisioning}
+   + Beslut {#experience-decisioning}
       + [Kom igång med beslutsfattande](using/experience-decisioning/gs-experience-decisioning.md)
       + [Avgörande av skyddsräcken och begränsningar](using/experience-decisioning/decisioning-guardrails.md)
-      + API-referens {#api-reference}
-         + Skapa och hantera erbjudandeobjekt {#create-manage}
-            + Beslutsobjekt {#decision-items}
+      + API-referens{#api-reference}
+         + Skapa och hantera erbjudandeartiklar {#create-manage}
+            + Beslutsobjekt{#decision-items}
                + [Skapa beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/create.md)
                + [Lista över beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
                + [Radera beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/delete.md)
@@ -502,22 +502,22 @@ ht-degree: 22%
             + Objektsamlingar{#items-collections}
                + [Skapa objektsamlingar](using/experience-decisioning/api-reference/items-collections/create.md)
                + [Ta bort objektsamlingar](using/experience-decisioning/api-reference/items-collections/delete.md)
-               + [Lista över objektsamlingar](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
-               + [Söka efter objektsamlingar](using/experience-decisioning/api-reference/items-collections/lookup.md)
+               + [Lista över samlingar av objekt](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+               + [Samlingar av uppslagsobjekt](using/experience-decisioning/api-reference/items-collections/lookup.md)
                + [Uppdatera artikelsamlingar](using/experience-decisioning/api-reference/items-collections/update.md)
-            + Markeringsstrategier{#selection-strategies}
+            + Urvalsstrategier{#selection-strategies}
                + [Skapa urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/create.md)
                + [Ta bort urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/delete.md)
                + [Sökstrategier för markering](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
                + [Urvalsstrategilista](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
                + [Uppdatera urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/update.md)
-            + Rankningsformler {#ranking-formulas}
+            + Rankningsformler{#ranking-formulas}
                + [Skapa rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/create.md)
                + [Ta bort rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/delete.md)
                + [Sök efter rangordningsformler](using/experience-decisioning/api-reference/ranking-formulas/lookup.md)
                + [Urvalsrankningsformler](using/experience-decisioning/api-reference/ranking-formulas/ranking-formulas-list.md)
                + [Uppdatera rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/update.md)
-            + Kvalifikationsregler{#eligibility-rules}
+            + Villkor för deltagande{#eligibility-rules}
                + [Skapa berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/create.md)
                + [Ta bort berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/delete.md)
                + [Uppslagsberättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
@@ -528,7 +528,7 @@ ht-degree: 22%
          + [Konfigurera artikelkatalogen](using/experience-decisioning/catalogs.md)
          + [Skapa beslutsobjekt](using/experience-decisioning/items.md)
          + [Hantera artikelsamlingar](using/experience-decisioning/collections.md)
-      + Konfigurera objektmarkering {#selection}
+      + Konfigurera artikelval {#selection}
          + [Skapa beslutsregler](using/experience-decisioning/rules.md)
          + [Skapa rangordningsmetoder](using/experience-decisioning/ranking.md)
          + [Utnyttja kontextdata](using/experience-decisioning/context-data.md)
@@ -573,14 +573,14 @@ ht-degree: 22%
          + [Komma igång med datainsamling](using/offers/data-collection/data-collection.md)
          + [Skapa en datauppsättning för att samla in händelser](using/offers/data-collection/create-dataset.md)
          + [Konfigurera händelsehämtning](using/offers/data-collection/schema-requirement.md)
-      + Använd kontextdata {#context-data}
+      + Utnyttja kontextdata {#context-data}
          + [Kom igång med kontextdata](using/offers/context-data.md)
          + [Kontextdata och Edge Decisioneringsbegäranden](using/offers/context-data-edge.md)
          + [Kontextdata och beslutsbegäran](using/offers/context-data-decisioning.md)
-      + Skapa beslutshanteringsrapporter {#create-reports}
+      + Skapa rapporter om beslutshantering {#create-reports}
          + [Arbeta med beslutsledningshändelser](using/offers/reports/get-started-events.md)
          + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)
-      + Exportera din erbjudandekatalog {#export-catalog}
+      + Exportera erbjudandekatalogen {#export-catalog}
          + [Kom igång med export av din erbjudandekatalog](using/offers/export-catalog/get-started-export.md)
          + [Åtkomst till den exporterade erbjudandekatalogen](using/offers/export-catalog/access-dataset.md)
          + [Datauppsättning med personaliserade erbjudanden](using/offers/export-catalog/export-offers.md)
@@ -684,15 +684,15 @@ ht-degree: 22%
 + Datahantering {#data-management}
    + [Kom igång med datahantering](using/data/gs-data.md)
    + [Arbeta med scheman](using/data/get-started-schemas.md)
-   + Journey Optimizer-datauppsättningar {#datasets}
+   + Journey Optimizer dataset {#datasets}
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
       + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
-+ Konfiguration {#configuration}
-   + [Kom igång med Journey Optimizer-konfiguration](using/configuration/get-started-configuration.md)
++ Kanalkonfiguration {#configuration}
+   + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
    + [Konfigurera kanalkonfigurationer](using/configuration/channel-surfaces.md)
    + Inställningar för guidad kanal {#guided-setup}
       + [Kom igång med konfiguration av guidade kanaler](using/configuration/set-mobile-config.md)
@@ -704,7 +704,7 @@ ht-degree: 22%
       + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
       + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
       + [Skapa IP-pooler](using/configuration/ip-pools.md)
-   + Implementera en IP-värmare {#implement-ip-warmup-plan}
+   + Implementera en IP-värmerappsplan {#implement-ip-warmup-plan}
       + [Kom igång med planer för IP-värmare](using/configuration/ip-warmup-gs.md)
       + [Skapa IP-värmningskampanjer](using/configuration/ip-warmup-campaign.md)
       + [Skapa en IP-värdplan](using/configuration/ip-warmup-plan.md)
@@ -719,34 +719,36 @@ ht-degree: 22%
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera affärsregler](using/configuration/frequency-rules.md)
    + [Arbeta med regeluppsättningar](using/configuration/rule-sets.md)
-   + Konfigurera resor {#configure-journeys}
-      + [Konfigurera datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
-      + Integrera med externa system {#external-systems}
-         + [Integrering av resor med externa system](using/configuration/external-systems.md)
-         + [API för reglering](using/configuration/capping.md)
-         + [API för begränsning](using/configuration/throttling.md)
-      + Händelsekonfiguration {#events-journeys}
-         + [Arbeta med resehändelser](using/event/about-events.md)
-         + Konfigurera en enhetshändelse {#unitary-events}
-            + [Kom igång med Unitary Events](using/event/about-creating.md)
-            + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
-            + [Arbeta med Adobe Analytics](using/event/about-analytics.md)
-         + [Konfigurera en affärshändelse](using/event/about-creating-business.md)
-         + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey.md)
-      + Datakällans konfiguration{#data-source-journeys}
-         + [Kom igång med datakällor](using/datasource/about-data-sources.md)
-         + [Konfigurera en datakälla](using/datasource/configure-data-sources.md)
-         + [Datakällan i Adobe Experience Platform](using/datasource/adobe-experience-platform-data-source.md)
-         + [Externa datakällor](using/datasource/external-data-sources.md)
-      + Åtgärdskonfiguration {#action-journeys}
-         + [Kom igång med anpassade åtgärder](using/action/action.md)
-         + [Konfigurera en anpassad åtgärd](using/action/about-custom-action-configuration.md)
-         + [Felsöka en anpassad åtgärd](using/action/troubleshoot-custom-action.md)
-         + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
-         + [Integrera med Adobe Campaign Standard](using/action/acs-action.md)
-         + [Integrera med Adobe Campaign v7/v8](using/action/acc-action.md)
-         + [Integrera med Marketo Engage](using/action/marketo-engage.md)
-   + [Källor](using/start/get-started-sources.md)
++ Resekonfiguration {#configure-journeys}
+   + [Konfigurera datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
+   + Händelsekonfiguration {#events-journeys}
+      + [Arbeta med resehändelser](using/event/about-events.md)
+      + [Konfigurera en enhetshändelse](using/event/about-creating.md)
+      + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
+      + [Arbeta med Adobe Analytics-data](using/event/about-analytics.md)
+      + [Konfigurera en affärshändelse](using/event/about-creating-business.md)
+      + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey.md)
+   + Datakällans konfiguration{#data-source-journeys}
+      + [Kom igång med datakällor](using/datasource/about-data-sources.md)
+      + [Konfigurera en datakälla](using/datasource/configure-data-sources.md)
+      + [Datakällan i Adobe Experience Platform](using/datasource/adobe-experience-platform-data-source.md)
+      + [Externa datakällor](using/datasource/external-data-sources.md)
+   + Åtgärdskonfiguration {#action-journeys}
+      + [Kom igång med anpassade åtgärder](using/action/action.md)
+      + [Konfigurera en anpassad åtgärd](using/action/about-custom-action-configuration.md)
+      + [Felsöka en anpassad åtgärd](using/action/troubleshoot-custom-action.md)
+      + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
++ Anslut dina system {#connect-systems}
+   + [Adobe Journey Optimizer API:er](using/configuration/ajo-apis.md)
+   + Arbeta med rese-API:er {#external-systems}
+      + [Integrering av resor med externa system](using/configuration/external-systems.md)
+      + [API för reglering](using/configuration/capping.md)
+      + [API för begränsning](using/configuration/throttling.md)
+   + Skicka med Adobe lösningar {#adobe-solutions}
+      + [Integrering av resor med Adobe Campaign Standard](using/action/acs-action.md)
+      + [Reseintegrering med Adobe Campaign v7/v8](using/action/acc-action.md)
+      + [Integrering av resor med Marketo Engage](using/action/marketo-engage.md)
+   + [Konfigurera källkopplingen](using/start/get-started-sources.md)
    + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)
 + Åtkomstkontroll {#access-control}
    + Översikt över åtkomstkontroll {#privacy}
