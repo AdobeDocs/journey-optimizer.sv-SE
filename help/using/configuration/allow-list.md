@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: tillåtelselista, lista, säker, konfiguration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 2af0e9237bbcc79456a31042ed8e42233bbccac3
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1134'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Följ stegen nedan för att aktivera tillåtelselista.
 
    >[!NOTE]
    >
-   >När du har aktiverat tillåtelselista finns det en 5-minuterslatens för att den ska börja gälla under dina resor och kampanjer.
+   >När du har aktiverat tillåtelselista sker en 10-minuters fördröjning innan det börjar gälla under era resor och kampanjer. På samma sätt kan uppdateringar av både tillåtelselista och suppressionslistan ta upp till 10 minuter att reflektera.
 
 Logiken i tillåtelselista gäller när funktionen är aktiv. Läs mer i [det här avsnittet](#logic).
 
@@ -90,7 +90,7 @@ Följ stegen nedan för att inaktivera tillåtelselista.
 
    >[!NOTE]
    >
-   >När du har inaktiverat tillåtelselista finns det en 5-minuterslatens för att den ska börja gälla under dina resor och kampanjer.
+   >När du har inaktiverat tillåtelselista sker en 10-minuters fördröjning innan det börjar gälla under era resor och kampanjer. På samma sätt kan uppdateringar av både tillåtelselista och suppressionslistan ta upp till 10 minuter att reflektera.
 
 Tillåtelselista-logiken gäller inte när funktionen är inaktiverad. Läs mer i [det här avsnittet](#logic).
 
