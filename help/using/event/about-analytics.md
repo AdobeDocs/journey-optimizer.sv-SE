@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: analys, integrering, web sdk, plattform
 exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 0be35e14dba32523a7f28aaaa28d41ee693d44ba
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 5%
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # Arbeta med Adobe Analytics-data {#analytics-data}
 
-Ni kan utnyttja alla webbbeteendehändelsedata som ni redan samlar in via Adobe Analytics eller Web SDK, och strömma till Adobe Experience Platform, för att utlösa resor och automatisera kundernas upplevelser.
+Ni kan utnyttja alla webbbeteendedata som ni redan samlar in via Adobe Analytics eller Web SDK och strömmar till Adobe Experience Platform för att utlösa resor och automatisera kundernas upplevelser.
 
 För att detta ska fungera med Adobe Analytics måste du:
 
@@ -65,7 +65,7 @@ Läs mer om Adobe Analytics källanslutning i [Adobe Experience Platform-dokumen
 
 ## Aktivera den här konfigurationen {#activate-analytics-data}
 
-När konfigurationen är klar kontaktar du Adobe för att aktivera Journey Optimizer-miljön för att använda den här datakällan. Det här steget krävs bara för Adobe Analytics datakällor. Så här gör du:
+När konfigurationen är klar kontaktar du Adobe för att aktivera din Journey Optimizer-miljö för att använda den här datakällan. Det här steget krävs bara för Adobe Analytics datakällor. Så här gör du:
 
 1. Hämta datakällans ID. Den här informationen är tillgänglig i användargränssnittet: bläddra till datakällan som du skapade på fliken **Dataflöden** på menyn **Källor**. Det enklaste sättet att hitta den är att filtrera på Adobe Analytics-källor.
 1. Kontakta Adobe kundtjänst och lämna följande uppgifter:
@@ -80,7 +80,7 @@ När konfigurationen är klar kontaktar du Adobe för att aktivera Journey Optim
 
 1. När du har fått en bekräftelse på att din miljö är klar kan du använda Adobe Analytics-data på dina resor.
 
-## Skapa en resa med en händelse med hjälp av Adobe Analytics- eller Web SDK-data {#event-analytics}
+## Skapa en resa med ett evenemang med hjälp av Adobe Analytics- eller Web SDK-data {#event-analytics}
 
 Nu kan du skapa en händelse som baseras på Adobe Analytics- eller Adobe Experience Platform Web SDK-data och som ska användas under en resa.
 

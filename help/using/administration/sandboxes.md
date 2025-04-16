@@ -9,10 +9,10 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: sandlådor, virtuella, miljöer, organisation, plattform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
-source-git-commit: 060d65e8d3fb1442b04626170a35d463d1faa514
+source-git-commit: 621f9bcb32d108490e7674778ce40385938af18e
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 16%
+ht-degree: 12%
 
 ---
 
@@ -20,11 +20,9 @@ ht-degree: 16%
 
 ## Använda sandlådor {#using-sandbox}
 
-Med [!DNL Journey Optimizer] kan du partitionera instansen i separerade virtuella miljöer som kallas för sandlådor.
-Sandlådor tilldelas via roller i behörigheter. [Lär dig tilldela sandlådor](permissions.md#create-product-profile).
+Med [!DNL Journey Optimizer] kan du partitionera instansen i separerade virtuella miljöer som kallas sandlådor. Sandlådor tilldelas via roller i behörigheter. [Lär dig tilldela sandlådor](permissions.md#create-product-profile).
 
-[!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation.
-Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
+[!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation. Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
 Du hittar kontrollen för sandlådeväljaren högst upp till höger på skärmen bredvid organisationens namn. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
 

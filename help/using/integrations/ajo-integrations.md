@@ -7,14 +7,14 @@ feature: Integrations
 role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 621f9bcb32d108490e7674778ce40385938af18e
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
 
 ---
 
-# Integrera med andra lösningar {#integration}
+# Integrering med andra lösningar {#integration}
 
 Med Adobe Journey Optimizer kan ni enkelt hantera, behålla och exportera dessa data till plattformar eller system som ingår i er teknologi. Dessa integreringar hjälper er att hantera era specifika användningsfall och utöka Adobe Journey Optimizer funktionalitet.
 
@@ -82,13 +82,13 @@ Läs mer om [Journey Optimizer + Campaign Standard](../building-journeys/using-a
 
 Använd Adobe Journey Optimizer-modulerna i Adobe Workfront för att skapa, läsa, uppdatera eller ta bort poster eller utföra ett anpassat API-anrop till Adobe Journey Optimizer API.
 
-En översikt över det viktiga steget i den här integreringen finns tillgänglig [i det här blogginlägget](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/accelerating-go-to-market-how-workfront-workfront-fusion-aep-and/ba-p/653685){target="_blank"}.
+En översikt över det viktiga steget i den här integreringen finns tillgänglig [i blogginlägget](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/accelerating-go-to-market-how-workfront-workfront-fusion-aep-and/ba-p/653685){target="_blank"}.
 
 Läs mer om Journey Optimizer + Adobe Workfront [i Adobe Workfront-dokumentationen](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-journey-optimizer-modules.html){target="_blank"}.
 
 ## Egna kanaler {#integration-custom}
 
-Om du använder ett system från en annan leverantör för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett system från en annan leverantör, ska du använda anpassade åtgärder för att ansluta till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase, osv.
+Om du använder ett system från en annan leverantör för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett system från en annan leverantör, ska du använda anpassade åtgärder för att ansluta till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase osv.
 
 Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska användare och görs tillgängliga för marknadsförare. När de har konfigurerats visas de i den vänstra paletten på din resa i kategorin **[!UICONTROL Action]**. Läs mer på [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
 
