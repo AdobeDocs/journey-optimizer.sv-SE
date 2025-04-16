@@ -1,11 +1,12 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd aktiviteten Uppdatera data i flerstegskampanjer
+title: Använd aktiviteten Uppdatera data i samordnade kampanjer
 description: Lär dig använda aktiviteten Uppdatera data
 hide: true
 hidefromtoc: true
-source-git-commit: dfa6c6e11db10f3e843035d32e322b212361548c
+exl-id: 68e7c929-5f07-4d5a-9831-690e071947f8
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 12%
@@ -32,7 +33,7 @@ Toggle the **Generate an outbound transition for rejects** option to add an outb
 
 ## Konfigurera aktiviteten Uppdatera data{#update-data-configuration}
 
-Om du vill konfigurera aktiviteten **Uppdatera data** börjar du med att lägga till aktiviteten i din flerstegskampanj och definierar en etikett.
+Om du vill konfigurera aktiviteten **Uppdatera data** börjar du med att lägga till aktiviteten till din samordnade kampanj och definierar en etikett.
 
 ![](../assets/workflow-update-data.png)
 
@@ -77,6 +78,6 @@ Med de **avancerade alternativen** kan du ange ytterligare alternativ som du kan
 
 De två sista alternativen gör att du kan utföra specifika åtgärder:
 
-* **Generera en utgående övergång**: skapar en utgående övergång som aktiveras i slutet av körningen. Uppdateringen signalerar vanligtvis slutet på en flerstegskampanj för målinriktning och alternativet är därför inte aktiverat som standard.
+* **Generera en utgående övergång**: skapar en utgående övergång som aktiveras i slutet av körningen. Uppdateringen signalerar vanligtvis slutet på en riktade, iscensatt kampanj och alternativet är därför inte aktiverat som standard.
 
-* **Generera en utgående övergång för projekten**: skapar en utgående övergång som innehåller poster som inte har bearbetats korrekt efter uppdateringen (till exempel om det finns en dubblett). Uppdateringen markerar vanligtvis slutet på en flerstegskampanj med mål och alternativet är därför inte aktiverat som standard.
+* **Generera en utgående övergång för projekten**: skapar en utgående övergång som innehåller poster som inte har bearbetats korrekt efter uppdateringen (till exempel om det finns en dubblett). Uppdateringen markerar vanligtvis slutet på en riktade, iscensatt kampanj och därför är alternativet inte aktiverat som standard.

@@ -5,7 +5,8 @@ title: Använd aktiviteten Ändra dimension
 description: Lär dig hur du använder aktiviteten Ändra dimension
 hide: true
 hidefromtoc: true
-source-git-commit: 00f843300a9cfe798ea4d3a92fbe89ba80e70bc5
+exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -24,9 +25,9 @@ ht-degree: 0%
 >title="Ändra dimensionsaktivitet"
 >abstract="Med den här aktiviteten kan ni ändra målgruppsdimensionen när ni skapar en målgrupp. Axeln flyttas beroende på datamallen och indatamängden. Du kan till exempel växla från dimensionen &quot;kontrakt&quot; till dimensionen &quot;kunder&quot;."
 
-Aktiviteten **Ändra dimension** är en **målaktivitet**. Med den här aktiviteten kan ni ändra målinriktningsdimensionen när ni skapar flerstegskampanjer. Axeln flyttas beroende på datamallen och indatamängden.
+Aktiviteten **Ändra dimension** är en **målaktivitet**. Med den här aktiviteten kan ni ändra målgruppsdimensionen när ni skapar er samordnade kampanj. Axeln flyttas beroende på datamallen och indatamängden.
 
-Du kan till exempel växla en flerstegskampanj från mottagare till prenumerantprogram för att skicka push-meddelanden till målmottagarna.
+Du kan till exempel växla en orkestrerad kampanjs målinriktningsdimension från&quot;Mottagare&quot; till&quot;prenumerantprogram&quot; för att skicka push-meddelanden till målmottagarna.
 
 >[!IMPORTANT]
 >
@@ -36,18 +37,18 @@ Du kan till exempel växla en flerstegskampanj från mottagare till prenumerantp
 
 Följ de här stegen för att konfigurera aktiviteten **Ändra dimension**:
 
-1. Lägg till en **Ändra dimension**-aktivitet i din flerstegskampanj.
+1. Lägg till en **Ändra dimension**-aktivitet i den orkestrerade kampanjen.
 
    ![](../assets/workflow-change-dimension.png)
 
 1. Definiera den **nya måldimensionen**. Vid dimensionsändring sparas alla poster. Andra alternativ är inte tillgängliga än.
 
-1. Kör flerstegskampanjen för att visa resultatet. Jämför data i tabellerna före och efter ändringsdimensionsaktiviteten och jämför strukturen för flerstegskampanjtabellerna.
+1. Kör den orkestrerade kampanjen för att visa resultatet. Jämför data i tabellerna före och efter ändringsdimensionsaktiviteten och jämför strukturen i de samordnade kampanjtabellerna.
 
 ## Exempel {#example}
 
 I det här exemplet vill vi skicka en SMS-leverans till alla profiler som har gjort ett köp. För att göra detta använder vi först en **[!UICONTROL Build audience]**-aktivitet som är länkad till en anpassad målgruppsdimension för inköp för alla köp som har gjorts.
 
-Sedan använder vi en **[!UICONTROL Change dimension]**-aktivitet för att växla till målgruppsdimensionen för flerstegskampanjer till mottagare. På så sätt kan vi rikta in oss på de mottagare som matchar frågan.
+Sedan använder vi en **[!UICONTROL Change dimension]**-aktivitet för att växla den orkestrerade målgruppsdimensionen för kampanjer till mottagare. På så sätt kan vi rikta in oss på de mottagare som matchar frågan.
 
 ![](../assets/workflow-change-dimension-example.png)

@@ -2,10 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använda aktiviteten Läs in fil
-description: Lär dig hur du använder aktiviteten Läs in fil i en kampanj i flera steg
+description: Lär dig hur du använder aktiviteten Läs in fil i en orkestrerad kampanj
 hide: true
 hidefromtoc: true
-source-git-commit: 00f843300a9cfe798ea4d3a92fbe89ba80e70bc5
+exl-id: ae0dc980-2361-4c3b-a68e-ae0bb5dc0a26
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 1%
@@ -62,7 +63,7 @@ Aktivitetskonfigurationen för **Läs in fil** omfattar två steg. Först måste
 
 Följ de här stegen för att konfigurera exempelfilen som används för att definiera den förväntade filstrukturen:
 
-1. Lägg till en **Läs in fil**-aktivitet i din flerstegskampanj.
+1. Lägg till en **Läs in fil**-aktivitet i din orkestrerade kampanj.
 
 1. Välj den exempelfil som ska användas för att definiera den förväntade filstrukturen. Det gör du genom att klicka på knappen **Markera fil** i avsnittet **[!UICONTROL Sample file]** och välja den lokala fil som ska användas.
 
@@ -114,7 +115,7 @@ Följ de här stegen för att konfigurera exempelfilen som används för att def
 
 >[!CAUTION]
 >
->Innan du läser in målfilen kontrollerar du att den följer exempelfilens formatering. Eventuella avvikelser i filformat, kolumnstruktur eller antal kolumner kan leda till fel under körning av kampanjer i flera steg.
+>Innan du läser in målfilen kontrollerar du att den följer exempelfilens formatering. Eventuella avvikelser i filformat, kolumnstruktur eller antal kolumner kan leda till fel under kampanjkörningen.
 
 Så här definierar du målfilen som ska överföras:
 
@@ -149,13 +150,13 @@ Så här definierar du målfilen som ska överföras:
 
 1. I avsnittet **Avvisningshantering** anger du hur aktiviteten ska fungera om fel uppstår:
 
-   * I fältet **[!UICONTROL Number of errors allowed]** anger du det maximala antalet fel som tillåts när filen som ska läsas in bearbetas. Om värdet till exempel är 20 misslyckas kampanjkörningen i flera steg om det finns mer än 20 fel när filen läses in.
+   * I fältet **[!UICONTROL Number of errors allowed]** anger du det maximala antalet fel som tillåts när filen som ska läsas in bearbetas. Om värdet till exempel är 20 misslyckas den samordnade kampanjkörningen om det finns fler än 20 fel när filen läses in.
 
    * Om du vill behålla felen som uppstod när filen lästes in aktiverar du alternativet **[!UICONTROL Keep rejects in a file]** och anger önskat namn för filen i fältet **[!UICONTROL Rejection File]**.
 
      När du har aktiverat det här alternativet läggs ytterligare en utdataövergång till som heter &quot;Komplettera&quot; efter aktiviteten. Alla fel som inträffar under importen lagras i den angivna filen på servern.
 
-1. Om du vill ta bort den överförda filen från servern efter att flerstegskampanjen har körts växlar du till alternativet **[!UICONTROL Delete file after import]**.
+1. Om du vill ta bort den överförda filen från servern efter att den orkestrerade kampanjen har körts, växlar du alternativet **[!UICONTROL Delete file after import]**.
 
    ![](../assets/workflow-load-file-options.png)
 

@@ -2,10 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använd avstämningsaktiviteten
-description: Lär dig hur du använder avstämningsaktiviteten i en flerstegskampanj
+description: Lär dig använda avstämningsaktiviteten i en orkestrerad kampanj
 hide: true
 hidefromtoc: true
-source-git-commit: dfa6c6e11db10f3e843035d32e322b212361548c
+exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 9%
@@ -38,7 +39,7 @@ Aktiviteten **Avstämning** är en **målaktivitet** som gör att du kan definie
 
 ## Bästa praxis {#reconciliation-best-practices}
 
-Med aktiviteten **Enrichment** kan du definiera ytterligare data som ska bearbetas i din flerstegskampanj (du kan använda en **Enrichment**-aktivitet för att kombinera data från flera uppsättningar eller för att skapa länkar till en tillfällig resurs), men med aktiviteten **Avstämning** kan du länka oidentifierade data till befintliga resurser.
+Med aktiviteten **Enrichment** kan du definiera ytterligare data som ska bearbetas i din samordnade kampanj (du kan använda en **Enrichment**-aktivitet för att kombinera data från flera uppsättningar eller för att skapa länkar till en tillfällig resurs), men med aktiviteten **Avstämning** kan du länka oidentifierade data till befintliga resurser.
 
 >[!NOTE]
 >Avstämningsåtgärden innebär att data för de länkade dimensionerna redan finns i databasen.  Om du till exempel importerar en inköpsfil som visar vilken produkt som köptes vid en viss tidpunkt, av en viss klient och så vidare, så måste produkten och klienten redan finnas i databasen.
@@ -74,7 +75,7 @@ Med aktiviteten **Enrichment** kan du definiera ytterligare data som ska bearbet
 
 Så här konfigurerar du aktiviteten **Avstämning**:
 
-1. Lägg till en **avstämningsaktivitet** i din flerstegskampanj.
+1. Lägg till en **avstämningsaktivitet** i din samordnade kampanj.
 
 1. Välj den nya måldimensionen. Med en dimension kan du definiera målpopulationen: mottagare, appprenumeranter, operatorer, prenumeranter osv.
 
@@ -94,9 +95,9 @@ Som standard lagras ej avstämda data i den utgående övergången och är tillg
 
 ## Exempel {#reconciliation-example}
 
-I följande exempel visas en kampanj i flera steg som skapar en publik med profiler direkt från en importerad fil som innehåller nya klienter. Den består av följande verksamheter:
+I följande exempel visas en strukturerad kampanj som skapar en publik med profiler direkt från en importerad fil som innehåller nya klienter. Den består av följande verksamheter:
 
-Flerstegskampanjen är utformad så här:
+Den samordnade kampanjen har följande utformning:
 
 ![](../assets/workflow-reconciliation-sample-1.0.png)
 
@@ -120,5 +121,4 @@ Den har följande aktiviteter:
 
   ![](../assets/workflow-reconciliation-sample-1.1.png)
 
-* En [Spara målgruppsaktivitet](save-audience.md) om du vill skapa en ny målgrupp baserat på dessa uppdateringar. Du kan också ersätta aktiviteten **Spara målgrupp** med en **End**-aktivitet om ingen specifik målgrupp behöver skapas eller uppdateras. Mottagarprofiler uppdateras i alla fall när du kör flerstegskampanjen.
-
+* En [Spara målgruppsaktivitet](save-audience.md) om du vill skapa en ny målgrupp baserat på dessa uppdateringar. Du kan också ersätta aktiviteten **Spara målgrupp** med en **End**-aktivitet om ingen specifik målgrupp behöver skapas eller uppdateras. Mottagarprofiler uppdateras i alla fall när du kör den orkestrerade kampanjen.

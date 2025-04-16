@@ -1,11 +1,12 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd aktiviteten Vänta i flerstegskampanjer
-description: Lär dig använda aktiviteten Vänta i flerstegskampanjer
+title: Använd aktiviteten Vänta i samordnade kampanjer
+description: Lär dig hur du använder aktiviteten Vänta i samordnade kampanjer
 hide: true
 hidefromtoc: true
-source-git-commit: dfa6c6e11db10f3e843035d32e322b212361548c
+exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
+source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 26%
@@ -25,7 +26,7 @@ Aktiviteten **Wait** är en **Flow control**-aktivitet. Det används för att en
 
 Följ de här stegen för att konfigurera aktiviteten **Wait**:
 
-1. Lägg till en **Vänta**-aktivitet i din flerstegskampanj.
+1. Lägg till en **Vänta**-aktivitet i din samordnade kampanj.
 
 1. Ange **Varaktighet** för väntetiden mellan inkommande och utgående övergångar.
 
