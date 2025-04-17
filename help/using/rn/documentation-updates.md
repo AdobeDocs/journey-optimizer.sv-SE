@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
+source-git-commit: a2d23466d62b3b1df6f8024e3f68414b18bf0b88
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 10%
+source-wordcount: '1194'
+ht-degree: 9%
 
 ---
 
@@ -32,6 +32,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Uppdaterade testsidan för resan med en anteckning om behovet av att inkludera ett identitetsnamn i händelsen som används. [Läs mer](../building-journeys/testing-the-journey.md)
 * Du kan för närvarande inte avdelegera underdomäner via användargränssnittet [!UICONTROL Journey Optimizer]. Du måste kontakta din Adobe-representant. Avsnitten e-post, landningssida, SMS och webbunderdomän har uppdaterats med den här informationen och de steg som ska utföras innan du når ut till Adobe. [Läs mer](../configuration/delegate-subdomain.md#undelegate-subdomain)
 * Ett förtydligande har lagts till om den valfria parametern `maxHttpConnections` i Resor Capping API, inklusive vägledning om hur den ska användas tillsammans med begränsningskonfigurationer för samma slutpunkt. [Läs mer](../configuration/throttling.md)
+* I avsnittet Experience Decision (Upplevelsebeslut) finns en vägledning som förklarar att godkända erbjudandeposter inte kan tas bort om de används i en samling eller ett beslut. Inkluderade steg för att ändra deras status till Utkast med alternativet **[!UICONTROL Undo approve]**. [Läs mer](../experience-decisioning/items.md#manage)
 
 ## Mars 2025 {#mar-2025}
 
