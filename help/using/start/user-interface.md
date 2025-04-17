@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: f15962bf68c7ea5087e0def33888b06f52d580cd
+source-git-commit: d3bae15a3b9ae53c4f520a3867026c47938bcd62
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1389'
 ht-degree: 4%
 
 ---
@@ -134,7 +134,7 @@ Styr din sekretesshantering och dina förfrågningar från det här avsnittet.
 
 * **[!UICONTROL Alerts]** - Med användargränssnittet kan du visa en historik över mottagna aviseringar baserat på mätvärden som visas av Adobe Experience Platform observability Insights. I gränssnittet kan du även visa, aktivera och inaktivera tillgängliga varningsregler. [Läs mer](../reports/alerts.md)
 
-* **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en enda instans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Bläddra i det här avsnittet för att hantera dina sandlådor. [Läs mer](../administration/sandboxes.md)
+* **[!UICONTROL Sandboxes]** - Adobe Experience Platform tillhandahåller sandlådor som partitionerar en enda instans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. I [!DNL Journey Optimizer] kan du dessutom använda funktioner för paketexport och import för att kopiera objekt som resor, innehållsmallar eller fragment över flera sandlådor. [Läs mer](../administration/sandboxes.md)
 
 * **[!UICONTROL Channels]** - Använd det här avsnittet för att konfigurera dina kanaler, inklusive underdomäner, konfigurationer och leveransinställningar. [Läs mer](../configuration/get-started-configuration.md)
 

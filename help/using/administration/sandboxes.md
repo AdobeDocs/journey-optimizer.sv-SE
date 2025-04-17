@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Hantering av sandlådor
+title: Använda och tilldela sandlådor
 description: Lär dig hantera sandlådor
 feature: Sandboxes
 topic: Administration
@@ -9,14 +9,14 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: sandlådor, virtuella, miljöer, organisation, plattform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
-source-git-commit: 621f9bcb32d108490e7674778ce40385938af18e
+source-git-commit: d3bae15a3b9ae53c4f520a3867026c47938bcd62
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '319'
 ht-degree: 12%
 
 ---
 
-# Hantering av sandlådor {#sandboxes}
+# Använda och tilldela sandlådor {#sandboxes}
 
 ## Använda sandlådor {#using-sandbox}
 

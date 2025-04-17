@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: a2d23466d62b3b1df6f8024e3f68414b18bf0b88
+source-git-commit: d3bae15a3b9ae53c4f520a3867026c47938bcd62
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1243'
 ht-degree: 9%
 
 ---
@@ -33,6 +33,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Du kan för närvarande inte avdelegera underdomäner via användargränssnittet [!UICONTROL Journey Optimizer]. Du måste kontakta din Adobe-representant. Avsnitten e-post, landningssida, SMS och webbunderdomän har uppdaterats med den här informationen och de steg som ska utföras innan du når ut till Adobe. [Läs mer](../configuration/delegate-subdomain.md#undelegate-subdomain)
 * Ett förtydligande har lagts till om den valfria parametern `maxHttpConnections` i Resor Capping API, inklusive vägledning om hur den ska användas tillsammans med begränsningskonfigurationer för samma slutpunkt. [Läs mer](../configuration/throttling.md)
 * I avsnittet Experience Decision (Upplevelsebeslut) finns en vägledning som förklarar att godkända erbjudandeposter inte kan tas bort om de används i en samling eller ett beslut. Inkluderade steg för att ändra deras status till Utkast med alternativet **[!UICONTROL Undo approve]**. [Läs mer](../experience-decisioning/items.md#manage)
+* Information om sandlådor har grupperats tillsammans i ett nytt avsnitt,&quot;Hantering av sandlådor&quot;. Det här nya avsnittet innehåller information om hur du använder och tilldelar sandlådor och hur du använder export- och importfunktioner för paket för att kopiera objekt som resor, innehållsmallar eller fragment över flera sandlådor. [Läs mer](../administration/sandboxes.md)
 
 ## Mars 2025 {#mar-2025}
 

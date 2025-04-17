@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 270dac97dce9e12795f5c99e2da3cbf6a5afd876
+source-git-commit: d3bae15a3b9ae53c4f520a3867026c47938bcd62
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2335'
 ht-degree: 21%
 
 ---
@@ -738,7 +738,7 @@ ht-degree: 21%
       + [Konfigurera en anpassad åtgärd](using/action/about-custom-action-configuration.md)
       + [Felsöka en anpassad åtgärd](using/action/troubleshoot-custom-action.md)
       + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
-+ Anslut dina system {#connect-systems}
++ Koppla samman system och miljöer {#connect-systems}
    + [Arbeta med Journey Optimizer API:er](using/configuration/ajo-apis.md)
    + Integrera dina resor med externa system {#external-systems}
       + [Reseintegration med externa system](using/configuration/external-systems.md)
@@ -748,8 +748,10 @@ ht-degree: 21%
       + [Reseintegrering med Campaign Standard](using/action/acs-action.md)
       + [Reseintegrering med Campaign v7/v8](using/action/acc-action.md)
       + [Reseintegrering med Marketo Engage](using/action/marketo-engage.md)
+   + Hantering av sandlådor {#sandbox}
+      + [Använda och tilldela sandlådor](using/administration/sandboxes.md)
+      + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)
    + [Konfigurera källkopplingen](using/start/get-started-sources.md)
-   + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)
 + Åtkomstkontroll {#access-control}
    + Översikt över åtkomstkontroll {#privacy}
       + [Kom igång med användarhantering](using/administration/permissions-overview.md)
@@ -759,7 +761,6 @@ ht-degree: 21%
    + [Hantera användare och roller](using/administration/permissions.md)
    + [Attributbaserad åtkomstkontroll](using/administration/attribute-based-access.md)
    + [Åtkomstkontroll på objektnivå](using/administration/object-based-access.md)
-   + [Hantering av sandlådor](using/administration/sandboxes.md)
 + Sekretess {#privacy}
    + [Kom igång med sekretess](using/privacy/get-started-privacy.md)
    + [Förfrågningar om användarens information](using/privacy/requests.md)
