@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: ab70ce5b686a54dc1be7336411c5b0959fc3c584
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -163,6 +163,10 @@ Om du väljer ett beslutsobjekt eller klickar på ellipsknappen aktiveras de åt
 
   >[!IMPORTANT]
   >
-  >När den tagits bort är beslutsobjektet och dess innehåll inte längre tillgängliga. Det går inte att ångra den här åtgärden. Om beslutsobjektet används i en samling eller ett beslut kan det inte tas bort. Du måste ta bort beslutsobjektet från alla objekt först.
+  >När den tagits bort är beslutsobjektet och dess innehåll inte längre tillgängliga. Det går inte att ångra den här åtgärden.
+
+  Godkända erbjudandeartiklar kan inte tas bort om de används i en samling eller ett beslut. Om du vill ta bort dem ändrar du deras status till Utkast. Om du vill göra det klickar du på ellipsknappen och väljer **[!UICONTROL Undo approve]**.
+
+  ![](assets/item-undo.png)
 
 * **[!UICONTROL Archive]**: Anger beslutsobjektets status till **[!UICONTROL Archived]**. Beslutsobjektet är fortfarande tillgängligt från listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
