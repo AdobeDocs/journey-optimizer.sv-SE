@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 31e88f02ed2569357a31552db717225d7f37a1eb
+source-git-commit: 270dac97dce9e12795f5c99e2da3cbf6a5afd876
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2330'
 ht-degree: 21%
 
 ---
@@ -261,9 +261,9 @@ ht-degree: 21%
          + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
    + Kanal i appen{#in-app}
       + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
-      + [Krav för kanal i appen](using/in-app/inapp-configuration.md)
-      + [Skapa ett mobilmeddelande i appen](using/in-app/create-in-app.md)
-      + [Skapa ett webbmeddelande i appen](using/in-app/create-in-app-web.md)
+      + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
+      + [Skapa ett mobilt meddelande i appen](using/in-app/create-in-app.md)
+      + [Skapa ett meddelande i appen för webben](using/in-app/create-in-app-web.md)
       + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
       + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
    + Push-meddelandekanal{#push}
@@ -321,7 +321,7 @@ ht-degree: 21%
       + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
       + Konfigurera innehållskortskanal {#configure}
          + [Krav för innehållskort](using/content-card/content-card-configuration-prereq.md)
-         + [Konfigurera kanal för innehållskort i Journey Optimizer](using/content-card/content-card-configuration.md)
+         + [Konfigurera innehållskortskanal i Journey Optimizer](using/content-card/content-card-configuration.md)
          + [Konfigurera stöd för innehållskort i Mobile SDK](using/content-card/content-card-lp.md)
          + [Konfigurera stöd för innehållskort i Web SDK](using/content-card/content-card-configuration-sdk.md)
       + [Skapa innehållskort](using/content-card/create-content-card.md)
@@ -383,7 +383,7 @@ ht-degree: 21%
          + [Hjälpmedel](using/personalization/functions/helpers.md)
          + [Kartfunktioner](using/personalization/functions/maps.md)
          + [Matematiska funktioner](using/personalization/functions/math.md)
-         + [Objektets funktioner](using/personalization/functions/objects.md)
+         + [Objektfunktioner](using/personalization/functions/objects.md)
          + [Strängfunktioner](using/personalization/functions/string.md)
       + Användningsexempel för Personalization{#personalization-use-cases}
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
@@ -415,7 +415,7 @@ ht-degree: 21%
          + [Anpassad överföring](using/audience/custom-upload.md)
          + [Federerad målgruppssammansättning](using/audience/federated-audience-composition.md)
       + [Målgruppsaktivering i kampanjer och resor](using/audience/target-audiences.md)
-      + [Attribut för berikning av hävstångseffekt](using/audience/enrichment-attributes.md)
+      + [Utnyttja anrikningsattribut](using/audience/enrichment-attributes.md)
    + Profiler{#profiles}
       + [Kom igång med profiler](using/audience/get-started-profiles.md)
       + [Skapa testprofiler](using/audience/creating-test-profiles.md)
@@ -441,7 +441,7 @@ ht-degree: 21%
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
    + Heltidsrapport{#channel-report}
       + [Kom igång med hela tidsrapporten](using/reports/report-gs-cja.md)
-      + [Lista över mätvärden](using/reports/global-report-components-cja.md)
+      + [Förteckning över mätvärden](using/reports/global-report-components-cja.md)
       + [Konfigurera Customer Journey Analytics manuellt](using/reports/cja-ajo.md)
       + [Hantera dina rapporter](using/reports/report-cja-manage.md)
       + [Krav för rapportering och experimenterande](using/reports/reporting-configuration.md)
@@ -469,16 +469,16 @@ ht-degree: 21%
       + [Översiktsrapport](using/reports/channel-report-cja.md)
       + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
       + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
-   + Rapporter om resor {#reports}
+   + Reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
       + Händelsefält för äldre steg {#legacy-step-event-fields}
          + [Om äldre fält](using/reports/sharing-legacy-fields.md)
-         + [Fält för färd](using/reports/sharing-journey-fields.md)
-         + [Gemensamma fält](using/reports/sharing-common-fields.md)
-         + [Fält för åtgärdsutförande](using/reports/sharing-execution-fields.md)
+         + [Resefält](using/reports/sharing-journey-fields.md)
+         + [Vanliga fält](using/reports/sharing-common-fields.md)
+         + [Körningsfält för åtgärd](using/reports/sharing-execution-fields.md)
          + [Fält för datahämtning](using/reports/sharing-fetch-fields.md)
-         + [Fält för identitet](using/reports/sharing-identity-fields.md)
+         + [Identitetsfält](using/reports/sharing-identity-fields.md)
       + [Exempel på frågor](using/reports/query-examples.md)
    + Levererbarhetsstrategi {#deliverability}
       + [Kom igång med leverans](using/reports/deliverability.md)
@@ -502,8 +502,8 @@ ht-degree: 21%
             + Objektsamlingar{#items-collections}
                + [Skapa objektsamlingar](using/experience-decisioning/api-reference/items-collections/create.md)
                + [Ta bort objektsamlingar](using/experience-decisioning/api-reference/items-collections/delete.md)
-               + [Lista över samlingar av objekt](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
-               + [Samlingar av uppslagsobjekt](using/experience-decisioning/api-reference/items-collections/lookup.md)
+               + [Lista över objektsamlingar](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
+               + [Söka efter objektsamlingar](using/experience-decisioning/api-reference/items-collections/lookup.md)
                + [Uppdatera artikelsamlingar](using/experience-decisioning/api-reference/items-collections/update.md)
             + Urvalsstrategier{#selection-strategies}
                + [Skapa urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/create.md)
@@ -739,15 +739,15 @@ ht-degree: 21%
       + [Felsöka en anpassad åtgärd](using/action/troubleshoot-custom-action.md)
       + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
 + Anslut dina system {#connect-systems}
-   + [Adobe Journey Optimizer API:er](using/configuration/ajo-apis.md)
-   + Arbeta med rese-API:er {#external-systems}
-      + [Integrering av resor med externa system](using/configuration/external-systems.md)
+   + [Arbeta med Journey Optimizer API:er](using/configuration/ajo-apis.md)
+   + Integrera dina resor med externa system {#external-systems}
+      + [Reseintegration med externa system](using/configuration/external-systems.md)
       + [API för reglering](using/configuration/capping.md)
       + [API för begränsning](using/configuration/throttling.md)
    + Skicka med Adobe lösningar {#adobe-solutions}
-      + [Integrering av resor med Adobe Campaign Standard](using/action/acs-action.md)
-      + [Reseintegrering med Adobe Campaign v7/v8](using/action/acc-action.md)
-      + [Integrering av resor med Marketo Engage](using/action/marketo-engage.md)
+      + [Reseintegrering med Campaign Standard](using/action/acs-action.md)
+      + [Reseintegrering med Campaign v7/v8](using/action/acc-action.md)
+      + [Reseintegrering med Marketo Engage](using/action/marketo-engage.md)
    + [Konfigurera källkopplingen](using/start/get-started-sources.md)
    + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)
 + Åtkomstkontroll {#access-control}
