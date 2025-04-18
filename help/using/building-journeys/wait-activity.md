@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: da7d895fcc724e6b1c0d6480f6a8693037a03752
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '644'
 ht-degree: 3%
 
 ---
@@ -47,9 +47,13 @@ En individ kan bara ange en **Wait**-aktivitet om han eller hon har tillräcklig
 
 Det är en god vana att inte använda **Wait**-aktiviteter för att blockera återinträde. Använd i stället alternativet **Tillåt återinträde** på resans egenskapsnivå. Läs mer på [den här sidan](../building-journeys/journey-properties.md#entrance).
 
-### Vänta- och testläge {#wait-test-modd}
+### Vänta- och testläge {#wait-test-mode}
 
 I testläge kan du med parametern **[!UICONTROL Wait time in test]** definiera den tid som varje **Wait** -aktivitet ska hålla. Den förinställda tiden är tio sekunder. Detta säkerställer att du får testresultaten snabbt. Läs mer på [den här sidan](../building-journeys/testing-the-journey.md).
+
+### Vänta och mobila kanaler {#wait-mobile-channels}
+
+Om du vill visa ett [in-app-meddelande](../in-app/create-in-app.md) kort efter att du har skickat ett [push-meddelande](../push/get-started-push.md) använder du en **Wait**-aktivitet för att tillåta inläsningstiden för meddelanden i appen att spridas. Vanligtvis rekommenderas en 5-15 minuters väntan, men de exakta tiderna kan variera beroende på nyttolastens komplexitet och personaliseringsbehov.
 
 ## Konfiguration {#wait-configuration}
 

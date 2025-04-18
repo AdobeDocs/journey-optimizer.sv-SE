@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: da7d895fcc724e6b1c0d6480f6a8693037a03752
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1967'
 ht-degree: 1%
 
 ---
@@ -118,6 +118,10 @@ Så här lägger du till ett meddelande i appen under en resa:
 1. När ditt meddelande i appen är klart slutför du konfigurationen och publicerar din resa för att aktivera den.
 
 Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
+
+>[!NOTE]
+>
+>Om du vill visa ett meddelande i appen kort efter att du har skickat ett push-meddelande använder du en **Wait**-aktivitet för att tillåta att meddelandets nyttolasttid i appen sprids. Vanligtvis rekommenderas en 5-15 minuters väntan, men de exakta tiderna kan variera beroende på nyttolastens komplexitet och personaliseringsbehov.
 
 >[!TAB Lägg till ett meddelande i appen i en kampanj]
 
