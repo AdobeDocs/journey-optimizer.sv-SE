@@ -3,12 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Lägga till en kanalaktivitet i en flerstegskampanj
 description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampanj
+badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
+source-git-commit: 960c7ab18cdca6e34c06f2dc6672aefdb5340ef0
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Börja bygga upp er samordnade kampanj med relevanta aktiviteter:
 
 * Innan du infogar en kanalaktivitet måste du definiera målgruppen. Målgruppen är huvudmålet för leveransen: de profiler som tar emot meddelandena.
 
-* Om du vill skicka en återkommande leverans startar du din samordnade kampanj med en **schemaläggaraktivitet**. Du kan också använda en **schemaläggaraktivitet** för engångsleveranser för att ange kontaktdatum för den leveransen. Kontaktdatumet kan även anges i leveransinställningarna. Se [det här avsnittet](scheduler.md).
+* Om du vill skicka en återkommande leverans startar du din samordnade kampanj med en **schemaläggaraktivitet**. Du kan också använda en **schemaläggaraktivitet** för engångsleveranser för att ange kontaktdatum för den leveransen. Kontaktdatumet kan även anges i leveransinställningarna.
 
 ## Konfigurera en kanalaktivitet {#create-a-delivery-in-a-workflow}
 
@@ -63,7 +64,7 @@ Följ stegen nedan för att konfigurera en leverans i samband med en iscensatt k
 1. Välj **Typ av leverans**: enkel eller återkommande.
 
    * En **enskild leverans** är en engångsleverans, som bara skickas en gång, till exempel ett svartvitt e-postmeddelande på fredag.
-   * En **återkommande leverans** skickas flera gånger baserat på dess körningsfrekvens som definierats i en [schemaläggaraktivitet](scheduler.md). Varje gång den samordnade kampanjen körs beräknas målgruppen om och leveransen skickas till den uppdaterade målgruppen med det uppdaterade innehållet. Det här kan till exempel vara ett veckonyhetsbrev eller ett återkommande födelsedagskalender.
+   * En **återkommande leverans** skickas flera gånger baserat på dess körningsfrekvens. Varje gång den samordnade kampanjen körs beräknas målgruppen om och leveransen skickas till den uppdaterade målgruppen med det uppdaterade innehållet. Det här kan till exempel vara ett veckonyhetsbrev eller ett återkommande födelsedagskalender.
 
 1. Välj en **leveransmall**. Mallar är förkonfigurerade leveransinställningar som är specifika för en kanal. En inbyggd mall är tillgänglig för varje kanal och förfylld som standard.
 
