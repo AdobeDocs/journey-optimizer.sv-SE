@@ -1,19 +1,19 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Starta och övervaka samordnade kampanjer med Adobe Journey Optimizer
-description: Lär dig hur du startar och övervakar samordnade kampanjer med Adobe Journey Optimizer
+title: Schemalägg och starta samordnade kampanjer med Adobe Journey Optimizer
+description: Lär dig schemalägga och starta samordnade kampanjer med Adobe Journey Optimizer
 hide: true
 hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
+source-git-commit: 94ec0430995c26d6c0eaa68f523675997ed0a327
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
-# Starta och övervaka era samordnade kampanjer {#start-monitor}
+# Schemalägg och starta samordnade kampanjer {#start-monitor}
 
 <!--
 <audio controls><source src="../ms/assets/do-not-localize/sound.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio> -->
@@ -22,7 +22,6 @@ ht-degree: 0%
 >id="ajo_campaign_publication"
 >title="Publicera orkestrerad kampanj"
 >abstract="Du måste publicera kampanjen för att kunna starta den. Kontrollera att alla varningar är rensade före publiceringen."
-
 
 När du har skapat dina arbetsytor och utformat arbetsytan kan du publicera den och övervaka hur den körs.
 

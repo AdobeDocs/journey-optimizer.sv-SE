@@ -6,9 +6,9 @@ description: Lär dig hur du börjar med samordnade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: c41d7e7543f3254479f63d4e104f471192e63632
+source-git-commit: 94ec0430995c26d6c0eaa68f523675997ed0a327
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,10 @@ ht-degree: 0%
 
 * Kom igång med samordnade kampanjer - [Nyckelobjekt](gs-campaign-creation.md)
 * Konfiguration: [Konfigurera dina samordnade kampanjer](gs-campaign-config.md) - [Arbeta med scheman](ms-schemas.md) - [Arbeta med händelsevariabler](event-variables.md)
-* Kom igång: [Skapa en orkestrerad kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md) - [Schemalägg och starta kampanjer](start-monitor-campaigns.md) - [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md) - [Personalization](ms-personalization.md)
+* Kom igång: [Skapa en orkestrerad kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md) - [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md) - [Personalization](ms-personalization.md)
 * Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Läs in fil](activities/load-file.md) 17} - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Schemaläggare](activities/scheduler.md) - [Dela](activities/split.md) - [Testa](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
+* [Schemalägg och starta kampanjer](start-monitor-campaigns.md)
+* [Övervakning och rapportering](reporting-campaigns.md)
 
 >[!ENDSHADEBOX]
 
