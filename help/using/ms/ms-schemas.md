@@ -1,22 +1,20 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Arbeta med scheman i samordnade kampanjer
-description: Lär dig skapa och hantera scheman i orkestrerade kampanjer
+title: Skapa relationsscheman för samordnade kampanjer
+description: Lär dig skapa och hantera relationsscheman för orkestrerade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: b0125a50-d187-49fc-ad12-bbe6650f8f1e
-source-git-commit: c41d7e7543f3254479f63d4e104f471192e63632
+source-git-commit: c26cf974525ac6f7de0b93a5e50e85a111b2a475
 workflow-type: tm+mt
-source-wordcount: '57'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
 
-# Arbeta med scheman {#ms-schemas}
+# Skapa relationsscheman {#ms-schemas}
 
-Förklara grundläggande principer för TYPE II-relationsarkiv, från schemamodellering till dataöverföring, som framhäver samspelet mellan UPS och relationsmodell
+Ett schema representerar och validerar datastrukturen och dataformatet. Den ger en abstrakt definition av ett objekt i verkligheten (till exempel en person) och visar vilka data som ska inkluderas i varje instans av objektet (till exempel namn, födelsedag och så vidare).
 
-Visa sökväg för att skapa relationsscheman
-
-Visa sökväg till import av data i relationsscheman
+![Knappen Skapa schema med alternativet Relation markerat](assets/create-relational-schema.png)
