@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: aec3d79ad07ec6904e55afd6fc61ba9b4f403fc8
+source-git-commit: e3ed3d2d662d76c022a7820f3771289b14c8b8b8
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 24%
+source-wordcount: '1374'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 24%
 
 På den här sidan visas de olika säkerhetsutkast som Journey Optimizer ger när ett externt system integreras, liksom de bästa sätten: hur man optimerar skyddet för det externa systemet med API:t för appning, hur man konfigurerar tidsgränsen för resan och hur försök fungerar igen.
 
-Med Journey Optimizer kan du konfigurera anslutningar till externa system via anpassade datakällor och anpassade åtgärder. På så sätt kan du t.ex. berika dina resor med data från ett externt bokningssystem eller skicka meddelanden med ett tredjepartssystem som Epsilon eller Facebook.
+Med Journey Optimizer kan du konfigurera anslutningar till externa system via anpassade datakällor och anpassade åtgärder. På så sätt kan du till exempel berika dina resor med data från ett externt bokningssystem eller skicka meddelanden med ett tredjepartssystem som Epsilon eller Facebook.
 
 När du integrerar ett externt system kan du stöta på flera problem, systemet kan vara långsamt, det kan sluta svara eller så kanske det inte kan hantera en stor volym. Journey Optimizer erbjuder flera skyddsräcken för att skydda datorn mot överbelastning.
 
@@ -29,7 +29,11 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 1. Reglerna för begränsning eller begränsning tillämpas: om den maximala hastigheten uppnås tas återstående anrop bort eller köas.
 
-2. Timeout och försök igen: om begränsnings- eller begränsningsregeln är uppfylld försöker Journey Optimizer genomföra anropet tills tidsgränsen har nåtts.
+1. Timeout och försök igen: om begränsnings- eller begränsningsregeln är uppfylld försöker Journey Optimizer genomföra anropet tills tidsgränsen har nåtts.
+
+>[!TIP]
+>
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## API:er för begränsning och begränsning {#capping}
 
