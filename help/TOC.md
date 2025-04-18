@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8998e4c6c1eca4e0cd6c0336df781eb6628b118d
+source-git-commit: d4d7cab6b6841c2122d901f55c3162f0549ad5ff
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2342'
 ht-degree: 21%
 
 ---
@@ -177,13 +177,14 @@ ht-degree: 21%
    + [Viktiga principer](using/ms/gs-campaign-creation.md)
    + Konfiguration {#ms-config}
       + [Konfigurationssteg](using/ms/gs-campaign-config.md)
-      + [Scheman](using/ms/ms-schemas.md)
+      + [Skapa relationsscheman](using/ms/ms-schemas.md)
       + [Arbeta med händelsevariabler](using/ms/event-variables.md)
    + Skapa din första samordnade kampanj {#create-ms-campaign}
       + [Skapa en orkestrerad kampanj](using/ms/create-ms-campaign.md)
       + [Organisera aktiviteter](using/ms/orchestrate-activities.md)
       + [Konfigurera kampanjinställningar](using/ms/ms-campaign-settings.md)
-      + [Starta och övervaka era kampanjer](using/ms/start-monitor-campaigns.md)
+      + [Schemalägg och starta kampanjer](using/ms/start-monitor-campaigns.md)
+      + [Rapportering av samordnade kampanjer](using/ms/reporting-campaigns.md)
       + [Hantera personalisering](using/ms/ms-personalization.md)
    + Samordnade kampanjaktiviteter {#design-campaigns}
       + [Om samordnade kampanjaktiviteter](using/ms/activities/about-activities.md)
