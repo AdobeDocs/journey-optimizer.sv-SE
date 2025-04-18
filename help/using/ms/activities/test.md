@@ -3,12 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Använd aktiviteten Testa i orkestrerade kampanjer
 description: Lär dig använda aktiviteten Testa
+badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd
-source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
+source-git-commit: 3d33d0bdbaf5b56a68d4ea708ce023c6aaae4811
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Följ de här stegen för att konfigurera aktiviteten **Test**:
 
 1. Som standard visar aktiviteten **[!UICONTROL Test]** ett enkelt booleskt test. Om villkoret som definieras i övergången &quot;Sant&quot; är uppfyllt aktiveras den här övergången. Annars aktiveras standardövergången &quot;Falskt&quot;.
 
-1. Klicka på ikonen **[!UICONTROL Open personalization dialog]** om du vill konfigurera villkoret som är kopplat till en övergång. Använd uttrycksredigeraren för att definiera de regler som krävs för att aktivera den här övergången. Du kan också utnyttja händelsevariabler, villkor och datum/tid-funktioner. [Lär dig hur du arbetar med händelsevariabler och uttrycksredigeraren](../event-variables.md)
+1. Klicka på ikonen **[!UICONTROL Open personalization dialog]** om du vill konfigurera villkoret som är kopplat till en övergång. Använd uttrycksredigeraren för att definiera de regler som krävs för att aktivera den här övergången. Du kan också utnyttja händelsevariabler, villkor och datum/tid-funktioner.
 
    Du kan dessutom ändra fältet **[!UICONTROL Label]** för att anpassa övergångens namn på den orkestrerade kampanjarbetsytan.
 

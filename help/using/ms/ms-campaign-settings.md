@@ -2,13 +2,14 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera inställningar för samordnade kampanjer
-description: Learn how to configure orchestrated campaign settings with Adobe Journey Optimizer
+description: Lär dig konfigurera samordnade kampanjinställningar med Adobe Journey Optimizer
+badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: a9bb3782-a4d1-43fe-ae2a-aef3f17ba588
-source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
+source-git-commit: 3d33d0bdbaf5b56a68d4ea708ce023c6aaae4811
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -20,9 +21,9 @@ ht-degree: 0%
 >title="Samordnade kampanjegenskaper"
 >abstract="På den här skärmen väljer du den mall som ska användas för att skapa den orkestrerade kampanjen och anger en etikett. Expandera avsnittet **Ytterligare alternativ** om du vill konfigurera fler inställningar, till exempel det interna namnet för den orkestrerade kampanjen, dess mapp, tidszon och övervakningsgrupp. Vi rekommenderar starkt att du väljer en grupp för ansvariga så att de får ett meddelande om ett fel inträffar."
 
-When creating an orchestrated campaign or orchestrating orchestrated campaign activities in the canvas, you can access advanced settings related to the orchestrated campaign. For example, you can set a specific timezone for the orchestrated campaign, manage how the orchestrated campaign should behave in case of error, or manage the delay after which the orchestrated campaign history should be purged.
+När du skapar en orkestrerad kampanj eller organiserar orkestrerade kampanjaktiviteter på arbetsytan får du tillgång till avancerade inställningar för den orkestrerade kampanjen. Du kan till exempel ange en specifik tidszon för den orkestrerade kampanjen, hantera hur den orkestrerade kampanjen ska bete sig vid fel eller hantera den fördröjning efter vilken den orkestrerade kampanjhistoriken ska rensas.
 
-These settings are pre-configured in the template selected when creating the orchestrated campaign, but can be edited as needed for this specific orchestrated campaign.
+Dessa inställningar är förkonfigurerade i mallen som valdes när den orkestrerade kampanjen skapades, men kan redigeras efter behov för den här specifika orkestrerade kampanjen.
 
 ![](assets/workflow-settings-button.png){zoomable="yes"}{width="70%" align="left"}
 
@@ -42,27 +43,27 @@ Avsnittet **[!UICONTROL Properties]** innehåller allmänna inställningar som k
 Dessa egenskaper är:
 
 * **[!UICONTROL Label]** för den orkestrerade kampanj som visas i listan.
-* Den **[!UICONTROL Internal name]** orkestrerade kampanjen.
-* Den **[!UICONTROL Folder]** plats där den orkestrerade kampanjen ska sparas.
-* Standardvärdet **[!UICONTROL Timezone]** som ska användas i alla aktiviteter i den orkestrerade kampanjen. Som standard är den orkestrerade kampanjens tidszon den som definierats för den aktuella kampanjoperatorn.
+* **[!UICONTROL Internal name]** för den orkestrerade kampanjen.
+* **[!UICONTROL Folder]** där den orchestrerade kampanjen ska sparas.
+* Standardvärdet **[!UICONTROL Timezone]** som ska användas i alla de orkestrerade kampanjaktiviteterna. Som standard är tidszonen för den orkestrerade kampanjen den som är definierad för den aktuella kampanjoperatorn.
 Möjliga värden är:
    * **Serverns tidszon** för att använda tidszonen i din Adobe Experience Platform-organisation
-   * **Operator time zone** to uses the time zone of the operator who executes the orchestrated campaign
+   * **Operatörens tidszon** använder tidszonen för operatorn som kör den orkestrerade kampanjen
    * **Tidszon för databasen** som använder databasserverns tidszon
-   * A specific time zone
-* När en orkestrerad kampanj misslyckas meddelas operatörerna som tillhör den operatörsgrupp som **[!UICONTROL Supervisor(s)]** valts i fältet via e-post.
-* Du kan också ange en **[!UICONTROL Description]** av din orkestrerade kampanj.
+   * En specifik tidszon
+* När en orkestrerad kampanj misslyckas meddelas de operatorer som tillhör den operatorgrupp som valts i fältet **[!UICONTROL Supervisor(s)]** via e-post.
+* Du kan även ange en **[!UICONTROL Description]** av din samordnade kampanj.
 
-## Inställningar för segmentering  {#segmentation-settings}
+## Segmenteringsinställningar  {#segmentation-settings}
 
 >[!CONTEXTUALHELP]
 >id="ajo_workflow_settings_segmentation"
 >title="Segmenteringsinställningar"
 >abstract="I det här avsnittet kan du välja måldimensionen för målprofiler i den samordnade kampanjen och välja att behålla arbetsflödesresultaten mellan två körningar. Det här alternativet bör endast användas i testsyfte och får aldrig aktiveras i en produktionsstrukturerad kampanj."
 
-* **[!UICONTROL Targeting dimension]**: Select the targeting dimension to use to target profiles: recipients, contract beneficiaries, operator, subscribers, etc.
+* **[!UICONTROL Targeting dimension]**: Välj måldimensionen som ska användas för målprofiler: mottagare, mottagare, operatör, prenumeranter osv.
 
-* **[!UICONTROL Keep the result of interim populations between two executions]**: By default, only the working tables of the last execution of the orchestrated campaign are kept. Working tables from previous executions are purged by a technical orchestrated campaign, which runs on a daily basis.
+* **[!UICONTROL Keep the result of interim populations between two executions]**: Som standard behålls bara arbetsregister för den senaste körningen av den orchestrerade kampanjen. Arbetstabeller från tidigare avrättningar rensas av en teknisk, strukturerad kampanj som körs dagligen.
 
   Om det här alternativet är aktiverat behålls arbetsregister även efter att den orkestrerade kampanjen har körts. Du kan använda den i testsyfte och måste därför användas **endast** i utvecklings- eller staging-miljöer. Den får aldrig checkas in i en produktionsstrukturerad kampanj.
 
@@ -73,20 +74,20 @@ Möjliga värden är:
 >title="Körningsinställningar"
 >abstract="I det här avsnittet kan du konfigurera inställningar som är relaterade till körningen av arbetsflödet, t.ex. antalet dagar som den orkestrerade kampanjhistoriken sparas."
 
-* **[!UICONTROL History in days]**: Anger efter hur många dagar som historiken måste rensas. Historiken innehåller element som är relaterade till den orkestrerade kampanjen: loggar, uppgifter, händelser (tekniska objekt som är länkade till den orkestrerade kampanjåtgärden). Standardvärdet är 30 dagar för färdiga orkestrerade kampanjmallar. Rensning av historiken utförs av den tekniska orkestrerade kampanjen för databasrensning, som körs som standard varje dag
+* **[!UICONTROL History in days]**: Anger efter hur många dagar som historiken måste rensas. Historiken innehåller element som är relaterade till den orkestrerade kampanjen: loggar, uppgifter, händelser (tekniska objekt som är kopplade till den orkestrerade kampanjåtgärden). Standardvärdet är 30 dagar för färdiga mallar för riktade kampanjer. Rensning av historiken utförs av den tekniska rensningskampanj som körs som standard varje dag
 
   >[!IMPORTANT]
   >
-  >**[!UICONTROL History in days]** Om fältet lämnas tomt kommer dess värde att betraktas som &quot;1&quot;, vilket innebär att historiken kommer att rensas efter 1 dag.
+  >Om fältet **[!UICONTROL History in days]** lämnas tomt betraktas dess värde som 1, vilket innebär att historiken rensas efter 1 dag.
 
 * **[!UICONTROL Default affinity]**: Om din installation innehåller flera orkestrerade kampanjservrar använder du det här fältet för att ange på vilken server den orkestrerade kampanjen ska köras. Detta tvingar fram körningen av den samordnade kampanjen på en viss server. Du kan välja ett befintligt tillhörighetsnamn, men se till att du inte använder blanksteg eller skiljetecken. Om du använder olika servrar anger du olika namn, avgränsade med kommatecken.
 
   >[!IMPORTANT]
   >
-  >If the value defined in this field does not exist on any server, the orchestrated campaign will remain pending.
+  >Om värdet som definieras i det här fältet inte finns på någon server, kommer den orkestrerade kampanjen att förbli väntande.
 
 
-* **[!UICONTROL Save SQL queries in log]**: Markera det här alternativet för att spara SQL-frågorna från workflmulti-step-kampanjen i loggarna. Den här funktionen är reserverad för avancerade användare. Det gäller för orkestrerade kampanjer som innehåller målinriktade aktiviteter som **[!UICONTROL Build audience]**. När det här alternativet är aktiverat visas de SQL-frågor som skickas till databasen under den orkestrerade kampanjkörningen i den orkestrerade kampanjens loggar, så att du kan analysera dem för att optimera frågor eller diagnostisera problem.
+* **[!UICONTROL Save SQL queries in log]**: Markera det här alternativet om du vill spara SQL-frågorna från den pågående kampanjen i flera steg i loggarna. Den här funktionen är reserverad för avancerade användare. Det gäller för samordnade kampanjer som innehåller målinriktningsaktiviteter som **[!UICONTROL Build audience]**. När det här alternativet är aktiverat visas de SQL-frågor som skickas till databasen under den orkestrerade kampanjkörningen i loggarna för den orkestrerade kampanjen, så att du kan analysera dem för att optimera frågor eller diagnostisera problem.
 
 ## Inställningar för felhantering  {#error-settings}
 
@@ -99,10 +100,8 @@ Möjliga värden är:
 
    * **[!UICONTROL Suspend the process]**: Den orkestrerade kampanjen pausas automatiskt och dess status ändras till **[!UICONTROL Failed]**. När problemet är löst kan du återuppta den samordnade kampanjen med knapparna **[!UICONTROL Resume]**.
    * **[!UICONTROL Ignore]**: Statusen för aktiviteten som utlöste felet ändras till **[!UICONTROL Failed]**, men den orkestrerade kampanjen behåller statusen **[!UICONTROL Started]**. <!-- TO ADD ONCE SCHEUDLER IS AVAILABLE This configuration is relevant for recurring tasks: if the branch includes a scheduler, it will start normally next time the workflow is executed.-->
-   * **[!UICONTROL Abort the process]**: Den orkestrerade kampanjen stoppas automatiskt och dess status ändras till **[!UICONTROL Failed]**. När problemet är löst startar du om den orkestrerade kampanjen med hjälp av **[!UICONTROL Start]** knapparna.
+   * **[!UICONTROL Abort the process]**: Den orkestrerade kampanjen stoppas automatiskt och dess status ändras till **[!UICONTROL Failed]**. När problemet är löst startar du om den orkestrerade kampanjen med knapparna **[!UICONTROL Start]**.
 
-* **[!UICONTROL Consecutive errors]**: Det här fältet blir tillgängligt när **[!UICONTROL Ignore]** värdet är markerat i **[!UICONTROL In case of errors]** fältet. Du kan ange hur många fel som kan ignoreras innan processen stoppas. När det här numret har nåtts ändras den orkestrerade kampanjstatusen till **[!UICONTROL Failed]**. Om värdet i det här fältet är 0 kommer den orkestrerade kampanjen aldrig att stoppas oavsett antalet fel.
+* **[!UICONTROL Consecutive errors]**: Det här fältet blir tillgängligt när värdet **[!UICONTROL Ignore]** har valts i fältet **[!UICONTROL In case of errors]**. Du kan ange antalet fel som kan ignoreras innan processen stoppas. När det här numret har nåtts ändras kampanjstatusen till **[!UICONTROL Failed]**. Om värdet för det här fältet är 0 stoppas aldrig den orkestrerade kampanjen oavsett antalet fel.
 
-## Skript för initiering {#initialization-script}
 
-Med **initieringsskriptet** kan du initiera variabler eller ändra aktivitetsegenskaper. Klicka på knappen **Redigera kod** och skriv det kodfragment som ska köras. The script is called when the orchestrated campaign executes. Se avsnittet som rör [händelsevariabler](event-variables.md).
