@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 1ee75284f3c5f0c7870e8bd8779d4daf9879aa40
+source-git-commit: 0f783c57ba946866cb74c2b16e1807ff963cfbaf
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1751'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Så här använder du testläget:
 * För att optimera prestanda och förhindra föråldrad resursanvändning växlar alla resor i testläge som inte har utlösts på en vecka tillbaka till statusen **Utkast**.
 * Händelser som utlöses av testläget lagras i dedikerade datauppsättningar. Dessa datauppsättningar har följande etiketter: `JOtestmode - <schema of your event>`
 * När du testar resor som innehåller flera händelser måste du aktivera varje händelse i sekvens. Om du skickar en händelse för tidigt (innan den första väntenoden är klar) eller för sent (efter den konfigurerade tidsgränsen) kommer händelsen att ignoreras och profilen skickas till en tidsgräns. Bekräfta alltid att referenser till händelsens nyttolastfält förblir giltiga genom att skicka nyttolasten i det definierade fönstret
-
+* Kontrollera att transportens konfigurerade fönster väljer [start- och slutdatum/tid](journey-properties.md#dates) och att det innehåller den aktuella tiden när testläget startas. Annars ignoreras utlösta testhändelser.
 
 <!--
 * Fields from related entities are hidden from the test mode.
