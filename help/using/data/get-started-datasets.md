@@ -8,9 +8,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
+source-git-commit: b27ddcc88ca4b4209c9d29974a0b0d0dbe98cc94
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Som standard visas bara de datauppsättningar som du har kapslat in i. Om du vil
 
 >[!NOTE]
 >
->Från och med 1 november 2024 har direktuppspelningssegmentering inte längre stöd för användning av skicka och öppna händelser från Journey Optimizer spårnings- och feedbackdatauppsättningar. Från och med februari 2025 kommer dessutom ett TTL-skyddsutkast att införas i Journey Optimizer systemgenererade datauppsättningar. [Läs mer](datasets-ttl.md)
+>Från och med 1 november 2024 har direktuppspelningssegmentering inte längre stöd för att skicka och öppna händelser från Journey Optimizer spårnings- och feedbackdatauppsättningar. Från och med februari 2025 introduceras dessutom ett TTL-skyddsutkast till Journey Optimizer systemgenererade datauppsättningar. [Läs mer](datasets-ttl.md)
 
 Markera namnet på en datauppsättning för att komma åt aktivitetsskärmen för datauppsättningen och se information om den datauppsättning du valde. Fliken Aktivitet innehåller ett diagram som visar hur många meddelanden som har förbrukats samt en lista över lyckade och misslyckade batchar.
 
@@ -107,5 +107,5 @@ En lista över användningsfall med frågeexempel finns [här](../data/datasets-
 
 >[!MORELIKETHIS]
 >
->* [Översikt över direktuppspelad redigering](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv){target="_blank"}
+>* [Översikt över direktuppspelningsförslag](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv){target="_blank"}
 >* [Infoga data i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html){target="_blank"}

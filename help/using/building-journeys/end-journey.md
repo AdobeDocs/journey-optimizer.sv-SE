@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
-source-git-commit: 9b79d4e7dd3af2a1957d8419d438670ad01f8250
+source-git-commit: b27ddcc88ca4b4209c9d29974a0b0d0dbe98cc94
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
@@ -16,6 +16,20 @@ ht-degree: 0%
 ---
 
 # Avsluta en resa {#journey-ending}
+
+## Så här slutar en live-resa
+
+Resan stängs när tidsgränsen för den globala resan nås eller efter den sista förekomsten av en återkommande målgruppsbaserad resa. [Lär dig hur resorna stängs](#close-journey).
+
+Om du behöver avsluta en direktresa rekommenderar vi att [du stänger den](#close-to-new-entrances) manuellt. Nya kunders ankomst till resan blockeras sedan. Profiler som redan har deltagit i resan kan uppleva det hela tiden.
+
+Du kan också [stoppa en resa](#stop-journey) endast i händelse av en nödsituation och om all resebearbetning måste avslutas omedelbart. Personer som redan har gått in i en resa stoppas under hela resan.
+
+>[!IMPORTANT]
+>
+>* Du kan inte starta om eller ta bort en [stängd](#close-journey)- eller [stoppad](#stop-journey)-resa. Du kan skapa en ny version av den eller duplicera den.
+>
+>* Endast slutförda resor kan tas bort.
 
 ## Hur profiler avslutar en resa
 
@@ -26,19 +40,11 @@ En resa slutar för en individ i två specifika sammanhang:
 
 Personen kan sedan återinträda i resan om återinträde tillåts. [Läs mer om hantering av inträde/återinträde](../building-journeys/journey-properties.md#entrance)
 
-## Så här slutar en live-resa
-
-Resan stängs när tidsgränsen för den globala resan nås eller efter den sista förekomsten av en återkommande resa. Om du behöver avsluta en direktresa rekommenderar vi att [du stänger den](#close-to-new-entrances) manuellt. Nya kunders ankomst till resan blockeras sedan. Profiler som redan har deltagit i resan kan uppleva det hela tiden. [Lär dig hur resorna stängs](#close-journey).
-
-Du kan också [stoppa en resa](#stop-journey) endast i händelse av en nödsituation och om all resebearbetning måste avslutas omedelbart. Personer som redan har gått in i en resa stoppas under hela resan.
-
->[!IMPORTANT]
->
->Du kan inte starta om eller ta bort en [stängd](#close-journey)- eller [stoppad](#stop-journey)-resa. Du kan skapa en ny version av den eller duplicera den. Endast slutförda resor kan tas bort.
-
 ## Sluttagg för resa {#end-tag}
 
-När du skapar en resa visas sluttaggen i slutet av varje bana. Den här noden kan inte läggas till av en användare, kan inte tas bort och bara dess etikett kan ändras. Det markerar slutet på varje väg på resan. Om resan har flera sökvägar rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs mer om [reserapporter](../reports/live-report.md).
+När du skapar en resa visas sluttaggen i slutet av varje bana. Den här noden kan inte läggas till av en användare, kan inte tas bort och bara dess etikett kan ändras. Det markerar slutet på varje väg på resan.
+
+Om resan har flera sökvägar rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs mer om [reserapporter](../reports/live-report.md).
 
 ![](assets/journey-end.png)
 
@@ -51,6 +57,10 @@ En resa kan avslutas på grund av följande orsaker:
 * Resan stängs manuellt med knappen [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances).
 
 Efter den globala tidsgränsen **för** 91-dagarsresan växlar en läsmålgruppsresa till statusen **Slutförd**. Beteendet är inställt för 91 dagar eftersom all information om profiler som har gått in i resan tas bort 91 dagar efter att de har gått in. Personer som fortfarande befinner sig på resan påverkas automatiskt. De avslutar resan efter 91-dagarstimeout.  Läs mer om [den globala tidsgränsen för resan](../building-journeys/journey-properties.md#global_timeout).
+
+>[!TIP]
+>
+>En segmentbaserad engångsresa behåller statusen **Live** även efter att en gång har körts. Profiler kan inte anges igen när de är klara, men resan är fortfarande i **Live**-status tills standardtidsgränsen för global är slut. Du kan stänga den manuellt tidigare med alternativet **Stäng till nya ingångar**.
 
 ### Nära nya ingångar {#close-to-new-entrances}
 
@@ -69,16 +79,13 @@ Du kan även:
 
 1. Klicka på **[!UICONTROL Close to new entrances]** och bekräfta i dialogrutan.
 
->[!TIP]
->
->En segmentbaserad engångsresa behåller statusen **Live** även efter att en gång har körts. Profiler kommer inte att anges igen när de är klara, men resan är fortfarande i **Live**-status tills den globala standardtidsgränsen går ut. Du kan stänga den manuellt tidigare med alternativet **Stäng till nya ingångar**.
+
 
 
 ## Stoppa en resa {#stop-journey}
 
 Om ni behöver stoppa alla enskilda personers framsteg på resan kan ni stoppa den. Tidsgränsen för att stoppa resan för alla personer på resan har uppnåtts. Att stoppa en resa innebär dock att alla som redan har tagit sig in på en resa stoppas under resans gång. Resan är i stort sett avstängd. Om du vill avsluta en resa bör du [stänga den](#close-journey).
 
-När den stoppas anges resestatusen till **[!UICONTROL Stopped]**.
 
 Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
 
@@ -92,3 +99,5 @@ Du kan även:
    ![](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Stop]** och bekräfta i dialogrutan.
+
+När den stoppas anges resestatusen till **[!UICONTROL Stopped]**.
