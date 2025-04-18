@@ -6,9 +6,9 @@ description: Lär dig schemalägga och starta samordnade kampanjer med Adobe Jou
 hide: true
 hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: bdc584c1aae0c735d81dfc95e11f96f755bea26a
+source-git-commit: cc89e09df989ad4bdfe1ecb855bc2a6eedea9676
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1107'
 ht-degree: 2%
 
 ---
@@ -127,9 +127,15 @@ Med visuella indikatorer i det övre högra hörnet av varje aktivitetsruta kan 
 
 ## Övervaka loggar och uppgifter {#logs-tasks}
 
-Övervakning av arbetsflöden, loggar och uppgifter är ett viktigt steg för att analysera era samordnade kampanjer och se till att de körs som de ska. De är tillgängliga från ikonen **[!UICONTROL Logs]** som är tillgänglig i åtgärdsverktygsfältet och i egenskapsrutan för varje aktivitet.
+>[!CONTEXTUALHELP]
+>id="ajo_campaign_logs"
+>title="Loggar och uppgifter"
+>abstract="Skärmen **Loggar och uppgifter** innehåller en historik över den samordnade kampanjkörningen, där alla användaråtgärder registreras och fel påträffas."
+
+Övervakning av loggar och uppgifter är ett viktigt steg för att analysera samordnade kampanjer och se till att de körs som de ska. De är tillgängliga från ikonen **[!UICONTROL Logs]** som är tillgänglig i åtgärdsverktygsfältet och i egenskapsrutan för varje aktivitet.
 
 Menyn **[!UICONTROL Logs and tasks]** innehåller en historik över den orkestrerade kampanjkörningen, där alla användaråtgärder och påträffade fel registreras.
+
 ![](assets/workflow-logs.png){zoomable="yes"}
 
 Det finns två typer av information:
