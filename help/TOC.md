@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c41d7e7543f3254479f63d4e104f471192e63632
+source-git-commit: 8998e4c6c1eca4e0cd6c0336df781eb6628b118d
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2337'
 ht-degree: 21%
 
 ---
@@ -174,7 +174,6 @@ ht-degree: 21%
          + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Samordnade kampanjer {#orchestrated-campaigns}
    + [Kom igång med samordnade kampanjer](using/ms/gs-ms-campaigns.md)
-   + [Konfigurationssteg](using/ms/gs-campaign-config.md)
    + [Viktiga principer](using/ms/gs-campaign-creation.md)
    + Konfiguration {#ms-config}
       + [Konfigurationssteg](using/ms/gs-campaign-config.md)
