@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d3bae15a3b9ae53c4f520a3867026c47938bcd62
+source-git-commit: c41d7e7543f3254479f63d4e104f471192e63632
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: '2339'
 ht-degree: 21%
 
 ---
@@ -172,10 +172,12 @@ ht-degree: 21%
          + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
          + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
          + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Samordnade kampanjer {#ms-campaigns}
++ Samordnade kampanjer {#orchestrated-campaigns}
    + [Kom igång med samordnade kampanjer](using/ms/gs-ms-campaigns.md)
+   + [Konfigurationssteg](using/ms/gs-campaign-config.md)
    + [Viktiga principer](using/ms/gs-campaign-creation.md)
    + Konfiguration {#ms-config}
+      + [Konfigurationssteg](using/ms/gs-campaign-config.md)
       + [Scheman](using/ms/ms-schemas.md)
       + [Arbeta med händelsevariabler](using/ms/event-variables.md)
    + Skapa din första samordnade kampanj {#create-ms-campaign}

@@ -6,9 +6,9 @@ description: Lär dig hur du börjar med samordnade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
+source-git-commit: c41d7e7543f3254479f63d4e104f471192e63632
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 **Innehållsförteckning**
 
-* Kom igång med orkestrerade kampanjer - [Key principes](gs-campaign-creation.md)
-* Konfiguration: [Arbeta med scheman](ms-schemas.md) - [Arbeta med händelsevariabler](event-variables.md)
-* Kom igång: [Skapa en strukturerad kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md) - [Starta och övervaka kampanjer](start-monitor-campaigns.md) - [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md) - [Personalization](ms-personalization.md)
+* Kom igång med samordnade kampanjer - [Nyckelobjekt](gs-campaign-creation.md)
+* Konfiguration: [Konfigurera dina samordnade kampanjer](gs-campaign-config.md) - [Arbeta med scheman](ms-schemas.md) - [Arbeta med händelsevariabler](event-variables.md)
+* Kom igång: [Skapa en orkestrerad kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md) - [Schemalägg och starta kampanjer](start-monitor-campaigns.md) - [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md) - [Personalization](ms-personalization.md)
 * Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Läs in fil](activities/load-file.md) 17} - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Schemaläggare](activities/scheduler.md) - [Dela](activities/split.md) - [Testa](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
 
 >[!ENDSHADEBOX]
@@ -36,13 +36,16 @@ En av de största fördelarna med samordnade kampanjer är att det blir enkelt a
 
 Samordnade kampanjer är otroligt mångsidiga och kan användas i olika sammanhang, bland annat för att hantera målgrupper eller skicka meddelanden, datahantering (ETL) för att hantera data och importera data.
 
-Med en omfattande grafisk miljö kan du designa processer som segmentering, kampanjutförande, filbearbetning. Samordnade kampanjer kan även omfatta användare genom att tilldela dem uppgifter eller låta dem godkänna utförda uppgifter, vilket gör det enklare att hantera teamets arbete och se till att allt görs på rätt sätt.
+Med en omfattande grafisk miljö kan du utforma processer som segmentering, kampanjutförande och filbearbetning. Samordnade kampanjer kan även omfatta användare genom att tilldela dem uppgifter eller låta dem godkänna utförda uppgifter, vilket gör det enklare att hantera teamets arbete och se till att allt görs på rätt sätt.
 
 
 ## Resesamordning och kampanjsamordning
 
-Journeys vs Campaigns - Förklara skillnaderna, användningsexempel och bästa praxis
+Kampanjsamordning är den ledande modulen för att designa, skicka och spåra varumärkeskommunikation i stor skala. Det möjliggör automatiserad distribution av marknadsföringsmeddelanden till målgrupper och utnyttjar befintliga datasegment för effektiv personalisering genom att kombinera profilenheter och icke-profilenheter. Kampanjsamordning är idealiskt för kampanjdriven outreach och säkerställer enhetlig och effektiv meddelandeleverans, som ofta schemaläggs i förväg, för att öka kundengagemanget och stödja viktiga marknadsföringsmål.
 
+Kampanjsamordning omdefinierar målgruppssegmenteringen genom att aktivera flera enheter i Adobe Journey Optimizer, och underlättar riktad kommunikation baserat t.ex. på specifika statusar, händelser, kontrakt eller bokningar. Eftersom du kan skicka kommunikation till andra enheter än profiler, eller skapa frågor på vilken enhet som helst, kan du få en helhetsbild och få en stor mängd insikter för att skapa era målgrupper.
+
+Kampanjsamordning ger datadrivna beslut och utnyttjar flera källor för en dynamiskt berikad datauppsättning.
 
 
 ## Låt oss dyka djupare
@@ -55,7 +58,7 @@ Nu när du har en förståelse för vilka arbetsflöden som är och vad du kan g
 <img alt="Få åtkomst till och hantera arbetsflöden" src="assets/do-not-localize/workflow-access.jpeg">
 </a>
 <div>
-<a href="gs-campaign-creation.md"><strong>Nyckelprinciper</strong></a>
+<a href="gs-campaign-creation.md"><strong>Konfigurationssteg</strong></a>
 </div>
 <p>
 </td>
@@ -63,7 +66,7 @@ Nu när du har en förståelse för vilka arbetsflöden som är och vad du kan g
 <a href="create-ms-campaign.md">
 <img alt="Lead" src="assets/do-not-localize/workflow-create.jpeg">
 </a>
-<div><a href="create-ms-campaign.md"><strong>Skapa en flerstegskampanj</strong>
+<div><a href="create-ms-campaign.md"><strong>Skapa en orkestrerad kampanj</strong>
 </div>
 <p>
 </td>
