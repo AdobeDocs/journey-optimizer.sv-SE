@@ -3,12 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Använd aktiviteten Ändra dimension
 description: Lär dig hur du använder aktiviteten Ändra dimension
+badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
-source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
+source-git-commit: f0213f1270e9821b61a5dc396e39f5707f8f4b42
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -27,11 +28,12 @@ ht-degree: 0%
 
 Aktiviteten **Ändra dimension** är en **målaktivitet**. Med den här aktiviteten kan ni ändra målgruppsdimensionen när ni skapar er samordnade kampanj. Axeln flyttas beroende på datamallen och indatamängden.
 
-Du kan till exempel växla en orkestrerad kampanjs målinriktningsdimension från&quot;Mottagare&quot; till&quot;prenumerantprogram&quot; för att skicka push-meddelanden till målmottagarna.
+Du kan t.ex. växla från&quot;profil&quot; till&quot;kontrakt&quot; för en orkestrerad kampanjs målinriktning för att skicka meddelanden till den avsedda avtalsägaren.
 
+<!--
 >[!IMPORTANT]
 >
->Observera att aktiviteterna **[!UICONTROL Change Dimension]** och **[!UICONTROL Change Data source]** inte ska läggas till på en rad. Om du behöver använda båda aktiviteterna i följd måste du ta med en **[!UICONTROL Enrichement]**-aktivitet mellan dem. Detta garanterar att programmet körs på rätt sätt och förhindrar eventuella konflikter och fel.
+>Please note that the **[!UICONTROL Change Dimension]** and **[!UICONTROL Change Data source]** activities should not be added in one row. If you need to use both activities consecutively, make sure you include an **[!UICONTROL Enrichement]** activity in between them. This ensures proper execution and prevents potential conflicts or errors.-->
 
 ## Konfigurera aktiviteten Ändra dimension {#configure}
 
@@ -39,9 +41,9 @@ Följ de här stegen för att konfigurera aktiviteten **Ändra dimension**:
 
 1. Lägg till en **Ändra dimension**-aktivitet i den orkestrerade kampanjen.
 
-   ![](../assets/workflow-change-dimension.png)
+   ![](assets/change-dimension.png)
 
-1. Definiera den **nya måldimensionen**. Vid dimensionsändring sparas alla poster. Andra alternativ är inte tillgängliga än.
+1. Definiera den **nya måldimensionen**. Vid dimensionsändring sparas alla poster.
 
 1. Kör den orkestrerade kampanjen för att visa resultatet. Jämför data i tabellerna före och efter ändringsdimensionsaktiviteten och jämför strukturen i de samordnade kampanjtabellerna.
 
@@ -51,4 +53,4 @@ I det här exemplet vill vi skicka en SMS-leverans till alla profiler som har gj
 
 Sedan använder vi en **[!UICONTROL Change dimension]**-aktivitet för att växla den orkestrerade målgruppsdimensionen för kampanjer till mottagare. På så sätt kan vi rikta in oss på de mottagare som matchar frågan.
 
-![](../assets/workflow-change-dimension-example.png)
+![](assets/change-dimension-example.png)
