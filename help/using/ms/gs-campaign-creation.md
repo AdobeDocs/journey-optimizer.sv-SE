@@ -3,12 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Viktiga principer för att skapa samordnade kampanjer
 description: Lär dig grunderna för samordnade kampanjer med Adobe Journey Optimizer
+badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
-source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
+source-git-commit: bdc584c1aae0c735d81dfc95e11f96f755bea26a
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---

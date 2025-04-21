@@ -1,15 +1,16 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Övervaka samordnade kampanjer med Adobe Journey Optimizer
-description: Lär dig övervaka och få tillgång till rapporter om samordnade kampanjer med Adobe Journey Optimizer
+title: Rapportering för samordnade kampanjer med Adobe Journey Optimizer
+description: Lär dig hur du får rapporter om samordnade kampanjer med Adobe Journey Optimizer
+badge: label="Alpha"
 hide: true
 hidefromtoc: true
-source-git-commit: 94ec0430995c26d6c0eaa68f523675997ed0a327
+source-git-commit: bdc584c1aae0c735d81dfc95e11f96f755bea26a
 workflow-type: tm+mt
-source-wordcount: '25'
+source-wordcount: '24'
 ht-degree: 0%
 
 ---
 
-# Samordnade kampanjrapporter och övervakning {#report-ms}
+# Rapportering av samordnade kampanjer {#report-ms}

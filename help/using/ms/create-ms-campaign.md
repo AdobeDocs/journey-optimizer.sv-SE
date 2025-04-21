@@ -3,12 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Skapa samordnade kampanjer med Journey Optimizer
 description: Lär dig hur du skapar en strukturerad kampanj med Adobe Journey Optimizer
+badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
-source-git-commit: 3d380d2d02eb7043aebcffd00bb2092e7341b0d5
+source-git-commit: bdc584c1aae0c735d81dfc95e11f96f755bea26a
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '695'
 ht-degree: 1%
 
 ---
