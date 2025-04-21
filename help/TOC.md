@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d4d7cab6b6841c2122d901f55c3162f0549ad5ff
+source-git-commit: 75a5a1dc7c6b411e44147250ab58a0eabf651207
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2344'
 ht-degree: 21%
 
 ---
@@ -174,15 +174,16 @@ ht-degree: 21%
          + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Samordnade kampanjer {#orchestrated-campaigns}
    + [Kom igång med samordnade kampanjer](using/ms/gs-ms-campaigns.md)
-   + [Viktiga principer](using/ms/gs-campaign-creation.md)
    + Konfiguration {#ms-config}
       + [Konfigurationssteg](using/ms/gs-campaign-config.md)
       + [Skapa relationsscheman](using/ms/ms-schemas.md)
-      + [Arbeta med händelsevariabler](using/ms/event-variables.md)
    + Skapa din första samordnade kampanj {#create-ms-campaign}
+      + [Viktiga principer](using/ms/gs-campaign-creation.md)
       + [Skapa en orkestrerad kampanj](using/ms/create-ms-campaign.md)
       + [Organisera aktiviteter](using/ms/orchestrate-activities.md)
       + [Konfigurera kampanjinställningar](using/ms/ms-campaign-settings.md)
+      + [Skapa frågor](using/ms/ms-query-modeler.md)
+      + [Testa och validera dina meddelanden](using/ms/ms-proofs.md)
       + [Schemalägg och starta kampanjer](using/ms/start-monitor-campaigns.md)
       + [Rapportering av samordnade kampanjer](using/ms/reporting-campaigns.md)
       + [Hantera personalisering](using/ms/ms-personalization.md)
@@ -199,7 +200,6 @@ ht-degree: 21%
       + [Ladda fil](using/ms/activities/load-file.md)
       + [Avstämning](using/ms/activities/reconciliation.md)
       + [Spara målgrupp](using/ms/activities/save-audience.md)
-      + [Schemaläggare](using/ms/activities/scheduler.md)
       + [Dela](using/ms/activities/split.md)
       + [Test](using/ms/activities/test.md)
       + [Uppdatera data](using/ms/activities/update-data.md)

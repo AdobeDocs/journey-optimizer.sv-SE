@@ -3,12 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med samordnade kampanjer
 description: Lär dig hur du börjar med samordnade kampanjer
+badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 94ec0430995c26d6c0eaa68f523675997ed0a327
+source-git-commit: 75a5a1dc7c6b411e44147250ab58a0eabf651207
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -19,12 +20,22 @@ ht-degree: 0%
 
 **Innehållsförteckning**
 
-* Kom igång med samordnade kampanjer - [Nyckelobjekt](gs-campaign-creation.md)
-* Konfiguration: [Konfigurera dina samordnade kampanjer](gs-campaign-config.md) - [Arbeta med scheman](ms-schemas.md) - [Arbeta med händelsevariabler](event-variables.md)
-* Kom igång: [Skapa en orkestrerad kampanj](create-ms-campaign.md) - [Konfigurera kampanjinställningar](ms-campaign-settings.md) - [Kom igång med aktiviteter](activities/about-activities.md) - [Organisera aktiviteter](orchestrate-activities.md) - [Personalization](ms-personalization.md)
-* Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Läs in fil](activities/load-file.md) 17} - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Schemaläggare](activities/scheduler.md) - [Dela](activities/split.md) - [Testa](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
+* Kom igång med samordnade kampanjer
+* Konfiguration
+   * [Konfigurera dina samordnade kampanjer](gs-campaign-config.md)
+   * [Skapa relationsscheman](ms-schemas.md)
+* Skapa din första samordnade kampanj
+   * [Nyckelobjekt](gs-campaign-creation.md)
+   * [Skapa en orkestrerad kampanj](create-ms-campaign.md)
+   * [Konfigurera kampanjinställningar](ms-campaign-settings.md)
+   * [Kom igång med aktiviteter](activities/about-activities.md)
+   * [Organisera aktiviteter](orchestrate-activities.md)
+* [Anpassa era meddelanden](ms-personalization.md)
+* [Skapa frågor](ms-query-modeler.md)
+* [Testa och validera dina meddelanden](ms-proofs.md)
 * [Schemalägg och starta kampanjer](start-monitor-campaigns.md)
-* [Övervakning och rapportering](reporting-campaigns.md)
+* Lista över aktiviteter: [AND-JOIN](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Deduplicering](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berikning](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Ladda fil](activities/load-file.md) - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Dela](activities/split.md) - [Test](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
+* [Rapportering](reporting-campaigns.md)
 
 >[!ENDSHADEBOX]
 
