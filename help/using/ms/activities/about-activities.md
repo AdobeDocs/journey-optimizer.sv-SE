@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
-source-git-commit: 733b08dff82f0d6f0f62d2e7644aeee493a69503
+source-git-commit: b620d479548791df97912b143e7dbe7557ab4acc
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,12 @@ Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringsk
 
 ![Lista över flödeskontrollaktiviteter](../assets/flow-control-activities.png){width="30%" align="left"}
 
-
 Följande aktiviteter är specifika för att organisera och köra samordnade kampanjer. Deras huvuduppgift är att samordna de övriga verksamheterna:
 
 * [And-join](and-join.md): Synkronisera flera körningsgrenar för en orkestrerad kampanj.
-* **Slut**: Markera grafiskt slutet på en orkestrerad kampanj. Denna aktivitet har ingen funktionell inverkan och är därför valfri
 * [Förgrening](fork.md): Skapa utgående övergångar om du vill starta flera aktiviteter samtidigt.
-* [Test](test.md): Aktivera övergångar baserat på angivna villkor.
+  <!--* [Test](test.md): Enable transitions based on specified conditions.-->
 * [Vänta](wait.md): Pausa körningen av en del av en orkestrerad kampanj tillfälligt.
+
+>[!NOTE]
+>Aktiviteten **End** markerar slutet på en orkestrerad kampanj grafiskt. Denna aktivitet har ingen funktionell inverkan och är därför valfri
