@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
-source-git-commit: 97beaa01e33a5297815b43651019629fc9637f9a
+source-git-commit: 733b08dff82f0d6f0f62d2e7644aeee493a69503
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -24,13 +24,13 @@ Alla aktiviteter beskrivs i avsnitten nedan:
 * [Kanalaktiviteter](#channel)
 * [Flödeskontroll](#flow-control)
 
-![Lista över tillgängliga aktiviteter på arbetsytan](../assets/workflow-activities.png){width="70%" align="left"}
+![Lista över tillgängliga aktiviteter på arbetsytan](../assets/workflow-activities.png){width="80%" align="left"}
 
 ## Verksamheter som riktar sig till {#targeting}
 
 Dessa aktiviteter är specifika för målgruppsanpassning. Med dem kan du skapa ett eller flera mål genom att definiera en målgrupp och dela eller kombinera dessa målgrupper med hjälp av skärnings-, union- eller uteslutningsåtgärder.
 
-![Lista över målinriktade aktiviteter](../assets/targeting-activities.png){width="50%" align="left"}
+![Lista över målinriktade aktiviteter](../assets/targeting-activities.png){width="40%" align="left"}
 
 * [Skapa målgrupp](build-audience.md): Definiera målpopulationen. Du kan antingen välja en befintlig målgrupp eller använda frågemodelleraren för att definiera en egen fråga.
 * [Ändra dimension](change-dimension.md): Ändra målinriktningsdimensionen när du skapar din samordnade kampanj.
@@ -51,7 +51,7 @@ Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringsk
 >title="Avsluta aktivitet"
 >abstract="Med aktiviteten **End** kan du grafiskt markera slutet på en orkestrerad kampanj. Denna aktivitet har ingen funktionell inverkan och är därför frivillig."
 
-![Lista över flödeskontrollaktiviteter](../assets/flow-control-activities.png){width="50%" align="left"}
+![Lista över flödeskontrollaktiviteter](../assets/flow-control-activities.png){width="30%" align="left"}
 
 
 Följande aktiviteter är specifika för att organisera och köra samordnade kampanjer. Deras huvuduppgift är att samordna de övriga verksamheterna:
