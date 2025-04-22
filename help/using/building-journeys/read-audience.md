@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 48a1ef9a48cecddf340031fcbbec4fe574cb2839
+source-git-commit: ca51c88c122cce23364b86a1da8900d0d5b37aaf
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1750'
 ht-degree: 0%
 
 ---
@@ -52,13 +52,13 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
->title="Synkronisera resan med målgruppsexport"
->abstract="Växla till det här alternativet om du vill utlösa resan när det finns en ny export av målgruppen."
+>title="Utlösare efter utvärdering av batchmålgrupp"
+>abstract="Växla till det här alternativet om du vill aktivera körning av resan efter en ny utvärdering av gruppmålgruppen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
->title="Synkronisera resan med målgruppsexport"
->abstract="Ange hur lång tid resan ska ta att vänta på att en ny export av publiken ska vara tillgänglig."
+>title="Vänta på en ny målgruppsutvärdering"
+>abstract="Ange den tid som resan väntar på att batchmålgruppen ska utvärderas nyligen."
 
 Använd aktiviteten **Läs målgrupp** för att få alla personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
