@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 75a5a1dc7c6b411e44147250ab58a0eabf651207
+source-git-commit: a6b293a5eb1358f692d53c9611b794cf8f7fc753
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 * [Skapa frågor](ms-query-modeler.md)
 * [Testa och validera dina meddelanden](ms-proofs.md)
 * [Schemalägg och starta kampanjer](start-monitor-campaigns.md)
-* Lista över aktiviteter: [AND-JOIN](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Deduplicering](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berikning](activities/enrichment.md) - [Förgrening](activities/fork.md) - [Ladda fil](activities/load-file.md) - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Dela](activities/split.md) - [Test](activities/test.md) - [Uppdatera data](activities/update-data.md) - [Vänta](activities/wait.md)
+* Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förening](activities/fork.md) - [Förvrängning](activities/reconciliation.md) 17} - [Spara målgrupp](activities/save-audience.md) - [Dela](activities/split.md) - [Testa](activities/test.md) - [Vänta](activities/wait.md)
 * [Rapportering](reporting-campaigns.md)
 
 >[!ENDSHADEBOX]

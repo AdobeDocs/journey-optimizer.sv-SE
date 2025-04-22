@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
-source-git-commit: 960c7ab18cdca6e34c06f2dc6672aefdb5340ef0
+source-git-commit: a6b293a5eb1358f692d53c9611b794cf8f7fc753
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,6 @@ Dessa aktiviteter är specifika för målgruppsanpassning. Med dem kan du skapa 
 * [Avstämning](reconciliation.md): Definiera länken mellan data i Journey Optimizer-data och data i en arbetstabell, till exempel data som lästs in från en extern fil.
 * [Spara målgrupp](save-audience.md): Uppdatera en befintlig målgrupp eller skapa en ny målgrupp från populationen som beräknas uppströms i en orkestrerad kampanj.
 * [Dela](split.md): Segmentera inkommande population i flera deluppsättningar.
-
-## Datahanteringsaktiviteter {#data}
-
-Dessa aktiviteter är specifika för att hantera och berika populationsdata.
-
-* [Läs in fil](load-file.md): Arbeta med profiler och data som lagras i en extern fil.
-* [Uppdatera data](update-data.md): Utför massuppdateringar för fält i databasen. Flera alternativ gör att du kan anpassa datauppdateringen.
 
 ## Kanalaktiviteter {#channel}
 

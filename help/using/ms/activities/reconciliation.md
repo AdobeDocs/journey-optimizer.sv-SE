@@ -7,10 +7,10 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
-source-git-commit: bdc584c1aae0c735d81dfc95e11f96f755bea26a
+source-git-commit: a6b293a5eb1358f692d53c9611b794cf8f7fc753
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 9%
+source-wordcount: '560'
+ht-degree: 6%
 
 ---
 
@@ -93,33 +93,3 @@ Så här konfigurerar du aktiviteten **Avstämning**:
 1. Du kan filtrera data för avstämning med knappen **Skapa filter** . Detta gör att du kan skapa ett anpassat villkor med hjälp av frågemodelleraren.
 
 Som standard lagras ej avstämda data i den utgående övergången och är tillgängliga i arbetsboken för framtida bruk. Om du vill ta bort ej avstämda data inaktiverar du alternativet **Behåll ej avstämda data**.
-
-## Exempel {#reconciliation-example}
-
-I följande exempel visas en strukturerad kampanj som skapar en publik med profiler direkt från en importerad fil som innehåller nya klienter. Den består av följande verksamheter:
-
-Den samordnade kampanjen har följande utformning:
-
-![](../assets/workflow-reconciliation-sample-1.0.png)
-
-
-Den har följande aktiviteter:
-
-* En [Läs in fil](load-file.md)-aktivitet överför en fil som innehåller profildata som har extraherats från ett externt verktyg.
-
-  Exempel:
-
-  ```
-  lastname;firstname;email;birthdate;
-  JACKMAN;Megan;megan.jackman@testmail.com;07/08/1975;
-  PHILLIPS;Edward;phillips@testmail.com;09/03/1986;
-  WEAVER;Justin;justin_w@testmail.com;11/15/1990;
-  MARTIN;Babe;babeth_martin@testmail.net;11/25/1964;
-  REESE;Richard;rreese@testmail.com;02/08/1987;
-  ```
-
-* En **avstämningsaktivitet** som identifierar inkommande data som profiler, genom att använda fälten **email** och **Date of born** som avstämningsvillkor.
-
-  ![](../assets/workflow-reconciliation-sample-1.1.png)
-
-* En [Spara målgruppsaktivitet](save-audience.md) om du vill skapa en ny målgrupp baserat på dessa uppdateringar. Du kan också ersätta aktiviteten **Spara målgrupp** med en **End**-aktivitet om ingen specifik målgrupp behöver skapas eller uppdateras. Mottagarprofiler uppdateras i alla fall när du kör den orkestrerade kampanjen.
