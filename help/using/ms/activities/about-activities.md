@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
-source-git-commit: a6b293a5eb1358f692d53c9611b794cf8f7fc753
+source-git-commit: 97beaa01e33a5297815b43651019629fc9637f9a
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,17 @@ Samordnade kampanjaktiviteter grupperas i tre kategorier. Beroende på sammanhan
 
 Alla aktiviteter beskrivs i avsnitten nedan:
 
-* [Verksamheter som rör målinriktning och datahantering](#targeting)
+* [Verksamheter som riktar sig till](#targeting)
 * [Kanalaktiviteter](#channel)
 * [Flödeskontroll](#flow-control)
 
-![](../assets/workflow-activities.png)
+![Lista över tillgängliga aktiviteter på arbetsytan](../assets/workflow-activities.png){width="70%" align="left"}
 
 ## Verksamheter som riktar sig till {#targeting}
 
 Dessa aktiviteter är specifika för målgruppsanpassning. Med dem kan du skapa ett eller flera mål genom att definiera en målgrupp och dela eller kombinera dessa målgrupper med hjälp av skärnings-, union- eller uteslutningsåtgärder.
+
+![Lista över målinriktade aktiviteter](../assets/targeting-activities.png){width="50%" align="left"}
 
 * [Skapa målgrupp](build-audience.md): Definiera målpopulationen. Du kan antingen välja en befintlig målgrupp eller använda frågemodelleraren för att definiera en egen fråga.
 * [Ändra dimension](change-dimension.md): Ändra målinriktningsdimensionen när du skapar din samordnade kampanj.
@@ -36,12 +38,11 @@ Dessa aktiviteter är specifika för målgruppsanpassning. Med dem kan du skapa 
 * [Deduplicering](deduplication.md): Ta bort dubbletter i resultatet/resultaten av inkommande aktiviteter.
 * [Berikning](enrichment.md): Definiera ytterligare data som ska bearbetas i den orkestrerade kampanjen. Med den här aktiviteten kan du utnyttja den inkommande övergången och konfigurera aktiviteten för att slutföra utdataövergången med ytterligare data.
 * [Avstämning](reconciliation.md): Definiera länken mellan data i Journey Optimizer-data och data i en arbetstabell, till exempel data som lästs in från en extern fil.
-* [Spara målgrupp](save-audience.md): Uppdatera en befintlig målgrupp eller skapa en ny målgrupp från populationen som beräknas uppströms i en orkestrerad kampanj.
 * [Dela](split.md): Segmentera inkommande population i flera deluppsättningar.
 
 ## Kanalaktiviteter {#channel}
 
-Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i flera kanaler. Ni kan kombinera kanalaktiviteter på arbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende. Följande **kanalaktiviteter** är tillgängliga: E-post, SMS, Android och iOS push-meddelanden. [Lär dig hur du ställer in en leverans i samband med en orkestrerad kampanj](channels.md).
+Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i flera kanaler. Ni kan kombinera kanalaktiviteter på arbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende. Följande **kanalaktiviteter** är tillgängliga: E-post, SMS, Android och iOS push-meddelanden. [Lär dig hur du skapar en kanalåtgärd i samband med en orkestrerad kampanj](channels.md).
 
 ## Flödeskontroll {#flow-control}
 
@@ -49,6 +50,9 @@ Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringsk
 >id="ajo_orchestration_end"
 >title="Avsluta aktivitet"
 >abstract="Med aktiviteten **End** kan du grafiskt markera slutet på en orkestrerad kampanj. Denna aktivitet har ingen funktionell inverkan och är därför frivillig."
+
+![Lista över flödeskontrollaktiviteter](../assets/flow-control-activities.png){width="50%" align="left"}
+
 
 Följande aktiviteter är specifika för att organisera och köra samordnade kampanjer. Deras huvuduppgift är att samordna de övriga verksamheterna:
 
