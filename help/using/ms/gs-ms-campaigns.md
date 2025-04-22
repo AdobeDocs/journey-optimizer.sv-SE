@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 97beaa01e33a5297815b43651019629fc9637f9a
+source-git-commit: 7cd52f1954e50be521a6fc9ae26fb63586c53faa
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -20,22 +20,19 @@ ht-degree: 0%
 
 **Innehållsförteckning**
 
-* Kom igång med samordnade kampanjer
-* Konfiguration
-   * [Konfigurera dina samordnade kampanjer](gs-campaign-config.md)
-   * [Skapa relationsscheman](ms-schemas.md)
-* Skapa din första samordnade kampanj
-   * [Nyckelobjekt](gs-campaign-creation.md)
-   * [Skapa en orkestrerad kampanj](create-ms-campaign.md)
-   * [Konfigurera kampanjinställningar](ms-campaign-settings.md)
-   * [Kom igång med aktiviteter](activities/about-activities.md)
-   * [Organisera aktiviteter](orchestrate-activities.md)
+* Konfiguration: [Konfigurera dina samordnade kampanjer](gs-campaign-config.md)
+* Konfiguration: [Skapa relationsscheman](ms-schemas.md)
+* Skapa din första samordnade kampanj: [Nyckelobjekt](gs-campaign-creation.md)
+* [Skapa en orkestrerad kampanj](create-ms-campaign.md)
+* [Konfigurera kampanjinställningar](ms-campaign-settings.md)
 * [Anpassa era meddelanden](ms-personalization.md)
 * [Skapa frågor](ms-query-modeler.md)
 * [Testa och validera dina meddelanden](ms-proofs.md)
 * [Schemalägg och starta kampanjer](start-monitor-campaigns.md)
-* Lista över aktiviteter: [Och-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berika](activities/enrichment.md) - [Förening](activities/fork.md) - [Förvrängning](activities/reconciliation.md) 17} - [Dela](activities/split.md) - [Testa](activities/test.md) - [Vänta](activities/wait.md)
-* [Rapportering](reporting-campaigns.md)
+* Aktiviteter: [Kom igång med aktiviteter](activities/about-activities.md)
+* [Organisera aktiviteter](orchestrate-activities.md)
+* [Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berikning](activities/enrichment.md) - [Förena](activities/fork.md) - [Förening](activities/reconciliation.md) - [Dela](activities/split.md) - &lt;!—[Test](activities/test.md) —> [Wait](activities/wait.md)
+* Övervakning: [Rapportering](reporting-campaigns.md)
 
 >[!ENDSHADEBOX]
 
