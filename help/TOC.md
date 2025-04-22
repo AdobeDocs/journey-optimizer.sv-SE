@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 75a5a1dc7c6b411e44147250ab58a0eabf651207
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2340'
 ht-degree: 21%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 21%
    + [Söka, filtrera, kategorisera](using/start/search-filter-categorize.md)
    + [Tillgänglighet](using/start/accessibility.md)
    + [Use Case Playbooks](using/start/playbooks.md)
-   + [Arbeta med AI-assistenten](using/start/ai-assistant.md)
+   + [Arbeta med AI Assistant](using/start/ai-assistant.md)
    + [Guardrails](using/start/guardrails.md)
    + [Bästa praxis](using/start/best-practices.md)
 + Resor {#orchestrate-journeys}
@@ -202,7 +202,6 @@ ht-degree: 21%
       + [Spara målgrupp](using/ms/activities/save-audience.md)
       + [Dela](using/ms/activities/split.md)
       + [Test](using/ms/activities/test.md)
-      + [Uppdatera data](using/ms/activities/update-data.md)
       + [Vänta](using/ms/activities/wait.md)
 + Kampanjer {#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
@@ -348,7 +347,7 @@ ht-degree: 21%
       + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
 + Innehållshantering {#content-management}
    + AI Assistant för innehållsgenerering{#ai-assistant}
-      + [Kom igång med AI-assistenten](using/content-management/gs-generative.md)
+      + [Kom igång med AI Assistant](using/content-management/gs-generative.md)
       + [E-postgenerering med AI](using/content-management/generative-email.md)
       + [Push-generering med AI](using/content-management/generative-push.md)
       + [SMS-generering med AI](using/content-management/generative-sms.md)

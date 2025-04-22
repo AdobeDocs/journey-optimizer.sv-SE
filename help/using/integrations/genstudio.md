@@ -8,7 +8,7 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 exl-id: c22a44a8-e4e2-453a-9ca2-b80f7c0edc19
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 >
 >Den här funktionen är endast tillgänglig för e-postkanalen.
 
-[Adobe GenStudio for Performance Marketing](https://business.adobe.com/products/genstudio-for-performance-marketing.html){target="_blank"} är en generativ AI-tillämpning som gör att marknadsföringsteamen kan skapa egna annonser och e-postmeddelanden för att driva effektiva, personaliserade marknadsföringskampanjer som följer varumärkesstandarderna och följer företagets policyer. Genom att utnyttja Adobe AI-teknik får du en omfattande verktygslåda som förenklar komplexa funktioner för att skapa och hantera innehåll så att kreatörerna kan fokusera på innovation.
+[Adobe GenStudio for Performance Marketing](https://business.adobe.com/products/genstudio-for-performance-marketing.html){target="_blank"} är en generativ AI-tillämpning som gör att marknadsföringsteamen kan skapa egna annonser och e-postmeddelanden för att skapa effektiva, personaliserade marknadsföringskampanjer som följer ert varumärke och följer företagets policy. Genom att utnyttja Adobe AI-teknik får du en omfattande verktygslåda som förenklar komplexa funktioner för att skapa och hantera innehåll så att kreatörerna kan fokusera på innovation.
 
 Läs mer om [!DNL GenStudio for Performance Marketing] i den dedikerade [dokumentationen](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/home){target="_blank"}.
 
@@ -50,7 +50,7 @@ För att öka marknadsföringens effektivitet och upprätthålla varumärkets en
 
 General guidelines for using the GenStudio integration in [!DNL Adobe Journey Optimizer] for email generation are listed below:
 
-See if guidelines/limitations such as the ones listed [here](gs-generative.md#generative-guardrails) for the AI Assistant can apply.
+See if guidelines/limitations such as the ones listed [here](gs-generative.md#generative-guardrails) for AI Assistant can apply.
 
 The following limitations apply to GenStudio integration in [!DNL Adobe Journey Optimizer]:-->
 

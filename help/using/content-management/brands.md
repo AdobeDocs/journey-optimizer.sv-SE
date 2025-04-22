@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Om du vill skapa och hantera varumärkesriktlinjerna kan du antingen ange detalj
 
    ![](assets/brands-4.png)
 
-1. När konfigurationen är klar klickar du på **[!UICONTROL Save]** och sedan på **[!UICONTROL Publish]** för att göra din varumärkesriktlinje tillgänglig i AI-assistenten.
+1. När konfigurationen är klar klickar du på **[!UICONTROL Save]** och sedan på **[!UICONTROL Publish]** för att göra din varumärkesriktlinje tillgänglig i AI Assistant.
 
 1. Klicka på **[!UICONTROL Edit brand]** om du vill ändra det publicerade varumärket.
 
@@ -152,6 +152,6 @@ Om du vill skapa och hantera varumärkesriktlinjerna kan du antingen ange detalj
 
    ![](assets/brands-6.png)
 
-Riktlinjerna för ditt varumärke är nu tillgängliga från listrutan **[!UICONTROL Brand]** i AI-assistentmenyn, vilket gör att det kan generera innehåll och resurser som är anpassade till dina specifikationer. [Läs mer om AI-assistenten](gs-generative.md)
+Riktlinjerna för ditt varumärke finns nu i listrutan **[!UICONTROL Brand]** i AI Assistant-menyn, vilket gör det möjligt att generera innehåll och resurser som är anpassade till dina specifikationer. [Läs mer om AI Assistant](gs-generative.md)
 
 ![](assets/brands-7.png)

@@ -9,9 +9,9 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5d014017-ca7c-4206-b783-989677ec0e1c
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Inbyggda behörigheter representerar olika behörigheter som kan tilldelas **[!U
 
 | Funktion | Behörigheter |
 |-|-|
-| AI-assistent | **[!DNL Generate content]**: åtkomst till AI-assistenten i Journey Optimizer. |
+| AI-assistent | **[!DNL Generate content]**: åtkomst till AI Assistant i Journey Optimizer. |
 | Kampanjer | **[!DNL Approve & publish Campaigns]**: rätt att godkänna och publicera kampanjer när en princip tillämpas. </br>**[!DNL Manage campaigns]**: läs, skapa, redigera och ta bort kampanjer.</br>**[!DNL Publish campaigns]**: rätt att publicera kampanjer.</br>**[!DNL View campaigns]**: skrivskyddad åtkomst till kampanjer.</br>**[!DNL View campaigns report]**: läs och redigera kampanjrapporter. |
 | Kanalkonfigurationer | **[!DNL Export suppression list]**: åtkomst till en lista över undertryckande export som en CSV-fil.</br>**[!DNL Manage alerts]**: aktivera/inaktivera aviseringar för kampanjer, meddelanden och berättiganden.</br> **[!DNL Manage file routing]**: läs, skapa, redigera och ta bort filroutningskonfigurationer. </br> **[!DNL Manage IP pools]**: läs, skapa, redigera och ta bort IP-pool. </br>**[!DNL Manage landing page settings]**: läs, skapa, redigera och ta bort inställningar för landningssida.</br> **[!DNL Manage messages general settings]**: läs, skapa, redigera och ta bort allmänna inställningar för meddelanden.</br>**[!DNL Manage messages presets]**: läs, skapa, redigera och ta bort innehållsmärkning.</br>**[!DNL Manage PTR records]**: läs och redigera PTR-poster. </br>**[!DNL Manage SMS settings]**: läs, skapa, redigera och ta bort SMS-inställningar.</br>**[!DNL Manage SMS subdomains]**: läs, skapa, redigera och ta bort SMS-underdomäner.</br> **[!DNL Manage Seedlist]**: läs, skapa, redigera och ta bort listan Seedlist. </br> **[!DNL Manage subdomains delegation]**: läsa, skapa, redigera och ta bort underdomänsdelegering. </br>**[!DNL Manage suppression rules]**: få åtkomst till regler för att läsa, skapa, redigera och ta bort inaktiveringar.</br> **[!DNL View channel surfaces]**: skrivskyddad åtkomst till kanalytor.</br>**[!DNL View file routing]**: skrivskyddad åtkomst till konfigurationer för filroutning.</br>**[!DNL View messages general settings]**: skrivskyddad åtkomst till allmänna inställningar för meddelanden.</br> **[!DNL View messages presets]**: skrivskyddad åtkomst till meddelandeförinställningar. </br> **[!DNL View PTR records]**: skrivskyddad åtkomst till PTR-poster.</br>**[!DNL View suppression list]**: läs och exportera en lokal undertryckningslista. |
 | Kontrollpaneler | **[!DNL View license usage dashboards]**: skrivskyddad åtkomst till kontrollpanelen för [licensanvändning](../audience/license-usage.md). </br>**[!DNL Manage custom dashboards]**: gör att du kan skapa en ny instrumentpanel eller redigera en befintlig instrumentpanel.</br>**[!DNL Manage standard dashboards]**: gör att du kan skapa anpassade widgetar och redigera widgetschemat via widgetbiblioteket.</br>**[!DNL View custom dashboards]**: skrivskyddad åtkomst till användardefinierade instrumentpaneler.</br>**[!DNL View standard dashboards]**: skrivskyddad åtkomst till kontrollpanelerna Profiler, Destinationer och Publiker. |

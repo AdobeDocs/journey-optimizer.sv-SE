@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: d3bae15a3b9ae53c4f520a3867026c47938bcd62
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1241'
 ht-degree: 9%
 
 ---
@@ -104,7 +104,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Lagt till ett avsnitt om hantering av reseåterförsök. [Läs mer](../building-journeys/read-audience.md#read-audience-retry)
 * Vanliga frågor om begränsning/begränsning av begränsning för anpassade åtgärder har uppdaterats för att ange standardregel för begränsning. [Läs mer](../configuration/external-systems.md#faq)
 * Avsnittet Kontroll av åtkomst har uppdaterats med behörigheter för innehållsgeneratorn i AI Assistant. [Läs mer](../administration/high-low-permissions.md#ai-permission)
-* En video om AI Assistant Content Generator för e-postgenerering har lagts till. [Läs mer](../content-management/generative-email.md#video)
+* En video om hur AI Assistant Content Generator genererar e-postmeddelanden har lagts till. [Läs mer](../content-management/generative-email.md#video)
 
 <!--
 

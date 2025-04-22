@@ -1,28 +1,28 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: E-postgenerering med AI-assistenten i Journey Optimizer
-description: Börja generera e-postinnehåll och resurser med AI-assistenten i Journey Optimizer
+title: E-postgenerering med AI Assistant i Journey Optimizer
+description: Börja generera e-postinnehåll och resurser med AI Assistant i Journey Optimizer
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
-source-git-commit: d2c008ab9b63df5b7a0ded317a97a4d26d2319e3
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '1584'
+source-wordcount: '1561'
 ht-degree: 1%
 
 ---
 
-# E-postgenerering med AI-assistenten  {#generative-email}
+# E-postgenerering med AI Assistant  {#generative-email}
 
 >[!IMPORTANT]
 >
 >Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
 ></br>
 >
->Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI-assistenten i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
+>Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI Assistant i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
 När du har skapat och anpassat dina e-postmeddelanden kan du utnyttja kraften i AI Assistant i Journey Optimizer, som drivs av generativ AI, för att lyfta fram ditt innehåll.
 
@@ -34,7 +34,7 @@ Gå igenom flikarna nedan och lär dig hur du använder AI Assistant i Journey O
 
 >[!TAB Fullständig e-postgenerering]
 
-I följande exempel använder vi AI-assistenten för att förfina en befintlig e-postmall.
+I följande exempel använder vi AI Assistant för att förfina en befintlig e-postmall.
 
 1. När du har skapat och konfigurerat din e-postkampanj klickar du på **[!UICONTROL Edit content]**.
 
@@ -44,7 +44,7 @@ I följande exempel använder vi AI-assistenten för att förfina en befintlig e
 
    ![](assets/full-email-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Use original content]** för AI-assistenten för att anpassa nytt innehåll baserat på det valda innehållet.
+1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
@@ -62,7 +62,7 @@ I följande exempel använder vi AI-assistenten för att förfina en befintlig e
 
    * **[!UICONTROL Communication strategy]**: Välj den lämpligaste kommunikationsstilen för den genererade texten.
    * **[!UICONTROL Languages]**: Spanska, italienska, svenska och norska språken är tillgängliga som en privat betaversion för alla kunder i framtida versioner.
-   * **[!UICONTROL Tone]**: Tonen i ditt e-postmeddelande bör matcha med din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI-assistenten anpassa meddelandet därefter.
+   * **[!UICONTROL Tone]**: Tonen i ditt e-postmeddelande bör matcha med din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
 
    ![](assets/full-email-4.png){zoomable="yes"}
 
@@ -76,7 +76,7 @@ I följande exempel använder vi AI-assistenten för att förfina en befintlig e
 
    ![](assets/full-email-6.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten eller välja en som har överförts tidigare.
+1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
@@ -90,7 +90,7 @@ I följande exempel använder vi AI-assistenten för att förfina en befintlig e
 
    * **[!UICONTROL Rephrase]**: AI-assistenten kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
 
-   * **[!UICONTROL Use simpler language]**: Utnyttja AI-assistenten för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
+   * **[!UICONTROL Use simpler language]**: Använd AI Assistant för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
@@ -116,7 +116,7 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
    ![](assets/text-genai-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Use original content]** för AI-assistenten för att anpassa nytt innehåll baserat på det valda innehållet.
+1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
@@ -132,12 +132,12 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
    * **[!UICONTROL Communication strategy]**: Välj den lämpligaste kommunikationsstilen för den genererade texten.
    * **[!UICONTROL Languages]**: Spanska, italienska, svenska och norska språken är tillgängliga som en privat betaversion för alla kunder i framtida versioner.
-   * **[!UICONTROL Tone]**: Tonen i ditt e-postmeddelande bör matcha med din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI-assistenten anpassa meddelandet därefter.
+   * **[!UICONTROL Tone]**: Tonen i ditt e-postmeddelande bör matcha med din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
    * **Textlängd**: Använd reglaget för att välja önskad längd på texten.
 
    ![](assets/text-genai-4.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten eller välja en som har överförts tidigare.
+1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
@@ -153,11 +153,11 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
    * **[!UICONTROL Elaborate]**: AI-assistenten kan hjälpa dig att expandera specifika ämnen och ge ytterligare information för bättre förståelse och engagemang.
 
-   * **[!UICONTROL Summarize]**: Långvarig information kan överlagra e-postmottagare. Använd AI Assistant för att dra ihop viktiga punkter till tydliga, kortfattade sammanfattningar som får dem att läsa mer.
+   * **[!UICONTROL Summarize]**: Långvarig information kan överlagra e-postmottagare. Använd AI Assistant för att komprimera viktiga punkter till tydliga, kortfattade sammanfattningar som får dem att lyssna och uppmuntrar dem att läsa vidare.
 
    * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
 
-   * **[!UICONTROL Use simpler language]**: Utnyttja AI-assistenten för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
+   * **[!UICONTROL Use simpler language]**: Använd AI Assistant för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
@@ -179,13 +179,13 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
    Mer information om hur du konfigurerar din e-postkampanj finns på [den här sidan](../email/create-email.md).
 
-1. Markera den resurs som du vill ändra med AI-assistenten.
+1. Markera den resurs som du vill ändra med AI Assistant.
 
 1. Välj **[!UICONTROL AI Assistant]** på den högra menyn.
 
    ![](assets/image-genai-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Reference style]** för AI-assistenten för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
+1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
@@ -208,7 +208,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
    ![](assets/image-genai-4.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten eller välja en som har överförts tidigare.
+1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 

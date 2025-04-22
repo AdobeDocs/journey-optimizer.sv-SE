@@ -1,25 +1,25 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Arbeta med AI-assistenten
+title: Arbeta med AI Assistant
 description: Lär dig utnyttja AI Assistant
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 03136a25-b826-49e9-86c4-b3711913ee72
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
-# Arbeta med AI-assistenten {#ai-assistant}
+# Arbeta med AI Assistant {#ai-assistant}
 
 AI Assistant är en gränssnittsfunktion som du kan använda för att navigera bland och förstå Adobe-koncept och få driftsinsikter för just din miljö. Det finns i flera Adobe Experience Cloud-produkter, inklusive Adobe Journey Optimizer.
 
-Du öppnar AI-assistenten genom att klicka på ikonen i det övre fältet. AI-assistenten visas till höger på skärmen.
+Du öppnar AI Assistant genom att klicka på ikonen i det övre fältet. AI-assistenten visas till höger på skärmen.
 
 ![](assets/do-not-localize/ai-assistant-open.png)
 

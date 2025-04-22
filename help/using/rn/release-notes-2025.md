@@ -7,9 +7,10 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-source-git-commit: e80554570d62d1ddb52516366be55711387c5d19
+exl-id: aa8c74de-748b-4947-a972-14703f6ab4a7
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 7%
 
 ---
@@ -55,7 +56,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Med hjälp av AI-assistenten kan du nu skapa övertygande innehåll för landningssidor, inklusive helsidesdesign, personlig text och anpassade bilder.</p>
+<p>Med hjälp av AI Assistant kan du nu skapa övertygande innehåll för landningssidor, inklusive helsidesdesign, skräddarsydd text och anpassade bilder.</p>
 <img src="assets/do-not-localize/ai-lp.gif">
 <p>Mer information finns i den <a href="../content-management/generative-lp.md">detaljerade dokumentationen</a>.</p>
 </td>
@@ -149,4 +150,3 @@ Förbättringarna nedan följer med uppdateringen från februari.
   ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
 
 * **Beslut** (Tillgänglighetsdatum: 28 januari 2025) - Beslut stöder nu objekttyper när objektkatalogens schema redigeras. [Läs mer](../experience-decisioning/catalogs.md)
-

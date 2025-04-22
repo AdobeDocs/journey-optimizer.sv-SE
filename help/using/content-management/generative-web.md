@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ebe2df77-4aaa-45b1-a8ce-931d4191cc67
-source-git-commit: d2c008ab9b63df5b7a0ded317a97a4d26d2319e3
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '979'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 1%
 >Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
 ></br>
 >
->Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI-assistenten i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
+>Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI Assistant i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
-När du har skapat och anpassat dina webbsidor kan du använda AI Assistant i Journey Optimizer med generativ AI för att ta ditt innehåll till nästa nivå.
+När du har skapat och personaliserat dina webbsidor kan du använda AI Assistant i Journey Optimizer med generativ AI för att ta ditt innehåll till nästa nivå.
 
 AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era leveranser genom att föreslå olika typer av innehåll som troligtvis får genklang hos er målgrupp.
 
@@ -40,7 +40,7 @@ AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era lev
 
    ![](assets/web-gen-full-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Use original content]** för AI-assistenten för att anpassa nytt innehåll baserat på det valda innehållet.
+1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
@@ -56,12 +56,12 @@ AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era lev
 
    * **[!UICONTROL Communication strategy]**: Välj den lämpligaste kommunikationsstilen för den genererade texten.
    * **[!UICONTROL Languages]**: Spanska, italienska, svenska och norska språken är tillgängliga som en privat betaversion för alla kunder i framtida versioner.
-   * **[!UICONTROL Tone]**: Din webbsidas ton ska tolkas som målgruppen. Vare sig du vill låta informativ, lekfull eller övertygande kan AI-assistenten anpassa meddelandet därefter.
+   * **[!UICONTROL Tone]**: Din webbsidas ton ska tolkas som målgruppen. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
    * **Textlängd**: Använd reglaget för att välja önskad längd på texten.
 
    ![](assets/web-gen-full-3.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten eller välja en som har överförts tidigare.
+1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
@@ -75,11 +75,11 @@ AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era lev
 
    * **[!UICONTROL Elaborate]**: AI-assistenten kan hjälpa dig att expandera specifika ämnen och ge ytterligare information för bättre förståelse och engagemang.
 
-   * **[!UICONTROL Summarize]**: Långvarig information kan överlagra mottagare. Använd AI Assistant för att dra ihop viktiga punkter till tydliga, kortfattade sammanfattningar som får dem att läsa mer.
+   * **[!UICONTROL Summarize]**: Långvarig information kan överlagra mottagare. Använd AI Assistant för att komprimera viktiga punkter till tydliga, kortfattade sammanfattningar som får dem att lyssna och uppmuntrar dem att läsa vidare.
 
    * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
 
-   * **[!UICONTROL Use simpler language]**: Utnyttja AI-assistenten för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
+   * **[!UICONTROL Use simpler language]**: Använd AI Assistant för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
@@ -93,19 +93,19 @@ När du har definierat inställningarna för webbkampanjen och redigerat innehå
 
 >[!TAB Skapa webbsidesbilder]
 
-I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimizer för att optimera och förbättra dina resurser och få en mer användarvänlig upplevelse.
+I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimizer för att optimera och förbättra dina resurser, vilket ger en mer användarvänlig upplevelse.
 
 1. När du har skapat och konfigurerat webbsidan klickar du på **[!UICONTROL Edit web page]**.
 
    Mer information om hur du konfigurerar webbsidan finns på [den här sidan](../web/create-web.md).
 
-1. Markera den resurs som du vill ändra med AI-assistenten.
+1. Markera den resurs som du vill ändra med AI Assistant.
 
 1. Välj **[!UICONTROL Show AI Assistant]** på den högra menyn.
 
    ![](assets/web-gen-img-1.png){zoomable="yes"}
 
-1. Aktivera alternativet **[!UICONTROL Reference style]** för AI-assistenten för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
+1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
@@ -128,7 +128,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimi
 
    ![](assets/web-gen-img-3.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext till AI-assistenten eller välja en som har överförts tidigare.
+1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 

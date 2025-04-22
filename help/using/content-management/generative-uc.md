@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
-source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,13 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
    * **[!UICONTROL Use as reference content]**: Den valda varianten fungerar som en referens för att generera mer innehåll.
 
-   * **[!UICONTROL Elaborate]**: Låt AI-assistenten expandera på vissa punkter och erbjuda mer djup och detaljrikedom för bättre engagemang.
+   * **[!UICONTROL Elaborate]**: Låt AI Assistant expandera på vissa punkter och erbjuda mer djup och detaljrikedom för bättre engagemang.
 
-   * **[!UICONTROL Summarize]**: Använd AI-assistenten för att skapa koncisa sammanfattningar som är enklare för e-postmottagare att sammanfatta.
+   * **[!UICONTROL Summarize]**: Använd AI Assistant för att skapa koncisa sammanfattningar som är enklare för e-postmottagare att sammanfatta.
 
    * **[!UICONTROL Rephrase]**: AI-assistenten kan presentera ditt meddelande på olika sätt, vilket bidrar till att hålla innehållet aktuellt för en mängd olika målgrupper.
 
-   * **[!UICONTROL Use simpler language]**: Förenkla språket med AI-assistenten för att säkerställa att meddelandet är tydligt och tillgängligt för alla läsare.
+   * **[!UICONTROL Use simpler language]**: Förenkla språket med AI Assistant för att säkerställa att meddelandet är tydligt och tillgängligt för alla läsare.
 
    Dessutom kan du justera **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för ditt innehåll.
 
@@ -95,11 +95,11 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 1. Klicka på **[!UICONTROL Edit content]** när du har konfigurerat din e-postkampanj.
 
-1. Välj den resurs som du vill ändra med hjälp av AI-assistenten.
+1. Välj den resurs som du vill ändra med hjälp av AI Assistant.
 
 1. Välj **[!UICONTROL AI Assistant]** på den högra panelmenyn.
 
-1. Aktivera alternativet **[!UICONTROL Reference style]** så att AI-assistenten kan generera nytt innehåll med referensmaterialet.
+1. Aktivera alternativet **[!UICONTROL Reference style]** så att AI Assistant kan generera nytt innehåll med referensmaterialet.
 
 1. Klicka på **[!UICONTROL Upload image]** om du vill inkludera en bild som lägger till kontext i variationen.
 

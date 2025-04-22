@@ -1,21 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med AI-assistenten i Journey Optimizer
+title: Kom igång med AI Assistant i Journey Optimizer
 description: Lär dig komma åt och arbeta med AI Assistant i Journey Optimizer
 feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: 5cfae89416219fac54d310d9fa3f40fdfdd8878e
+source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
 
-# Kom igång med AI-assistenten {#gs-content-assistant}
+# Kom igång med AI Assistant {#gs-content-assistant}
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_settings"
@@ -25,7 +25,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_context"
 >title="Ladda upp varumärkesresurs"
->abstract="På menyn Överför varumärkesresurser kan du lägga till alla varumärkesresurser som innehåller innehåll som kan ge ytterligare kontext för AI-assistenten i Journey Optimizer eller välja en tidigare överförd resurs. Med det här alternativet får AI-assistenten tillgång till allt material som behövs för att förbättra funktionaliteten och relevansen."
+>abstract="På menyn Överför varumärkesresurser kan du lägga till alla varumärkesresurser som innehåller innehåll som kan ge ytterligare kontext för AI Assistant i Journey Optimizer eller välja en tidigare överförd resurs. Med det här alternativet får AI Assistant tillgång till allt material som behövs för att förbättra funktionaliteten och relevansen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_start"
@@ -47,11 +47,11 @@ Använd AI Assistant i Adobe Journey Optimizer för att optimera budskapets geno
 >* Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](#generative-guardrails).
 >
 >
->* Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} innan du kan använda AI-assistenten i Adobe Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
+>* Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} innan du kan använda AI Assistant i Adobe Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
-## Åtkomst till AI-assistenten {#generative-access}
+## Få tillgång till AI-assistenten {#generative-access}
 
-För att få åtkomst till AI-assistenten i Adobe Journey Optimizer-funktionen måste användarna ha behörighet att **generera innehåll**. [Läs mer](../administration/permissions.md)
+För att få åtkomst till AI Assistant i Adobe Journey Optimizer-funktionen måste användarna ha behörighet att **generera innehåll**. [Läs mer](../administration/permissions.md)
 
 +++  Lär dig hur du tilldelar behörigheter för innehållsgenerering
 
@@ -79,7 +79,7 @@ Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt ins
 
 ## Skyddsritningar och begränsningar {#generative-guardrails}
 
-Allmänna riktlinjer för hur du använder AI Assistant i Adobe Journey Optimizer för att generera e-post anges nedan:
+Allmänna riktlinjer för hur du använder AI Assistant i Adobe Journey Optimizer för e-postgenerering anges nedan:
 
 * Kvaliteten på det genererade innehållet påverkas i hög grad av det marknadsföringsmål / den uppmaning du anger. Använd en väldefinierad uppmaning för GenAI-modellen att tolka korrekt. 
 * Ladda upp varumärkesresurser för att få korrekt varumärkesinnehåll. Annars baseras innehållet på offentligt tillgänglig information. Det överförda innehållet kan ha följande format: PDF-, JPEG-, PNG- eller ZIP-filer (med filformat som stöds).
