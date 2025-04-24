@@ -9,9 +9,9 @@ role: Data Engineer
 level: Beginner
 keywords: uttryck, redigerare, start, personalisering
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 78c1464ccddec75e4827cbb1877d8fab5ac08b90
+source-git-commit: e19a85d05fcb7727c3086f16e2e4f066a5ecd55c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Med personaliseringsfunktionerna i [!DNL Adobe Journey Optimizer] kan du anpassa
 
 Med **personaliseringsredigeraren** kan du välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll, och använda olika verktyg som hjälpfunktioner eller fördefinierade uttryck för att anpassa meddelanden effektivt.
 
-Journey Optimizer använder en infogad personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll inneslutet av dubbla klammerparenteser **{{}}**.
+Journey Optimizer använder en infogad personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll inneslutet av dubbla klammerparenteser **{{}}{{}}**.
 
 När du bearbetar meddelandet ersätter Journey Optimizer uttrycket med data som finns i Experience Platform datamängd. Till exempel blir `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamiskt `Hello John Doe`.
 
@@ -42,6 +42,16 @@ Personalization baseras på profildata som hanteras av schemat **XDM Individual 
 Du kan också utnyttja **beräknade attribut** för att anpassa ditt innehåll. Beräknade attribut gör att du kan sammanfatta enskilda beteendehändelser i beräknade profilattribut som är tillgängliga på Adobe Experience Platform. [Lär dig arbeta med beräknade attribut](../audience/computed-attributes.md)
 
 Dessutom kan du i [!DNL Journey Optimizer] utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att anpassa ditt innehåll. För att göra detta måste datauppsättningar som behövs för sökpersonalisering först aktiveras via ett API-anrop. När du är klar kan du använda deras data för att anpassa ditt innehåll till Journey Optimizer. Funktionen är för närvarande tillgänglig i betaversion. [Läs mer](../personalization/lookup-aep-data.md)
+
+## Lär dig mer och experimentera med personalisering {#playground}
+
+**[!DNL Adobe Journey Optimizer]** innehåller ett interaktivt verktyg som hjälper dig att lära dig och experimentera med personaliseringsfunktioner.
+
+Den här spelmiljön innehåller en simulerad miljö för att skriva och testa personaliseringskod med exempeldata utan att det krävs livedatauppsättningar. Du kan utnyttja fördefinierade kodexempel, redigera nyttolaster för dummy-profiler och förhandsgranska resultatet av din personaliseringskod i realtid.
+
+![personalisering, spelplattform](assets/playground.png)
+
+➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
 
 ## Låt oss dyka djupare
 
