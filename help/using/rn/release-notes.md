@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 08b9c2daa61a13de2d0f1ce6174c80a16459b8b1
+source-git-commit: a487355df0229a1e94375025eae0babc9405f087
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '888'
 ht-degree: 8%
 
 ---
@@ -238,11 +238,16 @@ Mer information finns i den [detaljerade dokumentationen](../test-approve/approv
 
 **Affärsregler**
 
-Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 Som påminnelse är den dagliga frekvensbegränsningen i regeluppsättningar bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 Mer information om affärsregler finns i [detaljerad dokumentation](../configuration/rule-sets.md).
+
+**Innehållsmallar**
+
+HTML-mallar för typograferat innehåll är nu föråldrade. Observera att du fortfarande kan använda befintliga HTML-innehållsmallar som tidigare skapats i [!DNL Journey Optimizer]. [Läs mer om innehållsmallar](../content-management/content-templates.md)
+
 
 <!--**Deliverability**
 

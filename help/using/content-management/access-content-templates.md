@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: a487355df0229a1e94375025eae0babc9405f087
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Du kan sortera innehållsmallar efter:
 Du kan också välja att bara visa de objekt som du själv har skapat eller ändrat.
 
 ![](assets/content-template-list-filters.png)
+
+>[!NOTE]
+>
+>Från och med mars 2025 är HTML-mallar för typografi nu föråldrade. Du kan fortfarande komma åt befintliga HTML-innehållsmallar som tidigare skapats i [!DNL Journey Optimizer].
 
 ## Använda mappar för att hantera innehållsmallar {#folders}
 
@@ -102,13 +106,13 @@ Välj läget **[!UICONTROL Grid view]** om du vill visa varje mall som en miniat
 
 >[!AVAILABILITY]
 >
-Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
+>Den här funktionen lanseras i begränsad tillgänglighet (LA) för en liten grupp kunder.
 
 ![](assets/content-template-grid-view.png)
 
 >[!NOTE]
 >
-För närvarande kan riktiga miniatyrbilder bara skapas för HTML-typer email innehållsmallar.
+>För närvarande kan riktiga miniatyrbilder bara skapas för e-postmallar av HTML-typ.
 
 När du uppdaterar ett innehåll kan du behöva vänta några sekunder innan ändringarna visas i miniatyrbilden.
 

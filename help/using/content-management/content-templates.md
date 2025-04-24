@@ -8,15 +8,19 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-source-git-commit: 2a666364144cf320a9ed20741da7d6f5d22b0d96
+source-git-commit: a487355df0229a1e94375025eae0babc9405f087
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
 
 # Kom igång med innehållsmallar {#content-templates}
+
+>[!NOTE]
+>
+>Från och med mars 2025 är HTML-mallar för typografi nu föråldrade. Du kan fortfarande använda befintliga HTML-innehållsmallar som tidigare skapats i [!DNL Journey Optimizer].
 
 För en snabbare och förbättrad designprocess kan du skapa fristående mallar för att enkelt återanvända anpassat innehåll i [!DNL Journey Optimizer] kampanjer och resor.
 

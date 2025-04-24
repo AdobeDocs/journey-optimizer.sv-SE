@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a205539b-b7ea-4832-92b0-49637c4dac47
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: a487355df0229a1e94375025eae0babc9405f087
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '605'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Det finns två sätt att skapa innehållsmallar:
 
-* Skapa en innehållsmall från grunden med hjälp av menyn **[!UICONTROL Content Templates]** i den vänstra listen. [Lär dig hur](#create-template-from-scratch)
+* Skapa en innehållsmall från grunden med hjälp av menyn **[!UICONTROL Content templates]** i den vänstra listen. [Lär dig hur](#create-template-from-scratch)
 
 * Spara innehållet som en mall när du utformar innehållet i en kampanj eller resa. [Lär dig hur](#save-as-template)
 
@@ -37,6 +37,10 @@ När du har sparat din innehållsmall är den tillgänglig för användning i en
 >* När mallar används i en kampanj eller en resa påverkas inte heller den tidigare använda innehållsmallen av ändringar som du gör i kampanj- och reseinnehåll.
 
 ## Skapa mall från grunden {#create-template-from-scratch}
+
+>[!NOTE]
+>
+>Från och med mars 2025 är HTML-mallar för typografi nu föråldrade. Du kan fortfarande använda befintliga HTML-innehållsmallar som tidigare skapats i [!DNL Journey Optimizer].
 
 Följ stegen nedan för att skapa en innehållsmall från grunden.
 
@@ -51,14 +55,6 @@ Följ stegen nedan för att skapa en innehållsmall från grunden.
    >[!NOTE]
    >
    >För närvarande är alla kanaler tillgängliga utom webben.
-
-1. Välj en **[!UICONTROL Type]** för den valda kanalen.
-
-   ![](assets/content-template-type.png)
-
-   * Om du väljer **[!UICONTROL Content]** för **[!UICONTROL Email]** kan du definiera [Ämnesraden](../email/create-email.md#define-email-content) som en del av mallen. Om du väljer **[!UICONTROL HTML]** kan du bara definiera innehållet i e-postbrödtexten.
-
-   * För **[!UICONTROL SMS]**, **[!UICONTROL Push]**, **[!UICONTROL In-App]** och **[!UICONTROL Direct Mail]** är endast standardtypen tillgänglig för den aktuella kanalen. Du måste fortfarande markera den.
 
 1. Välj eller skapa Adobe Experience Platform-taggar från fältet **[!UICONTROL Tags]** för att kategorisera mallen för förbättrad sökning. [Läs mer](../start/search-filter-categorize.md#tags)
 
@@ -75,7 +71,7 @@ Följ stegen nedan för att skapa en innehållsmall från grunden.
    * [Definiera innehåll för direktreklam](../direct-mail/create-direct-mail.md)
    * [Definiera innehåll i appen](../in-app/design-in-app.md)
 
-1. Om du skapar en **[!UICONTROL Email]**-mall med typen **[!UICONTROL HTML]** kan du testa ditt innehåll. [Lär dig hur](#test-template)
+1. Du kan testa ditt innehåll. [Lär dig hur](#test-template)
 
 1. När mallen är klar klickar du på **[!UICONTROL Save]**.
 
@@ -110,7 +106,7 @@ När du utformar innehåll i en kampanj eller resa kan du spara det för framtid
 
    >[!NOTE]
    >
-   >Den aktuella kanalen och typen fylls i automatiskt och kan inte redigeras. För e-postmallar som skapas från [e-post-Designer](../email/get-started-email-design.md) väljs typen **[!UICONTROL HTML]** automatiskt.
+   >Den aktuella kanalen fylls i automatiskt och kan inte redigeras.
 
 1. Markera eller skapa en Adobe Experience Platform-tagg från fältet **Taggar** för att kategorisera mallen. [Läs mer](../start/search-filter-categorize.md#tags)
 
