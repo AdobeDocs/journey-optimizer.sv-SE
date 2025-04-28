@@ -8,10 +8,10 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: b79ab63dfefde9df1b4991ed3a81f1d61bc4bb96
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 2%
+source-wordcount: '865'
+ht-degree: 1%
 
 ---
 
@@ -22,30 +22,28 @@ ht-degree: 2%
 **Noteringar om tidig version nedan kan ändras utan föregående meddelande till releasedatum**. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformationen](release-notes.md) på releasedatum.
 
 
-## Versionsinformation 25 mars {#25-3-rn}
+## Versionsinformation 25 april {#25-4-rn}
 
 
 **Noteringar om tidig version nedan kan ändras utan föregående meddelande till releasedatum**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
 
-**Releasedatum**: 26-27 mars 2025
+**Releasedatum**: 29-30 april 2025
 
 
-### Nya funktioner {#25-03-features}
+### Nya funktioner {#25-04-features}
 
 De nya funktionerna i den här versionen beskrivs nedan.
 
-
 <table>
 <thead>
 <tr>
-<th><strong>Integrering med Adobe Express</strong><br/></th>
+<th><strong>Adobe Express Integration (LA)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Tack vare Adobe Express-integrationen i Adobe Journey Optimizer kan du använda Adobe Express redigeringsverktyg direkt när du skapar innehåll. Du kan ändra storlek på, ta bort bakgrunder, beskära och konvertera resurser till JPEG eller PNG.<p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Adobe Journey Optimizer kan nu integreras med Adobe Express så att användarna smidigt kan koppla samman sitt kreativa material med resesamordning. Den här integreringen förenklar processen att utforma och distribuera personaliserat innehåll mellan kampanjer. Den här funktionen är för närvarande begränsad.</p>
 </td>
 </tr>
 </tbody>
@@ -54,14 +52,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Resemått</strong><br/></th>
+<th><strong>Kalendervy för Campaign och Resurslager (LA)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med hjälp av resemätningar kan ni mäta effekten av era aktiviteter i de mätvärden som är viktigast för ert företag och få tydligare insikter i hur ni presterar.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Nu finns det en ny kalendervy för kampanjer och reseaktiveringar. Den här funktionen ger en visuell representation av schemalagda aktiviteter, så att användarna kan visa och hantera sina kampanjer och resor mer effektivt. Om du väljer ett kalenderobjekt öppnas en högerkant med detaljerad information. Den här funktionen är för närvarande begränsad.</p>
 </td>
 </tr>
 </tbody>
@@ -70,15 +67,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Kalendervy för resor (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Adobe Experience Manager as a Cloud Service Integration (GA)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>I en kalendervy kan du nu visualisera alla resereffekter. Den här funktionen lanseras som en begränsad tillgänglighet för en viss kundgrupp.<p>
-<p>Den här ändringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Allmän tillgänglighet för integrering mellan Adobe Journey Optimizer och Adobe Experience Manager as a Cloud Service. Integrationen möjliggör smidig innehållshantering för personaliserade kundresor.</p>
 </td>
 </tr>
 </tbody>
@@ -87,107 +82,220 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Integrering med Dynamic Media (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Personalization Playground in Experience League</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Dynamiska medieresurser är nu tillgängliga direkt i Journey Optimizer. Integreringen gör att du kan:
+<p>Experience League erbjuder nu en interaktiv Personalization Playground. Med den här funktionen kan användare utforska och öva personaliseringsfunktioner i Adobe Journey Optimizer. Användare kan skriva personaliseringskod, testa med exempelnyttolaster och simulera verkliga scenarier för att förbättra sin inlärningsupplevelse.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Utlös körning av resan efter utvärdering av batchmålgrupp (LA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Användare kan nu ange ett tidsfönster för att vänta på en ny utvärdering av batchmålgrupper i noden Läs målgrupp. Om utvärderingen slutförs inom fönstret utlöses resan, annars hoppas den över. Den här funktionen åtgärdar förseningar i gruppsegmenteringsjobb och har för närvarande begränsad tillgänglighet.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Nästa generations provtryck (GA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nästa generations korrekturfunktion är nu allmänt tillgänglig. Den här förbättringen har stöd för sammanhangsbaserade attribut, flerspråkigt innehåll, experiment och innehållsmallar, vilket ger en mer robust och flexibel korrekturupplevelse.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Använd din egen SMS-leverantör (GA)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer har nu stöd för anpassade SMS-leverantörer, vilket gör det möjligt för användare att integrera sina SMS-tjänster för ökad flexibilitet i kommunikationen.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!--table>
+<thead>
+<tr>
+<th><strong>Integration with Adobe Express</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Adobe Express integration in Adobe Journey Optimizer lets you use Adobe Express's editing tools directly during content creation, enabling you to resize, remove backgrounds, crop, and convert assets to JPEG or PNG.<p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Calendar view for journeys (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A calendar view is now allows you to visualize all journeys activations. This capability is released as a Limited Availability to a select group of customers.<p>
+<p>This change is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Integration with Dynamic Media (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Dynamic media assets are now directly available and accessible in Journey Optimizer. This integration enables you to:
 <ul>
-<li>Hantera resurser centralt med uppdateringar i realtid</li>
-<li>Ändra inställningar för resurser som bredd och höjd direkt</li>
-<li>Anpassa innehållet med bilder med textöverlägg</li>
-<li>Anpassa dynamiska mediamallar genom att uppdatera innehållet och lägga till anpassningsfält</li>
+<li>Centrally manage assets with real-time updates</li>
+<li>Modify your assets settings such as width and height instantly</li>
+<li>Personalize your content using images with text overlays</li>
+<li>Customize Dynamic Media templates by updating your content and adding personalization fields</li>
 </ul>
 <p>
-<p>Den här integreringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>This integration is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
 </tbody>
 </table>
-
 
 
 <table>
 <thead>
 <tr>
-<th><strong>Integrering med Adobe GenStudio (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>LINE channel (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>För att effektivisera marknadsföringen och bibehålla varumärkets enhetlighet kan ni nu smidigt integrera GenStudio for Performance Marketing-upplevelser med Journey Optimizer. På så sätt kan du utnyttja GenStudio AI-kraftfulla funktioner för att skapa innehåll tillsammans med Journey Optimizer avancerade orkestreringsfunktioner.<p>
-<p>Användningen av GenStudio integrering i Journey Optimizer är för närvarande inte tillgänglig för användning med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten (begränsad tillgänglighet).</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
+<p>Adobe Journey Optimizer has expanded its cross-channel capabilities to include support for the LINE channel. This enhancement allows you to create, edit, and preview LINE experiences enabling more personalized and engaging interactions. With LINE, you can connect with more customers, send relevant content, and improve your engagement.<p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
-<table>
-<thead>
-<tr>
-<th><strong>LINE-kanal (begränsad tillgänglighet)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer har utökat sina flerkanalsfunktioner så att de har stöd för LINE-kanalen. Den här förbättringen gör att du kan skapa, redigera och förhandsgranska LINE-upplevelser, vilket möjliggör mer personaliserade och engagerande interaktioner. Med LINE kan ni få kontakt med fler kunder, skicka relevant innehåll och förbättra engagemanget.<p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<!--p>For more information, refer to the <a href="../configuration/rule-sets.md">detailed documentation</a>.</p-->
-</td>
-</tr>
-</tbody>
-</table>
+### Förbättringar {#25-04-improv}
 
-### Förbättringar {#25-03-improv}
+**Publiker**
 
-**Personalization-redigerare** (tillgänglighetsdatum: 12 mars)
+- **Ta bort begränsning för anrikningsattribut**
 
-Journey Optimizer personaliseringsredigerare har uppdaterats med nya funktioner:
+  Kunder med hälso- och sjukvårdsskölder kan nu använda anrikningsattribut för målgruppskomposition i Adobe Journey Optimizer-kanaler, vilket förbättrar dataanvändningsmöjligheterna.
 
-* **Uppdaterad design för kodredigeraren** - ett renare och modernt gränssnitt för förbättrad användbarhet och fokus.
-* **Sök och ersätt** - Funktioner har lagts till för att snabbt hitta och ersätta innehåll i redigeraren.
-* **Stöd för Ångra och Gör om** - Gör det enkelt att ångra eller göra om ändringar.
-* **Anpassningsbar teckensnittsstorlek** - Aktiverar justering av redigerarens teckensnittsstorlek för bättre läsbarhet.
-* **Inline JSON-validering** - Tillhandahåller realtidsvalidering på klientsidan för JSON-innehåll för att påskynda felidentifieringen.
-* **Komplettera automatiskt för profil- och kontextattribut** - erbjuder smarta förslag för att effektivisera skapandet av innehåll.
-* **Förbättrad syntaxmarkering** - Förbättrar läsbarheten genom att göra kodstrukturen mer visuellt tydlig.
+**E-postkanal**
 
-![Video med den nya funktionen i Personalization Editor](assets/do-not-localize/personalization-editor.gif)
+- **Ytterligare fält som stöder hjälpmedel**
 
-Mer information finns i den [detaljerade dokumentationen](../personalization/personalization-build-expressions.md).
+  Två nya fält har lagts till i e-postredigeraren för att ge stöd för tillgänglighet: elementet `<title>` för dokumenttitlar och attributet `lang` för språkspecifikationen i taggen `<html>`.
+
+- **Förbättringar av Personalization för e-postyta - URL-spårning**
+
+  URL-spårning i e-postpersonalisering har förbättrats, vilket ger mer detaljerad spårning och rapportering. Uppdateringarna innehåller förbättrade konfigurationsalternativ för anpassade e-postinställningar.
 
 
-**Kampanjer**
+- **[Beta] Förbättringar av e-postredigeraren med teman**
 
-* Om du väljer en kampanj i kampanjlistan öppnas nu en ruta med information om kampanjen.
-* Nu kan ni kopiera kampanjer från en sandlåda till en annan.
+  Med en ny betafunktion introduceras teman för e-postredigeraren så att marknadsförarna kan definiera återanvändbara format och skapa e-postmeddelanden snabbare med förkonfigurerade moduler.
+
+**Verktyg för sandlåda**
+
+- **Bestämmer sandlådekopia**
+
+  Beslutsobjekt kan nu kopieras mellan sandlådor, vilket effektiviserar arbetsflödena för testning och distribution. Ett dedikerat underavsnitt för Beslutsobjekt läggs till i dokumentationen.
+
+- **Verktyg i sandlådan för anpassade åtgärder**
+
+  Anpassade åtgärder ingår nu i listan över Adobe Journey Optimizer-objekt som kan kopieras med sandlådeverktygen, vilket effektiviserar testning och driftsättning.
+
+- **Verktyg i sandlådan för kampanjer**
+
+  Kampanjer kan nu kopieras med sandlådeverktygen, vilket förenklar migreringen av kampanjobjekt mellan miljöer.
 
 **Personalization**
 
-En ny&quot;Pills&quot;-knapp har skickats till personaliseringsredigeraren. När det här alternativet är aktiverat visas profil- och kontextuella attribut som tabletter, vilket förbättrar läsbarheten för koden.
+- **Personalization Editor - Pills Activation**
 
-**Godkännanden**
+  Med en ny knapp i personaliseringsredigeraren kan man aktivera och inaktivera piller. Den här funktionen deklarerar redigeraren och gör det enklare att redigera parametrar för dynamiska mediabilder och profilattribut.
 
-När du definierar villkoren för en godkännandeprincip kan du nu välja att filtrera efter tagg och/eller objektkategori.
+- **Personalization - observerbart schema**
 
-**Kanalkonfiguration**
+  Stöd för observerbara scheman har lagts till i personaliseringsredigeraren, vilket möjliggör dynamiska uppdateringar av schemabaserade attribut.
 
-Nu kan du tilldela enhetliga Adobe Experience Platform-taggar till kanalkonfigurationer. På så sätt kan du enkelt klassificera dem och förbättra sökning och navigering i alla listor.
+- **Ny systemkontextvariabel**
+
+  En ny systemkontextvariabel har introducerats för att unikt identifiera varje meddelande som skickas till en målprofil. Den här variabeln kan användas för spårning och personalisering.
+
+
+
+**Beslut**
+
+- **AI-modell - enhetliga rankningar - ny formelbyggare**
+
+  Marknadsförarna kan nu justera bakgrundsmusik i realtid i Adobe Decisioning AI-modeller med en ny formelbyggare. Den här funktionen centraliserar rangordningsjusteringar för prioriteringar och modellpoäng.
+
+**Navigering**
+
+- **Mappar - landningssidor**
+
+  Förbättrad mapphantering för landningssidor i Adobe Journey Optimizer, inklusive gränssnittsändringar, flöden och API-uppdateringar.
+
+- **Mappar - mallar och fragment**
+
+  Det begränsade tillgänglighetsmeddelandet har tagits bort för mappar i mallar och fragment, vilket anger att den här funktionen nu är allmänt tillgänglig.
+
+- **Högerreklam i kampanjlistan**
+
+  En höger rand har lagts till i kampanjlistan, med detaljerad information när en kampanj har valts.
+
+
 
 **Levererbarhet**
 
-Nu kan du delegera underdomäner med DMARC som hanteras från den överordnade sidan.
+- **Förbättrat arbetsflöde för IP i toppklass och borttagning av delegerade underdomäner**
 
-**Affärsregler**
+  Arbetsflödet för hantering av IP-adresser som ligger överst och delegerade underdomäner har förbättrats, vilket förenklar processen för användare.
 
-Du kan nu använda daglig frekvensbegränsning på resor och kampanjer med **batch**-segmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+**Spelböcker**
 
-**Innehållshantering**
+- **[Beta] Skapa egna spelböcker**
 
-För att enkelt hantera fragment och innehållsmallar kan du nu använda mappar för att ordna dem mer effektivt i en strukturerad hierarki.
+  Nu kan man skapa egna spelböcker i Adobe Journey Optimizer, vilket ger större anpassning och flexibilitet vid planering av kundresor.
