@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: b79ab63dfefde9df1b4991ed3a81f1d61bc4bb96
+source-git-commit: b7549bb2ec9e3af4c08def9d46cde0b574df3d3a
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -37,13 +37,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Express Integration (LA)</strong><br/></th>
+<th><strong>Adobe Express Integration (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer kan nu integreras med Adobe Express så att användarna smidigt kan koppla samman sitt kreativa material med resesamordning. Den här integreringen förenklar processen att utforma och distribuera personaliserat innehåll mellan kampanjer. Den här funktionen är för närvarande begränsad.</p>
+<p>Adobe Journey Optimizer kan nu integreras med Adobe Express så att ni smidigt kan koppla samman ert kreativa material med resesamordning. Den här integreringen förenklar processen att utforma och distribuera personaliserat innehåll mellan kampanjer. Den här funktionen är för närvarande begränsad.</p>
 </td>
 </tr>
 </tbody>
@@ -52,13 +52,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Kalendervy för Campaign och Resurslager (LA)</strong><br/></th>
+<th><strong>Kalendervy för Campaign och Resurslager (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu finns det en ny kalendervy för kampanjer och reseaktiveringar. Den här funktionen ger en visuell representation av schemalagda aktiviteter, så att användarna kan visa och hantera sina kampanjer och resor mer effektivt. Om du väljer ett kalenderobjekt öppnas en högerkant med detaljerad information. Den här funktionen är för närvarande begränsad.</p>
+<p>Nu finns det en ny kalendervy för kampanjer och reseaktiveringar. Den här funktionen ger en visuell representation av schemalagda aktiviteter, så att ni kan visa och hantera era kampanjer och resor mer effektivt. Om du väljer ett kalenderobjekt öppnas en högerkant med detaljerad information. Den här funktionen är för närvarande begränsad.</p>
 </td>
 </tr>
 </tbody>
@@ -88,7 +88,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Experience League erbjuder nu en interaktiv Personalization Playground. Med den här funktionen kan användare utforska och öva personaliseringsfunktioner i Adobe Journey Optimizer. Användare kan skriva personaliseringskod, testa med exempelnyttolaster och simulera verkliga scenarier för att förbättra sin inlärningsupplevelse.</p>
+<p>Experience League erbjuder nu en interaktiv Personalization Playground. Med den här funktionen kan du utforska och öva personaliseringsfunktioner i Adobe Journey Optimizer. Ni kan skriva personaliseringskod, testa med exempelnyttolaster och simulera verkliga scenarier för att förbättra inlärningsupplevelsen.</p>
 </td>
 </tr>
 </tbody>
@@ -97,13 +97,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Utlös körning av resan efter utvärdering av batchmålgrupp (LA)</strong><br/></th>
+<th><strong>Utlös den dagliga resan efter gruppsegmentering (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Användare kan nu ange ett tidsfönster för att vänta på en ny utvärdering av batchmålgrupper i noden Läs målgrupp. Om utvärderingen slutförs inom fönstret utlöses resan, annars hoppas den över. Den här funktionen åtgärdar förseningar i gruppsegmenteringsjobb och har för närvarande begränsad tillgänglighet.</p>
+<p>För dagliga schemalagda resor kan du med ett nytt alternativ definiera ett tidsintervall på upp till 6 timmar för att vänta på målgruppsdata från batchsegmenteringsjobb, vilket säkerställer att resorna körs med de senaste data eller hoppas över om de inte är klara. Utlösaren efter grupputvärdering är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
 </td>
 </tr>
 </tbody>
@@ -112,13 +112,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Nästa generations provtryck (GA)</strong><br/></th>
+<th><strong>Simulera innehållsvariationer (allmän tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nästa generations korrekturfunktion är nu allmänt tillgänglig. Den här förbättringen har stöd för sammanhangsbaserade attribut, flerspråkigt innehåll, experiment och innehållsmallar, vilket ger en mer robust och flexibel korrekturupplevelse.</p>
+<p>Tidigare fanns simulering av variationer i betaversion att tillgå (GA). Du kan förhandsgranska olika varianter av ditt innehåll med exempelindata som har överförts från en CSV- eller JSON-fil eller lagts till manuellt. Alla attribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.</p>
 </td>
 </tr>
 </tbody>
@@ -127,13 +127,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Använd din egen SMS-leverantör (GA)</strong><br/></th>
+<th><strong>Använd din egen SMS-leverantör (allmän tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer har nu stöd för anpassade SMS-leverantörer, vilket gör det möjligt för användare att integrera sina SMS-tjänster för ökad flexibilitet i kommunikationen.</p>
+<p>Adobe Journey Optimizer har nu stöd för anpassade SMS-leverantörer, vilket gör att du kan integrera de SMS-tjänster du föredrar för ökad flexibilitet i kommunikationen.</p>
 </td>
 </tr>
 </tbody>
@@ -219,7 +219,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 - **Ta bort begränsning för anrikningsattribut**
 
-  Kunder med hälso- och sjukvårdsskölder kan nu använda anrikningsattribut för målgruppskomposition i Adobe Journey Optimizer-kanaler, vilket förbättrar dataanvändningsmöjligheterna.
+  Målgrupper och attribut från målgruppssammansättning kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerhet.
 
 **E-postkanal**
 
@@ -234,13 +234,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 - **[Beta] Förbättringar av e-postredigeraren med teman**
 
-  Med en ny betafunktion introduceras teman för e-postredigeraren så att marknadsförarna kan definiera återanvändbara format och skapa e-postmeddelanden snabbare med förkonfigurerade moduler.
+  En ny betafunktion introducerar teman för e-postredigeraren, så att du kan definiera återanvändbara format och skapa e-postmeddelanden snabbare med förkonfigurerade moduler.
 
 **Verktyg för sandlåda**
 
 - **Bestämmer sandlådekopia**
 
-  Beslutsobjekt kan nu kopieras mellan sandlådor, vilket effektiviserar arbetsflödena för testning och distribution. Ett dedikerat underavsnitt för Beslutsobjekt läggs till i dokumentationen.
+  Beslutsobjekt kan nu kopieras mellan sandlådor, vilket effektiviserar arbetsflödena för testning och distribution.
 
 - **Verktyg i sandlådan för anpassade åtgärder**
 
@@ -254,11 +254,11 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 - **Personalization Editor - Pills Activation**
 
-  Med en ny knapp i personaliseringsredigeraren kan man aktivera och inaktivera piller. Den här funktionen deklarerar redigeraren och gör det enklare att redigera parametrar för dynamiska mediabilder och profilattribut.
+  En ny&quot;Pills&quot;-knapp har skickats till personaliseringsredigeraren. När det här alternativet är aktiverat visas profil- och kontextuella attribut som tabletter, vilket förbättrar läsbarheten för koden.
 
 - **Personalization - observerbart schema**
 
-  Stöd för observerbara scheman har lagts till i personaliseringsredigeraren, vilket möjliggör dynamiska uppdateringar av schemabaserade attribut.
+  Attributrutan i anpassningsredigeraren visar nu endast ifyllda attribut som standard. Om du vill visa alla attribut använder du inställningsknappen för att avaktivera alternativet Visa endast ifyllda attribut.
 
 - **Ny systemkontextvariabel**
 
@@ -270,7 +270,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 - **AI-modell - enhetliga rankningar - ny formelbyggare**
 
-  Marknadsförarna kan nu justera bakgrundsmusik i realtid i Adobe Decisioning AI-modeller med en ny formelbyggare. Den här funktionen centraliserar rangordningsjusteringar för prioriteringar och modellpoäng.
+  Nu kan du justera bakgrundsmusik i realtid för Adobe Decisioning AI-modeller med en ny formelbyggare. Den här funktionen centraliserar rangordningsjusteringar för prioriteringar och modellpoäng.
 
 **Navigering**
 
@@ -296,6 +296,6 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 **Spelböcker**
 
-- **[Beta] Skapa egna spelböcker**
+- **Skapa egna spelböcker (Beta)**
 
-  Nu kan man skapa egna spelböcker i Adobe Journey Optimizer, vilket ger större anpassning och flexibilitet vid planering av kundresor.
+  Nu kan du skapa egna spelböcker i Adobe Journey Optimizer, vilket ger större anpassning och större flexibilitet vid planering av kundresor.
