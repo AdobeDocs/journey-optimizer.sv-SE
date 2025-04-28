@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 3f64d497b304e513fa439a9bc4f1c9c0a58b2224
+source-git-commit: 6fbae788495ac97fae1a511a99e773eba718e11a
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '956'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Express Integration (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Adobe Express-integrering (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -52,7 +52,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Kalendervy för Campaign och Resurslager (begränsad tillgänglighet)</strong><br/></th>
+<th><strong>Kalendervy för kampanj- och reseinventering (begränsad tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -67,7 +67,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Experience Manager as a Cloud Service Integration (GA)</strong><br/></th>
+<th><strong>Adobe Experience Manager as a Cloud Service-integrering (GA)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -127,7 +127,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Använd din egen SMS-leverantör (allmän tillgänglighet)</strong><br/></th>
+<th><strong>Använd en egen SMS-leverantör (allmän tillgänglighet)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -217,7 +217,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 **Publiker**
 
-- **Ta bort begränsning för anrikningsattribut**
+- **Ta bort begränsning för anrikningsattribut för målgruppskomposition**
 
   Målgrupper och attribut från målgruppssammansättning kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerhet.
 
@@ -241,17 +241,17 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
   Anpassade åtgärder ingår nu i listan över Adobe Journey Optimizer-objekt som kan kopieras med sandlådeverktygen, vilket effektiviserar testning och driftsättning.
 
-- **Verktyg i sandlådan för kampanjer**
+- **Sandlådeverktyg för kampanjer**
 
   Kampanjer kan nu kopieras med sandlådeverktygen, vilket förenklar migreringen av kampanjobjekt mellan miljöer.
 
 **Personalization**
 
-- **Personalization Editor - Pills Activation**
+- **Fyllningsaktivering**
 
   En ny&quot;Pills&quot;-knapp har skickats till personaliseringsredigeraren. När det här alternativet är aktiverat visas profil- och kontextuella attribut som tabletter, vilket förbättrar läsbarheten för koden.
 
-- **Personalization - observerbart schema**
+- **Fyllda attribut i attributrutan**
 
   Attributrutan i anpassningsredigeraren visar nu endast ifyllda attribut som standard. Om du vill visa alla attribut använder du inställningsknappen för att avaktivera alternativet Visa endast ifyllda attribut.
 
@@ -275,7 +275,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
   För att enkelt hantera dina landningssidor kan du nu även använda mappar för att ordna dem mer effektivt i en smidig hierarki.
 
-- **Högerreklam i kampanjlistan**
+- **Högerspåret i kampanjlistan**
 
   En höger rand har lagts till i kampanjlistan, med detaljerad information när en kampanj har valts.
 
