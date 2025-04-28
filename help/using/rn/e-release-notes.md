@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: b7549bb2ec9e3af4c08def9d46cde0b574df3d3a
+source-git-commit: 3f64d497b304e513fa439a9bc4f1c9c0a58b2224
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '954'
 ht-degree: 1%
 
 ---
@@ -223,18 +223,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 **E-postkanal**
 
-- **Ytterligare fält som stöder hjälpmedel**
+- **Anpassad URL-spårning**
 
-  Två nya fält har lagts till i e-postredigeraren för att ge stöd för tillgänglighet: elementet `<title>` för dokumenttitlar och attributet `lang` för språkspecifikationen i taggen `<html>`.
+  För ökad flexibilitet och kontroll över e-postinställningarna kan du nu anpassa alla URL-spårningsparametrar samtidigt på e-postkanalens konfigurationsnivå, i stället för att göra det i e-postdesignern för varje länk i innehållet.
 
-- **Förbättringar av Personalization för e-postyta - URL-spårning**
+- **Teman för e-postdesigner** (Beta) - Tillgänglighetsdatum: 5 maj 2025
 
-  URL-spårning i e-postpersonalisering har förbättrats, vilket ger mer detaljerad spårning och rapportering. Uppdateringarna innehåller förbättrade konfigurationsalternativ för anpassade e-postinställningar.
-
-
-- **[Beta] Förbättringar av e-postredigeraren med teman**
-
-  En ny betafunktion introducerar teman för e-postredigeraren, så att du kan definiera återanvändbara format och skapa e-postmeddelanden snabbare med förkonfigurerade moduler.
+  Nu kan ni snabbt tillämpa förgodkända formatteman på ert e-postinnehåll för att säkerställa att varumärket är enhetligt i alla e-postmeddelanden, snabba upp kampanjprocessen och oberoende producera högkvalitativa e-postmeddelanden samtidigt som ni minskar beroendet av designteam.
 
 **Verktyg för sandlåda**
 
@@ -260,39 +255,29 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
   Attributrutan i anpassningsredigeraren visar nu endast ifyllda attribut som standard. Om du vill visa alla attribut använder du inställningsknappen för att avaktivera alternativet Visa endast ifyllda attribut.
 
-- **Ny systemkontextvariabel**
+- **Nytt sammanhangsberoende attribut**
 
-  En ny systemkontextvariabel har introducerats för att unikt identifiera varje meddelande som skickas till en målprofil. Den här variabeln kan användas för spårning och personalisering.
-
-
+  Ett nytt sammanhangsberoende attribut, **Profil-ID**, är nu tillgängligt att välja i personaliseringsredigeraren. Det här är ett meddelandeorienterat attribut som unikt identifierar varje meddelande som skickas till varje målprofil i en leverans. Den här unika identifieraren kan till exempel användas som en URL-spårningsparameter för att särskilja varje länk som öppnats eller klickats av mottagarna.
 
 **Beslut**
 
-- **AI-modell - enhetliga rankningar - ny formelbyggare**
+- **Rankningsformler**
 
-  Nu kan du justera bakgrundsmusik i realtid för Adobe Decisioning AI-modeller med en ny formelbyggare. Den här funktionen centraliserar rangordningsjusteringar för prioriteringar och modellpoäng.
+  Nu kan du skapa särskilda bedömningsformler genom att definiera och kombinera villkor från ett nytt förbättrat gränssnitt. Med rankningsformler kan du definiera regler som avgör vilka beslutsposter som ska presenteras först, i stället för att ta hänsyn till prioriteringspoängen.
 
 **Navigering**
 
-- **Mappar - landningssidor**
+- **Mappar för innehållsmallar och fragment** - Tillgänglighetsdatum: 5 maj 2025
 
-  Förbättrad mapphantering för landningssidor i Adobe Journey Optimizer, inklusive gränssnittsändringar, flöden och API-uppdateringar.
+  Tidigare var mappar tillgängliga för en uppsättning organisationer (LA), och nu är de tillgängliga för alla användare (GA) att hantera sina innehållsmallar och fragment. Med mappar kan du enklare och effektivare ordna innehållsmallar och fragment i en strukturerad hierarki.
 
-- **Mappar - mallar och fragment**
+- **Mappar för landningssidor** - Tillgänglighetsdatum: 5 maj 2025
 
-  Det begränsade tillgänglighetsmeddelandet har tagits bort för mappar i mallar och fragment, vilket anger att den här funktionen nu är allmänt tillgänglig.
+  För att enkelt hantera dina landningssidor kan du nu även använda mappar för att ordna dem mer effektivt i en smidig hierarki.
 
 - **Högerreklam i kampanjlistan**
 
   En höger rand har lagts till i kampanjlistan, med detaljerad information när en kampanj har valts.
-
-
-
-**Levererbarhet**
-
-- **Förbättrat arbetsflöde för IP i toppklass och borttagning av delegerade underdomäner**
-
-  Arbetsflödet för hantering av IP-adresser som ligger överst och delegerade underdomäner har förbättrats, vilket förenklar processen för användare.
 
 **Spelböcker**
 
