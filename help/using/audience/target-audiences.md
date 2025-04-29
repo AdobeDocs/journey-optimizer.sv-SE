@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
-source-git-commit: d7ebba4144eeb5b29e9e6fa21afde06a7e520e07
+source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,12 @@ I kampanjer och resor kan ni välja alla målgrupper som genereras med segmentde
 ## Fördröjning för målgruppsaktivering {#activation}
 
 Publiken är redo att användas i Journey Optimizer direkt efter att intaget har slutförts. Detta är vanligtvis inom en timme, men kan variera. Publiken som är resultatet av kompositionerna bör vara tillgänglig 24 timmar efter publiceringen.
+
+För målgrupper som härrör från batchsegmenteringsjobb kan aktiveringen fördröjas på grund av att batchintaget kan variera. För målgruppsresor som schemaläggs dagligen kan du definiera ett tidsfönster i färdegenskaperna för att säkerställa att nya målgruppsdata är tillgängliga före körning av resan. Om segmenteringsjobbet inte slutförs inom det definierade tidsintervallet hoppas resan över tills nästa gång. [Lär dig schemalägga en läsarresa](../building-journeys/read-audience.md)
+
+>[!AVAILABILITY]
+>
+>Alternativet **[!UICONTROL Trigger after batch audience evaluation]** är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 ## Anpassad uppladdning och sammanställning av externa målgrupper
 

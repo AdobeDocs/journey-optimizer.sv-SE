@@ -9,16 +9,16 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
-source-git-commit: ead10229b82aa8cb2e638ac9c26539de766f3497
+source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 # Exportera objekt till en annan sandlåda {#copy-to-sandbox}
 
-Du kan kopiera objekt som resor, innehållsmallar eller fragment över flera sandlådor med hjälp av funktioner för paketexport och -import. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
+Du kan kopiera objekt som resor, anpassade åtgärder, innehållsmallar eller fragment över flera sandlådor med hjälp av funktioner för paketexport och -import. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
 
 Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
 
@@ -33,7 +33,7 @@ Kopieringsprocessen utförs via en paketexport och import mellan käll- och mål
 
 ## Exporterade objekt och bästa praxis {#objects}
 
-Journey Optimizer tillåter export av resor, innehållsmallar och fragment till en annan sandlåda. I följande avsnitt finns information och metodtips för varje typ av objekt.
+Journey Optimizer tillåter export av resor, anpassade åtgärder, innehållsmallar och fragment till en annan sandlåda. I följande avsnitt finns information och metodtips för varje typ av objekt.
 
 ### Allmän bästa praxis {#global}
 
@@ -43,13 +43,21 @@ Journey Optimizer tillåter export av resor, innehållsmallar och fragment till 
 
 ### Resor {#journeys}
 
-* När du exporterar en resa kopierar Journey Optimizer, förutom själva resan, även de flesta objekt som resan är beroende av: målgrupper, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [avsnittet](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
+* När du exporterar en resa kopierar Journey Optimizer, förutom själva resan, även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [avsnittet](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
 
 * Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll, till exempel innan du publicerar en resa. På så sätt kan du identifiera eventuella saknade objekt.
 
 * De kopierade objekten i målsandlådan är unika och det finns ingen risk för att befintliga element skrivs över. Både resan och alla meddelanden under resan överförs i utkastläge. På så sätt kan du utföra en grundlig validering innan den publiceras i målsandlådan.
 
 * Kopieringsprocessen kopierar bara metadata om resan och objekten i den resan. Inga profil- eller datauppsättningsdata kopieras som en del av den här processen.
+
+### Anpassade åtgärder {#custom-actions}
+
+* När du exporterar anpassade åtgärder kopieras URL-konfigurationen och nyttolastparametrarna. Av säkerhetsskäl kopieras inte autentiseringsparametrar över och ersätts istället av INSERT SECRET HERE. Parametervärden för en konstant begäran och frågeparametrar ersätts också med INSERT SECRET HERE.
+
+  Detta inkluderar anpassade specialåtgärder ([!DNL Adobe Campaign Standard], [!DNL Campaign Classic], [!DNL Marketo Engage]).
+
+* När du kopierar en resa till en annan sandlåda och väljer &quot;använd befintlig&quot; för en anpassad åtgärd under importprocessen, måste den befintliga anpassade åtgärden du väljer vara densamma som den anpassade källåtgärden (d.v.s. samma konfiguration, parametrar osv.). Annars kommer den nya kopian att innehålla fel som inte kan lösas på arbetsytan.
 
 ### Kampanjer {#campaigns}
 

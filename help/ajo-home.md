@@ -5,9 +5,9 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
+source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '335'
 ht-degree: 14%
 
 ---
@@ -20,11 +20,17 @@ Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -
 
 >[!BEGINTABS]
 
->[!TAB Mars 25 utgåva]
+>[!TAB 25 april]
 
-Marsutgåvan är nu live! Läs Versionsinformationen för att se nya funktioner, ändringar och förbättringar.
+Versionen från april är nu live! Läs Versionsinformationen för att se nya funktioner, ändringar och förbättringar.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+
+>[!TAB Integrering med Adobe Express]
+
+Adobe Journey Optimizer kan nu integreras med Adobe Express så att ni smidigt kan koppla samman ert kreativa material med resesamordning.
+
+[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
 
 >[!TAB AI-assistenten]
 
@@ -38,11 +44,6 @@ Journey Optimizer rapportering har förbättrad interoperabilitet med Customer J
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/reports/report-gs-cja.md)
 
->[!TAB Webbupplevelser under resor]
-
-Med webbkanalen kan Adobe Journey Optimizer personalisera webbupplevelsen som ni levererar till era kunder via inkommande webbresor. Webbkanalen är nu tillgänglig på arbetsytan.
-
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/web/create-web.md)
 
 >[!ENDTABS]
 
@@ -117,7 +118,7 @@ Med webbkanalen kan Adobe Journey Optimizer personalisera webbupplevelsen som ni
 
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/se/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
+<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/sv/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
 </td>
 </tr></table>
 

@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: 6023f1004c74cedc7567fd142be767b12d85ba6d
+source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '565'
 ht-degree: 1%
 
 ---
@@ -79,19 +79,7 @@ Mer information finns i [avsnittet](../event/about-creating-business.md)
 
 * För återkommande resor: Som standard anges resan för varje återkommande resa i alla profiler som tillhör målgruppen. De måste slutföra resan innan de kan komma in igen vid ett annat tillfälle.
 
-Det finns två alternativ för återkommande målgruppsresor:
-
-* **Inkrementell läsning**: När en resa med en återkommande **läsmålgrupp** körs för första gången kommer alla profiler i målgruppen in på resan. Med det här alternativet kan du efter första tillfället bara rikta in dig på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
-
-  >[!NOTE]
-  >
-  >Om du har en [anpassad uppladdningsmålgrupp](../audience/about-audiences.md#segments-in-journey-optimizer) som mål för din resa hämtas profiler endast vid den första upprepningen om det här alternativet är aktiverat under en återkommande resa, eftersom dessa målgrupper är fasta.
-
-* **Tvinga återinträde vid upprepning**: Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande (till exempel om du använder vänteaktiviteter) ska du inte aktivera det här alternativet för att se till att profilerna kan slutföra sin resa.
-
-![](assets/read-audience-options.png)
-
-Mer information finns i [avsnittet](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
+Det finns flera alternativ för återkommande målgruppsresor för läsning. Mer information finns i avsnittet [Använda en målgrupp i en resa](../building-journeys/read-audience.md).
 
 <!--
 After 91 days, a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 30 day timeout. 

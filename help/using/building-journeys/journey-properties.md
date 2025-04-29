@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 6023f1004c74cedc7567fd142be767b12d85ba6d
+source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2325'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,6 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **
 
 När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återkommande vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
-
 ## Hantera åtkomst {#manage-access}
 
 Klicka på knappen **[!UICONTROL Manage access]** om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till resan. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
@@ -130,7 +129,6 @@ Den här globala tidsgränsen avbryter förloppet för personer på resan **91 d
 På grund av den 91-dagars tidsgränsen för resor, när återinträde inte tillåts, kan vi inte säkerställa att återinträdesspärren fungerar mer än 91 dagar. Eftersom vi tar bort all information om personer som tagit sig in på resan 91 dagar efter ankomsten, kan vi inte veta vem som tagit sig in tidigare, mer än 91 dagar sedan.
 
 En enskild person kan bara förlägga en vänteaktivitet om han eller hon har tillräckligt med tid kvar på resan för att slutföra väntetiden innan tidsgränsen på 91 dagar för en resa är slut. Läs [den här sidan](../building-journeys/wait-activity.md).
-
 
 #### TTL (Time-to-Live) och datalagring - frågor och svar {#timeout-faq}
 
@@ -301,6 +299,10 @@ Följande skyddsförslag och begränsningar gäller för möjligheten att avslut
 
 * Utgångskriterier definieras endast i utkastläge
 * Samstämmighet mellan händelser och händelsebaserade kriterier för utträde på resan
+
+## Reseschema {#schedule}
+
+Avsnittet **[!UICONTROL Schedule]** är bara tillgängligt när en **[!UICONTROL Read Audience]**-aktivitet har släppts på arbetsytan. Det gör att du kan definiera ett specifikt datum/tid och en viss frekvens som resan ska köras med. [Lär dig schemalägga en läsarresa](../building-journeys/read-audience.md)
 
 ## Konflikthantering {#conflict}
 

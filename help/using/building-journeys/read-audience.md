@@ -9,16 +9,16 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: ca51c88c122cce23364b86a1da8900d0d5b37aaf
+source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '2141'
 ht-degree: 0%
 
 ---
 
 # Använda en målgrupp i en resa {#segment-trigger-activity}
 
-## Lägg till aktiviteten Läs målgrupp {#about-segment-trigger-actvitiy}
+## Om aktiviteten Läs målgrupp {#about-segment-trigger-actvitiy}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
@@ -38,7 +38,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_every"
 >title="Upprepa var"
->abstract="Definiera frekvensen för registrering av schemaläggare."
+>abstract="Definiera en frekvens för återkommande schemaläggare."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_incremental_read"
@@ -58,7 +58,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
 >title="Vänta på en ny målgruppsutvärdering"
->abstract="Ange den tid som resan väntar på att batchmålgruppen ska utvärderas nyligen."
+>abstract="Ange den tid som resan väntar på att batchmålgruppen ska utvärderas nyligen. Vänteperioden är begränsad till heltalsvärden, kan anges i minuter eller timmar och måste vara mellan 1 och 6 timmar."
 
 Använd aktiviteten **Läs målgrupp** för att få alla personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
@@ -80,13 +80,13 @@ Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som
 
 * Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
 
-
 Guardrutor för aktiviteten **Läs målgrupp** visas på [den här sidan](../start/guardrails.md#read-segment-g).
-
 
 ## Konfigurera aktiviteten {#configuring-segment-trigger-activity}
 
-Så här konfigurerar du aktiviteten Läs målgrupp:
+Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
+
+### Lägg till en Läs-målgruppsaktivitet och välj målgrupp
 
 1. Öppna kategorin **[!UICONTROL Orchestration]** och släpp en **[!UICONTROL Read Audience]**-aktivitet på arbetsytan.
 
@@ -120,33 +120,78 @@ Så här konfigurerar du aktiviteten Läs målgrupp:
    >
    >Individer som tillhör en målgrupp som inte har den valda identiteten (namnutrymmet) bland sina olika identiteter kan inte ta sig in på resan. Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnområde för en uppslagstabell (till exempel: ProductID-namnområde för en produktsökning), är det inte tillgängligt i listrutan **Namespace**.
 
-1. Ange **[!UICONTROL Reading rate]**. Det här är det maximala antalet profiler som kan komma in på resan per sekund. Denna avgift gäller endast denna aktivitet och inga andra delar av resan. Om du till exempel vill definiera en begränsningsfrekvens för anpassade åtgärder måste du använda begränsnings-API:t. Se den här [sidan](../configuration/throttling.md).
+### Hantera profilinträde under resan
 
-   Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 5 000 profiler per sekund. Du kan ändra det här värdet från 500 till 20 000 profiler per sekund.
+Ange **[!UICONTROL Reading rate]**. Det här är det maximala antalet profiler som kan komma in på resan per sekund. Denna avgift gäller endast denna aktivitet och inga andra delar av resan. Om du till exempel vill definiera en begränsningsfrekvens för anpassade åtgärder måste du använda begränsnings-API:t. Se den här [sidan](../configuration/throttling.md).
 
-   >[!NOTE]
-   >
-   >Den totala läshastigheten per sandlåda är satt till 20 000 profiler per sekund. Läsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 profiler per sekund. Du kan inte ändra denna ände.
+Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 5 000 profiler per sekund. Du kan ändra det här värdet från 500 till 20 000 profiler per sekund.
 
-1. Med aktiviteten **[!UICONTROL Read Audience]** kan du ange vid vilken tidpunkt målgruppen ska gå in på resan. Om du vill göra det klickar du på länken **[!UICONTROL Edit journey schedule]** för att komma åt resans egenskaper och konfigurerar sedan fältet **[!UICONTROL Scheduler type]**.
+>[!NOTE]
+>
+>Den totala läshastigheten per sandlåda är satt till 20 000 profiler per sekund. Läsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 profiler per sekund. Du kan inte ändra denna ände.
+
+### Schemalägg resan {#schedule}
+
+Som standard är resan konfigurerad att köras en gång. Följ stegen nedan för att definiera ett specifikt datum/tid och hur ofta resan ska utföras.
+
+>[!NOTE]
+>
+>En bild Läs målgruppsresor flyttar till statusen **Slutförd** 91 dagar ([global tidsgräns för resa](journey-properties.md#global_timeout)) efter resan. För schemalagda läsmålgrupper är det 91 dagar efter den sista förekomsten.
+
+1. Välj **[!UICONTROL Edit journey schedule]** i aktivitetsegenskaperna för **[!UICONTROL Read audience]**.
 
    ![](assets/read-segment-schedule.png)
 
-   Som standard går målgrupper in på resan **[!UICONTROL As soon as possible]**. Om du vill att publiken ska ange resan ett visst datum/tid eller regelbundet, väljer du önskat värde i listan.
-
-   >[!NOTE]
-   >
-   >Observera att avsnittet **[!UICONTROL Schedule]** bara är tillgängligt när en **[!UICONTROL Read Audience]**-aktivitet har släppts på arbetsytan.
+1. Resans egenskaper visas. I listrutan **[!UICONTROL Scheduler type]** väljer du hur ofta du vill att resan ska köras.
 
    ![](assets/read-segment-schedule-list.png)
 
-   **Inkrementell läsning**: När en resa med en återkommande **läsmålgrupp** körs för första gången kommer alla profiler i målgruppen in på resan. Med det här alternativet kan ni efter den första förekomsten endast inrikta er på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
+För återkommande resor finns det specifika alternativ som hjälper dig att hantera inmatningen av profiler på resan. Expandera avsnitten nedan om du vill ha mer information om varje alternativ.
 
-       >[!OBS!]
-       >
-       >Om du riktar in dig på en [anpassad publik för överföring](../audience/about-audiences.md#segments-in-travel-optimizer) i din resa hämtas profiler bara vid den första upprepningen om det här alternativet aktiveras i en återkommande resa, eftersom dessa målgrupper är fasta.
-   
-   **Tvinga återinträde vid upprepning**: Med det här alternativet kan du göra så att alla profiler som fortfarande finns i resan automatiskt avslutar den vid nästa körning. Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte. Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
+![](assets/read-audience-options.png)
+
++++**[!UICONTROL Incremental read]**
+
+När en resa med en återkommande **läsmålgrupp** körs för första gången kommer alla profiler i målgruppen in på resan.
+
+Med det här alternativet kan ni efter den första förekomsten endast inrikta er på de personer som har gått in i målgruppen sedan den senaste körningen av resan.
+
+>[!NOTE]
+>
+>Om du har en [anpassad uppladdningsmålgrupp](../audience/about-audiences.md#segments-in-journey-optimizer) som mål för din resa hämtas profiler endast vid den första upprepningen om det här alternativet är aktiverat under en återkommande resa, eftersom dessa målgrupper är fasta.
+
++++
+
++++**[!UICONTROL Force reentrance on recurrence]**
+
+Med det här alternativet kan du göra så att alla profiler fortfarande finns kvar i resan automatiskt avslutar den vid nästa körning.
+
+Om du till exempel har två dagar på dig att vänta på en daglig återkommande resa, genom att aktivera det här alternativet, kommer profiler alltid att flyttas på nästa körning (så dagen efter), oavsett om de är i nästa körda målgrupp eller inte.
+
+Om livscykeln för dina profiler under den här resan kan vara längre än frekvensen för återkommande aktiviteter ska du inte aktivera det här alternativet för att säkerställa att profilerna kan slutföra sin resa.
+
++++
+
++++**[!UICONTROL Trigger after batch audience evaluation]** (begränsad tillgänglighet)
+
+>[!AVAILABILITY]
+>
+>Alternativet **[!UICONTROL Trigger after batch audience evaluation]** är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+
+För resor som schemaläggs dagligen och som riktar sig till gruppmålgrupper kan du definiera ett tidsfönster på upp till 6 timmar innan resan väntar på nya målgruppsdata från batchsegmenteringsjobb. Om segmenteringsjobbet slutförs inom tidsfönstret utlöses resan. I annat fall hoppar programmet över resan till nästa förekomst. Det här alternativet ser till att resorna körs med korrekta och aktuella målgruppsdata.
+
+Om en resa till exempel är schemalagd till 6 PM dagligen kan du ange ett antal minuter eller timmar att vänta innan resan körs. När resan återupptas kl. 18.00 söker programmet efter en ny målgrupp, vilket innebär en nyare målgrupp än den som användes under den föregående resan. Under den angivna tidsperioden verkställs resan omedelbart när den nya målgruppen identifieras. Om ingen ny målgrupp upptäcks hoppas dock resan över för den dagen.
+
+**Återställningsperiod för inkrementella läsresor**
+
+När **[!UICONTROL Trigger after batch audience evaluation]** har valts söker [!DNL Journey Optimizer] efter en ny målgruppsutvärdering. För kontrollperiodens startpunkt använder systemet tiden för den senaste lyckade körningen, även om det inträffade för mer än 24 timmar sedan. Detta är viktigt för inkrementella läsresor som vanligtvis har en 24 timmars summeringsperiod.
+
+Exempel på dagliga inkrementella avläsningar:
+
+* Med Utlösare efter grupputvärdering aktiv: Om det har gått tre dagar sedan inkrementella profiler kom in på resan kommer kontrollperioden att löpa ut tre dagar tillbaka när inkrementella profiler söks efter.
+* Om utlösaren efter grupputvärdering inte är aktiv: Om det har gått tre dagar sedan inkrementella profiler kom in på resan, skulle utseendeperioden endast gå tillbaka 24 timmar om användaren letar efter inkrementella profiler.
+
++++
 
 <!--
 
@@ -166,10 +211,6 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 **Lookback window**: define when you want to start to listen to entrances or exits. This lookback window is expressed in hours, starting from the moment the journey is triggered.  If you set this duration to 0, the journey will target all members of the segment. For recurring journeys, it will take into account all entrances/exits since the last time the journey was triggered.
 
 -->
-
->[!NOTE]
->
->En bild Läs målgruppsresor flyttar till statusen **Slutförd** 91 dagar ([global tidsgräns för resa](journey-properties.md#global_timeout)) efter resan. För schemalagda läsmålgrupper är det 91 dagar efter den sista förekomsten.
 
 ## Testa och publicera resan {#testing-publishing}
 
@@ -213,6 +254,12 @@ Segmenteringen kan baseras på:
 
 ![](assets/read-segment-audience1.png)
 
+>[!NOTE]
+>
+>När du använder schemaläggartypen Dagligen med en **[!UICONTROL Read Audience]**-aktivitet kan du definiera ett tidsfönster där resan ska vänta på nya målgruppsdata. Detta garanterar korrekt målinriktning och förhindrar problem som orsakas av förseningar i gruppsegmenteringsjobb. [Lär dig schemalägga en resa](#schedule)
+>
+>Alternativet **[!UICONTROL Trigger after batch audience evaluation]** är bara tillgängligt för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+
 **Uteslutning**
 
 Med samma **villkorsaktivitet** som används för segmentering (se ovan) kan du även utesluta en del av populationen. Du kan till exempel utesluta VIP-personer genom att låta dem flöda in i en gren med ett slutsteg direkt efter.
@@ -223,16 +270,11 @@ Detta kan inträffa direkt efter det att målgruppen har hämtats, för att räk
 
 **Union**
 
-Med Resor kan du skapa N-grenar och förena dem efter en segmentering.
+Med Resor kan du skapa N-grenar och förena dem efter en segmentering. Det innebär att ni kan få två målgrupper att återvända till en gemensam upplevelse.
 
-Det innebär att ni kan få två målgrupper att återvända till en gemensam upplevelse.
-
-Om du till exempel har följt en annan upplevelse under tio dagar på en resa kan VIP- och icke-VIP-kunder återgå till samma resa.
-
-Efter en union kan du dela upp publiken igen genom att utföra en segmentering eller ett exkluderingsmoment.
+Om du till exempel har följt en annan upplevelse under tio dagar på en resa kan VIP- och icke-VIP-kunder återgå till samma resa. Efter en union kan du dela upp publiken igen genom att utföra en segmentering eller ett exkluderingsmoment.
 
 ![](assets/read-segment-audience3.png)
-
 
 ## Försök igen {#read-audience-retry}
 

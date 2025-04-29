@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 6820f57ca4f8734eb746d1bdb2eae8829f37d520
+source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2364'
 ht-degree: 20%
 
 ---
@@ -357,8 +357,10 @@ ht-degree: 20%
       + [Webbgenerering med AI](using/content-management/generative-web.md)
       + [Innehållsexperiment med AI](using/content-management/generative-experimentation.md)
       + [Landningssida med AI](using/content-management/generative-lp.md)
-      + [Användningsexempel för AI-assistenten](using/content-management/generative-uc.md)
-      + [Skapa och hantera varumärken (Beta)](using/content-management/brands.md)
+      + [Användningsexempel för AI Assistant](using/content-management/generative-uc.md)
+      + Varumärken (beta){#brands}
+         + [Skapa och hantera varumärken](using/content-management/brands.md)
+         + [Utvärdera ert varumärkeskorteringsresultat](using/content-management/brands-score.md)
    + Arbeta med flerspråkigt innehåll{#content-multilingual}
       + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
       + [Skapa en språkinställning](using/content-management/multilingual-locale.md)
