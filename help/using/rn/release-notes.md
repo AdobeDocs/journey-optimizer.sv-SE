@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
+source-git-commit: d5ddf00b1a39c66b29ffb967389fb069a9648e83
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 8%
@@ -240,11 +240,11 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
   Decisioning objects can now be copied between sandboxes, streamlining testing and deployment workflows.-->
 
-- **Verktyg i sandlådan för anpassade åtgärder**
+* **Verktyg i sandlådan för anpassade åtgärder**
 
   Anpassade åtgärder ingår nu i listan över Adobe Journey Optimizer-objekt som kan kopieras med sandlådeverktygen, vilket effektiviserar testning och driftsättning. [Läs mer](../configuration/copy-objects-to-sandbox.md)
 
-- **Sandlådeverktyg för kampanjer** - Tillgänglighetsdatum: 3 april 2025
+* **Sandlådeverktyg för kampanjer** - Tillgänglighetsdatum: 3 april 2025
 
   Nu kan ni kopiera kampanjer över flera sandlådor med hjälp av funktioner för paketexport och -import. Kampanjer kopieras tillsammans med alla objekt som hör till profilen, målgruppen, schemat, textbundna meddelanden och beroende objekt. Vissa objekt kopieras inte, t.ex. beslutsobjekt, dataanvändningsetiketter och språkinställningar. [Läs mer](../configuration/copy-objects-to-sandbox.md#custom-actions)
 
@@ -254,12 +254,12 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
   A new "Pills" button has been to the personalization editor. When enabled, profile and contextual attributes display as pills, enhancing the readability of your code.-->
 
-- **Fyllda attribut i attributrutan** - Tillgänglighetsdatum: 2 april 2025
+* **Fyllda attribut i attributrutan** - Tillgänglighetsdatum: 2 april 2025
 
   Attributrutan i anpassningsredigeraren visar nu endast ifyllda attribut som standard. Om du vill visa alla attribut använder du inställningsknappen för att inaktivera alternativet **[!UICONTROL Show only populated attributes]**. [Läs mer](../personalization/personalization-build-expressions.md)
 
 
-- **Nytt sammanhangsberoende attribut**
+* **Nytt sammanhangsberoende attribut**
 
   Ett nytt sammanhangsberoende attribut, **Profil-ID**, är nu tillgängligt att välja i personaliseringsredigeraren. Det här är ett meddelandeorienterat attribut som unikt identifierar varje meddelande som skickas till varje målprofil i en leverans. Den här unika identifieraren kan till exempel användas som en URL-spårningsparameter för att särskilja varje länk som öppnats eller klickats av mottagarna.
 
