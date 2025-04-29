@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 6fbae788495ac97fae1a511a99e773eba718e11a
+source-git-commit: 00aa5d5283bae43949df133a48700aa91b3a8c7f
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '972'
 ht-degree: 1%
 
 ---
@@ -119,6 +119,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tr>
 <td>
 <p>Tidigare fanns simulering av variationer i betaversion att tillgå (GA). Du kan förhandsgranska olika varianter av ditt innehåll med exempelindata som har överförts från en CSV- eller JSON-fil eller lagts till manuellt. Alla attribut som används i ditt innehåll för personalisering identifieras automatiskt av systemet och kan användas för dina tester för att skapa flera varianter.</p>
+<p>I den allmänna tillgänglighetsversionen har funktionen nu stöd för flerspråkiga innehålls- och innehållsexperiment, vilket gör att du kan testa variationer mellan olika språk och behandlingar. Dessutom har det nu stöd för sammanhangsbaserade attribut (utöver profilattribut), vilket möjliggör ännu mer dynamisk och situationsstyrd innehållstestning.</p>
 </td>
 </tr>
 </tbody>
@@ -215,11 +216,11 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 ### Förbättringar {#25-04-improv}
 
-**Publiker**
+<!--**Audiences**
 
-- **Ta bort begränsning för anrikningsattribut för målgruppskomposition**
+- **Remove limitation for Audience Composition enrichment attributes** 
 
-  Målgrupper och attribut från målgruppssammansättning kan nu användas med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerhet.
+  The use of audiences and attributes from audience composition is now available for use with Healthcare Shield or Privacy and Security Shield.-->
 
 **E-postkanal**
 
