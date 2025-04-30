@@ -6,10 +6,9 @@ description: Lär dig skapa ett LINE-meddelande i Journey Optimizer
 feature: Line
 topic: Content Management
 role: User
-hide: true
-hidefromtoc: true
 level: Beginner
-source-git-commit: 6820f57ca4f8734eb746d1bdb2eae8829f37d520
+exl-id: a93d4dc9-f0e9-400c-b9a4-6cdac84390fd
+source-git-commit: 81cd7c2c8be26d760f369ecacc5859cf090234fc
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 2%
@@ -94,4 +93,3 @@ Följ stegen nedan för att konfigurera ditt LINE-innehåll.
 När du har utfört testerna och validerat innehållet kan du skicka LINE-meddelandet till mottagarna. De här stegen beskrivs i [den här sidan](send-line.md)
 
 När du har skickat det kan du mäta effekten av LINE i kampanjrapporten eller reserapporten. Mer information om rapportering finns i [det här avsnittet](../reports/campaign-global-report-cja.md).
-
