@@ -1,29 +1,23 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Spelböcker med användningsexempel
+title: Use Case Playbooks
 description: Lär dig hur du använder Adobe Experience Platform Use Case Playbooks med Adobe Journeys Optimizer.
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 2214ec90-580e-469e-9b14-d8cb2d4bb050
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 7bb46f33d877d0a1976e8d74b88a5cccb81c1d4e
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---
 
-# Spelböcker med användningsexempel {#playbooks}
+# Use Case Playbooks {#playbooks}
 
->[!PREREQUISITES]
->
->Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns i dokumentationen för Use Case Playbooks [Get started](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"}.
->
->* Skapa en sandlåda
->* Konfigurera användarbehörigheter
->* Konfigurera Journey Optimizer-kanalkonfigurationer för e-post-, push- och SMS-meddelanden
+## Vad används spelböcker för gemener/VERSALER {#gs}
 
 Använd fallspelsböcker är fördefinierade arbetsflöden som åtgärdar vanliga användningsfall som du kan utföra med Adobe Experience Platform och Journey Optimizer.
 
@@ -32,6 +26,16 @@ Använd fallspelsböcker är fördefinierade arbetsflöden som åtgärdar vanlig
 Varje spelbok innehåller en omfattande översikt som innehåller avsikter, mål, målinriktade personligheter och resurser som behövs för att implementera den. Dessutom finns det en mindmap i varje spelbok som visuellt representerar verkliga kundkontaktytor som är kopplade till spelboken.
 
 ![Övergiven spelningsbok för kundvagn visas i vyn Upptäck spelningsböcker](assets/playbooks-detail.png){width="85%"}
+
+## Förhandskrav {#prerequisites}
+
+Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns på sidan [Kom igång](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"} i dokumentationen för Use Case Playbooks.
+
+* Skapa en sandlåda
+* Konfigurera användarbehörigheter
+* Konfigurera Journey Optimizer-kanalkonfigurationer för e-post-, push- och SMS-meddelanden
+
+## Få åtkomst till och aktivera en spelbok {#access}
 
 Om du vill få åtkomst till spelböcker går du till menyn **[!UICONTROL Playbooks]** som finns i den vänstra navigeringslisten. Biblioteket innehåller flera spelböcker som har implementerats med Adobe Journey Optimizer. Om du enkelt vill komma åt dem använder du de filter som finns bredvid sökfältet. En omfattande lista över Journey Optimizer spelböcker finns i [Use Case Playbooks-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"}.
 
@@ -45,4 +49,16 @@ När du har valt den spelbok som bäst passar dina behov kan du aktivera den. De
 
 Om du vill implementera ditt användningssätt kan du navigera till varje objekt för att anpassa det efter dina behov. Du kan också dela URL:en för spelningsbokens instanssida mellan ditt team för att samarbeta vid implementeringen av användningsexemplet.
 
-Dessutom kan du importera spelboksresurser till andra sandlådor. På så sätt kan du justera de genererade resurserna mot dina befintliga resurser och se till att de är kompatibla med dina data, om du redan har konfigurerat dina egna scheman, fält och fältgrupper. De här stegen beskrivs i [Använd fallspelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/data-awareness.html){target="_blank"}.
+Dessutom kan du importera spelboksresurser till andra sandlådor. På så sätt kan du justera de genererade resurserna mot dina befintliga resurser och se till att de är kompatibla med dina data, om du redan har konfigurerat dina egna scheman, fält och fältgrupper. De här stegen beskrivs i Använd fallspelningsböcker: [Publicera spelboksgenererade resurser till andra sandlådor](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/data-awareness.html){target="_blank"}.
+
+## Skapa egna spelböcker (Beta) {#create}
+
+>[!AVAILABILITY]
+>
+>Skapa fallspelsböcker är för närvarande tillgängligt för alla kunder som en betaversion.
+
+Förutom att använda fördefinierade spelböcker kan du skapa och dela egna spelböcker i Adobe Experience Platform.
+
+Du kan definiera metadata med hjälp av AI-assistans eller manuell inmatning, associera tekniska resurser som scheman, segment och dela dina spelböcker i olika IMS-organisationer.
+
+Mer information om hur du skapar och delar spelböcker finns i Use Case Playbooks-dokumentationen: [Författare och dela dina egna spelböcker med hjälp av AI Assistant](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/author.html?lang=en#sharing-playbooks-sandboxes){target="_blank"}.
