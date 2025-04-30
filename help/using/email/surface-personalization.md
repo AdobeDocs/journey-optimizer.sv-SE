@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 87d60ddafb8b3793ef774528a96f60501bb5a1b5
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,6 @@ Följ stegen nedan om du vill använda personaliserade variabler för konfigurat
 >
 >Du kan anpassa alla **[!UICONTROL Header parameters]**-fält utom fältet **[!UICONTROL Error email prefix]**.
 
-
 1. Definiera sidhuvudsparametrarna som vanligt. [Lär dig hur](email-settings.md#email-header)
 
 1. För varje fält väljer du ikonen Redigera.
@@ -125,17 +124,19 @@ Följ stegen nedan om du vill använda personaliserade variabler för konfigurat
 >
 >Om du har lagt till en eller flera dynamiska underdomäner i din konfiguration fylls suffixen **Från e-post** och **Fel-e-post** i baserat på den matchade [dynamiska underdomänen](#dynamic-subdomains).
 
-<!--
-## Use personalized URL tracking {#personalize-url-tracking}
+## Använd personlig URL-spårning {#personalize-url-tracking}
 
-To use personalized URL tracking prameters, follow the steps below.
+Följ stegen nedan om du vill använda personaliserade URL-spårningsparametrar.
 
-1. Select the profile attribute of your choice from the personalization editor.
+1. Gå till avsnittet **[!UICONTROL URL tracking parameters]** i e-postkanalskonfigurationen.
 
-1. Repeat the steps above for each tracking parameter you want to personalize.
+1. Klicka på ikonen Redigera bredvid varje fält. Förutom kontextattribut kan du välja profilattribut.
 
-Now when the email is sent out, this parameter will be automatically appended to the end of the URL. You can then capture this parameter in web analytics tools or in performance reports.
--->
+1. Välj det profilattribut du vill använda i [anpassningsredigeraren](../personalization/personalization-build-expressions.md).
+
+1. Upprepa stegen ovan för varje spårningsparameter som du vill anpassa.
+
+När e-postmeddelandet skickas läggs den anpassade parametern automatiskt till i slutet av webbadressen. Du kan sedan hämta den här parametern i webbanalysverktyg eller i resultatrapporter.
 
 ## Visa konfigurationsinformation {#view-surface-details}
 

@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 87d60ddafb8b3793ef774528a96f60501bb5a1b5
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 
    >[!NOTE]
    >
-   >För att tolka URL:er uppfyller [!DNL Journey Optimizer] URI-syntaxen ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), som inaktiverar vissa internationella specialtecken i URL:er. När du försöker skicka korrekturet eller e-postmeddelandet och returnerar ett fel som inbegriper en URL som har lagts till i innehållet, kan du URL-koda strängen som en tillfällig lösning.
+   >För att tolka URL:er uppfyller [!DNL Journey Optimizer] URI-syntaxen ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), vilket inaktiverar vissa internationella specialtecken i URL:er. När du försöker skicka korrekturet eller e-postmeddelandet och returnerar ett fel som inbegriper en URL som har lagts till i innehållet, kan du URL-koda strängen som en tillfällig lösning.
 
 1. Du kan anpassa länkarna. [Läs mer](../personalization/personalization-syntax.md#perso-urls)
 
@@ -171,9 +171,9 @@ Det finns rapporter om öppningar och klick i [Live-rapporten](../reports/live-r
 
 ## Anpassa URL-spårning {#url-tracking}
 
-Vanligtvis hanteras [URL-spårning](email-settings.md#url-tracking) på konfigurationsnivå, men profilattribut stöds inte. Det enda sättet att göra det är för närvarande att [anpassa URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern.
+[URL-spårning](email-settings.md#url-tracking) hanteras på konfigurationsnivå och gäller för alla URL:er som ingår i meddelandeinnehållet.
 
-Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för länkarna.
+Du kan också [anpassa enskilda URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern. Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för en enda länk i innehållet.
 
 1. Markera en länk och klicka på **[!UICONTROL Insert link]** i det sammanhangsberoende verktygsfältet.
 

@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 5a12280c-b937-4cd9-a1ef-563bab48e42e
-source-git-commit: 5f7e9556a27fb12618f8da35da5427de3a0867dc
+source-git-commit: 87d60ddafb8b3793ef774528a96f60501bb5a1b5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -74,4 +74,4 @@ Du kan dynamiskt förhandsgranska den resulterande spårnings-URL:en. Varje gån
 
 >[!NOTE]
 >
->Du kan också lägga till dynamiska, anpassade spårningsparametrar till länkarna i ditt e-postinnehåll, men detta är inte möjligt på konfigurationsnivå. Du måste göra detta när du redigerar meddelandet med e-postdesignern. [Läs mer](message-tracking.md#url-tracking)
+>Du kan också lägga till dynamiska personaliserade spårningsparametrar till länkarna i ditt e-postinnehåll. [Läs mer](surface-personalization.md#personalize-url-tracking)
