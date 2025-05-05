@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
-source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
+source-git-commit: 3da510cffe6fddc644c867fe8d89da9d9c5861d1
 workflow-type: tm+mt
 source-wordcount: '2141'
 ht-degree: 0%
@@ -24,41 +24,6 @@ ht-degree: 0%
 >id="ajo_journey_read_segment"
 >title="Läs målgruppsaktivitet"
 >abstract="Med aktiviteten Läs målgrupp kan du få alla som tillhör en Adobe Experience Platform-målgrupp att delta i en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_start_date"
->title="Startdatum/tid"
->abstract="Definiera det datum och den tid som du vill ska utlösa den här resan."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_repeat_until"
->title="Upprepa tills"
->abstract="Definiera slutdatum för återkommande."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_repeat_every"
->title="Upprepa var"
->abstract="Definiera en frekvens för återkommande schemaläggare."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_incremental_read"
->title="Inkrementell läsning"
->abstract="Tillåt endast nya profiler att gå in på resan sedan senaste läsningen."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_force_reentrance"
->title="Tvinga återinträde"
->abstract="Släpp alla deltagare innan varje målgrupp läser."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_synchronize_audience"
->title="Utlösare efter utvärdering av batchmålgrupp"
->abstract="Växla till det här alternativet om du vill aktivera körning av resan efter en ny utvärdering av gruppmålgruppen."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
->title="Vänta på en ny målgruppsutvärdering"
->abstract="Ange den tid som resan väntar på att batchmålgruppen ska utvärderas nyligen. Vänteperioden är begränsad till heltalsvärden, kan anges i minuter eller timmar och måste vara mellan 1 och 6 timmar."
 
 Använd aktiviteten **Läs målgrupp** för att få alla personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
 
@@ -131,6 +96,41 @@ Det här värdet lagras i transportversionens nyttolast. Standardvärdet är 5 0
 >Den totala läshastigheten per sandlåda är satt till 20 000 profiler per sekund. Läsfrekvensen för alla läsmålgrupper som körs samtidigt i samma sandlåda uppgår därför till högst 20 000 profiler per sekund. Du kan inte ändra denna ände.
 
 ### Schemalägg resan {#schedule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_start_date"
+>title="Startdatum/tid"
+>abstract="Definiera det datum och den tid som du vill ska utlösa den här resan."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_repeat_until"
+>title="Upprepa tills"
+>abstract="Definiera slutdatum för återkommande."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_repeat_every"
+>title="Upprepa var"
+>abstract="Definiera en frekvens för återkommande schemaläggare."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_incremental_read"
+>title="Inkrementell läsning"
+>abstract="Tillåt endast nya profiler att gå in på resan sedan senaste läsningen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_force_reentrance"
+>title="Tvinga återinträde"
+>abstract="Släpp alla deltagare innan varje målgrupp läser."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_synchronize_audience"
+>title="Utlösare efter utvärdering av batchmålgrupp"
+>abstract="Växla till det här alternativet om du vill aktivera körning av resan efter en ny utvärdering av gruppmålgruppen."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
+>title="Vänta på en ny målgruppsutvärdering"
+>abstract="Ange den tid som resan väntar på att batchmålgruppen ska utvärderas nyligen. Vänteperioden är begränsad till heltalsvärden, kan anges i minuter eller timmar och måste vara mellan 1 och 6 timmar."
 
 Som standard är resan konfigurerad att köras en gång. Följ stegen nedan för att definiera ett specifikt datum/tid och hur ofta resan ska utföras.
 
