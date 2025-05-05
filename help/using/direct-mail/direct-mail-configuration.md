@@ -18,27 +18,27 @@ ht-degree: 1%
 
 Med [!DNL Journey Optimizer] kan du anpassa och generera de filer som direktutskick kräver för att skicka e-post till dina kunder.
 
-När [du skapar ett direktmeddelande](../direct-mail/create-direct-mail.md) definierar du målgruppsdata, inklusive den valda kontaktinformationen (t.ex. postadress). En fil som innehåller dessa data kommer sedan automatiskt att genereras och exporteras till en server, där din direktreklamleverantör kommer att kunna hämta den och ta hand om själva sändningen.
+När du [skapar ett direktmeddelandemeddelande](../direct-mail/create-direct-mail.md) definierar du målgruppsdata, inklusive vald kontaktinformation (till exempel postadress). En fil som innehåller dessa data genereras och exporteras sedan automatiskt till en server, där din direktmeddelandeleverantör kan hämta den och ta hand om själva sändningen.
 
-Innan du kan generera den här filen måste du skapa:
+Innan du kan generera filen måste du skapa:
 
-1. [En filroutningskonfiguration](#file-routing-configuration) för att ange den server där filen ska exporteras och kryptera filen om det behövs.
+1. [En filroutningskonfiguration](#file-routing-configuration) som anger på vilken server filen ska exporteras och krypterar filen om det behövs.
 
-1. [En konfiguration](#direct-mail-configuration) för direktmeddelanden som refererar till konfigurationen för filroutning. Om du inte har konfigurerat något alternativ för fildirigering kommer du inte att kunna skapa en konfiguration för direktmeddelanden.
+1. [En direktadresskonfiguration](#direct-mail-configuration) som refererar till filroutningskonfigurationen. Om du inte har konfigurerat något alternativ för filroutning kommer du inte att kunna skapa en direktadresskonfiguration.
 
 
 >[!CAUTION]
 >
->* Om du vill skapa en konfiguration för filroutning måste du ha den inbyggda behörigheten **[!DNL Manage file routing]** . [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+>* Om du vill skapa en filroutningskonfiguration måste du ha den inbyggda behörigheten **[!DNL Manage file routing]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 >
->* Filer med direktmeddelanden genereras endast vid exporten. Systemet lagrar inte äldre exporter i all oändlighet. Konfigurera ett alternativ för filroutning (SFTP eller molnlagring) för längre eller permanent säkerhetskopiering.
+>* Direktutskick genereras endast vid exporttillfället. Systemet lagrar inte i oändlighet äldre exporter. Konfigurera ett alternativ för filroutning (SFTP eller molnlagring) för längre eller permanent säkerhetskopiering.
 
 ## Konfigurera filroutning {#file-routing-configuration}
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details"
->title="Definiera konfigurationen för filroutning"
->abstract="När du har skapat ett direktmeddelande genereras filen som innehåller målgruppsdata och exporteras till en server. Du måste ange serverinformationen så att din direktutskicksleverantör kan komma åt och använda filen för att leverera direktreklam."
+>title="Definiera filroutningskonfigurationen"
+>abstract="När du har skapat ett direktutskick skapas och exporteras filen som innehåller målgruppsdata till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/create-direct-mail" text="Skapa ett direktutskick"
 
 >[!CONTEXTUALHELP]
@@ -65,13 +65,13 @@ Innan du kan generera den här filen måste du skapa:
 >
 >För närvarande stöds Amazon S3, SFTP, Azure och Data Landing Zone i [!DNL Journey Optimizer].
 
-Om du vill leverera ett direktmeddelande [!DNL Journey Optimizer] genererar och exporterar du filen som innehåller målgruppsdata till en server.
+Om du vill leverera ett direktmeddelande genererar och exporterar [!DNL Journey Optimizer] filen som innehåller målgruppsdata till en server.
 
-Du måste ange serverinformationen så att din direktutskicksleverantör kan komma åt och använda filen för att leverera e-post.
+Du måste ange den serverinformationen så att din e-postleverantör kan komma åt och använda filen för att leverera e-post.
 
-Följ stegen nedan för att konfigurera fildirigeringen.
+Följ stegen nedan för att konfigurera filflödet.
 
-1. Öppna menyn > **[!UICONTROL Administration]** **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File routing]** och klicka sedan på **[!UICONTROL Create file routing config]**.
+1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File routing]** och klicka sedan på **[!UICONTROL Create file routing config]**.
 
    ![](assets/file-routing-config-button.png){width="800" align="center"}
 
@@ -81,15 +81,15 @@ Följ stegen nedan för att konfigurera fildirigeringen.
 
    ![](assets/file-routing-config-type.png){width="800" align="center"}
 
-1. Fyll i de fält som är specifika för varje servertyp enligt beskrivningen på flikarna nedan.
+1. Fyll i fälten som är specifika för varje servertyp enligt flikarna nedan.
 
 >[!BEGINTABS]
 
 >[!TAB Amazon S3]
 
-Om du har valt **[!UICONTROL Amazon S3]** som , **[!UICONTROL Server type]** fyll i information och autentiseringsuppgifter för din server:
+Om du valde **[!UICONTROL Amazon S3]** som **[!UICONTROL Server type]** fyller du i informationen och autentiseringsuppgifterna för servern:
 
-* **AWS-hinknamn**:För att veta var du hittar ditt AWS-hinknamn, se [den här sidan](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html).
+* **AWS-bucket**:Information om var du hittar ditt AWS-bucket-namn finns på [den här sidan](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html).
 
 * **AWS-åtkomstnyckel**: Information om var du hittar ditt AWS-ID finns på [den här sidan](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html#access-keys-and-secret-access-keys).
 
@@ -103,31 +103,31 @@ Om du har valt **[!UICONTROL Amazon S3]** som , **[!UICONTROL Server type]** fyl
 
 Om du valde **[!UICONTROL SFTP]** som **[!UICONTROL Server type]** fyller du i informationen och autentiseringsuppgifterna för servern:
 
-* **Konto: Kontonamn** som används för att ansluta till SFTP-servern.
+* **Konto**: Det kontonamn som används för att ansluta till SFTP-servern.
 
-* **Serveradress**: URL till SFTP-servern.
+* **Serveradress**: &#x200B; URL för SFTP-servern.
 
-* **Port**: Portnummer för FTP-anslutning.
+* **Port**: FTP-anslutningens portnummer.
 
-* **Password**: Lösenord som används för att ansluta till SFTP-servern.
+* **Lösenord**: &#x200B; lösenord som används för att ansluta till SFTP-servern.
 
 ![](assets/file-routing-config-sftp-detail.png)
 
 >[!NOTE]
 >
->Om du vill ange en sökväg på servern för att spara filen uppdaterar du fältet för direktmeddelandekampanjen **[!UICONTROL Filename]** så att det innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
+>Om du vill ange en sökväg på servern för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att det innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
 
 >[!TAB Azure]
 
-Om du har valt **[!UICONTROL Azure]** som , **[!UICONTROL Server type]** fyll i information och autentiseringsuppgifter för din server:
+Om du valde **[!UICONTROL Azure]** som **[!UICONTROL Server type]** fyller du i informationen och autentiseringsuppgifterna för servern:
 
-* **Azure-anslutningssträng**: Information om hur du hittar din **Azure-anslutningssträng** finns på [den här sidan](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string#configure-a-connection-string-for-an-azure-storage-account).
+* **Azure-anslutningssträng**: Om du vill hitta din **Azure-anslutningssträng** läser du [den här sidan](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string#configure-a-connection-string-for-an-azure-storage-account).
 
-  Azure-anslutningssträngen **** bör följa formatet nedan:
+  **Azure-anslutningssträngen** ska följa formatet nedan:
 
   `DefaultEndpointsProtocol=[http|https];AccountName=myAccountName;AccountKey=myAccountKey`
 
-* **Containernamn**: Information om hur du hittar ditt **containernamn** finns på [den här sidan](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
+* **Behållarnamn**: Om du vill hitta **Behållarnamn** kan du läsa [den här sidan](https://learn.microsoft.com/en-us/azure/storage/blobs/blob-containers-portal).
 
   **Behållarnamnet** får bara innehålla behållarens namn utan snedstreck.
 
@@ -157,8 +157,8 @@ Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningsk
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_settings"
->title="Definiera inställningarna för direktreklam"
->abstract="En konfiguration för direktutskick innehåller inställningarna för formateringen av filen som innehåller målgruppsdata och som ska användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
+>title="Definiera inställningar för direktreklam"
+>abstract="En konfiguration för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Konfigurera filroutning"
 
 <!--
@@ -170,11 +170,11 @@ Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningsk
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_split"
 >title="Definiera tröskelvärdet för fildelning"
->abstract="Du måste ange maximalt antal poster för varje fil som innehåller målgruppsdata. Du kan välja valfritt tal mellan 1 och 200 000 poster. När det angivna tröskelvärdet har uppnåtts skapas en annan fil för de återstående posterna."
+>abstract="Du måste ange maximalt antal poster för varje fil som innehåller målgruppsdata. Du kan välja valfritt tal mellan 1 och 200 000 poster. När det angivna tröskelvärdet har nåtts skapas en annan fil för de återstående posterna."
 
-För att kunna leverera direktreklam med [!DNL Journey Optimizer]måste du skapa en kanalkonfiguration för att definiera inställningarna för formateringen av filen som ska användas av e-postleverantören.
+För att kunna leverera direktreklam med [!DNL Journey Optimizer] måste du skapa en kanalkonfiguration som definierar inställningarna för formateringen av filen som ska användas av e-postleverantören.
 
-En konfiguration för direktmeddelanden måste också innehålla konfigurationen för fildirigering som definierar den server som direktmeddelandefilen ska exporteras till.
+En konfiguration för direktreklam måste även innehålla den filroutningskonfiguration som definierar den server där direktpostfilen ska exporteras.
 
 1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** och väljer **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Klicka på knappen **[!UICONTROL Create channel configuration]**. [Läs mer](../configuration/channel-surfaces.md)
 
@@ -206,19 +206,19 @@ En konfiguration för direktmeddelanden måste också innehålla konfigurationen
 
    ![](assets/surface-direct-mail-column-separator.png)
 
-1. Välj de **[!UICONTROL File routing configuration]** som du har skapat. Detta definierar vart filen ska exporteras så att din direktutskicksleverantör kan använda den.
+1. Välj **[!UICONTROL File routing configuration]** bland de som du har skapat. Detta anger var filen exporteras så att din direktmeddelandeleverantör kan använda den.
 
    >[!CAUTION]
    >
-   >Om du inte har konfigurerat något alternativ för fildirigering kommer du inte att kunna skapa en konfiguration för direktmeddelanden. [Läs mer](#file-routing-configuration)
+   >Om du inte har konfigurerat något alternativ för filroutning kommer du inte att kunna skapa en direktadresskonfiguration. [Läs mer](#file-routing-configuration)
 
    ![](assets/surface-direct-mail-file-routing.png){width="800" align="center"}
 
    <!--![](assets/surface-direct-mail-file-routing-with-insertion.png)-->
 
-1. Skicka konfigurationen för direktmeddelanden.
+1. Skicka konfigurationen för direktreklam.
 
-Nu kan [du skapa ett direktmeddelande](../direct-mail/create-direct-mail.md) i en kampanj. När kampanjen har startats exporteras filen som innehåller målgruppsdata automatiskt till den server som du har definierat. Leverantören av direktmeddelanden kommer sedan att kunna hämta filen och fortsätta med direktmeddelandeleveransen.
+Du kan nu [skapa ett direktmeddelandemeddelande](../direct-mail/create-direct-mail.md) inuti en kampanj. När kampanjen har startats exporteras filen som innehåller målgruppsdata automatiskt till den server som du har definierat. Leverantören av direktreklam kan då hämta filen och fortsätta med leveransen av direktreklam.
 
 >[!NOTE]
 >

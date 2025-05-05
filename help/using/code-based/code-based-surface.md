@@ -72,7 +72,7 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 
 I [!DNL Journey Optimizer] har den kodbaserade upplevelsekanalen stöd för två typer av kundimplementeringar:
 
-* Baserat på [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} för dina webbplatser eller på [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} för dina mobilappar;
+* Baserat på [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} för dina webbplatser eller på [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} för dina mobilappar.
 * Server-side eller hybrid med [AEP Edge Network Server-API:er](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"}.
 
 >[!NOTE]

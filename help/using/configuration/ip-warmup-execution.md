@@ -162,7 +162,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    ![](assets/ip-warmup-plan-send-time.png)
 
-1. Du kan också definiera ett tidsfönster under vilket IP-värmerskampanjen kan köras om det uppstår några förseningar i [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"}. Om du vill göra det klickar du på egenskapsikonen uppe till vänster bredvid namnet på planen och använder listrutan **[!UICONTROL Retry run time]** för att välja en varaktighet, upp till 240 minuter (4 timmar).
+1. Du kan också definiera ett tidsfönster under vilket IP-warmup-kampanjen kan köras om det uppstår några förseningar i [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"}. Om du vill göra det klickar du på egenskapsikonen uppe till vänster bredvid namnet på planen och använder listrutan **[!UICONTROL Retry run time]** för att välja en varaktighet, upp till 240 minuter (4 timmar).
 
    >[!NOTE]
    >
@@ -232,7 +232,7 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
 
 * Om du aktiverar den första körningen av en fas:
 
-   * En [målgrupp](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} skapas för de uteslutna kampanjmålgrupperna (om sådana finns), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Audience Exclusion `.
+   * En [målgrupp](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} skapas för de uteslutna kampanjmålgrupperna (om det finns någon), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Audience Exclusion `.
 
    * En målgrupp skapas för de domängrupper som har uteslutits (om sådana finns), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Domain Exclusion`.
 
@@ -254,7 +254,7 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
      >
      >Systemet skapar inte en ny målgrupp om det inte sker någon förändring i det senaste interaktionsfiltret för efterföljande faser.
 
-   * En [målgruppskomposition](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"} skapas som motsvarar målgruppen som kampanjen ska skickas till, med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Run<runNo>`.
+   * En [målgruppskomposition](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"} skapas som motsvarar målgruppen som kampanjen skickas till, med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Run<runNo>`.
 
      >[!NOTE]
      >

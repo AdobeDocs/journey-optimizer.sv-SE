@@ -36,7 +36,7 @@ Så här använder du fragment på bästa sätt:
 
 ## Före start {#fragment-prerequisites}
 
-Om du vill skapa, redigera, arkivera och publicera fragment behöver du behörigheterna **[!DNL Manage library items]** och **[Publish Fragment]** i produktprofilen för **[!DNL Content Library Manager]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
+Om du vill skapa, redigera, arkivera och publicera fragment behöver du behörigheterna **[!DNL Manage library items]** och **[Publicera fragment]** i produktprofilen för **[!DNL Content Library Manager]**. [Läs mer](../administration/ootb-product-profiles.md#content-library-manager)
 
 I den här versionen gäller följande begränsningar:
 
