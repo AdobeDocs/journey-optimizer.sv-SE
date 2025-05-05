@@ -46,7 +46,7 @@ Under förutsättning att inga andra leveransförsök gjorts och att de båda me
 >id="ajo_admin_suppression_list_bounces"
 >title="Uppdatera tröskelvärdet för återförsök"
 >abstract="Om standardvärdet inte passar dina behov kan du ändra det tillåtna antalet på varandra följande mjuka studsar. När räknaren för nya försök når feltröskeln för en viss e-postadress läggs den här adressen till i listan över spärrade adresser."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/suppression-list.html" text="Förstå listan över undantag"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/suppression-list.html?lang=sv-SE" text="Förstå listan över undantag"
 
 Om standardvärdet 5 inte passar dina behov kan du ändra feltröskeln enligt stegen nedan.
 
