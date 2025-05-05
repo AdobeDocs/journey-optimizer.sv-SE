@@ -9,16 +9,16 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: 6ffa9d9125f941febbc894e75dcb1a202e1e9cc0
+source-git-commit: c0e8d80cac202fb463aa95b4a536146679e6567f
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
 
 # Anpassa inställningar för e-postkonfiguration {#surface-personalization}
 
-För ökad flexibilitet och kontroll över e-postinställningarna kan du med [!DNL Journey Optimizer] definiera anpassade värden för underdomäner och rubriker och parametrar för URL-spårning när du skapar e-postkonfigurationer.
+För större flexibilitet och kontroll över e-postinställningarna kan du med [!DNL Journey Optimizer] definiera anpassade värden för underdomäner, rubriker och parametrar för URL-spårning när du skapar e-postkonfigurationer.
 
 ## Lägg till dynamiska underdomäner {#dynamic-subdomains}
 
