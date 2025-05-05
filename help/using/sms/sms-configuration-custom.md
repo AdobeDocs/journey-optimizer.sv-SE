@@ -83,4 +83,4 @@ När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som 
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3431625)
+>[!VIDEO](https://video.tv.adobe.com/v/3443610?captions=swe)

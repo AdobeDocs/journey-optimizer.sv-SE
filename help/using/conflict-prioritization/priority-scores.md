@@ -46,4 +46,4 @@ I situationer där två kampanjer har samma prioritetspoäng visas den kampanj s
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3445005?quality=12&captions=swe)

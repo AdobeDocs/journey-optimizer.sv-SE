@@ -51,4 +51,4 @@ När du avbryter en resa stoppas den permanent: alla personer som flyter på res
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3427940?quality=12&captions=swe)

@@ -132,4 +132,4 @@ När resan är live kan du checka in reserapporten om regeluppsättningen har le
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3447618?quality=12&captions=swe)

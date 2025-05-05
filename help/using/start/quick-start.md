@@ -41,4 +41,4 @@ Välj din profil om du vill lära dig och upptäcka styrkan i Adobe Journey Opti
 
 Förstå Journey Optimizer nyckelfunktioner och personligheter. Lär dig hur du navigerar i användargränssnittet beroende på din roll.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430318?quality=12&captions=swe)

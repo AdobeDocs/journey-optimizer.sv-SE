@@ -138,4 +138,4 @@ Aktivera alternativet **[!UICONTROL Create new profiles]** i avsnittet **[!UICON
 
 Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3452729?quality=12&captions=swe)
