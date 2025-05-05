@@ -2,28 +2,27 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Publicera resan
-description: Lär dig hur du rapporterar om vald resemätning
+description: Lär dig hur du rapporterar om dina resemått
 feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 95d0267e-fab4-4057-8ab5-6f7c9c866b0f
-source-git-commit: d28341dd39ec3ab838a5fbb3ae49539b8776c60b
+source-git-commit: 3cbda018a1380e13ba3670563240238367517353
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
 
 # Konfigurera och spåra dina resemått {#success-metrics}
 
-Med kundstatistik kan ni effektivt mäta effekten av era aktiviteter genom att följa upp deras resultat mot fördefinierade mätvärden.
-Genom att följa upp dessa mätvärden kan ni se hur bra kundresan går, identifiera områden som kan förbättras och fatta välgrundade beslut för att öka kundengagemanget.
+Få tydlig insyn i hur effektiva era kundresor är med hjälp av kundstatistik. Med den här funktionen kan du spåra prestanda mot definierade KPI:er, identifiera insikter i vad som fungerar och identifiera områden som kan optimeras. Genom att mäta påverkan i realtid kan ni få kontinuerlig förbättring och fatta dataunderbyggda beslut som ökar kundengagemanget.
 
 ## Förhandskrav {#prerequisites}
 
-Innan du använder resemätverket måste du lägga till en datamängd som innehåller fältgrupperna `Commerce Details`, `Web` och `Mobile` [](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
+Innan du använder dina resemått måste du lägga till en datamängd som innehåller fältgrupperna `Commerce Details`, `Web` och `Mobile` [](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
 
 ## Tillgängliga mått {#metrics}
 
@@ -70,9 +69,9 @@ Varje mätresultat har en angiven attribuering som avgör vilka kontaktytor elle
 
   Läs mer om [Attributmodeller](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution#attribution-models)
 
-## Tilldela dina Journey-mått {#assign}
+## Tilldela dina resemått {#assign}
 
-Följ stegen nedan när du vill börja spåra dina resemått:
+Följ stegen nedan för att börja spåra dina resemått:
 
 1. Klicka på **[!UICONTROL Create Journey]** på **[!UICONTROL Journeys]**-menyn.
 
@@ -90,8 +89,8 @@ Följ stegen nedan när du vill börja spåra dina resemått:
 
 1. Testa och publicera din resa.
 
-1. Öppna din reserapport för att spåra resultatet för dina tilldelade framgångsmått.
+1. Öppna din reserapport för att spåra resultatet av dina tilldelade framgångsmått.
 
-   Det valda måttet visas i rapportens tabell över nyckeltal och resestatistik.
+   De värden du väljer visas i rapportens tabell över nyckeltal och kundstatistik.
 
    ![](assets/success_metric_2.png)

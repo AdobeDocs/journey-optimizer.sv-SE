@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
+source-git-commit: 3cbda018a1380e13ba3670563240238367517353
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,20 @@ ht-degree: 0%
 
 Resans egenskaper är centraliserade i rätt spår. Det här avsnittet visas som standard när du skapar en ny resa. Klicka på pennikonen bredvid resans namn för att öppna befintliga resor.
 
-I det här avsnittet kan du definiera namnet på resan, lägga till en beskrivning och:
+I det här avsnittet definierar du namnet på resan, lägger till en beskrivning och anger globala egenskaper för resan.
 
-* hantera [inträde och återinträde](#entrance),
-* välj start och slut [datum](#dates),
-* hantera [åtkomst till data](#manage-access),
-* definiera en [timeout-varaktighet](#timeout) i reseaktiviteter (endast för administratörsanvändare),
-* välj resan och profilen [tidszoner](#timezone)
-* Tilldela enhetliga Adobe Experience Platform-taggar till din resa för att enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
-* övervaka konflikter och prioritera dina resor med [konflikthanteringsverktyg](#conflict).
+Du kan:
 
-![](assets/journey32.png)
+* Tilldela enhetliga Adobe Experience Platform-taggar till resan, så att du enkelt kan klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
+* Välj resemätningar. [Lär dig hur du konfigurerar och spårar dina resemått](success-metrics.md)
+* Hantera [inträde och återinträde](#entrance). Profilingångshantering beror på typen av resor. Information finns på [den här sidan](entry-management.md)
+* Hantera [åtkomst till data](#manage-access)
+* Välj resan och profilen [tidszoner](#timezone)
+* Välj anpassade [start- och slutdatum](#dates)
+* Definiera en [timeout-varaktighet](#timeout) i reseaktiviteter (endast för Admin-användare)
+* Övervaka konflikter och prioritera dina resor med [konflikthanteringsverktyg](#conflict)
+
+![](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
 
 >[!NOTE]
 >
@@ -75,46 +78,46 @@ När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återk
 
 ## Hantera åtkomst {#manage-access}
 
-Klicka på knappen **[!UICONTROL Manage access]** om du vill tilldela anpassade eller grundläggande dataanvändningsetiketter till resan. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
+Du kan begränsa åtkomsten till en resa baserat på åtkomstetiketter.
 
-![](assets/journeys-manage-access.png)
+Om du vill tilldela anpassade etiketter för dataanvändning till resan klickar du på ikonen **[!UICONTROL Manage access labels]** och väljer en eller flera etiketter.
+
+[Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
 ## Tidszoner för resa och profil {#timezone}
 
 Tidszonen definieras på resenivå. Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen. Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
 
-Mer information om hantering av tidszoner finns på [den här sidan](../building-journeys/timezone-management.md).
+[Läs mer om hantering av tidszoner](../building-journeys/timezone-management.md)
 
 ## Start- och slutdatum {#dates}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_start_date"
 >title="Startdatum"
->abstract="Välj det datum då resan kan börja. Om inget startdatum anges anges det automatiskt vid publiceringstidpunkten."
-
+>abstract="Välj det datum då profiler kan börja registrera resan. Om inget startdatum anges används reseobjektets publiceringsdatum som standard."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_end_date"
 >title="Slutdatum"
->abstract="Välj slutdatum för din resa. När det datumet har nåtts avslutar profiler på den resan automatiskt och nya kan inte längre komma in i den."
+>abstract="Ange datumet då resan slutar. På det här datumet kommer aktiva profiler automatiskt att avsluta resan och inga nya poster kommer att tillåtas."
 
-Du kan definiera ett **startdatum**. Om du inte har angett någon sådan kommer den att definieras automatiskt vid publiceringstidpunkten.
+Som standard kan profiler ta sig in på din resa så snart den har publicerats, och de kan stanna tills tidsgränsen för den [globala resan](#global_timeout) nås. Det enda undantaget är återkommande läsmålgruppsresor med **Tvinga återinträde vid upprepning** aktiverat, som slutar vid startdatumet för nästa förekomst.
 
-Du kan också lägga till ett **slutdatum**. Detta gör att profiler kan avslutas automatiskt när datumet nås. Om inget slutdatum anges kan profiler stanna tills den [globala resetidsgränsen](#global_timeout) (som vanligtvis är 91 dagar). Det enda undantaget är återkommande läsmålgruppsresor med **Tvinga återinträde vid upprepning** aktiverat, som slutar vid startdatumet för nästa förekomst.
+Om det behövs kan du definiera ett anpassat **startdatum** och **slutdatum**. Detta gör att profilerna kan gå in på din resa ett visst datum och avsluta automatiskt när slutdatumet nås.
 
 ## Timeout {#timeout}
 
-### Tidsgräns eller fel i reseaktiviteter {#timeout_and_error}
+### Tidsgräns för reseaktiviteter {#timeout_and_error}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_timeout"
->title="Timeout"
->abstract="Ange hur lång tid resan ska försöka utföra en åtgärd eller verifiera ett villkor innan det betraktas som en timeout."
-
+>title="Timeout eller fel"
+>abstract="Ange hur länge resan ska försöka utföra en åtgärd eller utvärdera ett villkor innan det behandlas som timeout. Rekommenderade värden är mellan 1 och 30 sekunder."
 
 När du redigerar en åtgärd eller villkorsaktivitet kan du definiera en alternativ sökväg om ett fel eller en timeout inträffar. Om bearbetningen av aktiviteten som förhör ett tredjepartssystem överskrider tidsgränsen som anges i fältet **[!UICONTROL Timeout or error]** för resans egenskaper, väljs den andra sökvägen för att utföra en eventuell reservåtgärd.
 
-Giltiga värden är mellan 1 och 30 sekunder.
+Rekommenderade värden är mellan 1 och 30 sekunder.
 
 Vi rekommenderar att du definierar ett mycket kort **[!UICONTROL Timeout or error]**-värde om din resa är tidskänslig (exempel: reagerar på en persons realtidsplats) eftersom du inte kan fördröja åtgärden i mer än några sekunder. Om resan är mindre tidskänslig kan du använda ett längre värde för att ge mer tid till det system som anropas för att skicka ett giltigt svar.
 

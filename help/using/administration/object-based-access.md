@@ -9,10 +9,10 @@ role: Admin, Developer, Architect
 level: Experienced
 keywords: objekt, nivå, åtkomst, kontroll, etiketter, plats, auktorisering
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
-source-git-commit: fbcd5ae83c024d672d608d5f5aefc6a4252ec8c0
+source-git-commit: 3cbda018a1380e13ba3670563240238367517353
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '440'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_olac_manage_access"
 >title="Åtkomsthanteringsetiketter"
->abstract="Du kan begränsa åtkomsten till den här kampanjen baserat på åtkomstetiketter. Om du vill lägga till en åtkomstbegränsning bläddrar du till knappen **Hantera åtkomst** högst upp på den här sidan. Se till att endast markera etiketter som du har behörighet för."
+>abstract="Du kan begränsa åtkomsten till ett objekt baserat på åtkomstetiketter. Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter. **Se till att endast markera etiketter som du har behörighet för.**"
+
+Du kan begränsa åtkomsten till ett objekt baserat på åtkomstetiketter. Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
 
 Med OLAC-funktionen (Object level access control) kan du definiera behörigheter för att hantera dataåtkomst till ett urval av objekt:
 
@@ -36,7 +38,6 @@ Med OLAC-funktionen (Object level access control) kan du definiera behörigheter
 * Kanalkonfiguration
 * IP-värmerapport
 
-Syftet är att skydda känsliga digitala resurser mot obehöriga användare, vilket ger ytterligare skydd för personuppgifter.
 
 ## Förhandskrav {#prereq-labels}
 
