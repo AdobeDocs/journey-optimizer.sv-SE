@@ -20,9 +20,9 @@ ht-degree: 3%
 
 Följ stegen nedan för att konfigurera webbkanalen i appen:
 
-* Installera taggtillägget Web SDK om du vill ha stöd för Web In-app Messaging. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=en)
+* Installera taggtillägget Web SDK om du vill ha stöd för Web In-app Messaging. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=sv-SE)
 
-* Anpassa utlösarna. Meddelanden i appen stöder två typer av utlösare: Skickade data till plattformen och Manuella utlösare. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html)
+* Anpassa utlösarna. Meddelanden i appen stöder två typer av utlösare: Skickade data till plattformen och Manuella utlösare. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html?lang=sv-SE)
 
 * Skapa en webbkonfiguration i appen. [Läs mer](inapp-configuration.md)
 

@@ -23,9 +23,9 @@ Frågeredigeraren har stöd för att utveckla frågor för analys och datautfors
 
 ![](assets/queries-home.png)
 
-Lär dig hur du använder frågeredigeraren i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html){target="_blank"}.
+Lär dig hur du använder frågeredigeraren i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=sv-SE){target="_blank"}.
 
 >[!MORELIKETHIS]
 >
 >* [Dokumentation för frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target="_blank"}
->* [Översiktsvideo om frågetjänsten](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html){target="_blank"}
+>* [Översiktsvideo om frågetjänsten](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=sv-SE){target="_blank"}

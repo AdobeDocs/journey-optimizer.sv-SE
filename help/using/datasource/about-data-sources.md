@@ -49,7 +49,7 @@ För varje datakälla definierar du den information som ska hämtas med fältgru
 >
 >Schemarelationer stöds inte för datakällor.
 
-Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html){target="_blank"} om du vill ha mer information om hur du konfigurerar en Adobe Experience Platform Data Source och en extern datakälla samt hur du söker efter och använder data under en resa.
+Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html?lang=sv-SE){target="_blank"} om du vill ha mer information om hur du konfigurerar en Adobe Experience Platform Data Source och en extern datakälla samt hur du söker efter och använder data under en resa.
 
 ## Instruktionsvideo {#video}
 

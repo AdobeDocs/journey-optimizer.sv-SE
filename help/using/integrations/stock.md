@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Insticksprogrammet för integrering mellan [!DNL Adobe Stock] och [!DNL Adobe Journey Optimizer] e-post-Designer ger kunderna ett enkelt sätt att navigera, licensiera och spara bilder för användning i meddelanderedigering.
 
-[Adobe Stock](https://helpx.adobe.com/stock/get-started.html){target="_blank"} ger tillgång till miljontals utvalda och royaltyfria foton, videor, illustrationer och vektorbilder av hög kvalitet. Du kan välja att köpa ett kreditpaket för att licensiera mediefiler eller bara köpa en Standard- eller Extended-licens för den mediefil du behöver. Adobe Stock erbjuder också en kostnadsfri samling resurser.
+[Adobe Stock](https://helpx.adobe.com/se/stock/get-started.html){target="_blank"} ger tillgång till miljontals utvalda och royaltyfria foton, videor, illustrationer och vektorbilder av hög kvalitet. Du kan välja att köpa ett kreditpaket för att licensiera mediefiler eller bara köpa en Standard- eller Extended-licens för den mediefil du behöver. Adobe Stock erbjuder också en kostnadsfri samling resurser.
 
 Med [!DNL Adobe Journey Optimizer] kan du överföra bilder till dina e-postmeddelanden direkt från [!DNL Adobe Stock] och lägga till dem i din **[!UICONTROL Assets]**-mapp med alternativet **[!UICONTROL Find Adobe Stock photos]**. Dessutom hjälper alternativet **[!UICONTROL Find Similar Stock photos]** dig att hitta bilder som matchar innehållet, färgen och kompositionen för resursen som används i leveransen.
 
@@ -30,7 +30,7 @@ Med [!DNL Adobe Journey Optimizer] kan du överföra bilder till dina e-postmedd
 
 Alternativen **[!UICONTROL Find Adobe Stock photos]** och **[!UICONTROL Find Similar Image]** är tillgängliga för användare med tillgång till en produktprofil för AEM Assets Essentials.
 
-Mer information finns i [Experience Manager Assets-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-users-to-essentials){target="_blank"}.
+Mer information finns i [Experience Manager Assets-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html?lang=sv-SE#add-users-to-essentials){target="_blank"}.
 
 ## Infoga en bild från [!DNL Adobe Stock] {#add-stock-image}
 
@@ -102,5 +102,5 @@ Följ stegen nedan för att licensiera och hämta din bild:
 
 * [E-postdesign i Journey Optimizer](../email/get-started-email-design.md)
 * [Komponentinställningar för e-postdesign](../email/content-components.md)
-* [Kom igång med Adobe Stock](https://helpx.adobe.com/stock/get-started.html){target="_blank"}.
+* [Kom igång med Adobe Stock](https://helpx.adobe.com/se/stock/get-started.html){target="_blank"}.
 

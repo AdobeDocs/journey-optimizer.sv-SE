@@ -29,4 +29,4 @@ Dessa uppgifter kan utföras med hjälp av menyn **[!UICONTROL Data Lifecycle]**
 Mer information om Privacy Service och hur du utför livscykelåtgärder för data finns i Adobe Experience Platform dokumentation:
 
 * [Privacy Service - översikt](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv)
-* [Datalifecykel i Adobe Experience Patform](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html)
+* [Datalifecykel i Adobe Experience Patform](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=sv-SE)

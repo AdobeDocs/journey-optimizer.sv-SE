@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Integrationen med **[!DNL Adobe Intelligent Services]** gör att du kan utnyttja kraften i artificiell intelligens och maskininlärning i kundupplevelsefall. På så sätt kan marknadsföringsanalytiker skapa prediktioner som är specifika för ett företags behov med hjälp av konfigurationer på företagsnivå utan behov av datavetenskap.
 
-[!DNL Intelligent Services], som bygger på Adobe Experience Platform, ger marknadsförare som ansvarar för kundupplevelseåtkomst till AI-as-service, vilket gör det enkelt för alla att förutse kundbeteende, mäta effekten av en kampanj eller säkerställa bättre avkastning på varje investering. Mer information om [!DNL Adobe Intelligent Services] finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html){target="_blank"}.
+[!DNL Intelligent Services], som bygger på Adobe Experience Platform, ger marknadsförare som ansvarar för kundupplevelseåtkomst till AI-as-service, vilket gör det enkelt för alla att förutse kundbeteende, mäta effekten av en kampanj eller säkerställa bättre avkastning på varje investering. Mer information om [!DNL Adobe Intelligent Services] finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=sv-SE){target="_blank"}.
 
 Integrationen mellan [!DNL Journey Optimizer] och [!DNL Intelligent Services] gör att du kan utnyttja kundförutsägelser.
 
-Kund-AI är en del av [!DNL Adobe Intelligent Services]. Det hjälper till att förutsäga vad en kund sannolikt kommer att göra. Se [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html){target="_blank"}.
+Kund-AI är en del av [!DNL Adobe Intelligent Services]. Det hjälper till att förutsäga vad en kund sannolikt kommer att göra. Se [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=sv-SE){target="_blank"}.
 
 Med kundens AI kan varumärken skapa maskininlärningsbaserade poäng som är tillgängliga som profilattribut i Adobe Experience Platform-profiler (kundprofil i realtid).
 

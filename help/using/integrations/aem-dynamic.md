@@ -25,7 +25,7 @@ Resursväljaren har nu stöd för dynamiska medier, vilket gör att du sömlöst
 
 Observera att den här integreringen endast är tillgänglig för kunder som använder Dynamic Media Manager as a Cloud Service.
 
-Mer information om Dynamic Media i Adobe Experience Manager as a Cloud Service finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media){target="_blank"}.
+Mer information om Dynamic Media i Adobe Experience Manager as a Cloud Service finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media){target="_blank"}.
 
 ## Lägga till och hantera dynamiska medier {#dynamic-media}
 
@@ -47,7 +47,7 @@ Förbättra och optimera materialet för alla skärmar och webbläsare genom att
 
 1. Justera bildparametrarna (t.ex. höjd, bredd, rotering, vändning, intensitet, nyans) efter behov för att uppfylla dina mediebehov.
 
-   En omfattande lista över bildparametrar som kan läggas till i URL:en finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+   En omfattande lista över bildparametrar som kan läggas till i URL:en finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
    ![](assets/dynamic-media-3.png)
 
@@ -100,7 +100,7 @@ Innehållet innehåller nu din uppdaterade textövertäckning.
 
 Lägg enkelt till din Dynamic Media-mall i Journey Optimizer och uppdatera medieinnehållet när det behövs. Ni kan nu lägga in personaliseringsfält i era medier, så att ni kan skapa mer anpassat och engagerande innehåll i Journey Optimizer.
 
-Läs mer om [mallen för dynamiska media](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
+Läs mer om [mallen för dynamiska media](https://experienceleague.adobe.com/sv/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
 
 ### Med bildkomponent {#image-component}
 
@@ -120,7 +120,7 @@ Du kan infoga den dynamiska mallen direkt i innehållet med komponenten Bild:
 
 1. Gå till parametrarna för mallen för dynamiska media i **bildinställningarna**.
 
-   Vilka fält som är tillgängliga beror på de parametrar som lagts till när [mallen ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters) skapades i Adobe Experience Manager.
+   Vilka fält som är tillgängliga beror på de parametrar som lagts till när [mallen ](https://experienceleague.adobe.com/sv/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters) skapades i Adobe Experience Manager.
 
    ![](assets/dynamic-media-template-3.png)
 

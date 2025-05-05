@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komma åt Adobe Express kraftfulla redigeringsverktyg när du skapar innehåll. Tack vare den här integreringen kan du ändra storlek på bilder, ta bort bakgrunder, beskära bilder och konvertera resurser till JPEG eller PNG utan att behöva växla mellan lösningarna.
 
-Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/express/user-guide.html).
+Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/se/express/user-guide.html).
 
 Du kommer åt menyn **[!DNL Adobe Express]** genom att gå till dina **bildinställningar** från e-postdesignern och klicka på **[!UICONTROL Edit in Adobe Express]**.
 

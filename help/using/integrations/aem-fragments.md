@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Genom att integrera Adobe Experience Manager med Adobe Journey Optimizer kan du nu smidigt införliva dina AEM Content Fragments i ditt Journey Optimizer e-postinnehåll. Denna smidiga anslutning förenklar processen att komma åt och utnyttja AEM-innehåll, vilket gör det möjligt att skapa personaliserade och dynamiska kampanjer och resor.
 
-Mer information om AEM Content Fragment finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/fragments/content-fragments).
+Mer information om AEM Content Fragment finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/authoring/fragments/content-fragments).
 
 ## Begränsningar {#limitations}
 
@@ -53,7 +53,7 @@ Mer information om AEM Content Fragment finns i [Experience Manager-dokumentatio
 
 ## Lägg till AEM Content Fragments {#aem-add}
 
-När du har skapat och personaliserat dina [AEM Content Fragments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/fragments/content-fragments) kan du nu importera det till din kampanj eller resa för att optimera din resa.
+När du har skapat och personaliserat dina [AEM Content Fragments](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/authoring/fragments/content-fragments) kan du nu importera det till din kampanj eller resa för att optimera din resa.
 
 1. När du har skapat din [kampanj](../email/create-email.md) eller [resa](../email/create-email.md) med en e-poståtgärd kan du komma åt e-postdesignern och konfigurera e-postinnehållet. [Läs mer](../email/get-started-email-design.md)
 

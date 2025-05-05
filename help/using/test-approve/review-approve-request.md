@@ -49,4 +49,4 @@ När begäran har skickats meddelas den som skapat resan/kampanjen via ett e-pos
 
 >[!NOTE]
 >
-> Om du inte får något meddelande om godkännande via ett e-postmeddelande måste du uppdatera dina prenumerationsinställningar i dina Experience Cloud-profiler. [Läs mer](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences)
+> Om du inte får något meddelande om godkännande via ett e-postmeddelande måste du uppdatera dina prenumerationsinställningar i dina Experience Cloud-profiler. [Läs mer](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences)

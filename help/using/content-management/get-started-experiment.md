@@ -92,7 +92,7 @@ Om du till exempel ändrar innehållet i meddelandetexten påverkas inte öppnin
 +++Kör testet på rätt målgruppsstorlek eller tillräckligt länge
 
 Om du kör testerna längre kan du upptäcka mindre skillnader i målmåttet mellan behandlingarna. Om baslinjevärdet för målmåttet är litet behöver du större samplingsstorlekar.
-Antalet användare som måste ingå i ditt experiment beror på vilken effektstorlek du vill identifiera, variationen eller spridningen av målmåttet samt din tolerans för falska positiva och falska negativa fel. I klassiska experiment kan du använda en [exempelstorlekskalkylator](https://experienceleague.adobe.com/tools/calculator/testcalculator.html){_blank} för att avgöra hur länge du måste köra testet.
+Antalet användare som måste ingå i ditt experiment beror på vilken effektstorlek du vill identifiera, variationen eller spridningen av målmåttet samt din tolerans för falska positiva och falska negativa fel. I klassiska experiment kan du använda en [exempelstorlekskalkylator](https://experienceleague.adobe.com/tools/calculator/testcalculator.html?lang=sv-SE){_blank} för att avgöra hur länge du måste köra testet.
 +++
 
 +++Förstå statistisk osäkerhet

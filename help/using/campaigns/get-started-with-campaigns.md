@@ -55,7 +55,7 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
    1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
 
    Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 

@@ -48,13 +48,13 @@ Så här tilldelar du en **[!UICONTROL Role]**:
 
 1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte redan har skapats i [!DNL Admin Console] kan du läsa [dokumentationen om att lägga till användare](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/users.html).
+   Om användaren inte redan har skapats i [!DNL Admin Console] kan du läsa [dokumentationen om att lägga till användare](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/users.html?lang=sv-SE).
 
    ![](assets/do-not-localize/access_control_4.png)
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
-Mer information om användarhantering finns i [Åtkomstkontrollsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
+Mer information om användarhantering finns i [Åtkomstkontrollsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE).
 
 När du får åtkomst till instansen visas en specifik vy för användaren beroende på de tilldelade behörigheterna i **[!UICONTROL Role]**. Om användaren inte har rätt åtkomst till en funktion visas följande meddelande:
 
@@ -91,7 +91,7 @@ Om det behövs kan du även skapa en ny roll med specifika behörigheter. Mer in
 
 Med [!DNL Journey Optimizer] kan du skapa egna **[!UICONTROL Roles]** och tilldela en uppsättning behörigheter och sandlådor till dina användare. Med **[!UICONTROL Roles]** kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
-Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
+Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=sv-SE){target="_blank"}.
 
 I det här exemplet skapar vi en roll med namnet **Resor skrivskyddade** där vi beviljar skrivskyddade behörigheter till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL &#x200B; Decision management]** i [!DNL Journey Optimizer].
 
@@ -125,4 +125,4 @@ Så här skapar du våra **resor med skrivskydd** **[!UICONTROL Role]**:
 
 **[!UICONTROL Role]** har skapats och konfigurerats. Du måste nu tilldela den till användare.
 
-Mer information om att skapa och hantera roller finns i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/roles.html).
+Mer information om att skapa och hantera roller finns i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/roles.html?lang=sv-SE).

@@ -134,7 +134,7 @@ Den dagliga frekvensen gäller för dagen till :59: &lbrace;59 UTC och återstä
 
 >[!NOTE]
 >
->För att säkerställa noggrannhet för regler för daglig frekvensbegränsning bör [direktuppspelningssegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"} användas. Läs mer om metoder för målgruppsutvärdering i [det här avsnittet](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
+>För att säkerställa noggrannhet för regler för daglig frekvensbegränsning bör [direktuppspelningssegmentering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=sv-SE){target="_blank"} användas. Läs mer om metoder för målgruppsutvärdering i [det här avsnittet](../audience/about-audiences.md#evaluation-method-in-journey-optimizer).
 
 ## Aktivera en affärsregel {#activate-rule}
 

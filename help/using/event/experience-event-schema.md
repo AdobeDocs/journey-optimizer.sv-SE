@@ -72,7 +72,7 @@ Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
 
 >[!NOTE]
 >
->Läs mer om schemarelationer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html).
+>Läs mer om schemarelationer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=sv-SE).
 
 I Journey Optimizer kan du sedan använda alla fält från de länkade tabellerna:
 
