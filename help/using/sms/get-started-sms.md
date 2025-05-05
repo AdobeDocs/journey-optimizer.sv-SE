@@ -72,7 +72,7 @@ Adobe Journey Optimizer skickar textmeddelanden via SMS-tjänstleverantörer (el
 
   >[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 
-+++
+  +++
 
 * Videon nedan hjälper er att förstå vilka mobilfunktioner Adobe Journey Optimizer erbjuder marknadsförare.
 
@@ -81,4 +81,4 @@ Adobe Journey Optimizer skickar textmeddelanden via SMS-tjänstleverantörer (el
 
   >[!VIDEO](https://video.tv.adobe.com/v/3426021?quality=12&learn=on)
 
-+++
+  +++

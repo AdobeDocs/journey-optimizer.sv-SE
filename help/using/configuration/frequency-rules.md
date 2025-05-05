@@ -124,13 +124,13 @@ Räknaren för varje period har följande förfallodatum:
 
 * **[!UICONTROL Monthly]**: Frekvensgränsen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
-* **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:{59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet är oberoende av hur regeln skapas. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+* **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:&lbrace;59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet är oberoende av hur regeln skapas. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
 
 ### Daglig frekvensbegränsning {#daily-frequency-cap}
 
 Förutom månatligt och veckovis finns daglig frekvens tillgänglig vid behov. Kontakta Adobe om du vill ha mer information.
 
-Den dagliga frekvensen gäller för dagen till :59: {59 UTC och återställs till 0 i början av nästa dag.
+Den dagliga frekvensen gäller för dagen till :59: &lbrace;59 UTC och återställs till 0 i början av nästa dag.
 
 >[!NOTE]
 >

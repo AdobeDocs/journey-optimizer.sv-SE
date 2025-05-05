@@ -53,7 +53,7 @@ Så här lägger du till ett innehållskort på en resa:
       | Programmets livscykel | Programmet stängs | Utlöses när programmet stängs. |
       | Programmets livscykel | Programkrasch | Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas efter kraschen. Kraschrapportering för Adobe Mobile implementerar inte en global hanterare för ej infångade undantag. |
 
-+++
+      +++
 
    1. Välj villkoret **[!UICONTROL Or]** om du vill lägga till fler **[!UICONTROL Triggers]** för att utöka regeln ytterligare.
 
@@ -78,7 +78,7 @@ Så här lägger du till ett innehållskort på en resa:
       | Programmets livscykel | Startar | Utlöses när det angivna antalet starter uppfylls. |
       | Programmets livscykel | Tid på dagen | Utlöses när den angivna tidpunkten på dagen uppfylls. |
 
-+++
+      +++
 
    1. Klicka på **[!UICONTROL Make group]** för att gruppera utlösare.
 

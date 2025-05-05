@@ -67,7 +67,7 @@ Så här lägger du till ett meddelande i appen under en resa:
       | Platser | Ange POI | Utlöses av Places SDK när kunden anger den POI (Point of Interest) som du har konfigurerat. |
       | Platser | Avsluta POI | Utlöses av Places SDK när kunden avslutar den POI (Point of Interest) som du konfigurerade. |
 
-+++
+      +++
 
    1. Klicka på **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
 
@@ -99,7 +99,7 @@ Så här lägger du till ett meddelande i appen under en resa:
       | Platser | Senaste inmatade POI | Utlöses av Platser SDK beroende på vilken kund du senast angav. |
       | Platser | Senaste utloggad POI | Utlöses av Places SDK beroende på kundens sista utlämnade punkt för intresse. |
 
-+++
+      +++
 
       ![](assets/in_app_create_8.png)
 
@@ -173,7 +173,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
       | Platser | Ange POI | Utlöses av Places SDK när kunden anger den POI (Point of Interest) som du har konfigurerat. |
       | Platser | Avsluta POI | Utlöses av Places SDK när kunden avslutar den POI (Point of Interest) som du konfigurerade. |
 
-+++
+      +++
 
    1. Klicka på **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
 
@@ -205,7 +205,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
       | Platser | Senaste inmatade POI | Utlöses av Platser SDK beroende på vilken kund du senast angav. |
       | Platser | Senaste utloggad POI | Utlöses av Places SDK beroende på kundens sista utlämnade punkt för intresse. |
 
-+++
+      +++
 
       ![](assets/in_app_create_8.png)
 
@@ -238,7 +238,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
   >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
 
-+++
+  +++
 
 * I videon nedan visas hur du konfigurerar och analyserar innehållsexperiment med A/B-testmeddelanden i appen.
 
@@ -246,7 +246,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
   >[!VIDEO](https://video.tv.adobe.com/v/3419898/?learn=on&autoplay=true)
 
-+++
+  +++
 
 * I videon nedan visas hur du skapar ett meddelande i appen under en resa och hur du testar och publicerar din resa.
 
@@ -254,7 +254,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
   >[!VIDEO](https://video.tv.adobe.com/v/3423077/?learn=on&autoplay=true)
 
-+++
+  +++
 
 **Relaterade ämnen:**
 

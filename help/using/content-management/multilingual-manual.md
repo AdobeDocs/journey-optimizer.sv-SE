@@ -118,7 +118,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
       * Klicka på knappen **[!UICONTROL Keep changes]** för att bekräfta och spara regeln.
 
-+++
+   +++
 
 1. Dra och släpp språkinställningarna för att ordna om dem och hantera deras prioritet i listan.
 

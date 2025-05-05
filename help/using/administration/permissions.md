@@ -93,7 +93,7 @@ Med [!DNL Journey Optimizer] kan du skapa egna **[!UICONTROL Roles]** och tillde
 
 Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
-I det här exemplet skapar vi en roll med namnet **Resor skrivskyddade** där vi beviljar skrivskyddade behörigheter till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL  Decision management]** i [!DNL Journey Optimizer].
+I det här exemplet skapar vi en roll med namnet **Resor skrivskyddade** där vi beviljar skrivskyddade behörigheter till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL &#x200B; Decision management]** i [!DNL Journey Optimizer].
 
 Så här skapar du våra **resor med skrivskydd** **[!UICONTROL Role]**:
 

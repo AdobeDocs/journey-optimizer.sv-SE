@@ -59,7 +59,7 @@ Kontrollera följande innan du börjar skapa din första kampanj i Journey Optim
 
    Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
-+++
+   +++
 
 1. **Du behöver en målgrupp**. Målgrupper måste vara tillgängliga innan kampanjen kan skapas. Läs mer om målgrupper [på den här sidan](../audience/about-audiences.md).
 1. **Du behöver en kanalkonfiguration**. Om du vill kunna välja en kanal måste du ha motsvarande kanalkonfiguration (dvs. förinställning) skapad och tillgänglig. Läs mer om kanalkonfigurationer [på den här sidan](../configuration/channel-surfaces.md).

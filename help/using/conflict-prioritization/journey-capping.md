@@ -89,7 +89,7 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
      >
      >I det här exemplet, om marknadsföraren redan har gått in i fyra resor och det finns en annan schemalagd resa den här månaden med högre prioritet, kommer kunderna inte att kunna delta i den resa som har lägre prioritet.
 
-+++
+     +++
 
      +++Konfigurera en regel för samtidighetsbegränsning för resa
 
@@ -101,7 +101,7 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
      ![](assets/journey-capping-concurrency-example.png){width="50%" zommable="yes"}
 
-+++
+     +++
 
 1. När begränsningsregeln är klar att användas på resor aktiverar du den genom att klicka på ellipsknappen bredvid dess namn.
 

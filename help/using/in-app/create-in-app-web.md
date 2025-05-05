@@ -65,7 +65,7 @@ Följ stegen nedan för att konfigurera webbkanalen i appen:
       | Plattform | Skickade data till plattformen | Utlöses när mobilappen utfärdar en edge experience-händelse för att skicka data till Adobe Experience Platform. Vanligtvis API-anropet [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) från AEP Edge-tillägget. |
       | Manuell | Manuell utlösare | Två associerade dataelement: en nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris), och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). |
 
-+++
+      +++
 
    1. Klicka på **[!UICONTROL Add condition]** om du vill att utlösaren ska ta hänsyn till flera händelser eller villkor.
 
@@ -82,7 +82,7 @@ Följ stegen nedan för att konfigurera webbkanalen i appen:
       | Plattform | XDM-händelsetyp | Utlöses när den angivna händelsetypen uppfylls. |
       | Plattform | XDM-värde | Utlöses när det angivna XDM-värdet uppfylls. |
 
-+++
+      +++
 
       ![](assets/in_app_web_surface_9.png)
 

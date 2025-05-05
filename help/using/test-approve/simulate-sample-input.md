@@ -86,7 +86,7 @@ Så här lägger du till en variant från en fil:
    }
    ```
 
-+++
+   +++
 
 1. När filen är klar klickar du på **[!UICONTROL Upload Input data]** för att läsa in den och testa innehållet.
 1. När filen har överförts läggs en ruta till i den vänstra rutan för varje rad från filen. Varje ruta innehåller alla profilattribut som används i ditt innehåll för personalisering. Du kan nu använda varianterna för att förhandsgranska ditt innehåll i den högra rutan och skicka korrektur.
