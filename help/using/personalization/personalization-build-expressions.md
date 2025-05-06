@@ -10,9 +10,9 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 6ffa9d9125f941febbc894e75dcb1a202e1e9cc0
+source-git-commit: 192542cf938c583093638c71a3d8728bbaf238b2
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ När du skapar en konfiguration för e-postkanal kan du definiera anpassade vär
 I navigeringsrutan kan du välja källa för personalisering. Tillgängliga källor är:
 
 * **[!UICONTROL Profile attributes]** : visar alla referenser som är kopplade till profilschemat som beskrivs i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
-* **[!UICONTROL Audiences]**: visar alla målgrupper som skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
+* **[!UICONTROL Audiences]**: visar alla målgrupper som skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 * **[!UICONTROL Offer decisions]** : visar alla erbjudanden som är kopplade till en viss placering. Välj placering och infoga sedan erbjudandena i innehållet. En fullständig dokumentation om hur du hanterar erbjudanden finns i [det här avsnittet](../offers/get-started/starting-offer-decisioning.md).
 * **[!UICONTROL Contextual attributes]** : När en kanalåtgärdsaktivitet (E-post, push, SMS) används i en resa eller kampanj är kontextattribut som relaterar till händelser och egenskaper tillgängliga för personalisering. Ett exempel på hur personalisering utnyttjar sammanhangsberoende attribut visas i [det här avsnittet](personalization-use-case.md).
 
@@ -105,7 +105,7 @@ I navigeringsrutan kan du välja källa för personalisering. Tillgängliga käl
 >title="Automatiskt slutförd"
 >abstract="Om du växlar till det här alternativet kan systemet automatiskt föreslå och slutföra kod medan du skriver. Den här funktionen är endast tillgänglig för HTML- och textformat och har stöd för attribut för profil och kontext. Om det är inaktiverat via växlingsknappen kommer redigeraren att tillhandahålla HTML-kod som fylls i automatiskt i stället."
 
-På den centrala arbetsytan skapar du din personaliseringssyntax. Om du vill använda ett attribut för att anpassa meddelandet, letar du reda på det i attributrutan och klickar på knappen `+` för att lägga till det i uttrycket.
+På den centrala arbetsytan skapar du din personaliseringssyntax. Om du vill anpassa meddelandet med ett attribut går du till den vänstra navigeringsrutan och klickar på knappen `+` för att lägga till det i uttrycket.
 
 ![](assets/personalization-add-attribute.png)
 
@@ -123,7 +123,7 @@ I följande exempel kan du välja de profiler som har sin födelsedag i dag och 
 
 ![](assets/perso_ee2.png)
 
-## Verktyg för redigering av uttryck
+## Alternativ för redigering av uttryck {#options}
 
 Den centrala arbetsytan innehåller olika verktyg som hjälper dig att skriva ditt personaliseringsuttryck.
 
@@ -146,6 +146,13 @@ Tillgängliga alternativ är:
    * **På** - Radbryter linjer vid redigerarens bredd.
    * **Radbryt kolumn** - Radbryter när ett radtecken når 80 tecken.
    * **Avrundad** - Radbryter antingen vid redigerarens bredd eller vid 80 tecken, beroende på vilket som är minst.
+1. **[!UICONTROL Pills]**: Visa attribut som kompakta &quot;tabletter&quot; för att förbättra läsbarheten genom att dölja långa attributsökvägar. Klicka på ett attribut för att visa dess fullständiga sökväg.
+
+   >[!NOTE]
+   >
+   >Piller kommer gradvis att byggas ut i alla miljöer under de kommande 30 dagarna.
+   >
+   >Det här alternativet är bara tillgängligt för profilattribut, sammanhangsberoende attribut och dynamiska medier.
 
 I navigeringsrutan finns det ytterligare funktioner som hjälper dig att skapa ditt personaliseringsuttryck.
 
