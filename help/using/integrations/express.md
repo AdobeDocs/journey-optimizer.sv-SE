@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: resurser, integration
 exl-id: c74156bb-4f00-4325-b416-6fe36cb755d1
-source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
+source-git-commit: f2c072cd410afac79604cfad532fbd75591b34fa
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,30 @@ ht-degree: 0%
 
 Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komma åt Adobe Express kraftfulla redigeringsverktyg när du skapar innehåll. Tack vare den här integreringen kan du ändra storlek på bilder, ta bort bakgrunder, beskära bilder och konvertera resurser till JPEG eller PNG utan att behöva växla mellan lösningarna.
 
-Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/se/express/user-guide.html).
+Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/express/user-guide.html).
 
 Du kommer åt menyn **[!DNL Adobe Express]** genom att gå till dina **bildinställningar** från e-postdesignern och klicka på **[!UICONTROL Edit in Adobe Express]**.
 
 ![](assets/express_1.png)
+
+## Adobe Express Enterprise-licens {#licence}
+
+De funktioner som beskrivs i avsnitten nedan är tillgängliga för användare som saknar Adobe Express Enterprise-licens.
+
+Med Enterprise-licens får man tillgång till Adobe Express-redigeraren där man kan justera färg, ljusstyrka, skärpa, kontrast, dimensioner och ytterligare inställningar.
+
+![](assets/express-licence.png)
+
++++Tillgängliga användningsexempel för användare och Enterprise-licens för Adobe Express
+
+* [Ta bort bakgrund](https://helpx.adobe.com/express/create-and-edit-images/edit-images/remove-background.html)
+* [Ta bort objekt](https://helpx.adobe.com/express/create-and-edit-images/create-and-modify-with-generative-ai/remove-objects-generative-fill.html)
+* [Radera](https://helpx.adobe.com/express/create-and-edit-images/edit-images/eraser.html)
+* [Infoga objekt](https://helpx.adobe.com/express/adobe-express-on-mobile/create-and-edit-designs/generative-fill-mobile.html)
+* [Beskär](https://helpx.adobe.com/express/create-and-edit-images/edit-images/crop-and-shape-images.html)
+* [Effekter](https://helpx.adobe.com/express/add-effects-to-your-designs/add-images-and-visuals/apply-image-filters.html)
+
++++
 
 ## Ändra storlek på bild {#resize}
 
