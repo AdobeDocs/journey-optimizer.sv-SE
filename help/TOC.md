@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3cbda018a1380e13ba3670563240238367517353
+source-git-commit: c6553c3012b1be39d8ade96444e3c1b9ded63fa5
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2360'
 ht-degree: 20%
 
 ---
@@ -335,44 +335,20 @@ ht-degree: 20%
       + [Konfigurera LINE-kanal i Journey Optimizer](using/line/line-configuration.md)
       + [Skapa ett LINE-meddelande](using/line/create-line.md)
       + [Kontrollera och skicka LINE-meddelanden](using/line/send-line.md)
-+ Landningssidor {#landing-pages}
-   + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
-   + [Skapa en landningssida](using/landing-pages/create-lp.md)
-   + Designinnehåll {#landing-pages-design}
-      + [Om landningssidans design](using/landing-pages/design-lp.md)
-      + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
-      + [Skapa mallar](using/landing-pages/lp-templates.md)
-      + [Lägg till anpassad JavaScript](using/landing-pages/lp-custom-js.md)
-   + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
-   + [Lär dig mer om användningsexempel](using/landing-pages/lp-use-cases.md)
-   + Konfigurera landningssidor {#lp-configuration}
++ Innehållshantering {#content-management}
+   + Landningssidor {#landing-pages}
+      + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
+      + [Skapa en landningssida](using/landing-pages/create-lp.md)
+      + Designinnehåll {#landing-pages-design}
+         + [Om landningssidans design](using/landing-pages/design-lp.md)
+         + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
+         + [Skapa mallar](using/landing-pages/lp-templates.md)
+         + [Lägg till anpassad JavaScript](using/landing-pages/lp-custom-js.md)
+      + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
+      + [Lär dig mer om användningsexempel](using/landing-pages/lp-use-cases.md)
+      + Konfigurera landningssidor {#lp-configuration}
       + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
       + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
-+ Innehållshantering {#content-management}
-   + AI Assistant för innehållsgenerering{#ai-assistant}
-      + [Kom igång med AI Assistant](using/content-management/gs-generative.md)
-      + [E-postgenerering med AI](using/content-management/generative-email.md)
-      + [Push-generering med AI](using/content-management/generative-push.md)
-      + [SMS-generering med AI](using/content-management/generative-sms.md)
-      + [Webbgenerering med AI](using/content-management/generative-web.md)
-      + [Innehållsexperiment med AI](using/content-management/generative-experimentation.md)
-      + [Landningssida med AI](using/content-management/generative-lp.md)
-      + [Användningsexempel för AI Assistant](using/content-management/generative-uc.md)
-      + Varumärken (beta){#brands}
-         + [Skapa och hantera varumärken](using/content-management/brands.md)
-         + [Utvärdera ert varumärkeskorteringsresultat](using/content-management/brands-score.md)
-   + Arbeta med flerspråkigt innehåll{#content-multilingual}
-      + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
-      + [Skapa en språkinställning](using/content-management/multilingual-locale.md)
-      + [Skapa en språkleverantör](using/content-management/multilingual-provider.md)
-      + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
-      + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
-   + Experimentera med material {#content-experiment}
-      + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
-      + [Skapa ett innehållsexperiment](using/content-management/content-experiment.md)
-      + Tekniska anmärkningar {#technotes}
-         + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
-         + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Lägg till personalisering](using/personalization/personalization-build-expressions.md)
@@ -412,6 +388,30 @@ ht-degree: 20%
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
       + [Skapa dynamiskt innehåll](using/personalization/dynamic-content.md)
+   + AI Assistant för innehållsgenerering{#ai-assistant}
+      + [Kom igång med AI Assistant](using/content-management/gs-generative.md)
+      + [E-postgenerering med AI](using/content-management/generative-email.md)
+      + [Push-generering med AI](using/content-management/generative-push.md)
+      + [SMS-generering med AI](using/content-management/generative-sms.md)
+      + [Webbgenerering med AI](using/content-management/generative-web.md)
+      + [Innehållsexperiment med AI](using/content-management/generative-experimentation.md)
+      + [Landningssida med AI](using/content-management/generative-lp.md)
+      + [Användningsexempel för AI Assistant](using/content-management/generative-uc.md)
+      + Varumärken (beta){#brands}
+         + [Skapa och hantera varumärken](using/content-management/brands.md)
+         + [Utvärdera ert varumärkeskorteringsresultat](using/content-management/brands-score.md)
+   + Flerspråkigt innehåll{#content-multilingual}
+      + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
+      + [Skapa en språkinställning](using/content-management/multilingual-locale.md)
+      + [Skapa en språkleverantör](using/content-management/multilingual-provider.md)
+      + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
+      + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
+   + Innehållsexperiment {#content-experiment}
+      + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
+      + [Skapa ett innehållsexperiment](using/content-management/content-experiment.md)
+      + Tekniska anmärkningar {#technotes}
+         + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
+         + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
 + Målgrupper, profiler och identitet{#audiences-profiles-identities}
    + Målgrupper {#audiences}
       + [Kom igång med målgrupper](using/audience/about-audiences.md)
@@ -695,7 +695,7 @@ ht-degree: 20%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
