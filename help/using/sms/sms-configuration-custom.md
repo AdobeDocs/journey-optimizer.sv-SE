@@ -162,4 +162,4 @@ När API-autentiseringsuppgifterna har skapats fyller du i fälten som krävs f�
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3443610?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3431625)
