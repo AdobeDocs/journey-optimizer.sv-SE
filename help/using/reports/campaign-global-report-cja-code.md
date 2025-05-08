@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d35a0e1c-2376-4cc5-88fc-5f8dfcfae666
-source-git-commit: 24cb77484172117f2308d2949588ee98fa8421dd
+source-git-commit: 4839c3c70dcc524da5f3cc394d5573ce5755ea64
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,9 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 +++
 
-## KPI för beslutsfattande {#decisioning-kpis}
+## Beslutsrapportering {#decisioning-reporting}
+
+### KPI för beslutsfattande {#decisioning-kpis}
 
 ![](assets/cja-decisioning-kpis.png)
 
@@ -95,7 +97,7 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 * **[!UICONTROL Fallback rate]**: procentandel instanser där inga urvalsstrategier kvalificerades, vilket resulterar i att ett allmänt eller mindre specifikt alternativ visas.
 
-## Engagement tratt {#engagement-funnel}
+### Engagement tratt {#engagement-funnel}
 
 ![](assets/cja-engagement-funnel.png)
 
@@ -105,7 +107,7 @@ Tabellen **[!UICONTROL Engagement Funnel]** övervakar prestanda för personalis
 
 * **[!UICONTROL Clicks]**: Totalt antal gånger användare klickat på personaliserade upplevelser som visades för dem.
 
-## De viktigaste beslutsobjekten efter klickfrekvens {#top-decision}
+### De viktigaste beslutsobjekten efter klickfrekvens {#top-decision}
 
 ![](assets/cja-top-decisions-ctr.png)
 
@@ -113,7 +115,7 @@ Tabellen **[!UICONTROL Top decision items by CTR]** visar prestanda för enskild
 
 * **[!UICONTROL Click-through Rate (CTR)]**: procentandel användare som klickar på en länk, annons eller rekommendation jämfört med hur många gånger den visades.
 
-## Engagemangstrå efter urvalsstrategi {#engagement-funnel-selection}
+### Engagemangstrå efter urvalsstrategi {#engagement-funnel-selection}
 
 ![](assets/cja-engagement-funnel-selection.png)
 
@@ -123,7 +125,7 @@ Tabellen **[!UICONTROL Engagement Funnel by Selection Strategy]** hjälper dig a
 
 * **[!UICONTROL Clicks]**: Totalt antal gånger användare klickat på personaliserade upplevelser som visades för dem.
 
-## Prestanda för beslutsobjekt {#decision-items-performance}
+### Prestanda för beslutsobjekt {#decision-items-performance}
 
 ![](assets/cja-decisioning-item-performance.png)
 
@@ -133,7 +135,7 @@ Tabellen **[!UICONTROL Decision Items Performance]** utvärderar hur väl varje 
 
 * **[!UICONTROL Clicks]**: Totalt antal gånger användare klickat på personaliserade upplevelser som visades för dem.
 
-## Rankningsstrategi {#ranking-strategy}
+### Rankningsstrategi {#ranking-strategy}
 
 >[!NOTE]
 >
@@ -155,7 +157,7 @@ Viktiga mätvärden som visas är:
 
 * **[!UICONTROL Conversion rate]**: procentandel av visningar som resulterade i användaråtgärder (t.ex. klickningar), vilket anger modellens resultat när det gäller att engagera användare.
 
-## Konverteringsgrad för Holdout och Modellstyrd trafik {#conversion-rate}
+### Konverteringsgrad för Holdout och Modellstyrd trafik {#conversion-rate}
 
 >[!NOTE]
 >
@@ -168,3 +170,7 @@ Diagrammet **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]**
 * **Modellstyrd**: användare får innehåll som rangordnats av AI-modellen, optimerat för relevans och engagemang.
 
 * **Holdout**: användare tar emot innehåll som skickas slumpmässigt under modellens undersökningsfas.
+
+>[!CAUTION]
+>
+>När du använder en AI-modell som ingår i en [rankningsformel](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula) återspeglas inte data i konverteringsrapporten.
