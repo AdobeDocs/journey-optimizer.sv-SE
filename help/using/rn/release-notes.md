@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4839c3c70dcc524da5f3cc394d5573ce5755ea64
+source-git-commit: f8c08461b82aea5680c3fa9631f5361b78daafe6
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1009'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 8%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Uppdateringar maj 25 {#25-5-rn}
 
@@ -32,6 +32,10 @@ ht-degree: 8%
 
   ![](assets/do-not-localize/formula-builder.gif)
 
+
+* **Mappar för landningssidor** - Tillgänglighetsdatum: 7 maj 2025
+
+  För att enkelt hantera dina landningssidor kan du nu även använda mappar för att ordna dem mer effektivt i en smidig hierarki.  [Läs mer](../landing-pages/manage-lp.md)
 
 * **Fyller i aktivering för personalisering** - Tillgänglighetsdatum: 5 maj 2025
 
@@ -319,9 +323,7 @@ Det finns nya API:er för att förhandsgranska kampanjer, utöver befintliga fun
 
   Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy.
 
-- **Folders for landing pages** - Availability date: May 5, 2025
 
-  To easily manage your landing pages, you can now also use folders to organize them more effectively into a streamlined hierarchy.  -->
 
 <!--- **Right rail in campaigns list**  
 
