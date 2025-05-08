@@ -56,7 +56,7 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
    Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
-+++
+   +++
 
 1. **Konfigurera anpassade attribut**: Anpassa objektkatalogen efter dina specifika krav genom att konfigurera anpassade attribut i katalogschemat.
 
