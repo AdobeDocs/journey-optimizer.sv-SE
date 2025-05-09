@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 5e82bd6cfcb186fef324627e353b9e54d2332c3e
 workflow-type: tm+mt
 source-wordcount: '1424'
 ht-degree: 1%
@@ -94,7 +94,7 @@ Om du enkelt vill navigera bland dina fragment kan du använda mappar för att o
 
 1. Med knappen **[!UICONTROL More actions]** kan du också flytta fragmentet till en annan befintlig mapp.
 
-   ![](assets/fragment-folder-moved.png)
+   <!--![](assets/fragment-folder-moved.png)-->
 
 1. Nu kan du navigera till mappen som du nyss skapade. Varje nytt fragment som du [skapar](create-fragments.md) från här sparas i den aktuella mappen.
 
@@ -105,8 +105,8 @@ Om du enkelt vill navigera bland dina fragment kan du använda mappar för att o
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"
 >title="Nya fragmentstatusar"
->abstract="Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen **Utkast**, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem **Live** och sprida ändringarna till associerade kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. <br/>Publicering kräver användarbehörighet för <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publiceringsfragment</a>."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Läs mer om behörigheter för innehållsfragment"
+>abstract="Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen **Utkast**, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem **Live** och sprida ändringarna till associerade kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. <br/>Publicering kräver användarbehörighet för <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publiceringsfragment</a>."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Läs mer om behörigheter för innehållsfragment"
 
 Fragment kan ha flera statusar:
 
