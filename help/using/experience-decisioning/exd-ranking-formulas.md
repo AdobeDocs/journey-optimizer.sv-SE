@@ -5,7 +5,10 @@ feature: Ranking, Decisioning
 topic: Integrations
 role: User
 level: Intermediate
-source-git-commit: 4839c3c70dcc524da5f3cc394d5573ce5755ea64
+hide: true
+hidefromtoc: true
+exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
+source-git-commit: d7b1809fa2d04e5477fe375699153315365a6f3b
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 0%
@@ -123,7 +126,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >

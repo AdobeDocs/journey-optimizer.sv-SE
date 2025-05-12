@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d35a0e1c-2376-4cc5-88fc-5f8dfcfae666
-source-git-commit: 4839c3c70dcc524da5f3cc394d5573ce5755ea64
+source-git-commit: d7b1809fa2d04e5477fe375699153315365a6f3b
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ Diagrammet **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]**
 * **Modellstyrd**: användare får innehåll som rangordnats av AI-modellen, optimerat för relevans och engagemang.
 
 * **Holdout**: användare tar emot innehåll som skickas slumpmässigt under modellens undersökningsfas.
-
+<!--
 >[!CAUTION]
 >
->När du använder en AI-modell som ingår i en [rankningsformel](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula) återspeglas inte data i konverteringsrapporten.
+>When using an AI model incorporated into a [ranking formula](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula), data are not reflected in the Conversion rate report.-->
