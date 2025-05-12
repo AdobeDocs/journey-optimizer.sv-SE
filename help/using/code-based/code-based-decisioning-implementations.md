@@ -8,7 +8,7 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
-source-git-commit: 3e4d030fb655c32f340d1fa54726b1dc2ce7a1e8
+source-git-commit: 4995bf642231248ece0211a7ecf2f38ccd846d36
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -19,22 +19,22 @@ ht-degree: 0%
 
 När du använder Beslutsfattning i kodbaserade upplevelser bör du överväga att lägga till följande flaggor i din klientimplementering i de fall som beskrivs nedan.
 
-## Testa kodbaserade upplevelser med hjälp av beslut
+## Testa kodbaserade upplevelser med hjälp av beslut {#code-based-test-decisions}
 
 För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](create-code-based.md) -kampanj eller resa med hjälp av beslut.
 
 Som en tillfällig lösning kan du testa beslutet efter att du har publicerat kampanjen genom att lägga till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
 
     &quot;
-    &lbrace;
-    &quot;data&quot;: &lbrace;
-    &quot;__adobe&quot;: &lbrace;
-    &quot;ajo&quot;: &lbrace;
+    {
+    &quot;data&quot;: {
+    &quot;__adobe&quot;: {
+    &quot;ajo&quot;: {
     &quot;dryRun&quot;: true
-    &rbrace;
-    &rbrace;
-    &rbrace;
-    &rbrace;
+    }
+    }
+    }
+    }
     &quot;
 
 >[!CAUTION]

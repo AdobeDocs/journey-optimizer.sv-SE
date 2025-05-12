@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
-source-git-commit: 4839c3c70dcc524da5f3cc394d5573ce5755ea64
+source-git-commit: 4995bf642231248ece0211a7ecf2f38ccd846d36
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
@@ -37,7 +37,8 @@ Så här skapar du en rangordningsmetod:
 
    Detaljerad information om hur du skapar rankningsformler och AI-modeller finns i dokumentationen för beslutshantering:
 
-   * [Rankningsformler](exd-ranking-formulas.md)
+   <!--* [Ranking formulas](exd-ranking-formulas.md)-->
+   * [Rankningsformler](../offers/ranking/create-ranking-formulas.md)
    * [AI-modeller](../offers/ranking/ai-models.md)
 
    >[!NOTE]
@@ -58,7 +59,7 @@ Personaliserade optimeringsmodeller är en typ av AI-modell som gör att ni kan 
 
 Som standard använder personaliserade optimeringsmodeller **erbjudandeklick** som optimeringsmått. Om du arbetar med [!DNL Customer Journey Analytics] kan du med [!DNL Decisioning] utnyttja dina egna anpassade mått för att optimera din modell.
 
-Det gör du genom att gå till skärmen för att skapa en anpassad AI-modell och expandera listrutan **[!UICONTROL Conversion event]**. Alla mätvärden från din standardvy för [!DNL Customer Journey Analytics] [data](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} visas i listan. Välj det mätvärde som du vill optimera modellen på och slutför sedan skapandet av AI-modellen som vanligt.
+Det gör du genom att gå till skärmen för att skapa en anpassad AI-modell och expandera listrutan **[!UICONTROL Conversion event]**. Alla mätvärden från din standardvy för [!DNL Customer Journey Analytics] [data](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} visas i listan. Välj det mätvärde som du vill optimera modellen på och slutför sedan skapandet av AI-modellen som vanligt.
 
 ![](assets/ai-ranking-custom-metrics.png)
 
@@ -68,7 +69,7 @@ Det gör du genom att gå till skärmen för att skapa en anpassad AI-modell och
 >
 >Även om det går att ändra attribueringsmodellen är inte alla attribueringsmodeller idealiska för optimering av AI-modeller. Vi rekommenderar att du väljer en attribueringsmodell som är anpassad efter dina optimeringsmål för att säkerställa att modellen är korrekt och fungerar korrekt.
 >
->Mer information om tillgängliga attribueringsmodeller och riktlinjer för hur de används finns i [[!DNL Customer Journey Analytics] dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/attribution){target="_blank"}
+>Mer information om tillgängliga attribueringsmodeller och riktlinjer för hur de används finns i [[!DNL Customer Journey Analytics] dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution){target="_blank"}
 
 +++
 
@@ -78,11 +79,11 @@ Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja olika attribut, t.ex
 
 >[!NOTE]
 >
->Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE)
+>Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html)
 
 Om du vill använda attribut som hör till dina beslutsobjekt i formler måste du följa syntaxen nedan i din rankningsreceptas kod. Expandera varje avsnitt för mer information:
 
-+++ utnyttja standardattribut för beslutsunderlag
+++ + utnyttja standardattribut för beslutsunderlag
 
 ![](assets/formula-attribute.png)
 

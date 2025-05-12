@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
+source-git-commit: 4995bf642231248ece0211a7ecf2f38ccd846d36
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1214'
 ht-degree: 9%
 
 ---
@@ -18,19 +18,25 @@ ht-degree: 9%
 # Dokumentationsuppdateringar {#latest-updates}
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer]-dokumentationen.
+<!--
+## May 2025 {#may-2025}
 
+* A new [page](../code-based/code-based-decisioning-implementations.md) has been added to describe how to add the following flags to your client implementation when using decisioning in code-based experiences:
+
+    * Adding the `dryRun` flag as a workaround to test decisioning in code-based experiences. [Read more](../code-based/code-based-decisioning-implementations.md#code-based-test-decisions)
+
+    * Apply deduplication to decisioning requests in code-based experiences. [Read more](../code-based/code-based-decisioning-implementations.md#code-based-decisioning-deduplication)-->
 
 ## April 2025 {#apr-2025}
 
 * Kapitlet Konfiguration har nu delats upp i tre kapitel: [Kanalkonfiguration](../configuration/get-started-configuration.md), [Resurskonfiguration](../configuration/about-data-sources-events-actions.md) och [Anslut dina system](../configuration/ajo-apis.md).
 * En varning om att använda upplevelsehändelser i reseuttryck och villkor har lagts till. [Läs mer](../building-journeys/expression/expressionadvanced.md#discovering-the-interface)
-* Steg för att avdelegera en underdomän finns nu detaljerade för [e-post](../configuration/delegate-subdomain.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-a-subdomain-undelegate-subdomain), [webbupplevelser](../web/web-delegated-subdomains.md#undelegate-a-subdomain-undelegate-subdomain) och [landningssidor](../landing-pages/lp-subdomains.md#undelegate-subdomain).
 * En anteckning om tillfällig lagring av utdatafilen har lagts till på konfigurationssidan för direktreklam. [Läs mer](../direct-mail/direct-mail-configuration.md)
 * Ett tips har lagts till i avsnittet avancerad uttrycksredigerare om riktlinjerna för villkorsformat. [Läs mer](../building-journeys/expression/expressionadvanced.md)
 * En varningsanteckning har lagts till i funktionsavsnittet `inAudience` om påverkan och bästa praxis när en målgrupp ska namnges. [Läs mer](../building-journeys/functions/functioninaudience.md)
 * En rekommendation om användning av inbyggda nyckelord har lagts till när tvåvägs-SMS används. [Läs mer](../sms/sms-opt-out.md)
 * Uppdaterade testsidan för resan med en anteckning om behovet av att inkludera ett identitetsnamn i händelsen som används. [Läs mer](../building-journeys/testing-the-journey.md)
-* Du kan för närvarande inte avdelegera underdomäner via användargränssnittet [!UICONTROL Journey Optimizer]. Du måste kontakta din Adobe-representant. Avsnitten e-post, landningssida, SMS och webbunderdomän har uppdaterats med den här informationen och de steg som ska utföras innan du når ut till Adobe. [Läs mer](../configuration/delegate-subdomain.md#undelegate-subdomain)
+* Du kan för närvarande inte avdelegera underdomäner via användargränssnittet [!UICONTROL Journey Optimizer]. Du måste kontakta din Adobe-representant. Steg för att avdelegera en underdomän finns nu detaljerade för [e-postmeddelanden](../configuration/delegate-subdomain.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-a-subdomain-undelegate-subdomain), [webbupplevelser](../web/web-delegated-subdomains.md#undelegate-a-subdomain-undelegate-subdomain) och [landningssidor](../landing-pages/lp-subdomains.md#undelegate-subdomain).<!--[Read more](../configuration/delegate-subdomain.md#undelegate-subdomain)-->
 * Ett förtydligande har lagts till om den valfria parametern `maxHttpConnections` i Resor Capping API, inklusive vägledning om hur den ska användas tillsammans med begränsningskonfigurationer för samma slutpunkt. [Läs mer](../configuration/throttling.md)
 * I avsnittet Experience Decision (Upplevelsebeslut) finns en vägledning som förklarar att godkända erbjudandeposter inte kan tas bort om de används i en samling eller ett beslut. Inkluderade steg för att ändra deras status till Utkast med alternativet **[!UICONTROL Undo approve]**. [Läs mer](../experience-decisioning/items.md#manage)
 * Information om sandlådor har grupperats tillsammans i ett nytt avsnitt,&quot;Hantering av sandlådor&quot;. Det här nya avsnittet innehåller information om hur du använder och tilldelar sandlådor och hur du använder export- och importfunktioner för paket för att kopiera objekt som resor, innehållsmallar eller fragment över flera sandlådor. [Läs mer](../administration/sandboxes.md)
@@ -190,7 +196,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Information has been added regarding the behaviour of timeouts on event activities in journeys. When no event is received during the specified timeout period, individuals will continue the journey if no timeout path is defined. [Read more](../building-journeys/general-events.md#events-specific-time)
 * In-app channel configuration prerequisites have been updated with a note about the usage of a custom Dataset preference merge policy. [Read more](../in-app/inapp-configuration.md)
 * More details have been added about how to manipulate collections in a custom action response. [Read more](../action/action-response.md#exp-syntax).
-* A link to the [Schema Dictionary for Adobe Journey Optimizer](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE) has been added to the home page.
+* A link to the [Schema Dictionary for Adobe Journey Optimizer](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html) has been added to the home page.
 * An outdated reference to the AJO Message resource has been removed from the list of resources available in the Audit Log. When an update is done on a message in a journey, a **Journey** log is created. [Read more](../privacy/audit-logs.md)
 * Additional recommendations have been added about the usage of the **Read Audience** activity. [Read more](../building-journeys/read-audience.md#must-read)
 * The Get started with Adobe Experience Platform audiences page has been improved with a list of audience generation methods. [Read more](../audience/about-audiences.md)
@@ -220,7 +226,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Decision Management guardrails have been added to the Guardrails and limitations page. [Read more](../start/guardrails.md#decision-management)
 * The Header parameters section has been updated to reflect how out-of-office notifications and challenge responses are handled (they are received on the **[!UICONTROL Error email]**). [Read more](../email/email-settings.md#email-header)
 * A new section on how to preview and test your content has been created. [Read more](../content-management/preview-test.md)
-* The Implement single-page applications page has been moved to the Adobe Experience Paltform Web SDK documentation. [Read more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html?lang=sv-SE){target="_blank"}
+* The Implement single-page applications page has been moved to the Adobe Experience Paltform Web SDK documentation. [Read more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
 * The Capping section has been updated to reflect the label changes relating to offer capping in the decision management interface. [Read more](../offers/offer-library/add-constraints.md#capping)
 * The Add dynamic content into emails has been updated with details on how to delete a variant. [Read more](../personalization/dynamic-content.md#emails)
 * The example for capping & throttling configurations has been updated. [Read more](../configuration/external-systems.md)
@@ -295,7 +301,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## March 2023 {#march-2023}
 
-* The Journey Optimizer schema dictionary is now available. You will find the complete list of fields and attributes for each schema.  [Read more](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+* The Journey Optimizer schema dictionary is now available. You will find the complete list of fields and attributes for each schema.  [Read more](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 * All new features and improvements coming with [!DNL Journey Optimizer] March '23 release have been detailed in the documentation. [Read more](release-notes.md)
 * Added a step to enable Adobe Analytics events in your journeys. [Read more](../event/about-analytics.md)
 * A new section has been created in the Decision management guide on how to collect offer decisioning feedback in Adobe Experience Platform, including which offers are displayed and how users interact with them. [Read more](../offers/data-collection/data-collection.md)
@@ -423,7 +429,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * The **reactions** event documentation page has been updated. [Read more](../building-journeys/reaction-events.md)
 * Videos for Decision Management capabilities have been updated to reflect Journey Optimizer user interface. [Read more](../offers/get-started/starting-offer-decisioning.md)
 * The **Get Started with Datasets** section has been improved to detail how to access and create datasets. [Read more](../data/get-started-datasets.md)
-* Links to help guides and product release notes have been added to the **Adobe Journey Optimizer Documentation** home page. [Read more](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE)
+* Links to help guides and product release notes have been added to the **Adobe Journey Optimizer Documentation** home page. [Read more](https://experienceleague.adobe.com/docs/journey-optimizer.html)
 * The **Create message presets** section now specifies that you cannot proceed with preset creation while the selected IP pool is under edition (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. [Read more](../configuration/channel-surfaces.md#subdomains-and-ip-pools)
 * The message presets **URL tracking** section has been updated to reflect minor changes in the user interface. [Read more](../configuration/channel-surfaces.md#url-tracking)
 
