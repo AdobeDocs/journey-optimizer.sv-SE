@@ -8,7 +8,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
-source-git-commit: d7b1809fa2d04e5477fe375699153315365a6f3b
+source-git-commit: ec5baea16b5dcd0f3ab9713020c918aa414ea46b
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 0%
@@ -126,7 +126,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >
@@ -227,3 +227,4 @@ Observera att när du använder API:t **Decisioning** läggs kontextdata till i 
 ```
 
 +++
+
