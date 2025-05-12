@@ -26,15 +26,15 @@ För närvarande kan du inte simulera innehåll från användargränssnittet i e
 Som en tillfällig lösning kan du testa beslutet efter att du har publicerat kampanjen genom att lägga till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
 
     &quot;
-    {
-    &quot;data&quot;: {
-    &quot;__adobe&quot;: {
-    &quot;ajo&quot;: {
+    &lbrace;
+    &quot;data&quot;: &lbrace;
+    &quot;__adobe&quot;: &lbrace;
+    &quot;ajo&quot;: &lbrace;
     &quot;dryRun&quot;: true
-    }
-    }
-    }
-    }
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;
     &quot;
 
 >[!CAUTION]
