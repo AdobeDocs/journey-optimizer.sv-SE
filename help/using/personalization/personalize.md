@@ -9,9 +9,9 @@ role: Data Engineer
 level: Beginner
 keywords: uttryck, redigerare, start, personalisering
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: e19a85d05fcb7727c3086f16e2e4f066a5ecd55c
+source-git-commit: 85fc6bdc6386f52374172d50667edeea5344011f
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Den här spelmiljön innehåller en simulerad miljö för att skriva och testa p
 
 ![personalisering, spelplattform](assets/playground.png)
 
-➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ajo-personalization){target="_blank"}
+➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
 
 ## Låt oss dyka djupare
 
@@ -97,9 +97,12 @@ Nu när du har en förståelse för personalisering i **[!DNL Journey Optimizer]
 
 Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa för att personalisera ett meddelande.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448135?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/334165?quality=12)
 
 Lär dig hur du lägger till profilbaserad personalisering i ett meddelande och hur du använder målgruppsmedlemskap som en förutsättning för ett personaliseringsblock.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334078?quality=12)
 
+Lär dig hur du använder personaliseringsredigerarens spelmiljö för att skriva och testa personaliseringskod med exempeldata.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457868?quality=12)
