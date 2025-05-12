@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 00ddfe985258eed766c6626a95c3ca1ae0e3cc96
+source-git-commit: 3e4d030fb655c32f340d1fa54726b1dc2ce7a1e8
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att välja det bästa innehållet att leverera, beroende på målgruppen.
 
@@ -51,8 +51,8 @@ De viktigaste stegen för att utnyttja beslutsregler i era kodbaserade kampanjer
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Utvärderingsorder"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Utvärderingsorder"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp, lägger du till en beslutspolicy till en kodbaserad kampanj eller resa. Följ stegen nedan för att göra det.
 
@@ -223,34 +223,14 @@ När beslutsprincipen har skapats kan den användas i [personaliseringsredigerar
 
 1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
 
-## Testa och publicera din kodbaserade upplevelse {#test-and-publish}
-
-Följ stegen nedan för att slutföra den kodbaserade upplevelsen och göra ändringarna aktuella.
-
 1. Granska och publicera er kodbaserade kampanj eller resa. [Lär dig hur](../code-based/publish-code-based.md)
 
    När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen, tillämpas ändringarna på webbsidan eller appen.
 
-1. För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](../code-based/create-code-based.md) -kampanj eller resa med hjälp av beslut.
-
-   Som en tillfällig lösning kan du testa beslutet efter att du har publicerat kampanjen genom att lägga till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
-
-   ```
-   {
-       "data": {
-           "__adobe": {
-               "ajo": {
-                   "dryRun": true
-               }
-           }
-       }
-   }
-   ```
-
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >Om du lägger till flaggan `dryRun` i din begäran kommer det inte att gå att samla in feedback för rapporter och frekvensräknare.
+   >För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](../code-based/create-code-based.md) -kampanj eller resa med hjälp av beslut. Det finns en tillfällig lösning i [det här avsnittet](../code-based/code-based-decisioning-implementations.md).
 
-1. Om du vill se hur dina beslut fungerar kan du nu skapa anpassade [Customer Journey Analytics-rapportinstrumentpaneler](cja-reporting.md).
+1. Om du vill se hur dina beslut fungerar kan du skapa anpassade [Customer Journey Analytics-rapportinstrumentpaneler](cja-reporting.md).
 
 
