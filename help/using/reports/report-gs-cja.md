@@ -8,14 +8,20 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: c59dc9e8ef33f861106276e91513a078404713fa
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '371'
 ht-degree: 2%
 
 ---
 
 # Kom igång med hela tidsrapporten {#channel-report-gs-cja}
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_enable_cja"
+>title="Aktivera Customer Journey Analytics"
+>abstract="Om du vill analysera den här rapporten i Customer Journey Analytics kontaktar du administratören för att kontrollera att din organisation har köpt Customer Journey Analytics och att integreringen är korrekt konfigurerad."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/content-components#add-content-components" text="Customer Journey Analytics"
 
 >[!IMPORTANT]
 >
@@ -47,14 +53,14 @@ Journey Optimizer rapportering har förbättrad interoperabilitet med Customer J
 
 * Om du **äger** Customer Journey Analytics och har tillgång till en Customer Journey Analytics-produktprofil behöver du:
 
-   * **[!UICONTROL Audience Creation]** och **[!UICONTROL Audience View]** behörigheter för Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/technotes/access-control)
+   * **[!UICONTROL Audience Creation]** och **[!UICONTROL Audience View]** behörigheter för Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control)
 
    * **[!UICONTROL Manage profiles]** behörighet för Adobe Journey Optimizer. [Läs mer](../administration/permissions.md)
 
-* Dina Customer Journey Analytics-data måste konfigureras med följande inställning: **Ange som standarddatavy i Adobe Journey Optimizer**. [Läs mer om datavyer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview)
+* Dina Customer Journey Analytics-data måste konfigureras med följande inställning: **Ange som standarddatavy i Adobe Journey Optimizer**. [Läs mer om datavyer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
 
 ## Instruktionsvideo{#video}
 
 I videon nedan visas hur du använder den förbättrade Journey Optimizer-rapporteringen med Customer Journey Analytics.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443155?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3430413)
