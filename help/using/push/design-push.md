@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 03af80bbaa347237059abe74f26274df5ab39caa
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1318'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-compose"
 >title="Anpassa ditt push-meddelande."
->abstract="Skriv innehållet i fälten Rubrik och Brödtext för att skapa meddelandet. Om du vill ta med personaliseringstoken öppnar du dialogrutan för personalisering."
+>abstract="Skriv innehållet i fälten **Titel** och **Brödtext** för att skapa meddelandet. Om du vill ta med personaliseringstoken öppnar du dialogrutan för personalisering."
 
 Klicka på fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet. Använd personaliseringsredigeraren för att definiera innehåll, personalisera data och lägga till dynamiskt innehåll. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i personaliseringsredigeraren.
 
@@ -71,7 +71,7 @@ När mediet har lagts till visas det till höger om meddelandetexten.
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-buttons"
 >title="Lägg till knappar så att användarna kan interagera med push-meddelanden."
->abstract="I det här avsnittet kan du lägga till knappar för att ringa upp och utföra åtgärder i meddelandet. Ange en meddelandekategoriidentifierare för iOS. För Android kan du inkludera anpassad text och mål för varje knapp."
+>abstract="I det här avsnittet lägger du till call-to-action-knappar i meddelandet. Ange en meddelandekategoriidentifierare för Apple iOS. För Google Android kan du inkludera anpassad text och mål för varje knapp."
 
 Skapa ett användbart meddelande genom att lägga till knappar i ditt push-innehåll.
 

@@ -7,38 +7,59 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 7cd52f1954e50be521a6fc9ae26fb63586c53faa
+source-git-commit: 03af80bbaa347237059abe74f26274df5ab39caa
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '529'
+ht-degree: 1%
 
 ---
 
 # Kom igång med samordnade kampanjer {#ms-camp}
 
->[!BEGINSHADEBOX]
 
-**Innehållsförteckning**
++++Innehållsförteckning
 
-* Konfiguration: [Konfigurera dina samordnade kampanjer](gs-campaign-config.md)
-* Konfiguration: [Skapa relationsscheman](ms-schemas.md)
-* Skapa din första samordnade kampanj: [Nyckelobjekt](gs-campaign-creation.md)
+Välkommen
+
+* Kom igång med samordnade kampanjer
+* [Nyckelobjekt](gs-campaign-creation.md)
+* [Steg för att skapa samordnade kampanjer](gs-campaign-steps.md)
+
+
+Konfigurationssteg
+
+* [Skapa relationsscheman](ms-schemas.md)
+
+Skapandesteg
+
 * [Skapa en orkestrerad kampanj](create-ms-campaign.md)
 * [Konfigurera kampanjinställningar](ms-campaign-settings.md)
-* [Anpassa era meddelanden](ms-personalization.md)
-* [Skapa frågor](ms-query-modeler.md)
-* [Testa och validera dina meddelanden](ms-proofs.md)
 * [Schemalägg och starta kampanjer](start-monitor-campaigns.md)
-* Aktiviteter: [Kom igång med aktiviteter](activities/about-activities.md)
+* [Skapa frågor](ms-query-modeler.md)
+
+Aktiviteter
+
+* [Kom igång med aktiviteter](activities/about-activities.md)
 * [Organisera aktiviteter](orchestrate-activities.md)
-* [Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Kanalåtgärder](activities/channels.md) - [Berikning](activities/enrichment.md) - [Förena](activities/fork.md) - [Förening](activities/reconciliation.md) - [Dela](activities/split.md) - &lt;!—[Test](activities/test.md) —> [Wait](activities/wait.md)
-* Övervakning: [Rapportering](reporting-campaigns.md)
+* [Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Avstämning](activities/reconciliation.md) - [Dela](activities/split.md) - <!--[Test](activities/test.md) --> [Vänta](activities/wait.md)
 
->[!ENDSHADEBOX]
 
-Samordnade kampanjer förbättrar Adobe Journey Optimizer genom att erbjuda robusta funktioner för batchkampanjer som initieras av varumärket, så att ni kan planera och samordna flerkanalskampanjer med avancerade segmenteringsstrategier.
+Meddelanden
+
+* [Kanalåtgärder](activities/channels.md)
+* [Anpassa era meddelanden](ms-personalization.md)
+* [Testa och validera dina meddelanden](ms-proofs.md)
+
+Rapportering och övervakning
+
+* [Rapportering](reporting-campaigns.md)
+
++++
+
 
 ## Vad är en iscensatt kampanj?
+
+Samordnade kampanjer förbättrar Adobe Journey Optimizer genom att erbjuda robusta funktioner för batchkampanjer som initieras av varumärket, så att ni kan planera och samordna flerkanalskampanjer med avancerade segmenteringsstrategier.
 
 Flerkanalsmarknadsföring är avgörande för alla företag som vill nå ut till sina kunder effektivt. Adobe Journey Optimizer har en omfattande grafisk miljö som gör att ni kan utforma komplexa processer som enkelt kan hantera era marknadsföringskampanjer. Med samordnade kampanjer kan ni samordna alla processer och uppgifter, förbättra hastighet och skala för alla delar av marknadsföringskampanjer, från att skapa segment och förbereda meddelanden till leverans. Dessutom kan ni synkronisera era kanaler med ett enda lättanvänt gränssnitt för kampanjsamordning.
 
