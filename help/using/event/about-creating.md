@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: c403769a872ac6b4720ec6aaae9eda5d68da96c5
+source-git-commit: 6d219d9caea28947877e38893dea20a4f77456f6
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1685'
 ht-degree: 7%
 
 ---
@@ -22,6 +22,11 @@ ht-degree: 7%
 >id="ajo_journey_event_unitary"
 >title="Enhetshändelser"
 >abstract="Med händelsekonfigurationen kan du definiera den information som Journey Optimizer ska ta emot som händelser. Du kan använda flera händelser (i olika steg på en resa) och flera resor kan använda samma händelse. Enhetshändelser är länkade till en viss profil. De kan vara regelbaserade eller systemgenererade."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_parameters"
+>title="Parametrar"
+>abstract="Definiera händelsens parametrar som schemat och nyttolastfält. För regelbaserade händelser använder du fältet **[!UICONTROL Event ID condition]** för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa. Lägg till en identitetstyp och en profilidentifierare som ska användas för händelsen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
