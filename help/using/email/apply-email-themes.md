@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Förbättrad e-postredigering
 description: Lär dig hur ni kan effektivisera e-postgenereringen med återanvändbara teman och moduler, vilket ger en enhetlig design och effektivitet i era kampanjer.
-feature: Email Theme Management, Modules
-topic: Email Design
-role: Marketer
-level: Intermediate
+feature: Email Design
+topic: Content Management
+role: User
+level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
-source-git-commit: e35d18002fa32df8c1cfd9e0a609ce167df4641a
+source-git-commit: d550765b378bfa2fdf0638da01c297792e0876ef
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
