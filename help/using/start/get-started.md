@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
-source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
+source-git-commit: e758e4f3532d9f1abb7a564431993c11032804ba
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och kombinerar en enhetlig kundprofil i realtid, ett API-första öppet ramverk, centraliserat beslut om erbjudanden samt artificiell intelligens (AI) och maskininlärning (ML) för personalisering och optimering. Med Journey Optimizer kan varumärken på ett intelligent sätt avgöra nästa bästa interaktion med skala, hastighet och flexibilitet under hela kundresan. Med [!DNL Adobe Journey Optimizer] kan företag skapa och leverera både schemalagda marknadsföringskampanjer (till exempel veckokampanjer för en butik) och skräddarsydd individuell kommunikation (till exempel ett push-meddelande för en artikel som en lojalitetsappkund kan ha tittat på som tidigare var ur lager) inom samma program.
 
-➡️ [Upptäck Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html?lang=sv-SE){target="_blank"} (video)
+➡️ [Upptäck Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html){target="_blank"} (video)
 
 
 <!-- Use [!DNL Adobe Journey Optimizer] to build multi-step customer journeys that initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Learn how to build journeys in [this section](../building-journeys/journey-gs.md).
@@ -56,7 +56,7 @@ Viktiga funktioner:
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager eller din Adobe-representant om du har några frågor.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager eller din Adobe-representant om du har några frågor.
 >
 >* Adobe Experience Cloud allmänna riktlinjer och procedurer för sekretess gäller för [!DNL Journey Optimizer]. [Läs mer om Adobe Experience Cloud sekretess](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
 
@@ -67,15 +67,13 @@ Viktiga funktioner:
 
 Förstå den grundläggande arkitekturen för [!DNL Adobe Journey Optimizer], integreringspunkten och relationen mellan [!DNL Journey Optimizer] och [!DNL Experience Platform] i diagrammet nedan.
 
-Adobe Experience Platform är en kraftfull, flexibel, öppen och centraliserad databund som samlar in, standardiserar, styr, tillämpar AI-insikter på och sammanför data för att erbjuda omtänksamma och relevanta digitala kunder
-upplevelser.
+Adobe Experience Platform är en kraftfull, flexibel, öppen och centraliserad databund som samlar in, standardiserar, styr, tillämpar AI-insikter på och sammanför data för att erbjuda genomtänkta och relevanta digitala kundupplevelser.
 
 ![](assets/ajo-aep-architecture-diagram.png){width="70%" zoomable="yes"}
 
 Fyra program är inbyggda i Experience Platform: Adobe Real-Time Customer Data Platform, Journey Optimizer, Customer Journey Analytics och Adobe Mix Modeler.
 
-Journey Optimizer basfunktioner och tjänster bygger på grundkomponenterna i Adobe Experience Platform, som innehåller kundprofilen i realtid. Journey Optimizer fungerar smidigt och samverkar med realtidsversionerna av CDP och Customer Journey Analytics, men det kan
-fungerar också oberoende som fristående program.
+Journey Optimizer basfunktioner och tjänster bygger på grundkomponenterna i Adobe Experience Platform, som innehåller kundprofilen i realtid. Journey Optimizer fungerar smidigt och samverkar med CDP och Customer Journey Analytics i realtid, men kan också fungera fristående som fristående program.
 
 ![](assets/ajo-architecture-diagram.png){width="70%" zoomable="yes"}
 
