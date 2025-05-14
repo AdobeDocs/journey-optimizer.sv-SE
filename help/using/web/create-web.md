@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Så här lägger du till en **webbaktivitet** på en resa:
 
    >[!NOTE]
    >
-   >Eftersom **Webb** är en inkommande meddelandeaktivitet, levereras den med en 3-dagars **Wait**-aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
+   >Eftersom **Webben** är en inkommande upplevelseaktivitet, har den en 3-dagars **Wait**-aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
 
 1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
 
@@ -93,7 +93,7 @@ Följ stegen nedan för att börja skapa en webbupplevelse genom en kampanj.
 
 Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
-➡️ [Lär dig skapa en webbkampanj i den här videon](#video)
+➡️ [Lär dig hur du skapar en webbkampanj i den här videon](#video)
 
 >[!ENDTABS]
 
@@ -103,13 +103,13 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
 >abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
 >title="Ange den URL som ska redigeras"
 >abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 När du har [lagt till en webbåtgärd](#create-web-experience) på en resa eller en kampanj kan du redigera innehållet på din webbplats med:
 
@@ -241,4 +241,4 @@ När en webbresa eller kampanj är aktiv kan ni stoppa den för att hindra publi
 
 I videon nedan visas hur du skapar en webbkampanj, konfigurerar dess egenskaper, granskar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449985/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3418800/?quality=12&learn=on)

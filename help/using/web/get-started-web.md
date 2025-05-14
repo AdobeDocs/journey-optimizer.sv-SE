@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
-source-git-commit: 4b822eb45857556359ba9444e9bf7379608f1dff
+source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 Med [!DNL Journey Optimizer] kan du visuellt skapa och leverera personaliserade webbupplevelser till dina kunder.
 
-Tack vare ett intuitivt visuellt gränssnitt kan ni enkelt ändra era webbegenskaper för att experimentera, optimera och personalisera era slutanvändarkampanjer.
+Med ett intuitivt visuellt gränssnitt kan du använda webbkanalen för att enkelt ändra dina webbegenskaper och experimentera, optimera och personalisera era slutanvändarkampanjer.
 
 ![](../rn/assets/do-not-localize/web-authoring.gif)
 
-Om ni redan använder utgående kanaler som e-post, SMS eller push-meddelanden kan ni nu utnyttja den inkommande webbkanalen för att erbjuda en verkligt personaliserad upplevelse som sträcker sig över alla kanaler.
+Om ni redan använder utgående kanaler för meddelandeleverans, som e-post, SMS eller push-meddelanden, kan ni utnyttja den inkommande webbkanalen för att erbjuda en verkligt personaliserad upplevelse som sträcker sig över alla kanaler.
 
 När du har skapat en resa eller kampanj väljer du **Webb** som åtgärd och definierar grundläggande inställningar. Mer information om hur du konfigurerar din resa/kampanj finns på [sidan](create-web.md#create-web-experience).
 

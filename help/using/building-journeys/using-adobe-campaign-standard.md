@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, integrering, standard, kampanj, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
-source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
+source-git-commit: 64e225cdc8615e51655ef550866b67ca249a7572
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '904'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Först måste du välja en transaktionsmall.
 
 Det finns två kategorier: **[!UICONTROL Address]** och **[!UICONTROL Personalization Data]**.
 
-Du kan enkelt definiera var **[!UICONTROL Address]** eller **[!UICONTROL Personalization Data]** ska hämtas via gränssnittet. Du kan bläddra bland händelser och den tillgängliga datakällans fält. Du kan också använda den avancerade uttrycksredigeraren för mer avancerade användningsområden, som att använda en datakälla som kräver att parametrar skickas eller att manipulationer utförs. Läs [den här sidan](expression/expressionadvanced.md).
+Du kan enkelt definiera var **[!UICONTROL Address]** eller **[!UICONTROL Personalization Data]** ska hämtas via gränssnittet. Du kan bläddra genom händelser och tillgängliga datakällans fält. Du kan också använda den avancerade uttrycksredigeraren för mer avancerade användningsområden, som att använda en datakälla som kräver att parametrar skickas eller att manipulationer utförs. Läs [den här sidan](expression/expressionadvanced.md).
 
 **[!UICONTROL Address]**
 

@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 7658448ad902e2d2d2ef73ee7f71ea2cdda8d497
+source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '603'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
 
    >[!NOTE]
    >
-   >Eftersom **Kodbaserad upplevelse** är en inkommande meddelandeaktivitet levereras den med en 3-dagars **Wait**-aktivitet. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
+   >Eftersom **den kodbaserade upplevelsen** är en inkommande upplevelseaktivitet har den en **Wait**-aktivitet på 3 dagar. [Läs mer](../building-journeys/wait-activity.md#auto-wait-node)
 
 1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
 
@@ -89,7 +89,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
 
 1. Välj **[!UICONTROL Edit code]** från reseaktiviteten eller kampanjversionen.
 
@@ -123,4 +123,4 @@ När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för de
 
 I videon nedan visas hur du skapar en kodbaserad upplevelsekampanj, konfigurerar dess egenskaper, testar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449457/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428868/?quality=12&learn=on)

@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: da7d895fcc724e6b1c0d6480f6a8693037a03752
+source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 3%
@@ -100,4 +100,4 @@ Om du vill verifiera att vänteaktiviteten fungerar som förväntat kan du anvä
 >title="Om den automatiska väntenoden"
 >abstract="En **Vänta**-aktivitet läggs automatiskt till efter den här aktiviteten. Den är inställd på 3 dagar. Du kan ta bort eller konfigurera den efter behov."
 
-Varje inkommande meddelandeaktivitet (meddelande i appen, kodbaserad upplevelse eller kort) levereras med en 3-dagars **Wait** -aktivitet. Eftersom inkommande meddelanden automatiskt avslutas när en profil når ut utanför kundens slut, antar vi att du vill att användarna ska se den i minst tre dagar. Du kan ta bort den här **Vänta**-aktiviteten eller ändra dess konfiguration om det behövs.
+Varje inkommande upplevelseaktivitet (meddelande i appen, kodbaserad upplevelse eller kort) levereras med en 3-dagars **Wait** -aktivitet. Eftersom inkommande meddelanden automatiskt avslutas när en profil når ut utanför kundens slut, antar vi att du vill att användarna ska se den i minst tre dagar. Du kan ta bort den här **Vänta**-aktiviteten eller ändra dess konfiguration om det behövs.

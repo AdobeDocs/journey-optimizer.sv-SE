@@ -7,9 +7,9 @@ feature: Integrations
 role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: 621f9bcb32d108490e7674778ce40385938af18e
+source-git-commit: 64e225cdc8615e51655ef550866b67ca249a7572
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Med Adobe Journey Optimizer kan ni enkelt hantera, behålla och exportera dessa 
 
 Du kan använda Customer Journey Analytics för att utföra avancerad analys av data som genererats av Journey Optimizer.
 
-Journey Optimizer lagrar data i Adobe Experience Platform och med Customer Journey Analytics får ni en helhetsbild av alla era resor, kampanjer och erbjudanden med automatiserad rapportdistribution och anpassade visualiseringar av data.
+Journey Optimizer lagrar data i Adobe Experience Platform och med Customer Journey Analytics ger en helhetsbild av alla era resor, kampanjer och erbjudanden med automatiserad rapportdistribution och anpassade visualiseringar av data.
 
 När ni har skapat er resa i Journey Optimizer kan Customer Journey Analytics hämta in data från plattformen för att ta fram rapporter och förstå hur varje kundinteraktion påverkar era resor.
 
@@ -84,7 +84,7 @@ Använd Adobe Journey Optimizer-modulerna i Adobe Workfront för att skapa, läs
 
 En översikt över det viktiga steget i den här integreringen finns tillgänglig [i blogginlägget](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/accelerating-go-to-market-how-workfront-workfront-fusion-aep-and/ba-p/653685){target="_blank"}.
 
-Läs mer om Journey Optimizer + Adobe Workfront [i Adobe Workfront-dokumentationen](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-journey-optimizer-modules.html?lang=sv-SE){target="_blank"}.
+Läs mer om Journey Optimizer + Adobe Workfront [i Adobe Workfront-dokumentationen](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-journey-optimizer-modules.html){target="_blank"}.
 
 ## Egna kanaler {#integration-custom}
 

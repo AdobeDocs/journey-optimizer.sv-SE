@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: 40c067d85b278380abd874fc6edc69f32c0c56ef
+source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_message_activity"
 >title="Inbyggd kanalåtgärd"
->abstract="Journey Optimizer har inbyggda funktioner för kanalåtgärder. Du kan enkelt lägga till en utgående (e-post, SMS/MMS), push) eller inkommande (In-app, webb, kodbaserad upplevelse, innehållskort) aktivitet under resan och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
+>abstract="Journey Optimizer har inbyggda funktioner för kanalåtgärder. Du kan bara lägga till en meddelandeaktivitet (e-post, SMS/MMS), push) eller en inkommande upplevelse (In-app, webb, kodbaserad upplevelse, innehållskort) och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
 [!DNL Journey Optimizer] innehåller inbyggda funktioner för kanalåtgärder som används för att skicka meddelanden: när en profil anger den här aktiviteten skickas ett meddelande till dem.
 
@@ -121,7 +121,7 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
 >[!NOTE]
 >
->* Varje inkommande meddelandeaktivitet levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](wait-activity.md#auto-wait-node)
+>* Varje inkommande upplevelseaktivitet levereras med en 3-dagars **Wait**-aktivitet. [Läs mer](wait-activity.md#auto-wait-node)
 >
 >* För e-postmeddelanden och push-meddelanden kan du aktivera optimering av sändningstid. [Läs mer](send-time-optimization.md)
 
