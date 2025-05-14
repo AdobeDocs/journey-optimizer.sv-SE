@@ -82,7 +82,7 @@ Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja olika attribut, t.ex
 
 Om du vill använda attribut som hör till dina beslutsobjekt i formler måste du följa syntaxen nedan i din rankningsreceptas kod. Expandera varje avsnitt för mer information:
 
-++ + utnyttja standardattribut för beslutsunderlag
++++ utnyttja standardattribut för beslutsunderlag
 
 ![](assets/formula-attribute.png)
 
