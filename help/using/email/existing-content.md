@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: e-post, import, innehåll, html, zip, css
 exl-id: 52011299-0c65-49c3-9edd-ba7bed5d7205
-source-git-commit: cd8ce89dd6ed9c60d41e9f83ccfb080bdb4a19f9
+source-git-commit: e35d18002fa32df8c1cfd9e0a609ce167df4641a
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -47,12 +47,12 @@ Om du vill importera en fil som innehåller HTML-innehåll följer du stegen ned
 
    >[!NOTE]
    >
-   > Om du använder en `<table>`-tagg som det första lagret i en HTML-fil kan du förlora stilar, inklusive inställningar för bakgrund och bredd i den översta lagertaggen.
+   > Om du använder en `<table>`-tagg som det första lagret i en HTML-fil kan du förlora format, inklusive inställningar för bakgrund och bredd i den översta lagertaggen.
 
-1. Du kan nu anpassa den importerade filen efter behov med e-post-Designer-funktionerna [Läs mer](content-from-scratch.md).
+1. Du kan nu anpassa den importerade filen efter behov med e-post-Designer-funktionerna. [Läs mer](content-from-scratch.md)
 
 ## Instruktionsvideo {#video}
 
-Lär dig hur du importerar befintligt HTML-innehåll, ändrar designen, lägger till spegelsideslänkar och avbryter prenumerationen samt hur du kodar ditt innehåll.
+Lär dig hur du importerar befintligt HTML-innehåll, ändrar designen, lägger till spegelsideslänkar och länkar för att avbryta prenumerationen samt kodar ditt innehåll.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334102?quality=12)
