@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: f415209a7a62c8b7936abdb474b1b5b70c788973
+source-git-commit: d629367413f106a00d0e940c90bd6d77e6f33a5c
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Med Beslutshantering kan ni skapa och leverera personaliserade erbjudandeupplevelser för slutanvändare i alla kanaler och i alla tillämpningar med hjälp av logiska funktioner och beslutsregler. Ett erbjudande är ett marknadsföringsmeddelande som kan ha kopplade regler som anger vem som kan se erbjudandet.
 
-Du kan skapa och leverera erbjudanden genom att göra en POST-förfrågan till API:t [!DNL Decisioning].
+Du kan skapa och leverera erbjudanden genom att göra en POST-begäran till API:t [!DNL Decisioning].
 
 Den här självstudiekursen kräver en fungerande förståelse av API:er, särskilt när det gäller beslutshantering. Mer information finns i [Utvecklarhandboken för API:t för beslutshantering](../getting-started.md). Den här självstudien kräver också att du har ett unikt värde för placering-ID och beslut-ID tillgängligt. Om du inte har inhämtat dessa värden kan du gå till självstudiekurserna för att [skapa en placering](../offers-api/placements/create.md) och [skapa ett beslut](../activities-api/activities/create.md).
 
@@ -34,7 +34,7 @@ I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och
 | x-sandbox-name | `{SANDBOX_NAME}` |
 | x-api-key | `{API_KEY}` |
 
-* Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver innehållstyphuvudet
+* Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver innehållstypsrubriken
 
 ## API-begäran {#request}
 
@@ -112,6 +112,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
 | `xdm:allowDuplicatePropositions` | Det här objektet är kontrollstrukturen för reglerna för borttagning av dubbletter. Det består av en serie flaggor som anger om samma alternativ kan föreslås i en viss dimension. En flagga som är inställd på true innebär att dubbletter tillåts och ska inte tas bort i den kategori som flaggan anger. En flagga som är inställd på false innebär att beslutsmotorn inte ska göra samma förslag över dimensionen och i stället välja nästa bästa alternativ för ett av delbesluten. |
 | `xdm:allowDuplicatePropositions.xdm:acrossActivities` | Om värdet är true kan flera beslut tilldelas samma alternativ. | `"xdm:acrossActivities": true` |
 | `xdm:allowDuplicatePropositions.xdm:acrossPlacements` | Om värdet är true kan flera placeringar tilldelas samma alternativ. | `"xdm:acrossPlacements": true` |
+| `xdm:enrichedAudience` | Lägg till den här parametern och ange den till&quot;true&quot; om du riktar dig till en CSV-målgrupp | `"xdm:enrichedAudience": true` |
 | `xdm:mergePolicy.xdm:id` | Identifierar den sammanfogningsprincip som styr de data som returneras av tjänsten för profilåtkomst. Om ingen anges i begäran skickas ingen åtkomsttjänst för profiler via Beslutshantering, annars skickas ID:t som tillhandahålls av anroparen. | `"xdm:id": "5f3ed32f-eaf1-456c-b0f0-7b338c4cb18a"` |
 | `xdm:responseFormat` | En uppsättning flaggor som formaterar svarsinnehållet. |
 | `xdm:responseFormat.xdm:includeContent` | Ett booleskt värde som, om det anges till `true`, innehåller innehåll till svaret. | `"xdm:includeContent": true` |

@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 156d6c71-d8fd-4631-ae0c-44452d664dde
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: d629367413f106a00d0e940c90bd6d77e6f33a5c
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # Skapa ett reserverbjudande {#create-fallback-offer}
 
-Du kan skapa ett reserverbjudande genom att göra en POST-förfrågan till API:t [!DNL Offer Library].
+Du kan skapa ett reserverbjudande genom att göra en POST-begäran till API:t [!DNL Offer Library].
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 
@@ -28,7 +28,7 @@ I följande tabell visas giltiga värden som utgör fältet *Content-Type* i beg
 **API-format**
 
 ```http
-POST /{ENDPOINT_PATH}/offers/{ID}?offer-type=fallback
+POST /{ENDPOINT_PATH}/offers/offers?offer-type=fallback
 ```
 
 | Parameter | Beskrivning | Exempel |

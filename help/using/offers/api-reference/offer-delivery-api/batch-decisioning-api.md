@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: d2451bbaf9830ce3d928e71a609627c23a7566fa
+source-git-commit: d629367413f106a00d0e940c90bd6d77e6f33a5c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ För att göra detta skulle organisationen:
 
 * Kör API:t [!DNL Batch Decisioning] som innehåller två begäranden:
 
-   1. En **gruppbearbetningsbegäran** om att starta en arbetsbelastning för batchbearbetning av erbjudandeval.
+   1. En **Batch POST-begäran** om att starta en arbetsbelastning för batchbearbetning av erbjudandeval.
 
    2. En **Batch GET-begäran** om att hämta batcharbetsbelastningsstatus.
 
 * Exportera datauppsättningen till meddelandeleverantörens API.
 
-<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=sv-SE) to learn more about exporting audiences.) -->
+<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html) to learn more about exporting audiences.) -->
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Alla [!DNL Batch Decisioning]-begäranden kräver följande huvuden förutom de 
 
 ## Starta en gruppbearbetning {#start-a-batch-process}
 
-Om du vill starta en arbetsbelastning för att batchbearbeta beslut gör du en POST till slutpunkten `/workloads/decisions`.
+Om du vill starta en arbetsbelastning för att batchbearbeta beslut gör du en POST-begäran till slutpunkten `/workloads/decisions`.
 
 >[!NOTE]
 >
@@ -104,7 +104,6 @@ curl -X POST 'https://platform.adobe.io/data/core/dwm/workloads/decisions' \
 | -------- | ----------- | ------- |
 | `xdm:activityId` | Beslutets unika identifierare. |
 | `xdm:dataSetId` | DataSet-utdata som beslutshändelser kan skrivas till. | `6196b4a1a63bd118dafe093c` |
-| `xdm:enrichedAudience` | Lägg till den här parametern och ange den till&quot;true&quot; om du riktar dig till en CSV-målgrupp | `true` |
 | `xdm:includeContent` | Det här är ett valfritt fält och är `false` som standard. Om `true` inkluderas erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
 | `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per scope. | `1` | `xcore:offer-activity:1410cdcda196707b` |
 | `xdm:placementId` | Den unika placeringsidentifieraren. | `xcore:offer-placement:1410c4117306488a` |
@@ -133,7 +132,7 @@ I [beslutsdokumentationen](../../get-started/starting-offer-decisioning.md) finn
 
 ## Hämta information om ett batchbeslut {#retrieve-information-on-a-batch-decision}
 
-Om du vill hämta information om ett specifikt beslut gör du en GET-förfrågan till slutpunkten `/workloads/decisions` och anger motsvarande ID-värde för arbetsbelastning för ditt beslut.
+Om du vill hämta information om ett specifikt beslut gör du en GET-begäran till slutpunkten `/workloads/decisions` och anger motsvarande ID-värde för arbetsbelastning för ditt beslut.
 
 **API-format**
 
