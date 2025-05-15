@@ -8,13 +8,13 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
-source-git-commit: d550765b378bfa2fdf0638da01c297792e0876ef
+exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
+source-git-commit: bfe0ce29a30cff7ba876b43d9ed7858ffaab6bb5
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
 
 ---
-
 
 # Använd teman i ditt e-postinnehåll {#apply-email-themes}
 
@@ -60,7 +60,7 @@ Key Benefits:
 
 * Om du använder innehåll som skapats i HTML är du i [kompatibilitetsläge](existing-content.md) och du kan inte använda teman för det här innehållet.
 
-  Om du vill utnyttja alla möjligheter som e-post-Designer har, inklusive teman, måste du antingen skapa ett nytt innehåll i temaläget eller konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
+  Om du vill utnyttja alla funktioner i e-post-Designer, inklusive teman, måste du antingen skapa ett nytt innehåll i temaläge eller konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
 
 <!--If using a content created in Classic mode or HTML, you cannot apply themes to this content. You must create a new content in Theme mode.
 
@@ -172,5 +172,3 @@ Du kan växla teman när som helst. E-postinnehållet ändras inte, men formaten
 
 ### 2. Switching Themes
 - A marketer applies a holiday-themed design to an existing email by switching to a pre-designed holiday theme.-->
-
-
