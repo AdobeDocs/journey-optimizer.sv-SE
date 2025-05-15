@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 07704f99aff7d92e8db76755f6617345bac56590
+source-git-commit: 23cd384354a7b3f6a4c6c35030fbd9275952c0b1
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 7%
+source-wordcount: '1005'
+ht-degree: 8%
 
 ---
 
@@ -20,29 +20,21 @@ ht-degree: 7%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Uppdateringar maj 25 {#25-5-rn}
-
-* **Teman i e-post-Designer (Beta)** - Tillgänglighetsdatum: 14 maj 2025
-
-  Nu kan ni snabbt tillämpa förgodkända formatteman på ert e-postinnehåll för att säkerställa att varumärket är enhetligt i alla e-postmeddelanden, snabba upp kampanjprocessen och oberoende producera högkvalitativa e-postmeddelanden samtidigt som ni minskar beroendet av designteam. [Läs mer](../email/apply-email-themes.md)
-
-  >[!AVAILABILITY]
-  >
-  >Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.
-
-  ![](assets/do-not-localize/themes.gif)
-
-* **Beslut - ny AI-formelbyggare** - Tillgänglighetsdatum: 14 maj 2025
-
-  Nu kan du skapa särskilda bedömningsformler genom att definiera och kombinera villkor från ett nytt förbättrat gränssnitt. I stället för att bara förlita dig på en statisk erbjudandeprioritet kan du definiera anpassade rankningsformler som kombinerar AI-modellpoäng, erbjudandeprioriteringar, profilattribut, erbjudandeattribut och sammanhangsbaserade signaler via ett guidat gränssnitt. [Läs mer](../experience-decisioning/exd-ranking-formulas.md)
-
-  ![](assets/do-not-localize/formula-builder.gif)
 
 * **Mappar för landningssidor** - Tillgänglighetsdatum: 9 maj 2025
 
   För att enkelt hantera dina landningssidor kan du nu använda mappar för att ordna dem mer effektivt i en smidig hierarki.  [Läs mer](../landing-pages/manage-lp.md)
+<!--
+* **Decisioning - New AI formula builder**  - Availability date: May 7, 2025
+
+  You can now create specific Decisioning ranking formulas by defining and combining criteria from a new improved interface. Instead of relying only on a static offer priority, you can define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.
+  
+  For more information, refer to the [detailed documentation](../experience-decisioning/exd-ranking-formulas.md)
+
+  ![](assets/do-not-localize/formula-builder.gif)-->
 
 * **Fyller i aktivering för personalisering** - Tillgänglighetsdatum: 5 maj 2025
 
@@ -51,6 +43,10 @@ ht-degree: 7%
   >[!AVAILABILITY]
   >
   >Denna kapacitet kommer gradvis att byggas ut till alla miljöer under de kommande 30 dagarna.
+
+* **Nytt kampanjobjekt har stöd för sandlådekopia** <!-- - Availability date: -->
+
+  När du kopierar kampanjer i flera sandlådor med hjälp av funktionerna för paketexport och -import kopieras nu även följande beroenden: kanalkonfigurationer, experimentera med varianter och inställningar, beslutsprinciper och objekt. [Läs mer](../configuration/copy-objects-to-sandbox.md)
 
 ## Versionsinformation 25 april {#25-4-rn}
 
@@ -314,7 +310,9 @@ Det finns nya API:er för att förhandsgranska kampanjer, utöver befintliga fun
 
 **Använd fallspelningsböcker**
 
-* **Skapa och dela spelböcker (Beta)** - Nu kan du skapa, hantera och dela egna fallspelningsböcker. Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion. [Läs mer](../start/playbooks.md)
+* **Skapa och dela spelböcker (privat beta)** - Nu kan du skapa, hantera och dela egna fallspelningsböcker. Den här funktionen är för närvarande bara tillgänglig för en uppsättning organisationer som en privat betaversion. Kontakta din Adobe-representant för att få åtkomst.
+
+alla kunder som en betaversion. [Läs mer](../start/playbooks.md)
 
 **Navigering**
 
