@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 264927ba06ccb8cb1c7e7709e8fef053c1b37608
+source-git-commit: 4deb0b34266816e45c77c9b4d7328431995197fa
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1513'
 ht-degree: 1%
 
 ---
@@ -292,9 +292,6 @@ När du kopierar kampanjer i flera sandlådor med hjälp av funktionerna för pa
 
 * **Underdomäner - metoden Ingen delegering**\
   Utöver den fullständiga delegeringen och CNAME-metoden finns nu en ny konfigurationsmetod för underdomäner: metoden Ingen delegering, som gör att du kan ha fullständig kontroll över och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden.
-
-* **Stöd för anpassade datakällor i Personalization**\
-  Du kan nu skapa en fråga och hämta data från en extern källa (dvs. inte lagrad i Adobe Experience Platform) som kan användas i Journey Optimizer inkommande och utgående ytor för personalisering och resesamordning.
 
 * **Direktreklam - SSH-stöd**\
   Utöver den befintliga SFTP-servern med autentiseringstypen lösenord kan du nu exportera din direktmeddelandefil till en SFTP-server med autentisering med SSH-nyckel.
