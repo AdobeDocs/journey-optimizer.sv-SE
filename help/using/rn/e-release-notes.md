@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 4deb0b34266816e45c77c9b4d7328431995197fa
+source-git-commit: 7347adf8b40942408042c8b09572beed67425899
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1485'
 ht-degree: 1%
 
 ---
@@ -216,22 +216,6 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Innehållsbeslut under resor</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan ni lägga till erbjudanden på era resor genom en särskild beslutsåtgärd på arbetsytan för resan och använda dem i era anpassade åtgärder.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
 <th><strong>Kompletterande ID för händelseutlösta resor</strong><br/></th>
 </tr>
 </thead>
@@ -290,8 +274,8 @@ När du kopierar kampanjer i flera sandlådor med hjälp av funktionerna för pa
   Nu kan du använda attribut för beslutsobjekt för att skapa beslutsregler.
 
 
-* **Underdomäner - metoden Ingen delegering**\
-  Utöver den fullständiga delegeringen och CNAME-metoden finns nu en ny konfigurationsmetod för underdomäner: metoden Ingen delegering, som gör att du kan ha fullständig kontroll över och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden.
+* **Underdomäner - metoden Anpassad delegering**\
+  Utöver den fullständiga delegeringen och CNAME-metoden finns nu en ny konfigurationsmetod för underdomäner: metoden för anpassad delegering, som gör att du kan ha fullständig kontroll över och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden.
 
 * **Direktreklam - SSH-stöd**\
   Utöver den befintliga SFTP-servern med autentiseringstypen lösenord kan du nu exportera din direktmeddelandefil till en SFTP-server med autentisering med SSH-nyckel.
