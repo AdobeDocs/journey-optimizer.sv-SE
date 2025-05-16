@@ -8,9 +8,9 @@ topic: Content Management
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 3f22c2cd744cb9016f48a5df46c0c903ccce617d
+source-git-commit: 264927ba06ccb8cb1c7e7709e8fef053c1b37608
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1554'
 ht-degree: 1%
 
 ---
@@ -229,6 +229,24 @@ De nya funktionerna i den här versionen beskrivs nedan.
 </table>
 
 
+<table>
+<thead>
+<tr>
+<th><strong>Kompletterande ID för händelseutlösta resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du utlösa resor med ett profil-ID tillsammans med en annan identifierare, till exempel ett order-ID, ett prenumerations-ID eller ett förskrivnings-ID, vilket gör att samma profil kan finnas på samma resa flera gånger samtidigt. Detta möjliggör scenarier som att hantera flera order eller prenumerationer parallellt, där varje instans följer sin egen väg genom resan.</p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
 ### Förbättringar {#25-05-improv}
 
 Förbättringar i den här versionen visas nedan.
@@ -250,12 +268,11 @@ För att enkelt hantera dina landningssidor kan du nu använda mappar för att o
 * **Beslut - utnyttja Adobe Experience Platform datamängder**\
   Nu kan du använda Adobe Experience Platform datamängder i följande beslutsobjekt: regler för behörighet, rankningsformler och regler för appning.
 
-* **Mappar i mallar och fragment (allmän tillgänglighet)**\
-  Tidigare var mappar tillgängliga för en uppsättning organisationer (LA), och nu är de tillgängliga för alla användare (GA) att hantera sina innehållsmallar och fragment. Med mappar kan du enklare och effektivare ordna innehållsmallar och fragment i en strukturerad hierarki.
+* **Mappar i mallar och fragment**\
+  Med mappar kan du enklare och effektivare ordna innehållsmallar och fragment i en strukturerad hierarki. Tidigare var mappar tillgängliga för en uppsättning organisationer (LA), och nu är de tillgängliga för alla användare (GA) att hantera sina innehållsmallar och fragment.
 
 * **Nytt kampanjobjekt har stöd för sandlådekopia** <!-- - Availability date: -->
-
-  När du kopierar kampanjer i flera sandlådor med hjälp av funktionerna för paketexport och -import kopieras nu även följande beroenden: kanalkonfigurationer, experimentera med varianter och inställningar, beslutsprinciper och objekt. [Läs mer](../configuration/copy-objects-to-sandbox.md)
+När du kopierar kampanjer i flera sandlådor med hjälp av funktionerna för paketexport och -import kopieras nu även följande beroenden: kanalkonfigurationer, experimentera med varianter och inställningar, beslutsprinciper och objekt. [Läs mer](../configuration/copy-objects-to-sandbox.md)
 
 * Stöd för omdirigering till URL för **i webbkanalen**\
   Journey Optimizer webbkanal ger dig nu möjlighet att dirigera om besökare till en annan befintlig URL i stället för att skapa en ny variant i den visuella redigeraren. Den här funktionen kan användas för att experimentera med två helt olika sidor i stället för att bara ändra ett fåtal element på en sida.
@@ -272,11 +289,12 @@ För att enkelt hantera dina landningssidor kan du nu använda mappar för att o
 * **Stöd för beslutsobjektattribut för beslutsregler**\
   Nu kan du använda attribut för beslutsobjekt för att skapa beslutsregler.
 
-* **Återinträde på flera resor**\
-  Nu kan du utlösa resor med ett profil-ID tillsammans med en annan identifierare, till exempel ett order-ID, ett prenumerations-ID eller ett förskrivnings-ID, vilket gör att samma profil kan finnas på samma resa flera gånger samtidigt. Detta möjliggör scenarier som att hantera flera order eller prenumerationer parallellt, där varje instans följer sin egen väg genom resan.
 
 * **Underdomäner - metoden Ingen delegering**\
   Utöver den fullständiga delegeringen och CNAME-metoden finns nu en ny konfigurationsmetod för underdomäner: metoden Ingen delegering, som gör att du kan ha fullständig kontroll över och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden.
 
 * **Stöd för anpassade datakällor i Personalization**\
   Du kan nu skapa en fråga och hämta data från en extern källa (dvs. inte lagrad i Adobe Experience Platform) som kan användas i Journey Optimizer inkommande och utgående ytor för personalisering och resesamordning.
+
+* **Direktreklam - SSH-stöd**\
+  Utöver den befintliga SFTP-servern med autentiseringstypen lösenord kan du nu exportera din direktmeddelandefil till en SFTP-server med autentisering med SSH-nyckel.
