@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 65b7b8323e37a0143a3941af1b9c2fb8b595a376
+source-git-commit: 2f7c620a712cfc104418bc985bd74e81da12147c
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1293'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Innan du kan generera filen måste du skapa:
 >id="ajo_dm_file_routing_details"
 >title="Definiera filroutningskonfigurationen"
 >abstract="När du har skapat ett direktutskick skapas och exporteras filen som innehåller målgruppsdata till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/direct-mail/create-direct-mail" text="Skapa ett direktutskick"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/create-direct-mail" text="Skapa ett direktutskick"
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details_header"
@@ -103,13 +103,15 @@ Om du valde **[!UICONTROL Amazon S3]** som **[!UICONTROL Server type]** fyller d
 
 Om du valde **[!UICONTROL SFTP]** som **[!UICONTROL Server type]** fyller du i informationen och autentiseringsuppgifterna för servern:
 
-* **Konto**: Det kontonamn som används för att ansluta till SFTP-servern.
+* **[!UICONTROL Authentication type]**: Välj den typ av autentisering som används för att ansluta till servern (lösenord eller SSH-nyckel).
 
-* **Serveradress**: &#x200B; URL för SFTP-servern.
+* **[!UICONTROL Account]**: Kontonamnet som används för att ansluta till SFTP-servern.
 
-* **Port**: FTP-anslutningens portnummer.
+* **[!UICONTROL Server address]**: &#x200B; URL för SFTP-servern.
 
-* **Lösenord**: &#x200B; lösenord som används för att ansluta till SFTP-servern.
+* **[!UICONTROL Port]**: Portnummer för SFTP-anslutning.
+
+* **[!UICONTROL Password]** / **[!UICONTROL SSH Key]**: &#x200B; lösenord eller SSH-nyckel som används för att ansluta till SFTP-servern.
 
 ![](assets/file-routing-config-sftp-detail.png)
 
@@ -143,7 +145,7 @@ Om du valde **[!UICONTROL Data Landing Zone]** som **[!UICONTROL Server type]** 
 
 ![](assets/file-routing-config-dlz-detail.png)
 
-Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landing Zone-behållare per sandlåda. Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
+Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landing Zone-behållare per sandlåda. Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
 >[!ENDTABS]
 
@@ -159,7 +161,7 @@ Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningsk
 >id="ajo_dm_surface_settings"
 >title="Definiera inställningar för direktreklam"
 >abstract="En konfiguration för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Konfigurera filroutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Konfigurera filroutning"
 
 <!--
 >[!CONTEXTUALHELP]
