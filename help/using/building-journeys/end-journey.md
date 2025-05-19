@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
-source-git-commit: b27ddcc88ca4b4209c9d29974a0b0d0dbe98cc94
+source-git-commit: e435a4bf9d284845f27021b3d36c555def749fbe
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Så här slutar en live-resa
 
-Resan stängs när tidsgränsen för den globala resan nås eller efter den sista förekomsten av en återkommande målgruppsbaserad resa. [Lär dig hur resorna stängs](#close-journey).
+Resorna stängs när tidsgränsen för den globala resan nås, eller efter den sista förekomsten av en återkommande målgruppsbaserad resa. [Lär dig hur resorna stängs](#close-journey).
 
 Om du behöver avsluta en direktresa rekommenderar vi att [du stänger den](#close-to-new-entrances) manuellt. Nya kunders ankomst till resan blockeras sedan. Profiler som redan har deltagit i resan kan uppleva det hela tiden.
 
