@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 8261a80675afe900bb19b9730fcd69933e42b29e
+source-git-commit: 8de314a3d2c8e242e12b18d39fb1dc594ea825f5
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Versionsinformation 25 maj {#25-5-rn}
@@ -252,7 +252,8 @@ Förbättringar i den här versionen visas nedan.
      Beslutsobjekt kan nu kopieras mellan sandlådor, vilket effektiviserar arbetsflödena för testning och distribution. [Läs mer](../configuration/copy-objects-to-sandbox.md#decisioning)
 
 * **Mappar för landningssidor** - Tillgänglighetsdatum: 9 maj 2025
-För att enkelt hantera dina landningssidor kan du nu använda mappar för att ordna dem mer effektivt i en strukturerad hierarki. [Läs mer](../landing-pages/manage-lp.md)
+
+  För att enkelt hantera dina landningssidor kan du nu använda mappar för att ordna dem mer effektivt i en strukturerad hierarki. [Läs mer](../landing-pages/manage-lp.md)
 
 * **Direktreklam: Stöd för SSH-nyckel för SFTP-anslutningar** - Tillgänglighetsdatum: 5 maj 2025
 
@@ -266,26 +267,32 @@ För att enkelt hantera dina landningssidor kan du nu använda mappar för att o
   >
   >Denna kapacitet kommer gradvis att byggas ut till alla miljöer under de kommande 30 dagarna.
 
-* **Klickspårning i e-postmallar**\
+* **Klickspårning i e-postmallar**
+
   Klickspårning på `<area>` element i bildscheman i e-postmallar stöds nu internt i Journey Optimizer. Detta är för att säkerställa att bildschemaområden får samma spårningsomslutning, spårningsdata och tillagda parametrar som standardhyperlänkar.
 
-* **Beslut - utnyttja Adobe Experience Platform datamängder**\
+* **Beslut - utnyttja Adobe Experience Platform datamängder**
+
   Nu kan du använda Adobe Experience Platform datamängder i följande beslutsobjekt: regler för behörighet, rankningsformler och regler för appning.
 
-* **Mappar för mallar och fragment**\
+* **Mappar för mallar och fragment**
+
   Med mappar kan du enklare och effektivare ordna innehållsmallar och fragment i en strukturerad hierarki. Tidigare var mappar tillgängliga för en uppsättning organisationer (LA), och nu är de tillgängliga för alla användare (GA) att hantera sina innehållsmallar och fragment.
 
+* Stöd för omdirigering till URL för **i webbkanalen**
 
-* Stöd för omdirigering till URL för **i webbkanalen**\
   Journey Optimizer webbkanal ger dig nu möjlighet att dirigera om besökare till en annan befintlig URL i stället för att skapa en ny variant i den visuella redigeraren. Den här funktionen kan användas för att experimentera med två helt olika sidor i stället för att bara ändra ett fåtal element på en sida.
 
-* **Högerspåret i kampanjlistan**\
+* **Högerspåret i kampanjlistan**
+
   Om du väljer en kampanj i kampanjlistan öppnas nu en ruta med information om kampanjen.
 
-* **Formulärfält i kodbaserat upplevelseinnehåll**\
+* **Formulärfält i kodbaserat upplevelseinnehåll**
+
   I innehållsmallar kan du nu definiera specifika JSON- eller HTML-fält som gör det möjligt för icke-tekniska användare att enkelt redigera innehåll i kodbaserade upplevelser utan att behöva ändra kod.
 
-* **Stöd för beslutsobjektattribut för beslutsregler**\
+* **Stöd för beslutsobjektattribut för beslutsregler**
+
   Nu kan du använda attribut för beslutsobjekt för att skapa beslutsregler.
 
 <!--
