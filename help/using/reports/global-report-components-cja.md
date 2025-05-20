@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: aa060d8e-23e2-4bab-b709-636077eb5d20
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: be0a240f73e884fd91798952167e81689aa2ae2f
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,10 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   <tr> 
    <td> studsar<br/> </td> 
    <td> Totalt antal fel som har kumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal skickade meddelanden.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Studsfrekvens <br/> </td> 
+   <td> Procentandel e-postmeddelanden som resulterade i studs i förhållande till det totala antalet skickade e-postmeddelanden.<br/> </td> 
   </tr> 
   <tr> 
    <td> Klicka genom öppningsfrekvens (CTOR)<br/> </td> 
@@ -99,6 +103,10 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
    <td> Namnet på den specifika ursprungliga orsaken till felet. <a href="exclusion-list.md">Läs mer om felorsaker</a>.<br/> </td> 
   </tr>
   <tr> 
+   <td>Uppskattad e-post öppnas <br/> </td> 
+   <td>Uppskattning av det totala antalet e-postöppningar som öppnar konton för både direktöppning med profiler och automatiska öppningar som utlöses av e-postservrar. Det här måttet justerar öppningar som utlöses av e-postservrar för sekretess- eller säkerhetsskanning genom att tillämpa en öppen frekvens som beräknas från mottagare som manuellt har öppnat e-postmeddelandet till dem vars e-postmeddelanden bara öppnats av e-postservrar.<br/> </td> 
+  </tr>
+  <tr> 
    <td> Erbjud klickfrekvens <br/> </td> 
    <td> Procentandel användare som interagerade med erbjudandet.<br/> </td> 
   </tr>
@@ -119,11 +127,11 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
    <td> Antal gånger som meddelandet öppnades.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Utgående fel <br/> </td> 
+   <td> Skicka fel <br/> </td> 
    <td> Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Utgående undantag <br/> </td> 
+   <td> Skicka undantag <br/> </td> 
    <td> Antal profiler som har uteslutits av Adobe Journey Optimizer.<br/> </td> 
   </tr>
   <tr> 
@@ -137,18 +145,59 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   <tr> 
    <td> Målinriktad<br/> </td> 
    <td> Totalt antal meddelanden som bearbetats under leveransanalysen.<br/> </td> 
-  </tr> 
+  </tr>
+  <tr> 
+   <td>Unika studsar <br/> </td> 
+   <td> Antal unika profiler för vilka minst ett e-postmeddelande resulterade i studs.</td> 
+  </tr>
+  <tr> 
+   <td>Unik studsfrekvens <br/> </td> 
+   <td>Procentandel unika profiler vars e-post studsade minst en gång, baserat på det totala antalet unika meddelanden.</td> 
+  </tr>
   <tr> 
    <td> Unika klick<br/> </td> 
    <td> Antal profiler som klickat på ett innehåll i ett e-postmeddelande.<br> Observera att de senaste tio dagarna beaktas när unika klick beräknas. Om en profil registrerar flera klick inom 10-dagarsperioden räknas de som unika klick. Om en profil har 2 klick med mer än 10 dagars mellanrum betraktas de inte som unika klick.<br/> </td> 
+  </tr>
+  <tr> 
+   <td>Unik klickning via öppningsfrekvens <br/> </td> 
+   <td> Procentandel unika profiler som klickade på en länk efter att e-postmeddelandet öppnats, baserat på unika öppningar. </td> 
+  </tr>
+  <tr> 
+   <td> Unik klickfrekvens <br/> </td> 
+   <td> Procentandel unika profiler som klickade på minst en länk i e-postmeddelandet i förhållande till antalet unika e-postmeddelanden som levererats. </td> 
+  </tr>
+  <tr> 
+   <td> Unik levererad<br/> </td> 
+   <td> Antal unika profiler som tagit emot minst ett e-postmeddelande.</td> 
   </tr>
   <tr> 
    <td> Unik avbeställning av e-post<br/> </td> 
    <td> Antal profiler som avbrutit prenumerationen på dina e-postmeddelanden.<br/> </td> 
   </tr>
   <tr> 
+   <td> Unik uppskattad e-postadress öppnas <br/> </td> 
+   <td> Uppskattning av antalet unika e-postmottagare som troligen öppnade e-postmeddelandet. Detta mätresultat syftar till att ge ett mer korrekt antal enskilda interaktioner som utlöses av e-postservrar för sekretess- eller säkerhetsgenomsökning genom att tillämpa en unik öppningsfrekvens som beräknas från unika profiler som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.<br/> </td> 
+  </tr>
+  <tr> 
    <td> Unika öppna<br/> </td> 
    <td> Antal profiler som öppnade leveransen. <br> Observera att de senaste tio dagarna beaktas när unika öppningar beräknas. Om en profil registrerar flera öppningar inom 10-dagarsperioden räknas de som unika öppningar. Om en profil har 2 öppningar med mer än 10 dagars mellanrum räknas de inte som unika öppningar.<br/> </td> 
+  </tr> 
+  <tr>
+  <tr> 
+   <td> Unika skickade <br/> </td> 
+   <td>Antal unika profiler för vilka minst ett e-postmeddelande försökte skickas.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Unika sändningsfel <br/> </td> 
+   <td>Antal unika profiler som påträffade minst ett sändningsfel under den utgående processen.<br/> </td> 
+  </tr>
+  <tr> 
+   <td> Unika sändningsundantag <br/> </td> 
+   <td>Antal unika profiler som har uteslutits från att ta emot meddelanden på grund av regler för behörighet, målgruppssegmentering eller profilstatus.<br/> </td> 
+  </tr>
+  <tr> 
+   <td>Unik målinriktad<br/> </td> 
+   <td>Antal unika profiler som har angetts under sändningsprocessen.<br/> </td> 
   </tr> 
   <tr> 
    <td> Avbeställer<br/> </td> 
