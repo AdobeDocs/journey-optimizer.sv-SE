@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: a2e4a6c15ea9e6a96544eaa8f58dc0cd55854bbe
+source-git-commit: a7468879b36dfe9184471824b387f1638fae3d50
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2490'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
-Du måste också känna till [Guardsändningar för kundprofildata i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} innan du startar.
+Du måste också känna till [Guardsändningar för kundprofildata i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} innan du startar.
 
 ## Webbläsare som stöds {#browsers}
 
@@ -62,7 +62,7 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] [webbkampanjer](../web/get-started-web.md) har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
-Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ### Kodbaserade kanalgarantier {#code-based-guardrails}
 
@@ -215,6 +215,8 @@ Följande skyddsutkast gäller för [Målgruppskvalificering](../building-journe
 Följande skyddsutkast gäller för [reseuttrycksredigeraren](../building-journeys/expression/expressionadvanced.md):
 
 * Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Du måste skapa en ny målgrupp och använda ett villkor för målgrupp under resan.
+* `timeSeriesEvents`-attribut kan inte användas i uttrycksredigeraren. Skapa en ny fältgrupp baserad på ett `XDM ExperienceEvent`-schema för att få åtkomst till Experience Events på profilnivå.
+
 
 ### Aktivitet i appen {#in-app-activity-limitations}
 

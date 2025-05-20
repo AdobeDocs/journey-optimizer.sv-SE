@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
-source-git-commit: a2e4a6c15ea9e6a96544eaa8f58dc0cd55854bbe
+source-git-commit: a7468879b36dfe9184471824b387f1638fae3d50
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '904'
 ht-degree: 3%
 
 ---
@@ -52,9 +52,9 @@ I reselistan visas alla reseversioner med versionsnumret. När du söker efter e
 
 I listan över resor kan du använda olika filter för att förfina listan över resor.
 
-![](assets/filter-journeys.png)
+![Skärm som visar ett urval av reseverktfiltrering med två typer av valda resor](assets/filter-journeys.png)
 
-Du kan filtrera resor utifrån deras [status](#journey-statuses), [typ](#journey-types), [version](#journey-versions) och tilldelade [taggar](../start/search-filter-categorize.md#tags) från **[!UICONTROL Status and version filters]**.
+Du kan filtrera resor utifrån deras [status](#journey-statuses), [typ](#journey-types), [version](publishing-the-journey.md#journey-versions-journey-versions) och tilldelade [taggar](../start/search-filter-categorize.md#tags) från **[!UICONTROL Status and version filters]**.
 
 Använd **[!UICONTROL Creation filters]** om du vill filtrera resorna efter när de skapades eller efter den användare som skapade dem.
 
@@ -88,7 +88,7 @@ Resans status beror på dess livscykel. Den kan vara:
 * **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
 * **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** .
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [&#128279;](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
 * **Live**: resan har publicerats med knappen **Publicera** .
 * **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt.
 
