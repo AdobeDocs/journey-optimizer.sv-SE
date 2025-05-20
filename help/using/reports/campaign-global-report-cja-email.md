@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d11dd1cb-041b-48cd-b1fc-bcbe12338a07
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: cc435a133f5fe24bff0f6ec9ec135941cf0bab99
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1993'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,80 @@ Du kommer åt rapporten för e-postkampanjen genom att klicka på knappen **[!UI
 
 >[!ENDSHADEBOX]
 
+## KPI för e-post
+
+![](assets/cja-email-kpis-unique.png)
+
+**[!UICONTROL Email]** KPI:er (Key Performance Indicators) tillhandahåller en fokuserad instrumentpanel med unika och aggregerade mått som återspeglar prestanda och engagemangsnivåer för era e-postkampanjer.
+
++++ Läs mer om KPI:er för e-post
+
+* **[!UICONTROL Unique Click-through rate]**: Procentandel unika profiler som klickade på minst en länk i e-postmeddelandet i förhållande till antalet unika levererade e-postmeddelanden.
+
+* **[!UICONTROL Click through open rate (CTOR)]**: Procentandel profiler som interagerade med meddelandet.
+
+* **[!UICONTROL Unique Open rate]**: Procentandel unika profiler som öppnade e-postmeddelandet minst en gång i förhållande till antalet unika levererade e-postmeddelanden.
+
+* **[!UICONTROL Unique Bounce rate]**: Procentandel unika profiler vars e-post studsade minst en gång, baserat på det totala antalet unika sändningar.
+
+* **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
+
+* **[!UICONTROL Unique delivered]**: Antal unika profiler som har tagit emot minst ett meddelande.
+
+* **[!UICONTROL Estimated Opens]**: Uppskattning av det totala antalet e-postöppningar som öppnar konton för både direktöppning med profiler och automatiska öppningar som utlöses av e-postservrar. Det här måttet justerar öppningar som utlöses av e-postservrar för sekretess- eller säkerhetsskanning genom att tillämpa en öppen frekvens som beräknas från mottagare som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.
+
+* **[!UICONTROL Unique Estimated Opens]**: Uppskattning av antalet unika e-postmottagare som troligen öppnade e-postmeddelandet. Detta mätresultat syftar till att ge ett mer korrekt antal enskilda interaktioner som utlöses av e-postservrar för sekretess- eller säkerhetsgenomsökning genom att tillämpa en unik öppen frekvens som beräknas utifrån unika profiler som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.
+
+* **[!UICONTROL Clicks]**: Totalt antal gånger som någon av länkarna i meddelandet klickades, inklusive flera klick med samma profil.
+
+* **[!UICONTROL Unique clicks]**: Antal unika profiler som klickade på ett innehåll i meddelandet.
+
++++
+
+
+## Unik klicktratt
+
+![](assets/cja-email-click-funnel.png)
+
+Diagrammet **[!UICONTROL Click funnel]** innehåller en detaljerad analys av hur profiler interagerar med ditt e-postinnehåll och ger värdefulla insikter om varje interaktionsfas, från leverans till klickning, vilket hjälper dig att förstå hur effektivt dina meddelanden ökar användarengagemanget.
+
++++ Läs mer om Click trnel-statistik
+
+* **[!UICONTROL Unique Targeted]**: Antal unika profiler som har angetts som mål under sändningsprocessen.
+
+* **[!UICONTROL Unique Sends]**: Antal unika profiler för vilka minst ett e-postmeddelande försökte skickas.
+
+* **[!UICONTROL Unique delivered]**: Antal unika profiler som har tagit emot minst ett meddelande.
+
+* **[!UICONTROL Unique estimated opens]**: Uppskattning av antalet unika e-postmottagare som troligen öppnade e-postmeddelandet. Detta mätresultat syftar till att ge ett mer korrekt antal enskilda interaktioner som utlöses av e-postservrar för sekretess- eller säkerhetsgenomsökning genom att tillämpa en unik öppen frekvens som beräknas utifrån unika profiler som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.
+
+* **[!UICONTROL Unique clicks]**: Antal unika profiler som klickade på ett innehåll i meddelandet.
+
++++
+
+## Unik leveransstatus
+
+![](assets/cja-email-delivery-status.png)
+
+Diagrammet **[!UICONTROL Delivery status]** ger en heltäckande bild av data relaterade till skickade e-postmeddelanden i kampanjen, och ger insikter i viktiga mått som levererade och studsade. Detta möjliggör en detaljerad analys av e-postsändningsprocessen och ger värdefull information om effektiviteten och resultatet för era kampanjer.
+
++++ Läs mer om leveransstatusvärden
+
+* **[!UICONTROL Unique send errors]**: Antal unika profiler som upplevde minst ett sändningsfel under den utgående processen.
+
+* **[!UICONTROL Unique delivered]**: Antal unika profiler som har tagit emot minst ett meddelande.
+
+* **[!UICONTROL Unique send exclusions]**: Antal unika profiler som undantagits från att ta emot meddelanden på grund av fördefinierade regler eller målgruppskriterier.
+
+* **[!UICONTROL Unique bounces]**: Antal unika profiler för vilka minst ett meddelande studsade under sändningsprocessen.
+
++++
+
 ## Levererat kontra klicktrend {#delivered-click}
 
 ![](assets/cja-email-delivered-click.png)
 
-Diagrammet **[!UICONTROL Delivered vs Click trend]** innehåller en detaljerad analys av hur dina profiler interagerar med dina e-postmeddelanden, och ger värdefulla insikter om hur profiler interagerar med ditt innehåll.
+Diagrammet **[!UICONTROL Delivered vs Click trend]** innehåller en detaljerad analys av hur dina profiler interagerar med dina e-postmeddelanden, och ger värdefulla insikter om hur profiler interagerar med ditt innehåll. I diagrammet används två axlar för att visa levererade e-postmeddelanden och klick sida vid sida, vilket gör det enklare att upptäcka ovanliga mönster eller förändringar i engagemanget jämfört med hur många e-postmeddelanden som skickades.
 
 +++ Läs mer om Levererade jämfört med klicktrendstatistik
 
@@ -47,21 +116,49 @@ Diagrammet **[!UICONTROL Delivered vs Click trend]** innehåller en detaljerad a
 
 +++
 
-## Leveransstatus {#delivery-status}
+## Unik överföringsstatistik {#unique-sending-statistics-email}
 
-![](assets/cja-email-delivery-status.png)
+![](assets/cja-unique-email-sending-stat.png)
 
-Diagrammet **[!UICONTROL Delivery status]** ger en heltäckande bild av data relaterade till skickade e-postmeddelanden i kampanjen, och ger insikter i viktiga mått som levererade och studsade. Detta möjliggör en detaljerad analys av e-postsändningsprocessen och ger värdefull information om effektiviteten och resultatet för era kampanjer.
+Tabellen **[!UICONTROL Unique Sending Statistics]** ger en detaljerad översikt över unika e-postresultatmått i era kampanjer. Fokus ligger på enskilda profiler, t.ex. sådana som är unika, riktade, levererade till, studsade eller uteslutna, vilket ger djupare insikter i hur era e-postmeddelanden når ut till och engagerar er målgrupp.
 
-+++ Läs mer om leveransstatusvärden
++++ Läs mer om statistik för unika sändningar
 
-* **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade e-postmeddelanden.
+* **[!UICONTROL Unique Targeted]**: Antal unika profiler som har angetts som mål under sändningsprocessen.
 
-* **[!UICONTROL Bounces for outbound channels]**:Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till det totala antalet skickade meddelanden.
+* **[!UICONTROL Unique Sends]**: Antal unika profiler för vilka minst ett e-postmeddelande försökte skickas.
 
-* **[!UICONTROL Outbound errors]**: Totalt antal fel som uppstod under en sändningsprocess och som förhindrar att den skickas till profiler.
+* **[!UICONTROL Unique Delivered]**: Antal unika profiler som har tagit emot minst ett e-postmeddelande.
 
-* **[!UICONTROL Outbound exclusions]**: Antal profiler som har undantagits av Adobe Journey Optimizer.
+* **[!UICONTROL Unique Bounces]**: Antal unika profiler för vilka minst ett e-postmeddelande resulterade i ett studs.
+
+* **[!UICONTROL Unique Bounce Rate]**: Procentandel unika profiler vars e-post studsade minst en gång, baserat på det totala antalet unika sändningar.
+
+* **[!UICONTROL Unique Send Errors]**: Antal unika profiler som påträffade minst ett sändningsfel under den utgående processen.
+
+* **[!UICONTROL Unique Send Exclusions]**: Antal unika profiler som undantagits från att ta emot meddelanden på grund av regler för behörighet, målgruppssegmentering eller profilstatus.
+
++++
+
+## Unik spårningsstatistik {#unique-tracking-statistics-email}
+
+![](assets/cja-unique-email-track-stat.png)
+
+Tabellen **[!UICONTROL Unique Tracking statistics]** ger en fokuserad vy över interaktion på profilnivå med e-postmeddelanden i kampanjen. Det visar unika mätvärden som ger värdefulla insikter om hur enskilda profiler interagerar med ert e-postinnehåll i olika viktiga skeden av engagemanget.
+
++++ Läs mer om statistik för spårning
+
+* **[!UICONTROL Unique Click through rate (CTR)]**: Procentandel unika profiler som klickade på minst en länk i e-postmeddelandet i förhållande till antalet unika levererade e-postmeddelanden.
+
+* **[!UICONTROL Unique Click through open rate (CTOR)]**: Procentandel unika profiler som klickade på en länk efter att e-postmeddelandet öppnats, baserat på unika öppningar.
+
+* **[!UICONTROL Unique Open Rate]**: Procentandel unika profiler som öppnade e-postmeddelandet minst en gång i förhållande till antalet unika levererade e-postmeddelanden.
+
+* **[!UICONTROL Unique Clicks]**: Antal unika profiler som klickade på minst en del av innehållet i e-postmeddelandet.
+
+* **[!UICONTROL Unique Estimated Email Opens]**: Uppskattning av antalet unika e-postmottagare som troligen öppnade e-postmeddelandet. Detta mätresultat syftar till att ge ett mer korrekt antal enskilda interaktioner som utlöses av e-postservrar för sekretess- eller säkerhetsgenomsökning genom att tillämpa en unik öppen frekvens som beräknas utifrån unika profiler som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.
+
+* **[!UICONTROL Unique Email Unsubscribes]**: Antal unika profiler som klickade på länken för att avbryta prenumerationen i dina e-postmeddelanden eller på den associerade landningssidan.
 
 +++
 
@@ -77,15 +174,15 @@ Tabellen **[!UICONTROL Sending Statistics]** innehåller en omfattande sammanfat
 
 * **[!UICONTROL Sends]**: Totalt antal skickade meddelanden för din e-post.
 
-* **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
+* **[!UICONTROL Delivered]**: Totalt antal e-postmeddelanden som har skickats, i relation till totalt antal skickade meddelanden.
 
-* **[!UICONTROL Unique Delivered]**: Antal profiler som har tagit emot minst ett e-postmeddelande.
+* **[!UICONTROL Bounces]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal skickade meddelanden.
 
-* **[!UICONTROL Bounces for outbound channels]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal skickade meddelanden.
+* **[!UICONTROL Bounce rate]**: Procentandel e-postmeddelanden som resulterade i ett studs, i förhållande till det totala antalet skickade e-postmeddelanden.
 
-* **[!UICONTROL Outbound Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
+* **[!UICONTROL Send Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
 
-* **[!UICONTROL Outbound Exclusions]**: Antal profiler som har undantagits av Adobe Journey Optimizer.
+* **[!UICONTROL Send Exclusions]**: Totalt antal profiler som har undantagits av Adobe Journey Optimizer.
 
 +++
 
@@ -101,19 +198,14 @@ Tabellen **[!UICONTROL Email - Tracking statistics]** innehåller ett detaljerat
 
 * **[!UICONTROL Click through open rate (CTOR)]**: Antal gånger som e-postmeddelandet öppnades.
 
+* **[!UICONTROL Estimated Email Opens]**: Uppskattning av det totala antalet e-postöppningar som öppnar konton för både direktöppning med profiler och automatiska öppningar som utlöses av e-postservrar. Det här måttet justerar öppningar som utlöses av e-postservrar för sekretess- eller säkerhetsskanning genom att tillämpa en öppen frekvens som beräknas från mottagare som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.
+
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina e-postmeddelanden.
-
-* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i ett e-postmeddelande.
-
-* **[!UICONTROL Email Opens]**: Antal gånger som dina e-postmeddelanden öppnats i en kampanj.
-
-* **[!UICONTROL Unique Email Opens]**: Antal profiler som öppnade e-postmeddelanden.
 
 * **[!UICONTROL Spam complaints]**: Antal gånger ett meddelande har deklarerats som skräppost eller skräppost.
 
-* **[!UICONTROL Unsubscribes]**: Antal klick på länken för att avbryta prenumerationen.
+* **[!UICONTROL Unsubscribes]**: Antal klick på länken för att avbryta prenumerationen eller på den associerade landningssidan.
 
-* **[!UICONTROL Unique Email Unsubscribes]**: Antal profiler som avbröt prenumerationen på dina e-postmeddelanden.
 +++
 
 ## E-postdomäner {#email-domains}
@@ -124,15 +216,17 @@ Tabellen **[!UICONTROL Email Domains]** innehåller en detaljerad beskrivning av
 
 +++ Läs mer om mätvärden för e-postdomäner
 
-* **[!UICONTROL Sends]**: Totalt antal skickade meddelanden för din e-post.
+* **[!UICONTROL Unique Delivered]**: Antal unika profiler som har tagit emot minst ett e-postmeddelande.
 
-* **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade e-postmeddelanden.
+* **[!UICONTROL Estimated Email Opens]**: Uppskattning av det totala antalet e-postöppningar som öppnar konton för både direktöppning med profiler och automatiska öppningar som utlöses av e-postservrar. Det här måttet justerar öppningar som utlöses av e-postservrar för sekretess- eller säkerhetsskanning genom att tillämpa en öppen frekvens som beräknas från mottagare som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.
 
-* **[!UICONTROL Bounces for outbound channels]**: Totalt antal fel som har ackumulerats under sändningsprocessen och automatisk returbearbetning i relation till totalt antal skickade e-postmeddelanden.
+* **[!UICONTROL Unique Clicks]**: Antal unika profiler som klickade på minst en del av innehållet i e-postmeddelandet.
 
-* **[!UICONTROL Outbound Errors]**: Totalt antal fel som uppstod under sändningsprocessen och som förhindrar att den skickas till profiler.
+* **[!UICONTROL Unique Bounces]**: Antal unika profiler för vilka minst ett e-postmeddelande resulterade i ett studs.
 
-* **[!UICONTROL Outbound Exclusions]**: Antal profiler som har undantagits av Adobe Journey Optimizer.
+* **[!UICONTROL Unique Send Errors]**: Antal unika profiler som påträffade minst ett sändningsfel under den utgående processen.
+
+* **[!UICONTROL Unique Send Exclusions]**: Antal unika profiler som undantagits från att ta emot meddelanden på grund av regler för behörighet, målgruppssegmentering eller profilstatus.
 
 +++
 
@@ -172,12 +266,19 @@ Tabellen **[!UICONTROL Email subjects]** innehåller en grundlig översikt över
 
 +++ Läs mer om ämnesstatistik för e-post
 
-* **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade e-postmeddelanden.
+* **[!UICONTROL Unique Open Rate]**: Procentandel unika profiler som öppnade e-postmeddelandet minst en gång i förhållande till antalet unika levererade e-postmeddelanden.
 
-* **[!UICONTROL Unique Delivered]**: Antal distinkta profiler som lyckades ta emot minst ett e-postmeddelande, vilket säkerställer att dubbletter inte räknas.
+* **[!UICONTROL Unique Estimated Email Opens]**: Uppskattning av antalet unika e-postmottagare som troligen öppnade e-postmeddelandet. Detta mätresultat syftar till att ge ett mer korrekt antal enskilda interaktioner som utlöses av e-postservrar för sekretess- eller säkerhetsgenomsökning genom att tillämpa en unik öppen frekvens som beräknas utifrån unika profiler som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.
+
+* **[!UICONTROL Open Rate]**: Procentandel e-post som öppnas i förhållande till det totala antalet e-postmeddelanden som levereras, inklusive flera öppningar med samma profil.
+
+* **[!UICONTROL Estimated Email Opens]**: Uppskattning av det totala antalet e-postöppningar som öppnar konton för både direktöppning med profiler och automatiska öppningar som utlöses av e-postservrar. Det här måttet justerar öppningar som utlöses av e-postservrar för sekretess- eller säkerhetsskanning genom att tillämpa en öppen frekvens som beräknas från mottagare som manuellt öppnade e-postmeddelandet till dem vars e-post bara öppnades av e-postservrar.
+
 +++
 
 ## Undantagna orsaker {#excluded-reasons}
+
+![](assets/cja-email-excluded.png)
 
 Tabellen **[!UICONTROL Excluded reasons]** ger en heltäckande bild av de olika faktorer som har lett till att användarprofiler har exkluderats från målgruppen, vilket leder till att meddelandet inte tas emot.
 
@@ -185,10 +286,14 @@ Se [den här sidan](exclusion-list.md) för en utförlig lista över orsaker til
 
 ## Brytningsorsaker {#bounce-reasons-email}
 
+![](assets/cja-email-bounce-reasons.png)
+
 Tabellen **[!UICONTROL Bounce Reasons]** kompilerar tillgängliga data som är relaterade till studsade meddelanden och ger detaljerade insikter om de specifika orsakerna bakom e-poststudsar.
 
 Mer information om studsar finns på sidan [Suppressionslista](../reports/suppression-list.md).
 
 ## Felorsaker {#error-reasons-email}
+
+![](assets/cja-email-error-reasons.png)
 
 Tabellen **[!UICONTROL Error Reasons]** ger synlighet för de specifika fel som uppstod under sändningsprocessen, vilket ger värdefull information om felens art och förekomst.
