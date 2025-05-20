@@ -9,22 +9,24 @@ role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: a2e4a6c15ea9e6a96544eaa8f58dc0cd55854bbe
+source-git-commit: 5bdacef2196592776c6b37708b0df0986460ca1f
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '607'
 ht-degree: 1%
 
 ---
 
 # Publicera din resa {#publishing-the-journey}
 
-Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att delta i den. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel.
+Om du vill aktivera en resa och tillåta att nya profiler anger den måste du publicera den. Publicering gör resan levande och funktionell. Innan publicering måste du se till att resan är fullständig och giltig, och åtgärda eventuella fel, eftersom en resa inte kan publiceras om den innehåller fel.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
+## Publiceringsprocess {#journey-publication}
+
 Steg för att publicera en resa beskrivs nedan:
 
-1. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kommer inte att kunna publicera en resa med fel.
+1. Innan du publicerar din resa bör du kontrollera att den är giltig och felfri. Resor kan inte publiceras om de innehåller några fel.
 
    * Lär dig testa din resa på [den här sidan](testing-the-journey.md).
    * Lär dig hur du felsöker dina resefel i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
@@ -33,7 +35,7 @@ Steg för att publicera en resa beskrivs nedan:
 
    >[!NOTE]
    >
-   > Om din resa omfattas av en policy för godkännande måste du begära godkännande för att kunna publicera din resa. [Läs mer](../test-approve/gs-approval.md)
+   > Om din resa omfattas av en policy för godkännande måste du begära godkännande innan du kan publicera den. [Läs mer](../test-approve/gs-approval.md)
 
 
    ![](assets/journeyuc1_18.png)
@@ -88,4 +90,4 @@ När du publicerar en ny version av en resa avslutas den tidigare versionen auto
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427940?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)
