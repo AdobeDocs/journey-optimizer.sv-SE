@@ -117,4 +117,4 @@ Dessutom kan du använda Adobe Experience Platform **frågetjänst** för att sk
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3447618?quality=12&captions=swe)
