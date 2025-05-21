@@ -3,20 +3,15 @@ title: Identifiera potentiella konflikter i resor och kampanjer
 description: Lär dig identifiera potentiella konflikter i resor och kampanjer.
 role: User
 level: Beginner
-badge: label="Begränsad tillgänglighet"
-source-git-commit: 8b1ae663accf6b6c049dc7cc2a427811369a42bc
+exl-id: efbb5ac4-4c07-4c62-9460-39eb4fed129a
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
 
-
 # Upptäck potentiella konflikter i resor och kampanjer {#conflict}
-
->[!AVAILABILITY]
->
->Konflikter och prioriteringsfunktioner är för närvarande tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för dessa funktioner.
 
 I takt med att marknadsförarna ökar antalet kampanjer och resor i Journey Optimizer blir det allt svårare för en marknadsförare att veta om de bombar sina kunder med alltför många marknadsföringsinteraktioner. Det är därför viktigt att enkelt identifiera när det finns överlappande kampanjer och resor för att säkerställa att de når rätt balans mellan marknadsföringskommunikation och samtidigt minska risken för att kunderna ska tröttna.
 
@@ -28,11 +23,7 @@ De viktigaste områdena att övervaka för eventuell överlappning är:
 * **Begränsningsregeluppsättning**: Vilka typer av resor är jag capping och överlappar de?
 * **Kanalkonfiguration**: Finns det andra resor eller kampanjer som använder någon kanalkonfiguration som används i samma resa eller kampanj som kan förhindra att resan eller kampanjen visas för slutanvändaren?
 
->[!NOTE]
->
->I kampanjer är prioritetspoäng endast tillgängligt för webben, appar och kodbaserade inkommande kanaler.
-
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Hur Journey Optimizer identifierar konflikter {#detection}
 
@@ -74,7 +65,7 @@ När ni skapar en resa eller kampanj kan ni i Journey Optimizer kontrollera om d
 
    >[!NOTE]
    >
-   >Det kan ta upp till 5 minuter att visa nya publicerade kampanjer i konfliktvisningsprogrammet på grund av cachelagring som har implementerats
+   >Nypublicerade resor och kampanjer kan ta upp till 3-7 minuter att visa i konfliktvisningsprogrammet på grund av cachelagring som har implementerats.
 
 Om du vill förfina din sökning efter potentiella överlappningar kan du filtrera listan över kampanjer och resor baserat på vilket fält som är relevant. Det gör du genom att välja filterikonen i lagervyn. [Lär dig arbeta med filter](../start/search-filter-categorize.md#filter-lists)
 

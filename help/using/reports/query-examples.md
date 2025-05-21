@@ -8,9 +8,9 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 2e1168f321d6f2c83733c6112e11d834d5e7eb95
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1499'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ I det här avsnittet visas flera vanliga exempel för att fråga efter händelse
 
 Se till att fälten som används i dina frågor har associerade värden i motsvarande schema.
 
-**Vad är skillnaden mellan id, instanceid och profileid**?
++++Vad är skillnaden mellan id, instanceid och profileid?
 
 * id: unikt för alla steg-händelseposter. Två olika steghändelser kan inte ha samma ID.
 * instanceId: instanceID är samma för alla steg-händelser som är kopplade till en profil inom en körning. Om en profil återgår till resan används ett annat instanceId. Detta nya instanceId är samma för alla steg-händelser för den ommatade instansen (från start till slut).
@@ -33,7 +33,7 @@ Se till att fälten som används i dina frågor har associerade värden i motsva
 
 ## Grundläggande användningsfall/vanliga frågor {#common-queries}
 
-**Hur många profiler som pågick en resa under en viss tidsperiod**
++++Hur många profiler som har registrerat en resa inom en viss tidsram
 
 Den här frågan ger antalet distinkta profiler som har passerat den angivna resan under den angivna tidsramen.
 
@@ -47,7 +47,32 @@ AND _experience.journeyOrchestration.stepEvents.instanceType = 'unitary'
 AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 ```
 
-**Hur många fel som har inträffat på varje nod i en viss resa under en viss tid**
++++
+
++++Vilken regel gjorde att en profil inte gick in på en viss resa
+
+_Exempel_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID AS RULESET_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.name AS RULESET_NAME,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.ID AS RULE_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.name AS RULE_NAME
+FROM
+    journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
+AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID='3855072d-79c3-438a-a5c3-c77fd6843812'
+AND
+    timestamp >= to_date('2025-05-16')
+```
+
++++
+
++++Hur många fel som har inträffat på varje nod i en viss resa under en viss tid
 
 _Datasjöfråga_
 
@@ -69,7 +94,9 @@ AND
 GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
 ```
 
-**Hur många händelser som har tagits bort från en viss resa under en viss tidsperiod**
++++
+
++++Hur många händelser som har tagits bort från en viss resa under en viss tidsperiod
 
 _Datasjöfråga_
 
@@ -81,7 +108,9 @@ WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVers
 AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 ```
 
-**Vad som händer med en viss profil under en viss resa inom en viss tidsram**
++++
+
++++Vad händer med en viss profil under en viss resa inom en viss tidsram?
 
 _Datasjöfråga_
 
@@ -108,7 +137,9 @@ AND
 ORDER BY timestamp;
 ```
 
-**Hur lång tid det tar mellan två noder**
++++
+
++++Hur lång tid det tar mellan två noder
 
 Dessa frågor kan till exempel användas för att beräkna hur lång tid en vänteaktivitet tar. På så sätt kan du kontrollera att vänteaktiviteten är korrekt konfigurerad.
 
@@ -235,7 +266,9 @@ WHERE
     T1.INSTANCE_ID = T2.INSTANCE_ID
 ```
 
-**Så här kontrollerar du information om en serviceEvent**
++++
+
++++Så här kontrollerar du information om en serviceEvent
 
 Datauppsättningen för händelser i resesteg innehåller alla stepEvents och serviceEvents. stepEvents används vid rapportering, eftersom de avser aktiviteter (händelser, åtgärder osv.) i profiler under en resa. serviceEvents lagras i samma datauppsättning och de anger ytterligare information för felsökningsändamål, till exempel orsaken till att en upplevelsehändelse ignoreras.
 
@@ -257,7 +290,7 @@ WHERE _experience.journeyOrchestration.serviceType is not null;
 
 ## Meddelande-/åtgärdsfel {#message-action-errors}
 
-**Lista över alla fel som påträffats under resor**
++++Lista över alla fel som påträffats under resor
 
 Med den här frågan kan du lista alla fel som påträffas under resor när ett meddelande/en åtgärd körs.
 
@@ -283,9 +316,11 @@ GROUP BY _experience.journeyOrchestration.stepEvents.actionExecutionError
 
 Den här frågan returnerar alla olika fel som inträffade när en åtgärd kördes i en resa tillsammans med antalet gånger åtgärden utfördes.
 
++++
+
 ## Profilbaserade frågor {#profile-based-queries}
 
-**Sök efter om en profil har angett en viss resa**
++++Sök om en profil angav en specifik resa
 
 _Datasjöfråga_
 
@@ -307,7 +342,9 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Resultatet måste vara större än 0. Den här frågan returnerar det exakta antalet gånger en profil har påbörjat en resa.
 
-**Sök efter om en profil skickades ett specifikt meddelande**
++++
+
++++Sök om en profil skickades ett specifikt meddelande
 
 Metod 1: Om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
 
@@ -357,7 +394,9 @@ _experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-**Sök efter alla meddelanden som en profil har tagit emot under de senaste 30 dagarna**
++++
+
++++Sök efter alla meddelanden en profil har tagit emot de senaste 30 dagarna
 
 _Datasjöfråga_
 
@@ -383,7 +422,9 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
-**Hitta alla resor en profil har angivit under de senaste 30 dagarna**
++++
+
++++Sök efter alla resor en profil har gjort under de senaste 30 dagarna
 
 _Datasjöfråga_
 
@@ -407,7 +448,9 @@ GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
 
 Frågan returnerar listan med alla resenamn tillsammans med det antal gånger som den efterfrågade profilen angav resan.
 
-**Antal profiler som är kvalificerade för en resa dagligen**
++++
+
++++Antal profiler som är kvalificerade för en daglig resa
 
 _Datasjöfråga_
 
@@ -431,9 +474,11 @@ ORDER BY DATE(timestamp) desc
 
 Frågan returnerar, för den angivna perioden, antalet profiler som har angetts för resan varje dag. Om en profil anges via flera identiteter räknas den två gånger. Om återinträde är aktiverat kan antalet profiler dupliceras över olika dagar om det återgick till resan på en annan dag.
 
++++
+
 ## Frågor relaterade till den lästa målgruppen {#read-segment-queries}
 
-**Tidsåtgång för att slutföra ett målgruppsexportjobb**
++++Tid för att slutföra ett målgruppsexportjobb
 
 _Datasjöfråga_
 
@@ -465,7 +510,9 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finish
 
 Frågan returnerar tidsskillnaden i minuter, mellan den tidpunkt då målgruppens exportjobb placerades i kö och den tidpunkt det slutligen avslutades.
 
-**Antal profiler som har ignorerats under resan eftersom de var dubbletter**
++++
+
++++Antal profiler som tagits bort under resan eftersom de var dubbletter
 
 _Datasjöfråga_
 
@@ -487,7 +534,9 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom de var dubbletter.
 
-**Antal profiler som har ignorerats under resan på grund av ogiltigt namnområde**
++++
+
++++Antal profiler som har ignorerats under resan på grund av ogiltigt namnutrymme
 
 _Datasjöfråga_
 
@@ -509,7 +558,9 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom de hade ett ogiltigt namnutrymme eller ingen identitet för det namnutrymmet.
 
-**Antal profiler som har ignorerats under resan på grund av ingen identitetskarta**
++++
+
++++Antal profiler som har ignorerats under resan på grund av ingen identitetskarta
 
 _Datasjöfråga_
 
@@ -531,7 +582,9 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom identitetskartan saknades.
 
-**Antal profiler som ignorerades under resan eftersom resan var i testnoden och profilen inte var en testprofil**
++++
+
++++Antal profiler som ignorerades under resan eftersom resan var i testnoden och profilen inte var en testprofil
 
 _Datasjöfråga_
 
@@ -553,7 +606,9 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom exportjobbet kördes i testläge, men profilen hade inte attributet testProfile inställt på true.
 
-**Antal profiler som har ignorerats under resan på grund av ett internt fel**
++++
+
++++Antal profiler som har ignorerats under resan på grund av ett internt fel
 
 _Datasjöfråga_
 
@@ -575,7 +630,9 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERR
 
 Frågan returnerar alla profil-ID:n som ignorerades av resan på grund av ett internt fel.
 
-**Översikt över Läs målgrupp för en viss reseversion**
++++
+
++++Översikt över Läs målgrupp för en viss reseversion
 
 _Datasjöfråga_
 
@@ -613,7 +670,10 @@ VIKTIGT! Om ingen händelse returneras av frågan kan det bero på någon av fö
 * transportversionen inte har nått schemat
 * Om reseversionen ska ha utlöst exportjobbet genom att anropa orchestrator, gick något fel i upstram-flödet: problem vid resedistribution, affärshändelse eller problem med schemaläggaren.
 
-**Hämta läsfel för målgruppsfel för en viss reseversion**
++++
+
+
++++Get Read Audience errors for a given travel version
 
 _Datasjöfråga_
 
@@ -639,7 +699,9 @@ WHERE
     )
 ```
 
-**Hämta bearbetningsstatus för exportjobb**
++++
+
++++Hämta bearbetningsstatus för exportjobb
 
 _Datasjöfråga_
 
@@ -668,7 +730,9 @@ Om ingen post returneras betyder det att antingen:
 * ett fel uppstod när ämnet eller exportjobbet skapades
 * exportjobbet fortfarande körs
 
-**Hämta statistik om exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb**
++++
+
++++Hämta statistik om exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb
 
 _Datasjöfråga_
 
@@ -728,7 +792,9 @@ FROM
 WHERE T1.EXPORTJOB_ID = T2.EXPORTJOB_ID
 ```
 
-**Hämta aggregerade mått (målgruppsexportjobb och ignorerade) för alla exportjobb**
++++
+
++++Få aggregerade mätvärden (målgruppsexportjobb och utkast) för alla exportjobb
 
 _Datasjöfråga_
 
@@ -791,9 +857,11 @@ Den här frågan skiljer sig från den föregående.
 
 Den returnerar den totala mätningen för en viss reseversion, oavsett vilka jobb som kan ha körts för den (vid återkommande resor utlöstes affärshändelser som utnyttjar återanvändning av ämnet).
 
++++
+
 ## Frågor relaterade till målgruppskvalifikation {#segment-qualification-queries}
 
-**Profilen ignorerades på grund av en annan målgruppsrealisering än den som konfigurerats**
++++Profil ignoreras på grund av en annan målgruppsimplementering än den konfigurerade
 
 _Datasjöfråga_
 
@@ -817,7 +885,9 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SEG
 
 Den här frågan returnerar alla profil-ID:n som ignorerades av reseversionen på grund av felaktig målgruppsrealisering.
 
-**Publikkvalificeringshändelser ignoreras av någon annan orsak för en viss profil**
++++
+
++++Publikkvalificeringshändelser som ignoreras av någon annan orsak för en viss profil
 
 _Datasjöfråga_
 
@@ -843,9 +913,11 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SER
 
 Den här frågan returnerar alla händelser (externa händelser/målgruppsklassificeringshändelser) som har ignorerats på grund av någon annan anledning till en profil.
 
++++
+
 ## Händelsebaserade frågor {#event-based-queries}
 
-**Kontrollera om en affärshändelse har tagits emot för en resa**
++++Kontrollera om en affärshändelse har tagits emot för en resa
 
 _Datasjöfråga_
 
@@ -871,7 +943,9 @@ _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
 WHERE DATE(timestamp) > (now() - interval '6' hour)
 ```
 
-**Kontrollera om en extern händelse för en profil ignorerades eftersom ingen relaterad resa hittades**
++++
+
++++Kontrollera om en extern händelse för en profil ignorerades eftersom ingen relaterad resa hittades
 
 _Datasjöfråga_
 
@@ -895,7 +969,9 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```
 
-**Kontrollera om en extern händelse för en profil har ignorerats på grund av någon annan orsak**
++++
+
++++Kontrollera om en extern händelse för en profil har ignorerats av någon annan anledning
 
 _Datasjöfråga_
 
@@ -921,7 +997,9 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
 ```
 
-**Kontrollera antalet alla händelser som tas bort av stateMachine av errorCode**
++++
+
++++Kontrollera antalet alla händelser som ignoreras av stateMachine av errorCode
 
 _Datasjöfråga_
 
@@ -939,7 +1017,9 @@ where
 _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' GROUP BY _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode
 ```
 
-**Kontrollera alla ignorerade händelser eftersom återinträde inte tillåts**
++++
+
++++Kontrollera alla ignorerade händelser eftersom återinträde inte tillåts
 
 _Datasjöfråga_
 
@@ -962,10 +1042,12 @@ FROM journey_step_events
 where
 _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
 ```
+
++++
 
 ## Vanliga resebaserade frågor {#journey-based-queries}
 
-**Antal aktiva dagliga resor**
++++Antal aktiva dygnsresor
 
 _Datasjöfråga_
 
@@ -987,9 +1069,11 @@ ORDER BY DATE(timestamp) desc
 
 Frågan returnerar, för den angivna perioden, antalet unika resor som utlöstes varje dag. En enda resa som utlöses på flera dagar räknas en gång om dagen.
 
++++
+
 ## Frågor om reseinstanser {#journey-instances-queries}
 
-**Antal profiler i ett specifikt tillstånd vid en viss tidpunkt**
++++Antal profiler i ett specifikt läge vid en viss tidpunkt
 
 _Datasjöfråga_
 
@@ -1137,7 +1221,9 @@ ORDER BY
     DATETIME DESC
 ```
 
-**Hur många profiler avslutade resan under den angivna tidsperioden**
++++
+
++++Hur många profiler avbröt resan under den angivna tidsperioden
 
 _Datasjöfråga_
 
@@ -1175,7 +1261,9 @@ ORDER BY
     DATETIME DESC
 ```
 
-**Hur många profiler avslutade resan under den angivna tidsperioden med nod/status**
++++
+
++++Hur många profiler avslutade resan under den specifika tidsperioden med nod/status
 
 _Datasjöfråga_
 
@@ -1216,3 +1304,5 @@ GROUP BY
 ORDER BY
     DATETIME DESC
 ```
+
++++

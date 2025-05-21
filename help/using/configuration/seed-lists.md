@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 2%
@@ -83,7 +83,7 @@ Du kan klicka på ett namn på en startlista om du vill redigera den. <!--Use th
 >id="ajo_seed_list_details"
 >title="Definiera en startvärdeslista"
 >abstract="Använd en lista för att automatiskt lägga till specifika interna adresser till era leveransgrupper för att försäkra er. Med hjälp av dirigerade listor kan du övervaka utskickade meddelandekopior för att säkerställa att alla visningselement är korrekta och för att skydda din sändningslista. Den här funktionen gäller för närvarande bara för e-postkanalen."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html?lang=sv-SE#use-seed-list" text="Vad är utsädeslistor?"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
 
 >[!CONTEXTUALHELP]
 >id="ajo_seed_addresses"
@@ -96,7 +96,7 @@ Följ stegen nedan för att skapa en startvärdeslista.
 
 1. Markera knappen **[!UICONTROL Create seed list]**.
 
-   ![](assets/seed-list-create-button.png)
+   <!--![](assets/seed-list-create-button.png)-->
 
 1. Fyll i detaljerna. Börja med att lägga till ett namn.
 
@@ -120,7 +120,7 @@ Följ stegen nedan för att skapa en startvärdeslista.
 
    >[!NOTE]
    >
-   >Du kan kombinera båda alternativen, men det totala antalet adresser i en startvärdeslista får inte överstiga 50.
+   >Du kan kombinera båda alternativen, men det totala antalet adresser i en startvärdeslista får inte överstiga 300.
 
 1. Bekräfta genom att klicka på **[!UICONTROL Create]**. Den nyskapade startvärdeslistan visas på skärmen [Startlista](#access-seed-lists).
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
-source-git-commit: 5e82bd6cfcb186fef324627e353b9e54d2332c3e
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -24,10 +24,6 @@ Om du vill hantera dina fragment kan du komma åt fragmentlistan från den väns
 Alla fragment som skapades i den aktuella sandlådan - antingen [ från **[!UICONTROL Fragments]**-menyn](#create-fragments), antingen med alternativet [Spara som fragment](#save-as-fragment) - visas.
 
 I rutan till vänster kan du ordna fragment i mappar. Som standard visas alla fragment. När du väljer en mapp visas endast de fragment och mappar som finns i den valda mappen. [Läs mer](#folders)
-
->[!NOTE]
->
->Fragmentmappar är bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet) och kommer gradvis att lanseras för fler användare.
 
 ![](assets/fragment-list-folders.png)
 
@@ -63,10 +59,6 @@ Från knappen **[!UICONTROL More actions]** bredvid varje fragment kan du:
 >id="ajo_fragments_folders"
 >title="Ordna dina fragment i mappar"
 >abstract="Använd mappar för att kategorisera och hantera dina fragment efter organisationens behov."
-
->[!AVAILABILITY]
->
->Fragmentmappar är bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet) och kommer gradvis att lanseras för fler användare.
 
 Om du enkelt vill navigera bland dina fragment kan du använda mappar för att ordna dem mer effektivt i en strukturerad hierarki. På så sätt kan du kategorisera och hantera objekten efter organisationens behov.
 
@@ -105,8 +97,8 @@ Om du enkelt vill navigera bland dina fragment kan du använda mappar för att o
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"
 >title="Nya fragmentstatusar"
->abstract="Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen **Utkast**, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem **Live** och sprida ändringarna till associerade kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. <br/>Publicering kräver användarbehörighet för <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publiceringsfragment</a>."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Läs mer om behörigheter för innehållsfragment"
+>abstract="Sedan statusvärdena **Utkast** och **Live** introducerades i Journey Optimizer Juniversion har alla fragment som skapats före den här versionen statusen **Utkast**, även om de används under en resa eller kampanj. Om du ändrar något i dessa fragment måste du publicera dem för att göra dem **Live** och sprida ändringarna till associerade kampanjer och resor. Ni måste också skapa en ny resa/kampanjversion och publicera den. <br/>Publicering kräver användarbehörighet för <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manage">Publiceringsfragment</a>."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/ootb-product-profiles#content-library-manager" text="Läs mer om behörigheter för innehållsfragment"
 
 Fragment kan ha flera statusar:
 

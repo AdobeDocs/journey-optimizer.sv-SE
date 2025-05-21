@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 2%
+source-wordcount: '1501'
+ht-degree: 1%
 
 ---
 
@@ -103,13 +103,13 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
 >abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
 >title="Ange den URL som ska redigeras"
 >abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 När du har [lagt till en webbåtgärd](#create-web-experience) på en resa eller en kampanj kan du redigera innehållet på din webbplats med:
 
@@ -152,6 +152,31 @@ Du kan även öppna den i standardwebbläsaren eller kopiera test-URL:en och kli
 >När du kopierar test-URL:en är det innehåll som visas anpassat för testprofilen som användes när innehållssimuleringen genererades i [!DNL Journey Optimizer].
 
 Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
+
+## Omdirigera till URL {#web-redirect-to-url}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_redirect"
+>title="Omdirigera till en annan URL"
+>abstract="Ange en befintlig URL där du vill dirigera om besökarna på sidan."
+
+När du skapar en webbupplevelse kan du dirigera om besökare till en annan befintlig URL i stället för att skapa en ny variant i webbdesignern.
+
+Om du använder den här kapaciteten kan du köra ett [innehållsexperiment](../content-management/content-experiment.md) där två olika upplevelser jämförs, i stället för att bara ändra några få element på en sida.
+
+Skapa till exempel en webbkampanj med två behandlingar:
+
+* I **Behandling A** kan du skapa en webbupplevelse med webbdesignern för halva målpopulationen.
+
+* I **Behandling B** väljer du alternativet **[!UICONTROL Redirect to URL]** för den andra halvan av målpopulationen. Ange URL-adressen till en sida med en alternativ design som du skapade utanför [!DNL Journey Optimizer].
+
+  ![](assets/web-campaign-redirect-to-url.png)
+
+  >[!NOTE]
+  >
+  >Webbplatsförhandsvisningen visas inte längre och växlingsknappen **[!UICONTROL Visual editor]** är inaktiverad.
+
+När webbkampanjen är live kan du spåra hur den webbupplevelse du skapade i [!DNL Journey Optimizer] fungerar för besökarna på sidan mot dem som omdirigerades till den externa landningssidan. Lär dig hur med rapporten [för experimentella kampanjer](../reports/campaign-global-report-cja-experimentation.md)
 
 ## Ge liv åt webbupplevelsen {#web-experience-live}
 
@@ -241,4 +266,4 @@ När en webbresa eller kampanj är aktiv kan ni stoppa den för att hindra publi
 
 I videon nedan visas hur du skapar en webbkampanj, konfigurerar dess egenskaper, granskar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449985/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3418800/?quality=12&learn=on)

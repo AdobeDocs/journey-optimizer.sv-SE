@@ -4,13 +4,12 @@ product: journey optimizer
 title: Konfigurera din anpassade leverantör
 description: Lär dig hur du konfigurerar miljön för att skicka textmeddelanden med Journey Optimizer via en anpassad leverantör
 feature: SMS, Channel Configuration
-badge: label="Beta" type="Informative"
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: fc78fcfb0f2ce3616cb8b1df44dda2cfd66262fe
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -32,25 +31,22 @@ ht-degree: 0%
 >title="Leverantörsnyttolast"
 >abstract="Ange nyttolasten för begäran för att säkerställa att rätt data skickas för bearbetning och svarsgenerering."
 
->[!AVAILABILITY]
->
->Anpassade leverantörer är för närvarande endast tillgängliga som betaversioner för vissa användare. Kontakta Adobe om du vill vara med i Beta.
->Observera att denna Beta inte stöder inkommande meddelanden för hantering av anmälan/avanmälan och leveransrapportering.
-
-
 Med den här funktionen kan du integrera och konfigurera dina egna SMS-leverantörer och erbjuda flexibilitet utöver standardleverantörerna (Sinch, Twilio och Infobip). Detta möjliggör smidig framtagning av SMS, leverans, rapportering och hantering av samtycke.
 
-Med den anpassade providerkonfigurationen för SMS kan du:
+Med den anpassade providerkonfigurationen för SMS kan du konfigurera anpassade SMS-leverantörer direkt i Journey Optimizer, använda avancerad anpassning av nyttolasten för dynamiska meddelanden och hantera medgivandeinställningar (anmälan/avanmälan) för att säkerställa regelefterlevnaden.
 
-* Konfigurera anpassade SMS-leverantörer direkt i Journey Optimizer.
-* Använd avancerad anpassning av nyttolasten för dynamiska meddelanden.
-* Hantera medgivandeinställningar (anmälan/avanmälan) för att säkerställa regelefterlevnad.
+Följ stegen nedan för att konfigurera din anpassade SMS-leverantör:
+
+1. [Skapa API-autentiseringsuppgifter](#api-credential)
+1. [Skapa webkrok](#webhook)
+1. [Skapa kanalkonfiguration](sms-configuration-surface.md)
+1. [Skapa resa eller kampanj med SMS-kanalsåtgärd](create-sms.md)
 
 ## Skapa API-autentiseringsuppgifter {#api-credential}
 
 Följ de här stegen för att skicka meddelanden i Journey Optimizer med en anpassad leverantör som inte är tillgänglig från Adobe (t.ex. Sinch, Infobip, Twilio):
 
-1. Gå till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL API Credentials]** och klicka på knappen **[!UICONTROL Create new API credentials]**.
+1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL API Credentials]** under **[!UICONTROL SMS settings]** och klicka på knappen **[!UICONTROL Create new API credentials]**.
 
    ![](assets/sms_byo_1.png)
 
@@ -78,20 +74,9 @@ Följ de här stegen för att skicka meddelanden i Journey Optimizer med en anpa
 
 1. Lägg till din **[!UICONTROL Provider Payload]** för att validera och anpassa dina begärda nyttolaster.
 
-   Du kan dynamiskt anpassa din nyttolast med hjälp av profilattribut och säkerställa att korrekta data skickas för bearbetning och svarsgenerering med hjälp av inbyggda hjälpfunktioner.
-<!--
-1. Add your **Inbound settings** to determine how your system handles incoming messages and subscriber preferences: 
-
-    * **[!UICONTROL Inbound Webhook URL]**: Specify the endpoint URL where inbound messages (e.g. replies or new messages from users) are sent.
-    * **[!UICONTROL Opt-in Keywords]**: Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.
-    * **[!UICONTROL Opt-in Message]**: Enter the custom response that is automatically sent as your Opt-In Message.
-    * **[!UICONTROL Opt-out Keywords]**: Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.
-    * **[!UICONTROL Opt-out Message]**: Enter the custom response that is automatically sent as your Opt-Out Message.
--->
-
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
-1. Klicka på bin-ikonen på menyn **[!UICONTROL API Credentials]** för att ta bort dina API-autentiseringsuppgifter.
+1. Klicka på ![bin-ikonen](assets/do-not-localize/Smock_Delete_18_N.svg) på menyn **[!UICONTROL API Credentials]** för att ta bort dina API-autentiseringsuppgifter.
 
    ![](assets/sms_byo_3.png)
 
@@ -99,9 +84,7 @@ Följ de här stegen för att skicka meddelanden i Journey Optimizer med en anpa
 
    ![](assets/sms_byo_4.png)
 
-När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanal för SMS-meddelanden. [Läs mer](sms-configuration-surface.md)
-
-När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som meddelandeframställning, personalisering, länkspårning och rapportering.
+När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu konfigurera [inställningarna för inkommande trafik för Webkrok](#webhook) för SMS-meddelanden.
 
 ### Autentiseringsalternativ för anpassade SMS-providers {#auth-options}
 
@@ -160,6 +143,59 @@ När API-autentiseringsuppgifterna har skapats fyller du i fälten som krävs f�
 
 >[!ENDTABS]
 
-## Instruktionsvideo {#video}
+## Skapa webkrok {#webhook}
 
->[!VIDEO](https://video.tv.adobe.com/v/3443610?captions=swe)
+>[!BEGINSHADEBOX]
+
+Om nyckelord för anmälan eller avanmälan inte anges används standardmeddelanden för godkännande för att respektera användarens integritet. Om du lägger till anpassade nyckelord åsidosätts standardvärdena automatiskt.
+
+**Standardnyckelord:**
+
+* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, FORTSÄTT, RESUME, BEGIN
+* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
+* **Hjälp**: HJÄLP
+
+>[!ENDSHADEBOX]
+
+När API-autentiseringsuppgifterna har skapats är nästa steg att skapa en webkrok och konfigurera dina inkommande inställningar. Den här konfigurationen ser till att systemet kan ta emot och bearbeta inkommande data eller meddelanden på rätt sätt.
+
+1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL SMS Webhooks]** under **[!UICONTROL SMS settings]** och klicka på knappen **[!UICONTROL Create Webhook]**.
+
+   ![](assets/sms_byo_5.png)
+
+1. Konfigurera webkrosinställningarna enligt anvisningarna nedan:
+
+   * **[!UICONTROL Name]**: Ange ett namn för din webkrok.
+
+   * **[!UICONTROL Select SMS vendor]**: Anpassad.
+
+   * **[!UICONTROL Select API credentials]**: Välj i listrutan [tidigare konfigurerade API-autentiseringsuppgifter](#api-credential).
+
+   * **[!UICONTROL Opt-in Keywords]**: Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt meddelande om anmälan. Använd kommaseparerade värden för flera nyckelord.
+
+   * **[!UICONTROL Opt-in Message]**: Ange det anpassade svar som automatiskt skickas som ditt meddelande.
+
+   * **[!UICONTROL Opt-out Keywords]**: Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt avanmälningsmeddelande. Använd kommaseparerade värden för flera nyckelord.
+
+   * **[!UICONTROL Opt-out Message]**: Ange det anpassade svar som automatiskt skickas som ditt avanmälan.
+
+   ![](assets/sms_byo_6.png)
+
+1. Klicka på **[!UICONTROL View payload editor]** för att validera och anpassa dina begärandataströmmar.
+
+   Du kan dynamiskt anpassa din nyttolast med hjälp av profilattribut och säkerställa att korrekta data skickas för bearbetning och svarsgenerering med hjälp av inbyggda hjälpfunktioner.
+
+1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din webkrok.
+
+1. Klicka på ikonen ![bin](assets/do-not-localize/Smock_Delete_18_N.svg) på menyn **[!UICONTROL Webhooks]** för att ta bort webkroken.
+
+1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
+
+1. Få åtkomst till och kopiera din nya **[!UICONTROL Webhook URL]** från din tidigare inskickade **[!UICONTROL Webhook]**.
+
+   ![](assets/sms_byo_7.png)
+
+När du har skapat och konfigurerat inställningarna för inkommande trafik för webkroken måste du nu skapa en [kanalkonfiguration](sms-configuration-surface.md) för SMS-meddelanden.
+
+När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som meddelandeframställning, personalisering, länkspårning och rapportering.
+

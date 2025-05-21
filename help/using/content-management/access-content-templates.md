@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
-source-git-commit: a487355df0229a1e94375025eae0babc9405f087
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,6 @@ Om du vill komma åt innehållsmalllistan väljer du **[!UICONTROL Content Manag
 Alla mallar som skapades i den aktuella sandlådan, antingen från en resa eller en kampanj med alternativet **[!UICONTROL Save as template]**, antingen från menyn **[!UICONTROL Content Templates]**, visas. [Lär dig skapa mallar](#create-content-templates)
 
 I rutan till vänster kan du ordna innehållsmallar i mappar. Som standard visas alla mallar. När du väljer en mapp visas endast de mallar och mappar som finns i den valda mappen. [Läs mer](#folders)
-
->[!NOTE]
->
->Mappar med innehållsmallar är bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet) och kommer gradvis att lanseras för fler användare.
 
 ![](assets/content-template-list-folders.png)
 
@@ -49,10 +45,6 @@ Du kan också välja att bara visa de objekt som du själv har skapat eller änd
 >Från och med mars 2025 är HTML-mallar för typografi nu föråldrade. Du kan fortfarande komma åt befintliga HTML-innehållsmallar som tidigare skapats i [!DNL Journey Optimizer].
 
 ## Använda mappar för att hantera innehållsmallar {#folders}
-
->[!AVAILABILITY]
->
->Mappar med innehållsmallar är bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet) och kommer gradvis att lanseras för fler användare.
 
 Om du enkelt vill navigera bland dina innehållsmallar kan du använda mappar för att ordna dem mer effektivt i en strukturerad hierarki. På så sätt kan du kategorisera och hantera objekten efter organisationens behov.
 

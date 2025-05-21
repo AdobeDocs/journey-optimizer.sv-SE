@@ -7,14 +7,26 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 7b6dc89a-1a81-49c2-b2a7-bf24b9d215e3
-source-git-commit: c9a35c2950c061318f673cdd53d0a5fd08063c27
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
 
 # Konfigurera Infobip-provider {#sms-configuration-infobip}
+
+>[!BEGINSHADEBOX]
+
+Om nyckelord för anmälan eller avanmälan inte anges används standardmeddelanden för godkännande för att respektera användarens integritet. Om du lägger till anpassade nyckelord åsidosätts standardvärdena automatiskt.
+
+**Standardnyckelord:**
+
+* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, FORTSÄTT, RESUME, BEGIN
+* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
+* **Hjälp**: HJÄLP
+
+>[!ENDSHADEBOX]
 
 Så här konfigurerar du Infobip med Journey Optimizer:
 

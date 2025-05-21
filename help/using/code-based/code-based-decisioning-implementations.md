@@ -8,9 +8,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
-source-git-commit: 4995bf642231248ece0211a7ecf2f38ccd846d36
+source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -21,25 +21,28 @@ När du använder Beslutsfattning i kodbaserade upplevelser bör du överväga a
 
 ## Testa kodbaserade upplevelser med hjälp av beslut {#code-based-test-decisions}
 
-För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](create-code-based.md) -kampanj eller resa med hjälp av beslut.
+<!--Currently you cannot simulate content from the user interface in a [code-based experience](create-code-based.md) campaign or journey using decisions.-->
 
-Som en tillfällig lösning kan du testa beslutet efter att du har publicerat kampanjen genom att lägga till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
+När du testar [kodbaserad upplevelse](create-code-based.md) med beslut kan flaggan `dryRun` användas för att supress-feedback-händelser för både rapporter och appningsräknare.
+
+När du har publicerat kampanjen lägger du till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
 
     &quot;
-    &lbrace;
-    &quot;data&quot;: &lbrace;
-    &quot;__adobe&quot;: &lbrace;
-    &quot;ajo&quot;: &lbrace;
+    {
+    &quot;data&quot;: {
+    &quot;__adobe&quot;: {
+    &quot;ajo&quot;: {
     &quot;dryRun&quot;: true
-    &rbrace;
-    &rbrace;
-    &rbrace;
-    &rbrace;
+    }
+    }
+    }
+    }
     &quot;
 
+<!--
 >[!CAUTION]
 >
->Om du lägger till flaggan `dryRun` i din begäran kommer det inte att gå att samla in feedback för rapporter och frekvensräknare.
+>Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.-->
 
 ## Borttagning av dubbletter av beslutsobjekt i kodbaserade implementeringar {#code-based-decisioning-deduplication}
 
@@ -61,7 +64,7 @@ För varje beslutsbegäran kan du ha en eller flera beslutsprofiler/ersättninga
 
 ### Tillämpa borttagning av dubbletter i en begäran {#deduplication-in-request}
 
-Som standard är dedupliceringsflaggan inställd på `true` (den skickas inte).
+Som standard är dedupliceringsflaggan inställd på `true`.
 
 I en Konduktorbegäran kan du skicka dedupliceringsflaggan om du vill ha unika element i svaret. I så fall anger du det till `false`.
 
