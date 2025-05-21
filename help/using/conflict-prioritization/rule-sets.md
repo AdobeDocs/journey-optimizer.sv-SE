@@ -164,4 +164,4 @@ Dess status ändras till **[!UICONTROL Inactive]** och regeln gäller inte för 
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

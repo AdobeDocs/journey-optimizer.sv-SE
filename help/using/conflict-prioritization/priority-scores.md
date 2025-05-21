@@ -43,4 +43,4 @@ Om du vill tilldela en prioritetspoäng till en resa eller kampanj anger du ett 
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3445005?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)
