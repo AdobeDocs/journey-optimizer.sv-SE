@@ -9,7 +9,7 @@ exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
 keywords: konfiguration, konfigurera, meddelanden, kanal, sandlåda, optimerare
-source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
+source-git-commit: b2446c6a243d6d95b6f695b9c7007e62c51d8fa3
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 5%
@@ -60,6 +60,6 @@ För att kunna skicka meddelanden måste du gå igenom konfigurationsstegen som 
 
    * Aktivera alternativet **BBC-e-post** om du vill behålla en kopia av meddelanden som skickas till enskilda personer. [Läs mer](archiving-support.md#enable-bcc)
 
-   * Konfigurera **affärsregler** för att undvika att dina mottagare blir överdrivna. [Läs mer](../conflict-prioritization/rule-sets.md)
+   * Konfigurera **affärsregler** för att undvika att dina mottagare blir överdrivna. [Läs mer](../configuration/rule-sets.md)
 
    * Avgör vilken e-postadress och/eller vilket telefonnummer som ska användas i prioritetsordning för dina mottagare när flera adresser/nummer är tillgängliga i Adobe Experience Platform. [Läs mer](primary-email-addresses.md)

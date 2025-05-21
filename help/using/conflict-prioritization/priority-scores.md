@@ -3,11 +3,12 @@ title: Tilldela prioritetspoäng till resor och kampanjer
 description: Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer.
 role: User
 level: Beginner
+badge: label="Begränsad tillgänglighet"
 exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
-source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
+source-git-commit: b2446c6a243d6d95b6f695b9c7007e62c51d8fa3
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 1%
+source-wordcount: '417'
+ht-degree: 2%
 
 ---
 
@@ -16,12 +17,16 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_priority"
 >title="Prioritet"
->abstract="Tilldela kampanjens prioritetspoäng. Prioritet är viktigt för att prioritera en kampanj när det finns en begränsning, till exempel en frekvensbegränsning. Ange ett numeriskt värde (från 0-100). Observera att ju högre tal desto högre prioritet. I situationer där två kampanjer har samma prioritetspoäng visas den kampanj som aktiverades först."
+>abstract="Tilldela en prioritetspoäng till resan. Prioritet är viktigt för att prioritera en resa när det finns en angiven begränsning, t.ex. en övre frekvensgräns. Ange ett numeriskt värde (från 0 till 100). Observera att ju högre tal desto högre prioritet. I situationer där två resor har samma prioriteringspoäng visas den resa som först aktiverades."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Prioritet"
->abstract="Tilldela en prioritetspoäng till resan. Prioritet är viktigt för att prioritera en resa när det finns en angiven begränsning, t.ex. en övre frekvensgräns. Ange ett numeriskt värde (från 0 till 100). Observera att ju högre tal desto högre prioritet."
+>abstract="Tilldela en prioritetspoäng till resan. Prioritet är viktigt för att prioritera en resa när det finns en begränsning, t.ex. ett frekvenstak. Ange ett numeriskt värde (från 0-100). Observera att ju högre tal desto högre prioritet."
+
+>[!AVAILABILITY]
+>
+>Konflikter och prioriteringsfunktioner är för närvarande tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för dessa funktioner.
 
 Med Journey Optimizer kan ni tilldela en prioritetspoäng till en resa eller kampanj. Prioritet är viktigt för att prioritera en resa, kampanj eller åtgärd när det finns en begränsning (t.ex. ett frekvenstak). I situationer där en kund är berättigad till många resor, kampanjer eller kommunikationer och du vill vara selektiv vad de ska delta i och ta emot, bör du använda det här fältet.
 
@@ -39,8 +44,8 @@ Om du vill tilldela en prioritetspoäng till en resa eller kampanj anger du ett 
 
 >[!IMPORTANT]
 >
->Om två resor eller kampanjer har samma prioritetspoäng har systemet ingen tidsbesparande funktion. Se till att prioritetspoängen är unika för att undvika konflikter.
+>I situationer där två kampanjer har samma prioritetspoäng visas den kampanj som aktiverades först.
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3445005?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)
