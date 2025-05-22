@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: ce05723342af3e0016965df7fb7a2e0b79856f6f
+source-git-commit: 948637433e1a90421ff8bab87f78f92b02354a89
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 0%
+source-wordcount: '1172'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Säg att ni har en&quot;silverkund&quot; som målgrupp. Med den här aktiviteten
 
 Den här typen av händelse kan placeras som det första steget eller senare under resan.
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ### Viktiga anteckningar {#important-notes-segment-qualification}
 
@@ -85,7 +85,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
 
    >[!NOTE]
    >
-   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar de **Realiserade** och **Avslutade** målgruppsdeltagarstatusarna från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar de **Realiserade** och **Avslutade** målgruppsdeltagarstatusarna från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan. Som standard är fältet förifyllt med det senast använda namnutrymmet.
 
@@ -127,7 +127,7 @@ När ni använder Audience Qualification för direktuppspelade målgrupper är r
 
 Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för att skicka händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md#open-and-send-event-guardrails)
 
-Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=sv-SE#api).
+Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 ### Så här undviker du överbelastningar {#overloads-speed-segment-qualification}
 
@@ -137,9 +137,9 @@ Använd inte en gruppmålgrupp i en **[!UICONTROL Audience Qualification]**-akti
 
 ![](assets/segment-error.png)
 
-Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html?lang=sv-SE){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök måste du använda en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
+Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer om [Journey Optimizer Capping API](../configuration/capping.md). Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök måste du använda en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
 
-Innan ni använder målgruppen i en produktionsresa måste ni först och främst utvärdera mängden individer som är kvalificerade för denna målgrupp varje dag. Om du vill göra det kan du kontrollera menyn **[!UICONTROL Audience]**, öppna målgruppen och sedan titta på diagrammet **[!UICONTROL Profiles over time]**.
+Innan du använder målgruppen på en resa ska du alltid först utvärdera hur många personer som kvalificerar sig för den här målgruppen varje dag. Om du vill göra det kan du kontrollera menyn **[!UICONTROL Audience]**, öppna målgruppen och sedan titta på diagrammet **[!UICONTROL Profiles over time]**.
 
 ![](assets/segment-overload.png)
 
@@ -147,4 +147,4 @@ Innan ni använder målgruppen i en produktionsresa måste ni först och främst
 
 Lär dig mer om tillämpliga användningsfall för målgruppskvalificeringsresor i den här videon. Lär dig hur du bygger en resa med målgruppskvalifikation och vilka bästa metoder som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446208?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)
