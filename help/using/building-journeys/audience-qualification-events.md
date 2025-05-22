@@ -85,7 +85,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
 
    >[!NOTE]
    >
-   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar de **Realiserade** och **Avslutade** målgruppsdeltagarstatusarna från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar de **Realiserade** och **Avslutade** målgruppsdeltagarstatusarna från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan. Som standard är fältet förifyllt med det senast använda namnutrymmet.
 
@@ -127,7 +127,7 @@ När ni använder Audience Qualification för direktuppspelade målgrupper är r
 
 Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för att skicka händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md#open-and-send-event-guardrails)
 
-Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
+Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 ### Så här undviker du överbelastningar {#overloads-speed-segment-qualification}
 
