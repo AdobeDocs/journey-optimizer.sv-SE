@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b2446c6a243d6d95b6f695b9c7007e62c51d8fa3
+source-git-commit: 7f09e78c153955fb481b94701e55a0f9e77e7dd6
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2377'
 ht-degree: 20%
 
 ---
@@ -288,7 +288,7 @@ ht-degree: 20%
          + [Konfigurera Sinch-provider](using/sms/sms-configuration-sinch.md)
          + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
          + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
-         + [Konfigurera en anpassad leverantör (Beta)](using/sms/sms-configuration-custom.md)
+         + [Konfigurera en anpassad provider](using/sms/sms-configuration-custom.md)
          + [Skapa en SMS-konfiguration](using/sms/sms-configuration-surface.md)
    + Direktmeddelande {#direct-mail}
       + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
@@ -701,7 +701,7 @@ ht-degree: 20%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
