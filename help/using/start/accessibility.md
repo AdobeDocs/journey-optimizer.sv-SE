@@ -7,18 +7,18 @@ feature: Accessibility
 role: User
 level: Beginner
 exl-id: d971c04c-9b37-4cd7-8a2d-b915e394079b
-source-git-commit: f8d62a702824bcfca4221c857acf1d1294427543
+source-git-commit: 7558d323f73382b8cb40b45eb9d79ca037eb574d
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Tillgänglighet i Journey Optimizer{#accessibility}
 
-Hjälpmedel är en serie funktioner som gör en programprodukt användbar, med så lite ansträngning som möjligt, för användare med visuella, auditiva, kognitiva, motoriska eller andra typer av funktionshinder. Adobe är branschledande inom tillgänglighet och stöder skapandet av enastående webbupplevelser genom att uppmuntra utvecklare att producera engagerande innehåll som är tillgängligt för alla användare. Läs mer om Adobe engagemang för tillgänglighet på [hjälpmedelssidan för Adobe](https://www.adobe.com/accessibility.html){target="_blank"}.
+Hjälpmedel är en serie funktioner som gör en programprodukt användbar, med så lite ansträngning som möjligt, för användare med visuella, auditiva, kognitiva, motoriska eller andra typer av funktionshinder. Adobe är ledande inom tillgänglighet och stöder framtagning av enastående webbupplevelser genom att uppmuntra utvecklare att producera engagerande material som är tillgängligt för alla användare. Läs mer om Adobe engagemang för tillgänglighet på [Adobe Accessibility-sidan](https://www.adobe.com/accessibility.html){target="_blank"}.
 
-[!DNL Journey Optimizer] följer den internationellt erkända bästa metoden i Web Content Accessibility Guidelines (WCAG) 2.1 Level A och Level AA för att uppnå målet om tillgänglighet. Läs mer i den senaste [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer-2022.html){target="_blank"}.
+[!DNL Journey Optimizer] följer den internationellt erkända bästa metoden i Web Content Accessibility Guidelines (WCAG) 2.1 Level A och Level AA för att uppnå målet om tillgänglighet. Läs mer i den senaste [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer.html){target="_blank"}.
 
 
 Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe Experience Platform:
@@ -27,7 +27,7 @@ Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe 
 * Färgkontrast
 * Validering av obligatoriska fält
 
-Hjälpmedelsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html?lang=sv-SE){target="_blank"}.
+Hjälpmedelsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"}.
 
 Följande vanliga kortkommandon är tillgängliga i [!DNL Journey Optimizer]:
 
