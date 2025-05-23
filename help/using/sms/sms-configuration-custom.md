@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
+source-git-commit: 37313ca8a9527c934d8aeaf265e9674219726636
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -198,4 +198,8 @@ När API-autentiseringsuppgifterna har skapats är nästa steg att skapa en webk
 När du har skapat och konfigurerat inställningarna för inkommande trafik för webkroken måste du nu skapa en [kanalkonfiguration](sms-configuration-surface.md) för SMS-meddelanden.
 
 När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som meddelandeframställning, personalisering, länkspårning och rapportering.
+
+## Instruktionsvideo {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3431625)
 
