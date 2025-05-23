@@ -5,25 +5,22 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: e742c04e-2987-4466-84af-bdaf4d714552
-source-git-commit: 80935cc31ef88a322c2dd555fc8998935c6e5621
+source-git-commit: aa28d13b2ad874e4dc61510bfdc250415e8e8be1
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-# Skicka e-postkorrektur {#send-proofs}
+# Skicka korrektur med testprofildata {#send-proofs}
 
 Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddelande innan det skickas till huvudmålgruppen. Mottagarna av beviset ansvarar för att godkänna meddelandet: rendering, innehåll, personaliseringsinställningar, konfiguration.
 
-Observera att [!DNL Journey optimizer] även låter dig testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV-/JSON-fil, eller läggs till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
-
->[!PREREQUISITES]
+>[!NOTE]
 >
->Om du vill skicka korrektur måste du ha behörighet **Godkänn och publicera** för den specifika resurs (kampanj eller resa) som är associerad med e-postmeddelandet. Om du dessutom vill skicka korrektur på en resa måste du ha behörighet **Publiceringsresa**. [Läs mer om behörigheter](../administration/ootb-permissions.md).
+>I [!DNL Journey optimizer] kan du också testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du simulerar innehållsvariationer](../test-approve/simulate-sample-input.md)
 
-
-Om du vill skicka e-postkorrektur måste du först välja [testprofiler](test-profiles.md). Följ sedan dessa steg:
+Om du vill skicka e-postkorrektur med testprofildata måste du först välja [testprofiler](test-profiles.md). Följ sedan dessa steg:
 
 1. Klicka på knappen **[!UICONTROL Send proof]** på skärmen **[!UICONTROL Simulate]**.
 

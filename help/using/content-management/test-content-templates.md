@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 01726ab6-f581-4d19-aedd-2541bc0f27c6
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: 22a8742bf9000ed1cc8437d7ac89747276284dbf
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Du kan testa återgivningen av vissa e-postmallar, oavsett om de har skapats fr�
 1. Klicka på **[!UICONTROL Simulate Content]** och välj en testprofil för att kontrollera återgivningen. [Läs mer](../content-management/preview-test.md)
 
    ![](assets/content-template-stimulate.png)
+
+   >[!NOTE]
+   >
+   >I [!DNL Journey optimizer] kan du också testa olika varianter av dina innehållsmallar genom att förhandsgranska dem och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du simulerar innehållsvariationer](../test-approve/simulate-sample-input.md)
 
 1. Du kan skicka ett bevis för att testa ditt innehåll och få det godkänt av vissa interna användare innan du använder det under en resa eller i en kampanj.
 

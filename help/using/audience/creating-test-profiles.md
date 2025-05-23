@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: c2f32533027e374a1df26943e7c5acd4e1d13869
+source-git-commit: 22a8742bf9000ed1cc8437d7ac89747276284dbf
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1312'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Testprofiler krävs när [testläget](../building-journeys/testing-the-journey.m
 
 >[!NOTE]
 >
->I [!DNL Journey optimizer] kan du också testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
+>I [!DNL Journey optimizer] kan du också testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du simulerar innehållsvariationer](../test-approve/simulate-sample-input.md)
 
 Det finns flera sätt att skapa testprofiler. På den här sidan hittar du information om:
 
@@ -32,7 +32,7 @@ Det finns flera sätt att skapa testprofiler. På den här sidan hittar du infor
 
   Förutom dessa två metoder levereras Adobe Journey Optimizer med ett specifikt [användningsfall](#use-case-1) i produkten för att underlätta skapandet av testprofiler.
 
-Du kan också överföra en json-fil i en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=sv-SE#add-data-to-dataset){target="_blank"}.
+Du kan också överföra en json-fil i en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
 
 Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
@@ -69,7 +69,7 @@ När du är klar klickar du på **[!UICONTROL Add field groups]**: listan med f�
 
 >[!NOTE]
 >
->Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#prerequisites){target="_blank"}.
+>Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
 
 Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. Följ de här stegen:
 
@@ -86,7 +86,7 @@ Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. F�
 
 >[!NOTE]
 >
-> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE#getting-started){target="_blank"}.
+> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target="_blank"}.
 
 ## Exempel på användning i produkten{#use-case-1}
 
@@ -183,7 +183,7 @@ Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det 
 
 >[!NOTE]
 >
->Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=sv-SE#tutorials){target="_blank"}.
+>Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
 >
 
 

@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: c0e8d80cac202fb463aa95b4a536146679e6567f
+source-git-commit: a5bd1e92b3696a7de2c44522099d54bc6e1e00ab
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1136'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ När du använder en anpassad konfiguration i en kampanj eller en resa kan du f�
 
 >[!NOTE]
 >
->Utöver testprofiler kan du i [!DNL Journey optimizer] även testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
+>Utöver testprofiler kan du i [!DNL Journey optimizer] även testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du simulerar innehållsvariationer](../test-approve/simulate-sample-input.md)
 
 Så här förhandsgranskar du ditt innehåll med testprofiler:
 

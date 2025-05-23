@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7f09e78c153955fb481b94701e55a0f9e77e7dd6
+source-git-commit: 81de8502ce061ee2d0bb97e4a35c3f76c4425a08
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 20%
@@ -218,10 +218,10 @@ ht-degree: 20%
    + Förhandsgranska och testa innehåll {#preview-test}
       + [Kom igång med förgranskning och test](using/content-management/preview-test.md)
       + [Välj testprofiler](using/content-management/test-profiles.md)
-      + [Förhandsgranska ditt innehåll](using/content-management/preview.md)
-      + [Skicka e-postkorrektur](using/content-management/proofs.md)
+      + [Förhandsgranska med testprofiler](using/content-management/preview.md)
+      + [Skicka korrektur med testprofildata](using/content-management/proofs.md)
       + [Testa e-poståtergivning](using/content-management/rendering.md)
-      + [Testa innehåll med exempelindata (Beta)](using/test-approve/simulate-sample-input.md)
+      + [Simulera innehållsvariationer](using/test-approve/simulate-sample-input.md)
       + [Rapport om skräppost](using/content-management/spam-report.md)
    + Godkänn resor och kampanjer {#approve}
       + [Kom igång med godkännanden](using/test-approve/gs-approval.md)
@@ -701,7 +701,7 @@ ht-degree: 20%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)

@@ -5,10 +5,10 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: c51e4089-7f51-437d-a5ed-de10bab46cf8
-source-git-commit: 03cb3298c905766bc059e82c58969a2111379345
+source-git-commit: bc433a215021b9c5c6a8948468468808e7121712
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -19,15 +19,11 @@ ht-degree: 0%
 >title="Använd testprofiler för att kontrollera innehållet"
 >abstract="Använd testprofiler för att förhandsgranska och testa innehållet. Om du har lagt till anpassade fält kan du kontrollera hur de visas med testprofildata."
 
-Innan du förhandsgranskar eller testar innehållet måste du först välja testprofiler, som är ytterligare mottagare som inte matchar de definierade målinriktningsvillkoren. [Lär dig skapa testprofiler](../audience/creating-test-profiles.md)
+Testprofiler är ytterligare mottagare som inte matchar de definierade målinriktningskriterierna. [Lär dig skapa testprofiler](../audience/creating-test-profiles.md)
 
->[!NOTE]
->
->Utöver testprofiler kan du i [!DNL Journey optimizer] även testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
+Innan du använder testprofiler för att testa innehållet måste du först markera dem. Följ dessa steg för att göra detta:
 
-Så här väljer du testprofiler:
-
-1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer.
+1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer och välj **[!UICONTROL Sumulaye content]**.
 
 1. Klicka på knappen **[!UICONTROL Manage test profiles]** och markera sedan det namnutrymme som ska användas för att identifiera testprofiler genom att klicka på markeringsikonen **[!UICONTROL Identity namespace]** . [Läs mer om Adobe Experience Platform identitetsnamnutrymmen](../audience/get-started-identity.md).
 
@@ -48,3 +44,7 @@ Så här väljer du testprofiler:
    ![](../email/assets/preview-profile-list.png)
 
    Baserat på elementen för meddelandeanpassning visar den här listan data för varje testprofil i de relaterade kolumnerna.
+
+>[!NOTE]
+>
+>Utöver testprofiler kan du i [!DNL Journey optimizer] även testa olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som har överförts från en CSV-/JSON-fil, eller lagts till manuellt. [Lär dig hur du simulerar innehållsvariationer](../test-approve/simulate-sample-input.md)
