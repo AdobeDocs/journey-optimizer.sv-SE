@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
-source-git-commit: 7f035141092d12af8eac96cf43c9021939a55883
+source-git-commit: 7ce241ca8ae6d2be6152a1c393a8301ce2f397a3
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,16 @@ ht-degree: 0%
 >id="ajo_exd_config_strategies"
 >title="Definiera era urvalsstrategier"
 >abstract="En urvalsstrategi kan återanvändas och består av en samling som är associerad med en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs ut i en beslutspolicy."
-<!-->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html?lang=sv-SE" text="Create decision policies"-->
+
+<!--additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html" text="Create decision policies"-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_strategy_eligibility"
 >title="Begränsa giltiga profiler"
 >abstract="Du kan begränsa urvalet av erbjudanden för den här urvalsstrategin. Som standard är alla profiler berättigade, men du kan använda målgrupper eller regler för att begränsa urvalet av erbjudanden till enbart specifika profiler."
-<!-->>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html?lang=sv-SE" text="Use audiences"
->additional-url=&quot;https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules.html&quot; text=&quot;Use Decision rules&quot;—>
+
+<!--additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Use audiences"
+additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules.html" text="Use decision rules"-->
 
 En urvalsstrategi kan återanvändas och består av en samling som är associerad med en berättigandebegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs i en [beslutspolicy](create-decision.md).
 
@@ -88,7 +90,7 @@ Följ stegen nedan för att skapa en urvalsstrategi.
 >id="ajo_exd_strategy_ranking"
 >title="Definiera rangordnade erbjudanden"
 >abstract="Om flera erbjudanden är berättigade till en viss urvalsstrategi väljer du den metod som ska välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi: prioritet eller rankningsformel."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html?lang=sv-SE" text="Skapa beslutsprofiler"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html" text="Skapa beslutsprofiler"
 
 Om flera erbjudanden är berättigade till en viss urvalsstrategi kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi. Du kan rangordna erbjudanden genom att:
 
