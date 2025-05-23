@@ -24,13 +24,13 @@ Resursväljaren har nu stöd för dynamiska medier, vilket gör att du sömlöst
 
 Observera att den här integreringen endast är tillgänglig för kunder som använder Dynamic Media Manager as a Cloud Service.
 
-Mer information om Dynamic Media i Adobe Experience Manager as a Cloud Service finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media){target="_blank"}.
+Mer information om Dynamic Media i Adobe Experience Manager as a Cloud Service finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media){target="_blank"}.
 
 ## Lägga till och hantera dynamiska medier {#dynamic-media}
 
 Förbättra och optimera materialet för alla skärmar och webbläsare genom att infoga dynamiska medier från Adobe Experience Manager as a Cloud Service direkt i Journey Optimizer-materialet.  Du kan sedan ändra storlek, beskära, förbättra och göra andra justeringar efter behov.
 
-Observera att Dynamiska medier är tillgängliga för både Dynamic Media [Scene7-läge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7) och [ med OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
+Observera att Dynamiska medier är tillgängliga för både Dynamic Media [Scene7-läge](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/dynamic/config-dms7) och [ med OpenAPI](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
 
 1. Dra och släpp en **[!UICONTROL HTML component]** i ditt innehåll.
 
@@ -48,7 +48,7 @@ Observera att Dynamiska medier är tillgängliga för både Dynamic Media [Scene
 
 1. Justera bildparametrarna (t.ex. höjd, bredd, rotering, vändning, intensitet, nyans) efter behov för att uppfylla dina mediebehov.
 
-   En omfattande lista över bildparametrar som kan läggas till i URL:en finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+   En omfattande lista över bildparametrar som kan läggas till i URL:en finns i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
    ![](assets/dynamic-media-3.png)
 
@@ -64,7 +64,7 @@ Med experimenteringsfunktionen kan du till exempel uppdatera den befintliga text
 
 ![](assets/dynamic-media-layout-1.png)
 
-Observera att **Anpassning av textövertäckning** endast är tillgängligt i läget Dynamic Media [Scene7](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7). Eftersom Scene7-läget inte är tillgängligt för hälso- och sjukvårdskunder återges innehållet med en binär kopia av bilden från Journey Optimizer. Kontakta Experience Manager support om du har några undantag.
+Observera att **Anpassning av textövertäckning** endast är tillgängligt i läget Dynamic Media [Scene7](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/dynamic/config-dms7). Eftersom Scene7-läget inte är tillgängligt för hälso- och sjukvårdskunder återges innehållet med en binär kopia av bilden från Journey Optimizer. Kontakta Experience Manager support om du har några undantag.
 
 1. Dra och släpp en **[!UICONTROL HTML component]** i ditt innehåll.
 
@@ -103,9 +103,9 @@ Innehållet innehåller nu din uppdaterade textövertäckning.
 
 Lägg enkelt till din Dynamic Media-mall i Journey Optimizer och uppdatera medieinnehållet när det behövs. Ni kan nu lägga in personaliseringsfält i era medier, så att ni kan skapa mer anpassat och engagerande innehåll i Journey Optimizer.
 
-Observera att **mallen för dynamiska media** endast är tillgänglig i läget [Scene7](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7) för dynamiska media. Eftersom Scene7-läget inte är tillgängligt för hälso- och sjukvårdskunder återges inte innehållet. Kontakta Experience Manager support om du har några undantag.
+Observera att **mallen för dynamiska media** endast är tillgänglig i läget [Scene7](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/dynamic/config-dms7) för dynamiska media. Eftersom Scene7-läget inte är tillgängligt för hälso- och sjukvårdskunder återges inte innehållet. Kontakta Experience Manager support om du har några undantag.
 
-Läs mer om [mallen för dynamiska media](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
+Läs mer om [mallen för dynamiska media](https://experienceleague.adobe.com/sv/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics).
 
 ### Med bildkomponent {#image-component}
 
@@ -125,7 +125,7 @@ Du kan infoga den dynamiska mallen direkt i innehållet med komponenten Bild:
 
 1. Gå till parametrarna för mallen för dynamiska media i **bildinställningarna**.
 
-   Vilka fält som är tillgängliga beror på de parametrar som lagts till när [mallen ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters) skapades i Adobe Experience Manager.
+   Vilka fält som är tillgängliga beror på de parametrar som lagts till när [mallen ](https://experienceleague.adobe.com/sv/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters) skapades i Adobe Experience Manager.
 
    ![](assets/dynamic-media-template-3.png)
 
