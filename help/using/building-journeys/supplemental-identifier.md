@@ -2,9 +2,9 @@
 title: Kompletterande identifiering vid händelseutlösta resor
 description: Lär dig hur du använder tilläggsidentifierare i händelseutlösta resor.
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: bfff5bfe0a87d65c453018c4f1af01e9b1456052
+source-git-commit: c4b9ee59fe22bad97975cce01a84002541d8c9df
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
 
 +++ Se exempel
 
-   I en objektmatris med det kompletterande ID:t som&quot;bookingNum&quot; och ett attribut på samma nivå som kallas&quot;bookingCountry&quot;, itererar resan genom arrayobjektet baserat på bookNum och skapar en reseinstans för varje objekt.
+   I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på samma nivå med namnet `bookingCountry`, itererar resan genom arrayobjektet baserat på bookNum och skapar en reseinstans för varje objekt.
 
    * Följande uttryck i villkorsaktiviteten itererar genom objektarrayen och kontrollerar om värdet för `bookingCountry` är lika med &quot;FR&quot;:
 
@@ -112,7 +112,7 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
      @event{<event_name>.<object_path>.<object_array_name>.all(currentEventField.<attribute_path>.bookingNum==${supplementalId}).at(0).<attribute_path>.bookingCountry}=="FR"
      ```
 
-   * Följande uttryck i redigeraren för e-postpersonalisering itererar igenom objektarrayen, drar ut det&quot;bookingCountry&quot; som gäller för den aktuella reseinstansen och visar det i innehållet:
+   * Följande uttryck i redigeraren för e-postpersonalisering itererar igenom objektarrayen, drar ut den `bookingCountry` som gäller för den aktuella reseinstansen och visar den i innehållet:
 
      ```
      {{#each context.journey.events.<event_ID>.<object_path>.<object_array_name> as |l|}} 
