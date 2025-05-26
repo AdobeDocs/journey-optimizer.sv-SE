@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: 6d219d9caea28947877e38893dea20a4f77456f6
+source-git-commit: dad3dc0022d04c9f9c82477d75a6fb8de7e85a6a
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1644'
 ht-degree: 7%
 
 ---
@@ -27,11 +27,6 @@ ht-degree: 7%
 >id="ajo_journey_event_parameters"
 >title="Parametrar"
 >abstract="Definiera händelsens parametrar som schemat och nyttolastfält. För regelbaserade händelser använder du fältet **[!UICONTROL Event ID condition]** för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa. Lägg till en identitetstyp och en profilidentifierare som ska användas för händelsen."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_parameters_supplemental_identifier"
->title="Använd extra identifierare"
->abstract="Den kompletterande identifieraren är en sekundär identifierare som ger ytterligare kontext för körningen av en resa. Om du vill definiera det markerar du det fält som ska användas som tilläggsidentifierare och väljer ett namnutrymme som ska associeras med det."
 
 Enhetshändelser är länkade till en viss profil. De kan vara regelbaserade eller systemgenererade.  Läs mer om enhetshändelse [det här avsnittet](../event/about-events.md).
 
