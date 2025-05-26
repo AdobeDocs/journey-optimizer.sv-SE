@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: resurser, integration
 exl-id: c74156bb-4f00-4325-b416-6fe36cb755d1
-source-git-commit: f2c072cd410afac79604cfad532fbd75591b34fa
+source-git-commit: 11c6dd43d6b20864f9823130c5aed790a3091938
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 0%
+source-wordcount: '493'
+ht-degree: 1%
 
 ---
 
@@ -29,11 +29,13 @@ ht-degree: 0%
 
 Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komma åt Adobe Express kraftfulla redigeringsverktyg när du skapar innehåll. Tack vare den här integreringen kan du ändra storlek på bilder, ta bort bakgrunder, beskära bilder och konvertera resurser till JPEG eller PNG utan att behöva växla mellan lösningarna.
 
-Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/se/express/user-guide.html).
+Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/express/user-guide.html).
 
 Du kommer åt menyn **[!DNL Adobe Express]** genom att gå till dina **bildinställningar** från e-postdesignern och klicka på **[!UICONTROL Edit in Adobe Express]**.
 
 ![](assets/express_1.png)
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Adobe Express Enterprise-licens {#licence}
 
@@ -45,12 +47,12 @@ Med Enterprise-licens får man tillgång till Adobe Express-redigeraren där man
 
 +++Tillgängliga användningsexempel för användare och Enterprise-licens för Adobe Express
 
-* [Ta bort bakgrund](https://helpx.adobe.com/se/express/create-and-edit-images/edit-images/remove-background.html)
-* [Ta bort objekt](https://helpx.adobe.com/se/express/create-and-edit-images/create-and-modify-with-generative-ai/remove-objects-generative-fill.html)
-* [Radera](https://helpx.adobe.com/se/express/create-and-edit-images/edit-images/eraser.html)
-* [Infoga objekt](https://helpx.adobe.com/se/express/adobe-express-on-mobile/create-and-edit-designs/generative-fill-mobile.html)
-* [Beskär](https://helpx.adobe.com/se/express/create-and-edit-images/edit-images/crop-and-shape-images.html)
-* [Effekter](https://helpx.adobe.com/se/express/add-effects-to-your-designs/add-images-and-visuals/apply-image-filters.html)
+* [Ta bort bakgrund](https://helpx.adobe.com/express/create-and-edit-images/edit-images/remove-background.html)
+* [Ta bort objekt](https://helpx.adobe.com/express/create-and-edit-images/create-and-modify-with-generative-ai/remove-objects-generative-fill.html)
+* [Radera](https://helpx.adobe.com/express/create-and-edit-images/edit-images/eraser.html)
+* [Infoga objekt](https://helpx.adobe.com/express/adobe-express-on-mobile/create-and-edit-designs/generative-fill-mobile.html)
+* [Beskär](https://helpx.adobe.com/express/create-and-edit-images/edit-images/crop-and-shape-images.html)
+* [Effekter](https://helpx.adobe.com/express/add-effects-to-your-designs/add-images-and-visuals/apply-image-filters.html)
 
 +++
 
@@ -137,3 +139,13 @@ Din bild är nu klar att användas i ditt innehåll.
    Klicka sedan på **[!UICONTROL Import]**.
 
 Din bild är nu klar att användas i ditt innehåll.
+
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du redigerar resurser i Adobe Journey Optimizer med Adobe Express verktyg.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3455523/?quality=12)
+
+
+

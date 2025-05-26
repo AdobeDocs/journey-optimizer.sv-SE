@@ -1,40 +1,48 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med GenStudio-integrering i Journey Optimizer
-description: Lär dig arbeta med GenStudio i Journey Optimizer
+title: Arbeta med GenStudio for Performance Marketing i Journey Optimizer
+description: Lär dig arbeta med GenStudio for Performance Marketing i Journey Optimizer
 feature: Content Assistant, Integrations
 topic: Content Management, Artificial Intelligence
+badge: label="Begränsad tillgänglighet" type="Informative"
 role: User
 level: Beginner, Intermediate
 exl-id: c22a44a8-e4e2-453a-9ca2-b80f7c0edc19
-source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
+source-git-commit: 11c6dd43d6b20864f9823130c5aed790a3091938
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 1%
+source-wordcount: '653'
+ht-degree: 0%
 
 ---
 
-# Kom igång med GenStudio-integrationen {#gs-genstudio}
+# Arbeta med GenStudio for Performance Marketing {#ajo-genstudio}
 
 >[!CONTEXTUALHELP]
 >id="ajo_genstudio_button"
 >title="Använda en mall som byggts med GenStudio"
 >abstract="Tack vare den smidiga integrationen med Adobe GenStudio for Performance Marketing kan du enkelt importera en GenStudio-mall som har förbättrats med Adobe AI-teknik."
 
+## Kom igång med GenStudio {#gs-genstudio}
+
+[Adobe GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/home){target="_blank"} är en generativ AI-tillämpning som gör att marknadsföringsteamen kan skapa egna annonser och e-postmeddelanden för att skapa effektiva, personaliserade marknadsföringskampanjer som följer ert varumärke och följer företagets policy. Genom att utnyttja Adobe AI-teknik får du en omfattande verktygslåda som förenklar komplexa funktioner för att skapa och hantera innehåll så att kreatörerna kan fokusera på innovation.
+
 >[!AVAILABILITY]
 >
->GenStudio-integreringen i [!DNL Adobe Journey Optimizer] är för närvarande inte tillgänglig för användning med tilläggserbjudandena **Hälsovårdssköld** eller **Sekretess och säkerhetssköld**.
+>* GenStudio-integreringen i [!DNL Adobe Journey Optimizer] är för närvarande inte tillgänglig för användning med tilläggserbjudandena **Hälsovårdssköld** eller **Sekretess och säkerhetssköld**.
 >
->Den här funktionen är endast tillgänglig för e-postkanalen.
+>* Den här funktionen är endast tillgänglig för e-postkanalen.
 
-[Adobe GenStudio for Performance Marketing](https://business.adobe.com/products/genstudio-for-performance-marketing.html){target="_blank"} är en generativ AI-tillämpning som gör att marknadsföringsteamen kan skapa egna annonser och e-postmeddelanden för att skapa effektiva, personaliserade marknadsföringskampanjer som följer ert varumärke och följer företagets policy. Genom att utnyttja Adobe AI-teknik får du en omfattande verktygslåda som förenklar komplexa funktioner för att skapa och hantera innehåll så att kreatörerna kan fokusera på innovation.
+För att öka marknadsföringens effektivitet och upprätthålla varumärkets enhetlighet kan du sömlöst integrera [!DNL **GenStudio for Performance Marketing**]-upplevelser med [!DNL **Adobe Journey Optimizer**]. Detta gör att du kan utnyttja [!DNL GenStudio]s AI-power-innehåll tillsammans med [!DNL Journey Optimizer]s avancerade orkestreringsfunktioner.
 
-Läs mer om [!DNL GenStudio for Performance Marketing] i den dedikerade [dokumentationen](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/home){target="_blank"}.
+![Importera ett GenStudio-innehåll till Adobe Journey Optimizer](../rn/assets/do-not-localize/genstudio.gif)
 
 >[!INFO]
 >
 >Mer information finns i [översikten](https://business.adobe.com/products/genstudio-for-performance-marketing.html#watch-overview){target="_blank"} och i [demon](https://business.adobe.com/products/genstudio-for-performance-marketing.html#demo){target="_blank"} av [!DNL Adobe GenStudio for Performance Marketing].
+
+➡️ [Upptäck den här funktionen i en video](#video)
+
 
 <!--To access the GenStudio integration in [!DNL Adobe Journey Optimizer] feature, users need to be granted the **xxx** permission. [Learn more](../administration/permissions.md)
 
@@ -42,9 +50,7 @@ Läs mer om [!DNL GenStudio for Performance Marketing] i den dedikerade [dokumen
 >
 >* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).-->
 
-För att öka marknadsföringens effektivitet och upprätthålla varumärkets enhetlighet kan du sömlöst integrera [!DNL **GenStudio for Performance Marketing**]-upplevelser med [!DNL **Adobe Journey Optimizer**]. Detta gör att du kan utnyttja [!DNL GenStudio]s AI-power-innehåll tillsammans med [!DNL Journey Optimizer]s avancerade orkestreringsfunktioner.
 
-<!--![](../rn/assets/do-not-localize/genstudio.gif)-->
 
 <!--Guardrails and limitations {#genstudio-guardrails}
 
@@ -54,7 +60,7 @@ See if guidelines/limitations such as the ones listed [here](gs-generative.md#ge
 
 The following limitations apply to GenStudio integration in [!DNL Adobe Journey Optimizer]:-->
 
-## Utnyttja GenStudio i Journey Optimizer {#use-genstudio}
+## Använd GenStudio i Journey Optimizer {#use-genstudio}
 
 Integreringen [!DNL GenStudio for Performance Marketing] och [!DNL Journey Optimizer] gör att du kan låta marknadsförare från ditt företag samarbeta bättre för att effektivisera processerna.
 
@@ -76,13 +82,13 @@ Först kan du exportera en [!DNL Journey Optimizer] HTML-mall med ditt varumärk
 
    >[!NOTE]
    >
-   >Lär dig hur du överför en HTML-mall till [!DNL GenStudio] i det dedikerade avsnittet [Adobe GenStudio for Performance Marketing användarhandbok](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/content/templates/use-templates#templates-from-ajo-and-marketo){target="_blank"} .
+   >Lär dig hur du överför en HTML-mall till [!DNL GenStudio] i det dedikerade avsnittet [Adobe GenStudio for Performance Marketing användarhandbok](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/content/templates/use-templates#templates-from-ajo-and-marketo){target="_blank"} .
 
 1. I GenStudio använder du den här mallen för att skapa flera e-postvarianter med AI-uppmaningar och spara dem.
 
    >[!NOTE]
    >
-   >Lär dig hur du skapar e-postupplevelser i den dedikerade [sektionen](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/create/create-email-experience){target="_blank"} i GenStudio.
+   >Lär dig hur du skapar e-postupplevelser i den dedikerade [sektionen](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/create/create-email-experience){target="_blank"} i GenStudio.
 
 ### Utnyttja GenStudio upplevelser i Journey Optimizer {#leverage-genstudio-experiences}
 
@@ -129,3 +135,9 @@ Följ stegen nedan om du vill utnyttja de [!DNL GenStudio] e-postvarianter som d
 1. Spara ändringarna och [aktivera](../campaigns/review-activate-campaign.md) kampanjen.
 
 När du har kört experimentet kan du följa upp hur kampanjbehandlingarna fungerar med [rapporten om experimentella kampanjer](../reports/campaign-global-report-cja-experimentation.md). Sedan kan du tolka resultatet av ditt experiment. [Lär dig hur](../content-management/get-started-experiment.md#interpret-results)
+
+## Instruktionsvideo {#video}
+
+Upptäck hur du exporterar en e-postmall från Journey Optimizer till GenStudio for Performance Marketing, skapar varumärkeskompatibla e-postmeddelanden med hjälp av mallen i GenStudio och importerar dem smidigt tillbaka till Journey Optimizer.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3456038/?quality=12)

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 33ebde5ef42519137c3ef057e6c95a71f1c45a6c
+source-git-commit: 11c6dd43d6b20864f9823130c5aed790a3091938
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2393'
 ht-degree: 20%
 
 ---
@@ -394,6 +394,15 @@ ht-degree: 20%
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
       + [Skapa dynamiskt innehåll](using/personalization/dynamic-content.md)
+   + Användningsexempel för flera lösningar {#combine}
+      + [Kombinera lösningar för att hantera ert innehåll](using/integrations/content-integrations.md)
+      + [Arbeta med Experience Manager Assets](using/integrations/assets.md)
+      + [Arbeta med Adobe Stock](using/integrations/stock.md)
+      + [Arbeta med Adobe Express](using/integrations/express.md)
+      + [Arbeta med Experience Manager-mallar](using/integrations/aem-templates.md)
+      + [Arbeta med Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+      + [Arbeta med Dynamic Media](using/integrations/aem-dynamic.md)
+      + [Arbeta med GenStudio for Performance Marketing](using/integrations/genstudio.md)
    + AI Assistant för innehållsgenerering{#ai-assistant}
       + [Kom igång med AI Assistant](using/content-management/gs-generative.md)
       + [E-postgenerering med AI](using/content-management/generative-email.md)
@@ -434,15 +443,6 @@ ht-degree: 20%
       + [Arbeta med beräknade attribut](using/audience/computed-attributes.md)
    + [Identiteter](using/audience/get-started-identity.md)
    + [Licensanvändning](using/audience/license-usage.md)
-+ Integreringar{#integrations}
-   + [Integrering med andra lösningar](using/integrations/ajo-integrations.md)
-   + [Arbeta med Experience Manager Assets](using/integrations/assets.md)
-   + [Arbeta med Adobe Stock](using/integrations/stock.md)
-   + [Arbeta med Adobe Express](using/integrations/express.md)
-   + [Arbeta med Experience Manager-mallar](using/integrations/aem-templates.md)
-   + [Arbeta med Experience Manager Content Fragments](using/integrations/aem-fragments.md)
-   + [Arbeta med Dynamic Media](using/integrations/aem-dynamic.md)
-   + [Arbeta med GenStudio](using/integrations/genstudio.md)
 + Spåra och övervaka {#reporting}
    + Live-rapport {#live-report}
       + [Kom igång med Live-rapporten](using/reports/live-report.md)
@@ -702,7 +702,7 @@ ht-degree: 20%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
@@ -752,6 +752,7 @@ ht-degree: 20%
       + [Felsöka en anpassad åtgärd](using/action/troubleshoot-custom-action.md)
       + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
 + Koppla samman system och miljöer {#connect-systems}
+   + [Integrera med andra lösningar](using/integrations/ajo-integrations.md)
    + [Arbeta med Journey Optimizer API:er](using/configuration/ajo-apis.md)
    + Integrera dina resor med externa system {#external-systems}
       + [Reseintegration med externa system](using/configuration/external-systems.md)
