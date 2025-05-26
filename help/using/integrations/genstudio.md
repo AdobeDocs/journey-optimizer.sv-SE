@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Kom igång med GenStudio {#gs-genstudio}
 
-[Adobe GenStudio for Performance Marketing](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/home){target="_blank"} är en generativ AI-tillämpning som gör att marknadsföringsteamen kan skapa egna annonser och e-postmeddelanden för att skapa effektiva, personaliserade marknadsföringskampanjer som följer ert varumärke och följer företagets policy. Genom att utnyttja Adobe AI-teknik får du en omfattande verktygslåda som förenklar komplexa funktioner för att skapa och hantera innehåll så att kreatörerna kan fokusera på innovation.
+[Adobe GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/home){target="_blank"} är en generativ AI-tillämpning som gör att marknadsföringsteamen kan skapa egna annonser och e-postmeddelanden för att skapa effektiva, personaliserade marknadsföringskampanjer som följer ert varumärke och följer företagets policy. Genom att utnyttja Adobe AI-teknik får du en omfattande verktygslåda som förenklar komplexa funktioner för att skapa och hantera innehåll så att kreatörerna kan fokusera på innovation.
 
 >[!AVAILABILITY]
 >
@@ -82,13 +82,13 @@ Först kan du exportera en [!DNL Journey Optimizer] HTML-mall med ditt varumärk
 
    >[!NOTE]
    >
-   >Lär dig hur du överför en HTML-mall till [!DNL GenStudio] i det dedikerade avsnittet [Adobe GenStudio for Performance Marketing användarhandbok](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/content/templates/use-templates#templates-from-ajo-and-marketo){target="_blank"} .
+   >Lär dig hur du överför en HTML-mall till [!DNL GenStudio] i det dedikerade avsnittet [Adobe GenStudio for Performance Marketing användarhandbok](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/content/templates/use-templates#templates-from-ajo-and-marketo){target="_blank"} .
 
 1. I GenStudio använder du den här mallen för att skapa flera e-postvarianter med AI-uppmaningar och spara dem.
 
    >[!NOTE]
    >
-   >Lär dig hur du skapar e-postupplevelser i den dedikerade [sektionen](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/create/create-email-experience){target="_blank"} i GenStudio.
+   >Lär dig hur du skapar e-postupplevelser i den dedikerade [sektionen](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/create/create-email-experience){target="_blank"} i GenStudio.
 
 ### Utnyttja GenStudio upplevelser i Journey Optimizer {#leverage-genstudio-experiences}
 
@@ -140,4 +140,4 @@ När du har kört experimentet kan du följa upp hur kampanjbehandlingarna funge
 
 Upptäck hur du exporterar en e-postmall från Journey Optimizer till GenStudio for Performance Marketing, skapar varumärkeskompatibla e-postmeddelanden med hjälp av mallen i GenStudio och importerar dem smidigt tillbaka till Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3456053/?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3456038/?quality=12)
