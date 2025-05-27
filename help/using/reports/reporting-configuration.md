@@ -40,13 +40,13 @@ Observera att för webbkanaler, kodbaserade kanaler och appkanaler måste du se 
 
 ## Förhandskrav
 
-Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du skapa den datauppsättningen. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#create){target="_blank"}.
+Innan du kan lägga till en datauppsättning i rapportkonfigurationen måste du skapa den datauppsättningen. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE#create){target="_blank"}.
 
 * Du kan bara lägga till datamängder av händelsetyp.
 
-* Dessa datauppsättningar måste innehålla `Experience Event - Proposition Interactions` [fältgruppen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}.
+* Dessa datauppsättningar måste innehålla `Experience Event - Proposition Interactions` [fältgruppen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#field-group){target="_blank"}.
 
-* Dessa datauppsättningar kan även innehålla en av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}: `Application Details`, `Commerce Details`, `Web Details`.
+* Dessa datauppsättningar kan även innehålla en av följande [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#field-group){target="_blank"}: `Application Details`, `Commerce Details`, `Web Details`.
 
   >[!NOTE]
   >
@@ -100,11 +100,11 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 
    >[!CAUTION]
    >
-   >Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de [fältgrupper som stöds](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"}: **Programinformation**, **Commerce-information**, **Webbinformation**. Om du väljer en datauppsättning som inte matchar dessa villkor, kommer du inte att kunna spara ändringarna.
+   >Du kan bara välja en datamängd av händelsetyp, som måste innehålla minst en av de [fältgrupper som stöds](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#field-group){target="_blank"}: **Programinformation**, **Commerce-information**, **Webbinformation**. Om du väljer en datauppsättning som inte matchar dessa villkor, kommer du inte att kunna spara ändringarna.
 
    ![](assets/reporting-config-datasets.png)
 
-   Läs mer om datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}.
+   Läs mer om datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE){target="_blank"}.
 
 1. I listrutan **[!UICONTROL Profile ID]** väljer du det datamängdsfältsattribut som ska användas för att identifiera varje profil i dina rapporter.
 
