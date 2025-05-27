@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 11c6dd43d6b20864f9823130c5aed790a3091938
+source-git-commit: ffce95a074c5827b637d081ad23f4cd3754515fe
 workflow-type: tm+mt
-source-wordcount: '2393'
+source-wordcount: '2390'
 ht-degree: 20%
 
 ---
@@ -702,7 +702,7 @@ ht-degree: 20%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
@@ -759,9 +759,9 @@ ht-degree: 20%
       + [API för reglering](using/configuration/capping.md)
       + [API för begränsning](using/configuration/throttling.md)
    + Skicka med Adobe lösningar {#adobe-solutions}
-      + [Reseintegrering med Campaign Standard](using/action/acs-action.md)
-      + [Reseintegrering med Campaign v7/v8](using/action/acc-action.md)
-      + [Reseintegrering med Marketo Engage](using/action/marketo-engage.md)
+      + [Campaign Standard på resorna](using/action/acs-action.md)
+      + [Kampanj v7/v8 på resor](using/action/acc-action.md)
+      + [Marketo Engage på resorna](using/action/marketo-engage.md)
    + Hantering av sandlådor {#sandbox}
       + [Använda och tilldela sandlådor](using/administration/sandboxes.md)
       + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)

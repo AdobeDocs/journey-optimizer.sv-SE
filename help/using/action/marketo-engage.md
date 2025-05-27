@@ -2,21 +2,23 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Integrera med Marketo Engage
-description: Lär dig hur du använder åtgärden Marketo Engage
+description: Lär dig använda Marketo Engage-åtgärden
 feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: marknadsföring, marknadsföra, engagera integreringen
 exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
-source-git-commit: 844c0f8dc9b14d69cbd87893042f048443d7a5e6
+source-git-commit: ffce95a074c5827b637d081ad23f4cd3754515fe
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
 # Integrera med Marketo Engage {#integrating-with-marketo-engage}
+
+Det finns en specifik anpassad åtgärd att utföra på resor för att integrera Adobe Journey Optimizer och Marketo Engage.
 
 Satsa på en resa med smidig dataintegrering med Marketo Engage. Denna anpassade åtgärd i Journey Optimizer har stöd för två viktiga datatyper:
 
@@ -42,7 +44,7 @@ Satsa på en resa med smidig dataintegrering med Marketo Engage. Denna anpassade
 
 ![](assets/engage-customaction-payload.png){width="70%" align="left"}
 
-* Inspect och konfigurera nyttolastvärden
+* Inspektera och konfigurera nyttolastvärden
 Obs! Om du vill skicka värden dynamiskt ändrar du **Konstant** till **Variabel** för varje fält.
 
 ![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}

@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: kampanj, acc, integration
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: cc4ea97f858a212b82ac3b77328e61f59e3bfc27
+source-git-commit: ffce95a074c5827b637d081ad23f4cd3754515fe
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 0%
 >title="Adobe Campaign v7/v8-åtgärder"
 >abstract="Den här integreringen är tillgänglig för Adobe Campaign v7 och v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner. Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten."
 
+Det finns en specifik anpassad åtgärd att utföra på dina resor för att integrera Adobe Journey Optimizer och Adobe Campaign v7/v8.
+
 Den här integreringen är tillgänglig för Adobe Campaign v7/v8 från och med version 7.1 och Adobe Campaign v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
 
 Ett slutanvändarfall visas i det här [avsnittet](../building-journeys/ajo-ac.md).
@@ -31,7 +33,7 @@ För varje konfigurerad åtgärd finns en åtgärdsaktivitet tillgänglig på pa
 
 ## Åtkomst {#access}
 
-Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten om det skulle behövas. Om du inte har begärt anslutningen vid etableringstidpunkten kontaktar du Adobe Journey Optimizer support och lämnar följande information för att begära aktiveringen:
+Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten, om så krävs. Om du inte har begärt anslutningen vid etableringstidpunkten kontaktar du Adobe Journey Optimizer support och lämnar följande information för att begära aktiveringen:
 
 Från Adobe Journey Optimizer:
 
@@ -46,7 +48,7 @@ Från Adobe Campaign:
 
 ## Viktiga anteckningar {#important-notes}
 
-* Det finns ingen begränsning för meddelanden. Systemet begränsar antalet meddelanden som kan skickas till 4 000 per 5 minuter, baserat på aktuellt Campaign-SLA. Därför bör Journey Optimizer endast användas i enstaka fall (enskilda evenemang, inte målgrupper).
+* Det finns ingen begränsning för meddelanden. Systemet begränsar antalet meddelanden som kan skickas till 4 000 per 5 minuter, baserat på den aktuella Campaign SLA. Därför bör Journey Optimizer endast användas i enstaka fall (enskilda evenemang, inte målgrupper).
 
 * Du måste konfigurera en åtgärd på arbetsytan per mall som du vill använda. Du måste konfigurera en åtgärd i Journey Optimizer för varje mall som du vill använda från Adobe Campaign.
 
@@ -58,7 +60,7 @@ Från Adobe Campaign:
 
 ## Förhandskrav {#prerequisites}
 
-I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Se [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=sv-SE#transactional-messaging){target="_blank"}.
+I Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Mer information finns i [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html#transactional-messaging){target="_blank"}.
 
 Du kan skapa din JSON-nyttolast som motsvarar varje meddelande enligt mönstret nedan. Du klistrar sedan in nyttolasten när du konfigurerar åtgärden i Journey Optimizer (se nedan)
 

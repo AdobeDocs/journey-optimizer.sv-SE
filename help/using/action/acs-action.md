@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: kampanj, standard, integrering, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
-source-git-commit: 79bea396ba1ff482aaa4edcab1a31ca3847b3f52
+source-git-commit: ffce95a074c5827b637d081ad23f4cd3754515fe
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Integrera med Adobe Campaign Standard {#using_adobe_campaign_standard}
 
-Du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Standard Transactional Messaging-funktioner.
-
 Om du har Adobe Campaign Standard finns det en inbyggd åtgärd som tillåter anslutning till Adobe Campaign Standard.
+
+Du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Standard Transactional Messaging-funktioner.
 
 Campaign Standard transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Optimizer. Om händelsen publiceras men meddelandet inte visas, visas den inte i Journey Optimizer-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det, visas det i Journey Optimizer-gränssnittet, men det går inte att använda det.
 
