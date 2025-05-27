@@ -9,23 +9,23 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: marknadsföring, marknadsföra, engagera integreringen
 exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
-source-git-commit: ffce95a074c5827b637d081ad23f4cd3754515fe
+source-git-commit: a5ee7c668b51a761266b50216047caf48496f678
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
 
 # Integrera med Marketo Engage {#integrating-with-marketo-engage}
 
-Det finns en specifik anpassad åtgärd att utföra på resor för att integrera Adobe Journey Optimizer och Marketo Engage.
+Satsa på en resa med smidig dataintegrering med Marketo Engage. Det finns en specifik anpassad åtgärd att utföra på resor för att integrera Adobe Journey Optimizer och Marketo Engage. Den här anpassade åtgärden stöder inmatning av två viktiga datatyper:
 
-Satsa på en resa med smidig dataintegrering med Marketo Engage. Denna anpassade åtgärd i Journey Optimizer har stöd för två viktiga datatyper:
-
-* Personer (profiler): Marketo omvandlar profiler till åtgärdbara insikter.
-* Anpassade objekt: Skräddarsy data med anpassade objekt, som produkter, för en personaliserad marknadsföring.
+* **Personer** (profiler): Marketo omvandlar profiler till åtgärdbara insikter.
+* **Anpassade objekt**: Skräddarsy data med anpassade objekt, till exempel produkter, för en anpassad marknadsföring.
 
 ## Förhandskrav {#prerequisites}
+
+Följande krav gäller för den här integreringen:
 
 * Kundinstansen av Marketo Engage måste vara IMS-aktiverad.
 * Marketo Engage-instansen och Adobe Experience Platform/Journey Optimizer-instansen måste finnas i samma organisation.
@@ -33,26 +33,28 @@ Satsa på en resa med smidig dataintegrering med Marketo Engage. Denna anpassade
 
 ## Konfigurera åtgärden {#configure-marketo-action}
 
-* Navigera till Administration > Konfigurationer > Åtgärder och klicka på Hantera
-* Klicka på Skapa åtgärd i listan Åtgärder. Läs mer om [Anpassade åtgärder](../building-journeys/using-custom-actions.md){target="_blank"}.
-* Ange namn, beskrivning och välj Adobe Marketo Engage som åtgärdstyp
+
+I Journey Optimizer måste du konfigurera en anpassad åtgärd för Marketo Engage. Följ de här stegen:
+
+1. Välj **[!UICONTROL Configurations]** i ADMINISTRATION-menyavsnittet.
+1. Klicka på **[!UICONTROL Create Action]** i avsnittet **[!UICONTROL Actions]**. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
+1. Ange namn, beskrivning och välj **Adobe Marketo Engage** som **åtgärdstyp**
 
 ![](assets/engage-customaction-creation.png){width="40%" align="left"}
 
-* Klicka på Redigera nyttolast för dina **Request**- och **Response**-nyttolaster.
-* För båda delarna skapar du din nyttolast och klistrar in den i det dedikerade popup-fönstret.
+1. Klicka på ikonen **Redigera nyttolast** för dina **Request**- och **Response**-nyttolaster.
+1. För båda delarna skapar du din nyttolast och klistrar in den i det dedikerade popup-fönstret.
 
 ![](assets/engage-customaction-payload.png){width="70%" align="left"}
 
-* Inspektera och konfigurera nyttolastvärden
+1. Inspektera och konfigurera nyttolastvärden
 Obs! Om du vill skicka värden dynamiskt ändrar du **Konstant** till **Variabel** för varje fält.
 
 ![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}
 
-* Klicka på **Spara** i fönstret Fältkonfiguration och sedan på **Spara** för din anpassade åtgärd.
+1. Klicka på **Spara** på konfigurationsskärmen för fält och **Spara** din anpassade åtgärd.
 
-Nu kan du använda din anpassade åtgärd på din dedikerade arbetsyta.
-
+Nu kan du använda din anpassade åtgärd på arbetsytan på resan.
 
 ## Betalningssyntax {#payload-syntax}
 
@@ -109,9 +111,16 @@ Nu kan du använda din anpassade åtgärd på din dedikerade arbetsyta.
 ```
 
 
-## Använda åtgärden {#engage-using}
+## Använda funktionsmakrot {#engage-using}
 
-* Dra den anpassade åtgärden till arbetsytan på resan.
-* I avsnittet **Begäranparametrar** klickar du på Redigera för var och en av parametrarna med dynamiska värden som du har konfigurerat i nyttolasten.
+För varje konfigurerad åtgärd finns en Marketo Engage-åtgärd tillgänglig på paletten Resursdesigner.
+
+Så här använder du den:
+
+1. Dra den anpassade åtgärden till arbetsytan på resan.
+
+1. Ange etiketten och beskrivningen för den här åtgärden.
+
+1. I avsnittet **Begäranparametrar** klickar du på ikonen **Redigera** för var och en av parametrarna och anger de dynamiska värden som du har konfigurerat i nyttolasten.
 
 ![](assets/engage-use-canvas.png){width="70%" align="left"}
