@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: marknadsföring, marknadsföra, engagera integreringen
 exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
-source-git-commit: a5ee7c668b51a761266b50216047caf48496f678
+source-git-commit: d92c280e40419d2e3ec62a7ba85cd492a0867fde
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -27,8 +27,8 @@ Satsa på en resa med smidig dataintegrering med Marketo Engage. Det finns en sp
 
 Följande krav gäller för den här integreringen:
 
-* Kundinstansen av Marketo Engage måste vara IMS-aktiverad.
-* Marketo Engage-instansen och Adobe Experience Platform/Journey Optimizer-instansen måste finnas i samma organisation.
+* Kundinstansen av Marketo Engage måste vara IMS-aktiverad
+* Marketo Engage-instans och Adobe Experience Platform/Journey Optimizer-instans måste finnas i samma organisation
 * Kunden måste etableras med **MktoSync: åtkomst till matningstjänsten**
 
 ## Konfigurera åtgärden {#configure-marketo-action}

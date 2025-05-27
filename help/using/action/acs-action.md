@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: kampanj, standard, integrering, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
-source-git-commit: a5ee7c668b51a761266b50216047caf48496f678
+source-git-commit: d92c280e40419d2e3ec62a7ba85cd492a0867fde
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -22,19 +22,21 @@ Om du har Adobe Campaign Standard finns det en inbyggd åtgärd som tillåter an
 
 Campaign Standard transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Optimizer. Om händelsen publiceras men meddelandet inte visas, visas den inte i Journey Optimizer-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det, visas det i Journey Optimizer-gränssnittet, men det går inte att använda det.
 
-## Viktiga anteckningar {#important-notes}
+## Skyddsritningar och begränsningar {#important-notes}
 
-* En begränsning på 4 000 anrop per 5 minuter definieras automatiskt för Adobe Campaign Standard-åtgärder. Detta motsvarar den officiella skalan för Adobe Campaign Standard Transactional Messaging. Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html){target="_blank"}.
+* En begränsning på 4 000 anrop per 5 minuter definieras automatiskt för Adobe Campaign Standard-åtgärder. Läs mer om SLA för transaktionsmeddelanden i [Adobe Campaign Standard produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html){target="_blank"}.
 
 * Integreringen med Adobe Campaign Standard görs via en särskild inbyggd åtgärd i åtgärdslistan. Detta måste konfigureras för varje sandlåda.
 
 * Du kan inte använda en Campaign Standard-åtgärd med en publikkvalificering eller en målgruppsaktivitet.
 
-* En resa kan inte använda både meddelanden och Campaign Standard åtgärder.
+* En resa kan inte använda både [inbyggda kanalåtgärder](../building-journeys/journeys-message.md) och [Campaign Standard-åtgärder](../building-journeys/using-adobe-campaign-standard.md).
 
 ## Konfigurera åtgärden {#configure-action}
 
-I Journey Optimizer måste du konfigurera en åtgärd per transaktionsmeddelande. Följ de här stegen:
+I Journey Optimizer måste du konfigurera en åtgärd per transaktionsmeddelande.
+
+Så här konfigurerar du en Campaign Standard-åtgärd:
 
 1. Välj **[!UICONTROL Configurations]** i ADMINISTRATION-menyavsnittet.
 
