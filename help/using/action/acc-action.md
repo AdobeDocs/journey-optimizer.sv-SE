@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: kampanj, acc, integration
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: a5ee7c668b51a761266b50216047caf48496f678
+source-git-commit: bf4044bc23b0e7c0ef74e5b612d93cb45ec20242
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
@@ -36,12 +36,15 @@ På begäran konfigureras anslutningen mellan Journey Optimizer- och Adobe Campa
 >[!TAB För Adobe Journey Optimizer]
 
 * Organisations-ID (Adobe OrgID)
+
 * Namn på sandlåda
 
 >[!TAB För Adobe Campaign]
 
 * URL för kampanjserver
+
 * URL för realtidsserver
+
 * Campaign-version
 
 >[!ENDTABS]
@@ -61,7 +64,7 @@ På begäran konfigureras anslutningen mellan Journey Optimizer- och Adobe Campa
 
 ## Förhandskrav {#prerequisites}
 
-I Adobe Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Mer information finns i [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"}.
+I Adobe Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Mer information finns i [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"}.
 
 Du kan skapa din JSON-nyttolast som motsvarar varje meddelande enligt mönstret nedan. Du klistrar sedan in denna nyttolast när du konfigurerar åtgärden i Journey Optimizer (se nedan).
 
