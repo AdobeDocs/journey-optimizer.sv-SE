@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
-source-git-commit: 8538018f5c30b0c3c9c1df5726276c2e87e64149
+source-git-commit: 7098a643c8026ed00f83a66fd45f957c2403a569
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journey Optimizer kan du nu smidigt införliva dina AEM Content Fragments i ditt Journey Optimizer-innehåll. Denna smidiga anslutning förenklar processen att komma åt och utnyttja AEM-innehåll, vilket gör det möjligt att skapa personaliserade och dynamiska kampanjer och resor.
 
-Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview){target="_blank"} i Experience Manager-dokumentationen.
+Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} i Experience Manager-dokumentationen.
 
 >[!AVAILABILITY]
 >
@@ -31,6 +31,8 @@ Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment]
 * För flerspråkigt innehåll stöds endast det manuella flödet.
 
 * Variationer stöds för närvarande inte.
+
+* Korrektur för publicerade kampanjer och resor visar data från den senaste utgåvan av Experience Manager Content fragment.
 
 ## Skapa och tilldela en tagg i Experience Manager
 
@@ -48,9 +50,9 @@ Innan du använder ditt Content-fragment i Journey Optimizer måste du skapa en 
 
 1. Klicka på **Skapa**.
 
-1. Definiera innehållsfragmentmodellen så som beskrivs i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} och tilldela den nya Journey Optimizer-taggen.
+1. Definiera innehållsfragmentmodellen så som beskrivs i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} och tilldela den nya Journey Optimizer-taggen.
 
-Nu kan du börja skapa och konfigurera ditt innehållsfragment för senare användning i Journey Optimizer. Läs mer i [Experience Manager-dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
+Nu kan du börja skapa och konfigurera ditt innehållsfragment för senare användning i Journey Optimizer. Läs mer i [Experience Manager-dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
 
 ## Lägg till Experience Manager Content-fragment {#aem-add}
 
@@ -120,4 +122,4 @@ I det här fallet kontrollerar du att **_variableName_** har deklarerats innan d
 
 När du har utfört dina tester och validerat innehållet kan du [skicka din kampanj](../campaigns/review-activate-campaign.md) eller [publicera din resa](../building-journeys/publishing-the-journey.md) till din målgrupp.
 
-Med Adobe Experience Manager kan ni identifiera de Journey Optimizer-kampanjer eller resor där ett innehållsfragment används.
+Med Adobe Experience Manager kan ni identifiera de Journey Optimizer-kampanjer eller resor där ett innehållsfragment används. Läs mer i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references).
