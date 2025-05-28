@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 0a7c1ebf01a0aec9f84e86b14df14bbfcd24a7b4
+source-git-commit: 29d12b6190f49e7f3f6fd2760e522a5a62c0de87
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 1%
+source-wordcount: '842'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ Dessutom kan ni duplicera live-kampanjer (som körs en gång eller med en återk
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_view"
->title="Vyer för tabeller och tidslinje för CAmpaigns"
->abstract="Kampanjtabell- och tidslinjevyer"
+>title="Kampanjlista och kalendervyer"
+>abstract="Förutom kampanjlistan innehåller [!DNL Journey Optimizer] en kalendervy över dina kampanjer, som ger en tydlig visuell representation av deras scheman. Du kan när som helst växla mellan list- och kalendervyer med dessa knappar."
 
 Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**.
 
@@ -35,7 +35,35 @@ Som standard visas alla kampanjer med statusvärdena **[!UICONTROL Draft]**, **[
 
 ![](assets/create-campaign-list.png)
 
-Dessutom kan du filtrera listan baserat på kampanjtyp och kanal, eller de taggar som har tilldelats kampanjerna när de skapas. [Lär dig hur du tilldelar taggar till en kampanj](create-campaign.md#create)
+Du kan också filtrera listan baserat på kampanjtyp och kanal, eller de taggar som har tilldelats kampanjerna när de skapas. [Lär dig hur du tilldelar taggar till en kampanj](create-campaign.md#create)
+
+## Kampanjkalender {#calendar}
+
+Förutom kampanjlistan innehåller [!DNL Journey Optimizer] en kalendervy över dina kampanjer, som ger en tydlig visuell representation av deras scheman.
+
+>[!AVAILABILITY]
+>
+>Kalendervyn är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Använd [det här formuläret](https://forms.cloud.microsoft/r/FC49afuJVi){target=”_blank”} om du vill begära åtkomst.
+>
+>Den här funktionen är under aktiv utveckling. Vi välkomnar dina indata och begäranden med knappen **[!UICONTROL Beta Feedback]** på den övre menyn.
+
+I kalendern visas alla kampanjer som är schemalagda för den aktuella veckan. Använd pilknapparna ovanför kalendern för att navigera mellan veckor.
+
+![kalendervy som visar aktiva kampanjer](assets/campaigns-timeline.png)
+
+Hur kampanjer presenteras:
+
+* Som standard visar kalenderrutnätet alla aktiva och schemalagda kampanjer för den valda veckan. Ytterligare filteralternativ kan visa slutförda, stoppade och avslutade aktiveringar eller aktiveringar av en viss typ eller kanal.
+* Utkastkampanjer visas inte.
+* Kampanjer som sträcker sig över flera dagar visas högst upp i kalenderrutnätet.
+* Om ingen starttid anges används den närmaste manuella aktiveringstiden för att placera den i kalendern.
+* Kampanjer visas som 1-timmars tidsintervall, men detta återspeglar inte den faktiska tiden för sändning eller slutförande.
+
+Om du vill ha mer information om en kampanj klickar du på det synliga blocket för att öppna detaljer om den.
+
+Om du vill visa information om en viss kampanj väljer du den i listan. En informationsruta öppnas med olika information om kampanjen, t.ex. typ, åtkomst till rapporter eller taggar som har tilldelats.
+
+![kampanjlista med informationsrutan öppnad](assets/campaign-rail.png)
 
 ## Kampanjstatus och larm {#statuses}
 
