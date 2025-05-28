@@ -3,9 +3,9 @@ title: Kompletterande identifiering vid händelseutlösta resor
 description: Lär dig hur du använder tilläggsidentifierare i händelseutlösta resor.
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
-source-git-commit: 3ed75f1193b1a580183d8ee148792ec136d281cd
+source-git-commit: e7f4959ceaa238e39858196b08d739053b21835c
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -164,11 +164,11 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
 
 ### **Prenumerationshantering**
 
-* **Scenario**: En prenumerationstjänst skickar skräddarsydda meddelanden för varje prenumeration som är knuten till en kundprofil.
+* **Scenario**: En prenumerationstjänst skickar anpassade meddelanden för varje prenumeration när en händelse aktiveras för den prenumerationen.
 * **Körning**:
    * Profil: Jane.
-   * Ytterligare ID: `"Luma Yoga Program ", "Luma Fitness PlPrograman"`.
-   * Resan körs separat för varje prenumeration, med anpassade förnyelseerbjudanden.
+   * Ytterligare ID: `"Luma Yoga Program ", "Luma Fitness Program"`.
+   * Varje händelse innehåller ett prenumerations-ID och information om den prenumerationen. Resan körs separat för varje händelse/prenumeration, vilket ger personliga förnyelseerbjudanden per prenumeration.
 
 ### **Produktrekommendationer**
 
