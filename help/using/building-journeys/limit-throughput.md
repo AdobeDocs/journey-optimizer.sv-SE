@@ -8,7 +8,7 @@ role: Developer, Data Engineer
 level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: 60cb5e1ba2b5c8cfd0a306a589c85761be1cf657
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Detta kan göras med:
 >
 >Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [avsnittet](../action/action-response.md)
 
-Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5 000 instanser/sekund för enastående resor och upp till 2 000 instanser/sekund för målgruppsinlösta.
+Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5 000 instanser/sekund för enstaka resor och upp till 20 000 instanser/sekund för målgruppsinlösta.
 
 För anpassade åtgärder finns begränsningsfunktioner på produktnivå. Se den här [sidan](../configuration/external-systems.md#capping).
 

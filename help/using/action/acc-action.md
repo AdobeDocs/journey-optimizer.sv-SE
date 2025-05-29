@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: kampanj, acc, integration
 exl-id: 109ba212-f04b-425f-9447-708c8e0b3f51
-source-git-commit: 14a10c742ab40c5e3bdb545f595d28e25b535fdc
+source-git-commit: 60cb5e1ba2b5c8cfd0a306a589c85761be1cf657
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -61,11 +61,11 @@ På begäran konfigureras anslutningen mellan Journey Optimizer- och Adobe Campa
 
 ## Förhandskrav {#prerequisites}
 
-I Adobe Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Mer information finns i [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"}.
+I Adobe Campaign måste du skapa och publicera ett transaktionsmeddelande och tillhörande händelse. Mer information finns i [Adobe Campaign-dokumentationen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"}.
 
 Du kan skapa din JSON-nyttolast som motsvarar varje meddelande enligt mönstret nedan. Du klistrar sedan in denna nyttolast när du konfigurerar åtgärden i Journey Optimizer (se nedan).
 
-Här är ett exempel:
++++ Exempel
 
 ```json
 {
@@ -82,15 +82,19 @@ Här är ett exempel:
 * **eventType**: det interna namnet på Campaign-händelsen
 * **ctx**: variabel baserad på den personalisering du har i meddelandet
 
++++
+
 ## Konfigurera åtgärden {#configure-action}
 
-I Journey Optimizer måste du konfigurera en åtgärd per transaktionsmeddelande. Följ de här stegen:
+I Journey Optimizer måste du konfigurera en åtgärd per transaktionsmeddelande.
 
-1. Skapa en ny åtgärd. [Läs mer om anpassade åtgärder](../action/action.md).
+Så här skapar du en Campaign-åtgärd:
+
+1. Skapa en ny åtgärd. [Lär dig skapa anpassade åtgärder](../action/action.md).
 1. Ange namn och beskrivning.
 1. I fältet **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
+   ![](assets/accintegration1.png)
 1. Klicka i fältet **Nyttolast** och klistra in ett exempel på JSON-nyttolasten som motsvarar Campaign-meddelandet. Kontakta Adobe för att få denna nyttolast.
-1. Justera de olika fälten så att de blir statiska eller variabla beroende på om du vill mappa dem på arbetsytan på resan. Vissa fält, till exempel kanalparametrar för e-postadresser och anpassningsfält (ctx), kan behöva definieras som variabler för mappning i samband med resan.
+1. Ange att varje fält ska vara statiskt eller variabelt baserat på om du vill att det ska mappas på arbetsytan på resan. Till exempel ska fält som e-postkanalsparametrar och anpassningsfält (`ctx`) vanligtvis anges som variabler så att de kan anpassas dynamiskt under resan.
 1. Klicka på **Spara**.
 
-![](assets/accintegration1.png)

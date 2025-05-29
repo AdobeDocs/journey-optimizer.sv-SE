@@ -8,7 +8,7 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
-source-git-commit: 9f801b1fdcab38bffff851675eca5e2fb61dfbf9
+source-git-commit: 60cb5e1ba2b5c8cfd0a306a589c85761be1cf657
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 48%
@@ -101,7 +101,7 @@ När en konfiguration skapas eller uppdateras validerar processen den angivna ko
 Följande fel kan uppstå när du skapar, raderar eller distribuerar en begränsningskonfiguration:
 
 * **ERR_THROTTLING_CONFIG_100**: begränsningskonfiguration: `<mandatory attribute>` obligatoriskt
-* **ERR_THROTTLING_CONFIG_101**: begränsningskonfiguration: maxThroughput krävs och måste vara större än eller lika med 200 och mindre än eller lika med 5 000
+* **ERR_THROTTLING_CONFIG_101**: begränsningskonfiguration: maxThroughput krävs och måste vara större än eller lika med 200 och mindre än eller lika med 5 000
 * **ERR_THROTTLING_CONFIG_104**: begränsningskonfiguration: felformat URL-mönster
 * **ERR_THROTTLING_CONFIG_105**: begränsningskonfiguration: jokertecken tillåts inte i värddelen av URL-mönstret
 * **ERR_THROTTLING_CONFIG_106**: begränsningskonfiguration: ogiltig nyttolast

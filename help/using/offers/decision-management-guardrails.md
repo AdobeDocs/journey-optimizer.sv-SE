@@ -5,7 +5,7 @@ feature: Decisioning
 role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 60cb5e1ba2b5c8cfd0a306a589c85761be1cf657
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 6%
@@ -25,8 +25,8 @@ Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrni
 | Guardrail | Gräns |
 | ------- | ------- |
 | API-begäranden för beslut per sekund | 500 |
-| Edge Decisioning API-begäranden per sekund med Edge Segmentering | 1500 |
-| Edge Decisionering API-begäranden per sekund utan Edge-segmentering | 5000 |
+| Edge Decisioning API-begäranden per sekund med Edge Segmentering | 1 500 |
+| Edge Decisionering API-begäranden per sekund utan Edge-segmentering | 5 000 |
 | Returnerade erbjudanden per svar | Upp till 30 per beslutsomfattning eller totalt 100 |
 | Maximalt antal regler för erbjudanden per förfrågan | 100 |
 
@@ -51,7 +51,7 @@ Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrni
 | Guardrail | Gräns |
 | ------- | ------- |
 | Samlingskvalificerare per erbjudande eller samling | 20 |
-| Totalt antal samlingskvalificerare | 1000 |
+| Totalt antal samlingskvalificerare | 1 000 |
 
 ## Erbjudanden
 
