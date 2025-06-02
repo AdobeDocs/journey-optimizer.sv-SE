@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
+source-git-commit: d3f15c09194a50b95107fb84d680606a468f8644
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '675'
 ht-degree: 2%
 
 ---
@@ -41,9 +41,13 @@ Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
 
 1. Ange **[!UICONTROL Label]** och **[!UICONTROL Description]** för meddelandet.
 
-1. Välj eller skapa den [kodbaserade upplevelsekonfigurationen](code-based-configuration.md) som ska användas.
+1. Välj eller skapa den kodbaserade upplevelsekonfiguration som ska användas. [Läs mer](code-based-configuration.md)
 
    ![](assets/code-based-activity-config.png)
+
+   >[!NOTE]
+   >
+   >När du har flera kodbaserade funktionsåtgärder som använder samma kanalkonfiguration, avgör resan **[!UICONTROL Priority score]** vad som levereras till slutanvändaren om de kvalificerar sig för mer än en åtgärd. [Läs mer om prioritetspoäng](../conflict-prioritization/priority-scores.md)
 
 1. Markera knappen **[!UICONTROL Edit content]** och redigera ditt innehåll efter behov med hjälp av anpassningsredigeraren. [Läs mer](#edit-code)
 
@@ -67,9 +71,13 @@ Följ stegen nedan för att börja skapa din **kodbaserade**-upplevelse via en k
 
 1. Välj åtgärden **[!UICONTROL Code-based experience]**.
 
-1. Välj eller skapa den kodbaserade upplevelsekonfigurationen. [Läs mer](code-based-configuration.md)
+1. Välj eller skapa den kodbaserade upplevelsekonfiguration som ska användas. [Läs mer](code-based-configuration.md)
 
    ![](assets/code-based-campaign-surface.png)
+
+   >[!NOTE]
+   >
+   >När du har flera kodbaserade funktionsåtgärder som använder samma kanalkonfiguration avgör kampanjens **[!UICONTROL Priority score]** vad som levereras till slutanvändaren om de kvalificerar sig för mer än en åtgärd. [Läs mer om prioritetspoäng](../conflict-prioritization/priority-scores.md)
 
 1. Redigera ditt innehåll med personaliseringsredigeraren. [Läs mer](#edit-code)
 
@@ -89,7 +97,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
 
 1. Välj **[!UICONTROL Edit code]** från reseaktiviteten eller kampanjversionen.
 
@@ -123,4 +131,4 @@ När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för de
 
 I videon nedan visas hur du skapar en kodbaserad upplevelsekampanj, konfigurerar dess egenskaper, testar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449457/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428868/?quality=12&learn=on)

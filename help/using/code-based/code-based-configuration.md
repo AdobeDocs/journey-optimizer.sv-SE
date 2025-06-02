@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: d3f15c09194a50b95107fb84d680606a468f8644
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1066'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 1%
 Innan du [skapar din upplevelse](create-code-based.md) måste du skapa en kodbaserad upplevelsekonfiguration där du anger var innehållet ska levereras och användas i programmet.
 
 En kodbaserad upplevelsekonfiguration måste referera till ytan, som i princip är den plats där du vill återge ändringarna. Enligt den valda plattformen måste du ange en plats/sökväg eller en URI för hela ytan. [Läs mer](code-based-surface.md)
+
+>[!NOTE]
+>
+>När du har flera kodbaserade upplevelseåtgärder som använder samma kanalkonfiguration (och därmed körs på samma yta) avgör kampanjen eller resan **[!UICONTROL Priority score]** vad som skickas till slutanvändaren om de kvalificerar sig för mer än en åtgärd. [Läs mer om prioritetspoäng](../conflict-prioritization/priority-scores.md)
 
 ## Skapa en kodbaserad upplevelsekonfiguration {#create-code-based-configuration}
 
@@ -156,7 +160,7 @@ Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsins
 
    >[!NOTE]
    >
-   >Om du stöter på problem när du förhandsgranskar upplevelsen kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
+   >Om du stöter på problem när du förhandsgranskar upplevelsen kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
 
 ### Andra plattformar {#other}
 

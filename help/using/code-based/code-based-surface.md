@@ -6,9 +6,9 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 07ec74fb-7fbc-48c6-a8fc-f58f24a60723
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: d3f15c09194a50b95107fb84d680606a468f8644
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 >id="ajo_admin_surface_uri"
 >title="Lägg till yt-URI för komponenten"
 >abstract="Om implementeringen inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er, anger du en yt-URI, som är en unik identifierare som dirigerar till enheten där du vill leverera upplevelsen. Se till att du anger en yt-URI som matchar den som används i din egen implementering."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/code-based-experience/configure-code-based-channel/code-based-configuration#other" text="Skapa en kodbaserad upplevelsekonfiguration för andra plattformar"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based-experience/configure-code-based-channel/code-based-configuration#other" text="Skapa en kodbaserad upplevelsekonfiguration för andra plattformar"
 
 En kodbaserad upplevelse **surface** är en entitet som är utformad för användar- eller systeminteraktion, unikt identifierad av en [URI](#surface-uri). Ytan anges i [programimplementeringen](code-based-prerequisites.md#implementation-prerequisites) och måste matcha ytan som refereras i din [kodbaserade upplevelsekanalskonfiguration](code-based-configuration.md).
 
@@ -32,6 +32,10 @@ En yta kan ses som en behållare på vilken hierarkinivå som helst med en entit
 * Den kan även omfatta specifika innehållsbehållare för icke-visning eller abstraherad visning (t.ex. JSON-blober som levereras till tjänster).
 
 * Det kan också vara en jokeryta som matchar en mängd olika klientytdefinitioner (en hjältebildsplats på varje sida på webbplatsen kan till exempel översättas i en yt-URI som web://mydomain.com/*#hero_image).
+
+>[!NOTE]
+>
+>När du har flera kodbaserade upplevelseåtgärder som körs på samma yta avgör kampanjen eller resan **[!UICONTROL Priority score]** vad som levereras till slutanvändaren om de kvalificerar sig för mer än en åtgärd. [Läs mer om prioritetspoäng](../conflict-prioritization/priority-scores.md)
 
 ## Ytidentifierare {#surface-uri}
 
@@ -72,8 +76,8 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 
 I [!DNL Journey Optimizer] har den kodbaserade upplevelsekanalen stöd för två typer av kundimplementeringar:
 
-* Baserat på [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} för dina webbplatser eller på [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} för dina mobilappar.
-* Server-side eller hybrid med [AEP Edge Network Server-API:er](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE){target="_blank"}.
+* Baserat på [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} för dina webbplatser eller på [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} för dina mobilappar.
+* Server-side eller hybrid med [AEP Edge Network Server-API:er](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"}.
 
 >[!NOTE]
 >
