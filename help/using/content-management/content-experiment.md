@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: c1dc65616219520a72416a62399f7c2dbca7ca77
+source-git-commit: 348a1c0bfaca1abe7fd5705b36879af30da18e54
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '1166'
 ht-degree: 1%
 
 ---
@@ -102,6 +102,8 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_13.png)
 
+1. Gör det möjligt för det automatiska skalningsförsöket att automatiskt ta fram den vinnande variationen av ditt experiment. [Läs mer om hur du kan skala vinnaren](#scale-winner)
+
 1. Klicka på **[!UICONTROL Create]** när konfigurationen är inställd.
 
 ## Utforma dina behandlingar {#treatment-experiment}
@@ -127,4 +129,80 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 1. När meddelandeinnehållet har definierats klickar du på knappen **[!UICONTROL Simulate content]** för att kontrollera återgivningen av leveransen och kontrollera personaliseringsinställningarna med testprofiler. [Läs mer](../content-management/preview-test.md)
 
 När du har konfigurerat dina experiment kan du följa resultatet av leveransen med din rapport. [Läs mer](../reports/campaign-global-report-cja-experimentation.md)
+
+## Skala vinnaren {#scale-winner}
+
+>[!AVAILABILITY]
+>
+>The Scale the Winner feature is supported for the following channel:
+>
+>* Inkommande kanaler (t.ex. webb, meddelande i appen, kodbaserad upplevelse) under alla resor och kampanjer.
+>* Utgående kanaler (t.ex. e-post, push-meddelanden, SMS) i API-utlösta transaktionskampanjer.
+
+Skala vinnaren så att ni automatiskt eller manuellt kan lansera den vinnande varianten av ett experiment till er fulla publik. Den här funktionen ser till att du när en vinnare väl har fastställts kan utöka dess räckvidd och effektivitet utan att hela tiden övervaka experimentet.
+
+Du kan välja mellan två lägen:
+
+* **Automatisk skalning**: Konfigurera inställningar för automatisk skalförändring när du skapar ditt experiment genom att välja tid och villkor för skalning av den vinnande behandlingen eller ett reservalternativ om ingen vinnare kommer.
+
+* **Manuell skalning**: Granska experimentresultat manuellt och initiera utrullningen av den vinnande behandlingen, med bibehållen fullständig kontroll över tid och beslut.
+
+
+### Automatisk skalning {#autoscaling}
+
+Med automatisk skalförändring kan du ange fördefinierade regler för när den vinnande behandlingen eller en reservbehandling ska börja, baserat på resultatet av experimentet.
+
+Observera att när automatisk skalförändring har inträffat är manuell skalförändring inte längre tillgängligt.
+
+Så här aktiverar du automatisk skalförändring i dina experiment:
+
+1. Ställ in kampanjen eller resan och konfigurera ditt experiment efter behov. [Läs mer](#configure-experiment)
+
+1. Aktivera alternativet för automatisk skalförändring när du ställer in ditt experiment.
+
+   ![](assets/scale-winner-1.png)
+
+1. Välj när vinnaren ska skalas:
+
+   * Så snart vinnaren hittas.
+   * Efter att experimentet är live för den valda tiden.
+
+     Tiden för automatisk skalförändring måste schemaläggas före experimentets slutdatum. Om det är inställt för en tid efter slutdatumet visas en valideringsvarning och kampanjen eller resan publiceras inte.
+
+   ![](assets/scale-winner-2.png)
+
+1. Välj reservbeteendet om ingen vinnare hittas efter skaltid:
+
+   * Fortsätt experimentera tills det är slut enligt schema.
+   * Skala den alternativa behandlingen efter en viss tid.
+
+När alla parametrar är uppfyllda skickas din vinnande eller alternativa behandling till din målgrupp.
+
+### Manuell skalning {#manual-scaling}
+
+Manuell skalförändring ger dig möjlighet att granska experimentresultat och bestämma när den vinnande behandlingen ska lanseras enligt ditt eget schema.
+
+Observera att om du skalförändrar vinnaren manuellt före den schemalagda tiden för automatisk skalförändring avbryts den automatiska skalförändringen.
+
+Så här skalar du vinnaren av dina experiment manuellt:
+
+1. Ställ in kampanjen eller resan och konfigurera ditt experiment efter behov. [Läs mer](#configure-experiment)
+
+1. Låt experimentet löpa tills en vinnare identifieras eller statistisk signifikans uppnås.
+
+1. Öppna din kampanjinstrumentpanel eller välj kanalaktivitet under din resa.
+
+   Granska resultaten på **[!UICONTROL Content Experiment]**-menyn för att identifiera den bästa behandlingen.
+
+   ![](assets/scale-winner-jo.png)
+
+1. Klicka på **[!UICONTROL Scale treatment]** om du vill skicka den vinnande behandlingen till resten av publiken.
+
+   ![](assets/scale-winner-campaign.png)
+
+1. Välj den behandling som du vill skala i listrutan och klicka på **[!UICONTROL Scale]**.
+
+   ![](assets/scale-winner-3.png)
+
+Observera att det kan ta upp till en timme innan behandlingen skalas. Du får ett meddelande när den manuella skalförändringsprocessen är klar.
 
