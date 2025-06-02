@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
-source-git-commit: 07704f99aff7d92e8db76755f6617345bac56590
+source-git-commit: 86b83f8b368a77ef96581c422f19f35d939e51f4
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,17 @@ Följ stegen nedan för att skapa en rankningsformel.
 
    ![](assets/create-formula.png){width="80%"}
 
-1. Du kan också klicka på **[!UICONTROL Select AI model]** för att ange den modell som ska användas som referens för att skapa din rankningsformel. Varje gång du refererar till en modellpoäng när du definierar formeln nedan används den AI-modell som du valde.
+1. Du kan också klicka på **[!UICONTROL Select AI model]** för att ange den modell som ska användas som referens för att skapa din rankningsformel.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >När du använder en AI-modell som ingår i en rankningsformel återspeglas inte data i rapporten [Konverteringsgrad för Holdout och Modellstyrd trafik](../reports/campaign-global-report-cja-code.md#conversion-rate).
+   >[Personaliserade optimeringsmodeller](../offers/ranking/personalized-optimization-model.md) som använder kontinuerliga mått stöds inte med formelverktyget för AI.
+
+Varje gång du refererar till en modellpoäng när du definierar formeln nedan används den AI-modell som du valde.
+
+    >[!CAUTION]
+    >
+    >När du använder en AI-modell som ingår i en rankningsformel, återspeglas inte data i rapporten [Konverteringsgrad för Holdout och Modellstyrd trafik](../reports/campaign-global-report-cja-code.md#conversion-rate).
 
 1. Definiera villkoren som avgör rangordningsgraden för de matchande beslutsobjekten. Du kan antingen
 
@@ -120,7 +126,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >
