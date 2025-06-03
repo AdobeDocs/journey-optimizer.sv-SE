@@ -5,12 +5,10 @@ feature: Code-based Experiences
 topic: Content Management
 role: Developer
 level: Experienced
-hide: true
-hidefromtoc: true
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
-source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
+source-git-commit: 57686b9684f9233c81bd46b67d12ec5f1e3544c5
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -28,15 +26,15 @@ När du testar [kodbaserad upplevelse](create-code-based.md) med beslut kan flag
 När du har publicerat kampanjen lägger du till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
 
     &quot;
-    &lbrace;
-    &quot;data&quot;: &lbrace;
-    &quot;__adobe&quot;: &lbrace;
-    &quot;ajo&quot;: &lbrace;
+    {
+    &quot;data&quot;: {
+    &quot;__adobe&quot;: {
+    &quot;ajo&quot;: {
     &quot;dryRun&quot;: true
-    &rbrace;
-    &rbrace;
-    &rbrace;
-    &rbrace;
+    }
+    }
+    }
+    }
     &quot;
 
 <!--
@@ -46,7 +44,7 @@ När du har publicerat kampanjen lägger du till flaggan `dryRun` i XDM-händels
 
 ## Borttagning av dubbletter av beslutsobjekt i kodbaserade implementeringar {#code-based-decisioning-deduplication}
 
-När du använder [beslutsprinciper](../experience-decisioning/create-decision.md) i dina kodbaserade upplevelser kan du lära dig hur du använder deduplicering för dina beslutsbegäranden i din klientimplementering.
+När du använder [beslutsprinciper](../experience-decisioning/create-decision.md) i dina kodbaserade upplevelser kan du tillämpa borttagning av dubbletter på dina beslutsbegäranden i din klientimplementering.
 
 Begäran om beslutsfattande (via Konduktor) ska godkänna dedupliceringsflaggan, som hanterar unika beslutsposter i en enda begäran som består av flera beslutspolicyer eller ersättningar.
 
