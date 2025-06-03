@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8b0310e91e5b5c1418e8e26f4505bda45146ceba
+source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2406'
 ht-degree: 20%
 
 ---
@@ -215,7 +215,10 @@ ht-degree: 20%
    + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
    + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
    + [Tilldela prioritetspoäng](using/conflict-prioritization/priority-scores.md)
-   + [Resebegränsning och skiljeförfarande](using/conflict-prioritization/journey-capping.md)
+Ange regler för capping av meddelanden och resor  {#capping-rules}
+      + [Arbeta med regeluppsättningar](using/conflict-prioritization/rule-sets.md)
+      + [Resebegränsning och skiljeförfarande](using/conflict-prioritization/journey-capping.md)
+      + [Frekvensbegränsning per kanal och kommunikationstyp](using/conflict-prioritization/channel-capping.md)
 + Testa och godkänn {#test}
    + Förhandsgranska och testa innehåll {#preview-test}
       + [Kom igång med förgranskning och test](using/content-management/preview-test.md)
@@ -703,7 +706,7 @@ ht-degree: 20%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
@@ -732,7 +735,6 @@ ht-degree: 20%
    + [Stöd för arkivering](using/configuration/archiving-support.md)
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera affärsregler](using/configuration/frequency-rules.md)
-   + [Arbeta med regeluppsättningar](using/configuration/rule-sets.md)
 + Resekonfiguration {#configure-journeys}
    + [Konfigurera datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
    + Händelsekonfiguration {#events-journeys}

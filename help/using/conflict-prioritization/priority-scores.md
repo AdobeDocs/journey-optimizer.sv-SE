@@ -3,12 +3,11 @@ title: Tilldela prioritetspoäng till resor och kampanjer
 description: Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer.
 role: User
 level: Beginner
-badge: label="Begränsad tillgänglighet"
 exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
-source-git-commit: b2446c6a243d6d95b6f695b9c7007e62c51d8fa3
+source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 2%
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
@@ -22,11 +21,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
 >title="Prioritet"
->abstract="Tilldela en prioritetspoäng till resan. Prioritet är viktigt för att prioritera en resa när det finns en begränsning, t.ex. ett frekvenstak. Ange ett numeriskt värde (från 0-100). Observera att ju högre tal desto högre prioritet."
-
->[!AVAILABILITY]
->
->Konflikter och prioriteringsfunktioner är för närvarande tillgängliga i begränsad tillgänglighet för en viss kundgrupp. Observera att dessa funktioner gradvis kommer att lanseras för fler användare i framtiden. Kontakta ditt kontoteam om du vill bli tillagd i väntelistan för dessa funktioner.
+>abstract="Tilldela en prioritetspoäng till resan. Prioritet är viktigt för att prioritera en resa när det finns en angiven begränsning, t.ex. en övre frekvensgräns. Ange ett numeriskt värde (från 0 till 100). Observera att ju högre tal desto högre prioritet."
 
 Med Journey Optimizer kan ni tilldela en prioritetspoäng till en resa eller kampanj. Prioritet är viktigt för att prioritera en resa, kampanj eller åtgärd när det finns en begränsning (t.ex. ett frekvenstak). I situationer där en kund är berättigad till många resor, kampanjer eller kommunikationer och du vill vara selektiv vad de ska delta i och ta emot, bör du använda det här fältet.
 
@@ -44,8 +39,8 @@ Om du vill tilldela en prioritetspoäng till en resa eller kampanj anger du ett 
 
 >[!IMPORTANT]
 >
->I situationer där två kampanjer har samma prioritetspoäng visas den kampanj som aktiverades först.
+>Om två resor eller kampanjer har samma prioritetspoäng har systemet ingen tidsbesparande funktion. Se till att prioritetspoängen är unika för att undvika konflikter.
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3445005?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)

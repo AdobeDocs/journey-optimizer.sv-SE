@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: b2446c6a243d6d95b6f695b9c7007e62c51d8fa3
+source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
 workflow-type: tm+mt
-source-wordcount: '1988'
+source-wordcount: '1904'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Läs mer om behörigheter i [det här avsnittet](../administration/high-low-perm
 
 När du använder regeluppsättningar för första gången från menyn **[!UICONTROL Administration]** > **[!UICONTROL Business rules]** skapas en standardregeluppsättning och är aktiv: **Global standardregeluppsättning**.
 
-Den här regeluppsättningen innehåller globala regler som du kan tillämpa för att styra hur ofta användare tar emot meddelanden i en eller flera kanaler, på samma sätt som nuvarande affärsregler fungerar. Alla regler som definieras i den här regeluppsättningen gäller för alla valda kanaler, oavsett om kommunikationen skickas från en resa eller en kampanj. [Lär dig arbeta med affärsregler](../configuration/rule-sets.md)
+Den här regeluppsättningen innehåller globala regler som du kan tillämpa för att styra hur ofta användare tar emot meddelanden i en eller flera kanaler, på samma sätt som nuvarande affärsregler fungerar. Alla regler som definieras i den här regeluppsättningen gäller för alla valda kanaler, oavsett om kommunikationen skickas från en resa eller en kampanj. [Lär dig arbeta med affärsregler](../conflict-prioritization/rule-sets.md)
 
 Utöver den här regeluppsättningen Global standardregeluppsättning kan du skapa **anpassade regeluppsättningar** som du kan tillämpa på alla kampanjer för att begränsa antalet meddelanden som skickas inom kampanjen. [Lär dig skapa anpassade regeluppsättningar](#create)
 
@@ -63,10 +63,6 @@ När du skapar en regeluppsättning måste du ange om reglerna i regeluppsättni
 
 * **Kanal**-domän: tillämpa regler för begränsning för kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag.
 * **Resa**-domän: Använd regler för start och begränsning av samtidighet på en resa. Ange till exempel inte profiler i mer än en resa samtidigt.
-
->[!AVAILABILITY]
->
->Domänregeluppsättningarna **Kanal** är tillgängliga för alla användare, men domänregeluppsättningarna **Resurs** är bara tillgängliga för en begränsad uppsättning användare (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 ## Skapa din första anpassade regeluppsättning {#create-rule-set}
 
@@ -87,10 +83,6 @@ Följ stegen nedan för att skapa en regeluppsättning.
 1. Välj regeluppsättningens domän. Domänen tillåter dig att ange om regeluppsättningen ska innehålla regler för appning som är specifika för kommunikationskanaler eller resor. [Läs mer om regler för att appa kanaler och resor](#domain)
 
    ![](assets/rule-sets-create.png)
-
-   >[!AVAILABILITY]
-   >
-   >Domänregeluppsättningarna **Kanal** är tillgängliga för alla användare, men domänregeluppsättningarna **Resurs** är bara tillgängliga för en begränsad uppsättning användare (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -140,21 +132,17 @@ Vilka parametrar som är tillgängliga för regeln beror på vilken regeluppsät
 
    ![](assets/rule-set-capping-duration.png)
 
-   >[!AVAILABILITY]
-   >
-   >Varaktigheten&quot;Daglig&quot; är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-
    Räknaren för varje period har följande förfallodatum:
 
    * **[!UICONTROL Monthly]**: Frekvensgränsen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
-   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:&lbrace;59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:{59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
 
    * **[!UICONTROL Daily]**: Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställs till 0 i början av nästa dag.
 
      >[!CAUTION]
      > 
-     >Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+     >Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
    Observera att profilräknarvärdet uppdateras när kommunikationen har skickats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt).
 
@@ -324,4 +312,4 @@ Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till res
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
