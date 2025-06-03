@@ -9,9 +9,9 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
-source-git-commit: 25d48a675f49bca6818841bb45ccf31671225e0e
+source-git-commit: 4945e2fb37b54683f56ca3b832553345486d0a80
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Du kan kopiera objekt som resor, anpassade åtgärder, innehållsmallar eller fragment över flera sandlådor med hjälp av funktioner för paketexport och -import. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
 
-Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=sv-SE).
+Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Journey Optimizer tillåter export av resor, anpassade åtgärder, innehållsmal
 
 ### Resor {#journeys}
 
-* När du exporterar en resa kopierar Journey Optimizer, förutom själva resan, även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [avsnittet](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=sv-SE#abobe-journey-optimizer-objects).
+* När du exporterar en resa kopierar Journey Optimizer, förutom själva resan, även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [avsnittet](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects).
 
 * Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll, till exempel innan du publicerar en resa. På så sätt kan du identifiera eventuella saknade objekt.
 
@@ -72,7 +72,7 @@ När du kopierar kampanjer måste du se till att objektet som listas nedan valid
 
 * **Kanalkonfigurationer**: Kanalkonfigurationer kopieras tillsammans med kampanjer. När kampanjer har kopierats måste kanalkonfigurationer väljas manuellt i målsandlådan.
 * **Experimentationsvarianter och inställningar**: Experimentella varianter och inställningar ingår i kampanjkopieringsprocessen. Validera dessa inställningar i målsandlådan efter importen.
-  <!--* **Unified decisioning**: Decision policies and decision items are supported for export and import. Ensure that decision-related dependencies are correctly mapped in the target sandbox.-->
+* **Enhetligt beslutsfattande**: Beslutsprinciper och beslutsobjekt stöds för export och import. Kontrollera att beslutsrelaterade beroenden mappas korrekt i målsandlådan.
 
 ### Innehållsmallar {#content-templates}
 
@@ -82,17 +82,17 @@ När du kopierar kampanjer måste du se till att objektet som listas nedan valid
 
 * Du bör exportera innehållsmallar i ett och samma paket för att undvika dubbletter. På så sätt kan systemet hantera borttagning av dubbletter effektivt.
 
-<!--### Decisioning {#decisioning}
+### Beslut {#decisioning}
 
-* The objects below must be present in the destination sandbox before copying Decisioning objects:
+* Objekten nedan måste finnas i målsandlådan innan du kopierar beslutsobjekt:
 
-   * Profile Attributes used across Decisioning objects,
-   * The field group of custom Offer Attributes,
-   * The schemas of Datastreams used for Context Attributes across Rules, Ranking or Capping.
+   * Profilattribut som används mellan beslutsobjekt,
+   * Fältgruppen med anpassade erbjudandeattribut,
+   * Scheman för datastreams som används för kontextattribut i regler, rankning eller appning.
 
-* Sandbox copy for ranking formulas with AI Models is currently not supported.
+* Sandlådekopiering för rankningsformler med AI-modeller stöds för närvarande inte.
 
-* When copying Decisioning entities, make sure you copy decision items **before** any other object. For example, if you copy a collection first, and there are no offers in the new sandbox, then that new collection will remain empty. -->
+* När du kopierar beslutsenheter måste du kopiera beslutsobjekt **före** andra objekt. Om du till exempel kopierar en samling först och det inte finns några erbjudanden i den nya sandlådan, kommer den nya samlingen att förbli tom.
 
 ### Fragment {#fragments}
 
