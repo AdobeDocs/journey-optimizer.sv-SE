@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
-source-git-commit: 948637433e1a90421ff8bab87f78f92b02354a89
+source-git-commit: 9618c46a8559631036d308bcc8defab77b88c052
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1198'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,10 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-### Viktiga anteckningar {#important-notes-segment-qualification}
+### Skyddsutkast och rekommendationer {#important-notes-segment-qualification}
+
+Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompetensresor. Se även [Bästa praxis för målgruppskvalifikation](#best-practices-segments).
+
 
 * Målgruppskompetensresor är främst utformade för att fungera med direktuppspelande målgrupper: kombinationen garanterar en bättre realtidsupplevelse. Vi rekommenderar att du bara använder **direktuppspelad publik** i aktiviteten Audience Qualification.
 
@@ -55,7 +58,11 @@ Den här typen av händelse kan placeras som det första steget eller senare und
 * När du använder en **målgruppskvalifikation**-aktivitet på en resa kan det ta upp till 10 minuter innan aktiviteten är aktiv och avlyssnar profiler som kommer in eller lämnar målgruppen.
 
 
-Se även [Bästa praxis för målgruppskvalifikation](#best-practices-segments) nedan.
+>[!CAUTION]
+>
+>[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även för Adobe Journey Optimizer.
+
+
 
 ### Konfigurera aktiviteten {#configure-segment-qualification}
 
@@ -85,7 +92,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
 
    >[!NOTE]
    >
-   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar de **Realiserade** och **Avslutade** målgruppsdeltagarstatusarna från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Observera att **[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar de **Realiserade** och **Avslutade** målgruppsdeltagarstatusarna från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan. Som standard är fältet förifyllt med det senast använda namnutrymmet.
 
@@ -127,7 +134,7 @@ När ni använder Audience Qualification för direktuppspelade målgrupper är r
 
 Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för att skicka händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md#open-and-send-event-guardrails)
 
-Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
+Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 ### Så här undviker du överbelastningar {#overloads-speed-segment-qualification}
 
@@ -147,4 +154,4 @@ Innan du använder målgruppen på en resa ska du alltid först utvärdera hur m
 
 Lär dig mer om tillämpliga användningsfall för målgruppskvalificeringsresor i den här videon. Lär dig hur du bygger en resa med målgruppskvalifikation och vilka bästa metoder som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446208?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: a7468879b36dfe9184471824b387f1638fae3d50
+source-git-commit: 9618c46a8559631036d308bcc8defab77b88c052
 workflow-type: tm+mt
-source-wordcount: '2490'
+source-wordcount: '2489'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,13 @@ ht-degree: 0%
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
-Du måste också känna till [Guardsändningar för kundprofildata i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} innan du startar.
+
+>[!CAUTION]
+>
+>[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även för Adobe Journey Optimizer.
+
 
 ## Webbläsare som stöds {#browsers}
 
@@ -62,7 +66,7 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] [webbkampanjer](../web/get-started-web.md) har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
-Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ### Kodbaserade kanalgarantier {#code-based-guardrails}
 
