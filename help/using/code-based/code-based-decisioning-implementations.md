@@ -26,15 +26,15 @@ När du testar [kodbaserad upplevelse](create-code-based.md) med beslut kan flag
 När du har publicerat kampanjen lägger du till flaggan `dryRun` i XDM-händelseblocket `data` i din klientimplementering:
 
     &quot;
-    {
-    &quot;data&quot;: {
-    &quot;__adobe&quot;: {
-    &quot;ajo&quot;: {
+    &lbrace;
+    &quot;data&quot;: &lbrace;
+    &quot;__adobe&quot;: &lbrace;
+    &quot;ajo&quot;: &lbrace;
     &quot;dryRun&quot;: true
-    }
-    }
-    }
-    }
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;
     &quot;
 
 <!--
