@@ -39,21 +39,21 @@ Här är de åtgärder du kan utföra med hjälp av målgruppernas anrikningsatt
 >
 >Om du vill använda anrikningsattribut från målgrupper som skapats med dispositionsarbetsflöden måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform.
 >
-+++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp>
+>+++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp>
 >
-1. Navigera till Administration > Konfiguration > Datakällor.
-1. Välj&quot;Experience Platform&quot; och skapa eller redigera en fältgrupp.
-1. Välj lämpligt schema i schemaväljaren. Schemats namn kommer att ha följande format: &#39;Schema for audiensId:&#39; + målgruppens ID. Du kan hitta målgruppens ID på skärmen med målgruppsinformation i målgruppslagret.
-1. Öppna fältväljaren, sök efter de anrikningsattribut som du vill lägga till och markera kryssrutan bredvid dem.
-1. Spara ändringarna.
-1. När anrikningsattributen har lagts till i en fältgrupp kan du använda dem i Journey Optimizer på de platser som listas ovan.
+>1. Navigera till Administration > Konfiguration > Datakällor.
+>1. Välj&quot;Experience Platform&quot; och skapa eller redigera en fältgrupp.
+>1. Välj lämpligt schema i schemaväljaren. Schemats namn kommer att ha följande format: &#39;Schema for audiensId:&#39; + målgruppens ID. Du kan hitta målgruppens ID på skärmen med målgruppsinformation i målgruppslagret.
+>1. Öppna fältväljaren, sök efter de anrikningsattribut som du vill lägga till och markera kryssrutan bredvid dem.
+>1. Spara ändringarna.
+>1. När anrikningsattributen har lagts till i en fältgrupp kan du använda dem i Journey Optimizer på de platser som listas ovan.
 >
-Detaljerad information om datakällor finns i följande avsnitt:
+>Detaljerad information om datakällor finns i följande avsnitt:
 >
-* [Arbeta med Adobe Experience Platform datakälla](../datasource/adobe-experience-platform-data-source.md)
-* [Konfigurera en datakälla](../datasource/configure-data-sources.md)
+>* [Arbeta med Adobe Experience Platform datakälla](../datasource/adobe-experience-platform-data-source.md)
+>* [Konfigurera en datakälla](../datasource/configure-data-sources.md)
 >
-+++
+>+++
 
 
 
