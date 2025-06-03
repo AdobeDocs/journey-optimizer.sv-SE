@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: inkommande åtgärder, felsökning, resa, felsökning, självhjälp, kontroll, fel
 exl-id: 5c56786f-da22-4558-b2ae-01f762175a7f
-source-git-commit: 339b9381d4949b4bb7446308490ed6e972130fb6
+source-git-commit: 3376b4336fa8bd2691b788995be94f153e9a44bb
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -26,25 +26,19 @@ Den här guiden innehåller en stegvis process för att felsöka problem som rö
 
 * A profile enters the inbound step, but the user does not receive the expected inbound content.
 * A user continues to receive inbound content even after the profile exits the journey.
-
-## Benefits {#benefits}
-
-- Faster issue resolution through self-help.
-- Reduced dependency on support teams.
-- Improved understanding of inbound action functionality.
-- Enhanced customer experience and confidence in using AJO.-->
+-->
 
 ## Förhandskrav {#prerequisites}
 
 Innan du kan starta felsökningen bör du kontrollera följande:
 
-1. Konfigurera en **Assurance**-session. Läs mer i [Adobe Experience Platform Assurance-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}.
+1. Konfigurera en **Assurance**-session. Läs mer i [Adobe Experience Platform Assurance-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}.
 
 1. Navigera till resan som innehåller den inkommande åtgärden för att hämta resenamnet och versions-ID:t.
 
    >[!NOTE]
    >
-   >ID för reseversion finns i URL:en efter *resa/* (till exempel: *86232fb1-2932-4036-8198-55dfec606fd7*).
+   >Resursversions-ID finns i URL:en efter &quot;resa/&quot; (till exempel: *86232fb1-2932-4036-8198-55dfec606fd7*).
 
    ![](assets/troubleshoot-inbound-retrieve-journey-id.png)
 
@@ -52,7 +46,7 @@ Innan du kan starta felsökningen bör du kontrollera följande:
 
    ![](assets/troubleshoot-inbound-retrieve-action-id.png)
 
-1. Hämta profilens namnutrymme och ID för att identifiera problem med profilen som påträffas. Beroende på din konfiguration kan namnutrymmet vara till exempel ECID, e-post eller kund-ID. Lär dig hur du söker efter en profil i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
+1. Hämta profilens namnutrymme och ID för att identifiera problem med profilen som påträffas. Beroende på din konfiguration kan namnutrymmet vara till exempel ECID, e-post eller kund-ID. Lär dig hur du söker efter en profil i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
 
 ## Scenario 1: Användaren har inte fått det inkommande innehållet {#scenario-1}
 
@@ -67,7 +61,7 @@ I det här scenariot har en profil påbörjat den inkommande åtgärden under re
 
 2. **&#39;joai&#39;-identitet har definierats i plattformsidentiteter**
 
-   Den inkommande åtgärden använder namnutrymmet **(**) i profilen `segmentMembership` för att aktivera profilen för det inkommande steget. Kontrollera att den har definierats i Plattformsidentiteter för sandlådan. Läs mer om [Experience Platform identitetstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home){target="_blank"}
+   Den inkommande åtgärden använder namnutrymmet **joai** i profilen `segmentMembership` för att aktivera profilen för det inkommande steget. Kontrollera att den har definierats i Plattformsidentiteter för sandlådan. Läs mer om [Experience Platform identitetstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home){target="_blank"}
 
 ### Felsökningssteg {#debugging-steps}
 
@@ -83,7 +77,7 @@ Börja med att kontrollera om enheten/klienten hämtar det förväntade innehål
 
 >[!TAB Kanal i appen]
 
-1. Gå till [Assurance](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}-sessionen och välj avsnittet **[!UICONTROL In-App Messaging]** i den vänstra panelen.
+1. Gå till [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}-sessionen och välj avsnittet **[!UICONTROL In-App Messaging]** i den vänstra panelen.
 
 1. Klicka på listrutan **[!UICONTROL Messages]** på fliken **[!UICONTROL Messages on Device]**.
 
@@ -91,29 +85,29 @@ Börja med att kontrollera om enheten/klienten hämtar det förväntade innehål
 
 1. Leta efter ett meddelande med resenamnet följt av &quot;- In-app message&quot;. Om det finns något betyder det att meddelandet i appen finns på enheten/klienten och problemet kan vara relaterat till utlösaren i appen.
 
-1. Om meddelandet inte hittas togs meddelandet inte emot av enheten/klienten. Gå till [nästa steg](#step-2) för ytterligare felsökning.
+1. Om meddelandet inte hittas togs meddelandet inte emot av enheten/klienten. <!--Go to the [next step](#step-2) for further debugging.-->
 
 >[!TAB Webbkanal]
 
-Gå till sidan och kontrollera nätverksfliken eller kontrollera Edge svarsnyttolast i avsnittet **[!UICONTROL Edge Delivery]** i [Assurance](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} -sessionen.
+Gå till sidan och kontrollera nätverksfliken eller kontrollera Edge svarsnyttolast i avsnittet **[!UICONTROL Edge Delivery]** i [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} -sessionen.
 
 >[!TAB Kodbaserad upplevelsekanal]
 
-Utför en begäran med [Adobe API](https://developer.adobe.com/data-collection-apis/docs/api/) och kontrollera Edge svarsnyttolast i avsnittet **[!UICONTROL Edge Delivery]** i [Assurance](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} -sessionen.
+Utför en begäran med [Adobe API](https://developer.adobe.com/data-collection-apis/docs/api/) och kontrollera Edge svarsnyttolast i avsnittet **[!UICONTROL Edge Delivery]** i [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} -sessionen.
 
 >[!ENDTABS]
 
-#### Steg 2: Kontrollera om Edge Network returnerar innehållet {#step-2}
+### Steg 2: Kontrollera om Edge Network returnerar innehållet {#step-2}
 
 Det här steget är att se till att Edge Network returnerar förväntat inkommande innehåll som ska återges på enheten/klienten.
 
 När en profil anger en inkommande åtgärd för en resa kvalificeras den automatiskt till ett särskilt målgruppssegment (i namnutrymmet **joai**) som motsvarar åtgärden för inkommande resa.
 
-När en klient skickar en begäran till Edge Network för en viss profil och yta kvalificerar sig profilen för att ta emot innehåll för åtgärder för inkommande trafik som riktas mot den ytan endast om profilen för närvarande är medlem i motsvarande **joai** -segment.
+När en klient skickar en begäran till Edge Network för en viss profil och yta kvalificerar sig profilen för att ta emot innehåll för åtgärder för inkommande trafik som riktas mot den ytan - endast om profilen för närvarande är medlem i motsvarande **joai** -segment.
 
 Följ stegen nedan för att felsöka Edge Network-beteendet.
 
-1. Öppna vyn **[!UICONTROL Edge Delivery]** i Assurance-sessionen. Den här vyn innehåller information om hur den inkommande åtgärden körs på Edge Network-servern. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
+1. Öppna vyn **[!UICONTROL Edge Delivery]** i Assurance-sessionen. Den här vyn innehåller information om hur den inkommande åtgärden körs på Edge Network-servern. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
 
 1. Kontrollera om den Edge-aktivitet som motsvarar den inkommande åtgärden visas i avsnitten **[!UICONTROL Qualified Activities]** eller **[!UICONTROL Unqualified Activities]**.
 
@@ -125,7 +119,7 @@ Följ stegen nedan för att felsöka Edge Network-beteendet.
 
    >[!NOTE]
    >
-   >Om du vill hitta din Edge-aktivitet i **Assurance** -sessionen söker du efter aktiviteten där **[!UICONTROL audienceNamespace]** är **joai** och **[!UICONTROL audienceSegmentId]** är `<JourneyVersionID>_<JourneyAction ID>` (till exempel: *86232fb1-2932-4036-8198-55dfec606fc d7_708f718d-8503-4427-ad8d-8e28979b554c*).
+   >Om du vill hitta din Edge-aktivitet i **Assurance** -sessionen söker du efter aktiviteten där **[!UICONTROL audienceNamespace]** är **joai** och **[!UICONTROL audienceSegmentId]** är &lt;*JourneyVersionID*>_&lt;*JourneyActionID*> (till exempel: *86232fb1-2932 -4036-8198-55dfec606fd7_708f718d-8503-4427-ad8d-8e28979b554c*).
 
    ![](assets/troubleshoot-inbound-edge-delivery-unqualified.png){width="70%"}
 
@@ -133,9 +127,9 @@ Följ stegen nedan för att felsöka Edge Network-beteendet.
 
    Du kan dubbelkontrollera om **joai** -segmentet finns i Edge Network-leveransserverns vy över profilen genom att öppna **segmentsMap** -elementet i profilavsnittet och leta efter om **joai** -segmentets ID finns.
 
-1. Om Edge Network-leveransservern inte kan se profilen som i det relevanta **joai**-segmentet går du till nästa steg.<!--use the Platform Profile viewer UI to check if the expected **joai** segment is in a realized state in the Edge profile. Learn more in the [Experience Platform Profile UI documentation](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide){target="_blank"}-->
+1. Om Edge Network-leveransservern inte kan se profilen som i det relevanta **joai**-segmentet går du till nästa steg.<!--use the Platform Profile viewer UI to check if the expected **joai** segment is in a realized state in the Edge profile. Learn more in the [Experience Platform Profile UI documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide){target="_blank"}-->
 
-#### Steg 3: Kontrollera om medlemskapet har spridits till Edge Network {#step-3}
+### Steg 3: Kontrollera om &quot;joai&quot;-publiken har spridit sig till Edge Network {#step-3}
 
 Det här steget är att verifiera att Edge-profilen uppdaterades korrekt när profilen angavs i den inkommande reseåtgärden och profilen kvalificerades i motsvarande **joai**-segment.
 
@@ -150,27 +144,26 @@ Följ stegen nedan för att kontrollera om **joai**-segmentet finns i Edge-profi
 1. Navigera till menyn **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** i den vänstra navigeringsrutan i [!DNL Journey Optimizer] och bläddra till profilen med namnutrymme och ID. Läs mer om [Kundprofiler i realtid](../audience/get-started-profiles.md)
 
 1. Välj fliken **[!UICONTROL Attributes]** och välj vyn **[!UICONTROL Edge]**.
-   <!--cannot see Hub/Edge wiews for the profile-->
 
 1. Klicka på **[!UICONTROL View JSON]** för att öppna JSON-vyn för profilen.
 
    ![](assets/troubleshoot-inbound-profile-view-json.png){width="80%"}
 
-1. Gå till attributet **[!UICONTROL segmentMembership]** och kontrollera om segment-ID:t `<JourneyVersionID>_<ActionID>` finns i namnutrymmet **joai** och om det är i statusen **[!UICONTROL realized]** <!--or existing?-->.
+1. Gå till attributet `segmentMembership` och kontrollera om segment-ID &lt;*JourneyVersionID>*_&lt;*JourneyActionID*> finns i namnutrymmet **joai** och om det är i **[!UICONTROL realized]** <!--or existing?-->status.
 
    ![](assets/troubleshoot-inbound-profile-json-realized.png){width="90%"}
 
-   * Om den finns betyder det att det **joai** -segment som motsvarar åtgärden för inkommande trafik spreds korrekt till Edge-profilen.
+   * Om det finns ett **joai**-segment som motsvarar åtgärden för inkommande resa spreds det korrekt till Edge-profilen.
 
    * Om den inte visas i vyn för Edge Network-leveransservern kan det bero på ett problem med hur leveransservern läser in Edge-profilen.
 
-1. Om segment-ID:t **joai** inte finns eller om det är i läget **[!UICONTROL exited]** betyder det att det inte har spridits till Edge (än).
+1. Om segment-ID:t **joai** inte finns eller är i läget **[!UICONTROL exited]** betyder det att det inte har spridits till Edge (än).
 
    Vänta 15 till 30 minuter tills `segmentMembership`-värdena sprids från hubben till Edge. Gå till nästa steg om du fortfarande inte är närvarande.
 
 <!--The next step is to check whether the audience segment is present in the profile on the Hub.-->
 
-#### Steg 4: Kontrollera om det finns ett medlemskap för joai-målgruppen i profilen på navet {#step-4}
+### Steg 4: Kontrollera om &quot;joai&quot;-målgruppsmedlemskapet finns i profilen på navet {#step-4}
 
 Det här steget är att verifiera att hubbprofilen uppdaterades korrekt när profilen angavs i åtgärden för inkommande resa och profilen kvalificerades i motsvarande **joai**-segment.
 
@@ -182,21 +175,21 @@ Följ stegen nedan för att kontrollera om **joai**-segmentet finns i navprofile
 
 1. Navigera till menyn **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** i den vänstra navigeringsrutan i [!DNL Journey Optimizer] och bläddra till profilen med namnutrymme och ID. Läs mer om [Kundprofiler i realtid](../audience/get-started-profiles.md)
 
-1. Välj fliken **[!UICONTROL Attributes]** och välj vyn **[!UICONTROL Hub]**. <!--cannot see Hub/Edge wiews for the profile-->
+1. Välj fliken **[!UICONTROL Attributes]** och välj vyn **[!UICONTROL Hub]**.
 
 1. Klicka på **[!UICONTROL View JSON]** för att öppna JSON-vyn för profilen.
 
-1. Gå till attributet **[!UICONTROL segmentMembership]** och kontrollera om segment-ID:t `<JourneyVersionID>_<ActionID>` finns i namnutrymmet **joai** och om det är i statusen **[!UICONTROL realized]** <!--or existing?-->.
+1. Gå till attributet **[!UICONTROL segmentMembership]** och kontrollera om segment-ID &lt;*JourneyVersionID>*_&lt;*JourneyActionID*> finns i namnutrymmet **joai** och om det är i **[!UICONTROL realized]** <!--or existing?-->status.
 
-   * Om det finns betyder det att det **joai**-segment som motsvarar åtgärden för inkommande resa är korrekt inkapslat i hubbprofilen.
+   * Om det finns något, kapslades det **joai**-segment som motsvarar åtgärden för inkommande resa korrekt i hubbprofilen.
 
    * Om den inte hittas i Edge-profilen efter minst 30 minuter kan det bero på ett problem med Edge projektionssystem.
 
-1. Om segment-ID:t **joai** inte finns eller om det är i läget **[!UICONTROL exited]** betyder det att profilen inte (ännu) har kvalificerats korrekt till det speciella **joai** -målgruppssegmentet vid inträde i motsvarande inkommande reseåtgärd.
+1. Om segment-ID:t **joai** inte finns eller är i läget **[!UICONTROL exited]** betyder det att profilen inte (ännu) kvalificerades korrekt i det speciella **joai** -målgruppssegmentet när den registreras i motsvarande inkommande reseåtgärd.
 
    Vänta 15 till 30 minuter tills `segmentMembership`-värdena har importerats till profilen på hubben. Gå till nästa steg om du fortfarande inte är närvarande.
 
-#### Steg 5: Om klienten/enheten fortfarande inte får det förväntade innehållet {#step-5}
+### Steg 5: Om klienten/enheten fortfarande inte får det förväntade innehållet {#step-5}
 
 Om du har gått igenom alla steg ovan och inte ser det förväntade beteendet efter att ha väntat i 30 till 60 minuter på att segmentmedlemskapet ska sprida sig till Edge Network kontaktar du Adobe kundtjänst eller din Adobe-representant.
 
@@ -210,37 +203,20 @@ Inkludera så mycket information du kan från felsökningsstegen, till exempel:
 * JSON-vyn av navprofilen,
 * osv.
 
-## Scenario 2: Användaren tar fortfarande emot inkommande innehåll även efter att profilen har avslutat resan {#scenario-2}
+## Scenario 2: Användaren tar fortfarande emot inkommande innehåll {#scenario-2}
 
-Det här scenariot är omvänt för [scenario 1](#scenario-1). När en profil avslutar en resa bör den inte längre kvalificera sig för målgruppssegmenten **joai** som motsvarar de inkommande åtgärderna under resan.
+Det här scenariot är omvänt för [scenario 1](#scenario-1): profilen har avslutat resan, men användaren tar fortfarande emot det inkommande innehållet.
+
+Men när en profil avslutar en resa bör den inte längre kvalificera sig för målgruppssegmenten **joai** som motsvarar de inkommande åtgärderna under resan.
 
 Gå igenom samma felsökningssteg som för [Scenario 1](#debugging-steps) för att kontrollera om hubbprofilen, Edge-profilen och Edge Network leveransserver korrekt återspeglar segmentmedlemskapsstatusen för det relevanta **joai**-segmentet och om klienten inte längre tar emot det inkommande innehållet.
 
 <!--
-## Additional Notes {#additional-notes}
-
-- **Propagation Time:** Segment membership updates can take up to 15-30 minutes to propagate from the Hub to the Edge Network.
-- **Support:** If issues persist after following the steps, open a support ticket with details such as:
-  - Journey Version ID and Journey Action ID.
-  - Assurance trace.
-  - JSON views of Edge and Hub profiles.
-  - Debugging observations.
 
 ## Reference Section {#reference-section}
 
-- [Assurance Setup Guide](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance)
+- [Assurance Setup Guide](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance)
 - [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/home.html)
-- [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE)
+- [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html)
 
-## Warnings and Notes {#warnings-and-notes}
-
-> **Warning:** Ensure the `joai` namespace is correctly configured in Platform Identities. Misconfiguration can lead to qualification issues for inbound actions.
-
-> **Note:** Segment membership updates may take up to 30 minutes to propagate. Plan debugging sessions accordingly.
-
-## Cross-References {#cross-references}
-
-- [Testing the Journey](../building-journeys/testing-the-journey.md)
-- [Using the Journey Designer](../building-journeys/using-the-journey-designer.md#paths)
-- [Troubleshooting Custom Actions](../action/troubleshoot-custom-action.md)
 -->
