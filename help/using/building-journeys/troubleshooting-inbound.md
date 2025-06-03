@@ -8,13 +8,13 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: inkommande åtgärder, felsökning, resa, felsökning, självhjälp, kontroll, fel
-source-git-commit: 344cfd108b44a1b34408423418f45f125474bbe5
+exl-id: 5c56786f-da22-4558-b2ae-01f762175a7f
+source-git-commit: 339b9381d4949b4bb7446308490ed6e972130fb6
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
-
 
 # Felsöka inkommande åtgärder under resor {#troubleshooting-inbound-actions}
 
@@ -38,7 +38,7 @@ Den här guiden innehåller en stegvis process för att felsöka problem som rö
 
 Innan du kan starta felsökningen bör du kontrollera följande:
 
-1. Konfigurera en **Assurance**-session. Läs mer i [Adobe Experience Platform Assurance-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}.
+1. Konfigurera en **Assurance**-session. Läs mer i [Adobe Experience Platform Assurance-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}.
 
 1. Navigera till resan som innehåller den inkommande åtgärden för att hämta resenamnet och versions-ID:t.
 
@@ -52,7 +52,7 @@ Innan du kan starta felsökningen bör du kontrollera följande:
 
    ![](assets/troubleshoot-inbound-retrieve-action-id.png)
 
-1. Hämta profilens namnutrymme och ID för att identifiera problem med profilen som påträffas. Beroende på din konfiguration kan namnutrymmet vara till exempel ECID, e-post eller kund-ID. Lär dig hur du söker efter en profil i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
+1. Hämta profilens namnutrymme och ID för att identifiera problem med profilen som påträffas. Beroende på din konfiguration kan namnutrymmet vara till exempel ECID, e-post eller kund-ID. Lär dig hur du söker efter en profil i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
 
 ## Scenario 1: Användaren har inte fått det inkommande innehållet {#scenario-1}
 
@@ -67,7 +67,7 @@ I det här scenariot har en profil påbörjat den inkommande åtgärden under re
 
 2. **&#39;joai&#39;-identitet har definierats i plattformsidentiteter**
 
-   Den inkommande åtgärden använder namnutrymmet **(**) i profilen `segmentMembership` för att aktivera profilen för det inkommande steget. Kontrollera att den har definierats i Plattformsidentiteter för sandlådan. Läs mer om [Experience Platform identitetstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home){target="_blank"}
+   Den inkommande åtgärden använder namnutrymmet **(**) i profilen `segmentMembership` för att aktivera profilen för det inkommande steget. Kontrollera att den har definierats i Plattformsidentiteter för sandlådan. Läs mer om [Experience Platform identitetstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home){target="_blank"}
 
 ### Felsökningssteg {#debugging-steps}
 
@@ -83,19 +83,23 @@ Börja med att kontrollera om enheten/klienten hämtar det förväntade innehål
 
 >[!TAB Kanal i appen]
 
-1. Gå till [Assurance](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}-sessionen och välj avsnittet **[!UICONTROL In-App Messaging]** i den vänstra panelen.
+1. Gå till [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}-sessionen och välj avsnittet **[!UICONTROL In-App Messaging]** i den vänstra panelen.
 
-1. Klicka på listrutan **[!UICONTROL Messages]** på fliken **[!UICONTROL Messages on Device]** och sök efter ett meddelande med resenamnet följt av meddelandet - i appen. Om det finns något betyder det att meddelandet i appen finns på enheten/klienten och problemet kan vara relaterat till utlösaren i appen.
+1. Klicka på listrutan **[!UICONTROL Messages]** på fliken **[!UICONTROL Messages on Device]**.
+
+   ![](assets/troubleshoot-inbound-assurance-in-app.png){width="80%"}
+
+1. Leta efter ett meddelande med resenamnet följt av &quot;- In-app message&quot;. Om det finns något betyder det att meddelandet i appen finns på enheten/klienten och problemet kan vara relaterat till utlösaren i appen.
 
 1. Om meddelandet inte hittas togs meddelandet inte emot av enheten/klienten. Gå till [nästa steg](#step-2) för ytterligare felsökning.
 
 >[!TAB Webbkanal]
 
-Gå till sidan och kontrollera nätverksfliken eller kontrollera Edge svarsnyttolast i avsnittet **[!UICONTROL Edge Delivery]** i [Assurance](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} -sessionen.
+Gå till sidan och kontrollera nätverksfliken eller kontrollera Edge svarsnyttolast i avsnittet **[!UICONTROL Edge Delivery]** i [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} -sessionen.
 
 >[!TAB Kodbaserad upplevelsekanal]
 
-Utför en begäran med [Adobe API](https://developer.adobe.com/data-collection-apis/docs/api/) och kontrollera Edge svarsnyttolast i avsnittet **[!UICONTROL Edge Delivery]** i [Assurance](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} -sessionen.
+Utför en begäran med [Adobe API](https://developer.adobe.com/data-collection-apis/docs/api/) och kontrollera Edge svarsnyttolast i avsnittet **[!UICONTROL Edge Delivery]** i [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} -sessionen.
 
 >[!ENDTABS]
 
@@ -109,11 +113,11 @@ När en klient skickar en begäran till Edge Network för en viss profil och yta
 
 Följ stegen nedan för att felsöka Edge Network-beteendet.
 
-1. Öppna vyn **[!UICONTROL Edge Delivery]** i Assurance-sessionen. Den här vyn innehåller information om hur den inkommande åtgärden körs på Edge Network-servern. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
+1. Öppna vyn **[!UICONTROL Edge Delivery]** i Assurance-sessionen. Den här vyn innehåller information om hur den inkommande åtgärden körs på Edge Network-servern. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
 
-   <!--![](assets/troubleshoot-inbound-scenario-1-edge-delivery.png)-->
+1. Kontrollera om den Edge-aktivitet som motsvarar den inkommande åtgärden visas i avsnitten **[!UICONTROL Qualified Activities]** eller **[!UICONTROL Unqualified Activities]**.
 
-1. Kontrollera om den Edge-aktivitet som motsvarar den inkommande åtgärden finns i avsnitten **[!UICONTROL Qualified Activities]** eller **[!UICONTROL Unqualified Activities]**:
+   ![](assets/troubleshoot-inbound-edge-delivery.png)
 
    * Om den profil som är kvalificerad för åtgärden för inkommande resa finns i avsnittet **Kvalificerade aktiviteter**, och innehållet ska returneras.
    * Om profilen finns i avsnittet **Okvalificerade aktiviteter** kvalificerades den inte för åtgärden för inkommande resa. Mer information finns i skälen till uteslutningen.
@@ -123,11 +127,13 @@ Följ stegen nedan för att felsöka Edge Network-beteendet.
    >
    >Om du vill hitta din Edge-aktivitet i **Assurance** -sessionen söker du efter aktiviteten där **[!UICONTROL audienceNamespace]** är **joai** och **[!UICONTROL audienceSegmentId]** är `<JourneyVersionID>_<JourneyAction ID>` (till exempel: *86232fb1-2932-4036-8198-55dfec606fc d7_708f718d-8503-4427-ad8d-8e28979b554c*).
 
+   ![](assets/troubleshoot-inbound-edge-delivery-unqualified.png){width="70%"}
+
 1. Om din aktivitet finns i avsnittet **[!UICONTROL Unqualified Activities]** och exkluderingsorsaken är *&#39;Segment är inte aktivt&#39;*, betyder det att Edge Network leveransserver inte tror att profilen är en del av det relevanta **joai**-målgruppssegmentet.
 
    Du kan dubbelkontrollera om **joai** -segmentet finns i Edge Network-leveransserverns vy över profilen genom att öppna **segmentsMap** -elementet i profilavsnittet och leta efter om **joai** -segmentets ID finns.
 
-1. Om Edge Network-leveransservern inte kan se profilen som i det relevanta **joai**-segmentet går du till nästa steg.<!--use the Platform Profile viewer UI to check if the expected **joai** segment is in a realized state in the Edge profile. Learn more in the [Experience Platform Profile UI documentation](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide){target="_blank"}-->
+1. Om Edge Network-leveransservern inte kan se profilen som i det relevanta **joai**-segmentet går du till nästa steg.<!--use the Platform Profile viewer UI to check if the expected **joai** segment is in a realized state in the Edge profile. Learn more in the [Experience Platform Profile UI documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide){target="_blank"}-->
 
 #### Steg 3: Kontrollera om medlemskapet har spridits till Edge Network {#step-3}
 
@@ -222,9 +228,9 @@ Gå igenom samma felsökningssteg som för [Scenario 1](#debugging-steps) för a
 
 ## Reference Section {#reference-section}
 
-- [Assurance Setup Guide](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/using-assurance)
+- [Assurance Setup Guide](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance)
 - [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/home.html)
-- [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE)
+- [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html)
 
 ## Warnings and Notes {#warnings-and-notes}
 
