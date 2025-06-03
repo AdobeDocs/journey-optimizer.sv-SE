@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
-source-git-commit: c52049383bf6a8b60fcb0ab1c2331724c8cdb771
+source-git-commit: 1ad534b7877f0ac6c1f50e29f41af708e83b34c9
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -27,7 +27,7 @@ I kampanjer och resor kan ni välja alla målgrupper som genereras med segmentde
 
 Publiken är redo att användas i Journey Optimizer direkt efter att intaget har slutförts. Detta är vanligtvis inom en timme, men kan variera. Publiken som är resultatet av kompositionerna bör vara tillgänglig 24 timmar efter publiceringen.
 
-För målgrupper som härrör från batchsegmenteringsjobb kan aktiveringen fördröjas på grund av att batchintaget kan variera. För målgruppsresor som schemaläggs dagligen kan du definiera ett tidsfönster i färdegenskaperna för att säkerställa att nya målgruppsdata är tillgängliga före körning av resan. Om segmenteringsjobbet inte slutförs inom det definierade tidsintervallet hoppas resan över tills nästa gång. [Lär dig schemalägga en läsarresa](../building-journeys/read-audience.md)
+För målgrupper som härrör från batchsegmenteringsjobb kan aktiveringen fördröjas på grund av att batchintaget kan variera. För målgruppsresor som schemaläggs dagligen kan du definiera ett tidsfönster i färdegenskaperna för att säkerställa att nya målgruppsdata är tillgängliga före körning av resan. Om segmenteringsjobbet inte slutförs inom det definierade tidsintervallet hoppas resan över tills nästa förekomst inträffar. [Lär dig schemalägga en läsarresa](../building-journeys/read-audience.md)
 
 ## Anpassad uppladdning och sammanställning av externa målgrupper
 

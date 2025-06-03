@@ -7,10 +7,10 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: be3936e4-8185-4031-9daf-95eea58077d0
-source-git-commit: f6c77a93c4adea33df8434ff8f950b8d39c92845
+source-git-commit: 1ad534b7877f0ac6c1f50e29f41af708e83b34c9
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 0%
+source-wordcount: '426'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Utnyttja kundprofilen i realtid i [!DNL Adobe Journey Optimizer] för att få en helhetsbild av varje enskild kund genom att kombinera data från flera kanaler, inklusive online, offline, CRM och tredje part. Med **profiler** kan du konsolidera dina kunddata till en enhetlig vy som ger ett åtgärdbart, tidsstämplat konto för varje kundinteraktion.
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 **Kundprofil i realtid &#x200B;** - Integrera kundattribut och händelser från online, offline och pseudonyma källor i en enda, enhetlig profil. &#x200B;Använd profilen för att engagera kunder med personaliserade upplevelser i realtid över flera kontaktytor. &#x200B;
 
@@ -34,9 +34,9 @@ Utnyttja kundprofilen i realtid i [!DNL Adobe Journey Optimizer] för att få en
 
 >[!MORELIKETHIS]
 >
->* [Kundprofildokumentation i realtid](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target="_blank"}
->* [Standardgaranti för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"}
->* &#x200B;[Dokumentation om dataöverföring](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/home){target="_blank"}
+>* [Dokumentation om realtidskundprofil](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target="_blank"}
+>* [Standardskyddsräcken för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
+>* &#x200B;[Dokumentation för datainmatning](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home){target="_blank"}
 
 ## Kontrollpanel för profiler
 
@@ -44,9 +44,9 @@ Om du vill komma åt profiler går du till menyn **[!UICONTROL Customer]** / **[
 
 >[!NOTE]
 >
->Om din organisation inte har använt [!DNL Adobe Journey Optimizer] tidigare och ännu inte har några aktiva profildatauppsättningar eller sammanfogningsprinciper skapade, visas inte instrumentpanelen för **profiler**. I stället visar fliken **Översikt** länkar till Adobe Experience Platform-dokumentation som hjälper dig att komma igång med kundprofilen i realtid. Mer information om hur du arbetar med **profilkontrollpanelen** och detaljerad information om mätvärden som visas på kontrollpanelen finns i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=sv-SE){target="_blank"}.
+>Om din organisation inte har använt [!DNL Adobe Journey Optimizer] tidigare och ännu inte har några aktiva profildatauppsättningar eller sammanfogningsprinciper skapade, visas inte instrumentpanelen för **profiler**. I stället visar fliken **Översikt** länkar till Adobe Experience Platform-dokumentation som hjälper dig att komma igång med kundprofilen i realtid. Mer information om hur du arbetar med **profilkontrollpanelen** och detaljerad information om mätvärden som visas på kontrollpanelen finns i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html){target="_blank"}.
 
-Ni kan sammanföra databygment från flera olika källor och kombinera dem för att få en fullständig bild av varje enskild kund. När du sammanför dessa data är sammanfogningsprinciper de regler som används för att bestämma hur data ska prioriteras och vilka data som ska kombineras för att skapa den enhetliga vyn. Läs mer om **Sammanfoga profiler** i den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=sv-SE){target="_blank"}.
+Ni kan sammanföra databygment från flera olika källor och kombinera dem för att få en fullständig bild av varje enskild kund. När du sammanför dessa data är sammanfogningsprinciper de regler som används för att bestämma hur data ska prioriteras och vilka data som ska kombineras för att skapa den enhetliga vyn. Läs mer om **Sammanfoga principer** i den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}.
 
 ![](assets/profiles-home.png)
 
