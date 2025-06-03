@@ -9,16 +9,16 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5d014017-ca7c-4206-b783-989677ec0e1c
-source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
+source-git-commit: 1a2c6e97fcd30245cff1bf08fd5771ce8bc84ddc
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '931'
 ht-degree: 1%
 
 ---
 
 # Inbyggda behörigheter {#ootb-permissions}
 
-Inbyggda behörigheter representerar olika behörigheter som kan tilldelas **[!UICONTROL Role]** för att finjustera din användaråtkomst till Journey Optimizer. Behörigheter på hög nivå omfattar behörigheter på låg nivå, som beskrivs på [den här sidan](high-low-permissions.md).
+Inbyggda behörigheter representerar olika behörigheter som kan tilldelas till **[!UICONTROL Role]** för att finjustera din användaråtkomst till Journey Optimizer. Behörigheter på hög nivå omfattar behörigheter på låg nivå, som beskrivs på [den här sidan](high-low-permissions.md).
 
 | Funktion | Behörigheter |
 |-|-|
