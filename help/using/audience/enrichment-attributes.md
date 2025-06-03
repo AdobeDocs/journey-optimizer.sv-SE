@@ -8,20 +8,20 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3ec496ba-7555-49e2-992c-403c33302a90
-source-git-commit: f99ba639b5d47fa334741b7e55e7bce83697626d
+source-git-commit: b6fe3fec0c64983fc2317027a5748a0d44c18469
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
 # Använd attribut för målgruppsberikning {#enrichment}
 
-När ni riktar in er på en målgrupp som skapats med kompositionsarbetsflöden, en anpassad (CSV-fil) målgrupp eller Federated Audience Composition, kan ni utnyttja anrikningsattribut från dessa målgrupper för att bygga upp er resa och personalisera era budskap.
+När ni riktar in er på en målgrupp som genererats med kompositionsarbetsflöden, en anpassad (CSV-fil) målgrupp eller Federated Audience Composition, kan ni använda anrikningsattribut från dessa målgrupper för att skapa er resa och personalisera era budskap.
 
 >[!NOTE]
 >
->Publiker som har skapats via anpassad CSV-filöverföring före 1 oktober 2024 är inte berättigade till personlig anpassning. Om du vill använda attribut från dessa målgrupper och utnyttja den här funktionen fullt ut kan du återskapa och överföra externa CSV-mottagare som importerats före detta datum.
+>Publiker som har skapats via anpassad CSV-filöverföring före 1 oktober 2024 är inte berättigade till personlig anpassning. Om du vill använda attribut från de här målgrupperna och använda den här funktionen fullt ut skapar du om och överför alla externa CSV-målgrupper som importerats före detta datum.
 >
 >Samtyckesprofiler stöder inte anrikningsattribut. Alla regler för samtyckespolicy bör därför endast baseras på attribut som finns i profilen.
 
@@ -39,21 +39,21 @@ Här är de åtgärder du kan utföra med hjälp av målgruppernas anrikningsatt
 >
 >Om du vill använda anrikningsattribut från målgrupper som skapats med dispositionsarbetsflöden måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform.
 >
->+++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp>
++++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp>
 >
->1. Navigera till Administration > Konfiguration > Datakällor.
->1. Välj&quot;Experience Platform&quot; och skapa eller redigera en fältgrupp.
->1. Välj lämpligt schema i schemaväljaren. Schemats namn kommer att ha följande format: &#39;Schema for audiensId:&#39; + målgruppens ID. Du kan hitta målgruppens ID på skärmen med målgruppsinformation i målgruppslagret.
->1. Öppna fältväljaren, sök efter de anrikningsattribut som du vill lägga till och markera kryssrutan bredvid dem.
->1. Spara ändringarna.
->1. När anrikningsattributen har lagts till i en fältgrupp kan du använda dem i Journey Optimizer på de platser som listas ovan.
+1. Navigera till Administration > Konfiguration > Datakällor.
+1. Välj&quot;Experience Platform&quot; och skapa eller redigera en fältgrupp.
+1. Välj lämpligt schema i schemaväljaren. Schemats namn kommer att ha följande format: &#39;Schema for audiensId:&#39; + målgruppens ID. Du kan hitta målgruppens ID på skärmen med målgruppsinformation i målgruppslagret.
+1. Öppna fältväljaren, sök efter de anrikningsattribut som du vill lägga till och markera kryssrutan bredvid dem.
+1. Spara ändringarna.
+1. När anrikningsattributen har lagts till i en fältgrupp kan du använda dem i Journey Optimizer på de platser som listas ovan.
 >
->Detaljerad information om datakällor finns i följande avsnitt:
+Detaljerad information om datakällor finns i följande avsnitt:
 >
->* [Arbeta med Adobe Experience Platform datakälla](../datasource/adobe-experience-platform-data-source.md)
->* [Konfigurera en datakälla](../datasource/configure-data-sources.md)
+* [Arbeta med Adobe Experience Platform datakälla](../datasource/adobe-experience-platform-data-source.md)
+* [Konfigurera en datakälla](../datasource/configure-data-sources.md)
 >
->+++
++++
 
 
 
@@ -65,7 +65,7 @@ Här är de åtgärder du kan utföra med hjälp av målgruppernas anrikningsatt
 
 Enrichment-attribut är ytterligare attribut som är sammanhangsberoende och specifika för en viss målgrupp. De är inte associerade med profilen och används vanligtvis för personalisering.
 
-Anrikningsattribut länkas till en målgrupp via en berikande aktivitet i målgruppssammansättning eller genom den anpassade överföringsprocessen.
+Anrikningsattribut länkas till en målgrupp genom en berikande aktivitet i målgruppssammansättning eller den anpassade överföringsprocessen.
 
 +++
 
@@ -85,8 +85,8 @@ Om du vill använda anrikningsattribut från målgrupper som skapats med disposi
 
 +++
 
-+++ Uppdateras värdena för anrikningsattributen när en resa börjar?
++++ Uppdateras värdena för anrikningsattributen efter att en resa påbörjats?
 
-För närvarande inte. Även efter vänta- eller händelsnoder är värdena för anrikningsattributen desamma som när resan påbörjades.
+Nej. Även efter vänta- eller händelsnoder är värdena för anrikningsattributen desamma som när resan påbörjades.
 
 +++
