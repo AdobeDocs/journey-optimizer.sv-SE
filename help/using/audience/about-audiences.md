@@ -38,9 +38,9 @@ När dataströmmar i realtid eller batchöverföringar inträffar uppdateras dat
 
 Den här dokumentationen innehåller information om hur du arbetar med målgrupper inom [!DNL Adobe Journey Optimizer]. Detaljerad information om Audience-portalen och målgrupper finns i dokumentationen för Adobe Experience Platform Segmentation-tjänsten. Mer information finns i följande avsnitt:
 
-* [Användargränssnittsguide för segmenteringstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview){target="_blank"}
+* [Användargränssnittsguide för segmenteringstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/overview){target="_blank"}
 
-* [Segmenteringstjänst - Vanliga frågor](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/faq){target="_blank"}
+* [Segmenteringstjänst - Vanliga frågor](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/faq){target="_blank"}
 
 >[!ENDSHADEBOX]
 
@@ -54,7 +54,7 @@ En kontrollpanel visar överlappningar mellan viktiga målgrupper och har stöd 
 
 Från Audience Portal kan ni enkelt hantera, hitta och utforska målgrupper med standardiserade etiketter, styrningsfunktioner, sökbara mappar och taggar.
 
-Mer information om hur du arbetar med målgrupper i publikportalen finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+Mer information om hur du arbetar med målgrupper i publikportalen finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
 
 ## Målgruppstyper {#types}
 
