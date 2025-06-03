@@ -9,7 +9,7 @@ role: Admin, User
 level: Intermediate
 keywords: behörigheter, författare, meddelanden
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-source-git-commit: ac8ccb52bd16a26c14dea148f989256e28170765
+source-git-commit: 49a607e8e4b4cce7bcf41d92abe6b9fa54dfb411
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 5%
@@ -24,7 +24,7 @@ Inbyggda roller är en uppsättning enhetsbehörigheter som ger användarna till
 
 Med rollen **[!DNL Campaign Administrator]** kan administrationsmenyerna hantera och publicera kampanjer och beslutshantering.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Resurser | Behörigheter |
 |-|-|
@@ -48,7 +48,7 @@ Med rollen **[!DNL Campaign Approver]** kan användare godkänna leveranser och 
 
 Med rollen **[!DNL Campaign Manager]** kan användare skapa och redigera **[!UICONTROL Campaigns]** och alla funktioner som är länkade till **[!UICONTROL Campaigns]**, men de kan inte publiceras.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Resurser | Behörigheter |
 |-|-|
@@ -63,7 +63,7 @@ Rollen **[!DNL Campaign Viewer]** tillåter skrivskyddad åtkomst till funktione
 
 Användare som tilldelats den här rollen kan inte redigera eller publicera.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Resurser | Behörigheter |
 |-|-|
@@ -74,7 +74,7 @@ Den här rollen innehåller följande behörigheter:
 
 Med rollen **[!DNL Journey Administrator]** kan administrationsmenyerna hantera och publicera resor och beslutshantering.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Resurser | Behörigheter |
 |-|-|
@@ -89,7 +89,7 @@ Den här rollen innehåller följande behörigheter:
 
 Med rollen **[!DNL Journey Approver]** kan användare godkänna leveranser och publicera dem. De kan senare kontrollera om deras leveranser är slutförda med **[!DNL Journey]**-rapporterna.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Resurser | Behörigheter |
 |-|-|
@@ -102,7 +102,7 @@ Den här rollen innehåller följande behörigheter:
 
 Med rollen **[!DNL Journey Manager]** kan användare skapa och redigera **[!UICONTROL Journeys]** och alla funktioner som är länkade till **[!UICONTROL Journeys]**, men de kan inte publiceras.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Resurser | Behörigheter |
 |-|-|
@@ -117,7 +117,7 @@ Rollen **[!DNL Journey viewer]** tillåter skrivskyddad åtkomst till funktioner
 
 Användare som tilldelats den här rollen kan inte redigera eller publicera.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Resurser | Behörigheter |
 |-|-|
@@ -128,7 +128,7 @@ Den här rollen innehåller följande behörigheter:
 
 Rollen **[!DNL Decisioning manager]** tillåter bara åtkomst till menyn **[!UICONTROL Decision management]**. Användare som tilldelats den här rollen kan bara hantera, visa och publicera beslut.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Funktion | Behörigheter |
 |-|-|
@@ -138,7 +138,7 @@ Den här rollen innehåller följande behörigheter:
 
 Rollen **[!DNL Content Library Manager]** tillåter bara åtkomst till menyn **[!UICONTROL Content templates]**. Användare som tilldelats den här rollen kan bara komma åt mallbiblioteket för att skapa innehåll utan att komma åt resor eller kampanjer.
 
-Den här rollen innehåller följande behörigheter:
+Den här behörigheten innehåller följande behörigheter:
 
 | Funktion | Behörigheter |
 |-|-|

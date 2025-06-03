@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 8b0310e91e5b5c1418e8e26f4505bda45146ceba
+source-git-commit: 49a607e8e4b4cce7bcf41d92abe6b9fa54dfb411
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage journeys]** högnivåbehörighet tillåter användare att skapa nya och redigera/ta bort befintliga resor samt åtkomst till de objekt som används på arbetsytan för att skapa reseflödet.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
 
@@ -56,7 +56,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Publish journeys]** högnivåbehörighet tillåter användare att publicera resor.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
    * Journey Optimizer-specifikt:
       * journeys.publish
       * journeys.read
@@ -65,7 +65,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL View journeys]** högnivåbehörighet tillåter användare att bläddra och visa resor.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * journeys.read
@@ -78,7 +78,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage journeys events, data sources and actions]** högnivåbehörighet tillåter användare att konfigurera händelse- och datakonfigurationer.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * travel_events.read
@@ -100,7 +100,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL View journeys events, data sources and actions]** högnivåbehörighet tillåter användare att använda händelser och data i reseflödet.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * travel_events.read
@@ -116,7 +116,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL View journeys report]** högnivåbehörighet tillåter användare att läsa en skrivskyddad reserapport.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * travel_report.read
@@ -134,7 +134,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage frequency rules]** högnivåbehörighet tillåter användare att läsa, skapa, redigera, ta bort och aktivera/inaktivera frekvensregler.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * frequency_rules.read
@@ -145,7 +145,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL View frequency rules]** högnivåbehörighet tillåter användare att visa frekvensregler.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * frequency_rules.read
@@ -169,7 +169,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage campaigns]** högnivåbehörighet tillåter användare att skapa nya och redigera/ta bort kampanjer
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
 
@@ -196,7 +196,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL View campaigns report]** högnivåbehörighet tillåter användare att läsa och redigera kampanjrapporter.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * campaign.read
@@ -210,7 +210,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage decisions]**-behörighet på hög nivå tillåter användare att skapa nya och redigera/ta bort befintliga **[!DNL Activity entities]** samt hantera de objekt som används i dessa aktiviteter för att fatta beslut.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Specifik för beslutshantering:
       * activities.read
@@ -236,7 +236,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL View decisions]** högnivåbehörighet tillåter användare att använda en befintlig aktivitet och relaterade affärsobjekt för att fatta beslut.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Specifik för beslutshantering:
       * activities.read
@@ -253,7 +253,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage offers]** högnivåbehörighet tillåter användare att skapa, redigera och ta bort alla erbjudanden, komponenter, läsbeslut och samlingar.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Specifik för beslutshantering:
       * offers_activity.read
@@ -275,7 +275,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage ranking strategies]** högnivåbehörighet tillåter användare att läsa, skapa, redigera och ta bort rankningsstrategier.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Specifik för beslutshantering:
       * ranking_strategy.read
@@ -292,7 +292,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 <!--
 * **[!DNL Manage Experience decisions]** high-level permission allows users to read, create, edit, and delete Decisioning entities.
 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
   * Experience decisions specific:
     * ranking_strategy.read
@@ -313,7 +313,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage file routing]** högnivåbehörighet tillåter användare att skapa, redigera och ta bort filroutningskonfigurationer.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
    * Journey Optimizer-specifikt:
 
       * file_routing.read
@@ -324,7 +324,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage IP pools]** högnivåbehörighet tillåter användare att skapa, redigera och ta bort tillhörighetsdefinitionen.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
    * Journey Optimizer-specifikt:
       * IP_pools.read
       * IP_pools.write
@@ -349,7 +349,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage messages general settings]** högnivåbehörighet tillåter användare att skapa, redigera och ta bort globala inställningar på sandlådenivå.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * messages_general_settings.read
@@ -412,7 +412,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage subdomains delegations]** högnivåbehörighet tillåter användare att skapa, redigera och ta bort underdomänsdelegeringar (inklusive IP-pool).
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
    * Journey Optimizer-specifikt:
 
       * underdomäner_delegering.read
@@ -423,7 +423,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL Manage suppression]**-behörighet på hög nivå tillåter användare att definiera antalet studsar innan en e-postadress läggs till i listan över inaktiveringar, samt att lägga till och ta bort poster i/från listan över inaktiveringar.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
    * Journey Optimizer-specifikt:
       * suppression_rules.read
       * suppression_rules.write
@@ -435,7 +435,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 
 * **[!DNL View file routing]** högnivåbehörighet tillåter användare att visa filroutningskonfigurationer.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
    * Journey Optimizer-specifikt:
 
       * file_routing.read
@@ -482,7 +482,7 @@ Rollen **[!DNL Journey administrator]** har till exempel tilldelats behörighete
 ### [!DNL View channel configuration] permission {#view-channel-surface}
 
 The **[!DNL View channel configuration]** high-level permission allows users to view channel configurations in order to know which channel configurations to use. 
-  +++ This role includes the following low-level permissions:  
+  +++ This permission includes the following low-level permissions:  
 
 * messages_presets.read
 * subdomains_delegation.read
@@ -493,7 +493,7 @@ The **[!DNL View channel configuration]** high-level permission allows users to 
 
 * **[!DNL View suppression list]**-behörighet på hög nivå tillåter användare att visa innehåll och inställningar i listan över utelämnanden.
 
-+++ Den här rollen innehåller följande lågnivåbehörigheter:
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
    * Journey Optimizer-specifikt:
       * suppression_list.view
