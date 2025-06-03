@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-source-git-commit: 948637433e1a90421ff8bab87f78f92b02354a89
+source-git-commit: d87f33c80cc85b1d1a87150687f6d7c9a268a016
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Skapa en segmentdefinition {#create}
 
-I det här exemplet kommer vi att bygga en målgrupp för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder borde ha gjort ett köp inom de senaste 7 dagarna.
+I det här exemplet bygger ni en målgrupp för alla kunder som bor i Atlanta, San Francisco eller Seattle och som är födda efter 1980. Alla dessa kunder måste ha gjort ett köp de senaste 7 dagarna.
 
 ➡️ [Lär dig skapa målgrupper i den här videon](#video-segment)
 
@@ -32,7 +32,7 @@ I det här exemplet kommer vi att bygga en målgrupp för alla kunder som bor i 
 
    ![](assets/create-segment.png)
 
-   På segmentdefinitionsskärmen kan du konfigurera alla obligatoriska fält för att definiera målgruppen. Lär dig hur du konfigurerar målgrupper i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/overview){target="_blank"}.
+   På segmentdefinitionsskärmen kan du konfigurera alla obligatoriska fält för att definiera målgruppen. Lär dig hur du konfigurerar målgrupper i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/overview){target="_blank"}.
 
    ![](assets/segment-builder.png)
 
@@ -42,7 +42,7 @@ I det här exemplet kommer vi att bygga en målgrupp för alla kunder som bor i 
 
 1. Dra och släpp önskade fält från den vänstra rutan till arbetsytan i mitten och konfigurera dem efter behov.
 
-   De grundläggande byggstenarna för segmentdefinitioner är **attribut** och **händelser**. Dessutom kan attribut och händelser i befintliga målgrupper användas som komponenter för nya definitioner. [Läs mer i dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#building-blocks){target="_blank"}
+   De grundläggande byggstenarna för segmentdefinitioner är **attribut** och **händelser**. Dessutom kan attribut och händelser i befintliga målgrupper användas som komponenter för nya definitioner. [Läs mer i dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#building-blocks){target="_blank"}
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ I det här exemplet kommer vi att bygga en målgrupp för alla kunder som bor i 
 
 1. När målgruppen är klar klickar du på **[!UICONTROL Save]**. Den visas i listan över Adobe Experience Platform målgrupper. Observera att det finns ett sökfält som du kan använda för att söka efter en viss målgrupp i listan.
 
-Publiken kan nu användas på era resor. Mer information om detta finns i [det här avsnittet](../audience/about-audiences.md).
+Publiken är nu redo att användas på era resor. Mer information hittar du i [det här avsnittet](../audience/about-audiences.md).
 
 ## Metoder för utvärdering av målgrupper {#evaluation-method-in-journey-optimizer}
 
@@ -76,7 +76,7 @@ I Adobe Journey Optimizer genereras målgrupper från segmentdefinitioner med hj
 
 Profillistan för målgruppen hålls uppdaterad i realtid när nya data flödar in i systemet.
 
-Direktuppspelningssegmentering är en kontinuerlig process för datamarkering som uppdaterar era målgrupper som svar på användaraktivitet. När en segmentdefinition har skapats och målgruppen har sparats, tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Det innebär att enskilda personer läggs till eller tas bort från målgruppen när deras profildata ändras, vilket säkerställer att målgruppen alltid är relevant. [Läs mer i Adobe Expe](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=sv-SE){target="_blank"}.
+Direktuppspelningssegmentering är en kontinuerlig process för datamarkering som uppdaterar era målgrupper som svar på användaraktivitet. När en segmentdefinition har skapats och målgruppen har sparats, tillämpas segmentdefinitionen på inkommande data till Journey Optimizer. Det innebär att enskilda personer läggs till eller tas bort från målgruppen när deras profildata ändras, vilket säkerställer att målgruppen alltid är relevant. [Läs mer i Adobe Expe](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -94,19 +94,19 @@ Direktuppspelningssegmentering är en kontinuerlig process för datamarkering so
 
 Profillistan för publiken utvärderas var 24:e timme.
 
-Gruppsegmentering är ett alternativ till direktuppspelningssegmentering som bearbetar alla profildata samtidigt genom segmentdefinitioner. Detta skapar en ögonblicksbild av målgruppen som kan sparas och exporteras för användning. Till skillnad från direktuppspelningssegmentering kommer gruppsegmentering inte att kontinuerligt uppdatera målgruppslistan i realtid, och nya data som kommer in efter gruppbearbetningen kommer inte att återspeglas i målgruppen förrän nästa gruppbearbetning. Ett försök att framtvinga en omedelbar uppdatering åsidosätter inte den dagliga cykeln. Om du vill ha omedelbara stegvisa uppdateringar kan du använda alternativ för direktuppspelning eller segmentering på begäran.
+Gruppsegmentering bearbetar alla profildata samtidigt genom segmentdefinitioner, vilket skapar en ögonblicksbild av målgruppen som kan sparas och exporteras för användning. Till skillnad från direktuppspelningssegmentering uppdateras inte målgruppslistan kontinuerligt i realtid. Nya data som kommer in efter gruppbearbetningen återspeglas inte i målgruppen förrän nästa gruppbearbetning. Försök att framtvinga en omedelbar uppdatering åsidosätter inte den dagliga cykeln. Om du vill ha omedelbara stegvisa uppdateringar kan du använda alternativ för direktuppspelning eller segmentering på begäran.
 
-Mer information finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE#batch){target="_blank"}
+Mer information finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}
 
 +++
 
 +++ Edge segmentering
 
-Edge-segmentering är möjligheten att omedelbart utvärdera segment i Adobe Experience Platform [på kanten](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"}, vilket möjliggör användning av samma sida och nästa sida. För närvarande kan endast utvalda frågetyper utvärderas med kantsegmentering. Mer information finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html?lang=sv-SE#query-types){target="_blank"}
+Edge-segmentering är möjligheten att omedelbart utvärdera segment i Adobe Experience Platform [på kanten](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"}, vilket möjliggör användning av samma sida och nästa sida. För närvarande kan endast utvalda frågetyper utvärderas med kantsegmentering. Mer information finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html#query-types){target="_blank"}
 
 +++
 
-Om du vet vilken utvärderingsmetod du vill använda väljer du den i listrutan. Du kan också klicka på mappikonen för bläddringsikonen med ett förstoringsglas för att visa en lista över tillgängliga metoder för utvärdering av segmentdefinitioner. Mer information finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE#segment-properties){target="_blank"}
+Om du vet vilken utvärderingsmetod du vill använda väljer du den i listrutan. Du kan också klicka på mappikonen för bläddringsikonen med ett förstoringsglas för att visa en lista över tillgängliga metoder för utvärdering av segmentdefinitioner. Mer information finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#segment-properties){target="_blank"}.
 
 ![](assets/evaluation-methods.png)
 
@@ -122,7 +122,7 @@ När du har definierat en målgrupp för första gången läggs profiler till i 
 
 ## Flexibel utvärdering av målgrupper {#flexible}
 
-Med Adobe Experience Platform Audience Portal kan ni köra ett segmenteringsjobb på begäran för utvalda målgrupper, vilket säkerställer att ni alltid har de senaste målgruppsdata innan ni kan rikta in dem på Journey Optimizer resor och kampanjer.
+Med Adobe Experience Platform Audience Portal kan ni köra ett segmenteringsjobb on demand för utvalda målgrupper, vilket säkerställer att ni alltid har de senaste målgruppsdata innan ni kan rikta in dem på Journey Optimizer resor och kampanjer.
 
 Med flexibel målgruppsutvärdering kan ni
 
@@ -130,10 +130,10 @@ Med flexibel målgruppsutvärdering kan ni
 1. Utvärdera målgruppen i realtid för att säkerställa exaktheten. För att göra det väljer du de målgrupper du vill ha utvärderade och väljer&quot;Utvärdera målgrupper&quot;, förutsatt att de uppfyller specifika kriterier (t.ex. personbaserat, ursprung i segmenteringstjänst).
 1. Använd den utvärderade målgruppen i Adobe Journey Optimizer-kampanjer eller resor för exakt målinriktning.
 
-Ni kan utvärdera upp till 20 målgrupper i taget, och icke berättigade målgrupper utesluts automatiskt. Mer information finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation).
+Ni kan utvärdera upp till 20 målgrupper i taget, och icke berättigade målgrupper exkluderas automatiskt. Mer information finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation).
 
 ## Instruktionsvideo{#video-segment}
 
 Förstå hur Journey Optimizer använder regler för att generera målgrupper och lär sig hur man använder attribut, händelser och befintliga målgrupper för att skapa en målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430334?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3425020?quality=12)

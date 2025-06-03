@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: d87f33c80cc85b1d1a87150687f6d7c9a268a016
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ ht-degree: 0%
 >title="Välj kampanjmålgrupp"
 >abstract="I den här listan visas alla tillgängliga Adobe Experience Platform-målgrupper. Välj målgrupp för er kampanj. Meddelandet som konfigurerats i kampanjen skickas till alla personer som tillhör den valda målgruppen. [Läs mer om målgrupper](../audience/about-audiences.md)"
 
-Målgruppen är samlingar av personer som har liknande beteenden och/eller egenskaper. De konfigureras och underhålls centralt på Adobe Experience Platform med Adobe Experience Platform Segmentation Service och är tillgängliga inom Journey Optimizer för att aktiveras under resor och kampanjer.
+Målgrupper är samlingar av personer som har liknande beteenden och/eller egenskaper. De konfigureras och underhålls centralt på Adobe Experience Platform med Adobe Experience Platform Segmentation Service och är tillgängliga inom Journey Optimizer för att aktiveras under resor och kampanjer.
 
 Adobe Journey Optimizer tillhandahåller robusta verktyg för att skapa, hantera och berika målgrupper för att förbättra marknadsföringen. I kombination med Adobe Real-Time Customer Data Platform kan ni med Journey Optimizer skikta in era målgrupper för mer komplex segmentering och dela målgrupper dubbelriktat med andra Adobe Experience Cloud-lösningar.
 
-När realtidsdata strömmar eller batchöverförs uppdateras datauppsättningarna och Journey Optimizer flyttar dynamiskt individer in och ut ur målgrupper och resor i realtid.
+När dataströmmar i realtid eller batchöverföringar inträffar uppdateras datauppsättningarna och Journey Optimizer flyttar dynamiskt individer in och ut ur målgrupper och resor i realtid.
 
 >[!BEGINSHADEBOX]
 
 Den här dokumentationen innehåller information om hur du arbetar med målgrupper inom [!DNL Adobe Journey Optimizer]. Detaljerad information om Audience-portalen och målgrupper finns i dokumentationen för Adobe Experience Platform Segmentation-tjänsten. Mer information finns i följande avsnitt:
 
-* [Användargränssnittsguide för segmenteringstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/overview){target="_blank"}
+* [Användargränssnittsguide för segmenteringstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview){target="_blank"}
 
-* [Segmenteringstjänst - Vanliga frågor ](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/faq){target="_blank"}
+* [Segmenteringstjänst - Vanliga frågor](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/faq){target="_blank"}
 
 >[!ENDSHADEBOX]
 
@@ -48,13 +48,13 @@ Den här dokumentationen innehåller information om hur du arbetar med målgrupp
 
 Publiker är tillgängliga på menyn **[!UICONTROL Customer]** > **[!UICONTROL Audiences]**.
 
-På en kontrollpanel visas överlappningar mellan viktiga målgrupper och stöd för att utforska värdefulla målgruppstrender, t.ex. förändringar av målgruppsstorlek under en viss tidsperiod eller plötsliga toppar i målgrupper kan man markera händelser eller händelser som fick en målgrupp att krympa, men också sådana som resulterade i en ökad publik, t.ex. ett lyckat erbjudande.
+En kontrollpanel visar överlappningar mellan viktiga målgrupper och har stöd för att utforska värdefulla målgruppstrender. Till exempel kan publikens storlek ändras under en viss tidsperiod eller plötsliga toppar hos målgrupper markera händelser eller händelser som får en målgrupp att krympa eller växa, som ett lyckat erbjudande.
 
 ![](assets/audiences-overview.png)
 
 Från Audience Portal kan ni enkelt hantera, hitta och utforska målgrupper med standardiserade etiketter, styrningsfunktioner, sökbara mappar och taggar.
 
-Mer information om hur du arbetar med målgrupper i publikportalen finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
+Mer information om hur du arbetar med målgrupper i publikportalen finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 ## Målgruppstyper {#types}
 
