@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
-source-git-commit: 86b83f8b368a77ef96581c422f19f35d939e51f4
+source-git-commit: 2f2caf8615af8e3526124e0d7ed91873ccb6edc3
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ Följ stegen nedan för att skapa en rankningsformel.
    >
    >[Personaliserade optimeringsmodeller](../offers/ranking/personalized-optimization-model.md) som använder kontinuerliga mått stöds inte med formelverktyget för AI.
 
-Varje gång du refererar till en modellpoäng när du definierar formeln nedan används den AI-modell som du valde.
+   Varje gång du refererar till en modellpoäng när du definierar formeln nedan används den AI-modell som du valde.
 
-    >[!CAUTION]
-    >
-    >När du använder en AI-modell som ingår i en rankningsformel, återspeglas inte data i rapporten [Konverteringsgrad för Holdout och Modellstyrd trafik](../reports/campaign-global-report-cja-code.md#conversion-rate).
+   >[!CAUTION]
+   >
+   >När du använder en AI-modell som ingår i en rankningsformel återspeglas inte data i rapporten [Konverteringsgrad för Holdout och Modellstyrd trafik](../reports/campaign-global-report-cja-code.md#conversion-rate).
 
 1. Definiera villkoren som avgör rangordningsgraden för de matchande beslutsobjekten. Du kan antingen
 
@@ -126,7 +126,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >
