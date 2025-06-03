@@ -9,9 +9,9 @@ role: Admin, Architect
 level: Intermediate
 keywords: behörigheter, rättigheter, begränsningar, åtkomst, sandlåda
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: 8093af8c3e7484f9ebed8dbc50065bcff0459581
+source-git-commit: fbcddcf10974f16eb6885ebb38b7be41f2e53639
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Med [!DNL Journey Optimizer] kan du definiera och hantera behörigheter som till
 
 Åtkomstkontroll för [!DNL Journey Optimizer] tillhandahålls via **Permissions** i Adobe Experience Cloud. Den här funktionen utnyttjar roller och principer som länkar användare med behörigheter och sandlådor.
 
-Om du vill konfigurera åtkomstkontroll för Journey Optimizer måste du ha system- eller produktadministratörsbehörighet för din organisation. Minimirollen som kan bevilja eller återkalla behörigheter är en produktadministratör. Andra administratörsroller som kan hantera behörigheter är systemadministratörer (inga begränsningar). Mer information finns i [Adobe Help Center-artikeln](https://helpx.adobe.com/se/enterprise/using/admin-roles.html){target="_blank"} om administrativa roller.
+Om du vill konfigurera åtkomstkontroll för Journey Optimizer måste du ha system- eller produktadministratörsbehörighet för din organisation. Minimirollen som kan bevilja eller återkalla behörigheter är en produktadministratör. Andra administratörsroller som kan hantera behörigheter är systemadministratörer (inga begränsningar). Mer information finns i [Adobe Help Center-artikeln](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} om administrativa roller.
 
 <!-- A high-level workflow for gaining and assigning access permissions can be summarized as follows:
 
@@ -36,13 +36,14 @@ Om du vill konfigurera åtkomstkontroll för Journey Optimizer måste du ha syst
 
 Användarhantering i [!DNL Journey Optimizer] baseras på följande nyckelbegrepp:
 
-* **[!UICONTROL Role]**: Roller refererar till en samling användare som delar samma behörigheter och sandlådor. Med de här rollerna kan du enkelt hantera åtkomst och behörigheter för olika användargrupper i organisationen. En roll har en uppsättning enhetsrättigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet. Med [!DNL Journey Optimizer] kan du välja mellan ett intervall av befintliga **[!UICONTROL Roles]**, var och en med olika behörighetsnivåer, som ska tilldelas dina användare. Läs mer om de tillgängliga **inbyggda rollerna** på [den här sidan](ootb-product-profiles.md).
+* **[!UICONTROL Role]**: Roller refererar till en samling användare som delar samma behörigheter och sandlådor. Med de här rollerna kan du enkelt hantera åtkomst och behörigheter för olika användargrupper i organisationen. En roll har en uppsättning enhetsrättigheter som ger användarna tillgång till vissa funktioner eller objekt i gränssnittet.
+Med [!DNL Journey Optimizer] kan du välja mellan ett intervall av befintliga **[!UICONTROL Roles]**, var och en med olika behörighetsnivåer, som ska tilldelas dina användare. Läs mer om de tillgängliga **inbyggda rollerna** på [den här sidan](ootb-product-profiles.md).
 
-* **[!UICONTROL Permissions]**: Enhetsrättigheter som gör att du kan definiera de auktoriseringar som tilldelats **[!UICONTROL Roles]**. Varje behörighet samlas under resurser, t.ex. Resor eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Läs mer i avsnittet [Behörighetsnivåer](high-low-permissions.md).
+* **[!UICONTROL Permissions]**: Behörigheter är enhetsbehörigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Roles]**. Varje behörighet samlas under resurser, t.ex. Resor eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Läs mer i avsnittet [Behörighetsnivåer](high-low-permissions.md).
 
   ![](assets/do-not-localize/permissions_2.png)
 
-* **[!UICONTROL Sandbox]**: Virtuella sandlådor som partitionerar instanser i separata, isolerade virtuella miljöer. Sandlådor tilldelas via roller i behörigheter. Läs mer om [att använda sandlådor](sandboxes.md).
+* **[!UICONTROL Sandboxes]**: Virtuella sandlådor, partitionsinstanser till separata, isolerade virtuella miljöer. Sandlådor tilldelas via roller i behörigheter. Läs mer om [att använda sandlådor](sandboxes.md).
 
 * **Objektbaserad åtkomstkontroll**: Etiketter som begränsar åtkomsten till ett objekt. Detta tillvägagångssätt skyddar känsliga digitala resurser från obehöriga användare och säkerställer ytterligare skydd av personuppgifter. Läs mer om [Objektbaserad åtkomsthantering](object-based-access.md).
 
@@ -52,6 +53,7 @@ Användarhantering i [!DNL Journey Optimizer] baseras på följande nyckelbegrep
 ## Låt oss dyka djupare
 
 Nu när du har en förståelse för åtkomstkontrollsbegrepp i **[!DNL Journey Optimizer]** är det dags att gå djupare in i dessa dokumentationsavsnitt för att börja konfigurera behörigheter.
+
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
@@ -79,9 +81,7 @@ Nu när du har en förståelse för åtkomstkontrollsbegrepp i **[!DNL Journey O
 <div>
 <a href="sandboxes.md"><strong>Hantera sandlådor</strong></a>
 </div>
-<p>
-</td>
-<td>
+<p></td>
 <td>
 <a href="attribute-based-access.md">
 <img alt="Attributbaserad åtkomstkontroll" src="assets/do-not-localize/data-access.jpeg">
@@ -91,5 +91,4 @@ Nu när du har en förståelse för åtkomstkontrollsbegrepp i **[!DNL Journey O
 </div>
 <p>
 </td>
-<td>
 </tr></table>
