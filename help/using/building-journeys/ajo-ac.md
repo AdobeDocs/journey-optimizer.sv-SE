@@ -9,22 +9,22 @@ role: Admin, Data Engineer, User
 level: Intermediate, Experienced
 keywords: resa, meddelande, kampanj, integrering
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
-source-git-commit: 1af75a0e6bfc2c3b9c565c3190f46d137a68d32e
+source-git-commit: 84beb9ba9646cb1b40bcfd8a180fc98963a8ff0b
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
 # Användningsfall: skicka ett meddelande med Campaign v7/v8 {#campaign-v7-v8-use-case}
 
-I det här exemplet presenteras alla steg som krävs för att skicka e-post med hjälp av integreringen med Adobe Campaign v7 och Adobe Campaign v8.
+I det här användningsexemplet förklaras alla steg som krävs för att skicka e-post med hjälp av integreringen med Adobe Campaign v7 och Adobe Campaign v8.
 
 >[!NOTE]
 >
 >För att kunna använda den här integreringen måste du ha Campaign v7/v8 build 9125 eller senare.
 
-Vi skapar först en transaktionell e-postmall i Campaign. I Journey Optimizer skapar vi sedan evenemanget, handlingen och designen av kundresan.
+Skapa först en transaktionell e-postmall i Campaign. I Journey Optimizer kan du sedan skapa event, action och designa kundresan.
 
 Mer information om Campaign-integrationen finns på följande sidor:
 
@@ -37,7 +37,7 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
 1. Logga in på din Campaign-kontrollinstans.
 
-1. Välj uppräkningen **Event type** (eventType) under **Administration** > **Platform** > **Enumerations**. Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Du måste använda det interna namnet för händelsetypen när du skriver JSON-filen senare.
+1. Välj uppräkningen **Event type** (eventType) under **Administration** > **Platform** > **Enumerations**. Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Använd händelsetypens interna namn när du skriver JSON-filen senare.
 
    ![](assets/accintegration-uc-1.png)
 
@@ -47,7 +47,7 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![](assets/accintegration-uc-2.png)
 
-1. Designa din mall. I det här exemplet använder vi personalisering på profilens förnamn och ordernummer. Förnamnet finns i Adobe Experience Platform datakälla och ordernumret är ett fält från vår Journey Optimizer-händelse. Se till att du använder rätt fältnamn i Campaign.
+1. Designa din mall. I det här exemplet tillämpas personalisering på profilens förnamn och ordernummer. Förnamnet finns i Adobe Experience Platform datakälla och ordernumret är ett fält från händelsen Journey Optimizer. Se till att du använder rätt fältnamn i Campaign.
 
    ![](assets/accintegration-uc-3.png)
 
@@ -55,7 +55,7 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![](assets/accintegration-uc-4.png)
 
-1. Nu måste du skriva JSON-nyttolasten som motsvarar mallen.
+1. Skriv den JSON-nyttolast som motsvarar mallen.
 
 ```
 {
@@ -75,11 +75,11 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
 **Journey Optimizer**
 
-1. Först måste du skapa en händelse. Se till att du inkluderar fältet&quot;purchaseOrderNumber&quot;.
+1. Skapa en händelse. Inkludera fältet&quot;purchaseOrderNumber&quot;.
 
    ![](assets/accintegration-uc-5.png)
 
-1. Sedan måste ni i Journey Optimizer skapa en åtgärd som motsvarar er Campaign-mall. I listrutan **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
+1. Skapa en åtgärd i Journey Optimizer som motsvarar er Campaign-mall. I listrutan **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
 
    ![](assets/accintegration-uc-6.png)
 

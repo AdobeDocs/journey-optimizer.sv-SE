@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 503bedc30c35305537c62f9452f4a2dc07424523
+source-git-commit: 84beb9ba9646cb1b40bcfd8a180fc98963a8ff0b
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '574'
 ht-degree: 8%
 
 ---
@@ -22,23 +22,23 @@ Kombinera de olika händelserna, samordningen och åtgärderna för att skapa fl
 
 ## Evenemangsaktiviteter {#event-activities}
 
-Personaliserade resor utlöses av händelser, t.ex. ett onlineköp. När en profil går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg. När du påbörjar en resa med en händelse aktiveras resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
+Personaliserade resor utlöses av händelser, t.ex. ett onlineköp. När en profil går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg. När du påbörjar en resa med en händelse utlöses resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
 
-Händelser som konfigurerats av den tekniska användaren (se [den här sidan](../event/about-events.md)) visas alla i den första kategorin på paletten, till vänster på skärmen. Följande aktiviteter är tillgängliga:
+Händelser som konfigurerats av den tekniska användaren (se [den här sidan](../event/about-events.md)) visas alla i den första kategorin på paletten, till vänster på skärmen. Följande händelseaktiviteter är tillgängliga:
 
 * [Allmänna händelser](../building-journeys/general-events.md)
 * [Reaktion](../building-journeys/reaction-events.md)
 * [Målgruppskvalifikation](../building-journeys/audience-qualification-events.md)
 
-![](assets/journey43.png)
+![Paletten Händelseaktiviteter i resedesignern](assets/journey43.png)
 
-Starta din resa genom att dra och släppa en händelseaktivitet. Du kan också dubbelklicka på den.
+Dra och släpp en händelseaktivitet för att starta din resa. Du kan också dubbelklicka på den.
 
-![](assets/journey44.png)
+![Dra och släpp händelseaktivitet i resedesignern](assets/journey44.png)
 
 ## Orchestration-verksamhet {#orchestration-activities}
 
-Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan. Det kan vara om personen har ett öppet supportärende eller inte, väderprognosen på sin nuvarande plats, om de slutförde ett köp eller inte, eller uppnådde 10 000 förmånspoäng.
+Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan. Dessa villkor kan vara huruvida personen har ett öppet supportärende, väderprognosen på sin aktuella plats, om de slutfört ett köp eller om de uppnått 10 000 förmånspoäng.
 
 På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
@@ -46,7 +46,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 * [Vänta](../building-journeys/wait-activity.md)
 * [Läs målgrupp](../building-journeys/read-audience.md)
 
-![](assets/journey49.png)
+![Paletten Orchestration-aktiviteter i resedesignern](assets/journey49.png)
 
 ## Verksamheter {#action-activities}
 
@@ -58,15 +58,15 @@ På paletten, till vänster på skärmen, under **[!UICONTROL Events]** och **[!
 * [Anpassade åtgärder](../building-journeys/using-custom-actions.md)
 * [Hoppa](../building-journeys/jump.md)
 
-![](assets/journey58.png)
+![Åtgärdsaktivitetspaletten i resedesignern](assets/journey58.png)
 
 Dessa aktiviteter representerar olika tillgängliga kommunikationskanaler. Du kan kombinera dem för att skapa ett flerkanalsscenario.
 
 <!--If you have configured custom actions, they also appear here. [Learn more](../building-journeys/using-custom-actions.md)-->
 
-Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
+Du kan också ange specifika åtgärder för att skicka meddelanden:
 
-* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en särskild anpassad åtgärd. [Läs mer](../action/action.md)
+* Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en specifik anpassad åtgärd. [Läs mer](../action/action.md)
 
 * Om du arbetar med Campaign och Journey Optimizer, se följande avsnitt:
 
@@ -77,7 +77,7 @@ Du kan också ange specifika åtgärder för att skicka meddelanden till dig:
 
 ### Lägga till en etikett
 
-De flesta aktiviteter gör att du kan definiera en **[!UICONTROL Label]**. Detta lägger till ett suffix till namnet som visas under din aktivitet på arbetsytan. Detta är användbart om du använder samma aktivitet flera gånger under resan och vill identifiera dem enklare. Felsökningen blir också enklare om fel uppstår, vilket gör det lättare att läsa rapporterna. Du kan också lägga till en valfri **[!UICONTROL Description]**.
+De flesta aktiviteter gör att du kan definiera en **[!UICONTROL Label]**. Detta lägger till ett suffix till namnet som visas under din aktivitet på arbetsytan. Detta är användbart om du använder samma aktivitet flera gånger under resan och vill identifiera dem enklare. Det underlättar även felsökning vid fel och gör rapporter enklare att läsa. Du kan också lägga till en valfri **[!UICONTROL Description]**.
 
 ![](assets/journey-action-label.png)
 
@@ -91,7 +91,7 @@ De flesta aktiviteter visar ett antal avancerade och/eller tekniska parametrar s
 
 ![](assets/journey-advanced-parameters.png)
 
-För bättre läsbarhet kan du dölja de här parametrarna med knappen **[!UICONTROL Hide read-only fields]**.
+Dölj de här parametrarna med knappen **[!UICONTROL Hide read-only fields]** för bättre läsbarhet.
 
 ![](assets/journey-hide-read-only-fields.png)
 
