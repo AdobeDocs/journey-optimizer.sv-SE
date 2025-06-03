@@ -9,10 +9,10 @@ topic: Administration
 role: Admin
 level: Intermediate
 keywords: produkt, profiler, sandlåda
-source-git-commit: 4847415fa33ebf1c21622ebf4faecafd4decc8d3
+source-git-commit: 8093af8c3e7484f9ebed8dbc50065bcff0459581
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 1%
+source-wordcount: '672'
+ht-degree: 3%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 1%
 
 **[!UICONTROL Roles]** refererar till en samling användare som delar samma behörigheter och sandlådor. Med de här rollerna kan du enkelt hantera åtkomst och behörigheter för olika användargrupper i organisationen.
 
-Med produkten [!DNL Journey Optimizer] kan du välja mellan ett intervall av befintliga **[!UICONTROL Roles]**, var och en med olika behörighetsnivåer, som du kan tilldela användarna. Mer information om tillgängliga **[!UICONTROL Roles]** finns på den här [sidan](ootb-product-profiles.md).
+Med [!DNL Journey Optimizer]-produkten kan du välja mellan ett intervall av befintliga **[!UICONTROL Roles]**, var och en med olika behörighetsnivåer, som du kan tilldela användarna. Mer information om tillgängliga **[!UICONTROL Roles]** finns på den här [sidan](ootb-product-profiles.md).
 
 När en användare tillhör en **[!UICONTROL Role]** får de tillgång till de Adobe-program och -tjänster som ingår i produkten.
 
-Om de befintliga rollerna inte uppfyller organisationens specifika behov kan du även skapa anpassade **[!UICONTROL Roles]** för att finjustera åtkomsten till vissa funktioner eller objekt i gränssnittet. På så sätt kan du se till att alla användare bara har tillgång till de resurser och verktyg de behöver för att kunna utföra sina uppgifter på ett effektivt sätt.
+Om de befintliga rollerna inte uppfyller organisationens specifika behov kan du även skapa anpassade **[!UICONTROL Roles]** för att finjustera åtkomsten till vissa funktioner eller objekt i gränssnittet. På så sätt ser du till att alla användare bara har tillgång till de resurser och verktyg de behöver för att kunna utföra sina uppgifter på ett effektivt sätt.
 
 ## Tilldela en roll {#assigning-role}
 
-Du kan välja att tilldela dina användare en färdig eller anpassad **[!UICONTROL Role]**.
+Du kan tilldela dina användare en användbar eller anpassad **[!UICONTROL Role]**.
 
 Listan över alla användningsklara roller med tilldelade behörigheter finns i avsnittet [Inbyggda roller](ootb-product-profiles.md).
 
@@ -46,17 +46,17 @@ Så här tilldelar du en **[!UICONTROL Role]**:
 
    ![](assets/do-not-localize/access_control_3.png)
 
-1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
+1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte redan har skapats i [!DNL Admin Console] kan du läsa [dokumentationen om att lägga till användare](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/users.html?lang=sv-SE).
+   Om användaren inte redan har skapats i [!DNL Admin Console] kan du läsa [dokumentationen om att lägga till användare](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/users.html){target="_blank"}.
 
    ![](assets/do-not-localize/access_control_4.png)
 
-Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
+Användaren får ett e-postmeddelande som dirigerar om dem till din instans.
 
-Mer information om användarhantering finns i [Åtkomstkontrollsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE).
+Mer information om användarhantering finns i [Åtkomstkontrollsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"}.
 
-När du får åtkomst till instansen visas en specifik vy för användaren beroende på de tilldelade behörigheterna i **[!UICONTROL Role]**. Om användaren inte har rätt åtkomst till en funktion visas följande meddelande:
+När du får åtkomst till instansen ser din användare en specifik vy beroende på de tilldelade behörigheterna i **[!UICONTROL Role]**. Om användaren inte har rätt åtkomst till en funktion visas följande meddelande:
 
 `You don't have permission to access this feature. Permission needed: XX.`
 
@@ -75,13 +75,13 @@ Observera, att om du ändrar ett användningsklart eller anpassat **[!UICONTROL 
 
    ![](assets/do-not-localize/access_control_6.png)
 
-1. Menyn **[!UICONTROL Resources]** visar en lista med resurser som gäller för produkten **[!UICONTROL Experience Cloud - Platform powered applications]**. Dra och släpp resurser för att tilldela behörighet.
+1. Menyn **[!UICONTROL Resources]** visar en lista med resurser som gäller för produkten **[!UICONTROL Experience Cloud - Platform powered applications]**. Dra och släpp resurser för att tilldela behörigheter.
 
    I resurslistrutan **[!UICONTROL Journeys]** väljer vi här Publiceringsresa **[!UICONTROL Permission]**.
 
    ![](assets/do-not-localize/access_control_14.png)
 
-1. Klicka vid behov på X-ikonen bredvid **[!UICONTROL Included Permission Items]** för att ta bort behörigheter eller resurser till din roll.
+1. Klicka vid behov på X-ikonen under **[!UICONTROL Included Permission Items]** för att ta bort behörigheter eller resurser från din roll.
 
 1. Klicka på **[!UICONTROL Save]** när du är klar.
 
@@ -91,9 +91,9 @@ Om det behövs kan du även skapa en ny roll med specifika behörigheter. Mer in
 
 Med [!DNL Journey Optimizer] kan du skapa egna **[!UICONTROL Roles]** och tilldela en uppsättning behörigheter och sandlådor till dina användare. Med **[!UICONTROL Roles]** kan du auktorisera eller neka åtkomst till vissa funktioner eller objekt i gränssnittet.
 
-Mer information om hur du skapar och hanterar sandlådor finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=sv-SE){target="_blank"}.
+Se [dokumentationen om Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"} för mer information om hur du skapar och hanterar sandlådor.
 
-I det här exemplet skapar vi en roll med namnet **Resor skrivskyddade** där vi beviljar skrivskyddade behörigheter till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL &#x200B; Decision management]** i [!DNL Journey Optimizer].
+I det här exemplet skapar vi en roll med namnet **Journeys skrivskyddad**, där vi ger skrivskyddad behörighet till resefunktionen. Användare kommer endast att kunna komma åt och visa resor och kommer inte att kunna komma åt andra funktioner som **[!DNL Decision management]** i [!DNL Journey Optimizer].
 
 Så här skapar du våra **resor med skrivskydd** **[!UICONTROL Role]**:
 
@@ -109,7 +109,7 @@ Så här skapar du våra **resor med skrivskydd** **[!UICONTROL Role]**:
 
    ![](assets/do-not-localize/access_control_13.png)
 
-1. Välj mellan de olika resurser som **[!DNL Journeys]**, **[!DNL Segments]** eller **[!DNL Decision management]** som finns i [!DNL Journey Optimizer] som visas på den vänstra menyn.
+1. Välj bland de olika resurser som **[!DNL Journeys]**, **[!DNL Segments]** eller **[!DNL Decision management]** som finns i [!DNL Journey Optimizer] i listan till vänster.
 
    Här väljer vi resursen **[!UICONTROL Journeys]**.
 
@@ -125,4 +125,4 @@ Så här skapar du våra **resor med skrivskydd** **[!UICONTROL Role]**:
 
 **[!UICONTROL Role]** har skapats och konfigurerats. Du måste nu tilldela den till användare.
 
-Mer information om att skapa och hantera roller finns i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/roles.html?lang=sv-SE).
+Mer information om att skapa och hantera roller finns i [Adobe Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/roles.html){target="_blank"}.

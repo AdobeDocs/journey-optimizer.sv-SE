@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d3f15c09194a50b95107fb84d680606a468f8644
+source-git-commit: 8b0310e91e5b5c1418e8e26f4505bda45146ceba
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2394'
 ht-degree: 20%
 
 ---
@@ -703,7 +703,7 @@ ht-degree: 20%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
@@ -768,12 +768,11 @@ ht-degree: 20%
       + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)
    + [Konfigurera källkopplingen](using/start/get-started-sources.md)
 + Åtkomstkontroll {#access-control}
-   + Översikt över åtkomstkontroll {#privacy}
-      + [Kom igång med användarhantering](using/administration/permissions-overview.md)
-      + [Inbyggda roller](using/administration/ootb-product-profiles.md)
-      + [Inbyggda behörigheter](using/administration/ootb-permissions.md)
-      + [Behörighetsnivåer](using/administration/high-low-permissions.md)
+   + [Kom igång med åtkomstkontroll](using/administration/permissions-overview.md)
    + [Hantera användare och roller](using/administration/permissions.md)
+   + [Inbyggda roller](using/administration/ootb-product-profiles.md)
+   + [Inbyggda behörigheter](using/administration/ootb-permissions.md)
+   + [Behörighetsnivåer](using/administration/high-low-permissions.md)
    + [Attributbaserad åtkomstkontroll](using/administration/attribute-based-access.md)
    + [Åtkomstkontroll på objektnivå](using/administration/object-based-access.md)
 + Sekretess {#privacy}
