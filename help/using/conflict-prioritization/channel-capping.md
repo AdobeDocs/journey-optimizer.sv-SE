@@ -60,7 +60,7 @@ Så här skapar du en kanalregeluppsättning:
 
    * **[!UICONTROL Monthly]**: Frekvensgränsen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
-   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:{59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:&lbrace;59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
 
    * **[!UICONTROL Daily]**: Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställs till 0 i början av nästa dag.
 
