@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
+source-git-commit: 7f535b87e415ae9191199b34476adb5c977b66e9
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2411'
 ht-degree: 20%
 
 ---
@@ -175,36 +175,33 @@ ht-degree: 20%
          + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
          + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Samordnade kampanjer {#orchestrated-campaigns}
-   + [Kom igång med samordnade kampanjer](using/ms/gs-ms-campaigns.md)
-   + [Viktiga principer](using/ms/gs-campaign-creation.md)
-   + [Steg för att skapa samordnade kampanjer](using/ms/gs-campaign-steps.md)
-   + Konfigurationssteg {#ms-config}
-      + [Skapa relationsscheman](using/ms/ms-schemas.md)
-   + Skapandesteg{#create-ms-campaign}
-      + [Skapa en orkestrerad kampanj](using/ms/create-ms-campaign.md)
-      + [Konfigurera kampanjinställningar](using/ms/ms-campaign-settings.md)
-      + [Schemalägg och starta kampanjer](using/ms/start-monitor-campaigns.md)
-      + [Skapa frågor](using/ms/ms-query-modeler.md)
-   + Aktiviteter {#design-campaigns}
-      + [Kom igång med aktiviteter](using/ms/activities/about-activities.md)
-      + [Organisera aktiviteter](using/ms/orchestrate-activities.md)
-      + [Och-join](using/ms/activities/and-join.md)
-      + [Bygg målgrupper](using/ms/activities/build-audience.md)
-      + [Ändra dimension](using/ms/activities/change-dimension.md)
-      + [Kombinera](using/ms/activities/combine.md)
-      + [Deduplicering](using/ms/activities/deduplication.md)
-      + [Berikning](using/ms/activities/enrichment.md)
-      + [Förgrening](using/ms/activities/fork.md)
-      + [Avstämning](using/ms/activities/reconciliation.md)
-      + [Dela](using/ms/activities/split.md)
-      + [Test](using/ms/activities/test.md)
-      + [Vänta](using/ms/activities/wait.md)
-   + Meddelanden {#messages}
-      + [Kanalåtgärder](using/ms/activities/channels.md)
-      + [Anpassa ditt innehåll](using/ms/ms-personalization.md)
-      + [Testa och validera dina meddelanden](using/ms/ms-proofs.md)
-   + Rapportering och övervakning {#report}
-      + [Rapportering](using/ms/reporting-campaigns.md)
+   + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
+   + [Konfigurationssteg](using/orchestrated/configuration-steps.md)
+   + [Viktiga steg för att skapa samordnade kampanjer](using/orchestrated/gs-campaign-creation.md)
+   + Starta din första samordnade kampanj{#launch}
+      + [Skapa en orkestrerad kampanj](using/orchestrated/create-orchestrated-campaign.md)
+      + [Organisera aktiviteter](using/orchestrated/orchestrate-activities.md)
+      + [Skicka meddelanden med samordnade kampanjer](using/orchestrated/send-messages.md)
+      + [Starta och övervaka kampanjen](using/orchestrated/start-monitor-campaigns.md)
+      + [Rapportering](using/orchestrated/reporting-campaigns.md)
+   + Fråga databasen {#query-database}
+      + [Arbeta med Query Modeler](using/orchestrated/orchestrated-query-modeler.md)
+      + [Skapa din första fråga](using/orchestrated/build-query.md)
+      + [Redigera uttryck](using/orchestrated/edit-expressions.md)
+   + Ochestrerade kampanjaktiviteter {#design-campaigns}
+      + [Kom igång med aktiviteter](using/orchestrated/activities/about-activities.md)
+      + [Och-join](using/orchestrated/activities/and-join.md)
+      + [Bygg målgrupper](using/orchestrated/activities/build-audience.md)
+      + [Ändra dimension](using/orchestrated/activities/change-dimension.md)
+      + [Kombinera](using/orchestrated/activities/combine.md)
+      + [Deduplicering](using/orchestrated/activities/deduplication.md)
+      + [Berikning](using/orchestrated/activities/enrichment.md)
+      + [Förgrening](using/orchestrated/activities/fork.md)
+      + [Avstämning](using/orchestrated/activities/reconciliation.md)
+      + [Dela](using/orchestrated/activities/split.md)
+      + [Test](using/orchestrated/activities/test.md)
+      + [Vänta](using/orchestrated/activities/wait.md)
+      + [Kanalaktiviteter](using/orchestrated/activities/channels.md)
 + Kampanjer {#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
@@ -706,7 +703,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
