@@ -7,10 +7,10 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
-source-git-commit: 9606ca5710e6f91159474d76f68cdcbc2128b000
+source-git-commit: 52226a4374fa6321b31ac2d57f76a48594df1c51
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 17%
+source-wordcount: '273'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 17%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -33,7 +33,9 @@ ht-degree: 17%
 
 <br/>
 
-Aktiviteten **Wait** är en **Flow control**-aktivitet. Det används för att en viss tid ska kunna förflyta mellan två aktiviteter som utförs. Om du till exempel vill vänta flera dagar efter en aktivitet där e-post levererats så analyserar du de öppningar och klick som genereras under den här perioden innan du utför några uppföljningsåtgärder (påminnelser via e-post, målgruppsgenerering osv.).
+**Wait**-aktiviteten är en **Flow control**-komponent som används för att skapa en fördröjning mellan två aktiviteter i en orkestrerad kampanj. Detta bidrar till att säkerställa att era uppföljningsaktiviteter är bättre tajmade och mer relevanta för användarengagemanget.
+
+Du kan till exempel vänta några dagar efter en e-postleverans för att spåra öppningar och klickningar innan du skickar ett uppföljningsmeddelande.
 
 ## Konfiguration{#wait-configuration}
 
@@ -41,12 +43,16 @@ Följ de här stegen för att konfigurera aktiviteten **Wait**:
 
 1. Lägg till en **Vänta**-aktivitet i din samordnade kampanj.
 
-1. Ange **Varaktighet** för väntetiden mellan inkommande och utgående övergångar.
+1. Välj den vänttyp som bäst passar dina behov:
 
-1. Välj tidsenhet i fältet **Perioder**: sekunder, minuter, timmar, dagar.
+   * **Varaktighet**: Ange en fördröjning i sekunder, minuter, timmar eller dagar innan du fortsätter till nästa aktivitet.
+
+   * **Fast tid**: Ange ett specifikt datum och en speciell tid efter vilken nästa aktivitet startar.
+
+   ![](../assets/wait_activity.png)
 
 ## Exempel{#wait-example}
 
-I följande exempel visas aktiviteten **Wait** i ett typiskt fall. En e-postinbjudan till ett event skickas.  24 timmar efter att det skickats skickas ett SMS-meddelande till samma population.
+I följande exempel visas aktiviteten **Wait** i ett typiskt fall.  Ett e-postmeddelande med en kampanjkod skickas till profiler som firar sina födelsedagar. Efter 29 dagar skickas ett SMS till samma grupp som en påminnelse om att deras födelsedagskod snart går ut.
 
-![](../assets/workflow-wait-example.png)
+![](../assets/wait-example.png)
