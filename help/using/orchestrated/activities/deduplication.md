@@ -7,10 +7,10 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 4aa79448-f75a-48d5-8819-f4cb4baad5c7
-source-git-commit: 9606ca5710e6f91159474d76f68cdcbc2128b000
+source-git-commit: 01fbf78d15e620fa7b540e3a1a6972949a0c4795
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 15%
+source-wordcount: '689'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 15%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -54,31 +54,34 @@ Aktiviteten **Deduplicering** är en **målaktivitet**. Med den här aktiviteten
 
 Så här konfigurerar du aktiviteten **Deduplicering**:
 
-![](../assets/workflow-deduplication.png)
 
 1. Lägg till en **borttagning av dubbletter**-aktivitet i den orkestrerade kampanjen.
 
 1. I avsnittet **Fält som ska identifiera dubbletter** klickar du på knappen **Lägg till attribut** för att ange för vilka fält identiska värden gör att dubbletter kan identifieras, t.ex. e-postadress, förnamn, efternamn osv. I fältordningen kan du ange vilka som ska behandlas först.
 
-1. I avsnittet **Dedupliceringsinställningar** väljer du antalet unika **dubbletter som ska behållas**. Standardvärdet för det här fältet är 1. Med värdet 0 kan du behålla alla dubbletter.
+![](../assets/deduplication-1.png)
 
-   Om till exempel posterna A och B betraktas som dubbletter av posten Y, och en post C betraktas som en dubblett av posten Z:
+1. I avsnittet **Dedupliceringsinställningar** väljer du hur många unika poster som ska fortsätta att använda fältet Duplicates. Standardvärdet är 1, vilket behåller en post per dubblettgrupp. Ange 0 om du vill behålla alla dubbletter.
 
-   * Om värdet för fältet är 1: endast Y- och Z-posterna behålls.
-   * Om värdet för fältet är 0: alla register förs.
-   * Om värdet för fältet är 2: Posterna C och Z förvaras och två poster från A, B och Y sparas, av en tillfällighet eller beroende på vilken dedupliceringsmetod som valts därefter.
+   Om posterna A och B till exempel är dubbletter av Y och posten C är en dubblett av Z:
 
-1. Välj den **borttagningsmetod** som ska användas:
+   * **Om värdet för fältet är 1** behålls bara Y- och Z-posterna.
+   * **Om värdet för fältet är 0** behålls alla poster (A, B, C, Y, Z).
+   * **Om värdet för fältet är 2** behålls C och Z, plus två värden från A, B och Y, slumpmässigt eller baserat på din dedupliceringsmetod.
+
+1. Välj en **dedupliceringsmetod**, som definierar hur systemet avgör vilka poster som ska behållas från varje grupp av dubbletter:
 
    * **Slumpmässig markering**: Markerar slumpmässigt den post som ska tas bort från dubbletterna.
-   * **Använder ett uttryck**: Behåll de poster där det angivna uttryckets värde är det minsta eller största.
-   * **Värden som inte är tomma**: Behåll de poster som uttrycket inte är tomt för.
-   * **Följ en lista med värden**: Definiera en värdeprioritet för ett eller flera fält. Om du vill definiera värdena klickar du på **Attribut** för att välja ett fält eller skapa ett uttryck och lägger sedan till värdena i rätt tabell. Om du vill definiera ett nytt fält klickar du på knappen **Lägg till** som finns ovanför listan med värden.
+   * **Använder ett uttryck**: Behåller poster med det högsta eller lägsta värdet baserat på ett uttryck som du definierar.
+   * **Värden som inte är tomma**: Behåller poster där det markerade fältet inte är tomt, t.ex. bara behålla profiler med ett telefonnummer.
+   * **Följ en lista med värden**: Gör att du kan prioritera specifika värden för ett eller flera fält, t.ex. kan du prioritera poster med &quot;Land&quot; inställt på Frankrike. Klicka på **Attribut** om du vill välja ett fält eller skapa ett anpassat uttryck. Använd knappen **Lägg till** för att ange önskade värden i prioritetsordningen.
+
+   ![](../assets/deduplication-2.png)
 
 1. Markera alternativet **Generera komplement** om du vill utnyttja den återstående populationen. Komplementet består av alla dubbletter. Därefter läggs ytterligare en övergång till aktiviteten.
 
 ## Exempel{#deduplication-example}
 
-I följande exempel använder du en dedupliceringsaktivitet för att exkludera dubbletter från målet innan du skickar en leverans. De identifierade duplicerade profilerna läggs till i en dedikerad målgrupp som kan återanvändas om det behövs. Identifiera dubbletterna genom att välja **E-postadress**. Behåll 1 post och välj borttagningsmetoden **Slumpmässig**.
+I följande exempel används en **borttagning av dubbletter**-aktivitet för att ta bort dubblettposter från målgruppen innan en leverans skickas. Publiken filtreras först så att den bara innehåller profiler med ett e-postfält som inte är tomt. Sedan använder aktiviteten **Deduplicering** e-postadressen för att identifiera och exkludera dubbletter.
 
-![](../assets/workflow-deduplication-example.png)
+![](../assets/deduplication-3.png)

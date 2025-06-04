@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
-source-git-commit: 9606ca5710e6f91159474d76f68cdcbc2128b000
+source-git-commit: 01fbf78d15e620fa7b540e3a1a6972949a0c4795
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 <br/>
 
-Aktiviteten **Dela** är en **målaktivitet** som gör att du kan segmentera inkommande populationer i flera deluppsättningar baserat på olika urvalskriterier, till exempel filtreringsregler eller populationsstorlek.
+Aktiviteten **Dela** är en **målaktivitet** som delar in den inkommande populationen i flera deluppsättningar baserat på definierade urvalskriterier som filtreringsregler eller populationsstorlek.
 
 ## Konfigurera aktiviteten Dela {#split-configuration}
 
@@ -83,40 +83,39 @@ Följ de här stegen för att konfigurera aktiviteten **Dela**:
 
 1. Aktivitetskonfigurationsrutan öppnas med en standarddelmängd. Klicka på knappen **Lägg till segment** om du vill lägga till så många delmängder som behövs för att segmentera den inkommande populationen.
 
-   ![](../assets/workflow-split.png)
+   ![](../assets/orchestrated-split-1.png)
 
    >[!IMPORTANT]
    >
-   >När aktiviteten **Dela** körs segmenteras populationen över de olika delmängderna i den ordning som de läggs till i aktiviteten. Om till exempel den första delmängden återställer 70 % av den ursprungliga populationen, kommer nästa tillagda delmängd endast att tillämpa sina urvalskriterier på de återstående 30 %, och så vidare.
+   >**Dela**-aktiviteten bearbetar delmängder i den ordning som de läggs till. Om den första delmängden till exempel tar 70 % av populationen tillämpas nästa på de återstående 30 %.
    >
-   >Innan du påbörjar en strukturerad kampanj måste du se till att du har beställt delmängderna i den ordning som passar dina behov. Det gör du genom att använda pilknapparna för att ändra positionen för en delmängd.
+   >Innan du kör en orkestrerad kampanj måste du se till att delmängderna är beställda på rätt sätt. Använd pilknapparna för att justera deras placering.
 
 1. När deluppsättningar har lagts till visar aktiviteten så många utdataövergångar som det finns deluppsättningar. Vi rekommenderar starkt att du ändrar etiketten för varje delmängd för att enkelt identifiera dem i den orkestrerade kampanjarbetsytan.
 
-1. Konfigurera hur varje delmängd ska filtrera den inkommande populationen. Följ dessa steg för att göra detta:
+1. Konfigurera filter för varje delmängd:
 
-   1. Öppna delmängden för att visa dess egenskaper.
+   1. Klicka på en delmängd för att öppna dess inställningar.
 
-   1. Om du vill använda ett filtreringsvillkor för delmängden klickar du på **[!UICONTROL Create filter]** och konfigurerar den önskade filtreringsregeln med frågemodelleraren. Ta till exempel med profiler från den inkommande populationen vars e-postadress finns i databasen.
+   1. Klicka på **[!UICONTROL Create filter]** om du vill definiera filtreringsregler med frågemodelleraren, till exempel, markera profiler med en giltig e-postadress.
 
-   1. Om du vill begränsa antalet profiler som markeras av delmängden aktiverar du alternativet **[!UICONTROL Enable limit]** och anger antalet eller procentsatserna för den population som ska inkluderas.
+      ![](../assets/orchestrated-split-1.png)
 
-   1. Om du vill inaktivera en övergång om den inkommande populationen är tom aktiverar du alternativet **[!UICONTROL Skip empty transition]**. Om ingen profil matchar delmängden kommer den orkestrerade kampanjen inte att övergå till nästa aktivitet.
+   1. Om du vill begränsa antalet valda profiler aktiverar du **[!UICONTROL Enable limit]** och anger ett tal eller en procentandel.
 
-      ![](../assets/workflow-split-subset.png)
+   1. Aktivera **[!UICONTROL Skip empty transition]om du vill hoppa över en övergång när delmängden är tom.**
 
-1. När du har konfigurerat alla deluppsättningar kan du välja den återstående populationen som inte matchade någon av deluppsättningarna och inkludera dem i en ytterligare utgående övergång. Aktivera alternativet **[!UICONTROL Generate complement]** om du vill göra det.
-
-   ![](../assets/workflow-split-complement.png)
+1. Aktivera **[!UICONTROL Generate complement]** om du vill inkludera profiler som inte matchas av någon delmängd. Detta skapar en ytterligare utgående övergång för den återstående populationen.
 
    >[!NOTE]
    >
-   >Med alternativet **[!UICONTROL Generate all subsets in the same table]** kan du gruppera alla delmängder till en enda utdataövergång.
+   >Aktivera **[!UICONTROL Generate all subsets in the same table]** för att gruppera alla delmängder i en enda övergång.
 
-1. Med alternativet **[!UICONTROL Enable overlapping of output populations]** kan du hantera populationer som tillhör flera delmängder:
+1. Använd **[!UICONTROL Enable overlapping of output populations]** om du vill tillåta att profiler visas i flera deluppsättningar:
 
-   * När rutan inte är markerad ser delningsaktiviteten till att en mottagare inte kan finnas i flera utdataövergångar, även om den uppfyller villkoren för flera delmängder. De kommer att vara i målet för den första fliken med matchande villkor.
-   * När rutan är markerad kan mottagarna hittas i flera delmängder om de uppfyller filtervillkoren. Det bästa sättet är att använda exklusiva kriterier.
+   * **Om alternativet inte är markerat** tilldelas varje profil endast en delmängd, den första vars villkor matchar även om den kvalificerar för andra delmängder.
+
+   * **Om det här alternativet är markerat** kan profiler inkluderas i flera deluppsättningar om de uppfyller villkoren för var och en.
 
 Aktiviteten är nu konfigurerad. Vid genomförande av samordnade kampanjer kommer populationen att segmenteras i olika delmängder, i den ordning som de har lagts till i aktiviteten.
 
@@ -124,8 +123,10 @@ Aktiviteten är nu konfigurerad. Vid genomförande av samordnade kampanjer komme
 
 I följande exempel används aktiviteten **[!UICONTROL Split]** för att segmentera en målgrupp i distinkta delmängder baserat på kommunikationskanalen som vi vill använda:
 
-* **Delmängd 1 &quot;push&quot;**: Den här delmängden innehåller alla profiler som har installerat vårt mobilprogram.
-* **Delmängd 2 &quot;sms&quot;**: Användare av mobiltelefoner: För den återstående populationen som inte ingick i delmängd 1 tillämpar delmängd 2 en filtreringsregel för att välja profiler med mobiltelefoner i databasen.
-* **Kompletteringsövergång**: Den här övergången fångar alla återstående profiler som inte matchade delmängd 1 eller delmängd 2. Det omfattar profiler som varken har installerat mobilappen eller en mobiltelefon, till exempel användare som inte har installerat mobilappen eller saknar ett registrerat mobilnummer.
+* **Delmängd 1 &quot;email&quot;**: innehåller profiler som har angett ett telefonnummer.
 
-![](../assets/workflow-split-example.png)
+* **Delmängd 2 &quot;sms&quot;**: Målprofiler med ett mobiltelefonnummer som lagras i databasen.
+
+* **Kompletteringsövergång**: hämtar alla återstående profiler som inte uppfyller villkoren för någon av delmängderna.
+
+![](../assets/orchestrated-split-3.png)
