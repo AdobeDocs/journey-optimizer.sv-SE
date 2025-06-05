@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärder, resa, meddelanden, sändning, anslutningar
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: bb2272e6959d896fb6b3286cec2c16a545a9f671
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 20%
+source-wordcount: '270'
+ht-degree: 44%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_list"
 >title="Anpassade åtgärder"
->abstract="Åtgärder är kopplingar genom vilka ni levererar personaliserade upplevelser i realtid till kunder, till exempel push-meddelanden, e-post eller andra sätt för digitalt engagemang som ni använder i ert företag."
+>abstract="Åtgärder är anslutningar genom vilka du levererar personaliserade upplevelser till kunder i realtid såsom push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som du använder i företaget."
 
-Åtgärder är kopplingar genom vilka ni levererar personaliserade upplevelser i realtid till kunder, till exempel push-meddelanden, e-post eller andra sätt för digitalt engagemang som ni använder i ert företag.
+Åtgärder är anslutningar genom vilka du levererar personaliserade upplevelser till kunder i realtid såsom push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som du använder i företaget.
 
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 [!DNL Journey Optimizer] har inbyggd meddelandefunktion. Med anpassade åtgärder kan du konfigurera anslutningar med ett tredjepartssystem för att skicka meddelanden eller API-anrop. En åtgärd kan konfigureras med alla tjänster från alla leverantörer som kan anropas via ett REST API med en JSON-formaterad nyttolast.
 
@@ -48,4 +48,4 @@ Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd väljer du **[!
 
 Lär dig hur du konfigurerar anpassade åtgärder.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430273?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428396?quality=12)
