@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
-source-git-commit: 9606ca5710e6f91159474d76f68cdcbc2128b000
+source-git-commit: 457445e1c5f3e5819b484a26e9944f1295726d1e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 <br/>
 
-Som marknadsförare kan ni ändra målinriktningsdimensionen från en enhet till en annan länkad enhet inom en orkestrerad kampanj och förfina målgruppsanpassningen baserat på olika datauppsättningar, som att gå från profileringsanvändare till målinriktning för specifika åtgärder eller bokningar.
+Som marknadsförare kan ni förfina målgruppsanpassningen genom att byta från en datatabell till en annan länkad enhet inom en orkestrerad kampanj. På så sätt kan ni gå över från målgruppsprofiler till fokusering på specifika åtgärder, som inköp, bokningar eller andra interaktioner.
 
-Använd målinriktningsaktiviteten **Ändra dimension** om du vill utföra detta. Med den här aktiviteten kan ni ändra målgruppsdimensionen när ni skapar er samordnade kampanj. Axeln flyttas beroende på datamallen och indatamängden.
+Använd aktiviteten **[!UICONTROL Change dimension]** om du vill göra det. Det gör att ni kan ändra målinriktningsdimensionen under den samordnade kampanjen, baserat på datamodellens struktur och indatadimensionen.
 
-Du kan t.ex. växla från&quot;profil&quot; till&quot;kontrakt&quot; för en orkestrerad kampanjs målinriktning för att skicka meddelanden till den avsedda avtalsägaren.
+Du kan till exempel ändra målinriktningsdimensionen från **Profil** till **Kontrakt** för att skicka meddelanden direkt till de avtalsägare som är kopplade till den valda målgruppen.
 
 <!--
 >[!IMPORTANT]
@@ -63,8 +63,10 @@ Följ de här stegen för att konfigurera aktiviteten **Ändra dimension**:
 
 ## Exempel {#example}
 
-I det här exemplet vill vi skicka en SMS-leverans till alla profiler som har gjort ett köp. För att göra detta använder vi först en **[!UICONTROL Build audience]**-aktivitet som är länkad till en anpassad målgruppsdimension för inköp för alla köp som har gjorts.
+Det här användningsexemplet innebär att ett SMS skickas till profiler som har skapat en önskelista den senaste månaden.
 
-Sedan använder vi en **[!UICONTROL Change dimension]**-aktivitet för att växla den orkestrerade målgruppsdimensionen för kampanjer till mottagare. På så sätt kan vi rikta in oss på de mottagare som matchar frågan.
+Börja med en **[!UICONTROL Build audience]**-aktivitet och använd målinriktningsdimensionen **Önstlista** för att välja alla relevanta önskelistor.
+
+Infoga sedan en **[!UICONTROL Change dimension]**-aktivitet för att växla måldimensionen från **Önsklista** till **Mottagare**. Detta gör att den samordnade kampanjen kan skicka SMS:et till de profiler som är associerade med dessa önskelistor.
 
 ![](../assets/change-dimension-example.png)

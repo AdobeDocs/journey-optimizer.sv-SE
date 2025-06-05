@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7f535b87e415ae9191199b34476adb5c977b66e9
+source-git-commit: 5872e192c849b7a7909f0b50caa1331b15490d79
 workflow-type: tm+mt
 source-wordcount: '2411'
 ht-degree: 20%
@@ -185,7 +185,7 @@ ht-degree: 20%
       + [Starta och övervaka kampanjen](using/orchestrated/start-monitor-campaigns.md)
       + [Rapportering](using/orchestrated/reporting-campaigns.md)
    + Fråga databasen {#query-database}
-      + [Arbeta med Query Modeler](using/orchestrated/orchestrated-query-modeler.md)
+      + [Arbeta med regelbyggaren](using/orchestrated/orchestrated-rule-builder.md)
       + [Skapa din första fråga](using/orchestrated/build-query.md)
       + [Redigera uttryck](using/orchestrated/edit-expressions.md)
    + Ochestrerade kampanjaktiviteter {#design-campaigns}
@@ -703,7 +703,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)

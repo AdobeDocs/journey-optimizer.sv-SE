@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
-source-git-commit: 9606ca5710e6f91159474d76f68cdcbc2128b000
+source-git-commit: 457445e1c5f3e5819b484a26e9944f1295726d1e
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-query-modeler.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -36,7 +36,7 @@ Alla aktiviteter beskrivs i avsnitten nedan:
 * [Kanalaktiviteter](#channel)
 * [Flödeskontroll](#flow-control)
 
-![Lista över tillgängliga aktiviteter på arbetsytan](../assets/workflow-activities.png){width="80%" align="left"}
+![Lista över tillgängliga aktiviteter på arbetsytan](../assets/orchestrated-activities.png){width="80%" align="left"}
 
 ## Verksamheter som riktar sig till {#targeting}
 
@@ -54,7 +54,7 @@ Dessa aktiviteter är specifika för målgruppsanpassning. Med dem kan du skapa 
 
 ## Kanalaktiviteter {#channel}
 
-Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i flera kanaler. Ni kan kombinera kanalaktiviteter på arbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende. Följande **kanalaktiviteter** är tillgängliga: E-post, SMS, Android och iOS push-meddelanden. [Lär dig hur du skapar en kanalåtgärd i samband med en orkestrerad kampanj](channels.md).
+Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i flera kanaler. Ni kan kombinera kanalaktiviteter på arbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende. Följande **kanalaktiviteter** är tillgängliga: E-post och SMS. [Lär dig hur du skapar en kanalåtgärd i samband med en orkestrerad kampanj](channels.md).
 
 ## Flödeskontroll {#flow-control}
 
@@ -69,8 +69,8 @@ Följande aktiviteter är specifika för att organisera och köra samordnade kam
 
 * [And-join](and-join.md): Synkronisera flera körningsgrenar för en orkestrerad kampanj.
 * [Förgrening](fork.md): Skapa utgående övergångar om du vill starta flera aktiviteter samtidigt.
-  <!--* [Test](test.md): Enable transitions based on specified conditions.-->
 * [Vänta](wait.md): Pausa körningen av en del av en orkestrerad kampanj tillfälligt.
+  <!--* [Test](test.md): Enable transitions based on specified conditions.-->
 
 >[!NOTE]
 >Aktiviteten **End** markerar slutet på en orkestrerad kampanj grafiskt. Denna aktivitet har ingen funktionell inverkan och är därför valfri
