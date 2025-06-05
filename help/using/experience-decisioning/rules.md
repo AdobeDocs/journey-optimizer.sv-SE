@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
-source-git-commit: 8418b0c9251e090575671acb65f83bee911cd039
+source-git-commit: 1ca6ea08e177989a0aea8646ca28b1216644fd3e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '437'
 ht-degree: 2%
 
 ---
@@ -42,13 +42,16 @@ Så här skapar du en beslutsregel:
 
 1. Skärmen för att skapa beslutsregler öppnas. Ge regeln ett namn och ange en beskrivning.
 
-1. Bygg en beslutsregel som passar dina behov med Adobe Experience Platform Segment Builder. För att göra detta kan du utnyttja olika datakällor, t.ex. profilattribut, målgrupper eller kontextdata från Adobe Experience Platform. [Lär dig hur du använder kontextdata](#context-data)
+1. Bygg en beslutsregel som passar dina behov med Adobe Experience Platform Segment Builder. Om du vill göra det kan du utnyttja olika datakällor, till exempel:
+   * Profilattribut och beslutsattribut
+   * Målgrupper,
+   * Kontextdata från Adobe Experience Platform. [Lär dig hur du använder kontextdata](#context-data)
 
    ![](assets/decision-rules-build.png)
 
    >[!NOTE]
    >
-   >Segment Builder som används för att skapa beslutsregler har vissa särdrag jämfört med den som används i Adobe Experience Platform Segmentation Service.  Den globala process som beskrivs i dokumentationen är dock fortfarande giltig för att skapa beslutsregler. [Lär dig hur du skapar segmentdefinitioner](../audience/creating-a-segment-definition.md)
+   >Segment Builder som används för att skapa beslutsregler har vissa särdrag jämfört med den som används i Adobe Experience Platform Segmentation Service. Den globala process som beskrivs i dokumentationen är dock fortfarande giltig för att skapa beslutsregler. [Lär dig hur du skapar segmentdefinitioner](../audience/creating-a-segment-definition.md)
 
 1. När du lägger till och konfigurerar nya fält på arbetsytan visas information om de beräknade profilerna som tillhör målgruppen i rutan **[!UICONTROL Audience properties]**. Klicka på **[!UICONTROL Refresh estimate]** för att uppdatera data.
 
