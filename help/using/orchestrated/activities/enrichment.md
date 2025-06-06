@@ -7,10 +7,10 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
-source-git-commit: 5872e192c849b7a7909f0b50caa1331b15490d79
+source-git-commit: f387eecbb7fd98adaa9911f5da7bed76d746cd7b
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 0%
+source-wordcount: '522'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -33,31 +33,11 @@ ht-degree: 0%
 
 <br/>
 
-Aktiviteten **Enrichment** är en **Target**-aktivitet. Det gör att du kan förbättra måldata med ytterligare information från databasen. Det används ofta i ett arbetsflöde efter segmenteringsaktiviteter.
+Aktiviteten **[!UICONTROL Enrichment]** är en **[!UICONTROL Targeting]**-aktivitet som gör att du kan förbättra dina målgruppsdata med ytterligare attribut.
 
-Anrikningsdata kan komma antingen:
-
-* **Från samma arbetstabell** som den som är riktad till din samordnade kampanj:
-
-  *Ange en grupp kunder som mål och lägg till fältet &quot;Födelsedatum&quot; i den aktuella arbetstabellen*.
-
-* **Från en annan arbetstabell**:
-
-  *Aktivera en grupp kunder och lägg till fälten Belopp och Produkttyp som kommer från tabellen Inköp*.
-
-När anrikningsdata har lagts till i den orkestrerade kampanjen kan de användas i aktiviteter som lagts till efter **Enrichment** -aktiviteten för att segmentera kunder i distinkta grupper baserat på deras beteenden, önskemål och behov, eller för att skapa personaliserade marknadsföringsmeddelanden och kampanjer som troligtvis får genklang hos målgruppen.
-
-Du kan till exempel lägga till information om kundernas inköp i den samordnade kampanjarbetstabellen och använda dessa data för att anpassa e-postmeddelanden med deras senaste köp eller hur mycket som spenderas på dessa inköp.
+Ni kan använda den här informationen för att segmentera er målgrupp mer exakt, baserat på beteenden, preferenser eller behov, och för att skapa personaliserade meddelanden som bättre kan kopplas till varje profil.
 
 ## Lägg till en anrikningsaktivitet {#enrichment-configuration}
-
-Så här konfigurerar du aktiviteten **Enrichment**:
-
-1. Lägg till aktiviteter som **Skapa målgrupp** och **Kombinera** aktiviteter.
-1. Lägg till en **anrikningsaktivitet**.
-1. Om flera övergångar har konfigurerats i din samordnade kampanj kan du använda fältet **[!UICONTROL Primary set]** för att definiera vilken övergång som ska användas som primär uppsättning för att utöka med data.
-
-## Lägg till anrikningsdata {#enrichment-add}
 
 >[!CONTEXTUALHELP]
 >id="ajo_targetdata_personalization_enrichmentdata"
@@ -69,215 +49,239 @@ Så här konfigurerar du aktiviteten **Enrichment**:
 >title="Anrikningsaktivitet"
 >abstract="När data om berikning har lagts till i den orkestrerade kampanjen kan de användas i aktiviteter som lagts till efter Enrichment-aktiviteten för att segmentera kunder i distinkta grupper baserat på deras beteenden, önskemål och behov, eller för att skapa personaliserade marknadsföringsmeddelanden och kampanjer som troligtvis får genklang hos målgruppen."
 
+Så här konfigurerar du aktiviteten **Enrichment**:
+
+1. Lägg till en **anrikningsaktivitet**.
+
 1. Klicka på **Lägg till anrikningsdata** och markera attributet som ska användas för att utöka data.
 
    Du kan välja två typer av anrikningsdata: ett enskilt anrikningsattribut från måldimensionen eller en samlingslänk. Var och en av dessa typer beskrivs i exemplen nedan:
+
    * [Single enrichment-attribut](#single-attribute)
    * [Samlingslänk](#collection-link)
 
-   >[!NOTE]
-   >
-   >Med knappen **Redigera uttryck** i attributmarkeringsskärmen kan du skapa avancerade uttryck för att välja attributet.
-
-   ![](../assets/workflow-enrichment1.png)
-
-## Skapa länkar mellan tabeller {#create-links}
-
->[!CONTEXTUALHELP]
->id="ajo_orchestration_enrichment_simplejoin"
->title="Länkdefinition"
->abstract="Skapa en länk mellan arbetstabelldata och Adobe Journey Optimizer. Om du till exempel läser in data från en fil som innehåller mottagarnas kontonummer, land och e-postadress måste du skapa en länk till landstabellen för att kunna uppdatera informationen i deras profiler."
-
-I avsnittet **[!UICONTROL Link definition]** kan du skapa en länk mellan arbetstabelldata och Adobe Journey Optimizer. Om du till exempel läser in data från en fil som innehåller mottagarnas kontonummer, land och e-postadress måste du skapa en länk till landstabellen för att kunna uppdatera informationen i deras profiler.
-
-Det finns flera typer av länkar:
-
-* **[!UICONTROL 1 cardinality simple link]**: Varje post från den primära uppsättningen kan associeras med en och endast en post från de länkade data.
-* **[!UICONTROL 0 or 1 cardinality simple link]**: Varje post från den primära uppsättningen kan associeras med 0 eller 1 post från de länkade data, men inte mer än en.
-* **[!UICONTROL N cardinality collection link]**: Varje post från den primära uppsättningen kan associeras med 0, 1 eller fler (N) poster från de länkade data.
-
-Så här skapar du en länk:
-
-1. Klicka på knappen **[!UICONTROL Add link]** i avsnittet **[!UICONTROL Link definition]**.
-
-   ![](../assets/workflow-enrichment-link.png)
-
-1. Välj den typ av länk du vill skapa i listrutan **Relationstyp**.
-
-1. Identifiera det mål som du vill länka den primära uppsättningen till:
-
-   * Om du vill länka en befintlig tabell i databasen väljer du **[!UICONTROL Database schema]** och markerar den önskade tabellen i fältet **[!UICONTROL Target schema]**.
-   * Om du vill länka till data från indataövergången väljer du **Tillfälligt schema** och väljer den övergång vars data du vill använda.
-
-1. Definiera avstämningskriterierna för att matcha data från den primära uppsättningen med det länkade schemat. Det finns två typer av kopplingar:
-
-   * **Enkel koppling**: Välj ett specifikt attribut för att matcha data från de två scheman. Klicka på **Lägg till join** och välj de **Source** - och **Destination** -attribut som ska användas som avstämningsvillkor.
-   * **Avancerad join**: Skapa en join med avancerade villkor. Klicka på **Lägg till koppling** och klicka på knappen **Skapa villkor** för att öppna frågemodelleraren.
-
-Ett arbetsflödesexempel med länkar finns i avsnittet [Exempel](#link-example).
-
-## Datavstämning {#reconciliation}
-
->[!CONTEXTUALHELP]
->id="ajo_orchestration_enrichment_reconciliation"
->title="Avstämning"
->abstract="Aktiviteten **Enrichment** kan användas för att stämma av data från Journey Optimizer-schemat med data från ett annat schema, eller med data från ett tillfälligt schema, till exempel data som överförts med en Läs in filaktivitet. Den här typen av länk definierar en avstämning mot en unik post. Journey Optimizer skapar en länk till en måltabell genom att lägga till en sekundärnyckel i den för att lagra en referens till den unika posten."
-
-Aktiviteten **Enrichment** kan användas för att stämma av data från Campaign-databasschemat med data från ett annat schema, eller med data från ett temporärt schema, till exempel data som överförts med en Läs in filaktivitet. Den här typen av länk definierar en avstämning mot en unik post. Journey Optimizer skapar en länk till en måltabell genom att lägga till en sekundärnyckel i den för att lagra en referens till den unika posten.
-
-Du kan till exempel använda det här alternativet för att stämma av en profils land, som anges i en överförd fil, med något av de länder som är tillgängliga i den dedikerade tabellen i Campaign-databasen.
-
-Följ stegen för att konfigurera en **anrikningsaktivitet** med en avstämningslänk:
-
-1. Klicka på knappen **Lägg till länk** i avsnittet **Avstämning**.
-1. Identifiera de data som du vill skapa en avstämningslänk med.
-
-   * Om du vill skapa en avstämningslänk med data från Campaign-databasen väljer du **Databasschema** och väljer det schema där målet lagras.
-   * Om du vill skapa en avstämningslänk med data från indataövergången väljer du **Tillfälligt schema** och väljer den orkestrerade kampanjövergång där måldata lagras.
-
-1. Fälten **Etikett** och **Namn** fylls i automatiskt baserat på det valda målschemat. Du kan ändra deras värden om det behövs.
-
-1. I avsnittet **Avstämningskriterier** anger du hur du vill stämma av data från käll- och måltabellerna:
-
-   * **Enkel koppling**: Stäm av ett specifikt fält från källtabellen med ett annat fält i måltabellen. Det gör du genom att klicka på knappen **Lägg till koppling** och ange fälten **Source** och **Mål** som ska användas för avstämningen.
-
-     >[!NOTE]
-     >
-     >Du kan använda ett eller flera **enkla join** -villkor, och då måste alla verifieras så att data kan länkas samman.
-
-   * **Avancerad join**: Använd frågemodelleraren för att konfigurera avstämningsvillkoren. Det gör du genom att klicka på knappen **Skapa villkor** och sedan definiera dina avstämningsvillkor genom att skapa en egen regel med hjälp av AND- och OR-åtgärder.
-
-I exemplet nedan visas en strukturerad kampanj som konfigurerats för att skapa en länk mellan Journey Optimizer-profiltabellen och en tillfällig tabell som genererats en **Läs in fil** -aktivitet. I det här exemplet avstäms båda tabellerna av aktiviteten **Enrichment** med e-postadressen som avstämningskriterier.
-
-![](../assets/enrichment-reconciliation.png)
-
-## Lägg till erbjudanden {#add-offers}
-
->[!CONTEXTUALHELP]
->id="ajo_orchestration_enrichment_offer_proposition"
->title="Erbjudandeförslag"
->abstract="Med aktiviteten Anrikning kan du lägga till erbjudanden för varje profil."
-
-Med aktiviteten **[!UICONTROL Enrichment]** kan du lägga till erbjudanden för varje profil.
-
-Så här konfigurerar du en **[!UICONTROL Enrichment]**-aktivitet med ett erbjudande:
-
-1. Klicka på knappen **[!UICONTROL Add offer]** i **[!UICONTROL Enrichment]**-aktiviteten i avsnittet **[!UICONTROL Offer proposition]**
-
-   ![](../assets/enrichment-addoffer.png)
-
-1. Du kan välja mellan två alternativ:
-
-   * **[!UICONTROL Search for the best offer in category]** : Markera det här alternativet och ange parametrarna för uppringning av erbjudandemotor (erbjudandeutrymme, kategori eller tema, kontaktdatum, antal erbjudanden som ska behållas). Motorn beräknar det/de bästa erbjudandena som ska läggas till enligt dessa parametrar. Vi rekommenderar att du fyller i antingen kategorin eller temafältet, i stället för båda samtidigt.
-
-     ![](../assets/enrichment-bestoffer.png)
-
-   * **[!UICONTROL A predefined offer]** : Markera det här alternativet och ange ett erbjudandeutrymme, ett specifikt erbjudande och ett kontaktdatum för att direkt konfigurera det erbjudande du vill lägga till, utan att anropa erbjudandemotorn.
-
-     ![](../assets/enrichment-predefinedoffer.png)
-
-1. När du har valt ditt erbjudande klickar du på knappen **[!UICONTROL Confirm]**.
-
-Nu kan du använda erbjudandet i leveransaktiviteten.
-
-### Använda erbjudanden från anrikningsaktiviteten
-
-Om du vill använda erbjudanden från en anrikningsaktivitet i leveransen i en orkestrerad kampanj följer du stegen nedan:
-
-1. Öppna leveransaktiviteten och gå till innehållsutgåvan. Klicka på knappen **[!UICONTROL Offers settings]** och välj den **[!UICONTROL Offers space]** som motsvarar ditt erbjudande i listrutan.
-Om du bara vill visa erbjudanden från anrikningsaktiviteten anger du antalet **[!UICONTROL Propositions]** till 0 och sparar ändringarna.
-
-   ![](../assets/offers-settings.png)
-
-1. När du lägger till en anpassning med erbjudanden i e-postdesignern klickar du på ikonen **[!UICONTROL Propositions]**. Då visas de erbjudanden du får från aktiviteten **[!UICONTROL Enrichment]**. Öppna det erbjudande du vill välja genom att klicka på det.
-
-   ![](../assets/offers-propositions.png)
-
-   Gå in **[!UICONTROL Rendering functions]** och välj **[!UICONTROL HTML rendering]** eller **[!UICONTROL Text rendering]** efter dina behov.
-
-   ![](../assets/offers-rendering.png)
-
->[!NOTE]
->
->Om du väljer att ha fler än ett erbjudande i aktiviteten **[!UICONTROL Enrichment]** vid alternativet **[!UICONTROL Number of offers to keep]** visas alla erbjudanden när du klickar på ikonen **[!UICONTROL Propositions]** .
+   ![](../assets/enrichment-1.png)
 
 ## Exempel {#example}
 
 ### Single enrichment-attribut {#single-attribute}
 
-Här lägger vi bara till ett enda anrikningsattribut, till exempel födelsedatumet. Följ de här stegen:
+I det här exemplet berikar ni publiken med ett enda attribut, till exempel födelsedatum, från den aktuella målgruppsdimensionen.
 
-1. Klicka i fältet **Attribut**.
-1. Välj ett enkelt fält från målgruppsdimensionen, födelsedatumet i vårt exempel.
-1. Klicka på **Bekräfta**.
+Så här gör du:
 
-![](../assets/workflow-enrichment2.png)
+1. Klicka på **[!UICONTROL Add enrichment data]**.
+
+1. Välj ett enkelt fält, till exempel **[!UICONTROL Date of birth]**, från den aktuella dimensionen.
+
+   ![](../assets/enrichment-2.png)
+
+1. Klicka på **[!UICONTROL Confirm]**.
 
 ### Samlingslänk {#collection-link}
 
-I det här mer komplicerade fallet väljer vi en samlingslänk som är en länk med en 1-N-kardinalitet mellan tabellerna. Vi hämtar de tre senaste inköpen som är mindre än 100$. Därför måste du definiera:
+Det här användningsfallet berikar er målgrupp med data från en länkad tabell. Du vill till exempel hämta de tre senaste inköpen under 100 USD.
 
-* ett anrikningsattribut: fältet **Price**
-* antalet rader som ska hämtas: 3
-* ett filter: filtrera bort objekt som är större än 100$
-* en sortering: fallande sortering i fältet **Beställningsdatum**.
+För att uppnå detta ska du konfigurera anrikningen enligt följande:
+
+* **Anrikningsattribut**: **[!UICONTROL Price]**
+
+* **Antal poster att hämta**: 3
+
+* **Filter**: Inkludera endast inköp där **[!UICONTROL Price]** är mindre än 100 dollar
 
 #### Lägg till attributet {#add-attribute}
 
-Här väljer du den samlingslänk som ska användas som anrikningsdata.
+Markera först samlingslänken som innehåller de data som du vill utöka med.
 
-1. Klicka i fältet **Attribut**.
-1. Klicka på **Visa avancerade attribut**.
-1. Välj fältet **Pris** i tabellen **Inköp**.
+1. Klicka på **[!UICONTROL Add enrichment data]**.
 
-<!-- ![](../assets/workflow-enrichment3.png) -->
+1. Markera fältet **[!UICONTROL Price]** i tabellen **[!UICONTROL Purchases]**.
+
+   ![](../assets/enrichment-2.png)
 
 #### Definiera samlingsinställningarna{#collection-settings}
 
-Definiera sedan hur data samlas in och hur många poster som ska hämtas.
+Konfigurera sedan hur data ska samlas in och hur många poster som ska inkluderas.
 
-1. Välj **Samla in data** i listrutan **Välj hur data samlas in**.
-1. Skriv &quot;3&quot; i fältet **Rader som ska hämtas (kolumner som ska skapas)**.
+1. Välj **[!UICONTROL Collect data]** i listrutan **[!UICONTROL Select how the data is collected]**.
 
-![](../assets/workflow-enrichment4bis.png)
+   ![](../assets/enrichment-4.png)
 
-Om du till exempel vill få fram det genomsnittliga antalet inköp för en kund väljer du **Aggregerade data** i stället och väljer **Jämka** i listrutan **Aggregerade data**.
+1. Ange `3` i fältet **[!UICONTROL Lines to retrieve (Columns to create)]**.
 
-Använd fälten **Etikett** och **Alias** för attributet för att göra det lättare att förstå, vilket visas nedan.
+1. Om du vill utföra en aggregering (t.ex. genomsnittligt inköpsbelopp) väljer du **[!UICONTROL Aggregated data]** och sedan **[!UICONTROL Average]** i listrutan **[!UICONTROL Aggregate function]**.
 
-![](../assets/workflow-enrichment5bis.png)
+   ![](../assets/enrichment-5.png)
+
+1. Använd fälten **[!UICONTROL Label]** och **[!UICONTROL Alias]** för att göra det enklare att identifiera de berikade attributen i efterföljande aktiviteter.
 
 #### Definiera filtren{#collection-filters}
 
-Här definierar vi det högsta värdet för anrikningsattributet. Vi filtrerar bort objekt som är större än 100$.
-1. Klicka på **Skapa filter**.
-1. Lägg till följande två filter: **Price** finns OCH **Price** är mindre än 100. Den första filtrerar NULL-värden så som de skulle visas som det största värdet.
-1. Klicka på **Bekräfta**.
+Lägg slutligen på filter för att säkerställa att endast relevanta poster inkluderas:
 
-![](../assets/workflow-enrichment6bis.png)
+1. Klicka på **[!UICONTROL Create filters]**.
 
-#### Definiera sorteringen{#collection-sorting}
+1. Lägg till följande två villkor:
 
-Vi måste nu använda sortering för att kunna hämta de tre **senaste** inköpen.
+   * **[!UICONTROL Price]** finns (för att exkludera NULL:er)
 
-1. Aktivera alternativet **Aktivera sortering**.
-1. Klicka i fältet **Attribut**.
-1. Välj fältet **Beställningsdatum**.
-1. Klicka på **Bekräfta**.
-1. Välj **Fallande** i listrutan **Sortera**.
+   * **[!UICONTROL Price]** är mindre än 100
+
+   ![](../assets/enrichment-6.png)
+
+1. Klicka på **[!UICONTROL Confirm]**.
+
+
+<!--
+#### Define the sorting{#collection-sorting}
+
+We now need to apply sorting in order to retrieve the three **latest** purchases.
+
+1. Activate the **Enable sorting** option.
+1. Click inside the **Attribute** field.
+1. Select the **Order date** field.
+1. Click **Confirm**. 
+1. Select **Descending** from the **Sort** drop-down.
 
 ![](../assets/workflow-enrichment7bis.png)
 
-### Berika med länkade data {#link-example}
 
-I exemplet nedan visas en orkestrerad kampanj som konfigurerats för att skapa en länk mellan två övergångar. De första övergångarna avser profildata med hjälp av en **Query**-aktivitet, medan den andra övergången innehåller inköpsdata som lagras i en fil som läses in via en Läs in filaktivitet.
+## Data reconciliation {#reconciliation}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_enrichment_reconciliation"
+>title="Reconciliation"
+>abstract="The **Enrichment** activity can be used to reconcile data from the Journey Optimizer schema with data from another schema, or with data coming from a temporary schema such as data uploaded using a Load file activity. This type of link defines a reconciliation towards a unique record. Journey Optimizer creates a link to a target table by adding a foreign key in it for storing a reference to the unique record."
+
+The **Enrichment** activity can be used to reconcile data from the the Campaign database schema with data from another schema, or with data coming from a temporary schema such as data uploaded using a Load file activity. This type of link defines a reconciliation towards a unique record. Journey Optimizer creates a link to a target table by adding a foreign key in it for storing a reference to the unique record.
+
+For example, you can use this option to reconcile a profile's country, specified in an uploaded file, with one of the countries available in the dedicated table of the Campaign database. 
+
+Follow the steps to configure an **Enrichment** activity with a reconciliation link: 
+
+1. Click the **Add link** button in the **Reconciliation** section.
+1. Identify the data you want to create a reconciliation link with.
+
+    * To create a reconciliation link with data from the Campaign database, select **Database schema** and choose the schema where the target is stored. 
+    * To create a reconciliation link with data coming from the input transition, select **Temporary schema** and choose the orchestrated campaign transition where the target data is stored. 
+
+1. The **Label** and **Name** fields are automatically populated based on the selected target schema. You can change their values if necessary.
+
+1. In the **Reconciliation criteria** section, specify how you want to reconcile data from the source and destination tables:
+
+    * **Simple join**: Reconcile a specific field from the source table with another field in the destination table. To do this, click the **Add join** button and specify the **Source** and **Destination** fields to use for the reconciliation.
+
+        >[!NOTE]
+        >
+        >You can use one or more **Simple join** criteria, in which case they must all be verified so that the data can be linked together.
+
+    * **Advanced join**: Use the query modeler to configure the reconciliation criteria. To do this, click the **Create condition** button then define your reconciliation criteria by building your own rule using AND and OR operations.
+
+The example below shows an orchestrated campaign configured to create a link between Journey Optimizer profiles table and a temporary table generated a **Load file** activity. In this example, the **Enrichment** activity reconciliates both tables using the email address as reconciliation criteria.
+
+![](../assets/enrichment-reconciliation.png)
+
+### Enrichment with linked data {#link-example}
+
+The example below shows an orchestrated campaign configured to create a link between two transitions. The first transitions targets profile data using a **Query** activity, while the second transition includes purchase data stored into a file loaded through a Load file activity.
 
 ![](../assets/enrichment-uc-link.png)
 
-* Den första **Enrichment**-aktiviteten länkar den primära uppsättningen (data från **Query** -aktiviteten) med schemat från **Load file** -aktiviteten. På så sätt kan vi matcha varje profil som används av frågan med motsvarande inköpsdata.
+* The first **Enrichment** activity links the primary set (data from the **Query** activity) with the schema from the **Load file** activity. This allows us to match each profile targeted by the query with the corresponding purchase data.
 
-  ![](../assets/enrichment-uc-link-purchases.png)
+    ![](../assets/enrichment-uc-link-purchases.png)
 
-* En andra **berikning**-aktivitet läggs till för att berika data från den orkestrerade kampanjtabellen med inköpsdata från aktiviteten **Läs in fil**. Detta gör att vi kan använda dessa data i ytterligare aktiviteter, till exempel för att anpassa meddelanden som skickas till kunderna med information om deras köp.
+* A second **Enrichment** activity is added in order to enrich data from the orchestrated campaign table with the purchase data coming from the **Load file** activity. This allows us to use those data in further activities, for example, to personalize messages sent to the customers with information on their purchase.
 
-  ![](../assets/enrichment-uc-link-data.png)
+    ![](../assets/enrichment-uc-link-data.png)
+
+
+## Create links between tables {#create-links}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_enrichment_simplejoin"
+>title="Link definition"
+>abstract="Create a link between the working table data and Adobe Journey Optimizer. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles."
+
+The **[!UICONTROL Link definition]** section allows you to create a link between the working table data and Adobe Journey Optimizer. For example, if you load data from a file which contains the account number, country and email of recipients, you have to create a link towards the country table in order to update this information in their profiles.
+
+There are several types of links available:
+
+* **[!UICONTROL 1 cardinality simple link]**: Each record from the primary set can be associated with one and only one record from the linked data.
+* **[!UICONTROL 0 or 1 cardinality simple link]**: Each record from the primary set can be associated with 0 or 1 record from the linked data, but not more than one.
+* **[!UICONTROL N cardinality collection link]**: Each record from the primary set can be associated with 0, 1 or more (N) records from the linked data.
+
+To create a link, follow these steps:
+
+1. In the **[!UICONTROL Link definition]** section, click the **[!UICONTROL Add link]** button.
+
+    ![](../assets/workflow-enrichment-link.png)
+
+1. In the **Relation type** drop-down list, choose the type of link you want to create.
+
+1. Identify the target you want to link the primary set to:
+
+    * To link an existing table in the database, choose **[!UICONTROL Database schema]** and select the desired table from the **[!UICONTROL Target schema]** field.
+    * To link with data from the input transition, choose **Temporary schema** and select the transition whose data you want to use.
+
+1. Define the reconciliation criteria to match data from the primary set with the linked schema. There are two types of joins available:
+
+    * **Simple join**: Select a specific attribute to match data from the two schemas. Click **Add join** and select the **Source** and **Destination** attributes to use as reconciliation criteria. 
+    * **Advanced join**: Create a join using advanced conditions. Click **Add join** and click the **Create condition** button to open the query modeler.
+
+A workflow example using links is available in the [Examples](#link-example) section.
+
+## Add offers {#add-offers}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_enrichment_offer_proposition"
+>title="Offer proposition"
+>abstract="The Enrichment activity allows you to add offers for each profile."
+
+The **[!UICONTROL Enrichment]** activity allows you to add offers for each profile.
+
+To do so, follow the steps to configure an **[!UICONTROL Enrichment]** activity with an offer: 
+
+1. In the **[!UICONTROL Enrichment]** activity, at the **[!UICONTROL Offer proposition]** section, click on the **[!UICONTROL Add offer]** button
+
+    ![](../assets/enrichment-addoffer.png)
+
+1. You have two choices for the offer selection :
+
+    * **[!UICONTROL Search for the best offer in category]** : check this option and specify the offer engine call parameters (offer space, category or theme(s), contact date, number of offers to keep). The engine will calculate the best offer(s) to add according to these parameters. We recommend completing either the Category or the Theme field, rather than both at the same time.
+
+        ![](../assets/enrichment-bestoffer.png)
+
+    * **[!UICONTROL A predefined offer]** : check this option and specify an offer space, a specific offer, and a contact date to directly configure the offer that you would like to add, without calling the offer engine.
+
+        ![](../assets/enrichment-predefinedoffer.png)
+
+1. After selecting your offer, click on **[!UICONTROL Confirm]** button.
+
+You can now use the offer in the delivery activity.
+
+
+
+### Using the offers from Enrichment activity
+
+Within an orchestrated campaign, if you want to use the offers you get from an enrichment activity in your delivery, follow the steps below:
+
+1. Open the delivery activity and go in the content edition. Click on **[!UICONTROL Offers settings]** button and select in the drop-down list the **[!UICONTROL Offers space]** corresponding to your offer. 
+If you want to to view only offers from the enrichment activity, set the number of **[!UICONTROL Propositions]** to 0, and save the modifications.
+
+    ![](../assets/offers-settings.png) 
+
+1. In the email designer, when adding a personalization with offers, click on the **[!UICONTROL Propositions]** icon, it will display the offer(s) you get from the **[!UICONTROL Enrichment]** activity. Open the offer you want to choose by clicking on it.
+
+    ![](../assets/offers-propositions.png) 
+
+    Go in **[!UICONTROL Rendering functions]** and choose **[!UICONTROL HTML rendering]** or **[!UICONTROL Text rendering]** according to your needs.
+
+    ![](../assets/offers-rendering.png) 
+
+>[!NOTE]
+>
+>If you choose to have more than one offer in the **[!UICONTROL Enrichment]** activity at the **[!UICONTROL Number of offers to keep]** option, all the offers are displayed when clicking on the **[!UICONTROL Propositions]** icon.
+
+-->
