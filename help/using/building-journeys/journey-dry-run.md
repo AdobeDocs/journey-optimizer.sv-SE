@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: 7845b9823ca86014e74ce2a48483b645f672850a
+source-git-commit: 9ac387f073d8f0384e20cb2d8fe327efe4b8ecde
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Under torra körningar utförs resan med följande särdrag:
 * **Kanalåtgärd**-noder med e-post-, SMS- eller push-meddelanden körs inte.
 * **Anpassade åtgärder** inaktiveras under körning av Dry och deras svar anges till null.
 * **Väntenoderna** ignoreras under körning av torr nod.
-Du kan åsidosätta tidsgränser för vänteblocken. Om du har en varaktighet för vänteblocken som är längre än tillåten varaktighet för torr körning, kommer den grenen inte att köras helt.
+  <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
 * **Externa datakällor** körs som standard.
 
 >[!NOTE]
@@ -90,7 +90,7 @@ För varje aktivitet kan du kontrollera:
 
 * **[!UICONTROL Entered]**: Totalt antal personer som har gått in i den här aktiviteten.
 * **[!UICONTROL Exited (met exit criteria)]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
-* **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som har avslutat.
+* **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som slutade när resan pausades.
 * **[!UICONTROL Error]**: Totalt antal personer som hade ett fel i den aktiviteten.
 
 
