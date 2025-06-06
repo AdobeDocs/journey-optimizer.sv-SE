@@ -48,4 +48,4 @@ Om du vill visa åtgärdslistan eller konfigurera en ny åtgärd väljer du **[!
 
 Lär dig hur du konfigurerar anpassade åtgärder.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430273?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428396?quality=12)
