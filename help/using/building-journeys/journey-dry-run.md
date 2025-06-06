@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: 9ac387f073d8f0384e20cb2d8fe327efe4b8ecde
+source-git-commit: c34aa14f34759e9094df2eead1c784c0c23da356
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ För varje aktivitet kan du kontrollera:
 
 * **[!UICONTROL Entered]**: Totalt antal personer som har gått in i den här aktiviteten.
 * **[!UICONTROL Exited (met exit criteria)]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
-* **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som slutade när resan pausades.
+* **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som slutade när resan pausades. Det här måttet är alltid lika med noll för resor i körläge med torr körning.
 * **[!UICONTROL Error]**: Totalt antal personer som hade ett fel i den aktiviteten.
 
 
