@@ -11,7 +11,7 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: cd85b58350b4f8829aa1bc925c151be9b061b170
+source-git-commit: 318733edf55c7a9b067f4456bda657aecdb613cf
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%
@@ -113,4 +113,4 @@ Du kan även komma åt **Senaste 24-timmarsrapporterna** och **heltidsrapportern
 
 Torra körningar måste stoppas manuellt. Klicka på knappen **Stäng** för att avsluta testet och bekräfta.
 
-Efter 14 dagar övergår Dry Run-resor automatiskt till utkaststatus.
+Efter 14 dagar övergår Dry Run-resor automatiskt till statusen **Draft**.
