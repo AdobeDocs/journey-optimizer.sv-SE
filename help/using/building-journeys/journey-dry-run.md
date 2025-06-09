@@ -11,9 +11,9 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: 318733edf55c7a9b067f4456bda657aecdb613cf
+source-git-commit: 841c918da9c330a652dc8c6e1e4396677783a1e2
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,39 @@ Rundtur Dry-körningen ökar yrkesutövarnas förtroende och framgångar genom a
 
 Med Journey Dry-körningen får ni möjlighet att identifiera problem tidigt, optimera målinriktningsstrategier och förbättra resedesignen baserat på faktiska data - inte antaganden. Dry run är integrerat direkt i arbetsytan och ger intuitiv rapportering och insyn i viktiga resultatindikatorer så att teamen kan iterera säkert och effektivisera godkännandearbetsflödena. Detta förbättrar effektiviteten, minskar startriskerna och ger bättre resultat när det gäller kundengagemang.
 
-I slutänden förbättrar den här funktionen time-to-value, minskar antalet misslyckade kundresor och stärker Adobe position som den betrodda plattformen för att samordna personaliserade, slagkraftiga kundresor.
+I slutänden förbättrar den här funktionen time-to-value och minskar antalet misslyckade kundresor.
 
 Journey Dry-körningen ger
 
 1. **Säker testmiljö**: Profiler i torr körningsläge kontaktas inte, vilket säkerställer att det inte finns någon risk för att meddelanden skickas eller att livedata påverkas.
-1. **Målgruppsinsikter**: Marknadsförarna kan förutsäga målgruppernas nåbarhet på olika kundnoder, inklusive avanmälan, undantag och andra villkor.
+1. **Målgruppsinsikter**: Reseutövare kan förutsäga målgruppernas nåbarhet på olika kundnoder, inklusive avanmälan, undantag och andra villkor.
 1. **Återkoppling i realtid**: Mätvärden visas direkt på arbetsytan i realtid, på liknande sätt som direktrapportering, vilket gör att marknadsförarna kan förfina sin resedesign.
+
+
+>[!CAUTION]
+>
+> Behörigheter att starta Torr körning är begränsade till användare med hög behörighet på **[!DNL Publish journeys]**. Behörigheter att starta Dry Run är begränsade till användare med hög behörighet för **[!DNL Manage journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+
+
+## Skyddsritningar och begränsningar {#journey-dry-run-limitations}
+
+* Körningsläget Torr är inte tillgängligt för resor som innehåller reaktionshändelser.
+* Om en tidigare version av en resa är **Live** när en ny version skapas tillåts inte aktivering av körningen av Dry för den nya versionen.
+* Körning av körning av resedagring genererar stepEvents. Dessa stepEvents har en särskild flagga och ett körnings-ID för torr:
+   * `_experience.journeyOrchestration.stepEvents.inDryRun` returnerar `true` om Torr-körningen är aktiverad, i annat fall `false`
+   * `_experience.journeyOrchestration.stepEvents.dryRunID`returnerar ID:t för en instans med torr körning
+* Under torra körningar utförs resan med följande särdrag:
+
+   * **Kanalåtgärd** - noder som e-post, SMS eller push-meddelanden körs inte.
+   * **Anpassade åtgärder** inaktiveras under körning av Dry och deras svar anges till null.
+   * **Väntenoderna** ignoreras under körning av torr nod.
+     <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
+   * **Datakällor**, inklusive externa datakällor, körs som standard.
+
+>[!NOTE]
+>
+> * Profiler i körningsläget Torr räknas mot profiler som kan användas.
+> * Torra resor påverkar inte affärsreglerna.
 
 ## Starta en torr körning {#journey-dry-run-start}
 
@@ -62,20 +88,7 @@ Så här aktiverar du Torr körning:
 
    Ett statusmeddelande, **Aktivera Torr körning**, visas medan övergången pågår.
 
-1. När resan har aktiverats går den vidare till körningsläget Torr.
-
-Under torra körningar utförs resan med följande särdrag:
-
-* **Kanalåtgärd**-noder med e-post-, SMS- eller push-meddelanden körs inte.
-* **Anpassade åtgärder** inaktiveras under körning av Dry och deras svar anges till null.
-* **Väntenoderna** ignoreras under körning av torr nod.
-  <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
-* **Externa datakällor** körs som standard.
-
->[!NOTE]
->
-> * Profiler i körningsläget Torr räknas mot profiler som kan användas.
-> * Torra resor påverkar inte affärsreglerna. En profil i en körningsresa med Torr körning kommer till exempel inte att uteslutas från andra resor på grund av regler som `1 journey per day`.
+1. När den har aktiverats går resan in i läget **Torr körning**.
 
 ## Övervaka en torr körning {#journey-dry-monitor}
 
@@ -89,7 +102,7 @@ För varje aktivitet kan du kontrollera:
 
 * **[!UICONTROL Entered]**: Totalt antal personer som har gått in i den här aktiviteten.
 * **[!UICONTROL Exited (met exit criteria)]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
-* **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som slutade när resan pausades. Det här måttet är alltid lika med noll för resor i körläge med torr körning.
+* **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som avbrutit resan medan den pausades på grund av en konfiguration för reseadministratörer. Det här måttet är alltid lika med noll för resor i körläge med torr körning.
 * **[!UICONTROL Error]**: Totalt antal personer som hade ett fel i den aktiviteten.
 
 
@@ -111,6 +124,6 @@ Du kan även komma åt **Senaste 24-timmarsrapporterna** och **heltidsrapportern
 
 ## Stoppa en torr körning {#journey-dry-run-stop}
 
-Torra körningar måste stoppas manuellt. Klicka på knappen **Stäng** för att avsluta testet och bekräfta.
+Torra körningsresor **måste** stoppas manuellt. Klicka på knappen **Stäng** för att avsluta testet och bekräfta.
 
 Efter 14 dagar övergår Dry Run-resor automatiskt till statusen **Draft**.
