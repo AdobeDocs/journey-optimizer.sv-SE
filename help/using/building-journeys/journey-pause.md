@@ -10,16 +10,16 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 341f818d84264e3cb57563466866fdf43ebc401c
+source-git-commit: 3f00e7efd58fec09187be7d31199139b753dfcc2
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
 
 # Pausa en resa {#journey-pause}
 
-Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst. En resa kan pausas i högst 14 dagar. <!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
+Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst. <!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
 
 
 >[!AVAILABILITY]
@@ -74,13 +74,11 @@ Så här pausar du din resa:
 
 1. Bekräfta genom att klicka på knappen **Paus**.
 
-En resa kan pausas i högst 14 dagar.
-
 ## Så här återupptar du en pausad resa {#journey-resume-steps}
 
-Pausade resor kan återupptas manuellt när som helst.
+Pausade resor återupptas automatiskt vid slutet av den maximala pausperioden på 14 dagar. De kan när som helst återupptas manuellt.
 
-Följ de här stegen för att avsluta pausen på resan och börja lyssna på resehändelser igen:
+Så här återupptar du en pausad resa och börjar lyssna på resehändelser igen:
 
 1. Öppna den resa du vill återuppta.
 1. Klicka på knappen **...Mer** i den övre högra delen av arbetsytan och välj **Återuppta**.
