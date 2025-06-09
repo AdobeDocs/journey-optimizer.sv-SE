@@ -11,9 +11,9 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: 841c918da9c330a652dc8c6e1e4396677783a1e2
+source-git-commit: bb881f0257408ad70f3737c24d1caa28deea96e0
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 >title="Torka din resa"
 >abstract="När du har utformat din resa kan du utföra en torr körning för att bekräfta att den fungerar och se till att stegen är korrekta. I det här publiceringsläget kan du röka en resa utan att skicka kommunikation till någon profil."
 
-Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör att marknadsförare kan testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation.  Den här funktionen hjälper marknadsförarna att få förtroende för sin kundresa och målgruppsanpassning innan de publicerar den live.
+Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation.  Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live.
 
 
 >[!AVAILABILITY]
@@ -35,7 +35,7 @@ Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Jou
 
 ## Viktiga fördelar {#journey-dry-run-benefits}
 
-Rundtur Dry-körningen ökar yrkesutövarnas förtroende och framgångar genom att möjliggöra säker, datadriven testning av kundresor med hjälp av verkliga produktionsdata, utan risk för att kontakta kunder eller ändra profilinformation. Den här funktionen ger marknadsförarna möjlighet att validera målgruppernas räckvidd och branschlogik innan de publicerar, vilket säkerställer att resorna är i linje med de avsedda affärsmålen.
+Rundtur Dry-körningen ökar yrkesutövarnas förtroende och framgångar genom att möjliggöra säker, datadriven testning av kundresor med hjälp av verkliga produktionsdata, utan risk för att kontakta kunder eller ändra profilinformation. Den här funktionen gör det möjligt för resenärer att validera målgruppernas räckvidd och grenlogik innan de publicerar, vilket säkerställer att resorna överensstämmer med deras avsedda affärsmål.
 
 Med Journey Dry-körningen får ni möjlighet att identifiera problem tidigt, optimera målinriktningsstrategier och förbättra resedesignen baserat på faktiska data - inte antaganden. Dry run är integrerat direkt i arbetsytan och ger intuitiv rapportering och insyn i viktiga resultatindikatorer så att teamen kan iterera säkert och effektivisera godkännandearbetsflödena. Detta förbättrar effektiviteten, minskar startriskerna och ger bättre resultat när det gäller kundengagemang.
 
@@ -45,21 +45,23 @@ Journey Dry-körningen ger
 
 1. **Säker testmiljö**: Profiler i torr körningsläge kontaktas inte, vilket säkerställer att det inte finns någon risk för att meddelanden skickas eller att livedata påverkas.
 1. **Målgruppsinsikter**: Reseutövare kan förutsäga målgruppernas nåbarhet på olika kundnoder, inklusive avanmälan, undantag och andra villkor.
-1. **Återkoppling i realtid**: Mätvärden visas direkt på arbetsytan i realtid, på liknande sätt som direktrapportering, vilket gör att marknadsförarna kan förfina sin resedesign.
+1. **Återkoppling i realtid**: Mätvärden visas direkt på arbetsytan i realtid, på liknande sätt som live-rapportering, vilket gör det möjligt för resenärerna att förfina sin resedesign.
 
 
 >[!CAUTION]
 >
-> Behörigheter att starta Torr körning är begränsade till användare med hög behörighet på **[!DNL Publish journeys]**. Behörigheter att starta Dry Run är begränsade till användare med hög behörighet för **[!DNL Manage journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>Behörigheter att starta Torr körning är begränsade till användare med hög behörighet på **[!DNL Publish journeys]**. Behörigheter att stoppa Torr körning är begränsade till användare med hög behörighet på **[!DNL Manage journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 
 
 ## Skyddsritningar och begränsningar {#journey-dry-run-limitations}
 
 * Körningsläget Torr är inte tillgängligt för resor som innehåller reaktionshändelser.
+* Profiler i körningsläget Torr räknas mot profiler som kan användas.
+* Torra resor påverkar inte affärsreglerna.
 * Om en tidigare version av en resa är **Live** när en ny version skapas tillåts inte aktivering av körningen av Dry för den nya versionen.
 * Körning av körning av resedagring genererar stepEvents. Dessa stepEvents har en särskild flagga och ett körnings-ID för torr:
    * `_experience.journeyOrchestration.stepEvents.inDryRun` returnerar `true` om Torr-körningen är aktiverad, i annat fall `false`
-   * `_experience.journeyOrchestration.stepEvents.dryRunID`returnerar ID:t för en instans med torr körning
+   * `_experience.journeyOrchestration.stepEvents.dryRunID` returnerar ID:t för en instans med torr körning
 * Under torra körningar utförs resan med följande särdrag:
 
    * **Kanalåtgärd** - noder som e-post, SMS eller push-meddelanden körs inte.
@@ -67,11 +69,6 @@ Journey Dry-körningen ger
    * **Väntenoderna** ignoreras under körning av torr nod.
      <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
    * **Datakällor**, inklusive externa datakällor, körs som standard.
-
->[!NOTE]
->
-> * Profiler i körningsläget Torr räknas mot profiler som kan användas.
-> * Torra resor påverkar inte affärsreglerna.
 
 ## Starta en torr körning {#journey-dry-run-start}
 
@@ -124,6 +121,8 @@ Du kan även komma åt **Senaste 24-timmarsrapporterna** och **heltidsrapportern
 
 ## Stoppa en torr körning {#journey-dry-run-stop}
 
-Torra körningsresor **måste** stoppas manuellt. Klicka på knappen **Stäng** för att avsluta testet och bekräfta.
+Torra körningsresor **måste** stoppas manuellt.
 
-Efter 14 dagar övergår Dry Run-resor automatiskt till statusen **Draft**.
+Klicka på knappen **Stäng** för att avsluta testet och bekräfta.
+
+<!-- After 14 days, Dry run journeys automatically transition to the **Draft** status.-->

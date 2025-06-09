@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 3f00e7efd58fec09187be7d31199139b753dfcc2
+source-git-commit: bb881f0257408ad70f3737c24d1caa28deea96e0
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '705'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem 
 
 ## Viktiga fördelar {#journey-dry-run-benefits}
 
-Pausa och återuppta resor ger marknadsförarna större kontroll och flexibilitet genom att tillåta att direktresor tillfälligt pausas utan att kundupplevelsen störs. När det är pausat skickas ingen kommunikation och profilerna förblir i ett uppehåll tills resan återupptas.
+Pausa och återuppta resor ger resenärerna större kontroll och flexibilitet genom att tillåta att direktresor tillfälligt avbryts utan att störa kundupplevelsen. När det är pausat skickas ingen kommunikation och profilerna förblir i ett uppehåll tills resan återupptas.
 
 Denna funktion minskar risken för att skicka oavsiktliga meddelanden vid fel eller uppdateringar (t.ex. ändring av meddelandeinnehåll), stöder säkrare resehantering och ökar administratörens förtroende. Synligheten till pausade resor och deras status direkt i användargränssnittet ökar insynen och flexibiliteten ytterligare.
 
