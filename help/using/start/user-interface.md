@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 2169ab0e42ab2e8890c87e698e937f0341515b1f
+source-git-commit: c8bf119cac7e5870cfe57ec2fc2a0e534f633f78
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 4%
@@ -19,12 +19,12 @@ ht-degree: 4%
 
 Om du vill komma åt [!DNL Adobe Journey Optimizer] ansluter du till [Adobe Experience Cloud](https://experience.adobe.com) med din Adobe ID och väljer [!DNL Journey Optimizer].
 
-De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=sv-SE#adobe-experience-platform-ui-guide){target="_blank"}.
+De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"}.
 
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager eller din Adobe-representant om du har några frågor.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager eller din Adobe-representant om du har några frågor.
 >
 >* Den här dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produktanvändargränssnittet. Vissa skärmbilder kan dock skilja sig något från användargränssnittet.
 >
@@ -59,8 +59,6 @@ Bygg kampanjer och resor från det här avsnittet.
 
 * **[!UICONTROL Journeys]** - Skapa, konfigurera och samordna dina kundresor: kombinera händelser, samordning och åtgärdsaktiviteter för att skapa flerstegsscenarier för flera kanaler. [Läs mer](../building-journeys/journey-gs.md#jo-build)
 
-* **[!UICONTROL Landing pages]** - Skapa, utforma, testa och publicera landningssidor: skicka länkar till onlineformulär där användarna kan välja att inte ta emot meddelanden eller prenumerera på vissa tjänster. [Läs mer](../landing-pages/get-started-lp.md)
-
 
 ### [!UICONTROL DECISION MANAGEMENT] {#left-nav-decision}
 
@@ -80,6 +78,9 @@ Skapa och hantera innehåll från det här avsnittet.
 
 * **[!UICONTROL Fragments]** - Skapa och hantera fragment för att underlätta e-postdesignprocessen: skapa anpassade innehållsblock som kan användas för att snabbt sammanställa e-postinnehåll. [Läs mer](../content-management/fragments.md)
 
+* **[!UICONTROL Landing pages]** - Skapa, utforma, testa och publicera landningssidor: skicka länkar till onlineformulär där användarna kan välja att inte ta emot meddelanden eller prenumerera på vissa tjänster. [Läs mer](../landing-pages/get-started-lp.md)
+
+
 ### [!UICONTROL DATA MANAGEMENT] {#left-nav-data}
 
 Hantera data från det här avsnittet.
@@ -90,7 +91,7 @@ Hantera data från det här avsnittet.
 
 * **[!UICONTROL Queries]** - Använd Adobe Experience Platform Query Service för att skriva och köra frågor, visa frågor som har körts tidigare och få åtkomst till frågor som har sparats av användare i din organisation. [Läs mer](../data/get-started-queries.md)
 
-* **[!UICONTROL Monitoring]** - Använd den här menyn för att övervaka din datainmatning i Adobe Experience Platform användargränssnitt. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html?lang=sv-SE){target="_blank"}
+* **[!UICONTROL Monitoring]** - Använd den här menyn för att övervaka din datainmatning i Adobe Experience Platform användargränssnitt. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html){target="_blank"}
 
 ### [!UICONTROL CONNECTIONS] {#left-nav-connections}
 

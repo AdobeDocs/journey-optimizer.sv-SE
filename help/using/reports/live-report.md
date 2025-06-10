@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8dd48bb2-a805-4c46-a16c-c68173a9ac08
-source-git-commit: c9505b482d2dedc10c4025574cccb662fe149510
+source-git-commit: c8bf119cac7e5870cfe57ec2fc2a0e534f633f78
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -17,8 +17,7 @@ ht-degree: 0%
 
 # Kom igång med Live Report {#live-report}
 
-Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera påverkan och prestanda för dina resor och dina meddelanden på en inbyggd kontrollpanel.
-Data är tillgängliga i **[!UICONTROL Live report]** så snart din leverans har skickats eller din resa har körts från fliken **[!UICONTROL Last 24hrs]**.
+Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera påverkan och prestanda för dina resor och dina meddelanden på en inbyggd kontrollpanel. Data är tillgängliga i **[!UICONTROL Live report]** så snart din leverans har skickats eller din resa har körts från fliken **[!UICONTROL Last 24hrs]**.
 
 * Om du vill rikta in dig på en resa i sammanhanget för en resa går du till **[!UICONTROL Journeys]**-menyn för din resa och klickar på knappen **[!UICONTROL More actions]**.**[!UICONTROL View last 24hrs report]**
 
@@ -64,7 +63,7 @@ Kontrollpanelen har sparats. Dina olika ändringar kommer att tillämpas på nyt
 
 ## Exportera rapporter {#export-reports}
 
-Du kan enkelt exportera dina olika rapporter till PDF eller CSV-format så att du kan dela och skriva ut dem.
+Du kan enkelt exportera dina olika rapporter till PDF- eller CSV-format så att du kan dela och skriva ut dem.
 
 >[!BEGINTABS]
 

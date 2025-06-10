@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 9eda5416ba72fae390fc7eca6d9a3c699cedde50
+source-git-commit: c8bf119cac7e5870cfe57ec2fc2a0e534f633f78
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2432'
 ht-degree: 20%
 
 ---
@@ -447,7 +447,8 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Arbeta med beräknade attribut](using/audience/computed-attributes.md)
    + [Identiteter](using/audience/get-started-identity.md)
    + [Licensanvändning](using/audience/license-usage.md)
-+ Spåra och övervaka {#reporting}
++ Rapportering och övervakning {#reporting}
+   + [Kom igång med rapportering och övervakning](using/reports/gs-reports.md)
    + Live-rapport {#live-report}
       + [Kom igång med Live-rapporten](using/reports/live-report.md)
       + [Förteckning över mätvärden](using/reports/live-report-components.md)
@@ -485,7 +486,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Översiktsrapport](using/reports/channel-report-cja.md)
       + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
       + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
-   + Reserapporter {#reports}
+   + Anpassade reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
       + Händelsefält för äldre steg {#legacy-step-event-fields}
@@ -706,7 +707,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)
