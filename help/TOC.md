@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 6109c9176c160c2c0b1eafa06b855ebaf285e3ee
+source-git-commit: 9eda5416ba72fae390fc7eca6d9a3c699cedde50
 workflow-type: tm+mt
 source-wordcount: '2425'
 ht-degree: 20%
@@ -706,7 +706,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)
@@ -736,7 +736,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera affärsregler](using/configuration/frequency-rules.md)
 + Resekonfiguration {#configure-journeys}
-   + [Konfigurera datakällor, händelser och åtgärder](using/configuration/about-data-sources-events-actions.md)
+   + [Kom igång med resekonfigurationen](using/configuration/about-data-sources-events-actions.md)
    + Händelsekonfiguration {#events-journeys}
       + [Arbeta med resehändelser](using/event/about-events.md)
       + [Konfigurera en enhetshändelse](using/event/about-creating.md)
