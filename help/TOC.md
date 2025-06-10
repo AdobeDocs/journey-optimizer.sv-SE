@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 6574735581de0872e78e8e05efea5c6a50dc59b1
+source-git-commit: 2397612142da8b7bebebcc3a99b4fedfa453b9c0
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 20%
@@ -179,7 +179,7 @@ ht-degree: 20%
 + Samordnade kampanjer {#orchestrated-campaigns}
    + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
    + [Konfigurationssteg](using/orchestrated/configuration-steps.md)
-   + [Få tillgång till och hantera samordnade kampanjer](using/orchestrated/gs-campaign-creation.md)
+   + [Få tillgång till och hantera samordnade kampanjer](using/orchestrated/access-manage-orchestrated-campaigns.md)
    + Starta din första samordnade kampanj{#launch}
       + [Viktiga steg för att skapa samordnade kampanjer](using/orchestrated/gs-campaign-creation.md)
       + [Skapa och konfigurera kampanjen](using/orchestrated/create-orchestrated-campaign.md)
@@ -706,7 +706,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
