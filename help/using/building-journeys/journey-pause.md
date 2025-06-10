@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 0de7e1befa73cec2758be30caa28c93a2bf45b90
+source-git-commit: c9f9ee8734184a734cdf6e5af88fa5a05b49a8de
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -68,8 +68,8 @@ Så här pausar du din resa:
 
    Du kan:
 
-   * Håll kvar profiler - Profilerna väntar på att resan ska återupptas
-   * Ignorera profiler - Profiler exkluderas från resan på nästa åtgärdsnod
+   * **Håll** profiler - Profilerna väntar på att resan ska återupptas
+   * **Ignorera** profiler - Profiler exkluderas från resan på nästa åtgärdsnod
 
 1. Bekräfta genom att klicka på knappen **Paus**.
 
@@ -101,16 +101,21 @@ När en resa pausas kan du använda ett globalt filter baserat på profilattribu
 
 Om du t.ex. vill utesluta alla franska kunder från marknadsföringsmaterial till Frankrike gör du så här:
 
-
 1. Bläddra till den pausade resa som du vill ändra.
 
 1. Klicka på ikonen **Avsluta villkor och globalt filter** .
 
-1. Definiera ett filter baserat på profilattribut i inställningarna för det globala filtret.
+   ![Lägg till ett globalt filter för en pausad resa](assets/add-global-filter.png){width="50%" align="left"}
+
+1. Definiera ett filter baserat på profilattribut i inställningarna för **Avsluta villkor och globalt filter**.
 
 1. Ange uttrycket för att exkludera profiler där landattributet är lika med Frankrike.
 
-1. Återuppta resan.
+   ![Lägg till ett globalt filter för en pausad resa](assets/add-country-filter.png){width="50%" align="left"}
+
+1. Spara filtret och klicka på knappen **Uppdatera resa** för att tillämpa ändringarna.
+
+1. [Fortsätt resan](#journey-resume-steps).
 
    Vid CV kommer alla profiler med landattributet inställt på Frankrike automatiskt att uteslutas från resan. Alla nya profiler med landattributet inställt på Frankrike som försöker ta sig in på resan kommer att blockeras.
 

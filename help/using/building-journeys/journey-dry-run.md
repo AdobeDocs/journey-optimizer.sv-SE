@@ -11,9 +11,9 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: bb881f0257408ad70f3737c24d1caa28deea96e0
+source-git-commit: c9f9ee8734184a734cdf6e5af88fa5a05b49a8de
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---
@@ -123,6 +123,6 @@ Du kan även komma åt **Senaste 24-timmarsrapporterna** och **heltidsrapportern
 
 Torra körningsresor **måste** stoppas manuellt.
 
-Klicka på knappen **Stäng** för att avsluta testet och bekräfta.
+Klicka på knappen **Stäng** för att avsluta testet och klicka sedan på **Tillbaka till utkast** för att bekräfta.
 
 <!-- After 14 days, Dry run journeys automatically transition to the **Draft** status.-->
