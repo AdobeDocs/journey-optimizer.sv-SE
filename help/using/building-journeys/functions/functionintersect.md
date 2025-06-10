@@ -7,7 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: intersect, function, expression, travel
 exl-id: e236efa9-91a8-4f08-94c6-45f1e060bb2f
-source-git-commit: cb1fed2460ddbf3b226fe191b9695008970937c1
+source-git-commit: 49c3fd09d23e6394b6eff8ba4da71ed7bab8c82c
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 8%
@@ -60,7 +60,7 @@ Returnerar [&quot;sport&quot;, &quot;news&quot;]
 ```json
 intersect(
     #{ExperienceDataPlatform.profile.interests},
-    ["sports", "news", "documentary"]
+    ["sports", "documentary"]
 )
 ```
 

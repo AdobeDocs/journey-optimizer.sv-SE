@@ -7,7 +7,7 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: matchRegExp, funktion, uttryck, resa
 exl-id: 24cf362c-f390-4bb1-be82-a079bc27fa1f
-source-git-commit: 1d30c6ae49fd0cac0559eb42a629b59708157f7d
+source-git-commit: 9e6b3fc5c91e360a9bd7e727949ac5445cd79654
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 7%
@@ -41,6 +41,6 @@ Returnerar ett booleskt värde.
 
 ## Exempel
 
-`matchRegExp("username@adobe.com", "*adobe")`
+`matchRegExp("12345", "\\d+")`
 
 Returnerar true.
