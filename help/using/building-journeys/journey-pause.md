@@ -10,17 +10,16 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: bb881f0257408ad70f3737c24d1caa28deea96e0
+source-git-commit: 0de7e1befa73cec2758be30caa28c93a2bf45b90
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
 
 # Pausa en resa {#journey-pause}
 
-Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst. <!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
-
+Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Under pausen kan du [använda globala filter](#journey-global-filters) för att exkludera profiler baserat på deras attribut. Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
 
 >[!AVAILABILITY]
 >
@@ -54,14 +53,14 @@ Denna funktion minskar risken för att skicka oavsiktliga meddelanden vid fel el
 
 ## Pausa en resa {#journey-pause-steps}
 
-Du kan pausa en pågående resa.
+Du kan pausa alla **Live**-resor.
 
 Så här pausar du din resa:
 
 1. Öppna den resa du vill pausa.
 1. Klicka på knappen **...Mer** i den övre högra delen av arbetsytan och välj **Paus**.
 
-   ![Pausa resan](assets/pause-journey-button.png)
+   ![Pausa resan](assets/pause-journey-button.png){width="80%" align="left"}
 
 1. Välj hur du vill hantera profiler som för närvarande är på resan.
 
@@ -74,6 +73,11 @@ Så här pausar du din resa:
 
 1. Bekräfta genom att klicka på knappen **Paus**.
 
+I listan över dina resor kan du pausa en eller flera **Live**-resor. Om du vill pausa en grupp resor (_masspaus_) markerar du dem i listan och klickar på knappen **Paus** i det blå fältet längst ned på skärmen. Knappen **Paus** är bara tillgänglig när **Live**-resor har valts.
+
+![Pausa två direktresor i grupp från det nedre fältet](assets/bulk-pause-journeys.png){width="80%" align="left"}
+
+
 ## Så här återupptar du en pausad resa {#journey-resume-steps}
 
 Pausade resor återupptas automatiskt vid slutet av den maximala pausperioden på 14 dagar. De kan när som helst återupptas manuellt.
@@ -85,6 +89,35 @@ Så här återupptar du en pausad resa och börjar lyssna på resehändelser ige
 
    Resan växlar till statusen **Återupptar**. Övergången från statusen **Återupptar** till **Live** kan ta en stund: alla profiler måste återupptas för att resan ska bli **Live** igen.
 
+1. Bekräfta genom att klicka på knappen **Återuppta**.
 
 
+I listan över dina resor kan du återuppta en eller flera **Pausade** resor. Om du vill återuppta en grupp av resor (_massåteruppta_) markerar du dem och klickar på knappen **Återuppta** i det blå fältet längst ned på skärmen. Observera att knappen **Återuppta** endast är tillgänglig när **Pausade** resor har valts.
 
+
+## Tillämpa ett globalt filter på profiler i en pausad resa  {#journey-global-filters}
+
+När en resa pausas kan du använda ett globalt filter baserat på profilattribut. Det här filtret gör att profiler som matchar det definierade uttrycket utesluts vid återupptagningstid. Profiler som matchar de villkor som för närvarande finns under resan kommer att avsluta den och nya profiler som försöker komma in kommer att blockeras.
+
+Om du t.ex. vill utesluta alla franska kunder från marknadsföringsmaterial till Frankrike gör du så här:
+
+
+1. Bläddra till den pausade resa som du vill ändra.
+
+1. Klicka på ikonen **Avsluta villkor och globalt filter** .
+
+1. Definiera ett filter baserat på profilattribut i inställningarna för det globala filtret.
+
+1. Ange uttrycket för att exkludera profiler där landattributet är lika med Frankrike.
+
+1. Återuppta resan.
+
+   Vid CV kommer alla profiler med landattributet inställt på Frankrike automatiskt att uteslutas från resan. Alla nya profiler med landattributet inställt på Frankrike som försöker ta sig in på resan kommer att blockeras.
+
+Observera att uteslutning av profiler för närvarande på resan och för nya profiler endast sker när de når en åtgärdsnod.
+
+>[!CAUTION]
+>
+>* Du kan bara ange **ett** globalt filter per resa.
+>
+>* Du kan bara skapa, uppdatera eller ta bort ett globalt filter på **Pausade** resor.
