@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: dd1a9b6e14617014756e5b4449578a1f7bf805b4
+source-git-commit: 6109c9176c160c2c0b1eafa06b855ebaf285e3ee
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2425'
 ht-degree: 20%
 
 ---
@@ -706,10 +706,10 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
-   + [Konfigurera era kanaler](using/configuration/get-started-configuration.md)
+   + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)
    + [Konfigurera kanalkonfigurationer](using/configuration/channel-surfaces.md)
    + Inställningar för guidad kanal {#guided-setup}
       + [Kom igång med konfiguration av guidade kanaler](using/configuration/set-mobile-config.md)

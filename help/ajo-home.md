@@ -5,9 +5,9 @@ description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
 product: journey optimizer
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: d308086a6de56f3ee2c16c7d11c8891221325c97
+source-git-commit: 6109c9176c160c2c0b1eafa06b855ebaf285e3ee
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '387'
 ht-degree: 11%
 
 ---
@@ -32,7 +32,7 @@ Journey Optimizer har nu flera verktyg för konflikthantering och -prioritering.
 
 [![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/gs-conflict-prioritization.md)
 
->[!TAB Adobe Express x Journey Optimizer]
+>[!TAB Adobe Express &amp; Journey Optimizer]
 
 Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komma åt Adobe Express kraftfulla redigeringsverktyg när du skapar innehåll. Tack vare den här integreringen kan du ändra storlek på bilder, ta bort bakgrunder, beskära bilder och konvertera resurser till JPEG eller PNG utan att behöva växla mellan lösningarna.
 
@@ -43,9 +43,9 @@ Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komm
 
 Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
 
-[![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
+[![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
 
->[!TAB AEM Content fragment x Journey Optimizer]
+>[!TAB AEM Content fragment &amp; Journey Optimizer]
 
 Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journey Optimizer kan du nu smidigt införliva dina AEM Content Fragments i ditt Journey Optimizer-innehåll. Denna smidiga anslutning förenklar processen att komma åt och utnyttja AEM-innehåll, vilket gör det möjligt att skapa personaliserade och dynamiska kampanjer och resor.
 
@@ -121,11 +121,11 @@ Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journe
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er, referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE" target="_blank">Journey Optimizer Schema Dictionary</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er, referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
 
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/sv/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
+<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/sv/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
 </td>
 </tr></table>
 
