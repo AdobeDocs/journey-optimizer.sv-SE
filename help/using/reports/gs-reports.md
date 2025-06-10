@@ -5,14 +5,14 @@ title: Kom igång med rapporterings- och övervakningsfunktioner i  [!DNL Adobe 
 description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] rapporterings- och övervakningsfunktioner.
 role: User
 level: Beginner
-source-git-commit: c8bf119cac7e5870cfe57ec2fc2a0e534f633f78
+source-git-commit: 8c391d7437798df4f40baa65003e16a8c56228ab
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---
 
-# Kom igång med rapporterings- och övervakningsfunktioner {#get-started-report}
+# Kom igång med rapportfunktioner {#get-started-report}
 
 Adobe Journey Optimizer ger er åtgärdbara insikter genom sina kraftfulla rapporteringsfunktioner. Det finns rapporter om kampanjer, resor, landningssidor, prenumerationslistor och mycket annat. Tillgängliga rapporter visas nedan.
 
@@ -102,6 +102,7 @@ Nu när du har en förståelse för de olika typerna av rapporter i **[!DNL Jour
 
 ## Alla tidsrapporter per kanal
 
+### Utgående kanaler
 
 Välj en utgående kanal för att identifiera associerade globala rapporter.
 
@@ -116,6 +117,7 @@ Välj en utgående kanal för att identifiera associerade globala rapporter.
 <div align="center"><a href="campaign-global-report-cja-direct.md"><strong>Direktutskick</strong></a></div></td>
 </tr></table>
 
+### Inkommande upplevelser
 
 Välj en inkommande upplevelse för att identifiera associerade globala rapporter.
 
