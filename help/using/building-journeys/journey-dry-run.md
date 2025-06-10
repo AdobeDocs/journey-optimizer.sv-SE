@@ -11,7 +11,7 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: c9f9ee8734184a734cdf6e5af88fa5a05b49a8de
+source-git-commit: 140720d72b57ec32250dee01b8c282b8ce871fc5
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Så här aktiverar du Torr körning:
 
    ![Starta färdens torra körning](assets/dry-run-button.png)
 
-1. Bekräfta publikationen
+1. Bekräfta publikationen.
 
    Ett statusmeddelande, **Aktivera Torr körning**, visas medan övergången pågår.
 
