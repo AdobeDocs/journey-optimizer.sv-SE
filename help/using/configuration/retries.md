@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: återförsök, studsa, mjuk, optimering, fel
 exl-id: 05564a99-da50-4837-8dfb-bb1d3e0f1097
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: e422a62f49864c89bdaaab2d4b7622dc90163a71
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,11 @@ Om en leverans lyckas efter ett nytt försök initieras adressräknaren på nytt
 
 Exempel:
 
-* Du skickar ett e-postmeddelande på måndag med en återförsöksperiod på 24 timmar. Den emma.jones@mail.com adressen levereras inte. Ett nytt försök att skicka e-postmeddelandet görs upp till tre gånger och försök att nå den 24 timmar långa återförsöksperioden avbryts.
+* Du skickar ett e-postmeddelande på måndag med en återförsöksperiod på 24 timmar. Det går inte att leverera adressen `emma.jones@mail.com`. Ett nytt försök att skicka e-postmeddelandet görs upp till tre gånger och försök att nå den 24 timmar långa återförsöksperioden avbryts.
 
-* Du skickar ett e-postmeddelande till på onsdag. emma.jones@mail.com, som redan har ett antal tre fel, har också angetts som mål och levereras inte - två gånger. Ytterligare två fel räknas.
+* Du skickar ett e-postmeddelande till på onsdag. `emma.jones@mail.com`, som redan har ett antal tre fel, har också angetts som mål och kan inte levereras - två gånger. Ytterligare två fel räknas.
 
-Under förutsättning att inga andra leveransförsök gjorts och att de båda meddelandena lyckades, läggs emma.jones@mail.com till i listan över inaktiveringar med tanke på den kumulativa effekten av 3 + 2-fel.
+`emma.jones@mail.com`-adressen läggs till i listan över utelämnanden eftersom 3 + 2-fel har ackumulerats, förutsatt att inga andra leveransförsök har gjorts och lyckats mellan dessa båda e-postmeddelanden.
 
 ## Försök igen med tröskelversionen {#edit-retry-threshold}
 
@@ -46,7 +46,7 @@ Under förutsättning att inga andra leveransförsök gjorts och att de båda me
 >id="ajo_admin_suppression_list_bounces"
 >title="Uppdatera tröskelvärdet för återförsök"
 >abstract="Om standardvärdet inte passar dina behov kan du ändra det tillåtna antalet på varandra följande mjuka studsar. När räknaren för nya försök når feltröskeln för en viss e-postadress läggs den här adressen till i listan över spärrade adresser."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/suppression-list.html?lang=sv-SE" text="Förstå listan över undantag"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/suppression-list.html" text="Förstå listan över undantag"
 
 Om standardvärdet 5 inte passar dina behov kan du ändra feltröskeln enligt stegen nedan.
 
@@ -72,7 +72,7 @@ Tidsperioden **för nytt försök** är den tidsram inom vilken alla e-postmedde
 
 Som standard kommer nya försök att utföras i **3,5 dagar** (eller **84 timmar**) från den tidpunkt då meddelandet lades till i e-postkön.
 
-För att vara säker på att försök inte utförs igen när de inte längre behövs kan du ändra den här inställningen efter dina behov när du skapar eller redigerar en [kanalkonfiguration](channel-surfaces.md) (d.v.s. meddelandeförinställning) som gäller för e-postkanalen.
+För att vara säker på att försök inte utförs igen när de inte längre behövs kan du ändra den här inställningen efter dina behov när du skapar eller redigerar en [kanalkonfiguration](channel-surfaces.md) som gäller för e-postkanalen.
 
 Du kan t.ex. ange återförsöksperioden till 24 timmar för ett transaktionsmejl som relaterar till lösenordsåterställning och som innehåller en länk som bara är giltig för en dag. På samma sätt kan du vid en midnatt-försäljning definiera en återförsöksperiod på 6 timmar.
 
