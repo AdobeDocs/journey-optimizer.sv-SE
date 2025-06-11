@@ -33,7 +33,7 @@ Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komm
 >
 >Adobe Express integrering i Adobe Journey Optimizer kan för närvarande inte användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
-Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/express/user-guide.html).
+Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/se/express/user-guide.html).
 
 Du kommer åt **[!DNL Adobe Express]**-menyn genom att gå till dina **bildinställningar** från e-post-Designer och klicka på **[!UICONTROL Edit in Adobe Express]**.
 
@@ -51,12 +51,12 @@ Med Enterprise-licens får man tillgång till Adobe Express-redigeraren där man
 
 +++Tillgängliga användningsexempel för användare och Enterprise-licens för Adobe Express
 
-* [Ta bort bakgrund](https://helpx.adobe.com/express/create-and-edit-images/edit-images/remove-background.html)
-* [Ta bort objekt](https://helpx.adobe.com/express/create-and-edit-images/create-and-modify-with-generative-ai/remove-objects-generative-fill.html)
-* [Radera](https://helpx.adobe.com/express/create-and-edit-images/edit-images/eraser.html)
-* [Infoga objekt](https://helpx.adobe.com/express/adobe-express-on-mobile/create-and-edit-designs/generative-fill-mobile.html)
+* [Ta bort bakgrund](https://helpx.adobe.com/se/express/create-and-edit-images/edit-images/remove-background.html)
+* [Ta bort objekt](https://helpx.adobe.com/se/express/create-and-edit-images/create-and-modify-with-generative-ai/remove-objects-generative-fill.html)
+* [Radera](https://helpx.adobe.com/se/express/create-and-edit-images/edit-images/eraser.html)
+* [Infoga objekt](https://helpx.adobe.com/se/express/adobe-express-on-mobile/create-and-edit-designs/generative-fill-mobile.html)
 * [Beskär](https://helpx.adobe.com/express/create-and-edit-images/edit-images/crop-and-shape-images.html)
-* [Effekter](https://helpx.adobe.com/express/add-effects-to-your-designs/add-images-and-visuals/apply-image-filters.html)
+* [Effekter](https://helpx.adobe.com/se/express/add-effects-to-your-designs/add-images-and-visuals/apply-image-filters.html)
 
 +++
 
