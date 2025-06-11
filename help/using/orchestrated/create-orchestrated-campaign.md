@@ -5,11 +5,12 @@ title: Skapa och schemalägg samordnade kampanjer med Journey Optimizer
 description: Lär dig hur du skapar en strukturerad kampanj med Adobe Journey Optimizer
 badge: label="Alpha"
 hide: true
+hidefromtoc: true
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
-source-git-commit: 38d4cc896414fce2e8453940fb4674ce7e60fd2b
+source-git-commit: 435b4a7eee9428c7f0efeb62c72b39c0e2aaabba
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 2%
+source-wordcount: '333'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +21,24 @@ ht-degree: 2%
 >id="ajo_campaign_creation_workflow"
 >title="Lista över samordnade kampanjer"
 >abstract="Fliken **Orchestration** visar alla samordnade kampanjer. Klicka på namnet på en orkestrerad kampanj för att redigera den. Använd knappen **Skapa orkestrerad kampanj** för att lägga till en ny orkestrerad kampanj."
+
++++ Innehållsförteckning
+
+| Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
+|---|---|---|---|
+| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/><b>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)</b><br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena{1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+
+{style="table-layout:fixed"}
+
++++
+
+<br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 ## Skapa kampanjen {#create}
 

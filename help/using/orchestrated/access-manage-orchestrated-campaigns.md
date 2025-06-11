@@ -5,9 +5,10 @@ title: Få åtkomst till och hantera samordnade kampanjer
 description: Lär dig grunderna för att skapa samordnade kampanjer med Adobe Journey Optimizer
 badge: label="Alpha"
 hide: true
-source-git-commit: 38d4cc896414fce2e8453940fb4674ce7e60fd2b
+hidefromtoc: true
+source-git-commit: 435b4a7eee9428c7f0efeb62c72b39c0e2aaabba
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -19,6 +20,18 @@ ht-degree: 0%
 >id="ajo_targeting_workflow_list"
 >title="Samlad kampanj"
 >abstract="På den här skärmen kan du få tillgång till den fullständiga listan över samordnade kampanjer, kontrollera deras aktuella status, sista/nästa körningsdatum och skapa en ny strukturerad kampanj."
+
++++ Innehållsförteckning
+
+| Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
+|---|---|---|---|
+| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/><b>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md)</b> | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena{1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+
+{style="table-layout:fixed"}
+
++++
+
+<br/>
 
 Ni kan skapa samordnade kampanjer på en visuell arbetsyta för att utforma flerkanalsprocesser som segmentering, kampanjutförande och filbearbetning.
 
