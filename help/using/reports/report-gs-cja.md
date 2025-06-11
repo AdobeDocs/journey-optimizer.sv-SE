@@ -98,4 +98,4 @@ Välj en inkommande upplevelse för att identifiera associerade **globala heltid
 
 I videon nedan visas hur du använder den förbättrade Journey Optimizer-rapporteringen med Customer Journey Analytics.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430413)
+>[!VIDEO](https://video.tv.adobe.com/v/3443155?captions=swe)
