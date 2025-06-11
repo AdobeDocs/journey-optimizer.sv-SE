@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 8%
@@ -77,7 +77,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 </table>
 
 
-Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html?lang=sv-SE){target="_blank"} för fler ändringar.
+Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html){target="_blank"} för fler ändringar.
 
 ### Förbättringar
 
@@ -111,8 +111,8 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 
 ### Korrigeringar
 
-* Ett problem som gjorde att reselistan, meddelandelistan och e-postdesignern inte kunde visas när webbläsarspråket inte var engelska har åtgärdats.
-* Korrigerade ett syntaxfel som uppstod när personalisering lades till med ett uttryck i e-postdesignern: tecken kunde inte komma undan.
+* Korrigerade ett problem som förhindrade att reselistan, meddelandelistan och e-post-Designer visades när webbläsarspråket inte var engelska.
+* Korrigerade ett syntaxfel som uppstod när personalisering lades till med ett uttryck i e-post-Designer: tecken togs bort felaktigt.
 * Korrigerade ett problem som ledde till ett 404-fel vid navigering på menyn **Administration**.
 * Korrigerade ett problem som utlöste andra direktresor när en resa testades med hjälp av en affärshändelse.
 
@@ -294,7 +294,7 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 ### Korrigeringar
 
 * Korrigerade ett tillgänglighetsproblem vid navigering på meddelandeflikar.
-* Ett lokaliseringsfel har korrigerats i e-postdesignerns etiketter.
+* Ett lokaliseringsfel har korrigerats i e-postetiketterna för Designer.
 * Ett problem har korrigerats när du valde mer än en nod i en resa och klickade på Ta bort i egenskapsfönstret.
 * Korrigerade ett problem som förhindrade att ett nytt huvud lades till i en åtgärd som användes under en resa.
 * Du kan nu ta reda på varför en meddelandeförinställning inte kunde skapas med hjälp av en tydligare varning i användargränssnittet.
@@ -365,4 +365,4 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 * Ett problem där IP-information saknades på PTR-inspelningsskärmen har korrigerats.
 * Lokalisering i erbjudandefältet i Expression Editor är nu implementerat.
 * Felaktigt avstånd i informationspopup-fönster har korrigerats.
-* Korrigerade ett problem i e-postdesignern vid överföring av en HTML-fil där en intern formatmall med egenskapen `background-image` inte stöds.
+* Korrigerade ett problem i e-post-Designer när en HTML-fil överfördes där en intern formatmall med egenskapen `background-image` inte stöds.

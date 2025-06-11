@@ -8,7 +8,8 @@ topic: Content Management, Integrations
 role: User
 level: Beginner
 keywords: resurser, integration
-source-git-commit: 3ac201f33bb90a9f49b5e01d2668fc740929c9f3
+exl-id: 3e72df85-ba80-4cec-848b-7441cb3e7fef
+source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 1%
@@ -39,7 +40,7 @@ Läs mer om [Journey Optimizer + Adobe Experience Manager Assets](../integration
 <!--
 ### Templates
 
-With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's email designer, simplifying the process of crafting and sending messages to your desired audience.
+With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's Email Designer, simplifying the process of crafting and sending messages to your desired audience.
 
 Learn more about [Journey Optimizer + Adobe Experience Manager templates](../integrations/aem-templates.md).-->
 
@@ -70,7 +71,7 @@ Läs mer om [Journey Optimizer + Stock](../integrations/stock.md).
 
 Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komma åt Adobe Express kraftfulla redigeringsverktyg när du skapar innehåll. Tack vare den här integreringen kan du ändra storlek på bilder, ta bort bakgrunder, beskära bilder och konvertera resurser till JPEG eller PNG utan att behöva växla mellan lösningarna.
 
-Du kommer åt menyn **[!DNL Adobe Express]** genom att gå till dina **bildinställningar** från e-postdesignern och klicka på **[!UICONTROL Edit in Adobe Express]**.
+Du kommer åt **[!DNL Adobe Express]**-menyn genom att gå till dina **bildinställningar** från e-post-Designer och klicka på **[!UICONTROL Edit in Adobe Express]**.
 
 Observera att med Enterprise-licens får användarna full tillgång till Adobe Express Editor där de kan ändra bilder genom att justera färg, intensitet, skärpa, kontrast, dimensioner och ytterligare inställningar.
 

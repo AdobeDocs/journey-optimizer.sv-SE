@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använda e-postdesigners innehållskomponenter
+title: Använda e-postinnehållskomponenter för Designer
 description: Lär dig hur du använder innehållskomponenter i e-postmeddelanden
 feature: Email Design
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-keywords: komponenter, e-postdesigner, redigerare, e-post
+keywords: komponenter, e-post-Designer, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 1af75a0e6bfc2c3b9c565c3190f46d137a68d32e
+source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 1%
@@ -169,7 +169,7 @@ Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från dato
 
 1. Klicka på **[!UICONTROL Browse]** på fliken **[!UICONTROL Settings]** för att välja en bildfil från dina resurser eller på **[!UICONTROL Import media]** för att överföra en resurs till Adobe Experience Manager Assets.
 
-   Mer information om [!DNL Adobe Experience Manager Assets] finns i [Adobe Experience Manager Assets-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"}.
+   Mer information om [!DNL Adobe Experience Manager Assets] finns i [Adobe Experience Manager Assets-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
    >[!NOTE]
    >

@@ -9,10 +9,10 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
+source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '599'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Du kan importera ett befintligt innehåll i [!DNL Journey Optimizer] eller utnyt
 
 * Förbättra kundernas upplevelse genom att skapa personaliserade och dynamiska meddelanden utifrån deras profilattribut. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md).
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Bästa praxis för e-postdesign {#best-practices}
 
@@ -52,9 +52,9 @@ När du har [lagt till ett e-postmeddelande](create-email.md) till en resa eller
 
 1. På Designer hemsida för e-post väljer du hur du vill utforma e-postmeddelandet bland följande alternativ:
 
-   * **Designa din e-post från grunden** via e-postdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../integrations/assets.md). Lär dig hur du utformar ditt e-postinnehåll i [det här avsnittet](content-from-scratch.md).
+   * **Designa din e-post från grunden** via e-postgränssnittet i Designer och utnyttja bilder från [Adobe Experience Manager Assets](../integrations/assets.md). Lär dig hur du utformar ditt e-postinnehåll i [det här avsnittet](content-from-scratch.md).
 
-   * **Kodning eller inklistring av Raw-HTML** direkt i e-postdesignern. Lär dig hur du kodar ditt eget innehåll i [det här avsnittet](code-content.md).
+   * **Kod eller klistra in HTML i Raw-format** direkt i Designer-e-postmeddelandet. Lär dig hur du kodar ditt eget innehåll i [det här avsnittet](code-content.md).
 
      >[!NOTE]
      >
@@ -78,4 +78,4 @@ Lär dig skapa e-postinnehåll med meddelanderedigeraren.
 
 Lär dig hur du konfigurerar innehållsexperiment till A/B-tester och utforskar e-postinnehåll på bästa sätt för dina affärsmål.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447335?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3419893)

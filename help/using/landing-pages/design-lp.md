@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, design, HTML
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 1%
@@ -34,4 +34,4 @@ Därifrån kan man
 
 >[!NOTE]
 >
->Innehållsdesignern för landningssidan liknar oftast e-postdesignern. Läs mer om att [utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>Innehållsdesignern för landningssidan liknar oftast e-post-Designer. Läs mer om att [utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).

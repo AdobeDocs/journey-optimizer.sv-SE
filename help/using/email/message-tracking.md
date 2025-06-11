@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 87d60ddafb8b3793ef774528a96f60501bb5a1b5
+source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 1%
@@ -173,7 +173,7 @@ Det finns rapporter om öppningar och klick i [Live-rapporten](../reports/live-r
 
 [URL-spårning](email-settings.md#url-tracking) hanteras på konfigurationsnivå och gäller för alla URL:er som ingår i meddelandeinnehållet.
 
-Du kan också [anpassa enskilda URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postdesignern. Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för en enda länk i innehållet.
+Du kan också [anpassa enskilda URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postens Designer. Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för en enda länk i innehållet.
 
 1. Markera en länk och klicka på **[!UICONTROL Insert link]** i det sammanhangsberoende verktygsfältet.
 

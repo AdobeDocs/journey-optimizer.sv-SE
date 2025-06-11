@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 98e99978-8538-40b4-92ac-7184864017eb
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 1%
@@ -20,13 +20,13 @@ ht-degree: 1%
 >id="ajo_web_url_to_edit_surface"
 >title="Confirm the URL to edit"
 >abstract="Confirm the URL of the specific web page to use for editing the content that will be applied on the web configuration defined above. The web page must be implemented using the Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Learn more"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
 >title="Enter the URL to edit"
 >abstract="Enter the URL of a specific web page to use for editing the content that will be applied to all pages matching the rule. The web page must be implemented using Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Learn more"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
 -->
 
 I [!DNL Journey Optimizer] hanteras visuell webbutveckling av webbläsartillägget **Adobe Experience Cloud Visual Helper** i Chrome. [Läs mer](web-prerequisites.md#visual-authoring-prerequisites)
@@ -41,7 +41,7 @@ Följ stegen nedan för att börja skapa din webbupplevelse med den visuella web
 
 >[!CAUTION]
 >
->[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} måste inkluderas på din webbsida. [Läs mer](web-prerequisites.md#implementation-prerequisites)
+>[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} måste inkluderas på din webbsida. [Läs mer](web-prerequisites.md#implementation-prerequisites)
 
 1. Öppna webbdesignern genom att klicka på **[!UICONTROL Edit web page]** på skärmen **[!UICONTROL Edit content]**.
 
@@ -73,7 +73,7 @@ Följ stegen nedan för att börja skapa din webbupplevelse med den visuella web
 
 >[!NOTE]
 >
->Webbinnehållsdesignern liknar oftast e-postdesignern. Läs mer om att [utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).
+>Webbinnehållsdesignern liknar oftast e-post-Designer. Läs mer om att [utforma innehåll med  [!DNL Journey Optimizer]](../email/get-started-email-design.md).
 
 När du har redigerat webbinnehållet kan du hantera ändringarna. [Läs mer](manage-web-modifications.md)
 
@@ -89,8 +89,8 @@ När du har redigerat webbinnehållet kan du hantera ändringarna. [Läs mer](ma
    * [Delare](../email/content-components.md#divider)
    * [HTML](../email/content-components.md#HTML)
    * [Bild](../email/content-components.md#image)
-   * Rubrik - Att använda den här komponenten påminner om att använda komponenten **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
-   * Stycke - Att använda den här komponenten påminner om att använda komponenten **[!UICONTROL Text]** i e-postdesignern. [Läs mer](../email/content-components.md#text)
+   * Rubrik - Att använda den här komponenten påminner om att använda komponenten **[!UICONTROL Text]** i e-post-Designer. [Läs mer](../email/content-components.md#text)
+   * Stycke - Att använda den här komponenten påminner om att använda komponenten **[!UICONTROL Text]** i e-post-Designer. [Läs mer](../email/content-components.md#text)
    * Länk
 
    ![](assets/web-designer-components.png)
@@ -170,4 +170,4 @@ Möjligheten att ändra enhetsstorleken är utformad för responsiva sajter som 
 
 I videon nedan visas hur du skapar en webbupplevelse med webbdesignern i [!DNL Journey Optimizer]-kampanjer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452639/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3418803/?quality=12&learn=on)
