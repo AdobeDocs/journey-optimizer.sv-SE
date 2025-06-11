@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 6eb552466cbd25b9ddf0e02bad75c8c750b1f738
+source-git-commit: 284c4896b923eac1d360b61d97cbe560d747ea4f
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1642'
 ht-degree: 4%
 
 ---
@@ -19,12 +19,12 @@ ht-degree: 4%
 
 Om du vill komma åt [!DNL Adobe Journey Optimizer] ansluter du till [Adobe Experience Cloud](https://experience.adobe.com) med din Adobe ID och väljer [!DNL Journey Optimizer].
 
-De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=sv-SE#adobe-experience-platform-ui-guide){target="_blank"}.
+De viktigaste begreppen när du bläddrar i användargränssnittet är vanliga i Adobe Experience Platform. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html#adobe-experience-platform-ui-guide){target="_blank"}.
 
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager eller din Adobe-representant om du har några frågor.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och ditt [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Fråga din Adobe Customer Success Manager eller din Adobe-representant om du har några frågor.
 >
 >* Den här dokumentationen uppdateras ofta för att återspegla de senaste ändringarna i produktanvändargränssnittet. Vissa skärmbilder kan dock skilja sig något från användargränssnittet.
 >
@@ -93,7 +93,7 @@ Hantera data från det här avsnittet.
 
 * **[!UICONTROL Queries]** - Använd Adobe Experience Platform Query Service för att skriva och köra frågor, visa frågor som har körts tidigare och få åtkomst till frågor som har sparats av användare i din organisation. [Läs mer](../data/get-started-queries.md)
 
-* **[!UICONTROL Monitoring]** - Använd den här menyn för att övervaka din datainmatning i Adobe Experience Platform användargränssnitt. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html?lang=sv-SE){target="_blank"}
+* **[!UICONTROL Monitoring]** - Använd den här menyn för att övervaka din datainmatning i Adobe Experience Platform användargränssnitt. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/monitor-data-ingestion.html){target="_blank"}
 
 ### [!UICONTROL CONNECTIONS] {#left-nav-connections}
 
@@ -226,7 +226,8 @@ Ska vi börja med [!DNL Journey Optimizer]? Erfaren användare med specifika fr�
 
 <!--ORCHESTRATED CAMPAIGNS - Overview page-->
 
-<!--ORCHESTRATED CAMPAIGNS SKU only-->
+
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS SKU only-->
 
 
 >[!CONTEXTUALHELP]
@@ -255,7 +256,7 @@ Ska vi börja med [!DNL Journey Optimizer]? Erfaren användare med specifika fr�
 >title="Tillgängliga kanaler"
 >abstract="E-post, SMS, push-meddelanden, direktreklam"
 
-<!--ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
 
 
 >[!CONTEXTUALHELP]
@@ -268,6 +269,30 @@ Ska vi börja med [!DNL Journey Optimizer]? Erfaren användare med specifika fr�
 >id="ajo_oc_jo_camppaign_ovv_2"
 >title="Tillgängliga kanaler"
 >abstract="E-post, SMS, push-meddelanden, In-app, webb, kodbaserade upplevelser"
+
+
+<!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS - API triggered tab -->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_1"
+>title="Kampanjer utlösta av Transactional API"
+>abstract="Utlösa meddelanden i realtid via API-anrop"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_2"
+>title="Marknadsföringsmeddelanden"
+>abstract="Kampanjinnehåll (kräver deltagande, enligt affärsregler)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_3"
+>title="Transaktionsmeddelanden"
+>abstract="Tjänstrelaterat innehåll (bekräftelse, varningar, som inte kräver godkännande av marknadsföringen)"
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_api_camppaign_ovv_4"
+>title="Tillgängliga kanaler"
+>abstract="E-post, SMS, push-meddelanden"
 
 <!--APPROVAL POLICIES-->
 
