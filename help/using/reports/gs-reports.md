@@ -5,10 +5,10 @@ title: Kom igång med rapporterings- och övervakningsfunktioner i  [!DNL Adobe 
 description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] rapporterings- och övervakningsfunktioner.
 role: User
 level: Beginner
-source-git-commit: 8c391d7437798df4f40baa65003e16a8c56228ab
+source-git-commit: 95b47370f85f43b3fdc78dd661f0a0789169e544
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 1%
+source-wordcount: '408'
+ht-degree: 0%
 
 ---
 
@@ -104,30 +104,30 @@ Nu när du har en förståelse för de olika typerna av rapporter i **[!DNL Jour
 
 ### Utgående kanaler
 
-Välj en utgående kanal för att identifiera associerade globala rapporter.
+Välj en utgående kanal för att identifiera associerade **globala heltidsrapporter**.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="campaign-global-report-cja-email.md"><img alt="e-post" src="../channels/assets/do-not-localize/email.png"></a>
-<div align="center"><a href="campaign-global-report-cja-email.md"><strong>E-post</strong></a></div></td>
+<td><img alt="e-post" src="../channels/assets/do-not-localize/email.png">
+<div align="center"><p><strong>E-postkanal</strong></p><p><a href="campaign-global-report-cja-email.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-email.md"><strong>Reserapport</strong></a></p></div></td>
 <td><a href="campaign-global-report-cja-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
-<div align="center"><a href="campaign-global-report-cja-sms.md"><strong>SMS</strong></a></div></td>
+<div align="center"><p><strong>SMS-kanal</strong></p><p><a href="campaign-global-report-cja-sms.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-sms.md"><strong>Reserapport</strong></a></p></div></td>
 <td><a href="campaign-global-report-cja-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
-<div align="center"><a href="campaign-global-report-cja-push.md"><strong>Push-meddelande</strong></a></div></td>
+<div align="center"><p><strong>Push-kanal</strong></p><p><a href="campaign-global-report-cja-push.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-push.md"><strong>Reserapport</strong></a></p></div></td>
 <td><a href="campaign-global-report-cja-direct.md"><img alt="direktreklam" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
-<div align="center"><a href="campaign-global-report-cja-direct.md"><strong>Direktutskick</strong></a></div></td>
+<div align="center"><p><strong>Direktpostkanal</strong></p><p><a href="campaign-global-report-cja-direct.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-direct.md"><strong>Reserapport</strong></a></p></div></td>
 </tr></table>
 
 ### Inkommande upplevelser
 
-Välj en inkommande upplevelse för att identifiera associerade globala rapporter.
+Välj en inkommande upplevelse för att identifiera associerade **globala heltidsrapporter**.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="campaign-global-report-cja-inapp.md"><img alt="i appen" src="../channels/assets/do-not-localize/inapp.jpg"></a>
+<td><img alt="i appen" src="../channels/assets/do-not-localize/inapp.jpg">
 <div align="center"><p><strong>Kanal i appen</strong></p><p><a href="campaign-global-report-cja-inapp.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-inapp.md"><strong>Reserapport</strong></a></p></div></td>
-<td><p><a href="campaign-global-report-cja-web.md"><img alt="webb" src="../channels/assets/do-not-localize/web.jpg"></a></p>
+<td><p><img alt="webb" src="../channels/assets/do-not-localize/web.jpg"></p>
 <div align="center"><p><strong>Webbkanal</strong></p><p><a href="campaign-global-report-cja-web.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-web.md"><strong>Reserapport</strong></a></p></div></td>
-<td><a href="campaign-global-report-cja-code.md"><img alt="kodbaserad upplevelse" src="../channels/assets/do-not-localize/code.png"></a>
+<td>&lt;<img alt="kodbaserad upplevelse" src="../channels/assets/do-not-localize/code.png">
 <div align="center"><p><strong>Kodbaserade upplevelser</strong></p><p><a href="campaign-global-report-cja-code.md"><strong>Kampanjrapport</strong></a></p><p><a href="campaign-global-report-cja-code.md"><strong>Reserapport</strong></a></p></div></td>
-<td><a href="journey-global-report-cja-code.md"><img alt="innehållskort" src="../channels/assets/do-not-localize/cards.png"></a>
+<td><img alt="innehållskort" src="../channels/assets/do-not-localize/cards.png">
 <div align="center"><p><strong>Innehållskort</strong></p><p><a href="campaign-global-report-cja-content.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-content.md"><strong>Reserapport</strong></a></p></div></td>
 </tr></table>
