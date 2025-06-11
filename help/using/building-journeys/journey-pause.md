@@ -10,14 +10,19 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: c9f9ee8734184a734cdf6e5af88fa5a05b49a8de
+source-git-commit: 2d7067782d6adc7fe5c458a575729d2293af2aaf
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1196'
 ht-degree: 0%
 
 ---
 
 # Pausa en resa {#journey-pause}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_pause"
+>title="Pausa din resa"
+>abstract="Pausa en live-resa för att förhindra att nya profiler kommer in. Välj om du vill ta bort profiler som finns på resan eller behålla dem på plats. Om de behålls kommer de att återuppta körningen vid nästa åtgärdsaktivitet när resan har startats om. Perfekt för uppdateringar eller nödstopp utan att förlora några framsteg."
 
 Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Under pausen kan du [använda globala filter](#journey-global-filters) för att exkludera profiler baserat på deras attribut. Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
 
@@ -80,7 +85,12 @@ I listan över dina resor kan du pausa en eller flera **Live**-resor. Om du vill
 
 ## Så här återupptar du en pausad resa {#journey-resume-steps}
 
-Pausade resor återupptas automatiskt vid slutet av den maximala pausperioden på 14 dagar. De kan när som helst återupptas manuellt.
+>[!CONTEXTUALHELP]
+>id="ajo_journey_pause"
+>title="Återuppta resan"
+>abstract="Återuppta en pausad resa så att nya profiler kan komma in igen. Om profiler väntade under pausen fortsätter de sin resa. Perfekt för säker återstart av resor efter uppdateringar eller pauser."
+
+Pausade resor återupptas automatiskt vid slutet av den maximala pausperioden på 14 dagar. De kan när som helst återupptas manuellt. Om du återupptar en pausad resa kan nya profiler komma in igen. Om profiler väntade under pausen fortsätter de sin resa. Perfekt för säker återstart av resor efter uppdateringar eller pauser.
 
 Så här återupptar du en pausad resa och börjar lyssna på resehändelser igen:
 
