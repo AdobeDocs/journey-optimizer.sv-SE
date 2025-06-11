@@ -5,7 +5,7 @@ title: Få åtkomst till och hantera samordnade kampanjer
 description: Lär dig grunderna för att skapa samordnade kampanjer med Adobe Journey Optimizer
 badge: label="Alpha"
 hide: true
-source-git-commit: d59643f18a335fe1e094156a1cfee65b717b9fce
+source-git-commit: 38d4cc896414fce2e8453940fb4674ce7e60fd2b
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%

@@ -6,7 +6,7 @@ description: Lär dig hur du skapar en strukturerad kampanj med Adobe Journey Op
 badge: label="Alpha"
 hide: true
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
-source-git-commit: d59643f18a335fe1e094156a1cfee65b717b9fce
+source-git-commit: 38d4cc896414fce2e8453940fb4674ce7e60fd2b
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 2%

@@ -5,7 +5,7 @@ title: Schemalägg och starta samordnade kampanjer med Adobe Journey Optimizer
 description: Lär dig schemalägga och starta samordnade kampanjer med Adobe Journey Optimizer
 hide: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: d59643f18a335fe1e094156a1cfee65b717b9fce
+source-git-commit: 38d4cc896414fce2e8453940fb4674ce7e60fd2b
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 2%
