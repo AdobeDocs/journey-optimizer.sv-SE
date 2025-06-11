@@ -5,9 +5,9 @@ title: Kom igång med rapporterings- och övervakningsfunktioner i  [!DNL Adobe 
 description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] rapporterings- och övervakningsfunktioner.
 role: User
 level: Beginner
-source-git-commit: a9349cedc4da2a8e76e53f9e2b5185270cda2558
+source-git-commit: 15a73ba3f2d91a38d61e6518d704fc218ad0eea3
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -98,4 +98,37 @@ Nu när du har en förståelse för de olika typerna av rapporter i **[!DNL Jour
 <p>
 <p>
 </td>
+</tr></table>
+
+
+Alla globala rapporter är tillgängliga för alla era kanaler. Välj rapporten för den kanal du behöver för att få mer information.
+
+### Rapporter för utgående kanaler
+
+Välj en utgående kanal för att identifiera associerade **globala heltidsrapporter**.
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><img alt="e-post" src="../channels/assets/do-not-localize/email.png">
+<div align="center"><p><strong>E-postkanal</strong></p><p><a href="campaign-global-report-cja-email.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-email.md"><strong>Reserapport</strong></a></p></div></td>
+<td><a href="campaign-global-report-cja-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><p><strong>SMS-kanal</strong></p><p><a href="campaign-global-report-cja-sms.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-sms.md"><strong>Reserapport</strong></a></p></div></td>
+<td><a href="campaign-global-report-cja-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
+<div align="center"><p><strong>Push-kanal</strong></p><p><a href="campaign-global-report-cja-push.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-push.md"><strong>Reserapport</strong></a></p></div></td>
+<td><a href="campaign-global-report-cja-direct.md"><img alt="direktreklam" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
+<div align="center"><p><strong>Direktpostkanal</strong></p><p><a href="campaign-global-report-cja-direct.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-direct.md"><strong>Reserapport</strong></a></p></div></td>
+</tr></table>
+
+### Rapporter om inkommande upplevelser
+
+Välj en inkommande upplevelse för att identifiera associerade **globala heltidsrapporter**.
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><img alt="i appen" src="../channels/assets/do-not-localize/inapp.jpg">
+<div align="center"><p><strong>Kanal i appen</strong></p><p><a href="campaign-global-report-cja-inapp.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-inapp.md"><strong>Reserapport</strong></a></p></div></td>
+<td><p><img alt="webb" src="../channels/assets/do-not-localize/web.jpg"></p>
+<div align="center"><p><strong>Webbkanal</strong></p><p><a href="campaign-global-report-cja-web.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-web.md"><strong>Reserapport</strong></a></p></div></td>
+<td><img alt="kodbaserad upplevelse" src="../channels/assets/do-not-localize/code.png">
+<div align="center"><p><strong>Kodbaserade upplevelser</strong></p><p><a href="campaign-global-report-cja-code.md"><strong>Kampanjrapport</strong></a></p><p><a href="campaign-global-report-cja-code.md"><strong>Reserapport</strong></a></p></div></td>
+<td><img alt="innehållskort" src="../channels/assets/do-not-localize/cards.png">
+<div align="center"><p><strong>Innehållskort</strong></p><p><a href="campaign-global-report-cja-content.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-content.md"><strong>Reserapport</strong></a></p></div></td>
 </tr></table>
