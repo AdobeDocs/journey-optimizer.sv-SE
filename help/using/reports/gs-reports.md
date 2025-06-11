@@ -5,7 +5,7 @@ title: Kom igång med rapporterings- och övervakningsfunktioner i  [!DNL Adobe 
 description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] rapporterings- och övervakningsfunktioner.
 role: User
 level: Beginner
-source-git-commit: 95b47370f85f43b3fdc78dd661f0a0789169e544
+source-git-commit: 760579d13eb9f1e264dafb3f7b1e06cebd9aaaa2
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -126,7 +126,7 @@ Välj en inkommande upplevelse för att identifiera associerade **globala heltid
 <div align="center"><p><strong>Kanal i appen</strong></p><p><a href="campaign-global-report-cja-inapp.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-inapp.md"><strong>Reserapport</strong></a></p></div></td>
 <td><p><img alt="webb" src="../channels/assets/do-not-localize/web.jpg"></p>
 <div align="center"><p><strong>Webbkanal</strong></p><p><a href="campaign-global-report-cja-web.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-web.md"><strong>Reserapport</strong></a></p></div></td>
-<td>&lt;<img alt="kodbaserad upplevelse" src="../channels/assets/do-not-localize/code.png">
+<td><img alt="kodbaserad upplevelse" src="../channels/assets/do-not-localize/code.png">
 <div align="center"><p><strong>Kodbaserade upplevelser</strong></p><p><a href="campaign-global-report-cja-code.md"><strong>Kampanjrapport</strong></a></p><p><a href="campaign-global-report-cja-code.md"><strong>Reserapport</strong></a></p></div></td>
 <td><img alt="innehållskort" src="../channels/assets/do-not-localize/cards.png">
 <div align="center"><p><strong>Innehållskort</strong></p><p><a href="campaign-global-report-cja-content.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-content.md"><strong>Reserapport</strong></a></p></div></td>
