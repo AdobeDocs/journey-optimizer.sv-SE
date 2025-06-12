@@ -11,9 +11,9 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: 2d7067782d6adc7fe5c458a575729d2293af2aaf
+source-git-commit: 8dae895f33d8e95424bc96c8050b8f52d7c02b50
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Jou
 
 >[!AVAILABILITY]
 >
->Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
+>Den här funktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet) och kommer att lanseras globalt i en framtida version.
 
 
 ## Viktiga fördelar {#journey-dry-run-benefits}
