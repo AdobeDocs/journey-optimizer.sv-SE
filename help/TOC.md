@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: da2fb137a8af82a8487638dc3d762377dd5dc506
+source-git-commit: 7e9d707d6413509aef207a6183f6c9953ccdf229
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 20%
@@ -269,9 +269,9 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [URL-uppföljning](using/email/url-tracking.md)
          + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
       + E-postleverans {#deliverability}
-      + [Kom igång med leverans](using/reports/deliverability.md)
-      + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
-      + [Nytt krav från DMARC](using/configuration/dmarc-record-update.md)
+         + [Kom igång med leverans](using/reports/deliverability.md)
+         + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
+         + [Nytt krav från DMARC](using/configuration/dmarc-record-update.md)
    + Kanal i appen{#in-app}
       + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
       + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
@@ -468,6 +468,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Konfigurera Customer Journey Analytics manuellt](using/reports/cja-ajo.md)
       + [Hantera dina rapporter](using/reports/report-cja-manage.md)
       + [Krav för rapportering och experimenterande](using/reports/reporting-configuration.md)
+      + [Uteslutningsorsaker](using/reports/exclusion-list.md)
       + Kampanjrapporter{#reporting}
          + [Kampanjrapport](using/reports/campaign-global-report-cja.md)
          + [Kodbaserad kampanjrapport](using/reports/campaign-global-report-cja-code.md)
@@ -492,7 +493,6 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Översiktsrapport](using/reports/channel-report-cja.md)
       + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
       + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
-      + [Uteslutningsorsaker](using/reports/exclusion-list.md)
    + Anpassade reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
@@ -708,7 +708,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)
