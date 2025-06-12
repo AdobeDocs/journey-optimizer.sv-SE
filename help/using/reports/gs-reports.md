@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med rapporterings- och övervakningsfunktioner i  [!DNL Adobe Journey Optimizer]
-description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] rapporterings- och övervakningsfunktioner.
+title: Kom igång med rapportfunktioner i  [!DNL Adobe Journey Optimizer]
+description: Lär dig hur du får åtkomst till och arbetar med  [!DNL Adobe Journey Optimizer] rapporter.
 role: User
 level: Beginner
-source-git-commit: 15a73ba3f2d91a38d61e6518d704fc218ad0eea3
+source-git-commit: da2fb137a8af82a8487638dc3d762377dd5dc506
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---

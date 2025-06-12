@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: da2fb137a8af82a8487638dc3d762377dd5dc506
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2434'
 ht-degree: 20%
 
 ---
@@ -233,6 +233,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Skapa och hantera godkännandepolicyer](using/test-approve/approval-policies.md)
       + [Begär godkännande](using/test-approve/request-approval.md)
       + [Godkänn en begäran](using/test-approve/review-approve-request.md)
+   + [Systemvarningar](using/reports/alerts.md)
 + Kommunikationskanaler {#channels}
    + [Kom igång med kommunikationskanaler](using/channels/gs-channels.md)
    + E-postkanal {#email}
@@ -267,6 +268,10 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Huvudparametrar](using/email/header-parameters.md)
          + [URL-uppföljning](using/email/url-tracking.md)
          + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
+      + E-postleverans {#deliverability}
+      + [Kom igång med leverans](using/reports/deliverability.md)
+      + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
+      + [Nytt krav från DMARC](using/configuration/dmarc-record-update.md)
    + Kanal i appen{#in-app}
       + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
       + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
@@ -448,7 +453,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Arbeta med beräknade attribut](using/audience/computed-attributes.md)
    + [Identiteter](using/audience/get-started-identity.md)
    + [Licensanvändning](using/audience/license-usage.md)
-+ Rapportering och övervakning {#reporting}
++ Rapportering {#reporting}
    + [Kom igång med rapporter](using/reports/gs-reports.md)
    + Live-rapport {#live-report}
       + [Kom igång med Live-rapporten](using/reports/live-report.md)
@@ -487,6 +492,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Översiktsrapport](using/reports/channel-report-cja.md)
       + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
       + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
+      + [Uteslutningsorsaker](using/reports/exclusion-list.md)
    + Anpassade reserapporter {#reports}
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
@@ -498,12 +504,6 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Fält för datahämtning](using/reports/sharing-fetch-fields.md)
          + [Identitetsfält](using/reports/sharing-identity-fields.md)
       + [Exempel på frågor](using/reports/query-examples.md)
-   + Levererbarhetsstrategi {#deliverability}
-      + [Kom igång med leverans](using/reports/deliverability.md)
-      + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
-      + [Nytt krav från DMARC](using/configuration/dmarc-record-update.md)
-   + [Aviseringar](using/reports/alerts.md)
-   + [Uteslutningsorsaker](using/reports/exclusion-list.md)
 + Beslutsförmåga {#decisioning}
    + [Kom igång med beslutsfunktioner](using/experience-decisioning/gs-decision.md)
    + Beslut {#experience-decisioning}
@@ -708,7 +708,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)

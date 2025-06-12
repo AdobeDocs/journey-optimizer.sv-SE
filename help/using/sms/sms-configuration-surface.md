@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 0d541520-016e-468f-b011-808712847556
-source-git-commit: 7ca149d420f802a6230e699cffefddc4117cb85e
+source-git-commit: da2fb137a8af82a8487638dc3d762377dd5dc506
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 >id="ajo_admin_surface_sms_type"
 >title="Definiera meddelandekategorin"
 >abstract="Välj typ av textmeddelanden med den här konfigurationen: Marknadsföring för kampanjmeddelanden som kräver användarens samtycke eller Transaktionsmeddelanden för icke-kommersiella meddelanden, till exempel lösenordsåterställning."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html?lang=sv-SE#sms-opt-out-management" text="Avanmäl dig i marknadsföringstextmeddelanden"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Avanmäl dig i marknadsföringstextmeddelanden"
 
-När din SMS/MMS-kanal har konfigurerats måste du skapa en kanalkonfiguration för att kunna skicka SMS- och MMS-meddelanden från **[!DNL Journey Optimizer]**.
+När din SMS/MMS-kanal har konfigurerats måste du skapa en kanalkonfiguration för att kunna skicka SMS- och/eller MMS-meddelanden från **[!DNL Journey Optimizer]**.
 
 Så här skapar du en kanalkonfiguration:
 

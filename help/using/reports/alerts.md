@@ -1,21 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Aviseringar
-description: Lär dig hur du hanterar aviseringar
+title: Åtkomst och prenumeration på systemvarningar
+description: Lär dig hur du får åtkomst till och prenumererar på systemvarningar
 feature: Journeys, Alerts
 topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: da2fb137a8af82a8487638dc3d762377dd5dc506
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
 
-# Kom igång med aviseringar {#alerts}
+# Åtkomst och prenumeration på systemvarningar {#alerts}
 
 När du skapar resor och kampanjer använder du knappen **Varningar** för att kontrollera och åtgärda fel innan du kör eller publicerar dem. Lär dig hur du felsöker dina resor på [den här sidan](../building-journeys/troubleshooting.md). Lär dig hur du granskar kampanjer på [den här sidan](../campaigns/review-activate-campaign.md).
 
@@ -29,7 +29,7 @@ På menyn **Varningar** kan du visa tillgängliga varningar och prenumerera på 
 
 <!--These messages can repeat over a pre-defined time interval until the alert has been resolved.-->
 
-Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
 Klicka på **Varningar** under **Administration** på den vänstra menyn. Det finns två förkonfigurerade aviseringar för Journey Optimizer: aviseringen [Fel vid anpassad åtgärd på resa](#alert-custom-actions) och aviseringen [Läs utlösare på målgrupp misslyckades](#alert-read-audiences). Dessa varningar beskrivs nedan.
 
@@ -37,9 +37,9 @@ Du kan prenumerera på varje varning individuellt från användargränssnittet g
 
 ![](assets/alert-subscribe.png)
 
-Du kan också prenumerera på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-varningar beskrivs nedan.
+Du kan också prenumerera på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-varningar beskrivs nedan.
 
-Om ett oväntat beteende inträffar skickas ett varningsmeddelande till prenumeranterna. Varningar skickas med e-post och/eller direkt från Journey Optimizer meddelandecenter i det övre högra hörnet av användargränssnittet, baserat på användarinställningarna. Som standard är endast varningar i appen aktiverade. Information om hur du aktiverar e-postvarningar finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.
+Om ett oväntat beteende inträffar skickas ett varningsmeddelande till prenumeranterna. Varningar skickas med e-post och/eller direkt från Journey Optimizer meddelandecenter i det övre högra hörnet av användargränssnittet, baserat på användarinställningarna. Som standard är endast varningar i appen aktiverade. Information om hur du aktiverar e-postvarningar finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.
 
 När en varning har lösts får prenumeranterna ett meddelande om att den har lösts.
 
