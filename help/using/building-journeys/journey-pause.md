@@ -10,7 +10,7 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 3cc5abdbec27ac9a8009b3b0d125a3b49dc9ed04
+source-git-commit: 68a115d3075f7953501b10f2057b5aa87e0fcf92
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 0%
@@ -167,7 +167,7 @@ Observera att uteslutning av profiler för närvarande på resan och för nya pr
 
 Låt oss ta exemplet på resan nedan:
 
-![Exempel på en resa](assets/pause-journey-sample.png){width="50%" align="left"}
+![Exempel på en resa](assets/pause-journey-sample.png)
 
 När du pausar den här resan väljer du om profiler är **Ignorerade** eller **Håll** och sedan är profilhanteringen följande:
 
