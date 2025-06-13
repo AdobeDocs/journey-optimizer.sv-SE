@@ -10,9 +10,9 @@ role: User
 level: Beginner
 keywords: resurser, integration
 exl-id: c74156bb-4f00-4325-b416-6fe36cb755d1
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: bba2fd3b481c582f33ffad79d1f1c1327143f108
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '504'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komm
 >
 >Adobe Express integrering i Adobe Journey Optimizer kan för närvarande inte användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
-Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/se/express/user-guide.html).
+Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/express/user-guide.html).
 
 Du kommer åt **[!DNL Adobe Express]**-menyn genom att gå till dina **bildinställningar** från e-post-Designer och klicka på **[!UICONTROL Edit in Adobe Express]**.
 
@@ -41,26 +41,19 @@ Du kommer åt **[!DNL Adobe Express]**-menyn genom att gå till dina **bildinst�
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
-## Adobe Express Enterprise-licens {#licence}
+## Använda Adobe Express med en Enterprise-licens {#licence}
 
 De funktioner som beskrivs i avsnitten nedan är tillgängliga för användare som saknar Adobe Express Enterprise-licens.
 
-Med Enterprise-licens får man tillgång till Adobe Express-redigeraren där man kan justera färg, ljusstyrka, skärpa, kontrast, dimensioner och ytterligare inställningar.
+Med Enterprise-licens har man full tillgång till Adobe Express Web Editor där man kan justera materialinställningar, generera innehåll med Firefly, lägga in text och göra ytterligare anpassningar.
 
 ![](assets/express-licence.png)
 
-+++Tillgängliga användningsexempel för användare och Enterprise-licens för Adobe Express
+Mer information om tillgängliga användningsexempel för användare med en Enterprise-licens för Adobe Express finns i [Adobe Express webbdokumentation](https://helpx.adobe.com/express/web.html).
 
-* [Ta bort bakgrund](https://helpx.adobe.com/se/express/create-and-edit-images/edit-images/remove-background.html)
-* [Ta bort objekt](https://helpx.adobe.com/se/express/create-and-edit-images/create-and-modify-with-generative-ai/remove-objects-generative-fill.html)
-* [Radera](https://helpx.adobe.com/se/express/create-and-edit-images/edit-images/eraser.html)
-* [Infoga objekt](https://helpx.adobe.com/se/express/adobe-express-on-mobile/create-and-edit-designs/generative-fill-mobile.html)
-* [Beskär](https://helpx.adobe.com/express/create-and-edit-images/edit-images/crop-and-shape-images.html)
-* [Effekter](https://helpx.adobe.com/se/express/add-effects-to-your-designs/add-images-and-visuals/apply-image-filters.html)
+## Använda Adobe Express utan Enterprise License  {#edit}
 
-+++
-
-## Ändra storlek på bild {#resize}
+### Ändra storlek på bild {#resize}
 
 1. Välj **[!UICONTROL Resize image]** på Adobe Express-menyn.
 
@@ -84,7 +77,7 @@ Med Enterprise-licens får man tillgång till Adobe Express-redigeraren där man
 
 Din bild är nu klar att användas i ditt innehåll.
 
-## Ta bort bakgrund {#background}
+### Ta bort bakgrund {#background}
 
 1. Välj **[!UICONTROL Remove background]** på Adobe Express-menyn.
 
@@ -104,7 +97,7 @@ Din bild är nu klar att användas i ditt innehåll.
 
 Din bild är nu klar att användas i ditt innehåll.
 
-## Beskär bild {#crop-image}
+### Beskär bild {#crop-image}
 
 1. Välj **[!UICONTROL Crop image]** på Adobe Express-menyn.
 
@@ -122,7 +115,7 @@ Din bild är nu klar att användas i ditt innehåll.
 
 Din bild är nu klar att användas i ditt innehåll.
 
-## Konvertera till JPEG eller PNG {#convert}
+### Konvertera till JPEG eller PNG {#convert}
 
 1. På Adobe Express-menyn väljer du **[!UICONTROL Convert to JPEG]** eller **[!UICONTROL Convert to PNG]** beroende på bildens ursprungliga format.
 
@@ -144,12 +137,11 @@ Din bild är nu klar att användas i ditt innehåll.
 
 Din bild är nu klar att användas i ditt innehåll.
 
-
 ## Instruktionsvideo {#video}
 
 Lär dig hur du redigerar resurser i Adobe Journey Optimizer med Adobe Express verktyg.
 
->[!VIDEO](https://video.tv.adobe.com/v/3455527/?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3455523/?quality=12)
 
 
 
