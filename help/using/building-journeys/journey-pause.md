@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 0c872f6bcc370c9f1557eca1b185fcb8fb0509f9
+source-git-commit: 3cc5abdbec27ac9a8009b3b0d125a3b49dc9ed04
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Så här pausar du din resa:
 
 I listan över dina resor kan du pausa en eller flera **Live**-resor. Om du vill pausa en grupp resor (_masspaus_) markerar du dem i listan och klickar på knappen **Paus** i det blå fältet längst ned på skärmen. Knappen **Paus** är bara tillgänglig när **Live**-resor har valts.
 
-![Pausa två direktresor i grupp från det nedre fältet](assets/bulk-pause-journeys.png){width="80%" align="left"}
+![Pausa två direktresor i grupp från det nedre fältet](assets/bulk-pause-journeys.png)
 
 ### Beteende vid pausade resor
 
@@ -76,21 +76,20 @@ När en resa pausas, förkastas alltid färska ingångar, oavsett om de är i l�
 
 Profilhantering när en resa pausas beror på aktiviteten. Beteenden beskrivs nedan. Mer information finns även i [Exemplet från början till slut](#journey-pause-sample).
 
-| Reseverksamhet | Profilhantering | Anteckningar |
-|-------------------------|--------------------------------------------------|------------------------|
-| [Målgruppskvalifikation](audience-qualification-events.md) | I den första noden: Ignorerade <br> I andra noder: Samma beteende som i en direktresa, men om målgruppskvalifikationen är efter en aktivitetsaktivitet och användaren pausas på den åtgärden, ignoreras målgruppsklassificeringen. |          |
-| [Affärshändelse](general-events.md) | Ignorerad |    |
-| [Enhetlig händelse](general-events.md) | I den första noden: Ignorerade <br>I andra noder: Samma beteende som i en direktresa, men om händelsen inträffar efter en åtgärdsaktivitet och användaren pausas på den åtgärden, ignoreras händelsen. | Skapa ditt meddelande |
-| [Läs målgrupp](read-audience.md) | Samma beteende som i en direktresa, med ett fåtal specialegenskaper:<br> Om Paus trycktes ned efter att läsmålgruppsaktiviteten hade startat, fortsätter profiler som har gått in på resan (till nästa åtgärdsaktivitet). När resan läser målgrupper med en viss hastighet kommer återstående profiler i kön att ignoreras om hela målgruppen inte har gått in ännu. | - För enstaka körningar: Inga fel visas vid återupptagningstid om det schemalagda datumet infaller före återupptagsdatumet. Det schemat ignoreras. <br>- För inkrementella resor: <br> Om en paus inträffar före den första förekomsten spelas hela målgruppen upp när den återupptas. <br>Om en paus inträffar t.ex. den 4:e dagen av en daglig upprepning och resa förblir pausad till den 9:e dagen så inkluderas alla profiler som har angetts från den 4:e till 9 |
+| Reseverksamhet | Profilhantering |
+|-------------------------|--------------------------------------------------|
+| [Målgruppskvalifikation](audience-qualification-events.md) | I den första noden: Ignorerade <br> I andra noder: Samma beteende som i en direktresa, men om målgruppskvalifikationen är efter en aktivitetsaktivitet och användaren pausas på den åtgärden, ignoreras målgruppsklassificeringen. |
+| [Enhetlig händelse](general-events.md) | I den första noden: Ignorerade <br>I andra noder: Samma beteende som i en direktresa, men om händelsen inträffar efter en åtgärdsaktivitet och användaren pausas på den åtgärden, ignoreras händelsen. |
+| [Läs målgrupp](read-audience.md) | Samma beteende som i en direktresa, med några få specialegenskaper:<br>1.  Om <strong>Pause</strong> trycktes ned efter att aktiviteten <strong>Läs målgrupp</strong> hade startats, fortsätter profiler som har gått in i resan (till nästa <strong>Åtgärd</strong> -aktivitet). När resan läser målgrupper med en viss hastighet kommer återstående profiler i kön att ignoreras om hela målgruppen inte har gått in ännu.   <br>2. För enstaka körningar: Inga fel visas vid återupptagningstid om det schemalagda datumet infaller före återupptagsdatumet. Det schemat ignoreras. <br>3. För inkrementella resor: <br> - Om en paus inträffar före den första förekomsten spelas hela målgruppen upp när den återupptas. <br>- Om en paus inträffar t.ex. den 4:e dagen av en daglig upprepning och resa förblir pausad till den 9:e dagen så inkluderas alla profiler som har angetts från den 4:e till 9 |
 | [Reaktion](reaction-events.md) | Samma beteende som i en direktresa, men om reaktionen inträffar efter en åtgärdsaktivitet och användaren pausas på den åtgärden, kommer händelsen att ignoreras. |
-| [Vänta](wait-activity.md) | Samma beteende som i en direktresa |           |
-| [Villkor](condition-activity.md) | Samma beteende som i en direktresa |         |
-| Innehållsbeslut | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |            |
-| [Kanalåtgärd](journeys-message.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |          |
-| [Anpassad åtgärd](../action/action.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |            |
-| [Uppdatera profil](update-profiles.md) &amp; [Hoppa](jump.md) |  |       |
-| [Externa data, Source](../datasource/external-data-sources.md) | Samma beteende som i en direktresa |           |
-| [Avsluta villkor](journey-properties.md#exit-criteria) | Samma beteende som i en direktresa |           |
+| [Vänta](wait-activity.md) | Samma beteende som i en direktresa |
+| [Villkor](condition-activity.md) | Samma beteende som i en direktresa |
+| Innehållsbeslut | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
+| [Kanalåtgärd](journeys-message.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
+| [Anpassad åtgärd](../action/action.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
+| [Uppdatera profil](update-profiles.md) &amp; [Hoppa](jump.md) | Samma beteende som i en direktresa |
+| [Externa data, Source](../datasource/external-data-sources.md) | Samma beteende som i en direktresa |
+| [Avsluta villkor](journey-properties.md#exit-criteria) | Samma beteende som i en direktresa |
 
 ## Så här återupptar du en pausad resa {#journey-resume-steps}
 
