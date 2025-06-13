@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: eff3f2fb4d1c369e77a22013ae1576b57449a8b7
+source-git-commit: 8188749c47be0a3d91b9857d170bceb4747a3400
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1017'
 ht-degree: 3%
 
 ---
@@ -45,7 +45,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>RCS-meddelanden (Rich Communication Services) stöds nu i Journey Optimizer, vilket möjliggör följande förbättrade meddelandefunktioner med stöd för leverantörer och operatörer:</p>
+<p>RCS-meddelanden (Rich Communication Services) stöds nu i Journey Optimizer, vilket möjliggör följande förbättrade meddelandefunktioner under förutsättning att leverantörer och operatörer stöds:</p>
 <ul>
 <li>Stöd för varumärken och verifierade avsändare: Skicka meddelanden med verifierade affärsprofiler med varumärkeselement (logotyp, avsändarnamn osv.).</li>
 <li>Information om meddelandeleverans: Ta emot detaljerade leveransrapporter inklusive meddelandestatusuppdateringar (t.ex. skickade, levererade, lästa).</li>
@@ -83,8 +83,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Nu kan du definiera specifika redigerbara fält i JSON- eller HTML-innehållsmallar, som gör det möjligt för icke-tekniska användare att enkelt redigera innehåll i kodbaserade upplevelser utan att behöva ändra kod.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Nu kan du definiera specifika redigerbara fält i JSON- eller HTML-innehållsmallar, som gör det möjligt för icke-tekniska användare att enkelt redigera innehåll i en formulärvy i den kodbaserade upplevelsekanalutvecklingen, utan att behöva ändra någon kod. Mer än så kan du nu infoga beslutsprinciper i mallen när du definierar kodbaserade innehållsmallar för upplevelser, vilket ökar återanvändbarheten och underlättar användningen.</p>
 </td>
 </tr>
 </tbody>
