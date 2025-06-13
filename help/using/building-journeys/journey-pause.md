@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 8dae895f33d8e95424bc96c8050b8f52d7c02b50
+source-git-commit: 101796a9221beeb1fa4950d806a91997ee6c9ae4
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem 
 >Den här funktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet) och kommer att lanseras globalt i en framtida version.
 
 
-## Viktiga fördelar {#journey-dry-run-benefits}
+## Viktiga fördelar {#journey-pause-benefits}
 
 Pausa och återuppta resor ger resenärerna större kontroll och flexibilitet genom att tillåta att direktresor tillfälligt avbryts utan att störa kundupplevelsen. När det är pausat skickas ingen kommunikation och profilerna förblir i ett uppehåll tills resan återupptas.
 
@@ -39,22 +39,10 @@ Denna funktion minskar risken för att skicka oavsiktliga meddelanden vid fel el
 
 >[!CAUTION]
 >
->Behörigheter att pausa och återuppta resor är begränsade till användare med högnivåbehörighet **[!DNL Publish journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>* Behörigheter att pausa och återuppta resor är begränsade till användare med högnivåbehörighet **[!DNL Publish journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>
+>* Innan du börjar använda funktionen för paus/återupptagning ska du [läsa igenom GuarDRAils and Limitation](journey-pause-guardrails).
 
-## Skyddsutkast och rekommendationer
-
-* En reseversion kan pausas i högst 14 dagar.
-* Pausade resor beaktas i alla affärsregler, på samma sätt som om de var levande.
-* Profiler tas bort under en pausad resa när de når en åtgärdsaktivitet. Om de stannar på en väntetid under den tid som en resa pausas och avslutar som väntar efter att den har återupptagits, fortsätter resan och tas inte bort.
-* Även efter pausen kommer dessa händelser att räknas in i antalet resthändelser per sekund, efter vilken strypningen görs för att skapa en enhet.
-* Profiler som hade passerat resan men ignorerats under pausen räknas fortfarande som profiler som kan användas.
-* När profiler hålls i en pausad resa uppdateras profilattributen vid återupptagningstid
-* Villkor körs fortfarande i pausade resor, så om en resa har pausats på grund av problem med datakvaliteten kan alla villkor som föregår en åtgärdsnod utvärderas med felaktiga data.
-* För inkrementell målgruppsbaserad läsning beaktas den pausade längden. Om en daglig resa till exempel pausades den andra och återupptogs den 5:e i månaden, kommer körningen den 6:e att ta alla profiler som är kvalificerade från den 1:e till den 6:e. Detta gäller inte för målgruppskompetens eller händelsebaserade resor (om en målgruppskompetens eller ett evenemang tas emot under en paus ignoreras dessa händelser).
-* Pausade resor räknas in i kvoten för direktresor.
-* Den globala tidsgränsen för resan gäller fortfarande för pausade resor. Om en profil till exempel har besökt en resa i 90 dagar och resan har pausats, kommer den här profilen fortfarande att avsluta resan den 91:e dagen.
-* Om profiler hålls på en resa och den här resan automatiskt återupptas efter några dagar, fortsätter profilerna resan och släpps inte. Om du vill släppa dem måste du stoppa resan.
-  <!--* There is a guardrail (at an org level) on the max number of profiles that can be held in paused journeys. This guardrail is per org, and is visible in the journey inventory on a new bar (only visible when there are paused journeys).-->
 
 ## Pausa en resa {#journey-pause-steps}
 
@@ -82,6 +70,27 @@ I listan över dina resor kan du pausa en eller flera **Live**-resor. Om du vill
 
 ![Pausa två direktresor i grupp från det nedre fältet](assets/bulk-pause-journeys.png){width="80%" align="left"}
 
+### Beteende vid pausade resor
+
+När en resa pausas, förkastas alltid färska ingångar, oavsett om de är i läget Håll kvar eller Kasta.
+
+Profilhantering när en resa pausas beror på aktiviteten. Beteenden beskrivs nedan. Mer information finns även i [Exemplet från början till slut](#journey-pause-sample).
+
+| Reseverksamhet | Profilhantering | Anteckningar |
+|-------------------------|--------------------------------------------------|------------------------|
+| [Målgruppskvalifikation](audience-qualification-events.md) | I den första noden: Ignorerade <br> I andra noder: Samma beteende som i en direktresa, men om målgruppskvalifikationen är efter en aktivitetsaktivitet och användaren pausas på den åtgärden, ignoreras målgruppsklassificeringen. |          |
+| [Affärshändelse](general-events.md) | Ignorerad |    |
+| [Enhetlig händelse](general-events.md) | I den första noden: Ignorerade <br>I andra noder: Samma beteende som i en direktresa, men om händelsen inträffar efter en åtgärdsaktivitet och användaren pausas på den åtgärden, ignoreras händelsen. | Skapa ditt meddelande |
+| [Läs målgrupp](read-audience.md) | Samma beteende som i en direktresa, med ett fåtal specialegenskaper:<br> Om Paus trycktes ned efter att läsmålgruppsaktiviteten hade startat, fortsätter profiler som har gått in på resan (till nästa åtgärdsaktivitet). När resan läser målgrupper med en viss hastighet kommer återstående profiler i kön att ignoreras om hela målgruppen inte har gått in ännu. | - För enstaka körningar: Inga fel visas vid återupptagningstid om det schemalagda datumet infaller före återupptagsdatumet. Det schemat ignoreras. <br>- För inkrementella resor: <br> Om en paus inträffar före den första förekomsten spelas hela målgruppen upp när den återupptas. <br>Om en paus inträffar t.ex. den 4:e dagen av en daglig upprepning och resa förblir pausad till den 9:e dagen så inkluderas alla profiler som har angetts från den 4:e till 9 |
+| [Reaktion](reaction-events.md) | Samma beteende som i en direktresa, men om reaktionen inträffar efter en åtgärdsaktivitet och användaren pausas på den åtgärden, kommer händelsen att ignoreras. |
+| [Vänta](wait-activity.md) | Samma beteende som i en direktresa |           |
+| [Villkor](condition-activity.md) | Samma beteende som i en direktresa |         |
+| Innehållsbeslut | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |            |
+| [Kanalåtgärd](journeys-message.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |          |
+| [Anpassad åtgärd](../action/action.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |            |
+| [Uppdatera profil](update-profiles.md) &amp; [Hoppa](jump.md) |  |       |
+| [Externa data, Source](../datasource/external-data-sources.md) | Samma beteende som i en direktresa |           |
+| [Avsluta villkor](journey-properties.md#exit-criteria) | Samma beteende som i en direktresa |           |
 
 ## Så här återupptar du en pausad resa {#journey-resume-steps}
 
@@ -97,7 +106,7 @@ Så här återupptar du en pausad resa och börjar lyssna på resehändelser ige
 1. Öppna den resa du vill återuppta.
 1. Klicka på knappen **...Mer** i den övre högra delen av arbetsytan och välj **Återuppta**.
 
-   Resan växlar till statusen **Återupptar**. Övergången från statusen **Återupptar** till **Live** kan ta en stund: alla profiler måste återupptas för att resan ska bli **Live** igen.
+   Resan växlar till statusen **Återupptar**. När resan återupptas börjar nya ingångar inom en minut. Det kan ta en stund att återuppta profiler som hölls.  Eftersom alla profiler måste återupptas för att resan ska bli **Live** igen kan övergången från **Återuppta** till **Live** ta lite tid.
 
 1. Bekräfta genom att klicka på knappen **Återuppta**.
 
@@ -107,9 +116,9 @@ I listan över dina resor kan du återuppta en eller flera **Pausade** resor. Om
 
 ## Tillämpa ett globalt filter på profiler i en pausad resa  {#journey-global-filters}
 
-När en resa pausas kan du använda ett globalt filter baserat på profilattribut. Det här filtret gör att profiler som matchar det definierade uttrycket utesluts vid återupptagningstid. Profiler som matchar de villkor som för närvarande finns under resan kommer att avsluta den och nya profiler som försöker komma in kommer att blockeras.
+När en resa pausas kan du använda ett globalt filter baserat på profilattribut. Det här filtret gör att profiler som matchar det definierade uttrycket utesluts vid återupptagningstid. När det globala filtret är inställt gäller det åtgärdsnoder, även för nya profiler. Profiler som matchar villkoren och nya profiler som försöker registrera kommer att exkluderas från resan **på nästa åtgärdsnod** som påträffas.
 
-Om du t.ex. vill utesluta alla franska kunder från marknadsföringsmaterial till Frankrike gör du så här:
+Så här utesluter du till exempel alla franska kunder från en pausad resa:
 
 1. Bläddra till den pausade resa som du vill ändra.
 
@@ -117,7 +126,7 @@ Om du t.ex. vill utesluta alla franska kunder från marknadsföringsmaterial til
 
    ![Lägg till ett globalt filter för en pausad resa](assets/add-global-filter.png){width="50%" align="left"}
 
-1. Definiera ett filter baserat på profilattribut i inställningarna för **Avsluta villkor och globalt filter**.
+1. Klicka på **Lägg till globalt filter** och definiera ett filter baserat på profilattribut i inställningarna för **Avsluta villkor och globalt filter**.
 
 1. Ange uttrycket för att exkludera profiler där landattributet är lika med Frankrike.
 
@@ -127,7 +136,7 @@ Om du t.ex. vill utesluta alla franska kunder från marknadsföringsmaterial til
 
 1. [Fortsätt resan](#journey-resume-steps).
 
-   Vid CV kommer alla profiler med landattributet inställt på Frankrike automatiskt att uteslutas från resan. Alla nya profiler med landattributet inställt på Frankrike som försöker ta sig in på resan kommer att blockeras.
+   Vid CV utesluts alla profiler med landattributet inställt på Frankrike automatiskt från resan vid nästa åtgärdsnod. Alla nya profiler med landattributet inställt på Frankrike som försöker ta sig in på resan blockeras vid nästa åtgärdsnod.
 
 Observera att uteslutning av profiler för närvarande på resan och för nya profiler endast sker när de når en åtgärdsnod.
 
@@ -136,3 +145,42 @@ Observera att uteslutning av profiler för närvarande på resan och för nya pr
 >* Du kan bara ange **ett** globalt filter per resa.
 >
 >* Du kan bara skapa, uppdatera eller ta bort ett globalt filter på **Pausade** resor.
+
+## Skyddsritningar och begränsningar {#journey-pause-guardrails}
+
+* En reseversion kan pausas i högst 14 dagar.
+* Pausade resor beaktas i alla affärsregler, på samma sätt som om de var levande.
+* Profiler tas bort under en pausad resa när de når en åtgärdsaktivitet. Om de stannar på en väntetid under den tid som en resa pausas och avslutar som väntar efter att den har återupptagits, fortsätter resan och tas inte bort.
+* Även efter pausen kommer dessa händelser att räknas in i antalet resthändelser per sekund, efter vilken strypningen görs för att skapa en enhet.
+* Profiler som hade passerat resan men ignorerats under pausen räknas fortfarande som profiler som kan användas.
+* När profiler hålls i en pausad resa uppdateras profilattributen vid återupptagningstid
+* Villkor körs fortfarande i pausade resor, så om en resa har pausats på grund av problem med datakvaliteten kan alla villkor som föregår en åtgärdsnod utvärderas med felaktiga data.
+* För inkrementell målgruppsbaserad läsning beaktas den pausade längden. Om en daglig resa till exempel pausades den andra och återupptogs den 5:e i månaden, kommer körningen den 6:e att ta alla profiler som är kvalificerade från den 1:e till den 6:e. Detta gäller inte för målgruppskompetens eller händelsebaserade resor (om en målgruppskompetens eller ett evenemang tas emot under en paus ignoreras dessa händelser).
+* Pausade resor räknas in i kvoten för direktresor.
+* Den globala tidsgränsen för resan gäller fortfarande för pausade resor. Om en profil till exempel har besökt en resa i 90 dagar och resan har pausats, kommer den här profilen fortfarande att avsluta resan den 91:e dagen.
+* Om profiler hålls på en resa och den här resan automatiskt återupptas efter några dagar, fortsätter profilerna resan och släpps inte. Om du vill släppa dem måste du stoppa resan.
+* Vid pausade resor utlöses inga varningsmeddelanden för batchsegmentsmeddelanden.
+* Det finns inga granskningsloggar i systemet när pausläget för resan avslutas efter 14 dagar.
+* Vissa ignorerade profiler kan vara synliga i resesegmenthändelsen men inte synliga i rapporteringen. Till exempel: Ignorera affärshändelser för Läs publik, jobb för Läs publik ignoreras på grund av pausad resa, ignorerade händelser när händelseaktiviteten var efter en åtgärd där profilen väntade.
+  <!--* There is a guardrail (at an org level) on the max number of profiles that can be held in paused journeys. This guardrail is per org, and is visible in the journey inventory on a new bar (only visible when there are paused journeys).-->
+
+## Slut till slut {#journey-pause-sample}
+
+Låt oss ta exemplet på resan nedan:
+
+![Exempel på en resa](assets/pause-journey-sample.png){width="50%" align="left"}
+
+När du pausar den här resan väljer du om profiler är **Ignorerade** eller **Håll** och sedan är profilhanteringen följande:
+
+1. **AddToCart**-aktivitet: alla nya profiler blockeras. Om en profil redan har påbörjat resan före en paus fortsätter den till nästa åtgärdsnod.
+1. **Vänta**-aktivitet: profiler fortsätter att vänta normalt på noden och kommer att avsluta den, även om resan är i pausläge.
+1. **Villkor**: Profilerna fortsätter att gå igenom villkoren och flyttas till den högra grenen, baserat på uttrycket som definierats för villkoret.
+1. **Push**/**Email**-aktiviteter: under en pausad resa börjar profiler vänta eller tas bort (baserat på det val som användaren gjorde vid tiden för paus) på nästa åtgärdsnod. Profilerna kommer att börja vänta eller kastas bort där.
+1. **Händelser** efter åtgärdsnoder: Om en profil väntar på en åtgärdsnod och det finns en händelse efter den kommer profilen att ignoreras om händelsen utlöses.
+
+Enligt det här beteendet kan du se profilnummer öka på pausad resa, främst i aktiviteter före Åtgärder. I det exemplet ignoreras exempelvis Wait, vilket ökar antalet profiler som går igenom villkorsaktiviteten.
+
+När du återupptar den här resan:
+
+1. Nya ingångar till resan börjar inom en minut
+1. Profiler som för närvarande väntade på att genomföra en åtgärd återupptas med en hastighet på 5 000 steg. De kommer sedan att delta i det makro de väntade på och fortsätta resan.
