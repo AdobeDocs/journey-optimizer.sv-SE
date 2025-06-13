@@ -41,7 +41,7 @@ Denna funktion minskar risken för att skicka oavsiktliga meddelanden vid fel el
 >
 >* Behörigheter att pausa och återuppta resor är begränsade till användare med högnivåbehörighet **[!DNL Publish journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 >
->* Innan du börjar använda funktionen för paus/återupptagning ska du [läsa igenom GuarDRAils and Limitation](journey-pause-guardrails).
+>* Innan du börjar använda funktionen för paus/återupptagning ska du [läsa igenom GuarDRAils and Limitation] (journey-pause-guardrails).
 
 
 ## Pausa en resa {#journey-pause-steps}
