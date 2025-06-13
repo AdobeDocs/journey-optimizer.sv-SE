@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 0abf2743f7b43b54df5305f47e3bd20d37df6f39
+source-git-commit: 9845e8ca89943b7c2bb7d236cac5e30aa2b01e23
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 7%
+source-wordcount: '2129'
+ht-degree: 5%
 
 ---
 
@@ -20,9 +20,127 @@ ht-degree: 7%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## Uppdateringar 25 juni {#25-6-rn}
+
+
+## Versionsinformation 25 juni {#25-6-rn}
+
+
+**Noteringar om tidig version nedan kan ändras utan föregående meddelande till releasedatum**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
+
+**Releasedatum**: 17-18 juni 2025
+
+
+### Nya funktioner {#25-06-features}
+
+De nya funktionerna i den här versionen beskrivs nedan.
+
+
+<table>
+<thead>
+<tr>
+<th><strong>RCS-meddelanden</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>RCS-meddelanden (Rich Communication Services) stöds nu i Journey Optimizer, vilket möjliggör följande förbättrade meddelandefunktioner under förutsättning att leverantörer och operatörer stöds:</p>
+<ul>
+<li>Stöd för varumärken och verifierade avsändare: Skicka meddelanden med verifierade affärsprofiler med varumärkeselement (logotyp, avsändarnamn osv.).</li>
+<li>Information om meddelandeleverans: Ta emot detaljerade leveransrapporter inklusive meddelandestatusuppdateringar (t.ex. skickade, levererade, lästa).</li>
+<li>Länkspårning: Bädda in och spåra URL:er i RCS-meddelanden för engagemangsanalys.</li>
+<li>Återställning till SMS: Automatisk återgång till SMS när profilens enhet inte stöder RCS eller är tillfälligt oåtkomlig via RCS.</li>
+<li>Grundläggande meddelandekomposition: Skicka textbaserade RCS-meddelanden med valfria medier och multimedieelement beroende på leverantörens support.</li>
+</ul>
+<!--p>For more information, refer to the <a href="../sms/sms-configuration.md">detailed documentation</a>.</p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Formulärfält i kodbaserat upplevelseinnehåll</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du definiera specifika redigerbara fält i JSON- eller HTML-innehållsmallar, som gör det möjligt för icke-tekniska användare att enkelt redigera innehåll i en formulärvy i den kodbaserade upplevelsekanalutvecklingen, utan att behöva ändra någon kod. Mer än så kan du nu infoga beslutsprinciper i mallen när du definierar kodbaserade innehållsmallar för upplevelser, vilket ökar återanvändbarheten och underlättar användningen.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassad delegeringsmetod för underdomäner</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Utöver den fullständiga delegeringen och CNAME-metoden finns nu en ny konfigurationsmetod för underdomäner: metoden för anpassad delegering, som gör att du kan ha fullständig kontroll över och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Innehållsbeslutsaktivitet på resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni inkludera personaliserade erbjudanden på era resor med en dedikerad Content Decisioning-aktivitet på arbetsytan och använda dem i reseaktiviteter, inklusive villkor och anpassade åtgärder.</p>
+<p>Den här funktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet) och kommer att lanseras globalt i en framtida version.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Körning av resetorr</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live.</p>
+<p>Den här funktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet) och kommer att lanseras globalt i en framtida version.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Pausa och återuppta resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du pausa och återuppta dina resor. Denna förmåga ger resenärerna större kontroll och flexibilitet genom att göra det möjligt att tillfälligt avbryta pågående resor utan att störa kundupplevelsen. När det är pausat skickas ingen kommunikation och profilerna förblir i ett uppehåll tills resan återupptas.</p>
+<p>Du kan bara pausa och återuppta en resa, eller utföra grupppausningar och återuppta åtgärder på en grupp resor.</p>
+<p>Dessutom kan du använda globala filter på pausade resor för att exkludera profiler baserat på deras attribut.</p>
+<p>Den här funktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet) och kommer att lanseras globalt i en framtida version.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -63,7 +181,26 @@ ht-degree: 7%
 </tbody>
 </table>
 
-### Förbättringar
+
+### Förbättringar {#25-06-improv}
+
+Förbättringar i den här versionen visas nedan.
+
+* **Kanalregeluppsättningar**
+
+   * **Anpassat tidsfönster** för capping - Ett nytt **antal upprepningar**-fält är nu tillgängligt i konfigurationsskärmen för kanalregeluppsättningar, vilket gör att du kan tillämpa regler för frekvensbegränsning över flera dagar, veckor eller månader, beroende på den angivna varaktigheten.
+
+   * **Varaktighet per timme** - Du kan nu tillämpa begränsning per timme för kanalregeluppsättningar.
+
+* **Kodbaserade upplevelser**
+
+  Beslutsprinciper finns nu i kodbaserade mallar för upplevelseinnehåll och i kodredigeraren på rätt spår.
+
+* **Email Designer**
+
+   * **Anpassat CSS-stöd** - Med Journey Optimizer kan du nu lägga till anpassad CSS i ditt e-postinnehåll direkt i e-postdesignern.
+   * **Stöd för mörkt läge** - Journey Optimizer e-postdesigner kan nu växla till mörkt läge där du kan definiera specifika inställningar.
+
 
 * **Beslut** - Tillgänglighetsdatum: 3 juni 2025
 
