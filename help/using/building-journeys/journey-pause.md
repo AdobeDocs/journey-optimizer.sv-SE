@@ -10,7 +10,7 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 68a115d3075f7953501b10f2057b5aa87e0fcf92
+source-git-commit: adff7581d72947273675ab9b7bc36702d76d3792
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 0%
@@ -123,13 +123,13 @@ Så här utesluter du till exempel alla franska kunder från en pausad resa:
 
 1. Klicka på ikonen **Avsluta villkor och globalt filter** .
 
-   ![Lägg till ett globalt filter för en pausad resa](assets/add-global-filter.png){width="50%" align="left"}
+   ![Lägg till ett globalt filter för en pausad resa](assets/add-global-filter.png)
 
 1. Klicka på **Lägg till globalt filter** och definiera ett filter baserat på profilattribut i inställningarna för **Avsluta villkor och globalt filter**.
 
 1. Ange uttrycket för att exkludera profiler där landattributet är lika med Frankrike.
 
-   ![Lägg till ett globalt filter för en pausad resa](assets/add-country-filter.png){width="50%" align="left"}
+   ![Lägg till ett globalt filter för en pausad resa](assets/add-country-filter.png)
 
 1. Spara filtret och klicka på knappen **Uppdatera resa** för att tillämpa ändringarna.
 
