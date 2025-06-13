@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 101796a9221beeb1fa4950d806a91997ee6c9ae4
+source-git-commit: c00d5a97e7bedf6f1a22a59cc3bd7588eb9ad32e
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2164'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 5%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Versionsinformation 25 juni {#25-6-rn}
@@ -30,7 +30,7 @@ ht-degree: 5%
 
 **Releasedatum**: 17-18 juni 2025
 
-Se även [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 ### Nya funktioner {#25-06-features}
 
@@ -201,6 +201,7 @@ Förbättringar i den här versionen visas nedan.
    * **Anpassat CSS-stöd** - Med Journey Optimizer kan du nu lägga till anpassad CSS i ditt e-postinnehåll direkt i e-postdesignern.
    * **Stöd för mörkt läge** - Journey Optimizer e-postdesigner kan nu växla till mörkt läge där du kan definiera specifika inställningar.
 
+* **Kampanjer** - Ny fliknavigering för åtgärdskampanjer. Det nya navigeringsmönstret ger snabbare åtkomst till innehållsutveckling och stöd för ytterligare expansion av inställningar mellan kampanjer.
 
 * **Beslut** - Tillgänglighetsdatum: 3 juni 2025
 
