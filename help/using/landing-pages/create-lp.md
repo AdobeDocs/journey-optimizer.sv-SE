@@ -82,7 +82,7 @@ När du har konfigurerat och utformat den [primära sidan](#configure-primary-pa
 >title="Ange inställningar för den primära sidan"
 >abstract="Den primära sidan visas omedelbart för användarna när de klickar på länken till din landningssida, till exempel från ett e-postmeddelande eller en webbplats."
 <!--
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Design the landing page content"-->
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html?lang=sv-SE" text="Design the landing page content"-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_settings"
