@@ -11,9 +11,9 @@ hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: 8dae895f33d8e95424bc96c8050b8f52d7c02b50
+source-git-commit: f308668ba1b7b20f6144e9200328e54986f66103
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -56,25 +56,10 @@ Journey Dry-körningen ger
 
 >[!CAUTION]
 >
->Behörigheter att starta Torr körning är begränsade till användare med hög behörighet på **[!DNL Publish journeys]**. Behörigheter att stoppa Torr körning är begränsade till användare med hög behörighet på **[!DNL Manage journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>* Behörigheter att starta Torr körning är begränsade till användare med hög behörighet på **[!DNL Publish journeys]**. Behörigheter att stoppa Torr körning är begränsade till användare med hög behörighet på **[!DNL Manage journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>
+>* Innan du börjar använda funktionen för torr körning ska du [läsa igenom GuarDRAils and Limitations](#journey-dry-run-limitations).
 
-
-## Skyddsritningar och begränsningar {#journey-dry-run-limitations}
-
-* Körningsläget Torr är inte tillgängligt för resor som innehåller reaktionshändelser.
-* Profiler i körningsläget Torr räknas mot profiler som kan användas.
-* Torra resor påverkar inte affärsreglerna.
-* Om en tidigare version av en resa är **Live** när en ny version skapas tillåts inte aktivering av körningen av Dry för den nya versionen.
-* Körning av körning av resedagring genererar stepEvents. Dessa stepEvents har en särskild flagga och ett körnings-ID för torr:
-   * `_experience.journeyOrchestration.stepEvents.inDryRun` returnerar `true` om Torr-körningen är aktiverad, i annat fall `false`
-   * `_experience.journeyOrchestration.stepEvents.dryRunID` returnerar ID:t för en instans med torr körning
-* Under torra körningar utförs resan med följande särdrag:
-
-   * **Kanalåtgärd** - noder som e-post, SMS eller push-meddelanden körs inte.
-   * **Anpassade åtgärder** inaktiveras under körning av Dry och deras svar anges till null.
-   * **Väntenoderna** ignoreras under körning av torr nod.
-     <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
-   * **Datakällor**, inklusive externa datakällor, körs som standard.
 
 ## Starta en torr körning {#journey-dry-run-start}
 
@@ -132,3 +117,20 @@ Torra körningsresor **måste** stoppas manuellt.
 Klicka på knappen **Stäng** för att avsluta testet och klicka sedan på **Tillbaka till utkast** för att bekräfta.
 
 <!-- After 14 days, Dry run journeys automatically transition to the **Draft** status.-->
+
+## Skyddsritningar och begränsningar {#journey-dry-run-limitations}
+
+* Körningsläget Torr är inte tillgängligt för resor som innehåller reaktionshändelser.
+* Profiler i körningsläget Torr räknas mot profiler som kan användas.
+* Torra resor påverkar inte affärsreglerna.
+* Om en tidigare version av en resa är **Live** när en ny version skapas tillåts inte aktivering av körningen av Dry för den nya versionen.
+* Körning av körning av resedagring genererar stepEvents. Dessa stepEvents har en särskild flagga och ett körnings-ID för torr:
+   * `_experience.journeyOrchestration.stepEvents.inDryRun` returnerar `true` om Torr-körningen är aktiverad, i annat fall `false`
+   * `_experience.journeyOrchestration.stepEvents.dryRunID` returnerar ID:t för en instans med torr körning
+* Under torra körningar utförs resan med följande särdrag:
+
+   * **Kanalåtgärd** - noder som e-post, SMS eller push-meddelanden körs inte.
+   * **Anpassade åtgärder** inaktiveras under körning av Dry och deras svar anges till null.
+   * **Väntenoderna** ignoreras under körning av torr nod.
+     <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
+   * **Datakällor**, inklusive externa datakällor, körs som standard.

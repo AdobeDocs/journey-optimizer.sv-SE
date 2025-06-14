@@ -10,7 +10,7 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: adff7581d72947273675ab9b7bc36702d76d3792
+source-git-commit: f308668ba1b7b20f6144e9200328e54986f66103
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Så här återupptar du en pausad resa och börjar lyssna på resehändelser ige
 I listan över dina resor kan du återuppta en eller flera **Pausade** resor. Om du vill återuppta en grupp av resor (_massåteruppta_) markerar du dem och klickar på knappen **Återuppta** i det blå fältet längst ned på skärmen. Observera att knappen **Återuppta** endast är tillgänglig när **Pausade** resor har valts.
 
 
-## Tillämpa ett globalt filter på profiler i en pausad resa  {#journey-global-filters}
+## Tillämpa ett globalt filter på profiler i en pausad resa {#journey-global-filters}
 
 När en resa pausas kan du använda ett globalt filter baserat på profilattribut. Det här filtret gör att profiler som matchar det definierade uttrycket utesluts vid återupptagningstid. När det globala filtret är inställt gäller det åtgärdsnoder, även för nya profiler. Profiler som matchar villkoren och nya profiler som försöker registrera kommer att exkluderas från resan **på nästa åtgärdsnod** som påträffas.
 
