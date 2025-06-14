@@ -22,7 +22,7 @@ ht-degree: 2%
 >id="ac_lp_components"
 >title="Använda innehållskomponenter"
 >abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för en landningssida. Använd formulärkomponenten för att definiera specifikt innehåll som gör att användare kan välja och skicka sina val."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/design-email/add-content/content-components#add-content-components" text="Lägga till innehållskomponenter"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/content-components#add-content-components" text="Lägga till innehållskomponenter"
 
 Om du vill utforma innehållet på landningssidan kan du använda samma komponenter som för ett e-postmeddelande. [Läs mer](../email/content-components.md#add-content-components)
 
