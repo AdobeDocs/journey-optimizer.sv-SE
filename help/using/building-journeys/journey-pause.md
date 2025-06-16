@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 187ddc49d72a0ed5ce0ad6f7b910815ae2e59d34
+source-git-commit: 33b60693d060e37873f9d505d0893839698036a8
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2011'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Denna funktion minskar risken för att skicka oavsiktliga meddelanden vid fel el
 >
 >* Behörigheter att pausa och återuppta resor är begränsade till användare med högnivåbehörighet **[!DNL Publish journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 >
->* Innan du börjar använda funktionen för paus/återupptagning ska du [läsa igenom GuarDRAils and Limitation](#journey-pause-guardrails).
+>* Innan du börjar använda funktionen för paus/återupptagning ska du [läsa igenom GuarDRAils och begränsningar](#journey-pause-guardrails).
 
 
 ## Pausa en resa {#journey-pause-steps}
@@ -148,39 +148,42 @@ Observera att uteslutning av profiler för närvarande på resan och för nya pr
 
 ## Skyddsritningar och begränsningar {#journey-pause-guardrails}
 
-* En reseversion kan pausas i högst 14 dagar.
-* Pausade resor beaktas i alla affärsregler, på samma sätt som om de var levande.
-* Profiler tas bort under en pausad resa när de når en åtgärdsaktivitet. Om de stannar på en väntetid under den tid som en resa pausas och avslutar som väntar efter att den har återupptagits, fortsätter resan och tas inte bort.
-* Även efter pausen kommer dessa händelser att räknas in i antalet resthändelser per sekund, efter vilken strypningen görs för att skapa en enhet.
-* Profiler som hade passerat resan men ignorerats under pausen räknas fortfarande som profiler som kan användas.
+* En reseversion kan pausas i högst 14 dagar
+* Pausade resor räknas in i kvoten för direktfärd
+* Profiler som hade passerat resan men ignorerats under pausen räknas fortfarande som profiler som kan användas
+* Pausade resor beaktas i alla affärsregler, på samma sätt som om de var levande
+* Den globala tidsgränsen för resan gäller fortfarande för pausade resor. Om en profil till exempel har varit under en resa i 90 dagar och resan har pausats, kommer den här profilen fortfarande att avsluta resan den 91:e dagen
+* Profilerna **tas bort** i en pausad resa när de når en åtgärdsaktivitet. Om de stannar på en väntetid under den tid som en resa pausas och avslutar som väntar efter att den har återupptagits, fortsätter resan och tas inte bort. [Se exempelkoden från början till slut](#journey-pause-sample)
+* Även efter pausen kommer dessa händelser att räknas in i antalet resthändelser per sekund, efter vilken strypningen görs för att skapa en enhet
 * När profiler hålls i en pausad resa uppdateras profilattributen vid återupptagningstid
-* Villkor körs fortfarande i pausade resor, så om en resa har pausats på grund av problem med datakvaliteten kan alla villkor som föregår en åtgärdsnod utvärderas med felaktiga data.
-* För inkrementell målgruppsbaserad läsning beaktas den pausade längden. Om en daglig resa till exempel pausades den andra och återupptogs den 5:e i månaden, kommer körningen den 6:e att ta alla profiler som är kvalificerade från den 1:e till den 6:e. Detta gäller inte för målgruppskompetens eller händelsebaserade resor (om en målgruppskompetens eller ett evenemang tas emot under en paus ignoreras dessa händelser).
-* Pausade resor räknas in i kvoten för direktresor.
-* Den globala tidsgränsen för resan gäller fortfarande för pausade resor. Om en profil till exempel har besökt en resa i 90 dagar och resan har pausats, kommer den här profilen fortfarande att avsluta resan den 91:e dagen.
-* Om profiler hålls på en resa och den här resan automatiskt återupptas efter några dagar, fortsätter profilerna resan och släpps inte. Om du vill släppa dem måste du stoppa resan.
-* Vid pausade resor utlöses inga varningsmeddelanden för batchsegmentsmeddelanden.
-* Det finns inga granskningsloggar i systemet när pausläget för resan avslutas efter 14 dagar.
-* Vissa ignorerade profiler kan vara synliga i resesegmenthändelsen men inte synliga i rapporteringen. Till exempel: Ignorera affärshändelser för Läs publik, jobb för Läs publik ignoreras på grund av pausad resa, ignorerade händelser när händelseaktiviteten var efter en åtgärd där profilen väntade.
-  <!--* There is a guardrail (at an org level) on the max number of profiles that can be held in paused journeys. This guardrail is per org, and is visible in the journey inventory on a new bar (only visible when there are paused journeys).-->
+* Villkor körs fortfarande i pausade resor, så om en resa har pausats på grund av problem med datakvaliteten kan alla villkor som föregår en åtgärdsnod utvärderas med felaktiga data
+* För inkrementella målgruppsbaserade **målgruppsresor** beaktas pausad varaktighet. Om en daglig resa till exempel pausades den andra och återupptogs den 5:e i månaden, kommer körningen den 6:e att ta alla profiler som är kvalificerade från den 1:e till den 6:e. Detta gäller inte för målgruppskompetens eller händelsebaserade resor (om en målgruppskompetens eller ett evenemang tas emot under en paus ignoreras dessa händelser)
+* Om profiler hålls på en resa och den här resan automatiskt återupptas efter några dagar, fortsätter profilerna resan och släpps inte. Om du vill släppa dem måste du stoppa resan
+* Vid pausade resor utlöses inga varningsmeddelanden för batchsegmentsmeddelanden
+* Det finns inga granskningsloggar i systemet när efter 14 dagar pausläget för resan har avslutats
+* Vissa ignorerade profiler kan vara synliga i resesegmenthändelsen men inte synliga i rapporteringen. Exempel:
+   * Ignorera affärshändelser för **Läs målgrupp**
+   * **Jobb för läsning av målgrupp** tas bort på grund av pausad resa
+   * Händelser ignorerades när aktiviteten **Event** utfördes efter en åtgärd där profilen väntade
+     <!--* There is a guardrail (at an org level) on the max number of profiles that can be held in paused journeys. This guardrail is per org, and is visible in the journey inventory on a new bar (only visible when there are paused journeys).-->
 
-## Slut till slut {#journey-pause-sample}
+## Exemplet från början till slut {#journey-pause-sample}
 
 Låt oss ta exemplet på resan nedan:
 
-![Exempel på en resa](assets/pause-journey-sample.png)
+![Exempel på en resa](assets/pause-journey-sample.png){zoomable="yes"}
 
 När du pausar den här resan väljer du om profiler är **Ignorerade** eller **Håll** och sedan är profilhanteringen följande:
 
-1. **AddToCart**-aktivitet: alla nya profiler blockeras. Om en profil redan har påbörjat resan före en paus fortsätter den till nästa åtgärdsnod.
+1. **AddToCart**-aktivitet: alla nya profiler blockeras. Om en profil redan har gått in på resan före en paus fortsätter de till nästa åtgärdsnod.
 1. **Vänta**-aktivitet: profiler fortsätter att vänta normalt på noden och kommer att avsluta den, även om resan är i pausläge.
 1. **Villkor**: Profilerna fortsätter att gå igenom villkoren och flyttas till den högra grenen, baserat på uttrycket som definierats för villkoret.
 1. **Push**/**Email**-aktiviteter: under en pausad resa börjar profiler vänta eller tas bort (baserat på det val som användaren gjorde vid tiden för paus) på nästa åtgärdsnod. Profilerna kommer att börja vänta eller kastas bort där.
-1. **Händelser** efter åtgärdsnoder: Om en profil väntar på en åtgärdsnod och det finns en händelse efter den kommer profilen att ignoreras om händelsen utlöses.
+1. **Händelser** efter **åtgärdsnoder**: Om en profil väntar på en **Action**-nod och det finns en **Event**-aktivitet efter den ignoreras profilen om händelsen utlöses.
 
-Enligt det här beteendet kan du se profilnummer öka på pausad resa, främst i aktiviteter före Åtgärder. I det exemplet ignoreras exempelvis Wait, vilket ökar antalet profiler som går igenom villkorsaktiviteten.
+Enligt det här beteendet kan du se profilnummer öka på pausad resa, främst i aktiviteter före **Åtgärd** -aktiviteter. I det exemplet ignoreras aktiviteten **Wait**, vilket ökar antalet profiler som går igenom aktiviteten **Condition**.
 
 När du återupptar den här resan:
 
 1. Nya ingångar till resan börjar inom en minut
-1. Profiler som för närvarande väntade på att genomföra en åtgärd återupptas med en hastighet på 5 000 steg. De kommer sedan att delta i det makro de väntade på och fortsätta resan.
+1. Profiler som för närvarande väntade på resan för **Åtgärdsaktiviteter** återupptas med en hastighet på 5 000 steg. De kan sedan ange den **åtgärd** de väntade på och fortsätta resan.
