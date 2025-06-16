@@ -10,7 +10,7 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 8e5213cf51183c68e87c2cec9cb12984acf8151a
+source-git-commit: 437868d49f4bc4123e370b60d09ba0bf644e43d9
 workflow-type: tm+mt
 source-wordcount: '2021'
 ht-degree: 0%
@@ -185,5 +185,5 @@ Enligt det här beteendet kan du se profilnummer öka på pausad resa, främst i
 
 När du återupptar den här resan:
 
-1. Nya ingångar till resan börjar inom en minut
+1. Färska reseingångar börjar inom en minut.
 1. Profiler som för närvarande väntade på resan för **Åtgärdsaktiviteter** återupptas med en hastighet på 5 000 steg. De kan sedan ange den **åtgärd** de väntade på och fortsätta resan.
