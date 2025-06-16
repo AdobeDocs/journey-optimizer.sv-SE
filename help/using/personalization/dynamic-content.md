@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, dynamiskt innehåll
 exl-id: 639ad7df-0d0f-4c9b-95d1-f3101267aae2
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 0ce842816e8a63fabd21483323c664238c32848a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,11 @@ Stegen för att lägga till dynamiskt innehåll i uttryck är följande:
 1. När innehållet är klart kan du förhandsgranska de olika varianterna med knappen **[!UICONTROL Simulate content]**. [Lär dig hur du testar och förhandsgranskar meddelanden](../content-management/preview-test.md)
 
    ![](assets/conditions-preview.png)
+
+>[!CAUTION]
+>
+>Om e-post-Designer inte kan återges korrekt när du har lagt till villkorliga block, kontrollerar du att de nya villkorens syntax är korrekt och att det inte finns några dubbletter eller motstridiga satser. Om problemen kvarstår kan du överväga att återskapa problematiska avsnitt i en ny mall och testa varje villkorsstyrd block stegvis.
+
 
 ## Lägg in dynamiskt innehåll i e-postmeddelanden {#emails}
 
