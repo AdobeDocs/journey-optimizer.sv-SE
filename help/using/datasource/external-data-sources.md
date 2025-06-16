@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 2a2abe3e663f8c9ff24c804eae53d44988960838
+source-git-commit: 71d1a7c305c33ab7bef91b82329ecb692445fb27
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 50%
+source-wordcount: '1631'
+ht-degree: 48%
 
 ---
 
@@ -229,9 +229,9 @@ Här följer ett exempel på autentiseringstypen för innehavare:
 
 >[!NOTE]
 >
->Autentiseringstoken cachelagras per resa: om två resor använder samma anpassade åtgärd har varje resa en egen token cachelagrad. Denna token delas inte mellan dessa resor.
+>* Autentiseringstoken cachelagras per resa: om två resor använder samma anpassade åtgärd har varje resa en egen token cachelagrad. Denna token delas inte mellan dessa resor.
 >
->Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med en ren cache. Cachevaraktigheten är som standard 1 timme. I den anpassade autentiseringsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.
+>* Cachens varaktighet hjälper till att undvika för många anrop till slutpunkterna för autentisering. Kvarhållande av autentiseringstoken cachelagras i tjänster, det finns ingen beständighet. Om en tjänst startas om börjar den med en ren cache. Cachevaraktigheten är som standard 1 timme. I den anpassade autentiseringsnyttolasten kan den anpassas genom att ange en annan kvarhållningstid.
 >
 
 Här är ett exempel på autentiseringstypen för sidhuvud:
@@ -269,3 +269,7 @@ Här är ett exempel på svaret på inloggnings-API-anropet:
   "expiryDuration" : 5
 }
 ```
+
+>[!CAUTION]
+>
+>När du konfigurerar anpassad autentisering för en anpassad åtgärd bör du tänka på att kapslade JSON-objekt (t.ex. underobjekt inom `bodyParams`) för närvarande **inte stöds**. Endast enkla nyckelvärdepar inkluderas i den slutliga nyttolasten för begäran. Om din autentiseringsslutpunkt kräver kapslade objekt kan detta leda till att fält saknas och att autentiseringsfel uppstår.
