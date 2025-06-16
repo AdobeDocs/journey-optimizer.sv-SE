@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 33b60693d060e37873f9d505d0893839698036a8
+source-git-commit: d1b1670992ba5da14f1a4d0bfab0a7b15b29dec3
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
@@ -77,11 +77,11 @@ När en resa pausas, förkastas alltid färska ingångar, oavsett om de är i l�
 När en resa pausas beror profilhantering och aktivitetskörning på aktiviteten. Beteenden beskrivs nedan. Mer information finns även i [Exemplet från början till slut](#journey-pause-sample).
 
 
-| Reseverksamhet | Effekt |
+| Reseverksamhet | När resan pausas |
 |-------------------------|--------------------------------------------------|
 | [Målgruppskvalifikation](audience-qualification-events.md) | <ul> <li>I den första noden: Publiken ignoreras </li><li>I andra noder: Samma beteende som i en direktresa, men om målgruppskvalifikationen är efter en <strong>åtgärd</strong> -aktivitet och användaren är pausad på den åtgärden, ignoreras målgruppsklassificeringen. </li></ul> |
 | [Enhetlig händelse](general-events.md) | <ul> <li>I den första noden: Händelsen ignoreras</li><li>I andra noder: Samma beteende som i en direktresa, men om händelsen inträffar efter en <strong>åtgärd</strong>-aktivitet och användaren pausas på den åtgärden, ignoreras händelsen. </li></ul> |
-| [Läs målgrupp](read-audience.md) | Samma beteende som vid en direktresa, med några få särdrag <ol> <li> Om <strong>Pause</strong> trycktes ned efter att aktiviteten <strong>Läs målgrupp</strong> hade startats, fortsätter profiler som har gått in i resan (till nästa <strong>Åtgärd</strong> -aktivitet). När resan läser målgrupper med en viss hastighet kommer återstående profiler i kön att ignoreras om hela målgruppen inte har gått in ännu.</li><li> För enstaka körningar: Inga fel visas vid återupptagningstid om det schemalagda datumet infaller före återupptagsdatumet. Det schemat ignoreras.</li><li>För inkrementella resor: <ul><li>Om paus inträffar före den första förekomsten spelas hela målgruppen upp när du återupptar den. </li><li>Om en paus inträffar t.ex. den 4:e dagen av en daglig upprepning och resa förblir pausad till den 9:e dagen så inkluderas alla profiler som har gått in från den 4:e till 9  </li></ul></ol> |
+| [Läs målgrupp](read-audience.md) | Samma beteende som i en direktresa, med några få särdrag: <ol> <li> Om <strong>Pause</strong> trycktes ned efter att aktiviteten <strong>Läs målgrupp</strong> hade startats, fortsätter profiler som har gått in i resan (till nästa <strong>Åtgärd</strong> -aktivitet). När resan läser målgrupper med en viss hastighet kommer återstående profiler i kön att ignoreras om hela målgruppen inte har gått in ännu.</li><li> För enstaka körningar: Inga fel visas vid återupptagningstid om det schemalagda datumet infaller före återupptagsdatumet. Det schemat ignoreras.</li><li>För inkrementella resor: <ul><li>Om paus inträffar före den första förekomsten spelas hela målgruppen upp när du återupptar den. </li><li>Om en paus inträffar t.ex. den 4:e dagen av en daglig upprepning och resa förblir pausad till den 9:e dagen så inkluderas alla profiler som har gått in från den 4:e till 9  </li></ul></ol> |
 | [Reaktion](reaction-events.md) | Samma beteende som i en direktresa, men om reaktionen inträffar efter en <strong>åtgärd</strong> -aktivitet och användaren pausas på den åtgärden, ignoreras händelsen. |
 | [Vänta](wait-activity.md) | Samma beteende som i en direktresa |
 | [Villkor](condition-activity.md) | Samma beteende som i en direktresa |
