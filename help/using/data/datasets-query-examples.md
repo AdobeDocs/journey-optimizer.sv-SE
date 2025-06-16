@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: datauppsättning, optimering, användningsfall
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: 46c4d3081603115db71b01a05f12187cd7e0d34c
+source-git-commit: 1728d43bf278f9caf127d8ed44ef8b15969485f7
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder
 * [BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
 * [Enhetsdatauppsättning](#entity-dataset)
 
-Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
+Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 ## Händelsedatauppsättning för e-postspårning{#email-tracking-experience-event-dataset}
 
@@ -167,6 +167,12 @@ ORDER BY timestamp DESC;
 där datumformatet är: `YYYY-MM-DD HH:MM:SS`.
 
 Ta bort adresserna från listan över Journey Optimizer-adresser när de har identifierats. [Läs mer](../configuration/manage-suppression-list.md#remove-from-suppression-list).
+
+
+>[!NOTE]
+>
+>Under vissa resor kanske `messageID` inte är unik för varje enskild leverans. Om en resa skickar om samma åtgärd till samma profil kan samma `messageID` återanvändas. Om du vill spåra eller attributera händelser på den enskilda sändningsnivån måste du därför kombinera fälten `journeyVersionID`, `journeyActionID` och `batchInstanceID` (för batchresor) eller `identityMap` för att få en mer exakt unikhet.
+
 
 ## Händelsedatauppsättning för push-spårning {#push-tracking-experience-event-dataset}
 
