@@ -8,7 +8,7 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: 273cda84-0261-4c5b-b5f4-0202e8874d05
-source-git-commit: 190f757853f65b7434319047760c2efb43d2d702
+source-git-commit: 91835d5b8b1f129c83c79613df30d9413db98ffe
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 3%
@@ -51,13 +51,11 @@ Den tid (i millisekunder) som krävs för att köra en aktuell åtgärd.
 
 Typ: lång
 
->[!NOTE]
->
-> Fältet `actionExecutionTime` representerar den totala tiden (i millisekunder) som har ägnats åt att utföra åtgärden, inklusive både den tid som begäran väntar i kön (om begränsning har konfigurerats och hastighetsgränsen har uppnåtts) och den faktiska körningstiden (inklusive nätverksfördröjning till den externa slutpunkten).
->
-> Fältet `Timestamp` anger åtgärdens sluttid. Ta bort `actionExecutionTime` från `Timestamp` för att avgöra när profilen angavs i den anpassade åtgärdsnoden.
->
->Om `Timestamp` till exempel är &quot;2025-02-04 09:39:03 UTC&quot; och `actionExecutionTime` är 1 813 227 ms (~31 minuter), angavs profilen i noden med ungefär &quot;2025-02-04 09:08:32 UTC&quot;.
+Fältet `actionExecutionTime` representerar den totala tiden (i millisekunder) som har ägnats åt att utföra åtgärden, inklusive både den tid som begäran väntar i kön (om begränsning har konfigurerats och hastighetsgränsen har uppnåtts) och den faktiska körningstiden (inklusive nätverksfördröjning till den externa slutpunkten).
+
+Fältet `Timestamp` anger åtgärdens sluttid. Ta bort `actionExecutionTime` från `Timestamp` för att avgöra när profilen angavs i den anpassade åtgärdsnoden.
+
+Om `Timestamp` till exempel är &quot;2025-02-04 09:39:03 UTC&quot; och `actionExecutionTime` är 1 813 227 ms (~31 minuter), angavs profilen i noden med ungefär &quot;2025-02-04 09:08:32 UTC&quot;.
 
 
 
