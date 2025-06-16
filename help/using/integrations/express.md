@@ -10,9 +10,9 @@ role: User
 level: Beginner
 keywords: resurser, integration
 exl-id: c74156bb-4f00-4325-b416-6fe36cb755d1
-source-git-commit: bba2fd3b481c582f33ffad79d1f1c1327143f108
+source-git-commit: 070debe5c4fb5e39316b12a0788ec55abbf3c005
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komm
 >
 >Adobe Express integrering i Adobe Journey Optimizer kan för närvarande inte användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
-Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/se/express/user-guide.html).
+Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/express/user-guide.html).
 
 Du kommer åt **[!DNL Adobe Express]**-menyn genom att gå till dina **bildinställningar** från e-post-Designer och klicka på **[!UICONTROL Edit in Adobe Express]**.
 
@@ -52,6 +52,13 @@ Med Enterprise-licens har man full tillgång till Adobe Express Web Editor där 
 Mer information om tillgängliga användningsexempel för användare med en Enterprise-licens för Adobe Express finns i [Adobe Express webbdokumentation](https://helpx.adobe.com/express/web.html).
 
 ## Använda Adobe Express utan Enterprise License  {#edit}
+
+Utan en Enterprise-licens har användarna tillgång till följande användningsfall som finns i Adobe Express:
+
+* [Ändra storlek på bild](#resize)
+* [Ta bort bakgrund](#background)
+* [Beskär bild](#crop-image)
+* [Konvertera till JPEG eller PNG](#convert)
 
 ### Ändra storlek på bild {#resize}
 
@@ -141,7 +148,7 @@ Din bild är nu klar att användas i ditt innehåll.
 
 Lär dig hur du redigerar resurser i Adobe Journey Optimizer med Adobe Express verktyg.
 
->[!VIDEO](https://video.tv.adobe.com/v/3455527/?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3455523/?quality=12)
 
 
 
