@@ -7,10 +7,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 8188749c47be0a3d91b9857d170bceb4747a3400
+source-git-commit: 20f5dc6eab5695b485f4569ad098922a130d4b56
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 3%
+source-wordcount: '1022'
+ht-degree: 2%
 
 ---
 
@@ -83,7 +83,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Nu kan du definiera specifika redigerbara fält i JSON- eller HTML-innehållsmallar, som gör det möjligt för icke-tekniska användare att enkelt redigera innehåll i en formulärvy i den kodbaserade upplevelsekanalutvecklingen, utan att behöva ändra någon kod. Mer än så kan du nu infoga beslutsprinciper i mallen när du definierar kodbaserade innehållsmallar för upplevelser, vilket ökar återanvändbarheten och underlättar användningen.</p>
+<p>Nu kan du definiera specifika redigerbara fält i JSON- eller HTML-innehållsmallar, som gör det möjligt för icke-tekniska användare att enkelt redigera innehåll i en formulärvy i den kodbaserade upplevelsekanalutvecklingen, utan att behöva ändra någon kod.<br />Mer än så när du definierar kodbaserade innehållsmallar för upplevelser kan du nu infoga beslutsprinciper i mallen, vilket ökar återanvändbarheten och användarvänligheten.</p>
 </td>
 </tr>
 </tbody>
@@ -99,7 +99,6 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tr>
 <td>
 <p>Utöver den fullständiga delegeringen och CNAME-metoden finns nu en ny konfigurationsmetod för underdomäner: metoden för anpassad delegering, som gör att du kan ha fullständig kontroll över och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 </td>
 </tr>
 </tbody>
@@ -227,13 +226,17 @@ Förbättringar i den här versionen visas nedan.
 
 * **Kodbaserade upplevelser**
 
-  Beslutsprinciper finns nu i kodbaserade mallar för upplevelseinnehåll och i kodredigeraren på rätt spår.
+   * Det finns nu en beslutsregel i mallar för kodbaserat upplevelseinnehåll.
 
-* **Email Designer**
+   * Från den kodbaserade upplevelseresan eller kampanjutgåvan kan ni nu lägga till en beslutspolicy direkt, utan att behöva öppna personaliseringsredigeraren.
 
-   * **Anpassat CSS-stöd** - Med Journey Optimizer kan du nu lägga till anpassad CSS i ditt e-postinnehåll direkt i e-postdesignern.
-   * **Stöd för mörkt läge** - Journey Optimizer e-postdesigner kan nu växla till mörkt läge där du kan definiera specifika inställningar.
+* **Anpassat CSS-stöd i Designer för e-post**
 
+  Med Journey Optimizer kan du nu lägga till anpassad CSS i e-postinnehåll direkt i e-post-Designer.
+
+* **Ny fliknavigering för kampanjer**
+
+  Ett nytt navigeringsmönster ger snabbare åtkomst till innehållsutveckling och stöd för ytterligare expansion av inställningar mellan kampanjer.
 
 * **Beslut** - Tillgänglighetsdatum: 3 juni 2025
 
