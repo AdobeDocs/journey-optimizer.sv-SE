@@ -5,10 +5,10 @@ feature: Decisioning
 role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
-source-git-commit: 60cb5e1ba2b5c8cfd0a306a589c85761be1cf657
+source-git-commit: 70543fc2b70b388934c1b3f45e5405f02895a3af
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 6%
+source-wordcount: '295'
+ht-degree: 5%
 
 ---
 
@@ -24,9 +24,9 @@ Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrni
 
 | Guardrail | Gräns |
 | ------- | ------- |
-| API-begäranden för beslut per sekund | 500 |
-| Edge Decisioning API-begäranden per sekund med Edge Segmentering | 1 500 |
-| Edge Decisionering API-begäranden per sekund utan Edge-segmentering | 5 000 |
+| API-begäranden för beslut per sekund | 500 per organisation |
+| Edge Decisioning API-begäranden per sekund med Edge Segmentering | 1 500 per organisation |
+| Edge Decisionering API-begäranden per sekund utan Edge-segmentering | 5 000 per organisation |
 | Returnerade erbjudanden per svar | Upp till 30 per beslutsomfattning eller totalt 100 |
 | Maximalt antal regler för erbjudanden per förfrågan | 100 |
 
