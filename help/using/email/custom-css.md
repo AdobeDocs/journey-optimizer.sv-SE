@@ -10,9 +10,9 @@ level: Intermediate
 keywords: css, editor, summary, email
 hide: true
 hidefromtoc: true
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: bf9f1dbacba54e8b2c499d888ba1f4d66c78b7ee
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '663'
 ht-degree: 1%
 
 ---
@@ -199,6 +199,12 @@ Din anpassade CSS läggs till i slutet av avsnittet `<head>` som en del av en `<
 
 Den anpassade CSS-koden tolkas eller valideras inte av e-postfönstret för Designer **[!UICONTROL Settings]**. Den är helt oberoende och kan bara ändras med alternativet **[!UICONTROL Add Custom CSS]**.
 
+Om stiltaggen `global-custom` har attributet `data-disabled` inställt på `true` används inte den anpassade CSS:en. Exempel:
+
+```html
+<style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
+```
+
 ### Importerat innehåll
 
 Om du vill använda anpassad CSS med innehåll som importerats till e-post-Designer bör du tänka på följande:
@@ -216,7 +222,7 @@ Om din anpassade CSS inte används bör du överväga alternativen nedan.
 
 * Kontrollera att CSS-koden är giltig och fri från syntaxfel (t.ex. saknade klamrar, felaktiga egenskapsnamn). [Lär dig hur](#use-valid-css)
 
-* Kontrollera att din CSS läggs till i taggen `<style>` med attributet `data-name="global-custom"`. [Läs mer](#implementation)
+* Kontrollera att din CSS läggs till i taggen `<style>` med attributet `data-name="global-custom"` och att `data-disabled` inte tillämpas på `global-custom`. [Läs mer](#implementation)
 
 * Kontrollera att din CSS inte åsidosätts av andra CSS-regler, inklusive alla [teman](apply-email-themes.md) som tillämpas på ditt innehåll.
 
@@ -229,16 +235,3 @@ Om din anpassade CSS inte används bör du överväga alternativen nedan.
        background: red !important;
      }
      ```
-
-<!--
-### Guardrails
--->
-
-
-
-
-
-
-
-
-
