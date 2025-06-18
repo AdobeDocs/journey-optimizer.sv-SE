@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
+source-git-commit: 37eed59b64a8bfad0b216c279b15612b6ac57897
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
 >[!NOTE]
 >
->Du kan skapa upp till tre lokala regeluppsättningar för kanaldomänen och upp till 5 lokala regeluppsättningar för resedomänen.
+>Du kan skapa upp till 10 aktiva lokala regeluppsättningar för kanaldomänen och för resedomänen.
 
 1. Öppna listan **[!UICONTROL Rules sets]** och klicka sedan på **[!UICONTROL Create rule set]**.
 
@@ -164,4 +164,4 @@ Dess status ändras till **[!UICONTROL Inactive]** och regeln gäller inte för 
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
