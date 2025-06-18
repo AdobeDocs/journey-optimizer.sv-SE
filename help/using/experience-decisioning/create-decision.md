@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: d3f15c09194a50b95107fb84d680606a468f8644
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1768'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,13 @@ ht-degree: 0%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_decision_policy"
+>title="Definiera en beslutspolicy"
+>abstract="Med en beslutspolicy kan ni välja ut de bästa elementen från beslutsmotorn och leverera dem till rätt målgrupp."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att välja det bästa innehållet att leverera, beroende på målgruppen.
 
@@ -51,7 +57,7 @@ De viktigaste stegen för att utnyttja beslutsregler i era kodbaserade kampanjer
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp, lägger du till en beslutspolicy till en kodbaserad kampanj eller resa. Följ stegen nedan för att göra det.
 
@@ -62,6 +68,10 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för bes�
 1. Välj **[!UICONTROL Decision policy]** i [kodredigeraren](../code-based/create-code-based.md#edit-code) och klicka på **[!UICONTROL Add decision policy]**.
 
    ![](assets/decision-code-based-create.png)
+
+   Från kundresan eller kampanjversionen kan ni också lägga till en beslutspolicy direkt utan att behöva öppna personaliseringsredigeraren. Använd den dedikerade ikonen till höger för att visa avsnittet **[!UICONTROL Decisioning]**.
+
+   ![](../code-based/assets/code-based-campaign-show-decisioning.png)
 
 1. Som standard skapar du en ny profil.
 

@@ -8,21 +8,21 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1022'
 ht-degree: 2%
 
 ---
 
-# Skapa ett textmeddelande (SMS/MMS) {#create-sms}
+# Skapa ett SMS/MMS/RCS-meddelande {#create-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Skapa ett textmeddelande"
->abstract="Om du vill skapa ett textmeddelande (SMS/MMS) lägger du till en SMS-åtgärd i en resa eller kampanj och börjar personalisera den med personaliseringsredigeraren."
+>abstract="Om du vill skapa ett textmeddelande (SMS/MMS/RCS) lägger du till en SMS-åtgärd i en resa eller kampanj och börjar personalisera den med personaliseringsredigeraren."
 
-Du kan utforma och skicka SMS- och MMS-meddelanden med Adobe Journey Optimizer. Du måste först lägga till en SMS-åtgärd på en resa eller i en kampanj och sedan definiera innehållet i textmeddelandet, enligt beskrivningen nedan. Adobe Journey Optimizer har också funktioner för att testa textmeddelanden innan de skickas, så att du kan kontrollera återgivning, anpassningsattribut och alla andra inställningar.
+Du kan utforma och skicka textmeddelanden (SMS), multimediemeddelanden (RCS) och multimediemeddelanden (MMS) med Adobe Journey Optimizer. Du måste först lägga till en SMS-åtgärd på en resa eller i en kampanj och sedan definiera innehållet i textmeddelandet, enligt beskrivningen nedan. Adobe Journey Optimizer har också funktioner för att testa textmeddelanden innan de skickas, så att du kan kontrollera återgivning, anpassningsattribut och alla andra inställningar.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Du kan utforma och skicka SMS- och MMS-meddelanden med Adobe Journey Optimizer. 
 
 ## Lägga till ett textmeddelande {#create-sms-journey-campaign}
 
-Bläddra bland flikarna nedan för att lära dig hur du lägger till ett textmeddelande (SMS/MMS) i en kampanj eller en resa.
+Bläddra bland flikarna nedan för att lära dig hur du lägger till ett textmeddelande (SMS/MMS/RCS) i en kampanj eller en resa.
 
 >[!BEGINTABS]
 
@@ -90,18 +90,20 @@ Nu kan du börja designa innehållet i ditt textmeddelande med knappen **[!UICON
 
 >[!ENDTABS]
 
-## Definiera ditt SMS-innehåll{#sms-content}
+## Definiera ditt SMS/RCS-innehåll{#sms-content}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms_content"
 >title="Definiera ditt SMS-innehåll"
->abstract="Anpassa och anpassa dina textmeddelanden (SMS/MMS) genom att använda personaliseringsredigeraren för att definiera innehållet och införliva dynamiska element."
+>abstract="Anpassa och anpassa dina textmeddelanden (SMS/MMS/RCS) genom att använda personaliseringsredigeraren för att definiera innehållet och införliva dynamiska element."
 
-Följ stegen nedan för att konfigurera ditt SMS-innehåll. Inställningarna för MMS finns i [det här avsnittet](#mms-content).
+Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna för MMS finns i [det här avsnittet](#mms-content).
 
 1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för resan eller kampanjkonfigurationen för att konfigurera textmeddelandeinnehållet.
 
 1. Klicka på fältet **[!UICONTROL Message]** för att öppna anpassningsredigeraren.
+
+   För RCS-meddelanden med Infobip, Twilio eller andra tredjepartsleverantörer klistrar du in den JSON-nyttolast som krävs i din [anpassade SMS-konfiguration](sms-configuration-custom.md#api-credential).
 
    ![](assets/sms-content.png)
 

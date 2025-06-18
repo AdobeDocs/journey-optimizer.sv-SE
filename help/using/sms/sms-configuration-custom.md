@@ -7,14 +7,14 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: 37313ca8a9527c934d8aeaf265e9674219726636
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
 
-# Konfigurera en anpassad SMS-provider {#sms-configuration-custom}
+# Konfigurera en anpassad provider {#sms-configuration-custom}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_provider_url"
@@ -31,11 +31,11 @@ ht-degree: 0%
 >title="Leverantörsnyttolast"
 >abstract="Ange nyttolasten för begäran för att säkerställa att rätt data skickas för bearbetning och svarsgenerering."
 
-Med den här funktionen kan du integrera och konfigurera dina egna SMS-leverantörer och erbjuda flexibilitet utöver standardleverantörerna (Sinch, Twilio och Infobip). Detta möjliggör smidig framtagning av SMS, leverans, rapportering och hantering av samtycke.
+Med den här funktionen kan du integrera och konfigurera dina egna meddelandeleverantörer och erbjuda flexibilitet utöver standardalternativen (Sinch, Twilio och Infobip). Detta möjliggör smidig redigering, leverans, rapportering och samtyckeshantering för både SMS- och RCS-meddelanden.
 
-Med den anpassade providerkonfigurationen för SMS kan du konfigurera anpassade SMS-leverantörer direkt i Journey Optimizer, använda avancerad anpassning av nyttolasten för dynamiska meddelanden och hantera medgivandeinställningar (anmälan/avanmälan) för att säkerställa regelefterlevnaden.
+Med anpassad leverantörskonfiguration kan du ansluta tredjepartstjänster direkt inifrån Journey Optimizer, anpassa meddelandenyttolaster för dynamiskt innehåll och hantera inställningar för anmälan/avanmälan för att säkerställa regelefterlevnad i både SMS- och RCS-kanaler.
 
-Följ stegen nedan för att konfigurera din anpassade SMS-leverantör:
+Följ stegen nedan för att konfigurera din anpassade leverantör:
 
 1. [Skapa API-autentiseringsuppgifter](#api-credential)
 1. [Skapa webkrok](#webhook)
@@ -44,7 +44,7 @@ Följ stegen nedan för att konfigurera din anpassade SMS-leverantör:
 
 ## Skapa API-autentiseringsuppgifter {#api-credential}
 
-Följ de här stegen för att skicka meddelanden i Journey Optimizer med en anpassad leverantör som inte är tillgänglig från Adobe (t.ex. Sinch, Infobip, Twilio):
+Följ de här stegen för att skicka SMS- och RCS-meddelanden i Journey Optimizer med en anpassad leverantör som inte är tillgänglig direkt från Adobe (t.ex. Sinch, Infobip, Twilio):
 
 1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL API Credentials]** under **[!UICONTROL SMS settings]** och klicka på knappen **[!UICONTROL Create new API credentials]**.
 
@@ -73,6 +73,8 @@ Följ de här stegen för att skicka meddelanden i Journey Optimizer med en anpa
    ![](assets/sms_byo_2.png)
 
 1. Lägg till din **[!UICONTROL Provider Payload]** för att validera och anpassa dina begärda nyttolaster.
+
+   För RCS-meddelanden används den här nyttolasten senare under [innehållsdesign](create-sms.md#sms-content).
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 

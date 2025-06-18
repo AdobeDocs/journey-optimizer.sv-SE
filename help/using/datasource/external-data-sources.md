@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 71d1a7c305c33ab7bef91b82329ecb692445fb27
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 48%
+source-wordcount: '1634'
+ht-degree: 43%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_custom"
 >title="Externa datakällor"
->abstract="Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs."
+>abstract="Med externa datakällor kan du definiera en anslutning till tredjepartssystem, till exempel om du använder ett bokningssystem för hotell för att kontrollera om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs."
 
 ## Arbeta med externa datakällor {#gs-ext-data-sources}
 
-Med externa datakällor kan du definiera en anslutning till tredjepartssystem om du till exempel använder ett bokningssystem för hotell som kontrollerar om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs.
+Med externa datakällor kan du definiera en anslutning till tredjepartssystem, till exempel om du använder ett bokningssystem för hotell för att kontrollera om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 t
 
    >[!CAUTION]
    >
-   >Vi rekommenderar starkt att HTTPS används av säkerhetsskäl. Observera också att vi endast tillåter att Adobe-adresser som är allmänt tillgängliga samt IP-adresser används.
+   >Vi rekommenderar starkt att HTTPS används av säkerhetsskäl. Observera också att vi inte tillåter användning av Adobe-adresser som inte är allmänt tillgängliga och användning av IP-adresser.
 
    ![](assets/journey27.png)
 
