@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: css, editor, summary, email
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: a4055d1c4b6d75a04b71067df0c8f5499bae24d6
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '697'
 ht-degree: 1%
 
 ---
@@ -38,13 +38,17 @@ Följ stegen nedan om du vill lägga till anpassad CSS i ditt e-postinnehåll.
    >
    >Avsnittet **[!UICONTROL CSS styles]** är bara tillgängligt när det redan finns innehåll i redigeraren.
 
+1. Klicka på knappen **[!UICONTROL Add Custom CSS]**.
+
 1. Ange din CSS-kod i det dedikerade textområdet som visas. Kontrollera att den anpassade CSS-koden är giltig och följer rätt syntax. [Läs mer](#use-valid-css)
 
    ![Ange anpassad CSS i det dedikerade textområdet](assets/email-body-custom-css.png){width="65%"}
 
    >[!NOTE]
    >
-   >Knappen **[!UICONTROL Add Custom CSS]** är bara tillgänglig när **[!UICONTROL Body]** är markerad. Du kan dock använda anpassade CSS-format på alla komponenter i innehållet.
+   >Knappen **[!UICONTROL Add custom CSS]** är bara tillgänglig när **[!UICONTROL Body]** är markerad. Du kan dock använda anpassade CSS-format på alla komponenter i innehållet.
+   >
+   >När du använder en [mall med låst innehåll](../content-management/content-locking.md#use) kan du inte lägga till anpassad CSS i innehållet. Knappetiketten ändras till **[!UICONTROL View custom CSS]** och all anpassad CSS som redan finns i innehållet är skrivskyddad.
 
 1. Spara din egen CSS och kontrollera att din anpassade CSS används korrekt på ditt innehåll. Om så inte är fallet kontrollerar du avsnittet [Felsökning](#troubleshooting).
 
