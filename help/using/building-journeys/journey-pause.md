@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 024356ca30728611d1d32ba72172711e4714b64c
 workflow-type: tm+mt
 source-wordcount: '2021'
 ht-degree: 0%
@@ -83,7 +83,7 @@ När en resa pausas beror profilhantering och aktivitetskörning på aktiviteten
 | [Reaktion](reaction-events.md) | Samma beteende som i en direktresa, men om reaktionen inträffar efter en <strong>åtgärd</strong> -aktivitet och användaren pausas på den åtgärden, ignoreras reaktionshändelsen. |
 | [Vänta](wait-activity.md) | Samma beteende som i en direktresa |
 | [Villkor](condition-activity.md) | Samma beteende som i en direktresa |
-| Innehållsbeslut | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
+| [Innehållsbeslut](content-decision.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Kanalåtgärd](journeys-message.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Anpassad åtgärd](../action/action.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Uppdatera profil](update-profiles.md) &amp; [Hoppa](jump.md) | Samma beteende som i en direktresa |
