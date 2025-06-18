@@ -7,22 +7,24 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
-source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '938'
 ht-degree: 1%
 
 ---
 
 # Konfigurera Sinch-provider {#sms-configuration-sinch}
 
-När du använder Sinch-providern med Journey Optimizer finns det två olika alternativ:
+När du använder Sinch-providern med Journey Optimizer finns det tre olika alternativ:
 
 * **SMS-konfiguration**: Konfigurera dina Single API-autentiseringsuppgifter för att skicka SMS-meddelanden sömlöst.
 
 * **MMS-konfiguration**: Konfigurera dina Single MMS API-autentiseringsuppgifter för multimediemeddelanden (MMS). Observera att spårning och svar på inkommande meddelanden hanteras av SMS-konfigurationen. MMS-konfigurationen är endast avsedd för utgående leverans av MMS-meddelandet.
 
-## Referenser för Sinch API{#create-api}
+* **RCS-konfiguration**: Konfigurera dina Single API-autentiseringsuppgifter för att skicka RCS-meddelanden sömlöst.
+
+## Konfigurera API-autentiseringsuppgifter för SMS{#create-api}
 
 >[!BEGINSHADEBOX]
 
@@ -55,7 +57,7 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
    | Avanmäl meddelande | Ange det anpassade svar som automatiskt skickas som ditt avanmälningsmeddelande. |
    | Hjälpnyckelord | Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt **hjälpmeddelande**. Använd kommaseparerade värden för flera nyckelord. |
    | Hjälpmeddelande | Ange det anpassade svar som automatiskt skickas som **hjälpmeddelande**. |
-   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3440280/?learn=on&captions=swe). |
+   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3427129/?learn=on). |
    | Dubbelt meddelande om anmälan | Ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan. |
    | Ingående nummer | Lägg till ditt unika inkommande nummer eller din korta kod. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer eller kort kod. |
    | Anpassade inkommande nyckelord | Definiera unika nyckelord för specifika åtgärder, t.ex. RABATT, ERBJUDANDEN, REGISTRERING. Dessa nyckelord fångas in och lagras som attribut i profilen, vilket gör att du kan aktivera en segmentkvalificering för direktuppspelning under resan och leverera ett anpassat svar eller en anpassad åtgärd. |
@@ -72,7 +74,7 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
 
 När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du nu skapa en kanalkonfiguration för SMS-meddelanden. [Läs mer](sms-configuration-surface.md)
 
-## Inaktivera MMS API-autentiseringsuppgifter {#sinch-mms}
+## Konfigurera API-autentiseringsuppgifter för MMS{#sinch-mms}
 
 >[!IMPORTANT]
 >
@@ -100,3 +102,26 @@ Så här konfigurerar du Sinch MMS att skicka MMS med Journey Optimizer:
 1. Om du vill ändra befintliga autentiseringsuppgifter letar du reda på de API-autentiseringsuppgifter du vill ha och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalkonfiguration för MMS-meddelanden. [Läs mer](sms-configuration-surface.md)
+
+## Konfigurera API-autentiseringsuppgifter för RCS
+
+<!--![](assets/do-not-localize/rcs-sms.png)-->
+
+RCS-meddelanden (Rich Communication Services) stöds i Journey Optimizer via Sinch, vilket innebär att du kan skicka grundläggande meddelanden med verifierade affärsprofiler med varumärken som logotyper och avsändarnamn.
+
+Observera att meddelanden automatiskt återgår till SMS när profilens enhet inte stöder RCS eller är tillfälligt oåtkomlig via RCS.
+
+Så här konfigurerar du RCS med Sinch:
+
+1. **Konfigurera din profilerade RCS-agent**
+
+   Kontakta din Adobe-representant för att få en varumärkesprofilerad RCS-agent. [Läs mer om varumärkesprofilerad RCS-agent](https://community.sinch.com/t5/RCS/Getting-Started-with-RCS-using-Conversation-API/ta-p/17844)
+
+1. **Konfigurera dina [singch API-autentiseringsuppgifter](#create-api)**
+
+   När din RCS-agent har godkänts måste du ange dina Single API-autentiseringsuppgifter, som innehåller din åtkomstnyckel, hemlighet och ditt serviceplan-ID. Dessa inloggningsuppgifter kommer att användas av Journey Optimizer för att autentisera och skicka meddelanden via Sinchs plattform.
+
+1. **Skapa en [kanalkonfiguration](sms-configuration-surface.md) för dina RCS-meddelanden**
+
+   Konfigurera en kanalyta i Journey Optimizer genom att länka dina signeringsuppgifter och definiera meddelandeparametrarna. Med den här installationen kan du skriva och skicka RCS-meddelanden från Journey Optimizer.
+

@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 hidefromtoc: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '3598'
+source-wordcount: '3599'
 ht-degree: 8%
 
 ---
@@ -181,7 +181,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <tbody>
 <tr>
 <td>
-<p>Som Journey Optimizer-användare kan du nu få åtkomst till systemvarningar via användargränssnittet för att få meddelanden när resorna inte fungerar som förväntat. Du kan visa tillgängliga aviseringar och prenumerera på dem. Den första varningen som är tillgänglig med den här versionen varnar dig om en Läs publik-aktivitet inte har bearbetat någon profil under den definierade tidsramen. Mer kommer nu när arbetsflödet är olåst.</p>
+<p>Som Journey Optimizer-användare kan du nu få åtkomst till systemvarningar via användargränssnittet för att få meddelanden när resor inte fungerar som förväntat. Du kan visa tillgängliga aviseringar och prenumerera på dem. Den första varningen som är tillgänglig med den här versionen varnar dig om en Läs publik-aktivitet inte har bearbetat någon profil under den definierade tidsramen. Mer kommer nu när arbetsflödet är olåst.</p>
 <!--p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a>.</p-->
 </td>
 </tr>
@@ -733,7 +733,7 @@ Som Adobe Campaign Standard-kund kan du nu skicka e-post, push-meddelanden och S
 <p>Journey Optimizer provide RESTful APIs that allow you to programmatically perform key operations in your applications.
 Developer SDK for Journey Optimizer is now available with the Suppression API (beta).</p>
 <p>With this API, you can control your outgoing messages using suppression and allow lists.
-The suppression list helps you with honoring the ISPs' feedback to preserve sending IP reputation. The allow list helps you ensure that you send only to those email addresses which are in the allowed list, and typically to ensure that you don't send mails to customers from your development sandbox.</p>
+The suppression list helps you with honoring the ISPs' feedback to preserve sending IP reputation. The allow list helps you ensure that you send only to those email addresses which are in the allowed list, and typically to ensure that you do not send mails to customers from your development sandbox.</p>
 <p>See <a href="https://developer.adobe.com/journey-optimizer-apis/">Adobe Journey Optimizer APIs</a>.</p>
 </td>
 </tr>
@@ -817,7 +817,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 **Resor**
 
-* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
+* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
 **Beslutshantering**
 

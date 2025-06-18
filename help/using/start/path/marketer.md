@@ -7,9 +7,9 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: c2f32533027e374a1df26943e7c5acd4e1d13869
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Se följande avsnitt för att konfigurera din första resa, lägga till erbjudan
 
    * Utnyttja **sammanhangsbaserade data** från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part.
 
-   * Använd de **inbyggda kanalåtgärderna** (Email, SMS, Push, InApp) för att skicka meddelanden som är utformade i [!DNL Journey Optimizer] eller skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden.
+   * Använd de **inbyggda kanalåtgärderna** (E-post, SMS, push, InApp) för att skicka meddelanden som utformats i [!DNL Journey Optimizer] eller skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden.
 
    * Med **resedesignern** kan du skapa dina flerstegsfall: enkelt dra och släppa en anmälningshändelse eller en läsningsaktivitet, lägga till villkor och skicka personaliserade meddelanden.
 

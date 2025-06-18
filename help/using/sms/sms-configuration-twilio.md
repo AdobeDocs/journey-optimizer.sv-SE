@@ -2,40 +2,69 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurera Twilio-provider
-description: Lär dig konfigurera din miljö för att skicka textmeddelanden med Journey Optimizer med Twilio
+description: Lär dig hur du konfigurerar miljön för att skicka textmeddelanden med Journey Optimizer med Twilio
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d6f74566-c913-4727-83b9-473a798a0158
-source-git-commit: c9a35c2950c061318f673cdd53d0a5fd08063c27
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 1%
 
 ---
 
 # Konfigurera Twilio-provider {#sms-configuration-twilio}
 
-Om du vill konfigurera Twilio med Journey Optimizer måste du skapa en ny API-inloggningsuppgift som används för Twilio:
+## Konfigurera API-autentiseringsuppgifter för SMS/MMS
 
-1. Bläddra till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** i den vänstra listen och välj menyn **[!UICONTROL API Credentials]**. Klicka på knappen **[!UICONTROL Create new API credentials]**.
+Om du vill konfigurera Twilio med Journey Optimizer måste du skapa nya API-autentiseringsuppgifter som används för Twilio:
 
-1. Konfigurera dina SMS API-uppgifter enligt beskrivningen nedan:
+1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** och väljer menyn **[!UICONTROL API Credentials]**. Klicka på knappen **[!UICONTROL Create new API credentials]**.
+
+1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
 
    * **[!UICONTROL SMS vendor]**: Twilio.
 
-   * **[!UICONTROL Name]**: Välj ett namn på din API-uppgift.
+   * **[!UICONTROL Name]**: välj ett namn för API-autentiseringsuppgifterna.
 
-   * **[!UICONTROL Account SID]** och **[!UICONTROL Auth Token]**: Gå till rutan **Kontoinformation** på Twilio Consoles instrumentpanel för att hitta dina autentiseringsuppgifter.
+   * **[!UICONTROL Account SID]** och **[!UICONTROL Auth Token]**: gå till rutan **Kontoinformation** på Twilio Console Dashboard-sidan för att hitta dina autentiseringsuppgifter.
 
-   * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelas varje meddelande som skapas av Twilios API. Läs mer i [Twilio-dokumentation](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-){target="_blank"}.
+   * **[!UICONTROL Message SID]**: Ange den unika identifierare som tilldelats alla meddelanden som skapats av Twilios API. Läs mer i [Twilio-dokumentation](https://support.twilio.com/hc/en-us/articles/223134387-What-is-a-Message-SID-){target="_blank"}.
 
-   * **[!UICONTROL Inbound Number]**: Lägg till ditt unika inkommande nummer. Detta gör att du kan använda samma API-uppgifter i olika sandlådor, där var och en har sitt eget inkommande nummer.
+   * **[!UICONTROL Inbound Number]**: lägg till ditt unika inkommande nummer. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer.
 
-1. Klicka på **[!UICONTROL Submit]** när du har slutfört konfigurationen av dina API-uppgifter.
+1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
-1. Klicka på papperskorgen på menyn **[!UICONTROL API Credentials]** för att ta bort dina API-uppgifter.
+1. Klicka på bin-ikonen på menyn **[!UICONTROL API Credentials]** för att ta bort dina API-autentiseringsuppgifter.
 
-1. Om du vill ändra befintliga inloggningsuppgifter letar du upp önskade API-inloggningsuppgifter och klickar på alternativet **[!UICONTROL Edit]** för att göra nödvändiga ändringar.
+1. Om du vill ändra befintliga autentiseringsuppgifter letar du reda på de API-autentiseringsuppgifter du vill ha och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
 
-När du har skapat och konfigurerat dina API-inloggningsuppgifter måste du nu skapa en kanalkonfiguration för SMS- och MMS-meddelanden. [Läs mer](sms-configuration-surface.md)
+När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalkonfiguration för SMS- och MMS-meddelanden. [Läs mer](sms-configuration-surface.md)
+
+## Konfigurera API-autentiseringsuppgifter för RCS
+
+RCS-meddelanden stöds i Adobe Journey Optimizer via Twilio med funktionen [Anpassad SMS-provider](sms-configuration-custom.md) . På så sätt kan du leverera interaktiva budskap via verifierade affärsprofiler, som innehåller element som karuseller, knappar och multimediematerial.
+
+Om du vill aktivera RCS-meddelanden med Twilio måste nya API-autentiseringsuppgifter konfigureras via en anpassad SMS-provider. Befintliga SMS-autentiseringsuppgifter för Twilio är inte kompatibla eftersom RCS kräver ett distinkt nyttolastformat.
+
+1. **Registrera dig för RCS-meddelanden i Twilio**
+
+   Börja med att slutföra RCS-registreringsprocessen på Twilio-plattformen. Detta inkluderar att konfigurera din affärsprofil och aktivera RCS-funktioner för ditt konto.
+
+1. **Skapa en SMS-webkrok**
+
+   [Konfigurera en SMS-webkrok](sms-configuration-custom.md#webhook) som kan ta emot inkommande RCS-meddelanderesvar eller leveransuppdateringar. Den här webkroken måste vara korrekt länkad till din Twilio-konfiguration för tvåvägskommunikation.
+
+1. **Skapa API-autentiseringsuppgifter med anpassad som SMS-leverantör**
+
+   I Journey Optimizer [definierar ](sms-configuration-custom.md#api-credential) nya API-autentiseringsuppgifter specifikt för RCS med&quot;Custom&quot; som SMS-leverantör. Använd lämplig autentiseringsmetod för RCS-slutpunkter, bas-URL och rubriker.
+
+När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalkonfiguration för dina RCS-meddelanden. [Läs mer](sms-configuration-surface.md)
+
+
+
+
+
+
+

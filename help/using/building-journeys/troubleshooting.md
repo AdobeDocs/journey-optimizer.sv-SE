@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: 1ee75284f3c5f0c7870e8bd8779d4daf9879aa40
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 48%
+source-wordcount: '1042'
+ht-degree: 43%
 
 ---
 
@@ -64,7 +64,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
@@ -74,7 +74,7 @@ Identitetsnamnutrymmet används för att unikt identifiera testprofilerna. Om e-
 
 Reserapporter mäter människors inträde på en resa i realtid.
 
-Om händelsen skickas men inte har inträde i resan betyder det att något gått fel mellan den skickade händelsen och den mottagna händelsen i resan.
+Om du lyckas skicka evenemanget men inte ser något inträde på resan innebär det att något går fel mellan det skickade evenemanget och det mottagande evenemanget under resan.
 
 Du kan börja felsöka med frågorna nedan:
 
@@ -101,7 +101,7 @@ Här följer några saker att kontrollera:
 
 ## Kontrollera att meddelanden har skickats {#checking-that-messages-are-sent-successfully}
 
-Om enskilda personer flödar rätt väg i resan, men inte får meddelanden som de bör få, kan du kontrollera om:
+Om enskilda personer flödar rätt väg på resan men inte får meddelanden som de ska ta emot, kan du kontrollera om:
 
 * [!DNL Journey Optimizer] har tagit hänsyn till begäran om att skicka meddelandet. Affärsanvändare kan komma åt meddelandet som ska skickas och kontrollera om tidpunkten för den senaste körningen motsvarar körningstiden för din resa. De kan även kontrollera de senaste API-anropen/händelserna som tagits emot.
 * [!DNL Journey Optimizer] har skickat meddelandet. Kontrollera reserapporteringen för att se till att det inte finns några fel.

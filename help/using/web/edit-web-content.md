@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 1%
 
 ---
@@ -37,13 +37,13 @@ Gå till följande avsnitt för att lära dig mer om varje ämne:
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
 >abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
 >title="Ange den URL som ska redigeras"
 >abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 Följ stegen nedan för att börja skapa din webbupplevelse.
 
@@ -61,7 +61,7 @@ Följ stegen nedan för att börja skapa din webbupplevelse.
 
    >[!CAUTION]
    >
-   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"}. [Läs mer](web-prerequisites.md#implementation-prerequisites)
+   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}. [Läs mer](web-prerequisites.md#implementation-prerequisites)
 
 1. Klicka på **[!UICONTROL Edit web page]** för att börja redigera den. Webbdesignern visas.
 
@@ -184,4 +184,4 @@ Möjligheten att ändra enhetsstorleken är utformad för responsiva sajter som 
 
 I videon nedan visas hur du skapar en webbupplevelse med webbdesignern i [!DNL Journey Optimizer]-kampanjer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452639/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3418803/?quality=12&learn=on)

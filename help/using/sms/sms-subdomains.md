@@ -8,9 +8,9 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: 19f127c2abc81239abda8ebd38bdcacee796a1b0
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 >id="ajo_admin_subdomain_sms"
 >title="Delegera en SMS/MMS-underdomän"
 >abstract="Du måste konfigurera en underdomän att använda för dina textmeddelanden, eftersom du behöver den här underdomänen för att skapa en SMS-konfiguration. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_sms_subdomain"
 >title="Välj en SMS/MMS-underdomän"
 >abstract="Om du vill kunna skapa en SMS-konfiguration måste du kontrollera att du tidigare har konfigurerat minst en SMS-underdomän att välja från listan över underdomännamn."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
 
 ## Kom igång med SMS-underdomäner {#gs-sms-mms-subdomains}
 
@@ -61,6 +61,10 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 1. Ange det prefix som ska visas i SMS-URL:en.
 
    Endast alfanumeriska tecken och bindestreck tillåts.
+
+   >[!CAUTION]
+   >
+   >Använd inte prefix av typen `cdn` eller `data` eftersom dessa är reserverade för internt bruk. Andra begränsade eller reserverade prefix som `dmarc` eller `spf` bör också undvikas.
 
 1. Välj en delegerad underdomän i listan.
 
@@ -131,34 +135,17 @@ Observera att underdomänen markeras som **[!UICONTROL Failed]** om du inte kan 
 
 ## Avdelegera en underdomän {#undelegate-subdomain}
 
-Kontakta din Adobe-representant om du inte längre vill delegera en SMS-underdomän.
+Om du inte längre vill delegera en SMS-underdomän kan du kontakta din Adobe-representant med den underdomän som du vill avdelegera.
 
-Du måste dock utföra flera steg i användargränssnittet innan du kommer till Adobe.
+<!--
+1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
+
+1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)-->
+
+Om SMS-underdomänen pekar på en CNAME-post kan du ta bort den CNAME DNS-post som du skapade för SMS-underdomänen från din värdlösning (men ta inte bort den ursprungliga e-postunderdomänen om det finns någon).
 
 >[!NOTE]
 >
->Du kan bara avdelegera underdomäner med statusen **[!UICONTROL Success]**. Underdomäner med statusvärdena **[!UICONTROL Draft]** och **[!UICONTROL Failed]** kan bara tas bort från användargränssnittet.
-
-Utför följande steg i [!DNL Journey Optimizer]:
-
-1. Inaktivera alla kanalkonfigurationer som är associerade med underdomänen. [Lär dig hur](../configuration/channel-surfaces.md#deactivate-a-surface)
-
-<!--
-1. If the SMS subdomain is using an email subdomain that was [already delegated](#lp-use-existing-subdomain) to Adobe, undelegate the email subdomain. [Learn how](../configuration/delegate-subdomain.md#undelegate-subdomain)-->
-
-1. Stoppa aktiva kampanjer som är associerade med underdomänerna. [Lär dig hur](../campaigns/modify-stop-campaign.md#stop)
-
-1. Stoppa de aktiva resorna som är kopplade till underdomänerna. [Lär dig hur](../building-journeys/end-journey.md#stop-journey)
-
-1. Om SMS-underdomänen var en [ny delegerad underdomän](#sms-configure-new-subdomain) tar du bort de DNS-poster som är associerade med den underdomänen.
-
-När du är klar kontaktar du Adobe-representanten med den underdomän du vill avdelegera.
+>En SMS-underdomän kan peka på en CNAME-post eftersom den antingen var en [befintlig underdomän](#sms-use-existing-subdomain) som delegerats till Adobe med [CNAME-metoden](../configuration/delegate-subdomain.md#cname-subdomain-delegation) eller en [ny SMS-underdomän](#sms-configure-new-subdomain) som du konfigurerade.
 
 När du har hanterat din begäran av Adobe visas inte längre den odelegerade domänen på underdomänens lagersida.
-
->[!CAUTION]
->
->När en underdomän inte har delegerats:
->
->   * Du kan inte återaktivera kanalkonfigurationerna som använder den underdomänen.
->   * Du kan inte delegera den exakta underdomänen igen via användargränssnittet. Kontakta Adobe om du vill göra det.

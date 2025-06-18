@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
-source-git-commit: 2f2caf8615af8e3526124e0d7ed91873ccb6edc3
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -73,7 +73,7 @@ To leverage data from an AEP dataset, you can select it in the **[!UICONTROL ELS
 
 ## Definiera villkor med formelverktyget {#ranking-select-criteria}
 
-Med ett intuitivt gränssnitt kan du finjustera besluten genom att justera AI-poängen (benägenhet), erbjudandevärdet (prioritet), sammanhangsbaserade hävstångseffekter och egenskaper för externa profiler - individuellt eller i kombination - för att optimera varje interaktion. <!--Whether you're maximizing revenue, promoting strategic offers, or balancing business goals with real-time context, the formula builder gives you total control in defining ranking strategies.-->
+Med ett intuitivt gränssnitt kan du finjustera besluten genom att justera AI-poängen (benägenhet), erbjudandevärdet (prioritet), sammanhangsbaserade hävstångseffekter och egenskaper för externa profiler - individuellt eller i kombination - för att optimera varje interaktion. <!--Whether you are maximizing revenue, promoting strategic offers, or balancing business goals with real-time context, the formula builder gives you total control in defining ranking strategies.-->
 
 Följ stegen nedan för att definiera villkor direkt från gränssnittet.
 
@@ -126,7 +126,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >

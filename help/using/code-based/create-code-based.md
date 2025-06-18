@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: d3f15c09194a50b95107fb84d680606a468f8644
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '761'
 ht-degree: 2%
 
 ---
@@ -97,11 +97,17 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+
+Följ stegen nedan för att redigera innehållet i din kodbaserade upplevelse.
 
 1. Välj **[!UICONTROL Edit code]** från reseaktiviteten eller kampanjversionen.
 
    ![](assets/code-based-campaign-edit-code.png)
+
+   >[!NOTE]
+   >
+   >Om du använder en kodbaserad innehållsmall för upplevelser med fördefinierade redigerbara formulärfält kan du hantera innehållet i dessa fält utan att öppna redigeraren för personalisering. [Läs mer](code-based-form-fields.md)
 
 1. [Anpassningsredigeraren](../personalization/personalization-build-expressions.md) öppnas. Det är ett gränssnitt för att skapa icke-visuella upplevelser som gör att du kan skapa koden.
 
@@ -119,9 +125,17 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
    Du kan också spara en del av kodinnehållet som fragment. [Lär dig hur](../content-management/fragments.md#save-as-expression-fragment)
 
-1. Med kodbaserade upplevelser kan ni använda beslutsfunktionen. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md)
+1. Med kodbaserade upplevelser kan ni använda beslutsfunktionen. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md#add-decision)
 
    ![](assets/code-based-campaign-create-decision.png)
+
+   <!--![](../experience-decisioning/assets/decision-code-based-create.png)-->
+
+   Från kundresan eller kampanjversionen kan ni också lägga till en beslutspolicy direkt utan att behöva öppna personaliseringsredigeraren. Använd den dedikerade ikonen till höger för att visa avsnittet **[!UICONTROL Decisioning]**.
+
+   <!--![](assets/code-based-campaign-show-decisioning.png)-->
+
+   De detaljerade stegen för att skapa en beslutsprincip visas i [det här avsnittet](../experience-decisioning/create-decision.md#add-decision).
 
 1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
 
@@ -131,4 +145,4 @@ När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för de
 
 I videon nedan visas hur du skapar en kodbaserad upplevelsekampanj, konfigurerar dess egenskaper, testar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449457/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428868/?quality=12&learn=on)

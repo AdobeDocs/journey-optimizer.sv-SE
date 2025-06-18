@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7e9d707d6413509aef207a6183f6c9953ccdf229
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2448'
 ht-degree: 20%
 
 ---
@@ -75,6 +75,7 @@ ht-degree: 20%
       + [Läs målgrupp](using/building-journeys/read-audience.md)
       + [Inbyggda kanalåtgärder](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
+      + [Innehållsbeslut](using/building-journeys/content-decision.md)
       + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-v7-v8.md)
       + [Hoppa](using/building-journeys/jump.md)
@@ -288,19 +289,19 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Push-meddelandeflöde](using/push/push-gs.md)
          + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
          + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
-   + SMS-/MMS-kanal{#sms}
+   + SMS/MMS/RCS-kanal{#sms}
       + [Kom igång med textmeddelanden](using/sms/get-started-sms.md)
-      + [Skapa ett textmeddelande (SMS/MMS)](using/sms/create-sms.md)
+      + [Skapa ett SMS/MMS/RCS-meddelande](using/sms/create-sms.md)
       + [Kontrollera och skicka textmeddelanden](using/sms/send-sms.md)
       + [Hantera avanmälan av textmeddelande](using/sms/sms-opt-out.md)
       + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
-      + Konfigurera SMS-/MMS-kanal{#configure-sms}
-         + [Kom igång med SMS-konfiguration](using/sms/sms-configuration.md)
+      + Konfigurera SMS/MMS/RCS-kanal{#configure-sms}
+         + [Kom igång med SMS-/MMS-/RCS-konfiguration](using/sms/sms-configuration.md)
          + [Konfigurera Sinch-provider](using/sms/sms-configuration-sinch.md)
          + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
          + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
          + [Konfigurera en anpassad provider](using/sms/sms-configuration-custom.md)
-         + [Skapa en SMS-konfiguration](using/sms/sms-configuration-surface.md)
+         + [Skapa en SMS-/MMS-/RCS-konfiguration](using/sms/sms-configuration-surface.md)
    + Direktmeddelande {#direct-mail}
       + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
       + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
@@ -329,6 +330,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
       + Skapa kodbaserade upplevelser {#create-code-based-experiences}
          + [Skapa och komponera kodbaserade upplevelser](using/code-based/create-code-based.md)
+         + [Använd redigerbara fält i kodbaserade upplevelser](using/code-based/code-based-form-fields.md)
          + [Testa kodbaserade upplevelser](using/code-based/test-code-based.md)
          + [Hantera kodbaserade upplevelser](using/code-based/publish-code-based.md)
    + Innehållskort{#content-card}
@@ -708,7 +710,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)

@@ -8,9 +8,10 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
-source-git-commit: 7f54200facc8845d5c39bb5d16751ed49579ea8a
+exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1283'
 ht-degree: 1%
 
 ---
@@ -24,9 +25,9 @@ ht-degree: 1%
 
 ## Kom igång med policyer för datastyrning {#gs}
 
-Med sitt [ramverk för dataanvändningsetiketter och tvång(DULE)-styrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=sv-SE){target="_blank"} kan du med Adobe Experience Platform hantera och tillämpa datastyrningsprinciper i alla kanaler genom att **etikettera dina fält** och skapa **marknadsföringsåtgärder** för varje kanal.
+Med sitt ramverk [Dataanvändningsmärkning och Tvingande (DULE)](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html){target="_blank"} kan du med Adobe Experience Platform hantera och tillämpa datastyrningsprinciper i alla kanaler genom att **etikettera fälten** och skapa **marknadsföringsåtgärder** för varje kanal.
 
-När etiketter och marknadsföringsåtgärder har definierats kan du skapa **datastyrningsprinciper** som länkar dessa två element. Du kan till exempel skapa en profil som associerar en ePHI-etikett med en marknadsföringsåtgärd som riktar sig mot e-postmarknadsföring, så att fält som är märkta som ePHI inte används för att anpassa e-postmeddelanden. [Lär dig hur du skapar datastyrningsprinciper](#governance-policies)
+När etiketter och marknadsföringsåtgärder har definierats kan du skapa **datastyrningsprinciper** som länkar dessa två element. Du kan till exempel skapa en profil som associerar en ePHI-etikett med en marknadsföringsåtgärd som riktar sig mot e-postmarknadsföring, så att fält som är märkta som ePHI inte används för att anpassa e-postmeddelanden. [Lär dig hur du skapar datastyrningsprinciper](#policy)
 
 När ni har skapat styrningspolicyer kan ni använda marknadsföringsåtgärderna på era resor/kampanjer och resor med anpassade åtgärder.
 [Lär dig hur du använder marknadsföringsåtgärder i Journey Optimizer](#apply-marketing-actions)
@@ -57,7 +58,7 @@ Nu när etiketter och marknadsföringsåtgärder har skapats kan ni länka samma
 
 ![](assets/action-privacy5.png)
 
-När du ska använda din anpassade Slack-åtgärd som konfigurerats med _Slack marknadsföringsåtgärden_ på en resa, kommer den associerade principen att utnyttjas.
+När du ska använda din anpassade Slack-åtgärd som konfigurerats med _Slack marknadsföringsåtgärd_ på en resa, kommer den associerade principen att utnyttjas.
 
 ## Använda marknadsföringsåtgärder i Journey Optimizer {#apply-marketing-actions}
 
@@ -91,19 +92,19 @@ Om systemet identifierar ett begränsat fält visas ett fel som hindrar dig frå
 
 >[!NOTE]
 >
->Åtgärder för kundresor v7/v8 och Campaign Standard stöds inte.
+>Reseåtgärder för Campaign v7/v8 och Campaign Standard stöds inte.
 
 Låt oss ta ett exempel på det blodtypsfält som du behöver begränsa från att exporteras till en tredje part med anpassade åtgärder. För att göra det måste ni tillämpa marknadsföringsåtgärden på er anpassade åtgärd, och sedan bygga upp kundresan och lägga till en anpassad åtgärd i den.
 
 1. Klicka på **Konfigurationer** under **Administration** på den vänstra menyn och välj **Åtgärder**.
 
-1. Öppna din anpassade Slack-åtgärd. När du konfigurerar en anpassad åtgärd kan två fält användas för datastyrning.
+1. Öppna en anpassad Slack-åtgärd. När du konfigurerar en anpassad åtgärd kan två fält användas för datastyrning.
 
    ![](assets/action-privacy6.png)
 
    * I fältet **Kanal** kan du välja kanalen som är relaterad till den här anpassade åtgärden. Det fyller i fältet **Obligatorisk marknadsföringsåtgärd** med standardmarknadsföringsåtgärden för den valda kanalen. Om du väljer **other** definieras ingen marknadsföringsåtgärd som standard. I vårt exempel väljer vi kanalen **other**.
 
-   * Med den **obligatoriska marknadsföringsåtgärden** kan du definiera marknadsföringsåtgärden som är relaterad till din anpassade åtgärd. Om du till exempel använder den anpassade åtgärden för att skicka e-post med en tredje part kan du välja **E-postmarknadsföring**. I vårt exempel väljer vi marknadsföringsåtgärden _Slack_. De styrningsprinciper som är kopplade till marknadsföringsåtgärden hämtas och utnyttjas.
+   * Med den **obligatoriska marknadsföringsåtgärden** kan du definiera marknadsföringsåtgärden som är relaterad till din anpassade åtgärd. Om du till exempel använder den anpassade åtgärden för att skicka e-post med en tredje part kan du välja **E-postmarknadsföring**. I vårt exempel väljer vi _Slack marknadsföringsåtgärd_. De styrningsprinciper som är kopplade till marknadsföringsåtgärden hämtas och utnyttjas.
 
    De andra stegen för att konfigurera en anpassad åtgärd beskrivs i [det här avsnittet](../action/about-custom-action-configuration.md#consent-management).
 
@@ -133,4 +134,4 @@ Fel visas från knappen **[!UICONTROL Alerts]**. Klicka på felet för att visa 
 
 Den här dialogrutan anger att den aktuella resan/kampanjkonfigurationen bryter mot en befintlig datastyrningspolicy. Använd datalänksdiagrammet för att förstå vilka andra konfigurationsändringar som behöver göras innan du kan aktivera din resa eller kampanj.
 
-Detaljerad information finns i [informationen om brott mot dataanvändningsprincipen](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/enforcement/auto-enforcement#data-usage-violation){_blank}.
+Detaljerad information finns i [informationen om brott mot dataanvändningsprincipen](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/auto-enforcement#data-usage-violation){_blank}.

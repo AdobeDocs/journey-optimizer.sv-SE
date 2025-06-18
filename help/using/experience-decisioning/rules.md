@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
-source-git-commit: 1ca6ea08e177989a0aea8646ca28b1216644fd3e
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Så här skapar du en beslutsregel:
 1. Bygg en beslutsregel som passar dina behov med Adobe Experience Platform Segment Builder. Om du vill göra det kan du utnyttja olika datakällor, till exempel:
    * Profilattribut och beslutsattribut
    * Målgrupper,
-   * Kontextdata från Adobe Experience Platform. [Lär dig hur du använder kontextdata](#context-data)
+   * Kontextdata från Adobe Experience Platform. [Lär dig hur du använder kontextdata](context-data.md)
 
    ![](assets/decision-rules-build.png)
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: cd47ca1d-f707-4425-b865-14f3fbbe5fd1
-source-git-commit: 19b75282b6f6fbc847805a263126534c9035ad5d
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ När du lägger till fragmentet i e-postinnehållet kan användare nu åsidosät
 
 * För uttrycksfragment används en specifik syntax för att åsidosätta variabelvärden. [Lär dig hur du anpassar redigerbara fält i ett uttrycksfragment](../personalization/use-expression-fragments.md#customize-fields)
 
-* För HTML-komponenter visas variabeln i listan med redigerbara fält i e-postens Designer. [Lär dig hur du anpassar redigerbara fält i ett visuellt fragment](../email/use-visual-fragments.md#customize-fields)
+* För HTML-komponenter visas variabeln i listan med redigerbara fält i e-post-Designer. [Lär dig hur du anpassar redigerbara fält i ett visuellt fragment](../email/use-visual-fragments.md#customize-fields)
 
 ## Exempel på redigerbart uttrycksfragment {#example}
 
@@ -126,7 +126,7 @@ För att göra detta:
 
 1. Deklarera en idrottsvariabel med ID &quot;sport&quot;.
 
-   Om användare inte ändrar variabelns värde efter att de har lagt till fragmentet i sitt innehåll, visas som standard det värde som definierats mellan taggarna `{{#inline}}` och `{{/inline}}`, dvs. &quot;sport&quot;.
+   Om användare inte ändrar variabelns värde efter att ha lagt till fragmentet i innehållet, visas som standard det värde som definierats mellan taggarna `{{#inline}}` och `{{/inline}}`, dvs. &quot;sport&quot;.
 
 1. Lägg till syntaxen ``{{{sport}}}`` i fragmentinnehållet där du vill visa variabelvärdet, d.v.s. &quot;sport&quot; som standard, eller det värde som användarna väljer.
 

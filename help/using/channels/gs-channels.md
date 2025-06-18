@@ -6,9 +6,9 @@ description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommuni
 role: User
 level: Beginner
 exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
-source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Adobe Journey Optimizer erbjuder en mängd olika inbyggda kanaler för att effek
 Leveranskanaler för utgående meddelanden innebär att meddelanden skickas till kunderna utan föregående interaktion. Exempel är e-postkampanjer och push-meddelanden, där ni aktivt når ut till er målgrupp. I [!DNL Adobe Journey Optimizer] stöds utgående kanaler:
 
 * **E-post**: Leverera personaliserade meddelanden direkt till dina kunders inkorgar.
-* **SMS/MMS**: Skicka textmeddelanden till användare på deras mobila enheter.
+* **SMS/MMS/RCS**: Skicka textmeddelanden till användare på deras mobila enheter.
 * **Push-meddelande**: Engagera användarna med snabbmeddelanden på deras enheter och få dem att agera direkt.
 * **Direkt e-post**: Använd fysisk e-post för att skapa en faktisk anslutning till din målgrupp.
 

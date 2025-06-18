@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ där:
 
 * Orden **true**, **false**, **null** och **undefined** tillåts bara i den första delen av ett sökvägsuttryck.
 
-* I Handlebars är värdena som returneras av {{expression}} **HTML-escape**. Om uttrycket innehåller `&` genereras returnerade HTML-escape-utdata som `&amp;`. Om du inte vill att Handlebars ska kringgå ett värde använder du &quot;trippelstreck&quot;.
+* I Handlebars är värdena som returneras av {{expression}} **HTML-escape**. Om uttrycket innehåller `&` genereras returnerade HTML-escape-utdata som `&amp;`. Om du inte vill att Handlebars ska hoppa över ett värde använder du &quot;trippelstreck&quot;.
 
 * När det gäller argument för literala funktioner saknar den mallande språkparsern stöd för ett omvänt snedstreck (`\`) av typen unescape. Det här tecknet måste föregås av ett ytterligare omvänt snedstreck (`\`). Exempel:
 
@@ -69,11 +69,11 @@ där:
    * `{{profile.homeAddress.city}}`
    * `{{profile.faxPhone.number}}`
 
-  +++
++++
 
 * **Målgrupp**
 
-  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
+  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 * **Erbjudanden**
 
@@ -112,7 +112,7 @@ där:
 
      `offers.html.[offers:xcore:offer-placement:126f767d74b0da80].[xcore:offer-activity:125e2c6889798fd9].content`
 
-  +++
++++
 
 ## Hjälpmedel{#helpers-all}
 

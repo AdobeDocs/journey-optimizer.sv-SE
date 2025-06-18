@@ -7,9 +7,9 @@ feature: Ranking, Decision Management
 role: User
 level: Experienced
 exl-id: a85de6a9-ece2-43da-8789-e4f8b0e4a0e7
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ Följande termer är användbara när du diskuterar automatisk optimering:
 
 * **Thomson-sampling**: Thompson-sampling är en algoritm för onlinebeslutsproblem där åtgärder vidtas sekventiellt på ett sätt som måste balansera mellan att utnyttja det som är känt för att maximera omedelbara prestanda och investera för att samla in ny information som kan förbättra framtida prestanda. [Läs mer](#thompson-sampling)
 
-* [**Beta-distribution**](https://en.wikipedia.org/wiki/Beta_distribution){target="_blank"}: Uppsättning kontinuerliga [sannolikhetsfördelningar](https://en.wikipedia.org/wiki/Probability_distribution){target="_blank"} som definieras i intervallet [0, 1] [parametriserat](https://en.wikipedia.org/wiki/Statistical_parameter){target="_blank"} av två positiva [formparametrar](https://en.wikipedia.org/wiki/Shape_parameter){target="_blank"}.
+* [**Beta-distribution**](https://en.wikipedia.org/wiki/Beta_distribution){target="_blank"}: En uppsättning kontinuerliga [sannolikhetsfördelningar](https://en.wikipedia.org/wiki/Probability_distribution){target="_blank"} som definieras i intervallet [0, 1] [parametriserad](https://en.wikipedia.org/wiki/Statistical_parameter){target="_blank"} av två positiva [formparametrar](https://en.wikipedia.org/wiki/Shape_parameter){target="_blank"}.
 
 ## Thompson Sampling {#thompson-sampling}
 
 Den algoritm som ligger till grund för automatisk optimering är **Thompson sampling**. I det här avsnittet diskuterar vi intuitionen bakom Thompson-provtagning.
 
-[Thompson sampling](https://en.wikipedia.org/wiki/Thompson_sampling){target="_blank"}, eller Bayesian bandits, är en bayesisk lösning på problemet med flerarmad bandit.  Grundtanken är att behandla den genomsnittliga belöningen ? från varje erbjudande som en **slumpmässig variabel** och använda de data vi hittills har samlat in för att uppdatera vår&quot;tro&quot; om den genomsnittliga belöningen. Denna trosuppfattning representeras matematiskt av en **sannolikhetsfördelning efter** - i stort sett ett intervall av värden för den genomsnittliga belöningen, tillsammans med den sannolikhet (eller sannolikhet) som belöningen har för varje erbjudande. För varje beslut ska vi sedan **ta ett prov från var och en av dessa belöningsfördelningar** och välja det erbjudande vars provbelöning hade det högsta värdet.
+[Thompson sampling](https://en.wikipedia.org/wiki/Thompson_sampling){target="_blank"}, eller Bayesian bandits, är en bayesisk lösning på problemet med flerarmad bandit.  Grundtanken är att behandla den genomsnittliga belöningen 𝛍 från varje erbjudande som en **slumpmässig variabel** och använda de data som vi har samlat in hittills för att uppdatera vår&quot;tro&quot; om den genomsnittliga belöningen. Denna trosuppfattning representeras matematiskt av en **sannolikhetsfördelning efter** - i stort sett ett intervall av värden för den genomsnittliga belöningen, tillsammans med den sannolikhet (eller sannolikhet) som belöningen har för varje erbjudande. För varje beslut ska vi sedan **ta ett prov från var och en av dessa belöningsfördelningar** och välja det erbjudande vars provbelöning hade det högsta värdet.
 
 Denna process illustreras i bilden nedan, där vi har tre olika erbjudanden. Till att börja med har vi inga bevis från data och vi antar att alla erbjudanden har en enhetlig fördelning efter belöningen. Vi tar ett prov från varje offerts fördelning efter belöningen. Det exempel som valts ut från distributionen av erbjudandet 2 har det högsta värdet. Detta är ett exempel på **utforskande**. När vi har visat erbjudandet 2 samlar vi in eventuell belöning (t.ex. konvertering/ingen konvertering) och uppdaterar posteriordistributionen av erbjudandet 2 med hjälp av Bayes Theorem enligt nedan.  Vi fortsätter med den här processen och uppdaterar efterhandsfördelningen varje gång ett erbjudande visas och belöningen samlas in. I den andra siffran väljs erbjudande 3 - trots att erbjudandet 1 har den högsta genomsnittliga belöningen (den posteriorbelöningsfördelningen ligger längst till höger) har provtagningsprocessen från varje distribution lett till att vi valt ett till synes ooptimalt erbjudande 3. På så sätt ger vi oss själva möjlighet att lära oss mer om den verkliga belöningsfördelningen i Erbjudande 3.
 
@@ -59,7 +59,7 @@ Om ett erbjudande (t.ex. erbjudande 1) är en tydlig vinnare kommer dess belöni
 
 +++**Teknisk information**
 
-För att beräkna/uppdatera distributioner använder vi **Bayes Theorem**. För varje erbjudande ***i*** vill vi beräkna deras ***P(??i | data)***, dvs. för varje erbjudande ***i***, hur sannolikt är ett belöningsvärde **??i**, med tanke på de data vi hittills har samlat in för det erbjudandet.
+För att beräkna/uppdatera distributioner använder vi **Bayes Theorem**. För varje erbjudande ***i*** vill vi beräkna deras ***P(𝛍i | data)***, dvs. för varje erbjudande ***i***, hur sannolikt det är att belöningsvärdet **𝛍i** är, med tanke på de data som vi hittills har samlat in för det erbjudandet.
 
 Från Bayes Theorem:
 
@@ -90,7 +90,7 @@ Mer information om Thompson-provtagning finns i följande forskningsrapporter:
 
 ## Problem med kallstart {#cold-start}
 
-Problemet med&quot;kallstart&quot; uppstår när ett nytt erbjudande läggs till i en kampanj och det inte finns några tillgängliga uppgifter om det nya erbjudandets konverteringsgrad. Under den här perioden måste vi ta fram en strategi för hur ofta det nya erbjudandet väljs så att prestandasänkningen minimeras, samtidigt som vi samlar in information om konverteringsgraden för det nya erbjudandet. Det finns flera lösningar för att ta itu med det här problemet. Nyckeln är att hitta en balans mellan utforskandet av det nya erbjudandet, samtidigt som vi inte offrar exploateringen så mycket. För närvarande använder vi&quot;enhetlig fördelning&quot; som vår första gissning om det nya erbjudandets konverteringsgrad (tidigare distribution). I princip ger vi alla konverteringsgrader samma sannolikhet för förekomst.
+Problemet med&quot;kallstart&quot; uppstår när ett nytt erbjudande läggs till i en kampanj och det inte finns några tillgängliga uppgifter om det nya erbjudandets konverteringsgrad. Under den här perioden måste vi ta fram en strategi för hur ofta det nya erbjudandet väljs så att prestandasänkningen minimeras, samtidigt som vi samlar in information om konverteringsgraden för det nya erbjudandet. Det finns flera lösningar för att ta itu med det här problemet. Nyckeln är att hitta en balans mellan utforskandet av detta nya erbjudande, samtidigt som vi inte offrar utnyttjandet så mycket. För närvarande använder vi&quot;enhetlig fördelning&quot; som vår första gissning om det nya erbjudandets konverteringsgrad (tidigare distribution). I princip ger vi alla konverteringsgrader samma sannolikhet för förekomst.
 
 
 ![](../assets/ai-ranking-cold-start-strategies.png)

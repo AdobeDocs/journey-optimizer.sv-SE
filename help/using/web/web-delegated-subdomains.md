@@ -8,9 +8,9 @@ feature: Web Channel, Subdomains
 level: Experienced
 keywords: webb, underdomäner, konfiguration
 exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
-source-git-commit: 8e5a904f9310385f5a8186159dedde9942624268
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -152,35 +152,15 @@ You cannot delete a subdomain with the **[!UICONTROL Processing]** status.
 
 ## Avdelegera en underdomän {#undelegate-subdomain}
 
-Om du inte längre vill delegera en webbunderdomän kontaktar du Adobe.
-
-Du måste dock utföra flera steg i användargränssnittet innan du kommer till Adobe.
-
->[!NOTE]
->
->Du kan bara avdelegera underdomäner med statusen **[!UICONTROL Success]**. Underdomäner med statusvärdena **[!UICONTROL Draft]** och **[!UICONTROL Failed]** kan bara tas bort från användargränssnittet.
-
-Utför följande steg i [!DNL Journey Optimizer]:
-
-1. Inaktivera alla kanalkonfigurationer som är associerade med underdomänen. [Lär dig hur](../configuration/channel-surfaces.md#deactivate-a-surface)
+Om du inte längre vill delegera en webbunderdomän kan du kontakta din Adobe-representant med den underdomän som du vill avdelegera.
 
 <!--
-1. If the web subdomain is using an email subdomain that was [already delegated](#lp-use-existing-subdomain) to Adobe, undelegate the email subdomain. [Learn how](../configuration/delegate-subdomain.md#undelegate-subdomain)-->
+1. Deactivate all the channel configurations associated with the subdomain. [Learn how](../configuration/channel-surfaces.md#deactivate-a-surface)
 
-1. Stoppa aktiva kampanjer som är associerade med underdomänerna. [Lär dig hur](../campaigns/modify-stop-campaign.md#stop)
+1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/modify-stop-campaign.md#stop)
 
-1. Stoppa de aktiva resorna som är kopplade till underdomänerna. [Lär dig hur](../building-journeys/end-journey.md#stop-journey)
+1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)-->
 
-1. Om webbunderdomänen var en [ny delegerad underdomän](#web-configure-new-subdomain) tar du bort de DNS-poster som är associerade med den underdomänen.
-
-När du är klar kontaktar du Adobe-representanten med den underdomän du vill avdelegera.
+Om webbunderdomänen var en [ny delegerad underdomän](#web-configure-new-subdomain) kan du ta bort den CNAME DNS-post som du skapade för webbunderdomänen från din värdlösning (men ta inte bort den ursprungliga e-postunderdomänen om sådan finns).
 
 När du har hanterat din begäran av Adobe visas inte längre den odelegerade domänen på underdomänens lagersida.
-
->[!CAUTION]
->
->När en underdomän inte har delegerats:
->
->   * Du kan inte återaktivera kanalkonfigurationerna som använder den underdomänen.
->
->   * Du kan inte delegera den exakta underdomänen igen via användargränssnittet. Kontakta Adobe om du vill göra det.

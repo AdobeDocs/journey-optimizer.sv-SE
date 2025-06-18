@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, integrering, standard, kampanj, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
-source-git-commit: 64e225cdc8615e51655ef550866b67ca249a7572
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '905'
 ht-degree: 1%
 
 ---

@@ -8,7 +8,7 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -56,4 +56,4 @@ Lär dig hur du bygger resor i följande kompletta fall:
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)

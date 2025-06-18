@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a205539b-b7ea-4832-92b0-49637c4dac47
-source-git-commit: e35d18002fa32df8c1cfd9e0a609ce167df4641a
+source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '652'
 ht-degree: 3%
 
 ---
@@ -70,6 +70,12 @@ Följ stegen nedan för att skapa en innehållsmall från grunden.
    * [Definiera SMS-innehåll](../sms/create-sms.md#sms-content)
    * [Definiera innehåll för direktreklam](../direct-mail/create-direct-mail.md)
    * [Definiera innehåll i appen](../in-app/design-in-app.md)
+   * [Definiera webbinnehåll](../web/create-web.md#edit-web-content)
+   * [Definiera kodbaserat upplevelseinnehåll](../code-based/create-code-based.md)
+
+     >[!NOTE]
+     >
+     >Du kan lägga till beslutsprinciper i kodbaserade innehållsmallar för upplevelser. [Läs mer](../experience-decisioning/create-decision.md#add-decision)
 
 1. Du kan testa ditt innehåll. [Lär dig hur](#test-template)
 
