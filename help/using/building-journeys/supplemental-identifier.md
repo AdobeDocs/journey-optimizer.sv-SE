@@ -3,9 +3,9 @@ title: Kompletterande identifiering vid händelseutlösta resor
 description: Lär dig hur du använder tilläggsidentifierare i händelseutlösta resor.
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
-source-git-commit: e7f4959ceaa238e39858196b08d739053b21835c
+source-git-commit: 5e7aad25fa08994f6cbce9adfce4a3dc94fe3e47
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ På så sätt utförs resor som utlöses av händelsen i samband med det profil-
 
 Dessutom kan du med Journey Optimizer använda attribut för den kompletterande identifieraren (t.ex. bokningsnummer, förnyelsedatum för förskrivning, produkttyp) för att anpassa meddelanden, vilket säkerställer mycket relevant kommunikation. <!--Example: A healthcare provider can send renewal reminders for each prescription in a patient's profile.-->
 
-## Skyddsritningar och begränsningar
+## Skyddsritningar och begränsningar {#guardrails}
 
 * **Gränser för samtidiga instanser**: Profiler kan inte ha fler än 10 instanser för samtidiga resor.
 
@@ -61,7 +61,14 @@ Dessutom kan du med Journey Optimizer använda attribut för den kompletterande 
 
 * **Datatyp och schemastruktur**: Den extra identifieraren måste vara av typen `string`. Det kan vara ett oberoende strängattribut eller ett strängattribut inom en objektmatris. Det oberoende strängattributet resulterar i en enda reseinstans, medan strängattributet inom en objektmatris resulterar i en unik reseinstans per iteration av objektarrayen. Strängmatriser och kartor stöds inte.
 
-## Lägg till en extra identifierare och utnyttja den i en resa
+* **Reseåterinträde**
+
+  Beteendet vid återinträde på resa med kompletterande identifierare följer den befintliga återinträdesprincipen:
+
+   * Om resan inte är en återkommande person kan inte kombinationen av profil-ID och kompletterande ID returnera resan.
+   * Om resan är återkommande i ett tidsfönster kan samma profil-ID + kombination av extra ID:n anges igen efter det definierade tidsfönstret.
+
+## Lägg till en extra identifierare och utnyttja den i en resa {#add}
 
 Följ de här stegen om du vill använda en extra identifierare för en resa:
 
@@ -88,6 +95,10 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
       ![](assets/supplemental-ID-event.png)
 
    1. Använd uttrycksredigeraren för att välja det attribut du markerade som tilläggs-ID.
+
+      >[!NOTE]
+      >
+      >Kontrollera att du använder uttrycksredigeraren i **[!UICONTROL Advanced mode]** för att välja attributet.
 
    1. När du har valt det extra ID:t visas det tillhörande namnutrymmet i händelsekonfigurationsskärmen som skrivskyddat.
 
