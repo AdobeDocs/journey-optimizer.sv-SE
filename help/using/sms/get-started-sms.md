@@ -1,31 +1,31 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Kom igång med textmeddelanden (SMS/MMS)
+title: Kom igång med textmeddelanden (SMS/MMS/RCS)
 description: Lär dig skapa och skicka textmeddelanden i Journey Optimizer
 feature: SMS
 topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: cc0ffd008052fcb0ce06f6cdff0f2adb5c040568
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 2%
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
 # Kom igång med textmeddelanden {#get-started-sms}
 
-Använd [!DNL Journey Optimizer] för att skicka textmeddelanden (SMS/MMS) till dina kunder på deras mobila enheter. Du kan skapa, anpassa och förhandsgranska meddelanden i textformat från SMS/MMS-redigeraren.
+Använd [!DNL Journey Optimizer] för att skicka textmeddelanden (SMS/MMS/RCS) till dina kunder på deras mobila enheter. Du kan skapa, anpassa och förhandsgranska meddelanden i textformat från SMS/MMS/RCS-redigeraren.
 
-Textmeddelanden kan skapas och skickas på en resa eller i en kampanj. För MMS och SMS använder du SMS-åtgärden.
+Textmeddelanden kan skapas och skickas på en resa eller i en kampanj. För SMS, MMS och RCS använder du SMS-åtgärden.
 
-* På en **resa**. Skapa en resa, lägg till en SMS-aktivitet och definiera grundläggande inställningar och bläddra sedan till den högra panelen **[!UICONTROL Actions: SMS]** för att skapa innehållet för SMS/MMS/RCS-meddelandet. Lär dig skapa en resa på [den här sidan](../building-journeys/journey-gs.md).
+* På en **resa**. Skapa en resa, lägg till en SMS-aktivitet och definiera grundläggande inställningar. Bläddra sedan till åtgärdsrutan: höger SMS för att skapa innehållet för SMS-, MMS- eller RCS-meddelandet. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
-* I en **kampanj**. Skapa en kampanj, välj SMS som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera SMS/MMS/RCS-meddelandet som ska skickas. Lär dig skapa en kampanj på [den här sidan](../campaigns/create-campaign.md#configure).
+* I en **kampanj**. Skapa en kampanj, välj SMS som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera SMS-, MMS- eller RCS-meddelandet som ska skickas. [Lär dig skapa en kampanj](../campaigns/create-campaign.md#configure)
 
-Adobe Journey Optimizer skickar textmeddelanden via SMS-tjänstleverantörer (eller SMS-gatewayleverantörer). Innan du skapar SMS/MMS-meddelandet måste du konfigurera tjänsteleverantören för textmeddelanden med Journey Optimizer. [Läs mer](sms-configuration.md).
+Adobe Journey Optimizer skickar textmeddelanden via SMS-tjänstleverantörer (eller SMS-gatewayleverantörer). Innan du skapar SMS/MMS/RCS-meddelandet ska du konfigurera tjänsteleverantören för text- och RCS-meddelanden med Journey Optimizer. [Läs mer](sms-configuration.md)
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
@@ -58,7 +58,7 @@ Adobe Journey Optimizer skickar textmeddelanden via SMS-tjänstleverantörer (el
 <img alt="Validering" src="../assets/do-not-localize/sms-config.jpg">
 </a>
 <div>
-<a href="sms-configuration.md"><strong>Konfigurera SMS-kanal</strong></a>
+<a href="sms-configuration.md"><strong>Konfigurera SMS/MMS/RCS</strong></a>
 </div>
 <p>
 </td>
@@ -70,15 +70,15 @@ Adobe Journey Optimizer skickar textmeddelanden via SMS-tjänstleverantörer (el
 
   +++Se video
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3428916?learn=on&captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 
-  +++
++++
 
 * Videon nedan hjälper er att förstå vilka mobilfunktioner Adobe Journey Optimizer erbjuder marknadsförare.
 
 
   +++Se video
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3430381?quality=12&learn=on&captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3426021?quality=12&learn=on)
 
-  +++
++++
