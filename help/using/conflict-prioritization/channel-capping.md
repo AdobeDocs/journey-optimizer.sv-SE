@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
-source-git-commit: 37eed59b64a8bfad0b216c279b15612b6ac57897
+source-git-commit: 43fe7ca22a7685944b2b11ca3d1872641d1f4694
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 **Kanal**-regeluppsättningar tillämpar regler för appning på kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag.
 
 Genom att utnyttja kanalregeluppsättningar kan ni ange frekvensbegränsning efter kommunikationstyp för att förhindra att kunder med liknande meddelanden överbelastas. Du kan till exempel skapa en regeluppsättning som begränsar antalet **kampanjmeddelanden** som skickas till dina kunder och en annan regeluppsättning som begränsar antalet **nyhetsbrev** som skickas till dem. Beroende på vilken typ av kampanj du skapar kan du sedan välja att använda antingen kampanjkommunikationen eller regeluppsättningen för nyhetsbrev.
+
+>[!IMPORTANT]
+>
+>Se till att du väljer namnutrymmet med högst prioritet när du skapar en kampanj eller resa, så att du kan vara säker på att kanalnivåappningen fungerar som den ska. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 ## Skapa en regel för kanalbegränsning
 
@@ -33,7 +37,7 @@ Så här skapar du en kanalregeluppsättning:
 
 >[!NOTE]
 >
->Du kan skapa upp till 10 aktiva lokala regeluppsättningar för kanaldomänen och för resedomänen.
+>Du kan skapa upp till 10 aktiva lokala regeluppsättningar för varje kanaldomän och för resedomänen.
 
 1. Öppna listan **[!UICONTROL Rules sets]** och klicka sedan på **[!UICONTROL Create rule set]**.
 
@@ -41,7 +45,7 @@ Så här skapar du en kanalregeluppsättning:
 
 1. Välj den regeluppsättning där du vill lägga till begränsningsregeln eller skapa en ny regeluppsättning:
 
-   * Om du vill använda en befintlig regeluppsättning markerar du den i listan. Det går bara att lägga till regler för chhanel-appning i regeluppsättningar med domänen &quot;channel&quot;. Du kan kontrollera den här informationen i regeluppsättningslistorna i kolumnen **[!UICONTROL Domain]**.
+   * Om du vill använda en befintlig regeluppsättning markerar du den i listan. Regler för kanalbegränsning kan bara läggas till i regeluppsättningar med domänen &quot;channel&quot;. Du kan kontrollera den här informationen i regeluppsättningslistorna i kolumnen **[!UICONTROL Domain]**.
 
      ![](assets/journey-capping-list.png)
 
@@ -55,25 +59,33 @@ Så här skapar du en kanalregeluppsättning:
 
    ![](assets/rule-set-channels.png)
 
-1. I listrutan **[!UICONTROL Duration]** väljer du om du vill att capping ska användas varje månad, vecka eller dag. Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
+1. I fältet **[!UICONTROL Capping count]** anger du begränsningen för din regel, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad, vecka eller dag eller timme enligt ditt val i följande fält.
+
+1. I listrutan **[!UICONTROL Reset capping frequency]** väljer du om du vill att appningen ska användas varje timme, dag, vecka eller månad. Frekvensgränsen baseras på den valda kalenderperioden. Den återställs i början av motsvarande tidsram.
 
    Räknaren för varje period har följande förfallodatum:
 
-   * **[!UICONTROL Monthly]**: Frekvensgränsen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
+   * **[!UICONTROL Hourly]** - Frekvensgränsen gäller för det valda antalet timmar (minst 3 timmar). Räknaren återställs automatiskt i början av varje tidsfönster. För en 3- timmars frekvensbegränsning återställs den var 3: e timme, vilket sammanfaller med slutet av en UTC-timme.
 
-   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:&lbrace;59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+     >[!AVAILABILITY]
+     >
+     >Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta kundtjänst för att aktivera det.
 
-   * **[!UICONTROL Daily]**: Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställs till 0 i början av nästa dag.
+   * **[!UICONTROL Daily]** - Den dagliga frekvensen är giltig för dagen till 23:59:59 UTC och återställs till 0 i början av nästa dag.
+   * **[!UICONTROL Weekly]** - Frekvensgränsen gäller till och med lördag 23:59:59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+   * **[!UICONTROL Monthly]** - Frekvensbegränsningen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
-     >[!CAUTION]
-     > 
-     >Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+   >[!IMPORTANT]
+   >
+   >* För att vara säker på att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
+   >
+   >* Profilräknarens värde uppdateras när kommunikationen har levererats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt). Detta gäller om en mottagare får två kommunikationer nära ihop. Vi föreslår att kommunikationen ska hållas isär med minst två timmar om det är möjligt, så att mottagaren får tillräckligt med tid för att kunna ta emot kommunikationen och räkningsvärdet för att kunna uppdatera den.
 
-   Observera att profilräknarvärdet uppdateras när kommunikationen har skickats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt).
+1. I fältet **[!UICONTROL Every]** kan du upprepa reglerna för frekvensbegränsning för flera timmar, dagar, veckor eller månader, beroende på den angivna varaktigheten. Exempel: använd regeln för frekvensbegränsning i 2 veckor.
 
-   Detta gäller om en mottagare får två kommunikationer nära ihop. Vi föreslår att kommunikationen ska hållas isär med minst två timmar om det är möjligt, så att mottagaren får tillräckligt med tid för att kunna ta emot kommunikationen och räkningsvärdet för att kunna uppdatera den.
+   Se till att du anger ett värde som matchar den valda varaktighetstypen: 3-23 för timme, 1-30 för dag, 1-4 för vecka och 1-3 för månad.
 
-1. Ange begränsningen för din regel, vilket innebär det maximala antalet meddelanden som kan skickas till en enskild användarprofil varje månad, vecka eller dag enligt vad du väljer ovan.
+   Räknaren återställs automatiskt till 0 när ett nytt tidsfönster börjar. För en 2 dagars frekvensbegränsning sker denna återställning varannan dag vid midnatt UTC.
 
 1. Markera kanalen som du vill använda för den här regeln: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]** eller **[!UICONTROL Direct mail]**.
 
@@ -107,9 +119,9 @@ Så här använder du en regeluppsättning i ett meddelande:
 
    <!--Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against business rules.-->
 
-1. Innan du aktiverar din resa eller kampanj måste du schemalägga körningen minst 20 minuter framåt.
+1. Innan du aktiverar din resa eller kampanj måste du schemalägga körningen minst 10 minuter framåt.
 
-   Detta ger tillräckligt med tid för att fylla i räknarvärdena för profilen för affärsregeln som du har valt. Om du aktiverar kampanjen direkt fylls inte regeluppsättningens räknarvärden i mottagarnas profiler och meddelandet räknas inte mot deras regler för frekvensbegränsning för anpassade regeluppsättningar.
+   Detta ger tillräckligt med tid för att fylla i räknarvärdena för profilen för affärsregeln som du har valt. Om du aktiverar kampanjen direkt fylls inte regeluppsättningens räknarvärden i mottagarnas profiler och meddelandet räknas inte mot deras regler för frekvensbegränsning för anpassade regeluppsättningar. Dessutom fungerar inte begränsningen korrekt för resor och kampanjer som aktiveras omedelbart och API-utlösta kampanjer.
 
    ![](assets/rule-set-schedule-campaign.png)
 
@@ -120,6 +132,8 @@ Så här använder du en regeluppsättning i ett meddelande:
 >Flera regler kan gälla för samma kanal, men när den nedre gränsen har nåtts utesluts profilen från nästa leverans.
 
 När du testar frekvensregler rekommenderar vi att du använder en ny [testprofil](../audience/creating-test-profiles.md) eftersom det inte finns något sätt att återställa räknaren förrän nästa period när en profils frekvensgräns har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
+
+<!--add a new section for default priority namespace.-->
 
 <!--
 ## Example: combine several rules {#frequency-rule-example}
@@ -152,4 +166,4 @@ In this scenario, an individual profile:
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

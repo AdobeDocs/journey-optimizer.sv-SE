@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 37eed59b64a8bfad0b216c279b15612b6ac57897
+source-git-commit: 43fe7ca22a7685944b2b11ca3d1872641d1f4694
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
 >[!NOTE]
 >
->Du kan skapa upp till 10 aktiva lokala regeluppsättningar för kanaldomänen och för resedomänen.
+>Du kan skapa upp till 10 aktiva lokala regeluppsättningar för varje kanaldomän och för resedomänen.
 
 1. Öppna listan **[!UICONTROL Rules sets]** och klicka sedan på **[!UICONTROL Create rule set]**.
 
@@ -127,7 +127,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
    >[!NOTE]
    >
-   >Det kan ta upp till 20 minuter för en regel eller regeluppsättning att aktiveras fullständigt. Du behöver inte ändra meddelanden eller publicera om resor för att en regel ska börja gälla.
+   >Det kan ta upp till 10 minuter för en regel eller regeluppsättning att aktiveras fullständigt. Du behöver inte ändra meddelanden eller publicera om resor för att en regel ska börja gälla.
 
 <!--Currently, once a rule set is activated, no more rules can be added to that rule set.-->
 
@@ -164,4 +164,4 @@ Dess status ändras till **[!UICONTROL Inactive]** och regeln gäller inte för 
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

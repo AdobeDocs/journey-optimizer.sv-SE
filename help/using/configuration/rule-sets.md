@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 37eed59b64a8bfad0b216c279b15612b6ac57897
+source-git-commit: 43fe7ca22a7685944b2b11ca3d1872641d1f4694
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
 >[!NOTE]
 >
->Du kan skapa upp till 10 aktiva lokala regeluppsättningar för kanaldomänen och för resedomänen.
+>Du kan skapa upp till 10 aktiva lokala regeluppsättningar för varje kanaldomän och för resedomänen.
 
 1. Öppna listan **[!UICONTROL Rules sets]** och klicka sedan på **[!UICONTROL Create rule set]**.
 
@@ -136,13 +136,13 @@ Vilka parametrar som är tillgängliga för regeln beror på vilken regeluppsät
 
    * **[!UICONTROL Monthly]**: Frekvensgränsen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
-   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:&lbrace;59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
+   * **[!UICONTROL Weekly]**: Frekvensgränsen gäller till lördag :59:{59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
 
    * **[!UICONTROL Daily]**: Den dagliga frekvensen gäller för dagen till 23:59:59 UTC och återställs till 0 i början av nästa dag.
 
      >[!CAUTION]
      > 
-     >Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+     >Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
    Observera att profilräknarvärdet uppdateras när kommunikationen har skickats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt).
 
@@ -197,7 +197,7 @@ Du måste också aktivera regeluppsättningen för att kunna komma åt den i kam
 
 >[!NOTE]
 >
->Det kan ta upp till 20 minuter för en regel eller regeluppsättning att aktiveras fullständigt. Du behöver inte ändra meddelanden eller publicera om resor för att en regel ska börja gälla.
+>Det kan ta upp till 10 minuter för en regel eller regeluppsättning att aktiveras fullständigt. Du behöver inte ändra meddelanden eller publicera om resor för att en regel ska börja gälla.
 
 <!--Currently, once a rule set is activated, no more rules can be added to that rule set.-->
 
@@ -253,7 +253,7 @@ Du kan tillämpa en regeluppsättning på ett meddelande eller en resa, beroende
 
    <!--Messages where the category selected is **[!UICONTROL Transactional]** will not be evaluated against business rules.-->
 
-1. Innan du aktiverar kampanjen måste du schemalägga att den ska köras minst 20 minuter framåt.
+1. Innan du aktiverar kampanjen måste du schemalägga att den ska köras minst 10 minuter framåt.
 
    Detta ger tillräckligt med tid för att fylla i räknarvärdena för profilen för affärsregeln som du har valt. Om du aktiverar kampanjen direkt fylls inte regeluppsättningens räknarvärden i mottagarnas profiler och meddelandet räknas inte mot deras regler för frekvensbegränsning för anpassade regeluppsättningar.
 
@@ -306,10 +306,10 @@ Om du vill tillämpa en begränsningsregel på en resa får du åtkomst till res
 
 >[!IMPORTANT]
 >
->Om en resa aktiveras omedelbart kan det ta upp till 20 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 20 minuter framåt för att förhindra den här möjligheten.
+>Om en resa aktiveras omedelbart kan det ta upp till 10 minuter för systemet att börja inaktivera kunder. Du kan schemalägga din resa så att den börjar minst 10 minuter framåt för att förhindra den här möjligheten.
 
 +++
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

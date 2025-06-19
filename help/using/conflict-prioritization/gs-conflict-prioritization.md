@@ -4,7 +4,7 @@ description: Lär dig utnyttja Journey Optimizer verktyg för konfliktlösning o
 role: User
 level: Beginner
 exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
-source-git-commit: 9d84a319497e833aa77416479dd019bab59aab55
+source-git-commit: 43fe7ca22a7685944b2b11ca3d1872641d1f4694
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Med regeluppsättningar kan du **gruppera flera regler i regeluppsättningar** o
 
 * **Fördröjning för uppdatering av profilräknare**
 
-  Det kan ta upp till 20 minuter efter att en kund har registrerat en resa för att uppdatera profilräknarvärdet.
+  Det kan ta upp till 10 minuter efter att en kund har registrerat en resa för att uppdatera profilräknarvärdet.
 
   Om en profil går in i två resor inom ett kort fönster kanske den andra resan inte korrekt känner igen att frekvensgränsen redan har nåtts, vilket kan göra det möjligt för profilen att gå in på båda resorna.
 
