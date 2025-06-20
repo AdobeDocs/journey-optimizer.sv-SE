@@ -136,7 +136,7 @@ När en datauppsättning har aktiverats för sökpersonalisering med ett API-anr
 
    ![](assets/aep-data-dataset.png)
 
-+++
+   +++
 
 1. Anpassa syntaxen efter dina behov. I det här exemplet vill vi hämta data om passagerarnas flygningar. Syntaxen är följande:
 
@@ -167,7 +167,7 @@ När en datauppsättning har aktiverats för sökpersonalisering med ett API-anr
 
      ![](assets/aep-data-field.png)
 
-+++
+     +++
 
    I det här exemplet vill vi använda information om passagerarnas tid och port för ombordstigning. Därför lägger vi till följande två rader:
 
