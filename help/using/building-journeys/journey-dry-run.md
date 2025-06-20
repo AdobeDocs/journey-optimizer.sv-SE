@@ -9,9 +9,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 8f3d619adfb7b2f3dd876da7a3a6eba1fda6dd6b
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -118,17 +118,19 @@ Klicka på knappen **Stäng** för att avsluta testet och klicka sedan på **Til
 
 ## Skyddsritningar och begränsningar {#journey-dry-run-limitations}
 
-* Körningsläget Torr är inte tillgängligt för resor som innehåller reaktionshändelser.
-* Profiler i körningsläget Torr räknas mot profiler som kan användas.
-* Torra resor påverkar inte affärsreglerna.
+* Körningsläget Torr är inte tillgängligt för resor som innehåller reaktionshändelser
+* Profiler i torr körningsläge räknas mot profiler som kan användas
+* Resor i torr körning räknas som en del av kvoten för direktfärd
+* Torra resor påverkar inte affärsreglerna
 * Om en tidigare version av en resa är **Live** när en ny version skapas tillåts inte aktivering av körningen av Dry för den nya versionen.
 * Körning av körning av resedagring genererar stepEvents. Dessa stepEvents har en särskild flagga och ett körnings-ID för torr:
    * `_experience.journeyOrchestration.stepEvents.inDryRun` returnerar `true` om Torr-körningen är aktiverad, i annat fall `false`
    * `_experience.journeyOrchestration.stepEvents.dryRunID` returnerar ID:t för en instans med torr körning
+
 * Under torra körningar utförs resan med följande särdrag:
 
-   * **Kanalåtgärd** - noder som e-post, SMS eller push-meddelanden körs inte.
-   * **Anpassade åtgärder** inaktiveras under körning av Dry och deras svar anges till null.
+   * **Kanalåtgärd**-noder som e-post, SMS eller push-meddelanden körs inte
+   * **Anpassade åtgärder** inaktiveras under körning och deras svar anges till null
    * **Väntenoderna** ignoreras under körning av torr nod.
      <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
-   * **Datakällor**, inklusive externa datakällor, körs som standard.
+   * **Datakällor**, inklusive externa datakällor, körs som standard
