@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-source-git-commit: 47ff62f7dee5974afbffdd38dfe4a3f967781e93
+source-git-commit: 97a791329f35ba64a1dca9aef7802e0f4103dbe5
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,21 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 * **Kanaler som stöds**: För närvarande är den här funktionen bara tillgänglig för e-post, SMS och direktreklam.
 * **Dataanvändningsetiketter och -tvång** används inte för närvarande för datauppsättningar som har aktiverats för sökning.
 * **Fragment**: Det går inte att placera datauppslagspersonalisering inom uttryck eller visuella fragment just nu.
+
+### Beslut {#decisioning}
+
+Möjligheten att utnyttja [!DNL Adobe Experience Platform] datauppsättningar i rankningsformler och regler för Experience Decision kommer snart.
+
+Under tiden kan du läsa de aktuella garantierna som beskrivs nedan:
+
+* En beslutspolicy är begränsad till tre datauppsättningar.
+* En beslutsregel kan använda 3 datauppsättningar,
+* En rankningsformel kan använda 3 datauppsättningar,
+* En beslutspolicy är begränsad till 1 000 postfrågor.
+
+>[!NOTE]
+>
+>Kontakta din kontorepresentant om du vill ha tillgång till den här funktionen
 
 ## Aktivera en datauppsättning för datasökning {#enable}
 
@@ -117,11 +132,11 @@ När en datauppsättning har aktiverats för sökpersonalisering med ett API-anr
 
    +++Var hämtar du ett datauppsättnings-ID?
 
-   Datauppsättnings-ID kan hämtas i Adobe Experience Platform användargränssnitt. Lär dig hur du arbetar med datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#view-datasets){target="_blank"}.
+   Datauppsättnings-ID kan hämtas i Adobe Experience Platform användargränssnitt. Lär dig hur du arbetar med datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#view-datasets){target="_blank"}.
 
    ![](assets/aep-data-dataset.png)
 
-   +++
++++
 
 1. Anpassa syntaxen efter dina behov. I det här exemplet vill vi hämta data om passagerarnas flygningar. Syntaxen är följande:
 
@@ -148,11 +163,11 @@ När en datauppsättning har aktiverats för sökpersonalisering med ett API-anr
 
      +++Var ska ett fält-ID hämtas?
 
-     Fält-ID:n kan hämtas när en datauppsättning förhandsgranskas i Adobe Experience Platform användargränssnitt. Lär dig hur du förhandsgranskar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}.
+     Fält-ID:n kan hämtas när en datauppsättning förhandsgranskas i Adobe Experience Platform användargränssnitt. Lär dig hur du förhandsgranskar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}.
 
      ![](assets/aep-data-field.png)
 
-     +++
++++
 
    I det här exemplet vill vi använda information om passagerarnas tid och port för ombordstigning. Därför lägger vi till följande två rader:
 
