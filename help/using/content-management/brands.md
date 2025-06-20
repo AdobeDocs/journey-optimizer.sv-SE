@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: 0f3191a3d7c5c78e1d8fac2e587e26522f02f8f5
+source-git-commit: f9266d01610b92d8a55be8263da6bb808b3cc8ff
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1389'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,8 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Den här funktionen är en privat betaversion. Den kommer att finnas tillgänglig successivt för alla kunder i framtida versioner.
+>Den här funktionen är tillgänglig som en privat beta. Den kommer att finnas tillgänglig successivt för alla kunder i framtida versioner.
+>
 >Du måste godkänna [användaravtalet](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} innan du kan använda AI-assistenten i Adobe Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
 Varumärkesriktlinjerna är en detaljerad uppsättning regler och standarder som bygger upp ett varumärkes visuella och verbala identitet. De fungerar som referenser för att upprätthålla en enhetlig varumärkesrepresentation på alla marknadsförings- och kommunikationsplattformar.
@@ -46,6 +47,8 @@ I [!DNL Journey Optimizer] har du nu möjlighet att ange och ordna din varumärk
 För att få åtkomst till menyn **[!UICONTROL Brands]** i [!DNL Adobe Journey Optimizer] måste användarna beviljas behörigheterna **[!UICONTROL Manage brand kit]** eller **[!UICONTROL Enable AI assistant]**. [Läs mer](../administration/permissions.md)
 
 +++  Lär dig hur du tilldelar varumärkesrelaterade behörigheter
+
+Så här tilldelar du behörigheter för varumärken:
 
 1. Gå till fliken **Roller** i produkten **Behörigheter** och välj önskad **roll**.
 
@@ -65,7 +68,7 @@ För att få åtkomst till menyn **[!UICONTROL Brands]** i [!DNL Adobe Journey O
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 +++
 
