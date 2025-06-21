@@ -49,7 +49,7 @@ Med Enterprise-licens har man full tillgång till Adobe Express Web Editor där 
 
 ![](assets/express-licence.png)
 
-Mer information om tillgängliga användningsexempel för användare med en Enterprise-licens för Adobe Express finns i [Adobe Express webbdokumentation](https://helpx.adobe.com/express/web.html).
+Mer information om tillgängliga användningsexempel för användare med en Enterprise-licens för Adobe Express finns i [Adobe Express webbdokumentation](https://helpx.adobe.com/se/express/web.html).
 
 ## Använda Adobe Express utan Enterprise License  {#edit}
 
