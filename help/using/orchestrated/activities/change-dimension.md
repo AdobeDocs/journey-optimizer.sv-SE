@@ -30,7 +30,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -42,7 +42,7 @@ Som marknadsförare kan ni förfina målgruppsanpassningen genom att byta från 
 
 Använd aktiviteten **[!UICONTROL Change dimension]** om du vill göra det. Det gör att ni kan ändra målinriktningsdimensionen under den samordnade kampanjen, baserat på datamodellens struktur och indatadimensionen.
 
-Du kan till exempel ändra målinriktningsdimensionen från ****[!UICONTROL Profile]** till ****[!UICONTROL Contracts]** för att skicka meddelanden direkt till de avtalsägare som är kopplade till den valda målgruppen.
+Du kan till exempel ändra målinriktningsdimensionen från **&#x200B;**&#x200B;[!UICONTROL Profile] **&#x200B; till &#x200B;**&#x200B;**[!UICONTROL Contracts]** för att skicka meddelanden direkt till de avtalsägare som är kopplade till den valda målgruppen.
 
 <!--
 >[!IMPORTANT]
@@ -51,13 +51,13 @@ Du kan till exempel ändra målinriktningsdimensionen från ****[!UICONTROL Prof
 
 ## Konfigurera aktiviteten Ändra dimension {#configure}
 
-Följ de här stegen för att konfigurera aktiviteten ****[!UICONTROL Change dimension]**:
+Följ de här stegen för att konfigurera aktiviteten **&#x200B;**&#x200B;[!UICONTROL Change dimension]**:
 
-1. Lägg till en ****[!UICONTROL Change dimension]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **&#x200B;**&#x200B;[!UICONTROL Change dimension]**-aktivitet i din samordnade kampanj.
 
    ![](../assets/change-dimension.png)
 
-1. Definiera ****[!UICONTROL New target dimension]**. Vid dimensionsändring sparas alla poster.
+1. Definiera **&#x200B;**&#x200B;[!UICONTROL New target dimension]**. Vid dimensionsändring sparas alla poster.
 
 1. Kör den orkestrerade kampanjen för att visa resultatet. Jämför data i tabellerna före och efter ändringsdimensionsaktiviteten och jämför strukturen i de samordnade kampanjtabellerna.
 
@@ -65,8 +65,8 @@ Följ de här stegen för att konfigurera aktiviteten ****[!UICONTROL Change dim
 
 Det här användningsexemplet innebär att ett SMS skickas till profiler som har skapat en önskelista den senaste månaden.
 
-Börja med en **[!UICONTROL Build audience]**-aktivitet som använder måldimensionen ****[!UICONTROL Wishlist]** för att välja alla relevanta önskelistor.
+Börja med en **[!UICONTROL Build audience]**-aktivitet som använder måldimensionen **&#x200B;**&#x200B;[!UICONTROL Wishlist]** för att välja alla relevanta önskelistor.
 
-Infoga sedan en **[!UICONTROL Change dimension]**-aktivitet för att växla måldimensionen från ****[!UICONTROL Wishlist]** till ****[!UICONTROL Recipient]**. Detta gör att den samordnade kampanjen kan skicka SMS:et till de profiler som är associerade med dessa önskelistor.
+Infoga sedan en **[!UICONTROL Change dimension]**-aktivitet för att växla måldimensionen från **&#x200B;**&#x200B;[!UICONTROL Wishlist] **&#x200B; till &#x200B;**&#x200B;**[!UICONTROL Recipient]**. Detta gör att den samordnade kampanjen kan skicka SMS:et till de profiler som är associerade med dessa önskelistor.
 
 ![](../assets/change-dimension-example.png)
