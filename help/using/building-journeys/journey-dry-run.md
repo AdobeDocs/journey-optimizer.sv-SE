@@ -9,9 +9,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: 8f3d619adfb7b2f3dd876da7a3a6eba1fda6dd6b
+source-git-commit: bb3379fa71aaeb00d0833c67547de70f4e9c3fb1
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,13 @@ Journey Dry-körningen ger
 1. **Målgruppsinsikter**: Reseutövare kan förutsäga målgruppernas nåbarhet på olika kundnoder, inklusive avanmälan, undantag och andra villkor.
 1. **Återkoppling i realtid**: Mätvärden visas direkt på arbetsytan i realtid, på liknande sätt som live-rapportering, vilket gör det möjligt för resenärerna att förfina sin resedesign.
 
+Under torra körningar utförs resan med följande särdrag:
+
+* **Kanalåtgärd**-noder som e-post, SMS eller push-meddelanden körs inte
+* **Anpassade åtgärder** inaktiveras under körning och deras svar anges till null
+* **Väntenoderna** ignoreras under körning av torr nod.
+  <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
+* **Datakällor**, inklusive externa datakällor, körs som standard
 
 >[!CAUTION]
 >
@@ -84,15 +91,15 @@ Mätvärden visas direkt på arbetsytan.
 
 ![Övervaka körningen i torr riktning](assets/dry-run-metrics.png)
 
-För varje aktivitet kan du kontrollera:
+För varje aktivitet kan du i aktivitetsrutan kontrollera:
 
-* **[!UICONTROL Entered]**: Totalt antal personer som har gått in i den här aktiviteten.
+* **[!UICONTROL Entered]**: Totalt antal personer som har gått in i den här aktiviteten. För **Åtgärd**-aktiviteter, eftersom de inte körs i körningsläget Torr, indikerar det här måttet att profiler passerar igenom.
 * **[!UICONTROL Exited (met exit criteria)]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
 * **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som avbrutit resan medan den pausades på grund av en konfiguration för reseadministratörer. Det här måttet är alltid lika med noll för resor i körläge med torr körning.
 * **[!UICONTROL Error]**: Totalt antal personer som hade ett fel i den aktiviteten.
 
 
-På kundresan kan du kontrollera:
+På färdsnivån längst upp till vänster på arbetsytan kan du kontrollera:
 
 * Totalt antal **angivna profiler**
 * Totalt antal **avslutade profiler**
@@ -127,10 +134,4 @@ Klicka på knappen **Stäng** för att avsluta testet och klicka sedan på **Til
    * `_experience.journeyOrchestration.stepEvents.inDryRun` returnerar `true` om Torr-körningen är aktiverad, i annat fall `false`
    * `_experience.journeyOrchestration.stepEvents.dryRunID` returnerar ID:t för en instans med torr körning
 
-* Under torra körningar utförs resan med följande särdrag:
-
-   * **Kanalåtgärd**-noder som e-post, SMS eller push-meddelanden körs inte
-   * **Anpassade åtgärder** inaktiveras under körning och deras svar anges till null
-   * **Väntenoderna** ignoreras under körning av torr nod.
-     <!--You can override the wait block timeouts, then if you have wait blocks duration longer than allowed dry run journey duration, then that branch will not execute completely.-->
-   * **Datakällor**, inklusive externa datakällor, körs som standard
+* Vid analys av mått för reserapportering med hjälp av tjänsten Adobe Experience Platform Query, måste händelser som genererats av Dry Run uteslutas. Om du vill göra det anger du flaggan `inDryRun` till `false`.
