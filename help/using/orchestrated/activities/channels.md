@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: 5872e192c849b7a7909f0b50caa1331b15490d79
+source-git-commit: 38b65200435e0b997e79aefbb66549b9168188fd
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -40,7 +40,7 @@ Börja bygga upp er samordnade kampanj med relevanta aktiviteter:
 
 * Innan du infogar en kanalaktivitet måste du definiera målgruppen. Målgruppen är huvudmålet för leveransen: de profiler som tar emot meddelandena.
 
-* Om du vill skicka en återkommande leverans startar du din samordnade kampanj med en **schemaläggaraktivitet**. Du kan också använda en **schemaläggaraktivitet** för engångsleveranser för att ange kontaktdatum för den leveransen. Kontaktdatumet kan även anges i leveransinställningarna.
+* Om du vill skicka en återkommande leverans startar du din samordnade kampanj med en **[!UICONTROL Scheduler]**-aktivitet. Du kan också använda en **[!UICONTROL Scheduler]**-aktivitet för engångsleveranser för att ange kontaktdatum för den leveransen. Kontaktdatumet kan även anges i leveransinställningarna.
 
 ## Konfigurera en kanalaktivitet {#create-a-delivery-in-a-workflow}
 
@@ -78,23 +78,23 @@ Följ stegen nedan för att konfigurera en leverans i samband med en iscensatt k
    * En **enskild leverans** är en engångsleverans, som bara skickas en gång, till exempel ett svartvitt e-postmeddelande på fredag.
    * En **återkommande leverans** skickas flera gånger baserat på dess körningsfrekvens. Varje gång den samordnade kampanjen körs beräknas målgruppen om och leveransen skickas till den uppdaterade målgruppen med det uppdaterade innehållet. Det här kan till exempel vara ett veckonyhetsbrev eller ett återkommande födelsedagskalender.
 
-1. Välj en **leveransmall**. Mallar är förkonfigurerade leveransinställningar som är specifika för en kanal. En inbyggd mall är tillgänglig för varje kanal och förfylld som standard.
+1. Välj en leverans **[!UICONTROL Template]**. Mallar är förkonfigurerade leveransinställningar som är specifika för en kanal. En inbyggd mall är tillgänglig för varje kanal och förfylld som standard.
 
    ![](../assets/delivery-activity-in-wf.png)
 
-   Du kan välja mallen i det vänstra fönstret för kanalaktivitetskonfigurationen. Om den tidigare valda publiken inte är kompatibel med kanalen kan du inte välja en mall. Du löser detta genom att uppdatera aktiviteten **Bygg målgrupp** och välja en målgrupp med rätt målmappning.
+   Du kan välja mallen i det vänstra fönstret för kanalaktivitetskonfigurationen. Om den tidigare valda publiken inte är kompatibel med kanalen kan du inte välja en mall. Du löser det här genom att uppdatera aktiviteten **[!UICONTROL Build audience]** och välja en målgrupp med rätt målmappning.
 
-1. Klicka på **Skapa leverans**. Du kan sedan definiera meddelandeinställningar och innehåll på samma sätt som du skapar en fristående leverans. Du kan också testa och simulera innehållet.
+1. Klicka på **[!UICONTROL Create delivery]**. Du kan sedan definiera meddelandeinställningar och innehåll på samma sätt som du skapar en fristående leverans. Du kan också testa och simulera innehållet.
 
-1. Gå tillbaka till arbetsflödet. Om du vill fortsätta med arbetsflödet växlar du till alternativet **Generera en utgående övergång** för att lägga till en övergång efter kanalaktiviteten.
+1. Gå tillbaka till arbetsflödet. Om du vill fortsätta med arbetsflödet växlar du **[!UICONTROL Generate an outbound transition]**-alternativet för att lägga till en övergång efter kanalaktiviteten.
 
-1. Klicka på **Start** för att starta din samordnade kampanj.
+1. Klicka på **[!UICONTROL Start]** för att starta din samordnade kampanj.
 
    Som standard utlöses meddelandeförberedelsefasen när en orkestrerad kampanj startas, utan att meddelandet skickas omedelbart.
 
-1. Öppna din kanalaktivitet för att bekräfta sändningen från knappen **Granska och skicka**.
+1. Öppna din kanalaktivitet för att bekräfta sändningen från knappen **[!UICONTROL Review & send]**.
 
-1. Klicka på **Skicka** på kontrollpanelen för leverans.
+1. Klicka på **[!UICONTROL Send]** på kontrollpanelen för leverans.
 
 ## Exempel {#cross-channel-workflow-sample}
 
