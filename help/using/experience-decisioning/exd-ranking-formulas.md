@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 7e378cbda6ee2379a8bd795588c328cb14107aa4
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -61,15 +61,19 @@ Följ stegen nedan för att skapa en rankningsformel.
 
 <!--## Select an ELS dataset {#els-dataset}
 
-To leverage data from an AEP dataset, you can select it in the **[!UICONTROL ELS settings]** section.
+Journey Optimizer allows you to leverage data from Adobe Experience Platform. [Learn more](../data/aep-data-perso.md)
 
-1. Select an ELS dataset from the list.
+To leverage data from an AEP dataset, follow the steps below.
 
-1. Select a decision attribute. This action is mandatory.
+1. From the **[!UICONTROL ELS settings]** section, select an ELS dataset from the list.
 
-![](assets/formula-els-settings.png){width="80%"}
+1. Select a decision attribute.
 
--->
+    >[!NOTE]
+    >
+    >This action is mandatory.
+
+![](assets/formula-els-settings.png){width="80%"-->
 
 ## Definiera villkor med formelverktyget {#ranking-select-criteria}
 
@@ -126,7 +130,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >

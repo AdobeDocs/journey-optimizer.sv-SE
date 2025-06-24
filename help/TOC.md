@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 7e378cbda6ee2379a8bd795588c328cb14107aa4
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2462'
 ht-degree: 20%
 
 ---
@@ -372,7 +372,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Lägg till personalisering](using/personalization/personalization-build-expressions.md)
       + [Personalization syntax](using/personalization/personalization-syntax.md)
       + [Återanvänd uttrycksfragment](using/personalization/use-expression-fragments.md)
-      + [Använd Adobe Experience Platform-data för personalisering (Beta)](using/personalization/lookup-aep-data.md)
+      + [Använd Adobe Experience Platform-data för personalisering (Beta)](using/personalization/aep-data-perso.md)
       + Hjälpfunktionslista {#functions}
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
          + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
@@ -553,6 +553,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Skapa rangordningsmetoder](using/experience-decisioning/ranking.md)
          + [Använda AI-formelverktyget](using/experience-decisioning/exd-ranking-formulas.md)
          + [Utnyttja kontextdata](using/experience-decisioning/context-data.md)
+         + [Använd Adobe Experience Platform för beslut](using/experience-decisioning/aep-data-exd.md)
       + [Skapa urvalsstrategier](using/experience-decisioning/selection-strategies.md)
       + [Skapa beslutsprofiler](using/experience-decisioning/create-decision.md)
       + [Rapport om beslut](using/experience-decisioning/cja-reporting.md)
@@ -705,12 +706,13 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
 + Datahantering {#data-management}
    + [Kom igång med datahantering](using/data/gs-data.md)
    + [Arbeta med scheman](using/data/get-started-schemas.md)
+   + [Använd Adobe Experience Platform-data i Journey Optimizer](using/data/lookup-aep-data.md)
    + Journey Optimizer dataset {#datasets}
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)

@@ -9,7 +9,7 @@ role: Data Engineer
 level: Beginner
 keywords: uttryck, redigerare, start, personalisering
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 5b8d26b4fbc323308b5a49672f9d30298756ccf9
+source-git-commit: 7e378cbda6ee2379a8bd795588c328cb14107aa4
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Personalization baseras på profildata som hanteras av schemat **XDM Individual 
 
 Du kan också utnyttja **beräknade attribut** för att anpassa ditt innehåll. Beräknade attribut gör att du kan sammanfatta enskilda beteendehändelser i beräknade profilattribut som är tillgängliga på Adobe Experience Platform. [Lär dig arbeta med beräknade attribut](../audience/computed-attributes.md)
 
-Dessutom kan du i [!DNL Journey Optimizer] utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att anpassa ditt innehåll. För att göra detta måste datauppsättningar som behövs för sökpersonalisering först aktiveras via ett API-anrop. När du är klar kan du använda deras data för att anpassa ditt innehåll till Journey Optimizer. Den här funktionen är för närvarande tillgänglig som betaversion. [Läs mer](../personalization/lookup-aep-data.md)
+Dessutom kan du i [!DNL Journey Optimizer] utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att anpassa ditt innehåll. För att göra detta måste datauppsättningar som behövs för sökpersonalisering först aktiveras via ett API-anrop. När du är klar kan du använda deras data för att anpassa ditt innehåll till Journey Optimizer. Den här funktionen är för närvarande tillgänglig som betaversion. [Läs mer](../personalization/aep-data-perso.md)
 
 ## Lär dig mer och experimentera med personalisering {#playground}
 
@@ -51,7 +51,7 @@ Den här spelmiljön innehåller en simulerad miljö för att skriva och testa p
 
 ![personalisering, spelplattform](assets/playground.png)
 
-➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ajo-personalization){target="_blank"}
+➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
 
 ## Låt oss dyka djupare
 
@@ -97,7 +97,7 @@ Nu när du har en förståelse för personalisering i **[!DNL Journey Optimizer]
 
 Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa för att personalisera ett meddelande.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448135?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/334165?quality=12)
 
 Lär dig hur du lägger till profilbaserad personalisering i ett meddelande och hur du använder målgruppsmedlemskap som en förutsättning för ett personaliseringsblock.
 
