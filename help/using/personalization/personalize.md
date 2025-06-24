@@ -51,7 +51,7 @@ Den här spelmiljön innehåller en simulerad miljö för att skriva och testa p
 
 ![personalisering, spelplattform](assets/playground.png)
 
-➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
+➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ajo-personalization){target="_blank"}
 
 ## Låt oss dyka djupare
 
