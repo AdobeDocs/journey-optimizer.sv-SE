@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: ebefeb59a19e831ec7f86cee690a35fe71e14554
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 2%
+source-wordcount: '502'
+ht-degree: 1%
 
 ---
 
@@ -39,6 +39,10 @@ Listan med beslutsregler finns på menyn **[!UICONTROL Strategy setup]**.
 Så här skapar du en beslutsregel:
 
 1. Navigera till **[!UICONTROL Strategy setup]** / **[!UICONTROL Decision rules]** och klicka sedan på knappen **[!UICONTROL Create rule]**.
+
+   >[!NOTE]
+   >
+   >Ni kan också använda data från Adobe Experience Platform för att berika er beslutslogik med externa data. Detta är särskilt användbart för attribut som ändras ofta, t.ex. produkttillgänglighet eller realtidspriser. Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion. Kontakta din kontorepresentant om du vill ha tillgång till tjänsten. [Lär dig använda Adobe Experience Platform-data för beslut](../experience-decisioning/aep-data-exd.md)
 
 1. Skärmen för att skapa beslutsregler öppnas. Ge regeln ett namn och ange en beskrivning.
 
