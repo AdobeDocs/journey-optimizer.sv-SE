@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7b42d317-cd01-4c6a-b61e-5b03e5a8ff3c
-source-git-commit: e1cb8bc75a5d7d7e43c641ffe7e164bbc1ac1086
+source-git-commit: f8fa52c89659918ef3837f88ddb03c219239f4ee
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/><b>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md)</b> | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena&lbrace;1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/><b>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md)</b> | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena{1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -48,13 +48,11 @@ Varje orkestrerad kampanj i listan visar information som kampanjens aktuella [st
 
 Dessutom finns det ett sökfält och filter som gör det enklare att söka i listan. Du kan t.ex. filtrera de orkestrerade kampanjerna så att endast de som är kopplade till en viss kanal eller tagg visas, eller de som har skapats under ett visst datumintervall.
 
-
 ![Bilden som visar knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) i kampanjinventeringen gör att du kan utföra olika åtgärder som beskrivs nedan.
 
 ![bilden av kampanjlagret](assets/inventory-actions.png)
 
-* **[!UICONTROL View all time report]** -
-* **[!UICONTROL View last 24 hours report]** -
+* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Få tillgång till rapporter för att mäta och visualisera effekten och resultatet av dina samordnade kampanjer. [Läs mer om rapportering av samordnade kampanjer](../orchestrated/reporting-campaigns.md)
 * **[!UICONTROL Edit tags]** - Redigera de taggar som är associerade med kampanjen.
 * **[!UICONTROL Duplicate]** - I vissa fall kan du behöva duplicera en orchestrerad kampanj, till exempel för att köra en kampanj som har stoppats eller för att ändra körningsfrekvensen för en schemalagd kampanj.
 * **[!UICONTROL Delete]** - Ta bort kampanjen. Den här åtgärden är endast tillgänglig för **[!UICONTROL Draft]** kampanjer.
