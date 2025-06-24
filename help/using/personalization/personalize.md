@@ -97,7 +97,7 @@ Nu när du har en förståelse för personalisering i **[!DNL Journey Optimizer]
 
 Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa för att personalisera ett meddelande.
 
->[!VIDEO](https://video.tv.adobe.com/v/334165?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3448135?quality=12&captions=swe)
 
 Lär dig hur du lägger till profilbaserad personalisering i ett meddelande och hur du använder målgruppsmedlemskap som en förutsättning för ett personaliseringsblock.
 
