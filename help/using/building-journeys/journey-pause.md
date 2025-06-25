@@ -8,9 +8,10 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
-source-git-commit: 024356ca30728611d1d32ba72172711e4714b64c
+exl-id: a2892f0a-5407-497c-97af-927de81055ac
+source-git-commit: 624bcbdbbd33d9827b98c953043e692757deb847
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2109'
 ht-degree: 0%
 
 ---
@@ -146,7 +147,11 @@ Observera att uteslutning av profiler för närvarande på resan och för nya pr
 
 ## Skyddsritningar och begränsningar {#journey-pause-guardrails}
 
-* En reseversion kan pausas i högst 14 dagar
+* En reseversion kan pausas i upp till **14 dagar**, men högst **10 miljoner profiler** tillåts på pausade resor i hela organisationen.
+Den här gränsen kontrolleras var 30:e minut. Detta innebär att du tillfälligt kan överskrida tröskelvärdet på 10 miljoner, men när systemet upptäcker det kommer eventuella ytterligare profiler automatiskt att ignoreras.
+
+  Om du återupptar resor för att få tillbaka antalet hållna profiler under gränsen återupptas resan omedelbart, men det kan ta upp till 30 minuter innan profilantalet uppdateras. Under den tiden kan systemet fortfarande betrakta profilerna som pausade.
+
 * Pausade resor räknas in i kvoten för direktfärd
 * Profiler som hade passerat resan men ignorerats under pausen räknas fortfarande som profiler som kan användas
 * Pausade resor beaktas i alla affärsregler, på samma sätt som om de var levande
