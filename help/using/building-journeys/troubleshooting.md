@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 43%
+source-wordcount: '1041'
+ht-degree: 42%
 
 ---
 
@@ -29,7 +29,7 @@ Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och p
 
 ### Fel i aktiviteter {#activity-errors}
 
-Fel visas med en varningssymbol på själva aktiviteterna på arbetsytan. Placera markören på utropstecknet för att visa felmeddelandet. Klicka på aktiviteten för att se raden i felet med en varning. Exempel:
+Fel visas med en varningssymbol på själva aktiviteterna på arbetsytan. Placera markören på utropstecknet för att visa felmeddelandet. Om du väljer aktiviteten visas raden med en varning. Exempel:
 
 * om ett obligatoriskt fält är tomt visas ett fel
 
@@ -64,7 +64,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 

@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: tidszon, egenskaper, resa, villkor, tid, datum, anpassad
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
-source-git-commit: 21b53c72976d1a65651bc142e23ba847dc40a305
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 Du kan definiera en tidszon i [egenskaperna](../building-journeys/journey-properties.md#timezone) för din resa.
 
-Klicka på pennikonen i skärmens övre högra hörn för att få åtkomst till reseegenskaperna.
+Om du vill visa färgegenskaperna väljer du pennikonen i skärmens övre högra hörn.
 
 Den här tidszonen kommer att användas för varje aktivitet i resan som innehåller ett tidselement som:
 

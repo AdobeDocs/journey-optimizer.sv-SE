@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelser, händelse, resa, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-source-git-commit: 9eda5416ba72fae390fc7eca6d9a3c699cedde50
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 26%
+source-wordcount: '1081'
+ht-degree: 23%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 26%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
 >title="Reseevenemang"
->abstract="En händelse är länkad till en person. Relaterar till en persons beteende (till exempel en person som köpte en produkt, besökte en butik, lämnade en webbplats, osv.) eller något som händer kopplat till en person (till exempel en person nådde 10 000 lojalitetspoäng). Journey Optimizer lyssnar på enastående händelser under resor för att samordna de bästa nästa åtgärderna."
+>abstract="En händelse är länkad till en person. Det gäller en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (t.ex. en person som uppnått 10 000 kundpoäng). Journey Optimizer lyssnar på enastående händelser under resor för att samordna de bästa nästa åtgärderna."
 
 Använd händelser för att utlösa resorna individuellt och leverera meddelanden i realtid till varje användare när de går in på resan.
 
@@ -55,7 +55,7 @@ Det finns två typer av händelse-ID för **unitary**-händelser:
 
   >[!CAUTION]
   >
-  >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan bearbeta till 5 000 per sekund för en viss organisation. Det motsvarar Journey Optimizer SLA:er. Se din Journey Optimizer-licens och [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+  >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan bearbeta till 5 000 per sekund för en viss organisation. Det motsvarar Journey Optimizer SLA:er. Se din Journey Optimizer-licens och [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 * **Systemgenererade** händelser: Dessa händelser kräver ett eventID. Det här eventID-fältet genereras automatiskt när händelsen skapas. Systemet som skickar händelsen ska inte generera ett ID utan det ska skicka det som finns i nyttolastförhandsvisningen.
 
@@ -67,7 +67,7 @@ Det finns två typer av händelse-ID för **unitary**-händelser:
 
 Händelser är POST API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Händelsers nyttolast följer XDM-formateringen.
 
-Nyttolasten innehåller information som krävs för att API:er för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för att [!DNL Journey Optimizer] ska kunna arbeta och information som ska användas på resor (i brödtexten, till exempel, mängden övergiven vagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Se [den här länken](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=sv-SE){target="_blank"} för mer information om API:er för strömningsinmatning.
+Nyttolasten innehåller information som krävs för att API:er för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för att [!DNL Journey Optimizer] ska kunna arbeta och information som ska användas på resor (i brödtexten, till exempel, mängden övergiven vagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Se [den här länken](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"} för mer information om API:er för strömningsinmatning.
 
 Efter att ha kommit via API:er för direktuppspelning av inmatning flödar händelserna till en intern tjänst som kallas Pipeline och sedan i Adobe Experience Platform. Om händelseschemat har tjänstflaggan realtidskundprofil aktiverad och ett datauppsättnings-ID som även har flaggan realtidskundprofil flödar det in i tjänsten realtidskundprofil.
 
@@ -83,7 +83,7 @@ Händelser som används i Live-, Draft- eller Closed-resor kan inte tas bort. Om
 
 Lär dig hur du konfigurerar en händelse, anger slutpunkten för direktuppspelning och nyttolasten för en händelse.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431509?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/336253?quality=12)
 
 Förstå tillämpliga användningsexempel för affärshändelser. Lär dig hur du bygger en resa med hjälp av ett affärsevenemang och vilka bästa metoder som ska användas.
 

@@ -9,16 +9,16 @@ role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: 5bdacef2196592776c6b37708b0df0986460ca1f
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '594'
 ht-degree: 1%
 
 ---
 
 # Publicera din resa {#publishing-the-journey}
 
-Om du vill aktivera en resa och tillåta att nya profiler anger den måste du publicera den. Publicering gör resan levande och funktionell. Innan publicering måste du se till att resan är fullständig och giltig, och åtgärda eventuella fel, eftersom en resa inte kan publiceras om den innehåller fel.
+Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att komma in på resan. Innan du publicerar din resa kontrollerar du att den är giltig och att inga fel har uppstått. Du kan inte publicera en resa med fel.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
@@ -26,7 +26,7 @@ Om du vill aktivera en resa och tillåta att nya profiler anger den måste du pu
 
 Steg för att publicera en resa beskrivs nedan:
 
-1. Innan du publicerar din resa bör du kontrollera att den är giltig och felfri. Resor kan inte publiceras om de innehåller några fel.
+1. Innan du publicerar din resa kontrollerar du att den är giltig och att inga fel har uppstått. Du kan inte publicera en resa med fel.
 
    * Lär dig testa din resa på [den här sidan](testing-the-journey.md).
    * Lär dig hur du felsöker dina resefel i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
@@ -35,20 +35,17 @@ Steg för att publicera en resa beskrivs nedan:
 
    >[!NOTE]
    >
-   > Om din resa omfattas av en policy för godkännande måste du begära godkännande innan du kan publicera den. [Läs mer](../test-approve/gs-approval.md)
-
+   > Om din resa omfattas av en policy för godkännande måste du begära godkännande för att publicera din resa. [Läs mer](../test-approve/gs-approval.md)
 
    ![](assets/journeyuc1_18.png)
 
-När resan publiceras är den i **skrivskyddat**-läge. När en resa är skrivskyddad kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning. Om du behöver göra fler ändringar i en publicerad resa skapar du [en ny version](journey-ui.md#journey-versions) av din resa.
+När resan publiceras är den i **skrivskyddat**-läge. I skrivskyddat läge kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning. Om du behöver göra ytterligare ändringar i en publicerad resa skapar du [en ny version](journey-ui.md#journey-versions) av din resa.
 
-När du avbryter en resa stoppas den permanent: alla personer som flyter på resan stoppas permanent och resan avbryts och nya ingångar tillåts. Om du behöver göra om resan måste du duplicera den och publicera den nya resan.
-
+När du avbryter en resa stoppas den permanent. Alla personer som passerar genom resan stoppas permanent, och resan avbryts så att nya deltagare kan komma in. Om du behöver göra om resan duplicerar du den och publicerar den nya resan.
 
 >[!IMPORTANT]
 >
->Om ett beslut om erbjudande som används i ett kundmeddelande ändras måste du avpublicera resan och publicera den på nytt.  På så sätt säkerställs att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
-
+>Om ett beslut om erbjudande som används i ett resemeddelande ändras måste du avpublicera resan och publicera den på nytt. Detta säkerställer att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
 
 ## Reseversioner {#journey-versions}
 
@@ -90,4 +87,4 @@ När du publicerar en ny version av en resa avslutas den tidigare versionen auto
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427940?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)

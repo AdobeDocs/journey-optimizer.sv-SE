@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
-source-git-commit: 29d12b6190f49e7f3f6fd2760e522a5a62c0de87
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1142'
 ht-degree: 2%
 
 ---
@@ -31,12 +31,12 @@ Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING. Det finns två f
 
 Fliken **[!UICONTROL Overview]** visar en instrumentpanel med nyckelvärden för dina resor.
 
-![kontrollpanelen för resan markerar fliken Översikt](assets/journeys-dashboard.png)
+![Reseinstrumentpanelen markerar fliken Översikt](assets/journeys-dashboard.png)
 
 * **Bearbetade profiler**: totalt antal profiler som har bearbetats under de senaste 24 timmarna
 * **Live-resor**: Totalt antal live-resor med trafik under de senaste 24 timmarna. Live-resor omfattar **Unitary-resor** (händelsebaserade) och **Batch-resor** (läs målgrupp).
 * **Felfrekvens**: förhållandet mellan alla felaktiga profiler och det totala antalet profiler som har angetts under de senaste 24 timmarna.
-* **Ignorera frekvens**: förhållandet mellan alla ignorerade profiler och det totala antalet profiler som har angetts under de senaste 24 timmarna. En ignorerad profil representerar en person som inte är berättigad att delta i resan, till exempel på grund av ett felaktigt namnutrymme eller på grund av återinträdesregler.
+* **Ignorera frekvens**: förhållandet mellan alla ignorerade profiler och det totala antalet profiler som har angetts under de senaste 24 timmarna. En ignorerad profil representerar en person som inte är berättigad att delta i resan, till exempel på grund av felaktiga namnområdes- eller återinträdesregler.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Utöver reselistan innehåller [!DNL Journey Optimizer] en kalendervy över dina
 
 >[!AVAILABILITY]
 >
->Kalendervyn är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Använd [det här formuläret](https://forms.cloud.microsoft/r/FC49afuJVi){target=”_blank”} om du vill begära åtkomst.
+>Kalendervyn är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Använd [det här formuläret](https://forms.cloud.microsoft/r/FC49afuJVi){target="_blank"} om du vill begära åtkomst.
 >
 >Den här funktionen är under aktiv utveckling. Vi välkomnar dina indata och begäranden med knappen **[!UICONTROL Beta Feedback]** på den övre menyn.
 
@@ -80,7 +80,7 @@ I reselistan visas alla reseversioner med versionsnumret. När du söker efter e
 
 ## Filtrera dina resor {#journey-filter}
 
-I listan över resor kan du använda olika filter för att förfina listan över resor.
+Använd olika filter i listan över resor för att förfina listan över resor.
 
 ![Skärm som visar ett urval av reseverktfiltrering med två typer av valda resor](assets/filter-journeys.png)
 
@@ -102,7 +102,7 @@ I konfigurationsrutorna Händelse, Datakälla och Åtgärd visar fältet **[!UIC
 
 Vilken typ av resa det är beror på vilka aktiviteter som används under resan. Den kan vara:
 
-* **[!UICONTROL Unitary event]** - Rutiner för enhetshändelser är kopplade till en viss profil. Händelser som rör en persons beteende eller något som händer i samband med en person (en person har till exempel nått 10 000 poäng för lojalitet). [Läs mer](../event/about-events.md).
+* **[!UICONTROL Unitary event]** - Rutiner för enhetshändelser är kopplade till en viss profil. Händelser relaterar till en persons beteende eller något som händer i samband med en person (en person har till exempel nått 10 000 poäng för lojalitet). [Läs mer](../event/about-events.md).
 * **[!UICONTROL Business event]**. Affärsevenemangets resa börjar med en händelse som inte är profilrelaterad. Händelsekonfigurationen utförs av en teknisk användare och kan inte redigeras. [Läs mer](../event/about-events.md).
 * **[!UICONTROL Audience Qualification]** - Publikkvalificeringsresor lyssnar på ingångar och utgångar för profiler i Adobe Experience Platform-målgrupper för att få individer att komma in på eller gå framåt under en resa. [Läs mer](audience-qualification-events.md).
 * **[!UICONTROL Read audience]** - Vid målgruppsresor för läsning kommer alla personer i målgruppen in på resan och får de meddelanden som ingår i din resa.  [Läs mer](read-audience.md).
@@ -117,7 +117,7 @@ Resans status beror på dess livscykel. Den kan vara:
 * **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
 * **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** .
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [&#128279;](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
 * **Live**: resan har publicerats med knappen **Publicera** .
 * **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt.
 

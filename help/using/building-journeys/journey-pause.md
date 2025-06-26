@@ -9,9 +9,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
-source-git-commit: 624bcbdbbd33d9827b98c953043e692757deb847
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Du kan pausa alla **Live**-resor.
 Så här pausar du din resa:
 
 1. Öppna den resa du vill pausa.
-1. Klicka på knappen **...Mer** i den övre högra delen av arbetsytan och välj **Paus**.
+1. Klicka på knappen **...Mer** i den övre högra delen av arbetsytan för resan och välj **Paus**.
 
    ![Pausa resan](assets/pause-journey-button.png)
 
@@ -103,7 +103,7 @@ Pausade resor återupptas automatiskt vid slutet av den maximala pausperioden p�
 Så här återupptar du en pausad resa och börjar lyssna på resehändelser igen:
 
 1. Öppna den resa du vill återuppta.
-1. Klicka på knappen **...Mer** i den övre högra delen av arbetsytan och välj **Återuppta**.
+1. Markera knappen **...Mer** i den övre högra delen av arbetsytan och sedan **Återuppta**.
 
    Resan växlar till statusen **Återupptar**. När resan återupptas börjar nya ingångar inom en minut. Det kan ta en stund att återuppta profiler - profilerna återupptas med en hastighet på 5 000 bit/s.  Eftersom alla profiler måste återupptas för att resan ska bli **Live** igen kan övergången från **Återuppta** till **Live** ta lite tid.
 
@@ -121,7 +121,7 @@ Så här utesluter du till exempel alla franska kunder från en pausad resa:
 
 1. Bläddra till den pausade resa som du vill ändra.
 
-1. Klicka på ikonen **Avsluta villkor och globalt filter** .
+1. Välj ikonen **Avsluta villkor och globalt filter** .
 
    ![Lägg till ett globalt filter för en pausad resa](assets/add-global-filter.png)
 

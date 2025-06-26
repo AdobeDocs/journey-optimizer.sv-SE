@@ -8,9 +8,9 @@ topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 >[!CAUTION]
 >
->När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
+>När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
 
 ## Konfigurera Source med HTTP API Inlet
 
@@ -49,11 +49,11 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
    ![](assets/custom-action-aep-3.png)
 
-1. Välj **Nytt konto** och aktivera autentisering. Klicka på **Anslut till Source**.
+1. Välj **Nytt konto** och aktivera autentisering. Välj **Anslut till Source**.
 
    ![](assets/custom-action-aep-4.png)
 
-1. Klicka på **Nästa** och markera datauppsättningen där du vill skriva data. Klicka på **Nästa** och **Slutför**.
+1. Välj **Nästa** och den datauppsättning där du vill skriva data. Klicka på **Nästa** och **Slutför**.
 
    ![](assets/custom-action-aep-5.png)
 

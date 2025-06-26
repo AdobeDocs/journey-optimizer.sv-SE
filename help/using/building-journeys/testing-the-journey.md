@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: 0f783c57ba946866cb74c2b16e1807ff963cfbaf
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1750'
 ht-degree: 1%
 
 ---
@@ -111,7 +111,7 @@ Om resan innehåller flera händelser använder du listrutan för att välja en 
 
 ![](assets/journeytest4.png)
 
-Med gränssnittet kan du skicka enkla händelseparametrar. Om du vill skicka samlingar eller andra avancerade objekt i händelsen kan du klicka på **[!UICONTROL Code View]** för att se hela koden för nyttolasten och ändra den. Du kan till exempel kopiera och klistra in händelseinformation som har förberetts av en teknisk användare.
+Med gränssnittet kan du skicka enkla händelseparametrar. Om du vill skicka samlingar eller andra avancerade objekt i händelsen kan du markera **[!UICONTROL Code View]** för att se hela koden för nyttolasten och ändra den. Du kan till exempel kopiera och klistra in händelseinformation som har förberetts av en teknisk användare.
 
 ![](assets/journeytest5.png)
 

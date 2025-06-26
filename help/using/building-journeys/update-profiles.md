@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: profil, uppdatering, resa, aktivitet
 exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
-source-git-commit: dc226803d2df198bde9c525f82431161734f53f8
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Använd åtgärdsaktiviteten **[!UICONTROL Update Profile]** för att uppdatera 
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.
 * Uppdateringsbegäran som skickas till Adobe Experience Platform är omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Om en åtgärd till exempel använder&quot;fält 1&quot; som har uppdaterats av en **Uppdatera profil** -åtgärd som har placerats precis tidigare, bör du därför inte förvänta dig att&quot;fält 1&quot; kommer att uppdateras i åtgärden.
 * Aktiviteten **Uppdatera profil** stöder inte XDM-fält som är definierade som uppräkningar eller föreslagna värden.
-* Aktiviteten **[!UICONTROL Update profile]** uppdaterar bara [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv-SE#profile-data-store){target="_blank"}, inte datasjön.
+* Aktiviteten **[!UICONTROL Update profile]** uppdaterar bara [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, inte datasjön.
 
 ## Val av datauppsättning {#dataset-selection}
 
@@ -67,7 +67,7 @@ Aktivitetskonfigurationen **Uppdatera profil** kräver inte heller något identi
 
      ![](assets/profileupdate4.png)
 
-   * Om du vill definiera ett specifikt värde eller utnyttja avancerade funktioner klickar du på **Avancerat läge**.
+   * Om du vill definiera ett specifikt värde eller utnyttja avancerade funktioner väljer du **Avancerat läge**.
 
      ![](assets/profileupdate3.png)
 

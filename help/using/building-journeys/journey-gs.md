@@ -9,10 +9,10 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 4%
+source-wordcount: '765'
+ht-degree: 3%
 
 ---
 
@@ -38,19 +38,19 @@ De viktigaste stegen för att skapa en resa finns på den här sidan. De är smi
 ![steg för att skapa resa: skapa, utforma, testa och publicera](assets/journey-creation-process.png)
 
 
-Bygg kundresor i flera steg och initiera en sekvens av interaktioner, erbjudanden och meddelanden över alla kanaler i realtid. Detta arbetssätt säkerställer att kunderna engagerar sig i rätt ögonblick baserat på deras handlingar och relevanta affärssignaler. Målgrupper kan definieras baserat på beteende, kontextuella data och affärshändelser. Förutsättningar beror på ditt användningsfall och vilken [typ av resa](entry-management.md#types-of-journeys) du skapar.
+Bygg kundresor i flera steg för att initiera en sekvens av interaktioner, erbjudanden och meddelanden över alla kanaler i realtid. Detta arbetssätt säkerställer att kunderna engagerar sig i rätt ögonblick baserat på deras handlingar och relevanta affärssignaler. Målgrupper definieras utifrån beteende, kontextuella data och affärshändelser. Förutsättningar beror på ditt användningsfall och vilken [typ av resa](entry-management.md#types-of-journeys) du skapar.
 
-Innan du börjar bygga din resa ska du kontrollera att relevanta konfigurationssteg är gjorda:
+Innan du börjar bygga din resa måste du se till att de relevanta konfigurationsstegen är slutförda:
 
-* Om du vill utlösa dina resor tills dess när en händelse tas emot, måste du **konfigurera en händelse**. Du definierar den förväntade informationen och hur den ska behandlas. [Läs mer](../event/about-events.md).
+* Om du vill utlösa dina resor individuellt när en händelse tas emot, **konfigurerar du en händelse**. Definiera den förväntade informationen och hur den ska behandlas. [Läs mer](../event/about-events.md).
 
 <!--   ![](assets/jo-event7bis.png)  -->
 
-* Er resa kan även lyssna på Adobe Experience Platform målgrupper för att skicka meddelanden i grupp till en viss uppsättning profiler. För detta måste du **skapa målgrupper**. [Läs mer](../audience/about-audiences.md).
+* Din resa kan även lyssna på Adobe Experience Platform målgrupper för att skicka meddelanden i grupper till en viss uppsättning profiler. För detta skapar **målgrupper**. [Läs mer](../audience/about-audiences.md).
 
 <!--   ![](assets/segment2.png)  -->
 
-* Du kan definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel under dina förhållanden. Den här anslutningen är beroende av en **datakälla**. [Läs mer](../datasource/about-data-sources.md)
+* Definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel i dina villkor. Den här anslutningen är beroende av en **datakälla**. [Läs mer](../datasource/about-data-sources.md).
 
 <!--   ![](assets/jo-datasource.png)  -->
 
@@ -90,17 +90,17 @@ Flerkanalsdesignern hjälper er att skapa flerstegsresor med riktade målgrupper
 
    ![](assets/read-segment.png)
 
-1. Dra och släpp nästa steg som personen kommer att följa. Du kan till exempel lägga till ett villkor följt av en kanalåtgärd. Mer information om aktiviteter finns i [det här avsnittet](about-journey-activities.md).
+1. Börja med att dra och släppa en händelse eller en **Läs publikens**-aktivitet från paletten till arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
 
 ## Testa resan {#jo-test}
 
-När du har byggt din resa kan du testa den innan du publicerar den. Journey Optimizer erbjuder&quot;testläge&quot; som ett sätt att visa testprofiler under resan och upptäcka eventuella fel före aktiveringen. Genom att köra snabbtester kan ni kontrollera att resorna fungerar korrekt så att ni kan publicera dem med tillförsikt.
+Testa resan innan du publicerar den när du har byggt den. Journey Optimizer erbjuder ett **testläge** som ett sätt att visa testprofiler under resan och upptäcka eventuella fel före aktiveringen. Genom att köra snabbtester kan du vara säker på att resorna fungerar som de ska så att du kan publicera dem med tillförsikt. Lär dig hur du testar din resa [i det här avsnittet](testing-the-journey.md)
 
-Läs mer i det här [avsnittet](testing-the-journey.md)
+Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [ i det här avsnittet](journey-dry-run.md).
 
 ## Publicera resan {#jo-pub}
 
-Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att delta i den. Innan du publicerar din resa kontrollerar du att den är giltig och att det inte finns något fel. Du kan inte publicera en resa med fel. Läs mer om resepublikationen i det här [avsnittet](publishing-the-journey.md).
+Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att delta i den. Innan du publicerar din resa kontrollerar du att den är giltig och att inga fel har uppstått. Du kan inte publicera en resa med fel. Läs mer om resepublikation i det här [avsnittet](publishing-the-journey.md).
 
 ![](assets/jo-journeyuc2_32bis.png)
 
@@ -112,4 +112,4 @@ Läs mer om reserapporter i det här [avsnittet](../reports/live-report.md).
 
 >[!NOTE]
 >
->Om du behöver ändra till en **live**-resa [skapar du en ny version](journey-ui.md#journey-versions) av din resa.
+>Om du behöver ändra en **live**-resa [skapar du en ny version](journey-ui.md#journey-versions) av din resa.

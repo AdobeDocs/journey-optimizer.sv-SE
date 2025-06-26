@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: hopp, aktivitet, resa, dela, dela upp
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
-source-git-commit: 817f9c16ae48b1127e5092add6fbcefa8dd3ba9f
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '800'
 ht-degree: 2%
 
 ---
@@ -28,13 +28,14 @@ ht-degree: 2%
 * förenkla utformningen av mycket komplexa resor genom att dela upp dem i flera.
 * bygga resor baserat på gemensamma och återanvändbara resemönster
 
-Lägg bara till en **[!UICONTROL Jump]**-aktivitet och välj en målresa i den ursprungliga resan. När personen går in i steget **[!UICONTROL Jump]** skickas en intern händelse till den första händelsen i målresan. Om åtgärden **[!UICONTROL Jump]** lyckas fortsätter personen att göra framsteg i resan. Beteendet liknar andra åtgärder.
+Lägg till en **[!UICONTROL Jump]**-aktivitet i den ursprungliga resan och välj en målresa. När personen går in i steget **[!UICONTROL Jump]** skickas en intern händelse till den första händelsen i målresan. Om åtgärden **[!UICONTROL Jump]** lyckas fortsätter personen att gå vidare i resan. Beteendet liknar andra åtgärder.
 
-Under målresan kommer den första händelsen som utlöses internt av aktiviteten **[!UICONTROL Jump]** att få det enskilda flödet i resan.
+I målresan gör den första händelsen som utlöses internt av aktiviteten **[!UICONTROL Jump]** det individuella flödet i resan.
 
 ## Livscykel {#jump-lifecycle}
 
-Säg att du har lagt till en **[!UICONTROL Jump]**-aktivitet i en resa A på en resa B. Resa A är den **ursprungliga resan** och resa B, den **målresan**.
+Anta att du har lagt till en **[!UICONTROL Jump]**-aktivitet i resa A till resa B. Resa A är den **ursprungliga resan** och resa B är den **målresan**.
+
 Här är de olika stegen i körningsprocessen:
 
 **Resan A** utlöses från en extern händelse:
@@ -45,8 +46,8 @@ Här är de olika stegen i körningsprocessen:
 
 Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTROL Jump]** från resa A:
 
-1. Resan B fick en intern händelse från resa A.
-1. Personen börjar flyta i resa B.
+1. Resa B får ett internt evenemang från resa A.
+1. Personen börjar att flöda under resa B.
 
 >[!NOTE]
 >
@@ -60,15 +61,15 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
 * Du kan bara hoppa till en resa som använder samma namnutrymme som ursprungsresan.
 * Du kan inte hoppa till en resa som börjar med en **publikkvalificeringshändelse** eller **Läs målgrupp**.
 * Du kan inte ha en **[!UICONTROL Jump]**-aktivitet och en **publikkvalificeringshändelse** eller **Läs målgrupp** under samma resa.
-* Du kan inkludera så många **[!UICONTROL Jump]** aktiviteter som du behöver under en resa. Efter en **[!UICONTROL Jump]** kan du lägga till alla aktiviteter som behövs.
-* Du kan ha så många hoppnivåer som behövs. Till exempel hoppar resa A till resa B, som hoppar till resa C och så vidare.
+* Du kan inkludera så många **[!UICONTROL Jump]** aktiviteter som behövs under en resa. Efter en **[!UICONTROL Jump]** kan du lägga till alla aktiviteter som behövs.
+* Du kan ha så många hoppnivåer som behövs. Exempel: resa A hoppar till resa B, som hoppar till resa C och så vidare.
 * Målresan kan även innehålla så många **[!UICONTROL Jump]** aktiviteter som behövs.
-* Loopmönster stöds inte. Det finns inget sätt att länka samman två eller flera resor som skulle skapa en oändlig slinga. Aktivitetskonfigurationsskärmen **[!UICONTROL Jump]** förhindrar dig från att göra detta.
+* Loopmönster stöds inte. Det finns inget sätt att länka samman två eller flera resor, vilket skulle skapa en oändlig slinga. Aktivitetskonfigurationsskärmen **[!UICONTROL Jump]** förhindrar dig från att göra detta.
 
 ### Körning {#jump-limitations-exec}
 
 * När aktiviteten **[!UICONTROL Jump]** körs aktiveras den senaste versionen av målresan.
-* Som vanligt kan en unik individ bara vara närvarande en gång under samma resa. Om den person som har åsamkats från ursprungsresan redan befinner sig på målresan, kommer personen alltså inte att ta sig in på målresan. Inget fel rapporteras för aktiviteten **[!UICONTROL Jump]** eftersom detta är ett normalt beteende.
+* En unik individ kan bara vara närvarande en gång under samma resa. Om den person som har skjutits ut från ursprungsresan redan befinner sig på målresan, kommer den personen alltså inte att ta sig in på målresan. Inget fel kommer att rapporteras för aktiviteten **[!UICONTROL Jump]** eftersom detta är ett normalt beteende.
 
 ## Konfigurera hoppaktiviteten {#jump-configure}
 
@@ -94,7 +95,7 @@ Fältet **Första händelsen** är förifyllt med namnet på målresans första 
 
    ![](assets/jump4.png)
 
-1. Avsnittet **Åtgärdsparametrar** visar alla fält i målhändelsen. På samma sätt som för andra typer av åtgärder mappar du varje fält med fält från ursprungshändelsen eller datakällan. Den här informationen skickas till målresan vid körning.
+1. Avsnittet **Åtgärdsparametrar** visar alla fält i målhändelsen. Mappa varje fält med fält från ursprungshändelsen eller datakällan, precis som med andra typer av åtgärder. Den här informationen skickas till målresan vid körning.
 1. Lägg till nästa aktiviteter för att slutföra din ursprungliga resa.
 
    ![](assets/jump5.png)
@@ -104,7 +105,7 @@ Fältet **Första händelsen** är förifyllt med namnet på målresans första 
    >
    >Personens identitet mappas automatiskt. Den här informationen visas inte i gränssnittet.
 
-Din **[!UICONTROL Jump]**-aktivitet har konfigurerats. Så snart din resa är live eller i testläge kommer personer som når steget **[!UICONTROL Jump]** att pushas från till målresan.
+Din **[!UICONTROL Jump]**-aktivitet har konfigurerats. Så snart din resa är live eller i testläge kommer personer som når steget **[!UICONTROL Jump]** att föras vidare till målresan.
 
 När en **[!UICONTROL Jump]**-aktivitet har konfigurerats på en resa läggs en **[!UICONTROL Jump]**-postikon automatiskt till i början av målresan. Detta hjälper dig att identifiera att resan kan utlösas externt men också internt från en **[!UICONTROL Jump]**-aktivitet.
 
@@ -113,8 +114,9 @@ När en **[!UICONTROL Jump]**-aktivitet har konfigurerats på en resa läggs en 
 ## Felsökning {#jump-troubleshoot}
 
 Fel uppstår om:
-* målresan inte längre existerar
-* målresan är utkast, avslutad eller stoppad
-* om den första händelsen i målresan har ändrats och mappningen är bruten
+
+* Målresan finns inte längre
+* Målresan är utkast, avslutad eller stoppad
+* Den första händelsen i målresan har ändrats och mappningen är bruten
 
 ![](assets/jump6.png)

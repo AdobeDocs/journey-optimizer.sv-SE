@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: 5fcbde9344e919b817ef8d360d2318a6d9a1513f
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Det finns flera sätt att skapa testprofiler. På den här sidan hittar du infor
 
   Adobe Journey Optimizer tillhandahåller även ett specifikt [användningsfall](#use-case-1) för produkten som underlättar skapandet av testprofiler.
 
-Du kan överföra en JSON-fil till en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=sv-SE#add-data-to-dataset){target="_blank"}.
+Du kan överföra en JSON-fil till en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
 
 Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
@@ -61,7 +61,7 @@ När du är klar klickar du på **[!UICONTROL Add field groups]**: listan med f�
    >
    >Klicka på schemats namn för att uppdatera dess egenskaper.
 
-1. I listan med fält klickar du på det fält som du vill definiera som primär identitet.
+1. Klicka i listan med fält på det fält som du vill definiera som primär identitet.
    ![](assets/test-profiles-3.png)
 1. I den högra rutan **[!UICONTROL Field properties]** kontrollerar du alternativen **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och väljer ett namnutrymme. Om du vill att den primära identiteten ska vara en e-postadress väljer du namnutrymmet **[!UICONTROL Email]**. Klicka på **[!UICONTROL Apply]**.
    ![](assets/test-profiles-4bis.png)
@@ -71,7 +71,7 @@ När du är klar klickar du på **[!UICONTROL Add field groups]**: listan med f�
 
 >[!NOTE]
 >
->Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#prerequisites){target="_blank"}.
+>Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
 
 ### Skapa en datauppsättning
 
@@ -90,7 +90,7 @@ Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. F�
 
 >[!NOTE]
 >
-> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE#getting-started){target="_blank"}.
+> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target="_blank"}.
 
 ## Exempel på användning i produkten{#use-case-1}
 
@@ -114,7 +114,7 @@ Följande information krävs:
    1. **Land**: Testa profilland för bosättning
    1. **Kön**: Testa profilkön. Tillgängliga värden är **man**, **hona** och **non_specified**
 
-När du har valt identitetsnamnrymden och angett CSV-filen baserat på formatet ovan, klickar du på knappen **[!UICONTROL Run]** överst till höger. Användningsexemplet kan ta några minuter att slutföra. När användningsärendet har slutförts och testprofilerna har skapats skickas ett meddelande till användaren.
+När du har valt identitetsnamnområdet och angett CSV-filen baserat på formatet ovan, väljer du knappen **[!UICONTROL Run]** längst upp till höger. Användningsexemplet kan ta några minuter att slutföra. När användningsärendet har slutförts och testprofilerna har skapats skickas ett meddelande till användaren.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det 
 
 >[!NOTE]
 >
->Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=sv-SE#tutorials){target="_blank"}.
+>Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
 >
 
 

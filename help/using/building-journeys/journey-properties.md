@@ -9,19 +9,19 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2373'
 ht-degree: 0%
 
 ---
 
 # Ange egenskaper för din resa {#jo-properties}
-
+penc
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
 >title="Resans egenskaper"
->abstract="I det här avsnittet visas resans egenskaper. Som standard är skrivskyddade parametrar dolda. Vilka inställningar som är tillgängliga beror på resans status, på dina behörigheter och din produktkonfiguration."
+>abstract="I det här avsnittet visas resans egenskaper. Som standard är skrivskyddade parametrar dolda. Vilka inställningar som är tillgängliga beror på resans status, dina behörigheter och produktkonfiguration."
 
 ## Åtkomst till egenskaperna för en resa {#access-properties}
 
@@ -33,7 +33,7 @@ Du kan:
 
 * Tilldela enhetliga Adobe Experience Platform-taggar till resan, så att du enkelt kan klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
 * Välj resemätningar. [Lär dig hur du konfigurerar och spårar dina resemått](success-metrics.md)
-* Hantera [inträde och återinträde](#entrance). Profilingångshantering beror på typen av resor. Information finns på [den här sidan](entry-management.md)
+* Hantera [inträde och återinträde](#entrance). Hanteringen av profilentréer beror på typen av resa. Information finns på [den här sidan](entry-management.md)
 * Hantera [åtkomst till data](#manage-access)
 * Välj resan och profilen [tidszoner](#timezone)
 * Välj anpassade [start- och slutdatum](#dates)
@@ -46,7 +46,7 @@ Du kan:
 >
 >För direktresor visar den här skärmen endast publiceringsdatumet och namnet på den användare som publicerade resan.
 
-Med den tekniska informationen för **Kopiera** kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`.
+Med alternativet **Kopiera teknisk information** kan du kopiera teknisk information om den resa som supportteamet kan använda för att felsöka. Följande information kopieras: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`.
 
 Läs mer om tekniska fält som rör en resa för en viss profil och hur du använder dem [på den här sidan](expression/journey-properties.md).
 
@@ -54,7 +54,7 @@ Läs mer om tekniska fält som rör en resa för en viss profil och hur du anvä
 
 Profilinmatningsläget definieras på resenivån i den högra konfigurationsrutan. Inställningarna beskrivs nedan.
 
-Profilingångshantering beror på typen av resor. Läs mer om hantering av profilinträde och återinträde på [den här sidan](entry-management.md).
+Hanteringen av profilentréer beror på typen av resa. Läs mer om hantering av profilinträde och återinträde på [den här sidan](entry-management.md).
 
 ### Tillåt återinträde  {#allow-reentrance}
 
@@ -62,7 +62,7 @@ Profilingångshantering beror på typen av resor. Läs mer om hantering av profi
 >id="ajo_journey_properties_entrance"
 >title="Tillåt återinträde"
 >abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** till exempel om du vill erbjuda en engångspresentation när en person går in i en affär."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går till en affär.
 
@@ -71,8 +71,8 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Vänteperiod för återinträde"
->abstract="Ange en väntetid innan du tillåter att en profil går in på resan igen på en resa. Detta förhindrar att användarna kommer in på resan igen under en viss tid. Maximal varaktighet: 90 dagar."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>abstract="Ställ in väntetiden innan du tillåter att en profil går in på resan igen med enhetsresor. Detta förhindrar att användarna kommer in på resan igen under en viss tid. Maximal varaktighet: 90 dagar."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återkommande vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
@@ -95,12 +95,12 @@ Tidszonen definieras på resenivå. Du kan ange en fast tidszon eller använda A
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_start_date"
 >title="Startdatum"
->abstract="Välj det datum då profiler kan börja registrera resan. Om inget startdatum anges används reseobjektets publiceringsdatum som standard."
+>abstract="Välj det datum då profiler kan börja registrera resan. Om inget startdatum har angetts används transportens publiceringsdatum som standard."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_end_date"
 >title="Slutdatum"
->abstract="Ange datumet då resan slutar. På det här datumet kommer aktiva profiler automatiskt att avsluta resan och inga nya poster kommer att tillåtas."
+>abstract="Ange datumet då resan slutar. På detta datum avslutas resan automatiskt av aktiva profiler och inga nya tävlingsbidrag tillåts."
 
 Som standard kan profiler ta sig in på din resa så snart den har publicerats, och de kan stanna tills tidsgränsen för den [globala resan](#global_timeout) nås. Det enda undantaget är återkommande läsmålgruppsresor med **Tvinga återinträde vid upprepning** aktiverat, som slutar vid startdatumet för nästa förekomst.
 
@@ -252,7 +252,7 @@ Adobe Journey Optimizer använder sammanfogningsprinciper när profildata hämta
 
 Adobe Journey Optimizer tillämpar den kopplingsregel som används under hela kundresan. Om flera målgrupper används i en resa (till exempel med in [`inAudience`-funktioner](functions/functioninaudience.md)) skapas därför inkonsekvenser med den sammanfogningsprincip som används för resan. Ett fel genereras och publikationen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
-Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 >[!NOTE]
 >

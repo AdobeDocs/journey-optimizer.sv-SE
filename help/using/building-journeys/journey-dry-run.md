@@ -9,9 +9,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: bb3379fa71aaeb00d0833c67547de70f4e9c3fb1
+source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Du kan använda körningsfunktionen Torr i alla utkast-resor utan fel.
 Så här aktiverar du Torr körning:
 
 1. Öppna den resa du vill testa.
-1. Klicka på knappen **Torr körning**.
+1. Markera knappen **Torr körning**.
 
    ![Starta färdens torra körning](assets/dry-run-button.png)
 
