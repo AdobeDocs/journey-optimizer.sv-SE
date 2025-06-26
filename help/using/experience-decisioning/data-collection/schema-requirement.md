@@ -6,7 +6,9 @@ description: Lär dig hur du konfigurerar ditt erbjudandeschema för att hämta 
 feature: Ranking, Datasets, Decision Management
 role: Developer, Data Engineer
 level: Experienced
-source-git-commit: dd108b67ec252d391418d8af53de696bf9cd167d
+hide: true
+hidefromtoc: true
+source-git-commit: e5c457494d5d79d1a7951b9172c39c91007e2651
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -106,4 +108,4 @@ För anpassade händelser måste schemat som används i datauppsättningen ocks�
 >* POST /ee/v2/interact
 >* POST /ee/v2/collect
 >
->Om du använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=sv-SE){target="_blank"} skapas anslutningen automatiskt.
+>Om du använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} skapas anslutningen automatiskt.

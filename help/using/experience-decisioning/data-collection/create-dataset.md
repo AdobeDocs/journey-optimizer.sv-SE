@@ -6,7 +6,9 @@ description: Lär dig hur du skapar en datauppsättning för att samla in hände
 feature: Ranking, Decision Management, Datasets
 role: Data Engineer, Developer
 level: Experienced
-source-git-commit: dd108b67ec252d391418d8af53de696bf9cd167d
+hide: true
+hidefromtoc: true
+source-git-commit: e5c457494d5d79d1a7951b9172c39c91007e2651
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -50,7 +52,7 @@ Börja med att skapa schemat som ska användas i din datauppsättning:
 
 >[!NOTE]
 >
->Läs mer om att skapa scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=sv-SE#understanding-schemas){target="_blank"}.
+>Läs mer om att skapa scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#understanding-schemas){target="_blank"}.
 
 du är nu redo att skapa en datauppsättning med det här schemat. Gör så här:
 
