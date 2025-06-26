@@ -16,12 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Ange egenskaper för din resa {#jo-properties}
-penc
->[!CONTEXTUALHELP]
->id="ajo_journey_properties"
->title="Resans egenskaper"
->abstract="I det här avsnittet visas resans egenskaper. Som standard är skrivskyddade parametrar dolda. Vilka inställningar som är tillgängliga beror på resans status, dina behörigheter och produktkonfiguration."
+# Ange egenskaper för din resapenc>[!CONTEXTUALHELP]>id="ajo_journey_properties">title="Resans egenskaper">abstract="I det här avsnittet visas resans egenskaper. Som standard är skrivskyddade parametrar dolda. Vilka inställningar som är tillgängliga beror på resans status, dina behörigheter och produktkonfiguration." {#jo-properties}
 
 ## Åtkomst till egenskaperna för en resa {#access-properties}
 
