@@ -69,4 +69,4 @@ du är nu redo att skapa en datauppsättning med det här schemat. Gör så här
 
 >[!NOTE]
 >
->Den här datauppsättningen kan nu väljas för att samla in händelsedata när [en AI-modell]() skapas.
+>Den här datauppsättningen kan nu väljas för att samla in händelsedata när [en AI-modell] () skapas.
