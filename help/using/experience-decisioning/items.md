@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 42b7b7fe7ab6380ca54e05ab0905f2517f489782
 workflow-type: tm+mt
 source-wordcount: '1690'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >id="ajo_exd_items"
 >title="Hantera beslutsobjekt"
 >abstract="Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. För närvarande konsolideras alla skapade beslutsobjekt i en enda katalog för erbjudanden. Från den här skärmen kan du även komma åt katalogschemat med knappen **Redigera schema** och skapa anpassade attribut för dina beslutsobjekt."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html?lang=sv-SE" text="Konfigurera artikelkatalogen"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
 
 Med Journey Optimizer kan ni skapa marknadsföringserbjudanden, så kallade beslutsobjekt, som ni kan skapa och ordna i en centraliserad katalog och samlingar. De består av standardattribut och anpassade attribut som är anpassade efter just dina behov. Dessutom innehåller de profilbegränsningar som gör att du kan definiera till vilka ett beslutsobjekt kan visas.
 
@@ -38,7 +38,7 @@ Om du vill skapa ett beslutsobjekt går du till **[!UICONTROL Decisioning]** > *
 >id="ajo_exd_item_custom_attributes"
 >title="Definiera anpassade attribut"
 >abstract="Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De skapas i beslutsobjektens katalogschema. Det här avsnittet visas bara om du har lagt till minst ett anpassat attribut i katalogschemat."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html?lang=sv-SE" text="Konfigurera artikelkatalogen"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-items/catalogs.html" text="Konfigurera artikelkatalogen"
 
 Börja med att definiera beslutsobjektets standardattribut och anpassade attribut:
 
@@ -64,8 +64,8 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 >id="ajo_exd_item_constraints"
 >title="Lägga till målgrupper eller beslutsregler"
 >abstract="Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart vissa profiler."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html?lang=sv-SE" text="Använda målgrupper"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules.html?lang=sv-SE" text="Använd beslutsregler"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences.html" text="Använda målgrupper"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules.html" text="Använd beslutsregler"
 
 Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart specifika profiler, båda lösningarna som motsvarar olika användningar. Expandera avsnittet nedan om du vill ha mer information:
 
@@ -79,9 +79,9 @@ En målgrupps utdata är i princip en lista med profiler, medan en beslutsregel 
 
 +++
 
-* Om du vill begränsa presentationen av beslutsobjektet till medlemmar i en eller flera Adobe Experience Platform-målgrupper väljer du alternativet **[!UICONTROL Visitors who fall into one or multiple audiences]**, lägger sedan till en eller flera målgrupper från den vänstra rutan och kombinerar dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** . [Läs mer om målgrupper](../audience/about-audiences.md).
+* Om du vill begränsa presentationen av beslutsobjektet till medlemmar i en eller flera Adobe Experience Platform-målgrupper väljer du alternativet **[!UICONTROL Visitors who fall into one or multiple audiences]**, lägger sedan till en eller flera målgrupper från den vänstra rutan och kombinerar dem med de logiska operatorerna **[!UICONTROL And]** / **[!UICONTROL Or]** . [Läs mer om målgrupper](../audience/about-audiences.md)
 
-* Om du vill koppla en specifik beslutsregel till beslutsobjektet väljer du **[!UICONTROL By rule]** och drar sedan önskad regel från den vänstra rutan till den centrala delen. [Läs mer om beslutsregler](rules.md).
+* Om du vill koppla en specifik beslutsregel till beslutsobjektet väljer du **[!UICONTROL By rule]** och drar sedan önskad regel från den vänstra rutan till den centrala delen. [Läs mer om beslutsregler](rules.md)
 
 ![](assets/item-constraints.png)
 
@@ -114,8 +114,8 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stege
    >[!NOTE]
    >
    >För alla takthändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, vilket kan leda till att appningsräknaren inte ökas korrekt. För att vara säker på att varje takthändelse spåras och tas med i appningsräknaren måste du se till att schemat som används för att samla in upplevelsehändelser innehåller rätt fältgrupp för den händelsen. Detaljerad information om datainsamling finns i Journey Optimizer beslutsdokumentation:
-   >* [Datainsamling för beslutshantering](../offers/data-collection/data-collection.md)
-   >* [Konfigurera datainsamling](../offers/data-collection/schema-requirement.md)
+   >* [Datainsamling för beslutshantering](data-collection/data-collection.md)
+   >* [Konfigurera datainsamling](data-collection/schema-requirement.md)
 
 1. Välj typ av begränsning:
 
@@ -127,7 +127,7 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stege
 
    Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i fältet **[!UICONTROL Capping count limit]** skickas inga fler erbjudanden efter 10 utcheckningar.
 
-1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **&#x200B;**&#x200B;i det andra fältet.
+1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
 
    >[!NOTE]
    >

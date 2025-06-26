@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 3078d9d95327e58e98366d9d8f0d0dfd1c571bec
 workflow-type: tm+mt
-source-wordcount: '2456'
+source-wordcount: '2473'
 ht-degree: 20%
 
 ---
@@ -557,6 +557,10 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Skapa beslutsprofiler](using/experience-decisioning/create-decision.md)
       + [Rapport om beslut](using/experience-decisioning/cja-reporting.md)
       + [Användningsfall vid beslut](using/experience-decisioning/experience-decisioning-uc.md)
+      + Samla in händelsedata {#collect-event-data}
+         + [Komma igång med datainsamling](using/experience-decisioning/data-collection/data-collection.md)
+         + [Skapa en datauppsättning för att samla in händelser](using/experience-decisioning/data-collection/create-dataset.md)
+         + [Konfigurera händelsehämtning](using/experience-decisioning/data-collection/schema-requirement.md)
    + Beslutshantering {#offer-decisioning}
       + Kom igång med beslutshantering {#get-started-decision}
          + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
@@ -710,7 +714,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
