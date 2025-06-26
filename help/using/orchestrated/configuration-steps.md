@@ -7,10 +7,10 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
-source-git-commit: f8fa52c89659918ef3837f88ddb03c219239f4ee
+source-git-commit: 10333b4dab32abe87b1e8b4f3e4d7b1e72eafb50
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '978'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/><b>[Konfigurationssteg](configuration-steps.md)</b><br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena&lbrace;1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/><b>[Konfigurationssteg](configuration-steps.md)</b><br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena{1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -34,123 +34,164 @@ Dokumentation pågår
 
 >[!ENDSHADEBOX]
 
-<!--
+I den här guiden får du hjälp med att skapa ett relationsschema, konfigurera en datauppsättning för orkestrerade kampanjer, importera data via en S3-källa och fråga om inkapslade data i AP-plattformen.
 
-This guide walks you through the process of creating a relational schema, configuring a dataset for orchestrated campaigns, ingesting data via an S3 source, and querying the ingested data in the AP platform. Each step is explained in detail with emphasis on why it is important.
+I det här exemplet innehåller konfigurationen integrering av två nyckelentiteter, **Loyalty Transactions** och **Loyalty Rewards**, och länkning dem till befintliga kärnentiteter **Recipients** och **Brands**.
 
+1. [Överför DDL-fil](#upload-ddl)
 
-You have now:
+   Definiera relationsdatamodellen för samordnade kampanjer, inklusive entiteterna **Loyalty Transactions** och **Loyalty Rewards** tillsammans med nödvändiga nycklar och versionsattribut.
 
-- Created a relational schema
-- Configured a CDC-enabled dataset
-- Ingested data via S3
-- Scheduled and monitored a data flow
-- Queried the ingested data
+1. [Välj entiteter](#entities)
 
-This setup is essential for running orchestrated AGO campaigns effectively and ensuring timely, accurate data synchronization.
+   Upprätta meningsfulla relationer mellan tabeller i schemat för att skapa en sammanhängande och sammankopplad datamodell.
 
-## Create a relational schema / (-) Upload DDL file 
+1. [Länka schema](#link-schema)
 
-1. Log in to the AP Platform.
+   Länka entiteten **Loyalty Transactions** till **Mottagare** och **Loyalty Rewards** till **Varumärken** för att skapa en ansluten datamodell som stöder personaliserade kundresor.
 
-1. Navigate to the **Data Management** > **Schema**.
+1. [Ingrediera data](#ingest)
 
-1. Click on **Create Schema**.
+   Hämta in data till Adobe Experience Platform från källor som stöds, som SFTP, molnlagring eller databaser.
 
-1. You will be prompted to select between two schema types:
+## Överför DDL-fil {#upload-ddl}
 
-    * **Standard**
-    * **Relational**, used specifically for orchestrated campaigns
+I det här avsnittet finns stegvisa anvisningar om hur du skapar ett relationsschema i Adobe Experience Platform genom att överföra en DDL-fil (Data Definition Language). Med hjälp av en DDL-fil kan du definiera datamodellens struktur i förväg, inklusive tabeller, attribut, nycklar och relationer.
 
-    ![](assets/admin_schema_1.png)
+1. Logga in på AP-plattformen.
 
-1. Select **Upload DDL file** to define an entity relationship diagram and create schemas.
+1. Navigera till **Datahantering** > **Schema**.
 
-    The table structure must contain:
-    * At least one primary key
-    * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
+1. Klicka på **Skapa schema**.
 
-1. Drag and drop your DDL file and click **[!UICONTROL Next]**.
+1. Du uppmanas att välja mellan två schematyper:
 
-1. Set up each schema and its columns, ensuring that a primary key is specified. 
+   * **Standard**
+   * **Relation**, används specifikt för orkestrerade kampanjer
 
-    One attribute, such as `lastmodified`, must be designated as a version descriptor. This attribute, typically of type `datetime`, `long`, or `int`, is essential for ingestion processes to ensure that the dataset is updated with the latest data version.
+   ![](assets/admin_schema_1.png)
 
-1. Type-in your **[!UICONTROL Schema name]** and click **[!UICONTROL Done]**.
+1. Välj **Överför DDL-fil** om du vill definiera ett entitetsrelationsdiagram och skapa scheman.
 
-    ![](assets/admin_schema_2.png)
+   Tabellstrukturen måste innehålla:
+   * Minst en primärnyckel
+   * En versionsidentifierare, till exempel ett `lastmodified`-fält av typen `datetime` eller `number`.
 
-Verify the table and field definitions within the canvas. [Learn more in the section below](#entities)
+1. Dra och släpp din DDL-fil och klicka på **[!UICONTROL Next]**.
 
-## Select entities {#entities}
+1. Skriv in din/ditt **[!UICONTROL Schema name]**.
 
-To create links between tables of your schema, follow these steps:
+1. Konfigurera varje schema och dess kolumner och se till att en primärnyckel anges.
 
-1. Access the canvas view of your data model and choose the two tables you want to link
+   Ett attribut, till exempel `lastmodified`, måste anges som en versionsbeskrivare. Det här attributet, som vanligtvis är av typen `datetime`, `long` eller `int`, är nödvändigt för att matningsprocesser ska kunna säkerställa att datauppsättningen uppdateras med den senaste dataversionen.
 
-1. Click the ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) button next to the Source Join, then drag and guide the arrow towards the Target Join to establish the connection.
+   ![](assets/admin_schema_2.png)
 
-1. Fill in the given form to define the link and click **Apply** once configured.
+1. Klicka på **[!UICONTROL Done]** när du är klar.
 
-    ![](assets/admin_schema_3.png)
+Nu kan du verifiera tabell- och fältdefinitionerna på arbetsytan. [Läs mer i avsnittet nedan](#entities)
 
-    **Cardinality**:
+## Välj enheter {#entities}
 
-     * **1-N**: one occurrence of the source table can have several corresponding occurrences of the target table, but one occurrence of the target table can have at most one corresponding occurrence of the source table.
+Följ stegen nedan för att definiera logiska anslutningar mellan tabeller i ditt schema.
 
-    * **N-1**: one occurrence of the target table can have several corresponding occurrences of the source table, but one occurrence of the source table can have at most one corresponding occurrence of the target table.
+1. Få åtkomst till arbetsytans vy av din datamodell och välj de två tabeller som du vill länka
 
-    * **1-1**: one occurrence of the source table can have at most one corresponding occurrence of the target table.
+1. Klicka på knappen ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) bredvid Source Join och dra sedan pilen mot målhörnet för att upprätta anslutningen.
 
-1. All links defined in your data model are represented as arrows in the canvas view. Click on an arrow between two tables to view details, make edits, or remove the link as needed.
+   ![](assets/admin_schema_5.png)
 
-1. Use the toolbar to customize and adjust your canvas.
+1. Fyll i det angivna formuläret för att definiera länken och klicka på **Använd** när du har konfigurerat den.
 
-    ![](assets/toolbar.png)
+   ![](assets/toolbar.png)
 
-    * **Zoom in**: Magnify the canvas to see details of your data model more clearly.
+   **Kardinalitet**:
 
-    * **Zoom out**: Reduce the canvas size for a broader view of your data model.
+   * **1-N**: En förekomst av källtabellen kan ha flera motsvarande förekomster av måltabellen, men en förekomst av måltabellen kan ha högst en motsvarande förekomst av källtabellen.
 
-    * **Fit view**: Adjust the zoom to fit all schemas within the visible area.
+   * **N-1**: en förekomst av måltabellen kan ha flera motsvarande förekomster av källtabellen, men en förekomst av källtabellen kan ha högst en motsvarande förekomst av måltabellen.
 
-    * **Filter**: Choose which schema to display within the canvas.
+   * **1-1**: En förekomst av källtabellen kan ha högst en motsvarande förekomst av måltabellen.
 
-    * **Force auto layout**: Automatically arrange schemas for better organization.
+1. Alla länkar som definieras i datamodellen representeras som pilar i arbetsytevyn. Klicka på en pil mellan två tabeller för att visa detaljer, göra ändringar eller ta bort länken efter behov.
 
-    * **Display map**: Toggle a minimap overlay to help navigate large or complex schema layouts more easily.
+   ![](assets/admin_schema_6.png)
 
-1. Click **Save** once done. This action creates the schemas and associated data sets, and enables the data set for use in Orchestrated Campaigns.
+1. Använd verktygsfältet för att anpassa och justera arbetsytan.
 
-1. Click **[!UICONTROL Open Jobs]** to monitor the progress of the creation job. This process may take couple minutes, depending on the number of tables defined in the DDL file. 
+   ![](assets/toolbar.png)
 
-    ![](assets/admin_schema_4.png)
+   * **Zooma in**: Förstora arbetsytan så att du tydligare kan se information om datamodellen.
 
-Doc AEP: https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/create-schema-ui
+   * **Zooma ut**: Minska arbetsytans storlek för en bredare vy av datamodellen.
 
-## Add data
+   * **Anpassa vy**: Justera zoomningen så att den passar alla scheman i det synliga området.
 
-1. Set up
+   * **Filter**: Välj vilket schema som ska visas på arbetsytan.
 
-1. Connect existing or new account
+   * **Tvinga automatisk layout**: Ordna scheman automatiskt för bättre ordning.
 
-1. Select dataset fields
+   * **Visningsschema**: Växla en minimumöverlappning för att enklare kunna navigera i stora eller komplexa schemalayouter.
 
-1. Map desired source fields to target dataset fields
+1. Klicka på **Spara** när du är klar. Den här åtgärden skapar scheman och associerade datauppsättningar och aktiverar datauppsättningen för användning i Orchestrated Campaigns.
 
-1. 
+1. Klicka på **[!UICONTROL Open Jobs]** för att övervaka förloppet för skapandet. Den här processen kan ta några minuter, beroende på hur många tabeller som har definierats i DDL-filen.
 
-## Set up sources
+   ![](assets/admin_schema_4.png)
 
-Adobe Experience Platform allows data to be ingested from external sources while providing you with the ability to structure, label, and enhance incoming data using Experience Platform services. You can ingest data from a variety of sources such as Adobe applications, cloud-based storages, databases, and many others.
+## Länka schema {#link-schema}
 
-6 sources compatible avec data relationel, tout ce qui est fichier (data storage), SFTP, azure blob, amazon S3, database cloud snowflake, 
+Upprätta en relation mellan schemat **lojalitetstransaktioner** och schemat **Mottagare** för att associera varje transaktion med rätt kundpost.
 
+1. Navigera till **[!UICONTROL Schemas]** och öppna dina tidigare skapade **lojalitetstransaktioner**.
 
-![](assets/admin_sources_1.png)
+1. Klicka på **[!UICONTROL Add Relationship]** från kunden **[!UICONTROL Field properties]**.
 
-https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload
+   ![](assets/schema_1.png)
 
+1. Välj **[!UICONTROL Many-to-One]** som relation **[!UICONTROL Type]**.
+
+1. Länka till det befintliga **mottagarschemat**.
+
+   ![](assets/schema_2.png)
+
+1. Ange **[!UICONTROL Relationship name from current schema]** och **[!UICONTROL Relationship name from reference schema]**.
+
+1. Klicka på **[!UICONTROL Apply]** om du vill spara ändringarna.
+
+Fortsätt genom att skapa en relation mellan schemat **loyalty rewards** och schemat **Brands** för att associera varje belöningspost med rätt varumärke.
+
+![](assets/schema_3.png)
+
+## Ingrediera data {#ingest}
+
+Med Adobe Experience Platform kan data hämtas från externa källor samtidigt som du kan strukturera, etikettera och förbättra inkommande data med hjälp av Experience Platform tjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra.
+
+1. Öppna menyn **[!UICONTROL Sources]** på menyn **[!UICONTROL Connections]**.
+
+1. Välj kategorin **[!UICONTROL Cloud storage]**, sedan Amazon S3 och klicka på **[!UICONTROL Add Data]**.
+
+   ![](assets/admin_sources_1.png)
+
+1. Anslut ditt S3-konto:
+
+   * Med ett befintligt konto
+
+   * Med ett nytt konto
+
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
+
+   ![](assets/admin_sources_2.png)
+
+1. Navigera genom den anslutna S3-källan tills du hittar de två mappar som har skapats tidigare, dvs. **lojalitetsbelöningar** och **lojalitetstransaktioner**.
+
+1. Klicka på mappen.
+
+   Om du väljer en mapp kommer alla aktuella och framtida filer med samma struktur att bearbetas automatiskt, och om du väljer en fil kommer det att krävas manuella uppdateringar för varje ny dataökning.
+
+   ![](assets/s3_config_1.png)
+
+1. Välj dataformat och klicka på Nästa.
 
 <!--manual
 ## Create a relational schema manual
