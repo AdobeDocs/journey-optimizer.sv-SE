@@ -7,9 +7,10 @@ feature: Journeys, Use Cases
 role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
-source-git-commit: 85b036ad8e06b10fc8c46b3ec03b7792491bd9b9
+exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
+source-git-commit: 4a14c76aeceba624cd252890e37ccf3e42049597
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---
@@ -72,7 +73,7 @@ Använd det här biblioteket som referenspunkt när du utformar resor, modellera
 <a href="ajo-ac.md">
 <img alt="Skicka ett meddelande med Campaign" src="../assets/do-not-localize/start-interface.jpeg">
 </a>
-<div><a href="ajo-ac.md"><strong>Skicka ett meddelande med Campaign v7/v8</strong>
+<div><a href="ajo-ac.md"><strong>Skicka med Campaign v7/v8</strong>
 </div>
 <p>
 </td>
@@ -81,7 +82,7 @@ Använd det här biblioteket som referenspunkt när du utformar resor, modellera
 <img alt="Skicka ett meddelande till prenumeranter" src="../assets/do-not-localize/start-quick.png">
 </a>
 <div>
-<a href="message-to-subscribers-uc.md"><strong>Skicka ett meddelande till prenumeranter</strong></a>
+<a href="message-to-subscribers-uc.md"><strong>Skicka till dina prenumeranter</strong></a>
 </div>
 <p></td>
 </tr></table>
@@ -107,6 +108,3 @@ Använd det här biblioteket som referenspunkt när du utformar resor, modellera
 <p>
 </td>
 </tr></table>
-
-
-
