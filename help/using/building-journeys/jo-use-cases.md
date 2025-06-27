@@ -8,7 +8,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
-source-git-commit: f1d96aa3fb74c9aedefa026fc65a4dcc8a2b4109
+source-git-commit: a94d579086f8ab78e611b15d993bb8f12673ea36
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Använd det här biblioteket som referenspunkt när du utformar resor, modellera
   <td>
     <div>
     <a href="exp-event-lookup.md">
-    <img alt="upplevelsehändelser söka efter bästa praxis" src="../assets/do-not-localize/icon_profile-audience.svg" /></a> 
+    <img alt="upplevelsehändelser söka efter bästa praxis" src="../assets/do-not-localize/icon-configure.svg" /></a> 
     <br>Lär dig vanliga mönster och skalbara metoder som hjälper dig att få ut det mesta av Experience Events i Adobe Journey Optimizer. De här användningsexemplen är utformade för att hjälpa dig att lösa vanliga problem som att hantera avanmälan, styra meddelandefrekvensen, anpassa innehåll baserat på användarbeteende och reagera på realtidssignaler.
     </div>
       <div>
