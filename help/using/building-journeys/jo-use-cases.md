@@ -8,7 +8,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
-source-git-commit: 0a96368f2aefa1ffa6e12d08d679b2d360701127
+source-git-commit: 938f0b0247cc4b9d3e05a234082db534acbbbac5
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Använd det här biblioteket som referenspunkt när du utformar resor, modellera
   <td>
     <div>
     <a href="exp-event-lookup.md">
-    <img alt="upplevelsehändelser söka efter bästa praxis" src="../assets/do-not-localize/icon-configure.svg" /></a> 
+    <img alt="upplevelsehändelser söka efter bästa praxis" src="../assets/do-not-localize/icon-content.svg" /></a> 
     <br>Lär dig vanliga mönster och skalbara metoder som hjälper dig att få ut det mesta av Experience Events i Adobe Journey Optimizer. De här användningsexemplen är utformade för att hjälpa dig att lösa vanliga problem som att hantera avanmälan, styra meddelandefrekvensen, anpassa innehåll baserat på användarbeteende och reagera på realtidssignaler.
     </div>
       <div>
@@ -47,7 +47,7 @@ Använd det här biblioteket som referenspunkt när du utformar resor, modellera
   <td>
     <div>
     <a href="../data/datasets-query-examples.md">
-    <img alt="frågeexempel" src="../assets/do-not-localize/icon-data.svg"/></a> 
+    <img alt="frågeexempel" src="../assets/do-not-localize/icon-configure.svg"/></a> 
     <br>Om du vill bygga upp dina användningsfall måste du fråga Adobe Journey Optimizer datauppsättningar, till exempel systemdatauppsättningar för inhämtning av upplevelsehändelser för spårning, datauppsättningen för inhämtning av steg under en resa, datauppsättningen för inhämtning av erbjudandeförslag till användarna, och mycket annat.
     </div>
       <div>
