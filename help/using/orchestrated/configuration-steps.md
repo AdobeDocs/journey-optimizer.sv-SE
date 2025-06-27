@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
-source-git-commit: f64fa51fa753fe62eecb6199946615f4d5c4f767
+source-git-commit: 4cc571b306058dc58454e488ba53bb69117a8b27
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1088'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/><b>[Konfigurationssteg](configuration-steps.md)</b><br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena&lbrace;1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/><b>[Konfigurationssteg](configuration-steps.md)</b><br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena{1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -103,7 +103,7 @@ Följ stegen nedan för att definiera logiska anslutningar mellan tabeller i dit
 
 1. Fyll i det angivna formuläret för att definiera länken och klicka på **Använd** när du har konfigurerat den.
 
-   ![](assets/toolbar.png)
+   ![](assets/admin_schema_3.png)
 
    **Kardinalitet**:
 
@@ -179,21 +179,43 @@ Med Adobe Experience Platform kan data hämtas från externa källor samtidigt s
 
    * Med ett nytt konto
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
 
    ![](assets/admin_sources_2.png)
 
+1. Välj din mapp **[!UICONTROL Data format]**, **[!UICONTROL Delimiter]** och **[!UICONTROL Compression type]**.
+
 1. Navigera genom den anslutna S3-källan tills du hittar de två mappar som har skapats tidigare, dvs. **lojalitetsbelöningar** och **lojalitetstransaktioner**.
 
-1. Klicka på mappen.
+1. Markera mappen som innehåller dina data.
 
-   Om du väljer en mapp kommer alla aktuella och framtida filer med samma struktur att bearbetas automatiskt, och om du väljer en fil kommer det att krävas manuella uppdateringar för varje ny dataökning.
+   Om du väljer en mapp behandlas alla aktuella och framtida filer med samma struktur automatiskt. Om du väljer en enskild fil måste du dock överföra varje nytt datasteg manuellt.
+
+   ![](assets/S3_config_2.png)
+
+1. Välj din mapp **[!UICONTROL Data format]**, **[!UICONTROL Delimiter]** och **[!UICONTROL Compression type]**. Granska exempeldata och klicka sedan på **[!UICONTROL Next]**.
 
    ![](assets/S3_config_1.png)
 
-1. Välj dataformat och klicka på Nästa.
+1. Markera **[!UICONTROL Enable Change data capture]** om du vill välja bland datauppsättningar som är mappade till relationsscheman och som har både en primärnyckel och en versionsbeskrivare definierad.
 
+1. Markera din [tidigare skapade datauppsättning](#entities) och klicka på **[!UICONTROL Next]**.
 
+   ![](assets/S3_config_3.png)
+
+1. I fönstret **[!UICONTROL Mapping]** kontrollerar du att varje källfilsattribut är korrekt mappat med motsvarande fält i målschemat.
+
+   Klicka på **[!UICONTROL Next]** när du är klar.
+
+   ![](assets/S3_config_4.png)
+
+1. Konfigurera dataflödet **[!UICONTROL Schedule]** baserat på önskad frekvens.
+
+1. Klicka på **[!UICONTROL Finish]** för att skapa dataflödet. Den körs automatiskt enligt angivet schema.
+
+1. Välj **[!UICONTROL Sources]** på menyn **[!UICONTROL Connections]** och gå till fliken **[!UICONTROL Data Flows]** för att spåra flödeskörning, granska inkapslade poster och felsöka eventuella fel.
+
+   ![](assets/S3_config_5.png)
 
 <!--manual
 ## Create a relational schema manual
