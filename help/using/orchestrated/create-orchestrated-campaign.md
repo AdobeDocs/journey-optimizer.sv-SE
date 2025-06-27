@@ -26,7 +26,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/><b>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)</b><br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena{1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/><b>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)</b><br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena&lbrace;1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 <br/>
 
-Skapa en orkestrerad kampanj i [!DNLAAdobe Journey Optimizer] och konfigurera dess körningsschema så att det styr när den startar och hur ofta den körs. Välj om du vill starta kampanjen direkt, vid ett specifikt datum och vid en viss tidpunkt eller om det ska ske regelbundet med flexibla schemaläggningsalternativ som dagliga, veckovisa eller månadsvisa frekvenser.
+Skapa en orkestrerad kampanj i [!DNL AAdobe Journey Optimizer] och konfigurera dess körningsschema så att det styr när den startar och hur ofta den körs. Välj om du vill starta kampanjen direkt, vid ett specifikt datum och vid en viss tidpunkt eller om det ska ske regelbundet med flexibla schemaläggningsalternativ som dagliga, veckovisa eller månadsvisa frekvenser.
 
 ## Skapa och schemalägg kampanjen {#create}
 
@@ -73,7 +73,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Date]**: Välj det datum då kampanjen ska köras.
    * **[!UICONTROL Time]**: Välj den tidpunkt då kampanjen ska köras.
 
-+++
+   +++
 
    +++Daily
 
@@ -87,7 +87,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Definiera den tid som kampanjen ska köras varje dag.
 
-+++
+   +++
 
    +++Flera gånger om dagen
 
@@ -96,7 +96,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Selected hours]**: Välj de tider som kampanjen ska köras och konfigurera den dagliga upprepningen (verkställs varje veckodag eller på vissa dagar).
    * **[!UICONTROL Periodic]**: Välj att köra kampanjen var n minut eller timme. Du kan också definiera tidsintervallet inom dagen när körningar tillåts.
 
-+++
+   +++
 
    +++Vecka
 
@@ -107,7 +107,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Daily recurrence]**: Välj specifika veckodagar för körning (t.ex. varje måndag och torsdag).
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras på valda dagar.
 
-+++
+   +++
 
    +++Månad
 
@@ -123,7 +123,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras.
 
-+++
+   +++
 
 1. Använd inställningen **[!UICONTROL Validity period]** för att definiera ett specifikt start- och slutdatum, vilket begränsar kampanjens körning till ett tidsbegränsat fönster.
 
