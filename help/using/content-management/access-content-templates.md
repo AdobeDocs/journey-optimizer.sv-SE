@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
-source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
+source-git-commit: a9f2eae6398f92a40accb62b1d4544bda031559c
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Om du vill komma åt innehållsmalllistan väljer du **[!UICONTROL Content Manag
 
 ![](assets/content-template-list.png)
 
-Alla mallar som skapades i den aktuella sandlådan, antingen från en resa eller en kampanj med alternativet **[!UICONTROL Save as template]**, antingen från menyn **[!UICONTROL Content Templates]**, visas. [Lär dig skapa mallar](#create-content-templates)
+Alla mallar som skapats i den aktuella sandlådan, antingen från en resa eller en kampanj med alternativet **[!UICONTROL Save as template]** eller från menyn **[!UICONTROL Content Templates]**, visas. [Lär dig skapa mallar](#create-content-templates)
 
 I rutan till vänster kan du ordna innehållsmallar i mappar. Som standard visas alla mallar. När du väljer en mapp visas endast de mallar och mappar som finns i den valda mappen. [Läs mer](#folders)
 
@@ -31,18 +31,19 @@ I rutan till vänster kan du ordna innehållsmallar i mappar. Som standard visas
 Om du vill söka efter ett visst objekt börjar du skriva ett namn i sökfältet. När en [mapp](#folders) är markerad gäller sökningen alla innehållsmallar eller mappar på den första nivån i hierarkin i mappen<!--(not nested items)-->.
 
 Du kan sortera innehållsmallar efter:
+
 * Typ
 * Kanal
 * Skapad eller ändrad den
 * Taggar - [Läs mer om taggar](../start/search-filter-categorize.md#tags)
 
-Du kan också välja att bara visa de objekt som du själv har skapat eller ändrat.
+Du kan också välja att bara visa de objekt som du har skapat eller ändrat.
 
 ![](assets/content-template-list-filters.png)
 
 >[!NOTE]
 >
->Från och med mars 2025 är HTML-mallar för typografi nu föråldrade. Du kan fortfarande komma åt befintliga HTML-innehållsmallar som tidigare skapats i [!DNL Journey Optimizer].
+>Från och med mars 2025 är innehållsmallar av HTML-typ föråldrade. Du kan fortfarande komma åt befintliga HTML-innehållsmallar som tidigare skapats i [!DNL Journey Optimizer].
 
 ## Använda mappar för att hantera innehållsmallar {#folders}
 
@@ -74,7 +75,7 @@ Om du enkelt vill navigera bland dina innehållsmallar kan du använda mappar f�
 
    ![](assets/content-template-folder-moved.png)
 
-1. Nu kan du navigera till mappen som du nyss skapade. Varje ny innehållsmall som du [skapar](create-content-templates.md) från här sparas i den aktuella mappen.
+1. Navigera till mappen som du nyss skapade. Varje ny innehållsmall som du [skapar](create-content-templates.md) från här sparas i den aktuella mappen.
 
    ![](assets/content-template-folder-create.png)
 
@@ -104,12 +105,13 @@ Välj läget **[!UICONTROL Grid view]** om du vill visa varje mall som en miniat
 
 >[!NOTE]
 >
->För närvarande kan riktiga miniatyrbilder bara skapas för e-postmallar av HTML-typ.
+>Korrekta miniatyrbilder kan bara skapas för e-postmallar av HTML-typ.
 
-När du uppdaterar ett innehåll kan du behöva vänta några sekunder innan ändringarna visas i miniatyrbilden.
+När du uppdaterar innehåll väntar du några sekunder på att ändringarna ska visas i miniatyrbilden.
 
 ## Exportera innehållsmallar till en annan sandlåda {#export}
 
 Med Journey Optimizer kan du kopiera en innehållsmall från en sandlåda till en annan. Du kan till exempel kopiera en mall från sandlådemiljön på scenen till produktionssandlådan.
 
-Kopieringsprocessen utförs via en **paketexport och import** mellan käll- och målsandlådorna. Detaljerad information om hur du exporterar objekt och importerar dem till en målsandlåda finns i det här avsnittet: [Kopiera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)
+Kopieringsprocessen utförs via en **paketexport och import** mellan käll- och målsandlådan. Detaljerad information om hur du exporterar objekt och importerar dem till en målsandlåda finns i det här avsnittet: [Kopiera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)
+

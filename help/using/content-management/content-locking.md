@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: f64fe1c4-3e30-4b74-80f8-b801a5f1d4c4
-source-git-commit: 67ebea8b1b46ee20735eee0680656e82f2839c41
+source-git-commit: a9f2eae6398f92a40accb62b1d4544bda031559c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -34,20 +34,20 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_email_locking_activated"
 >title="Styrning har aktiverats"
->abstract="Lås innehåll aktiveras och kan förhindra att du gör ändringar."
+>abstract="Låsning av innehåll aktiveras och förhindrar ändringar."
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_locking_read_only"
 >title="Skrivskyddad"
 >abstract="Det här innehållet är skrivskyddat och kan inte ändras."
 
-Med Journey Optimizer kan du låsa innehåll i e-postmallar, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. På så sätt kan ni förhindra oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer.
+Med Journey Optimizer kan du låsa innehåll i e-postmallar, antingen genom att låsa hela mallen eller specifika strukturer och komponenter. Detta förhindrar oavsiktliga redigeringar och borttagningar, vilket ger er bättre kontroll över mallanpassning och förbättrar effektiviteten och tillförlitligheten i era e-postkampanjer.
 
 >[!IMPORTANT]
 >
->Lås innehåll är en funktion på redigeringsnivå för författare och garanterar inte att innehållet inte redigeras när det importeras eller skapas via API.
+>Lås innehåll är en funktion på redigeringsnivå för författare och garanterar inte att innehållet förblir oredigerat när det importeras eller skapas via API.
 
-Innehållslås kan användas antingen på **strukturnivå** eller på **komponentnivå**. Här är huvudprinciperna som gäller på struktur- och komponentnivå när innehåll låses i mallen.
+Innehållslås kan användas antingen på **strukturnivå** eller på **komponentnivå**. Nedan följer de huvudprinciper som gäller på struktur- och komponentnivå när du låser innehåll i mallen:
 
 * När en struktur är låst:
 
@@ -65,7 +65,7 @@ Innehållslås kan användas antingen på **strukturnivå** eller på **komponen
 >
 >Användare med behörighet att skapa innehållsmallar kan aktivera låsning av innehåll.
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Lås en e-postmall {#define}
 
@@ -95,9 +95,9 @@ Du kan aktivera innehållslås för en e-postmall direkt i e-postmallen Designer
    * [Lär dig låsa strukturer](#lock-structures)
    * [Lär dig låsa komponenter](#lock-components)
 
-   Om du väljer läget **[!UICONTROL Read only]** kan du fortsätta med att slutföra och spara mallen som vanligt.
+   Om du väljer läget **[!UICONTROL Read only]** fortsätter du med att slutföra och spara mallen som vanligt.
 
-Du kan justera inställningarna för **[!UICONTROL Governance]** när som helst när du designar mallen genom att välja mallbrödtexten. Det gör du genom att klicka på länken **[!UICONTROL Body]** i navigeringsfältet som finns högst upp på den högra panelen.
+Du kan justera inställningarna för **[!UICONTROL Governance]** när som helst när du designar mallen genom att välja mallbrödtexten. Det gör du genom att klicka på länken **[!UICONTROL Body]** i navigeringsfältet som finns högst upp i den högra rutan.
 
 ![](assets/template-lock-body.png)
 
@@ -173,7 +173,7 @@ När du använder en mall med låst innehåll visas meddelandet **[!UICONTROL Go
 
 Beroende på vilken typ av låsning som används för mallen kan du utföra olika åtgärder för mallens strukturer och komponenter. Om du snabbt vill identifiera alla redigerbara områden i mallen aktiverar du alternativet **[!UICONTROL Highlight editable areas]**.
 
-I mallen nedan är till exempel alla områden redigerbara, förutom den översta bilden som har låsts, vilket innebär att du inte kan redigera eller ta bort den.
+I mallen nedan är till exempel alla områden redigerbara förutom den översta bilden, som har låsts, vilket innebär att du inte kan redigera eller ta bort den.
 
 ![](assets/template-lock-highlight.png)
 
@@ -182,8 +182,7 @@ Detaljerad information om olika typer av låsning som kan användas finns i föl
 * [Lås strukturer](#lock-structures)
 * [Lås komponenter](#lock-components)
 
-Här är några exempel på e-postutgåvan och den tillhörande konfigurationen för låsning av innehåll som har konfigurerats:
-
+Här är några exempel på e-postutgåvor och tillhörande konfigurationer för låsning av innehåll som har konfigurerats:
 
 | Typ av låsning av innehåll | Mallkonfiguration | E-postversion |
 | ------- | ------- | ------- |
@@ -197,4 +196,4 @@ Här är några exempel på e-postutgåvan och den tillhörande konfigurationen 
 
 Lär dig låsa innehåll i e-postmallar.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451611?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3451591?quality=12)
