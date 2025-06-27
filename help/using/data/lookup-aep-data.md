@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: 4c78163cfc34937888cd323b461246f5955232bb
+source-git-commit: 416f82a932f0b484d8463ff24090a7061461822f
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 * **Antalet poster** är begränsat till 5 miljoner i produktionsdatamängder och 1 MB i dev sandbox-datamängder.
 * **Dataanvändningsetiketter och -tvång** används inte för närvarande för datauppsättningar som har aktiverats för sökning.
 * **Datauppsättningar som är aktiverade för sökning och används för personalisering är inte skyddade från borttagning**. Det är upp till dig att hålla reda på vilka datauppsättningar som används för personalisering för att säkerställa att de inte tas bort eller tas bort.
-* **Dataanvändningsetiketter och -tvång** används inte för närvarande för datauppsättningar som har aktiverats för sökning.
 
 ## Aktivera en datauppsättning för datasökning {#enable}
 
