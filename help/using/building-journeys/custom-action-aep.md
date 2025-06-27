@@ -8,18 +8,18 @@ topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 824cbf12502f0a52e27636dddee38cb7dee94bf4
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# Användningsfall: Använd anpassade åtgärder för att skriva resehändelser i Experience Platform {#custom-action-aep}
+# Använda anpassade åtgärder för att skriva reseventen i Experience Platform {#custom-action-aep}
 
 Det här användningsexemplet förklarar hur du skriver anpassade händelser till Adobe Experience Platform från Journeys med hjälp av anpassade åtgärder och autentiserade samtal.
 
-## Konfigurera ett IO-projekt {#custom-action-aep-IO}
+## Konfigurera ett utvecklarprojekt {#custom-action-aep-IO}
 
 1. Klicka på **Projekt** i Adobe Developer Console och öppna IO-projektet.
 
@@ -39,9 +39,9 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 >[!CAUTION]
 >
->När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
+>När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
 
-## Konfigurera Source med HTTP API Inlet
+## Konfigurera källan med HTTP API Inlet
 
 1. Skapa en slutpunkt i Adobe Experience Platform för att skriva data från resor.
 

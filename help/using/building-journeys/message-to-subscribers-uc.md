@@ -9,14 +9,14 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: resa, användningsfall, meddelande, prenumeranter, lista, läsa
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 824cbf12502f0a52e27636dddee38cb7dee94bf4
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '304'
 ht-degree: 2%
 
 ---
 
-# Användningsfall: skicka ett meddelande till prenumeranterna i en lista{#send-a-message-to-the-subscribers-of-a-list}
+# Skicka ett meddelande till prenumeranterna av en lista {#send-a-message-to-the-subscribers-of-a-list}
 
 Syftet med det här användningsexemplet är att skapa en resa för att skicka ett meddelande till prenumeranterna av en lista.
 
