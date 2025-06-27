@@ -8,10 +8,10 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttrycksredigerare, data, resa
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
-source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
+source-git-commit: b69023669b6ca59ea5980b1a671a90c41eb665fb
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 57%
+source-wordcount: '694'
+ht-degree: 55%
 
 ---
 
@@ -29,7 +29,7 @@ Den är också tillgänglig varje gång du behöver definiera åtgärdsparametra
 ![](../assets/journey65.png)
 
 
-Den avancerade uttrycksredigeraren har en uppsättning inbyggda funktioner och operatorer som du använder för att manipulera värden och definiera ett uttryck som passar dina behov. Med den avancerade uttrycksredigeraren kan du även definiera värden för den externa datakällans parameter samt ändra kartläggningsfält och samlingar, till exempel upplevelsehändelser.
+Den avancerade uttrycksredigeraren har en uppsättning inbyggda funktioner och operatorer som du använder för att manipulera värden och definiera ett uttryck som passar dina behov. Med den avancerade uttrycksredigeraren kan du också definiera värden för den externa datakällparametern, manipulera mappningsfält och samlingar.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Till vänster på skärmen visas tillgängliga fält och funktioner:
 
   >[!CAUTION]
   >
-  >Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck ](../../building-journeys/functions/functioninaudience.md).
+  >Det går inte att skapa uttryck med upplevelsehändelser. Det finns referenser till alternativa metoder och bästa praxis för att skapa uttryck/logik med upplevelsehändelser [här](../../building-journeys/exp-event-lookup.md)
 
 * **[!UICONTROL Audiences]**: Om du har släppt en **[!UICONTROL Audience qualification]** -händelse väljer du den målgrupp du vill använda i ditt uttryck. [Läs mer](../condition-activity.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: välj i listan över fält som är tillgängliga från fältgrupperna i datakällorna. [Läs mer](../../datasource/about-data-sources.md)

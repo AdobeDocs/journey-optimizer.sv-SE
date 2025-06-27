@@ -8,16 +8,16 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: syntax, redigerare, resa
 exl-id: c9434b28-2750-4a53-985e-c4a3f940472c
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: dbb1a4d649f29b763121c7856cecca16dcd2864f
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
 
 # Syntax för avancerad uttrycksredigerare {#syntax}
 
-Syntaxgrunderna när du använder [redigeraren för avancerade uttryck](expressionadvanced.md) visas nedan. Exempel på användning av den avancerade uttrycksredigeraren finns på [den här sidan](advanced-editor-use-cases.md).
+Syntaxgrunderna när du använder [redigeraren för avancerade uttryck](expressionadvanced.md) visas nedan. <!-- Samples of use of the advanced expression editor are available on [this page](advanced-editor-use-cases.md).-->
 
 ## Parenteser och uttrycksprioritet {#parentheses-and-expression-priority}
 

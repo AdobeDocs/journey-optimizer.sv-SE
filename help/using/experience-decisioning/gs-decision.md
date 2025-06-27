@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
-source-git-commit: a9dc2998097c45bd6235af3f5c08bc7077dc3f2f
+source-git-commit: dbb1a4d649f29b763121c7856cecca16dcd2864f
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 19%
+source-wordcount: '285'
+ht-degree: 20%
 
 ---
 
@@ -31,12 +31,12 @@ För närvarande tillhandahåller [!DNL Journey Optimizer] de två kärnlösning
 
 Vårt nästa generations beslutsramverk, utformat för att förena befintliga Journey Optimizer-arbetsflöden och lägga grunden för hantering av ytterligare innehållskataloger. Beslutserbjudanden:
 
-* Schemabaserad hantering av artikelkataloger: Öka flexibiliteten genom att associera anpassade metadata med varje erbjudande.
-* Flexibla regler för insamling: Gruppera enkelt erbjudanden för framtida utvärdering baserat på olika kriterier.
-* Uppdaterad policy för beslut och konfiguration av urvalsstrategi: Tillåt återanvändning av beslutskomponenter.
-* Experimentationsfunktioner: Testa beslutslogik mot andra innehållskomponenter för att mäta prestanda.
+* Schemabaserad hantering av artikelkataloger: Öka flexibiliteten genom att associera anpassade metadata med varje erbjudande
+* Flexibla samlingsregler: gruppera enkelt erbjudanden för framtida utvärdering baserat på olika kriterier
+* Uppdaterad policy och konfiguration av urvalsstrategi: Tillåt återanvändning av beslutskomponenter
+* Experimentationsfunktioner: Testa beslutslogik mot andra innehållskomponenter för att mäta prestanda
 
-För närvarande stöds Experience Decision i den kodbaserade Experience-kanalen.
+Experience Decision stöds i den kodbaserade Experience-kanalen.
 
 ➡️ [Kom igång med beslut](../experience-decisioning/gs-experience-decisioning.md)
 

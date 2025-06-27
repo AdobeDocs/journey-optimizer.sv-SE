@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: scheman, XDM, plattform, direktuppspelning, förtäring, resa
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: d79e42cd42fa8342526e02116f65a8e53449fad5
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 0%
 [!DNL Journey Optimizer] händelser är XDM Experience Events som skickas till Adobe Experience Platform via Streaming Ingakes.
 
 Därför är en viktig förutsättning för att du ska kunna konfigurera händelser för [!DNL Journey Optimizer] att du känner till Adobe Experience Platform Experience Data Model (eller XDM) och hur du skapar XDM Experience Event-scheman samt hur du direktuppspelar XDM-formaterade data till Adobe Experience Platform.
+
+
+>[!CAUTION]
+>
+>Upplevelsehändelsesökningar i resevillkor stöds inte längre. Här kan du få tips på andra sätt. Om du har en händelse som utlöses av en reseupplevelse som fortfarande behöver uppslag för Experience-händelser och som inte kan hanteras via något av alternativen i listan, ber vi dig kontakta din Adobe-representant så hjälper vi dig att nå ditt mål.
+>
+>Åtkomst till kontext från starthändelsen av en resa påverkas inte.
 
 ## Schemakrav för [!DNL Journey Optimizer]-händelser  {#schema-requirements}
 
@@ -42,7 +49,7 @@ Alla XDM-scheman som används för [!DNL Journey Optimizer]-händelser ska uppfy
 
   ![](assets/schema4.png)
 
-* Om du vill att dessa data ska vara tillgängliga för sökning senare i en resa markerar du schemat och datauppsättningen för profil.
+* Om du vill att dessa data ska vara tillgängliga för profilen markerar du schema och datauppsättning för profil. [Läs mer](../data/lookup-aep-data.md)
 
   ![](assets/schema5.png)
 
@@ -54,81 +61,83 @@ Alla XDM-scheman som används för [!DNL Journey Optimizer]-händelser ska uppfy
 
   ![](assets/schema8.png)
 
-## Utnyttja schemarelationer{#leverage_schema_relationships}
+<!--
+## Leverage schema relationships{#leverage_schema_relationships}
 
-Med Adobe Experience Platform kan du definiera relationer mellan scheman för att kunna använda en datauppsättning som en uppslagstabell för en annan.
+Adobe Experience Platform allows you to define relationships between schemas in order to use one dataset as a lookup table for another. 
 
-Låt oss säga att er varumärkesdatamodell har ett schema som fångar upp inköp. Du har också ett schema för produktkatalogen. Du kan hämta produkt-ID:t i inköpsschemat och använda en relation för att söka efter mer fullständig produktinformation från produktkatalogen. På så sätt kan ni skapa en målgrupp för alla kunder som har köpt en bärbar dator, till exempel, utan att behöva göra en explicit lista över alla bärbara ID:n eller hämta alla produktdetaljer i transaktionssystem.
+Let's say your brand data model has a schema capturing purchases. You also have a schema for the product catalog. You can capture the product ID in the purchase schema and use a relationship to look up more complete product details from the product catalog. This allows you to create an audience for all customers who bought a laptop, for example, without having to explicitly list out all laptop IDs or capture every single product details in transactional systems.
 
-Om du vill definiera en relation måste du ha ett dedikerat fält i källschemat, i det här fallet produkt-ID-fältet i inköpsschemat. Det här fältet måste referera till produkt-ID-fältet i målschemat. Käll- och måltabellerna måste vara aktiverade för profiler och målschemat måste ha det gemensamma fältet definierat som sin primära identitet.
+To define a relationship, you need to have a dedicated field in the source schema, in this case the product ID field in the purchase schema. This field needs to reference the product ID field in the destination schema. The source and destination tables must be enabled for profiles and the destination schema must have that common field defined as its primary identity. 
 
-Här är produktkatalogschemat aktiverat för profilen med produkt-ID definierat som primär identitet.
+Here is the product catalog schema enabled for profile with the product ID defined as the primary identity. 
 
 ![](assets/schema9.png)
 
-Här är inköpsschemat med relationen definierad i produkt-ID-fältet.
+Here is the purchase schema with the relationship defined on the product ID field.
 
 ![](assets/schema10.png)
 
 >[!NOTE]
 >
->Läs mer om schemarelationer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=sv-SE).
+>Learn more about schema relationships in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html).
 
-I Journey Optimizer kan du sedan använda alla fält från de länkade tabellerna:
+In Journey Optimizer, you can then leverage all the fields from the linked tables:
 
-* [Läs mer](../event/experience-event-schema.md#unitary_event_configuration) när du konfigurerar en affärshändelse eller en enhetshändelse
-* [Läs mer](../event/experience-event-schema.md#journey_conditions_using_event_context) när villkor används i en resa
-* i meddelandeanpassning, [Läs mer](../event/experience-event-schema.md#message_personalization)
-* i anpassad åtgärdspersonalisering, [Läs mer](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context)
+* when configuring a business or unitary event, [Read more](../event/experience-event-schema.md#unitary_event_configuration) 
+* when using conditions in a journey, [Read more](../event/experience-event-schema.md#journey_conditions_using_event_context) 
+* in message personalization, [Read more](../event/experience-event-schema.md#message_personalization) 
+* in custom action personalization, [Read more](../event/experience-event-schema.md#custom_action_personalization_with_journey_event_context) 
 
-### Arrayer{#relationships_limitations}
+### Arrays{#relationships_limitations}
 
-Du kan definiera en schemarelation för en array med strängar, till exempel en lista med produkt-ID:n.
+You can define a schema relationship on an array of strings, for example, a list of product IDs.
 
 ![](assets/schema15.png)
 
-Du kan också definiera en schemarelation med ett attribut inuti en objektmatris, till exempel en lista med inköpsinformation (produkt-ID, produktnamn, pris, rabatt). Uppslagsvärdena är tillgängliga i resor (villkor, anpassade åtgärder osv.) och meddelandepersonalisering.
+You can also define a schema relationship with an attribute inside of an array of objects, for example a list of purchase information (product ID, product name, price, discount). The lookup values will be available in journeys (conditions, custom actions, etc.) and message personalization. 
 
 ![](assets/schema16.png)
 
-### Händelsekonfiguration{#unitary_event_configuration}
+### Event configuration{#unitary_event_configuration}
 
-De länkade schemafälten är tillgängliga i enhets- och affärshändelsekonfigurationen:
+The linked schema fields are available in unitary and business event configuration:
 
-* när du bläddrar genom händelseschemafälten på händelsens konfigurationsskärm.
-* när du definierar ett villkor för systemgenererade händelser.
+* when browsing through the event schema fields in the event configuration screen.
+* when defining a condition for system-generated events.
 
 ![](assets/schema11.png)
 
-De länkade fälten är inte tillgängliga:
+The linked fields are not available:
 
-* i händelsenyckelformeln
-* händelse-id-villkor (regelbaserade händelser)
+* in the event key formula
+* in event id condition (rule-based events)
 
-Mer information om hur du konfigurerar en enhetshändelse finns på [sidan](../event/about-creating.md).
+To learn how to configure a unitary event, refer to this [page](../event/about-creating.md).
 
-### Resevillkor med händelsetyp{#journey_conditions_using_event_context}
+### Journey conditions using event context{#journey_conditions_using_event_context}
 
-Du kan använda data från en uppslagstabell som är länkad till en händelse som används i en resa för villkorsuppbyggnad (uttrycksredigeraren).
+You can use data from a lookup table linked to an event used in a journey for condition building (expression editor).
 
-Lägg till ett villkor i en resa, redigera uttrycket och visa händelsnoden i uttrycksredigeraren.
+Add a condition in a journey, edit the expression and unfold the event node in the expression editor. 
 
 ![](assets/schema12.png)
 
-Mer information om hur du definierar resevillkor finns på [sidan](../building-journeys/condition-activity.md).
+To learn how to define journey conditions, refer to this [page](../building-journeys/condition-activity.md).
 
-### Skräddarsytt meddelande{#message_personalization}
+### Message personalization{#message_personalization}
 
-De länkade fälten är tillgängliga när du anpassar ett meddelande. De relaterade fälten visas i det sammanhang som skickas från resan till meddelandet.
+The linked fields are available when personalizing a message. The related fields are displayed in the context passed from the journey to the message.
 
 ![](assets/schema14.png)
 
-Om du vill lära dig hur du anpassar ett meddelande med sammanhangsbaserad reseinformation kan du läsa den här [sidan](../personalization/personalization-use-case.md).
+To learn how to personalize a message with contextual journey information, refer to this [page](../personalization/personalization-use-case.md).
 
-### Anpassad åtgärdspersonalisering med reseventkontext{#custom_action_personalization_with_journey_event_context}
+### Custom action personalization with journey event context{#custom_action_personalization_with_journey_event_context}
 
-De länkade fälten är tillgängliga när åtgärdsparametrarna för en anpassad åtgärdsaktivitet för resan konfigureras.
+The linked fields are available when configuring the action parameters of a journey custom action activity. 
 
 ![](assets/schema13.png)
 
-Mer information om hur du använder anpassade åtgärder finns på [sidan](../building-journeys/using-custom-actions.md).
+To learn how to use custom actions, refer to this [page](../building-journeys/using-custom-actions.md).
+-->

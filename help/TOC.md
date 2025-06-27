@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3078d9d95327e58e98366d9d8f0d0dfd1c571bec
+source-git-commit: e1cbaaf30f376c1bb32a16dcc8a09686e0b9e231
 workflow-type: tm+mt
-source-wordcount: '2473'
+source-wordcount: '2474'
 ht-degree: 20%
 
 ---
@@ -167,15 +167,15 @@ ht-degree: 20%
             + [övre](using/building-journeys/functions/functionupper.md)
             + [uuid](using/building-journeys/functions/functionuuid.md)
    + Användningsfall {#journey-use-cases}
-      + Användningsexempel {#business-use-cases}
-         + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
-         + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/ajo-ac.md)
-         + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
-      + Tekniska användningsfall {#technical-use-cases}
-         + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
-         + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
-         + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
-         + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
+      + [Lär dig mer om användningsexempel](using/building-journeys/jo-use-cases.md)
+      + [Uppslag med upplevelsehändelser](using/building-journeys/exp-event-lookup.md)
+      + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
+      + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/ajo-ac.md)
+      + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
+      + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
+      + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
+      + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
+      + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Samordnade kampanjer {#orchestrated-campaigns}
    + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
    + [Konfigurationssteg](using/orchestrated/configuration-steps.md)
@@ -714,7 +714,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

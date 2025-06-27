@@ -8,18 +8,21 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: fråga, samlingar, funktioner, nyttolast, resa
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
-source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
+source-git-commit: ca2e30ddb5e80783b57b9f3e0d07ff8d0bc0bbdb
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 0%
+source-wordcount: '502'
+ht-degree: 1%
 
 ---
 
 # Funktioner för att hantera samlingar {#collection-management-functions}
 
-Uttrycksspråket innehåller även en uppsättning funktioner för att fråga efter samlingar.
 
-Dessa funktioner förklaras nedan. I följande exempel använder vi händelsens nyttolast som innehåller en samling:
+## Om funktioner för frågesamling
+
+Uttrycksspråket innehåller även en uppsättning funktioner för att fråga efter samlingar. Dessa funktioner förklaras nedan.
+
+I följande exempel använder vi händelsens nyttolast som innehåller en samling:
 
 ```json
                 { 
@@ -61,7 +64,7 @@ Dessa funktioner förklaras nedan. I följande exempel använder vi händelsens 
 }
 ```
 
-**Funktionen &quot;all(`<condition>`)&quot;**
+## Funktionen all(`<condition>`)
 
 Funktionen **[!UICONTROL all]** aktiverar definitionen av ett filter för en given samling genom att använda ett booleskt uttryck.
 
@@ -74,13 +77,11 @@ Bland alla appanvändare kan du till exempel hämta de som använder IOS 13 (boo
 I en Data Source Condition-aktivitet kan du kontrollera om resultatet av **[!UICONTROL all]**-funktionen är null eller inte. Du kan också kombinera den här **[!UICONTROL all]**-funktionen med andra funktioner som **[!UICONTROL count]**. Mer information finns i [Datavillkorsaktivitet för Source](../condition-activity.md#data_source_condition).
 
 
-## Exempel
-
 >[!CAUTION]
 >
->Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck ](../../building-journeys/functions/functioninaudience.md).
+>Det finns inte stöd för att använda upplevelsehändelser i uttryck/villkor för resan. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder. [Läs mer](../exp-event-lookup.md)
 
-**Exempel 1:**
+### Exempel 1
 
 Vi vill kontrollera om en användare har installerat en specifik version av ett program. För detta får vi alla push-meddelandetoken som är associerade med mobilprogram som har version 1.0. Sedan utför vi ett villkor med funktionen **[!UICONTROL count]** för att kontrollera att den returnerade tokenlistan innehåller minst ett element.
 
@@ -90,7 +91,7 @@ count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTo
 
 Resultatet är sant.
 
-**Exempel 2:**
+### Exempel 2
 
 Här använder vi funktionen **[!UICONTROL count]** för att kontrollera om det finns push-meddelandetoken i samlingen.
 
@@ -98,34 +99,8 @@ Här använder vi funktionen **[!UICONTROL count]** för att kontrollera om det 
 count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) > 0
 ```
 
-Resultatet blir sant.
 
-<!--Alternatively, you can check if there is no token in the collection:
-
-   ```json
-   count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) == 0
-   ```
-
-The result will be false.
-
-Here we use the count function in a condition to count the number of push notification tokens in the event.
-
-`count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token})`
-
-The result is true.
-
-Note that when the condition in the **all()** function is empty, the filter will return all the elements in the list. Hence, the expression above is equivalent to:
-
-`count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.application.name})`
-
-In both cases, the result of the expression is **3**.
-
-A query of experience events recorded on the Adobe Experience Platform may or may not include the current event that triggered the current Journey. This will depend on the relative processing time with which [!DNL Journey Orchestration] sees an event and started evaluating conditions, versus the time it takes for that event to be ingested into the Adobe Experience Platform. For example, when using the .all() syntax to query experience events from the Adobe Experience Platform, we recommend enforcing the exclusion of the current event (by requiring an
-earlier timestamp) in order to only consider prior events.-->
-
->[!NOTE]
->
->När filtervillkoret i funktionen **all()** är tomt returnerar filtret alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.**
+Resultatet är sant.
 
 
 ```json
@@ -134,53 +109,17 @@ count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTo
 
 Resultatet av uttrycket är **3**.
 
-**Exempel 3:**
-
-Här kontrollerar vi om en individ inte har fått någon information inom de senaste 24 timmarna. Vi filtrerar samlingen av upplevelsehändelser som hämtats från ExperiencePlatform-datakällan med två uttryck som baseras på två element i samlingen. Händelsens tidsstämpel jämförs med den dateTime som returneras av funktionen **[!UICONTROL nowWithDelta]**.
-
-```json
-count(#{ExperiencePlatform.MarltonExperience.experienceevent.all(
-   currentDataPackField.directMarketing.sends.value > 0 and
-   currentDataPackField.timestamp > nowWithDelta(-1, "days")).timestamp}) == 0
-```
-
-Resultatet blir true om det inte finns någon upplevelsehändelse som matchar de två villkoren.
-
-**Exempel 4:**
-
-Här ska vi kontrollera om en individ har startat minst en gång ett program de senaste 7 dagarna, till exempel för att utlösa ett push-meddelande som bjuder in honom/henne att starta en självstudiekurs.
-
-```json
-count(
- #{ExperiencePlatform.AnalyticsData.experienceevent.all(
- nowWithDelta(-7,"days") <= currentDataPackField.timestamp
- and currentDataPackField.application.firstLaunches.value > 0
-)._id}) > 0
-```
-
-<!--**"All + Count" example 4:** here we use the count function in a boolean expression to see if there is push notification tokens in the collection.
-
-`count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().application.name}) > 0`
-
-The result will be:
-
-`true`
-
-Alternatively, you can check if there is NO token in the collection:
-
-`count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().application.name}) =0`
-
-The result will be:
-
-`false`-->
 
 >[!NOTE]
 >
->**[!UICONTROL currentEventField]** är bara tillgängligt när du hanterar händelsesamlingar, **[!UICONTROL currentDataPackField]** när du ändrar datakällsamlingar och **[!UICONTROL currentActionField]** när du ändrar anpassade åtgärdssvarssamlingar.
+>* När filtervillkoret i funktionen **all()** är tomt returnerar filtret alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.
 >
->När vi bearbetar samlingar med **[!UICONTROL all]**, **[!UICONTROL first]** och **[!UICONTROL last]** slingor för varje element i samlingen ett i taget. **[!UICONTROL currentEventField]**, **currentDataPackField** och **[!UICONTROL currentActionField]** motsvarar elementet som repeteras.
+>* `currentEventField` är bara tillgängligt när du hanterar händelsesamlingar, `currentDataPackField` när du ändrar datakällsamlingar och `currentActionField` när du ändrar anpassade åtgärdssvarssamlingar.
+>
+>  När vi bearbetar samlingar med `all`, `first` och `last` slingor för varje element i samlingen ett i taget. `currentEventField`, `currentDataPackField` och `currentActionField` motsvarar elementet som upprepas.
 
-**Funktionerna &quot;first(`<condition>`)&quot; och &quot;last(`<condition>`)&quot;**
+
+## Funktionerna first(`<condition>`) och last(`<condition>`)
 
 Funktionerna **[!UICONTROL first]** och **[!UICONTROL last]** aktiverar även definitionen av ett filter i samlingen när det första/sista elementet i listan som uppfyller filtret returneras.
 
@@ -188,25 +127,27 @@ _`<listExpression>.first(<condition>)`_
 
 _`<listExpression>.last(<condition>)`_
 
-**Exempel 1:**
+### Exempel 1
 
 Det här uttrycket returnerar den första push-meddelandetoken som är associerad med mobilprogram som versionen är 1.0 för.
 
+
 ```json
-@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.first(currentEventField.application.version == "1.0").token
+@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.first(currentEventField.application.version == "1.0").token}
 ```
 
-Resultatet är &quot;token_1&quot;.
+Resultatet är `token_1`.
 
-**Exempel 2:**
+### Exempel 2
 
 Det här uttrycket returnerar den senaste push-meddelandetoken som är associerad med mobilprogram för vilka versionen är 1.0.
+
 
 ```json
 @event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.last(currentEventField.application.version == "1.0").token}
 ```
 
-Resultatet är &quot;token_2&quot;.
+Resultatet är `token_2`.
 
 >[!NOTE]
 >
@@ -215,44 +156,22 @@ Resultatet är &quot;token_2&quot;.
 >* Funktionen **[!UICONTROL first]** returnerar den senaste händelsen
 >* Funktionen **[!UICONTROL last]** returnerar den äldsta.
 
-**Exempel 3:**
 
-Vi kontrollerar om den första (senaste) Adobe Analytics-händelsen med ett värde som inte är noll för DMA ID har ett värde som är lika med 602.
 
-```json
-#{ExperiencePlatform.AnalyticsProd_EvarsProps.experienceevent.first(
-currentDataPackField.placeContext.geo.dmaID > 0).placeContext.geo.dmaID} == 602
-```
-
-**Funktionen &quot;at(`<index>`)&quot;**
+## Funktionen at(`<index>`)
 
 Med funktionen **[!UICONTROL at]** kan du referera till ett specifikt element i en samling enligt ett index.
 Index 0 är samlingens första index.
 
 _`<listExpression>`.at(`<index>`)_
 
-**Exempel:**
+### Exempel
 
 Det här uttrycket returnerar listans andra push-meddelandetoken.
 
-```json
-@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}
-```
-
-Resultatet är &quot;token_2&quot;.
-
-**Andra exempel**
-
-Det här uttrycket returnerar produktnamnen baserat på SKU-värdet. Listan med de här produkterna finns i händelselistan, med villkoret händelse-ID.
 
 ```json
-#{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.all(currentDataPackField._aepgdcdevenablement2.purchase_event.receipt_nbr == "10-337-4016"). 
-_aepgdcdevenablement2.purchase_event.productListItems.all(currentDataPackField.SKU == "AB17 1234 1775 19DT B4DR 8HDK 762").name}
+@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}`
 ```
 
-Det här uttrycket hämtar namnet på den sista produkten i produktlistan för en e-handelshändelse där händelsetypen är productListAdds och det totala priset är större än eller lika med 150.
-
-```json
- #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.last(
-currentDataPackField.eventType == "commerce.productListAdds").productListItems.last(currentDataPackField.priceTotal >= 150).name}
-```
+Resultatet är `token_2`.

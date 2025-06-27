@@ -6,25 +6,36 @@ description: Läs mer om hur du skapar avancerade uttryck
 feature: Journeys
 role: Data Engineer, Architect
 level: Experienced
+hide: true
+hidefromtoc: true
 keywords: uttryck, villkor, användningsfall, händelser
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
-source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
+source-git-commit: dbb1a4d649f29b763121c7856cecca16dcd2864f
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
 
+
 # Exempel på avancerade uttryck{#advanced-expression-examples}
 
-Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. Dessa villkor gör att ni kan inrikta er på användare i tid, på datum, plats, varaktighet eller åtgärder som att köpa eller avstå från kundvagnar så att de kan återställas under resan.
+Den avancerade uttrycksredigeraren kan användas för att skapa villkor som gör att du kan filtrera användare på dina resor. Dessa villkor gör att du kan rikta in dig på användare i tid, datum, plats, längd, så att de kan återställas under resan.
 
 >[!CAUTION]
 >
->Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck ](../../building-journeys/functions/functioninaudience.md).
+>Det finns inte stöd för att använda upplevelsehändelser i uttryck/villkor för resan. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder. [Läs mer](../exp-event-lookup.md)
 
 
 ## Bygga villkor för upplevelsehändelser
+
+
+>[!CAUTION]
+>
+>Det finns inte stöd för att använda upplevelsehändelser i uttryck/villkor för resan. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder. [Läs mer](../exp-event-lookup.md)
+>
+
+
 
 Den avancerade uttrycksredigeraren är obligatorisk för att utföra frågor på tidsserier som en lista över inköp eller tidigare klick på meddelanden. Sådana frågor kan inte utföras med den enkla redigeraren.
 
@@ -43,9 +54,9 @@ Låt oss till exempel säga att ni vill rikta er mot kunder som har övergett en
 
 Först och främst målkunder som surfar i onlinebutiken men inte slutfört beställningen de senaste sju dagarna.
 
-<!--**This expression looks for a specified value in a string value:**
+**Det här uttrycket söker efter ett angivet värde i ett strängvärde:**
 
-`In ("addToCart", #{field reference from experience event})`-->
+`In ("addToCart", #{field reference from experience event})`
 
 **Det här uttrycket söker efter alla händelser för den här användaren som har angetts under de senaste 7 dagarna:**
 
@@ -152,4 +163,5 @@ substr(
 
 Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
-Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html?lang=sv-SE) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
+
+Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
