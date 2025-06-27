@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: inbyggd, källa, data, plattform, integrering
 exl-id: 9083e355-15e3-4d1f-91ae-03095e08ad16
-source-git-commit: dbb1a4d649f29b763121c7856cecca16dcd2864f
+source-git-commit: 8e020f79e0f44e6fc804fcceb149146f9644c777
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 8%
+source-wordcount: '389'
+ht-degree: 9%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_built_in"
 >title="Datakällan i Adobe Experience Platform"
->abstract="Adobe Experience Platform datakälla definierar anslutningen till Adobe kundprofil i realtid. Den här datakällan är inbyggd och förkonfigurerad och kan inte tas bort. Den är utformad för att hämta och använda data från kundprofiltjänsten i realtid (kontrollera t.ex. om personen som gjorde en resa är kvinna). Det gör att du kan använda profildata."
+>abstract="Adobe Experience Platform datakälla definierar anslutningen till Adobe kundprofil i realtid. Den här datakällan är inbyggd och förkonfigurerad och kan inte tas bort. Den är utformad för att hämta och använda data från kundprofiltjänsten i realtid (kontrollera t.ex. om personen som gjorde en resa är kvinna)."
 
-Adobe Experience Platform datakälla definierar anslutningen till Adobe kundprofil i realtid. Den här datakällan är inbyggd och förkonfigurerad och kan inte tas bort. Den här datakällan är utformad för att hämta och använda data från kundprofiltjänsten i realtid (kontrollera t.ex. om personen som gjorde en resa är kvinna). Det gör att du kan använda profildata. Mer information om Adobe kundprofil i realtid finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
+Adobe Experience Platform datakälla definierar anslutningen till Adobe kundprofil i realtid. Den här datakällan är inbyggd och förkonfigurerad och kan inte tas bort. Den här datakällan är utformad för att hämta och använda data från kundprofiltjänsten i realtid (kontrollera t.ex. om personen som gjorde en resa är kvinna). Mer information om Adobe kundprofil i realtid finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
 För att tillåta anslutningen till kundprofiltjänsten i realtid måste vi använda en nyckel för att identifiera en person och ett namnutrymme som kontextualiserar nyckeln. Därför kan du bara använda den här datakällan om dina resor börjar med en händelse som innehåller en nyckel och ett namnutrymme. [Läs mer](../building-journeys/journey.md).
 
