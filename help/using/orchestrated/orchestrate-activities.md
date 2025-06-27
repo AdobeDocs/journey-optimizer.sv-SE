@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
-source-git-commit: 185e4121a939f2b46b85865278a591c43ad01f27
+source-git-commit: 4d41920b9a0a1acadd97858718a2f80ee9ece8aa
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/><b>[Organisera aktiviteter](orchestrate-activities.md)</b><br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena&lbrace;1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/><b>[Organisera aktiviteter](orchestrate-activities.md)</b><br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena{1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -48,7 +48,7 @@ Du kan anpassa namnet på övergångarna mellan varje aktivitet. Det gör du gen
 
 ![](assets/canvas-transition.png)
 
-## Verktygsfältet Arbetsyta {#toolbar}
+### Verktygsfältet Arbetsyta {#toolbar}
 
 Verktygsfältet på arbetsytan innehåller alternativ för att enkelt ändra aktiviteterna och navigera på arbetsytan:
 
@@ -64,7 +64,7 @@ Verktygsfältet på arbetsytan innehåller alternativ för att enkelt ändra akt
 
 ![Ikon för kampanjinställningar](assets/do-not-localize/canvas-map.svg) Öppnar en ögonblicksbild av arbetsytan som visar att du finns.
 
-## Hantera aktiviteter {#manage}
+### Hantera aktiviteter {#manage}
 
 När du lägger till aktiviteter är åtgärdsknappar tillgängliga i egenskapsrutan, vilket gör att du kan utföra flera åtgärder.
 
@@ -82,7 +82,7 @@ När du lägger till aktiviteter är åtgärdsknappar tillgängliga i egenskapsr
 
 Flera **målaktiviteter**, till exempel **Kombinera** eller **Ta bort dubbletter**, gör att du kan bearbeta den återstående populationen och inkludera den i en ytterligare utgående övergång. Om du till exempel använder en **delad** -aktivitet består komplementet av den population som inte matchade någon av de tidigare definierade delmängderna. Aktivera alternativet **[!UICONTROL Generate complement]** om du vill använda den här funktionen.
 
-## Kopiera och klistra in aktiviteter {#copy}
+### Kopiera och klistra in aktiviteter {#copy}
 
 Du kan kopiera aktiviteter och klistra in dem på valfri iscensatt kampanjarbetsyta. Målkampanjen kan finnas på en annan webbläsarflik.
 
@@ -97,25 +97,25 @@ Klistra in aktiviteterna genom att klicka på knappen **+** för en övergång o
 
 ![](assets/orchestrated-copy-3.png){zoomable="yes"}{width="50%"}
 
-<!--## Example {#example}
+## Diagramexempel {#example}
 
-Here is an orchestrated campaign example designed to send an email to all customers (other than VIP customers) with an email who are interested in coffee machines.
+Här är ett exempel på en iscensatt kampanj som utformats för att skicka ett e-postmeddelande till alla kunder som har köpt minst 100 dollar, med undantag för alla kunder som har mindre än 50 förmånspoäng.
 
-![](assets/workflow-example.png){zoomable="yes"}{zoomable="yes"}
+![](assets/canvas-example-diagram.png){zoomable="yes"}
 
-To achieve this, activities below have been added:
+För att uppnå detta har följande aktiviteter lagts till:
 
-* A **[!UICONTROL Fork]** activity that divides the orchestrated campaign into three paths (one for each set of customer),
-* **[!UICONTROL Build audience]** activities to target the three sets of customers:
+* En **[!UICONTROL Fork]**-aktivitet delar upp den orkestrerade kampanjen i tre sökvägar.
+* **[!UICONTROL Build audience]** aktiviteter riktar sig till de tre uppsättningarna kunder:
 
-    * Customers with an email,
-    * Customers belonging to the pre-existing "Interrested in Coffee Machine(s)" audience,
-    * Customers belonging to the pre-existing "VIP ro reward" audience.
+   * Kunder med e-post
+   * Kunder som har köpt minst 100$,
+   * Kunder som har mindre än 50 poäng för lojalitet.
 
-* A **[!UICONTROL Combine]** activity that groups together customers with an email and those interested in coffee machines,
-* A **[!UICONTROL Combine]** activity that excludes VIP customers,
-* An **[!UICONTROL Email delivery]** activity that sends an email to the resulting customers. 
+* En **[!UICONTROL Combine]**-aktivitet grupperar kunder med ett e-postmeddelande och de som har köpt minst 100$,
+* En **[!UICONTROL Combine]**-aktivitet exkluderar kunder med mindre än 50 förmånspoäng,
+* En **[!UICONTROL Email delivery]**-aktivitet skickar ett e-postmeddelande till de resulterande kunderna.
 
-Once you have completed the orchestrated campaign, add en **[!UICONTROL End]** activity at the end of the diagram. This activity allow you to visually mark the end of a workflow and has no functional impact.
+## Nästa steg {#next}
 
-After successfully designing the orchestrated campaign diagram, you can execute the orchestrated campaign and track the progress of its various tasks. [Learn how to start an orchestrated campaign and monitor its execution](start-monitor-campaigns.md)-->
+När du har utformat det orkestrerade kampanjdiagrammet kan du köra den orkestrerade kampanjen och spåra förloppet för dess olika uppgifter. [Lär dig hur du startar en orkestrerad kampanj och övervakar dess körning](start-monitor-campaigns.md)
