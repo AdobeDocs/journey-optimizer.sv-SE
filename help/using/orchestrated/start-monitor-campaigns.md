@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: 445194fcc08efacdbf5f97a425d01229f82d11ea
+source-git-commit: f8afef4729e50b7c9899bf7f2fe282347220dfac
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/>&lt;br/[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/><b>[Starta och övervaka kampanjen](start-monitor-campaigns.md)</b><br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena&lbrace;1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](configuration-steps.md)<br/><br/>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa samordnade kampanjer](gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Skicka meddelanden med samordnade kampanjer](send-messages.md)<br/><br/><b>[Starta och övervaka kampanjen](start-monitor-campaigns.md)</b><br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](activities/and-join.md) - [Skapa målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kombinera](activities/combine.md) - [Ta bort dubbletter](activities/deduplication.md) - [Förbättra](activities/enrichment.md) - [Förena](activities/fork.md) - [Förena{1 ](activities/reconciliation.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -34,17 +34,27 @@ ht-degree: 0%
 
 När du har skapat dina arbetsytor och utformat arbetsytan kan du publicera den och övervaka hur den körs.
 
-## Starta en orkestrerad kampanj {#start}
+Du kan också köra kampanjen i testläge för att kontrollera dess körning och resultatet av de olika aktiviteterna.
 
-Om du vill starta en strukturerad kampanj går du till fliken **[!UICONTROL Orchestration]** på menyn **[!UICONTROL Campaigns]** och väljer den kampanj som ska startas. Klicka sedan på knappen **[!UICONTROL Play]** i det övre högra hörnet av arbetsytan.
+## Testa och publicera den samordnade kampanjen {#test}
+
+Med Journey Optimizer kan ni testa era samordnade kampanjer innan de publiceras. Detta gör att du kan kontrollera körningen och resultatet av de olika aktiviteterna som kampanjen består av och inte har någon funktionell effekt: Alla aktiviteter på arbetsytan körs, utom för aktiviteter som påverkar **[!UICONTROL Save audience]** och kanalaktiviteter.
+
+Om du vill starta en orkestrerad kampanj i testläge öppnar du den orkestrerade kampanjen och klickar sedan på knappen **[!UICONTROL Start]**.
+
+![](assets/campaign-start.png){zoomable="yes"}
 
 När den orkestrerade kampanjen körs, utförs varje aktivitet på arbetsytan i sekventiell ordning tills slutet på den orkestrerade kampanjen nås.
 
-Du kan spåra förloppet för målprofiler i realtid med ett visuellt flöde. På så sätt kan du snabbt identifiera status för varje aktivitet och antalet profiler som övergår mellan dem.
+Klicka på knappen **[!UICONTROL Publish]** när kampanjen är klar att publiceras. Det visuella flödet på arbetsytan startas om så att du kan se förloppet för profilerna i diagrammet.
+
+## Samordnade kampanjer, visuellt flöde
+
+När en strukturerad kampanj körs, antingen i testläge eller i produktion, kan ni spåra målprofilernas förlopp genom de olika aktiviteterna i realtid med hjälp av ett visuellt flöde. På så sätt kan du snabbt identifiera status för varje aktivitet och antalet profiler som övergår mellan dem.
 
 ![](assets/workflow-execution.png){zoomable="yes"}
 
-I samordnade kampanjer lagras data som transporteras från en aktivitet till en annan via övergångar i en tillfällig arbetstabell. Dessa data kan visas för varje övergång. Det gör du genom att markera en övergång och öppna dess egenskaper till höger på skärmen.
+Data som transporteras från en aktivitet till en annan genom övergångar lagras i en temporär arbetstabell. Dessa data kan visas för varje övergång. Det gör du genom att markera en övergång och öppna dess egenskaper till höger på skärmen.
 
 * Klicka på **[!UICONTROL Preview schema]** för att visa arbetstabellens schema.
 * Klicka på **[!UICONTROL Preview results]** om du vill visa de data som har transporterats i den valda övergången.
@@ -55,7 +65,7 @@ I samordnade kampanjer lagras data som transporteras från en aktivitet till en 
 
 ### Körning av övervakningsaktivitet {#activities}
 
-Med visuella indikatorer i det övre högra hörnet av varje aktivitetsruta kan du kontrollera deras körning:
+Med visuella indikatorer i varje aktivitetsruta kan du kontrollera deras körning:
 
 | Visuell indikator | Beskrivning |
 |-----|------------|
