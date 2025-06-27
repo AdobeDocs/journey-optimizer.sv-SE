@@ -8,7 +8,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
-source-git-commit: 4a14c76aeceba624cd252890e37ccf3e42049597
+source-git-commit: 0a96368f2aefa1ffa6e12d08d679b2d360701127
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Använd det här biblioteket som referenspunkt när du utformar resor, modellera
   <td>
     <div>
     <a href="../data/datasets-query-examples.md">
-    <img alt="frågeexempel" src="../assets/do-not-localize/icon-data.svg" width="35px" /></a> 
+    <img alt="frågeexempel" src="../assets/do-not-localize/icon-data.svg"/></a> 
     <br>Om du vill bygga upp dina användningsfall måste du fråga Adobe Journey Optimizer datauppsättningar, till exempel systemdatauppsättningar för inhämtning av upplevelsehändelser för spårning, datauppsättningen för inhämtning av steg under en resa, datauppsättningen för inhämtning av erbjudandeförslag till användarna, och mycket annat.
     </div>
       <div>
