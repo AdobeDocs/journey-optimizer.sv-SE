@@ -138,7 +138,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >
@@ -156,7 +156,7 @@ Du vill till exempel prioritera alla erbjudanden med attributet&quot;hot&quot; o
 
 Om du vill använda attribut som hör till dina beslutsobjekt i formler måste du följa rätt syntax i rankningsformelns kod. Expandera varje avsnitt för mer information:
 
-+++ utnyttja standardattribut för beslutsunderlag
+++ + utnyttja standardattribut för beslutsunderlag
 
 ![](../assets/formula-attribute.png)
 
