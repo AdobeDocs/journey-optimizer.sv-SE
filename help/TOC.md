@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d0ac966780349ab10c47dd9ea915ca4f5964e938
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2490'
 ht-degree: 20%
 
 ---
@@ -548,10 +548,16 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Konfigurera artikelkatalogen](using/experience-decisioning/catalogs.md)
          + [Skapa beslutsobjekt](using/experience-decisioning/items.md)
          + [Hantera artikelsamlingar](using/experience-decisioning/collections.md)
-      + Konfigurera artikelval {#selection}
-         + [Skapa beslutsregler](using/experience-decisioning/rules.md)
-         + [Skapa rangordningsmetoder](using/experience-decisioning/ranking.md)
-         + [Använda AI-formelverktyget](using/experience-decisioning/exd-ranking-formulas.md)
+      + [Skapa beslutsregler](using/experience-decisioning/rules.md)
+      + Skapa rankningar {#rankings}
+         + [Skapa rangordningsmetoder](using/experience-decisioning/ranking/ranking.md)
+         + [Använda AI-formelverktyget](using/experience-decisioning/ranking/ranking-formulas.md)
+         + AI-modeller {#ai-models}
+            + [Om AI-modeller](using/experience-decisioning/ranking/ai-models.md)
+            + [Automatisk optimeringsmodell](using/experience-decisioning/ranking/auto-optimization-model.md)
+            + [Anpassad optimeringsmodell](using/experience-decisioning/ranking/personalized-optimization-model.md)
+            + [Skapa AI-modeller](using/experience-decisioning/ranking/create-ai-models.md)
+      + Använd Adobe Experience Platform-data {#aep-data}
          + [Utnyttja kontextdata](using/experience-decisioning/context-data.md)
          + [Använd Adobe Experience Platform för beslut](using/experience-decisioning/aep-data-exd.md)
       + [Skapa urvalsstrategier](using/experience-decisioning/selection-strategies.md)
@@ -579,7 +585,6 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Rankningsformler](using/offers/ranking/create-ranking-formulas.md)
          + AI-modeller {#ai-models}
             + [Om AI-modeller](using/offers/ranking/ai-models.md)
-            + AI-modelltyper {#ai-model-types}
             + [Automatisk optimeringsmodell](using/offers/ranking/auto-optimization-model.md)
             + [Anpassad optimeringsmodell](using/offers/ranking/personalized-optimization-model.md)
             + [Skapa AI-modeller](using/offers/ranking/create-ranking-strategies.md)
@@ -715,7 +720,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

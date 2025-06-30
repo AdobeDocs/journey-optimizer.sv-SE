@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: dbb1a4d649f29b763121c7856cecca16dcd2864f
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 4%
@@ -50,13 +50,13 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
    1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
       ![](assets/decision_permission_3.png)
 
    Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
-   +++
++++
 
 1. **Konfigurera anpassade attribut**: Anpassa objektkatalogen efter dina specifika krav genom att konfigurera anpassade attribut i katalogschemat.
 
@@ -76,7 +76,7 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
 1. **Implementera rangordningsmetoder**: Skapa rangordningsmetoder och tillämpa dem inom urvalsstrategier för att fastställa prioritetsordningen för val av beslutsobjekt.
 
-   ➡️ [Lär dig hur du skapar rankningsmetoder](ranking.md)
+   ➡️ [Lär dig hur du skapar rankningsmetoder](ranking/ranking.md)
 
 1. **Skapa urvalsstrategier**: Bygg urvalsstrategier som utnyttjar samlingar, beslutsregler och rangordningsmetoder för att identifiera de beslutsobjekt som är lämpliga att visa för profiler.
 

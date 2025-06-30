@@ -8,7 +8,8 @@ role: Data Engineer, Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: e5c457494d5d79d1a7951b9172c39c91007e2651
+exl-id: 96c1326f-be40-4738-8997-a67dc14872bb
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -52,9 +53,9 @@ Börja med att skapa schemat som ska användas i din datauppsättning:
 
 >[!NOTE]
 >
->Läs mer om att skapa scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=sv-SE#understanding-schemas){target="_blank"}.
+>Läs mer om att skapa scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#understanding-schemas){target="_blank"}.
 
-du är nu redo att skapa en datauppsättning med det här schemat. Gör så här:
+Du är nu redo att skapa en datauppsättning med det här schemat. Gör så här:
 
 1. Välj **[!UICONTROL Datasets]** på menyn **[!UICONTROL Data Management]** och gå till fliken **[!UICONTROL Browse]**.
 
@@ -70,4 +71,4 @@ du är nu redo att skapa en datauppsättning med det här schemat. Gör så här
 
 >[!NOTE]
 >
->Den här datauppsättningen kan nu väljas för att samla in händelsedata när en AI-modell <!--add link to Creat AI models section--> skapas.
+>Den här datauppsättningen kan nu väljas för att samla in händelsedata när en [AI-modell](../ranking/create-ai-models.md) skapas.

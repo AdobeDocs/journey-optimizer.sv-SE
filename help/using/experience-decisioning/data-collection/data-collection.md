@@ -7,7 +7,8 @@ role: User, Data Engineer, Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: e5c457494d5d79d1a7951b9172c39c91007e2651
+exl-id: 32e3a5b9-0633-48df-95b5-c03536be23a1
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 1%
@@ -22,7 +23,7 @@ Du kan samla in feedback om offertbeslut i Adobe Experience Platform, inklusive 
 
 * Disponerar [beslutsrapporter](../cja-reporting.md);
 * Använder [begränsning](../items.md#capping)-regler;
-* Skapar AI-modeller <!--add link--> som kan användas som en rangordningsmetod.
+* Skapar [AI-modeller](../ranking/ai-models.md) som kan användas som en rangordningsmetod.
 
 ## Olika typer av händelser
 
@@ -46,9 +47,9 @@ Feedback om visningar och klickningar hämtas beroende på vilken [!DNL Journey 
 
 De **flesta kanaler** kräver dock att visningar och klickdata skickas till Adobe Experience Platform som en **upplevelsehändelse**. Detta inkluderar:
 
-* Webbsidor som använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} för att återge erbjudanden
+* Webbsidor som använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} för att återge erbjudanden
 
-* Mobilappar som använder [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=sv-SE){target="_blank"} för att återge erbjudanden - [Läs mer](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#ab-sj-tracking-servers){target="_blank"}
+* Mobilappar som använder [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} för att återge erbjudanden - [Läs mer](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#ab-sj-tracking-servers){target="_blank"}
 * Kiosker
 * Meddelanden som skickas via program från tredje part
   <!--Mobile push notifications authored by [!DNL Journey Optimizer] - [Learn more](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/api-reference/#handlenotificationresponse){target="_blank"}-->

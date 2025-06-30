@@ -6,7 +6,7 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 6e603bc1-0813-435a-9349-d8585a7a0997
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Experience Decision är tillgängligt i dag via den kodbaserade upplevelsekanalen.
 
-Kodbaserad upplevelse stöder alla typer av kundimplementeringar:
+Kodbaserade upplevelser stöder alla typer av kundimplementeringar:
 
 * Om du har en **klientsidesimplementering** kan du använda någon av AEP klientens SDK: AEP Web SDK eller AEP Mobile SDK.
 * Om du har en **serversidesimplementering** kan du använda ett AEP Edge Network-API.

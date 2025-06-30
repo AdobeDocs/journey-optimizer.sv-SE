@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
-source-git-commit: dbb1a4d649f29b763121c7856cecca16dcd2864f
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 20%
@@ -36,7 +36,7 @@ Vårt nästa generations beslutsramverk, utformat för att förena befintliga Jo
 * Uppdaterad policy och konfiguration av urvalsstrategi: Tillåt återanvändning av beslutskomponenter
 * Experimentationsfunktioner: Testa beslutslogik mot andra innehållskomponenter för att mäta prestanda
 
-Experience Decision stöds i den kodbaserade Experience-kanalen.
+Beslutsfattandet stöds för närvarande i den kodbaserade upplevelsekanalen.
 
 ➡️ [Kom igång med beslut](../experience-decisioning/gs-experience-decisioning.md)
 

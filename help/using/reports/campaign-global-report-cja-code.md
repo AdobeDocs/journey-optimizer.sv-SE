@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d35a0e1c-2376-4cc5-88fc-5f8dfcfae666
-source-git-commit: 07704f99aff7d92e8db76755f6617345bac56590
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ Tabellen **[!UICONTROL Decision Items Performance]** utvärderar hur väl varje 
 
 >[!NOTE]
 >
->Tabellen **[!UICONTROL Ranking Strategy]** blir bara tillgänglig när en AI-modell har integrerats i kampanjen. [Läs mer](../experience-decisioning/ranking.md)
+>Tabellen **[!UICONTROL Ranking Strategy]** blir bara tillgänglig när en [AI-modell](../experience-decisioning/ranking/ai-models.md) har införlivats i kampanjen. <!--[Learn more](../experience-decisioning/ranking/ranking-formulas.md)-->
 
 ![](assets/cja-decision-ranking-strategy.png)
 
@@ -161,7 +161,7 @@ Viktiga mätvärden som visas är:
 
 >[!NOTE]
 >
->Diagrammet **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]** blir bara tillgängligt när en AI-modell har integrerats i kampanjen. [Läs mer](../experience-decisioning/ranking.md)
+>Diagrammet **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]** blir bara tillgängligt när en [AI-modell](../experience-decisioning/ranking/ai-models.md) har infogats i kampanjen. <!--[Learn more](../experience-decisioning/ranking/ranking-formulas.md)-->
 
 ![](assets/cja-decisioning-conversion.png)
 
@@ -173,4 +173,4 @@ Diagrammet **[!UICONTROL Conversion rate for Holdout and Model Driven traffic]**
 
 >[!CAUTION]
 >
->När du använder en AI-modell som ingår i en [rankningsformel](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula) återspeglas inte data i konverteringsrapporten.
+>När du använder en AI-modell som ingår i en [rankningsformel](../experience-decisioning/ranking/ranking-formulas.md) återspeglas inte data i konverteringsrapporten.

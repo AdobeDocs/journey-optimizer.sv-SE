@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
-source-git-commit: ebefeb59a19e831ec7f86cee690a35fe71e14554
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Observera följande begränsningar och riktlinjer innan du börjar:
 
 Om du vill använda data från en [!DNL Adobe Experience Platform]-datauppsättning för beslut måste du först aktivera den för sökning via ett API-anrop. Detaljerade anvisningar finns i det här avsnittet: [Utnyttja Adobe Experience Platform-datauppsättningar i Journey Optimizer](../data/lookup-aep-data.md).
 
-## Använd Adobe Experience Platform-data för beslut
+## Utnyttja Adobe Experience Platform data {#leverage-aep-data}
 
 När en datauppsättning har aktiverats för sökning kan du använda dess attribut för att berika din beslutslogik med externa data. Detta är särskilt användbart för attribut som ändras ofta, t.ex. produkttillgänglighet eller realtidspriser.
 
@@ -86,7 +86,7 @@ Så här använder du Adobe Experience Platform-data i beslutsregler:
 
    ![](assets/exd-lookup-menu.png)
 
-### Rankningsformler
+### Rankningsformler {#ranking-formulas}
 
 Rankningsformler definierar prioriteten för beslutsposter. Genom att använda [!DNL Adobe Experience Platform]-datauppsättningsattribut kan du justera rankningslogiken dynamiskt för att återspegla verkliga förhållanden.
 
@@ -107,6 +107,6 @@ Så här använder du Adobe Experience Platform-data i rankningsformler:
    >
    >Du kan skapa upp till tre mappningar per rankningsformel.
 
-1. Använd datauppsättningsfälten för att skapa din rankningsformel som vanligt. [Lär dig skapa en rankningsformel](../experience-decisioning/exd-ranking-formulas.md#create-ranking-formula)
+1. Använd datauppsättningsfälten för att skapa din rankningsformel som vanligt. [Lär dig skapa en rankningsformel](ranking/ranking-formulas.md#create-ranking-formula)
 
    ![](assets/exd-lookup-formula-criteria.png)

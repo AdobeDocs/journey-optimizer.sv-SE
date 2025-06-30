@@ -5,7 +5,7 @@ feature: Decisioning
 role: User
 level: Intermediate
 exl-id: 73548973-ff8d-4d6c-b383-dd3679fa159a
-source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 6%
@@ -18,28 +18,28 @@ För att säkerställa optimal användning av beslut bör du tänka på följand
 
 Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsningar finns i [det här avsnittet](../start/guardrails.md).
 
-## Beslutsförfrågningar
+## Beslutsförfrågningar {#decision-requests}
 
 | Guardrail | Gräns |
 | ------- | ------- |
 | Kodbaserad API-begäran för upplevelser med beslutspolicy med Edge segmentering | 1500 |
 | Kodbaserad API-begäran för upplevelser med beslutspolicy som inte använder Edge-segmentering | 5000 |
 
-## Artikelsamlingar
+## Artikelsamlingar {#item-collections}
 
 | Guardrail | Gräns |
 | ------- | ------- |
 | Objektsamlingar | 10 kB |
 | Totalt antal erbjudandeartiklar per artikelsamling | 500 |
 
-## Beslutspolitik
+## Beslutspolitik {#decision-policy}
 
 | Guardrail | Gräns |
 | ------- | ------- |
 | Antal urvalsstrategier och manuella poster per beslutspolicy | 10 |
 | Max antal erbjudandeartiklar som returneras per beslutspolicy | 30 |
 
-## Villkor för deltagande
+## Villkor för deltagande {#eligibility-rules}
 
 | Guardrail | Gräns |
 | ------- | ------- |
@@ -49,7 +49,7 @@ Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsn
 | Maximal storlek för pql-regel | 15 kB (UTF-8) |
 | Maximalt antal kapslingsnivåer | 30 |
 
-## Rankningsformler
+## Rankningsformler {#ranking-formulas}
 
 | Guardrail | Gräns |
 | ------- | ------- |
@@ -58,7 +58,7 @@ Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsn
 | Max antal kontextdataattribut | 30 |
 | Maximalt antal kapslingsnivåer | 30 |
 
-## Övriga
+## Övriga {#others}
 
 | Guardrail | Gräns |
 | ------- | ------- |

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 1b73b398-050a-40bb-a8ae-1c66e3e26ce8
-source-git-commit: e63a21b5dcc8f227d56c696c8fd0825c75684189
+source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 0%
 >id="ajo_exd_config_strategies"
 >title="Definiera era urvalsstrategier"
 >abstract="En urvalsstrategi kan återanvändas och består av en samling som är associerad med en begränsning för behörighet och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs ut i en beslutspolicy."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision" text="Skapa beslutsprofiler"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision" text="Skapa beslutsprofiler"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_strategy_eligibility"
 >title="Begränsa giltiga profiler"
 >abstract="Du kan begränsa urvalet av erbjudanden för den här urvalsstrategin. Som standard är alla profiler berättigade, men du kan använda målgrupper eller regler för att begränsa urvalet av erbjudanden till enbart specifika profiler."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules" text="Använd beslutsregler"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/selection/rules" text="Använd beslutsregler"
 
 En urvalsstrategi kan återanvändas och består av en samling som är associerad med en berättigandebegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs i en [beslutspolicy](create-decision.md).
 
@@ -88,7 +88,7 @@ Följ stegen nedan för att skapa en urvalsstrategi.
 >id="ajo_exd_strategy_ranking"
 >title="Definiera rangordnade erbjudanden"
 >abstract="Om flera erbjudanden är berättigade till en viss urvalsstrategi väljer du den metod som ska välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi: prioritet eller rankningsformel."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html?lang=sv-SE" text="Skapa beslutsprofiler"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision.html" text="Skapa beslutsprofiler"
 
 Om flera erbjudanden är berättigade till en viss urvalsstrategi kan du välja den metod som ska användas för att välja det bästa erbjudandet för varje profil när du skapar en urvalsstrategi. Du kan rangordna erbjudanden genom att:
 
@@ -98,9 +98,9 @@ Om flera erbjudanden är berättigade till en viss urvalsstrategi kan du välja 
 
 ### Prioritet {#offer-priority}
 
-När flera erbjudanden är berättigade till en viss placering i en beslutspolicy levereras som standard de objekt som har högst **prioritet** till kunderna först.
+När flera erbjudanden är berättigade enligt en beslutspolicy levereras som standard de objekt som har den högsta **prioriteten** till kunderna först.
 
-![](assets/item-priority.png)
+![](assets/item-priority.png){width=85%}
 
 Prioritetspoäng för erbjudanden tilldelas när ett [beslutsobjekt](items.md) skapas.
 
@@ -108,17 +108,17 @@ Prioritetspoäng för erbjudanden tilldelas när ett [beslutsobjekt](items.md) s
 
 Förutom att erbjuda prioritet kan du med Journey Optimizer skapa **rankningsformler**. Detta är formler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att beakta offertens prioritetspoäng.
 
-Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;. Lär dig hur du skapar en rankningsformel i [det här avsnittet](exd-ranking-formulas.md).
+Du kan till exempel öka prioriteten för alla erbjudanden där slutdatumet är mindre än 24 timmar från och med nu, eller öka erbjudandena från kategorin&quot;löpande&quot; om profilens intressepunkt är&quot;igång&quot;. Lär dig hur du skapar en rankningsformel i [det här avsnittet](ranking/ranking-formulas.md).
 
 När du har skapat den kan du använda den här formeln i en urvalsstrategi. Om flera erbjudanden kan presenteras när den här urvalsstrategin används kommer den valda formeln att användas för att beräkna vilket erbjudande som ska levereras först.
 
 ### AI-rankning {#ai-ranking}
 
-Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig hur du skapar en AI-modell i [det här avsnittet](../offers/ranking/ai-models.md).
+Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig hur du skapar en AI-modell i [det här avsnittet](ranking/create-ai-models.md).
 
 När en AI-modell har skapats kan du använda den i en urvalsstrategi. Om flera erbjudanden är berättigade avgör det tränade modellsystemet vilket erbjudande som ska presenteras först för denna urvalsstrategi.
 
 >[!NOTE]
 >
->För närvarande är rapporten [Lyft mätning](../offers/ranking/auto-optimization-model.md#lift) bara tillgänglig för AI-modellen [Personlig optimering](../offers/ranking/personalized-optimization-model.md).
+>För närvarande är rapporten [Lyft mätning](ranking/auto-optimization-model.md#lift) bara tillgänglig för AI-modellen [Personlig optimering](ranking/personalized-optimization-model.md).
 
