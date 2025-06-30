@@ -30,7 +30,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**_id
+**Fält:**&#x200B;_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -39,7 +39,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ upplevelse
 
-**Fält:**_upplevelse
+**Fält:**&#x200B;_upplevelse
 **Typ:** objekt
 
 +++
@@ -80,14 +80,14 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > decisioning > contents > components > Content Component Type**
 
-  **Fält:**_typ
+  **Fält:**&#x200B;_typ
   **Titel:** Innehållskomponenttyp
   **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som anges för innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schema som beskriver ytterligare egenskaper för innehållskomponenten.
   **Typ:** sträng
 
 * **_experience > Decision > contents > components > _dc**
 
-  **Fält:**_dc
+  **Fält:**&#x200B;_dc
   **Typ:** objekt
   **Obligatoriskt:** &quot;format&quot;
 
@@ -109,7 +109,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > Decision > contents > components > _repo**
 
-  **Fält:**_repo
+  **Fält:**&#x200B;_repo
   **Typ:** objekt
 
    * **id**
@@ -202,7 +202,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ repo
 
-**Fält:**_repo
+**Fält:**&#x200B;_repo
 **Typ:** objekt
 
 +++

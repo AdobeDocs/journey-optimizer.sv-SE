@@ -146,7 +146,7 @@ Här är ett exempel på en begäran som skickar kontextdata.
 
   ![](assets/context-edge-copy-scope.png)
 
-+++
+  +++
 
 ```
 {

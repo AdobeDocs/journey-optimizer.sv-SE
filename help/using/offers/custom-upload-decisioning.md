@@ -31,6 +31,7 @@ Mer information om anpassade uppladdningsgrupper finns i avsnitten:
 * Den här funktionen stöds endast i **Beslutshantering**, inte i beslut (tidigare kallat Experience Decision).
 * Den är exklusivt tillgänglig genom **Decisioning API (Hub)**-begäranden och stöds inte av **Edge Decisioning API** eller **batch-beslut**.
  
+
 ## Använd en anpassad publik som kvalificeringskriterier {#eligibilty}
 
 Du kan använda en anpassad uppladdningspublik som kvalificeringskriterier både på erbjudande- och beslutsnivå. När de lagts till kan dessa kriterier utesluta erbjudanden eller uppsättningar av erbjudanden från berättigandet. Här är de olika platser där du kan utnyttja anpassade målgrupper för uppladdning för att förfina erbjudanden och beslut:
