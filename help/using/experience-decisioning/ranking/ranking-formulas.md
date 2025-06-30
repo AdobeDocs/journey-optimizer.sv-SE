@@ -156,7 +156,7 @@ Du vill till exempel prioritera alla erbjudanden med attributet&quot;hot&quot; o
 
 Om du vill använda attribut som hör till dina beslutsobjekt i formler måste du följa rätt syntax i rankningsformelns kod. Expandera varje avsnitt för mer information:
 
-++ + utnyttja standardattribut för beslutsunderlag
++++ utnyttja standardattribut för beslutsunderlag
 
 ![](../assets/formula-attribute.png)
 
