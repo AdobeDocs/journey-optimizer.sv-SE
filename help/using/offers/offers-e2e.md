@@ -1,14 +1,15 @@
 ---
 title: Använd personaliserade erbjudanden i ett e-postmeddelande
 description: Upptäck ett heltäckande exempel som visar alla steg som behövs för att konfigurera erbjudanden och använda dem i ett e-postmeddelande.
+badge: label="Äldre" type="Informative"
 feature: Decision Management, Email
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1076'
 ht-degree: 2%
 
 ---

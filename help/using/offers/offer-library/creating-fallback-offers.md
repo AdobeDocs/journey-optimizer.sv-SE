@@ -1,15 +1,16 @@
 ---
 title: Skapa reserverbjudanden
 description: Lär dig hur du skapar reserverbjudanden för kunder som inte är berättigade till något erbjudande
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 Reserverbjudandet skickas till kunderna om de inte är berättigade till andra erbjudanden. Stegen för att skapa ett reserverbjudande består av att skapa en eller flera representationer, som när du skapar ett erbjudande.
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Listan över reserverbjudanden finns på menyn **[!UICONTROL Offers]**.
 

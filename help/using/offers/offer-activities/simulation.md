@@ -1,14 +1,15 @@
 ---
 title: Skapa simuleringar
 description: Lär dig hur du simulerar vilka erbjudanden som ska levereras för en viss placering för att validera din beslutslogik
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: da9e898b-8e5d-43da-9226-5c9ccb78e174
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -214,5 +215,5 @@ När du har lagt till ett beslutsområde och valt en testprofil kan du visa resu
 
    >[!NOTE]
    >
-   >När du kopierar begäran- eller svarsnyttolasterna till din egen kod måste du ersätta {USER_TOKEN} och {API_KEY} med giltiga värden. Lär dig hur du hämtar dessa värden i dokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=sv-SE){target="_blank"}.
+   >När du kopierar begäran- eller svarsnyttolasterna till din egen kod måste du ersätta {USER_TOKEN} och {API_KEY} med giltiga värden. Lär dig hur du hämtar dessa värden i dokumentationen för [Adobe Experience Platform API:er](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html){target="_blank"}.
 

@@ -1,15 +1,16 @@
 ---
 title: Skapa samlingskvalificerare
 description: Lär dig hur du skapar kravkvalificerare för dina erbjudanden
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: fe2b7ce4-dc63-477a-a64f-f3828c6a232e
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +25,7 @@ Genom att associera samlingskvalificerare (som tidigare kallats&quot;taggar&quot
 
 Samlingskvalificerare kan också användas för att gruppera erbjudanden i olika mängder. Se [Skapa samlingar](../offer-library/creating-collections.md).
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Listan med skapade samlingskvalificerare är tillgänglig på menyn **[!UICONTROL Components]**.
 

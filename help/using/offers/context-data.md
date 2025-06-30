@@ -3,16 +3,17 @@ product: experience platform
 solution: Experience Platform
 title: Kom igång med kontextdata
 description: Lär dig utnyttja kontextdata i beslutsprocessen.
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 role: Developer, Data Engineer
 level: Experienced
-source-git-commit: 9b66f4871d8b539bf0201b2974590672205a3243
+exl-id: 4e736f9d-0f05-4a79-8ebf-ea22517d78a9
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Kom igång med kontextdata {#context-data}
 
@@ -29,4 +30,3 @@ Detaljerad information om hur du använder kontextdata i varje API finns i följ
 
 * [Använd kontextdata i Edge Decisioning-begäranden](context-data-edge.md)
 * [Använd kontextdata i beslutsbegäranden](context-data-decisioning.md)
-

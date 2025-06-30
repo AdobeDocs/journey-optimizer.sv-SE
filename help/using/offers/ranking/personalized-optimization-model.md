@@ -3,13 +3,14 @@ product: experience platform
 solution: Experience Platform
 title: Anpassad optimeringsmodell
 description: Läs mer om personaliserade optimeringsmodeller
+badge: label="Äldre" type="Informative"
 feature: Ranking, Decision Management
 role: User
 level: Experienced
 exl-id: c73b3092-e96d-4957-88e6-500e99542782
-source-git-commit: 9188b144d1f98f57c585c3828420b9cd48d1d90a
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---

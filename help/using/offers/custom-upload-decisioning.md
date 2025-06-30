@@ -1,16 +1,17 @@
 ---
 title: Utnyttja anpassade uppladdningsmålgrupper för beslut
 description: Lär dig hur du utnyttjar anpassade uppladdningsmålgrupper för beslut.
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 role: User
 level: Intermediate
-source-git-commit: 1e46321de543196277613889c438dc6756e45652
+exl-id: bd950410-691b-49d8-8851-8c6c448c00fd
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
-
 
 # Utnyttja anpassade uppladdningsmålgrupper för beslut {#custom-upload-decisioning}
 
@@ -23,14 +24,13 @@ Data från anpassade uppladdningsgrupper kan utnyttjas i Beslutshantering för:
 
 Mer information om anpassade uppladdningsgrupper finns i avsnitten:
 * [Kom igång med målgrupper och Journey Optimizer](../audience/about-audiences.md)
-* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
+* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
 
 ## Måste läsas {#must-read}
 
 * Den här funktionen stöds endast i **Beslutshantering**, inte i beslut (tidigare kallat Experience Decision).
 * Den är exklusivt tillgänglig genom **Decisioning API (Hub)**-begäranden och stöds inte av **Edge Decisioning API** eller **batch-beslut**.
  
-
 ## Använd en anpassad publik som kvalificeringskriterier {#eligibilty}
 
 Du kan använda en anpassad uppladdningspublik som kvalificeringskriterier både på erbjudande- och beslutsnivå. När de lagts till kan dessa kriterier utesluta erbjudanden eller uppsättningar av erbjudanden från berättigandet. Här är de olika platser där du kan utnyttja anpassade målgrupper för uppladdning för att förfina erbjudanden och beslut:

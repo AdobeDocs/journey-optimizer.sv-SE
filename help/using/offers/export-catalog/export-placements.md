@@ -1,14 +1,15 @@
 ---
 title: Datauppsättning med placeringar
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för placeringar
+badge: label="Äldre" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer
 level: Intermediate
 exl-id: 3e45f3cf-e17e-43a6-8424-98afef07aaa3
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
@@ -31,7 +32,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -40,7 +41,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ upplevelse
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -105,7 +106,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
 +++

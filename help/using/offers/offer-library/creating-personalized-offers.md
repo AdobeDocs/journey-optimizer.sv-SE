@@ -1,15 +1,16 @@
 ---
 title: Skapa personaliserade erbjudanden
 description: Lär dig hur du skapar, konfigurerar och hanterar erbjudanden
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -21,7 +22,7 @@ Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 * Om du vill lägga till ett berättigandevillkor: en **beslutsregel** som definierar det villkor som erbjudandet presenteras under. Se [Skapa beslutsregler](../offer-library/creating-decision-rules.md).
 * En eller flera **samlingskvalificerare** (kallas tidigare taggar) som du kanske vill associera med erbjudandet. Se [Skapa samlingskvalificerare](../offer-library/creating-tags.md).
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Listan med anpassade erbjudanden finns på menyn **[!UICONTROL Offers]**.
 

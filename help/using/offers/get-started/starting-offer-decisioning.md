@@ -1,19 +1,24 @@
 ---
 title: Kom igång med Beslutshantering
 description: Lär dig om hur Adobe Journey Optimizer kan hjälpa dig att skicka rätt erbjudande till kunderna vid rätt tidpunkt
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '909'
 ht-degree: 49%
 
 ---
 
 # Kom igång med Beslutshantering {#about-decision-management}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsekanalen! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 
 Använd [!DNL Journey Optimizer] för att leverera det bästa erbjudandet och upplevelsen till dina kunder via alla kontaktpunkter vid rätt tidpunkt. När ni väl utformat er målgrupp kan ni inrikta er på personaliserade erbjudanden.
 
@@ -36,7 +41,7 @@ Några fördelar:
 
 >[!NOTE]
 >
->Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE){target="_blank"}-användare och använder **Offer Decisioning**-programmet gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
+>Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"}-användare och använder **Offer Decisioning**-programmet gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
 
 ## Om erbjudanden och beslut {#about-offers-and-decisions}
 

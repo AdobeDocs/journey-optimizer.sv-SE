@@ -1,15 +1,16 @@
 ---
 title: Skapa beslutsregler
 description: Lär dig hur du skapar beslutsregler som definierar vilka erbjudanden som kan visas
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
-source-git-commit: 91f52af0c2e42556c4456be9b6b0cb84378c2a23
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -21,7 +22,7 @@ Du kan skapa beslutsregler för erbjudanden baserat på data som är tillgängli
 
 Du kan t.ex. ange att du bara vill att ett &quot;Kläddererbjudande för kvinnor&quot; ska visas när (Kön = &quot;Kvinna&quot;) och (Region = &#39;Nordost&#39;).
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Här följer en lista över begränsningar som ska vara kända när man arbetar med beslutsregler:
 
@@ -51,7 +52,7 @@ Så här skapar du en beslutsregel:
 
    >[!NOTE]
    >
-   >Segment Builder som har tillhandahållits för att skapa beslutsregler har vissa egenskaper jämfört med den som används med tjänsten **[!UICONTROL Segmentation]**. Den globala processen som beskrivs i [Segment Builder](../../audience/creating-a-segment-definition.md) -dokumentationen är dock fortfarande giltig för att skapa beslutsregler för erbjudanden. Läs mer i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE).
+   >Segment Builder som har tillhandahållits för att skapa beslutsregler har vissa egenskaper jämfört med den som används med tjänsten **[!UICONTROL Segmentation]**. Den globala processen som beskrivs i [Segment Builder](../../audience/creating-a-segment-definition.md) -dokumentationen är dock fortfarande giltig för att skapa beslutsregler för erbjudanden. Läs mer i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
 
 1. När du lägger till och konfigurerar nya fält på arbetsytan visas information om de beräknade profilerna som tillhör målgruppen i rutan **[!UICONTROL Audience properties]**. Klicka på **[!UICONTROL Refresh estimate]** för att uppdatera data.
 
@@ -69,7 +70,7 @@ Så här skapar du en beslutsregel:
 
 >[!CAUTION]
 >
->Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE#events){target="_blank"} kan du inte utnyttja den i ett erbjudande.
+>Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} kan du inte utnyttja den i ett erbjudande.
 
 ## Självstudievideo {#video}
 

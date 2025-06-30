@@ -1,14 +1,15 @@
 ---
 title: Lägg till representationer i ett erbjudande
 description: Lär dig hur du lägger till representationer i dina erbjudanden
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 7e9174f8a21c71b8b8e7633d664d5de7d877c240
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -72,7 +73,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 >[!NOTE]
 >
-> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna tillhör produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer om [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html?lang=sv-SE){target="_blank"}.
+> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna tillhör produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer om [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
 
 1. Välj alternativet **[!UICONTROL Asset library]**.
 
@@ -88,9 +89,9 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 ### Lägga till HTML- eller JSON-filer {#html-json}
 
-Om den valda placeringen är av HTML-typ kan du även lägga till HTML- eller JSON-innehåll från [Adobe Experience Cloud-resursbiblioteket](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"}).
+Om den valda placeringen är av HTML-typ kan du även lägga till HTML- eller JSON-innehåll från [Adobe Experience Cloud-resursbiblioteket](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
 
-Du har t.ex. skapat en e-postmall från HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html?lang=sv-SE){target="_blank"} och vill använda den filen för ditt erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **resursbiblioteket** för att kunna återanvända den i offertens representationer.
+Du har t.ex. skapat en e-postmall från HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target="_blank"} och vill använda den filen för ditt erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **resursbiblioteket** för att kunna återanvända den i offertens representationer.
 
 Om du vill återanvända ditt innehåll i en representation bläddrar du till **resursbiblioteket** enligt beskrivningen i [det här avsnittet](#images) och väljer den HTML- eller JSON-fil du vill använda.
 
@@ -110,7 +111,7 @@ Läs mer om [Integrering av innehållsfragment med Journey Optimizer](../../inte
 
 Du vill till exempel anpassa bilden som visas som ett erbjudande. Man vill att användare som föredrar semestrar ska se NYC-skylten och användare som föredrar strandsemestrar ska se Hawaii i i nordkusten.
 
-Använd personaliseringsredigeraren för att hämta profilattribut som lagras i Adobe Experience Platform med fackscheman. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html?lang=sv-SE){target="_blank"}
+Använd personaliseringsredigeraren för att hämta profilattribut som lagras i Adobe Experience Platform med fackscheman. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
 
 ![](../assets/offer-content-url-personalization.png)
 

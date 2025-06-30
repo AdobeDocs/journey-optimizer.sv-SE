@@ -3,13 +3,14 @@ product: experience platform
 solution: Experience Platform
 title: Skapa en datauppsättning för att samla in händelser
 description: Lär dig hur du skapar en datauppsättning för att samla in händelser
+badge: label="Äldre" type="Informative"
 feature: Ranking, Decision Management, Datasets
 role: Data Engineer, Developer
 level: Experienced
 exl-id: 99963ef4-0b19-475e-96f4-2eac3f680c6f
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Börja med att skapa schemat som ska användas i din datauppsättning:
 
 >[!NOTE]
 >
->Läs mer om att skapa scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=sv-SE#understanding-schemas){target="_blank"}.
+>Läs mer om att skapa scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#understanding-schemas){target="_blank"}.
 
 du är nu redo att skapa en datauppsättning med det här schemat. Gör så här:
 

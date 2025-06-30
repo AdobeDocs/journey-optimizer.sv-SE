@@ -1,14 +1,15 @@
 ---
 title: Datauppsättning med personaliserade erbjudanden
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för erbjudanden
+badge: label="Äldre" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -40,7 +41,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ _upplevelse {#experience}
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -102,14 +103,14 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > decisioning > contents > components > Content Component Type**
 
-  **Fält:**&#x200B;_typ
+  **Fält:**_typ
   **Titel:** Innehållskomponenttyp
   **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som anges för innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schemat som beskriver ytterligare egenskaper för innehållskomponenten.
   **Typ:** sträng
 
 * **_experience > Decision > contents > components > _dc**
 
-  **Fält:**&#x200B;_dc
+  **Fält:**_dc
   **Typ:** objekt
   **Obligatoriskt:** &quot;format&quot;
 
@@ -122,7 +123,6 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
      **Exempel:** &quot;application/vnd.adobe.photoshop&quot;
 
    * **Språk**
-
      **Fält:** språk
      **Titel:** Språk
      **Beskrivning:** Resursens språk. \nSpråk anges i språkkoden enligt definitionen i [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt) som är en del av BCP 47, som används någon annanstans i XDM.
@@ -131,7 +131,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > Decision > contents > components > _repo**
 
-  **Fält:**&#x200B;_repo
+  **Fält:**_repo
   **Typ:** objekt
 
    * **id**
@@ -260,7 +260,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **Identifierare**
 
-  **Fält:**&#x200B;_id
+  **Fält:**_id
   **Titel:** Identifierare
   **Beskrivning:** Identitet för målgrupperna i det relaterade namnområdet.
   **Typ:** sträng
@@ -353,7 +353,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++_repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
 +++

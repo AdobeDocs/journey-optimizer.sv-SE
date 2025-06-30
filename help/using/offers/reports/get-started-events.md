@@ -1,14 +1,15 @@
 ---
 title: Arbeta med beslutsledningshändelser
 description: Lär dig skapa beslutsrapporter i Adobe Experience Platform.
+badge: label="Äldre" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer
 level: Intermediate
 exl-id: 51830c63-fa88-47e7-8605-192297fcf6b8
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '286'
 ht-degree: 39%
 
 ---

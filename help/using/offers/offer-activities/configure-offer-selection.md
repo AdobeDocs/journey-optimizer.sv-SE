@@ -1,14 +1,15 @@
 ---
 title: Konfigurera urval av erbjudanden i beslut
 description: Lär dig hur du hanterar urval av erbjudanden i beslut
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 8c7135d7-bf5a-4671-afdf-afec60907a56
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 3%
 
 ---
@@ -60,7 +61,7 @@ Om flera erbjudanden kan presenteras på den här platsen, kommer beslutet att a
 
 ## AI-rankning {#use-ranking-strategy}
 
-<!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE){target="_blank"} user leveraging the **Offer Decisioning** application service,-->
+<!--If you are an [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} user leveraging the **Offer Decisioning** application service,-->
 
 Du kan också använda ett utbildat modellsystem som automatiskt rangordnar erbjudanden för en viss profil genom att välja en AI-modell. Lär dig hur du skapar en AI-modell i [det här avsnittet](../ranking/create-ranking-strategies.md).
 

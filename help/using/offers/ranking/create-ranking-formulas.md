@@ -1,15 +1,16 @@
 ---
 title: Rankningsformler
 description: Lär dig hur du skapar formler för att rangordna erbjudanden
+badge: label="Äldre" type="Informative"
 feature: Ranking, Decision Management
 topic: Integrations
 role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 8bc808da-4796-4767-9433-71f1f2f0a432
-source-git-commit: 9b66f4871d8b539bf0201b2974590672205a3243
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 **Rankningsformler** gör att du kan definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till offertens prioritetspoäng.
 
-Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Mer information finns i [Konfigurera erbjudandeval i beslut](../offer-activities/configure-offer-selection.md).
 

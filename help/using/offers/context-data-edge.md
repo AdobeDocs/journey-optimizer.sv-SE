@@ -3,13 +3,14 @@ product: experience platform
 solution: Experience Platform
 title: Kontextdata och Edge Decisioneringsbegäranden
 description: Lär dig hur du skickar kontextdata i Edge Decisioning-begäranden.
+badge: label="Äldre" type="Informative"
 feature: Decision Management
 role: Developer, Data Engineer
 level: Experienced
 exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
-source-git-commit: 12a36b38958e2a3cdb702b4789a1a6dadf45e911
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -50,11 +51,11 @@ I motsats till att skicka kontext i ett ganska fritt format med hjälp av API:t 
 
    ![](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
 
-   Lär dig hur du arbetar med scheman i guiden [Experience Data Model (XDM)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home){target="_blank"} i Adobe Experience Platform
+   Lär dig hur du arbetar med scheman i guiden [Experience Data Model (XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home){target="_blank"} (Adobe Experience Platform Experience Data Model)
 
 1. Skapa en datauppsättning (här&quot;Erbjudandekontext&quot;) och se till att den är aktiverad för profilen.
 
-1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar datastream i Adobe Experience Platform [Datastreams-guiden](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure){target="_blank"}
+1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar datastream i Adobe Experience Platform [Datastreams-guiden](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure){target="_blank"}
 
    Här har vi skapat en datastam för&quot;Erbjudandekontext&quot; med händelseschemat&quot;Erbjudandeinnehåll&quot; markerat.
 
@@ -145,7 +146,7 @@ Här är ett exempel på en begäran som skickar kontextdata.
 
   ![](assets/context-edge-copy-scope.png)
 
-  +++
++++
 
 ```
 {

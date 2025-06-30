@@ -1,14 +1,15 @@
 ---
 title: Datainsamling
 description: Läs mer om insamling av feedback från beslutsfattare
+badge: label="Äldre" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
 role: User, Data Engineer, Developer
 level: Experienced
 exl-id: 278cb255-439c-4ce8-ab59-07df79774b98
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---
@@ -44,9 +45,9 @@ Feedback om visningar och klickningar hämtas beroende på vilken [!DNL Journey 
 
 De **flesta kanaler** kräver dock att visningar och klickdata skickas till Adobe Experience Platform som en **upplevelsehändelse**. Detta inkluderar:
 
-* Webbsidor som använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} för att återge erbjudanden
+* Webbsidor som använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} för att återge erbjudanden
 
-* Mobilappar som använder [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=sv-SE){target="_blank"} för att återge erbjudanden - [Läs mer](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#ab-sj-tracking-servers){target="_blank"}
+* Mobilappar som använder [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} för att återge erbjudanden - [Läs mer](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#ab-sj-tracking-servers){target="_blank"}
 * Kiosker
 * Meddelanden som skickas via program från tredje part
   <!--Mobile push notifications authored by [!DNL Journey Optimizer] - [Learn more](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/api-reference/#handlenotificationresponse){target="_blank"}-->
