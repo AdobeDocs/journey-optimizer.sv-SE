@@ -8,16 +8,18 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: cd47ca1d-f707-4425-b865-14f3fbbe5fd1
-source-git-commit: 7a8a0c133318b0bfc33b0fdb294e5b9ef53de9a5
+source-git-commit: f93d422dfeb5e0d658d40286882ee59b80ae9184
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1504'
 ht-degree: 0%
 
 ---
 
 # Anpassningsbara fragment {#customizable-fragments}
 
-När fragment används i en kampanj eller en reseåtgärd låses de som standard på grund av arv. Detta innebär att ändringar som görs i ett fragment automatiskt sprids till alla kampanjer och resor där fragmentet används. Med anpassningsbara fragment kan specifika fält i ett fragment definieras som redigerbara när fragmentet läggs till i en kampanj- eller reseåtgärd. Anta att du har ett fragment med en banderoll, text och en knapp. Du kan ange att vissa fält, t.ex. bild- eller knappens mål-URL, kan redigeras. Detta gör att användarna kan ändra dessa element när de inkluderar fragmentet i kampanjen eller resan, vilket ger en skräddarsydd upplevelse utan att det ursprungliga fragmentet påverkas.
+När fragment används i en kampanj eller en reseåtgärd låses de som standard på grund av arv. Detta innebär att ändringar som görs i ett fragment automatiskt sprids till alla kampanjer och resor där fragmentet används.
+
+Med **anpassningsbara fragment** kan specifika fält i ett fragment definieras som redigerbara när fragmentet läggs till i en kampanj eller en reseåtgärd. Anta att du har ett fragment med en banderoll, text och en knapp. Du kan ange att vissa fält, t.ex. bild- eller knappens mål-URL, kan redigeras. Detta gör att användarna kan ändra dessa element när de inkluderar fragmentet i kampanjen eller resan, vilket ger en skräddarsydd upplevelse utan att det ursprungliga fragmentet påverkas.
 
 Anpassningsbara fragment eliminerar behovet av att bryta fragmentarv, vilket tidigare förhindrade centraliserade ändringar på fragmentnivå från att spridas till kampanjer och resor. Med den här metoden kan innehållets delar justeras vid användningstidpunkten, vilket ger flexibilitet att åsidosätta standardvärden med kontextspecifika detaljer.
 
@@ -110,7 +112,7 @@ Så här deklarerar du en variabel och använder den i fragmentet:
 
    ![](assets/fragment-call-variable.png)
 
-1. Spara fragmentet.
+1. Spara och publicera fragmentet.
 
 När du lägger till fragmentet i e-postinnehållet kan användare nu åsidosätta variabelns standardvärden med sina valda värden:
 
@@ -118,7 +120,7 @@ När du lägger till fragmentet i e-postinnehållet kan användare nu åsidosät
 
 * För HTML-komponenter visas variabeln i listan med redigerbara fält i e-post-Designer. [Lär dig hur du anpassar redigerbara fält i ett visuellt fragment](../email/use-visual-fragments.md#customize-fields)
 
-## Exempel på redigerbart uttrycksfragment {#example}
+### Exempel på redigerbart uttrycksfragment {#example}
 
 I exemplet nedan skapar vi ett uttrycksfragment med nya sportsamlingar. Som standard visar fragmentet det här innehållet: *Letar du efter mer? Missa inte vår senaste sportsamling!*
 
@@ -142,11 +144,11 @@ För att göra detta:
 
 RTF, t.ex. radbrytningar, fet stil, kursiv stil, kan läggas till i ett redigerbart fragment med hjälp av HTML-komponenter. Följ stegen nedan för att göra det.
 
-➡️ [Lär dig hur du lägger till och använder RTF-text i en HTML-komponent i ett redigerbart fragment i den här videon](#video)
+➡️ [Lär dig hur du lägger till och använder RTF i ett redigerbart fragment i den här videon](#video)
 
 ### Skapa ett fragment med formaterad text {#add-rich-text}
 
-1. Skapa ett visuellt fragment och börja lägga till komponenter.
+1. Skapa ett visuellt [fragment](create-fragments.md) och börja lägga till komponenter.
 
 1. Lägg till en [HTML-komponent](../email/content-components.md#HTML) och öppna HTML Editor.
 
@@ -154,7 +156,7 @@ RTF, t.ex. radbrytningar, fet stil, kursiv stil, kan läggas till i ett redigerb
 
 1. Ersätt `"name"` med det ID som du vill använda för ditt redigerbara innehåll, till exempel&quot;EditableContent&quot;.
 
-1. Ersätt `render_content` med den HTML-kod som motsvarar det standardinnehåll du vill använda.
+1. Ersätt `render_content` med den HTML-kod som motsvarar det standardinnehåll du vill ha. Du kan lägga till fet, kursiv, radbrytningar, punktlistor osv.
 
    ![](assets/fragment-rich-editable-content.png)
 <!--
@@ -197,24 +199,28 @@ RTF, t.ex. radbrytningar, fet stil, kursiv stil, kan läggas till i ett redigerb
 
    ![](assets/fragment-rich-editable-fields.png)
 
-1. Publicera fragmentet.
+1. Spara och [publicera](create-fragments.md#publish) fragmentet.
 
 ### Använda redigerbara fragment för RTF {#use-rich-text}
 
-När du lägger till fragmentet i e-postinnehållet kan användarna nu redigera det formaterade textinnehållet och den formatering som du skapade. Följ stegen nedan om du vill använda redigerbara fragment av RTF-text för en markör.
+När du lägger till fragmentet i e-postinnehållet kan användarna nu redigera det formaterade textinnehållet och den formatering som du skapade. Följ stegen nedan om du vill använda redigerbara fragment med text som markör.
 
-1. Skapa ett e-postmeddelande i en kampanj eller en resa och lägg sedan till fragmentet som skapades.
+1. [Skapa ett e-postmeddelande](../email/create-email.md) i en kampanj eller resa och lägg sedan till fragmentet med RTF-text som [skapades](#add-rich-text).
 
-   Du kan se de två redigerbara fälten som skapades på den högra panelen.
+   Du kan se de två redigerbara fälten som skapades till höger.
 
    ![](assets/fragment-use-rich-editable-fields.png)
 
-1. Du kan klicka på **[!UICONTROL Simulate content]** för att se hur det redigerbara innehållet och formateringen återges.
+1. Du kan klicka på **[!UICONTROL Simulate content]** för att se hur det redigerbara innehållet och formateringen återges. [Läs mer om att förhandsgranska innehåll](preview-test.md)
 
-1. Markera ikonen **[!UICONTROL Add personalization]** bredvid ett av de redigerbara fälten och redigera CSS-formatet och/eller innehållet efter behov.
+1. Markera ikonen **[!UICONTROL Add personalization]** bredvid ett av de redigerbara fälten.
+
+1. I den anpassningsbara redigeraren som öppnas uppdaterar du <!--CSS-->formateringen och/eller innehållet efter behov genom att lägga till eller ta bort element från det redigerbara fältet.
+
+   ![](assets/fragment-rich-editable-fields-update-styling.png)
 
 ## Instruktionsvideo {#video}
 
 I den här videon visas hur du gör HTML-komponenter i ett fragment redigerbara så att både innehåll och format kan uppdateras dynamiskt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464372/?learn=on&#x26;enablevpops&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464363/?learn=on&#x26;enablevpops)
