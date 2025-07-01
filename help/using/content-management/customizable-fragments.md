@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: cd47ca1d-f707-4425-b865-14f3fbbe5fd1
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 7a8a0c133318b0bfc33b0fdb294e5b9ef53de9a5
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Både visuella fragment och uttrycksfragment kan markeras som anpassningsbara. D
 
 ![](../content-management/assets/do-not-localize/gif-fragments.gif)
 
-## Lägga till redigerbara fält i visuella fragment {#visual}
+## Lägg till redigerbara fält i visuella fragment {#visual}
 
 Gör så här för att göra delar av ett visuellt fragment redigerbara:
 
@@ -81,9 +81,11 @@ I koden nedan kan till exempel varje element som är markerat med rött bli en e
 
 Så här deklarerar du en variabel och använder den i fragmentet:
 
-1. Öppna uttrycksfragmentet och redigera sedan innehållet i personaliseringsredigeraren. För HTML-komponenter markerar du komponenten i fragmentet och klickar på knappen **Visa källkoden** .
+1. Öppna uttrycksfragmentet och redigera sedan innehållet i personaliseringsredigeraren.
 
    ![](assets/fragment-html-edit.png)
+
+   För HTML-komponenter markerar du komponenten i fragmentet och klickar på knappen **Visa källkoden** .
 
 1. Deklarera variabeln som du vill att användarna ska redigera. Navigera till menyn **Hjälpfunktioner** i den vänstra navigeringsrutan och lägg till hjälpfunktionen **inline** . Syntaxen för att deklarera och anropa variabeln läggs automatiskt till i innehållet.
 
@@ -135,3 +137,84 @@ För att göra detta:
 1. När du lägger till uttrycksfragmentet i innehållet kan användare ändra variabelns värde genom att välja direkt från uttrycksredigeraren. [Lär dig hur du anpassar redigerbara fält i ett uttrycksfragment](../personalization/use-expression-fragments.md#customize-fields)
 
    ![](assets/fragment-expression-use.png)
+
+## Lägga till formaterad text i ett anpassningsbart fragment {#rich-text}
+
+RTF, t.ex. radbrytningar, fet stil, kursiv stil, kan läggas till i ett redigerbart fragment med hjälp av HTML-komponenter. Följ stegen nedan för att göra det.
+
+➡️ [Lär dig hur du lägger till och använder RTF-text i en HTML-komponent i ett redigerbart fragment i den här videon](#video)
+
+### Skapa ett fragment med formaterad text {#add-rich-text}
+
+1. Skapa ett visuellt fragment och börja lägga till komponenter.
+
+1. Lägg till en [HTML-komponent](../email/content-components.md#HTML) och öppna HTML Editor.
+
+1. Navigera till **[!UICONTROL Helper functions]**-menyn i den vänstra navigeringsrutan och lägg till hjälpfunktionen **inline**.
+
+1. Ersätt `"name"` med det ID som du vill använda för ditt redigerbara innehåll, till exempel&quot;EditableContent&quot;.
+
+1. Ersätt `render_content` med den HTML-kod som motsvarar det standardinnehåll du vill använda.
+
+   ![](assets/fragment-rich-editable-content.png)
+<!--
+    +++For example:
+
+    ```html
+
+    <h1>Main title</h1>
+
+    <h2>Subtitle One</h2>
+    <p>This is a paragraph with a line break.<br>Here is the new line.</p>
+
+    <p class="bold">This text is bold.</p>
+    <p class="italic">This text is italic.</p>
+    <p class="bold-italic">This text is bold and italic.</p>
+
+    <ul>
+        <li>First bullet point</li>
+        <li>Second bullet point with more text</li>
+        <li>Third bullet point</li>
+    </ul>
+
+    <hr>
+
+    <h2>Subtitle Two</h2>
+    <blockquote>This is a blockquote or note with styled background and border.</blockquote>
+
+    ```
+
+    +++
+-->
+
+1. I samma HTML-komponent lägger du till ytterligare en **intern**-hjälpfunktion för dina formatelement.
+
+1. Ersätt `"name"` och `render_content` med det ID och den HTML-kod som motsvarar det standardformat som du vill använda.
+
+   ![](assets/fragment-rich-editable-styling.png)
+
+1. Spara innehållet. De markerade redigerbara fälten visas till höger.
+
+   ![](assets/fragment-rich-editable-fields.png)
+
+1. Publicera fragmentet.
+
+### Använda redigerbara fragment för RTF {#use-rich-text}
+
+När du lägger till fragmentet i e-postinnehållet kan användarna nu redigera det formaterade textinnehållet och den formatering som du skapade. Följ stegen nedan om du vill använda redigerbara fragment av RTF-text för en markör.
+
+1. Skapa ett e-postmeddelande i en kampanj eller en resa och lägg sedan till fragmentet som skapades.
+
+   Du kan se de två redigerbara fälten som skapades på den högra panelen.
+
+   ![](assets/fragment-use-rich-editable-fields.png)
+
+1. Du kan klicka på **[!UICONTROL Simulate content]** för att se hur det redigerbara innehållet och formateringen återges.
+
+1. Markera ikonen **[!UICONTROL Add personalization]** bredvid ett av de redigerbara fälten och redigera CSS-formatet och/eller innehållet efter behov.
+
+## Instruktionsvideo {#video}
+
+I den här videon visas hur du gör HTML-komponenter i ett fragment redigerbara så att både innehåll och format kan uppdateras dynamiskt.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3464363/?learn=on&#x26;enablevpops)

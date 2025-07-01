@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
-source-git-commit: 428e08ca712724cb0b3453681bee1c7e86ce49dc
+source-git-commit: 7a8a0c133318b0bfc33b0fdb294e5b9ef53de9a5
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '711'
 ht-degree: 1%
 
 ---
@@ -85,11 +85,13 @@ Om vissa delar av det markerade fragmentet har gjorts redigerbara kan du åsidos
 
 Så här anpassar du redigerbara fält i ett fragment:
 
-1. Lägg till fragmentet i ditt innehåll och markera det för att öppna egenskapspanelen till höger.
+1. Lägg till fragmentet i ditt innehåll.
 
-1. Alla redigerbara fält i fragmentet visas på fliken **Inställningar** under avsnittet **Fragment** .
+1. Markera den för att öppna egenskapsrutan till höger.
 
-   Redigerbara fält markeras med grönt i förhandsgranskningsfönstret när de markeras i den högra rutan, vilket gör det enkelt att identifiera var de finns i ditt innehåll.
+   Alla redigerbara fält i fragmentet visas på fliken **Inställningar** under avsnittet **Fragment** .
+
+1. När du markerar ett redigerbart fält i den högra rutan markeras det i grönt på den centrala förhandsvisningspanelen, vilket gör det enkelt att identifiera var det finns i ditt innehåll.
 
    I exemplet nedan kan bilden **source** och **alt text** redigeras, liksom knappen &quot;Klicka här&quot; **URL**.
 
