@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: cfb09467809a69516c34d52be3f41e7a1abdb7c3
+source-git-commit: 6a2b49d952408d6c9b0e147505f5112ada3f4967
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Följ stegen nedan för att konfigurera en leverans i samband med en orkestrerad
 
    ![bild som visar arbetsytan med tillgängliga aktiviteter](../assets/channel-add.png)
 
-1. Markera den tillagda aktiviteten och klicka på knappen **[!UICONTROL Edit Email]**, **[!UICONTROL Edit SMS]** eller **[!UICONTROL Edit Push]** beroende på den valda kanalen.
+1. Markera den tillagda aktiviteten och klicka på knappen **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]** eller **[!UICONTROL Edit Push]** beroende på den valda kanalen.
 
    ![bild som visar arbetsytan med en e-postaktivitet](../assets/channel-edit.png)
 
@@ -95,39 +95,32 @@ Följ stegen nedan för att konfigurera en leverans i samband med en orkestrerad
 
 ### Ställ in kanalkonfiguration och inställningar {#configuration}
 
-1. Välj fliken **[!UICONTROL Actions]** och välj den kanalkonfiguration som ska användas för meddelandet.
+På fliken **[!UICONTROL Actions]** kan du välja en kanalkonfiguration för meddelandet och konfigurera ytterligare inställningar som spårning, innehållsexperiment eller flerspråkigt innehåll.
+
+1. Välj den kanalkonfiguration som ska användas för meddelandet.
 
    En konfiguration definieras av en [systemadministratör](../../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Lär dig hur du konfigurerar kanalkonfigurationer](../../configuration/channel-surfaces.md).
 
-1. För e-post och SMS använder du spårningsalternativen för att övervaka hur mottagarna reagerar på e-post eller SMS-leveranser.
+   ![bild som visar avsnittet Åtgärder](../assets/channel-actions.png)
 
-   Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../../reports/campaign-global-report-cja.md)
+1. För e-post och SMS använder du alternativen i avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mottagare reagerar på e-post eller SMS-leveranser. Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../../reports/campaign-global-report-cja.md)
 
-1. För push-meddelanden använder du alternativet **[!UICONTROL Rapid delivery mode]** för att utföra snabbmeddelanden som skickas på Push-kanalen till en målgrupp som är mindre än 30 MB.
+1. För push-meddelanden använder du alternativet **[!UICONTROL Rapid delivery mode]** för att utföra snabbmeddelanden som skickas på Push-kanalen till en målgrupp som är mindre än 30 MB. Snabb leverans är ett **[!DNL Journey Optimizer]**-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer. [Läs mer](../../push/create-push.md#rapid-delivery)
 
-   Snabb leverans är ett **[!DNL Journey Optimizer]**-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer. [Läs mer](../../push/create-push.md#rapid-delivery)
+1. Använd avsnittet **[!UICONTROL Content experiment]** för att definiera flera leveransbehandlingar för att mäta vilken som fungerar bäst för målgruppen. Klicka på knappen **[!UICONTROL Create experiment]** och följ sedan stegen som beskrivs i det här avsnittet: [Skapa en funktion för innehållsexperimenterande](../../content-management/content-experiment.md).
 
-1. I avsnittet **[!UICONTROL Content experiment]** kan du definiera flera leveransbehandlingar för att mäta vilken som fungerar bäst för målgruppen.
+   ![bild som visar avsnittet om innehållsexperiment](../assets/channel-experiment.png)
 
-   Om du vill göra det klickar du på knappen **[!UICONTROL Create experiment]** och följer sedan de steg som beskrivs i det här avsnittet: [Skapa en funktion för innehållsexperimenterande](../../content-management/content-experiment.md).
-
-1. I avsnittet **[!UICONTROL Languages]** kan du skapa innehåll på flera språk i kampanjen.
-
-   Om du vill göra det klickar du på knappen **[!UICONTROL Add languages]** och väljer önskad **[!UICONTROL Language settings]**. Detaljerad information om hur du konfigurerar och använder flerspråkiga funktioner finns i det här avsnittet: [Kom igång med flerspråkigt innehåll](../../content-management/multilingual-gs.md)
+1. Använd avsnittet **[!UICONTROL Languages]** för att skapa innehåll på flera språk i kampanjen. Om du vill göra det klickar du på knappen **[!UICONTROL Add languages]** och väljer önskad **[!UICONTROL Language settings]**. Detaljerad information om hur du konfigurerar och använder flerspråkiga funktioner finns i det här avsnittet: [Kom igång med flerspråkigt innehåll](../../content-management/multilingual-gs.md)
 
 ### Definiera innehållet {#content}
 
-Välj fliken **[!UICONTROL Content]** för att definiera innehållet i meddelandet. Hur innehållet skapas beror på den valda kanalen.
+Använd fliken **[!UICONTROL Content]** för att definiera innehållet i meddelandet. Hur innehållet skapas beror på den valda kanalen. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
 
-Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
-
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="../../email/create-email.md"><img alt="e-post" src="../../channels/assets/do-not-localize/email.png"></a>
-<div align="center"><a href="../../email/create-email.md"><strong>E-post</strong></a></div></td>
-<td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a>
-<div align="center"><a href="../../sms/create-sms.md"><strong>SMS</strong></a></div></td>
-<td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a>
-<div align="center"><a href="../../push/create-push.md"><strong>Push-meddelande</strong></a></div></td>
+<table style="table-layout:fixed"><tr style="border: 0; text-align: center;" >
+<td><a href="../../email/create-email.md"><img alt="e-post" src="../../channels/assets/do-not-localize/email.png"></a><br/><a href="../../email/create-email.md"><strong>E-post</strong></a></td>
+<td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../sms/create-sms.md"><strong>SMS</strong></a></td>
+<td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Push-meddelande</strong></a></td>
 </tr></table>
 
 När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt. [Läs mer](../../content-management/preview-test.md)
@@ -136,9 +129,9 @@ När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate 
 
 Gå tillbaka till din samordnade kampanj med pilen **[!UICONTROL Back]**.
 
-![bild som visar bakåtknappen](../assets/channel-back.png)
-
 Nu kan du slutföra aktivitetssamordningen på arbetsytan och publicera kampanjen för att börja skicka meddelanden. [Lär dig hur du startar och övervakar samordnade kampanjer](../start-monitor-campaigns.md)
+
+![bild som visar bakåtknappen](../assets/channel-back.png)
 
 <!--
 ## Examples {#cross-channel-workflow-sample}
