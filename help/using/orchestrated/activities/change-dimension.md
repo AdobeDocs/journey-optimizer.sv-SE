@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
-source-git-commit: 7de878c316e966129e7dede37f132938d2abbdf8
+source-git-commit: 8a6fc9fca96bfab90a72be329e2ab99c6942a4a7
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -65,6 +65,6 @@ Det här användningsexemplet innebär att ett SMS skickas till profiler som har
 
 Börja med en **[!UICONTROL Build audience]**-aktivitet som använder målinriktningsdimensionen **[!UICONTROL Wishlist]** för att välja alla relevanta önskelistor.
 
-Infoga sedan en **[!UICONTROL Change dimension]**-aktivitet för att växla måldimensionen från **[!UICONTROL Wishlist]** till ***[!UICONTROL Recipient]**. Detta gör att den samordnade kampanjen kan skicka SMS:et till de profiler som är associerade med dessa önskelistor.
+Infoga sedan en **[!UICONTROL Change dimension]**-aktivitet för att växla måldimensionen från **[!UICONTROL Wishlist]** till **[!UICONTROL Recipient]**. Detta gör att den samordnade kampanjen kan skicka SMS:et till de profiler som är associerade med dessa önskelistor.
 
-![](../assets/change-dimension-example.png)
+![](../assets/orchestrated-change-dimension-example.png)

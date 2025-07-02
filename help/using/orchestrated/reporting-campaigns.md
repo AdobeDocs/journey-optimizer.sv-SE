@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
-source-git-commit: 5e4d64c4236898683a1ebb5ab2a19be4fcd15d79
+source-git-commit: 8a6fc9fca96bfab90a72be329e2ab99c6942a4a7
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -34,20 +34,15 @@ Samordnade kampanjer ger er åtgärdbara insikter genom sina robusta rapporterin
 ## Typ av rapporter {#reporting-types}
 
 <table style="table-layout:auto; width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr style="text-align: left">
-      <th>Typ av rapportering</th>
-      <th>Beskrivning</th>
-    </tr>
-  </thead>
   <tbody>
-    <tr style="border: 0;">
+    <tr>
       <td><a href="../reports/live-report.md"><img alt="Live-rapport" src="assets/last-24hours.png"></a></td>
       <td>
         Använd <b>Live-rapporten</b> för att i realtid mäta och visualisera effekten och resultatet av samordnade kampanjer i en inbyggd kontrollpanel. Data är tillgängliga i <b>Live-rapporten</b> så snart din samordnade kampanj har körts från menyn <b>Visa senaste 24 timmars rapport</b>. Läs mer om live-rapporter <a href="../reports/live-report.md">i det här avsnittet</a>.
       </td>
+        </br>
     </tr>
-    <tr style="border: 0; background-color: #FFFFFF;">
+    <tr style="background-color: #FFFFFF;">
       <td><a href="../reports/report-gs-cja.md"><img alt="Heltidsrapport" src="assets/all-time-report.png"></a></td>
       <td>
         Samordnad kampanjrapportering är helt integrerad med Customer Journey Analytics funktioner, som standardiserar rapporteringen på båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten. Läs mer om <a href="../reports/report-gs-cja.md">alla tidsrapporter</a>.
