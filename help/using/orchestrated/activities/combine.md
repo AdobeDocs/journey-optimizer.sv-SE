@@ -7,10 +7,10 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: af3c3a9c-8172-43b0-bba1-4a3d068b9a9e
-source-git-commit: cb335fd5610d70d801ae1c32dfe4d3ca9d1160ab
+source-git-commit: 01c9b947ce9459944c5c16ef177b55e889eb3634
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 9%
+source-wordcount: '1041'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena{1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -62,7 +62,7 @@ Följande segmenteringsalternativ är tillgängliga:
 
 Följ de här vanliga stegen för att börja konfigurera aktiviteten **[!UICONTROL Combine]**:
 
-![](../assets/orchestrated-combine.png)
+![](../assets/orchestrated-union.png)
 
 1. Lägg till flera aktiviteter, till exempel **[!UICONTROL Build audience]** aktiviteter, för att skapa minst två olika körningsgrenar.
 1. Lägg till en **[!UICONTROL Combine]**-aktivitet i någon av de tidigare grenarna.
@@ -77,12 +77,13 @@ Följ de här vanliga stegen för att börja konfigurera aktiviteten **[!UICONTR
 >title="Avstämningsalternativ"
 >abstract="Välj **Avstämningstypen** för att definiera hur dubbletter ska hanteras. Som standard är alternativet **Tangenter** aktiverat, vilket innebär att aktiviteten bara behåller ett element när element från olika inkommande övergångar har samma nyckel. Använd alternativet **Ett urval kolumner** för att definiera listan med kolumner som datavstämningen ska användas på."
 
-I aktiviteten **[!UICONTROL Combine]** kan du konfigurera en **[!UICONTROL Union]**. För detta måste du välja **[!UICONTROL Reconciliation type]** för att definiera hur dubbletter ska hanteras:
+Inom aktiviteten **[!UICONTROL Combine]** kan du konfigurera en **[!UICONTROL Union]** genom att välja en **[!UICONTROL Reconciliation type]** för att avgöra hur dubblettposter hanteras:
 
-* **[!UICONTROL Keys only]**: detta är standardläget.  Aktiviteten behåller endast ett element när element från olika inkommande övergångar har samma nyckel.  Detta alternativ kan endast användas om de inkommande populationerna är homogena.
-* **[!UICONTROL A selection of columns]**: välj det här alternativet om du vill definiera listan med kolumner som datavstämningen ska användas på. Du måste först markera den primära uppsättningen (som innehåller källdata) och sedan de kolumner som ska användas för kopplingen.
+* **[!UICONTROL Keys only]** (standard): behåller en post när flera inkommande övergångar delar samma nyckel. Detta alternativ är endast tillämpligt när de inkommande populationerna är homogena.
 
-I följande exempel använder vi en **[!UICONTROL Combine]**-aktivitet och lägger till en **[!UICONTROL Union]** för att hämta alla profiler för de två frågorna: Förmånsmedlemmar och Inköpare för att bilda en större publik.
+* **[!UICONTROL A selection of columns]**: gör att du kan ange vilka kolumner som ska användas för datavstämning. Välj **[!UICONTROL Add attribute]**.
+
+I följande exempel används en **[!UICONTROL Combine]**-aktivitet med en **[!UICONTROL Union]** för att sammanfoga resultaten från två frågor, **Lojalitetsmedlemmar** och **Inköpare**, till en enda större målgrupp som innehåller alla profiler från båda segmenten.
 
 ![](../assets/orchestrated-union-example.png)
 
@@ -95,10 +96,15 @@ I följande exempel använder vi en **[!UICONTROL Combine]**-aktivitet och lägg
 
 I aktiviteten **[!UICONTROL Combine]** kan du konfigurera en **[!UICONTROL Intersection]**. För detta behöver du följa de extra stegen nedan:
 
-1. Välj **[!UICONTROL Reconciliation type]** för att definiera hur dubbletter hanteras. Se avsnittet [Förena](#union).
-1. Du kan kontrollera alternativet **[!UICONTROL Generate completement]** om du vill bearbeta den återstående populationen. Komplementet ska innehålla en kombination av resultaten av alla inkommande aktiviteter minus skärningspunkten. En ytterligare utgående övergång läggs sedan till i aktiviteten.
+1. Välj **[!UICONTROL Reconciliation type]** för att definiera hur dubbletter hanteras:
 
-I följande exempel visas **[!UICONTROL Intersection]** mellan två frågeaktiviteter. Den används här för att hämta profiler med ett lojalitetsmedlemskap och vars senaste köp gjordes för mindre än en månad sedan.
+   * **[!UICONTROL Keys only]** (standard): behåller en post när flera inkommande övergångar delar samma nyckel. Detta alternativ är endast tillämpligt när de inkommande populationerna är homogena.
+
+   * **[!UICONTROL A selection of columns]**: gör att du kan ange vilka kolumner som ska användas för datavstämning. Välj **[!UICONTROL Add attribute]**.
+
+1. Aktivera **[!UICONTROL Generate completement]** om du vill bearbeta den återstående fyllningen. Komplementet innehåller en förening av alla inkommande aktivitetsresultat, exklusive skärningspunkten. En ytterligare utgående övergång läggs till i aktiviteten.
+
+I följande exempel visas hur **[!UICONTROL Intersection]** används mellan två frågeaktiviteter. Det används för att identifiera profiler som är **lojalitetsmedlemmar** och som har gjort ett köp under den senaste månaden.
 
 ![](../assets/orchestrated-intersection-example.png)
 
@@ -127,13 +133,13 @@ I följande exempel visas **[!UICONTROL Intersection]** mellan två frågeaktivi
 
 I aktiviteten **[!UICONTROL Combine]** kan du konfigurera en **[!UICONTROL Exclusion]**. För detta behöver du följa de extra stegen nedan:
 
-1. I avsnittet **[!UICONTROL Sets to join]** väljer du **[!UICONTROL Primary set]** bland de inkommande övergångarna. Detta är den uppsättning från vilken element utesluts. De andra uppsättningarna matchar element innan de utesluts från den primära uppsättningen.
-1. Vid behov kan du ändra inkommande tabeller. För att utesluta ett mål från en annan dimension måste detta mål återställas till samma måldimension som huvudmålet. Det gör du genom att klicka på **[!UICONTROL Add a rule]** i avsnittet **[!UICONTROL Exclusion rules]** och ange villkoren för dimensionsändring. Datavstämning utförs antingen via ett attribut eller en koppling.
-1. Du kan kontrollera alternativet **[!UICONTROL Generate completement]** om du vill bearbeta den återstående populationen. Se avsnittet [Skärningspunkt](#intersection).
+1. I avsnittet **[!UICONTROL Sets to join]** väljer du **[!UICONTROL Primary set]**, som representerar huvudpopulationen. Poster som hittas i de andra uppsättningarna tas inte med i den här primära uppsättningen.
+
+1. Vid behov kan du justera inkommande tabeller för att justera mål från olika dimensioner. Om du vill utesluta ett mål från en annan dimension måste det först ingå i samma målgruppsdimension som huvudpopulationen. Det gör du genom att klicka på **[!UICONTROL Add a rule]** och definiera villkoren för att ändra dimensionen. Avstämningen görs sedan med antingen ett attribut eller en koppling.
+
+1. Aktivera **[!UICONTROL Generate completement]** om du vill bearbeta den återstående fyllningen. Komplementet innehåller en förening av alla inkommande aktivitetsresultat, exklusive skärningspunkten. En ytterligare utgående övergång läggs till i aktiviteten.
 
 I följande **[!UICONTROL Exclusion]**-exempel visas två frågor som har konfigurerats för att filtrera profiler som köpt en produkt. De profiler som inte har något lojalitetsmedlemskap exkluderas sedan från den första uppsättningen.
-
-Varför: Du driver en lojalitetskampanj, så icke-medlemmar är irrelevanta.
 
 ![](../assets/orchestrated-exclusion-example.png)
 
