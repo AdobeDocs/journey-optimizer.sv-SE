@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: d8128190a51cac665c9f25b5077185a496ad7849
+source-git-commit: 1a4cd7df44cb54aaf4d18409574f5ceb9537935c
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/>[Skicka meddelanden med orkestrerade kampanjer](../send-messages.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[Och-join](and-join.md) - [Skapa målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kombinera](combine.md) - [Ta bort dubbletter](deduplication.md) - [Förbättra](enrichment.md) - [Förena](fork.md) - [Förena&lbrace;1 ](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
+| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>[Konfigurationssteg](../configuration-steps.md)<br/><br/>[Viktiga steg för att skapa samordnade kampanjer](../gs-campaign-creation.md) | [Skapa en orkestrerad kampanj](../create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](../orchestrate-activities.md)<br/><br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med Query Modeler](../orchestrated-rule-builder.md)<br/><br/>[Skapa din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[And-join](and-join.md) - [Bygg målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - **[Kanalaktiviteter](channels.md)** - [Kombinera](combine.md) - [Deduplicering](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md)  - [Avstämning](reconciliation.md) - [Dela](split.md) - [Vänta](wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -28,19 +28,19 @@ ht-degree: 0%
 
 <br/>
 
-Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i både inkommande och utgående kanaler. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende och data. Kanaler som stöds visas på [den här sidan](../../channels/gs-channels.md).
+Med [!DNL Adobe Journey Optimizer] kan ni automatisera och köra marknadsföringskampanjer i alla kanaler. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende och data.
 
-Du kan till exempel skapa en välkomstkampanj för e-post som innehåller en serie meddelanden i olika kanaler, som e-post, SMS, push och direktreklam. Du kan också skicka ett uppföljningsmeddelande via e-post när en kund har slutfört ett köp eller skicka ett personligt födelsedagmeddelande till en kund via SMS.
+Du kan till exempel skapa en välkomstkampanj för e-post som innehåller en serie meddelanden i olika kanaler, som e-post, SMS och push. Du kan också skicka ett uppföljningsmeddelande via e-post när en kund har slutfört ett köp eller skicka ett personligt födelsedagmeddelande till en kund via SMS.
 
-Genom att använda kanalaktiviteter kan ni skapa omfattande och personaliserade kampanjer som engagerar kunder över flera kontaktytor och driver konverteringar.
+Genom att använda kanalaktiviteter kan ni skapa omfattande och personaliserade kampanjer som engagerar kunder över flera kontaktytor och driver konverteringar. Kanaler som stöds är e-post, SMS och push.
 
 ## Förhandskrav {#channel-activity-prereq}
 
 Börja bygga upp er samordnade kampanj med relevanta aktiviteter:
 
-* Innan du infogar en kanalaktivitet måste du definiera målgruppen. Målgruppen är huvudmålet för leveransen: de profiler som tar emot meddelandena.
+* Innan du infogar en kanalaktivitet måste du definiera målgruppen. Målgruppen är huvudmålet för leveransen: de profiler som tar emot meddelandena. [Lär dig använda aktiviteten Skapa målgrupp](build-audience.md)
 
-* Om du vill skicka en återkommande leverans startar du din samordnade kampanj med en **[!UICONTROL Scheduler]**-aktivitet. Du kan också använda en **[!UICONTROL Scheduler]**-aktivitet för engångsleveranser för att ange kontaktdatum för den leveransen. Kontaktdatumet kan även anges i leveransinställningarna.
+* Om du vill skicka en återkommande leverans startar du din samordnade kampanj med en **[!UICONTROL Scheduler]**-aktivitet. Du kan också använda en **[!UICONTROL Scheduler]**-aktivitet för engångsleveranser för att ange kontaktdatum för den leveransen. Kontaktdatumet kan även anges i leveransinställningarna. [Lär dig schemalägga en orkestrerad videokamera](../create-orchestrated-campaign.md#schedule)
 
 ## Konfigurera en kanalaktivitet {#create-a-delivery-in-a-workflow}
 
@@ -54,12 +54,10 @@ Börja bygga upp er samordnade kampanj med relevanta aktiviteter:
 >title="SMS-aktivitet"
 >abstract="Med SMS-aktiviteten kan du skicka SMS i din samordnade kampanj, både för enstaka och återkommande meddelanden. Den automatiserar processen för att skicka SMS till ett mål som beräknas inom samma samordnade kampanj. Ni kan kombinera kanalaktiviteter i en flerstegskampanj för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push"
 >title="Push-aktivitet"
 >abstract="Med aktiviteten Push kan du skicka push-meddelanden som en del av din samordnade kampanj. Det gör det möjligt att leverera både engångskampanjer och återkommande samordnade kampanjer, och automatisera sändning av push-meddelanden till ett fördefinierat mål inom samma samordnade kampanj. Ni kan kombinera kanalaktiviteter i kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
-
 
 <!--
 UNUSED IDs in BJ
@@ -81,36 +79,87 @@ UNUSED IDs in BJ
 >title="Aktivitet för direktreklam"
 >abstract="Med aktiviteten Direktutskick blir det lättare att skicka direktreklam inom ramen för den orkestrerade kampanjen, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den samordnade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
 
-Följ stegen nedan för att konfigurera en leverans i samband med en iscensatt kampanj:
+Följ stegen nedan för att konfigurera en leverans i samband med en orkestrerad kampanj.
 
-1. Lägg till en kanalaktivitet. Kanaler som stöds är **[!UICONTROL Email]**, **[!UICONTROL SMS]** eller **[!UICONTROL Push notification]**
+### Lägga till en kanalaktivitet och definiera dess egenskaper {#add}
 
-1. Välj **Typ av leverans**: enkel eller återkommande.
+1. Lägg till en kanalaktivitet på arbetsytan. De tillgängliga kanalaktiviteterna är **[!UICONTROL Email]**, **[!UICONTROL SMS]** och **[!UICONTROL Push]**.
 
-   * En **enskild leverans** är en engångsleverans, som bara skickas en gång, till exempel ett svartvitt e-postmeddelande på fredag.
-   * En **återkommande leverans** skickas flera gånger baserat på dess körningsfrekvens. Varje gång den samordnade kampanjen körs beräknas målgruppen om och leveransen skickas till den uppdaterade målgruppen med det uppdaterade innehållet. Det här kan till exempel vara ett veckonyhetsbrev eller ett återkommande födelsedagskalender.
+   ![bild som visar arbetsytan med tillgängliga aktiviteter](../assets/channel-add.png)
 
-1. Välj en leverans **[!UICONTROL Template]**. Mallar är förkonfigurerade leveransinställningar som är specifika för en kanal. En inbyggd mall är tillgänglig för varje kanal och förfylld som standard.
+1. Markera den tillagda aktiviteten och klicka på knappen **[!UICONTROL Edit Email]**, **[!UICONTROL Edit SMS]** eller **[!UICONTROL Edit Push]** beroende på den valda kanalen.
 
-   ![](../assets/delivery-activity-in-wf.png)
+   ![bild som visar arbetsytan med en e-postaktivitet](../assets/channel-edit.png)
 
-   Du kan välja mallen i det vänstra fönstret för kanalaktivitetskonfigurationen. Om den tidigare valda publiken inte är kompatibel med kanalen kan du inte välja en mall. Du löser det här genom att uppdatera aktiviteten **[!UICONTROL Build audience]** och välja en målgrupp med rätt målmappning.
+1. Ange en beskrivning för kampanjen på fliken **[!UICONTROL Properties]**.
 
-1. Klicka på **[!UICONTROL Create delivery]**. Du kan sedan definiera meddelandeinställningar och innehåll på samma sätt som du skapar en fristående leverans. Du kan också testa och simulera innehållet.
+### Ställ in kanalkonfiguration och inställningar {#configuration}
 
-1. Gå tillbaka till er samordnade kampanj. Om du vill fortsätta med den orkestrerade kampanjen växlar du alternativet **[!UICONTROL Generate an outbound transition]** för att lägga till en övergång efter kanalaktiviteten.
+1. Välj fliken **[!UICONTROL Actions]** och välj den kanalkonfiguration som ska användas för meddelandet.
 
-1. Klicka på **[!UICONTROL Start]** för att starta din samordnade kampanj.
+   En konfiguration definieras av en [systemadministratör](../../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Lär dig hur du konfigurerar kanalkonfigurationer](../../configuration/channel-surfaces.md).
 
-   Som standard utlöses meddelandeförberedelsefasen när en orkestrerad kampanj startas, utan att meddelandet skickas omedelbart.
+1. Beroende på kanalen finns det flera alternativ. Mer information finns på flikarna nedan:
 
-1. Öppna din kanalaktivitet för att bekräfta sändningen från knappen **[!UICONTROL Review & send]**.
+   >[!BEGINTABS]
 
-1. Klicka på **[!UICONTROL Send]** på kontrollpanelen för leverans.
+   >[!TAB E-post]
 
-## Exempel {#cross-channel-workflow-sample}
+   Använd alternativen **[!UICONTROL Track email opens]** och **[!UICONTROL Track clicks on links and buttons in email]** för att spåra hur mottagarna svarar på leveransen.
 
-Här är ett exempel på flerkanalsmarknadsföring med en segmentering och två leveranser. Den samordnade kampanjen riktar sig till alla kunder som bor i Paris och som är intresserade av kaffemaskiner. Bland dessa personer skickas ett e-postmeddelande till de vanliga kunderna och ett SMS skickas till VIP-klienterna.
+   Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report-cja.md)
+
+   >[!TAB SMS]
+
+   Använd alternativet **[!UICONTROL Track clicks on links in SMS]** för att spåra klick på länkar i SMS:et.
+
+   Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report-cja.md)
+
+   >[!TAB Tryck]
+
+   Snabb leverans är ett **[!DNL Journey Optimizer]**-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer.
+
+   Aktivera alternativet **[!UICONTROL Rapid delivery mode]** för att utföra snabbmeddelanden som skickas på push-kanalen till en målgrupp som är mindre än 30 MB. [Läs mer](../push/create-push.md#rapid-delivery)
+
+   >[!ENDTABS]
+
+1. I avsnittet **[!UICONTROL Content experiment]** kan du definiera flera leveransbehandlingar för att mäta vilken som fungerar bäst för målgruppen.
+
+   Om du vill göra det klickar du på knappen **[!UICONTROL Create experiment]** och följer sedan de steg som beskrivs i det här avsnittet: [Skapa en funktion för innehållsexperimenterande](../../content-management/content-experiment.md).
+
+1. I avsnittet **[!UICONTROL Languages]** kan du skapa innehåll på flera språk i kampanjen.
+
+   Om du vill göra det klickar du på knappen **[!UICONTROL Add languages]** och väljer önskad **[!UICONTROL Language settings]**. Detaljerad information om hur du konfigurerar och använder flerspråkiga funktioner finns i det här avsnittet: [Kom igång med flerspråkigt innehåll](../../content-management/multilingual-gs.md)
+
+### Definiera innehållet {#content}
+
+Välj fliken **[!UICONTROL Content]** för att definiera innehållet i meddelandet. Hur innehållet skapas beror på den valda kanalen.
+
+Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../../email/create-email.md"><img alt="e-post" src="../../channels/assets/do-not-localize/email.png"></a>
+<div align="center"><a href="../../email/create-email.md"><strong>E-post</strong></a></div></td>
+<td><a href="../sms/../create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><a href="../../sms/create-sms.md"><strong>SMS</strong></a></div></td>
+<td><a href="../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a>
+<div align="center"><a href="../../push/create-push.md"><strong>Push-meddelande</strong></a></div></td>
+</tr></table>
+
+När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt. [Läs mer](../content-management/preview-test.md).
+
+## Nästa steg {#next}
+
+Gå tillbaka till din samordnade kampanj med pilen **[!UICONTROL Back]**.
+
+![bild som visar bakåtknappen](../assets/channel-back.png)
+
+Nu kan du slutföra aktivitetssamordningen på arbetsytan och publicera kampanjen för att börja skicka meddelanden. [Lär dig hur du startar och övervakar samordnade kampanjer](../start-monitor-campaigns.md)
+
+<!--
+## Examples {#cross-channel-workflow-sample}
+
+Here is a cross-channel orchestrated campaign example with a segmentation and two deliveries. The orchestrated campaign targets all customers who live in Paris and who are interested in coffee machines. Among this population, an email is sent to the regular customers and an SMS is sent to the VIP clients.
 
 ![](../assets/workflow-channel-example.png)
 
@@ -124,9 +173,9 @@ The Email delivery activity allows you to configure the sending an email in a wo
 
 -->
 
-Du kan också skapa en återkommande orkestrerad kampanj för att skicka ett personaliserat SMS varje dag i månaden kl. 20.00 till alla kunder som bor i Paris.
+<!--You can also create a recurring orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
 
-![](../assets/workflow-channel-example2.png)
+![](../assets/workflow-channel-example2.png)-->
 
 <!-- Scheduled emails available?
 
