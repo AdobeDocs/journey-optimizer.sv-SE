@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
-source-git-commit: 8a6fc9fca96bfab90a72be329e2ab99c6942a4a7
+source-git-commit: ef0d0e54e566d168a4845cd1af57900d54aec0b7
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 0%
 
 Samordnade kampanjer ger er åtgärdbara insikter genom sina robusta rapporteringsfunktioner. Dessa insikter hjälper er att förstå målgruppernas beteende bättre, mäta resultatet för varje steg i kundresan och fatta datadrivna beslut för att optimera framtida kampanjer. Med detaljerade mätvärden och visualiseringar kan ni spåra engagemang och finjustera era målinriktningsstrategier för maximal effekt.
 
+![](assets/report-orchestrated.png)
 
 ## Typ av rapporter {#reporting-types}
 
@@ -45,7 +46,7 @@ Samordnade kampanjer ger er åtgärdbara insikter genom sina robusta rapporterin
     <tr style="background-color: #FFFFFF;">
       <td><a href="../reports/report-gs-cja.md"><img alt="Heltidsrapport" src="assets/all-time-report.png"></a></td>
       <td>
-        Samordnad kampanjrapportering är helt integrerad med Customer Journey Analytics funktioner, som standardiserar rapporteringen på båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten. Läs mer om <a href="../reports/report-gs-cja.md">alla tidsrapporter</a>.
+        <b>Hela tidsrapporten</b> är helt integrerad med Customer Journey Analytics-funktioner, vilket standardiserar rapporteringen på båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten. Läs mer om alla tidsrapporter <a href="../reports/report-gs-cja.md">i det här avsnittet</a>.
       </td>
     </tr>
   </tbody>
