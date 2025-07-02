@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
-source-git-commit: d4cee2680dbe631d93f43d7d165d6874b9e41a47
+source-git-commit: 1a76d5349de807fe106535424940a8eca3922797
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -45,8 +45,5 @@ Samordnade kampanjer ger er åtgärdbara insikter genom sina robusta rapporterin
 
 | Typ av rapportering | Beskrivning |
 |-----|------------|
-| ![](assets/last-24hours.png){zoomable="yes"}{width="70%"} | Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera effekten och resultatet av samordnade kampanjer i en inbyggd kontrollpanel. Data är tillgängliga i **[!UICONTROL Live report]** så snart din samordnade kampanj har körts från menyn **[!UICONTROL View last 24 hours report]**. Läs mer om live-rapporter [i det här avsnittet](../reports/live-report.md). |
-| ![](assets/all-time-report.png){zoomable="yes"}{width="70%"} | Samordnad kampanjrapportering är helt integrerad med Customer Journey Analytics funktioner, som standardiserar rapporteringen på båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten.  Läs mer om alla tidsrapporter [i det här avsnittet](../reports/report-gs-cja.md). |
-
-
-
+| ![](assets/last-24hours.png){zoomable="yes"}{width="50%"} | Använd **[!UICONTROL Live report]** för att i realtid mäta och visualisera effekten och resultatet av samordnade kampanjer i en inbyggd kontrollpanel. Data är tillgängliga i **[!UICONTROL Live report]** så snart din samordnade kampanj har körts från menyn **[!UICONTROL View last 24 hours report]**. Läs mer om live-rapporter [i det här avsnittet](../reports/live-report.md). |
+| ![](assets/all-time-report.png){zoomable="yes"}{width="50%"} | Samordnad kampanjrapportering är helt integrerad med Customer Journey Analytics funktioner, som standardiserar rapporteringen på båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten.  Läs mer om alla tidsrapporter [i det här avsnittet](../reports/report-gs-cja.md). |
