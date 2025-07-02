@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+source-git-commit: 7a2c5c414dcb63d362f7decebb281d00b72e9ae7
 workflow-type: tm+mt
-source-wordcount: '2490'
+source-wordcount: '2485'
 ht-degree: 20%
 
 ---
@@ -184,7 +184,6 @@ ht-degree: 20%
       + [Viktiga steg för att skapa samordnade kampanjer](using/orchestrated/gs-campaign-creation.md)
       + [Skapa och schemalägg kampanjen](using/orchestrated/create-orchestrated-campaign.md)
       + [Organisera aktiviteter](using/orchestrated/orchestrate-activities.md)
-      + [Skicka meddelanden med samordnade kampanjer](using/orchestrated/send-messages.md)
       + [Starta och övervaka kampanjen](using/orchestrated/start-monitor-campaigns.md)
       + [Rapportering](using/orchestrated/reporting-campaigns.md)
    + Fråga databasen {#query-database}
@@ -196,6 +195,7 @@ ht-degree: 20%
       + [Och-join](using/orchestrated/activities/and-join.md)
       + [Bygg målgrupper](using/orchestrated/activities/build-audience.md)
       + [Ändra dimension](using/orchestrated/activities/change-dimension.md)
+      + [Kanalaktiviteter](using/orchestrated/activities/channels.md)
       + [Kombinera](using/orchestrated/activities/combine.md)
       + [Deduplicering](using/orchestrated/activities/deduplication.md)
       + [Berikning](using/orchestrated/activities/enrichment.md)
@@ -205,7 +205,6 @@ ht-degree: 20%
       + [Dela](using/orchestrated/activities/split.md)
       + [Test](using/orchestrated/activities/test.md)
       + [Vänta](using/orchestrated/activities/wait.md)
-      + [Kanalaktiviteter](using/orchestrated/activities/channels.md)
 + Kampanjer {#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Skapa en kampanj](using/campaigns/create-campaign.md)
@@ -720,7 +719,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
