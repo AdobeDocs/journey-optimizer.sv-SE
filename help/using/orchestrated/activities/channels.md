@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: 7de878c316e966129e7dede37f132938d2abbdf8
+source-git-commit: cfb09467809a69516c34d52be3f41e7a1abdb7c3
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Följ stegen nedan för att konfigurera en leverans i samband med en orkestrerad
 
 1. För e-post och SMS använder du spårningsalternativen för att övervaka hur mottagarna reagerar på e-post eller SMS-leveranser.
 
-   Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report-cja.md)
+   Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../../reports/campaign-global-report-cja.md)
 
 1. För push-meddelanden använder du alternativet **[!UICONTROL Rapid delivery mode]** för att utföra snabbmeddelanden som skickas på Push-kanalen till en målgrupp som är mindre än 30 MB.
 
