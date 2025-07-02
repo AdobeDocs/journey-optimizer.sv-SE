@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: 1a4cd7df44cb54aaf4d18409574f5ceb9537935c
+source-git-commit: 85d322e5855c6e658a3a93dc0f3d644ef79437b5
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -99,29 +99,13 @@ Följ stegen nedan för att konfigurera en leverans i samband med en orkestrerad
 
    En konfiguration definieras av en [systemadministratör](../../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Lär dig hur du konfigurerar kanalkonfigurationer](../../configuration/channel-surfaces.md).
 
-1. Beroende på kanalen finns det flera alternativ. Mer information finns på flikarna nedan:
-
-   >[!BEGINTABS]
-
-   >[!TAB E-post]
-
-   Använd alternativen **[!UICONTROL Track email opens]** och **[!UICONTROL Track clicks on links and buttons in email]** för att spåra hur mottagarna svarar på leveransen.
+1. För e-post och SMS använder du spårningsalternativen för att övervaka hur mottagarna reagerar på e-post eller SMS-leveranser.
 
    Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report-cja.md)
 
-   >[!TAB SMS]
+1. För push-meddelanden använder du alternativet **[!UICONTROL Rapid delivery mode]** för att utföra snabbmeddelanden som skickas på Push-kanalen till en målgrupp som är mindre än 30 MB.
 
-   Använd alternativet **[!UICONTROL Track clicks on links in SMS]** för att spåra klick på länkar i SMS:et.
-
-   Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../reports/campaign-global-report-cja.md)
-
-   >[!TAB Tryck]
-
-   Snabb leverans är ett **[!DNL Journey Optimizer]**-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer.
-
-   Aktivera alternativet **[!UICONTROL Rapid delivery mode]** för att utföra snabbmeddelanden som skickas på push-kanalen till en målgrupp som är mindre än 30 MB. [Läs mer](../push/create-push.md#rapid-delivery)
-
-   >[!ENDTABS]
+   Snabb leverans är ett **[!DNL Journey Optimizer]**-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer. [Läs mer](../push/create-push.md#rapid-delivery)
 
 1. I avsnittet **[!UICONTROL Content experiment]** kan du definiera flera leveransbehandlingar för att mäta vilken som fungerar bäst för målgruppen.
 
