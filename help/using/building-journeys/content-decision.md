@@ -7,10 +7,12 @@ feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
+badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: aktivitet, beslut, innehållsbeslut, beslutspolitik, arbetsyta, resa
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
+source-git-commit: 701b2caeac704149c820ce3bf6338107ab4bc9f8
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
@@ -81,7 +83,7 @@ Du kan också lägga till en [anpassad åtgärd](#add-custom-action) på din res
 
 Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga till ett villkor i resan, där du definierar uttryck som flyttar profiler till specifika sökvägar med hjälp av data från dessa erbjudanden. Följ stegen nedan.
 
-1. Släpp en **[!UICONTROL Condition]**-aktivitet på arbetsytan i kategorin **[!UICONTROL Orchestration]**. [Läs mer](condition-activity.md#add-condition-activity)
+1. Släpp en **[!UICONTROL Orchestration]**-aktivitet på arbetsytan i kategorin **[!UICONTROL Condition]**. [Läs mer](condition-activity.md#add-condition-activity)
 
 1. Du kan också byta namn på **[!UICONTROL Path1]**, som motsvarar det första uttrycket som du definierar, till en mer relevant etikett.
 
@@ -133,7 +135,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    ![Redigera den anpassade åtgärdens frågeparametrar](assets/journey-content-decision-custom-action-param.png)
 
-1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden **[!UICONTROL Context]** i den [avancerade uttrycksredigeraren](expression/expressionadvanced.md) för att visa alla beslutsprincipobjekt.
+1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [ i den ](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
 
    >[!CAUTION]
    >
