@@ -8,9 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: css, editor, summary, email
-source-git-commit: a4055d1c4b6d75a04b71067df0c8f5499bae24d6
+exl-id: e4645bc7-fb99-4fcc-8d0e-bf8b9efc828e
+source-git-commit: 707815ddfdca656cdf341f103bee3440e9700270
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -40,13 +41,15 @@ Följ stegen nedan om du vill lägga till anpassad CSS i ditt e-postinnehåll.
 
 1. Klicka på knappen **[!UICONTROL Add Custom CSS]**.
 
+   >[!NOTE]
+   >
+   >Knappen **[!UICONTROL Add custom CSS]** är bara tillgänglig när **[!UICONTROL Body]** är markerad. Du kan dock använda anpassade CSS-format på alla komponenter i innehållet.
+
 1. Ange din CSS-kod i det dedikerade textområdet som visas. Kontrollera att den anpassade CSS-koden är giltig och följer rätt syntax. [Läs mer](#use-valid-css)
 
    ![Ange anpassad CSS i det dedikerade textområdet](assets/email-body-custom-css.png){width="65%"}
 
    >[!NOTE]
-   >
-   >Knappen **[!UICONTROL Add custom CSS]** är bara tillgänglig när **[!UICONTROL Body]** är markerad. Du kan dock använda anpassade CSS-format på alla komponenter i innehållet.
    >
    >När du använder en [mall med låst innehåll](../content-management/content-locking.md#use) kan du inte lägga till anpassad CSS i innehållet. Knappetiketten ändras till **[!UICONTROL View custom CSS]** och all anpassad CSS som redan finns i innehållet är skrivskyddad.
 
@@ -201,12 +204,6 @@ Din anpassade CSS läggs till i slutet av avsnittet `<head>` som en del av en `<
 
 Den anpassade CSS-koden tolkas eller valideras inte av e-postfönstret för Designer **[!UICONTROL Settings]**. Den är helt oberoende och kan bara ändras med alternativet **[!UICONTROL Add Custom CSS]**.
 
-Om stiltaggen `global-custom` har attributet `data-disabled` inställt på `true` används inte den anpassade CSS:en. Exempel:
-
-```html
-<style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
-```
-
 ### Importerat innehåll
 
 Om du vill använda anpassad CSS med innehåll som importerats till e-post-Designer bör du tänka på följande:
@@ -224,7 +221,13 @@ Om din anpassade CSS inte används bör du överväga alternativen nedan.
 
 * Kontrollera att CSS-koden är giltig och fri från syntaxfel (t.ex. saknade klamrar, felaktiga egenskapsnamn). [Lär dig hur](#use-valid-css)
 
-* Kontrollera att din CSS läggs till i taggen `<style>` med attributet `data-name="global-custom"` och att `data-disabled` inte tillämpas på `global-custom`. [Läs mer](#implementation)
+* Kontrollera att din CSS läggs till i taggen `<style>` med attributet `data-name="global-custom"`.
+
+* Kontrollera om stiltaggen `global-custom` har attributet `data-disabled` inställt på `true`. Om så är fallet används inte den anpassade CSS:en. Exempel:
+
+  ```html
+  <style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
+  ```
 
 * Kontrollera att din CSS inte åsidosätts av andra CSS-regler, inklusive alla [teman](apply-email-themes.md) som tillämpas på ditt innehåll.
 
