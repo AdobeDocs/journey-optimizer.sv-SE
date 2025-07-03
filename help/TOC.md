@@ -190,7 +190,7 @@ ht-degree: 20%
       + [Arbeta med regelbyggaren](using/orchestrated/orchestrated-rule-builder.md)
       + [Skapa din första regel](using/orchestrated/build-query.md)
       + [Redigera uttryck](using/orchestrated/edit-expressions.md)
-      + [Återmarknadsföring](using/orchestrated/retarget)
+      + [Återmarknadsföring] (using/orchestrated/retarget)
    + Ochestrerade kampanjaktiviteter {#design-campaigns}
       + [Kom igång med aktiviteter](using/orchestrated/activities/about-activities.md)
       + [Och-join](using/orchestrated/activities/and-join.md)
