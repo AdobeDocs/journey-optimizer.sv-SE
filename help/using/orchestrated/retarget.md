@@ -1,21 +1,18 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Viktiga steg för att skapa samordnade kampanjer
-description: Lär dig grunderna för att skapa samordnade kampanjer med Adobe Journey Optimizer
-badge: label="Alpha"
+title: Starta och övervaka samordnade kampanjer med Adobe Journey Optimizer
+description: Lär dig hur du startar och övervakar samordnade kampanjer med Adobe Journey Optimizer.
 hide: true
 hidefromtoc: true
-exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 source-git-commit: 6439be00315dfde7ab385d7f848b7031d95060f4
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---
 
-
-# Viktiga steg för att skapa samordnade kampanjer {#orchestrated-campaign-creation}
+# Återmarknadsföring {#retarget}
 
 +++ Innehållsförteckning
 
@@ -26,8 +23,6 @@ ht-degree: 0%
 {style="table-layout:fixed"}
 
 +++
-
-<br/>
 
 >[!BEGINSHADEBOX]
 

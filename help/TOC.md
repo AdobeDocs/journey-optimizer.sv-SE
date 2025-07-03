@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7a2c5c414dcb63d362f7decebb281d00b72e9ae7
+source-git-commit: 6439be00315dfde7ab385d7f848b7031d95060f4
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2488'
 ht-degree: 20%
 
 ---
@@ -190,6 +190,7 @@ ht-degree: 20%
       + [Arbeta med regelbyggaren](using/orchestrated/orchestrated-rule-builder.md)
       + [Skapa din första regel](using/orchestrated/build-query.md)
       + [Redigera uttryck](using/orchestrated/edit-expressions.md)
+      + [Återmarknadsföring](using/orchestrated/retarget)
    + Ochestrerade kampanjaktiviteter {#design-campaigns}
       + [Kom igång med aktiviteter](using/orchestrated/activities/about-activities.md)
       + [Och-join](using/orchestrated/activities/and-join.md)
@@ -202,6 +203,7 @@ ht-degree: 20%
       + [Förgrening](using/orchestrated/activities/fork.md)
       + [Läs målgrupp](using/orchestrated/activities/read-audience.md)
       + [Avstämning](using/orchestrated/activities/reconciliation.md)
+      + [Spara målgrupp](using/orchestrated/activities/save-audience.md)
       + [Dela](using/orchestrated/activities/split.md)
       + [Test](using/orchestrated/activities/test.md)
       + [Vänta](using/orchestrated/activities/wait.md)
@@ -719,7 +721,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
