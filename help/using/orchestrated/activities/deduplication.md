@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 4aa79448-f75a-48d5-8819-f4cb4baad5c7
-source-git-commit: 28284b3d42a0e78add3470ef128dd740f9cc9dfd
+source-git-commit: de769ae29f933e3bfa520e67b9193666f3f2cef5
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Deduplication]**:
 
 1. Klicka på knappen **[!UICONTROL Fields to identify duplicates]** i avsnittet **[!UICONTROL Add attribute]** för att ange de fält där identiska värden gör att dubbletter kan identifieras, till exempel e-postadress, förnamn, efternamn osv. I fältordningen kan du ange vilka som ska behandlas först.
 
-![](../assets/deduplication-1.png)
+   ![](../assets/deduplication-1.png)
 
 1. I avsnittet **[!UICONTROL Deduplication settings]** väljer du hur många unika poster som ska fortsätta att använda fältet Duplicates. Standardvärdet är 1, vilket behåller en post per dubblettgrupp. Ange 0 om du vill behålla alla dubbletter.
 
