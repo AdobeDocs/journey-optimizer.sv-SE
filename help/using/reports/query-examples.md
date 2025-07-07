@@ -8,7 +8,7 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 967e5ed75a7a3d37b37749f464a3b96e10b1f35a
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Se till att fälten som används i dina frågor har associerade värden i motsva
 
 >[!NOTE]
 >
->I felsökningssyfte rekommenderar vi att du använder travelVersionID i stället för travelVersionName när du frågar efter resor. Läs mer om attribut för reseegenskaper [i det här avsnittet](../building-journeys/expression/journey-properties.md#journey-propertoes-fields).
+>I felsökningssyfte rekommenderar vi att du använder travelVersionID i stället för travelVersionName när du frågar efter resor. Läs mer om attribut för reseegenskaper [i det här avsnittet](../building-journeys/expression/journey-properties.md#journey-properties-fields).
 
 ## Grundläggande användningsfall/vanliga frågor {#common-queries}
 
