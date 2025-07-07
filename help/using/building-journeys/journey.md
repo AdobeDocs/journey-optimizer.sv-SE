@@ -50,4 +50,4 @@ Lär dig hur du skapar resor [ i dessa fall av typen end-to-end ](jo-use-cases.m
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430354?quality=12&captions=swe)
