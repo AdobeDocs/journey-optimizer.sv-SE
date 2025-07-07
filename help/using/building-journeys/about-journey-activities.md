@@ -9,10 +9,10 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 527a539272460aa6aa22de5bb3da2223521ee2a3
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 8%
+source-wordcount: '665'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 8%
 
 Kombinera de olika händelserna, samordningen och åtgärderna för att skapa flerstegsscenarier för olika kanaler.
 
-## Evenemangsaktiviteter {#event-activities}
+## Händelseaktiviteter {#event-activities}
 
 Personaliserade resor utlöses av händelser, t.ex. ett onlineköp. När en profil går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg. När du påbörjar en resa med en händelse utlöses resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
 
@@ -62,8 +62,6 @@ På paletten, till vänster på skärmen, under **[!UICONTROL Events]** och **[!
 
 Dessa aktiviteter representerar olika tillgängliga kommunikationskanaler. Du kan kombinera dem för att skapa ett flerkanalsscenario.
 
-<!--If you have configured custom actions, they also appear here. [Learn more](../building-journeys/using-custom-actions.md)-->
-
 Du kan också ange specifika åtgärder för att skicka meddelanden:
 
 * Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en specifik anpassad åtgärd. [Läs mer](../action/action.md)
@@ -80,7 +78,7 @@ Du kan också ange specifika åtgärder för att skicka meddelanden:
 
 De flesta aktiviteter gör att du kan definiera en **[!UICONTROL Label]**. Detta lägger till ett suffix till namnet som visas under din aktivitet på arbetsytan. Detta är användbart om du använder samma aktivitet flera gånger under resan och vill identifiera dem enklare. Det underlättar även felsökning vid fel och gör rapporter enklare att läsa. Du kan också lägga till en valfri **[!UICONTROL Description]**.
 
-![](assets/journey-action-label.png)
+![Etikett- och beskrivningsfält i egenskaperna för reseaktiviteten](assets/journey-action-label.png)
 
 >[!NOTE]
 >
@@ -90,18 +88,24 @@ De flesta aktiviteter gör att du kan definiera en **[!UICONTROL Label]**. Detta
 
 De flesta aktiviteter visar ett antal avancerade och/eller tekniska parametrar som du inte kan ändra.
 
-![](assets/journey-advanced-parameters.png)
+![Avancerade parameterfält i egenskaperna för reseaktivitet](assets/journey-advanced-parameters.png)
 
 Dölj de här parametrarna med knappen **[!UICONTROL Hide read-only fields]** för bättre läsbarhet.
 
-![](assets/journey-hide-read-only-fields.png)
+![Dölj ikonen för skrivskyddade fält i egenskaperna för reseaktivitet](assets/journey-hide-read-only-fields.png)
 
 I vissa specifika sammanhang kan du åsidosätta parametrarnas värden för specifik användning. Om du vill framtvinga ett värde klickar du på ikonen **[!UICONTROL Enable parameter override]** till höger om fältet. [Läs mer](../configuration/primary-email-addresses.md#journey-parameters)
 
-![](assets/journey-enable-parameter-override.png)
+![Aktivera alternativ för åsidosättning av parameter i egenskaperna för e-postaktivitet](assets/journey-enable-parameter-override.png)
 
 ### Lägg till en alternativ sökväg
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få den att fortsätta är att markera rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]**. Se [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
 
-![](assets/journey42.png)
+![Lägg till ett alternativ sökväg i egenskaperna för villkorsaktivitet](assets/journey42.png)
+
+## Felsökning {#troubleshooting}
+
+Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och publicerar din resa. Du kan inte utföra tester eller publikationer om fel fortfarande upptäcks av systemet.
+
+Lär dig hur du felsöker fel i aktiviteter och under resan [på den här sidan](troubleshooting.md).
