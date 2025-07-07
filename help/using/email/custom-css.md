@@ -139,6 +139,7 @@ Nedan finns exempel på giltig CSS.
   }
 }
 ```
+
 +++
 
 +++ Exempel på ogiltig CSS
@@ -165,6 +166,7 @@ Ogiltig syntax, t.ex. saknade klammerparenteser, accepteras inte:
 body {
   background: red;
 ```
+
 +++
 
 ## Tekniskt genomförande {#implementation}
@@ -205,6 +207,7 @@ Din anpassade CSS läggs till i slutet av avsnittet `<head>` som en del av en `<
   </body>
 </html>
 ```
+
 +++
 
 Den anpassade CSS-koden tolkas eller valideras inte av e-postfönstret för Designer **[!UICONTROL Settings]**. Den är helt oberoende och kan bara ändras med alternativet **[!UICONTROL Add Custom CSS]**.
