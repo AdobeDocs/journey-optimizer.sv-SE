@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: css, editor, summary, email
 exl-id: e4645bc7-fb99-4fcc-8d0e-bf8b9efc828e
-source-git-commit: edf82b966588a792c660430ced2cfe72c6b88216
+source-git-commit: 5593758448216efcc82971b1072b7fc8c9303572
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 1%
@@ -142,6 +142,7 @@ Nedan finns exempel på giltig CSS.
 
 +++
 
+
 +++ Exempel på ogiltig CSS
 
 Om ogiltig CSS anges visas ett felmeddelande som anger att CSS inte kan sparas. Nedan finns exempel på ogiltig CSS.
@@ -209,6 +210,7 @@ Din anpassade CSS läggs till i slutet av avsnittet `<head>` som en del av en `<
 ```
 
 +++
+
 
 Den anpassade CSS-koden tolkas eller valideras inte av e-postfönstret för Designer **[!UICONTROL Settings]**. Den är helt oberoende och kan bara ändras med alternativet **[!UICONTROL Add Custom CSS]**.
 
