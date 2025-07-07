@@ -8,9 +8,9 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
-source-git-commit: ce4946047cefec759cf80e26f39f3f82c486c27e
+source-git-commit: e08bf74d2f6c5dcb338a5a1b9aa4b29d63e9e8db
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,28 @@ Se även flera vanliga [exempel som används för att ställa frågor om händel
 <a href="limit-throughput.md">
 <img alt="Begränsa genomströmning med externa datakällor och anpassade åtgärder" src="../assets/do-not-localize/icon-first-journey.svg">
 </a>
-<div><a href="limit-throughput.md"><strong>Begränsa dataflöde med externa datakällor och anpassade åtgärder</strong>
+<div><a href="limit-throughput.md"><strong>Begränsa dataflöde med externa datakällor och anpassade åtgärder</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
+
+## Blogginlägg
+
+Bläddra bland följande blogginlägg för att hitta mer vägledning och bästa praxis när du skapar resor:
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<img alt="Blogginlägg" src="../assets/do-not-localize/community.jpeg">
+<div>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400" target="_blank">Användningsfall: Så här skickar du e-post endast på veckodagar i Adobe Journey Optimizer</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-approval-strategies-in-adobe-journey-optimizer/ba-p/761396" target="_blank">Användningsfall: Avancerade godkännandestrategier</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658" target="_blank">Användningsfall: Snabb extern Audience Activation med anpassad överföring</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510" target="_blank">Användningsfall: Daglig frekvensbegränsning</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">God praxis: Läs målgruppsresor</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270" target="_blank">Användningsfall: Testa dina resor</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/deliver-with-confidence-approval-workflows-across-adobe-journey/ba-p/760900" target="_blank">Användningsfall: Arbetsflöden för godkännande</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958" target="_blank">Användningsfall: Ingångs- och avslutningskriterier för resor</a></p>
 </div>
 <p>
 </td>
