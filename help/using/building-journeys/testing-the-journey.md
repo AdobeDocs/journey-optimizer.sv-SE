@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 392bf9871ee39aa8a5279661814daff9482be0fd
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan anti
 
 >[!NOTE]
 >
->Innan du testar din resa måste du åtgärda eventuella fel. Lär dig hur du kontrollerar fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
+>Innan du testar din resa måste du åtgärda eventuella fel. Lär dig hur du kontrollerar fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md).
 
 Så här använder du testläget:
 
