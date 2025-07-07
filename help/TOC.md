@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 61498b61f7f05e0553fe575c980fd1bee08500a3
+source-git-commit: a214afd830b9a0f37268b7e298e742470004e2a0
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2492'
 ht-degree: 20%
 
 ---
@@ -62,10 +62,6 @@ ht-degree: 20%
       + [Avsluta din resa](using/building-journeys/end-journey.md)
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
-   + Felsökning {#troubleshoot-journey}
-      + [Felsöka resefel](using/building-journeys/troubleshooting.md)
-      + [Felsöka din resa](using/building-journeys/troubleshooting-execution.md)
-      + [Felsöka inkommande åtgärder](using/building-journeys/troubleshooting-inbound.md)
    + Aktiviteter {#about-journey-building}
       + [Kom igång med reseaktiviteter](using/building-journeys/about-journey-activities.md)
       + [Allmänna händelser](using/building-journeys/general-events.md)
@@ -178,12 +174,16 @@ ht-degree: 20%
       + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
       + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
       + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
+   + Felsökning {#troubleshoot-journey}
+      + [Felsöka resefel](using/building-journeys/troubleshooting.md)
+      + [Felsöka din resa](using/building-journeys/troubleshooting-execution.md)
+      + [Felsöka inkommande åtgärder](using/building-journeys/troubleshooting-inbound.md)
 + Samordnade kampanjer {#orchestrated-campaigns}
    + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
    + [Konfigurationssteg](using/orchestrated/configuration-steps.md)
    + [Få tillgång till och hantera samordnade kampanjer](using/orchestrated/access-manage-orchestrated-campaigns.md)
    + Starta din första samordnade kampanj{#launch}
-      + [Viktiga steg för att skapa samordnade kampanjer](using/orchestrated/gs-campaign-creation.md)
+      + [Viktiga steg för att skapa en orkestrerad kampanj](using/orchestrated/gs-campaign-creation.md)
       + [Skapa och schemalägg kampanjen](using/orchestrated/create-orchestrated-campaign.md)
       + [Organisera aktiviteter](using/orchestrated/orchestrate-activities.md)
       + [Starta och övervaka kampanjen](using/orchestrated/start-monitor-campaigns.md)
@@ -723,7 +723,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
