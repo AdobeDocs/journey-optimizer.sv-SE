@@ -8,9 +8,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 6c4bfc4544afc84d4a8685562f716c258a2acbab
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,7 @@ Inom resedesignern kan marknadsförarna skicka 1:1-meddelanden som triggas i rea
 
 [Resedesignern](using-the-journey-designer.md) innehåller [inbyggda kanalåtgärder](journeys-message.md) som stöder utgående meddelanden, t.ex. e-post, push-meddelanden och SMS/MMS, samt inkommande kanaler, inklusive mobilappar, webbplatser och kodbaserade upplevelser som skapats direkt i Journey Optimizer. Du kan också använda tredjepartssystem för att skicka meddelanden - via e-post, text eller andra kanaler - i Journey Optimizer ingår [anpassade åtgärder](using-custom-actions.md) så att dessa system kan integreras på resorna direkt från kunddesignern.
 
-Lär dig hur du bygger resor i följande kompletta fall:
-
-* [Skicka flerkanalsmeddelanden](journeys-uc.md)
-* [Skicka ett meddelande med Campaign v7/v8](ajo-ac.md)
-* [Skicka ett meddelande till prenumeranter](message-to-subscribers-uc.md)
-* [Skicka samlingar dynamiskt med anpassade åtgärder](collections.md)
-* [Begränsa genomströmning med externa datakällor och anpassade åtgärder](limit-throughput.md)
+Lär dig hur du skapar resor [ i dessa fall av typen end-to-end ](jo-use-cases.md).
 
 >[!NOTE]
 >
@@ -56,4 +50,4 @@ Lär dig hur du bygger resor i följande kompletta fall:
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
