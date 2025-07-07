@@ -6,9 +6,10 @@ description: Lär dig hur du använder aktiviteten Spara som i en strukturerad k
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
-source-git-commit: 8a5026cdeb63b7b261ec0dfa690c5bd41d7de772
+exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
+source-git-commit: ab3cfbdc5c48b5fea47817d39fb8429e096439ff
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -32,26 +33,28 @@ Denna aktivitet är särskilt användbar för att bevara målgruppssegment som b
 
 ## Konfigurera aktiviteten Spara målgrupp {#save-audience-configuration}
 
-Så här konfigurerar du aktiviteten **Spara målgrupp**:
+Så här konfigurerar du aktiviteten **[!UICONTROL Save audience]**:
 
-1. Lägg till en **Spara målgruppsaktivitet** i den orkestrerade kampanjen.
+1. Lägg till en **[!UICONTROL Save audience]**-aktivitet i din samordnade kampanj.
 
-1. I listrutan **Läge** väljer du den åtgärd som du vill utföra:
+1. Ange en **[!UICONTROL Audience label]** som identifierar den sparade målgruppen.
 
-   * **Skapa eller uppdatera en befintlig målgrupp**: Definiera en **publiketikett**. Om målgruppen redan finns uppdateras den, annars skapas en ny målgrupp.
+1. Klicka på **[!UICONTROL Add audience attribute]** för att definiera hur målgruppsdata ska struktureras och lagras för framtida återanvändning.
 
-   * **Uppdatera en befintlig målgrupp**: Välj den **målgrupp** som du vill uppdatera i listan över befintliga målgrupper.
+   ![](../assets/save-audience-1.png)
 
-1. Välj det **uppdateringsläge** som gäller för befintliga målgrupper:
+1. Välj sedan lämplig **[!UICONTROL Primary identity field]**-&#x200B; och **[!UICONTROL Identity namespace]** för att säkerställa korrekt profilupplösning.
 
-   * **Ersätt målgruppsinnehåll med nya data**: Allt målgruppsinnehåll ersätts och gamla data går förlorade. Endast data från den inkommande övergången för aktiviteten **Spara målgrupp** behålls. Med det här alternativet raderas målgruppstypen och målgruppsdimensionen för den uppdaterade målgruppen.
+   ![](../assets/save-audience-2.png)
 
-   * **Fullständig målgrupp med nya data**: Det gamla målgruppsinnehållet behålls och data från den inkommande övergången för aktiviteten **Spara målgrupp** läggs till i den.
+1. Slutför konfigurationen genom att spara och publicera den orkestrerade kampanjen. Detta genererar och lagrar er målgrupp.
 
-1. Markera alternativet **Generera en utgående övergång** om du vill lägga till en övergång efter aktiviteten **Spara målgrupp**.
+Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för målgruppen, som du kommer åt via menyn **[!UICONTROL Audiences]**.
 
-Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för målgruppen, som du kommer åt på menyn **Publiker** . Kolumnerna som är tillgängliga i den här vyn motsvarar kolumnerna för den inkommande övergången för den orkestrerade kampanjen **Spara målgruppsaktivitet**.
+![](../assets/save-audience-3.png)
 
 ## Exempel {#save-audience-example}
 
-I följande exempel visas en enkel målgruppsuppdatering från målinriktning. En schemaläggare kör den orkestrerade kampanjen en gång i månaden. En fråga hämtar alla profiler som prenumererar på de olika tillgängliga programmen. Aktiviteten **Spara målgrupp** uppdaterar målgruppen genom att ta bort profiler som har avbeställt tjänsten sedan den senaste kampanjkörningen och lagt till nya prenumerationsprofiler.
+I följande exempel visas hur du skapar en enkel målgrupp med målinriktning. En fråga identifierar alla profiler som har köpt något under de senaste 30 dagarna. Aktiviteten **[!UICONTROL Save audience]** hämtar sedan dessa profiler för att skapa en återanvändbar målgrupp med nyligen använda köpare.
+
+![](../assets/save-audience-4.png)
