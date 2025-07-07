@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: css, editor, summary, email
 exl-id: e4645bc7-fb99-4fcc-8d0e-bf8b9efc828e
-source-git-commit: 707815ddfdca656cdf341f103bee3440e9700270
+source-git-commit: c72e6c1ff9d1ce1510f8571d82e56ae21c63194d
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '700'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Du kan ange valfri giltig CSS-sträng i textområdet **[!UICONTROL Add custom CS
 >
 >Undvik att använda CSS som oavsiktligt kan bryta layouten eller funktionaliteten i innehållet.
 
-### Giltig CSS
++++ Exempel på CSS
 
 Nedan finns exempel på giltig CSS.
 
@@ -139,8 +139,9 @@ Nedan finns exempel på giltig CSS.
   }
 }
 ```
++++
 
-### Ogiltig CSS
++++ Exempel på ogiltig CSS
 
 Om ogiltig CSS anges visas ett felmeddelande som anger att CSS inte kan sparas. Nedan finns exempel på ogiltig CSS.
 
@@ -164,10 +165,13 @@ Ogiltig syntax, t.ex. saknade klammerparenteser, accepteras inte:
 body {
   background: red;
 ```
++++
 
 ## Tekniskt genomförande {#implementation}
 
 Din anpassade CSS läggs till i slutet av avsnittet `<head>` som en del av en `<style>` -tagg med attributet `data-name="global-custom"`, som i exemplet nedan. På så sätt säkerställs att de anpassade formaten tillämpas globalt på innehållet.
+
++++ Se exempel
 
 ```html
 <!DOCTYPE html>
@@ -201,10 +205,11 @@ Din anpassade CSS läggs till i slutet av avsnittet `<head>` som en del av en `<
   </body>
 </html>
 ```
++++
 
 Den anpassade CSS-koden tolkas eller valideras inte av e-postfönstret för Designer **[!UICONTROL Settings]**. Den är helt oberoende och kan bara ändras med alternativet **[!UICONTROL Add Custom CSS]**.
 
-### Importerat innehåll
+### Guardrails - importerat innehåll
 
 Om du vill använda anpassad CSS med innehåll som importerats till e-post-Designer bör du tänka på följande:
 
@@ -223,20 +228,28 @@ Om din anpassade CSS inte används bör du överväga alternativen nedan.
 
 * Kontrollera att din CSS läggs till i taggen `<style>` med attributet `data-name="global-custom"`.
 
-* Kontrollera om stiltaggen `global-custom` har attributet `data-disabled` inställt på `true`. Om så är fallet används inte den anpassade CSS:en. Exempel:
+* Kontrollera om stiltaggen `global-custom` har attributet `data-disabled` inställt på `true`. Om så är fallet används inte den anpassade CSS:en.
+
++++ Exempel:
 
   ```html
   <style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
   ```
 
++++
+
 * Kontrollera att din CSS inte åsidosätts av andra CSS-regler, inklusive alla [teman](apply-email-themes.md) som tillämpas på ditt innehåll.
 
    * Använd utvecklingsverktygen i webbläsaren för att inspektera innehållet och verifiera att CSS har rätt väljare som mål.
 
-   * Överväg att lägga till `!important` i dina deklarationer för att säkerställa att de har företräde. Exempel:
+   * Överväg att lägga till `!important` i dina deklarationer för att säkerställa att de har företräde.
+
++++ Exempel:
 
      ```css
      .acr-Form {
        background: red !important;
      }
      ```
+
++++
