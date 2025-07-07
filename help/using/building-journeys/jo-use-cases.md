@@ -8,7 +8,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
-source-git-commit: 676bda4d11ea2bf775c78542b392a1a35ca2c891
+source-git-commit: 85b02f7c0c6cfbaffb458aea79afa6e7d080d10e
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 1%
@@ -139,7 +139,7 @@ Bläddra bland följande blogginlägg för att hitta mer vägledning och bästa 
 </div>
 <p></td>
 <td>
-<img alt="Anpassade åtgärder" src="../assets/do-not-localize/extend.jpeg">
+<img alt="Anpassade åtgärder" src="../assets/do-not-localize/list.jpeg">
 <div><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">Så här utökar du Adobe Journey Optimizer med anpassade åtgärder: Användningsexempel för integrering
 </a>
 </div>
