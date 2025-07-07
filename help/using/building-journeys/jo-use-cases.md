@@ -8,9 +8,9 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
-source-git-commit: 06d25d9344588d668304bbf5d6d3c2e7cd6659ef
+source-git-commit: ce4946047cefec759cf80e26f39f3f82c486c27e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '277'
 ht-degree: 1%
 
 ---
@@ -56,6 +56,9 @@ Använd det här biblioteket som referenspunkt när du utformar resor, modellera
   </td>
 </tr>
 </table>
+
+Se även flera vanliga [exempel som används för att ställa frågor om händelser i resesteg](../reports/query-examples.md).
+
 
 ## Användningsexempel
 
