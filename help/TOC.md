@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 9bbaad0c7d6bbbb7b35b8d3b72d8a5adc29f28db
+source-git-commit: 61498b61f7f05e0553fe575c980fd1bee08500a3
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2491'
 ht-degree: 20%
 
 ---
@@ -61,9 +61,11 @@ ht-degree: 20%
       + [Sändningsoptimering](using/building-journeys/send-time-optimization.md)
       + [Avsluta din resa](using/building-journeys/end-journey.md)
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
-      + [Felsök din resa](using/building-journeys/troubleshooting.md)
-      + [Felsöka inkommande åtgärder under resor](using/building-journeys/troubleshooting-inbound.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
+   + Felsökning {#troubleshoot-journey}
+      + [Felsöka resefel](using/building-journeys/troubleshooting.md)
+      + [Felsöka din resa](using/building-journeys/troubleshooting-execution.md)
+      + [Felsöka inkommande åtgärder](using/building-journeys/troubleshooting-inbound.md)
    + Aktiviteter {#about-journey-building}
       + [Kom igång med reseaktiviteter](using/building-journeys/about-journey-activities.md)
       + [Allmänna händelser](using/building-journeys/general-events.md)
@@ -721,7 +723,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
