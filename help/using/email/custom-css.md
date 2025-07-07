@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: css, editor, summary, email
 exl-id: e4645bc7-fb99-4fcc-8d0e-bf8b9efc828e
-source-git-commit: c72e6c1ff9d1ce1510f8571d82e56ae21c63194d
+source-git-commit: 50a2f0cab82dfe9fa39ede9a6cfdb1d6c1a8fe18
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 1%
@@ -139,7 +139,6 @@ Nedan finns exempel på giltig CSS.
   }
 }
 ```
-
 +++
 
 +++ Exempel på ogiltig CSS
