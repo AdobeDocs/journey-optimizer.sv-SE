@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 92247adabc56f369c9b11cdc519cdc7bf30c99f1
 workflow-type: tm+mt
 source-wordcount: '1634'
 ht-degree: 43%
@@ -108,11 +108,11 @@ Om ett GET-anrop som kräver parametrar används ska du ange parametrarna i fäl
 * lista de parametrar som ska skickas vid anropet i fältet **[!UICONTROL Dynamic Values]** (i exemplet nedan: &quot;identifier&quot;).
 * även ange dem med exakt samma syntax i brödtexten i den skickade nyttolasten. Om du vill göra det måste du lägga till: &quot;param&quot;: &quot;name of your parameter&quot; (i exemplet nedan: &quot;identifier&quot;). Följ syntaxen nedan:
 
-  ```json
-  {"id":{"param":"identifier"}}
-  ```
+```json
+{"id":{"param":"identifier"}}
+```
 
-  ![](assets/journey29.png)
+![](assets/journey29.png)
 
 
 När dina ändringar har sparats är datakällan konfigurerad och klar att användas i dina resor, till exempel under dina förhållanden eller för att anpassa ett e-postmeddelande. Om temperaturen är över 30 °C kan du välja att skicka ett visst meddelande.

@@ -5,7 +5,8 @@ feature: Code-based Experiences
 topic: Content Management
 role: User
 level: Experienced
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+exl-id: 5dd46ea8-acba-4c42-a65a-c18e45cba2cd
+source-git-commit: 92247adabc56f369c9b11cdc519cdc7bf30c99f1
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 0%
@@ -148,8 +149,8 @@ Nedan finns några exempel på JSON- och HTML-mallar, varav några innehåller b
 >
 >När de textbundna fälten i JSON-nyttolasten refereras:
 >
->   * Strängtypsfält måste omslutas av citattecken.
->   * Heltal eller booleska tecken får INTE omslutas av dubbla citattecken. (Se fältet `number_of_items` i exemplet ovan.)
+>* Strängtypsfält måste omslutas av citattecken.
+>* Heltal eller booleska tecken får INTE omslutas av dubbla citattecken. (Se fältet `number_of_items` i exemplet ovan.)
 
 **JSON-mall med beslut:**
 
@@ -245,5 +246,4 @@ Du kan enkelt redigera formulärfälten från en kodbaserad upplevelseresa eller
 
 Lär dig hur du lägger till redigerbara fält i kodbaserade innehållsmallar för upplevelsekanaler.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463995/?learn=on&#x26;enablevpops&captions=swe)
-
+>[!VIDEO](https://video.tv.adobe.com/v/3463990/?learn=on&#x26;enablevpops)
