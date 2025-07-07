@@ -8,7 +8,7 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
-source-git-commit: 85b02f7c0c6cfbaffb458aea79afa6e7d080d10e
+source-git-commit: 27d1ada9f501cd30fdb57104377845de75eff1b0
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 1%
@@ -131,7 +131,7 @@ Bläddra bland följande blogginlägg för att hitta mer vägledning och bästa 
 <p>
 </td>
 <td>
-<img alt="Stega händelser i dina resor" src="../assets/do-not-localize/step-event.jpeg">
+<img alt="Stega händelser i dina resor" src="../assets/do-not-localize/list.jpeg">
 <div>
 <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-step-events-in-adobe-journey-optimizer-fundamentals/ba-p/762024" target="_blank">Mastering Step Events i Adobe Journey Optimizer: Fundamentals, Schema, and Essential Queries for Data-driven Campaigns
 </a>
@@ -139,7 +139,7 @@ Bläddra bland följande blogginlägg för att hitta mer vägledning och bästa 
 </div>
 <p></td>
 <td>
-<img alt="Anpassade åtgärder" src="../assets/do-not-localize/list.jpeg">
+<img alt="Anpassade åtgärder" src="../assets/do-not-localize/step-event.jpeg">
 <div><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">Så här utökar du Adobe Journey Optimizer med anpassade åtgärder: Användningsexempel för integrering
 </a>
 </div>
