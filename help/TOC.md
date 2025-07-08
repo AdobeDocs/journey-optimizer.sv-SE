@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 84c65ee3f890685a12653c07ef06a179515f602d
+source-git-commit: f5baa901c4f9d1061837528007b2c3f048ecbf2a
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2494'
 ht-degree: 20%
 
 ---
@@ -175,9 +175,11 @@ ht-degree: 20%
       + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
       + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
    + Felsökning {#troubleshoot-journey}
+      + [Felsök dina resor](using/building-journeys/gs-troubleshooting.md)
       + [Felsöka resefel](using/building-journeys/troubleshooting.md)
       + [Felsöka körning av resa](using/building-journeys/troubleshooting-execution.md)
       + [Felsöka inkommande åtgärder](using/building-journeys/troubleshooting-inbound.md)
+      + [Felsöka en anpassad åtgärd](using/action/troubleshoot-custom-action.md)
 + Samordnade kampanjer {#orchestrated-campaigns}
    + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
    + [Konfigurationssteg](using/orchestrated/configuration-steps.md)
@@ -723,7 +725,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -770,7 +772,6 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
    + Åtgärdskonfiguration {#action-journeys}
       + [Kom igång med anpassade åtgärder](using/action/action.md)
       + [Konfigurera en anpassad åtgärd](using/action/about-custom-action-configuration.md)
-      + [Felsöka en anpassad åtgärd](using/action/troubleshoot-custom-action.md)
       + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
 + Koppla samman system och miljöer {#connect-systems}
    + [Integrera med andra lösningar](using/integrations/ajo-integrations.md)
