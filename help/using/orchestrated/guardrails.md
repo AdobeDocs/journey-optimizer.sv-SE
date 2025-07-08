@@ -5,19 +5,14 @@ title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 hide: true
 hidefromtoc: true
-source-git-commit: 54d5b3386da4eed53fca79a2135ab54548855150
+source-git-commit: d9fb9462c52eb8a79fd2c9bd6bdb5381d318453f
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # Skyddsritningar och begränsningar {#guardrails}
-
->[!CONTEXTUALHELP]
->id="ajo_campaign_publication"
->title="Publicera orkestrerad kampanj"
->abstract="Du måste publicera kampanjen för att kunna starta den. Kontrollera att alla varningar är rensade före publiceringen."
 
 +++ Innehållsförteckning
 
