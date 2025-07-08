@@ -10,9 +10,9 @@ hide: true
 robots: noindex
 googlebot: noindex
 keywords: direktreklam, meddelande, kampanj
-source-git-commit: 6f239f9bb9dbce871fbbdd89c460d9ac39706e1e
+source-git-commit: 088e89013235883d0a8b433fa348ee33a34e7a8c
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ Direktreklam är en offlinekanal som gör att du kan anpassa och generera extrah
 
 När du skapar ett direktmeddelandemeddelande genererar [!DNL Journey Optimizer] automatiskt en fil som innehåller alla målprofiler och valda data, till exempel postadresser och profilattribut. Den här filen skickas till valfri server så att den kan nås av den externa direktreklamleverantören, som hanterar den faktiska utskicksprocessen åt dig.
 
-Du måste samarbeta med den tredjepartsleverantör av direktreklam som du har valt för att få kundernas samtycke, om tillämpligt, så att dina kunder kan ta emot e-post från dig.
-
-Användningen av posttjänster regleras av ytterligare villkor från den tillämpliga tredjepartsleverantören av direktreklam. Adobe kontrollerar inte och ansvarar inte för din användning av tredjepartsprodukter. Om du har frågor eller vill ha hjälp med att skicka direktreklam kontaktar du en tredjepartsleverantör av direktreklam.
+Du måste samarbeta med den valda tredjepartsleverantören av direktreklam för att få kundernas samtycke, om tillämpligt, så att dina kunder kan ta emot e-post från dig. Användningen av posttjänster regleras av ytterligare villkor från den tillämpliga tredjepartsleverantören av direktreklam. Adobe kontrollerar inte och ansvarar inte för din användning av tredjepartsprodukter. Om du har frågor eller vill ha hjälp med att skicka direktreklam kontaktar du en tredjepartsleverantör av direktreklam.
 
 >[!NOTE]
 >
@@ -58,11 +56,9 @@ Innan du skapar ett meddelande för direkt e-post bör du kontrollera att du har
 
 ## Skapa en konfiguration för direktreklam {#direct-mail-surface}
 
-En konfiguration för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen.
+En konfiguration för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen. Detaljerad information om hur du skapar en konfiguration för direktreklam finns i avsnittet [Konfiguration av direktreklam](../direct-mail/direct-mail-configuration.md#file-routing-configuration).
 
-Detaljerad information om hur du skapar en konfiguration för direktreklam finns i avsnittet [Konfiguration av direktreklam](../direct-mail/direct-mail-configuration.md#file-routing-configuration).
-
-När konfigurationen för direktreklam är klar kan du skapa en direktreklamåtgärd för resan.
+När konfigurationen för direktreklam är klar kan du lägga till en direktreklamåtgärd på resan.
 
 ## Lägg till en Direct mail-åtgärd på din resa
 
@@ -70,24 +66,20 @@ Följ de här stegen för att lägga till en åtgärd för direktreklam i en res
 
 1. Öppna resan och dra och släpp en **[!UICONTROL Direct mail]**-aktivitet från **Åtgärder**-delen av paletten.
 
-1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandekonfiguration som ska användas. Fältet **[!UICONTROL configuration]** är som standard förfyllt med den senaste konfigurationen som används av användaren för den kanalen.
+1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandekonfiguration som ska användas. Fältet **[!UICONTROL configuration]** är som standard förfyllt med den senaste konfigurationen som används av användaren för den kanalen. Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
-   Mer information om hur du konfigurerar en resa finns på [sidan](../building-journeys/journey-gs.md)
-
-1. Nu kan du konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör. Klicka på knappen **[!UICONTROL Edit content]** om du vill göra det.
+1. Konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör. Klicka på knappen **[!UICONTROL Edit content]** om du vill göra det.
 
    ![](assets/direct-mail-add-journey.png)
 
-1. Justera extraheringsfilens egenskaper, t.ex. filnamnet eller kolumnerna som ska visas. Mer information om hur du konfigurerar extraheringsfilens egenskaper finns i det här avsnittet. [Skapa ett direktutskick](../direct-mail/create-direct-mail.md#extraction-file)
+1. Justera extraheringsfilens egenskaper, t.ex. filnamnet eller kolumnerna som ska visas. Mer information om hur du konfigurerar extraheringsfilens egenskaper finns i följande avsnitt: [Skapa ett direktmeddelandemeddelande](../direct-mail/create-direct-mail.md#extraction-file).
 
    ![](assets/direct-mail-journey-content.png)
 
 1. När innehållet i extraheringsfilen har definierats kan du använda testprofiler för att förhandsgranska det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
 
-   Om du vill göra det klickar du på **[!UICONTROL Simulate content]** och lägger sedan till en testprofil för att kontrollera hur extraheringsfilens återgivning använder testprofildata.
+   Om du vill göra det klickar du på **[!UICONTROL Simulate content]** och lägger sedan till en testprofil för att kontrollera hur extraheringsfilens återgivning använder testprofildata. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
 
    ![](assets/direct-mail-simulate.png){width="800" align="center"}
-
-   Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
 
 När extraheringsfilen är klar slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) för att skicka den.
