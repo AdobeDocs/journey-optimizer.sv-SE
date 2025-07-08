@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 62525caa9b065538c090b98d38c15dbd960dafe7
+source-git-commit: 84c65ee3f890685a12653c07ef06a179515f602d
 workflow-type: tm+mt
 source-wordcount: '2491'
 ht-degree: 20%
@@ -356,20 +356,6 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Skapa ett LINE-meddelande](using/line/create-line.md)
       + [Kontrollera och skicka LINE-meddelanden](using/line/send-line.md)
 + Innehållshantering {#content-management}
-   + Landningssidor {#landing-pages}
-      + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
-      + [Skapa en landningssida](using/landing-pages/create-lp.md)
-      + [Hantera dina landningssidor](using/landing-pages/manage-lp.md)
-      + Designinnehåll {#landing-pages-design}
-         + [Om landningssidans design](using/landing-pages/design-lp.md)
-         + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
-         + [Skapa mallar](using/landing-pages/lp-templates.md)
-         + [Lägg till anpassad JavaScript](using/landing-pages/lp-custom-js.md)
-      + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
-      + [Lär dig mer om användningsexempel](using/landing-pages/lp-use-cases.md)
-      + Konfigurera landningssidor {#lp-configuration}
-         + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
-         + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
    + Personalisering {#personalization}
       + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Lägg till personalisering](using/personalization/personalization-build-expressions.md)
@@ -392,6 +378,20 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
          + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
          + [E-post om förskrivningar av hälsoplaner](using/personalization/perso-uc-plan-prescriptions.md)
+   + Landningssidor {#landing-pages}
+      + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
+      + [Skapa en landningssida](using/landing-pages/create-lp.md)
+      + [Hantera dina landningssidor](using/landing-pages/manage-lp.md)
+      + Designinnehåll {#landing-pages-design}
+         + [Om landningssidans design](using/landing-pages/design-lp.md)
+         + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
+         + [Skapa mallar](using/landing-pages/lp-templates.md)
+         + [Lägg till anpassad JavaScript](using/landing-pages/lp-custom-js.md)
+      + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
+      + [Lär dig mer om användningsexempel](using/landing-pages/lp-use-cases.md)
+      + Konfigurera landningssidor {#lp-configuration}
+         + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
+         + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
    + Innehållsmallar {#content-templates}
       + [Kom igång med innehållsmallar](using/content-management/content-templates.md)
       + [Få åtkomst till och hantera mallar](using/content-management/access-content-templates.md)
@@ -723,7 +723,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
