@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 125eca7a832703644fd3bfc506c3f3f5cc4486a7
+source-git-commit: 62525caa9b065538c090b98d38c15dbd960dafe7
 workflow-type: tm+mt
 source-wordcount: '2491'
 ht-degree: 20%
@@ -51,8 +51,8 @@ ht-degree: 20%
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
       + [Körning av resetorr](using/building-journeys/journey-dry-run.md)
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
-      + [Live-rapport under din resa](using/building-journeys/report-journey.md)
       + [Pausa en resa](using/building-journeys/journey-pause.md)
+      + [Live-rapport under din resa](using/building-journeys/report-journey.md)
    + Hantera dina resor{#manage-journey}
       + [Bläddra och filtrera dina resor](using/building-journeys/journey-ui.md)
       + [Profilinträde under resor](using/building-journeys/entry-management.md)
@@ -723,7 +723,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

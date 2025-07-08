@@ -9,9 +9,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 62525caa9b065538c090b98d38c15dbd960dafe7
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -87,24 +87,10 @@ Så här aktiverar du Torr körning:
 
 När Dry Mode-publikationen har startats kan du visualisera körningen av resan och hur profiler utvecklas genom resegrenar och noder.
 
-Mätvärden visas direkt på arbetsytan.
+Mätvärden visas direkt på arbetsytan. Läs mer om live-rapportering och statistik för resan i [Live-rapporten på arbetsytan](report-journey.md).
 
 ![Övervaka körningen i torr riktning](assets/dry-run-metrics.png)
 
-För varje aktivitet kan du i aktivitetsrutan kontrollera:
-
-* **[!UICONTROL Entered]**: Totalt antal personer som har gått in i den här aktiviteten. För **Åtgärd**-aktiviteter, eftersom de inte körs i körningsläget Torr, indikerar det här måttet att profiler passerar igenom.
-* **[!UICONTROL Exited (met exit criteria)]**: Totalt antal personer som har lämnat resan från den aktiviteten på grund av ett avslutningskriterium.
-* **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som avbrutit resan medan den pausades på grund av en konfiguration för reseadministratörer. Det här måttet är alltid lika med noll för resor i körläge med torr körning.
-* **[!UICONTROL Error]**: Totalt antal personer som hade ett fel i den aktiviteten.
-
-
-På färdsnivån längst upp till vänster på arbetsytan kan du kontrollera:
-
-* Totalt antal **angivna profiler**
-* Totalt antal **avslutade profiler**
-* Totalt antal **profiler i fel**
-* Det totala antalet **ignorerade profiler** under resan
 
 Du kan även komma åt **Senaste 24-timmarsrapporterna** och **heltidsrapporterna** för torr körning. Klicka på knappen **Visa rapport** i det övre högra hörnet av arbetsytan för att få åtkomst till dessa rapporter.
 
