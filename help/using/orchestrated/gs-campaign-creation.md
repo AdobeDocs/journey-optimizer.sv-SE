@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: 4840dd87f82d3c9b8cfa5a565ee661bb492cff50
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -43,24 +43,30 @@ På den här sidan får du hjälp med de nödvändiga stegen för att skapa och 
 
 ## Steg 1: Skapa och schemalägg en kampanj {#create}
 
-Innan du gör något annat måste du skapa din samordnade kampanj och definiera *när* den ska köras. Oavsett om det är en engångspush eller en återkommande resa får du full kontroll över tid och frekvens.
+Innan du gör något annat måste du skapa din samordnade kampanj och definiera *när* den ska köras. Oavsett om det är en engångskampanj eller en återkommande flerkanalskampanj får ni full kontroll över tid och frekvens.
 
-👉 [Lär dig skapa och schemalägga en kampanj](../orchestrated/create-orchestrated-campaign.md)
+➡️ [Lär dig skapa och schemalägga en kampanj](../orchestrated/create-orchestrated-campaign.md)
 
 ## Steg 2: Samordna kampanjaktiviteter {#orchestrate}
 
 När kampanjen har skapats är det dags att utforma logiken bakom den. Med en visuell arbetsyta kan ni kombinera målgruppsanpassning, leverans och flödeskontroll för att utforma kundupplevelsen.
 
-👉 [Lär dig hur du organiserar aktiviteter](../orchestrated/orchestrate-activities.md)
+➡️ [Lär dig hur du organiserar aktiviteter](../orchestrated/orchestrate-activities.md)
 
 ## Steg 3: Starta och övervaka kampanjen {#start}
 
 Nu är du nästan framme! Kör kampanjen i testläge först för att upptäcka eventuella problem. Publicera det sedan och övervaka direktkörningen i realtid - spåra förloppet, kontrollera fel och se hur profilerna flödar genom varje steg.
 
-👉 [Lär dig hur du startar och övervakar en kampanj](../orchestrated/start-monitor-campaigns.md)
+➡️ [Lär dig hur du startar och övervakar en kampanj](../orchestrated/start-monitor-campaigns.md)
 
 ## Steg 4: Analysera och rapportera resultat {#report}
 
 Efter lanseringen kan du använda inbyggda rapporter för att förstå vad som fungerade - och vad som kunde förbättras. Med hjälp av realtidskonsoler och djupgående analyser kan ni optimera framtida kampanjer och förfina er strategi.
 
-👉 [Lär dig mer om rapportering](../orchestrated/reporting-campaigns.md)
+➡️ [Lär dig mer om rapportering](../orchestrated/reporting-campaigns.md)
+
+## Så här går du vidare: Återmål baserat på engagemang {#retarget}
+
+När kampanjen är klar kan ni ta ett steg längre genom att återmarknadsföra profiler baserat på hur de interagerade med meddelandet, oavsett om de öppnade det eller klickade på en länk. På så sätt kan ni följa upp med skräddarsydda meddelanden, engagera inaktiva användare på nytt eller ta hand om intresseväckande samtal.
+
+➡️ [Lär dig återmarknadsföring baserat på feedback-händelser](../orchestrated/retarget.md)
