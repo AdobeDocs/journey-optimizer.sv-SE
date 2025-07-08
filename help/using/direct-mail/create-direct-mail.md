@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 6bcfbc835a61aa326d4ee548722a6ad6e2942ea2
+source-git-commit: 9324de79b7a1e787c3a23338c4292cd4ff2bb6df
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '708'
 ht-degree: 3%
 
 ---
@@ -53,9 +53,9 @@ Så här skapar du en direktreklamkampanj:
 
 1. I fältet **[!UICONTROL Identity namespace]** väljer du lämpligt namnutrymme för att identifiera personer inom den valda målgruppen. [Läs mer](../event/about-creating.md#select-the-namespace).
 
-1. Välj **[!UICONTROL Direct mail]** i avsnittet **[!UICONTROL Actions]**.
+1. Välj **[!UICONTROL Actions]** i avsnittet **[!UICONTROL Direct mail]**.
 
-1. Välj eller skapa en ny konfiguration för **[!UICONTROL Direct mail configuration]** att använda. [Lär dig hur du skapar en konfiguration för direktreklam](direct-mail-configuration.md#direct-mail-surface).
+1. Välj eller skapa en **[!UICONTROL Direct mail configuration]** som ska användas. [Lär dig hur du skapar en konfiguration för direktreklam](direct-mail-configuration.md#direct-mail-surface).
 
    ![](assets/direct-mail-campaign.png){width="800" align="center"}
 

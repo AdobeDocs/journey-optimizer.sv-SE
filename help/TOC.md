@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 54d5b3386da4eed53fca79a2135ab54548855150
+source-git-commit: 9324de79b7a1e787c3a23338c4292cd4ff2bb6df
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2502'
 ht-degree: 20%
 
 ---
@@ -313,6 +313,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
       + [Kontrollera och skicka ett direktutskick](using/direct-mail/test-send-direct-mail.md)
       + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
+      + [Skicka direktutskick med resor](using/direct-mail/direct-mail-journeys.md)
    + Webbkanal {#web}
       + [Kom igång med webbkanalen](using/web/get-started-web.md)
       + Konfigurera webbkanal {#configure-web-channel}
@@ -726,7 +727,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
