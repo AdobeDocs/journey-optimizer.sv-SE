@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
-source-git-commit: 6ede06256038f781cfb8307bacc4e731b0323a8c
+source-git-commit: b9db2b39629750ead953a229a46e3a75467fd203
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Gå igenom sidorna nedan och fördjupa dig i specifika felsökningsfrågor:
     <div><strong>Felsök körning av resa</strong><br/> Lär dig hur du felsöker resehändelser, kontrollerar om profiler har registrerats på din resa, hur de navigerar genom den och om meddelanden skickas.</div>
     </td>
     <td>
-    <a href="..building-journeys/troubleshooting-inbound.md" "><img src="../assets/do-not-localize/in-app.jpg"></a>
+    <a href="../building-journeys/troubleshooting-inbound.md" "><img src="../assets/do-not-localize/in-app.jpg"></a>
     <div><strong>Felsök inkommande åtgärder</strong><br/>Lär dig hur du felsöker problem som rör inkommande åtgärder under en resa så att du enkelt kan identifiera och lösa dem.</div>
     </td>
     <td>
