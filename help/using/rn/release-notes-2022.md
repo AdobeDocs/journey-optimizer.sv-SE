@@ -818,7 +818,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 **Resor**
 
-* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
+* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
 **Beslutshantering**
 
