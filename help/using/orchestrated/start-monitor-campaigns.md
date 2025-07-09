@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: e316c3dbbec028f7501990486506779656990c20
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,9 @@ Du kan också köra kampanjen i testläge för att kontrollera dess körning och
 
 ## Testa kampanjen innan den publiceras {#test}
 
-Med Journey Optimizer kan ni testa samordnade kampanjer innan ni publicerar dem. I testläge körs alla aktiviteter på arbetsytan, förutom **[!UICONTROL Save audience]** aktiviteter och kanalaktiviteter. Det påverkar inte era data eller er målgrupp.
+Med [!DNL Journey Optimizer] kan du testa samordnade kampanjer innan du publicerar. När en kampanj skapas försätts den i läget **Utkast** som standard. I det här läget kan du köra kampanjen manuellt för att testa flödet.
+
+Alla aktiviteter på arbetsytan körs utom **[!UICONTROL Save audience]** aktiviteter och kanalaktiviteter. Det påverkar inte era data eller er målgrupp.
 
 Så här testar du en kampanj:
 
@@ -47,7 +49,9 @@ Så här testar du en kampanj:
 
 ![](assets/campaign-start.png){zoomable="yes"}
 
-Varje aktivitet i kampanjen utförs sekventiellt tills diagrammets slut nås. Under testkörningen kan du hantera kampanjen med åtgärdsfältet på arbetsytan. Därifrån kan man
+Varje aktivitet i kampanjen utförs sekventiellt tills diagrammets slut nås.
+
+Under testet kan du styra kampanjkörningen med åtgärdsfältet på arbetsytan. Därifrån kan man
 
 * **Stoppa** körningen när som helst.
 * **Starta** körningen igen.
@@ -59,6 +63,8 @@ Om ett fel eller en varning inträffar under körningen visas ett meddelande via
 
 Du kan också snabbt identifiera misslyckade aktiviteter med hjälp av de [visuella statusindikatorerna](#activities) som visas direkt i varje aktivitet. Om du vill ha detaljerad felsökning öppnar du loggarna för [kampanjen](#logs-tasks), som innehåller detaljerad information om felet och dess sammanhang.
 
+När kampanjen har validerats kan den publiceras.
+
 ## Publicera kampanjen {#publish}
 
 När kampanjen är testad och klar klickar du på **[!UICONTROL Publish]** för att göra den offentlig.
@@ -66,6 +72,8 @@ När kampanjen är testad och klar klickar du på **[!UICONTROL Publish]** för 
 ![](assets/campaign-publish.png){zoomable="yes"}
 
 Det visuella flödet startar om och verkliga profiler börjar flöda genom resan i realtid.
+
+Om publiceringsåtgärden misslyckas (t.ex. på grund av att meddelandeinnehåll saknas) får du ett varningsmeddelande och måste åtgärda problemet innan du försöker igen. När publiceringen är klar går kampanjen från **Utkast** till **Live** och börjar köras (omedelbart eller enligt schema).
 
 ## Övervaka kampanjkörning {#monitor}
 
