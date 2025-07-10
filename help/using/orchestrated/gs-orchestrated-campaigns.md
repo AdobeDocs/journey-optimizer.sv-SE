@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: a1af07fd8e95864ec758717b35e93555eada03f0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -50,13 +50,11 @@ Kampanjsamordning ger datadrivna beslut och utnyttjar flera källor för en dyna
 
 ## Förhandskrav
 
->[!BEGINSHADEBOX]
+Innan du arbetar med samordnade kampanjer är det viktigt att du har rätt behörigheter. Åtkomsten till samordnade kampanjer är begränsad till användare som är tilldelade en relevant **[!UICONTROL Product Profile]**, till exempel en Orchestrated Campaign Administrator, Orchestrated Campaign Approver, Orchestrated Campaign Manager eller Orchestrated Campaign Viewer.
 
-Dokumentation pågår
+Om du inte kan komma åt orkestrerade kampanjfunktioner kontaktar du administratören för att få den behörighet som krävs.
 
->[!ENDSHADEBOX]
-
-<!--prerequisites & permissions-->
+➡️[Läs mer om produktprofiler för orkestrerade kampanjer](../administration/ootb-product-profiles.md)
 
 ## Låt oss dyka djupare
 
