@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: e6944928e40b471a86085c126ff678002357e66c
+source-git-commit: 34788c05cdcdcbc0c261df3f931a5bc1786fff5f
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den söm
 
 Kampanjsamordning bygger på fyra huvudpelare:
 
-<table style="table-layout:fixed">
+<table>
 <tr style="border: 0;">
 <td><img alt="On-demand-målgrupper" src="assets/do-not-localize/icon-audience.svg" width="50px"></a></td><td><b>On-Demand-målgrupper</b><br/>Frågar direkt mellan datauppsättningar för att skapa målgruppssegment med valfri kombination av datatyper och dimensioner.</td></tr>
 <tr style="border: 0;">
