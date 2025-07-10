@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 3bbbc09e05958579782e8e70974a241f1154d319
+source-git-commit: 8f32edf905ed80ca4a23d4b9afe2805c000dacef
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -43,21 +43,16 @@ Den här modulen tar **gruppkampanjsamordning** till [!DNL Journey Optimizer], v
 
 Kampanjsamordning bygger på fyra huvudpelare:
 
-1. **On-Demand-målgrupper**
-
-   Fråga direkt mellan datauppsättningar för att skapa målgruppssegment med valfri kombination av datatyper och dimensioner.
-
-1. **Segmentering och sändning av flera entiteter**
-
-   Gå steget längre än personbaserade kampanjer - använd enheter som produktkataloger, butiksplatser eller tjänstdata för att målinrikta med precision.
-
-1. **Synlighet och precision före sändning**
-
-   Exakt segmenteringsantal och fullständig kampanjomfattning före lansering, vilket ger exakthet och förtroende.
-
-1. **Flerstegsarbetsflöden för kampanj**
-
-   Utforma kampanjer i flera steg, från dagliga meddelanden till komplexa kampanjer som säsongskampanjer eller större produktlanseringar.
+<table>
+<tr style="border: 0;">
+<td><img alt="On-demand-målgrupper" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>On-Demand-målgrupper</b><br/>Frågar direkt mellan datauppsättningar för att skapa målgruppssegment med valfri kombination av datatyper och dimensioner.</td></tr>
+<tr style="border: 0;">
+<td><img alt="Segmentering och sändning av flera enheter" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Segmentering och sändning av flera enheter</b><br/>Gå steget längre än personbaserade kampanjer - använd entiteter som produktkataloger, butiksplatser eller tjänstdata för att måla med precision.</td></tr>
+<tr style="border: 0;">
+<td><img alt="Synlighet och precision före sändning" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Synlighet och precision före sändning</b><br/>Få exakt segmenteringsantal och fullständigt kampanjomfång före lansering för att säkerställa precision och förtroende.</td></tr>
+<tr style="border: 0;">
+<td><img alt="Arbetsflöden för kampanjer i flera steg" src="assets/do-not-localize/icon-audience.svg"></a></td><td><b>Flerstegskampanjer</b><br/>Utforma kampanjer i flera steg, från dagliga meddelanden till komplexa kampanjer som säsongskampanjer eller större produktlanseringar.</td></tr>
+</table>
 
 ## Samordnade kampanjer och resor
 
