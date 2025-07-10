@@ -28,7 +28,7 @@ ht-degree: 0%
 
 <br/>
 
-# Kom igång med kampanjsamordning {#gs}
+&#x200B;# Kom igång med kampanjsamordning {#gs}
 
 Kampanjsamordning i [!DNL Adobe Journey Optimizer] driver avancerade, varumärkesinitierade marknadsföringskampanjer över alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
 
