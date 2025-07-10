@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: e316c3dbbec028f7501990486506779656990c20
+source-git-commit: baeb26d3006ee26f4c6651c698c225714c85d9fa
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
 >title="Publicera orkestrerad kampanj"
->abstract="Du måste publicera kampanjen för att kunna starta den. Kontrollera att alla varningar är rensade före publiceringen."
+>abstract="Du måste publicera kampanjen för att kunna starta den. Kontrollera att alla fel är rensade före publiceringen."
 
 +++ Innehållsförteckning
 
@@ -71,9 +71,13 @@ När kampanjen är testad och klar klickar du på **[!UICONTROL Publish]** för 
 
 ![](assets/campaign-publish.png){zoomable="yes"}
 
+>[!NOTE]
+>
+>Om knappen **[!UICONTROL Publish]** är inaktiverad (nedtonad) öppnar du loggarna från åtgärdsfältet och kontrollerar felmeddelandena. Alla fel måste åtgärdas innan du kan publicera en kampanj.
+
 Det visuella flödet startar om och verkliga profiler börjar flöda genom resan i realtid.
 
-Om publiceringsåtgärden misslyckas (t.ex. på grund av att meddelandeinnehåll saknas) får du ett varningsmeddelande och måste åtgärda problemet innan du försöker igen. När publiceringen är klar går kampanjen från **Utkast** till **Live** och börjar köras (omedelbart eller enligt schema).
+Om publiceringsåtgärden misslyckas (t.ex. på grund av att meddelandeinnehåll saknas) får du ett varningsmeddelande och måste åtgärda problemet innan du försöker igen. När publiceringen är klar börjar kampanjen köras (omedelbart eller enligt schema), går från statusen **Utkast** till **Live** och blir&quot;Skrivskyddad&quot;.
 
 ## Övervaka kampanjkörning {#monitor}
 

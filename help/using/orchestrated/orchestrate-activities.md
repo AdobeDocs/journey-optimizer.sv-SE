@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: baeb26d3006ee26f4c6651c698c225714c85d9fa
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,8 @@ När du lägger till aktiviteter är åtgärdsknappar tillgängliga i egenskapsr
 ![Inaktivera ikon](assets/do-not-localize/activity-disable.svg) ![Aktivera ikon](assets/do-not-localize/activity-enable.svg) Inaktivera/aktivera aktiviteten. När den samordnade kampanjen körs, utförs inte inaktiverade aktiviteter och följande aktiviteter på samma sökväg och den samordnade kampanjen stoppas.
 
 ![Ikonen Paus](assets/do-not-localize/activity-pause.svg) ![Ikonen Återuppta](assets/do-not-localize/activity-resume.svg) Pausa/Återuppta aktiviteten. När den orkestrerade kampanjen körs pausas den vid den pausade aktiviteten. Motsvarande uppgift och alla som följer den i samma sökväg körs inte.
+
+    Du kan använda valfri aktivitet på arbetsytan som brytpunkt för att pausa kampanjkörningen. Det innebär att kampanjen endast körs tills den här aktiviteten har pausats. När du pausar körningen håller segmenteringsmotorn temporära data tillgängliga för förhandsgranskning. Du kan välja den inkommande övergången precis före den pausade aktiviteten för att visa de överförda data. Läs mer i det här avsnittet: [Visuell flödesövervakning](../orchestrated/start-monitor-campaigns.md#flow).
 
 ![Kopiera ikon](assets/do-not-localize/activity-copy.svg) Kopiera aktiviteten. [Lär dig hur du kopierar och klistrar in aktiviteter](#copy)
 
