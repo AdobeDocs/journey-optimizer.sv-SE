@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7b42d317-cd01-4c6a-b61e-5b03e5a8ff3c
-source-git-commit: b65078c34b114ff118d24f3c93b23b35bad7227e
+source-git-commit: d464668582fbb4bea6f8d4ef57e17f80b5d83378
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -85,4 +85,4 @@ Samordnade kampanjer kan ha flera statusvärden:
 * **[!UICONTROL Completed]**: Den orkestrerade kampanjkörningen har slutförts. Statusen Slutförd tilldelas automatiskt upp till 3 dagar efter det att en kampanj har slutfört meddelanden som skickas utan fel.
 * **[!UICONTROL Closed]**: Den här statusen visas när en återkommande kampanj har stängts. Kampanjen fortsätter att köras tills alla dess aktiviteter har slutförts, men inga fler profiler kan gå in i kampanjen.
 * **[!UICONTROL Archived]**: Den orkestrerade kampanjen har arkiverats. Alla arkiverade kampanjer tas bort vid en rullande tidplan 30 dagar efter det senaste ändringsdatumet. Du kan duplicera en arkiverad kampanj om det behövs för att fortsätta arbeta med den.
-* **[!UICONTROL Stopped]**: Den orkestrerade kampanjkörningen har stoppats. Om du vill starta kampanjen igen måste du duplicera den. si reur, restera avec triangle
+* **[!UICONTROL Stopped]**: Den orkestrerade kampanjkörningen har stoppats. Om du vill starta kampanjen igen måste du duplicera den.
