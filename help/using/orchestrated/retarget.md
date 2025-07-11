@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
-source-git-commit: 0ae8372c179707a87a6b512a5420753a4aaef754
+source-git-commit: b1bee7a5ee05e0e535a982c31bafafdc760d21ae
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -35,72 +35,99 @@ Dokumentation pågår
 
 Med återmarknadsföring kan ni följa upp med mottagare baserat på hur de svarade på en tidigare iscensatt kampanj. Du kan till exempel skicka ett andra e-postmeddelande till profiler som har tagit emot men inte klickat på den första.
 
-Samordnade kampanjer innehåller två huvuddatakällor för detta:
+**[!UICONTROL Orchestrated Campaign]** innehåller två huvuddatakällor för detta:
 
-- **Meddelandefeedback**: hämtar leveransrelaterade händelser, t.ex. skickade, öppnade, studsade osv.
+* **[!UICONTROL Message Feedback]**: hämtar leveransrelaterade händelser, t.ex. skickade, öppnade, studsade osv.
+* **[!UICONTROL Email Tracking]**: hämtar användaråtgärder, t.ex. klickar och öppnar.
 
-- **E-postspårning**: hämtar användaråtgärder, t.ex. klickningar och öppningar.
-
-## Skapa en feedbackbaserad återmarknadsföringsregel
+## Skapa en feedbackbaserad återmarknadsföringsregel {#feedback-retarget}
 
 Med feedbackbaserad återmarknadsföringsregel kan du återrikta mottagare baserat på meddelandeleveranshändelser som hämtats i datauppsättningen **Meddelandefeedback**. Dessa händelser innehåller utfall som meddelanden som skickas, öppnas, studsas eller markeras som skräppost.
 
-Med hjälp av dessa data kan du definiera regler för att identifiera mottagare som har tagit emot ett tidigare meddelande, men som inte har interagerat med det, vilket möjliggör uppföljningskommunikation baserat på specifika leveransstatus.
+Med hjälp av dessa data kan du definiera regler för att identifiera mottagare som har tagit emot ett tidigare meddelande som möjliggör uppföljningskommunikation baserat på specifika leveransstatus.
 
-1. Skapa en ny **orkestrerad kampanj**.
+1. Skapa en ny **[!UICONTROL Orchestrated Campaign]**.
 
-2. Lägg till en **Bygg målgrupp**-aktivitet och ange måldimensionen till **Mottagare (katalog)**.
+1. Lägg till en **[!UICONTROL Build Audience]**-aktivitet och ange måldimensionen till **[!UICONTROL Recipient (caas)]**.
 
-3. Klicka på **Lägg till villkor** i **regelbyggaren** och välj **Meddelandefeedback** i attributväljaren. Klicka på **Bekräfta**.
+1. Klicka på **[!UICONTROL Rule Builder]** i **[!UICONTROL Add Condition]** och välj **[!UICONTROL Message Feedback]** i **[!UICONTROL Attributes Picker]**. Klicka på **[!UICONTROL Confirm]** om du vill skapa ett **meddelande som Feedback finns, till exempel** villkor.
 
-4. Lägg till ett villkor för **feedbackstatus** och ange värdet till **Meddelande skickat**.
+   ![](assets/retarget_1.png)
 
-5. Så här riktar du dig till en viss orkestrerad kampanj:
+1. Välj attributet **[!UICONTROL Feedback Status]** för att ange meddelandeleveranshändelser som mål.
 
-   - Lägg till ytterligare ett villkor, sök efter `entity` och navigera till:\
-     `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign`.
++++ Detaljerad stegvis
 
-   - Välj **Orchestrated Campaign Name** och ange kampanjnamnet.
+   1. Lägg till ett annat villkor som är länkat till attributet **[!UICONTROL Message feedback]**.
 
-6. Om du vill rikta ett visst meddelande eller en viss aktivitet inom den samordnade kampanjen:
+   1. Sök efter attributet **[!UICONTROL Feedback Status]** och klicka på **[!UICONTROL Confirm]**.
 
-   - Lägg till ytterligare ett villkor, sök efter `entity` och navigera till:\
-     `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign`.
+      ![](assets/retarget_3.png)
 
-   - Välj **Orchestrated Campaign Action Name** och ange kampanjåtgärdens namn.
+   1. På menyn **[!UICONTROL Custom condition]** väljer du vilken leveransstatus som ska spåras i listrutan **[!UICONTROL Value]**.
 
-     Du hittar åtgärdsnamn genom att klicka på ![informationsikonen](assets/do-not-localize/info-icon.svg) bredvid en aktivitet på arbetsytan.
+      ![](assets/retarget_4.png)
 
-   >[!TIP]
-   >
-   >I stället för att använda namn kan du även filtrera efter **Kampanj-ID** (UUID), som finns i dina Campaign-egenskaper.
++++
+
+1. Välj attribut **[!UICONTROL Orchestrated Campaign Name]** om du vill ha en specifik orkestrerad kampanj som mål.
+
++++ Detaljerad stegvis
+
+   1. Lägg till ytterligare ett villkor som är länkat till attributet **[!UICONTROL Message feedback]**, sök efter **[!UICONTROL entity]** och navigera till:
+
+      `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign entity`.
+
+   1. Välj **[!UICONTROL Orchestrated Campaign Name]**.
+
+      ![](assets/retarget_5.png)
+
+   1. Ange kampanjnamnet i fältet **[!UICONTROL Custom condition]** på menyn **[!UICONTROL Value]**.
+
++++
+
+1. Välj attribut **[!UICONTROL Orchestrated Campaign Action Name]** om du vill rikta ett visst meddelande eller en viss aktivitet inom en orkestrerad kampanj.
+
++++ Detaljerad stegvis
+
+   1. Lägg till ytterligare ett villkor som är länkat till attributet **[!UICONTROL Message feedback]**, sök efter **[!UICONTROL entity]** och navigera till:
+
+      `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign entity`.
+
+   1. Välj **[!UICONTROL Orchestrated Campaign Action Name]**.
+
+      ![](assets/retarget_6.png)
+
+   1. Ange kampanjåtgärdens namn i fältet **[!UICONTROL Custom condition]** på menyn **[!UICONTROL Value]**.
+
+      Du hittar åtgärdsnamn genom att klicka på ![informationsikonen](assets/do-not-localize/info-icon.svg) bredvid en aktivitet på arbetsytan.
+
+   ++
+
+1. Du kan även filtrera efter **[!UICONTROL Campaign ID]** (UUID), som finns i Campaign-egenskaperna.
 
 ## Skapa en spårningsbaserad återmarknadsföringsregel
 
-Spårningsbaserad regel för återmarknadsföring riktar sig till mottagare baserat på deras interaktioner med ett meddelande, med data från datauppsättningen **E-postspårning**. Den fångar upp användaråtgärder som e-postöppningar och länkar.
+Spårningsbaserad återmarknadsföringsregel målar mottagare baserat på deras interaktioner med ett meddelande, med data från datauppsättningen **[!UICONTROL Email Tracking]**. Den fångar upp användaråtgärder som e-postöppningar och länkar.
 
-Använd entiteten **E-postspårning** om du vill omdirigera mottagare baserat på meddelandeinteraktioner (t.ex. öppna eller klicka):
+Använd entiteten **[!UICONTROL Email Tracking]** om du vill omdirigera mottagare baserat på meddelandeinteraktioner (t.ex. öppna eller klicka) enligt följande:
 
-1. Skapa en ny **Orchestrated Campaign** och lägg sedan till en **Bygg målgruppsaktivitet** med **Mottagare (CAAS)** som måldimension för att fokusera på tidigare orienterade kampanjmottagare.
+1. Skapa en ny **[!UICONTROL Orchestrated Campaign]**.
 
-1. Lägg till ett nytt villkor för **e-postspårning**. Klicka på **Bekräfta** om du vill skapa ett villkor om att e-postspårning finns, till exempel.
+1. Lägg till en **[!UICONTROL Build Audience]**-aktivitet och ange måldimensionen till **[!UICONTROL Recipient (caas)]** för att fokusera på tidigare orienterade kampanjmottagare.
 
-1. Lägg till ett villkor i det villkoret och sök efter attributet **Interaktionstyp**.
+1. Klicka på **[!UICONTROL Rule Builder]** i **[!UICONTROL Add Condition]** och välj **[!UICONTROL Email Tracking]** i **[!UICONTROL Attributes Picker]**.
 
-1. Använd **Inkluderad i** som operator i de anpassade villkorsalternativen och välj ett eller flera värden beroende på ditt användningssätt. Exempel:
-   - **Meddelandet öppnat**
-   - **Meddelandelänk klickad**
+   Klicka på **[!UICONTROL Confirm]** om du vill skapa ett **e-postspårning finns, till exempel** villkor.
 
-1. Så här associerar du spårningsdata med en viss kampanj:
+   ![](assets/retarget_2.png)
 
-   - Lägg till ett villkor i blocket E-postspårning.
+1. Om du vill att målprofilerna ska interagera med ett meddelande lägger du till ett annat villkor som är länkat till attributet **[!UICONTROL Email tracking]** och söker efter attributet **[!UICONTROL Interaction Type]**.
 
-   - Navigera till `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign`.
+   ![](assets/retarget_7.png)
 
-   - Lägg till villkor för både **Orchestrated Campaign Name** och, om det behövs, **Orchestrated Campaign Action Name**.
+1. Använd **[!UICONTROL Included in]** som operator i de anpassade villkorsalternativen och välj ett eller flera värden beroende på ditt användningsfall, t.ex. **[!UICONTROL Message Opened]** eller **[!UICONTROL Message Link Clicked]**.
 
-     Du hittar åtgärdsnamn genom att klicka på ![informationsikonen](assets/do-not-localize/info-icon.svg) bredvid en aktivitet på arbetsytan.
+   ![](assets/retarget_8.png)
 
-   >[!TIP]
-   >
-   >I stället för att använda namn kan du även filtrera efter **Kampanj-ID** (UUID), som finns i dina Campaign-egenskaper.
+1. Om du vill associera spårningsdata till en viss kampanj lägger du till ett nytt **[!UICONTROL Message feedback]**-villkor och följer stegen som beskrivs [i det här avsnittet](#feedback-retarget).
