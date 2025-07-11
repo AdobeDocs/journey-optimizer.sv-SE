@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: a8265a2e509df0f18db5d8ca36c4298ba020fa38
+source-git-commit: c39248867a5e9f21ef4c87122585226104f4a587
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den söm
 
 Kampanjsamordning bygger på fyra huvudpelare:
 
-<table>
+<table style="table-layout:auto">
 <tr style="border: 0;">
 <td><img alt="On-demand-målgrupper" src="assets/do-not-localize/icon-audience.svg" width="50px"></a></td><td><b>On-Demand-målgrupper</b><br/>Frågar direkt mellan datauppsättningar för att skapa målgruppssegment med valfri kombination av datatyper och dimensioner.</td></tr>
 <tr style="border: 0;">
@@ -69,7 +69,7 @@ Om du inte kan komma åt orkestrerade kampanjfunktioner kontaktar du administrat
 
 Nu när ni har en förståelse för vad flerkanalskampanjer är, är det dags att gå djupare in i dessa dokumentationsavsnitt för att börja arbeta med funktionen.
 
-&lt;table&quot;><tr style="border: 0; text-align: center;">
+<table><tr style="border: 0; text-align: center;">
 <td>
 <a href="gs-campaign-creation.md">
 <img alt="Få åtkomst till och hantera arbetsflöden" src="assets/do-not-localize/workflow-access.jpeg">
