@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: baeb26d3006ee26f4c6651c698c225714c85d9fa
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,12 @@ ht-degree: 0%
 +++
 
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 När du har skapat dina arbetsytor och utformat arbetsytan kan du publicera den och övervaka hur den körs.
 

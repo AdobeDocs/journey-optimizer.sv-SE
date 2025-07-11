@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,12 @@ ht-degree: 0%
 
 
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 Aktiviteten **[!UICONTROL Split]** är en **[!UICONTROL Targeting]**-aktivitet som delar in den inkommande populationen i flera deluppsättningar baserat på definierade urvalskriterier som filtreringsregler eller populationsstorlek.
 

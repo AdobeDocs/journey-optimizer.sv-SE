@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1783'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 +++
 
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 De viktigaste stegen för att skapa regler för samordnade kampanjer är följande:
 
@@ -105,7 +111,7 @@ Så här lägger du till villkor i frågan:
    | Gilla | På samma sätt som operatorn Innehåller kan du infoga ett %-jokertecken i värdet. | Efternamn (@lastName) som &#39;Jon%s&#39;. Jokertecknet fungerar som&quot;joker&quot; och söker efter namn som&quot;Jones&quot;. |
    | Inte som | På samma sätt som operatorn Innehåller kan du infoga ett %-jokertecken i värdet. | Efternamnet (@lastName) är inte som Smi%h. Mottagare vars efternamn är &quot;Smith&quot; returneras inte. |
 
-   +++
++++
 
 1. Definiera det förväntade värdet i fältet **Värde**. Du kan också använda uttrycksredigeraren för att manuellt definiera ett uttryck med hjälp av fält från databasen och hjälpfunktionerna. Det gör du genom att klicka på ![bilden med ikonen för uttrycksredigeraren](assets/do-not-localize/rule-builder-icon-editor.svg) . [Lär dig hur du redigerar uttryck](../orchestrated/edit-expressions.md)
 
@@ -115,7 +121,7 @@ Så här lägger du till villkor i frågan:
 
    ![bild som visar förinställningsalternativet](assets/rule-builder-attribute-preset.png)
 
-   +++
++++
 
 ### Anpassade villkor i länkade tabeller (1-1- och 1-N-länkar){#links}
 

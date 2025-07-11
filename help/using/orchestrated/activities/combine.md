@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: af3c3a9c-8172-43b0-bba1-4a3d068b9a9e
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 2%
 
 ---
@@ -31,8 +31,13 @@ ht-degree: 2%
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 Aktiviteten **[!UICONTROL Combine]** är en typ av **[!UICONTROL Targeting]**-aktivitet som gör att du kan segmentera den inkommande populationen effektivt. Det gör att du kan sammanfoga flera populationer, exkludera specifika segment eller behålla endast data som delas över flera mål.
 

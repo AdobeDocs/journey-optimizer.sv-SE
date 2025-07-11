@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,13 @@ ht-degree: 0%
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 Som marknadsförare kan ni förbättra målgruppsanpassningen genom att gå över från en datatabell till en relaterad enhet i en strukturerad kampanj. På så sätt kan du gå steget längre än användarprofiler och fokusera på specifika beteenden som inköp, bokningar eller andra interaktioner.
 

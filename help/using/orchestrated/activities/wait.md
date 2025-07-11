@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
@@ -32,8 +32,13 @@ ht-degree: 1%
 
 +++
 
-
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 Aktiviteten **[!UICONTROL Wait]** är en **[!UICONTROL Flow control]**-komponent som används för att skapa en fördröjning mellan två aktiviteter i en orkestrerad kampanj. Detta bidrar till att säkerställa att era uppföljningsaktiviteter är bättre tajmade och mer relevanta för användarengagemanget.
 

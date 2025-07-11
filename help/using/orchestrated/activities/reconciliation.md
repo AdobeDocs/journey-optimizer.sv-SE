@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,12 @@ ht-degree: 0%
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
+
 Aktiviteten **[!UICONTROL Reconciliation]** är en **[!UICONTROL Targeting]**-aktivitet som gör att du kan definiera länken mellan data i Adobe Journey Optimizer och data i en arbetstabell, till exempel data som lästs in från en extern fil.
 
 Med aktiviteten **[!UICONTROL Enrichment]** kan du lägga till ytterligare data till din samordnade kampanj, till exempel genom att kombinera data från flera källor eller länka till en tillfällig resurs. **[!UICONTROL Reconciliation]**-aktiviteten används däremot för att matcha oidentifierade eller externa data med befintliga resurser i databasen.
@@ -66,13 +72,13 @@ Med aktiviteten **[!UICONTROL Enrichment]** kan du lägga till ytterligare data 
 >id="ajo_orchestration_reconciliation_rules"
 >title="Avstämningsregler"
 >abstract="Välj avstämningsregler som ska användas för dedupliceringen. Om du vill använda attribut markerar du alternativet **Enkla attribut** och väljer käll- och målfälten. Om du vill skapa ett eget avstämningsvillkor med frågemodelleraren väljer du alternativet **Avancerade avstämningsvillkor** ."
->additional-url="https://experienceleague.adobe.com/sv/docs/campaign-web/v8/query-database/query-modeler-overview" text="Arbeta med frågemodelleraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/campaign-web/v8/query-database/query-modeler-overview" text="Arbeta med frågemodelleraren"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_targeting_selection"
 >title="Välj måldimension"
 >abstract="Välj måldimension för inkommande data som ska förenas med."
->additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html?lang=sv-SE#targeting-dimensions" text="Måldimensioner"
+>additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html#targeting-dimensions" text="Måldimensioner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_keep_unreconciled_data"

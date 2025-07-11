@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: c39248867a5e9f21ef4c87122585226104f4a587
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 +++
 
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 Kampanjsamordning i [!DNL Adobe Journey Optimizer] driver avancerade, varumärkesinitierade marknadsföringskampanjer över alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
 

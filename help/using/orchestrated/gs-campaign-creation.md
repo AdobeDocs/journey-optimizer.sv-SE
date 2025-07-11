@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
-source-git-commit: 4840dd87f82d3c9b8cfa5a565ee661bb492cff50
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ ht-degree: 0%
 
 <br/>
 
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
+
 På den här sidan får du hjälp med de nödvändiga stegen för att skapa och starta en strukturerad kampanj - från konfiguration och design till övervakning och rapportering.
 
 <!--
@@ -43,7 +49,7 @@ På den här sidan får du hjälp med de nödvändiga stegen för att skapa och 
 
 ## Steg 1: Skapa och schemalägg en kampanj {#create}
 
-Innan du gör något annat måste du skapa din samordnade kampanj och definiera *när* den ska köras. Oavsett om det är en engångskampanj eller en återkommande flerkanalskampanj får ni full kontroll över tid och frekvens.
+Innan du gör något annat måste du skapa din samordnade kampanj och definiera *när* den ska köras. Oavsett om det är en engångskampanj eller en återkommande flerkanalskampanj får du full kontroll över tid och frekvens.
 
 ➡️ [Lär dig skapa och schemalägga en kampanj](../orchestrated/create-orchestrated-campaign.md)
 
@@ -55,7 +61,7 @@ När kampanjen har skapats är det dags att utforma logiken bakom den. Med en vi
 
 ## Steg 3: Starta och övervaka kampanjen {#start}
 
-Nu är du nästan framme! Kör kampanjen i testläge först för att upptäcka eventuella problem. Publicera det sedan och övervaka direktkörningen i realtid - spåra förloppet, kontrollera fel och se hur profilerna flödar genom varje steg.
+Du är nästan framme! Kör kampanjen i testläge först för att upptäcka eventuella problem. Publicera det sedan och övervaka direktkörningen i realtid - spåra förloppet, kontrollera fel och se hur profilerna flödar genom varje steg.
 
 ➡️ [Lär dig hur du startar och övervakar en kampanj](../orchestrated/start-monitor-campaigns.md)
 

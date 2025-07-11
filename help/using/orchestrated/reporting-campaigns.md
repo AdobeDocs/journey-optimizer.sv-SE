@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
-source-git-commit: a19fe429d34a88c6159ab3b2b4dfa3768bcd24ad
+source-git-commit: 779c90f0be57749a63da103d18cc642106c5f837
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 +++
 
 <br/>
+
+>[!BEGINSHADEBOX]
+
+Dokumentation pågår
+
+>[!ENDSHADEBOX]
 
 Samordnade kampanjer ger er åtgärdbara insikter genom sina robusta rapporteringsfunktioner. Dessa insikter hjälper er att förstå målgruppernas beteende bättre, mäta resultatet för varje steg i kundresan och fatta datadrivna beslut för att optimera framtida kampanjer. Med detaljerade mätvärden och visualiseringar kan ni spåra engagemang och finjustera era målinriktningsstrategier för maximal effekt.
 
