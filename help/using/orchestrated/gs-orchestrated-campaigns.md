@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 34788c05cdcdcbc0c261df3f931a5bc1786fff5f
+source-git-commit: a8265a2e509df0f18db5d8ca36c4298ba020fa38
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,8 @@ ht-degree: 0%
 Kampanjsamordning i [!DNL Adobe Journey Optimizer] driver avancerade, varumärkesinitierade marknadsföringskampanjer över alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
 
 Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den sömlös. Med ett visuellt dra-och-släpp-gränssnitt kan ni utforma och automatisera komplexa marknadsföringsarbetsflöden, från segmentering till meddelandeleverans, i flera kanaler. Allt sker i en intuitiv miljö som är byggd för snabbhet, kontroll och effektivitet.
+
+![](assets/canvas-example-diagram.png){zoomable="yes"}
 
 ## Kärnfunktioner
 
@@ -61,13 +63,13 @@ Innan du arbetar med samordnade kampanjer är det viktigt att du har rätt behö
 
 Om du inte kan komma åt orkestrerade kampanjfunktioner kontaktar du administratören för att få den behörighet som krävs.
 
-➡️[Läs mer om produktprofiler för orkestrerade kampanjer](../administration/ootb-product-profiles.md)
+➡️ [Läs mer om produktprofiler för orkestrerade kampanjer](../administration/ootb-product-profiles.md)
 
 ## Låt oss dyka djupare
 
 Nu när ni har en förståelse för vad flerkanalskampanjer är, är det dags att gå djupare in i dessa dokumentationsavsnitt för att börja arbeta med funktionen.
 
-<table style="table-layout:fixed"><tr style="border: 0;">
+&lt;table&quot;><tr style="border: 0; text-align: center;">
 <td>
 <a href="gs-campaign-creation.md">
 <img alt="Få åtkomst till och hantera arbetsflöden" src="assets/do-not-localize/workflow-access.jpeg">
