@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 7b6dc89a-1a81-49c2-b2a7-bf24b9d215e3
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 604af3a0ac9febb62f2e2b1705e2751b2c476e04
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Så här konfigurerar du Infobip med Journey Optimizer:
    | Avanmäl meddelande | Ange det anpassade svar som automatiskt skickas som ditt avanmälningsmeddelande. |
    | Hjälpnyckelord | Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt **hjälpmeddelande**. Använd kommaseparerade värden för flera nyckelord. |
    | Hjälpmeddelande | Ange det anpassade svar som automatiskt skickas som **hjälpmeddelande**. |
-   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3440280/?learn=on&captions=swe). |
+   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3427129/?learn=on). |
    | Dubbelt meddelande om anmälan | Ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan. |
    | Huvudenhets-ID | Ange ditt tilldelade enhets-ID för DLT-huvudnamn. |
    | Innehållsmall-ID | Ange ditt registrerade ID för DLT-innehållsmall. |
@@ -73,7 +73,11 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 
 RCS-meddelanden stöds i Adobe Journey Optimizer via Infobip med funktionen [Anpassad SMS-provider](sms-configuration-custom.md) . På så sätt kan du leverera interaktiva budskap via verifierade affärsprofiler, som innehåller element som karuseller, knappar och multimediematerial.
 
+➡️ [Se hur Infobip stöder RCS i Infobip-dokumentationen ](https://www.infobip.com/docs/api/channels/rcs)
+
 Om du vill aktivera RCS-meddelanden med Infobip måste nya API-autentiseringsuppgifter konfigureras via en anpassad SMS-provider. Befintliga SMS-autentiseringsuppgifter för Infobip är inte kompatibla eftersom RCS kräver ett distinkt nyttolastformat.
+
+Så här konfigurerar du RCS med Infobip:
 
 1. **Registrera ditt företag för RCS via Infobip**
 

@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d6f74566-c913-4727-83b9-473a798a0158
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 604af3a0ac9febb62f2e2b1705e2751b2c476e04
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,11 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 
 RCS-meddelanden stöds i Adobe Journey Optimizer via Twilio med funktionen [Anpassad SMS-provider](sms-configuration-custom.md) . På så sätt kan du leverera interaktiva budskap via verifierade affärsprofiler, som innehåller element som karuseller, knappar och multimediematerial.
 
+➡️ [Se hur Twilio stöder RCS i Twilio-dokumentationen ](https://www.twilio.com/docs/rcs)
+
 Om du vill aktivera RCS-meddelanden med Twilio måste nya API-autentiseringsuppgifter konfigureras via en anpassad SMS-provider. Befintliga SMS-autentiseringsuppgifter för Twilio är inte kompatibla eftersom RCS kräver ett distinkt nyttolastformat.
+
+Så här konfigurerar du RCS med Twilio:
 
 1. **Registrera dig för RCS-meddelanden i Twilio**
 
