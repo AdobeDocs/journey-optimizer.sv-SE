@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
-source-git-commit: 811a04c1ce74627b48143da4cd78d6cc644f4ba5
+source-git-commit: 175762a1d843f55dd9dcbb1cb0ac107a27a370b0
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Dokumentation pågår
 
 >[!ENDSHADEBOX]
 
-Med återmarknadsföring kan ni följa upp med mottagare baserat på hur de svarade på en tidigare iscensatt kampanj. Du kan till exempel skicka ett andra e-postmeddelande till profiler som har tagit emot men inte klickat på den första.
+Med återmarknadsföring kan ni följa upp med mottagare baserat på hur de svarade på en tidigare iscensatt kampanj. Du kan till exempel skicka ett andra e-postmeddelande till mottagare som har tagit emot men inte klickat på det första.
 
-**[!UICONTROL Orchestrated Campaign]** innehåller två huvuddatakällor för detta:
+**[!UICONTROL Orchestrated Campaign]** har två huvudattribut för detta:
 
 * **[!UICONTROL Message Feedback]**: hämtar leveransrelaterade händelser, t.ex. skickade, öppnade, studsade osv.
 * **[!UICONTROL Email Tracking]**: hämtar användaråtgärder, t.ex. klickar och öppnar.
@@ -44,7 +44,7 @@ Med återmarknadsföring kan ni följa upp med mottagare baserat på hur de svar
 
 ## Skapa en feedbackbaserad återmarknadsföringsregel {#feedback-retarget}
 
-Med feedbackbaserad återmarknadsföringsregel kan du återrikta mottagare baserat på meddelandeleveranshändelser som hämtats i datauppsättningen **Meddelandefeedback**. Dessa händelser innehåller utfall som meddelanden som skickas, öppnas, studsas eller markeras som skräppost.
+Med den feedbackbaserade återmarknadsföringsregeln kan du återrikta mottagare baserat på meddelandeleveranshändelser som hämtats i attributet **[!UICONTROL Message Feedback]**. Dessa händelser innehåller utfall som meddelanden som skickas, öppnas, studsas eller markeras som skräppost.
 
 Med hjälp av dessa data kan du definiera regler för att identifiera mottagare som har tagit emot ett tidigare meddelande som möjliggör uppföljningskommunikation baserat på specifika leveransstatus.
 
@@ -72,7 +72,7 @@ Med hjälp av dessa data kan du definiera regler för att identifiera mottagare 
 
 +++
 
-1. Välj attribut **[!UICONTROL Orchestrated Campaign Name]** om du vill ha en specifik orkestrerad kampanj som mål.
+1. Välj attributet **[!UICONTROL Orchestrated Campaign Name]** om du vill ange en specifik orkestrerad kampanj som mål.
 
 +++ Detaljerad stegvis
 
@@ -88,7 +88,7 @@ Med hjälp av dessa data kan du definiera regler för att identifiera mottagare 
 
 +++
 
-1. Välj attribut **[!UICONTROL Orchestrated Campaign Action Name]** om du vill rikta ett visst meddelande eller en viss aktivitet inom en orkestrerad kampanj.
+1. Välj attributet **[!UICONTROL Orchestrated Campaign Action Name]** om du vill ange ett specifikt meddelande eller en viss aktivitet som mål i en orkestrerad kampanj.
 
 +++ Detaljerad stegvis
 
@@ -102,15 +102,20 @@ Med hjälp av dessa data kan du definiera regler för att identifiera mottagare 
 
    1. Ange kampanjåtgärdens namn i fältet **[!UICONTROL Custom condition]** på menyn **[!UICONTROL Value]**.
 
-      Du hittar åtgärdsnamn genom att klicka på ![informationsikonen](assets/do-not-localize/info-icon.svg) bredvid en aktivitet på arbetsytan.
+      Du hittar åtgärdsnamn genom att klicka på ![informationsikonen](assets/do-not-localize/info-icon.svg) bredvid aktivitetens etikettfält.
 
 +++
 
-1. Du kan även filtrera efter **[!UICONTROL Campaign ID]** (UUID), som finns i Campaign-egenskaperna.
+1. Du kan också filtrera efter **[!UICONTROL Campaign ID]** (UUID), som finns i Campaign-egenskaperna.
 
-## Skapa en spårningsbaserad återmarknadsföringsregel
+Du har nu konfigurerat en återmarknadsföringsregel baserad på feedback för att identifiera mottagare baserat på leveransstatus för ett tidigare meddelande som skickat, öppnat, studsat eller markerat som skräppost. Med den här målgruppen definierad kan du antingen lägga till ett uppföljningsmeddelande eller förfina din målgruppsanpassning ytterligare genom att [konfigurera en spårningsbaserad återmarknadsföringsregel](#tracking-based), som använder användarinteraktionsdata.
 
-Spårningsbaserad återmarknadsföringsregel målar mottagare baserat på deras interaktioner med ett meddelande, med data från datauppsättningen **[!UICONTROL Email Tracking]**. Den fångar upp användaråtgärder som e-postöppningar och länkar.
+![](assets/retarget_9.png)
+
+
+## Skapa en spårningsbaserad regel för återmarknadsföring {#tracking-based}
+
+Spårningsbaserad regel för återmarknadsföring riktar sig till mottagare baserat på deras interaktioner med ett meddelande, med data från attributet **[!UICONTROL Email Tracking]**. Den fångar upp användaråtgärder som e-postöppningar och länkar.
 
 Använd entiteten **[!UICONTROL Email Tracking]** om du vill omdirigera mottagare baserat på meddelandeinteraktioner (t.ex. öppna eller klicka) enligt följande:
 
@@ -124,7 +129,7 @@ Använd entiteten **[!UICONTROL Email Tracking]** om du vill omdirigera mottagar
 
    ![](assets/retarget_2.png)
 
-1. Om du vill att målprofilerna ska interagera med ett meddelande lägger du till ett annat villkor som är länkat till attributet **[!UICONTROL Email tracking]** och söker efter attributet **[!UICONTROL Interaction Type]**.
+1. Om du vill att mottagarna ska interagera med ett meddelande lägger du till ett annat villkor som är länkat till attributet **[!UICONTROL Email tracking]** och söker efter attributet **[!UICONTROL Interaction Type]**.
 
    ![](assets/retarget_7.png)
 
@@ -132,4 +137,7 @@ Använd entiteten **[!UICONTROL Email Tracking]** om du vill omdirigera mottagar
 
    ![](assets/retarget_8.png)
 
-1. Om du vill associera spårningsdata till en viss kampanj lägger du till ett nytt **[!UICONTROL Message feedback]**-villkor och följer stegen som beskrivs [i det här avsnittet](#feedback-retarget).
+Du har nu konfigurerat en spårningsbaserad återmarknadsföringsregel för målmottagare baserat på deras interaktion med ett tidigare meddelande, som e-postöppning eller länkklick, med data från attributet **[!UICONTROL Email Tracking]**. När den här målgruppen är definierad kan du antingen lägga till en uppföljningsåtgärd eller ytterligare förfina din målgruppsanpassning genom att kombinera den med en [feedbackbaserad återmarknadsföringsregel](#feedback-retarget) för att inkludera meddelanderesultat som skickad, studsad eller markerad som skräppost.
+
+
+![](assets/retarget_10.png)
