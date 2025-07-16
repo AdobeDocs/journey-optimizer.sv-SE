@@ -5,7 +5,7 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: c51e4089-7f51-437d-a5ed-de10bab46cf8
-source-git-commit: bc433a215021b9c5c6a8948468468808e7121712
+source-git-commit: 95a6d032808bc735a27a98dcb61efefa93cf5047
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Testprofiler är ytterligare mottagare som inte matchar de definierade målinrik
 
 Innan du använder testprofiler för att testa innehållet måste du först markera dem. Följ dessa steg för att göra detta:
 
-1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer och välj **[!UICONTROL Sumulaye content]**.
+1. Klicka på knappen **[!UICONTROL Simulate content]** på skärmen Redigera innehåll i ditt meddelande eller i e-post-Designer och välj **[!UICONTROL Simulate content]**.
 
 1. Klicka på knappen **[!UICONTROL Manage test profiles]** och markera sedan det namnutrymme som ska användas för att identifiera testprofiler genom att klicka på markeringsikonen **[!UICONTROL Identity namespace]** . [Läs mer om Adobe Experience Platform identitetsnamnutrymmen](../audience/get-started-identity.md).
 
