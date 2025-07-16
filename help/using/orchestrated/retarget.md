@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
-source-git-commit: b1bee7a5ee05e0e535a982c31bafafdc760d21ae
+source-git-commit: 811a04c1ce74627b48143da4cd78d6cc644f4ba5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ Med återmarknadsföring kan ni följa upp med mottagare baserat på hur de svar
 
 * **[!UICONTROL Message Feedback]**: hämtar leveransrelaterade händelser, t.ex. skickade, öppnade, studsade osv.
 * **[!UICONTROL Email Tracking]**: hämtar användaråtgärder, t.ex. klickar och öppnar.
+
+![](assets/do-not-localize/retarget-schema.png)
 
 ## Skapa en feedbackbaserad återmarknadsföringsregel {#feedback-retarget}
 
@@ -102,7 +104,7 @@ Med hjälp av dessa data kan du definiera regler för att identifiera mottagare 
 
       Du hittar åtgärdsnamn genom att klicka på ![informationsikonen](assets/do-not-localize/info-icon.svg) bredvid en aktivitet på arbetsytan.
 
-   ++
++++
 
 1. Du kan även filtrera efter **[!UICONTROL Campaign ID]** (UUID), som finns i Campaign-egenskaperna.
 
