@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 2950856622ea9ee6c761f4555d5322bb788bb2cb
+source-git-commit: 1aa4f3e24a4cb7594232c0b25da8c9fd2e62c1de
 workflow-type: tm+mt
-source-wordcount: '2507'
-ht-degree: 20%
+source-wordcount: '2523'
+ht-degree: 19%
 
 ---
 
@@ -182,7 +182,11 @@ ht-degree: 20%
       + [Felsöka anpassade åtgärder](using/action/troubleshoot-custom-action.md)
 + Samordnade kampanjer {#orchestrated-campaigns}
    + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
-   + [Konfigurationssteg](using/orchestrated/configuration-steps.md)
+   + Hantera relationsscheman och datauppsättningar {#schemas-datasets}
+      + [Kom igång med scheman och datauppsättningar](using/orchestrated/gs-schemas.md)
+      + [Manuellt schema](using/orchestrated/manual-schema.md)
+      + [Filöverföringsschema](using/orchestrated/file-upload-schema.md)
+      + [Ingrediera data](using/orchestrated/ingest-data.md)
    + [Få tillgång till och hantera samordnade kampanjer](using/orchestrated/access-manage-orchestrated-campaigns.md)
    + [Skyddsritningar och begränsningar](using/orchestrated/guardrails.md)
    + Starta din första samordnade kampanj{#launch}
@@ -727,7 +731,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
