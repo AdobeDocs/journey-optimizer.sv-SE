@@ -9,9 +9,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 1215cdc3ed6050ca061f8d97281d52ade352611e
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2117'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ När en resa pausas beror profilhantering och aktivitetskörning på aktiviteten
 | [Innehållsbeslut](content-decision.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Kanalåtgärd](journeys-message.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Anpassad åtgärd](../action/action.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
-| [Uppdatera profil](update-profiles.md) &amp; [Hoppa](jump.md) | Samma beteende som i en direktresa |
+| [Uppdatera profil](update-profiles.md) &amp; [Hoppa](jump.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Externa data, Source](../datasource/external-data-sources.md) | Samma beteende som i en direktresa |
 | [Avsluta villkor](journey-properties.md#exit-criteria) | Samma beteende som i en direktresa |
 
@@ -182,7 +182,7 @@ När du pausar den här resan väljer du om profiler är **Ignorerade** eller **
 1. **Vänta**-aktivitet: profiler fortsätter att vänta normalt på noden och kommer att avsluta den, även om resan är i pausläge.
 1. **Villkor**: Profilerna fortsätter att gå igenom villkoren och flyttas till den högra grenen, baserat på uttrycket som definierats för villkoret.
 1. **Push**/**Email**-aktiviteter: under en pausad resa börjar profiler vänta eller tas bort (baserat på det val som användaren gjorde vid tiden för paus) på nästa åtgärdsnod. Profilerna kommer att börja vänta eller kastas bort där.
-1. **Händelser** efter **åtgärdsnoder**: Om en profil väntar på en **Action**-nod och det finns en **Event**-aktivitet efter den ignoreras profilen om händelsen utlöses.
+1. **Händelser** efter **Action**-noder: Om en profil väntar på en **Action**-nod och det finns en **Event**-aktivitet efter den ignoreras händelsen om den utlöses.
 
 Enligt det här beteendet kan du se profilnummer öka på pausad resa, främst i aktiviteter före **Åtgärd** -aktiviteter. I det exemplet är till exempel aktiviteten **Wait** fortfarande aktiverad, vilket ökar antalet profiler som går igenom aktiviteten **Condition** när de avslutar den.
 
