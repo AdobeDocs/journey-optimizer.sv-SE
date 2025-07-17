@@ -7,10 +7,10 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
-source-git-commit: ea5ef4005be90973046d3f94ea4c2b92eb89ffb4
+source-git-commit: 3f92dc721648f822687b8efc302c40989b72b145
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 0%
+source-wordcount: '152'
+ht-degree: 1%
 
 ---
 
@@ -38,40 +38,41 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 Relationsscheman kan skapas direkt via användargränssnittet, vilket möjliggör detaljerad konfiguration av attribut, primärnycklar, versionsfält och relationer.
 
-I följande exempel definieras schemat för lojalitetsmedlemskap manuellt för att illustrera den struktur som krävs för samordnade kampanjer.
+<!--
+The following example manually defines the Loyalty Memberships schema to illustrate the required structure for orchestrated campaigns.
 
-1. Logga in på Adobe Experience Platform.
+1. Log in to Adobe Experience Platform.
 
-1. Navigera till **Datahantering** > **Schema**.
+1. Navigate to the **Data Management** > **Schema**.
 
-1. Klicka på **Skapa schema**.
+1. Click on **Create Schema**.
 
-1. Du uppmanas att välja mellan två schematyper:
+1. You will be prompted to select between two schema types:
 
-   * **Standard**
-   * **Relation**, används specifikt för orkestrerade kampanjer
+    * **Standard**
+    * **Relational**, used specifically for orchestrated campaigns
 
-   ![](assets/admin_schema_1.png)
+    ![](assets/admin_schema_1.png)
 
-1. Ange ett **schemanamn** (t.ex. `test_demo_ck001`).
-1. Välj **schematyp**:
-   **Posttyp** (krävs för AGO-kampanjer)
-   **Tidsserie** (gäller inte här)
-1. Klicka på **Slutför** för att fortsätta till arbetsytan för schemadesign.
+1. Provide a **Schema Name** (e.g., `test_demo_ck001`).
+1. Choose **Schema Type**:
+    **Record Type** (required for AGO campaigns)
+    **Time Series** (not applicable here)
+1. Click **Finish** to proceed to the schema design canvas.
 
-## Välj enheter och fält som ska importeras
+## Select entities and fields to import
 
-1. Lägg till attribut (fält) i schemat på arbetsytan.
-1. Lägg till en **primärnyckel** (obligatoriskt).
-1. Lägg till ett **Version Descriptor**-attribut (för CDC-stöd):
-Det här måste vara av typen **DateTime** eller **Numeric** (Integer, Long, Short, Byte).
-Gemensamt exempel: `last_modified`
+1. In the canvas, add attributes (fields) to your schema.
+1. Add a **Primary Key** (mandatory).
+1. Add a **Version Descriptor** attribute (for CDC support):
+     This must be of type **DateTime** or **Numeric** (Integer, Long, Short, Byte).
+     Common example: `last_modified`
 
-> **Varför?** **Primärnyckeln** identifierar varje post unikt och **Versionsbeskrivningen** spårar ändringar som stöds av CDC (Change Data Capture) och dataregling.
+> **Why?** The **Primary Key** uniquely identifies each record, and the **Version Descriptor** tracks changes, supporting CDC (Change Data Capture) and data mirroring.
 
-1. Markera fälten som **Primär nyckel** och **Versionsbeskrivning**.
-1. Klicka på **Spara**.
-
+1. Mark the appropriate fields as **Primary Key** and **Version Descriptor**.
+1. Click **Save**.
+-->
 
 <!--
 

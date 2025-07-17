@@ -6,10 +6,10 @@ description: Lär dig hur du skapar ett relationsschema i Adobe Experience Platf
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3f92dc721648f822687b8efc302c40989b72b145
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 0%
+source-wordcount: '172'
+ht-degree: 1%
 
 ---
 
@@ -31,30 +31,30 @@ ht-degree: 0%
 
 </br>
 
-Innehållet
-
 Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
 I den här guiden får du hjälp med att skapa ett relationsschema, konfigurera en datauppsättning för orkestrerade kampanjer, importera data via en S3-källa och fråga om inkapslade data i AP-plattformen.
 
-I det här exemplet innehåller konfigurationen integrering av två nyckelentiteter, **Loyalty Transactions** och **Loyalty Rewards**, och länkning dem till befintliga kärnentiteter **Recipients** och **Brands**.
+<!--
+In this example, the setup includes integrating two key entities, **Loyalty Transactions** and **Loyalty Rewards**, and link them to existing core entities **Recipients** and **Brands**. 
 
 ![](assets/do-not-localize/schema_admin.png)
 
-1. [Skapa relationsschema och associerad datauppsättning](#schema)
+1. [Create relational Schema and associated Dataset](#schema)
+    
+    Define the relational data model for orchestrated campaigns, including the **Loyalty Memberships**, **Loyalty Transactions** and **Loyalty Rewards** entities, along with required keys and versioning attributes.
 
-   Definiera relationsdatamodellen för samordnade kampanjer, inklusive entiteterna **Förmånsmedlemskap**, **Förmånstransaktioner** och **Förmånsbelöningar**, tillsammans med nödvändiga nycklar och versionsattribut.
+1. [Link schema](#link-schema)
 
-1. [Länka schema](#link-schema)
+    Link the **Loyalty Transactions** entity to **Recipients**, and **Loyalty Rewards** to **Brands**, to build a connected data model that supports personalized customer journeys.
 
-   Länka entiteten **Loyalty Transactions** till **Mottagare** och **Loyalty Rewards** till **Varumärken** för att skapa en ansluten datamodell som stöder personaliserade kundresor.
+1. [Ingest Data](#ingest)
 
-1. [Ingrediera data](#ingest)
+    Bring data into Adobe Experience Platform from supported sources like SFTP, cloud storage, or databases.
 
-   Hämta in data till Adobe Experience Platform från källor som stöds, som SFTP, molnlagring eller databaser.
-
+-->
 
 <!--### Setting Up Change data capture ingestion {#cdc-ingestion}
 

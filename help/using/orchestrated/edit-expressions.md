@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3f92dc721648f822687b8efc302c40989b72b145
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2146'
 ht-degree: 28%
 
 ---
@@ -29,10 +29,6 @@ ht-degree: 28%
 <br/>
 
 >[!BEGINSHADEBOX]
-
-</br>
-
-Innehållet
 
 Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
