@@ -4,9 +4,9 @@ product: journey optimizer
 title: Upplevelsehändelser som söks igenom resor
 description: Lär dig använda Experience Events-sökning i resor
 exl-id: 35e2e347-0669-44a3-92ba-aee52e54c219
-source-git-commit: cee47accd4f5427f7e10015eba8b952d4e86daab
+source-git-commit: a587b8754e94781b7735f3d7d5abb9b9767a74a5
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '929'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Från och med den 8 juli 2025 stöds inte längre skapande av uttryck med upplevelsehändelser i den uttrycksredigerare som används i resevillkoren i nya kundorganisationer. Därför kan upplevelsehändelser i [Experience Platform-datakällan](../datasource/adobe-experience-platform-data-source.md) inte användas för att skapa uttryck. Nedan finns referenser till alternativa metoder och bästa metoder för att skapa uttryck/logik med upplevelsehändelser.
+>Från och med den 8 juli 2025 stöds inte längre skapande av uttryck med upplevelsehändelser i den uttrycksredigerare som används i resevillkor i nya kundorganisationer. Därför kan upplevelsehändelser i [Experience Platform-datakällan](../datasource/adobe-experience-platform-data-source.md) inte användas för att skapa uttryck. Nedan finns referenser till alternativa metoder och bästa metoder för att skapa uttryck/logik med upplevelsehändelser.
 >
 >Behöver du mer information? [Läs Frågor och svar](#faq-ee).
 
@@ -51,9 +51,9 @@ Om du vill inaktivera profiler som har visat vissa beteenden använder du gruppm
 
 Läs mer:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-audiences-in-conditions)
 
@@ -70,9 +70,9 @@ Så här förhindrar du att meddelanden skickas till profiler som har tagit emot
 
 Läs mer om hur du använder målgrupper:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-audiences-in-conditions)
 
@@ -92,9 +92,9 @@ Om du vill inkludera eller exkludera profiler baserat på om de har fått ett vi
 
 Läs mer:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-audiences-in-conditions)
 
@@ -104,8 +104,8 @@ Läs mer:
 
 Skräddarsy kommunikationen utifrån den senaste kundvagnen eller se händelser i olika kundvagnstyper eller produktvyer:
 
-* Om du har tillgång till [Adobe Experience Platform Data Distiller](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/overview){target="_blank"} konfigurerar du automatiska frågor för att extrahera nödvändiga data från händelsen, ändra dem så att de passar användningsfallet och skriva tillbaka dem till en profilaktiverad datauppsättning för aktivering.
-* Om övergivna data kan modelleras utifrån profilen med skalära attribut kan du använda beräknade attribut för att hämta in den senaste informationen och sedan referera till dessa attribut under resan för att skapa kommunikationen. [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+* Om du har tillgång till [Adobe Experience Platform Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview){target="_blank"} konfigurerar du automatiska frågor för att extrahera nödvändiga data från händelsen, ändra dem så att de passar användningsfallet och skriva tillbaka dem till en profilaktiverad datauppsättning för aktivering.
+* Om övergivna data kan modelleras utifrån profilen med skalära attribut kan du använda beräknade attribut för att hämta in den senaste informationen och sedan referera till dessa attribut under resan för att skapa kommunikationen. [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
 ## Beteendebaserad reseutgång
@@ -122,7 +122,7 @@ Om du vill utlösa resor baserat på inköp och undertrycka om värdet ligger ö
 
 Läs mer:
 
-* Adobe Experience Platform [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+* Adobe Experience Platform [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
 
@@ -150,9 +150,9 @@ Endast sökningen efter upplevelsehändelser i uttrycksredigeraren påverkas. F�
 
 +++
 
-+++Kommer min befintliga Adobe-organisation att påverkas av den här uppdateringen?
++++Påverkar min befintliga Adobe-organisation den här uppdateringen?
 
-Din Adobe-organisation påverkas bara om du inte redan använder funktionen för händelsesökning. Om du redan använder upplevelsehändelser i [Experience Platform-datakällan](../datasource/adobe-experience-platform-data-source.md) har din Adobe-organisation fortfarande stöd för sökning efter upplevelsehändelser.
+Din Adobe-organisation påverkas bara om du inte redan har använt funktionen för händelsesökning. Om du redan använder upplevelsehändelser i [Experience Platform-datakällan](../datasource/adobe-experience-platform-data-source.md) har din Adobe-organisation fortfarande stöd för sökning efter upplevelsehändelser.
 
 +++
 
