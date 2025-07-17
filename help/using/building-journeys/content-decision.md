@@ -10,9 +10,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: aktivitet, beslut, innehållsbeslut, beslutspolitik, arbetsyta, resa
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
-source-git-commit: 701b2caeac704149c820ce3bf6338107ab4bc9f8
+source-git-commit: 30234392f9b643fa37be701d4d6878d798ea94fe
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '987'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Följ stegen nedan för att konfigurera aktiviteten **[!UICONTROL Content decisi
 
    När du lägger till flera beslutsobjekt och/eller strategier utvärderas de i sekventiell ordning, vilket anges med siffror till vänster om varje objekt eller grupp av objekt. Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer](../experience-decisioning/create-decision.md#evaluation-order)
 
-1. Lägg till ett reserverbjudande om du vill. [Läs mer](../experience-decisioning/create-decision.md#fallback)
+1. (valfritt) Lägg till ett reserverbjudande. [Läs mer](../experience-decisioning/create-decision.md#fallback)
 
 1. Granska och spara din beslutspolicy.
 
@@ -85,7 +85,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
 1. Släpp en **[!UICONTROL Orchestration]**-aktivitet på arbetsytan i kategorin **[!UICONTROL Condition]**. [Läs mer](condition-activity.md#add-condition-activity)
 
-1. Du kan också byta namn på **[!UICONTROL Path1]**, som motsvarar det första uttrycket som du definierar, till en mer relevant etikett.
+1. (valfritt) Byt namn på **[!UICONTROL Path1]**, som motsvarar det första uttrycket du definierar, till en mer relevant etikett.
 
 1. För den första sökvägen klickar du i fältet **[!UICONTROL Expression]** eller använder redigeringsikonen för att lägga till ett uttryck.
 
@@ -103,7 +103,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    >[!NOTE]
    >
-   >Begränsad etikett som har definierats för ett attribut, antingen i en upplevelsehändelse som används i en beslutsregel (som kontextdata) eller i [erbjudandeschemat](../experience-decisioning/catalogs.md#access-catalog-schema), resulterar inte i principöverträdelse för DULE eller samtycke. Läs mer om datastyrningsprinciper i [det här avsnittet](../action/action-privacy.md)
+   >Alla begränsade etiketter som har definierats för ett attribut, antingen i en upplevelsehändelse för resan som används i en beslutsregel (som kontextdata) eller i [erbjudandeschemat](../experience-decisioning/catalogs.md#access-catalog-schema), resulterar i principöverträdelse för DULE eller samtycke. Läs mer om datastyrningsprinciper i [det här avsnittet](../action/action-privacy.md)
 
 1. Använd funktionen [listSize](functions/functionlistsize.md) med följande syntax för att kontrollera om något erbjudande har returnerats för de profiler som deltar i resan: `listSize(@decision{ContentdecisionName.items})>0`
 
