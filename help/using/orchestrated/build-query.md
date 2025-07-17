@@ -111,7 +111,7 @@ Så här lägger du till villkor i frågan:
    | Gilla | På samma sätt som operatorn Innehåller kan du infoga ett %-jokertecken i värdet. | Efternamn (@lastName) som &#39;Jon%s&#39;. Jokertecknet fungerar som&quot;joker&quot; och söker efter namn som&quot;Jones&quot;. |
    | Inte som | På samma sätt som operatorn Innehåller kan du infoga ett %-jokertecken i värdet. | Efternamnet (@lastName) är inte som Smi%h. Mottagare vars efternamn är &quot;Smith&quot; returneras inte. |
 
-+++
+   +++
 
 1. Definiera det förväntade värdet i fältet **Värde**. Du kan också använda uttrycksredigeraren för att manuellt definiera ett uttryck med hjälp av fält från databasen och hjälpfunktionerna. Det gör du genom att klicka på ![bilden med ikonen för uttrycksredigeraren](assets/do-not-localize/rule-builder-icon-editor.svg) . [Lär dig hur du redigerar uttryck](../orchestrated/edit-expressions.md)
 
@@ -121,7 +121,7 @@ Så här lägger du till villkor i frågan:
 
    ![bild som visar förinställningsalternativet](assets/rule-builder-attribute-preset.png)
 
-+++
+   +++
 
 ### Anpassade villkor i länkade tabeller (1-1- och 1-N-länkar){#links}
 
