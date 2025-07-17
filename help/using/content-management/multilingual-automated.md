@@ -62,7 +62,7 @@ Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av automa
 
 Starta översättningsprojektet genom att ange språkområdet som mål, vilket anger det specifika språket eller den specifika regionen för innehållet. Du kan sedan välja översättningsleverantör.
 
-1. Klicka på **[!UICONTROL Create project]** på fliken **[!UICONTROL Projects]** på menyn **[!UICONTROL Translation]** under **[!UICONTROL Content management]**.
+1. Klicka på **[!UICONTROL Translation]** på fliken **[!UICONTROL Content management]** på menyn **[!UICONTROL Create project]** under **[!UICONTROL Projects]**.
 
    ![](assets/translation_project_1.png)
 
@@ -117,15 +117,15 @@ Ditt översättningsprojekt har skapats och kan användas i en flerspråkig kamp
 
 I det här avsnittet kan du ange olika språkområden för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket.
 
-1. Gå till **[!UICONTROL Channel]** > **[!UICONTROL General settings]** på menyn **[!UICONTROL Administration]**.
+1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channel]** på menyn **[!UICONTROL General settings]**.
 
-1. Klicka på **[!UICONTROL Create language settings]** på menyn **[!UICONTROL Language settings]**.
+1. Klicka på **[!UICONTROL Language settings]** på menyn **[!UICONTROL Create language settings]**.
 
    ![](assets/language_settings_1.png)
 
 1. Ange namnet på din **[!UICONTROL Language settings]** och välj **[!UICONTROL Translation project]**.
 
-1. Klicka på **[!UICONTROL Edit]** i fältet **[!UICONTROL Translation project]** och välj den **[!UICONTROL Translation project]** som du skapade tidigare.
+1. Klicka på **[!UICONTROL Translation project]** i fältet **[!UICONTROL Edit]** och välj den **[!UICONTROL Translation project]** som du skapade tidigare.
 
    Din tidigare konfigurerade **[!UICONTROL Locales]** importeras automatiskt.
 
@@ -166,7 +166,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
    1. Gå till taggegenskaper i Adobe Experience Platform Data Collection.
 
-   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [Datainsamlingsdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [dokumentationen för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
    1. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
 
@@ -199,7 +199,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
       * Klicka på knappen **[!UICONTROL Keep changes]** för att bekräfta och spara regeln.
 
-   +++
++++
 
 1. Dra och släpp språkinställningarna för att ordna om dem och hantera deras prioritet i listan.
 
@@ -288,16 +288,16 @@ När du har konfigurerat översättningsprojektet och språkinställningarna är
 
 Nu kan ni aktivera kampanjen eller resan. När ni har skickat dem kan ni mäta effekten av er flerspråkiga resa eller kampanj i rapporter.
 
-## Hantera översättningsprojekt från Insourcing {#manage-ht-project}
+## Hantera Insourcing översättningsprojekt {#manage-ht-project}
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_insourcing_project"
->title="Översättningsprojekt läggs in"
->abstract="Genom att lägga in översättningsprojekt kan ni hantera och utföra översättningar direkt i översättningsprojektet, effektivisera processen och behålla större kontroll över översättningskvalitet och konsekvens."
+>title="Insourcing översättningsprojekt"
+>abstract="Med Insourcing översättningsprojekt kan du hantera och utföra översättningar direkt i översättningsprojektet, effektivisera processen och behålla större kontroll över översättningskvalitet och konsekvens."
 
 Om du valde Insourcing när du konfigurerade språkinställningarna kan du översätta ditt innehåll direkt i översättningsprojektet.
 
-1. Gå till menyn **[!UICONTROL More actions]** från din **[!UICONTROL Translation project]** och välj **[!UICONTROL Insourcing]**.
+1. Gå till menyn **[!UICONTROL Translation project]** från din **[!UICONTROL More actions]** och välj **[!UICONTROL Insourcing]**.
 
    ![](assets/inhouse-translation-1.png)
 
@@ -329,7 +329,7 @@ Observera att om det här alternativet är inaktiverat, när översättningen ä
 
 1. När översättningen har slutförts från tjänsteleverantören kan du komma åt översättningen för granskning från **[!UICONTROL Translation project]** eller direkt från **[!UICONTROL Campaign]**.
 
-   Klicka på **[!UICONTROL Review]** på menyn **[!UICONTROL More actions]**.
+   Klicka på **[!UICONTROL More actions]** på menyn **[!UICONTROL Review]**.
 
    ![](assets/translation_review_1.png)
 
@@ -361,7 +361,7 @@ Observera att om det här alternativet är inaktiverat, när översättningen ä
 
 1. När din **[!UICONTROL Translation project]**-status har angetts till Granskad kan du skicka den till din kampanj.
 
-   Klicka på **[!UICONTROL Publish]** på menyn **[!UICONTROL More actions]**.
+   Klicka på **[!UICONTROL More actions]** på menyn **[!UICONTROL Publish]**.
 
    ![](assets/translation_review_7.png)
 

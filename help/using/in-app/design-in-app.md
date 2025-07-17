@@ -23,11 +23,11 @@ ht-degree: 6%
 
 Du kan redigera innehållet i appen för att konfigurera upplevelsealternativ:
 
-* Klicka på knappen **[!UICONTROL Edit content]** i en **[!UICONTROL Campaign]** på menyn **[!UICONTROL Action]** för att konfigurera meddelandeinnehållet.
+* Klicka på knappen **[!UICONTROL Campaign]** i en **[!UICONTROL Action]** på menyn **[!UICONTROL Edit content]** för att konfigurera meddelandeinnehållet.
 
   ![](assets/edit-in-app-content.png)
 
-* I en **[!UICONTROL Journey]** kan du börja designa ditt innehåll med knappen **[!UICONTROL Edit content]** på den avancerade menyn i ditt program **[!UICONTROL Action]**.
+* I en **[!UICONTROL Journey]** kan du börja designa ditt innehåll med knappen **[!UICONTROL Action]** på den avancerade menyn i ditt program **[!UICONTROL Edit content]**.
 
   ![](assets/design_inapp_journey.png)
 
@@ -141,7 +141,7 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du välja för **
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_buttons"
 >title="Lägg till knappar så att användarna kan interagera med meddelandet i appen."
->abstract="I det här avsnittet kan du lägga till knappar för att ringa upp och utföra åtgärder i meddelandet. Du kan inkludera egen text och mål för varje knapp."
+>abstract="I det här avsnittet kan du lägga till call-to-action-knappar i meddelandet. Du kan inkludera egen text och mål för varje knapp."
 
 Lägg till knappar så att användarna kan interagera med meddelandet i appen.
 
