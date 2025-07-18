@@ -10,14 +10,15 @@ level: Beginner, Intermediate
 keywords: mörkt läge, e-post, färg, redigerare
 hide: true
 hidefromtoc: true
-source-git-commit: 069df6fb67960bc7bdad4a8e0c3fdfa2b82fb8b5
+exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
+source-git-commit: b5d9b9c26824517414982fa539e0b360500cafc6
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1679'
 ht-degree: 0%
 
 ---
 
-# Definiera innehåll i mörkt läge {#dark-mode}
+# Hantera innehåll i mörkt läge {#dark-mode}
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode"
@@ -144,13 +145,19 @@ Följ stegen nedan för att definiera egna inställningar för mörkt läge.
 
    <!--![](assets/dark-mode-custom.png)-->
 
-1. När alla ändringar för mörkt läge har gjorts klickar du på **[!UICONTROL Simulate content]**.
+1. Du kan när som helst **[!UICONTROL Switch to live view]** för att kontrollera hur ditt innehåll kan återges på olika enhetsstorlekar. I den här vyn väljer du det mörka läget längst upp på skärmen för att förhandsvisa den mörka lägesversionen av innehållet på olika enheter.
+
+   ![](assets/dark-mode-live-view.png){width="80%" align="center"}
+
+   >[!CAUTION]
+   >
+   >Live-vyn är en allmän förhandsvisning som är utformad för att jämföra hur återgivningen kan se ut på olika enhetsstorlekar. Den slutliga återgivningen kan variera beroende på mottagarens e-postklient.
+
+1. När du är nöjd med ändringarna för mörkt läge klickar du på **[!UICONTROL Simulate content]**.
 
    ![](assets/dark-mode-simulate.png)
 
-1. Välj **[!UICONTROL Render email]** och anslut till ditt Litmus-konto. Du kan se den slutliga återgivningen i mörkt läge för olika e-postklienter.
-
-   ![](assets/dark-mode-email-rendering.png){width="80%"}
+1. Välj **[!UICONTROL Render email]** och anslut till ditt Litmus-konto. Du kan se den slutliga återgivningen i mörkt läge för olika e-postklienter. Läs mer om [E-poståtergivning](../content-management/rendering.md).
 
    >[!WARNING]
    >
