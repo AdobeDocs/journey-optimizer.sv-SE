@@ -6,14 +6,15 @@ description: Lär dig hur du skapar ett relationsschema i Adobe Experience Platf
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
-source-git-commit: 3f92dc721648f822687b8efc302c40989b72b145
+exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
+source-git-commit: 3dc0bf4acc4976ca1c46de46cf6ce4f2097f3721
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 1%
+source-wordcount: '844'
+ht-degree: 0%
 
 ---
 
-# Filöverföring {#file-upload-schema}
+# Skapa relationsscheman med en DDL-fil {#file-upload-schema}
 
 +++ Innehållsförteckning
 
@@ -37,121 +38,125 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 Definiera relationsdatamodellen som krävs för samordnade kampanjer genom att skapa scheman som **Förmånsmedlemskap**, **Förmånstransaktioner** och **Förmånsbelöningar**. Varje schema måste innehålla en primärnyckel, ett versionsattribut och lämpliga relationer till referensentiteter som **Mottagare** eller **Varumärken**.
 
-<!--
-Schemas can be created manually through the interface or imported in bulk using a DDL file.
+Scheman kan skapas manuellt via gränssnittet eller importeras i grupp med hjälp av en DDL-fil.
 
-This section provides step-by-step guidance on how to create a relational schema within Adobe Experience Platform by uploading a DDL (Data Definition Language) file. Using a DDL file allows you to define the structure of your data model in advance, including tables, attributes, keys, and relationships. 
+I det här avsnittet finns stegvisa anvisningar om hur du skapar ett relationsschema i Adobe Experience Platform genom att överföra en DDL-fil (Data Definition Language). Med hjälp av en DDL-fil kan du definiera datamodellens struktur i förväg, inklusive tabeller, attribut, nycklar och relationer.
 
-## Upload a DDL file{#ddl-upload}
+1. [Överför en DDL-fil](#ddl-upload) för att skapa relationsscheman och definiera deras struktur.
 
-By uploading a DDL file, you can define the structure of your data model in advance, including tables, attributes, keys, and relationships. 
+1. [Definiera relationer](#relationships) mellan tabeller i datamodellen.
 
-1. Log in to Adobe Experience Platform.
+1. [Länka scheman](#link-schema) för att koppla relationsdata till befintliga profilentiteter som mottagare eller varumärken.
 
-1. Navigate to the **Data Management** > **Schema**.
+1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-1. Click on **Create Schema**.
+## Överföra en DDL-fil{#ddl-upload}
 
-1. You will be prompted to select between two schema types:
+Genom att överföra en DDL-fil kan du definiera datamodellens struktur i förväg, inklusive tabeller, attribut, nycklar och relationer.
 
-    * **Standard**
-    * **Relational**, used specifically for orchestrated campaigns
+1. Logga in på Adobe Experience Platform.
 
-    ![](assets/admin_schema_1.png)
+1. Navigera till menyn **Datahantering** > **Schema** .
 
-1. Select **Upload DDL file** to define an entity relationship diagram and create schemas.
+1. Klicka på **Skapa schema**.
 
-    The table structure must contain:
-    * At least one primary key
-    * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
+1. Välj **[!UICONTROL Relational]** som **schematyp**.
 
-1. Drag and drop your DDL file and click **[!UICONTROL Next]**.
+   ![](assets/admin_schema_1.png)
 
-1. Type-in your **[!UICONTROL Schema name]**.
+1. Välj **[!UICONTROL Upload DDL file]** om du vill definiera ett entitetsrelationsdiagram och skapa scheman.
 
-1. Set up each schema and its columns, ensuring that a primary key is specified. 
+   Tabellstrukturen måste innehålla:
+   * Minst en primärnyckel
+   * En versionsidentifierare, till exempel ett `lastmodified`-fält av typen `datetime` eller `number`.
 
-    One attribute, such as `lastmodified`, must be designated as a version descriptor. This attribute, typically of type `datetime`, `long`, or `int`, is essential for ingestion processes to ensure that the dataset is updated with the latest data version.
+1. Dra och släpp din DDL-fil och klicka på **[!UICONTROL Next]**.
 
-    ![](assets/admin_schema_2.png)
+1. Skriv in din/ditt **[!UICONTROL Schema name]**.
 
-1. Click **[!UICONTROL Done]** once done.
+1. Konfigurera varje schema och dess kolumner och se till att en primärnyckel anges.
 
-You can now verify the table and field definitions within the canvas. [Learn more in the section below](#entities)
+   Ett attribut, till exempel `lastmodified`, måste anges som en versionsbeskrivare. Det här attributet, som vanligtvis är av typen `datetime`, `long` eller `int`, är nödvändigt för att matningsprocesser ska kunna säkerställa att datauppsättningen uppdateras med den senaste dataversionen.
 
-## Define relationships {#relationships}
+   ![](assets/admin_schema_2.png)
 
-To define logical connections between tables within your schema, follow the steps below.
+1. Klicka på **[!UICONTROL Done]** när du är klar.
 
-1. Access the canvas view of your data model and choose the two tables you want to link
+Nu kan du verifiera tabell- och fältdefinitionerna på arbetsytan. [Läs mer i avsnittet nedan](#entities)
 
-1. Click the ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) button next to the Source Join, then drag and guide the arrow towards the Target Join to establish the connection.
+## Definiera relationer {#relationships}
 
-    ![](assets/admin_schema_5.png)
+Följ stegen nedan för att definiera logiska anslutningar mellan tabeller i ditt schema.
 
-1. Fill in the given form to define the link and click **Apply** once configured.
+1. Få åtkomst till arbetsytans vy av din datamodell och välj de två tabeller som du vill länka
 
-    ![](assets/admin_schema_3.png)
+1. Klicka på knappen ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) bredvid Source Join och dra sedan pilen mot målhörnet för att upprätta anslutningen.
 
-    **Cardinality**:
+   ![](assets/admin_schema_5.png)
 
-     * **1-N**: one occurrence of the source table can have several corresponding occurrences of the target table, but one occurrence of the target table can have at most one corresponding occurrence of the source table.
+1. Fyll i det angivna formuläret för att definiera länken och klicka på **Använd** när du har konfigurerat den.
 
-    * **N-1**: one occurrence of the target table can have several corresponding occurrences of the source table, but one occurrence of the source table can have at most one corresponding occurrence of the target table.
+   ![](assets/admin_schema_3.png)
 
-    * **1-1**: one occurrence of the source table can have at most one corresponding occurrence of the target table.
+   **Kardinalitet**:
 
-1. All links defined in your data model are represented as arrows in the canvas view. Click on an arrow between two tables to view details, make edits, or remove the link as needed.
+   * **1-N**: En förekomst av källtabellen kan ha flera motsvarande förekomster av måltabellen, men en förekomst av måltabellen kan ha högst en motsvarande förekomst av källtabellen.
 
-    ![](assets/admin_schema_6.png)
+   * **N-1**: en förekomst av måltabellen kan ha flera motsvarande förekomster av källtabellen, men en förekomst av källtabellen kan ha högst en motsvarande förekomst av måltabellen.
 
-1. Use the toolbar to customize and adjust your canvas.
+   * **1-1**: En förekomst av källtabellen kan ha högst en motsvarande förekomst av måltabellen.
 
-    ![](assets/toolbar.png)
+1. Alla länkar som definieras i datamodellen representeras som pilar i arbetsytevyn. Klicka på en pil mellan två tabeller för att visa detaljer, göra ändringar eller ta bort länken efter behov.
 
-    * **Zoom in**: Magnify the canvas to see details of your data model more clearly.
+   ![](assets/admin_schema_6.png)
 
-    * **Zoom out**: Reduce the canvas size for a broader view of your data model.
+1. Använd verktygsfältet för att anpassa och justera arbetsytan.
 
-    * **Fit view**: Adjust the zoom to fit all schemas within the visible area.
+   ![](assets/toolbar.png)
 
-    * **Filter**: Choose which schema to display within the canvas.
+   * **Zooma in**: Förstora arbetsytan så att du tydligare kan se information om datamodellen.
 
-    * **Force auto layout**: Automatically arrange schemas for better organization.
+   * **Zooma ut**: Minska arbetsytans storlek för en bredare vy av datamodellen.
 
-    * **Display map**: Toggle a minimap overlay to help navigate large or complex schema layouts more easily.
+   * **Anpassa vy**: Justera zoomningen så att den passar alla scheman i det synliga området.
 
-1. Click **Save** once done. This action creates the schemas and associated data sets and enables the data set for use in Orchestrated Campaigns.
+   * **Filter**: Välj vilket schema som ska visas på arbetsytan.
 
-1. Click **[!UICONTROL Open Jobs]** to monitor the progress of the creation job. This process may take couple minutes, depending on the number of tables defined in the DDL file. 
+   * **Tvinga automatisk layout**: Ordna scheman automatiskt för bättre ordning.
 
-    ![](assets/admin_schema_4.png)
+   * **Visningsschema**: Växla en minimumöverlappning för att enklare kunna navigera i stora eller komplexa schemalayouter.
 
-## Link schema {#link-schema}
+1. Klicka på **Spara** när du är klar. Den här åtgärden skapar scheman och associerade datauppsättningar och aktiverar datauppsättningen för användning i Orchestrated Campaigns.
 
-Establish a relationship between the **loyalty transactions** schema and the **Recipients** schema to associate each transaction with the correct customer record.
+1. Klicka på **[!UICONTROL Open Jobs]** för att övervaka förloppet för skapandet. Den här processen kan ta några minuter, beroende på hur många tabeller som har definierats i DDL-filen.
 
-1. Navigate to **[!UICONTROL Schemas]** and open your previously create **loyalty transactions**.
+   ![](assets/admin_schema_4.png)
 
-1. Click **[!UICONTROL Add Relationship]** from the Customer **[!UICONTROL Field properties]**.
+## Länka scheman {#link-schema}
 
-    ![](assets/schema_1.png)
+Upprätta en relation mellan schemat **lojalitetstransaktioner** och schemat **Mottagare** för att associera varje transaktion med rätt kundpost.
 
-1. Select **[!UICONTROL Many-to-One]** as the relationship **[!UICONTROL Type]**.
+1. Navigera till **[!UICONTROL Schemas]** och öppna dina tidigare skapade **lojalitetstransaktioner**.
 
-1. Link to the existing **Recipients** schema.
+1. Klicka på **[!UICONTROL Add Relationship]** från kunden **[!UICONTROL Field properties]**.
 
-    ![](assets/schema_2.png)
+   ![](assets/schema_1.png)
 
-1. Enter a **[!UICONTROL Relationship name from current schema]** and **[!UICONTROL Relationship name from reference schema]**.
+1. Välj **[!UICONTROL Many-to-One]** som relation **[!UICONTROL Type]**.
 
-1. Click **[!UICONTROL Apply]** to save your changes.
+1. Länka till det befintliga **mottagarschemat**.
 
-Continue by creating a relationship between the **loyalty rewards** schema and the **Brands** schema to associate each reward entry with the appropriate brand.
+   ![](assets/schema_2.png)
+
+1. Ange **[!UICONTROL Relationship name from current schema]** och **[!UICONTROL Relationship name from reference schema]**.
+
+1. Klicka på **[!UICONTROL Apply]** om du vill spara ändringarna.
+
+Fortsätt genom att skapa en relation mellan schemat **loyalty rewards** och schemat **Brands** för att associera varje belöningspost med rätt varumärke.
 
 ![](assets/schema_3.png)
 
--->
+
 <!--### Setting Up Change data capture ingestion {#cdc-ingestion}
 
 If you need to change the data source, you must delete the existing dataflow and create a new one pointing to the same dataset with the new source.

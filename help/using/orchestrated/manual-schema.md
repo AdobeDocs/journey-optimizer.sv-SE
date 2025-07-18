@@ -7,14 +7,14 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
-source-git-commit: 3f92dc721648f822687b8efc302c40989b72b145
+source-git-commit: 3dc0bf4acc4976ca1c46de46cf6ce4f2097f3721
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 1%
+source-wordcount: '687'
+ht-degree: 0%
 
 ---
 
-# Manuellt schema {#manual-schema}
+# Konfigurera ett manuellt relationsschema {#manual-schema}
 
 +++ Innehållsförteckning
 
@@ -38,146 +38,123 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 Relationsscheman kan skapas direkt via användargränssnittet, vilket möjliggör detaljerad konfiguration av attribut, primärnycklar, versionsfält och relationer.
 
-<!--
-The following example manually defines the Loyalty Memberships schema to illustrate the required structure for orchestrated campaigns.
+I följande exempel definieras schemat **Förmånsmedlemskap** manuellt för att illustrera den struktur som krävs för samordnade kampanjer.
 
-1. Log in to Adobe Experience Platform.
+1. [Skapa ett relationsschema manuellt](#schema) med Adobe Experience Platform-gränssnittet.
 
-1. Navigate to the **Data Management** > **Schema**.
+1. [Lägg till attribut](#schema-attributes) som kund-ID, medlemsnivå och statusfält.
 
-1. Click on **Create Schema**.
+1. [Länka ditt schema](#link-schema) till inbyggda scheman, till exempel Mottagare för kampanjanpassning.
 
-1. You will be prompted to select between two schema types:
+1. [Skapa en datamängd](#dataset) baserat på ditt schema och aktivera den för användning i samordnade kampanjer.
 
-    * **Standard**
-    * **Relational**, used specifically for orchestrated campaigns
+1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-    ![](assets/admin_schema_1.png)
+## Skapa ditt schema {#schema}
 
-1. Provide a **Schema Name** (e.g., `test_demo_ck001`).
-1. Choose **Schema Type**:
-    **Record Type** (required for AGO campaigns)
-    **Time Series** (not applicable here)
-1. Click **Finish** to proceed to the schema design canvas.
+Börja med att skapa ett nytt relationsschema manuellt i Adobe Experience Platform. Med den här processen kan du definiera schemastrukturen från grunden, inklusive dess namn och beteende.
 
-## Select entities and fields to import
+1. Logga in på Adobe Experience Platform.
 
-1. In the canvas, add attributes (fields) to your schema.
-1. Add a **Primary Key** (mandatory).
-1. Add a **Version Descriptor** attribute (for CDC support):
-     This must be of type **DateTime** or **Numeric** (Integer, Long, Short, Byte).
-     Common example: `last_modified`
+1. Navigera till menyn **[!UICONTROL Data Management]** > **[!UICONTROL Schema]**.
 
-> **Why?** The **Primary Key** uniquely identifies each record, and the **Version Descriptor** tracks changes, supporting CDC (Change Data Capture) and data mirroring.
+1. Klicka på **[!UICONTROL Create Schema]**.
 
-1. Mark the appropriate fields as **Primary Key** and **Version Descriptor**.
-1. Click **Save**.
--->
+1. Välj **[!UICONTROL Relational]** som **schematyp**.
 
-<!--
+   ![](assets/admin_schema_1.png){zoomable="yes"}
 
-## 5. Creating a Dataset
+1. Välj **[!UICONTROL Create manually]** om du vill skapa schema genom att lägga till fält manuellt.
 
-1. Navigate to **Datasets**.
-1. Click on **Create Dataset**.
-1. Select the schema you just created.
-1. Assign a **Dataset Name** (same as schema is fine).
-1. Optionally, add tags (e.g., `AGO_campaigns`).
-6. Ensure the checkbox **"Relational Schema"** is checked.
-7. Click **Finish**.
+1. Ange din **[!UICONTROL Schema display name]**.
 
-> **Note:** Only one dataset can be created per relational schema.
+1. Välj **[!UICONTROL Record]** som **[!UICONTROL Schema behavior]**.
 
+   ![](assets/schema_manual_8.png){zoomable="yes"}
 
-## 6. Enabling the Dataset
+1. Klicka på **Slutför** om du vill fortsätta skapa schemat.
 
-1. Click **Enable** for the dataset.
-1. Wait a few moments for the status to show **Enabled**.
+Nu kan du börja lägga till attribut i schemat för att definiera dess struktur.
 
-> **Why?** Without enabling, the dataset cannot be used in orchestrated campaigns or ingest data.
+## Lägg till attribut i schemat {#schema-attributes}
 
-## 7. Creating a Data Source (S3)
+Sedan lägger du till attribut för att definiera strukturen för ditt schema. Dessa fält representerar de nyckeldatapunkter som används i samordnade kampanjer, t.ex. kundidentifierare, medlemsinformation och aktivitetsdatum. Genom att definiera dem korrekt kan du säkerställa tillförlitlig personalisering, segmentering och spårning.
 
-1. Navigate to **Sources**.
-1. Click **Create Source**.
-1. Choose the source type (e.g., **S3 Bucket**).
-1. Provide connection details:
-    - Bucket Path (optionally include subfolder path)
-1. Save the source.
+1. Klicka på ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) bredvid ditt **schemanamn** på arbetsytan för att börja lägga till attribut.
 
-## 8. Preparing and Uploading Data
+   ![](assets/schema_manual_1.png){zoomable="yes"}
 
-1. Prepare your CSV file with:
-    - Column headers matching your schema attributes
-    - `last_modified` column
-    - `change_type` column (`U`/`DU` for upsert, `D` for delete)
+1. Ange attributet **[!UICONTROL Field name]**, **[!UICONTROL Display name]** och **[!UICONTROL Type]**.
 
-> **Important:** `change_type` is required but does not need to be defined in the schema.
+   I det här exemplet har vi lagt till attributen som beskrivs i tabellen nedan i schemat **Bonusmedlemskap**.
 
-1. Save the file as `.csv`.
++++ Exempel på attribut
 
-1. Upload the file to the specified folder in your S3 bucket.
+   | Attributnamn | Datatyp | Ytterligare attribut |
+   |-|-|-|
+   | kund | STRÄNG | Primär nyckel |
+   | medlemskapsnivå | STRÄNG | Obligatoriskt |
+   | points_balance | INTEGER | Obligatoriskt |
+   | enrollment_date | DATUM | Obligatoriskt |
+   | last_status_change | DATUM | Obligatoriskt |
+   | förfallodatum | DATUM | – |
+   | is_active | BOOLEAN | Obligatoriskt |
+   | senast ändrad | DATETIME | Obligatoriskt |
 
++++
 
-## 9. Ingesting Data from S3
+1. Tilldela lämpliga fält som **[!UICONTROL Primary Key]** och **[!UICONTROL Version Descriptor]**.
 
-1. Go to **Sources** and find your S3 source.
-1. Click **Add Data**.
-1. Select the uploaded file.
-1. Specify the file format as **CSV** and any compression type if applicable.
-1. Review the data preview (ensure `change_type`, `last_modified`, and primary key are visible).
-1. Click **Next**.
+   **[!UICONTROL Primary Key]** ser till att varje post identifieras unikt, medan **[!UICONTROL Version Descriptor]** hämtar uppdateringar över tiden, vilket aktiverar registrering av ändringsdata och stöd för dataregling.
 
-### Enable Change Data Capture (CDC)
+   ![](assets/schema_manual_2.png){zoomable="yes"}
 
-- Check **Enable Change Data Capture**.
-- Select the dataset enabled for AGO campaigns.
+1. Klicka på **[!UICONTROL Save]**.
 
-### Field Mapping
+När attributen har skapats måste du länka ditt nyligen skapade schema till ett inbyggt schema.
 
-- Fields are auto-mapped (note that `change_type` is not mapped and that's expected).
-- Click **Next**.
+## Länka scheman {#link-schema}
 
-### Scheduling
+Skapa en relation mellan två scheman så att ni kan berika era samordnade kampanjer med data som lagras utanför det primära profilschemat.
 
-- Schedule ingestion frequency (minute, hour, day, week).
-- Set start time (immediate or future).
-- Click **Finish** to create the data flow.
+1. Välj det attribut som du vill använda som länk från ditt nyligen skapade schema och klicka på **[!UICONTROL Add relationship]**.
 
-## 10. Monitoring Data Flow
+   ![](assets/schema_manual_3.png){zoomable="yes"}
 
-1. Navigate back to **Sources > Data Flows**.
-1. Wait 4–5 minutes for the first run (initial overhead).
-1. Monitor:
-    - Status (Started, Completed)
-    - Number of records ingested
-    - Errors (if any)
+1. Välj **[!UICONTROL Reference schema]** och **[!UICONTROL Reference field]** som relationen ska upprättas med.
 
-> **Tip:** Ingested data first lands in the **Data Lake**.
+   I det här exemplet är attributet `customer` länkat till schemat `recipients`.
 
-## 11. Data Replication to Data Store
+   ![](assets/schema_manual_4.png){zoomable="yes"}
 
-The **Data Store** is updated:
+1. Ange ett relationsnamn från aktuellt schema och från referensschema.
 
-- Every **15 minutes**, or
+1. Klicka på **[!UICONTROL Apply]** när du har konfigurerats.
 
-- If **Data Lake size exceeds 5MB**
+När relationen är etablerad måste du skapa en datauppsättning baserad på ditt schema.
 
-This is a background replication process.
+## Skapa en datauppsättning för schemat {#dataset}
 
+När du har definierat ditt schema är nästa steg att skapa en datauppsättning som baseras på det. Den här datauppsättningen lagrar dina inkapslade data och måste aktiveras för att Orchestrated Campaigns ska kunna göra den tillgänglig i Adobe Journey Optimizer. Om du aktiverar det här alternativet identifieras datauppsättningen för användning i arbetsflöden för realtidssamordning och personalisering.
 
-## 12. Querying the Dataset
+1. Navigera till menyn **[!UICONTROL Data Management]** > **[!UICONTROL Datasets]** och klicka på **[!UICONTROL Create dataset]**.
 
-1. Navigate to **Query Services**.
-1. Click **Create Query**.
-1. Example query:
+   ![](assets/schema_manual_5.png){zoomable="yes"}
 
-   ```sql
-   SELECT * FROM test_demo_ck001;
-   ```
+1. Välj **[!UICONTROL Create dataset from schema]**.
 
-1. Run the query.
+1. Välj det schema du skapat tidigare, här **Bonusmedlemskap**, och klicka på **[!UICONTROL Next]**.
 
-> **Note:** If ingestion is incomplete, query will return an error. Check data flow status.
+   ![](assets/schema_manual_6.png){zoomable="yes"}
 
--->
+1. Ange **[!UICONTROL Name]** för din **[!UICONTROL Dataset]** och klicka på **[!UICONTROL Finish]**.
+
+1. Aktivera alternativet **Orchestrated Campaigns** för att göra datauppsättningen tillgänglig för användning i dina AJO-kampanjer.
+
+   Aktiveringen kan ta några minuter. Intag av data är bara möjligt efter att alternativet har aktiverats helt.
+
+   ![](assets/schema_manual_7.png){zoomable="yes"}
+
+Nu kan du börja inhämta data i ditt schema med valfri källa.
+
+➡️ [Lär dig hur du importerar data](ingest-data.md)
