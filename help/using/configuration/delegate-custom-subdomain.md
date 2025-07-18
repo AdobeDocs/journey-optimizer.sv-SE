@@ -11,7 +11,7 @@ keywords: underdomän, delegering, domän, DNS
 hide: true
 hidefromtoc: true
 exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
-source-git-commit: 6d2342b262ea10942f94c82f7d1539a2f6c7c82e
+source-git-commit: 64ff860167439e1b098918cd913f2361f7365a50
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 2%
@@ -127,6 +127,7 @@ Följ stegen nedan för att konfigurera en anpassad underdomän.
    Adobe genererar en SSL CDN URL-valideringspost. Kopiera den här valideringsposten till din värdplattform. Om du har skapat den här posten på din värdlösning, markerar du rutan &quot;Jag bekräftar...&quot;.
 
 1. Klicka på **[!UICONTROL Submit]** om du vill att Adobe ska utföra de nödvändiga kontrollerna. [Läs mer](#submit-subdomain)
+
 
 ## Checklista för felsökning {#check-list}
 
