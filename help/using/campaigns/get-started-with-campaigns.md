@@ -96,7 +96,7 @@ Kontrollera följande krav innan du börjar skapa din första kampanj i [!DNL Jo
 
    Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
-+++
+   +++
 
 1. **Du behöver en målgrupp**. Målgrupper måste vara tillgängliga innan kampanjen kan skapas. [Kom igång med målgrupper](../audience/about-audiences.md).
 
