@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
-source-git-commit: 3dc0bf4acc4976ca1c46de46cf6ce4f2097f3721
+source-git-commit: 2ad659b391515c193418325c34a9dd56133b90d6
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Du kan konfigurera ett dataflöde för att importera data från en Amazon S3-kä
 
    * Med ett nytt konto
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
 
    ![](assets/admin_sources_2.png)
 
@@ -80,7 +80,7 @@ Du kan konfigurera ett dataflöde för att importera data från en Amazon S3-kä
 
 1. Markera **[!UICONTROL Enable Change data capture]** om du vill välja bland datauppsättningar som är mappade till relationsscheman och som har både en primärnyckel och en versionsbeskrivare definierad.
 
-1. Markera din [tidigare skapade datauppsättning](#entities) och klicka på **[!UICONTROL Next]**.
+1. Markera din [tidigare skapade datauppsättning](file-upload-schema.md) och klicka på **[!UICONTROL Next]**.
 
    ![](assets/S3_config_3.png)
 

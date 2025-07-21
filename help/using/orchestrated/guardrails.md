@@ -6,9 +6,9 @@ description: Läs mer om säkra kampanjer och begränsningar
 hide: true
 hidefromtoc: true
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 2ad659b391515c193418325c34a9dd56133b90d6
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Begränsningar för dataflöde till datauppsättning
 
-Varje datauppsättning i Adobe Experience Platform kan bara kopplas till ett aktivt dataflöde i taget. Denna 1:1-kardinalitet används strikt av plattformen.
+Varje datauppsättning i Adobe Experience Platform kan bara kopplas till ett aktivt dataflöde i taget. Denna kardinalitet om 1:1 används strikt av plattformen.
 
 Om du behöver byta datakälla (t.ex. från Amazon S3 till Salesforce):
 
@@ -40,7 +40,60 @@ Detta garanterar tillförlitlig datainhämtning och är nödvändigt när du anv
 
 ## Relationsscheman/begränsningar för dataöverföring
 
-* Antal scheman - Det maximala antalet relationsscheman (tabeller i relationsdatalagret) är 200
-* Relationsschemastorlek - maximal relationsschemastorlek för kampanjsamordning blir 100 GB.
-* Dataöverföringsfrekvens - batchdatainmatningsfrekvens för kampanjsamordning får inte överstiga en var femton:e minut.
-* Ändringar/uppdateringar - Dagliga uppdateringar/ändringar ska vara mindre än 20 % av det totala antalet poster för ett givet relationsschema
+* Upp till 200 relationsscheman (tabeller) stöds i relationsdatalagret.
+
+* Den totala storleken på ett relationsschema som används för kampanjsamordning får inte överstiga 100 GB.
+
+* Batchintag för kampanjsamordning bör inte ske oftare än en gång var 15:e minut.
+
+* Dagliga ändringar i ett relationsschema bör ligga under 20 % av det totala antalet poster.
+
+## Datamodellering
+
+* Versionsbeskrivare är obligatoriskt för alla scheman, inklusive faktatabeller.
+
+* En primärnyckel krävs för varje tabell.
+
+* Det table_name som tilldelas när datauppsättningar skapas används för segmenteringsgränssnittet och personaliseringsfunktionerna.
+
+  Det här namnet är permanent och kan inte ändras efter att det har skapats.
+
+* Fältgrupper stöds för närvarande inte.
+
+## Datainmatning
+
+* Profil + relationsdataöverföring krävs.
+
+* Ett ändringsfält krävs för filbaserad inmatning, medan registerloggning måste aktiveras för inmatning av molndatabasen. Detta är nödvändigt för registrering av ändringsdata (CDC).
+
+* Fördröjning från intag till datatillgänglighet i Snowflake varierar mellan 15 minuter och 2 timmar, beroende på datavolym, samtidighet och typ av åtgärder (infogningar är snabbare än uppdateringar).
+
+* Dataövervakning i Snowflake håller på att utvecklas, och för närvarande finns det ingen inbyggd bekräftelse för lyckat intag.
+
+* Direktuppdateringar till Snowflake eller datauppsättningen stöds inte. Alla ändringar måste göras via CDC-källor.
+
+  Frågetjänsten är skrivskyddad.
+
+* ETL stöds inte - kunderna måste ange data i det format som krävs.
+
+* Delvisa uppdateringar tillåts inte. Varje rad måste anges som en fullständig post.
+
+* Inmatningen bygger på Query Service och Data Distiller.
+
+## Segmentering
+
+* LOV (List of Values) och uppräkningar är för närvarande tillgängliga.
+
+* Sparade målgrupper är statiska listor, deras innehåll avspeglar de data som finns tillgängliga när kampanjen körs.
+
+* Tillägg till en sparad publik stöds inte. Uppdateringar kräver en fullständig överskrivning.
+
+* Målgrupper måste bestå av enbart skalära attribut. Kartor och arrayer stöds inte.
+
+* Segmentering stöder i första hand relationsdata. När det är tillåtet att blanda med profildata kan prestanda påverkas om stora profildatauppsättningar används. För att förhindra detta:
+
+* Det finns stödlinjer, som att begränsa antalet profilattribut som har valts i grupper eller direktuppspelade målgrupper.
+
+* Läser målgrupper cachelagras inte - varje kampanjkörning utlöser en fullständig läsning.
+
+  Optimering krävs för stora eller komplexa målgrupper.

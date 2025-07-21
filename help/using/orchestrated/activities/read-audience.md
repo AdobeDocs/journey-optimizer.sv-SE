@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 2ad659b391515c193418325c34a9dd56133b90d6
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,36 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
+Med aktiviteten **[!UICONTROL Read audience]** kan du hämta en befintlig målgrupp - som tidigare har sparats eller importerats - och återanvända den i en orkestrerad kampanj. Den här aktiviteten är särskilt användbar när du vill ha en fördefinierad uppsättning profiler som mål utan att behöva utföra en ny segmenteringsprocess.
+
+När målgruppen har lästs in kan du förfina den genom att välja ett unikt identitetsfält och berika målgruppen med ytterligare profilattribut för målinriktning, personalisering eller rapportering.
+
+## Konfigurera aktiviteten Läsa målgrupp {#read-audience-configuration}
+
+Så här konfigurerar du aktiviteten **[!UICONTROL Read audience]**:
+
+1. Lägg till en **[!UICONTROL Read audience]**-aktivitet i din samordnade kampanj.
+
+   ![](../assets/read-audience-1.png)
+
+1. Ange en **[!UICONTROL Label]** till din aktivitet.
+
+1. Klicka på ![mappsökningsikonen](../assets/do-not-localize/folder-search.svg) för att välja den målgrupp du vill ha för din samordnade kampanj.
+
+   ![](../assets/read-audience-2.png)
+
+1. Välj den **[!UICONTROL Entity]** som används för att unikt identifiera profiler i din målgrupp.
+
+   ![](../assets/read-audience-3.png)
+
+1. Välj **[!UICONTROL Add profile attribute]** om du vill berika den valda målgruppen med ytterligare data. Den slutliga publiken innehåller en lista med mottagare, där var och en har berikats med de valda profilattributen.
+
+1. Välj den **[!UICONTROL Attributes]** som du vill lägga till för din målgrupp.
+
+   ![](../assets/read-audience-4.png)
+
+## Exempel
+
+I exemplet nedan används aktiviteten **[!UICONTROL Read audience]** för att hämta en tidigare skapad och sparad publik med profiler som prenumererade på nyhetsbrevet. Publiken berikas sedan med attributet **Lojalitetsmedlemskap** för att aktivera målgruppsanpassning för användare som är registrerade medlemmar i bonusprogrammet.
+
+![](../assets/read-audience-5.png)
