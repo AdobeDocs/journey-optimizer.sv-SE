@@ -9,9 +9,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
-source-git-commit: 1215cdc3ed6050ca061f8d97281d52ade352611e
+source-git-commit: 9db476ff5b693bef91e982502c6dd37321610fc7
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2169'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,7 @@ Den här gränsen kontrolleras var 30:e minut. Detta innebär att du tillfällig
 
   Om du återupptar resor för att få tillbaka antalet hållna profiler under gränsen återupptas resan omedelbart, men det kan ta upp till 30 minuter innan profilantalet uppdateras. Under den tiden kan systemet fortfarande betrakta profilerna som pausade.
 
+* För resor som innehåller [inkommande aktiviteter](../channels/gs-channels.md#mobile-app-and-web-experiences) (t.ex. i appen, på webben, osv.) avbryts inte kommunikation som redan har utlösts om resan pausas. Om en profil har kvalificerat sig för en inkommande aktivitet innan paus, kommer motsvarande meddelande fortfarande att levereras. Om du vill stoppa all inkommande kommunikation helt måste du stoppa resan.
 * Pausade resor räknas in i kvoten för direktfärd
 * Profiler som hade passerat resan men ignorerats under pausen räknas fortfarande som profiler som kan användas
 * Pausade resor beaktas i alla affärsregler, på samma sätt som om de var levande
