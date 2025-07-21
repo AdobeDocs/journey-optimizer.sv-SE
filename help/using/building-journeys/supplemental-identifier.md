@@ -3,9 +3,9 @@ title: Kompletterande identifiering vid händelseutlösta resor
 description: Lär dig hur du använder tilläggsidentifierare i händelseutlösta resor.
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
-source-git-commit: 5e7aad25fa08994f6cbce9adfce4a3dc94fe3e47
+source-git-commit: 14a0054c605edd8ff0b63e71fb5c30104ff513ed
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,8 @@ I det här exemplet har vi lagt till ett boknings-ID som en extra identifierare.
 På så sätt utförs resor som utlöses av händelsen i samband med det profil-ID som är kopplat till den kompletterande identifieraren (här boknings-ID). En instans av resan utförs för varje iteration av den kompletterande identifieraren. Detta tillåter flera inmatningar av samma profil-ID på resorna om de har gjort olika bokningar.
 
 Dessutom kan du med Journey Optimizer använda attribut för den kompletterande identifieraren (t.ex. bokningsnummer, förnyelsedatum för förskrivning, produkttyp) för att anpassa meddelanden, vilket säkerställer mycket relevant kommunikation. <!--Example: A healthcare provider can send renewal reminders for each prescription in a patient's profile.-->
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Skyddsritningar och begränsningar {#guardrails}
 
@@ -188,3 +190,9 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
    * Profil:&quot;Alex&quot;.
    * Ytterligare ID: `"productID1234", "productID5678"`.
    * Resan körs separat för varje produkt, med skräddarsydda merförsäljningsmöjligheter.
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
+
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
