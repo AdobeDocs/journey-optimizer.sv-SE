@@ -39,4 +39,4 @@ ht-degree: 5%
 
 Lär dig hur du skapar en åtgärdskampanj.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3452729?quality=12&captions=swe)
