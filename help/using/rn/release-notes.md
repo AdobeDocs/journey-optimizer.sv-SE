@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: a587b8754e94781b7735f3d7d5abb9b9767a74a5
+source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1307'
 ht-degree: 7%
 
 ---
@@ -20,10 +20,13 @@ ht-degree: 7%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
-
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Senaste uppdateringar {#latest-updates}
+
+### Separata inventeringar för kampanjer
+
+Åtgärdskampanjer och API-utlösta kampanjer är nu ordnade i olika flikinventeringar så att det blir enklare att snabbt se alla kampanjer av en viss typ.
 
 ### Förändringar i resevillkor {#ee-change@}
 
@@ -41,7 +44,7 @@ Läs mer [i de här vanliga frågorna](../building-journeys/exp-event-lookup.md#
 
 **Releasedatum**: 18 juni 2025
 
-<!--See also [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+<!--See also [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#25-06-features}
 

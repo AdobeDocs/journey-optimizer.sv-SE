@@ -1,0 +1,62 @@
+---
+solution: Journey Optimizer
+product: journey optimizer
+title: Redigera åtgärdskampanjens innehåll
+description: Lär dig hur du redigerar åtgärdskampanjens innehåll.
+feature: Campaigns
+topic: Content Management
+role: User
+level: Beginner
+mini-toc-levels: 1
+keywords: skapa, optimera, kampanj, yta, meddelanden
+source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+workflow-type: tm+mt
+source-wordcount: '157'
+ht-degree: 2%
+
+---
+
+
+# Redigera åtgärdskampanjens innehåll {#action-campaign-content}
+
+Om du vill konfigurera meddelandeinnehållet går du till fliken **[!UICONTROL Content]** eller klickar på knappen **[!UICONTROL Edit content]**.
+
+![](assets/campaign-content.png)
+
+## Utforma innehållet
+
+Hur du skapar innehåll beror på vilken kanal du har valt. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../email/create-email.md"><img alt="e-post" src="../channels/assets/do-not-localize/email.png"></a>
+<div align="center"><a href="../email/create-email.md"><strong>E-post</strong></a></div></td>
+<td><a href="../sms/create-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><a href="../sms/create-sms.md"><strong>SMS</strong></a></div></td>
+<td><a href="../push/create-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
+<div align="center"><a href="../push/create-push.md"><strong>Push-meddelande</strong></a></div></td>
+<td><a href="../direct-mail/create-direct-mail.md"><img alt="direktreklam" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
+<div align="center"><a href="../direct-mail/create-direct-mail.md"><strong>Direktutskick</strong></a></div></td>
+</tr></table>
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td><a href="../in-app/create-in-app.md"><img alt="i appen" src="../channels/assets/do-not-localize/inapp.jpg"></a>
+<div align="center"><a href="../in-app/create-in-app.md"><strong>I appen</strong></a></div></td>
+<td><a href="../web/create-web.md"><img alt="webb" src="../channels/assets/do-not-localize/web.jpg"></a>
+<div align="center"><a href="../web/create-web.md"><strong>Webb</strong></a></div></td>
+<td><a href="../code-based/create-code-based.md"><img alt="kodbaserad upplevelse" src="../channels/assets/do-not-localize/code.png"></a>
+<div align="center"><a href="../code-based/create-code-based.md"><strong>Kodbaserad upplevelse</strong></a></div></td>
+<td><a href="../content-card/create-content-card.md"><img alt="innehållskort" src="../channels/assets/do-not-localize/cards.png"></a>
+<div align="center"><a href="../content-card/create-content-card.md"><strong>Innehållskort</strong></a></div></td>
+</tr></table>
+
+## Testa och kontrollera innehållet
+
+När innehållet har definierats kan du använda knappen **[!UICONTROL Simulate content]** för att förhandsgranska och testa innehållet med testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt. [Lär dig hur du förhandsgranskar och testar innehåll](../content-management/preview-test.md)
+
+Klicka på vänsterpilen om du vill gå tillbaka till skärmen där kampanjen skapades.
+
+![](assets/create-campaign-design.png)
+
+## Nästa steg {#next}
+
+När innehållet i er åtgärdskampanj är klart kan ni definiera kampanjens målgrupp. [Läs mer](campaign-audience.md)

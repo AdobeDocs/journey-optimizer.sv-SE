@@ -1,26 +1,22 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Ändra eller stoppa en kampanj
-description: Lär dig hur du ändrar, stoppar eller duplicerar live-kampanjer i Journey Optimizer
+title: Få tillgång till och hantera kampanjer
+description: Lär dig hur du får tillgång till och hanterar kampanjer i Journey Optimizer.
 feature: Campaigns
 topic: Content Management
 role: User
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 1ad534b7877f0ac6c1f50e29f41af708e83b34c9
+source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
 
-# Hantera kampanjer {#modify-stop-campaign}
-
-När en kampanj har aktiverats kan du när som helst ändra eller stoppa den. Dessa åtgärder är endast tillgängliga för kampanjer med en återkommande körning.
-
-Dessutom kan ni duplicera live-kampanjer (som körs en gång eller med en återkommande körning) för att skapa nya, och arkivera slutförda eller stoppade kampanjer.
+# Få tillgång till och hantera kampanjer {#modify-stop-campaign}
 
 ## Åtkomst till kampanjer {#access}
 
@@ -31,11 +27,27 @@ Dessutom kan ni duplicera live-kampanjer (som körs en gång eller med en återk
 
 Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**.
 
+>[!BEGINTABS]
+
+>[!TAB Åtgärdskampanjer]
+
+Välj fliken **[!UICONTROL Action]** för att få tillgång till listan över åtgärdskampanjer.
+
 Som standard visas alla kampanjer med statusvärdena **[!UICONTROL Draft]**, **[!UICONTROL Scheduled]** och **[!UICONTROL Live]** i listan. Om du vill visa stoppade, slutförda och arkiverade kampanjer måste du rensa filtret.
 
 ![](assets/create-campaign-list.png)
 
-Du kan också filtrera listan baserat på kampanjtyp och kanal, eller de taggar som har tilldelats kampanjerna när de skapas. [Lär dig hur du tilldelar taggar till en kampanj](create-campaign.md#create)
+>[!TAB API-utlösta kampanjer]
+
+Välj fliken **[!UICONTROL API triggered]** för att få åtkomst till listan över API-utlösta kampanjer.
+
+Som standard visas alla kampanjer med statusvärdena **[!UICONTROL Draft]**, **[!UICONTROL Scheduled]** och **[!UICONTROL Live]** i listan. Om du vill visa stoppade, slutförda och arkiverade kampanjer måste du rensa filtret.
+
+![](assets/api-triggered-list.png)
+
+>[!ENDTABS]
+
+Du kan också filtrera listan baserat på kampanjtyp och kanal, eller de taggar som har tilldelats kampanjerna när de skapas.
 
 ## Kampanjkalender {#calendar}
 
@@ -70,12 +82,12 @@ Om du vill visa information om en viss kampanj väljer du den i listan. En infor
 Kampanjer kan ha flera statusvärden:
 
 * **[!UICONTROL Draft]**: Kampanjen redigeras, den har inte aktiverats.
-* **[!UICONTROL Activating]**: Kampanjen aktiveras.
-* **[!UICONTROL Processing]** *(endast e-postkampanjer)*: Målgruppsexporten är klar, kampanjen publiceras.
-* **[!UICONTROL Live]**: Kampanjen har aktiverats.
 * **[!UICONTROL Scheduled]**: Kampanjen är konfigurerad att aktiveras ett visst startdatum.
+* **[!UICONTROL Live]**: Kampanjen har aktiverats.
+* **[!UICONTROL In review]**: Kampanjen har skickats in för godkännande för publicering. [Lär dig arbeta med godkännanden](../test-approve/gs-approval.md)
 * **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Lär dig stoppa en kampanj](modify-stop-campaign.md#stop)
 * **[!UICONTROL Completed]**: Kampanjen är slutförd. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
+* **[!UICONTROL Failed]**: Kampanjkörningen misslyckades. Kontrollera loggarna för att identifiera problemet.
 * **[!UICONTROL Archived]**: Kampanjen har arkiverats. [Lär dig arkivera kampanjer](modify-stop-campaign.md#archive)
 
 >[!NOTE]
@@ -86,11 +98,13 @@ När ett fel inträffar inom en av era kampanjer visas en varningsikon bredvid k
 
 ![](assets/campaign-alerts.png)
 
-## Ändra en återkommande kampanj {#modify}
+## Ändra och stoppa återkommande åtgärdskampanjer {#modify}
 
-Så här ändrar du och skapar en ny version av en återkommande kampanj:
+### Ändra en åtgärdskampanj
 
-1. Öppna kampanjen och klicka sedan på knappen **[!UICONTROL Modify campaign]**.
+Följ de här stegen för att ändra och skapa en ny version av en återkommande åtgärdskampanj:
+
+1. Öppna åtgärdskampanjen och klicka sedan på knappen **[!UICONTROL Modify campaign]**.
 
 1. En ny version av kampanjen skapas. Du kan kontrollera live-versionen genom att klicka på **[!UICONTROL Open live version]**.
 
@@ -106,7 +120,7 @@ Så här ändrar du och skapar en ny version av en återkommande kampanj:
    >
    >När du aktiverar utkastet ersätts kampanjens liveversion.
 
-## Stoppa en återkommande kampanj {#stop}
+### Stoppa en åtgärdskampanj {#stop}
 
 Om du vill stoppa en återkommande kampanj öppnar du den och klickar sedan på knappen **[!UICONTROL Stop campaign]**.
 
@@ -116,11 +130,9 @@ Om du vill stoppa en återkommande kampanj öppnar du den och klickar sedan på 
 >
 >Att stoppa en kampanj kommer inte att stoppa en pågående sändning, men det kommer att stoppa en schemalagd sändning eller nästa förekomst om sändning redan pågår.
 
-<!-- inbound campaign (inapp): can stop and resume -->
-
 ## Duplicera en kampanj {#duplicate}
 
-Du kan duplicera en livekampanj och skapa en ny. Det gör du genom att öppna kampanjen och sedan klicka på **[!UICONTROL Duplicate]**.
+Du kan duplicera en kampanj för att skapa en ny. Det gör du genom att öppna kampanjen och sedan klicka på **[!UICONTROL Duplicate]**.
 
 ![](assets/create-campaign-duplicate.png)
 
@@ -132,4 +144,4 @@ För att förhindra detta kan ni arkivera slutförda och stoppade kampanjer som 
 
 ![](assets/create-campaign-archive.png)
 
-Arkiverade kampanjer kan sedan hämtas med det dedikerade filtret i listan. [Lär dig hur du får åtkomst till kampanjer](get-started-with-campaigns.md#access)
+Arkiverade kampanjer kan sedan hämtas med det dedikerade filtret i listan.

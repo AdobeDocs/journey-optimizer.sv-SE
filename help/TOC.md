@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 069df6fb67960bc7bdad4a8e0c3fdfa2b82fb8b5
+source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2581'
 ht-degree: 19%
 
 ---
@@ -218,10 +218,24 @@ ht-degree: 19%
       + [Vänta](using/orchestrated/activities/wait.md)
 + Kampanjer {#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
-   + [Skapa en kampanj](using/campaigns/create-campaign.md)
-   + [Granska och aktivera en kampanj](using/campaigns/review-activate-campaign.md)
-   + [Hantera kampanjer](using/campaigns/modify-stop-campaign.md)
-   + [Utlösa kampanjer med API:er](using/campaigns/api-triggered-campaigns.md)
+   + [Få tillgång till och hantera kampanjer](using/campaigns/modify-stop-campaign.md)
+   + Åtgärdskampanjer {#action-campaigns}
+      + [Arbeta med åtgärdskampanjer](using/campaigns/create-campaign.md)
+      + [Definiera kampanjegenskaperna](using/campaigns/campaign-properties.md)
+      + [Konfigurera kampanjåtgärden](using/campaigns/campaign-action.md)
+      + [Redigera kampanjinnehållet](using/campaigns/campaign-content.md)
+      + [Definiera kampanjmålgruppen](using/campaigns/campaign-audience.md)
+      + [Schemalägg kampanjen](using/campaigns/campaign-schedule.md)
+      + [Granska och aktivera en åtgärdskampanj](using/campaigns/review-activate-campaign.md)
+   + API-utlösta kampanjer {#api-triggered-campaigns}
+      + [Arbeta med API-utlösta kampanjer](using/campaigns/api-triggered-campaigns.md)
+      + [Definiera kampanjegenskaperna](using/campaigns/api-triggered-campaign-properties.md)
+      + [Konfigurera kampanjåtgärden](using/campaigns/api-triggered-campaign-action.md)
+      + [Redigera kampanjinnehållet](using/campaigns/api-triggered-campaign-content.md)
+      + [Definiera kampanjmålgruppen](using/campaigns/api-triggered-campaign-audience.md)
+      + [Schemalägg kampanjen](using/campaigns/api-triggered-campaign-schedule.md)
+      + [Granska och aktivera kampanjen](using/campaigns/review-activate-api-triggered-campaign.md)
+      + [Utlösa kampanjkörningen](using/campaigns/trigger-campaigns.md)
 + Konflikthantering och -prioritering {#conflict-prioritization}
    + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
    + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
@@ -732,7 +746,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
