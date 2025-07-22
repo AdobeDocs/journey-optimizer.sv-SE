@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: b731dfbf00557b96585dc4133f246bfb101bee98
+source-git-commit: f5d1bc27afadbf875fe4dd3149ce090a8773e0f9
 workflow-type: tm+mt
-source-wordcount: '2581'
+source-wordcount: '2591'
 ht-degree: 19%
 
 ---
@@ -387,6 +387,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Använd Adobe Experience Platform-data för personalisering (Beta)](using/personalization/aep-data-perso.md)
       + Hjälpfunktionslista {#functions}
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
+         + [Hjälp för sökning efter externa data](using/personalization/external-data-lookup.md)
          + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
          + [Aritmetiska funktioner](using/personalization/functions/arithmetic-functions.md)
          + [Arrayer och listfunktioner](using/personalization/functions/arrays-list.md)
@@ -746,8 +747,9 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
+   + [Anpassa innehåll med en extern slutpunkt](using/data/external-endpoint-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)
