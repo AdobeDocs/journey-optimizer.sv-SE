@@ -95,7 +95,7 @@ För variabelrubrikvärden, fråge-/sökvägsparametrar eller begär nyttolastv�
 
 Parameternamn:
 
-* Huvudparametrar:`header.<parameter-name>
+* Huvudparametrar:&grave;header.&lt;parameter-name>
 * Frågeparametrar: `query.<parameter-name>`
 * Nyttolastparametrar: `payload.<parameter-name>`
 * Sökvägsparametrar: `dynamic_path.<parameter-name>`
