@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
-source-git-commit: 2ad659b391515c193418325c34a9dd56133b90d6
+source-git-commit: a4337df949d25740f75204fe4530837dda1af3dd
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,9 @@ Med Adobe Experience Platform kan data hämtas från externa källor samtidigt s
 
 >[!IMPORTANT]
 >
->Varje datauppsättning i Adobe Experience Platform har bara stöd för ett aktivt dataflöde i taget. Detaljerad installationsvägledning om hur du byter datakällor finns i det här [avsnittet](#cdc-ingestion).
+>Om du vill ändra datakällan för en datauppsättning måste du först ta bort det befintliga dataflödet innan du skapar ett nytt som refererar till samma datauppsättning och den nya källan.
+>
+>Adobe Experience Platform tillämpar en strikt personlig relation mellan dataflöden och datauppsättningar. På så sätt kan du upprätthålla synkroniseringen mellan källan och datauppsättningen för korrekt inkrementellt intag.
 
 
 Du kan konfigurera ett dataflöde för att importera data från en Amazon S3-källa till Adobe Experience Platform. När dataflödet har konfigurerats möjliggör det automatiserat, schemalagt inmatning av strukturerade data och stöder uppdateringar i realtid.
@@ -60,7 +62,7 @@ Du kan konfigurera ett dataflöde för att importera data från en Amazon S3-kä
 
    * Med ett nytt konto
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
 
    ![](assets/admin_sources_2.png)
 
@@ -78,9 +80,11 @@ Du kan konfigurera ett dataflöde för att importera data från en Amazon S3-kä
 
    ![](assets/S3_config_1.png)
 
-1. Markera **[!UICONTROL Enable Change data capture]** om du vill välja bland datauppsättningar som är mappade till relationsscheman och som har både en primärnyckel och en versionsbeskrivare definierad.
+1. Kontrollera att **[!UICONTROL Enable Change data capture]** bara visar datauppsättningar som är mappade till relationsscheman och innehåller både en primärnyckel och en versionsbeskrivning.
 
-1. Markera din [tidigare skapade datauppsättning](file-upload-schema.md) och klicka på **[!UICONTROL Next]**.
+   ![](assets/S3_config_6.png)
+
+1. Markera den datauppsättning som du skapade tidigare och klicka på **[!UICONTROL Next]**.
 
    ![](assets/S3_config_3.png)
 
@@ -98,26 +102,3 @@ Du kan konfigurera ett dataflöde för att importera data från en Amazon S3-kä
 
    ![](assets/S3_config_5.png)
 
-<!--### Setting Up Change data capture ingestion {#cdc-ingestion}
-
-If you need to change the data source, you must delete the existing dataflow and create a new one pointing to the same dataset with the new source.
-
-When using Change Data Capture (CDC), it is essential that the source and dataset remain in sync to ensure accurate incremental updates. Follow the steps below:
-
-1. **Schema Requirements**
-   - Your schema must include:
-     - A **primary key** (e.g., `transaction_id`)
-     - A **versioning field** (e.g., `lastmodified` or an incrementing `version_id`)
-   - Enable the dataset for **Orchestrated Campaigns** if needed.
-
-2. **CDC Dataflow Setup**
-   - During dataflow creation, after choosing your source and files:
-     - **Enable the CDC option**
-     - Select your CDC-ready dataset
-     - Confirm field mappings (especially version field)
-
-3. **Keep Source and Target in Sync**
-   - The source system must consistently update the version field so the platform can detect changes accurately.
-
-Once set up, the platform will automatically ingest **only changed or new records** each time the flow runs.
--->
