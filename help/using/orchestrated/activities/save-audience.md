@@ -7,14 +7,20 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: b575f2363059a24e7192f436fac62001f79a3dbc
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
 # Spara målgrupp {#save-audience}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_save_audience"
+>title="Spara målgruppsaktivitet"
+>abstract="Aktiviteten **Spara målgrupp** är en **målgruppsaktivitet** som gör att du kan uppdatera en befintlig målgrupp eller skapa en ny från den målgrupp som genererades tidigare i den orkestrerade kampanjen. När de har skapats läggs dessa målgrupper till i listan över programmålgrupper och kan nås från menyn **Publiker** ."
+
 
 +++ Innehållsförteckning
 
