@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+source-git-commit: b731dfbf00557b96585dc4133f246bfb101bee98
 workflow-type: tm+mt
 source-wordcount: '2581'
 ht-degree: 19%
@@ -180,42 +180,6 @@ ht-degree: 19%
       + [Felsöka körning av resa](using/building-journeys/troubleshooting-execution.md)
       + [Felsöka inkommande åtgärder](using/building-journeys/troubleshooting-inbound.md)
       + [Felsöka anpassade åtgärder](using/action/troubleshoot-custom-action.md)
-+ Samordnade kampanjer {#orchestrated-campaigns}
-   + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
-   + Hantera relationsscheman och datauppsättningar {#schemas-datasets}
-      + [Kom igång med scheman och datauppsättningar](using/orchestrated/gs-schemas.md)
-      + [Manuellt schema](using/orchestrated/manual-schema.md)
-      + [Filöverföringsschema](using/orchestrated/file-upload-schema.md)
-      + [Ingrediera data](using/orchestrated/ingest-data.md)
-   + [Få tillgång till och hantera samordnade kampanjer](using/orchestrated/access-manage-orchestrated-campaigns.md)
-   + [Skyddsritningar och begränsningar](using/orchestrated/guardrails.md)
-   + Starta din första samordnade kampanj{#launch}
-      + [Viktiga steg för att skapa en orkestrerad kampanj](using/orchestrated/gs-campaign-creation.md)
-      + [Skapa och schemalägg kampanjen](using/orchestrated/create-orchestrated-campaign.md)
-      + [Organisera aktiviteter](using/orchestrated/orchestrate-activities.md)
-      + [Starta och övervaka kampanjen](using/orchestrated/start-monitor-campaigns.md)
-      + [Rapportering](using/orchestrated/reporting-campaigns.md)
-   + Fråga databasen {#query-database}
-      + [Arbeta med regelbyggaren](using/orchestrated/orchestrated-rule-builder.md)
-      + [Skapa din första regel](using/orchestrated/build-query.md)
-      + [Redigera uttryck](using/orchestrated/edit-expressions.md)
-      + [Återmarknadsföring](using/orchestrated/retarget.md)
-   + Ochestrerade kampanjaktiviteter {#design-campaigns}
-      + [Kom igång med aktiviteter](using/orchestrated/activities/about-activities.md)
-      + [Och-join](using/orchestrated/activities/and-join.md)
-      + [Bygg målgrupper](using/orchestrated/activities/build-audience.md)
-      + [Ändra dimension](using/orchestrated/activities/change-dimension.md)
-      + [Kanalaktiviteter](using/orchestrated/activities/channels.md)
-      + [Kombinera](using/orchestrated/activities/combine.md)
-      + [Deduplicering](using/orchestrated/activities/deduplication.md)
-      + [Berikning](using/orchestrated/activities/enrichment.md)
-      + [Förgrening](using/orchestrated/activities/fork.md)
-      + [Läs målgrupp](using/orchestrated/activities/read-audience.md)
-      + [Avstämning](using/orchestrated/activities/reconciliation.md)
-      + [Spara målgrupp](using/orchestrated/activities/save-audience.md)
-      + [Dela](using/orchestrated/activities/split.md)
-      + [Test](using/orchestrated/activities/test.md)
-      + [Vänta](using/orchestrated/activities/wait.md)
 + Kampanjer {#campaigns}
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Få tillgång till och hantera kampanjer](using/campaigns/modify-stop-campaign.md)
@@ -236,6 +200,42 @@ ht-degree: 19%
       + [Schemalägg kampanjen](using/campaigns/api-triggered-campaign-schedule.md)
       + [Granska och aktivera kampanjen](using/campaigns/review-activate-api-triggered-campaign.md)
       + [Utlösa kampanjkörningen](using/campaigns/trigger-campaigns.md)
+   + Samordnade kampanjer {#orchestrated-campaigns}
+      + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
+      + Hantera relationsscheman och datauppsättningar {#schemas-datasets}
+         + [Kom igång med scheman och datauppsättningar](using/orchestrated/gs-schemas.md)
+         + [Manuellt schema](using/orchestrated/manual-schema.md)
+         + [Filöverföringsschema](using/orchestrated/file-upload-schema.md)
+         + [Ingrediera data](using/orchestrated/ingest-data.md)
+      + [Få tillgång till och hantera samordnade kampanjer](using/orchestrated/access-manage-orchestrated-campaigns.md)
+      + [Skyddsritningar och begränsningar](using/orchestrated/guardrails.md)
+      + Starta din första samordnade kampanj{#launch}
+         + [Viktiga steg för att skapa en orkestrerad kampanj](using/orchestrated/gs-campaign-creation.md)
+         + [Skapa och schemalägg kampanjen](using/orchestrated/create-orchestrated-campaign.md)
+         + [Organisera aktiviteter](using/orchestrated/orchestrate-activities.md)
+         + [Starta och övervaka kampanjen](using/orchestrated/start-monitor-campaigns.md)
+         + [Rapportering](using/orchestrated/reporting-campaigns.md)
+      + Fråga databasen {#query-database}
+         + [Arbeta med regelbyggaren](using/orchestrated/orchestrated-rule-builder.md)
+         + [Skapa din första regel](using/orchestrated/build-query.md)
+         + [Redigera uttryck](using/orchestrated/edit-expressions.md)
+         + [Återmarknadsföring](using/orchestrated/retarget.md)
+      + Ochestrerade kampanjaktiviteter {#design-campaigns}
+         + [Kom igång med aktiviteter](using/orchestrated/activities/about-activities.md)
+         + [Och-join](using/orchestrated/activities/and-join.md)
+         + [Bygg målgrupper](using/orchestrated/activities/build-audience.md)
+         + [Ändra dimension](using/orchestrated/activities/change-dimension.md)
+         + [Kanalaktiviteter](using/orchestrated/activities/channels.md)
+         + [Kombinera](using/orchestrated/activities/combine.md)
+         + [Deduplicering](using/orchestrated/activities/deduplication.md)
+         + [Berikning](using/orchestrated/activities/enrichment.md)
+         + [Förgrening](using/orchestrated/activities/fork.md)
+         + [Läs målgrupp](using/orchestrated/activities/read-audience.md)
+         + [Avstämning](using/orchestrated/activities/reconciliation.md)
+         + [Spara målgrupp](using/orchestrated/activities/save-audience.md)
+         + [Dela](using/orchestrated/activities/split.md)
+         + [Test](using/orchestrated/activities/test.md)
+         + [Vänta](using/orchestrated/activities/wait.md)
 + Konflikthantering och -prioritering {#conflict-prioritization}
    + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
    + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
@@ -746,7 +746,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
