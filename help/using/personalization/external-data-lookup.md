@@ -95,10 +95,10 @@ För variabelrubrikvärden, fråge-/sökvägsparametrar eller begär nyttolastv�
 
 Parameternamn:
 
-* Huvudparametrar: header.<parameter-name>
-* Frågeparametrar: fråga.<parameter-name>
-* Nyttolastparametrar: nyttolast.<parameter-name>
-* Sökvägsparametrar: dynamic_path.<parameter-name>
+* Huvudparametrar: header.&lt;parameter-name>
+* Frågeparametrar: fråga.&lt;parameter-name>
+* Nyttolastparametrar: nyttolast.&lt;parameter-name>
+* Sökvägsparametrar: dynamic_path.&lt;parameter-name>
 
 Exempel:
 
