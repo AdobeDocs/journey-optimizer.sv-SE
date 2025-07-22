@@ -8,9 +8,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: cf29013bd7578f6b04543d04e85c714ce7728f36
+source-git-commit: a600af73bd85d525bc1320d0aa6193660331e452
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ För variabelrubrikvärden, fråge-/sökvägsparametrar eller begär nyttolastv�
 
 Parameternamn:
 
-* Huvudparametrar:&grave;header.&lt;parameter-name>
+* Huvudparametrar: `header.<parameter-name>`
 * Frågeparametrar: `query.<parameter-name>`
 * Nyttolastparametrar: `payload.<parameter-name>`
 * Sökvägsparametrar: `dynamic_path.<parameter-name>`
