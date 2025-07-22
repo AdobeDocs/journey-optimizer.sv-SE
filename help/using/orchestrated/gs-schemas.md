@@ -44,7 +44,7 @@ I den här guiden får du hjälp med att skapa ett relationsschema, konfigurera 
 
    Definiera strukturen för din datamodell, inklusive tabeller, attribut och relationer. Välj om du vill skapa schemat manuellt i användargränssnittet eller överföra en DDL-fil för snabbare konfiguration.
 
-1. [Länka schema](file-upload-md)
+1. [Länka schema] (file-upload-md)
 
    upprätta relationer mellan scheman för att säkerställa att data är konsekventa och möjliggöra enhetsöverskridande frågor. Länka till exempel lojalitetstransaktioner till mottagare eller belöningar till varumärken.
 
