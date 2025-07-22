@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: ea541231b16947908197748202e62227c5752966
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -47,17 +47,23 @@ Skapa en orkestrerad kampanj i [!DNL Adobe Journey Optimizer] och konfigurera de
 
 Så här skapar du en orkestrerad kampanj:
 
-1. Gå till menyn **[!UICONTROL Campaigns]**, välj fliken **[!UICONTROL Orchestration]** och klicka på **[!UICONTROL Create campaign]**.
+1. Bläddra till menyn **[!UICONTROL Campaigns]** och välj fliken **[!UICONTROL Orchestration]**.
+
+1. Klicka på knappen **[!UICONTROL Create campaign]** och välj kampanjtypen **[!UICONTROL Orchestration - Marketing]**.
+
+   ![](assets/create-modal.png)
+
+1. Definiera kampanjegenskaperna. Det gör du genom att klicka på ikonen ![Kampanjinställningar](assets/do-not-localize/campaign-settings.svg) bredvid kampanjens namn.
 
    ![](assets/inventory-create.png)
 
 1. Ange ett namn och en beskrivning för kampanjen.
 
-1. *(valfritt)* Använd fältet **[!UICONTROL Tags]** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen i den samordnade kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
+<!--1. Merge policy-->
 
-1. Klicka på **[!UICONTROL Create]**.
+1. Använd fältet **[!UICONTROL Tags]** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen i den samordnade kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
 
-Din samordnade kampanj har skapats och visas i den samordnade kampanjlistan. Du kan uppdatera dessa egenskaper när som helst genom att klicka på ikonen ![Kampanjinställningar](assets/do-not-localize/campaign-settings.svg) på arbetsytan för kampanjen.
+1. Klicka på **[!UICONTROL Save]**.
 
 ## Schemalägg kampanjen {#schedule}
 
@@ -99,7 +105,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Date]**: Välj det datum då kampanjen ska köras.
    * **[!UICONTROL Time]**: Välj den tidpunkt då kampanjen ska köras.
 
-   +++
++++
 
    +++Daily
 
@@ -113,7 +119,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Definiera den tid som kampanjen ska köras varje dag.
 
-   +++
++++
 
    +++Flera gånger om dagen
 
@@ -122,7 +128,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Selected hours]**: Välj de tider som kampanjen ska köras och konfigurera den dagliga upprepningen (verkställs varje veckodag eller på vissa dagar).
    * **[!UICONTROL Periodic]**: Välj att köra kampanjen var n minut eller timme. Du kan också definiera tidsintervallet inom dagen när körningar tillåts.
 
-   +++
++++
 
    +++Vecka
 
@@ -133,7 +139,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Daily recurrence]**: Välj specifika veckodagar för körning (t.ex. varje måndag och torsdag).
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras på valda dagar.
 
-   +++
++++
 
    +++Månad
 
@@ -149,7 +155,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras.
 
-   +++
++++
 
 1. Använd inställningen **[!UICONTROL Validity period]** för att definiera ett specifikt start- och slutdatum, vilket begränsar kampanjens körning till ett tidsbegränsat fönster.
 
