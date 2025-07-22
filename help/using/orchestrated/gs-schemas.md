@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
-source-git-commit: 3dc0bf4acc4976ca1c46de46cf6ce4f2097f3721
+source-git-commit: 81f0338935ee36b152963f2b1c0e7989b86f5f8a
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -44,11 +44,11 @@ I den här guiden får du hjälp med att skapa ett relationsschema, konfigurera 
 
    Definiera strukturen för din datamodell, inklusive tabeller, attribut och relationer. Välj om du vill skapa schemat manuellt i användargränssnittet eller överföra en DDL-fil för snabbare konfiguration.
 
-1. [Länka schema](#link-schema)
+1. [Länka schema](file-upload-md)
 
    upprätta relationer mellan scheman för att säkerställa att data är konsekventa och möjliggöra enhetsöverskridande frågor. Länka till exempel lojalitetstransaktioner till mottagare eller belöningar till varumärken.
 
-1. [Ingrediera data](#ingest)
+1. [Ingrediera data](ingest-data.md)
 
    Hämta in data till Adobe Experience Platform från källor som stöds, som SFTP, molnlagring eller databaser.
 
