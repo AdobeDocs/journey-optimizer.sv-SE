@@ -3,9 +3,9 @@ title: Kompletterande identifiering vid händelseutlösta resor
 description: Lär dig hur du använder tilläggsidentifierare i händelseutlösta resor.
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
-source-git-commit: 14a0054c605edd8ff0b63e71fb5c30104ff513ed
+source-git-commit: 664f38b4ff56ce871599400f898e23a8d04f7816
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,10 @@ Dessutom kan du med Journey Optimizer använda attribut för den kompletterande 
 
    * Om resan inte är en återkommande person kan inte kombinationen av profil-ID och kompletterande ID returnera resan.
    * Om resan är återkommande i ett tidsfönster kan samma profil-ID + kombination av extra ID:n anges igen efter det definierade tidsfönstret.
+
+* **Konfiguration av underordnade händelser**
+
+  Om du använder en annan händelse längre fram i kedjan måste den använda samma extra ID och ha samma ID-namnutrymme.
 
 ## Lägg till en extra identifierare och utnyttja den i en resa {#add}
 
@@ -195,4 +199,4 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
