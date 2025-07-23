@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: 3f92dc721648f822687b8efc302c40989b72b145
+source-git-commit: 30e22bc1a2ab95dbbef1fb35a01cd2f5d5b02423
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '1131'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
 1. Aktivera läget Snabb leverans (för push).
 
-   Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+   Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 1. Skapa ett innehållsexperiment.
 
@@ -136,6 +136,28 @@ Växla till fliken **[!UICONTROL Content]** för att skapa meddelandet. Stegen v
 <td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../sms/create-sms.md"><strong>Skapa ett SMS</strong></a></td>
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Skapa ett push-meddelande</strong></a></td>
 </tr></table>
+
+## Lägg till personalisering
+
+Personalization i samordnade kampanjer fungerar ungefär som andra **[!UICONTROL Journey Optimizer]**-kampanjer eller resor, men med några viktiga skillnader som är specifika för den orkestrerade arbetsytan.
+
+När du öppnar personaliseringsredigeraren från en orchestrerad kampanj innehåller två huvudmappar tillgängliga attribut för personalisering som anges nedan.
+
+* **[!UICONTROL Profile attributes]**
+
+  Den här mappen innehåller alla profilrelaterade data från [!DNL Adobe Experience Platform]. Det här är standardattribut som namn, e-postadress, plats eller andra egenskaper som har hämtats i användarprofilen.
+
+* **[!UICONTROL Target attributes]** (gäller endast samordnade kampanjer)
+
+  Den här mappen är unik för samordnade kampanjer. Den innehåller attribut som beräknas direkt i kampanjarbetsytan. Den innehåller två undermappar:
+
+   * **`<Targeting dimension>`** (t.ex. &quot;Mottagare&quot;, &quot;Inköp&quot;): Innehåller alla attribut som är relaterade till den dimension som kampanjen riktar sig till.
+
+   * **`Enrichment`**: Inkluderar data som lagts till via **[!UICONTROL Enrichment]** aktiviteter på arbetsytan. På så sätt kan ni personalisera meddelanden baserat på externa datauppsättningar eller ytterligare logik som integrerats under orkestreringen. [Lär dig använda en anrikningsaktivitet](../activities/enrichment.md)
+
+En detaljerad översikt om hur du använder personaliseringsredigeraren finns i [Kom igång med personalisering](../../personalization/personalize.md)
+
+## Kontrollera och testa innehållet
 
 När innehållet har skapats kan du använda knappen **[!UICONTROL Simulate Content]** för att förhandsgranska och testa innehållet med testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt. [Läs mer](../../content-management/preview-test.md)
 
