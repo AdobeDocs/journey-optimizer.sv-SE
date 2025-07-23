@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
-source-git-commit: 8470791182d2487539d2d2300edb4d6e0cfeadb4
+source-git-commit: 6447f5d1a060037c0ceaa374db20966097585f9c
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -46,7 +46,7 @@ I den här guiden får du hjälp med att skapa ett relationsschema, konfigurera 
 
 1. [Länka schema](file-upload-schema.md)
 
-   upprätta relationer mellan scheman för att säkerställa att data är konsekventa och möjliggöra enhetsöverskridande frågor. Länka till exempel lojalitetstransaktioner till mottagare eller belöningar till varumärken.
+   Upprätta relationer mellan dina scheman för att säkerställa att data är konsekventa och möjliggöra enhetsöverskridande frågor. Länka till exempel lojalitetstransaktioner till mottagare eller belöningar till varumärken.
 
 1. [Ingrediera data](ingest-data.md)
 

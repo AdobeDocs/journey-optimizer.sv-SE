@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
-source-git-commit: 3dc0bf4acc4976ca1c46de46cf6ce4f2097f3721
+source-git-commit: 6447f5d1a060037c0ceaa374db20966097585f9c
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,21 @@ I det här avsnittet finns stegvisa anvisningar om hur du skapar ett relationssc
 
 Genom att överföra en DDL-fil kan du definiera datamodellens struktur i förväg, inklusive tabeller, attribut, nycklar och relationer.
 
+Överföringar av Excel-baserade schemabilder stöds. Hämta [tillhandahållen mall](assets/template.zip) för att enkelt förbereda dina schemadefinitioner.
+
++++Följande funktioner stöds när du skapar relationsscheman i Adobe Experience Platform
+
+* **ENUM**\
+  ENUM-fält stöds i både DDL-baserade och manuella schemagenereringar, vilket gör att du kan definiera attribut med en fast uppsättning tillåtna värden.
+
+* **Schemaetikett för datastyrning**\
+  Etikettering stöds på schemafältnivå för att tillämpa datastyrningsprinciper som åtkomstkontroll och användningsbegränsningar. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
+
+* **Sammansatt nyckel**\
+  Sammansatta primärnycklar stöds i relationsschemadefinitioner, vilket gör det möjligt att använda flera fält tillsammans för att unikt identifiera poster.
+
++++
+
 1. Logga in på Adobe Experience Platform.
 
 1. Navigera till menyn **Datahantering** > **Schema** .
@@ -69,8 +84,17 @@ Genom att överföra en DDL-fil kan du definiera datamodellens struktur i förv�
    Tabellstrukturen måste innehålla:
    * Minst en primärnyckel
    * En versionsidentifierare, till exempel ett `lastmodified`-fält av typen `datetime` eller `number`.
+   * För CDC-inmatning (Change Data Capture) är det en specialkolumn med namnet `_change_request_type` av typen `String` som anger typen av dataändring (t.ex. infoga, uppdatera, ta bort) och möjliggör inkrementell bearbetning
+
+
+   >[!IMPORTANT]
+   >
+   > Alla scheman som används som mål måste innehålla minst ett identitetsfält av typen `String` med ett associerat **identitetsnamnområde**.\
+   >Detta garanterar kompatibilitet med Adobe Journey Optimizer verktyg för målinriktning och identitetsupplösning.
 
 1. Dra och släpp din DDL-fil och klicka på **[!UICONTROL Next]**.
+
+   Observera att den största tillåtna storleken för en DDL-fil är 10 MB.
 
 1. Skriv in din/ditt **[!UICONTROL Schema name]**.
 
@@ -130,9 +154,15 @@ Följ stegen nedan för att definiera logiska anslutningar mellan tabeller i dit
 
 1. Klicka på **[!UICONTROL Open Jobs]** för att övervaka förloppet för skapandet. Den här processen kan ta några minuter, beroende på hur många tabeller som har definierats i DDL-filen.
 
+   Du kan även komma åt dina relationsjobb genom att öppna fönstret **[!UICONTROL Upload DDL file]** och välja **[!UICONTROL View all relational Jobs]**.
+
    ![](assets/admin_schema_4.png)
 
 ## Länka scheman {#link-schema}
+
+>[!IMPORTANT]
+>
+> Det är bara relationer som uttryckligen definieras i DDL-filen som identifieras av systemet. Alla entitetsrelationer som finns utanför DDL-filen ignoreras och bearbetas inte.
 
 Upprätta en relation mellan schemat **lojalitetstransaktioner** och schemat **Mottagare** för att associera varje transaktion med rätt kundpost.
 

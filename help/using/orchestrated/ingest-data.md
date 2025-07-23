@@ -7,10 +7,10 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
-source-git-commit: a4337df949d25740f75204fe4530837dda1af3dd
+source-git-commit: 6447f5d1a060037c0ceaa374db20966097585f9c
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 0%
+source-wordcount: '542'
+ht-degree: 1%
 
 ---
 
@@ -36,57 +36,89 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
-Med Adobe Experience Platform kan data hämtas från externa källor samtidigt som du kan strukturera, etikettera och förbättra inkommande data med hjälp av Experience Platform tjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra.
-
-## Med molnlagring {#ingest}
-
-
 >[!IMPORTANT]
 >
 >Om du vill ändra datakällan för en datauppsättning måste du först ta bort det befintliga dataflödet innan du skapar ett nytt som refererar till samma datauppsättning och den nya källan.
 >
 >Adobe Experience Platform tillämpar en strikt personlig relation mellan dataflöden och datauppsättningar. På så sätt kan du upprätthålla synkroniseringen mellan källan och datauppsättningen för korrekt inkrementellt intag.
 
+Med Adobe Experience Platform kan data hämtas från externa källor samtidigt som du kan strukturera, etikettera och förbättra inkommande data med hjälp av Experience Platform tjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra.
 
-Du kan konfigurera ett dataflöde för att importera data från en Amazon S3-källa till Adobe Experience Platform. När dataflödet har konfigurerats möjliggör det automatiserat, schemalagt inmatning av strukturerade data och stöder uppdateringar i realtid.
+## Källor som stöds för samordnade kampanjer {#supported}
+
+Följande källor stöds för användning med Orchestrated-kampanjer:
+
+<table>
+  <thead>
+    <tr>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">molnlagring</td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
+    </tr>
+      <td rowspan="4">Datalager i molnet</td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
+    </tr>
+    <tr>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Filbaserade överföringar</td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
+    </tr>
+
+</tbody>
+</table>
+
+## Konfigurera ett dataflöde
+
+I det här exemplet visas hur du konfigurerar ett dataflöde som importerar strukturerade data till Adobe Experience Platform. Det konfigurerade dataflödet stöder automatiskt, schemalagt inmatning och möjliggör uppdateringar i realtid.
 
 1. Öppna menyn **[!UICONTROL Connections]** på menyn **[!UICONTROL Sources]**.
 
-1. Välj kategorin **[!UICONTROL Cloud storage]**, sedan Amazon S3 och klicka på **[!UICONTROL Add Data]**.
+1. Välj källa beroende på vilka [källor som stöds för samordnade kampanjer](#supported).
 
    ![](assets/admin_sources_1.png)
 
-1. Anslut ditt S3-konto:
-
-   * Med ett befintligt konto
-
-   * Med ett nytt konto
-
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#connect)
+1. Anslut ditt konto för molnlagring eller Google Cloud-lagring om du väljer molnbaserade källor.
 
    ![](assets/admin_sources_2.png)
 
-1. Välj din mapp **[!UICONTROL Data format]**, **[!UICONTROL Delimiter]** och **[!UICONTROL Compression type]**.
-
-1. Navigera genom den anslutna S3-källan tills du hittar önskade mappar, till exempel **lojalitetsprogram** och **lojalitetstransaktioner**.
-
-1. Markera mappen som innehåller dina data.
-
-   Om du väljer en mapp behandlas alla aktuella och framtida filer med samma struktur automatiskt. Om du väljer en enskild fil måste du dock överföra varje nytt datasteg manuellt.
-
-   ![](assets/S3_config_2.png)
-
-1. Välj din mapp **[!UICONTROL Data format]**, **[!UICONTROL Delimiter]** och **[!UICONTROL Compression type]**. Granska exempeldata och klicka sedan på **[!UICONTROL Next]**.
+1. Välj de data du vill importera till Adobe Experience Platform.
 
    ![](assets/S3_config_1.png)
 
-1. Kontrollera att **[!UICONTROL Enable Change data capture]** bara visar datauppsättningar som är mappade till relationsscheman och innehåller både en primärnyckel och en versionsbeskrivning.
+1. På sidan **[!UICONTROL Dataset details]** markerar du **[!UICONTROL Enable Change data capture]** om du bara vill visa datauppsättningar som är mappade till relationsscheman och innehåller både en primärnyckel och en versionsbeskrivning.
+
+   >[!IMPORTANT]
+   >
+   > För **filbaserade källor endast** måste varje rad i datafilen innehålla en `_change_request_type`-kolumn med värdena `U` (upsert) eller `D` (delete). Utan den här kolumnen kan systemet inte identifiera data som stöd för ändringsspårning, och växlingsknappen för orchestrated Campaign visas inte, vilket förhindrar att datauppsättningen väljs för målinriktning.
 
    ![](assets/S3_config_6.png)
 
 1. Markera den datauppsättning som du skapade tidigare och klicka på **[!UICONTROL Next]**.
 
    ![](assets/S3_config_3.png)
+
+1. Om du bara använder en filbaserad källa överför du dina lokala filer från fönstret **[!UICONTROL Select data]** och förhandsgranskar deras struktur och innehåll.
+
+   Observera att den största storlek som stöds är 100 MB.
 
 1. I fönstret **[!UICONTROL Mapping]** kontrollerar du att varje källfilsattribut är korrekt mappat med motsvarande fält i målschemat.
 

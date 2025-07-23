@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
-source-git-commit: 3dc0bf4acc4976ca1c46de46cf6ce4f2097f3721
+source-git-commit: 6447f5d1a060037c0ceaa374db20966097585f9c
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,21 @@ Nu kan du börja lägga till attribut i schemat för att definiera dess struktur
 
 Sedan lägger du till attribut för att definiera strukturen för ditt schema. Dessa fält representerar de nyckeldatapunkter som används i samordnade kampanjer, t.ex. kundidentifierare, medlemsinformation och aktivitetsdatum. Genom att definiera dem korrekt kan du säkerställa tillförlitlig personalisering, segmentering och spårning.
 
+Alla scheman som används för mål måste innehålla minst ett identitetsfält av typen `String` med ett associerat identitetsnamnområde. Detta garanterar kompatibilitet med Adobe Journey Optimizer verktyg för målinriktning och identitetsupplösning.
+
++++Följande funktioner stöds när du skapar relationsscheman i Adobe Experience Platform
+
+* **ENUM**\
+  ENUM-fält stöds i både DDL-baserade och manuella schemagenereringar, vilket gör att du kan definiera attribut med en fast uppsättning tillåtna värden.
+
+* **Schemaetikett för datastyrning**\
+  Etikettering stöds på schemafältnivå för att tillämpa datastyrningsprinciper som åtkomstkontroll och användningsbegränsningar. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
+
+* **Sammansatt nyckel**\
+  Sammansatta primärnycklar stöds i relationsschemadefinitioner, vilket gör det möjligt att använda flera fält tillsammans för att unikt identifiera poster.
+
++++
+
 1. Klicka på ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) bredvid ditt **schemanamn** på arbetsytan för att börja lägga till attribut.
 
    ![](assets/schema_manual_1.png){zoomable="yes"}
@@ -105,7 +120,11 @@ Sedan lägger du till attribut för att definiera strukturen för ditt schema. D
 
 1. Tilldela lämpliga fält som **[!UICONTROL Primary Key]** och **[!UICONTROL Version Descriptor]**.
 
-   **[!UICONTROL Primary Key]** ser till att varje post identifieras unikt, medan **[!UICONTROL Version Descriptor]** hämtar uppdateringar över tiden, vilket aktiverar registrering av ändringsdata och stöd för dataregling.
+   När du skapar ett manuellt schema ska du se till att följande viktiga fält finns med:
+
+   * Minst en primärnyckel
+   * En versionsidentifierare, till exempel ett `lastmodified`-fält av typen `datetime` eller `number`.
+   * För CDC-inmatning (Change Data Capture) är det en specialkolumn med namnet `_change_request_type` av typen `String` som anger typen av dataändring (till exempel infoga, uppdatera, ta bort) och möjliggör inkrementell bearbetning.
 
    ![](assets/schema_manual_2.png){zoomable="yes"}
 
@@ -149,11 +168,19 @@ När du har definierat ditt schema är nästa steg att skapa en datauppsättning
 
 1. Ange **[!UICONTROL Name]** för din **[!UICONTROL Dataset]** och klicka på **[!UICONTROL Finish]**.
 
-1. Aktivera alternativet **Orchestrated Campaigns** för att göra datauppsättningen tillgänglig för användning i dina AJO-kampanjer.
+Nu måste du aktivera datauppsättningen för Orchestrate-kampanjer.
 
-   Aktiveringen kan ta några minuter. Intag av data är bara möjligt efter att alternativet har aktiverats helt.
+## Aktivera datauppsättning för orkestrerade kampanjer {#enable}
+
+När du har skapat datauppsättningen måste du explicit aktivera den för Orchestrated Campaigns. Detta steg garanterar att datauppsättningen är tillgänglig för realtidssamordning och personalisering inom Adobe Journey Optimizer.
+
+1. Leta reda på datauppsättningen i listan **[!UICONTROL Datasets]**.
+
+1. Aktivera alternativet **[!UICONTROL Datasets]** Orchestrated Campaigns **från inställningarna för** för att göra datauppsättningen tillgänglig för användning i dina Orchestrated Campaigns.
 
    ![](assets/schema_manual_7.png){zoomable="yes"}
+
+1. Vänta några minuter tills aktiveringsprocessen har slutförts. Observera att datainmatning och kampanjanvändning endast är möjligt när den här inställningen är helt aktiverad.
 
 Nu kan du börja inhämta data i ditt schema med valfri källa.
 
