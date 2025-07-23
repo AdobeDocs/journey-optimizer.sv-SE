@@ -9,9 +9,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: acb87d0c7c3b8b1bde033f9483ecdeca5cee3325
+source-git-commit: 50a16d70fbf0c64fed64b037a5bcd14c21442c89
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du n
 >
 >Utan angivna nyckelord för anmälan eller avanmälan aktiveras inte standardmeddelanden för samtycke.
 
-När dina API-autentiseringsuppgifter för whatsApp har skapats är nästa steg att skapa en webkrok och konfigurera dina inkommande inställningar.
+När dina API-autentiseringsuppgifter för WhatsApp och dina [Meta Webhooks](https://developers.facebook.com/docs/whatsapp/webhooks/) har skapats är nästa steg att skapa en webkrok och konfigurera dina inkommande inställningar.
 
 1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL WhatsApp Webhooks]** under **[!UICONTROL WhatsApp settings]** och klicka på knappen **[!UICONTROL Create Webhook]**.
 
@@ -143,6 +143,8 @@ När dina API-autentiseringsuppgifter för whatsApp har skapats är nästa steg 
 1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
 
 1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
+
+1. Få åtkomst till och kopiera din nya **[!UICONTROL Webhook URL]** från din tidigare inskickade **[!UICONTROL WhatsApp Webhook]**.
 
 När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som meddelandeframställning, personalisering, länkspårning och rapportering.
 
