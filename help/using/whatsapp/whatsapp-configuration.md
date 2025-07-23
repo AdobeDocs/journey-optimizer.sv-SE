@@ -8,12 +8,11 @@ role: Admin
 level: Intermediate
 hide: true
 hidefromtoc: true
-badge: label="Beta" type="Informative"
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 7f507dc0113e85191429c2c48b873112b590e3ce
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 2%
+source-wordcount: '582'
+ht-degree: 1%
 
 ---
 
@@ -34,6 +33,8 @@ Innan du skickar ett WhatsApp-meddelande måste du konfigurera din Adobe Journey
 
 1. [Skapa dina API-autentiseringsuppgifter för WhatsApp](#WhatsApp-credentials)
 1. [Skapa din whatsApp-konfiguration](#WhatsApp-configuration)
+1. [Skapa webbhotell för whatsApp](#WhatsApp-webhook)
+
 
 Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](../start/path/administrator.md).
 
@@ -54,7 +55,7 @@ Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](
 
    ![](assets/whatsapp-api-2.png)
 
-1. Välj det **telefonnummer** som ska användas för att skicka meddelanden från din whatsApp.
+1. Välj det **avsändarnamn** som ska användas för att skicka dina Whatsapp-meddelanden.
 
 1. Dina telefonnummerinställningar fylls i automatiskt:
 
@@ -104,5 +105,47 @@ När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du n
    >Om kontrollerna inte lyckas kan du läsa mer om möjliga felorsaker i [det här avsnittet](../configuration/channel-surfaces.md).
 
 1. När kontrollerna har slutförts får kanalkonfigurationen statusen **[!UICONTROL Active]**. Den är klar att användas för att leverera meddelanden.
+
+## Skapa webkrok {#WhatsApp-webhook}
+
+>[!NOTE]
+>
+>Utan angivna nyckelord för anmälan eller avanmälan aktiveras inte standardmeddelanden för samtycke.
+
+När dina API-autentiseringsuppgifter för whatsApp har skapats är nästa steg att skapa en webkrok och konfigurera dina inkommande inställningar.
+
+1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL WhatsApp Webhooks]** under **[!UICONTROL WhatsApp settings]** och klicka på knappen **[!UICONTROL Create Webhook]**.
+
+   ![](assets/sms_byo_5.png)
+
+1. Ange en [!UICONTROL Name] för din webkrok.
+
+1. I listrutan väljer du den [konfiguration](#whatsapp-configuration) som du skapade tidigare.
+
+1. Klicka på ![lägg till](assets/do-not-localize/Smock_AddCircle_18_N.svg) för att börja konfigurera en **[!UICONTROL Inbound keyword category]** som:
+
+   * **[!UICONTROL Opt-in Keywords]**
+   * **[!UICONTROL Opt-out Keywords]**
+   * **[!UICONTROL Help Keywords]**
+
+1. Ange din **[!UICONTROL Keyword]**.
+
+   Om du vill lägga till flera nyckelord klickar du på ![lägg till](assets/do-not-localize/Smock_AddCircle_18_N.svg).
+
+1. Ange **[!UICONTROL Reply Message]** som ska skickas när ett konfigurerat nyckelord tas emot.
+
+<!--
+1. Click **[!UICONTROL View payload editor]** to validate and customize your request payloads. 
+    
+    You can dynamically personalize your payload using profile attributes, and ensure accurate data is sent for processing and response generation with the help of built-in helper functions.
+-->
+
+1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din WhatsApp-webkrok.
+
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
+
+1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
+
+När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som meddelandeframställning, personalisering, länkspårning och rapportering.
 
 Du kan nu skicka meddelanden om whatsApp med Journey Optimizer.

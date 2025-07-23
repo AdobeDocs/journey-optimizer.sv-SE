@@ -9,11 +9,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-badge: label="Beta" type="Informative"
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 7f507dc0113e85191429c2c48b873112b590e3ce
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -31,11 +30,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
->[!AVAILABILITY]
->
->Den här funktionen är en privat betaversion. Den kommer att finnas tillgänglig successivt för alla kunder i framtida versioner.
-
-Du kan nu skicka meddelanden om whatsApp direkt via Journey Optimizer. Den här funktionen möjliggör smidig integrering av WhatsApp i resor och kampanjer, vilket förbättrar kommunikationen och engagemanget med mottagarna.
+Du kan nu skicka whatsApp-meddelanden direkt via Journey Optimizer via Metas [Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/). Den här funktionen möjliggör smidig integrering av WhatsApp i resor och kampanjer, vilket förbättrar kommunikationen och engagemanget med mottagarna.
 
 * På en **resa**. Skapa en resa, lägg till en **whatsApp**-aktivitet och definiera grundläggande inställningar. Bläddra sedan till den högra panelen i **[!UICONTROL Actions: WhatsApp]** för att skapa innehållet för WhatsApp-meddelandet. Lär dig skapa en resa på [den här sidan](../building-journeys/journey-gs.md).
 
@@ -50,23 +45,28 @@ Integrering av WhatsApp med Journey Optimizer kräver följande:
 * Meta Business Manager-konto
 * WhatsApp Business-konto
 * WhatsApp-telefonnummer
+* [Token för användarauktorisering med lämplig behörighet](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)
+* [Godkända metamallar](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/)
+* [Konfiguration av Meta Webhooks](https://developers.facebook.com/docs/whatsapp/webhooks/)
+
 
 Du måste även känna till följande innan du fortsätter med integreringen:
 
 * [Innehållsregler för whatsApp](https://www.whatsapp.com/legal/messaging-guidelines)
 * [Efterlevnad med metaprinciper](https://www.whatsapp.com/legal)
 * [Konversationsgränsen 24 timmar](https://developers.facebook.com/docs/whatsapp/messaging-limits/)
-* [Godkända metamallar](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/)
 
-## Beta begränsningar {#limitations}
+## Begränsningar {#limitations}
 
-Följande funktioner kommer inte att ingå i den här betaversionen:
+Följande begränsningar gäller för WhatsApp-kanalen:
 
-* **Rapportering**: Det går inte att generera och visa rapporter i den här versionen.
+* WhatsApp-kanalen i Adobe Journey Optimizer är HIPAA-klar, men tredjepartsleverantörer omfattas inte av Adobe BAA. Kunderna ansvarar för sin egen regelefterlevnad och leverantörsvalidering.
 
-* **Nyckelord för anmälan/avanmälan**: Användarna har inte möjlighet att prenumerera eller avbryta prenumerationen med specifika nyckelord i det här skedet.
+* Observera att automatiska eller fördefinierade svarsmeddelanden inte stöds.
 
-* **Svarsmeddelanden**: Automatiska eller fördefinierade svarsmeddelanden stöds inte i den här versionen.
+* Från och med april 2025 har leveransen av alla marknadsföringsmallmeddelanden till WhatsApp-användare som har ett amerikanskt telefonnummer (ett nummer bestående av en +1-uppringningskod och en amerikansk riktnummer) tillfälligt stoppats. [Läs mer i Meta-dokumentationen](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates#per-user-marketing-template-message-limits)
+
+* Integreringsfunktionen tillåter inte integrering med Business Service Provider (BSP) från tredje part.
 
 ## Instruktionsvideo {#video}
 

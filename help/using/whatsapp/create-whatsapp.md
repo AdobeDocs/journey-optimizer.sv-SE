@@ -9,14 +9,14 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-badge: label="Beta" type="Informative"
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
-source-git-commit: f57a89e249c41e76f9ebf1a77dfe383129ae9250
+source-git-commit: 7f507dc0113e85191429c2c48b873112b590e3ce
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '737'
 ht-degree: 2%
 
 ---
+
 
 # Skapa ett WhatsApp-meddelande {#create-whatsapp}
 
@@ -154,8 +154,7 @@ Observera att din whatsApp-mall först måste godkännas av Meta innan den kan a
 
 1. Använd knappen **[!UICONTROL Simulate content]** för att förhandsgranska innehållet i dina WhatsApp-meddelanden, förkortade URL:er och anpassat innehåll. [Läs mer](send-whatsapp.md)
 
-När du har utfört testerna och validerat innehållet kan du skicka ditt whatsApp-meddelande till din publik. De här stegen beskrivs på [den här sidan](send-whatsapp.md)
-
+När du har utfört dina tester och validerat innehållet kan du [skicka whatsApp-meddelandet](send-whatsapp.md) till din publik och övervaka dess prestanda genom [rapportering](../reports/campaign-global-report-cja.md).
 
 <!--
 * **[!UICONTROL Template message]**: Predefined message imported from Meta into Journey Optimizer. These are intended for sending notifications, alerts, or updates to your customers.
