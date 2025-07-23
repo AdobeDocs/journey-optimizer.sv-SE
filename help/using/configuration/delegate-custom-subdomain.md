@@ -11,9 +11,9 @@ keywords: underdomän, delegering, domän, DNS
 hide: true
 hidefromtoc: true
 exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
-source-git-commit: 64ff860167439e1b098918cd913f2361f7365a50
+source-git-commit: c1b016af0d44e0dceb4cc292ddf1820abf2734e1
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '711'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ Följ stegen nedan för att konfigurera en anpassad underdomän.
 
    >[!NOTE]
    >
-   >Eventuella poster som saknas, det vill säga poster som ännu inte har skapats i din värdlösning, listas i listan.
+   >Kontrollera att alla poster har skapats innan du fortsätter.
 
    Adobe genererar en SSL CDN URL-valideringspost. Kopiera den här valideringsposten till din värdplattform. Om du har skapat den här posten på din värdlösning, markerar du rutan &quot;Jag bekräftar...&quot;.
 
