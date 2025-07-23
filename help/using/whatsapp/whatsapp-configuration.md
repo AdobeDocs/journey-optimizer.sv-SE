@@ -9,7 +9,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: 7f507dc0113e85191429c2c48b873112b590e3ce
+source-git-commit: acb87d0c7c3b8b1bde033f9483ecdeca5cee3325
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -115,8 +115,6 @@ När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du n
 När dina API-autentiseringsuppgifter för whatsApp har skapats är nästa steg att skapa en webkrok och konfigurera dina inkommande inställningar.
 
 1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL WhatsApp Webhooks]** under **[!UICONTROL WhatsApp settings]** och klicka på knappen **[!UICONTROL Create Webhook]**.
-
-   ![](assets/sms_byo_5.png)
 
 1. Ange en [!UICONTROL Name] för din webkrok.
 
