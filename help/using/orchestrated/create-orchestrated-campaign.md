@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
-source-git-commit: ea541231b16947908197748202e62227c5752966
+source-git-commit: c0f5ba3a8d5a361cdae3dd432ddbe54c5b79fe36
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
@@ -57,13 +57,13 @@ Så här skapar du en orkestrerad kampanj:
 
    ![](assets/inventory-create.png)
 
-1. Ange ett namn och en beskrivning för kampanjen.
+   1. Ange ett namn och en beskrivning för kampanjen.
 
-<!--1. Merge policy-->
+      <!--1. Merge policy-->
 
-1. Använd fältet **[!UICONTROL Tags]** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen i den samordnade kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
+   1. Använd fältet **[!UICONTROL Tags]** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen i den samordnade kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
 
-1. Klicka på **[!UICONTROL Save]**.
+   1. Klicka på **[!UICONTROL Save]**.
 
 ## Schemalägg kampanjen {#schedule}
 
@@ -105,7 +105,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Date]**: Välj det datum då kampanjen ska köras.
    * **[!UICONTROL Time]**: Välj den tidpunkt då kampanjen ska köras.
 
-   +++
++++
 
    +++Daily
 
@@ -119,7 +119,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Definiera den tid som kampanjen ska köras varje dag.
 
-   +++
++++
 
    +++Flera gånger om dagen
 
@@ -128,7 +128,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Selected hours]**: Välj de tider som kampanjen ska köras och konfigurera den dagliga upprepningen (verkställs varje veckodag eller på vissa dagar).
    * **[!UICONTROL Periodic]**: Välj att köra kampanjen var n minut eller timme. Du kan också definiera tidsintervallet inom dagen när körningar tillåts.
 
-   +++
++++
 
    +++Vecka
 
@@ -139,7 +139,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Daily recurrence]**: Välj specifika veckodagar för körning (t.ex. varje måndag och torsdag).
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras på valda dagar.
 
-   +++
++++
 
    +++Månad
 
@@ -155,7 +155,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras.
 
-   +++
++++
 
 1. Använd inställningen **[!UICONTROL Validity period]** för att definiera ett specifikt start- och slutdatum, vilket begränsar kampanjens körning till ett tidsbegränsat fönster.
 
