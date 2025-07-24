@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 516eb24a1f089d2fba1585e6b03e1d912b110d3c
+source-git-commit: c1013cd39dc1d85448e78e5406706a06fbc00de9
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"
->title="Samordnade kampanjer"
->abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/>"
-
-<b>Utnyttja data för flera enheter</b><br/>Lär dig hur samordnade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt räkning</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden, direktreklam&quot;
+>title="campaign_overview_orchestrated"
+>abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/> <b>Utnyttja data för flera enheter</b><br/>Lär dig hur samordnade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt antal</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden, direktreklam"
 
 +++ Innehållsförteckning
 
