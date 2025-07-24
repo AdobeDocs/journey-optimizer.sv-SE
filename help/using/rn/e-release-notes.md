@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Förhandsversionsinformation
+title: Förhandsversionsinformation för Journey Optimizer
 description: Journey Optimizer Pre Release Notes
 feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 2201cc8b9c0c7813c13156937e1cf319660c1039
+source-git-commit: 47665bc3cbe1221ba872bcd2b1dac94fea5ec63a
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
