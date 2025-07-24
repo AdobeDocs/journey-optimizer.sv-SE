@@ -8,17 +8,17 @@ level: Experienced
 hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: a600af73bd85d525bc1320d0aa6193660331e452
+exl-id: eae8a09a-5d27-4a80-b21f-7f795d800602
+source-git-commit: 5df643d2b0623d40779d155e406467d622d3d753
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
 
-
 # Hjälp för sökning efter externa data
 
-Hjälpprogrammet `externalDataLookup` i anpassningsredigeraren [!DNL Journey Optmizer] kan användas för att dynamiskt hämta data från en extern slutpunkt för användning när innehåll genereras för inkommande kanaler som t.ex. kodbaserade körnings-, webb- och appmeddelandekanaler.
+Hjälpprogrammet `externalDataLookup` i anpassningsredigeraren [!DNL Journey Optimizer] kan användas för att dynamiskt hämta data från en extern slutpunkt för användning när innehåll genereras för inkommande kanaler som t.ex. kodbaserade körnings-, webb- och appmeddelandekanaler.
 
 >[!AVAILABILITY]
 >
@@ -35,14 +35,14 @@ När åtgärden har definierats kan den användas både och:
 
 Se även Anpassade åtgärder i [!DNL Journey Optimizer] Inkommande kanalkampanjer och Journeys#GuardrailandGuidelines.
 
-* Som standard använder [!DNL Journey Optimizer] en timeout på 300 ms när en extern slutpunkt anropas. Kontakta [!DNL Journey Optimizer]-tekniker för att öka den här tidsgränsen för en slutpunkt.
-* I Personalization Editor kan du inte bläddra i schemat för slutpunktssvaret när du infogar uttryck i [!DNL Journey Optimizer] och verifierar inte referenser till JSON-attribut från svaret som används i uttryck.
-* De datatyper som stöds för variabelparametrar för nyttolast som ska ersättas via externalDataLookup-hjälpen är String, Integer, Decimal, Boolean, listString, listInt, listInteger, listDecimal.
-* Ändringar i en åtgärdskonfiguration återspeglas inte i motsvarande externalDataLookup-anrop i livekampanjer och resor. För att en ändring ska återspeglas måste du kopiera eller ändra alla live-kampanjer eller resor som använder åtgärden i en externalDataLookup-hjälpreda.
-* Variabler stöds ännu inte i externa hjälpparametrar för datasökning.
-* Dynamisk URL-sökväg stöds för närvarande inte.  - Förbättringar av inkommande anpassade åtgärder#DynamicPathSegments.
-* Återgivning i flera omgångar stöds.
-* Autentiseringsalternativen i åtgärdskonfigurationen stöds för närvarande inte av hjälpen externalDataLookup. Under tiden kan du ange dem som rubrikfält i åtgärdskonfigurationen för API-nyckelbaserad autentisering eller andra klartextautentiseringsnycklar.
+* **Standardtimeout** - Som standard använder [!DNL Journey Optimizer] en timeout på 300 ms när en extern slutpunkt anropas. Kontakta din Adobe-representant om du vill öka tidsgränsen för en slutpunkt.
+* **Bläddra bland svarsscheman och uttrycksvalidering** - I anpassningsredigeraren kan du inte bläddra i schemat för slutpunktssvaret när uttryck infogas. [!DNL Journey Optimizer] validerar inte referenser till JSON-attribut från svaret som används i uttryck.
+* **Datatyper som stöds för parametrar** - De datatyper som stöds för variabelparametrar för nyttolast som ska ersättas med hjälp av externalDataLookup är `String`, `Integer`, `Decimal`, `Boolean`, `listString`, `listInt`, `listInteger`, `listDecimal`.
+* **Uppdatera automatiskt för uppdaterade åtgärder** - Ändringar i en åtgärdskonfiguration återspeglas inte i motsvarande externalDataLookup-anrop i livekampanjer och resor. För att en ändring ska återspeglas måste du kopiera eller ändra alla live-kampanjer eller resor som använder åtgärden i en externalDataLookup-hjälpreda.
+* **Variabelersättning** - För närvarande stöds inte användning av variabler i hjälpparametrarna för externalDataLookup.
+* **Dynamisk sökväg** - För tillfället stöds inte dynamisk URL-sökväg.
+* **Multi-pass rendering** - Multi-pass rendering stöds.
+* **Autentisering** - För tillfället stöds inte autentiseringsalternativen i åtgärdskonfigurationen av hjälpen externalDataLookup. Under tiden kan du ange dem som rubrikfält i åtgärdskonfigurationen för API-nyckelbaserad autentisering eller andra klartextautentiseringsnycklar.
 
 ## Konfigurera en åtgärd och använda hjälpen
 
@@ -102,15 +102,21 @@ Parameternamn:
 
 Exempel:
 
-`{{externalDataLookup actionId="..." result="result" header.myHeaderParameter="value1" query.myQueryParameter="value2" payload.myPayloadParameter="value3"}}`
+```
+{{externalDataLookup actionId="..." result="result" header.myHeaderParameter="value1" query.myQueryParameter="value2" payload.myPayloadParameter="value3"}}`
+```
 
 Parametervärden kan vara fasta värden eller så kan de anpassas genom att referera till profilfält eller andra sammanhangsberoende attribut, t.ex.:
 
-`{{externalDataLookup actionId="..." result="result" query.myQueryParameter=profile.myProfileValue}}`
+```
+{{externalDataLookup actionId="..." result="result" query.myQueryParameter=profile.myProfileValue}}
+```
 
 Nyttolastparametrar kan anges med punktnotation för att referera till kapslade JSON-attribut, t.ex.:
 
-`{{externalDataLookup actionId="..." result="result" payload.context.channel="web"}}`
+```
+{{externalDataLookup actionId="..." result="result" payload.context.channel="web"}}
+```
 
 ### Åtkomst till resultatet
 
@@ -174,7 +180,9 @@ Om du vill hantera timeout eller fel bättre genom att visa reservinnehåll kan 
 
 Du kan till exempel visa ett reservvärde för ett enda attribut som detta:
 
-`First video description: {%=result.videos[0].description ?: "none found" %}`
+```
+First video description: {%=result.videos[0].description ?: "none found" %}
+```
 
 eller så kan du villkorligt återge ett helt innehållsblock på följande sätt:
 
@@ -196,7 +204,7 @@ Exempel:
 
 I Edge Delivery Section of ensure trace som en del av körningsinformationen har ett nytt customActions-block lagts till med begäran- och svarsinformation som liknar den nedan. Felavsnittet bör vara till hjälp vid felsökning om det uppstod några problem när en anpassad åtgärd utfördes
 
-![](assets/external-data-troubleshoot.png)
+![](assets/external-data-troubleshoot.png "width=50%")
 
 ## Vanliga frågor och svar
 
@@ -204,7 +212,9 @@ I Edge Delivery Section of ensure trace som en del av körningsinformationen har
 
   Använd Kontextuella attribut > Datastream > Event-menyn för att bläddra i det Experience Event-schema som du använder och infoga det relevanta attributet som ett parametervärde enligt följande:
 
-  `{{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}`
+  ```
+  {{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}
+  ```
 
 * Gör [!DNL Journey Optimizer] någon cachelagring av externa slutpunktssvar?
 
