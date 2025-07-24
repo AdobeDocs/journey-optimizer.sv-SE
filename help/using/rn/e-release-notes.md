@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 47665bc3cbe1221ba872bcd2b1dac94fea5ec63a
+source-git-commit: f74ef3dfe8ceb504ace425cf4e701c9733373c2f
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,6 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tr>
 <td>
 <p>Nu kan ni lägga till beslutsprinciper i e-postresor och -kampanjer. Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem.</p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
 <p>Den här funktionen är bara tillgänglig för en uppsättning organisationer. Den kan för närvarande inte användas tillsammans med hälso- och sjukvårdsskölden och skölden för skydd av privatlivet och säkerheten (begränsad tillgänglighet).</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
@@ -177,7 +176,6 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tr>
 <td>
 <p>Tidigare släppt i Begränsad tillgänglighet är användningen av extra ID:n på resor nu tillgänglig för alla miljöer. I den här allmänna tillgänglighetsversionen har funktionen nu stöd för målgruppsresor för läsning.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
