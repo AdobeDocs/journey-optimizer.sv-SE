@@ -2,14 +2,14 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Förhandsversionsinformation för Journey Optimizer
-description: Journey Optimizer Pre Release Notes
+description: Adobe Journey Optimizer Pre Release Notes
 feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: f74ef3dfe8ceb504ace425cf4e701c9733373c2f
+source-git-commit: 08d32e9323d5841cdac5ed08b3e1764aeb6368be
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 **Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformationen](release-notes.md) på releasedatum.
 
 
-## 25 tidiga versionsinformation juli {#25-7-rn}
+## Juli 25 förhandsversionsinformation {#25-7-rn}
 
 
 **Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
@@ -118,6 +118,12 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tr>
 <td>
 <p>Journey Optimizer ger er nu de verktyg ni behöver för att leverera personaliserat och optimerat innehåll till er målgrupp, så att ni kan köra innehållsexperiment, skapa regelbaserad målinriktning och använda avancerade kombinationer av båda för att maximera effektiviteten i era kampanjer.</p>
+<p>Med optimering kan man</p>
+<ul>
+<li>Kör innehållsexperiment</li>
+<li>Utnyttja regler för målinriktning</li>
+<li>Använd avancerade kombinationer av både experiment och målinriktning i en enda kampanj</li></ul>
+<P>När kampanjen är aktiv utvärderas profiler mot de definierade kriterierna, och baserat på matchningskriterier levereras de med rätt erfarenhet eller innehåll från kampanjen.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -158,7 +164,6 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <li>Möjlighet att se utkast till kampanjer om du har angett ett start- och slutdatum</li>
 <li>En ny inställning som döljer och visar kalenderobjekt som körs länge</li>
 </ul>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
