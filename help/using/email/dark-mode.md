@@ -11,9 +11,9 @@ keywords: mörkt läge, e-post, färg, redigerare
 hide: true
 hidefromtoc: true
 exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
-source-git-commit: b5d9b9c26824517414982fa539e0b360500cafc6
+source-git-commit: 12b41a253693184e4e3d866f00e7d8b0a1e30ce3
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Följ stegen nedan för att definiera egna inställningar för mörkt läge.
    >
    >Live-vyn är en allmän förhandsvisning som är utformad för att jämföra hur återgivningen kan se ut på olika enhetsstorlekar. Den slutliga återgivningen kan variera beroende på mottagarens e-postklient.
 
-1. När du är nöjd med ändringarna för mörkt läge klickar du på **[!UICONTROL Simulate content]**.
+1. När du är nöjd med ändringarna för mörkt läge klickar du på **[!UICONTROL Simulate Content]**.
 
    ![](assets/dark-mode-simulate.png)
 
@@ -209,13 +209,13 @@ Inline CSS helps maintain more control over styling, as some clients strip exter
 
 ## E-postklienter som stöder mörkt läge {#supporting-email-clients}
 
-Nedan finns en lista över de viktigaste e-postklienterna som stöder mörkt läge. Vissa versioner av e-postklienterna i listan stöder dock inte mörkt läge, så de presenteras också i den här tabellen för tydlighetens och precisionens skull.
+Nedan finns en lista över de viktigaste e-postklienterna som stöder mörkt läge.
 
->[!WARNING]
+>[!NOTE]
 >
->Den slutliga återgivningen i mörkt läge beror på varje e-postklient, så resultatet kan variera från en till en annan. Använd alternativet [E-poståtergivning](../content-management/rendering.md) om du vill se en simulering som ligger så nära det slutliga resultatet för varje e-postklient som möjligt.
+>Vissa versioner av de här e-postklienterna stöder inte mörkt läge, så för tydlighetens skull presenteras de också i den här tabellen.
 
-| E-postklienter som stöder mörkt läge | Kompatibla versioner | Versioner som inte stöds |
+| E-postklienter som stöder mörkt läge | Kompatibla versioner | *Versioner som inte stöds* |
 |---------|----------|---------|
 | Apple Mail macOS | 12.4, 16.0 | *10.3* |
 | Apple Mail iOS | 13.0, 16.1 | *12.2* |
@@ -237,13 +237,17 @@ Nedan finns en lista över de viktigaste e-postklienterna som stöder mörkt lä
 | WEB.DE (iOS och Android) | 2022-06 | NA |
 | Free.fr | 2022-12 | NA |
 
+>[!WARNING]
+>
+>Den slutliga återgivningen i mörkt läge beror på varje e-postklient, så resultatet kan variera från en till en annan.
+
 <!--
 * Check out the list of [email clients supporting dark mode](https://www.caniemail.com/search/?s=dark){target="_blank"}
 
 * Learn more on Dark mode in this [Litmus blog post](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers){target="_blank"}
 -->
 
-## E-postklienter stöder INTE mörkt läge {#non-supporting-email-clients}
+## E-postklienter som inte stöder mörkt läge {#non-supporting-email-clients}
 
 Vissa e-postklienter tillåter användare att växla gränssnitt till mörkt läge, men den här inställningen påverkar inte hur HTML e-postmeddelanden visas. Oavsett om gränssnittet är i ljust eller mörkt läge återges e-postmeddelandet på samma sätt. Här är en lista över dessa klienter:
 
