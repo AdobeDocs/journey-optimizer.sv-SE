@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"
 >title="Samordnade kampanjer"
->abstract="**Kampanjsamordning**<br/> Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/>
+>abstract="**Kampanjsamordning**<br/> Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/>"
 
 **Utnyttja data för flera enheter**<br/> Lär dig hur samordnade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering <br/><br/>**Ad-hoc-segmentering och exakt räkning**<br/> Bygg ditt segment steg för steg med exakt antal <br/><br/>**Tillgängliga kanaler**<br/> E-post, SMS, push-meddelanden, direktreklam&quot;
 
