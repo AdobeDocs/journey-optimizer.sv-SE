@@ -9,15 +9,20 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+source-git-commit: 15f5fdfde0e9f7c93739a624918838dbd6787833
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '233'
 ht-degree: 2%
 
 ---
 
 
 # Arbeta med API-utlösta kampanjer {#trigger-campaigns}
+
+>[!CONTEXTUALHELP]
+>id="campaigns_overview_api_triggered"
+>title="API-utlösta kampanjer"
+>abstract="**Transaktionellt API-utlöste kampanjer**<br/> Utlös meddelanden i realtid via API-anrop <br/><br/>**Marknadsföringsmeddelanden**<br/> Kampanjinnehåll (kräver deltagande, i enlighet med affärsregler)<br/><br/>**Transaktionsmeddelanden**<br/> Tjänstrelaterat innehåll (bekräftelse, varningar, som inte kräver godkännande av marknadsföringen)<br/><br/>**Tillgängliga kanaler**<br/> E-post, SMS, push-meddelanden"
 
 ## Om API-utlösta kampanjer {#about}
 
@@ -43,4 +48,4 @@ Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-med
 
 Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452729?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)

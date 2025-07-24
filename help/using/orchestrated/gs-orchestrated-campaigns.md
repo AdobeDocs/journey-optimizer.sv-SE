@@ -7,14 +7,21 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: bd5239b177954d6e5d83f4b08e7d79819c102485
+source-git-commit: 15f5fdfde0e9f7c93739a624918838dbd6787833
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # Kom igång med samordnade kampanjer {#orchestrated-camp}
+
+>[!CONTEXTUALHELP]
+>id="campaigns_overview_orchestrated"
+>title="Samordnade kampanjer"
+>abstract="**Kampanjsamordning**<br/> Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/>
+
+**Utnyttja data för flera enheter**<br/> Lär dig hur samordnade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering <br/><br/>**Ad-hoc-segmentering och exakt räkning**<br/> Bygg ditt segment steg för steg med exakt antal <br/><br/>**Tillgängliga kanaler**<br/> E-post, SMS, push-meddelanden, direktreklam&quot;
 
 +++ Innehållsförteckning
 
