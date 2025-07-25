@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: c3513c087a05f2258e00fd4d80fdb23bedfd9188
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,10 @@ När det här alternativet är aktiverat spåras beteendet hos mottagarna av din
 ## Infoga länkar {#insert-links}
 
 När [spårning är aktiverat](#enable-tracking) spåras alla länkar som ingår i meddelandeinnehållet.
+
+>[!NOTE]
+>
+>Länkar från fragment som används i e-postmeddelanden spåras också. [Läs mer om fragment](../content-management/fragments.md)
 
 Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 

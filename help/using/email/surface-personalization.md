@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration, underdomän
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: c3513c087a05f2258e00fd4d80fdb23bedfd9188
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1138'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Följ stegen nedan för att definiera dynamiska underdomäner i en e-postkanalsk
 
 1. Välj kanalen **[!UICONTROL Email]**.
 
-1. Aktivera alternativet **[!UICONTROL Dynamic Subdomain]** i avsnittet **Underdomän**.
+1. Aktivera alternativet **i avsnittet** Underdomän **[!UICONTROL Dynamic Subdomain]**.
 
    ![](assets/surface-email-dynamic-subdomain.png)
 
@@ -128,7 +128,7 @@ Följ stegen nedan om du vill använda personaliserade variabler för konfigurat
 
 Följ stegen nedan om du vill använda personaliserade URL-spårningsparametrar.
 
-1. Gå till avsnittet **[!UICONTROL URL tracking parameters]** i e-postkanalskonfigurationen.
+1. Gå till avsnittet **[!UICONTROL URL tracking parameters]** i e-postkanalskonfigurationen. [Läs mer](url-tracking.md)
 
 1. Klicka på ikonen Redigera bredvid varje fält. Förutom kontextattribut kan du välja profilattribut.
 
