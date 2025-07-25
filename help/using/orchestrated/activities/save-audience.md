@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
-source-git-commit: 81f0338935ee36b152963f2b1c0e7989b86f5f8a
+source-git-commit: 0ae9ed8ba93bd4f64f27380f956e1c97af75dd90
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,13 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Save audience]**:
 
 1. Ange en **[!UICONTROL Audience label]** som identifierar den sparade målgruppen.
 
-1. Klicka på **[!UICONTROL Add audience attribute]** för att definiera hur målgruppsdata ska struktureras och lagras för framtida återanvändning.
+1. Välj en **[!UICONTROL Profile mapping field &#x200B;]** från din Campaign-måldimension.
+
+   ➡️ [Följ stegen som beskrivs på den här sidan för att skapa din Campaign Targeting-dimension](../target-dimension.md)
 
    ![](../assets/save-audience-1.png)
 
-1. Välj sedan lämplig **[!UICONTROL Primary identity field]**-&#x200B; och **[!UICONTROL Identity namespace]** för att säkerställa korrekt profilupplösning.
+1. Klicka på **[!UICONTROL Add audience mappings]** om du vill associera den sparade målgruppen med ytterligare identitetsfält.
 
    ![](../assets/save-audience-2.png)
 
@@ -66,10 +68,8 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Save audience]**:
 
 Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för målgruppen, som du kommer åt via menyn **[!UICONTROL Audiences]**.
 
-![](../assets/save-audience-3.png)
-
 ## Exempel {#save-audience-example}
 
-I följande exempel visas hur du skapar en enkel målgrupp med målinriktning. En fråga identifierar alla profiler som har köpt något under de senaste 30 dagarna. Aktiviteten **[!UICONTROL Save audience]** hämtar sedan dessa profiler för att skapa en återanvändbar målgrupp med nyligen använda köpare.
+I följande exempel visas hur du skapar en enkel målgrupp med målinriktning. En fråga identifierar alla mottagare som har bokat en resa de senaste 30 dagarna genom att filtrera den här populationen i din samordnade kampanj. Genom att välja **Mottagare - CRMID** som **måldimension**, målgruppen för varje enskild bokningshändelse i stället för bara mottagaren som helhet. Aktiviteten **[!UICONTROL Save audience]** hämtar sedan dessa profiler för att skapa en återanvändbar målgrupp med nyligen använda köpare.
 
-![](../assets/save-audience-4.png)
+![](../assets/save-audience-3.png)

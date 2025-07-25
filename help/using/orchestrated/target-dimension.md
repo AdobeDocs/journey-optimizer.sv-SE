@@ -6,7 +6,7 @@ description: Lär dig mapp ett relationsschema till kundprofilen
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
-source-git-commit: 70d397614dc0e5b5ce94cc4221a28d47dc9b476d
+source-git-commit: 0ae9ed8ba93bd4f64f27380f956e1c97af75dd90
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
    I det här exemplet är kundprofilen länkad till flera prenumerationer, som vart och ett representeras av en unik `crmID` i `Recipient`-schemat. Genom att ange att **[!UICONTROL Target Dimension]** ska använda `Recipient`-schemat och dess `crmID`-identitet kan du skicka meddelanden på prenumerationsnivå i stället för till huvudkundprofilen, så att varje kontrakt eller rad får ett eget anpassat meddelande.
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)
 
    ![](assets/target-dimension-2.png)
 
@@ -108,4 +108,4 @@ När du har konfigurerat din **[!UICONTROL Target Dimension]** måste du konfigu
 
 1. När du har konfigurerat klickar du på **[!UICONTROL Submit]**.
 
-Din kanal är nu klar att användas med Orchestrated Campaigns, och meddelanden levereras enligt den valda måldimensionen.
+Din kanal är nu klar att användas med **samordnade kampanjer**, och meddelanden levereras enligt den valda måldimensionen.
