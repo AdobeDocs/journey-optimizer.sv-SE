@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
 exl-id: f9e217f8-5aa8-4d3a-96fc-65defcb5d340
-source-git-commit: e539d694e8fb91b6a8c7ba7ff5a2bb0905651f81
+source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
 workflow-type: tm+mt
 source-wordcount: '1452'
 ht-degree: 0%
@@ -104,7 +104,7 @@ Följ stegen nedan för att se till att du har konfigurerat en DMARC-post för a
 
    * [Fullt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe, ingen ytterligare åtgärd krävs.
 
-   * Konfigurera med [CNAME](delegate-subdomain.md#cname-subdomain-delegation), du måste kopiera DNS-posten för DMARC till din värdlösning för att kunna generera matchande DNS-poster.
+   * Konfigurera med [CNAME](delegate-subdomain.md#cname-subdomain-setup), du måste kopiera DNS-posten för DMARC till din värdlösning för att kunna generera matchande DNS-poster.
 
      ![](assets/dmarc-record-edit-cname.png)
 

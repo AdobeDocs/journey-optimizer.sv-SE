@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -26,13 +26,13 @@ ht-degree: 0%
 >id="ajo_admin_subdomain_lp"
 >title="Delegera en underdomän för landningssida"
 >abstract="Du måste konfigurera en underdomän att använda för dina landningssidor, eftersom du behöver den här underdomänen för att skapa en förinställning för landningssidor. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html?lang=sv-SE#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_lp_subdomain"
 >title="Skapa en förinställning för landningssida"
 >abstract="Om du vill kunna skapa en förinställning för landningssida måste du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida att välja från listan med underdomännamn."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html?lang=sv-SE#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 ## Kom igång med underdomäner för landningssidor {#gs-lp-subdomains}
 
@@ -80,11 +80,11 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    >[!CAUTION]
    >
-   >Om du väljer en domän som delegerats till Adobe med metoden [CNAME](../configuration/delegate-subdomain.md#cname-subdomain-delegation) måste du skapa DNS-posten på din värdplattform. För att generera DNS-posten är processen densamma som när du konfigurerar en ny underdomän för landningssida. Lär dig hur i [det här avsnittet](#lp-configure-new-subdomain).
+   >Om du väljer en domän som delegerats till Adobe med metoden [CNAME](../configuration/delegate-subdomain.md#cname-subdomain-setup) måste du skapa DNS-posten på din värdplattform. För att generera DNS-posten är processen densamma som när du konfigurerar en ny underdomän för landningssida. Lär dig hur i [det här avsnittet](#lp-configure-new-subdomain).
 
 1. Klicka på **[!UICONTROL Submit]**.
 
-1. När den har skickats visas underdomänen i listan med statusen **[!UICONTROL Processing]**. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. När den har skickats visas underdomänen i listan med statusen **[!UICONTROL Processing]**. Mer information om underdomäners status finns i [det här avsnittet](../configuration/delegate-subdomain.md#access-delegated-subdomains).<!--Same statuses?-->
 
    ![](assets/lp_subdomain-processing.png)
 
@@ -129,7 +129,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
    När du konfigurerar en ny underdomän för landningssida pekar den alltid på en CNAME-post.
 
-1. När underdomänsdelegeringen har skickats visas underdomänen med statusen **[!UICONTROL Processing]** i listan. Mer information om underdomäners status finns i [det här avsnittet](../configuration/about-subdomain-delegation.md#access-delegated-subdomains).<!--Same statuses?-->
+1. När underdomänsdelegeringen har skickats visas underdomänen med statusen **[!UICONTROL Processing]** i listan. Mer information om underdomäners status finns i [det här avsnittet](../configuration/delegate-subdomain.md#access-delegated-subdomains).<!--Same statuses?-->
 
    Innan du kan använda den underdomänen för dina landningssidor måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta **upp till 4 timmar**.<!--Learn more in [this section](#subdomain-validation).-->
 
@@ -147,7 +147,7 @@ Om du vill avdelegera en underdomän till en landningssida följer du stegen ned
 
    >[!NOTE]
    >
-   >En underdomän för landningssida kan peka på en CNAME-post eftersom den antingen var en [befintlig underdomän](#lp-use-existing-subdomain) som delegerats till Adobe med [CNAME-metoden](../configuration/delegate-subdomain.md#cname-subdomain-delegation) eller en [ny underdomän för landningssida](#lp-configure-new-subdomain) som du konfigurerade.
+   >En underdomän för landningssida kan peka på en CNAME-post eftersom den antingen var en [befintlig underdomän](#lp-use-existing-subdomain) som delegerats till Adobe med [CNAME-metoden](../configuration/delegate-subdomain.md#cname-subdomain-setup) eller en [ny underdomän för landningssida](#lp-configure-new-subdomain) som du konfigurerade.
 
 1. Nå ut till din Adobe-representant med den underdomän du vill avdelegera.
 

@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 hidefromtoc: true
 hide: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 8ff4f970796218451996bd5ed1938d33fa818495
+source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 8%
@@ -34,7 +34,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 <td>
 <p>Adobe Journey Optimizer har nu stöd för CNAME. En CNAME-post, eller kanoniskt namnpost, är en post som pekar på en annan domänadress i stället för en IP-adress. Med CNAME-delegering av underdomäner kan du skapa en underdomän och använda CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS för att konfigurera miljön för att skicka, återge och spåra e-postmeddelanden.</p>
 <p>Den här metoden rekommenderas om din organisations principer begränsar den fullständiga delegeringsmetoden för underdomäner.</p>
-<p>Läs mer om delegering av CNAME-underdomäner i den <a href="../configuration/delegate-subdomain.md#cname-subdomain-delegation">detaljerade dokumentationen</a>.</p>
+<p>Läs mer om delegering av CNAME-underdomäner i den <a href="../configuration/delegate-subdomain.md#cname-subdomain-setup">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -78,7 +78,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 </table>
 
 
-Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html?lang=sv-SE){target="_blank"} för fler ändringar.
+Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html){target="_blank"} för fler ändringar.
 
 ### Förbättringar
 

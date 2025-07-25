@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -82,13 +82,13 @@ Om du vill redigera en PTR-post med en underdomän som är [helt delegerad](dele
 
 ### Delegerade underdomäner med CNAME-metoden {#edit-ptr-subdomains-cname}
 
-Om du vill redigera en PTR-post med en underdomän som har delegerats till Adobe med metoden [CNAME](delegate-subdomain.md#cname-subdomain-delegation) följer du stegen nedan.
+Om du vill redigera en PTR-post med en underdomän som har delegerats till Adobe med metoden [CNAME](delegate-subdomain.md#cname-subdomain-setup) följer du stegen nedan.
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
    ![](assets/ptr-record-select.png)
 
-1. Välj en underdomän som har delegerats till Adobe med metoden [CNAME](delegate-subdomain.md#cname-subdomain-delegation) i listan.
+1. Välj en underdomän som har delegerats till Adobe med metoden [CNAME](delegate-subdomain.md#cname-subdomain-setup) i listan.
 
    ![](assets/ptr-record-subdomain-cname.png)
 

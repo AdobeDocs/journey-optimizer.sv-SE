@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: subdomain, google, txt, record, gmail, deliverability
 exl-id: 311eb2d1-e445-43e6-bc2c-c6288b637f47
-source-git-commit: b9208544b08b474db386cce3d4fab0a4429a5f54
+source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 7%
@@ -29,7 +29,7 @@ För att säkerställa optimal leverans och korrekt leverans av e-post till Gmai
 
 >[!CAUTION]
 >
-> Den här åtgärden kan bara utföras när en underdomän har statusen **[!UICONTROL Success]**. Mer information om underdomäners status finns i [det här avsnittet](about-subdomain-delegation.md#access-delegated-subdomains).
+> Den här åtgärden kan bara utföras när en underdomän har statusen **[!UICONTROL Success]**. Mer information om underdomäners status finns i [det här avsnittet](delegate-subdomain.md#access-delegated-subdomains).
 
 Så här lägger du till en Google TXT-post i din underdomän:
 
