@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: c1013cd39dc1d85448e78e5406706a06fbc00de9
+source-git-commit: 0d6e3c082032b11b38f7d4b67da1e38756b5f101
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,8 @@ Kampanjsamordning bygger på fyra huvudpelare:
 <tr style="border: 0;">
 <td><img alt="On-demand-målgrupper" src="assets/do-not-localize/icon-audience.svg" width="50px"></a></td><td><b>On-Demand-målgrupper</b><br/>Frågar direkt mellan datauppsättningar för att skapa målgruppssegment med valfri kombination av datatyper och dimensioner.</td></tr>
 <tr style="border: 0;">
-<td><img alt="Segmentering och sändning av flera enheter" src="assets/do-not-localize/icon-entity.svg" width="50px"></a></td><td><b>Segmentering och sändning av flera enheter</b><br/>Gå steget längre än personbaserade kampanjer - använd entiteter som produktkataloger, butiksplatser eller tjänstdata för att måla med precision.</td></tr>
+<td><img alt="Segmentering och sändning av flera enheter" src="assets/do-not-localize/icon-entity.svg" width="50px"></a></td><td><b>Segmentering och sändning av flera enheter</b><br/>Gå steget längre än personbaserade kampanjer - använd entiteter som produktkataloger, butiksplatser eller tjänstdata för att måla med precision.<br/><br/>
+Stöd för sändning på flera nivåer, där ett meddelande skickas per profil och per associerad sekundär enhet. Dessa sekundära enheter kan vara kontaktadresser, bokningar, prenumerationer, kontrakt eller andra länkade data. Detta gör till exempel att kampanjer kan skickas till alla kända adresser för en profil eller för varje bokning som är kopplad till den profilen.</td></tr>
 <tr style="border: 0;">
 <td><img alt="Synlighet och precision före sändning" src="assets/do-not-localize/icon-visibility.svg" width="50px"></a></td><td><b>Synlighet och precision före sändning</b><br/>Få exakt segmenteringsantal och fullständigt kampanjomfång före lansering för att säkerställa precision och förtroende.</td></tr>
 <tr style="border: 0;">
@@ -69,6 +70,8 @@ Kampanjsamordning bygger på fyra huvudpelare:
 * **Resor** - 1 till 1 arbetsyta där varje profil förflyttar sig genom de olika stegen i sin egen takt. Tillståndet för varje kund upprätthålls i sitt sammanhang för att aktivera realtidsåtgärder.
 
 * **Samordnade kampanjer** - Till skillnad från resor använder orkestrerade kampanjer en batcharbetsyta som beräknar segment. Alla profiler bearbetas samtidigt.
+
+Båda arbetsytorna är optimerade för respektive användningsfall: Resursytan publicerar resor som tenderar att vara aktiva under en längre period, medan Campaign Canvas är utformat för iterativa och inkrementella körningar av en gruppkampanj.
 
 ## Förhandskrav
 
