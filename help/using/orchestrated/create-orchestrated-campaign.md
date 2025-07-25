@@ -107,7 +107,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Date]**: Välj det datum då kampanjen ska köras.
    * **[!UICONTROL Time]**: Välj den tidpunkt då kampanjen ska köras.
 
-+++
+   +++
 
    +++Daily
 
@@ -121,7 +121,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Definiera den tid som kampanjen ska köras varje dag.
 
-+++
+   +++
 
    +++Flera gånger om dagen
 
@@ -130,7 +130,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Selected hours]**: Välj de tider som kampanjen ska köras och konfigurera den dagliga upprepningen (verkställs varje veckodag eller på vissa dagar).
    * **[!UICONTROL Periodic]**: Välj att köra kampanjen var n minut eller timme. Du kan också definiera tidsintervallet inom dagen när körningar tillåts.
 
-+++
+   +++
 
    +++Vecka
 
@@ -141,7 +141,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Daily recurrence]**: Välj specifika veckodagar för körning (t.ex. varje måndag och torsdag).
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras på valda dagar.
 
-+++
+   +++
 
    +++Månad
 
@@ -157,7 +157,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras.
 
-+++
+   +++
 
 1. Använd inställningen **[!UICONTROL Validity period]** för att definiera ett specifikt start- och slutdatum, vilket begränsar kampanjens körning till ett tidsbegränsat fönster.
 
