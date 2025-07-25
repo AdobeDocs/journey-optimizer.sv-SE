@@ -423,36 +423,36 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 Förbättringar i den här versionen visas nedan.
 
-* **Kanalregeluppsättningar**
+&#x200B;* **Kanalregeluppsättningar**
 
-   * **Anpassat varaktighetsfönster** för capping - Ett nytt **Varje**-fält är nu tillgängligt i konfigurationsskärmen för kanalregeluppsättningar, så att du kan tillämpa regler för frekvensbegränsning över flera dagar, veckor eller månader, beroende på den angivna varaktigheten.
+   &#x200B;* **Anpassat varaktighetsfönster** för capping - Ett nytt **Varje**-fält är nu tillgängligt i konfigurationsskärmen för kanalregeluppsättningar, så att du kan tillämpa regler för frekvensbegränsning över flera dagar, veckor eller månader, beroende på den angivna varaktigheten.
 
-   * **Återställa begränsningsfrekvens per timme** - Du kan nu tillämpa begränsning per timme för kanalregeluppsättningar. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta kundtjänst för att aktivera det.
+   &#x200B;* **Återställa begränsningsfrekvens per timme** - Du kan nu tillämpa begränsning per timme för kanalregeluppsättningar. Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta kundtjänst för att aktivera det.
 
-   * **Daglig varaktighet** - Tidigare i begränsad tillgänglighet är frekvensbegränsningen &quot;Dagligen&quot; i kanalregeluppsättningar nu tillgänglig för alla kunder.
+   &#x200B;* **Daglig varaktighet** - Tidigare i begränsad tillgänglighet är frekvensbegränsningen &quot;Dagligen&quot; i kanalregeluppsättningar nu tillgänglig för alla kunder.
 
   Mer information finns i den [detaljerade dokumentationen](../conflict-prioritization/channel-capping.md).
 
-* **Kodbaserade upplevelser**
+&#x200B;* **Kodbaserade upplevelser**
 
-   * Det finns nu en beslutsprofil i mallar för kodbaserat upplevelseinnehåll, där den kan användas för att utnyttja erbjudanden i redigerbara formulärfält. [Läs mer](../code-based/code-based-form-fields.md)
+   &#x200B;* Det finns nu en beslutsprofil i mallar för kodbaserat upplevelseinnehåll, där den kan användas för att utnyttja erbjudanden i redigerbara formulärfält. [Läs mer](../code-based/code-based-form-fields.md)
 
-   * Från den kodbaserade upplevelseresan eller kampanjutgåvan kan ni nu lägga till en beslutspolicy direkt, utan att behöva öppna personaliseringsredigeraren. [Läs mer](../code-based/create-code-based.md#edit-code)
+   &#x200B;* Från den kodbaserade upplevelseresan eller kampanjutgåvan kan ni nu lägga till en beslutspolicy direkt, utan att behöva öppna personaliseringsredigeraren. [Läs mer](../code-based/create-code-based.md#edit-code)
 
-* **Anpassat CSS-stöd i Designer för e-post**
+&#x200B;* **Anpassat CSS-stöd i Designer för e-post**
 
   Med Journey Optimizer kan du nu lägga till anpassad CSS i e-postinnehåll direkt i e-post-Designer. [Läs mer](../email/custom-css.md)
 
-* **Ny fliknavigering för kampanjer**
+&#x200B;* **Ny fliknavigering för kampanjer**
 
   Ett nytt navigeringsmönster ger snabbare åtkomst till innehållsutveckling och stöd för ytterligare expansion av inställningar mellan kampanjer. [Läs mer](../campaigns/create-campaign.md)
 
-* **Beslut**
+&#x200B;* **Beslut**
 
-   * **Sandbox copy &amp; Decisioning** (tillgänglighetsdatum: 3 juni 2025) - Beslutsobjekt kan nu kopieras mellan sandlådor, vilket effektiviserar arbetsflödena för testning och distribution. [Läs mer](../configuration/copy-objects-to-sandbox.md#decisioning)
+   &#x200B;* **Sandbox copy &amp; Decisioning** (tillgänglighetsdatum: 3 juni 2025) - Beslutsobjekt kan nu kopieras mellan sandlådor, vilket effektiviserar arbetsflödena för testning och distribution. [Läs mer](../configuration/copy-objects-to-sandbox.md#decisioning)
 
-   * **Stöd för beslutsobjektattribut för beslutsregler** (tillgänglighetsdatum: 4 juni 2025) - Du kan nu använda beslutsobjektattribut för att skapa beslutsregler. [Läs mer](../experience-decisioning/rules.md#create)
+   &#x200B;* **Stöd för beslutsobjektattribut för beslutsregler** (tillgänglighetsdatum: 4 juni 2025) - Du kan nu använda beslutsobjektattribut för att skapa beslutsregler. [Läs mer](../experience-decisioning/rules.md#create)
 
-* **API-uppdatering för interaktiv meddelandekörning** - tillgänglighetsdatum: 6 juni 2025
+&#x200B;* **API-uppdatering för interaktiv meddelandekörning** - tillgänglighetsdatum: 6 juni 2025
 
   Med API:t för interaktiv meddelandekörning kan du nu ta bort schemat för kommande kampanjkörningar. [Läs mer](https://developer.adobe.com/journey-optimizer-apis/references/messaging/){target="_blank"}
