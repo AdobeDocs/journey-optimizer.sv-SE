@@ -9,10 +9,10 @@ role: Admin
 level: Experienced
 keywords: underdomän, optimering, delegering
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
+source-git-commit: 7854de133ebcd3b29ca59b747aa89fae242f2ea5
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 23%
+source-wordcount: '859'
+ht-degree: 24%
 
 ---
 
@@ -27,7 +27,7 @@ Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olik
 
 Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet. Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
 
->[!NOTE]
+>[!CAUTION]
 >
 >Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
 
@@ -54,54 +54,56 @@ Dessa krav hanteras via komponenter som finns både hos Adobe och kunden, men de
 
 ## Konfigurationsmetoder för underdomäner {#subdomain-delegation-methods}
 
-Med subdomänkonfigurationen kan du konfigurera ett underavsnitt av din domän (tekniskt en &quot;DNS-zon&quot;) för användning med Adobe Campaign. Tillgängliga installationsmetoder är:
+Med subdomänkonfigurationen kan du konfigurera ett underavsnitt av din domän (tekniskt en &quot;DNS-zon&quot;) för användning med Adobe Campaign.
 
-* **Fullständig underdomändelegering till Adobe** (rekommenderas): Underdomänen har delegerats till Adobe. Adobe kan styra och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra meddelanden. [Läs mer om fullständig delegering av underdomäner](delegate-subdomain.md#full-subdomain-delegation)
+De tillgängliga konfigurationsmetoderna är följande.
 
-* **Använda CNAME**: Skapa en underdomän och använd CNAME för att peka på Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS. [Läs mer om delegering av CNAME-underdomäner](delegate-subdomain.md#cname-subdomain-delegation)
+### Delegera en underdomän till Adobe fullständigt (rekommenderas) {#full-subdomain-delegation}
+
+Med [!DNL Journey Optimizer] kan du delegera dina underdomäner till Adobe helt och hållet direkt från produktgränssnittet. Genom att göra det kan Adobe leverera meddelanden som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer.
+
+<!--The subdomain is fully delegated to Adobe. Adobe is able to control and maintain all aspects of DNS that are required for delivering, rendering and tracking messages.-->
+
+Du kan förlita dig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschstandardkraven för leverans för e-postmarknadsföringsavsändardomäner, samtidigt som du fortsätter att underhålla och kontrollera DNS för dina interna e-postdomäner.
+
+>[!IMPORTANT]
+>
+>Den fullständiga underdomänsdelegeringen är den rekommenderade metoden.
+
+Lär dig hur du delegerar en underdomän till Adobe fullständigt i [det här avsnittet](delegate-subdomain.md#set-up-subdomain).
+
+### Konfigurera en underdomän med CNAME {#cname-subdomain-setup}
+
+Om du har domänspecifika begränsningsprinciper och du vill att Adobe endast ska ha partiell kontroll över DNS, kan du välja att utföra alla DNS-relaterade aktiviteter åt dig.
+
+Med funktionen för konfigurering av CNAME-underdomäner kan du skapa en underdomän och använda CNAME för att peka mot Adobe-specifika poster. Med den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS för att konfigurera miljön för att skicka, återge och spåra e-postmeddelanden.
 
 >[!CAUTION]
 >
->* Den fullständiga underdomänsdelegeringen är den rekommenderade metoden.
+>CNAME-metoden rekommenderas om organisationens principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand.
 >
->* CNAME-metoden rekommenderas om organisationens principer begränsar den fullständiga delegeringsmetoden för underdomäner. På det här sättet måste du behålla och hantera DNS-poster på egen hand. Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats med CNAME-metoden.
+>Adobe kan inte hjälpa till med att ändra, underhålla eller hantera DNS för en underdomän som konfigurerats med CNAME-metoden.
+
+Lär dig hur du skapar en underdomän med CNAME:er för att peka på Adobe-specifika poster i [det här avsnittet](delegate-subdomain.md#cname-subdomain-setup).
+
+## Jämföra konfigurationsmetoderna
 
 Tabellen nedan tillhandahåller en sammanfattning av hur dessa metoder fungerar samt den troliga ansträngningsnivån:
 
 | Konfigurationsmetod | Så fungerar det | Ansträngningsnivå |
 |---|---|---|
 | **Fullständig delegering** | Skapa underdomänen och posten för namnrymden. Adobe konfigurerar sedan alla DNS-poster som krävs för Adobe Campaign.<br/><br/>I den här konfigurationen är Adobe helt ansvarigt för att hantera underdomänen och alla DNS-poster. | Låg |
-| **CNAME och anpassad metod** | Skapa underdomänen och posten för namnrymden. Adobe tillhandahåller sedan de poster som ska placeras i DNS-servrarna och konfigurerar motsvarande värden i Adobe Campaign DNS-servrar.<br/><br/>I den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS:er. | Hög |
+| **CNAME-metod** | Skapa underdomänen och posten för namnrymden. Adobe tillhandahåller sedan de poster som ska placeras i DNS-servrarna och konfigurerar motsvarande värden i Adobe Campaign DNS-servrar.<br/><br/>I den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS:er. | Hög |
 
-Ytterligare information om domänkonfiguration finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html?lang=sv-SE).
+<!--
+| Configuration method | How it works | Level of effort |
+|---|---|---|
+| **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Campaign.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
+| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Campaign DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
+| **Custom delegation method** |  Create the subdomain and namespace record - Adobe will then provide the records to be placed in your DNS servers. Upload the SSL Certificate obtained from the Certificate Authority and complete the Feedback Loop steps by verifying domain ownership and reporting email address.<br/><br/>In this setup, you have full responsibility for maintaining DNS. | Very high |-->
 
-Om du har några frågor om konfigureringsmetoder för subdomäner kan du kontakta Adobe eller så småningom kontakta kundtjänst för att få rådgivning om slutprodukten.
+Ytterligare information om domänkonfiguration finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html){target="_blank"}.
 
-## Åtkomst till delegerade underdomäner {#access-delegated-subdomains}
+Om du har några frågor om konfigureringsmetoder för subdomäner kan du kontakta Adobe eller kontakta kundtjänst för att få rådgivning om slutprodukten.
 
-Alla dina delegerade underdomäner visas på menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]**. Det finns filter som hjälper dig att förfina listan (delegeringsdatum, användare eller status).
-
-![](assets/subdomain-list.png)
-
-Kolumnen **[!UICONTROL Status]** innehåller information om delegeringsprocessen för underdomäner:
-
-* **[!UICONTROL Draft]**: Underdomänsdelegeringen har sparats som ett utkast. Klicka på underdomänens namn för att återuppta delegeringsprocessen,
-* **[!UICONTROL Processing]**: Underdomänen genomgår flera konfigurationskontroller innan den kan användas,
-* **[!UICONTROL Success]**: Underdomänen har gått igenom kontrollerna och kan användas för att leverera meddelanden,
-* **[!UICONTROL Failed]**: En eller flera kontroller misslyckades efter att delegeringen av underdomäner skickades.
-
-Om du vill få tillgång till detaljerad information om en underdomän med statusen **[!UICONTROL Success]** öppnar du den i listan.
-
-![](assets/subdomain-delegated.png)
-
-Du kan:
-
-* Hämta det underdomännamn (skrivskyddat) som konfigurerats under delegeringsprocessen samt de URL:er som genereras (resurser, spegelsidor, spårnings-URL:er),
-
-* Lägg till en TXT-post för webbplatsverifiering från Google i din underdomän för att kontrollera att den är verifierad (se [Lägg till en TXT-post från Google i en underdomän](google-txt.md)).
-
-
->[!CAUTION]
->
->Underdomänskonfigurationen är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.
 
