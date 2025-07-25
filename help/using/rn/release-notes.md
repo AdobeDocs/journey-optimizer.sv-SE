@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 23684c906d11c7f54eb28cac7c2697964e723a2e
+source-git-commit: 1e9aaceb48335beb0c9a8ef037f758818c700dfa
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2342'
 ht-degree: 4%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 4%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Juli 25 förhandsversionsinformation {#25-7-rn}
 
 **Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 29 juli 2025
 
@@ -103,9 +103,12 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <p>Journey Optimizer ger er nu de verktyg ni behöver för att leverera personaliserat och optimerat innehåll till er målgrupp, så att ni kan köra innehållsexperiment, skapa regelbaserad målinriktning och använda avancerade kombinationer av båda för att maximera effektiviteten i era kampanjer.</p>
 <p>Med optimering kan man</p>
 <ul>
-<li>Kör innehållsexperiment</li>
-<li>Utnyttja regler för målinriktning</li>
-<li>Använd avancerade kombinationer av både experiment och målinriktning i en enda kampanj</li></ul>
+<li>Testa olika innehållsvariationer för att identifiera de mest effektiva budskapen.</li>
+<li>Leverera personaliserat innehåll baserat på användarattribut och sammanhangsbaserade data.</li>
+<li>Kombinera målinriktning och experiment för avancerade kampanjstrategier.</li>
+<li>Filtrera bort användare som inte matchar variantvillkor.</li>
+<li>Se till att reservmekanismer upprätthåller användarengagemanget.</li>
+</ul>
 <P>När kampanjen är aktiv utvärderas profiler mot de definierade kriterierna, och baserat på matchningskriterier levereras de med rätt erfarenhet eller innehåll från kampanjen.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
@@ -248,7 +251,7 @@ Förbättringar i den här versionen visas nedan.
 
 **Releasedatum**: 18 juni 2025
 
-<!--See also [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+<!--See also [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#25-06-features}
 
