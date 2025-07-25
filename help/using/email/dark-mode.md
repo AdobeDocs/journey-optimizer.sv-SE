@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Växla till mörkt läge
 description: Lär dig hur du använder mörkt läge i e-post-Designer
+badge: label="Beta" type="Informative"
 feature: Email Design
 topic: Content Management
 role: User
@@ -11,9 +12,9 @@ keywords: mörkt läge, e-post, färg, redigerare
 hide: true
 hidefromtoc: true
 exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
-source-git-commit: 12b41a253693184e4e3d866f00e7d8b0a1e30ce3
+source-git-commit: 23684c906d11c7f54eb28cac7c2697964e723a2e
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1655'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,10 @@ ht-degree: 0%
 >id="ac_edition_darkmode_preview"
 >title="Växla till mörkt läge"
 >abstract="Växla till mörkt läge om du vill förhandsgranska hur det kan återges på e-postklienter som stöds. <br>Varning! Den slutliga återgivningen beror på mottagarens e-postklient. Alla e-postklienter stöder inte anpassat mörkt läge."
+
+>[!AVAILABILITY]
+>
+>Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.
 
 När du utformar dina e-postmeddelanden kan du med [!DNL Journey Optimizer] [Designer](get-started-email-design.md) växla till **[!UICONTROL Dark mode]** där du kan definiera anpassade inställningar. När det mörka läget är aktiverat visas de inställningar som du har definierat för det här läget.
 
@@ -91,9 +96,10 @@ Följ stegen nedan för att öppna det mörka läget i e-postprogrammet Designer
 
 1. Välj alternativet **[!UICONTROL Design from scratch]** på hemsidan för e-post till Designer. [Läs mer](content-from-scratch.md)
 
-   >[!NOTE]
-   >
-   >För närvarande kan du inte växla till mörkt läge om du väljer en [e-postmall](use-email-templates.md) eller om du använder ett [tema](apply-email-themes.md).
+<!--Should work with templates and themes, NOT for LP and fragments - but TBC with eng.
+    >[!NOTE]
+    >
+    >Currently you may not be able to switch to dark mode if you select an [email template](use-email-templates.md) or if you apply a [theme](apply-email-themes.md).-->
 
 1. Lägg till [strukturer](content-from-scratch.md) och [innehållskomponenter](content-components.md) i ditt innehåll.
 
@@ -104,12 +110,8 @@ Följ stegen nedan för att öppna det mörka läget i e-postprogrammet Designer
 1. Standardförhandsvisningen i mörkt läge visas.
 
    ![](assets/dark-mode-default.png)
-<!--
-    >[!NOTE]
-    >
-    >Dark mode applies to all elements, except images and icons.-->
 
-Som standard används färgschemat&quot;Fullfärgsinvertering&quot; för alla element utom bilder och ikoner i förhandsvisningen av Designer i mörkt läge. <!--It fully inverts all colors for all the elements (texts, buttons, etc.)-->
+Som standard används färgschemat&quot;Fullfärgsinvertering&quot; för alla element utom bilder och ikoner i förhandsvisningen av Designer i mörkt läge.
 
 Det innebär att det upptäcker områden med ljusa och mörka element och inverterar dem, så att ljusa bakgrunder blir mörka och mörk text blir ljusa, medan mörka bakgrunder blir ljusa och ljusa text blir mörka.
 
@@ -135,7 +137,7 @@ Journey Optimizer använder <!-- `@media (prefers-color-scheme: dark)` method-->
 
 Följ stegen nedan för att definiera egna inställningar för mörkt läge.
 
-1. Kontrollera att **[!UICONTROL Dark mode]** är aktiverat i e-post-Designer. [Lär dig hur](#preview-dark-mode)
+1. Se till att du växlar till förhandsgranskningen av **[!UICONTROL Dark mode]** i e-post-Designer. [Lär dig hur](#preview-dark-mode)
 
 1. Redigera formatfärgattribut som text, bakgrunder, knapp med mera.
 
