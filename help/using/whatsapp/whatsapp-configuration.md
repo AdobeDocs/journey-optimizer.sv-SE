@@ -9,7 +9,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: d71dfb4f791c48997e448147b414fede49023b91
+source-git-commit: 78da5e017b5e3f39be1b613713f131d35260992b
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 1%
@@ -76,7 +76,7 @@ När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du n
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_inbound_keyword_category"
 >title="Ankommande nyckelordskategori"
->abstract="<br/><b>Opt-In</b>: skickar ditt definierade autosvar när en användare prenumererar. <br/><b>Avanmäl dig</b>: skickar ditt definierade autosvar när en användare avbeställer prenumerationen. <br/><b>Hjälp</b>: skickar det definierade automatiska svaret när en användare begär hjälp eller support. <br/><b>Standard</b>: skickar det automatiska svaret för reservlösningar när inga nyckelord matchar."
+>abstract="<b>Opt-In</b>: skickar ditt definierade autosvar när en användare prenumererar. <br/><b>Avanmäl dig</b>: skickar ditt definierade autosvar när en användare avbeställer prenumerationen. <br/><b>Hjälp</b>: skickar det definierade automatiska svaret när en användare begär hjälp eller support. <br/><b>Standard</b>: skickar det automatiska svaret för reservlösningar när inga nyckelord matchar."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_inbound_keyword"
