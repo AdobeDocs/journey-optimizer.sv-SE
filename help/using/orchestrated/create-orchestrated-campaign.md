@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
-source-git-commit: 68d47250c3239c0da1609367e5ab14f992a8898b
+source-git-commit: 4461d3fdf6e61b7d2593027250dce65bba5fbd77
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Så här skapar du en orkestrerad kampanj:
 
    1. Välj en **[!UICONTROL Merge policy]** för din kampanj.
 
-      I [!DNL Adobe Experience Platform] är varje målgrupp kopplad till en specifik sammanfogningsprincip, som definierar hur profilinformation kombineras för att bilda en sammanfogad profil. När du väljer en sammanfogningsprincip i aktiviteten Läs målgrupp är bara målgrupper som baseras på samma sammanfogningsprincip tillgängliga. Som standard används standardprincipen för sammanfogning, men du kan ändra den om det behövs. Mer information om kopplingsprofiler finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+      I [!DNL Adobe Experience Platform] är varje målgrupp kopplad till en specifik sammanfogningsprincip, som definierar hur profilinformation kombineras för att bilda en sammanfogad profil. När du väljer en sammanfogningsprincip i aktiviteten Läs målgrupp är bara målgrupper som baseras på samma sammanfogningsprincip tillgängliga. Som standard används standardprincipen för sammanfogning, men du kan ändra den om det behövs. Mer information om kopplingsprofiler finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
    1. Använd fältet **[!UICONTROL Tags]** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen i den samordnade kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
 
@@ -107,7 +107,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Date]**: Välj det datum då kampanjen ska köras.
    * **[!UICONTROL Time]**: Välj den tidpunkt då kampanjen ska köras.
 
-   +++
++++
 
    +++Daily
 
@@ -121,7 +121,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Definiera den tid som kampanjen ska köras varje dag.
 
-   +++
++++
 
    +++Flera gånger om dagen
 
@@ -130,7 +130,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Selected hours]**: Välj de tider som kampanjen ska köras och konfigurera den dagliga upprepningen (verkställs varje veckodag eller på vissa dagar).
    * **[!UICONTROL Periodic]**: Välj att köra kampanjen var n minut eller timme. Du kan också definiera tidsintervallet inom dagen när körningar tillåts.
 
-   +++
++++
 
    +++Vecka
 
@@ -141,7 +141,7 @@ Så här konfigurerar du kampanjschemat:
    * **[!UICONTROL Daily recurrence]**: Välj specifika veckodagar för körning (t.ex. varje måndag och torsdag).
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras på valda dagar.
 
-   +++
++++
 
    +++Månad
 
@@ -157,7 +157,7 @@ Så här konfigurerar du kampanjschemat:
 
    * **[!UICONTROL Start time]**: Ange den tid som kampanjen ska köras.
 
-   +++
++++
 
 1. Använd inställningen **[!UICONTROL Validity period]** för att definiera ett specifikt start- och slutdatum, vilket begränsar kampanjens körning till ett tidsbegränsat fönster.
 
