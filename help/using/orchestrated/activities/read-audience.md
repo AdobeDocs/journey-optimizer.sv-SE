@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
-source-git-commit: 2ad659b391515c193418325c34a9dd56133b90d6
+source-git-commit: c040ad5433d041f0f4f83fce46bc02662b77648f
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -61,11 +61,13 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Read audience]**:
 
    ![](../assets/read-audience-2.png)
 
-1. Välj den **[!UICONTROL Entity]** som används för att unikt identifiera profiler i din målgrupp.
+1. Välj en **[!UICONTROL Entity&#x200B;]** från din Campaign-måldimension.
+
+   ➡️ [Följ stegen som beskrivs på den här sidan för att skapa din Campaign Targeting-dimension](../target-dimension.md)
 
    ![](../assets/read-audience-3.png)
 
-1. Välj **[!UICONTROL Add profile attribute]** om du vill berika den valda målgruppen med ytterligare data. Den slutliga publiken innehåller en lista med mottagare, där var och en har berikats med de valda profilattributen.
+1. Välj **[!UICONTROL Add attribute]** om du vill berika den valda målgruppen med ytterligare data. Den slutliga publiken innehåller en lista med mottagare, där var och en har berikats med de valda profilattributen.
 
 1. Välj den **[!UICONTROL Attributes]** som du vill lägga till för din målgrupp.
 

@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
-source-git-commit: 0ae9ed8ba93bd4f64f27380f956e1c97af75dd90
+source-git-commit: c040ad5433d041f0f4f83fce46bc02662b77648f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Save audience]**:
 
 1. Ange en **[!UICONTROL Audience label]** som identifierar den sparade målgruppen.
 
-1. Välj en **[!UICONTROL Profile mapping field &#x200B;]** från din Campaign-måldimension.
+1. Välj en **[!UICONTROL Profile mapping field&#x200B;]** från din Campaign-måldimension.
 
    ➡️ [Följ stegen som beskrivs på den här sidan för att skapa din Campaign Targeting-dimension](../target-dimension.md)
 
@@ -66,7 +66,10 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Save audience]**:
 
 1. Slutför konfigurationen genom att spara och publicera den orkestrerade kampanjen. Detta genererar och lagrar er målgrupp.
 
-Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för målgruppen, som du kommer åt via menyn **[!UICONTROL Audiences]**.
+Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för målgruppen, som du kommer åt via menyn **[!UICONTROL Audiences]**, eller kan väljas när du riktar dig till en målgrupp, till exempel med en **[!UICONTROL Read audience]** -aktivitet.
+
+![](../assets/save-audience-4.png)
+
 
 ## Exempel {#save-audience-example}
 
