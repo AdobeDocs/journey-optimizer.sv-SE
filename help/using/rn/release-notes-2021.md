@@ -78,7 +78,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 </table>
 
 
-Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html){target="_blank"} för fler ändringar.
+Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html?lang=sv-SE){target="_blank"} för fler ändringar.
 
 ### Förbättringar
 
