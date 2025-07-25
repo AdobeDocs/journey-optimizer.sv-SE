@@ -9,9 +9,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: 2d80f72d672f0a8ecb345dbd12ee8864785dca14
+source-git-commit: fa65d30fd55fa7f9392623352ff3c77192cc77dc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '723'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du n
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_inbound_keyword"
 >title="Ange dina nyckelord"
->abstract= "You can define keywords to trigger specific auto-responses, such as for Opt-In, Opt-Out, Help, or Default, based on what users text. Keywords are not case-sensitive, e.g., stop and STOP are treated the same."
+>abstract="Du kan definiera nyckelord för att utlösa specifika automatiska svar, t.ex. för Opt-In, Opt-Out, Help eller Default, baserat på vilken användartext de skriver. Nyckelord är inte skiftlägeskänsliga, t.ex. stoppas och STOP behandlas på samma sätt."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_webhook_url"
