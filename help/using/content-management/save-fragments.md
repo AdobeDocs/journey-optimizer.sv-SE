@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 70e88ea0-f2b0-4c13-8693-619741762429
-source-git-commit: c3513c087a05f2258e00fd4d80fdb23bedfd9188
+source-git-commit: 82b1dd99e13b63a1b19b96211f4410a16dd82a9e
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ När du redigerar innehåll i [!DNL Journey Optimizer] kan du spara hela eller d
 
 >[!NOTE]
 >
->När spårning är aktiverat i en resa eller kampanj spåras länkarna om du lägger till länkar till ett fragment och om det här fragmentet används i ett e-postmeddelande, till exempel alla andra länkar som finns i meddelandet. [Läs mer om länkar och spårning](../email/message-tracking.md)
+>När spårning är aktiverat i en resa eller kampanj spåras länkarna, om det finns länkar i ett sparat fragment och om det här fragmentet används i ett e-postmeddelande, som alla andra länkar i meddelandet. [Läs mer om länkar och spårning](../email/message-tracking.md)
 
 ## Spara som visuellt fragment {#save-as-visual-fragment}
 
