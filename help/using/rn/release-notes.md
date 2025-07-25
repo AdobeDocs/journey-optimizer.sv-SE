@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ffa407c225324b88fae5b8e6fba53343eb629785
+source-git-commit: 4ad1d76d81bf328c9229786ca0ea7594d5580710
 workflow-type: tm+mt
-source-wordcount: '2160'
+source-wordcount: '2246'
 ht-degree: 4%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 4%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Juli 25 förhandsversionsinformation {#25-7-rn}
 
 **Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 29 juli 2025
 
@@ -94,13 +94,14 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
+<th><strong>Innehållsbeslutsaktivitet på resor</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni inkludera personaliserade erbjudanden på era resor genom en dedikerad innehållsbeslutsaktivitet på arbetsytan och använda dem i reseaktiviteter, inklusive villkor och anpassade åtgärder.</p>
+<p>Nu kan ni inkludera personaliserade erbjudanden på era resor genom en särskild innehållsbeslutsaktivitet på arbetsytan och använda dem i reseaktiviteter, inklusive villkor och anpassade åtgärder.</p>
+<img src="assets/do-not-localize/content-decision.gif">
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
@@ -142,6 +143,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tr>
 <td>
 <p>Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live.</p>
+<img src="assets/do-not-localize/DryRun.gif">
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
@@ -159,13 +161,14 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tbody>
 <tr>
 <td>
+<p>Nu finns en kalendervy tillgänglig i rese- och kampanjlistorna. Ni kan visualisera alla resor och kampanjaktiveringar i respektive lista.</p>
 <p>Den här funktionen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer. I den här allmänna tillgänglighetsversionen innehåller funktionen:</p>
 <ul>
 <li>Designförbättringar för navigering i datum</li>
 <li>Möjlighet att se utkast till kampanjer om du har angett ett start- och slutdatum</li>
 <li>En ny inställning som döljer och visar kalenderobjekt som körs länge</li>
 </ul>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<img src="assets/do-not-localize/calendar.gif">
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
 </tr>
@@ -175,12 +178,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <table>
 <thead>
 <tr>
-<th><strong>Kompletterande ID under resor</strong><br/></th>
+<th><strong>Kompletterande ID för resor</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
+<p>Nu kan du utlösa resor med ett profil-ID tillsammans med en annan identifierare, till exempel ett order-ID, ett prenumerations-ID eller ett förskrivnings-ID, vilket gör att samma profil kan finnas på samma resa flera gånger samtidigt. Detta möjliggör scenarier som att hantera flera order eller prenumerationer parallellt, där varje instans följer sin egen väg genom resan.</p>
 <p>Tidigare släppt i Begränsad tillgänglighet är användningen av extra ID:n på resor nu tillgänglig för alla miljöer. I den här allmänna tillgänglighetsversionen har funktionen nu stöd för målgruppsresor för läsning.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
@@ -242,7 +246,7 @@ Förbättringar i den här versionen visas nedan.
 
 **Releasedatum**: 18 juni 2025
 
-<!--See also [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+<!--See also [Adobe Experience Platform Pre Release Notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#25-06-features}
 
