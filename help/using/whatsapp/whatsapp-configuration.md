@@ -9,9 +9,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: fa65d30fd55fa7f9392623352ff3c77192cc77dc
+source-git-commit: 9af09d694f58d169dcf4448562129ed0b37f35df
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '715'
 ht-degree: 1%
 
 ---
@@ -81,11 +81,11 @@ När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du n
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_inbound_keyword"
 >title="Ange dina nyckelord"
->abstract="Du kan definiera nyckelord för att utlösa specifika automatiska svar, t.ex. för Opt-In, Opt-Out, Help eller Default, baserat på vilken användartext de skriver. Nyckelord är inte skiftlägeskänsliga, t.ex. stoppas och STOP behandlas på samma sätt."
+>abstract="Du kan definiera nyckelord för att aktivera specifika automatiska svar baserat på vilken användartext som visas. Nyckelord är inte skiftlägeskänsliga, t.ex. stoppas och STOP behandlas på samma sätt."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_whatsapp_webhook_webhook_url"
->title=" Återanrops-URL"
+>title="Återanrops-URL"
 >abstract="Verifieringsbegäran och webkrok-meddelanden för det här objektet skickas till den angivna URL:en."
 
 >[!CONTEXTUALHELP]
