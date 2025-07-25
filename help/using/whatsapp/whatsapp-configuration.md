@@ -9,9 +9,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: 2e1f77da8354d793a2d3465790f5e4574eb27a14
+source-git-commit: d71dfb4f791c48997e448147b414fede49023b91
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '690'
 ht-degree: 1%
 
 ---
@@ -72,6 +72,26 @@ Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](
 När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du nu skapa en kanalkonfiguration för WhatsApp-meddelanden. [Läs mer](#whatsapp-configuration)
 
 ## Skapa webkrok {#WhatsApp-webhook}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_webhook_inbound_keyword_category"
+>title="Ankommande nyckelordskategori"
+>abstract="<br/><b>Opt-In</b>: skickar ditt definierade autosvar när en användare prenumererar. <br/><b>Avanmäl dig</b>: skickar ditt definierade autosvar när en användare avbeställer prenumerationen. <br/><b>Hjälp</b>: skickar det definierade automatiska svaret när en användare begär hjälp eller support. <br/><b>Standard</b>: skickar det automatiska svaret för reservlösningar när inga nyckelord matchar."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_webhook_inbound_keyword"
+>title="Ange dina nyckelord"
+>abstract= "You can define keywords to trigger specific auto-responses, such as for Opt-In, Opt-Out, Help, or Default, based on what users text. Keywords are not case-sensitive, e.g., "stop" and "STOP" are treated the same."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_webhook_webhook_url"
+>title=" Återanrops-URL"
+>abstract="Verifieringsbegäran och webkrok-meddelanden för det här objektet skickas till den angivna URL:en."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_webhook_verify_token"
+>title="Verifiera token"
+>abstract="Den token som Meta återställer för att bekräfta och verifiera återanrops-URL:en under verifieringsprocessen."
 
 >[!NOTE]
 >
