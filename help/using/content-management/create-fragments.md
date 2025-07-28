@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: 82b1dd99e13b63a1b19b96211f4410a16dd82a9e
+source-git-commit: f8ee42f42849bec199bfa5203dc59112f98de99c
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 1%
@@ -21,13 +21,13 @@ ht-degree: 1%
 >id="ajo_create_visual_fragment"
 >title="Markera den visuella typen"
 >abstract="Skapa ett fristående visuellt fragment för att göra innehållet återanvändbart i ett e-postmeddelande inom en resa eller kampanj, eller i en innehållsmall."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments" text="Lägg till visuella fragment i e-postmeddelanden"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments" text="Lägg till visuella fragment i e-postmeddelanden"
 
 >[!CONTEXTUALHELP]
 >id="ajo_create_expression_fragment"
 >title="Välj uttryckstyp"
 >abstract="Skapa ett fristående uttrycksfragment som gör att innehållet kan återanvändas på flera resor och i flera kampanjer. När du använder personaliseringsredigeraren kan du utnyttja alla uttrycksfragment som har skapats i den aktuella sandlådan."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
 
 Fragment kan skapas från grunden på den vänstra menyn **[!UICONTROL Fragments]**. Dessutom kan du spara en del av befintligt innehåll som fragment när du utformar innehåll. [Lär dig hur](#save-as-fragment)
 
@@ -81,7 +81,7 @@ När du har konfigurerat fragmentets egenskaper öppnas e-post-Designer eller pe
 
 >[!NOTE]
 >
->När spårning är aktiverat i en resa eller kampanj spåras länkarna om du lägger till länkar till ett fragment och om det här fragmentet används i ett e-postmeddelande, till exempel alla andra länkar som finns i meddelandet. [Läs mer om länkar och spårning](../email/message-tracking.md)
+>När spårning är aktiverat i en resa eller kampanj spåras länkarna, om du lägger till länkar till ett fragment och om det här fragmentet används i ett meddelande, till exempel alla andra länkar som finns i meddelandet. [Läs mer om länkar och spårning](../email/message-tracking.md)
 
 När innehållet är klart klickar du på knappen **[!UICONTROL Save]**.
 
