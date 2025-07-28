@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 24c34fd35c03acf8e83bfb8a913ad7e57afd7b7b
+source-git-commit: 3896015ea63a1d25a16744940ffc622b977ff4ce
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -216,9 +216,8 @@ Förbättringar i den här versionen visas nedan.
 
 - **Resor**
    - **Förbättringar av verktygslådan Resesandlåda** - När du kopierar resor över flera sandlådor med hjälp av funktionerna för paketexport och import är nu även följande funktioner tillgängliga:
-      - Välja en befintlig händelse på målet
       - Kopiera över en händelse oberoende av en resa
-      - Identifiera fältgrupps-/datakällrelationer, länka till dem vid målet om de finns, och skapa dem om de inte gör det.
+      - Identifiera händelser, fältgrupper och datakällor och länka dem till målet, om sådana finns, och skapa dem om de inte gör det.
   <!-- [Read more](../FILE.md) -->
 
 - **Kanal - InApp**
