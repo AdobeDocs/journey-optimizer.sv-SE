@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 855c45b5baec50865ac645eae707d5f1a5052b9b
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ När du lägger till aktiviteter är åtgärdsknappar tillgängliga i egenskapsr
 
 ![Ikonen Paus](assets/do-not-localize/activity-pause.svg) ![Ikonen Återuppta](assets/do-not-localize/activity-resume.svg) Pausa/Återuppta aktiviteten. När den orkestrerade kampanjen körs pausas den vid den pausade aktiviteten. Motsvarande uppgift och alla som följer den i samma sökväg körs inte.
 
-    Du kan använda valfri aktivitet på arbetsytan som brytpunkt för att pausa kampanjkörningen. Det innebär att kampanjen endast körs tills den här aktiviteten har pausats. När du pausar körningen håller segmenteringsmotorn temporära data tillgängliga för förhandsgranskning. Du kan välja den inkommande övergången precis före den pausade aktiviteten för att visa de överförda data. Läs mer i det här avsnittet: [Visuell flödesövervakning](../orchestrated/start-monitor-campaigns.md#flow).
+Du kan använda valfri aktivitet på arbetsytan som brytpunkt för att pausa kampanjkörningen. Det innebär att kampanjen endast körs tills den här aktiviteten har pausats. När du pausar körningen håller segmenteringsmotorn temporära data tillgängliga för förhandsgranskning. Du kan välja den inkommande övergången precis före den pausade aktiviteten för att visa de överförda data. Läs mer i det här avsnittet: [Visuell flödesövervakning](../orchestrated/start-monitor-campaigns.md#flow).
 
 ![Kopiera ikon](assets/do-not-localize/activity-copy.svg) Kopiera aktiviteten. [Lär dig hur du kopierar och klistrar in aktiviteter](#copy)
 

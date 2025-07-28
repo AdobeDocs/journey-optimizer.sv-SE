@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 855c45b5baec50865ac645eae707d5f1a5052b9b
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,9 @@ Du kan också köra kampanjen i testläge för att kontrollera dess körning och
 
 Med [!DNL Journey Optimizer] kan du testa samordnade kampanjer innan du publicerar. När en kampanj skapas försätts den i läget **Utkast** som standard. I det här läget kan du köra kampanjen manuellt för att testa flödet.
 
-Alla aktiviteter på arbetsytan körs utom **[!UICONTROL Save audience]** aktiviteter och kanalaktiviteter. Det påverkar inte era data eller er målgrupp.
+>[!IMPORTANT]
+>
+>Alla aktiviteter på arbetsytan körs utom **[!UICONTROL Save audience]** aktiviteter och kanalaktiviteter. Det påverkar inte data eller målgrupper.**
 
 Så här testar du en kampanj:
 
@@ -63,13 +65,19 @@ Under testet kan du styra kampanjkörningen med åtgärdsfältet på arbetsytan.
 
 * **Stoppa** körningen när som helst.
 * **Starta** körningen igen.
-* **Återuppta** körningen om den tidigare pausats på grund av ett problem.
+* **Återuppta** körningen om den tidigare pausats.
 
-Om ett fel eller en varning inträffar under körningen visas ett meddelande via ikonen **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** i verktygsfältet på arbetsytan.
+Ikonen **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** i verktygsfältet på arbetsytan meddelar dig om problem, inklusive varningar som kan visas aktivt före körning och fel som inträffar under eller efter körningen.
 
 ![](assets/campaign-warning.png){zoomable="yes"}
 
 Du kan också snabbt identifiera misslyckade aktiviteter med hjälp av de [visuella statusindikatorerna](#activities) som visas direkt i varje aktivitet. Om du vill ha detaljerad felsökning öppnar du loggarna för [kampanjen](#logs-tasks), som innehåller detaljerad information om felet och dess sammanhang.
+
+<!--WAITING FOR PM's TEST TO UNHIDE
+
+If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities](activities/channels.md)
+
+-->
 
 När kampanjen har validerats kan den publiceras.
 
