@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
@@ -51,12 +51,12 @@ Ni kan använda den här informationen för att segmentera er målgrupp mer exak
 >[!CONTEXTUALHELP]
 >id="ajo_targetdata_personalization_enrichmentdata"
 >title="Anrikningsdata"
->abstract="Välj de data som ska användas för att berika er samordnade kampanj. Du kan välja två typer av anrikningsdata: ett enskilt anrikningsattribut från måldimensionen, eller en samlingslänk, som är en länk med en 1-N-kardinalitet mellan tabellerna."
+>abstract="Välj de data som ska användas för att berika er Orchestrated-kampanj. Du kan välja två typer av anrikningsdata: ett enskilt anrikningsattribut från måldimensionen, eller en samlingslänk, som är en länk med en 1-N-kardinalitet mellan tabellerna."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment_data"
 >title="Anrikningsaktivitet"
->abstract="När data om berikning har lagts till i den orkestrerade kampanjen kan de användas i aktiviteter som lagts till efter Enrichment-aktiviteten för att segmentera kunder i distinkta grupper baserat på deras beteenden, önskemål och behov, eller för att skapa personaliserade marknadsföringsmeddelanden och kampanjer som troligtvis får genklang hos målgruppen."
+>abstract="När berikningsdata har lagts till i den orkestrerade kampanjen kan de användas i aktiviteter som lagts till efter Enrichment-aktiviteten för att segmentera kunder i olika grupper baserat på deras beteenden, önskemål och behov, eller för att skapa personaliserade marknadsföringsmeddelanden och kampanjer som troligtvis får genklang hos målgruppen."
 
 Så här konfigurerar du aktiviteten **Enrichment**:
 
@@ -173,7 +173,7 @@ Follow the steps to configure an **Enrichment** activity with a reconciliation l
 1. Identify the data you want to create a reconciliation link with.
 
     * To create a reconciliation link with data from the Campaign database, select **Database schema** and choose the schema where the target is stored. 
-    * To create a reconciliation link with data coming from the input transition, select **Temporary schema** and choose the orchestrated campaign transition where the target data is stored. 
+    * To create a reconciliation link with data coming from the input transition, select **Temporary schema** and choose the Orchestrated campaign transition where the target data is stored. 
 
 1. The **Label** and **Name** fields are automatically populated based on the selected target schema. You can change their values if necessary.
 
@@ -187,13 +187,13 @@ Follow the steps to configure an **Enrichment** activity with a reconciliation l
 
     * **Advanced join**: Use the query modeler to configure the reconciliation criteria. To do this, click the **Create condition** button then define your reconciliation criteria by building your own rule using AND and OR operations.
 
-The example below shows an orchestrated campaign configured to create a link between Journey Optimizer profiles table and a temporary table generated a **Load file** activity. In this example, the **Enrichment** activity reconciliates both tables using the email address as reconciliation criteria.
+The example below shows an Orchestrated campaign configured to create a link between Journey Optimizer profiles table and a temporary table generated a **Load file** activity. In this example, the **Enrichment** activity reconciliates both tables using the email address as reconciliation criteria.
 
 ![](../assets/enrichment-reconciliation.png)
 
 ### Enrichment with linked data {#link-example}
 
-The example below shows an orchestrated campaign configured to create a link between two transitions. The first transitions targets profile data using a **Query** activity, while the second transition includes purchase data stored into a file loaded through a Load file activity.
+The example below shows an Orchestrated campaign configured to create a link between two transitions. The first transitions targets profile data using a **Query** activity, while the second transition includes purchase data stored into a file loaded through a Load file activity.
 
 ![](../assets/enrichment-uc-link.png)
 
@@ -201,7 +201,7 @@ The example below shows an orchestrated campaign configured to create a link bet
 
     ![](../assets/enrichment-uc-link-purchases.png)
 
-* A second **Enrichment** activity is added in order to enrich data from the orchestrated campaign table with the purchase data coming from the **Load file** activity. This allows us to use those data in further activities, for example, to personalize messages sent to the customers with information on their purchase.
+* A second **Enrichment** activity is added in order to enrich data from the Orchestrated campaign table with the purchase data coming from the **Load file** activity. This allows us to use those data in further activities, for example, to personalize messages sent to the customers with information on their purchase.
 
     ![](../assets/enrichment-uc-link-data.png)
 
@@ -274,7 +274,7 @@ You can now use the offer in the delivery activity.
 
 ### Using the offers from Enrichment activity
 
-Within an orchestrated campaign, if you want to use the offers you get from an enrichment activity in your delivery, follow the steps below:
+Within an Orchestrated campaign, if you want to use the offers you get from an enrichment activity in your delivery, follow the steps below:
 
 1. Open the delivery activity and go in the content edition. Click on **[!UICONTROL Offers settings]** button and select in the drop-down list the **[!UICONTROL Offers space]** corresponding to your offer. 
 If you want to to view only offers from the enrichment activity, set the number of **[!UICONTROL Propositions]** to 0, and save the modifications.

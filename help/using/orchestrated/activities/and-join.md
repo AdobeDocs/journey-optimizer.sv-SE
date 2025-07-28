@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använda aktiviteten OCH-join
-description: Lär dig använda AND-join-aktiviteten i en iscensatt kampanj
+description: Lär dig använda AND-join-aktiviteten i en orkestrerad kampanj
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_and-join"
 >title="AND-join activity"
->abstract="Med aktiviteten **And-join** kan du synkronisera flera körningsgrenar för en orkestrerad kampanj. Den aktiveras när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter är slutförda innan du fortsätter att köra den orkestrerade kampanjen."
+>abstract="Med aktiviteten **And-join** kan du synkronisera flera körningsgrenar för en Orchestrated-kampanj. Den aktiveras när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter är slutförda innan du fortsätter att köra den Orchestrated-kampanjen."
 
 
 +++ Innehållsförteckning
@@ -42,9 +42,9 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
-Aktiviteten **[!UICONTROL And-join]** är en **[!UICONTROL Flow control]**-aktivitet. Det gör att ni kan synkronisera flera körningsgrenar för en orkestrerad kampanj.
+Aktiviteten **[!UICONTROL And-join]** är en **[!UICONTROL Flow control]**-aktivitet. Med den kan ni synkronisera flera körningsgrenar för en orchestrerad-kampanj.
 
-Den här aktiviteten utlöser endast den utgående övergången när alla inkommande övergångar har aktiverats, det vill säga när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter har slutförts innan du fortsätter att köra den orkestrerade kampanjen.
+Den här aktiviteten utlöser endast den utgående övergången när alla inkommande övergångar har aktiverats, det vill säga när alla föregående aktiviteter har slutförts. På så sätt kan du se till att vissa aktiviteter har slutförts innan du fortsätter att köra den Orchestrated-kampanjen.
 
 ## Konfigurera aktiviteten Och-join{#and-join-configuration}
 

@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: 855c45b5baec50865ac645eae707d5f1a5052b9b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_email"
 >title="E-postaktivitet"
->abstract="Med e-postaktiviteten kan du skicka e-postmeddelanden inom din samordnade kampanj, både för engångs- och återkommande meddelanden. Den automatiserar processen för att skicka e-post till ett mål som beräknas inom samma samordnade kampanj. Ni kan kombinera kanalaktiviteter till en kampanjarbetsyta i flera steg för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
+>abstract="Med e-postaktiviteten kan du skicka e-postmeddelanden i din samordnade kampanj, både för engångs- och återkommande meddelanden. Den automatiserar processen för att skicka e-post till ett mål som beräknas inom samma samordnade kampanj. Ni kan kombinera kanalaktiviteter till en kampanjarbetsyta i flera steg för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_sms"
@@ -29,7 +29,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push"
 >title="Push-aktivitet"
->abstract="Med aktiviteten Push kan du skicka push-meddelanden som en del av din samordnade kampanj. Det gör det möjligt att leverera både engångskampanjer och återkommande samordnade kampanjer, och automatisera sändning av push-meddelanden till ett fördefinierat mål inom samma samordnade kampanj. Ni kan kombinera kanalaktiviteter i kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
+>abstract="Med aktiviteten Push kan du skicka push-meddelanden som en del av din orkestrerade kampanj. Det gör det möjligt att leverera både engångskampanjer och återkommande samordnade kampanjer, och automatisera sändning av push-meddelanden till ett fördefinierat mål inom samma samordnade kampanj. Ni kan kombinera kanalaktiviteter i kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
 
 <!--
 UNUSED IDs in BJ
@@ -37,19 +37,19 @@ UNUSED IDs in BJ
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push_ios"
 >title="Push iOS activity"
->abstract="The Push iOS activity let you send iOS Push notifications as part of your orchestrated campaign. It enables the delivery of both one-time and recurring orchestrated campaigns, automating the sending iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Push iOS activity let you send iOS Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring Orchestrated campaigns, automating the sending iOS Push notifications to a predefined target within the same workflow. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_push_android"
 >title="Push Android activity"
->abstract="The Push Android activity ket you send Android Push notifications as part of your orchestrated campaign. It enables the delivery of both one-time and recurring messages, automating the sending Android Push notifications to a predefined target within the same orchestrated campaign. You can combine channel activities into the orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
+>abstract="The Push Android activity ket you send Android Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring messages, automating the sending Android Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
 -->
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_directmail"
 >title="Aktivitet för direktreklam"
->abstract="Med aktiviteten Direktutskick blir det lättare att skicka direktreklam inom ramen för den orkestrerade kampanjen, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den samordnade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
+>abstract="Aktiviteten Direktutskick underlättar direktutskick inom din samordnade kampanj, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
 
 
 +++ Innehållsförteckning
@@ -72,7 +72,7 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
-Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra marknadsföringskampanjer över flera kanaler - e-post, SMS och push-meddelanden. Ni kan kombinera de här kanalaktiviteterna i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende och data.
+Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra marknadsföringskampanjer över flera kanaler - e-post, SMS och push-meddelanden. Ni kan kombinera dessa kanalaktiviteter i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende och data.
 
 Exempel:
 * Skicka en välkomstserie via e-post, SMS och push.
@@ -117,7 +117,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
 1. **Aktivera läget Snabb leverans** (push)
 
-   Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+   Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 1. **Skapa ett innehållsexperiment**
 
@@ -143,17 +143,17 @@ Växla till fliken **[!UICONTROL Content]** för att skapa meddelandet. Stegen v
 
 ## Lägg till personalisering
 
-Personalization i samordnade kampanjer fungerar ungefär som andra **[!UICONTROL Journey Optimizer]**-kampanjer eller resor, men med några viktiga skillnader som är specifika för den orkestrerade arbetsytan.
+Personalization i samordnade kampanjer fungerar på ungefär samma sätt som andra **[!UICONTROL Journey Optimizer]**-kampanjer eller resor, men med några viktiga skillnader som är specifika för den orkestrerade arbetsytan.
 
-När du öppnar personaliseringsredigeraren från en orchestrerad kampanj innehåller två huvudmappar tillgängliga attribut för personalisering som anges nedan.
+När du öppnar personaliseringsredigeraren från en Orchestrated-kampanj innehåller två huvudmappar tillgängliga attribut för personalisering som anges nedan.
 
 * **[!UICONTROL Profile attributes]**
 
   Den här mappen innehåller alla profilrelaterade data från [!DNL Adobe Experience Platform]. Det här är standardattribut som namn, e-postadress, plats eller andra egenskaper som har hämtats i användarprofilen.
 
-* **[!UICONTROL Target attributes]** (gäller endast samordnade kampanjer)
+* **[!UICONTROL Target attributes]** (specifikt för Orchestrated-kampanjer)
 
-  Den här mappen är unik för samordnade kampanjer. Den innehåller attribut som beräknas direkt i kampanjarbetsytan. Den innehåller två undermappar:
+  Den här mappen är unik för Orchestrated-kampanjer. Den innehåller attribut som beräknas direkt i kampanjarbetsytan. Den innehåller två undermappar:
 
    * **`<Targeting dimension>`** (t.ex. &quot;Mottagare&quot;, &quot;Inköp&quot;): Innehåller alla attribut som är relaterade till den dimension som kampanjen riktar sig till.
 
@@ -173,14 +173,14 @@ Once the content is created, use the **[!UICONTROL Simulate Content]** button to
 
 ## Nästa steg {#next}
 
-När meddelandeinnehållet är klart går du tillbaka till den orkestrerade kampanjen med pilen **[!UICONTROL Back]**. Du kan sedan slutföra aktivitetssamordningen på arbetsytan och publicera kampanjen för att börja skicka meddelanden. [Lär dig hur du startar och övervakar samordnade kampanjer](../start-monitor-campaigns.md)
+När meddelandeinnehållet är klart går du tillbaka till din Orchestrated-kampanj med pilen **[!UICONTROL Back]**. Du kan sedan slutföra aktivitetssamordningen på arbetsytan och publicera kampanjen för att börja skicka meddelanden. [Lär dig hur du startar och övervakar orkestrerade kampanjer](../start-monitor-campaigns.md)
 
 ![bild som visar bakåtknappen](../assets/channel-back.png)
 
 <!--
 ## Examples {#cross-channel-workflow-sample}
 
-Here is a cross-channel orchestrated campaign example with a segmentation and two deliveries. The orchestrated campaign targets all customers who live in Paris and who are interested in coffee machines. Among this population, an email is sent to the regular customers and an SMS is sent to the VIP clients.
+Here is a cross-channel Orchestrated campaign example with a segmentation and two deliveries. The Orchestrated campaign targets all customers who live in Paris and who are interested in coffee machines. Among this population, an email is sent to the regular customers and an SMS is sent to the VIP clients.
 
 ![](../assets/workflow-channel-example.png)
 
@@ -194,7 +194,7 @@ The Email delivery activity allows you to configure the sending an email in a wo
 
 -->
 
-<!--You can also create a recurring orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
+<!--You can also create a recurring Orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
 
 ![](../assets/workflow-channel-example2.png)-->
 

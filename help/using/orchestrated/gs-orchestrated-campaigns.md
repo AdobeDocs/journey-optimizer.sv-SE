@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 0d6e3c082032b11b38f7d4b67da1e38756b5f101
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"
 >title="campaign_overview_orchestrated"
->abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/> <b>Utnyttja data för flera enheter</b><br/>Lär dig hur samordnade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt antal</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden, direktreklam"
+>abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/> <b>Utnyttja data för flera enheter</b><br/>Lär dig hur orkestrerade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt antal</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden, direktreklam"
 
 +++ Innehållsförteckning
 
 | Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
 |---|---|---|---|
-| <b>[Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)</b><br/><br/>Skapa och hantera relationsscheman och datauppsättningar:</br> <ul><li>[Kom igång med scheman och datauppsättningar](gs-schemas.md)</li><li>[Manuellt schema](manual-schema.md)</li><li>[Filöverföringsschema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md)<br/><br/>[Viktiga steg för att skapa en strukturerad kampanj](gs-campaign-creation.md) | [Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Bygg din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md)<br/><br/>[Återmarknadsföring](retarget.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[And-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kanalaktiviteter](activities/channels.md) - [Kombinera](activities/combine.md) - [Deduplicering](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md)  - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
+| <b>[Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)</b><br/><br/>Skapa och hantera relationsscheman och datauppsättningar:</br> <ul><li>[Kom igång med scheman och datauppsättningar](gs-schemas.md)</li><li>[Manuellt schema](manual-schema.md)</li><li>[Filöverföringsschema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md)<br/><br/>[Viktiga steg för att skapa en orkestrerad kampanj](gs-campaign-creation.md) | [Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Bygg din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md)<br/><br/>[Återmarknadsföring](retarget.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[And-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kanalaktiviteter](activities/channels.md) - [Kombinera](activities/combine.md) - [Deduplicering](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md)  - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
 
 {style="table-layout:fixed"}
 
@@ -65,7 +65,7 @@ Stöd för sändning på flera nivåer, där ett meddelande skickas per profil o
 
 ## Samordnade kampanjer och resor
 
-Även om visualiseringen av samordnade kampanjer liknar resor, löser den olika syften och användningsområden:
+Även om visualiseringen av orkestrerade kampanjer liknar resor, löser den olika syften och användningsområden:
 
 * **Resor** - 1 till 1 arbetsyta där varje profil förflyttar sig genom de olika stegen i sin egen takt. Tillståndet för varje kund upprätthålls i sitt sammanhang för att aktivera realtidsåtgärder.
 

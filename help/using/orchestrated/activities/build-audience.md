@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_build_audience"
 >title="Bygg målgruppsaktivitet"
->abstract="Med aktiviteten **Skapa målgrupp** kan du definiera målgruppen som ska gå in i den orkestrerade kampanjen. När du skickar meddelanden i samband med en orkestrerad kampanj definieras inte meddelandemålgruppen i kanalaktiviteten, utan i en **Build-målgruppsaktivitet**."
+>abstract="Med aktiviteten **Skapa målgrupp** kan du definiera målgruppen som ska delta i den Orchestrerade kampanjen. När du skickar meddelanden i samband med en orkestrerad kampanj definieras inte meddelandemålgruppen i kanalaktiviteten, utan i en **Build-målgruppsaktivitet**."
 
 +++ Innehållsförteckning
 
@@ -73,6 +73,6 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Build audience]**:
 
 ## Exempel{#build-audience-examples}
 
-Här är ett exempel på en orkestrerad kampanj med två **[!UICONTROL Build audience]**-aktiviteter. Den första målprofilen som innehåller artiklar i kundvagnen, följt av en e-postleverans. Den andra inriktar sig på profiler med en önskelista, följt av en SMS-leverans.
+Här är ett exempel på en Orchestrated-kampanj med två **[!UICONTROL Build audience]**-aktiviteter. Den första målprofilen som innehåller artiklar i kundvagnen, följt av en e-postleverans. Den andra inriktar sig på profiler med en önskelista, följt av en SMS-leverans.
 
 ![](../assets/build-audience-2.png)

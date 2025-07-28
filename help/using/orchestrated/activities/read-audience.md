@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
-source-git-commit: 0abe441a413b748b46379871f3b70842715921a3
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_read_audience"
 >title="Bygg målgruppsaktivitet"
->abstract="Med aktiviteten **Läsa målgrupp** kan du välja målgrupp som ska ingå i den orkestrerade kampanjen. Publiken kan vara en befintlig Adobe Experience Platform-publik eller en publik som hämtats från en CSV-fil. När du skickar meddelanden i samband med en orkestrerad kampanj definieras inte meddelandemålgruppen i kanalaktiviteten, utan i en **Läs målgrupp** eller en **Bygg målgruppsaktivitet** ."
+>abstract="Med aktiviteten **Läsa målgrupp** kan du välja målgrupp som ska ingå i den Orchestrated-kampanjen. Publiken kan vara en befintlig Adobe Experience Platform-publik eller en publik som hämtats från en CSV-fil. När du skickar meddelanden i samband med en orkestrerad kampanj definieras inte meddelandemålgruppen i kanalaktiviteten, utan i en **läsmålgrupp** eller en **bygg målgruppsaktivitet** ."
 
 
 +++ Innehållsförteckning
@@ -44,7 +44,7 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
-Med aktiviteten **[!UICONTROL Read audience]** kan du hämta en befintlig målgrupp - som tidigare har sparats eller importerats - och återanvända den i en orkestrerad kampanj. Den här aktiviteten är särskilt användbar när du vill ha en fördefinierad uppsättning profiler som mål utan att behöva utföra en ny segmenteringsprocess.
+Med aktiviteten **[!UICONTROL Read audience]** kan du hämta en befintlig publik - som tidigare har sparats eller importerats - och återanvända den i en orchestrerad-kampanj. Den här aktiviteten är särskilt användbar när du vill ha en fördefinierad uppsättning profiler som mål utan att behöva utföra en ny segmenteringsprocess.
 
 När målgruppen har lästs in kan du förfina den genom att välja ett unikt identitetsfält och berika målgruppen med ytterligare profilattribut för målinriktning, personalisering eller rapportering.
 
@@ -52,13 +52,13 @@ När målgruppen har lästs in kan du förfina den genom att välja ett unikt id
 
 Så här konfigurerar du aktiviteten **[!UICONTROL Read audience]**:
 
-1. Lägg till en **[!UICONTROL Read audience]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **[!UICONTROL Read audience]**-aktivitet i din Orchestrated-kampanj.
 
    ![](../assets/read-audience-1.png)
 
 1. Ange en **[!UICONTROL Label]** till din aktivitet.
 
-1. Klicka på ![mappsökningsikonen](../assets/do-not-localize/folder-search.svg) för att välja den målgrupp du vill ha för din samordnade kampanj.
+1. Klicka på ![mappsökningsikonen](../assets/do-not-localize/folder-search.svg) för att välja den målgrupp du vill ha för din Orchestrated-kampanj.
 
    ![](../assets/read-audience-2.png)
 

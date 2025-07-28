@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd aktiviteten Testa i orkestrerade kampanjer
+title: Använd aktiviteten Test i orkestrerade kampanjer
 description: Lär dig använda aktiviteten Testa
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_test_conditions"
 >title="Villkor"
->abstract="Aktiviteten **Test** kan ha flera utdataövergångar. Under genomförande av samordnade kampanjer testas varje villkor sekventiellt tills ett av dem uppfylls. Om inget av villkoren uppfylls fortsätter den orkestrerade kampanjen längs sökvägen för **[!UICONTROL Default condition]**. Om inget standardvillkor aktiveras stoppas den orkestrerade kampanjen nu."
+>abstract="Aktiviteten **Test** kan ha flera utdataövergångar. Under körningen av orkestrerade kampanjer testas varje villkor sekventiellt tills ett av dem uppfylls. Om inget av villkoren uppfylls fortsätter den orkestrerade kampanjen längs sökvägen för **[!UICONTROL Default condition]**. Om inget standardvillkor aktiveras stoppas den orkestrerade kampanjen nu."
 
 +++ Innehållsförteckning
 
@@ -52,19 +52,19 @@ Aktiviteten **[!UICONTROL Test]** är en **[!UICONTROL Flow control]**-aktivitet
 
 Så här konfigurerar du aktiviteten **[!UICONTROL Test]**:
 
-1. Lägg till en **[!UICONTROL Test]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **[!UICONTROL Test]**-aktivitet i din Orchestrated-kampanj.
 
 1. Som standard visar aktiviteten **[!UICONTROL Test]** ett enkelt booleskt test. Om villkoret som definieras i övergången &quot;Sant&quot; är uppfyllt aktiveras den här övergången. Annars aktiveras standardövergången &quot;Falskt&quot;.
 
 1. Klicka på ikonen **[!UICONTROL Open personalization dialog]** om du vill konfigurera villkoret som är kopplat till en övergång. Använd uttrycksredigeraren för att definiera de regler som krävs för att aktivera den här övergången. Du kan också utnyttja händelsevariabler, villkor och datum/tid-funktioner.
 
-   Du kan dessutom ändra fältet **[!UICONTROL Label]** för att anpassa övergångens namn på den orkestrerade kampanjarbetsytan.
+   Du kan dessutom ändra fältet **[!UICONTROL Label]** för att anpassa övergångens namn på arbetsytan för den orkestrerade kampanjen.
 
    ![](../assets/workflow-test-default.png)
 
 1. Du kan lägga till flera utdataövergångar i en **[!UICONTROL Test]**-aktivitet. Det gör du genom att klicka på knappen **[!UICONTROL Add condition]** och konfigurera etiketten och tillhörande villkor för varje övergång.
 v
-1. Under genomförande av samordnade kampanjer testas varje villkor sekventiellt tills ett av dem uppfylls. Om inga villkor uppfylls fortsätter de orkestrerade kampanjerna längs sökvägen för **[!UICONTROL Default condition]**. Om inget standardvillkor är aktiverat stoppas arbetsflödena nu.
+1. Under körningen av orkestrerade kampanjer testas varje villkor sekventiellt tills ett av dem uppfylls. Om inget av villkoren uppfylls fortsätter de orkestrerade kampanjerna längs sökvägen för **[!UICONTROL Default condition]**. Om inget standardvillkor är aktiverat stoppas arbetsflödena nu.
 
 ## Exempel {#example}
 

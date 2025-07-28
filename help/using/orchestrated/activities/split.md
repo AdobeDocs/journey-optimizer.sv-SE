@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använda aktiviteten Dela
-description: Lär dig hur du använder aktiviteten Dela i en iscensatt kampanj
+description: Lär dig hur du använder aktiviteten Dela i en orkestrerad kampanj
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Aktiviteten **[!UICONTROL Split]** är en **[!UICONTROL Targeting]**-aktivitet s
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_segments"
 >title="Segment för delad aktivitet"
->abstract="Lägg till så många delmängder som du vill för att segmentera den inkommande populationen.<br/></br>När aktiviteten **Dela** körs segmenteras populationen mellan de olika delmängderna i den ordning som de läggs till i aktiviteten. Innan du påbörjar din samordnade kampanj måste du se till att du har beställt delmängderna i den ordning som passar dina behov med pilknapparna."
+>abstract="Lägg till så många delmängder som du vill för att segmentera den inkommande populationen.<br/></br>När aktiviteten **Dela** körs segmenteras populationen mellan de olika delmängderna i den ordning som de läggs till i aktiviteten. Innan du påbörjar en Orchestrated-kampanj måste du se till att du har beställt delmängderna i den ordning som passar dina behov med pilknapparna."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_filter"
@@ -89,7 +89,7 @@ Aktiviteten **[!UICONTROL Split]** är en **[!UICONTROL Targeting]**-aktivitet s
 
 Så här konfigurerar du aktiviteten **[!UICONTROL Split]**:
 
-1. Lägg till en **[!UICONTROL Split]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **[!UICONTROL Split]**-aktivitet i din Orchestrated-kampanj.
 
 1. Aktivitetskonfigurationsrutan öppnas med en standarddelmängd. Klicka på knappen **[!UICONTROL Add segment]** om du vill lägga till så många delmängder som behövs för att segmentera den inkommande populationen.
 
@@ -99,7 +99,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Split]**:
    >
    >**Dela**-aktiviteten bearbetar delmängder i den ordning som de läggs till. Om den första delmängden till exempel tar 70 % av populationen tillämpas nästa på de återstående 30 %.
    >
-   >Innan du kör en orkestrerad kampanj måste du se till att delmängderna är beställda på rätt sätt. Använd pilknapparna för att justera deras placering.
+   >Innan du kör din Orchestrated-kampanj måste du se till att delmängderna är beställda på rätt sätt. Använd pilknapparna för att justera deras placering.
 
 1. När deluppsättningar har lagts till visar aktiviteten så många utdataövergångar som det finns deluppsättningar. Vi rekommenderar starkt att du ändrar etiketten för varje delmängd för att enkelt identifiera dem i den orkestrerade kampanjarbetsytan.
 
