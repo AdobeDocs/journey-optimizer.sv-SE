@@ -9,9 +9,9 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
-source-git-commit: 4aaef970b76002c72e3c28f55078d96fdc3cd882
+source-git-commit: c90189d4b064e00bd2f2bdde67230aeb84dd97f6
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1585'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Du kan kopiera objekt som resor, anpassade åtgärder, innehållsmallar eller fragment över flera sandlådor med hjälp av funktioner för paketexport och -import. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
 
-Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=sv-SE).
+Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i Adobe Experience Platform [Handbok för sandlådeverktyg](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
 
 >[!NOTE]
 >
@@ -28,12 +28,13 @@ Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. 
 
 Kopieringsprocessen utförs via en paketexport och import mellan käll- och målsandlådorna. Här är de allmänna stegen för att kopiera en resa från en sandlåda till en annan:
 
-1. Lägg till objektet som ska exporteras som ett paket i källsandlådan.
-1. Exportera paketet till målsandlådan.
+1. [Lägg till objektet som ska exporteras som ett paket i källsandlådan](#export)
+1. [Publicera paketet](#publish)
+1. [Importera paketet i målsandlådan](#import)
 
 ## Exporterade objekt och bästa praxis {#objects}
 
-Journey Optimizer tillåter export av resor, anpassade åtgärder, innehållsmallar och fragment till en annan sandlåda. I följande avsnitt finns information och metodtips för varje typ av objekt.
+Journey Optimizer tillåter export av resor, anpassade åtgärder, innehållsmallar, fragment och andra objekt till en annan sandlåda. I följande avsnitt finns information och metodtips för varje typ av objekt.
 
 ### Allmän bästa praxis {#global}
 
@@ -43,26 +44,34 @@ Journey Optimizer tillåter export av resor, anpassade åtgärder, innehållsmal
 
 * Landningssidor stöds för närvarande inte för migrering mellan sandlådor. När du kopierar en resa till en annan sandlåda, kommer alla referenser till landningssidor under resan eller e-postinnehåll fortfarande att peka mot den ursprungliga (källan) sandlådesidans ID. Efter migreringen måste du manuellt uppdatera alla referenser till landningssidor under din resa och e-postinnehåll för att använda rätt ID för landningssidor från målsandlådan. Se [Skapa och publicera landningssidor](../landing-pages/create-lp.md).
 
++++ Resor
 
-### Resor {#journeys}
+* **Kopierade beroenden** - När du exporterar en resa, förutom själva resan, kopierar Journey Optimizer även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i Adobe Experience Platform [verktygsguide för sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
 
-* När du exporterar en resa kopierar Journey Optimizer, förutom själva resan, även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i [avsnittet](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=sv-SE#abobe-journey-optimizer-objects).
+* **Manuell validering rekommenderas** - Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll, till exempel innan du publicerar en resa. På så sätt kan du identifiera eventuella saknade objekt.
 
-* Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll, till exempel innan du publicerar en resa. På så sätt kan du identifiera eventuella saknade objekt.
+* **Utkastläge och unikhet** - De kopierade objekten i målsandlådan är unika och det finns ingen risk för att befintliga element skrivs över. Både resan och alla meddelanden under resan överförs i utkastläge. På så sätt kan du utföra en grundlig validering innan den publiceras i målsandlådan.
 
-* De kopierade objekten i målsandlådan är unika och det finns ingen risk för att befintliga element skrivs över. Både resan och alla meddelanden under resan överförs i utkastläge. På så sätt kan du utföra en grundlig validering innan den publiceras i målsandlådan.
+* **Metadata** - Kopieringsprocessen kopierar bara över metadata om resan och objekten i den resan. Inga profil- eller datauppsättningsdata kopieras som en del av den här processen.
 
-* Kopieringsprocessen kopierar bara metadata om resan och objekten i den resan. Inga profil- eller datauppsättningsdata kopieras som en del av den här processen.
+* **Anpassade åtgärder**
 
-### Anpassade åtgärder {#custom-actions}
+   * När du exporterar anpassade åtgärder kopieras URL-konfigurationen och nyttolastparametrarna. Av säkerhetsskäl kopieras inte autentiseringsparametrar över och ersätts istället av INSERT SECRET HERE. Parametervärden för en konstant begäran och frågeparametrar ersätts också med INSERT SECRET HERE.
 
-* När du exporterar anpassade åtgärder kopieras URL-konfigurationen och nyttolastparametrarna. Av säkerhetsskäl kopieras inte autentiseringsparametrar över och ersätts istället av INSERT SECRET HERE. Parametervärden för en konstant begäran och frågeparametrar ersätts också med INSERT SECRET HERE.
+     Detta inkluderar anpassade specialåtgärder ([!DNL Adobe Campaign Standard], [!DNL Campaign Classic], [!DNL Marketo Engage]).
 
-  Detta inkluderar anpassade specialåtgärder ([!DNL Adobe Campaign Standard], [!DNL Campaign Classic], [!DNL Marketo Engage]).
+   * När du kopierar en resa till en annan sandlåda och väljer &quot;använd befintlig&quot; för en anpassad åtgärd under importprocessen, måste den befintliga anpassade åtgärden du väljer vara densamma som den anpassade källåtgärden (d.v.s. samma konfiguration, parametrar osv.). Annars kommer den nya kopian att innehålla fel som inte kan lösas på arbetsytan.
 
-* När du kopierar en resa till en annan sandlåda och väljer &quot;använd befintlig&quot; för en anpassad åtgärd under importprocessen, måste den befintliga anpassade åtgärden du väljer vara densamma som den anpassade källåtgärden (d.v.s. samma konfiguration, parametrar osv.). Annars kommer den nya kopian att innehålla fel som inte kan lösas på arbetsytan.
+<!--* **Data sources, field groups and events** - When copying a journey that uses events, data sources, or field groups, the import process automatically checks whether components with the same name and type already exist in the target sandbox.
 
-### Kampanjer {#campaigns}
+   * If a match is found, the existing components in the target sandbox are reused by the imported journey.
+   * If no match is found, the system creates new components.
+
+   This ensures that journeys relying on these elements remain functional after import, with minimal manual adjustment.
+-->
++++
+
++++ Kampanjer
 
 Kampanjer kopieras tillsammans med alla objekt som hör till profilen, målgruppen, schemat, textbundna meddelanden och beroende objekt. Följande objekt kopieras **inte**:
 
@@ -77,15 +86,9 @@ När du kopierar kampanjer måste du se till att objektet som listas nedan valid
 * **Experimentationsvarianter och inställningar**: Experimentella varianter och inställningar ingår i kampanjkopieringsprocessen. Validera dessa inställningar i målsandlådan efter importen.
 * **Enhetligt beslutsfattande**: Beslutsprinciper och beslutsobjekt stöds för export och import. Kontrollera att beslutsrelaterade beroenden mappas korrekt i målsandlådan.
 
-### Innehållsmallar {#content-templates}
++++
 
-* När du exporterar en innehållsmall kopieras även alla kapslade fragment tillsammans med den.
-
-* När du exporterar innehållsmallar kan det ibland leda till fragmentduplicering. Om till exempel två mallar delar samma fragment och kopieras i separata paket, måste båda mallarna återanvända samma fragment i målsandlådan. Om du vill undvika duplicering väljer du alternativet &quot;Använd befintlig&quot; under importprocessen. [Lär dig hur du importerar ett paket](#import)
-
-* Du bör exportera innehållsmallar i ett och samma paket för att undvika dubbletter. På så sätt kan systemet hantera borttagning av dubbletter effektivt.
-
-### Beslut {#decisioning}
++++ Beslut
 
 * Objekten nedan måste finnas i målsandlådan innan du kopierar beslutsobjekt:
 
@@ -95,15 +98,41 @@ När du kopierar kampanjer måste du se till att objektet som listas nedan valid
 
 * Sandlådekopiering för rankningsformler med AI-modeller stöds för närvarande inte.
 
+* När du kopierar en kampanj kopieras inte beslutsartiklar (erbjudandeartiklar) automatiskt. Se till att du kopierar dem individuellt med alternativet Lägg till i paket.
+
+* Om en beslutspolicy har en urvalsstrategi måste beslutsposter läggas till separat. Om den har manuella/reservbeslutsobjekt läggs de till automatiskt som direkta beroenden.
+
 * När du kopierar beslutsenheter måste du kopiera beslutsobjekt **före** andra objekt. Om du till exempel kopierar en samling först och det inte finns några erbjudanden i den nya sandlådan, kommer den nya samlingen att förbli tom.
 
-### Fragment {#fragments}
+* När du kopierar entiteter med beroenden (t.ex. schema, segment) klickar du på Skapa ny mot entiteten för att avmarkera den och visa alternativet Använd befintlig för beroende artefakter. Ytterligare beroenden kan kräva att du upprepar det här steget längre ned i hierarkin.
+
+  Exempel: Om du vill återanvända ett datastream-schema i en regel när du importerar en kampanj klickar du på&quot;Skapa nytt&quot; mot DeciIONING_STRATEGY och sedan igen på Decision_Rules, för att visa alternativet&quot;Använd befintlig&quot; för datastream-schemat.
+
+* För enheter som är beroende av ett datastream-kontextschema måste du se till att datastream skapas i förväg och välja ett befintligt schema för det datastream-objektet.
+
+* Om du klickar direkt på Slutför när du importerar skapas alla beroenden på nytt.
+
++++
+
++++ Innehållsmallar
+
+* När du exporterar en innehållsmall kopieras även alla kapslade fragment tillsammans med den.
+
+* När du exporterar innehållsmallar kan det ibland leda till fragmentduplicering. Om till exempel två mallar delar samma fragment och kopieras i separata paket, måste båda mallarna återanvända samma fragment i målsandlådan. Om du vill undvika duplicering väljer du alternativet &quot;Använd befintlig&quot; under importprocessen. [Lär dig hur du importerar ett paket](#import)
+
+* Du bör exportera innehållsmallar i ett och samma paket för att undvika dubbletter. På så sätt kan systemet hantera borttagning av dubbletter effektivt.
+
++++
+
++++ Fragment
 
 * Fragment kan ha flera statusar, till exempel Live, Utkast och Live med pågående utkast. När du exporterar ett fragment kopieras dess senaste utkastläge till målsandlådan.
 
 * När du exporterar ett fragment kopieras även alla kapslade fragment tillsammans med det.
 
-## Lägga till objekt som ett paket{#export}
++++
+
+## Lägga till objekt som ett paket {#export}
 
 Om du vill kopiera objekt till en annan sandlåda måste du först lägga till dem som ett paket i källsandlådan. Följ de här stegen:
 
@@ -119,10 +148,6 @@ Om du vill kopiera objekt till en annan sandlåda måste du först lägga till d
    * **Skapa ett nytt paket**: skriv paketnamnet. Du kan också lägga till en beskrivning.
 
 1. Upprepa de här stegen för att lägga till alla objekt som du vill exportera med paketet.
-
->[!NOTE]
->
->Vid export av resor kopierar Journey Optimizer även merparten av de objekt som resan är beroende av: målgrupper, scheman, händelser och handlingar. Mer information om reseexport finns i [det här avsnittet](../building-journeys/copy-to-sandbox.md).
 
 ## Publicera paketet som ska exporteras {#publish}
 
