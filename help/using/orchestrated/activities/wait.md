@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd aktiviteten Vänta i samordnade kampanjer
-description: Lär dig hur du använder aktiviteten Vänta i samordnade kampanjer
+title: Använd aktiviteten Vänta i orkestrerade kampanjer
+description: Lär dig hur du använder aktiviteten Vänta i orkestrerade kampanjer
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 11ef095b-77ec-4e2e-ab4d-49a248354f08
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
-Aktiviteten **[!UICONTROL Wait]** är en **[!UICONTROL Flow control]**-komponent som används för att skapa en fördröjning mellan två aktiviteter i en orkestrerad kampanj. Detta bidrar till att säkerställa att era uppföljningsaktiviteter är bättre tajmade och mer relevanta för användarengagemanget.
+Aktiviteten **[!UICONTROL Wait]** är en **[!UICONTROL Flow control]**-komponent som används för att skapa en fördröjning mellan två aktiviteter i en orchestrerad kampanj. Detta bidrar till att säkerställa att era uppföljningsaktiviteter är bättre tajmade och mer relevanta för användarengagemanget.
 
 Du kan till exempel vänta några dagar efter en e-postleverans för att spåra öppningar och klickningar innan du skickar ett uppföljningsmeddelande.
 
@@ -50,7 +50,7 @@ Du kan till exempel vänta några dagar efter en e-postleverans för att spåra 
 
 Så här konfigurerar du aktiviteten **[!UICONTROL Wait]**:
 
-1. Lägg till en **[!UICONTROL Wait]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **[!UICONTROL Wait]**-aktivitet i din Orchestrated-kampanj.
 
 1. Välj den vänttyp som bäst passar dina behov:
 

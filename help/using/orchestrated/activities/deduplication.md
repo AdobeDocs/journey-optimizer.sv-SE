@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 4aa79448-f75a-48d5-8819-f4cb4baad5c7
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Aktiviteten **[!UICONTROL Deduplication]** är en **[!UICONTROL Targeting]**-akt
 Så här konfigurerar du aktiviteten **[!UICONTROL Deduplication]**:
 
 
-1. Lägg till en **[!UICONTROL Deduplication]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **[!UICONTROL Deduplication]**-aktivitet i din Orchestrated-kampanj.
 
 1. Klicka på knappen **[!UICONTROL Fields to identify duplicates]** i avsnittet **[!UICONTROL Add attribute]** för att ange de fält där identiska värden gör att dubbletter kan identifieras, till exempel e-postadress, förnamn, efternamn osv. I fältordningen kan du ange vilka som ska behandlas först.
 

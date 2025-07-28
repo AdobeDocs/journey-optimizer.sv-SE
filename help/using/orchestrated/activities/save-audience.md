@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Använda aktiviteten Spara målgrupp
-description: Lär dig hur du använder aktiviteten Spara som i en strukturerad kampanj
+description: Lär dig hur du använder aktiviteten Spara målgrupp i en orkestrerad kampanj
 badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
-source-git-commit: 0abe441a413b748b46379871f3b70842715921a3
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
-Aktiviteten **[!UICONTROL Save audience]** är en **[!UICONTROL Targeting]**-aktivitet som används för att skapa en ny målgrupp eller uppdatera en befintlig utifrån den population som skapades tidigare i den orkestrerade kampanjen. När målgruppen har sparats läggs den till i listan över programmålgrupper och blir tillgänglig på menyn **[!UICONTROL Audiences]**.
+Aktiviteten **[!UICONTROL Save audience]** är en **[!UICONTROL Targeting]**-aktivitet som används för att skapa en ny målgrupp eller uppdatera en befintlig utifrån den population som skapades tidigare i den orchestrerade-kampanjen. När målgruppen har sparats läggs den till i listan över programmålgrupper och blir tillgänglig på menyn **[!UICONTROL Audiences]**.
 
 Det används ofta för att fånga målgruppssegment som skapats i samma kampanjarbetsflöde, så att de kan återanvändas i framtida kampanjer. Det är vanligtvis kopplat till andra målinriktningsaktiviteter, som **[!UICONTROL Build audience]** eller **[!UICONTROL Combine]**, för att spara den slutliga målpopulationen.
 
@@ -51,7 +51,7 @@ Det används ofta för att fånga målgruppssegment som skapats i samma kampanja
 
 Så här konfigurerar du aktiviteten **[!UICONTROL Save audience]**:
 
-1. Lägg till en **[!UICONTROL Save audience]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **[!UICONTROL Save audience]**-aktivitet i din Orchestrated-kampanj.
 
 1. Ange en **[!UICONTROL Audience label]** som identifierar den sparade målgruppen.
 
@@ -74,6 +74,6 @@ Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för m
 
 ## Exempel {#save-audience-example}
 
-I följande exempel visas hur du skapar en enkel målgrupp med målinriktning. En fråga identifierar alla mottagare som har bokat en resa de senaste 30 dagarna genom att filtrera den här populationen i din samordnade kampanj. Genom att välja **Mottagare - CRMID** som **måldimension**, målgruppen för varje enskild bokningshändelse i stället för bara mottagaren som helhet. Aktiviteten **[!UICONTROL Save audience]** hämtar sedan dessa profiler för att skapa en återanvändbar målgrupp med nyligen använda köpare.
+I följande exempel visas hur du skapar en enkel målgrupp med målinriktning. En fråga identifierar alla mottagare som har bokat en resa de senaste 30 dagarna genom att filtrera populationen i din Orchestrated-kampanj. Genom att välja **Mottagare - CRMID** som **måldimension**, målgruppen för varje enskild bokningshändelse i stället för bara mottagaren som helhet. Aktiviteten **[!UICONTROL Save audience]** hämtar sedan dessa profiler för att skapa en återanvändbar målgrupp med nyligen använda köpare.
 
 ![](../assets/save-audience-3.png)

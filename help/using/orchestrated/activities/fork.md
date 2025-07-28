@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Fork]**:
 
 ![](../assets/workflow-fork.png)
 
-1. Lägg till en **[!UICONTROL Fork]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **[!UICONTROL Fork]**-aktivitet i din Orchestrated-kampanj.
 
 1. Definiera en **[!UICONTROL Label]**.
 

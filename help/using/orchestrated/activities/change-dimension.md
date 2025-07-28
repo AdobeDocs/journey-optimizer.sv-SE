@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
-source-git-commit: 1a9ea09fcbf304b1649a5ae88da34bd209e9ac8b
+source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 >[!ENDSHADEBOX]
 
-Som marknadsförare kan ni förbättra målgruppsanpassningen genom att gå över från en datatabell till en relaterad enhet i en strukturerad kampanj. På så sätt kan du gå steget längre än användarprofiler och fokusera på specifika beteenden som inköp, bokningar eller andra interaktioner.
+Som marknadsförare kan ni förbättra målgruppsanpassningen genom att gå över från en datatabell till en relaterad enhet i en samordnad kampanj. På så sätt kan du gå steget längre än användarprofiler och fokusera på specifika beteenden som inköp, bokningar eller andra interaktioner.
 
 Använd aktiviteten **[!UICONTROL Change dimension]** för att uppnå detta. Ni kan anpassa målinriktningsdimensionen under den samordnade kampanjen.
 
@@ -59,7 +59,7 @@ Använd aktiviteten **[!UICONTROL Change dimension]** för att uppnå detta. Ni 
 
 Så här konfigurerar du aktiviteten **[!UICONTROL Change dimension]**:
 
-1. Lägg till en **[!UICONTROL Change dimension]**-aktivitet i din samordnade kampanj.
+1. Lägg till en **[!UICONTROL Change dimension]**-aktivitet i din Orchestrated-kampanj.
 
    ![](../assets/orchestrated-change-dimension.png)
 
@@ -72,6 +72,6 @@ Det här användningsexemplet fokuserar på att skicka ett SMS till profiler som
 
 Börja med en **[!UICONTROL Build audience]**-aktivitet och använd målinriktningsdimensionen **[!UICONTROL Wishlist]** för att identifiera alla relevanta önskelistor.
 
-Lägg sedan till en **[!UICONTROL Change dimension]**-aktivitet för att växla måldimensionen från **[!UICONTROL Wishlist]** till **[!UICONTROL Recipient].** Det här steget ser till att den orkestrerade kampanjen har rätt profiler länkade till dessa önskelistor, vilket gör att SMS:et kan skickas till de avsedda profilerna.
+Lägg sedan till en **[!UICONTROL Change dimension]**-aktivitet för att växla måldimensionen från **[!UICONTROL Wishlist]** till **[!UICONTROL Recipient].** Det här steget ser till att den orchestrerade kampanjen har rätt profiler länkade till dessa önskelistor, vilket gör att SMS:et kan skickas till de avsedda profilerna.
 
 ![](../assets/orchestrated-change-dimension-example.png)
