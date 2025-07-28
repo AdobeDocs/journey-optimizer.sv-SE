@@ -10,7 +10,7 @@ level: Experienced
 keywords: återförsök, studsa, mjuk, ignorerad, hård, optimering, fel
 hide: true
 hidefromtoc: true
-source-git-commit: 1e36871c2c975c81d018fabb3cff51d11c98962e
+source-git-commit: 817f7c88bfc2b40a7ce39575b4ad02fb372d429d
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# E-postfeltyper
+# E-postfeltyper {#email-error-types}
 
 Möjliga orsaker till leveransfel är flera. Tabellen nedan beskriver alla fel som kan inträffa när e-postleveranser skickas med [!DNL Journey Optimizer], tillsammans med deras beskrivning och feltyp.
 
