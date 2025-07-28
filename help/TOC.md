@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
+source-git-commit: 1e36871c2c975c81d018fabb3cff51d11c98962e
 workflow-type: tm+mt
-source-wordcount: '2589'
+source-wordcount: '2592'
 ht-degree: 19%
 
 ---
@@ -748,7 +748,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -772,6 +772,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Kör IP-värmningsplanen](using/configuration/ip-warmup-execution.md)
       + [Filer för IP-värmeringsplan](using/configuration/ip-warmup-plan-files.md)
    + Övervaka e-postadresser {#monitor-reputation}
+      + [E-postfeltyper](using/configuration/email-error-types.md)
       + [Undertryckningslista](using/configuration/manage-suppression-list.md)
       + [Försök igen](using/configuration/retries.md)
       + [Tillåtelselista](using/configuration/allow-list.md)
