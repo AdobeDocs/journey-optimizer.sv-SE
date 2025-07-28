@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 7854de133ebcd3b29ca59b747aa89fae242f2ea5
+source-git-commit: 142e56ce36389da5c2e28bbafa1a1bf59be50d74
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -22,16 +22,18 @@ ht-degree: 1%
 >id="ajo_admin_subdomainname"
 >title="Delegering av underdomän"
 >abstract="Med Journey Optimizer kan du delegera dina underdomäner till Adobe. Du kan delegera en underdomän helt till Adobe, vilket är den rekommenderade metoden. </br>Du kan också skapa en underdomän med CNAME för att peka på Adobe-specifika poster, men på det här sättet måste du behålla och hantera DNS-poster på egen hand."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname_header"
 >title="Delegering av underdomän"
 >abstract="För att börja skicka e-post delegerar du din underdomän till Adobe. När du är klar konfigureras DNS-poster, inkorgar, avsändare, svar och studsadresser åt dig."
 
-Domännamnsdelegering är en metod som gör att ägaren av ett domännamn (tekniskt: en DNS-zon) kan delegera en underavdelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan enhet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe. Läs mer om [delegering av underdomäner](about-subdomain-delegation.md)
+Domännamnsdelegering är en metod som gör att ägaren av ett domännamn (tekniskt: en DNS-zon) kan delegera en underavdelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan enhet. Om du hanterar zonen&quot;example.com&quot; kan du som kund delegera underzonen&quot;marketing.example.com&quot; till Adobe.
 
-Som standard kan du i [!DNL Journey Optimizer] delegera **upp till 10 underdomäner**. Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
+>[!NOTE]
+>
+>Läs mer om delegering av underdomäner och de olika metoder som är tillgängliga med [!DNL Journey Optimizer] i [det här avsnittet](about-subdomain-delegation.md).
 
 Du kan antingen:
 
@@ -40,9 +42,19 @@ Du kan antingen:
 
 Den **fullständiga underdomändelegeringen** rekommenderas. Läs mer om skillnaderna mellan olika konfigurationsmetoder för underdomäner i [det här avsnittet](about-subdomain-delegation.md#subdomain-delegation-methods).
 
->[!CAUTION]
->
->Parallell överföring av underdomäner stöds inte i [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har statusen **[!UICONTROL Processing]** får du ett felmeddelande.
+## Guardrails {#guardrails}
+
+När du konfigurerar underdomäner i [!DNL Journey Optimizer] följer du de skyddsutkast och rekommendationer som beskrivs nedan.
+
+* Som standard kan du i [!DNL Journey Optimizer] delegera **högst 10 underdomäner**. Beroende på ditt licensavtal kan du dock delegera upp till 100 underdomäner. Kontakta Adobe och läs mer om hur många underdomäner du har rätt till.
+
+* Parallell överföring av underdomäner stöds inte i [!DNL Journey Optimizer]. Om du försöker skicka en underdomän för delegering när en annan har statusen **[!UICONTROL Processing]** får du ett felmeddelande.
+
+* Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
+
+* Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
+
+* Delegering av både en överordnad och en underdomän stöds inte. Om du till exempel har delegerat subdomain.domain.com kan du inte delegera email.subdomain.domain.com. Om du har delegerat email.subdomain.domain.com kan du inte delegera subdomain.domain.com.
 
 ## Åtkomst till delegerade underdomäner {#access-delegated-subdomains}
 
@@ -69,7 +81,7 @@ Du kan:
 
 >[!CAUTION]
 >
->Underdomänskonfigurationen är gemensam för alla miljöer. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.
+>Underdomänskonfigurationen är **vanlig i alla miljöer**. Därför kommer alla ändringar av en underdomän också att påverka produktionssandlådorna.
 
 ## Konfigurera en underdomän i Journey Optimizer {#set-up-subdomain}
 
@@ -79,19 +91,14 @@ Du kan:
 >abstract="Om du vill delegera en ny underdomän till Adobe måste du kopiera och klistra in informationen om Adobe-namnservern som visas i Journey Optimizer-gränssnittet i din värdlösning för domäner för att generera matchande DNS-poster. Om du vill delegera en underdomän med CNAME måste du också kopiera och klistra in valideringsposten för SSL CDN-URL. När kontrollerna är klara kan underdomänen användas för att leverera meddelanden."
 
 Följ stegen nedan för att konfigurera en ny underdomän i [!DNL Journey Optimizer].
-
+<!--
 >[!NOTE]
 >
->I det här avsnittet beskrivs hur du konfigurerar en underdomän med metoderna fullständig delegering eller CNAME. Den anpassade delegeringsmetoden beskrivs i [det här avsnittet](#setup-custom-subdomain).
-
+>This section describes how to set up a subdomain using the full delegation. The custom delegation method is detailed in [this section](#setup-custom-subdomain).-->
 
 1. Gå till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** och klicka sedan på **[!UICONTROL Set up subdomain]**.
 
    <!--![](assets/subdomain-delegate.png)-->
-
-   >[!CAUTION]
-   >
-   >Underdomänskonfigurationen är **vanlig i alla miljöer**. Alla ändringar av en underdomän påverkar därför även produktionssandlådorna.
 
 1. Välj något av följande i avsnittet **[!UICONTROL Set up method]**:
 
@@ -105,14 +112,14 @@ Följ stegen nedan för att konfigurera en ny underdomän i [!DNL Journey Optimi
 1. Ange namnet på den underdomän som ska delegeras.
 
    ![](assets/subdomain-name.png)
+<!--
+    >[!CAUTION]
+    >
+    >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
+    >
+    >You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
 
-   >[!CAUTION]
-   >
-   >Det är inte tillåtet att delegera en ogiltig underdomän till Adobe. Se till att du anger en giltig underdomän som ägs av din organisation, till exempel marketing.yourcompany.com.
-   >
-   >Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
-
-   <!--Capital letters are not allowed in subdomains. TBC by PM-->
+    Capital letters are not allowed in subdomains. TBC by PM-->
 
 1. Konfigurera **[!UICONTROL DMARC record]** i det dedikerade avsnittet. Om underdomänen har en befintlig [DMARC-post](dmarc-record.md), och om den hämtas av [!DNL Journey Optimizer], kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Lär dig hantera DMARC-post](dmarc-record.md#set-up-dmarc)
 
