@@ -7,9 +7,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: fb036e910431a4ce9709b394c93484e6b76bf8f8
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '324'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,10 @@ Så här skapar du ett reserverbjudande:
 1. Skapa en eller flera representationer för reserverbjudandet. Det gör du genom att dra och släppa praktik från den vänstra rutan, som när du skapar ett personaliserat erbjudande. Se [Skapa anpassade erbjudanden](../offer-library/creating-personalized-offers.md).
 
    ![](../assets/fallback_content.png)
+
+   >[!CAUTION]
+   >
+   >Reserverbjudanden ska innehålla alla representationer som används inom ett [beslut](../offer-activities/create-offer-activities.md). Om du t.ex. har 5 erbjudanden i ett beslut och var och en av dem har olika representationer, bör 5 representationer ingå i reserverbjudandet.
 
 1. När reserverbjudandets representationer har lagts till visas en sammanfattning. Om allt är korrekt konfigurerat och ditt reserverbjudande är klart att presenteras för kunderna klickar du på **[!UICONTROL Finish]** och väljer sedan **[!UICONTROL Save and approve]**.
 

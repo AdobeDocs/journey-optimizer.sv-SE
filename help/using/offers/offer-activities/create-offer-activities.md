@@ -7,9 +7,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: fb036e910431a4ce9709b394c93484e6b76bf8f8
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2483'
 ht-degree: 0%
 
 ---
@@ -312,15 +312,19 @@ Markeringen ser ut så här:
 >title="Lägg till ett reserverbjudande"
 >abstract="När du har definierat beslutsomfattningarna definierar du det reserverbjudande som presenteras som en sista utväg till de kunder som inte matchar reglerna och begränsningarna för erbjudanden."
 
-När du har definierat beslutsomfattningarna definierar du det reserverbjudande som presenteras som en sista utväg till de kunder som inte matchar reglerna och begränsningarna för erbjudanden.
+När du har definierat beslutsomfattningarna definierar du det [reserverbjudande](../offer-library/creating-fallback-offers.md) som presenteras som en sista utväg till kunder som inte matchar reglerna och begränsningarna för erbjudanden.
 
-Det gör du genom att markera det i listan över tillgängliga reserverbjudanden för de ersättningar som definierats i beslutet och sedan klicka på **[!UICONTROL Next]**.
+Det gör du genom att välja det i listan över tillgängliga reserverbjudanden för de ersättningar som definierats i beslutet.
 
 ![](../assets/add-fallback-offer.png)
 
 >[!NOTE]
 >
->Du kan klicka på länken **[!UICONTROL Open offer library]** för att visa listan med erbjudanden på en ny flik.
+>Reserverbjudanden ska innehålla alla representationer som används i ett beslut. Om du t.ex. har 5 erbjudanden i ett beslut och var och en av dem har olika representationer, bör 5 representationer ingå i reserverbjudandet.
+
+Klicka på **[!UICONTROL Next]** när du har markerat.
+
+Du kan klicka på länken **[!UICONTROL Open offer library]** för att visa listan med erbjudanden på en ny flik.
 
 ## Granska och spara beslutet {#review}
 
