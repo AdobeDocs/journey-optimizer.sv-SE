@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: e255751e411d8b623a12780a52a54551b5d65182
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2399'
 ht-degree: 0%
 
 ---
@@ -376,6 +376,9 @@ Klicka på ikonen `...` för att visa beskrivningen av funktionen och lägga til
     </tr>
     <tr>
         <td><a href="string.md#rightTrim">Högertrimning</a></td><td>Den här funktionen tar bort blanksteg från slutet av en sträng </td>
+    </tr>
+    <tr>
+        <td><a href="string.md#sha256">SHA256</a></td><td>Den här funktionen beräknar och returnerar sha256-hash för en sträng.</td>
     </tr>
     <tr>
         <td><a href="string.md#split">Dela</a></td><td>Den här funktionen används för att dela en sträng med ett visst tecken</td>

@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 3896015ea63a1d25a16744940ffc622b977ff4ce
+source-git-commit: e255751e411d8b623a12780a52a54551b5d65182
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -222,4 +222,8 @@ Förbättringar i den här versionen visas nedan.
 
 - **Kanal - InApp**
    - **Nyckel-/värdepar i appen** - Med meddelanden i appen kan du definiera nyckel- och värdepar som ska innehålla anpassade variabler i meddelandets nyttolast. Dessa nyckelvärdepar gör att du kan skicka ytterligare data baserat på din specifika konfiguration och användningsfall.
+  <!-- [Read more](../FILE.md) -->
+
+- **Personalization**
+   - En ny hjälpfunktion, &quot;SHA256&quot;, har lagts till i personaliseringsredigeraren. Den här funktionen används för att beräkna och returnera sha256-hash för en sträng.
   <!-- [Read more](../FILE.md) -->

@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: e255751e411d8b623a12780a52a54551b5d65182
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1859'
 ht-degree: 3%
 
 ---
@@ -660,18 +660,39 @@ Funktionen `replaceAll` används för att ersätta alla delsträngar för en tex
 >
 > När uttrycket som tagits som ett andra argument är ett särskilt regex-tecken använder du ett dubbelt omvänt snedstreck (`//`).  Specialregextecken är: [., +, *, ?, ^, $, (, ), [,], {, }, |, \.]
 > 
-> Läs mer i [Oraclets dokumentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}.
+> Läs mer i [Oracle-dokumentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}.
 >
 
 ## Högertrimning {#rightTrim}
 
-Funktionen `rightTrim` används för att ta bort tomrum från strängens slut.
+Funktionen `rightTrim` tar bort blanksteg från slutet av en sträng.
 
 **Syntax**
 
 ```sql
 {%= rightTrim(string) %}
 ```
+
+## SHA256 {#sha256}
+
+Funktionen `SHA256` beräknar och returnerar sha256-hash för en sträng.
+
+**Syntax**
+
+```sql
+{{
+
+{%= sha256(string) %}
+: string}}
+```
+
+**Exempel**
+
+```sql
+{%= sha256("Eliechxh")%}
+```
+
+returnerar: `0b0b207880b999adaad6231026abf87caa30760b6f326b21727b61139332257d`
 
 ## Dela {#split}
 
