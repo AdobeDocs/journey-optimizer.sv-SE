@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 2%
@@ -79,7 +79,7 @@ Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
-1. Välj **[!UICONTROL Frequency]** i SMS-meddelandet på menyn **[!UICONTROL Action triggers]**:
+1. Välj **[!UICONTROL Action triggers]** i SMS-meddelandet på menyn **[!UICONTROL Frequency]**:
 
    * En gång
    * Dagligen
@@ -119,9 +119,11 @@ Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna 
 
    ![](assets/sms_tracking_1.png)
 
-1. Klicka på **[!UICONTROL URL function]** på menyn **[!UICONTROL Helper functions]** och välj sedan **[!UICONTROL Add URL]**.
+1. Klicka på **[!UICONTROL Helper functions]** på menyn **[!UICONTROL URL function]** och välj sedan **[!UICONTROL Add URL]**.
 
    ![](assets/sms_tracking_2.png)
+
+   <!--The URL shortening function cannot be used within a fragment. TBC-->
 
 1. Klistra in den URL som du vill förkorta i fältet `originalUrl` och klicka på **[!UICONTROL Save]**.
 

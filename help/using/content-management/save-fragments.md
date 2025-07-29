@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 70e88ea0-f2b0-4c13-8693-619741762429
-source-git-commit: f8ee42f42849bec199bfa5203dc59112f98de99c
+source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ ht-degree: 0%
 När du redigerar innehåll i [!DNL Journey Optimizer] kan du spara hela eller delar av innehållet som fragment för framtida återanvändning. Du kan spara innehåll som fragment antingen [ från e-post-Designer](#save-as-visual-fragment) eller [ från uttrycksredigeraren](#save-as-expression-fragment).
 
 >[!NOTE]
+>
+>[Sammanhangsbaserade attribut](../personalization/personalization-build-expressions.md) stöds inte i fragment.
 >
 >När spårning är aktiverat i en resa eller kampanj spåras länkarna, om det finns länkar i ett sparat fragment och om det här fragmentet används i ett meddelande, som alla andra länkar i meddelandet. [Läs mer om länkar och spårning](../email/message-tracking.md)
 
@@ -37,7 +39,7 @@ Så här sparar du innehåll från e-post-Designer som fragment:
    >
    >Visuella fragment får inte överskrida 100 kB.
 
-1. Skärmen **[!UICONTROL Save as fragment]** visas. Här väljer du de element som du vill inkludera i fragmentet, inklusive anpassningsfält och dynamiskt innehåll. Observera att kontextuella attribut inte stöds i fragment.
+1. Skärmen **[!UICONTROL Save as fragment]** visas. Här väljer du de element som du vill inkludera i fragmentet, inklusive anpassningsfält och dynamiskt innehåll.
 
    ![](assets/fragment-save-as-screen.png)
 

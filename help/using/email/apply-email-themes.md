@@ -10,9 +10,9 @@ role: User
 level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
 exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
-source-git-commit: 23684c906d11c7f54eb28cac7c2697964e723a2e
+source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '809'
 ht-degree: 0%
 
 ---
@@ -53,19 +53,19 @@ Key Benefits:
 
 * När du skapar ett e-postmeddelande från grunden kan du välja att börja bygga ditt innehåll med ett tema för att snabbt tillämpa en specifik formatering som passar ert varumärke och er design.
 
-  Om du väljer läget Klassisk kan du inte använda några teman om du inte återställer e-postmeddelandet.
+  Om du väljer läget Manuell formatering kan du inte använda några teman om du inte återställer e-postmeddelandet.
 
-* [Fragment](../content-management/fragments.md) är inte korskompatibla mellan teman och klassiska lägen.
+* [Fragment](../content-management/fragments.md) är inte korskompatibla mellan lägena Använd teman och Manuell formatering.
 
-  Om du vill kunna använda ett fragment i ett innehåll där ett tema används, måste det här fragmentet skapas i temaläget.
+  Om du vill kunna använda ett fragment i ett innehåll där ett tema används, måste det här fragmentet skapas i läget Använd teman.
 
 * Om du använder innehåll som skapats i HTML är du i [kompatibilitetsläge](existing-content.md) och du kan inte använda teman för det här innehållet.
 
-  Om du vill utnyttja alla funktioner i e-post-Designer, inklusive teman, måste du antingen skapa ett nytt innehåll i temaläge eller konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
+  Om du vill utnyttja alla funktioner i e-post-Designer, inklusive teman, måste du antingen skapa ett nytt innehåll i läget Använd teman eller konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
 
-<!--If using a content created in Classic mode or HTML, you cannot apply themes to this content. You must create a new content in Theme mode.
+<!--If using a content created in Manual Styling mode or HTML, you cannot apply themes to this content. You must create a new content in Use Themes mode.
 
-If you apply a theme to a content using a [fragment](../content-management/fragments.md) created in Classic mode, the rendering may not be optimal.-->
+If you apply a theme to a content using a [fragment](../content-management/fragments.md) created in Manual Styling mode, the rendering may not be optimal.-->
 
 ## Skapa ett tema {#create-and-edit-themes}
 
@@ -127,15 +127,15 @@ Följ stegen nedan om du vill använda standardteman eller anpassade formatteman
 
    * Välj en inbyggd [e-postmall](use-email-templates.md) för att öppna e-post-Designer. Ett standardtema som är specifikt för varje mall används automatiskt.
 
-   * Designa ett [nytt innehåll från grunden](content-from-scratch.md) och välj **[!UICONTROL Theme]** för att börja med ett fördefinierat formattema.
+   * Designa ett [nytt innehåll från grunden](content-from-scratch.md) och välj **[!UICONTROL Use Theme]s** för att börja med ett fördefinierat formattema.
 
      ![](assets/theme-from-scratch.png)
 
      >[!CAUTION]
      >
-     >Om du väljer läget Klassisk kan du inte använda några teman om du inte återställer e-postmeddelandet.
+     >Om du väljer läget Manuell formatering kan du inte använda några teman om du inte återställer e-postmeddelandet.
      >
-     >Om du vill använda ett [fragment](../content-management/fragments.md) i temaläge måste det här fragmentet ha skapats med temaläget.
+     >Om du vill använda ett [fragment](../content-management/fragments.md) i läget Använd teman måste det här fragmentet ha skapats själv i läget Använd teman.
 
 1. Klicka på knappen **[!UICONTROL Themes]** till höger i e-post-Designer. Standardtemat eller mallens tema visas. Du kan växla mellan de två färgvarianterna för det här temat.
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
-source-git-commit: e35d18002fa32df8c1cfd9e0a609ce167df4641a
+source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >id="ajo_create_fragment"
 >title="Definiera egna fragment"
 >abstract="Skapa och hantera fristående fragment för att göra innehållet återanvändbart på flera resor och i flera kampanjer."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/fragments/create-fragments" text="Skapa fragment"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/create-fragments" text="Skapa fragment"
 
 Ett fragment är en återanvändbar komponent som kan refereras i en eller flera e-postmeddelanden över [!DNL Journey Optimizer] kampanjer och resor. Med den här funktionen kan ni skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa e-postinnehåll i en förbättrad designprocess.
 
@@ -43,6 +43,8 @@ I den här versionen gäller följande begränsningar:
 * **Visuella fragment** är endast tillgängliga för e-postkanalen.
 * **Uttrycksfragment** är inte tillgängliga för kanalen i appen.
 
+Fler skyddsförslag som gäller för fragment finns i [det här avsnittet](../start/guardrails.md#fragments-guardrails).
+
 ## Visual &amp; expression fragments {#visual-expression}
 
 Det finns två typer av fragment:
@@ -62,4 +64,4 @@ Lär dig hur du hanterar, redigerar och använder **visuella fragment** i [!DNL 
 
 Lär dig hantera, redigera och använda **uttrycksfragment** i [!DNL Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3438921/?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424587/?quality=12)
