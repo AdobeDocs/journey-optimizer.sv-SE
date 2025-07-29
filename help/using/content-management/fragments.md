@@ -64,4 +64,4 @@ Lär dig hur du hanterar, redigerar och använder **visuella fragment** i [!DNL 
 
 Lär dig hantera, redigera och använda **uttrycksfragment** i [!DNL Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3424587/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3438921/?quality=12&captions=swe)
