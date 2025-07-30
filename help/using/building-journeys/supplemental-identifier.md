@@ -199,4 +199,4 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
