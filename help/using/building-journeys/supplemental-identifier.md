@@ -3,7 +3,7 @@ title: Kompletterande identifiering vid händelseutlösta resor
 description: Lär dig hur du använder tilläggsidentifierare i händelseutlösta resor.
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
-source-git-commit: 664f38b4ff56ce871599400f898e23a8d04f7816
+source-git-commit: 5e4297fb0e2d0b910c9fe102299162e8bb46a311
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 0%
@@ -199,4 +199,4 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
