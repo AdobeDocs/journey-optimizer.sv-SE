@@ -8,9 +8,9 @@ feature: Ranking, Decision Management
 role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: c79b860d4220b3125bbee2240e047552a04fe118
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '371'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Du kan till exempel välja en AI-modell för e-postkanalen och en annan för pus
 
 >[!IMPORTANT]
 >
->För närvarande stöds inte rankningsmodeller i kanaler som skapats av Journey Optimizer.
+>För närvarande stöds inte AI-modeller i kanaler som skapats av Journey Optimizer.
 
 ## AI-modelltyper {#ai-model-types}
 
@@ -33,7 +33,7 @@ Du kan till exempel välja en AI-modell för e-postkanalen och en annan för pus
 >id="ajo_decisioning_ai_model_type"
 >title="Välj modelltyp"
 >abstract="Välj den typ av AI-modell som du vill skapa: **Automatisk optimering** optimerar erbjudanden baserat på tidigare erbjudanden, medan **Anpassad optimering** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjudandeprestanda."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
 
 Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 
@@ -53,6 +53,6 @@ De viktigaste stegen för att skapa och använda AI-modeller är följande:
 
    >[!IMPORTANT]
    >
-   >Rankningsmodeller kräver att feedback-händelser skickas in som upplevelsehändelser för att samlas in. [Läs mer om datainsamling för beslutshantering](../data-collection/data-collection.md)
+   >AI-modeller kräver att feedback-händelser skickas in som upplevelsehändelser för att samlas in. [Läs mer om datainsamling för beslutshantering](../data-collection/data-collection.md)
 
 1. Tilldela AI-modellen till en placering i ett beslut om att rangordna kvalificerade erbjudanden. [Läs mer](../offer-activities/configure-offer-selection.md)
