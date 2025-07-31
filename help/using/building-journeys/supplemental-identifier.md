@@ -244,4 +244,4 @@ I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på 
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
