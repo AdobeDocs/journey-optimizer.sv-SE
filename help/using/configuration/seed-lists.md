@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
-source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
+source-git-commit: 1cca05a4f7590f42c1ed5104cb530930e139b2b9
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '964'
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ Du kan klicka på ett namn på en startlista om du vill redigera den. <!--Use th
 >id="ajo_seed_list_details"
 >title="Definiera en startvärdeslista"
 >abstract="Använd en lista för att automatiskt lägga till specifika interna adresser till era leveransgrupper för att försäkra er. Med hjälp av dirigerade listor kan du övervaka utskickade meddelandekopior för att säkerställa att alla visningselement är korrekta och för att skydda din sändningslista. Den här funktionen gäller för närvarande bara för e-postkanalen."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html?lang=sv-SE#use-seed-list" text="Vad är utsädeslistor?"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
 
 >[!CONTEXTUALHELP]
 >id="ajo_seed_addresses"
@@ -155,5 +155,7 @@ Nu när din startlista har skapats kan du använda den i alla kampanjer och unde
 Varje gång ett e-postmeddelande skickas till kunderna via kampanjen eller resan får e-postadresserna på den valda startlistan också det på samma villkor, vid samma tidpunkt och med samma innehåll som målmottagarna.
 
 >[!NOTE]
+>
+>[Testläge](../building-journeys/testing-the-journey.md) resor skickar inte e-post till startlistan. Om du vill kontrollera ditt e-postinnehåll använder du funktionen [förhandsgranska och testa](../content-management/preview-test.md) innan du skickar meddelandet.
 >
 >För återkommande resor skickas e-postleveransen till dirigerade adresser vid varje körning, förutsatt att minst en profil når e-postnoden.
