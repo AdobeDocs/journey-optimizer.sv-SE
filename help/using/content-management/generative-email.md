@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
-source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
+source-git-commit: bfa6e54673fc51d1bd6c253cc17a0018e3d7815b
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1623'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 >[!IMPORTANT]
 >
 >Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
-></br>
+>></br>
 >
 >Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI Assistant i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
@@ -48,8 +48,6 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
-   Observera att funktionen Varumärke släpps som en privat betaversion och kommer att finnas tillgänglig för alla kunder i framtida versioner.
-
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
@@ -76,7 +74,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
 
    ![](assets/full-email-6.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
@@ -84,7 +82,13 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
-1. Bläddra igenom den genererade **[!UICONTROL Variations]** och klicka på **[!UICONTROL Preview]** för att visa en fullskärmsversion av den valda varianten.
+1. Bläddra igenom den genererade **[!UICONTROL Variations]** och klicka på **[!UICONTROL Preview]** för att visa en fullskärmsversion av den valda varianten eller **[!UICONTROL Apply]** för att ersätta det aktuella innehållet.
+
+1. Klicka på procentikonen för att visa din **[!UICONTROL Brand Alignment Score]** och identifiera eventuella feljusteringar av ditt varumärke.
+
+   Läs mer om [varumärkesjusteringspoäng](brands-score.md).
+
+   ![](assets/full-email-7.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -95,6 +99,8 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
    ![](assets/full-email-5.png){zoomable="yes"}
+
+1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
@@ -120,8 +126,6 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
-   Observera att funktionen Varumärke släpps som en privat betaversion och kommer att finnas tillgänglig för alla kunder i framtida versioner.
-
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
@@ -137,7 +141,7 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
    ![](assets/text-genai-4.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
@@ -145,7 +149,15 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
-1. Bläddra igenom den genererade **[!UICONTROL Variations]** och klicka på **[!UICONTROL Preview]** för att visa en fullskärmsversion av den valda varianten.
+1. Bläddra igenom den genererade **[!UICONTROL Variations]**.
+
+   Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller klicka på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
+
+1. Klicka på procentikonen för att visa din **[!UICONTROL Brand Alignment Score]** och identifiera eventuella feljusteringar av ditt varumärke.
+
+   Läs mer om [varumärkesjusteringspoäng](brands-score.md).
+
+   ![](assets/text-genai-6.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -155,13 +167,15 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
    * **[!UICONTROL Summarize]**: Långvarig information kan överlagra e-postmottagare. Använd AI Assistant för att komprimera viktiga punkter till tydliga, kortfattade sammanfattningar som får dem att lyssna och uppmuntrar dem att läsa vidare.
 
-   * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
+   * **[!UICONTROL Rephrase]**:TheAI Assistant kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
 
    * **[!UICONTROL Use simpler language]**: Använd AI Assistant för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
    ![](assets/text-genai-5.png){zoomable="yes"}
+
+1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
@@ -189,8 +203,6 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
-   Observera att funktionen Varumärke släpps som en privat betaversion och kommer att finnas tillgänglig för alla kunder i framtida versioner.
-
 1. Finjustera innehållet genom att beskriva vad du vill generera i fältet **[!UICONTROL Prompt]**.
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
@@ -199,7 +211,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Image settings]**:
 
-   * **[!UICONTROL Aspect ratio]**: Detta avgör resursens bredd och höjd. Du kan välja mellan vanliga proportioner som 16:9, 4:3, 3:2 eller 1:1, eller ange en anpassad storlek.
+   * **[!UICONTROL Aspect ratio]**: Detta avgör resursens bredd och höjd. Du kan välja bland vanliga proportioner som 16:9, 4:3, 3:2 eller 1:1, eller så kan du ange en anpassad storlek.
    * **[!UICONTROL Content type]**: Detta kategoriserar det visuella elementets karaktär och skiljer mellan olika former av visuell representation, t.ex. foton, grafik eller grafik.
    * **[!UICONTROL Visual intensity]**: Du kan styra bildens effekt genom att justera dess intensitet. En lägre inställning (2) ger ett mjukare och mer återhållsam utseende, medan en högre inställning (10) gör bilden mer levande och visuellt kraftfull.
    * **[!UICONTROL Color & tone]**: Det övergripande utseendet på färgerna i en bild och stämningen eller atmosfären som den förmedlar.
@@ -208,7 +220,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
    ![](assets/image-genai-4.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
@@ -216,9 +228,26 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
 1. Bläddra i **[!UICONTROL Variation suggestions]** för att hitta den önskade resursen.
 
-   Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den valda varianten.
+   Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
 
-1. Välj **[!UICONTROL Generate Similar]** om du vill visa relaterade bilder till den här varianten.
+1. Klicka på procentikonen för att visa din **[!UICONTROL Brand Alignment Score]** och identifiera eventuella feljusteringar av ditt varumärke.
+
+   Läs mer om [varumärkesjusteringspoäng](brands-score.md).
+
+   <!--
+    ![](assets/image-genai-7.png){zoomable="yes"}
+    -->
+
+1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
+
+   * **[!UICONTROL Generate Similar]** om du vill visa relaterade bilder till den här varianten.
+   * **[!UICONTROL Edit in Adobe Express]** om du vill anpassa resursen ytterligare.
+
+[Läs mer om Adobe Express-integrering](../integrations/express.md)
+
+   * **[!UICONTROL Save]** om du vill lagra resurserna för senare åtkomst.
+
+   ![](assets/image-genai-5.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
