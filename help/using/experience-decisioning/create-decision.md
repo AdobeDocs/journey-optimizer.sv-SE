@@ -118,7 +118,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för mott
 
       ![](assets/decision-code-based-create.png)
 
-+++
+   +++
 
    +++E-posta Designer **[!UICONTROL Decisioning]**-menyn
 
@@ -128,7 +128,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för mott
 
       ![](assets/decision-policy-email-designer.png)
 
-+++
+   +++
 
 1. Ange ett namn och välj en katalog (för närvarande begränsad till standardkatalogen **[!UICONTROL Offers]**).
 
@@ -236,7 +236,7 @@ Erbjudande 5-50
 
      Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1, Erbjudande 6.
 
-+++
+   +++
 
 1. Klicka på **[!UICONTROL Next]**
 
@@ -291,13 +291,13 @@ När du väl har skapat en beslutspolicy och de attribut som är kopplade till d
 
    ![](assets/decision-policy-placement.png)
 
-+++
+   +++
 
    +++Infoga beslutsprincipkod i kodbaserad upplevelse
 
    ![](assets/decision-code-based-add-decision.png)
 
-+++
+   +++
 
    >[!NOTE]
    >
@@ -314,7 +314,7 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 >[!NOTE]
 >
 >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
->>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+>&#x200B;>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 1. Klicka på varje mapp för att expandera den. Placera musmarkören på önskad plats och klicka på ikonen + bredvid det attribut du vill lägga till. Du kan lägga till så många attribut du vill i koden.
 
