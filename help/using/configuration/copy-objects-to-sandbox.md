@@ -9,9 +9,9 @@ role: User, Developer, Data Engineer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
-source-git-commit: c90189d4b064e00bd2f2bdde67230aeb84dd97f6
+source-git-commit: f8134fd1e030fb969747a37acd657f62fd398c75
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Du kan kopiera objekt som resor, anpassade åtgärder, innehållsmallar eller fragment över flera sandlådor med hjälp av funktioner för paketexport och -import. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
 
-Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i Adobe Experience Platform [Handbok för sandlådeverktyg](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=sv-SE#abobe-journey-optimizer-objects){target="_blank"}.
+Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i Adobe Experience Platform [Handbok för sandlådeverktyg](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Journey Optimizer tillåter export av resor, anpassade åtgärder, innehållsmal
 
 +++ Resor
 
-* **Kopierade beroenden** - När du exporterar en resa, förutom själva resan, kopierar Journey Optimizer även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i Adobe Experience Platform [verktygsguide för sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=sv-SE#abobe-journey-optimizer-objects){target="_blank"}.
+* **Kopierade beroenden** - När du exporterar en resa, förutom själva resan, kopierar Journey Optimizer även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i Adobe Experience Platform [verktygsguide för sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
 
 * **Manuell validering rekommenderas** - Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll, till exempel innan du publicerar en resa. På så sätt kan du identifiera eventuella saknade objekt.
 
@@ -62,13 +62,8 @@ Journey Optimizer tillåter export av resor, anpassade åtgärder, innehållsmal
 
    * När du kopierar en resa till en annan sandlåda och väljer &quot;använd befintlig&quot; för en anpassad åtgärd under importprocessen, måste den befintliga anpassade åtgärden du väljer vara densamma som den anpassade källåtgärden (d.v.s. samma konfiguration, parametrar osv.). Annars kommer den nya kopian att innehålla fel som inte kan lösas på arbetsytan.
 
-<!--* **Data sources, field groups and events** - When copying a journey that uses events, data sources, or field groups, the import process automatically checks whether components with the same name and type already exist in the target sandbox.
+* **Datakällor, fältgrupper och händelser** - Vid kopiering av en resa där händelser, datakällor eller fältgrupper används kontrolleras automatiskt om det redan finns komponenter med samma namn och typ i målsandlådan. En enhetshändelse ersätts till exempel av en enhetshändelse i målsandlådan med samma namn. Detsamma gäller affärshändelser, anpassade datakällor och både API-baserade och schemabaserade fältgrupper som används under resor. Om en enhetshändelse från källsandlådan har samma namn som en mållandlåda för en affärshändelse kopieras eller skapas den inte. Detta gäller även för alla andra komponenter.
 
-   * If a match is found, the existing components in the target sandbox are reused by the imported journey.
-   * If no match is found, the system creates new components.
-
-   This ensures that journeys relying on these elements remain functional after import, with minimal manual adjustment.
--->
 +++
 
 +++ Kampanjer
