@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+source-git-commit: cf700f4097883c875c74196317f6494f74f9bc7c
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 Med [!DNL Journey Optimizer] kan du utnyttja data från [!DNL Adobe Experience Platform] för beslut. Detta gör att du kan utöka definitionen av dina beslutsattribut till ytterligare data i datauppsättningar för bulkuppdateringar som ändras regelbundet utan att du behöver uppdatera attributen manuellt en i taget. Till exempel tillgänglighet, väntetider osv.
 
-## Beta begränsningar och riktlinjer {#guidelines}
+## Skyddsritningar och begränsningar {#guidelines}
 
 Observera följande begränsningar och riktlinjer innan du börjar:
 
@@ -94,7 +94,7 @@ Anta att ett flygbolag använder en rankningsformel för att prioritera uppgrade
 
 Så här använder du Adobe Experience Platform-data i rankningsformler:
 
-1. Skapa eller redigera en rankningsformel. Klicka på **[!UICONTROL Create mapping]** i avsnittet **[!UICONTROL Dataset lookup]**.
+1. Skapa eller redigera en rankningsformel. Klicka på **[!UICONTROL Dataset lookup]** i avsnittet **[!UICONTROL Create mapping]**.
 
 1. Definiera datamängdsmappningen:
 
