@@ -1,38 +1,35 @@
 ---
-title: Kompletterande identifiering vid händelseutlösta resor
-description: Lär dig hur du använder tilläggsidentifierare i händelseutlösta resor.
-badge: label="Begränsad tillgänglighet" type="Informative"
+title: Använd tilläggsidentifierare under resor
+description: Lär dig hur du använder tilläggsidentifierare under resor.
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
-source-git-commit: 5e4297fb0e2d0b910c9fe102299162e8bb46a311
+source-git-commit: dcb2be7fef47e0d62fdd5a423799823ba4ef586c
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
 
-# Kompletterande identifiering vid händelseutlösta resor {#supplemental-id}
+# Använd tilläggsidentifierare under resor {#supplemental-id}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Använd extra identifierare"
 >abstract="Den kompletterande identifieraren är en sekundär identifierare som ger ytterligare kontext för körningen av en resa. Om du vill definiera det markerar du det fält som ska användas som tilläggsidentifierare och väljer ett namnutrymme som ska associeras med det."
 
->[!AVAILABILITY]
->
->Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
-
-Som standard utförs händelseutlösta resor i kontexten för ett **profil-ID**. Detta innebär att så länge profilen är aktiv under en viss resa kan den inte återkomma till en annan resa. För att förhindra detta kan du med Journey Optimizer hämta en ytterligare **identifierare** i dina händelser, t.ex. ett beställnings-ID, prenumerations-ID, förskrifts-ID, utöver profil-ID:t.
+Som standard utförs resor i kontexten för ett **profil-ID**. Detta innebär att så länge profilen är aktiv under en viss resa kan den inte återkomma till en annan resa. För att förhindra detta kan du i [!DNL Journey Optimizer] hämta en **extra identifierare**, till exempel ett order-ID, prenumerations-ID, förskrivnings-ID, utöver profil-ID:t.
 I det här exemplet har vi lagt till ett boknings-ID som en extra identifierare.
 
 ![](assets/event-supplemental-id.png){width=40% zoomable}
 
-På så sätt utförs resor som utlöses av händelsen i samband med det profil-ID som är kopplat till den kompletterande identifieraren (här boknings-ID). En instans av resan utförs för varje iteration av den kompletterande identifieraren. Detta tillåter flera inmatningar av samma profil-ID på resorna om de har gjort olika bokningar.
+På så sätt utförs resor i samband med det profil-ID som är kopplat till den kompletterande identifieraren (här boknings-ID). En instans av resan utförs för varje iteration av den kompletterande identifieraren. Detta tillåter flera inmatningar av samma profil-ID på resorna om de har gjort olika bokningar.
 
 Dessutom kan du med Journey Optimizer använda attribut för den kompletterande identifieraren (t.ex. bokningsnummer, förnyelsedatum för förskrivning, produkttyp) för att anpassa meddelanden, vilket säkerställer mycket relevant kommunikation. <!--Example: A healthcare provider can send renewal reminders for each prescription in a patient's profile.-->
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Skyddsritningar och begränsningar {#guardrails}
+
+* **Resor som stöds**: För närvarande finns det ytterligare identifierare tillgängliga för **händelseutlösta**- och **läsmålgrupper**-resor. Det är inte tillgängligt för målgruppskompetensresor.
 
 * **Gränser för samtidiga instanser**: Profiler kan inte ha fler än 10 instanser för samtidiga resor.
 
@@ -59,7 +56,7 @@ Dessutom kan du med Journey Optimizer använda attribut för den kompletterande 
 -->
 * **Avslutsvillkor**: Om avslutningsvillkoret aktiveras avslutas alla instanser av profilen vid den tidpunkten. Det skulle inte vara kontextuellt med kombination av profil-ID och kompletterande identifierare.
 
-* **Frekvensregler**: Varje reseinstans som skapas från extra användaridentifierare räknas mot frekvensbegränsning, även om en enskild händelse leder till flera resinstanser.
+* **Frekvensregler**: Varje reseinstans som skapas från extra användaridentifierare räknas in i frekvensbegränsning, även om användningen av tilläggsidentifierare resulterar i flera resinstanser.
 
 * **Datatyp och schemastruktur**: Den extra identifieraren måste vara av typen `string`. Det kan vara ett oberoende strängattribut eller ett strängattribut inom en objektmatris. Det oberoende strängattributet resulterar i en enda reseinstans, medan strängattributet inom en objektmatris resulterar i en unik reseinstans per iteration av objektarrayen. Strängmatriser och kartor stöds inte.
 
@@ -74,9 +71,19 @@ Dessutom kan du med Journey Optimizer använda attribut för den kompletterande 
 
   Om du använder en annan händelse längre fram i kedjan måste den använda samma extra ID och ha samma ID-namnutrymme.
 
+* **Läs målgruppsresor**
+
+   * Kompletterande ID är inaktiverat om du använder en affärshändelse.
+
+   * Kompletterande ID måste vara ett fält från profilen (dvs. inte ett händelse-/kontextfält).
+
 ## Lägg till en extra identifierare och utnyttja den i en resa {#add}
 
-Följ de här stegen om du vill använda en extra identifierare för en resa:
+>[!BEGINTABS]
+
+>[!TAB Händelseutlöst resa]
+
+Följ de här stegen om du vill använda en extra identifierare i en händelseutlöst resa:
 
 1. **Markera attributet som en identifierare i händelseschemat**
 
@@ -114,60 +121,98 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
 
    ![](assets/supplemental-ID-journey.png)
 
-1. **Utnyttja ytterligare ID-attribut**
+>[!TAB Läs målgruppsresan]
 
-   Använd uttrycksredigeraren och personaliseringsredigeraren för att referera till attribut för den kompletterande identifieraren för personalisering eller villkorslogik. Attribut är tillgängliga på menyn **[!UICONTROL Contextual attributes]**.
+Följ de här stegen för att använda en extra identifierare i en läsande målgruppsresa:
 
-   ![](assets/supplemental-ID-perso.png)
+1. **Markera attributet som en identifierare i union-/profilschemat**
 
-   >[!NOTE]
-   >
-   >Om du arbetar med arrayer (t.ex. flera förskrivningar eller profiler) använder du en formel för att extrahera specifika element.
+   1. Gå till union-/profilschemat och leta reda på attributet som du vill använda som en extra identifierare (t.ex. boknings-ID, prenumerations-ID) och markera det som ett ID. [Lär dig arbeta med scheman](../data/get-started-schemas.md)
+
+   1. Markera identifieraren som **[!UICONTROL Identity]**.
+
+      ![](assets/supplemental-ID-schema-profile.png)
+
+      >[!IMPORTANT]
+      >
+      >Se till att du inte markerar attributet som **Primär identitet**.
+
+   1. Markera det namnutrymme som ska associeras med det extra ID:t. Detta måste vara ett namnutrymme för icke-personidentifierare.
+
+<!--1. **Add the supplemental ID field to the data source**
+
+    1. Navigate to the **[!UICONTROL Configuration]** / **[!UICONTROL Data Sources]** menu, then locate the "ExperiencePlatformDataSource" data source.
+
+        ![](assets/supplemental-ID-data-source.png)
+
+    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).-->
+
+1. **Lägg till och konfigurera aktiviteten Läs målgrupp under resan**
+
+   1. Dra en **[!UICONTROL Read audience]**-aktivitet på din resa.
+
+   1. Aktivera alternativet **[!UICONTROL Use supplemental identifier]** i rutan för aktivitetsegenskaper.
+
+      ![](assets/supplemental-ID-read-audience.png)
+
+   1. I fältet **[!UICONTROL Supplement identifier]** använder du uttrycksredigeraren för att välja det attribut du markerade som tilläggs-ID.
+
+      >[!NOTE]
+      >
+      >Kontrollera att du använder uttrycksredigeraren i **[!UICONTROL Advanced mode]** för att välja attributet.
+
+   1. När du har valt det extra ID:t visas det associerade namnutrymmet i fältet **[!UICONTROL Supplemental namespace]** som skrivskyddat.
+
+>[!ENDTABS]
+
+## Utnyttja ytterligare ID-attribut
+
+Använd uttrycksredigeraren och personaliseringsredigeraren för att referera till attribut för den kompletterande identifieraren för personalisering eller villkorslogik. Attribut är tillgängliga på menyn **[!UICONTROL Contextual attributes]**.
+
+![](assets/supplemental-ID-perso.png)
+
+För händelseutlösta resor om du arbetar med matriser (t.ex. flera recept eller policyer) använder du en formel för att extrahera specifika element.
 
 +++ Se exempel
 
-   I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på samma nivå med namnet `bookingCountry`, itererar resan genom arrayobjektet baserat på bookNum och skapar en reseinstans för varje objekt.
+I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på samma nivå med namnet `bookingCountry`, itererar resan genom arrayobjektet baserat på bookNum och skapar en reseinstans för varje objekt.
 
-   * Följande uttryck i villkorsaktiviteten itererar genom objektarrayen och kontrollerar om värdet för `bookingCountry` är lika med &quot;FR&quot;:
+* Följande uttryck i villkorsaktiviteten itererar genom objektarrayen och kontrollerar om värdet för `bookingCountry` är lika med &quot;FR&quot;:
 
-     ```
-     @event{<event_name>.<object_path>.<object_array_name>.all(currentEventField.<attribute_path>.bookingNum==${supplementalId}).at(0).<attribute_path>.bookingCountry}=="FR"
-     ```
+  ```
+  @event{<event_name>.<object_path>.<object_array_name>.all(currentEventField.<attribute_path>.bookingNum==${supplementalId}).at(0).<attribute_path>.bookingCountry}=="FR"
+  ```
 
-   * Följande uttryck i redigeraren för e-postpersonalisering itererar igenom objektarrayen, drar ut den `bookingCountry` som gäller för den aktuella reseinstansen och visar den i innehållet:
+* Följande uttryck i redigeraren för e-postpersonalisering itererar igenom objektarrayen, drar ut den `bookingCountry` som gäller för den aktuella reseinstansen och visar den i innehållet:
 
-     ```
-     {{#each context.journey.events.<event_ID>.<object_path>.<object_array_name> as |l|}} 
-     
-     {%#if l.<attribute_path>.bookingNum = context.journey.technicalProperties.supplementalId%} {{l.<attribute_path>.bookingCountry}}  {%/if%}
-     
-     {{/each}}
-     ```
+  ```
+  {{#each context.journey.events.<event_ID>.<object_path>.<object_array_name> as |l|}} 
+  
+  {%#if l.<attribute_path>.bookingNum = context.journey.technicalProperties.supplementalId%} {{l.<attribute_path>.bookingCountry}}  {%/if%}
+  
+  {{/each}}
+  ```
 
-   * Exempel på händelsen som används för att utlösa resan:
+* Exempel på händelsen som används för att utlösa resan:
 
-     ```
-     "bookingList": [
-           {
-               "bookingInfo": {
-                   "bookingNum": "x1",
-                         "bookingCountry": "US"
-               }
-           },
-           {
-               "bookingInfo": {
-                   "bookingNum": "x2",
-                   "bookingCountry": "FR"
-               }
-           }
-       ]
-     ```
+  ```
+  "bookingList": [
+        {
+            "bookingInfo": {
+                "bookingNum": "x1",
+                      "bookingCountry": "US"
+            }
+        },
+        {
+            "bookingInfo": {
+                "bookingNum": "x2",
+                "bookingCountry": "FR"
+            }
+        }
+    ]
+  ```
 
 +++
-
-1. **Publicera resan**
-
-   Publicera resan när den är konfigurerad för att börja använda flera samtidiga poster baserat på ytterligare identifierare.
 
 ## Exempel på användningsområden
 
@@ -199,4 +244,4 @@ Följ de här stegen om du vill använda en extra identifierare för en resa:
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)

@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärder, resa, meddelanden, sändning, anslutningar
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: f5baa901c4f9d1061837528007b2c3f048ecbf2a
+source-git-commit: dcb2be7fef47e0d62fdd5a423799823ba4ef586c
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 42%
@@ -24,7 +24,6 @@ ht-degree: 42%
 >abstract="Åtgärder är anslutningar genom vilka du levererar personaliserade upplevelser till kunder i realtid såsom push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som du använder i företaget."
 
 Åtgärder är anslutningar genom vilka du levererar personaliserade upplevelser till kunder i realtid såsom push-meddelanden, e-post, SMS eller andra sätt för digitalt engagemang som du använder i företaget.
-
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
@@ -50,4 +49,4 @@ Lär dig hur du felsöker en anpassad åtgärd [på den här dedikerade sidan](.
 
 Lär dig hur du konfigurerar anpassade åtgärder.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430273?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428396?quality=12)
