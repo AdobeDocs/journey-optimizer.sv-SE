@@ -4,9 +4,9 @@ description: Lär dig utnyttja Journey Optimizer verktyg för konfliktlösning o
 role: User
 level: Beginner
 exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
-source-git-commit: 43fe7ca22a7685944b2b11ca3d1872641d1f4694
+source-git-commit: 8146221975b7460bf1deaca9363d1624b719b480
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Med **konfliktidentifieringsverktyget** kan du identifiera potentiella överlapp
 
 ### Regeluppsättningar
 
-Med regeluppsättningar kan du **gruppera flera regler i regeluppsättningar** och använda dem på de resor och kampanjer du vill använda. Detta ger förbättrad detaljrikedom för att begränsa hur ofta och hur många resor en kund kan gå in på inom en viss tidsram eller styra hur ofta användaren får ett meddelande beroende på kommunikationstypen.
+Med regeluppsättningar kan du **gruppera flera regler i regeluppsättningar** och använda dem på de resor och kampanjer du vill använda. Detta ger förbättrad detaljrikedom för att begränsa hur ofta och hur många resor en kund kan gå in på inom en viss tidsram eller styra hur ofta användaren får ett meddelande beroende på kommunikationstypen. [Lär dig arbeta med regeluppsättningar](../conflict-prioritization/rule-sets.md)
 
 * **Resebegränsning och skiljeförfarande**
 
