@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: c3513c087a05f2258e00fd4d80fdb23bedfd9188
+source-git-commit: 65a6afddfbc53afb88c6e69449720ac67f8f8f39
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1215'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 1%
 # Lägga till länkar och spåra meddelanden {#tracking}
 
 Använd [!DNL Journey Optimizer] om du vill lägga till länkar till ditt innehåll och spåra meddelanden som skickats för att övervaka mottagarnas beteende.
+
+>[!NOTE]
+>
+>När länkar inkluderas i ditt innehåll går de ut **25 månader** efter att meddelandet har skickats, med undantag för länkar till en spegelsida som går ut efter **90 dagar**. När fördröjningen är slut är länkarna inte längre tillgängliga.
 
 ## Aktivera spårning {#enable-tracking}
 
@@ -79,7 +83,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
    >
    >För att tolka URL:er uppfyller [!DNL Journey Optimizer] URI-syntaxen ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), vilket inaktiverar vissa internationella specialtecken i URL:er. När du försöker skicka korrekturet eller e-postmeddelandet och returnerar ett fel som inbegriper en URL som har lagts till i innehållet, kan du URL-koda strängen som en tillfällig lösning.
 
-1. Du kan anpassa länkarna. [Läs mer](../personalization/personalization-syntax.md#perso-urls)
+1. Du kan anpassa länkarna. [Läs mer](../personalization/personalization-build-expressions.md)
 
 1. Spara ändringarna.
 
@@ -91,6 +95,7 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 >
 >E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalkonfigurationen](../configuration/channel-surfaces.md#email-type) när meddelandet skapas.
 
+När meddelandet har skickats är kvarhållningsperioden för en länk **25 månader**. Efter den fördröjningen är länken inte längre tillgänglig.
 
 ## Länka till en spegelsida {#mirror-page}
 
@@ -104,7 +109,7 @@ Om du vill lägga till en länk till en spegelsida i ditt e-postmeddelande [info
 
 Spegelsidan skapas automatiskt. När e-postmeddelandet har skickats visas innehållet i e-postmeddelandet i sin standardwebbläsare när mottagarna klickar på länken för spegelsidan.
 
-Kvarhållningsperioden för en spegelsida är **60 dagar**. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
+Kvarhållningsperioden för en spegelsida är **90 dagar**. Efter den fördröjningen är spegelsidan inte längre tillgänglig.
 
 >[!CAUTION]
 >
@@ -177,7 +182,7 @@ Det finns rapporter om öppningar och klick i [Live-rapporten](../reports/live-r
 
 [URL-spårning](email-settings.md#url-tracking) hanteras på konfigurationsnivå och gäller för alla URL:er som ingår i meddelandeinnehållet.
 
-Du kan också [anpassa enskilda URL:er](../personalization/personalization-syntax.md#perso-urls) i e-postens Designer. Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för en enda länk i innehållet.
+Du kan också anpassa enskilda URL:er i e-post-Designer. Följ stegen nedan om du vill lägga till personaliserade URL-spårningsparametrar för en enda länk i innehållet.
 
 1. Markera en länk och klicka på **[!UICONTROL Insert link]** i det sammanhangsberoende verktygsfältet.
 
@@ -185,7 +190,7 @@ Du kan också [anpassa enskilda URL:er](../personalization/personalization-synta
 
    ![](assets/message-tracking-insert-link-perso.png)
 
-1. Lägg till URL-spårningsparametern och välj det profilattribut du vill i personaliseringsredigeraren.
+1. Lägg till URL-spårningsparametern och välj ett profilattribut i [anpassningsredigeraren](../personalization/personalization-build-expressions.md).
 
    ![](assets/message-tracking-perso-parameter.png)
 
