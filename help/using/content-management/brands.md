@@ -3,14 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Hantera varumärke
 description: Lär dig skapa och hantera riktlinjer för ert varumärke
-badge: label="Beta" type="Informative"
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: f9266d01610b92d8a55be8263da6bb808b3cc8ff
+source-git-commit: 0a3e8a0eba6eaac125f508b8b81e2fab992eb978
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -33,8 +32,6 @@ ht-degree: 0%
 >abstract="Välj ert varumärke för att säkerställa att ert innehåll utformas i enlighet med dess specifika riktlinjer, standarder och identitet, samtidigt som ni upprätthåller enhetlighet och varumärkesintegritet."
 
 >[!AVAILABILITY]
->
->Den här funktionen är tillgänglig som en privat beta. Den kommer att finnas tillgänglig successivt för alla kunder i framtida versioner.
 >
 >Du måste godkänna [användaravtalet](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} innan du kan använda AI-assistenten i Adobe Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
@@ -68,7 +65,7 @@ Så här tilldelar du behörigheter för varumärken:
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 +++
 
@@ -81,7 +78,7 @@ Så här tilldelar du behörigheter för varumärken:
 
 Om du vill skapa och hantera varumärkesriktlinjerna kan du antingen ange detaljerna själv eller överföra dokumentet med varumärkesriktlinjer så att informationen extraheras automatiskt:
 
-1. Klicka på **[!UICONTROL Create brand]** på menyn **[!UICONTROL Brands]**.
+1. Klicka på **[!UICONTROL Brands]** på menyn **[!UICONTROL Create brand]**.
 
    ![](assets/brands-1.png)
 
@@ -164,7 +161,7 @@ Använd fliken **[!UICONTROL About the brand]** för att etablera varumärkets k
 
      ![](assets/brands-about-2.png)
 
-1. Klicka på ![Dive image alt text](assets/do-not-localize/Smock_Add_18_N.svg "Add icon") i kategorin **[!UICONTROL Core brand values]** om du vill lägga till varumärkets kärnvärden och fylla i informationen:
+1. Klicka på **[!UICONTROL Core brand values]** Dive image alt text![Add icon](assets/do-not-localize/Smock_Add_18_N.svg " i kategorin ") om du vill lägga till varumärkets kärnvärden och fylla i informationen:
 
    * **[!UICONTROL Value]**: Namnge ett kärnvarumärke.
 
@@ -274,7 +271,7 @@ Avsnittet **[!UICONTROL Writing style]** beskriver standarderna för att skriva 
 
 Så här anpassar du din **[!UICONTROL Writing Style]**:
 
-1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) på fliken **[!UICONTROL Writing Style]** för att lägga till en stödlinje, ett undantag eller ett undantag.
+1. Klicka på **[!UICONTROL Writing Style]** på fliken ![](assets/do-not-localize/Smock_Add_18_N.svg) för att lägga till en stödlinje, ett undantag eller ett undantag.
 
 1. Ange din riktlinje, undantag eller undantag och klicka på **[!UICONTROL Add]**.
 
@@ -336,7 +333,7 @@ Avsnittet **[!UICONTROL Visual Content]** definierar standarderna för bilder oc
 
 Så här anpassar du din **[!UICONTROL Visual content]**:
 
-1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) på fliken **[!UICONTROL Visual content]** för att lägga till en stödlinje, ett undantag eller ett exempel.
+1. Klicka på **[!UICONTROL Visual content]** på fliken ![](assets/do-not-localize/Smock_Add_18_N.svg) för att lägga till en stödlinje, ett undantag eller ett exempel.
 
 1. Ange din riktlinje, ditt undantag eller exempel och klicka på **[!UICONTROL Add]**.
 

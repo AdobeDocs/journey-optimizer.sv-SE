@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
+source-git-commit: 1a7ffacba9b90e2c018dde91814c7e321ba21135
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2607'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 
 ## Webbläsare som stöds {#browsers}
@@ -68,7 +68,7 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] [webbkampanjer](../web/get-started-web.md) har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
-Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ### Kodbaserade kanalgarantier {#code-based-guardrails}
 
@@ -149,7 +149,7 @@ Följande skyddsutkast gäller för [reseversionerna](../start/user-interface.md
 
 Följande skyddsutkast gäller för [anpassade åtgärder](../action/action.md) på dina resor:
 
-* En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder, per värd och per sandlåda. Se [den här sidan](../action/about-custom-action-configuration.md). Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste tänka på detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
+* En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder, per värd och per sandlåda. Se [den här sidan](../action/about-custom-action-configuration.md). Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar.
 * Anropsmetoderna POST, PUT och GET stöds
 * Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;
@@ -211,6 +211,9 @@ Följande skyddsutkast gäller för [Läs målgruppsaktiviteten](../building-jou
 * En resa kan bara ha en **Läs målgrupp**-aktivitet.
 * Se även rekommendationer om hur du använder aktiviteten **Läs målgrupp** på [den här sidan](../building-journeys/read-audience.md).
 * Återförsök används som standard på målgruppsinlösta resor (med början från en **Läs målgrupp** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden.
+
+
+Se även [den här sidan](../building-journeys/read-audience.md#must-read).
 
 ### Målgruppskvalifikation {#audience-qualif-g}
 

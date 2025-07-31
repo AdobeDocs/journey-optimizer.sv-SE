@@ -7,9 +7,9 @@ topic: Integrations
 role: User, Data Engineer
 level: Intermediate
 exl-id: 73bfdc24-28cf-4cfd-bac9-a4ff1ea543e3
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: 2a5591617838e76e9cae99c0f97e8aff59311a69
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,19 @@ ht-degree: 0%
 
 Varje gång ett erbjudande ändras uppdateras den autogenererade datauppsättningen för reserverbjudanden.
 
-![](../assets/dataset-fallback.png)
-
 Den senaste lyckade batchen i datauppsättningen visas till höger. Den hierarkiska vyn av schemat för datauppsättningen visas i den vänstra rutan.
+
+![](../assets/dataset-fallback.png)
 
 >[!NOTE]
 >
->Lär dig hur du får åtkomst till exporterade datauppsättningar för varje objekt i ditt Erbjudandebibliotek i [det här avsnittet](../export-catalog/access-dataset.md).
+>Borttagna reserverbjudanden markeras som arkiverade i datauppsättningen.
 
 Här är en lista över alla fält som kan användas i datamängden **[!UICONTROL Decision Object Repository - Fallback Offers]**.
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -39,7 +39,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ upplevelse
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -74,20 +74,20 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 ++_experience > decisioning > contents > components
 
 **Fält:** komponenter
-**Beskrivning:** Komponenterna i innehållet som representerar beslutsalternativet, inklusive alla deras språkvarianter. Specifika komponenter hittas av &#39;dx:format&#39;, &#39;dc:subject&#39; och &#39;dc:language&#39; eller en kombination av dessa. Dessa metadata används för att hitta eller representera innehållet som är kopplat till ett erbjudande och integrera det enligt placeringskontraktet.
+**Beskrivning:** Komponenterna i innehållet som representerar beslutsalternativet, inklusive alla deras språkvarianter. Specifika komponenter hittades av dx:format, dc:subject och dc:language eller en kombination av dessa. Dessa metadata används för att hitta eller representera innehållet som är kopplat till ett erbjudande och integrera det enligt placeringskontraktet.
 **Typ:**-matris
 **Obligatoriskt:** &quot;_type&quot;, &quot;_dc&quot; <!--TBC?-->
 
 * **_experience > decisioning > contents > components > Content Component Type**
 
-  **Fält:**&#x200B;_typ
+  **Fält:**_typ
   **Titel:** Innehållskomponenttyp
   **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som anges för innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schema som beskriver ytterligare egenskaper för innehållskomponenten.
   **Typ:** sträng
 
 * **_experience > Decision > contents > components > _dc**
 
-  **Fält:**&#x200B;_dc
+  **Fält:**_dc
   **Typ:** objekt
   **Obligatoriskt:** &quot;format&quot;
 
@@ -109,13 +109,13 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > Decision > contents > components > _repo**
 
-  **Fält:**&#x200B;_repo
+  **Fält:**_repo
   **Typ:** objekt
 
    * **id**
 
      **Fält:** id
-     **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig en ytterligare egenskap \&quot;repo:resolveUrl\&quot; för att hämta resursen.
+     **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig att ytterligare egenskapen \&quot;repo:resolveUrl\&quot; hämtar resursen.
      **Typ:** sträng
      **Exempel:** &quot;urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;
 
@@ -128,7 +128,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
    * **databaseID**
 
      **Fält:** databaseID
-     **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig en ytterligare egenskap \&quot;repo:resolveUrl\&quot; för att hämta resursen.
+     **Beskrivning:** En valfri unik identifierare som refererar till resursen i en innehållsdatabas. När plattforms-API:er används för att hämta representationen kan klienten förvänta sig att ytterligare egenskapen \&quot;repo:resolveUrl\&quot; hämtar resursen.
      **Typ:** sträng
      **Exempel:** &quot;C87932A55B06F7070A49412D@AdobeOrg&quot;
 
@@ -202,7 +202,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
 +++

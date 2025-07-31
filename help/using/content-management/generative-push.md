@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a9f9d8af-c762-4038-8bbc-bbd519e0ef3a
-source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
+source-git-commit: 1f7fd3468d85852931c6a753c2363ebe5a293b33
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1582'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 >[!IMPORTANT]
 >
 >Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
-></br>
+>></br>
 >
 >Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI Assistant i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
@@ -80,13 +80,21 @@ Följ de här stegen:
 
    ![](assets/push-genai-full-5.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
-1. Bläddra igenom den genererade **[!UICONTROL Variations]** och klicka på **[!UICONTROL Preview]** för att visa en fullskärmsversion av den valda varianten.
+1. Bläddra igenom den genererade **[!UICONTROL Variations]**.
+
+   Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller klicka på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
+
+1. Klicka på procentikonen för att visa din **[!UICONTROL Brand Alignment Score]** och identifiera eventuella feljusteringar av ditt varumärke.
+
+   Läs mer om [varumärkesjusteringspoäng](brands-score.md).
+
+   ![](assets/push-genai-full-4.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -98,7 +106,9 @@ Följ de här stegen:
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/push-genai-full-4.png){zoomable="yes"}
+   ![](assets/push-genai-full-6.png){zoomable="yes"}
+
+1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
@@ -145,11 +155,19 @@ I just det här exemplet får du lära dig hur du använder AI Assistant i Journ
 
    ![](assets/push-genai-4.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
+
+1. Bläddra igenom den genererade **[!UICONTROL Variations]**.
+
+1. Klicka på procentikonen för att visa din **[!UICONTROL Brand Alignment Score]** och identifiera eventuella feljusteringar av ditt varumärke.
+
+   Läs mer om [varumärkesjusteringspoäng](brands-score.md).
+
+   ![](assets/push-genai-5.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -159,13 +177,15 @@ I just det här exemplet får du lära dig hur du använder AI Assistant i Journ
 
    * **[!UICONTROL Summarize]**: Långvarig information kan överlagra mottagare. Använd AI Assistant för att komprimera viktiga punkter till tydliga, kortfattade sammanfattningar som får dem att lyssna och uppmuntrar dem att läsa vidare.
 
-   * **[!UICONTROL Rephrase]**:AI-assistenten kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
+   * **[!UICONTROL Rephrase]**:TheAI Assistant kan omformulera ditt meddelande på olika sätt, vilket håller skrivandet aktuellt och engagerande för olika målgrupper.
 
    * **[!UICONTROL Use simpler language]**: Använd AI Assistant för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/push-genai-5.png){zoomable="yes"}
+   ![](assets/push-genai-6.png){zoomable="yes"}
+
+1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
@@ -187,7 +207,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 1. Öppna menyn **[!UICONTROL Add media]**.
 
-   ![](assets/push-gen-img.png){zoomable="yes"}
+   ![](assets/push-gen-img-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
@@ -199,7 +219,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/push-gen-img-1.png){zoomable="yes"}
+   ![](assets/push-gen-img.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
@@ -209,7 +229,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-1. Klicka på **[!UICONTROL Upload brand asset]** på menyn **[!UICONTROL Brand assets]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
@@ -217,9 +237,22 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 1. Bläddra igenom den genererade **[!UICONTROL Variations]**.
 
+1. Klicka på procentikonen för att visa din **[!UICONTROL Brand Alignment Score]** och identifiera eventuella feljusteringar av ditt varumärke.
+
+   Läs mer om [varumärkesjusteringspoäng](brands-score.md).
+
+1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
+
+   * **[!UICONTROL Generate Similar]** om du vill visa relaterade bilder till den här varianten.
+   * **[!UICONTROL Edit in Adobe Express]** om du vill anpassa resursen ytterligare.
+
+[Läs mer om Adobe Express-integrering](../integrations/express.md)
+
+   * **[!UICONTROL Save]** om du vill lagra resurserna för senare åtkomst.
+
    ![](assets/push-gen-img-2.png){zoomable="yes"}
 
-1. Välj **[!UICONTROL Generate Similar]** om du vill visa bildvariationer som överensstämmer med det aktuella alternativet och tillhandahålla alternativa designer med ett konsekvent tema.
+1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 

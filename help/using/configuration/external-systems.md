@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: e3ed3d2d662d76c022a7820f3771289b14c8b8b8
+source-git-commit: 0a6db9c9537563fea5d56289d78b9ed49d703734
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 23%
+source-wordcount: '1352'
+ht-degree: 24%
 
 ---
 
@@ -102,7 +102,7 @@ Låt oss ta ett exempel i 5 sekunder.
 
 **Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?**
 
-Se [det här avsnittet](../configuration/external-systems.md#capping) om du vill skapa regler för begränsning och begränsning. Som standard finns det ingen begränsning, men en begränsning på 300 000 anrop över en minut som definierats för alla anpassade åtgärder, per värd och per sandlåda. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste tänka på detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning.
+Se [det här avsnittet](../configuration/external-systems.md#capping) om du vill skapa regler för begränsning och begränsning. Som standard finns det ingen begränsning, men en begränsning på 300 000 anrop över en minut som definierats för alla anpassade åtgärder, per värd och per sandlåda. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning.
 
 **Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
 

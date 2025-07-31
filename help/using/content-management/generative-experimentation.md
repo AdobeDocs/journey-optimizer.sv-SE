@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
-source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
+source-git-commit: 1f7fd3468d85852931c6a753c2363ebe5a293b33
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 >[!IMPORTANT]
 >
 >Innan du börjar använda den här funktionen bör du läsa upp relaterade [säkerhetsutkast och begränsningar](gs-generative.md#generative-guardrails).
-></br>
+>></br>
 >
 >Du måste godkänna ett [användaravtal](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI Assistant i Journey Optimizer. Kontakta din Adobe-representant om du vill veta mer.
 
@@ -44,9 +44,7 @@ När du har skapat och personaliserat dina meddelanden kan du lyfta fram ditt in
 
    ![](assets/experiment-genai-3.png)
 
-1. I fönstret Innehållsexperiment öppnar du knappen **[!UICONTROL Experiment settings]** för att konfigurera ditt experiment. [Läs mer om Content Experiment](../content-management/content-experiment.md)
-
-   ![](assets/experiment-genai-4.png)
+1. Från din Content Experiment kan du nu börja konfigurera dina innehållsexperiment. [Läs mer om Content Experiment](../content-management/content-experiment.md)
 
 1. När ditt innehållsexperiment är klart kan du från kampanjsammanfattningssidan klicka på **[!UICONTROL Review to activate]** för att visa en sammanfattning av kampanjen. Varningar visas om någon parameter är felaktig eller saknas. [Läs mer](../content-management/content-experiment.md#treatment-experiment)
 
