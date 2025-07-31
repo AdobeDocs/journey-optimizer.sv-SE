@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
-source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
+source-git-commit: 458e0b19725147e0a3ad34891ca55b61f1ac44a8
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
 
 Aktiviteten **[!UICONTROL Save audience]** är en **[!UICONTROL Targeting]**-aktivitet som används för att skapa en ny målgrupp eller uppdatera en befintlig utifrån den population som skapades tidigare i den orchestrerade-kampanjen. När målgruppen har sparats läggs den till i listan över programmålgrupper och blir tillgänglig på menyn **[!UICONTROL Audiences]**.
 
-Det används ofta för att fånga målgruppssegment som skapats i samma kampanjarbetsflöde, så att de kan återanvändas i framtida kampanjer. Det är vanligtvis kopplat till andra målinriktningsaktiviteter, som **[!UICONTROL Build audience]** eller **[!UICONTROL Combine]**, för att spara den slutliga målpopulationen.
+Det används ofta för att fånga målgruppssegment som skapats inom samma kampanj, och göra dem tillgängliga för återanvändning i framtida kampanjer. Det är vanligtvis kopplat till andra målinriktningsaktiviteter, som **[!UICONTROL Build audience]** eller **[!UICONTROL Combine]**, för att spara den slutliga målpopulationen.
 
 ## Konfigurera aktiviteten Spara målgrupp {#save-audience-configuration}
 

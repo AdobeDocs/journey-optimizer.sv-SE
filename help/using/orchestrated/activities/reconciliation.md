@@ -7,9 +7,9 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
-source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
+source-git-commit: 458e0b19725147e0a3ad34891ca55b61f1ac44a8
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,13 @@ Med aktiviteten **[!UICONTROL Enrichment]** kan du lägga till ytterligare data 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_rules"
 >title="Avstämningsregler"
->abstract="Välj avstämningsregler som ska användas för dedupliceringen. Om du vill använda attribut markerar du alternativet **Enkla attribut** och väljer käll- och målfälten. Om du vill skapa ett eget avstämningsvillkor med frågemodelleraren väljer du alternativet **Avancerade avstämningsvillkor** ."
->additional-url="https://experienceleague.adobe.com/sv/docs/campaign-web/v8/query-database/query-modeler-overview" text="Arbeta med frågemodelleraren"
+>abstract="Välj avstämningsregler som ska användas för dedupliceringen. Om du vill använda attribut markerar du alternativet **Enkla attribut** och väljer käll- och målfälten. Om du vill skapa ett eget avstämningsvillkor med hjälp av regelbyggaren väljer du alternativet **Avancerade avstämningsvillkor** ."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_targeting_selection"
 >title="Välj måldimension"
 >abstract="Välj måldimension för inkommande data som ska förenas med."
->additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html?lang=sv-SE#targeting-dimensions" text="Måldimensioner"
+>additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html#targeting-dimensions" text="Måldimensioner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_keep_unreconciled_data"
@@ -94,7 +93,7 @@ Med aktiviteten **[!UICONTROL Enrichment]** kan du lägga till ytterligare data 
 
 Så här konfigurerar du aktiviteten **[!UICONTROL Reconciliation]**:
 
-1. Lägg till en **[!UICONTROL Reconciliation]**-aktivitet i arbetsflödet.
+1. Lägg till en **[!UICONTROL Reconciliation]**-aktivitet på arbetsytan.
 
 1. Välj en ny målinriktningsdimension för att definiera vilka ni riktar er mot, till exempel mottagare eller prenumeranter.
 
@@ -114,9 +113,9 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Reconciliation]**:
 
 1. Om du vill lägga till fler matchande regler klickar du på **[!UICONTROL Add rule]**. Alla villkor måste vara uppfyllda för att en matchning ska ske.
 
-1. Välj **[!UICONTROL Advanced reconciliation conditions]** om du vill ha mer komplexa villkor. Använd [frågemodelleraren](../orchestrated-rule-builder.md) för att definiera anpassad logik.
+1. Välj **[!UICONTROL Advanced reconciliation conditions]** om du vill ha mer komplexa villkor. Använd [regelbyggaren](../orchestrated-rule-builder.md) för att definiera anpassad logik.
 
-1. Om du vill filtrera vilka data som ska stämmas av klickar du på **[!UICONTROL Create filter]** och definierar villkoret i frågemodelleraren.
+1. Om du vill filtrera vilka data som ska förenas klickar du på **[!UICONTROL Create filter]** och definierar villkoret i regelbyggaren.
 
 1. Som standard lagras omatchade poster i den utgående övergången och lagras i arbetstabellen. Aktivera alternativet **[!UICONTROL Keep unreconciled data]** om du vill ta bort dessa.
 

@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: fb7a0eb2-b2ff-49fa-af1f-f1c10f219b00
-source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
+source-git-commit: 458e0b19725147e0a3ad34891ca55b61f1ac44a8
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -43,13 +43,13 @@ Det har också stöd för fördefinierade filter under förhållanden, vilket g�
 
 ## Åtkomst till regelbyggaren
 
-Frågemodelleraren är tillgänglig i alla sammanhang där du behöver definiera regler för att filtrera data.
+Regelbyggaren är tillgänglig i alla sammanhang där du behöver definiera regler för att filtrera data.
 
 | Användning | Exempel |
 |  ---  |  ---  |
 | **Bygg målgrupper**: Ange den målgrupp du vill rikta in dig på i dina samordnade kampanjer med en **[!UICONTROL Build audience]** -aktivitet och skapa enkelt nya målgrupper som är anpassade efter dina behov. [Lär dig skapa målgrupper](../orchestrated/activities/build-audience.md) | ![Bild som visar hur du kommer åt gränssnittet för målgruppsskapande](assets/query-access-audience.png){width="200" align="center" zoomable="yes"} |
 | **Skapa villkor på kampanjarbetsytan**: Använd regler på kampanjarbetsytan med en **[!UICONTROL Split]**-aktivitet för att anpassa dig efter dina specifika krav. [Lär dig använda en delad aktivitet](../orchestrated/activities/split.md) | ![Bild som visar hur du får åtkomst till alternativ för anpassning av arbetsflöden](assets/query-access-split.png){width="200" align="center" zoomable="yes"} |
-| **Skapa avancerade filter**: Skapa regler för att filtrera data som visas i listor, till exempel arbetsflödesloggar eller måldimensioner. | ![Bild som visar hur du anpassar listfilter](assets/query-access-advanced-filters.png){width="200" align="center" zoomable="yes"} |
+| **Skapa avancerade filter**: Skapa regler för att filtrera data som visas i listor som kampanjloggar eller måldimensioner. | ![Bild som visar hur du anpassar listfilter](assets/query-access-advanced-filters.png){width="200" align="center" zoomable="yes"} |
 
 ## Gränssnitt för regelbyggaren {#interface}
 
