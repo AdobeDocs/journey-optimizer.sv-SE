@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: ddb0a03461f37c7217486cc7fb8f28df83a90e59
+source-git-commit: 29532b5ebd140f9609a29c1375ceedecf55d0dfb
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '2436'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_decision_policy"
 >title="Definiera en beslutspolicy"
 >abstract="Med en beslutspolicy kan ni välja ut de bästa elementen från beslutsmotorn och leverera dem till rätt målgrupp."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_policy"
@@ -42,21 +42,40 @@ ht-degree: 0%
 >title="Välj beslutsattribut från katalog"
 >abstract="Beslutsattribut lagras i katalogschemat. Välj ett attribut som du vill använda här från den valda katalogen."
 
-Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att välja det bästa innehållet att leverera, beroende på målgruppen.
+Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem. Deras mål är att välja de bästa erbjudandena för varje profil, medan kampanjen/resan gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet.
 
-<!--Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. -->Deras mål är att välja de bästa erbjudandena för varje profil, medan kampanjen/resan gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet.
+## Viktiga steg {#key}
 
->[!NOTE]
->
->Beslutsprinciper anges som beslut [!DNL Journey Optimizer] i användargränssnittet <!--but they are decision policies. TBC if this note is needed-->.
+De viktigaste stegen för att utnyttja beslutsstrategier i era budskap är följande:
 
-De viktigaste stegen för att utnyttja beslutsregler i era kodbaserade kampanjer är följande:
+1. [Skapa en beslutspolicy i ett e-postmeddelande eller en kodbaserad upplevelse](#add-decision)
 
-1. [Lägga till en beslutsprincip i en kodbaserad upplevelse](#add-decision)
-1. [Använd beslutsprincipen](#use-decision-policy)
-1. [Skapa anpassade Customer Journey Analytics rapportpaneler](cja-reporting.md)
+   Ställ in en beslutspolicy i e-postmeddelandet eller den kodbaserade upplevelsen genom att välja hur många objekt som ska returneras, konfigurera urvalsstrategier, reservalternativ och utvärderingsordning.
 
-## Lägga till en beslutsprincip i en kodbaserad upplevelse {#add-decision}
+1. [Använd beslutsprincipen i ditt innehåll](#use-decision-policy)
+
+   Anpassa innehållet med beslutsunderlag och attribut från de beslutsobjekt du vill visa i meddelandet.
+
+1. [Skapa rapportinstrumentpaneler](cja-reporting.md)
+
+   Bygg anpassade Customer Journey Analytics-kontrollpaneler för att mäta prestanda och få insikt i hur era beslutsstrategier och -erbjudanden levereras och engageras.
+
+## Skyddsritningar och begränsningar
+
+* **Begränsad tillgänglighet - Beslutsprincip i e-postmeddelanden** - För närvarande är det begränsad tillgänglighet att skapa beslutsprinciper i e-postmeddelanden. Kontakta din Adobe-representant för att få åtkomst.
+* **Spegelsidor** - För tillfället återges inte beslutsobjekt i e-postspegelsidor.
+* **Spårnings- och länktyp** - Om du vill spåra länkar som skapats genom beslut definierar du dem i schemat som&quot;Decisioning Assets&quot;. Attributbaserade länkar går inte att spåra.
+* **Beslutsprincipkapsling i e-postmeddelanden** - Det går inte att kapsla flera beslutsprinciper i en överordnad e-postkomponent som redan har en associerad beslutsprincip.
+* **Duplicerade resor/kampanjer med beslut** - Om du duplicerar en resa eller kampanj som innehåller en beslutsprincip refererar den duplicerade versionen till det ursprungliga e-postmeddelandet eller den kodbaserade upplevelsen, vilket ger upphov till fel. Konfigurera alltid om beslutsprincipen efter duplicering.
+* **Samtyckesprinciper** - Det kan ta upp till 24 timmar innan medgivandeprinciper börjar gälla. Om en beslutspolicy refererar till ett attribut som är knutet till en nyligen uppdaterad medgivandepolicy, kommer ändringarna inte att tillämpas omedelbart.
+
+  Om nya profilattribut som omfattas av en samtyckespolicy läggs till i en beslutspolicy kommer de att vara användbara, men den medgivandepolicy som är kopplad till dem kommer inte att tillämpas förrän förseningen har passerat.
+
+  Samtyckesregler är endast tillgängliga för organisationer som har Adobe Healthcare Shield eller tillägg till Privacy and Security Shield.
+
+* **AI-rankning** - För tillfället stöds inte AI-rankning för e-postkanalen i resor med beslut.
+
+## Skapa en beslutspolicy i ett e-postmeddelande eller en kodbaserad upplevelse {#add-decision}
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_item_number"
@@ -72,45 +91,74 @@ De viktigaste stegen för att utnyttja beslutsregler i era kodbaserade kampanjer
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
-Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för besökarna på din webbplats eller i din mobilapp, lägger du till en beslutspolicy till en kodbaserad kampanj eller resa. Följ stegen nedan för att göra det.
+Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för mottagarna och besökarna i dina e-postmeddelanden på din webbplats eller i din mobilapp lägger du till en beslutspolicy i ett e-postmeddelande eller en kodbaserad kampanj eller resa. Följ stegen nedan för att göra det.
 
-### Skapa beslutsprincipen {#add}
+### Skapa en beslutspolicy {#add}
 
-1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
+1. Lägg till en **[!UICONTROL Email]**- eller **[!UICONTROL Code-base experience]**-åtgärd under en resa eller kampanj.
 
-1. Välj [ i ](../code-based/create-code-based.md#edit-code)kodredigeraren **[!UICONTROL Decision policy]** och klicka på **[!UICONTROL Add decision policy]**.
+1. För e-postmeddelanden växlar du **[!UICONTROL Enable decisioning]** på konfigurationsskärmen.
 
-   ![](assets/decision-code-based-create.png)
+   ![](assets/decision-policy-enable.png)
 
-   Från kundresan eller kampanjversionen kan ni också lägga till en beslutspolicy direkt utan att behöva öppna personaliseringsredigeraren. Använd den dedikerade ikonen till höger för att visa avsnittet **[!UICONTROL Decisioning]**.
-
-   ![](../code-based/assets/code-based-campaign-show-decisioning.png)
-
-1. Som standard skapar du en ny profil.
-
-   >[!NOTE]
+   >[!IMPORTANT]
    >
-   >Du kan också välja att välja en befintlig profil.
-
-1. Fyll i informationen för din beslutsprincip: lägg till ett namn och välj en katalog.
-
-   >[!NOTE]
+   >Om du aktiverar beslutsfattande rensas befintligt e-postinnehåll. Om du redan har utformat e-postmeddelandet måste du spara innehållet som en mall i förväg.
    >
-   >För närvarande är bara standardkatalogen **[!UICONTROL Offers]** tillgänglig.
+   >Observera att alla beslutsprinciper som har konfigurerats i e-postmeddelandet inte sparas i mallen. Om du tillämpar mallen på ett annat e-postmeddelande måste du konfigurera om profilen.
 
-1. Välj det antal objekt som du vill returnera. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen. Klicka på **[!UICONTROL Next]**.
+1. Profiler kan skapas i e-post- och kodbaserade upplevelser med personaliseringsredigeraren. De kan också skapas i e-postmeddelanden från en dedikerad meny i e-postprogrammet Designer. Expandera avsnitten nedan om du vill ha mer information.
+
+   +++Personalization editor
+
+   1. Öppna anpassningsredigeraren och välj **[!UICONTROL Decision policy]**.
+   1. Klicka på knappen **[!UICONTROL Add decision policy]** om du vill skapa en ny profil.
+
+      ![](assets/decision-code-based-create.png)
+
++++
+
+   +++E-posta Designer **[!UICONTROL Decisioning]**-menyn
+
+   1. Markera en komponent, klicka på ikonen **[!UICONTROL Decisioning]** i verktygsfältet eller egenskapsrutan och välj sedan **[!UICONTROL Add new policy]**.
+
+   1. Välj **[!UICONTROL Reuse decision output]** om du vill återanvända en beslutsprincip som redan har skapats i det här e-postmeddelandet.
+
+      ![](assets/decision-policy-email-designer.png)
+
++++
+
+1. Ange ett namn och välj en katalog (för närvarande begränsad till standardkatalogen **[!UICONTROL Offers]**).
+
+1. Välj antalet objekt som ska returneras. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen.
 
    ![](assets/decision-code-based-details.png)
+
+   För e-postmeddelanden kan flera objekt bara returneras i en **[!UICONTROL Repeat grid]**-innehållskomponent. Expandera avsnittet nedan om du vill ha mer information:
+
++++ Returnera flera beslutsobjekt i e-postmeddelanden
+
+   1. Dra en **[!UICONTROL Repeat Grid]**-komponent till arbetsytan och konfigurera den som du vill med hjälp av rutan **[!UICONTROL Settings]**.
+
+      ![](assets/decision-policy-repeat.png)
+
+   1. Klicka på ikonen **[!UICONTROL Decisioning]** i verktygsfältet på arbetsytan eller öppna rutan **[!UICONTROL Decisioning]** och välj **[!UICONTROL Add decision policy]**.
+
+   1. Ange antalet objekt som ska returneras i fältet **[!UICONTROL Number of items]** och konfigurera sedan beslutsprincipen enligt nedan. Det maximala antalet objekt som du kan markera begränsas av antalet rutor som definieras i komponenten **[!UICONTROL Repeat grid]**.
+
+   ![](assets/decision-policy-repeat-number.png)
+
++++
+
+1. Klicka på **[!UICONTROL Next]**.
 
 ### Välj objekt och urvalsstrategier {#select}
 
 I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt och urvalsstrategier som ska presenteras med beslutspolicyn.
 
-1. Klicka på knappen **[!UICONTROL Add]**.
-
-1. Välj vilken typ av objekt som ska ingå i profilen:
+1. Klicka på **[!UICONTROL Add]** och välj vilken typ av objekt som ska inkluderas i profilen:
 
    * **[!UICONTROL Selection strategy]**: Lägg till en eller flera markeringsstrategier. Beslutsstrategier utnyttjar samlingar som är kopplade till behörighetskrav och rangordningsmetoder för att fastställa vilka poster som ska visas. Du kan välja en befintlig urvalsstrategi eller skapa en ny med knappen **[!UICONTROL Create selection strategy]**. [Lär dig hur du skapar urvalsstrategier](selection-strategies.md)
 
@@ -122,120 +170,151 @@ I avsnittet **[!UICONTROL Strategy sequence]** kan du välja vilka beslutsobjekt
    >
    >En beslutspolicy stöder upp till 10 urvalsstrategier och beslutsposter tillsammans. [Läs mer om hur du bestämmer dig för skyddsprofiler och begränsningar](gs-experience-decisioning.md#guardrails)
 
-1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare.
+1. När du lägger till flera beslutsposter och/eller strategier utvärderas de i en viss ordning. Det första objektet som lades till i sekvensen utvärderas först och så vidare. Om du vill ändra standardsekvensen drar och släpper du objekten och/eller grupperna för att ordna om dem som du vill. Expandera avsnittet nedan om du vill ha mer information.
 
-   Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer](#evaluation-order)
+   +++Hantera utvärderingsordning i en beslutspolicy
 
-### Hantera utvärderingsordning i en beslutspolicy {#evaluation-order}
+   När du har lagt till beslutsposter och urvalsstrategier i din policy kan du ordna dem för att fastställa deras utvärderingsordning och kombinera urvalsstrategier för att utvärdera dem tillsammans.
 
-När du har lagt till beslutsposter och urvalsstrategier i din policy kan du ordna dem för att fastställa deras utvärderingsordning och kombinera urvalsstrategier för att utvärdera dem tillsammans.
+   Den **sekventiella ordningen** i vilken objekt och strategier utvärderas anges med siffror till vänster om varje objekt eller grupp av objekt. Om du vill flytta positionen för en urvalsstrategi (eller en grupp strategier) i sekvensen drar och släpper du den till en annan position.
 
-Den **sekventiella ordningen** i vilken objekt och strategier utvärderas anges med siffror till vänster om varje objekt eller grupp av objekt. Om du vill flytta positionen för en urvalsstrategi (eller en grupp strategier) i sekvensen drar och släpper du den till en annan position.
+   ![](assets/decision-code-based-strategy-groups.png)
 
->[!NOTE]
->
->Endast markeringsstrategier kan dras och släppas i en sekvens. Om du vill ändra positionen för ett beslutsobjekt måste du ta bort det och lägga tillbaka det med knappen **[!UICONTROL Add]** när du har lagt till de andra objekten som du vill utvärdera tidigare.
+   >[!NOTE]
+   >
+   >Endast markeringsstrategier kan dras och släppas i en sekvens. Om du vill ändra positionen för ett beslutsobjekt måste du ta bort det och lägga tillbaka det med knappen **[!UICONTROL Add]** när du har lagt till de andra objekten som du vill utvärdera tidigare.
 
-![](assets/decision-code-based-strategy-groups.png)
+   Du kan också **kombinera** flera markeringsstrategier i grupper så att de utvärderas tillsammans och inte separat. Om du vill göra det klickar du på knappen **`+`** under en urvalsstrategi för att kombinera den med en annan. Du kan också dra och släppa en markeringsstrategi på en annan om du vill gruppera de två strategierna i en grupp.
 
-Du kan också **kombinera** flera markeringsstrategier i grupper så att de utvärderas tillsammans och inte separat. Om du vill göra det klickar du på knappen **`+`** under en urvalsstrategi för att kombinera den med en annan. Du kan också dra och släppa en markeringsstrategi på en annan om du vill gruppera de två strategierna i en grupp.
+   >[!NOTE]
+   >
+   >Beslutsobjekt kan inte grupperas tillsammans med andra objekt eller urvalsstrategier.
 
->[!NOTE]
->
->Beslutsobjekt kan inte grupperas tillsammans med andra objekt eller urvalsstrategier.
+   Flera strategier och grupperingar av dem avgör prioriteringen av strategierna och rangordningen av godtagbara erbjudanden. Den första strategin har högsta prioritet och de strategier som kombineras inom samma grupp har samma prioritet.
 
-Flera strategier och grupperingar av dem avgör prioriteringen av strategierna och rangordningen av godtagbara erbjudanden. Den första strategin har högsta prioritet och de strategier som kombineras inom samma grupp har samma prioritet.
+   Du har till exempel två samlingar, en i strategi A och en i strategi B. Begäran är att två beslutsobjekt ska skickas tillbaka. Låt oss säga att det finns två giltiga erbjudanden från strategi A och tre giltiga erbjudanden från strategi B.
 
-Du har till exempel två samlingar, en i strategi A och en i strategi B. Begäran är att två beslutsobjekt ska skickas tillbaka. Låt oss säga att det finns två giltiga erbjudanden från strategi A och tre giltiga erbjudanden från strategi B.
+   * Om de två strategierna **inte kombineras** eller i sekventiell ordning (1 och 2) returneras de två främsta giltiga erbjudandena från den första strategin på den första raden. Om det inte finns två godtagbara erbjudanden för den första strategin kommer beslutsmotorn att gå vidare till nästa strategi i sekvens för att hitta så många erbjudanden som fortfarande behövs, och kommer i slutändan att returnera en reservlösning om det behövs.
 
-* Om de två strategierna **inte kombineras** eller i sekventiell ordning (1 och 2) returneras de två främsta giltiga erbjudandena från den första strategin på den första raden. Om det inte finns två godtagbara erbjudanden för den första strategin kommer beslutsmotorn att gå vidare till nästa strategi i sekvens för att hitta så många erbjudanden som fortfarande behövs, och kommer i slutändan att returnera en reservlösning om det behövs.
+     ![](assets/decision-code-based-consecutive-strategies.png)
 
-  ![](assets/decision-code-based-consecutive-strategies.png)
+   * Om de två samlingarna **utvärderas samtidigt**, eftersom det finns två giltiga erbjudanden från strategi A och tre giltiga erbjudanden från strategi B, kommer alla fem erbjudanden att grupperas tillsammans baserat på det värde som fastställs av respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
 
-* Om de två samlingarna **utvärderas samtidigt**, eftersom det finns två giltiga erbjudanden från strategi A och tre giltiga erbjudanden från strategi B, kommer alla fem erbjudanden att grupperas tillsammans baserat på det värde som fastställs av respektive rangordningsmetod. Två erbjudanden begärs, och därför returneras de två främsta erbjudandena från dessa fem.
+     ![](assets/decision-code-based-combined-strategies.png)
 
-  ![](assets/decision-code-based-combined-strategies.png)
+   **Exempel med flera strategier**
 
-+++ **Exempel med flera strategier**
+   Låt oss nu titta på ett exempel där du har flera strategier indelade i olika grupper. Du definierade tre strategier. Strategi 1 och strategi 2 kombineras i grupp 1 och strategi 3 är oberoende (grupp 2). De berättigade erbjudandena för varje strategi och deras prioritet (används vid rankningsfunktionens utvärdering) är följande:
 
-Låt oss nu titta på ett exempel där du har flera strategier indelade i olika grupper.
+   * Grupp 1:
+      * Strategi 1 - (erbjudande 1, erbjudande 2, erbjudande 3) - prioritet 1
+      * Strategi 2 - (erbjudande 3, erbjudande 4, erbjudande 5) - prioritet 1
 
-Du definierade tre strategier. Strategi 1 och strategi 2 kombineras i grupp 1 och strategi 3 är oberoende (grupp 2).
+   * Grupp 2:
+      * Strategi 3 - (erbjudande 5, erbjudande 6) - Prioritet 0
 
-De berättigade erbjudandena för varje strategi och deras prioritet (används vid rankningsfunktionens utvärdering) är följande:
+   Strategierbjudanden med högst prioritet utvärderas först och läggs till i listan med rankade erbjudanden.
 
-* Grupp 1:
-   * Strategi 1 - (erbjudande 1, erbjudande 2, erbjudande 3) - prioritet 1
-   * Strategi 2 - (erbjudande 3, erbjudande 4, erbjudande 5) - prioritet 1
+   * **Iteration 1:**
 
-* Grupp 2:
-   * Strategi 3 - (erbjudande 5, erbjudande 6) - Prioritet 0
+     Strategi 1 och strategi 2-erbjudanden utvärderas tillsammans (erbjudande 1, erbjudande 2, erbjudande 3, erbjudande 4, erbjudande 5). Låt oss säga att resultatet är:
 
-Strategierbjudanden med högst prioritet utvärderas först och läggs till i listan med rankade erbjudanden.
-
-**Iteration 1:**
-
-Strategi 1 och strategi 2-erbjudanden utvärderas tillsammans (erbjudande 1, erbjudande 2, erbjudande 3, erbjudande 4, erbjudande 5). Låt oss säga att resultatet är:
-
-Erbjudande 1-10
+     Erbjudande 1-10
 Erbjudande 2-20
 Erbjudande 3-30 från strategi 1, 45 från strategi 2. Det högsta av båda kommer att övervägas, så 45 kommer att beaktas.
 Erbjudande 4-40
 Erbjudande 5-50
 
-Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1.
+     Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1.
 
-**Iteration 2:**
+   * **Iteration 2:**
 
-Strategi 3-erbjudanden utvärderas (erbjudande 5, erbjudande 6). Låt oss säga att resultatet är:
+     Strategi 3-erbjudanden utvärderas (erbjudande 5, erbjudande 6). Låt oss säga att resultatet är:
 
-* Erbjudande 5 - Kommer inte att utvärderas eftersom det redan finns i resultatet ovan.
-* Erbjudande 6-60
+      * Erbjudande 5 - Kommer inte att utvärderas eftersom det redan finns i resultatet ovan.
+      * Erbjudande 6-60
 
-Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1, Erbjudande 6.
+     Rankade erbjudanden: Erbjudande 5, Erbjudande 3, Erbjudande 4, Erbjudande 2, Erbjudande 1, Erbjudande 6.
 
 +++
 
+1. Klicka på **[!UICONTROL Next]**
+
 ### Lägg till reserverbjudanden {#fallback}
 
-När du har valt beslutsobjekt och/eller urvalsstrategier kan du lägga till reserverbjudanden som visas för användarna om inga av ovanstående objekt eller urvalsstrategier är kvalificerade.
-
-![](assets/decision-code-based-strategy-fallback.png)
+När du har valt beslutsobjekt och/eller urvalsstrategier kan du lägga till reserverbjudanden som visas om ingen av ovanstående poster eller urvalsstrategier är kvalificerad.
 
 Du kan välja valfritt objekt i listan, som visar alla beslutsobjekt som har skapats i den aktuella sandlådan. Om ingen urvalsstrategi är kvalificerad visas reservdelen för användaren oavsett vilka datum och villkor för behörighet som gäller för det valda objektet <!--nor frequency capping when available - TO CLARIFY-->.
 
->[!NOTE]
->
->En reservlösning är valfri. Om ingen reservlösning har valts och ingen strategi är kvalificerad visas ingenting av [!DNL Journey Optimizer]. Du kan lägga till upp till det antal objekt som beslutsprincipen begär. Detta garanterar att ett visst antal artiklar returneras om så önskas för användningsfallet.
-
-När din beslutsprincip är klar sparar du den och klickar på **[!UICONTROL Create]**. Nu när beslutspolicyn har skapats kan du använda beslutsattributen i ditt kodbaserade upplevelseinnehåll. [Läs mer](#use-decision-policy)
-
-![](assets/decision-code-based-decision-added.png)
-
-## Använd beslutsprincipen i kodredigeraren {#use-decision-policy}
-
-När beslutsprincipen har skapats kan den användas i [personaliseringsredigeraren](../code-based/create-code-based.md#edit-code). Följ stegen nedan för att göra det.
+![](assets/decision-code-based-strategy-fallback.png)
 
 >[!NOTE]
->
->Kodbaserad upplevelse utnyttjar personaliseringsredigeraren [!DNL Journey Optimizer] med alla dess funktioner för personalisering och redigering. [Läs mer](../personalization/personalization-build-expressions.md)
+> Reservationer är valfria. Upp till antalet begärda objekt kan väljas. Om ingen är berättigad och ingen reservlösning är inställd visas ingenting.
 
-1. Klicka på knappen **[!UICONTROL Insert policy]**. Koden som motsvarar beslutspolicyn läggs till.
+### Spara och hantera beslutsstrategier {#save}
+
+När din beslutsprincip är klar sparar du den och klickar på **[!UICONTROL Create]**.
+
+För e-postmeddelanden måste du definiera en placering för den komponent som är kopplad till beslutspolicyn. Om du vill göra det klickar du på knappen **[!UICONTROL Decisioning]** i rutan för komponentegenskaper och väljer **[!UICONTROL Assign placement]**. [Lär dig hur du arbetar med placeringar](../experience-decisioning/placements.md)
+
+![](assets/decision-policy-rail.png)
+
+Du kan redigera eller ta bort en beslutsprincip när som helst med hjälp av ellipsknappen i personaliseringsredigeraren, eller på menyn **[!UICONTROL Decisioning]** i komponentens egenskapspanel.
+
+>[!BEGINTABS]
+
+>[!TAB Redigera eller ta bort en princip från personaliseringsredigeraren]
+
+![](assets/decision-policy-edit.png)
+
+>[!TAB Redigera eller ta bort en princip från komponentens egenskaper]
+
+![](assets/decision-policy-edit-properties.png)
+
+>[!ENDTABS]
+
+## Använd en beslutspolicy i ditt innehåll {#use-decision-policy}
+
+När du väl har skapat en beslutspolicy och de attribut som är kopplade till de returnerade beslutsposterna kan du använda i ditt innehåll för att anpassa ditt innehåll. Gör så här:
+
+### Infoga beslutsprincipkoden {#insert-code}
+
+1. Öppna anpassningsredigeraren och gå till menyn **[!UICONTROL Decision policy]**.
+
+1. För e-postmeddelanden klickar du på **[!UICONTROL Insert syntax]** för att lägga till koden som motsvarar beslutsprincipen. Klicka på **[!UICONTROL Insert policy]** för kodbaserade upplevelser.
+
+   +++Infoga kod för beslutspolicy i e-postmeddelanden
+
+   ![](assets/decision-policy-add.png)
+
+   Om ingen placering har associerats med komponenten i förväg för e-postmeddelanden väljer du en i listan och klickar på **[!UICONTROL Assign]**.
+
+   ![](assets/decision-policy-placement.png)
+
++++
+
+   +++Infoga beslutsprincipkod i kodbaserad upplevelse
 
    ![](assets/decision-code-based-add-decision.png)
 
-   >[!NOTE]
-   >
-   >Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [du skapar beslutet](#add-decision) kommer samma sekvens att upprepas två gånger.
-
-1. Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga attributen lagras i **[!UICONTROL Offers]**-katalogens schema. Anpassade attribut lagras i mappen **`_<imsOrg`>** och standardattribut i mappen **`_experience`**. [Läs mer om offertkatalogens schema](catalogs.md)
-
-   ![](assets/decision-code-based-decision-attributes.png)
++++
 
    >[!NOTE]
    >
-   >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
-   >`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+   >Om knappen för kodinfogning inte visas kan det bero på att en beslutsprincip redan har konfigurerats för den överordnade komponenten.
+
+1. Koden för beslutspolicyn läggs till. Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [du skapar beslutet](#add-decision) kommer samma sekvens att upprepas två gånger.
+
+### Utnyttja attribut för beslutsartiklar {#attributes}
+
+Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga attributen lagras i **[!UICONTROL Offers]**-katalogens schema. Anpassade attribut lagras i mappen **`_<imsOrg`>** och standardattribut i mappen **`_experience`**. [Läs mer om offertkatalogens schema](catalogs.md)
+
+![](assets/decision-code-based-decision-attributes.png)
+
+>[!NOTE]
+>
+>För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
+>>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 1. Klicka på varje mapp för att expandera den. Placera musmarkören på önskad plats och klicka på ikonen + bredvid det attribut du vill lägga till. Du kan lägga till så många attribut du vill i koden.
 
@@ -249,16 +328,18 @@ När beslutsprincipen har skapats kan den användas i [personaliseringsredigerar
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
 
-1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
+## Slutliga steg {#final-steps}
 
-1. Granska och publicera er kodbaserade kampanj eller resa. [Lär dig hur](../code-based/publish-code-based.md)
+När innehållet är klart kan du granska och publicera kampanjen eller resan:
 
-   När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen, tillämpas ändringarna på webbsidan eller appen.
+* [Publicera en resa](../building-journeys/publishing-the-journey.md)
+* [Granska aktivering av en kampanj](../campaigns/review-activate-campaign.md)
+* [Publicera och aktivera en kodbaserad upplevelse](../code-based/publish-code-based.md)
 
-   >[!NOTE]
-   >
-   >För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](../code-based/create-code-based.md) -kampanj eller resa med hjälp av beslut. Det finns en tillfällig lösning i [det här avsnittet](../code-based/code-based-decisioning-implementations.md).
+När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för den yta som definieras i kanalkonfigurationen, kommer ändringarna att tillämpas på webbsidan eller appen för kodbaserade upplevelser.
 
-1. Om du vill se hur dina beslut fungerar kan du skapa anpassade [Customer Journey Analytics-rapportinstrumentpaneler](cja-reporting.md).
+>[!NOTE]
+>
+>För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](../code-based/create-code-based.md) -kampanj eller resa med hjälp av beslut. Det finns en tillfällig lösning i [det här avsnittet](../code-based/code-based-decisioning-implementations.md).
 
-
+Om du vill se hur dina beslut fungerar kan du skapa anpassade [Customer Journey Analytics-rapportinstrumentpaneler](cja-reporting.md).

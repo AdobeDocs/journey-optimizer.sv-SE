@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 22a8742bf9000ed1cc8437d7ac89747276284dbf
+source-git-commit: 29532b5ebd140f9609a29c1375ceedecf55d0dfb
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '957'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,17 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
    ![](assets/email_campaign_edit_content.png)
 
-   I avsnittet **[!UICONTROL Header]** på skärmen **[!UICONTROL Edit content]** är fältet **[!UICONTROL From name]**, **[!UICONTROL From email]** och **[!UICONTROL BCC]** konfigurerade i den e-postkonfiguration som du valde. [Läs mer](email-settings.md) <!--check if same for journey-->
+1. Växla **[!UICONTROL Enable decisioning]** om du vill lägga till beslutsprinciper i e-postmeddelandet.
+
+   Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem. [Lär dig hur du lägger till en beslutsprincip i ett e-postmeddelande](../experience-decisioning/create-decision.md#add)
+
+   ![](assets/../../experience-decisioning/assets/decision-policy-enable.png)
+
+   >[!AVAILABILITY]
+   >
+   >För närvarande är det inte möjligt för organisationer som köpt Adobe Healthcare Shield eller tillägg till Privacy and Security Shield att skapa policy i e-postmeddelanden.
+
+1. Kontrollera fälten **[!UICONTROL Header]**, **[!UICONTROL From name]** och **[!UICONTROL From email]** i avsnittet **[!UICONTROL BCC]**. De konfigureras i den e-postkonfiguration som du har valt. [Läs mer](email-settings.md) <!--check if same for journey-->
 
    ![](assets/email_designer_edit_content_header.png)
 
@@ -92,9 +102,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
    >[!NOTE]
    >
-   >* Ämnesraden är obligatorisk.
-   >
-   >* Ämnesraden får inte innehålla radbrytningar.
+   >Ämnesraden är obligatorisk. Den får inte innehålla radbrytningar.
 
 1. Klicka på knappen **[!UICONTROL Edit email body]** för att komma åt e-post-Designer och börja skapa ditt innehåll. [Läs mer](get-started-email-design.md)
 

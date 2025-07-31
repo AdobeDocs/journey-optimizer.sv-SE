@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 1e36871c2c975c81d018fabb3cff51d11c98962e
+source-git-commit: 29532b5ebd140f9609a29c1375ceedecf55d0dfb
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2594'
 ht-degree: 19%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 19%
    + [Bästa praxis](using/start/best-practices.md)
 + Resor {#orchestrate-journeys}
    + [Kom igång med resor](using/building-journeys/journey.md)
-   + Skapa en resa{#create-journey}
+   + Skapa en resa {#create-journey}
       + [Skapa den första resan](using/building-journeys/journey-gs.md)
       + [Ange egenskaper för din resa](using/building-journeys/journey-properties.md)
       + [Konfigurera och spåra dina resemått](using/building-journeys/success-metrics.md)
@@ -53,7 +53,7 @@ ht-degree: 19%
       + [Publicera din resa](using/building-journeys/publishing-the-journey.md)
       + [Pausa en resa](using/building-journeys/journey-pause.md)
       + [Live-rapport under din resa](using/building-journeys/report-journey.md)
-   + Hantera dina resor{#manage-journey}
+   + Hantera dina resor {#manage-journey}
       + [Bläddra och filtrera dina resor](using/building-journeys/journey-ui.md)
       + [Profilinträde under resor](using/building-journeys/entry-management.md)
       + [Kompletterande identifiering vid händelseutlösta resor](using/building-journeys/supplemental-identifier.md)
@@ -452,7 +452,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Innehållsexperiment med AI](using/content-management/generative-experimentation.md)
       + [Landningssida med AI](using/content-management/generative-lp.md)
       + [Användningsexempel för AI Assistant](using/content-management/generative-uc.md)
-      + Varumärken (beta){#brands}
+      + Varumärken {#brands}
          + [Skapa och hantera varumärken](using/content-management/brands.md)
          + [Utvärdera ert varumärkeskorteringsresultat](using/content-management/brands-score.md)
    + Flerspråkigt innehåll{#content-multilingual}
@@ -585,6 +585,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
             + [Automatisk optimeringsmodell](using/experience-decisioning/ranking/auto-optimization-model.md)
             + [Anpassad optimeringsmodell](using/experience-decisioning/ranking/personalized-optimization-model.md)
             + [Skapa AI-modeller](using/experience-decisioning/ranking/create-ai-models.md)
+      + [Arbeta med placeringar](using/experience-decisioning/placements.md)
       + Använd Adobe Experience Platform-data {#aep-data}
          + [Utnyttja kontextdata](using/experience-decisioning/context-data.md)
          + [Använd Adobe Experience Platform för beslut](using/experience-decisioning/aep-data-exd.md)
@@ -748,7 +749,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
