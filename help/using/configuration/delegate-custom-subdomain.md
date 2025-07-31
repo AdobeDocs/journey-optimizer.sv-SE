@@ -11,9 +11,9 @@ keywords: underdomän, delegering, domän, DNS
 hide: true
 hidefromtoc: true
 exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
-source-git-commit: 7854de133ebcd3b29ca59b747aa89fae242f2ea5
+source-git-commit: 0490045a763876d3518e3db92e8427691044f6aa
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '723'
 ht-degree: 2%
 
 ---
@@ -88,6 +88,10 @@ Följ stegen nedan för att konfigurera en anpassad underdomän.
 1. Klicka på **[!UICONTROL Download CSR]** och spara formuläret på den lokala datorn. Skicka det till certifikatutfärdaren för att hämta ditt SSL-certifikat.
 
 1. När certifikatet har hämtats klickar du på **[!UICONTROL Upload SSL certificate]** och överför det till [!DNL Journey Optimizer] i .pem-format.
+
+   >[!CAUTION]
+   >
+   >Både data- och CDN-underdomäner måste inkluderas i samma certifikat.
 
 ## Slutför stegen för feedbackslingan {#feedback-loop-steps}
 
