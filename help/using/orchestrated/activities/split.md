@@ -7,7 +7,7 @@ badge: label="Alpha"
 hide: true
 hidefromtoc: true
 exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
-source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
+source-git-commit: e71cbc5b29a31e2f23b408ae8c8b73379a44275d
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Aktiviteten **[!UICONTROL Split]** är en **[!UICONTROL Targeting]**-aktivitet s
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_filter"
 >title="Dela aktivitetsfilter"
->abstract="Om du vill använda ett filtreringsvillkor för delmängden klickar du på **[!UICONTROL Create filter]** och konfigurerar den önskade filtreringsregeln med frågemodelleraren. Ta till exempel med profiler från den inkommande populationen vars e-postadress finns i databasen."
+>abstract="Om du vill använda ett filtervillkor för delmängden klickar du på **[!UICONTROL Create filter]** och konfigurerar den önskade filterregeln med regelbyggaren. Ta till exempel med profiler från den inkommande populationen vars e-postadress finns i databasen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split_limit"
@@ -107,7 +107,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Split]**:
 
    1. Klicka på en delmängd för att öppna dess inställningar.
 
-   1. Klicka på **[!UICONTROL Create filter]** om du vill definiera filtreringsregler med frågemodelleraren, till exempel, markera profiler med en giltig e-postadress.
+   1. Klicka på **[!UICONTROL Create filter]** om du vill definiera filtreringsregler med regelbyggaren, till exempel, markera profiler med en giltig e-postadress.
 
       ![](../assets/orchestrated-split-1.png)
 
