@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 hide: true
 hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
+source-git-commit: 5e52573689ab06084441390299b01e112e699244
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -73,11 +73,7 @@ Ikonen **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** i verktygsfältet på 
 
 Du kan också snabbt identifiera misslyckade aktiviteter med hjälp av de [visuella statusindikatorerna](#activities) som visas direkt i varje aktivitet. Om du vill ha detaljerad felsökning öppnar du loggarna för [kampanjen](#logs-tasks), som innehåller detaljerad information om felet och dess sammanhang.
 
-<!--WAITING FOR PM's TEST TO UNHIDE
-
-If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities](activities/channels.md)
-
--->
+Om du har lagt till kanalaktiviteter på arbetsytan kan du förhandsgranska och testa innehållet i dina meddelanden med knappen **[!UICONTROL Simulate Content]**. [Lär dig arbeta med kanalaktiviteter](activities/channels.md)
 
 När kampanjen har validerats kan den publiceras.
 

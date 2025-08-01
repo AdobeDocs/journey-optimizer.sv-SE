@@ -7,29 +7,16 @@ feature: Whatsapp
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
-source-git-commit: 7f507dc0113e85191429c2c48b873112b590e3ce
+source-git-commit: 31e25c511d8873e54c7b92e65511108a77f84941
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 2%
+source-wordcount: '811'
+ht-degree: 1%
 
 ---
 
 
 # Skapa ett WhatsApp-meddelande {#create-whatsapp}
-
->[!BEGINSHADEBOX]
-
-**Innehållsförteckning**
-
-* [Kom igång med whatsApp-meddelanden](get-started-whatsapp.md)
-* [Kom igång med konfigurationen för whatsApp](whatsapp-configuration.md)
-* **[Skapa ett whatsApp-meddelande](create-whatsapp.md)**
-* [Kontrollera och skicka dina meddelanden om whatsApp](send-whatsapp.md)
-
->[!ENDSHADEBOX]
 
 Med Adobe Journey Optimizer kan du utforma och skicka engagerande meddelanden om whatsApp. Lägg bara till en whatsApp-åtgärd till resan eller kampanjen och skapa meddelandeinnehållet enligt beskrivningen nedan. Med Adobe Journey Optimizer kan du också testa dina whatsApp-meddelanden innan du skickar dem, vilket ger perfekt återgivning, korrekt personalisering och korrekt konfiguration av alla inställningar.
 
@@ -55,7 +42,8 @@ Följande call-to-action-alternativ är tillgängligt för dina WhatsApp-meddela
 | Utlysning av åtgärder | Beskrivning |
 |-|-|
 | Besök webbplatsen | Endast en knapp tillåts med variabelparametrar. |
-
+| Anropa whatsApp | Tillhandahåller en knapp som öppnar en whatsApp-chatt med det angivna telefonnumret direkt från meddelandet. |
+| Telefonnummer | Tillhandahåller en knapp som initierar ett telefonsamtal till det angivna numret när användaren knackar på det. |
 
 +++
 
@@ -146,11 +134,15 @@ Observera att din whatsApp-mall först måste godkännas av Meta innan den kan a
 
    ![](assets/whatsapp-design-2.png)
 
+1. Lägg till medie-URL:er i fältet **[!UICONTROL Image URL]** för att ersätta platshållare i mallen. Metas mallmedier är bara platshållare. Om du vill visa bilder, ljud eller video på rätt sätt måste du använda externa URL:er från Adobe Experience Manager eller andra källor.
+
+   ![](assets/whatsapp-design-3.png)
+
 1. Använd personaliseringsredigeraren för att lägga till personalisering i mallen. Du kan använda alla attribut, till exempel profilnamnet eller stad.
 
    Bläddra igenom följande sida om du vill veta mer om [personalisering](../personalization/personalize.md).
 
-   ![](assets/whatsapp-design-3.png)
+   ![](assets/whatsapp-design-4.png)
 
 1. Använd knappen **[!UICONTROL Simulate content]** för att förhandsgranska innehållet i dina WhatsApp-meddelanden, förkortade URL:er och anpassat innehåll. [Läs mer](send-whatsapp.md)
 
@@ -195,3 +187,14 @@ Once you have performed your tests and validated the content, you can send your 
 
 >[!ENDTABS]
 -->
+
+
+## Instruktionsvideo {#video}
+
+I videon nedan visas hur du skapar en whatsApp-resa i flera steg med Adobe Journey Optimizer.
+
++++ Se videon
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470282/?learn=on")
+
++++

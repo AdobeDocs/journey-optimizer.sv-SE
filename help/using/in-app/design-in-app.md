@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 61a30dcc93823dc5e8b647e683bfa2ebf5bfa01b
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1112'
 ht-degree: 6%
 
 ---
@@ -239,6 +239,22 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du anpassa meddel
 * **[!UICONTROL Message round corner]**: gör att du kan lägga till runda hörn i meddelanden i appen genom att ändra **[!UICONTROL Corner radius]**.
 
 +++
+
+## Fliken Data {#data-tab}
+
+På fliken **Data** kan du definiera en **[!UICONTROL Key]**-&#x200B; och **[!UICONTROL Value]** för att inkludera anpassade variabler i nyttolasten. Med dessa nyckel-/värdepar kan du skicka ytterligare data beroende på din konfiguration.
+
+Mer information finns i [Utvecklardokumentationen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/in-app-message/tutorials/messaging-metadata/).
+
+1. På fliken **[!UICONTROL Data]** väljer du **[!UICONTROL Add key/value pair]**.
+
+   ![](assets/in-app-data-menu.png)
+
+1. Fyll i fälten **[!UICONTROL Key]** &#x200B; och **[!UICONTROL Value]**.
+
+   ![](assets/in-app-data-menu-1.png)
+
+1. Klicka på ![](assets/do-not-localize/Smock_Delete_18_N.svg) om du vill ta bort de par som behövs.
 
 **Relaterade ämnen:**
 

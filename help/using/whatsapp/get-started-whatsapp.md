@@ -7,28 +7,15 @@ feature: Whatsapp
 topic: Content Management
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
-source-git-commit: 7f507dc0113e85191429c2c48b873112b590e3ce
+source-git-commit: 31e25c511d8873e54c7b92e65511108a77f84941
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
 # Kom igång med whatsApp-meddelanden {#get-started-whatsapp}
-
->[!BEGINSHADEBOX]
-
-**Innehållsförteckning**
-
-* **[Kom igång med whatsApp-meddelanden](get-started-whatsapp.md)**
-* [Kom igång med konfigurationen för whatsApp](whatsapp-configuration.md)
-* [Skapa ett WhatsApp-meddelande](create-whatsapp.md)
-* [Kontrollera och skicka dina meddelanden om whatsApp](send-whatsapp.md)
-
->[!ENDSHADEBOX]
 
 Du kan nu skicka whatsApp-meddelanden direkt via Journey Optimizer via Metas [Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/). Den här funktionen möjliggör smidig integrering av WhatsApp i resor och kampanjer, vilket förbättrar kommunikationen och engagemanget med mottagarna.
 
@@ -43,12 +30,9 @@ Du kan nu skicka whatsApp-meddelanden direkt via Journey Optimizer via Metas [Cl
 Integrering av WhatsApp med Journey Optimizer kräver följande:
 
 * Meta Business Manager-konto
-* WhatsApp Business-konto
-* WhatsApp-telefonnummer
+* [WhatsApp Business Account med verifierat avsändarnamn och telefonnummer](https://developers.facebook.com/docs/whatsapp/overview/business-accounts/)
 * [Token för användarauktorisering med lämplig behörighet](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)
 * [Godkända metamallar](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/)
-* [Konfiguration av Meta Webhooks](https://developers.facebook.com/docs/whatsapp/webhooks/)
-
 
 Du måste även känna till följande innan du fortsätter med integreringen:
 
@@ -62,7 +46,7 @@ Följande begränsningar gäller för WhatsApp-kanalen:
 
 * WhatsApp-kanalen i Adobe Journey Optimizer är HIPAA-klar, men tredjepartsleverantörer omfattas inte av Adobe BAA. Kunderna ansvarar för sin egen regelefterlevnad och leverantörsvalidering.
 
-* Observera att automatiska eller fördefinierade svarsmeddelanden inte stöds.
+* Observera att automatiska eller fördefinierade svarsmeddelanden ännu inte stöds.
 
 * Från och med april 2025 har leveransen av alla marknadsföringsmallmeddelanden till WhatsApp-användare som har ett amerikanskt telefonnummer (ett nummer bestående av en +1-uppringningskod och en amerikansk riktnummer) tillfälligt stoppats. [Läs mer i Meta-dokumentationen](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates#per-user-marketing-template-message-limits)
 
@@ -70,11 +54,11 @@ Följande begränsningar gäller för WhatsApp-kanalen:
 
 ## Instruktionsvideo {#video}
 
-
-I videon nedan visas hur du skapar en resa med en WhatsApp-åtgärd.
+I videon nedan visas hur du integrerar WhatsApp som en inbyggd kanal i Adobe Journey Optimizer för att leverera säkra, personaliserade meddelanden i realtid i stor skala.
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3451621?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470244?learn=on)
 
 +++
+

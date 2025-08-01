@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: dc1bddaf-968f-405d-b8cc-b9443a838fa6
-source-git-commit: 8f0b53a4a07feffda4d28bb9e321596503293b03
+source-git-commit: 61a30dcc93823dc5e8b647e683bfa2ebf5bfa01b
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '157'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,6 @@ ht-degree: 1%
 # Kom igång med LINE {#get-started-line}
 
 Använd [!DNL Journey Optimizer] för att skicka LINE-meddelanden till dina kunder i deras LINE-app. Du kan skapa, anpassa och förhandsgranska meddelanden i LINE-redigeraren.
-
->[!AVAILABILITY]
->
->LINE-kanalen aktiveras på begäran av Adobe Journey Optimizer-kunder. Kontakta din Adobe-representant för att aktivera funktionen för din organisation.
 
 Radmeddelanden kan skapas och skickas under en resa eller i en kampanj:
 
