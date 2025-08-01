@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: 29532b5ebd140f9609a29c1375ceedecf55d0dfb
+source-git-commit: 41563414b2118ae1fcde65874c56f38daf4fa9ab
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ Dessa beslutsobjekt är sömlöst integrerade i ett brett urval av inkommande yt
 
 >[!IMPORTANT]
 >
->Beslutspolicyer är endast tillgängliga för kodbaserade upplevelsekampanjer.
+>Beslutsprinciper är tillgängliga för kodbaserad upplevelse och e-postkampanjer.
 
 ➡️ Ett heltäckande användningsexempel som visar hur du skapar beslut och använder dem i innehållsexperiment med den kodbaserade upplevelsekanalen visas i [det här avsnittet](experience-decisioning-uc.md).
 
@@ -50,13 +50,13 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
    1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
       ![](assets/decision_permission_3.png)
 
    Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
-   +++
++++
 
 1. **Konfigurera anpassade attribut**: Anpassa objektkatalogen efter dina specifika krav genom att konfigurera anpassade attribut i katalogschemat.
 
