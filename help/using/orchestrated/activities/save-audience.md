@@ -3,16 +3,14 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Använda aktiviteten Spara målgrupp
 description: Lär dig hur du använder aktiviteten Spara målgrupp i en orkestrerad kampanj
-badge: label="Alpha"
-hide: true
-hidefromtoc: true
 exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
-source-git-commit: 458e0b19725147e0a3ad34891ca55b61f1ac44a8
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
+
 
 # Spara målgrupp {#save-audience}
 
@@ -21,31 +19,10 @@ ht-degree: 0%
 >title="Spara målgruppsaktivitet"
 >abstract="Aktiviteten **Spara målgrupp** är en **målgruppsaktivitet** som gör att du kan uppdatera en befintlig målgrupp eller skapa en ny från den målgrupp som genererades tidigare i den orkestrerade kampanjen. När de har skapats läggs dessa målgrupper till i listan över programmålgrupper och kan nås från menyn **Publiker** ."
 
-
-+++ Innehållsförteckning
-
-| Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
-|---|---|---|---|
-| [Kom igång med samordnade kampanjer](../gs-orchestrated-campaigns.md)<br/><br/>Skapa och hantera relationsscheman och datauppsättningar:</br> <ul><li>[Kom igång med scheman och datauppsättningar](../gs-schemas.md)</li><li>[Manuellt schema](../manual-schema.md)</li><li>[Filöverföringsschema](../file-upload-schema.md)</li><li>[Ingest data](../ingest-data.md)</li></ul>[Få åtkomst till och hantera samordnade kampanjer](../access-manage-orchestrated-campaigns.md) | [Viktiga steg för att skapa en orkestrerad kampanj](../gs-campaign-creation.md)<br/><br/>[Skapa och schemalägg kampanjen](../create-orchestrated-campaign.md)<br/><br/>[Orchestrate-aktiviteter](../orchestrate-activities.md)<br/><br/>[Starta och övervaka kampanjen](../start-monitor-campaigns.md)<br/><br/>[Rapportera](../reporting-campaigns.md) | [Arbeta med regelbyggaren](../orchestrated-rule-builder.md)<br/><br/>[Bygg din första fråga](../build-query.md)<br/><br/>[Redigera uttryck](../edit-expressions.md)<br/><br/>[Återmarknadsföring](../retarget.md) | [Kom igång med aktiviteter](about-activities.md)<br/><br/>Aktiviteter:<br/>[And-join](and-join.md) - [Bygg målgrupp](build-audience.md) - [Ändra dimension](change-dimension.md) - [Kanalaktiviteter](channels.md) - [Kombinera](combine.md) - [Deduplicering](deduplication.md) - [Enrichment](enrichment.md) - [Fork](fork.md)  - [Avstämning](reconciliation.md) - <b>[Spara målgrupp](save-audience.md)</b> - [Dela](split.md) - [Vänta](wait.md) |
-
-{style="table-layout:fixed"}
-
-+++
-
-
-<br/>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
-
->[!ENDSHADEBOX]
-
 Aktiviteten **[!UICONTROL Save audience]** är en **[!UICONTROL Targeting]**-aktivitet som används för att skapa en ny målgrupp eller uppdatera en befintlig utifrån den population som skapades tidigare i den orchestrerade-kampanjen. När målgruppen har sparats läggs den till i listan över programmålgrupper och blir tillgänglig på menyn **[!UICONTROL Audiences]**.
 
-Det används ofta för att fånga målgruppssegment som skapats inom samma kampanj, och göra dem tillgängliga för återanvändning i framtida kampanjer. Det är vanligtvis kopplat till andra målinriktningsaktiviteter, som **[!UICONTROL Build audience]** eller **[!UICONTROL Combine]**, för att spara den slutliga målpopulationen.
+Det används ofta för att fånga målgruppssegment som skapats i samma kampanjarbetsflöde, så att de kan återanvändas i framtida kampanjer. Det är vanligtvis kopplat till andra målinriktningsaktiviteter, som **[!UICONTROL Build audience]** eller **[!UICONTROL Combine]**, för att spara den slutliga målpopulationen.
+Observera att du inte kan uppdatera en befintlig målgrupp med aktiviteten **[!UICONTROL Save audience]**. Du kan bara skapa en ny målgrupp eller skriva över en befintlig med en ny definition.
 
 ## Konfigurera aktiviteten Spara målgrupp {#save-audience-configuration}
 
@@ -55,17 +32,27 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Save audience]**:
 
 1. Ange en **[!UICONTROL Audience label]** som identifierar den sparade målgruppen.
 
-1. Välj en **[!UICONTROL Profile mapping field&#x200B;]** från din Campaign-måldimension.
+   >[!NOTE]
+   >
+   >Publiken **[!UICONTROL Label]** måste vara unik för alla kampanjer. Du kan inte återanvända ett målgruppsnamn som redan har använts i en annan kampanjs **[!UICONTROL Save audience]**-aktivitet.
+
+1. Välj en **[!UICONTROL Profile mapping field&#x200B;]** från din Campaign-måldimension. Den här mappningen definierar hur profiler i den **sparade målgruppen** länkas till kampanjens måldimension under körningen.
+
+   Endast mappningar som är kompatibla med den aktuella måldimensionen, dvs. den från den inkommande övergången, kommer att vara tillgängliga i listrutan för att säkerställa korrekt avstämning mellan målgruppen och kampanjsammanhanget.
 
    ➡️ [Följ stegen som beskrivs på den här sidan för att skapa din Campaign Targeting-dimension](../target-dimension.md)
 
    ![](../assets/save-audience-1.png)
 
-1. Klicka på **[!UICONTROL Add audience mappings]** om du vill associera den sparade målgruppen med ytterligare identitetsfält.
+1. Klicka på **[!UICONTROL Add audience mappings]** om du vill ta med ytterligare data från attribut för **[!UICONTROL Target dimension]** eller berikad **[!UICONTROL Profile attributes]**.
+
+   Detta gör att du kan associera mer information med aktiviteten **[!UICONTROL Saved audience]** utöver den primära profilmappningen, vilket förbättrar alternativen för målinriktning och personalisering.
 
    ![](../assets/save-audience-2.png)
 
 1. Slutför konfigurationen genom att spara och publicera den orkestrerade kampanjen. Detta genererar och lagrar er målgrupp.
+
+1. Publicera kampanjen för målgruppen som ska skapas eller ersättas eftersom aktiviteten **[!UICONTROL Save audience]** inte körs när kampanjen är i **[!UICONTROL Draft mode]**.
 
 Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för målgruppen, som du kommer åt via menyn **[!UICONTROL Audiences]**, eller kan väljas när du riktar dig till en målgrupp, till exempel med en **[!UICONTROL Read audience]** -aktivitet.
 

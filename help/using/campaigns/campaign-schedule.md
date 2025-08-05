@@ -9,13 +9,13 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
-source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+exl-id: b183eeb8-606f-444d-9302-274f159c3847
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
 
 ---
-
 
 # Schemalägg åtgärdskampanjen {#action-campaign-schedule}
 

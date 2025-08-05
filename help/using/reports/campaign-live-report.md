@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '3280'
+source-wordcount: '3309'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,9 @@ Sidan Campaign **[!UICONTROL Live report]** visas med följande flikar:
 * [SMS](#sms-live)
 * [Webb](#web-tab)
 * [Direktmeddelande](#direct-mail-tab)
+
+>[!AVAILABILITY]
+>Samordnade kampanjer har endast stöd för kanalerna SMS, Email och Push. Andra kanaler (i appen, på webben, via direktreklam osv.) är inte tillgängliga i samordnade kampanjer och visas inte i rapporteringen.
 
 Campaign **[!UICONTROL Live report]** är uppdelad i olika widgetar som beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](../reports/live-report.md#modify-dashboard).
 

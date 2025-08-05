@@ -9,17 +9,17 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
-source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+exl-id: a7b03b71-0f2c-45ca-a2f7-38ddc64913c1
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 1%
 
 ---
 
-
 # Definiera egenskaperna för åtgärdskampanjen {#action-campaign-properties}
 
-Så här skapar du en åtgärdskampanj och definierar dess egenskaper:
+Så här skapar du en Action-kampanj och definierar dess egenskaper:
 
 1. Bläddra till menyn **[!UICONTROL Campaigns]** och välj fliken **[!UICONTROL Action]**.
 
@@ -37,4 +37,4 @@ Så här skapar du en åtgärdskampanj och definierar dess egenskaper:
 
 ## Nästa steg {#next}
 
-När åtgärdskampanjen har skapats och konfigurerats kan du konfigurera dess åtgärd. [Läs mer](campaign-action.md)
+När en åtgärdskampanj har skapats och konfigurerats kan du konfigurera dess åtgärd. [Läs mer](campaign-action.md)

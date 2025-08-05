@@ -9,9 +9,9 @@ role: Admin, Architect, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: e20db7c39e751bf720cd0ae75b4e8f031de18eef
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -523,32 +523,30 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
 
 +++
 
-<!--
-## Orchestrated campaign resource {#ai-orchestrated-campaign} 
+## Orchestrated campaign resource {#ai-orchestrated-campaign}
 
-* **[!DNL Manage orchestrated campaigns]** high-level permission allows users to create new and edit/delete orchestrated campaigns.
+* **[!DNL Manage orchestrated campaigns]** högnivåbehörighet tillåter användare att skapa nya och redigera/ta bort samordnade kampanjer.
 
-  +++ This permission includes the following low-level permissions:  
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
-    * Journey Optimizer specific:
+   * Journey Optimizer-specifikt:
 
-      * orchestrated_campaigns.read  
-      * orchestrated_campaigns.write  
-      * orchestrated_campaigns.delete  
-      * cjm-web-subdomain.read  
-      * cjm-message.read  
-      * cjm-message.write  
-      * cjm-message.delete  
-      * cjm-library-item.read  
-      * cjm-message-general-setting.read  
-      * cjm-message-preset.read  
-      * cjm-message-preview-test.write  
-      * experiment.read  
-      * experiment.write  
-      * experiment.delete  
-      * experiment.activate
+      * orchestrated_campaign.read
+      * orchestrated_campaign.write
+      * orkestrated_campaign.delete
+      * cjm-web-subdomain.read
+      * cjm-message.read
+      * cjm-message.write
+      * cjm-message.delete
+      * cjm-library-item.read
+      * cjm-message-general-setting.read
+      * cjm-message-preset.read
+      * cjm-message-preview-test.write
+      * experiment.read
+      * experiment.write
+      * experiment.delete
 
-    * Adobe Experience Platform specific:
+   * Adobe Experience Platform-specifikt:
 
       * identity-graph.read
       * segments.read
@@ -557,65 +555,91 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
       * schemas.read
       * sandboxes.view
 
-  +++
++++
 
-* **[!DNL Manage orchestrated campaigns admin]** high-level permission allows users to create new and edit/delete 
+* **[!DNL Manage orchestrated campaigns admin]** högnivåbehörighet tillåter användare att skapa nya och redigera/ta bort länkar och avstämningar mellan Adobe Experience Platform-profiler och Relational store-entiteter.
 
-  +++ This permission includes the following low-level permissions:  
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
-    * Journey Optimizer specific:
+   * Journey Optimizer-specifikt:
 
+      * cjm-orchestrated-campaign-admin.read
+      * cjm-orchestrated-campaign-admin.write
+      * cjm-orchestrated-campaign-admin.delete
 
++++
 
-  +++
+* **[!DNL Publish orchestrated campaigns]** högnivåbehörighet tillåter användare att publicera Orchestrated-kampanjer.
 
-* **[!DNL Publish orchestrated campaigns]** high-level permission allows users to publish orchestrated campaigns.
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
-  +++ This permission includes the following low-level permissions:
+   * Journey Optimizer-specifikt:
 
-    * Journey Optimizer specific:
+      * cjm-orchestrated-campaign.read
+      * cjm-orchestrated-campaign.publish
+      * cjm-web-subdomain.read
+      * cjm-message.read
+      * cjm-message.publish
+      * cjm-library-item.read
 
-      * orchestrated_campaigns.publish
-      * orchestrated_campaigns.read
+   * Adobe Experience Platform-specifikt:
 
+      * sandboxes.view
 
-  +++
++++
 
-* **[!DNL View orchestrated campaigns]** high-level permission allows users to 
+* **[!DNL View orchestrated campaigns]** högnivåbehörighet tillåter användare att visa orkestrerad kampanj och dess innehåll.
 
-  +++ This permission includes the following low-level permissions:  
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
-    * Journey Optimizer specific:
+   * Journey Optimizer-specifikt:
 
-      * orchestrated_campaigns.read
+      * cjm-orchestrated-campaign.read
+      * cjm-message.read
+      * cjm-library-item.read
+      * cjm-message-general-setting.read
+      * cjm-message-preset.read
+      * experiment.read
 
-    * Adobe Experience Platform specific:
+   * Adobe Experience Platform-specifikt:
 
+      * sandboxes.view
       * segments.read
       * profiles.read
 
-  +++
++++
 
-* **[!DNL View orchestrated campaigns admin]** high-level permission allows users to 
+* **[!DNL View orchestrated campaigns admin]**-behörighet på hög nivå tillåter användare att visa administratörsinställningarna men inte redigera inställningarna.
 
-  +++ This permission includes the following low-level permissions:  
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
+   * Journey Optimizer-specifikt:
 
-  +++
+      * cjm-orchestrated-campaign-admin.read
 
-* **[!DNL View orchestrated campaigns report]** high-level permission allows users to read and edit orchestrated campaigns report.
++++
 
-  +++ This permission includes the following low-level permissions:  
+* **[!DNL View orchestrated campaigns report]** högnivåbehörighet tillåter användare att visa samordnade kampanjresultat i både live- och affärsrapporter.
 
-    * Journey Optimizer specific:
-      * orchestrated_campaigns_report.read
-      * messages_report.read
++++ Den här behörigheten innehåller följande lågnivåbehörigheter:
 
-    * Adobe Experience Platform specific:
+   * Journey Optimizer-specifikt:
 
+      * cjm-orchestrated-campaign-reports.read
+      * cjm-message-report.read
+      * cjm-channel-report.read
+      * cjm-orchestrated-campaign.read
+      * cjm-message.read
+      * cjm-library-item.read
+      * experiment.read
+      * experiment-report.read
+
+   * Adobe Experience Platform-specifikt:
+
+      * sandboxes.view
       * datasets.read
       * queries.read
       * queries.write
       * queries.delete
-  +++
--->
+
++++

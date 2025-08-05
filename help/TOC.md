@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: dcb2be7fef47e0d62fdd5a423799823ba4ef586c
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: '2591'
 ht-degree: 19%
 
 ---
@@ -184,7 +184,7 @@ ht-degree: 19%
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Få tillgång till och hantera kampanjer](using/campaigns/modify-stop-campaign.md)
    + Åtgärdskampanjer {#action-campaigns}
-      + [Arbeta med åtgärdskampanjer](using/campaigns/create-campaign.md)
+      + [Arbeta med Action-kampanjer](using/campaigns/create-campaign.md)
       + [Definiera kampanjegenskaperna](using/campaigns/campaign-properties.md)
       + [Konfigurera kampanjåtgärden](using/campaigns/campaign-action.md)
       + [Redigera kampanjinnehållet](using/campaigns/campaign-content.md)
@@ -202,14 +202,14 @@ ht-degree: 19%
       + [Utlösa kampanjkörningen](using/campaigns/trigger-campaigns.md)
    + Samordnade kampanjer {#orchestrated-campaigns}
       + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
-      + Hantera relationsscheman och datauppsättningar {#schemas-datasets}
-         + [Kom igång med scheman och datauppsättningar](using/orchestrated/gs-schemas.md)
-         + [Manuellt schema](using/orchestrated/manual-schema.md)
-         + [Filöverföringsschema](using/orchestrated/file-upload-schema.md)
-         + [Ingrediera data](using/orchestrated/ingest-data.md)
-      + [Få åtkomst till och hantera samordnade kampanjer](using/orchestrated/access-manage-orchestrated-campaigns.md)
-      + [Skapa en måldimension](using/orchestrated/target-dimension.md)
       + [Skyddsritningar och begränsningar](using/orchestrated/guardrails.md)
+      + Datakonfiguration {#configuration}
+         + Hantera relationsscheman och datauppsättningar {#schemas-datasets}
+            + [Kom igång med scheman och datauppsättningar](using/orchestrated/gs-schemas.md)
+            + [Manuellt schema](using/orchestrated/manual-schema.md)
+            + [Filöverföringsschema](using/orchestrated/file-upload-schema.md)
+            + [Ingrediera data](using/orchestrated/ingest-data.md)
+         + [Skapa en måldimension](using/orchestrated/target-dimension.md)
       + Starta din första samordnade kampanj{#launch}
          + [Viktiga steg för att skapa en orkestrerad kampanj](using/orchestrated/gs-campaign-creation.md)
          + [Skapa och schemalägg kampanjen](using/orchestrated/create-orchestrated-campaign.md)
@@ -749,7 +749,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

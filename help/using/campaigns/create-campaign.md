@@ -10,15 +10,15 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 15f5fdfde0e9f7c93739a624918838dbd6787833
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '152'
 ht-degree: 3%
 
 ---
 
 
-# Arbeta med åtgärdskampanjer {#gs-action-campaigns}
+# Arbeta med Action-kampanjer {#gs-action-campaigns}
 
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_action"
@@ -35,13 +35,17 @@ ht-degree: 3%
 
 1. [Definiera egenskaperna för åtgärdskampanjen](campaign-properties.md)
 1. [Konfigurera kampanjåtgärden](campaign-action.md)
-1. [Redigera åtgärdskampanjens innehåll](campaign-content.md)
-1. [Definiera målgruppen för åtgärdskampanjer](campaign-audience.md)
+1. [Redigera innehållet i åtgärdskampanjen](campaign-content.md)
+1. [Definiera målgruppen för Action-kampanjen](campaign-audience.md)
 1. [Schemalägg åtgärdskampanjen](campaign-schedule.md)
 1. [Granska och aktivera åtgärdskampanjen](review-activate-campaign.md)
 
+>[!IMPORTANT]
+>
+>Innan du skapar din kampanj måste du kontrollera att du har granskat de allmänna kraven för [kampanjen](../campaigns/get-started-with-campaigns.md#prerequisites).
+
 ## Instruktionsfilmer {#video}
 
-Lär dig hur du skapar en åtgärdskampanj.
+Lär dig skapa en Action-kampanj.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346680?quality=12)

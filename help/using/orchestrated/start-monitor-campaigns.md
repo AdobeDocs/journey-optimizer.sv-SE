@@ -3,15 +3,14 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Starta och övervaka samordnade kampanjer med Adobe Journey Optimizer
 description: Lär dig hur du startar och övervakar samordnade kampanjer med Adobe Journey Optimizer.
-hide: true
-hidefromtoc: true
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: 5e52573689ab06084441390299b01e112e699244
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
+
 
 # Starta och övervaka era samordnade kampanjer {#start-monitor}
 
@@ -19,26 +18,6 @@ ht-degree: 0%
 >id="ajo_campaign_publication"
 >title="Publicera orkestrerad kampanj"
 >abstract="Du måste publicera kampanjen för att kunna starta den. Kontrollera att alla fel är rensade före publiceringen."
-
-+++ Innehållsförteckning
-
-| Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
-|---|---|---|---|
-| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>Skapa och hantera relationsscheman och datauppsättningar:</br> <ul><li>[Kom igång med scheman och datauppsättningar](gs-schemas.md)</li><li>[Manuellt schema](manual-schema.md)</li><li>[Filöverföringsschema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md)<br/><br/>[Viktiga steg för att skapa en orkestrerad kampanj](gs-campaign-creation.md) | [Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/><b>[Starta och övervaka kampanjen](start-monitor-campaigns.md)</b><br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Bygg din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md)<br/><br/>[Återmarknadsföring](retarget.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[And-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kanalaktiviteter](activities/channels.md) - [Kombinera](activities/combine.md) - [Deduplicering](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md)  - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
-
-{style="table-layout:fixed"}
-
-+++
-
-<br/>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
-
->[!ENDSHADEBOX]
 
 När du har skapat dina arbetsytor och utformat arbetsytan kan du publicera den och övervaka hur den körs.
 
@@ -50,18 +29,13 @@ Med [!DNL Journey Optimizer] kan du testa Orchestrated-kampanjer innan du public
 
 >[!IMPORTANT]
 >
->Alla aktiviteter på arbetsytan körs utom **[!UICONTROL Save audience]** aktiviteter och kanalaktiviteter. Det påverkar inte data eller målgrupper.**
+>Alla aktiviteter på arbetsytan körs utom **[!UICONTROL Save audience]** aktiviteter och kanalaktiviteter. Det påverkar inte era data eller er målgrupp.
 
-Så här testar du en kampanj:
-
-1. Öppna den samordnade kampanjen.
-2. Klicka på **[!UICONTROL Start]**.
+Om du vill testa en orkestrerad kampanj öppnar du kampanjen och väljer **[!UICONTROL Start]**.
 
 ![](assets/campaign-start.png){zoomable="yes"}
 
-Varje aktivitet i kampanjen utförs sekventiellt tills diagrammets slut nås.
-
-Under testet kan du styra kampanjkörningen med åtgärdsfältet på arbetsytan. Därifrån kan man
+Varje aktivitet i kampanjen utförs sekventiellt tills diagrammets slut nås. Under testet kan du styra kampanjkörningen med åtgärdsfältet på arbetsytan. Därifrån kan man
 
 * **Stoppa** körningen när som helst.
 * **Starta** körningen igen.
@@ -104,7 +78,7 @@ Data som transporteras från en aktivitet till en annan genom övergångar lagra
 1. Välj en övergång.
 1. Klicka på **[!UICONTROL Preview schema]** i egenskapspanelen för att visa arbetstabellschemat. Välj **[!UICONTROL Preview results]** om du vill visa data som har transporterats.
 
-![](assets/transition.png){zoomable="yes"}
+   ![](assets/transition.png){zoomable="yes"}
 
 ### Indikatorer för utförande av verksamhet {#activities}
 
@@ -124,7 +98,9 @@ Visuella statusindikatorer hjälper dig att förstå hur varje aktivitet fungera
 >title="Loggar och uppgifter"
 >abstract="Skärmen **Loggar och uppgifter** innehåller en historik över körningen av den orkestrerade kampanjen, där alla användaråtgärder registreras och fel påträffas."
 
-Övervakning av loggar och uppgifter är ett viktigt steg för att analysera era samordnade kampanjer och se till att de körs som de ska. Loggar och uppgifter är tillgängliga från knappen **[!UICONTROL Logs]** som är tillgänglig i både test- och direktläge i verktygsfältet på arbetsytan eller i varje aktivitets egenskapspanel.
+Övervakning av loggar och uppgifter är ett viktigt steg för att analysera era samordnade kampanjer och se till att de körs som de ska. Loggar och uppgifter är tillgängliga från knappen **[!UICONTROL Logs]** som är tillgänglig i både test- och Live-läge i verktygsfältet på arbetsytan.
+
+![](assets/logs-button.png){zoomable="yes"}
 
 Skärmen **[!UICONTROL Logs and tasks]** innehåller en fullständig historik över kampanjkörningen, där alla användaråtgärder och påträffade fel registreras.
 
@@ -136,3 +112,7 @@ Det finns två typer av information:
 * Fliken **[!UICONTROL Tasks]** innehåller information om aktiviteternas stegvisa körningssekvens.
 
 På båda flikarna kan du välja vilka kolumner som ska visas och i vilken ordning de ska visas, tillämpa filter och använda sökfältet för att snabbt hitta önskad information.
+
+## Nästa steg {#next}
+
+När ni har startat det samordnade kampanjdiagrammet kan ni använda Journey Optimizer rapporteringsfunktioner för att få insikter som att förstå målgruppernas beteende och mäta resultatet för varje steg i kundresan. [Läs mer om rapportering av samordnade kampanjer](../orchestrated/reporting-campaigns.md)

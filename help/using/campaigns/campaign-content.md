@@ -1,23 +1,23 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Redigera åtgärdskampanjens innehåll
-description: Lär dig hur du redigerar åtgärdskampanjens innehåll.
+title: Redigera innehållet i åtgärdskampanjen
+description: Lär dig hur du redigerar innehållet i Action-kampanjen.
 feature: Campaigns
 topic: Content Management
 role: User
 level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
-source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+exl-id: bcb7a5e4-440d-4548-b305-c320bafe6ee7
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 2%
 
 ---
 
-
-# Redigera åtgärdskampanjens innehåll {#action-campaign-content}
+# Redigera innehållet i åtgärdskampanjen {#action-campaign-content}
 
 Om du vill konfigurera meddelandeinnehållet går du till fliken **[!UICONTROL Content]** eller klickar på knappen **[!UICONTROL Edit content]**.
 
@@ -59,4 +59,4 @@ Klicka på vänsterpilen om du vill gå tillbaka till skärmen där kampanjen sk
 
 ## Nästa steg {#next}
 
-När innehållet i er åtgärdskampanj är klart kan ni definiera kampanjens målgrupp. [Läs mer](campaign-audience.md)
+När innehållet i er Action-kampanj är klart kan ni definiera kampanjens målgrupp. [Läs mer](campaign-audience.md)

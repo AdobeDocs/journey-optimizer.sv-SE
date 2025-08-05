@@ -3,38 +3,16 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurationssteg
 description: Lär dig hur du hämtar data till Adobe Experience Platform från källor som stöds, som SFTP, molnlagring eller databaser.
-badge: label="Alpha"
-hide: true
-hidefromtoc: true
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
-source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '631'
+ht-degree: 0%
 
 ---
 
+
 # Ingrediera data {#ingest-data}
-
-+++ Innehållsförteckning
-
-| Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
-|---|---|---|---|
-| [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)<br/><br/>Skapa och hantera relationsscheman och datauppsättningar</br> <ul><li>[Kom igång med scheman och datauppsättningar](gs-schemas.md)</li><li>[Manuellt schema](manual-schema.md)</li><li>[Filöverföringsschema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md)<br/><br/>[Viktiga steg för att skapa en orkestrerad kampanj](gs-campaign-creation.md) | [Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Bygg din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md)<br/><br/>[Återmarknadsföring](retarget.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[And-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kanalaktiviteter](activities/channels.md) - [Kombinera](activities/combine.md) - [Deduplicering](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md)  - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
-
-{style="table-layout:fixed"}
-
-+++
-
-</br>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
-
->[!ENDSHADEBOX]
 
 >[!IMPORTANT]
 >
@@ -58,33 +36,53 @@ Följande källor stöds för användning med Orchestrated-kampanjer:
   <tbody>
     <tr>
       <td rowspan="3">molnlagring</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
     </tr>
       <td rowspan="4">Datalager i molnet</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
     </tr>
     <tr>
       <td rowspan="3">Filbaserade överföringar</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
     </tr>
 
 </tbody>
 </table>
+
+## Riktlinjer för datahygien i relationsschemat {#cdc}
+
+För datauppsättningar som är aktiverade med **[!UICONTROL Change data capture]** speglas alla dataändringar automatiskt, inklusive borttagningar, från källsystemet till Adobe Experience Platform.
+
+Eftersom Adobe Journey Optimizer Campaigns kräver att alla onboardbaserade datauppsättningar ska aktiveras med **[!UICONTROL Change data capture]** är det kundens ansvar att hantera borttagningar vid källan. Alla poster som tas bort från källsystemet tas automatiskt bort från motsvarande datauppsättning i Adobe Experience Platform.
+
+Om du vill ta bort poster via filbaserad inmatning ska kundens datafil markera posten med ett `D`-värde i fältet `Change Request Type`. Detta anger att posten ska tas bort i Adobe Experience Platform, vilket motsvarar källsystemet.
+
+Om kunden bara vill ta bort poster från Adobe Experience Platform utan att originalkälldata påverkas, finns följande alternativ:
+
+* **Proxy eller sanerad tabell för replikering av registrering av ändringsdata**
+
+  Kunden kan skapa en proxy- eller sanitized-källtabell som styr vilka poster som replikeras till Adobe Experience Platform. Borttagningar kan sedan hanteras selektivt från den här mellanliggande tabellen.
+
+* **Borttagning via Data Distiller**
+
+  Om den är licensierad kan **Data Distiller** användas för borttagningsåtgärder direkt i Adobe Experience Platform, oberoende av källsystemet.
+
+  [Läs mer om Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 
 ## Konfigurera ett dataflöde
 
@@ -105,6 +103,8 @@ I det här exemplet visas hur du konfigurerar ett dataflöde som importerar stru
    ![](assets/S3_config_1.png)
 
 1. På sidan **[!UICONTROL Dataset details]** markerar du **[!UICONTROL Enable Change data capture]** om du bara vill visa datauppsättningar som är mappade till relationsscheman och innehåller både en primärnyckel och en versionsbeskrivning.
+
+[Läs mer om riktlinjer för datahygien i relationsscheman](#cdc)
 
    >[!IMPORTANT]
    >
@@ -133,4 +133,5 @@ I det här exemplet visas hur du konfigurerar ett dataflöde som importerar stru
 1. Välj **[!UICONTROL Connections]** på menyn **[!UICONTROL Sources]** och gå till fliken **[!UICONTROL Data Flows]** för att spåra flödeskörning, granska inkapslade poster och felsöka eventuella fel.
 
    ![](assets/S3_config_5.png)
+
 

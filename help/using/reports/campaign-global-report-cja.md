@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b74d3137-2dd9-4302-a56e-73503d318d18
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,9 @@ KPI:erna varierar beroende på vilka kanaler som används i kampanjen.
 * **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
 
 +++
+
+>[!AVAILABILITY]
+>Samordnade kampanjer har endast stöd för kanalerna SMS, Email och Push. Andra kanaler (i appen, på webben, via direktreklam osv.) är inte tillgängliga i samordnade kampanjer och visas inte i rapporteringen.
 
 ### Översikt över Campaign {#delivery-global}
 

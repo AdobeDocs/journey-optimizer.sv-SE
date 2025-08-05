@@ -3,16 +3,14 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med samordnade kampanjer
 description: Lär dig hur du börjar med samordnade kampanjer
-badge: label="Alpha"
-hide: true
-hidefromtoc: true
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 458e0b19725147e0a3ad34891ca55b61f1ac44a8
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
+
 
 # Kom igång med samordnade kampanjer {#orchestrated-camp}
 
@@ -20,26 +18,6 @@ ht-degree: 0%
 >id="campaigns_overview_orchestrated"
 >title="campaign_overview_orchestrated"
 >abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/> <b>Utnyttja data för flera enheter</b><br/>Lär dig hur orkestrerade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt antal</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden, direktreklam"
-
-+++ Innehållsförteckning
-
-| Välkommen till samordnade kampanjer | Starta din första samordnade kampanj | Fråga databasen | Ochestrerade kampanjaktiviteter |
-|---|---|---|---|
-| <b>[Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)</b><br/><br/>Skapa och hantera relationsscheman och datauppsättningar:</br> <ul><li>[Kom igång med scheman och datauppsättningar](gs-schemas.md)</li><li>[Manuellt schema](manual-schema.md)</li><li>[Filöverföringsschema](file-upload-schema.md)</li><li>[Ingest data](ingest-data.md)</li></ul>[Få åtkomst till och hantera samordnade kampanjer](access-manage-orchestrated-campaigns.md)<br/><br/>[Viktiga steg för att skapa en orkestrerad kampanj](gs-campaign-creation.md) | [Skapa och schemalägg kampanjen](create-orchestrated-campaign.md)<br/><br/>[Organisera aktiviteter](orchestrate-activities.md)<br/><br/>[Starta och övervaka kampanjen](start-monitor-campaigns.md)<br/><br/>[Rapportera](reporting-campaigns.md) | [Arbeta med regelbyggaren](orchestrated-rule-builder.md)<br/><br/>[Bygg din första fråga](build-query.md)<br/><br/>[Redigera uttryck](edit-expressions.md)<br/><br/>[Återmarknadsföring](retarget.md) | [Kom igång med aktiviteter](activities/about-activities.md)<br/><br/>Aktiviteter:<br/>[And-join](activities/and-join.md) - [Bygg målgrupp](activities/build-audience.md) - [Ändra dimension](activities/change-dimension.md) - [Kanalaktiviteter](activities/channels.md) - [Kombinera](activities/combine.md) - [Deduplicering](activities/deduplication.md) - [Enrichment](activities/enrichment.md) - [Fork](activities/fork.md)  - [Avstämning](activities/reconciliation.md) - [Spara målgrupp](activities/save-audience.md) - [Dela](activities/split.md) - [Vänta](activities/wait.md) |
-
-{style="table-layout:fixed"}
-
-+++
-
-<br/>
-
->[!BEGINSHADEBOX]
-
-</br>
-
-Innehållet på den här sidan är inte slutgiltigt och kan komma att ändras.
-
->[!ENDSHADEBOX]
 
 Kampanjsamordning i [!DNL Adobe Journey Optimizer] driver avancerade, varumärkesinitierade marknadsföringskampanjer över alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
 
@@ -53,14 +31,14 @@ Kampanjsamordning bygger på fyra huvudpelare:
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
-<td><img alt="On-demand-målgrupper" src="assets/do-not-localize/icon-audience.svg" width="50px"></a></td><td><b>On-Demand-målgrupper</b><br/>Frågar direkt mellan datauppsättningar för att skapa målgruppssegment med valfri kombination av datatyper och dimensioner.</td></tr>
+<td><img alt="On-demand-målgrupper" src="assets/do-not-localize/icon-audience.svg" width="150px"></a></td><td><b>On-Demand-målgrupper</b><br/>Frågar direkt mellan datauppsättningar för att skapa målgruppssegment med valfri kombination av datatyper och dimensioner.</td></tr>
 <tr style="border: 0;">
-<td><img alt="Segmentering och sändning av flera enheter" src="assets/do-not-localize/icon-entity.svg" width="50px"></a></td><td><b>Segmentering och sändning av flera enheter</b><br/>Gå steget längre än personbaserade kampanjer - använd entiteter som produktkataloger, butiksplatser eller tjänstdata för att måla med precision.<br/><br/>
+<td><img alt="Segmentering och sändning av flera enheter" src="assets/do-not-localize/icon-entity.svg" width="150px"></a></td><td><b>Segmentering och sändning av flera enheter</b><br/>Gå steget längre än personbaserade kampanjer - använd entiteter som produktkataloger, butiksplatser eller tjänstdata för att måla med precision.<br/><br/>
 Stöd för sändning på flera nivåer, där ett meddelande skickas per profil och per associerad sekundär enhet. Dessa sekundära enheter kan vara kontaktadresser, bokningar, prenumerationer, kontrakt eller andra länkade data. Detta gör till exempel att kampanjer kan skickas till alla kända adresser för en profil eller för varje bokning som är kopplad till den profilen.</td></tr>
 <tr style="border: 0;">
-<td><img alt="Synlighet och precision före sändning" src="assets/do-not-localize/icon-visibility.svg" width="50px"></a></td><td><b>Synlighet och precision före sändning</b><br/>Få exakt segmenteringsantal och fullständigt kampanjomfång före lansering för att säkerställa precision och förtroende.</td></tr>
+<td><img alt="Synlighet och precision före sändning" src="assets/do-not-localize/icon-visibility.svg" width="150px"></a></td><td><b>Synlighet och precision före sändning</b><br/>Få exakt segmenteringsantal och fullständigt kampanjomfång före lansering för att säkerställa precision och förtroende.</td></tr>
 <tr style="border: 0;">
-<td><img alt="Arbetsflöden för kampanjer i flera steg" src="assets/do-not-localize/icon-multistep.svg" width="50px"></a></td><td><b>Flerstegskampanjer</b><br/>Utforma kampanjer i flera steg, från dagliga meddelanden till komplexa kampanjer som säsongskampanjer eller större produktlanseringar.</td></tr>
+<td><img alt="Arbetsflöden för kampanjer i flera steg" src="assets/do-not-localize/icon-multistep.svg" width="150px"></a></td><td><b>Flerstegskampanjer</b><br/>Utforma kampanjer i flera steg, från dagliga meddelanden till komplexa kampanjer som säsongskampanjer eller större produktlanseringar.</td></tr>
 </table>
 
 ## Samordnade kampanjer och resor
@@ -69,17 +47,25 @@ Stöd för sändning på flera nivåer, där ett meddelande skickas per profil o
 
 * **Resor** - 1 till 1 arbetsyta där varje profil förflyttar sig genom de olika stegen i sin egen takt. Tillståndet för varje kund upprätthålls i sitt sammanhang för att aktivera realtidsåtgärder.
 
-* **Samordnade kampanjer** - Till skillnad från resor använder orkestrerade kampanjer en batcharbetsyta som beräknar segment. Alla profiler bearbetas samtidigt.
+* **Samordnade kampanjer** - Till skillnad från resor används grupparbetsyta för att beräkna segment. Alla profiler bearbetas samtidigt.
 
 Båda arbetsytorna är optimerade för respektive användningsfall: Resursytan publicerar resor som tenderar att vara aktiva under en längre period, medan Campaign Canvas är utformat för iterativa och inkrementella körningar av en gruppkampanj.
 
-## Förhandskrav
+## Vad finns i en orkestrerad kampanj? {#gs-ms-campaign-inside}
 
-Innan du arbetar med samordnade kampanjer är det viktigt att du har rätt behörigheter. Åtkomsten till samordnade kampanjer är begränsad till användare som är tilldelade en relevant **[!UICONTROL Product Profile]**, till exempel en Orchestrated Campaign Administrator, Orchestrated Campaign Approver, Orchestrated Campaign Manager eller Orchestrated Campaign Viewer.
+Den Orchestrerade kampanjarbetsytan är en representation av vad som ska hända. Det beskriver de olika åtgärder som ska utföras och hur de är sammankopplade.
 
-Om du inte kan komma åt orkestrerade kampanjfunktioner kontaktar du administratören för att få den behörighet som krävs.
+![bild som visar en orkestrerad kampanjarbetsyta](assets/canvas-example.png)
 
-➡️ [Läs mer om produktprofiler för orkestrerade kampanjer](../administration/ootb-product-profiles.md)
+Alla samordnade kampanjer innehåller:
+
+* **Aktiviteter**: En aktivitet är en aktivitet som ska utföras. De olika aktiviteterna visas i diagrammet med ikoner. Varje aktivitet har specifika egenskaper och andra egenskaper som är gemensamma för alla aktiviteter.
+
+  I ett orkestrerat kampanjdiagram kan en viss aktivitet producera flera uppgifter, särskilt när det finns en slinga eller återkommande åtgärder.
+
+* **Övergångar**: Övergångar länkar en källaktivitet till en målaktivitet och definierar deras sekvens.
+
+* **Arbetstabeller**: Arbetstabellen innehåller all information som följer med övergången. Varje orkestrerad kampanj använder flera arbetstabeller. De data som förmedlas i dessa tabeller kan användas under hela den Orchestrated-kampanjens livscykel.
 
 ## Låt oss dyka djupare
 

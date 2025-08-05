@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 3be1b238962fa5d0e2f47b64f6fa5ab4337272a5
+source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 0%
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 
@@ -72,48 +72,75 @@ Du kan skapa olika typer av kampanjer i Journey Optimizer:
 
   API-utlösta kampanjer gör det möjligt att antingen nå ut till en målgrupp vid rätt tidpunkt eller för transaktionsmeddelanden/operativa meddelanden till en individ som lösenordsåterställning, där behovet kan innebära personalisering inte bara genom att använda profilattribut, utan även kontextdata i realtid i utlösaren som är en REST API-nyttolast.
 
-<!--* **Orchestrated campaigns**
+* **Samordnade kampanjer**
 
-    Campaign Orchestration in Adobe Journey Optimizer powers sophisticated, brand-initiated marketing campaigns across channels, helping you drive engagement, revenue, and customer loyalty at scale.
+  Kampanjsamordning i Adobe Journey Optimizer driver fram sofistikerade, varumärkesinitierade marknadsföringskampanjer i alla kanaler och hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
 
-    While cross-channel marketing is essential, Orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.-->
+  Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den sömlös. Med ett visuellt dra-och-släpp-gränssnitt kan ni utforma och automatisera komplexa marknadsföringsarbetsflöden, från segmentering till meddelandeleverans, i flera kanaler. Allt sker i en intuitiv miljö som är byggd för snabbhet, kontroll och effektivitet.
 
-## Före start {#campaign-prerequisites}
+## Förhandskrav {#prerequisites}
 
-Kontrollera följande krav innan du börjar skapa din första kampanj i [!DNL Journey Optimizer]:
+Innan du skapar din kampanj måste du kontrollera att du har granskat villkoren nedan.
 
-1. **Du behöver rätt behörighet**. Kampanjer är bara tillgängliga för användare med åtkomst till en kampanj som är relaterad till **[!UICONTROL Product profile]**, till exempel Campaign-administratör, Campaign-godkännare, Campaign-hanterare och/eller Campaign-visningsprogram. Om du inte kan komma åt kampanjer måste din behörighet utökas.
+### Behörigheter
 
-   +++Lär dig hur du tilldelar kampanjrelaterad roll
+Kampanjer är bara tillgängliga för användare med lämplig behörighet som listas nedan. [Läs mer om Journey Optimizer inbyggda roller](../administration/ootb-product-profiles.md)
 
-   1. Om du vill tilldela en roll till en användare i [!DNL Permissions]-produkten går du till fliken **[!UICONTROL Roles]** och väljer en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]**: Kampanjadministratör, Kampanjgodkännare, Kampanjhanterare eller Kampanjvisningsprogram.
+>[!BEGINTABS]
 
-   1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
+>[!TAB Åtgärdskampanjer]
 
-   1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
+Kampanjadministratör
+Kampanjgodkännare
+Kampanjchef
+Kampanjvisningsprogram
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+>[!TAB API-utlösta kampanjer]
 
-   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
+Kampanjadministratör
+Kampanjgodkännare
+Kampanjchef
+Kampanjvisningsprogram
 
-   +++
+>[!TAB Samordnade kampanjer]
 
-1. **Du behöver en målgrupp**. Målgrupper måste vara tillgängliga innan kampanjen kan skapas. [Kom igång med målgrupper](../audience/about-audiences.md).
+Orchestrated Campaign Administrator
+Samlad kampanjgodkännare
+Organiserad kampanjchef
+Samlad kampanjvisare
 
-1. **Du behöver en kanalkonfiguration**. Om du vill kunna välja en kanal måste du ha motsvarande kanalkonfiguration (dvs. förinställning) skapad och tillgänglig. [Lär dig hur du konfigurerar kanalkonfigurationer](../configuration/channel-surfaces.md).
+>[!ENDTABS]
+
+Om du inte kan komma åt kampanjfunktioner kontaktar du administratören för att få den behörighet som krävs.
+
++++Lär dig hur du tilldelar kampanjrelaterad roll
+
+1. Om du vill tilldela en roll till en användare i [!DNL Permissions]-produkten går du till fliken **[!UICONTROL Roles]** och väljer en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]** som beskrivs ovan.
+
+1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
+
+1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
+
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+
+Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
+
++++
+
+### Målgrupp
+
+Målgrupper måste vara tillgängliga innan kampanjen kan skapas. [Kom igång med målgrupper](../audience/about-audiences.md).
+
+### Kanalkonfiguration
+
+Om du vill kunna välja en kanal måste du ha motsvarande kanalkonfiguration (dvs. förinställning) skapad och tillgänglig. [Lär dig hur du konfigurerar kanalkonfigurationer](../configuration/channel-surfaces.md).
 
 ## Låt oss dyka djupare
 
 Nu när du har en förståelse för kampanjer i [!DNL Journey Optimizer] är det dags att gå djupare in i dessa dokumentationsavsnitt för att börja skapa dina första kampanjer.
 
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
-<td><a href="create-campaign.md"><img alt="åtgärdskampanjer" src="assets/do-not-localize/gs-action-campaign.png" width="50%"></a><br/><a href="create-campaign.md">Åtgärdskampanjer</a></td>
-<td><a href="api-triggered-campaigns.md"><img alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png" width="50%"></a><br/><a href="api-triggered-campaigns.md">API-utlösta kampanjer</a></td>
+<td><a href="create-campaign.md"><img width="70%" alt="åtgärdskampanjer" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Åtgärdskampanjer</a></td>
+<td><a href="api-triggered-campaigns.md"><img width="70%" alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png"></a><br/><a href="api-triggered-campaigns.md">API-utlösta kampanjer</a></td>
+<td><a href="../orchestrated/gs-orchestrated-campaigns.md"><img width="70%" alt="push" src="assets/do-not-localize/gs-orchestrated-campaign.png"></a><a href="../orchestrated/gs-orchestrated-campaigns.md">Samordnade kampanjer</a></td>
 </tr></table>
-
-<!--
-<table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
-<td><a href="create-campaign.md"><img alt="action campaigns" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Action campaigns</a></td>
-<td><a href="api-triggered-campaigns.md"><img alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png"></a><br/><a href="api-triggered-campaigns.md">API triggered campaigns</a></td>
-<td><a href="../orchestrated/gs-orchestrated-campaigns.md"><img alt="push" src="assets/do-not-localize/gs-orchestrated-campaign.png"></a><a href="../orchestrated/gs-orchestrated-campaigns.md">Orchestrated campaigns</a></td>
-</tr></table>-->
