@@ -10,9 +10,9 @@ level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: aktivitet, beslut, innehållsbeslut, beslutspolitik, arbetsyta, resa
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
-source-git-commit: 30234392f9b643fa37be701d4d6878d798ea94fe
+source-git-commit: 2ca37e17b788357f0b8f135c1a5889aa5145cb2f
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1080'
 ht-degree: 1%
 
 ---
@@ -72,6 +72,16 @@ Följ stegen nedan för att konfigurera aktiviteten **[!UICONTROL Content decisi
    ![Sammanfattning av beslutsprinciper](assets/journey-content-decision-policy.png){width=70%}<!--reshoot or change screen-->
 
 Du är nu redo att utnyttja resultatet av den här innehållsbeslutsaktiviteten på din resa.
+
+## Skyddsritningar och begränsningar {#guardrails}
+
+**Samtyckesprinciper**
+
+Det tar upp till 48 timmar att genomföra uppdateringar av godkännandepolicyer. Om en beslutspolicy refererar till ett attribut som är knutet till en nyligen uppdaterad medgivandepolicy, kommer ändringarna inte att tillämpas omedelbart.
+
+Om nya profilattribut som omfattas av en samtyckespolicy läggs till i en beslutspolicy kommer de att vara användbara, men den medgivandepolicy som är kopplad till dem kommer inte att tillämpas förrän förseningen har passerat.
+
+Samtyckesregler är endast tillgängliga för organisationer som har Adobe Healthcare Shield eller tillägg till Privacy and Security Shield.
 
 ## Använd resultatet från innehållsbeslutsaktiviteten {#use-content-decision-output}
 
