@@ -5,9 +5,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 01e74670-7431-4791-b98c-12278e6d3332
-source-git-commit: 0a3e8a0eba6eaac125f508b8b81e2fab992eb978
+source-git-commit: 03699215020770d0636c77e9d197990ab5da0975
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -69,3 +69,13 @@ När [ditt varumärke har konfigurerats och publicerats](brands.md) kan du bedö
 1. Redigera ert innehåll baserat på rekommendationerna för att förbättra varumärkesanpassningen.
 
 1. Utvärdera innehållet manuellt när du har gjort ändringar för att uppdatera justeringspoängen.
+
+## Instruktionsvideo {#video}
+
+I videon nedan visas hur du skapar och anpassar dina egna varumärken för att tydligt definiera din visuella och verbala identitet för olika typer av kommunikation.
+
++++ Se videon
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470544/?learn=on)
+
++++

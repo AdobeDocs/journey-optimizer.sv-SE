@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
-source-git-commit: 31e25c511d8873e54c7b92e65511108a77f84941
+source-git-commit: 03699215020770d0636c77e9d197990ab5da0975
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 1%
@@ -195,6 +195,6 @@ I videon nedan visas hur du skapar en whatsApp-resa i flera steg med Adobe Journ
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470286/?learn=on&captions=swe")
+>[!VIDEO](https://video.tv.adobe.com/v/3470282/?learn=on")
 
 +++
