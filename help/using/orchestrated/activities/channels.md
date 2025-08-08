@@ -4,9 +4,9 @@ product: journey optimizer
 title: Lägga till en kanalaktivitet i en flerstegskampanj
 description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampanj
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: a4f3dce91af978bdff2de5beb8b1472f7704bdf2
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
@@ -52,11 +52,17 @@ UNUSED IDs in BJ
 Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra marknadsföringskampanjer över flera kanaler - e-post, SMS och push-meddelanden. Ni kan kombinera dessa kanalaktiviteter i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende och data.
 
 Exempel:
+
 * Skicka en välkomstserie via e-post, SMS och push.
 * Skicka ett uppföljningsmejl efter köpet.
 * Skicka personliga födelsedagshälsningar via SMS.
 
 Genom att använda kanalaktiviteter kan ni skapa omfattande och personaliserade kampanjer som engagerar kunder över flera kontaktytor och driver konverteringar.
+
+
+>[!CAUTION]
+>
+>Endast SMS-, push- och e-postkanaler stöds i samordnade kampanjer.
 
 >[!PREREQUISITES]
 >
@@ -94,7 +100,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
 1. **Aktivera läget Snabb leverans** (push)
 
-   Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+   Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 1. **Skapa ett innehållsexperiment**
 

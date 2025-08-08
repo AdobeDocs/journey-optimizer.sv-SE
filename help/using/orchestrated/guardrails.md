@@ -4,9 +4,9 @@ product: journey optimizer
 title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: a4f3dce91af978bdff2de5beb8b1472f7704bdf2
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Nedan finns ytterligare skyddsförslag och begränsningar när du använder orke
 
 * Scheman som används för mål måste innehålla minst **ett identitetsfält av typen`String`**, mappat till ett definierat identitetsnamnområde.
 
-### Datainmatning
+### Datainhämtning
 
 * Profil + relationsdataöverföring krävs.
 
@@ -83,3 +83,7 @@ Nedan finns ytterligare skyddsförslag och begränsningar när du använder orke
 * **Sparade målgruppsaktiviteter är statiska**, de speglar de data som finns tillgängliga när kampanjen körs.
 
 * **Tillägg till en sparad målgruppsaktivitet stöds inte**. Alla ändringar kräver att publiken skrivs över fullständigt.
+
+## Kanalbegränsningar
+
+Endast SMS-, push- och e-postkanaler stöds i samordnade kampanjer.
