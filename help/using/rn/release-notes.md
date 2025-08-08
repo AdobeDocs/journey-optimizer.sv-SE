@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: a53e94f0199cda211d32be55c8e9a52303dc3d25
+source-git-commit: 378ead41924496f52f22026b3f0e05a9c9c76f89
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1428'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Kampanjsamordning
@@ -86,7 +86,7 @@ Läs mer i [dokumentationen för kampanjsamordning](../orchestrated/gs-orchestra
 
 **Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: August 19, 2025
 
@@ -100,6 +100,36 @@ New capabilities coming with this release are detailed below.
 Improvements coming with this release are listed below.
 -->
 
+## Uppdateringar 25 augusti {#25.8-rn}
+
+<table>
+<thead>
+<tr>
+<th><strong>Optimering av kampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer ger er nu de verktyg ni behöver för att leverera personaliserat och optimerat innehåll till er målgrupp, så att ni kan köra innehållsexperiment, skapa regelbaserad målinriktning och använda avancerade kombinationer av båda för att maximera effektiviteten i era kampanjer.</p>
+<p>Med optimering kan man</p>
+<ul>
+<li>Testa olika innehållsvariationer för att identifiera de mest effektiva budskapen.</li>
+<li>Leverera personaliserat innehåll baserat på användarattribut och sammanhangsbaserade data.</li>
+<li>Kombinera målinriktning och experiment för avancerade kampanjstrategier.</li>
+<li>Filtrera bort användare som inte matchar variantvillkor.</li>
+<li>Se till att reservmekanismer upprätthåller användarengagemanget.</li>
+</ul>
+<P>När kampanjen är aktiv utvärderas profiler mot de definierade kriterierna, och baserat på matchningskriterier levereras de med rätt erfarenhet eller innehåll från kampanjen.</p>
+<p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
+<p>Releasedatum: 8 augusti 2025</p>
+<p>Mer information finns i <a href="../campaigns/campaigns-message-optimization.md">detaljerad dokumentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 ## Versionsinformation juli 25 {#25-7-rn}
 
@@ -110,24 +140,6 @@ Improvements coming with this release are listed below.
 De nya funktionerna i den här versionen beskrivs nedan.
 
 #### Funktioner
-
-<table>
-<thead>
-<tr>
-<th><strong>WhatsApp Channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer har nu stöd för meddelanden direkt i WhatsApp, vilket möjliggör smidig integrering på era resor och kampanjer för förbättrad mottagarkommunikation och -engagemang. Den här inbyggda kanalen levereras direkt ur kartongen med whatsApp-mallintegrering, förhandsgranskning av meddelanden, personalisering, leveransrapportering, webbhooks, hantering av deltagande och avanmälan med mera.</p>
-<p>Den här funktionen lanserades tidigare i Beta och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p><img src="../whatsapp/assets/do-not-localize/WA-Animation.gif"/><p>
-<p>Mer information finns i den <a href="../whatsapp/get-started-whatsapp.md">detaljerade dokumentationen</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -179,36 +191,6 @@ Mer information finns i <a href="../experience-decisioning/create-decision.md">d
 </tr>
 </tbody>
 </table>
-
-<!--
-<table>
-<thead>
-<tr>
-<th><strong>Optimization in campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now empowers you with the tools to deliver personalized and optimized content to your campaigns' audience, allowing you to run content experiments, create rule-based targeting, and use advanced combinations of both, to maximize the effectiveness of your campaigns.</p>
-<p>With Optimization, you can:</p>
-<ul>
-<li>Test multiple content variations to identify the most effective messaging.</li>
-<li>Deliver personalized content based on user attributes and contextual data.</li>
-<li>Combine targeting and experimentation for advanced campaign strategies.</li>
-<li>Filter out users that do not match variant criteria.</li>
-<li>Ensure fallback mechanisms to maintain user engagement.</li>
-</ul>
-<P>Once the campaign is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are delivered with the appropriate experience or content from the campaign.</p>
-<p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
-</td>
-</tr>
-</tbody>
-</table>
--->
-
-
 
 <table>
 <thead>
@@ -275,7 +257,7 @@ Förbättringar i den här versionen visas nedan.
 * **Kampanjer**
 
    * **Flera inkommande åtgärder i kampanjer** - För att förenkla kampanjhanteringen kan du nu definiera flera inkommande åtgärder i en enda kampanj. Med den här funktionen kan ni leverera flera kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, och varje åtgärd innehåller ett visst innehåll.
-  <!-- [Read more](../FILE.md) -->
+     [Läs mer](../campaigns/campaign-action.md#multi-action)
 
    * **Omorganisation av kampanjinventering** - Schemalagda och API-utlösta kampanjer delas nu upp på separata flikar i kampanjlagret för enklare navigering och hantering.
 
