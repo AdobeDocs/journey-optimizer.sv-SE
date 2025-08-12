@@ -7,10 +7,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 067b92c901bce0b0d14a7618aa41c705fe81b4c6
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 2%
+source-wordcount: '1059'
+ht-degree: 0%
 
 ---
 
@@ -25,14 +25,12 @@ ht-degree: 2%
 
 **Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 19 augusti 2025
 
 
 ### Nya funktioner {#Aug-25-8-features}
-
-De nya funktionerna i den här versionen beskrivs nedan.
 
 <table>
 <thead>
@@ -46,15 +44,13 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <p>Nu kan du pausa och återuppta dina resor. Denna förmåga ger resenärerna större kontroll och flexibilitet genom att göra det möjligt att tillfälligt avbryta pågående resor utan att störa kundupplevelsen. När det är pausat skickas ingen kommunikation och profilerna förblir i ett uppehåll tills resan återupptas.</p>
 <p>Du kan bara pausa och återuppta en resa, eller utföra grupppausningar och återuppta åtgärder på en grupp resor.</p>
 <p>Dessutom kan du använda globala filter på pausade resor för att exkludera profiler baserat på deras attribut.</p>
-<img src="assets/do-not-localize/PauseResume.gif">
-<p>Den här funktionen fanns tidigare för en begränsad uppsättning kunder (begränsad tillgänglighet) och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Mer information finns i den <a href="../building-journeys/journey-pause.md">detaljerade dokumentationen</a>.</p>
+<p><!--img src="assets/do-not-localize/PauseResume.gif"/>--></p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p><!--For more information, refer to the <a href="../building-journeys/journey-pause.md">detailed documentation</a>--></p>
 </td>
 </tr>
 </tbody>
 </table>
-
-
 
 <table>
 <thead>
@@ -72,13 +68,12 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <li>Möjlighet att se utkast till kampanjer om du har angett ett start- och slutdatum</li>
 <li>En ny inställning som döljer och visar kalenderobjekt som körs länge</li>
 </ul>
-<img src="assets/do-not-localize/calendar.gif">
-<p>Mer information finns i <a href="../building-journeys/journey-ui.md#journeys-calendar">detaljerad dokumentation</a></p>
+<p><!--img src="assets/do-not-localize/calendar.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../building-journeys/journey-ui.md#journeys-calendar">detailed documentation</a>--></p>
 </td>
 </tr>
 </tbody>
 </table>
-
 
 <table>
 <thead>
@@ -96,40 +91,114 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <li>Alla e-postklienter stöder inte anpassat mörkt läge. Vissa e-postklienter använder dessutom bara sitt eget mörka standardläge för alla e-postmeddelanden som tas emot. I båda fallen går det inte att återge de anpassade inställningarna som du har definierat i e-post-Designer.</li>
 </ul>
 <P>Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.</p>
-<p><img src="assets/do-not-localize/dark-mode.gif"/></p>
-<p>Mer information finns i den <a href="../email/dark-mode.md">detaljerade dokumentationen</a>. </p>
+<p><!--img src="assets/do-not-localize/dark-mode.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../email/dark-mode.md">detailed documentation</a>--></p>
 </td>
 </tr>
 </tbody>
 </table>
 
-
 <table>
 <thead>
 <tr>
-<th><strong>Optimering av kampanjer</strong><br/></th>
+<th><strong>Använd Adobe Experience Platform-data för personalisering</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer ger er nu de verktyg ni behöver för att leverera personaliserat och optimerat innehåll till er målgrupp, så att ni kan köra innehållsexperiment, skapa regelbaserad målinriktning och använda avancerade kombinationer av båda för att maximera effektiviteten i era kampanjer.</p>
-<p>Med optimering kan man</p>
+<p>Utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att personalisera ert innehåll. För att göra detta måste datauppsättningar som behövs för sökpersonalisering först aktiveras via ett API-anrop. När du är klar kan du använda deras data för att anpassa ditt innehåll till [!DNL Journey Optimizer].</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer. I den här allmänna tillgänglighetsversionen har följande förbättringar införts:</p>
 <ul>
-<li>Testa olika innehållsvariationer för att identifiera de mest effektiva budskapen.</li>
-<li>Leverera personaliserat innehåll baserat på användarattribut och sammanhangsbaserade data.</li>
-<li>Kombinera målinriktning och experiment för avancerade kampanjstrategier.</li>
-<li>Filtrera bort användare som inte matchar variantvillkor.</li>
-<li>Se till att reservmekanismer upprätthåller användarengagemanget.</li>
+<li>Stöd för inkommande kanaler</li>
+<li>Hjälpfunktionen"datasetLookup" kan nu användas i uttryck och visuella fragment för att anpassa innehåll med data från Adobe Experience Platform datamängder.</li>
+<li>Med ett alternativ i datauppsättningen kan du nu aktivera datauppsättningar för sökpersonalisering, utan att behöva utföra ett API-anrop.</li>
 </ul>
-<P>När kampanjen är aktiv utvärderas profiler mot de definierade kriterierna, och baserat på matchningskriterier levereras de med rätt erfarenhet eller innehåll från kampanjen.</p>
-<p><img src="assets/do-not-localize/campaign-optimization.gif"/></p>
-<!--p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p-->
+<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
 </tr>
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Använd beslut i e-postkanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni lägga till beslutsprinciper i e-postresor och -kampanjer. Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassade formulär för landningssida</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Journey Optimizer kan du nu skapa anpassade formulär och använda dem på landningssidor för att hämta in profilattribut i den datauppsättning som har definierats för varje formulär.</p>
+<p>Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.</p>
+<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Reseoptimering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer ger er nu de verktyg ni behöver för att optimera era resor genom att utnyttja AI och experimenteringsramverk samtidigt som ni säkerställer smidig användbarhet och differentiering mellan villkor och optimeringsfunktioner.</p>
+<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 ### Förbättringar {#Aug-25-8-improv}
 
 Förbättringar i den här versionen visas nedan.
+
+
+- **Kampanjer**
+   - **Hastighetskontroll för utgående kampanjer** - Nu kan du aktivera hastighetskontroll för utgående kampanjer (e-post, SMS, push-meddelanden), så att du kan förhindra överbelastning i efterföljande system, som landningssidor eller kundtjänstplattformar.
+   - **Schemaläggning av åtgärdskampanjer** - Schemaläggaren för kampanjen dagligen, veckovis och månadsvis har uppdaterats för förbättrad granularitet. Du kan till exempel nu ange antalet veckor/månader mellan scheman, definiera vilken dag som ska verkställas och bestämma dig för att stoppa efter ett visst antal förekomster eller på ett visst datum.
+
+- **Administration**
+   - **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera för att ta emot systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett kanalkonfigurationsfel inträffar eller om en DNS-post saknas.
+
+- **Kanal - tryck**
+   - **Förfallodatum för push-meddelanden** - Nu kan du ange ett förfallodatum för varje push-meddelande, vilket förhindrar att tidskänsliga meddelanden (som Black Friday Sale) skickas efter ett visst datum och på så sätt undviker att ge kunderna en dålig upplevelse.
+
+- **Kanal - e-post**
+   - **PDF-bilagor till e-postmeddelanden** - Nu kan du bifoga statiska PDF-filer till e-postmeddelanden som skickas med Journey Optimizer.
+
+- **Konfiguration**
+   - **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för personalisering i spårnings-URL:er för fördefinierade domäner som listas på kanalkonfigurationsnivån.
+   - **Stöd för anpassade attribut med en klickning för att avbryta prenumeration-URL** - Om du hanterar samtycke utanför Adobe kan du ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumeration i e-postkonfigurationen med ett enda klick. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
+
+     Om du vill anpassa länken för att avbryta prenumerationen med ett klick ytterligare kan du nu definiera anpassade attribut som läggs till i medgivandehändelsen.
+
+- **Resor**
+   - **Åtgärdsaktivitet på resor** - Journey Optimizer har stöd för en ny generisk Action-aktivitet som gör att du kan konfigurera både enskilda och flerkanaliga utgående åtgärder, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Med den här nya aktiviteten kan ni också lägga till målgruppsoptimering, experiment och flerspråkiga varianter i alla inbyggda kanalåtgärder.
+   - **Resemassåtgärder** - I listan över dina resor kan du nu välja flera objekt. När du har valt det här alternativet kan du pausa eller återuppta upp till 10 resor i taget.
