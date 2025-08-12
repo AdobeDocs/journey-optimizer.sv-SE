@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1f53a578e91cd26e0e062c20b371a344ad709a8f
+source-git-commit: 1be17ef27ca3ed7ff98d9df47cfa9066a89625f3
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 19 augusti 2025
 
@@ -140,14 +140,13 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Anpassade formulär för landningssida</strong><br/></th>
+<th><strong>Optimering av resväg</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med Journey Optimizer kan du nu skapa anpassade formulär och använda dem på landningssidor för att hämta in profilattribut i den datauppsättning som har definierats för varje formulär.</p>
-<p>Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.</p>
+<p>Journey Optimizer ger er nu de verktyg ni behöver för att optimera era resor genom att utnyttja AI och experimenteringsramverk samtidigt som ni säkerställer smidig användbarhet och differentiering mellan villkor och optimeringsfunktioner.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -158,13 +157,32 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Reseoptimering</strong><br/></th>
+<th><strong>Verksamhet under resor</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer ger er nu de verktyg ni behöver för att optimera era resor genom att utnyttja AI och experimenteringsramverk samtidigt som ni säkerställer smidig användbarhet och differentiering mellan villkor och optimeringsfunktioner.</p>
+<p>Journey Optimizer har stöd för en ny generisk Action-aktivitet som gör att du kan konfigurera både enskilda åtgärder och utgående åtgärder i flera kanaler, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Med den här nya aktiviteten kan ni också lägga till målgruppsoptimering, experiment och flerspråkiga varianter i alla inbyggda kanalåtgärder.</p>
+<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
+<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassade formulär för landningssida</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Journey Optimizer kan du nu skapa anpassade formulär och använda dem på landningssidor för att hämta in profilattribut i den datauppsättning som har definierats för varje formulär.</p>
+<p>Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.</p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -197,5 +215,4 @@ Förbättringar i den här versionen visas nedan.
      Om du vill anpassa länken för att avbryta prenumerationen med ett klick ytterligare kan du nu definiera anpassade attribut som läggs till i medgivandehändelsen.
 
 - **Resor**
-   - **Åtgärdsaktivitet på resor** - Journey Optimizer har stöd för en ny generisk Action-aktivitet som gör att du kan konfigurera både enskilda och flerkanaliga utgående åtgärder, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Med den här nya aktiviteten kan ni också lägga till målgruppsoptimering, experiment och flerspråkiga varianter i alla inbyggda kanalåtgärder.
    - **Resemassåtgärder** - I listan över dina resor kan du nu välja flera objekt. När du har valt det här alternativet kan du pausa eller återuppta upp till 10 resor i taget.
