@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 6326e1e3056f41f1550ac785bcbf83af175b37cc
+source-git-commit: 1f53a578e91cd26e0e062c20b371a344ad709a8f
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
@@ -18,14 +18,12 @@ ht-degree: 0%
 
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras i slutet av varje månad i [versionsinformationen](release-notes.md).
 
-**Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i [versionsinformationen](release-notes.md) på releasedatum.
 
+## 25 förhandsversionsinformation augusti {#25-8-rn}
 
-## 25 förhandsversionsinformation augusti {#25-7-rn}
+**Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-**Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
-
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 19 augusti 2025
 
@@ -64,9 +62,9 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <p>Nu finns en kalendervy tillgänglig i rese- och kampanjlistorna. Ni kan visualisera alla resor och kampanjaktiveringar i respektive lista.</p>
 <p>Den här funktionen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer. I den här allmänna tillgänglighetsversionen innehåller funktionen:</p>
 <ul>
-<li>Designförbättringar för navigering i datum</li>
-<li>Möjlighet att se utkast till kampanjer om du har angett ett start- och slutdatum</li>
-<li>En ny inställning som döljer och visar kalenderobjekt som körs länge</li>
+<li>Designförbättringar för navigering i datum,</li>
+<li>Möjlighet att se utkast till kampanjer om du har angett ett start- och slutdatum,</li>
+<li>En ny inställning som döljer och visar kalenderobjekt som körs länge.</li>
 </ul>
 <p><!--img src="assets/do-not-localize/calendar.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../building-journeys/journey-ui.md#journeys-calendar">detailed documentation</a>--></p>
@@ -110,7 +108,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <p>Utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att personalisera ert innehåll. För att göra detta måste datauppsättningar som behövs för sökpersonalisering först aktiveras via ett API-anrop. När du är klar kan du använda deras data för att anpassa ditt innehåll till [!DNL Journey Optimizer].</p>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer. I den här allmänna tillgänglighetsversionen har följande förbättringar införts:</p>
 <ul>
-<li>Stöd för inkommande kanaler</li>
+<li>Stöd för inkommande kanaler,</li>
 <li>Hjälpfunktionen"datasetLookup" kan nu användas i uttryck och visuella fragment för att anpassa innehåll med data från Adobe Experience Platform datamängder.</li>
 <li>Med ett alternativ i datauppsättningen kan du nu aktivera datauppsättningar för sökpersonalisering, utan att behöva utföra ett API-anrop.</li>
 </ul>
@@ -179,16 +177,15 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 
 Förbättringar i den här versionen visas nedan.
 
-
-- **Kampanjer**
-   - **Hastighetskontroll för utgående kampanjer** - Nu kan du aktivera hastighetskontroll för utgående kampanjer (e-post, SMS, push-meddelanden), så att du kan förhindra överbelastning i efterföljande system, som landningssidor eller kundtjänstplattformar.
-   - **Schemaläggning av åtgärdskampanjer** - Schemaläggaren för kampanjen dagligen, veckovis och månadsvis har uppdaterats för förbättrad granularitet. Du kan till exempel nu ange antalet veckor/månader mellan scheman, definiera vilken dag som ska verkställas och bestämma dig för att stoppa efter ett visst antal förekomster eller på ett visst datum.
-
 - **Administration**
    - **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera för att ta emot systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett kanalkonfigurationsfel inträffar eller om en DNS-post saknas.
 
+- **Kampanjer**
+   - **Hastighetskontroll för utgående kampanjer** - Nu kan du aktivera hastighetskontroll för utgående kampanjer (e-post, SMS, push-meddelanden), så att du kan förhindra överbelastning i efterföljande system, som landningssidor eller kundtjänstplattformar.
+   - **Schemaläggning av åtgärdskampanjer** - Schemaläggaren för kampanjen dagligen, veckovis och månadsvis har uppdaterats för förbättrad granularitet. Du kan till exempel nu ange antalet veckor/månader mellan scheman, definiera vilken dag som ska köras och bestämma dig för att stoppa efter ett visst antal förekomster eller ett visst datum.
+
 - **Kanal - tryck**
-   - **Förfallodatum för push-meddelanden** - Nu kan du ange ett förfallodatum för varje push-meddelande, vilket förhindrar att tidskänsliga meddelanden (som Black Friday Sale) skickas efter ett visst datum och på så sätt undviker att ge kunderna en dålig upplevelse.
+   - **Förfallodatum för push-meddelanden** - Nu kan du ange ett förfallodatum för varje push-meddelande, vilket förhindrar att tidskänsliga meddelanden (som Black Friday Sale) skickas efter ett visst datum, vilket förhindrar att dina kunder får en dålig upplevelse.
 
 - **Kanal - e-post**
    - **PDF-bilagor till e-postmeddelanden** - Nu kan du bifoga statiska PDF-filer till e-postmeddelanden som skickas med Journey Optimizer.
