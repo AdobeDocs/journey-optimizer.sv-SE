@@ -5,9 +5,9 @@ title: Kom igång med samordnade kampanjer
 description: Lär dig hur du börjar med samordnade kampanjer
 short-description: Identifiera samordnade kampanjfunktioner och användningsexempel.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 86bd6a100644a0f50aa9e18fd7023dec11c05bfe
+source-git-commit: 4510cfde1579fbabe7deb1289f70f13ee21a3d4a
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 >abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/> <b>Utnyttja data för flera enheter</b><br/>Lär dig hur orkestrerade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt antal</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden, direktreklam"
 
 Kampanjsamordning i [!DNL Adobe Journey Optimizer] driver avancerade, varumärkesinitierade marknadsföringskampanjer över alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
+
+>[!IMPORTANT]
+>
+>För att få åtkomst till kampanjsamordning måste din licens innehålla antingen paketet **Journey Optimizer - Campaigns &amp; Journeys** eller paketet **Journey Optimizer - Campaigns**. Kontakta din Adobe-representant för att bekräfta din licens och uppdatera vid behov.
 
 Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den sömlös. Med ett visuellt dra-och-släpp-gränssnitt kan ni utforma och automatisera komplexa marknadsföringsarbetsflöden, från segmentering till meddelandeleverans, i flera kanaler. Allt sker i en intuitiv miljö som är byggd för snabbhet, kontroll och effektivitet.
 
