@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 7f9828c1781468155702d9f8fd475736a7656188
+source-git-commit: 7df443d5bf64f862f4adce43a34f14d13fd36733
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 19 augusti 2025
 
@@ -182,7 +182,8 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Med Journey Optimizer kan du nu skapa anpassade formulär och använda dem på landningssidor för att hämta in profilattribut i den datauppsättning som har definierats för varje formulär.</p>
-<p>Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.</p>
+<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
+<p><!--This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.--></p>
 <p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
@@ -216,4 +217,3 @@ Förbättringar i den här versionen visas nedan.
 
 - **Resor**
    - **Resemassåtgärder** - I listan över dina resor kan du nu välja flera objekt. När du har valt det här alternativet kan du pausa eller återuppta upp till 10 resor i taget.
-
