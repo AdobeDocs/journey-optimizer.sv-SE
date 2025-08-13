@@ -5,20 +5,23 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 378ead41924496f52f22026b3f0e05a9c9c76f89
+source-git-commit: 0d9d5324a8ca2c02fd18c01808e45be83952cc91
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 19%
+source-wordcount: '2875'
+ht-degree: 18%
 
 ---
+
 
 # Hjälp om Adobe Journey Optimizer {#using}
 
 + [Journey Optimizer-dokumentation](ajo-home.md)
 + Nyheter? {#whats-new}
+   + [Nyheter?](/help/rp_landing_pages/whats-new-landing-page.md)
    + [Tidig versionsinformation](using/rn/e-release-notes.md)
    + [Senaste versionsinformation](using/rn/release-notes.md)
    + Tidigare versionsinformation {#previous-rn-new}
+      + [Tidigare versionsinformation](/help/rp_landing_pages/previous-rn-new-landing-page.md)
       + [2025](using/rn/release-notes-2025.md)
       + [2024](using/rn/release-notes-2024.md)
       + [2023](using/rn/release-notes-2023.md)
@@ -26,9 +29,13 @@ ht-degree: 19%
       + [2021](using/rn/release-notes-2021.md)
    + [Dokumentationsuppdateringar](using/rn/documentation-updates.md)
    + [Förbättrad arbetsyta](using/rn/new-canvas.md)
-+ Kom igång{#get-started}
-   + [Vad är Journey Optimizer?](using/start/get-started.md)
-   + Snabbstartguider{#quick-start}
++ Kom igång {#get-started}
+   + [Kom igång](/help/rp_landing_pages/get-started-landing-page.md)
+   + [Nyckelfunktioner](using/start/get-started.md)
+   + [Arkitektur](using/start/architecture-concepts-redpen.md)
+   + [Kärnbegrepp](using/start/functional-areas-redpen.md)
+   + [Nyckelterminologi](using/start/terminology-md-redpen.md)
+   + Roller och ansvarsområden {#quick-start}
       + [Översikt](using/start/quick-start.md)
       + [Kom igång som marknadsförare](using/start/path/marketer.md)
       + [Kom igång som datatekniker](using/start/path/data-engineer.md)
@@ -36,14 +43,16 @@ ht-degree: 19%
       + [Kom igång som utvecklare](using/start/path/developer.md)
    + [Användargränssnitt](using/start/user-interface.md)
    + [Söka, filtrera, kategorisera](using/start/search-filter-categorize.md)
-   + [Guardrails](using/start/guardrails.md)
    + [Tillgänglighet](using/start/accessibility.md)
-   + [Use Case Playbooks](using/start/playbooks.md)
    + [Arbeta med AI Assistant](using/start/ai-assistant.md)
+   + [Guardrails](using/start/guardrails.md)
    + [Bästa praxis](using/start/best-practices.md)
+   + [Playbooks](using/start/playbooks.md)
 + Resor {#orchestrate-journeys}
+   + [Resor](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
    + [Kom igång med resor](using/building-journeys/journey.md)
    + Skapa en resa {#create-journey}
+      + [Skapa en resa](/help/rp_landing_pages/create-journey-landing-page.md)
       + [Skapa den första resan](using/building-journeys/journey-gs.md)
       + [Ange egenskaper för din resa](using/building-journeys/journey-properties.md)
       + [Konfigurera och spåra dina resemått](using/building-journeys/success-metrics.md)
@@ -54,6 +63,7 @@ ht-degree: 19%
       + [Pausa en resa](using/building-journeys/journey-pause.md)
       + [Live-rapport under din resa](using/building-journeys/report-journey.md)
    + Hantera dina resor {#manage-journey}
+      + [Hantera dina resor](/help/rp_landing_pages/manage-journey-landing-page.md)
       + [Bläddra och filtrera dina resor](using/building-journeys/journey-ui.md)
       + [Profilinträde under resor](using/building-journeys/entry-management.md)
       + [Använd tilläggsidentifierare under resor](using/building-journeys/supplemental-identifier.md)
@@ -63,6 +73,7 @@ ht-degree: 19%
       + [Kopiera en resa till en annan sandlåda](using/building-journeys/copy-to-sandbox.md)
       + [Integrera med intelligenta tjänster](using/building-journeys/ai-services-overview.md)
    + Aktiviteter {#about-journey-building}
+      + [Aktiviteter](/help/rp_landing_pages/about-journey-building-landing-page.md)
       + [Kom igång med reseaktiviteter](using/building-journeys/about-journey-activities.md)
       + [Allmänna händelser](using/building-journeys/general-events.md)
       + [Reaktion](using/building-journeys/reaction-events.md)
@@ -78,8 +89,10 @@ ht-degree: 19%
       + [Hoppa](using/building-journeys/jump.md)
       + [Uppdatera profil](using/building-journeys/update-profiles.md)
    + Skapa uttryck {#building-advanced-conditions-journeys}
+      + [Skapa uttryck](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
       + [Arbeta med den avancerade uttrycksredigeraren](using/building-journeys/expression/expressionadvanced.md)
       + Syntax {#syntax}
+         + [Syntax](/help/rp_landing_pages/syntax-landing-page.md)
          + [Syntax för avancerad uttrycksredigerare](using/building-journeys/expression/generalities.md)
          + [Villkorlig instruktion](using/building-journeys/expression/conditional-instruction.md)
          + [Datatyper](using/building-journeys/expression/data-types.md)
@@ -89,10 +102,12 @@ ht-degree: 19%
          + [Resans egenskaper](using/building-journeys/expression/journey-properties.md)
          + [Exempel](using/building-journeys/expression/advanced-editor-use-cases.md)
       + Funktioner {#main-functions-journey}
+         + [Funktioner](/help/rp_landing_pages/main-functions-journey-landing-page.md)
          + [Huvudfunktioner](using/building-journeys/expression/functions.md)
          + Adobe Experience Platform {#adobe-experience-platform}
             + [inAudience](using/building-journeys/functions/functioninaudience.md)
          + Aggregering {#aggregation}
+            + [Aggregering](/help/rp_landing_pages/aggregation-landing-page.md)
             + [avg](using/building-journeys/functions/functionavg.md)
             + [count](using/building-journeys/functions/functioncount.md)
             + [countOnlyNull](using/building-journeys/functions/functioncountonlynull.md)
@@ -103,6 +118,7 @@ ht-degree: 19%
             + [min](using/building-journeys/functions/functionmin.md)
             + [sum](using/building-journeys/functions/functionsum.md)
          + Konvertering {#conversion}
+            + [Konvertering](/help/rp_landing_pages/conversion-landing-page.md)
             + [toBool](using/building-journeys/functions/functiontobool.md)
             + [toDateOnly](using/building-journeys/functions/functiontodateonly.md)
             + [toDateTime](using/building-journeys/functions/functiontodatetime.md)
@@ -112,6 +128,7 @@ ht-degree: 19%
             + [toInteger](using/building-journeys/functions/functiontointeger.md)
             + [toString](using/building-journeys/functions/functiontostring.md)
          + Datum {#date}
+            + [Datum](/help/rp_landing_pages/date-landing-page.md)
             + [currentTimeInMillis](using/building-journeys/functions/functioncurrenttimeinmillis.md)
             + [inLastDays](using/building-journeys/functions/functioninlastdays.md)
             + [inLastHours](using/building-journeys/functions/functioninlasthours.md)
@@ -127,6 +144,7 @@ ht-degree: 19%
             + [setDays](using/building-journeys/functions/functionsetdays.md)
             + [updateTimeZone](using/building-journeys/functions/functionupdatetimezone.md)
          + Lista {#list}
+            + [Lista](/help/rp_landing_pages/list-landing-page.md)
             + [distinct](using/building-journeys/functions/functiondistinct.md)
             + [distinctWithNull](using/building-journeys/functions/functiondistinctwithnull.md)
             + [filter](using/building-journeys/functions/functionfilter.md)
@@ -138,9 +156,11 @@ ht-degree: 19%
             + [serializeList](using/building-journeys/functions/functionserializelist.md)
             + [sort](using/building-journeys/functions/functionsort.md)
          + Matematik {#math}
+            + [Matematik](/help/rp_landing_pages/math-landing-page.md)
             + [random](using/building-journeys/functions/functionrandom.md)
             + [round](using/building-journeys/functions/functionround.md)
          + Sträng {#string}
+            + [Sträng](/help/rp_landing_pages/string-landing-page.md)
             + [concat](using/building-journeys/functions/functionconcat.md)
             + [contain](using/building-journeys/functions/functioncontain.md)
             + [containIgnoreCase](using/building-journeys/functions/functioncontainwithignorecase.md)
@@ -165,6 +185,7 @@ ht-degree: 19%
             + [övre](using/building-journeys/functions/functionupper.md)
             + [uuid](using/building-journeys/functions/functionuuid.md)
    + Användningsfall {#journey-use-cases}
+      + [Användningsfall](/help/rp_landing_pages/journey-use-cases-landing-page.md)
       + [Lär dig mer om användningsexempel](using/building-journeys/jo-use-cases.md)
       + [Uppslag med upplevelsehändelser](using/building-journeys/exp-event-lookup.md)
       + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
@@ -175,15 +196,17 @@ ht-degree: 19%
       + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
       + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
    + Felsökning {#troubleshoot-journey}
-      + [Felsök dina resor](using/building-journeys/gs-troubleshooting.md)
+      + [Felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
       + [Felsöka resefel](using/building-journeys/troubleshooting.md)
       + [Felsöka körning av resa](using/building-journeys/troubleshooting-execution.md)
       + [Felsöka inkommande åtgärder](using/building-journeys/troubleshooting-inbound.md)
       + [Felsöka anpassade åtgärder](using/action/troubleshoot-custom-action.md)
 + Kampanjer {#campaigns}
+   + [Kampanjer](/help/rp_landing_pages/campaigns-landing-page.md)
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
    + [Få tillgång till och hantera kampanjer](using/campaigns/modify-stop-campaign.md)
    + Åtgärdskampanjer {#action-campaigns}
+      + [Åtgärdskampanjer](/help/rp_landing_pages/action-campaigns-landing-page.md)
       + [Arbeta med Action-kampanjer](using/campaigns/create-campaign.md)
       + [Definiera kampanjegenskaperna](using/campaigns/campaign-properties.md)
       + [Konfigurera kampanjåtgärden](using/campaigns/campaign-action.md)
@@ -193,6 +216,7 @@ ht-degree: 19%
       + [Schemalägg kampanjen](using/campaigns/campaign-schedule.md)
       + [Granska och aktivera en åtgärdskampanj](using/campaigns/review-activate-campaign.md)
    + API-utlösta kampanjer {#api-triggered-campaigns}
+      + [API-utlösta kampanjer](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
       + [Arbeta med API-utlösta kampanjer](using/campaigns/api-triggered-campaigns.md)
       + [Definiera kampanjegenskaperna](using/campaigns/api-triggered-campaign-properties.md)
       + [Konfigurera kampanjåtgärden](using/campaigns/api-triggered-campaign-action.md)
@@ -202,28 +226,34 @@ ht-degree: 19%
       + [Granska och aktivera kampanjen](using/campaigns/review-activate-api-triggered-campaign.md)
       + [Utlösa kampanjkörningen](using/campaigns/trigger-campaigns.md)
    + Samordnade kampanjer {#orchestrated-campaigns}
+      + [Samordnade kampanjer](/help/rp_landing_pages/orchestrated-campaigns-landing-page.md)
       + [Kom igång med samordnade kampanjer](using/orchestrated/gs-orchestrated-campaigns.md)
       + [Skyddsritningar och begränsningar](using/orchestrated/guardrails.md)
       + [Vanliga frågor och svar](using/orchestrated/orchestrated-campaigns-faq.md)
-      + Datakonfiguration {#configuration}
+      + Datakonfiguration {#data-configuration}
+         + [Datakonfiguration](/help/rp_landing_pages/data-configuration-landing-page.md)
          + Hantera relationsscheman och datauppsättningar {#schemas-datasets}
+            + [Hantera relationsscheman och datauppsättningar](/help/rp_landing_pages/schemas-datasets-landing-page.md)
             + [Kom igång med scheman och datauppsättningar](using/orchestrated/gs-schemas.md)
             + [Manuellt schema](using/orchestrated/manual-schema.md)
             + [Filöverföringsschema](using/orchestrated/file-upload-schema.md)
             + [Ingrediera data](using/orchestrated/ingest-data.md)
          + [Skapa en måldimension](using/orchestrated/target-dimension.md)
-      + Starta din första samordnade kampanj{#launch}
+      + Starta din första samordnade kampanj {#launch}
+         + [Starta din första samordnade kampanj](/help/rp_landing_pages/launch-landing-page.md)
          + [Viktiga steg för att skapa en orkestrerad kampanj](using/orchestrated/gs-campaign-creation.md)
          + [Skapa och schemalägg kampanjen](using/orchestrated/create-orchestrated-campaign.md)
          + [Organisera aktiviteter](using/orchestrated/orchestrate-activities.md)
          + [Starta och övervaka kampanjen](using/orchestrated/start-monitor-campaigns.md)
          + [Rapportering](using/orchestrated/reporting-campaigns.md)
       + Fråga databasen {#query-database}
+         + [Fråga databasen](/help/rp_landing_pages/query-database-landing-page.md)
          + [Arbeta med regelbyggaren](using/orchestrated/orchestrated-rule-builder.md)
-         + [Skapa din första regel](using/orchestrated/build-query.md)
+         + [Bygg din första regel](using/orchestrated/build-query.md)
          + [Redigera uttryck](using/orchestrated/edit-expressions.md)
          + [Återmarknadsföring](using/orchestrated/retarget.md)
       + Ochestrerade kampanjaktiviteter {#design-campaigns}
+         + [Ochestrerade kampanjaktiviteter](/help/rp_landing_pages/design-campaigns-landing-page.md)
          + [Kom igång med aktiviteter](using/orchestrated/activities/about-activities.md)
          + [Och-join](using/orchestrated/activities/and-join.md)
          + [Bygg målgrupper](using/orchestrated/activities/build-audience.md)
@@ -240,15 +270,19 @@ ht-degree: 19%
          + [Test](using/orchestrated/activities/test.md)
          + [Vänta](using/orchestrated/activities/wait.md)
 + Konflikthantering och -prioritering {#conflict-prioritization}
+   + [Konflikthantering och -prioritering](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
    + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
    + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
    + [Tilldela prioritetspoäng](using/conflict-prioritization/priority-scores.md)
-Ange regler för capping av meddelanden och resor  {#capping-rules}
+   + Ange regler för capping av meddelanden och resor {#capping-rules}
+      + [Ange regler för capping av meddelanden och resor](/help/rp_landing_pages/capping-rules-landing-page.md)
       + [Arbeta med regeluppsättningar](using/conflict-prioritization/rule-sets.md)
       + [Resebegränsning och skiljeförfarande](using/conflict-prioritization/journey-capping.md)
       + [Frekvensbegränsning per kanal och kommunikationstyp](using/conflict-prioritization/channel-capping.md)
 + Testa och godkänn {#test}
+   + [Testa och godkänn](/help/rp_landing_pages/test-landing-page.md)
    + Förhandsgranska och testa innehåll {#preview-test}
+      + [Förhandsgranska och testa innehåll](/help/rp_landing_pages/preview-test-landing-page.md)
       + [Kom igång med förgranskning och test](using/content-management/preview-test.md)
       + [Välj testprofiler](using/content-management/test-profiles.md)
       + [Förhandsgranska med testprofiler](using/content-management/preview.md)
@@ -257,6 +291,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Simulera innehållsvariationer](using/test-approve/simulate-sample-input.md)
       + [Rapport om skräppost](using/content-management/spam-report.md)
    + Godkänn resor och kampanjer {#approve}
+      + [Godkänn resor och kampanjer](/help/rp_landing_pages/approve-landing-page.md)
       + [Kom igång med godkännanden](using/test-approve/gs-approval.md)
       + [Skapa och hantera godkännandepolicyer](using/test-approve/approval-policies.md)
       + [Begär godkännande](using/test-approve/request-approval.md)
@@ -265,17 +300,20 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
 + Kommunikationskanaler {#channels}
    + [Kom igång med kommunikationskanaler](using/channels/gs-channels.md)
    + E-postkanal {#email}
-      + [Kom igång med e-post](using/email/get-started-email.md)
+      + [E-postkanal](/help/rp_landing_pages/email-landing-page.md)
       + [Skapa ett e-postmeddelande](using/email/create-email.md)
       + Designa e-postinnehåll {#design-email}
+         + [Designa e-postinnehåll](/help/rp_landing_pages/design-email-landing-page.md)
          + [Kom igång med e-postdesign](using/email/get-started-email-design.md)
          + Börja skapa innehåll {#start-creating-content}
+            + [Börja skapa innehåll](/help/rp_landing_pages/start-creating-content-landing-page.md)
             + [Designa innehåll från grunden](using/email/content-from-scratch.md)
             + [Importera innehåll](using/email/existing-content.md)
             + [Koda eget innehåll](using/email/code-content.md)
             + [Använd e-postmallar](using/email/use-email-templates.md)
             + [Utnyttja e-postteman](using/email/apply-email-themes.md)
          + Designa innehåll {#add-content}
+            + [Designa innehåll](/help/rp_landing_pages/add-content-landing-page.md)
             + [Använda innehållskomponenter](using/email/content-components.md)
             + [Utnyttja visuella fragment](using/email/use-visual-fragments.md)
             + [Lägga till länkar och spåra meddelanden](using/email/message-tracking.md)
@@ -284,6 +322,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
             + [Lägg till metadata](using/email/email-metadata.md)
             + [Lägg till anpassad CSS](using/email/custom-css.md)
          + Redigera stil {#edit-style}
+            + [Redigera stil](/help/rp_landing_pages/edit-style-landing-page.md)
             + [Kom igång med e-postformat](using/email/get-started-email-style.md)
             + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
             + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
@@ -291,6 +330,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
             + [Definiera innehåll i mörkt läge](using/email/dark-mode.md)
       + [Hantera e-postavanmälan](using/email/email-opt-out.md)
       + Konfigurera e-postkanal {#configure-email}
+         + [Konfigurera e-postkanal](/help/rp_landing_pages/configure-email-landing-page.md)
          + [Kom igång med e-postkonfiguration](using/email/get-started-email-config.md)
          + [Definiera e-postkonfigurationsinställningar](using/email/email-settings.md)
          + [Aktivera avanmälan av lista](using/email/list-unsubscribe.md)
@@ -298,32 +338,36 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [URL-uppföljning](using/email/url-tracking.md)
          + [Anpassa e-postkonfigurationen](using/email/surface-personalization.md)
       + E-postleverans {#deliverability}
+         + [E-postleverans](/help/rp_landing_pages/deliverability-landing-page.md)
          + [Kom igång med leverans](using/reports/deliverability.md)
          + [Förstå listan över inaktiveringar](using/reports/suppression-list.md)
          + [Nytt krav från DMARC](using/configuration/dmarc-record-update.md)
-   + Kanal i appen{#in-app}
-      + [Kom igång med kanalen i appen](using/in-app/get-started-in-app.md)
+   + Kanal i appen {#in-app}
+      + [Kanal i appen](/help/rp_landing_pages/in-app-landing-page.md)
       + [Krav för kanaler i appen](using/in-app/inapp-configuration.md)
       + [Skapa ett mobilt meddelande i appen](using/in-app/create-in-app.md)
       + [Skapa ett meddelande i appen för webben](using/in-app/create-in-app-web.md)
       + [Designa ditt innehåll i appen](using/in-app/design-in-app.md)
       + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
-   + Push-meddelandekanal{#push}
-      + [Kom igång med push-meddelanden](using/push/get-started-push.md)
+   + Push-meddelandekanal {#push}
+      + [Push-meddelandekanal](/help/rp_landing_pages/push-landing-page.md)
       + [Skapa ett push-meddelande](using/push/create-push.md)
       + [Utforma ett push-meddelande](using/push/design-push.md)
       + [Kontrollera och skicka push-meddelanden](using/push/send-push.md)
-      + Konfigurera push-meddelanden{#push-config}
+      + Konfigurera push-meddelanden {#push-config}
+         + [Konfigurera push-meddelanden](/help/rp_landing_pages/push-config-landing-page.md)
          + [Push-meddelandeflöde](using/push/push-gs.md)
          + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
          + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
-   + SMS/MMS/RCS-kanal{#sms}
+   + SMS/MMS/RCS-kanal {#sms}
+      + [SMS/MMS/RCS-kanal](/help/rp_landing_pages/sms-landing-page.md)
       + [Kom igång med textmeddelanden](using/sms/get-started-sms.md)
       + [Skapa ett SMS/MMS/RCS-meddelande](using/sms/create-sms.md)
       + [Kontrollera och skicka textmeddelanden](using/sms/send-sms.md)
       + [Hantera avanmälan av textmeddelande](using/sms/sms-opt-out.md)
       + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
-      + Konfigurera SMS/MMS/RCS-kanal{#configure-sms}
+      + Konfigurera SMS/MMS/RCS-kanal {#configure-sms}
+         + [Konfigurera SMS/MMS/RCS-kanal](/help/rp_landing_pages/configure-sms-landing-page.md)
          + [Kom igång med SMS-/MMS-/RCS-konfiguration](using/sms/sms-configuration.md)
          + [Konfigurera Sinch-provider](using/sms/sms-configuration-sinch.md)
          + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
@@ -331,64 +375,76 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Konfigurera en anpassad provider](using/sms/sms-configuration-custom.md)
          + [Skapa en SMS-/MMS-/RCS-konfiguration](using/sms/sms-configuration-surface.md)
    + Direktmeddelande {#direct-mail}
+      + [Direktmeddelande](/help/rp_landing_pages/direct-mail-landing-page.md)
       + [Kom igång med direktreklam](using/direct-mail/get-started-direct-mail.md)
       + [Skapa direktreklam](using/direct-mail/create-direct-mail.md)
       + [Kontrollera och skicka ett direktutskick](using/direct-mail/test-send-direct-mail.md)
       + [Konfigurera direktreklam](using/direct-mail/direct-mail-configuration.md)
       + [Skicka direktutskick med resor](using/direct-mail/direct-mail-journeys.md)
    + Webbkanal {#web}
+      + [Webbkanal](/help/rp_landing_pages/web-landing-page.md)
       + [Kom igång med webbkanalen](using/web/get-started-web.md)
       + Konfigurera webbkanal {#configure-web-channel}
+         + [Konfigurera webbkanal](/help/rp_landing_pages/configure-web-channel-landing-page.md)
          + [Förutsättningar för webbkanaler](using/web/web-prerequisites.md)
          + [Konfigurera webbunderdomäner](using/web/web-delegated-subdomains.md)
          + [Skapa webbkanalskonfiguration](using/web/web-configuration.md)
       + [Skapa webbupplevelser](using/web/create-web.md)
       + Skapa webbsidor {#author-web-pages}
+         + [Skapa webbsidor](/help/rp_landing_pages/author-web-pages-landing-page.md)
          + [Arbeta med webbdesignern](using/web/web-visual-editor.md)
          + [Använda den icke-visuella redigeraren](using/web/web-non-visual-editor.md)
          + [Hantera ändringar](using/web/manage-web-modifications.md)
          + [Övervaka era webbupplevelser](using/web/monitor-web-experiences.md)
          + [Skapa single-page-appar](using/web/web-spa.md)
    + Kodbaserad upplevelse {#code-based-experience}
+      + [Kodbaserad upplevelse](/help/rp_landing_pages/code-based-experience-landing-page.md)
       + [Kom igång med kodbaserad kanal](using/code-based/get-started-code-based.md)
       + Konfigurera kodbaserad kanal {#configure-code-based-channel}
+         + [Konfigurera kodbaserad kanal](/help/rp_landing_pages/configure-code-based-channel-landing-page.md)
          + [Garantier och krav](using/code-based/code-based-prerequisites.md)
          + [Kodbaserade upplevelseytor](using/code-based/code-based-surface.md)
          + [Exempel på implementeringsmetoder](using/code-based/code-based-implementation-samples.md)
          + [Beslut om kodbaserade upplevelseimplementeringar](using/code-based/code-based-decisioning-implementations.md)
          + [Skapa kodbaserad upplevelsekonfiguration](using/code-based/code-based-configuration.md)
       + Skapa kodbaserade upplevelser {#create-code-based-experiences}
+         + [Skapa kodbaserade upplevelser](/help/rp_landing_pages/create-code-based-experiences-landing-page.md)
          + [Skapa och komponera kodbaserade upplevelser](using/code-based/create-code-based.md)
          + [Använd redigerbara fält i kodbaserade upplevelser](using/code-based/code-based-form-fields.md)
          + [Testa kodbaserade upplevelser](using/code-based/test-code-based.md)
          + [Hantera kodbaserade upplevelser](using/code-based/publish-code-based.md)
-   + Innehållskort{#content-card}
-      + [Kom igång med innehållskort](using/content-card/get-started-content-card.md)
+   + Innehållskort {#content-card}
+      + [Innehållskort](/help/rp_landing_pages/content-card-landing-page.md)
       + Konfigurera innehållskortskanal {#configure}
+         + [Konfigurera innehållskortskanal](/help/rp_landing_pages/configure-landing-page.md)
          + [Krav för innehållskort](using/content-card/content-card-configuration-prereq.md)
          + [Konfigurera innehållskortskanal i Journey Optimizer](using/content-card/content-card-configuration.md)
          + [Konfigurera stöd för innehållskort i Mobile SDK](using/content-card/content-card-lp.md)
          + [Konfigurera stöd för innehållskort i Web SDK](using/content-card/content-card-configuration-sdk.md)
       + [Skapa innehållskort](using/content-card/create-content-card.md)
       + [Utforma innehållskort](using/content-card/design-content-card.md)
-   + WhatApp{#whatsapp}
+   + WhatApp {#whatsapp}
+      + [WhatApp](/help/rp_landing_pages/whatsapp-landing-page.md)
       + [Kom igång med whatsApp-meddelanden](using/whatsapp/get-started-whatsapp.md)
       + [Konfigurera WhatsApp-kanalen i Journey Optimizer](using/whatsapp/whatsapp-configuration.md)
       + [Skapa ett WhatsApp-meddelande](using/whatsapp/create-whatsapp.md)
       + [Kontrollera och skicka dina meddelanden om whatsApp](using/whatsapp/send-whatsapp.md)
    + LINJE {#line}
-      + [Kom igång med LINE-kanal](using/line/get-started-line.md)
+      + [LINJE](/help/rp_landing_pages/line-landing-page.md)
       + [Konfigurera LINE-kanal i Journey Optimizer](using/line/line-configuration.md)
       + [Skapa ett LINE-meddelande](using/line/create-line.md)
       + [Kontrollera och skicka LINE-meddelanden](using/line/send-line.md)
 + Innehållshantering {#content-management}
+   + [Innehållshantering](/help/rp_landing_pages/content-management-landing-page.md)
    + Personalisering {#personalization}
+      + [Personalisering](/help/rp_landing_pages/personalization-landing-page.md)
       + [Kom igång med personalisering](using/personalization/personalize.md)
       + [Lägg till personalisering](using/personalization/personalization-build-expressions.md)
       + [Personalization syntax](using/personalization/personalization-syntax.md)
       + [Återanvänd uttrycksfragment](using/personalization/use-expression-fragments.md)
       + [Använd Adobe Experience Platform-data för personalisering (Beta)](using/personalization/aep-data-perso.md)
       + Hjälpfunktionslista {#functions}
+         + [Hjälpfunktionslista](/help/rp_landing_pages/functions-landing-page.md)
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
          + [Hjälp för sökning efter externa data](using/personalization/external-data-lookup.md)
          + [Sammanställningsfunktioner](using/personalization/functions/aggregation.md)
@@ -401,15 +457,18 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Matematiska funktioner](using/personalization/functions/math.md)
          + [Objektfunktioner](using/personalization/functions/objects.md)
          + [Strängfunktioner](using/personalization/functions/string.md)
-      + Användningsexempel för Personalization{#personalization-use-cases}
+      + Användningsexempel för Personalization {#personalization-use-cases}
+         + [Användningsexempel för Personalization](/help/rp_landing_pages/personalization-use-cases-landing-page.md)
          + [Meddelande om orderstatus](using/personalization/personalization-use-case.md)
          + [E-post om att kunden överger en kundvagn](using/personalization/personalization-use-case-helper-functions.md)
          + [E-post om förskrivningar av hälsoplaner](using/personalization/perso-uc-plan-prescriptions.md)
    + Landningssidor {#landing-pages}
+      + [Landningssidor](/help/rp_landing_pages/landing-pages-landing-page.md)
       + [Kom igång med landningssidor](using/landing-pages/get-started-lp.md)
       + [Skapa en landningssida](using/landing-pages/create-lp.md)
       + [Hantera dina landningssidor](using/landing-pages/manage-lp.md)
       + Designinnehåll {#landing-pages-design}
+         + [Designinnehåll](/help/rp_landing_pages/landing-pages-design-landing-page.md)
          + [Om landningssidans design](using/landing-pages/design-lp.md)
          + [Skapa innehållet på landningssidan](using/landing-pages/lp-content.md)
          + [Skapa mallar](using/landing-pages/lp-templates.md)
@@ -417,9 +476,11 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Skapa en prenumerationslista](using/landing-pages/subscription-list.md)
       + [Lär dig mer om användningsexempel](using/landing-pages/lp-use-cases.md)
       + Konfigurera landningssidor {#lp-configuration}
+         + [Konfigurera landningssidor](/help/rp_landing_pages/lp-configuration-landing-page.md)
          + [Konfigurera underdomäner för landningssidor](using/landing-pages/lp-subdomains.md)
          + [Definiera förinställningar för landningssidor](using/landing-pages/lp-presets.md)
    + Innehållsmallar {#content-templates}
+      + [Innehållsmallar](/help/rp_landing_pages/content-templates-landing-page.md)
       + [Kom igång med innehållsmallar](using/content-management/content-templates.md)
       + [Få åtkomst till och hantera mallar](using/content-management/access-content-templates.md)
       + [Skapa innehållsmallar](using/content-management/create-content-templates.md)
@@ -427,16 +488,19 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Testa innehållsmallar](using/content-management/test-content-templates.md)
       + [Använda innehållsmallar](using/content-management/use-content-templates.md)
    + Återanvändbara innehållsfragment {#fragments}
+      + [Återanvändbara innehållsfragment](/help/rp_landing_pages/fragments-landing-page.md)
       + [Kom igång med fragment](using/content-management/fragments.md)
       + [Skapa ett fragment](using/content-management/create-fragments.md)
       + [Spara befintligt innehåll som fragment](using/content-management/save-fragments.md)
       + [Anpassningsbara fragment](using/content-management/customizable-fragments.md)
       + [Hantera fragment](using/content-management/manage-fragments.md)
    + Dynamiskt innehåll {#dynamic}
+      + [Dynamiskt innehåll](/help/rp_landing_pages/dynamic-landing-page.md)
       + [Kom igång med dynamiskt innehåll](using/personalization/get-started-dynamic-content.md)
       + [Skapa villkorsregler](using/personalization/create-conditions.md)
       + [Skapa dynamiskt innehåll](using/personalization/dynamic-content.md)
    + Användningsexempel för flera lösningar {#combine}
+      + [Användningsexempel för flera lösningar](/help/rp_landing_pages/combine-landing-page.md)
       + [Kombinera lösningar för att hantera ert innehåll](using/integrations/content-integrations.md)
       + [Arbeta med Experience Manager Assets](using/integrations/assets.md)
       + [Arbeta med Adobe Stock](using/integrations/stock.md)
@@ -445,7 +509,8 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Arbeta med Experience Manager Content Fragments](using/integrations/aem-fragments.md)
       + [Arbeta med Dynamic Media](using/integrations/aem-dynamic.md)
       + [Arbeta med GenStudio for Performance Marketing](using/integrations/genstudio.md)
-   + AI Assistant för innehållsgenerering{#ai-assistant}
+   + AI Assistant för innehållsgenerering {#ai-assistant}
+      + [AI Assistant för innehållsgenerering](/help/rp_landing_pages/ai-assistant-landing-page.md)
       + [Kom igång med AI Assistant](using/content-management/gs-generative.md)
       + [E-postgenerering med AI](using/content-management/generative-email.md)
       + [Push-generering med AI](using/content-management/generative-push.md)
@@ -455,53 +520,65 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Landningssida med AI](using/content-management/generative-lp.md)
       + [Användningsexempel för AI Assistant](using/content-management/generative-uc.md)
       + Varumärken {#brands}
+         + [Varumärken](/help/rp_landing_pages/brands-landing-page.md)
          + [Skapa och hantera varumärken](using/content-management/brands.md)
          + [Utvärdera ert varumärkeskorteringsresultat](using/content-management/brands-score.md)
-   + Flerspråkigt innehåll{#content-multilingual}
+   + Flerspråkigt innehåll {#content-multilingual}
+      + [Flerspråkigt innehåll](/help/rp_landing_pages/content-multilingual-landing-page.md)
       + [Kom igång med flerspråkigt innehåll](using/content-management/multilingual-gs.md)
       + [Skapa en språkinställning](using/content-management/multilingual-locale.md)
       + [Skapa en språkleverantör](using/content-management/multilingual-provider.md)
       + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
       + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
    + Innehållsexperiment {#content-experiment}
+      + [Innehållsexperiment](/help/rp_landing_pages/content-experiment-landing-page.md)
       + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
       + [Skapa ett innehållsexperiment](using/content-management/content-experiment.md)
       + Tekniska anmärkningar {#technotes}
+         + [Tekniska anmärkningar](/help/rp_landing_pages/technotes-landing-page.md)
          + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
-+ Målgrupper, profiler och identitet{#audiences-profiles-identities}
++ Målgrupper, profiler och identitet {#audiences-profiles-identities}
+   + [Målgrupper, profiler och identitet](/help/rp_landing_pages/audiences-profiles-identities-landing-page.md)
    + Målgrupper {#audiences}
+      + [Målgrupper](/help/rp_landing_pages/audiences-landing-page.md)
       + [Kom igång med målgrupper](using/audience/about-audiences.md)
       + Skapa målgrupper {#create}
+         + [Skapa målgrupper](/help/rp_landing_pages/create-landing-page.md)
          + [Segmentdefinitioner](using/audience/creating-a-segment-definition.md)
          + [Målgruppssammansättning](using/audience/get-started-audience-orchestration.md)
          + [Anpassad överföring](using/audience/custom-upload.md)
          + [Federerad målgruppssammansättning](using/audience/federated-audience-composition.md)
       + [Målgruppsaktivering i kampanjer och resor](using/audience/target-audiences.md)
       + [Utnyttja anrikningsattribut](using/audience/enrichment-attributes.md)
-   + Profiler{#profiles}
+   + Profiler {#profiles}
+      + [Profiler](/help/rp_landing_pages/profiles-landing-page.md)
       + [Kom igång med profiler](using/audience/get-started-profiles.md)
       + [Skapa testprofiler](using/audience/creating-test-profiles.md)
       + [Arbeta med beräknade attribut](using/audience/computed-attributes.md)
    + [Identiteter](using/audience/get-started-identity.md)
    + [Licensanvändning](using/audience/license-usage.md)
 + Rapportering {#reporting}
+   + [Rapportering](/help/rp_landing_pages/reporting-landing-page.md)
    + [Kom igång med rapporter](using/reports/gs-reports.md)
    + Live-rapport {#live-report}
+      + [Live-rapport](/help/rp_landing_pages/live-report-landing-page.md)
       + [Kom igång med Live-rapporten](using/reports/live-report.md)
       + [Förteckning över mätvärden](using/reports/live-report-components.md)
       + [Journey Live-rapport](using/reports/journey-live-report.md)
       + [Campaign Live-rapport](using/reports/campaign-live-report.md)
       + [Live-rapport för landningssida](using/reports/lp-report-live.md)
       + [Live-rapport om prenumerationslista](using/reports/subscription-report-live.md)
-   + Heltidsrapport{#channel-report}
+   + Heltidsrapport {#channel-report}
+      + [Heltidsrapport](/help/rp_landing_pages/channel-report-landing-page.md)
       + [Kom igång med hela tidsrapporten](using/reports/report-gs-cja.md)
       + [Förteckning över mätvärden](using/reports/global-report-components-cja.md)
       + [Konfigurera Customer Journey Analytics manuellt](using/reports/cja-ajo.md)
       + [Hantera dina rapporter](using/reports/report-cja-manage.md)
       + [Krav för rapportering och experimenterande](using/reports/reporting-configuration.md)
       + [Uteslutningsorsaker](using/reports/exclusion-list.md)
-      + Kampanjrapporter{#reporting}
+      + Kampanjrapporter {#campaign-reporting}
+         + [Kampanjrapporter](/help/rp_landing_pages/campaign-reporting-landing-page.md)
          + [Kampanjrapport](using/reports/campaign-global-report-cja.md)
          + [Kodbaserad kampanjrapport](using/reports/campaign-global-report-cja-code.md)
          + [Kampanjrapport för innehållskort](using/reports/campaign-global-report-cja-content.md)
@@ -512,7 +589,8 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Kampanjrapport för push-meddelanden](using/reports/campaign-global-report-cja-push.md)
          + [SMS-kampanjrapport](using/reports/campaign-global-report-cja-sms.md)
          + [Webbkampanjrapport](using/reports/campaign-global-report-cja-web.md)
-      + Reserapporter{#reporting}
+      + Reserapporter {#journey-reporting}
+         + [Reserapporter](/help/rp_landing_pages/journey-reporting-landing-page.md)
          + [Reserapport](using/reports/journey-global-report-cja.md)
          + [Kodbaserad reserapport](using/reports/journey-global-report-cja-code.md)
          + [Rapport om resan med innehållskort](using/reports/journey-global-report-cja-content.md)
@@ -526,9 +604,11 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Rapport om landningssida](using/reports/lp-report-global-cja.md)
       + [Rapport över prenumerationslista](using/reports/subscription-report-global-cja.md)
    + Anpassade reserapporter {#reports}
+      + [Anpassade reserapporter](/help/rp_landing_pages/reports-landing-page.md)
       + [Skapa reserapporter](using/reports/sharing-overview.md)
       + [Lista över steghändelsefält](using/reports/sharing-field-list.md)
       + Händelsefält för äldre steg {#legacy-step-event-fields}
+         + [Händelsefält för äldre steg](/help/rp_landing_pages/legacy-step-event-fields-landing-page.md)
          + [Om äldre fält](using/reports/sharing-legacy-fields.md)
          + [Resefält](using/reports/sharing-journey-fields.md)
          + [Vanliga fält](using/reports/sharing-common-fields.md)
@@ -537,70 +617,79 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Identitetsfält](using/reports/sharing-identity-fields.md)
       + [Exempel på frågor](using/reports/query-examples.md)
 + Beslutsförmåga {#decisioning}
+   + [Beslutsförmåga](/help/rp_landing_pages/decisioning-landing-page.md)
    + [Kom igång med beslutsfunktioner](using/experience-decisioning/gs-decision.md)
    + Beslut {#experience-decisioning}
+      + [Beslut](/help/rp_landing_pages/experience-decisioning-landing-page.md)
       + [Kom igång med beslutsfattande](using/experience-decisioning/gs-experience-decisioning.md)
       + [Avgörande av skyddsräcken och begränsningar](using/experience-decisioning/decisioning-guardrails.md)
-      + API-referens{#api-reference}
+      + API-referens {#experience-decisioning-api-reference}
+         + [API-referens](/help/rp_landing_pages/experience-decisioning-api-reference-landing-page.md)
          + Skapa och hantera erbjudandeartiklar {#create-manage}
-            + Beslutsobjekt{#decision-items}
+            + Beslutsobjekt {#decision-items}
                + [Skapa beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/create.md)
                + [Lista över beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/decision-items-list.md)
                + [Radera beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/delete.md)
                + [Söka efter beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/lookup.md)
                + [Uppdatera beslutsobjekt](using/experience-decisioning/api-reference/decisions-items/update.md)
-            + Objektsamlingar{#items-collections}
+            + Objektsamlingar {#items-collections}
                + [Skapa objektsamlingar](using/experience-decisioning/api-reference/items-collections/create.md)
                + [Ta bort objektsamlingar](using/experience-decisioning/api-reference/items-collections/delete.md)
                + [Lista över objektsamlingar](using/experience-decisioning/api-reference/items-collections/items-collections-list.md)
                + [Söka efter objektsamlingar](using/experience-decisioning/api-reference/items-collections/lookup.md)
                + [Uppdatera artikelsamlingar](using/experience-decisioning/api-reference/items-collections/update.md)
-            + Urvalsstrategier{#selection-strategies}
+            + Urvalsstrategier {#selection-strategies}
                + [Skapa urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/create.md)
                + [Ta bort urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/delete.md)
                + [Sökstrategier för markering](using/experience-decisioning/api-reference/selection-strategies/lookup.md)
                + [Urvalsstrategilista](using/experience-decisioning/api-reference/selection-strategies/selection-strategies-list.md)
                + [Uppdatera urvalsstrategier](using/experience-decisioning/api-reference/selection-strategies/update.md)
-            + Rankningsformler{#ranking-formulas}
+            + Rankningsformler {#ranking-formulas}
                + [Skapa rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/create.md)
                + [Ta bort rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/delete.md)
                + [Sök efter rangordningsformler](using/experience-decisioning/api-reference/ranking-formulas/lookup.md)
                + [Urvalsrankningsformler](using/experience-decisioning/api-reference/ranking-formulas/ranking-formulas-list.md)
                + [Uppdatera rankningsformler](using/experience-decisioning/api-reference/ranking-formulas/update.md)
-            + Villkor för deltagande{#eligibility-rules}
+            + Villkor för deltagande {#eligibility-rules}
                + [Skapa berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/create.md)
                + [Ta bort berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/delete.md)
                + [Uppslagsberättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
                + [Lista över bidragsregler](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
                + [Uppdatera berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/update.md)
          + [Leverera erbjudanden med den kodbaserade upplevelsekanalen](using/experience-decisioning/api-reference/deliver.md)
-      + Hantera beslutsobjekt {#decision-items}
+      + Hantera beslutsobjekt {#manage-decision-items}
+         + [Hantera beslutsobjekt](/help/rp_landing_pages/manage-decision-items-landing-page.md)
          + [Konfigurera artikelkatalogen](using/experience-decisioning/catalogs.md)
          + [Skapa beslutsobjekt](using/experience-decisioning/items.md)
          + [Hantera artikelsamlingar](using/experience-decisioning/collections.md)
       + [Skapa beslutsregler](using/experience-decisioning/rules.md)
-      + Skapa rankningar {#rankings}
+      + Skapa rankningar {#experience-decisioning-rankings}
+         + [Skapa rankningar](/help/rp_landing_pages/experience-decisioning-rankings-landing-page.md)
          + [Skapa rangordningsmetoder](using/experience-decisioning/ranking/ranking.md)
          + [Använda AI-formelverktyget](using/experience-decisioning/ranking/ranking-formulas.md)
-         + AI-modeller {#ai-models}
+         + AI-modeller {#experience-decisioning-ai-models}
+            + [AI-modeller](/help/rp_landing_pages/experience-decisioning-ai-models-landing-page.md)
             + [Om AI-modeller](using/experience-decisioning/ranking/ai-models.md)
             + [Automatisk optimeringsmodell](using/experience-decisioning/ranking/auto-optimization-model.md)
             + [Anpassad optimeringsmodell](using/experience-decisioning/ranking/personalized-optimization-model.md)
             + [Skapa AI-modeller](using/experience-decisioning/ranking/create-ai-models.md)
       + [Arbeta med placeringar](using/experience-decisioning/placements.md)
       + Använd Adobe Experience Platform-data {#aep-data}
+         + [Använd Adobe Experience Platform-data](/help/rp_landing_pages/aep-data-landing-page.md)
          + [Utnyttja kontextdata](using/experience-decisioning/context-data.md)
          + [Använd Adobe Experience Platform för beslut](using/experience-decisioning/aep-data-exd.md)
       + [Skapa urvalsstrategier](using/experience-decisioning/selection-strategies.md)
       + [Skapa beslutsprofiler](using/experience-decisioning/create-decision.md)
       + [Rapport om beslut](using/experience-decisioning/cja-reporting.md)
       + [Användningsfall vid beslut](using/experience-decisioning/experience-decisioning-uc.md)
-      + Samla in händelsedata {#collect-event-data}
+      + Samla in händelsedata {#experience-decisioning-collect-event-data}
          + [Komma igång med datainsamling](using/experience-decisioning/data-collection/data-collection.md)
          + [Skapa en datauppsättning för att samla in händelser](using/experience-decisioning/data-collection/create-dataset.md)
          + [Konfigurera händelsehämtning](using/experience-decisioning/data-collection/schema-requirement.md)
    + Beslutshantering {#offer-decisioning}
+      + [Beslutshantering](/help/rp_landing_pages/offer-decisioning-landing-page.md)
       + Kom igång med beslutshantering {#get-started-decision}
+         + [Kom igång med beslutshantering](/help/rp_landing_pages/get-started-decision-landing-page.md)
          + [Om beslutshantering](using/offers/get-started/starting-offer-decisioning.md)
          + [Avancerade hanteringsgarantier och begränsningar](using/offers/decision-management-guardrails.md)
          + [Användargränssnitt](using/offers/get-started/user-interface.md)
@@ -608,41 +697,51 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Utnyttja anpassade uppladdningsmålgrupper för beslut](using/offers/custom-upload-decisioning.md)
          + [Användningsfall: infoga erbjudanden i ett e-postmeddelande](using/offers/offers-e2e.md)
       + Skapa komponenter {#create-components}
+         + [Skapa komponenter](/help/rp_landing_pages/create-components-landing-page.md)
          + [Skapa placeringar](using/offers/offer-library/creating-placements.md)
          + [Skapa beslutsregler](using/offers/offer-library/creating-decision-rules.md)
          + [Skapa samlingskvalificerare](using/offers/offer-library/creating-tags.md)
       + Skapa rankningar {#rankings}
+         + [Skapa rankningar](/help/rp_landing_pages/rankings-landing-page.md)
          + [Kom igång med rankningar](using/offers/ranking/get-started-rankings.md)
          + [Rankningsformler](using/offers/ranking/create-ranking-formulas.md)
          + AI-modeller {#ai-models}
+            + [AI-modeller](/help/rp_landing_pages/ai-models-landing-page.md)
             + [Om AI-modeller](using/offers/ranking/ai-models.md)
             + [Automatisk optimeringsmodell](using/offers/ranking/auto-optimization-model.md)
             + [Anpassad optimeringsmodell](using/offers/ranking/personalized-optimization-model.md)
             + [Skapa AI-modeller](using/offers/ranking/create-ranking-strategies.md)
       + Skapa och hantera erbjudanden {#managing-offers-in-the-offer-library}
+         + [Skapa och hantera erbjudanden](/help/rp_landing_pages/managing-offers-in-the-offer-library-landing-page.md)
          + Konfigurera erbjudanden {#configure-offers}
+            + [Konfigurera erbjudanden](/help/rp_landing_pages/configure-offers-landing-page.md)
             + [Skapa personaliserade erbjudanden](using/offers/offer-library/creating-personalized-offers.md)
             + [Lägg till representationer](using/offers/offer-library/add-representations.md)
             + [Lägg till begränsningar](using/offers/offer-library/add-constraints.md)
          + [Skapa reserverbjudanden](using/offers/offer-library/creating-fallback-offers.md)
          + [Skapa samlingar](using/offers/offer-library/creating-collections.md)
       + Skapa och hantera beslut {#create-manage-activities}
+         + [Skapa och hantera beslut](/help/rp_landing_pages/create-manage-activities-landing-page.md)
          + [Skapa beslut](using/offers/offer-activities/create-offer-activities.md)
          + [Konfigurera urval av erbjudanden i beslut](using/offers/offer-activities/configure-offer-selection.md)
          + [Skapa simuleringar](using/offers/offer-activities/simulation.md)
       + [Använd batchbeslut](using/offers/batch-delivery.md)
       + Samla in händelsedata {#collect-event-data}
+         + [Samla in händelsedata](/help/rp_landing_pages/collect-event-data-landing-page.md)
          + [Komma igång med datainsamling](using/offers/data-collection/data-collection.md)
          + [Skapa en datauppsättning för att samla in händelser](using/offers/data-collection/create-dataset.md)
          + [Konfigurera händelsehämtning](using/offers/data-collection/schema-requirement.md)
       + Utnyttja kontextdata {#context-data}
+         + [Utnyttja kontextdata](/help/rp_landing_pages/context-data-landing-page.md)
          + [Kom igång med kontextdata](using/offers/context-data.md)
          + [Kontextdata och Edge Decisioneringsbegäranden](using/offers/context-data-edge.md)
          + [Kontextdata och beslutsbegäran](using/offers/context-data-decisioning.md)
       + Skapa rapporter om beslutshantering {#create-reports}
+         + [Skapa rapporter om beslutshantering](/help/rp_landing_pages/create-reports-landing-page.md)
          + [Arbeta med beslutsledningshändelser](using/offers/reports/get-started-events.md)
          + [Åtkomst till XDM-fält för händelser](using/offers/reports/xdm-fields.md)
       + Exportera erbjudandekatalogen {#export-catalog}
+         + [Exportera erbjudandekatalogen](/help/rp_landing_pages/export-catalog-landing-page.md)
          + [Kom igång med export av din erbjudandekatalog](using/offers/export-catalog/get-started-export.md)
          + [Åtkomst till den exporterade erbjudandekatalogen](using/offers/export-catalog/access-dataset.md)
          + [Datauppsättning med personaliserade erbjudanden](using/offers/export-catalog/export-offers.md)
@@ -650,6 +749,7 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
          + [Datauppsättning med placeringar](using/offers/export-catalog/export-placements.md)
          + [Datauppsättning med reserverbjudanden](using/offers/export-catalog/export-fallback.md)
       + API-referens {#api-reference}
+         + [API-referens](/help/rp_landing_pages/api-reference-landing-page.md)
          + [Komma igång](using/offers/api-reference/getting-started.md)
          + Skapa och hantera erbjudanden med API:er {#offers-api}
             + Placeringar {#placements}
@@ -696,71 +796,77 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
                + [Ta bort ett beslut](using/offers/api-reference/activities-api/activities/delete.md)
             + Äldre API:er {#legacy-api}
                + [Om äldre API:er](using/offers/api-reference/offers-api/legacy-apis/about-legacy-apis.md)
-               + Placeringar {#placements}
+               + Placeringar {#legacy-api-placements}
                   + [Lista placeringar](using/offers/api-reference/offers-api/legacy-apis/placements/placements-list.md)
                   + [Söka efter en placering](using/offers/api-reference/offers-api/legacy-apis/placements/lookup.md)
                   + [Skapa en placering](using/offers/api-reference/offers-api/legacy-apis/placements/create.md)
                   + [Uppdatera en placering](using/offers/api-reference/offers-api/legacy-apis/placements/update.md)
                   + [Ta bort en placering](using/offers/api-reference/offers-api/legacy-apis/placements/delete.md)
-               + Beslutsregler {#decision-rules}
+               + Beslutsregler {#legacy-api-decision-rules}
                   + [Lista beslutsregler](using/offers/api-reference/offers-api/legacy-apis/decision-rules/rules-list.md)
                   + [Söka efter en beslutsregel](using/offers/api-reference/offers-api/legacy-apis/decision-rules/lookup.md)
                   + [Skapa en beslutsregel](using/offers/api-reference/offers-api/legacy-apis/decision-rules/create.md)
                   + [Uppdatera en beslutsregel](using/offers/api-reference/offers-api/legacy-apis/decision-rules/update.md)
                   + [Ta bort en beslutsregel](using/offers/api-reference/offers-api/legacy-apis/decision-rules/delete.md)
-               + Samlingskvalificerare {#tags}
+               + Samlingskvalificerare {#legacy-api-tags}
                   + [Kvalificerare för listsamling](using/offers/api-reference/offers-api/legacy-apis/tags/tags-list.md)
                   + [Söka efter en samlingskvalificerare](using/offers/api-reference/offers-api/legacy-apis/tags/lookup.md)
                   + [Skapa en samlingskvalificerare](using/offers/api-reference/offers-api/legacy-apis/tags/create.md)
                   + [Uppdatera en samlingskvalificerare](using/offers/api-reference/offers-api/legacy-apis/tags/update.md)
                   + [Ta bort en samlingskvalificerare](using/offers/api-reference/offers-api/legacy-apis/tags/delete.md)
-               + Personaliserade erbjudanden {#personalized-offers}
+               + Personaliserade erbjudanden {#legacy-api-personalized-offers}
                   + [Lista personaliserade erbjudanden](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/offers-list.md)
                   + [Söka efter ett personaliserat erbjudande](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/lookup.md)
                   + [Skapa ett personaliserat erbjudande](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/create.md)
                   + [Uppdatera ett personaliserat erbjudande](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/update.md)
                   + [Ta bort ett personaliserat erbjudande](using/offers/api-reference/offers-api/legacy-apis/personalized-offers/delete.md)
-               + Reserverbjudanden {#fallback-offers}
+               + Reserverbjudanden {#legacy-api-fallback-offers}
                   + [Lista reserverbjudanden](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/fallback-list.md)
                   + [Söka efter ett reserverbjudande](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/lookup.md)
                   + [Skapa ett reserverbjudande](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/create.md)
                   + [Uppdatera ett reserverbjudande](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/update.md)
                   + [Ta bort ett reserverbjudande](using/offers/api-reference/offers-api/legacy-apis/fallback-offers/delete.md)
-               + Samlingar {#collections}
+               + Samlingar {#legacy-api-collections}
                   + [Lista samlingar](using/offers/api-reference/offers-api/legacy-apis/collections/collections-list.md)
                   + [Söka efter en samling](using/offers/api-reference/offers-api/legacy-apis/collections/lookup.md)
                   + [Skapa en samling](using/offers/api-reference/offers-api/legacy-apis/collections/create.md)
                   + [Uppdatera en samling](using/offers/api-reference/offers-api/legacy-apis/collections/update.md)
                   + [Ta bort en samling](using/offers/api-reference/offers-api/legacy-apis/collections/delete.md)
-               + Beslut {#decisions-api}
+               + Beslut {#legacy-api-decisions-api}
                   + [Lista beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/activities-list.md)
                   + [Söka efter ett beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/lookup.md)
                   + [Skapa ett beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/create.md)
                   + [Uppdatera ett beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/update.md)
                   + [Ta bort ett beslut](using/offers/api-reference/offers-api/legacy-apis/activities-api/delete.md)
          + Leverera erbjudanden med API:er {#offer-delivery-api}
+            + [Leverera erbjudanden med API:er](/help/rp_landing_pages/offer-delivery-api-landing-page.md)
             + [Kom igång med erbjudandeleverans-API:er](using/offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
             + [Besluts-API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
             + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
             + [API för gruppbeslut](using/offers/api-reference/offer-delivery-api/batch-decisioning-api.md)
 + Datahantering {#data-management}
+   + [Datahantering](/help/rp_landing_pages/data-management-landing-page.md)
    + [Kom igång med datahantering](using/data/gs-data.md)
    + [Arbeta med scheman](using/data/get-started-schemas.md)
    + Journey Optimizer dataset {#datasets}
+      + [Journey Optimizer dataset](/help/rp_landing_pages/datasets-landing-page.md)
       + [Kom igång med datauppsättningar](using/data/get-started-datasets.md)
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
+   + [Kanalkonfiguration](/help/rp_landing_pages/configuration-landing-page.md)
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)
    + [Konfigurera kanalkonfigurationer](using/configuration/channel-surfaces.md)
    + Inställningar för guidad kanal {#guided-setup}
+      + [Inställningar för guidad kanal](/help/rp_landing_pages/guided-setup-landing-page.md)
       + [Kom igång med konfiguration av guidade kanaler](using/configuration/set-mobile-config.md)
       + [Skapa en kanalkonfiguration](using/configuration/create-channel-set-up.md)
    + Delegera e-postunderdomäner {#delegate-subdomains}
+      + [Delegera e-postunderdomäner](/help/rp_landing_pages/delegate-subdomains-landing-page.md)
       + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
       + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
       + [Konfigurera en anpassad underdomän](using/configuration/delegate-custom-subdomain.md)
@@ -769,12 +875,14 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
       + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
       + [Skapa IP-pooler](using/configuration/ip-pools.md)
    + Implementera en IP-värmerappsplan {#implement-ip-warmup-plan}
+      + [Implementera en IP-värmerappsplan](/help/rp_landing_pages/implement-ip-warmup-plan-landing-page.md)
       + [Kom igång med planer för IP-värmare](using/configuration/ip-warmup-gs.md)
       + [Skapa IP-värmningskampanjer](using/configuration/ip-warmup-campaign.md)
       + [Skapa en IP-värdplan](using/configuration/ip-warmup-plan.md)
       + [Kör IP-värmningsplanen](using/configuration/ip-warmup-execution.md)
       + [Filer för IP-värmeringsplan](using/configuration/ip-warmup-plan-files.md)
    + Övervaka e-postadresser {#monitor-reputation}
+      + [Övervaka e-postadresser](/help/rp_landing_pages/monitor-reputation-landing-page.md)
       + [E-postfeltyper](using/configuration/email-error-types.md)
       + [Undertryckningslista](using/configuration/manage-suppression-list.md)
       + [Försök igen](using/configuration/retries.md)
@@ -784,39 +892,48 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera affärsregler](using/configuration/frequency-rules.md)
 + Resekonfiguration {#configure-journeys}
+   + [Resekonfiguration](/help/rp_landing_pages/configure-journeys-landing-page.md)
    + [Kom igång med resekonfigurationen](using/configuration/about-data-sources-events-actions.md)
    + Händelsekonfiguration {#events-journeys}
+      + [Händelsekonfiguration](/help/rp_landing_pages/events-journeys-landing-page.md)
       + [Arbeta med resehändelser](using/event/about-events.md)
       + [Konfigurera en enhetshändelse](using/event/about-creating.md)
       + [Om scheman i ExperienceEvent](using/event/experience-event-schema.md)
       + [Arbeta med Adobe Analytics-data](using/event/about-analytics.md)
       + [Konfigurera en affärshändelse](using/event/about-creating-business.md)
       + [Ytterligare steg för att skicka händelser](using/event/additional-steps-to-send-events-to-journey.md)
-   + Datakällans konfiguration{#data-source-journeys}
+   + Datakällans konfiguration {#data-source-journeys}
+      + [Datakällans konfiguration](/help/rp_landing_pages/data-source-journeys-landing-page.md)
       + [Kom igång med datakällor](using/datasource/about-data-sources.md)
       + [Konfigurera en datakälla](using/datasource/configure-data-sources.md)
       + [Datakällan i Adobe Experience Platform](using/datasource/adobe-experience-platform-data-source.md)
       + [Externa datakällor](using/datasource/external-data-sources.md)
    + Åtgärdskonfiguration {#action-journeys}
+      + [Åtgärdskonfiguration](/help/rp_landing_pages/action-journeys-landing-page.md)
       + [Kom igång med anpassade åtgärder](using/action/action.md)
       + [Konfigurera en anpassad åtgärd](using/action/about-custom-action-configuration.md)
       + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
 + Koppla samman system och miljöer {#connect-systems}
+   + [Koppla samman system och miljöer](/help/rp_landing_pages/connect-systems-landing-page.md)
    + [Integrera med andra lösningar](using/integrations/ajo-integrations.md)
    + [Arbeta med Journey Optimizer API:er](using/configuration/ajo-apis.md)
    + Integrera dina resor med externa system {#external-systems}
+      + [Integrera dina resor med externa system](/help/rp_landing_pages/external-systems-landing-page.md)
       + [Reseintegration med externa system](using/configuration/external-systems.md)
       + [API för reglering](using/configuration/capping.md)
       + [API för begränsning](using/configuration/throttling.md)
    + Skicka med Adobe lösningar {#adobe-solutions}
+      + [Skicka med Adobe lösningar](/help/rp_landing_pages/adobe-solutions-landing-page.md)
       + [Campaign Standard-åtgärder på resorna](using/action/acs-action.md)
       + [Kampanj v7/v8-åtgärd på resor](using/action/acc-action.md)
       + [Marketo Engage-åtgärder på resorna](using/action/marketo-engage.md)
    + Hantering av sandlådor {#sandbox}
+      + [Hantering av sandlådor](/help/rp_landing_pages/sandbox-landing-page.md)
       + [Använda och tilldela sandlådor](using/administration/sandboxes.md)
       + [Exportera objekt till en annan sandlåda](using/configuration/copy-objects-to-sandbox.md)
    + [Konfigurera källkopplingen](using/start/get-started-sources.md)
 + Åtkomstkontroll {#access-control}
+   + [Åtkomstkontroll](/help/rp_landing_pages/access-control-landing-page.md)
    + [Kom igång med åtkomstkontroll](using/administration/permissions-overview.md)
    + [Hantera användare och roller](using/administration/permissions.md)
    + [Inbyggda roller](using/administration/ootb-product-profiles.md)
@@ -825,11 +942,13 @@ Ange regler för capping av meddelanden och resor  {#capping-rules}
    + [Attributbaserad åtkomstkontroll](using/administration/attribute-based-access.md)
    + [Åtkomstkontroll på objektnivå](using/administration/object-based-access.md)
 + Sekretess {#privacy}
+   + [Sekretess](/help/rp_landing_pages/privacy-landing-page.md)
    + [Kom igång med sekretess](using/privacy/get-started-privacy.md)
    + [Förfrågningar om användarens information](using/privacy/requests.md)
    + [Granskningsåtgärder för resurser](using/privacy/audit-logs.md)
    + [Utför livscykelåtgärder för data](using/privacy/data-hygiene.md)
    + Hantera medgivande {#consent}
+      + [Hantera medgivande](/help/rp_landing_pages/consent-landing-page.md)
       + [Hantera avanmälan](using/privacy/opt-out.md)
       + [Arbeta med policyer för samtycke](using/action/consent.md)
    + [Dataförvaltning](using/action/action-privacy.md)

@@ -6,7 +6,8 @@ description: Använd optimering av meddelanden för att skapa personaliserade oc
 role: User
 level: Intermediate
 keywords: kampanjoptimering, experiment, målinriktning, A/B-testning
-source-git-commit: edbe25e0cb341c08e440eb0663fb9b253273f48a
+exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
+source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -98,7 +99,7 @@ Följ stegen nedan om du vill konfigurera experimenterande och avgöra vilket me
 
 1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md) <!--Add link to API triggered?-->
 
-1. På fliken **[!UICONTROL Actions]** väljer du minst två inkommande åtgärder, till exempel [kodbaserad upplevelse](../code-based/get-started-code-based.md) och [I appen](../in-app/get-started-in-app.md).
+1. På fliken **[!UICONTROL Actions]** väljer du minst två inkommande åtgärder, till exempel [kodbaserad upplevelse](../code-based/get-started-code-based.md) och [I appen](../../rp_landing_pages/in-app-landing-page.md).
 
 1. Välj **[!UICONTROL Message Optimization]** i avsnittet **[!UICONTROL Experimentation]**.
 
@@ -161,4 +162,3 @@ När kampanjen är aktiv tilldelas användare från varje målgrupp slumpvis de 
 
 E.g. explaining how a marketer can look at the report to determine which treatment (e.g. which message content) is performing the best for the targeting audience
 -->
-

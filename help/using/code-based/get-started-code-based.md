@@ -6,9 +6,9 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '771'
 ht-degree: 1%
 
 ---
@@ -28,43 +28,6 @@ Med funktionen **kodbaserad upplevelse** kan du definiera inkommande upplevelser
 
 <!--Discover the detailed steps to create a code-based campaign in this video.-->
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td>
-<a href="#how-it-works">
-<img alt="Lead" src="../assets/do-not-localize/privacy-audit.jpeg">
-</a>
-<div><a href="#how-it-works"><strong>Så här fungerar det</strong>
-</div>
-<p>
-</td>
-<td>
-<a href="code-based-prerequisites.md">
-<img alt="Validering" src="../assets/do-not-localize/web-prerequisites.jpg">
-</a>
-<div>
-<a href="code-based-prerequisites.md"><strong>Garantier och krav</strong></a>
-</div>
-<p>
-</td>
-<td>
-<a href="code-based-configuration.md">
-<img alt="Validering" src="../assets/do-not-localize/web-design.jpg">
-</a>
-<div>
-<a href="code-based-implementation-samples.md"><strong>Kodbaserad kanalkonfiguration</strong></a>
-</div>
-<p>
-</td>
-<td>
-<a href="create-code-based.md#create-code-based-campaign">
-<img alt="Sällan" src="../assets/do-not-localize/web-create.jpg">
-</a>
-<div>
-<a href="create-code-based.md#create-code-based-campaign"><strong>Skapa en kodbaserad upplevelse</strong></a>
-</div>
-<p></td>
-</tr></table>
-
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
 ➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen finns i [det här avsnittet](../experience-decisioning/experience-decisioning-uc.md).
@@ -75,7 +38,7 @@ Med funktionen **kodbaserad upplevelse** kan du definiera inkommande upplevelser
 
 När ska den kodbaserade kanalen användas i stället för de andra [!DNL Journey Optimizer] kanalerna?
 
-* Du kan använda kodbaserade upplevelser när som helst när din digitala egenskap inte nås via en webbläsare eller en mobilapp - situationer där du troligen bättre kan använda [!DNL Journey Optimizer] [webbkanalen](../web/get-started-web.md){target="_blank"} eller [!DNL Journey Optimizer] [meddelandekanalen i appen](../in-app/get-started-in-app.md){target="_blank"}.
+* Du kan använda kodbaserade upplevelser när som helst när din digitala egenskap inte nås via en webbläsare eller en mobilapp - situationer där du troligen bättre kan använda [!DNL Journey Optimizer] [webbkanalen](../web/get-started-web.md){target="_blank"} eller [!DNL Journey Optimizer] [meddelandekanalen i appen](../../rp_landing_pages/in-app-landing-page.md){target="_blank"}.
 
 <!--* You can use the code-based channel as an alternative to the [!DNL Journey Optimizer] web channel if your website cannot be loaded into the [web designer](../web/web-visual-editor.md){target="_blank"} visual editor or if you cannot use the [browser extension](../web/web-prerequisites.md#visual-authoring-prerequisites){target="_blank"} that powers visual authoring for web channel.-->
 
@@ -90,7 +53,7 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 **Webb**
 
 * Redigera ditt innehåll med den visuella [webbdesignern](../web/web-visual-editor.md){target="_blank"} eller den icke-visuella [webbredigeraren](../web/web-non-visual-editor.md).
-* Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} - en implementering på klientsidan.
+* Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} - en implementering på klientsidan.
   <!--* You need the [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} extension installed on your web browser. [Learn more](../web/web-prerequisites.md){target="_blank"}-->
 * Med webbkanalen kan du ändra allt på sidan och ha en fördefinierad lista över åtgärder som du kan använda för att göra ändringar. [Läs mer](../web/web-visual-editor.md){target="_blank"}
 * Det är enkelt att konfigurera och komma igång snabbt.
@@ -99,7 +62,7 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 **Kodbaserad upplevelse**
 
 * Redigera ditt innehåll med [anpassningsredigeraren](create-code-based.md#edit-code).
-* Du behöver antingen [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} - implementering på klientsidan eller [AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE){target="_blank"} - implementering på serversidan.
+* Du behöver antingen [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} - implementering på klientsidan eller [AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"} - implementering på serversidan.
 * Den kodbaserade upplevelsen kräver tidigare utvecklingsarbete med implementeringen för att säkerställa att dina program kan tolka och leverera innehåll som publiceras på kanten av [!DNL Journey Optimizer] för dessa platser. [Läs mer](code-based-surface.md)
 * Det kräver mer planering och kan bara ändra det som utvecklarna anger. Därför är det viktigt att identifiera komponenterna (hembanner, hjältebild, menyrad osv.) i de program som behöver ändras för personalisering eller testning, och samarbeta med utvecklingsteamet för att skapa den implementering som behövs för att hantera dessa ändringar.
 * Du kan använda JSON-kodinnehåll.

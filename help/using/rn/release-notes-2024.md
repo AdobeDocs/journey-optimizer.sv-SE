@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
 workflow-type: tm+mt
 source-wordcount: '6779'
 ht-degree: 7%
@@ -342,7 +342,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Beslut**
 
-* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE)-användare kan nu välja anpassade modeller att optimera när de ställer in en AI-modell i Decisioning (tidigare Experience Decisioning). På så sätt kan du till exempel optimera en anpassad&quot;inköps&quot;-tabell i stället för definierade begränsningar som klickfrekvens. [Läs mer](../experience-decisioning/ranking/ranking.md)
+* [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html)-användare kan nu välja anpassade modeller att optimera när de ställer in en AI-modell i Decisioning (tidigare Experience Decisioning). På så sätt kan du till exempel optimera en anpassad&quot;inköps&quot;-tabell i stället för definierade begränsningar som klickfrekvens. [Läs mer](../experience-decisioning/ranking/ranking.md)
 
 * När du lägger till en beslutspolicy till en kodbaserad kampanj med Beslutsfattning kan du nu välja enskilda beslutsposter manuellt, utöver urvalsstrategier. Dessutom kan du nu välja mer än ett reserverbjudande. Detta garanterar att det finns ett visst antal återlämnade beslutsposter. [Läs mer](../experience-decisioning/create-decision.md)
 
@@ -374,7 +374,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <td>
 <p>Innehållskort är en ny funktion för digitala meddelanden i Adobe Journey Optimizer som levererar personaliserat och engagerande innehåll direkt inifrån mobilappar och webbplatser. Till skillnad från traditionella push-meddelanden integreras Content Cards smidigt i användargränssnittet med permanenta, icke-påträngande uppdateringar som förbättrar användarinteraktionen och upplevelsen.</p>
 <p>Med den här funktionen kan marknadsförarna presentera relevant, multimediematerial för användarna, vilket ökar engagemanget och säkerställer att viktiga meddelanden syns utan att störa användarresan.</p>
-<p>Mer information finns i den <a href="../content-card/get-started-content-card.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../../rp_landing_pages/content-card-landing-page.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/content-card.gif"/>
 </td>
 </tr>
@@ -442,7 +442,7 @@ Den här versionen innehåller de nya funktionerna som beskrivs nedan.
 <tr>
 <td>
 <p>När du har skapat och personaliserat ditt budskap går du ett steg längre med AI Assistant i Journey Optimizer. Nu kan du använda AI Assistant för att optimera budskapets effekt genom att experimentera med olika huvudtitlar och bilder. Varje variant hanteras som en unik behandling för att mäta och jämföra vilken titel som effektivt genererar fler klick.</p>
-<p>Fördjupa dig i en praktisk upplevelse med <a href="https://experienceleague.adobe.com/sv/apps/journey-optimizer/ai-assistant-content-accelerator">vår förhandsvisning av aktiva funktioner</a>, som är utformad för att du först ska kunna utforska dess funktioner och till fullo förstå dess funktioner.</a>.</p>
+<p>Fördjupa dig i en praktisk upplevelse med <a href="https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator">vår förhandsvisning av aktiva funktioner</a>, som är utformad för att du först ska kunna utforska dess funktioner och till fullo förstå dess funktioner.</a>.</p>
 <p>Mer information finns i den <a href="../content-management/gs-generative.md">detaljerade dokumentationen</a>.</p>
 <img src="assets/do-not-localize/ai-content.gif"/>
 <p>Tillgänglighetsdatum: 12 september 2024</p>
@@ -870,7 +870,7 @@ Läs mer i dokumentationen för [innehållsfragment](../content-management/fragm
 
 <!--* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)-->
 
-* Nu kan du använda Edge Delivery plugin för att få information som behövs för att förstå och felsöka dina inkommande implementeringar. [Läs mer om Edge Delivery-vyn](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
+* Nu kan du använda Edge Delivery plugin för att få information som behövs för att förstå och felsöka dina inkommande implementeringar. [Läs mer om Edge Delivery-vyn](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}.
 
 
 #### Direktpostkanal

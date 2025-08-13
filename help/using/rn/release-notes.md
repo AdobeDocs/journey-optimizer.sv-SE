@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4510cfde1579fbabe7deb1289f70f13ee21a3d4a
+source-git-commit: 667f1a2bd03c958d7d1a95c4f9fb3378417276c0
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Kampanjsamordning
@@ -90,7 +90,7 @@ Läs mer i [dokumentationen för kampanjsamordning](../orchestrated/gs-orchestra
 
 **Pre release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: August 19, 2025
 
@@ -191,7 +191,7 @@ Mer information finns i <a href="../experience-decisioning/create-decision.md">d
 <td>
 <p>Adobe Journey Optimizer har utökat sina flerkanalsfunktioner så att de har stöd för LINE-kanalen. Den här förbättringen gör att du kan skapa, redigera och förhandsgranska LINE-upplevelser, vilket möjliggör mer personaliserade och engagerande interaktioner. Med LINE kan ni få kontakt med fler kunder, skicka relevant innehåll och förbättra engagemanget.</p>
 <p>LINE-kanalen är nu tillgänglig för alla användare (General Availability), som tidigare endast var tillgänglig för begäran.</p>
-<p>Mer information finns i den <a href="../line/get-started-line.md">detaljerade dokumentationen</a>.</p></td>
+<p>Mer information finns i den <a href="../../rp_landing_pages/line-landing-page.md">detaljerade dokumentationen</a>.</p></td>
 </tr>
 </tbody>
 </table>

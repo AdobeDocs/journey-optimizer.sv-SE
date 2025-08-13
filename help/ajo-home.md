@@ -1,131 +1,109 @@
 ---
-keywords: Journey Optimizer;home;populära topics
-title: Journey Optimizer produktdokumentation
-description: Lär dig använda Adobe Journey Optimizer.
 solution: Journey Optimizer
-product: journey optimizer
-exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
-source-git-commit: 08408b987e5894912e357e78cacdb54bfb78a6a1
+product: Journey Optimizer
+title: Dokumentation om Adobe Journey Optimizer
+description: Dokumentation om Adobe Journey Optimizer
+redpen-status: CREATED_||_2025-08-11_21-21-01
+source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 11%
+source-wordcount: '425'
+ht-degree: 4%
 
 ---
 
-# Adobe [!DNL Journey Optimizer] - dokumentation {#cjm-documentation}
 
-## Nyheter
+# Dokumentation om Adobe Journey Optimizer{#section-overview}
 
-Få en glimt av de senaste förbättringarna i Journey Optimizer-produkter och -dokumentation! En omfattande lista över funktioner, förbättringar och korrigeringar finns i [versionsinformationen](using/rn/release-notes.md). Besök sidan [Dokumentationsuppdateringar](using/rn/documentation-updates.md) om du vill hålla dig uppdaterad med de senaste ändringarna i produktdokumentationen.
+Adobe Journey Optimizer ger team möjlighet att designa och leverera sömlösa, personaliserade kundupplevelser i olika kanaler, som e-post, SMS med mera. Genom att kombinera avancerade verktyg för kampanjsamordning, datahantering och beslutsfattande kan ni skapa kundresor som anpassar sig efter kundernas behov i realtid. Den här dokumentationen erbjuder en färdplan för att lära sig hur man bemästrar plattformen - från att utforska de senaste funktionerna och integreringarna till att lära sig hur man hanterar målgrupper, konfigurerar resor och analyserar prestanda. Oavsett om ni är marknadsförare, dataanalytiker eller kampanjchef hittar ni stegvisa guider, metodtips och resurser som är skräddarsydda för att ni ska lyckas uppnå era mål på ett säkert sätt.
 
->[!BEGINTABS]
+## Börja utforska
 
->[!TAB 25 juli]
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Julversionen är nu live! Läs Versionsinformationen för att se nya funktioner, ändringar och förbättringar.
+Nyheter i Adobe Journey Optimizer
 
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
+Håll dig uppdaterad med den senaste versionsinformationen, nya funktioner och dokumentationsändringar i Adobe Journey Optimizer.
 
->[!TAB Kampanjsamordning]
+[Visa nyheter](./rp_landing_pages/whats-new-landing-page.md)
+:::
 
-Journey Optimizer innehåller nu **Kampanjsamordning**, en ny funktion som är avsedd för varumärkesinitierade gruppkampanjer. I den här versionen introduceras en kampanjsamordningsyta och förbättrad datamodellering, som fungerar tillsammans för att marknadsförarna ska kunna planera, målinrikta och leverera personaliserade flerkanalskampanjer.
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
+Kom igång med Adobe Journey Optimizer
 
->[!TAB Adobe Express]
+Lär dig grunderna i Adobe Journey Optimizer, inklusive dess funktioner, arkitektur och användargränssnitt.
 
-Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komma åt Adobe Express kraftfulla redigeringsverktyg när du skapar innehåll. Tack vare den här integreringen kan du ändra storlek på bilder, ta bort bakgrunder, beskära bilder och konvertera resurser till JPEG eller PNG utan att behöva växla mellan lösningarna.
+[Kom igång](./rp_landing_pages/get-started-landing-page.md)
+:::
 
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/express.md)
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-<!--
->[!TAB AI Assistant]
+Omfattande guide till resor
 
-Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
+Designa, samordna, hantera och optimera personaliserade kundresor med den här detaljerade guiden.
 
-[![learn more](using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
+[Utforska resor](./rp_landing_pages/orchestrate-journeys-landing-page.md)
+:::
 
->[!TAB AEM Content fragment]
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg)
 
-Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journey Optimizer kan du nu smidigt införliva dina AEM Content Fragments i ditt Journey Optimizer-innehåll. Denna smidiga anslutning förenklar processen att komma åt och utnyttja AEM-innehåll, vilket gör det möjligt att skapa personaliserade och dynamiska kampanjer och resor.
+Förstå och hantera kampanjer
 
-[![läs mer](using/assets/do-not-localize/learn-more-button.svg)](using/integrations/aem-fragments.md)
+Detaljerad vägledning om hur du skapar, hanterar och optimerar olika kampanjtyper för effektiv målinriktning.
+
+[Läs mer om kampanjer](./rp_landing_pages/campaigns-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+
+Kommunikationskanaler
+
+Konfigurera och hantera e-post, SMS, push-meddelanden och andra kanaler för personaliserade kundinteraktioner.
+
+[Utforska kanaler](./using/channels/gs-channels.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/scale-balanced.svg)
+
+Konflikthantering och prioritering
+
+Lär dig att prioritera och hantera kommunikationskonflikter mellan kampanjer och resor effektivt.
+
+[Lär dig Konflikthantering](./rp_landing_pages/conflict-prioritization-landing-page.md)
+:::
+
+::::
 
 
->[!ENDTABS]
+## Ytterligare resurser
 
-## Börja med grunderna!
-
-<table style="table-layout:fixed">
-  <tr style="border: 0;">
-    <td>
-    <a href="using/start/quick-start.md"><img src="using/assets/do-not-localize/start-quick.png"></a>
-    <div><strong>Snabbstartguider</strong><br/>Lär dig hur du uppnår dina mål snabbare i Journey Optimizer med ditt personaliserade tillvägagångssätt beroende på din roll.</div>
-    </td>
-    <td>
-    <a href="using/start/user-interface.md"><img src="using/assets/do-not-localize/start-interface.jpeg"></a>
-    <div><strong>Användargränssnitt</strong><br/>Lär dig navigera och optimera upplevelsen i Journey Optimizer.</div>
-    </td>
-    <td>
-    <a href="using/building-journeys/journey-gs.md"><img src="using/assets/do-not-localize/start-journey.jpeg"></a>
-    <div><strong>Skapa din första resa</strong><br/>Designa och samordna personaliserade flerkanaliga resor för att harmonisera marknadsföringsutseendet med personliga kundengagemang. 
-    </div>
-    </td>
-    <td>
-    <a href="using/campaigns/create-campaign.md"><img src="using/assets/do-not-localize/start-campaign.jpeg"></a>
-    <div><strong>Starta din första kampanj</strong><br/>Skapa och starta din första kampanj i Journey Optimizer för att leverera riktat engångsinnehåll till en viss målgrupp.</div>
-    </td>
-  </tr>
-  <tr style="border: 0;">
-    <td align="center"><a href="using/start/quick-start.md"><img src="using/assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="using/start/user-interface.md"><img src="using/assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="using/building-journeys/journey-gs.md"><img src="using/assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="using/campaigns/create-campaign.md"><img src="using/assets/do-not-localize/learn-more-button.svg"></a></td>
-    </tr>
-</table>
-
-## Utforska dokumentationen
-
-<table style="table-layout:auto">
-  <tr style="border: 0;">
-    <td>
-      <img src="using/assets/do-not-localize/icon-quick-start.svg" width="35px"><br/>
-      <strong>Kundens upplevelse</strong><br/><a href="using/building-journeys/journey.md">Resor</a> - <a href="using/campaigns/get-started-with-campaigns.md">Kampanjer</a> - <a href="using/landing-pages/get-started-lp.md">Landningssidor</a> - <a href="using/reports/live-report.md">Rapportering</a> - <a href="using/offers/get-started/starting-offer-decisioning.md">Beslutshantering</a>
-    </td>
-    <td>
-      <img src="using/assets/do-not-localize/icon-configure.svg" width="35px"><br/>
-      <strong> Konfiguration<br/>administration</strong><br/><a href="using/configuration/channel-surfaces.md">Kanalytor</a> - <a href="using/configuration/about-data-sources-events-actions.md">Konfigurera resor</a> - <a href="using/administration/permissions-overview.md">Åtkomstkontroll</a> - <a href="using/administration/sandboxes.md">Hantering av sandlådor</a>
-    </td>
-    <td>
-      <img src="using/assets/do-not-localize/icon-campaign.svg" width="35px"><br/>
-      <strong>Kommunikationskanaler</strong><br/><a href="using/email/get-started-email.md">E-post</a> – <a href="using/sms/get-started-sms.md">SMS</a> – <a href="using/in-app/get-started-in-app.md">I appen</a> – <a href="using/push/get-started-push.md">Push-meddelanden</a> – <a href="using/direct-mail/get-started-direct-mail.md">Direktreklam</a> – <a href="using/web/get-started-web.md">Webb</a>
-    </td>
-  </tr>
-  <tr style="border: 0;">
-    <td>
-      <img src="using/assets/do-not-localize/icon-content.svg" width="35px"><br/>
-      <strong> Innehållshantering</strong><br/><a href="using/integrations/assets.md">Assets/images</a> - <a href="using/personalization/personalize.md">Personalization</a> - <a href="using/content-management/content-templates.md">Återanvändbart</a> &amp; <a href="using/personalization/dynamic-content.md">dynamiskt</a> innehåll - <a href="using/content-management/preview-test.md">Testa och förhandsgranska innehåll</a>
-    </td>
-    <td>
-      <img src="using/assets/do-not-localize/icon_profile-audience.svg" width="35px"><br/>
-      <strong> Profiler och målgrupper </strong><br/><a href="using/audience/about-audiences.md">Publiker</a> - <a href="using/audience/get-started-profiles.md">Profiler</a> - <a href="using/audience/get-started-identity.md">Identiteter</a> - <a href="using/audience/license-usage.md">Licensanvändning</a> - <a href="using/privacy/get-started-privacy.md">Sekretesshantering</a>
-    </td>
-    <td>
-      <img src="using/assets/do-not-localize/icon-data.svg" width="35px"><br/>
-      <strong> Datahantering </strong><br/><a href="using/data/get-started-schemas.md">Scheman</a> - <a href="using/data/get-started-datasets.md">Datauppsättningar</a> - <a href="using/data/get-started-queries.md">Frågor</a>
-    </td>
-  </tr>
-</table>
+- **[Testning, validering och godkännande](./rp_landing_pages/test-landing-page.md)** - Testa och godkänn ditt innehåll, dina resor och dina kampanjer för att säkerställa kvalitet och precision före distributionen.
+- **[Målgrupper, profiler och identiteter](./rp_landing_pages/audiences-profiles-identities-landing-page.md)** - Hantera målgrupper, profiler och identiteter för att möjliggöra effektiv målinriktning och personalisering.
+- **[Omfattande rapportering](./rp_landing_pages/reporting-landing-page.md)** - Analysera och optimera resor, kampanjer och kanaler med avancerade rapporteringsfunktioner.
+- **[Beslutsfunktioner](./rp_landing_pages/decisioning-landing-page.md)** - Utnyttja beslutsverktygen för att skapa och hantera personaliserade erbjudanden och optimera arbetsflöden för marknadsföring.
+- **[Omfattande datahantering](./rp_landing_pages/data-management-landing-page.md)** - Hantera data effektivt med verktyg för styrning, schemaanvändning och frågefunktioner.
+- **[Kanalkonfiguration](./rp_landing_pages/configuration-landing-page.md)** - Konfigurera och optimera kommunikationskanaler för kompatibilitet och förbättrade kampanjprestanda.
+- **[Resekonfiguration](./rp_landing_pages/configure-journeys-landing-page.md)** - Konfigurera datakällor, händelser och åtgärder för att skapa sömlösa kundresor.
+- **[Anslut system och miljöer](./rp_landing_pages/connect-systems-landing-page.md)** - Integrera Adobe Journey Optimizer med externa system, API:er och Adobe-lösningar.
+- **[Hantera åtkomstkontroll](./rp_landing_pages/access-control-landing-page.md)** - Kontrollera användaråtkomst, roller och behörigheter för att skydda data och säkerställa styrning.
+- **[Sekretess, samtycke och datastyrning](./rp_landing_pages/privacy-landing-page.md)** - Hantera datasekretess, samtycke och styrning för att följa regler och skydda känslig information.
 
 ## Ytterligare resurser
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er, referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE" target="_blank">Journey Optimizer Schema Dictionary</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er, referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
 
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/sv/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
+<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/sv/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
 </td>
 </tr></table>
 

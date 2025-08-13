@@ -10,7 +10,7 @@ hidefromtoc: true
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 8ff4f970796218451996bd5ed1938d33fa818495
+source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 8%
@@ -339,7 +339,7 @@ A new option is available in the email surface settings to include email address
 <p>Nu kan du skapa arbetsflöden för kompositioner för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, berika...) för att skapa nya målgrupper. Nyligen skapade målgrupper sparas tillbaka i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas i Journey Optimizer kampanjer för att nå ut till kunder.</p>
 <img src="assets/do-not-localize/gif-ao.gif"/>
 <p>Mer information finns i den <a href="../audience/get-started-audience-orchestration.md">detaljerade dokumentationen</a>.</p>
-<p>Målgruppsdispositionen är helt integrerad med den nya Adobe Experience Platform-menyn"Publiker", som fungerar som en central portal till målgrupper. Nu kan du använda en bläddringssida som innehåller en ny instrumentpanel med segmenttrender och överlappningar för att hitta nya insikter och utforska organisationsverktygen för mappning och taggning. Detta innefattar styrningskontroller för standardiserad målgruppsmärkning och funktioner för hantering av målgruppslivscykler för att hantera aktiveringsarbetsflöden. Med den nya hanteringsupplevelsen kan ni nu enkelt och säkert hantera målgrupper från ett och samma ställe. Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE" target="_blank">Adobe Experience Platform-dokumentationen</a>.</p></p>
+<p>Målgruppsdispositionen är helt integrerad med den nya Adobe Experience Platform-menyn"Publiker", som fungerar som en central portal till målgrupper. Nu kan du använda en bläddringssida som innehåller en ny instrumentpanel med segmenttrender och överlappningar för att hitta nya insikter och utforska organisationsverktygen för mappning och taggning. Detta innefattar styrningskontroller för standardiserad målgruppsmärkning och funktioner för hantering av målgruppslivscykler för att hantera aktiveringsarbetsflöden. Med den nya hanteringsupplevelsen kan ni nu enkelt och säkert hantera målgrupper från ett och samma ställe. Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html" target="_blank">Adobe Experience Platform-dokumentationen</a>.</p></p>
 </td>
 </tr>
 </tbody>
@@ -746,7 +746,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <td>
 <p>Du kan nu skicka personaliserade meddelanden i appen till appanvändarna inom en kampanj. Använd Journey Optimizer för att utforma meddelanden och anpassa meddelandelayout, visning, text och knappar för att skapa en smidig upplevelse.</p>
 <img src="assets/do-not-localize/in-app.gif"/>
-<p>Mer information finns i den <a href="../in-app/get-started-in-app.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../../rp_landing_pages/in-app-landing-page.md">detaljerade dokumentationen</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -843,7 +843,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 <p>Du kan nu skicka personaliserade meddelanden i appen till appanvändarna inom en kampanj. Använd Journey Optimizer för att utforma meddelanden och anpassa meddelandelayout, visning, text och knappar för att skapa en smidig upplevelse.</p>
 <p><strong>Varning</strong> - Den här funktionen är för närvarande i betaversion och endast tillgänglig för betakunder. Om du vill gå med i betaprogrammet kontaktar du Adobe kundtjänst.</p>
 <img src="assets/do-not-localize/in-app.gif"/>
-<p>Mer information finns i den <a href="../in-app/get-started-in-app.md">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="../../rp_landing_pages/in-app-landing-page.md">detaljerade dokumentationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -988,7 +988,7 @@ Note that each widget can be resized and deleted as needed.
 <p>Nu kan ni skapa fristående innehållsmallar som kan utnyttjas på olika resor och i kampanjer för snabb återanvändning.</p> 
 </p>
 <img src="assets/do-not-localize/content-template.gif"/>
-<p>Lär dig hur du skapar, redigerar och använder innehållsmallar i <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/content-templates.html?lang=sv-SE">den här videon</a>. Mer information finns i den <a href="../content-management/content-templates.md">detaljerade dokumentationen</a>.
+<p>Lär dig hur du skapar, redigerar och använder innehållsmallar i <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/content-templates.html">den här videon</a>. Mer information finns i den <a href="../content-management/content-templates.md">detaljerade dokumentationen</a>.
 </p>
 </td>
 </tr>

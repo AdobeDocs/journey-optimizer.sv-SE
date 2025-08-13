@@ -1,44 +1,103 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Snabbstart
-description: Som marknadsförare, administratör eller datatekniker kan du lära dig och upptäcka kraften i Adobe Journey Optimizer med stegvis vägledning.
-feature: Overview
-topic: Content Management
-role: User
+title: AJO roller och ansvar
+description: Läs om de olika roller som Adobe Journey Optimizer har och deras ansvarsområden
+feature: Get Started
+role: Admin, Data Engineer, Developer, User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
-source-git-commit: acb4c2dce86afb0b85125413a42094f96366a57d
+redpen-status: PASS_||_2025-04-28_15-13-07
+source-git-commit: d2cdafef6f2d69ea85d9d042c859a8b1e7654d7d
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 14%
+source-wordcount: '634'
+ht-degree: 0%
 
 ---
 
-# Snabbstart {#cjm-quick-start}
 
-Med [!DNL Adobe Journey Optimizer] kan du importera befintligt meddelandeinnehåll eller utforma ett nytt innehåll, anpassa meddelanden med kundprofildata, skapa händelser för att utlösa meddelanden, definiera målgrupper, skapa och lägga till erbjudanden samt få tillgång till en komplett uppsättning rapporterings- och övervakningsverktyg för att mäta effekten av dina meddelanden och kundresor.
+# AJO roller och ansvar
 
-Beroende på din organisation kan du definiera flera typer av användare och ge dem åtkomst till vissa funktioner beroende på deras behörigheter.
+Med Adobe Journey Optimizer (AJO) kan varumärken leverera sammankopplade och kontextualiserade kundresor under hela kundlivscykeln. Det gör det möjligt för team att personalisera interaktioner i stor skala och anpassa kundens förväntningar till affärsmålen. I den här dokumentationen förklaras de viktigaste rollerna när det gäller att använda Journey Optimizer effektivt, deras ansvarsområden och hur man kommer igång.
 
-Ska vi börja med [!DNL Journey Optimizer]? Erfaren användare med specifika frågor? Administratör för din företagsinstans? Ta din egen väg för att nå dina mål snabbare!
+**Viktigt!** Adobe Journey Optimizer definierar distinkta roller med specifika ansvarsområden. En enskild person kan utföra flera roller eller alla roller beroende på organisationens struktur.
 
-Välj din profil om du vill lära dig och upptäcka styrkan i Adobe Journey Optimizer med stegvis vägledning.
+## Rollbaserade snabbstartsguider
 
-* Jag är **administratör**
+För att förenkla implementeringen organiserar AJO uppgifter i specifika roller baserat på expertis. Varje roll fokuserar på viktiga uppgifter som krävs för att leverera en smidig kundupplevelse.
 
-  Förbered din miljö, ge åtkomst, konfigurera inställningar. [Läs mer](path/administrator.md)
+| Roll | Primärt ansvar | Viktiga färdigheter | Vanliga uppgifter |
+|-------------------|----------------------------------|--------------------------------|-----------------------------------------------|
+| **Administratör** | Systeminstallation och behörighetshantering | Systemkonfiguration, användarhantering, säkerhet | Konfigurera sandlådor, hantera användare, konfigurera kanaler |
+| **Datatekniker** | Konfigurera datastruktur och flöden | Datamodellering, schemadesign, API-integrering | Konfigurera scheman, hantera datauppsättningar, konfigurera datakällor |
+| **Utvecklare** | Tekniska integreringar och anpassningar | Mobilutveckling, API-implementering, kodning | Integrera mobilappar, implementera API:er, skapa anpassade åtgärder |
+| **Marketer** | Utforma och genomför kundresor | Marknadsföringsstrategi, innehållsskapande, resedesign | Skapa kampanjer, utforma resor, analysera rapporter |
 
-* Jag är **datatekniker**
+Varje roll hanterar en viss fas av AJO implementering och säkerställer en strukturerad och effektiv driftsättningsprocess.
 
-  Importera profiler, skapa målgrupper, scheman och datauppsättningar. [Läs mer](path/data-engineer.md)
+## Implementeringsordning och rollberoenden
 
-* Jag är **marknadsförare**
+En lyckad Journey Optimizer-implementering följer vanligtvis den här sekvensen, som visar beroenden mellan roller:
 
-  Designa meddelanden, lägg till erbjudanden, resurser och bygg kundresor. [Läs mer](path/marketer.md)
+1. **Administratör**: Konfigurerar miljön\
+   Administratören lägger grunden för systemet och ser till att alla användare har korrekt åtkomst och konfiguration.
+   * Konfigurera sandlådor och behörigheter
+   * Konfigurera användaråtkomst
+   * Konfigurera meddelandekanaler och tekniska inställningar
+
+2. **Datatekniker**: Skapar datagrunden\
+   Datatekniker definierar datastrukturen och dataflödet, som är avgörande för personaliserade upplevelser.
+   * Utforma och implementera scheman
+   * Konfigurera identitetsnamnutrymmen
+   * Konfigurera datainmatning
+   * Skapa testprofiler
+
+3. **Utvecklare**: Hanterar tekniska integreringar\
+   Utvecklarna gör det möjligt för AJO att interagera med mobilappar, webbplatser och externa system genom att implementera tekniska integreringar. Push-meddelanden är till exempel beroende av utvecklarledda konfigurationer.
+   * Integrera mobilappar för push-meddelanden
+   * Implementera webb-SDK
+   * Utveckla anpassade integreringar med API:er
+   * Skapa anpassade åtgärder för tredjepartssystem
+
+4. **Marketer**: Skapar och startar resor\
+   Marknadsförarna använder grunden från andra roller för att utforma och distribuera kundupplevelser. De fokuserar på målgruppssegmentering, personaliserat innehåll och reseoptimering.
+   * Utforma målgruppssegment
+   * Skapa personaliserat innehåll
+   * Bygga och testa resor
+   * Analysera prestanda och optimera
+
+**Obs!** Även om den här sekvensen är vanlig kan vissa aktiviteter förekomma parallellt. Utvecklare kan till exempel arbeta med appintegreringar medan datateknikerna konfigurerar scheman.
+
+## Komma igång med rollen
+
+Varje roll börjar med specifika uppgifter som är anpassade efter dess fokus. När du slutför dessa inledande steg får du smidigare introduktion och anpassning till den övergripande implementeringsprocessen:
+
+1. **För marknadsförare**: Fokusera på att resa skapas, meddelandedesign och kampanjutförande.\
+   Exempel: Börja med att skapa en välkomstkampanj för nya kunder.
+
+2. **För datatekniker**: Upprätta datamängden, konfigurera scheman och integrera datakällor.\
+   Exempel: Ställ in ett schema för att spåra kundens inköpshistorik för anpassade rekommendationer.
+
+3. **För administratörer**: Konfigurera miljöer, hantera behörigheter och konfigurera meddelandekanaler.\
+   Exempel: Konfigurera sandlådemiljöer för att testa olika meddelandestrategier.
+
+4. **För utvecklare**: Integrera mobilappar, implementera API:er och skapa anpassade integreringar.\
+   Exempel: Använd AJO API för att utlösa push-meddelanden baserat på kundåtgärder i din mobilapp.
+
+Klicka på din roll nedan för att få tillgång till specifik vägledning som är anpassad efter ditt ansvar:
+
+* [Kom igång som marknadsförare](path/marketer.md)
+* [Kom igång som datatekniker](path/data-engineer.md)
+* [Kom igång som administratör](path/administrator.md)
 
 ## Instruktionsvideo {#video}
 
-Förstå Journey Optimizer nyckelfunktioner och personligheter. Lär dig hur du navigerar i användargränssnittet beroende på din roll.
+Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430318?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
+
+## Ytterligare resurser
+
+Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
+* [Versionsinformation](https://experienceleague.adobe.com/docs/journey-optimizer/using/rn/release-notes.html)
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html)

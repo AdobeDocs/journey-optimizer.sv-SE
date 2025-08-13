@@ -7,7 +7,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **Innehållsförteckning**
 
-* [Kom igång med innehållskort](get-started-content-card.md)
+* [Kom igång med innehållskort](../../rp_landing_pages/content-card-landing-page.md)
 * [Krav för innehållskort](content-card-configuration-prereq.md)
 * [Konfigurera innehållskortskanal i Journey Optimizer](content-card-configuration.md)
 * [Skapa innehållskort](create-content-card.md)

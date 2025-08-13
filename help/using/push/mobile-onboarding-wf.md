@@ -9,10 +9,10 @@ role: Admin
 level: Intermediate
 badge: label="Beta" type="Informative"
 exl-id: 364ef926-3f92-4297-acbd-a283668106ac
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ Nedan följer några ytterligare funktioner:
 
 * Smidigt arbetsflöde i fyra steg och användargränssnitt.
 * Levererar en grundläggande konfiguration för att börja samla in mobilhändelsedata via [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} på några minuter.
-* Möjlighet att testa och validera en grundläggande mobil push-händelse med [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=sv-SE){target="_blank"}.
+* Möjlighet att testa och validera en grundläggande mobil push-händelse med [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 * Auto skapar och konfigurerar alla nödvändiga datainsamlingar och Journey Optimizer-resurser.
 * I produktvägledning och verktygstips.
 * Ger en naturlig övergång för mer avancerad implementering vid behov.
@@ -72,7 +72,7 @@ Automatiserad installation är klar. Nu kan du gå till taggens mobila egenskap 
 
 **Relaterade ämnen**
 
-* [Kom igång med push-meddelanden](get-started-push.md)
+* [Kom igång med push-meddelanden](../../rp_landing_pages/push-landing-page.md)
 * [Dataflöde och komponenter för push-meddelanden](push-gs.md)
 * [Konfigurera push-kanalen](push-configuration.md)
 * [Rapport om push-meddelanden](../reports/journey-global-report-cja-push.md#push-global)

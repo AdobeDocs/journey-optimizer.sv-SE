@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: aa8c74de-748b-4947-a972-14703f6ab4a7
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
 workflow-type: tm+mt
 source-wordcount: '4197'
 ht-degree: 7%
@@ -552,7 +552,7 @@ Nya funktioner i den här versionen visas nedan.
 <td>
 <p>Adobe Journey Optimizer har utökat sina flerkanalsfunktioner så att de har stöd för LINE-kanalen. Den här förbättringen gör att du kan skapa, redigera och förhandsgranska LINE-upplevelser, vilket möjliggör mer personaliserade och engagerande interaktioner. Med LINE kan ni få kontakt med fler kunder, skicka relevant innehåll och förbättra engagemanget.</p>
 <p>LINE-kanalen aktiveras på begäran av Adobe Journey Optimizer-kunder. Kontakta Adobe kundtjänst eller en Adobe-representant för att aktivera funktionen för din organisation.</p>
-<p>Mer information finns i den <a href="../line/get-started-line.md">detaljerade dokumentationen</a>.</p></td>
+<p>Mer information finns i den <a href="../../rp_landing_pages/line-landing-page.md">detaljerade dokumentationen</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -939,7 +939,7 @@ Mer information finns i den [detaljerade dokumentationen](../test-approve/approv
 
 **Affärsregler**
 
-Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 Som påminnelse är den dagliga frekvensbegränsningen i regeluppsättningar bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 

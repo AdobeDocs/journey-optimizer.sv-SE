@@ -6,12 +6,13 @@ description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommuni
 role: User
 level: Beginner
 exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
-source-git-commit: f365a5819575990b92ca589557d37c3f274bd4d7
+source-git-commit: d2cdafef6f2d69ea85d9d042c859a8b1e7654d7d
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
+
 
 # Kom igång med [!DNL Adobe Journey Optimizer] kanaler {#get-started-email}
 
@@ -23,51 +24,108 @@ Adobe Journey Optimizer erbjuder en mängd olika inbyggda kanaler för att effek
 
 Leveranskanaler för utgående meddelanden innebär att meddelanden skickas till kunderna utan föregående interaktion. Exempel är e-postkampanjer och push-meddelanden, där ni aktivt når ut till er målgrupp. I [!DNL Adobe Journey Optimizer] stöds utgående kanaler:
 
-* **E-post**: Leverera personaliserade meddelanden direkt till dina kunders inkorgar.
-* **SMS/MMS/RCS**: Skicka textmeddelanden till användare på deras mobila enheter.
-* **Push-meddelande**: Engagera användarna med snabbmeddelanden på deras enheter och få dem att agera direkt.
-* **Direkt e-post**: Använd fysisk e-post för att skapa en faktisk anslutning till din målgrupp.
+:::: landing-cards-container
 
-Välj en kanal för att dyka djupare och upptäck hur ni kan utnyttja dem effektivt i er marknadsföringsstrategi.
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="../email/get-started-email.md"><img alt="e-post" src="assets/do-not-localize/email.png"></a>
-<div align="center"><a href="../email/get-started-email.md"><strong>E-post</strong></a></div></td>
-<td><a href="../sms/get-started-sms.md"><img alt="sms" src="assets/do-not-localize/sms.png"></a>
-<div align="center"><a href="../sms/get-started-sms.md"><strong>SMS</strong></a></div></td>
-<td><a href="../push/get-started-push.md"><img alt="push" src="assets/do-not-localize/push.png"></a>
-<div align="center"><a href="../push/get-started-push.md"><strong>Push-meddelande</strong></a></div></td>
-<td><a href="../direct-mail/get-started-direct-mail.md"><img alt="direktreklam" src="assets/do-not-localize/direct-mail.jpg"></a>
-<div align="center"><a href="../direct-mail/get-started-direct-mail.md"><strong>Direktutskick</strong></a></div></td>
-</tr></table>
+E-postkanal
+
+Upptäck hur ni skapar, konfigurerar och optimerar e-postkampanjer, inklusive personalisering, leveransbarhet och god praxis för regelefterlevnad.
+
+[Läs mer om e-postkanalen](../../rp_landing_pages/email-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+
+Push-meddelandekanal
+
+Lär dig hur du skapar, konfigurerar och skickar push-meddelanden för iOS och Android, inklusive avancerade alternativ som tysta meddelanden och snabb leverans.
+
+[Läs mer om push-meddelanden](../../rp_landing_pages/push-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
+
+SMS/MMS/RCS-meddelanden
+
+Lär dig hur du skapar, hanterar och konfigurerar SMS-, MMS- och RCS-meddelanden för marknadsföring och transaktionsändamål, inklusive regelefterlevnad och personalisering.
+
+[Läs mer om SMS/MMS/RCS-meddelanden](../../rp_landing_pages/sms-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg)
+
+Direktreklamkampanjer
+
+Upptäck hur ni skapar och hanterar direktreklamkampanjer, inklusive exportering av extraheringsfiler för tredjepartsleverantörer och ser till att ni efterlever användarens samtycke.
+
+[Läs mer om kampanjer via direktreklam](../../rp_landing_pages/direct-mail-landing-page.md)
+:::
+
+::::
 
 ## Mobilappar och webbupplevelser {#inbound-channels}
 
 Med mobilappar och inkommande webbupplevelser startar kunderna interaktioner. Exemplen omfattar meddelanden i appen och webbaserade upplevelser, där användarna interagerar med innehåll på sina egna villkor. I [!DNL Adobe Journey Optimizer] stöds följande inkommande kanaler:
 
-* **I appen**: Kommunicera med användare i dina mobil- eller webbprogram för att förbättra deras upplevelse.
-* **Webb**: Använd webbaserade meddelanden för att interagera med användare som surfar på webbplatsen.
-* **Kodbaserad upplevelse**: Implementera anpassade upplevelser genom att koda för unika engagemangsmöjligheter.
-* **Innehållskort**: Dela dynamiskt innehåll direkt inifrån program eller webbplatser för att hålla användarna informerade och engagerade.
+:::: landing-cards-container
 
-Välj en kanal för att dyka djupare och upptäck hur ni kan utnyttja dessa kanaler effektivt i er marknadsföringsstrategi.
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td><a href="../in-app/get-started-in-app.md"><img alt="i appen" src="assets/do-not-localize/inapp.jpg"></a>
-<div align="center"><a href="../in-app/get-started-in-app.md"><strong>I appen</strong></a></div></td>
-<td><a href="../web/get-started-web.md"><img alt="webb" src="assets/do-not-localize/web.jpg"></a>
-<div align="center"><a href="../web/get-started-web.md"><strong>Webb</strong></a></div></td>
-<td><a href="../code-based/get-started-code-based.md"><img alt="kodbaserad upplevelse" src="assets/do-not-localize/code.png"></a>
-<div align="center"><a href="../code-based/get-started-code-based.md"><strong>Kodbaserad upplevelse</strong></a></div></td>
-<td><a href="../content-card/get-started-content-card.md"><img alt="innehållskort" src="assets/do-not-localize/cards.png"></a>
-<div align="center"><a href="../content-card/get-started-content-card.md"><strong>Innehållskort</strong></a></div></td>
-</tr></table>
+Meddelanden i appen
 
+Upptäck hur du konfigurerar, utformar och personaliserar meddelanden i appen för mobil- och webbplattformar för att engagera målgrupper i applikationer.
+
+[Läs mer om meddelanden i appen](../../rp_landing_pages/in-app-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
+
+Webb
+
+Lär dig hur du skapar, konfigurerar och personaliserar webbupplevelser och integrerar webbkanaler med strategier för utgående marknadsföring.
+
+[Läs mer om webbkanaler](../../rp_landing_pages/web-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
+
+Kodbaserad upplevelse
+
+Fördjupa dig i kodbaserade upplevelser för att leverera personaliserat innehåll över digitala plattformar med SDK och API:er.
+
+[Läs mer om kodbaserad upplevelse](../../rp_landing_pages/code-based-experience-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/id-card.svg)
+
+Innehållskort
+
+Upptäck hur du konfigurerar, skapar och utformar innehållskort för engagerande och personaliserade meddelanden i mobilappar och på webbplatser.
+
+[Läs mer om kodbaserad upplevelse](../../rp_landing_pages/content-card-landing-page.md)
+:::
+
+::::
+
+
+## Ytterligare resurser
+
+- **[WhatsApp Messaging](../../rp_landing_pages/whatsapp-landing-page.md)** - Lär dig hur du integrerar och använder meddelanden i WhatsApp via Metas molnAPI för anpassade och kompatibla kommunikationskampanjer.
+- **[LINE-meddelanden](../../rp_landing_pages/line-landing-page.md)** - Upptäck hur du konfigurerar, skapar och anpassar LINE-meddelanden för effektiv kommunikation i kampanjer och resor.
 
 ## Kanaler under resor och kampanjer {#leverage}
 
 I Adobe Journey Optimizer kan du utnyttja kommunikationskanaler i två primära sammanhang:
 
-* **Resor**: Skapa sömlösa kundupplevelser över flera kontaktytor. Automatisera interaktioner baserat på användarbeteende och preferenser, och säkerställ att användarens kommunikation vägleder användarna genom hela kundresan med ert varumärke. [Lär dig hur du skapar och kör en resa](../building-journeys/journey-gs.md).
+- **Resor**: Skapa sömlösa kundupplevelser över flera kontaktytor. Automatisera interaktioner baserat på användarbeteende och preferenser, och säkerställ att användarens kommunikation vägleder användarna genom hela kundresan med ert varumärke. [Lär dig hur du skapar och kör en resa](../building-journeys/journey-gs.md).
 
-* **Kampanjer**: Distribuera specifika marknadsföringskampanjer som använder en viss kanal för att uppnå målinriktade mål. Vare sig ni marknadsför en ny produkt eller driver säsongsförsäljningen kan ni med kampanjer skapa fokuserade meddelandestrategier som är skräddarsydda för er målgrupp. [Lär dig skapa och köra en kampanj](../campaigns/get-started-with-campaigns.md).
+- **Kampanjer**: Distribuera specifika marknadsföringskampanjer som använder en viss kanal för att uppnå målinriktade mål. Vare sig ni marknadsför en ny produkt eller driver säsongsförsäljningen kan ni med kampanjer skapa fokuserade meddelandestrategier som är skräddarsydda för er målgrupp. [Lär dig skapa och köra en kampanj](../campaigns/get-started-with-campaigns.md).

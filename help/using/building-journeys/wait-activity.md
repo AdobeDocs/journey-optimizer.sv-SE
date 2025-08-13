@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
-source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
+source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 3%
@@ -53,7 +53,7 @@ I testläge kan du med parametern **[!UICONTROL Wait time in test]** definiera d
 
 ### Vänta och mobila kanaler {#wait-mobile-channels}
 
-Om du vill visa ett [in-app-meddelande](../in-app/create-in-app.md) kort efter att du har skickat ett [push-meddelande](../push/get-started-push.md) använder du en **Wait**-aktivitet för att tillåta inläsningstiden för meddelanden i appen att spridas. Vanligtvis rekommenderas en 5-15 minuters väntan, men de exakta tiderna kan variera beroende på nyttolastens komplexitet och personaliseringsbehov.
+Om du vill visa ett [in-app-meddelande](../in-app/create-in-app.md) kort efter att du har skickat ett [push-meddelande](../../rp_landing_pages/push-landing-page.md) använder du en **Wait**-aktivitet för att tillåta inläsningstiden för meddelanden i appen att spridas. Vanligtvis rekommenderas en 5-15 minuters väntan, men de exakta tiderna kan variera beroende på nyttolastens komplexitet och personaliseringsbehov.
 
 ## Konfiguration {#wait-configuration}
 
