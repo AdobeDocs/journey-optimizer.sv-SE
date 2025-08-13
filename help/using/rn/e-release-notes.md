@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 7df443d5bf64f862f4adce43a34f14d13fd36733
+source-git-commit: dc4c512ba48ab7de45ad9719eeb87056ee757dd6
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -73,28 +73,28 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
-<th><strong>Mörkt läge i e-post-Designer</strong><br/></th>
+<th><strong>Dark mode in the Email Designer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer Email Designer erbjuder nu möjlighet att växla till vyn för mörkt läge, där du kan definiera ytterligare anpassade inställningar som bara ska visas för mottagare som läser deras e-post i mörkt läge.</p>
-<p>Observera följande:</p>
+<p>The Journey Optimizer Email Designer now offers the ability to switch to dark mode view, where you can additionally define specific custom settings that will display only for recipients reading their emails in dark mode.</p>
+<p>Note the following:</p>
 <ul>
-<li>Den slutliga återgivningen i mörkt läge kan variera och beror på mottagarens e-postklient.</li>
-<li>Alla e-postklienter stöder inte anpassat mörkt läge. Vissa e-postklienter använder dessutom bara sitt eget mörka standardläge för alla e-postmeddelanden som tas emot. I båda fallen går det inte att återge de anpassade inställningarna som du har definierat i e-post-Designer.</li>
+<li>The dark mode final rendering may vary and depends on the recipient's email client.</li>
+<li>Not all email clients support custom dark mode. Moreover, some email clients only apply their own default dark mode for all emails that are received. In both cases, the custom settings that you defined in the Email Designer cannot be rendered.</li>
 </ul>
-<P>Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.</p>
-<p><!--img src="assets/do-not-localize/dark-mode.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../email/dark-mode.md">detailed documentation</a>--></p>
+<P>This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/dark-mode.gif"/></p>
+<p>For more information, refer to the <a href="../email/dark-mode.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -119,23 +119,23 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
-<th><strong>Använd beslut i e-postkanal</strong><br/></th>
+<th><strong>Use Decisioning in email channel</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni lägga till beslutsprinciper i e-postresor och -kampanjer. Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
-<p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
+<p>You can now add Decision policies into email journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><img src="assets/do-not-localize/FILE.gif"/></p>
+<p><For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -196,24 +196,36 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 
 Förbättringar i den här versionen visas nedan.
 
-- **Administration**
-   - **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera för att ta emot systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett kanalkonfigurationsfel inträffar eller om en DNS-post saknas.
+* **Administration**
 
-- **Kampanjer**
-   - **Hastighetskontroll för utgående kampanjer** - Nu kan du aktivera hastighetskontroll för utgående kampanjer (e-post, SMS, push-meddelanden), så att du kan förhindra överbelastning i efterföljande system, som landningssidor eller kundtjänstplattformar.
-   - **Schemaläggning av åtgärdskampanjer** - Schemaläggaren för kampanjen dagligen, veckovis och månadsvis har uppdaterats för förbättrad granularitet. Du kan till exempel nu ange antalet veckor/månader mellan scheman, definiera vilken dag som ska köras och bestämma dig för att stoppa efter ett visst antal förekomster eller ett visst datum.
+   * **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera för att ta emot systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett kanalkonfigurationsfel inträffar eller om en DNS-post saknas.
 
-- **Kanal - tryck**
-   - **Förfallodatum för push-meddelanden** - Nu kan du ange ett förfallodatum för varje push-meddelande, vilket förhindrar att tidskänsliga meddelanden (som Black Friday Sale) skickas efter ett visst datum, vilket förhindrar att dina kunder får en dålig upplevelse.
+* **Kampanjer**
 
-- **Kanal - e-post**
-   - **PDF-bilagor till e-postmeddelanden** - Nu kan du bifoga statiska PDF-filer till e-postmeddelanden som skickas med Journey Optimizer.
+   * **Hastighetskontroll för utgående kampanjer** - Nu kan du aktivera hastighetskontroll för utgående kampanjer (e-post, SMS, push-meddelanden), så att du kan förhindra överbelastning i efterföljande system, som landningssidor eller kundtjänstplattformar.
 
-- **Konfiguration**
-   - **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för personalisering i spårnings-URL:er för fördefinierade domäner som listas på kanalkonfigurationsnivån.
-   - **Stöd för anpassade attribut med en klickning för att avbryta prenumeration-URL** - Om du hanterar samtycke utanför Adobe kan du ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumeration i e-postkonfigurationen med ett enda klick. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
+   * **Schemaläggning av åtgärdskampanjer** - Schemaläggaren för kampanjen dagligen, veckovis och månadsvis har uppdaterats för förbättrad granularitet. Du kan till exempel nu ange antalet veckor/månader mellan scheman, definiera vilken dag som ska köras och bestämma dig för att stoppa efter ett visst antal förekomster eller ett visst datum.
+
+* **Kanal - tryck**
+
+   * **Förfallodatum för push-meddelanden** - Nu kan du ange ett förfallodatum för varje push-meddelande, vilket förhindrar att tidskänsliga meddelanden (som Black Friday Sale) skickas efter ett visst datum, vilket förhindrar att dina kunder får en dålig upplevelse.
+
+* **Kanal - e-post**
+
+   * **PDF-bilagor till e-postmeddelanden** - Nu kan du bifoga statiska PDF-filer till e-postmeddelanden som skickas med Journey Optimizer.
+
+* **Kanal - SMS**
+
+   * **Fuzzy Opt-out** - När alternativet **Fuzzy Opt-out** är aktiverat upptäcks inkommande meddelanden som liknar definierade avanmälningsnyckelord (t.ex. CANCIL) och ett bekräftelsemeddelande skickas automatiskt för att bekräfta användarens avanmälan. Om användaren bekräftar via den definierade uppmaningen, avbeställs prenumerationen.
+
+* **Konfiguration**
+
+   * **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för personalisering i spårnings-URL:er för fördefinierade domäner som listas på kanalkonfigurationsnivån.
+
+   * **Stöd för anpassade attribut med en klickning för att avbryta prenumeration-URL** - Om du hanterar samtycke utanför Adobe kan du ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumeration i e-postkonfigurationen med ett enda klick. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
 
      Om du vill anpassa länken för att avbryta prenumerationen med ett klick ytterligare kan du nu definiera anpassade attribut som läggs till i medgivandehändelsen.
 
-- **Resor**
-   - **Resemassåtgärder** - I listan över dina resor kan du nu välja flera objekt. När du har valt det här alternativet kan du pausa eller återuppta upp till 10 resor i taget.
+* **Resor**
+
+   * **Resemassåtgärder** - I listan över dina resor kan du nu välja flera objekt. När du har valt det här alternativet kan du pausa eller återuppta upp till 10 resor i taget.
