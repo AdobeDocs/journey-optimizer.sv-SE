@@ -20,7 +20,7 @@ När du utformar ditt e-postinnehåll i Adobe Journey Optimizer kan du skapa vis
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med e-postdesign
 
@@ -30,7 +30,7 @@ Lär dig grunderna i e-postdesign i Adobe Journey Optimizer, inklusive bästa pr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och optimera e-postinnehåll
 
@@ -40,7 +40,7 @@ Utforska metoder för att designa e-postinnehåll, importera HTML, koda e-post, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Designa ditt innehåll i Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Upptäck verktyg och metodtips för att använda komponenter, visuella fragment,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Redigera stil: Anpassa e-postdesign
 

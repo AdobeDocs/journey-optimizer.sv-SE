@@ -20,7 +20,7 @@ Med webbkanalen i Adobe Journey Optimizer kan ni skapa personaliserade upplevels
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med webbkanal
 
@@ -30,7 +30,7 @@ Lär dig skapa och hantera personaliserade webbupplevelser i Adobe Journey Optim
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera webbkanal
 
@@ -40,7 +40,7 @@ Konfigurera och hantera webbkanaler, inklusive underdomäner, regler för URL-ma
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och hantera webbupplevelser
 
@@ -50,7 +50,7 @@ Stegvisa anvisningar för att skapa, redigera, testa och publicera personalisera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Skapa och hantera webbsidor
 

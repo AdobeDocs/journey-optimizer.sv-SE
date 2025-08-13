@@ -20,7 +20,7 @@ Med landningssidor i Adobe Journey Optimizer kan du skapa skräddarsydda, frist�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Introduktion till landningssidor
 
@@ -30,7 +30,7 @@ Lär dig grunderna för landningssidor, deras funktionalitet och integrering med
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa och publicera landningssidor
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar för att effektivt skapa, konfigurera, testa och publicera 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Hantera era landningssidor
 
@@ -50,7 +50,7 @@ Få tillgång till, ordna och utför åtgärder som att publicera, duplicera och
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Designa innehåll för landningssidor
 
@@ -60,7 +60,7 @@ Skapa och anpassa landningssidor med mallar, formulär och avancerade JavaScript
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och hantera prenumerationslistor
 
@@ -70,7 +70,7 @@ Ställ in prenumerationslistor för att hantera profiler som valts in och effekt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Användningsexempel för landningssida
 

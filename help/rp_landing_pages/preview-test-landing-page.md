@@ -20,7 +20,7 @@ Genom att förhandsgranska och testa innehåll i Adobe Journey Optimizer kan du 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Förhandsgranska och testa ditt innehåll i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du använder testprofiler och exempelindata för att förhandsgrans
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Välja testprofiler i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Lär dig hur du väljer och hanterar testprofiler för att förhandsgranska och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Förhandsgranska ditt innehåll med testprofiler
 
@@ -50,7 +50,7 @@ Stegvisa anvisningar för att förhandsgranska personaliserat innehåll med test
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 Skicka korrektur med testprofildata
 
@@ -60,7 +60,7 @@ Testa och validera dina e-postmeddelanden genom att skicka korrektur med testpro
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/eye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/eye.svg?lang=sv-SE)
 
 Testa e-poståtergivning med Litmus i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Integrera Litmus för att förhandsgranska e-poståtergivning i olika e-postklie
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Simulera och testa innehållsvariationer i Adobe Journey Optimizer
 

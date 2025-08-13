@@ -20,7 +20,7 @@ Att hantera era resor i Adobe Journey Optimizer handlar om att ge er verktygen f
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Bläddra och filtrera dina resor
 
@@ -30,7 +30,7 @@ Lär dig navigera, filtrera och hantera resor effektivt, inklusive kontrollpanel
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Profilinträde i resor
 
@@ -40,7 +40,7 @@ Förstå hur profiler går in på resor, inklusive regler för återinträde fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Använd ytterligare identifierare i resor
 
@@ -50,7 +50,7 @@ Upptäck hur ni kan utnyttja tilläggsidentifierare för förbättrad personalis
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Tidszonshantering
 
@@ -60,7 +60,7 @@ Lär dig hur du konfigurerar fasta och profildefinierade tidszoner för att säk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Sändningsoptimering
 
@@ -70,7 +70,7 @@ Maximera engagemanget för e-post och push-meddelanden genom att förutsäga opt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Avsluta din resa
 

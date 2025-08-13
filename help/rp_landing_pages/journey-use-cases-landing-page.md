@@ -20,7 +20,7 @@ Adobe Journey Optimizer användningsfall ger er möjlighet att skapa meningsfull
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Lär dig mer om användningsexempel
 
@@ -30,7 +30,7 @@ Utforska praktiska exempel och strategier för att maximera Adobe Journey Optimi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Uppslag med upplevelsehändelser
 
@@ -40,7 +40,7 @@ Använd upplevelsehändelser för att hantera avanmälningar, personalisera inne
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skicka flerkanalsmeddelanden
 
@@ -50,7 +50,7 @@ Skapa resor som utnyttjar målgruppssegmentering och händelseutlösare för att
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skicka ett meddelande med Campaign v7/v8
 
@@ -60,7 +60,7 @@ Integrera Adobe Campaign med Journey Optimizer för att skicka e-postmeddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skicka ett meddelande till prenumeranter
 
@@ -70,7 +70,7 @@ Ställ in resor för att skicka meddelanden till prenumeranter baserat på prefe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Skicka samlingar dynamiskt med anpassade åtgärder
 

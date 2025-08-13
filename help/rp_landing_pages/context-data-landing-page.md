@@ -20,7 +20,7 @@ Med kontextdata kan Adobe Journey Optimizer skapa smartare och mer personalisera
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med kontextdata
 
@@ -30,7 +30,7 @@ Lär dig hur du använder kontextdata i Adobe Journey Optimizer beslutsmotor, in
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda kontextdata i Edge-beslutsbegäranden
 
@@ -40,7 +40,7 @@ Upptäck hur ni skickar kontextdata i Edge Decisioning-begäranden om att levere
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Använda kontextdata i beslutsbegäranden och regler för behörighet
 

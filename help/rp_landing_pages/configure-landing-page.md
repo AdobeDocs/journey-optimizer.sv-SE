@@ -20,7 +20,7 @@ Avsnittet Konfigurera innehållskortskanal i Adobe Journey Optimizer gör det m�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Krav för kanalkonfiguration av innehållskort
 
@@ -30,7 +30,7 @@ Lär dig de konfigurationer och inställningar som krävs för att aktivera Cont
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Konfigurera Content Cards Channel i Journey Optimizer
 
@@ -40,7 +40,7 @@ Följ stegvisa instruktioner för att definiera URI-ytor och skapa konfiguration
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Konfigurera stöd för innehållskort i Mobile SDK
 
@@ -50,7 +50,7 @@ Aktivera och anpassa innehållskort i mobilappar med Adobe Experience Platform M
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Konfigurera stöd för innehållskort i SDK för webben
 

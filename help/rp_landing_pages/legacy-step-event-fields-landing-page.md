@@ -20,7 +20,7 @@ ht-degree: 0%
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Förstå äldre fält
 
@@ -30,7 +30,7 @@ Lär dig mer om äldre steg-händelsefält i Adobe Journey Optimizer, inklusive 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Översikt över resefält
 
@@ -40,7 +40,7 @@ Upptäck fälten inom reseschemat, deras typer och hur de stöder rapportering o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Vanliga fält för resesegmenthändelser
 
@@ -50,7 +50,7 @@ Hitta viktiga fält som delas över hela resanStepEvent och travelStepProfileEve
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Körningsfält för åtgärd
 
@@ -60,7 +60,7 @@ Förstå fält som rör körning av åtgärder i progressStep-händelser, inklus
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Datainhämtningsfält
 
@@ -70,7 +70,7 @@ Lär dig mer om fälten som är kopplade till datainhämtning under stegbearbetn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 JourneyStep-identitetsfält
 

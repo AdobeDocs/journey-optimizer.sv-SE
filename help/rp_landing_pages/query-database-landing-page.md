@@ -20,7 +20,7 @@ Upptäck hur ni kan utnyttja era målgruppsdata fullt ut med Adobe Journey Optim
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Använda regelbyggaren för samordnade kampanjer
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och hanterar målgruppsanpassning och segmenteringsregler
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Så här skapar du din första regel i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Stegvis självstudiekurs om hur du skapar och validerar regler för filtrering o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Så här redigerar du uttryck i Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Lär dig bemästra uttrycksredigeraren för att manuellt definiera frågeregler 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Skapa återmarknadsföringsfrågor i Adobe Journey Optimizer
 

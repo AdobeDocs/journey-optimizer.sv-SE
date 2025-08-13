@@ -20,7 +20,7 @@ Teknikerna i Adobe Journey Optimizer ger en inblick i de avancerade statistiska 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Statistiska beräkningar som används i Adobe Journey Optimizer Experiment
 
@@ -30,7 +30,7 @@ Lär dig mer om avancerade statistiska metoder som t.ex. konfidenssekvenser och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Förstå statistiska beräkningar i experimentrapporter
 

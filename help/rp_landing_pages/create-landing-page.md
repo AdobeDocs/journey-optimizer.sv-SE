@@ -20,7 +20,7 @@ Genom att skapa målgrupper i Adobe Journey Optimizer kan ni definiera, hantera 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa segmentdefinitioner i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig definiera målgruppssegment, inklusive stegvisa instruktioner för att 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Kom igång med Audience Composition
 
@@ -40,7 +40,7 @@ Upptäck hur du skapar arbetsflöden som kombinerar, berikar och hanterar befint
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-upload.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/file-upload.svg?lang=sv-SE)
 
 Importera målgrupper med anpassad CSV-överföring
 
@@ -50,7 +50,7 @@ Ta reda på hur du importerar målgrupper via CSV-filer och mappar attribut till
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Federerad målgruppssammansättning
 

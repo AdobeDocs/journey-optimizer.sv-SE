@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer kan ni skapa och hantera beslut och leverera de mest
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa beslut i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar beslut, definierar omfattningar, ställer in reserverbjud
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera urvalsmetoder för erbjudanden
 
@@ -40,7 +40,7 @@ Lär dig hur du konfigurerar rangordningsmetoder för beslut, inklusive priorite
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Simulera beslut om erbjudanden
 

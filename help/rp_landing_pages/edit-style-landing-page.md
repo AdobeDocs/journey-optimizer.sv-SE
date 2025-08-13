@@ -20,7 +20,7 @@ Adobe Journey Optimizer Email Designer innehåller kraftfulla formateringsverkty
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Anpassa e-postformat
 
@@ -30,7 +30,7 @@ Lär dig justera formatparametrar som brödtext, struktur och innehållskomponen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Anpassa e-postbakgrunden
 
@@ -40,7 +40,7 @@ Lär dig hur du anger bakgrundsfärger och bilder på olika nivåer i e-poststru
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Justera lodrät justering och utfyllnad
 
@@ -50,7 +50,7 @@ Stegvisa instruktioner för att ändra lodrät justering och utfyllnad i struktu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Lägg till textbundna formatattribut
 

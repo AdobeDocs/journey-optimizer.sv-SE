@@ -20,7 +20,7 @@ Med dynamiskt innehåll i Adobe Journey Optimizer kan ni skapa personaliserade m
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med dynamiskt innehåll
 
@@ -30,7 +30,7 @@ Lär dig hur du använder villkorsregler och redigeringsprogrammet för anpassni
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och hantera villkorsregler
 
@@ -40,7 +40,7 @@ Lär dig skapa, spara och hantera villkorliga regler för att definiera dynamisk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Så här skapar du dynamiskt innehåll i Adobe Journey Optimizer
 

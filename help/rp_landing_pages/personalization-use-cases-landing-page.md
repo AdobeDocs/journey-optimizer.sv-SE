@@ -20,7 +20,7 @@ Tänk dig att skapa kommunikation som är så skräddarsydd för er målgrupp at
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Orderstatusmeddelande - Personalization självstudiekurs
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar personaliserade push-meddelanden för orderstatusuppdater
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Cart Abandonment Email Personalization Guide
 
@@ -40,7 +40,7 @@ Upptäck hur ni kan personalisera e-postmeddelanden om att kunden överger en va
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Exempel på förskrivning av hälsoplan E-post till Personalization
 

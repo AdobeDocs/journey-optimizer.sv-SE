@@ -20,7 +20,7 @@ E-postleverans handlar om att se till att era e-postmeddelanden når målgruppen
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Introduktion till e-postleverans
 
@@ -30,7 +30,7 @@ Lär dig mer om koncept, bästa praxis och verktyg för att optimera e-postlever
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Förstå undertryckningslistor
 
@@ -40,7 +40,7 @@ Upptäck hur inaktiveringslistor skyddar avsändarens anseende och förbättrar 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Uppfyll nya krav från DMARC
 

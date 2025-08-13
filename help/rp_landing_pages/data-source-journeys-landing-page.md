@@ -20,7 +20,7 @@ Med datakällor i Adobe Journey Optimizer kan ni ansluta till system som berikar
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med datakällor
 
@@ -30,7 +30,7 @@ Lär dig mer om datakällor, deras typer, användningsfall och fältgrupper. Inn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera en Data Source
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du konfigurerar datakällor och hanterar fältgruppe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Adobe Experience Platform Data Source
 
@@ -50,7 +50,7 @@ Lär dig konfigurera den inbyggda Adobe Experience Platform-datakällan för att
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Konfigurera externa datakällor
 

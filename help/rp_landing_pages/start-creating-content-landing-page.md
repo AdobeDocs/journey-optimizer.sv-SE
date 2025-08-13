@@ -20,7 +20,7 @@ Att skapa innehåll i Adobe Journey Optimizer handlar om flexibilitet och effekt
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Designa e-postinnehåll från grunden
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och anpassar e-postinnehåll med Adobe Journey Optimizer 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Importera befintligt e-postinnehåll
 
@@ -40,7 +40,7 @@ Importera HTML-material till Adobe Journey Optimizer, justera designelement och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Koda ditt eget e-postinnehåll
 
@@ -50,7 +50,7 @@ Koda ditt e-postinnehåll manuellt med råformat-HTML i Adobe Journey Optimizer 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Arbeta med e-postmallar
 
@@ -60,7 +60,7 @@ Spara tid genom att använda exempelmallar eller anpassade e-postmallar för att
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Utnyttja e-postteman
 

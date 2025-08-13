@@ -20,7 +20,7 @@ Med listfunktionerna i Adobe Journey Optimizer kan du hantera och förfina data 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen&quot;distinkt&quot; i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du använder funktionen&quot;distinkt&quot; för att ta bort dubble
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 clearWithNull-funktion - Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Lär dig hur du kan använda &#39;distincWithNull&#39; för att hämta distinkta
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda filterfunktionen i Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Lär dig hur du använder filter på objektlistor som baseras på specifika nyck
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen getListItem i Adobe Journey Optimizer
 
@@ -60,7 +60,7 @@ Lär dig hur du hämtar ett objekt från en lista vid ett specifikt index med fu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen in i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Ta reda på hur du kontrollerar om det finns ett värde i en lista med funktione
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Överlappningsfunktion i Adobe Journey Optimizer
 

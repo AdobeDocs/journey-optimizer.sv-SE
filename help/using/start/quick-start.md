@@ -100,4 +100,4 @@ Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfun
 
 Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 * [Versionsinformation](https://experienceleague.adobe.com/docs/journey-optimizer/using/rn/release-notes.html)
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html)
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE)

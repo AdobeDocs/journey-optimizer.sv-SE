@@ -20,7 +20,7 @@ Verksamheter i Adobe Journey Optimizer är de byggstenar som ger era kundresor l
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Introduktion till reseverksamhet
 
@@ -30,7 +30,7 @@ Lär dig mer om händelser, samordning och åtgärder i Adobe Journey Optimizer 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Använda allmänna händelser
 
@@ -40,7 +40,7 @@ Upptäck hur du kan använda allmänna händelser för att utlösa resor och han
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Konfigurera reaktionshändelser
 
@@ -50,7 +50,7 @@ Lär dig hur du reagerar på spårningsdata, som meddelandeklickningar eller öp
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Audience Qualification Events
 
@@ -60,7 +60,7 @@ Lär dig hur du aktiverar åtgärder och villkor baserat på status för målgru
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Använda villkorsaktiviteten
 
@@ -70,7 +70,7 @@ Definiera flera sökvägar i en resa baserat på kriterier som tid, datakälla e
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
 
 Konfigurerar vänteaktiviteten
 

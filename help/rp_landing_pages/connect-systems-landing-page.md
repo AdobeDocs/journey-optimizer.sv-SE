@@ -20,7 +20,7 @@ Adobe Journey Optimizer ger er möjlighet att smidigt koppla samman system och m
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Integrera Adobe Journey Optimizer med andra lösningar
 
@@ -30,7 +30,7 @@ Förstå hur Adobe Journey Optimizer kan kommunicera med andra lösningar från 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Arbeta med Adobe Journey Optimizer API:er
 
@@ -40,7 +40,7 @@ Upptäck hur ni kan använda API:er för att leverera personaliserade upplevelse
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Integrera dina resor med externa system
 
@@ -50,7 +50,7 @@ Lär dig de bästa sätten att integrera Adobe Journey Optimizer med externa sys
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skicka med Adobe Solutions
 
@@ -60,7 +60,7 @@ Konfigurera Adobe Journey Optimizer för integrering med Adobe Campaign, Marketo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Hantering av sandlådor i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Hantera virtuella miljöer, roller och arbetsflöden effektivt med sandlådor i 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med Sources Connectors
 

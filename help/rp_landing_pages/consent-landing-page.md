@@ -20,7 +20,7 @@ Att hantera samtycke är avgörande för att bygga upp förtroende med er målgr
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Hantera avanmälan och Personalization-samtycke
 
@@ -30,7 +30,7 @@ Lär dig hur du hanterar avanmälningsinställningar och upprätthåller persona
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Arbeta med profiler för samtycke
 

@@ -20,7 +20,7 @@ Beslutsfunktionerna i Journey Optimizer ger er möjlighet att leverera de bästa
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Inledning till beslutsfunktioner
 
@@ -30,7 +30,7 @@ Läs om de verktyg och funktioner i Adobe Journey Optimizer som möjliggör pers
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Beslut i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Lär dig hur du skapar, hanterar och optimerar skräddarsytt innehåll med beslu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Beslutshantering i Adobe Journey Optimizer
 

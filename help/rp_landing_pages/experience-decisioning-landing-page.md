@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer Decisioning-funktionen kan ni leverera personalisera
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Introduktion till beslut
 
@@ -30,7 +30,7 @@ Lär dig grunderna i beslutsfattande i Adobe Journey Optimizer, inklusive skräd
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Beslutsfattarutkast och begränsningar
 
@@ -40,7 +40,7 @@ Förstå begränsningar och bästa metoder för att effektivt använda beslutspr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 API-referens: Leverera erbjudanden
 
@@ -50,7 +50,7 @@ Upptäck hur ni kan leverera erbjudanden med den kodbaserade upplevelsekanalen m
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Hantera beslutsobjekt och kataloger
 
@@ -60,7 +60,7 @@ Konfigurera och hantera beslutsunderlag, kataloger och samlingar för att organi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Skapa beslutsregler
 
@@ -70,7 +70,7 @@ Definiera beslutsregler för att exakt rikta in er på målgrupper med hjälp av
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Skapa rankningar med AI-modeller
 

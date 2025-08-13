@@ -20,7 +20,7 @@ Adobe Journey Optimizer datamängder är ryggraden i hur ni hanterar och använd
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Använda och hantera datauppsättningar i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till, skapar, hanterar och styr datauppsättninga
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Datamängder TTL-stödlinjer (Time-to-live)
 
@@ -40,7 +40,7 @@ Förstå TTL-skyddsräcken som tillämpas på systemgenererade datauppsättninga
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Exportera Adobe Journey Optimizer-datauppsättningar
 
@@ -50,7 +50,7 @@ Lär dig hur du exporterar datauppsättningar till molnlagringsmål för rapport
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Adobe Journey Optimizer: Exempel på datauppsättningsfrågor
 

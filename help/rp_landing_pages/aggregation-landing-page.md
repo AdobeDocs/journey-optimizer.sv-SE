@@ -20,7 +20,7 @@ Med sammanställningsfunktionerna i Adobe Journey Optimizer kan ni sammanfatta, 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 avg Function in Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du använder funktionen avg för att beräkna det genomsnittliga v�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Dokumentation för räkningsfunktion
 
@@ -40,7 +40,7 @@ Förstå funktionen count för att samla data i listor, inklusive syntax, parame
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Funktionen countOnlyNull - antal null-värden i listor
 
@@ -50,7 +50,7 @@ Upptäck hur funktionen countOnlyNull räknar null-värden i en lista med detalj
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 countWithNull Function Overview
 
@@ -60,7 +60,7 @@ Lär dig hur funktionen countWithNull räknar alla element i en lista, inklusive
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 clearCount Function i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Utforska funktionen&quot;distinktCount&quot; för att räkna unika värden i en 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 distinktCountWithNull-funktion: räkna unika värden (inklusive null)
 

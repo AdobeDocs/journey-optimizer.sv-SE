@@ -20,7 +20,7 @@ Med funktionerna Testa och godkänn i Adobe Journey Optimizer kan ni lugnt full�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Förhandsgranska, testa och validera innehåll
 
@@ -30,7 +30,7 @@ Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Arbetsflöden för godkännande av resor och kampanjer
 
@@ -40,7 +40,7 @@ Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
 
 Åtkomst och prenumeration på systemaviseringar
 

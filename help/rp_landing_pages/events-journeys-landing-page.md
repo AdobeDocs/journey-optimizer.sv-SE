@@ -20,7 +20,7 @@ Händelsekonfiguration i Adobe Journey Optimizer handlar om att ställa in utlö
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Arbeta med reseevenemang
 
@@ -30,7 +30,7 @@ Lär dig mer om resehändelser, deras typer, livscykel och konfiguration för at
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Konfigurera en enhetshändelse
 
@@ -40,7 +40,7 @@ Följ en steg-för-steg-guide för att konfigurera enhetshändelser, inklusive d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 ExperienceEvent-scheman
 
@@ -50,7 +50,7 @@ Förstå schemakrav och konfigurationer för händelseinmatning och avancerade f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Adobe Analytics Integration
 
@@ -60,7 +60,7 @@ Lär dig hur du integrerar Adobe Analytics-data för att automatisera resor och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Konfigurera en affärshändelse
 
@@ -70,7 +70,7 @@ Stegvisa instruktioner för att konfigurera affärshändelser, inklusive schemad
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Skicka händelser med API:er för direktuppspelning
 

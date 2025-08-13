@@ -27,7 +27,7 @@ Leveranskanaler för utgående meddelanden innebär att meddelanden skickas till
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 E-postkanal
 
@@ -37,7 +37,7 @@ Upptäck hur ni skapar, konfigurerar och optimerar e-postkampanjer, inklusive pe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
 
 Push-meddelandekanal
 
@@ -47,7 +47,7 @@ Lär dig hur du skapar, konfigurerar och skickar push-meddelanden för iOS och A
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg?lang=sv-SE)
 
 SMS/MMS/RCS-meddelanden
 
@@ -57,7 +57,7 @@ Lär dig hur du skapar, hanterar och konfigurerar SMS-, MMS- och RCS-meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg?lang=sv-SE)
 
 Direktreklamkampanjer
 
@@ -75,7 +75,7 @@ Med mobilappar och inkommande webbupplevelser startar kunderna interaktioner. Ex
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
 
 Meddelanden i appen
 
@@ -85,7 +85,7 @@ Upptäck hur du konfigurerar, utformar och personaliserar meddelanden i appen f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg?lang=sv-SE)
 
 Webb
 
@@ -95,7 +95,7 @@ Lär dig hur du skapar, konfigurerar och personaliserar webbupplevelser och inte
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
 
 Kodbaserad upplevelse
 
@@ -105,7 +105,7 @@ Fördjupa dig i kodbaserade upplevelser för att leverera personaliserat innehå
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/id-card.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/id-card.svg?lang=sv-SE)
 
 Innehållskort
 

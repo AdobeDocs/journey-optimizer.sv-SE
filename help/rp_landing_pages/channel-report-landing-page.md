@@ -20,7 +20,7 @@ The &#39;All Time Report&#39; in Adobe Journey Optimizer is your gateway to unde
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med All Time Reporting
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till och utnyttjar funktionen&quot;All Time Repor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Omfattande lista med mätvärden
 
@@ -40,7 +40,7 @@ Utforska detaljerade definitioner av mätvärden som används i olika leveranska
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera Customer Journey Analytics manuellt
 
@@ -50,7 +50,7 @@ Stegvisa anvisningar för att manuellt konfigurera integrering med Customer Jour
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Hantera dina rapporter
 
@@ -60,7 +60,7 @@ Lär dig hur du analyserar, anpassar, exporterar och schemalägger rapporter, li
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Konfigurera rapportdatakällor
 
@@ -70,7 +70,7 @@ Ställ in datakällor och datauppsättningar för att aktivera experimenterande 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Uteslutningsorsaker
 

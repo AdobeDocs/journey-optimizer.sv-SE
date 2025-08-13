@@ -20,7 +20,7 @@ Anpassade reserapporter i Adobe Journey Optimizer gör det möjligt att följa u
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Skapa och analysera reserapporter
 
@@ -30,7 +30,7 @@ Lär dig skapa reserapporter, förstå scheman och datauppsättningar och integr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Fältlista för steghändelser
 
@@ -40,7 +40,7 @@ Utforska en omfattande lista med stegvisa händelsefält, kategoriserade och bes
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Händelsefält för äldre steg
 
@@ -50,7 +50,7 @@ Förstå de äldre händelsefälten för steg som används i Adobe Journey Optim
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Exempel på SQL-frågor för dataanalys
 

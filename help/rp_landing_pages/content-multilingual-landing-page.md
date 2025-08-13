@@ -20,7 +20,7 @@ Funktionen för flerspråkigt innehåll i Adobe Journey Optimizer ger er möjlig
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med flerspråkigt innehåll
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar och använder funktionen för flerspråkigt innehå
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Så här skapar du en språkinställning för flerspråkigt innehåll
 
@@ -40,7 +40,7 @@ Följ de stegvisa instruktionerna för att skapa och hantera nya språkområden 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Lägg till och konfigurera språkproviders
 
@@ -50,7 +50,7 @@ Konfigurera översättningsleverantörer från tredje part för smidig integreri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Skapa flerspråkigt innehåll med manuell översättning
 
@@ -60,7 +60,7 @@ Lär dig hur du skapar flerspråkiga kampanjer och resor som är skräddarsydda 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skapa flerspråkigt innehåll med automatiserad översättning
 

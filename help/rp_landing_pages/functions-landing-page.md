@@ -20,7 +20,7 @@ Hjälpfunktionerna i Adobe Journey Optimizer gör det möjligt att personalisera
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med hjälpfunktioner
 
@@ -30,7 +30,7 @@ Lär dig hur du använder hjälpfunktioner för datahantering och personaliserin
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Sammanställningsfunktionens bibliotek
 
@@ -40,7 +40,7 @@ Upptäck funktioner för att sammanfatta flera värden till ett enda värde för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Aritmetiskt funktionsbibliotek
 
@@ -50,7 +50,7 @@ Se hur aritmetiska funktioner utför beräkningar som addition, subtraktion med 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Referens för Array- och List-funktioner
 
@@ -60,7 +60,7 @@ Lär dig att hantera arrayer och listor med funktioner som att räkna, hämta di
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
 
 Funktionsbibliotek för datum och tid
 
@@ -70,7 +70,7 @@ Använd datum- och tidsfunktioner för att hantera och formatera datum för pers
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Bibliotek för booleska funktioner och jämförelsefunktioner
 

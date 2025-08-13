@@ -20,7 +20,7 @@ Resekonfigurationen i Adobe Journey Optimizer ger er möjlighet att skapa söml�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med resekonfiguration
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar datakällor, händelser och åtgärder för att mö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Händelsekonfiguration i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Upptäck hur du konfigurerar och hanterar händelser som utlöser resor, inklusi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Data Source Configuration in Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Förstå och hantera datakällor, inklusive förkonfigurerade och externa typer,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Konfiguration och användning av anpassade åtgärder
 

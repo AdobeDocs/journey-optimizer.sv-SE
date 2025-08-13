@@ -20,7 +20,7 @@ Med API-utlösta kampanjer i Adobe Journey Optimizer kan ni leverera personalise
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa och hantera API-utlösta kampanjer
 
@@ -30,7 +30,7 @@ Lär dig skapa, konfigurera och hantera API-utlösta kampanjer i Adobe Journey O
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Definiera API-utlösta kampanjegenskaper
 
@@ -40,7 +40,7 @@ Följ stegvisa instruktioner för att definiera kampanjegenskaper som namngivnin
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera den API-utlösta kampanjåtgärden
 
@@ -50,7 +50,7 @@ Lär dig hur du konfigurerar åtgärder, väljer kommunikationskanaler, optimera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Redigera och anpassa API-utlöst kampanjinnehåll
 
@@ -60,7 +60,7 @@ Anpassa och personalisera kampanjinnehåll med kontextuella data. Lär dig utfor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=sv-SE)
 
 Definiera den API-utlösta kampanjmålgruppen
 
@@ -70,7 +70,7 @@ Ställ in kampanjmålgruppen genom att välja profiler, konfigurera identitetsty
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
 
 Schemalägg en API-utlöst kampanj
 

@@ -20,7 +20,7 @@ Med åtgärdskonfigurationen i Adobe Journey Optimizer kan ni smidigt koppla sam
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med anpassade åtgärder
 
@@ -30,7 +30,7 @@ Lär dig konfigurera och använda anpassade åtgärder i Adobe Journey Optimizer
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera anpassade åtgärder
 
@@ -40,7 +40,7 @@ Stegvis självstudiekurs för att skapa anpassade åtgärder, inklusive säkerhe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda API-anropssvar i anpassade åtgärder
 

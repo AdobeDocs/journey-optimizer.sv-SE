@@ -20,7 +20,7 @@ SMS/MMS/RCS-kanalen i Adobe Journey Optimizer ger företag möjlighet att kommun
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med konfigurering av SMS/MMS/RCS-kanal
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar SMS-, MMS- och RCS-kanaler i Adobe Journey Optimize
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Konfigurera Sinch Provider för SMS/MMS/RCS Messaging
 
@@ -40,7 +40,7 @@ Stegvisa instruktioner för hur du konfigurerar singch API-autentiseringsuppgift
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Konfigurera Infobip SMS-, MMS- och RCS-provider
 
@@ -50,7 +50,7 @@ Detaljerad vägledning om hur du integrerar Infobip som leverantör av SMS-, MMS
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Konfigurera Twilio Provider för SMS/MMS/RCS Messaging
 
@@ -60,7 +60,7 @@ Instruktioner för hur du konfigurerar Twilio API-autentiseringsuppgifter och ak
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Konfigurera en anpassad SMS-provider
 
@@ -70,7 +70,7 @@ Konfigurera anpassade SMS-leverantörer genom att skapa API-autentiseringsuppgif
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Skapa en SMS/MMS/RCS-kanalkonfiguration
 

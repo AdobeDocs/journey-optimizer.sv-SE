@@ -20,7 +20,7 @@ Adobe Journey Optimizer versionsinformation är en månadsvis ögonblicksbild av
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Adobe Journey Optimizer Release Notes 2025
 
@@ -30,7 +30,7 @@ Utforska alla funktioner, uppdateringar och förbättringar som introducerades 2
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Versionsinformation om Adobe Journey Optimizer 2024
 

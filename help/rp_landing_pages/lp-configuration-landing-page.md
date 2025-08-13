@@ -20,7 +20,7 @@ Genom att konfigurera landningssidor i Adobe Journey Optimizer kan ni skapa söm
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera deldomäner för landningssidor
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar, hanterar och avdelegerar underdomäner för värdt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Definiera förinställningar för landningssida
 

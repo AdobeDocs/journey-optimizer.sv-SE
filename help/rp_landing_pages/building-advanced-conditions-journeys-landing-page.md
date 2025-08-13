@@ -20,7 +20,7 @@ Adobe Journey Optimizer innehåller en **avancerad uttrycksredigerare** som gör
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Använda den avancerade uttrycksredigeraren
 
@@ -30,7 +30,7 @@ Lär dig hur du använder den avancerade uttrycksredigeraren för att skapa anpa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Avancerad syntax för uttryck
 
@@ -40,7 +40,7 @@ Lär dig de syntaxregler, villkorliga instruktioner och datatyper som behövs f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Funktioner i Adobe Journey Optimizer
 

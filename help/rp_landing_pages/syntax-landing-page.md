@@ -20,7 +20,7 @@ Fördjupa dig i de kraftfulla syntaxfunktionerna i Adobe Journey Optimizer Advan
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Syntax för avancerad uttrycksredigerare
 
@@ -30,7 +30,7 @@ Lär dig de detaljerade syntaxreglerna för att använda den avancerade uttrycks
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Villkorlig instruktion (if, then, else)
 
@@ -40,7 +40,7 @@ Hantera användningen av villkorliga instruktioner för att skapa komplexa uttry
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Förstå datatyper
 
@@ -50,7 +50,7 @@ Få en omfattande översikt över datatyper som används i uttryck, inklusive JS
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda fältreferenser
 
@@ -60,7 +60,7 @@ Lär dig hur du refererar till fält i uttryck, inklusive avancerade användning
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Samlingshanteringsfunktioner
 
@@ -70,7 +70,7 @@ Utforska funktioner som&quot;all&quot;,&quot;first&quot;,&quot;last&quot; och&qu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Operatorer i avancerade uttryck
 

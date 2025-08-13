@@ -20,7 +20,7 @@ Genom att hantera regler för budskaps- och resebegränsning i Adobe Journey Opt
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Arbeta med regeluppsättningar
 
@@ -40,7 +40,7 @@ Upptäck hur ni ställer in resedagång och tidsgränser för samtidighet, prior
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Frekvensbegränsning per kanal
 
