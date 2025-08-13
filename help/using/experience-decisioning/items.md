@@ -126,7 +126,7 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stege
 
    Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i fältet **[!UICONTROL Capping count limit]** skickas inga fler erbjudanden efter 10 utcheckningar.
 
-1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
+1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **&#x200B;**&#x200B;i det andra fältet.
 
    * Räknaren för frekvensbegränsning återställs kl. **12 UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **Söndag**. En varaktighet som du väljer får inte vara längre än **2 år** (d.v.s. motsvarande antal månader, veckor eller dagar).
 
