@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 32bc229e3d34e705d7f89530db9b3fbc3b136071
+source-git-commit: e8edafaff94ae9498f3d0eb3d696b38cd25e4c0a
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1662'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## 25 förhandsversionsinformation augusti {#25-8-rn}
 
 **Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 19 augusti 2025
 
@@ -281,6 +281,10 @@ Förbättringar i den här versionen visas nedan.
    * **Resemassåtgärder** - I listan över dina resor kan du nu välja flera objekt. När du har valt det här alternativet kan du pausa eller återuppta upp till 10 resor i taget.
 
    * **Stöd för omdirigering (302) i anpassade åtgärder** - Anpassade åtgärder kan nu hantera HTTP 302-omdirigeringar per begäran. På så sätt kan resor integreras med API:er som omdirigerar begäranden till lokaliserade eller regionspecifika URL:er. Omdirigeringar utförs automatiskt så att rätt innehåll levereras utan extra konfiguration.
+
+* **Datauppsättningar**
+
+   * **Objektarkiv för Experience Decisioning - personaliserade erbjudandeobjekt** - Inbyggd exportdatauppsättning hämtar nu alla erbjudandeattribut och livscykelstatus, vilket möjliggör fullständig personalisering och rapportering.
 
 ## Kampanjsamordning
 
