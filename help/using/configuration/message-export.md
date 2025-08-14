@@ -33,7 +33,7 @@ Med **meddelandeexport** kan du överföra skickat e-postmeddelande och SMS-medd
 
 >[!NOTE]
 >
->[!DNL Experience Platform] mål består av ett ramverk som gör det möjligt att leverera data från Experience Platform till externa slutpunkter. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home){target="_blank"}
+>[!DNL Experience Platform] mål består av ett ramverk som gör det möjligt att leverera data från Experience Platform till externa slutpunkter. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}
 
 Med den här funktionen skrivs innehållet i e-post- och SMS-meddelanden som skickas via [!DNL Journey Optimizer] och som har markerats för export till [!DNL Experience Platform] **AJO Message Export DataSet**.
 
@@ -41,7 +41,7 @@ Posterna sparas sedan i **AJO Message Export DataSet** i tre kalenderdagar, unde
 <!--
 ## Terminology
 
-* **[!DNL Experience Platform] destinations** - Framework to deliver data out of Experience Platform into external endpoints. [Learn more](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home){target="_blank"}
+* **[!DNL Experience Platform] destinations** - Framework to deliver data out of Experience Platform into external endpoints. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}
 * **AJO Message Export Dataset** - An [!DNL Experience Platform] dataset which stores the message content of email and SMS messages sent via [!DNL Journey Optimizer] which have been marked for export.
 * **Retention**: Records in the AJO Message Export Dataset are retained for 3 calendar days from ingestion.-->
 
@@ -70,9 +70,9 @@ Innan du kan exportera dina data måste du konfigurera exportprocessen genom att
 >
 >Den här inställningen måste konfigureras för varje sandlåda.
 
-1. Välj en [måltyp](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/destination-types) för Experience Platform. En lista över tillgängliga målplattformar som kan ta emot data finns tillgänglig på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview){target="_blank"}.
+1. Välj en [måltyp](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/destination-types) för Experience Platform. En lista över tillgängliga målplattformar som kan ta emot data finns tillgänglig på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview){target="_blank"}.
 
-1. I [!DNL Experience Platform] konfigurerar du målet genom att definiera autentiseringsuppgifter, bucket/container, sökvägsprefix och säkerhetsalternativ. [Lär dig hur](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/export-datasets){target="_blank"}
+1. I [!DNL Experience Platform] konfigurerar du målet genom att definiera autentiseringsuppgifter, bucket/container, sökvägsprefix och säkerhetsalternativ. [Lär dig hur](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets){target="_blank"}
 
 1. Skapa ett datauppsättningsexportflöde med följande data:
 
