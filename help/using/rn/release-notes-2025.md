@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: aa8c74de-748b-4947-a972-14703f6ab4a7
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+source-git-commit: 75c3db704853b8d2d8920ddd0086681d1fb02a93
 workflow-type: tm+mt
-source-wordcount: '4197'
+source-wordcount: '5113'
 ht-degree: 7%
 
 ---
@@ -18,6 +18,171 @@ ht-degree: 7%
 # Versionsinformation för 2025 {#release-notes-2025}
 
 På den här sidan visas alla funktioner och förbättringar för [!DNL Journey Optimizer] som släpptes 2025.
+
+## Versionsinformation juli 25 {#25-7-rn}
+
+**Releasedatum**: 29 juli 2025
+
+### Nya funktioner {#features-25-7}
+
+De nya funktionerna i den här versionen beskrivs nedan.
+
+#### Funktioner
+
+<table>
+<thead>
+<tr>
+<th><strong>Varumärken</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni skapa och anpassa era egna varumärken för att tydligt definiera er visuella och verbala identitet i alla slags kommunikation. Med varumärkesjusteringspoängen kan ni få feedback i realtid om hur väl ert innehåll speglar ert varumärkes ton, stil och riktlinjer, så att ni kan hålla er enhetliga med varje budskap ni skickar.</p>
+<p>Den här funktionen lanserades tidigare i Beta och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p><img src="assets/do-not-localize/brand-score.gif"/></p>
+<p>Mer information finns i den <a href="../content-management/brands.md">detaljerade dokumentationen</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Använd beslut i e-postkanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni lägga till beslutsprinciper i e-postresor och -kampanjer. Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem.</p>
+<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
+Mer information finns i <a href="../experience-decisioning/create-decision.md">detaljerad dokumentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>LINE-kanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer har utökat sina flerkanalsfunktioner så att de har stöd för LINE-kanalen. Den här förbättringen gör att du kan skapa, redigera och förhandsgranska LINE-upplevelser, vilket möjliggör mer personaliserade och engagerande interaktioner. Med LINE kan ni få kontakt med fler kunder, skicka relevant innehåll och förbättra engagemanget.</p>
+<p>LINE-kanalen är nu tillgänglig för alla användare (General Availability), som tidigare endast var tillgänglig för begäran.</p>
+<p>Mer information finns i den <a href="../../rp_landing_pages/line-landing-page.md">detaljerade dokumentationen</a>.</p></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Körning av resetorr</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live.</p>
+<img src="assets/do-not-localize/DryRun.gif">
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Mer information finns i <a href="../building-journeys/journey-dry-run.md">detaljerad dokumentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Kompletterande ID för resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du utlösa resor med ett profil-ID tillsammans med en annan identifierare, till exempel ett order-ID, ett prenumerations-ID eller ett förskrivnings-ID, vilket gör att samma profil kan finnas på samma resa flera gånger samtidigt. Detta möjliggör scenarier som att hantera flera order eller prenumerationer parallellt, där varje instans följer sin egen väg genom resan.</p>
+<p>Tidigare släppt i Begränsad tillgänglighet är användningen av extra ID:n på resor nu tillgänglig för alla miljöer. I den här allmänna tillgänglighetsversionen har funktionen nu stöd för målgruppsresor för läsning.</p>
+<p><img src="assets/do-not-localize/gif-supplemental.gif"/></p>
+<p>Mer information finns i <a href="../building-journeys/supplemental-identifier.md">detaljerad dokumentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Varningar i produkten
+
+Du kan nu prenumerera på **e-postmeddelanden och produktmeddelanden** för Journey Optimizer produktreleaser.
+
+Så här prenumererar du:
+
+* Navigera till **Adobe Experience Cloud-inställningar**
+* Under **Notifications**, sök efter **Journey Optimizer New Relases**
+* Aktivera meddelanden i programmet och e-postmeddelanden
+
+![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
+
+
+### Förändringar i resevillkor {#ee-change@}
+
+Från och med den 8 juli stöds inte längre skapande av uttryck med upplevelsehändelser i den uttrycksredigerare som används i resevillkor i nya kundorganisationer. Därför kan upplevelsehändelser i [Experience Platform-datakällan](../datasource/adobe-experience-platform-data-source.md) inte användas för att skapa uttryck. Alternativa metoder och bästa praxis för att skapa uttryck/logik med upplevelsehändelser refereras [här](../building-journeys/exp-event-lookup.md).
+
+Det finns ingen förändring i hur händelsedata om resans kontext nås på enstaka resor. I redigeringsprogram för uttryck och personalisering kan användarna fortsätta att komma åt data som skickas in vid den första resehändelsen.
+
+Läs mer [i de här vanliga frågorna](../building-journeys/exp-event-lookup.md#faq-ee).
+
+### Förbättringar {#25-7-improv}
+
+Förbättringar i den här versionen visas nedan.
+
+* **Kampanjer**
+
+   * **Flera inkommande åtgärder i kampanjer** - För att förenkla kampanjhanteringen kan du nu definiera flera inkommande åtgärder i en enda kampanj. Med den här funktionen kan ni leverera flera kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, och varje åtgärd innehåller ett visst innehåll.
+     [Läs mer](../campaigns/campaign-action.md#multi-action)
+
+   * **Omorganisation av kampanjinventering** - Schemalagda och API-utlösta kampanjer delas nu upp på separata flikar i kampanjlagret för enklare navigering och hantering.
+
+[Läs mer](../campaigns/modify-stop-campaign.md)
+
+* **Datahantering**
+   * **Datauppsättningar för beslutshanteringssystem** - De borttagna personliga erbjudandena och reserverbjudandena har nu markerats som arkiverade i datamängderna &quot;Decision_object_database_personalized_offers&quot; och &quot;Decision_object_database_fallback_offers&quot;. Befintliga poster i datauppsättningen ändras inte.
+
+[Läs mer](../offers/export-catalog/access-dataset.md)
+
+* **Resor**
+   * **Förbättringar av verktygslådan Resesandlåda** - När du kopierar resor över flera sandlådor med hjälp av funktionerna för paketexport och import är nu även följande funktioner tillgängliga:
+      * Välja en befintlig händelse på målet
+      * Kopiera över en händelse oberoende av en resa
+      * Identifiera fältgrupps-/datakällrelationer, länka till dem vid målet om de finns, och skapa dem om de inte gör det.
+
+[Läs mer](../configuration/copy-objects-to-sandbox.md)
+
+* **Kanal - i appen**
+   * **Nyckel-/värdepar i appen** - Med meddelanden i appen kan du definiera nyckel- och värdepar som ska innehålla anpassade variabler i meddelandets nyttolast. Dessa nyckelvärdepar gör att du kan skicka ytterligare data baserat på din specifika konfiguration och användningsfall. [Läs mer](../in-app/design-in-app.md)
+
+* **Kanal - Innehållskort**
+
+   * **Regelbaserad kampanjavvikelse** - Vid redigering av ytterligare leveransregler har det tidigare alternativet Leveransregler ersatts med tre olika regeltyper för bättre kontroll av meddelandetiming och synlighet:
+      * Visa meddelande om: Villkor som bestämmer när innehållskortet visas.
+      * Stäng meddelandet om: Villkor som tillfälligt döljer innehållskortet. Den kan visas igen om visningsvillkoren uppfylls igen.
+      * Diskvalificera meddelandet om: Villkor som permanent förhindrar att innehållskortet visas igen.
+
+[Läs mer](../content-card/design-content-card.md)
+
+* **Beslut**
+   * **API:er för migreringsverktyg** - Journey Optimizer-teamet arbetar för närvarande med migreringsverktygs-API:er för att migrera beslutshanteringsenheter till beslut. Detta verktyg möjliggör sömlös migrering mellan sandlådor med beroendeupplösning och återställningsfunktioner. Kontakta Adobe om du är intresserad.
+
+* **Personalization**
+   * En ny hjälpfunktion, &quot;SHA256&quot;, har lagts till i personaliseringsredigeraren. Den här funktionen används för att beräkna och returnera sha256-hash för en sträng.
+
+[Läs mer](../personalization/functions/string.md#sha256)
 
 
 ## Versionsinformation 25 juni {#25-6-rn}
@@ -939,7 +1104,7 @@ Mer information finns i den [detaljerade dokumentationen](../test-approve/approv
 
 **Affärsregler**
 
-Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 Som påminnelse är den dagliga frekvensbegränsningen i regeluppsättningar bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 
