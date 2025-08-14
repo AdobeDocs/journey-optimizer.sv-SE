@@ -8,13 +8,13 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
-source-git-commit: ad70e369dac61dc3ea261e7931c0b58e46c23dda
+exl-id: e1556c25-9c79-4362-a5a9-0a46425fa8d9
+source-git-commit: 1b4ab451ed9e2315ffe4850c6ab4b8ad20223ac3
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
-
 
 # Huvudparametrar {#email-header}
 
@@ -64,7 +64,7 @@ Om du får ett felmeddelande när du skickar e-postkonfigurationen betyder det a
 
 >[!NOTE]
 >
->Om underdomänen för den adress du angav är en domän som har [delegerats](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe kontaktar du din kontoansvarige på Adobe.
+>Om underdomänen för den adress du angav är en domän som har [delegerats](../configuration/delegate-subdomain.md#full-subdomain-delegation) till Adobe kontaktar du Adobe representant.
 
 ## Vidarebefordra e-post {#forward-email}
 
