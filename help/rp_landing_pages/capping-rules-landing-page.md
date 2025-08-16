@@ -30,7 +30,7 @@ Lär dig hur du skapar, hanterar och aktiverar regeluppsättningar för att styr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Resebegränsning och skiljedom
 
