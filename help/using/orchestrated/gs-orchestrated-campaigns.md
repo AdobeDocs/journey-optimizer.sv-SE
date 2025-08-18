@@ -2,13 +2,13 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med samordnade kampanjer
-description: Lär dig hur du börjar med samordnade kampanjer
-short-description: Identifiera samordnade kampanjfunktioner och användningsexempel.
+description: Lär dig hur du kommer igång med samordnade kampanjer
+short-description: Upptäck de viktigaste funktionerna för samordnade kampanjer samt användningsfall.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 source-git-commit: 4510cfde1579fbabe7deb1289f70f13ee21a3d4a
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
