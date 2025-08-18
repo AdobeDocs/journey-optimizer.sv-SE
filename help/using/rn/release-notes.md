@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 2afc9c4eb2a0433a22f1b369824086db2f5618ec
+source-git-commit: 5414f5a4c7bec643151f556375e0c58367d1c3bd
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## 25 förhandsversionsinformation augusti {#25-8-rn}
 
 **Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 19 augusti 2025
 
@@ -153,10 +153,10 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer ger er nu de verktyg ni behöver för att optimera era resor genom att utnyttja AI och experimenteringsramverk samtidigt som ni säkerställer smidig användbarhet och differentiering mellan villkor och optimeringsfunktioner.</p>
-<p>Använd banoptimering för att målinrikta, experimentera eller använda AI för att avgöra kommunikationssekvenser, hur lång tid det tar mellan dem, kombinationer av kanaler och allt du kan drömma om på arbetsytan.</p>
+<p><!--Journey Optimizer now empowers you with the tools to optimize your journeys by leveraging AI and experimentation frameworks while ensuring seamless usability and differentiation between condition and optimization functionalities.--></p>
+<p>Använd den nya Optimera-aktiviteten för att målinrikta, experimentera eller använda AI för att avgöra kommunikationssekvenser, hur lång tid det tar mellan dem, kombinationer av kanaler och allt du kan drömma om på arbetsytan.</p>
 <p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
-<p><!--img src="assets/do-not-localize/FILE.gif"/>--></p>
+<p><!--img src="assets/do-not-localize/optimize.gif"/>--></p>
 <p><!--For more information, refer to the <a href="../FILE.md">detailed documentation</a>--></p>
 </td>
 </tr>
