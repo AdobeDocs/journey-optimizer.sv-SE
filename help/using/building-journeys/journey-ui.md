@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1360'
 ht-degree: 2%
 
 ---
@@ -48,21 +48,11 @@ Fliken **[!UICONTROL Browse]** visar en lista över befintliga resor. Du kan sö
 
 ![kontrollpanelen för resan markerar fliken Bläddra](assets/journeys-browse.png)
 
+I reselistan visas alla reseversioner med versionsnumret. När du söker efter en resa visas de senaste versionerna högst upp i listan första gången programmet öppnas. Sedan kan du definiera den sortering som du vill ha så att programmet behåller den som en användarinställning. Färdens version visas också överst i reseupplagans gränssnitt, ovanför arbetsytan. Läs mer om [reseversionshantering](publishing-the-journey.md#journey-versions-journey-versions).
+
 ### Resekalender {#calendar}
 
 Utöver reselistan innehåller [!DNL Journey Optimizer] en kalendervy över dina resor, som ger en tydlig visuell representation av deras scheman.
-
->[!AVAILABILITY]
->
->Kalendervyn är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Använd [det här formuläret](https://forms.cloud.microsoft/r/FC49afuJVi){target="_blank"} om du vill begära åtkomst.
->
->Den här funktionen är under aktiv utveckling. Vi välkomnar dina indata och begäranden med knappen **[!UICONTROL Beta Feedback]** på den övre menyn.
-
-Om du vill komma åt kalendervyn öppnar du reselistan och klickar på ikonen ![kalenderikon](assets/do-not-localize/timeline-icon.svg) .
-
-I kalendern visas alla schemalagda resor för den aktuella veckan. Använd pilknapparna ovanför kalendern för att navigera mellan veckor.
-
-![kalendervy som visar direktresor](assets/timeline-journeys.png)
 
 Hur resorna presenteras:
 
@@ -72,10 +62,43 @@ Hur resorna presenteras:
 * Om ingen starttid anges används den närmaste manuella aktiveringstiden för att placera den i kalendern.
 * Resor visas som 1-timmars tidsintervall, men detta återspeglar inte den faktiska tiden för sändning eller slutförande.
 
-Om du vill ha mer information om en resa klickar du på det visuella blocket för att öppna och utforska dess detaljer.
+Så här navigerar du i din Jouryss-kalender:
 
-I reselistan visas alla reseversioner med versionsnumret. När du söker efter en resa visas de senaste versionerna högst upp i listan första gången programmet öppnas. Sedan kan du definiera den sortering som du vill ha så att programmet behåller den som en användarinställning. Färdens version visas också överst i reseupplagans gränssnitt, ovanför arbetsytan. Läs mer om [reseversionshantering](publishing-the-journey.md#journey-versions-journey-versions).
+1. Om du vill komma åt kalendervyn öppnar du reselistan och klickar på ikonen ![kalenderikon](assets/do-not-localize/timeline-icon.svg) .
 
+1. Använd pilknapparna eller datumväljaren ovanför kalendern för att flytta mellan veckor.
+
+   I kalendern visas alla schemalagda resor för den aktuella veckan.
+
+   ![kalendervy som visar direktresor](assets/timeline-journeys.png)
+
+1. Klicka på ![kugghjulsikonen](assets/do-not-localize/Smock_Gears_18_N.png) för att växla visningen av objekt som sträcker sig över flera dagar eller veckor.
+
+   ![kalendervy som visar aktiva kampanjer](assets/journey-calendar-1.png)
+
+1. Klicka på ikonen ![Lägg till kalender](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) för att hantera och lägga till upp till tre externa kalendrar.
+
+   ![kalendervy som visar externa kalendrar](assets/journey-calendar-2.png)
+
+1. Dra och släpp dina CSV-filer med händelsenamn, startdatum och slutdatum.
+
+   Överförda händelser visas för alla användare i din organisation och visas i både Resekalendrar och Campaign-kalendrar.
+
+   +++CSV-formatet ska vara följande:
+
+   | Kolumn1 | Kolumn2 | Column3 |
+   |-|-|-|
+   | Händelsenamn | Startdatum i formatet mm/dd/åå | Slutdatum i formatet mm/dd/åå |
+
+   +++
+
+1. Om det behövs kan du dölja, visa eller ta bort tillagda externa kalendrar.
+
+   ![kalendervy som visar externa kalendrar](assets/journey-calendar-3.png)
+
+1. Om du vill ha mer information om en resa klickar du på det visuella blocket för att öppna och utforska dess detaljer.
+
+   ![kampanjlista med informationsrutan öppnad](assets/journey-calendar-4.png)
 
 
 ## Filtrera dina resor {#journey-filter}
@@ -117,7 +140,7 @@ Resans status beror på dess livscykel. Den kan vara:
 * **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
 * **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** .
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [&#128279;](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
 * **Live**: resan har publicerats med knappen **Publicera** .
 * **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt.
 
@@ -144,3 +167,19 @@ Gör så här:
    ![](assets/duplicate-jo2.png)
 
 1. Den nya resan skapas och är tillgänglig i reselistan.
+
+
+## Massåtgärder {#bulk-operations}
+
+I listan över dina resor kan du pausa flera **Live**-resor. Om du vill pausa en grupp resor (_masspaus_) markerar du dem i listan och klickar på knappen **Paus** i det blå fältet längst ned på skärmen. Knappen **Paus** är bara tillgänglig när **Live**-resor har valts.
+
+![Pausa två direktresor i grupp från det nedre fältet](assets/bulk-pause-journeys.png)
+
+Du kan även återuppta en eller flera **pausade** resor. Om du vill återuppta en grupp av resor (_massåteruppta_) markerar du dem och klickar på knappen **Återuppta** i det blå fältet längst ned på skärmen. Observera att knappen **Återuppta** endast är tillgänglig när **Pausade** resor har valts.
+
+[Läs mer om att pausa/återuppta resor](journey-pause.md).
+
+>[!NOTE]
+>
+>Du kan pausa/återuppta till 10 resor per operation.
+

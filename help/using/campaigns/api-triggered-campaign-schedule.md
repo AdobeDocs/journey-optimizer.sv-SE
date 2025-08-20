@@ -8,17 +8,19 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
-source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+exl-id: e04b0d38-6b3d-4086-a0f0-c1b8f6d9634f
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 1%
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
-
 
 # Schemalägg den API-utlösta kampanjen {#api-schedule}
 
 Använd fliken **[!UICONTROL Schedule]** för att definiera kampanjschemat.
+
+## Ange start- och slutdatum
 
 API-utlösta kampanjer startar som standard när de utlöses och avslutas så snart meddelandet har skickats en gång. Om du inte vill köra kampanjen direkt efter att den har utlösts, kan du ange ett datum och en tidpunkt då meddelandet ska skickas med alternativet **[!UICONTROL Campaign start]**.
 
@@ -29,6 +31,16 @@ Med alternativet **[!UICONTROL Campaign end]** kan du ange när en kampanj ska s
 >[!NOTE]
 >
 >När du schemalägger kampanjer i [!DNL Adobe Journey Optimizer] måste du se till att startdatumet/starttiden är i linje med den önskade första leveransen.
+
+## Ange hastighetskontroll
+
+Med [!DNL Journey Optimizer] kan du aktivera hastighetskontroll för utgående åtgärder (e-post, SMS, push-meddelanden).
+
+Den här funktionen är särskilt användbar för att förhindra överbelastning i system längre fram i kedjan, som landningssidor eller kundtjänstplattformar. Du kan till exempel ange en hastighetsgräns på 165 meddelanden per sekund för att säkerställa stabil leverans utan överväldigande system i efterföljande led.
+
+Om du vill ange hastighetskontroll aktiverar du alternativet **[!UICONTROL Throttle delivery]** i avsnittet **[!UICONTROL Delivery settings]** och anger önskat **[!UICONTROL Delivery rate]**.
+
+![](assets/throttling-rate-control.png)
 
 ## Nästa steg {#next}
 

@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d6f74566-c913-4727-83b9-473a798a0158
-source-git-commit: 604af3a0ac9febb62f2e2b1705e2751b2c476e04
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,16 @@ Om du vill konfigurera Twilio med Journey Optimizer måste du skapa nya API-aute
 1. Klicka på bin-ikonen på menyn **[!UICONTROL API Credentials]** för att ta bort dina API-autentiseringsuppgifter.
 
 1. Om du vill ändra befintliga autentiseringsuppgifter letar du reda på de API-autentiseringsuppgifter du vill ha och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
+
+1. Klicka på **[!UICONTROL Verify SMS connection]**, bland dina befintliga API-autentiseringsuppgifter, för att testa och verifiera dina SMS API-autentiseringsuppgifter genom att skicka ett exempelmeddelande till en angiven enhet.
+
+1. Fyll i fälten **Number** och **Message** och klicka på **[!UICONTROL Verify connection]**.
+
+   >[!IMPORTANT]
+   >
+   >Meddelandet måste vara strukturerat så att det överensstämmer med leverantörens nyttolastformat.
+
+   ![](assets/verify-connection.png)
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalkonfiguration för SMS- och MMS-meddelanden. [Läs mer](sms-configuration-surface.md)
 

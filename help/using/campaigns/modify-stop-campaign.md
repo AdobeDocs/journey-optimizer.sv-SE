@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -140,16 +140,6 @@ När ett fel inträffar inom en av era kampanjer visas en varningsikon bredvid k
 
 Förutom kampanjlistan innehåller [!DNL Journey Optimizer] en kalendervy över dina kampanjer, som ger en tydlig visuell representation av deras scheman.
 
->[!AVAILABILITY]
->
->Kalendervyn är för närvarande bara tillgänglig för Action- och API-utlösta kampanjer för en uppsättning organisationer (begränsad tillgänglighet). Använd [det här formuläret](https://forms.cloud.microsoft/r/FC49afuJVi){target=”_blank”} om du vill begära åtkomst.
->
->Den här funktionen är under aktiv utveckling. Vi välkomnar dina indata och begäranden med knappen **[!UICONTROL Beta Feedback]** på den övre menyn.
-
-I kalendern visas alla kampanjer som är schemalagda för den aktuella veckan. Använd pilknapparna ovanför kalendern för att navigera mellan veckor.
-
-![kalendervy som visar aktiva kampanjer](assets/campaigns-timeline.png)
-
 Hur kampanjer presenteras:
 
 * Som standard visar kalenderrutnätet alla aktiva och schemalagda kampanjer för den valda veckan. Ytterligare filteralternativ kan visa slutförda, stoppade och avslutade aktiveringar eller aktiveringar av en viss typ eller kanal.
@@ -158,11 +148,43 @@ Hur kampanjer presenteras:
 * Om ingen starttid anges används den närmaste manuella aktiveringstiden för att placera den i kalendern.
 * Kampanjer visas som 1-timmars tidsintervall, men detta återspeglar inte den faktiska tiden för sändning eller slutförande.
 
-Om du vill ha mer information om en kampanj klickar du på det synliga blocket för att öppna detaljer om den.
+Så här navigerar du i din kampanjkalender:
 
-Om du vill visa information om en viss kampanj väljer du den i listan. En informationsruta öppnas med olika information om kampanjen, t.ex. typ, åtkomst till rapporter eller taggar som har tilldelats.
+1. Klicka på ikonen ![kalender](assets/do-not-localize/Smock_Calendar_18_N.svg) för att komma åt din kampanjkalender.
 
-![kampanjlista med informationsrutan öppnad](assets/campaign-rail.png)
+1. Använd pilknapparna eller datumväljaren ovanför kalendern för att flytta mellan veckor.
+
+   I kalendern visas alla kampanjer som är schemalagda för den aktuella veckan.
+
+   ![kalendervy som visar aktiva kampanjer](assets/campaigns-timeline.png)
+
+1. Klicka på ![kugghjulsikonen](assets/do-not-localize/Smock_Gears_18_N.png) för att växla visningen av objekt som sträcker sig över flera dagar eller veckor.
+
+   ![kalendervy som visar aktiva kampanjer](assets/campaign-long-term.png)
+
+1. Klicka på ikonen ![Lägg till kalender](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) för att hantera och lägga till upp till tre externa kalendrar.
+
+   ![kalendervy som visar externa kalendrar](assets/campaign-external-calendar.png)
+
+1. Dra och släpp dina CSV-filer med händelsenamn, startdatum och slutdatum.
+
+   Överförda händelser visas för alla användare i din organisation och visas i både Resekalendrar och Campaign-kalendrar.
+
+   +++CSV-formatet ska vara följande:
+
+   | Kolumn1 | Kolumn2 | Column3 |
+   |-|-|-|
+   | Händelsenamn | Startdatum i formatet mm/dd/åå | Slutdatum i formatet mm/dd/åå |
+
+   +++
+
+1. Om det behövs kan du dölja, visa eller ta bort tillagda externa kalendrar.
+
+   ![kalendervy som visar externa kalendrar](assets/campaign-manage-calendar.png)
+
+1. Om du vill ha mer information om en kampanj klickar du på det synliga blocket för att öppna detaljer om den. En informationsruta öppnas med olika information om kampanjen, t.ex. typ, åtkomst till rapporter eller taggar som har tilldelats.
+
+   ![kampanjlista med informationsrutan öppnad](assets/campaign-rail.png)
 
 ## Ändra och stoppa återkommande åtgärdskampanjer {#modify}
 

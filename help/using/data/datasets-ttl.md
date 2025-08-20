@@ -8,9 +8,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 08633a79-5601-4e36-b8cf-080234956d99
-source-git-commit: b27ddcc88ca4b4209c9d29974a0b0d0dbe98cc94
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -45,47 +45,48 @@ Tabellen nedan listar alla påverkade datauppsättningar och deras respektive Ti
 | Beslutsobjektarkiv - reserverbjudanden | 13 månader | n/a |
 | Beslutsobjektsdatabas - placeringar | 13 månader | n/a |
 | Repositionen för beslutsobjekt - aktiviteter | 13 månader | n/a |
+| Objektarkiv för Experience Decision - personaliserade erbjudanden | 13 månader | n/a |
 | ODE-beslutHändelser - preliminär beslut | 13 månader | n/a |
 
 ## Vanliga frågor {#faq}
 
 Nedan följer en lista med svar på vanliga frågor om datauppsättningens TLL.
 
-+++Kommer den här ändringen endast att gälla för produktionssandlådor eller kommer den även att gälla för dev-sandlådor?
++++Gäller den här ändringen endast för produktionssandlådor eller gäller den även för dev-sandlådor?
 
 Den här ändringen gäller för alla sandlådetyper.
 
 +++
 
-+++ För den 90-dagars TTL i profilbutiken påverkas själva profilerna?
++++Påverkas själva profilerna för den 90-dagars TTL-värdet i profilbutiken?
 
 Systemgenererade data i profilen tas bort efter 90 dagar, inte själva profilerna.
 
 +++
 
-+++Om en systemgenererad datauppsättning skickas till [!DNL Customer Journey Analytics] (CJA), kommer data i CJA också att påverkas av TTL-värdet?
++++Om ett systemgenererat datauppsättningsdata skickas till [!DNL Customer Journey Analytics] (CJA), kommer data i CJA också att påverkas av TTL-värdet?
 
 Data i [!DNL Customer Journey Analytics] är synkroniserade med Experience Platform. En borttagning av data på grund av en TTL på systemgenererade datauppsättningsdata kommer därför också att påverka data i [!DNL Customer Journey Analytics].
 
 +++
 
-+++ Kan kunder öka TTL-värdet för [!DNL Journey Optimizer]-systemdatauppsättningsdata i profilarkivet?
++++ Kan kunder öka TTL-värdet för [!DNL Journey Optimizer]-systemdatauppsättningsdata i profilarkivet? 
 
 TTL-tillägg stöds för närvarande inte. Det finns dock planer på att optimera TTL-processen för att tillåta dessa tilläggsbegäranden någon gång från och med det senare halvåret 2025.
 
 >[!NOTE]
 >
->Data som lagras i profilen omfattas av berättigandet Total Data Volume. Alla datalagringsökningar i profilen som ett resultat av ett TTL-tillägg räknas därför av mot det totala datavolymtillståndet. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html?lang=sv-SE){target=_blank}
+>Data som lagras i profilen omfattas av berättigandet Total Data Volume. Alla datalagringsökningar i profilen som ett resultat av ett TTL-tillägg räknas därför av mot det totala datavolymtillståndet. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target=&quot;_blank}
 
 +++
 
-+++Kan kunder öka TTL-värdet för [!DNL Journey Optimizer]-systemdatauppsättningsdata i datasjön?
++++Kan kunder öka TTL-värdet för [!DNL Journey Optimizer]-systemdatauppsättningsdata i datasjön? 
 
-TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=sv-SE){target=_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/derived-datasets/overview){target=_blank}
+TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target=&quot;_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target=&quot;_blank}
 
 +++
 
-+++Kommer följande funktioner att påverkas av TTL:er?
++++Kommer följande funktioner att påverkas av TTL:er? 
 
 * **Sök efter butik**: Nej
 * **Resekurser**: Nej
@@ -105,7 +106,7 @@ TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Desti
 
 +++
 
-+++Vilken tidsstämpel används för TTL-användning (t.ex. för bakåtfyllnad)?
++++Vilken tidsstämpel används för att kontrollera TTL (t.ex. för bakåtfyllnad)? 
 
 Händelsens tidsstämpel används (dvs. inte datumet för inmatningen).
 

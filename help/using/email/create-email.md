@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 29532b5ebd140f9609a29c1375ceedecf55d0dfb
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
    >[!AVAILABILITY]
    >
-   >För närvarande är det inte möjligt för organisationer som köpt Adobe Healthcare Shield eller tillägg till Privacy and Security Shield att skapa policy i e-postmeddelanden.
+   >För närvarande kan man skapa policy i e-postmeddelanden med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
 
 1. Kontrollera fälten **[!UICONTROL Header]**, **[!UICONTROL From name]** och **[!UICONTROL From email]** i avsnittet **[!UICONTROL BCC]**. De konfigureras i den e-postkonfiguration som du har valt. [Läs mer](email-settings.md) <!--check if same for journey-->
 

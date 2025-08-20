@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,23 @@ Följ de här stegen för att skicka SMS- och RCS-meddelanden i Journey Optimize
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
-1. Klicka på ![bin-ikonen](assets/do-not-localize/Smock_Delete_18_N.svg) på menyn **[!UICONTROL API Credentials]** för att ta bort dina API-autentiseringsuppgifter.
+1. Klicka på **[!UICONTROL API Credentials]** bin-ikonen![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort dina API-autentiseringsuppgifter.
 
    ![](assets/sms_byo_3.png)
 
 1. Om du vill ändra befintliga autentiseringsuppgifter letar du reda på de API-autentiseringsuppgifter du vill ha och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
 
    ![](assets/sms_byo_4.png)
+
+1. Klicka på **[!UICONTROL Verify SMS connection]**, bland dina befintliga API-autentiseringsuppgifter, för att testa och verifiera dina SMS API-autentiseringsuppgifter genom att skicka ett exempelmeddelande till en angiven enhet.
+
+1. Fyll i fälten **Number** och **Message** och klicka på **[!UICONTROL Verify connection]**.
+
+   >[!IMPORTANT]
+   >
+   >Meddelandet måste vara strukturerat så att det överensstämmer med leverantörens nyttolastformat.
+
+   ![](assets/verify-connection.png)
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu konfigurera [inställningarna för inkommande trafik för Webkrok](#webhook) för SMS-meddelanden.
 
@@ -189,7 +199,7 @@ När API-autentiseringsuppgifterna har skapats är nästa steg att skapa en webk
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din webkrok.
 
-1. Klicka på ikonen ![bin](assets/do-not-localize/Smock_Delete_18_N.svg) på menyn **[!UICONTROL Webhooks]** för att ta bort webkroken.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
 
 1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
 

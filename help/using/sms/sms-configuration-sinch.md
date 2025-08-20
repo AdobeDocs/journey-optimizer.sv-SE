@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
-source-git-commit: 604af3a0ac9febb62f2e2b1705e2751b2c476e04
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '1052'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
 
 1. Konfigurera dina SMS API-autentiseringsuppgifter enligt nedanstående:
 
-+++ Lista över SMS-autentiseringsuppgifter för konfiguration
+   +++ Lista över SMS-autentiseringsuppgifter för konfiguration
 
    | Konfigurationsfält | Beskrivning |
    |---|---|    
@@ -57,20 +57,34 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
    | Avanmäl meddelande | Ange det anpassade svar som automatiskt skickas som ditt avanmälningsmeddelande. |
    | Hjälpnyckelord | Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt **hjälpmeddelande**. Använd kommaseparerade värden för flera nyckelord. |
    | Hjälpmeddelande | Ange det anpassade svar som automatiskt skickas som **hjälpmeddelande**. |
-   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3440280/?learn=on&captions=swe). |
+   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3427129/?learn=on). |
    | Dubbelt meddelande om anmälan | Ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan. |
    | Ingående nummer | Lägg till ditt unika inkommande nummer eller din korta kod. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer eller kort kod. |
    | Anpassade inkommande nyckelord | Definiera unika nyckelord för specifika åtgärder, t.ex. RABATT, ERBJUDANDEN, REGISTRERING. Dessa nyckelord fångas in och lagras som attribut i profilen, vilket gör att du kan aktivera en segmentkvalificering för direktuppspelning under resan och leverera ett anpassat svar eller en anpassad åtgärd. |
    | Standardsvarsmeddelande för inkommande trafik | Ange standardsvaret som skickas när en slutanvändare skickar ett inkommande SMS som inte matchar något av de definierade nyckelorden. |
    | Åsidosätt URL | Ange din anpassade URL för att ersätta standardslutpunkterna för SMS-leveransrapporter, feedbackdata, inkommande meddelanden eller händelsemeddelanden. Sinch skickar alla relevanta uppdateringar till den här URL:en i stället för de fördefinierade. |
 
-+++
+   +++
+
+1. Aktivera alternativet **[!UICONTROL Fuzzy Opt-out]** för att identifiera meddelanden som liknar nyckelord för avanmälan (t.ex. &quot;CANCIL&quot;) och anpassa bekräftelsemeddelandet i fältet **[!UICONTROL Fuzzy Auto Reply]**.
+
+   **[!UICONTROL Fuzzy Opt-out]** identifierar SMS-meddelanden som anger att en användare vill avbryta prenumerationen, även om meddelandet inte exakt matchar ett definierat avanmälningsnyckelord. Det kan identifiera vanliga avanmälningsfraser och vissa stötande termer, vilket kan säkerställa att era kampanjer respekterar användarnas preferenser och följer de gällande reglerna.
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
 1. Klicka på bin-ikonen på menyn **[!UICONTROL API Credentials]** för att ta bort dina API-autentiseringsuppgifter.
 
 1. Om du vill ändra befintliga autentiseringsuppgifter letar du reda på de API-autentiseringsuppgifter du vill ha och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
+
+1. Klicka på **[!UICONTROL Verify SMS connection]**, bland dina befintliga API-autentiseringsuppgifter, för att testa och verifiera dina SMS API-autentiseringsuppgifter genom att skicka ett exempelmeddelande till en angiven enhet.
+
+1. Fyll i fälten **Number** och **Message** och klicka på **[!UICONTROL Verify connection]**.
+
+   >[!IMPORTANT]
+   >
+   >Meddelandet måste vara strukturerat så att det överensstämmer med leverantörens nyttolastformat.
+
+   ![](assets/verify-connection.png)
 
 När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du nu skapa en kanalkonfiguration för SMS-meddelanden. [Läs mer](sms-configuration-surface.md)
 

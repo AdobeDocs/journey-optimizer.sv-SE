@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: b1de82a4fdba58880e21b114ec3d2b9c3c81df0c
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1843'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,24 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 
 1. I fältet **Taggar** kan du tilldela enhetliga Adobe Experience Platform-taggar till dina beslutsobjekt. På så sätt kan du enkelt klassificera dem och förbättra sökningen. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
 
+1. Använd fragment för att lägga till flera innehåll i beslutsobjektet, till exempel om du vill visa olika innehåll för flera mobila enhetsmodeller. [Läs mer om fragment](../content-management/fragments.md)
+
+   >[!AVAILABILITY]
+   >
+   >Fragment i beslutsobjekt är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
+
+   I avsnittet **[!UICONTROL Fragments]** markerar du de publicerade fragment som du vill använda och tilldelar dem en referensnyckel. Sedan kan ni utnyttja dessa fragment i er beslutspolicy. [Lär dig hur](create-decision.md#fragments)
+
+   ![](assets/item-fragments.png){width=70%}
+
+   Du kan bara markera publicerade fragment och lägga till upp till sex fragment i ett beslutsobjekt.
+
+   >[!WARNING]
+   >
+   >För närvarande stöds bara [uttrycksfragment](../personalization/use-expression-fragments.md).
+   >
+   >Kapslade fragment (fragment som refererar till andra fragment) kan inte användas. Beslutsobjektets [godkännande](#approve) misslyckas om du lägger till ett sådant fragment.
+
 1. Ange anpassade attribut (valfritt). Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De definieras i beslutsobjektens katalogschema. [Lär dig arbeta med kataloger](catalogs.md)
 
 1. När beslutsobjektets attribut har definierats klickar du på **[!UICONTROL Next]**.
@@ -62,8 +80,8 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 >id="ajo_exd_item_constraints"
 >title="Lägga till målgrupper eller beslutsregler"
 >abstract="Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart vissa profiler."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Använd beslutsregler"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Använd beslutsregler"
 
 Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart specifika profiler, båda lösningarna som motsvarar olika användningar. Expandera avsnittet nedan om du vill ha mer information:
 
@@ -125,7 +143,7 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stege
 
    Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i fältet **[!UICONTROL Capping count limit]** skickas inga fler erbjudanden efter 10 utcheckningar.
 
-1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **&#x200B;**&#x200B;i det andra fältet.
+1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
 
    * Räknaren för frekvensbegränsning återställs kl. **12 UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **Söndag**. En varaktighet som du väljer får inte vara längre än **2 år** (d.v.s. motsvarande antal månader, veckor eller dagar).
 
@@ -137,14 +155,16 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stege
 
    ![](assets/item-capping-rules.png)
 
+<!--* Identifying how many times a given customer has been shown a decision item. 
+If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event-->
+
+## Granska och godkänn beslutsposten {#approve}
+
 1. När du har definierat beslutsobjektets regler för behörighet och begränsning klickar du på **[!UICONTROL Next]** för att granska och spara objektet.
 
 1. Beslutsobjektet visas nu i listan med statusen **[!UICONTROL Draft]**. Klicka på ellipsknappen och välj **[!UICONTROL Approve]** när det är klart att visas för profiler.
 
    ![](assets/item-approve.png)
-
-<!--* Identifying how many times a given customer has been shown a decision item. 
-If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event-->
 
 ## Hantera beslutsobjekt {#manage}
 

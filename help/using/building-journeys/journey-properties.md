@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
-source-git-commit: 7d5d27d9509dd80fece2e360d58437d26df7c4de
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2713'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Hanteringen av profilentréer beror på typen av resa. Läs mer om hantering av 
 >id="ajo_journey_properties_entrance"
 >title="Tillåt återinträde"
 >abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** till exempel om du vill erbjuda en engångspresentation när en person går in i en affär."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går till en affär.
 
@@ -72,7 +72,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Vänteperiod för återinträde"
 >abstract="Ställ in väntetiden innan du tillåter att en profil går in på resan igen med enhetsresor. Detta förhindrar att användarna kommer in på resan igen under en viss tid. Maximal varaktighet: 90 dagar."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återkommande vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
@@ -252,7 +252,7 @@ Adobe Journey Optimizer använder sammanfogningsprinciper när profildata hämta
 
 Adobe Journey Optimizer tillämpar den kopplingsregel som används under hela kundresan. Om flera målgrupper används i en resa (till exempel med in [`inAudience`-funktioner](functions/functioninaudience.md)) skapas därför inkonsekvenser med den sammanfogningsprincip som används för resan. Ett fel genereras och publikationen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
-Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 >[!NOTE]
 >
@@ -262,10 +262,10 @@ Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-do
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_exit_criterias"
->title="Utträdeskriterier för resor"
->abstract="I det här avsnittet visas alternativen för avslutningskriterier. Du kan skapa en eller flera regler för avslutningskriterier för din resa."
+>title="Avslutningskriterier"
+>abstract="I det här avsnittet visas alternativen för avslutningskriterier. Du kan skapa en eller flera regler och filter för utförselvillkor för din resa."
 
-### Beskrivning {#exit-criteria-desc}
+### Villkor för avresa {#exit-criteria-desc}
 
 Genom att lägga till kriterier för att avsluta resan gör du så att profilerna avslutas så snart en händelse inträffar (t.ex. köp) eller så kvalificerar de sig för en viss målgrupp. Detta förhindrar användaren från att få ut mer information från resan.
 
@@ -275,7 +275,7 @@ Du kanske vill ta bort profiler från en resa när de inte längre uppfyller res
 
 En marknadsförare har en marknadsföringsresa som har en serie kommunikationer. Alla dessa meddelanden syftar till att få kunden att göra ett inköp. Så snart köpet är klart bör kunden inte få resten av meddelandena i serien. Genom att definiera ett avslutningskriterium tas alla profiler som har gjort ett köp bort från resan.
 
-### Konfiguration och användning {#exit-criteria-config}
+#### Konfiguration och användning {#exit-criteria-config}
 
 Avslutskriterier ställs in på resenivå. En resa kan ha flera exitkriterier. Om du har angett flera avslutsvillkor utförs utvärderingen uppifrån och ned med en `OR`-logik. Om du har avslutningskriterier A och avslutningskriterier B utvärderas det därför som A **OR** B. Kriterierna utvärderas under varje steg av resan.
 
@@ -296,12 +296,39 @@ Du kan lägga till flera avslutningskriterier.
 
 ![](assets/exitcriteria-sample.png){width="40%" align="left"}
 
+
+### Profilattributsbaserade avslutningskriterier {#profile-exit-criteria}
+
+Profilattributsbaserade villkor för utträde ger dig större kontroll över pausade resor genom att du kan definiera regler som automatiskt tar bort specifika profiler innan resan återupptas. Du kan ange avslutningsvillkor baserat på profilattribut, t.ex. plats, status eller inställningar, för att säkerställa att endast relevanta profiler fortsätter under resan efter att den har återupptagits.
+
+Du kan till exempel [pausa en resa](journey-pause.md), lägga till ett avslutningsvillkor för att ta bort alla profiler som finns i Frankrike och återuppta resan i vetskap om att profilerna kommer att uteslutas i nästa steg. Denna logik gäller både profiler som redan är på resan och alla nya profiler som kvalificerar sig efter att resan har återupptagits.
+
+Den här funktionen fungerar tillsammans med funktionerna Paus/Återuppta, vilket gör att du kan hantera resorna på ett säkrare och flexiblare sätt. Det minimerar manuella ingrepp, minskar risken för att skicka irrelevant eller icke-kompatibel kommunikation och ser till att kundens kundresa hålls i linje med aktuella affärskrav.
+
+Läs det här avsnittet för att lära dig hur du [använder villkor för att avsluta profilattribut på pausade resor](journey-pause.md#apply-a-global-filter-to-profiles-in-a-paused-journey).
+
 ### Skyddsritningar och begränsningar {#exit-criteria-guardrails}
 
-Följande skyddsförslag och begränsningar gäller för möjligheten att avsluta resan:
+Följande skyddsutkast och begränsningar gäller för funktionen [Villkor för avslut från resa](#exit-criteria-desc):
 
 * Utgångskriterier definieras endast i utkastläge
 * Samstämmighet mellan händelser och händelsebaserade kriterier för utträde på resan
+
+Följande skyddsutkast gäller när du använder funktionen [Profilattributsbaserade avslutningsvillkor](#profile-exit-criteria):
+
+* **Utgångsvillkor gäller på åtgärdsnivå**\
+  Utgångsvillkoren för profilattribut utvärderas endast i steg om åtgärder. Till skillnad från andra typer av avslutningskriterier gäller de inte globalt under hela resan.\
+  Om du återupptar en resa och vissa profiler uppfyller avslutningsvillkoret, kommer de profilerna att uteslutas vid nästa åtgärdsnod.\
+  Nya profiler som kommer in på resan efter återupptagandet utvärderas och utesluts vid den första åtgärdsnoden, om de uppfyller villkoret.
+
+* **En profilbaserad avslutsregel per resa**\
+  Du kan bara definiera ett avslutande villkor för profilattribut per resa. Denna begränsning bidrar till att bibehålla klarheten och undviker konflikter i reselogiken.
+
+* **Endast tillgänglig på pausade resor**\
+  Du kan bara lägga till eller redigera slutvillkor för profilattribut när resan pausas.
+
+   * I ett **utkast** visas alternativet *Profilattribut* inaktiverat (skrivskyddat), medan alternativen *Händelse* och *målgrupp* fortfarande är aktiva.
+   * I en **pausad resa** går det att redigera alternativet *Profilattribut* och alternativen *Händelse* och *målgrupp* blir skrivskyddade.
 
 ## Reseschema {#schedule}
 

@@ -6,12 +6,11 @@ description: Lär dig pausa och återuppta en Live-resa
 feature: Journeys
 role: User
 level: Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
-source-git-commit: 9db476ff5b693bef91e982502c6dd37321610fc7
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -23,11 +22,8 @@ ht-degree: 0%
 >title="Pausa din resa"
 >abstract="Pausa en live-resa för att förhindra att nya profiler kommer in. Välj om du vill ta bort profiler som finns på resan eller behålla dem på plats. Om de behålls kommer de att återuppta körningen vid nästa åtgärdsaktivitet när resan har startats om. Perfekt för uppdateringar eller nödstopp utan att förlora några framsteg."
 
-Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Under pausen kan du [använda globala filter](#journey-global-filters) för att exkludera profiler baserat på deras attribut. Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
+Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Under pausen kan du [använda avslutningskriterier för profilattribut](#journey-global-filters) för att exkludera profiler baserat på deras attribut. Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
 
->[!AVAILABILITY]
->
->Den här funktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet) och kommer att lanseras globalt i en framtida version.
 
 
 ## Viktiga fördelar {#journey-pause-benefits}
@@ -65,11 +61,15 @@ Så här pausar du din resa:
 
 1. Bekräfta genom att klicka på knappen **Paus**.
 
+Det maximala antalet profiler som kan hållas på pausade resor för din organisation visas i reseinventeringen. Den syns bara när minst en resa är pausad. Denna indikator visar också det totala antalet pausade resor. Den uppdateras var 30:e minut. Mer information finns i [GuarDRAils and Limitation](#guardrails-and-limitations).
+
+![Antal pausade resor och profiler som pausats](assets/profiles-in-paused-journeys.png){width="50%" align="left"}
+
 I listan över dina resor kan du pausa en eller flera **Live**-resor. Om du vill pausa en grupp resor (_masspaus_) markerar du dem i listan och klickar på knappen **Paus** i det blå fältet längst ned på skärmen. Knappen **Paus** är bara tillgänglig när **Live**-resor har valts.
 
 ![Pausa två direktresor i grupp från det nedre fältet](assets/bulk-pause-journeys.png)
 
-### Beteende vid pausade resor
+## Logik för körning av pausade resor {#journey-pause-exec}
 
 När en resa pausas, förkastas alltid färska ingångar, oavsett om de är i läget Håll kvar eller Kasta.
 
@@ -113,23 +113,23 @@ Så här återupptar du en pausad resa och börjar lyssna på resehändelser ige
 I listan över dina resor kan du återuppta en eller flera **Pausade** resor. Om du vill återuppta en grupp av resor (_massåteruppta_) markerar du dem och klickar på knappen **Återuppta** i det blå fältet längst ned på skärmen. Observera att knappen **Återuppta** endast är tillgänglig när **Pausade** resor har valts.
 
 
-## Tillämpa ett globalt filter på profiler i en pausad resa {#journey-global-filters}
+## Använda ett utträdesvillkor i en pausad resa {#journey-global-filters}
 
-När en resa pausas kan du använda ett globalt filter baserat på profilattribut. Det här filtret gör att profiler som matchar det definierade uttrycket utesluts vid återupptagningstid. När det globala filtret är inställt kommer det att tillämpas på åtgärdsnoder, även för nya profiler. Befintliga profiler som matchar villkoren och nya profiler som går in på resan kommer att exkluderas från resan **på nästa åtgärdsnod** som påträffas.
+När en resa pausas kan du använda ett avslutningskriterium baserat på profilattribut. Det här filtret gör att profiler som matchar det definierade uttrycket utesluts vid återupptagningstid. När de profilattributbaserade avslutningskriterierna har angetts kommer de att tillämpas på åtgärdsnoder, även för nya profilentréer. Befintliga profiler som matchar villkoren och nya profiler som går in på resan kommer att exkluderas från resan **på nästa åtgärdsnod** som påträffas.
 
 Så här utesluter du till exempel alla franska kunder från en pausad resa:
 
 1. Bläddra till den pausade resa som du vill ändra.
 
-1. Välj ikonen **Avsluta villkor och globalt filter** .
+1. Välj ikonen **Avsluta villkor** .
 
-   ![Lägg till ett globalt filter för en pausad resa](assets/add-global-filter.png)
+   ![Lägg till ett avslutande villkor för profilattribut i en pausad resa](assets/add-global-filter.png)
 
-1. Klicka på **Lägg till globalt filter** i inställningarna för **Avsluta villkor och globalt filter** för att definiera ett filter baserat på profilattribut.
+1. Klicka på **Lägg till avslutsvillkor** i inställningarna för **Avsluta villkor** för att definiera ett filter baserat på profilattribut.
 
 1. Ange uttrycket för att exkludera profiler där landattributet är lika med Frankrike.
 
-   ![Lägg till ett globalt filter för en pausad resa](assets/add-country-filter.png)
+   ![Lägg till ett avslutande villkor för profilattribut i en pausad resa](assets/add-country-filter.png)
 
 1. Spara filtret och klicka på knappen **Uppdatera resa** för att tillämpa ändringarna.
 
@@ -137,13 +137,15 @@ Så här utesluter du till exempel alla franska kunder från en pausad resa:
 
    Vid CV utesluts alla profiler med landattributet inställt på Frankrike automatiskt från resan vid nästa åtgärdsnod. Alla nya profiler med landattributet inställt på Frankrike som försöker ta sig in på resan blockeras också vid nästa åtgärdsnod.
 
-Observera att uteslutning av profiler för närvarande på resan och för nya profiler endast sker när de når en åtgärdsnod.
+Observera att profilundantag för profiler som för närvarande är på resan och för nya profiler bara inträffar **när de når en åtgärdsnod**.
 
 >[!CAUTION]
 >
->* Du kan bara ange **ett** globalt filter per resa.
+>* Du kan bara ange **ett**-profilattributbaserade avslutningskriterier per resa.
 >
->* Du kan bara skapa, uppdatera eller ta bort ett globalt filter på **Pausade** resor.
+>* Du kan bara skapa, uppdatera eller ta bort ett profilattributsbaserat avslutningsvillkor i **Pausade** resor.
+>
+>* Läs mer om det profilattributbaserade avslutningskriteriet [i det här avsnittet](journey-properties.md#profile-exit-criteria).
 
 ## Skyddsritningar och begränsningar {#journey-pause-guardrails}
 
@@ -169,7 +171,8 @@ Den här gränsen kontrolleras var 30:e minut. Detta innebär att du tillfällig
    * Ignorera affärshändelser för **Läs målgrupp**
    * **Jobb för läsning av målgrupp** tas bort på grund av pausad resa
    * Händelser ignorerades när aktiviteten **Event** utfördes efter en åtgärd där profilen väntade
-     <!--* There is a guardrail (at an org level) on the max number of profiles that can be held in paused journeys. This guardrail is per org, and is visible in the journey inventory on a new bar (only visible when there are paused journeys).-->
+
+
 
 ## Exemplet från början till slut {#journey-pause-sample}
 

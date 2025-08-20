@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_throttling"
->title="Kontroll av begränsningsfrekvens"
->abstract="Kontroll av begränsningsfrekvens"
+>title="Kurskontroll"
+>abstract="Ange hastighetskontroll för kampanjen genom att ange önskade hastighetsbegränsningar. Den här funktionen är särskilt användbar för att förhindra överbelastning i system längre fram i kedjan, som landningssidor eller kundtjänstplattformar."
 
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card3"
@@ -121,7 +121,7 @@ Om du inte kan komma åt kampanjfunktioner kontaktar du administratören för at
 
 1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 

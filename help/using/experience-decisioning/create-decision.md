@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 229fb3d120727b51e011d8056f8d914c7968f2d0
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '2435'
+source-wordcount: '2679'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_decision_policy"
 >title="Definiera en beslutspolicy"
 >abstract="Med en beslutspolicy kan ni välja ut de bästa elementen från beslutsmotorn och leverera dem till rätt målgrupp."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_policy"
@@ -91,7 +91,7 @@ De viktigaste stegen för att utnyttja beslutsstrategier i era budskap är följ
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för mottagarna och besökarna i dina e-postmeddelanden på din webbplats eller i din mobilapp lägger du till en beslutspolicy i ett e-postmeddelande eller en kodbaserad kampanj eller resa. Följ stegen nedan för att göra det.
 
@@ -138,7 +138,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för mott
 
    För e-postmeddelanden kan flera objekt bara returneras i en **[!UICONTROL Repeat grid]**-innehållskomponent. Expandera avsnittet nedan om du vill ha mer information:
 
-+++ Returnera flera beslutsobjekt i e-postmeddelanden
+   +++ Returnera flera beslutsobjekt i e-postmeddelanden
 
    1. Dra en **[!UICONTROL Repeat Grid]**-komponent till arbetsytan och konfigurera den som du vill med hjälp av rutan **[!UICONTROL Settings]**.
 
@@ -150,7 +150,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för mott
 
    ![](assets/decision-policy-repeat-number.png)
 
-+++
+   +++
 
 1. Klicka på **[!UICONTROL Next]**.
 
@@ -277,13 +277,13 @@ Du kan redigera eller ta bort en beslutsprincip när som helst med hjälp av ell
 
 När du väl har skapat en beslutspolicy och de attribut som är kopplade till de returnerade beslutsposterna kan du använda i ditt innehåll för att anpassa ditt innehåll. Gör så här:
 
-### Infoga beslutsprincipkoden {#insert-code}
+### Infoga koden för beslutspolicy {#insert-code}
 
 1. Öppna anpassningsredigeraren och gå till menyn **[!UICONTROL Decision policy]**.
 
 1. För e-postmeddelanden klickar du på **[!UICONTROL Insert syntax]** för att lägga till koden som motsvarar beslutsprincipen. Klicka på **[!UICONTROL Insert policy]** för kodbaserade upplevelser.
 
-   +++Infoga kod för beslutspolicy i e-postmeddelanden
+   +++Infoga beslutsprincipkod i e-postmeddelanden
 
    ![](assets/decision-policy-add.png)
 
@@ -314,7 +314,7 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 >[!NOTE]
 >
 >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
->&#x200B;>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+>>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 1. Klicka på varje mapp för att expandera den. Placera musmarkören på önskad plats och klicka på ikonen + bredvid det attribut du vill lägga till. Du kan lägga till så många attribut du vill i koden.
 
@@ -327,6 +327,57 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 1. Du kan också lägga till andra attribut som är tillgängliga i personaliseringsredigeraren, till exempel profilattribut.
 
    ![](assets/decision-code-based-decision-profile-attribute.png)
+
+### Utnyttja fragment {#fragments}
+
+Om din beslutspolicy innehåller beslutsposter, inklusive fragment, kan du utnyttja dessa fragment i beslutspolicykoden. [Läs mer om fragment](../content-management/fragments.md)
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är för närvarande endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
+
+Anta till exempel att du vill visa olika innehåll för flera mobila enhetsmodeller. Se till att du har lagt till fragment som motsvarar de enheterna i beslutsposten som du använder i beslutspolicyn. [Lär dig hur](items.md#attributes).
+
+![](assets/item-fragments.png){width=70%}
+
+När du är klar kan du använda någon av följande metoder:
+
+>[!BEGINTABS]
+
+>[!TAB Infoga koden direkt]
+
+Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable` med fragment-ID och `placement` med fragmentreferensnyckeln:
+
+```
+{% let variable =  get(item._experience.decisioning.offeritem.contentReferencesMap, "placement").id %}
+{{fragment id = variable}}
+```
+
+>[!TAB Följ de detaljerade stegen]
+
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+
+   ![](assets/decision-let-function.png)
+
+1. Använd funktionen **Karta** > **Hämta** `{%= get(map, string) %}` för att skapa ditt uttryck. Kartan är det fragment som beslutsobjektet refererar till och strängen kan vara den enhetsmodell som du angav i beslutsobjektet som **[!UICONTROL Fragment reference key]**.
+
+   ![](assets/decision-map-function.png)
+
+1. Du kan också använda ett kontextuellt attribut som skulle innehålla detta enhetsmodell-ID.
+
+   ![](assets/decision-contextual-attribute.png)
+
+1. Lägg till variabeln som du valde för fragmentet som fragment-ID.
+
+   ![](assets/decision-fragment-id.png)
+
+>[!ENDTABS]
+
+Fragment-ID och referensnyckel väljs från beslutsobjektets **[!UICONTROL Fragments]**-avsnitt.
+
+>[!WARNING]
+>
+>Om fragmentnyckeln är felaktig eller om fragmentinnehållet inte är giltigt, kommer återgivningen att misslyckas och orsaka fel i Edge-anropet.
 
 ## Slutliga steg {#final-steps}
 

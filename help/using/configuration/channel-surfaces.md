@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -140,6 +140,8 @@ När kanalkonfigurationerna har skapats kan de ha följande status:
 * **[!UICONTROL Active]**: Kanalkonfigurationen har verifierats och kan väljas för att skapa meddelanden.
 * **[!UICONTROL Failed]**: En eller flera kontroller misslyckades under verifieringen av kanalkonfigurationen.
 * **[!UICONTROL Deactivated]**: Kanalkonfigurationen har inaktiverats. Det kan inte användas för att skapa nya meddelanden.
+
+### Orsaker till misslyckad kanalkonfiguration {#channel-config-failure}
 
 Om det inte går att skapa en kanalkonfiguration beskrivs informationen om varje möjlig felorsak nedan.
 
