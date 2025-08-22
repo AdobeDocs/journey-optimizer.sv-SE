@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: eefc6cd7804a14e289d2f1aa3a136f3e6215852c
+source-git-commit: 50317e37c536dc8f1a950172fda00590f8a9fa35
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1475'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Versionsinformation 25 augusti {#25-8-rn}
@@ -296,7 +296,7 @@ Förbättringar i den här versionen visas nedan.
 
 * **Konfiguration**
 
-   * **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för fullständig URL-anpassning/basanpassning för fördefinierade domäner som accepteras av Adobe. Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder. [Läs mer](../personalization/personalization-build-expressions.md#where)
+  &lt;!—* **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för fullständig URL-anpassning/basanpassning för fördefinierade domäner som accepteras av Adobe. Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder. [Läs mer](../personalization/personalization-build-expressions.md#where) - Uppdatera den 21 augusti: Väntar på slutet. för att bekräfta när produkten distribueras.—>
 
    * **Stöd för anpassade attribut med en klickning för att avbryta prenumeration-URL** - Om du hanterar samtycke utanför Adobe kan du ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumeration i e-postkonfigurationen med ett enda klick. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
 

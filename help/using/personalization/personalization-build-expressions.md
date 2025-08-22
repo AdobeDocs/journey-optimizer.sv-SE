@@ -10,9 +10,9 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: uttryck, redigerare, om, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 50317e37c536dc8f1a950172fda00590f8a9fa35
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,10 @@ Exempel på personaliserade URL:er:
 >
 >Blanksteg stöds inte i personaliseringstoken som används i URL:er.
 
-Med begränsad tillgänglighet har Journey Optimizer även stöd för fullständig URL-personalisering. Exempel:
+<!--
+Update on August 21: Waiting for eng. to confirm when the capacity below will be deployed on prod.
+
+In Limited Availability, Journey Optimizer also supports complete/base URL personalization. For example:
 
 ```
 <a href="{{profile.social.link}}" />
@@ -87,7 +90,7 @@ Med begränsad tillgänglighet har Journey Optimizer även stöd för fullständ
 
 >[!WARNING]
 >
->Listan över godkända domäner måste skickas till Adobe i förväg.
+>The list of accepted domains must be provided to Adobe upfront.-->
 
 +++
 
@@ -103,7 +106,7 @@ I navigeringsrutan kan du välja källa för personalisering. Tillgängliga käl
 
 * **[!UICONTROL Profile attributes]** : visar alla referenser som är kopplade till profilschemat som beskrivs i [dokumentationen för Adobe Experience Platform datamodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}.
 * **[!UICONTROL Target attributes]** : Den här mappen är specifik för Orchestrated-kampanjer. Den innehåller attribut som beräknas direkt i kampanjarbetsytan. [Lär dig hur du lägger till personalisering i orkestrerade kampanjer](../orchestrated/activities/channels.md#add-personalization)
-* **[!UICONTROL Audiences]**: visar alla målgrupper som skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
+* **[!UICONTROL Audiences]**: visar alla målgrupper som skapats i Adobe Experience Platform Segmenteringstjänst. Mer information om segmentering finns [här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 * **[!UICONTROL Offer decisions]** : visar alla erbjudanden som är kopplade till en viss placering. Välj placering och infoga sedan erbjudandena i innehållet. En fullständig dokumentation om hur du hanterar erbjudanden finns i [det här avsnittet](../offers/get-started/starting-offer-decisioning.md).
 * **[!UICONTROL Contextual attributes]** : När en kanalåtgärdsaktivitet (E-post, push, SMS) används i en resa eller kampanj är kontextattribut som relaterar till händelser och egenskaper tillgängliga för personalisering. Ett exempel på hur personalisering utnyttjar sammanhangsberoende attribut visas i [det här avsnittet](personalization-use-case.md).
 
