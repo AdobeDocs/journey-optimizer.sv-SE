@@ -4,7 +4,7 @@ product: journey optimizer
 title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
-source-git-commit: a4f3dce91af978bdff2de5beb8b1472f7704bdf2
+source-git-commit: 4f262d4cbbe2241ec8356333d9a3191081f58a6a
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Nedan finns ytterligare skyddsförslag och begränsningar när du använder orke
 
 * All förtäring måste ske via **källor för datainhämtning**:
 
-   * För **filbaserat**: `change_type`-fält krävs.
+   * För **filbaserat**: `_change_request_type`-fält krävs.
 
    * För **molnbaserade**: Tabellloggning måste vara aktiverat.
 

@@ -4,9 +4,9 @@ product: journey optimizer
 title: Konfigurationssteg
 description: Lär dig hur du skapar relationsscheman direkt via användargränssnittet.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 4f262d4cbbe2241ec8356333d9a3191081f58a6a
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Alla scheman som används för mål måste innehålla minst ett identitetsfält 
 
    I det här exemplet har vi lagt till attributen som beskrivs i tabellen nedan i schemat **Bonusmedlemskap**.
 
-+++ Exempel på attribut
+   +++ Exempel på attribut
 
    | Attributnamn | Datatyp | Ytterligare attribut |
    |-|-|-|
@@ -92,7 +92,7 @@ Alla scheman som används för mål måste innehålla minst ett identitetsfält 
    | is_active | BOOLEAN | Obligatoriskt |
    | senast ändrad | DATETIME | Obligatoriskt |
 
-+++
+   +++ 
 
 1. Tilldela lämpliga fält som **[!UICONTROL Primary Key]** och **[!UICONTROL Version Descriptor]**.
 
@@ -100,7 +100,7 @@ Alla scheman som används för mål måste innehålla minst ett identitetsfält 
 
    * Minst en primärnyckel
    * En versionsidentifierare, till exempel ett `lastmodified`-fält av typen `datetime` eller `number`.
-   * För CDC-inmatning (Change Data Capture) är det en specialkolumn med namnet `_change_request_type` av typen `String` som anger typen av dataändring (till exempel infoga, uppdatera, ta bort) och möjliggör inkrementell bearbetning.
+   * För CDC-inmatning (Change Data Capture) är det en specialkolumn med namnet `_change_request_type` av typen `String` som anger typen av dataändring (till exempel infoga, uppdatera, ta bort) och möjliggör inkrementell bearbetning. Observera att `_change_request_type` inte ska ingå i tabellschemat, utan bara läggas till i datafilen vid inmatning.
 
    ![](assets/schema_manual_2.png){zoomable="yes"}
 
