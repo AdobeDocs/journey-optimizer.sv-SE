@@ -1,17 +1,17 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Lägg till en inbyggd kanalåtgärd till en resa
-description: Lär dig hur du lägger till en inbyggd kanalåtgärd till en resa
+title: Använd aktiviteten för åtgärdsresan
+description: Lär dig hur du lägger till en generisk Action-aktivitet för att konfigurera enskilda åtgärder och grupper med inkommande åtgärder inom arbetsytan för flera åtgärder.
 feature: Journeys, Activities, Channels Activity
 topic: Content Management
 role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
-source-git-commit: e74074702c82ede09dc311a16e0f67a84b931fa2
+source-git-commit: 6ca732dc6f784897d76dabb605e398497b2ffdd6
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 +++**Aktivera läget Snabb leverans** (push).
 
-Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 +++
 
