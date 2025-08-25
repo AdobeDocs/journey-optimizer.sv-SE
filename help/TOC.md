@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 17ca5d47fbf20ee25c3728d85877adaccf82aea8
 workflow-type: tm+mt
-source-wordcount: '2887'
+source-wordcount: '2886'
 ht-degree: 18%
 
 ---
@@ -81,6 +81,7 @@ ht-degree: 18%
       + [Villkor](using/building-journeys/condition-activity.md)
       + [Vänta](using/building-journeys/wait-activity.md)
       + [Läs målgrupp](using/building-journeys/read-audience.md)
+      + [Åtgärdsaktivitet](using/building-journeys/journey-action.md)
       + [Inbyggda kanalåtgärder](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
       + [Innehållsbeslut](using/building-journeys/content-decision.md)
@@ -210,7 +211,6 @@ ht-degree: 18%
       + [Arbeta med Action-kampanjer](using/campaigns/create-campaign.md)
       + [Definiera kampanjegenskaperna](using/campaigns/campaign-properties.md)
       + [Konfigurera kampanjåtgärden](using/campaigns/campaign-action.md)
-      + [Utnyttja optimering av meddelanden i en kampanj](using/campaigns/campaigns-message-optimization.md)
       + [Redigera kampanjinnehållet](using/campaigns/campaign-content.md)
       + [Definiera kampanjmålgruppen](using/campaigns/campaign-audience.md)
       + [Schemalägg kampanjen](using/campaigns/campaign-schedule.md)
@@ -540,6 +540,7 @@ ht-degree: 18%
          + [Tekniska anmärkningar](/help/rp_landing_pages/technotes-landing-page.md)
          + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
+   + [Utnyttja optimering av meddelanden](using/campaigns/campaigns-message-optimization.md)
 + Målgrupper, profiler och identitet {#audiences-profiles-identities}
    + [Målgrupper, profiler och identitet](/help/rp_landing_pages/audiences-profiles-identities-landing-page.md)
    + Målgrupper {#audiences}
@@ -856,7 +857,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

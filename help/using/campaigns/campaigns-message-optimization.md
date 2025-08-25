@@ -7,16 +7,16 @@ role: User
 level: Intermediate
 keywords: kampanjoptimering, experiment, målinriktning, A/B-testning
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+source-git-commit: 17ca5d47fbf20ee25c3728d85877adaccf82aea8
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
 
-# Optimering av kampanjer {#message-optimization}
+# Optimering av kampanjer och resor {#message-optimization}
 
-Optimeringen ger er de verktyg ni behöver för att leverera personaliserat och optimerat innehåll till er målgrupp, <!--based on marketer-defined advanced decision configurations. This ensures that the right message reaches the right audience at the right time in order to maximize the effectiveness of your campaigns. (Removed for now as Decisioning is not yet supported)-->vilket ger maximal interaktion och framgång för att skapa högeffektiva <!--customized and -->kampanjer.
+Optimeringen ger er de verktyg ni behöver för att leverera personaliserat och optimerat innehåll till er målgrupp, <!--based on marketer-defined advanced decision configurations. This ensures that the right message reaches the right audience at the right time in order to maximize the effectiveness of your campaigns. (Removed for now as Decisioning is not yet supported)-->vilket ger maximal interaktion och framgång för att skapa <!--customized and -->effektiva resor och kampanjer.
 
 Med optimering kan man
 
@@ -24,7 +24,7 @@ Med optimering kan man
 * Kör [innehållsexperiment](#experimentation)
 * Använd [avancerade kombinationer](#combination) av både experiment och målinriktning i en enda kampanj
 
-När kampanjen är aktiv utvärderas profiler mot de definierade kriterierna, och baserat på matchningskriterier levereras de med rätt erfarenhet eller innehåll från kampanjen.
+När resan eller kampanjen är live utvärderas profiler mot de definierade kriterierna, och baserat på matchningskriterier levereras de med lämplig erfarenhet eller innehåll från resan/kampanjen.
 
 Skillnaden mellan experiment och målinriktning kan beskrivas på följande sätt:
 
@@ -32,6 +32,8 @@ Skillnaden mellan experiment och målinriktning kan beskrivas på följande sät
 * Riktad marknadsföring använder deterministiska tekniker för att leverera innehåll baserat på användarprofil, målgruppsmedlemskap eller kontextbaserade regler.
 
 ![](assets/msg-optimization-experiment-vs-targeting.png){width="110%" zoomable="yes"}
+
+➡️ [Läs mer om optimering i en kampanj i den här videon](#video)
 
 ## Utnyttja målgruppsanpassning {#targeting}
 
@@ -47,13 +49,17 @@ Med målinriktning kan specifika regler definieras baserat på:
 
 * **Publiker** som kan användas för att inkludera eller exkludera profiler som har ett visst målgruppsmedlemskap.
 
-Följ stegen nedan för att konfigurera målinriktning i en kampanj.
+Följ stegen nedan för att konfigurera målinriktning.
 
-1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md) <!--Add link to API triggered?-->
+1. Skapa en [resa](../building-journeys/journey-gs.md#jo-build) eller en [kampanj](../campaigns/create-campaign.md).
+
+   >[!NOTE]
+   >
+   >Om du befinner dig på en resa lägger du till en **[!UICONTROL Action]**-aktivitet, väljer en kanalaktivitet och sedan **[!UICONTROL Configure action]**. [Läs mer](../building-journeys/journey-action.md#add-action)
 
 1. Välj minst en åtgärd på fliken **[!UICONTROL Actions]**.
 
-1. Välj **[!UICONTROL Message Optimization]** i avsnittet **[!UICONTROL Targeting]**.
+1. Välj **[!UICONTROL Optimization]** i avsnittet **[!UICONTROL Create targeting rule]**.
 
    ![](assets/msg-optimization-select-targeting.png){width=85%}
 
@@ -61,7 +67,11 @@ Följ stegen nedan för att konfigurera målinriktning i en kampanj.
 
    ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Välj **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när inga målinriktningsregler är kvalificerade. Om du inte väljer det här alternativet kommer ingen målgrupp som inte är berättigad till en målgruppsregel som definieras ovan inte att få något innehåll.
+1. Välj **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när inga målinriktningsregler är kvalificerade.
+
+   >[!NOTE]
+   >
+   >Om du inte väljer det här alternativet kommer ingen målgrupp som inte är berättigad till en målgruppsregel som definieras ovan inte att få något innehåll.
 
 1. Spara målinriktningsregelinställningarna.
 
@@ -73,9 +83,9 @@ Följ stegen nedan för att konfigurera målinriktning i en kampanj.
 
    I det här exemplet utformar du ett specifikt innehåll för amerikanska medborgare, ett annat innehåll för franska medborgare och ett annat innehåll för indiska medborgare.
 
-1. [Aktivera](review-activate-campaign.md) din kampanj.
+1. [Aktivera](review-activate-campaign.md) din resa eller kampanj.
 
-När kampanjen är live skickas innehåll som är anpassat för varje mål så att amerikanska medborgare får ett visst meddelande, Frankrike har ett annat budskap och så vidare.
+När resan/kampanjen är live skickas innehåll som är skräddarsytt för varje mål så att amerikanska medborgare får ett specifikt meddelande, Frankrike har ett annat budskap och så vidare.
 
 <!--Default content:
 
@@ -87,7 +97,7 @@ När kampanjen är live skickas innehåll som är anpassat för varje mål så a
 
 Experimentation gör att du kan testa flera versioner av innehåll för att avgöra vilken som fungerar bäst baserat på fördefinierade framgångsmått.
 
-Följ stegen nedan för att konfigurera experimentering i en kampanj.
+Följ stegen nedan när du vill konfigurera experimenterande.
 
 Säg att du vill testa följande kampanjmeddelanden i en kampanj:
 
@@ -97,11 +107,15 @@ Säg att du vill testa följande kampanjmeddelanden i en kampanj:
 
 Följ stegen nedan om du vill konfigurera experimenterande och avgöra vilket meddelande som ger flest inköp.
 
-1. Skapa en kampanj. [Läs mer](../campaigns/create-campaign.md) <!--Add link to API triggered?-->
+1. Skapa en [resa](../building-journeys/journey-gs.md#jo-build) eller en [kampanj](../campaigns/create-campaign.md).
+
+   >[!NOTE]
+   >
+   >Om du befinner dig på en resa lägger du till en **[!UICONTROL Action]**-aktivitet, väljer en kanalaktivitet och sedan **[!UICONTROL Configure action]**. [Läs mer](../building-journeys/journey-action.md#add-action)
 
 1. På fliken **[!UICONTROL Actions]** väljer du minst två inkommande åtgärder, till exempel [kodbaserad upplevelse](../code-based/get-started-code-based.md) och [I appen](../../rp_landing_pages/in-app-landing-page.md).
 
-1. Välj **[!UICONTROL Message Optimization]** i avsnittet **[!UICONTROL Experimentation]**.
+1. Välj **[!UICONTROL Optimization]** i avsnittet **[!UICONTROL Create experiment]**.
 
    ![](assets/msg-optimization-select-experiment.png){width=85%}
 
@@ -109,29 +123,29 @@ Följ stegen nedan om du vill konfigurera experimenterande och avgöra vilket me
 
    ![](assets/msg-optimization-create-experiment.png){width=85%}
 
-   När experimentet har definierats gäller det alla åtgärder som har infogats i kampanjen, vilket innebär att samma kunder ser samma erbjudanden på alla ytor.
+   När experimentet har definierats gäller det alla åtgärder som har infogats i kampanjen eller genom **[!UICONTROL Action]**-aktiviteten, vilket innebär att samma kunder ser samma erbjudanden på alla ytor.
 
    >[!NOTE]
    >
-   >Du kan välja andra åtgärder: experimentet gäller alla åtgärder som läggs till i kampanjen.
+   >Du kan välja andra åtgärder: experimentet gäller för alla åtgärder som läggs till i kampanjen eller i åtgärden för resan.
 
-1. [Aktivera](review-activate-campaign.md) din kampanj.
+1. [Aktivera](review-activate-campaign.md) din resa eller kampanj.
 
-När kampanjen är aktiv tilldelas användarna slumpvis olika innehållsvariationer. [!DNL Journey Optimizer] spårar vilka varianter som driver fler inköp och ger åtgärdbara insikter.
+När resan/kampanjen är live tilldelas användarna slumpvis olika innehållsvariationer. [!DNL Journey Optimizer] spårar vilka varianter som driver fler inköp och ger åtgärdbara insikter.
 
-Följ kampanjens framgångar med rapporten [Experimentationskampanj](../reports/campaign-global-report-cja-experimentation.md).
+Följ kampanjens framgångar med rapporterna om [kundresan](../reports/journey-global-report-cja.md) och [kampanjen](../reports/campaign-global-report-cja-experimentation.md). <!--Link to Experimentation journey reportis missing-->
 
 ## Kombinera målinriktning och experimenterande {#combination}
 
-Med Journey Optimizer kan ni också kombinera målinriktning och experiment i en enda kampanj för att skapa mer sofistikerade strategier.
+Med Journey Optimizer kan ni också kombinera målgruppsanpassning och experiment i en enda resa eller kampanj för att skapa mer sofistikerade strategier.
 
-Ni kan faktiskt använda målinriktning för att skapa flera olika varianter, och för varje variant kan ni använda experimenterande för att optimera varje innehåll ytterligare. Detta garanterar att experimenten är specifika för varje målinriktningsregel och inte spänner över olika varianter i kampanjen.
+Ni kan faktiskt använda målinriktning för att skapa flera olika varianter, och för varje variant kan ni använda experimenterande för att optimera varje innehåll ytterligare. Detta garanterar att experimenten är specifika för varje målinriktningsregel och inte sträcker sig över flera varianter.
 
 Du kan till exempel testa&quot;50 % rabatt&quot; jämfört med ett presentkort på&quot;$50&quot; för kunder i USA och göra ett annat test för kunder i Europa, till exempel&quot;fri frakt på beställningar över €&quot; jämfört med&quot;20 % rabatt på nästa köp&quot;.
 
-Följ stegen nedan för att kombinera både målinriktning och experiment i en kampanj.
+Följ stegen nedan om du vill kombinera både målinriktning och experiment i en resa eller kampanj.
 
-1. Skapa en kampanj där ni definierar flera målinriktningsregler. [Lär dig hur](#targeting)
+1. Skapa en resa eller en kampanj där ni definierar flera målinriktningsregler. [Lär dig hur](#targeting)
 
    ![](assets/msg-optimization-create-targeting.png){width=85%}
 
@@ -147,18 +161,24 @@ Följ stegen nedan för att kombinera både målinriktning och experiment i en k
 
 1. För den grupp som definieras av din första målinriktningsregel kan du definiera ett specifikt innehåll för varje variant av ditt experiment.
 
-   Om ni har lagt till mer än en inkommande åtgärd till er kampanj gäller samma kombination av målinriktning och experiment för varje åtgärd. Du måste dock definiera ett specifikt innehåll för varje variant av varje åtgärd.
+   Om ni har lagt till mer än en inkommande åtgärd till er resa eller kampanj gäller samma kombination av målinriktning och experiment för varje åtgärd. Du måste dock definiera ett specifikt innehåll för varje variant av varje åtgärd.
 
    ![](assets/msg-optimization-targeting-experiment-design.png){width=85%}
 
 1. Fortsätt på samma sätt med de andra målinriktningsreglerna och utforma motsvarande innehåll för varje variant.
 
-1. Spara ändringarna och [aktivera](review-activate-campaign.md) kampanjen.
+1. Spara ändringarna och [aktivera](review-activate-campaign.md) din resa eller kampanj.
 
-När kampanjen är aktiv tilldelas användare från varje målgrupp slumpvis de olika innehållsvariationerna som definierats för den grupp de tillhör.
+När resan/kampanjen är live tilldelas användare från varje målgrupp slumpvis de olika innehållsvariationerna som definierats för den grupp de tillhör.
 
 <!--
 ## Reporting on Message optimization
 
 E.g. explaining how a marketer can look at the report to determine which treatment (e.g. which message content) is performing the best for the targeting audience
 -->
+
+## Instruktionsvideo{#video}
+
+Lär dig hur ni utnyttjar meddelandeoptimering i praktiken eller API-utlösta kampanjer. Ni får se hur ni kan rikta in er på undergrupper, skapa meddelandevarianter efter plats, aktivera reservinnehåll och köra flera experiment inom en och samma kampanj. Den här självstudiekursen handlar också om hur du hanterar flerkanalskampanjer samtidigt som du bibehåller meddelandets enhetlighet.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)

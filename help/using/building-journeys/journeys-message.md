@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: db3c87d10469550eb30224c932344ff1e3ae1767
+source-git-commit: 17ca5d47fbf20ee25c3728d85877adaccf82aea8
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -43,6 +43,7 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
    ![](assets/journey-web-activity.png)
 
+1. Du kan också välja aktiviteten **[!UICONTROL Action]**, som gör att du kan välja flera inkommande åtgärder. [Läs mer](journey-action.md)
 
 1. Konfigurera aktiviteten. Detaljerade konfigurationsriktlinjer finns på länkarna nedan.
 
