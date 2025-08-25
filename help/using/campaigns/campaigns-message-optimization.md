@@ -2,14 +2,14 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Meddelandeoptimering
-description: Använd optimering av meddelanden för att skapa personaliserade och optimerade marknadsföringskampanjer.
+description: Använd optimering av meddelanden för att skapa personaliserade och optimerade marknadsföringsresor och kampanjer.
 role: User
 level: Intermediate
 keywords: kampanjoptimering, experiment, målinriktning, A/B-testning
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
-source-git-commit: 17ca5d47fbf20ee25c3728d85877adaccf82aea8
+source-git-commit: 270bc80cbd8cc1ebaba7449b344f32425759f66e
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -181,4 +181,4 @@ E.g. explaining how a marketer can look at the report to determine which treatme
 
 Lär dig hur ni utnyttjar meddelandeoptimering i praktiken eller API-utlösta kampanjer. Ni får se hur ni kan rikta in er på undergrupper, skapa meddelandevarianter efter plats, aktivera reservinnehåll och köra flera experiment inom en och samma kampanj. Den här självstudiekursen handlar också om hur du hanterar flerkanalskampanjer samtidigt som du bibehåller meddelandets enhetlighet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470372?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)
