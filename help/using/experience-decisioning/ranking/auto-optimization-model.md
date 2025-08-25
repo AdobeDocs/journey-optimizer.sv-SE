@@ -6,9 +6,10 @@ description: Läs mer om modeller för automatisk optimering
 feature: Ranking, Decision Management
 role: User
 level: Experienced
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+exl-id: 8a8b66cb-dd96-4373-bbe0-a67e0dc0b2c0
+source-git-commit: f407c5d4c20aab50350588d89e9d7682f24f5c33
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -97,3 +98,7 @@ Problemet med&quot;kallstart&quot; uppstår när ett nytt erbjudande läggs till
 Om vi t.ex. är intresserade av att mäta resultatet för en Thompson Sampling-strategi (TS) som används i rangordningstjänsten och KPI är konverteringsgraden (CVR), definieras&quot;lyften&quot; i TS-strategin mot baslinjestrategin som:
 
 ![](../assets/ai-ranking-lift.png)
+
+>[!NOTE]
+>
+>För närvarande är Lyft-mätningsrapporten bara tillgänglig för AI-modellen [Personlig optimering](personalized-optimization-model.md). [Läs mer om beslutsrapportering](../../reports/campaign-global-report-cja-code.md#decisioning-reporting)

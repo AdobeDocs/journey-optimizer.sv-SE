@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
-source-git-commit: 6ca732dc6f784897d76dabb605e398497b2ffdd6
+source-git-commit: f407c5d4c20aab50350588d89e9d7682f24f5c33
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 +++**Aktivera läget Snabb leverans** (push).
 
-Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 +++
 

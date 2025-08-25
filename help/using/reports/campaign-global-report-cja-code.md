@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d35a0e1c-2376-4cc5-88fc-5f8dfcfae666
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+source-git-commit: f407c5d4c20aab50350588d89e9d7682f24f5c33
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,10 @@ Viktiga mätvärden som visas är:
 * **[!UICONTROL Clicks]**: Totalt antal gånger användare klickat på personaliserade upplevelser som visades för dem.
 
 * **[!UICONTROL Conversion rate]**: procentandel av visningar som resulterade i användaråtgärder (t.ex. klickningar), vilket anger modellens resultat när det gäller att engagera användare.
+
+>[!NOTE]
+>
+>För närvarande är rapporten [Lyft mätning](../experience-decisioning/ranking/auto-optimization-model.md#lift) bara tillgänglig för AI-modellen [Personlig optimering](../experience-decisioning/ranking/personalized-optimization-model.md). Om du behöver rapportera lyftmätning ska du använda den personaliserade optimeringsmodellen i stället.
 
 ### Konverteringsgrad för Holdout och Modellstyrd trafik {#conversion-rate}
 
