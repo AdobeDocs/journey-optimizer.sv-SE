@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 68cb46a45bf3fe8b8847109519889a9cf20157d3
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 2%
@@ -62,7 +62,7 @@ Hur resorna presenteras:
 * Om ingen starttid anges används den närmaste manuella aktiveringstiden för att placera den i kalendern.
 * Resor visas som 1-timmars tidsintervall, men detta återspeglar inte den faktiska tiden för sändning eller slutförande.
 
-Så här navigerar du i din Jouryss-kalender:
+Så här navigerar du i din resekalender:
 
 1. Om du vill komma åt kalendervyn öppnar du reselistan och klickar på ikonen ![kalenderikon](assets/do-not-localize/timeline-icon.svg) .
 
@@ -140,7 +140,7 @@ Resans status beror på dess livscykel. Den kan vara:
 * **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
 * **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** .
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [&#128279;](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
 * **Live**: resan har publicerats med knappen **Publicera** .
 * **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt.
 
