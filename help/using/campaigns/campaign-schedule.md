@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: b183eeb8-606f-444d-9302-274f159c3847
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 4417643cbf206b9ad112bae5c270cdfc746a9c5d
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Med [!DNL Journey Optimizer] kan du aktivera hastighetskontroll för utgående �
 
 Den här funktionen är särskilt användbar för att förhindra överbelastning i system längre fram i kedjan, som landningssidor eller kundtjänstplattformar. Du kan till exempel ange en hastighetsgräns på 165 meddelanden per sekund för att säkerställa stabil leverans utan överväldigande system i efterföljande led.
 
-Om du vill ange hastighetskontroll aktiverar du alternativet **[!UICONTROL Throttle delivery]** i avsnittet **[!UICONTROL Delivery settings]** och anger önskat **[!UICONTROL Delivery rate]**.
+Om du vill ange hastighetskontroll aktiverar du alternativet **[!UICONTROL Throttle delivery]** i avsnittet **[!UICONTROL Delivery settings]** och anger önskad **[!UICONTROL Delivery rate]** per sekund.
 
 ![](assets/throttling-rate-control.png)
 
