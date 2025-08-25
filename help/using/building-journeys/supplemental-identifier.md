@@ -2,9 +2,9 @@
 title: Använd tilläggsidentifierare under resor
 description: Lär dig hur du använder tilläggsidentifierare under resor.
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
-source-git-commit: dcb2be7fef47e0d62fdd5a423799823ba4ef586c
+source-git-commit: efd39577a4836144c4ba41018e5750278e82c079
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,8 @@ Dessutom kan du med Journey Optimizer använda attribut för den kompletterande 
 
    * Om resan inte är en återkommande person kan inte kombinationen av profil-ID och kompletterande ID returnera resan.
    * Om resan är återkommande i ett tidsfönster kan samma profil-ID + kombination av extra ID:n anges igen efter det definierade tidsfönstret.
+
+* **Etikett och tvång för dataanvändning (DULE)** - Inga DULE-valideringskontroller utförs för det extra ID:t. Detta innebär att detta attribut inte kommer att beaktas när resan söker efter brott mot policyn för datastyrning.
 
 * **Konfiguration av underordnade händelser**
 
@@ -138,6 +140,10 @@ Följ de här stegen för att använda en extra identifierare i en läsande mål
       >Se till att du inte markerar attributet som **Primär identitet**.
 
    1. Markera det namnutrymme som ska associeras med det extra ID:t. Detta måste vara ett namnutrymme för icke-personidentifierare.
+
+      >[!NOTE]
+      >
+      >När du har tillämpat identitetsnamnutrymmet på ett schema måste du skapa en ny händelse (för händelseutlösta resor) eller en ny fältgrupp (för målgruppsresor som läses) för att kunna använda den kompletterande identifieraren. Befintliga enheter kan inte uppdateras för att identifiera den nya identifieraren.
 
 <!--1. **Add the supplemental ID field to the data source**
 
@@ -244,4 +250,4 @@ I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på 
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
