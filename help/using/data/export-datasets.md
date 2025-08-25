@@ -29,17 +29,17 @@ Du kan exportera datauppsättningar till sex molnlagringsmål som är tillgängl
 
 Mer information om respektive mål finns i Adobe Experience Platform-dokumentationen:
 
-* [Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3.html){target="_blank"}
-* [Azure-blob](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html){target="_blank"}
-* [Azure Data Lake Gen 2](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2.html){target="_blank"}
-* [Datalandningszon](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html){target="_blank"}
-* [Google Cloud-lagring](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html){target="_blank"}
-* [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html){target="_blank"}.
+* [Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3.html?lang=sv-SE){target="_blank"}
+* [Azure-blob](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html?lang=sv-SE){target="_blank"}
+* [Azure Data Lake Gen 2](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2.html?lang=sv-SE){target="_blank"}
+* [Datalandningszon](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE){target="_blank"}
+* [Google Cloud-lagring](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html?lang=sv-SE){target="_blank"}
+* [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html?lang=sv-SE){target="_blank"}.
 
 
 ## Förhandskrav {#prerequisites}
 
-Om du vill exportera datauppsättningar behöver du de [åtkomstkontrollsbehörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#permissions){target="_blank"} som anges nedan. Läs [åtkomstkontrollsöversikten](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html){target="_blank"} eller kontakta produktadministratören för att få den behörighet som krävs.
+Om du vill exportera datauppsättningar behöver du de [åtkomstkontrollsbehörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE#permissions){target="_blank"} som anges nedan. Läs [åtkomstkontrollsöversikten](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/overview.html?lang=sv-SE){target="_blank"} eller kontakta produktadministratören för att få den behörighet som krävs.
 
 | Kategori | Behörighet |
 |--|--|
@@ -53,9 +53,9 @@ De viktigaste stegen för att exportera en datauppsättning till en molnlagrings
 
 ![](assets/dataset-export-process.png)
 
-Detaljerad information om varje steg finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}.
+Detaljerad information om varje steg finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=sv-SE){target="_blank"}.
 
-1. **Konfigurera molnlagringsmålet**. Om du inte redan har gjort det ansluter du till ett molnlagringsmål från målkatalogen. Lär dig hur du skapar en ny målanslutning i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html#setup){target="_blank"}.
+1. **Konfigurera molnlagringsmålet**. Om du inte redan har gjort det ansluter du till ett molnlagringsmål från målkatalogen. Lär dig hur du skapar en ny målanslutning i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=sv-SE#setup){target="_blank"}.
 
    <!--![](assets/dataset-export-setup.png)-->
 
@@ -79,7 +79,7 @@ Detaljerad information om varje steg finns i [Adobe Experience Platform-dokument
 
    <!--![](assets/dataset-export-review.png)-->
 
-När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema som du har konfigurerat. [Lär dig verifiera datauppsättningsexporten](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html#verify){target="_blank"}.
+När exporten är klar, lagras innehållet i datauppsättningen på din molnlagringsplats enligt det schema som du har konfigurerat. [Lär dig verifiera datauppsättningsexporten](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=sv-SE#verify){target="_blank"}.
 
 ## Tillgängliga datauppsättningar för export {#datasets}
 
