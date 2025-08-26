@@ -2,9 +2,9 @@
 title: Använd tilläggsidentifierare under resor
 description: Lär dig hur du använder tilläggsidentifierare under resor.
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
-source-git-commit: efd39577a4836144c4ba41018e5750278e82c079
+source-git-commit: c46ad0283eec025cbf6183bf1aac0e3808450e21
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1237'
 ht-degree: 0%
 
 ---
@@ -101,6 +101,8 @@ Följ de här stegen om du vill använda en extra identifierare i en händelseut
 
    1. Markera det namnutrymme som ska associeras med det extra ID:t. Detta måste vara ett namnutrymme för icke-personidentifierare.
 
+      När du har tillämpat identitetsnamnutrymmet på ett schema måste du skapa en ny händelse för att kunna använda den extra identifieraren. Befintliga enheter kan inte uppdateras för att identifiera den nya identifieraren.
+
 1. **Lägg till det extra ID:t i händelsen**
 
    1. Skapa eller redigera den önskade händelsen. [Lär dig hur du konfigurerar en enhetshändelse](../event/about-creating.md)
@@ -141,9 +143,7 @@ Följ de här stegen för att använda en extra identifierare i en läsande mål
 
    1. Markera det namnutrymme som ska associeras med det extra ID:t. Detta måste vara ett namnutrymme för icke-personidentifierare.
 
-      >[!NOTE]
-      >
-      >När du har tillämpat identitetsnamnutrymmet på ett schema måste du skapa en ny händelse (för händelseutlösta resor) eller en ny fältgrupp (för målgruppsresor som läses) för att kunna använda den kompletterande identifieraren. Befintliga enheter kan inte uppdateras för att identifiera den nya identifieraren.
+      När du har tillämpat identitetsnamnutrymmet på ett schema måste du skapa en ny fältgrupp för att kunna använda den extra identifieraren. Befintliga enheter kan inte uppdateras för att identifiera den nya identifieraren.
 
 <!--1. **Add the supplemental ID field to the data source**
 
@@ -250,4 +250,4 @@ I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på 
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
