@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: a770cbc1736e7add7e25f2cc8210d81bd8b2e375
+source-git-commit: 19130e9eb5a2144afccab9fa8e5632de67bc7157
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '666'
 ht-degree: 12%
 
 ---
@@ -42,7 +42,7 @@ Orchestration-aktiviteter är olika villkor som hjälper till att bestämma näs
 
 På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
-* [Optimera](optimize.md)
+<!--* [Optimize](optimize.md)-->
 * [Läs målgrupp](read-audience.md)
 * [Vänta](wait-activity.md)
 * [Innehållsbeslut](content-decision.md)
