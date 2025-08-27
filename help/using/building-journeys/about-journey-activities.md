@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 527a539272460aa6aa22de5bb3da2223521ee2a3
+source-git-commit: a770cbc1736e7add7e25f2cc8210d81bd8b2e375
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '667'
 ht-degree: 12%
 
 ---
@@ -42,11 +42,12 @@ Orchestration-aktiviteter är olika villkor som hjälper till att bestämma näs
 
 På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
-* [Villkor](../building-journeys/condition-activity.md)
-* [Vänta](../building-journeys/wait-activity.md)
-* [Läs målgrupp](../building-journeys/read-audience.md)
+* [Optimera](optimize.md)
+* [Läs målgrupp](read-audience.md)
+* [Vänta](wait-activity.md)
+* [Innehållsbeslut](content-decision.md)
 
-![Paletten Orchestration-aktiviteter i resedesignern](assets/journey49.png)
+![Paletten Orchestration-aktiviteter i resedesignern](assets/journey-orchestration-activities.png)
 
 ## Åtgärdsaktiviteter {#action-activities}
 

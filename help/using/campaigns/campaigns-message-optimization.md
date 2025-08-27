@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 keywords: kampanjoptimering, experiment, målinriktning, A/B-testning
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
-source-git-commit: 270bc80cbd8cc1ebaba7449b344f32425759f66e
+source-git-commit: a770cbc1736e7add7e25f2cc8210d81bd8b2e375
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Följ stegen nedan om du vill konfigurera experimenterande och avgöra vilket me
    >
    >Om du befinner dig på en resa lägger du till en **[!UICONTROL Action]**-aktivitet, väljer en kanalaktivitet och sedan **[!UICONTROL Configure action]**. [Läs mer](../building-journeys/journey-action.md#add-action)
 
-1. På fliken **[!UICONTROL Actions]** väljer du minst två inkommande åtgärder, till exempel [kodbaserad upplevelse](../code-based/get-started-code-based.md) och [I appen](../../rp_landing_pages/in-app-landing-page.md).
+1. På fliken **[!UICONTROL Actions]** väljer du två inkommande åtgärder, till exempel [kodbaserad upplevelse](../code-based/get-started-code-based.md) och [I appen](../../rp_landing_pages/in-app-landing-page.md).
 
 1. Välj **[!UICONTROL Optimization]** i avsnittet **[!UICONTROL Create experiment]**.
 
@@ -181,4 +181,4 @@ E.g. explaining how a marketer can look at the report to determine which treatme
 
 Lär dig hur ni utnyttjar meddelandeoptimering i praktiken eller API-utlösta kampanjer. Ni får se hur ni kan rikta in er på undergrupper, skapa meddelandevarianter efter plats, aktivera reservinnehåll och köra flera experiment inom en och samma kampanj. Den här självstudiekursen handlar också om hur du hanterar flerkanalskampanjer samtidigt som du bibehåller meddelandets enhetlighet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470372?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)
