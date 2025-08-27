@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
-source-git-commit: 9d87d133bb580ebed94a265beded5895f7fd0301
+source-git-commit: 50933d991c6a337e6d1739652d680778759ef0d5
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -110,5 +110,23 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 1. Granska **[!UICONTROL Variation suggestions]** för att hitta den resurs du vill ha.
 
 1. Välj **[!UICONTROL Preview]** om du vill visa den valda variationen i helskärmsläge.
+
+1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
+
+## Generera innehåll för olika språk {#languages}
+
+![](assets/do-not-localize/gen-ai-language.gif)
+
+1. När kampanjen har konfigurerats och konfigurerats klickar du på **[!UICONTROL Edit content]**.
+
+1. Öppna menyn **[!UICONTROL AI Assistant]**.
+
+1. Justera innehållet genom att ange önskad begäran i rutan **[!UICONTROL Prompt]** på franska, spanska, tyska, italienska, japanska, svenska, nederländska eller norska.
+
+1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]** och välj önskat **[!UICONTROL Languages]** för det genererade innehållet.
+
+1. Anpassa din fråga ytterligare efter behov och klicka på **[!UICONTROL Generate]**.
+
+1. Granska **[!UICONTROL Variation suggestions]** på det valda språket.
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
