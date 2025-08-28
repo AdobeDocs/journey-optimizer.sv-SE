@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: 3eab04f28b1daab556c4b4395d67f28d292fc52b
+source-git-commit: ed4d50cbc488fb396c4fffec21d3f0062d3fc20a
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1032'
 ht-degree: 3%
 
 ---
@@ -170,7 +170,7 @@ Funktionen `ageInMonths` beräknar åldern för ett givet datum i månader, dvs.
 
 +++Exempel
 
-currentDate = 2025-01-07T12:22:46.993748+05:30(Asien/Kolkata)
+currentDate = 2025-01-07T12:22:46.993748+05:30(Asia/Kolkata)
 
 * Indata: `{%=ageInMonths(stringToDate("2024-01-01T00:00:00Z"))%}`
 * Utdata: `12`
@@ -410,7 +410,7 @@ Där den första strängen är datumattributet och det andra värdet är hur du 
 >
 > Om ett datummönster är ogiltigt återgår datumet till ISO-standardformat.
 >
-> Du kan använda Java-datumformateringsfunktioner som sammanfattas i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html){_blank}
+> Du kan använda Java-datumformateringsfunktioner som sammanfattas i [Oracle-dokumentationen](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html){_blank}
 
 **Exempel**
 
@@ -436,16 +436,16 @@ Där den första strängen är datumattributet är det andra värdet hur du vill
 >
 > Om ett datummönster är ogiltigt återgår datumet till ISO-standardformat.
 >
-> Du kan använda Java-datumformateringsfunktioner som sammanfattas i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html).
+> Du kan använda Java-datumformateringsfunktioner enligt sammanfattningen i [Oracle-dokumentationen](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html).
 >
-> Du kan använda formatering och giltiga språkinställningar enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språkinställningar som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html).
+> Du kan använda formatering och giltiga språkinställningar enligt sammanfattningen i [Oracle-dokumentationen](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språkinställningar som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html).
 
 **Exempel**
 
-Följande åtgärd returnerar datumet i följande format: MM/DD/YY och språkområde FRANCE.
+Följande åtgärd returnerar datumet i följande format: MM/dd/YY och språkområde FRANCE.
 
 ```sql
-{%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/DD/YY", "fr_FR") %}
+{%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY", "fr_FR") %}
 ```
 
 ## Hämta CurrentZonedDateTime {#get-current-zoned-date-time}
@@ -595,7 +595,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Trunkera till början av dagen {#truncate-day}
 
-Funktionen `truncateToStartOfDay` används för att ändra ett givet datum/tid genom att ställa in den på början av dagen med tiden inställd på 00:00.
+Funktionen `truncateToStartOfDay` används för att ändra ett givet datum/tid genom att ställa in den på början av dagen med tiden inställd på 0:00.
 
 **Syntax**
 
@@ -612,7 +612,7 @@ Funktionen `truncateToStartOfDay` används för att ändra ett givet datum/tid g
 
 ## truncateToStartOfQuarter {#truncate-quarter}
 
-Funktionen `truncateToStartOfQuarter` används för att korta av ett datum-tid till den första dagen i kvartalet (t.ex. Jan 1, Apr 1, Jul 1, Oct 1) kl. 00:00.
+Funktionen `truncateToStartOfQuarter` används för att korta av ett datum/tid till den första dagen i kvarteret (t.ex. Jan 1, Apr 1, Jul 1, Oct 1) kl. 00:00.
 
 **Syntax**
 
@@ -629,7 +629,7 @@ Funktionen `truncateToStartOfQuarter` används för att korta av ett datum-tid t
 
 ## truncateToStartOfWeek {#truncate-week}
 
-Funktionen `truncateToStartOfWeek` ändrar ett visst datum/tid genom att ställa in det till veckans början (måndag 00:00).
+Funktionen `truncateToStartOfWeek` ändrar ett visst datum/tid genom att ställa in det till veckans början (måndag 0:00).
 
 **Syntax**
 
