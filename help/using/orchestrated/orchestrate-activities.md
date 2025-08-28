@@ -4,9 +4,9 @@ product: journey optimizer
 title: Skapa samordnade kampanjer med Adobe Journey Optimizer
 description: Lär dig skapa samordnade kampanjer med Adobe Journey Optimizer
 exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 24e767d6f146036c8c0a34193ed6d36e5d43e6b2
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 # Samordna kampanjaktiviteter {#orchestrate}
 
-När du har [skapat en orchestrated-kampanj](gs-campaign-creation.md) kan du börja organisera de olika uppgifter som ska utföras. För att göra detta finns en visuell arbetsyta som gör att du kan skapa ett orkestrerat kampanjdiagram. I det här diagrammet kan du lägga till olika aktiviteter och koppla dem i en sekventiell ordning.
+När du har [skapat en orchestrated-kampanj](gs-campaign-creation.md) kan du börja organisera de olika uppgifter som ska utföras. För att göra detta finns en visuell arbetsyta som gör att du kan skapa en Orchestrated-kampanjarbetsyta. På arbetsytan kan du lägga till olika aktiviteter och koppla dem i en sekventiell ordning.
 
 ## Lägg till aktiviteter {#add}
 
-I det här skedet av konfigurationen visas diagrammet med en startikon som representerar början av din samordnade kampanj. Om du vill lägga till din första aktivitet klickar du på knappen **+** som är ansluten till startikonen.
+I det här skedet av konfigurationen visas arbetsytan för den orkestrerade kampanjen med en startikon som representerar början av den orkestrerade kampanjen. Om du vill lägga till din första aktivitet klickar du på knappen **+** som är ansluten till startikonen.
 
-En lista över aktiviteter som kan läggas till i diagrammet visas. Vilka aktiviteter som är tillgängliga beror på din position i det Orchestrerade kampanjdiagrammet. När du till exempel lägger till din första aktivitet kan du starta en orchestrated-kampanj genom att rikta in en målgrupp, dela den orchestrerade kampanjsökvägen eller ange en **Wait**-aktivitet för att fördröja körningen av den orchestrerade-kampanjen. Efter en **Bygg målgrupp** kan du å andra sidan förfina ditt mål med målinriktningsaktiviteter, skicka en leverans till din målgrupp med kanalaktiviteter eller ordna den Orchestrated-kampanjprocessen med flödeskontrollaktiviteter.
+En lista över aktiviteter som kan läggas till på arbetsytan för den orkestrerade kampanjen visas. Vilka aktiviteter som är tillgängliga beror på din position på arbetsytan för orkestrerade kampanjer. När du till exempel lägger till din första aktivitet kan du starta en orchestrated-kampanj genom att rikta in en målgrupp, dela den orchestrerade kampanjsökvägen eller ange en **Wait**-aktivitet för att fördröja körningen av den orchestrerade-kampanjen. Efter en **Bygg målgrupp** kan du å andra sidan förfina ditt mål med målinriktningsaktiviteter, skicka en leverans till din målgrupp med kanalaktiviteter eller ordna den Orchestrated-kampanjprocessen med flödeskontrollaktiviteter.
 
 ![](assets/orchestrated-start.png){zoomable="yes"}
 
-När en aktivitet har lagts till i diagrammet visas en höger ruta där du kan konfigurera den med specifika inställningar. Detaljerad information om hur du konfigurerar varje aktivitet finns i [det här avsnittet](activities/about-activities.md).
+När en aktivitet har lagts till på arbetsytan visas en höger ruta där du kan konfigurera den med specifika inställningar. Detaljerad information om hur du konfigurerar varje aktivitet finns i [det här avsnittet](activities/about-activities.md).
 
 ![](assets/orchestrated-configure-activities.png){zoomable="yes"}
 
@@ -85,7 +85,7 @@ Klistra in aktiviteterna genom att klicka på knappen **+** för en övergång o
 
 ![](assets/orchestrated-copy-3.png){zoomable="yes"}{width="50%"}
 
-## Diagramexempel {#example}
+## Exempel på arbetsyta {#example}
 
 Här är ett exempel på en Orchestrated-kampanj som utformats för att skicka ett e-postmeddelande till alla kunder som har köpt minst 100$, med undantag för alla kunder som har färre än 50 förmånspoäng.
 
@@ -106,4 +106,4 @@ För att uppnå detta har följande aktiviteter lagts till:
 
 ## Nästa steg {#next}
 
-När du har utformat det orchestrerade kampanjdiagrammet kan du köra den orkestrerade kampanjen och spåra förloppet för dess olika uppgifter. [Lär dig hur du startar en Orchestrated-kampanj och övervakar dess körning](start-monitor-campaigns.md)
+När du har utformat arbetsytan för den orkestrerade kampanjen kan du köra den orkestrerade kampanjen och spåra förloppet för dess olika uppgifter. [Lär dig hur du startar en Orchestrated-kampanj och övervakar dess körning](start-monitor-campaigns.md)

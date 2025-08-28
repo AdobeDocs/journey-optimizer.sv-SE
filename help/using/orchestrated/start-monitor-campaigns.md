@@ -4,7 +4,7 @@ product: journey optimizer
 title: Starta och övervaka samordnade kampanjer med Adobe Journey Optimizer
 description: Lär dig hur du startar och övervakar samordnade kampanjer med Adobe Journey Optimizer.
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 24e767d6f146036c8c0a34193ed6d36e5d43e6b2
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Om du vill testa en orkestrerad kampanj öppnar du kampanjen och väljer **[!UIC
 
 ![](assets/campaign-start.png){zoomable="yes"}
 
-Varje aktivitet i kampanjen utförs sekventiellt tills diagrammets slut nås. Under testet kan du styra kampanjkörningen med åtgärdsfältet på arbetsytan. Därifrån kan man
+Varje aktivitet i kampanjen utförs sekventiellt tills arbetsytans slut nås. Under testet kan du styra kampanjkörningen med åtgärdsfältet på arbetsytan. Därifrån kan man
 
 * **Stoppa** körningen när som helst.
 * **Starta** körningen igen.
@@ -115,4 +115,4 @@ På båda flikarna kan du välja vilka kolumner som ska visas och i vilken ordni
 
 ## Nästa steg {#next}
 
-När ni har startat det samordnade kampanjdiagrammet kan ni använda Journey Optimizer rapporteringsfunktioner för att få insikter som att förstå målgruppernas beteende och mäta resultatet för varje steg i kundresan. [Läs mer om rapportering av samordnade kampanjer](../orchestrated/reporting-campaigns.md)
+När ni har startat den Orchestrerade kampanjarbetsytan kan ni använda Journey Optimizer rapporteringsfunktioner för att få insikter som att förstå målgruppernas beteende och mäta resultatet för varje steg i kundresan. [Läs mer om rapportering av samordnade kampanjer](../orchestrated/reporting-campaigns.md)

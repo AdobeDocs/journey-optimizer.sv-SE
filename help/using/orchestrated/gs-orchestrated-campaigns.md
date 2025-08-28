@@ -5,7 +5,7 @@ title: Kom igång med samordnade kampanjer
 description: Lär dig hur du kommer igång med samordnade kampanjer
 short-description: Upptäck de viktigaste funktionerna för samordnade kampanjer samt användningsfall.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
-source-git-commit: 4510cfde1579fbabe7deb1289f70f13ee21a3d4a
+source-git-commit: 24e767d6f146036c8c0a34193ed6d36e5d43e6b2
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 4%
@@ -64,9 +64,9 @@ Den Orchestrerade kampanjarbetsytan är en representation av vad som ska hända.
 
 Alla samordnade kampanjer innehåller:
 
-* **Aktiviteter**: En aktivitet är en aktivitet som ska utföras. De olika aktiviteterna visas i diagrammet med ikoner. Varje aktivitet har specifika egenskaper och andra egenskaper som är gemensamma för alla aktiviteter.
+* **Aktiviteter**: En aktivitet är en aktivitet som ska utföras. De olika aktiviteterna visas på arbetsytan med ikoner. Varje aktivitet har specifika egenskaper och andra egenskaper som är gemensamma för alla aktiviteter.
 
-  I ett orkestrerat kampanjdiagram kan en viss aktivitet producera flera uppgifter, särskilt när det finns en slinga eller återkommande åtgärder.
+  På en Orchestrated-kampanjarbetsyta kan en viss aktivitet producera flera uppgifter, särskilt när det finns en slinga eller återkommande åtgärder.
 
 * **Övergångar**: Övergångar länkar en källaktivitet till en målaktivitet och definierar deras sekvens.
 
