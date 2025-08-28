@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 967713938ab0e3eaaaad7a86054ed1270a9cc1ca
+source-git-commit: e7908a328a14b307f0ea6914d2d06c5325ceb211
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 21%
+source-wordcount: '1615'
+ht-degree: 20%
 
 ---
 
@@ -119,3 +119,14 @@ För ett visst anrop kan högst tre försök utföras efter det första anropet,
 **Var kan jag konfigurera timeout? Finns det ett maxvärde?**
 
 Under varje resa kan du definiera en tidsgräns. Tidsgränsen har konfigurerats i egenskaperna för en resa. Tidsgränsen måste vara mellan 1 och 30 sekunder. Se [det här avsnittet](../configuration/external-systems.md#timeout) och [sidan](../building-journeys/journey-properties.md#timeout_and_error).
+
+**Vad är det högsta antalet anslutningar som öppnas av Journey Optimizer när anpassade åtgärder används?**
+
+När IP-proxyn är aktiverad och en begränsningskonfiguration har definierats för målslutpunkten, baseras antalet anslutningar på hastigheten (dessa är uppskattningar, inte garanterade siffror):
+
+* mellan 200 och 2000 c/s: 50 anslutningar
+* mellan 2000 och 3000: 75 anslutningar
+* mellan 3 000 och 4 000: 100 anslutningar
+* mellan 4 000 och 5 000: 125 anslutningar
+
+Om ingen begränsningskonfiguration har definierats för en slutpunkt är Journey Optimizer-motorn utformad för att skalas upp och kan få ett stort antal anslutningar (fler än 2 000). För att få ett begränsat antal anslutningar måste kunderna använda en begränsningskonfiguration.
