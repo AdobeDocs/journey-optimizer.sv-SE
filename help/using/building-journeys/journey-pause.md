@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 10a228a500ac1c89f9fc400d6e7606f4b1717052
 workflow-type: tm+mt
 source-wordcount: '2225'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 >title="Pausa din resa"
 >abstract="Pausa en live-resa för att förhindra att nya profiler kommer in. Välj om du vill ta bort profiler som finns på resan eller behålla dem på plats. Om de behålls kommer de att återuppta körningen vid nästa åtgärdsaktivitet när resan har startats om. Perfekt för uppdateringar eller nödstopp utan att förlora några framsteg."
 
-Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Under pausen kan du [använda avslutningskriterier för profilattribut](#journey-global-filters) för att exkludera profiler baserat på deras attribut. Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
+Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Under pausen kan du [använda avslutningskriterier för profilattribut](#journey-exit-criteria) för att exkludera profiler baserat på deras attribut. Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
 
 
 
@@ -113,7 +113,7 @@ Så här återupptar du en pausad resa och börjar lyssna på resehändelser ige
 I listan över dina resor kan du återuppta en eller flera **Pausade** resor. Om du vill återuppta en grupp av resor (_massåteruppta_) markerar du dem och klickar på knappen **Återuppta** i det blå fältet längst ned på skärmen. Observera att knappen **Återuppta** endast är tillgänglig när **Pausade** resor har valts.
 
 
-## Använda ett utträdesvillkor i en pausad resa {#journey-global-filters}
+## Använda ett utträdesvillkor i en pausad resa {#journey-exit-criteria}
 
 När en resa pausas kan du använda ett avslutningskriterium baserat på profilattribut. Det här filtret gör att profiler som matchar det definierade uttrycket utesluts vid återupptagningstid. När de profilattributbaserade avslutningskriterierna har angetts kommer de att tillämpas på åtgärdsnoder, även för nya profilentréer. Befintliga profiler som matchar villkoren och nya profiler som går in på resan kommer att exkluderas från resan **på nästa åtgärdsnod** som påträffas.
 
@@ -123,7 +123,7 @@ Så här utesluter du till exempel alla franska kunder från en pausad resa:
 
 1. Välj ikonen **Avsluta villkor** .
 
-   ![Lägg till ett avslutande villkor för profilattribut i en pausad resa](assets/add-global-filter.png)
+   ![Lägg till ett avslutande villkor för profilattribut i en pausad resa](assets/add-exit-criteria.png)
 
 1. Klicka på **Lägg till avslutsvillkor** i inställningarna för **Avsluta villkor** för att definiera ett filter baserat på profilattribut.
 
