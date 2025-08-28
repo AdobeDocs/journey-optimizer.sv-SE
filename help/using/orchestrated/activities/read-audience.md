@@ -4,16 +4,15 @@ product: journey optimizer
 title: Använda aktiviteten Läsa målgrupper
 description: Lär dig hur du använder Läs-målgruppsaktiviteten i en orkestrerad kampanj
 exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 63ca1aab5190c58031dbab13651639bba4363964
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
 
 # Läs målgrupp {#read-audience}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_read_audience"
@@ -23,6 +22,20 @@ ht-degree: 0%
 Med aktiviteten **[!UICONTROL Read audience]** kan du hämta en befintlig publik - som tidigare har sparats eller importerats - och återanvända den i en orchestrerad-kampanj. Den här aktiviteten är särskilt användbar när du vill ha en fördefinierad uppsättning profiler som mål utan att behöva utföra en ny segmenteringsprocess.
 
 När målgruppen har lästs in kan du förfina den genom att välja ett unikt identitetsfält och berika målgruppen med ytterligare profilattribut för målinriktning, personalisering eller rapportering.
+
+## Läs målgruppscache {#cache}
+
+När du testar en Orchestrated-kampanj tar aktiviteten **[!UICONTROL Read Audience]** vanligtvis lite tid att hämta data, vilket kan göra att testet körs längre. Det finns ett **[!UICONTROL Read Audience]**-cacheminne för att öka hastigheten.
+
+I cachen lagras målgruppen tillsammans med de valda attributen för **upp till två timmar**. Under den här tiden kan alla efterföljande testkörningar använda cachelagrade resultat, så att data inte behöver hämtas igen. När **tvåtimmarsperioden** har passerat måste data hämtas på nytt.
+
+Cacheminnet sparas för varje iscensatt kampanj, inte för själva publiken. Om samma målgrupp används i en **[!UICONTROL Read Audience]**-aktivitet i en annan Orchestrated-kampanj måste systemet fortfarande hämta data igen.
+
+Cachen bevaras inte i följande fall:
+
+* När aktiviteten **[!UICONTROL Read Audience]** uppdateras med nya attribut uppdateras cachen med nya attributdata. Det innebär att den första testkörningen efter uppdateringen tar längre tid eftersom data måste hämtas igen.
+
+* När den Orchestrated-kampanjen publiceras, hämtas den senaste informationen när den aktiva orchestrated-kampanjen körs.
 
 ## Konfigurera aktiviteten Läsa målgrupp {#read-audience-configuration}
 
@@ -48,7 +61,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Read audience]**:
 
    ![](../assets/read-audience-3.png)
 
-1. Välj [!UICONTROL Add attribute] om du vill berika den valda målgruppen med ytterligare data. I det här steget kan du lägga till profilattribut till målgruppen, vilket resulterar i en lista över mottagare som förbättrats med dessa attribut.
+1. Välj **[!UICONTROL Add attribute]** om du vill berika den valda målgruppen med ytterligare data. I det här steget kan du lägga till profilattribut till målgruppen, vilket resulterar i en lista över mottagare som förbättrats med dessa attribut.
 
 1. Välj den **[!UICONTROL Attributes]** som du vill lägga till för din målgrupp. Attributväljaren visar fält från **unionsprofilschemat**:
 
