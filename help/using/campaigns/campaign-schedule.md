@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: b183eeb8-606f-444d-9302-274f159c3847
-source-git-commit: 4417643cbf206b9ad112bae5c270cdfc746a9c5d
+source-git-commit: eeacfacf3068f831afb7b7ad78214941a9259c93
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,14 @@ Den här funktionen är särskilt användbar för att förhindra överbelastning
 
 Om du vill ange hastighetskontroll aktiverar du alternativet **[!UICONTROL Throttle delivery]** i avsnittet **[!UICONTROL Delivery settings]** och anger önskad **[!UICONTROL Delivery rate]** per sekund.
 
+* Lägsta tillåtna leveransfrekvens: 1 per sekund.
+* Högsta leveransfrekvens som stöds: 2 000 per sekund när alternativet Begränsad leverans är aktiverat.
+
 ![](assets/throttling-rate-control.png)
+
+>[!IMPORTANT]
+>
+>När du anger en leveransfrekvens är den maximala tidsram som kampanjens målgrupp kan genomföra 12 timmar. Om leveransfrekvensen är inställd på ett värde som inte tillåter att alla målgrupper får meddelandet inom 12-timmars tidsram, kommer de återstående profilerna att uteslutas från kampanjen. Du kan se antalet uteslutna profiler i kampanjrapporten.
 
 ## Ange en körningsfrekvens
 
