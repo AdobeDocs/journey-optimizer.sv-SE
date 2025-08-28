@@ -4,10 +4,10 @@ product: journey optimizer
 title: Arbeta med samordnade kampanjaktiviteter
 description: Lär dig hur ni samordnar kampanjaktiviteter
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
-source-git-commit: c1201025af216f8f3019e7696b6eb906962b681b
+source-git-commit: 2e04d3022ff6e8427e80a5a22cae367c4995730a
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 3%
+source-wordcount: '407'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +23,11 @@ Alla aktiviteter beskrivs i avsnitten nedan:
 * [Flödeskontrollaktiviteter](#flow-control)
 
 ![Lista över tillgängliga aktiviteter på arbetsytan](../assets/orchestrated-activities.png){width="80%" align="left"}
+
+
+>[!NOTE]
+>
+>Beroende på licensmodell, behörighet och implementering kan olika aktiviteter förekomma.
 
 ## Målinriktade aktiviteter {#targeting}
 
