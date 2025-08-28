@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 967713938ab0e3eaaaad7a86054ed1270a9cc1ca
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1695'
 ht-degree: 1%
 
 ---
@@ -36,6 +36,11 @@ I anpassade åtgärdsparametrar kan du skicka en enkel samling samt en samling m
 Observera också att de anpassade åtgärdsparametrarna har ett förväntat format (till exempel sträng, decimal). Du måste vara försiktig med att ta hänsyn till dessa förväntade format. Läs mer i det här [användningsexemplet](../building-journeys/collections.md).
 
 Anpassade åtgärder stöder bara JSON-format när [request](../action/about-custom-action-configuration.md#define-the-message-parameters) eller [response nyttloads](../action/action-response.md) används.
+
+>[!NOTE]
+>
+>När en slutpunkt har en svarstid på mer än 0,75 sekunder dirigeras dess anpassade åtgärdsanrop via en dedikerad långsam [anpassad åtgärdstjänst](../configuration/external-systems.md#response-time) i stället för standardtjänsten.
+
 
 ## Bästa praxis{#custom-action-enhancements-best-practices}
 
@@ -151,7 +156,7 @@ Adobe Journey Optimizer stöder TLS 1.3 som standard för anpassade åtgärder. 
 
 Du kan använda mTLS (Mutual Transport Layer Security) för att säkerställa förbättrad säkerhet vid utgående anslutningar till anpassade Adobe Journey Optimizer-åtgärder. mTLS är en heltäckande säkerhetsmetod för ömsesidig autentisering som ser till att båda parter delar information är de som gör anspråk på att vara innan data delas. mTLS innehåller ytterligare ett steg jämfört med TLS, där servern också frågar efter klientens certifikat och verifierar det i slutet.
 
-Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
+Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
 ## Definiera nyttolastparametrarna {#define-the-message-parameters}
 

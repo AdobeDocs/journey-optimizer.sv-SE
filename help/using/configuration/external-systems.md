@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 0a6db9c9537563fea5d56289d78b9ed49d703734
+source-git-commit: 967713938ab0e3eaaaad7a86054ed1270a9cc1ca
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 24%
+source-wordcount: '1499'
+ht-degree: 21%
 
 ---
 
@@ -76,7 +76,15 @@ För **anpassade åtgärder** måste du utvärdera kapaciteten för ditt externa
 >
 >Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [avsnittet](../action/action-response.md)
 
-## Timeout och försök igen{#timeout}
+## Slutpunkter med långsam svarstid {#response-time}
+
+När en slutpunkt har en svarstid på mer än 0,75 sekunder dirigeras dess anpassade åtgärdsanrop via en dedikerad **långsam anpassad åtgärdstjänst** i stället för standardtjänsten.
+
+Den här tjänsten för långsam anpassad åtgärd tillämpar en begränsning på 150 000 anrop var 30:e sekund. Gränsen används med ett skjutfönster som kan börja när som helst under en 30-sekundersperiod. När fönstret är fullt avvisas ytterligare anrop med spärrfel. Systemet väntar inte på nästa fasta intervall, men börjar kryssa omedelbart efter att tröskelvärdet på 30 sekunder har uppnåtts.
+
+Eftersom långsamma slutpunkter kan orsaka fördröjningar för alla åtgärder i kön i pipeline, bör du inte konfigurera anpassade åtgärder med slutpunkter som har långsamma svarstider. Vidarebefordra sådana åtgärder till den långsamma tjänsten för att skydda den övergripande systemprestandan och förhindra ytterligare latens för andra anpassade åtgärder.
+
+## Timeout och försök igen {#timeout}
 
 Om begränsnings- eller begränsningsregeln är uppfylld tillämpas timeout-regeln.
 
