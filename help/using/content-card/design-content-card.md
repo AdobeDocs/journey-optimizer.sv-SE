@@ -6,9 +6,9 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
-source-git-commit: c2f32533027e374a1df26943e7c5acd4e1d13869
+source-git-commit: ff3511e55eb56d8d5448df6d5de92dfd29ea8718
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,43 @@ Utvecklingskonstruktionen för kort är en formulärbaserad redigeringsupplevels
 
 När innehållet är definierat och personaliserat kan du granska och aktivera det. Din kampanj skickas enligt angivet schema. [Läs mer på den här sidan](../campaigns/review-activate-campaign.md).
 
+## Innehållskortets layout
+
+![](assets/content-card-image.png)
+
+I avsnittet **[!UICONTROL Content card layout]** väljer du ett av de tre bildlayoutalternativen baserat på dina meddelandekrav.
+
+* **[!UICONTROL Small image]**: Visar en kompakt bild tillsammans med text, vilket är idealiskt för meddelanden där innehåll prioriteras framför visuella.
+
+* **[!UICONTROL Large image]**: Innehåller en framträdande bild ovanför eller bredvid texten, vilket gör visuellt till huvudfokus för ditt meddelande.
+
+* **[!UICONTROL Image only]**: Visar bilden utan tillhörande text, perfekt för visuella meddelanden eller fristående bilder.
+
 ## Fliken Innehåll {#content-tab}
 
-På fliken **[!UICONTROL Content]** kan du anpassa dina innehållskort genom att definiera både deras innehåll och designen för knappen **[!UICONTROL Close]**. Dessutom kan du förbättra innehållet med media och lägga till åtgärdsknappar direkt från den här fliken.
+På fliken **[!UICONTROL Content]** kan du anpassa dina innehållskort genom att definiera innehåll och lägga till media och åtgärdsknappar direkt från den här fliken.
+
+### Textinnehåll {#title-body}
+
+Skriv texten i fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet.
+
+![](assets/content-card-design-2.png)
+
+Om du vill anpassa meddelandet ytterligare kan du använda ikonen **[!UICONTROL Personalization]** för att lägga till anpassade element. Detaljerade instruktioner om hur du använder personaliseringsfunktionerna finns i [det här avsnittet](../personalization/personalize.md).
+
+### Media {#add-media}
+
+I fältet **[!UICONTROL Media]** kan du förbättra dina innehållskort genom att lägga till media, vilket kan göra presentationen mer engagerande för slutanvändarna.
+
+![](assets/content-card-design-3.png)
+
+Om du vill ta med media skriver du antingen in URL-adressen för det medium som du vill använda eller klickar på ikonen **[!UICONTROL Select Assets]** för att välja bland resurser som lagras i ditt Assets-bibliotek. [Läs mer om resurshantering](../integrations/assets.md).
+
++++Fler alternativ med avancerad formatering
+
+Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du lägga till en **[!UICONTROL Alternative text]** för skärmläsarprogram och en annan resurs i fältet **[!UICONTROL Dark Mode Media URL]**.
+
++++
 
 ### Knappen Stäng {#close-button}
 
@@ -35,13 +69,7 @@ Du kan välja bland följande format:
 * **[!UICONTROL Simple]**
 * **[!UICONTROL Circle]**
 
-### Innehåll {#title-body}
 
-Skriv texten i fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet.
-
-![](assets/content-card-design-2.png)
-
-Om du vill anpassa meddelandet ytterligare kan du använda ikonen **[!UICONTROL Personalization]** för att lägga till anpassade element. Detaljerade instruktioner om hur du använder personaliseringsfunktionerna finns i [det här avsnittet](../personalization/personalize.md).
 
 <!--
 +++More options with advanced formatting
@@ -55,21 +83,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 +++
 -->
 
-### Media {#add-media}
 
-I fältet **[!UICONTROL Media]** kan du förbättra dina innehållskort genom att lägga till media, vilket kan göra presentationen mer engagerande för slutanvändarna.
-
-![](assets/content-card-design-3.png)
-
-Om du vill ta med media skriver du antingen in URL-adressen för det medium som du vill använda eller klickar på ikonen **[!UICONTROL Select Assets]** för att välja bland resurser som lagras i ditt Assets-bibliotek. [Läs mer om resurshantering](../integrations/assets.md).
-
-<!--
-+++More options with advanced formatting
-
-If the **[!UICONTROL Advanced formatting mode]** is switched on, you can add an **[!UICONTROL Alternative text]** for screen reading applications and another asset in the **[!UICONTROL Dark Mode Media URL]** field.
-
-+++
--->
 
 ### Knappar {#add-buttons}
 
@@ -110,4 +124,4 @@ I fältet **[!UICONTROL Target URL]** anger du webb-URL:en eller dee-linken som 
 
 ![](assets/content-card-design-6.png)
 
-Klicka på **[!UICONTROL Add Key/Value pair]** i avsnittet **[!UICONTROL Custom data]** om du vill ta med anpassade variabler i nyttolasten. Med dessa nyckel-/värdepar kan du skicka ytterligare data beroende på din konfiguration. På så sätt kan ni lägga till personaliserat eller dynamiskt innehåll, spårningsinformation eller andra data som är relevanta för konfigurationen.
+Klicka på **[!UICONTROL Custom data]** i avsnittet **[!UICONTROL Add Key/Value pair]** om du vill ta med anpassade variabler i nyttolasten. Med dessa nyckel-/värdepar kan du skicka ytterligare data beroende på din konfiguration. På så sätt kan ni lägga till personaliserat eller dynamiskt innehåll, spårningsinformation eller andra data som är relevanta för konfigurationen.
