@@ -1,18 +1,18 @@
 ---
 solution: Journey Optimizer
 product: Journey Optimizer
-title: Ochestrerade kampanjaktiviteter
-description: Ochestrerade kampanjaktiviteter
+title: Samordnade kampanjaktiviteter
+description: Samordnade kampanjaktiviteter
 redpen-status: CREATED_||_2025-08-11_20-27-08
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: d6635d58-b618-4d92-b60f-c6fc63e473a6
+source-git-commit: 4270fbfb191700704d161f472abf62f7af79c208
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-
-# Ochestrerade kampanjaktiviteter{#section-overview}
+# Samordnade kampanjaktiviteter{#section-overview}
 
 Samordnade kampanjaktiviteter i Adobe Journey Optimizer ger er möjlighet att skapa sömlösa, datadrivna marknadsföringsresor som kan kommunicera med er målgrupp vid rätt tidpunkt och via rätt kanaler. Genom att kombinera målinriktning, kanal och flödeskontroll kan ni definiera exakta målgruppssegment, personalisera meddelanden och automatisera komplexa arbetsflöden. Oavsett om ni skapar målgrupper, synkroniserar kampanjgrenar eller lägger till förseningar för perfekt timing, så fungerar dessa aktiviteter tillsammans för att effektivisera kampanjgenomförandet. Med verktyg som Enrichment för dataförbättring eller Delning för målgruppssegmentering får ni en flexibel verktygslåda för att skapa meningsfulla och slagkraftiga kundupplevelser.
 
@@ -20,7 +20,7 @@ Samordnade kampanjaktiviteter i Adobe Journey Optimizer ger er möjlighet att sk
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Arbeta med samordnade kampanjaktiviteter
 
@@ -30,7 +30,7 @@ Lär dig mer om målinriktning, kanaler och flödeskontroll för att utforma och
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda aktiviteten OCH-join
 
@@ -40,7 +40,7 @@ Synkronisera flera körningsgrenar genom att se till att föregående åtgärder
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Bygg målgruppsaktivitet
 
@@ -50,7 +50,7 @@ Definiera och konfigurera målgruppssegment för era kampanjer med aktiviteten S
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Ändra dimensionsaktivitet
 
@@ -60,7 +60,7 @@ Förbättra målgruppsanpassningen genom att växla mellan olika datatekniker i 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Kanalaktiviteter
 
@@ -70,7 +70,7 @@ Konfigurera e-post, SMS, push-meddelanden och direktreklam för flerkanalsmarkna
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Kombinera aktivitet
 
