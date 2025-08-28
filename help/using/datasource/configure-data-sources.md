@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: data, källa, konfiguration, fält
 exl-id: 9b0dcffb-f543-4066-850c-67ec33f74a31
-source-git-commit: e45ec5f0e1bbcc73892f9cde5923627886f44ef6
+source-git-commit: 521b643dfea095c2e9499db60038dc7202fc8648
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 7%
+source-wordcount: '603'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 
 Så här konfigurerar du en datakälla:
 
-1. Välj **[!UICONTROL Configurations]** på menyn Administration. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Data Sources]**. Listan med datakällor visas. Mer information om gränssnittet finns på [den här sidan](../start/user-interface.md).
+1. Välj **[!UICONTROL Configurations]** på menyn Administration. Klicka på **[!UICONTROL Data Sources]** i avsnittet **[!UICONTROL Manage]**. Listan med datakällor visas. Mer information om gränssnittet finns på [den här sidan](../start/user-interface.md).
 
    ![](assets/journey18.png)
 
@@ -60,7 +60,7 @@ Antalet resor som använder en fältgrupp visas i fältet **[!UICONTROL Used in]
 
 Du kan lägga till eller ta bort fält från en fältgrupp som inte används i ett utkast eller en direktresa.
 
-Du kan lägga till men du kan inte ta bort ett fält från en fältgrupp som används i ett eller flera utkast- eller direktresor. På så sätt undviks att resorna bryts.
+Om fältgruppen används i ett eller flera utkast- eller direktresor kan du stegvis lägga till nya fält från det valda schemat, men du kan inte avmarkera/ta bort/ändra fält som redan har markerats. Uppdateringar till en fältgrupp tillåts inte om befintliga schemafält som redan används av utkast- eller direktresor ändras, till exempel ändring av datatypen för ett fält. På så sätt undviks att resorna bryts
 
 Följ de här stegen för att ta bort ett fält från en fältgrupp som används i en eller flera resor. Låt oss använda ett exempel på en fältgrupp med namnet&quot;Fältgrupp A&quot;.
 
