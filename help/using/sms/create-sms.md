@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
+source-git-commit: 12dbe0031e9037d879e0d2309c7c26cc3c00cc4e
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 2%
@@ -129,7 +129,7 @@ Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna 
 
    >[!CAUTION]
    >
-   > Livslängden för korta URL-adresser är inställd på 15 dagar. Efter den här perioden kommer dessa korta URL:er inte längre att vara tillgängliga och kommer att visa meddelandet: `404 short-code not found`.
+   > Livslängden för korta URL-adresser är inställd på 30 dagar. Efter den här perioden kommer dessa korta URL:er inte längre att vara tillgängliga och kommer att visa meddelandet: `404 short-code not found`.
 
 1. Klicka på **[!UICONTROL Save]** och kontrollera meddelandet i förhandsgranskningen. Du kan nu testa och kontrollera meddelandeinnehållet enligt beskrivningen i [det här avsnittet](#sms-mms-test).
 

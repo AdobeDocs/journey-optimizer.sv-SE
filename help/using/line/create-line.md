@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a93d4dc9-f0e9-400c-b9a4-6cdac84390fd
-source-git-commit: 81cd7c2c8be26d760f369ecacc5859cf090234fc
+source-git-commit: 12dbe0031e9037d879e0d2309c7c26cc3c00cc4e
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '616'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
-1. Välj **[!UICONTROL Frequency]** i SMS-meddelandet på menyn **[!UICONTROL Action triggers]**:
+1. Välj **[!UICONTROL Action triggers]** i SMS-meddelandet på menyn **[!UICONTROL Frequency]**:
 
    * En gång
    * Dagligen
@@ -77,6 +77,18 @@ Nu kan du börja designa innehållet i ditt textmeddelande med knappen **[!UICON
 >[!ENDTABS]
 
 ## Definiera ditt LINE-innehåll{#line-content}
+
+Adobe Journey Optimizer stöder följande meddelandetyper för LINE:
+
+* **Text**: Skicka oformaterad eller formaterad text.
+* **Stickers**: Lägg till tecken och uttryck med hjälp av Lines egna klistermärken.
+* **Bilder**: Bifoga bilder för att förbättra den visuella effekten.
+* **Videor**: Dela videoinnehåll för dynamisk kommunikation.
+* **Platser**: Skicka platsinformation med kartor.
+* **Mallar**: Använd fördefinierade mallar för konsekventa meddelanden.
+* **Flex Messages**: Skapa komplexa layouter med avancerat innehåll med JSON-baserade Flex Messages.
+
+Dessa meddelandetyper kan konfigureras genom att JSON-innehållet redigeras direkt, vilket möjliggör dynamiska och personaliserade meddelandestrategier.
 
 Följ stegen nedan för att konfigurera ditt LINE-innehåll.
 
