@@ -4,9 +4,9 @@ product: journey optimizer
 title: Skapa en måldimension
 description: Lär dig mapp ett relationsschema till kundprofilen
 exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: c1201025af216f8f3019e7696b6eb906962b681b
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Konfigurera en måldimension {#configuration}
 
-Med **[!UICONTROL Orchestrated Campaigns]** kan du utforma och leverera riktad kommunikation på entitetsnivå med hjälp av Adobe Experience Platform relationsschemafunktioner.
+Med **[!UICONTROL Orchestrated Campaigns]** kan du utforma och leverera riktad kommunikation på entitetsnivå med hjälp av Adobe Experience Platform relationsschemafunktioner. Experience Platform använder scheman för att beskriva datastrukturen på ett konsekvent och återanvändbart sätt. När data hämtas till Experience Platform är de strukturerade enligt ett XDM-schema.
 
 Även om segmentering för **[!UICONTROL Orchestrated Campaigns]** i första hand utförs på relationsscheman, sker den faktiska meddelandeleveransen alltid på nivån **Profil**.
 
@@ -30,7 +30,7 @@ När du konfigurerar mål definierar du två huvudaspekter:
 
 * **Profillänkning**
 
-  Systemet måste förstå hur målschemat mappar till `Profile`. Detta uppnås genom ett delat identitetsfält - ett som finns både i målschemat och `Profile`-schemat och som har konfigurerats som ett identitetsnamnområde.
+  Systemet måste förstå hur målschemat mappar till `Profile`-schemat. Detta uppnås genom ett delat identitetsfält - ett som finns både i målschemat och `Profile`-schemat och som har konfigurerats som ett identitetsnamnområde.
 
 ## Skapa en måldimension {#targeting-dimension}
 
@@ -50,7 +50,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
    I det här exemplet är kundprofilen länkad till flera prenumerationer, som vart och ett representeras av en unik `crmID` i `Recipient`-schemat. Genom att ange att **[!UICONTROL Target Dimension]** ska använda `Recipient`-schemat och dess `crmID`-identitet kan du skicka meddelanden på prenumerationsnivå i stället för till huvudkundprofilen, så att varje kontrakt eller rad får ett eget anpassat meddelande.
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)
 
    ![](assets/target-dimension-2.png)
 

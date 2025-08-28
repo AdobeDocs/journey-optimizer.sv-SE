@@ -4,10 +4,10 @@ product: journey optimizer
 title: Konfigurationssteg
 description: Lär dig hur du hämtar data till Adobe Experience Platform från källor som stöds, som SFTP, molnlagring eller databaser.
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: c1201025af216f8f3019e7696b6eb906962b681b
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 0%
+source-wordcount: '674'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,8 @@ ht-degree: 0%
 
 Med Adobe Experience Platform kan data hämtas från externa källor samtidigt som du kan strukturera, etikettera och förbättra inkommande data med hjälp av Experience Platform tjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra.
 
+En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). Data som har importerats till Experience Platform lagras i datasjön som datauppsättningar.
+
 ## Källor som stöds för samordnade kampanjer {#supported}
 
 Följande källor stöds för användning med Orchestrated-kampanjer:
@@ -30,35 +32,35 @@ Följande källor stöds för användning med Orchestrated-kampanjer:
   <thead>
     <tr>
       <th>Typ</th>
-      <th>Source</th>
+      <th>Källa</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td rowspan="3">molnlagring</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
     </tr>
       <td rowspan="4">Datalager i molnet</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
     </tr>
     <tr>
       <td rowspan="3">Filbaserade överföringar</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
     </tr>
 
 </tbody>
@@ -82,7 +84,7 @@ Om kunden bara vill ta bort poster från Adobe Experience Platform utan att orig
 
   Om den är licensierad kan **Data Distiller** användas för borttagningsåtgärder direkt i Adobe Experience Platform, oberoende av källsystemet.
 
-  [Läs mer om Data Distiller](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/overview)
+  [Läs mer om Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 
 ## Konfigurera ett dataflöde
 
@@ -98,7 +100,7 @@ I det här exemplet visas hur du konfigurerar ett dataflöde som importerar stru
 
    ![](assets/admin_sources_2.png)
 
-1. Välj de data du vill importera till Adobe Experience Platform.
+1. Välj de data som ska importeras till Adobe Experience Platform.
 
    ![](assets/S3_config_1.png)
 
@@ -120,7 +122,7 @@ I det här exemplet visas hur du konfigurerar ett dataflöde som importerar stru
 
    Observera att den största storlek som stöds är 100 MB.
 
-1. I fönstret **[!UICONTROL Mapping]** kontrollerar du att varje källfilsattribut är korrekt mappat med motsvarande fält i målschemat.
+1. I fönstret **[!UICONTROL Mapping]** kontrollerar du att varje källfilsattribut är korrekt mappat med motsvarande fält i målschemat. [Läs mer om måldimensioner](target-dimension.md).
 
    Klicka på **[!UICONTROL Next]** när du är klar.
 

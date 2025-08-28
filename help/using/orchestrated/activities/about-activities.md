@@ -4,9 +4,9 @@ product: journey optimizer
 title: Arbeta med samordnade kampanjaktiviteter
 description: Lär dig hur ni samordnar kampanjaktiviteter
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: c1201025af216f8f3019e7696b6eb906962b681b
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '393'
 ht-degree: 3%
 
 ---
@@ -30,6 +30,8 @@ Dessa aktiviteter är specifika för målgruppsanpassning. Med dem kan du skapa 
 
 ![Lista över målinriktade aktiviteter](../assets/targeting-activities.png){width="40%" align="left"}
 
+Tillgängliga målinriktningsaktiviteter är:
+
 * [Skapa målgrupp](build-audience.md): Definiera målpopulationen. Du kan antingen välja en befintlig målgrupp eller använda regelbyggaren för att definiera en egen fråga.
 * [Ändra dimension](change-dimension.md): Ändra måldimensionen när du skapar din orkestrerade kampanj.
 * [Kombinera](combine.md): Utför segmentering på den inkommande populationen. Du kan använda en union, en skärning eller ett undantag.
@@ -49,9 +51,11 @@ Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringsk
 >title="Avsluta aktivitet"
 >abstract="Med aktiviteten **End** kan du grafiskt markera slutet på en orkestrerad kampanj. Denna aktivitet har ingen funktionell inverkan och är därför frivillig."
 
-![Lista över flödeskontrollaktiviteter](../assets/flow-control-activities.png){width="30%" align="left"}
+Följande aktiviteter är specifika för att organisera och köra Orchestrated-kampanjer. Deras huvuduppgift är att samordna de andra aktiviteterna.
 
-Följande aktiviteter är specifika för att organisera och köra Orchestrated-kampanjer. Deras huvuduppgift är att samordna de övriga verksamheterna:
+![Lista över flödeskontrollaktiviteter](../assets/flow-control-activities.png){width="20%" align="left"}
+
+Tillgängliga flödeskontrollaktiviteter är:
 
 * [And-join](and-join.md): Synkronisera flera körningsgrenar för en orchestrerad-kampanj.
 * [Förgrening](fork.md): Skapa utgående övergångar om du vill starta flera aktiviteter samtidigt.
