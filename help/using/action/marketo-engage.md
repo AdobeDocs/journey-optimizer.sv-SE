@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: marknadsföring, marknadsföra, engagera integreringen
 exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
-source-git-commit: 1592c3ae28f1f7a5465c8fb236790a460e9afb25
+source-git-commit: aafd172fe24a4ecb300f5f4cf5561f38dfeadfc7
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -39,14 +39,10 @@ I Journey Optimizer måste du konfigurera en anpassad åtgärd för Marketo Enga
 1. Välj **[!UICONTROL Configurations]** i ADMINISTRATION-menyavsnittet.
 1. Klicka på **[!UICONTROL Actions]** i avsnittet **[!UICONTROL Create Action]**. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 1. Ange namn, beskrivning och välj **Adobe Marketo Engage** som **åtgärdstyp**
-
-![](assets/engage-customaction-creation.png){width="40%" align="left"}
-
+   ![](assets/engage-customaction-creation.png){width="40%" align="left"}
 1. Klicka på ikonen **Redigera nyttolast** för dina **Request**- och **Response**-nyttolaster.
 1. För båda delarna skapar du din nyttolast och klistrar in den i det dedikerade popup-fönstret.
-
-![](assets/engage-customaction-payload.png){width="70%" align="left"}
-
+   ![](assets/engage-customaction-payload.png){width="70%" align="left"}
 1. Inspektera och konfigurera nyttolastvärden
 
 Obs! Om du vill skicka värden dynamiskt ändrar du **Konstant** till **Variabel** för varje fält.
