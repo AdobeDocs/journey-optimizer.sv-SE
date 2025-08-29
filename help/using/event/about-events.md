@@ -87,7 +87,7 @@ Händelser som används i Live-, Draft- eller Closed-resor kan inte tas bort. Om
 
 Lär dig hur du konfigurerar en händelse, anger slutpunkten för direktuppspelning och nyttolasten för en händelse.
 
->[!VIDEO](https://video.tv.adobe.com/v/336253?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3431509?quality=12&captions=swe)
 
 Förstå tillämpliga användningsexempel för affärshändelser. Lär dig hur du bygger en resa med hjälp av ett affärsevenemang och vilka bästa metoder som ska användas.
 
