@@ -6,9 +6,9 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
-source-git-commit: ff3511e55eb56d8d5448df6d5de92dfd29ea8718
+source-git-commit: dccaaa0588b504c1c00ce25fd6bbb4f34652ec91
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,15 @@ I avsnittet **[!UICONTROL Content card layout]** väljer du ett av de tre bildla
 
 * **[!UICONTROL Small image]**: Visar en kompakt bild tillsammans med text, vilket är idealiskt för meddelanden där innehåll prioriteras framför visuella.
 
+  Mer information finns i Adobe Developer-dokumentationen [ för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/smallimage-template/) och [ för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/smallimagecarduistate/).
+
 * **[!UICONTROL Large image]**: Innehåller en framträdande bild ovanför eller bredvid texten, vilket gör visuellt till huvudfokus för ditt meddelande.
 
+  Mer information finns i Adobe Developer-dokumentationen [ för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/largeimage-template/) och [ för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/largeimagecarduistate/).
+
 * **[!UICONTROL Image only]**: Visar bilden utan tillhörande text, perfekt för visuella meddelanden eller fristående bilder.
+
+  Mer information finns i Adobe Developer-dokumentationen [ för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/imageonly-template/) och [ för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/imageonlycarduistate/).
 
 ## Fliken Innehåll {#content-tab}
 
@@ -37,17 +43,17 @@ På fliken **[!UICONTROL Content]** kan du anpassa dina innehållskort genom att
 
 ### Textinnehåll {#title-body}
 
-Skriv texten i fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet.
-
 ![](assets/content-card-design-2.png)
+
+Skriv texten i fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet.
 
 Om du vill anpassa meddelandet ytterligare kan du använda ikonen **[!UICONTROL Personalization]** för att lägga till anpassade element. Detaljerade instruktioner om hur du använder personaliseringsfunktionerna finns i [det här avsnittet](../personalization/personalize.md).
 
 ### Media {#add-media}
 
-I fältet **[!UICONTROL Media]** kan du förbättra dina innehållskort genom att lägga till media, vilket kan göra presentationen mer engagerande för slutanvändarna.
-
 ![](assets/content-card-design-3.png)
+
+I fältet **[!UICONTROL Media]** kan du förbättra dina innehållskort genom att lägga till media, vilket kan göra presentationen mer engagerande för slutanvändarna.
 
 Om du vill ta med media skriver du antingen in URL-adressen för det medium som du vill använda eller klickar på ikonen **[!UICONTROL Select Assets]** för att välja bland resurser som lagras i ditt Assets-bibliotek. [Läs mer om resurshantering](../integrations/assets.md).
 
@@ -57,11 +63,38 @@ Om **[!UICONTROL Advanced formatting mode]** är aktiverat kan du lägga till en
 
 +++
 
+### Knappar {#add-buttons}
+
+![](assets/content-card-design-4.png)
+
+Lägg till knappar så att användarna kan interagera med dina innehållskort.
+
+1. Klicka på **[!UICONTROL Add button]** om du vill skapa en ny åtgärdsknapp.
+
+1. Redigera knappfältet **[!UICONTROL Title]** för att ange etiketten som ska visas på knappen.
+
+1. Välj en **[!UICONTROL Interact event]** för att definiera vilken åtgärd som ska utlösas när användarna klickar på eller interagerar med knappen.
+
+1. I fältet **[!UICONTROL Target]** anger du webb-URL:en eller länken till den plats där användarna ska dirigeras efter att ha interagerat med knappen.
+
+<!--
++++More options with advanced formatting
+
+If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Buttons]**:
+
+* the **[!UICONTROL Font]**
+* the **[!UICONTROL Pt size]**
+* the **[!UICONTROL Font Color]**
+* the **[!UICONTROL Alignment]**
+
++++
+-->
+
 ### Knappen Stäng {#close-button}
 
 ![](assets/content-card-design-1.png)
 
-Välj **[!UICONTROL Style]** för **[!UICONTROL Close button]** om du vill anpassa utseendet.
+Välj **[!UICONTROL Style]** för **[!UICONTROL Dismiss button]** om du vill anpassa utseendet.
 
 Du kan välja bland följande format:
 
@@ -84,33 +117,6 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 -->
 
 
-
-### Knappar {#add-buttons}
-
-Lägg till knappar så att användarna kan interagera med dina innehållskort.
-
-![](assets/content-card-design-4.png)
-
-1. Klicka på **[!UICONTROL Add button]** om du vill skapa en ny åtgärdsknapp.
-
-1. Redigera knappfältet **[!UICONTROL Title]** för att ange etiketten som ska visas på knappen.
-
-1. Välj en **[!UICONTROL Interact event]** för att definiera vilken åtgärd som ska utlösas när användarna klickar på eller interagerar med knappen.
-
-1. I fältet **[!UICONTROL Target]** anger du webb-URL:en eller länken till den plats där användarna ska dirigeras efter att ha interagerat med knappen.
-
-<!--
-+++More options with advanced formatting
-
-If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose for your **[!UICONTROL Buttons]**:
-
-* the **[!UICONTROL Font]**
-* the **[!UICONTROL Pt size]**
-* the **[!UICONTROL Font Color]**
-* the **[!UICONTROL Alignment]**
-
-+++
--->
 
 ### Vid klickning, beteende
 
