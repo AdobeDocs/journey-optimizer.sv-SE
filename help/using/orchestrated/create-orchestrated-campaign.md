@@ -4,9 +4,9 @@ product: journey optimizer
 title: Skapa och schemalägg samordnade kampanjer med Journey Optimizer
 description: Lär dig skapa och schemalägga en orkestrerad kampanj med Adobe Journey Optimizer
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: a58d71b3cdb5e83f80b064673f0a6d087b7c191d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -31,19 +31,22 @@ Så här skapar du en orkestrerad kampanj:
 
    ![](assets/create-modal.png)
 
-1. Definiera kampanjegenskaperna. Det gör du genom att klicka på ikonen ![Kampanjinställningar](assets/do-not-localize/campaign-settings.svg) bredvid kampanjens namn.
-
-   ![](assets/inventory-create.png)
+1. Definiera kampanjegenskaperna.
 
    1. Ange **[!UICONTROL Name]** och **[!UICONTROL Description]** för kampanjen.
 
    1. Välj en **[!UICONTROL Merge policy]** för din kampanj.
 
-      I [!DNL Adobe Experience Platform] är varje målgrupp kopplad till en specifik sammanfogningsprincip, som definierar hur profilinformation kombineras för att bilda en sammanfogad profil. När du väljer en sammanfogningsprincip i aktiviteten Läs målgrupp är bara målgrupper som baseras på samma sammanfogningsprincip tillgängliga. Som standard används standardprincipen för sammanfogning, men du kan ändra den om det behövs. Mer information om kopplingsprofiler finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+      I [!DNL Adobe Experience Platform] är varje målgrupp kopplad till en specifik sammanfogningsprincip, som definierar hur profilinformation kombineras för att bilda en sammanfogad profil. När du väljer en sammanfogningsprincip i aktiviteten Läs målgrupp är bara målgrupper som baseras på samma sammanfogningsprincip tillgängliga. Som standard används standardprincipen för sammanfogning, men du kan ändra den om det behövs. Mer information om kopplingsprofiler finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
    1. Använd fältet **[!UICONTROL Tags]** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från listan Orchestrated-kampanjer. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
 
    1. Klicka på **[!UICONTROL Save]**.
+
+
+   Du kan när som helst komma åt kampanjegenskaperna med hjälp av ikonen ![Kampanjinställningar](assets/do-not-localize/campaign-settings.svg) bredvid kampanjens namn.
+
+   ![](assets/inventory-create.png)
 
 ## Schemalägg kampanjen {#schedule}
 
@@ -78,7 +81,7 @@ Så här konfigurerar du kampanjschemat:
 
 1. Välj en körningsfrekvens för kampanjen och konfigurera sedan de tillgängliga alternativen. Inställningarna varierar beroende på vald frekvens:
 
-   +++En
+   +++En gång
 
    Kör kampanjen en gång vid ett angivet datum och en viss tidpunkt.
 
@@ -87,7 +90,7 @@ Så här konfigurerar du kampanjschemat:
 
    +++
 
-   +++Daily
+   +++Dagligen
 
    Kör kampanjen varje dag eller på valda dagar.
 
@@ -121,7 +124,7 @@ Så här konfigurerar du kampanjschemat:
 
    +++
 
-   +++Månad
+   +++Månatligen
 
    Kör kampanjen månadsvis, med alternativ för specifika dagar.
 
