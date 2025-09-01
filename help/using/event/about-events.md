@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelser, händelse, resa, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-source-git-commit: 461bf985a890d0f2f2723241846df0666248eea0
+source-git-commit: 13bc5f91e0e47bf36b9b9921fa926f8a5e2a50d6
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 20%
@@ -30,7 +30,6 @@ I händelsekonfigurationen konfigurerar du de händelser som förväntas under r
 Händelsekonfigurationen är **obligatorisk** och måste utföras av en datatekniker.
 
 Du kan konfigurera två typer av händelser: **Unitära händelser** och **Affärshändelser**.
-
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
@@ -55,7 +54,7 @@ Det finns två typer av händelse-ID för **unitary**-händelser:
 
   >[!CAUTION]
   >
-  >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan bearbeta till 5 000 per sekund för en viss organisation. Det motsvarar Journey Optimizer SLA:er. Se din Journey Optimizer-licens och [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+  >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan bearbeta till 5 000 per sekund för en viss organisation. Det motsvarar Journey Optimizer SLA:er. Se din Journey Optimizer-licens och [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 * **Systemgenererade** händelser: Dessa händelser kräver ett eventID. Det här eventID-fältet genereras automatiskt när händelsen skapas. Systemet som skickar händelsen ska inte generera ett ID utan det ska skicka det som finns i nyttolastförhandsvisningen.
 
@@ -67,7 +66,7 @@ Det finns två typer av händelse-ID för **unitary**-händelser:
 
 Händelser är POST API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Händelsers nyttolast följer XDM-formateringen.
 
-Nyttolasten innehåller information som krävs för att API:er för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för att [!DNL Journey Optimizer] ska kunna arbeta och information som ska användas på resor (i brödtexten, till exempel, mängden övergiven vagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Se [den här länken](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=sv-SE){target="_blank"} för mer information om API:er för strömningsinmatning.
+Nyttolasten innehåller information som krävs för att API:er för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för att [!DNL Journey Optimizer] ska kunna arbeta och information som ska användas på resor (i brödtexten, till exempel, mängden övergiven vagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Se [den här länken](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"} för mer information om API:er för strömningsinmatning.
 
 Efter att ha kommit via API:er för direktuppspelning av inmatning flödar händelserna till en intern tjänst som kallas Pipeline och sedan i Adobe Experience Platform. Om händelseschemat har tjänstflaggan realtidskundprofil aktiverad och ett datauppsättnings-ID som även har flaggan realtidskundprofil flödar det in i tjänsten realtidskundprofil.
 
@@ -76,15 +75,15 @@ För systemgenererade händelser filtrerar pipelinen händelser som har en nytto
 ## Uppdatera och ta bort en händelse {#update-event}
 
 
-För att undvika att bryta befintliga resor kan du bara ändra namn, beskrivning eller lägga till nyttolastfält när du redigerar en händelse som används i en utkast, live eller stängd resa.
+Om du vill undvika att bryta befintliga resor kan du bara ändra namn, beskrivning eller lägga till nyttolastfält när du redigerar en händelse som används i en **Utkast**-, **Live**- eller **Closed** -resa.
 
-Händelser som används i Live-, Draft- eller Closed-resor kan inte tas bort. Om du vill ta bort en händelse som används måste du stoppa resor som använder den och/eller ta bort den från de utkast till resor där den används. Du kan kontrollera fältet **[!UICONTROL Used in]**. Här visas antalet resor som använder den aktuella händelsen. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
+Det går inte att ta bort händelser som används i resor med **Live**, **Draft** eller **Closed**. Om du vill ta bort en händelse som används måste du stoppa resor som använder den och/eller ta bort den från de utkast till resor där den används. Du kan kontrollera fältet **[!UICONTROL Used in]**. Här visas antalet resor som använder den aktuella händelsen. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
 
 ## Instruktionsfilmer {#video}
 
 Lär dig hur du konfigurerar en händelse, anger slutpunkten för direktuppspelning och nyttolasten för en händelse.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431509?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/336253?quality=12)
 
 Förstå tillämpliga användningsexempel för affärshändelser. Lär dig hur du bygger en resa med hjälp av ett affärsevenemang och vilka bästa metoder som ska användas.
 
