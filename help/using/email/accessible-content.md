@@ -3,29 +3,29 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Utforma tillgängligt innehåll
 description: Lär dig hur du utformar tillgängligt innehåll för e-postmeddelanden och landningssidor i Journey Optimizer
-feature: Email Design
+feature: Email Design, Landing Pages
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
-hide: true
-hidefromtoc: true
-source-git-commit: be87e47f7c3303575c2784af7ce76c138cb03154
+source-git-commit: fff37a5325eb99a5a484cad93c391cb92fef7526
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1633'
 ht-degree: 0%
 
 ---
 
 # Utforma tillgängligt innehåll {#accessible-content}
 
+>[!NOTE]
+>
+>Den här sidan handlar om att göra ditt innehåll tillgängligt för alla dina mottagare, så att personer med funktionshinder kan läsa, förstå och interagera med dina e-postmeddelanden och landningssidor som är utformade med [!DNL Journey Optimizer].
+>
+>Hjälpmedelsfunktionerna för gränssnittet [!DNL Journey Optimizer] beskrivs i [det här avsnittet](../start/accessibility.md).
+
 Den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} är ett direktiv som är utformat för att förbättra den inre marknaden för tillgängliga produkter och tjänster genom att eliminera hinder som orsakas av olika nationella regler i medlemsstaterna.
 
 När du skapar innehåll för dina **e-postmeddelanden** och **landningssidor** i [!DNL Journey Optimizer] kan de bästa metoderna för tillgänglighet för e-postmarknadsförare som visas på den här sidan hjälpa dig att följa det här direktivet. De baseras på Web Content Accessibility Guidelines (WCAG) 2.1, nivå AA.
-
->[!NOTE]
->
->Hjälpmedelsfunktionerna när du använder gränssnittet [!DNL Journey Optimizer] beskrivs i [det här avsnittet](../start/accessibility.md).
 
 I den europeiska tillgänglighetslagen anges att all digital kommunikation, inklusive e-post, nyhetsbrev, PDF-filer och hämtningsbart innehåll, bör vara tillgänglig. Du måste därför följa särskilda riktlinjer, t.ex. använda hjälpmedelsanpassade teckensnitt, läsbara format och ange alternativ text för bilder.
 
@@ -33,7 +33,6 @@ Med [!DNL Journey Optimizer] [e-post-Designer](content-from-scratch.md), som gö
 
 <!--You can adjust a number of styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane.-->
  
-
 ## Säkra textläsbarhet {#text-readability}
 
 Utnyttja fliken **[!UICONTROL Styles]** i komponenten **[!UICONTROL Text]** för att säkerställa att texten är läsbar, till exempel genom att använda rätt färgkontrast och enkla teckensnitt. [Läs mer](content-components.md#text)
