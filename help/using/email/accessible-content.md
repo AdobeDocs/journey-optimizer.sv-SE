@@ -8,32 +8,29 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
-source-git-commit: fff37a5325eb99a5a484cad93c391cb92fef7526
+source-git-commit: 09a6ec5bf04a1252fea8724d587b46f688842906
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
 
 # Utforma tillgängligt innehåll {#accessible-content}
 
+Den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} är ett direktiv som är utformat för att förbättra den inre marknaden för tillgängliga produkter och tjänster genom att eliminera hinder som orsakas av olika nationella regler i medlemsstaterna.
+
+I den här förordningen anges att all digital kommunikation, inklusive e-post, nyhetsbrev, PDF-filer och hämtningsbart innehåll, bör vara tillgänglig. När du skapar innehåll för dina mottagare måste du därför följa särskilda riktlinjer, t.ex. använda hjälpmedelsanpassade teckensnitt, läsbara format och ange alternativ text för bilder.
+
+Med [!DNL Journey Optimizer] [Email Designer](content-from-scratch.md), som gör det möjligt för marknadsförare att skapa innehåll både för **e-post** och **landningssidor**, kan du enkelt följa det här direktivet, baserat på Web Content Accessibility Guidelines (WCAG) 2.1, nivå AA.
+
+I enlighet med detta listas de bästa sätten att utforma hjälpmedelsanpassat innehåll med [!DNL Journey Optimizer] nedan.
+
 >[!NOTE]
 >
 >Den här sidan handlar om att göra ditt innehåll tillgängligt för alla dina mottagare, så att personer med funktionshinder kan läsa, förstå och interagera med dina e-postmeddelanden och landningssidor som är utformade med [!DNL Journey Optimizer].
 >
->Hjälpmedelsfunktionerna för gränssnittet [!DNL Journey Optimizer] beskrivs i [det här avsnittet](../start/accessibility.md).
-
-Den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} är ett direktiv som är utformat för att förbättra den inre marknaden för tillgängliga produkter och tjänster genom att eliminera hinder som orsakas av olika nationella regler i medlemsstaterna.
-
-När du skapar innehåll för dina **e-postmeddelanden** och **landningssidor** i [!DNL Journey Optimizer] kan de bästa metoderna för tillgänglighet för e-postmarknadsförare som visas på den här sidan hjälpa dig att följa det här direktivet. De baseras på Web Content Accessibility Guidelines (WCAG) 2.1, nivå AA.
-
-I den europeiska tillgänglighetslagen anges att all digital kommunikation, inklusive e-post, nyhetsbrev, PDF-filer och hämtningsbart innehåll, bör vara tillgänglig. Du måste därför följa särskilda riktlinjer, t.ex. använda hjälpmedelsanpassade teckensnitt, läsbara format och ange alternativ text för bilder.
-
-Med [!DNL Journey Optimizer] [e-post-Designer](content-from-scratch.md), som gör det möjligt för marknadsförare att skapa innehåll både för e-post och landningssidor, kan du enkelt följa dessa riktlinjer. De bästa sätten att utforma hjälpmedelsanpassat innehåll med [!DNL Journey Optimizer] visas nedan.
-
-<!--You can adjust a number of styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane.-->
- 
-
+>Å andra sidan är hjälpmedelsfunktionerna för gränssnittet [!DNL Journey Optimizer] detaljerade i [det här avsnittet](../start/accessibility.md).
+> 
 ## Säkra textläsbarhet {#text-readability}
 
 Utnyttja fliken **[!UICONTROL Styles]** i komponenten **[!UICONTROL Text]** för att säkerställa att texten är läsbar, till exempel genom att använda rätt färgkontrast och enkla teckensnitt. [Läs mer](content-components.md#text)
@@ -83,7 +80,7 @@ Du kan till exempel uppdatera [bakgrunden](backgrounds.md) eller ändra marginal
 
 Dessutom kan du förhandsgranska och optimera designen för olika enheter och skärmstorlekar med e-post [!DNL Journey Optimizer] från Designer. Du kan när som helst **[!UICONTROL Switch to live view]** för att kontrollera hur ditt innehåll kan återges på olika enhetsstorlekar.
 
-![](assets/accessible-live-view.png){width="70%"}
+![](assets/accessible-live-view.png){width="80%"}
 
 >[!CAUTION]
 >
@@ -138,7 +135,7 @@ Om du vill verifiera innehållets tillgänglighet kan du använda testfunktioner
 
 Om du vill kontrollera på ett mer konsekvent sätt om innehållet är tillgängligt kan du gå till särskilda externa verktyg som:
 
-* Kontrastkontrollen [WebAim](https://webaim.org/resources/contrastchecker/){target="_blank"} och verktyget [WAVE för utvärdering av webbtillgänglighet](https://wave.webaim.org/){target="_blank"} för utvärdering av kontrast och kompatibilitet.
+* Kontrastkontrollen [WebAim](https://webaim.org/resources/contrastchecker/){target="_blank"} och verktyget [WAVE för utvärdering av webbtillgänglighet](https://wave.webaim.org/){target="_blank"} för utvärdering av kontrast och efterlevnad.
 
 * Hjälpmedelstekniker som skärmläsare (till exempel: [NVDA](https://www.nvaccess.org/download/){target="_blank"} eller [VoiceOver](https://support.apple.com/en-ie/guide/iphone/iph3e2e415f/ios){target="_blank"} på iPhone) för att få e-post från synskadade användare.
 
@@ -154,11 +151,11 @@ Bland de bästa sätten att utforma innehåll i mörkt läge bör du använda ge
 
 Detaljerade metodtips som är specifika för mörkt läge, inklusive riktlinjer för att säkerställa tillgänglighet, finns i [det här avsnittet](dark-mode.md#best-practices). <!--KEEP dark mode accessibility best practices IN ONE SINGLE LOCATION - for now listed on the Dark mode page.-->
 
-## Använd specifika attribut för tillgängliga e-postmeddelanden {#attributes}
+## Använd specifika attribut för tillgänglighet {#attributes}
 
-### `lang`- och `dir`-attribut
+### Språkattribut {#language}
 
-När du skapar hjälpmedelsanpassade e-postmeddelanden inkluderar du attributen `lang` (språk) och `dir` (textorientering) i e-postmeddelandets brödtext. Dessa attribut hjälper hjälpmedelstekniker som skärmläsare att tolka och presentera innehållet på rätt sätt.
+När du skapar designer inkluderar du attributen `lang` (språk) och `dir` (textorientering) i innehållets brödtext. Dessa attribut hjälper hjälpmedelstekniker som skärmläsare att tolka och presentera innehållet på rätt sätt.
 
 * Attributet `lang` anger språket i e-postmeddelandet som ska användas till hjälpmedelstekniker, vilket säkerställer att orden uttalas korrekt.
 
@@ -202,13 +199,13 @@ Skärmläsare förlitar sig på attributet `lang` för att använda rätt uttydn
 >
 >Om e-postmeddelandet innehåller flera språk tilldelar du lämpliga språkattribut till specifika avsnitt (t.ex. `<table>` eller `<td>` block) för att säkerställa att varje del läses korrekt.
 
-### Layouttabeller och `role="presentation"`
+### Tabeller {#tables}
 
-I HTML e-postmeddelanden används ofta tabeller för layout. Som standard behandlar skärmläsare varje `<table>` som en datatabell, där rader, kolumner och struktur presenteras. Detta kan vara förvirrande om tabellen bara används för formatering.
+I HTML används ofta tabeller för layout. Som standard behandlar skärmläsare varje `<table>` som en datatabell, där rader, kolumner och struktur presenteras. Detta kan vara förvirrande om tabellen bara används för formatering.
 
 Lägg till `role="presentation"` (eller `role="none"`) i layouttabeller för att säkerställa att hjälpmedelstekniker hoppar över sin struktur och bara fokuserar på det faktiska innehållet.
 
-+++Exempel - Layouttabell (med role=&quot;presentation&quot;): 
++++Exempel - Layouttabell (med `role="presentation"`)
 
 ```
 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
@@ -229,11 +226,11 @@ Lägg till `role="presentation"` (eller `role="none"`) i layouttabeller för att
 ```
 
 Skärmläsarna läser:
-&quot;Hello World. Välkommen till vårt nyhetsbrev.&quot; *(Ingen uppgift om rader, kolumner eller tabell.)*
+&quot;Hello World. Välkommen till vårt nyhetsbrev.&quot; *(Ingen uppgift om rader, kolumner eller tabell)*
 
 +++
 
-+++Exempel - Datatabell (utan role=&quot;presentation&quot;): 
++++Exempel - Datatabell (utan `role="presentation"`)
 
 ```
 <table border="1" cellpadding="5" cellspacing="0"> 
@@ -268,25 +265,21 @@ Skärmläsarna läser:
 Skärmläsarna läser:
 &quot;Tabell med 2 kolumner och 3 rader.&quot;
 
-&quot;Namn, Alice.&quot;
+&quot;Namn, Alice. Score, 95.&quot;
 
-&quot;Score, 95.&quot;
-
-&quot;Namn, Bob.&quot;
-
-&quot;Score, 88.&quot;
+&quot;Namn, Bob. Poäng, 88.&quot;
 
 +++
 
 >[!TIP]
 >
->Använd `role="presentation"` exklusivt för layouttabeller. För datatabeller ska du behålla semantisk `<table>`-struktur så att skärmläsare kan meddela rubriker och relationer korrekt.
+>Använd `role="presentation"` exklusivt för layouttabeller. Behåll den semantiska `<table>`-strukturen för datatabeller så att skärmläsare kan meddela rubriker och relationer korrekt.
 
-### Identifierbar och beskrivande text för länkar
+### Text för länkar {#links}
 
-Skärmläsare läser upp länkar med sin text. Om en länk endast heter&quot;Klicka här&quot; eller&quot;Läs mer&quot; kommer användare av hjälpmedelstekniker inte att känna till målet.
+Skärmläsare läser upp länkar med sin text. Om en länk endast heter&quot;Klicka här&quot; eller&quot;Läs mer&quot; kommer användare av hjälpmedelstekniker inte att känna till målet. För att säkerställa tillgänglighet behöver de beskrivande text som tydligt anger målet eller åtgärden.
 
-För att säkerställa tillgänglighet skriver du beskrivande text som tydligt anger målet eller åtgärden. Använd e-post-Designer för att [lägga till en länk](message-tracking.md#insert-links) i ditt innehåll och redigera etiketten för att göra den identifierbar (synlig) och beskrivande (tydlig om syftet). Undvik otydliga etiketter som &quot;here&quot; eller &quot;more&quot;.
+Använd e-post-Designer för att [lägga till en länk](message-tracking.md#insert-links) i ditt innehåll och redigera etiketten för att göra den identifierbar (synlig) och beskrivande (tydlig om syftet). Undvik otydliga etiketter som &quot;here&quot; eller &quot;more&quot;.
 
 ![](assets/accessible-link.png){width="70%"}
 
@@ -305,7 +298,7 @@ Skärmläsarna läser:
 
 +++
 
-+++Exempel - felaktig länk (inte beskrivande): 
++++Exempel - felaktig länk (inte beskrivande)
 
 ```
 <p>Learn more about our new features.  
@@ -316,7 +309,7 @@ Skärmläsarna läser:
 ```
 
 Skärmläsarna läser:
-&quot;Länk, klicka här.&quot; *(Ingen kontext ligger utanför läsordningen.)*
+&quot;Länk, klicka här.&quot; *(Ingen kontext ligger utanför läsordningen)*
 
 +++
 
@@ -331,7 +324,7 @@ Skärmläsarna läser:
 
 Med stöd för tangentbordsnavigering och -fokus kan personer som inte kan använda en mus få full tillgång till och interagera med innehållet. Det förbättrar också den övergripande användbarheten genom att ge alla användare ett tydligt och konsekvent sätt att gå igenom informationen.
 
-* Aktivera fokus via tangentbordet (tabb-/piltangenter)
+* Fokusera via tangentbordet
 
    * Kontrollera att alla interaktiva element (till exempel knappar, kryssrutor och länkar) har `tabindex="0"` så att de inkluderas i den naturliga tabbordningen.
 
@@ -341,7 +334,7 @@ Med stöd för tangentbordsnavigering och -fokus kan personer som inte kan anvä
 
    * Använd tydliga och urskiljbara format för att fokusera på åtgärdbara element:
 
-     +++Exempel (CSS):
+     +++Exempel (CSS)
 
      ```
      [tabindex="0"] : focus { 
