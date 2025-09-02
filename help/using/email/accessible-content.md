@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
 hide: true
 hidefromtoc: true
-source-git-commit: 95e50386d4190d0b967d133a327c25ab1681b5c1
+source-git-commit: be87e47f7c3303575c2784af7ce76c138cb03154
 workflow-type: tm+mt
 source-wordcount: '1603'
 ht-degree: 0%
@@ -33,7 +33,6 @@ Med [!DNL Journey Optimizer] [e-post-Designer](content-from-scratch.md), som gö
 
 <!--You can adjust a number of styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane.-->
  
-
 ## Säkra textläsbarhet {#text-readability}
 
 Utnyttja fliken **[!UICONTROL Styles]** i komponenten **[!UICONTROL Text]** för att säkerställa att texten är läsbar, till exempel genom att använda rätt färgkontrast och enkla teckensnitt. [Läs mer](content-components.md#text)
@@ -325,7 +324,9 @@ Skärmläsarna läser:
 >
 >Always ensure link text is discernible (visible) and descriptive (clear about purpose). Avoid vague labels like 'here' or 'more'.-->
 
-## Stöd för tangentbordsnavigering och fokus <!--for landing pages--> {#keyboard}
+## Stöd för tangentbordsnavigering och fokus {#keyboard}
+
+<!--for landing pages-->
 
 Med stöd för tangentbordsnavigering och -fokus kan personer som inte kan använda en mus få full tillgång till och interagera med innehållet. Det förbättrar också den övergripande användbarheten genom att ge alla användare ett tydligt och konsekvent sätt att gå igenom informationen.
 
