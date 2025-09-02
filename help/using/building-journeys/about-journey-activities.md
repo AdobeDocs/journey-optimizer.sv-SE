@@ -9,10 +9,10 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
-source-git-commit: 19130e9eb5a2144afccab9fa8e5632de67bc7157
+source-git-commit: c39a71da901b888ff440a1488658b577ff72cc32
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 12%
+source-wordcount: '690'
+ht-degree: 11%
 
 ---
 
@@ -91,13 +91,19 @@ De flesta aktiviteter visar ett antal avancerade och/eller tekniska parametrar s
 
 ![Avancerade parameterfält i egenskaperna för reseaktivitet](assets/journey-advanced-parameters.png)
 
-Dölj de här parametrarna med knappen **[!UICONTROL Hide read-only fields]** för bättre läsbarhet.
+För bättre läsbarhet kan du dölja de här parametrarna med knappen **[!UICONTROL Hide read-only fields]** överst i den högra rutan.
 
 ![Dölj ikonen för skrivskyddade fält i egenskaperna för reseaktivitet](assets/journey-hide-read-only-fields.png)
 
 I vissa specifika sammanhang kan du åsidosätta parametrarnas värden för specifik användning. Om du vill framtvinga ett värde klickar du på ikonen **[!UICONTROL Enable parameter override]** till höger om fältet. [Läs mer](../configuration/primary-email-addresses.md#journey-parameters)
 
 ![Aktivera alternativ för åsidosättning av parameter i egenskaperna för e-postaktivitet](assets/journey-enable-parameter-override.png)
+
+>[!NOTE]
+>
+>Om de avancerade parametrarna är dolda klickar du på knappen **[!UICONTROL Show read-only fields]**
+>
+>![Visa ikonen för skrivskyddade fält i egenskaperna för reseaktivitet](assets/journey-show-read-only-fields.png){width=60%}
 
 ### Lägg till en alternativ sökväg
 

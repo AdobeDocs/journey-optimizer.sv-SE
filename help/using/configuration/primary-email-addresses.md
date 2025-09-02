@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: 5b6543fd98b0457652374a34712e91501ace898c
+source-git-commit: c39a71da901b888ff440a1488658b577ff72cc32
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,12 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 
 ## Åsidosätt standardkörningsfältet {#override-default-execution-address}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_execution_address"
+>title="Definiera ett anpassat värde"
+>abstract="I vissa specifika fall kan du åsidosätta standardadressen för körningen. Använd ikonen **Aktivera åsidosättning av parameter** till höger om fältet för att definiera en anpassad primär adress."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="Om körningsadressen"
+
 För specifika användningsfall kan du åsidosätta körningsfältet som ställts in globalt och definiera ett annat värde på e-postkonfigurationsnivån eller på resenivån.
 
 Att åsidosätta det här värdet kan vara användbart för att:
@@ -83,9 +89,9 @@ När en körningsadress definieras i e-postkonfigurationen används den som prim
 
 ### I resans parametrar {#journey-parameters}
 
-När du lägger till en **[!UICONTROL Email]**-åtgärd för en [resa](../email/create-email.md#create-email-journey-campaign) visas den primära e-postadressen under de avancerade parametrarna för resan.
+När du lägger till en **[!UICONTROL Email]**- eller **[!UICONTROL SMS]**-åtgärd till en [-resa](../email/create-email.md#create-email-journey-campaign) visas den primära e-postadressen under de avancerade parametrarna för resan.
 
-I vissa specifika sammanhang kan du åsidosätta det här värdet med ikonen **[!UICONTROL Enable parameter override]** till höger om fältet **[!UICONTROL address]**.
+I vissa specifika sammanhang kan du åsidosätta det här värdet med hjälp av ikonen **[!UICONTROL Enable parameter override]** till höger om fältet.
 
 ![](assets/journey-enable-parameter-override.png)
 
