@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
-source-git-commit: c39a71da901b888ff440a1488658b577ff72cc32
+source-git-commit: 25847b9252b54e63c9ceb4641fb53a80d3bf89bd
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 2%
@@ -126,7 +126,7 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
    >
    >* För e-postmeddelanden och push-meddelanden kan du aktivera optimering av sändningstid. [Läs mer](send-time-optimization.md)
 
-1. Beroende på aktiviteten kan du visa avancerade parametrar som är specifika för den valda kanalen och åsidosätta vissa standardvärden, till exempel körningsadressen. [Läs mer](../about-journey-activities.md#advanced-parameters)
+1. Beroende på aktiviteten kan du visa avancerade parametrar som är specifika för den valda kanalen och åsidosätta vissa standardvärden, till exempel körningsadressen. [Läs mer](about-journey-activities.md#advanced-parameters)
 
    >[!NOTE]
    >
