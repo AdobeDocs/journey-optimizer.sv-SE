@@ -7,10 +7,10 @@ feature: Accessibility
 role: User
 level: Beginner
 exl-id: d971c04c-9b37-4cd7-8a2d-b915e394079b
-source-git-commit: 7558d323f73382b8cb40b45eb9d79ca037eb574d
+source-git-commit: 95e50386d4190d0b967d133a327c25ab1681b5c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '486'
+ht-degree: 2%
 
 ---
 
@@ -20,6 +20,9 @@ Hjälpmedel är en serie funktioner som gör en programprodukt användbar, med s
 
 [!DNL Journey Optimizer] följer den internationellt erkända bästa metoden i Web Content Accessibility Guidelines (WCAG) 2.1 Level A och Level AA för att uppnå målet om tillgänglighet. Läs mer i den senaste [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer.html){target="_blank"}.
 
+>[!NOTE]
+>
+>Riktlinjer för att utforma hjälpmedelsanpassat innehåll för e-postmeddelanden och landningssidor finns i [det här avsnittet](../email/accessible-content.md).
 
 Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe Experience Platform:
 
@@ -27,7 +30,7 @@ Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe 
 * Färgkontrast
 * Validering av obligatoriska fält
 
-Hjälpmedelsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html?lang=sv-SE){target="_blank"}.
+Hjälpmedelsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"}.
 
 Följande vanliga kortkommandon är tillgängliga i [!DNL Journey Optimizer]:
 
