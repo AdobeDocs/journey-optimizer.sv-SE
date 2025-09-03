@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ff3511e55eb56d8d5448df6d5de92dfd29ea8718
+source-git-commit: d69b04be97951a5a57228ea839cb9b9c274a92c2
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 2%
+source-wordcount: '1817'
+ht-degree: 1%
 
 ---
 
@@ -20,8 +20,30 @@ ht-degree: 2%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## Uppdateringar 25 september {#sep-updates}
+
+<table>
+<thead>
+<tr>
+<th><strong>Använd Adobe Experience Platform-data för personalisering och beslutsfattande - begränsad tillgänglighet</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Den här funktionen lanserades tidigare som betaversion och är nu tillgänglig för alla miljöer med begränsad tillgänglighet. I den här versionen har följande förbättringar införts:</p>
+<ul><li>Stöd för personalisering av datasetsökningar i inkommande kanaler.</li>
+<li>Hjälpfunktionen"datasetLookup" kan nu användas i uttrycksfragment.</li>
+<li>Med ett alternativ i datauppsättningsgränssnittet kan du nu aktivera postbaserade datauppsättningar för sökpersonalisering, utan att behöva utföra ett API-anrop.</li>
+<li>Förbättrad övervakning för att spåra dataöverföringshastighet och veta när datauppsättningar är klara för sökning.</li>
+<li>Uppdaterade riktlinjer och säkerhetsregler för optimala prestanda och tillförlitlighet.</li></ul></p>
+<p>Mer information finns i <a href="../data/lookup-aep-data.md">detaljerad dokumentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Versionsinformation 25 augusti {#25-8-rn}
 
