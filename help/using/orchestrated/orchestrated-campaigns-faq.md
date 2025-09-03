@@ -6,9 +6,9 @@ description: Frågor och svar om Journey Optimizer samordnade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: b7c1da838c7e87a9d8bc3ddf5ef09fa756d853b8
+source-git-commit: b7851997ee9e3ffaa6455888924b4dcd1c7ff10d
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '979'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ Kampanjer använder en **relationsdatabas**. På så sätt kan ni söka efter ol
 
 ## Kan jag personalisera meddelanden med dessa data? {#personalization}
 
-Ja. Ni kan använda kundprofiler tillsammans med länkade data (som köp eller prenumerationer) för att anpassa innehåll i alla kanaler som stöds.
+Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdateras och data som används för personalisering. Dessutom kan data från länkade entiteter i relationsdatabasen också användas för personalisering. Ni kan använda kundprofiler tillsammans med länkade data (som köp eller prenumerationer) för att anpassa innehåll i alla kanaler som stöds.
 
 >[!BEGINSHADEBOX]
 
@@ -145,10 +145,6 @@ I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmenteri
 * Validera antalet användare före aktivering för att förhindra att de skickas för mycket eller för lite.
 
 >[!ENDSHADEBOX]
-
-## Kan data i relationsdatabasen användas för meddelandeanpassning? {#relational-personalization}
-
-Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdateras och data som används för personalisering. Dessutom kan data från länkade entiteter i relationsdatabasen också användas för personalisering.
 
 
 ## Stöder detta beslut? {#decisioning}
