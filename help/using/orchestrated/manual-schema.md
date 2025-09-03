@@ -4,9 +4,9 @@ product: journey optimizer
 title: Konfigurationssteg
 description: Lär dig hur du skapar relationsscheman direkt via användargränssnittet.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
-source-git-commit: 4f262d4cbbe2241ec8356333d9a3191081f58a6a
+source-git-commit: 9984863e2c3f7fb8f74cefacfc026b70d27bddd7
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -149,6 +149,8 @@ Nu måste du aktivera datauppsättningen för Orchestrate-kampanjer.
 ## Aktivera datauppsättning för orkestrerade kampanjer {#enable}
 
 När du har skapat datauppsättningen måste du explicit aktivera den för Orchestrated Campaigns. Detta steg garanterar att datauppsättningen är tillgänglig för realtidssamordning och personalisering inom Adobe Journey Optimizer.
+
+Se [Adobe Developer-dokumentation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset/#tag/DatasetEnablement) om du vill validera eller aktivera Orchestrated Campaign Extension på datauppsättningen.
 
 1. Leta reda på datauppsättningen i listan **[!UICONTROL Datasets]**.
 
