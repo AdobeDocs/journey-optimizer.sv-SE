@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
-source-git-commit: c5cd0708f8b39fca5de14b1c24be1dd3a6b3fd87
+source-git-commit: 39508e605479344a42bff0e5ce82b714f6bcff48
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 2%
@@ -35,14 +35,14 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Fördjupa dig i en praktisk upplevelse med [vår förhandsvisning av aktiva funktioner](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}, som är utformad för att du ska kunna utforska dess funktioner först och till fullo förstå dess funktioner.
+>Fördjupa dig i en praktisk upplevelse med [vår förhandsvisning av aktiva funktioner](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}, som är utformad för att du ska kunna utforska dess funktioner först och till fullo förstå dess funktioner.
 
 
 AI Assistant i Adobe Journey Optimizer, som drivs av Microsoft Azure OpenAI och Adobe Firefly, ger proaktiva förslag på innehållsvarianter för text och bilder. Den här nya funktionen tillhandahåller en **promptbaserad text- och bildgenerering**. Bildgenerering hanteras med Adobe Firefly.
 
 AI Assistant har stöd för generering **på flera språk**, vilket gör att du kan nå och engagera olika globala målgrupper. AI Assistant finns på följande språk:
 
-<table style="table-layout:fixed"><tr style="border: 0;">
+<table style="table-layout:fixed"><table style="table-layout:fixed"><tr style="border: 0; text-align: center;background-color: #FFFFFF;">
   <tr>
     <td><ul><li>Franska</li><li>Spanska</li><li>Tyska</li><li>Italienska</li></ul></td>
     <td><ul><li>Japanska</li><li>Svenska</li><li>Nederländska</li><li>Norska</li></ul></td>
@@ -80,7 +80,7 @@ För att få åtkomst till AI Assistant i Adobe Journey Optimizer-funktionen må
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
 
@@ -96,7 +96,7 @@ Allmänna riktlinjer för hur du använder AI Assistant i Adobe Journey Optimize
 * Använd en varumärkesspecifik eller anpassad mall för att skapa e-postinnehåll med hjälp av AI Assistant i Adobe Journey Optimizer. E-postmallar med upp till 8-10 bilder rekommenderas.
 * Var noga med att rapportera eventuella problematiska utdata med ikonerna för tummen uppåt, tummen nedåt eller flagga när du väljer varianter.
 * Din användning av AI Assistant regleras av Adobe Experience Cloud Generative AI User Guidelines. [Läs mer](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
-* Som en del av Adobe strävan att främja transparens i användningen av generativa AI-verktyg för att skapa media kommer Adobe att tillämpa Content Credentials när innehåll eller projekt som innehåller en Firefly-genererad mediefil hämtas eller exporteras. [Läs mer](https://helpx.adobe.com/se/firefly/using/content-credentials.html)
+* Som en del av Adobe strävan att främja transparens i användningen av generativa AI-verktyg för att skapa media kommer Adobe att tillämpa Content Credentials när innehåll eller projekt som innehåller en Firefly-genererad mediefil hämtas eller exporteras. [Läs mer](https://helpx.adobe.com/firefly/using/content-credentials.html)
 
 Följande begränsningar gäller för AI Assistant i Adobe Journey Optimizer:
 
