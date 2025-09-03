@@ -6,7 +6,7 @@ description: Frågor och svar om Journey Optimizer samordnade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 6a0b4f7da2794f6ffd9af51440f1bca8aa5e7fb1
+source-git-commit: e63fd5dc50100000a810e2dfcb8c8e8827628b0c
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 1%
@@ -80,7 +80,7 @@ förfinat.
 
 >[!BEGINSHADEBOX]
 
-**Exempel** - Rikta in dig på alla mottagare med prenumerationer som upphör att gälla inom de kommande 3-h0 dagarna: I Campaign-samordning kan frågan börja med prenumerationsschemat, söka bara i kolumnen för förfallodatum i det schemat och returnera alla prenumerationer som förfaller, och sedan samla in mottagardata som är relaterade till dessa specifika prenumerations-ID:n och returnera resultat snabbare och effektivare än datamodeller som påbörjar varje fråga på mottagarnivå.
+**Exempel** - Rikta in dig på alla mottagare med prenumerationer som går ut inom 30 dagar. I Kampanjsamordning kan frågan börja med prenumerationsschemat, söka bara i kolumnen med förfallodatum i det schemat och returnera alla prenumerationer som förfaller. Sedan kan du samla in mottagardata som är relaterade till dessa specifika prenumerations-ID:n och returnera resultat snabbare och effektivare än datamodeller som påbörjar varje fråga på mottagarnivå.
 
 >[!ENDSHADEBOX]
 
@@ -186,4 +186,4 @@ Ja, följ god praxis nedan:
 >* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
 >* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
 >* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
