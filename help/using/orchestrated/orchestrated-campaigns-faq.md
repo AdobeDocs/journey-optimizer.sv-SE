@@ -6,9 +6,9 @@ description: Frågor och svar om Journey Optimizer samordnade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: e63fd5dc50100000a810e2dfcb8c8e8827628b0c
+source-git-commit: a6a8521254005159b410790f88877d0591a16d15
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1091'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,15 @@ Nedan hittar du Frågor och svar om Adobe Journey Optimizer samordnade kampanjer
 
 Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ta upp din fråga.
 
-## Vad är samordnade kampanjer? {#what-are-oc}
+## Vad är Campaign-samordning? {#what-are-oc}
 
-Samordnade kampanjer i Adobe Journey Optimizer hjälper varumärken att köra komplexa 1:N-kampanjer i stor skala. De är utformade för varumärkesinitierat engagemang, som kampanjer, säsongskampanjer eller kontobaserad kommunikation.
+Kampanjsamordning är en funktion i Journey Optimizer som stöder enstegs- eller flerstegsarbetsflöden som utnyttjar Relational Datastore för att skapa och segmentera målgrupper för satsengagemang.
 
-Jämfört med kampanjer för enstaka sändning för de med **orkestrering och sekvensering** till utgående marknadsföring: målgrupperna rör sig genom ett flerstegsarbetsflöde tillsammans i stället för att få en engångskarta.
+Det ger en ny typ av kampanjer till Journey Optimizer: **Orchestrerade-kampanjer**. Samordnade kampanjer hjälper varumärken att köra komplexa 1:N-kampanjer i stor skala. De är utformade för varumärkesinitierat engagemang, som kampanjer, säsongskampanjer eller kontobaserad kommunikation.
 
-## Vad kan jag göra med orkestrerade kampanjer? {#what-can-i-do}
+Jämfört med kampanjer för enstaka sändning/åtgärd för de **orkestrering och sekvensering** för utgående marknadsföring: målgrupperna rör sig genom ett flerstegsarbetsflöde tillsammans i stället för att få en engångsutsändning.
+
+## Vad kan jag göra med en orkestrerad kampanj? {#what-can-i-do}
 
 Viktiga funktioner:
 
@@ -45,10 +47,14 @@ Viktiga funktioner:
 
 >[!ENDSHADEBOX]
 
+## Hur får jag åtkomst till kampanjsamordning? {#access-oc}
+
+För att få åtkomst till kampanjsamordning måste din licens innehålla antingen paketet **Journey Optimizer - Campaigns &amp; Journeys** eller paketet **Journey Optimizer - Campaigns**. Kontakta din Adobe-representant för att bekräfta din licens och uppdatera vid behov.
+
 
 ## Vilka kanaler stöds? {#channels}
 
-Samordnade kampanjer stöder **e-post-, SMS- och push-meddelanden**.
+Du kan skapa samordnade kampanjer för att skicka **e-post**, **SMS** och **push-meddelanden**.
 
 
 >[!BEGINSHADEBOX]
@@ -186,4 +192,4 @@ Ja, följ god praxis nedan:
 >* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
 >* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
 >* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
