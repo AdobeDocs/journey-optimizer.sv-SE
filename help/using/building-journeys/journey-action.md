@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
-source-git-commit: f407c5d4c20aab50350588d89e9d7682f24f5c33
+source-git-commit: e8f7f5862e3816481680fa999657ae90334ff888
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -65,45 +65,69 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
 1. Konfigurera aktiviteten enligt den valda kanalen. Lär dig konfigurera inbyggda kanalåtgärder i [det här avsnittet](journeys-message.md).
 
-1. Använd avsnittet **[!UICONTROL Optimization]** för att köra innehållsexperiment, utnyttja målinriktningsregler eller använda avancerade kombinationer av både experiment och målinriktning. Dessa olika alternativ och de steg som ska följas beskrivs i [det här avsnittet](../campaigns/campaigns-message-optimization.md).
+1. Använd avsnittet **[!UICONTROL Optimization]** för att köra innehållsexperiment, utnyttja målinriktningsregler eller använda avancerade kombinationer av både experiment och målinriktning.
 
-1. Använd avsnittet **[!UICONTROL Languages]** för att skapa innehåll på flera språk i din reseåtgärd. Om du vill göra det klickar du på knappen **[!UICONTROL Add languages]** och väljer önskad **[!UICONTROL Language settings]**. Detaljerad information om hur du konfigurerar och använder flerspråkiga funktioner finns i [det här avsnittet](../content-management/multilingual-gs.md).
+   Dessa olika alternativ och de steg som ska följas beskrivs i [det här avsnittet](../campaigns/campaigns-message-optimization.md).
+
+1. Använd avsnittet **[!UICONTROL Languages]** för att skapa innehåll på flera språk i din reseåtgärd. Om du vill göra det klickar du på knappen **[!UICONTROL Add languages]** och väljer önskad **[!UICONTROL Language settings]**.
+
+   Detaljerad information om hur du konfigurerar och använder flerspråkiga funktioner finns i [det här avsnittet](../content-management/multilingual-gs.md).
 
 Ytterligare inställningar är tillgängliga beroende på den valda kommunikationskanalen. Expandera avsnitten nedan om du vill ha mer information.
 
 +++**Använd regler för begränsning** (e-post, direktreklam, push, SMS)
 
-I listrutan **[!UICONTROL Business rules]** väljer du en regeluppsättning för att tillämpa regler för appning på din reseåtgärd. Genom att utnyttja kanalregeluppsättningar kan ni ange frekvensbegränsning efter kommunikationstyp för att förhindra att kunder med liknande meddelanden överbelastas. [Lär dig arbeta med regeluppsättningar](../conflict-prioritization/rule-sets.md)
+I listrutan **[!UICONTROL Business rules]** väljer du en regeluppsättning för att tillämpa regler för appning på din reseåtgärd.
+
+Genom att utnyttja kanalregeluppsättningar kan ni ange frekvensbegränsning efter kommunikationstyp för att förhindra att kunder med liknande meddelanden överbelastas.
+
+[Lär dig arbeta med regeluppsättningar](../conflict-prioritization/rule-sets.md)
 
 +++
 
 +++**Spåra engagemang** (e-post, SMS).
 
-Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mottagare svarar på dina e-post- eller SMS-leveranser. Spåra resultaten kan nås från reserapporten när resan är genomförd. [Läs mer om reserapporter](../reports/journey-global-report-cja.md)
+Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mottagare svarar på dina e-post- eller SMS-leveranser.
+
+Spåra resultaten kan nås från reserapporten när resan är genomförd.
+
+[Läs mer om reserapporter](../reports/journey-global-report-cja.md)
 
 +++
 
 +++**Aktivera läget Snabb leverans** (push).
 
-Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer.
+
+Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp.
+
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html).
 
 +++
 
 +++**Tilldela prioritetspoäng** (webb, i appen, kodbaserad)
 
-I avsnittet **[!UICONTROL Conflict management]** tilldelar du en prioritetspoäng till reseåtgärden så att du kan prioritera en inkommande åtgärd när det finns flera reseåtgärder eller kampanjer som använder samma kanalkonfiguration. Ange ett numeriskt värde (från 0-100). Observera att ju högre tal desto högre prioritet. Som standard ärvs prioritetspoängen för åtgärden från den övergripande prioritetspoängen för resan. [Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer](../conflict-prioritization/priority-scores.md)
+I avsnittet **[!UICONTROL Conflict management]** kan du tilldela en prioritetspoäng till reseåtgärden, så att du kan prioritera en inkommande åtgärd när det finns flera reseåtgärder eller kampanjer som använder samma kanalkonfiguration.
+
+Som standard ärvs prioritetspoängen för åtgärden från den övergripande prioritetspoängen för resan.
+
+[Lär dig hur du tilldelar prioritetspoäng till kanalåtgärder](../conflict-prioritization/priority-scores.md#priority-action)
 
 +++
 
 +++**Ange ytterligare leveransregler** (innehållskort)
 
-För innehållskortresor kan du aktivera ytterligare leveransregler för att välja vilka händelser och villkor som utlöser meddelandet. [Lär dig skapa innehållskort](../content-card/create-content-card.md)
+För innehållskortresor kan du aktivera ytterligare leveransregler för att välja vilka händelser och villkor som utlöser meddelandet.
+
+[Lär dig hur du skapar innehållskort](../content-card/create-content-card.md)
 
 +++
 
 +++**Definiera utlösare** (i appen)
 
-För meddelanden i programmet kan du använda knappen **[!UICONTROL Edit triggers]** för att välja händelser och villkor som utlöser meddelandet. [Lär dig skapa ett meddelande i appen](../in-app/create-in-app.md)
+För meddelanden i programmet kan du använda knappen **[!UICONTROL Edit triggers]** för att välja händelser och villkor som utlöser meddelandet.
+
+[Lär dig hur du skapar ett meddelande i appen](../in-app/create-in-app.md)
 
 +++
 
