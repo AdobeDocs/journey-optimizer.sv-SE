@@ -1,18 +1,18 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd Adobe Experience Platform-data för beslut (Beta)
+title: Använd Adobe Experience Platform-data för beslut
 description: Lär dig hur du använder Adobe Experience Platform-data för att fatta beslut.
-badge: label="Beta" type="Informative"
+badge: label="Begränsad tillgänglighet" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
-source-git-commit: cf700f4097883c875c74196317f6494f74f9bc7c
+source-git-commit: 42f231a9b0b34a63d1601dcae653462f6321caed
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,11 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion. Kontakta din kontorepresentant om du vill ha tillgång till tjänsten.
+>Den här funktionen är för närvarande tillgänglig för alla kunder i en begränsad version.
 
 Med [!DNL Journey Optimizer] kan du utnyttja data från [!DNL Adobe Experience Platform] för beslut. Detta gör att du kan utöka definitionen av dina beslutsattribut till ytterligare data i datauppsättningar för bulkuppdateringar som ändras regelbundet utan att du behöver uppdatera attributen manuellt en i taget. Till exempel tillgänglighet, väntetider osv.
+
+Innan du startar måste datauppsättningar som behövs för sökpersonalisering först aktiveras för sökning. Detaljerad information finns i det här avsnittet: [Använd Adobe Experience Platform-data](../data/lookup-aep-data.md).
 
 ## Skyddsritningar och begränsningar {#guidelines}
 
@@ -43,10 +45,6 @@ Observera följande begränsningar och riktlinjer innan du börjar:
 * En beslutsregel kan använda 3 datauppsättningar.
 * En rankningsformel kan använda 3 datamängder.
 * När en beslutsprincip utvärderas kommer systemet att utföra upp till 1 000 datauppsättningsfrågor (sökningar) totalt. Varje datamängdsmappning som används av ett beslutsobjekt räknas som en fråga. Exempel: Om ett beslutsobjekt använder två datauppsättningar räknas det som två frågor mot gränsen på 1 000 frågor.
-
-## Aktivera en datauppsättning för datasökning {#enable}
-
-Om du vill använda data från en [!DNL Adobe Experience Platform]-datauppsättning för beslut måste du först aktivera den för sökning via ett API-anrop. Detaljerade anvisningar finns i det här avsnittet: [Utnyttja Adobe Experience Platform-datauppsättningar i Journey Optimizer](../data/lookup-aep-data.md).
 
 ## Utnyttja Adobe Experience Platform data {#leverage-aep-data}
 

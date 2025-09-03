@@ -1,46 +1,31 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd Adobe Experience Platform-data för personalisering (Beta)
+title: Använd Adobe Experience Platform-data för personalisering
 description: Lär dig hur du använder Adobe Experience Platform-data för personalisering.
-badge: label="Beta" type="Informative"
+badge: label="Begränsad tillgänglighet" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
 role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-source-git-commit: 07e855b1a334a226c34223e5dd034f88733d6e2e
+source-git-commit: 42f231a9b0b34a63d1601dcae653462f6321caed
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
 
-# Använd Adobe Experience Platform-data för personalisering{#aep-data}
+# Använd Adobe Experience Platform-data för personalisering {#aep-data}
 
 >[!AVAILABILITY]
 >
->Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion.
->
->För att kunna använda den här funktionen måste du först godkänna betavillkor för din organisation som visas när du lägger till de nya hjälpfunktionerna&quot;datasetLookup&quot; i personaliseringsredigeraren.
+>Den här funktionen är för närvarande tillgänglig för alla kunder i en begränsad version.
 
-Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform i personaliseringsredigeraren för att [anpassa ditt innehåll](../personalization/personalize.md). För att göra detta måste datauppsättningar som behövs för sökpersonalisering först aktiveras via ett API-anrop enligt beskrivningen nedan. När du är klar kan du använda deras data för att anpassa ditt innehåll till [!DNL Journey Optimizer].
+Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform postdatauppsättningar i personaliseringsredigeraren för att [anpassa ditt innehåll](../personalization/personalize.md). Innan du startar måste datauppsättningar som behövs för sökpersonalisering först aktiveras för sökning. Detaljerad information finns i det här avsnittet: [Använd Adobe Experience Platform-data](../data/lookup-aep-data.md).
 
-## Beta begränsningar och riktlinjer {#guidelines}
-
-Läs följande begränsningar och riktlinjer innan du börjar:
-
-* **Kanaler som stöds**: För närvarande är den här funktionen bara tillgänglig för e-post, SMS och direktreklam.
-* **Fragment**: Det går inte att placera datauppslagspersonalisering inom uttryck eller visuella fragment just nu.
-
-## Aktivera en datauppsättning för datasökning {#enable}
-
-För att kunna utnyttja data från datauppsättningen för personalisering måste du använda ett API-anrop för att hämta dess status och aktivera sökningstjänsten. Detaljerad information finns i det här avsnittet: [Utnyttja Adobe Experience Platform-datauppsättningar i [!DNL Journey Optimizer]](../data/lookup-aep-data.md)
-
-## Utnyttja en datauppsättning för personalisering {#leverage}
-
-När en datauppsättning har aktiverats för sökpersonalisering med ett API-anrop kan du använda dess data för att anpassa ditt innehåll till [!DNL Journey Optimizer].
+När en datauppsättning har aktiverats för sökpersonalisering kan du använda dess data för att anpassa ditt innehåll till [!DNL Journey Optimizer].
 
 1. Öppna personaliseringsredigeraren, som är tillgänglig i alla sammanhang där du kan definiera personalisering, till exempel meddelanden. [Lär dig arbeta med personaliseringsredigeraren](../personalization/personalization-build-expressions.md)
 
@@ -67,9 +52,9 @@ När en datauppsättning har aktiverats för sökpersonalisering med ett API-anr
 
    * **required=false**: Om det krävs anges till TRUE kommer meddelandet endast att levereras om en matchande nyckel hittas. Om värdet är false krävs ingen matchande nyckel och meddelandet kan fortfarande levereras. Observera att om värdet är false bör du ta hänsyn till reservvärden eller standardvärden i meddelandeinnehållet.
 
-   +++Var hämtar du ett datauppsättnings-ID?
+   +++Var ska ett datauppsättnings-ID hämtas?
 
-   Datauppsättnings-ID kan hämtas i Adobe Experience Platform användargränssnitt. Lär dig hur du arbetar med datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#view-datasets){target="_blank"}.
+   Datauppsättnings-ID kan hämtas i Adobe Experience Platform användargränssnitt. Lär dig hur du arbetar med datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#view-datasets){target="_blank"}.
 
    ![](assets/aep-data-dataset.png)
 
@@ -100,7 +85,7 @@ När en datauppsättning har aktiverats för sökpersonalisering med ett API-anr
 
      +++Var ska ett fält-ID hämtas?
 
-     Fält-ID:n kan hämtas när en datauppsättning förhandsgranskas i Adobe Experience Platform användargränssnitt. Lär dig hur du förhandsgranskar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}.
+     Fält-ID:n kan hämtas när en datauppsättning förhandsgranskas i Adobe Experience Platform användargränssnitt. Lär dig hur du förhandsgranskar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}.
 
      ![](assets/aep-data-field.png)
 
