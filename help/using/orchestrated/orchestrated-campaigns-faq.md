@@ -6,9 +6,9 @@ description: Frågor och svar om Journey Optimizer samordnade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: b7851997ee9e3ffaa6455888924b4dcd1c7ff10d
+source-git-commit: f850cb5573c321d479fe956e8c9b9bf377e78dfc
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
@@ -114,8 +114,10 @@ Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdatera
 
 ## Kan programmet integreras med andra Adobe-lösningar? {#integrations}
 
+Ja. Kampanjsamordning är integrerad med:
+
 * **Customer Journey Analytics**: Det finns rapporter om kampanjsamordning.
-* **Real-Time CDP**: Publiker som skapats i kampanjer kan läsas i CDP.
+* **Real-Time CDP**: Publiker som skapats i kampanjer kan läsas i Real-Time CDP.
 * **FFAC (Federated Audience Composition)**: Tillgängligt som tillägg.
 
 ## Vad gäller för tillstånd och samtycke? {#permissions}
@@ -175,3 +177,11 @@ Ja, följ god praxis nedan:
 * Upprätta en **övervakningsrutin** - spåra leveransloggar, felfrekvens och avanmälan efter varje sändning.
 * Kör **efterkampanjanalys** i Customer Journey Analytics för att förfina målinriktning och samordning inför nästa cykel.
 
+
+
+>[!MORELIKETHIS]
+>
+>* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
+>* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
+>* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
