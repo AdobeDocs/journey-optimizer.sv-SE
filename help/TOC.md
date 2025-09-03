@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 95e50386d4190d0b967d133a327c25ab1681b5c1
+source-git-commit: 61a8d887b6dc81e21dfd3810684fd9c01db487a6
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2891'
 ht-degree: 18%
 
 ---
@@ -535,6 +535,7 @@ ht-degree: 18%
       + [Skapa en språkleverantör](using/content-management/multilingual-provider.md)
       + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
       + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
+   + [Meddelandeoptimering](using/campaigns/campaigns-message-optimization.md)
    + Innehållsexperiment {#content-experiment}
       + [Innehållsexperiment](/help/rp_landing_pages/content-experiment-landing-page.md)
       + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
@@ -543,7 +544,6 @@ ht-degree: 18%
          + [Tekniska anmärkningar](/help/rp_landing_pages/technotes-landing-page.md)
          + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
-   + [Utnyttja optimering av meddelanden](using/campaigns/campaigns-message-optimization.md)
 + Målgrupper, profiler och identitet {#audiences-profiles-identities}
    + [Målgrupper, profiler och identitet](/help/rp_landing_pages/audiences-profiles-identities-landing-page.md)
    + Målgrupper {#audiences}
@@ -860,7 +860,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
