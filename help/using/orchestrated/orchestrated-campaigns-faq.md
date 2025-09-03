@@ -6,9 +6,9 @@ description: Frågor och svar om Journey Optimizer samordnade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 13bc5f91e0e47bf36b9b9921fa926f8a5e2a50d6
+source-git-commit: b7c1da838c7e87a9d8bc3ddf5ef09fa756d853b8
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -71,6 +71,18 @@ Orchestrated Campaigns har stöd för **e-post-, SMS- och push-meddelanden**.
 
 >[!ENDSHADEBOX]
 
+## Vad är segmentering av flera enheter? {#multi-entity}
+
+Kampanjsamordning i Adobe Journey Optimizer använder en relationsdatabas. Den här typen av datamodell har separata scheman med data som är anslutna via 1:1- eller 1:many-relationer. Detta gör att användare kan starta en fråga i vilket schema som helst - inte bara på mottagarnivå - och sedan vända fram och tillbaka till andra relaterade scheman, som inköp, produkter, bokningar eller mottagarinformation, vilket ger stor flexibilitet i hur segment och målgrupper kan skapas och
+förfinat.
+
+>[!BEGINSHADEBOX]
+
+**Exempel** - Rikta in dig på alla mottagare med prenumerationer som upphör att gälla inom de kommande 3-h0 dagarna: I Campaign-samordning kan frågan börja med prenumerationsschemat, söka bara i kolumnen för förfallodatum i det schemat och returnera alla prenumerationer som förfaller, och sedan samla in mottagardata som är relaterade till dessa specifika prenumerations-ID:n och returnera resultat snabbare och effektivare än datamodeller som påbörjar varje fråga på mottagarnivå.
+
+>[!ENDSHADEBOX]
+
+
 ## Hur fungerar datamodellen? {#data-model}
 
 Kampanjer använder en **relationsdatabas**. På så sätt kan ni söka efter olika datauppsättningar (t.ex. kunder, produkter, prenumerationer) och koppla dem flexibelt för avancerad segmentering.
@@ -108,7 +120,7 @@ Ja. Ni kan använda kundprofiler tillsammans med länkade data (som köp eller p
 
 ## Vad gäller för tillstånd och samtycke? {#permissions}
 
-Tillstånd och samtycke hanteras centralt i Adobe Experience Platform. Samma regler gäller för både resor och samordnade kampanjer för att säkerställa regelefterlevnad och enhetlig kundupplevelse.
+Tillstånd och samtycke för samordnade kampanjer och resor hanteras centralt i Adobe Experience Platform. De här inställningarna används för båda lösningarna för varje mottagare innan de skickas.
 
 >[!BEGINSHADEBOX]
 
@@ -122,7 +134,7 @@ Tillstånd och samtycke hanteras centralt i Adobe Experience Platform. Samma reg
 
 ## Kan jag göra ad hoc-segmentering? {#ad-hoc}
 
-Ja. Med **Live-segmentering** kan du skapa komplexa frågor på plats och omedelbart aktivera dem i utgående kanaler.
+I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmentering&quot;, där ni kan komma åt alla data som finns i relationsarkivet i realtid, bygga en komplex fråga ovanpå den och få resultatet för omedelbar aktivering via utgående kanaler (t.ex. e-post + SMS).
 
 >[!BEGINSHADEBOX]
 
@@ -133,6 +145,11 @@ Ja. Med **Live-segmentering** kan du skapa komplexa frågor på plats och omedel
 * Validera antalet användare före aktivering för att förhindra att de skickas för mycket eller för lite.
 
 >[!ENDSHADEBOX]
+
+## Kan data i relationsdatabasen användas för meddelandeanpassning? {#relational-personalization}
+
+Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdateras och data som används för personalisering. Dessutom kan data från länkade entiteter i relationsdatabasen också användas för personalisering.
+
 
 ## Stöder detta beslut? {#decisioning}
 
@@ -161,3 +178,4 @@ Ja, följ god praxis nedan:
 * Om möjligt **stagger-sändningstider** för att undvika överväldigande system längre fram i kedjan (till exempel callcenters, webbplatser).
 * Upprätta en **övervakningsrutin** - spåra leveransloggar, felfrekvens och avanmälan efter varje sändning.
 * Kör **efterkampanjanalys** i Customer Journey Analytics för att förfina målinriktning och samordning inför nästa cykel.
+
