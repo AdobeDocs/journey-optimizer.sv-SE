@@ -6,7 +6,7 @@ description: Frågor och svar om Journey Optimizer samordnade kampanjer
 hide: true
 hidefromtoc: true
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: f850cb5573c321d479fe956e8c9b9bf377e78dfc
+source-git-commit: 6a0b4f7da2794f6ffd9af51440f1bca8aa5e7fb1
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Vanliga frågor {#faq-oc}
 
-Nedan hittar du Vanliga frågor om Adobe Journey Optimizer samordnade kampanjer.
+Nedan hittar du Frågor och svar om Adobe Journey Optimizer samordnade kampanjer.
 
 Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ta upp din fråga.
 
@@ -48,7 +48,8 @@ Viktiga funktioner:
 
 ## Vilka kanaler stöds? {#channels}
 
-Orchestrated Campaigns har stöd för **e-post-, SMS- och push-meddelanden**.
+Samordnade kampanjer stöder **e-post-, SMS- och push-meddelanden**.
+
 
 >[!BEGINSHADEBOX]
 
@@ -60,14 +61,15 @@ Orchestrated Campaigns har stöd för **e-post-, SMS- och push-meddelanden**.
 
 >[!ENDSHADEBOX]
 
-## Hur skiljer sig Orchestrated Campaigns från Journeys? {#oc-vs-journeys}
 
-* **Samordnade kampanjer**: Bäst för **batch-, en-till-många**-kampanjer. Hela målgrupper rör sig genom kampanjarbetsytan tillsammans.
+## Hur skiljer sig Orchestrated-kampanjer från Journeys? {#oc-vs-journeys}
+
+* **Samordnade kampanjer**: Passar bäst för **batch-, en-till-många**-kampanjer. Hela målgrupper rör sig genom kampanjarbetsytan tillsammans.
 * **Resor**: Passar bäst för **realtidsengagemang med en-till-en**. Varje kund rör sig genom resan i sin egen takt, triggad av beteende eller händelser.
 
 >[!BEGINSHADEBOX]
 
-**Tips** - Många organisationer använder **båda tillsammans** - resor för triggade, reaktiva upplevelser och samordnade kampanjer för planerade, kalenderbaserade initiativ.
+**Tips** - Många organisationer använder **båda tillsammans** - Resor för triggade, reaktiva upplevelser och samordnade kampanjer för planerade, kalenderbaserade initiativ.
 
 >[!ENDSHADEBOX]
 
@@ -151,11 +153,11 @@ I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmenteri
 
 ## Stöder detta beslut? {#decisioning}
 
-För närvarande används inte relationsdata från Orchestrated Campaigns vid beslut.
+För närvarande används inte relationsdata från Orchestrated-kampanjer vid beslut.
 
 ## Hur fungerar driftsättningen i olika miljöer? {#deployment}
 
-Objekt som skapas i samordnade kampanjer (t.ex. målgrupper, arbetsflöden) är kopplade till den sandlåda som de byggs i. Standardarbetsflöden för paketering och distribution i olika miljöer (dev, stage, prod) är för närvarande inte tillgängliga för Orchestrated Campaigns.
+Objekt som skapas i samordnade kampanjer (t.ex. målgrupper, arbetsflöden) är kopplade till den sandlåda som de byggs i. Standardarbetsflöden för paketering och distribution i olika miljöer (dev, stage, prod) är för närvarande inte tillgängliga för samordnade kampanjer.
 
 >[!BEGINSHADEBOX]
 
@@ -184,4 +186,4 @@ Ja, följ god praxis nedan:
 >* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
 >* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
 >* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
