@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
-source-git-commit: c5cd0708f8b39fca5de14b1c24be1dd3a6b3fd87
+source-git-commit: 45ae810fadfcf507ee94a703a928bacdeba09e9b
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -130,3 +130,4 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 1. Granska **[!UICONTROL Variation suggestions]** på det valda språket.
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
+
