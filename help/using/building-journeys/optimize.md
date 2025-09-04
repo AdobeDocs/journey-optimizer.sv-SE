@@ -1,21 +1,19 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Villkorsaktivitet
-description: Läs mer om villkorsaktivitet
+title: Optimera aktivitet
+description: Läs mer om Optimera-aktiviteten
 feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa, optimering
 badge: label="Begränsad tillgänglighet" type="Informative"
-hidefromtoc: true
-hide: true
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: cc657dced3e7069cb3700d75f67b3cfb4f6da1e0
+source-git-commit: cd688d0c140404a846df09a53f37be8d0fe5633e
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
