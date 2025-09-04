@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 3ab8957d0aec6f30853de5537e03f0e7bec2017c
+source-git-commit: e46680497770a87da9ec4ce7d08e48d3a6a67acb
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2889'
 ht-degree: 18%
 
 ---
@@ -861,7 +861,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -896,7 +896,6 @@ ht-degree: 18%
       + [Tillåtelselista](using/configuration/allow-list.md)
    + [Använd dirigerade listor](using/configuration/seed-lists.md)
    + [Stöd för arkivering](using/configuration/archiving-support.md)
-   + [Exportera meddelandeinnehåll](using/configuration/message-export.md)
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
    + [Konfigurera affärsregler](using/configuration/frequency-rules.md)
 + Resekonfiguration {#configure-journeys}
