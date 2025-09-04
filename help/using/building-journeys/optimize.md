@@ -13,9 +13,9 @@ hidefromtoc: true
 hide: true
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7d57767fcfacbba3a4ec2d1279937ca63ffb8c48
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -33,18 +33,13 @@ ht-degree: 0%
 
 Med aktiviteten **Optimera** kan du definiera hur enskilda personer ska gå igenom din resa genom att skapa flera **sökvägar** baserat på specifika kriterier, inklusive experiment, målgruppsanpassning och specifika villkor, vilket ger ett maximalt engagemang och framgång för att skapa välanpassade och effektiva resor.
 
-En **resesökväg** kan bestå av något av följande:
+En resa **sökväg** kan bestå av något av följande: sekvensering av kommunikationen, tid mellan dem, antal kommunikationer eller en kombination av dessa tre variabler.
 
-* sekvensering av kommunikationen,
-* tiden mellan dem,
-* antal meddelanden,
-* eller en kombination av dessa tre variabler.
-
-En sökväg kan till exempel innehålla ett e-postmeddelande, en annan kan innehålla två SMS-meddelanden och en tredje kan innehålla ett e-postmeddelande, en [Wait](wait-activity.md)-nod på två timmar och sedan ett SMS-meddelande.
+En sökväg kan till exempel innehålla ett e-postmeddelande, en annan kan innehålla två SMS-meddelanden och en tredje kan innehålla ett e-postmeddelande, en Wait-nod på två timmar och sedan ett SMS-meddelande.
 
 <!--With this feature, [!DNL Journey Optimizer] empowers you with the tools to deliver personalized and optimized paths to your audience, ensuring maximum engagement and success to create highly customized and effective journeys.-->
 
-Genom aktiviteten **Optimera** kan du:
+Genom aktiviteten **Optimera** kan du utföra följande åtgärder på de resulterande sökvägarna:
 
 * Kör [sökvägsexperiment](#experimentation)
 * Utnyttja [målinriktningsreglerna](#targeting) i varje resesökväg
@@ -85,20 +80,17 @@ Låt oss säga att du vill jämföra tre banor:
     Consider adding an example in this step: For this example, select this metric to test xxx.
     -->
 
-   ![](assets/journey-optimize-experiment-metrics.png){width=70%}
+   ![](assets/journey-optimize-experiment-metrics.png){width=80%}
 
-<!--1. Change the **[!UICONTROL Title]** of your treatment to better differentiate them.-->
-
-1. Du kan lägga till en **[!UICONTROL Holdout]**-grupp i leveransen. Den här gruppen kommer inte att få något innehåll från det här experimentet.
+1. Du kan lägga till en **[!UICONTROL Holdout]**-grupp i leveransen. Den här gruppen kommer inte att ange någon sökväg från det här experimentet.
 
    >[!NOTE]
    >
    >Om du aktiverar alternativfältet tar det automatiskt 10 % av din befolkning. Du kan justera procentandelen om det behövs.
 
    <!--
-    [!IMPORTANT]
-    >
-    >DOES THIS APPLY TO PATH EXPERIMENT? When a holdout group is used in an action for path experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.-->
+    DOES THIS APPLY TO PATH EXPERIMENT?
+    IMPORTANT: When a holdout group is used in an action for path experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.-->
 
 1. Du kan tilldela en exakt procentandel till varje **[!UICONTROL Treatment]**, eller bara växla på **[!UICONTROL Distribute evenly]**-växlingsfältet.
 
@@ -122,7 +114,7 @@ Låt oss säga att du vill jämföra tre banor:
 
    ![](assets/journey-optimize-experiment-edit-content.png){width=70%}
 
-1. Därifrån kan du i den vänstra rutan navigera mellan olika innehåll för varje åtgärd i ditt experiment. Designa allt innehåll efter behov.
+1. Därifrån kan du i den vänstra rutan navigera mellan olika innehåll för varje åtgärd i ditt experiment. Markera varje innehåll och utforma det efter behov.
 
    ![](assets/journey-optimize-experiment-content.png){width=100%}
 
@@ -130,7 +122,7 @@ Låt oss säga att du vill jämföra tre banor:
 
 När resan är live tilldelas användarna slumpvis olika vägar. [!DNL Journey Optimizer] spårar vilken sökväg som fungerar bäst och ger åtgärdbara insikter.
 
-Följ upp din resa med rapporten Optimera/Experimentera [för resan](../reports/journey-global-report-cja.md). <!--Need a doc page on reporting specific to path experimentation in journey - [Path experimentation journey report](../xxx) such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
+Följ hur din resa framskrider med rapporten Experimentera med resan på resan.<!--Reporting page on Journey Path Experimentation to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
 
 ### Exempel på användningsområden {#uc-experiment}
 
@@ -140,17 +132,17 @@ I följande exempel visas hur du använder aktiviteten **[!UICONTROL Optimize]**
 
 Testa om det första meddelandet skickas via e-post eller SMS leder till högre konverteringar.
 
-* Använd konverteringsgraden som optimeringsmått (till exempel inköp, registreringar).
+➡️ Använd konverteringsgraden som optimeringsmått (till exempel köp, registreringar).
 
-<!--![](assets/journey-optimize-experiment-uc.png)-->
+![](assets/journey-optimize-experiment-uc.png)
 
 +++
 
 +++Meddelandefrekvens
 
-Kör ett experiment för att kontrollera om ett e-postmeddelande eller tre e-postmeddelanden under en vecka leder till fler inköp.
+➡️ Kör ett experiment för att kontrollera om det leder till fler inköp om du skickar ett e-postmeddelande eller tre e-postmeddelanden under en vecka.
 
-* Använd köp eller avbeställningsfrekvensen som optimeringsmått.
+Använd köp eller avbeställningsfrekvensen som optimeringsmått.
 
 +++
 
@@ -158,13 +150,13 @@ Kör ett experiment för att kontrollera om ett e-postmeddelande eller tre e-pos
 
 Jämför en 24-timmars väntan jämfört med en 72-timmars väntan före en uppföljning för att avgöra vilken tidpunkt som maximerar engagemanget.
 
-* Använd klickfrekvensen eller intäkterna som optimeringsmått.
+➡️ Använd genomklickningsfrekvensen eller intäkterna som optimeringsmått.
 
 +++
 
 ## Utnyttja målgruppsanpassning {#targeting}
 
-Med målgruppsanpassning kan du fastställa specifika regler eller kvalifikationer som måste uppfyllas för att en kund ska vara berättigad att ange en av kundresan, baserat på specifika målgruppssegment <!-- depending on profile attributes or contextual attributes-->.
+Målreglerna gör att du kan fastställa specifika regler eller kvalifikationer som måste uppfyllas för att en kund ska vara berättigad att ange en av kundresan, baserat på specifika målgruppssegment <!-- depending on profile attributes or contextual attributes-->.
 
 Till skillnad från experiment, som är en slumpmässig tilldelning av en viss bana, är målinriktning avgörande för att säkerställa att rätt målgrupp eller profil kommer in på den angivna banan.
 
@@ -184,7 +176,7 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 1. Välj **[!UICONTROL Targeting rule]** i listrutan **[!UICONTROL Method]**.
 
-   ![](assets/journey-optimize-targeting.png){width=75%}
+   ![](assets/journey-optimize-targeting.png){width=70%}
 
 1. Klicka på **[!UICONTROL Create targeting rule]**.
 
@@ -194,7 +186,7 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 1. Välj **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när inga målinriktningsregler är kvalificerade. Om du inte markerar det här alternativet kommer målgrupper som inte är kvalificerade för en målregel som definieras ovan inte att ange en reservsökväg.
 
-1. Spara målinriktningsregelinställningarna.
+1. Klicka på **[!UICONTROL Create]** om du vill spara målarregelinställningarna.
 
 1. Tillbaka på resan, släpp specifika åtgärder för att anpassa varje bana. Skapa till exempel ett e-postmeddelande med personliga erbjudanden för Gold Loyalty-medlemmar och en SMS-påminnelse för alla andra medlemmar.
 
@@ -202,7 +194,7 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 1. Du kan också använda **[!UICONTROL Add an alternative path in case of a timeout or an error]** för att definiera en reservåtgärd. [Läs mer](using-the-journey-designer.md#paths)
 
-1. Utforma lämpligt innehåll för varje åtgärd som motsvarar en grupp som definieras av målarregelinställningarna. Du kan smidigt navigera mellan olika innehåll för varje åtgärd.
+1. Utforma lämpligt innehåll för varje åtgärd som motsvarar varje grupp som definieras av målarregelinställningarna. Du kan smidigt navigera mellan olika innehåll för varje åtgärd.
 
    ![](assets/journey-targeting-design.png)
 
@@ -212,17 +204,19 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 När resan är live behandlas den sökväg som anges för varje segment så att Guld-medlemmar anger sökvägen med e-posterbjudandena, medan de andra medlemmarna anger sökvägen med SMS-påminnelsen.
 
-### Riktade användningsfall {#uc-targeting}
+Följ hur din resa framskrider med rapporten om målanpassning av kundväg (Journey Path Targeting).<!--Reporting page on Journey Path Targeting to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
 
-I följande exempel visas hur du använder aktiviteten **[!UICONTROL Optimize]** med metoden **[!UICONTROL Targeting]** för att anpassa sökvägar för olika undergrupper.
+### Användningsfall för målregel {#uc-targeting}
+
+I följande exempel visas hur du använder aktiviteten **[!UICONTROL Optimize]** med metoden **[!UICONTROL Targeting rule]** för att anpassa sökvägar för olika undergrupper.
 
 +++Segmentspecifika kanaler
 
 Gold-status som lojalitetsmedlemmar kan få personaliserade erbjudanden via e-post, medan alla andra medlemmar dirigeras till SMS-påminnelser.
 
-* Använd intäkten per profil eller konverteringsgrad som optimeringsmått.
+➡️ Använd intäkten per profil eller konverteringsgrad som optimeringsmått.
 
-<!--![](assets/journey-optimize-targeting-uc.png)-->
+![](assets/journey-optimize-targeting-uc.png)
 
 +++
 
@@ -230,7 +224,7 @@ Gold-status som lojalitetsmedlemmar kan få personaliserade erbjudanden via e-po
 
 Kunder som har öppnat ett e-postmeddelande men inte klickat kan få ett push-meddelande, medan de som inte öppnat alls får ett SMS.
 
-* Använd genomklickningsfrekvensen eller nedströmskonverteringar som optimeringsmått.
+➡️ Använd genomklickningsfrekvensen eller nedströmskonverteringar som optimeringsmått.
 
 +++
 
@@ -238,7 +232,7 @@ Kunder som har öppnat ett e-postmeddelande men inte klickat kan få ett push-me
 
 Kunder som nyligen har köpt kan gå in på en kort&quot;Tack + Korsförsäljning&quot;-väg, medan kunder som inte har någon köphistorik går in på en längre vårdsresa.
 
-* Använd den upprepade inköpstakten eller engagemangsfrekvensen som optimeringsmått.
+➡️ Använd den upprepade inköpshastigheten eller engagemangsfrekvensen som optimeringsmått.
 
 +++
 
