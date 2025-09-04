@@ -8,17 +8,19 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
-hide: true
-hidefromtoc: true
 exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
-source-git-commit: 0490045a763876d3518e3db92e8427691044f6aa
+source-git-commit: 1746efa82611d232b5af07b271739417b4e36e8c
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '900'
 ht-degree: 2%
 
 ---
 
 # Konfigurera en anpassad underdomän {#delegate-custom-subdomain}
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
 
 Som ett alternativ till metoderna [Fullt delegerad](about-subdomain-delegation.md#full-subdomain-delegation) och [CNAME konfigurerad](about-subdomain-delegation.md#cname-subdomain-delegation) kan du med metoden **Anpassad delegering** ta ägarskapet för dina underdomäner inom Journey Optimizer för att få fullständig kontroll över de genererade certifikaten.
 
@@ -66,8 +68,8 @@ Följ stegen nedan för att konfigurera en anpassad underdomän.
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_key_length"
->title="xxx"
->abstract=""
+>title="Välj en nyckellängd"
+>abstract="Nyckellängden kan vara 2 048 eller 4 096 bitar. Den kan inte ändras efter att underdomänen har skickats."
 
 1. Klicka på **[!UICONTROL SSL Certificate]** i avsnittet **[!UICONTROL Generate CSR]**.
 
@@ -85,13 +87,35 @@ Följ stegen nedan för att konfigurera en anpassad underdomän.
    >
    >Nyckellängden kan vara 2 048 eller 4 096 bitar. Den kan inte ändras efter att underdomänen har skickats.
 
-1. Klicka på **[!UICONTROL Download CSR]** och spara formuläret på den lokala datorn. Skicka det till certifikatutfärdaren för att hämta ditt SSL-certifikat.
+1. Klicka på **[!UICONTROL Download CSR]** och spara formuläret på den lokala datorn.
 
-1. När certifikatet har hämtats klickar du på **[!UICONTROL Upload SSL certificate]** och överför det till [!DNL Journey Optimizer] i .pem-format.
+1. Skicka det till certifikatutfärdaren (CA) för att hämta ditt SSL-certifikat. Innan du skickar denna CSR till din certifikatutfärdare för signering finns det några viktiga saker att tänka på:
 
-   >[!CAUTION]
-   >
-   >Både data- och CDN-underdomäner måste inkluderas i samma certifikat.
+   * Den hämtade CSR-koden från steg 3 är endast avsedd för data.subdomain.com.
+
+   * Certifikatet bör dock omfatta både data.subdomain.com och cdn.subdomain.com som SAN-poster (Subject Alternative Names) i ett enda certifikat. Om du till exempel delegerar example.adobe.com motsvarar data.subdomain.com data.example.adobe.com och cdn.subdomain.com motsvarar cdn.example.adobe.com.
+
+   * Både underdomänerna Data (data.example.adobe.com) och CDN (cdn.example.adobe.com) måste läggas till som peer-poster i samma certifikat.
+
+   * De flesta certifikatutfärdare tillåter att du lägger till ytterligare SAN-nätverk (till exempel CDN-underdomänen) under signeringsprocessen
+
+      * via CA-portalen (rekommenderas, om sådan finns), eller
+      * Genom att begära det manuellt med supportteamet om portalalternativet inte är tillgängligt.
+
+   * När certifikatutfärdaren har signerat kommer den att utfärda ett enda certifikat som omfattar både Data-domänen och CDN-underdomänen.
+
+1. När certifikatet har hämtats klickar du på **[!UICONTROL Upload SSL certificate]** och överför det till [!DNL Journey Optimizer] i .pem-format med hela certifikatkedjan. Här följer ett exempel på ett .pem-filformat:
+
+   ```
+   -----BEGIN CERTIFICATE-----
+   MIIDXTCCAkWgAwIBAgIJALc3... (base64 encoded data)
+   -----END CERTIFICATE-----
+   ```
+
+   <!--
+    >[!CAUTION]
+    >
+    >Both Data and CDN subdomains must be included in the same certificate.-->
 
 ## Slutför stegen för feedbackslingan {#feedback-loop-steps}
 
