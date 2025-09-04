@@ -4,7 +4,8 @@ product: journey optimizer
 title: Använd aktiviteten Skapa målgrupp
 description: Lär dig hur du använder aktiviteten Skapa målgrupp i en orkestrerad kampanj
 exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 1%

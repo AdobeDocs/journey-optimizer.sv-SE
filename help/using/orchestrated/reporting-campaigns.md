@@ -4,7 +4,8 @@ product: journey optimizer
 title: Rapportering för samordnade kampanjer med Adobe Journey Optimizer
 description: Lär dig hur du får tillgång till rapporter om samordnade kampanjer med Adobe Journey Optimizer
 exl-id: 8cb569a2-a4a0-45a5-b7f9-f5a591e44335
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 1%

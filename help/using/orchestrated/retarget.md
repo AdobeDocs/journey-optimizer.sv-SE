@@ -4,7 +4,8 @@ product: journey optimizer
 title: Starta och övervaka samordnade kampanjer med Adobe Journey Optimizer
 description: Lär dig hur du startar och övervakar samordnade kampanjer med Adobe Journey Optimizer.
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -40,7 +41,7 @@ Med hjälp av dessa data kan du definiera regler för att identifiera mottagare 
 
 1. Välj attributet **[!UICONTROL Feedback Status]** för att ange meddelandeleveranshändelser som mål.
 
-+++ Detaljerad stegvis
+   +++ Detaljerad stegvis
 
    1. Lägg till ett annat villkor som är länkat till attributet **[!UICONTROL Message feedback]**.
 
@@ -52,11 +53,11 @@ Med hjälp av dessa data kan du definiera regler för att identifiera mottagare 
 
       ![](assets/retarget_4.png){zoomable="yes"}
 
-+++
+   +++
 
 1. Välj attributet **[!UICONTROL Orchestrated Campaign Name]** om du vill ha en specifik Orchestrated-kampanj som mål.
 
-+++ Detaljerad stegvis
+   +++ Detaljerad stegvis
 
    1. Lägg till ytterligare ett villkor som är länkat till attributet **[!UICONTROL Message feedback]**, sök efter **[!UICONTROL entity]** och navigera till:
 
@@ -68,11 +69,11 @@ Med hjälp av dessa data kan du definiera regler för att identifiera mottagare 
 
    1. Ange kampanjnamnet i fältet **[!UICONTROL Custom condition]** på menyn **[!UICONTROL Value]**.
 
-+++
+   +++
 
 1. Välj attributet **[!UICONTROL Orchestrated Campaign Action Name]** om du vill ange ett specifikt meddelande eller en viss aktivitet som mål i en Orchestrated-kampanj.
 
-+++ Detaljerad stegvis
+   +++ Detaljerad stegvis
 
    1. Lägg till ytterligare ett villkor som är länkat till attributet **[!UICONTROL Message feedback]**, sök efter **[!UICONTROL entity]** och navigera till:
 
@@ -86,7 +87,7 @@ Med hjälp av dessa data kan du definiera regler för att identifiera mottagare 
 
       Du hittar åtgärdsnamn genom att klicka på ![informationsikonen](assets/do-not-localize/info-icon.svg) bredvid aktivitetens etikettfält.
 
-+++
+   +++
 
 1. Du kan också filtrera efter **[!UICONTROL Campaign ID]** (UUID), som finns i Campaign-egenskaperna.
 

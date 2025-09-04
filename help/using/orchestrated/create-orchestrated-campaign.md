@@ -4,7 +4,8 @@ product: journey optimizer
 title: Skapa och schemalägg samordnade kampanjer med Journey Optimizer
 description: Lär dig skapa och schemalägga en orkestrerad kampanj med Adobe Journey Optimizer
 exl-id: 13da680d-fef8-4749-9190-8ca3d77b060a
-source-git-commit: a58d71b3cdb5e83f80b064673f0a6d087b7c191d
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -37,7 +38,7 @@ Så här skapar du en orkestrerad kampanj:
 
    1. Välj en **[!UICONTROL Merge policy]** för din kampanj.
 
-      I [!DNL Adobe Experience Platform] är varje målgrupp kopplad till en specifik sammanfogningsprincip, som definierar hur profilinformation kombineras för att bilda en sammanfogad profil. När du väljer en sammanfogningsprincip i aktiviteten Läs målgrupp är bara målgrupper som baseras på samma sammanfogningsprincip tillgängliga. Som standard används standardprincipen för sammanfogning, men du kan ändra den om det behövs. Mer information om kopplingsprofiler finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+      I [!DNL Adobe Experience Platform] är varje målgrupp kopplad till en specifik sammanfogningsprincip, som definierar hur profilinformation kombineras för att bilda en sammanfogad profil. När du väljer en sammanfogningsprincip i aktiviteten Läs målgrupp är bara målgrupper som baseras på samma sammanfogningsprincip tillgängliga. Som standard används standardprincipen för sammanfogning, men du kan ändra den om det behövs. Mer information om kopplingsprofiler finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
    1. Använd fältet **[!UICONTROL Tags]** för att tilldela enhetliga Adobe Experience Platform-taggar till kampanjen. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från listan Orchestrated-kampanjer. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags).
 

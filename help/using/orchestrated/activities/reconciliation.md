@@ -4,7 +4,8 @@ product: journey optimizer
 title: Använd avstämningsaktiviteten
 description: Lär dig hur du använder avstämningsaktiviteten i en orkestrerad kampanj
 exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -56,7 +57,7 @@ Med aktiviteten **[!UICONTROL Enrichment]** kan du lägga till ytterligare data 
 >id="ajo_orchestration_reconciliation_targeting_selection"
 >title="Välj måldimension"
 >abstract="Välj måldimension för inkommande data som ska förenas med."
->additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html?lang=sv-SE#targeting-dimensions" text="Måldimensioner"
+>additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html#targeting-dimensions" text="Måldimensioner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_keep_unreconciled_data"

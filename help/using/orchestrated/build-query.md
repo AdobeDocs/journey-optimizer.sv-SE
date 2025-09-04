@@ -4,7 +4,8 @@ product: journey optimizer
 title: Bygg din första regel
 description: Lär dig hur du skapar regler för dina samordnade kampanjer
 exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '1695'
 ht-degree: 0%
@@ -42,7 +43,7 @@ Så här lägger du till villkor i frågan:
 
 1. Klicka på ![bilden som visar knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) bredvid ett attribut för att komma åt dessa ytterligare alternativ:
 
-+++ Fördelning av värden
+   +++ Fördelning av värden
 
    Analysera värdefördelningen för ett visst attribut i tabellen. Den här funktionen är användbar för att förstå tillgängliga värden, antal och procenttal. Det kan också hjälpa dig att undvika problem som inkonsekvent skiftläge eller stavning när du skapar frågor eller skapar uttryck.
 
@@ -50,9 +51,9 @@ Så här lägger du till villkor i frågan:
 
    ![bild som visar distributionen av värdegränssnittet](assets/rule-builder-distribution-values.png)
 
-+++
+   +++
 
-+++ Lägg till i Favoriter
+   +++ Lägg till i Favoriter
 
    Om du lägger till attribut på Favoriter-menyn får du snabb åtkomst till de attribut du använder mest. Du kan lägga till upp till 20 attribut till favoriter. Favoriter och nyligen använda attribut kopplas till varje användare i en organisation, vilket ger en smidig upplevelse på olika datorer och enheter.
 
@@ -60,7 +61,7 @@ Så här lägger du till villkor i frågan:
 
    ![bild som visar gränssnittet för favoriter](assets/rule-builder-favorites.png)
 
-+++
+   +++
 
 1. Klicka på **[!UICONTROL Confirm]** om du vill lägga till det markerade attributet i villkoret.
 
@@ -111,7 +112,7 @@ Navigera till den länkade tabellen för en **1-1-länk**, markera önskat attri
 
 Du kan också markera en tabelllänk direkt i väljaren **Värde** och bekräfta. I så fall måste värden som är tillgängliga för den valda tabellen markeras med en dedikerad väljare, vilket visas i exemplet nedan.
 
-+++Exempel på fråga
++++Frågeexempel
 
 Här riktar frågan sig till varumärken vars etikett är&quot;kör&quot;.
 
@@ -127,11 +128,11 @@ Här följer ett frågeexempel där en tabelllänk har markerats direkt. Tillgä
 
 ![Skärmbild av varumärkestabellen](assets/rule-builder-1-1-attribute-table.png)
 
-+++
++++ 
 
 För en **1-N-länk** kan du definiera undervillkor för att förfina din fråga, vilket visas i exemplet nedan.
 
-+++Exempel på fråga
++++Frågeexempel
 
 Här är frågan riktad till mottagare som har gjort inköp relaterade till Brewmsaster-produkten, för mer än 100$.
 
@@ -145,7 +146,7 @@ Här är frågan riktad till mottagare som har gjort inköp relaterade till Brew
 
    ![Skärmbild av inköpstabellen](assets/rule-builder-1-n-collection.png)
 
-+++
++++ 
 
 ### Anpassade villkor med samlade data {#aggregate}
 

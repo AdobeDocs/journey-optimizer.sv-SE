@@ -4,7 +4,8 @@ product: journey optimizer
 title: Använda aktiviteten Läsa målgrupper
 description: Lär dig hur du använder Läs-målgruppsaktiviteten i en orkestrerad kampanj
 exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
-source-git-commit: 63ca1aab5190c58031dbab13651639bba4363964
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%

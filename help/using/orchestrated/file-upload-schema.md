@@ -4,7 +4,8 @@ product: journey optimizer
 title: Konfigurationssteg
 description: Lär dig hur du skapar ett relationsschema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%

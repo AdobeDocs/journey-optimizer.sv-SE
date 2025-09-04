@@ -4,7 +4,8 @@ product: journey optimizer
 title: Använd aktiviteten Deduplicering
 description: Lär dig hur du använder aktiviteten Deduplicering
 exl-id: 4aa79448-f75a-48d5-8819-f4cb4baad5c7
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%

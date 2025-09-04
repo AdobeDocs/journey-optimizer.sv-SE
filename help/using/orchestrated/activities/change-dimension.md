@@ -4,7 +4,8 @@ product: journey optimizer
 title: Använd aktiviteten Ändra dimension
 description: Lär dig hur du använder aktiviteten Ändra dimension
 exl-id: 83e66f10-93dd-4759-840c-2c83abc42a28
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+version: Campaign Orchestration
+source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
