@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
-source-git-commit: 61498b61f7f05e0553fe575c980fd1bee08500a3
+source-git-commit: 27ae100873fee1a790c7e1e757248f9c3af8e24a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 42%
@@ -52,6 +52,6 @@ Fel och varningar som är globala för resan visas först i listan. Fel och varn
 
 ## Lägg till en alternativ sökväg {#canvas-add-path}
 
-Du kan definiera en reservåtgärd om ett fel uppstår för följande reseaktiviteter: **[!UICONTROL Condition]** och **[!UICONTROL Action]**.
+Du kan definiera en reservåtgärd om ett fel uppstår för följande reseaktiviteter: **[!UICONTROL Optimize]** och **[!UICONTROL Action]**.
 
 När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa. Det enda sättet att få det att fortsätta är att lösa problemet. För att undvika att avbryta resan kan du även kontrollera alternativet **[!UICONTROL Add an alternative path in case of a timeout or an error]** i aktivitetens egenskaper. Läs mer i [det här avsnittet](../building-journeys/using-the-journey-designer.md#paths).
