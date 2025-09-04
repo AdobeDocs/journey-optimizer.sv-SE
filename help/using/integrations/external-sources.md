@@ -10,9 +10,10 @@ level: Beginner
 keywords: integration
 hide: true
 hidefromtoc: true
-source-git-commit: e8512ddab2548c8b2156331c335632cde8686f80
+exl-id: 104f283e-f6a5-431b-919a-d97b83d19632
+source-git-commit: 26f0bdd9f67648d0a382fd67c296bf44f0ea42df
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -29,6 +30,18 @@ Du kan använda den här funktionen för att komma åt externa data och hämta i
 * **Prisinformation** för produkter.
 * **Produktrekommendationer** från rekommendationsmotorer.
 * **Logistikuppdateringar** gillar leveransstatus.
+
+## Beta begränsningar {#limitations}
+
+Betaversionen har följande begränsningar:
+
+* Utgående kanaler stöds endast.
+
+* Endast JSON-format stöds för API-anropssvar. Binära utdata för HTML och råformat är inte tillgängliga.
+
+* Endast hämtnings-API:er för specifikt innehåll stöds, lista-API:er är inte tillgängliga.
+
+* Integreringsfunktionen är tillgänglig för både resor och kampanjer, men stöds inte i fragment.
 
 ## Konfigurera integreringen {#configure}
 
@@ -131,7 +144,3 @@ Som marknadsförare kan ni använda konfigurerade integreringar för att persona
 Din integrationspersonalisering tillämpas nu korrekt på ditt innehåll och säkerställer att alla mottagare får en skräddarsydd, relevant upplevelse baserat på de attribut du har konfigurerat.
 
 ![](assets/external-integration-content-7.png)
-
-
-
-
