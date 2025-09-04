@@ -57,7 +57,7 @@ Med aktiviteten **[!UICONTROL Enrichment]** kan du lägga till ytterligare data 
 >id="ajo_orchestration_reconciliation_targeting_selection"
 >title="Välj måldimension"
 >abstract="Välj måldimension för inkommande data som ska förenas med."
->additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html#targeting-dimensions" text="Måldimensioner"
+>additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html?lang=sv-SE#targeting-dimensions" text="Måldimensioner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_keep_unreconciled_data"
