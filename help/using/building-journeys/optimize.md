@@ -13,9 +13,9 @@ hidefromtoc: true
 hide: true
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: 7d57767fcfacbba3a4ec2d1279937ca63ffb8c48
+source-git-commit: 3cda7aad46e6961c7d19706bad060565b92d7b19
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Låt oss säga att du vill jämföra tre banor:
 
 När resan är live tilldelas användarna slumpvis olika vägar. [!DNL Journey Optimizer] spårar vilken sökväg som fungerar bäst och ger åtgärdbara insikter.
 
-Följ hur din resa framskrider med rapporten Experimentera med resan på resan.<!--Reporting page on Journey Path Experimentation to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
+<!--Follow the success of your journey with the Journey Path Experiment report.Reporting page on Journey Path Experimentation to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
 
 ### Exempel på användningsområden {#uc-experiment}
 
@@ -204,7 +204,7 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 När resan är live behandlas den sökväg som anges för varje segment så att Guld-medlemmar anger sökvägen med e-posterbjudandena, medan de andra medlemmarna anger sökvägen med SMS-påminnelsen.
 
-Följ hur din resa framskrider med rapporten om målanpassning av kundväg (Journey Path Targeting).<!--Reporting page on Journey Path Targeting to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
+<!--Follow the success of your journey with the Journey Path Targeting report.Reporting page on Journey Path Targeting to be created - such as what we have for [Experimentation campaign report](../reports/campaign-global-report-cja-experimentation.md)-->
 
 ### Användningsfall för målregel {#uc-targeting}
 
