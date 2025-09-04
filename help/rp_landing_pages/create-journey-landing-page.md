@@ -4,13 +4,14 @@ product: Journey Optimizer
 title: Skapa en resa
 description: Skapa en resa
 redpen-status: CREATED_||_2025-08-11_20-07-02
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+version: Journey Orchestration
+exl-id: d08e8c3a-7ade-4c38-93f6-c552a44d6209
+source-git-commit: 3eadf569fd98ac1b51a62e95f399c04f47fc5071
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 4%
 
 ---
-
 
 # Skapa en resa{#section-overview}
 
@@ -20,7 +21,7 @@ Genom att skapa en resa i Adobe Journey Optimizer kan ni skapa personaliserade, 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Så här skapar du din första kundresa
 
@@ -30,7 +31,7 @@ Lär dig hur du skapar, utformar, testar och publicerar din första kundresa med
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Definiera och hantera reseegenskaper
 
@@ -40,7 +41,7 @@ Konfigurera inresegler, tidsrelaterade inställningar, åtkomsthantering med mer
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Så här utformar du din resa
 
@@ -50,7 +51,7 @@ Använd dra-och-släpp-gränssnittet för att utforma personaliserade flerstegsm
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Hur du testar din resa
 
@@ -60,7 +61,7 @@ Testa dina resor med simulerade profiler och hitta fel innan du publicerar.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Testa resor med körläge för torr körning
 
@@ -70,7 +71,7 @@ Validera era resor med verkliga produktionsdata utan att kontakta kunder eller u
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Publicera en resa
 

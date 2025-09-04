@@ -8,10 +8,10 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
-source-git-commit: 27d1ada9f501cd30fdb57104377845de75eff1b0
+source-git-commit: ab23386f22e6b585df412ccab039576a51a3ce20
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
@@ -134,14 +134,29 @@ Bläddra bland följande blogginlägg för att hitta mer vägledning och bästa 
 <img alt="Stega händelser i dina resor" src="../assets/do-not-localize/list.jpeg">
 <div>
 <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-step-events-in-adobe-journey-optimizer-fundamentals/ba-p/762024" target="_blank">Mastering Step Events i Adobe Journey Optimizer: Fundamentals, Schema, and Essential Queries for Data-driven Campaigns
-</a>
+</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658" target="_blank">Användningsfall: Snabb extern Audience Activation med anpassad överföring</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/personalization-beyond-the-ajo-profile-bringing-non-profile/ba-p/769225" target="_blank">Användningsfall: Personalization utanför profilen
+</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/take-flight-with-personalization-how-airlines-can-elevate-offers/ba-p/767513" target="_blank">Take Flight with Personalization: How Airlines Can Elevate Offates with Adobe Journey Optimizer
+</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-real-time-personalization-a-marketer-s-guide-to-aem/ba-p/762606" target="_blank">Mastering Real-Time Personalization: A Marketer's Guide to AEM Content Fragments and Adobe Journey Optimizer
+</a></p>
 </div>
 <p></td>
 <td>
 <img alt="Anpassade åtgärder" src="../assets/do-not-localize/step-event.jpeg">
-<div><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">Så här utökar du Adobe Journey Optimizer med anpassade åtgärder: Användningsexempel för integrering
-</a>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">Så här utökar du Adobe Journey Optimizer med anpassade åtgärder: Användningsexempel för integrering
+</a></p>
 </div>
-<p></td>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/breaking-down-barriers-how-adobe-journey-optimizer-s-custom/ba-p/759223" target="_blank">Adobe Journey Optimizer anpassade delegeringsfunktion löser problem med företagets regelefterlevnad
+</a></p>
+</div>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/line-in-ajo-from-first-campaign-to-advanced-expression-fragment/ba-p/771048" target="_blank">LINJE i Journey Optimizer: Från den första kampanjen till avancerad uttrycksfragment och fall för användning av anpassade åtgärder
+</a></p>
+</div>
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-universal-link-integration-guide-for-ios/ba-p/768669" target="_blank">Journey Optimizer Universal Link Integration Guide for iOS
+</a></p>
+</div>
+</td>
 </tr></table>
