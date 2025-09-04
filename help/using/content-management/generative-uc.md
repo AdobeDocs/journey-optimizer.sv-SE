@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
-source-git-commit: 45ae810fadfcf507ee94a703a928bacdeba09e9b
+source-git-commit: 3dfd46b4b867b873f847741d9398b8d20a75561d
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
-## Generera innehåll för olika språk {#languages}
+## Generera innehåll för olika språk {#languageS}
 
 ![](assets/do-not-localize/gen-ai-language.gif)
 
