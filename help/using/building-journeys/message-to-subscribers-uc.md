@@ -9,7 +9,8 @@ role: User, Data Engineer
 level: Intermediate, Experienced
 keywords: resa, användningsfall, meddelande, prenumeranter, lista, läsa
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
-source-git-commit: 824cbf12502f0a52e27636dddee38cb7dee94bf4
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 2%
@@ -55,7 +56,7 @@ Så här konfigurerar du den här resan:
 
       ![](assets/message-to-subscribers-uc-2.png)
 
-   1. Klicka på **[!UICONTROL Ok]** i dialogrutan **[!UICONTROL Add an expression]**.
+   1. Klicka på **[!UICONTROL Add an expression]** i dialogrutan **[!UICONTROL Ok]**.
 
 >[!CAUTION]
 >

@@ -9,7 +9,8 @@ role: User
 level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: d255e9e4-301a-444a-86d3-97e0df4d3a49
-source-git-commit: d89eb9e569cb6de2edc5f20bdcf669972ccc8a8b
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%

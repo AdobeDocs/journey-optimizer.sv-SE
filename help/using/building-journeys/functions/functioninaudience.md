@@ -7,7 +7,8 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: inAudience, funktion, uttryck, resa
 exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560
-source-git-commit: 385e27fd4ea34f6a10b8da6b99a2c888edf9d57e
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 3%
@@ -31,7 +32,7 @@ Målgrupper kan ha två statusar:
 * realiserad: Enheten kvalificerar sig för segmentdefinitionen.
 * avslutad: Entiteten avslutar segmentdefinitionen.
 
-Endast personer med **Realiserad**-målgruppsdeltagarstatus betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results).
+Endast personer med **Realiserad**-målgruppsdeltagarstatus betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results).
 
 `inAudience('audienceName') == true` betyder att du har ett segmentMembership med den angivna statusen.
 

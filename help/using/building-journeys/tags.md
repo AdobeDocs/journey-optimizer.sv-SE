@@ -9,7 +9,8 @@ role: User
 level: Intermediate
 keywords: resa, taggar
 exl-id: 44c255d1-121c-47d4-b407-161626ca3cb4
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -48,7 +49,7 @@ Du kan lägga till eller ta bort taggar från alla typer av resor (live, draft, 
 
 ## Hantera taggar
 
-Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **Taggar** under **ADMINISTRATION**. Läs den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html?lang=sv-SE).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **Taggar** under **ADMINISTRATION**. Läs den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
 
 >[!NOTE]
 >

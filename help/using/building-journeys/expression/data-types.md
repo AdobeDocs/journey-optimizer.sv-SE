@@ -8,10 +8,11 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: uttryck, data, datatyp, resa
 exl-id: fdfc3287-d733-45fb-ad11-b4238398820a
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 2%
+source-wordcount: '616'
+ht-degree: 4%
 
 ---
 
@@ -165,7 +166,7 @@ Den kan kapslas in i en toDateTimeOnly-funktion.
 
 Serialiseringsformat: ISO-8601 utökat förskjutningsformat för datum och tid.
 
-Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME&quot;){_blank}.
+Det använder DateTimeFormatter ISO_LOCAL_DATE_TIME för att avserialisera och serialisera värdet. [Läs mer](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME"){_blank}.
 
 **Litteral representation**
 

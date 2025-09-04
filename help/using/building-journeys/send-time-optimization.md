@@ -9,7 +9,8 @@ role: User
 level: Intermediate
 keywords: sändningstid, skicka, meddelande, optimering, resa, AI, intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
-source-git-commit: 78b8b4d6e8cf49ab39150b7bc412bef009bbad2b
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
@@ -115,7 +116,7 @@ För att minimera modellens påverkan på profilens detaljrikedom lagras modellp
 +++
 
 
-+++Vilken är den genomsnittliga fördelen med optimering vid sändning?
++++Vilken är den genomsnittliga fördelen med optimering för Skicka-tid?
 
 Sändningsoptimering kan öka e-postklickfrekvensen och öka öppningsfrekvensen i intervallet mellan cirka 2 % och 10 % för alla meddelanden som optimeras av en organisation.
 
@@ -132,7 +133,7 @@ Det är troligare att organisationer får större fördelar av att använda opti
 
 +++
 
-+++Jag klickar alltid på e-post eller push-meddelanden kl. 12.00, varför skickade inte algoritmen ett meddelande till mig kl. 12.00?
++++Jag klickar alltid på e-post eller push-meddelanden vid 12:00, varför skickade inte algoritmen ett meddelande till mig kl. 12:00?
 
 
 Detta kan inträffa av flera orsaker:
@@ -142,14 +143,14 @@ Detta kan inträffa av flera orsaker:
 
 +++
 
-+++Hur känner optimeringen av Skicka-tid en användares tidszon?
++++Hur känner optimering av sändningstid en användares tidszon?
 
 För optimering av sändningstid används profilfältet `timeZone` för att fastställa en användares tidszon. Om den användaren inte är tillgänglig försöker Send-Time Optimization härleda en användares tidszon från annan geografisk information i användarens profil, till exempel land och delstat.
 
 +++
 
 
-+++Will Send-Time Optimization Skicka push-meddelanden till användare under natten i den lokala tidszonen?
++++Kommer optimering av sändningstid att skicka push-meddelanden till användare under natten i den lokala tidszonen?
 
 Tidsoptimering för sändning kan skicka push-meddelanden till användare under natten i den lokala tidszonen under följande omständigheter:
 

@@ -8,7 +8,8 @@ role: Data Engineer, Architect
 level: Experienced
 keywords: resa, uttryck, redigerare, egenskaper
 exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2
-source-git-commit: 619bcbc16b4117c29c482c85323603a4281298e0
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -36,7 +37,7 @@ Nedan följer några exempel på användningsområden:
 
 * **Logga ignorerade profiler**: Du kan skicka alla profiler som har uteslutits från ett meddelande via en begränsningsregel till ett tredjepartssystem för loggning. För detta anger du en sökväg i händelse av timeout och fel och lägger till ett villkor som ska filtreras efter en viss feltyp, t.ex.&quot;ignorera personer genom att appa regel&quot;. Du kan sedan överföra de borttagna profilerna till ett tredjepartssystem via en anpassad åtgärd.
 
-* **Skicka aviseringar vid fel**: du kan skicka ett meddelande till ett tredjepartssystem varje gång ett fel inträffar i ett meddelande. För detta anger du en sökväg om ett fel uppstår, lägger till ett villkor och en anpassad åtgärd. Du kan till exempel skicka ett meddelande på en Slack-kanal med en beskrivning av det fel som påträffats.
+* **Skicka aviseringar vid fel**: du kan skicka ett meddelande till ett tredjepartssystem varje gång ett fel inträffar i ett meddelande. För detta anger du en sökväg om ett fel uppstår, lägger till ett villkor och en anpassad åtgärd. Du kan till exempel skicka ett meddelande på en Slack-kanal med en beskrivning av det fel som uppstod.
 
 * **Förfina fel i rapportering** : I stället för att bara ha en sökväg för felmeddelanden kan du definiera ett villkor per feltyp. På så sätt kan du förfina rapporteringen och visa alla feltyper och data.
 

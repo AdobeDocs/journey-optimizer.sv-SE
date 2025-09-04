@@ -9,7 +9,8 @@ role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -87,4 +88,4 @@ När du publicerar en ny version av en resa avslutas den tidigare versionen auto
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427940?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)

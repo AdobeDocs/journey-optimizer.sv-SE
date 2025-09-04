@@ -9,7 +9,8 @@ role: User
 level: Intermediate
 keywords: resor, begränsning
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 18296fe54dcef6620d4f74374848199368f01475
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +39,7 @@ Här är begränsningar för användningen av resor.
 ## Begränsningar för anpassade åtgärder {#custom-actions-limitations}
 
 * Den anpassade åtgärds-URL:en stöder inte dynamiska parametrar. 
-* Endast anropsmetoderna POST och PUT stöds. 
+* Det finns bara stöd för anropsmetoderna POST och PUT. 
 * Namnet på frågeparametern eller -rubriken får inte börja med &quot;.&quot; eller &quot;$&quot;. 
 * IP-adresser tillåts inte. 
 * Interna Adobe-adresser (.adobe.) tillåts inte.

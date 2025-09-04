@@ -9,7 +9,8 @@ role: User
 level: Intermediate
 keywords: resa, aktivitet, slut
 exl-id: 76c74ca3-edaa-48c5-8d6a-0906120e31a1
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 7%

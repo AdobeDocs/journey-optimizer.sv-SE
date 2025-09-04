@@ -10,7 +10,8 @@ hide: true
 hidefromtoc: true
 keywords: uttryck, villkor, användningsfall, händelser
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
-source-git-commit: dbb1a4d649f29b763121c7856cecca16dcd2864f
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -164,4 +165,4 @@ substr(
 Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
 
-Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html?lang=sv-SE) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
+Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.

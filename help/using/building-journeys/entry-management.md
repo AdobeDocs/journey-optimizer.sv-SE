@@ -8,7 +8,8 @@ role: User
 level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
-source-git-commit: a2e4a6c15ea9e6a96544eaa8f58dc0cd55854bbe
+version: Journey Orchestration
+source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 1%
@@ -61,7 +62,7 @@ Due to the 30-day journey timeout, when journey reentrance is not allowed, we ca
 Business events follow reentrance rules in the same way as for unitary events. If a journey allows reentrance, the next business event will be processed.
 -->
 
-Aktivera motsvarande alternativ i avsnittet **[!UICONTROL Execution]** i resans egenskaper om du vill tillåta flera körningar av affärshändelser i **Affärsresor**.
+Aktivera motsvarande alternativ i avsnittet **i resans egenskaper om du vill tillåta flera körningar av affärshändelser i** Affärsresor **[!UICONTROL Execution]**.
 
 ![](assets/business-entry.png)
 
