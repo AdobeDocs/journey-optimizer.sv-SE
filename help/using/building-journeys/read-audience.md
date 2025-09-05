@@ -10,9 +10,9 @@ level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: de338bcbd73b94ac004ee39106e50fe707afb19a
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2351'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
 
    >[!NOTE]
    >
-   >Dessutom kan du rikta in dig på Adobe Experience Platform-målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförda från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE#import-audience){target="_blank"}.
+   >Dessutom kan du rikta in dig på Adobe Experience Platform-målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförda från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
 
    Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
@@ -66,7 +66,7 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
 
    >[!NOTE]
    >
-   >Det är bara de personer som har **Realiserad**-målgruppsdeltagarstatus som går in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Det är bara de personer som har **Realiserad**-målgruppsdeltagarstatus som går in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. I fältet **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera personerna. Som standard är fältet förifyllt med det senast använda namnutrymmet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
 
@@ -86,7 +86,7 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
 
 * Vi rekommenderar att du bara använder gruppmålgrupper i en **Läs målgrupp** -aktivitet. Detta ger en tillförlitlig och enhetlig räkning för de målgrupper som används under en resa. Läsarna är utformade för att gruppbearbetas. Om ditt användningsfall behöver realtidsdata använder du aktiviteten **[Målgruppskvalificering](audience-qualification-events.md)**.
 
-* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
+* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
 
 * Concurrent Read Audience Limit per Organization: Varje organisation kan köra upp till fem Read Audience-instanser samtidigt. Detta omfattar både schemalagda körningar och körningar som triggas av affärshändelser, över alla sandlådor och resor. Den här gränsen tillämpas för att säkerställa en rättvis och balanserad resursallokering för alla organisationer.
 
@@ -94,12 +94,16 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
 
 * Tidsgräns för jobbbearbetning: Läsa målgruppsjobb som inte kan bearbetas inom 12 timmar på grund av säkerhetsgränsen rensas automatiskt och körs aldrig. Detta förhindrar jobbackumulering och garanterar systemstabilitet.
 
+* När du använder gruppsegment ska du se till att dina intag och uppdateringar av dagliga ögonblicksbilder är fullständiga långt innan resan börjar. Överväg en ytterligare vänteperiod om segmenten måste återspegla data som importerats samma dag. Om det är avgörande att profilen uppdateras omedelbart bör du överväga att använda ett händelsebaserat eller direktuppspelat användningsfall i stället för en daglig batchhantering. Du kan också infoga ytterligare en väntemekanism så att uppdaterade data kan spridas före resans utvärdering.
+
+
+
 Guardrutor för aktiviteten **Läs målgrupp** visas på [den här sidan](../start/guardrails.md#read-segment-g).
 
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} gäller även för Adobe Journey Optimizer.
+>[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även för Adobe Journey Optimizer.
 
 
 ### Hantera profilinträde under resan
