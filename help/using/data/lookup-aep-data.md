@@ -11,9 +11,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: ea40a13765be5ff603dd848df4fb02a4dbb9a426
+source-git-commit: 248aae7b2841086ef5a0ea73936c245963e8eae2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 
 ### Tillstånd för sökningstjänst
 
-| Funktionskomponent | Begränsning för produktionssandlåda | Anteckningar |
+| Funktionskomponent | Gränser | Anteckningar |
 | ------- | ------- | ------- |
 | Aktiverade uppslagsdatauppsättningar | Max 10 per organisation | Maximalt antal datauppsättningar som kan konfigureras för sökning vid en given tidpunkt. Den här gränsen gäller det totala antalet uppslagsdatauppsättningar både i produktions- och utvecklingssandlådor i kundinstansen. |
 | Antal datauppsättningsposter | Upp till 2 miljoner poster per datauppsättning | Maximalt antal poster som tillåts i en enskild datauppsättning, beräknat som det totala antalet för alla batchar i den datauppsättningen. |
