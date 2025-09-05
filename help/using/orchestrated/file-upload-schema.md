@@ -5,9 +5,9 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar ett relationsschema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: 35cd3aac01467b42d0cba22de507f11546f4feb9
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ Genom att överföra en DDL-fil kan du definiera datamodellens struktur i förv�
 
 * **ENUM**\
   ENUM-fält stöds i både DDL-baserade och manuella schemagenereringar, vilket gör att du kan definiera attribut med en fast uppsättning tillåtna värden.
+Här är ett exempel:
+
+  ```
+  CREATE TABLE orders (
+  order_id     INT NOT NULL,
+  product_id   INT NOT NULL,
+  order_date   DATE NOT NULL,
+  customer_id  INT NOT NULL,
+  quantity     INT NOT NULL,
+  order_status enum ('PENDING', 'SHIPPED', 'DELIVERED', 'CANCELLED'),
+  PRIMARY KEY (order_id, product_id)
+  );
+  ```
 
 * **Schemaetikett för datastyrning**\
   Etikettering stöds på schemafältnivå för att tillämpa datastyrningsprinciper som åtkomstkontroll och användningsbegränsningar. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
@@ -61,9 +74,10 @@ Genom att överföra en DDL-fil kan du definiera datamodellens struktur i förv�
 1. Välj **[!UICONTROL Upload DDL file]** om du vill definiera ett entitetsrelationsdiagram och skapa scheman.
 
    Tabellstrukturen måste innehålla:
-   * Minst en primärnyckel
+   * Minst en primärnyckel.
    * En versionsidentifierare, till exempel ett `lastmodified`-fält av typen `datetime` eller `number`.
-   * För CDC-inmatning (Change Data Capture) är det en specialkolumn med namnet `_change_request_type` av typen `String` som anger typen av dataändring (t.ex. infoga, uppdatera, ta bort) och möjliggör inkrementell bearbetning
+   * För CDC-inmatning (Change Data Capture) är det en specialkolumn med namnet `_change_request_type` av typen `String` som anger typen av dataändring (till exempel infoga, uppdatera, ta bort) och möjliggör inkrementell bearbetning.
+   * DDL-filen får inte definiera fler än 200 tabeller.
 
 
    >[!IMPORTANT]
@@ -79,9 +93,13 @@ Genom att överföra en DDL-fil kan du definiera datamodellens struktur i förv�
 
 1. Konfigurera varje schema och dess kolumner och se till att en primärnyckel anges.
 
-   Ett attribut, till exempel `lastmodified`, måste anges som en versionsbeskrivare. Det här attributet, som vanligtvis är av typen `datetime`, `long` eller `int`, är nödvändigt för att matningsprocesser ska kunna säkerställa att datauppsättningen uppdateras med den senaste dataversionen.
+   Ett attribut, till exempel `lastmodified`, måste anges som versionsbeskrivare (typ `datetime`, `long` eller `int`) för att datauppsättningarna ska uppdateras med de senaste data. Användare kan ändra versionsbeskrivningen, som blir obligatorisk när den har angetts. Ett attribut kan inte vara både en primärnyckel (PK) och en versionsbeskrivning.
 
    ![](assets/admin_schema_2.png)
+
+1. Markera ett attribut som `identity` och mappa det till ett definierat identitetsnamnområde.
+
+1. Byt namn på, ta bort eller lägg till en beskrivning till varje tabell.
 
 1. Klicka på **[!UICONTROL Done]** när du är klar.
 
@@ -94,6 +112,10 @@ Följ stegen nedan för att definiera logiska anslutningar mellan tabeller i dit
 1. Få åtkomst till arbetsytans vy av din datamodell och välj de två tabeller som du vill länka
 
 1. Klicka på knappen ![](assets/do-not-localize/Smock_AddCircle_18_N.svg) bredvid Source Join och dra sedan pilen mot målhörnet för att upprätta anslutningen.
+
+   >[!NOTE]
+   >
+   >Sammansatta nycklar stöds om de definieras i DDL-filen.
 
    ![](assets/admin_schema_5.png)
 

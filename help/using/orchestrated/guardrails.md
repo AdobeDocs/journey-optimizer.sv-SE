@@ -5,9 +5,9 @@ title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: 35cd3aac01467b42d0cba22de507f11546f4feb9
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -31,31 +31,31 @@ Nedan finns ytterligare skyddsförslag och begränsningar när du använder orke
 
 * Scheman som används för mål måste innehålla minst **ett identitetsfält av typen`String`**, mappat till ett definierat identitetsnamnområde.
 
+* Det genomsnittliga antalet attribut per schema **får inte överstiga 50 kolumner** för att upprätthålla hanterbarhet och prestanda.
+
 ### Datainhämtning
 
 * Profil + relationsdataöverföring krävs.
 
 * All förtäring måste ske via **källor för datainhämtning**:
 
-   * För **filbaserat**: `_change_request_type`-fält krävs.
+   * För **filbaserat**: `_change_request_type`-fält krävs. Värden som stöds är `U` (upsert) eller `D` (delete).
 
    * För **molnbaserade**: Tabellloggning måste vara aktiverat.
 
-* **Direktuppdateringar till Snowflake eller datauppsättningar stöds inte**. Systemet är skrivskyddat, alla ändringar måste göras med registrering av ändringsdata.
-
-* **ETL-processer stöds inte**. Data måste omformas fullständigt till det format som krävs före intag.
-
-* **Delvisa uppdateringar tillåts inte**. Varje rad måste anges som en fullständig post.
+* **Delvisa postuppdateringar tillåts inte**. Varje rad måste anges som en fullständig post.
 
 * Gruppintaget för kampanjsamordning är begränsat till **en gång var femtonde minut**.
 
-* Fördröjning för intag, tid från intag till tillgänglighet i Snowflake, varierar vanligtvis **från 15 minuter till 2 timmar**, beroende på:
+* Fördröjning för intag i relationsbutiken varierar vanligtvis **från 15 minuter till 2 timmar**, beroende på:
 
    * Datavolym
 
    * Systemsamtidighet
 
    * Typ av åtgärd, t.ex. infogningar är snabbare än uppdateringar
+
+* **Dataflödet till datauppsättningsrelationen är 1-1**. Detta innebär att bara en källa kan mata en datauppsättning åt gången. Om du vill byta källa måste det befintliga dataflödet tas bort och ett nytt dataflöde skapas med den nya källan.
 
 ### Datamodellering
 
@@ -75,7 +75,7 @@ Nedan finns ytterligare skyddsförslag och begränsningar när du använder orke
 
 * **Gränser har angetts för antalet profilattribut** som kan användas i både grupp- och direktuppspelande målgrupper för att upprätthålla systemets effektivitet.
 
-* **Listan med värden (LOV)** och **uppräkningar** stöds fullt ut.
+* **Uppräkningar** stöds helt.
 
 * **Läsa målgrupper cachelagras inte**, varje kampanjkörning utlöser en fullständig målgruppsutvärdering utifrån underliggande data.
 
