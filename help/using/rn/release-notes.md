@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: c6179566226331d2169c3abc50a069262db80d85
+source-git-commit: f494b30608c7413e1b7fc8d6c38d46d60821ee1c
 workflow-type: tm+mt
-source-wordcount: '2011'
-ht-degree: 1%
+source-wordcount: '2051'
+ht-degree: 2%
 
 ---
 
@@ -20,9 +20,11 @@ ht-degree: 1%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Uppdateringar 25 september {#sep-updates}
+
+### Nya funktioner {#Sep-25-features}
 
 <table>
 <thead>
@@ -76,7 +78,8 @@ ht-degree: 1%
 <li>Hjälpfunktionen"datasetLookup" kan nu användas i uttrycksfragment.</li>
 <li>Med ett alternativ i datauppsättningsgränssnittet kan du nu aktivera postbaserade datauppsättningar för sökpersonalisering, utan att behöva utföra ett API-anrop.</li>
 <li>Förbättrad övervakning för att spåra dataöverföringshastighet och veta när datauppsättningar är klara för sökning.</li>
-<li>Uppdaterade riktlinjer och säkerhetsregler för optimala prestanda och tillförlitlighet.</li></ul></p>
+<li>Uppdaterade riktlinjer och säkerhetsregler för optimala prestanda och tillförlitlighet.</li>
+<li>Adobe Experience Platform-datauppsättningar kan nu utnyttjas i regler för beslutsplatsappning.</li></ul></p>
 <p>Mer information finns i <a href="../data/lookup-aep-data.md">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 1 september 2025</p>
 </td>
@@ -84,7 +87,9 @@ ht-degree: 1%
 </tbody>
 </table>
 
-### Förbättringar {#Sept-25-8-improv}
+### Förbättringar {#Sep-25-improv}
+
+* **Uttryck för regler för beslutsavgränsning** - Du kan nu skapa egna uttryck för att definiera tröskelvärdet för en begränsningsregel för ett beslutsobjekt. [Läs mer](../experience-decisioning/items.md#capping)
 
 * **Administration**
 

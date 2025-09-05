@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
-source-git-commit: 42f231a9b0b34a63d1601dcae653462f6321caed
+source-git-commit: f494b30608c7413e1b7fc8d6c38d46d60821ee1c
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -35,27 +35,45 @@ ht-degree: 0%
 
 Med [!DNL Journey Optimizer] kan du utnyttja data från [!DNL Adobe Experience Platform] för beslut. Detta gör att du kan utöka definitionen av dina beslutsattribut till ytterligare data i datauppsättningar för bulkuppdateringar som ändras regelbundet utan att du behöver uppdatera attributen manuellt en i taget. Till exempel tillgänglighet, väntetider osv.
 
-Innan du startar måste datauppsättningar som behövs för sökpersonalisering först aktiveras för sökning. Detaljerad information finns i det här avsnittet: [Använd Adobe Experience Platform-data](../data/lookup-aep-data.md).
+>[!IMPORTANT]
+>
+>[!DNL Journey Optimizer]stöder upp till 1 000 sökningar efter en enda beslutsprincip.
 
-## Skyddsritningar och begränsningar {#guidelines}
+## Förhandskrav
 
-Observera följande begränsningar och riktlinjer innan du börjar:
+### Aktivera datauppsättningar för sökning
 
-* En beslutspolicy kan referera till totalt upp till tre datauppsättningar, i alla sina beslutsregler och rangordningsformler tillsammans. Om reglerna till exempel använder två datauppsättningar kan formlerna bara använda en extra datauppsättning.
-* En beslutsregel kan använda 3 datauppsättningar.
-* En rankningsformel kan använda 3 datamängder.
-* När en beslutsprincip utvärderas kommer systemet att utföra upp till 1 000 datauppsättningsfrågor (sökningar) totalt. Varje datamängdsmappning som används av ett beslutsobjekt räknas som en fråga. Exempel: Om ett beslutsobjekt använder två datauppsättningar räknas det som två frågor mot gränsen på 1 000 frågor.
+Innan du startar måste datauppsättningar som behövs för beslut först aktiveras för sökning. Följ stegen som beskrivs i det här avsnittet: [Använd Adobe Experience Platform-data](../data/lookup-aep-data.md).
+
+### Skapa mappningar
+
+Om du vill använda attribut från Adobe Experience Platform för att fatta beslut måste du skapa en mappning som definierar hur Adobe Experience Platform datamängd kopplas till data i [!DNL Journey Optimizer]. Gör så här:
+
+1. Navigera till **[!UICONTROL Catalogs]** / **[!UICONTROL Dataset lookup]** och klicka sedan på **[!UICONTROL Create]**.
+
+   ![](assets/exd-lookup-mapping.png)
+
+1. Konfigurera mappningen:
+
+   1. Klicka på **[!UICONTROL Select dataset]** om du vill visa alla Adobe Experience Platform som har aktiverats för sökning. Markera datauppsättningen med de attribut du behöver.
+
+   1. Klicka på **[!UICONTROL Select key]** för att välja en kopplingsnyckel (t.ex. ett flightnummer eller ett kund-ID) som finns både i beslutsobjektattributen och datauppsättningen.
+
+   ![](assets/exd-lookup-mapping-create.png)
+
+1. Klicka på **[!UICONTROL Save]**.
 
 ## Utnyttja Adobe Experience Platform data {#leverage-aep-data}
 
-När en datauppsättning har aktiverats för sökning kan du använda dess attribut för att berika din beslutslogik med externa data. Detta är särskilt användbart för attribut som ändras ofta, t.ex. produkttillgänglighet eller realtidspriser.
+När en datauppsättning har aktiverats för sökning och mappningar kan du använda data för att berika din beslutslogik med externa data. Detta är särskilt användbart för attribut som ändras ofta, t.ex. produkttillgänglighet eller realtidspriser.
 
 Attribut från Adobe Experience Platform datauppsättningar kan användas i två delar av beslutslogiken:
 
 * **Beslutsregler**: Definiera om ett beslutsobjekt kan visas.
 * **Rankningsformler**: Prioritera beslutsobjekt baserat på externa data.
+* **Takregler**: Använd externa data för att beräkna tröskelvärdet för appningsregler.
 
-I nästa avsnitt beskrivs hur du använder Adobe Experience Platform-data i båda kontexterna.
+I nästa avsnitt beskrivs hur du använder Adobe Experience Platform-data i dessa sammanhang.
 
 ### Beslutsregler {#rules}
 
@@ -69,16 +87,9 @@ Så här använder du Adobe Experience Platform-data i beslutsregler:
 
    ![](assets/exd-lookup-rule.png)
 
-1. Klicka på **[!UICONTROL Create mapping]** för att definiera hur Adobe Experience Platform-datauppsättningen ska kopplas med data i [!DNL Journey Optimizer].
+1. Klicka på **[!UICONTROL Add dataset]** och markera sedan datauppsättningen med de attribut du behöver.
 
-   * Markera datauppsättningen med de attribut du behöver.
-   * Välj en kopplingsnyckel (t.ex. produkt-ID eller butiks-ID) som finns både i beslutsobjektattributen och datauppsättningen.
-
-   ![](assets/exd-lookup-mapping.png)
-
-   >[!NOTE]
-   >
-   >Du kan skapa upp till tre mappningar per regel.
+   ![](assets/exd-lookup-select-dataset.png)
 
 1. Klicka på **[!UICONTROL Continue]**. Du kan nu komma åt datauppsättningsattributen på menyn **[!UICONTROL Dataset Lookup]** och använda dem i regelvillkoren. [Lär dig skapa en beslutsregel](../experience-decisioning/rules.md#create)
 
@@ -92,19 +103,54 @@ Anta att ett flygbolag använder en rankningsformel för att prioritera uppgrade
 
 Så här använder du Adobe Experience Platform-data i rankningsformler:
 
-1. Skapa eller redigera en rankningsformel. Klicka på **[!UICONTROL Dataset lookup]** i avsnittet **[!UICONTROL Create mapping]**.
+1. Skapa eller redigera en rankningsformel.
 
-1. Definiera datamängdsmappningen:
+1. Klicka på **[!UICONTROL Dataset lookup]** i avsnittet **[!UICONTROL Add dataset]**.
 
-   * Välj lämplig datauppsättning (t.ex. platstillgänglighet per flygning).
-   * Välj en kopplingsnyckel (t.ex. flightnummer eller kund-ID) som finns både i beslutsobjektsattributen och datauppsättningen.
+1. Välj lämplig datauppsättning.
 
-   ![](assets/exd-lookup-formula-mapping.png)
+   ![](assets/exd-lookup-formula-dataset.png)
 
    >[!NOTE]
    >
-   >Du kan skapa upp till tre mappningar per rankningsformel.
+   >Om den datauppsättning du söker inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar. Mer information finns i avsnittet [Förutsättningar](#prerequisites).
 
 1. Använd datauppsättningsfälten för att skapa din rankningsformel som vanligt. [Lär dig skapa en rankningsformel](ranking/ranking-formulas.md#create-ranking-formula)
 
    ![](assets/exd-lookup-formula-criteria.png)
+
+### Begränsningsregler {#capping-rules}
+
+Begränsningsregler används som begränsningar för att definiera det maximala antal gånger en beslutspost kan presenteras. Med hjälp av Adobe Experience Platform-data i capping-regler kan du definiera capping-villkor baserat på dynamiska, externa attribut. Detta görs genom att använda ett uttryck i din fästregel för att beräkna det önskade tröskelvärdet.
+
+En återförsäljare kanske till exempel vill sluta ett erbjudande baserat på produktlager i realtid. I stället för att ange ett fast tröskelvärde på 500 använder de ett uttryck som refererar till fältet `inventory_count` från en Adobe Experience Platform-datauppsättning. Om datauppsättningen visar att 275 artiklar finns kvar i lager kommer erbjudandet endast att levereras upp till det numret.
+
+>[!NOTE]
+>
+>Begränsningsregeln **uttryck** är för närvarande tillgänglig som en begränsad tillgänglighetsfunktion för alla användare, och stöds bara för typen **[!UICONTROL In total]** av begränsning.
+
+Så här använder du Adobe Experience Platform-data i capping rules-uttryck:
+
+1. Skapa eller redigera ett beslutsobjekt.
+
+1. Klicka på **[!UICONTROL Add dataset]** och välj lämplig datauppsättning när du definierar om objektet är berättigande.
+
+   ![](assets/exd-lookup-capping.png)
+
+   >[!NOTE]
+   >
+   >Om den datauppsättning du söker inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar. Mer information finns i avsnittet [Förutsättningar](#prerequisites).
+
+1. Markera **[!UICONTROL In total]**-fästtypen och aktivera sedan alternativet **[!UICONTROL Expression]**.
+
+   ![](assets/exd-lookup-capping-expression.png)
+
+   >[!NOTE]
+   >
+   >Om den datauppsättning du söker inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar. Mer information finns i avsnittet [Förutsättningar](#prerequisites).
+
+1. Redigera uttrycket och använd datauppsättningsfälten för att skapa uttrycket.
+
+   ![](assets/exd-lookup-capping-attribute.png)
+
+1. Slutför konfigurationen av ditt capping och regelbeslutsobjekt som vanligt. [Lär dig hur du ställer in regler för appning](../experience-decisioning/items.md#capping)

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: f494b30608c7413e1b7fc8d6c38d46d60821ee1c
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
@@ -80,8 +80,8 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 >id="ajo_exd_item_constraints"
 >title="Lägga till målgrupper eller beslutsregler"
 >abstract="Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart vissa profiler."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Använd beslutsregler"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Använd beslutsregler"
 
 Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart specifika profiler, båda lösningarna som motsvarar olika användningar. Expandera avsnittet nedan om du vill ha mer information:
 
@@ -109,7 +109,7 @@ När du väljer målgrupper eller beslutsregler kan du se information om de upps
 
 ## Ange regler för begränsning {#capping}
 
-Begränsning används som en begränsning för att definiera det maximala antal gånger ett erbjudande kan presenteras. Genom att begränsa antalet gånger användarna får specifika erbjudanden kan ni undvika att överdriva era kunder och därmed optimera varje kontaktyta med det bästa erbjudandet. Du kan skapa upp till 10 takbeläggningar för ett visst beslutsobjekt.
+Begränsning används som en begränsning för att definiera det maximala antal gånger som ett erbjudande kan presenteras. Genom att begränsa antalet gånger användarna får specifika erbjudanden kan ni undvika att överdriva era kunder och därmed optimera varje kontaktyta med det bästa erbjudandet. Du kan skapa upp till 10 takbeläggningar för ett visst beslutsobjekt.
 
 ![](assets/item-capping.png)
 
@@ -118,7 +118,17 @@ Begränsning används som en begränsning för att definiera det maximala antal 
 >
 >Det kan ta upp till 3 sekunder att uppdatera värdet för den räknare som används. Anta att du visar en webbanderoll som visar ett erbjudande på din webbplats. Om en viss användare bläddrar till nästa sida på webbplatsen på mindre än 3 sekunder ökas inte räknarvärdet för den användaren.
 
-Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stegen för att ange regler för fästning för beslutsobjektet:
+När du konfigurerar regler för capping kan du referera till attribut som lagras i Adobe Experience Platform datamängder för att definiera tröskelvärden. Om du vill använda en datauppsättning markerar du den i avsnittet **[!UICONTROL Dataset]**.
+
+![](assets/exd-lookup-capping.png)
+
+>[!NOTE]
+>
+>Den här funktionen är för närvarande tillgänglig som begränsad tillgänglighet för alla användare. Detaljerad information om hur du använder det finns i det här avsnittet: [Använd Adobe Experience Platform-data för beslut](../experience-decisioning/aep-data-exd.md)
+
+Klicka på knappen **[!UICONTROL Create capping]** och följ sedan stegen nedan om du vill ange regler för fästning för beslutsobjektet.
+
+![](assets/item-capping-create.png)
 
 1. Ange vilken **[!UICONTROL Capping event]** som ska beaktas för att öka räknaren.
 
@@ -139,11 +149,33 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan de här stege
 
    * Välj **[!UICONTROL Per profile]** om du vill definiera hur många gånger erbjudandet kan föreslås för samma användare. Om du till exempel är en bank med ett Platinum-kreditkortserbjudande vill du inte att erbjudandet ska visas mer än fem gånger per profil. Ni tror faktiskt att om användaren har sett erbjudandet fem gånger och inte har följt det, har de större chans att agera på nästa bästa erbjudande.
 
-1. I fältet **[!UICONTROL Capping count limit]** anger du hur många gånger erbjudandet kan visas för alla användare eller per profiler, beroende på den valda begränsningstypen. Talet måste vara ett heltal större än 0.
+1. Definiera gränsvärdet. Om du vill göra det kan du antingen ange ett statiskt värde eller beräkna tröskelvärdet med hjälp av ett uttryck. Expandera avsnitten nedan om du vill ha mer information.
+
+   +++Statiskt tröskelvärde
+
+   I fältet **[!UICONTROL Capping count limit]** anger du hur många gånger erbjudandet kan visas för alla användare eller per profiler, beroende på den valda begränsningstypen. Talet måste vara ett heltal större än 0.
 
    Du har till exempel definierat en anpassad capping-händelse som antalet utcheckningar som ska beaktas. Om du anger 10 i fältet **[!UICONTROL Capping count limit]** skickas inga fler erbjudanden efter 10 utcheckningar.
 
-1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **&#x200B;**&#x200B;i det andra fältet.
+   +++
+
+   +++Tröskelvärde för uttryck
+
+   I stället för att använda ett statiskt värde för tröskelvärdet kan du definiera ett eget uttryck. På så sätt kan du beräkna tröskeln dynamiskt med hjälp av beslutsattribut och/eller externa attribut från en Adobe Experience Platform-datauppsättning.
+
+   En markör kan till exempel bestämma sig för att lägga till en multiplikator för att justera exponeringen. De kan t.ex. multiplicera det tillgängliga lagret med två så att erbjudandet kan visas för dubbelt så många kunder som antalet tillgängliga enheter. Detta tillvägagångssätt förutser att inte alla kunder kommer att konvertera, vilket ger bättre räckvidd utan överförsäljning.
+
+   >[!NOTE]
+   >
+   >Begränsningsregeln **uttryck** är för närvarande tillgänglig som begränsad tillgänglighet för alla användare. De stöds bara för typen **[!UICONTROL In total]**.
+
+   Om du vill använda ett uttryck aktiverar du alternativet **[!UICONTROL Expression]** och redigerar sedan uttrycket efter behov.
+
+   ![](assets/exd-lookup-capping-expression.png)
+
+   +++
+
+1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
 
    * Räknaren för frekvensbegränsning återställs kl. **12 UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **Söndag**. En varaktighet som du väljer får inte vara längre än **2 år** (d.v.s. motsvarande antal månader, veckor eller dagar).
 
@@ -188,3 +220,4 @@ Om du väljer ett beslutsobjekt eller klickar på ellipsknappen aktiveras de åt
   ![](assets/item-undo.png)
 
 * **[!UICONTROL Archive]**: Anger beslutsobjektets status till **[!UICONTROL Archived]**. Beslutsobjektet är fortfarande tillgängligt från listan, men du kan inte återställa dess status till **[!UICONTROL Draft]** eller **[!UICONTROL Approved]**. Du kan bara duplicera eller ta bort den.
+
