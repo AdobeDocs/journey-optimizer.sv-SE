@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d7a291fc8e203b2e5b77969b406591544882b26e
+source-git-commit: cbb96e60b5f3f18499380829c909ad5c4fb6bb37
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2913'
 ht-degree: 18%
 
 ---
@@ -357,6 +357,7 @@ ht-degree: 18%
       + [Kontrollera och skicka meddelanden i appen](using/in-app/send-in-app.md)
    + Push-meddelandekanal {#push}
       + [Push-meddelandekanal](/help/rp_landing_pages/push-landing-page.md)
+      + [Kom igång med push-meddelanden](using/push/get-started-push.md)
       + [Skapa ett push-meddelande](using/push/create-push.md)
       + [Utforma ett push-meddelande](using/push/design-push.md)
       + [Kontrollera och skicka push-meddelanden](using/push/send-push.md)
@@ -437,6 +438,7 @@ ht-degree: 18%
       + [Kontrollera och skicka dina meddelanden om whatsApp](using/whatsapp/send-whatsapp.md)
    + LINJE {#line}
       + [LINJE](/help/rp_landing_pages/line-landing-page.md)
+      + [Kom igång med LINE-kanal](using/line/get-started-line.md)
       + [Konfigurera LINE-kanal i Journey Optimizer](using/line/line-configuration.md)
       + [Skapa ett LINE-meddelande](using/line/create-line.md)
       + [Kontrollera och skicka LINE-meddelanden](using/line/send-line.md)
@@ -865,7 +867,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
