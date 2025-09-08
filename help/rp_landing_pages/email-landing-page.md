@@ -4,23 +4,17 @@ product: Journey Optimizer
 title: E-postkanal
 description: E-postkanal
 redpen-status: CREATED_||_2025-08-11_20-35-15
-source-git-commit: e8b71a7efe1ca05a33bc6f33253900a58fa6665c
+exl-id: f7c61cc3-943e-40a3-94be-f3f1bd46961d
+source-git-commit: 9cb3a60fb9a2266b4723dfc1b952f1bab11b97e3
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
-
 # E-postkanal{#section-overview}
 
 Med e-postkanalen i Adobe Journey Optimizer kan ni utforma, konfigurera och leverera slagkraftiga e-postkampanjer med precision och kreativitet. Vare sig ni skapar personaliserade meddelanden med den intuitiva e-post-Designer, konfigurerar sofistikerade e-postresor och kampanjer eller hanterar avanmälningar för att uppfylla kraven, kan den här kanalen samla alla aspekter av e-postmarknadsföringen under ett tak. Börja med att konfigurera e-postkanalen för optimal leverans och personalisering och utforska sedan verktygen för att skapa dynamiskt innehåll som får genklang hos er målgrupp. Läs mer om avancerade ämnen som att hantera avsändarens anseende och uppnå DMARC-efterlevnad för att se till att era e-postmeddelanden hamnar där de är avsedda. Med e-postkanalen kan ni omvandla er e-postmarknadsföring till en tillförlitlig, datadriven motor för kundengagemang, från smidig konfiguration till effektiv design och strategisk leverans.
-
-
->[!CONTEXTUALHELP]
->id="ajo_homepage_card4"
->title="Designa e-postmeddelanden"
->abstract="Använd **Adobe Journey Optimizer** för att skicka e-postmeddelanden till dina kunder. Du kan skapa, anpassa och förhandsgranska meddelanden i e-post-Designer."
 
 E-postleveranser kan skapas:
 
@@ -38,7 +32,7 @@ E-postleveranser kan skapas:
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Så här skapar du ett e-postmeddelande
 
@@ -48,7 +42,7 @@ Stegvisa anvisningar för att lägga till, konfigurera och testa e-poståtgärde
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Designa och optimera e-postinnehåll
 
@@ -58,7 +52,7 @@ Utforska verktyg och metodtips för att utforma responsivt och personaliserat e-
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Hantera e-postavanmälan
 
@@ -68,7 +62,7 @@ Konfigurera avanmälningsmekanismer i ett eller två steg för att hantera anvä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera e-postkanal
 
@@ -78,7 +72,7 @@ Konfigurera och hantera e-postkonfigurationer som delegering av underdomäner, u
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Mastering Email Delivery
 
