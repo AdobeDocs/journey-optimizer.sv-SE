@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 21d3fd6a182fe8ecce13b4216e03f93348955c14
+source-git-commit: 1215c7c2de090db7bcdb7943cc96599d9809972d
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1789'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,6 @@ Visa alla kampanjstatus och aviseringar [i det här avsnittet](#statuses).
 
 
 ## Åtkomst till kampanjer {#access}
-
->[!CONTEXTUALHELP]
->id="ajo_campaigns_view"
->title="Kampanjlista och kalendervyer"
->abstract="Förutom kampanjlistan innehåller [!DNL Journey Optimizer] en kalendervy över dina kampanjer, som ger en tydlig visuell representation av deras scheman. Du kan när som helst växla mellan list- och kalendervyer med dessa knappar."
 
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
@@ -89,15 +84,15 @@ Dessutom finns det ett sökfält och filter som gör det enklare att söka i lis
 
 ![bild som visar kampanjlagret](assets/inventory-actions.png)
 
-* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Få tillgång till rapporter för att mäta och visualisera effekten och resultatet av era kampanjer.
-* **[!UICONTROL Edit tags]** - Redigera de taggar som är associerade med kampanjen.
-* **[!UICONTROL Duplicate]** - I vissa fall kan du behöva duplicera en kampanj, till exempel för att köra en Orchestrated-kampanj som har stoppats.
-* **[!UICONTROL Delete]** - Ta bort kampanjen. Den här åtgärden är endast tillgänglig för **[!UICONTROL Draft]** kampanjer.
-* **[!UICONTROL Archive]** - Arkivera kampanjen. Alla arkiverade kampanjer tas bort 30 dagar efter det att de senast ändrades. Den här åtgärden är tillgänglig för alla kampanjer förutom **[!UICONTROL Draft]** kampanjer.
+* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Få tillgång till rapporter för att mäta och visualisera effekten och resultatet av era kampanjer. Läs mer om [kampanjrapporter](../reports/campaign-global-report-cja.md).
+* **[!UICONTROL Edit tags]** - Redigera de taggar som är associerade med kampanjen. Lär dig hur du [använder taggar i dina kampanjer](../start/search-filter-categorize.md#add-tags-to-an-object)
+* **[!UICONTROL Duplicate]** - Använd det här alternativet för att duplicera en kampanj, till exempel för att köra en Orchestrated-kampanj som har stoppats. [Läs mer](#duplicate-a-campaign)
+* **[!UICONTROL Delete]** - Använd det här alternativet om du vill ta bort en kampanj. [Läs mer](#delete-a-campaign)
+* **[!UICONTROL Archive]** - Arkivera kampanjen. Alla arkiverade kampanjer tas bort 30 dagar efter det att de senast ändrades. Den här åtgärden är tillgänglig för alla kampanjer förutom **[!UICONTROL Draft]** kampanjer. Läs mer om [kampanjarkivering](#archive-a-campaign).
 
 För Action- och API-utlösta kampanjer finns ytterligare åtgärder nedan:
 
-* **[!UICONTROL Add to package]** - Lägg till kampanjen i ett paket för att exportera den till en annan sandlåda. [Exportera objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL Add to package]** - Lägg till kampanjen i ett paket för att exportera den till en annan sandlåda. Lär dig hur du [exporterar objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - Om en ny version av kampanjen har skapats och ännu inte har aktiverats kan du komma åt dess utkastversion med den här åtgärden.
 
 ## Kampanjlivscykel {#statuses}
@@ -154,6 +149,11 @@ När ett fel inträffar inom en av era kampanjer visas en varningsikon bredvid k
 ![](assets/campaign-alerts.png)
 
 ## Kampanjkalender {#calendar}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_view"
+>title="Kampanjlista och kalendervyer"
+>abstract="Förutom kampanjlistan innehåller [!DNL Journey Optimizer] en kalendervy över dina kampanjer, som ger en tydlig visuell representation av deras scheman. Du kan när som helst växla mellan list- och kalendervyer med dessa knappar."
 
 Förutom kampanjlistan innehåller [!DNL Journey Optimizer] en kalendervy över dina kampanjer, som ger en tydlig visuell representation av deras scheman.
 
@@ -244,3 +244,23 @@ För att förhindra detta kan ni arkivera slutförda och stoppade kampanjer som 
 ![](assets/create-campaign-archive.png)
 
 Arkiverade kampanjer kan sedan hämtas med det dedikerade filtret i listan.
+
+
+## Ta bort en kampanj {#delete}
+
+Om du vill ta bort en kampanj använder du ellipsen ![som visar knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) och väljer **[!UICONTROL Delete]**.
+
+![](assets/delete-a-campaign.png){width="70%" align="left"}
+
+>[!IMPORTANT]
+>
+>Det här alternativet är endast tillgängligt för **[!UICONTROL Draft]** kampanjer.
+
+
+## Duplicera en kampanj {#duplicate}
+
+Om du vill duplicera en kampanj, till exempel om den har stoppats, använder du ellipsen ![som visar knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) och väljer **[!UICONTROL Duplicate]**.
+
+Ange namnet på kampanjen och bekräfta.
+
+Kampanjen skapas och läggs till i kampanjlistan.
