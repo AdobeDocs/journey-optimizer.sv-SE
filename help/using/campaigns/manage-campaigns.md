@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
+source-git-commit: 21d3fd6a182fe8ecce13b4216e03f93348955c14
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1700'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i d
 
 * **Få tillgång till kampanjer**. Du kan komma åt kampanjer antingen från [kampanjlistan](#access) eller från [kampanjkalendern](#calendar).
 
-* **Skapa kampanjen**. Vilka steg som skapas beror på vilken [typ av kampanj](get-started-with-campaigns.md#get-started-with-campaigns) du skapar. Lär dig hur du skapar en [åtgärdskampanj](../campaigns/create-campaign.md), en [API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) eller en [strukturerad kampanj](../orchestrated/create-orchestrated-campaign.md).
+* **Skapa kampanjen**. Vilka steg som skapas beror på [typen av kampanj](get-started-with-campaigns.md#get-started-with-campaigns). Lär dig hur du skapar en [åtgärdskampanj](../campaigns/create-campaign.md), en [API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) eller en [strukturerad kampanj](../orchestrated/create-orchestrated-campaign.md).
 
 * **Definiera kampanjegenskaperna**. Lär dig hur du ställer in egenskaper för en [åtgärdskampanj](../campaigns/campaign-properties.md) för en [API-utlöst kampanj](../campaigns/api-triggered-campaign-properties.md) eller en [strukturerad kampanj](../orchestrated/create-orchestrated-campaign.md).
 
@@ -53,7 +53,7 @@ Visa alla kampanjstatus och aviseringar [i det här avsnittet](#statuses).
 >title="Åtgärd"
 >abstract="I det här avsnittet visas alla åtgärder som används i den samordnade kampanjen."
 
-Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**.
+Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**. Använd flikarna för att bläddra bland kampanjer, efter typ: **Åtgärd** kampanjer, **API-utlösta** kampanjer och **Orchestrated** kampanjer. Läs mer om [typen av kampanj](get-started-with-campaigns.md#get-started-with-campaigns). Vilka typer som är tillgängliga beror på ditt licensavtal och dina behörigheter.
 
 >[!BEGINTABS]
 
