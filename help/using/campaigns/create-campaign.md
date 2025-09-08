@@ -34,7 +34,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Kanaler som stöds är: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [}Kodbaserade upplevelser](../code-based/get-started-code-based.md).
+>Kanaler som stöds är: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [&rbrace;Kodbaserade upplevelser](../code-based/get-started-code-based.md).
 >
 >Vilka kanaler som är tillgängliga varierar beroende på licensmodell och tillägg.
 
