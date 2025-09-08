@@ -10,9 +10,9 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: b52a0206e336185a8c630b7a6eace1fed14b1b66
+source-git-commit: e4d5631701c5c270af7aec931f6b98a567b4ed29
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Deltagare tilldelas slumpmässigt till en version, en så kallad variant, och de
 | Konfidensintervall | Det uppskattade intervall inom vilket den verkliga effekten sannolikt kommer att falla. |
 | Segment | En specifik del av målgruppen som analyserats oberoende av varandra (t.ex. nya användare, mobilbesökare). |
 
-## Bästa metoder för att köra experiment
+## Bästa tillvägagångssätt för att köra experiment
 
 * **Börja med en tydlig hypotes**
 
@@ -119,7 +119,7 @@ Exempel: _Vi tror att X-ändringar kommer att öka med Y på grund av Z._
 
   Se tydligt vad som har testats, varför och vad du lärt dig. Detta bygger upp institutionskunskaper och förhindrar upprepade misstag.
 
-## Vanliga mått och vad de indikerar
+## Vanliga mått
 
 | Mått | Vad det innebär | När ska användas |
 |-|-|-|
@@ -131,16 +131,16 @@ Exempel: _Vi tror att X-ändringar kommer att öka med Y på grund av Z._
 | Intäkter per besökare | Genomsnittlig intäkt per användare | Används ofta i handelsinriktade experiment |
 | Bevarandefrekvens | Procentandelen användare som återgår eller förblir engagerade över tiden | Användbar för långsiktiga värdebedömningar |
 
-## Vad är en bra experiment?
+## Vad är ett bra experiment?
 
 Ett bra experiment ger inte bara en vinst, det ger en tydlig och åtgärdbar inlärning.
 Här kan du söka efter:
 
-&check; **Statistisk konfidens**: Det är osannolikt att skillnaden mellan varianter beror på en chans.
-&check; **Justering med mål**: Det primära måttet visar meningsfulla framsteg mot ett affärsmål.
-&check; **Sekundär effekt**: Inga signifikanta negativa biverkningar på relaterade mått.
-&check; **Scalability**: Resultatet kan informera framtida beslut eller vara generaliserat till andra områden.
-&check; **Clarity**: Orsaken till resultatet är relativt isolerad och förstådd.
+&amp;check; **Statistisk konfidens**: Det är osannolikt att skillnaden mellan varianter beror på en chans.
+&amp;check; **Justering med mål**: Det primära måttet visar meningsfulla framsteg mot ett affärsmål.
+&amp;check; **Sekundär effekt**: Inga signifikanta negativa biverkningar på relaterade mått.
+&amp;check; **Scalability**: Resultatet kan informera framtida beslut eller vara generaliserat till andra områden.
+&amp;check; **Clarity**: Orsaken till resultatet är relativt isolerad och förstådd.
 
 Experimentation handlar inte bara om att hitta den&quot;bästa&quot; versionen, utan också om att bygga upp kunskap genom testning och iteration. När det är klart avslöjar experiment insikter som driver smartare beslut, bättre användarupplevelser och förbättrade resultat.
 

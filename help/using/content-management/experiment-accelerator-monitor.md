@@ -10,9 +10,9 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: b52a0206e336185a8c630b7a6eace1fed14b1b66
+source-git-commit: e4d5631701c5c270af7aec931f6b98a567b4ed29
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,8 @@ Detaljsidan för experimentet delas upp i följande avsnitt:
 
 ![](assets/experiment-monitor-outcome.png)
 
+**[!UICONTROL Experiment outcome]** ger dig en snabb vy av den vinnande variationen i ditt experiment.
+
 ### Konfigurera {#set-up}
 
 ![](assets/experiment-monitor-hypothesis.png)
@@ -112,7 +114,7 @@ Längst ned i widgeten hittar du en kortfattad sammanfattning av din experimentk
 
 * **[!UICONTROL Audience]**: Det eller de definierade användarsegment som användes under experimentet.
 
-## Möjligheter {#opportunities}
+### Möjligheter {#opportunities}
 
 >[!AVAILABILITY]
 >
@@ -175,7 +177,6 @@ Tabellen **[!UICONTROL Results]** innehåller en detaljerad prestandabeskrivning
 >Experimentation Insights-funktionen är begränsad till experiment med textbaserade ändringar.
 
 ![](assets/experiment-monitor-insights.png)
-
 
 **[!UICONTROL Experiment Insights]** är AI-genererade inlärningar som härleds från det här experimentet. Dessa insikter blir tillgängliga när experimentet har fått statistisk betydelse och ger en sammanhangsbaserad förståelse för vad som har bidragit till dess framgång. Panelerna sätter fokus på de viktigaste attribut som finns i den vinnande behandlingen, som skiljer sig från kontrollen, och som troligen påverkade resultatet.
 
