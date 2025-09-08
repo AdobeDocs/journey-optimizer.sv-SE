@@ -9,9 +9,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 18611c721dfd1b189a9272f9c49a2c2e778584cc
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2429'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,6 @@ ht-degree: 0%
 >abstract="Pausa en live-resa för att förhindra att nya profiler kommer in. Välj om du vill ta bort profiler som finns på resan eller behålla dem på plats. Om de behålls kommer de att återuppta körningen vid nästa åtgärdsaktivitet när resan har startats om. Perfekt för uppdateringar eller nödstopp utan att förlora några framsteg."
 
 Du kan pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> Under pausen kan du [använda avslutningskriterier för profilattribut](#journey-exit-criteria) för att exkludera profiler baserat på deras attribut. Resan återupptas automatiskt i slutet av pausperioden. Du kan även [återuppta det manuellt](#journey-resume-steps).
-
-
 
 ## Viktiga fördelar {#journey-pause-benefits}
 
@@ -91,6 +89,9 @@ När en resa pausas beror profilhantering och aktivitetskörning på aktiviteten
 | [Uppdatera profil](update-profiles.md) &amp; [Hoppa](jump.md) | Profilerna parkeras eller ignoreras baserat på vad användaren har valt när resan har pausats |
 | [Externa data, Source](../datasource/external-data-sources.md) | Samma beteende som i en direktresa |
 | [Avsluta villkor](journey-properties.md#exit-criteria) | Samma beteende som i en direktresa |
+
+
+Lär dig hur du felsöker ignorerade filer i [det här avsnittet](#discards-troubleshoot).
 
 ## Så här återupptar du en pausad resa {#journey-resume-steps}
 
@@ -195,3 +196,50 @@ När du återupptar den här resan:
 
 1. Färska reseingångar börjar inom en minut.
 1. Profiler som för närvarande väntade på resan för **Åtgärdsaktiviteter** återupptas med en hastighet på 5 000 steg. De kan sedan ange den **åtgärd** de väntade på och fortsätta resan.
+
+## Felsöka uteblivna profiler under pausade resor  {#discards-troubleshoot}
+
+Du kan använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
+
+* Använd följande kod för att ta bort filer som inträffar innan profilen kommer in på resan:
+
+  ```sql
+  SELECT
+  TIMESTAMP,
+  _experience.journeyOrchestration.profile.ID,
+  to_json(_experience.journeyOrchestration)
+  FROM
+  journey_step_events
+  WHERE
+  _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'PAUSED_JOURNEY_VERSION'
+  AND _experience.journeyOrchestration.journey.versionID=<jvId>  
+  ```
+
+  Här listas de utkast som gjordes vid ingången till resan:
+
+   1. När en målgruppsresa körs och den första noden fortfarande bearbetas, ignoreras alla obearbetade profiler om resan pausas.
+
+   1. När en ny enhetshändelse anländer för startnoden (för att utlösa en entré) medan resan pausas, ignoreras händelsen.
+
+* Använd följande kod för att ta bort filer som inträffar när profilen redan används:
+
+  ```sql
+  SELECT
+  TIMESTAMP,
+  _experience.journeyOrchestration.profile.ID,
+  to_json(_experience.journeyOrchestration)
+  FROM
+  journey_step_events
+  WHERE
+  _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'JOURNEY_IN_PAUSED_STATE'
+  AND _experience.journeyOrchestration.journey.versionID=<jvId> 
+  ```
+
+  Det här kommandot listar de ignoreringar som har gjorts när profiler är på en resa:
+
+   1. Om resan pausas med alternativet Ignorera aktiverat och en profil redan har angetts före pausen, kommer den profilen att ignoreras när den kommer till nästa åtgärdsnod.
+
+   1. Om resan pausades med alternativet för att hålla kvar valt men profiler ignorerades på grund av att kvoten på 10 miljoner överskrids, kommer dessa profiler fortfarande att ignoreras när de kommer till nästa åtgärdsnod.
+
+
+

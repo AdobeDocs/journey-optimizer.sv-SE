@@ -4,9 +4,9 @@ description: Lär dig hur du skapar regler för bockning för dina resor och hur
 role: User
 level: Beginner
 exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
-source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
+source-git-commit: 316fdb4e581ea139c2914f395a5d1823c2ded3cc
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
 1. Expandera avsnitten nedan för att lära dig hur du konfigurerar olika typer av fästning:
 
-   +++Konfigurera en regel för bockning av resepost
+   +++Konfigurera en regel för spärrning av resepost
 
    1. I fältet **[!UICONTROL Capping]** anger du det maximala antalet resor som en profil kan ange.
    1. I fältet **[!UICONTROL Duration]** definierar du tidsperioden som ska beaktas. Observera att längden baseras på UTC-tidszonen. Till exempel återställs daglig ändpunkt vid midnatt UTC.
@@ -76,7 +76,7 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
    +++
 
-   +++Konfigurera en regel för samtidighetsbegränsning för resa
+   +++Konfigurera en regel för samtidighetsbegränsning för resa 
 
    1. I fältet **[!UICONTROL Capping]** anger du det maximala antalet resor som en profil kan registreras i samtidigt.
 
@@ -113,8 +113,8 @@ När en resa är live kan du checka in reserapporten om regeluppsättningen har 
 
 ![](assets/journey-report.png)
 
-Dessutom kan du använda Adobe Experience Platform **frågetjänst** för att skapa frågor som identifierar vilken regel som gjorde att en profil inte pågick en viss resa. Ett frågeexempel finns i [det här avsnittet](../reports/query-examples.md#common-queries).
+Dessutom kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att skapa frågor för att identifiera vilken regel som gjorde att en profil inte pågick en viss resa. Ett frågeexempel finns i [det här avsnittet](../reports/query-examples.md#common-queries).
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3447618?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)
