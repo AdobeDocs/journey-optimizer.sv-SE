@@ -10,10 +10,10 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 8701afe345f0eeed1503e4765d4715398823b102
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 3%
+source-wordcount: '179'
+ht-degree: 2%
 
 ---
 
@@ -30,6 +30,13 @@ ht-degree: 3%
 Åtgärdskampanjer (eller schemalagda kampanjer) möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
+
+
+>[!NOTE]
+>
+>Kanaler som stöds är: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [}Kodbaserade upplevelser](../code-based/get-started-code-based.md).
+>
+>Vilka kanaler som är tillgängliga varierar beroende på licensmodell och tillägg.
 
 ## Viktiga steg för att skapa åtgärdskampanjer {#steps}
 

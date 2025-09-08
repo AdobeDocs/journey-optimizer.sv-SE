@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: bcb7a5e4-440d-4548-b305-c320bafe6ee7
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 8701afe345f0eeed1503e4765d4715398823b102
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Om du vill konfigurera meddelandeinnehållet går du till fliken **[!UICONTROL C
 
 ![](assets/campaign-content.png)
 
-## Utforma innehållet
+## Utforma innehållet {#action-campaign-channels}
 
 Hur du skapar innehåll beror på vilken kanal du har valt. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor:
 
