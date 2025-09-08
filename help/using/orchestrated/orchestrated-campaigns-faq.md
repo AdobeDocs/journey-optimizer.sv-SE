@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: a72ad0289df18df123832c5b83c301e539ebce60
+source-git-commit: 9d1e9f22c7841f9d17e857f652d94dbd6a068c06
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -71,12 +71,12 @@ Du kan skapa samordnade kampanjer för att skicka **e-post**, **SMS** och **push
 
 ## Hur skiljer sig Orchestrated-kampanjer från Journeys? {#oc-vs-journeys}
 
-* **Samordnade kampanjer**: Passar bäst för **batch-, en-till-många**-kampanjer. Hela målgrupper rör sig genom kampanjarbetsytan tillsammans.
+* **Samordnade kampanjer**: Passar bäst för **batch-, en-till-många**-kampanjer. Publiken gör satsvis, enligt ett schema.
 * **Resor**: Passar bäst för **realtidsengagemang med en-till-en**. Varje kund rör sig genom resan i sin egen takt, triggad av beteende eller händelser.
 
 >[!BEGINSHADEBOX]
 
-**Tips** - Många organisationer använder **båda tillsammans** - Resor för triggade, reaktiva upplevelser och samordnade kampanjer för planerade, kalenderbaserade initiativ.
+**Bästa praxis**: Använd dem tillsammans - Resor för triggade, reaktiva upplevelser och samordnade kampanjer för planerade, kalenderbaserade initiativ.
 
 >[!ENDSHADEBOX]
 
@@ -160,7 +160,7 @@ I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmenteri
 
 ## Stöder detta beslut? {#decisioning}
 
-För närvarande används inte relationsdata från Orchestrated-kampanjer vid beslut.
+Ja. Vid beslut kan relationsdata från samordnade kampanjer användas. När relationsschemat är kopplat till XDM-scheman kan XDM-data användas vid beslut.
 
 ## Hur fungerar driftsättningen i olika miljöer? {#deployment}
 
@@ -193,4 +193,4 @@ Ja, följ god praxis nedan:
 >* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
 >* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
 >* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
