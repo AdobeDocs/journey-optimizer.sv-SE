@@ -32,7 +32,7 @@ E-postleveranser kan skapas:
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Så här skapar du ett e-postmeddelande
 
@@ -42,7 +42,7 @@ Stegvisa anvisningar för att lägga till, konfigurera och testa e-poståtgärde
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Designa och optimera e-postinnehåll
 
@@ -52,7 +52,7 @@ Utforska verktyg och metodtips för att utforma responsivt och personaliserat e-
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Hantera e-postavanmälan
 
@@ -62,7 +62,7 @@ Konfigurera avanmälningsmekanismer i ett eller två steg för att hantera anvä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera e-postkanal
 
@@ -72,7 +72,7 @@ Konfigurera och hantera e-postkonfigurationer som delegering av underdomäner, u
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Mastering Email Delivery
 
