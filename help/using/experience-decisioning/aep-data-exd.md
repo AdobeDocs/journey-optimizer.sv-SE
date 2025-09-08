@@ -21,13 +21,13 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_catalogs_dataset"
->title="Datauppsättningssökning
+>title="Datauppsättningssökning"
 >abstract=In order to use attributes from Adobe Experience Platform for decisioning, you need to create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer].”
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_catalogs_dataset_create"
 >title="Datauppsättningssökning"
->abstract="Markera datauppsättningen med de attribut du behöver bland alla Adobe Experience Platform-datauppsättningar som har aktiverats för sökning och välj sedan en mappningsnyckel (t.ex. flightnummer eller kund-ID) som finns i både beslutsobjektsattributen och datauppsättningen.&quot;
+>abstract="Markera datauppsättningen med de attribut du behöver bland alla Adobe Experience Platform-datauppsättningar som har aktiverats för sökning och välj sedan en mappningsnyckel (t.ex. flightnummer eller kund-ID) som finns i både beslutsobjektsattributen och datauppsättningen."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_rules_dataset_lookup"
@@ -41,8 +41,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_dataset"
->title="Lägg till datauppsättning&quot;
->abstract="Använd [!DNL Adobe Experience Platform]-datamängdsattribut för att definiera capping-villkor baserat på dynamiska, externa attribut. Klicka på **[!UICONTROL Add dataset]** för att välja Adobe Experience Platform-datauppsättningen med de attribut du behöver. Om datauppsättningen inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar.&quot;
+>title="Lägg till datauppsättning"
+>abstract="Använd [!DNL Adobe Experience Platform]-datamängdsattribut för att definiera capping-villkor baserat på dynamiska, externa attribut. Klicka på **[!UICONTROL Add dataset]** för att välja Adobe Experience Platform-datauppsättningen med de attribut du behöver. Om datauppsättningen inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar."
 
 >[!AVAILABILITY]
 >
