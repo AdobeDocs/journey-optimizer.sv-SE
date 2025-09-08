@@ -6,9 +6,9 @@ description: Lär dig hur du kommer igång med samordnade kampanjer
 short-description: Upptäck de viktigaste funktionerna för samordnade kampanjer samt användningsfall.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: d4765f9084efac1fd241404dff365a66027ce5af
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '654'
 ht-degree: 4%
 
 ---
@@ -48,6 +48,13 @@ Stöd för sändning på flera nivåer, där ett meddelande skickas per profil o
 <tr style="border: 0;">
 <td><img alt="Arbetsflöden för kampanjer i flera steg" src="assets/do-not-localize/icon-multistep.svg" width="150px"></a></td><td><b>Flerstegskampanjer</b><br/>Utforma kampanjer i flera steg, från dagliga meddelanden till komplexa kampanjer som säsongskampanjer eller större produktlanseringar.</td></tr>
 </table>
+
+
+>[!NOTE]
+>
+>Kanaler som stöds är: [E-post](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [push-meddelanden](../push/get-started-push.md).
+>
+>Vilka kanaler som är tillgängliga varierar beroende på licensmodell och tillägg.
 
 ## Samordnade kampanjer och resor
 

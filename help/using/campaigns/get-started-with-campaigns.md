@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: d07d4c2001bd9e9d08539788073757bc1034c9ec
+source-git-commit: d4765f9084efac1fd241404dff365a66027ce5af
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Du kan skapa olika typer av kampanjer i Journey Optimizer:
 
 * **Åtgärdskampanjer**
 
-  Åtgärdskampanjer (eller schemalagda kampanjer) möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar.
+  Åtgärdskampanjer (eller schemalagda kampanjer) möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar. Kanaler som stöds är:
 
 * **API-utlösta kampanjer**
 
@@ -121,7 +121,7 @@ Om du inte kan komma åt kampanjfunktioner kontaktar du administratören för at
 
 1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
