@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: d4765f9084efac1fd241404dff365a66027ce5af
+source-git-commit: 5821bc3f3c6e81ae1ae7389bbca1bdcec11cc805
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 1%
+source-wordcount: '803'
+ht-degree: 0%
 
 ---
 
@@ -62,21 +62,21 @@ Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till en 
 
 ![](assets/gs-campaigns.png)
 
-Du kan skapa olika typer av kampanjer i Journey Optimizer:
+Du kan skapa olika typer av kampanjer i Journey Optimizer. Kanaler och användningsfall som stöds varierar beroende på kampanjtypen. Dessa typer listas nedan.
 
 * **Åtgärdskampanjer**
 
-  Åtgärdskampanjer (eller schemalagda kampanjer) möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar. Kanaler som stöds är:
+  Åtgärdskampanjer (eller schemalagda kampanjer) möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar. Läs mer om åtgärdskampanjer, användningsfall och stödda kanaler [på den här sidan](create-campaign.md).
 
 * **API-utlösta kampanjer**
 
-  API-utlösta kampanjer gör det möjligt att antingen nå ut till en målgrupp vid rätt tidpunkt eller för transaktionsmeddelanden/operativa meddelanden till en individ som lösenordsåterställning, där behovet kan innebära personalisering inte bara genom att använda profilattribut, utan även kontextdata i realtid i utlösaren som är en REST API-nyttolast.
+  API-utlösta kampanjer gör det möjligt att antingen nå ut till en målgrupp vid rätt tidpunkt eller för transaktionsmeddelanden/operativa meddelanden till en individ som lösenordsåterställning, där behovet kan innebära personalisering inte bara genom att använda profilattribut, utan även kontextdata i realtid i utlösaren som är en REST API-nyttolast. Läs mer om API-triggade kampanjfunktioner, användningsfall och stödda kanaler [på den här sidan](api-triggered-campaigns.md).
 
 * **Samordnade kampanjer**
 
   Kampanjsamordning i Adobe Journey Optimizer driver fram sofistikerade, varumärkesinitierade marknadsföringskampanjer i alla kanaler och hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
 
-  Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den sömlös. Med ett visuellt dra-och-släpp-gränssnitt kan ni utforma och automatisera komplexa marknadsföringsarbetsflöden, från segmentering till meddelandeleverans, i flera kanaler. Allt sker i en intuitiv miljö som är byggd för snabbhet, kontroll och effektivitet.
+  Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den sömlös. Med ett visuellt dra-och-släpp-gränssnitt kan ni utforma och automatisera komplexa marknadsföringsarbetsflöden, från segmentering till meddelandeleverans, i flera kanaler. Allt sker i en intuitiv miljö som är byggd för snabbhet, kontroll och effektivitet. Läs mer om funktioner för samordnade kampanjer, användningsfall och stödda kanaler [på den här sidan](../orchestrated/gs-orchestrated-campaigns.md).
 
 ## Förhandskrav {#prerequisites}
 
@@ -121,7 +121,7 @@ Om du inte kan komma åt kampanjfunktioner kontaktar du administratören för at
 
 1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
