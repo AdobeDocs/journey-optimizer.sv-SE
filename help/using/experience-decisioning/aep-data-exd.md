@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
-source-git-commit: 825cffb38c366a7a93cd58da9d2439ff530c60e9
+source-git-commit: 58389860e5e0b07f32dd62b95a508e80579aaa73
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,29 @@ ht-degree: 0%
 # Använd Adobe Experience Platform-data för beslut {#aep-data}
 
 >[!CONTEXTUALHELP]
+>id="ajo_exd_catalogs_dataset"
+>title="Datauppsättningssökning
+>abstract=In order to use attributes from Adobe Experience Platform for decisioning, you need to create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer].”
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_catalogs_dataset_create"
+>title="Datauppsättningssökning"
+>abstract="Markera datauppsättningen med de attribut du behöver bland alla Adobe Experience Platform-datauppsättningar som har aktiverats för sökning och välj sedan en mappningsnyckel (t.ex. flightnummer eller kund-ID) som finns i både beslutsobjektsattributen och datauppsättningen.&quot;
+
+>[!CONTEXTUALHELP]
 >id="ajo_exd_rules_dataset_lookup"
 >title="Datauppsättningssökning"
->abstract="Med hjälp av Adobe Experience Platform data i beslutsregler kan ni definiera behörighetskriterier baserat på dynamiska, externa attribut och säkerställa att beslutsobjekten bara visas när det är relevant. Skapa en mappning för att definiera hur Adobe Experience Platform-datauppsättningen ska kopplas till data i [!DNL Journey Optimizer]. Markera datauppsättningen med de attribut du behöver och välj en kopplingsnyckel som finns i både beslutsobjektattributen och datauppsättningen."
+>abstract="Markera Adobe Experience Platform dataset med de attribut du behöver. Om datauppsättningen inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_formula_dataset_lookup"
 >title="Datauppsättningssökning"
->abstract="Rankningsformler definierar prioriteten för beslutsposter. Genom att använda [!DNL Adobe Experience Platform]-datauppsättningsattribut kan du justera rankningslogiken dynamiskt för att återspegla verkliga förhållanden. Skapa en mappning för att definiera hur Adobe Experience Platform-datauppsättningen ska kopplas till data i [!DNL Journey Optimizer]. Markera datauppsättningen med de attribut du behöver och välj en kopplingsnyckel som finns i både beslutsobjektattributen och datauppsättningen"
+>abstract="Använd datamängdsattributen för [!DNL Adobe Experience Platform] för att dynamiskt justera rankningslogiken så att den speglar verkliga förhållanden. Klicka på **[!UICONTROL Add dataset]** för att välja Adobe Experience Platform-datauppsättningen med de attribut du behöver. Om datauppsättningen inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_capping_dataset"
+>title="Lägg till datauppsättning&quot;
+>abstract="Använd [!DNL Adobe Experience Platform]-datamängdsattribut för att definiera capping-villkor baserat på dynamiska, externa attribut. Klicka på **[!UICONTROL Add dataset]** för att välja Adobe Experience Platform-datauppsättningen med de attribut du behöver. Om datauppsättningen inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar.&quot;
 
 >[!AVAILABILITY]
 >
@@ -55,7 +70,7 @@ Om du vill använda attribut från Adobe Experience Platform för att fatta besl
 
 1. Konfigurera mappningen:
 
-   1. Klicka på **[!UICONTROL Select dataset]** om du vill visa alla Adobe Experience Platform som har aktiverats för sökning. Markera datauppsättningen med de attribut du behöver.
+   1. Klicka på **[!UICONTROL Select dataset]** om du vill visa alla Adobe Experience Platform-datauppsättningar som har aktiverats för sökning. Markera datauppsättningen med de attribut du behöver.
 
    1. Klicka på **[!UICONTROL Select key]** för att välja en kopplingsnyckel (t.ex. ett flightnummer eller ett kund-ID) som finns både i beslutsobjektattributen och datauppsättningen.
 

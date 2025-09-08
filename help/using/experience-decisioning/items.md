@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
-source-git-commit: 825cffb38c366a7a93cd58da9d2439ff530c60e9
+source-git-commit: 58389860e5e0b07f32dd62b95a508e80579aaa73
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -80,8 +80,8 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 >id="ajo_exd_item_constraints"
 >title="Lägga till målgrupper eller beslutsregler"
 >abstract="Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart vissa profiler."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Använd beslutsregler"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Använd beslutsregler"
 
 Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart specifika profiler, båda lösningarna som motsvarar olika användningar. Expandera avsnittet nedan om du vill ha mer information:
 
@@ -108,6 +108,11 @@ När du väljer målgrupper eller beslutsregler kan du se information om de upps
 >Profiluppskattningar är inte tillgängliga när regelparametrar innehåller data som inte finns i profilen, till exempel kontextdata. Exempel: en regel som kräver att det aktuella vädret är ≥80 grader.
 
 ## Ange regler för begränsning {#capping}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_capping_expression"
+>title="Uttryck"
+>abstract="I stället för att använda ett statiskt värde för tröskelvärdet kan du definiera ett eget uttryck. På så sätt kan du beräkna tröskeln dynamiskt med hjälp av beslutsattribut och/eller externa attribut från en Adobe Experience Platform-datauppsättning.<br/><br/>Begränsningsregeln **uttryck** är för närvarande tillgänglig som begränsad tillgänglighet för alla användare. De stöds bara för typen **[!UICONTROL In total]**."
 
 Begränsning används som en begränsning för att definiera det maximala antal gånger som ett erbjudande kan presenteras. Genom att begränsa antalet gånger användarna får specifika erbjudanden kan ni undvika att överdriva era kunder och därmed optimera varje kontaktyta med det bästa erbjudandet. Du kan skapa upp till 10 takbeläggningar för ett visst beslutsobjekt.
 
@@ -175,7 +180,7 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan stegen nedan 
 
    +++
 
-1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **&#x200B;**&#x200B;i det andra fältet.
+1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
 
    * Räknaren för frekvensbegränsning återställs kl. **12 UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **Söndag**. En varaktighet som du väljer får inte vara längre än **2 år** (d.v.s. motsvarande antal månader, veckor eller dagar).
 
