@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: aa8c74de-748b-4947-a972-14703f6ab4a7
-source-git-commit: 75c3db704853b8d2d8920ddd0086681d1fb02a93
+source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
 workflow-type: tm+mt
 source-wordcount: '5113'
 ht-degree: 7%
@@ -149,7 +149,7 @@ Förbättringar i den här versionen visas nedan.
 
    * **Omorganisation av kampanjinventering** - Schemalagda och API-utlösta kampanjer delas nu upp på separata flikar i kampanjlagret för enklare navigering och hantering.
 
-[Läs mer](../campaigns/modify-stop-campaign.md)
+[Läs mer](../campaigns/manage-campaigns.md)
 
 * **Datahantering**
    * **Datauppsättningar för beslutshanteringssystem** - De borttagna personliga erbjudandena och reserverbjudandena har nu markerats som arkiverade i datamängderna &quot;Decision_object_database_personalized_offers&quot; och &quot;Decision_object_database_fallback_offers&quot;. Befintliga poster i datauppsättningen ändras inte.
@@ -423,7 +423,7 @@ De nya funktionerna i den här versionen beskrivs nedan.
 <p>Nu finns en kalendervy tillgänglig i rese- och kampanjlistorna. Ni kan visualisera alla resor och kampanjaktiveringar i respektive lista.</p>
 <p>Den här ändringen är för närvarande bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Använd <a href="https://forms.cloud.microsoft/r/FC49afuJVi" target="_blank">det här formuläret</a> om du vill begära åtkomst.</p>
 <img src="assets/do-not-localize/calendar.gif">
-<p>Mer information finns i följande avsnitt: <a href="../building-journeys/journey-ui.md">Bläddra och filtrera dina resor</a>, <a href="../campaigns/modify-stop-campaign.md">Åtkomstkampanjer</a>.</p>
+<p>Mer information finns i följande avsnitt: <a href="../building-journeys/journey-ui.md">Bläddra och filtrera dina resor</a>, <a href="../campaigns/manage-campaigns.md">Åtkomstkampanjer</a>.</p>
 <p>Tillgänglighetsdatum: 28 maj 2025</p>
 </td>
 </tr>
@@ -1104,7 +1104,7 @@ Mer information finns i den [detaljerade dokumentationen](../test-approve/approv
 
 **Affärsregler**
 
-Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+Nu kan ni använda daglig frekvensbegränsning i resor och kampanjer med batchsegmentering. Se till att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa, så att reglerna för den dagliga takten är korrekta. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 Som påminnelse är den dagliga frekvensbegränsningen i regeluppsättningar bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.
 

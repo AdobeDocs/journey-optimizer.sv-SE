@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, grupp, underdomäner, leveransbarhet
 exl-id: 752ffd7f-09c2-4aa3-a067-2dbe0634709c
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Varje fas består av flera körningar, som ni tilldelar en enda kampanj till.
 >id="ajo_admin_ip_warmup_domains_excluded"
 >title="Uteslut domängrupper"
 >abstract="Välj de domäner som du vill utesluta från den aktuella fasen. Domänundantag kräver en icke-körd fas, så du kan behöva dela en pågående fas för att lägga till undantag."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-execution.html?lang=sv-SE#split-phase" text="Dela en fas"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-execution.html#split-phase" text="Dela en fas"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_phases"
@@ -92,14 +92,14 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    1. I avsnittet **[!UICONTROL Journeys for exclusion of profiles]** väljer du resor med de målgrupper som du vill utesluta från den aktuella fasen.
 
-+++ Om du vill använda alternativet Journeys för att exkludera profiler måste du upprätta en relation mellan AJO Message Feedback Event och AJO Entity Record Schemas.
+      +++ Om du vill använda alternativet Journeys för att exkludera profiler måste du upprätta en relation mellan AJO Message Feedback Event och AJO Entity Record Schemas.
 
       1. Skapa ett anpassat **namnområde** som fungerar som identitetstyp för stegen nedan.
 
       1. Gå till Adobe Experience Platform på menyn **Scheman**, markera **AJO Entity Record Schema** och ange fältet **_id** som primär identitet, och markera det namnområde som skapats tidigare som **Identity namespace**.
 
       1. Välj **AJO Message Feedback Event Schema** på menyn **Scheman** och gå till fältet **_messageID**. Välj **Lägg till relation** och välj **AJO Entity Record Schema** som **Reference schema** och det namnområde du skapade tidigare som **Reference Identity namespace**.
-+++
+      +++
 
    1. I avsnittet **[!UICONTROL Profiles targeted in previous runs]** ser du att profilerna från de tidigare körningarna av den fasen alltid är exkluderade. Om en profil i Kör 1 till exempel täcks av de första 4 800 målpersonerna, ser systemet automatiskt till att samma profil inte får e-postmeddelandet i Kör 2.
 
@@ -162,7 +162,7 @@ At phase level, system ensures that previously targeted + new profiles are picke
 
    ![](assets/ip-warmup-plan-send-time.png)
 
-1. Du kan också definiera ett tidsfönster under vilket IP-warmup-kampanjen kan köras om det uppstår några förseningar i [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE#how-segmentation-works){target="_blank"}. Om du vill göra det klickar du på egenskapsikonen uppe till vänster bredvid namnet på planen och använder listrutan **[!UICONTROL Retry run time]** för att välja en varaktighet, upp till 240 minuter (4 timmar).
+1. Du kan också definiera ett tidsfönster under vilket IP-warmup-kampanjen kan köras om det uppstår några förseningar i [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"}. Om du vill göra det klickar du på egenskapsikonen uppe till vänster bredvid namnet på planen och använder listrutan **[!UICONTROL Retry run time]** för att välja en varaktighet, upp till 240 minuter (4 timmar).
 
    >[!NOTE]
    >
@@ -220,7 +220,7 @@ Om du vill aktivera en körning väljer du knappen **[!UICONTROL Activate]**. Se
 
 När du kör flera IP-värdskapsplaner samtidigt, som alla har samma IP-pool och domäner som mål, är det viktigt att förutse de potentiella konsekvenserna. Om en Internet-leverantör till exempel har en daglig gräns på 100 e-postmeddelanden, kan detta tröskelvärde överskridas om flera planer för samma domäner körs.
 
-Se till att du har schemalagt tillräckligt med tid för att [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE#how-segmentation-works){target="_blank"} ska kunna köras.
+Se till att du har schemalagt tillräckligt med tid för att [målgruppsutvärderingen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#how-segmentation-works){target="_blank"} ska kunna köras.
 
 ![](assets/ip-warmup-plan-activate.png)
 
@@ -232,7 +232,7 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
 
 * Om du aktiverar den första körningen av en fas:
 
-   * En [målgrupp](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE){target="_blank"} skapas för de uteslutna kampanjmålgrupperna (om det finns någon), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Audience Exclusion `.
+   * En [målgrupp](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html){target="_blank"} skapas för de uteslutna kampanjmålgrupperna (om det finns någon), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Audience Exclusion `.
 
    * En målgrupp skapas för de domängrupper som har uteslutits (om sådana finns), med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Domain Exclusion`.
 
@@ -254,7 +254,7 @@ När du aktiverar en körning skapas flera målgrupper automatiskt.
      >
      >Systemet skapar inte en ny målgrupp om det inte sker någon förändring i det senaste interaktionsfiltret för efterföljande faser.
 
-   * En [målgruppskomposition](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html?lang=sv-SE){target="_blank"} skapas som motsvarar målgruppen som kampanjen skickas till, med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Run<runNo>`.
+   * En [målgruppskomposition](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"} skapas som motsvarar målgruppen som kampanjen skickas till, med följande namnkonvention: `<warmupName>-Phase<phaseNo>-Run<runNo>`.
 
      >[!NOTE]
      >
@@ -304,7 +304,7 @@ Mer generellt kan du mäta effekten av din plan genom att kontrollera resultatet
 
 ![](assets/ip-warmup-plan-reports.png)
 
-Du kan även komma åt rapporterna från [kampanjmenyn](../campaigns/modify-stop-campaign.md#access) eftersom din plan kan använda olika kampanjer.
+Du kan även komma åt rapporterna från [kampanjmenyn](../campaigns/manage-campaigns.md#access) eftersom din plan kan använda olika kampanjer.
 
 
 ## Hantera din plan {#manage-plan}

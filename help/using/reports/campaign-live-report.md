@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 0%
@@ -522,7 +522,7 @@ KPI:erna för **[!UICONTROL Web performance]** ger omfattande insikter om besök
 
 * **[!UICONTROL Interactions]**: totalt antal ärenden för din webbsida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
 
-+++
++++ 
 
 ### Webbsammanfattning {#web-summary}
 
@@ -541,7 +541,7 @@ Diagrammet **[!UICONTROL Web summary]** visar hur dina webbupplevelser har utvec
 
 * **[!UICONTROL Interactions]**: totalt antal ärenden för din webbsida. Detta inkluderar alla åtgärder som användaren utför, t.ex. klickningar eller andra interaktioner.
 
-+++
++++ 
 
 ### Interaktioner per element {#web-interactions}
 
@@ -608,5 +608,5 @@ Se [den här sidan](exclusion-list.md) för en utförlig lista över orsaker til
 * [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
 * [Skapa en kampanj](../campaigns/create-campaign.md)
 * [Skapa API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)
-* [Ändra eller stoppa en kampanj](../campaigns/modify-stop-campaign.md)
+* [Ändra eller stoppa en kampanj](../campaigns/manage-campaigns.md)
 * [Kampanjrapport](campaign-global-report-cja.md)

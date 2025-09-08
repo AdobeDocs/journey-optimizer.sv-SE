@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: kampanj, granskning, validering, aktivering, aktivering, optimering
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 3%
@@ -41,7 +41,7 @@ När åtgärdskampanjen har konfigurerats måste du granska dess parameter och i
 
    Status **[!UICONTROL Completed]** tilldelas automatiskt till kampanjen 3 dagar efter att den har aktiverats eller vid kampanjens slutdatum om den har en återkommande körning. [Läs mer om kampanjstatus](get-started-with-campaigns.md#statuses).
 
-   Om inget slutdatum har angetts behåller kampanjen statusen **[!UICONTROL Live]**. Om du vill ändra den måste du stoppa kampanjen manuellt. [Lär dig stoppa en kampanj](modify-stop-campaign.md)
+   Om inget slutdatum har angetts behåller kampanjen statusen **[!UICONTROL Live]**. Om du vill ändra den måste du stoppa kampanjen manuellt. [Lär dig stoppa en kampanj](manage-campaigns.md)
 
 1. När en kampanj har aktiverats kan du när som helst kontrollera dess information genom att öppna den. Sammanfattningen gör att du kan få statistik om antalet målprofiler och levererade och misslyckade åtgärder.
 
