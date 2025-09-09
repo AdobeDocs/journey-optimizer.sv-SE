@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-source-git-commit: 42f231a9b0b34a63d1601dcae653462f6321caed
+source-git-commit: 6d603641a3565b1f1465fa881383f4d48611c786
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 >[!AVAILABILITY]
 >
 >Den här funktionen är för närvarande tillgänglig för alla kunder i en begränsad version.
+>
+>För närvarande kan hjälpfunktionen&quot;datasetLookup&quot; användas i uttrycksfragment för en begränsad uppsättning kunder. Kontakta din Adobe-representant för att få åtkomst.
 
 Med Journey Optimizer kan du utnyttja data från Adobe Experience Platform postdatauppsättningar i personaliseringsredigeraren för att [anpassa ditt innehåll](../personalization/personalize.md). Innan du startar måste datauppsättningar som behövs för sökpersonalisering först aktiveras för sökning. Detaljerad information finns i det här avsnittet: [Använd Adobe Experience Platform-data](../data/lookup-aep-data.md).
 
@@ -54,7 +56,7 @@ När en datauppsättning har aktiverats för sökpersonalisering kan du använda
 
    +++Var ska ett datauppsättnings-ID hämtas?
 
-   Datauppsättnings-ID kan hämtas i Adobe Experience Platform användargränssnitt. Lär dig hur du arbetar med datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#view-datasets){target="_blank"}.
+   Datauppsättnings-ID kan hämtas i Adobe Experience Platform användargränssnitt. Lär dig hur du arbetar med datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#view-datasets){target="_blank"}.
 
    ![](assets/aep-data-dataset.png)
 
@@ -85,7 +87,7 @@ När en datauppsättning har aktiverats för sökpersonalisering kan du använda
 
      +++Var ska ett fält-ID hämtas?
 
-     Fält-ID:n kan hämtas när en datauppsättning förhandsgranskas i Adobe Experience Platform användargränssnitt. Lär dig hur du förhandsgranskar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}.
+     Fält-ID:n kan hämtas när en datauppsättning förhandsgranskas i Adobe Experience Platform användargränssnitt. Lär dig hur du förhandsgranskar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}.
 
      ![](assets/aep-data-field.png)
 
