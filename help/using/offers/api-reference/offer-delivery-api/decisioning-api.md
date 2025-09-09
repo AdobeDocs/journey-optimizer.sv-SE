@@ -6,9 +6,9 @@ topic: Integrations
 role: Data Engineer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
-source-git-commit: d629367413f106a00d0e940c90bd6d77e6f33a5c
+source-git-commit: 30fed481bb02fd25f1833e76ae94330aa51d153b
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1051'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,11 @@ I följande tabell visas giltiga värden som omfattar fälten *Content-Type* och
 | x-api-key | `{API_KEY}` |
 
 * Alla begäranden som innehåller en nyttolast (POST, PUT, PATCH) kräver innehållstypsrubriken
+
+
+>[!NOTE]
+>
+>Behörighetskontrollen används inte för enskilda sandlådor. Så länge anroparen uppvisade en giltig token går leverans-API:t igenom.
 
 ## API-begäran {#request}
 
