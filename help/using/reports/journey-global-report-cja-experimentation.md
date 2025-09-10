@@ -1,42 +1,41 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
+title: Kampanjrapport
+description: Lär dig hur du använder Experimentationsdata från reserapporten
+feature: Reporting
+topic: Content Management
+role: User
+level: Intermediate
 source-git-commit: 158d9d9a1070e1d842183e5bd6cb5ce8e38834c5
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '369'
 ht-degree: 1%
 
 ---
-@ -0,0 +1,71 @@
----
-lösning: Journey Optimizer
-produkt: optimera kundresan
-titel: Kampanjrapport
-description: Lär dig använda Experimentationsdata från Campaign-rapporten
-funktion: rapportering
-ämne: Innehållshantering
-roll: Användare
-nivå: Mellanliggande
-exl-id: 69742163-7378-49ab-929e-86213d6e65e3
----
-# Rapport om experimentkampanjer {#campaign-global-report-cja-experimentation}
 
->[!CONTEXTUALHELP]
->id="ajo_campaigns_content_experiment_click"
->title="Resultatmått"
->abstract="Det totala värdet för resultatmåttet, som tidigare valts när du skapade dina experiment, delat med antalet profiler."
+# Rapport om experimenterad resa {#campaign-global-report-cja-experimentation}
 
-## Experimentation {#experimentation}
+I din reserapport får du en fullständig bild av hur ditt experiment fungerar, tillsammans med de nyckeltal du behöver för att förstå hur det påverkar.
 
-Fliken **[!UICONTROL Experimentation]** ger viktiga insikter om prestanda för varje variant och identifierar den som fungerar bäst.
+I Journey Optimizer delas reseexperimenterande in i två typer:
 
-Observera att det kan ta en stund att definiera den bästa utföraren. Om ditt experiment inte lyckas ställs det in på **Ofullständig**.
+* [Innehållsexperiment](../content-management/content-experiment.md)
+* [Banexperiment](../building-journeys/optimize.md)
 
-![](assets/cja-experimentation-1.png)
+## Banexperiment {#experimentation}
+
+>[!NOTE]
+>
+> Tabellerna och KPI:erna som anges för ditt innehållsexperiment är desamma som för ett Path-experiment. Läs dokumentationen nedan om du har konfigurerat ett innehållsexperiment.
 
 ### KPI:er för experiment {#experimentation-kpis}
 
-![](assets/cja-experimentation-kpis.png)
+![](assets/journey-report-experiment-1.png)
 
-**[!UICONTROL Experimentation]** KPI:er (Key Performance Indicators) fungerar som en heltäckande kontrollpanel som levererar en analys av viktiga mått som är kopplade till dina experiment.
+**Experimentationssammanfattningen** ger viktiga insikter i hur ditt experiment fungerar och identifierar den som fungerar bäst. Observera att det kan ta en stund att definiera den bästa utföraren. Om ditt experiment inte lyckas ställs det in på **Ofullständig**.
+
+**Prestandaindikatorerna för experimentnyckeltal** fungerar som en övergripande instrumentpanel och levererar en analys av viktiga mått som är kopplade till dina experiment.
 
 +++ Läs mer om KPI:er för experiment
 
@@ -46,7 +45,9 @@ Observera att det kan ta en stund att definiera den bästa utföraren. Om ditt e
 
 +++
 
-### Variant efter lyckat mått {#variant-inbound}
+
+
+### Variant efter framgångsmått {#variant-inbound}
 
 ![](assets/cja-experimentation-variants.png)
 
@@ -74,6 +75,5 @@ En djupdykning i dessa resultat och hur du tolkar dem finns på [den här sidan]
 ### Konverteringsgrad för framgångsmått {#conversion-rate}
 
 ![](assets/cja-experimentation-conversion.png)
-
 
 Diagrammet **[!UICONTROL Confidence interval]** visar intervallet av möjliga förbättringar, som jämför baslinjen med den bästa behandlingen för det valda framgångsmåttet. [Läs mer](../content-management/experiment-calculations.md#confidence-intervals).

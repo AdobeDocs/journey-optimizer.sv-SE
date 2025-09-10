@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 30d4f967-e085-44f1-973d-11e79f693e6e
-source-git-commit: 1af75a0e6bfc2c3b9c565c3190f46d137a68d32e
+source-git-commit: 158d9d9a1070e1d842183e5bd6cb5ce8e38834c5
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Resursrapporten **Journey** fungerar som en heltäckande kontrollpanel, som till
 
 ![](assets/gs-cja-report-3.png)
 
-Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home).
+Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Reseöversikt {#journey-global}
 
@@ -85,7 +85,7 @@ Widgeten **[!UICONTROL Action errors]** innehåller information om de olika fel 
 
 ![](assets/cja-journey-canvas.png)
 
-Med widgeten **[!UICONTROL Journey Canvas]** kan du visuellt spåra sökvägen för dina målprofiler när de navigerar genom din resa. [Läs mer i Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)
+Med widgeten **[!UICONTROL Journey Canvas]** kan du visuellt spåra sökvägen för dina målprofiler när de navigerar genom din resa. [Läs mer i Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)
 
 Förbättra anpassningen av arbetsytan med följande alternativ:
 
@@ -145,5 +145,23 @@ Tabellen **[!UICONTROL Event overview]** visar hur många profiler som uppfyller
 +++ Läs mer om statistik om resan
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina händelser.
+
++++
+
+## Målöversikt {#targeting}
+
+![](assets/cja-journey-targeting-overview.png)
+
+Om du har konfigurerat **[!UICONTROL Targeting rules]** för ditt innehåll ger tabellen **[!UICONTROL Targeting overview]** en detaljerad vy över viktiga engagemangsmått, som visar hur målprofilerna för varje regel interagerade med ditt innehåll.
+
+➡️ [Läs mer om målregler](../campaigns/campaigns-message-optimization.md)
+
++++ Läs mer om mätvärden för målinriktning
+
+* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina händelser.
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i ett e-postmeddelande.
+
+* **[!UICONTROL Unique click rate]**: Procentandel målprofiler som klickade minst en gång.
 
 +++

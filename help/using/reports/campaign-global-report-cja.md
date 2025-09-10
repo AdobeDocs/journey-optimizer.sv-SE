@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b74d3137-2dd9-4302-a56e-73503d318d18
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 158d9d9a1070e1d842183e5bd6cb5ce8e38834c5
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -104,5 +104,23 @@ Tabellen **[!UICONTROL Tracked link label]** ger viktiga insikter i besökarnas 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickade på ett innehåll i meddelandet.
 
 * **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i meddelandet.
+
++++
+
+## Målöversikt {#targeting}
+
+![](assets/cja-journey-targeting-overview.png)
+
+Om du har konfigurerat **[!UICONTROL Targeting rules]** för ditt innehåll ger tabellen **[!UICONTROL Targeting overview]** en detaljerad vy över viktiga engagemangsmått, som visar hur målprofilerna för varje regel interagerade med ditt innehåll.
+
+➡️ [Läs mer om målregler](../campaigns/campaigns-message-optimization.md)
+
++++ Läs mer om mätvärden för målinriktning
+
+* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina händelser.
+
+* **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i ett e-postmeddelande.
+
+* **[!UICONTROL Unique click rate]**: Procentandel målprofiler som klickade minst en gång.
 
 +++
