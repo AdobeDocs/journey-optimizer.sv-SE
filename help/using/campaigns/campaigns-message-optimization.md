@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 keywords: kampanjoptimering, experiment, målinriktning, A/B-testning
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
-source-git-commit: a770cbc1736e7add7e25f2cc8210d81bd8b2e375
+source-git-commit: 1c47c89ae86844399240d48c4d19f834d90c7598
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,11 @@ Skillnaden mellan experiment och målinriktning kan beskrivas på följande sät
 ➡️ [Läs mer om optimering i en kampanj i den här videon](#video)
 
 ## Utnyttja målgruppsanpassning {#targeting}
+
+>[!CONTEXTUALHELP]
+>id="ajo_content_targeting_fallback"
+>title="Vad är reservinnehåll?"
+>abstract="Reservinnehåll gör att målgruppen kan få ett standardinnehåll när ingen målinriktningsregel är kvalificerad.</br>Om du inte väljer det här alternativet kommer ingen målgrupp som inte är kvalificerad för en målregel som definieras ovan inte att få något innehåll."
 
 Målinriktning levererar personaliserat innehåll till specifika målgruppssegment baserat på användarprofilattribut eller sammanhangsbaserade attribut.
 
@@ -67,7 +72,7 @@ Följ stegen nedan för att konfigurera målinriktning.
 
    ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Välj **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när inga målinriktningsregler är kvalificerade.
+1. Välj alternativet **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när inga målinriktningsregler är kvalificerade.
 
    >[!NOTE]
    >
@@ -181,4 +186,4 @@ E.g. explaining how a marketer can look at the report to determine which treatme
 
 Lär dig hur ni utnyttjar meddelandeoptimering i praktiken eller API-utlösta kampanjer. Ni får se hur ni kan rikta in er på undergrupper, skapa meddelandevarianter efter plats, aktivera reservinnehåll och köra flera experiment inom en och samma kampanj. Den här självstudiekursen handlar också om hur du hanterar flerkanalskampanjer samtidigt som du bibehåller meddelandets enhetlighet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470372?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)

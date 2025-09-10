@@ -11,9 +11,9 @@ keywords: aktivitet, villkor, arbetsyta, resa, optimering
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: cd688d0c140404a846df09a53f37be8d0fe5633e
+source-git-commit: 1c47c89ae86844399240d48c4d19f834d90c7598
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1237'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ När resan är live utvärderas profiler mot de definierade kriterierna, och bas
 ## Använd experimenterande {#experimentation}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_path_experiment_success_metric"
+>id="ajo_path_experiment_success_metric"
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment."
 
@@ -70,7 +70,7 @@ Låt oss säga att du vill jämföra tre banor:
 
 1. Välj **[!UICONTROL Experiment]** i listrutan **[!UICONTROL Method]**.
 
-   ![](assets/journey-optimize-experiment.png){width=75%}
+   ![](assets/journey-optimize-experiment.png){width=65%}
 
 1. Klicka på **[!UICONTROL Create experiment]**.
 
@@ -137,15 +137,17 @@ Testa om det första meddelandet skickas via e-post eller SMS leder till högre 
 
 ➡️ Använd konverteringsgraden som optimeringsmått (till exempel köp, registreringar).
 
-![](assets/journey-optimize-experiment-uc.png)
+![](assets/journey-optimize-experiment-uc-channel.png)
 
 +++
 
 +++Meddelandefrekvens
 
-➡️ Kör ett experiment för att kontrollera om det leder till fler inköp om du skickar ett e-postmeddelande eller tre e-postmeddelanden under en vecka.
+Kör ett experiment för att kontrollera om ett e-postmeddelande eller tre e-postmeddelanden under en vecka leder till fler inköp.
 
-Använd köp eller avbeställningsfrekvensen som optimeringsmått.
+➡️ Använd köp eller avbeställningsfrekvensen som optimeringsmått.
+
+![](assets/journey-optimize-experiment-uc-frequency.png)
 
 +++
 
@@ -155,9 +157,16 @@ Jämför en 24-timmars väntan jämfört med en 72-timmars väntan före en uppf
 
 ➡️ Använd genomklickningsfrekvensen eller intäkterna som optimeringsmått.
 
+![](assets/journey-optimize-experiment-uc-wait.png)
+
 +++
 
 ## Utnyttja målgruppsanpassning {#targeting}
+
+>[!CONTEXTUALHELP]
+>id="ajo_path_targeting_fallback"
+>title="Vad är en reservsökväg?"
+>abstract="Med Fallback skapas en ny väg för målgruppen som inte uppfyller någon av målinriktningsreglerna som definieras ovan.</br>Om du inte väljer det här alternativet kommer ingen målgrupp som inte är berättigad till en målregel inte att ange reservsökvägen."
 
 Målreglerna gör att du kan fastställa specifika regler eller kvalifikationer som måste uppfyllas för att en kund ska vara berättigad att ange en av kundresan, baserat på specifika målgruppssegment <!-- depending on profile attributes or contextual attributes-->.
 
@@ -179,7 +188,7 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 1. Välj **[!UICONTROL Targeting rule]** i listrutan **[!UICONTROL Method]**.
 
-   ![](assets/journey-optimize-targeting.png){width=70%}
+   ![](assets/journey-optimize-targeting.png){width=60%}
 
 1. Klicka på **[!UICONTROL Create targeting rule]**.
 
@@ -187,7 +196,11 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
    ![](assets/journey-targeting-rule.png)
 
-1. Välj **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när inga målinriktningsregler är kvalificerade. Om du inte markerar det här alternativet kommer målgrupper som inte är kvalificerade för en målregel som definieras ovan inte att ange en reservsökväg.
+1. Välj alternativet **[!UICONTROL Enable fallback content]** efter behov. Den här åtgärden skapar en reservbana för målgruppen som inte uppfyller någon av målgruppsreglerna som definieras ovan.
+
+   >[!NOTE]
+   >
+   >Om du inte markerar det här alternativet kommer målgrupper som inte är kvalificerade för en målarregel inte att gå in i reservbanan.
 
 1. Klicka på **[!UICONTROL Create]** om du vill spara målarregelinställningarna.
 
@@ -195,7 +208,11 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
    ![](assets/journey-targeting-paths.png)
 
-1. Du kan också använda **[!UICONTROL Add an alternative path in case of a timeout or an error]** för att definiera en reservåtgärd. [Läs mer](using-the-journey-designer.md#paths)
+1. Om du valde alternativet **[!UICONTROL Enable fallback content]** när du definierade regelinställningarna definierar du en eller flera åtgärder för den återställningssökväg som lades till automatiskt.
+
+   ![](assets/journey-targeting-fallback.png){width=70%}
+
+1. Du kan även använda **[!UICONTROL Add an alternative path in case of a timeout or an error]** för att definiera en alternativ åtgärd om det uppstår problem. [Läs mer](using-the-journey-designer.md#paths)
 
 1. Utforma lämpligt innehåll för varje åtgärd som motsvarar varje grupp som definieras av målarregelinställningarna. Du kan smidigt navigera mellan olika innehåll för varje åtgärd.
 
@@ -219,7 +236,7 @@ Gold-status som lojalitetsmedlemmar kan få personaliserade erbjudanden via e-po
 
 ➡️ Använd intäkten per profil eller konverteringsgrad som optimeringsmått.
 
-![](assets/journey-optimize-targeting-uc.png)
+![](assets/journey-optimize-targeting-uc-segment.png)
 
 +++
 
@@ -229,6 +246,8 @@ Kunder som har öppnat ett e-postmeddelande men inte klickat kan få ett push-me
 
 ➡️ Använd genomklickningsfrekvensen eller nedströmskonverteringar som optimeringsmått.
 
+![](assets/journey-optimize-targeting-uc-behavior.png)
+
 +++
 
 +++Målinriktning mot inköpshistorik
@@ -236,6 +255,8 @@ Kunder som har öppnat ett e-postmeddelande men inte klickat kan få ett push-me
 Kunder som nyligen har köpt kan gå in på en kort&quot;Tack + Korsförsäljning&quot;-väg, medan kunder som inte har någon köphistorik går in på en längre vårdsresa.
 
 ➡️ Använd den upprepade inköpshastigheten eller engagemangsfrekvensen som optimeringsmått.
+
+![](assets/journey-optimize-targeting-uc-purchase.png)
 
 +++
 
