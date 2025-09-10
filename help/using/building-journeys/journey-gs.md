@@ -10,7 +10,7 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 96b8813ebad35f51986cc62d847d9d3d256b08be
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 3%
@@ -32,7 +32,6 @@ ht-degree: 3%
 Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Användargränssnittet för resan visas på [den här sidan](journey-ui.md).
 
 ![exempel på resans arbetsyta](assets/journey38.png)
-
 
 De viktigaste stegen för att skapa en resa finns på den här sidan. De är smidiga enligt följande:
 
