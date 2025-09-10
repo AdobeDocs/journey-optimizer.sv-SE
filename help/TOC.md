@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 598be5d2c5aca0262063c61e80e6b36020983131
+source-git-commit: d5d6903966b0c62095bfb5a17d94c4c3f4b18379
 workflow-type: tm+mt
-source-wordcount: '2920'
+source-wordcount: '2926'
 ht-degree: 18%
 
 ---
@@ -41,14 +41,14 @@ ht-degree: 18%
       + [Kom igång som datatekniker](using/start/path/data-engineer.md)
       + [Kom igång som administratör](using/start/path/administrator.md)
       + [Kom igång som utvecklare](using/start/path/developer.md)
-   + [Användargränssnitt](using/start/user-interface.md)
-   + [Söka, filtrera, kategorisera](using/start/search-filter-categorize.md)
-   + [Tillgänglighet](using/start/accessibility.md)
+   + Användargränssnitt {#ui}
+      + [Kom igång med gränssnittet](using/start/user-interface.md)
+      + [Söka, filtrera, kategorisera](using/start/search-filter-categorize.md)
+      + [Tillgänglighet](using/start/accessibility.md)
    + [Arbeta med AI Assistant](using/start/ai-assistant.md)
-   + [Guardrails](using/start/guardrails.md)
-   + [Bästa praxis](using/start/best-practices.md)
+   + [Use Case Playbooks](using/start/playbooks.md)
+   + [Skyddsritningar och begränsningar](using/start/guardrails.md)
    + [Felsökning](using/start/troubleshooting.md)
-   + [Playbooks](using/start/playbooks.md)
 + Resor {#orchestrate-journeys}
    + [Resor](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
    + [Kom igång med resor](using/building-journeys/journey.md)
@@ -869,7 +869,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
