@@ -9,7 +9,7 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-source-git-commit: 18611c721dfd1b189a9272f9c49a2c2e778584cc
+source-git-commit: 598be5d2c5aca0262063c61e80e6b36020983131
 workflow-type: tm+mt
 source-wordcount: '2429'
 ht-degree: 0%
@@ -197,9 +197,9 @@ När du återupptar den här resan:
 1. Färska reseingångar börjar inom en minut.
 1. Profiler som för närvarande väntade på resan för **Åtgärdsaktiviteter** återupptas med en hastighet på 5 000 steg. De kan sedan ange den **åtgärd** de väntade på och fortsätta resan.
 
-## Felsöka uteblivna profiler under pausade resor  {#discards-troubleshoot}
+## Felsöka uteblivna profiler under pausade resor {#discards-troubleshoot}
 
-Du kan använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
+Du kan använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
 
 * Använd följande kod för att ta bort filer som inträffar innan profilen kommer in på resan:
 

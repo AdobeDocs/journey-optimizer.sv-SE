@@ -9,9 +9,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 598be5d2c5aca0262063c61e80e6b36020983131
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 0%
 
 Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation.  Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live.
 
+➡️ [Läs mer om torr körning av resor i den här videon](#dry-run-video)
 
 ## Viktiga fördelar {#journey-dry-run-benefits}
 
@@ -144,3 +145,8 @@ Om du exporterar stepEvent-data till **externa system** kan du filtrera körning
 
 Vid analys av **reserapporteringsmått** med hjälp av Adobe Experience Platform Query Service, måste torrkörningsgenererade steghändelser uteslutas. Om du vill göra det anger du flaggan `inDryRun` till `false`.
 
+## Instruktionsvideo {#dry-run-video}
+
+Lär dig hur du torkar dina resor i den här videon.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)
