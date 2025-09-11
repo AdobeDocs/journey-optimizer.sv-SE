@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
-source-git-commit: 41563414b2118ae1fcde65874c56f38daf4fa9ab
+source-git-commit: e6193d6204f722df7e6c02aaed80abc53b523755
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 4%
@@ -50,7 +50,7 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
    1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
       ![](assets/decision_permission_3.png)
 
@@ -64,7 +64,7 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
 1. **Skapa beslutsobjekt** som ska visas för målgruppen.
 
-   ➡️ [Lär dig skapa decimalobjekt](items.md) i användargränssnittet (och i [API-dokumentationen](api-reference/decisions-items/create.md))
+   ➡️ [Lär dig skapa beslutsobjekt](items.md) i användargränssnittet (och i [API-dokumentationen](api-reference/decisions-items/create.md))
 
 1. **Ordna med samlingar**: Använd samlingar för att kategorisera beslutsobjekt baserat på attributbaserade regler. Införliva samlingar i era urvalsstrategier för att avgöra vilken samling av beslutsobjekt som ska övervägas.
 
