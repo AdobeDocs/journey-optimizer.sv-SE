@@ -12,9 +12,9 @@ keywords: mörkt läge, e-post, färg, redigerare
 hide: true
 hidefromtoc: true
 exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
-source-git-commit: 0501691c29d82dd1b8c94e0366e66cf5534cd1d2
+source-git-commit: 623f882f5d63a2ea4edc2ec8ef30a65364ed2207
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 >
 >Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.
 
-När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [&#128279;](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
+När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [ ](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
 
 I den här <!--Email Designer -->mörka vyn kan du även definiera specifika anpassade inställningar som ska visas av e-postklienter som stöder e-post när deras mörka läge är aktiverat.
 
@@ -115,7 +115,9 @@ I det här fallet ska de specifika inställningar som du anger i e-post-Designer
 >
 >Lär dig hur du definierar anpassade inställningar för mörkt läge med e-post-Designer i [det här avsnittet](#define-custom-dark-mode).
 
-Vissa begränsningar kan dock gälla. Vissa e-postklienter, t.ex. Apple Mail 16 (macOS 13), kommer inte att generera ett mörkt läge om det finns bilder i e-postinnehållet.
+Vissa begränsningar kan dock gälla för varje e-postklient. Vissa klienter, till exempel Apple Mail 16 (macOS 13), kommer inte att generera ett mörkt läge om det finns bilder i e-postinnehållet.
+
+Testa innehållet med de e-postklienter du riktar in dig på för att få optimala resultat. Om du vill se en simulering som ligger så nära det slutliga resultatet som möjligt för varje klient använder du alternativet [E-poståtergivning](../content-management/rendering.md) i e-post-Designer.
 
 ## Mörkt läge i e-post-Designer {#dark-mode-email-designer}
 
