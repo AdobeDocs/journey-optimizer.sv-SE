@@ -12,9 +12,9 @@ keywords: mörkt läge, e-post, färg, redigerare
 hide: true
 hidefromtoc: true
 exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
-source-git-commit: 95e50386d4190d0b967d133a327c25ab1681b5c1
+source-git-commit: 0501691c29d82dd1b8c94e0366e66cf5534cd1d2
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
@@ -40,37 +40,82 @@ ht-degree: 0%
 >
 >Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.
 
-När du utformar dina e-postmeddelanden kan du med [!DNL Journey Optimizer] [Designer](get-started-email-design.md) växla till **[!UICONTROL Dark mode]** där du kan definiera anpassade inställningar. När det mörka läget är aktiverat visas de inställningar som du har definierat för det här läget.
+När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [ ](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
 
->[!WARNING]
->
->Den slutliga återgivningen i mörkt läge beror på mottagarens e-postklient.
->
->Alla e-postklienter stöder inte anpassat mörkt läge. <!--[See the list](#non-supporting-email-clients)-->Vissa e-postklienter använder dessutom bara sitt eget mörka standardläge för alla e-postmeddelanden som tas emot. I det här fallet går det inte att återge de anpassade inställningarna som du definierade i e-post-Designer.
+I den här <!--Email Designer -->mörka vyn kan du även definiera specifika anpassade inställningar som ska visas av e-postklienter som stöder e-post när deras mörka läge är aktiverat.
 
-En lista över e-postklienter som stöder mörkt läge visas i [det här avsnittet](#supporting-email-clients).
+<!--When designing your emails, the Journey Optimizer Email Designer allows you to switch to Dark mode where you can define specific custom settings. When dark mode is on, the supporting email clients will display the settings that you defined for this mode.-->
 
 ## Vad är mörkt läge? {#what-is-dark-mode}
 
-I mörkt läge kan e-postklienter och appar som stöds visa e-postmeddelanden med mörkare bakgrunder och ljusare färger för text, knappar och andra gränssnittselement. Det gör det möjligt att minska ögonbelastningen, spara batteritid och förbättra läsbarheten i miljöer med svag belysning för en mer bekväm visningsupplevelse.
+Det sätt som mörkt läge återges i de olika e-postklienterna är komplext. Låt oss först definiera mörkt läge.
+
+I mörkt läge kan e-postklienter och appar som stöder e-post visa e-postmeddelanden med mörkare bakgrund och ljusare färger för text, knappar och andra gränssnittselement. Det gör det möjligt att minska ögonbelastningen, spara batteritid och förbättra läsbarheten i miljöer med svag belysning för en mer bekväm visningsupplevelse.
 
 <!--Dark Mode uses a dark color palette with light text and UI elements to reduce eye strain, save battery life, and improve readability in low-light environments.-->
 
-Som en allt större trend för de vanligaste operativsystemen och apparna (Apple Mail, Gmail, Outlook, Twitter, Slack) har det blivit en viktig faktor i den moderna e-postdesignen för att säkerställa att innehållet förblir läsbart och visuellt tilltalande för alla användare.
+Som en allt större trend för större operativsystem och appar <!-- (Apple Mail, Gmail, Outlook, Twitter, Slack)--> har det blivit en viktig faktor i modern e-postdesign för att säkerställa att innehållet förblir läsbart och visuellt tilltalande för alla användare.
 
-Det går dock inte att garantera att e-postmeddelandet ser exakt likadant ut i mörkt läge på alla enheter. Vissa visuella ändringar kan också orsakas av att e-postappen eller enheten åsidosätter den ursprungliga designen.
+## Guardrails {#guardrails}
 
-Det mörka läget används av e-postklienter och kan variera på följande sätt: <!--between different devices and apps-->
+Förväntningarna när det gäller återgivning i mörkt läge måste beaktas med försiktighet eftersom det sätt som används av olika e-postklienter kan variera mycket.
 
-* Alla e-postklienter stöder inte den här funktionen.
+<!--The dark mode final rendering depends on the recipient's email client. It is not possible to guarantee that your email will look the same in dark mode across all devices.-->
 
-  >[!NOTE]
-  >
-  >En lista över e-postklienter som inte stöder mörkt läge visas i [det här avsnittet](#non-supporting-email-clients).
+Innan du använder mörkt läge i e-post-Designer för [!DNL Journey Optimizer] är det viktigt att du förstår hur de viktigaste e-postklienterna hanterar det. Det finns tre olika fall att skilja mellan:
 
-* Vissa e-postklienter justerar automatiskt färger, bakgrunder och bilder. Om du i det här fallet definierar anpassade inställningar i e-post-Designer återges förmodligen inte dessa inställningar.
+<!--
+* Check out the list of [email clients supporting dark mode](https://www.caniemail.com/search/?s=dark){target="_blank"}
 
-* Andra e-postklienter ger möjlighet att återge anpassat mörkt läge (till exempel med metoden `@media (prefers-color-scheme: dark)`). I det här fallet ska de specifika inställningar som du anger i e-post-Designer visas. Lär dig hur du definierar anpassade inställningar för mörkt läge i e-post-Designer i [det här avsnittet](#define-custom-dark-mode).
+* Learn more on Dark mode in this [Litmus blog post](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers){target="_blank"}
+-->
+
+### Klienter som inte stöder mörkt läge {#not-supporting}
+
+Vissa e-postklienter stöder inte den här funktionen alls, till exempel:
+* Yahoo!Mail
+* AOL
+
+Vare sig du definierar anpassade inställningar för mörkt läge eller inte i e-post-Designer visas aldrig någon återgivning i mörkt läge för dessa e-postklienter. <!--Regardless of whether the interface is in light or dark mode, your email will render the same.-->
+
+### Klienter som använder sitt eget mörka läge {#default-support}
+
+Vissa e-postklienter tillämpar systematiskt sitt eget mörka standardläge för alla e-postmeddelanden som tas emot. Färger, bakgrunder, bilder osv. justeras automatiskt med de mörka lägesinställningar som är specifika för e-postklienten.
+
+De här klienterna är till exempel:
+
+* Gmail (Desktop Webmail, iOS, Android, Mobile Webmail)
+* Outlook-fönster
+* Outlook Windows Mail
+
+I det här fallet, om du definierar anpassade mörkt läge-inställningar i e-post-Designer, åsidosätts dessa inställningar av e-postklientinställningarna.
+
+Det är viktigt att förstå att dessa e-postklienter hanterar mörkt läge, men din specifika design för mörkt läge återges inte.
+
+<!--In this case, the custom settings that you defined in the Email Designer cannot be rendered.-->
+
+<!--Some visual changes may also be caused by the email app or device overriding the original design.-->
+
+### Klienter som stöder anpassat mörkt läge {#custom-support}
+
+Andra e-postklienter erbjuder alternativet att återge anpassat mörkt läge med frågan `@media (prefers-color-scheme: dark)`, som är den metod som används av Designer-e-postmeddelandet i [!DNL Journey Optimizer] .
+
+Här är en lista över de huvudklienter som hanterar det här alternativet:
+
+* Apple Mail macOS
+* Apple Mail iOS
+* Outlook macOS
+* Outlook.com
+* Outlook iOS
+* Outlook Android
+
+I det här fallet ska de specifika inställningar som du anger i e-post-Designer visas.
+
+>[!NOTE]
+>
+>Lär dig hur du definierar anpassade inställningar för mörkt läge med e-post-Designer i [det här avsnittet](#define-custom-dark-mode).
+
+Vissa begränsningar kan dock gälla. Vissa e-postklienter, t.ex. Apple Mail 16 (macOS 13), kommer inte att generera ett mörkt läge om det finns bilder i e-postinnehållet.
 
 ## Mörkt läge i e-post-Designer {#dark-mode-email-designer}
 
@@ -131,7 +176,12 @@ När du har växlat till **[!UICONTROL Dark mode]** kan du välja att redigera s
 
 >[!WARNING]
 >
->Alla e-postklienter stöder inte mörkt läge. Vissa e-postklienter använder dessutom bara sitt eget mörka standardläge för alla e-postmeddelanden som tas emot. I båda fallen går det inte att återge de anpassade inställningarna som du har definierat i e-post-Designer.
+>Den slutliga återgivningen i mörkt läge beror på varje e-postklient, så resultatet kan variera från en till en annan. [Läs mer](#guardrails)
+
+<!--
+>[!WARNING]
+>
+>Not all email clients support dark mode. Moreover, some email clients only apply their own default dark mode for all emails that are received. In both cases, the custom settings that you defined in the Email Designer cannot be rendered.-->
 
 Journey Optimizer använder <!-- `@media (prefers-color-scheme: dark)` method--> för att utnyttja den anpassade stilen för mörkt läge i e-postläge i Designer `@media (prefers-color-scheme: dark)` CSS-fråga som identifierar om användarens e-postklient är inställd på mörkt läge och använder den design med mörka teman som definierats i ditt e-postmeddelande.
 
@@ -173,9 +223,9 @@ Mörkt läge kan ändra färger, bakgrunder och bilder - ibland åsidosätta des
 
 **Optimera bilder och logotyper**
 
-* Undvik bilder med hårdkodade vita eller ljusa bakgrunder.
-
 * Spara logotyper och ikoner som PNG-filer med genomskinliga bakgrunder för att undvika synliga vita rutor i mörkt läge.
+
+* Undvik bilder med hårdkodade vita eller ljusa bakgrunder.
 
 * Om genomskinlighet inte är ett alternativ kan du placera bilder på en solid bakgrund i designen för att förhindra otydliga färgförändringar.
 
@@ -184,6 +234,10 @@ Mörkt läge kan ändra färger, bakgrunder och bilder - ibland åsidosätta des
 * Se till att det finns tillräcklig kontrast mellan text och bakgrundsfärger för läsbarhet i både ljust och mörkt läge.
 
 * Undvik att använda enbart bakgrundsfärger för viktigt innehåll. Vissa klienter åsidosätter bakgrundsfärger i mörkt läge, så se till att viktig information fortfarande visas.
+
+<!--**Inline critical styles**
+
+Inline CSS helps maintain more control over styling, as some clients strip external styles in dark mode.-->
 
 **Designa hjälpmedelsanpassat innehåll i mörkt läge**
 
@@ -209,65 +263,70 @@ The best practices for designing accesible content in dark mode are listed in [t
 
 * Använd alternativet [Återgivning via e-post](../content-management/rendering.md) som använder Litmus för att simulera dina designer för de vanligaste e-postklienterna (Apple Mail, Gmail, Outlook) och se hur färger och bilder beter sig i mörkt läge.
 
-<!--**Inline critical styles**
+<!--
 
-Inline CSS helps maintain more control over styling, as some clients strip external styles in dark mode.-->
+## Email clients supporting dark mode {#supporting-email-clients}
 
-## E-postklienter som stöder mörkt läge {#supporting-email-clients}
-
-Nedan finns en lista över de viktigaste e-postklienterna som stöder mörkt läge.
+Below is a list of the main email clients supporting dark mode using the with the `@media (prefers-color-scheme: dark)` query.
 
 >[!NOTE]
 >
->Vissa versioner av de här e-postklienterna stöder inte mörkt läge, så för tydlighetens skull presenteras de också i den här tabellen.
+>Some versions of these email clients do not support dark mode, so they are also presented in this table for the sake of clarity.
 
-| E-postklienter som stöder mörkt läge | Kompatibla versioner | *Versioner som inte stöds* |
+| Email clients supporting custom dark mode| Compatible versions | *Unsupported versions* |
 |---------|----------|---------|
-| Apple Mail macOS | 12.4, 16.0 | *10.3* |
+| Apple Mail macOS| 12.4, 16.0 | *10.3* |
 | Apple Mail iOS | 13.0, 16.1 | *12.2* |
-| Outlook macOS | 2019, 16.70, 16.80 | NA |
+| Outloook macOS | 2019, 16.70, 16.80 | NA |
 | Outlook.com | 2019-07, 2022-12 | NA |
-| Outlook iOS | 2020-01, 2022-12 | NA |
-| Outlook Android | 2023-03 | *2020-01, 2022-12* |
-| Samsung Email (Android) | 6,1 | *6.0* |
-| Mozilla Thunderbird (macOS) | 68,4 | *60.8, 78.5, 91.13* |
-| Fastmail (Desktop Webmail) | 2022-12 | *2021-07* |
-| HEY (Desktop Webmail) | 2020-06 | *2022-12* |
-| Orange webbpost | 2019-08, 2021-03, 2022-12, 2024-04 | NA |
+| Outloook iOS | 2020-01, 2022-12 | NA |
+| Outloook Android | 2023-03 | *2020-01, 2022-12* |
+
+| Other email clients supporting custom dark mode| Compatible versions | *Unsupported versions* |
+|---------|----------|---------|
+| Samsung Email (Android) | 6.1 | *6.0* |
+| Mozilla Thunderbird (macOS) | 68.4 | *60.8, 78.5, 91.13* |
+| Fastmail (Desktop Webmail)| 2022-12 | *2021-07* |
+| HEY (Desktop Webmail)| 2020-06 | *2022-12* |
+| Orange Desktop Webmail| 2019-08, 2021-03, 2022-12, 2024-04 | NA |
 | Orange iOS | 2022-12, 2024-04 | *2020-01* |
 | Orange Android | 2024-04 | *2020-01, 2022-12* |
 | LaPoste.net | 2021-08, 2022-12 | NA |
-| SFR Desktop Webmail | 2019-08, 2022-12 | NA |
-| GMX (iOS och Android) | 2022-06 | NA |
-| 1&amp;1 (Desktop Webmail och Android) | 2022-06 | NA |
-| WEB.DE (iOS och Android) | 2022-06 | NA |
+| SFR  Desktop Webmail | 2019-08, 2022-12 | NA |
+| GMX (iOs and Android) | 2022-06 | NA |
+| 1&1 (Desktop Webmail and Android) | 2022-06 | NA |
+| WEB.DE (iOs and Android) | 2022-06 | NA |
 | Free.fr | 2022-12 | NA |
 
 >[!WARNING]
 >
->Den slutliga återgivningen i mörkt läge beror på varje e-postklient, så resultatet kan variera från en till en annan.
+>The dark mode final rendering depends on each email client, so results can vary from one to another.
 
-<!--
-* Check out the list of [email clients supporting dark mode](https://www.caniemail.com/search/?s=dark){target="_blank"}
+## Email clients not supporting dark mode {#non-supporting-email-clients}
 
-* Learn more on Dark mode in this [Litmus blog post](https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers){target="_blank"}
--->
+Some email clients allow users to switch their interface to dark mode, but this setting does not affect how HTML emails are displayed.  Here is a list of those clients:
 
-## E-postklienter som inte stöder mörkt läge {#non-supporting-email-clients}
-
-Vissa e-postklienter tillåter användare att växla gränssnitt till mörkt läge, men den här inställningen påverkar inte hur HTML e-postmeddelanden visas. Oavsett om gränssnittet är i ljust eller mörkt läge återges e-postmeddelandet på samma sätt. Här är en lista över dessa klienter:
-
-| E-postklienter som inte stöder mörkt läge |
+| Main email clients with their own dark mode| 
 |---------|
-| Gmail (Desktop Webmail, iOS, Android, Mobile Webmail) |
-| Outlook-fönster |
+| Gmail (Desktop Webmail, iOS, Android, Mobile Webmail) | 
+| Outloook Windows |
 | Outlook Windows Mail |
-| Yahoo!Mail |
-| AOL |
+
+Other email clients do not support dark mode at all:
+
+| Main email clients not supporting dark mode| 
+|---------|
+| Yahoo!Mail | 
+| AOL | 
+
+| Other mail clients not supporting dark mode| 
+|---------|
 | ProtonMail |
 | SFR iOS |
-| SFR Android |
-| GMX Desktop Webmail |
-| Mail.ru |
-| WEB.DE Desktop Webmail |
+| SFR Android | 
+| GMX Desktop Webmail | 
+| Mail.ru | 
+| WEB.DE Desktop Webmail | 
 | T-online.de |
+
+-->
