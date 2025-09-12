@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator
+title: Experimentation Accelerator monitor
 description: Förbättra er förmåga att utföra experiment effektivt och generera insikter
 feature: Experimentation
 topic: Content Management
@@ -10,19 +10,22 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: e4d5631701c5c270af7aec931f6b98a567b4ed29
+source-git-commit: 50dcdd30e21fe1b12d502a2b9c478f4ceb546c49
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
 
-# Fliken Experimentera {#monitor}
+# Spåra dina experiment {#monitor}
 
 >[!BEGINSHADEBOX]
 
 * [Kom igång med Experimentation Accelerator](experiment-accelerator.md)
-* **[Fliken Experiment](experiment-accelerator-monitor.md)**
+* [Dataanvändning i AI med Experimentation Accelerator](experiment-accelerator-security.md)
+* [Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
+* **[Bildskärmsexperiment](experiment-accelerator-monitor.md)**
+* [Experimentationsmått](experiment-accelerator-metrics.md)
 
 >[!ENDSHADEBOX]
 
@@ -180,6 +183,6 @@ Tabellen **[!UICONTROL Results]** innehåller en detaljerad prestandabeskrivning
 
 **[!UICONTROL Experiment Insights]** är AI-genererade inlärningar som härleds från det här experimentet. Dessa insikter blir tillgängliga när experimentet har fått statistisk betydelse och ger en sammanhangsbaserad förståelse för vad som har bidragit till dess framgång. Panelerna sätter fokus på de viktigaste attribut som finns i den vinnande behandlingen, som skiljer sig från kontrollen, och som troligen påverkade resultatet.
 
-Observera att för att expertinsikter ska kunna genereras måste du först [bekräfta hypotes- och behandlingsinformation](#set-up).
+Observera att för att expertinsikter ska kunna genereras måste du först [bekräfta hypotes- och behandlingsinformation](#set-up) samt statistisk signifikans som ska uppnås.
 
 Klicka på **[!UICONTROL View details]** om du vill veta mer om de olika insikterna.
