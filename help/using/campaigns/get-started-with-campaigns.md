@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 5821bc3f3c6e81ae1ae7389bbca1bdcec11cc805
+source-git-commit: 4bd3e202935cfc971990faa7d1dd2f3d0d7cdc6d
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 0%
+source-wordcount: '873'
+ht-degree: 1%
 
 ---
 
@@ -57,6 +57,31 @@ ht-degree: 0%
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
 >abstract="Välj kampanjtyp. Tillgängliga kanaler varierar beroende på vald typ. <br>**Schemalagda kampanjer** (åtgärdskampanjer) - Perfekt för enkel engångsbatchkommunikation som du kan schemalägga att köras vid en viss tidpunkt.<br>**API-utlösta kampanjer** - Aktiveras via ett API-anrop, vilket möjliggör automatiserade, händelsebaserade meddelanden direkt från externa system.<br>**Samordnade kampanjer** - Skapa en visuell arbetsyta med dra-och-släpp för att utforma och automatisera komplexa arbetsflöden för flerstegsmarknadsföring, från målgruppssegmentering till personaliserad meddelandeleverans över flera kanaler."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_orchestration"
+>title="Kampanjer"
+>abstract="Skapa ett segmenteringsflöde, utforma era flerkanalsmeddelanden och planera era kampanjer. Kanaler som stöds: E-post, SMS, push-meddelanden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_scheduled_marketing"
+>title="Kampanjer"
+>abstract="Leverera enstaka eller återkommande utgående leveranser eller pågående inkommande åtgärder."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_scheduled_transactional"
+>title="Kampanjer"
+>abstract="Leverera enstaka eller återkommande utgående transaktionsaktiviteter."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_api_marketing"
+>title="Kampanjer"
+>abstract="Leverera personaliserad marknadskommunikation till riktade målgrupper. Kanaler som stöds: E-post, SMS, push-meddelanden."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_create_api_transactional"
+>title="Kampanjer"
+>abstract="Skicka transaktionsinformation till enskilda profiler eller profiler. Kanaler som stöds: E-post, SMS, push-meddelanden."
 
 Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till en viss målgrupp via olika kanaler. När du använder resor utförs åtgärderna i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema.
 
@@ -121,7 +146,7 @@ Om du inte kan komma åt kampanjfunktioner kontaktar du administratören för at
 
 1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
