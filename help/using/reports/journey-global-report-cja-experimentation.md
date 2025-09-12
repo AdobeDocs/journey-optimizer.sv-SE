@@ -7,9 +7,9 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b63dea783a2f85d17aacc12c23a9f63d880aeeee
+source-git-commit: 14758fa4db49aed686c1554718337983d3812595
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -21,13 +21,12 @@ I din reserapport får du en fullständig bild av hur ditt experiment fungerar, 
 I Journey Optimizer delas reseexperimenterande in i två typer:
 
 * [Innehållsexperiment](../content-management/content-experiment.md)
+
+  Observera att tabeller och KPI:er som är detaljerade för ditt Content-experiment är desamma som för ett Path-experiment. Läs [dokumentationen nedan](#experimentation) om du har konfigurerat ett innehållsexperiment.
+
 * [Banexperiment](../building-journeys/optimize.md)
 
 ## Banexperiment {#experimentation}
-
->[!NOTE]
->
-> Tabellerna och KPI:erna som anges för ditt innehållsexperiment är desamma som för ett Path-experiment. Läs dokumentationen nedan om du har konfigurerat ett innehållsexperiment.
 
 ### KPI:er för experiment {#experimentation-kpis}
 
