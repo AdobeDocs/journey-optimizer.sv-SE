@@ -10,9 +10,9 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: 50dcdd30e21fe1b12d502a2b9c478f4ceb546c49
+source-git-commit: c28a322ec13de2a23ab5cffb4785b14425e4e6e9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -71,11 +71,13 @@ Detaljsidan för experimentet delas upp i följande avsnitt:
 
 ### Konfigurera {#set-up}
 
-![](assets/experiment-monitor-hypothesis.png)
-
 **[!UICONTROL Hypothesis]** fångar upp de planerade ändringarna som ska testas och dokumenterar den förväntade effekten på det primära måttet. Genom att definiera en tydlig **[!UICONTROL Hypothesis]** säkerställs att varje experiment har ett mätbart mål, vilket gör det enklare att utvärdera resultaten och avgöra om ändringarna leder till meningsfulla förbättringar.
 
+Observera att du måste bekräfta hypotes- och behandlingsinformation samt statistisk signifikans för att [Experimentinsikter](#insights) ska kunna genereras.
+
 1. Klicka på **[!UICONTROL Add]** om du vill skapa en **[!UICONTROL Hypothesis]** för ditt experiment.
+
+   ![](assets/experiment-monitor-setup-1.png)
 
 1. Skriv in din **[!UICONTROL Hypothesis]** genom att ange ändringar som gjorts och hur de påverkar det primära måttet.
 
@@ -83,7 +85,9 @@ Detaljsidan för experimentet delas upp i följande avsnitt:
 
 1. Klicka på **[!UICONTROL Review]** för att lägga till eller ersätta bilden för varje behandling.
 
-1. Välj **[!UICONTROL Add image]** eller **[!UICONTROL Replace image]** om du vill välja den bästa skärmbilden för din **[!UICONTROL Treatments]** bland dina lokala filer.
+   ![](assets/experiment-monitor-setup-2.png)
+
+1. Behandlingsbilder genereras automatiskt, men om det behövs kan du välja **[!UICONTROL Add image]** eller **[!UICONTROL Replace image]** för att överföra en önskad skärmbild från dina lokala filer för din **[!UICONTROL Treatments]**.
 
    Observera att skärmbilden ska fånga hela sidan.
 
@@ -109,7 +113,7 @@ Du kan också visa en ögonblicksbild i realtid av hur den ledande behandlingen 
 
 * **[!UICONTROL Success metric]** från Journey Optimizer eller **[!UICONTROL Primary metric]** från Adobe Target beroende på vad som konfigurerades när experimentet skapades.
 
-Längst ned i widgeten hittar du en kortfattad sammanfattning av din experimentkonfiguration, inklusive:
+Längst ned i widgeten finns en kortfattad sammanfattning av din experimentkonfiguration, inklusive:
 
 * **[!UICONTROL Success metric]** från Journey Optimizer eller **[!UICONTROL Primary metric]** från Adobe Target beroende på vad som konfigurerades när experimentet skapades.
 
@@ -123,17 +127,17 @@ Längst ned i widgeten hittar du en kortfattad sammanfattning av din experimentk
 >
 >Funktionen för affärsmöjligheter är begränsad till experiment med textbaserade ändringar.
 
-![](assets/experiment-monitor-opportunities.png)
-
 Panelen **[!UICONTROL Opportunities]** visar AI-genererade rekommendationer som utformats för att förbättra testprestanda och anpassa sig till bredare affärsmål och KPI:er.
 
-1. Välj önskad affärsmöjlighet och klicka på **[!UICONTROL View Opportunity]**.
+Observera att du först måste [bekräfta hypotes- och behandlingsinformation](#set-up) för att kunna skapa experimentmöjligheter.
+
+1. Bläddra igenom den föreslagna möjligheten och klicka på **[!UICONTROL View Opportunity]**.
+
+   ![](assets/experiment-monitor-opportunities.png)
 
 1. Om du väljer en affärsmöjlighet öppnas fönstret **Affärsinformation**, som visar en specifik behandling eller variant som föreslås av Experimentation Accelerator. Den här vyn innehåller:
 
    * **[!UICONTROL Hypothesis]**: En AI-genererad hypotes som förklarar det förväntade resultatet av den föreslagna behandlingen.
-
-   * **[!UICONTROL New text treatment example]**: Ord eller fraser som demonstrerar den stil som AI rekommenderar att du använder.
 
    * **[!UICONTROL Rationale]**: En förklaring till varför Experimentation Accelerator föreslog den här möjligheten.
 
@@ -142,12 +146,19 @@ Panelen **[!UICONTROL Opportunities]** visar AI-genererade rekommendationer som 
       * **[!UICONTROL Learning potential]**: En uppskattning av hur mycket ny information affärsmöjligheten kan ge utifrån hur annorlunda den är jämfört med vad som har testats tidigare.
 
       * **[!UICONTROL Conversion potential]**: En uppskattning av hur sannolikt det är att affärsmöjligheten är att utföra bättre behandlingar, baserat på likheter med strategier som historiskt sett har fungerat bra.
+   <!--
+   * **[!UICONTROL New text treatment example]**: Words or phrases that demonstrate the style the AI recommends using.
+   -->
 
-1. Du kan sedan välja att **[!UICONTROL Share]** din affärsmöjlighet eller aktivera den direkt genom att välja **[!UICONTROL Open Experiment]**.
+   ![](assets/experiment-monitor-opportunities-2.png)
+
+1. Du kan sedan lägga till den direkt i ditt experiment genom att välja **[!UICONTROL Open Experiment]**.
 
 1. Om det ursprungliga försöket skapades och hanterades i Adobe Journey Optimizer, kommer den här åtgärden att öppna **[!UICONTROL Content Experimentation Panel]** i den kampanjen.
 
    För experiment som kommer från **[!DNL Adobe Target]** läses de föreslagna ändringarna in i **[!DNL Adobe Target]** s experimenteringsarbetsflöde.
+
+   ➡️ [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
 
 1. I expertvyn är samma AI **[!UICONTROL Experimentation Opportunities]** som upplevs av Experimentation Accelerator tillgänglig.
 
@@ -163,9 +174,9 @@ Tabellen **[!UICONTROL Results]** innehåller en detaljerad prestandabeskrivning
 
 * **[!UICONTROL Place]**: Behandlingens rangordningsposition baserad på prestanda som visar hur den jämförs med andra behandlingar.
 
-* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
-
 * **[!UICONTROL Success metric]** från Journey Optimizer eller **[!UICONTROL Primary metric]** från Adobe Target beroende på vad som konfigurerades när experimentet skapades.
+
+* **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
 
 * **[!UICONTROL Lift]**: Mät den procentuella förbättringen av konverteringsgraden för en given behandling över baslinjen.
 
@@ -179,10 +190,12 @@ Tabellen **[!UICONTROL Results]** innehåller en detaljerad prestandabeskrivning
 >
 >Experimentation Insights-funktionen är begränsad till experiment med textbaserade ändringar.
 
-![](assets/experiment-monitor-insights.png)
-
 **[!UICONTROL Experiment Insights]** är AI-genererade inlärningar som härleds från det här experimentet. Dessa insikter blir tillgängliga när experimentet har fått statistisk betydelse och ger en sammanhangsbaserad förståelse för vad som har bidragit till dess framgång. Panelerna sätter fokus på de viktigaste attribut som finns i den vinnande behandlingen, som skiljer sig från kontrollen, och som troligen påverkade resultatet.
 
 Observera att för att expertinsikter ska kunna genereras måste du först [bekräfta hypotes- och behandlingsinformation](#set-up) samt statistisk signifikans som ska uppnås.
 
 Klicka på **[!UICONTROL View details]** om du vill veta mer om de olika insikterna.
+
+</br>
+
+![](assets/experiment-monitor-insights.png)
