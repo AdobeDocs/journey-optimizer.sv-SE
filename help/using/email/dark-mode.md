@@ -12,9 +12,9 @@ keywords: mörkt läge, e-post, färg, redigerare
 hide: true
 hidefromtoc: true
 exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
-source-git-commit: 623f882f5d63a2ea4edc2ec8ef30a65364ed2207
+source-git-commit: 6106c2cbd77a9962a0d496cdda3a7e6118e90bf0
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -24,23 +24,18 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode"
 >title="Växla till mörkt läge"
->abstract="Växla till mörkt läge där du kan förhandsgranska hur det kan återge och definiera specifika anpassade inställningar. <br>Varning! Den slutliga återgivningen beror på mottagarens e-postklient. Alla e-postklienter stöder inte anpassat mörkt läge."
-
->[!CONTEXTUALHELP]
->id="ac_edition_darkmode_image"
->title="Använd en viss bild för mörkt läge"
->abstract="Du kan välja en annan bild som ska visas när mörkt läge är aktiverat. <br>Varning! Om du lägger till en viss bild för mörkt läge visas ingen garanti för att den återges korrekt i alla e-postklienter. Alla e-postklienter stöder inte anpassat mörkt läge."
+>abstract="Växla till mörkt läge där du kan förhandsgranska hur det kan återges och definiera specifika anpassade inställningar. <br>Den slutliga återgivningen beror på mottagarens e-postklient. Observera att alla e-postklienter inte stöder anpassat mörkt läge."
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode_preview"
 >title="Växla till mörkt läge"
->abstract="Växla till mörkt läge om du vill förhandsgranska hur det kan återges på e-postklienter som stöds. <br>Varning! Den slutliga återgivningen beror på mottagarens e-postklient. Alla e-postklienter stöder inte anpassat mörkt läge."
+>abstract="Växla till mörkt läge om du vill förhandsgranska hur det kan återges på e-postklienter som stöds. <br>Den slutliga återgivningen beror på mottagarens e-postklient. Observera att alla e-postklienter inte stöder mörkt läge."
 
 >[!AVAILABILITY]
 >
->Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. Kontakta din Adobe-representant om du vill delta i betaprogrammet.
+>Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. <!--To join the beta program, contact your Adobe representative.-->
 
-När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [&#128279;](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
+När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [ ](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
 
 I den här <!--Email Designer -->mörka vyn kan du även definiera specifika anpassade inställningar som ska visas av e-postklienter som stöder e-post när deras mörka läge är aktiverat.
 
@@ -73,6 +68,7 @@ Innan du använder mörkt läge i e-post-Designer för [!DNL Journey Optimizer] 
 ### Klienter som inte stöder mörkt läge {#not-supporting}
 
 Vissa e-postklienter stöder inte den här funktionen alls, till exempel:
+
 * Yahoo!Mail
 * AOL
 
@@ -80,7 +76,9 @@ Vare sig du definierar anpassade inställningar för mörkt läge eller inte i e
 
 ### Klienter som använder sitt eget mörka läge {#default-support}
 
-Vissa e-postklienter tillämpar systematiskt sitt eget mörka standardläge för alla e-postmeddelanden som tas emot. Färger, bakgrunder, bilder osv. justeras automatiskt med de mörka lägesinställningar som är specifika för e-postklienten.
+Vissa e-postklienter tillämpar systematiskt sitt eget mörka standardläge för alla e-postmeddelanden som tas emot. Färger, bakgrunder, bilder osv. justeras automatiskt med inställningar för mörkt läge som är specifika för e-postklienten, vilket innebär att ingen extern ändring är möjlig.
+
+<!--It is important to note that less than 25% of email clients offer customization options for dark mode. Clients such as Gmail implement their own dark mode rendering, which is not subject to external modification.-->
 
 De här klienterna är till exempel:
 
@@ -173,6 +171,11 @@ Det innebär att det upptäcker områden med ljusa och mörka element och invert
 Here you can see that we have applied a different background, defined another image and change the color of the text and button.-->
 
 ### Definiera anpassat mörkt läge {#define-custom-dark-mode}
+
+>[!CONTEXTUALHELP]
+>id="ac_edition_darkmode_image"
+>title="Använd en viss bild för mörkt läge"
+>abstract="Du kan välja en annan bild som ska visas när mörkt läge är aktiverat. <br>Att lägga till en viss bild för mörkt läge garanterar inte att den återges korrekt i alla e-postklienter. Observera att alla e-postklienter inte stöder anpassat mörkt läge."
 
 När du har växlat till **[!UICONTROL Dark mode]** kan du välja att redigera specifika formatelement för ditt innehåll som bara visas när mörkt läge är aktiverat i mottagarens e-postklient, förutsatt att det har stöd för den funktionen.
 

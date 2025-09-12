@@ -11,9 +11,9 @@ keywords: aktivitet, villkor, arbetsyta, resa, optimering
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: 1c47c89ae86844399240d48c4d19f834d90c7598
+source-git-commit: f1a44b91e8dfe28d0cf54c11a7912e568f3d176d
 workflow-type: tm+mt
-source-wordcount: '1237'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ I följande exempel visas hur du använder aktiviteten **[!UICONTROL Optimize]**
 
 Testa om det första meddelandet skickas via e-post eller SMS leder till högre konverteringar.
 
-➡️ Använd konverteringsgraden som optimeringsmått (till exempel köp, registreringar).
+➡️ Använd konverteringsgraden som framgångsmått (till exempel köp, registreringar).
 
 ![](assets/journey-optimize-experiment-uc-channel.png)
 
@@ -145,7 +145,7 @@ Testa om det första meddelandet skickas via e-post eller SMS leder till högre 
 
 Kör ett experiment för att kontrollera om ett e-postmeddelande eller tre e-postmeddelanden under en vecka leder till fler inköp.
 
-➡️ Använd köp eller avbeställningsfrekvensen som optimeringsmått.
+➡️ Använd köp eller avbeställningsfrekvensen som framgångsmått.
 
 ![](assets/journey-optimize-experiment-uc-frequency.png)
 
@@ -155,7 +155,7 @@ Kör ett experiment för att kontrollera om ett e-postmeddelande eller tre e-pos
 
 Jämför en 24-timmars väntan jämfört med en 72-timmars väntan före en uppföljning för att avgöra vilken tidpunkt som maximerar engagemanget.
 
-➡️ Använd genomklickningsfrekvensen eller intäkterna som optimeringsmått.
+➡️ Använd genomklickningsfrekvensen eller intäkterna som framgångsmått.
 
 ![](assets/journey-optimize-experiment-uc-wait.png)
 
@@ -166,7 +166,7 @@ Jämför en 24-timmars väntan jämfört med en 72-timmars väntan före en uppf
 >[!CONTEXTUALHELP]
 >id="ajo_path_targeting_fallback"
 >title="Vad är en reservsökväg?"
->abstract="Med Fallback skapas en ny väg för målgruppen som inte uppfyller någon av målinriktningsreglerna som definieras ovan.</br>Om du inte väljer det här alternativet kommer ingen målgrupp som inte är berättigad till en målregel inte att ange reservsökvägen."
+>abstract="Reservbanor gör att målgruppen kan ange en alternativ sökväg när inga målinriktningsregler är kvalificerade. </br>Om du inte väljer det här alternativet kommer ingen målgrupp som inte är berättigad till en målgruppsregel att gå in i reservsökvägen och avsluta resan."
 
 Målreglerna gör att du kan fastställa specifika regler eller kvalifikationer som måste uppfyllas för att en kund ska vara berättigad att ange en av kundresan, baserat på specifika målgruppssegment <!-- depending on profile attributes or contextual attributes-->.
 
@@ -196,11 +196,11 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
    ![](assets/journey-targeting-rule.png)
 
-1. Välj alternativet **[!UICONTROL Enable fallback content]** efter behov. Den här åtgärden skapar en reservbana för målgruppen som inte uppfyller någon av målgruppsreglerna som definieras ovan.
+1. Välj alternativet **[!UICONTROL Enable fallback path]** efter behov. Den här åtgärden skapar en reservbana för målgruppen som inte uppfyller någon av målgruppsreglerna som definieras ovan.
 
    >[!NOTE]
    >
-   >Om du inte markerar det här alternativet kommer målgrupper som inte är kvalificerade för en målarregel inte att gå in i reservbanan.
+   >Om du inte väljer det här alternativet kommer målgrupper som inte är kvalificerade för en målinriktningsregel inte in i reservbanan och avslutar resan.
 
 1. Klicka på **[!UICONTROL Create]** om du vill spara målarregelinställningarna.
 
@@ -234,7 +234,7 @@ I följande exempel visas hur du använder aktiviteten **[!UICONTROL Optimize]**
 
 Gold-status som lojalitetsmedlemmar kan få personaliserade erbjudanden via e-post, medan alla andra medlemmar dirigeras till SMS-påminnelser.
 
-➡️ Använd intäkten per profil eller konverteringsgrad som optimeringsmått.
+<!--➡️ Use the revenue per profile or conversion rate as the optimization metric.-->
 
 ![](assets/journey-optimize-targeting-uc-segment.png)
 
@@ -244,7 +244,7 @@ Gold-status som lojalitetsmedlemmar kan få personaliserade erbjudanden via e-po
 
 Kunder som har öppnat ett e-postmeddelande men inte klickat kan få ett push-meddelande, medan de som inte öppnat alls får ett SMS.
 
-➡️ Använd genomklickningsfrekvensen eller nedströmskonverteringar som optimeringsmått.
+<!--➡️ Use the click-through rate or downstream conversions as the optimization metric.-->
 
 ![](assets/journey-optimize-targeting-uc-behavior.png)
 
@@ -254,15 +254,15 @@ Kunder som har öppnat ett e-postmeddelande men inte klickat kan få ett push-me
 
 Kunder som nyligen har köpt kan gå in på en kort&quot;Tack + Korsförsäljning&quot;-väg, medan kunder som inte har någon köphistorik går in på en längre vårdsresa.
 
-➡️ Använd den upprepade inköpshastigheten eller engagemangsfrekvensen som optimeringsmått.
+<!--➡️ Use the repeat purchase rate or engagement rate as the optimization metric.-->
 
 ![](assets/journey-optimize-targeting-uc-purchase.png)
 
 +++
 
-## Lägg till ett villkor {#conditions}
+### Lägg till ett villkor {#conditions}
 
-Du kan lägga till ett villkor för att definiera hur enskilda personer ska gå igenom din resa genom att skapa flera banor som baseras på specifika kriterier. Du kan också konfigurera en alternativ sökväg för att hantera timeout eller fel, vilket ger en smidig upplevelse.
+Villkor är en typ av [målgruppsregler](#targeting) som gör att du kan definiera hur enskilda personer ska gå igenom din resa genom att skapa flera sökvägar baserat på specifika kriterier.
 
 ![](assets/journey-condition.png)
 
