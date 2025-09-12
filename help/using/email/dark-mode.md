@@ -35,7 +35,7 @@ ht-degree: 0%
 >
 >Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. <!--To join the beta program, contact your Adobe representative.-->
 
-När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [&#128279;](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
+När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [ ](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
 
 I den här <!--Email Designer -->mörka vyn kan du även definiera specifika anpassade inställningar som ska visas av e-postklienter som stöder e-post när deras mörka läge är aktiverat.
 
