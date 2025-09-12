@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 6d603641a3565b1f1465fa881383f4d48611c786
+source-git-commit: 244d17a6c75eaee5b09fb82a9237db041a2650d1
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 2%
+source-wordcount: '2068'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Uppdateringar 25 september {#sep-updates}
 
@@ -89,15 +89,19 @@ ht-degree: 2%
 
 ### Förbättringar {#Sep-25-improv}
 
+* **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för fullständig URL-anpassning/basanpassning för fördefinierade domäner som accepteras av Adobe. [Läs mer](../personalization/personalization-build-expressions.md#where) <!--Availability date: September 12-->
+
+  >[!NOTE]
+  >
+  >Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder.
+
 * **Uttryck för regler för beslutsavgränsning** - Du kan nu skapa egna uttryck för att definiera tröskelvärdet för en begränsningsregel för ett beslutsobjekt. [Läs mer](../experience-decisioning/items.md#capping)
 
   >[!NOTE]
   >
   >Den här funktionen är för närvarande tillgänglig som begränsad tillgänglighet för alla användare.
 
-* **Administration**
-
-  **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera på systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett konfigurationsfel för e-postkanal som använder den anpassade delegeringstypen inträffar. [Läs mer](../reports/alerts.md#alert-dns-record-missing)
+* **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera på systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett konfigurationsfel för e-postkanal som använder den anpassade delegeringstypen inträffar. [Läs mer](../reports/alerts.md#alert-dns-record-missing)
 
 ## Versionsinformation 25 augusti {#25-8-rn}
 
@@ -357,8 +361,6 @@ Förbättringar i den här versionen visas nedan.
    * **Verifiera SMS-anslutning** - Nu kan du enkelt testa och verifiera dina SMS API-autentiseringsuppgifter i Adobe Journey Optimizer genom att skicka ett exempelmeddelande till en angiven enhet. [Läs mer](../sms/sms-configuration-sinch.md)
 
 * **Konfiguration**
-
-  &lt;!—* **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för fullständig URL-anpassning/basanpassning för fördefinierade domäner som accepteras av Adobe. Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder. [Läs mer](../personalization/personalization-build-expressions.md#where) - Uppdatera den 21 augusti: Väntar på slutet. för att bekräfta när produkten distribueras.—>
 
    * **Stöd för anpassade attribut med en klickning för att avbryta prenumeration-URL** - Om du hanterar samtycke utanför Adobe kan du ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumeration i e-postkonfigurationen med ett enda klick. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
 
