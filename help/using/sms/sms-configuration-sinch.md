@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 85ae4e99e804e50451b3f108e1fddc041f269620
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1091'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
    | Avanmäl meddelande | Ange det anpassade svar som automatiskt skickas som ditt avanmälningsmeddelande. |
    | Hjälpnyckelord | Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt **hjälpmeddelande**. Använd kommaseparerade värden för flera nyckelord. |
    | Hjälpmeddelande | Ange det anpassade svar som automatiskt skickas som **hjälpmeddelande**. |
-   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3440280/?learn=on&captions=swe). |
+   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3427129/?learn=on). |
    | Dubbelt meddelande om anmälan | Ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan. |
    | Ingående nummer | Lägg till ditt unika inkommande nummer eller din korta kod. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer eller kort kod. |
    | Anpassade inkommande nyckelord | Definiera unika nyckelord för specifika åtgärder, t.ex. RABATT, ERBJUDANDEN, REGISTRERING. Dessa nyckelord fångas in och lagras som attribut i profilen, vilket gör att du kan aktivera en segmentkvalificering för direktuppspelning under resan och leverera ett anpassat svar eller en anpassad åtgärd. |
@@ -117,6 +117,7 @@ Så här konfigurerar du Sinch MMS att skicka MMS med Journey Optimizer:
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalkonfiguration för MMS-meddelanden. [Läs mer](sms-configuration-surface.md)
 
+
 ## Konfigurera API-autentiseringsuppgifter för RCS
 
 <!--![](assets/do-not-localize/rcs-sms.png)-->
@@ -125,19 +126,32 @@ RCS-meddelanden (Rich Communication Services) stöds i Journey Optimizer via Sin
 
 Observera att meddelanden automatiskt återgår till SMS när profilens enhet inte stöder RCS eller är tillfälligt oåtkomlig via RCS.
 
-➡️ [Se hur Sinch stöder RCS i Sinch-dokumentation](https://sinch.com/blog/rcs-api-guide/)
+### Avancerade RCS-meddelanden
 
-Så här konfigurerar du RCS med Sinch:
+>[!AVAILABILITY]
+>
+> Avancerade RCS-meddelanden är bara tillgängliga med ett direkt konto som hanteras av Sinch.
 
 1. **Konfigurera din profilerade RCS-agent**
 
-   Kontakta din Adobe-representant för att få en varumärkesprofilerad RCS-agent. [Läs mer om varumärkesprofilerad RCS-agent](https://community.sinch.com/t5/RCS/Getting-Started-with-RCS-using-Conversation-API/ta-p/17844)
+   Skapa en varumärkesprofilerad RCS-agent på den nya instrumentpanelen. [Läs mer om varumärkesprofilerad RCS-agent](https://community.sinch.com/t5/RCS/Getting-Started-with-RCS-using-Conversation-API/ta-p/17844)
 
-1. **Konfigurera dina [singch API-autentiseringsuppgifter](#create-api)**
+1. **Konfigurera dina [anpassade API-autentiseringsuppgifter](sms-configuration-custom.md)**
 
-   När din RCS-agent har godkänts måste du ange dina Single API-autentiseringsuppgifter, som innehåller din åtkomstnyckel, hemlighet och ditt serviceplan-ID. Dessa inloggningsuppgifter kommer att användas av Journey Optimizer för att autentisera och skicka meddelanden via Sinchs plattform.
+   När din RCS-agent har godkänts måste du ange dina anpassade API-autentiseringsuppgifter, som inkluderar din AppId, namn, URL och autentiseringstyp.
+
+1. **Konfigurera RCS med providerns nyttolast.**
+
+   I dina [anpassade API-autentiseringsuppgifter](sms-configuration-custom.md) lägger du till din leverantörsnyttolast för att validera och anpassa dina RCS-meddelanden.
 
 1. **Skapa en [kanalkonfiguration](sms-configuration-surface.md) för dina RCS-meddelanden**
 
    Konfigurera en kanalyta i Journey Optimizer genom att länka dina signeringsuppgifter och definiera meddelandeparametrarna. Med den här installationen kan du skriva och skicka RCS-meddelanden från Journey Optimizer.
+
+1. **Skapa och anpassa [SMS-meddelandet](../sms/create-sms.md)**
+
+   Klistra in din nyttolast direkt i SMS-innehållet för att bädda in och leverera RCS-meddelanden (Rich Communication Services).
+
+   ➡️ [Se hur Sinch stöder RCS i Sinch-dokumentation](https://sinch.com/blog/rcs-api-guide/)
+
 
