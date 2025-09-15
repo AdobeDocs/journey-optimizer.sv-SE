@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
-source-git-commit: 09a6ec5bf04a1252fea8724d587b46f688842906
+source-git-commit: 57890eede1d5a0de6002f31b9ce8807a903b84f7
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 0%
@@ -31,7 +31,7 @@ I enlighet med detta listas de bästa sätten att utforma hjälpmedelsanpassat i
 >
 >Å andra sidan är hjälpmedelsfunktionerna för gränssnittet [!DNL Journey Optimizer] detaljerade i [det här avsnittet](../start/accessibility.md).
 > 
->## Säkra textläsbarhet {#text-readability}
+## Säkra textläsbarhet {#text-readability}
 
 Utnyttja fliken **[!UICONTROL Styles]** i komponenten **[!UICONTROL Text]** för att säkerställa att texten är läsbar, till exempel genom att använda rätt färgkontrast och enkla teckensnitt. [Läs mer](content-components.md#text)
 
@@ -102,7 +102,7 @@ För effektiv alternativ text i digitala produkter, följ riktlinjerna nedan:
 
 Använd den relevanta strukturen för e-postprogrammet för Designer och [innehållskomponenter](content-components.md), samt alternativen i rutan **[!UICONTROL Styles]**, för att ordna ditt innehåll på ett tydligt, logiskt och koncist sätt som är tillgängligt för alla.
 
-![](assets/accessible-components.png){width="1000%"}
+![](assets/accessible-components.png){width="100%"}
 
 * Använd strukturerad, semantisk HTML med rätt rubriker, stycken, listor och tabeller.
 * Se till att innehållet följer ett logiskt flöde från vänster till höger, uppifrån och ned.
