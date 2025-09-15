@@ -31,7 +31,7 @@ I enlighet med detta listas de bästa sätten att utforma hjälpmedelsanpassat i
 >
 >Å andra sidan är hjälpmedelsfunktionerna för gränssnittet [!DNL Journey Optimizer] detaljerade i [det här avsnittet](../start/accessibility.md).
 > 
-## Säkra textläsbarhet {#text-readability}
+>## Säkra textläsbarhet {#text-readability}
 
 Utnyttja fliken **[!UICONTROL Styles]** i komponenten **[!UICONTROL Text]** för att säkerställa att texten är läsbar, till exempel genom att använda rätt färgkontrast och enkla teckensnitt. [Läs mer](content-components.md#text)
 
