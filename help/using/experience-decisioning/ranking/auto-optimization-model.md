@@ -7,9 +7,9 @@ feature: Ranking, Decision Management
 role: User
 level: Experienced
 exl-id: 8a8b66cb-dd96-4373-bbe0-a67e0dc0b2c0
-source-git-commit: f407c5d4c20aab50350588d89e9d7682f24f5c33
+source-git-commit: 0e9d8335bed8d8157a0f2302a5ff2b0a74257218
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,16 @@ ht-degree: 0%
 # Automatiskt optimerade modeller {#auto-optimization-model}
 
 En automatisk optimeringsmodell syftar till att leverera erbjudanden som maximerar den avkastning (KPI) som affärsklienterna sätter. Dessa nyckeltal kan vara i form av konverteringsgrader, intäkter osv. I nuläget fokuserar automatisk optimering på att optimera erbjudandeklick med erbjudandekonvertering som mål. Automatisk optimering är icke-personaliserat och optimerar baserat på erbjudandets&quot;globala&quot; prestanda.
+
+## Krav för datauppsättning
+
+För att utbilda en automatisk optimeringsmodell måste datauppsättningen uppfylla följande minimikrav:
+
+* Minst två erbjudanden i datauppsättningen måste ha minst 100 visningshändelser och 5 klickningshändelser under de senaste 14 dagarna.
+* Erbjudanden med färre än 100 skärmar och/eller 5 klickningar under de senaste 14 dagarna behandlas av modellen som nya erbjudanden och kan endast hanteras av undersökningsbanken.
+* Erbjudanden med fler än 100 skärmar och 5 klickningshändelser under de senaste 14 dagarna behandlas av modellen som befintliga erbjudanden och kan hanteras av både utforsknings- och utnyttjandebanditer.
+
+Tills första gången en automatisk optimeringsmodell tränas kommer erbjudanden inom en urvalsstrategi som använder en automatisk optimeringsmodell att presenteras på måfå.
 
 ## Begränsningar {#limitations}
 

@@ -6,9 +6,10 @@ description: Läs mer om personaliserade optimeringsmodeller
 feature: Ranking, Decision Management
 role: User
 level: Experienced
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+exl-id: 1c7bcffe-5a25-444f-8a95-057b7a07f252
+source-git-commit: 0e9d8335bed8d8157a0f2302a5ff2b0a74257218
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -20,6 +21,16 @@ ht-degree: 0%
 Genom att utnyttja den senaste tekniken inom maskininlärning och djupinlärning under övervakning kan en företagsanvändare (marknadsförare) med personaliserad optimering definiera affärsmål och använda sina kunddata för att utbilda affärsorienterade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal.
 
 <!--![](../../rn/assets/do-not-localize/ai-ranking.gif)-->
+
+## Krav för datauppsättning
+
+För att utbilda en personaliserad optimeringsmodell måste datauppsättningen uppfylla följande minimikrav:
+
+* Minst 2 erbjudanden i datauppsättningen måste ha minst 250 visningshändelser och 25 lyckade händelser (till exempel klick eller konverteringar) under de senaste 30 dagarna.
+* Erbjudanden med färre än 250 displayer och/eller 25 lyckade händelser under de senaste 30 dagarna kan inkluderas i personaliserad trafik, men behandlas enligt personaliseringsmodellen som att de presterar på samma nivå som det värsta poängtalet* tills de överskrider detta tröskelvärde.
+* Erbjudanden med färre än 250 bildskärmar och/eller 25 framgångsrika händelser under de senaste 30 dagarna kan även fortsättningsvis inkluderas i utforskningstrafiken.
+
+Tills första gången en personaliserad optimeringsmodell tränas kommer erbjudanden inom en urvalsstrategi som använder en personaliserad optimeringsmodell att erbjudas slumpvis.
 
 ## Antaganden och begränsningar för nyckelmodeller {#key}
 
