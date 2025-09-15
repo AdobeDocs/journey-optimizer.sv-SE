@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 50dcdd30e21fe1b12d502a2b9c478f4ceb546c49
+source-git-commit: 0e269babd228063d465e0790435d916e479701a7
 workflow-type: tm+mt
 source-wordcount: '2940'
 ht-degree: 18%
@@ -325,14 +325,14 @@ ht-degree: 18%
             + [Infoga personaliserade erbjudanden](using/email/add-offers-email.md)
             + [Generera textversion](using/email/text-version-email.md)
             + [Lägg till metadata](using/email/email-metadata.md)
-            + [Lägg till anpassad CSS](using/email/custom-css.md)
          + Redigera stil {#edit-style}
             + [Redigera stil](/help/rp_landing_pages/edit-style-landing-page.md)
             + [Kom igång med e-postformat](using/email/get-started-email-style.md)
             + [Redigera bakgrundsinställningar](using/email/backgrounds.md)
             + [Justera lodrät justering och utfyllnad](using/email/alignment-and-padding.md)
             + [Lägg till textbundna formatattribut](using/email/inline-styling.md)
-            + [Definiera innehåll i mörkt läge](using/email/dark-mode.md)
+            + [Lägg till anpassad CSS](using/email/custom-css.md)
+            + [Hantera innehåll i mörkt läge](using/email/dark-mode.md)
          + [Skapa tillgängligt innehåll](using/email/accessible-content.md)
       + [Hantera e-postavanmälan](using/email/email-opt-out.md)
       + Konfigurera e-postkanal {#configure-email}
@@ -872,7 +872,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
