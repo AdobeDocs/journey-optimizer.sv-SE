@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+source-git-commit: 6f4ec598a56b0e835e1e866f24dcc016f6835be8
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 0%
@@ -138,7 +138,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >
@@ -156,13 +156,13 @@ Du vill till exempel prioritera alla erbjudanden med attributet&quot;hot&quot; o
 
 Om du vill använda attribut som hör till dina beslutsobjekt i formler måste du följa rätt syntax i rankningsformelns kod. Expandera varje avsnitt för mer information:
 
-+++ utnyttja standardattribut för beslutsunderlag
++++Utnyttja standardattribut för beslutsartiklar
 
 ![](../assets/formula-attribute.png)
 
 +++
 
-+++utnyttja anpassade attribut för beslutsobjekt
++++Utnyttja anpassade attribut för beslutsartiklar
 
 ![](../assets/formula-attribute-custom.png)
 
@@ -172,7 +172,7 @@ Om du vill använda attribut som hör till dina beslutsobjekt i formler måste d
 
 Du kan skapa många olika rankningsformler efter behov. Nedan finns några exempel.
 
-+++Boost erbjuder med visst attribut baserat på profilattribut
++++Öka erbjudanden med vissa attribut baserade på profilattribut
 
 Om profilen finns i den stad som motsvarar erbjudandet fördubblas prioriteten för alla erbjudanden i den staden.
 
@@ -184,7 +184,7 @@ if( offer.characteristics.get("city") = homeAddress.city, offer.rank.priority * 
 
 +++
 
-+++Boost erbjuder där slutdatumet är mindre än 24 timmar nu
++++Förbättra erbjudanden där slutdatumet är mindre än 24 timmar från och med nu
 
 **Rankningsformel:**
 
@@ -194,7 +194,7 @@ if( offer.selectionConstraint.endDate occurs <= 24 hours after now, offer.rank.p
 
 +++
 
-+++Boost-erbjudanden baserat på kundernas benägenhet att köpa den produkt som erbjuds
++++Öka erbjudandena baserat på kundernas benägenhet att köpa den produkt som erbjuds
 
 Ni kan höja poängen för ett erbjudande baserat på kundens benägenhetspoäng.
 
@@ -224,7 +224,7 @@ Med detta i åtanke för en profil som:
 
 +++
 
-+++Boost erbjuder baserat på kontextdata {#context-data}
++++Öka erbjudanden baserat på kontextdata
 
 Med [!DNL Journey Optimizer] kan du öka vissa erbjudanden baserat på de kontextdata som skickas i anropet. Om till exempel `contextData.weather=hot` skickas måste prioriteten för alla erbjudanden med `attribute=hot` öka.
 
