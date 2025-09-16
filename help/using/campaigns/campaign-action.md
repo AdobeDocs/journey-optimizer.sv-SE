@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: fed96e48-2e54-4bd4-ae17-77434d1b90eb
-source-git-commit: d4765f9084efac1fd241404dff365a66027ce5af
+source-git-commit: 8205d248d986cdc1a2262705c58524c2434265f5
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
    >[!NOTE]
    >
-   >Kanaler som stöds är: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [&rbrace;Kodbaserade upplevelser](../code-based/get-started-code-based.md).
+   >Kanaler som stöds är: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [}Kodbaserade upplevelser](../code-based/get-started-code-based.md).
    >
    >Vilka kanaler som är tillgängliga varierar beroende på licensmodell och tillägg.
 
@@ -72,7 +72,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 +++**Aktivera läget Snabb leverans** (push).
 
-Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 

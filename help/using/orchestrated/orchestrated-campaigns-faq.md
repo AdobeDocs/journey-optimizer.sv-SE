@@ -3,13 +3,11 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
-hide: true
-hidefromtoc: true
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 96b8813ebad35f51986cc62d847d9d3d256b08be
+source-git-commit: 8205d248d986cdc1a2262705c58524c2434265f5
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1124'
 ht-degree: 1%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 1%
 
 Nedan hittar du Frågor och svar om Adobe Journey Optimizer samordnade kampanjer.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ta upp din fråga.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 ## Vad är Campaign-samordning? {#what-are-oc}
 
@@ -52,6 +50,7 @@ Viktiga funktioner:
 
 För att få åtkomst till kampanjsamordning måste din licens innehålla antingen paketet **Journey Optimizer - Campaigns &amp; Journeys** eller paketet **Journey Optimizer - Campaigns**. Kontakta din Adobe-representant för att bekräfta din licens och uppdatera vid behov.
 
+Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ## Vilka kanaler stöds? {#channels}
 
@@ -194,4 +193,4 @@ Ja, följ god praxis nedan:
 >* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
 >* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
 >* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

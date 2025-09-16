@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 8205d248d986cdc1a2262705c58524c2434265f5
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
-1. Välj **[!UICONTROL Frequency]** för ditt push-meddelande på menyn **[!UICONTROL Action triggers]**:
+1. Välj **[!UICONTROL Action triggers]** för ditt push-meddelande på menyn **[!UICONTROL Frequency]**:
 
    * En gång
    * Dagligen
@@ -111,7 +111,7 @@ Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket sn
 
 Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp.
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html).
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ### Förhandskrav {#prerequisites}
 
