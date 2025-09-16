@@ -33,7 +33,7 @@ Nedan visas säkerhetsbeskrivningar och begränsningar när du använder orkestr
 
 * Det genomsnittliga antalet attribut per schema **får inte överstiga 50 kolumner** för att upprätthålla hanterbarhet och prestanda.
 
-* Relationsscheman kan inte aktiveras för Adobe Experience Platform **profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Relationsscheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
+* Relationsscheman kan inte aktiveras för Adobe Experience Platform **profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Relationsscheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
 
 ### Datainhämtning
 
