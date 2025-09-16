@@ -5,9 +5,9 @@ title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 version: Campaign Orchestration
-source-git-commit: 35cd3aac01467b42d0cba22de507f11546f4feb9
+source-git-commit: 359a2e5b60ba035e300f452e1211245f8f689609
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Skyddsritningar och begränsningar {#guardrails}
 
-Nedan finns ytterligare skyddsförslag och begränsningar när du använder orkestrerade kampanjer.
+Nedan visas säkerhetsbeskrivningar och begränsningar när du använder orkestrerade kampanjer.
 
 ## Begränsningar för dataflöde
 
