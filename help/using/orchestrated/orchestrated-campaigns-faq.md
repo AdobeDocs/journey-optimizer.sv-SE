@@ -5,9 +5,9 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 8205d248d986cdc1a2262705c58524c2434265f5
+source-git-commit: 028f5d506d5fdbd2ed19ad7ded8c1fcd0a391702
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1043'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Viktiga funktioner:
 
 För att få åtkomst till kampanjsamordning måste din licens innehålla antingen paketet **Journey Optimizer - Campaigns &amp; Journeys** eller paketet **Journey Optimizer - Campaigns**. Kontakta din Adobe-representant för att bekräfta din licens och uppdatera vid behov.
 
-Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ## Vilka kanaler stöds? {#channels}
 
@@ -105,7 +105,7 @@ Kampanjer använder en **relationsdatabas**. På så sätt kan ni söka efter ol
 
 >[!ENDSHADEBOX]
 
-## Kan jag personalisera meddelanden med dessa data? {#personalization}
+## Kan jag personalisera meddelanden med relationsdata? {#personalization}
 
 Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdateras och data som används för personalisering. Dessutom kan data från länkade entiteter i relationsdatabasen också användas för personalisering. Ni kan använda kundprofiler tillsammans med länkade data (som köp eller prenumerationer) för att anpassa innehåll i alla kanaler som stöds.
 
@@ -120,7 +120,7 @@ Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdatera
 >[!ENDSHADEBOX]
 
 
-## Kan programmet integreras med andra Adobe-lösningar? {#integrations}
+## Kan samordnade kampanjer integreras med andra Adobe-lösningar? {#integrations}
 
 Ja. Kampanjsamordning är integrerad med:
 
@@ -142,7 +142,7 @@ Tillstånd och samtycke för samordnade kampanjer och resor hanteras centralt i 
 
 >[!ENDSHADEBOX]
 
-## Kan jag göra ad hoc-segmentering? {#ad-hoc}
+## Kan jag segmentera enstaka bilder i samordnade kampanjer? {#ad-hoc}
 
 I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmentering&quot;, där ni kan komma åt alla data som finns i relationsarkivet i realtid, bygga en komplex fråga ovanpå den och få resultatet för omedelbar aktivering via utgående kanaler (t.ex. e-post + SMS).
 
@@ -158,7 +158,7 @@ I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmenteri
 
 
 
-## Stöder detta beslut? {#decisioning}
+## Har orkestrerade kampanjer stöd för beslut? {#decisioning}
 
 Ja. Vid beslut kan relationsdata från samordnade kampanjer användas. När relationsschemat är kopplat till XDM-scheman kan XDM-data användas vid beslut.
 
@@ -176,16 +176,17 @@ Objekt som skapas i samordnade kampanjer (t.ex. målgrupper, arbetsflöden) är 
 
 >[!ENDSHADEBOX]
 
-## Finns det rekommendationer för att köra kampanjer i stor skala? {#scale}
+<!--
+## Are there recommended practices for running campaigns at scale? {#scale}
 
-Ja, följ god praxis nedan:
+Yes, follow the best practices below:  
 
-* **Planera kampanjer runt affärskalendrar** (produktlanseringar, säsongstopp) för att anpassa volym och resurser.
-* Använd **målgruppens förhandsvisningar** innan du skickar för att bekräfta den förväntade storleken och undvika överraskningar.
-* Om möjligt **stagger-sändningstider** för att undvika överväldigande system längre fram i kedjan (till exempel callcenters, webbplatser).
-* Upprätta en **övervakningsrutin** - spåra leveransloggar, felfrekvens och avanmälan efter varje sändning.
-* Kör **efterkampanjanalys** i Customer Journey Analytics för att förfina målinriktning och samordning inför nästa cykel.
-
+* **Plan campaigns around business calendars** (product launches, seasonal peaks) to align volume and resources.  
+* Use **audience pre-views** before sending to confirm the expected size and avoid surprises.  
+* Where possible, **stagger send times** to avoid overwhelming downstream systems (e.g., call centers, websites).  
+* Establish a **monitoring routine**—track delivery logs, error rates, and opt-outs after each send.  
+* Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
+-->
 
 
 >[!MORELIKETHIS]
@@ -193,4 +194,4 @@ Ja, följ god praxis nedan:
 >* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
 >* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
 >* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
