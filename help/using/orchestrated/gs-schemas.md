@@ -5,7 +5,7 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar ett relationsschema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: 69644e85d9c453f34fe8c5d40e0c1e8dce2891a5
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
