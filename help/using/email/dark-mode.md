@@ -3,18 +3,15 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Växla till mörkt läge
 description: Lär dig hur du använder mörkt läge i e-post-Designer
-badge: label="Beta" type="Informative"
 feature: Email Design
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: mörkt läge, e-post, färg, redigerare
-hide: true
-hidefromtoc: true
 exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
-source-git-commit: 6106c2cbd77a9962a0d496cdda3a7e6118e90bf0
+source-git-commit: b6f0174b31b4ef317c18644a93a4ae38a712fb36
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -31,11 +28,7 @@ ht-degree: 0%
 >title="Växla till mörkt läge"
 >abstract="Växla till mörkt läge om du vill förhandsgranska hur det kan återges på e-postklienter som stöds. <br>Den slutliga återgivningen beror på mottagarens e-postklient. Observera att alla e-postklienter inte stöder mörkt läge."
 
->[!AVAILABILITY]
->
->Funktionen finns för närvarande i betaversion och är endast tillgänglig för betatestare. <!--To join the beta program, contact your Adobe representative.-->
-
-När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [&#128279;](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
+När du utformar dina e-postmeddelanden kan du växla till [!DNL Journey Optimizer]-vyn med [ ](get-started-email-design.md)e-post-Designer **[!UICONTROL Dark mode]**.
 
 I den här <!--Email Designer -->mörka vyn kan du även definiera specifika anpassade inställningar som ska visas av e-postklienter som stöder e-post när deras mörka läge är aktiverat.
 
