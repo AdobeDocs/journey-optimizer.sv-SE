@@ -5,9 +5,9 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 028f5d506d5fdbd2ed19ad7ded8c1fcd0a391702
+source-git-commit: aea8e1bc6f34400070234195f576fa7df59dca7d
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Viktiga funktioner:
 
 För att få åtkomst till kampanjsamordning måste din licens innehålla antingen paketet **Journey Optimizer - Campaigns &amp; Journeys** eller paketet **Journey Optimizer - Campaigns**. Kontakta din Adobe-representant för att bekräfta din licens och uppdatera vid behov.
 
-Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ## Vilka kanaler stöds? {#channels}
 
@@ -119,14 +119,14 @@ Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdatera
 
 >[!ENDSHADEBOX]
 
+<!--
+## Do Orchestrated campaigns integrate with other Adobe solutions? {#integrations}
 
-## Kan samordnade kampanjer integreras med andra Adobe-lösningar? {#integrations}
+Yes. Campaign orchestration is natively integrated with:
 
-Ja. Kampanjsamordning är integrerad med:
-
-* **Customer Journey Analytics**: Det finns rapporter om kampanjsamordning.
-* **Real-Time CDP**: Publiker som skapats i kampanjer kan läsas i Real-Time CDP.
-* **FFAC (Federated Audience Composition)**: Tillgängligt som tillägg.
+* **Customer Journey Analytics**: Campaign orchestration reports are available.  
+* **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
+* **Federated Audience Composition (FAC)**: Available as an add-on.  -->
 
 ## Vad gäller för tillstånd och samtycke? {#permissions}
 
@@ -194,4 +194,4 @@ Yes, follow the best practices below:
 >* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
 >* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
 >* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
