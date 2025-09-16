@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa uttryck
 description: Skapa uttryck
 redpen-status: CREATED_||_2025-08-11_20-19-10
-source-git-commit: e8b71a7efe1ca05a33bc6f33253900a58fa6665c
+exl-id: 6ccd0bc7-fb40-48de-abcb-0cb1eb2c6303
+source-git-commit: a5f0b47b9af31c1ae1fd6ae3dffd4c260444297a
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
-
 
 # Skapa uttryck{#section-overview}
 
@@ -20,7 +20,7 @@ Adobe Journey Optimizer innehåller en **avancerad uttrycksredigerare** som gör
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Använda den avancerade uttrycksredigeraren
 
@@ -30,7 +30,7 @@ Lär dig hur du använder den avancerade uttrycksredigeraren för att skapa anpa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Avancerad syntax för uttryck
 
@@ -40,7 +40,7 @@ Lär dig de syntaxregler, villkorliga instruktioner och datatyper som behövs f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Funktioner i Adobe Journey Optimizer
 
@@ -48,5 +48,27 @@ Få tillgång till en omfattande guide för funktioner för datamanipulering, vi
 
 [Identifiera tillgängliga funktioner](main-functions-journey-landing-page.md)
 :::
+
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Exempel på frågor om Journey Optimizer datauppsättningar och relaterade användningsfall
+
+Använd praktiska SQL-frågeexempel för att analysera och hantera data i olika datauppsättningar från Journey Optimizer för olika användningsområden.
+
+[Upptäck användningsexempel](../using/data/datasets-query-examples.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Exempel på SQL-frågor för dataanalys
+
+Få tillgång till SQL-exempelfrågor för att analysera Journey Optimizer-data i en Data Lake, från felsökning till rapportering och målgruppssegmentering.
+
+[Utforska framtagning av resor](../using/reports/query-examples.md)
+:::
+
 
 ::::
