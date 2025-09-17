@@ -10,7 +10,7 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: eb5c9c949b89406cfe62f136bd6a52ab2692b6e4
+source-git-commit: 11c62deaf90b961233a35b9c4be8b81264b4c8e7
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Om du vill använda **[!UICONTROL Journey Optimizer Experimentation Accelerator]
 * **[!UICONTROL View Experiments]**
 * **[!UICONTROL Manage Experiment Metada]**
 
-+++ Lär dig hur du tilldelar Experimentatrelaterade behörigheter
++++ Lär dig hur du tilldelar Experimentrelaterade behörigheter
 
 1. Gå till fliken **[!DNL Permissions]** i **[!UICONTROL Roles]**-produkten och välj önskad **[!UICONTROL Role]**.
 
@@ -88,7 +88,7 @@ Så här tilldelar du rollen till nya användare:
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+   Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
 
