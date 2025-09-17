@@ -5,7 +5,7 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 9ae0d910f6246b87683b04db97bbdb7355beb349
+source-git-commit: 4d5505cbb46bdff846218bfc3657c6a6e5447af3
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Nedan hittar du Frågor och svar om Adobe Journey Optimizer samordnade kampanjer
 
 Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
-## Vad är Campaign-samordning? {#what-are-oc}
++++ Vad är Campaign-samordning? {#what-are-oc}
 
 Kampanjsamordning är en funktion i Journey Optimizer som stöder enstegs- eller flerstegsarbetsflöden som utnyttjar Relational Datastore för att skapa och segmentera målgrupper för satsengagemang.
 
@@ -26,7 +26,9 @@ Det ger en ny typ av kampanjer till Journey Optimizer: **Orchestrerade-kampanjer
 
 Jämfört med kampanjer för enstaka sändning/åtgärd för de **orkestrering och sekvensering** för utgående marknadsföring: målgrupperna rör sig genom ett flerstegsarbetsflöde tillsammans i stället för att få en engångsutsändning.
 
-## Vad kan jag göra med en orkestrerad kampanj? {#what-can-i-do}
++++
+
++++ Vad kan jag göra med en orkestrerad kampanj?
 
 Viktiga funktioner:
 
@@ -46,13 +48,17 @@ Viktiga funktioner:
 
 >[!ENDSHADEBOX]
 
-## Hur får jag åtkomst till kampanjsamordning? {#access-oc}
++++
+
++++ Hur får jag åtkomst till kampanjsamordning?
 
 För att få åtkomst till kampanjsamordning måste din licens innehålla antingen paketet **Journey Optimizer - Campaigns &amp; Journeys** eller paketet **Journey Optimizer - Campaigns**. Kontakta din Adobe-representant för att bekräfta din licens och uppdatera vid behov.
 
-Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
-## Hur skiljer sig Orchestrated-kampanjer från Journeys? {#oc-vs-journeys}
++++
+
++++ Hur skiljer sig Orchestrated-kampanjer från Journeys?
 
 * **Samordnade kampanjer**: Passar bäst för **batch-, en-till-många**-kampanjer. Publiken gör satsvis, enligt ett schema.
 * **Resor**: Passar bäst för **realtidsengagemang med en-till-en**. Varje kund rör sig genom resan i sin egen takt, triggad av beteende eller händelser.
@@ -63,7 +69,9 @@ Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimi
 
 >[!ENDSHADEBOX]
 
-## Vad är segmentering av flera enheter? {#multi-entity}
++++
+
++++ Vad är segmentering av flera enheter?
 
 Kampanjsamordning i Adobe Journey Optimizer använder en relationsdatabas. Den här typen av datamodell har separata scheman med data som är anslutna via 1:1- eller 1:many-relationer. Detta gör att användare kan starta en fråga i vilket schema som helst - inte bara på mottagarnivå - och sedan vända fram och tillbaka till andra relaterade scheman, som inköp, produkter, bokningar eller mottagarinformation, vilket ger stor flexibilitet i hur segment och målgrupper kan skapas och
 förfinat.
@@ -74,8 +82,9 @@ förfinat.
 
 >[!ENDSHADEBOX]
 
++++
 
-## Hur fungerar datamodellen? {#data-model}
++++ Hur fungerar datamodellen?
 
 Kampanjer använder en **relationsdatabas**. På så sätt kan ni söka efter olika datauppsättningar (t.ex. kunder, produkter, prenumerationer) och koppla dem flexibelt för avancerad segmentering.
 
@@ -89,7 +98,9 @@ Kampanjer använder en **relationsdatabas**. På så sätt kan ni söka efter ol
 
 >[!ENDSHADEBOX]
 
-## Kan jag personalisera meddelanden med relationsdata? {#personalization}
++++
+
++++ Kan jag personalisera meddelanden med relationsdata?
 
 Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdateras och data som används för personalisering. Dessutom kan data från länkade entiteter i relationsdatabasen också användas för personalisering. Ni kan använda kundprofiler tillsammans med länkade data (som köp eller prenumerationer) för att anpassa innehåll i alla kanaler som stöds.
 
@@ -103,6 +114,8 @@ Ja. I kampanjsamordning kan en mottagarprofil som kallas personentitet uppdatera
 
 >[!ENDSHADEBOX]
 
++++
+
 <!--
 ## Do Orchestrated campaigns integrate with other Adobe solutions? {#integrations}
 
@@ -112,32 +125,44 @@ Yes. Campaign orchestration is natively integrated with:
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
 * **Federated Audience Composition (FAC)**: Available as an add-on.  -->
 
-## Vilka kanaler stöds? {#channels}
++++ Vilka kanaler stöds?
 
 Du kan skapa samordnade kampanjer för att skicka **e-post**, **SMS** och **push-meddelanden**.
 
-## Kan flera kommunikationer och olika kanaler lanseras inom samma samordnade kampanj?
++++
+
++++ Kan flera kommunikationer och olika kanaler lanseras inom samma samordnade kampanj?
 
 Ja, samordnade kampanjer har stöd för flerkanalsmarknadsföring.
 
-## Finns det mallar för samordnade kampanjer?
++++
+
++++ Finns det mallar för samordnade kampanjer?
 
 Nej, du kan inte definiera eller använda kampanjmallar, men du kan använda innehållsmallar för din kommunikation.
 
-## Är innehållsdesignern för meddelanden specifik för Orchestrated-kampanjer?
++++
+
++++ Är innehållsdesignern för meddelanden specifik för Orchestrated-kampanjer?
 
 Nej, innehållsdesignern, inklusive Email Designer, är gemensam för alla Journey Optimizer-funktioner.
 
-## Hur hänger de olika kanalerna ihop i samordnade kampanjer?
++++
+
++++ Hur hänger de olika kanalerna ihop i samordnade kampanjer?
 
 Kanalkomponenten och körningsmiljön är gemensamma för alla Journey Optimizer-kampanjer, men de kanaler som stöds skiljer sig åt.
 
-## Kan samordnade kampanjer kopplas till utgående kanaler (webb, inApp)?
++++
+
+
++++ Kan samordnade kampanjer kopplas till utgående kanaler (webb, inApp)?
 
 Nej, utgående kanaler stöds inte i Orchestrated-kampanjer.
 
++++
 
-## Vad gäller för tillstånd och samtycke? {#permissions}
++++ Vad gäller för tillstånd och samtycke?
 
 Tillstånd och samtycke för samordnade kampanjer och resor hanteras centralt i Adobe Experience Platform. De här inställningarna används för båda lösningarna för varje mottagare innan de skickas.
 
@@ -151,7 +176,10 @@ Tillstånd och samtycke för samordnade kampanjer och resor hanteras centralt i 
 
 >[!ENDSHADEBOX]
 
-## Kan jag segmentera enstaka bilder i samordnade kampanjer? {#ad-hoc}
++++
+
+
++++ Kan jag segmentera enstaka bilder i samordnade kampanjer?
 
 I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmentering&quot;, där ni kan komma åt alla data som finns i relationsarkivet i realtid, bygga en komplex fråga ovanpå den och få resultatet för omedelbar aktivering via utgående kanaler (t.ex. e-post + SMS).
 
@@ -165,15 +193,23 @@ I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmenteri
 
 >[!ENDSHADEBOX]
 
-## Kommer Campaign Orchestration endast att få åtkomst till data som lästs in via batch, eller kan den även fråga efter uppdaterade realtidstabeller (som analysdata)?
++++
+
+
++++ Kommer Campaign Orchestration endast att få åtkomst till data som lästs in via batch, eller kan den även fråga efter uppdaterade realtidstabeller (som analysdata)?
 
 Journey Optimizer Campaign-samordning kan först skapa ad hoc-frågor utöver Relational Schemas. Relationsscheman har endast stöd för batchkällor just nu. Dessutom har det stöd för läsare från alla typer av Adobe Experience Platform Audience.
 
-## Har orkestrerade kampanjer stöd för beslut? {#decisioning}
++++
+
++++ Har orkestrerade kampanjer stöd för beslut?
 
 Ja. Vid beslut kan relationsdata från samordnade kampanjer användas. När relationsschemat är kopplat till XDM-scheman kan XDM-data användas vid beslut.
 
-## Hur fungerar driftsättningen i olika miljöer? {#deployment}
++++
+
+
++++ Hur fungerar driftsättningen i olika miljöer?
 
 Objekt som skapas i samordnade kampanjer (t.ex. målgrupper, arbetsflöden) är kopplade till den sandlåda som de byggs i. Standardarbetsflöden för paketering och distribution i olika miljöer (dev, stage, prod) är för närvarande inte tillgängliga för samordnade kampanjer.
 
@@ -187,6 +223,8 @@ Objekt som skapas i samordnade kampanjer (t.ex. målgrupper, arbetsflöden) är 
 
 >[!ENDSHADEBOX]
 
++++
+
 <!--
 ## Are there recommended practices for running campaigns at scale? {#scale}
 
@@ -199,14 +237,15 @@ Yes, follow the best practices below:
 * Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
 -->
 
-## Vilken är relationen mellan mottagare och profilentiteter?
++++ Vilken är relationen mellan mottagare och profilentiteter?
 
 Segmentering utförs på mottagare när de skickar till Adobe Experience Platform-profilen. Måldimensionen för mottagaren utökar den enhetliga profilen med ytterligare data som används för segmentering inom samordnade kampanjer, medan mottagaren är inkompatibel med profilen vid körning för att skicka meddelanden och kontrollera samtyckespolicyn och affärsreglerna. Den här avstämningen är användbar för att sammanföra affärsregler och tillståndsansökningar på profilnivå
 
 ![](assets/recipients-and-profiles.png)
 
++++
 
-## I vilka fall rekommenderas du att använda Mottagare jämfört med Profilentiteter?
++++ I vilka fall rekommenderas du att använda Mottagare jämfört med Profilentiteter?
 
 Om du svarar Ja föreslås det bästa datalagret, men du bör alltid bekräfta det bästa sättet baserat på ditt användningsfall och dina begränsningar med din Adobe-representant.
 
@@ -218,24 +257,29 @@ Om du svarar Ja föreslås det bästa datalagret, men du bör alltid bekräfta d
 | Finns det särskilda behov för att skapa, utvärdera och aktivera målgrupper? | Kan beteendedata begränsas till `<` 90 dagar med förberäknade aggregat? |
 |  | Behövs data för att personalisera meddelanden i realtid? |
 
++++
 
-## Vilket är det högsta antalet aktiviteter per orkestrerad kampanj?
++++ Vilket är det högsta antalet aktiviteter per orkestrerad kampanj?
 
 Antalet aktiviteter i en orkestrerad kampanj är begränsat till 500.
 
-## Går det att utföra berikning för att lägga till ytterligare data?
++++
+
++++ Går det att utföra berikning för att lägga till ytterligare data?
 
 Ja, ni kan utöka data från relationsbutiken och från Adobe Experience Platform målgrupper.
 
-## Måste alla filter definieras via målgrupper eller kan någon typ av filter konfigureras?
++++
+
++++ Måste alla filter definieras via målgrupper eller kan någon typ av filter konfigureras?
 
 Samordnade kampanjer har stöd för fördefinierade filter: du kan definiera och spara en fråga som ett filter och lägga till den i dina favoriter så att den kan återanvändas i andra segmenteringsuppgifter.
 
-
++++
 
 >[!MORELIKETHIS]
 >
 >* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
 >* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
 >* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+>* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

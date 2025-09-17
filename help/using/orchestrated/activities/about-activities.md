@@ -5,7 +5,7 @@ title: Arbeta med samordnade kampanjaktiviteter
 description: Lär dig hur ni samordnar kampanjaktiviteter
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
 version: Campaign Orchestration
-source-git-commit: 8701afe345f0eeed1503e4765d4715398823b102
+source-git-commit: 4d5505cbb46bdff846218bfc3657c6a6e5447af3
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 2%
@@ -28,7 +28,10 @@ Alla aktiviteter beskrivs i avsnitten nedan:
 
 >[!NOTE]
 >
->Beroende på licensmodell, behörighet och implementering kan olika aktiviteter förekomma.
+>* Beroende på licensmodell, behörighet och implementering kan olika aktiviteter förekomma.
+>
+>* Antalet aktiviteter i en orkestrerad kampanj är begränsat till 500.
+
 
 ## Målinriktade aktiviteter {#targeting}
 
@@ -48,7 +51,9 @@ Tillgängliga målinriktningsaktiviteter är:
 
 ## Kanalaktiviteter {#channel}
 
-Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i flera kanaler. Ni kan kombinera kanalaktiviteter på arbetsytan för att skapa flerkanaliga samordnade kampanjer som kan utlösa åtgärder baserat på kundbeteende. Följande **kanalaktiviteter** är tillgängliga: E-post och SMS. [Lär dig hur du skapar en kanalåtgärd i samband med en orkestrerad kampanj](channels.md).
+Med Adobe Journey Optimizer kan ni automatisera och genomföra marknadsföringskampanjer i flera kanaler. Du kan kombinera [kanalaktiviteter](channels.md) på arbetsytan för att skapa en flerkanalig orkestrerad kampanj som kan utlösa åtgärder baserat på kundbeteende.
+
+Lär dig hur du [skapar en kanalåtgärd i en orkestrerad kampanj](channels.md).
 
 ## Flödeskontrollaktiviteter {#flow-control}
 
