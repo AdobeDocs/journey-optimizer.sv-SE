@@ -10,9 +10,9 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: ddeb3512fbe1d1de86456fe2c3ccd2b3805b5684
+source-git-commit: eb5c9c949b89406cfe62f136bd6a52ab2692b6e4
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,36 @@ Vilka experiment som är tillgängliga beror på din konfiguration:
 
 * **För användare som endast har Adobe Target**: Alla A/B-aktiviteter i målorganisationen inkluderas i produktionssandlådan för Journey Optimizer.
 
-Om du vill använda **[!UICONTROL Journey Optimizer Experimentation Accelerator]** måste du ha åtkomst till sandlådan och följande relaterade behörighet.
+Om du vill använda **[!UICONTROL Journey Optimizer Experimentation Accelerator]** måste du ha tillgång till sandlådan och följande relaterade behörighet:
+
+* **[!UICONTROL View Experiments]**
+* **[!UICONTROL Manage Experiment Metada]**
+
++++ Lär dig hur du tilldelar Experimentatrelaterade behörigheter
+
+1. Gå till fliken **[!DNL Permissions]** i **[!UICONTROL Roles]**-produkten och välj önskad **[!UICONTROL Role]**.
+
+1. Klicka på **[!UICONTROL Edit]** om du vill ändra behörigheterna.
+
+1. Lägg till resursen **[!UICONTROL Experiment accelerator]** och välj sedan **[!UICONTROL View Experiments]** och/eller **[!UICONTROL Manage Experiment Metada]** i listrutan.
+
+   ![](assets/permissions-experiment.png)
+
+1. Klicka på **[!UICONTROL Save]** om du vill använda ändringarna.
+
+Alla användare som redan har tilldelats den här rollen får sina behörigheter automatiskt uppdaterade.
+
+Så här tilldelar du rollen till nya användare:
+
+1. Navigera till fliken **[!UICONTROL Users]** i rollkontrollpanelen och klicka på **[!UICONTROL Add User]**.
+
+1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **[!UICONTROL Save]**.
+
+   Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+
+Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
+
++++
 
 <!--table style="table-layout:fixed"><tr style="border: 0;">
 <td><img alt="Overview" href="experiment-accelerator-overview.md" src="assets/do-not-localize/experiments-2.jpeg">
