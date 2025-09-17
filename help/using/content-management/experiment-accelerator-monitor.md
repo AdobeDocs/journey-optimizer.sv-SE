@@ -158,7 +158,7 @@ Observera att du först måste [bekräfta hypotes- och behandlingsinformation](#
 
    För experiment som kommer från **[!DNL Adobe Target]** läses de föreslagna ändringarna in i **[!DNL Adobe Target]** s experimenteringsarbetsflöde.
 
-   ➡️ [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
+   ➡️ [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/sv/docs/target/using/activities/abtest/test-ab)
 
 1. I expertvyn är samma AI **[!UICONTROL Experimentation Opportunities]** som upplevs av Journey Optimizer Experimentation Accelerator tillgänglig.
 
