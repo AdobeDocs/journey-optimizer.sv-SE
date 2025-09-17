@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator metrics
+title: Journey Optimizer Experimentation Accelerator metrics
 description: Förbättra er förmåga att utföra experiment effektivt och generera insikter
 feature: Experimentation
 topic: Content Management
@@ -10,9 +10,9 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: c28a322ec13de2a23ab5cffb4785b14425e4e6e9
+source-git-commit: ddeb3512fbe1d1de86456fe2c3ccd2b3805b5684
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-* [Kom igång med Experimentation Accelerator](experiment-accelerator.md)
-* [Dataanvändning i AI med Experimentation Accelerator](experiment-accelerator-security.md)
-* [Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
+* [Kom igång med Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
+* [Dataanvändning i AI med Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
+* [Journey Optimizer Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
 * [Monitor Experiments](experiment-accelerator-monitor.md)
 * **[Experimentationsmått](experiment-accelerator-metrics.md)**
 

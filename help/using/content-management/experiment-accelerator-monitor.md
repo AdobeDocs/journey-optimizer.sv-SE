@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator monitor
+title: Journey Optimizer Experimentation Accelerator monitor
 description: Förbättra er förmåga att utföra experiment effektivt och generera insikter
 feature: Experimentation
 topic: Content Management
@@ -10,9 +10,9 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: c28a322ec13de2a23ab5cffb4785b14425e4e6e9
+source-git-commit: ddeb3512fbe1d1de86456fe2c3ccd2b3805b5684
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-* [Kom igång med Experimentation Accelerator](experiment-accelerator.md)
-* [Dataanvändning i AI med Experimentation Accelerator](experiment-accelerator-security.md)
-* [Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
+* [Kom igång med Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
+* [Dataanvändning i AI med Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
+* [Journey Optimizer Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
 * **[Bildskärmsexperiment](experiment-accelerator-monitor.md)**
 * [Experimentationsmått](experiment-accelerator-metrics.md)
 
@@ -135,11 +135,11 @@ Observera att du först måste [bekräfta hypotes- och behandlingsinformation](#
 
    ![](assets/experiment-monitor-opportunities.png)
 
-1. Om du väljer en affärsmöjlighet öppnas fönstret **Affärsinformation**, som visar en specifik behandling eller variant som föreslås av Experimentation Accelerator. Den här vyn innehåller:
+1. Om du väljer en affärsmöjlighet öppnas fönstret **Affärsinformation**, som visar en specifik behandling eller variant som föreslås av Journey Optimizer Experimentation Accelerator. Den här vyn innehåller:
 
    * **[!UICONTROL Hypothesis]**: En AI-genererad hypotes som förklarar det förväntade resultatet av den föreslagna behandlingen.
 
-   * **[!UICONTROL Rationale]**: En förklaring till varför Experimentation Accelerator föreslog den här möjligheten.
+   * **[!UICONTROL Rationale]**: En förklaring till varför Journey Optimizer Experimentation Accelerator föreslog den här möjligheten.
 
    * **[!UICONTROL Opportunity evaluation]**: En dubbel utvärdering av rekommendationen baserad på:
 
@@ -158,9 +158,9 @@ Observera att du först måste [bekräfta hypotes- och behandlingsinformation](#
 
    För experiment som kommer från **[!DNL Adobe Target]** läses de föreslagna ändringarna in i **[!DNL Adobe Target]** s experimenteringsarbetsflöde.
 
-   ➡️ [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/sv/docs/target/using/activities/abtest/test-ab)
+   ➡️ [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
 
-1. I expertvyn är samma AI **[!UICONTROL Experimentation Opportunities]** som upplevs av Experimentation Accelerator tillgänglig.
+1. I expertvyn är samma AI **[!UICONTROL Experimentation Opportunities]** som upplevs av Journey Optimizer Experimentation Accelerator tillgänglig.
 
    Välj **[!UICONTROL View]** för att öppna affärsmöjlighetsinformationen.
 

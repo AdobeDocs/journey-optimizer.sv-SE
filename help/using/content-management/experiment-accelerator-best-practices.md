@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Experimentation Accelerator bästa praxis
+title: Journey Optimizer Experimentation Accelerator bästa praxis
 description: Förbättra er förmåga att utföra experiment effektivt och generera insikter
 feature: Experimentation
 topic: Content Management
@@ -10,20 +10,20 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: 50dcdd30e21fe1b12d502a2b9c478f4ceb546c49
+source-git-commit: ddeb3512fbe1d1de86456fe2c3ccd2b3805b5684
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Experimentation Accelerator bästa praxis {#content-experiment-best-practices}
+# Journey Optimizer Experimentation Accelerator bästa praxis {#content-experiment-best-practices}
 
 >[!BEGINSHADEBOX]
 
-* [Kom igång med Experimentation Accelerator](experiment-accelerator.md)
-* **[Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)**
-* [Integritet, säkerhet och styrning i Experimentation Accelerator](experiment-accelerator-security.md)
+* [Kom igång med Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
+* **[Journey Optimizer Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)**
+* [Integritet, säkerhet och styrning i Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
 * [Övervaka experiment](experiment-accelerator-monitor.md)
 * [Experimentationsmått](experiment-accelerator-metrics.md)
 
@@ -98,11 +98,11 @@ Exempel: _Vi tror att X-ändringar kommer att öka med Y på grund av Z._
 Ett bra experiment ger inte bara en vinst, det ger en tydlig och åtgärdbar inlärning.
 Här kan du söka efter:
 
-&check; **Statistisk konfidens**: Det är osannolikt att skillnaden mellan varianter beror på en chans.
-&check; **Justering med mål**: Det primära måttet visar meningsfulla framsteg mot ett affärsmål.
-&check; **Sekundär effekt**: Inga signifikanta negativa biverkningar på relaterade mått.
-&check; **Scalability**: Resultatet kan informera framtida beslut eller vara generaliserat till andra områden.
-&check; **Clarity**: Orsaken till resultatet är relativt isolerad och förstådd.
+&amp;check; **Statistisk konfidens**: Det är osannolikt att skillnaden mellan varianter beror på en chans.
+&amp;check; **Justering med mål**: Det primära måttet visar meningsfulla framsteg mot ett affärsmål.
+&amp;check; **Sekundär effekt**: Inga signifikanta negativa biverkningar på relaterade mått.
+&amp;check; **Scalability**: Resultatet kan informera framtida beslut eller vara generaliserat till andra områden.
+&amp;check; **Clarity**: Orsaken till resultatet är relativt isolerad och förstådd.
 
 Experimentation handlar inte bara om att hitta den&quot;bästa&quot; versionen, utan också om att bygga upp kunskap genom testning och iteration. När det är klart avslöjar experiment insikter som driver smartare beslut, bättre användarupplevelser och förbättrade resultat.
 
