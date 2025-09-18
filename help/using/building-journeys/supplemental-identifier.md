@@ -3,7 +3,7 @@ title: Använd tilläggsidentifierare under resor
 description: Lär dig hur du använder tilläggsidentifierare under resor.
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
 version: Journey Orchestration
-source-git-commit: 4ce48f7929aa218908e8a1e25c37410c6ded6bde
+source-git-commit: 6c23b920787a1b39d60b397e9c74094695e59295
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 0%
@@ -255,4 +255,4 @@ I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på 
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
