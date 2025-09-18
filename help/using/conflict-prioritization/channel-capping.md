@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
-source-git-commit: 43fe7ca22a7685944b2b11ca3d1872641d1f4694
+source-git-commit: 64228dfbd0e8c2884df179767d0ec9fe13d6fdf6
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Genom att utnyttja kanalregeluppsättningar kan ni ange frekvensbegränsning eft
 
 >[!IMPORTANT]
 >
->Se till att du väljer namnutrymmet med högst prioritet när du skapar en kampanj eller resa, så att du kan vara säker på att kanalnivåappningen fungerar som den ska. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+>Se till att du väljer namnutrymmet med högst prioritet när du skapar en kampanj eller resa, så att du kan vara säker på att kanalnivåappningen fungerar som den ska. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 ## Skapa en regel för kanalbegränsning
 
@@ -65,25 +65,20 @@ Så här skapar du en kanalregeluppsättning:
 
    Räknaren för varje period har följande förfallodatum:
 
-   * **[!UICONTROL Hourly]** - Frekvensgränsen gäller för det valda antalet timmar (minst 3 timmar). Räknaren återställs automatiskt i början av varje tidsfönster. För en 3- timmars frekvensbegränsning återställs den var 3: e timme, vilket sammanfaller med slutet av en UTC-timme.
-
-     >[!AVAILABILITY]
-     >
-     >Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta kundtjänst för att aktivera det.
-
+   * **[!UICONTROL Hourly]** - Frekvensgränsen är giltig för det valda antalet timmar. Räknaren återställs automatiskt i början av varje tidsfönster. För en timmes frekvensbegränsning återställs den varje timme, vilket sammanfaller med slutet av en UTC-timme.
    * **[!UICONTROL Daily]** - Den dagliga frekvensen är giltig för dagen till 23:59:59 UTC och återställs till 0 i början av nästa dag.
    * **[!UICONTROL Weekly]** - Frekvensgränsen gäller till och med lördag 23:59:59 UTC den veckan när kalenderveckan börjar på söndag. Utgångsdatumet gäller oavsett när regeln skapades. Om regeln till exempel skapas på torsdag gäller den till lördag den 23:59:59.
    * **[!UICONTROL Monthly]** - Frekvensbegränsningen gäller till den sista dagen i månaden vid 23:59:59 UTC. Månadsförfallodatumet för januari är till exempel 01-31 23:59:59 UTC.
 
    >[!IMPORTANT]
    >
-   >* För att vara säker på att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
+   >* För att vara säker på att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
    >
    >* Profilräknarens värde uppdateras när kommunikationen har levererats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt). Detta gäller om en mottagare får två kommunikationer nära ihop. Vi föreslår att kommunikationen ska hållas isär med minst två timmar om det är möjligt, så att mottagaren får tillräckligt med tid för att kunna ta emot kommunikationen och räkningsvärdet för att kunna uppdatera den.
 
 1. I fältet **[!UICONTROL Every]** kan du upprepa reglerna för frekvensbegränsning för flera timmar, dagar, veckor eller månader, beroende på den angivna varaktigheten. Exempel: använd regeln för frekvensbegränsning i 2 veckor.
 
-   Se till att du anger ett värde som matchar den valda varaktighetstypen: 3-23 för timme, 1-30 för dag, 1-4 för vecka och 1-3 för månad.
+   Se till att du anger ett värde som matchar den valda varaktighetstypen: 1-23 för timme, 1-30 för dag, 1-4 för vecka och 1-3 för månad.
 
    Räknaren återställs automatiskt till 0 när ett nytt tidsfönster börjar. För en 2 dagars frekvensbegränsning sker denna återställning varannan dag vid midnatt UTC.
 
@@ -166,4 +161,4 @@ In this scenario, an individual profile:
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
