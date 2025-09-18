@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: de338bcbd73b94ac004ee39106e50fe707afb19a
+source-git-commit: 4ce48f7929aa218908e8a1e25c37410c6ded6bde
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2694'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 
 ## Webbläsare som stöds {#browsers}
@@ -69,7 +69,7 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] [webbkampanjer](../web/get-started-web.md) har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
-Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ### Kodbaserade kanalgarantier {#code-based-guardrails}
 
@@ -196,29 +196,10 @@ Du kan välja mellan följande två lösningar:
 
 * Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
 
-### Uppdatera profil {#update-profile-g}
 
-Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**. De visas på [den här sidan](../building-journeys/update-profiles.md).
+### Ytterligare identifierare {#supplemental}
 
-### Läs målgrupp {#read-segment-g}
-
-Följande skyddsutkast gäller för [Läs målgruppsaktiviteten](../building-journeys/read-audience.md):
-
-* Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
-* För resor som använder en **Läs målgrupp**-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med **Läs målgrupp**, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tid genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter.
-* Det går inte att använda aktiviteten **Läs målgrupp** med Adobe Campaign-aktiviteter.
-* Aktiviteten **Läs målgrupp** kan bara användas som en första aktivitet i en resa, efter en affärshändelseaktivitet.
-* En resa kan bara ha en **Läs målgrupp**-aktivitet.
-* Se även rekommendationer om hur du använder aktiviteten **Läs målgrupp** på [den här sidan](../building-journeys/read-audience.md).
-* Återförsök används som standard på målgruppsinlösta resor (med början från en **Läs målgrupp** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden.
-
-Se även [den här sidan](../building-journeys/read-audience.md#must-read).
-
-### Målgruppskvalifikation {#audience-qualif-g}
-
-Följande skyddsutkast gäller för [Målgruppskvalificering](../building-journeys/audience-qualification-events.md)-reseaktiviteten:
-
-* Det går inte att använda aktiviteten Audience-kvalificering med Adobe Campaign-aktiviteter.
+Särskilda skyddsräcken gäller för användningen av kompletterande identifierare under resor. De listas på [den här sidan](../building-journeys/supplemental-identifier.md#guardrails)
 
 ### Uttrycksredigerare {#expression-editor}
 
@@ -227,8 +208,23 @@ Följande skyddsutkast gäller för [reseuttrycksredigeraren](../building-journe
 * Det går inte att använda fältgrupper för upplevelsehändelser på resor som börjar med en läsare, en målgrupp eller en affärshändelseaktivitet. Du måste skapa en ny målgrupp och använda ett `inaudience`-villkor under resan.
 * `timeSeriesEvents`-attribut kan inte användas i uttrycksredigeraren. Skapa en ny fältgrupp baserad på ett `XDM ExperienceEvent`-schema för att få åtkomst till Experience Events på profilnivå.
 
+### Reseverksamhet {#activities}
 
-### Aktivitet i appen {#in-app-activity-limitations}
+#### Målgruppskvalificeringsaktivitet {#audience-qualif-g}
+
+Följande skyddsutkast gäller för [Målgruppskvalificering](../building-journeys/audience-qualification-events.md)-reseaktiviteten:
+
+* Det går inte att använda aktiviteten Audience-kvalificering med Adobe Campaign-aktiviteter.
+* Kompletterande identifierare stöds inte för kundkvalificeringsresor.
+
+#### Kampanjaktiviteter {#ac-g}
+
+Följande skyddsförslag gäller för **[!UICONTROL Campaign v7/v8]**- och **[!UICONTROL Campaign Standard]**-aktiviteterna:
+
+* Adobe Campaign-aktiviteter kan inte användas med en läs- eller målgruppsaktivitet.
+* Kampanjaktiviteter kan inte användas med andra kanalaktiviteter: kort, kodbaserad upplevelse, e-post, push, SMS, meddelanden i appen, webb.
+
+#### Aktivitet i appen {#in-app-activity-limitations}
 
 Följande skyddsutkast gäller för åtgärden **[!UICONTROL In-app message]**. Läs mer om meddelanden i appen på [den här sidan](../in-app/create-in-app.md).
 
@@ -248,16 +244,28 @@ Följande skyddsutkast gäller för åtgärden **[!UICONTROL In-app message]**. 
 
 * Innehållets storlek för meddelanden i appen är begränsad till 2 MB. Om du inkluderar stora bilder kan det försvåra publiceringsprocessen.
 
-### Hoppaktivitet {#jump-g}
+#### Hoppaktivitet {#jump-g}
 
 Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Jump]**. De visas på [den här sidan](../building-journeys/jump.md#jump-limitations).
 
-### Kampanjaktiviteter {#ac-g}
+#### Läs målgruppsaktivitet {#read-segment-g}
 
-Följande skyddsförslag gäller för **[!UICONTROL Campaign v7/v8]**- och **[!UICONTROL Campaign Standard]**-aktiviteterna:
+Följande skyddsutkast gäller för [Läs målgruppsaktiviteten](../building-journeys/read-audience.md):
 
-* Adobe Campaign-aktiviteter kan inte användas med en läs- eller målgruppsaktivitet.
-* Kampanjaktiviteter kan inte användas med andra kanalaktiviteter: kort, kodbaserad upplevelse, e-post, push, SMS, meddelanden i appen, webb.
+* Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
+* För resor som använder en **Läs målgrupp**-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med **Läs målgrupp**, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tid genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter.
+* Det går inte att använda aktiviteten **Läs målgrupp** med Adobe Campaign-aktiviteter.
+* Aktiviteten **Läs målgrupp** kan bara användas som en första aktivitet i en resa, efter en affärshändelseaktivitet.
+* En resa kan bara ha en **Läs målgrupp**-aktivitet.
+* Se även rekommendationer om hur du använder aktiviteten **Läs målgrupp** på [den här sidan](../building-journeys/read-audience.md).
+* Återförsök används som standard på målgruppsinlösta resor (med början från en **Läs målgrupp** eller en **affärshändelse**) när exportjobbet hämtas. Om ett fel inträffar när exportjobbet skapas görs nya försök var 10:e minut (max 1 timme). Efter det kommer vi att betrakta det som ett misslyckande. Dessa typer av resor kan därför utföras upp till en timme efter den schemalagda tiden.
+* För resor som använder extra ID:n är läsfrekvensen för läsmålgruppsaktiviteten för varje reseinstans begränsad till högst 500 profiler per sekund.
+
+Se även [den här sidan](../building-journeys/read-audience.md#must-read).
+
+#### Uppdatera profilaktivitet {#update-profile-g}
+
+Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**. De visas på [den här sidan](../building-journeys/update-profiles.md).
 
 ## Garantier för kampanjsamordning {#orchestration-guardrails}
 
