@@ -10,7 +10,7 @@ level: Intermediate
 badge: label="Privat beta" type="Informative"
 hidefromtoc: true
 hide: true
-source-git-commit: 9155a16a0557a32c1d59b66b03fc84c5bc7b8463
+source-git-commit: 53d8fbb28e8516e4ee79f556a335b2d084af42e7
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 1%
@@ -28,13 +28,7 @@ ht-degree: 1%
 
 När du återger innehåll för simulering eller korrektur analyserar systemet innehållet och identifierar alla personaliseringstoken och förgreningsregler. Det ersätter personaliseringstoken med meningsfulla värden som ger en nästan realistisk förhandsvisning av det slutliga innehållet.
 
-Överväg en e-postmall för finansiella tjänster med förgreningslogik baserad på **investerartyp**, **åldersgrupp**, **civilstånd**, **verifiering av skatte-ID** och **plats**.
-
-Utan variantgenerering måste du skapa dussintals varianter manuellt för att validera alla sökvägar. Med autogenererade varianter skapar systemet representativa varianter som automatiskt täcker dessa förhållanden.  Varje genererad variant återges i förhandsgranskningsfönstret och visar exakt vilka block och villkor som används.
-
->[!NOTE]
->
->Den här funktionen fungerar på samma sätt som funktionen för simulering av innehållsvariationer. Mer information om simuleringar av innehållsvariationer och tillhörande skyddsutkast och begränsningar finns i det här avsnittet: [Simulera innehållsvariationer](../test-approve/simulate-sample-input.md)
+Överväg en e-postmall för finansiella tjänster med förgreningslogik baserad på **investerartyp**, **åldersgrupp**, **civilstånd**, **verifiering av skatte-ID** och **plats**. Utan variantgenerering måste du skapa dussintals varianter manuellt för att validera alla sökvägar. Med autogenererade varianter skapar systemet representativa varianter som automatiskt täcker dessa förhållanden.  Varje genererad variant återges i förhandsgranskningsfönstret och visar exakt vilka block och villkor som används.
 
 ## Generera innehållsvarianter
 
@@ -51,3 +45,7 @@ Följ de här stegen för att generera variationer för ditt innehåll och förh
 3. [!DNL Journey Optimizer] genererar automatiskt varianter baserat på identifierade attribut.
 
 4. Granska listan över genererade varianter i den vänstra rutan och välj en variant för att se den anpassade återgivningen i förhandsgranskningsfönstret.
+
+>[!NOTE]
+>
+>Den här funktionen fungerar på samma sätt som funktionen för simulering av innehållsvariationer. Mer information om simuleringar av innehållsvariationer och tillhörande skyddsutkast och begränsningar finns i det här avsnittet: [Simulera innehållsvariationer](../test-approve/simulate-sample-input.md)
