@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 59a6413fb111c3ac595416d8e5933b981bc64d3c
+source-git-commit: abb1da09160cd5454460588242c475b85f4adf6b
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1540'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 23-24 september 2025
 
@@ -77,13 +77,13 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Journey Agent</strong><br/></th>
+<th><strong>Journey Agent är här!</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med Journey Agent kan Journey Optimizer-användare skapa, analysera och optimera resor med ett naturligt språkgränssnitt. Med Journey Agent kan man snabbt hitta och lösa schemaläggnings- och målgruppskonflikter, analysera prestanda och bortfall samt identifiera högpresterande resor som kan återskapas för framtida kampanjer.</p>
+<p>AI Assistant innehåller nu grundläggande Journey Agent-kunskaper för Journey Optimizer, vilket gör det möjligt för lärarna att analysera resor via ett naturligt språkgränssnitt. Med dessa nya kunskaper kan användare analysera och skapa (snart kommer) resor för att upptäcka och lösa potentiella schemaläggnings- eller målgruppskonflikter.</p>
 </td>
 </tr>
 </tbody>
@@ -110,6 +110,24 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Anpassade formulär för landningssida</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med [!DNL Journey Optimizer] kan du nu hämta profilattribut via dina landningssidor.</p>
+<p>Skapa, designa och hantera anpassade formulär som är skräddarsydda efter era behov utifrån en specifik datamängd. Du kan sedan använda dessa formulär på landningssidor för att lägga till de profilattribut du väljer i datauppsättningen som definieras för varje formulär.</p>
+<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
+<!--p><img src="assets/do-not-localize/forms.gif"/></p>
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p-->
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
