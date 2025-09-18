@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Resor
 description: Resor
 redpen-status: CREATED_||_2025-08-11_20-21-13
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+exl-id: c148c9e8-8b1d-4c64-8bb6-dc86898cb672
+source-git-commit: 21364f17c8a09d564e97cfc5f29f742dd8f32f4a
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
-
 
 # Resor{#section-overview}
 
@@ -20,7 +20,7 @@ Med resor i Adobe Journey Optimizer kan ni skapa personaliserade kundresor i fle
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med Adobe Journey Optimizer Journeys
 
@@ -30,7 +30,7 @@ Lär dig skapa flerstegskunder i realtid med Adobe Journey Optimizer intuitiva d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Omfattande guide till att skapa och hantera resor
 
@@ -40,7 +40,7 @@ Stegvisa riktlinjer för att utforma, testa, publicera och spåra kundresor för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Omfattande guide till resehantering
 
@@ -50,7 +50,7 @@ Hantera kundresor effektivt med verktyg för filtrering, profilhantering, tidszo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Verksamheter i Adobe Journey Optimizer
 
@@ -60,7 +60,7 @@ Upptäck hur ni konfigurerar och använder aktiviteter som triggers, beslutssteg
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Skapa uttryck i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Masteruttryck för dynamiska arbetsflöden, datamanipulering och avancerad reses
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Exempel på praktisk användning för Adobe Journey Optimizer
 
@@ -85,3 +85,7 @@ Utforska verkliga program i Adobe Journey Optimizer, inklusive meddelanden i fle
 ## Ytterligare resurser
 
 - **[Felsökning av kundresor](troubleshoot-journey-landing-page.md)** - Diagnostisera och åtgärda problem med körning av resor med verktyg, felkoder och bästa praxis för felsökning och optimering.
+
+- **[Prenumerera på researney Alerts](../using/reports/alerts.md)** - Upptäck hur du hanterar systemaviseringar, prenumererar på aviseringar och felsöker problem under resor och kampanjer.
+
+
