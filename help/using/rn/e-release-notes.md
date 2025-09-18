@@ -7,7 +7,7 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: abb1da09160cd5454460588242c475b85f4adf6b
+source-git-commit: 87406499a11060bceffd2709b7a907b97d72c8a9
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 23-24 september 2025
 
@@ -235,8 +235,8 @@ Ett alternativ lades till när en godkännandeprincip skapades eller ställdes i
 
   Om du vill anpassa e-postadressen för att avbryta prenumerationen ytterligare kan du nu definiera anpassade attribut som läggs till i medgivandehändelsen. Den här funktionen har redan varit tillgänglig för den anpassade länken för att avbryta prenumerationen med ett enda klick sedan den 25 augusti.
 
-- **mTLS-stöd för SMS BYOP**\
-  När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktivera gemensam TLS-autentisering (mTLS), vilket kräver att både klienten och servern bekräftar varandras identiteter innan en säker anslutning upprättas.
+- ***mTLS-stöd för SMS-kanal**
+När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktivera gemensam TLS-autentisering (mTLS), vilket kräver att både klienten och servern bekräftar varandras identiteter innan en säker anslutning upprättas.
 
 - **Modellbaserade scheman**\
   För en tydligare och mer intuitiv upplevelse kallas nu Relationsscheman för modellbaserade scheman i samordnade kampanjer.
