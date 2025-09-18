@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 87406499a11060bceffd2709b7a907b97d72c8a9
+source-git-commit: 2ebdb37b390988941f29a5e6ecfe147984450d51
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1548'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 23-24 september 2025
 
@@ -58,6 +58,22 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tr>
 </tbody>
 </table-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Övervakning och rapportering av anpassade åtgärder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Övervakning och rapportering av anpassade åtgärder är nu tillgängligt. Den här funktionen ger bättre synlighet när det gäller hälsa och utförande av resan, inklusive livscykelstatus och prestandavarningar. Nu kan ni snabbt förstå när, var och varför en onormal situation inträffar i en anpassad åtgärd.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 <table>
 <thead>
@@ -246,9 +262,6 @@ När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktive
 
 - **Simulera innehållsvariationer för alla inkommande kanaler**\
   Tidigare var det bara tillgängligt för meddelandekanalerna för e-post, SMS och push. Nu gäller även simulering av innehållsvarianter för alla inkommande kanaler.
-
-- **Övervakning och rapportering av anpassade åtgärder**\
-  Den här funktionen ger bättre synlighet när det gäller hälsa och utförande av resan, inklusive livscykelstatus och prestandavarningar. Nu kan ni snabbt förstå när, var och varför en onormal situation inträffar i en anpassad åtgärd.
 
 - **Webkrok-stöd för API-utlösta kampanjer**\
   API-utlösta kampanjer har nu stöd för webhooks. Konfigurera en webkros-URL för att få statusuppdateringar i realtid för varje meddelande, vilket förbättrar observerbarheten och möjliggör smidig övervakning och automatisering.
