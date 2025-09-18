@@ -11,9 +11,9 @@ keywords: landning, landningssida, skapande, sida, formulär
 badge: label="Begränsad tillgänglighet" type="Informative"
 hidefromtoc: true
 hide: true
-source-git-commit: dc47da081601fdb019ffd98aa47803672fdef198
+source-git-commit: 67283fe92282ce23c97c29fa2c0ad78132cc184a
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor 
 >id="ajo_lp_form_connection"
 >title="Markera den slutpunkt som ska användas"
 >abstract="Definiera slutpunkten för direktuppspelning där data skickas när formuläret skickas."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_dataset"
@@ -68,7 +68,7 @@ När du skapar en förinställning:
 
    >[!NOTE]
    >
-   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
 
 1. Välj en **[!UICONTROL Dataset]** att länka till formuläret. Här lagras och speglas formulärsvaren. Du kan skriva för att söka efter en viss datauppsättning eller välja den i listan.
 
@@ -85,6 +85,12 @@ Om du vill komma åt formulärlistan väljer du **[!UICONTROL Content Management
 Alla befintliga formulär visas. Du kan filtrera formulär baserat på deras status, skapandedatum eller ändringsdatum.
 
 ## Skapa och utforma ett formulär {#create-form}
+
+>[!CONTEXTUALHELP]
+>id="ajo_lp_form_preset"
+>title="Välj en förinställning"
+>abstract="Välj en fördefinierad förinställning som innehåller anslutningen som ska användas och en fördefinierad datauppsättning för formuläret."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
 
 Följ stegen nedan när du vill skapa ett formulär.
 
@@ -129,7 +135,7 @@ Följ stegen nedan när du vill skapa ett formulär.
 >[!CONTEXTUALHELP]
 >id="ajo_lp_forms_thankyou_page"
 >title="Tack"
->abstract="Konfigurera vad som ska hända när någon fyller i eller vidarebefordrar ett formulär."
+>abstract="Konfigurera vad som ska hända när någon fyller i eller vidarebefordrar formuläret."
 
 Konfigurera vad som ska hända när en användare fyller i formuläret i avsnittet **[!UICONTROL Thank you page]**.
 
