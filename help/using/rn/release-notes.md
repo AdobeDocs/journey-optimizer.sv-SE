@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 86522e2562d1504bb9a67836cfabccbe3fbda4c0
+source-git-commit: a05d7e022a0b154848405a6b5d27d399a24161db
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '3093'
 ht-degree: 1%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 1%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Information om förhandsversionen från september 2015 {#25-9-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 23-24 september 2025
 
@@ -103,7 +103,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p>AI Assistant innehåller nu grundläggande Journey Agent-kunskaper för Journey Optimizer, vilket gör det möjligt för lärarna att analysera resor via ett naturligt språkgränssnitt. Med dessa nya kunskaper kan användare analysera och skapa (snart kommer) resor för att upptäcka och lösa potentiella schemaläggnings- eller målgruppskonflikter.</p>
+<p>Journey Agent finns i Journey Optimizer med Adobe Experience Platform Agent Orchestrator. Det gör att ni kan analysera resor via ett naturligt språkgränssnitt. Agenten kommer att upptäcka målgrupper eller schemalägga konflikter och bortfall av profiler under en resa för att hjälpa er att vidta åtgärder för att lösa dem. Snart kan du skapa resor med äkta stöd.</p>
 </td>
 </tr>
 </tbody>
@@ -240,9 +240,12 @@ Ett alternativ lades till när en godkännandeprincip skapades eller ställdes i
 
 * **Nya reseaviseringar**\
   Det finns nya förkonfigurerade aviseringar för resor:
+
    * Frekvensen för ignorerade profiler överskreds: Profilförhållandet mellan ignorerade profiler och angivna profiler under de senaste 5 minuterna överskred tröskelvärdet.
    * Felfrekvens för anpassad åtgärd överskreds: Förhållandet mellan anpassade åtgärdsfel och lyckade HTTP-anrop under de senaste 5 minuterna överskred tröskelvärdet.
    * Profilfelsfrekvensen har överskridits: Profilernas felförhållande till de angivna profilerna under de senaste 5 minuterna överskred tröskelvärdet.
+
+  Du kan ändra tröskelvärden och prenumerera på enskilda varningar på resenivå jämfört med globalt.
 
 * **Kapslade JSON-body-parametrar stöds nu i anpassad autentisering**\
   När anpassad autentisering konfigureras för en anpassad åtgärd stöds nu kapslade JSON-objekt (t.ex. underobjekt inom `bodyParams`).
@@ -252,7 +255,7 @@ Ett alternativ lades till när en godkännandeprincip skapades eller ställdes i
 
   Om du vill anpassa e-postadressen för att avbryta prenumerationen ytterligare kan du nu definiera anpassade attribut som läggs till i medgivandehändelsen. Den här funktionen har redan varit tillgänglig för den anpassade länken för att avbryta prenumerationen med ett enda klick sedan den 25 augusti.
 
-* ***mTLS-stöd för SMS-kanal**
+* **mTLS-stöd för SMS-kanal**
 När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktivera gemensam TLS-autentisering (mTLS), vilket kräver att både klienten och servern bekräftar varandras identiteter innan en säker anslutning upprättas.
 
 * **Modellbaserade scheman**\
