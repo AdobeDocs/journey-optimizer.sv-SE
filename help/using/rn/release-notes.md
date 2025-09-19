@@ -6,7 +6,7 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 4765ec89dfee24227d13c5cb04595f63409186cb
+source-git-commit: dc2a984a093ee1bf5a856658d6c6f43c7d617823
 workflow-type: tm+mt
 source-wordcount: '3148'
 ht-degree: 1%
@@ -20,14 +20,14 @@ ht-degree: 1%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Information om förhandsversionen från september 2015 {#25-9-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 23-24 september 2025
 
@@ -236,64 +236,64 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 
 ### Förbättringar
 
-- **Behörigheter för godkännandeprincip**
+* **Behörigheter för godkännandeprincip**
 Ett alternativ lades till när en godkännandeprincip skapades eller ställdes in för att förhindra att de som skapar en resa/kampanj godkänner sina egna objekt.
 
-- **Nya reseaviseringar**\
+* **Nya reseaviseringar**\
   Det finns nya förkonfigurerade aviseringar för resor:
-   - Frekvensen för ignorerade profiler överskreds: Profilförhållandet mellan ignorerade profiler och angivna profiler under de senaste 5 minuterna överskred tröskelvärdet.
-   - Felfrekvens för anpassad åtgärd överskreds: Förhållandet mellan anpassade åtgärdsfel och lyckade HTTP-anrop under de senaste 5 minuterna överskred tröskelvärdet.
-   - Profilfelsfrekvensen har överskridits: Profilernas felförhållande till de angivna profilerna under de senaste 5 minuterna överskred tröskelvärdet.
+   * Frekvensen för ignorerade profiler överskreds: Profilförhållandet mellan ignorerade profiler och angivna profiler under de senaste 5 minuterna överskred tröskelvärdet.
+   * Felfrekvens för anpassad åtgärd överskreds: Förhållandet mellan anpassade åtgärdsfel och lyckade HTTP-anrop under de senaste 5 minuterna överskred tröskelvärdet.
+   * Profilfelsfrekvensen har överskridits: Profilernas felförhållande till de angivna profilerna under de senaste 5 minuterna överskred tröskelvärdet.
 
-- **Kapslade JSON-body-parametrar stöds nu i anpassad autentisering**\
+* **Kapslade JSON-body-parametrar stöds nu i anpassad autentisering**\
   När anpassad autentisering konfigureras för en anpassad åtgärd stöds nu kapslade JSON-objekt (t.ex. underobjekt inom `bodyParams`).
 
-- **Koppla fragment till beslutsobjekt**\
+* **Koppla fragment till beslutsobjekt**\
   Journey Optimizer ger nu möjlighet att bifoga fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer.
 
-- **Stöd för anpassade attribut med en klickning för att avbryta prenumeration på URL**\
+* **Stöd för anpassade attribut med en klickning för att avbryta prenumeration på URL**\
   Med Journey Optimizer kan du, om du hanterar samtycke utanför Adobe, ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
 
   Om du vill anpassa e-postadressen för att avbryta prenumerationen ytterligare kan du nu definiera anpassade attribut som läggs till i medgivandehändelsen. Den här funktionen har redan varit tillgänglig för den anpassade länken för att avbryta prenumerationen med ett enda klick sedan den 25 augusti.
 
-- ***mTLS-stöd för SMS-kanal**
+* ***mTLS-stöd för SMS-kanal**
 När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktivera gemensam TLS-autentisering (mTLS), vilket kräver att både klienten och servern bekräftar varandras identiteter innan en säker anslutning upprättas.
 
-- **Modellbaserade scheman**\
+* **Modellbaserade scheman**\
   För en tydligare och mer intuitiv upplevelse kallas nu Relationsscheman för modellbaserade scheman i samordnade kampanjer.
 
-- **Stöd för datauppsättningssökning på resor**\
+* **Stöd för datauppsättningssökning på resor**\
   En ny aktivitet på resorna, **Datauppsättningssökning**, gör att du kan hämta data dynamiskt från Adobe Experience Platform postdatamängder under körning. Genom att utnyttja den här funktionen kan ni få tillgång till data som kanske inte finns i profilen eller händelsens nyttolast, vilket säkerställer att era kundinteraktioner är både relevanta och aktuella.
 
-- **Simulera innehållsvariationer för alla inkommande kanaler**\
+* **Simulera innehållsvariationer för alla inkommande kanaler**\
   Tidigare var det bara tillgängligt för meddelandekanalerna för e-post, SMS och push. Nu gäller även simulering av innehållsvarianter för alla inkommande kanaler.
 
-- **Webkrok-stöd för API-utlösta kampanjer**\
+* **Webkrok-stöd för API-utlösta kampanjer**\
   API-utlösta kampanjer har nu stöd för webhooks. Konfigurera en webkros-URL för att få statusuppdateringar i realtid för varje meddelande, vilket förbättrar observerbarheten och möjliggör smidig övervakning och automatisering.
 
-- **Omdirigeringsstöd i anpassade åtgärder för resor**\
+* **Omdirigeringsstöd i anpassade åtgärder för resor**\
   Omdirigeringar (302) stöds nu i Anpassade åtgärder för resan.
 
-- **Högt genomströmningsläge för API-utlösta e-postkampanjer**\
+* **Högt genomströmningsläge för API-utlösta e-postkampanjer**\
   Nu finns det ett nytt högfrekvensläge tillgängligt i API-utlösta kampanjer. Det här läget är utformat för storskaliga meddelanden i realtid (upp till 5 000 transaktioner per sekund) och ger högre tillgänglighet med lägre latens.\
   Den här funktionen är endast tillgänglig för e-postkanalen, för organisationer som har köpt tillägget Adobe High-through transactional messaging. Kontakta Adobe om du vill ha mer information.
 
 
-- **Återställa begränsningsfrekvens per timme** - Du kan nu tillämpa begränsning per timme för kanalregeluppsättningar. Den här funktionen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer. Du kan välja en timme (tidigare 3 timmar). [Läs mer](../conflict-prioritization/channel-capping.md). Tillgänglighetsdatum: 17 september
+* **Återställa begränsningsfrekvens per timme** - Du kan nu tillämpa begränsning per timme för kanalregeluppsättningar. Den här funktionen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer. Du kan välja en timme (tidigare 3 timmar). [Läs mer](../conflict-prioritization/channel-capping.md). Tillgänglighetsdatum: 17 september
 
-- **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för fullständig URL-anpassning/basanpassning för fördefinierade domäner som accepteras av Adobe. [Läs mer](../personalization/personalization-build-expressions.md#where) <!--Availability date: September 12-->
+* **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för fullständig URL-anpassning/basanpassning för fördefinierade domäner som accepteras av Adobe. [Läs mer](../personalization/personalization-build-expressions.md#where) <!--Availability date: September 12-->
 
   >[!NOTE]
   >
   >Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder.
 
-- **Uttryck för regler för beslutsavgränsning** - Du kan nu skapa egna uttryck för att definiera tröskelvärdet för en begränsningsregel för ett beslutsobjekt. [Läs mer](../experience-decisioning/items.md#capping)
+* **Uttryck för regler för beslutsavgränsning** - Du kan nu skapa egna uttryck för att definiera tröskelvärdet för en begränsningsregel för ett beslutsobjekt. [Läs mer](../experience-decisioning/items.md#capping)
 
->[!NOTE]
->
->Den här funktionen är för närvarande tillgänglig som begränsad tillgänglighet för alla användare.
+  >[!NOTE]
+  >
+  >Den här funktionen är för närvarande tillgänglig som begränsad tillgänglighet för alla användare.
 
-- **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera på systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett konfigurationsfel för e-postkanal som använder den anpassade delegeringstypen inträffar. [Läs mer](../reports/alerts.md#alert-dns-record-missing)
+* **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera på systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett konfigurationsfel för e-postkanal som använder den anpassade delegeringstypen inträffar. [Läs mer](../reports/alerts.md#alert-dns-record-missing)
 
 
 ## Versionsinformation 25 augusti {#25-8-rn}
@@ -487,72 +487,72 @@ De nya funktionerna i den här versionen beskrivs nedan.
 
 Förbättringar i den här versionen visas nedan.
 
-&#x200B;* **Administration**
+* **Administration**
 
-   &#x200B;* **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera för att ta emot systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om <!--a channel configuration failure happens or if --> en DNS-post saknas. [Läs mer](../reports/alerts.md#alert-dns-record-missing)
+   * **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera för att ta emot systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om <!--a channel configuration failure happens or if --> en DNS-post saknas. [Läs mer](../reports/alerts.md#alert-dns-record-missing)
 
-&#x200B;* **AI-assistenten**
+* **AI-assistenten**
 
-   &#x200B;* **Innehållsgenerering på flera språk** - Innehållet kan nu genereras på franska, spanska, tyska, italienska, japanska, svenska, nederländska och norska. [Läs mer](../content-management/generative-uc.md#languages)
+   * **Innehållsgenerering på flera språk** - Innehållet kan nu genereras på franska, spanska, tyska, italienska, japanska, svenska, nederländska och norska. [Läs mer](../content-management/generative-uc.md#languages)
 
      Tillgänglighetsdatum: 25 augusti
 
 
-&#x200B;* **Kampanjer**
+* **Kampanjer**
 
-   &#x200B;* **Hastighetskontroll för utgående kampanjer** - Nu kan du aktivera hastighetskontroll för utgående kampanjer (e-post, SMS, push-meddelanden), så att du kan förhindra överbelastning i efterföljande system, som landningssidor eller kundtjänstplattformar. [Läs mer](../campaigns/campaign-schedule.md#rate-control)
+   * **Hastighetskontroll för utgående kampanjer** - Nu kan du aktivera hastighetskontroll för utgående kampanjer (e-post, SMS, push-meddelanden), så att du kan förhindra överbelastning i efterföljande system, som landningssidor eller kundtjänstplattformar. [Läs mer](../campaigns/campaign-schedule.md#rate-control)
 
-   &#x200B;* **Schemaläggning av åtgärdskampanjer** - Schemaläggaren för kampanjen dagligen, veckovis och månadsvis har uppdaterats för att ge mer detaljerad kontroll över återkommande scheman:
+   * **Schemaläggning av åtgärdskampanjer** - Schemaläggaren för kampanjen dagligen, veckovis och månadsvis har uppdaterats för att ge mer detaljerad kontroll över återkommande scheman:
 
-      &#x200B;* **Återkommande varje vecka**: Du kan nu välja att upprepa kampanjen varje vecka eller varannan vecka och välja vilka veckodagar den ska köras på.
+      * **Återkommande varje vecka**: Du kan nu välja att upprepa kampanjen varje vecka eller varannan vecka och välja vilka veckodagar den ska köras på.
 
-      &#x200B;* **Månadsvis återkommande**: Du kan nu välja att upprepa kampanjen varje månad eller varannan månad och välja den dag i månaden som den ska köras.
+      * **Månadsvis återkommande**: Du kan nu välja att upprepa kampanjen varje månad eller varannan månad och välja den dag i månaden som den ska köras.
 
-      &#x200B;* **Dagliga, veckovisa eller månadsvisa scheman**: Du kan ange om det återkommande schemat ska stoppas ett visst datum eller efter ett visst antal förekomster.
+      * **Dagliga, veckovisa eller månadsvisa scheman**: Du kan ange om det återkommande schemat ska stoppas ett visst datum eller efter ett visst antal förekomster.
 
-   &#x200B;* **Schemalagda transaktionsåtgärdskampanjer** - Schemalagda transaktionsåtgärdskampanjer är nu tillgängliga för sändning av batchbaserad, målgruppsbaserad transaktionskommunikation via e-post-, SMS- och push-kanaler.
+   * **Schemalagda transaktionsåtgärdskampanjer** - Schemalagda transaktionsåtgärdskampanjer är nu tillgängliga för sändning av batchbaserad, målgruppsbaserad transaktionskommunikation via e-post-, SMS- och push-kanaler.
 
-&#x200B;* **Kanal - Innehållskort**
+* **Kanal - Innehållskort**
 
-   &#x200B;* **Mallar för innehållskortslayout** - Innehållskortskanalen innehåller nu OTB-meddelandelayouter som effektiviserar redigeringsupplevelsen. Den här versionen innehåller layoutmallarna Liten bild, Stor bild och Endast bild. [Läs mer](../content-card/design-content-card.md)
+   * **Mallar för innehållskortslayout** - Innehållskortskanalen innehåller nu OTB-meddelandelayouter som effektiviserar redigeringsupplevelsen. Den här versionen innehåller layoutmallarna Liten bild, Stor bild och Endast bild. [Läs mer](../content-card/design-content-card.md)
 
-&#x200B;* **Kanal - tryck**
+* **Kanal - tryck**
 
-   &#x200B;* **Förfallodatum för push-meddelanden** - Nu kan du ange ett förfallodatum för varje push-meddelande, vilket förhindrar att tidskänsliga meddelanden (som Black Friday Sale) skickas efter ett visst datum, vilket förhindrar att dina kunder får en dålig upplevelse.
+   * **Förfallodatum för push-meddelanden** - Nu kan du ange ett förfallodatum för varje push-meddelande, vilket förhindrar att tidskänsliga meddelanden (som Black Friday Sale) skickas efter ett visst datum, vilket förhindrar att dina kunder får en dålig upplevelse.
 
-&#x200B;* **Kanal - SMS**
+* **Kanal - SMS**
 
-   &#x200B;* **Fuzzy Opt-out** - När alternativet **Fuzzy Opt-out** är aktiverat upptäcks inkommande meddelanden som liknar definierade avanmälningsnyckelord (t.ex. CANCIL) och ett bekräftelsemeddelande skickas automatiskt för att bekräfta användarens avanmälan. Om användaren bekräftar via den definierade uppmaningen, avbeställs prenumerationen. [Läs mer](../sms/sms-configuration-sinch.md)
+   * **Fuzzy Opt-out** - När alternativet **Fuzzy Opt-out** är aktiverat upptäcks inkommande meddelanden som liknar definierade avanmälningsnyckelord (t.ex. CANCIL) och ett bekräftelsemeddelande skickas automatiskt för att bekräfta användarens avanmälan. Om användaren bekräftar via den definierade uppmaningen, avbeställs prenumerationen. [Läs mer](../sms/sms-configuration-sinch.md)
 
      >[!NOTE]
      >
      >**Fuzzy Opt-out** är bara tillgängligt med Sinch och Infobip.
 
-   &#x200B;* **Verifiera SMS-anslutning** - Nu kan du enkelt testa och verifiera dina SMS API-autentiseringsuppgifter i Adobe Journey Optimizer genom att skicka ett exempelmeddelande till en angiven enhet. [Läs mer](../sms/sms-configuration-sinch.md)
+   * **Verifiera SMS-anslutning** - Nu kan du enkelt testa och verifiera dina SMS API-autentiseringsuppgifter i Adobe Journey Optimizer genom att skicka ett exempelmeddelande till en angiven enhet. [Läs mer](../sms/sms-configuration-sinch.md)
 
-&#x200B;* **Konfiguration**
+* **Konfiguration**
 
-   &#x200B;* **Stöd för anpassade attribut med en klickning för att avbryta prenumeration-URL** - Om du hanterar samtycke utanför Adobe kan du ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumeration i e-postkonfigurationen med ett enda klick. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
+   * **Stöd för anpassade attribut med en klickning för att avbryta prenumeration-URL** - Om du hanterar samtycke utanför Adobe kan du ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumeration i e-postkonfigurationen med ett enda klick. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
 
      Om du vill anpassa länken för att avbryta prenumerationen med ett klick ytterligare kan du nu definiera anpassade attribut som även läggs till i medgivandehändelsen. [Läs mer](../email/list-unsubscribe.md#custom-attributes)
 
-&#x200B;* **Datauppsättningar**
+* **Datauppsättningar**
 
-   &#x200B;* **Objektarkiv för Experience Decisioning - personaliserade erbjudandeobjekt** - Inbyggd exportdatauppsättning hämtar nu alla erbjudandeattribut och livscykelstatus, vilket möjliggör fullständig personalisering och rapportering. [Läs mer](../data/export-datasets.md)
+   * **Objektarkiv för Experience Decisioning - personaliserade erbjudandeobjekt** - Inbyggd exportdatauppsättning hämtar nu alla erbjudandeattribut och livscykelstatus, vilket möjliggör fullständig personalisering och rapportering. [Läs mer](../data/export-datasets.md)
 
-   &#x200B;* Introducerade versionskontroll via fältet `etag` för att förbättra konsekvensen och spåra ändringar av erbjudandeobjekt mer tillförlitligt.
+   * Introducerade versionskontroll via fältet `etag` för att förbättra konsekvensen och spåra ändringar av erbjudandeobjekt mer tillförlitligt.
 
-&#x200B;* **Beslut**
+* **Beslut**
 
-   &#x200B;* **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer. Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder. [Läs mer](../experience-decisioning/create-decision.md#fragments)
+   * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer. Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder. [Läs mer](../experience-decisioning/create-decision.md#fragments)
 
-&#x200B;* **Resor**
+* **Resor**
 
-   &#x200B;* **Resemassåtgärder** - I listan över dina resor kan du nu välja flera objekt. När du har valt det här alternativet kan du pausa eller återuppta upp till 10 resor i taget.
+   * **Resemassåtgärder** - I listan över dina resor kan du nu välja flera objekt. När du har valt det här alternativet kan du pausa eller återuppta upp till 10 resor i taget.
 
-   &#x200B;* **Stöd för omdirigering (302) i anpassade åtgärder** - Anpassade åtgärder kan nu hantera HTTP 302-omdirigeringar per begäran. På så sätt kan resor integreras med API:er som omdirigerar begäranden till lokaliserade eller regionspecifika URL:er. Omdirigeringar utförs automatiskt så att rätt innehåll levereras utan extra konfiguration.
+   * **Stöd för omdirigering (302) i anpassade åtgärder** - Anpassade åtgärder kan nu hantera HTTP 302-omdirigeringar per begäran. På så sätt kan resor integreras med API:er som omdirigerar begäranden till lokaliserade eller regionspecifika URL:er. Omdirigeringar utförs automatiskt så att rätt innehåll levereras utan extra konfiguration.
 
-   &#x200B;* **Flera inkommande åtgärder under resor** - För att förenkla din resesamordning kan du nu definiera flera inkommande åtgärder under en enskild resa. Den här funktionen, som tidigare fanns i kampanjer, gör att ni kan leverera flera kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, och varje åtgärd innehåller ett visst innehåll. [Läs mer](../building-journeys/journey-action.md#multi-action)
+   * **Flera inkommande åtgärder under resor** - För att förenkla din resesamordning kan du nu definiera flera inkommande åtgärder under en enskild resa. Den här funktionen, som tidigare fanns i kampanjer, gör att ni kan leverera flera kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, och varje åtgärd innehåller ett visst innehåll. [Läs mer](../building-journeys/journey-action.md#multi-action)
 
 ## Kampanjsamordning
 
@@ -570,19 +570,19 @@ Den innehåller [Relationsscheman och datauppsättningar](#oc-relational) och [K
 
 ### Nyckelfunktioner {#oc-capabilities}
 
-&#x200B;* **Flerstegsarbetsflöden**
+* **Flerstegsarbetsflöden**
 
   Skapa sofistikerade gruppkampanjer i flera kanaler med den nya, specialbyggda arbetsytan för kampanjhantering.
 
-&#x200B;* **On demand-målgrupper**
+* **On demand-målgrupper**
 
   Segmentera målgrupper på begäran för omedelbar aktivering.
 
-&#x200B;* **Segmentering för flera enheter**
+* **Segmentering för flera enheter**
 
   Bygg målgrupper med hjälp av företagskontext (icke-personella dimensioner) som produkt, butiker, förnyelser, reservationer med mera.
 
-&#x200B;* **Synlighet före sändning**
+* **Synlighet före sändning**
 
   Granska, förfina och optimera målgrupper och kampanjer före lansering och medan kampanjer körs
 
@@ -590,23 +590,23 @@ Den innehåller [Relationsscheman och datauppsättningar](#oc-relational) och [K
 
 Ett helt nytt gränssnitt för visuell samordning som är konstruerat för gruppkampanjer. På arbetsytan kan du
 
-&#x200B;* Visuell planering av flerstegskampanjer för flera kanaler
+* Visuell planering av flerstegskampanjer för flera kanaler
 
-&#x200B;* Stöd för on demand-målgrupper som bygger på relationsfrågor
+* Stöd för on demand-målgrupper som bygger på relationsfrågor
 
-&#x200B;* Avancerad målgruppsdelning, väntetider och villkorslogik
+* Avancerad målgruppsdelning, väntetider och villkorslogik
 
-&#x200B;* Exakt antal före sändning när affärsregler och filter har tillämpats
+* Exakt antal före sändning när affärsregler och filter har tillämpats
 
 ### Relationsscheman och datauppsättningar {#oc-relational}
 
 Adobe Journey Optimizer har nu stöd för relationsenheter (t.ex. produkter, butiker, bokningar, kontrakt) som är kopplade till personbaserade profiler. Detta möjliggör segmentering och personalisering över flerdimensionella datastrukturer, vilket möjliggör exempelvis följande:
 
-&#x200B;* Ett meddelande per bokning, prenumeration eller kontrakt
+* Ett meddelande per bokning, prenumeration eller kontrakt
 
-&#x200B;* Segmentering baserad på relaterade entitetsattribut (t.ex. produktkategori eller butiksplats)
+* Segmentering baserad på relaterade entitetsattribut (t.ex. produktkategori eller butiksplats)
 
-&#x200B;* Förbättrad adressering (t.ex. skicka till alla kända kontakter som är kopplade till en enhet)
+* Förbättrad adressering (t.ex. skicka till alla kända kontakter som är kopplade till en enhet)
 
 ### Varför det spelar någon roll
 
