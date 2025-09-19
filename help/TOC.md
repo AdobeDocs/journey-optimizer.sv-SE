@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 9155a16a0557a32c1d59b66b03fc84c5bc7b8463
+source-git-commit: c472ce00623b810dea60dd5d9e34ca4d516447ad
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2948'
 ht-degree: 18%
 
 ---
@@ -80,12 +80,12 @@ ht-degree: 18%
       + [Reaktion](using/building-journeys/reaction-events.md)
       + [Målgruppskvalifikation](using/building-journeys/audience-qualification-events.md)
       + [Optimera](using/building-journeys/optimize.md)
-      + [Villkor](using/building-journeys/conditions.md)
-      + [Villkorsaktivitet](using/building-journeys/condition-activity.md)
       + [Läs målgrupp](using/building-journeys/read-audience.md)
       + [Vänta](using/building-journeys/wait-activity.md)
+      + [Villkor](using/building-journeys/conditions.md)
+      + [Villkor](using/building-journeys/condition-activity.md)
       + [Innehållsbeslut](using/building-journeys/content-decision.md)
-      + [Åtgärdsaktivitet](using/building-journeys/journey-action.md)
+      + [Åtgärd](using/building-journeys/journey-action.md)
       + [Inbyggda kanalåtgärder](using/building-journeys/journeys-message.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
       + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
@@ -874,7 +874,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
