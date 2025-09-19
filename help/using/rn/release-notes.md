@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: dc2a984a093ee1bf5a856658d6c6f43c7d617823
+source-git-commit: e7db0386b4616828ed5282cfd45e080455d1c22a
 workflow-type: tm+mt
-source-wordcount: '3148'
+source-wordcount: '3120'
 ht-degree: 1%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 1%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Information om förhandsversionen från september 2015 {#25-9-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 23-24 september 2025
 
@@ -248,9 +248,6 @@ Ett alternativ lades till när en godkännandeprincip skapades eller ställdes i
 * **Kapslade JSON-body-parametrar stöds nu i anpassad autentisering**\
   När anpassad autentisering konfigureras för en anpassad åtgärd stöds nu kapslade JSON-objekt (t.ex. underobjekt inom `bodyParams`).
 
-* **Koppla fragment till beslutsobjekt**\
-  Journey Optimizer ger nu möjlighet att bifoga fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer.
-
 * **Stöd för anpassade attribut med en klickning för att avbryta prenumeration på URL**\
   Med Journey Optimizer kan du, om du hanterar samtycke utanför Adobe, ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
 
@@ -278,20 +275,15 @@ När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktive
   Nu finns det ett nytt högfrekvensläge tillgängligt i API-utlösta kampanjer. Det här läget är utformat för storskaliga meddelanden i realtid (upp till 5 000 transaktioner per sekund) och ger högre tillgänglighet med lägre latens.\
   Den här funktionen är endast tillgänglig för e-postkanalen, för organisationer som har köpt tillägget Adobe High-through transactional messaging. Kontakta Adobe om du vill ha mer information.
 
-
 * **Återställa begränsningsfrekvens per timme** - Du kan nu tillämpa begränsning per timme för kanalregeluppsättningar. Den här funktionen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer. Du kan välja en timme (tidigare 3 timmar). [Läs mer](../conflict-prioritization/channel-capping.md). Tillgänglighetsdatum: 17 september
 
 * **Stöd för dynamiska domäner** - Journey Optimizer har nu stöd för fullständig URL-anpassning/basanpassning för fördefinierade domäner som accepteras av Adobe. [Läs mer](../personalization/personalization-build-expressions.md#where) <!--Availability date: September 12-->
 
-  >[!NOTE]
-  >
-  >Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder.
+  Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning kunder.
 
 * **Uttryck för regler för beslutsavgränsning** - Du kan nu skapa egna uttryck för att definiera tröskelvärdet för en begränsningsregel för ett beslutsobjekt. [Läs mer](../experience-decisioning/items.md#capping)
 
-  >[!NOTE]
-  >
-  >Den här funktionen är för närvarande tillgänglig som begränsad tillgänglighet för alla användare.
+  Den här funktionen är för närvarande tillgänglig som begränsad tillgänglighet för alla användare.
 
 * **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera på systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett konfigurationsfel för e-postkanal som använder den anpassade delegeringstypen inträffar. [Läs mer](../reports/alerts.md#alert-dns-record-missing)
 
