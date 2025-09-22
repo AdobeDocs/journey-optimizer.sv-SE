@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: f64fe1c4-3e30-4b74-80f8-b801a5f1d4c4
-source-git-commit: a9f2eae6398f92a40accb62b1d4544bda031559c
+source-git-commit: dcbb83e72377838281e1762bb99230e7fe52ab4c
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Du kan aktivera innehållslås för en e-postmall direkt i e-postmallen Designer
 
 1. Öppna eller skapa en e-postmall och gå till redigeringsskärmen i e-post-Designer.
 
-1. Aktivera alternativet **[!UICONTROL Governance]** i rutan **[!UICONTROL Body]** till höger.
+1. Aktivera alternativet **[!UICONTROL Body]** i rutan **[!UICONTROL Governance]** till höger.
 
 1. Välj önskat låsläge för mallen i listrutan **[!UICONTROL Mode]**:
 
@@ -84,7 +84,7 @@ Du kan aktivera innehållslås för en e-postmall direkt i e-postmallen Designer
 
    ![](assets/template-lock-enable.png)
 
-1. Om du har valt läget **[!UICONTROL Content locking]** kan du ytterligare definiera hur användare kan interagera med mallen. Växla på alternativet **[!UICONTROL Enable content edition]** och välj något av följande:
+1. Om du har valt läget **[!UICONTROL Content locking]** kan du ytterligare definiera hur användare kan interagera med mallen. Växla på alternativet **[!UICONTROL Enable content addition]** och välj något av följande:
 
    * **[!UICONTROL Allow structure & content addition]**: Användare kan lägga till strukturer mellan befintliga strukturer och lägga till innehållskomponenter eller fragment inom redigerbara strukturer.
 
@@ -112,7 +112,7 @@ Så här låser du en struktur i mallen:
 
 1. Välj den struktur som du vill låsa.
 
-1. Välj **[!UICONTROL Locked]** i listrutan **[!UICONTROL Lock type]**.
+1. Välj **[!UICONTROL Lock type]** i listrutan **[!UICONTROL Locked]**.
 
    ![](assets/template-lock-structure.png)
 
@@ -126,7 +126,7 @@ När du har låst en struktur kan inga ytterligare innehållskomponenter eller f
 
 1. Växla på alternativet **[!UICONTROL Use specific locking]**.
 
-1. Välj **[!UICONTROL Editable]** i listrutan **[!UICONTROL Lock type]**. Välj **[!UICONTROL Editable content only]** om du vill tillåta redigering av innehåll när du låser format. [Lär dig att låsa komponenter](#lock-components)
+1. Välj **[!UICONTROL Lock type]** i listrutan **[!UICONTROL Editable]**. Välj **[!UICONTROL Editable content only]** om du vill tillåta redigering av innehåll när du låser format. [Lär dig att låsa komponenter](#lock-components)
 
    ![](assets/template-lock-editable-component.png)
 
@@ -145,7 +145,7 @@ Så här låser du en specifik komponent i en struktur:
 
    ![](assets/template-lock-component.png)
 
-   * **[!UICONTROL Editable content lock only]**: Lås komponentens format men tillåter innehållsredigering.
+   * **[!UICONTROL Editable content only]**: Lås komponentens format men tillåter innehållsredigering.
    * **[!UICONTROL Locked]**: Lås både komponentens innehåll och format fullständigt.
 
    >[!NOTE]
@@ -169,7 +169,7 @@ I exemplet nedan är styrning aktiverat för mallbrödtexten. *Struktur 2* är l
 >title="Markera redigerbara områden"
 >abstract="Beroende på vilken typ av låsning som används för mallen kan du utföra olika åtgärder för mallens strukturer och komponenter. Om du snabbt vill identifiera alla redigerbara områden i mallen aktiverar du alternativet **[!UICONTROL Highlight editable areas]**."
 
-När du använder en mall med låst innehåll visas meddelandet **[!UICONTROL Governance enabled]** i den högra rutan.
+När du använder en mall med låst innehåll visas ett meddelande i den högra rutan.
 
 Beroende på vilken typ av låsning som används för mallen kan du utföra olika åtgärder för mallens strukturer och komponenter. Om du snabbt vill identifiera alla redigerbara områden i mallen aktiverar du alternativet **[!UICONTROL Highlight editable areas]**.
 
@@ -196,4 +196,4 @@ Här är några exempel på e-postutgåvor och tillhörande konfigurationer för
 
 Lär dig låsa innehåll i e-postmallar.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451611?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3451591?quality=12)

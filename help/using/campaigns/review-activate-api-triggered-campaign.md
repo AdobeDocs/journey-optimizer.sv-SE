@@ -9,16 +9,16 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 561f1215-d13d-4ffc-b6f1-396ae67774c8
-source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
+source-git-commit: d3570e2c3d6340deaba8ca0f342161ab43ad1c43
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '278'
 ht-degree: 4%
 
 ---
 
 # Granska och aktivera den API-utlösta kampanjen {#api-review}
 
-När åtgärdskampanjen har konfigurerats måste du granska dess parameter och innehåll innan du aktiverar den. Följ dessa steg för att göra detta:
+När din API-utlösta kampanj har konfigurerats måste du granska dess parameter och innehåll innan du aktiverar den. Följ dessa steg för att göra detta:
 
 >[!IMPORTANT]
 >
@@ -41,7 +41,6 @@ När åtgärdskampanjen har konfigurerats måste du granska dess parameter och i
    Status **[!UICONTROL Completed]** tilldelas automatiskt till kampanjen 3 dagar efter att den har aktiverats eller vid kampanjens slutdatum om den har en återkommande körning. [Läs mer om kampanjstatus](get-started-with-campaigns.md#statuses).
 
    Om inget slutdatum har angetts behåller kampanjen statusen **[!UICONTROL Live]**. Om du vill ändra den måste du stoppa kampanjen manuellt. [Lär dig stoppa en kampanj](manage-campaigns.md)
-
 
 1. När en kampanj har aktiverats kan du när som helst kontrollera dess information genom att öppna den. Sammanfattningen gör att du kan få statistik om antalet målprofiler och levererade och misslyckade åtgärder.
 

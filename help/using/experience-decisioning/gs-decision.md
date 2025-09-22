@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+source-git-commit: 9bf642227facd44401a33a1047b53018478ed35a
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 20%
+source-wordcount: '287'
+ht-degree: 19%
 
 ---
 
@@ -46,6 +46,6 @@ Beslutsfattandet stöds för närvarande i den kodbaserade upplevelsekanalen.
 
 Vår etablerade funktion i Journey Optimizer, Decision Management, använder ett centralt bibliotek med marknadsföringserbjudanden och en beslutsmotor som tillämpar regler och begränsningar på kundprofiler i realtid och utnyttjar Adobe Experience Platform data för att leverera rätt erbjudande vid rätt tidpunkt.
 
-Beslutshanteringen har för närvarande stöd för fyra kanaler: E-post, Meddelanden i appen, Push-meddelanden och SMS.
+Beslutshanteringen har stöd för följande kanaler: e-post, meddelanden i appen, push-meddelanden, SMS och direktreklam.
 
 ➡️ [Kom igång med beslutshantering](../offers/get-started/starting-offer-decisioning.md)
