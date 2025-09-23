@@ -115,7 +115,7 @@ När en resa är live kan du checka in reserapporten om regeluppsättningen har 
 
 ![](assets/journey-report.png)
 
-Dessutom kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att skapa frågor för att identifiera vilken regel som gjorde att en profil inte pågick en viss resa. Ett frågeexempel finns i [det här avsnittet](../reports/query-examples.md#common-queries).
+Dessutom kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att skapa frågor för att identifiera vilken regel som gjorde att en profil inte pågick en viss resa. Ett frågeexempel finns i [det här avsnittet](../reports/query-examples.md#common-queries).
 
 ## Instruktionsvideo {#video}
 
