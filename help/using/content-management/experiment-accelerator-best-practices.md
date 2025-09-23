@@ -8,26 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
-hide: true
-hidefromtoc: true
-source-git-commit: ddeb3512fbe1d1de86456fe2c3ccd2b3805b5684
+exl-id: 001e05db-e343-4a95-9694-274a8c50d08c
+source-git-commit: 61ae9196f699c3b6aa1d9a5bb2259d36aaebc0e3
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
 # Journey Optimizer Experimentation Accelerator bästa praxis {#content-experiment-best-practices}
-
->[!BEGINSHADEBOX]
-
-* [Kom igång med Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
-* **[Journey Optimizer Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)**
-* [Integritet, säkerhet och styrning i Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
-* [Övervaka experiment](experiment-accelerator-monitor.md)
-* [Experimentationsmått](experiment-accelerator-metrics.md)
-
->[!ENDSHADEBOX]
 
 ## Vad är A/B-testning?
 
@@ -98,11 +87,11 @@ Exempel: _Vi tror att X-ändringar kommer att öka med Y på grund av Z._
 Ett bra experiment ger inte bara en vinst, det ger en tydlig och åtgärdbar inlärning.
 Här kan du söka efter:
 
-&check; **Statistisk konfidens**: Det är osannolikt att skillnaden mellan varianter beror på en chans.
-&check; **Justering med mål**: Det primära måttet visar meningsfulla framsteg mot ett affärsmål.
-&check; **Sekundär effekt**: Inga signifikanta negativa biverkningar på relaterade mått.
-&check; **Scalability**: Resultatet kan informera framtida beslut eller vara generaliserat till andra områden.
-&check; **Clarity**: Orsaken till resultatet är relativt isolerad och förstådd.
+&amp;check; **Statistisk konfidens**: Det är osannolikt att skillnaden mellan varianter beror på en chans.
+&amp;check; **Justering med mål**: Det primära måttet visar meningsfulla framsteg mot ett affärsmål.
+&amp;check; **Sekundär effekt**: Inga signifikanta negativa biverkningar på relaterade mått.
+&amp;check; **Scalability**: Resultatet kan informera framtida beslut eller vara generaliserat till andra områden.
+&amp;check; **Clarity**: Orsaken till resultatet är relativt isolerad och förstådd.
 
 Experimentation handlar inte bara om att hitta den&quot;bästa&quot; versionen, utan också om att bygga upp kunskap genom testning och iteration. När det är klart avslöjar experiment insikter som driver smartare beslut, bättre användarupplevelser och förbättrade resultat.
 

@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 71b4c2b711858731cfd0f627a5ff97fe9eb817a2
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ Följ de här stegen för att skicka SMS- och RCS-meddelanden i Journey Optimize
    * **[!UICONTROL Auth Type&#x200B;]**: Välj auktoriseringstyp och [fyll i motsvarande fält](#auth-options) baserat på den valda autentiseringsmetoden.
 
      ![](assets/sms-byop.png)
+
+1. Aktivera alternativet **[!UICONTROL mTLS support]**, som ser till att både klienten och servern autentiserar varandra innan en säker anslutning upprättas.
+
+   Om du bara vill använda mTLS väljer du **[!UICONTROL No Authentication]** i listrutan **[!UICONTROL Auth Type]** och aktiverar sedan **[!UICONTROL mTLS support]**.
 
 1. I avsnittet **[!UICONTROL Headers]** klickar du på **[!UICONTROL Add new parameter]** för att ange HTTP-rubriker för det begärandemeddelande som ska skickas till den externa tjänsten.
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
-source-git-commit: c517e7faa027b5c1fe3b130f45fc7bf5020c454a
+source-git-commit: 11b2141db8d0e6dd44987d5f7941430fbe3e48f8
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '601'
 ht-degree: 3%
 
 ---
@@ -77,11 +77,11 @@ Läs mer om eventTypes [i det här avsnittet](#discarded-events).
 Den här kategorin innehåller de ursprungliga fälten för steghändelser. Se det här [avsnittet](../reports/sharing-legacy-fields.md).
 
 
-## Felsöka ignorerade händelsetyper i travel_step_events  {#discarded-events}
+## Felsöka ignorerade händelsetyper i steg om resan  {#discarded-events}
 
-När du efterfrågar travel_step_events för poster med `eventCode = 'discard'` kan du stöta på flera eventTypes.
+När du frågar efter steg för resa för poster med `eventCode = 'discard'` kan du stöta på flera eventTypes.
 
-Nedan finns definitioner, vanliga orsaker och felsökningssteg för de vanligaste händelserna discardTypes:
+Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligaste kastet `eventTypes`:
 
 * EXTERNAL_KEY_COMPUTATION_ERROR: Det gick inte att beräkna en unik identifierare (extern nyckel) för kunden från händelsedata.
 Vanliga orsaker: Kundidentifierare som saknas eller har fel format (t.ex. e-post, kund-ID) i händelsens nyttolast.
@@ -108,5 +108,5 @@ Läs mer om de här händelserna och hur du felsöker dem i [Pausa en resa](../b
 
 * [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
 * [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
-* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 

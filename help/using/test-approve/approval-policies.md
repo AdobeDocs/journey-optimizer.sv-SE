@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 36136c8fce1b6bd9113d95787afbcff5a7605ddf
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home)
+>Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 
 Med godkännandeprinciper kan administratörer upprätta en valideringsprocess för resor och kampanjer. Det här systemet anger specifika villkor som avgör om en resa eller kampanj kräver godkännande. Dessa profiler kan variera i komplexitet, från att kräva att alla kampanjer granskas av en viss användare eller team, till att fastställa kriterier baserade på vem som skapade kampanjen.
 
@@ -41,7 +41,7 @@ Med godkännandeprinciper kan administratörer upprätta en valideringsprocess f
 
 Så här skapar du en godkännandeprincip:
 
-1. Gå till **[!UICONTROL Permissions]** och sedan **[!UICONTROL Policies]** från menyn **[!UICONTROL Administration]** i Journey Optimizer.
+1. Gå till **[!UICONTROL Administration]** och sedan **[!UICONTROL Permissions]** från menyn **[!UICONTROL Policies]** i Journey Optimizer.
 
    ![](assets/policy_create_1.png)
 
@@ -50,6 +50,8 @@ Så här skapar du en godkännandeprincip:
 1. Ange **[!UICONTROL Name]** och **[!UICONTROL Description]** som princip.
 
 1. Välj om profilen ska gälla för **[!UICONTROL Journeys]** eller **[!UICONTROL Campaigns]**.
+
+1. Aktivera **[!UICONTROL Block self-approval]** för att förhindra att användare som skapar en resa/kampanj godkänner sina egna objekt.
 
    ![](assets/policy_create_2.png)
 
@@ -61,7 +63,7 @@ Följ de här stegen för att definiera villkoren som är kopplade till en godk�
 
 1. Få åtkomst till din **[!UICONTROL Approval policy]**.
 
-1. Klicka på **[!UICONTROL Add condition]** på menyn **[!UICONTROL If]** för att definiera vilket objekt eller vilken användare som ska utlösa en godkännandebegäran.
+1. Klicka på **[!UICONTROL If]** på menyn **[!UICONTROL Add condition]** för att definiera vilket objekt eller vilken användare som ska utlösa en godkännandebegäran.
 
 1. Välj lämplig **[!UICONTROL Category]**, **[!UICONTROL Matching Rule]** och **[!UICONTROL Options]**.
 
@@ -69,7 +71,7 @@ Följ de här stegen för att definiera villkoren som är kopplade till en godk�
 
    ![](assets/policy_condition_1.png)
 
-+++ Läs mer om tillgängliga kategorier och alternativ
+   +++ Läs mer om tillgängliga kategorier och alternativ
    <table>
     <tr>
       <th>Kategori</th>
@@ -131,7 +133,7 @@ Följ de här stegen för att definiera villkoren som är kopplade till en godk�
 
 1. Om du vill lägga till fler villkor klickar du på **[!UICONTROL Add condition]** för att definiera ytterligare regler och väljer antingen **[!UICONTROL And]** eller **[!UICONTROL Or]** för att ange hur villkoren ska anslutas.
 
-1. Klicka på **[!UICONTROL Add condition]** på menyn **[!UICONTROL Then, send approval request to]** för att definiera vilken användare som kan godkänna godkännandebegäran.
+1. Klicka på **[!UICONTROL Then, send approval request to]** på menyn **[!UICONTROL Add condition]** för att definiera vilken användare som kan godkänna godkännandebegäran.
 
 1. I listrutan **[!UICONTROL Category]** väljer du om du vill välja en användargrupp eller en enskild användare.
 

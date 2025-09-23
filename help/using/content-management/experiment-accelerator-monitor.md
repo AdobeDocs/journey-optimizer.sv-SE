@@ -8,26 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
-hide: true
-hidefromtoc: true
-source-git-commit: ddeb3512fbe1d1de86456fe2c3ccd2b3805b5684
+exl-id: 40a57083-d7b1-416b-af87-4b603b83052d
+source-git-commit: 61ae9196f699c3b6aa1d9a5bb2259d36aaebc0e3
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
 
 # Spåra dina experiment {#monitor}
-
->[!BEGINSHADEBOX]
-
-* [Kom igång med Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
-* [Dataanvändning i AI med Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
-* [Journey Optimizer Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
-* **[Bildskärmsexperiment](experiment-accelerator-monitor.md)**
-* [Experimentationsmått](experiment-accelerator-metrics.md)
-
->[!ENDSHADEBOX]
 
 Fliken **[!UICONTROL Experiments]** centraliserar spårning och analys av tester från Adobe Journey Optimizer och Adobe Target. Du kan visa alla experiment, granska KPI:er och filtrera eller söka efter specifika tester.
 
@@ -158,7 +147,7 @@ Observera att du först måste [bekräfta hypotes- och behandlingsinformation](#
 
    För experiment som kommer från **[!DNL Adobe Target]** läses de föreslagna ändringarna in i **[!DNL Adobe Target]** s experimenteringsarbetsflöde.
 
-   ➡️ [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/sv/docs/target/using/activities/abtest/test-ab)
+   ➡️ [Läs mer i Adobe Target-dokumentationen](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
 
 1. I expertvyn är samma AI **[!UICONTROL Experimentation Opportunities]** som upplevs av Journey Optimizer Experimentation Accelerator tillgänglig.
 

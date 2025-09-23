@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 348a1c0bfaca1abe7fd5705b36879af30da18e54
+source-git-commit: 397fad9c95e0c11c0496ab5c9adfb6f8169de4f6
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 1%
+source-wordcount: '1746'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,21 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment. Var noga med att konfigurera datauppsättningen för vissa mätvärden innan du använder den."
 
-1. När ditt meddelande har anpassats kan du gå till kampanjsammanfattningssidan och klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
+Du kan välja mellan tre olika typer av experiment:
+
+* **[!UICONTROL A/B experiment]**: Definiera trafikuppdelningen mellan behandlingar i början av testet. Prestanda utvärderas baserat på det primära mätresultat du valt, Experimentation Accelerator, och rapporterar sedan den observerade lyften mellan behandlingarna.
+
+* **[!UICONTROL Multi-armed bandit]**: trafikdelning mellan behandlingar hanteras automatiskt. Var 7:e dag granskas resultatet för det primära mätvärdet och vikterna justeras därefter. Rapporteringen i Experimentation Accelerator fortsätter att visa Lyft som A/B-tester.
+
+* **[!UICONTROL Bring your own Multi-armed bandit]**: trafikdelning mellan behandlingar hanteras automatiskt. Du kan bestämma när och hur den ska ändras med Experiment API:er för att justera allokeringar i realtid.
+
+➡️ [Läs mer om skillnaden mellan A/B-experiment och multiväpnade bandit-experiment](mab-vs-ab.md)
+
+>[!BEGINTABS]
+
+>[!TAB A/B-experiment]
+
+1. När ditt meddelande har anpassats klickar du på **[!UICONTROL Actions]** på fliken **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
 
    ![](assets/content_experiment_3.png)
 
@@ -78,9 +92,11 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
    ![](assets/content_experiment_11.png)
 
-1. När du skapar ett experiment med hjälp av InApp- eller webbkanalen och väljer **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]**, **[!UICONTROL Page Views]** eller **[!UICONTROL Unique Page Views metrics]** kan du med hjälp av listrutan **[!UICONTROL Click Action]** spåra och övervaka klick och vyer på specifika sidor.
+1. När du konfigurerar ett experiment med hjälp av InApp- eller webbkanalen och väljer **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]**, **[!UICONTROL Page Views]** eller **[!UICONTROL Unique Page Views metrics]** kan du med hjälp av fältet **[!UICONTROL Dimensions]** spåra och övervaka klick och vyer på specifika sidor.
 
    ![](assets/content_experiment_20.png)
+
+1. Om du har skapat en API-utlöst kampanj väljer du **[!UICONTROL A/B Experiment]** i listrutan **[!UICONTROL Experiment type]**.
 
 1. Klicka på **[!UICONTROL Add treatment]** för att skapa så många nya behandlingar som behövs.
 
@@ -104,7 +120,89 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 
 1. Gör det möjligt för det automatiska skalningsförsöket att automatiskt ta fram den vinnande variationen av ditt experiment. [Läs mer om hur du kan skala vinnaren](#scale-winner)
 
+   ![](assets/content_experiment_14.png)
+
 1. Klicka på **[!UICONTROL Create]** när konfigurationen är inställd.
+
+>[!TAB Flerarmad bandit]
+
+Observera att multiväpnat bandit-experiment endast är tillgängligt med följande:
+
+* Inkommande kanaler
+* Unitary Journeys
+* API-utlösta kampanjer (både transaktionella och operativa)
+* Utgående kanaler om schemat återkommer
+
+1. När ditt meddelande har anpassats klickar du på **[!UICONTROL Actions]** på fliken **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
+
+   ![](assets/content_experiment_3.png)
+
+1. Välj den **[!UICONTROL Success metric]** som du vill ange för ditt experiment.
+
+   I det här exemplet väljer du **[!UICONTROL Email open]** om du vill testa om profilerna öppnar sina e-postmeddelanden om kampanjkoden finns på ämnesraden.
+
+   ![](assets/content_experiment_11.png)
+
+1. Om du har skapat en API-utlöst kampanj väljer du **[!UICONTROL Multi-armed bandit]** i listrutan **[!UICONTROL Experiment type]**.
+
+   ![](assets/content-experiment-mab-1.png)
+
+1. Klicka på **[!UICONTROL Add treatment]** för att skapa så många nya behandlingar som behövs.
+
+   ![](assets/content-experiment-mab-2.png)
+
+1. Ändra **[!UICONTROL Title]** för din behandling så att du bättre kan skilja dem åt.
+
+1. Välj att lägga till en **[!UICONTROL Holdout]**-grupp i leveransen. Den här gruppen kommer inte att få något innehåll från den här kampanjen.
+
+   Om du aktiverar alternativfältet tar det automatiskt 10 % av din befolkning. Du kan justera procentandelen om det behövs.
+
+   >[!IMPORTANT]
+   >
+   >När en utelämningsgrupp används i en åtgärd för innehållsexperimenterande gäller grupptilldelningen endast den specifika åtgärden. När åtgärden är slutförd kommer profilerna i den utelåsta gruppen att fortsätta längs vägen och kan ta emot meddelanden från andra åtgärder. Se därför till att efterföljande meddelanden inte är beroende av att ett meddelande tas emot av en profil som kan finnas i en utskicksgrupp. Om de gör det kan du behöva ta bort grupptilldelningen.
+
+   ![](assets/content-experiment-mab-3.png)
+
+>[!TAB Ta med din egen beväpnade bandit]
+
+Observera att ett eget multiväpnat bandit-experiment bara är tillgängligt med följande:
+
+* Inkommande kanaler
+* Unitary Journeys
+* API-utlösta kampanjer (både transaktionella och operativa)
+* Utgående kanaler om schemat återkommer
+
+1. När ditt meddelande har anpassats klickar du på **[!UICONTROL Actions]** på fliken **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment.
+
+   ![](assets/content_experiment_3.png)
+
+1. Välj den **[!UICONTROL Success metric]** som du vill ange för ditt experiment.
+
+   I det här exemplet väljer du **[!UICONTROL Email open]** om du vill testa om profilerna öppnar sina e-postmeddelanden om kampanjkoden finns på ämnesraden.
+
+   ![](assets/content_experiment_11.png)
+
+1. Om du har skapat en API-utlöst kampanj väljer du **[!UICONTROL Bring your own Multi-armed bandit]** i listrutan **[!UICONTROL Experiment type]**.
+
+   ![](assets/content-experiment-mab-4.png)
+
+1. Klicka på **[!UICONTROL Add treatment]** för att skapa så många nya behandlingar som behövs.
+
+   ![](assets/content-experiment-mab-5.png)
+
+1. Ändra **[!UICONTROL Title]** för din behandling så att du bättre kan skilja dem åt.
+
+1. Välj att lägga till en **[!UICONTROL Holdout]**-grupp i leveransen. Den här gruppen kommer inte att få något innehåll från den här kampanjen.
+
+   Om du aktiverar alternativfältet tar det automatiskt 10 % av din befolkning. Du kan justera procentandelen om det behövs.
+
+   >[!IMPORTANT]
+   >
+   >När en utelämningsgrupp används i en åtgärd för innehållsexperimenterande gäller grupptilldelningen endast den specifika åtgärden. När åtgärden är slutförd kommer profilerna i den utelåsta gruppen att fortsätta längs vägen och kan ta emot meddelanden från andra åtgärder. Se därför till att efterföljande meddelanden inte är beroende av att ett meddelande tas emot av en profil som kan finnas i en utskicksgrupp. Om de gör det kan du behöva ta bort grupptilldelningen.
+
+   ![](assets/content-experiment-mab-6.png)
+
+>[!ENDTABS]
 
 ## Utforma dina behandlingar {#treatment-experiment}
 
@@ -147,7 +245,6 @@ Du kan välja mellan två lägen:
 
 * **Manuell skalning**: Granska experimentresultat manuellt och initiera utrullningen av den vinnande behandlingen, med bibehållen fullständig kontroll över tid och beslut.
 
-
 ### Automatisk skalning {#autoscaling}
 
 Med automatisk skalförändring kan du ange fördefinierade regler för när den vinnande behandlingen eller en reservbehandling ska börja, baserat på resultatet av experimentet.
@@ -167,9 +264,9 @@ Så här aktiverar du automatisk skalförändring i dina experiment:
    * Så snart vinnaren hittas.
    * Efter att experimentet är live för den valda tiden.
 
-     Tiden för automatisk skalförändring måste schemaläggas före experimentets slutdatum. Om det är inställt för en tid efter slutdatumet visas en valideringsvarning och kampanjen eller resan publiceras inte.
+Tiden för automatisk skalförändring måste schemaläggas före experimentets slutdatum. Om det är inställt för en tid efter slutdatumet visas en valideringsvarning och kampanjen eller resan publiceras inte.
 
-   ![](assets/scale-winner-2.png)
+    ![](assets/scale-winner-2.png)
 
 1. Välj reservbeteendet om ingen vinnare hittas efter skaltid:
 

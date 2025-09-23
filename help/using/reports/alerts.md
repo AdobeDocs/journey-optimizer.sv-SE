@@ -8,19 +8,18 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 13623d28ba7b852f7267b5f800f2c9a3afda4a62
+source-git-commit: 21adeb5128b22bf7b2e7e6c2cff9c31159741cee
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1295'
 ht-degree: 0%
 
 ---
 
 # Åtkomst och prenumeration på systemvarningar {#alerts}
 
-När du skapar resor och kampanjer använder du knappen **Varningar** för att kontrollera och åtgärda fel innan du kör eller publicerar dem:
+När du skapar resor och kampanjer använder du knappen **Varningar** för att kontrollera och åtgärda fel innan du kör eller publicerar dem.
 
-* Lär dig hur du felsöker dina resor på [den här sidan](../building-journeys/troubleshooting.md).
-* Lär dig hur du granskar kampanjer på [den här sidan](../campaigns/review-activate-campaign.md).
+
 
 På den dedikerade **[!UICONTROL Alerts]**-menyn kan du även prenumerera på [!DNL Adobe Journey Optimizer] systemvarningar enligt informationen på den här sidan.
 
@@ -32,7 +31,7 @@ När ett fel inträffar kan du få systemvarningar i Journey Optimizer meddeland
 
 >[!NOTE]
 >
->Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
 Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Alerts]** på den vänstra menyn. Det finns flera förkonfigurerade varningar för Journey Optimizer.
 
@@ -42,18 +41,34 @@ De listas nedan och varje varning beskrivs nedan.
 
    * aviseringen [Fel vid anpassad åtgärd för resan](#alert-custom-actions)
    * aviseringen [Läs målutlösaren misslyckades](#alert-read-audiences)
+<!--DOCAC-13465   * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
+   * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert
+   * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert-->
 
 * Aviseringar som är specifika för kanalkonfigurationen:
 
    * [DNS-posten för AJO-domänen saknar](#alert-dns-record-missing)-varning
-  <!--* the [AJO channel configuration failure](#alert-channel-config-failure) alert
-   * the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+   * meddelandet [Fel i AJO-kanalkonfiguration](#alert-channel-config-failure)
+     <!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
 
 ## Prenumerera på aviseringar {#subscribe-alerts}
 
-1. Du kan prenumerera på varje varning individuellt från användargränssnittet genom att välja alternativet **[!UICONTROL Subscribe]**.
+Om ett oväntat beteende inträffar och/eller om vissa villkor i åtgärderna har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som prenumererar på dem.
 
-   ![](assets/alert-subscribe.png){width=80%}
+Du kan prenumerera på varje varning individuellt från användargränssnittet, antingen globalt från **[!UICONTROL Alerts]**-menyn (se [Global prenumeration](#global-subscription))<!--DOCAC-13465, or unitary for a specific journey (see [Unitary subscription](#unitary-subscription))-->.
+
+Beroende på prenumerantens önskemål skickas varningar via e-post och/eller direkt i Journey Optimizer meddelandecenter i det övre högra hörnet av användargränssnittet (meddelanden i appen). Välj hur du vill få dessa aviseringar i [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Läs mer](../start/user-interface.md#in-product-alerts)
+
+När en varning har lösts får prenumeranterna ett meddelande om att den har lösts.
+
+
+### Global prenumeration {#global-subscription}
+
+Följ de här stegen för att prenumerera/avbryta prenumerationen på en avisering för alla resor och kampanjer:
+
+1. Bläddra till kontrollpanelen **[!UICONTROL Alerts]** på den vänstra menyn och välj alternativet **[!UICONTROL Subscribe]** för den avisering som du vill prenumerera på.
+
+   ![Prenumererar på en avisering](assets/alert-subscribe.png){width=80%}
 
    >[!NOTE]
    >
@@ -61,37 +76,28 @@ De listas nedan och varje varning beskrivs nedan.
 
 1. Använd samma metod för **[!UICONTROL Unsubscribe]**.
 
-1. Du kan också prenumerera på aviseringar via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
 
-1. Om ett oväntat beteende inträffar och/eller om vissa villkor i åtgärderna har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som prenumererar på dem.
+<!--DOCAC-13465
+### Unitary subscription {#unitary-subscription}
 
-Beroende på prenumerantens önskemål skickas varningar via e-post och/eller direkt i Journey Optimizer meddelandecenter i det övre högra hörnet av användargränssnittet (meddelanden i appen). Välj hur du vill få dessa aviseringar i [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Läs mer](../start/user-interface.md#in-product-alerts)
+To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
 
->[!NOTE]
->
->Som standard är endast varningar i appen aktiverade.
+1. Browse to the journey inventory and select the **[!UICONTROL Subscribe to alerts]** option for a specific journey.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
+      ![Subscribing to an alert for a specific journey](assets/subscribe-journey-alert.png){width=80%}
 
-När en varning har lösts får prenumeranterna ett meddelande om att den har lösts.
+1. Choose the alert(s). The following alerts are available: [Profile Discard Rate Exceeded](#alert-discard-rate), [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate), and [Profile Error Rate Exceeded](#alert-profile-error-rate).
+   
+1. To unsubscribe to an alert, unselect it from the same screen.
 
-## Hantera aviseringar {#manage-alerts}
+1. Click **[!UICONTROL Save]** to confirm.
+-->
 
-Om du vill hantera aviseringar markerar du ett objekt och använder knappen **[!UICONTROL More actions]**.
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
-![](assets/alert-more-actions.png){width=80%}
 
-Som standard är alla aviseringar aktiverade. Om du vill inaktivera en varning väljer du alternativet **[!UICONTROL Disable alert]** på menyn **[!UICONTROL More actions]**. Alla prenumeranter på den här aviseringen får inte längre relaterade meddelanden.
 
-Välj **[!UICONTROL Manage alert subscribers]** om du vill visa listan över användare som prenumererar på aviseringen. Använd det tomma fältet för att lägga till fler prenumeranter.
-
-![](assets/alert-subscribers.png){width=80%}
-
-Möjliga varningsstatusvärden visas nedan:
-
-* **[!UICONTROL Enabled]** - Varningen är aktiverad och övervakar utlösarvillkoret.
-* **[!UICONTROL Disabled]** - Varningen är inaktiverad och övervakar för närvarande inte utlösarvillkoret. Du kommer inte att få några meddelanden om den här aviseringen.
-* **[!UICONTROL Triggered]** - Varningens utlösarvillkor uppfylls.
 
 ## Resevarningar {#journey-alerts}
 
@@ -99,9 +105,12 @@ Möjliga varningsstatusvärden visas nedan:
 >
 >Adobe Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge.
 
+
 ### Fel i anpassad åtgärd för resa {#alert-custom-actions}
 
 Den här varningen varnar dig om en anpassad åtgärd misslyckas. Vi anser att det finns ett fel där det har förekommit mer än 1 procent av felen i en specifik anpassad åtgärd under de senaste fem minuterna. Detta utvärderas var 30:e sekund.
+
+Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
 
 ![](assets/alerts-custom-action.png)
 
@@ -144,6 +153,26 @@ Om du vill felsöka **Läs publikaviseringar** kontrollerar du antalet målgrupp
 ![](assets/alert-troubleshooting-0.png)
 
 ![](assets/alert-troubleshooting-1.png)
+
+<!--DOCAC-13465
+
+### Profile Discard Rate Exceeded {#alert-discard-rate}
+
+This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+
+Click the name of the alert to check the alert details and configuration.
+
+
+### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
+
+This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+
+### Profile Error Rate Exceeded {#alert-profile-error-rate}
+
+This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+
+Click the name of the alert to check the alert details and configuration.
+-->
 
 ## Konfigurationsaviseringar {#configuration-alerts}
 
@@ -220,7 +249,61 @@ När du åtgärdar e-postkonfigurationsproblem bör du tänka på de bästa meto
 
 This alert warns you if a domain certificate (CDN, tracking URL) renewal failed for a specific Journey Optimizer subdomain.-->
 
+## Hantera aviseringar {#manage-alerts}
+
+### Redigera en varning
+
+Du kan kontrollera information om en varning genom att klicka på raden. Namn, status och meddelandekanaler visas i den vänstra panelen.
+<!--DOCAC-13465
+For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.-->
+
+![](assets/alert-more-actions.png){width=60%}
+
+<!--DOCAC-13465
+#### Define a custom threshold {#custom-threshold}
+
+You can set thresholds for the [Journey alerts](#journey-alerts). The threshold alerts above default to 20%. 
+
+To change the threshold:
+
+1. Browse to the **Alerts** screen
+1. Click the **[!UICONTROL More actions]** button of the alert to update
+1. Enter the new threshold and confirm. The new threshold applies to **all** journeys
 
 
+![](assets/alert-threshold.png){width=60%}
+
+>[!CAUTION]
+>
+>The threshold levels are global across all journeys and cannot be individually modified per journey.
+-->
+
+### Inaktivera en varning
+
+Som standard är alla aviseringar aktiverade. Om du vill inaktivera en avisering väljer du alternativet **[!UICONTROL Disable alert]**: alla prenumeranter på den här aviseringen kommer inte längre att få relaterade meddelanden.
 
 
+### Varningsstatus
+
+Möjliga varningsstatusvärden visas nedan:
+
+* **[!UICONTROL Enabled]** - Varningen är aktiverad och övervakar utlösarvillkoret.
+* **[!UICONTROL Disabled]** - Varningen är inaktiverad och övervakar för närvarande inte utlösarvillkoret. Du kommer inte att få några meddelanden om den här aviseringen.
+* **[!UICONTROL Triggered]** - Varningens utlösarvillkor uppfylls.
+
+
+### Visa och uppdatera prenumeranter {#manage-subscribers}
+
+Välj **[!UICONTROL Manage alert subscribers]** om du vill visa listan över användare som prenumererar på aviseringen.
+
+![](assets/alert-subscribers.png){width=80%}
+
+Om du vill lägga till fler prenumeranter anger du deras e-postadresser avgränsade med kommatecken och väljer **[!UICONTROL Update]**.
+
+Om du vill ta bort prenumeranter tar du bort deras e-postadress från de aktuella prenumeranterna och väljer **[!UICONTROL Update]**.
+
+## Ytterligare resurser {#additional-resources-alerts}
+
+
+* Lär dig hur du felsöker dina resor på [den här sidan](../building-journeys/troubleshooting.md).
+* Lär dig hur du granskar kampanjer på [den här sidan](../campaigns/review-activate-campaign.md).

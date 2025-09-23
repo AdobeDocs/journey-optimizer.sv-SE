@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 92247adabc56f369c9b11cdc519cdc7bf30c99f1
+source-git-commit: 4d979ccc421221993a752dd41bc22ea3d83e7555
 workflow-type: tm+mt
-source-wordcount: '1634'
-ht-degree: 43%
+source-wordcount: '1604'
+ht-degree: 44%
 
 ---
 
@@ -272,4 +272,4 @@ Här är ett exempel på svaret på inloggnings-API-anropet:
 
 >[!CAUTION]
 >
->När du konfigurerar anpassad autentisering för en anpassad åtgärd bör du tänka på att kapslade JSON-objekt (t.ex. underobjekt inom `bodyParams`) för närvarande **inte stöds**. Endast enkla nyckelvärdepar inkluderas i den slutliga nyttolasten för begäran. Om din autentiseringsslutpunkt kräver kapslade objekt kan detta leda till att fält saknas och att autentiseringsfel uppstår.
+>Observera att kapslade JSON-objekt (t.ex. underobjekt inom `bodyParams`) **stöds** när du konfigurerar anpassad autentisering för en anpassad åtgärd.

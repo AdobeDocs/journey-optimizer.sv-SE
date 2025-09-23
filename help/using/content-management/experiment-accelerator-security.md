@@ -8,26 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
-hide: true
-hidefromtoc: true
-source-git-commit: ddeb3512fbe1d1de86456fe2c3ccd2b3805b5684
+exl-id: b7c00cdc-430c-40a2-90c9-6dd891d2563b
+source-git-commit: 61ae9196f699c3b6aa1d9a5bb2259d36aaebc0e3
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
 # Dataanvändning i AI med Journey Optimizer Experimentation Accelerator{#experiment-accelerator-security}
-
->[!BEGINSHADEBOX]
-
-* [Kom igång med Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
-* [Dataanvändning i AI med Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
-* [Journey Optimizer Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
-* [Monitor Experiments](experiment-accelerator-monitor.md)
-* [Experimentationsmått](experiment-accelerator-metrics.md)
-
->[!ENDSHADEBOX]
 
 Med **Adobe Journey Optimizer Journey Optimizer Experimentation Accelerator** kan du automatiskt upptäcka insikter och rekommendera möjligheter att förbättra dina experiment- och experimentprogram. Lösningen utnyttjar AI och Machine Learning för att ge dessa rekommendationer. Den här satsen klargör hur dina kunders data används i **Journey Optimizer Experimentation Accelerator**.
 

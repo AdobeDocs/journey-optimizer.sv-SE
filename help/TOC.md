@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c472ce00623b810dea60dd5d9e34ca4d516447ad
+source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
 workflow-type: tm+mt
-source-wordcount: '2948'
+source-wordcount: '2954'
 ht-degree: 18%
 
 ---
@@ -235,8 +235,8 @@ ht-degree: 18%
       + [Vanliga frågor och svar](using/orchestrated/orchestrated-campaigns-faq.md)
       + Datakonfiguration {#data-configuration}
          + [Datakonfiguration](/help/rp_landing_pages/data-configuration-landing-page.md)
-         + Hantera relationsscheman och datauppsättningar {#schemas-datasets}
-            + [Hantera relationsscheman och datauppsättningar](/help/rp_landing_pages/schemas-datasets-landing-page.md)
+         + Hantera modellbaserade scheman och datauppsättningar {#schemas-datasets}
+            + [Hantera modellbaserade scheman och datauppsättningar](/help/rp_landing_pages/schemas-datasets-landing-page.md)
             + [Kom igång med scheman och datauppsättningar](using/orchestrated/gs-schemas.md)
             + [Manuellt schema](using/orchestrated/manual-schema.md)
             + [Filöverföringsschema](using/orchestrated/file-upload-schema.md)
@@ -555,6 +555,7 @@ ht-degree: 18%
          + [Experimentera acceleratorvärden](using/content-management/experiment-accelerator-metrics.md)
       + Tekniska anmärkningar {#technotes}
          + [Tekniska anmärkningar](/help/rp_landing_pages/technotes-landing-page.md)
+         + [A/B-test jämfört med beväpnad bandit](using/content-management/mab-vs-ab.md)
          + [Förstå statistiska beräkningar](using/content-management/experiment-calculations.md)
          + [Förstå statistiska beräkningar i experimentrapporten](using/content-management/experiment-report-calculations.md)
 + Målgrupper, profiler och identitet {#audiences-profiles-identities}
@@ -874,7 +875,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

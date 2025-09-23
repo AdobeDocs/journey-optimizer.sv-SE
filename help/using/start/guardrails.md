@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 5da036a6b352eecaf6a14f5d21bf5391fc5ed3fa
+source-git-commit: 26212ade689477154e4ea33dbc1970e3acea0a12
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2811'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 
 ## Webbläsare som stöds {#browsers}
@@ -70,7 +70,7 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
   Journey Optimizer inkommande kanaler har nya profiler som kanske inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
-  Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+  Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 * Journey Optimizer stöder maximalt 500 aktiva inkommande åtgärder när som helst. Dessa inkommande åtgärder ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [kodbaserade upplevelser](../code-based/get-started-code-based.md), [innehållskort](../../rp_landing_pages/content-card-landing-page.md)) räknas om de är en del av en live-kampanj eller om de är en nod som används i en direktresa. När du har nått det här numret måste du inaktivera äldre kampanjer eller resor som använder inkommande åtgärder innan du kan starta nya.
 
@@ -171,7 +171,7 @@ Följande skyddsutkast gäller för [anpassade åtgärder](../action/action.md) 
 
 Följande skyddsutkast gäller för [händelserna](../event/about-events.md) på dina resor:
 
-* Journey Optimizer har stöd för en toppvolym på 5 000 inkommande resehändelser per sekund, över alla sandlådor.
+* Journey Optimizer har stöd för en toppvolym på 5 000 inkommande resehändelser per sekund, över alla sandlådor. Läs mer om den här begränsningen [på den här sidan](../event/about-events.md#event-thoughput).
 * Händelseutlösta resor kan ta upp till fem minuter för att behandla den första åtgärden i resan.
 * För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
 * Affärsevenemang kan inte användas tillsammans med enhetsevenemang eller målgruppsaktiviteter.

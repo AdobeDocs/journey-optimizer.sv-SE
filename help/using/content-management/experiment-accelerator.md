@@ -8,26 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
-hide: true
-hidefromtoc: true
-source-git-commit: 11c62deaf90b961233a35b9c4be8b81264b4c8e7
+exl-id: 938b148e-b2cd-4d8b-9f73-dd62420d6184
+source-git-commit: 61ae9196f699c3b6aa1d9a5bb2259d36aaebc0e3
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
 # Kom igång med Journey Optimizer Experimentation Accelerator {#content-experiment}
-
->[!BEGINSHADEBOX]
-
-* **[Kom igång med Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)**
-* [Dataanvändning i AI med Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
-* [Journey Optimizer Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
-* [Övervaka experiment](experiment-accelerator-monitor.md)
-* [Experimentationsmått](experiment-accelerator-metrics.md)
-
->[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >
@@ -88,7 +77,7 @@ Så här tilldelar du rollen till nya användare:
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+   Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
 

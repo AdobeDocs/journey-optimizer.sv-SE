@@ -2,24 +2,23 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurationssteg
-description: Lär dig hur du skapar relationsscheman direkt via användargränssnittet.
+description: Lär dig hur du skapar modellbaserade scheman direkt via användargränssnittet.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: 5eb60e7c551796829c25a407ff45fbfec4bb76dd
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
 
+# Konfigurera ett manuellt modellbaserat schema {#manual-schema}
 
-# Konfigurera ett manuellt relationsschema {#manual-schema}
-
-Relationsscheman kan skapas direkt via användargränssnittet, vilket möjliggör detaljerad konfiguration av attribut, primärnycklar, versionsfält och relationer.
+Modellbaserade scheman kan skapas direkt via användargränssnittet, vilket möjliggör detaljerad konfiguration av attribut, primärnycklar, versionsfält och relationer.
 
 I följande exempel definieras schemat **Förmånsmedlemskap** manuellt för att illustrera den struktur som krävs för Orchestrated-kampanjer.
 
-1. [Skapa ett relationsschema manuellt](#schema) med Adobe Experience Platform-gränssnittet.
+1. [Skapa ett modellbaserat schema manuellt](#schema) med Adobe Experience Platform-gränssnittet.
 
 1. [Lägg till attribut](#schema-attributes) som kund-ID, medlemsnivå och statusfält.
 
@@ -31,7 +30,7 @@ I följande exempel definieras schemat **Förmånsmedlemskap** manuellt för att
 
 ## Skapa ditt schema {#schema}
 
-Börja med att skapa ett nytt relationsschema manuellt i Adobe Experience Platform. Med den här processen kan du definiera schemastrukturen från grunden, inklusive dess namn och beteende.
+Börja med att skapa ett nytt modellbaserat schema manuellt i Adobe Experience Platform. Med den här processen kan du definiera schemastrukturen från grunden, inklusive dess namn och beteende.
 
 1. Logga in på Adobe Experience Platform.
 
@@ -39,7 +38,7 @@ Börja med att skapa ett nytt relationsschema manuellt i Adobe Experience Platfo
 
 1. Klicka på **[!UICONTROL Create Schema]**.
 
-1. Välj **[!UICONTROL Relational]** som **schematyp**.
+1. Välj **[!UICONTROL Model-based]** som **schematyp**.
 
    ![](assets/admin_schema_1.png){zoomable="yes"}
 
@@ -59,7 +58,7 @@ Sedan lägger du till attribut för att definiera strukturen för ditt schema. D
 
 Alla scheman som används för mål måste innehålla minst ett identitetsfält av typen `String` med ett associerat identitetsnamnområde. Detta garanterar kompatibilitet med Adobe Journey Optimizer verktyg för målinriktning och identitetsupplösning.
 
-+++Följande funktioner stöds när du skapar relationsscheman i Adobe Experience Platform
++++Följande funktioner stöds när du skapar modellbaserade scheman i Adobe Experience Platform
 
 * **ENUM**\
   ENUM-fält stöds i både DDL-baserade och manuella schemagenereringar, vilket gör att du kan definiera attribut med en fast uppsättning tillåtna värden.
@@ -68,7 +67,7 @@ Alla scheman som används för mål måste innehålla minst ett identitetsfält 
   Etikettering stöds på schemafältnivå för att tillämpa datastyrningsprinciper som åtkomstkontroll och användningsbegränsningar. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
 
 * **Sammansatt nyckel**\
-  Sammansatta primärnycklar stöds i relationsschemadefinitioner, vilket gör det möjligt att använda flera fält tillsammans för att unikt identifiera poster.
+  Sammansatta primärnycklar stöds i modellbaserade schemadefinitioner, vilket gör det möjligt att använda flera fält tillsammans för att unikt identifiera poster.
 
 +++
 
@@ -148,6 +147,12 @@ När du har definierat ditt schema är nästa steg att skapa en datauppsättning
 Nu måste du aktivera datauppsättningen för Orchestrate-kampanjer.
 
 ## Aktivera datauppsättning för orkestrerade kampanjer {#enable}
+
+>[!CONTEXTUALHELP]
+>id="ajo_oc_enable_dataset_for_oc"
+>title="Samordnade kampanjer"
+>abstract="När du har skapat datauppsättningen måste du explicit aktivera den för Orchestrated Campaigns. Detta steg garanterar att datauppsättningen är tillgänglig för realtidssamordning och personalisering inom Adobe Journey Optimizer."
+
 
 När du har skapat datauppsättningen måste du explicit aktivera den för Orchestrated Campaigns. Detta steg garanterar att datauppsättningen är tillgänglig för realtidssamordning och personalisering inom Adobe Journey Optimizer.
 

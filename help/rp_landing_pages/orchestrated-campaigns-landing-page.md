@@ -5,7 +5,7 @@ title: Samordnade kampanjer
 description: Samordnade kampanjer
 redpen-status: CREATED_||_2025-08-11_20-27-33
 exl-id: 31f3668f-99fb-4388-a379-4979c63b7b3a
-source-git-commit: 8205d248d986cdc1a2262705c58524c2434265f5
+source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Med samordnade kampanjer i Adobe Journey Optimizer kan ni utforma och genomföra
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Introduktion till samordnade kampanjer
 
@@ -30,7 +30,7 @@ Lär dig mer om kärnfunktioner, komponenter och distinktioner i orkestrerade ka
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Gardrutor och begränsningar
 
@@ -40,17 +40,17 @@ Förstå de begränsningar och begränsningar som ska beaktas när orkestrerade 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Datakonfiguration för samordnade kampanjer
 
-Konfigurera relationsscheman, datauppsättningar och kanaler för att säkerställa databeredskapen för samordnade kampanjer.
+Konfigurera modellbaserade scheman, datamängder och kanaler för att säkerställa databeredskapen för samordnade kampanjer.
 
 [Utforska datakonfiguration](data-configuration-landing-page.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Starta och hantera samordnade kampanjer
 
@@ -60,7 +60,7 @@ En stegvis guide för att skapa, samordna, övervaka och analysera din första s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Fråga databasen efter samordnade kampanjer
 
@@ -70,7 +70,7 @@ Använd databasfrågor för att effektivt rikta in, segmentera och återrikta m�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Omfattande guide till kampanjaktiviteter
 
@@ -84,4 +84,4 @@ Identifiera målgruppsanpassning, kanal och flödeskontrollaktiviteter som är t
 ## Ytterligare resurser
 
 - **[Vanliga frågor och svar](../using/orchestrated/orchestrated-campaigns-faq.md)** - Utforska vanliga frågor och svar (FAQ) om Adobe Journey Optimizer samordnade kampanjer.
-.
+

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8462c75e-4f4b-4c4f-8734-19efbbc70c7a
-source-git-commit: 03b22446ee06b5a6c20145c4b9abed95ac24e8bb
+source-git-commit: de1a8f0136dad476b1bd0e2cb3468da9271e66d0
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,10 @@ Alla attribut som används i ditt innehåll för personalisering identifieras au
 
 Innan du börjar testa ditt innehåll med exempelindata bör du tänka på följande skyddsutkast och krav.
 
-* **Kanaler** - Simulera innehållsvariationer är bara tillgängligt för meddelandekanalerna E-post, SMS och Push.
+* **Kanaler** - Simulera innehållsvariationer är tillgängligt för:
+
+   * meddelandekanalerna för e-post, SMS och push,
+   * alla inkommande kanaler (webb, kodbaserad upplevelse, In-app, innehållskort).
 
 * **Funktioner som stöds** - Innehållsvariationer kan användas med [!DNL Journey Optimizer] flerspråkigt innehåll och funktioner för innehållsexperiment. På så sätt kan du testa meddelanden på flera språk och optimera innehåll genom att experimentera.
 
@@ -42,7 +45,7 @@ Innan du börjar testa ditt innehåll med exempelindata bör du tänka på följ
 
   >[!NOTE]
   >
-  >För tillfället är inte inkorgsåtergivning och skräppostrapporter tillgängliga i den aktuella upplevelsen:. Om du vill använda de här funktionerna väljer du knappen **[!UICONTROL Simulate content]** i ditt innehåll för att komma åt det tidigare användargränssnittet.
+  >För tillfället är inte inkorgsåtergivning och skräppostrapporter tillgängliga i den aktuella upplevelsen. Om du vill använda de här funktionerna väljer du knappen **[!UICONTROL Simulate content]** i ditt innehåll för att komma åt det tidigare användargränssnittet.
 
 * **Attribut** - Både profil- och kontextuella attribut stöds.
 

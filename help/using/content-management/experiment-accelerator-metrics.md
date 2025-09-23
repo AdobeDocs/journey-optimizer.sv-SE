@@ -8,27 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
-hide: true
-hidefromtoc: true
 exl-id: 74868625-f4ea-44f9-ae2a-8e5fdd22a081
-source-git-commit: 70fce6fae4db58c72496945c50155dbd0b4986b4
+source-git-commit: 61ae9196f699c3b6aa1d9a5bb2259d36aaebc0e3
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
 # Mätvärden {#experiment-accelerator-metrics}
-
->[!BEGINSHADEBOX]
-
-* [Kom igång med Journey Optimizer Experimentation Accelerator](experiment-accelerator.md)
-* [Dataanvändning i AI med Journey Optimizer Experimentation Accelerator](experiment-accelerator-security.md)
-* [Journey Optimizer Experimentation Accelerator bästa praxis](experiment-accelerator-best-practices.md)
-* [Monitor Experiments](experiment-accelerator-monitor.md)
-* **[Experimentationsmått](experiment-accelerator-metrics.md)**
-
->[!ENDSHADEBOX]
 
 Sidan **[!UICONTROL Metrics]** visar framgångsmått från Journey Optimizer- och Target-experiment på ett och samma ställe, vilket möjliggör prestandaövervakning, jämförelse och djupare insikter.
 
