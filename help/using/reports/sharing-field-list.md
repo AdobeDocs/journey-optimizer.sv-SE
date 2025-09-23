@@ -8,10 +8,10 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
-source-git-commit: d3f0adab52ed8e44a6097c5079396d1e9c06e0a7
+source-git-commit: c517e7faa027b5c1fe3b130f45fc7bf5020c454a
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 6%
+source-wordcount: '598'
+ht-degree: 3%
 
 ---
 
@@ -70,6 +70,43 @@ Den här mixinen innehåller alla fält som motsvarar ett profilexportjobb.
 | eventType | Sträng | Händelsetypen anger om det är en felhändelse för info-händelsen: Info, Error |
 | eventCode | Sträng | Felkoden som anger orsaken till motsvarande eventType |
 
+Läs mer om eventTypes [i det här avsnittet](#discarded-events).
+
 ## stepEvents {#stepevents-field}
 
 Den här kategorin innehåller de ursprungliga fälten för steghändelser. Se det här [avsnittet](../reports/sharing-legacy-fields.md).
+
+
+## Felsöka ignorerade händelsetyper i travel_step_events  {#discarded-events}
+
+När du efterfrågar travel_step_events för poster med `eventCode = 'discard'` kan du stöta på flera eventTypes.
+
+Nedan finns definitioner, vanliga orsaker och felsökningssteg för de vanligaste händelserna discardTypes:
+
+* EXTERNAL_KEY_COMPUTATION_ERROR: Det gick inte att beräkna en unik identifierare (extern nyckel) för kunden från händelsedata.
+Vanliga orsaker: Kundidentifierare som saknas eller har fel format (t.ex. e-post, kund-ID) i händelsens nyttolast.
+Felsökning: Kontrollera händelsekonfigurationen för nödvändiga identifierare och se till att händelsedata är fullständiga och korrekt formaterade.
+* NO_INTERESTED_JOURNEYS_FOR_SEGMENTMEMBERSHIP_EVENT: En segmentkvalificeringshändelse togs emot, men inga resor har konfigurerats för att svara på det här segmentet.
+Vanliga orsaker: Inga resor använder segmentet som utlösare, resor är i utkastläge/stoppat tillstånd eller så matchar inte segment-ID:n.
+Felsökning: Kontrollera att minst en resa är live och konfigurerad för segmentet och bekräfta segment-ID:n.
+* JOURNEY_INSTANCE_ID_NOT_CREATE: Det gick inte att skapa en reseinstans för kunden.
+Vanliga orsaker: Dubbletthändelser, hög händelsemängd, begränsningar för systemresurser.
+Felsökning: Implementera borttagning av dubbletter, undvik trafiktoppar, optimera resedesignen, kontakta supporten om den är permanent.
+* EVENT_WITH_NO_JOURNEY: En händelse togs emot men ingen aktiv resa har konfigurerats för att svara på den.
+Vanliga orsaker: Händelsenamn/ID-matchningsfel, resan har inte publicerats, fel sandlåda/organisation, testläge/profil matchar inte.
+Felsökning: Verifiera händelse- och resekonfiguration, kontrollera resans status, använd felsökningsverktyg.
+
+För utkast under pausade resor:
+
+* PAUSED_JOURNEY_VERSION: Ignorerar som inträffade vid ingången till resan
+
+* JOURNEY_IN_PAUSED_STATE: Ignorerar det som hände när profiler befinner sig på en resa
+
+Läs mer om de här händelserna och hur du felsöker dem i [Pausa en resa](../building-journeys/journey-pause.md#troubleshoot-profile-discards-in-paused-journeys).
+
+## Ytterligare resurser
+
+* [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
+* [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+

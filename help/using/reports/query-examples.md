@@ -8,9 +8,9 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 967e5ed75a7a3d37b37749f464a3b96e10b1f35a
+source-git-commit: c517e7faa027b5c1fe3b130f45fc7bf5020c454a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1554'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ I det här avsnittet visas flera vanliga exempel för att fråga efter händelse
 
 Se till att fälten som används i dina frågor har associerade värden i motsvarande schema.
 
-+++Vad är skillnaden mellan id, instanceid och profileid?
++++Vad är skillnaden mellan id, instance och profileid?
 
 * id: unikt för alla steg-händelseposter. Två olika steghändelser kan inte ha samma ID.
 * instanceId: instanceID är samma för alla steg-händelser som är kopplade till en profil inom en körning. Om en profil återgår till resan används ett annat instanceId. Detta nya instanceId är samma för alla steg-händelser för den ommatade instansen (från start till slut).
@@ -33,7 +33,7 @@ Se till att fälten som används i dina frågor har associerade värden i motsva
 
 ## Grundläggande användningsfall/vanliga frågor {#common-queries}
 
-+++Hur många profiler som har registrerat en resa inom en viss tidsram
++++Hur många profiler som pågick en resa inom en viss tidsram
 
 Den här frågan ger antalet distinkta profiler som har passerat den angivna resan under den angivna tidsramen.
 
@@ -46,6 +46,8 @@ AND _experience.journeyOrchestration.stepEvents.nodeType='start'
 AND _experience.journeyOrchestration.stepEvents.instanceType = 'unitary'
 AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 ```
+
+Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../reports/sharing-field-list.md#discarded-events).
 
 +++
 
@@ -110,7 +112,7 @@ AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 
 +++
 
-+++Vad händer med en viss profil under en viss resa inom en viss tidsram?
++++Vad som händer med en viss profil under en viss resa inom en viss tidsram
 
 _Datasjöfråga_
 
@@ -139,7 +141,7 @@ ORDER BY timestamp;
 
 +++
 
-+++Hur lång tid det tar mellan två noder
++++Hur lång tid det tar mellan två noder 
 
 Dessa frågor kan till exempel användas för att beräkna hur lång tid en vänteaktivitet tar. På så sätt kan du kontrollera att vänteaktiviteten är korrekt konfigurerad.
 
@@ -268,7 +270,7 @@ WHERE
 
 +++
 
-+++Så här kontrollerar du information om en serviceEvent
++++Så här kontrollerar du information om en serviceEvent 
 
 Datauppsättningen för händelser i resesteg innehåller alla stepEvents och serviceEvents. stepEvents används vid rapportering, eftersom de avser aktiviteter (händelser, åtgärder osv.) i profiler under en resa. serviceEvents lagras i samma datauppsättning och de anger ytterligare information för felsökningsändamål, till exempel orsaken till att en upplevelsehändelse ignoreras.
 
@@ -320,7 +322,7 @@ Den här frågan returnerar alla olika fel som inträffade när en åtgärd kör
 
 ## Profilbaserade frågor {#profile-based-queries}
 
-+++Sök om en profil angav en specifik resa
++++Sök efter om en profil har angett en viss resa
 
 _Datasjöfråga_
 
@@ -344,7 +346,7 @@ Resultatet måste vara större än 0. Den här frågan returnerar det exakta ant
 
 +++
 
-+++Sök om en profil skickades ett specifikt meddelande
++++Sök efter om en profil skickades ett visst meddelande
 
 Metod 1: Om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
 
@@ -396,7 +398,7 @@ Frågan returnerar listan med alla meddelanden tillsammans med antalet som anrop
 
 +++
 
-+++Sök efter alla meddelanden en profil har tagit emot de senaste 30 dagarna
++++Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna
 
 _Datasjöfråga_
 
@@ -424,7 +426,7 @@ Frågan returnerar listan med alla meddelanden tillsammans med antalet som anrop
 
 +++
 
-+++Sök efter alla resor en profil har gjort under de senaste 30 dagarna
++++Hitta alla resor en profil har registrerat under de senaste 30 dagarna
 
 _Datasjöfråga_
 
@@ -450,7 +452,7 @@ Frågan returnerar listan med alla resenamn tillsammans med det antal gånger so
 
 +++
 
-+++Antal profiler som är kvalificerade för en daglig resa
++++Antal profiler som är kvalificerade för en resa dagligen
 
 _Datasjöfråga_
 
@@ -474,11 +476,14 @@ ORDER BY DATE(timestamp) desc
 
 Frågan returnerar, för den angivna perioden, antalet profiler som har angetts för resan varje dag. Om en profil anges via flera identiteter räknas den två gånger. Om återinträde är aktiverat kan antalet profiler dupliceras över olika dagar om det återgick till resan på en annan dag.
 
+Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../reports/sharing-field-list.md#discarded-events).
+
+
 +++
 
 ## Frågor relaterade till den lästa målgruppen {#read-segment-queries}
 
-+++Tid för att slutföra ett målgruppsexportjobb
++++Tidsåtgång för att slutföra ett målgruppsexportjobb
 
 _Datasjöfråga_
 
@@ -512,7 +517,7 @@ Frågan returnerar tidsskillnaden i minuter, mellan den tidpunkt då målgruppen
 
 +++
 
-+++Antal profiler som tagits bort under resan eftersom de var dubbletter
++++Antal profiler som har ignorerats under resan eftersom de var dubbletter
 
 _Datasjöfråga_
 
@@ -673,7 +678,7 @@ VIKTIGT! Om ingen händelse returneras av frågan kan det bero på någon av fö
 +++
 
 
-+++Get Read Audience errors for a given travel version
++++Få läsfel för en viss reseversion
 
 _Datasjöfråga_
 
@@ -732,7 +737,7 @@ Om ingen post returneras betyder det att antingen:
 
 +++
 
-+++Hämta statistik om exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb
++++Få mätvärden för exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb
 
 _Datasjöfråga_
 
@@ -861,7 +866,7 @@ Den returnerar den totala mätningen för en viss reseversion, oavsett vilka job
 
 ## Frågor relaterade till målgruppskvalifikation {#segment-qualification-queries}
 
-+++Profil ignoreras på grund av en annan målgruppsimplementering än den konfigurerade
++++Profilen ignoreras på grund av en annan målgruppsimplementering än den konfigurerade
 
 _Datasjöfråga_
 
@@ -887,7 +892,7 @@ Den här frågan returnerar alla profil-ID:n som ignorerades av reseversionen p�
 
 +++
 
-+++Publikkvalificeringshändelser som ignoreras av någon annan orsak för en viss profil
++++Publikkvalificeringshändelser som ignorerats av någon annan orsak för en viss profil
 
 _Datasjöfråga_
 
@@ -969,6 +974,8 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```
 
+Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../reports/sharing-field-list.md#discarded-events).
+
 +++
 
 +++Kontrollera om en extern händelse för en profil har ignorerats av någon annan anledning
@@ -997,9 +1004,11 @@ _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' 
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
 ```
 
+Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../reports/sharing-field-list.md#discarded-events).
+
 +++
 
-+++Kontrollera antalet alla händelser som ignoreras av stateMachine av errorCode
++++Kontrollera antalet händelser som ignoreras av stateMachine av errorCode
 
 _Datasjöfråga_
 
@@ -1016,6 +1025,8 @@ SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, CO
 where
 _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' GROUP BY _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode
 ```
+
+Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../reports/sharing-field-list.md#discarded-events).
 
 +++
 
@@ -1043,11 +1054,13 @@ where
 _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
 ```
 
+Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../reports/sharing-field-list.md#discarded-events).
+
 +++
 
 ## Vanliga resebaserade frågor {#journey-based-queries}
 
-+++Antal aktiva dygnsresor
++++Antal dagliga aktiva resor
 
 _Datasjöfråga_
 
@@ -1069,11 +1082,12 @@ ORDER BY DATE(timestamp) desc
 
 Frågan returnerar, för den angivna perioden, antalet unika resor som utlöstes varje dag. En enda resa som utlöses på flera dagar räknas en gång om dagen.
 
+
 +++
 
 ## Frågor om reseinstanser {#journey-instances-queries}
 
-+++Antal profiler i ett specifikt läge vid en viss tidpunkt
++++Antal profiler i ett specifikt tillstånd vid en viss tidpunkt
 
 _Datasjöfråga_
 
@@ -1223,7 +1237,7 @@ ORDER BY
 
 +++
 
-+++Hur många profiler avbröt resan under den angivna tidsperioden
++++Hur många profiler som slutade resan under den angivna tidsperioden
 
 _Datasjöfråga_
 
@@ -1263,7 +1277,7 @@ ORDER BY
 
 +++
 
-+++Hur många profiler avslutade resan under den specifika tidsperioden med nod/status
++++Hur många profiler slutade resan under den angivna tidsperioden med nod/status
 
 _Datasjöfråga_
 
