@@ -20,7 +20,7 @@ Adobe Journey Optimizer användningsfall ger er möjlighet att skapa meningsfull
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Lär dig mer om användningsexempel
 
@@ -30,7 +30,7 @@ Utforska praktiska exempel och strategier för att maximera Adobe Journey Optimi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Uppslag med upplevelsehändelser
 
@@ -40,7 +40,7 @@ Använd upplevelsehändelser för att hantera avanmälningar, personalisera inne
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skicka flerkanalsmeddelanden
 
@@ -50,7 +50,7 @@ Skapa resor som utnyttjar målgruppssegmentering och händelseutlösare för att
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skicka ett meddelande med Campaign v7/v8
 
@@ -60,7 +60,7 @@ Integrera Adobe Campaign med Journey Optimizer för att skicka e-postmeddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skicka ett meddelande till prenumeranter
 
@@ -70,7 +70,7 @@ Ställ in resor för att skicka meddelanden till prenumeranter baserat på prefe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Skicka samlingar dynamiskt med anpassade åtgärder
 
@@ -86,4 +86,4 @@ Lär dig hur du konfigurerar anpassade åtgärder för att skicka dynamiska data
 
 - **[Begränsa genomströmning med externa datakällor och anpassade åtgärder](../using/building-journeys/limit-throughput.md)** - Optimera resans genomströmning och hantera gränser för externa system med datakällor och anpassade åtgärder.
 - **[Använd anpassade åtgärder för att skriva resehändelser i Experience Platform](../using/building-journeys/custom-action-aep.md)** - Konfigurera autentiserade anrop och HTTP API-slutpunkter för att skriva resehändelser till Adobe Experience Platform.
-- **[Ta bort profiler från en direktresa](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-pause#journey-exit-criteria)** - Av affärs- eller åtgärdsskäl kan du behöva ta bort vissa profiler från en direktresa och exkludera profiler som matchar ett visst villkor som för närvarande gäller för resan. Detta kan göras genom att resan pausas.
+- **[Ta bort profiler från en direktresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-pause#journey-exit-criteria)** - Av affärs- eller åtgärdsskäl kan du behöva ta bort vissa profiler från en direktresa och exkludera profiler som matchar ett visst villkor som för närvarande gäller för resan. Detta kan göras genom att resan pausas.
