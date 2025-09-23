@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 9336b77e5b7682923dca6e95f0ede67c0d9b0f85
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '692'
 ht-degree: 11%
 
 ---
@@ -47,6 +47,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 * [Läs målgrupp](read-audience.md)
 * [Vänta](wait-activity.md)
 * [Innehållsbeslut](content-decision.md)
+* [Datauppsättningssökning](dataset-lookup.md)
 
 ![Paletten Orchestration-aktiviteter i resedesignern](assets/journey-orchestration-activities.png)
 

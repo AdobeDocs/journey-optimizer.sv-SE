@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
+source-git-commit: 9336b77e5b7682923dca6e95f0ede67c0d9b0f85
 workflow-type: tm+mt
-source-wordcount: '2954'
+source-wordcount: '2956'
 ht-degree: 18%
 
 ---
@@ -80,18 +80,19 @@ ht-degree: 18%
       + [Reaktion](using/building-journeys/reaction-events.md)
       + [Målgruppskvalifikation](using/building-journeys/audience-qualification-events.md)
       + [Optimera](using/building-journeys/optimize.md)
-      + [Läs målgrupp](using/building-journeys/read-audience.md)
-      + [Vänta](using/building-journeys/wait-activity.md)
       + [Villkor](using/building-journeys/conditions.md)
       + [Villkor](using/building-journeys/condition-activity.md)
+      + [Läs målgrupp](using/building-journeys/read-audience.md)
+      + [Vänta](using/building-journeys/wait-activity.md)
       + [Innehållsbeslut](using/building-journeys/content-decision.md)
+      + [Datauppsättningssökning](using/building-journeys/dataset-lookup.md)
       + [Åtgärd](using/building-journeys/journey-action.md)
       + [Inbyggda kanalåtgärder](using/building-journeys/journeys-message.md)
+      + [Hoppa](using/building-journeys/jump.md)
+      + [Uppdatera profil](using/building-journeys/update-profiles.md)
       + [Anpassade åtgärder](using/building-journeys/using-custom-actions.md)
       + [Adobe Campaign Standard-åtgärder](using/building-journeys/using-adobe-campaign-standard.md)
       + [Adobe Campaign v7/v8-åtgärder](using/building-journeys/using-adobe-campaign-v7-v8.md)
-      + [Hoppa](using/building-journeys/jump.md)
-      + [Uppdatera profil](using/building-journeys/update-profiles.md)
    + Skapa uttryck {#building-advanced-conditions-journeys}
       + [Skapa uttryck](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
       + [Arbeta med den avancerade uttrycksredigeraren](using/building-journeys/expression/expressionadvanced.md)
@@ -875,7 +876,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

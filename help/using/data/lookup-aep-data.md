@@ -11,9 +11,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: 248aae7b2841086ef5a0ea73936c245963e8eae2
+source-git-commit: 9336b77e5b7682923dca6e95f0ede67c0d9b0f85
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="lookup-aep-data"
 >title="Aktivera för sökning"
->abstract="Genom att aktivera en datauppsättning för sökning kan ni utnyttja dess data med Journey Optimizer personalisering och beslutsfunktioner."
+>abstract="Genom att aktivera en datauppsättning för sökning kan ni utnyttja data i Journey Optimizer personalisering, beslutsfattande och möjlighet att samordna kundresor."
 
 >[!AVAILABILITY]
 >
 >Den här funktionen är för närvarande tillgänglig för alla kunder i en begränsad version.
 
-Med Journey Optimizer kan ni utnyttja data från Adobe Experience Platform med personalisering och beslutsfunktioner. För att göra detta måste postbaserade datauppsättningar som behövs för sökpersonalisering först aktiveras för söktjänsten enligt beskrivningen nedan.
+Med Journey Optimizer kan ni utnyttja data från Adobe Experience Platform med funktioner för personalisering, beslutsfattande och resesamordning. För att göra detta måste postbaserade datauppsättningar som behövs för sökpersonalisering först aktiveras för söktjänsten enligt beskrivningen nedan.
 
 ## Måste läsas
 
@@ -150,12 +150,10 @@ Den här processindikatorn hjälper till att förstå när nya grupper med data 
 
 ![](assets/aep-data-monitoring.png)
 
-<!--Ivan Mironchuk
-Note - we have a bug here currently. Will need to update screenshot once the lookup service will accurately reflect the progress.-->
-
 ## Nästa steg
 
 När en datauppsättning har aktiverats för sökning med ett API-anrop kan du använda data med personalisering och beslutsfunktioner för [!DNL Journey Optimizer]. Mer information finns i följande avsnitt:
 
 * [Använd Adobe Experience Platform-data för personalisering](../personalization/aep-data-perso.md)
 * [Använd Adobe Experience Platform-data för beslut](../experience-decisioning/aep-data-exd.md)
+* [Använd Adobe Experience Platform-data för resesamordning](../building-journeys/dataset-lookup.md)
