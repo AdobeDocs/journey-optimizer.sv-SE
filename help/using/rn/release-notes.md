@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: deafaf331edb1df9a3417a0e85d641a62fa682d2
+source-git-commit: 0d58a5075e6459ee7d46192f7bc1c9ee0b8b70bf
 workflow-type: tm+mt
-source-wordcount: '3111'
+source-wordcount: '3032'
 ht-degree: 1%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 1%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Information om förhandsversionen från september 2015 {#25-9-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 23-24 september 2025
 
@@ -237,16 +237,16 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 
 * **Behörigheter för godkännandeprincip**
 Ett alternativ lades till när en godkännandeprincip skapades eller ställdes in för att förhindra att de som skapar en resa/kampanj godkänner sina egna objekt.
-<!-->
-* **Nya reseaviseringar**\
-  Det finns nya förkonfigurerade aviseringar för resor:
+<!--
+* **New Journey Alerts**  
+  New pre-configured alerts are available for journeys:
 
-   * Frekvensen för ignorerade profiler överskreds: Profilförhållandet mellan ignorerade profiler och angivna profiler under de senaste 5 minuterna överskred tröskelvärdet.
-   * Felfrekvens för anpassad åtgärd överskreds: Förhållandet mellan anpassade åtgärdsfel och lyckade HTTP-anrop under de senaste 5 minuterna överskred tröskelvärdet.
-   * Profilfelsfrekvensen har överskridits: Profilernas felförhållande till de angivna profilerna under de senaste 5 minuterna överskred tröskelvärdet.
+  * Profile Discard Rate Exceeded: Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold.  
+  * Custom Action Error Rate Exceeded: Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold.  
+  * Profile Error Rate Exceeded: Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
 
-  Du kan ändra tröskelvärden och prenumerera på enskilda varningar på resenivå jämfört med globalt.
-—>
+  You can modify threshold values and subscribe to individual journey-level alerts vs globally.
+-->
 
 * **Kapslade JSON-body-parametrar stöds nu i anpassad autentisering**\
   När anpassad autentisering konfigureras för en anpassad åtgärd stöds nu kapslade JSON-objekt (t.ex. underobjekt inom `bodyParams`).
