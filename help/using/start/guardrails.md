@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 4ce48f7929aa218908e8a1e25c37410c6ded6bde
+source-git-commit: 5da036a6b352eecaf6a14f5d21bf5391fc5ed3fa
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2803'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 Nedan finns ytterligare skyddsutkast och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 
 ## Webbläsare som stöds {#browsers}
@@ -52,10 +52,9 @@ Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en
 
 ### E-postskyddsutkast {#message-guardrails}
 
-Följande skyddsutkast gäller för [e-postkanalen](../../rp_landing_pages/email-landing-page.md):
+<!--The following guardrails apply to the [email channel](../../rp_landing_pages/email-landing-page.md):-->
 
-* Du kan inte lägga till bilagor i ett e-postmeddelande med [!DNL Journey Optimizer].
-* Du kan inte använda samma sändande domän för att skicka ut meddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
+Du kan inte använda samma sändande domän för att skicka ut e-postmeddelanden från [!DNL Adobe Journey Optimizer] och från en annan produkt, till exempel [!DNL Adobe Campaign] eller [!DNL Adobe Marketo Engage].
 
 ### SMS-skyddsräcken {#sms-guardrails}
 
@@ -65,15 +64,21 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 * Synkronisering av meddelandefeedback är för närvarande inte tillgängligt för MMS.
 * Samtalshantering fungerar på SMS-kanalnivå för MMS.
 
-### Skyddsutkast för webbkanal {#web-guardrails}
+### Inkommande kanalskyddsräcken {#inbound-guardrails}
 
-[!DNL Journey Optimizer] [webbkampanjer](../web/get-started-web.md) har nya profiler som inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
+* Journey Optimizer stöder en toppvolym på 5 000 inkommande begäranden per sekund. Skyddsplanen gäller för alla inkommande begäranden, som kan härröra från någon av de ingående kanaler som stöds av Journey Optimizer ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [kodbaserade upplevelser](../code-based/get-started-code-based.md), [innehållskort](../../rp_landing_pages/content-card-landing-page.md)).
 
-Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+  Journey Optimizer inkommande kanaler har nya profiler som kanske inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
-### Kodbaserade kanalgarantier {#code-based-guardrails}
+  Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
-Om du vill använda kodbaserade upplevelseåtgärder i [!DNL Journey Optimizer] och leverera kodinnehållets nyttolast som kan användas av dina program följer du de krav som anges på [den här sidan](../code-based/code-based-prerequisites.md).
+* Journey Optimizer stöder maximalt 500 aktiva inkommande åtgärder när som helst. Dessa inkommande åtgärder ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [kodbaserade upplevelser](../code-based/get-started-code-based.md), [innehållskort](../../rp_landing_pages/content-card-landing-page.md)) räknas om de är en del av en live-kampanj eller om de är en nod som används i en direktresa. När du har nått det här numret måste du inaktivera äldre kampanjer eller resor som använder inkommande åtgärder innan du kan starta nya.
+
+* Om du vill använda [kodbaserad upplevelse](../code-based/get-started-code-based.md) i [!DNL Journey Optimizer] och leverera kodinnehållets nyttolast som kan användas av dina program följer du de krav som anges på [den här sidan](../code-based/code-based-prerequisites.md).
+
+### Skyddsutkast för transaktionsmeddelanden {#transactional-message-guardrails}
+
+Journey Optimizer har stöd för en toppvolym på 500 transaktionsmeddelanden per sekund i kampanjer.
 
 ## Garantier för landningssidor {#lp-guardrails}
 
@@ -199,7 +204,7 @@ Du kan välja mellan följande två lösningar:
 
 ### Ytterligare identifierare {#supplemental}
 
-Särskilda skyddsräcken gäller för användningen av kompletterande identifierare under resor. De listas på [den här sidan](../building-journeys/supplemental-identifier.md#guardrails)
+Särskilda skyddsräcken gäller för användningen av kompletterande identifierare under resor. De listas på [den här sidan](../building-journeys/supplemental-identifier.md#guardrails).
 
 ### Uttrycksredigerare {#expression-editor}
 
