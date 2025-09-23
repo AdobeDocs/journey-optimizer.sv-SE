@@ -4,9 +4,9 @@ description: Lär dig hur du skapar regler för bockning för dina resor och hur
 role: User
 level: Beginner
 exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
-source-git-commit: 316fdb4e581ea139c2914f395a5d1823c2ded3cc
+source-git-commit: 450a6accf11d72d56e6b93cec9ec89dc8cf3c8f3
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,9 @@ Följ de här stegen för att skapa en regel för begränsning av kundresor:
 
    1. I fältet **[!UICONTROL Capping]** anger du det maximala antalet resor som en profil kan registreras i samtidigt.
 
-   1. Använd fältet **[!UICONTROL Prioritization look ahead]** för att dela upp reseposter baserat på prioritetspoäng under en vald period (t.ex. 1 dag, 7 dagar, 30 dagar). Detta gör det lättare att prioritera inträde på större kundresor om en profil är berättigad till flera kundresor.
+   1. Använd fältet **[!UICONTROL Prioritization look ahead]** för att dela upp reseposter baserat på prioritetspoäng under en vald period (t.ex. 1 dag, 7 dagar, 30 dagar).
+
+      Med det här alternativet genomsöks kommande schemalagda Read-Audience-resor under resten av veckan för att avgöra om profilen ska hindras från att komma in på resan på grund av att en resa med högre prioritet kommer upp. Det hjälper till att prioritera inträde på högvärdesresor om en profil är berättigad till flera resor.
 
    I det här exemplet vill vi hindra profiler från att komma in på resan om de redan är inskrivna i en annan resa som innehåller samma regeluppsättning. Om en annan resa inom de kommande 7 dagarna har ett högre prioritetspoäng kommer profilen inte att gå in på den här resan.
 
@@ -113,8 +115,8 @@ När en resa är live kan du checka in reserapporten om regeluppsättningen har 
 
 ![](assets/journey-report.png)
 
-Dessutom kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att skapa frågor för att identifiera vilken regel som gjorde att en profil inte pågick en viss resa. Ett frågeexempel finns i [det här avsnittet](../reports/query-examples.md#common-queries).
+Dessutom kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att skapa frågor för att identifiera vilken regel som gjorde att en profil inte pågick en viss resa. Ett frågeexempel finns i [det här avsnittet](../reports/query-examples.md#common-queries).
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3447618?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)
