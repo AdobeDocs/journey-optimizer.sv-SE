@@ -12,9 +12,9 @@ badge: label="Begränsad tillgänglighet" type="Informative"
 hidefromtoc: true
 hide: true
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
-source-git-commit: 45ebae048a748429a1918326526f3756a3e93c4c
+source-git-commit: 60a4fb6b88fe94119bcbd209a5f893e12142c0f0
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor 
 >id="ajo_lp_form_connection"
 >title="Markera den slutpunkt som ska användas"
 >abstract="Definiera slutpunkten för direktuppspelning där data skickas när formuläret skickas."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_dataset"
@@ -69,7 +69,7 @@ När du skapar en förinställning:
 
    >[!NOTE]
    >
-   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
 
 1. Välj en **[!UICONTROL Dataset]** att länka till formuläret. Här lagras och speglas formulärsvaren. Du kan skriva för att söka efter en viss datauppsättning eller välja den i listan.
 
@@ -91,7 +91,7 @@ Alla befintliga formulär visas. Du kan filtrera formulär baserat på deras sta
 >id="ajo_lp_form_preset"
 >title="Välj en förinställning"
 >abstract="Välj en fördefinierad förinställning som innehåller anslutningen som ska användas och en fördefinierad datauppsättning för formuläret."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
 
 Följ stegen nedan när du vill skapa ett formulär.
 
@@ -156,6 +156,32 @@ Gör något av följande:
   >De villkor som definieras i en regel läses sekventiellt.
 
   ![](assets/lp_create-form-thank-you-conditional.png){width=40%}
+
+## Redigera ett publicerat formulär {#edit-form}
+
+När ett formulär har publicerats kan du fortfarande redigera det. Följ stegen nedan.
+
+1. Öppna [formulärlistan](#access-forms) och välj ett publicerat formulär.
+
+1. Klicka på knappen **[!UICONTROL Edit form]**.
+
+   ![](assets/lp_edit-form-button.png){width=90%}
+
+1. En ny version av formuläret skapas med utkaststatusen. Klicka på **[!UICONTROL Create draft version]**.
+
+1. Uppdatera formuläret efter behov och klicka på **[!UICONTROL Save]**. Formuläret har nu statusen **[!UICONTROL Published (with draft)]**:
+
+   * Den aktuella versionen har fortfarande statusen **[!UICONTROL Published]** tills du publicerar den uppdaterade versionen.
+
+   * Den uppdaterade versionen har statusen **[!UICONTROL Draft]**.
+
+1. I formulärsammanfattningen kan du navigera mellan de två versionerna av formuläret.
+
+   ![](assets/lp_published-with-draft-form.png){width=70%}
+
+1. I avsnittet **[!UICONTROL Draft]** kan du antingen publicera eller ignorera utkastet samt redigera informationen eller innehållet i formuläret.
+
+   ![](assets/lp_edit-draft-form.png){width=75%}
 
 ## Utnyttja formuläret på en landningssida {#leverage-form-in-lp}
 
