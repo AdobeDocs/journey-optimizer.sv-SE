@@ -10,9 +10,10 @@ level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 hide: true
 hidefromtoc: true
-source-git-commit: ddeb3512fbe1d1de86456fe2c3ccd2b3805b5684
+exl-id: 74868625-f4ea-44f9-ae2a-8e5fdd22a081
+source-git-commit: 70fce6fae4db58c72496945c50155dbd0b4986b4
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -35,8 +36,6 @@ Sidan **[!UICONTROL Metrics]** visar framgångsmått från Journey Optimizer- oc
 
 När du går till fliken **[!UICONTROL Metrics]** listas alla tillgängliga framgångsmått från Journey Optimizer och Adobe Target i en konsoliderad vy för att hjälpa dig att spåra prestanda mellan olika initiativ, jämföra resultat och snabbt identifiera områden som behöver åtgärdas.
 
-Listan **[!UICONTROL Metrics]** innehåller:
-
 Du får åtkomst till filter genom att klicka på ![](assets/do-not-localize/Smock_Filter_18_N.svg), som innehåller sammanhangsberoende alternativ som filtrering med **[!UICONTROL Source]** eller **[!UICONTROL Used in active experiments]**.
 
 Du kan också snabbt hitta ett mått genom att skriva dess namn i sökfältet.
@@ -53,9 +52,9 @@ Diagrammet **[!UICONTROL Incremental over time]** innehåller en visuell beskriv
 
 Följande sammanfattningsvärden är tillgängliga för snabb referens:
 
-* **[!UICONTROL Total]**:
+* **[!UICONTROL Total]**: Det ackumulerade värdet för det valda måttet under rapporteringsperioden.
 
-* **[!UICONTROL Average]**:
+* **[!UICONTROL Average]**: Det typiska värdet för måttet beräknat över det valda tidsintervallet. Genom att balansera variationer dagligen eller veckovis får den en tydligare bild av det normala resultatet och kan användas som utgångspunkt för jämförelsen.
 
 * **[!UICONTROL Conversion rate]**: Procentandel profiler som slutförde den önskade åtgärden (t.ex. köp, registrering) efter att behandlingen har visats.
 
@@ -64,3 +63,11 @@ Varje värde innehåller en procentuell förändring från föregående period, 
 ### Experimentera
 
 I det här avsnittet visas alla aktiva experiment inom den valda tidsramen (de senaste 90 dagarna, de senaste 30 dagarna eller de senaste 7 dagarna) och deras bidrag till måttet markeras.
+
+Följande meritförteckningar är tillgängliga:
+
+* **[!UICONTROL Lift]**: Mät den procentuella förbättringen av konverteringsgraden för en given behandling över baslinjen.
+
+* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#understand-confidence)
+
+* **[!UICONTROL Contribution]**: Den andel av den totala förändringen i mätvärdet som kan tillskrivas ett specifikt experiment eller en viss behandling, vilket gör det möjligt att identifiera de initiativ som har störst relativ effekt.
