@@ -5,9 +5,9 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: f82e725b58dbb2fdea70455a203d83b13b0e4a2b
+source-git-commit: 0a80d8df834c48b6a5e6f4fafae89006b64bca11
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1430'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Viktiga funktioner:
 
 För att få åtkomst till kampanjsamordning måste din licens innehålla antingen paketet **Journey Optimizer - Campaigns &amp; Journeys** eller paketet **Journey Optimizer - Campaigns**. Kontakta din Adobe-representant för att bekräfta din licens och uppdatera vid behov.
 
-Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
@@ -253,11 +253,11 @@ Samordnade kampanjer har stöd för fördefinierade filter: du kan definiera och
 +++
 
 
+## Ytterligare resurser
 
+Utforska följande resurser om du vill ha mer information och uppdateringar:
 
->[!MORELIKETHIS]
->
->* [Samordnade kampanjer, skyddsräcken och begränsningar](../orchestrated/guardrails.md)
->* [Kom igång med scheman och datauppsättningar i orkestrerade kampanjer](../orchestrated/gs-schemas.md)
->* [Skapa din första orkestrerade kampanj](../orchestrated/gs-campaign-creation.md)
->* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Samordnade kampanjer skyddar mot detaljer och begränsningar](../orchestrated/guardrails.md)
+* [Kom igång med scheman och datauppsättningar i samordnade kampanjer](../orchestrated/gs-schemas.md)
+* [Skapa din första samordnade kampanj](../orchestrated/gs-campaign-creation.md)
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
