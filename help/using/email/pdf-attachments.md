@@ -8,10 +8,11 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: e-post, meddelande, bilaga, PDF, redigerare
+badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 71e218d0-5b3b-4db5-8b7b-d08df8f088c4
-source-git-commit: 504b038a5f0a1f40304e355325843c238ab56da5
+source-git-commit: f5588c1a1d8f88b3de321e6499575ce0c11a0655
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,10 @@ ht-degree: 0%
 >id="ajo_pdf_attachments"
 >title="Lägg till en bifogad PDF-fil"
 >abstract="Bläddra och välj en PDF-fil som du vill bifoga i e-postmeddelandet.</br>Du kan skicka upp till 6 meddelanden med en PDF-bilaga per profil och år. Den största tillåtna filstorleken för varje bifogad fil är 5 MB.</br>Du kan köpa ett tilläggspaket för alla ytterligare storlekar och volymer. Mer information får du av Adobe."
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
 
 Du kan bifoga en statisk PDF-fil till e-postmeddelanden som du skickar med [!DNL Journey Optimizer].
 
@@ -45,7 +50,7 @@ Följ stegen nedan för att bifoga en PDF-fil till ett e-postmeddelande.
 
    >[!NOTE]
    >
-   >När du utformar meddelanden får du tillgång till databasen Assets Essentials direkt från Journey Optimizer gränssnitt. Mer information om det inbäddade [!DNL Assets Essentials]-användargränssnittet finns i [dokumentationen för Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"}.
+   >När du utformar meddelanden får du tillgång till databasen Assets Essentials direkt från Journey Optimizer gränssnitt. Mer information om det inbäddade [!DNL Assets Essentials]-användargränssnittet finns i [dokumentationen för Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
 1. Använd filtret **[!UICONTROL PDF]** i avsnittet **[!UICONTROL MIME Type]** för att begränsa urvalet till rätt filformat.
 
