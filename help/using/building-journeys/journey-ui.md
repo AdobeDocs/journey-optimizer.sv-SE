@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 12ece43b9a52150baa71fab09653c6212aea6643
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1413'
 ht-degree: 2%
 
 ---
@@ -138,18 +138,19 @@ Läs mer om resetyper och hantering av associerade poster på [den här sidan](e
 
 Resans status beror på dess livscykel. Den kan vara:
 
-* **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt.
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
-* **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** .
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [&#128279;](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
-* **Live**: resan har publicerats med knappen **Publicera** .
-* **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt.
+* **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** . [Läs mer](../building-journeys/testing-the-journey.md)
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Live**: resan har publicerats med knappen **Publicera** . [Läs mer](../building-journeys/publishing-the-journey.md)
+* **Pausad**: den aktiva resan har pausats med knappen **Paus** . [Läs mer](../building-journeys/journey-pause.md)
+* **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt. [Läs mer](../building-journeys/end-journey.md#stop-a-journey)
+* **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt. [Läs mer](../building-journeys/end-journey.md)
 
 >[!NOTE]
 >
->* Reseutvecklingscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: &quot;Publicera&quot; (mellan &quot;Utkast&quot; och &quot;Live&quot;), &quot;Aktivera testläge&quot; eller &quot;Inaktivera testläge&quot; (mellan &quot;Utkast&quot; och &quot;Utkast (test)&quot;) och &quot;Stoppar&quot; (mellan &quot;Live&quot; och &quot;Stoppad&quot;). När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+>* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **}Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
 >
->* Om du behöver ändra till en **live**-resa [skapar du en ny version](#journey-versions) av din resa.
+>* Om du behöver ändra till en **Live**-resa [skapar du en ny version](#journey-versions) av din resa. Du kan även pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst. [Läs mer om att pausa resor](../building-journeys/journey-pause.md)
 
 
 ## Duplicera en resa {#duplicate-a-journey}
