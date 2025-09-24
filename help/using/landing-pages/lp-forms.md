@@ -12,9 +12,9 @@ badge: label="Begränsad tillgänglighet" type="Informative"
 hidefromtoc: true
 hide: true
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
-source-git-commit: 60a4fb6b88fe94119bcbd209a5f893e12142c0f0
+source-git-commit: 7cbc4c7964d3fe9b79cbbff3917216f624286dba
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1425'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor 
 >id="ajo_lp_form_connection"
 >title="Markera den slutpunkt som ska användas"
 >abstract="Definiera slutpunkten för direktuppspelning där data skickas när formuläret skickas."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_dataset"
@@ -69,7 +69,7 @@ När du skapar en förinställning:
 
    >[!NOTE]
    >
-   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
 
 1. Välj en **[!UICONTROL Dataset]** att länka till formuläret. Här lagras och speglas formulärsvaren. Du kan skriva för att söka efter en viss datauppsättning eller välja den i listan.
 
@@ -85,13 +85,15 @@ Om du vill komma åt formulärlistan väljer du **[!UICONTROL Content Management
 
 Alla befintliga formulär visas. Du kan filtrera formulär baserat på deras status, skapandedatum eller ändringsdatum.
 
+![](assets/lp_form-list.png)
+
 ## Skapa och utforma ett formulär {#create-form}
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_preset"
 >title="Välj en förinställning"
 >abstract="Välj en fördefinierad förinställning som innehåller anslutningen som ska användas och en fördefinierad datauppsättning för formuläret."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
 
 Följ stegen nedan när du vill skapa ett formulär.
 
@@ -103,29 +105,71 @@ Följ stegen nedan när du vill skapa ett formulär.
 
 1. Välj en **[!UICONTROL Preset]** som innehåller anslutningen som ska användas och en fördefinierad datauppsättning för formuläret. [Lär dig skapa en formulärförinställning](#create-form-preset)
 
-1. Klicka på **[!UICONTROL Create]**.
+1. Klicka på **[!UICONTROL Create]**. Formulärdesignern öppnas och du kan lägga till strukturer och innehåll [komponenter](../email/content-components.md#add-content-components) för att skapa ditt innehåll. Du kan använda komponenterna [Text](../email/content-components.md#text) och **[!UICONTROL Field]**.
 
-   <!--![](assets/lp_create-form-filled.png){width=50%}-->
+1. Om du vill lägga till specifika fält i formuläret drar och släpper du en struktur på arbetsytan och drar en **[!UICONTROL Field]**-komponent inuti.<!--**[!UICONTROL Select field attribute]** or **[!UICONTROL Add custom field]**.-->
 
-1. Formulärdesignern öppnas. Lägg till [komponenter](../email/content-components.md#add-content-components) för att skapa formulärinnehållet. Du kan använda [Text](../email/content-components.md#text) -komponenter och **[!UICONTROL Field]**-komponenter.
+   ![](assets/lp_create-form-field.png)
 
-1. Med komponenten **[!UICONTROL Field]** kan du välja attribut baserat på det valda dataset-schemat.
+   Välj sedan något av följande alternativ:
+
+   >[!BEGINTABS]
+
+   >[!TAB Välj fältattribut]
+
+   Använd det här alternativet om du vill välja ett attribut baserat på det datamängdsschema som är länkat till ditt formulär.
 
    >[!NOTE]
    >
-   >Om du vill mappa insamlade data till en profil väljer du ett profilidentitetsfält. Identifiera identitetsfälten från attributlistan genom att söka efter fälten som markerats som **[!UICONTROL Required]**.<!--Explain-->
+   >Datauppsättningen definieras i den förinställning som är vald för formuläret. [Läs mer](#create-form-preset)
+
+   ![](assets/lp_select-field-attribute.png){width=100%}
 
    Du kan till exempel ange e-post och person-ID. När användarna fyller i dessa fält sparas den angivna informationen i den valda datauppsättningen.
 
-   ![](assets/lp_create-form-fields.png)
+   ![](assets/lp_create-form-field-attributes.png){width=55%}
 
-1. Du kan ange varje **[!UICONTROL Field details]**, till exempel instruktioner, ett standardvärde, ett valideringsmeddelande, maximal längd osv.
+   Om du vill mappa insamlade data till en profil väljer du ett profilidentitetsfält. Identitetsfälten markeras som **[!UICONTROL Required]** i attributlistan - du kan filtrera på dem.
 
-   ![](assets/lp_create-form-field-details.png)
+   ![](assets/lp_create-form-required-attributes.png){width=65%}
+
+   >[!TAB Lägg till anpassat fält]
+
+   Med det här alternativet kan du definiera ett kostnadsfritt fält utan att mappa det till ett fält i den länkade datauppsättningen.
+
+   ![](assets/lp_create-form-custom-field.png){width=85%}
+
+   >[!ENDTABS]
+
+1. I avsnittet **[!UICONTROL Field details]** på fliken **[!UICONTROL Content]** till höger kan du ange följande element efter behov:
+
+   * Justera **[!UICONTROL Label]** så att det tydligt framgår för mottagarna av formuläret.
+   * Ändra **[!UICONTROL Field type]** efter dina behov. Det kan vara en kryssruta, en valuta, ett datum, ett reglage, en URL-adress osv.
+
+     >[!NOTE]
+     >
+     >Övriga fältdetaljer kan variera beroende på vald fälttyp.
+
+   * Lägg till en **[!UICONTROL Placeholder]**.<!--To explain-->
+   * Ange **[!UICONTROL Instructions]**.<!--How will they be displayed in the form? To explain-->
+   * Ange en **[!UICONTROL Default value]** som visas innan användarna av formuläret fyller i fältet.
+   * Du kan definiera en anpassad **[!UICONTROL Validation message]**.
+   * Ange **[!UICONTROL Maximum length]**. Ett felmeddelande visas om formulärets mottagare överskrider gränsen när fältet fylls i.
+
+   ![](assets/lp_create-form-field-details.png){width=85%}
+
+1. I avsnittet **[!UICONTROL Field behaviors]** kan du definiera följande:
+
+   * Välj **[!UICONTROL Required]** om du vill göra det här fältet obligatoriskt. Om användaren inte fyller i fältet kan han/hon inte skicka formuläret.
+   * Välj **[!UICONTROL Sensitive]** om du vill att fältet ska vara skiftlägeskänsligt. <!--To confirm - do you mean retain capitalization when added to the dataset?-->
+   * Välj **[!UICONTROL Prefilled Enabled]** om du vill fylla i fältet från profilinformationen om det är tillgängligt.<!--Even for a custom field, or a field not mapped to a profile? What happens if no data is available?-->
+   * Välj **[!UICONTROL Enable input mask]** om du vill ersätta användarens indata med generiska tecken. Du kan använda *9* för att ange valfri siffra, *a* för att ange en bokstav eller * för att ange en siffra eller bokstav.<!--Not sure how you define that in the form-->
+
+   ![](assets/lp_create-form-field-behaviors.png){width=75%}
 
 1. Du kan justera formulärets layout, format och mått efter behov med hjälp av rutan **[!UICONTROL Styles]**. [Läs mer om formatering](../email/get-started-email-style.md)
 
-1. Klicka på **[!UICONTROL Save & close]**.
+1. När du har konfigurerat alla fält klickar du på **[!UICONTROL Save & close]**.
 
 1. Konfigurera sidan Tack. [Lär dig hur](#thank-you-page)
 
