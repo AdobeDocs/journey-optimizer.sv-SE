@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 version: Journey Orchestration
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
-source-git-commit: 4b0355c4e871e89c1b3eeea978959a2d97fa475d
+source-git-commit: 189a5e1c31946e05ef88161f0b5d678b95dd2064
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,15 @@ Datauppsättningen måste aktiveras för sökning i Adobe Experience Platform. D
 * Högst 20 markerade fält.
 * Högst 500 nycklar i uppslagstangentarrayen.
 * Förbättrad datastorlek är begränsad till 10 kB.
+
+### Ytterligare prestandaöverväganden
+
+Rekommendationerna nedan är riktlinjer för att undvika förseningar i leveransen:
+
+| Övervägande | Rekommenderad gräns | Beskrivning |
+| ------- | ------- | ------- |
+| Attribut per sökning | Upp till 20 | Antal datafält som har hämtats per post i en enda sökningsaktivitet. |
+| Uppslagsaktiviteter | Upp till 5 per resa | Varje resa kan innehålla upp till fem separata sökningsaktiviteter. Varje sökning kan ha en egen datauppsättning som mål. |
 
 ## Konfigurera datauppslagsaktiviteten {#configure}
 

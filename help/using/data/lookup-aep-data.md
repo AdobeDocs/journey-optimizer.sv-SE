@@ -11,9 +11,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: 9336b77e5b7682923dca6e95f0ede67c0d9b0f85
+source-git-commit: 189a5e1c31946e05ef88161f0b5d678b95dd2064
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -55,15 +55,6 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 >[!NOTE]
 >
 >Om du behöver ytterligare volymer utöver de säkerhetsalternativ som anges ovan kontaktar du Adobe.
-
-### Ytterligare prestandaöverväganden
-
-Rekommendationerna nedan är riktlinjer för att undvika förseningar i leveransen:
-
-| Övervägande | Rekommenderad gräns | Beskrivning |
-| ------- | ------- | ------- |
-| Attribut per sökning | Upp till 20 | Antal datafält som har hämtats per post i en enda sökningsaktivitet. |
-| Uppslagsaktiviteter | Upp till 5 per resa | Varje resa kan innehålla upp till fem separata sökningsaktiviteter. Varje sökning kan ha en egen datauppsättning som mål. |
 
 ## Aktivera en datauppsättning för datasökning {#enable}
 
