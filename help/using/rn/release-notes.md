@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 10fb1975aa5dcab1ad7f39815fcc5dd5ef0c187d
+source-git-commit: c708f33079da6d3e739dcec86870623fad40a69b
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 2%
+source-wordcount: '1806'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 
 ## Versionsinformation 25 september {#25-9-rn}
@@ -28,69 +28,6 @@ ht-degree: 2%
 **Releasedatum**: 23-24 september 2025
 
 ### Nya funktioner {#sept-25-9-features}
-
-<!--<table>
-<thead>
-<tr>
-<th><strong>Public API to retrieve journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new Journey Optimizer API is now available to retrieve journeys and their associated objects such as campaigns and surfaces.</p>
-</td>
-</tr>
-</tbody>
-</table>-->
-
-<!--table>
-<thead>
-<tr>
-<th><strong>New Web Push notifications channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer now supports Web Push notifications, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app.</p>
-<p>This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
-</td>
-</tr>
-</tbody>
-</table-->
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Custom action monitoring and reporting</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Custom action monitoring and reporting is now available. This capability provides better visibility into journey health and execution, including lifecycle status and performance alerts. You can now quickly understand when, where, and why an anomalous situation is occurring in a custom action.</p>
-</td>
-</tr>
-</tbody>
-</table-->
-
-<!--<table>
-<thead>
-<tr>
-<th><strong>New source connectors for loyalty apps</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>New source connectors are now available in Adobe Experience Platform for the Talon.One, Capillary, and Kobie loyalty apps. These connectors let you seamlessly stream loyalty data into Adobe Experience Platform and leverage these data in Journey Optimizer.</p>
-</td>
-</tr>
-</tbody>
-</table>-->
-
-
 
 <table>
 <thead>
@@ -113,48 +50,6 @@ ht-degree: 2%
 </tr>
 </tbody>
 </table>
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Landing page custom forms</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>With [!DNL Journey Optimizer], you can now capture profile attributes though your landing pages.</p>
-<p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
-<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><img src="assets/do-not-localize/forms.gif"/></p>
-<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a></p>
-</td>
-</tr>
-</tbody>
-</table-->
-
-<!--table>
-<thead>
-<tr>
-<th><strong>PDF attachments to emails</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now attach a static PDF file to an email message sent with Journey Optimizer.</p>
-<ul>
-<li>You can send up to 6 messages with a PDF attachement per profile per year.</li>
-<li>The maximum allowed file size for each attachment is 5 MB.</li>
-<li>For any additional size or volume, you can purchase the PDF Attachments add-on. For more details, contact your Adobe representative.</li>
-</ul>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
-<p>For more information, refer to the <a href="../email/pdf-attachments.md">detailed documentation</a></p>
-</td>
-</tr>
-</tbody>
-</table-->
 
 <table>
 <thead>
@@ -257,30 +152,15 @@ ht-degree: 2%
 </tbody>
 </table>
 
-### Förbättringar
+
+### Förbättringar {#sept-25-9-improvements}
 
 * **Behörigheter för godkännandeprincip**
 Ett alternativ lades till när en godkännandeprincip skapades eller ställdes in för att förhindra att de som skapar en resa/kampanj godkänner sina egna objekt. [Läs mer](../test-approve/approval-policies.md)
 
-<!--
-* **New Journey Alerts**  
-  New pre-configured alerts are available for journeys:
-
-  * [Profile Discard Rate Exceeded](../reports/alerts.md#profile-discard-rate-exceeded): Ratio of profile discards to entered profiles over the last 5 mins exceeded threshold.  
-  * [Custom Action Error Rate Exceeded](../reports/alerts.md#custom-action-error-rate-exceeded): Ratio of custom action errors to successful HTTP calls over the last 5 mins exceeded threshold.  
-  * [Profile Error Rate Exceeded](../reports/alerts.md#profile-error-rate-exceeded): Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
-
-  You can modify threshold values and subscribe to individual journey-level alerts vs globally.
--->
-
 * **Kapslade JSON-body-parametrar stöds nu i anpassad autentisering**\
   När anpassad autentisering konfigureras för en anpassad åtgärd stöds nu kapslade JSON-objekt (t.ex. underobjekt inom `bodyParams`). [Läs mer](../datasource/external-data-sources.md#custom-authentication-mode)
 
-<!--
-* **Custom attributes support with One-click unsubscribe URL**  
-  With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. 
-
-  To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.-->
 
 * **mTLS-stöd för SMS-kanal**
 När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktivera gemensam TLS-autentisering (mTLS), vilket kräver att både klienten och servern bekräftar varandras identiteter innan en säker anslutning upprättas. [Läs mer](../sms/sms-configuration-custom.md)
@@ -296,15 +176,8 @@ När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktive
 * **Simulera innehållsvariationer för alla inkommande kanaler**\
   Tidigare var det bara tillgängligt för meddelandekanalerna för e-post, SMS och push. Nu gäller även simulering av innehållsvarianter för alla inkommande kanaler. [Läs mer](../test-approve/simulate-sample-input.md)
 
-<!--* **Webhook support for API triggered campaigns**  
-  API triggered campaigns now support webhooks. Configure a webhook URL to receive real-time status updates for every message, improving observability and enabling seamless monitoring and automation.-->
-
 * **Omdirigeringsstöd i anpassade åtgärder för resor**\
   Omdirigeringar (302) stöds nu i Anpassade åtgärder för resan.
-
-<!--* **High throughput mode for API triggered email campaigns**  
-  A new High throughput mode is now available in API triggered campaigns. This mode is designed for large-scale, real-time messaging (up to 5000 transactions per second) and provides higher availability with lower latency.  
-  This capability is only available for the email channel, for organizations that have purchased the Adobe High throughput transactional messaging add-on offering. Contact your Adobe representative for more details.-->
 
 * **Begäranden om att avbryta prenumerationen med ett klick** - Vi har förbättrat hanteringen av begäranden om att avbryta prenumerationen som konfigurerats under Adobe Managed, vilket ger tillförlitlig och konsekvent behandling.
 
@@ -321,3 +194,137 @@ När du konfigurerar en anpassad SMS-leverantör har du nu möjlighet att aktive
 * **Varningar för kanalkonfigurationsövervakning** - Du kan nu prenumerera på systemvarningar, antingen via e-post eller i Journey Optimizer meddelandecenter, om ett konfigurationsfel för e-postkanal som använder den anpassade delegeringstypen inträffar. [Läs mer](../reports/alerts.md#alert-dns-record-missing)
 
 
+
+### Kommer snart {#sept-25-9-soon}
+
+Följande funktioner och förbättringar är avsedda för de kommande dagarna.
+
+**Innehållet nedan kan ändras utan föregående meddelande**. Länkar, skärmar och uppdaterad dokumentation publiceras när dessa funktioner och förbättringar släpps i produktionsmiljöer.
+
+<table>
+<thead>
+<tr>
+<th><strong>Offentligt API för att hämta resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Det finns nu ett nytt Journey Optimizer-API för att hämta resor och tillhörande objekt som kampanjer och ytor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Ny meddelandekanal för Web Push</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer har nu stöd för Web Push-meddelanden, vilket gör att den här pushkanalen kan användas även utanför mobila enheter. Ni kan smidigt leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app.</p>
+<p>Den här förbättringen gör att ni kan engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttja samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Övervakning och rapportering av anpassade åtgärder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Övervakning och rapportering av anpassade åtgärder är nu tillgängligt. Den här funktionen ger bättre synlighet när det gäller hälsa och utförande av resan, inklusive livscykelstatus och prestandavarningar. Nu kan ni snabbt förstå när, var och varför en onormal situation inträffar i en anpassad åtgärd.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Nya källkopplingar för lojalitetsappar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu finns nya källanslutningar i Adobe Experience Platform för lojalitetsapparna Talon.One, Capillary och Kobie. Med dessa kopplingar kan ni smidigt strömma lojalitetsdata till Adobe Experience Platform och utnyttja dessa data i Journey Optimizer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassade formulär för landningssida</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med [!DNL Journey Optimizer] kan du nu hämta profilattribut via dina landningssidor.</p>
+<p>Skapa, designa och hantera anpassade formulär som är skräddarsydda efter era behov utifrån en specifik datamängd. Du kan sedan använda dessa formulär på landningssidor för att lägga till de profilattribut du väljer i datauppsättningen som definieras för varje formulär.</p>
+<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
+<p><img src="assets/do-not-localize/forms.gif"/></p>
+<p>Mer information finns i <a href="../landing-pages/lp-forms.md">detaljerad dokumentation</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>PDF bilagor till e-postmeddelanden</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu bifoga en statisk PDF-fil i ett e-postmeddelande som skickas med Journey Optimizer.</p>
+<ul>
+<li>Du kan skicka upp till 6 meddelanden med en PDF-bilaga per profil och år.</li>
+<li>Den största tillåtna filstorleken för varje bifogad fil är 5 MB.</li>
+<li>För ytterligare storlekar och volymer kan du köpa tillägget PDF-bilagor. Mer information får du av Adobe.</li>
+</ul>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
+<!--p>For more information, refer to the <a href="../email/pdf-attachments.md">detailed documentation</a></p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+* **Nya reseaviseringar**\
+  Det finns nya förkonfigurerade aviseringar för resor:
+
+   * [Frekvensen för ignorerade profiler överskreds](../reports/alerts.md#profile-discard-rate-exceeded): Profilförhållandet mellan ignorerade profiler och angivna profiler under de senaste 5 minuterna överskred tröskelvärdet.
+   * [Felfrekvens för anpassad åtgärd överskreds](../reports/alerts.md#custom-action-error-rate-exceeded): Förhållandet mellan anpassade åtgärdsfel och lyckade HTTP-anrop under de senaste 5 minuterna överskred tröskelvärdet.
+   * [Profilens felfrekvens har överskridits](../reports/alerts.md#profile-error-rate-exceeded): Profilernas felförhållande till de angivna profilerna under de senaste 5 minuterna överskred tröskelvärdet.
+
+  Du kan ändra tröskelvärden och prenumerera på enskilda varningar på resenivå jämfört med globalt.
+
+
+* **Stöd för anpassade attribut med en klickning för att avbryta prenumeration på URL**\
+  Med Journey Optimizer kan du, om du hanterar samtycke utanför Adobe, ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
+
+  Om du vill anpassa e-postadressen för att avbryta prenumerationen ytterligare kan du nu definiera anpassade attribut som läggs till i medgivandehändelsen. Den här funktionen har redan varit tillgänglig för den anpassade länken för att avbryta prenumerationen med ett enda klick sedan den 25 augusti.
+
+* **Högt genomströmningsläge för API-utlösta e-postkampanjer**\
+  Nu finns det ett nytt högfrekvensläge tillgängligt i API-utlösta kampanjer. Det här läget är utformat för storskaliga meddelanden i realtid (upp till 5 000 transaktioner per sekund) och ger högre tillgänglighet med lägre latens.\
+  Den här funktionen är endast tillgänglig för e-postkanalen, för organisationer som har köpt tillägget Adobe High-through transactional messaging. Kontakta Adobe om du vill ha mer information.
+
+* **Webkrok-stöd för API-utlösta kampanjer**\
+  API-utlösta kampanjer har nu stöd för webhooks. Konfigurera en webkros-URL för att få statusuppdateringar i realtid för varje meddelande, vilket förbättrar observerbarheten och möjliggör smidig övervakning och automatisering.
