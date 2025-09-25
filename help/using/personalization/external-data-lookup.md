@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: eae8a09a-5d27-4a80-b21f-7f795d800602
-source-git-commit: 5df643d2b0623d40779d155e406467d622d3d753
+source-git-commit: 2a5db6950ac82fd18deb2e4009c9a43247444d6a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Du kan till exempel hämta och repetera objekt för att returnera en objektarray
 
 ### Timeout och felhantering
 
-[!DNL Journey Optimizer] använder en strikt tidsgräns när den externa slutpunkten anropas för att behålla prestandaegenskaper med låg fördröjning och hög genomströmning för AEP Edge Network.
+[!DNL Journey Optimizer] använder en strikt tidsgräns när den externa slutpunkten anropas för att behålla prestandaegenskaper med låg fördröjning och hög genomströmning för Adobe Experience Platform Edge Network.
 
 Om slutpunkten timeout eller om det finns något annat slags fel som når slutpunkten, kommer variabeln result att vara tom. Alla referenser till attribut i resultatvariabeln i det här fallet kommer också att vara tomma. Om du bara visar attributet i innehållet visas det som tomt. Om du försöker göra en slinga genom ett arrayattribut i resultatet returneras inga objekt.
 
@@ -198,7 +198,7 @@ eller så kan du villkorligt återge ett helt innehållsblock på följande sät
 
 ### Felsökning
 
-I Edge Delivery-vyn i AEP Assurance finns information om timeout och fel för externa datasökning som kan vara till hjälp vid felsökning. Om du inte ser förväntade resultat för en extern DataLookup-hjälp i en inkommande åtgärd kan du starta en Assurance-session, initiera ett [!DNL Journey Optimizer]-anrop från en webb- eller mobilimplementering och använda Edge Delivery-vyn för att kontrollera timeout- eller felinformation.
+I Edge Delivery-vyn i Adobe Experience Platform Assurance finns information om timeout och fel för externa datasökning som kan vara till hjälp vid felsökning. Om du inte ser förväntade resultat för en extern DataLookup-hjälp i en inkommande åtgärd kan du starta en Assurance-session, initiera ett [!DNL Journey Optimizer]-anrop från en webb- eller mobilimplementering och använda Edge Delivery-vyn för att kontrollera timeout- eller felinformation.
 
 Exempel:
 

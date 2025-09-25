@@ -9,9 +9,9 @@ level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 2a5db6950ac82fd18deb2e4009c9a43247444d6a
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,6 @@ Du kan även:
 
 Om ni behöver stoppa alla enskilda personers framsteg på resan kan ni stoppa den. Tidsgränsen för att stoppa resan för alla personer på resan har uppnåtts. Att stoppa en resa innebär dock att alla som redan har tagit sig in på en resa stoppas under resans gång. Resan är i stort sett avstängd. Om du vill avsluta en resa bör du [stänga den](#close-journey).
 
-
 Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
 
 ![](assets/journey-finish-quick-action.png)
@@ -102,3 +101,7 @@ Du kan även:
 1. Klicka på **[!UICONTROL Stop]** och bekräfta i dialogrutan.
 
 När den stoppas anges resestatusen till **[!UICONTROL Stopped]**.
+
+>[!CAUTION]
+>
+>Behörigheter att stoppa en resa som är begränsad till användare med hög behörighet på **[!DNL Manage journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
