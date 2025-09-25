@@ -4,9 +4,9 @@ product: Journey Optimizer
 title: Hjälp om Adobe Journey Optimizer
 description: Hjälp om Adobe Journey Optimizer
 redpen-status: CREATED_||_2025-08-11_21-21-01
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+source-git-commit: a73bf80fa61c6ce7c9be054e013e9a59ef3d9ba8
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '398'
 ht-degree: 1%
 
 ---
@@ -14,23 +14,14 @@ ht-degree: 1%
 
 # Hjälp om Adobe Journey Optimizer{#section-overview}
 
-Adobe Journey Optimizer ger team möjlighet att designa och leverera sömlösa, personaliserade kundupplevelser i olika kanaler, som e-post, SMS med mera. Genom att kombinera avancerade verktyg för kampanjsamordning, datahantering och beslutsfattande kan ni skapa kundresor som anpassar sig efter kundernas behov i realtid. Denna dokumentation ger en färdplan för att lära sig behärska plattformen, från att utforska dess senaste funktioner och integreringar till att lära sig hantera målgrupper, konfigurera resor och analysera prestanda. Oavsett om ni är marknadsförare, dataanalytiker eller kampanjchef hittar ni stegvisa guider, metodtips och resurser som är skräddarsydda för att ni ska lyckas uppnå era mål på ett säkert sätt.
+Adobe Journey Optimizer ger team möjlighet att designa och leverera sömlösa, personaliserade kundupplevelser i olika kanaler, som e-post, SMS med mera. Genom att kombinera avancerade verktyg för kampanjsamordning, datahantering och beslutsfattande kan ni skapa kundresor som anpassar sig efter kundernas behov i realtid. Denna dokumentation ger en färdplan för att lära sig behärska plattformen, från att utforska dess senaste funktioner och integreringar till att lära sig hantera målgrupper, konfigurera resor och analysera prestanda. Oavsett om du är marknadsförare, dataanalytiker eller kampanjchef hittar du stegvisa guider, metodtips och resurser som är skräddarsydda för att du ska kunna uppnå dina mål med tillförsikt.
 
 ## Hjälp om Adobe Journey Optimizer
 
 :::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
-
-Nyheter i Adobe Journey Optimizer
-
-Håll dig uppdaterad med den senaste versionsinformationen, nya funktioner och dokumentationsändringar i Adobe Journey Optimizer.
-
-[Visa nyheter](whats-new-landing-page.md)
-:::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med Adobe Journey Optimizer
 
@@ -40,7 +31,7 @@ Lär dig grunderna i Adobe Journey Optimizer, inklusive dess funktioner, arkitek
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Omfattande guide till resor
 
@@ -50,7 +41,7 @@ Designa, samordna, hantera och optimera personaliserade kundresor med den här d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg)
 
 Förstå och hantera kampanjer
 
@@ -60,7 +51,7 @@ Detaljerad vägledning om hur du skapar, hanterar och optimerar olika kampanjtyp
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/scale-balanced.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/scale-balanced.svg)
 
 Konflikthantering och prioritering
 
@@ -90,11 +81,11 @@ Lär dig att prioritera och hantera kommunikationskonflikter mellan kampanjer oc
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er, referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE" target="_blank">Journey Optimizer Schema Dictionary</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Produktbeskrivning</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Säkerhetsöversikt (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">API:er, referens</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
 
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/sv/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
+<a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Dokumentation</a> - <a href="https://www.adobe.com/sv/experience-platform/documentation-and-developer-resources.html" target="_blank">Resurser för utvecklare</a>
 </td>
 </tr></table>
 

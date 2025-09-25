@@ -4,13 +4,15 @@ product: Journey Optimizer
 title: Nyheter?
 description: Nyheter?
 redpen-status: CREATED_||_2025-08-11_20-03-09
-source-git-commit: cadb4a66c23010cb663eb1e840d0568021690edf
+hide: true
+hidefromtoc: true
+exl-id: 24460cae-3944-4ac4-9076-aca521cfddbd
+source-git-commit: a73bf80fa61c6ce7c9be054e013e9a59ef3d9ba8
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 7%
 
 ---
-
 
 # Nyheter?{#section-overview}
 
@@ -35,7 +37,7 @@ Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komm
 
 Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
 
-[![learn more](../using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
+[![learn more](../using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
 
 >[!TAB AEM Content fragment]
 
@@ -50,7 +52,7 @@ Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journe
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Senaste versionsinformation för Adobe Journey Optimizer
 
@@ -60,7 +62,7 @@ Upptäck de senaste funktionerna, förbättringarna och uppdateringarna i Adobe 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Tidigare versionsinformation för Adobe Journey Optimizer
 
@@ -70,7 +72,7 @@ Utforska omfattande versionsinformation från tidigare år med detaljerade uppda
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Senaste uppdateringarna av Adobe Journey Optimizer-dokumentationen
 
