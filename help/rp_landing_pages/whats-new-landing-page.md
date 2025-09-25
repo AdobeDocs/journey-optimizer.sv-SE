@@ -37,7 +37,7 @@ Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komm
 
 Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
 
-[![learn more](../using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
+[![learn more](../using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}-->
 
 >[!TAB AEM Content fragment]
 
@@ -52,7 +52,7 @@ Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journe
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Senaste versionsinformation för Adobe Journey Optimizer
 
@@ -62,7 +62,7 @@ Upptäck de senaste funktionerna, förbättringarna och uppdateringarna i Adobe 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Tidigare versionsinformation för Adobe Journey Optimizer
 
@@ -72,7 +72,7 @@ Utforska omfattande versionsinformation från tidigare år med detaljerade uppda
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Senaste uppdateringarna av Adobe Journey Optimizer-dokumentationen
 
