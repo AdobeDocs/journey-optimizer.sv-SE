@@ -3,7 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Använd Adobe Experience Platform-data
 description: Lär dig hur du använder Adobe Experience Platform datamängder i [!DNL Journey Optimizer] Funktioner för beslutsfattande och personalisering.
-badge: label="Begränsad tillgänglighet" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
 role: Data Engineer
@@ -11,9 +10,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: 189a5e1c31946e05ef88161f0b5d678b95dd2064
+source-git-commit: e3c6b00ccc0d034fc42dd1294a9b3a72054a48d3
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -24,10 +23,6 @@ ht-degree: 0%
 >id="lookup-aep-data"
 >title="Aktivera för sökning"
 >abstract="Genom att aktivera en datauppsättning för sökning kan ni utnyttja data i Journey Optimizer personalisering, beslutsfattande och möjlighet att samordna kundresor."
-
->[!AVAILABILITY]
->
->Den här funktionen är för närvarande tillgänglig för alla kunder i en begränsad version.
 
 Med Journey Optimizer kan ni utnyttja data från Adobe Experience Platform med funktioner för personalisering, beslutsfattande och resesamordning. För att göra detta måste postbaserade datauppsättningar som behövs för sökpersonalisering först aktiveras för söktjänsten enligt beskrivningen nedan.
 
