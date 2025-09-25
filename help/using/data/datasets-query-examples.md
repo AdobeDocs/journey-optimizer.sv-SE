@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: datauppsättning, optimering, användningsfall
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: c517e7faa027b5c1fe3b130f45fc7bf5020c454a
+source-git-commit: 90b8f69f3849418eaec1b65b14e0362980c43e9a
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder
 * [BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
 * [Enhetsdatauppsättning](#entity-dataset)
 
-Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
+Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 Se även flera vanliga [exempel som används för att ställa frågor om händelser i resesteg](../reports/query-examples.md).
 
@@ -236,6 +236,33 @@ where
 group by
     _experience.journeyOrchestration.stepEvents.nodeID,
     _experience.journeyOrchestration.stepEvents.nodeName; 
+```
+
+
+
+
+Den här frågan hämtar vilka noder (efter nodeID och nodeName) i resan som är associerade med leveransen av ett meddelande till en profil, med hjälp av dess profil-ID och datamängden Message Feedback Event:
+
+```sql
+select
+    _experience.journeyorchestration.stepevents.nodeID, JSE._experience.journeyorchestration.stepevents.nodeName
+from journey_step_events JSE
+where 
+    _experience.journeyOrchestration.stepEvents.actionID 
+    in
+
+    (
+    select
+        _experience.customerJourneyManagement.messageExecution.journeyActionID
+    from  ajo_message_feedback_event_dataset
+    where 
+        _experience.customerJourneyManagement.messageProfile.messageProfileID = '<PROFILE ID>'
+    group by
+        _experience.customerJourneyManagement.messageExecution.journeyActionID
+    )
+
+group by
+    _experience.journeyorchestration.stepevents.nodeID, JSE._experience.journeyorchestration.stepevents.nodeName  
 ```
 
 
