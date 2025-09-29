@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-source-git-commit: 9336b77e5b7682923dca6e95f0ede67c0d9b0f85
+source-git-commit: e9ed993dd5957adb305b582b30e6675d2bb4526f
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ När en datauppsättning har aktiverats för sökpersonalisering kan du använda
 
    +++Var ska ett datauppsättnings-ID hämtas?
 
-   Datauppsättnings-ID kan hämtas i Adobe Experience Platform användargränssnitt. Lär dig hur du arbetar med datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#view-datasets){target="_blank"}.
+   Datauppsättnings-ID kan hämtas i Adobe Experience Platform användargränssnitt. Lär dig hur du arbetar med datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#view-datasets){target="_blank"}.
 
    ![](assets/aep-data-dataset.png)
 
@@ -81,13 +81,15 @@ När en datauppsättning har aktiverats för sökpersonalisering kan du använda
    >[!NOTE]
    >
    >När du refererar till ett datamängdsfält måste du se till att du matchar den fullständiga fältsökvägen enligt definitionen i schemat.
+   >
+   >Det finns inga tydliga gränser för hur många fält som kan hämtas med hjälpfunktionen. För bästa prestanda bör du dock behålla antalet fält under 50 för att undvika att påverka dataflödet.
 
    * **result** är det värde som du har tilldelat parametern **result** i hjälpfunktionen **MultiEntity**. I det här exemplet &quot;flight&quot;.
    * **fieldID** är ID:t för det fält som du vill hämta. Detta ID visas i användargränssnittet för [!DNL Adobe Experience Platform] när du bläddrar i postschemat som är relaterat till din datauppsättning:
 
      +++Var ska ett fält-ID hämtas?
 
-     Fält-ID:n kan hämtas när en datauppsättning förhandsgranskas i Adobe Experience Platform användargränssnitt. Lär dig hur du förhandsgranskar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}.
+     Fält-ID:n kan hämtas när en datauppsättning förhandsgranskas i Adobe Experience Platform användargränssnitt. Lär dig hur du förhandsgranskar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}.
 
      ![](assets/aep-data-field.png)
 

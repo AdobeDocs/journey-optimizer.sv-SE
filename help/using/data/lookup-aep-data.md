@@ -10,9 +10,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: e3c6b00ccc0d034fc42dd1294a9b3a72054a48d3
+source-git-commit: e9ed993dd5957adb305b582b30e6675d2bb4526f
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 * Datauppsättningar som har aktiverats för sökning får inte innehålla någon PII (Personally Identiitable Information).
 * Datauppsättningar som är aktiverade för sökning och används för personalisering är inte skyddade för borttagning. Det är upp till dig att hålla reda på vilka datauppsättningar som används för personalisering för att säkerställa att de inte tas bort eller tas bort.
 * Datauppsättningar måste associeras med ett schema som INTE är av profiltyp eller händelsetyp.
-* Scheman måste ha en primär identitet. Endast en enda primärnyckel kan användas för sökningar.
+* Direktuppspelning av dataöverföringar stöds för uppslagsaktiverade datauppsättningar. Tänk på att bearbetningen av intaget fortfarande måste slutföras innan data är tillgängliga för personalisering eller beslutsfattande.
 
 ### Tillstånd för sökningstjänst
 
