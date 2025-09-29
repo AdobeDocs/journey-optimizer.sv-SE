@@ -9,9 +9,9 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: c39a71da901b888ff440a1488658b577ff72cc32
+source-git-commit: fc12ee65fc773c70b88504a951e5f5c5b2b3b0e6
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ I så fall använder [!DNL Journey Optimizer] **[!UICONTROL Execution fields]** 
 Om du vill kontrollera de fält som används som standard går du till menyn **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Executions fields]** .
 
 ![](assets/primary-address-execution-fields.png)
+
+>[!NOTE]
+>
+>Körningsfält är tillgängliga för e-post- och SMS-kanalerna.
 
 De aktuella värdena används för alla leveranser på sandlådenivå. Du kan uppdatera fälten om det behövs.
 
@@ -66,32 +70,24 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 
 <!--1. You can also select an additional field to use as secondary email address. This allows you to determine which field to use if the primary field is empty for a profile. -->
 
-## Åsidosätt standardkörningsfältet {#override-default-execution-address}
+## Åsidosätt standardfältet för körning i transportparametrarna {#override-execution-address-journey}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_execution_address"
 >title="Definiera ett anpassat värde"
 >abstract="I vissa specifika fall kan du åsidosätta standardadressen för körningen. Använd ikonen **Aktivera åsidosättning av parameter** till höger om fältet för att definiera en anpassad primär adress."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="Om körningsadressen"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="Om körningsadressen"
 
-För specifika användningsfall kan du åsidosätta körningsfältet som ställts in globalt och definiera ett annat värde på e-postkonfigurationsnivån eller på resenivån.
+För specifika användningsfall kan du åsidosätta körningsfältet som ställts in globalt och definiera ett annat värde på resenivån.
 
 Att åsidosätta det här värdet kan vara användbart för att:
 
 * Testa ett mejl. Du kan lägga till en egen e-postadress: när du har publicerat resan skickas e-postmeddelandet till dig.
 * Skicka ett e-postmeddelande till prenumeranterna av en lista. Läs mer i [det här användningsexemplet](../building-journeys/message-to-subscribers-uc.md).
 
-### I e-postkonfigurationen
-
-Du kan ändra standardfältinställningen för körning i de [allmänna inställningarna](#admin-settings) när du definierar en e-postkanalskonfiguration. [Läs mer](../email/email-settings.md#execution-address)
-
-När en körningsadress definieras i e-postkonfigurationen används den som primär adress och åsidosätter den allmänna inställningen på sandlådenivå.
-
-### I resans parametrar {#journey-parameters}
-
 När du lägger till en **[!UICONTROL Email]**- eller **[!UICONTROL SMS]**-åtgärd till en [-resa](../email/create-email.md#create-email-journey-campaign) visas den primära e-postadressen under de avancerade parametrarna för resan.
 
-I vissa specifika sammanhang kan du åsidosätta det här värdet med hjälp av ikonen **[!UICONTROL Enable parameter override]** till höger om fältet.
+Åsidosätt det här värdet med ikonen **[!UICONTROL Enable parameter override]** till höger om fältet.
 
 ![](assets/journey-enable-parameter-override.png)
 
@@ -99,4 +95,23 @@ I vissa specifika sammanhang kan du åsidosätta det här värdet med hjälp av 
 >
 >Åsidosättning av e-postadresser ska endast användas för särskilda användningsfall. Oftast behöver du inte ändra e-postadressen eftersom det värde som definieras som primär adress i **[!UICONTROL Execution fields]** är den som ska användas.
 
+## Åsidosätt standardfältet för körning i kanalkonfigurationen {#override-execution-address-channel-config}
 
+>[!CONTEXTUALHELP]
+>id="ajo_email_config_execution_address"
+>title="Åsidosätt den standardadress som ska användas"
+>abstract="När det finns flera e-postadresser eller telefonnummer i databasen (personliga, professionella, osv.) kan du välja vilken som ska prioriteras för sändning. Den primära adressen definieras på sandlådenivå, men här kan du åsidosätta standardinställningen för den här specifika kanalkonfigurationen."
+
+Du kan ändra standardkörningsadressen för ett visst e-postmeddelande eller SMS [kanalkonfiguration](channel-surfaces.md).
+
+Det gör du genom att gå till avsnittet **[!UICONTROL Execution dimension]** och redigera fältet under **[!UICONTROL Execution Address]**.
+
+![](assets/sms-config-execution-address.png){width=85%}
+
+Välj sedan ett objekt i listan med tillgängliga XDM-fält för e-posttyp.
+
+![](assets/sms-config-execution-field.png)
+
+Körningsfältet uppdateras och används sedan som primär adress för kampanjer eller resor med den här kanalkonfigurationen. Den åsidosätter den [allmänna inställningen](#admin-settings) som definierats på sandlådenivå.
+
+<!--[Learn more on the execution address in the email configuration ](../email/email-settings.md#execution-address)-->
