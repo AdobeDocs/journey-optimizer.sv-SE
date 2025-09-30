@@ -5,9 +5,9 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar modellbaserade scheman direkt via användargränssnittet.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 version: Campaign Orchestration
-source-git-commit: 5eb60e7c551796829c25a407ff45fbfec4bb76dd
+source-git-commit: e189bb6a52691770655a436e45c6788d1011a8ca
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ I följande exempel definieras schemat **Förmånsmedlemskap** manuellt för att
 1. [Skapa en datamängd](#dataset) baserat på ditt schema och aktivera den för användning i Orchestrated-kampanjer.
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
+
+➡️ [Läs mer om manuella modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
 
 ## Skapa ditt schema {#schema}
 
@@ -106,11 +108,11 @@ Alla scheman som används för mål måste innehålla minst ett identitetsfält 
 
 1. Klicka på **[!UICONTROL Save]**.
 
-När attributen har skapats måste du länka ditt nyligen skapade schema till ett inbyggt schema.
+När du har skapat och sparat attribut kan du länka schemat till andra relationsscheman genom att definiera relationer.
 
 ## Länka scheman {#link-schema}
 
-Skapa en relation mellan två scheman så att ni kan berika era Orchestrated-kampanjer med data som lagras utanför det primära profilschemat.
+Genom att skapa en relation mellan två scheman kan ni förbättra orkestrerade kampanjer med data utöver det primära profilschemat.
 
 1. Välj det attribut som du vill använda som länk från ditt nyligen skapade schema och klicka på **[!UICONTROL Add relationship]**.
 
@@ -126,11 +128,9 @@ Skapa en relation mellan två scheman så att ni kan berika era Orchestrated-kam
 
 1. Klicka på **[!UICONTROL Apply]** när du har konfigurerats.
 
-När relationen är etablerad måste du skapa en datauppsättning baserad på ditt schema.
-
 ## Skapa en datauppsättning för schemat {#dataset}
 
-När du har definierat ditt schema är nästa steg att skapa en datauppsättning som baseras på det. Den här datauppsättningen lagrar dina inkapslade data och måste aktiveras för att Orchestrated Campaigns ska kunna göra den tillgänglig i Adobe Journey Optimizer. Om du aktiverar det här alternativet identifieras datauppsättningen för användning i arbetsflöden för realtidssamordning och personalisering.
+När du har definierat ditt schema kan du nu skapa en datauppsättning som baseras på det. Datauppsättningen lagrar dina inkapslade data och måste aktiveras för att Orchestrated Campaigns ska vara tillgängliga.
 
 1. Navigera till menyn **[!UICONTROL Data Management]** > **[!UICONTROL Datasets]** och klicka på **[!UICONTROL Create dataset]**.
 
@@ -144,7 +144,7 @@ När du har definierat ditt schema är nästa steg att skapa en datauppsättning
 
 1. Ange **[!UICONTROL Name]** för din **[!UICONTROL Dataset]** och klicka på **[!UICONTROL Finish]**.
 
-Nu måste du aktivera datauppsättningen för Orchestrate-kampanjer.
+Nu måste ni aktivera datauppsättningen för samordnade kampanjer.
 
 ## Aktivera datauppsättning för orkestrerade kampanjer {#enable}
 
@@ -160,7 +160,7 @@ Se [Adobe Developer-dokumentation](https://developer.adobe.com/journey-optimizer
 
 1. Leta reda på datauppsättningen i listan **[!UICONTROL Datasets]**.
 
-1. Aktivera alternativet **[!UICONTROL Datasets]** Orchestrated Campaigns **från inställningarna för** för att göra datauppsättningen tillgänglig för användning i dina Orchestrated Campaigns.
+1. Aktivera alternativet **[!UICONTROL Datasets]** Orchestrated Campaigns **från inställningarna för** för att markera den datauppsättning som är tillgänglig för användning i dina Orchestrated Campaigns.
 
    ![](assets/schema_manual_7.png){zoomable="yes"}
 

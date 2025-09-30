@@ -5,9 +5,9 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar ett modellbaserat schema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 version: Campaign Orchestration
-source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
+source-git-commit: e189bb6a52691770655a436e45c6788d1011a8ca
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ I det här avsnittet finns stegvisa anvisningar om hur du skapar ett modellbaser
 1. [Länka scheman](#link-schema) om du vill koppla modellbaserade data till befintliga profilentiteter som mottagare eller varumärken.
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
+
+➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
 
 ## Överföra en DDL-fil{#ddl-upload}
 
@@ -91,7 +93,7 @@ Här är ett exempel:
 
 1. Skriv in din/ditt **[!UICONTROL Schema name]**.
 
-1. Konfigurera varje schema och dess kolumner och se till att en primärnyckel anges.
+1. Konfigurera varje schema och dess kolumner och se till att en primärnyckel och en versionsbeskrivning anges.
 
    Ett attribut, till exempel `lastmodified`, måste anges som versionsbeskrivare (typ `datetime`, `long` eller `int`) för att datauppsättningarna ska uppdateras med de senaste data. Användare kan ändra versionsbeskrivningen, som blir obligatorisk när den har angetts. Ett attribut kan inte vara både en primärnyckel (PK) och en versionsbeskrivning.
 
@@ -107,7 +109,7 @@ Nu kan du verifiera tabell- och fältdefinitionerna på arbetsytan. [Läs mer i 
 
 ## Definiera relationer {#relationships}
 
-Följ stegen nedan för att definiera logiska anslutningar mellan tabeller i ditt schema.
+Du kan ange relationer direkt i DDL-filen när du skapar ditt schema. Om du föredrar att definiera relationer utanför filen kan du göra det i gränssnittet genom att följa stegen nedan.
 
 1. Få åtkomst till arbetsytans vy av din datamodell och välj de två tabeller som du vill länka
 

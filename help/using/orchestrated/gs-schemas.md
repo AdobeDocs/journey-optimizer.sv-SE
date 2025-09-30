@@ -5,9 +5,9 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar ett modellbaserat schema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 version: Campaign Orchestration
-source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
+source-git-commit: e189bb6a52691770655a436e45c6788d1011a8ca
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '470'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ I den här guiden får du hjälp med att skapa ett modellbaserat schema, konfigu
 
 ## Viktiga begrepp
 
-I samband med Orchestrated-kampanjer är en **datamängd** en lagrings- och hanteringskonstruktion för en datainsamling, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). Data som har importerats till Experience Platform lagras i datasjön som datauppsättningar.
+I samband med Orchestrated-kampanjer är en **datamängd** en lagrings- och hanteringskonstruktion för en datainsamling, vanligtvis en tabell, som innehåller ett schema (rader) och fält (kolumner). Data som har importerats till Experience Platform lagras i datasjön som datauppsättningar.
 
 Ett **schema** representerar och validerar datastrukturen och dataformatet. Den ger en abstrakt definition av ett objekt i verkligheten (till exempel en person) och visar vilka data som ska inkluderas i varje instans av objektet (till exempel namn, födelsedag och så vidare).
 
@@ -52,6 +52,8 @@ Den anger:
 
 Att ordna scheman eller tabeller i en modellbaserad datamodell handlar om att strukturera data i flera tabeller. Se till att varje register lagrar en typ av entitet/scheman
 
+➡️ [Läs mer om scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-model-based-schema)
+
 ## Implementeringssteg {#implementation}
 
 Så här importerar du data och skapar ett modellbaserat schema:
@@ -62,7 +64,7 @@ Så här importerar du data och skapar ett modellbaserat schema:
 
    När du skapar schemat manuellt måste datauppsättningen också skapas och aktiveras manuellt. När du använder en DDL-fil skapas och aktiveras datauppsättningar automatiskt.
 
-1. [Länka schema](file-upload-schema.md)
+1. [Länka scheman](file-upload-schema.md)
 
    Upprätta relationer mellan dina scheman för att säkerställa att data är konsekventa och möjliggöra enhetsöverskridande frågor. Länka till exempel lojalitetstransaktioner till mottagare eller belöningar till varumärken.
 
@@ -70,7 +72,7 @@ Så här importerar du data och skapar ett modellbaserat schema:
 
    När du har definierat ditt schema måste du skapa en datauppsättning som baseras på det. Den här datauppsättningen fungerar som lagring för dina inkapslade data.
 
-1. [Aktivera orkestrerad kampanj](manual-schema.md#enable)
+1. [Aktivera samordnade kampanjer](manual-schema.md#enable)
 
    Datauppsättningen lagrar dina inkapslade data och måste aktiveras för Orchestrated Campaigns för att den ska vara tillgänglig i Adobe Journey Optimizer.
 
