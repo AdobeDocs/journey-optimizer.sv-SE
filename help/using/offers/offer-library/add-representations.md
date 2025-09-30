@@ -7,9 +7,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 718af505-7b7c-495e-8974-bd9c35d796bb
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: 96afe15b89b0a8291d5682bbfaa67404b5ebef93
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 >[!NOTE]
 >
-> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna tillhör produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer om [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html?lang=sv-SE){target="_blank"}.
+> Om du vill arbeta med [Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"} måste du distribuera [!DNL Assets Essentials] för din organisation och se till att användarna tillhör produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer om [den här sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html){target="_blank"}.
 
 1. Välj alternativet **[!UICONTROL Asset library]**.
 
@@ -89,9 +89,9 @@ Om den valda placeringen är av bildtyp kan du lägga till innehåll från **Ado
 
 ### Lägga till HTML- eller JSON-filer {#html-json}
 
-Om den valda placeringen är av HTML-typ kan du även lägga till HTML- eller JSON-innehåll från [Adobe Experience Cloud-resursbiblioteket](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"}).
+Om den valda placeringen är av HTML-typ kan du även lägga till HTML- eller JSON-innehåll från [Adobe Experience Cloud-resursbiblioteket](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}).
 
-Du har t.ex. skapat en e-postmall från HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html?lang=sv-SE){target="_blank"} och vill använda den filen för ditt erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **resursbiblioteket** för att kunna återanvända den i offertens representationer.
+Du har t.ex. skapat en e-postmall från HTML i [Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager.html){target="_blank"} och vill använda den filen för ditt erbjudandeinnehåll. I stället för att skapa en ny fil kan du överföra mallen till **resursbiblioteket** för att kunna återanvända den i offertens representationer.
 
 Om du vill återanvända ditt innehåll i en representation bläddrar du till **resursbiblioteket** enligt beskrivningen i [det här avsnittet](#images) och väljer den HTML- eller JSON-fil du vill använda.
 
@@ -103,15 +103,11 @@ Om du vill lägga till innehåll från en extern offentlig plats väljer du **[!
 
 Du kan anpassa URL-adresser med personaliseringsredigeraren. Läs mer om [personalisering](../../personalization/personalize.md#use-expression-editor).
 
-
-Du kan också infoga ett Adobe Experience Manager Content Fragment direkt i ditt erbjudande genom att klicka på **[!UICONTROL Content Fragment]**. Observera att den valda placeringen måste vara av typen JSON för att komma åt Content Fragment in Offers.
-Läs mer om [Integrering av innehållsfragment med Journey Optimizer](../../integrations/aem-fragments.md).
-
 ![](../assets/offer-content-url.png)
 
 Du vill till exempel anpassa bilden som visas som ett erbjudande. Man vill att användare som föredrar semestrar ska se NYC-skylten och användare som föredrar strandsemestrar ska se Hawaii i i nordkusten.
 
-Använd personaliseringsredigeraren för att hämta profilattribut som lagras i Adobe Experience Platform med fackscheman. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html?lang=sv-SE){target="_blank"}
+Använd personaliseringsredigeraren för att hämta profilattribut som lagras i Adobe Experience Platform med fackscheman. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
 
 ![](../assets/offer-content-url-personalization.png)
 
