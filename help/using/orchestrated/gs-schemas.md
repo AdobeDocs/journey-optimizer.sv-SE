@@ -52,7 +52,7 @@ Den anger:
 
 Att ordna scheman eller tabeller i en modellbaserad datamodell handlar om att strukturera data i flera tabeller. Se till att varje register lagrar en typ av entitet/scheman
 
-➡️ [Läs mer om scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-model-based-schema)
+➡️ [Läs mer om scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas#create-model-based-schema)
 
 ## Implementeringssteg {#implementation}
 
