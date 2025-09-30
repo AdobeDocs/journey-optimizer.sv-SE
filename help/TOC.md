@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: a73bf80fa61c6ce7c9be054e013e9a59ef3d9ba8
+source-git-commit: be07b0dfec31d23f741bfc2a9f89fe1a7891ef0b
 workflow-type: tm+mt
-source-wordcount: '2951'
+source-wordcount: '2954'
 ht-degree: 18%
 
 ---
@@ -875,7 +875,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -911,6 +911,7 @@ ht-degree: 18%
    + [Använd dirigerade listor](using/configuration/seed-lists.md)
    + [Stöd för arkivering](using/configuration/archiving-support.md)
    + [Ändra körningsadresser](using/configuration/primary-email-addresses.md)
+   + [Skapa feedback-webbhotell](using/configuration/feedback-webhooks.md)
 + Resekonfiguration {#configure-journeys}
    + [Resekonfiguration](/help/rp_landing_pages/configure-journeys-landing-page.md)
    + [Kom igång med resekonfigurationen](using/configuration/about-data-sources-events-actions.md)
