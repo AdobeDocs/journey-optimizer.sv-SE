@@ -4,13 +4,13 @@ product: journey optimizer
 title: API för reglering
 description: Lär dig hur du arbetar med API:t för att hämta innehåll
 feature: Journeys, API
-role: User
+role: Developer
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
-source-git-commit: 9f801b1fdcab38bffff851675eca5e2fb61dfbf9
+source-git-commit: 13af123030449d870f44f3470710b0da2c6f4775
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '730'
 ht-degree: 6%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 6%
 
 Med API:t för att hämta innehåll kan du skapa, konfigurera och övervaka dina appkonfigurationer.
 
-Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [dokumentationen för Adobe Journey Optimizer API](https://developer.adobe.com/journey-optimizer-apis/).
+Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [dokumentationen för Adobe Journey Optimizer API](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}.
 
 ## Beskrivning av API-begränsning och Postman-samling {#description}
 
-Tabellen nedan visar tillgängliga kommandon för API:t för appning. Detaljerad information, inklusive frågeexempel, parametrar och svarsformat, finns i [Adobe Journey Optimizer API:s dokumentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
+Tabellen nedan visar tillgängliga kommandon för API:t för appning. Detaljerad information, inklusive frågeexempel, parametrar och svarsformat, finns i [Adobe Journey Optimizer API:s dokumentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/){target="_blank"}.
 
 | Metod | Sökväg | Beskrivning |
 |---|---|---|
@@ -46,13 +46,13 @@ Den här samlingen har konfigurerats för att dela Postman Variable-samlingen so
 När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
 * `{JO_HOST}` : [!DNL Journey Optimizer] Gateway-URL.
 * `{BASE_PATH}` : startpunkt för API.
-* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) för mer information.
+* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv){target="_blank"} för mer information.
 
 ## Konfiguration av slutpunkt
 
 Här är den grundläggande strukturen för en slutpunktskonfiguration:
 
-```
+```json
 {
     "url": "<endpoint URL>",  //wildcards are allowed in the endpoint URL
     "methods": [ "<HTTP method such as GET, POST, >, ...],
@@ -75,12 +75,12 @@ Här är den grundläggande strukturen för en slutpunktskonfiguration:
 >
 >Det högsta värdet som kan anges är 400. Om inget anges kan systemet öppna upp till flera tusen anslutningar beroende på systemets dynamiska skalning.
 >
->Om inget värde för maxHttpConnection har angetts när konfigurationen för begränsning av socket distribueras läggs standardvärdet för maxHttpConnection = -1 till i den distribuerade konfigurationen, vilket innebär att Journey Optimizer kommer att använda standardsystemvärdet.
+>Om inget `maxHttpConnections`-värde har angetts när takkonfigurationen distribueras läggs `maxHttpConnections = -1` till i den distribuerade konfigurationen och Journey Optimizer använder standardsystemvärdet.
 
 Exempel:
 
-```
-`{
+```json
+{
   "url": "https://api.example.org/data/2.5/*",
   "methods": [
     "GET"
@@ -104,7 +104,7 @@ Exempel:
 
 När en **canDeploy** -metod anropas validerar processen konfigurationen och returnerar den verifieringsstatus som identifieras av dess unika ID, antingen:
 
-```
+```json
 "ok" or "error"
 ```
 
@@ -112,7 +112,7 @@ Möjliga fel är:
 
 * **ERR_ENDPOINTCONFIG_100**: Konfiguration för begränsning: URL saknas eller är ogiltig
 * **ERR_ENDPOINTCONFIG_101**: capping-konfiguration: felaktig URL
-* **ERR_ENDPOINTCONFIG_102**: capping config: felaktig url: jokertecken i url tillåts inte i host:port
+* **ERR_ENDPOINTCONFIG_102**: capping config: felaktig url: jokertecken i url tillåts inte i värd:port
 * **ERR_ENDPOINTCONFIG_103**: capping config: HTTP-metoder saknas
 * **ERR_ENDPOINTCONFIG_104**: konfiguration för begränsning: ingen anropsklassificering har definierats
 * **ERR_ENDPOINTCONFIG_107**: capping-konfig: ogiltigt max antal anrop (maxCallCount)
@@ -154,7 +154,7 @@ API-anrop som ska användas:
 
 +++
 
-+++Avdistribuera och ta bort en distribuerad cachekonfiguration
++++Avdistribuera och ta bort en distribuerad capping-konfiguration
 
 API-anrop som ska användas:
 
@@ -175,7 +175,7 @@ API-anrop som ska användas:
 
 +++
 
-+++Uppdatera en takkonfiguration som redan har distribuerats
++++Uppdatera en takkonfiguration som redan distribuerats
 
 >[!NOTE]
 >

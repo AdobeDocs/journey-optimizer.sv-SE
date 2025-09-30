@@ -4,13 +4,13 @@ product: journey optimizer
 title: API för begränsning
 description: Lär dig hur du arbetar med API:t för begränsning
 feature: Journeys, API
-role: User
+role: Developer
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
-source-git-commit: 60cb5e1ba2b5c8cfd0a306a589c85761be1cf657
+source-git-commit: 13af123030449d870f44f3470710b0da2c6f4775
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1024'
 ht-degree: 48%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 48%
 
 API:t för begränsning hjälper dig att skapa, konfigurera och övervaka dina begränsningskonfigurationer för att begränsa antalet händelser som skickas per sekund.
 
-Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [dokumentationen för Adobe Journey Optimizer API](https://developer.adobe.com/journey-optimizer-apis/).
+Det här avsnittet innehåller global information om hur du arbetar med API:t. En detaljerad API-beskrivning finns i [dokumentationen för Adobe Journey Optimizer API](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}.
 
 ## Måste läsas
 
 * **En konfiguration per organisation:** Endast en konfiguration tillåts för närvarande per organisation. En konfiguration måste definieras i en produktionssandlåda (anges via `x-sandbox-name` i rubrikerna).
 * **Program på organisationsnivå:** En konfiguration används på organisationsnivå.
 * **Hantering av API-begränsning:** När gränsen som anges i API:t nås köas ytterligare händelser i upp till 6 timmar. Detta värde kan inte ändras.
-* **`maxHttpConnections`-parameter:** Parametern maxHttpConnections är en valfri parameter som bara är tillgänglig i API:t för att du ska kunna begränsa antalet anslutningar som Journey Optimizer öppnar till det externa systemet. [Lär dig hur du arbetar med API:t för tak](../configuration/capping.md)
+* **`maxHttpConnections`-parameter:** Parametern `maxHttpConnections` är en valfri parameter som bara är tillgänglig i API:t för att du ska kunna begränsa antalet anslutningar som Journey Optimizer öppnar till det externa systemet. [Lär dig hur du arbetar med API:t för tak](../configuration/capping.md)
 
   Om du vill begränsa antalet anslutningar men även begränsa dessa externa anrop kan du konfigurera två konfigurationer, en begränsning och en begränsning, på samma slutpunkt. Båda konfigurationerna kan finnas samtidigt för en slutpunkt. Om du vill ange maxHttpConnections för en begränsad slutpunkt använder du API:t för begränsning och API:t för begränsning för att ange maxHttpConnections. När du anropar API:t för begränsning kan du ange ett tröskelvärde för begränsning till något högre än tröskelvärdet, så att reglerna för begränsning aldrig kommer att börja gälla.
 
@@ -45,20 +45,21 @@ I tabellen nedan visas tillgängliga kommandon för begränsnings-API:t. Detalje
 | [!DNL GET] | /throttlingConfigs/`{uid}` | Hämta en begränsningskonfiguration |
 | [!DNL DELETE] | /throttlingConfigs/`{uid}` | Radera en begränsningskonfiguration |
 
-Dessutom finns en Postman-samling [här](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json) som kan hjälpa dig med testkonfigurationen.
+Dessutom finns en Postman-samling [här](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Throttling-API_postman-collection.json){target="_blank"} som kan hjälpa dig med testkonfigurationen.
 
-Den här samlingen har konfigurerats för att dela Postman Variable-samlingen som genereras via __[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations) > Testa > Hämta för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
+Den här samlingen har konfigurerats för att dela Postman Variable-samlingen som genereras via **[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations) > Testa > Hämta för Postman**, som genererar en Postman-miljöfil med de valda integreringsvärdena.
 
 När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
+
 * `{JO_HOST}` : [!DNL Journey Optimizer] Gateway-URL.
 * `{BASE_PATH}` : startpunkt för API.
-* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv) för mer information.
+* `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv){target="_blank"} för mer information.
 
 ## Begränsningskonfiguration {#configuration}
 
 Här är strukturen för en begränsningskonfiguration. Attributen **name** och **description** är valfria.
 
-```
+```json
 {
     "name": "<given name - free text>",
     "description": "<given description - free text>"
@@ -70,7 +71,7 @@ Här är strukturen för en begränsningskonfiguration. Attributen **name** och 
 
 Exempel:
 
-```
+```json
 {
   "name": "throttling-config-external",
   "description": "example of throttling config for an external endpoint",
@@ -88,7 +89,7 @@ Exempel:
 
 När en konfiguration skapas eller uppdateras validerar processen den angivna konfigurationen och returnerar den valideringsstatus som identifieras av dess unika ID, antingen:
 
-```
+```json
 "ok" or "error"
 ```
 
@@ -123,7 +124,7 @@ Följande fel kan uppstå när du skapar, raderar eller distribuerar en begräns
 
 När du försöker skapa en konfiguration i en sandlåda som är ej för produktion:
 
-```
+```json
 {
     "status": 400,
     "error": "{\"code\":1463,\"family\":\"INPUT_OUTPUT_ERROR\",\"message\":\"Operation not allowed on throttling config: non prod sandbox\",\"service\":\"vyg-authoring-api\",\"version\":\"ed87515\",\"context\":\"com.adobe.voyager.service.authoring.restapis.v1_0.ThrottlingConfigService:384\",\"schema\":\"throttlingConfigs$ui-tests\"}",
@@ -133,7 +134,7 @@ När du försöker skapa en konfiguration i en sandlåda som är ej för produkt
 
 Om den angivna sandlådan inte finns:
 
-```
+```json
 {
     "status": 500,
     "error": "{\"code\":4000,\"family\":\"INTERNAL_ERROR\",\"message\":\"INTERNAL ERROR\",\"service\":\"vyg-authoring-api\",\"version\":\"ed87515\",\"context\":\"com.adobe.voyager.common.exceptions.ApiErrorException:43\"}",
@@ -143,7 +144,7 @@ Om den angivna sandlådan inte finns:
 
 När du försöker skapa en annan konfiguration:
 
-```
+```json
 {
     "status": 400,
     "error": "{\"code\":1465,\"family\":\"INPUT_OUTPUT_ERROR\",\"message\":\"Can't create throttling config: only one config allowed per org\",\"service\":\"vyg-authoring-api\",\"version\":\"ed87515\",\"context\":\"com.adobe.voyager.service.authoring.restapis.v1_0.ThrottlingConfigService:108\",\"schema\":\"throttlingConfigs$prod\"}",
@@ -163,7 +164,7 @@ När du uppdaterar en konfiguration som redan har driftsatts beaktas de nya vär
 
 **Skapa – POST**
 
-```
+```json
 {
     "canDeploy": {
         "validationStatus": "ok"
@@ -200,7 +201,7 @@ När du uppdaterar en konfiguration som redan har driftsatts beaktas de nya vär
 
 **Uppdatera – PUT**
 
-```
+```json
 {
     "updatedElement": {
         "_id": "043a1aea-2dfd-4965-b93a-cb9a1eced0e6_8872a010-f91e-11ea-895c-11ef8f98ba52",
@@ -238,7 +239,7 @@ När du uppdaterar en konfiguration som redan har driftsatts beaktas de nya vär
 
 **Läs (efter uppdatering) – GET**
 
-```
+```json
 {
     "result": {
         "_id": "043a1aea-2dfd-4965-b93a-cb9a1eced0e6_8872a010-f91e-11ea-895c-11ef8f98ba52",
@@ -270,7 +271,7 @@ När du uppdaterar en konfiguration som redan har driftsatts beaktas de nya vär
 
 **Läs (efter driftsättning) – GET**
 
-```
+```json
 {
     "result": {
         "_id": "043a1aea-2dfd-4965-b93a-cb9a1eced0e6_8872a010-f91e-11ea-895c-11ef8f98ba52",
@@ -321,7 +322,7 @@ API-anrop som ska användas:
 
 +++
 
-+++Uppdatera och distribuera en begränsningskonfiguration (ännu ej distribuerad)
++++Uppdatera och distribuera en begränsningskonfiguration (ännu inte distribuerad)
 
 API-anrop som ska användas:
 
