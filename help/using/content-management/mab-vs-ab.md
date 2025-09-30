@@ -4,29 +4,23 @@ description: Läs mer om A/B-testning jämfört med beväpnade bandit
 feature: A/B Testing, Experimentation
 role: User
 level: Experienced
-source-git-commit: 397fad9c95e0c11c0496ab5c9adfb6f8169de4f6
+exl-id: 1f7b74d2-77c3-4113-8e6a-1e2a95117748
+source-git-commit: a659f596c0d37f4b91ec41e52c02c8385f6ae16b
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # A/B vs. multiväpnade bandit-experiment {#mab-vs-ab}
 
-<!--
 >[!CONTEXTUALHELP]
 >id="ajo_ab_test_mab"
->title="Experiment type"
->abstract="Experiment type determines how traffic is allocated between treatments during your test. Choose the method that best aligns with your goals:</br>
->
->* **A/B Experiment**: Splits traffic as you define between treatments and measures performance until results are statistically significant. Best for learning which treatment performs better in a controlled comparison.
->
->* **Multi-armed Bandit**: Shifts traffic toward higher-performing treatments as data is collected, balancing speed and optimization. Useful when you want to maximize conversions during the experiment.
->
->* **Bring your own Multi-armed Bandit**: Use your own algorithm to decide traffic allocation, giving you flexibility if you have a custom model or strategy."
--->
+>title="Experimentera"
+>abstract="Experimenttypen avgör hur trafiken fördelas mellan behandlingarna under testet. Välj den metod som bäst passar dina mål:</br><b>A/B Experiment</b>: Delar trafik när du definierar mellan behandlingar och mäter prestanda tills resultaten är statistiskt signifikanta. Bäst för att ta reda på vilken behandling som fungerar bättre i en kontrollerad jämförelse.</br><b>Flerarmad bandit</b>: Flyttar trafik mot högpresterande behandlingar när data samlas in, balanserar hastighet och optimering. Användbart när du vill maximera konverteringarna under experimentet.</br><b>Ta med dig en egen flerarmad bandit</b>: Använd din egen algoritm för att bestämma trafikallokeringen, vilket ger dig flexibilitet om du har en anpassad modell eller strategi."
 
 Den här sidan innehåller en detaljerad jämförelse av **A/B** - och **Multi-Armed Bandit** -experiment, där deras respektive styrkor, begränsningar och scenarier förklaras i vilka varje tillvägagångssätt är mest effektivt.
+
 
 ## A/B {#ab-test}
 
@@ -132,4 +126,3 @@ De största begränsningarna för multibeväpnade bandit-metoder är:
 | Ni har begränsad trafik och vill optimera avkastningen på investeringar snabbt | Flerarmad bandit |
 | Du har hög trafik och har råd med långsam inlärning | A/B |
 | Intressenterna behöver tydliga beslutsunderlag | A/B |
-
