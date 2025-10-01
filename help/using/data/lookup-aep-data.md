@@ -10,9 +10,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: e9ed993dd5957adb305b582b30e6675d2bb4526f
+source-git-commit: eb0da59bbdaa16eb381dda965cd06fb8548a945a
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,22 @@ Med Journey Optimizer kan ni utnyttja data från Adobe Experience Platform med f
 
 Läs följande begränsningar och riktlinjer innan du börjar:
 
-* Datauppsättningar som har aktiverats för sökning får inte innehålla någon PII (Personally Identiitable Information).
-* Datauppsättningar som är aktiverade för sökning och används för personalisering är inte skyddade för borttagning. Det är upp till dig att hålla reda på vilka datauppsättningar som används för personalisering för att säkerställa att de inte tas bort eller tas bort.
-* Datauppsättningar måste associeras med ett schema som INTE är av profiltyp eller händelsetyp.
-* Direktuppspelning av dataöverföringar stöds för uppslagsaktiverade datauppsättningar. Tänk på att bearbetningen av intaget fortfarande måste slutföras innan data är tillgängliga för personalisering eller beslutsfattande.
+* **Ingen PII i datauppsättningar** - datauppsättningar som har aktiverats för sökning får inte innehålla någon PII (Personally Identiitable Information).
+
+* 
+   * **Borttagningsrisk** - Datauppsättningar som används i personalisering skyddas inte från att tas bort. Du måste hålla reda på vilka datauppsättningar som används för att vara säker på att de inte tas bort.
+
+* **Schematyp** - Datauppsättningar måste associeras med ett schema som är **NOT** av profiltyp eller händelsetyp.
+
+* **Aktivera** för att aktivera och inaktivera sökningen - Undvik att aktivera och inaktivera datauppsättningar flera gånger. Om du gör det kan det leda till oväntade indexeringsbeteenden. Det bästa sättet är att låta datauppsättningen vara aktiverad så länge du tänker använda den för uppslag.
+
+* **Batch med dataradering** - Om du tar bort en grupp med data från datauppsättningen tas alla matchande nycklar bort helt från söktjänsten. Exempel:
+
+  **Grupp 1**: Sku1, Sku2, Sku3\
+  **Grupp 2**: SKU1, SKU2, SKU3, SKU4, SKU5, SKU6\
+  **Grupp 3**: Sku7, Sku8, Sku9, Sku10
+
+  Om du tar bort **Grupp 1** tas Sku1, Sku2 och Sku3 bort från sökningsarkivet. De resulterande sökdata kommer sedan att innehålla: Sku4, Sku5, Sku6, Sku7, Sku8, Sku9, Sku10.
 
 ### Tillstånd för sökningstjänst
 
