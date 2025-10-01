@@ -3,9 +3,9 @@ title: Använd tilläggsidentifierare under resor
 description: Lär dig hur du använder tilläggsidentifierare under resor.
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
 version: Journey Orchestration
-source-git-commit: 6c23b920787a1b39d60b397e9c74094695e59295
+source-git-commit: 62c0c1f46b5bd575102d9f27037cb6add1355ba2
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -16,16 +16,6 @@ ht-degree: 0%
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Använd extra identifierare"
 >abstract="Den kompletterande identifieraren är en sekundär identifierare som ger ytterligare kontext för körningen av en resa. Om du vill definiera det markerar du det fält som ska användas som tilläggsidentifierare och väljer ett namnutrymme som ska associeras med det."
-
-<!--
-By default, journeys are executed in the context of a **profile ID**. This means that, as long as the profile is active in a given journey, it won't be able to re-enter another journey. To prevent this, [!DNL Journey Optimizer] allows you to capture a **supplemental identifier**, such as an order ID, subscription ID, prescription ID, in addition to the profile ID. 
-In this example, we have added a booking ID as a supplemental identifier. 
-
-![](assets/event-supplemental-id.png){width=40% zoomable}
-
-By doing so, journeys are executed in the context of the profile ID associated to the supplemental identifier (here, the booking ID). One instance of the journey is executed for each iteration of the supplemental identifier. This allows multiple entrances of the same profile ID in journeys if they have made different bookings. 
-
-In addition, Journey Optimizer allows you to leverage attributes of the supplemental identifier (e.g., booking number, prescription renewal date, product type) for message customization, ensuring highly relevant communications.-->
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
@@ -71,6 +61,7 @@ In addition, Journey Optimizer allows you to leverage attributes of the suppleme
    * Kompletterande ID är inaktiverat om du använder en affärshändelse.
    * Kompletterande ID måste vara ett fält från profilen (dvs. inte ett händelse-/kontextfält).
    * För läsmålgruppsresor som använder extra ID:n är läsfrekvensen för läsmålgruppsaktiviteten för varje reseinstans begränsad till högst 500 profiler per sekund.
+   * Endast målgrupper med Enhetlig profiltjänst stöds när de använder läs målgruppsresor med extra ID:n.
 
 ## Avsluta kriteriebeteende med extra ID:n {#exit-criteria}
 
@@ -255,4 +246,4 @@ I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på 
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464796?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)

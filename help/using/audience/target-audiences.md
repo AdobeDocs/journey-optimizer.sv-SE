@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
-source-git-commit: 1ad534b7877f0ac6c1f50e29f41af708e83b34c9
+source-git-commit: 62c0c1f46b5bd575102d9f27037cb6add1355ba2
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Observera följande skyddsutkast för Custom Upload och Federated Audience Compo
 
 * **Stöd för förhandsgranskning och korrektur:** För närvarande stöds inte förhandsgranskning och korrektur för målgrupper som skapats med CSV-överföring eller sammanställning av federerade målgrupper. Tänk på detta när ni planerar era kampanjer.
 
-* **Nya profiler:** Om det inte går att hitta någon matchning mellan en post och en UPS-profil skapas en ny tom profil. Den här profilen är kopplad till anrikningsattributen som lagras i datasjön. Eftersom den nya profilen är tom är målfält som vanligtvis används i Journey Optimizer (t.ex. personalEmail.address, mobilePhone.number) tomma och kan därför inte användas som mål.
+* **Nya målprofiler:** Om det inte går att hitta någon matchning mellan en post och en enhetlig profiltjänstprofil skapas en ny tom profil. Den här profilen är kopplad till anrikningsattributen som lagras i datasjön. Eftersom den nya profilen är tom är målfält som vanligtvis används i Journey Optimizer (t.ex. personalEmail.address, mobilePhone.number) tomma och kan därför inte användas som mål.
 
   För att lösa detta kan du ange &quot;körningsfält&quot; (eller &quot;körningsadress&quot; beroende på kanal) i kanalkonfigurationen som &#39;identityMap&#39;. På så sätt säkerställs att det attribut som väljs som identitet när målgrupper skapas blir det som används för målgruppsanpassning i Journey Optimizer.
 
-* **Aktiverade poster och identitetssammanfogning:** Alla poster i målgruppen aktiveras, inklusive eventuella dubbletter. Under nästa UPS-profilexport kommer dessa poster att genomgå identitetssammanfogning. Det innebär att antalet aktiverade poster kan skilja sig från antalet profiler efter identitetssammanfogning.
+* **Aktiverade poster och identitetssammanfogning:** Alla poster i målgruppen aktiveras, inklusive eventuella dubbletter. Under nästa export av en enhetlig profiltjänstprofil kommer dessa poster att genomgå identitetssammanfogning. Det innebär att antalet aktiverade poster kan skilja sig från antalet profiler efter identitetssammanfogning.
 
 ## Målgrupper i [!DNL Journey Optimizer]
 
