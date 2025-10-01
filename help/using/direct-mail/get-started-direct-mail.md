@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: bb52f400-6289-4a7f-a34f-98eb5d27c76a
-source-git-commit: 6d11c78f78a4af13b8886e5d06a7b8de466714dd
+source-git-commit: d4b300f09a2e0b68ae1b5ba44995dad473ff67b3
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,11 @@ ht-degree: 0%
 
 Direktreklam är en offlinekanal som gör att du kan anpassa och generera extraheringsfiler som tredjepartsleverantörer av direktreklam behöver för att skicka e-post till dina kunder.
 
-När du skapar en kampanj för direktreklam genererar Journey Optimizer automatiskt en fil som innehåller alla målprofiler och valda data, till exempel postadresser och profilattribut. Den här filen skickas till valfri server så att den kan nås av den externa direktreklamleverantören, som hanterar den faktiska utskicksprocessen åt dig.
+>[!AVAILABILITY]
+>
+>Direktutskick kan bara skapas i samband med schemalagda kampanjer och resor. De kan inte användas i API-utlösta och samordnade kampanjer.
+
+När du skapar en kampanj för direktreklam genererar [!DNL Journey Optimizer] automatiskt en fil som innehåller alla målprofiler och valda data, till exempel postadresser och profilattribut. Den här filen skickas till valfri server så att den kan nås av den externa direktreklamleverantören, som hanterar den faktiska utskicksprocessen åt dig.
 
 Du måste samarbeta med den tredjepartsleverantör av direktreklam som du har valt för att få kundernas samtycke, om tillämpligt, så att dina kunder kan ta emot e-post från dig.
 
@@ -28,10 +32,4 @@ De viktigaste stegen för att skicka direktutskick är följande:
 
 ![](assets/dm-creation-process.png)
 
->[!AVAILABILITY]
->
->Direktutskick kan bara skapas i samband med schemalagda kampanjer. De är inte tillgängliga för användning i API-utlösta kampanjer eller under resor.
-
 ![](../rn/assets/do-not-localize/gif-dm.gif)
-
-
