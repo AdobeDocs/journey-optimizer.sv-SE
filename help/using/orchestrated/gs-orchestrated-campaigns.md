@@ -6,9 +6,9 @@ description: Lär dig hur du kommer igång med samordnade kampanjer
 short-description: Upptäck de viktigaste funktionerna för samordnade kampanjer samt användningsfall.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 version: Campaign Orchestration
-source-git-commit: 4d5505cbb46bdff846218bfc3657c6a6e5447af3
+source-git-commit: 97f9c32435667fecb950892ed6f6531085055e59
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '652'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"
 >title="campaign_overview_orchestrated"
->abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/> <b>Utnyttja data för flera enheter</b><br/>Lär dig hur orkestrerade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt antal</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden, direktreklam"
+>abstract="<b>Kampanjsamordning</b><br/>Dela, kombinera, berika och hantera relationsdatauppsättningar för att definiera er målgrupp<br/><br/> <b>Utnyttja data för flera enheter</b><br/>Lär dig hur orkestrerade kampanjer kan utnyttja relationsdatauppsättningar för att förbättra data för segmentering och personalisering<br/><br/><b>Ad-hoc-segmentering och exakt antal</b><br/>Bygg ditt segment steg för steg med exakt antal<br/><br/><b>Tillgängliga kanaler</b><br/>E-post, SMS, push-meddelanden"
 
 Kampanjsamordning i [!DNL Adobe Journey Optimizer] driver avancerade, varumärkesinitierade marknadsföringskampanjer över alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
 
