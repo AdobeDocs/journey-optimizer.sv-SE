@@ -5,9 +5,9 @@ title: Skapa en måldimension
 description: Lär dig mapp ett relationsschema till kundprofilen
 exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: aa075c1ca2feb3b6ef406089ab9fffd704fd95e2
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
    I det här exemplet är kundprofilen länkad till flera prenumerationer, som vart och ett representeras av en unik `crmID` i `Recipient`-schemat. Genom att ange att **[!UICONTROL Target Dimension]** ska använda `Recipient`-schemat och dess `crmID`-identitet kan du skicka meddelanden på prenumerationsnivå i stället för till huvudkundprofilen, så att varje kontrakt eller rad får ett eget anpassat meddelande.
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)
 
    ![](assets/target-dimension-2.png)
 
@@ -61,7 +61,7 @@ När du har konfigurerat **[!UICONTROL Target Dimension]** fortsätter du med at
 
 ## Konfigurera kanalkonfigurationen {#channel-configuration}
 
-När du har konfigurerat din **[!UICONTROL Target Dimension]** måste du konfigurera din e-post eller ditt SMS **[!UICONTROL Channel Configuration]** och definiera rätt **[!UICONTROL Execution Details]**. Detta gör att du kan definiera :
+När du har konfigurerat **[!UICONTROL Target Dimension]** måste du konfigurera **[!UICONTROL Channel Configuration]** och definiera rätt **[!UICONTROL Execution Details]**. Detta gör att du kan definiera :
 
 * **Nivån för meddelandeleverans**: t.ex. ett meddelande per mottagare, t.ex. ett e-postmeddelande per person.
 
