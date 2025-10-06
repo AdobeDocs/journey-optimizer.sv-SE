@@ -4,9 +4,9 @@ description: Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer
 role: User
 level: Beginner
 exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
-source-git-commit: e8f7f5862e3816481680fa999657ae90334ff888
+source-git-commit: be1538495ea7427fd8c4b8ea781db74bf557c22f
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '594'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Om ni redigerade den här kampanjen och ville se till att kampanjinnehållet vis
 >title="Prioritet"
 >abstract="Tilldela ett prioritetspoäng till reseåtgärden. Prioritet är viktigt för att prioritera en inkommande åtgärd när det finns flera reseåtgärder eller kampanjer som använder samma kanalkonfiguration.</br>Ange ett numeriskt värde (från 0-100). Observera att ju högre tal desto högre prioritet. Som standard ärvs prioritetspoängen för åtgärden från den övergripande prioritetspoängen för resan."
 
-I Journey Optimizer kan du även tilldela en prioritetspoäng till inkommande kanalåtgärder inom aktiviteten **[!UICONTROL Action]**.
+I Journey Optimizer kan du även tilldela en prioritetspoäng till inkommande kanalåtgärder inom [åtgärden](../building-journeys/journey-action.md).
 
 På så sätt kan ni prioritera en inkommande åtgärd när det finns flera reseåtgärder eller kampanjer som använder samma kanalkonfiguration.
 
@@ -72,4 +72,4 @@ Om du vill tilldela en prioritetspoäng till de inkommande åtgärder som defini
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3445005?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)
