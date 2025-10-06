@@ -42,7 +42,7 @@ ht-degree: 0%
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
 <p>Mer information finns i <a href="../email/pdf-attachments.md">detaljerad dokumentation</a></p>
-<p>Tillgänglighetsdatum: 30 september 2025</p-->
+<p>Tillgänglighetsdatum: 30 september 2025&lt;/p-->
 </td>
 </tr>
 </tbody>
