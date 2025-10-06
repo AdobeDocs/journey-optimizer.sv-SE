@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
-source-git-commit: 56a7f3be7777e1c9f73a1c473bd6babf952333f1
+source-git-commit: ed0c1b9f219b3b855aaac1a27b5ceb704d6f6d5e
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2865'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_decision_policy"
 >title="Definiera en beslutspolicy"
 >abstract="Med en beslutspolicy kan ni välja ut de bästa elementen från beslutsmotorn och leverera dem till rätt målgrupp."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_policy"
@@ -91,7 +91,7 @@ De viktigaste stegen för att utnyttja beslutsstrategier i era budskap är följ
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för mottagarna och besökarna i dina e-postmeddelanden på din webbplats eller i din mobilapp lägger du till en beslutspolicy i ett e-postmeddelande eller en kodbaserad kampanj eller resa. Följ stegen nedan för att göra det.
 
@@ -314,7 +314,7 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 >[!NOTE]
 >
 >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
->&#x200B;>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+>>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 1. Klicka på varje mapp för att expandera den. Placera musmarkören på önskad plats och klicka på ikonen + bredvid det attribut du vill lägga till. Du kan lägga till så många attribut du vill i koden.
 
@@ -355,7 +355,7 @@ Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable`
 
 >[!TAB Följ de detaljerade stegen]
 
-1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **&#x200B;**&#x200B;`{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
 
    ![](assets/decision-let-function.png)
 
@@ -378,6 +378,39 @@ Fragment-ID och referensnyckel väljs från beslutsobjektets **[!UICONTROL Fragm
 >[!WARNING]
 >
 >Om fragmentnyckeln är felaktig eller om fragmentinnehållet inte är giltigt, kommer återgivningen att misslyckas och orsaka fel i Edge-anropet.
+
+#### Stödlinjer när fragment används {#fragments-guardrails}
+
+**Beslutsobjekt och kontextattribut**
+
+Attribut för beslutsobjekt och kontextalattribut stöds inte som standard i [!DNL Journey Optimizer]-fragment. Du kan emellertid använda globala variabler i stället, som beskrivs nedan.
+
+Säg att du vill använda variabeln *sport* i ditt fragment.
+
+1. Referera den här variabeln i fragmentet, till exempel:
+
+   ```
+   Elevate your practice with new {{sport}} gear!
+   ```
+
+1. Definiera variabeln med funktionen **Let** i beslutsprincipblocket. I exemplet nedan definieras *sport* med attributet för beslutsobjekt:
+
+   ```
+   {#each decisionPolicy.13e1d23d-b8a7-4f71-a32e-d833c51361e0.items as |item|}}
+   {% let sport = item._cjmstage.value %}
+   {{fragment id = get(item._experience.decisioning.offeritem.contentReferencesMap, "placement1").id }}
+   {{/each}}
+   ```
+
+**Innehållsvalidering av beslutsfragment**
+
+* På grund av dessa fragment, när de används i en kampanj, hoppas meddelandevalideringen under skapandet av kampanjinnehåll över för fragment som refereras i beslutsobjekt.
+
+* Valideringen av fragmentinnehållet sker bara när fragmenten skapas och publiceras.
+
+* För JSON-fragment är JSON-objektets giltighet inte säkerställd. Kontrollera att uttrycksfragmentets innehåll är en giltig JSON så att det kan användas i beslutsobjekt.
+
+Vid körning valideras kampanjinnehållet (inklusive fragmentinnehåll från beslutsobjekt). Om valideringen misslyckas återges inte kampanjen.
 
 ## Slutliga steg {#final-steps}
 
