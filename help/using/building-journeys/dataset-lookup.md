@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 version: Journey Orchestration
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
-source-git-commit: 3a682f0fc6a6f9a3a505dfd99bd8d54dfd41a077
+source-git-commit: 5b7847957cc0fa176a32c7e0b01d5f41fd424610
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -125,9 +125,9 @@ De data som hämtas av aktiviteten **[!UICONTROL Dataset lookup]** lagras i rese
 
 1. **Datauppsättningssökningsaktivitet**:
 
-* Datauppsättning: `products-dataset` (SKU som primärnyckel).
-* Uppslagstangenter: `list(@event{purchase_event.products.sku})`.
-* Fält som ska returneras: `["SKU", "category", "price"]`.
+   * Datauppsättning: `products-dataset` (SKU som primärnyckel).
+   * Uppslagstangenter: `list(@event{purchase_event.products.sku})`.
+   * Fält som ska returneras: `["SKU", "category", "price"]`.
 
 1. **Villkorsaktivitet**:
 
