@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 43fe7ca22a7685944b2b11ca3d1872641d1f4694
+source-git-commit: 9cd21ef6552ce8f6ddb2097de883ec1a1bbf06e2
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,11 @@ Utöver den här regeluppsättningen för global standardregeluppsättning kan d
 >abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."-->
 
 >[!CONTEXTUALHELP]
+>id="ajo_rule_type"
+>title="Regeltyp"
+>abstract="Välj önskad regeltyp för kanalregeluppsättningen: Använd typen **Frekvensbegränsning** för att tillämpa regler för appning på kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag. Välj **Tysta timmar** (tillgängligt i begränsad tillgänglighet) om du vill definiera tidsbaserade undantag för att säkerställa att inga meddelanden skickas under särskilda tidsperioder.&quot;
+
+>[!CONTEXTUALHELP]
 >id="ajo_rule_sets_duration"
 >title="Välj meddelanderegelkategori"
 >abstract="När det aktiveras och används för ett meddelande, kommer alla frekvensregler som matchar den valda kategorin automatiskt att tillämpas på det här meddelandet. För närvarande är endast marknadsföringskategorin tillgänglig."
@@ -82,6 +87,11 @@ Utöver den här regeluppsättningen för global standardregeluppsättning kan d
 >id="ajo_rule_set_rule_capping"
 >title="Regelfästning"
 >abstract="Ange begränsning för din regel. Beroende på regeluppsättningsdomänen och valet i fältet Regeltyp kan det här fältet definiera det maximala antalet meddelanden som kan skickas till en profil, eller det maximala antalet resor som profilen kan ange eller registreras samtidigt."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_business_rules"
+>title="Regeluppsättning"
+>abstract="Välj den regeluppsättning som ska användas för din anpassade åtgärd."
 
 Följ stegen nedan för att skapa en regeluppsättning.
 
@@ -164,4 +174,4 @@ Dess status ändras till **[!UICONTROL Inactive]** och regeln gäller inte för 
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
