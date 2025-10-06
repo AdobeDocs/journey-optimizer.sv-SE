@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: 938b148e-b2cd-4d8b-9f73-dd62420d6184
-source-git-commit: 61ae9196f699c3b6aa1d9a5bb2259d36aaebc0e3
+source-git-commit: 09a0b24c7e6ae071851a60f35f50e3f5048b0148
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->**Journey Optimizer Experimentation Accelerator** kräver att kunderna har en licens för antingen Adobe Target eller Adobe Journey Optimizer.
+>**Journey Optimizer Experimentation Accelerator** kräver en betald licens och kan fungera med antingen Adobe Target eller Adobe Journey Optimizer.
 
 **Journey Optimizer Experimentation Accelerator** är ett kraftfullt verktyg som har utformats för att effektivisera och förbättra experimenteringsprocessen. Genom att integrera med Adobe Target och Adobe Journey Optimizer utgör programmet en central plattform för att hantera, analysera och optimera experiment. Med hjälp av AI-baserade insikter och adaptiv testning kan ni med Journey Optimizer Experimentation Accelerator fatta datadrivna beslut, förbättra marknadsföringsstrategier och få mätbara resultat.
 
@@ -77,7 +77,7 @@ Så här tilldelar du rollen till nya användare:
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+   Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
 
