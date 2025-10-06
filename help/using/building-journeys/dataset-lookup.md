@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 version: Journey Orchestration
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
-source-git-commit: 189a5e1c31946e05ef88161f0b5d678b95dd2064
+source-git-commit: 3a682f0fc6a6f9a3a505dfd99bd8d54dfd41a077
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -124,6 +124,7 @@ De data som hämtas av aktiviteten **[!UICONTROL Dataset lookup]** lagras i rese
 1. **Inköpshändelse**: Hämta SKU:er från användarens kundvagn.
 
 1. **Datauppsättningssökningsaktivitet**:
+
 * Datauppsättning: `products-dataset` (SKU som primärnyckel).
 * Uppslagstangenter: `list(@event{purchase_event.products.sku})`.
 * Fält som ska returneras: `["SKU", "category", "price"]`.
@@ -133,7 +134,7 @@ De data som hämtas av aktiviteten **[!UICONTROL Dataset lookup]** lagras i rese
    * Filtrera SKU:er där kategorin är&quot;hushåll&quot;.
 
      ```
-     @event{purchase_event.products.all( in(currentEventField.sku, @datasetlookup{MyDatasetLookupActivity1.entities.all(currentDatasetLookupField.category == ‘household’).sku} ) )} 
+     @event{purchase_event.products.all( in(currentEventField.sku, @datasetlookup{MyDatasetLookupActivity1.entities.all(currentDatasetLookupField.category == 'household').sku} ) )} 
      ```
 
    ELLER
@@ -141,7 +142,7 @@ De data som hämtas av aktiviteten **[!UICONTROL Dataset lookup]** lagras i rese
    * Sammanfatta de totala utgifterna för hushållsprodukter och jämför dem med tröskelvärdet på 40 dollar.
 
      ```
-     sum(@event{purchase_event.products.all( in(currentEventField.sku, @datasetlookup{MyDatasetLookUpActivity1.entities.all(currentDatasetLookupField.category == ‘household’).sku} ) )}.price}, ',', true ) > 40
+     sum(@event{purchase_event.products.all( in(currentEventField.sku, @datasetlookup{MyDatasetLookUpActivity1.entities.all(currentDatasetLookupField.category == 'household').sku} ) )}.price}, ',', true ) > 40
      ```
 
 1. **Personalization Editor**:
