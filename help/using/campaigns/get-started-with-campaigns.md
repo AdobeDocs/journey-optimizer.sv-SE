@@ -7,11 +7,12 @@ feature: Campaigns
 topic: Content Management
 role: User
 level: Beginner
+mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 4bd3e202935cfc971990faa7d1dd2f3d0d7cdc6d
+source-git-commit: 801b90201c3ffcbfb7b038abac2bf99209a14c7a
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '950'
 ht-degree: 1%
 
 ---
@@ -83,82 +84,93 @@ ht-degree: 1%
 >title="Kampanjer"
 >abstract="Skicka transaktionsinformation till enskilda profiler eller profiler. Kanaler som stöds: E-post, SMS, push-meddelanden."
 
-Använd Journey Optimizer kampanjer för att leverera engångsinnehåll till en viss målgrupp via olika kanaler. När du använder resor utförs åtgärderna i sekvens. Med kampanjer utförs åtgärder samtidigt, antingen omedelbart eller baserat på ett angivet schema.
+Använd [!DNL Journey Optimizer] kampanjer för att leverera engångsinnehåll till en viss målgrupp i flera kanaler. Till skillnad från resor, som utför åtgärder steg för steg, utför kampanjer samtidigt - antingen direkt eller enligt ett bestämt schema.
 
 ![](assets/gs-campaigns.png)
 
-Du kan skapa olika typer av kampanjer i Journey Optimizer. Kanaler och användningsfall som stöds varierar beroende på kampanjtypen. Dessa typer listas nedan.
+## Kampanjtyper
 
-* **Åtgärdskampanjer**
+[!DNL Journey Optimizer] har stöd för tre kampanjtyper. Varje typ passar olika användningsområden och har stöd för olika kanaler.
 
-  Åtgärdskampanjer (eller schemalagda kampanjer) möjliggör enkel ad hoc-batchkommunikation för marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar. Läs mer om åtgärdskampanjer, användningsfall och stödda kanaler [på den här sidan](create-campaign.md).
-
-* **API-utlösta kampanjer**
-
-  API-utlösta kampanjer gör det möjligt att antingen nå ut till en målgrupp vid rätt tidpunkt eller för transaktionsmeddelanden/operativa meddelanden till en individ som lösenordsåterställning, där behovet kan innebära personalisering inte bara genom att använda profilattribut, utan även kontextdata i realtid i utlösaren som är en REST API-nyttolast. Läs mer om API-triggade kampanjfunktioner, användningsfall och stödda kanaler [på den här sidan](api-triggered-campaigns.md).
-
-* **Samordnade kampanjer**
-
-  Kampanjsamordning i Adobe Journey Optimizer driver fram sofistikerade, varumärkesinitierade marknadsföringskampanjer i alla kanaler och hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
-
-  Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den sömlös. Med ett visuellt dra-och-släpp-gränssnitt kan ni utforma och automatisera komplexa marknadsföringsarbetsflöden, från segmentering till meddelandeleverans, i flera kanaler. Allt sker i en intuitiv miljö som är byggd för snabbhet, kontroll och effektivitet. Läs mer om funktioner för samordnade kampanjer, användningsfall och stödda kanaler [på den här sidan](../orchestrated/gs-orchestrated-campaigns.md).
-
-## Förhandskrav {#prerequisites}
-
-Innan du skapar din kampanj måste du kontrollera att du har granskat villkoren nedan.
-
-### Behörigheter
-
-Kampanjer är bara tillgängliga för användare med lämplig behörighet som listas nedan. [Läs mer om Journey Optimizer inbyggda roller](../administration/ootb-product-profiles.md)
+![](assets/campaign-modal.png)
 
 >[!BEGINTABS]
 
->[!TAB Åtgärdskampanjer]
+>[!TAB Samordnade kampanjer]
 
-Kampanjadministratör
-Kampanjgodkännare
-Kampanjchef
-Kampanjvisningsprogram
+**Samordnade kampanjer** används för sofistikerade, varumärkesinitierade marknadsföringskampanjer i alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
+
+Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den sömlös. Med ett visuellt dra-och-släpp-gränssnitt kan ni utforma och automatisera komplexa marknadsföringsarbetsflöden, från segmentering till meddelandeleverans, i flera kanaler. Allt sker i en intuitiv miljö som är byggd för snabbhet, kontroll och effektivitet.
+
+➡️ [Lär dig hur du arbetar med samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md).
+
+>[!TAB Åtgärdskampanjer (eller schemalagda kampanjer)]
+
+**Åtgärdskampanjer**, som också kallas schemalagda kampanjer, möjliggör enkel ad hoc-batchkommunikation.
+
+* **Schemalagd - Marknadsföring** - För marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar. Kräver att mottagarna är invalda.
+* **Schemalagd - Transaktionell** - Till skillnad från marknadsföringskampanjer kräver inte Transactional-kampanjer att mottagare väljs. Använd den här kategorin för kommunikation i samband med avbrott, kriser och annulleringar. Kanaler som stöds: e-post, SMS, push-meddelanden.
+
+➡️ [Lär dig arbeta med åtgärdskampanjer](create-campaign.md)
 
 >[!TAB API-utlösta kampanjer]
 
-Kampanjadministratör
-Kampanjgodkännare
-Kampanjchef
-Kampanjvisningsprogram
+**API-utlösta kampanjer** gör att du kan utlösa kampanjkörningen med ett API-anrop. Dessa meddelanden kan skickas där behovet av personalisering kan innebära, inte bara genom att ett profilattribut för lösenordsåterställning återställs, utan även kontextdata i realtid i utlösaren, som är en REST API-nyttolast.
 
->[!TAB Samordnade kampanjer]
+* **API utlöstes - Marketing** - Skicka personaliserad marknadsföringskommunikation till målgrupper.
+* **API har utlösts - Transactional** - Skicka meddelanden efter en åtgärd som har utförts av en individ, t.ex. en begäran om återställning av lösenord, ett kundvagnsinköp.
 
-Orchestrated Campaign Administrator
-Samlad kampanjgodkännare
-Organiserad kampanjchef
-Samlad kampanjvisare
+➡️ [Lär dig hur du arbetar med API-utlösta kampanjer](api-triggered-campaigns.md)
+
 
 >[!ENDTABS]
 
-Om du inte kan komma åt kampanjfunktioner kontaktar du administratören för att få den behörighet som krävs.
+## Kanaler som stöds efter kampanjtyp {#channels}
 
-+++Lär dig hur du tilldelar kampanjrelaterad roll
+Tabellen nedan visar tillgängligheten för varje kanal mellan olika kampanjtyper, vilket visar var de stöds.
 
-1. Om du vill tilldela en roll till en användare i [!DNL Permissions]-produkten går du till fliken **[!UICONTROL Roles]** och väljer en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]** som beskrivs ovan.
+| Kanal | Åtgärd (marknadsföring) | Åtgärd (transaktionell) | API-utlöst (marknadsföring) | API-utlöst (Transactional) | Orchestrated |
+|----------------------|---------------------|-------------------------|----------------------------|--------------------------------|--------------|
+| E-post | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMS | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Push-meddelande | ✅ | ✅ | ✅ | ✅ | ✅ |
+| I appen | ✅ | — | — | — | — |
+| Direktmeddelande | ✅ | — | — | — | — |
+| Webb | ✅ | — | — | — | — |
+| Kodbaserad exp. | ✅ | — | — | — | — |
+| Innehållskort | ✅ | — | — | — | — |
+| WhatApp | ✅ | — | — | — | — |
+| Linje | ✅ | — | — | — | — |
 
-1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
+## Förhandskrav {#prerequisites}
 
-1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
+Innan du arbetar med kampanjer måste du kontrollera att du har granskat villkoren nedan.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+* **Publiker** måste vara tillgängliga innan kampanjen kan skapas. [Kom igång med målgrupper](../audience/about-audiences.md).
 
-Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
+* **Kanalkonfigurationer** - Om du vill kunna välja en kanal måste du ha motsvarande kanalkonfiguration (dvs. förinställning) skapad och tillgänglig. [Lär dig hur du konfigurerar kanalkonfigurationer](../configuration/channel-surfaces.md).
 
-+++
+* **Behörigheter** - kampanjer är bara tillgängliga för användare med lämplig behörighet som listas nedan. Om du inte kan komma åt kampanjfunktioner kontaktar du administratören för att få den behörighet som krävs. [Läs mer om Journey Optimizer inbyggda roller](../administration/ootb-product-profiles.md)
 
-### Målgrupp
+  | Kampanjtyp | Behörigheter |
+  |----------------------------|----------------------------------------------------------------------------|
+  | **Åtgärdskampanjer** | Kampanjadministratör<br>Kampanjgodkännare<br>Kampanjhanterare<br>Kampanjvisningsprogram |
+  | **API-utlösta kampanjer** | Kampanjadministratör<br>Kampanjgodkännare<br>Kampanjhanterare<br>Kampanjvisningsprogram |
+  | **Samordnade kampanjer** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
 
-Målgrupper måste vara tillgängliga innan kampanjen kan skapas. [Kom igång med målgrupper](../audience/about-audiences.md).
+  +++Lär dig hur du tilldelar kampanjrelaterad roll
 
-### Kanalkonfiguration
+   1. Om du vill tilldela en roll till en användare i [!DNL Permissions]-produkten går du till fliken **[!UICONTROL Roles]** och väljer en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]** som beskrivs ovan.
 
-Om du vill kunna välja en kanal måste du ha motsvarande kanalkonfiguration (dvs. förinställning) skapad och tillgänglig. [Lär dig hur du konfigurerar kanalkonfigurationer](../configuration/channel-surfaces.md).
+   1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
+
+   1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
+
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+
+  Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
+
+  +++
 
 ## Låt oss dyka djupare
 

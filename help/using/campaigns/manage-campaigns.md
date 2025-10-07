@@ -10,33 +10,14 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 1215c7c2de090db7bcdb7943cc96599d9809972d
+source-git-commit: 801b90201c3ffcbfb7b038abac2bf99209a14c7a
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1635'
 ht-degree: 0%
 
 ---
 
 # Få tillgång till och hantera kampanjer {#manage-campaigns}
-
-Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i det här avsnittet](get-started-with-campaigns.md#permissions). När dessa förutsättningar är uppfyllda kan ni börja skapa kampanjen:
-
-* **Få tillgång till kampanjer**. Du kan komma åt kampanjer antingen från [kampanjlistan](#access) eller från [kampanjkalendern](#calendar).
-
-* **Skapa kampanjen**. Vilka steg som skapas beror på [typen av kampanj](get-started-with-campaigns.md#get-started-with-campaigns). Lär dig hur du skapar en [åtgärdskampanj](../campaigns/create-campaign.md), en [API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) eller en [strukturerad kampanj](../orchestrated/create-orchestrated-campaign.md).
-
-* **Definiera kampanjegenskaperna**. Lär dig hur du ställer in egenskaper för en [åtgärdskampanj](../campaigns/campaign-properties.md) för en [API-utlöst kampanj](../campaigns/api-triggered-campaign-properties.md) eller en [strukturerad kampanj](../orchestrated/create-orchestrated-campaign.md).
-
-* **Definiera kampanjkanalerna och innehållet**. Lär dig hur du definierar innehållet i en [åtgärdskampanj](../campaigns/campaign-content.md), en [API-utlöst kampanj](../campaigns/api-triggered-campaign-content.md) eller en [strukturerad kampanj](../orchestrated/orchestrate-activities.md).
-
-* **Schemalägg din kampanj** - Du kan kontrollera schemalagda kampanjer [ i kampanjkalendern](#calendar).
-
-Börja sedan testa, förbättra och förfina kampanjen innan den körs. När kampanjen är live kan ni övervaka den och få tillgång till rapporter.
-
-Visa alla kampanjstatus och aviseringar [i det här avsnittet](#statuses).
-
-
-## Åtkomst till kampanjer {#access}
 
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"

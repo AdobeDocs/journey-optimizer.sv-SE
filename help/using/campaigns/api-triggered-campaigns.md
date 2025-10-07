@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: d4765f9084efac1fd241404dff365a66027ce5af
+source-git-commit: 801b90201c3ffcbfb7b038abac2bf99209a14c7a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '275'
 ht-degree: 1%
 
 ---
@@ -43,6 +43,8 @@ Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-med
 
 ## Viktiga steg för att skapa API-utlösta kampanjer {#steps}
 
+Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i det här avsnittet](get-started-with-campaigns.md#permissions). När dessa förutsättningar är uppfyllda kan ni börja skapa kampanjen:
+
 1. [Definiera kampanjegenskaperna](api-triggered-campaign-properties.md)
 1. [Konfigurera kampanjåtgärden](api-triggered-campaign-action.md)
 1. [Redigera kampanjinnehållet](api-triggered-campaign-content.md)
@@ -51,12 +53,8 @@ Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-med
 1. [Granska och aktivera kampanjen](review-activate-api-triggered-campaign.md)
 1. [Utlösa kampanjkörningen](trigger-campaigns.md)
 
->[!IMPORTANT]
->
->Innan du skapar din kampanj måste du kontrollera att du har granskat de allmänna kraven för [kampanjen](../campaigns/get-started-with-campaigns.md#prerequisites).
-
 ## Instruktionsfilmer {#video}
 
 Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452729?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
