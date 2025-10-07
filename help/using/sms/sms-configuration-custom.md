@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: 1d869ee8bf1c76e182a3f6b0433e5ab2eec2a8fb
+source-git-commit: 21eebaaa0193164ac70dd819b25ad6547446397f
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ Om nyckelord för anmälan eller avanmälan inte anges används standardmeddelan
 
 >[!ENDSHADEBOX]
 
-När API-autentiseringsuppgifterna har skapats är nästa steg att skapa en webkrok och konfigurera dina inkommande inställningar. Den här konfigurationen ser till att systemet kan ta emot och bearbeta inkommande data eller meddelanden på rätt sätt.
+När API-autentiseringsuppgifterna har skapats kan du nu konfigurera Webhooks så att inkommande svar hämtas för hantering av godkännande av anmälan och avanmälan, och så att du får leveransrapporter som läskvitton när de är tillgängliga.
 
 När du konfigurerar en webkrok kan du definiera dess syfte baserat på den typ av data som du vill hämta:
 

@@ -7,9 +7,9 @@ feature: Whatsapp, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: 31e25c511d8873e54c7b92e65511108a77f84941
+source-git-commit: 21eebaaa0193164ac70dd819b25ad6547446397f
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '766'
 ht-degree: 1%
 
 ---
@@ -30,8 +30,8 @@ Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](
 
 1. Konfigurera dina API-autentiseringsuppgifter enligt nedanstående:
 
-   * **API-token**: Ange din API-token. Läs mer i [Metadatadokumentation](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)
-   * **Konto-ID**: Ange det unika nummer som hör till din företagsportfölj. Läs mer i [Metadatadokumentation](https://www.facebook.com/business/help/1181250022022158?id=180505742745347).
+   * **API-token**: Ange din API-token. Läs mer i [Meta-dokumentation](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)
+   * **Konto-ID**: Ange det unika nummer som hör till din företagsportfölj. Läs mer i [Meta-dokumentation](https://www.facebook.com/business/help/1181250022022158?id=180505742745347).
 
    ![](assets/whatsapp-api.png)
 
@@ -84,7 +84,7 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 >
 >Utan angivna nyckelord för anmälan eller avanmälan aktiveras inte standardmeddelanden för samtycke.
 
-När dina API-autentiseringsuppgifter för whatsApp har skapats är nästa steg att skapa en webkrok och konfigurera dina inkommande inställningar.
+När dina API-autentiseringsuppgifter för whatsApp har skapats kan du nu konfigurera Webhooks så att inkommande svar hämtas för hantering av medgivande för anmälan och avanmälan, och så att du får leveransrapporter som läskvitton när de är tillgängliga.
 
 1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL WhatsApp Webhooks]** under **[!UICONTROL WhatsApp settings]** och klicka på knappen **[!UICONTROL Create Webhook]**.
 
@@ -127,7 +127,7 @@ När dina API-autentiseringsuppgifter för whatsApp har skapats är nästa steg 
 
 1. Kopiera **[!UICONTROL Webhook Verify toker]** som har skapats här och klistra sedan in den i Meta-gränssnittet som en del av Webkrok-konfigurationen.
 
-   Detaljerade instruktioner om hur och var denna verifieringstoken ska läggas till finns i [Metadokumentationen](https://developers.facebook.com/docs/graph-api/webhooks/getting-started#configure-webhooks-product).
+   Detaljerade instruktioner om hur och var denna verifieringstoken ska läggas till finns i [Meta-dokumentationen](https://developers.facebook.com/docs/graph-api/webhooks/getting-started#configure-webhooks-product).
 
 1. Få åtkomst till och kopiera din nya **[!UICONTROL Webhook URL]** från din tidigare inskickade **[!UICONTROL WhatsApp Webhook]**.
 
@@ -180,6 +180,6 @@ I videon nedan visas hur du konfigurerar WhatsApp-kanalen i Adobe Journey Optimi
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470272/?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
 
 +++
