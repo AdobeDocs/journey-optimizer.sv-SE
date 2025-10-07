@@ -5,9 +5,9 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-source-git-commit: fc741db8db2ca9c05dbb87a41712e90a62a18c13
+source-git-commit: 5c8afc78e14a358b2d6baebfca7dbb76991894c8
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1688'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,15 @@ ht-degree: 0%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
-Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. Följ stegen nedan för att göra det.
+Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
+
+1. [Lägg till en beslutspolicy](#add) - Från Personalization-redigeraren eller e-postprogrammet för Designer.
+1. [Konfigurera beslutsprincipen](#configurre) - Lägg till ett namn och ange antalet objekt som ska returneras.
+1. [Konfigurera en strategisekvens](#strategy) - Välj de objekt som ska returneras med beslutsprincipen.
+1. [Välj reserverbjudanden](#fallback) (valfritt) - Välj objekt som ska visas om inga objekt eller urvalsstrategier är kvalificerade.
+1. [Granska och spara](#review) markeringsstrategin
 
 >[!AVAILABILITY]
 >
@@ -51,9 +57,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina
    >
    >Observera att alla beslutsprinciper som har konfigurerats i e-postmeddelandet inte sparas i mallen. Om du tillämpar mallen på ett annat e-postmeddelande måste du konfigurera om profilen.
 
-1. Öppna personaliseringsredigeraren för att skapa beslutspolicyn.
-
-   För e-postmeddelanden kan du även använda en dedikerad meny i e-postdesignern för att skapa en beslutspolicy. Expandera avsnitten nedan för att utforska de två metoderna.
+1. Öppna **personaliseringsredigeraren** för att skapa beslutsprincipen. För e-postmeddelanden kan du även använda en dedikerad meny i **e-postdesignern** för att skapa en beslutsprincip. Expandera avsnitten nedan för att utforska de två metoderna.
 
    +++Skapa en beslutspolicy från Personalization Editor
 
@@ -74,7 +78,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina
 
    +++
 
-## Konfigurera information om beslutsprofiler {#configure}
+## Konfigurera beslutsprincipen {#configure}
 
 När du har lagt till en ny beslutsprincip i innehållet öppnas skärmen för konfiguration av beslutsprincip.
 
@@ -84,9 +88,9 @@ När du har lagt till en ny beslutsprincip i innehållet öppnas skärmen för k
 
    ![](assets/decision-code-based-details.png)
 
-   Om du vill returnera flera objekt i ett e-postmeddelande måste du använda en **[!UICONTROL Repeat grid]**-innehållskomponent. Expandera avsnittet nedan om du vill ha mer information:
+   För e-postkanalen är fältet **[!UICONTROL Number of items]** inställt på 1 som standard och kan inte ändras om inte beslutsprincipen läggs till i en **[!UICONTROL Repeat Grid]** -komponent. Om du vill returnera flera objekt i ett e-postmeddelande måste du lägga till en **[!UICONTROL Repeat grid]**-innehållskomponent för att kunna markera flera objekt i fältet **[!UICONTROL Number of items]**. Expandera avsnittet nedan om du vill ha mer information:
 
-   +++ Returnera flera beslutsobjekt i e-postmeddelanden
+   +++Returnera flera beslutsobjekt i e-postmeddelanden
 
    1. Dra en **[!UICONTROL Repeat Grid]**-komponent i e-postmeddelandet och konfigurera den som du vill med hjälp av rutan **[!UICONTROL Settings]**.
 
@@ -102,7 +106,7 @@ När du har lagt till en ny beslutsprincip i innehållet öppnas skärmen för k
 
 1. Klicka på **[!UICONTROL Next]**.
 
-## Välja objekt och ange urvalsstrategier {#select}
+## Ställ in en strategisekvens {#strategy}
 
 I avsnittet **[!UICONTROL Strategy sequence]** kan du välja beslutsobjekt och ange urvalsstrategier som ska visas med beslutsprincipen.
 
@@ -203,7 +207,7 @@ Du kan välja valfritt objekt i listan, som visar alla beslutsobjekt som har ska
 >[!NOTE]
 > Reservationer är valfria. Upp till antalet begärda objekt kan väljas. Om ingen är berättigad och ingen reservlösning är inställd visas ingenting.
 
-## Granska och spara beslutsprocessen {#save}
+## Granska och spara beslutsprocessen {#review}
 
 När du har konfigurerat en urvalsstrategi och lagt till reserverbjudanden klickar du på **[!UICONTROL Next]** för att granska och spara din beslutspolicy och sedan på **[!UICONTROL Create]** för att bekräfta att principen har skapats.
 

@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 mini-toc-levels: 1
-source-git-commit: fc741db8db2ca9c05dbb87a41712e90a62a18c13
+source-git-commit: 5c8afc78e14a358b2d6baebfca7dbb76991894c8
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -19,29 +19,39 @@ När en beslutspolicy har skapats kan policyn och de attribut som är kopplade t
 
 ## Infoga koden för beslutspolicy {#insert-code}
 
-1. Öppna anpassningsredigeraren och gå till menyn **[!UICONTROL Decision policy]**.
+>[!BEGINTABS]
 
-1. Välj **[!UICONTROL Insert policy]** (kodbaserad upplevelse) eller **[!UICONTROL Insert syntax]** (e-post) för att lägga till koden som motsvarar beslutsprincipen.
+>[!TAB Kodbaserad upplevelse]
 
-   +++Infoga beslutsprincipkod i e-postmeddelanden
+1. Öppna anpassningsredigeraren och gå till menyn **[!UICONTROL Decision policies]**.
 
-   ![](assets/decision-policy-add.png)
-
-   Om ingen placering har associerats med komponenten i förväg för e-postmeddelanden väljer du en i listan och klickar på **[!UICONTROL Assign]**.
-
-   ![](assets/decision-policy-placement.png)
-
-   +++
-
-   +++Infoga beslutsprincipkod i kodbaserad upplevelse
+1. Välj **[!UICONTROL Insert policy]** om du vill lägga till koden som motsvarar beslutsprincipen.
 
    ![](assets/decision-code-based-add-decision.png)
-
-   +++
 
    >[!NOTE]
    >
    >Om knappen för kodinfogning inte visas kan det bero på att en beslutsprincip redan har konfigurerats för den överordnade komponenten.
+
+1. Koden för beslutspolicyn läggs till. Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [du skapar beslutet](#add-decision) kommer samma sekvens att upprepas två gånger.
+
+>[!TAB E-post]
+
+1. Öppna anpassningsredigeraren och gå till menyn **[!UICONTROL Decision policy]**.
+
+1. Välj **[!UICONTROL Insert syntax]** om du vill lägga till koden som motsvarar beslutsprincipen.
+
+   ![](assets/decision-policy-add.png)
+
+   >[!NOTE]
+   >
+   >Om knappen för kodinfogning inte visas kan det bero på att en beslutsprincip redan har konfigurerats för den överordnade komponenten.
+
+1. Om ingen placering har associerats med komponenten i förväg väljer du en i listan och klickar på **[!UICONTROL Assign]**.
+
+   ![](assets/decision-policy-placement.png)
+
+>[!ENDTABS]
 
 1. Koden för beslutspolicyn läggs till. Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [du skapar beslutet](#add-decision) kommer samma sekvens att upprepas två gånger.
 
@@ -54,7 +64,7 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 >[!NOTE]
 >
 >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
->&#x200B;>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+>>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 Om du vill lägga till ett attribut klickar du på plusikonen (+) bredvid det. Du kan lägga till så många attribut du vill i koden.
 
@@ -95,7 +105,7 @@ Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable`
 
 >[!TAB Följ de detaljerade stegen]
 
-1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **&#x200B;**&#x200B;`{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
 
    ![](assets/decision-let-function.png)
 
