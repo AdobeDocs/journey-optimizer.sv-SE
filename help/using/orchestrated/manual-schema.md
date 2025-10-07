@@ -5,7 +5,7 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar modellbaserade scheman direkt via användargränssnittet.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 version: Campaign Orchestration
-source-git-commit: e189bb6a52691770655a436e45c6788d1011a8ca
+source-git-commit: d910abc164a713c7d8634cdd11cc4cd8b42be398
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -28,7 +28,7 @@ I följande exempel definieras schemat **Förmånsmedlemskap** manuellt för att
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-➡️ [Läs mer om manuella modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
+➡️ [Läs mer om manuella modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
 
 ## Skapa ditt schema {#schema}
 

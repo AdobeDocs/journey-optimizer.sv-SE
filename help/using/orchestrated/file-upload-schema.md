@@ -5,9 +5,9 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar ett modellbaserat schema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 version: Campaign Orchestration
-source-git-commit: e189bb6a52691770655a436e45c6788d1011a8ca
+source-git-commit: d910abc164a713c7d8634cdd11cc4cd8b42be398
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ I det här avsnittet finns stegvisa anvisningar om hur du skapar ett modellbaser
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/model-based)
+➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
 
 ## Överföra en DDL-fil{#ddl-upload}
 
@@ -57,9 +57,6 @@ Här är ett exempel:
 
 * **Schemaetikett för datastyrning**\
   Etikettering stöds på schemafältnivå för att tillämpa datastyrningsprinciper som åtkomstkontroll och användningsbegränsningar. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
-
-* **Sammansatt nyckel**\
-  Sammansatta primärnycklar stöds i modellbaserade schemadefinitioner, vilket gör det möjligt att använda flera fält tillsammans för att unikt identifiera poster.
 
 +++
 
