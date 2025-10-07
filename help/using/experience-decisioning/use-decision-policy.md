@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 mini-toc-levels: 1
-source-git-commit: 5c8afc78e14a358b2d6baebfca7dbb76991894c8
+source-git-commit: 2960ed9c9f7a65cbd7122424c2438a461ee8beab
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ När en beslutspolicy har skapats kan policyn och de attribut som är kopplade t
 
 >[!ENDTABS]
 
-1. Koden för beslutspolicyn läggs till. Den här sekvensen upprepas det antal gånger som du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [du skapar beslutet](#add-decision) kommer samma sekvens att upprepas två gånger.
+När koden för beslutsprincipen har lagts till upprepas den här sekvensen det antal gånger du vill att beslutsprincipen ska returneras. Om du t.ex. väljer att returnera två objekt när [du skapar beslutet](#add-decision) kommer samma sekvens att upprepas två gånger.
 
 ## Utnyttja attribut för beslutsartiklar {#attributes}
 
@@ -64,7 +64,7 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 >[!NOTE]
 >
 >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
->&#x200B;>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+>>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 Om du vill lägga till ett attribut klickar du på plusikonen (+) bredvid det. Du kan lägga till så många attribut du vill i koden.
 
@@ -105,7 +105,7 @@ Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable`
 
 >[!TAB Följ de detaljerade stegen]
 
-1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **&#x200B;**&#x200B;`{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
 
    ![](assets/decision-let-function.png)
 

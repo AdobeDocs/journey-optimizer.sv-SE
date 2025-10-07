@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
+source-git-commit: 3cb16d48c8f478643e8c9891e4fd8c0c3b18f2c5
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 1%
@@ -21,15 +21,15 @@ ht-degree: 1%
 >id="ajo_create_visual_fragment"
 >title="Markera den visuella typen"
 >abstract="Skapa ett fristående visuellt fragment för att göra innehållet återanvändbart i ett e-postmeddelande inom en resa eller kampanj, eller i en innehållsmall."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments" text="Lägg till visuella fragment i e-postmeddelanden"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments" text="Lägg till visuella fragment i e-postmeddelanden"
 
 >[!CONTEXTUALHELP]
 >id="ajo_create_expression_fragment"
 >title="Välj uttryckstyp"
 >abstract="Skapa ett fristående uttrycksfragment som gör att innehållet kan återanvändas på flera resor och i flera kampanjer. När du använder personaliseringsredigeraren kan du utnyttja alla uttrycksfragment som har skapats i den aktuella sandlådan."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
 
-Fragment kan skapas från grunden på den vänstra menyn **[!UICONTROL Fragments]**. Dessutom kan du spara en del av befintligt innehåll som fragment när du utformar innehåll. [Lär dig hur](#save-as-fragment)
+Fragment kan skapas från grunden på den vänstra menyn **[!UICONTROL Fragments]**. Dessutom kan du spara en del av befintligt innehåll som fragment när du utformar innehåll. [Lär dig hur](save-fragments.md#)
 
 När fragmentet har sparats är det tillgängligt för användning under en resa, en kampanj eller en mall. Du kan använda det här fragmentet när du skapar innehåll på resor och i kampanjer. Se [Lägg till visuella fragment](../email/use-visual-fragments.md) och [Utnyttja uttrycksfragment](../personalization/use-expression-fragments.md).
 

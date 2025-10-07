@@ -5,9 +5,9 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-source-git-commit: 5c8afc78e14a358b2d6baebfca7dbb76991894c8
+source-git-commit: 2960ed9c9f7a65cbd7122424c2438a461ee8beab
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1667'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
 
@@ -88,9 +88,9 @@ När du har lagt till en ny beslutsprincip i innehållet öppnas skärmen för k
 
    ![](assets/decision-code-based-details.png)
 
-   För e-postkanalen är fältet **[!UICONTROL Number of items]** inställt på 1 som standard och kan inte ändras om inte beslutsprincipen läggs till i en **[!UICONTROL Repeat Grid]** -komponent. Om du vill returnera flera objekt i ett e-postmeddelande måste du lägga till en **[!UICONTROL Repeat grid]**-innehållskomponent för att kunna markera flera objekt i fältet **[!UICONTROL Number of items]**. Expandera avsnittet nedan om du vill ha mer information:
+   För e-postkanalen är fältet **[!UICONTROL Number of items]** inställt på 1 som standard och kan inte ändras om inte beslutsprincipen läggs till i en **[!UICONTROL Repeat Grid]** -komponent. Expandera avsnittet nedan om du vill ha mer information:
 
-   +++Returnera flera beslutsobjekt i e-postmeddelanden
+   +++Returnera flera beslutsobjekt i e-postmeddelanden med en **[!UICONTROL Repeat Grid]**-komponent
 
    1. Dra en **[!UICONTROL Repeat Grid]**-komponent i e-postmeddelandet och konfigurera den som du vill med hjälp av rutan **[!UICONTROL Settings]**.
 
@@ -114,13 +114,9 @@ I avsnittet **[!UICONTROL Strategy sequence]** kan du välja beslutsobjekt och a
 
    ![](assets/decision-code-based-strategy-sequence.png)
 
-   * **[!UICONTROL Selection strategy]** - Beslutsstrategier utnyttjar samlingar som är kopplade till berättigandebegränsningar och rangordningsmetoder för att avgöra vilka objekt som ska visas.
+   * **[!UICONTROL Selection strategy]** - Beslutsstrategier utnyttjar samlingar som är kopplade till berättigandebegränsningar och rangordningsmetoder för att avgöra vilka objekt som ska visas. Du kan välja en eller flera befintliga markeringsstrategier eller skapa en ny med knappen **[!UICONTROL Create selection strategy]**. [Lär dig hur du skapar urvalsstrategier](selection-strategies.md)
 
-     Du kan välja en eller flera befintliga markeringsstrategier eller skapa en ny med knappen **[!UICONTROL Create selection strategy]**. [Lär dig hur du skapar urvalsstrategier](selection-strategies.md)
-
-   * **[!UICONTROL Decision item]** - Välj enskilda beslutsobjekt utan att behöva köra en urvalsstrategi.
-
-     Du kan bara välja ett beslutsobjekt i taget. Alla villkor som anges för artikeln gäller.
+   * **[!UICONTROL Decision item]** - Välj enskilda beslutsobjekt utan att behöva köra en urvalsstrategi. Du kan bara välja ett beslutsobjekt i taget. Alla villkor som anges för artikeln gäller.
 
    >[!NOTE]
    >
@@ -227,9 +223,7 @@ Du kan redigera eller ta bort en beslutsprincip när som helst med hjälp av ell
 
 ## Tilldela en placering (e-post) {#placement}
 
-För e-postmeddelanden måste du definiera en placering för den komponent som är kopplad till beslutspolicyn.
-
-Om du vill göra det klickar du på knappen **[!UICONTROL Decisioning]** i egenskapsrutan för komponenten och väljer **[!UICONTROL Assign placement]**. [Lär dig hur du arbetar med placeringar](../experience-decisioning/placements.md)
+För e-postmeddelanden måste du definiera en placering för den komponent som är kopplad till beslutspolicyn. Om du vill göra det klickar du på knappen **[!UICONTROL Decisioning]** i egenskapsrutan för komponenten och väljer **[!UICONTROL Assign placement]**. [Lär dig hur du arbetar med placeringar](../experience-decisioning/placements.md)
 
 ![](assets/decision-policy-rail.png)
 

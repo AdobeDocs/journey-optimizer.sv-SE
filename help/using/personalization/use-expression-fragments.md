@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
+source-git-commit: 24baaa2438c6bbdddd582c71dbdd36188d12f905
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 När du använder **anpassningsredigeraren** kan du utnyttja alla uttrycksfragment som har skapats eller sparats i den aktuella sandlådan.
 
-Ett fragment är en återanvändbar komponent som kan refereras till mellan [!DNL Journey Optimizer] kampanjer och resor. Med den här funktionen kan man skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa innehåll i en förbättrad designprocess. [Lär dig skapa och hantera fragment](../content-management/fragments.md).
+Ett fragment är en återanvändbar komponent som kan refereras till mellan [!DNL Journey Optimizer] kampanjer och resor. Med den här funktionen kan man skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa innehåll i en förbättrad designprocess. [Läs mer om fragment](../content-management/fragments.md)
 
 ➡️ [Lär dig hur du hanterar, redigerar och använder fragment i den här videon](../content-management/fragments.md#video-fragments)
 
@@ -34,7 +34,8 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
 
 1. Öppna [anpassningsredigeraren](personalization-build-expressions.md) och välj knappen **[!UICONTROL Fragments]** i den vänstra rutan.
 
-   I listan visas alla uttrycksfragment som har skapats eller sparats som fragment i den aktuella sandlådan. De sorteras efter skapandedatum: nyligen tillagda uttrycksfragment visas först i listan. [Läs mer](../content-management/fragments.md#create-expression-fragment)
+   I listan visas alla uttrycksfragment som har skapats eller sparats som fragment i den aktuella sandlådan. [Lär dig skapa fragment](../content-management/create-fragments.md)
+De sorteras efter skapandedatum: nyligen tillagda uttrycksfragment visas först i listan.
 
    ![](assets/expression-fragments-pane.png)
 
@@ -52,17 +53,23 @@ Följ stegen nedan om du vill lägga till uttrycksfragment i ditt innehåll.
    >
    >Du kan lägga till valfritt **utkast**- eller **Live**-fragment till ditt innehåll. Du kan dock inte aktivera din resa eller kampanj om ett fragment med statusen **Utkast** används i det. Vid en resa eller kampanjpublicering kommer utkastsfragment att visa ett fel och du måste godkänna dem för att kunna publicera.
 
-1. När fragment-ID har lagts till synkroniseras ändringarna om du öppnar motsvarande uttrycksfragment och [redigerar det](../content-management/fragments.md#edit-fragments) från gränssnittet. De sprids automatiskt till alla utkast- eller direktresor/kampanjer som innehåller detta fragment-ID.
+1. När fragment-ID har lagts till synkroniseras ändringarna om du öppnar motsvarande uttrycksfragment och [redigerar det](../content-management/manage-fragments.md#edit-fragments) från gränssnittet. De sprids automatiskt till alla utkast- eller direktresor/kampanjer som innehåller detta fragment-ID.
 
 1. Klicka på knappen **[!UICONTROL More actions]** bredvid ett fragment. Välj **[!UICONTROL View fragment]** på snabbmenyn som öppnas om du vill ha mer information om det fragmentet. **[!UICONTROL Fragment ID]** visas också och kan kopieras härifrån.
 
    ![](assets/expression-fragment-view.png)
 
-1. Du kan öppna uttrycksfragmentet i ett annat fönster om du vill redigera dess innehåll och egenskaper, antingen med alternativet **[!UICONTROL Open fragment]** på snabbmenyn eller i rutan **[!UICONTROL Fragment info]**. [Lär dig hur du redigerar ett fragment](../content-management/fragments.md#edit-fragments)
+1. Du kan öppna uttrycksfragmentet i ett annat fönster om du vill redigera dess innehåll och egenskaper, antingen med alternativet **[!UICONTROL Open fragment]** på snabbmenyn eller i rutan **[!UICONTROL Fragment info]**. [Lär dig hur du redigerar ett fragment](../content-management/manage-fragments.md#edit-fragments)
 
    ![](assets/expression-fragment-open.png)
 
 1. Du kan sedan anpassa och validera ditt innehåll som vanligt med hjälp av alla anpassnings- och redigeringsfunktioner i [personaliseringsredigeraren](personalization-build-expressions.md).
+
+1. I vissa fall behöver du bara beräkna variabler, så du kanske vill dölja innehållet i uttrycksfragmentet. Om du vill göra det använder du attributet `render` och ställer in det på `false`. Exempel:
+
+   ```
+   Hi {{profile.person.name.firstName|fragment id='ajo:fragmentId/variantId' mode ='inline' render=false}}
+   ```
 
 >[!NOTE]
 >
@@ -76,21 +83,21 @@ Den här funktionen kan till exempel användas för att initiera spårningsparam
 
 Följande användningsområden är möjliga:
 
-1. Använda indatavariabler i ett fragment
+1. **Använd indatavariabler i ett fragment.**
 
-   När ett fragment används i ett Campaign-/reseåtgärdsinnehåll kan det utnyttja variabler som deklarerats utanför fragmentet. Nedan visas ett exempel:
+   När ett fragment används i ett kampanj-/reseåtgärdsinnehåll kan det utnyttja variabler som deklarerats utanför fragmentet. Nedan visas ett exempel:
 
    ![](../personalization/assets/variable-in-a-fragment.png)
 
    Ovanför `utm_content`-variabeln har deklarerats i kampanjinnehållet. När fragmentet **Hero-blocket** används visas en länk till vilken `utm_content`-parametervärdet ska läggas till. Slutresultatet är: `https://luma.enablementadobe.com?utm_campaign= Product_launch&utm_content= start_shopping`.
 
-1. Använda en utdatavariabel från ett fragment
+1. **Använd en utdatavariabel från ett fragment.**
 
    Variabler som beräknas eller definieras inuti ett fragment är tillgängliga för användning i innehållet. I följande exempel deklarerar ett fragment **F1** en uppsättning variabler:
 
    ![](../personalization/assets/personalize-with-variables.png)
 
-   I ett e-postinnehåll kan vi ha följande personalisering:
+   I ett e-postinnehåll kan du ha följande personalisering:
 
    ![](../personalization/assets/use-fragment-variable.png)
 
@@ -107,7 +114,7 @@ Om vissa delar av ett uttrycksfragment har gjorts redigerbara med hjälp av vari
 
 Följ de här stegen för att anpassa fälten:
 
-1. Infoga fragmentet i koden från menyn **Fragment** .
+1. Infoga fragmentet i koden från menyn **[!UICONTROL Fragments]**.
 
 1. Använd `<fieldId>="<value>"`-koden i slutet av syntaxen för att åsidosätta variabelns standardvärde.
 
