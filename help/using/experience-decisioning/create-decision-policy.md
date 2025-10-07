@@ -5,7 +5,7 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-source-git-commit: 7896dc3450f499e0889f6e32df5958ae9868d9e6
+source-git-commit: fc741db8db2ca9c05dbb87a41712e90a62a18c13
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. Följ stegen nedan för att göra det.
 
@@ -234,3 +234,4 @@ Om du vill göra det klickar du på knappen **[!UICONTROL Decisioning]** i egens
 Nu när du förstår hur du skapar en beslutspolicy är du redo att använda den i [!DNL Journey Optimizer] kanaler för att leverera erbjudanden.
 
 ➡️ [Lär dig hur du använder beslutsprinciper i meddelanden](../experience-decisioning/use-decision-policy.md)
+

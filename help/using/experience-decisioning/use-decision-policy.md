@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 mini-toc-levels: 1
-source-git-commit: 7896dc3450f499e0889f6e32df5958ae9868d9e6
+source-git-commit: fc741db8db2ca9c05dbb87a41712e90a62a18c13
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 >[!NOTE]
 >
 >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
->&#x200B;>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+>>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 Om du vill lägga till ett attribut klickar du på plusikonen (+) bredvid det. Du kan lägga till så många attribut du vill i koden.
 
@@ -95,7 +95,7 @@ Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable`
 
 >[!TAB Följ de detaljerade stegen]
 
-1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **&#x200B;**&#x200B;`{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
 
    ![](assets/decision-let-function.png)
 
@@ -167,3 +167,4 @@ När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för de
 >För närvarande kan du inte simulera innehåll från användargränssnittet i en [kodbaserad upplevelse](../code-based/create-code-based.md) -kampanj eller resa med hjälp av beslut. Det finns en tillfällig lösning i [det här avsnittet](../code-based/code-based-decisioning-implementations.md).
 
 Om du vill se hur dina beslut fungerar kan du skapa anpassade [Customer Journey Analytics-rapportinstrumentpaneler](cja-reporting.md).
+

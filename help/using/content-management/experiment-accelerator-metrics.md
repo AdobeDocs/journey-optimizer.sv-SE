@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: 74868625-f4ea-44f9-ae2a-8e5fdd22a081
-source-git-commit: 61ae9196f699c3b6aa1d9a5bb2259d36aaebc0e3
+source-git-commit: fc741db8db2ca9c05dbb87a41712e90a62a18c13
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
