@@ -27,8 +27,8 @@ ht-degree: 0%
 >id="ajo_exd_strategy_eligibility"
 >title="Begränsa giltiga profiler"
 >abstract="Du kan begränsa urvalet av erbjudanden för den här urvalsstrategin. Som standard är alla profiler berättigade, men du kan använda målgrupper eller regler för att begränsa urvalet av erbjudanden till enbart specifika profiler."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Använd beslutsregler"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Använda målgrupper"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Använd beslutsregler"
 
 En urvalsstrategi kan återanvändas och består av en samling som är associerad med en berättigandebegränsning och en rangordningsmetod för att avgöra vilka erbjudanden som ska visas när de väljs i en [beslutspolicy](create-decision.md).
 
