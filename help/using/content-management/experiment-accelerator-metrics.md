@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: 74868625-f4ea-44f9-ae2a-8e5fdd22a081
-source-git-commit: fc741db8db2ca9c05dbb87a41712e90a62a18c13
+source-git-commit: 664f6bafd4cfb4d86b7a449c279484ca49933247
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -50,9 +50,11 @@ Varje värde innehåller en procentuell förändring från föregående period, 
 
 ### Experimentera
 
+![](assets/experiment-monitor-metrics-3.png)
+
 I det här avsnittet visas alla aktiva experiment inom den valda tidsramen (de senaste 90 dagarna, de senaste 30 dagarna eller de senaste 7 dagarna) och deras bidrag till måttet markeras.
 
-Följande meritförteckningar är tillgängliga:
+Följande mått är tillgängliga:
 
 * **[!UICONTROL Lift]**: Mät den procentuella förbättringen av konverteringsgraden för en given behandling över baslinjen.
 
