@@ -5,9 +5,9 @@ title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 version: Campaign Orchestration
-source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
+source-git-commit: a9b790bc833b5819862bf2f3284968d81f595f28
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '508'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Nedan visas säkerhetsbeskrivningar och begränsningar när du använder orkestr
 
 * Det genomsnittliga antalet attribut per schema **får inte överstiga 50 kolumner** för att upprätthålla hanterbarhet och prestanda.
 
-* Modellbaserade scheman kan inte aktiveras för Adobe Experience Platform **Profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Modellbaserade scheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
+* Modellbaserade scheman kan inte aktiveras för Adobe Experience Platform **Profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Modellbaserade scheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
 
 ### Datainhämtning
 
@@ -68,6 +68,8 @@ Nedan visas säkerhetsbeskrivningar och begränsningar när du använder orkestr
 * `table_name` som tilldelas när en datauppsättning skapas är permanent och används genom segmenterings- och personaliseringsfunktioner.
 
 * **Fältgrupper stöds inte** i det aktuella ramverket för datamodellering.
+
+* Stöd för sammansatta primärnycklar med filöverföringsflöden är för närvarande inte tillgängligt.
 
 ## Verksamhetsbegränsningar
 

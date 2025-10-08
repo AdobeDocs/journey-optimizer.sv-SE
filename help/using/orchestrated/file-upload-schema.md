@@ -5,9 +5,9 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar ett modellbaserat schema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 version: Campaign Orchestration
-source-git-commit: fc741db8db2ca9c05dbb87a41712e90a62a18c13
+source-git-commit: a9b790bc833b5819862bf2f3284968d81f595f28
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ I det här avsnittet finns stegvisa anvisningar om hur du skapar ett modellbaser
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/model-based)
+➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
 
 ## Överföra en DDL-fil{#ddl-upload}
 
@@ -149,6 +149,10 @@ Du kan ange relationer direkt i DDL-filen när du skapar ditt schema. Om du för
    * **Tvinga automatisk layout**: Ordna scheman automatiskt för bättre ordning.
 
    * **Visningsschema**: Växla en minimumöverlappning för att enklare kunna navigera i stora eller komplexa schemalayouter.
+
+   * **Expandera alla/komprimera alla**: Expandera eller komprimera snabbt alla schemanoder för att visa eller dölja deras attribut.
+
+   * **Hämta**: Hämta ER-diagrammet som en png-fil.
 
 1. Klicka på **Spara** när du är klar. Den här åtgärden skapar scheman och associerade datauppsättningar och aktiverar datauppsättningen för användning i Orchestrated Campaigns.
 
