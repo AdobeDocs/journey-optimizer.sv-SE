@@ -8,7 +8,8 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
-source-git-commit: 57890eede1d5a0de6002f31b9ce8807a903b84f7
+exl-id: 78011ec0-a3b6-4d4e-ab4b-9da032c283a2
+source-git-commit: dc7b24223bd32a75b87946733a6b098811e007d9
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 0%
@@ -30,8 +31,8 @@ I enlighet med detta listas de bästa sätten att utforma hjälpmedelsanpassat i
 >Den här sidan handlar om att göra ditt innehåll tillgängligt för alla dina mottagare, så att personer med funktionshinder kan läsa, förstå och interagera med dina e-postmeddelanden och landningssidor som är utformade med [!DNL Journey Optimizer].
 >
 >Å andra sidan är hjälpmedelsfunktionerna för gränssnittet [!DNL Journey Optimizer] detaljerade i [det här avsnittet](../start/accessibility.md).
-> 
->## Säkra textläsbarhet {#text-readability}
+
+## Säkra textläsbarhet {#text-readability}
 
 Utnyttja fliken **[!UICONTROL Styles]** i komponenten **[!UICONTROL Text]** för att säkerställa att texten är läsbar, till exempel genom att använda rätt färgkontrast och enkla teckensnitt. [Läs mer](content-components.md#text)
 
