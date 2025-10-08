@@ -10,9 +10,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
-source-git-commit: e411778cc873a24e4846e7acbe439222dd6e4c82
+source-git-commit: 813e7a61a69e73afe3f2f9fc808c551d85bd22a0
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -44,15 +44,17 @@ ht-degree: 0%
 >title="Lägg till datauppsättning"
 >abstract="Använd [!DNL Adobe Experience Platform]-datamängdsattribut för att definiera capping-villkor baserat på dynamiska, externa attribut. Klicka på **[!UICONTROL Add dataset]** för att välja Adobe Experience Platform-datauppsättningen med de attribut du behöver. Om datauppsättningen inte visas i listan kontrollerar du att du har aktiverat den för sökning och att du har skapat en sökmappning för datauppsättningar."
 
+Med [!DNL Journey Optimizer] kan du utnyttja data från [!DNL Adobe Experience Platform] för beslut. Detta gör att du kan utöka definitionen av dina beslutsattribut till ytterligare data i datauppsättningar för bulkuppdateringar som ändras regelbundet utan att du behöver uppdatera attributen manuellt en i taget. Till exempel tillgänglighet, väntetider osv.
+
 >[!AVAILABILITY]
 >
 >Den här funktionen är för närvarande tillgänglig för alla kunder i en begränsad version.
 
-Med [!DNL Journey Optimizer] kan du utnyttja data från [!DNL Adobe Experience Platform] för beslut. Detta gör att du kan utöka definitionen av dina beslutsattribut till ytterligare data i datauppsättningar för bulkuppdateringar som ändras regelbundet utan att du behöver uppdatera attributen manuellt en i taget. Till exempel tillgänglighet, väntetider osv.
+## Skyddsritningar och begränsningar {#guardrails}
 
->[!IMPORTANT]
->
->[!DNL Journey Optimizer]stöder upp till 1 000 sökningar efter en enda beslutsprincip.
+* **Kanaler som stöds** - Datauppsättningssökning med beslut fungerar för e-post och anpassade åtgärder för resor. <!--Support for code-based experience channels is coming soon.-->
+* **Attributanvändning** - Datauppsättningssökningsfunktionen för beslut utökar beslutsobjektsdefinitioner med ytterligare attribut - det utökar inte attribut till profiler
+* Uppslagsgränser: [!DNL Journey Optimizer] har stöd för upp till 1 000 uppslag per princip för enstaka beslut.
 
 ## Förhandskrav
 
