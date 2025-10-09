@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 mini-toc-levels: 1
-source-git-commit: 2960ed9c9f7a65cbd7122424c2438a461ee8beab
+source-git-commit: f8b91ef5504396ab696acc05ac273423dd5f208e
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 >[!NOTE]
 >
 >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
->&#x200B;>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+>>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 Om du vill lägga till ett attribut klickar du på plusikonen (+) bredvid det. Du kan lägga till så många attribut du vill i koden.
 
@@ -78,13 +78,13 @@ Du kan också lägga till andra attribut som är tillgängliga i personalisering
 
 ![](assets/decision-code-based-decision-profile-attribute.png)
 
-## Utnyttja fragment {#fragments}
+## Utnyttja fragment (kodbaserad upplevelse) {#fragments}
 
 Om din beslutspolicy innehåller beslutsposter, inklusive fragment, kan du utnyttja dessa fragment i beslutspolicykoden. [Läs mer om fragment](../content-management/fragments.md)
 
 >[!AVAILABILITY]
 >
->Den här funktionen är för närvarande endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
+>Den här funktionen är för närvarande endast tillgänglig för den kodbaserade upplevelsekanalen och för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
 
 Anta till exempel att du vill visa olika innehåll för flera mobila enhetsmodeller. Se till att du har lagt till fragment som motsvarar de enheterna i beslutsposten som du använder i beslutspolicyn. [Lär dig hur](items.md#attributes).
 
@@ -105,7 +105,7 @@ Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable`
 
 >[!TAB Följ de detaljerade stegen]
 
-1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **&#x200B;**&#x200B;`{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
 
    ![](assets/decision-let-function.png)
 
