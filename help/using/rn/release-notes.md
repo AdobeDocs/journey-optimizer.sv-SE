@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: b0198df405217c7870a471d271987da08d0e2308
+source-git-commit: 673a7f58f49afcc12ef9823db6ec68dbee4e77db
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,11 @@ ht-degree: 0%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Uppdateringar 25 oktober {#25-10-rn}
+
+### Nya funktioner {#25-10-features}
 
 <table>
 <thead>
@@ -65,6 +67,20 @@ ht-degree: 0%
 </tbody>
 </table>
 
+### Förbättringar {#25-10-improvements}
+
+**Stöd för anpassade attribut för Mailto (avsluta prenumeration)**
+
+Med Journey Optimizer kan du, om du hanterar samtycke utanför Adobe, ange externa anpassade slutpunkter genom att definiera en egen länk för att avbryta prenumerationen och en anpassad e-postadress för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
+
+Om du vill anpassa dina anpassade slutpunkter ytterligare kan du nu definiera anpassade attribut som också läggs till i medgivandehändelsen.
+
+>[!AVAILABILITY]
+>
+>Den här funktionen har redan varit tillgänglig för den anpassade **[!UICONTROL One-click Unsubscribe URL]** sedan 25 augusti och har nu släppts för alternativet **[!UICONTROL Mailto (unsubscribe)]** med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
+
+Tillgänglighetsdatum: 6 oktober 2025
+
 ## Versionsinformation 25 september {#25-9-rn}
 
 **Releasedatum**: 23-24 september 2025
@@ -104,7 +120,7 @@ ht-degree: 0%
 <tr>
 <td>
 <p>Journey Agent tillhandahålls av <a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator" target="_blank">Adobe Experience Platform Agent Orchestrator</a> och finns i Journey Optimizer. Det gör att ni kan analysera resor via ett naturligt språkgränssnitt. Agenten kommer att upptäcka målgrupper eller schemalägga konflikter och bortfall av profiler under en resa för att hjälpa er att vidta åtgärder för att lösa dem. Snart kan du skapa resor med äkta stöd.</p>
-<p>Mer information finns i <a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze" target="_blank">detaljerad dokumentation</a></p>
+<p>Mer information finns i <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze" target="_blank">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 24 september 2025</p>
 </td>
 </tr>
@@ -343,14 +359,6 @@ In the next few days, the following capabilities and enhancements are scheduled 
   * [Profile Error Rate Exceeded](../reports/alerts.md#profile-error-rate-exceeded): Ratio of profiles-in-error to entered profiles over the last 5 mins exceeded threshold.
 
   You can modify threshold values and subscribe to individual journey-level alerts vs globally.
-
-  Availability date: Sept XX, 2025
-
-
-* **Custom attributes support with One-click unsubscribe URL**  
-  With Journey Optimizer, if you are managing consent outside of Adobe, you can set an external custom endpoint by defining your own one-click unsubscribe link in the email configuration. When your recipients click the unsubscribe link, Journey Optimizer appends some default profile-specific parameters to the consent update event. 
-
-  To further personalize the unsubscribe email address, you can now define custom attributes that will be appended to the consent event. This capability has already been available for the custom one-click unsubscribe link since the August 25 release.
 
   Availability date: Sept XX, 2025
 
