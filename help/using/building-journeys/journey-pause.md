@@ -9,9 +9,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-source-git-commit: 598be5d2c5aca0262063c61e80e6b36020983131
+source-git-commit: b1598fe695a53fd5261b3067f220dc3eea295dfb
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,8 @@ Så här pausar du din resa:
 
    * **Håll**-profiler - Profilerna väntar på nästa **Åtgärdsnod** för att resan ska återupptas
    * **Ignorera** profiler - Profiler exkluderas från resan på nästa **Åtgärd**-nod
+
+   När du pausar en resa antas du att du planerar att återuppta den någon gång. En resa kan dock inte pausas i oändlighet. För att förhindra detta kan du definiera hur länge resan ska pausas (mellan 1 och 14 dagar). Efter det valda antalet dagar återupptas resan automatiskt.
 
 1. Bekräfta genom att klicka på knappen **Paus**.
 
@@ -199,7 +201,7 @@ När du återupptar den här resan:
 
 ## Felsöka uteblivna profiler under pausade resor {#discards-troubleshoot}
 
-Du kan använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
+Du kan använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
 
 * Använd följande kod för att ta bort filer som inträffar innan profilen kommer in på resan:
 
