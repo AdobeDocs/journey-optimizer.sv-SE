@@ -6,9 +6,9 @@ feature: Release Notes
 description: Förstå Adobe Journey Optimizer versionscykel
 hide: true
 hidefromtoc: true
-source-git-commit: 0de90d707c02e11bfb8a6af7b22d4273a8b6b88d
+source-git-commit: 625dfbb66effb30172f6faf56db6fe512aef909a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ Som en del av denna modell:
 
 ## Frigör tajming och cadence {#release-timing}
 
-[!DNL Adobe Journey Optimizer] följer vanligtvis en månadsvis publiceringsgräns, där distributioner vanligtvis sker under den sista veckan i varje månad. Versionsinformation och tillhörande dokumentation publiceras varje månad på tisdagar. Förhandsversionsinformation publiceras på fredag före versionsveckan.
+[!DNL Adobe Journey Optimizer] följer vanligtvis en månadsvis publiceringsgräns, där distributioner vanligtvis sker under den sista veckan i varje månad. Månatliga versionsinformation och relaterad dokumentation publiceras på tisdagar i releaseminarien. Förhandsversionsinformation publiceras på fredag före versionsveckan.
 
 >[!TIP]
 >
 > I slutet av varje kvartal kan releaser förutses och lanseras upp till två veckor före månadens slut för att anpassas till kvartalsvisa scheman eller beroende produktreleaser.
 
-I månadsversionen introduceras de viktigaste nya funktionerna och korrigeringarna, men med kontinuerliga leveranser kan ytterligare uppdateringar distribueras mellan cyklerna när de är klara. Versionsinformation och relaterad dokumentation uppdateras sedan och tillgänglighetsdatumet anges. Alla ändringar som släpps under månaden sammanställs i månadsversionsinformationen på releasedatum.
+I månadsversionen introduceras de viktigaste nya funktionerna och korrigeringarna, men med kontinuerliga leveranser kan ytterligare uppdateringar distribueras mellan cyklerna när de är klara. Versionsinformationen uppdateras sedan i avsnittet _Senaste uppdateringar_ och tillgänglighetsdatumet anges. Alla ändringar som släpps under månaden sammanställs i månadsversionsinformationen på releasedatum.
 
 
 ## Frigör banor {#release-paths}
@@ -48,8 +48,8 @@ Funktionerna i Journey Optimizer följer olika versionsvägar beroende på deras
 
 Vanliga versionssökvägar är:
 
-* **Direkt till GA** - Vissa mindre eller stegvisa förbättringar går direkt till General Availability (GA).
-* **LA → GA** - Funktionerna är först tillgängliga för en begränsad målgrupp (begränsad tillgänglighet) före allmän utrullning.
+* **Direkt till GA** - Vissa nya funktioner och förbättringar går direkt till General Availability (GA).
+* **LA → GA** - Vissa funktioner är först tillgängliga för en begränsad målgrupp (begränsad tillgänglighet) före allmän utrullning.
 * **Beta → LA → GA** - Större eller experimentella funktioner går igenom alla faser för testning och validering.
 * **Beta → GA** - Vissa stabila Beta-funktioner kan flyttas direkt till GA utan en mellanliggande LA-fas.
 
@@ -62,14 +62,14 @@ Vanliga versionssökvägar är:
 
 | **Etikett** | **Syfte** | **Tillgänglighet** | **Nyckelanteckningar** |
 |------------|-------------|------------------|----------------|
-| **Beta** | Tidig testning och insamling av feedback. | Begränsat till utvalda kunder eller organisationer som deltar i Adobe Beta-program. | * Ej avsett för produktion.<br>* Funktionaliteten eller designen kan ändras före GA.<br>- Feedback hjälper till att förfina den slutliga implementeringen. |
-| **Begränsad tillgänglighet (LA)** | Kontrollerad utrullning för validering och övervakning. | Endast aktiverat för vissa kunder eller miljöer (till exempel utvecklingssandlådor). | * Funktionen är nästan klar och övervakas aktivt.<br> - Används för att validera prestanda och skalbarhet före den allmänna versionen.<br>* Åtkomst kräver Adobe godkännande. |
-| **Allmän tillgänglighet (GA)** | Omfattande funktionalitet som stöds. | Aktiveras som standard för alla berättigade organisationer. | * Produktionsklar och fullt stödd.<br>* Licensiering eller rättigheter kan gälla.<br>* Kan rulla ut progressivt mellan regioner. |
+| **Beta** | Tidig testning och insamling av feedback. | Begränsat till utvalda kunder eller organisationer som deltar i Adobe Beta-program. | - Ej avsedd för produktion.<br>- Funktioner eller design kan ändras före GA.<br>- Feedback hjälper till att förfina den slutliga implementeringen. |
+| **Begränsad tillgänglighet (LA)** | Kontrollerad utrullning för validering och övervakning. | Endast aktiverat för vissa kunder eller miljöer (till exempel utvecklingssandlådor). | - Funktionen är nästan klar och övervakas aktivt.<br> - Används för att validera prestanda och skalbarhet före den allmänna versionen.<br>- Åtkomst kräver Adobe-godkännande. |
+| **Allmän tillgänglighet (GA)** | Omfattande funktionalitet som stöds. | Aktiveras som standard för alla berättigade organisationer. | - Produktionsklar och fullt stödd.<br> - Licensiering eller berättiganden kan gälla.<br> - Kan rulla ut progressivt mellan regioner. |
 
 
 ## utrullning och tillgänglighet {#rollout}
 
-Även efter ett GA-meddelande kan lanseringen ske gradvis i olika organisationer eller regioner. Om en ny funktion inte visas omedelbart i din miljö är den vanligtvis tillgänglig inom några dagar eller veckor efter lanseringen.
+Även efter ett GA-meddelande kan lanseringen ske gradvis i olika organisationer eller regioner. Om en ny funktion inte visas omedelbart i din miljö är den vanligtvis tillgänglig inom några dagar efter att den släppts.
 
 Denna gradvisa driftsättning gör att Adobe kan övervaka stabilitet, prestanda och användarupplevelse innan driftsättningen är klar.
 
