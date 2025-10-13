@@ -9,10 +9,10 @@ role: Developer, Data Engineer
 level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 3d0e2817ef2b544aced441d7bb8b1a94ac2acccf
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 4%
+source-wordcount: '560'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt v
 
 * objektsamlingar: en array med JSON-objekt, till exempel:
 
-  ```
+  ```json
   {
   "products":[
      {
@@ -58,20 +58,52 @@ Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt v
 
 ## Begränsningar {#limitations}
 
-* Kapslade arrayer med objekt i en objektarray stöds inte för närvarande. Exempel:
+* **Stöd för kapslade arrayer i anpassade åtgärder**
 
-  ```
-  {
-  "products":[
-    {
-       "id":"productA",
-       "name":"A",
-       "price":20,
-       "locations": [{"name": "Paris"}, {"name": "London"}]
-    },
-   ]
-  }
-  ```
+  Adobe Journey Optimizer stöder kapslade arrayer med objekt i den anpassade åtgärden **svarsnyttolaster**, men det här stödet är begränsat i **begärannyttolaster**.
+
+  I begärandenyttolaster stöds bara kapslade arrayer när de innehåller ett fast antal objekt, enligt definitionen i den anpassade åtgärdskonfigurationen. Om en kapslad array till exempel alltid innehåller exakt tre objekt, kan den konfigureras som en konstant. När antalet objekt behöver vara dynamiskt kan bara icke-kapslade arrayer (arrayer på den nedersta nivån) definieras som variabler.
+
+  Exempel:
+
+   1. I följande exempel visas ett **användningsfall som inte stöds**.
+
+      I det här exemplet innehåller arrayen products en kapslad array (`locations`) med ett dynamiskt antal objekt, vilket inte stöds i begärandenyttolaster.
+
+      ```json
+      {
+      "products": [
+         {
+            "id": "productA",
+            "name": "A",
+            "price": 20,
+            "locations": [
+            { "name": "Paris" },
+            { "name": "London" }
+            ]
+         }
+      ]
+      }
+      ```
+
+   2. Exempel: fasta objekt definieras som konstanter.
+
+      I det här fallet ersätts de kapslade platserna med fasta fält (`location1`, `location2`), vilket gör att nyttolasten förblir giltig i den konfiguration som stöds.
+
+      ```json
+      {
+      "products": [
+         {
+            "id": "productA",
+            "name": "A",
+            "price": 20,
+            "location1": { "name": "Paris" },
+            "location2": { "name": "London" }
+         }
+      ]
+      }
+      ```
+
 
 * Om du vill testa samlingar i testläge måste du använda kodvisningsläget. Kodvyn stöds för närvarande inte för affärshändelser. Du kan bara skicka en samling med ett enda element.
 
@@ -79,7 +111,7 @@ Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt v
 
 I det här avsnittet använder vi följande JSON-exempel på nyttolast. Det här är en array med objekt med ett fält som är en enkel samling.
 
-```
+```json
 {
   "ctxt": {
     "products": [
@@ -149,7 +181,7 @@ För heterogena typer och arrayer av arrayer definieras arrayen med typen listAn
 
 Exempel på heterogen typ:
 
-```
+```json
 {
     "data_mixed-types": [
         "test",
@@ -162,7 +194,7 @@ Exempel på heterogen typ:
 
 Exempel på array med arrayer:
 
-```
+```json
 {
     "data_multiple-arrays": [
         [
