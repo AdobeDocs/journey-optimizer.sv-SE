@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: e255751e411d8b623a12780a52a54551b5d65182
+source-git-commit: b08f996d9871f59665c2d329b493fd6e61030fac
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -436,6 +436,9 @@ Hjälpprogram visas på [den här sidan](helpers.md).
     </tr>
     <tr>
         <td><a href="helpers.md#each">Varje</a></td><td>Den här funktionen används för att iterera över en array</td>
+    </tr>
+    <tr>
+        <td><a href="helpers.md#execution-metadata">Körningsmetadata</a></td><td>Den här hjälpen hämtar anpassade metadata för nyckelvärden vid meddelandeåtergivning så att de kan lagras i metadataobjektet för körning</td>
     </tr>
     <tr>
         <td><a href="helpers.md#if-function">If</a></td><td>Den här funktionen används för att definiera ett villkorsstyrt block - om uttrycket utvärderas som true återges blocket</td>

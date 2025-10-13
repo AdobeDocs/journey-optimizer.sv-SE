@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
-source-git-commit: 110c4895ac7f0b683a695e9705a8f8ac54d09637
+source-git-commit: b08f996d9871f59665c2d329b493fd6e61030fac
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -106,12 +106,12 @@ Programsatsen `elseif` anger ett nytt villkor som ska testas om den första prog
 
 >[!NOTE]
 >
->Mer information om målgrupper och segmenteringstjänsten finns i [avsnittet](../../audience/about-audiences.md).
+>Mer information om målgrupper och segmenteringstjänsten finns i [det här avsnittet](../../audience/about-audiences.md).
 
 
 ## Om{#unless}
 
-Hjälpprogrammet `unless` används för att definiera ett villkorsblock. Om uttrycksutvärderingen returnerar false återges blocket som motsatt till hjälpen `if`.
+Hjälpprogrammet `unless` används för att definiera ett villkorsblock. Om uttrycksutvärderingen returnerar false återges blocket som motsatt `if`-hjälpen.
 
 **Syntax**
 
@@ -211,3 +211,78 @@ I följande exempel kan du beräkna den totala summan av priserna för produkter
     {{/each}}
 {{sum}}
 ```
+
+## Körningsmetadata {#execution-metadata}
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
+
+Hjälpprogrammet `executionMetadata` gör att du kan hämta och lagra anpassade nyckelvärdepar dynamiskt i meddelandekörningskontexten.
+
+**Syntax**
+
+```
+{{executionMetadata key="your_key" value="your_value"}}
+```
+
+I den här syntaxen refererar `key` till metadatanamnet och `value` är de metadata som ska bevaras.
+
+**Användningsfall**
+
+Med den här funktionen kan ni lägga till sammanhangsbaserad information till alla inbyggda åtgärder från era kampanjer eller resor. På så sätt kan ni exportera sammanhangsbaserade data i realtid till externa system för olika syften, som spårning, analys, personalisering och nedladdning.
+
+>[!NOTE]
+>
+>Funktionen för körningsmetadata stöds inte av [anpassade åtgärder](../../action/action.md).
+
+Du kan till exempel använda hjälpen för metadata för körning för att lägga till ett specifikt ID för varje leverans som skickas till varje profil. Den här informationen genereras under körningen och de inbyggda körningsmetadata som sedan kan exporteras för avstämning i efterföljande led med en extern rapporteringsplattform.
+
+**Så här fungerar det**
+
+Välj ett element från ditt kanalinnehåll i en kampanj eller resa och lägg till `executionMetadata`-hjälpen i det här elementet med hjälp av anpassningsredigeraren.
+
+>[!NOTE]
+>
+>Funktionen Metadata för körning visas inte när själva innehållet visas.
+
+
+Vid körning läggs metadatavärdet till i befintliga **[!UICONTROL Message Feedback Event Dataset]** med följande schemaläggning:
+
+```
+"_experience": {
+  "customerJourneyManagement": {
+    "messageExecution": {
+      "metadata": {
+        "your_key": "your_value"
+      }
+    }
+  }
+}
+```
+
+>[!NOTE]
+>
+>Läs mer om datauppsättningar i [det här avsnittet](../../data/get-started-datasets.md).
+
+**Begränsning**
+
+Det finns en övre gräns på 2 kB för nyckelvärdepar per åtgärd.
+
+Om gränsen på 2 kB överskrids levereras meddelandet fortfarande, men något av nyckelvärdeparen kan trunkeras.
+
+**Exempel**
+
+```
+{{executionMetadata key="firstName" value=profile.person.name.firstName}}
+```
+
+I det här exemplet är den resulterande entiteten `profile.person.name.firstName` = &quot;Alex&quot;:
+
+```
+{
+  "key": "firstName",
+  "value": "Alex"
+}
+```
+
