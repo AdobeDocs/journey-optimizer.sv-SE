@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [!DNL Adobe Journey Optimizer] arbetar på en kontinuerlig leveransmodell, vilket möjliggör en skalbar, stegvis metod för funktionsdistribution. Med den här modellen kan Adobe leverera innovationer snabbare och säkerställa kontinuerlig stabilitet och prestanda under utrullningen.
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 > Eftersom [!DNL Adobe Journey Optimizer] använder kontinuerlig leverans kan nya funktioner visas progressivt i olika organisationer eller regioner.
 
@@ -35,7 +35,7 @@ Som en del av denna modell:
 
 [!DNL Adobe Journey Optimizer] följer vanligtvis en månadsvis publiceringsgräns, där distributioner vanligtvis sker under den sista veckan i varje månad. Versionsinformation och tillhörande dokumentation publiceras varje månad på tisdagar. Förhandsversionsinformation publiceras på fredag före versionsveckan.
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 > I slutet av varje kvartal kan releaser förutses och lanseras upp till två veckor före månadens slut för att anpassas till kvartalsvisa scheman eller beroende produktreleaser.
 
@@ -53,7 +53,7 @@ Vanliga versionssökvägar är:
 * **Beta → LA → GA** - Större eller experimentella funktioner går igenom alla faser för testning och validering.
 * **Beta → GA** - Vissa stabila Beta-funktioner kan flyttas direkt till GA utan en mellanliggande LA-fas.
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 > Om du är intresserad av tidig tillgång till funktioner i Beta eller begränsad tillgänglighet kan du kontakta din Adobe-representant för att diskutera deltagaralternativen.
 
