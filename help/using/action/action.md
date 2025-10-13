@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärder, resa, meddelanden, sändning, anslutningar
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: dcb2be7fef47e0d62fdd5a423799823ba4ef586c
+source-git-commit: 8a94f9081c4f7fe158c084d02642d5bbba33dca2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 42%
+source-wordcount: '354'
+ht-degree: 34%
 
 ---
 
@@ -49,4 +49,14 @@ Lär dig hur du felsöker en anpassad åtgärd [på den här dedikerade sidan](.
 
 Lär dig hur du konfigurerar anpassade åtgärder.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430273?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428396?quality=12)
+
+## Ytterligare resurser
+
+Bläddra i avsnitten nedan om du vill veta mer om hur du konfigurerar och använder dina anpassade åtgärder:
+
+* [Konfigurera dina anpassade åtgärder](../action/about-custom-action-configuration.md) - Lär dig hur du skapar och konfigurerar en anpassad åtgärd
+* [Använd anpassade åtgärder](../building-journeys/using-custom-actions.md) - Lär dig hur du använder anpassade åtgärder på dina resor
+* [Skicka samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md) - Lär dig hur du skickar en samling i anpassade åtgärdsparametrar som fylls i dynamiskt vid körning
+* [Felsökning av anpassad åtgärd](../action/troubleshoot-custom-action.md) - Lär dig hur du felsöker en anpassad åtgärd
+

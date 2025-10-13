@@ -1,27 +1,33 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Skicka samlingar dynamiskt med anpassade åtgärder
-description: Skicka ett meddelande med Campaign v7/v8
+title: Skicka samlingar till anpassade åtgärdsparametrar
+description: Lär dig hur du skickar samlingar dynamiskt i Journey Optimizer med anpassade åtgärder
 feature: Journeys, Use Cases, Custom Actions, Collections
 topic: Content Management
 role: Developer, Data Engineer
 level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 version: Journey Orchestration
-source-git-commit: 8f25fd5110777c148246864b364d02e4c6bf00da
+source-git-commit: 8a94f9081c4f7fe158c084d02642d5bbba33dca2
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 1%
+source-wordcount: '719'
+ht-degree: 0%
 
 ---
 
 
-# Skicka samlingar dynamiskt med anpassade åtgärder{#passing-collection}
+# Skicka samlingar till anpassade åtgärdsparametrar {#passing-collection}
 
-Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Två typer av samlingar stöds:
+Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt vid körning.
 
-* **enkla samlingar**: arrayer med enkla datatyper, till exempel med en listString:
+Två typer av samlingar stöds:
+
+* **Enkla samlingar**
+
+  Använd enkla samlingar för listor med grundläggande värden, till exempel strängar, siffror eller booleska värden. Dessa är användbara när du bara behöver skicka en lista med objekt utan ytterligare egenskaper.
+
+  En lista med enhetstyper:
 
   ```json
   {
@@ -32,7 +38,11 @@ Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt v
   }
   ```
 
-* o **objektsamlingar**: en array med JSON-objekt, till exempel:
+* **Objektsamlingar**
+
+  Använd objektsamlingar när varje objekt innehåller flera fält eller egenskaper. De används vanligtvis för att skicka strukturerade data, t.ex. produktinformation, händelseposter eller objektattribut.
+
+  Exempel:
 
   ```json
   {
@@ -56,6 +66,9 @@ Du kan skicka en samling i anpassade åtgärdsparametrar som fylls i dynamiskt v
   }
   ```
 
+>[!NOTE]
+>
+>Kapslade arrayer i samlingar stöds bara delvis i nyttolaster för anpassade åtgärder. Mer information finns i [Begränsningar](#limitations).
 
 ## Allmänt förfarande {#general-procedure}
 
@@ -125,6 +138,8 @@ För arrayfältet kan du även använda den avancerade uttrycksredigeraren för 
 
 ## Begränsningar {#limitations}
 
+Samlingar i anpassade åtgärder ger flexibilitet när det gäller att skicka dynamiska data, men det finns vissa strukturella begränsningar som du bör vara medveten om:
+
 * **Stöd för kapslade arrayer i anpassade åtgärder**
 
   Adobe Journey Optimizer stöder kapslade arrayer med objekt i den anpassade åtgärden **svarsnyttolaster**, men det här stödet är begränsat i **begärannyttolaster**.
@@ -172,7 +187,7 @@ För arrayfältet kan du även använda den avancerade uttrycksredigeraren för 
       ```
 
 
-* Om du vill testa samlingar i testläge måste du använda kodvisningsläget. Kodvyn stöds för närvarande inte för affärshändelser. Du kan bara skicka en samling med ett enda element.
+* **Testar samlingar**: Om du vill testa samlingar i testläge måste du använda kodvyn. Observera att kodvisningsläget inte stöds för affärshändelser, så i så fall kan du bara skicka en samling som innehåller ett enskilt element.
 
 
 ## Särskilda fall{#examples}
@@ -208,6 +223,12 @@ Exempel på array med arrayer:
 }
 ```
 
-**Relaterade ämnen**
+## Ytterligare resurser
 
-[Använd anpassade åtgärder](../building-journeys/using-custom-actions.md)
+Bläddra i avsnitten nedan om du vill veta mer om hur du konfigurerar, använder och felsöker anpassade åtgärder:
+
+* [Kom igång med anpassade åtgärder](../action/action.md) - Lär dig vad som är en anpassad åtgärd och hur de hjälper dig att ansluta till tredjepartssystem
+* [Konfigurera dina anpassade åtgärder](../action/about-custom-action-configuration.md) - Lär dig hur du skapar och konfigurerar en anpassad åtgärd
+* [Använd anpassade åtgärder](../building-journeys/using-custom-actions.md) - Lär dig hur du använder anpassade åtgärder på dina resor
+* [Felsökning av anpassad åtgärd](../action/troubleshoot-custom-action.md) - Lär dig hur du felsöker en anpassad åtgärd
+

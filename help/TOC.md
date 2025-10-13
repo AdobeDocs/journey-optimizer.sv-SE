@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c70cdb0f12b484844ab0222cec8922f30b0ee7dc
+source-git-commit: 8a94f9081c4f7fe158c084d02642d5bbba33dca2
 workflow-type: tm+mt
 source-wordcount: '2972'
 ht-degree: 18%
@@ -196,7 +196,7 @@ ht-degree: 18%
       + [Skicka flerkanalsmeddelanden](using/building-journeys/journeys-uc.md)
       + [Skicka ett meddelande med Campaign v7/v8](using/building-journeys/ajo-ac.md)
       + [Skicka ett meddelande till prenumeranter](using/building-journeys/message-to-subscribers-uc.md)
-      + [Skicka samlingar dynamiskt med anpassade åtgärder](using/building-journeys/collections.md)
+      + [Skicka samlingar till anpassade åtgärdsparametrar](using/building-journeys/collections.md)
       + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
       + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
       + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
@@ -879,7 +879,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

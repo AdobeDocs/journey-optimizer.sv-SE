@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 967713938ab0e3eaaaad7a86054ed1270a9cc1ca
+source-git-commit: 8a94f9081c4f7fe158c084d02642d5bbba33dca2
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1775'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,34 @@ ht-degree: 1%
 Om du använder ett tredjepartssystem för att skicka meddelanden eller om du vill att resor ska skicka API-anrop till ett tredjepartssystem, använder du anpassade åtgärder för att konfigurera anslutningen till din resa. Du kan till exempel ansluta till följande system med anpassade åtgärder: Epsilon, Slack, [Adobe Developer](https://developer.adobe.com){target="_blank"}, Firebase osv.
 
 Anpassade åtgärder är ytterligare åtgärder som definieras av tekniska användare och görs tillgängliga för marknadsförare. När de har konfigurerats visas de i den vänstra paletten på din resa i kategorin **[!UICONTROL Action]**. Läs mer på [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
+
+
+## Konfigurationssteg {#configuration-steps}
+
+Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
+
+1. Välj **[!UICONTROL Configurations]** på menyn Administration. Klicka på **[!UICONTROL Actions]** i avsnittet **[!UICONTROL Manage]**. Klicka på **[!UICONTROL Create Action]** om du vill skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
+
+   ![](assets/custom2.png)
+
+1. Ange ett namn för åtgärden.
+
+   >[!NOTE]
+   >
+   >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
+
+1. Lägg till en beskrivning av åtgärden. Det här steget är valfritt.
+1. Antalet resor som använder den här åtgärden visas i fältet **[!UICONTROL Used in]**. Du kan klicka på knappen **[!UICONTROL View journeys]** om du vill visa listan över resor som använder den här åtgärden.
+1. Definiera de olika **[!UICONTROL URL Configuration]**-parametrarna. Läs [den här sidan](../action/about-custom-action-configuration.md#url-configuration).
+1. Konfigurera avsnittet **[!UICONTROL Authentication]**. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode).
+1. Definiera **[!UICONTROL Action parameters]**. Läs [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
+1. Klicka på **[!UICONTROL Save]**.
+
+   Den anpassade åtgärden är nu konfigurerad och klar att användas på dina resor. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
+
+   >[!NOTE]
+   >
+   >När en anpassad åtgärd används i en resa är de flesta parametrar skrivskyddade. Du kan bara ändra fälten **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** och avsnittet **[!UICONTROL Authentication]**.
 
 ## Begränsningar{#custom-actions-limitations}
 
@@ -66,33 +94,6 @@ I Journey Optimizer kan du tillämpa policyer för datastyrning och samtycke på
 * [Datastyrning](../action/action-privacy.md).
 * [Samtycke](../action/action-privacy.md).
 
-
-## Konfigurationssteg {#configuration-steps}
-
-Här följer de huvudsteg som krävs för att konfigurera en anpassad åtgärd:
-
-1. Välj **[!UICONTROL Configurations]** på menyn Administration. Klicka på **[!UICONTROL Actions]** i avsnittet **[!UICONTROL Manage]**. Klicka på **[!UICONTROL Create Action]** om du vill skapa en ny åtgärd. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
-
-   ![](assets/custom2.png)
-
-1. Ange ett namn för åtgärden.
-
-   >[!NOTE]
-   >
-   >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
-
-1. Lägg till en beskrivning av åtgärden. Det här steget är valfritt.
-1. Antalet resor som använder den här åtgärden visas i fältet **[!UICONTROL Used in]**. Du kan klicka på knappen **[!UICONTROL View journeys]** om du vill visa listan över resor som använder den här åtgärden.
-1. Definiera de olika **[!UICONTROL URL Configuration]**-parametrarna. Läs [den här sidan](../action/about-custom-action-configuration.md#url-configuration).
-1. Konfigurera avsnittet **[!UICONTROL Authentication]**. Den här konfigurationen är densamma som för datakällor.  Se [det här avsnittet](../datasource/external-data-sources.md#custom-authentication-mode).
-1. Definiera **[!UICONTROL Action parameters]**. Läs [den här sidan](../action/about-custom-action-configuration.md#define-the-message-parameters).
-1. Klicka på **[!UICONTROL Save]**.
-
-   Den anpassade åtgärden är nu konfigurerad och klar att användas på dina resor. Läs [den här sidan](../building-journeys/about-journey-activities.md#action-activities).
-
-   >[!NOTE]
-   >
-   >När en anpassad åtgärd används i en resa är de flesta parametrar skrivskyddade. Du kan bara ändra fälten **[!UICONTROL Name]**, **[!UICONTROL Description]**, **[!UICONTROL URL]** och avsnittet **[!UICONTROL Authentication]**.
 
 ## Konfiguration av slutpunkt {#url-configuration}
 
@@ -156,7 +157,7 @@ Adobe Journey Optimizer stöder TLS 1.3 som standard för anpassade åtgärder. 
 
 Du kan använda mTLS (Mutual Transport Layer Security) för att säkerställa förbättrad säkerhet vid utgående anslutningar till anpassade Adobe Journey Optimizer-åtgärder. mTLS är en heltäckande säkerhetsmetod för ömsesidig autentisering som ser till att båda parter delar information är de som gör anspråk på att vara innan data delas. mTLS innehåller ytterligare ett steg jämfört med TLS, där servern också frågar efter klientens certifikat och verifierar det i slutet.
 
-Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
+Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
 ## Definiera nyttolastparametrarna {#define-the-message-parameters}
 
@@ -195,6 +196,15 @@ I fältkonfigurationen måste du:
 >
 
 
-## Felsökning
+* [Felsökning av anpassad åtgärd](../action/troubleshoot-custom-action.md) - Lär dig hur du felsöker en anpassad åtgärd
 
-Lär dig hur du felsöker en anpassad åtgärd [på den här dedikerade sidan](../action/troubleshoot-custom-action.md).
+
+## Ytterligare resurser
+
+Bläddra i avsnitten nedan om du vill veta mer om hur du konfigurerar, använder och felsöker anpassade åtgärder:
+
+* [Kom igång med anpassade åtgärder](../action/action.md) - Lär dig vad som är en anpassad åtgärd och hur de hjälper dig att ansluta till tredjepartssystem
+* [Använd anpassade åtgärder](../building-journeys/using-custom-actions.md) - Lär dig hur du använder anpassade åtgärder på dina resor
+* [Felsökning av anpassad åtgärd](../action/troubleshoot-custom-action.md) - Lär dig hur du felsöker en anpassad åtgärd
+* [Skicka samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md) - Lär dig hur du skickar en samling i anpassade åtgärdsparametrar som fylls i dynamiskt vid körning
+
