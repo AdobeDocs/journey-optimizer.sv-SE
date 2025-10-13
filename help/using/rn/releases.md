@@ -6,9 +6,9 @@ feature: Release Notes
 description: Förstå Adobe Journey Optimizer versionscykel
 hide: true
 hidefromtoc: true
-source-git-commit: f00deec2db697dccca161d82fe80b7f3f451c172
+source-git-commit: 0de90d707c02e11bfb8a6af7b22d4273a8b6b88d
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Som en del av denna modell:
 >
 > I slutet av varje kvartal kan releaser förutses och lanseras upp till två veckor före månadens slut för att anpassas till kvartalsvisa scheman eller beroende produktreleaser.
 
-I månadsversionen introduceras de viktigaste nya funktionerna och korrigeringarna, men med kontinuerliga leveranser kan ytterligare uppdateringar distribueras mellan cyklerna när de är klara. Versionsinformation och relaterad dokumentation uppdateras sedan i enlighet med detta.
+I månadsversionen introduceras de viktigaste nya funktionerna och korrigeringarna, men med kontinuerliga leveranser kan ytterligare uppdateringar distribueras mellan cyklerna när de är klara. Versionsinformation och relaterad dokumentation uppdateras sedan och tillgänglighetsdatumet anges. Alla ändringar som släpps under månaden sammanställs i månadsversionsinformationen på releasedatum.
 
 
 ## Frigör banor {#release-paths}
