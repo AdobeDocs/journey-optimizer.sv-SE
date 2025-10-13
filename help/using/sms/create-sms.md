@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 3d4b4fce529db70c53daea3d15d4af9a14b57424
+source-git-commit: 89955157e37f3312ccc8d033a26f5a8664aebfe1
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 2%
@@ -22,12 +22,13 @@ ht-degree: 2%
 >title="Skapa ett textmeddelande"
 >abstract="Om du vill skapa ett textmeddelande (SMS/MMS/RCS) lägger du till en SMS-åtgärd i en resa eller kampanj och börjar personalisera den med personaliseringsredigeraren."
 
+>[!AVAILABILITY]
+>
+>RCS Upscale är inte en HIPAA-Ready Service och får inte användas för att samla in, lagra eller bearbeta känsliga personuppgifter, inklusive Tillåtna hälsodata, t.ex. personlig hälsoinformation eller PHI, som din organisation annars kan ha tillstånd att behandla i Journey Optimizer.
+
 Du kan utforma och skicka textmeddelanden (SMS), multimediemeddelanden (RCS) och multimediemeddelanden (MMS) med Adobe Journey Optimizer. Du måste först lägga till en SMS-åtgärd på en resa eller i en kampanj och sedan definiera innehållet i textmeddelandet, enligt beskrivningen nedan. Adobe Journey Optimizer har också funktioner för att testa textmeddelanden innan de skickas, så att du kan kontrollera återgivning, anpassningsattribut och alla andra inställningar.
 
->[!NOTE]
->
->I enlighet med branschens standarder och bestämmelser måste alla SMS/MMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hantera avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
-
+I enlighet med branschens standarder och bestämmelser måste alla SMS/MMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hantera avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
 
 ## Lägga till ett textmeddelande {#create-sms-journey-campaign}
 
@@ -96,10 +97,6 @@ Nu kan du börja designa innehållet i ditt textmeddelande med knappen **[!UICON
 >id="ajo_message_sms_content"
 >title="Definiera ditt SMS-innehåll"
 >abstract="Anpassa och anpassa dina textmeddelanden (SMS/MMS/RCS) genom att använda personaliseringsredigeraren för att definiera innehållet och införliva dynamiska element."
-
->[!AVAILABILITY]
->
->RCS Upscale är inte en HIPAA-Ready Service och får inte användas för att samla in, lagra eller bearbeta känsliga personuppgifter, inklusive Tillåtna hälsodata, t.ex. personlig hälsoinformation eller PHI, som din organisation annars kan ha tillstånd att behandla i Journey Optimizer.
 
 Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna för MMS finns i [det här avsnittet](#mms-content).
 
