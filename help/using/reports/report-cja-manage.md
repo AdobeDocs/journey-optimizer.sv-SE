@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 881cae4638082f804a5e2a768dfa135193959191
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Förbättra dataanalysupplevelsen med din **[!DNL Customer Journey Analytics]**-
 
 Det här kraftfulla alternativet dirigerar om dig till din **[!DNL Customer Journey Analytics]**-miljö, så att du kan anpassa dina rapporter i stor utsträckning. Ni kan berika era widgetar med specialiserade Customer Journey Analytics-mätvärden och ta era insikter till en helt ny nivå.
 
-[Läs mer om Customer Journey Analytics gränssnitt.](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-getting-started)
+[Läs mer om Customer Journey Analytics gränssnitt.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-getting-started)
 
 ## Definiera rapportperioden {#report-period}
 
@@ -137,7 +137,7 @@ Du kan skapa anpassade beräknade mätvärden direkt i dina rapporter. Ni kan ge
 
    >[!NOTE]
    >
-   >Om ni äger Customer Journey Analytics kan ni anpassa mätvärdena ytterligare med ytterligare alternativ. [Läs mer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics#areas-of-the-calculated-metrics-builder)
+   >Om ni äger Customer Journey Analytics kan ni anpassa mätvärdena ytterligare med ytterligare alternativ. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics#areas-of-the-calculated-metrics-builder)
 
 1. Välj lämplig **[!UICONTROL Decimal Places]** och välj en **[!UICONTROL Format]** (decimal, tid, procent eller valuta) baserat på hur du vill att måttet ska visas.
 
@@ -155,13 +155,13 @@ Du kan skapa anpassade beräknade mätvärden direkt i dina rapporter. Ni kan ge
 
 De nya mätvärdena inkluderas när du exporterar rapporten som en PDF eller CSV. Den tas dock bort från rapporten när du har avslutat den.
 
-## Utforska data med Exploratory Analysis {#exploratory}
+## Utforska data med Insight Builder {#exploratory}
 
-Använd verktyget för experimentell analys för att enkelt skapa tabeller och visualiseringar från dina valda **[!UICONTROL Dimensions]** och **[!UICONTROL Metrics]**. Verktyget effektiviserar datautforskandet så att du automatiskt kan anpassa och analysera information. Läs mer i [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/quickinsight).
+Använd verktyget Insight builder för att enkelt skapa tabeller och visualiseringar från dina valda **[!UICONTROL Dimensions]** och **[!UICONTROL Metrics]**. Verktyget effektiviserar datautforskandet så att du automatiskt kan anpassa och analysera information. Läs mer i [den här dokumentationen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight).
 
-1. Börja med att gå till rapporten där du vill använda undersöknings-analysen.
+1. Börja med att gå till rapporten där du vill använda Insight Builder.
 
-1. Välj menyn Analys i den vänstra listen.
+1. Välj menyn Insight builder på menyn till vänster.
 
    ![](assets/exploratory_analysis_1.png)
 
@@ -193,7 +193,7 @@ d. Open the report for the journey that you added the metric to and ensure that 
 >[!IMPORTANT]
 >
 >Varje organisation är begränsad till att publicera 25 målgrupper. Dessutom kan användare publicera högst 5 målgrupper per timme och 20 per dag.
->&#x200B;> Engångspubliken har en livscykel på 48 timmar. Om 25 målgrupper publiceras inom den tidsramen kan ytterligare målgrupper därför bara publiceras när 48-timmarsperioden har gått ut.
+>> Engångspubliken har en livscykel på 48 timmar. Om 25 målgrupper publiceras inom den tidsramen kan ytterligare målgrupper därför bara publiceras när 48-timmarsperioden har gått ut.
 
 Nu kan du markera specifika data i tabellen och direkt skapa en målgrupp utifrån dessa markeringar, vilket effektiviserar och förenklar processen för att skapa målgrupper.
 
@@ -207,7 +207,7 @@ Nu kan du markera specifika data i tabellen och direkt skapa en målgrupp utifr�
 
    >[!NOTE]
    >
-   >Om ni äger Customer Journey Analytics kan ni anpassa mätvärdena ytterligare med ytterligare alternativ. [Läs mer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/audiences/publish)
+   >Om ni äger Customer Journey Analytics kan ni anpassa mätvärdena ytterligare med ytterligare alternativ. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)
 
    ![](assets/audience_1.png)
 
@@ -221,7 +221,7 @@ Du kan nu fortsätta att använda den nya målgruppen med en resa eller kampanj.
 >
 > Funktionen **Template** introduceras stegvis, med fullständig allmän tillgänglighet planerad till slutet av januari och exklusivt tillgänglig för användare med en [!DNL Customer Journey Analytics]-licens.
 
-Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. [Läs mer om Customer Journey Analytics-mallen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
+Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. [Läs mer om Customer Journey Analytics-mallen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
 
 När du får åtkomst till dina rapporter kan du välja mellan två malltyper i listrutan **[!UICONTROL Select a template]**:
 
@@ -234,19 +234,19 @@ Om ingen mall har skapats visas inte listrutan **[!UICONTROL Select a template]*
 
 Så här skapar du en mall:
 
-1. I [!DNL Customer Journey Analytics] går du till menyn **[!UICONTROL Workspace]** och väljer **[!UICONTROL Adobe templates]**. [Läs mer om tillgängliga mallar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/templates/use-templates#available-templates)
+1. I [!DNL Customer Journey Analytics] går du till menyn **[!UICONTROL Workspace]** och väljer **[!UICONTROL Adobe templates]**. [Läs mer om tillgängliga mallar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#available-templates)
 
 1. Bläddra bland de tillgängliga färdiga mallarna och klicka på **[!UICONTROL Use template]** för att välja en.
 
    ![](assets/cja_template_1.png)
 
-1. Anpassa rapporten efter era behov. Läs [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home).
+1. Anpassa rapporten efter era behov. Läs [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 1. När den anpassade mallen är klar går du till menyn **[!UICONTROL Project]** och väljer **[!UICONTROL Save as template]**.
 
    ![](assets/cja_template_2.png)
 
-1. Ange nödvändig information för mallen. Mer information finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/templates/create-templates#edit-or-delete-a-template).
+1. Ange nödvändig information för mallen. Mer information finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#edit-or-delete-a-template).
 
    >[!IMPORTANT]
    >
