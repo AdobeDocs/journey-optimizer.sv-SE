@@ -6,9 +6,9 @@ feature: Release Notes
 description: Förstå Adobe Journey Optimizer versionscykel
 hide: true
 hidefromtoc: true
-source-git-commit: 625dfbb66effb30172f6faf56db6fe512aef909a
+source-git-commit: 920c9080768e1972b487b3a258281914a4b7d8de
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Vanliga versionssökvägar är:
 | **Etikett** | **Syfte** | **Tillgänglighet** | **Nyckelanteckningar** |
 |------------|-------------|------------------|----------------|
 | **Beta** | Tidig testning och insamling av feedback. | Begränsat till utvalda kunder eller organisationer som deltar i Adobe Beta-program. | - Ej avsedd för produktion.<br>- Funktioner eller design kan ändras före GA.<br>- Feedback hjälper till att förfina den slutliga implementeringen. |
-| **Begränsad tillgänglighet (LA)** | Kontrollerad utrullning för validering och övervakning. | Endast aktiverat för vissa kunder eller miljöer (till exempel utvecklingssandlådor). | - Funktionen är nästan klar och övervakas aktivt.<br> - Används för att validera prestanda och skalbarhet före den allmänna versionen.<br>- Åtkomst kräver Adobe-godkännande. |
+| **Begränsad tillgänglighet (LA)** | Kontrollerad utrullning för validering och övervakning. | Endast aktiverat för vissa kunder eller miljöer (till exempel utvecklingssandlådor). | - Produktionsklar och fullt stödd.<br> - Används för att validera prestanda och skalbarhet före den allmänna versionen.<br>- Åtkomst kräver Adobe-godkännande. |
 | **Allmän tillgänglighet (GA)** | Omfattande funktionalitet som stöds. | Aktiveras som standard för alla berättigade organisationer. | - Produktionsklar och fullt stödd.<br> - Licensiering eller berättiganden kan gälla.<br> - Kan rulla ut progressivt mellan regioner. |
 
 
@@ -83,6 +83,13 @@ Så här håller du dig uppdaterad:
 * Övervaka **Förhandsversionsinformation** (om den är tillgänglig) om du vill se en förhandsvisning av kommande funktioner.
 * Kontakta din Adobe-representant för Beta eller begränsad tillgänglighet eller information om behörighet.
 
+Du kan prenumerera på **e-postmeddelanden och produktmeddelanden** för Journey Optimizer produktreleaser. Så här prenumererar du:
+
+1. Navigera till **Adobe Experience Cloud-inställningar**
+1. Under **Notifications** hittar du **Journey Optimizer**
+1. Aktivera **nya utgåvor** I appen och e-postmeddelanden
+
+![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
 
 ## Vanliga frågor och svar {#faq}
 
