@@ -11,9 +11,9 @@ keywords: aktivitet, villkor, arbetsyta, resa, optimering
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: c472ce00623b810dea60dd5d9e34ca4d516447ad
+source-git-commit: 15a143956156458cf78d02a4cf92300e97cef949
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ När resan är live utvärderas profiler mot de definierade kriterierna, och bas
 >id="ajo_path_experiment_success_metric"
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
 
 Experimentation gör att du kan testa olika banor baserat på en slumpmässig delning för att avgöra vilken som fungerar bäst baserat på fördefinierade framgångsmått.
 
@@ -75,13 +76,6 @@ Låt oss säga att du vill jämföra tre banor:
 1. Klicka på **[!UICONTROL Create experiment]**.
 
 1. Välj den **[!UICONTROL Success metric]** som du vill ange för ditt experiment. Läs mer om tillgängliga mätvärden och hur du konfigurerar listan i [det här avsnittet](success-metrics.md).
-
-   <!--Need to have the list of all default metrics + a description for each.
-    Explain why the metric selection is important.
-    Are there custom metrics? If so explain.
-    If possible, add best practices and examples for each metrics (could even be a dedicated section).
-    Consider adding an example in this step: For this example, select this metric to test xxx.
-    -->
 
    ![](assets/journey-optimize-experiment-metrics.png){width=80%}
 
