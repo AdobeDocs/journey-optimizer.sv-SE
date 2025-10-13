@@ -53,7 +53,7 @@ När resan är live utvärderas profiler mot de definierade kriterierna, och bas
 >id="ajo_path_experiment_success_metric"
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
 
 Experimentation gör att du kan testa olika banor baserat på en slumpmässig delning för att avgöra vilken som fungerar bäst baserat på fördefinierade framgångsmått.
 
