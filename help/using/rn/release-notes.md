@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 5a530a183c3eba87dcee59d42162fad9c0c32942
+source-git-commit: c70cdb0f12b484844ab0222cec8922f30b0ee7dc
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1707'
 ht-degree: 1%
 
 ---
@@ -20,11 +20,17 @@ ht-degree: 1%
 >title="Nyheter?"
 >abstract="**Adobe Journey Optimizer** levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen."
 
-[!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras den sista veckan i varje månad i versionsinformationen. [!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] följer en **kontinuerlig leveransmodell** som gör att Adobe kan leverera nya funktioner, förbättringar och korrigeringar kontinuerligt. Den här metoden möjliggör en **skalbar, fasad driftsättning** av funktioner för att säkerställa prestanda och stabilitet i alla miljöer.
 
-## Uppdateringar 25 oktober {#25-10-rn}
+Versionsinformationen **uppdateras mellan månadsversionerna** på grund av den här modellen.  Ett dedikerat avsnitt om [de senaste uppdateringarna](#updates-rn) visar på nya funktioner och förbättringar när de distribueras till produktionen, så att du alltid informeras om alla ändringar i realtid. <!--For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](#releases.md).-->
 
-### Nya funktioner {#25-10-features}
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
+
+## Senaste uppdateringar {#updates-rn}
+
+Nya funktioner och förbättringar som släppts under de senaste veckorna listas nedan med deras tillgänglighetsdatum. De grupperas med nästa versionsinformation i slutet av månaden. Se även den senaste [versionsinformationen nedan](#latest-rn).
+
+### Nya funktioner {#updates-features}
 
 <table>
 <thead>
@@ -67,7 +73,7 @@ ht-degree: 1%
 </tbody>
 </table>
 
-### Förbättringar {#25-10-improvements}
+### Förbättringar {#updates-improvements}
 
 **Stöd för anpassade attribut för adressen Mailto (unsubscribe)**
 
@@ -81,7 +87,7 @@ Om du vill anpassa dina anpassade slutpunkter ytterligare kan du nu definiera an
 
 Tillgänglighetsdatum: 6 oktober 2025
 
-## Versionsinformation 25 september {#25-9-rn}
+## Versionsinformation 25 september {#latest-rn}
 
 **Releasedatum**: 23-24 september 2025
 
@@ -120,7 +126,7 @@ Tillgänglighetsdatum: 6 oktober 2025
 <tr>
 <td>
 <p>Journey Agent tillhandahålls av <a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator" target="_blank">Adobe Experience Platform Agent Orchestrator</a> och finns i Journey Optimizer. Det gör att ni kan analysera resor via ett naturligt språkgränssnitt. Agenten kommer att upptäcka målgrupper eller schemalägga konflikter och bortfall av profiler under en resa för att hjälpa er att vidta åtgärder för att lösa dem. Snart kan du skapa resor med äkta stöd.</p>
-<p>Mer information finns i <a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze" target="_blank">detaljerad dokumentation</a></p>
+<p>Mer information finns i <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze" target="_blank">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 24 september 2025</p>
 </td>
 </tr>
