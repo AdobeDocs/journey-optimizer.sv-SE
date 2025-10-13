@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 12dbe0031e9037d879e0d2309c7c26cc3c00cc4e
+source-git-commit: 3d4b4fce529db70c53daea3d15d4af9a14b57424
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1065'
 ht-degree: 2%
 
 ---
@@ -96,6 +96,10 @@ Nu kan du börja designa innehållet i ditt textmeddelande med knappen **[!UICON
 >id="ajo_message_sms_content"
 >title="Definiera ditt SMS-innehåll"
 >abstract="Anpassa och anpassa dina textmeddelanden (SMS/MMS/RCS) genom att använda personaliseringsredigeraren för att definiera innehållet och införliva dynamiska element."
+
+>[!AVAILABILITY]
+>
+>RCS Upscale är inte en HIPAA-Ready Service och får inte användas för att samla in, lagra eller bearbeta känsliga personuppgifter, inklusive Tillåtna hälsodata, t.ex. personlig hälsoinformation eller PHI, som din organisation annars kan ha tillstånd att behandla i Journey Optimizer.
 
 Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna för MMS finns i [det här avsnittet](#mms-content).
 
