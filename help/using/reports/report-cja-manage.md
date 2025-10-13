@@ -193,7 +193,7 @@ d. Open the report for the journey that you added the metric to and ensure that 
 >[!IMPORTANT]
 >
 >Varje organisation är begränsad till att publicera 25 målgrupper. Dessutom kan användare publicera högst 5 målgrupper per timme och 20 per dag.
->> Engångspubliken har en livscykel på 48 timmar. Om 25 målgrupper publiceras inom den tidsramen kan ytterligare målgrupper därför bara publiceras när 48-timmarsperioden har gått ut.
+>&#x200B;> Engångspubliken har en livscykel på 48 timmar. Om 25 målgrupper publiceras inom den tidsramen kan ytterligare målgrupper därför bara publiceras när 48-timmarsperioden har gått ut.
 
 Nu kan du markera specifika data i tabellen och direkt skapa en målgrupp utifrån dessa markeringar, vilket effektiviserar och förenklar processen för att skapa målgrupper.
 
