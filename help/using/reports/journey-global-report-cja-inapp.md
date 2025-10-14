@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: f10b3ab9-db0a-4759-98e4-2ac1988eb8c4
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 3d14a6ea3bd6756304db3fdf80b2a2786d5d2a1c
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ Diagrammet **[!UICONTROL Display & Click trend]** innehåller en detaljerad anal
 
 +++ Läs mer om trendstatistik för visning och klickning
 
-* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden i appen.
+* **[!UICONTROL Clicks]**: Antal gånger som användaren interagerade med meddelanden i appen.
 
-* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
+* **[!UICONTROL Displays]**: Antal gånger som meddelandet i appen visades för användaren.
 
 +++
 
@@ -51,7 +51,7 @@ Diagrammet **[!UICONTROL Clicks]** visar klickvärden i appen, som visar både d
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i meddelanden i appen
 
-* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden i appen.
+* **[!UICONTROL Clicks]**: Antal gånger som användaren interagerade med meddelanden i appen.
 
 +++
 
@@ -61,7 +61,7 @@ Diagrammet **[!UICONTROL Displays]** hjälper dig att förstå både meddelandet
 
 +++ Läs mer om visningsmått
 
-* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
+* **[!UICONTROL Displays]**: Antal gånger som meddelandet i appen visades för användaren.
 
 * **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
 
@@ -79,11 +79,11 @@ Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbil
 
 * **[!UICONTROL Click through open rate (CTOR)]**: Antal gånger som meddelanden i programmet öppnades.
 
-* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden i appen.
+* **[!UICONTROL Clicks]**: Antal gånger som användaren interagerade med meddelanden i appen.
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i meddelanden i appen.
 
-* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
+* **[!UICONTROL Displays]**: Antal gånger som meddelandet i appen visades för användaren.
 
 * **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
 
@@ -105,9 +105,9 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i meddelanden i appen.
 
-* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden i appen.
+* **[!UICONTROL Clicks]**: Antal gånger som användaren interagerade med meddelanden i appen.
 
-* **[!UICONTROL Displays]**: Antal gånger som meddelandet öppnades.
+* **[!UICONTROL Displays]**: Antal gånger som meddelandet i appen visades för användaren.
 
 * **[!UICONTROL Unique displays]**: Det antal gånger som meddelandet öppnades tas ingen hänsyn till flera interaktioner för en profil.
 
@@ -123,6 +123,6 @@ Tabellen **[!UICONTROL Tracked link URLs]** innehåller en omfattande översikt 
 
 * **[!UICONTROL Unique Clicks]**: Antal profiler som klickat på ett innehåll i meddelanden i appen
 
-* **[!UICONTROL Clicks]**: Antal gånger som ett innehåll klickades på i dina meddelanden i appen.
+* **[!UICONTROL Clicks]**: Antal gånger som användaren interagerade med meddelanden i appen.
 
 +++
