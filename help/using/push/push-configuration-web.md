@@ -6,10 +6,11 @@ description: Lär dig hur du konfigurerar miljön för att skicka push-meddeland
 feature: Push, Channel Configuration
 role: Admin
 level: Intermediate
-exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
+hidefromtoc: true
+hide: true
 source-git-commit: 36056208cd1e435c4801bd178bdc5f2d74068dc5
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1732'
 ht-degree: 2%
 
 ---
@@ -132,8 +133,7 @@ Adobe Experience Platform Mobile SDK erbjuder API:er för integrering på klient
 
 I slutet av detta bör du även ha skapat och konfigurerat en mobil egenskap i [!DNL Adobe Experience Platform Data Collection]. Du skapar vanligtvis en mobil egenskap för varje mobilprogram som du vill hantera. Lär dig hur du skapar och konfigurerar en mobil egenskap i [dokumentationen för Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
-<!--To enable **Web push notifications**, ensure that the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications) is properly configured within the Web SDK. Then, use [the sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription) to register push subscriptions with Adobe Experience Platform.
--->
+Om du vill aktivera **webb-push-meddelanden** kontrollerar du att egenskapen [pushNotifications](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications) är korrekt konfigurerad i Web SDK. Använd sedan [kommandot sendPushSubscription](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription) för att registrera push-prenumerationer hos Adobe Experience Platform.
 
 ## Steg 1: Lägg till dina push-autentiseringsuppgifter för appar i Journey Optimizer {#push-credentials-launch}
 
@@ -175,15 +175,13 @@ Registrering av push-autentiseringsuppgifter krävs för mobilappen för att god
 
       1. Dra och släpp FCM-push-inloggningsuppgifterna. Mer information om hur du hämtar push-autentiseringsuppgifter finns i [Google-dokumentationen](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-<!--
-    * **For Web**
+   * **För webben**
 
-        ![](assets/add-app-config-web.png)
+     ![](assets/add-app-config-web.png)
 
-        1. Provide the **[!UICONTROL App ID]**.
+      1. Ange **[!UICONTROL App ID]**.
 
-        1. Enter your **[!UICONTROL VAPID public key]** and **[!UICONTROL private key]**.
--->
+      1. Ange din **[!UICONTROL VAPID public key]** och **[!UICONTROL private key]**.
 
 1. Klicka på **[!UICONTROL Submit]** om du vill skapa appkonfigurationen.
 
@@ -228,7 +226,7 @@ När du har skapat dina push-autentiseringsuppgifter måste du skapa en konfigur
 
 1. Välj **[!UICONTROL Marketing action]** om du vill associera medgivandeprinciper till meddelanden som använder den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
 
-1. Välj din **[!UICONTROL Platform]**: Android och/eller iOS <!--and/or Web-->.
+1. Välj din **[!UICONTROL Platform]**: Android, iOS och/eller webb.
 
 1. Välj samma **[!UICONTROL App id]** som för de [push-autentiseringsuppgifter](#push-credentials-launch) som konfigurerats ovan.
 

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 8a94f9081c4f7fe158c084d02642d5bbba33dca2
+source-git-commit: 36056208cd1e435c4801bd178bdc5f2d74068dc5
 workflow-type: tm+mt
-source-wordcount: '2972'
+source-wordcount: '2981'
 ht-degree: 18%
 
 ---
@@ -363,11 +363,13 @@ ht-degree: 18%
       + [Kom igång med push-meddelanden](using/push/get-started-push.md)
       + [Skapa ett push-meddelande](using/push/create-push.md)
       + [Utforma ett push-meddelande](using/push/design-push.md)
+      + [Designa ett push-meddelande för webben](using/push/design-push-web.md)
       + [Kontrollera och skicka push-meddelanden](using/push/send-push.md)
       + Konfigurera push-meddelanden {#push-config}
          + [Konfigurera push-meddelanden](/help/rp_landing_pages/push-config-landing-page.md)
          + [Push-meddelandeflöde](using/push/push-gs.md)
          + [Konfigurera kanal för push-meddelanden](using/push/push-configuration.md)
+         + [Konfigurera kanal för push-meddelanden](using/push/push-configuration-web.md)
          + [Arbetsflöde för snabb start av mobil introduktion](using/push/mobile-onboarding-wf.md)
    + SMS/MMS/RCS-kanal {#sms}
       + [SMS/MMS/RCS-kanal](/help/rp_landing_pages/sms-landing-page.md)
@@ -879,7 +881,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

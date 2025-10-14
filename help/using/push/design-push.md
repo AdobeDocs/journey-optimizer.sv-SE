@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: e7567a68425c8fba5fc0f0b84b494b20d9f4df89
+source-git-commit: 36056208cd1e435c4801bd178bdc5f2d74068dc5
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 4%
@@ -75,7 +75,7 @@ När mediet har lagts till visas det till höger om meddelandetexten.
 
 Skapa ett användbart meddelande genom att lägga till knappar i ditt push-innehåll.
 
-Om enhetsskärmen är låst visas inte dessa knappar: endast **Rubrik** och **Meddelande** för meddelandet visas. Om enheten är olåst ser mottagarna knapparna.
+Om enhetsskärmen är låst visas inte dessa knappar: bara **Rubrik** och **Meddelande** i meddelandet visas. Om enheten är olåst ser mottagarna knapparna.
 
 I Android-versionen kan du lägga till upp till tre knappar.
 
