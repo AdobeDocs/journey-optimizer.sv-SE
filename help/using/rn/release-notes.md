@@ -24,7 +24,7 @@ ht-degree: 1%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna.  Ett dedikerat avsnitt om [de senaste uppdateringarna](#updates-rn) visar på nya funktioner och förbättringar när de distribueras till produktionen, så att du alltid informeras om alla ändringar i realtid. <!--For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](#releases.md).-->
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
 
 ## Senaste uppdateringar {#updates-rn}
 
@@ -162,7 +162,7 @@ Tillgänglighetsdatum: 6 oktober 2025
 <tr>
 <td>
 <p>Journey Agent tillhandahålls av <a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator" target="_blank">Adobe Experience Platform Agent Orchestrator</a> och finns i Journey Optimizer. Det gör att ni kan analysera resor via ett naturligt språkgränssnitt. Agenten kommer att upptäcka målgrupper eller schemalägga konflikter och bortfall av profiler under en resa för att hjälpa er att vidta åtgärder för att lösa dem. Snart kan du skapa resor med äkta stöd.</p>
-<p>Mer information finns i <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze" target="_blank">detaljerad dokumentation</a></p>
+<p>Mer information finns i <a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze" target="_blank">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 24 september 2025</p>
 </td>
 </tr>
