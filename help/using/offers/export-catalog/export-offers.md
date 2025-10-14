@@ -180,7 +180,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
   **Fält:** linkURL
   **Beskrivning:** En unik resurslokaliserare (valfritt) för användarinteraktioner. Den här URL:en används för att referera slutanvändaren till i en användaragent och kan spåras.
   **Typ:** sträng
-  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
+  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
 ++_experience > decisioning > contents > Placement
 

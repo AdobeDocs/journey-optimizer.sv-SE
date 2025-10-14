@@ -46,7 +46,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## Skapa och konfigurera en extern datakälla {#create-ext-data-sources}
 

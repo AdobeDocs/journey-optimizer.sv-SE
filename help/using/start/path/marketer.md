@@ -20,7 +20,7 @@ Som **marknadsförare** eller **resenär** ansvarar du för att skapa erbjudande
 
 Se följande avsnitt för att konfigurera din första resa, lägga till erbjudanden och resurser och skicka meddelanden:
 
-1. **Skapa målgrupper**. Med Journey Optimizer kan ni skapa målgrupper genom segmentdefinitioner direkt från menyn **Publiker** och utnyttja dem i era resor.  Läs mer om målgrupper [på den här sidan](../../audience/about-audiences.md). Upptäck hur du skapar segmentdefinitioner [ i det här exemplet](../../audience/creating-a-segment-definition.md).
+1. **Skapa målgrupper**. Med Journey Optimizer kan ni skapa målgrupper genom segmentdefinitioner direkt från menyn **Publiker** och utnyttja dem i era resor.  Läs mer om målgrupper [på den här sidan](../../audience/about-audiences.md). Upptäck hur du skapar segmentdefinitioner [&#x200B; i det här exemplet](../../audience/creating-a-segment-definition.md).
 
 1. **Lägg till personalisering och dynamiskt innehåll**. Utnyttja Journey Optimizer personalisering och dynamiska innehållsfunktioner för att anpassa budskapet till er målgrupp. Läs mer om [personalisering](../../personalization/personalize.md) och [dynamiskt innehåll](../../personalization/get-started-dynamic-content.md).
 

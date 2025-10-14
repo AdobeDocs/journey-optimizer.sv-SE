@@ -95,4 +95,4 @@ Det är därför som du kan ange ytan enligt den valda plattformen på två sät
 
 * För plattformarna **[!UICONTROL Web]**, **[!UICONTROL iOS]** och **[!UICONTROL Android]** måste du ange **URL/program-ID** och en **plats eller sökväg** för att skapa ytan. Läs mer om hur du konfigurerar kodbaserade upplevelser för plattformarna [web](code-based-configuration.md#web) och [mobile](code-based-configuration.md#mobile)
 
-* Om plattformen är **[!UICONTROL Other]** måste du ange den fullständiga **yt-URI**, som i exemplen [ ovan](#surface-uri). Läs mer om hur du konfigurerar kodbaserade upplevelser för [andra](code-based-configuration.md#other)-plattformar
+* Om plattformen är **[!UICONTROL Other]** måste du ange den fullständiga **yt-URI**, som i exemplen [&#x200B; ovan](#surface-uri). Läs mer om hur du konfigurerar kodbaserade upplevelser för [andra](code-based-configuration.md#other)-plattformar

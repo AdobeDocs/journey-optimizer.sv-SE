@@ -94,7 +94,7 @@ Först kan du exportera en [!DNL Journey Optimizer] HTML-mall med ditt varumärk
 
 Följ stegen nedan om du vill utnyttja de [!DNL GenStudio] e-postvarianter som du nyss skapade genom att importera dem till [!DNL Journey Optimizer].
 
-1. I [!DNL Journey Optimizer] [lägger du till ett e-postmeddelande ](../email/create-email.md) i en kampanj.
+1. I [!DNL Journey Optimizer] [lägger du till ett e-postmeddelande &#x200B;](../email/create-email.md) i en kampanj.
 
 1. Gå igenom skärmen [Redigera innehåll](../email/create-email.md#define-email-content) på konfigurationsskärmen för kampanjen och klicka på **[!UICONTROL Edit email body]** för att öppna e-post-Designer. [Lär dig hur](../email/get-started-email-design.md#key-steps)
 
@@ -120,7 +120,7 @@ Följ stegen nedan om du vill utnyttja de [!DNL GenStudio] e-postvarianter som d
 
    >[!NOTE]
    >
-   >GenStudio-upplevelser [ som skapats från en [!DNL Journey Optimizer] mall](#export-from-ajo-to-genstudio) importeras direkt till e-postens Designer. GenStudio-upplevelser som skapats utan en [!DNL Journey Optimizer]-mall importeras till [kompatibilitetsläge](../email/existing-content.md).
+   >GenStudio-upplevelser [&#x200B; som skapats från en [!DNL Journey Optimizer] mall](#export-from-ajo-to-genstudio) importeras direkt till e-postens Designer. GenStudio-upplevelser som skapats utan en [!DNL Journey Optimizer]-mall importeras till [kompatibilitetsläge](../email/existing-content.md).
 
    Använd [redigeringsverktygen för e-postinnehåll](../email/content-from-scratch.md) och [anpassningsfälten](../personalization/personalize.md) för att redigera din e-post efter behov. Spara innehållet.
 

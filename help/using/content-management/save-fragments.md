@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Spara innehåll som fragment {#save-as-fragment}
 
-När du redigerar innehåll i [!DNL Journey Optimizer] kan du spara hela eller delar av innehållet som fragment för framtida återanvändning. Du kan spara innehåll som fragment antingen [ från e-post-Designer](#save-as-visual-fragment) eller [ från uttrycksredigeraren](#save-as-expression-fragment).
+När du redigerar innehåll i [!DNL Journey Optimizer] kan du spara hela eller delar av innehållet som fragment för framtida återanvändning. Du kan spara innehåll som fragment antingen [&#x200B; från e-post-Designer](#save-as-visual-fragment) eller [&#x200B; från uttrycksredigeraren](#save-as-expression-fragment).
 
 >[!NOTE]
 >

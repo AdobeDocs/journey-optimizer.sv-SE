@@ -29,7 +29,7 @@ Kodbaserad upplevelse stöder alla typer av kundimplementeringar. På den här s
 
 Om du har en implementering på klientsidan kan du använda någon av AEP-klientens SDK: AEP Web SDK eller AEP Mobile SDK.
 
-* Stegen [ nedan](#client-side-how) beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsegångarna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
+* Stegen [&#x200B; nedan](#client-side-how) beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsegångarna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
 
 * Stegen för att implementera kodbaserad kanal med **Mobile SDK** beskrivs i [den här självstudiekursen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
@@ -306,4 +306,4 @@ Begäranden till Adobe Experience Platform API krävs för att få förslag och 
 Om du har en hybridimplementering kan du kolla in länkarna nedan.
 
 * Adobe Tech Blog: [Hybrid Personalization i Adobe Experience Platform Web SDK](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}
-* SDK-dokumentation: [Hybrid-anpassning med API:t för Web SDK och Edge Network Server ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html?lang=sv-SE){target="_blank"}
+* SDK-dokumentation: [Hybrid-anpassning med API:t för Web SDK och Edge Network Server &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html?lang=sv-SE){target="_blank"}

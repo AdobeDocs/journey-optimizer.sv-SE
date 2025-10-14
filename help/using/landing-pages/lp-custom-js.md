@@ -24,7 +24,7 @@ Du kan definiera innehållet på landningssidan med anpassade JavaScript. Om du 
 
 Om du vill infoga anpassad JavaScript i startsidans innehåll kan du antingen göra följande:
 
-* Importera befintligt HTML-innehåll när du börjar skapa ditt innehåll och markera filen som innehåller din anpassade JavaScript-kod. Lär dig hur du importerar innehåll [ i det här avsnittet](../email/existing-content.md).
+* Importera befintligt HTML-innehåll när du börjar skapa ditt innehåll och markera filen som innehåller din anpassade JavaScript-kod. Lär dig hur du importerar innehåll [&#x200B; i det här avsnittet](../email/existing-content.md).
 
 * Utforma landningssidan från grunden eller från en sparad mall. Dra och släpp innehållskomponenten **[!UICONTROL HTML]** på arbetsytan och visa källkoden för att lägga till JavaScript i komponenten. Lär dig hur du använder komponenten HTML i [det här avsnittet](../email/content-components.md#HTML). <!--You can also simply switch the whole landing page content to code view and enter or paste your JavaScript code.-->
 
