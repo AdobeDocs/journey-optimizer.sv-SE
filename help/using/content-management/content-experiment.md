@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 397fad9c95e0c11c0496ab5c9adfb6f8169de4f6
+source-git-commit: e1e7badf7a0539d49b0eb1d9668f945503f84ba6
 workflow-type: tm+mt
-source-wordcount: '1746'
+source-wordcount: '1743'
 ht-degree: 0%
 
 ---
@@ -264,9 +264,9 @@ Så här aktiverar du automatisk skalförändring i dina experiment:
    * Så snart vinnaren hittas.
    * Efter att experimentet är live för den valda tiden.
 
-Tiden för automatisk skalförändring måste schemaläggas före experimentets slutdatum. Om det är inställt för en tid efter slutdatumet visas en valideringsvarning och kampanjen eller resan publiceras inte.
+   Tiden för automatisk skalförändring måste schemaläggas före experimentets slutdatum. Om det är inställt för en tid efter slutdatumet visas en valideringsvarning och kampanjen eller resan publiceras inte.
 
-    ![](assets/scale-winner-2.png)
+   ![](assets/scale-winner-2.png)
 
 1. Välj reservbeteendet om ingen vinnare hittas efter skaltid:
 
