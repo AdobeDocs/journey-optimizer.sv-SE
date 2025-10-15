@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 6e436424d0b7bd4f6172f4a4c00cc8c74c9570af
+source-git-commit: 0827bd0339b2574c1ded2e47e57af009326bdd0f
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1810'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 0%
 # Åtkomst och prenumeration på systemvarningar {#alerts}
 
 När du skapar resor och kampanjer använder du knappen **Varningar** för att kontrollera och åtgärda fel innan du kör eller publicerar dem.
-
-
 
 På den dedikerade **[!UICONTROL Alerts]**-menyn kan du även prenumerera på [!DNL Adobe Journey Optimizer] systemvarningar enligt informationen på den här sidan.
 
@@ -31,7 +29,7 @@ När ett fel inträffar kan du få systemvarningar i Journey Optimizer meddeland
 
 >[!NOTE]
 >
->Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
 Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Alerts]** på den vänstra menyn. Det finns flera förkonfigurerade varningar för Journey Optimizer.
 
@@ -76,7 +74,7 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en aviseri
 
 1. Använd samma metod för **[!UICONTROL Unsubscribe]**.
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
 
 ### Enhetsspecifik prenumeration {#unitary-subscription}
 
@@ -92,10 +90,7 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en viss re
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
-
-
-
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
 ## Resevarningar {#journey-alerts}
 
@@ -158,16 +153,30 @@ Den här varningen varnar dig om förhållandet mellan profilen och de angivna p
 
 Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
 
+Det finns flera orsaker till att en profil kan ignoreras, vilket informerar felsökningsmetoden. Några vanliga orsaker är:
+
+* Profilen ignoreras vid inträde eftersom den redan bor i den unitära resan. För att lösa detta måste du se till att profilen har tillräckligt med tid för att avsluta resan innan nästa händelse kommer för den profilen.
+* Identitet har inte angetts för profilen, eller så används inte namnutrymmet som används av läsarresan i den profilen. För att lösa detta måste namnutrymmet i resan matcha det identitetsnamnutrymme som används av profilerna.
+* Händelsens genomströmningshastighet har överskridits. För att lösa detta måste du se till att händelser som kommer in i systemet inte överskrider dessa gränser.
+
 
 ### Felfrekvens för anpassad åtgärd överskreds {#alert-custom-action-error-rate}
 
 Den här varningen varnar dig om förhållandet mellan anpassade åtgärdsfel och slutförda HTTP-anrop under de senaste 5 minuterna har överskridit tröskelvärdet. Standardtröskelvärdet är 20 %, men du kan [definiera en anpassad tröskel](#custom-threshold).
+
+Fel med anpassade åtgärder kan inträffa av flera olika anledningar. Du kan:
+
+* Kontrollera att den anpassade åtgärden är korrekt konfigurerad
+* Kontrollera att slutpunkten är nåbar och att den anpassade åtgärden kan nå den via den anpassade åtgärdsanslutningskontrollen
+* Verifiera autentiseringsuppgifterna, kontrollera Internetanslutningen osv.
 
 ### Profilfelsfrekvensen har överskridits {#alert-profile-error-rate}
 
 Den här varningen varnar dig om förhållandet mellan anpassade åtgärdsfel och slutförda HTTP-anrop under de senaste 5 minuterna har överskridit tröskelvärdet. Standardtröskelvärdet är 20 %, men du kan [definiera en anpassad tröskel](#custom-threshold).
 
 Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
+
+För att undvika detta kan du fråga data i steghändelser för att förstå var och varför profilen misslyckades under resan.
 
 ## Konfigurationsaviseringar {#configuration-alerts}
 
@@ -295,7 +304,6 @@ Om du vill lägga till fler prenumeranter anger du deras e-postadresser avgräns
 Om du vill ta bort prenumeranter tar du bort deras e-postadress från de aktuella prenumeranterna och väljer **[!UICONTROL Update]**.
 
 ## Ytterligare resurser {#additional-resources-alerts}
-
 
 * Lär dig hur du felsöker dina resor på [den här sidan](../building-journeys/troubleshooting.md).
 * Lär dig hur du granskar kampanjer på [den här sidan](../campaigns/review-activate-campaign.md).
