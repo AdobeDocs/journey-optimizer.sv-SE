@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: e1e7badf7a0539d49b0eb1d9668f945503f84ba6
+source-git-commit: 4f1ae3a812b75c180716c5af0d6f87ef58bc2a13
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1755'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,10 @@ Målet här är att se om mottagarna kommer att interagera med e-postmeddelandet
 >id="ajo_campaigns_content_experiment_success_metric"
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment. Var noga med att konfigurera datauppsättningen för vissa mätvärden innan du använder den."
+
+>[!AVAILABILITY]
+>
+>Direct Mail har stöd för funktionen Holdout, men för närvarande saknar stöd för Beställningar.
 
 Du kan välja mellan tre olika typer av experiment:
 

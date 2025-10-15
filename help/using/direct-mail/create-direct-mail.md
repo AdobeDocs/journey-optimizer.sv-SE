@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 9324de79b7a1e787c3a23338c4292cd4ff2bb6df
+source-git-commit: 4f1ae3a812b75c180716c5af0d6f87ef58bc2a13
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '720'
 ht-degree: 3%
 
 ---
@@ -32,6 +32,10 @@ Skapa en schemalagd kampanj och konfigurera extraheringsfilen om du vill skapa d
 
 
 ## Skapa en kampanj för direktreklam{#create-dm-campaign}
+
+>[!AVAILABILITY]
+>
+>Direct Mail har stöd för funktionen Holdout, men för närvarande saknar stöd för Beställningar.
 
 Så här skapar du en direktreklamkampanj:
 
