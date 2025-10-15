@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 074390ccd77d3753d9b347a67dcbad0611cb3e49
+source-git-commit: 0cace4defb2c52b729f1427e856b2fc87df5ec50
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1867'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Dessutom kan varningsmeddelanden skickas till alla användare i organisationen s
 
 >[!NOTE]
 >
->Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
 Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Alerts]** på den vänstra menyn. Flera förkonfigurerade varningar för Journey Optimizer finns tillgängliga på fliken **Bläddra**.
 
@@ -72,7 +72,7 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en aviseri
 
 1. Använd samma metod för **[!UICONTROL Unsubscribe]**.
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
 
 ### Enhetsspecifik prenumeration {#unitary-subscription}
 
@@ -80,7 +80,7 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en viss re
 
 1. Bläddra till reseinventeringen och välj alternativet **[!UICONTROL Subscribe to alerts]** för en viss resa.
 
-   ![Prenumerera på en avisering för en viss resa](assets/subscribe-journey-alert.png){width=80%}
+   ![Prenumerera på en avisering för en viss resa](assets/subscribe-journey-alert.png){width=75%}
 
 1. Välj aviseringar. Följande aviseringar är tillgängliga: [Profilens borttagningsfrekvens har överskridits](#alert-discard-rate), [Felfrekvens för anpassad åtgärd har överskridits](#alert-custom-action-error-rate) och [Profilens felfrekvens har överskridits](#alert-profile-error-rate).
 
@@ -88,13 +88,30 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en viss re
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
 ## Resevarningar {#journey-alerts}
+
+
+Alla resemeddelanden som är tillgängliga i användargränssnittet listas nedan.
 
 >[!CAUTION]
 >
 >Adobe Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge.
+
+### Det gick inte att läsa målutlösaren {#alert-read-audiences}
+
+Den här varningen varnar dig om en **Läs målgrupp**-aktivitet inte har bearbetat någon profil 10 minuter efter den schemalagda körningen. Felet kan bero på tekniska problem eller på att målgruppen är tom. Om det här felet orsakas av tekniska problem ska du vara medveten om att försök fortfarande kan göras, beroende på typ av problem (t.ex. om det inte går att skapa exportjobbet kommer vi att försöka igen var 10:e minut med maximalt 1 timme).
+
+![](assets/read-audience-alert.png)
+
+Varningar för **Läs målgruppsaktiviteter** gäller endast återkommande resor. **Läs målgruppsaktiviteter** i liveresor som har ett schema för att köra **En gång** eller **Så snart som möjligt** ignoreras.
+
+Varningar på **Läs målgrupp** löses när en profil kommer in i noden **Läs målgrupp** .
+
+Prenumerationsnamnet för I/O-händelsen som motsvarar aviseringen **Read Audience Trigger Unsuccess** är **Fördröjningar, fel och fel för läsningspubliken på resan**.
+
+Om du vill felsöka **Läs publikaviseringar** kontrollerar du antalet målgrupper i Experience Platform-gränssnittet.
 
 
 ### Fel i anpassad åtgärd för resa {#alert-custom-actions}
@@ -103,7 +120,8 @@ Den här varningen varnar dig om en anpassad åtgärd misslyckas. Vi anser att d
 
 Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
 
-![](assets/alerts-custom-action.png)
+<!--
+![](assets/alerts-custom-action.png)-->
 
 Varningar om anpassade åtgärder löses när, under de senaste fem minuterna:
 
@@ -115,41 +133,21 @@ Prenumerationsnamnet för en I/O-händelse som motsvarar den anpassade åtgärds
 
 Så här felsöker du **anpassade åtgärdsmeddelanden**:
 
-* Kontrollera din anpassade åtgärd med testläge på en annan resa:
+* Kontrollera din anpassade åtgärd med [testläge](../building-journeys/testing-the-journey.md) på en annan resa.
 
-  ![](assets/alert-troubleshooting-2.png)
-
-* Se felen i reserapporten.
-
-  ![](assets/alert-troubleshooting-3.png)
+* Kontrollera din [reserapport](../reports/journey-live-report.md) för att se felorsaker till åtgärden.
 
 * Kontrollera kundens resaHändelser för att hitta mer information om &quot;errorReason&quot;.
 
-* Kontrollera din konfiguration för anpassad åtgärd och verifiera att autentiseringen fortfarande är OK. Gör till exempel en manuell kontroll med Postman.
-
-### Det gick inte att läsa målutlösaren {#alert-read-audiences}
-
-Den här varningen varnar dig om en **Läs målgrupp**-aktivitet inte har bearbetat någon profil 10 minuter efter den schemalagda körningen. Felet kan bero på tekniska problem eller på att målgruppen är tom. Om det här felet orsakas av tekniska problem ska du vara medveten om att försök fortfarande kan göras, beroende på typ av problem (t.ex. om det inte går att skapa exportjobbet kommer vi att försöka igen var 10:e minut med maximalt 1 timme).
-
-![](assets/alerts1.png)
-
-Varningar för **Läs målgruppsaktiviteter** gäller endast återkommande resor. **Läs målgruppsaktiviteter** i liveresor som har ett schema för att köra **En gång** eller **Så snart som möjligt** ignoreras.
-
-Varningar på **Läs målgrupp** löses när en profil kommer in i noden **Läs målgrupp** .
-
-Prenumerationsnamnet för I/O-händelsen som motsvarar aviseringen **Read Audience Trigger Unsuccess** är **Fördröjningar, fel och fel för läsningspubliken på resan**.
-
-Om du vill felsöka **Läs publikaviseringar** kontrollerar du antalet målgrupper i Experience Platform-gränssnittet.
-
-![](assets/alert-troubleshooting-0.png)
-
-![](assets/alert-troubleshooting-1.png)
+* Kontrollera din konfiguration för anpassad åtgärd och verifiera att autentiseringen fortfarande är giltig. Gör till exempel en manuell kontroll med Postman.
 
 ### Frekvensen för ignorerade profiler har överskridits {#alert-discard-rate}
 
 Den här varningen varnar dig om förhållandet mellan profilen och de angivna profilerna har överskridits under de senaste 5 minuterna. Standardtröskelvärdet är 20 %, men du kan [definiera en anpassad tröskel](#custom-threshold).
 
 Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
+
+![](assets/profile-discard-alert.png)
 
 Det finns flera orsaker till att en profil kan ignoreras, vilket informerar felsökningsmetoden. Några vanliga orsaker är:
 
@@ -162,7 +160,7 @@ Det finns flera orsaker till att en profil kan ignoreras, vilket informerar fels
 
 Den här varningen varnar dig om förhållandet mellan anpassade åtgärdsfel och slutförda HTTP-anrop under de senaste 5 minuterna har överskridit tröskelvärdet. Standardtröskelvärdet är 20 %, men du kan [definiera en anpassad tröskel](#custom-threshold).
 
-Fel med anpassade åtgärder kan inträffa av flera olika anledningar. Du kan:
+Fel med anpassade åtgärder kan inträffa av flera olika anledningar. Om du vill felsöka felen kan du:
 
 * Kontrollera att den anpassade åtgärden är korrekt konfigurerad
 * Kontrollera att slutpunkten är nåbar och att den anpassade åtgärden kan nå den via den anpassade åtgärdsanslutningskontrollen
@@ -174,9 +172,11 @@ Den här varningen varnar dig om förhållandet mellan anpassade åtgärdsfel oc
 
 Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
 
-För att undvika detta kan du fråga data i steghändelser för att förstå var och varför profilen misslyckades under resan.
+Om du vill felsöka profilfel kan du fråga data i steghändelser för att förstå var och varför profilen misslyckades under resan.
 
 ## Konfigurationsaviseringar {#configuration-alerts}
+
+Varningar för kanalkonfigurationsövervakning som finns i användargränssnittet visas nedan.
 
 ### DNS-post för AJO-domän saknas {#alert-dns-record-missing}
 
