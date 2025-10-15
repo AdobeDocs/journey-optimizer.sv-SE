@@ -39,7 +39,7 @@ För att öka marknadsföringens effektivitet och upprätthålla varumärkets en
 
 >[!INFO]
 >
->Mer information finns i [översikten](https://business.adobe.com/products/genstudio-for-performance-marketing.html#watch-overview){target="_blank"} och i [demon](https://business.adobe.com/products/genstudio-for-performance-marketing.html#demo){target="_blank"} av [!DNL Adobe GenStudio for Performance Marketing].
+>Mer information finns i [översikten](https://business.adobe.com/se/products/genstudio-for-performance-marketing.html#watch-overview){target="_blank"} och i [demon](https://business.adobe.com/se/products/genstudio-for-performance-marketing.html#demo){target="_blank"} av [!DNL Adobe GenStudio for Performance Marketing].
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
