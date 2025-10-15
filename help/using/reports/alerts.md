@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 34649ab411823f1aa09d390d23484697e80763c5
+source-git-commit: 6e436424d0b7bd4f6172f4a4c00cc8c74c9570af
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1624'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ När ett fel inträffar kan du få systemvarningar i Journey Optimizer meddeland
 
 >[!NOTE]
 >
->Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
 Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Alerts]** på den vänstra menyn. Det finns flera förkonfigurerade varningar för Journey Optimizer.
 
@@ -41,9 +41,9 @@ De listas nedan och varje varning beskrivs nedan.
 
    * aviseringen [Fel vid anpassad åtgärd för resan](#alert-custom-actions)
    * aviseringen [Läs målutlösaren misslyckades](#alert-read-audiences)
-<!--DOCAC-13465   * the [Profile Discard Rate Exceeded](#alert-discard-rate) alert
-   * the [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate) alert
-   * the [Profile Error Rate Exceeded](#alert-profile-error-rate) alert-->
+   * varningen [Profilens ignoreringsfrekvens har överskridits](#alert-discard-rate)
+   * aviseringen [Felfrekvens för anpassad åtgärd överskreds](#alert-custom-action-error-rate)
+   * [Profilens felfrekvens överskreds](#alert-profile-error-rate)-varningen
 
 * Aviseringar som är specifika för kanalkonfigurationen:
 
@@ -55,7 +55,7 @@ De listas nedan och varje varning beskrivs nedan.
 
 Om ett oväntat beteende inträffar och/eller om vissa villkor i åtgärderna har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som prenumererar på dem.
 
-Du kan prenumerera på varje varning individuellt från användargränssnittet, antingen globalt på menyn **[!UICONTROL Alerts]** (se [Global prenumeration](#global-subscription))<!--DOCAC-13465, or unitary for a specific journey (see [Unitary subscription](#unitary-subscription))-->.
+Du kan prenumerera på varje avisering individuellt från användargränssnittet, antingen globalt på menyn **[!UICONTROL Alerts]** (se [Global prenumeration](#global-subscription)) eller enhetsspecifikt för en viss resa (se [Unitär prenumeration](#unitary-subscription)).
 
 Beroende på prenumerantens önskemål skickas varningar via e-post och/eller direkt i Journey Optimizer meddelandecenter i det övre högra hörnet av användargränssnittet (meddelanden i appen). Välj hur du vill få dessa aviseringar i [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Läs mer](../start/user-interface.md#in-product-alerts)
 
@@ -76,25 +76,23 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en aviseri
 
 1. Använd samma metod för **[!UICONTROL Unsubscribe]**.
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
 
-<!--DOCAC-13465
-### Unitary subscription {#unitary-subscription}
+### Enhetsspecifik prenumeration {#unitary-subscription}
 
-To subscribe/unsubscribe to an alert for a specific journey, follow these steps:
+Följ de här stegen för att prenumerera/avbryta prenumerationen på en viss resa:
 
-1. Browse to the journey inventory and select the **[!UICONTROL Subscribe to alerts]** option for a specific journey.
+1. Bläddra till reseinventeringen och välj alternativet **[!UICONTROL Subscribe to alerts]** för en viss resa.
 
-      ![Subscribing to an alert for a specific journey](assets/subscribe-journey-alert.png){width=80%}
+   ![Prenumerera på en avisering för en viss resa](assets/subscribe-journey-alert.png){width=80%}
 
-1. Choose the alert(s). The following alerts are available: [Profile Discard Rate Exceeded](#alert-discard-rate), [Custom Action Error Rate Exceeded](#alert-custom-action-error-rate), and [Profile Error Rate Exceeded](#alert-profile-error-rate).
-   
-1. To unsubscribe to an alert, unselect it from the same screen.
+1. Välj aviseringar. Följande aviseringar är tillgängliga: [Profilens borttagningsfrekvens har överskridits](#alert-discard-rate), [Felfrekvens för anpassad åtgärd har överskridits](#alert-custom-action-error-rate) och [Profilens felfrekvens har överskridits](#alert-profile-error-rate).
 
-1. Click **[!UICONTROL Save]** to confirm.
--->
+1. Om du vill avbryta prenumerationen på en varning avmarkerar du den på samma skärm.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
+1. Klicka på **[!UICONTROL Save]** för att bekräfta.
+
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
 
 
@@ -154,25 +152,22 @@ Om du vill felsöka **Läs publikaviseringar** kontrollerar du antalet målgrupp
 
 ![](assets/alert-troubleshooting-1.png)
 
-<!--DOCAC-13465
+### Frekvensen för ignorerade profiler har överskridits {#alert-discard-rate}
 
-### Profile Discard Rate Exceeded {#alert-discard-rate}
+Den här varningen varnar dig om förhållandet mellan profilen och de angivna profilerna har överskridits under de senaste 5 minuterna. Standardtröskelvärdet är 20 %, men du kan [definiera en anpassad tröskel](#custom-threshold).
 
-This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
-
-Click the name of the alert to check the alert details and configuration.
+Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
 
 
-### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
+### Felfrekvens för anpassad åtgärd överskreds {#alert-custom-action-error-rate}
 
-This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+Den här varningen varnar dig om förhållandet mellan anpassade åtgärdsfel och slutförda HTTP-anrop under de senaste 5 minuterna har överskridit tröskelvärdet. Standardtröskelvärdet är 20 %, men du kan [definiera en anpassad tröskel](#custom-threshold).
 
-### Profile Error Rate Exceeded {#alert-profile-error-rate}
+### Profilfelsfrekvensen har överskridits {#alert-profile-error-rate}
 
-This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The defaut threshold is set to 20% but you can [define a custom theshold](#custom-threshold).
+Den här varningen varnar dig om förhållandet mellan anpassade åtgärdsfel och slutförda HTTP-anrop under de senaste 5 minuterna har överskridit tröskelvärdet. Standardtröskelvärdet är 20 %, men du kan [definiera en anpassad tröskel](#custom-threshold).
 
-Click the name of the alert to check the alert details and configuration.
--->
+Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
 
 ## Konfigurationsaviseringar {#configuration-alerts}
 
@@ -254,29 +249,26 @@ This alert warns you if a domain certificate (CDN, tracking URL) renewal failed 
 ### Redigera en varning
 
 Du kan kontrollera information om en varning genom att klicka på raden. Namn, status och meddelandekanaler visas i den vänstra panelen.
-<!--DOCAC-13465
-For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. You can then define a [custom theshold](#custom-threshold) for these alerts.-->
+Använd knappen **[!UICONTROL More actions]** för att redigera researney-aviseringar. Du kan sedan definiera en [anpassad spärr](#custom-threshold) för dessa aviseringar.
 
 ![](assets/alert-more-actions.png){width=60%}
 
-<!--DOCAC-13465
-#### Define a custom threshold {#custom-threshold}
+#### Definiera ett anpassat tröskelvärde {#custom-threshold}
 
-You can set thresholds for the [Journey alerts](#journey-alerts). The threshold alerts above default to 20%. 
+Du kan ange tröskelvärden för [reseaviseringar](#journey-alerts). Tröskelvärdesvarningarna över standardvärdet är 20 %.
 
-To change the threshold:
+Så här ändrar du tröskelvärdet:
 
-1. Browse to the **Alerts** screen
-1. Click the **[!UICONTROL More actions]** button of the alert to update
-1. Enter the new threshold and confirm. The new threshold applies to **all** journeys
+1. Bläddra till skärmen **Varningar**
+1. Klicka på knappen **[!UICONTROL More actions]** för aviseringen för att uppdatera
+1. Ange det nya tröskelvärdet och bekräfta. Det nya tröskelvärdet gäller för **alla** resor
 
 
 ![](assets/alert-threshold.png){width=60%}
 
 >[!CAUTION]
 >
->The threshold levels are global across all journeys and cannot be individually modified per journey.
--->
+>Tröskelvärdena är globala för alla resor och kan inte ändras individuellt per resa.
 
 ### Inaktivera en varning
 
