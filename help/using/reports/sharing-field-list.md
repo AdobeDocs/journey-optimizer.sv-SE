@@ -8,10 +8,10 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
-source-git-commit: 97c1d0f2e9f8100f70d5c4e40325abddc5e3dfbd
+source-git-commit: f9102c10aa58be0e1a7280aa53fd97b3f792b9e9
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -83,18 +83,30 @@ När du frågar efter steg för resa för poster med `eventCode = 'discard'` kan
 
 Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligaste kastet `eventTypes`:
 
-* **EXTERNAL_KEY_COMPUTATION_ERROR**: Det gick inte att beräkna en unik identifierare (extern nyckel) för kunden utifrån händelsedata.
-   * Vanliga orsaker: Kundidentifierare som saknas eller har fel format (t.ex. e-post, kund-ID) i händelsens nyttolast.
-   * Felsökning: Kontrollera händelsekonfigurationen för nödvändiga identifierare och se till att händelsedata är fullständiga och korrekt formaterade.
-* **NO_INTERESTED_JOURNEYS_FOR_SEGMENTMEMBERSHIP_EVENT**: En segmentkvalificeringshändelse togs emot, men inga resor har konfigurerats för att svara på det här segmentet.
-   * Vanliga orsaker: Inga resor använder segmentet som utlösare, resor är i utkastläge/stoppat tillstånd eller så matchar inte segment-ID:n.
-   * Felsökning: Kontrollera att minst en resa är live och konfigurerad för segmentet och bekräfta segment-ID:n.
-* **JOURNEY_INSTANCE_ID_NOT_CREATE**: Det gick inte att skapa en reseinstans för kunden.
-   * Vanliga orsaker: Dubbletthändelser, hög händelsemängd, begränsningar för systemresurser.
-   * Felsökning: Implementera borttagning av dubbletter, undvik trafiktoppar, optimera resedesignen, kontakta supporten om den är permanent.
-* **EVENT_WITH_NO_JOURNEY**: En händelse togs emot men ingen aktiv resa har konfigurerats för att svara på den.
-   * Vanliga orsaker: Händelsenamn/ID-matchningsfel, resan har inte publicerats, fel sandlåda/organisation, testläge/profil matchar inte.
-   * Felsökning: Verifiera händelse- och resekonfiguration, kontrollera resans status, använd felsökningsverktyg.
+* EXTERNAL_KEY_COMPUTATION_ERROR: Det gick inte att beräkna en unik identifierare (extern nyckel) för kunden från händelsedata.
+
+|---|---|
+| **Vanliga orsaker** | Kundidentifierare som saknas eller är felformaterade (t.ex. e-post, kund-ID) i händelsenyttolasten. |
+| **Felsökning** | Kontrollera om händelsekonfigurationen innehåller nödvändiga identifierare och se till att händelsedata är fullständiga och korrekt formaterade. |
+
+* NO_INTERESTED_JOURNEYS_FOR_SEGMENTMEMBERSHIP_EVENT: En segmentkvalificeringshändelse togs emot, men inga resor har konfigurerats för att svara på det här segmentet.
+
+
+|---|---|
+| **Vanliga orsaker** | Inga resor använder segmentet som utlösare, resor är i utkastläge/stoppat tillstånd eller så matchar inte segment-ID:n. |
+| **Felsökning** | Kontrollera att minst en resa är live och konfigurerad för segmentet genom att verifiera segment-ID:n. |
+
+### JOURNEY_INSTANCE_ID_NOT_CREATE: Det gick inte att skapa en reseinstans för kunden.
+
+|---|---|
+| **Vanliga orsaker** | Dubbletthändelser, stor händelsemängd, begränsningar för systemresurser. |
+| **Felsökning** | Implementera borttagning av dubbletter, undvik trafiktoppar, optimera resedesignen, kontakta supporten om den är permanent. |
+
+### EVENT_WITH_NO_JOURNEY: En händelse togs emot men ingen aktiv resa har konfigurerats för att svara på den
+
+|---|---|
+| **Vanliga orsaker** | Händelsenamn/ID matchar inte, resan har inte publicerats, fel sandlåda/organisation, testläge/profil matchar inte. |
+| **Felsökning** | Verifiera händelse- och resekonfiguration, kontrollera resans status, använd felsökningsverktyg. |
 
 För utkast under pausade resor:
 
@@ -107,5 +119,5 @@ Läs mer om de här händelserna och hur du felsöker dem i [Pausa en resa](../b
 
 * [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
 * [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
-* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 
