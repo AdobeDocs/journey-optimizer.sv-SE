@@ -6,7 +6,7 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: b08f996d9871f59665c2d329b493fd6e61030fac
+source-git-commit: 98202be781bec0b03a9a9f33e93f1b01b7830a37
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 0%
@@ -212,7 +212,6 @@ Klicka på ikonen `...` för att visa beskrivningen av funktionen och lägga til
         <td><a href="dates.md#diff-years">Årets skillnad</a></td><td>Den här funktionen returnerar skillnaden mellan två datum i termer av år.</td>
     </tr>
 </table>
-</table>
 
 ### Kartfunktioner {#map-functions}
 
@@ -247,7 +246,7 @@ Klicka på ikonen `...` för att visa beskrivningen av funktionen och lägga til
         <td><a href="math.md#round-up">Avrunda uppåt</a></td><td>Den här funktionen avrundar ett tal</td>
     </tr>
     <tr>
-    <td><a href="math.md#to-hex-string">Till hexadecimal sträng</a></td><td>konverterar alla tal till sin hexadecimala sträng.</td>
+    <td><a href="math.md#to-hex-string">Till hexadecimal sträng</a></td><td>Konverterar alla tal till dess hexadecimala sträng.</td>
     </tr>
     <tr>
     <td><a href="math.md#to-int">ToInt</a></td><td>Konverterar alla dessa typer (tal, double, int, long, float, short, byte, boolean, string) till ett heltal.</td>

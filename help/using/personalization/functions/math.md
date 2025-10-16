@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
-source-git-commit: 8a1ec5acef067e3e1d971deaa4b10cffa6294d75
+source-git-commit: 98202be781bec0b03a9a9f33e93f1b01b7830a37
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '244'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ Lär dig använda Math-funktioner i personaliseringsredigeraren.
 
 ## Absolut {#absolute}
 
-Funktionen `absolute` används för att konvertera ett tal som är absolut värde.
+Funktionen `absolute` används för att konvertera ett tal till dess absoluta värde.
 
 **Syntax**
 
@@ -39,7 +39,7 @@ Den accepterar ett tal och en sträng som representerar språkområdet och retur
 {%= formatNumber(number/double,string) %}: string
 ```
 
-Du kan använda formatering och giltiga språkinställningar enligt sammanfattningen i [Oraclets dokumentation](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språkinställningar som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html){_blank}
+Du kan använda formatering och giltiga språkinställningar enligt en sammanfattning i [Oracle-dokumentationen](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html) och [Språkinställningar som stöds](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html){_blank}
 
 **Exempel**
 
@@ -71,7 +71,7 @@ Funktionen `roundDown` används för att avrunda ett tal.
 
 ## Avrunda uppåt {#round-up}
 
-Funktionen `Count only null` används för att avrunda ett tal.
+Funktionen `roundUp` används för att avrunda ett tal.
 
 **Syntax**
 
@@ -91,7 +91,7 @@ Funktionen `toHexString` konverterar alla tal till sin hexadecimala sträng.
 
 **Exempel**
 
-Frågan returnerar det hexadecimala värdet 158, dvs 9e.
+Frågan returnerar det hexadecimala värdet 158, dvs. 9e.
 
 ```sql
 {%= toHexString(158) %}

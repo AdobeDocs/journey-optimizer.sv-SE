@@ -6,9 +6,9 @@ topic: Personalization
 role: Data Engineer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: ed4d50cbc488fb396c4fffec21d3f0062d3fc20a
+source-git-commit: 98202be781bec0b03a9a9f33e93f1b01b7830a37
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1034'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ Funktionen `addHours` justerar ett givet datum med ett angivet antal timmar, och
 
 ## Lägg till minuter {#add-minutes}
 
-Funktionen `addMinutes` justerar ett givet datum med ett angivet antal minuter, och använder positiva värden för att öka och negativa värden för minskning
+Funktionen `addMinutes` justerar ett givet datum med ett angivet antal minuter och använder positiva värden för att öka och negativa värden för minskning.
 
 **Syntax**
 
@@ -87,7 +87,7 @@ Funktionen `addMonths` justerar ett givet datum med ett angivet antal månader o
 
 ## Lägg till sekunder {#add-seconds}
 
-`addSeconds` justerar ett givet datum med ett angivet antal sekunder och använder positiva värden för att öka och negativa värden för att minska.
+Funktionen `addSeconds` justerar ett givet datum med ett angivet antal sekunder och använder positiva värden för att öka och negativa värden för minskning.
 
 **Syntax**
 
@@ -104,7 +104,7 @@ Funktionen `addMonths` justerar ett givet datum med ett angivet antal månader o
 
 ## Lägg till år {#add-years}
 
-`addYears` justerar ett givet datum med ett angivet antal år, och använder positiva värden för att öka och negativa värden för minskning.
+Funktionen `addYears` justerar ett givet datum med ett angivet antal år och använder positiva värden för att öka och negativa värden för minskning.
 
 **Syntax**
 
@@ -253,7 +253,7 @@ The following operation gets all the values for the map `identityMap`.
 
 ## Dag i månaden {#day-month}
 
-`dayOfWeek` returnerar talet som representerar dagen i månaden.
+`dayOfMonth` returnerar talet som representerar dagen i månaden.
 
 **Syntax**
 
@@ -355,7 +355,7 @@ Funktionen `extractMinutes` extraherar minutkomponenten från en given tidsstäm
 
 +++Exempel
 
-* Indata: `{%= extractMinute(stringToDate("2024-11-01T17:19:51Z"))%}`
+* Indata: `{%= extractMinutes(stringToDate("2024-11-01T17:19:51Z"))%}`
 * Utdata: `19`
 
 +++
@@ -639,7 +639,7 @@ Funktionen `truncateToStartOfWeek` ändrar ett visst datum/tid genom att ställa
 
 +++Exempel
 
-* Indata: `truncateToStartOfWeek(stringToDate("2024-11-19T17:19:51Z"))%} // tuesday`
+* Indata: `{%= truncateToStartOfWeek(stringToDate("2024-11-19T17:19:51Z"))%} // tuesday`
 * Utdata: `2024-11-18T00:00Z // monday`
 
 +++
