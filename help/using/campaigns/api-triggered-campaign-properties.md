@@ -8,13 +8,13 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
-source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+exl-id: bda7e337-a246-4f01-b935-4a234d4c4baa
+source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 1%
 
 ---
-
 
 # Definiera API-utlösta kampanjegenskaper {#api-properties}
 

@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: fed96e48-2e54-4bd4-ae17-77434d1b90eb
-source-git-commit: ed00ef1f9aad7a9baf16b806e1cbffae677b2a91
+source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
    >[!NOTE]
    >
-   >Kanaler som stöds är: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [&rbrace;Kodbaserade upplevelser](../code-based/get-started-code-based.md).
+   >Kanaler som stöds är: [Email](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md), [WhatsApp](../whatsapp/get-started-whatsapp.md), [LINE](../line/get-started-line.md), [Direct mail](../direct-mail/get-started-direct-mail.md), [In-App](../in-app/get-started-in-app.md), [Web](../web/get-started-web.md), [}Kodbaserade upplevelser](../code-based/get-started-code-based.md).
    >
    >Vilka kanaler som är tillgängliga varierar beroende på licensmodell och tillägg.
 
@@ -71,13 +71,13 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
 +++**Tilldela prioritetspoäng** (webb, i appen, kodbaserad)
 
-Om du tilldelar en prioritetspoäng till kampanjen kan du prioritera en inkommande kampanj när det finns en begränsning, till exempel ett frekvenstak. Ange ett numeriskt värde (från 0-100). Observera att ju högre tal desto högre prioritet. [Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer](../conflict-prioritization/priority-scores.md)
+Om ni tilldelar kampanjens prioritetspoäng kan ni prioritera en inkommande kampanj när det finns en begränsning, till exempel ett frekvenstak. Ange ett numeriskt värde (från 0-100). Observera att ju högre tal desto högre prioritet. [Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer](../conflict-prioritization/priority-scores.md)
 
 +++
 
@@ -104,9 +104,9 @@ För att förenkla er kampanjsamordning kan ni definiera flera inkommande åtgä
 
 >[!NOTE]
 >
->Den här kapaciteten är endast tillgänglig för inkommande kanaler. För närvarande stöds inte utgående kanaler som e-post.
+>Den här funktionen är bara tillgänglig för inkommande kanaler. För närvarande stöds inte utgående kanaler som e-post.
 
-Med den här kapaciteten kan ni leverera olika kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, utan att behöva skapa flera kampanjer. Det gör driftsättningen av er kampanj enklare och ger smidigare rapportering, med alla data samlade i en enda kampanj.
+Med den här funktionen kan ni leverera olika kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, utan att behöva skapa flera kampanjer. Det gör driftsättningen av er kampanj enklare och ger smidigare rapportering, med alla data samlade i en enda kampanj.
 
 Du kan till exempel skicka en kodbaserad upplevelse till flera slutpunkter med något annorlunda innehåll. Det gör du genom att skapa flera kodbaserade åtgärder inom samma kampanj, där var och en har olika slutpunktskonfigurationer.
 

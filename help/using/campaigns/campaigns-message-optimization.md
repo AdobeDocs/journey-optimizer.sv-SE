@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 keywords: kampanjoptimering, experiment, målinriktning, A/B-testning
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
-source-git-commit: 1c47c89ae86844399240d48c4d19f834d90c7598
+source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Följ stegen nedan för att konfigurera målinriktning.
 
    ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Välj alternativet **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när inga målinriktningsregler är kvalificerade.
+1. Välj alternativet **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när ingen målinriktningsregel är kvalificerad.
 
    >[!NOTE]
    >
@@ -144,7 +144,7 @@ Följ kampanjens framgångar med rapporterna om [kundresan](../reports/journey-g
 
 Med Journey Optimizer kan ni också kombinera målgruppsanpassning och experiment i en enda resa eller kampanj för att skapa mer sofistikerade strategier.
 
-Ni kan faktiskt använda målinriktning för att skapa flera olika varianter, och för varje variant kan ni använda experimenterande för att optimera varje innehåll ytterligare. Detta garanterar att experimenten är specifika för varje målinriktningsregel och inte sträcker sig över flera varianter.
+Ni kan faktiskt använda målinriktning för att skapa flera olika varianter, och för varje variant kan ni använda experiment för att optimera varje innehåll ytterligare. Detta garanterar att experimenten är specifika för varje målinriktningsregel och inte sträcker sig över flera varianter.
 
 Du kan till exempel testa&quot;50 % rabatt&quot; jämfört med ett presentkort på&quot;$50&quot; för kunder i USA och göra ett annat test för kunder i Europa, till exempel&quot;fri frakt på beställningar över €&quot; jämfört med&quot;20 % rabatt på nästa köp&quot;.
 
@@ -186,4 +186,4 @@ E.g. explaining how a marketer can look at the report to determine which treatme
 
 Lär dig hur ni utnyttjar meddelandeoptimering i praktiken eller API-utlösta kampanjer. Ni får se hur ni kan rikta in er på undergrupper, skapa meddelandevarianter efter plats, aktivera reservinnehåll och köra flera experiment inom en och samma kampanj. Den här självstudiekursen handlar också om hur du hanterar flerkanalskampanjer samtidigt som du bibehåller meddelandets enhetlighet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470372?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)

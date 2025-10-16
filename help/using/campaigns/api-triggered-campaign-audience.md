@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 6dda5687-3742-4e88-be7c-c4969b183161
-source-git-commit: be07b0dfec31d23f741bfc2a9f89fe1a7891ef0b
+source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '473'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Använd fliken **[!UICONTROL Audience]** för att definiera kampanjens målgrupp
 
 ## Välj identitetstyp
 
-I fältet **[!UICONTROL Identity type]** väljer du vilken typ av nyckel som ska användas för att identifiera personer från den valda målgruppen. Du kan antingen använda en befintlig identitetstyp eller skapa en ny med hjälp av Adobe Experience Platform identitetstjänst. Standardidentitetsnamnutrymmen visas på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces#standard){target="_blank"}.
+I fältet **[!UICONTROL Identity type]** väljer du vilken typ av nyckel som ska användas för att identifiera personer från den valda målgruppen. Du kan antingen använda en befintlig identitetstyp eller skapa en ny med hjälp av Adobe Experience Platform identitetstjänst. Standardidentitetsnamnutrymmen visas på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#standard){target="_blank"}.
 
 Endast en identitetstyp tillåts per kampanj. Individer som tillhör ett segment som inte har den valda identitetstypen bland sina olika identiteter kan inte omfattas av kampanjen. Läs mer om identitetstyper och namnutrymmen i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=sv){target="_blank"}.
 

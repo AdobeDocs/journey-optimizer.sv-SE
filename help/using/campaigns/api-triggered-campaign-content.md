@@ -8,13 +8,13 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
-source-git-commit: 1bdba8c5c1a9238d351b159551f6d3924935b339
+exl-id: b7f12c65-c1af-4c49-b126-c13a51940a43
+source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # Redigera API-utlöst kampanjinnehåll {#api-content}
 
@@ -49,7 +49,7 @@ Observera att det för närvarande inte finns något sammanhangsberoende attribu
 
 **Måste läsa**
 
-* Kontextattributen som skickas till begäran får inte överstiga 200 kB och är alltid av typen sträng.
+* Kontextattributen som skickas till begäran får inte överstiga 200 kB och betraktas alltid som en typ av sträng.
 * Syntaxen `context.system` är begränsad till Adobe enbart för intern användning och ska inte användas för att skicka kontextuella attribut.
 * Till skillnad från profilaktiverade händelser används kontextdata som skickas i REST API för engångskommunikation och lagras inte mot profil. Profilen skapas med namnutrymmesinformationen om den saknas.
 * Om du använder ett stort antal eller stora sammanhangsberoende data i ditt innehåll kan det påverka prestanda.

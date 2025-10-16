@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 801b90201c3ffcbfb7b038abac2bf99209a14c7a
+source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 1%
@@ -115,7 +115,7 @@ Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den söm
 
 >[!TAB API-utlösta kampanjer]
 
-**API-utlösta kampanjer** gör att du kan utlösa kampanjkörningen med ett API-anrop. Dessa meddelanden kan skickas där behovet av personalisering kan innebära, inte bara genom att ett profilattribut för lösenordsåterställning återställs, utan även kontextdata i realtid i utlösaren, som är en REST API-nyttolast.
+**API-utlösta kampanjer** gör att du kan utlösa kampanjkörningen med ett API-anrop. Dessa meddelanden kan skickas där behovet av personalisering kan innebära, inte bara genom ett lösenordsåterställningsprofilattribut, utan även kontextdata i realtid i utlösaren, som är en REST API-nyttolast.
 
 * **API utlöstes - Marketing** - Skicka personaliserad marknadsföringskommunikation till målgrupper.
 * **API har utlösts - Transactional** - Skicka meddelanden efter en åtgärd som har utförts av en individ, t.ex. en begäran om återställning av lösenord, ett kundvagnsinköp.
@@ -164,9 +164,9 @@ Innan du arbetar med kampanjer måste du kontrollera att du har granskat villkor
 
    1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
 
-   1. Ange användarens namn eller e-postadress eller markera användaren i listan och klicka på **[!UICONTROL Save]**.
+   1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
