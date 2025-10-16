@@ -25,7 +25,7 @@ Genom att utnyttja dessa verktyg kan ni säkerställa smidigare och mer målinri
 
 Med **konfliktidentifieringsverktyget** kan du identifiera potentiella överlappningar i resor och kampanjer. Detta är avgörande eftersom alltför många samtidiga kommunikationer kan leda till att kunderna blir trötta. Med Journey Optimizer kan du övervaka element som tidslinjer, målgruppsöverlappning och kanalkonfigurationer. Genom att identifiera konflikter tidigt kan ni förfina era kampanjer för att undvika att bombardera kunder med flera meddelanden samtidigt.
 
-➡️ [Lär dig hur du upptäcker potentiella konflikter i resor och kampanjer ](conflicts.md)
+➡️ [Lär dig hur du upptäcker potentiella konflikter i resor och kampanjer &#x200B;](conflicts.md)
 
 ### Prioritetspoäng
 
