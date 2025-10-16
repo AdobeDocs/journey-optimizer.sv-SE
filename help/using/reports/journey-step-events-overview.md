@@ -180,7 +180,7 @@ Använd händelsemönster för kundstegshändelser för att:
 ### Dokumentationslänkar {#documentation-links}
 
 - **[Översikt över delning av resesteg](sharing-overview.md)**: Förstå hur resedata flödar till Adobe Experience Platform
-- **[Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)**: Fullständig XDM-schemareferens
+- **[Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)**: Fullständig XDM-schemareferens
 - **[Journey Optimizer-rapportering](report-gs-cja.md)**: Översikt över rapportfunktioner i Journey Optimizer
 
 ### Integreringsguider {#integration-guides}
