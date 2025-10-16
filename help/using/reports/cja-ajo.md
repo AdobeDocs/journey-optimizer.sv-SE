@@ -25,7 +25,7 @@ I följande avsnitt beskrivs hur du manuellt kan utnyttja Journey Optimizer-gene
 
 När du har skapat din resa i [!DNL Journey Optimizer] kan du importera dina kunddata till [!DNL Customer Journey Analytics] för att starta rapporter och förstå effekten av varje interaktion en kund har med dina resor.
 
-➡️ [Upptäck Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#manually-configure-a-data-view-to-be-used-with-journey-optimizer){target="_blank"}
+➡️ [Upptäck Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/integrations/ajo#manually-configure-a-data-view-to-be-used-with-journey-optimizer){target="_blank"}
 
 >[!NOTE]
 >
@@ -34,16 +34,16 @@ När du har skapat din resa i [!DNL Journey Optimizer] kan du importera dina kun
 
 Innan du använder [!DNL Customer Journey Analytics] för dina resor måste du konfigurera den här integreringen:
 
-1. [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) i [!DNL Customer Journey Analytics] med de **[!UICONTROL Dataset]** som du vill skicka till Adobe Experience Platform.
+1. [Skapa en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=sv-SE) i [!DNL Customer Journey Analytics] med de **[!UICONTROL Dataset]** som du vill skicka till Adobe Experience Platform.
 
    Följande [!DNL Journey Optimizer] kan konfigureras:
    * [Resestegshändelse](../data/datasets-query-examples.md#journey-step-event): gör att du kan visa vem som kommer in på dina resor och hur långt de kommer.
    * [Datauppsättningar för meddelandefeedback/spårning](../data/datasets-query-examples.md#message-feedback-event-dataset): gör att du kan visa leveransinformation om meddelanden som skickas via [!DNL Journey Optimizer].
    * [Enhet- och resedatamängder](../data/datasets-query-examples.md#entity-dataset): gör att du kan söka efter egna namn och använda dem i din rapportering.
 
-1. [Skapa en datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) för att konfigurera de dimensioner och mått som du vill använda för rapporten.
+1. [Skapa en datavy](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=sv-SE) för att konfigurera de dimensioner och mått som du vill använda för rapporten.
 
-   Ni kan skapa Journey Optimizer-specifika mätvärden för att bättre återspegla era resedata. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/ajo.html#configure-the-data-view-to-accommodate-journey-optimizer-dimensions-and-metrics)
+   Ni kan skapa Journey Optimizer-specifika mätvärden för att bättre återspegla era resedata. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/ajo.html?lang=sv-SE#configure-the-data-view-to-accommodate-journey-optimizer-dimensions-and-metrics)
 
 Användning av [!DNL Journey Optimizer] med [!DNL Customer Journey Analytics] kan leda till vissa avvikelser i rapporteringsdata som orsakas av:
 

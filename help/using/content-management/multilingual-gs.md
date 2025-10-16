@@ -52,7 +52,7 @@ Om du har frågor eller vill ha hjälp med dina översättningar kontaktar du ti
 
 För det flerspråkiga innehållet måste följande inställningar definieras:
 
-* Om du vill använda översättningsfunktionen i Journey Optimizer måste du tilldela API till motsvarande roll. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
+* Om du vill använda översättningsfunktionen i Journey Optimizer måste du tilldela API till motsvarande roll. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
 
 * Om du vill börja skapa flerspråkigt innehåll måste användarna ha behörighet **[!UICONTROL Manage Language settings]**. För automatiserat flöde behöver användare även behörigheter som är relaterade till **[!UICONTROL Translation Service]**-funktionerna. [Läs mer om behörigheter](../administration/permissions.md)
 
@@ -74,7 +74,7 @@ För det flerspråkiga innehållet måste följande inställningar definieras:
 
    1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-   1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+   1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
 
   +++
 
