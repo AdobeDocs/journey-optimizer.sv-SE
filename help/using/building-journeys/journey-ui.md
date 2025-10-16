@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 version: Journey Orchestration
-source-git-commit: 12ece43b9a52150baa71fab09653c6212aea6643
+source-git-commit: 118bf89f56d26213fde71fa795fc6576ce764ef2
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1412'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ Resans status beror på dess livscykel. Den kan vara:
 
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
 * **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** . [Läs mer](../building-journeys/testing-the-journey.md)
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [&#128279;](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
 * **Live**: resan har publicerats med knappen **Publicera** . [Läs mer](../building-journeys/publishing-the-journey.md)
 * **Pausad**: den aktiva resan har pausats med knappen **Paus** . [Läs mer](../building-journeys/journey-pause.md)
 * **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt. [Läs mer](../building-journeys/end-journey.md#stop-a-journey)
@@ -148,7 +148,7 @@ Resans status beror på dess livscykel. Den kan vara:
 
 >[!NOTE]
 >
->* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **&rbrace;Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+>* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **}Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
 >
 >* Om du behöver ändra till en **Live**-resa [skapar du en ny version](#journey-versions) av din resa. Du kan även pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst. [Läs mer om att pausa resor](../building-journeys/journey-pause.md)
 
