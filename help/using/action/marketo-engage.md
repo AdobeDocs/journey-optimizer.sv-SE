@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: marknadsföring, marknadsföra, engagera integreringen
 exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
-source-git-commit: dec575162b6db7e7d4f32f5f170de9673b979e5c
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -118,6 +118,6 @@ Så här använder du den:
 
 1. Ange etiketten och beskrivningen för den här åtgärden.
 
-1. I avsnittet **Begäranparametrar** klickar du på ikonen **Redigera** för var och en av parametrarna och anger de dynamiska värden som du har konfigurerat i nyttolasten.
+1. I avsnittet **Begäranparametrar** klickar du på ikonen **Redigera** för var och en av parametrarna och väljer de dynamiska värden som du har konfigurerat i nyttolasten.
 
 ![](assets/engage-use-canvas.png){width="70%" align="left"}

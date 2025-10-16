@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1633'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 >title="Åtgärd"
 >abstract="I det här avsnittet visas alla åtgärder som används i den samordnade kampanjen."
 
-Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**. Använd flikarna för att bläddra bland kampanjer, efter typ: **Åtgärd** kampanjer, **API-utlösta** kampanjer och **Orchestrated** kampanjer. Läs mer om [typen av kampanj](get-started-with-campaigns.md#get-started-with-campaigns). Vilka typer som är tillgängliga beror på ditt licensavtal och dina behörigheter.
+Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**. Använd flikarna för att bläddra bland kampanjer efter typ: **Åtgärd** kampanjer, **API-utlösta** kampanjer och **samordnade** kampanjer. Läs mer om de [olika kampanjtyperna](get-started-with-campaigns.md#get-started-with-campaigns). Vilka typer som är tillgängliga beror på ditt licensavtal och dina behörigheter.
 
 >[!BEGINTABS]
 
@@ -69,7 +69,7 @@ Dessutom finns det ett sökfält och filter som gör det enklare att söka i lis
 * **[!UICONTROL Edit tags]** - Redigera de taggar som är associerade med kampanjen. Lär dig hur du [använder taggar i dina kampanjer](../start/search-filter-categorize.md#add-tags-to-an-object)
 * **[!UICONTROL Duplicate]** - Använd det här alternativet för att duplicera en kampanj, till exempel för att köra en Orchestrated-kampanj som har stoppats. [Läs mer](#duplicate-a-campaign)
 * **[!UICONTROL Delete]** - Använd det här alternativet om du vill ta bort en kampanj. [Läs mer](#delete-a-campaign)
-* **[!UICONTROL Archive]** - Arkivera kampanjen. Alla arkiverade kampanjer tas bort 30 dagar efter det att de senast ändrades. Den här åtgärden är tillgänglig för alla kampanjer förutom **[!UICONTROL Draft]** kampanjer. Läs mer om [kampanjarkivering](#archive-a-campaign).
+* **[!UICONTROL Archive]** - Arkivera kampanjen. Alla arkiverade kampanjer tas bort enligt ett rullande schema 30 dagar efter det att de senast ändrades. Den här åtgärden är tillgänglig för alla kampanjer förutom **[!UICONTROL Draft]** kampanjer. Läs mer om [kampanjarkivering](#archive-a-campaign).
 
 För Action- och API-utlösta kampanjer finns ytterligare åtgärder nedan:
 

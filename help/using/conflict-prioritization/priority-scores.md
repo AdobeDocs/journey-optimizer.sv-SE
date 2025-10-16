@@ -4,7 +4,7 @@ description: Lär dig hur du tilldelar prioritetspoäng till resor och kampanjer
 role: User
 level: Beginner
 exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
-source-git-commit: be1538495ea7427fd8c4b8ea781db74bf557c22f
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -72,4 +72,4 @@ Om du vill tilldela en prioritetspoäng till de inkommande åtgärder som defini
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3445005?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)

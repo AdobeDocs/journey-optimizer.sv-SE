@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a93d4dc9-f0e9-400c-b9a4-6cdac84390fd
-source-git-commit: 12dbe0031e9037d879e0d2309c7c26cc3c00cc4e
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Bläddra bland flikarna nedan för att lära dig hur du lägger till ett LINE-me
 
    Fältet **[!UICONTROL configuration]** är som standard förfyllt med den senaste konfigurationen som används av användaren för den kanalen.
 
-Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL Edit content]**, som beskrivs nedan.
+Nu kan du börja designa innehållet i ditt LINE-meddelande med knappen **[!UICONTROL Edit content]**, som beskrivs nedan.
 
 >[!TAB Lägg till ett radmeddelande i en kampanj]
 

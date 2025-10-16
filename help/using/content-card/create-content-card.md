@@ -6,7 +6,7 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
-source-git-commit: ee2e07353762a81aadd3d63580c528f617599623
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!TAB Lägg till innehållskort på en resa]
 
-Så här lägger du till ett innehållskort på en resa:
+Så här lägger du till ett innehållskort till en resa:
 
 1. Öppna din resa och dra och släpp en **[!UICONTROL Card]**-aktivitet från **[!UICONTROL Actions]**-delen av paletten.
 
@@ -63,7 +63,7 @@ Så här lägger du till ett innehållskort på en resa:
 
    1. Välj villkoret **[!UICONTROL And]** om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
 
-      +++Se tillgängliga fack.
+      +++Se tillgängliga egenskaper.
 
       | Paket | Traits | Definition |
       |---|---|---|
@@ -146,7 +146,7 @@ Följ stegen nedan för att börja skapa ditt innehållskort med en kampanj.
 
    1. Välj villkoret **[!UICONTROL And]** om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
 
-      +++Se tillgängliga fack.
+      +++Se tillgängliga egenskaper.
 
       | Paket | Traits | Definition |
       |---|---|---|

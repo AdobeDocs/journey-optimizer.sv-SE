@@ -4,7 +4,7 @@ description: Lär dig utnyttja Journey Optimizer verktyg för konfliktlösning o
 role: User
 level: Beginner
 exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
-source-git-commit: 8146221975b7460bf1deaca9363d1624b719b480
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Genom att utnyttja dessa verktyg kan ni säkerställa smidigare och mer målinri
 
 Med **konfliktidentifieringsverktyget** kan du identifiera potentiella överlappningar i resor och kampanjer. Detta är avgörande eftersom alltför många samtidiga kommunikationer kan leda till att kunderna blir trötta. Med Journey Optimizer kan du övervaka element som tidslinjer, målgruppsöverlappning och kanalkonfigurationer. Genom att identifiera konflikter tidigt kan ni förfina era kampanjer för att undvika att bombardera kunder med flera meddelanden samtidigt.
 
-➡️ [Lär dig hur du upptäcker potentiella konflikter i resor och kampanjer &#x200B;](conflicts.md)
+➡️ [Lär dig hur du upptäcker potentiella konflikter i resor och kampanjer ](conflicts.md)
 
 ### Prioritetspoäng
 

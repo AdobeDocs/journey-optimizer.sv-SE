@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Så här lägger du till en **kodbaserad upplevelse**-aktivitet på en resa:
 
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
-1. När kodbasupplevelsen är klar kan du slutföra konfigurationen och publicera resan för att aktivera den. [Läs mer](../building-journeys/publishing-the-journey.md)
+1. När den kodbaserade upplevelsen är klar kan du slutföra konfigurationen och publicera resan för att aktivera den. [Läs mer](../building-journeys/publishing-the-journey.md)
 
 Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
@@ -97,7 +97,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
 
 Följ stegen nedan för att redigera innehållet i din kodbaserade upplevelse.
 
@@ -145,4 +145,4 @@ När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för de
 
 I videon nedan visas hur du skapar en kodbaserad upplevelsekampanj, konfigurerar dess egenskaper, testar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449457/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428868/?quality=12&learn=on)

@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: e7908a328a14b307f0ea6914d2d06c5325ceb211
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 20%
+ht-degree: 18%
 
 ---
 
@@ -33,7 +33,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## API:er för begränsning och begränsning {#capping}
 
@@ -70,7 +70,7 @@ För **externa datakällor** är det maximala antalet anrop per sekund begränsa
 >
 >Om en datakälla använder en anpassad autentisering med en annan slutpunkt än den som används för datakällan måste du kontakta Adobe för att även inkludera den slutpunkten i tillåtelselistan.
 
-För **anpassade åtgärder** måste du utvärdera kapaciteten för ditt externa API. Om Journey Optimizer t.ex. skickar 1 000 anrop per sekund och systemet bara har stöd för 200 anrop per sekund, måste du definiera en konfiguration för reglering eller begränsning så att systemet inte blir mättat. [Läs mer om hur du konfigurerar åtgärder](../action/action.md)
+För **anpassade åtgärder** måste du utvärdera kapaciteten för ditt externa API. Om Journey Optimizer till exempel skickar 1 000 samtal per sekund och ditt system bara kan hantera 200 samtal per sekund, måste du definiera en begränsning eller begränsning så att systemet inte blir mättat. [Läs mer om hur du konfigurerar åtgärder](../action/action.md)
 
 >[!NOTE]
 >

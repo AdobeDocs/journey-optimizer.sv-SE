@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: externa, källor, data, konfiguration, anslutning, tredje part
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
-source-git-commit: 4d979ccc421221993a752dd41bc22ea3d83e7555
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '1604'
-ht-degree: 44%
+ht-degree: 42%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 44%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_custom"
 >title="Externa datakällor"
->abstract="Med externa datakällor kan du definiera en anslutning till tredjepartssystem, till exempel om du använder ett bokningssystem för hotell för att kontrollera om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs."
+>abstract="Med externa datakällor kan du definiera en anslutning till tredjepartssystem, till exempel om du använder ett bokningssystem för hotell för att kontrollera om personen har registrerat ett rum. I motsats till den inbyggda Adobe Experience Platform-datakällan kan du skapa så många externa datakällor du behöver."
 
 ## Arbeta med externa datakällor {#gs-ext-data-sources}
 
-Med externa datakällor kan du definiera en anslutning till tredjepartssystem, till exempel om du använder ett bokningssystem för hotell för att kontrollera om personen har registrerat ett rum. I motsats till den inbyggda datakällan i Adobe Experience Platform kan du skapa så många externa datakällor som behövs.
+Med externa datakällor kan du definiera en anslutning till tredjepartssystem, till exempel om du använder ett bokningssystem för hotell för att kontrollera om personen har registrerat ett rum. I motsats till den inbyggda Adobe Experience Platform-datakällan kan du skapa så många externa datakällor du behöver.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Anropet består av en huvud-URL (_https://api.adobeweather.org/weather_), två p
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## Skapa och konfigurera en extern datakälla {#create-ext-data-sources}
 

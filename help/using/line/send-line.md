@@ -7,7 +7,8 @@ feature: Line
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 8714ac6b2fd76ec859c358535fa322f0ac333a82
+exl-id: fd8437c6-0052-4116-af60-5624569bda65
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -39,4 +40,3 @@ Du måste kontrollera varningar i den övre delen av redigeraren. Vissa av dem �
 > Om din kampanj omfattas av en policy för godkännande måste du begära godkännande för att kunna skicka dina textmeddelanden. [Läs mer](../test-approve/gs-approval.md)
 
 När ditt LINE-meddelande är klart slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md) för att skicka det.
-

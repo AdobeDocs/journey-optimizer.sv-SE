@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3ec496ba-7555-49e2-992c-403c33302a90
-source-git-commit: b6fe3fec0c64983fc2317027a5748a0d44c18469
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Här är de åtgärder du kan utföra med hjälp av målgruppernas anrikningsatt
 >
 >Om du vill använda anrikningsattribut från målgrupper som skapats med dispositionsarbetsflöden måste du se till att de läggs till i en fältgrupp i Data Source för ExperiencePlatform.
 >
->+++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp>
+>+++ Lär dig hur du lägger till anrikningsattribut i en fältgrupp
 >
 >1. Navigera till Administration > Konfiguration > Datakällor.
 >1. Välj&quot;Experience Platform&quot; och skapa eller redigera en fältgrupp.

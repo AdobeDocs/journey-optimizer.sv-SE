@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 1%
@@ -52,11 +52,11 @@ Om du har frågor eller vill ha hjälp med dina översättningar kontaktar du ti
 
 För det flerspråkiga innehållet måste följande inställningar definieras:
 
-* Om du vill använda översättningsfunktionen i Journey Optimizer måste du tilldela API till motsvarande roll. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
+* Om du vill använda översättningsfunktionen i Journey Optimizer måste du tilldela API till motsvarande roll. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)
 
 * Om du vill börja skapa flerspråkigt innehåll måste användarna ha behörighet **[!UICONTROL Manage Language settings]**. För automatiserat flöde behöver användare även behörigheter som är relaterade till **[!UICONTROL Translation Service]**-funktionerna. [Läs mer om behörigheter](../administration/permissions.md)
 
-+++ Lär dig hur du tilldelar flerspråkiga behörigheter
+  +++ Lär dig hur du tilldelar flerspråkiga behörigheter
 
    1. Gå till fliken **Roller** i produkten **Behörigheter** och välj önskad **roll**.
 
@@ -74,13 +74,13 @@ För det flerspråkiga innehållet måste följande inställningar definieras:
 
    1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-   1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+   1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
-+++
+  +++
 
 * Om du inte kan komma åt översättningssidan måste du aktivera översättningsfunktionen och beviljas **[!UICONTROL Translation service]**-relaterade behörigheter. [Läs mer](../administration/ootb-permissions.md)
 
-+++ Lär dig aktivera översättningsfunktionen
+  +++ Lär dig aktivera översättningsfunktionen
 
    1. Om följande felsida visas indikerar den att funktionen **[!UICONTROL Translation]** inte har aktiverats än. Kontakta din organisations- och sandlådeadministratör för att begära åtkomst.
 
@@ -94,10 +94,10 @@ För det flerspråkiga innehållet måste följande inställningar definieras:
 
    1. Om den här proceduren har misslyckats visas fortfarande samma felsida. Om så är fallet, kontakta din Adobe-representant för ytterligare hjälp.
 
-+++
+  +++
 
 ## Instruktionsvideo {#video}
 
 Lär dig hur du skapar innehåll på flera språk i en enda kampanj eller resa.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452117?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3430921/)

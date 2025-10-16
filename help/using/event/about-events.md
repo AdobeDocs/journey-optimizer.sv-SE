@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: händelser, händelse, resa, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-source-git-commit: a766eee95490660b013cae5378903d0ab3001e64
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1533'
 ht-degree: 14%
 
 ---
@@ -35,7 +35,7 @@ Du kan konfigurera två typer av händelser: **Unitära händelser** och **Affä
 
 ## Enhetshändelser {#unitary-events}
 
-Händelsen **Unitary** är länkad till en person. De rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (t.ex. en person som uppnått 10 000 förmånspoäng). Det här är vad [!DNL Journey Optimizer] lyssnar på under resor för att samordna de bästa nästa åtgärderna. Enhetshändelser kan vara regelbaserade eller systemgenererade. Mer information om hur du skapar en enhetshändelse finns på [sidan](../event/about-creating.md).
+**Unitära**-händelser är länkade till en person. De rör en persons beteende (t.ex. en person som köpt en produkt, besökt en butik, lämnat en webbplats) eller något som händer med en person (t.ex. en person som uppnått 10 000 förmånspoäng). Det här är vad [!DNL Journey Optimizer] lyssnar på under resor för att samordna de bästa nästa åtgärderna. Enhetshändelser kan vara regelbaserade eller systemgenererade. Mer information om hur du skapar en enhetshändelse finns på [sidan](../event/about-creating.md).
 
 Enhetsresor (som inleds med en händelse eller en publikation) innehåller ett skyddsräcke som förhindrar att resorna aktiveras felaktigt flera gånger för samma händelse. Återinträde av profiler blockeras tillfälligt som standard i 5 minuter. Om en händelse till exempel utlöser en resa vid 12:01 för en viss profil och en annan tar emot vid 12:03 (oavsett om det är samma händelse eller en annan som utlöser samma resa) startar den resan inte igen för den här profilen.
 
@@ -54,7 +54,7 @@ Det finns två typer av händelse-ID för **unitary**-händelser:
 
   >[!CAUTION]
   >
-  >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan bearbeta till 5 000 per sekund för en viss organisation. Det motsvarar Journey Optimizer SLA:er. Se din Journey Optimizer-licens och [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+  >En begränsningsregel definieras för regelbaserade händelser. Det begränsar antalet kvalificerade händelser som en resa kan bearbeta till 5 000 per sekund för en viss organisation. Det motsvarar Journey Optimizer SLA:er. Se din Journey Optimizer-licens och [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 * **Systemgenererade** händelser: Dessa händelser kräver ett eventID. Det här eventID-fältet genereras automatiskt när händelsen skapas. Systemet som skickar händelsen ska inte generera ett ID utan det ska skicka det som finns i nyttolastförhandsvisningen.
 
@@ -66,7 +66,7 @@ Det finns två typer av händelse-ID för **unitary**-händelser:
 
 Händelser är POST API-anrop. Händelser skickas till Adobe Experience Platform via API:er för direktuppspelning. URL-destinationen för händelser som skickas via API:er för transaktionsmeddelanden kallas för ett &quot;inlet&quot;. Händelsers nyttolast följer XDM-formateringen.
 
-Nyttolasten innehåller information som krävs för att API:er för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för att [!DNL Journey Optimizer] ska kunna arbeta och information som ska användas på resor (i brödtexten, till exempel, mängden övergiven vagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Se [den här länken](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=sv-SE){target="_blank"} för mer information om API:er för strömningsinmatning.
+Nyttolasten innehåller information som krävs för att API:er för direktuppspelning av inmatning ska fungera (i huvudet) och den information som krävs för att [!DNL Journey Optimizer] ska kunna arbeta och information som ska användas på resor (i brödtexten, till exempel, mängden övergiven vagn). Det finns två lägen för strömningsinmatning – autentiserad och ej autentiserad. Se [den här länken](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"} för mer information om API:er för strömningsinmatning.
 
 Efter att ha kommit via API:er för direktuppspelning av inmatning flödar händelserna till en intern tjänst som kallas Pipeline och sedan i Adobe Experience Platform. Om händelseschemat har tjänstflaggan realtidskundprofil aktiverad och ett datauppsättnings-ID som även har flaggan realtidskundprofil flödar det in i tjänsten realtidskundprofil.
 
@@ -120,7 +120,7 @@ Det går inte att ta bort händelser som används i resor med **Live**, **Draft*
 
 Lär dig hur du konfigurerar en händelse, anger slutpunkten för direktuppspelning och nyttolasten för en händelse.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431509?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/336253?quality=12)
 
 Förstå tillämpliga användningsexempel för affärshändelser. Lär dig hur du bygger en resa med hjälp av ett affärsevenemang och vilka bästa metoder som ska användas.
 

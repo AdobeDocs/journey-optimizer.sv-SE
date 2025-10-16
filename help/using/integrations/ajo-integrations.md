@@ -7,7 +7,7 @@ feature: Integrations
 role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
-source-git-commit: dbb1a4d649f29b763121c7856cecca16dcd2864f
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Med Adobe Journey Optimizer kan ni enkelt hantera, behålla och exportera dessa 
 
 Du kan använda Customer Journey Analytics för att utföra avancerad analys av data som genererats av Journey Optimizer.
 
-Journey Optimizer lagrar data i Adobe Experience Platform och med Customer Journey Analytics ger en helhetsbild av alla era resor, kampanjer och erbjudanden med automatiserad rapportdistribution och anpassade visualiseringar av data.
+Journey Optimizer lagrar data i Adobe Experience Platform och med Customer Journey Analytics får ni en helhetsbild av alla era resor, kampanjer och erbjudanden med automatiserad rapportdistribution och anpassade visualiseringar av data.
 
 När ni har skapat er resa i Journey Optimizer kan Customer Journey Analytics hämta in data från plattformen för att ta fram rapporter och förstå hur varje kundinteraktion påverkar era resor.
 
@@ -123,7 +123,7 @@ Använd Adobe Journey Optimizer-modulerna i Adobe Workfront för att skapa, läs
 
 En översikt över det viktiga steget i den här integreringen finns tillgänglig [i blogginlägget](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/accelerating-go-to-market-how-workfront-workfront-fusion-aep-and/ba-p/653685){target="_blank"}.
 
-Läs mer om Journey Optimizer + Adobe Workfront [i Adobe Workfront-dokumentationen](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-journey-optimizer-modules.html?lang=sv-SE){target="_blank"}.
+Läs mer om Journey Optimizer + Adobe Workfront [i Adobe Workfront-dokumentationen](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-journey-optimizer-modules.html){target="_blank"}.
 
 ## Egna kanaler {#integration-custom}
 

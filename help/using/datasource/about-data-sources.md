@@ -9,10 +9,10 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: data, källa, resa, plattform
 exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
-source-git-commit: d498f32a42b13bfdee20f32a589dd31c77d88fa8
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 45%
+source-wordcount: '343'
+ht-degree: 56%
 
 ---
 
@@ -30,7 +30,7 @@ Med datakällans konfiguration kan du definiera en anslutning till ett system f�
 * [egen väntedefinition](../building-journeys/wait-activity.md#custom)
 * [tidszonsdefinition](../building-journeys/timezone-management.md)
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 Den här konfigurationen krävs inte om dina resor endast utnyttjar lokala data som kommer från en händelses nyttolast. Om din resa till exempel består av en händelse som följs av en kanalåtgärdsaktivitet som bara använder data från händelsen, behöver du inte konfigurera någon datakälla.
 
@@ -49,7 +49,7 @@ För varje datakälla definierar du den information som ska hämtas med fältgru
 >
 >Schemarelationer stöds inte för datakällor.
 
-Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html?lang=sv-SE){target="_blank"} om du vill ha mer information om hur du konfigurerar en Adobe Experience Platform Data Source och en extern datakälla samt hur du söker efter och använder data under en resa.
+Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html){target="_blank"} för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
 
 ## Instruktionsvideo {#video}
 

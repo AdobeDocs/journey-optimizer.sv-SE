@@ -10,7 +10,7 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: eb0da59bbdaa16eb381dda965cd06fb8548a945a
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 0%
@@ -34,14 +34,14 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 
 * **Ingen PII i datauppsättningar** - datauppsättningar som har aktiverats för sökning får inte innehålla någon PII (Personally Identiitable Information).
 
-* &#x200B;
+* 
    * **Borttagningsrisk** - Datauppsättningar som används i personalisering skyddas inte från att tas bort. Du måste hålla reda på vilka datauppsättningar som används för att vara säker på att de inte tas bort.
 
 * **Schematyp** - Datauppsättningar måste associeras med ett schema som är **NOT** av profiltyp eller händelsetyp.
 
 * **Aktivera** för att aktivera och inaktivera sökningen - Undvik att aktivera och inaktivera datauppsättningar flera gånger. Om du gör det kan det leda till oväntade indexeringsbeteenden. Det bästa sättet är att låta datauppsättningen vara aktiverad så länge du tänker använda den för uppslag.
 
-* **Batch med dataradering** - Om du tar bort en grupp med data från datauppsättningen tas alla matchande nycklar bort helt från söktjänsten. Exempel:
+* **Batch med borttagning av data** - Om du tar bort en grupp med data från datauppsättningen tas alla matchande nycklar bort helt från söktjänsten. Exempel:
 
   **Grupp 1**: Sku1, Sku2, Sku3\
   **Grupp 2**: SKU1, SKU2, SKU3, SKU4, SKU5, SKU6\

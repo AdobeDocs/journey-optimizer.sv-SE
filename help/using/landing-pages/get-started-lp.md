@@ -9,14 +9,14 @@ role: User
 level: Beginner
 keywords: landning, landningssida, start, komma igång
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '208'
 ht-degree: 2%
 
 ---
 
-# Kom igång med landningssidor {#get-sarted-lp}
+# Kom igång med landningssidor {#get-started-lp}
 
 En landningssida är en fristående webbsida som en användare dirigeras till efter att ha klickat igenom från ett e-postmeddelande, en webbplats, en annons eller någon annan digital plats.
 

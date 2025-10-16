@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
-source-git-commit: 31e25c511d8873e54c7b92e65511108a77f84941
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Kom igång med whatsApp-meddelanden {#get-started-whatsapp}
 
-Du kan nu skicka whatsApp-meddelanden direkt via Journey Optimizer via Metas [Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/). Den här funktionen möjliggör smidig integrering av WhatsApp i resor och kampanjer, vilket förbättrar kommunikationen och engagemanget med mottagarna.
+Du kan nu skicka whatsApp-meddelanden direkt via Journey Optimizer via Meta [Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/). Den här funktionen möjliggör smidig integrering av WhatsApp i resor och kampanjer, vilket förbättrar kommunikationen och engagemanget med mottagarna.
 
 * På en **resa**. Skapa en resa, lägg till en **whatsApp**-aktivitet och definiera grundläggande inställningar. Bläddra sedan till den högra panelen i **[!UICONTROL Actions: WhatsApp]** för att skapa innehållet för WhatsApp-meddelandet. Lär dig skapa en resa på [den här sidan](../building-journeys/journey-gs.md).
 
@@ -32,12 +32,12 @@ Integrering av WhatsApp med Journey Optimizer kräver följande:
 * Meta Business Manager-konto
 * [WhatsApp Business Account med verifierat avsändarnamn och telefonnummer](https://developers.facebook.com/docs/whatsapp/overview/business-accounts/)
 * [Token för användarauktorisering med lämplig behörighet](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)
-* [Godkända metamallar](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/)
+* [Godkända Meta-mallar](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/)
 
-Du måste även känna till följande innan du fortsätter med integreringen:
+Du måste även bekräfta följande innan du fortsätter med integreringen:
 
 * [Innehållsregler för whatsApp](https://www.whatsapp.com/legal/messaging-guidelines)
-* [Efterlevnad med metaprinciper](https://www.whatsapp.com/legal)
+* [Efterlevnad med Meta-principer](https://www.whatsapp.com/legal)
 * [Konversationsgränsen 24 timmar](https://developers.facebook.com/docs/whatsapp/messaging-limits/)
 
 ## Begränsningar {#limitations}
@@ -58,7 +58,7 @@ I videon nedan visas hur du integrerar WhatsApp som en inbyggd kanal i Adobe Jou
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470248?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470244?learn=on)
 
 +++
 

@@ -6,14 +6,14 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 1%
 
 ---
 
-# Kom igång med kodbaserad kanal {#get-sarted-code-based}
+# Kom igång med kodbaserad kanal {#get-started-code-based}
 
 Med [!DNL Journey Optimizer] kan du personalisera och testa de upplevelser du vill leverera till dina kunder via alla dina kontaktytor, som webbappar, mobilappar, datorprogram, videokonsoler, tv-anslutna enheter, smarta TV-apparater, kioskdatorer, ATM-enheter, röstassistenter, IoT-enheter osv.
 
@@ -30,7 +30,7 @@ Med funktionen **kodbaserad upplevelse** kan du definiera inkommande upplevelser
 
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
-➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen finns i [det här avsnittet](../experience-decisioning/experience-decisioning-uc.md).
+➡️ Ett heltäckande användningsexempel som visar hur du använder innehållsexperiment för att jämföra beslut med den kodbaserade upplevelsekanalen visas i [det här avsnittet](../experience-decisioning/experience-decisioning-uc.md).
 
 ## När kodbaserade jämfört med andra kanaler ska användas {#code-based-vs-other-channels}
 
@@ -53,7 +53,7 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 **Webb**
 
 * Redigera ditt innehåll med den visuella [webbdesignern](../web/web-visual-editor.md){target="_blank"} eller den icke-visuella [webbredigeraren](../web/web-non-visual-editor.md).
-* Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} - en implementering på klientsidan.
+* Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} - en implementering på klientsidan.
   <!--* You need the [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} extension installed on your web browser. [Learn more](../web/web-prerequisites.md){target="_blank"}-->
 * Med webbkanalen kan du ändra allt på sidan och ha en fördefinierad lista över åtgärder som du kan använda för att göra ändringar. [Läs mer](../web/web-visual-editor.md){target="_blank"}
 * Det är enkelt att konfigurera och komma igång snabbt.
@@ -62,7 +62,7 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 **Kodbaserad upplevelse**
 
 * Redigera ditt innehåll med [anpassningsredigeraren](create-code-based.md#edit-code).
-* Du behöver antingen [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} - implementering på klientsidan eller [AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE){target="_blank"} - implementering på serversidan.
+* Du behöver antingen [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} - implementering på klientsidan eller [AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"} - implementering på serversidan.
 * Den kodbaserade upplevelsen kräver tidigare utvecklingsarbete med implementeringen för att säkerställa att dina program kan tolka och leverera innehåll som publiceras på kanten av [!DNL Journey Optimizer] för dessa platser. [Läs mer](code-based-surface.md)
 * Det kräver mer planering och kan bara ändra det som utvecklarna anger. Därför är det viktigt att identifiera komponenterna (hembanner, hjältebild, menyrad osv.) i de program som behöver ändras för personalisering eller testning, och samarbeta med utvecklingsteamet för att skapa den implementering som behövs för att hantera dessa ändringar.
 * Du kan använda JSON-kodinnehåll.

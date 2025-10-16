@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 801b90201c3ffcbfb7b038abac2bf99209a14c7a
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '273'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## Om API-utlösta kampanjer {#about}
 
-API-utlösta kampanjer gör det möjligt att antingen nå ut till en målgrupp vid rätt tidpunkt eller för transaktionsmeddelanden/operativa meddelanden till en individ som lösenordsåterställning, där behovet kan innebära personalisering inte bara genom att använda profilattribut, utan även kontextdata i realtid i utlösaren som är en REST API-nyttolast.
+API-utlösta kampanjer gör det möjligt att antingen nå ut till en målgrupp vid rätt tidpunkt eller för transaktionsmeddelanden/operativa meddelanden till en individ som lösenordsåterställning, där behovet av personalisering inte bara kan innebära att profilattribut används, utan även kontextdata i realtid i utlösaren, vilket är en REST API-nyttolast.
 
 För att göra detta måste du först skapa en API-utlöst kampanj i Journey Optimizer och sedan starta körningen via ett API-anrop med [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
 
@@ -57,4 +57,4 @@ Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i d
 
 Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452729?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)

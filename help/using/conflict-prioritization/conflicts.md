@@ -4,7 +4,7 @@ description: Lär dig identifiera potentiella konflikter i resor och kampanjer.
 role: User
 level: Beginner
 exl-id: efbb5ac4-4c07-4c62-9460-39eb4fed129a
-source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Upptäck potentiella konflikter i resor och kampanjer {#conflict}
 
-I takt med att marknadsförarna ökar antalet kampanjer och resor i Journey Optimizer blir det allt svårare för en marknadsförare att veta om de bombar sina kunder med alltför många marknadsföringsinteraktioner. Det är därför viktigt att enkelt identifiera när det finns överlappande kampanjer och resor för att säkerställa att de når rätt balans mellan marknadsföringskommunikation och samtidigt minska risken för att kunderna ska tröttna.
+I takt med att marknadsförarna ökar antalet kampanjer och resor i Journey Optimizer blir det allt svårare för en marknadsförare att veta om de bombarderar sina kunder med alltför många marknadsföringsinteraktioner. Det är därför viktigt att enkelt identifiera när det finns överlappande kampanjer och resor för att se till att de når rätt balans mellan marknadsföringskommunikation och samtidigt minska risken för att kunderna tröttnar.
 
 De viktigaste områdena att övervaka för eventuell överlappning är:
 

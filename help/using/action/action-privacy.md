@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: data, styrning, DULE, etiketter, märkning, plattform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## Kom igång med policyer för datastyrning {#gs}
 
-Med sitt ramverk [Dataanvändningsmärkning och Tvingande (DULE)](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=sv-SE){target="_blank"} kan du med Adobe Experience Platform hantera och tillämpa datastyrningsprinciper i alla kanaler genom att **etikettera fälten** och skapa **marknadsföringsåtgärder** för varje kanal.
+Med sitt ramverk [Dataanvändningsmärkning och Tvingande (DULE)](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html){target="_blank"} kan du med Adobe Experience Platform hantera och tillämpa datastyrningsprinciper i alla kanaler genom att **etikettera fälten** och skapa **marknadsföringsåtgärder** för varje kanal.
 
 När etiketter och marknadsföringsåtgärder har definierats kan du skapa **datastyrningsprinciper** som länkar dessa två element. Du kan till exempel skapa en profil som associerar en ePHI-etikett med en marknadsföringsåtgärd som riktar sig mot e-postmarknadsföring, så att fält som är märkta som ePHI inte används för att anpassa e-postmeddelanden. [Lär dig hur du skapar datastyrningsprinciper](#policy)
 
@@ -66,7 +66,7 @@ För att datahanteringsprinciper ska kunna tillämpas i Journey Optimizer måste
 
 ### Använd marknadsföringsåtgärder på resor och kampanjer {#journeys-campaigns}
 
-När du har skapat styrningsprinciper måste du tillämpa de relevanta marknadsföringsåtgärderna i dina Journey Optimizer **kanalkonfigurationer**. Följ dessa steg för att göra detta:
+När du har skapat styrningsprinciper måste du tillämpa de relevanta marknadsföringsåtgärderna på dina **kanalkonfigurationer** för Journey Optimizer. Följ dessa steg för att göra detta:
 
 1. Gå till **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**-menyn.
 
@@ -134,4 +134,4 @@ Fel visas från knappen **[!UICONTROL Alerts]**. Välj felet om du vill visa det
 
 Den här dialogrutan anger att den aktuella resan/kampanjkonfigurationen bryter mot en befintlig datastyrningspolicy. Använd datalänksdiagrammet för att förstå vilka andra konfigurationsändringar som behöver göras innan du kan aktivera din resa eller kampanj.
 
-Detaljerad information finns i [informationen om brott mot dataanvändningsprincipen](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/enforcement/auto-enforcement#data-usage-violation){_blank}.
+Detaljerad information finns i [informationen om brott mot dataanvändningsprincipen](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/auto-enforcement#data-usage-violation){_blank}.

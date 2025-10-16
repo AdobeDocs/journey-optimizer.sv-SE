@@ -7,7 +7,7 @@ feature: Privacy, Monitoring
 role: User
 level: Intermediate
 exl-id: 8045b559-bf5e-4b5f-9da4-accd44641a68
-source-git-commit: a5b292e6eb4145fa29774fbeb4ce823bc71b849c
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 1%
@@ -38,4 +38,4 @@ Innan du utför storskaliga borttagningar ska du validera och exportera alla nö
 Mer information om Privacy Service och hur du utför livscykelåtgärder för data finns i Adobe Experience Platform dokumentation:
 
 * [Privacy Service - översikt](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv)
-* [Datalifecykel i Adobe Experience Patform](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=sv-SE)
+* [Datalifecykel i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html)

@@ -4,13 +4,13 @@ description: Lär dig hur du skapar en godkännandeprocess för era resor och ka
 role: User
 level: Beginner
 feature: Approval
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+exl-id: 92d1439e-5cac-4e7d-85f8-ebf432e9ef7c
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%
 
 ---
-
 
 # Kom igång med godkännande av resor och kampanjer {#send-proofs}
 
@@ -22,7 +22,7 @@ Godkännandeprofiler inför ett strukturerat arbetsflöde direkt i användargrä
 
 Dessutom ger den här funktionen bättre kontroll över publiceringen av era resor och kampanjer: Med godkännandeprocessen inbäddad i Journey Optimizer förblir kampanjer och resor i ett &quot;låst&quot; läge under granskningen, vilket säkerställer att inga ändringar eller oavsiktliga aktiveringar sker innan alla nödvändiga godkännanden har införts.
 
-## Förtexter {#prerequisites}
+## Förhandskrav {#prerequisites}
 
 Innan du startar kontrollerar du att behörigheterna nedan har konfigurerats.
 
@@ -50,7 +50,7 @@ Alla användare som redan har tilldelats den här rollen får sina behörigheter
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
 

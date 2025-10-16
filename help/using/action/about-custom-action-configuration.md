@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 8a94f9081c4f7fe158c084d02642d5bbba33dca2
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 1%
@@ -77,9 +77,9 @@ När du väljer en slutpunkt som ska användas som mål med en anpassad åtgärd
 * Den här slutpunkten kan ha stöd för resans genomströmning genom att använda konfigurationer från [API:t för begränsning](../configuration/throttling.md) eller [API:t för begränsning](../configuration/capping.md). Var försiktig med att en begränsningskonfiguration inte får vara lägre än 200 TPS. Alla målpunkter måste ha stöd för minst 200 TPS.
 * Den här slutpunkten måste ha en svarstid som är så låg som möjligt. Beroende på förväntat dataflöde kan en hög svarstid påverka det faktiska dataflödet.
 
-En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder. Dessutom utförs standardcapping per värd och per sandlåda. Om du till exempel har två slutpunkter med samma värd (till exempel: `https://www.adobe.com/endpoint1` och `https://www.adobe.com/endpoint2`) i en sandlåda, gäller det för alla slutpunkter under adobe.com. &quot;endpoint1&quot; och &quot;endpoint2&quot; har samma begränsningskonfiguration och om en slutpunkt når gränsen påverkas den andra slutpunkten.
+En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder. Dessutom utförs standardcapping per värd och per sandlåda. Om du till exempel har två slutpunkter med samma värd (till exempel `https://www.adobe.com/endpoint1` och `https://www.adobe.com/endpoint2`) i en sandlåda, gäller det för alla slutpunkter under adobe.com. &quot;endpoint1&quot; och &quot;endpoint2&quot; har samma begränsningskonfiguration och om en slutpunkt når gränsen påverkas den andra slutpunkten.
 
-Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
+Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som är inriktade på anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
 
 Du bör inte ange allmänna slutpunkter som mål med anpassade åtgärder av olika anledningar:
 
@@ -157,7 +157,7 @@ Adobe Journey Optimizer stöder TLS 1.3 som standard för anpassade åtgärder. 
 
 Du kan använda mTLS (Mutual Transport Layer Security) för att säkerställa förbättrad säkerhet vid utgående anslutningar till anpassade Adobe Journey Optimizer-åtgärder. mTLS är en heltäckande säkerhetsmetod för ömsesidig autentisering som ser till att båda parter delar information är de som gör anspråk på att vara innan data delas. mTLS innehåller ytterligare ett steg jämfört med TLS, där servern också frågar efter klientens certifikat och verifierar det i slutet.
 
-Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
+Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
 ## Definiera nyttolastparametrarna {#define-the-message-parameters}
 

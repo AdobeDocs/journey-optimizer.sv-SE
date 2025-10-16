@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, design, formatering
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
-source-git-commit: 61a30dcc93823dc5e8b647e683bfa2ebf5bfa01b
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 6%
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 Du kan redigera innehållet i appen för att konfigurera upplevelsealternativ:
 
-* Klicka på knappen **[!UICONTROL Campaign]** i en **[!UICONTROL Action]** på menyn **[!UICONTROL Edit content]** för att konfigurera meddelandeinnehållet.
+* I en **[!UICONTROL Campaign]** klickar du på knappen **[!UICONTROL Action]** på menyn **[!UICONTROL Edit content]** för att konfigurera meddelandeinnehållet.
 
   ![](assets/edit-in-app-content.png)
 

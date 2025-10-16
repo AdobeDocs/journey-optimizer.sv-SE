@@ -6,7 +6,7 @@ description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommuni
 role: User
 level: Beginner
 exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
-source-git-commit: d2cdafef6f2d69ea85d9d042c859a8b1e7654d7d
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Leveranskanaler för utgående meddelanden innebär att meddelanden skickas till
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 E-postkanal
 
@@ -37,7 +37,7 @@ Upptäck hur ni skapar, konfigurerar och optimerar e-postkampanjer, inklusive pe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Push-meddelandekanal
 
@@ -47,7 +47,7 @@ Lär dig hur du skapar, konfigurerar och skickar push-meddelanden för iOS och A
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
 
 SMS/MMS/RCS-meddelanden
 
@@ -57,7 +57,7 @@ Lär dig hur du skapar, hanterar och konfigurerar SMS-, MMS- och RCS-meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg)
 
 Direktreklamkampanjer
 
@@ -75,7 +75,7 @@ Med mobilappar och inkommande webbupplevelser startar kunderna interaktioner. Ex
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
 Meddelanden i appen
 
@@ -85,7 +85,7 @@ Upptäck hur du konfigurerar, utformar och personaliserar meddelanden i appen f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
 
 Webb
 
@@ -95,7 +95,7 @@ Lär dig hur du skapar, konfigurerar och personaliserar webbupplevelser och inte
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
 
 Kodbaserad upplevelse
 
@@ -105,7 +105,7 @@ Fördjupa dig i kodbaserade upplevelser för att leverera personaliserat innehå
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/id-card.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/id-card.svg)
 
 Innehållskort
 
@@ -119,7 +119,7 @@ Upptäck hur du konfigurerar, skapar och utformar innehållskort för engagerand
 
 ## Ytterligare resurser
 
-- **[WhatsApp Messaging](../../rp_landing_pages/whatsapp-landing-page.md)** - Lär dig hur du integrerar och använder meddelanden i WhatsApp via Metas molnAPI för anpassade och kompatibla kommunikationskampanjer.
+- **[WhatsApp Messaging](../../rp_landing_pages/whatsapp-landing-page.md)** - Lär dig hur du integrerar och använder meddelanden i WhatsApp via Meta Cloud API för anpassade och kompatibla kommunikationskampanjer.
 - **[LINE-meddelanden](../../rp_landing_pages/line-landing-page.md)** - Upptäck hur du konfigurerar, skapar och anpassar LINE-meddelanden för effektiv kommunikation i kampanjer och resor.
 
 ## Kanaler under resor och kampanjer {#leverage}

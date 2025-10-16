@@ -9,16 +9,16 @@ role: User
 level: Beginner
 keywords: resurser, integration
 exl-id: 3e72df85-ba80-4cec-848b-7441cb3e7fef
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
 
 # Kombinera lösningar och appar för att hantera ert innehåll {#combine-solutions}
 
-För att kunna skapa meddelanden och innehåll för aktivering i flerkanaliga kundresor och kampanjer behöver marknadsförare och kundupplevelseproffs lättanvända redigeringsalternativ, inklusive generativ AI i arbetsflödet, redigeringsfunktioner, resurser, mallar och fragmenthantering.  Med Adobe Journey Optimizer kan du enkelt kombinera dina Adobe-lösningar och -appar för att få ut det mesta av dina Adobe-verktyg. Dessa inbyggda integreringar hjälper er att åtgärda era specifika användningsfall och utöka Adobe Journey Optimizer funktionalitet.
+För att kunna skapa meddelanden och innehåll för aktivering i flerkanaliga kundresor och kampanjer behöver marknadsförare och kundupplevelseproffs lättanvända redigeringsalternativ, inklusive generativ AI i arbetsflödet, redigeringsfunktioner, resurser, mallar och fragmenthantering.  Med Adobe Journey Optimizer kan ni enkelt kombinera era Adobe-lösningar och -appar för att få ut det mesta av Adobe-verktygen. Dessa inbyggda integreringar hjälper er att åtgärda era specifika användningsfall och utöka Adobe Journey Optimizer funktionalitet.
 
 ## Adobe Experience Manager {#integration-aem}
 

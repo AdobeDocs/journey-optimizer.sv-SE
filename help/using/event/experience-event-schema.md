@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate, Experienced
 keywords: scheman, XDM, plattform, direktuppspelning, förtäring, resa
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: d79e42cd42fa8342526e02116f65a8e53449fad5
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Därför är en viktig förutsättning för att du ska kunna konfigurera händel
 
 >[!CAUTION]
 >
->Upplevelsehändelsesökningar i resevillkor stöds inte längre. Här kan du få tips på andra sätt. Om du har en händelse som utlöses av en reseupplevelse som fortfarande behöver uppslag för Experience-händelser och som inte kan hanteras via något av alternativen i listan, ber vi dig kontakta din Adobe-representant så hjälper vi dig att nå ditt mål.
+>Upplevelsehändelsesökningar i resevillkor stöds inte längre. Här kan du få tips på andra sätt. Om du har en händelse som utlöste en reseupplevelse som fortfarande behöver Experience Events-sökning och som inte kan hanteras via något av alternativen i listan, ber vi dig kontakta din Adobe-representant så hjälper vi dig att nå ditt mål.
 >
 >Åtkomst till kontext från starthändelsen av en resa påverkas inte.
 
@@ -80,7 +80,7 @@ Here is the purchase schema with the relationship defined on the product ID fiel
 
 >[!NOTE]
 >
->Learn more about schema relationships in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=sv-SE).
+>Learn more about schema relationships in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html).
 
 In Journey Optimizer, you can then leverage all the fields from the linked tables:
 

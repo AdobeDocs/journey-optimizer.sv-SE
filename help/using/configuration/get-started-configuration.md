@@ -9,7 +9,7 @@ exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
 keywords: konfiguration, konfigurera, meddelanden, kanal, sandlåda, optimerare
-source-git-commit: 21e2ea3e6a72d2a0eb0338df5665282d814501ac
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 4%
@@ -68,7 +68,7 @@ För att kunna skicka meddelanden måste du gå igenom konfigurationsstegen som 
 
    * Hantera det antal dagar som nya försök utförs innan e-postadresser skickas till listan över inaktiveringar. [Läs mer](manage-suppression-list.md)
 
-   * Aktivera alternativet **BBC-e-post** om du vill behålla en kopia av meddelanden som skickas till enskilda personer. [Läs mer](archiving-support.md#enable-bcc)
+   * Aktivera alternativet **BCC-e-post** om du vill behålla en kopia av meddelanden som skickas till enskilda personer. [Läs mer](archiving-support.md#enable-bcc)
 
    * Konfigurera **affärsregler** för att undvika att dina mottagare blir överdrivna. [Läs mer](../conflict-prioritization/rule-sets.md)
 

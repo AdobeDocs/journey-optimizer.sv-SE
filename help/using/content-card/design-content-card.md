@@ -6,16 +6,16 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
-source-git-commit: dccaaa0588b504c1c00ce25fd6bbb4f34652ec91
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
 # Utforma innehåll för innehållskort {#design-content-card}
 
-Utvecklingskonstruktionen för kort är en formulärbaserad redigeringsupplevelse som ger marknadsförarna grundläggande indata som kan användas för att återges av utvecklaren.
+Utvecklingskonstruktionen för kort är en formulärbaserad redigeringsfunktion som ger marknadsförarna grundläggande information som kan återges av utvecklare.
 
 När innehållet är definierat och personaliserat kan du granska och aktivera det. Din kampanj skickas enligt angivet schema. [Läs mer på den här sidan](../campaigns/review-activate-campaign.md).
 
@@ -27,15 +27,15 @@ I avsnittet **[!UICONTROL Content card layout]** väljer du ett av de tre bildla
 
 * **[!UICONTROL Small image]**: Visar en kompakt bild tillsammans med text, vilket är idealiskt för meddelanden där innehåll prioriteras framför visuella.
 
-  Mer information finns i Adobe Developer-dokumentationen [&#x200B; för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/smallimage-template/) och [&#x200B; för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/smallimagecarduistate/).
+  Mer information finns i Adobe Developer-dokumentationen [ för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/smallimage-template/) och [ för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/smallimagecarduistate/).
 
 * **[!UICONTROL Large image]**: Innehåller en framträdande bild ovanför eller bredvid texten, vilket gör visuellt till huvudfokus för ditt meddelande.
 
-  Mer information finns i Adobe Developer-dokumentationen [&#x200B; för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/largeimage-template/) och [&#x200B; för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/largeimagecarduistate/).
+  Mer information finns i Adobe Developer-dokumentationen [ för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/largeimage-template/) och [ för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/largeimagecarduistate/).
 
 * **[!UICONTROL Image only]**: Visar bilden utan tillhörande text, perfekt för visuella meddelanden eller fristående bilder.
 
-  Mer information finns i Adobe Developer-dokumentationen [&#x200B; för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/imageonly-template/) och [&#x200B; för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/imageonlycarduistate/).
+  Mer information finns i Adobe Developer-dokumentationen [ för iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/imageonly-template/) och [ för Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/imageonlycarduistate/).
 
 ## Fliken Innehåll {#content-tab}
 

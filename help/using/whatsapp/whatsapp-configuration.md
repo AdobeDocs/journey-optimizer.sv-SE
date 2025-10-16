@@ -7,7 +7,7 @@ feature: Whatsapp, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: 21eebaaa0193164ac70dd819b25ad6547446397f
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](
 
    ![](assets/whatsapp-api-2.png)
 
-1. Välj det **avsändarnamn** som ska användas för att skicka dina Whatsapp-meddelanden.
+1. Välj det **avsändarnamn** som ska användas för att skicka dina WhatsApp-meddelanden.
 
 1. Dina telefonnummerinställningar fylls i automatiskt:
 
@@ -119,7 +119,7 @@ När dina API-autentiseringsuppgifter för whatsApp har skapats kan du nu konfig
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din WhatsApp-webkrok.
 
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
 
    ![](assets/webhook-5.png)
 
@@ -180,6 +180,6 @@ I videon nedan visas hur du konfigurerar WhatsApp-kanalen i Adobe Journey Optimi
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470272/?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
 
 +++

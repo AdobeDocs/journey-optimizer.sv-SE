@@ -9,7 +9,7 @@ role: Data Engineer, Data Architect, Admin
 level: Intermediate
 keywords: kampanj, standard, integrering, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
-source-git-commit: d92c280e40419d2e3ec62a7ba85cd492a0867fde
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Så här konfigurerar du en Campaign Standard-åtgärd:
 
 1. Välj **[!UICONTROL Configurations]** i ADMINISTRATION-menyavsnittet.
 
-1. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Actions]**. Listan med åtgärder visas.
+1. Klicka på **[!UICONTROL Actions]** i avsnittet **[!UICONTROL Manage]**. Listan med åtgärder visas.
 
 1. Välj den inbyggda **[!UICONTROL AdobeCampaignStandard]**-åtgärden. Åtgärdskonfigurationsrutan öppnas till höger på skärmen.
 
@@ -58,7 +58,7 @@ Så här konfigurerar du en Campaign Standard-åtgärd:
    >
    >* URL:en börjar med https
    >
-   >* Organisationen som är associerad med denna Adobe Campaign Standard-instans är densamma som Journey Optimizer OrganizationRG
+   >* Organisationen som är associerad med den här Adobe Campaign Standard-instansen är densamma som Journey Optimizer-organisationen
 
 När konfigurationen är klar är tre åtgärder tillgängliga i kategorin **[!UICONTROL Action]** när du utformar en resa: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]**. [Lär dig använda dem](../building-journeys/using-adobe-campaign-standard.md).
 

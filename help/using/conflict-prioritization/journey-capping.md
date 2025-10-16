@@ -4,7 +4,7 @@ description: Lär dig hur du skapar regler för bockning för dina resor och hur
 role: User
 level: Beginner
 exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
-source-git-commit: 450a6accf11d72d56e6b93cec9ec89dc8cf3c8f3
+source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -115,8 +115,8 @@ När en resa är live kan du checka in reserapporten om regeluppsättningen har 
 
 ![](assets/journey-report.png)
 
-Dessutom kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att skapa frågor för att identifiera vilken regel som gjorde att en profil inte pågick en viss resa. Ett frågeexempel finns i [det här avsnittet](../reports/query-examples.md#common-queries).
+Dessutom kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att skapa frågor för att identifiera vilken regel som gjorde att en profil inte pågick en viss resa. Ett frågeexempel finns i [det här avsnittet](../reports/query-examples.md#common-queries).
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3447618?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)
