@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 1a5f6be689c9e91ee0dc0b5f024dbe8020424337
+source-git-commit: f06a9d01721ff23dfdf95db8d984143bb36fe85c
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -23,46 +23,13 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 21-22 oktober 2025
 
 ### Nya funktioner {#oct-25-10-features}
 
-<table>
-<thead>
-<tr>
-<th><strong>Direktreklam, kanal på resor</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Tidigare begränsad till Campaigns finns nu Direct Mail Channel på arbetsytan, vilket gör att du kan lägga in Direct Mail på dina resor. Direktreklam kan nu användas i både batch- och 1:1-resscenarier, med stöd för filextraheringskonfiguration och tidsbaserade frekvensinställningar.</p>
-<p> Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-</td>
-</tr>
-</tbody>
-</table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Nytt API för att hämta åtgärdskampanjer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu finns ett nytt Journey Optimizer-API, som gör att du kan hämta och inspektera kampanjrelaterade data via programkod, som information, versioner och konfigurationer.</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -115,6 +82,41 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Direktreklamkanalen finns nu tillgänglig i samordnade kampanjer. Aktiviteten Direktutskick underlättar direktutskick inom din samordnade kampanj, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data.</p>
+<!--img src="assets/do-not-localize/FILE.gif"-->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Direktreklam, kanal på resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Tidigare begränsad till Campaigns finns nu Direct Mail Channel på arbetsytan, vilket gör att du kan lägga in Direct Mail på dina resor. Direktreklam kan nu användas i både batch- och 1:1-resscenarier, med stöd för filextraheringskonfiguration och tidsbaserade frekvensinställningar.</p>
+<p> Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<!--img src="assets/do-not-localize/FILE.gif"-->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Nytt API för att hämta åtgärdskampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu finns ett nytt Journey Optimizer-API, som gör att du kan hämta och inspektera kampanjrelaterade data via programkod, som information, versioner och konfigurationer.</p>
 <!--img src="assets/do-not-localize/FILE.gif"-->
 <!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
 </td>
@@ -193,20 +195,18 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tr>
 </tbody>
 </table>
-
 <table>
 <thead>
 <tr>
-<th><strong>Ny hjälpfunktion för körningsmetadata</strong><br/></th>
+<th><strong>Hjälp för körningsmetadata</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>En ny hjälpfunktion för executionMetadata finns i personaliseringsredigeraren. Det gör att du kan lägga till sammanhangsbaserad information till alla inbyggda åtgärder och hämta den i en datauppsättning för export till externa system.</p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+<p>En ny hjälpfunktion, executeMetadata, är tillgänglig i personaliseringsredigeraren. Det gör att du kan lägga till sammanhangsbaserad information till alla inbyggda åtgärder och hämta den i en datauppsättning för export till externa system.</p>
+<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Mer information finns i <a href="../personalization/functions/helpers.md#execution-metadata">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 13 oktober 2025</p>
 </td>
 </tr>
@@ -216,22 +216,40 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Experimentent</strong><br/></th>
+<th><strong>Experimentationsagenten är här!</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Experimentationsagenten är ett AI-drivet verktyg som moderniserar hur du kan köra och hantera digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och program. Experimentationsagenten bygger på Adobe Experience Platform AI-plattformen och experimenteringsverktygen och hjälper dig att köra experiment effektivare, organisera affärsmålen och generera åtgärdbara insikter, framhäva vad som fungerade, vad som inte gjorde det och var du ska experimentera härnäst.</p>
-<p>Som en del av den nya Experimentation Accelerator-funktionen levererar agenten:</p>
+<p>Experimenteringsagenten tillhandahålls av <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator.html" target="_blank">Adobe Experience Platform Agent Orchestrator</a> och är tillgänglig i Journey Optimizer. </p>
+<p>Experimentationsagenten är ett AI-drivet verktyg som moderniserar hur du kan köra och hantera digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och program. Det hjälper er att köra experiment effektivare, organisera affärsmålen och generera åtgärdbara insikter, framhäv vad som fungerade, vad som inte gjorde det och var ni ska experimentera härnäst.</p>
+<p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html" target="_blank">detaljerad dokumentation</a></p>
+<p>Tillgänglighetsdatum: 10 oktober 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>PDF bilagor till e-postmeddelanden</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu bifoga en statisk PDF-fil i ett e-postmeddelande som skickas med Journey Optimizer.</p>
 <ul>
-<li><strong>Prestanda:</strong> en tydlig vy av vad som hände i experimentet</li>
-<li><strong>Insikter:</strong> - en förklaring av varför resultatet inträffade</li>
-<li><strong>Affärsmöjligheter:</strong> vägledning om nästa åtgärd som ska vidtas</li>
+<li>Du kan skicka upp till 6 meddelanden med en PDF-bilaga per profil och år.</li>
+<li>Den största tillåtna filstorleken för varje bifogad fil är 5 MB.</li>
+<li>För ytterligare storlekar och volymer kan du köpa tillägget PDF-bilagor. Mer information får du av Adobe.</li>
 </ul>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<p>Tillgänglighetsdatum: 9 oktober 2025</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
+<p>Mer information finns i <a href="../email/pdf-attachments.md">detaljerad dokumentation</a></p>
+<p>Tillgänglighetsdatum: 30 september 2025</p>
 </td>
 </tr>
 </tbody>
@@ -247,43 +265,40 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Det finns nu ett nytt Journey Optimizer-API för att hämta resor och tillhörande objekt som kampanjer och ytor.</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+<p>Mer information finns i <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve/">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 25 september 2025</p>
 </td>
 </tr>
 </tbody>
 </table>
 
+
 ### Förbättringar
 
-- **Kampanjer, Experience Decision, Journeys**
-   - **Välj återanvändbara regler i mål** - Nu kan du utnyttja regelbyggaren när du använder målregler med meddelandeoptimeringsfunktionen i resor och kampanjer. <!-- [Read more](../FILE.md) -->
+**Välj återanvändbara regler i mål**
 
-- **Kanal - whatsApp**
-   - **Körningsfält för WhatsApp-kanal** - Förutom e-post och SMS är det nu möjligt att uppdatera standardkörningsfältet för WhatsApp. Det går också att åsidosätta körningsfältet som angetts globalt i de avancerade parametrarna för WHatsApp-reseaktiviteten eller i konfigurationen för WhatsApp-kanalen. <!-- [Read more](../FILE.md) -->
+Nu kan ni utnyttja regelbyggaren när ni använder målregler med funktionen Meddelandeoptimering i resor och kampanjer. <!-- [Read more](../FILE.md) -->
 
-- **Behörigheter**
-   - **Den som skapar en resa/kampanj ska inte kunna godkänna** - ett alternativ lades till när en godkännandeprincip skapades eller ställdes in för att förhindra att den som skapar en resa/kampanj godkänner sina egna objekt. <!-- [Read more](../FILE.md) -->
+**Körningsfält för WhatsApp-kanal**
 
-- **Kanal - tryck**
-   - **Mobila Live-aktiviteter - privat beta** - Live-aktiviteter tillhandahåller uppdateringar i realtid och interaktiva upplevelser i mobilappar, så att användarna kan hålla sig informerade om pågående händelser eller uppgifter direkt på enhetens skärm. Den här funktionen förbättrar engagemanget genom att leverera live-information, som förloppsspårning, händelseuppdateringar eller interaktivt innehåll, utan att användarna behöver öppna appen. <!-- [Read more](../FILE.md) -->
+Förutom e-post och SMS är det nu möjligt att uppdatera standardkörningsfältet för WhatsApp. Det går också att åsidosätta körningsfältet som angetts globalt i de avancerade parametrarna för WHatsApp-reseaktiviteten eller i konfigurationen för WhatsApp-kanalen. <!-- [Read more](../FILE.md) -->
 
-- **Resor**
-   - **Nya reseaviseringar** - Tillgänglighetsdatum: 14 oktober 2025
-Nya förkonfigurerade aviseringar är tillgängliga för resor: Profilborttagningsfrekvensen har överskridits (förhållandet mellan antal ignorerade profiler och angivna profiler under de senaste 5 minuterna har överskridits), felfrekvensen för anpassade åtgärder har överskridits (förhållandet mellan anpassade åtgärdsfel och slutförda HTTP-anrop under de senaste 5 minuterna har överskridits), Profilfelsfrekvensen har överskridits (förhållandet mellan profiler och fel som angetts under de senaste 5 minuterna). <!-- [Read more](../FILE.md) -->
+**Behörigheter**
 
-- **Konfiguration**
-   - **Stöd för anpassade attribut med en klickning för att avbryta prenumerationen** - Tillgänglighetsdatum: 6 oktober 2025
-Med Journey Optimizer kan du, om du hanterar samtycke utanför Adobe, ange en extern anpassad slutpunkt genom att definiera en egen länk för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering. Om du vill anpassa e-postadressen för att avbryta prenumerationen ytterligare kan du nu definiera anpassade attribut som läggs till i medgivandehändelsen. Den här funktionen har redan varit tillgänglig för den anpassade URL:en för ett klick sedan 25 augusti och har nu släppts för alternativet Mailto (unsubscribe) med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst. <!-- [Read more](../FILE.md) -->
+**Nya reseaviseringar**
 
-- **Kanal - e-post**
-   - **PDF-bilagor till e-postmeddelanden** - Tillgänglighetsdatum: 30 september 2025
-Du kan nu bifoga en statisk PDF-fil i ett e-postmeddelande som skickas med Journey Optimizer. Du kan skicka upp till 6 meddelanden med en bifogad PDF-fil per profil och år. Den största tillåtna filstorleken för varje bifogad fil är 5 MB. För ytterligare storlekar och volymer kan du köpa tillägget PDF-bilaga. Mer information får du av Adobe.
+Nya förkonfigurerade aviseringar är tillgängliga för resor: [Profilborttagningsfrekvens har överskridits](../reports/alerts.md#alert-discard-rate) (Proportionering av ignorerade profiler under de senaste 5 minuterna har överskridits), [Anpassad åtgärdsfelfrekvens har överskridits](../reports/alerts.md#alert-custom-action-error-rate) (förhållandet mellan anpassade åtgärdsfel och slutförda HTTP-anrop under de senaste 5 minuterna har överskridits) och [Profilfelsfrekvens har överskridits](../reports/alerts.md#alert-profile-error-rate) (Proportioner) av felfria profiler till angivna profiler under de senaste 5 minuterna har överskridit tröskelvärdet). Du kan ändra tröskelvärden och prenumerera på enskilda varningar på resenivå jämfört med globalt.
 
-  >[!AVAILABILITY]
-  >
-  >Den här förbättringen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer (Allmän tillgänglighet).
+Tillgänglighetsdatum: 14 oktober 2025
 
-  <!-- [Read more](../FILE.md) -->
+**Stöd för anpassade attribut för adressen Mailto (unsubscribe)**
 
+Med Journey Optimizer kan du, om du hanterar samtycke utanför Adobe, ange externa anpassade slutpunkter genom att definiera en egen länk för att avbryta prenumerationen och en anpassad e-postadress för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
+
+Om du vill anpassa dina anpassade slutpunkter ytterligare kan du nu definiera anpassade attribut som också läggs till i medgivandehändelsen. [Läs mer](../email/list-unsubscribe.md#custom-attributes)
+
+>[!AVAILABILITY]
+>
+>Den här funktionen har redan varit tillgänglig för den anpassade **[!UICONTROL One-click Unsubscribe URL]** sedan 25 augusti och har nu släppts för alternativet **[!UICONTROL Mailto (unsubscribe)]** med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
+
+Tillgänglighetsdatum: 6 oktober 2025
