@@ -145,4 +145,4 @@ När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för de
 
 I videon nedan visas hur du skapar en kodbaserad upplevelsekampanj, konfigurerar dess egenskaper, testar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428868/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449457/?captions=swe&quality=12&learn=on)
