@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: 7973f56c26c01d4845138f70cd00bce8ab7fc09c
+source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
@@ -21,7 +21,7 @@ I enlighet med branschens standarder och bestämmelser måste alla SMS-marknadsf
 
 >[!IMPORTANT]
 >
->Textmeddelandekommunikation kan följa olika lagkrav beroende på vilken typ av meddelanden det gäller, var du skickar dina textmeddelanden och var mottagarna finns. Medan Adobe Journey Optimizer hanterar meddelandena om korta koder, långa koder och avgiftsfria nummer enligt beskrivningen nedan, bör du kontakta ditt juridiska ombud för att kontrollera att din textmeddelandekommunikation uppfyller alla gällande lagkrav.
+>Textmeddelandekommunikation kan följa olika lagkrav beroende på vilken typ av meddelanden de gäller, var du skickar dina textmeddelanden och var mottagarna finns. Medan Adobe Journey Optimizer hanterar meddelanden om korta koder, långa koder och avgiftsfria nummer så som beskrivs nedan, bör du kontakta ditt juridiska ombud för att kontrollera att din textmeddelandekommunikation uppfyller alla gällande lagkrav.
 >
 
 ## Interna inkommande nyckelord {#sms-native-keywords}
@@ -69,8 +69,8 @@ De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och k
 
 * I videon nedan får du lära dig hur du konfigurerar dubbel anmälan för SMS.
 
-+++ Se videon
+  +++ Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3440280/?learn=on&captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3427129/?learn=on)
 
-+++
+  +++

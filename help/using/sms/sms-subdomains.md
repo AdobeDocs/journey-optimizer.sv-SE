@@ -8,7 +8,7 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, underdomäner, konfiguration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-source-git-commit: 9f66606e2673554f7dfb40dd48cfc17eca2ca06b
+source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%
@@ -26,13 +26,13 @@ ht-degree: 0%
 >id="ajo_admin_subdomain_sms"
 >title="Delegera en SMS/MMS-underdomän"
 >abstract="Du måste konfigurera en underdomän att använda för dina textmeddelanden, eftersom du behöver den här underdomänen för att skapa en SMS-konfiguration. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_sms_subdomain"
 >title="Välj en SMS/MMS-underdomän"
 >abstract="Om du vill kunna skapa en SMS-konfiguration måste du kontrollera att du tidigare har konfigurerat minst en SMS-underdomän att välja från listan över underdomännamn."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Skapa en SMS-konfiguration"
 
 ## Kom igång med SMS-underdomäner {#gs-sms-mms-subdomains}
 
@@ -157,4 +157,4 @@ Om SMS-underdomänen pekar på en CNAME-post kan du ta bort den CNAME DNS-post s
 >
 >En SMS-underdomän kan peka på en CNAME-post eftersom den antingen var en [befintlig underdomän](#sms-use-existing-subdomain) som delegerats till Adobe med [CNAME-metoden](../configuration/delegate-subdomain.md#cname-subdomain-setup) eller en [ny SMS-underdomän](#sms-configure-new-subdomain) som du konfigurerade.
 
-När du har hanterat din begäran av Adobe visas inte längre den odelegerade domänen på underdomänens lagersida.
+När din begäran har hanterats av Adobe visas inte längre den odelegerade domänen på underdomänens lagersida.

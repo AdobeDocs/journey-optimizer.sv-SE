@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d6f74566-c913-4727-83b9-473a798a0158
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Konfigurera API-autentiseringsuppgifter för SMS/MMS
 
-Om du vill konfigurera Twilio med Journey Optimizer måste du skapa nya API-autentiseringsuppgifter som används för Twilio:
+Om du vill konfigurera Twilio med Journey Optimizer måste du skapa nya API-autentiseringsuppgifter för Twilio:
 
 1. I den vänstra listen bläddrar du till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** och väljer menyn **[!UICONTROL API Credentials]**. Klicka på knappen **[!UICONTROL Create new API credentials]**.
 
@@ -56,7 +56,7 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 
 RCS-meddelanden stöds i Adobe Journey Optimizer via Twilio med funktionen [Anpassad SMS-provider](sms-configuration-custom.md) . På så sätt kan du leverera interaktiva budskap via verifierade affärsprofiler, som innehåller element som karuseller, knappar och multimediematerial.
 
-➡️ [Se hur Twilio stöder RCS i Twilio-dokumentationen &#x200B;](https://www.twilio.com/docs/rcs)
+➡️ [Se hur Twilio stöder RCS i Twilio-dokumentationen ](https://www.twilio.com/docs/rcs)
 
 Om du vill aktivera RCS-meddelanden med Twilio måste nya API-autentiseringsuppgifter konfigureras via en anpassad SMS-provider. Befintliga SMS-autentiseringsuppgifter för Twilio är inte kompatibla eftersom RCS kräver ett distinkt nyttolastformat.
 
@@ -72,7 +72,7 @@ Så här konfigurerar du RCS med Twilio:
 
 1. **Skapa API-autentiseringsuppgifter med anpassad som SMS-leverantör**
 
-   I Journey Optimizer [definierar &#x200B;](sms-configuration-custom.md#api-credential) nya API-autentiseringsuppgifter specifikt för RCS med&quot;Custom&quot; som SMS-leverantör. Använd lämplig autentiseringsmetod för RCS-slutpunkter, bas-URL och rubriker.
+   I Journey Optimizer [definierar ](sms-configuration-custom.md#api-credential) nya API-autentiseringsuppgifter specifikt för RCS med&quot;Custom&quot; som SMS-leverantör. Använd lämplig autentiseringsmetod för RCS-slutpunkter, bas-URL och rubriker.
 
 När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalkonfiguration för dina RCS-meddelanden. [Läs mer](sms-configuration-surface.md)
 

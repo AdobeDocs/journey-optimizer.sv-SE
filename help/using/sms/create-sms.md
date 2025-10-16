@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: c52821a657aead38a4d08540e60686cfe117a95e
+source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1058'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL
 
    * **Schemalagd - marknadsföring**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka marknadsföringsmeddelanden. De konfigureras och körs från användargränssnittet.
 
-   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
+   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
 
 1. I avsnittet **[!UICONTROL Properties]** redigerar du din kampanjs **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
@@ -112,7 +112,7 @@ Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna 
 
 1. När du har definierat innehållet kan du lägga till spårade URL:er i meddelandet. Gå till menyn **[!UICONTROL Helper functions]** och välj **[!UICONTROL Helpers]** om du vill göra det.
 
-   Observera att för att du ska kunna använda funktionen för förkortning av URL måste du först konfigurera en underdomän som sedan länkas till din konfiguration. [Läs mer](sms-subdomains.md)
+   Om du vill använda förkortningsfunktionen för URL måste du först konfigurera en underdomän som sedan ska länkas till din konfiguration. [Läs mer](sms-subdomains.md)
 
    >[!NOTE]
    >

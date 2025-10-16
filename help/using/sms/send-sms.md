@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
-source-git-commit: 22a8742bf9000ed1cc8437d7ac89747276284dbf
+source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Förhandsgranska textmeddelandet {#preview-sms}
 
-När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet.
+När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata (överförda från en CSV/JSON-fil eller tillagda manuellt) för att förhandsgranska innehållet. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet.
 
 Om du vill göra det klickar du på **[!UICONTROL Simulate content]** och kontrollerar sedan meddelandet med testprofildata.
 

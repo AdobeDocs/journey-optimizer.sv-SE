@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: b5ea41cec72fb80dd2fcc3aa467e80cd293fd239
+source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Använd [!DNL Journey Optimizer] för att skicka textmeddelanden (SMS/MMS/RCS) t
 
 Textmeddelanden kan skapas och skickas på en resa eller i en kampanj. För SMS, MMS och RCS använder du SMS-åtgärden.
 
-* På en **resa**. Skapa en resa, lägg till en SMS-aktivitet och definiera grundläggande inställningar. Bläddra sedan till åtgärdsrutan: höger SMS för att skapa innehållet för SMS-, MMS- eller RCS-meddelandet. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
+* På en **resa**. Skapa en resa, lägg till en SMS-aktivitet och definiera grundläggande inställningar. Bläddra sedan till rutan SMS-åtgärder till höger för att skapa innehållet för SMS-, MMS- eller RCS-meddelandet. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
 * I en **kampanj**. Skapa en kampanj, välj SMS som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera SMS-, MMS- eller RCS-meddelandet som ska skickas. [Lär dig skapa en kampanj](../campaigns/create-campaign.md#configure)
 
@@ -68,26 +68,26 @@ Adobe Journey Optimizer skickar textmeddelanden via SMS-tjänstleverantörer (el
 
 * I videon nedan visas hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina kundresor.
 
-  +++Se video
+  +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3428916?learn=on&captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 
   +++
 
 * Videon nedan hjälper er att förstå vilka mobilfunktioner Adobe Journey Optimizer erbjuder marknadsförare.
 
 
-  +++Se video
+  +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3430381?quality=12&learn=on&captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3426021?quality=12&learn=on)
 
   +++
 
 * Videon nedan hjälper dig att konfigurera och skicka varumärkesanpassade, interaktiva RCS-meddelanden i Adobe Journey Optimizer med hjälp av en anpassad SMS-leverantör.
 
 
-  +++Se video
+  +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3464759?captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3464755)
 
   +++
