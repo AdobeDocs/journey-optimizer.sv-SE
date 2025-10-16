@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: df3abb7da17eb21e5e4120b55bdeb61fec3e202d
+source-git-commit: 3b736463615dac1bd5de7c7cee3ae46e9a2526da
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 18%
@@ -65,10 +65,10 @@ ht-degree: 18%
       + [Live-rapport under din resa](using/building-journeys/report-journey.md)
    + Hantera dina resor {#manage-journey}
       + [Hantera dina resor](/help/rp_landing_pages/manage-journey-landing-page.md)
-      + [Arbeta med steg för resa](using/reports/journey-step-events-overview.md)
       + [Bläddra och filtrera dina resor](using/building-journeys/journey-ui.md)
       + [Profilinträde under resor](using/building-journeys/entry-management.md)
       + [Använd tilläggsidentifierare under resor](using/building-journeys/supplemental-identifier.md)
+      + [Arbeta med steg för resa](using/reports/journey-step-events-overview.md)
       + [Hantering av tidszoner](using/building-journeys/timezone-management.md)
       + [Sändningsoptimering](using/building-journeys/send-time-optimization.md)
       + [Avsluta din resa](using/building-journeys/end-journey.md)
@@ -883,7 +883,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
