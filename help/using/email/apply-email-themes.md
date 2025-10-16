@@ -121,7 +121,7 @@ Följ stegen nedan för att definiera ett tema som du kan använda i ditt framti
 
 Följ stegen nedan om du vill använda standardteman eller anpassade formatteman i ett e-postmeddelande.
 
-1. I [!DNL Journey Optimizer] [lägger du till en e-poståtgärd ](create-email.md) för en resa eller kampanj och [redigerar e-postbrödtexten](get-started-email-design.md#key-steps).
+1. I [!DNL Journey Optimizer] [lägger du till en e-poståtgärd &#x200B;](create-email.md) för en resa eller kampanj och [redigerar e-postbrödtexten](get-started-email-design.md#key-steps).
 
 1. Du kan välja någon av följande åtgärder:
 
