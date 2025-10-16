@@ -11,20 +11,20 @@ keywords: resa, stegvisa händelser, analys, rapportering, övervakning, XDM
 hide: true
 hidefromtoc: true
 exl-id: 9f8e7d6c-5b4a-3928-1756-849302a11c2b
-source-git-commit: df3abb7da17eb21e5e4120b55bdeb61fec3e202d
+source-git-commit: 17ea20a6b16965775bda98d7db1f12e28b037aaf
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '968'
 ht-degree: 1%
 
 ---
 
 # Arbeta med steg för resa {#work-with-journey-step-events}
 
-Resestegshändelser genereras automatiskt händelser som samlar in detaljerad information om varje steg en profil tar när de går igenom en resa i Adobe Journey Optimizer. Dessa händelser ger en heltäckande bild av reseprestanda och möjliggör kraftfulla analysfunktioner.
+Resestegshändelser genereras automatiskt händelser som samlar in detaljerad information om varje steg som en [profil](../audience/get-started-profiles.md) tar när de går igenom en [resa](../building-journeys/journey.md) i Adobe Journey Optimizer. Dessa händelser ger en omfattande insyn i [reseprestanda](../building-journeys/report-journey.md) och möjliggör kraftfulla analysfunktioner.
 
 ## Vad är steg-händelser för resan? {#what-are-step-events}
 
-Resestegshändelser är systemgenererade XDM-händelser (Experience Data Model) som Adobe Journey Optimizer automatiskt skapar och skickar till Adobe Experience Platform när en profil flyttas från en nod till en annan under en resa. Varje händelse motsvarar en viss åtgärd eller övergång i kundens upplevelse.
+Resestegshändelser är systemgenererade [XDM-händelser (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} som Adobe Journey Optimizer automatiskt skapar och skickar till [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} när en profil flyttas från en nod till en annan under en resa. Varje händelse motsvarar en specifik [reseaktivitet](../building-journeys/about-journey-activities.md) eller övergång i kundens reseupplevelse.
 
 Det finns två huvudtyper av steg för resan:
 
@@ -35,16 +35,18 @@ Det finns två huvudtyper av steg för resan:
 
 Resestegshändelser genereras automatiskt för olika reseaktiviteter:
 
-- **Anmälningshändelser**: När en profil går in på en resa
-- **Åtgärdskörning**: När meddelanden skickas eller anpassade åtgärder utförs
-- **Villkorsutvärdering**: När profiler passerar genom beslutspunkter
-- **Vänta på aktiviteter**: När profiler kommer in och avslutar väntar-noder
-- **Avsluta händelser**: När profiler slutför eller avslutar en resa
+- **Anmälningshändelser**: När en profil [går in i en resa](../building-journeys/entry-management.md)
+- **Åtgärdskörning**: När [meddelanden skickas](../building-journeys/journeys-message.md) eller [anpassade åtgärder](../building-journeys/using-custom-actions.md) utförs
+- **Villkorsutvärdering**: När profiler passerar genom [villkor](../building-journeys/condition-activity.md) och beslutspunkter
+- **Vänta på aktiviteter**: När profiler anges och avslutas [väntar du på noder](../building-journeys/wait-activity.md)
+- **Avsluta händelser**: När profiler är klara eller [Avsluta en resa](../building-journeys/end-journey.md)
 - **Felhantering**: När fel inträffar under körning
 
 >[!NOTE]
 >
->Resestegshändelser aktiveras som standard för alla instanser. Du kan inte ändra eller uppdatera scheman och datauppsättningar som har skapats under etablering för steghändelser. Dessa scheman och datauppsättningar är skrivskyddade.
+>Resestegshändelser aktiveras som standard för alla instanser. Du kan inte ändra eller uppdatera [scheman och datamängder](sharing-overview.md) som har skapats under etablering för steghändelser. Dessa scheman och datauppsättningar är skrivskyddade.
+
+Läs mer om [scheman för kundstegshändelser](sharing-field-list.md).
 
 ## Varför resestegshändelser är viktiga {#why-step-events-matter}
 
@@ -52,21 +54,21 @@ Resestegshändelser ger viktigt värde för organisationer som använder Adobe J
 
 ### Realtidsanalys och -övervakning {#real-time-analytics}
 
-- **Prestandaspårning för resan**: Övervaka hur profiler flödar genom dina resor i realtid
-- **Konverteringsanalys**: Förstå bortfallspunkter och lyckade konverteringssökvägar
-- **Felidentifiering**: Identifiera och felsök problem när de inträffar
+- **Prestandaspårning för resan**: Övervaka hur profiler flödar genom dina resor i realtid med [liverapporter](live-report.md)
+- **Konverteringsanalys**: Förstå bortfallspunkter och lyckade konverteringssökvägar med [reseanalys](journey-global-report-cja.md)
+- **Felidentifiering**: Identifiera och felsök problem när de uppstår med [övervakning och aviseringar](alerts.md)
 
 ### Dataintegrering och -insikter {#data-integration}
 
-- **Plattformsoberoende analys**: Kombinera resedata med andra Adobe Experience Platform-datakällor
-- **Vyn Customer 360**: Skapa omfattande kundprofiler med reseinteraktioner
-- **Attributionsmodellering**: Koppla rörelsekontaktytor till affärsresultat längre fram i kedjan
+- **Plattformsoberoende analys**: Kombinera resedata med andra [Adobe Experience Platform-datakällor](../datasource/adobe-experience-platform-data-source.md)
+- **Vyn Customer 360**: Skapa omfattande [kundprofiler](../audience/get-started-profiles.md) som innehåller reseinteraktioner
+- **Attributionsmodellering**: Koppla kontaktpunkter för resan till affärsresultat längre fram i kedjan med [Customer Journey Analytics](cja-ajo.md)
 
 ### Optimeringsmöjligheter {#optimization}
 
-- **A/B-testningsinsikter**: Analysera prestanda för olika kundvägar
-- **Förbättring av Personalization**: Förbättra framtida upplevelser genom att använda beteendedata för resan
-- **Driftseffektivitet**: Identifiera flaskhalsar och optimera resedesignen
+- **A/B-testningsinsikter**: Analysera prestanda för olika kundvägar med [experimenterande](campaign-global-report-cja-experimentation.md)
+- **Förbättring av Personalization**: Använd data om resebeteende för att förbättra framtida upplevelser med [dynamiskt innehåll](../personalization/dynamic-content.md)
+- **Driftseffektivitet**: Identifiera flaskhalsar och optimera [resedesignen](../building-journeys/using-the-journey-designer.md)
 
 ## Så här använder du steg-händelser för resan {#how-to-use-step-events}
 
@@ -74,21 +76,25 @@ Resestegshändelser ger viktigt värde för organisationer som använder Adobe J
 
 Händelsedata för steg på resan lagras automatiskt i Adobe Experience Platform och kan nås via:
 
-1. **Data Lake-frågor**: Använd SQL för att fråga datauppsättningen `journey_step_events`
-2. **Customer Journey Analytics**: Analysera resedata med avancerade analysverktyg
-3. **Realtidsrapportering**: Få åtkomst till data via Journey Optimizer inbyggda rapporteringsfunktioner
+1. **Data Lake-frågor**: Använd SQL för att fråga datauppsättningen `journey_step_events` med [frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=sv){target="_blank"}
+2. **Customer Journey Analytics**: Analysera resedata med [avancerade analysverktyg](cja-ajo.md)
+3. **Realtidsrapportering**: Få åtkomst till data via Journey Optimizer [inbyggda rapporteringsfunktioner](gs-reports.md)
 4. **API:er**: Använd händelsedata för anpassade program programmatiskt
+
+Läs mer om [åtkomst till datauppsättningar](../data/datasets-query-examples.md).
 
 ### Tillgängliga nyckeldatapunkter {#key-data-points}
 
 Resestegshändelser samlar in omfattande information, bland annat:
 
-- **Reseidentifiering**: Resurs-ID, version och namn
-- **Profilinformation**: Profil-ID och associerade identiteter
-- **Steginformation**: Nodnamn, stegtyp och körningsstatus
+- **Reseidentifiering**: [Resurs-ID, version och namn](sharing-journey-fields.md)
+- **Profilinformation**: [Profil-ID och associerade identiteter](sharing-identity-fields.md)
+- **Steginformation**: [Nodnamn, stegtyp och körningsstatus](sharing-common-fields.md)
 - **Tidsstämplar**: Exakt timing för varje resesteg
-- **Åtgärdsresultat**: Status för lyckad/misslyckad och körningsinformation
-- **Felinformation**: Detaljerade felkoder och beskrivningar när problem uppstår
+- **Åtgärdsresultat**: [Status för lyckad/misslyckad och körningsinformation](sharing-execution-fields.md)
+- **Felinformation**: Detaljerade [felkoder och beskrivningar](sharing-field-list.md#discarded-events) när problem uppstår
+
+Utforska alla [tillgängliga fältdefinitioner](sharing-field-list.md).
 
 ### Vanliga användningsfall {#common-use-cases}
 
@@ -120,6 +126,8 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
 - Identifiera var profiler oftast lämnar resan
 - Mät hur lång tid som tillbringats i olika resefaser
 
+Läs mer om [frågetekniker för trattanalys](query-examples.md#common-queries).
+
 ## Exempel och resurser {#samples-resources}
 
 ### Frågeexempel och mallar {#query-examples}
@@ -143,9 +151,9 @@ Förstå den fullständiga datastrukturen för steg-händelser i kundresan:
 
 **Prestandaoptimering**
 
-- Använd `journeyVersionID` i stället för `journeyVersionName` för bättre frågeprestanda
+- Använd `journeyVersionID` i stället för `journeyVersionName` för bättre frågeprestanda ([läs mer om reseegenskaper](../building-journeys/expression/journey-properties.md))
 - Filtrera efter datumintervall för att förbättra frågehastigheten på stora datamängder
-- Utnyttja profilidentiteter som matchar konfigurationen för resenamnrymden
+- Utnyttja profilidentiteter som matchar konfigurationen för [resenamnrymden](../building-journeys/entry-management.md)
 
 **Datakvalitet**
 
@@ -155,32 +163,34 @@ Förstå den fullständiga datastrukturen för steg-händelser i kundresan:
 
 **Analysstrategier**
 
-- Kombinera steg-händelser för resan med feedback-data för fullständig attribuering
+- Kombinera steg-händelser för resan med [feedbackdata](../data/datasets-query-examples.md#message-feedback-event-dataset) för fullständig attribuering
 - Använd tidsbaserad analys för att förstå hur snabbt resan går och hur många flaskhalsar den har
-- Skapa kohortanalyser för att jämföra olika varianter av resan
+- Skapa kohortanalyser för att jämföra olika [reseversioner](../building-journeys/testing-the-journey.md)
 
 ### Avancerade analysfunktioner {#advanced-analytics}
 
 **Integrering med Customer Journey Analytics**
-Resestegshändelser kan analyseras med Customer Journey Analytics för:
+Resestegshändelser kan analyseras med [Customer Journey Analytics](cja-ajo.md) för:
 
 - Avancerad attribueringsmodellering
 - Visualisering av flerkanalsresor
 - Prediktiv analys av reseresultat
 
+Lär dig hur du [konfigurerar Customer Journey Analytics](report-gs-cja.md) för Journey Optimizer-data.
+
 **Realtidsbeslut**
 Använd händelsemönster för kundstegshändelser för att:
 
-- Utlösa personalisering i realtid
-- Optimera den dynamiska resan
-- Aktivera sammanhangsbaserade rekommendationer för nästa bästa åtgärd
+- Utlös [personalisering](../personalization/personalize.md) i realtid
+- Implementera [optimering av dynamisk resa](../building-journeys/optimize.md)
+- Aktivera sammanhangsbaserade rekommendationer för nästa bästa åtgärd med [Beslutshantering](../offers/get-started/starting-offer-decisioning.md)
 
 ## Ytterligare resurser {#additional-resources}
 
 ### Dokumentationslänkar {#documentation-links}
 
 - **[Översikt över delning av resesteg](sharing-overview.md)**: Förstå hur resedata flödar till Adobe Experience Platform
-- **[Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)**: Fullständig XDM-schemareferens
+- **[Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}**: Fullständig XDM-schemareferens
 - **[Journey Optimizer-rapportering](report-gs-cja.md)**: Översikt över rapportfunktioner i Journey Optimizer
 
 ### Integreringsguider {#integration-guides}
@@ -189,4 +199,10 @@ Använd händelsemönster för kundstegshändelser för att:
 - **[Datahantering](../data/export-datasets.md)**: Exportera och hantera resedata
 - **[Sekretess och styrning](../privacy/audit-logs.md)**: Datastyrningsaspekter för resehändelser
 
-Evenemang för steg på resan utgör grunden för avancerad reseanalys i Adobe Journey Optimizer. Genom att förstå och utnyttja dessa händelser effektivt kan ni få djupgående insikter om kundbeteenden, optimera kundresan och skapa mer personaliserade upplevelser för era kunder.
+Evenemang för steg på resan utgör grunden för avancerad reseanalys i Adobe Journey Optimizer. Genom att förstå och utnyttja dessa händelser effektivt kan ni få djupgående insikter om kundbeteenden, [optimera kundens resultat](../building-journeys/optimize.md) och skapa fler [personaliserade upplevelser](../personalization/personalize.md) för era kunder.
+
+**Nästa steg:**
+
+- Börja med att [skapa dina första reserapporter](sharing-overview.md)
+- Utforska [frågeexempel](query-examples.md) för specifika användningsområden
+- Läs mer om [bästa praxis för resehantering](../building-journeys/journey.md)
