@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, attribut, personalisering
 exl-id: d188bb6b-2924-4818-b007-be660cce249c
-source-git-commit: c0afa3e2bc6dbcb0f2f2357eebc04285de8c5773
+source-git-commit: 87245fffb3ad10d51a7500d006dbe69b1905640e
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%

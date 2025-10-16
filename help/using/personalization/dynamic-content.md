@@ -9,9 +9,9 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, dynamiskt innehåll
 exl-id: 639ad7df-0d0f-4c9b-95d1-f3101267aae2
-source-git-commit: 0ce842816e8a63fabd21483323c664238c32848a
+source-git-commit: 87245fffb3ad10d51a7500d006dbe69b1905640e
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Med Adobe Journey Optimizer kan du använda villkorliga regler som skapats i bib
 
 Dynamiskt innehåll kan skapas i alla fält där du kan lägga till personalisering med personaliseringsredigeraren. Detta inkluderar ämnesrad, länkar, push-meddelanden och textrepresentationer. [Läs mer om personalisering](personalize.md)
 
-Dessutom kan du använda villkorliga regler i e-postprogrammet Designer för att skapa flera varianter av en innehållskomponent.
+Dessutom kan du använda villkorliga regler i e-postprogrammet för Designer för att skapa flera varianter av en innehållskomponent.
 
 ## Lägg in dynamiskt innehåll i uttryck {#perso-expressions}
 

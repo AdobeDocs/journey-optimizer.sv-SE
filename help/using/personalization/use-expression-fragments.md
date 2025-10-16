@@ -9,7 +9,7 @@ role: Data Engineer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 24baaa2438c6bbdddd582c71dbdd36188d12f905
+source-git-commit: 87245fffb3ad10d51a7500d006dbe69b1905640e
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -73,7 +73,7 @@ De sorteras efter skapandedatum: nyligen tillagda uttrycksfragment visas först 
 
 >[!NOTE]
 >
->Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) - eller [push](../push/design-push.md) -innehåll, bevaras radbrytningarna. Testa därför ditt [SMS](../sms/send-sms.md) eller [push](../push/send-push.md)-meddelande innan du skickar det.
+>Om du skapar ett uttrycksfragment som innehåller flera radbrytningar och använder det i [SMS](../sms/create-sms.md#sms-content) - eller [push](../push/design-push.md) -innehåll, bevaras radbrytningarna. Testa därför ditt [SMS](../sms/send-sms.md)- eller [push](../push/send-push.md)-meddelande innan du skickar det.
 
 ## Använd implicita variabler {#implicit-variables}
 

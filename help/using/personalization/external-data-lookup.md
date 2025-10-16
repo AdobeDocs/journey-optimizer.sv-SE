@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: eae8a09a-5d27-4a80-b21f-7f795d800602
-source-git-commit: 2a5db6950ac82fd18deb2e4009c9a43247444d6a
+source-git-commit: 87245fffb3ad10d51a7500d006dbe69b1905640e
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 0%
@@ -210,7 +210,7 @@ I Edge Delivery Section of ensure trace som en del av körningsinformationen har
 
 * Hur skickar man ett sammanhangsberoende attribut från begäran som parameter till en extern datasökning?
 
-  Använd Kontextuella attribut > Datastream > Event-menyn för att bläddra i det Experience Event-schema som du använder och infoga det relevanta attributet som ett parametervärde enligt följande:
+  Använd Sammanhangsbaserade attribut > Datastream > Event-menyn för att bläddra i det Experience Event-schema som du använder och infoga det relevanta attributet som ett parametervärde som det här:
 
   ```
   {{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}
