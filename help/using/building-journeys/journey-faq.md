@@ -11,9 +11,9 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: a7da542320a38dbc739ec42ee4926fce1dea1df0
+source-git-commit: 32848633cdfb5683b45286fcdd22711a82d591b5
 workflow-type: tm+mt
-source-wordcount: '2363'
+source-wordcount: '4094'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,22 @@ En resa består av
 * **Anpassade åtgärder**: Integrering med tredjepartssystem
 
 Läs mer om [reseaktiviteter](about-journey-activities.md).
+
++++
+
++++ Hur väljer jag mellan en enhetlig resa och en läsande målgruppsresa?
+
+Använd **enhetsresor** när:
+
+* Ni måste reagera på enskilda kundåtgärder i realtid (t.ex. inköpsbekräftelse, övergivna kundvagnar)
+* Varje kund bör utvecklas i sin egen takt
+* Du vill aktivera baserat på specifika händelser
+
+Använd **läs målgruppsresor** när:
+
+* Du skickar batchkommunikation till en grupp (t.ex. månatliga nyhetsbrev, kampanjkampanjer)
+* Alla kunder bör få meddelandet samtidigt
+* Ni riktar in er på ett fördefinierat målgruppssegment
 
 +++
 
@@ -150,6 +166,104 @@ Läs mer om [profiluppdateringar](update-profiles.md).
 
 +++
 
++++ Hur skickar jag ett e-postmeddelande direkt efter att någon har gjort ett köp?
+
+Skapa en **unitär händelseutlöst resa**:
+
+1. Konfigurera en Inköpshändelse med orderinformationen
+2. Lägg till händelsen som startpunkt för resan
+3. Följa direkt med en e-poståtgärd
+4. Designa ett e-postmeddelande med orderbekräftelse med personlig orderinformation
+5. Publicera resan
+
+Resan utlöses automatiskt när en köphändelse tas emot och bekräftelsemeddelandet skickas i realtid.
+
+Läs mer om [händelsekonfiguration](../event/about-events.md) och [e-poståtgärder](journeys-message.md).
+
++++
+
++++ Kan jag skicka om ett meddelande om någon inte öppnar eller klickar på det?
+
+Ja. Använd en **villkorsaktivitet** i kombination med **vänteaktiviteter**:
+
+1. Lägg till en vänteaktivitet (t.ex. vänta 3 dagar)
+2. Lägg till en villkorsaktivitetskontroll om e-postmeddelandet öppnades eller klickades
+3. Skapa två banor:
+   * **Om du har öppnat/klickat**: Avsluta resan eller fortsätt med nästa steg
+   * **Om du inte har öppnat/klickat**: Skicka ett påminnelsemeddelande via e-post med en annan ämnesrad
+
+**Bästa tillvägagångssätt**: Begränsa antalet omgångar så att inte skräppost visas (vanligtvis 1-2 påminnelser maximalt).
+
+Läs mer om [reaktionshändelser](reaction-events.md).
+
++++
+
++++ Hur skapar jag en kundvagnsöverlämningsresa?
+
+Skapa en händelseutlöst resa med väntetid och logik:
+
+1. **Konfigurera en händelse om att kundvagnen överges**: Utlöses när objekt läggs till men utcheckningen inte slutförs inom en tidsram
+2. **Lägg till en vänteaktivitet**: Vänta i 1-2 timmar för att ge kunden tid att slutföra naturligt
+3. **Lägg till ett villkor**: Kontrollera om köpet slutfördes under väntan
+4. **Om det inte köpts**: Skicka en påminnelse om att kunden har lämnat tjänsten med kundvagnsinnehåll via e-post
+5. **Valfritt**: Lägg till ytterligare en väntan (24 timmar) och skicka en andra påminnelse med ett incitament (t.ex. 10 % rabatt)
+
+Läs mer om [användningsfall för resan](jo-use-cases.md).
+
++++
+
++++ Hur delar jag upp kunderna på olika vägar baserat på deras inköpshistorik?
+
+Använd en **villkorsaktivitet** med målgruppsmedlemskap eller profilattribut:
+
+1. Lägg till en villkorsaktivitet på din resa
+2. Skapa flera sökvägar baserat på villkor:
+   * **Sökväg 1**: Kunder med högt värde (totalt antal köp > $1000)
+   * **Sökväg 2**: Vanliga kunder (totalt 100-1 000 USD)
+   * **Sökväg 3**: Nya kunder (totalt antal köp &lt; $100)
+3. Lägg till olika meddelanden eller erbjudanden för varje sökväg
+
+Läs mer om [villkor](condition-activity.md) och [målgruppskvalifikation](audience-qualification-events.md).
+
++++
+
++++ Hur hanterar jag olika tidszoner under min resa?
+
+Journey Optimizer erbjuder flera alternativ för hantering av tidszoner:
+
+* **Profilens tidszon**: Meddelanden skickas baserat på varje persons tidszon som lagras i deras profil
+* **Fast tidszon**: Alla meddelanden använder en specifik tidszon som du definierar
+* **Vänta tills specifik tid**: Använd aktiviteten Vänta för att skicka meddelanden vid en viss tidpunkt i mottagarens lokala tidszon (t.ex. 10:00)
+
+**Exempel**: Om du vill skicka ett &quot;Godmorgon&quot;-e-postmeddelande klockan 9.00 i varje kunds tidszon använder du en Wait-aktivitet med &quot;Vänta till ett fast datum/tid&quot; och aktiverar tidszonsalternativet.
+
+Läs mer om [hantering av tidszoner](timezone-management.md).
+
++++
+
++++ Hur länge ska jag vänta mellan budskapen under min resa?
+
+**Bästa sättet att vänta**:
+
+* **Transaktionsmeddelanden** (orderbekräftelser): Skicka omedelbart
+* **Välkomstserie**: 1-3 dagar mellan e-postmeddelanden
+* **Utbildningsinnehåll**: 3-7 dagar mellan meddelanden
+* **Kampanjkampanjer**: Minst 7 dagar mellan erbjudandena
+* **Återanvändning**: 14-30 dagar för inaktiva användare
+
+**Faktorer att tänka på**:
+
+* Branschstandarder och kundernas förväntningar
+* Snabbhet och betydelse
+* Den övergripande meddelandefrekvensen i alla kanaler
+* Mönster för kundengagemang
+
+**Tips**: Använd regler för begränsning av antalet meddelanden som en kund får på alla resor.
+
+Läs mer om [vänteaktiviteter](wait-activity.md) och [resefackning](../conflict-prioritization/journey-capping.md).
+
++++
+
 ## Testning och publicering
 
 +++ Hur testar jag min resa innan jag publicerar den?
@@ -202,6 +316,26 @@ Du kan hantera körning av resan på flera sätt:
 * **Paus**: Stoppa resan tillfälligt och återuppta den senare (tillgängligt för särskilda resetyper)
 
 Läs mer om [slutresor](end-journey.md).
+
++++
+
++++ Vad är skillnaden mellan &quot;Närmaste nya ingångar&quot; och &quot;Stopp&quot;?
+
+**Stäng till nya ingångar**:
+
+* Nya profiler kan inte komma in på resan
+* Profiler som redan är under resan fortsätter och slutför deras sökväg
+* Använd det här när du på ett bra sätt vill minska en resa
+* Exempel: Säsongskampanj som har avslutats men som du vill att befintliga kunder ska slutföra sin upplevelse
+
+**Stopp**:
+
+* Slutar omedelbart resan för alla profiler
+* Alla profiler som för närvarande är på resan avslutas
+* Använd detta för akuta situationer eller kritiska fel
+* Exempel: Återkallande av produkter kräver omedelbart stopp av kampanjmeddelanden
+
+Läs mer om alternativen för att pausa [resan](journey-pause.md).
 
 +++
 
@@ -277,6 +411,113 @@ När en åtgärd misslyckas (t.ex. timeout för API-anrop, meddelandeleveransfel
 **Bästa praxis**: Ange lämpliga timeoutvärden för externa åtgärder och definiera alternativa sökvägar för kritiska felscenarier.
 
 Läs mer om [åtgärdssvar](../action/action-response.md).
+
++++
+
++++ Kan jag se vem som är på min resa just nu?
+
+Ja. Använd **resedirektrapporten** för att visa:
+
+* Antal profiler som för närvarande ingår i resan
+* Antal profiler för varje aktivitet
+* Profiler som har gått in de senaste 24 timmarna
+* Mätvärden för körning i realtid
+
+Om du vill visa enskilda profiler använder du **kundstegshändelser** i Customer Journey Analytics eller frågar händelsedatamängderna direkt.
+
+Läs mer om [live-rapportering för resan](report-journey.md).
+
++++
+
++++ Varför skickas inte mina meddelanden under min resa?
+
+**Vanliga orsaker och lösningar**:
+
+* **Medgivandeproblem**: Mottagarna har inte anmält sig för att ta emot kommunikation
+Lösning: Kontrollera godkännandeprinciper och anmälningsstatus
+
+* **Undertryckandelista**: E-postadresser finns i listan över undertryckningar
+Lösning: Granska suppressionslistan för studsar eller klagomål
+
+* **Ogiltig kontaktinformation**: E-postadresser/telefonnummer saknas eller har fel format
+Lösning: Validera profilens datakvalitet
+
+* **Resan har inte publicerats**: Resan är fortfarande i utkastläge
+Lösning: Publicera resan för att aktivera den
+
+* **Meddelandet har inte godkänts**: Meddelandeinnehållet måste godkännas innan det skickas
+Lösning: Skicka för godkännande eller kontrollera godkännandestatus
+
+* **Kanalkonfigurationsproblem**: E-post-/SMS-konfigurationen är felaktig
+Lösning: Verifiera kanalkonfigurationer och autentisering
+
+Läs mer om [felsökning](troubleshooting.md) och [hantering av samtycke](../action/consent.md).
+
++++
+
++++ Hur personaliserar jag meddelanden under min resa?
+
+Du kan anpassa meddelanden med **anpassningsredigeraren**:
+
+**Tillgängliga personaliseringsdata**:
+
+* **Profilattribut**: Förnamn, efternamn, e-post, anpassade fält
+* **Händelsedata**: Inköpsinformation, webbläsarbeteende, appaktivitet
+* **Sammanhangsbaserade data**: Resevariabler, externa API-data
+* **Målgruppsmedlemskap**: Segmentkvalifikationer
+* **Beräknade attribut**: Förberäknade värden
+
+**Exempel på personalisering**:
+
+* &quot;Hej {{profile.firstName}}, tack för ditt köp av {{event.productName}}&quot;
+* &quot;Baserat på din lojalitetsnivå ({{profile.loyaltyTier}}) finns det ett specialerbjudande&quot;
+* Dynamiska innehållsblock som ändras utifrån kundernas önskemål
+
+Läs mer om [personalisering](../personalization/personalize.md).
+
++++
+
++++ Kan jag skicka olika meddelanden baserat på vilken kanal jag föredrar?
+
+Ja. Använd en **villkorsaktivitet** för att kontrollera den önskade kanalen:
+
+1. Lägg till en villkorskontrollprofil.preferredChannel
+2. Skapa separata banor för varje kanal:
+   * **E-postsökväg**: Skicka e-postmeddelande
+   * **SMS-sökväg**: Skicka SMS-meddelande
+   * **Push-sökväg**: Skicka push-meddelande
+3. Lägga till en standardsökväg för profiler utan en inställning
+
+**Alternativ metod**: Använd **flerkanalsåtgärder** där Journey Optimizer automatiskt väljer den bästa kanalen baserat på profilinställningar och tillgänglighet.
+
+Läs mer om [kanalåtgärder](journeys-message.md).
+
++++
+
++++ Kan jag utesluta vissa kunder från min resa?
+
+Ja, det finns flera sätt att utesluta kunder:
+
+**Vid resepost**:
+
+* Använd målgruppsdefinitioner med undantagsregler
+* Lägga till anmälningsvillkor som filtrerar bort specifika profiler
+* Konfigurera namnutrymmeskrav
+
+**Inom resan**:
+
+* Lägg till en villkorsaktivitet tidigt under resan för att avsluta oönskade profiler
+* Kontrollera om det finns exkluderingsattribut (t.ex. VIP-status, testkonton)
+* Använd målgruppskvalifikation för att identifiera profiler som ska uteslutas
+
+**Exempel på undantagsscenarier**:
+
+* Exkludera kunder som nyligen köpt
+* Uteslut VIP-kunder från standardkampanjer
+* Exkludera medarbetare och testkonton
+* Uteslut kunder i vissa regioner
+
+Läs mer om [hantering av inträde](entry-management.md) och [villkor](condition-activity.md).
 
 +++
 
@@ -358,6 +599,124 @@ Med **hoppaktiviteten** kan du övergå profiler från en resa till en annan, vi
 När en profil når en hoppaktivitet avslutar de den aktuella resan och går in på målresan vid startpunkten.
 
 Läs mer om [hoppaktiviteten](jump.md).
+
++++
+
++++ Hur skapar jag en välkomstserie?
+
+En vanlig välkomstserie innehåller flera kontaktytor under flera dagar:
+
+**Exempelstruktur**:
+
+1. **Post**: Målgrupp för nya prenumeranter eller event när någon registrerar sig
+2. **E-post 1 - omedelbar välkomstplats**: Tack och introduktion
+3. **Vänta**: 2 dagar
+4. **E-post 2 - Komma igång**: Självstudiekurs eller produktguide
+5. **Vänta**: 3 dagar
+6. **Villkor**: Har kunden gjort ett köp?
+   * **Ja**: Slutför eller flytta till kundresan
+   * **Nej**: Fortsätt välkomstserien
+7. **E-post 3 - Incentive**: Särskild förstagångsköparrabatt
+8. **Vänta**: 5 dagar
+9. **E-post 4 - engagemang**: Bästa säljare eller populärt innehåll
+
+**God praxis**:
+
+* Håll den i 3-5 e-postmeddelanden under 2-3 veckor
+* Varje e-postmeddelande ska ha ett tydligt syfte och call-to-action
+* Övervaka öppningsfrekvenser och justera timing/innehåll därefter
+* Avsluta kunderna tidigt om de konverterar eller engagerar sig djupt
+
+Läs mer om [användningsfall för resan](jo-use-cases.md).
+
++++
+
++++ Kan jag testa olika vägar under min resa?
+
+Ja. Använd aktiviteten **Optimera** (tillgänglig i specifika Journey Optimizer-paket) eller skapa testdelningar manuellt:
+
+**Använda aktiviteten Optimera**:
+
+* Delar automatiskt upp trafik mellan varianter
+* Testar olika meddelanden, erbjudanden eller hela resvägar
+* Mäter prestanda och deklarerar en vinnare
+
+**Manuell testning med villkor**:
+
+* Skapa ett villkor som delar profiler slumpmässigt (t.ex. med en slumpmässig talfunktion)
+* Skicka olika upplevelser till varje delning
+* Mät resultat med reserapporter
+
+**Vad du kan testa**:
+
+* Olika ämnesrader för e-post
+* Alternativt meddelandeinnehåll
+* Olika väntetider
+* Olika erbjudanden eller incitament
+* Helt olika resvägar
+
+Läs mer om [optimera aktivitet](optimize.md) och [innehållsexperiment](../content-management/content-experiment.md).
+
++++
+
++++ Hur utlöser jag en resa när lagret är lågt?
+
+Skapa en **affärshändelseresa**:
+
+1. **Konfigurera en affärshändelse**: Konfigurera en händelse som utlöses av ditt lagersystem när lagret faller under ett tröskelvärde
+2. **Välj målgrupp**: Välj profiler som ska aviseras (t.ex. kunder som har tittat på produkten, prenumeranter som ska ändra storlek på aviseringar)
+3. **Lägg till meddelandeåtgärd**: Skicka e-post eller push-meddelanden
+4. **Anpassa innehåll**: Inkludera produktinformation, aktuell lagernivå, snabbmeddelanden
+
+**Exempel på händelser**:
+
+* Varning för lågt lager
+* Meddelande om prisfall
+* Produkt tillbaka i lager
+* Flash-försäljningsmeddelande
+* Väderbaserade kampanjer
+
+Läs mer om [affärshändelser](general-events.md).
+
++++
+
++++ Kan jag pausa en resa för en viss person utan att stoppa hela resan?
+
+Du kan inte pausa en resa för enskilda profiler direkt, men du kan uppnå liknande resultat:
+
+**Alternativ**:
+
+* **Lägg till i exkluderingsmålgrupp**: Skapa en målgrupp med profiler för att exkludera och lägga till en villkorskontroll för den här målgruppen vid strategiska punkter på resan
+* **Uppdatera profilattribut**: Ange en pausflagga i profilen och använd villkor för att hoppa över åtgärder för flaggade profiler
+* **Anpassad åtgärd**: Använd ett externt system för att spåra pausade profiler och kontrollera status via API-anrop
+* **Manuell avslutning**: I brådskande fall kan du ta bort testprofiler manuellt
+
+**Obs!** Reseändringar påverkar bara nya deltagare. Profiler som redan finns på resan följer den ursprungliga vägen om inte resan stoppas helt.
+
++++
+
++++ Vad är skillnaden mellan ett villkor och en vänteaktivitet?
+
+**Villkorsaktivitet**:
+
+* **Syfte**: Skapar olika sökvägar baserat på logik (om/då)
+* **Funktion**: Utvärderar data och dirigerar profiler därefter
+* **Användningsfall**: Segmentera kunder, kontrollera status, gren baserat på beteende
+* **Exempel**: Om kunden är VIP skickar du premiumerbjudande; annars skickar du standarderbjudande
+
+**Vänteaktivitet**:
+
+* **Syfte**: Pausar resan under en tidsperiod
+* **Funktion**: Innehåller profiler vid en viss punkt innan du fortsätter
+* **Användningsfall**: Timing mellan meddelanden, väntan på arbetstider, skapa förseningar
+* **Exempel**: Vänta 3 dagar efter välkomstmeddelandet innan du skickar nästa meddelande
+
+**De fungerar tillsammans**:
+
+* Vänta en stund och använd sedan ett villkor för att kontrollera om något har hänt under väntetiden
+* Exempel: Vänta 7 dagar och kontrollera sedan om kunden har köpt något
+
+Läs mer om [villkor](condition-activity.md) och [vänteaktiviteter](wait-activity.md).
 
 +++
 
@@ -456,4 +815,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
