@@ -8,7 +8,7 @@ level: Experienced
 keywords: inSegment, funktion, uttryck, resa
 exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7ac246c0aa6776d3ec67223c4b07536b8ed0c881
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 4%
@@ -32,11 +32,11 @@ Målgrupper kan ha två statusar:
 * realiserad: Enheten kvalificerar sig för segmentdefinitionen.
 * avslutad: Entiteten avslutar segmentdefinitionen.
 
-Endast personer med **Realiserad**-målgruppsdeltagarstatus betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results).
+Endast personer med **Realiserad**-målgruppsdeltagarstatus betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results).
 
-`IF inSegment('segmentName') == true` betyder att du har ett segmentMembership med den angivna/befintliga statusen.
+`inSegment('segmentName') == true` betyder att du har ett segmentMembership med den angivna/befintliga statusen.
 
-`ELSE inSegment('segmentName') == false` betyder att du har ett segmentMembership med statusen avslutad.
+`inSegment('segmentName') == false` betyder att du har ett segmentMembership med statusen avslutad.
 
 ## Kategori
 

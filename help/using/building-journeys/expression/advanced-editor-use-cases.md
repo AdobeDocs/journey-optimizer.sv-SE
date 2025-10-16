@@ -11,9 +11,9 @@ hidefromtoc: true
 keywords: uttryck, villkor, användningsfall, händelser
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7ac246c0aa6776d3ec67223c4b07536b8ed0c881
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Först och främst målkunder som surfar i onlinebutiken men inte slutfört best
 
 **Det här uttrycket söker efter alla händelser för den här användaren som har angetts under de senaste 7 dagarna:**
 
-Sedan markeras alla tilläggshändelser som inte omvandlades till completePurchase.
+Sedan väljs alla tilläggshändelser i kundvagnen som inte omvandlats till completePurchase.
 
 >[!NOTE]
 >
@@ -165,4 +165,4 @@ substr(
 Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
 
-Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html?lang=sv-SE) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
+Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.

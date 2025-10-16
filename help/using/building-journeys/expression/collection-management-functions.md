@@ -9,7 +9,7 @@ level: Experienced
 keywords: fråga, samlingar, funktioner, nyttolast, resa
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7ac246c0aa6776d3ec67223c4b07536b8ed0c881
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 1%
@@ -113,7 +113,7 @@ Resultatet av uttrycket är **3**.
 
 >[!NOTE]
 >
->* När filtervillkoret i funktionen **all()** är tomt returnerar filtret alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.
+>* När filtervillkoret i funktionen **all()** är tomt returnerar filtret alla element i listan. **För att antalet element i en samling ska kunna räknas krävs dock inte funktionen all.**
 >
 >* `currentEventField` är bara tillgängligt när du hanterar händelsesamlingar, `currentDataPackField` när du ändrar datakällsamlingar och `currentActionField` när du ändrar anpassade åtgärdssvarssamlingar.
 >
@@ -163,7 +163,7 @@ Det här uttrycket returnerar listans andra push-meddelandetoken.
 
 
 ```json
-@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}`
+@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}
 ```
 
 Resultatet är `token_2`.
