@@ -10,10 +10,9 @@ level: Intermediate, Experienced
 keywords: resa, stegvisa händelser, analys, rapportering, övervakning, XDM
 hide: true
 hidefromtoc: true
-exl-id: 9f8e7d6c-5b4a-3928-1756-849302a11c2b
-source-git-commit: 17ea20a6b16965775bda98d7db1f12e28b037aaf
+source-git-commit: a7da542320a38dbc739ec42ee4926fce1dea1df0
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '898'
 ht-degree: 1%
 
 ---
@@ -24,7 +23,7 @@ Resestegshändelser genereras automatiskt händelser som samlar in detaljerad in
 
 ## Vad är steg-händelser för resan? {#what-are-step-events}
 
-Resestegshändelser är systemgenererade [XDM-händelser (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} som Adobe Journey Optimizer automatiskt skapar och skickar till [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE){target="_blank"} när en profil flyttas från en nod till en annan under en resa. Varje händelse motsvarar en specifik [reseaktivitet](../building-journeys/about-journey-activities.md) eller övergång i kundens reseupplevelse.
+Resestegshändelser är systemgenererade [XDM-händelser (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} som Adobe Journey Optimizer automatiskt skapar och skickar till [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} när en profil flyttas från en nod till en annan under en resa. Varje händelse motsvarar en specifik [reseaktivitet](../building-journeys/about-journey-activities.md) eller övergång i kundens reseupplevelse.
 
 Det finns två huvudtyper av steg för resan:
 
@@ -165,7 +164,6 @@ Förstå den fullständiga datastrukturen för steg-händelser i kundresan:
 
 - Kombinera steg-händelser för resan med [feedbackdata](../data/datasets-query-examples.md#message-feedback-event-dataset) för fullständig attribuering
 - Använd tidsbaserad analys för att förstå hur snabbt resan går och hur många flaskhalsar den har
-- Skapa kohortanalyser för att jämföra olika [reseversioner](../building-journeys/testing-the-journey.md)
 
 ### Avancerade analysfunktioner {#advanced-analytics}
 
@@ -178,19 +176,12 @@ Resestegshändelser kan analyseras med [Customer Journey Analytics](cja-ajo.md) 
 
 Lär dig hur du [konfigurerar Customer Journey Analytics](report-gs-cja.md) för Journey Optimizer-data.
 
-**Realtidsbeslut**
-Använd händelsemönster för kundstegshändelser för att:
-
-- Utlös [personalisering](../personalization/personalize.md) i realtid
-- Implementera [optimering av dynamisk resa](../building-journeys/optimize.md)
-- Aktivera sammanhangsbaserade rekommendationer för nästa bästa åtgärd med [Beslutshantering](../offers/get-started/starting-offer-decisioning.md)
-
 ## Ytterligare resurser {#additional-resources}
 
 ### Dokumentationslänkar {#documentation-links}
 
 - **[Översikt över delning av resesteg](sharing-overview.md)**: Förstå hur resedata flödar till Adobe Experience Platform
-- **[Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}**: Fullständig XDM-schemareferens
+- **[Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}**: Fullständig XDM-schemareferens
 - **[Journey Optimizer-rapportering](report-gs-cja.md)**: Översikt över rapportfunktioner i Journey Optimizer
 
 ### Integreringsguider {#integration-guides}
@@ -199,7 +190,6 @@ Använd händelsemönster för kundstegshändelser för att:
 - **[Datahantering](../data/export-datasets.md)**: Exportera och hantera resedata
 - **[Sekretess och styrning](../privacy/audit-logs.md)**: Datastyrningsaspekter för resehändelser
 
-Evenemang för steg på resan utgör grunden för avancerad reseanalys i Adobe Journey Optimizer. Genom att förstå och utnyttja dessa händelser effektivt kan ni få djupgående insikter om kundbeteenden, [optimera kundens resultat](../building-journeys/optimize.md) och skapa fler [personaliserade upplevelser](../personalization/personalize.md) för era kunder.
 
 **Nästa steg:**
 
