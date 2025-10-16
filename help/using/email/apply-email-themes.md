@@ -10,9 +10,9 @@ role: User
 level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
 exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
-source-git-commit: abd5f388a41cc85c710cdb8c8e51c7fe381714ad
+source-git-commit: 12d0869e323a1b3b892bac91ba423029f9c123a5
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -121,13 +121,13 @@ Följ stegen nedan för att definiera ett tema som du kan använda i ditt framti
 
 Följ stegen nedan om du vill använda standardteman eller anpassade formatteman i ett e-postmeddelande.
 
-1. I [!DNL Journey Optimizer] [lägger du till en e-poståtgärd &#x200B;](create-email.md) för en resa eller kampanj och [redigerar e-postbrödtexten](get-started-email-design.md#key-steps).
+1. I [!DNL Journey Optimizer] [lägger du till en e-poståtgärd ](create-email.md) för en resa eller kampanj och [redigerar e-postbrödtexten](get-started-email-design.md#key-steps).
 
 1. Du kan välja någon av följande åtgärder:
 
    * Välj en inbyggd [e-postmall](use-email-templates.md) för att öppna e-post-Designer. Ett standardtema som är specifikt för varje mall används automatiskt.
 
-   * Designa ett [nytt innehåll från grunden](content-from-scratch.md) och välj **[!UICONTROL Use Theme]s** för att börja med ett fördefinierat formattema.
+   * Designa ett [nytt innehåll från grunden](content-from-scratch.md) och välj **[!UICONTROL Use Themes]** för att börja med ett fördefinierat formattema.
 
      ![](assets/theme-from-scratch.png)
 
