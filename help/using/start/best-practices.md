@@ -9,9 +9,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 271fb85d-5621-4a12-b3d1-65cf6021b174
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 6c73a1ee024ca61b30d71e77268e51b93576ae62
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Adobe Journey Optimizer använder identitetstjänsten för att sammanfoga profil
 
 Tänk på följande när du bygger användningsexempel:
 
-1. Varumärket vill återengagera en besökare på webbplatsen 30 minuter efter att man övergett den (t.ex. övergiven kundvagn (e-post):
+1. Varumärket vill återengagera en besökare på webbplatsen 30 minuter efter att han eller hon har lämnat företaget (t.ex. övergivna kundvagnsmeddelanden):
 
    Använd identiteten med data - ECID. Om du vill fånga 100 % av de besökare som har gett sin e-postadress/app-installation inom de senaste 30 minuterna, bör du använda den cookie-baserade identiteten för att starta den här resan (ECID). Detta förutsätter att din e-postadress, push-token eller annan adress för upplevelsen är kopplad till ECID.
 
@@ -57,7 +57,7 @@ I det här avsnittet får du hjälp med att skala med följande två begränsnin
 
 Det finns ett antal bästa metoder som du kan implementera och som hjälper dig att hålla dig inom räckhåll och använda systemet effektivt.
 
-* Om du närmar dig gränsen för antal resor i realtid går du till fliken **Översikt** under **Resor** för att se hur många resor som har varit aktiva under de senaste 24 timmarna som hade aktiva profiler. Du kan kontrollera antalet profiler som kommer in och avslutar resan i det här avsnittet för att avgöra det.
+* Om du närmar dig gränsen för antal resor i realtid kan du först gå till fliken **Översikt** under **Resor** för att se hur många resor som har varit aktiva under de senaste 24 timmarna som hade aktiva profiler. Du kan kontrollera antalet profiler som kommer in och avslutar resan i det här avsnittet för att avgöra det.
 
   ![](assets/journey-guardrails2.png)
 
@@ -71,4 +71,4 @@ Det finns ett antal bästa metoder som du kan implementera och som hjälper dig 
 * Om kundresan har flera villkor som delar upp målgruppen för att se siffrorna i varje steg bör du överväga att använda Customer Journey Analytics eller någon annan rapporteringslösning som är bättre lämpad för analys.
 * Om du närmar dig gränsen för antal noder på arbetsytan bör du överväga att konsolidera åtgärder med dynamiska parametrar eller innehåll för att leverera rätt innehåll i stället för explicita noder.
 
-* Om du har en **Läs målgrupp**-resa med batchsegment (A) och om du använder inom resan i segmentet för direktuppspelning av publik (B) för att exkludera (d.v.s. utföra A-B), bör du överväga att flytta den logiken till segmenteringslogik och använda exkluderingen som en del av själva segmenteringslogiken.
+* Om du har en **Läs målgrupp**-resa med ett gruppsegment (A) och du använder ett inAudience-direktuppspelningssegment (B) inom resan för att exkludera (d.v.s. utföra A-B), bör du överväga att flytta den logiken till segmenteringslogiken och använda exkluderingen som en del av själva segmenteringslogiken.

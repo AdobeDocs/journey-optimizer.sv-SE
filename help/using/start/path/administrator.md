@@ -7,7 +7,7 @@ feature: Get Started
 role: Admin
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 6c73a1ee024ca61b30d71e77268e51b93576ae62
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Kom igång med systemadministratörer {#get-started-sys-admins}
 
-Innan du börjar använda [!DNL Adobe Journey Optimizer] krävs flera steg för att förbereda miljön.  Du måste utföra de här stegen så att [datateknikern](data-engineer.md) och [reseassistenten](marketer.md) kan börja arbeta med [!DNL Adobe Journey Optimizer].
+Innan du börjar använda [!DNL Adobe Journey Optimizer] krävs flera steg för att förbereda miljön.  Du måste utföra de här stegen så att [datateknikern](data-engineer.md) och [resehandledaren](marketer.md) kan börja arbeta med [!DNL Adobe Journey Optimizer].
 
 Som **systemadministratör** måste du **förstå roller och tilldela behörigheter** för sandlådeadministration och kanalkonfiguration. Du måste också konfigurera sandlådor och hantera dem för de tillgängliga rollerna. Sedan kan du tilldela teammedlemmar till roller.
 
@@ -33,10 +33,10 @@ Lär dig mer om åtkomsthantering på följande sidor:
 
 1. **Ange behörigheter** för roller, inklusive **Sandlådor**, och ge teammedlemmarna åtkomst genom att tilldela dem till olika roller. Behörigheter är enhetsbehörigheter som gör att du kan definiera de behörigheter som tilldelats **[!UICONTROL Role]**. Varje behörighet samlas in under funktioner, t.ex. Resor eller Erbjudanden, som representerar olika funktioner eller objekt i [!DNL Journey Optimizer]. Läs mer i avsnittet [Behörighetsnivåer](../../administration/high-low-permissions.md).
 
-Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 >[!NOTE]
->För Journey Optimizer-produkter som inhämtats före 6 januari 2022 måste du distribuera [!DNL Adobe Experience Manager Assets Essentials] för din organisation. Mer information finns i avsnittet [Distribuera resurser - Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+>För Journey Optimizer-produkter som inhämtats före 6 januari 2022 måste du distribuera [!DNL Adobe Experience Manager Assets Essentials] för din organisation. Mer information finns i avsnittet [Distribuera resurser - Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 När du använder [!DNL Journey Optimizer] för första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 

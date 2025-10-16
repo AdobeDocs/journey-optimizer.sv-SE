@@ -7,7 +7,7 @@ feature: Get Started
 role: Data Engineer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 1a2c6e97fcd30245cff1bf08fd5771ce8bc84ddc
+source-git-commit: 6c73a1ee024ca61b30d71e77268e51b93576ae62
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Lär dig hur du **identifierar data och skapar schema och datauppsättning** fö
 
 >[!NOTE]
 >
->Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+>Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler samt testprofiler beskrivs i avsnitten nedan:
 
@@ -33,7 +33,7 @@ Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är ak
 
 1. **Skapa datauppsättningar** och aktivera dem för profiler. En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). Datauppsättningar innehåller också metadata som beskriver olika aspekter av de data som lagras. När en datauppsättning har skapats kan du mappa den till ett befintligt schema och lägga till data i det. Läs mer om datauppsättningar [på den här sidan](../../data/get-started-datasets.md).
 
-1. **Konfigurera källanslutningar**. Med Adobe Journey Optimzer kan data hämtas från externa källor samtidigt som du kan strukturera, märka och förbättra inkommande data med hjälp av plattformstjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra. Läs mer om Source-anslutningar [på den här sidan](../get-started-sources.md).
+1. **Konfigurera källanslutningar**. Med Adobe Journey Optimizer kan data hämtas från externa källor samtidigt som du kan strukturera, märka och förbättra inkommande data med hjälp av plattformstjänster. Du kan importera data från en mängd olika källor, till exempel Adobe-program, molnbaserade lager, databaser och många andra. Läs mer om Source-anslutningar [på den här sidan](../get-started-sources.md).
 
 1. **Skapa testprofiler**. Testprofiler krävs när [testläget](../../building-journeys/testing-the-journey.md) används i en resa och när du [förhandsgranskar och testar meddelanden](../../content-management/preview-test.md) innan du skickar iväg dem. Steg för att skapa testprofiler finns detaljerade [på den här sidan](../../audience/creating-test-profiles.md).
 

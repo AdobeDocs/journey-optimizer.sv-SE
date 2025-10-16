@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer Get started for Marketers
-description: Lär dig mer om hur du arbetar med Journey Optimizer som resande
+description: Lär dig mer om hur du arbetar med Journey Optimizer som resehandledare
 level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 6c73a1ee024ca61b30d71e77268e51b93576ae62
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Som **marknadsförare** eller **resenär** ansvarar du för att skapa erbjudande
 
 Se följande avsnitt för att konfigurera din första resa, lägga till erbjudanden och resurser och skicka meddelanden:
 
-1. **Skapa målgrupper**. Med Journey Optimizer kan ni skapa målgrupper genom segmentdefinitioner direkt från menyn **Publiker** och utnyttja dem i era resor.  Läs mer om målgrupper [på den här sidan](../../audience/about-audiences.md). Upptäck hur du skapar segmentdefinitioner [&#x200B; i det här exemplet](../../audience/creating-a-segment-definition.md).
+1. **Skapa målgrupper**. Med Journey Optimizer kan ni skapa målgrupper genom segmentdefinitioner direkt från menyn **Publiker** och utnyttja dem i era resor.  Läs mer om målgrupper [på den här sidan](../../audience/about-audiences.md). Upptäck hur du skapar segmentdefinitioner [ i det här exemplet](../../audience/creating-a-segment-definition.md).
 
 1. **Lägg till personalisering och dynamiskt innehåll**. Utnyttja Journey Optimizer personalisering och dynamiska innehållsfunktioner för att anpassa budskapet till er målgrupp. Läs mer om [personalisering](../../personalization/personalize.md) och [dynamiskt innehåll](../../personalization/get-started-dynamic-content.md).
 
