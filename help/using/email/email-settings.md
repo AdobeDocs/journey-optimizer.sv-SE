@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-source-git-commit: fc12ee65fc773c70b88504a951e5f5c5b2b3b0e6
+source-git-commit: da82432dd15f19ac7db52f491e5afd5ba6d4e3d7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 1%
@@ -30,13 +30,13 @@ Definiera e-postinställningarna i det dedikerade avsnittet i kanalkonfiguration
 
 E-postkonfigurationen hämtas upp för att skicka kommunikation enligt logiken nedan:
 
-* För batchresor gäller det inte batchkörning som redan hade startats innan e-postytans konfiguration gjordes. Ändringarna hämtas vid nästa upprepning eller vid nästa körning.
+* För batchresor gäller det inte batchkörning som redan hade startats innan e-postytans konfiguration gjordes. Ändringen registreras vid nästa återkommande eller nya körning.
 
 * För transaktionsmeddelanden hämtas ändringen omedelbart för nästa kommunikation (upp till fem minuters fördröjning).
 
 >[!NOTE]
 >
->De uppdaterade inställningarna för e-postkonfigurationen hämtas automatiskt under den resa eller de kampanjer där konfigurationen används.
+>De uppdaterade e-postkonfigurationsinställningarna hämtas automatiskt under den resa eller de kampanjer där konfigurationen används.
 
 ## E-posttyp {#email-type}
 
@@ -109,7 +109,7 @@ Om du får ett felmeddelande när du skickar e-postkonfigurationen betyder det a
 >id="ajo_surface_suppressed_addresses"
 >title="Åsidosätt prioritet för undertryckningslista"
 >abstract="Du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns med i listan över Adobe Journey Optimizer-inaktiveringar på grund av skräppost. Det här alternativet är inaktiverat som standard."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=sv-SE" text="Hantera listan över inaktiveringar"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html" text="Hantera listan över inaktiveringar"
 
 >[!IMPORTANT]
 >
@@ -139,7 +139,7 @@ När det här alternativet är aktiverat kan kunden, trots att kunden har marker
 >id="ajo_surface_seed_list"
 >title="Lägga till en startvärdeslista"
 >abstract="Välj önskad startlista för att automatiskt lägga till specifika interna adresser till era målgrupper. Dessa dirigerade adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av meddelandet i säkerhetssyfte."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html?lang=sv-SE#use-seed-list" text="Vad är utsädeslistor?"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
 
 Med en startvärdeslista i [!DNL Journey Optimizer] kan du automatiskt inkludera specifika e-postadresser i dina leveranser. [Läs mer](../configuration/seed-lists.md)
 
@@ -165,7 +165,7 @@ Lär dig hur du använder startvärdeslista i en kampanj eller en resa i [det h�
 >id="ajo_admin_presets_retryperiod"
 >title="Justera tidsperioden för återförsök"
 >abstract="Försök utförs i 3,5 dagar (84 timmar) när en e-postleverans misslyckas på grund av ett tillfälligt fel med mjuk avhoppning. Du kan justera den här standardperioden för återförsök så att den passar dina behov bättre."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/retries.html?lang=sv-SE" text="Om återförsök"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/retries.html" text="Om återförsök"
 
 Du kan konfigurera **parametrarna för återförsök via e-post**.
 

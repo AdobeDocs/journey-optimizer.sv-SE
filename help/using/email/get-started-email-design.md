@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: da82432dd15f19ac7db52f491e5afd5ba6d4e3d7
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '601'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ När du har [lagt till ett e-postmeddelande](create-email.md) till en resa eller
 
    * **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar ett e-postinnehåll i [det här avsnittet](existing-content.md).
 
-   * **Välj ett befintligt innehåll** i en lista med inbyggda eller anpassade mallar. Lär dig hur du arbetar med e-postmallar [det här avsnittet](../email/use-email-templates.md).
+   * **Välj ett befintligt innehåll** i en lista med inbyggda eller anpassade mallar. Lär dig hur du arbetar med e-postmallar i [det här avsnittet](../email/use-email-templates.md).
 
    ![](assets/email_designer_create_options.png)
 
@@ -78,4 +78,4 @@ Lär dig skapa e-postinnehåll med meddelanderedigeraren.
 
 Lär dig hur du konfigurerar innehållsexperiment till A/B-tester och utforskar e-postinnehåll på bästa sätt för dina affärsmål.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447335?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3419893)

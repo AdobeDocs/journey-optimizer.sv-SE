@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
 exl-id: 78011ec0-a3b6-4d4e-ab4b-9da032c283a2
-source-git-commit: dc7b24223bd32a75b87946733a6b098811e007d9
+source-git-commit: da82432dd15f19ac7db52f491e5afd5ba6d4e3d7
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} är ett direktiv som är utformat för att förbättra den inre marknaden för tillgängliga produkter och tjänster genom att eliminera hinder som orsakas av olika nationella regler i medlemsstaterna.
 
-I den här förordningen anges att all digital kommunikation, inklusive e-post, nyhetsbrev, PDF-filer och hämtningsbart innehåll, bör vara tillgänglig. När du skapar innehåll för dina mottagare måste du därför följa särskilda riktlinjer, t.ex. använda hjälpmedelsanpassade teckensnitt, läsbara format och ange alternativ text för bilder.
+I den här förordningen anges att all digital kommunikation, inklusive e-post, nyhetsbrev, PDF-filer och hämtningsbart innehåll, bör vara tillgänglig. När du skapar innehåll för dina mottagare måste du därför följa särskilda riktlinjer, t.ex. använda hjälpmedelsanpassade teckensnitt, läsbara format och tillhandahålla alternativ text för bilder.
 
 Med [!DNL Journey Optimizer] [Email Designer](content-from-scratch.md), som gör det möjligt för marknadsförare att skapa innehåll både för **e-post** och **landningssidor**, kan du enkelt följa det här direktivet, baserat på Web Content Accessibility Guidelines (WCAG) 2.1, nivå AA.
 
