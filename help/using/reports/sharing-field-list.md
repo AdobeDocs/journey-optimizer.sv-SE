@@ -119,5 +119,5 @@ Läs mer om de här händelserna och hur du felsöker dem i [Pausa en resa](../b
 
 * [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
 * [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
-* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
 
