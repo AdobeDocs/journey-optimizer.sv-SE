@@ -33,7 +33,7 @@ Innan du använder den här funktionen måste du kontrollera att du uppfyller f�
 
 * **Experience Manager-inställningar**
 
-  Den här funktionen är tillgänglig med [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html){target="_blank"}.
+  Den här funktionen är tillgänglig med [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=sv-SE){target="_blank"}.
 
   Som en del av betaprogrammet utförs Cloud Service-konfigurationen av Adobe i Adobe Experience Manager för att ansluta till Adobe Journey Optimizer.
 
@@ -59,7 +59,7 @@ Om du vill exportera en Adobe Experience Manager-mall till Adobe Journey Optimiz
 
    ![](assets/aem-outbound-menu.png)
 
-1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html#creating-a-new-page)
+1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html?lang=sv-SE#creating-a-new-page)
 
 1. Genom att lägga in Journey Optimizer personaliseringssyntax i mallen kan du förbättra dess anpassningsmöjligheter. [Läs mer](../personalization/personalization-syntax.md)
 
