@@ -9,9 +9,9 @@ role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: datauppsättning, optimering, användningsfall
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
-source-git-commit: 90b8f69f3849418eaec1b65b14e0362980c43e9a
+source-git-commit: f1a00e734f22cb660e442ebe8c0dde3468e29768
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder
 * [BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
 * [Enhetsdatauppsättning](#entity-dataset)
 
-Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
+Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 Se även flera vanliga [exempel som används för att ställa frågor om händelser i resesteg](../reports/query-examples.md).
 
@@ -175,6 +175,10 @@ ORDER BY timestamp DESC;
 där datumformatet är: `YYYY-MM-DD HH:MM:SS`.
 
 Ta bort adresserna från listan över Journey Optimizer-adresser när de har identifierats. [Läs mer](../configuration/manage-suppression-list.md#remove-from-suppression-list).
+
+>[!NOTE]
+>
+>När du refererar till identityMap i händelsedatauppsättningen för meddelandefeedback bör du tänka på att den endast speglar den identitet som används vid körning. För push-meddelanden förlitar sig händelsen&quot;sent&quot; bara på det ECID som är länkat till den push-token som används för att skicka det här meddelandet, medan en&quot;exclude&quot;-händelse kan förlita sig på en anpassad identitet. Om en profil till exempel har uteslutits eftersom ingen push-token hittades, kommer identiteten som används på resan eller åtgärdskampanjnivån att väljas för att registrera den här händelsen. Om du behöver ytterligare namnutrymmen (t.ex. anpassade ID:n) kopplar du dessa feedbackposter med en profilrelaterad datauppsättning (t.ex. profilrelaterade ögonblicksbilder) för att hämta den fullständiga identitetslistan.
 
 
 
