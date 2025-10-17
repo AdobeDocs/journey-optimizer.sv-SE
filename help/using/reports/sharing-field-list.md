@@ -8,9 +8,9 @@ topic: Content Management
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
-source-git-commit: faf6e63e3951b67997836107ae518b294526206b
+source-git-commit: efae7f7d366690af71430bb9eb62523d1881c50e
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '649'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ För travelStepEvent måste vi även lägga till fält som är relaterade till i
 
 ## serviceEvents {#servicevents-field}
 
-Den här mixinen innehåller alla fält som motsvarar ett profilexportjobb.
+Den här mixinen innehåller alla fält som motsvarar ett profilexportjobb. Dessa händelser genereras per **Läs målgrupp**-aktivitet för att spåra livscykeln för målgruppsexportåtgärder (köade, startade, slutförda, fel). Till skillnad från vanliga steghändelser är serviceEvents inte knutet till enskilda profiler utan till själva Läs målnoden, vilket innebär att de kanske inte har någon associerad profilidentifierare.
 
 | Fältnamn | Typ | Beskrivning |
 |---|---|------------|
@@ -118,5 +118,5 @@ Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligas
 
 * [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
 * [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
-* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 
