@@ -11,9 +11,9 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 26516db5251e096f6caaafb2c217238aa614da3e
+source-git-commit: 31da84ab3fe4edabaf49f7b078ef0b2fdae3f6c5
 workflow-type: tm+mt
-source-wordcount: '4340'
+source-wordcount: '4446'
 ht-degree: 0%
 
 ---
@@ -716,18 +716,23 @@ Läs mer om [affärshändelser](general-events.md).
 
 +++
 
-+++ Kan jag pausa en resa för en viss person utan att stoppa hela resan?
++++ Vad är sammanslagningspolicyer och hur påverkar de resorna?
 
-Du kan inte pausa en resa för enskilda profiler direkt, men du kan uppnå liknande resultat:
+**Sammanslagningsprinciper** avgör hur Adobe Experience Platform kombinerar data från flera källor för att skapa en enhetlig profilvy. De definierar regler för dataprioritet och identitetssammanfogning när det finns profilfragment i olika datauppsättningar.
 
-**Alternativ**:
+**Påverkan på resor**:
 
-* **Lägg till i exkluderingsmålgrupp**: Skapa en målgrupp med profiler för att exkludera och lägga till en villkorskontroll för den här målgruppen vid strategiska punkter på resan
-* **Uppdatera profilattribut**: Ange en pausflagga i profilen och använd villkor för att hoppa över åtgärder för flaggade profiler
-* **Anpassad åtgärd**: Använd ett externt system för att spåra pausade profiler och kontrollera status via API-anrop
-* **Manuell avslutning**: I brådskande fall kan du ta bort testprofiler manuellt
+* Resurserna använder den sammanslagningsprincip som är kopplad till målgruppen eller händelsen för att avgöra vilka profildata som är tillgängliga
+* Sammanslagningspolicyn påverkar vilka attribut och identiteter som är tillgängliga under resan, personalisering och åtgärder
+* Olika sammanfogningsprinciper kan leda till att olika profildata används under resan
 
-**Obs!** Reseändringar påverkar bara nya deltagare. Profiler som redan finns på resan följer den ursprungliga vägen om inte resan stoppas helt.
+**God praxis**:
+
+* Se till att den sammanslagningsprincip som används av resan överensstämmer med era datastyrningskrav
+* Förstå vilka datauppsättningar som ingår i sammanfogningsprincipen för att veta vilka data som är tillgängliga
+* Använd konsekventa sammanslagningsprinciper för olika målgrupper och resor för förutsägbara resultat
+
+Läs mer om [sammanfogningsprinciper](../audience/get-started-profiles.md) och [identitetshantering](../audience/get-started-identity.md).
 
 +++
 
@@ -764,7 +769,7 @@ Viktiga skyddsräcken är:
 
 * **Resans komplexitet**: Maximalt antal aktiviteter, sökvägar och kapslingsnivåer
 * **Genomströmning**: Meddelandeöverföringshastigheter och API-anropsbegränsningar
-* **Tid för live**: Maximal restid (t.ex. 91 dagar för heltidsresor)
+* **Tid till live**: Maximal restid (t.ex. 91 dagar)
 * **Målgruppsstorlek**: Begränsningar för läsmålgruppsstorlekar
 * **Uttryckskomplexitet**: Teckenbegränsningar i villkor och personalisering
 
@@ -778,7 +783,7 @@ Visa fullständiga [skyddsutkast och begränsningar](../start/guardrails.md).
 
 * Håll resorna fokuserade på särskilda användningsfall
 * Använd beskrivande namn för aktiviteter
-* Lägg till anteckningar och etiketter för komplex logik
+* Lägg till beskrivningar och etiketter för komplex logik
 * Gruppera relaterade resor med taggar
 
 **Prestanda**:
@@ -791,6 +796,8 @@ Visa fullständiga [skyddsutkast och begränsningar](../start/guardrails.md).
 **Testar**:
 
 * Testa alltid resor före publicering
+* Använd testläge för att validera reselogiken och gå igenom resan
+* Använd torrt körningsläge för att testa med verkliga produktionsdata utan att kontakta kunderna
 * Testa alla villkorsstyrda sökvägar och scenarier
 * Använd realistiska testprofiler
 * Validera personalisering och dynamiskt innehåll
@@ -798,7 +805,7 @@ Visa fullständiga [skyddsutkast och begränsningar](../start/guardrails.md).
 **Underhåll**:
 
 * Regelbundet granska reseresultaten
-* Arkivera eller stäng oanvända resor
+* Stoppa eller stänga oanvända resor
 * Dokumentreselogik och affärsregler
 * Planera för reseversionshantering
 
@@ -808,11 +815,18 @@ Läs mer om [de bästa sätten att utforma resor](using-the-journey-designer.md)
 
 +++ Hur många aktiviteter kan jag lägga till på en resa?
 
-Även om det inte finns någon strikt begränsning av antalet aktiviteter kan mycket komplexa resor (fler än 50 aktiviteter) bli svåra att underhålla och felsöka. Stora resor med många filialer och förhållanden kan påverka bearbetningstiden och läsbarheten.
+Resorna är begränsade till högst 50 aktiviteter. Vi rekommenderar dock att du förenklar dina resor för bättre underhåll och prestanda.
 
-**Bästa praxis**: Om din resa blir alltför komplex kan du dela in den i flera resor med hjälp av hoppaktiviteten, skapa återanvändbara delresor eller förenkla logiken med mer effektiva villkor.
+När resor närmar sig 50 aktiviteter kan de bli mycket komplexa och svåra att underhålla, felsöka och förstå. Stora resor med många kontor och villkor kan också påverka bearbetningstiden, läsbarheten och samarbetet i teamet.
 
-Läs mer om [resedesign](using-the-journey-designer.md).
+**Bästa praxis**: Håll resorna fokuserade och hanterbara. Om din resa blir komplex, tänk på följande:
+
+* Dela upp det på flera resor med hjälp av hoppaktiviteten
+* Skapa återanvändbara mönster för enklare resor
+* Förenkla logiken med effektivare villkor
+* Granska om alla aktiviteter är nödvändiga
+
+Läs mer om [resedesign](using-the-journey-designer.md) och [skyddsutkast och begränsningar](../start/guardrails.md).
 
 +++
 
@@ -820,26 +834,26 @@ Läs mer om [resedesign](using-the-journey-designer.md).
 
 **Designöverväganden**:
 
-* Använd målgruppsbaserad post för gruppkommunikation i stället för enskilda händelser
-* Implementera lämpliga väntetider för att sprida meddelandevolymen
-* Utnyttja regler för capping för att förhindra systemöverbelastning
-* Optimera villkorslogiken för att minska komplexiteten i behandlingen
+* Använd [målgruppsbaserad post](read-audience.md) för gruppkommunikation i stället för enskilda händelser
+* Implementera lämpliga [väntetider](wait-activity.md) för att sprida meddelandevolymen
+* Använd [begränsningsregler](../conflict-prioritization/journey-capping.md) för att förhindra systemöverbelastning
+* Optimera [villkorslogik](condition-activity.md) för att minska komplexiteten i bearbetningen
 
 **Övervakning**:
 
-* Spåra resemätningar regelbundet
-* Övervaka API-prestanda för anpassade åtgärder
-* Granska felfrekvenser och timeout-förekomster
-* Ställ in aviseringar för allvarliga fel i resan
+* Spåra [resemått](report-journey.md) regelbundet
+* Övervaka API-prestanda för [anpassade åtgärder](using-custom-actions.md)
+* Granska felfrekvenser och timeout-händelser med [felsökningsverktyg](troubleshooting.md)
+* Prenumerera på [resemeddelanden](../reports/alerts.md) om viktiga resefel
 
 **Optimering**:
 
-* Använd testläge och torr körning för att validera prestanda före publicering
-* Begränsa externa datakällanrop till viktiga scenarier
-* Cachelagra data som ofta används när det är möjligt
-* Granska och optimera meddelandeleveransen
+* Använd [testläge](testing-the-journey.md) och [torr körning](journey-dry-run.md) för att validera prestanda före publicering
+* Minimera externa API-anrop via [anpassade åtgärder](using-custom-actions.md) för att undvika fördröjning och beroende av system från tredje part
+* Lagra data som används ofta i Adobe Experience Platform med [datauppslagssökning](dataset-lookup.md) i stället för att göra externa anrop, när det är möjligt
+* Granska och optimera prestanda för [meddelandeleverans](journeys-message.md)
 
-Läs mer om [optimering av resan](../start/guardrails.md).
+Läs mer om [skyddsutkast och begränsningar](../start/guardrails.md).
 
 +++
 
@@ -851,4 +865,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
