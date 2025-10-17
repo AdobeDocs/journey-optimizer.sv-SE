@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 93179c7612eda244e512f8144ca396660a8a7537
+source-git-commit: 2c077e81aedf0a36ae15065a6cb15c88d22dd888
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 [!DNL Adobe Journey Optimizer] levererar kontinuerligt nya funktioner, förbättringar av befintliga funktioner och felkorrigeringar. Alla ändringar konsolideras i slutet av varje månad i [versionsinformationen](release-notes.md).
 
 
-## 25 förhandsversionsinformation oktober {#25-10-rn}
+## 25 förhandsversionsinformation oktober {#oct-25-10-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 22 oktober 2025
 
@@ -196,6 +196,24 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Återanvändbara målinriktningsregler</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Journey Optimizer kan ni nu skapa regler från en dedikerad användargränssnittsmeny och utnyttja dem när ni bygger målinriktning, antingen som en del av optimeringen av innehåll i en kampanj eller en resa, antingen i optimeringsprocessen.</p>
+<p>Målreglerna är för närvarande tillgängliga för organisationer som har köpt tilläggserbjudandet för beslut och är tillgängliga på begäran för andra organisationer (begränsad tillgänglighet).</p>
+<p>Den här funktionen kommer att successivt lanseras för alla kunder. Under tiden kontaktar du Adobe för att få åtkomst.</p>
+<!--img src="assets/do-not-localize/FILE.gif"-->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -246,7 +264,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <td>
 <p>Experimenteringsagenten tillhandahålls av <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator.html" target="_blank">Adobe Experience Platform Agent Orchestrator</a> och är tillgänglig i Journey Optimizer. </p>
 <p>Experimentationsagenten är ett AI-drivet verktyg som moderniserar hur du kan köra och hantera digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och program. Det hjälper er att köra experiment effektivare, organisera affärsmålen och generera åtgärdbara insikter, framhäv vad som fungerade, vad som inte gjorde det och var ni ska experimentera härnäst.</p>
-<p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html?lang=sv-SE" target="_blank">detaljerad dokumentation</a></p>
+<p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html" target="_blank">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 10 oktober 2025</p>
 </td>
 </tr>
@@ -297,13 +315,9 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 
 ### Förbättringar
 
-**Välj återanvändbara regler i mål**
-
-Nu kan ni utnyttja regelbyggaren när ni använder målregler med funktionen Meddelandeoptimering i resor och kampanjer. <!-- [Read more](../FILE.md) -->
-
 **Körningsfält för WhatsApp-kanal**
 
-Förutom e-post och SMS är det nu möjligt att uppdatera standardkörningsfältet för WhatsApp. Det går också att åsidosätta körningsfältet som angetts globalt i de avancerade parametrarna för WHatsApp-reseaktiviteten eller i konfigurationen för WhatsApp-kanalen. <!-- [Read more](../FILE.md) -->
+Förutom E-post och SMS kan du även uppdatera standardkörningsfältet för dina WhatsApp-leveranser på sandlådenivå. Det går också att åsidosätta körningsfältet som angetts globalt genom att ändra det i de avancerade parametrarna för whatsApp-reseaktiviteten eller i konfigurationen för WhatsApp-kanalen. <!-- [Read more](../FILE.md) -->
 
 **Stöd för anpassade attribut för adressen Mailto (unsubscribe)**
 
