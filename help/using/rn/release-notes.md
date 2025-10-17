@@ -24,13 +24,13 @@ ht-degree: 1%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna.  Ett dedikerat avsnitt om [de senaste uppdateringarna](#updates-rn) visar på nya funktioner och förbättringar när de distribueras till produktionen, så att du alltid informeras om alla ändringar i realtid. <!--For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](#releases.md).-->
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
 
 ## 25 förhandsversionsinformation oktober {#oct-25-10-rn}
 
 **Förhandsversionsinformationen nedan kan ändras utan föregående meddelande till releasedatum**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 22 oktober 2025
 
@@ -288,7 +288,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <td>
 <p>Experimenteringsagenten tillhandahålls av <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator.html" target="_blank">Adobe Experience Platform Agent Orchestrator</a> och är tillgänglig i Journey Optimizer. </p>
 <p>Experimentationsagenten är ett AI-drivet verktyg som moderniserar hur du kan köra och hantera digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och program. Det hjälper er att köra experiment effektivare, organisera affärsmålen och generera åtgärdbara insikter, framhäv vad som fungerade, vad som inte gjorde det och var ni ska experimentera härnäst.</p>
-<p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html" target="_blank">detaljerad dokumentation</a></p>
+<p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html?lang=sv-SE" target="_blank">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 10 oktober 2025</p>
 </td>
 </tr>
@@ -402,7 +402,7 @@ Tillgänglighetsdatum: 6 oktober 2025
 <tr>
 <td>
 <p>Journey Agent tillhandahålls av <a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator" target="_blank">Adobe Experience Platform Agent Orchestrator</a> och finns i Journey Optimizer. Det gör att ni kan analysera resor via ett naturligt språkgränssnitt. Agenten kommer att upptäcka målgrupper eller schemalägga konflikter och bortfall av profiler under en resa för att hjälpa er att vidta åtgärder för att lösa dem. Snart kan du skapa resor med äkta stöd.</p>
-<p>Mer information finns i <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze" target="_blank">detaljerad dokumentation</a></p>
+<p>Mer information finns i <a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze" target="_blank">detaljerad dokumentation</a></p>
 <p>Tillgänglighetsdatum: 24 september 2025</p>
 </td>
 </tr>
