@@ -11,9 +11,9 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 32848633cdfb5683b45286fcdd22711a82d591b5
+source-git-commit: d55aff6dd3773ad59ab45d2b6d7ced7b9a64de5d
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4189'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,11 @@ Läs mer om [resor](journey.md).
 
 +++ Vilka typer av resor finns det?
 
-Adobe Journey Optimizer stöder tre typer av resor:
+Adobe Journey Optimizer stöder fyra typer av resor:
 
 * **Unitära resor**: Utlöses individuellt av en händelse (t.ex. ett köp, appinloggning). Profilerna kommer in på resan en i taget när händelsen inträffar.
 * **Läs målgruppsresor**: Börja med en målgrupp från Adobe Experience Platform och skicka meddelanden gruppvis till alla profiler i den målgruppen.
+* **Målgruppskvalificeringsresor**: Utlöses när profiler kvalificerar sig för (eller avslutar) ett visst målgruppssegment. Profilerna går in på resan när de uppfyller målgruppskriterierna.
 * **Affärshändelseresor**: Utlöses av affärshändelser (t.ex. börsuppdateringar, vädervarningar) som påverkar flera profiler samtidigt.
 
 Läs mer om [resetyper](entry-management.md#types-of-journeys).
@@ -51,9 +52,13 @@ Läs mer om [resetyper](entry-management.md#types-of-journeys).
 
 **Resor** är flerstegsorkestrationer som reagerar på händelser eller målgrupper, vilket möjliggör komplex logik, villkor, väntetider och flera kontaktpunkter under kundens livscykel.
 
-**Kampanjer** är engångskommunikation eller återkommande kommunikation som skickas till en viss målgrupp, vilket är idealiskt för fristående meddelanden som kampanjmeddelanden eller nyhetsbrev.
+**Kampanjer** finns i tre typer:
 
-**Bästa praxis**: Använd resor för pågående flerstegsengagemang och kampanjer för riktad, fristående kommunikation.
+* **Åtgärdskampanjer**: Engångs- eller återkommande kommunikation som skickas till en viss målgrupp är idealisk för fristående meddelanden som reklamutskick eller nyhetsbrev.
+* **API-utlösta kampanjer**: Kampanjer utlöses via API-anrop, vilket gör att integrering med externa system kan skicka meddelanden baserat på realtidshändelser eller affärslogik.
+* **Samordnade kampanjer**: Flerstegs målgruppsbaserade kampanjer som bygger på en arbetsyta och som kan innehålla villkor, väntetider och flera åtgärder för att skapa schemalagda, samordnade upplevelser.
+
+**Bästa praxis**: Använd resor för komplext, händelseutlöst engagemang med avancerad samordning, åtgärdskampanjer för schemalagd, målgruppsbaserad kommunikation, API-utlösta kampanjer för programmatisk triggning från externa system och samordnade kampanjer för flerstegskommunikation med kampanjspecifika krav.
 
 +++
 
@@ -815,4 +820,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
