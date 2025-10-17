@@ -118,5 +118,5 @@ Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligas
 
 * [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
 * [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
-* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
 
