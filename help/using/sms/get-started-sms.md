@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: 0a9c36b75f7433eadbc8894fb7252a8f846c78b2
+source-git-commit: 13552b3731a20fc9ca2d93a18c0a2c9fdf9378fa
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 2%
+source-wordcount: '812'
+ht-degree: 1%
 
 ---
 
@@ -132,40 +132,66 @@ Dessa konfigurationssteg utförs vanligtvis av en systemadministratör. [Kom ig�
 
 ## Ytterligare resurser {#additional-resources}
 
-**Konfigurationsguider**
+Bläddra bland avsnitten nedan om du vill veta mer om textmeddelanden i Journey Optimizer.
+
++++Konfigurationsguider
+
+Lär dig hur du konfigurerar och konfigurerar din SMS-miljö:
 
 * [Översikt över konfiguration av SMS-kanal](sms-configuration.md)
 * [Skapa SMS-kanalkonfigurationer](sms-configuration-surface.md)
 * [Konfigurera SMS-underdomäner för URL-förkortning](sms-subdomains.md)
 
-**Guider för providerkonfiguration**
++++
+
++++Handböcker för providerinställningar
+
+Stegvis konfiguration för varje SMS-tjänstleverantör:
 
 * [Konfigurera Sinch-provider](sms-configuration-sinch.md)
 * [Konfigurera Twilio-provider](sms-configuration-twilio.md)
 * [Konfigurera Infobip-provider](sms-configuration-infobip.md)
 * [Konfigurera anpassad SMS-provider](sms-configuration-custom.md)
 
-**Skapa och hantera innehåll**
++++
+
++++Skapa och hantera innehåll
+
+Skapa, anpassa och hantera textmeddelandeinnehåll:
 
 * [Skapa SMS/MMS-meddelanden](create-sms.md)
 * [Förhandsgranska, testa och skicka meddelanden](send-sms.md)
 * [Personalization i textmeddelanden](../personalization/personalize.md)
 * [Dynamiskt innehåll](../personalization/get-started-dynamic-content.md)
 
-**Efterlevnad och sekretess**
++++
+
++++Efterlevnad och sekretess
+
+Säkerställ att textmeddelandena följer gällande bestämmelser och sekretesskrav:
 
 * [Hantering av avanmälan](sms-opt-out.md)
 * [Sekretess och medgivande](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
 
-**Prestandaspårning**
++++
+
++++Prestandaspårning
+
+Övervaka och analysera era SMS-kampanjer och kundresan:
 
 * [Kampanjrapporter för SMS](../reports/campaign-global-report-cja-sms.md)
 * [SMS-reserapporter](../reports/journey-global-report-cja-sms.md)
 
-**Resa- och kampanjintegrering**
++++
+
++++Integrering av resor och kampanjer
+
+Lär dig hur ni kan införliva SMS i era kundresor och kampanjer:
 
 * [Lägg till SMS-meddelanden på resor](../building-journeys/journeys-message.md)
 * [Skapa SMS-kampanjer](../campaigns/create-campaign.md)
+
++++
 
 ## Instruktionsfilmer {#videos}
 
@@ -175,7 +201,7 @@ Lär dig hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina ku
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3428916?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 
 +++
 
@@ -185,7 +211,7 @@ Upptäck de omfattande mobilmeddelandefunktionerna som Adobe Journey Optimizer e
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3430381?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426021?quality=12&learn=on)
 
 +++
 
@@ -195,7 +221,7 @@ Lär dig hur du konfigurerar och skickar varumärkesanpassade, interaktiva RCS-m
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3464759?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464755)
 
 +++
 
