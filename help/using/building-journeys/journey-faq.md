@@ -11,9 +11,9 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: d55aff6dd3773ad59ab45d2b6d7ced7b9a64de5d
+source-git-commit: 26516db5251e096f6caaafb2c217238aa614da3e
 workflow-type: tm+mt
-source-wordcount: '4189'
+source-wordcount: '4340'
 ht-degree: 0%
 
 ---
@@ -100,10 +100,11 @@ Följ de här stegen:
 
 1. **Konfigurera nödvändiga komponenter**: Konfigurera händelser, datakällor och åtgärder efter behov
 2. **Skapa resan**: Navigera till menyn Resor och klicka på Skapa resa.
-3. **Definiera reseegenskaper**: Ange resenamn, beskrivning, namnutrymme och andra inställningar
+3. **Definiera reseegenskaper**: Ange resenamn, beskrivning och andra inställningar
 4. **Utforma resan**: Dra och släpp aktiviteter från paletten på arbetsytan
 5. **Testa resan**: Använd testläge för att validera din reselogik
-6. **Publicera resan**: Aktivera resan för att göra den offentlig
+6. **Torr körning av resan**: Använd Torr körning för att testa resan med hjälp av verkliga produktionsdata utan att kontakta riktiga kunder eller uppdatera profilinformationen
+7. **Publicera resan**: Aktivera resan för att göra den offentlig
 
 Följ [steg för steg-guiden](journey-gs.md).
 
@@ -124,9 +125,17 @@ Läs mer om [resekonfigurationen](../configuration/about-data-sources-events-act
 
 +++ Kan jag använda data från externa system under min resa?
 
-Ja. Du kan konfigurera **externa datakällor** för att hämta information från API-tjänster från tredje part och använda den i dina resevillkor, din personalisering eller dina åtgärder. På så sätt kan ni berika kundupplevelsen med realtidsdata från era CRM, lojalitetssystem, vädertjänster eller andra externa plattformar.
+Ja, det finns flera sätt att utnyttja externa data:
 
-Läs mer om [externa datakällor](../datasource/external-data-sources.md).
+**God praxis**:
+
+* **Anpassade åtgärder**: Anropa externa API:er via anpassade åtgärder för att hämta eller skicka data till tredjepartssystem. Detta är det rekommenderade tillvägagångssättet för realtidsinteraktion med externa system.
+* **Datauppsättningssökning**: Om du kan läsa in data från externa system till Adobe Experience Platform använder du sökfunktionen för datauppsättningar för att hämta information som lagras i Experience Platform datauppsättningar.
+* **Externa datakällor**: Konfigurera externa datakällor för att hämta information från API-tjänster från tredje part (mindre rekommenderas än ovanstående metoder).
+
+Med dessa alternativ kan ni berika kundupplevelsen med data från era CRM, lojalitetssystem, vädertjänster eller andra externa plattformar.
+
+Läs mer om [anpassade åtgärder](using-custom-actions.md) och [datasuppslagning](dataset-lookup.md).
 
 +++
 
@@ -146,7 +155,9 @@ Läs mer om [villkoren](condition-activity.md).
 
 Ja. Journey Optimizer innehåller **inbyggda kanalåtgärder** som gör att du kan skicka meddelanden via e-post, push-meddelanden, SMS/MMS/RCS, meddelanden i appen, webbupplevelser, kodbaserade upplevelser, direktreklam, innehållskort, WhatsApp och LINE. Du kan designa meddelandeinnehåll direkt i Journey Optimizer och lägga till dem som åtgärdsaktiviteter under din resa.
 
-Läs mer om [meddelanden på resor](journeys-message.md).
+För kanaler som inte stöds internt kan du använda **anpassade åtgärder** för att integrera med externa meddelandeplattformar och skicka meddelanden via valfri tredjepartskanal.
+
+Läs mer om [meddelanden under resor](journeys-message.md) och [anpassade åtgärder](using-custom-actions.md).
 
 +++
 
@@ -155,7 +166,6 @@ Läs mer om [meddelanden på resor](journeys-message.md).
 Använd aktiviteten **Vänta** om du vill pausa resan under en angiven tid eller tills ett visst datum/tid. Vänteaktiviteter är användbara för:
 
 * Skicka uppföljningsmeddelanden efter en fördröjning (t.ex. 3 dagar efter köpet)
-* Väntar på kontorstid innan åtgärd utförs
 * Skapa droppkampanjer med tidsbestämda intervall
 * Kombinera med villkor för att skapa timeoutscenarier
 
@@ -189,13 +199,13 @@ Läs mer om [händelsekonfiguration](../event/about-events.md) och [e-poståtgä
 
 +++ Kan jag skicka om ett meddelande om någon inte öppnar eller klickar på det?
 
-Ja. Använd en **villkorsaktivitet** i kombination med **vänteaktiviteter**:
+Ja. Använd en **reaktionshändelse** med en **Timeout**:
 
-1. Lägg till en vänteaktivitet (t.ex. vänta 3 dagar)
-2. Lägg till en villkorsaktivitetskontroll om e-postmeddelandet öppnades eller klickades
+1. När du har skickat meddelandet lägger du till en Reaction-händelse som lyssnar efter e-postöppningar eller klick
+2. Konfigurera en timeout-period (t.ex. 3 dagar) för Reaction-händelsen
 3. Skapa två banor:
-   * **Om du har öppnat/klickat**: Avsluta resan eller fortsätt med nästa steg
-   * **Om du inte har öppnat/klickat**: Skicka ett påminnelsemeddelande via e-post med en annan ämnesrad
+   * **Om du har öppnat/klickat**: Fortsätt med nästa steg eller avsluta resan
+   * **Timeout-sökväg (ej öppnad/klickad)**: Skicka ett påminnelsemeddelande med en annan ämnesrad
 
 **Bästa tillvägagångssätt**: Begränsa antalet omgångar så att inte skräppost visas (vanligtvis 1-2 påminnelser maximalt).
 
@@ -205,15 +215,17 @@ Läs mer om [reaktionshändelser](reaction-events.md).
 
 +++ Hur skapar jag en kundvagnsöverlämningsresa?
 
-Skapa en händelseutlöst resa med väntetid och logik:
+Skapa en händelseutlöst resa med en Reaction-händelse med en Timeout:
 
 1. **Konfigurera en händelse om att kundvagnen överges**: Utlöses när objekt läggs till men utcheckningen inte slutförs inom en tidsram
-2. **Lägg till en vänteaktivitet**: Vänta i 1-2 timmar för att ge kunden tid att slutföra naturligt
-3. **Lägg till ett villkor**: Kontrollera om köpet slutfördes under väntan
-4. **Om det inte köpts**: Skicka en påminnelse om att kunden har lämnat tjänsten med kundvagnsinnehåll via e-post
-5. **Valfritt**: Lägg till ytterligare en väntan (24 timmar) och skicka en andra påminnelse med ett incitament (t.ex. 10 % rabatt)
+2. **Lägg till en Reaction-händelse**: Konfigurera den för att lyssna efter en Purchase-händelse
+3. **Ange en timeout-period**: Definiera en timeout (t.ex. 1-2 timmar) för Reaction-händelsen för att ge kunden tid att slutföra naturligt
+4. **Skapa två banor**:
+   * **Om en köphändelse inträffar**: Avsluta resan eller fortsätt med flödet efter köpet
+   * **Timeout-sökväg (inget köp)**: Skicka en påminnelse om att kunden avbryter prenumerationen via e-post med kundvagnsinnehåll
+5. **Valfritt**: Lägg till ytterligare en Reaction-händelse med timeout (24 timmar) och skicka en andra påminnelse med ett incitament (till exempel 10 % rabatt)
 
-Läs mer om [användningsfall för resan](jo-use-cases.md).
+Läs mer om [resans användningsfall](jo-use-cases.md) och [reaktionshändelser](reaction-events.md).
 
 +++
 
@@ -238,9 +250,6 @@ Journey Optimizer erbjuder flera alternativ för hantering av tidszoner:
 
 * **Profilens tidszon**: Meddelanden skickas baserat på varje persons tidszon som lagras i deras profil
 * **Fast tidszon**: Alla meddelanden använder en specifik tidszon som du definierar
-* **Vänta tills specifik tid**: Använd aktiviteten Vänta för att skicka meddelanden vid en viss tidpunkt i mottagarens lokala tidszon (t.ex. 10:00)
-
-**Exempel**: Om du vill skicka ett &quot;Godmorgon&quot;-e-postmeddelande klockan 9.00 i varje kunds tidszon använder du en Wait-aktivitet med &quot;Vänta till ett fast datum/tid&quot; och aktiverar tidszonsalternativet.
 
 Läs mer om [hantering av tidszoner](timezone-management.md).
 
@@ -288,10 +297,10 @@ Läs mer om [testläge](testing-the-journey.md) och [torr körning](journey-dry-
 
 När du publicerar en resa:
 
-* Resan blir **aktiv** och klar att acceptera nya profiler
+* Resan blir **Live** och klar att acceptera nya profiler
 * Profiler kan anges baserat på tävlingskriterier (händelse eller målgrupp)
 * Meddelanden och åtgärder börjar köras för profiler som rör sig genom resan
-* Du kan inte redigera en publicerad resa direkt (du måste skapa en ny version)
+* Du kan bara redigera begränsade saker på en publicerad resa (du måste skapa en ny version om du vill redigera fler)
 
 Läs mer om [publiceringsresor](publishing-the-journey.md).
 
@@ -299,7 +308,21 @@ Läs mer om [publiceringsresor](publishing-the-journey.md).
 
 +++ Kan jag ändra en resa som redan är publicerad?
 
-Du kan inte redigera en direktresa direkt. Så här gör du ändringar:
+Ja, men med begränsningar. Du kan redigera vissa element i en Live-resa:
+
+**Vad du kan redigera**:
+
+* Reseegenskaper (namn, beskrivning)
+* Meddelandeinnehåll i befintliga meddelandeaktiviteter
+* Vissa reseinställningar
+
+**Vad du inte kan redigera**:
+
+* Resestruktur (tillägg/borttagning av aktiviteter)
+* Anmälningsvillkor
+* Journey Canvas-logik
+
+**Så här gör du strukturella ändringar**:
 
 1. **Skapa en ny version**: Duplicera den publicerade resan och skapa ett utkast till version
 2. **Gör dina ändringar**: Redigera utkastet efter behov
@@ -318,7 +341,7 @@ Du kan hantera körning av resan på flera sätt:
 
 * **Nära nya ingångar**: Stoppa nya profiler från att komma in samtidigt som befintliga profiler tillåts slutföra sin resa
 * **Stoppa omedelbart**: Avsluta resan och avsluta alla profiler i den
-* **Paus**: Stoppa resan tillfälligt och återuppta den senare (tillgängligt för särskilda resetyper)
+* **Paus**: Stoppa resan tillfälligt och återuppta den senare
 
 Läs mer om [slutresor](end-journey.md).
 
@@ -340,7 +363,7 @@ Läs mer om [slutresor](end-journey.md).
 * Använd detta för akuta situationer eller kritiska fel
 * Exempel: Återkallande av produkter kräver omedelbart stopp av kampanjmeddelanden
 
-Läs mer om alternativen för att pausa [resan](journey-pause.md).
+Läs mer om [avslut på resor](end-journey.md) och [publiceringsresor](publishing-the-journey.md).
 
 +++
 
@@ -350,10 +373,9 @@ Läs mer om alternativen för att pausa [resan](journey-pause.md).
 
 Du kan övervaka körningen av resan med:
 
-* **ReseLive-rapport**: Visa realtidsstatistik och nyckeltal för din resa
-* **Resa, heltidsrapport**: Analysera reseprestanda med Customer Journey Analytics
+* **ReseLive-rapport**: Visa realtidsstatistik och nyckeltal för din resa. Du kan även granska testkörningens resultat här.
+* **Resa, heltidsrapport**: Analysera reseprestanda med Customer Journey Analytics. Du kan även granska testkörningens resultat här.
 * **Resestegshändelser**: Få åtkomst till detaljerade körningsdata för anpassad rapportering
-* **Kör kontrollpanel för körning av körningsfärd**: Granska testkörningsresultat innan du aktiverar
 
 Läs mer om [reserapportering](report-journey.md).
 
@@ -395,6 +417,7 @@ Journey Optimizer tillhandahåller flera felsökningsresurser:
 
 * **Felindikatorer**: Visuella aviseringar på arbetsytan visar konfigurationsproblem
 * **Testläge**: Gå igenom resan för att identifiera var det finns problem
+* **Torr körningsläge**: Testa resan med verkliga produktionsdata utan att kontakta kunderna för att validera riktning och utförande
 * **Resursrapporter**: Granska körningsmått för att hitta flaskhalsar eller fel
 * **Resestegshändelser**: Analysera detaljerade körningsdata för att förstå profilbeteende
 
@@ -409,15 +432,17 @@ Läs mer om [felsökning av resor](troubleshooting.md).
 
 +++
 
-+++ Vad händer om en åtgärd misslyckas under en resa?
+<!--
++++ What happens if an action fails in a journey?
 
-När en åtgärd misslyckas (t.ex. timeout för API-anrop, meddelandeleveransfel) fortsätter resan som standard om inte något annat konfigureras. Du kan definiera villkorsaktiviteter för att hantera felscenarier, och fel loggas i reserapporter och steghändelser för övervakning.
+When an action fails (e.g., API call timeout, message delivery error), the journey continues by default unless configured otherwise. You can define condition activities to handle failure scenarios, and errors are logged in journey reports and step events for monitoring.
 
-**Bästa praxis**: Ange lämpliga timeoutvärden för externa åtgärder och definiera alternativa sökvägar för kritiska felscenarier.
+**Best practice**: Set appropriate timeout values for external actions and define alternative paths for critical failure scenarios.
 
-Läs mer om [åtgärdssvar](../action/action-response.md).
+Learn more about [action responses](../action/action-response.md).
 
 +++
+-->
 
 +++ Kan jag se vem som är på min resa just nu?
 
@@ -450,8 +475,9 @@ Lösning: Validera profilens datakvalitet
 * **Resan har inte publicerats**: Resan är fortfarande i utkastläge
 Lösning: Publicera resan för att aktivera den
 
-* **Meddelandet har inte godkänts**: Meddelandeinnehållet måste godkännas innan det skickas
-Lösning: Skicka för godkännande eller kontrollera godkännandestatus
+<!-- 
+* **Message not approved**: Message content requires approval before sending
+  Solution: Submit for approval or check approval status-->
 
 * **Kanalkonfigurationsproblem**: E-post-/SMS-konfigurationen är felaktig
 Lösning: Verifiera kanalkonfigurationer och autentisering
@@ -493,7 +519,8 @@ Ja. Använd en **villkorsaktivitet** för att kontrollera den önskade kanalen:
    * **Push-sökväg**: Skicka push-meddelande
 3. Lägga till en standardsökväg för profiler utan en inställning
 
-**Alternativ metod**: Använd **flerkanalsåtgärder** där Journey Optimizer automatiskt väljer den bästa kanalen baserat på profilinställningar och tillgänglighet.
+<!--
+**Alternative approach**: Use **multi-channel actions** where Journey Optimizer automatically selects the best channel based on profile preferences and availability.-->
 
 Läs mer om [kanalåtgärder](journeys-message.md).
 
@@ -505,15 +532,15 @@ Ja, det finns flera sätt att utesluta kunder:
 
 **Vid resepost**:
 
-* Använd målgruppsdefinitioner med undantagsregler
-* Lägga till anmälningsvillkor som filtrerar bort specifika profiler
-* Konfigurera namnutrymmeskrav
+* Använd [målgruppsdefinitioner](../audience/creating-a-segment-definition.md) med undantagsregler
+* Lägg till [anmälningsvillkor](entry-management.md) som filtrerar bort specifika profiler
+* Konfigurera [profilattributbaserade avslutningskriterier](journey-properties.md) i resans egenskaper så att profiler automatiskt utesluts baserat på specifika attribut
 
 **Inom resan**:
 
-* Lägg till en villkorsaktivitet tidigt under resan för att avsluta oönskade profiler
+* Lägg till en [villkorsaktivitet](condition-activity.md) tidigt på resan för att avsluta oönskade profiler
 * Kontrollera om det finns exkluderingsattribut (t.ex. VIP-status, testkonton)
-* Använd målgruppskvalifikation för att identifiera profiler som ska uteslutas
+* Använd [målgruppskvalifikation](audience-qualification-events.md) för att identifiera profiler som ska uteslutas
 
 **Exempel på undantagsscenarier**:
 
@@ -521,8 +548,6 @@ Ja, det finns flera sätt att utesluta kunder:
 * Uteslut VIP-kunder från standardkampanjer
 * Exkludera medarbetare och testkonton
 * Uteslut kunder i vissa regioner
-
-Läs mer om [hantering av inträde](entry-management.md) och [villkor](condition-activity.md).
 
 +++
 
@@ -545,10 +570,11 @@ Ja, beroende på inställningarna för **återinträde**:
 * **Tillåt återinträde**: Profiler kan gå in på resan flera gånger efter att de har slutförts
 * **Vänteperiod för återinträde**: Definiera en minimitid mellan reseposter (t.ex. 7 dagar)
 * **Tvinga återinträde för händelse**: Utlös en ny reseinstans även om profilen redan finns under resan
+* **Kompletterande identifierare**: Använd ett extra ID om du vill tillåta profiler att registrera om resan flera gånger för olika enheter (t.ex. olika order, bokningar eller transaktioner), även när de redan befinner sig på resan
 
-**Bästa praxis**: Använd regler för återinträde för att förhindra att meddelandet tröttnar och för att säkerställa rätt paketering.
+**Bästa praxis**: Använd regler för återinträde för att förhindra att meddelandet tröttnar och för att säkerställa rätt paketering. Överväg att använda tilläggsidentifierare för transaktionsresor där profiler måste ange flera gånger för olika transaktioner.
 
-Läs mer om [hantering av inträde](entry-management.md).
+Läs mer om [hantering av tävlingsbidrag](entry-management.md) och [ytterligare identifierare](supplemental-identifier.md).
 
 +++
 
@@ -568,7 +594,12 @@ Läs mer om [optimering vid sändning](send-time-optimization.md).
 
 +++ Vad är regler för resefackning?
 
-Med **resefackning** kan du begränsa hur många gånger en profil kan ta sig in på resor inom en angiven tidsperiod, vilket förhindrar att meddelandet tröttnar och ger en optimal kundupplevelse. Du kan ange högsta antal poster per profil för olika resor eller specifika resor, definiera tidsfönster (varje dag, varje vecka, varje månad) och prioritera resor när flera resor konkurrerar om samma profil.
+Med **resefackning** kan du styra hur profiler interagerar med resorna, förhindra att meddelanden tröttnar och säkerställa en optimal kundupplevelse:
+
+* **Ankomstbegränsning**: Begränsa antalet gånger en profil kan registrera resor inom en angiven tidsperiod
+* **Samtidighetsbegränsning**: Begränsa antalet resor en profil kan finnas i samtidigt
+
+Du kan ange högsta antal inmatningar eller samtidighet per profil för olika resor eller specifika resor, definiera tidsfönster (varje dag, varje vecka, varje månad) och prioritera resor när flera resor konkurrerar om samma profil.
 
 Läs mer om [resefackning](../conflict-prioritization/journey-capping.md).
 
@@ -578,7 +609,7 @@ Läs mer om [resefackning](../conflict-prioritization/journey-capping.md).
 
 Ja. Använd **anpassade åtgärder** för att anropa API:er från tredje part (CRM, automatiserad marknadsföring, lojalitetssystem), skicka data till externa system, hämta realtidsinformation för beslut och aktivera arbetsflöden på externa plattformar.
 
-Anpassade åtgärder stöder autentisering (API-nyckel, OAuth 2.0), anpassning av nyttolast för begäran/svar, felhantering och timeout samt dynamiska parametrar från kundresans kontext.
+Anpassade åtgärder stöder autentisering (API-nyckel, anpassad autentisering), anpassning av begäran/svar-nyttolast, felhantering och timeout samt dynamiska parametrar från kundresans kontext.
 
 Läs mer om [anpassade åtgärder](using-custom-actions.md).
 
@@ -638,15 +669,15 @@ Läs mer om [användningsfall för resan](jo-use-cases.md).
 
 +++ Kan jag testa olika vägar under min resa?
 
-Ja. Använd aktiviteten **Optimera** (tillgänglig i specifika Journey Optimizer-paket) eller skapa testdelningar manuellt:
+Ja. Använd aktiviteten **Optimera** (begränsad tillgänglighet) eller skapa testdelningar manuellt:
 
-**Använda aktiviteten Optimera**:
+**Använda Optimera aktivitet** med metoden Experiment:
 
-* Delar automatiskt upp trafik mellan varianter
-* Testar olika meddelanden, erbjudanden eller hela resvägar
-* Mäter prestanda och deklarerar en vinnare
+* Delar trafik slumpmässigt mellan olika banor för att avgöra vilken som fungerar bäst
+* Testar olika meddelanden, erbjudanden, väntetider eller hela resvägar
+* Mäter prestanda baserat på fördefinierade framgångsmått och deklarerar en vinnare
 
-**Manuell testning med villkor**:
+**Använda Optimera aktivitet** med villkorsmetoden för datakälla:
 
 * Skapa ett villkor som delar profiler slumpmässigt (t.ex. med en slumpmässig talfunktion)
 * Skicka olika upplevelser till varje delning
@@ -820,4 +851,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
