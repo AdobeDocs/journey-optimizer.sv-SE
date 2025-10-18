@@ -35,7 +35,7 @@ Använd e-postdesignen med e-post-Designer, skapa responsiva layouter, tillämpa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
 
 Push-meddelanden för design
 
