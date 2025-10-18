@@ -11,9 +11,9 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: b53080c5a4100c66b91fe10f156a18e932a5e68b
+source-git-commit: 51a609091b0c6cea2d92b22b265e6106973ba16a
 workflow-type: tm+mt
-source-wordcount: '4446'
+source-wordcount: '4531'
 ht-degree: 0%
 
 ---
@@ -510,19 +510,25 @@ Läs mer om [personalisering](../personalization/personalize.md).
 
 +++ Kan jag skicka olika meddelanden baserat på vilken kanal jag föredrar?
 
-Ja. Använd en **villkorsaktivitet** för att kontrollera den önskade kanalen:
+Ja. Använd en **[villkorsaktivitet](condition-activity.md)** för att dirigera profiler baserat på deras önskade kanal:
 
-1. Lägg till en villkorskontrollprofil.preferredChannel
-2. Skapa separata banor för varje kanal:
-   * **E-postsökväg**: Skicka e-postmeddelande
-   * **SMS-sökväg**: Skicka SMS-meddelande
-   * **Push-sökväg**: Skicka push-meddelande
-3. Lägga till en standardsökväg för profiler utan en inställning
+1. Lägg till en [villkorsaktivitet](condition-activity.md) i din resa
+2. Skapa en sökväg för varje kanal genom att kontrollera det önskade kanalprofilattributet (t.ex. `profile.preferredChannel`)
+3. Konfigurera kanalspecifika sökvägar:
+   * **E-postsökväg**: Lägg till en [e-poståtgärd](../email/create-email.md) med e-postoptimerat innehåll
+   * **SMS-sökväg**: Lägg till en [SMS-åtgärd](../sms/create-sms.md) med kortfattade meddelanden
+   * **Push-sökväg**: Lägg till en [push-meddelandeåtgärd](../push/create-push.md) med kort, åtgärdbart innehåll
+   * **Sökväg i appen**: Lägg till en [åtgärd i appen](../in-app/create-in-app.md) för engagerade appanvändare
+4. Lägg till en standardsökväg för profiler utan en inställning och dirigera dem till din primära kanal
 
-<!--
-**Alternative approach**: Use **multi-channel actions** where Journey Optimizer automatically selects the best channel based on profile preferences and availability.-->
+**God praxis**:
 
-Läs mer om [kanalåtgärder](journeys-message.md).
+* Se till att dina profildata innehåller korrekta kanalinställningar
+* Utforma innehåll som passar varje kanals styrkor och begränsningar
+* Använd [kanalytor](../configuration/channel-surfaces.md) för att hantera kanalkonfigurationer
+* Testa alla sökvägar för att säkerställa korrekt meddelandeleverans
+
+Läs mer om [villkor](condition-activity.md), [meddelandeåtgärder](journeys-message.md) och [kanalval](../channels/gs-channels.md).
 
 +++
 
@@ -865,4 +871,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
