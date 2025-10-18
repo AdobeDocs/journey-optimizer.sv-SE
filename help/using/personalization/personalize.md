@@ -105,4 +105,4 @@ Lär dig hur du lägger till profilbaserad personalisering i ett meddelande och 
 
 Lär dig hur du använder personaliseringsredigerarens spelmiljö för att skriva och testa personaliseringskod med exempeldata.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457868?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3475956?captions=swe&quality=12)

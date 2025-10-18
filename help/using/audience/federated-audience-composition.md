@@ -32,4 +32,4 @@ Mer information finns i handboken om [Federated Audience Composition](https://ex
 
 Lär dig mer om Federated Audience Composition i video:
 
->[!VIDEO](https://video.tv.adobe.com/v/3432261?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3450886?captions=swe&quality=12)

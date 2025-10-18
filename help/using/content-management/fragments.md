@@ -60,7 +60,7 @@ Alla skapade fragment kan nås från den vänstra menyn **[!UICONTROL Content Ma
 
 Lär dig hur du hanterar, redigerar och använder **visuella fragment** i [!DNL Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3419932/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3451186/?captions=swe&quality=12)
 
 Lär dig hantera, redigera och använda **uttrycksfragment** i [!DNL Journey Optimizer].
 
