@@ -11,7 +11,7 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 31da84ab3fe4edabaf49f7b078ef0b2fdae3f6c5
+source-git-commit: b53080c5a4100c66b91fe10f156a18e932a5e68b
 workflow-type: tm+mt
 source-wordcount: '4446'
 ht-degree: 0%
@@ -50,15 +50,15 @@ Läs mer om [resetyper](entry-management.md#types-of-journeys).
 
 +++ Vad är skillnaden mellan en resa och en kampanj?
 
-**Resor** är flerstegsorkestrationer som reagerar på händelser eller målgrupper, vilket möjliggör komplex logik, villkor, väntetider och flera kontaktpunkter under kundens livscykel.
+**[Resor](journey.md)** är flerstegsorkestrationer som reagerar på händelser eller målgrupper, vilket möjliggör komplex logik, villkor, väntetider och flera kontaktpunkter under kundens livscykel.
 
-**Kampanjer** finns i tre typer:
+**[Kampanjer](../campaigns/get-started-with-campaigns.md)** finns i tre typer:
 
-* **Åtgärdskampanjer**: Engångs- eller återkommande kommunikation som skickas till en viss målgrupp är idealisk för fristående meddelanden som reklamutskick eller nyhetsbrev.
-* **API-utlösta kampanjer**: Kampanjer utlöses via API-anrop, vilket gör att integrering med externa system kan skicka meddelanden baserat på realtidshändelser eller affärslogik.
-* **Samordnade kampanjer**: Flerstegs målgruppsbaserade kampanjer som bygger på en arbetsyta och som kan innehålla villkor, väntetider och flera åtgärder för att skapa schemalagda, samordnade upplevelser.
+* **[Åtgärdskampanjer](../campaigns/create-campaign.md)**: Engångs- eller återkommande kommunikation som skickas till en viss målgrupp är idealisk för fristående meddelanden som reklamutskick eller nyhetsbrev.
+* **[API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)**: Kampanjer utlöses via API-anrop, vilket gör att integrering med externa system kan skicka meddelanden baserat på realtidshändelser eller affärslogik.
+* **[Samordnade kampanjer](../orchestrated/get-started-orchestrated.md)**: Flerstegs målgruppsbaserade kampanjer som bygger på en arbetsyta och som kan innehålla villkor, väntetider och flera åtgärder för att skapa schemalagda, samordnade upplevelser.
 
-**Bästa praxis**: Använd resor för komplext, händelseutlöst engagemang med avancerad samordning, åtgärdskampanjer för schemalagd, målgruppsbaserad kommunikation, API-utlösta kampanjer för programmatisk triggning från externa system och samordnade kampanjer för flerstegskommunikation med kampanjspecifika krav.
+**Bästa praxis**: Använd [resor](journey.md) för komplext, händelseutlöst engagemang med avancerad samordning, [åtgärdskampanjer](../campaigns/create-campaign.md) för schemalagd, målgruppsbaserad kommunikation, [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md) för programmatisk utlösande från externa system och [samordnade kampanjer](../orchestrated/get-started-orchestrated.md) för kommunikation i flera steg med kampanjspecifika krav.
 
 +++
 
@@ -865,4 +865,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
