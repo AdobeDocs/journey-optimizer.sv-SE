@@ -11,7 +11,7 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 51a609091b0c6cea2d92b22b265e6106973ba16a
+source-git-commit: 50c609b3d5c90e64800fb96d9c57d6c2bfa35a66
 workflow-type: tm+mt
 source-wordcount: '4531'
 ht-degree: 0%
@@ -56,9 +56,9 @@ Läs mer om [resetyper](entry-management.md#types-of-journeys).
 
 * **[Åtgärdskampanjer](../campaigns/create-campaign.md)**: Engångs- eller återkommande kommunikation som skickas till en viss målgrupp är idealisk för fristående meddelanden som reklamutskick eller nyhetsbrev.
 * **[API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)**: Kampanjer utlöses via API-anrop, vilket gör att integrering med externa system kan skicka meddelanden baserat på realtidshändelser eller affärslogik.
-* **[Samordnade kampanjer](../orchestrated/get-started-orchestrated.md)**: Flerstegs målgruppsbaserade kampanjer som bygger på en arbetsyta och som kan innehålla villkor, väntetider och flera åtgärder för att skapa schemalagda, samordnade upplevelser.
+* **[Samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)**: Flerstegs målgruppsbaserade kampanjer som bygger på en arbetsyta och som kan innehålla villkor, väntetider och flera åtgärder för att skapa schemalagda, samordnade upplevelser.
 
-**Bästa praxis**: Använd [resor](journey.md) för komplext, händelseutlöst engagemang med avancerad samordning, [åtgärdskampanjer](../campaigns/create-campaign.md) för schemalagd, målgruppsbaserad kommunikation, [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md) för programmatisk utlösande från externa system och [samordnade kampanjer](../orchestrated/get-started-orchestrated.md) för kommunikation i flera steg med kampanjspecifika krav.
+**Bästa praxis**: Använd [resor](journey.md) för komplext, händelseutlöst engagemang med avancerad samordning, [åtgärdskampanjer](../campaigns/create-campaign.md) för schemalagd, målgruppsbaserad kommunikation, [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md) för programmatisk utlösande från externa system och [samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md) för kommunikation i flera steg med kampanjspecifika krav.
 
 +++
 
@@ -871,4 +871,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
