@@ -25,7 +25,7 @@ När ni utformar meddelandeinnehåll i Adobe Journey Optimizer kan ni skapa enga
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Designa e-postinnehåll
 
@@ -35,7 +35,7 @@ Använd e-postdesignen med e-post-Designer, skapa responsiva layouter, tillämpa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/paper-plane.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/paper-plane.svg?lang=sv-SE)
 
 Push-meddelanden för design
 
@@ -45,7 +45,7 @@ Skapa övertygande push-meddelanden för iOS och Android, konfigurera titel- och
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg?lang=sv-SE)
 
 Designa SMS- och MMS-meddelanden
 
@@ -55,7 +55,7 @@ Skapa personliga textmeddelanden med SMS, förbättra kommunikationen med multim
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
 
 Designa meddelanden i appen
 
@@ -65,7 +65,7 @@ Skapa engagerande upplevelser i appen med flera layoutalternativ, inklusive hels
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Anpassa innehållet
 
@@ -75,7 +75,7 @@ Lägg in personalisering i meddelanden med hjälp av profilattribut, använd per
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Använd mallar och fragment
 
