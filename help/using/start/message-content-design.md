@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 keywords: innehåll, design, e-post, push, sms, personalisering, mallar
-source-git-commit: ef12790e3199457d94c2c7d56c60bb9571921f77
+source-git-commit: 945f684f4ad30da38907ff967692a3d359f56bf0
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -25,7 +25,7 @@ När ni utformar meddelandeinnehåll i Adobe Journey Optimizer kan ni skapa enga
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/email.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Designa e-postinnehåll
 
@@ -35,7 +35,7 @@ Använd e-postdesignen med e-post-Designer, skapa responsiva layouter, tillämpa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/paper-plane.svg)
 
 Push-meddelanden för design
 
@@ -45,7 +45,7 @@ Skapa övertygande push-meddelanden för iOS och Android, konfigurera titel- och
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chat.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
 
 Designa SMS- och MMS-meddelanden
 
@@ -55,7 +55,7 @@ Skapa personliga textmeddelanden med SMS, förbättra kommunikationen med multim
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/device-mobile.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
 Designa meddelanden i appen
 
@@ -65,7 +65,7 @@ Skapa engagerande upplevelser i appen med flera layoutalternativ, inklusive hels
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/personalization.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Anpassa innehållet
 
@@ -75,7 +75,7 @@ Lägg in personalisering i meddelanden med hjälp av profilattribut, använd per
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/duplicate.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Använd mallar och fragment
 
