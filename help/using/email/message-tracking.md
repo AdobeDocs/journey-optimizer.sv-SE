@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 65a6afddfbc53afb88c6e69449720ac67f8f8f39
+source-git-commit: b1a16fa6c194d2bd352c4c287bc96d56ced122ba
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1285'
 ht-degree: 1%
 
 ---
@@ -114,6 +114,8 @@ Kvarhållningsperioden för en spegelsida är **90 dagar**. Efter den fördröjn
 >[!CAUTION]
 >
 >* Länkar för spegelsidor genereras automatiskt och kan inte redigeras. De innehåller alla krypterade, personliga data som krävs för att återge det ursprungliga e-postmeddelandet. Om du använder anpassade attribut med stora värden kan det därför generera långa URL-adresser för spegelsidor, vilket kan förhindra länken från att fungera i webbläsare som har en maximal URL-längd.
+>
+>* När du skapar e-postmeddelanden som är starkt beroende av körtidspersonalisering (t.ex. `#each`-slingor, kapslade objekt, stora nyttolastdata) kan URL:er för spegelsidor bli alltför stora, särskilt i API-utlösta kampanjer som använder omfattande kontextuella data från nyttolaster. Detta kan orsaka HTTP-fel (404, 422, 502) i webbläsare eller e-postklienter. Adobe rekommenderar att du begränsar bredden och djupet på dynamiska fält, minskar beroendet av komplexa fragment och förenklar personaliseringsstrukturer för att förhindra länkfel.
 >
 >* I det [korrektur](../content-management/proofs.md) som skickas till testprofilerna är länken till spegelsidan inte aktiv. Den är bara aktiv i de slutliga meddelandena.
 
