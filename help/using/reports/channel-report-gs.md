@@ -31,7 +31,7 @@ Läs mer om de olika mätvärden och widgetar som är tillgängliga för kanalra
 
 Kontrollera att du har åtkomst till menyn **[!UICONTROL Reports]** innan du startar.
 
-Om du inte kan se **[!UICONTROL Reports]**-menyn måste dina åtkomsträttigheter utökas så att de omfattar behörigheten **[!UICONTROL View Channel Reports]**. Du kan utöka dina egna behörigheter om du har tillgång till Adobe Experience Platform [behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"} för din organisation. Om inte, kontakta Adobe Journey Optimizer-administratören.
+Om du inte kan se **[!UICONTROL Reports]**-menyn måste dina åtkomsträttigheter utökas så att de omfattar behörigheten **[!UICONTROL View Channel Reports]**. Du kan utöka dina egna behörigheter om du har tillgång till Adobe Experience Platform [behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE){target="_blank"} för din organisation. Om inte, kontakta Adobe Journey Optimizer-administratören.
 
 +++Lär dig hur du tilldelar rapportbehörigheter
 
