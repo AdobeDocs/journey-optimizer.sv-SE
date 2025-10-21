@@ -111,9 +111,9 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
     
     * Om **[!UICONTROL Marketing action]** är lika med **[!UICONTROL Email]*
     
-    * Då finns inte **[!UICONTROL Newsletter_Email]*** **[!UICONTROL false]* Eller **[!UICONTROL Newsletter_Email]** är lika med **[!UICONTROL false]*
+    * Då finns inte **[!UICONTROL Newsletter_Email]*** **[!UICONTROL false]* Eller &#x200B;** [!UICONTROL Newsletter_Email] **&#x200B; är lika med &#x200B;** [!UICONTROL false]*
     
-    }![](assets/consent-policy-email-newsletter.png){width=100%}
+    &rbrace;![](assets/consent-policy-email-newsletter.png){width=100%}
     
     >[!TIP]
     >
