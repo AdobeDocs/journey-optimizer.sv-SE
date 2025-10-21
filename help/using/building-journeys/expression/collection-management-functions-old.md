@@ -80,7 +80,7 @@ I en Data Source Condition-aktivitet kan du kontrollera om resultatet av **[!UIC
 
 >[!CAUTION]
 >
->Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck ](../../building-journeys/functions/functioninaudience.md).
+>Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck &#x200B;](../../building-journeys/functions/functioninaudience.md).
 
 **Exempel 1:**
 
