@@ -11,7 +11,7 @@ role: User
 level: Beginner
 badge: label="Beta" type="Informative"
 exl-id: e4935129-c1cb-41b1-b84d-cd419053c303
-source-git-commit: da82432dd15f19ac7db52f491e5afd5ba6d4e3d7
+source-git-commit: 722d37dc4bcb9ab7983ea336aa0b12a6a09e01dc
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 >[!AVAILABILITY]
 >
 >Integrering med Adobe Experience Manager är för närvarande endast tillgängligt som betaversion för utvalda användare.
->&#x200B;> Som betaanvändare använder du [det här formuläret](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Wf0cbVTQ3tCpW_unE-w8-JUN1FaNlAzNkhPSUdaSkJXVFRCNTRJNVRFSy4u){target="_blank"} för att dela feedback.
+>> Som betaanvändare använder du [det här formuläret](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Wf0cbVTQ3tCpW_unE-w8-JUN1FaNlAzNkhPSUdaSkJXVFRCNTRJNVRFSy4u){target="_blank"} för att dela feedback.
 
 Med Adobe Journey Optimizer kan du skapa skräddarsydda meddelanden via Adobe Experience Manager webbplatser. Börja med att designa mallarna med Adobe Experience Manager innehållskällor och skicka dem sedan till Adobe Journey Optimizer. När mallarna har delats kan de användas i Adobe Journey Optimizer Email Designer, vilket förenklar arbetet med att skapa och skicka meddelanden till rätt målgrupp.
 
@@ -33,7 +33,7 @@ Innan du använder den här funktionen måste du kontrollera att du uppfyller f�
 
 * **Experience Manager-inställningar**
 
-  Den här funktionen är tillgänglig med [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=sv-SE){target="_blank"}.
+  Den här funktionen är tillgänglig med [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html){target="_blank"}.
 
   Som en del av betaprogrammet utförs Cloud Service-konfigurationen av Adobe i Adobe Experience Manager för att ansluta till Adobe Journey Optimizer.
 
@@ -57,13 +57,17 @@ Om du vill exportera en Adobe Experience Manager-mall till Adobe Journey Optimiz
 
 1. Välj **[!UICONTROL Outbound Marketing]** på Adobe Experience Manager hemsida.
 
-   ![](assets/aem-outbound-menu.png)
+<!--
+    ![](assets/aem-outbound-menu.png)
+-->
 
-1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html?lang=sv-SE#creating-a-new-page)
+1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html#creating-a-new-page)
 
 1. Genom att lägga in Journey Optimizer personaliseringssyntax i mallen kan du förbättra dess anpassningsmöjligheter. [Läs mer](../personalization/personalization-syntax.md)
 
-   ![](assets/aem_ajo_4.png)
+<!--
+    ![](assets/aem_ajo_4.png)
+-->
 
 1. Markera mallen som du vill exportera till Journey Optimizer och klicka på **[!UICONTROL Send to]** på den avancerade menyn.
 
@@ -71,7 +75,9 @@ Om du vill exportera en Adobe Experience Manager-mall till Adobe Journey Optimiz
 
 1. Ange **[!UICONTROL Name]** för innehållsmallen och välj målet **[!UICONTROL Sandbox]**.
 
+<!--
    ![](assets/aem-send-template-settings.png)
+-->
 
 1. När du har klickat på knappen **[!UICONTROL Send]** påbörjas exportprocessen. När exporten är klar visas följande meddelande i användargränssnittet: &quot;Template &quot;XX&quot; skickad till AJO&quot;.
 
@@ -83,11 +89,15 @@ När Experience Manager-mallen är tillgänglig i Journey Optimizer som en inneh
 
 1. I Journey Optimizer går du till den importerade mallen på menyn **[!UICONTROL Content template]**.
 
-   ![](assets/aem_ajo_1.png)
+<!--
+    ![](assets/aem_ajo_1.png)
+-->
 
 1. Genom att klicka på knappen **[!UICONTROL Alert]** kan du snabbt kontrollera om några viktiga inställningar saknas. Detta hjälper till att säkerställa att dina meddelanden är korrekt konfigurerade och förhindrar eventuella fel eller problem.
 
-   ![](assets/aem_ajo_2.png)
+<!--
+    ![](assets/aem_ajo_2.png)
+-->
 
 1. I fönstret **[!UICONTROL Template properties]** klickar du på knappen **[!UICONTROL Manage access]** för att tilldela egna eller grundläggande dataanvändningsetiketter till mallen. [Läs mer om OLAC (Object Level Access Control)](../administration/object-based-access.md)
 
@@ -101,22 +111,30 @@ När Experience Manager-mallen är tillgänglig i Journey Optimizer som en inneh
 
 1. När innehållet har definierats kan du använda det när du skapar ny e-post genom att bläddra i samlingen **[!UICONTROL Saved templates]**. Välj sedan **[!UICONTROL Use this template]**.
 
-   ![](assets/aem_ajo_3.png)
+<!--
+    ![](assets/aem_ajo_3.png)
+-->
 
 1. Nu kan du redigera och anpassa ditt innehåll. Mer information om hur du skapar ditt e-postinnehåll finns på [sidan](../email/content-from-scratch.md).
 
-   ![](assets/aem_ajo_5.png)
+<!--
+    ![](assets/aem_ajo_5.png)
+-->
 
 1. Om du har lagt till anpassat innehåll i din Experience Manager-mall klickar du på **[!UICONTROL Simulate Content]** för att förhandsgranska hur det kommer att visas i meddelandet med testprofiler.
 
 [Läs mer om förhandsgranskning och testprofiler](../content-management/preview-test.md)
 
-   ![](assets/aem_ajo_6.png)
+<!--
+    ![](assets/aem_ajo_6.png)
+-->
 
 1. När du visar förhandsgranskningen av meddelandet ersätts alla anpassade element automatiskt med motsvarande data från den valda testprofilen.
 
    Om det behövs kan ytterligare testprofiler läggas till med knappen **[!UICONTROL Manage test profiles]**.
 
-   ![](assets/aem_ajo_7.png)
+<!--
+    ![](assets/aem_ajo_7.png)
+-->
 
 När din e-post är klar slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) eller [kampanj](../campaigns/create-campaign.md) och aktiverar den för att skicka meddelandet.

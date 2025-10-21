@@ -8,9 +8,9 @@ level: Beginner
 keywords: i appen, meddelande, skapa, börja
 hide: true
 hidefromtoc: true
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: 722d37dc4bcb9ab7983ea336aa0b12a6a09e01dc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '685'
 ht-degree: 10%
 
 ---
@@ -89,7 +89,8 @@ I fältet **[!UICONTROL Media]** kan du lägga till media i ditt meddelande i ap
 
 ![](assets/in_app_web_design_3.png)
 
-Ange din medie-URL eller klicka på ikonen **[!UICONTROL Select Assets]** för att lägga till resurser som lagras i ditt Assets-bibliotek direkt i ditt meddelande i appen. [Läs mer om resurshantering](../content-management/assets-essentials.md).
+Ange din medie-URL eller klicka på ikonen **[!UICONTROL Select Assets]** för att lägga till resurser som lagras i ditt Assets-bibliotek direkt i ditt meddelande i appen. <!--[Learn more about asset management](../content-management/assets-essentials.md).-->
+
 Du kan också lägga till en **[!UICONTROL Alternative text]** för skärmläsningsprogram.
 
 +++Fler alternativ med avancerad formatering

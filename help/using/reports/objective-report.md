@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: ec1af88c-7b0a-4eaf-97e1-0d9676268fed
 badge: label="Beta" type="Informative"
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 722d37dc4bcb9ab7983ea336aa0b12a6a09e01dc
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '435'
 ht-degree: 2%
 
 ---
@@ -22,15 +22,17 @@ ht-degree: 2%
 
 Kampanjens globala rapport kan nås direkt från din kampanj med knappen **[!UICONTROL View report]**.
 
-Campaign **[!UICONTROL Global report]** är uppdelad i olika widgetar som beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](../reports/global-report.md#modify-dashboard).
+Campaign **[!UICONTROL Global report]** är uppdelad i olika widgetar som beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i denna/detta <!--[section](../reports/global-report.md#modify-dashboard)-->.
 
-En detaljerad lista över alla tillgängliga mätvärden i Adobe Journey Optimizer finns på [den här sidan](global-report.md#list-of-components-global.md)
+En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på <!--[this page](global-report.md#list-of-components-global.md)-->
 
 ## Fliken Kampanj {#campaign-global-objectives}
 
 ### Leverans {#delivery-global-objectives}
 
+<!--
 ![](assets/campaign_report_global_1.png)
+-->
 
 Widgeten **[!UICONTROL Campaign's Statistics]** visar huvudinformationen i förhållande till din kampanj:
 
@@ -58,13 +60,15 @@ Med widgeten **[!UICONTROL Campaign objective]** kan du även välja att jämfö
 
 ### Experimentationsrapport {#experimentation-global-objectives}
 
+<!--
 ![](assets/experimentation_report_3.png)
+-->
 
 Fliken **[!UICONTROL Experimentation]** ger viktiga insikter om prestanda för varje variant och identifierar den som fungerar bäst.
 
 Observera att det kan ta lite tid att definiera den bästa utföraren, men den representeras av den här ikonen ![](assets/experimentation_report_1.png).
 
-+++Läs mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Experimentation.
++++Lär dig mer om de olika mätvärden och widgetar som är tillgängliga för rapporten Experimentation.
 
 Widgeten **[!UICONTROL Experiment result]** visar prestanda för varje variant. Du kan ändra din baslinje genom att välja en av behandlingarna i listrutan **[!UICONTROL Baseline]**. Den bästa behandlingen visas med en stjärnikon.
 

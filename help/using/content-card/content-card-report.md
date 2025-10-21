@@ -7,7 +7,7 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+source-git-commit: 722d37dc4bcb9ab7983ea336aa0b12a6a09e01dc
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -35,7 +35,9 @@ Du kan komma åt innehållskortsrapporten direkt från din kampanj med knappen *
 
 ## Visa och klicka på trend {#display-click}
 
+<!--
 ![](assets/content-card-report-1.png)
+-->
 
 Diagrammen **[!UICONTROL Display & click trend]** hjälper dig att förstå både meddelandets övergripande räckvidd och antalet unika profiler som är kopplade till det.
 
@@ -51,7 +53,9 @@ Diagrammen **[!UICONTROL Display & click trend]** hjälper dig att förstå båd
 
 ## Spårningsdata {#tracking-data}
 
+<!--
 ![](assets/content-card-report-2.png)
+-->
 
 Tabellen **[!UICONTROL Tracking data]** innehåller en detaljerad ögonblicksbild av profilaktiviteten som är kopplad till dina innehållskort, vilket ger viktiga insikter i engagemanget och innehållskortets effektivitet.
 

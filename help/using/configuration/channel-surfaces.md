@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: 722d37dc4bcb9ab7983ea336aa0b12a6a09e01dc
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -183,7 +183,7 @@ Om du vill redigera en kanalkonfiguration följer du stegen nedan.
    >
    >Du kan också spara kanalkonfigurationen som utkast och återuppta uppdateringen senare.
 
-När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration &#x200B;](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
+När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration ](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
 
 >[!NOTE]
 >
@@ -238,6 +238,7 @@ Om du redigerar en konfiguration som redan var aktiv:
 #### Lyckades {#success}
 
 När valideringsprocessen har slutförts används den nya versionen av konfigurationen automatiskt i alla meddelanden som använder den här konfigurationen. Du kan dock behöva vänta:
+
 * några minuter innan det konsumeras av enhetsmeddelanden,
 * till nästa batch för att konfigurationen ska vara effektiv i batchmeddelanden.
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 247b966d-4f84-453b-8178-9c9ebcd494ef
-source-git-commit: 64e225cdc8615e51655ef550866b67ca249a7572
+source-git-commit: 722d37dc4bcb9ab7983ea336aa0b12a6a09e01dc
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ Kanalrapporterna är ett kraftfullt verktyg som ger en omfattande översikt öve
 
 Kanalrapporterna är helt anpassningsbara, så du kan ändra storlek på eller ta bort widgetar och skapa en instrumentpanel som passar dina specifika behov. Du kan också exportera rapportdata till en PDF- eller CSV-fil för ytterligare analys.
 
-Läs mer om de olika mätvärden och widgetar som är tillgängliga för kanalrapporter på [den här sidan](channel-report.md).
+Läs mer om de olika mätvärden och widgetar som är tillgängliga för kanalrapporter på <!--[this page](channel-report.md)-->.
 
 ## Före start {#manage-reports-prereq}
 
 Kontrollera att du har åtkomst till menyn **[!UICONTROL Reports]** innan du startar.
 
-Om du inte kan se **[!UICONTROL Reports]**-menyn måste dina åtkomsträttigheter utökas så att de omfattar behörigheten **[!UICONTROL View Channel Reports]**. Du kan utöka dina egna behörigheter om du har tillgång till Adobe Experience Platform [behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE){target="_blank"} för din organisation. Om inte, kontakta Adobe Journey Optimizer-administratören.
+Om du inte kan se **[!UICONTROL Reports]**-menyn måste dina åtkomsträttigheter utökas så att de omfattar behörigheten **[!UICONTROL View Channel Reports]**. Du kan utöka dina egna behörigheter om du har tillgång till Adobe Experience Platform [behörigheter](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html){target="_blank"} för din organisation. Om inte, kontakta Adobe Journey Optimizer-administratören.
 
 +++Lär dig hur du tilldelar rapportbehörigheter
 
@@ -39,15 +39,15 @@ Observera att den här behörigheten ingår i följande inbyggda **[!UICONTROL R
 
 Så här tilldelar du motsvarande behörighet till din **[!UICONTROL Role]**:
 
-1. Gå till menyn **[!UICONTROL Roles]** i produkten [!DNL Permissions] och välj den roll som du vill uppdatera med den nya behörigheten **[!UICONTROL View Channel Reports]**.
+1. Gå till menyn [!DNL Permissions] i produkten **[!UICONTROL Roles]** och välj den roll som du vill uppdatera med den nya behörigheten **[!UICONTROL View Channel Reports]**.
 
-1. Klicka på **[!UICONTROL Edit]** på din **[!UICONTROL Role]**-instrumentpanel.
+1. Klicka på **[!UICONTROL Role]** på din **[!UICONTROL Edit]**-instrumentpanel.
 
    ![](assets/channel_permission_1.png)
 
 1. Dra och släpp **[!UICONTROL Reports]**-resursen för att tilldela behörighet.
 
-   Välj behörigheten **[!UICONTROL View Channel Reports]** i listrutan **[!UICONTROL Report]**-resurs.
+   Välj behörigheten **[!UICONTROL Report]** i listrutan **[!UICONTROL View Channel Reports]**-resurs.
 
    ![](assets/channel_permission_2.png)
 
