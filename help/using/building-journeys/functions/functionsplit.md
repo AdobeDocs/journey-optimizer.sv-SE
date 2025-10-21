@@ -3,12 +3,12 @@ product: journey optimizer
 title: dela
 description: Lär dig mer om funktionsdelningen
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: split, function, expression, travel
 exl-id: 37bcdf98-203c-4f82-8d8a-be2b2c45c4e7
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 5%

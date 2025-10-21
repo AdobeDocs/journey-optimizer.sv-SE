@@ -3,12 +3,12 @@ product: journey optimizer
 title: nowWithDelta
 description: Läs mer om funktionen nowWithDelta
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: nowWithDelta, funktion, uttryck, resa
 exl-id: cb1eb221-8532-4637-ac6c-8e058463ac94
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 4%

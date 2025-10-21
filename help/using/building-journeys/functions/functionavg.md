@@ -3,12 +3,12 @@ product: journey optimizer
 title: avg
 description: Läs mer om avg för funktioner
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: avg, funktion, uttryck, resa
 exl-id: cc70f90c-2d12-42a0-829f-5f28c3c29cad
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 7%

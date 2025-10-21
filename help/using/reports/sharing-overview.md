@@ -5,10 +5,10 @@ title: Översikt över att dela steg i resan
 description: Översikt över att dela steg i resan
 feature: Journeys, Reporting
 topic: Content Management
-role: Engineer, Admin
+role: Developer, Admin
 level: Experienced
 exl-id: 29d6b881-35a3-4c62-9e7d-d0aeb206ea77
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 2%
@@ -67,12 +67,12 @@ Listorna med XDM-fält som skickas till Adobe Experience Platform finns här:
 
 ## Integrering med Customer Journey Analytics {#integration-cja}
 
-[!DNL Journey Optimizer] steghändelser kan länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE){target="_blank"}.
+[!DNL Journey Optimizer] steghändelser kan länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html){target="_blank"}.
 
 Det allmänna arbetsflödet är:
 
 * [!DNL Customer Journey Analytics] inmatar datamängden &quot;Resestegshändelse&quot;.
 * Fältet **profileID** i det associerade schemat för resesegmenthändelse för Journey Orchestration definieras som ett identitetsfält. I [!DNL Customer Journey Analytics] kan du sedan länka den här datauppsättningen till andra datauppsättningar som har samma värde som den personbaserade identifieraren.
-* Information om hur du använder den här datauppsättningen i [!DNL Customer Journey Analytics] finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=sv-SE){target="_blank"} för analys av flerkanalsresor.
+* Information om hur du använder den här datauppsättningen i [!DNL Customer Journey Analytics] finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html){target="_blank"} för analys av flerkanalsresor.
 
 ➡️ [Arbeta med Customer Journey Analytics](cja-ajo.md){target="_blank"}

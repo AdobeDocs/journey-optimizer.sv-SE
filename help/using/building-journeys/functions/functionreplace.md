@@ -3,12 +3,12 @@ product: journey optimizer
 title: ersätta
 description: Läs mer om funktionsersättningen
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: ersätt, funktion, uttryck, resa
 exl-id: 3eb35fd6-2d11-4f24-b0d9-5334e7ed7872
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 2%

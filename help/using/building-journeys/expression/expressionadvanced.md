@@ -4,12 +4,12 @@ product: journey optimizer
 title: Arbeta med den avancerade uttrycksredigeraren
 description: Läs mer om hur du skapar avancerade uttryck
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: uttrycksredigerare, data, resa
 exl-id: 9ea6cc3a-6a1b-4e8f-82ff-f8b1812617d7
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 55%

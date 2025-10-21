@@ -3,12 +3,12 @@ product: journey optimizer
 title: now
 description: Läs om funktionen nu
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: nu, funktion, uttryck, resa
 exl-id: 16dcc772-e48d-4f10-be75-62dd39473556
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 8%

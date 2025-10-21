@@ -4,12 +4,12 @@ product: journey optimizer
 title: Fältreferenser
 description: Läs mer om fältreferenser i avancerade uttryck
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: resa, fält, uttryck, händelse
 exl-id: 2348646a-b205-4b50-a08f-6625e92f44d7
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 2%

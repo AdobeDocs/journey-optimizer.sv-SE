@@ -6,11 +6,11 @@ description: Läs mer om datatyper i samlingshanteringsfunktioner
 feature: Journeys
 hide: true
 hidefromtoc: true
-role: Engineer
+role: Developer
 level: Experienced
 keywords: fråga, samlingar, funktioner, nyttolast, resa
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -80,7 +80,7 @@ I en Data Source Condition-aktivitet kan du kontrollera om resultatet av **[!UIC
 
 >[!CAUTION]
 >
->Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck &#x200B;](../../building-journeys/functions/functioninaudience.md).
+>Det finns stöd för att använda upplevelsehändelser i reseuttryck/villkor, men det rekommenderas inte. Om ditt användningsfall kräver att du använder upplevelsehändelser bör du överväga alternativa metoder, till exempel [beräknade attribut](../../audience/computed-attributes.md), eller skapa ett segment med hjälp av händelserna och införliva segmentet i [`inAudience` uttryck ](../../building-journeys/functions/functioninaudience.md).
 
 **Exempel 1:**
 

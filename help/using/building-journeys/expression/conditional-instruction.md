@@ -4,12 +4,12 @@ product: journey optimizer
 title: Villkorlig instruktion (if, then, else)
 description: Läs om villkorlig instruktion
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: avancerat, villkor, åtgärd, resa
 exl-id: 5a5b35a7-e3b5-4dc0-8a87-e985956b04a4
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%

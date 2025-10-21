@@ -4,12 +4,12 @@ product: journey optimizer
 title: Resans egenskaper
 description: Lär dig mer om reseegenskaper
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: resa, uttryck, redigerare, egenskaper
 exl-id: eb1ab0ed-90bd-4613-b63d-b28693947db2
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Den innehåller information om:
 * aktuellt steg, senaste aktuella steg osv.
 * ignorerade profiler
 
-  Listan med fält är tillgänglig [&#x200B; i det här avsnittet](#journey-properties-fields).
+  Listan med fält är tillgänglig [ i det här avsnittet](#journey-properties-fields).
 
 Du kan använda dessa fält för att skapa uttryck. Under körningen hämtas värdena direkt från resan.
 

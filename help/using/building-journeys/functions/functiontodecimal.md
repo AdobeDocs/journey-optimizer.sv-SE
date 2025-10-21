@@ -3,12 +3,12 @@ product: journey optimizer
 title: toDecimal
 description: Läs mer om funktionen toDecimal
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: decimal, funktion, uttryck, resa
 exl-id: d761fa4d-5f99-4dee-b747-3eab464c4071
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 6%

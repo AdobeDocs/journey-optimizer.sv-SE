@@ -3,12 +3,12 @@ product: journey optimizer
 title: trim
 description: Lär dig mer om trimning av funktioner
 feature: Journeys
-role: Engineer
+role: Developer
 level: Experienced
 keywords: trim, funktion, uttryck, resa
 exl-id: 1ee126fd-d021-4060-9538-aca5cabf8164
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 8%
