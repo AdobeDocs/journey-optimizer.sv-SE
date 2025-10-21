@@ -28,7 +28,7 @@ På den här sidan hittar du en lista över Adobe Journey Optimizer datamängder
 * [BCC Feedback, händelsedatauppsättning](#bcc-feedback-event-dataset)
 * [Enhetsdatauppsättning](#entity-dataset)
 
-Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
 
 Se även flera vanliga [exempel som används för att ställa frågor om händelser i resesteg](../reports/query-examples.md).
 

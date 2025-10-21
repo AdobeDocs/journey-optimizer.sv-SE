@@ -32,7 +32,7 @@ Målgrupper kan ha två statusar:
 * realiserad: Enheten kvalificerar sig för segmentdefinitionen.
 * avslutad: Entiteten avslutar segmentdefinitionen.
 
-Endast personer med **Realiserad**-målgruppsdeltagarstatus betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results).
+Endast personer med **Realiserad**-målgruppsdeltagarstatus betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results).
 
 `inAudience('audienceName') == true` betyder att du har ett segmentMembership med den angivna statusen.
 
