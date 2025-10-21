@@ -5,11 +5,11 @@ title: Behörighetsnivåer
 description: Lär dig mer om höga och låga behörigheter som ger användarna tillgång till de olika funktionerna.
 topic: Administration
 feature: Access Management
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 keywords: behörighet, hög nivå, låg nivå, profil, administratörskonsol
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
-source-git-commit: 2a5db6950ac82fd18deb2e4009c9a43247444d6a
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 0%

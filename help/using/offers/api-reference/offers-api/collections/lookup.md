@@ -3,10 +3,10 @@ title: Söka efter en samling
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 723daab2-5590-4c44-acb6-93a77f2e7877
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan söka efter specifika samlingar genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller samlingen `id` i begärandesökvägen.
+Du kan söka efter specifika samlingar genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller samlingen `id` i sökvägen för begäran.
 
 **API-format**
 

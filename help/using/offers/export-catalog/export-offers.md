@@ -4,10 +4,10 @@ description: I det här avsnittet visas alla fält som används i den exporterad
 badge: label="Äldre" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
-source-git-commit: 2a5591617838e76e9cae99c0f97e8aff59311a69
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -41,7 +41,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ _upplevelse {#experience}
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -53,7 +53,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-+++ _experience > decisioning > calendarConstraints
++++ _experience > decisioning > calendarConstraints 
 
 **Fält:** calendarConstraints
 **Titel:** Information om kalenderbegränsningar
@@ -94,7 +94,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-++_experience > decisioning > contents > components
++++_experience > decisioning > contents > components
 
 **Fält:** komponenter
 **Beskrivning:** Komponenterna i innehållet som representerar beslutsalternativet, inklusive alla deras språkvarianter. Specifika komponenter hittades av dx:format, dc:subject och dc:language eller en kombination av dessa. Dessa metadata används för att hitta eller representera innehållet som är kopplat till ett erbjudande och integrera det enligt placeringskontraktet.
@@ -103,14 +103,14 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > decisioning > contents > components > Content Component Type**
 
-  **Fält:**&#x200B;_typ
+  **Fält:**_typ
   **Titel:** Innehållskomponenttyp
   **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som anges för innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schemat som beskriver ytterligare egenskaper för innehållskomponenten.
   **Typ:** sträng
 
 * **_experience > Decision > contents > components > _dc**
 
-  **Fält:**&#x200B;_dc
+  **Fält:**_dc
   **Typ:** objekt
   **Obligatoriskt:** &quot;format&quot;
 
@@ -123,7 +123,6 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
      **Exempel:** &quot;application/vnd.adobe.photoshop&quot;
 
    * **Språk**
-
      **Fält:** språk
      **Titel:** Språk
      **Beskrivning:** Resursens språk. \nSpråk anges i språkkoden enligt definitionen i [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt) som är en del av BCP 47, som används någon annanstans i XDM.
@@ -132,7 +131,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > Decision > contents > components > _repo**
 
-  **Fält:**&#x200B;_repo
+  **Fält:**_repo
   **Typ:** objekt
 
    * **id**
@@ -180,9 +179,9 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
   **Fält:** linkURL
   **Beskrivning:** En unik resurslokaliserare (valfritt) för användarinteraktioner. Den här URL:en används för att referera slutanvändaren till i en användaragent och kan spåras.
   **Typ:** sträng
-  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
+  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
-++_experience > decisioning > contents > Placement
++++_experience > decisioning > contents > Placement
 
 **Fält:** placering
 **Titel:** Placement
@@ -228,7 +227,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-++_experience > decisioning > profileConstraints > eligibility Rule
++++_experience > decisioning > profileConstraints > eligibility Rule
 
 **Fält:** eligibilityRule
 **Titel:** Kvalifikationsregel
@@ -237,13 +236,14 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-++_experience > decisioning > profileConstraints > Profile Constraint Type
++++_experience > decisioning > profileConstraints > Profile Constraint Type
 
 **Fält:** profileConstraintType
 **Titel:** Typ av profilbegränsning
 **Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en regel eller genom ett eller flera medlemskap i en målgrupp.
 **Typ:** sträng
 **Möjliga värden:**
+
 * &quot;none&quot; (standard)
 * &quot;eligibilityRule&quot;: &quot;Profilbegränsningen uttrycks som en enskild regel som måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
 * &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av minst en av dem innan den begränsade åtgärden tillåts.&quot;
@@ -261,7 +261,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **Identifierare**
 
-  **Fält:**&#x200B;_id
+  **Fält:**_id
   **Titel:** Identifierare
   **Beskrivning:** Identitet för målgrupperna i det relaterade namnområdet.
   **Typ:** sträng
@@ -299,7 +299,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-++_experience > decisioning > ranking > Order Evaluation
++++_experience > Decision > ranking > Order Evaluation
 
 **Fält:** ordning
 **Titel:** Orderutvärdering
@@ -352,12 +352,12 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 <!--Field without name under tags: Description: An identifier of a collection qualifier object. The value is the @id of the collection qualifier that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag. Type: string-->
 
-+++_repo
++++repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
-+++
++++ 
 
 +++ _repo > Decision Option ETag
 

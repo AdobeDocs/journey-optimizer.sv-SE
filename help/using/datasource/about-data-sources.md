@@ -5,11 +5,11 @@ title: Kom igång med datakällor
 description: Lär dig hur du kommer igång med datakällor
 feature: Journeys, Data Sources
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Intermediate, Experienced
 keywords: data, källa, resa, plattform
 exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 56%
@@ -49,7 +49,7 @@ För varje datakälla definierar du den information som ska hämtas med fältgru
 >
 >Schemarelationer stöds inte för datakällor.
 
-Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html?lang=sv-SE){target="_blank"} för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
+Titta på den här [självstudievideon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html){target="_blank"} för att få mer information om hur du konfigurerar en datakälla i Adobe Experience Platform och en extern datakälla samt hur du hittar och använder data i en resa.
 
 ## Instruktionsvideo {#video}
 

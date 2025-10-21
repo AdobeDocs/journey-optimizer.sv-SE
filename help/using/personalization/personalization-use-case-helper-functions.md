@@ -5,11 +5,11 @@ title: Personalization use case&colon; cart beg. e-post
 description: Lär dig hur du anpassar brödtexten i ett e-postmeddelande med hjälp av ett användningsfall.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, hjälpprogram, användningsfall, personalisering
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 87245fffb3ad10d51a7500d006dbe69b1905640e
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Skapa en händelse vars schema innehåller arrayen `productListItems`.
 1. Definiera alla fält från den här arrayen som nyttolastfält för den här händelsen.
 
-   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html?lang=sv-SE){target="_blank"}.
+   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}.
 
 1. Skapa en resa som börjar med det här evenemanget.
 1. Lägg till en **e-postaktivitet** på resan.
@@ -105,7 +105,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
       ![](assets/personalization-uc-helpers-5.png)
 
-      Läs mer om datatypen för personnamn i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html?lang=sv-SE){target="_blank"}.
+      Läs mer om datatypen för personnamn i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Validate]** och sedan på **[!UICONTROL Save]**.
 

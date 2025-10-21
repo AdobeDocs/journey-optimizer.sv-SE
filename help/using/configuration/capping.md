@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
-source-git-commit: 13af123030449d870f44f3470710b0da2c6f4775
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 6%
@@ -44,6 +44,7 @@ Dessutom finns en Postman-samling [här](https://github.com/AdobeDocs/JourneyAPI
 Den här samlingen har konfigurerats för att dela Postman Variable-samlingen som genereras via __[Adobe I/O Console’s Integrations](https://console.adobe.io/integrations) > Testa > Hämta för Postman__, som genererar en Postman-miljöfil med de valda integreringsvärdena.
 
 När du hämtat och laddat upp till Postman måste du lägga till tre variabler: `{JO_HOST}`,`{BASE_PATH}` och `{SANDBOX_NAME}`.
+
 * `{JO_HOST}` : [!DNL Journey Optimizer] Gateway-URL.
 * `{BASE_PATH}` : startpunkt för API.
 * `{SANDBOX_NAME}`: sidhuvudet **x-sandbox-name** (till exempel ”produktion”) som motsvarar namnet på sandlådan där API-åtgärderna utförs. Se [översikten över sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=sv){target="_blank"} för mer information.
@@ -182,6 +183,7 @@ API-anrop som ska användas:
 >En omdistribution krävs efter uppdatering av en redan distribuerad konfiguration.
 
 API-anrop som ska användas:
+
 1. **`list`** - Hämtar befintliga konfigurationer.
 1. **`get`** - Hämtar information om en viss konfiguration.
 1. **`update`** - Ändrar konfigurationen.

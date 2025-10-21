@@ -5,11 +5,11 @@ title: Använda och tilldela sandlådor
 description: Lär dig hantera sandlådor
 feature: Sandboxes
 topic: Administration
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 keywords: sandlådor, virtuella, miljöer, organisation, plattform
 exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 12%
@@ -22,7 +22,7 @@ ht-degree: 12%
 
 Med [!DNL Journey Optimizer] kan du partitionera instansen i separata virtuella miljöer som kallas sandlådor. Sandlådor tilldelas via roller i behörigheter. [Lär dig tilldela sandlådor](permissions.md#create-product-profile).
 
-[!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation. Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=sv-SE){target="_blank"}.
+[!DNL Journey Optimizer] speglar Adobe Experience Platform-sandlådor som har skapats för en viss organisation. Sandlådorna i Adobe Experience Platform kan skapas eller återställas från din instans i Adobe Experience Platform. [Läs mer i användarhandboken för Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html){target="_blank"}.
 
 Du hittar kontrollen för sandlådeväxlaren högst upp till höger på skärmen, bredvid organisationens namn. Klicka på den för närvarande aktiva sandlådan i väljaren för att växla från en sandlåda till en annan och välj sedan en annan sandlåda på rullgardinsmenyn.
 
@@ -64,7 +64,7 @@ Om du vill konfigurera innehållets tillgänglighet tilldelar du en delad mapp t
 
 Observera att för att ditt innehåll ska kunna synkroniseras med rätt sandlåda måste du följa samma syntax som sandlådan. Om din sandlåda till exempel kallas för&quot;utveckling&quot; ska din delade mapp ha samma namn.
 
-[Lär dig hantera delade mappar](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/manage-adobe-storage.ug.html){target="_blank"}.
+[Lär dig hantera delade mappar](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-adobe-storage.ug.html){target="_blank"}.
 
 ## Instruktionsvideo{#video}
 

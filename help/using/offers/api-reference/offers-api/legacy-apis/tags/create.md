@@ -3,10 +3,10 @@ title: Skapa en samlingskvalificerare
 description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden på ett bättre sätt.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 84f0efa5-28af-4569-994c-12d87828a277
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Skapa en samlingskvalificerare {#create-tag}
 
-Du kan skapa en samlingskvalificerare (som tidigare kallades&quot;tagg&quot;) genom att göra en POST-förfrågan till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
+Du kan skapa en samlingskvalificerare (som tidigare kallades&quot;tagg&quot;) genom att göra en POST-begäran till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 

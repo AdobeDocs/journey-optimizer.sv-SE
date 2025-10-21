@@ -3,10 +3,10 @@ title: Ta bort samlingskvalificerare
 description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden på ett bättre sätt.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 335c1b80-f1f0-4fd0-add8-84b8cc5e2e00
-source-git-commit: ba7d065523116c12e22eec300df13c29d92a54fb
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -44,4 +44,4 @@ curl -X DELETE 'https://platform.adobe.io/data/core/dps/tags/tag1234' \
 
 Ett lyckat svar returnerar HTTP-status 200 och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka med en sökbegäran (GET) till samlingskvalificeraren. Du bör få HTTP-status 404 (Hittades inte) eftersom samlingskvalificeraren har tagits bort.
+Du kan bekräfta borttagningen genom att försöka utföra en uppslagsbegäran (GET) till samlingskvalificeraren. Du bör få HTTP-status 404 (Hittades inte) eftersom samlingskvalificeraren har tagits bort.

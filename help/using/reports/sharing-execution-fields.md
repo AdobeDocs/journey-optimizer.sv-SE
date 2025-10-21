@@ -5,10 +5,10 @@ title: fält för händelseexekvering för händelsen journeyStep
 description: fält för händelseexekvering för händelsen journeyStep
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Experienced
 exl-id: 273cda84-0261-4c5b-b5f4-0202e8874d05
-source-git-commit: 91835d5b8b1f129c83c79613df30d9413db98ffe
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 3%
@@ -67,6 +67,7 @@ Typ av fel som inträffar när åtgärden anropas.
 Typ: sträng
 
 Värden:
+
 * http
 * capping
 * timeout
@@ -113,12 +114,12 @@ Anger typen av åtgärd.
 Värden:
 
 * inbyggd
-* ACS-e-post
-* ACS SMS
-* ACS-push
+   * ACS-e-post
+   * ACS SMS
+   * ACS-push
 * kund
-* Epsilon
-* ...
+   * Epsilon
+   * ...
 
 Typ: sträng
 

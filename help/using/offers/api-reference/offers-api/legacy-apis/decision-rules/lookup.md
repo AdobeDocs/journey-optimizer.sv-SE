@@ -3,12 +3,12 @@ title: Söka efter en beslutsregel
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 3099736d-7109-4c94-aea6-053a9b885278
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_ELIGIBILI
 | `{CONTAINER_ID}` | Behållaren där beslutsreglerna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_ELIGIBILITY_RULE}` | Definierar det schema som är associerat med beslutsregler. | `https://ns.adobe.com/experience/offer-management/eligibility-rule;version=0.3` |
 | `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametern `id` och `name` kan inte användas tillsammans. | `xcore:eligibility-rule:124e0faf5b8ee89b` |
-| `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Sales rule` |
+| `name` | En sträng som används för att matcha entiteternas xdm:name-egenskap. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Sales rule` |
 
 **Begäran**
 

@@ -5,10 +5,10 @@ title: datafält för hämtning för händelsen journeyStep
 description: datafält för hämtning för händelsen journeyStep
 feature: Journeys, Reporting
 topic: Content Management
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Experienced
 exl-id: 948fe843-47cf-4b20-976a-48069eb9cf5c
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 3%
@@ -34,6 +34,7 @@ Definierar om den felaktiga hämtningen finns i Adobe Experience Platform eller 
 Typ: sträng
 
 Värden:
+
 * aep
 * anpassad
 
@@ -44,6 +45,7 @@ Typ av fel som inträffar när datahämtningen bearbetas.
 Typ: sträng
 
 Värden:
+
 * http
 * capping
 * tidsgränsen

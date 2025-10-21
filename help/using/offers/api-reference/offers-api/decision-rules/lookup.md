@@ -3,10 +3,10 @@ title: Söka efter en beslutsregel
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 54368710-1021-43c0-87b7-5176cc6c72f7
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Söka efter en beslutsregel {#lookup-decision-rule}
 
-Du kan söka efter en specifik beslutsregel genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller beslutsregeln `id` i sökvägen för begäran.
+Du kan söka efter en specifik beslutsregel genom att göra en GET-begäran till API:t [!DNL Offer Library] som innehåller beslutsregeln `id` i sökvägen till begäran.
 
 **API-format**
 

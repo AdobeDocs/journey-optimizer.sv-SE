@@ -4,12 +4,12 @@ description: I det här avsnittet visas alla fält som används i den exporterad
 badge: label="Äldre" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1526'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -41,7 +41,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ upplevelse
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -71,7 +71,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-++_experience > decisioning > conditions > optionSelection
++++_experience > decisioning > conditions > optionSelection
 
 **Fält:** optionSelection
 **Titel:** Alternativmarkering
@@ -111,11 +111,11 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-++_experience > decisioning > conditions > placements
++++_upplevelse > beslut > villkor > placeringar
 
 **Fält:** placeringar
 **Titel:** Placeringsbegränsningar
-**Beskrivning:** Placeringsbegränsningen anger att det här kriteriet bara gäller för de listade placeringarna. Det är bara när målplaceringen finns i listan `xdm:placements` som alternativet övervägs. Annars hoppas hela beslutskriterierna över. När listan &#39;xdm:placements&#39; utelämnas eller är tom, beaktas kriteriet för alla riktade placeringar. De placeringar som anges här innehåller implicita kriterier för alternativvalet. Ett alternativ som ska beaktas måste ha en representation för den avsedda placeringen.
+**Beskrivning:** Placeringsbegränsningen anger att det här kriteriet bara gäller för de listade placeringarna. Det är bara när målplaceringen finns i listan `xdm:placements` som alternativet övervägs. Annars hoppas hela beslutskriterierna över. När xdm:placements-listan utelämnas eller är tom, beaktas kriteriet för alla riktade placeringar. De placeringar som anges här innehåller implicita kriterier för alternativvalet. Ett alternativ som ska beaktas måste ha en representation för den avsedda placeringen.
 **Typ:**-matris
 
 * Placement-ID
@@ -126,7 +126,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-++_experience > decisioning > conditions > profileConstraints
++++_experience > decisioning > conditions > profileConstraints
 
 **Fält:** profileConstraints
 **Titel:** Profilbegränsning
@@ -160,6 +160,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 **Beskrivning:** Avgör om några begränsningar är angivna och hur begränsningarna uttrycks. Det kan vara via en regel eller genom ett eller flera medlemskap i en målgrupp.
 **Typ:** sträng
 **Möjliga värden:**
+
 * &quot;none&quot; (standard)
 * &quot;eligibilityRule&quot;: &quot;Profilbegränsningen uttrycks som en enskild regel som måste utvärderas till true innan den begränsade åtgärden tillåts.&quot;
 * &quot;anySegments&quot;: &quot;Profilbegränsningen uttrycks som en eller flera målgrupper och profilen måste vara medlem av minst en av dem innan den begränsade åtgärden tillåts.&quot;
@@ -177,7 +178,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * Identifierare
 
-  **Fält:**&#x200B;_id
+  **Fält:**_id
   **Titel:** Identifierare
   **Beskrivning:** Identitet för målgruppen i det relaterade namnområdet.
   **Typ:** sträng
@@ -206,16 +207,16 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-++_experience > decisioning > conditions > ranking
++++_experience > decisioning > regions > rankning
 
 **Fält:** rankning
 **Titel:** Information om rankning
 **Beskrivning:** Rankning (prioritet). Definierar hur det \&quot;bästa alternativet\&quot; bestäms utifrån beslutskriteriets sammanhang. Bland alla de valda alternativen som uppfyller profilbegränsningarna avgör rankningen vilket eller vilka översta N-alternativ som ska föreslås.
 **Typ:** objekt
 
-+++
++++ 
 
-++_experience > decisioning > conditions > ranking > order
++++_experience > decisioning > conditions > ranking > order
 
 **Fält:** ordning
 **Titel:** Orderutvärdering
@@ -284,7 +285,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++
 
-+++_experience > Decision > Activity Start Date and Time
++++_experience > decisioning > Activity Start Date and Time
 
 **Fält:** startTime
 **Titel:** Startdatum och -tid för aktivitet
@@ -295,7 +296,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
 +++

@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: e1556c25-9c79-4362-a5a9-0a46425fa8d9
-source-git-commit: 1b4ab451ed9e2315ffe4850c6ab4b8ad20223ac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -35,6 +35,7 @@ När du konfigurerar en ny [e-postkanalskonfiguration](email-settings.md) anger 
 >[!NOTE]
 >
 >**[!UICONTROL From email prefix]**- och **[!UICONTROL Error email prefix]**-adresserna använder den valda [delegerade underdomänen](../configuration/about-subdomain-delegation.md) för att skicka e-postmeddelandet. Om den delegerade underdomänen till exempel är *marketing.luma.com*:
+>
 >* Ange *contact* som **[!UICONTROL From email prefix]**. Avsändarens e-postadress är *contact@marketing.luma.com*.
 >* Ange *error* som **[!UICONTROL Error email prefix]**. Feladressen är *error@marketing.luma.com*.
 

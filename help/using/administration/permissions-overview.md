@@ -5,11 +5,11 @@ title: Översikt över användarhantering
 description: Lär dig definiera och hantera behörigheter
 feature: Access Management
 topic: Administration
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 keywords: behörigheter, rättigheter, begränsningar, åtkomst, sandlåda
 exl-id: b8e266b1-d8eb-4c77-9341-9761b82609b0
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Med [!DNL Journey Optimizer] kan du definiera och hantera behörigheter som till
 
 Åtkomstkontroll för [!DNL Journey Optimizer] tillhandahålls via **Behörigheter** i Adobe Experience Cloud. Den här funktionen utnyttjar roller och principer som länkar användare med behörigheter och sandlådor.
 
-Om du vill konfigurera åtkomstkontroll för Journey Optimizer måste du ha system- eller produktadministratörsbehörighet för din organisation. Minimirollen som kan bevilja eller återkalla behörigheter är en produktadministratör. Andra administratörsroller som kan hantera behörigheter är systemadministratörer (inga begränsningar). Mer information finns i [Adobe Help Center-artikeln](https://helpx.adobe.com/se/enterprise/using/admin-roles.html){target="_blank"} om administrativa roller.
+Om du vill konfigurera åtkomstkontroll för Journey Optimizer måste du ha system- eller produktadministratörsbehörighet för din organisation. Minimirollen som kan bevilja eller återkalla behörigheter är en produktadministratör. Andra administratörsroller som kan hantera behörigheter är systemadministratörer (inga begränsningar). Mer information finns i [Adobe Help Center-artikeln](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} om administrativa roller.
 
 <!-- A high-level workflow for gaining and assigning access permissions can be summarized as follows:
 

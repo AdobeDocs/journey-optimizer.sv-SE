@@ -3,12 +3,12 @@ title: Slå upp ett beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 99159704-fa39-47ff-b445-0cd6b325007d
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_ACTIVITIE
 | `{CONTAINER_ID}` | Behållaren där besluten finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_ACTIVITIES}` | Definierar det schema som är associerat med beslut. | `https://ns.adobe.com/experience/offer-management/offer-activity;version=0.5` |
 | `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-activity:124527ab00b2ebbc` |
-| `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametern id och name kan inte användas tillsammans | `LBAR` |
+| `name` | En sträng som används för att matcha entiteternas xdm:name-egenskap. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametern id och name kan inte användas tillsammans | `LBAR` |
 
 **Begäran**
 

@@ -5,13 +5,13 @@ title: Personalization use case&colon; order status notification
 description: Lär dig hur du personaliserar ett meddelande med profil, offertbeslut och kontextinformation.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, användningsfall, personalisering
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: 1deb04490e53cbd5d67abda229bb4f850055510f
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ I det här fallet krävs följande krav:
 1. Välj menyn **Sammanhangsberoende attribut**. Sammanhangsberoende attribut är bara tillgängliga om en resa har skickat kontextuella data till meddelandet. Klicka på **Journey Orchestration**. Följande sammanhangsberoende information visas:
 
    * **Händelser**: Den här kategorin grupperar alla fält från händelser som placerats före kanalåtgärdsaktiviteten i resan.
-   * **Resegenskaper**: De tekniska fälten för resan för en viss profil, till exempel rese-ID:t eller de specifika fel som påträffats. Läs mer i [Journey Orchestration-dokumentationen](../building-journeys/expression/journey-properties.md).
+   * **Resegenskaper**: De tekniska fälten för resan för en viss profil, till exempel rese-ID:t eller de specifika fel som påträffats. Läs mer i [Journey Orchestration-dokumentation](../building-journeys/expression/journey-properties.md).
 
    ![](assets/perso-uc10.png)
 
@@ -110,4 +110,4 @@ I det här fallet krävs följande krav:
 
 I videon nedan visas ett liknande användningsexempel som utnyttjar sammanhangsberoende data från en resa för att personalisera ett e-postmeddelande.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428534?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3425027?quality=12)

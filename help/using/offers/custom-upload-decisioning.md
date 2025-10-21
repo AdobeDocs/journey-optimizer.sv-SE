@@ -6,7 +6,7 @@ feature: Decision Management
 role: User
 level: Intermediate
 exl-id: bd950410-691b-49d8-8851-8c6c448c00fd
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -23,14 +23,14 @@ Data från anpassade uppladdningsgrupper kan utnyttjas i Beslutshantering för:
 2. Anpassa innehåll i erbjudanderepresentationer.
 
 Mer information om anpassade uppladdningsgrupper finns i avsnitten:
+
 * [Kom igång med målgrupper och Journey Optimizer](../audience/about-audiences.md)
-* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
+* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
 
 ## Måste läsas {#must-read}
 
 * Den här funktionen stöds endast i **Beslutshantering**, inte i beslut (tidigare kallat Experience Decision).
 * Den är exklusivt tillgänglig genom **Decisioning API (Hub)**-begäranden och stöds inte av **Edge Decisioning API** eller **batch-beslut**.
- 
 
 ## Använd en anpassad publik som kvalificeringskriterier {#eligibilty}
 

@@ -3,10 +3,10 @@ title: Ta bort personaliserade erbjudanden
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 6ae37843-2679-48a3-96ef-bb93a5d4a333
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 3%
@@ -44,4 +44,4 @@ curl -X DELETE \
 
 Ett lyckat svar returnerar HTTP-status 202 (inget innehåll) och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka göra en sökbegäran (GET) till det anpassade erbjudandet. Du måste inkludera en Accept-rubrik i begäran, men du bör få HTTP-status 404 (Hittades inte) eftersom det anpassade erbjudandet har tagits bort från behållaren.
+Du kan bekräfta borttagningen genom att försöka göra en sökning (GET) till det anpassade erbjudandet. Du måste inkludera en Accept-rubrik i begäran, men du bör få HTTP-status 404 (Hittades inte) eftersom det anpassade erbjudandet har tagits bort från behållaren.

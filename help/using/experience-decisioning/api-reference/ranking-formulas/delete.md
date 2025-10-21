@@ -3,9 +3,10 @@ title: Ta bort en rankningsformel
 description: Med rankningsformler kan du definiera funktionerna för poängsättning, som används för att rangordna artiklar.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: 8fa34ebb7c853f9af5b3f58574374a3acb641dd9
+exl-id: 4ea50481-b1b9-4e0c-ad4e-c4139891bfdf
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%
@@ -43,4 +44,3 @@ curl -X DELETE 'https://platform.adobe.io/data/core/dps/ranking-formulas/ranking
 Ett lyckat svar returnerar HTTP-status 200 och en tom brödtext.
 
 Du kan bekräfta borttagningen genom att försöka utföra en sökning (GET) på rankningsformeln. Du bör få HTTP-status 404 (Hittades inte) eftersom rankningsformeln har tagits bort.
-

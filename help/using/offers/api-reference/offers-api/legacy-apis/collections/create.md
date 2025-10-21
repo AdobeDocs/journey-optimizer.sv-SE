@@ -3,10 +3,10 @@ title: Skapa en samling
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: ea79add2-1ea7-4c5c-ba67-f99d10975c4f
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan skapa en samling genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
+Du kan skapa en samling genom att göra en POST-begäran till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 

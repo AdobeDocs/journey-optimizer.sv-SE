@@ -5,11 +5,11 @@ title: Anpassa innehåll i Journey Optimizer
 description: Kom igång med personalisering.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Beginner
 keywords: uttryck, redigerare, start, personalisering
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
-source-git-commit: 7e378cbda6ee2379a8bd795588c328cb14107aa4
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Med personaliseringsfunktionerna i [!DNL Adobe Journey Optimizer] kan du anpassa
 
 Med **personaliseringsredigeraren** kan du välja, ordna, anpassa och validera alla data för att skapa en anpassad personalisering för ditt innehåll, och använda olika verktyg som hjälpfunktioner eller fördefinierade uttryck för att anpassa meddelanden effektivt.
 
-Journey Optimizer använder en infogad personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll inneslutet av dubbla klammerparenteser **{{}}{{}}**.
+Journey Optimizer använder en infogad personaliseringssyntax baserad på Handlebars, som gör att du kan skapa uttryck med innehåll inneslutet av dubbla klammerparenteser **`{{}}`**.
 
 När du bearbetar meddelandet ersätter Journey Optimizer uttrycket med data som finns i Experience Platform datamängd. Till exempel blir `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamiskt `Hello John Doe`.
 
@@ -51,7 +51,7 @@ Den här spelmiljön innehåller en simulerad miljö för att skriva och testa p
 
 ![personalisering, spelplattform](assets/playground.png)
 
-➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/sv/apps/journey-optimizer/ajo-personalization){target="_blank"}
+➡️ [Åtkomst till personaliseringsspelgrunden](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
 
 ## Låt oss dyka djupare
 
@@ -97,7 +97,7 @@ Nu när du har en förståelse för personalisering i **[!DNL Journey Optimizer]
 
 Lär dig hur du använder sammanhangsbaserad händelseinformation från en resa för att personalisera ett meddelande.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448135?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/334165?quality=12)
 
 Lär dig hur du lägger till profilbaserad personalisering i ett meddelande och hur du använder målgruppsmedlemskap som en förutsättning för ett personaliseringsblock.
 
@@ -105,4 +105,4 @@ Lär dig hur du lägger till profilbaserad personalisering i ett meddelande och 
 
 Lär dig hur du använder personaliseringsredigerarens spelmiljö för att skriva och testa personaliseringskod med exempeldata.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475956?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3457868?quality=12)

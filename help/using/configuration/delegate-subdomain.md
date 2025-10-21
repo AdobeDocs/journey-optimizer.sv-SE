@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '1868'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 >id="ajo_admin_subdomainname"
 >title="Delegering av underdomän"
 >abstract="Med Journey Optimizer kan du delegera dina underdomäner till Adobe. Du kan delegera en underdomän helt till Adobe, vilket är den rekommenderade metoden. </br>Du kan också skapa en underdomän med CNAME för att peka på Adobe-specifika poster, men på det här sättet måste du behålla och hantera DNS-poster på egen hand."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname_header"
@@ -116,14 +116,15 @@ Följ stegen nedan för att konfigurera en ny underdomän i [!DNL Journey Optimi
 1. Ange namnet på den underdomän som ska delegeras.
 
    ![](assets/subdomain-name.png)
-<!--
-    >[!CAUTION]
+
+<!-- >[!CAUTION]
     >
     >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
     >
     >You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
 
-    Capital letters are not allowed in subdomains. TBC by PM-->
+    Capital letters are not allowed in subdomains. TBC by PM
+-->
 
 1. Konfigurera **[!UICONTROL DMARC record]** i det dedikerade avsnittet. Om underdomänen har en befintlig [DMARC-post](dmarc-record.md), och om den hämtas av [!DNL Journey Optimizer], kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Lär dig hantera DMARC-post](dmarc-record.md#set-up-dmarc)
 

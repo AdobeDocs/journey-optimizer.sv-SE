@@ -3,15 +3,15 @@ title: Ta bort en objektsamling
 description: Lär dig hur du kategoriserar gruppbeslut i samlingar.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
+exl-id: 7290c857-cbc7-4197-ae13-430adcf1649b
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
 
 ---
-
 
 # Ta bort en objektsamling {#delete-decision-item}
 
@@ -43,4 +43,4 @@ curl -X DELETE 'https://platform.adobe.io/data/core/dps/item-collections/itemCol
 
 Ett lyckat svar returnerar HTTP-status 200 och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka utföra en uppslagsbegäran (GET) till objektsamlingen. Du bör få HTTP-status 404 (Hittades inte) eftersom objektsamlingen har tagits bort.
+Du kan bekräfta borttagningen genom att försöka utföra en sökning (GET) på objektsamlingen. Du bör få HTTP-status 404 (Hittades inte) eftersom objektsamlingen har tagits bort.

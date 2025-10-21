@@ -3,12 +3,12 @@ title: Söka efter en samling
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 91317c46-d8b6-456e-8282-aef1169941af
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 
-Du kan söka efter specifika samlingar genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller antingen samlingen `@id` eller namnet på samlingen i sökvägen för begäran.
+Du kan söka efter specifika samlingar genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller samlingen `@id` eller namnet på samlingen i sökvägen för begäran.
 
 **API-format**
 
@@ -31,7 +31,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_FILTER}&{
 | `{CONTAINER_ID}` | Behållaren där samlingarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_FILTER}` | Definierar det schema som är associerat med samlingar. | `https://ns.adobe.com/experience/offer-management/offer-filter;version=0.1` |
 | `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-filter:124bd44648f17ec1` |
-| `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Mobile demo` |
+| `name` | En sträng som används för att matcha entiteternas xdm:name-egenskap. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Mobile demo` |
 
 **Begäran**
 

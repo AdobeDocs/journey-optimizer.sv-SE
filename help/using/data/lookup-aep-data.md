@@ -5,12 +5,12 @@ title: Använd Adobe Experience Platform-data
 description: Lär dig hur du använder Adobe Experience Platform datamängder i [!DNL Journey Optimizer] Funktioner för beslutsfattande och personalisering.
 feature: Personalization, Rules
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 
 * **Ingen PII i datauppsättningar** - datauppsättningar som har aktiverats för sökning får inte innehålla någon PII (Personally Identiitable Information).
 
-* &#x200B;
+* 
    * **Borttagningsrisk** - Datauppsättningar som används i personalisering skyddas inte från att tas bort. Du måste hålla reda på vilka datauppsättningar som används för att vara säker på att de inte tas bort.
 
 * **Schematyp** - Datauppsättningar måste associeras med ett schema som är **NOT** av profiltyp eller händelsetyp.

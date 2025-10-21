@@ -3,19 +3,19 @@ title: Skapa en objektsamling
 description: Med samlingar kan du kategorisera och gruppera beslutsobjekt enligt dina önskemål.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
+exl-id: e4f2ab34-2af2-49b5-9164-b129e922fe59
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 1%
 
 ---
 
-
 # Skapa en objektsamling {#create-decision-items}
 
-Du kan skapa en objektsamling genom att göra en POST-förfrågan till Offer Library API.
+Du kan skapa en objektsamling genom att göra en POST-begäran till Offer Library API.
 
 **API-format**
 

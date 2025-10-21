@@ -5,11 +5,11 @@ title: Konfigurera en affärshändelse
 description: Lär dig hur du skapar ett affärsevenemang
 feature: Journeys, Events
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Intermediate, Experienced
 keywords: händelse, resa, verksamhet, konfiguration
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 
 >[!NOTE]
 >
->Du kan också titta på användningsexemplet [självstudiekurs](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html?lang=sv-SE) för affärshändelser. Observera att schemat inte behöver aktiveras för profilen.
+>Du kan också titta på användningsexemplet [självstudiekurs](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html) för affärshändelser. Observera att schemat inte behöver aktiveras för profilen.
 
 ## Viktiga anteckningar {#important-notes}
 
@@ -56,13 +56,13 @@ Affärshändelser följer reglerna för återinträde på samma sätt som för e
 
 **Vilka är skyddsräckena för att undvika att materialiserade målgrupper läses in för mycket?**
 
-När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE).
+När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html).
 
 ## Kom igång med affärsevenemang {#gs-business-events}
 
 Här följer de första stegen för att konfigurera en affärshändelse:
 
-1. Välj **[!UICONTROL Configurations]** på menyn Administration. Klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Events]**. Listan med händelser visas.
+1. Välj **[!UICONTROL Configurations]** på menyn Administration. Klicka på **[!UICONTROL Events]** i avsnittet **[!UICONTROL Manage]**. Listan med händelser visas.
 
    ![](assets/jo-event1.png)
 
@@ -78,7 +78,7 @@ Här följer de första stegen för att konfigurera en affärshändelse:
    >
    >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
 
-1. Välj **Business** i fältet **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL Type]** Business **i fältet**.
 
    ![](assets/jo-event3bis-business.png)
 

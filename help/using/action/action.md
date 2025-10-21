@@ -5,11 +5,11 @@ title: Kom igång med funktionsmakron
 description: Lär dig hur du arbetar med åtgärder
 feature: Journeys, Actions, Custom Actions
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Experienced
 keywords: åtgärder, resa, meddelanden, sändning, anslutningar
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-source-git-commit: 8a94f9081c4f7fe158c084d02642d5bbba33dca2
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 34%
@@ -49,7 +49,7 @@ Lär dig hur du felsöker en anpassad åtgärd [på den här dedikerade sidan](.
 
 Lär dig hur du konfigurerar anpassade åtgärder.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430273?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3428396?quality=12)
 
 ## Ytterligare resurser
 

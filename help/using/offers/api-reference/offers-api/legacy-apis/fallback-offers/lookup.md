@@ -3,19 +3,19 @@ title: erbjudanden för sökning efter reserverbjudanden
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: e470d491-b30b-4d26-83a6-e5b34e49fe61
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
 # Slå upp reserverbjudanden {#look-up-fallback-offers}
 
-Du kan slå upp specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller antingen reserverbjudandet `@id` eller namnet på reserverbjudandet i sökvägen för begäran.
+Du kan slå upp specifika reserverbjudanden genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller antingen reserverbjudandet `@id` eller namnet på reserverbjudandet i sökvägen för begäran.
 
 **API-format**
 
@@ -29,7 +29,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_FALLBACK_
 | `{CONTAINER_ID}` | Behållaren där reserverbjudandena finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `{SCHEMA_FALLBACK_OFFER}` | Definierar det schema som är associerat med reserverbjudanden. | `https://ns.adobe.com/experience/offer-management/fallback-offer;version=0.1` |
 | `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:fallback-offer:122206064e0d98df` |
-| `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `F1: Web fallback` |
+| `name` | En sträng som används för att matcha entiteternas xdm:name-egenskap. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `F1: Web fallback` |
 
 **Begäran**
 

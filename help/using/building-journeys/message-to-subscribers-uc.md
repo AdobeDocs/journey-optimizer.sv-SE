@@ -5,12 +5,12 @@ title: Skicka ett meddelande till prenumeranter
 description: Lär dig hur du bygger en resa för att skicka ett meddelande till prenumeranterna på en lista
 feature: Journeys, Use Cases, Subscriptions
 topic: Content Management
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 keywords: resa, användningsfall, meddelande, prenumeranter, lista, läsa
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 2%

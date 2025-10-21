@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 5172fbce0ff2c3330e68394234f6f28db245c7d4
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -112,6 +112,7 @@ Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!
 >[!NOTE]
 >
 >När en IP-pool har uppdaterats kan du behöva vänta:
+>
 >* några minuter innan det konsumeras av enhetsmeddelanden,
 >* till nästa batch för att IP-poolen ska börja gälla i batchmeddelanden.
 

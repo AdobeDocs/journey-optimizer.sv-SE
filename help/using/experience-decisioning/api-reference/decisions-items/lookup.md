@@ -3,15 +3,15 @@ title: Söka efter ett beslutsobjekt
 description: Beslutsobjekt är marknadsföringserbjudanden som du kan skapa och ordna i samlingar och kataloger.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
+exl-id: 8a4e09ec-57bc-48ad-b626-6a15ba987791
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 1%
 
 ---
-
 
 # Söka efter ett beslutsobjekt {#lookup-decision-items}
 

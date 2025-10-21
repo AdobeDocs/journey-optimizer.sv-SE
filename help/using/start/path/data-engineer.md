@@ -4,10 +4,10 @@ product: journey optimizer
 title: Journey Optimizer Get Started for Data Engineer
 description: Som datatekniker får du lära dig mer om hur du arbetar med Journey Optimizer
 feature: Get Started
-role: Data Engineer
+role: Developer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 6c73a1ee024ca61b30d71e77268e51b93576ae62
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Lär dig hur du **identifierar data och skapar schema och datauppsättning** fö
 
 >[!NOTE]
 >
->Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+>Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 Steg för att skapa ett identitetsnamnutrymme och en datauppsättning som är aktiverad för profiler samt testprofiler beskrivs i avsnitten nedan:
 

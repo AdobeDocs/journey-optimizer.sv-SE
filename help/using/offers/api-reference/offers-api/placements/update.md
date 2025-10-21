@@ -3,10 +3,10 @@ title: uppdatera en placering
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 6990918c-e736-4f28-9ac6-9ac3101b069f
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Uppdatera en placering {#update-placement}
 
-Du kan ändra eller uppdatera en placering genom att göra en PATCH-begäran till API:t för [!DNL Offer Library].
+Du kan ändra eller uppdatera en placering genom att göra en PATCH-förfrågan till API:t [!DNL Offer Library].
 
 Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](https://jsonpatch.com/).
 

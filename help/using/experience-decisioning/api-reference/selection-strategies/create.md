@@ -3,19 +3,19 @@ title: Skapa en urvalsstrategi
 description: Urvalsstrategier består av samlingar som är kopplade till begränsningar och rangordningsmetoder för att fastställa erbjudanden.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
+exl-id: 0e35c77b-6741-4c32-b012-36fc3a8b6d7a
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 1%
 
 ---
 
-
 # Skapa en urvalsstrategi {#create-selection-strategy}
 
-Du kan skapa en urvalsstrategi genom att göra en POST-förfrågan till Offer Library API.
+Du kan skapa en urvalsstrategi genom att göra en POST-begäran till erbjudandebiblioteks-API:t.
 
 **API-format**
 

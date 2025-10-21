@@ -3,15 +3,15 @@ title: Ta bort en urvalsstrategi
 description: Urvalsstrategier består av samlingar som är kopplade till begränsningar och rangordningsmetoder för att fastställa erbjudanden.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: c555e6a6d88f43d7c29e27060d464b8fd21aed96
+exl-id: 774f3773-bc39-46c4-b32c-143abbd45696
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
 
 ---
-
 
 # Ta bort en urvalsstrategi {#delete-selection-strategy}
 
@@ -43,4 +43,4 @@ curl -X DELETE 'https://platform.adobe.io/data/core/dps/selection-strategies/sel
 
 Ett lyckat svar returnerar HTTP-status 200 och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka utföra en sökbegäran (GET) till urvalsstrategin. Du bör få HTTP-status 404 (Hittades inte) eftersom urvalsstrategin har tagits bort.
+Du kan bekräfta borttagningen genom att försöka utföra en sökning (GET)-begäran i urvalsstrategin. Du bör få HTTP-status 404 (Hittades inte) eftersom urvalsstrategin har tagits bort.

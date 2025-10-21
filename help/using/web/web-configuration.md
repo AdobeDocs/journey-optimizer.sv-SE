@@ -6,7 +6,7 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 2161baf0-38b7-4397-bffe-083929e8033a
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 0%
@@ -65,7 +65,7 @@ När du skapar en webb- eller [kodbaserad upplevelse](../code-based/get-started-
 
 Du kanske vill använda ändringarna på en hjältebanderoll på en hel webbplats, eller lägga till en översta bild som visas på alla produktsidor på en webbplats.
 
-1. Välj **[!UICONTROL Pages matching rule]** när du konfigurerar din [webb](#web-configuration) eller [kodbaserade upplevelse](../code-based/code-based-configuration.md).
+1. Välj [ när du konfigurerar din ](#web-configuration)webb[ eller ](../code-based/code-based-configuration.md)kodbaserade upplevelse **[!UICONTROL Pages matching rule]**.
 
 1. Definiera dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**.
 
@@ -99,11 +99,11 @@ När du skapar en [regel som matchar flera sidor](#web-page-matching-rule) kan d
 
   | Operator  | Beskrivning  | Exempel  |
   |---|---|---|
-  | Lika med  | Exakt domänmatchning.  |
+  | Lika med  | Exakt domänmatchning.  | |
   | Börjar med  | Matchar alla domäner (inklusive underdomäner) som börjar med den angivna strängen.  | Exempel: &quot;Börjar med: dev&quot; -> matchar alla domäner och underdomäner som börjar med &quot;dev&quot;, som: dev.example.com, dev.products.example.com, developer.example.com  |
   | Slutar med  | Matchar alla domäner (inklusive underdomäner) som slutar med den angivna strängen.  | Exempel: &quot;Slutar med: example.com&quot; -> matchar alla domäner och underdomäner som slutar med &quot;example.com&quot;, som: stage.example.com, prod.example.com, myexample.com  |
   | Matchning av jokertecken  | Med operatorn &quot;Jokerteckenmatchning&quot; kan användaren definiera en jokerteckenmatchning mitt i strängen, som &quot;dev.*.example.com&quot;. Valideringsreglerna är att värdet måste innehålla ett och endast ett jokertecken (asterisk) när operatorn är&quot;jokerteckenmatchning&quot;.  | Exempel: &quot;Jokerteckenmatchning: dev.*.example.com&quot; -> matchar domäner som: dev.products.example.com, dev.mytest.products.example.com, dev.blog.example.com  |
-  | Alla  | Matchar alla domäner - användbart när du testar en viss sökväg över domäner  |
+  | Alla  | Matchar alla domäner - användbart när du testar en viss sökväg över domäner  |  |
 
 
 * **Sökväg**

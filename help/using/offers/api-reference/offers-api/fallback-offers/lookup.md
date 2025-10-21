@@ -3,10 +3,10 @@ title: erbjudanden för sökning efter reserverbjudanden
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 8f1fa116-30d2-4732-8973-bbce0dc66dec
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Slå upp reserverbjudanden {#look-up-fallback-offers}
 
-Du kan slå upp specifika reserverbjudanden genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller reserverbjudandets ID i sökvägen för begäran.
+Du kan slå upp specifika reserverbjudanden genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller reserverbjudandets ID i sökvägen för begäran.
 
 **API-format**
 

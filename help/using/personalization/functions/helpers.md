@@ -3,10 +3,10 @@ title: Hjälpmedel
 description: Hjälpmedel
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
-source-git-commit: 98202be781bec0b03a9a9f33e93f1b01b7830a37
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 1%
@@ -134,8 +134,8 @@ Some edu specific content
 ## Varje{#each}
 
 Hjälpprogrammet `each` används för att iterera över en array.
-Den hjälpandes syntax är ```{{#each ArrayName}}``` YourContent {{/each}}
-Vi kan referera till de enskilda arrayobjekten genom att använda nyckelordet **this** inuti blocket. Index för arrayelementet kan återges med {{@index}}.
+Den hjälpandes syntax är ```{{#each ArrayName}}``` YourContent `{{/each}}`
+Vi kan referera till de enskilda arrayobjekten genom att använda nyckelordet **this** inuti blocket. Index för arrayelementet kan återges med `{{@index}}`.
 
 **Syntax**
 

@@ -3,12 +3,12 @@ title: Lista personaliserade erbjudanden
 description: Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 50f4119f-c730-4883-867e-eac83793dced
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '261'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 Ett personaliserat erbjudande är ett anpassningsbart marknadsföringsmeddelande som baseras på regler och begränsningar för behörighet.
 
-Du kan visa en lista över alla anpassade erbjudanden i en behållare genom att utföra en enda GET-förfrågan till API:t [!DNL Offer Library].
+Du kan visa en lista över alla anpassade erbjudanden i en behållare genom att utföra en enda GET-begäran till API:t [!DNL Offer Library].
 
 **API-format**
 

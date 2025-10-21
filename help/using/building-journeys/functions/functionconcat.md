@@ -3,12 +3,12 @@ product: journey optimizer
 title: concat
 description: Lär dig mer om funktionssammanfogningen
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: concat, function, expression, travel
 exl-id: 690c8aa9-f754-4720-b4ed-a338e5d3b79d
 version: Journey Orchestration
-source-git-commit: 7ac246c0aa6776d3ec67223c4b07536b8ed0c881
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 9%

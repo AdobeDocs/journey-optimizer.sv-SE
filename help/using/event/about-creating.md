@@ -5,11 +5,11 @@ title: Konfigurera en enhetshändelse
 description: Lär dig hur du konfigurerar en enhetshändelse
 feature: Journeys, Events
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: 25b1e6050e0cec3ae166532f47626d99ed68fe80
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 7%
@@ -32,7 +32,7 @@ Enhetshändelser är länkade till en viss profil. De kan vara regelbaserade ell
 
 Nedan följer de första stegen för att konfigurera en ny händelse:
 
-1. Bläddra till **[!UICONTROL Configurations]** på menyn Administration och klicka på **[!UICONTROL Manage]** i avsnittet **[!UICONTROL Events]**. Listan med händelser visas.
+1. Bläddra till **[!UICONTROL Configurations]** på menyn Administration och klicka på **[!UICONTROL Events]** i avsnittet **[!UICONTROL Manage]**. Listan med händelser visas.
 
    ![](assets/jo-event1.png)
 
@@ -48,7 +48,7 @@ Nedan följer de första stegen för att konfigurera en ny händelse:
    >
    >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
 
-1. Välj **Enhet** i fältet **[!UICONTROL Type]**.
+1. Välj **[!UICONTROL Type]** Enhet **i fältet**.
 
    ![](assets/jo-event3bis.png)
 

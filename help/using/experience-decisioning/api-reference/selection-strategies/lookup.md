@@ -3,19 +3,19 @@ title: Söka efter en urvalsstrategi
 description: Urvalsstrategier består av samlingar som är kopplade till begränsningar och rangordningsmetoder för att fastställa erbjudanden.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: dcff8803404228bbed40e998d802bb6c0f4ac67e
+exl-id: db590963-b45b-4844-ac12-775cc955b03e
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 1%
 
 ---
 
-
 # Söka efter en urvalsstrategi {#list-selection-strategy}
 
-Du kan söka efter en viss urvalsstrategi genom att göra en GET-förfrågan till Offer Library API som innehåller ID:t i sökvägen till begäran.
+Du kan söka efter en viss urvalsstrategi genom att göra en GET-begäran till Offer Library API som innehåller ID:t i sökvägen till begäran.
 
 **API-format**
 

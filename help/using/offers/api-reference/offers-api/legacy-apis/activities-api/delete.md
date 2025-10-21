@@ -3,10 +3,10 @@ title: Ta bort beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 36a87d98-fd61-416e-83a1-e267a7b4d455
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 2%
@@ -45,4 +45,4 @@ curl -X DELETE \
 
 Ett lyckat svar returnerar HTTP-status 202 (inget innehåll) och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka utföra en sökning (GET) på beslutet. Du måste inkludera en Accept-rubrik i begäran, men du bör få HTTP-statusen 404 (Hittades inte) eftersom beslutet har tagits bort från behållaren.
+Du kan bekräfta borttagningen genom att försöka utföra en sökning (GET) på ett beslut. Du måste inkludera en Accept-rubrik i begäran, men du bör få HTTP-statusen 404 (Hittades inte) eftersom beslutet har tagits bort från behållaren.

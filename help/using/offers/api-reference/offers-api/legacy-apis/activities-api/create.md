@@ -3,10 +3,10 @@ title: Skapa ett beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 7cb906b9-8925-4482-9915-448a41e11d9d
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 # Skapa ett beslut {#create-decision}
 
-Du kan skapa ett beslut genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
+Du kan skapa ett beslut genom att göra en POST-begäran till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 

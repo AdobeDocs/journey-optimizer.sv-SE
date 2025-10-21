@@ -3,10 +3,10 @@ title: Skapa en placering
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 5c7301f6-95d3-4720-81fe-5f2602cd30ec
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # Skapa en placering {#create-placement}
 
-Du kan skapa en placering genom att göra en POST-förfrågan till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
+Du kan skapa en placering genom att göra en POST-begäran till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 

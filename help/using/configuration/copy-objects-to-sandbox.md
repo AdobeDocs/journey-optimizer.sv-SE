@@ -5,11 +5,11 @@ title: Kopiera Journey Optimizer-objekt mellan sandlådor
 description: Lär dig hur du kopierar resor, innehållsmallar och fragment mellan sandlådor.
 feature: Journeys, Sandboxes
 topic: Content Management
-role: User, Developer, Data Engineer
+role: User, Developer
 level: Experienced
 keywords: sandlåda, resa, kopia, miljö
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
-source-git-commit: f8134fd1e030fb969747a37acd657f62fd398c75
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Du kan kopiera objekt som resor, anpassade åtgärder, innehållsmallar eller fragment över flera sandlådor med hjälp av funktioner för paketexport och -import. Ett paket kan bestå av ett eller flera objekt. Alla objekt som ingår i ett paket måste komma från samma sandlåda.
 
-Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i Adobe Experience Platform [Handbok för sandlådeverktyg](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=sv-SE#abobe-journey-optimizer-objects){target="_blank"}.
+Den här sidan beskriver hur du använder sandlådeverktyg i Journey Optimizer. Mer information om själva funktionen finns i Adobe Experience Platform [Handbok för sandlådeverktyg](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Journey Optimizer tillåter export av resor, anpassade åtgärder, innehållsmal
 
 +++ Resor
 
-* **Kopierade beroenden** - När du exporterar en resa, förutom själva resan, kopierar Journey Optimizer även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i Adobe Experience Platform [verktygsguide för sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=sv-SE#abobe-journey-optimizer-objects){target="_blank"}.
+* **Kopierade beroenden** - När du exporterar en resa, förutom själva resan, kopierar Journey Optimizer även de flesta objekt som resan är beroende av: målgrupper, anpassade åtgärder, scheman, händelser och åtgärder. Mer information om kopierade objekt finns i Adobe Experience Platform [verktygsguide för sandlådor](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
 
 * **Manuell validering rekommenderas** - Vi garanterar inte att alla länkade element kopieras till målsandlådan. Vi rekommenderar att du gör en grundlig kontroll, till exempel innan du publicerar en resa. På så sätt kan du identifiera eventuella saknade objekt.
 

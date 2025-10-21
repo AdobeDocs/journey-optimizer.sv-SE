@@ -5,11 +5,11 @@ title: Kom igång med dynamiskt innehåll
 description: Läs mer om dynamiskt innehåll
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, komma igång, villkor, starta
 exl-id: be9a3f83-8e22-4efa-9d48-37bf554018fa
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%

@@ -4,11 +4,11 @@ product: journey optimizer
 title: Kom igång med scheman
 description: Lär dig använda Adobe Experience Platform-scheman i Adobe Journey Optimizer
 feature: Data Model, Datasets, Data Management
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Experienced
 keywords: scheman, plattform, data, struktur
 exl-id: c2a8df2e-ff94-4f9a-a53e-bbf9f663cc81
-source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -62,6 +62,6 @@ Lär dig hur du skapar ett standardschema, lägger till fältgrupper, skapar och
 >
 >* [Skapa ett schema, en datauppsättning och inmatningsdata för att lägga till testprofiler i Journey Optimizer](../audience/creating-test-profiles.md)
 >* [Översikt över XDM-systemet](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}
->* [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=sv-SE){target="_blank"}
->* [Skapa ett schema med API:t för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html?lang=sv-SE){target="_blank"}
->* [Definiera en relation mellan två scheman med Schemaredigeraren](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=sv-SE){target="_blank"}
+>* [Bästa tillvägagångssätt för datamodellering](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html){target="_blank"}
+>* [Skapa ett schema med API:t för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html){target="_blank"}
+>* [Definiera en relation mellan två scheman med Schemaredigeraren](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html){target="_blank"}

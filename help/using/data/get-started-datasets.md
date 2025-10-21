@@ -4,11 +4,11 @@ product: journey optimizer
 title: Kom igång med datauppsättningar
 description: Lär dig hur du använder Adobe Experience Platform datauppsättningar i Adobe Journey Optimizer
 feature: Data Model, Datasets, Data Management
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-source-git-commit: 7fb853a898a84ff31c7a24b48f963f06c4d10b6f
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Systemdatauppsättningar för Adobe Journey Optimizer visas nedan.
 
 * _Poäng för optimering vid sändning/engagemang_: Resultat för AI vid körning på resa.
 
-Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
+Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
 
 ## Förhandsgranska datauppsättningar{#preview-datasets}
 
@@ -80,8 +80,8 @@ Om du vill skapa en ny datauppsättning börjar du med att välja **Skapa dataup
 
 Du kan:
 
-* Skapa datauppsättning från schema. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE#schema){target="_blank"}
-* Skapa datauppsättning från CSV-fil. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=sv-SE){target="_blank"}
+* Skapa datauppsättning från schema. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#schema){target="_blank"}
+* Skapa datauppsättning från CSV-fil. [Läs mer i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target="_blank"}
 
 I den här videon får du lära dig hur du skapar en datauppsättning, mappar den till ett schema, lägger till data i den och bekräftar att data har importerats.
 
@@ -95,19 +95,19 @@ En av kärnfunktionerna i [!DNL Adobe Experience Platform] är att samla data fr
 
 Med [!DNL Adobe Experience Platform Data Governance] kan du hantera kunddata och säkerställa efterlevnad av regler, begränsningar och policyer som gäller för dataanvändning. Det spelar en nyckelroll inom Experience Platform på olika nivåer, bland annat i fråga om katalogisering, datalinje, dataanvändningsetiketter, dataanvändningspolicyer och kontroll av användningen av data för marknadsföringsåtgärder.
 
-Läs mer om etiketter för datastyrning och dataanvändning i [dokumentationen för datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html?lang=sv-SE){target="_blank"}
+Läs mer om etiketter för datastyrning och dataanvändning i [dokumentationen för datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html){target="_blank"}
 
 ## Exempel och användningsområden{#uc-datasets}
 
 Lär dig hur du skapar ett schema, en datauppsättning och importerar data för att lägga till testprofiler i Adobe Journey Optimizer i [det här exempelexemplet från början till slut](../audience/creating-test-profiles.md)
 
-Läs mer om hur du skapar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE){target="_blank"}.
+Läs mer om hur du skapar datauppsättningar i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}.
 
-Lär dig hur du använder användargränssnittet för datauppsättningar i översiktsdokumentationen för [datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+Lär dig hur du använder användargränssnittet för datauppsättningar i översiktsdokumentationen för [datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 En lista över användningsfall med frågeexempel finns [här](../data/datasets-query-examples.md).
 
 >[!MORELIKETHIS]
 >
 >* [Översikt över direktuppspelningsförslag](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=sv){target="_blank"}
->* [Infoga data i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=sv-SE){target="_blank"}
+>* [Infoga data i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html){target="_blank"}

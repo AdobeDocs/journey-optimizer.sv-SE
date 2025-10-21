@@ -3,10 +3,10 @@ title: Kom igång med erbjudandeleverans-API:er
 description: Läs mer om de API:er som finns för att leverera personaliserade erbjudanden.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 7bc1a4ec-113c-4af7-b549-ee17b843b818
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -20,6 +20,7 @@ Du kan leverera erbjudanden med API:t **Decisioning** eller **Edge Decisioning**
 På den här sidan hittar du information om specifika funktioner som är tillgängliga med API:erna **Decisioning** och **Edge Decisioning** . Även om båda tillåter dig att leverera erbjudanden till dina kunder rekommenderar vi att du använder API:t för **Edge Decisioning** när det är möjligt för inkommande bruk och för att säkerställa bättre latens och genomströmning på din plattform.
 
 Mer information om hur du arbetar med API:erna finns i följande avsnitt:
+
 * [Besluts-API](decisioning-api.md)
 * [Edge Decisioning API](edge-decisioning-api.md)
 * [API för gruppbeslut](batch-decisioning-api.md)

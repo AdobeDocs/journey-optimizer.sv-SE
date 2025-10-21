@@ -3,9 +3,10 @@ title: Skapa en berättiganderegel
 description: Behörighetsregler gör att ni kan definiera de berättigade kandidaterna baserat på vad ni vill rikta, t.ex. profilattribut och målgrupper.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: 8fa34ebb7c853f9af5b3f58574374a3acb641dd9
+exl-id: 39c6e82e-c1b1-4dda-a941-3db6324cef37
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 1%

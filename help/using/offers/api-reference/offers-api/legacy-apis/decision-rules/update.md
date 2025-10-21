@@ -3,10 +3,10 @@ title: Uppdatera beslutsregler
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 33da2c42-0c6c-49d3-bad8-1a85a5172cd8
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Uppdatera en beslutsregel {#update-decision-rule}
 
-Du kan skapa ett reserverbjudande genom att göra en POST-förfrågan till API:t [!DNL Offer Library] och samtidigt ange ditt behållar-ID.
+Du kan skapa ett reserverbjudande genom att göra en POST-begäran till [!DNL Offer Library]-API:t och samtidigt ange ditt behållar-ID.
 
 ## Sidhuvuden för acceptera och innehållstyp {#accept-and-content-type-headers}
 

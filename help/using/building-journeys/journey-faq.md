@@ -11,7 +11,7 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 50c609b3d5c90e64800fb96d9c57d6c2bfa35a66
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '4531'
 ht-degree: 0%
@@ -500,8 +500,8 @@ Du kan anpassa meddelanden med **anpassningsredigeraren**:
 
 **Exempel på personalisering**:
 
-* &quot;Hej {{profile.firstName}}, tack för ditt köp av {{event.productName}}&quot;
-* &quot;Baserat på din lojalitetsnivå ({{profile.loyaltyTier}}) finns det ett specialerbjudande&quot;
+* &quot;Hej `{{profile.firstName}}`, tack för ditt köp av `{{event.productName}}`&quot;
+* &quot;Baserat på din lojalitetsnivå (`{{profile.loyaltyTier}}`) finns det ett specialerbjudande&quot;
 * Dynamiska innehållsblock som ändras utifrån kundernas önskemål
 
 Läs mer om [personalisering](../personalization/personalize.md).
@@ -871,4 +871,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

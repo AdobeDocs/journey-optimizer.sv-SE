@@ -3,10 +3,10 @@ title: Ta bort ett reserverbjudande
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 5c94842a-021c-4a3a-ad9c-ccc2af2c1526
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
@@ -44,4 +44,4 @@ curl -X DELETE 'https://platform.adobe.io/data/core/dps/offers/fallbackOffer1234
 
 Ett lyckat svar returnerar HTTP-status 200 och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka utföra en sökning (GET) på erbjudandet och få HTTP-statusen 404 (Hittades inte) eftersom reserverbjudandet har tagits bort.
+Du kan bekräfta borttagningen genom att försöka skicka en sökning (GET) till erbjudandet och få HTTP-statusen 404 (Hittades inte) eftersom reserverbjudandet har tagits bort.

@@ -3,15 +3,15 @@ title: Söka efter en objektsamling
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: eb89bc5205d98a67cd0bb42bebbd9429786e33e7
+exl-id: 60b2990e-e3a6-4d4b-8851-889cf91b0eef
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 1%
 
 ---
-
 
 # Söka efter en objektsamling {#lookup-item-collection}
 

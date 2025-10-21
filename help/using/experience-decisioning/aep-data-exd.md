@@ -6,11 +6,11 @@ description: Lär dig hur du använder Adobe Experience Platform-data för att f
 badge: label="Begränsad tillgänglighet" type="Informative"
 feature: Personalization, Rules
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
-source-git-commit: 813e7a61a69e73afe3f2f9fc808c551d85bd22a0
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 0%

@@ -8,7 +8,7 @@ feature: Ranking, Decision Management
 role: User
 level: Experienced
 exl-id: c73b3092-e96d-4957-88e6-500e99542782
-source-git-commit: 0e9d8335bed8d8157a0f2302a5ff2b0a74257218
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -60,6 +60,7 @@ Modellen har två faser:
 * I **onlinekonferensfasen** rangordnas kandidater baserat på resultat i realtid som genereras av modellen. Till skillnad från traditionell filtreringsteknik för samarbete, som är svår att inkludera funktioner för användare och erbjudanden, är personaliserad optimering en djupgående inlärningsbaserad rekommendationsmetod och kan inkludera och lära sig komplexa och icke-linjära interaktionsmönster.
 
 Här är ett förenklat exempel som illustrerar grundtanken bakom personaliserad optimering. Anta att vi har en datauppsättning som lagrar historiska interaktioner mellan användare och erbjudanden, vilket visas i bild 1. Det finns:
+
 * Två erbjudanden, offer_1 och offer_2,
 * Två funktioner, feature_1 och feature_2,
 * En svarskolumn.

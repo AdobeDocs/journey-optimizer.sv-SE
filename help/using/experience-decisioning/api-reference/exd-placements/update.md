@@ -3,9 +3,9 @@ title: Uppdatera utökad placering
 description: Expanderingen består av samlingar som är kopplade till begränsningar och rankningsmetoder för att bestämma erbjudanden.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: 8fa34ebb7c853f9af5b3f58574374a3acb641dd9
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%

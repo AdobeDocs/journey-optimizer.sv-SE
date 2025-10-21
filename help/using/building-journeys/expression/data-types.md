@@ -4,12 +4,12 @@ product: journey optimizer
 title: Datatyper
 description: Läs mer om datatyper i avancerade uttryck
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 keywords: uttryck, data, datatyp, resa
 exl-id: fdfc3287-d733-45fb-ad11-b4238398820a
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%

@@ -3,10 +3,10 @@ title: Uppdatera urvalsstrategier
 description: Urvalsstrategier består av samlingar som är kopplade till begränsningar och rangordningsmetoder för att fastställa erbjudanden.
 feature: Decision Management, API, Collections
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 060f8c5f-4750-44dc-83aa-630afbc180eb
-source-git-commit: b057d198d3c5b12121ee50d7a97ff4b33b8209b4
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Uppdatera en urvalsstrategi {#update-selection-strategy}
 
-Du kan ändra eller uppdatera en urvalsstrategi genom att göra en PATCH-begäran till Offer Library API.
+Du kan ändra eller uppdatera en urvalsstrategi genom att göra en PATCH-förfrågan till Offer Library API.
 
 Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](https://jsonpatch.com/).
 

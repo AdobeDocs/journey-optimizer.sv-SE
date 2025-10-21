@@ -3,10 +3,10 @@ title: Radera beslutsregler
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 52f4803b-9e9a-4ad0-ae24-de652006763d
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 4%
@@ -43,4 +43,4 @@ curl -X DELETE 'https://platform.adobe.io/data/core/dps/offer-rules/offerRule123
 
 Ett lyckat svar returnerar HTTP-status 200 och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka med en sökbegäran (GET) till beslutsregeln och få HTTP-statusen 404 (Hittades inte) eftersom beslutsregeln har tagits bort.
+Du kan bekräfta borttagningen genom att försöka med en sökning (GET) till beslutsregeln och få HTTP-statusen 404 (Hittades inte) eftersom beslutsregeln har tagits bort.

@@ -3,10 +3,10 @@ title: API för gruppbeslut
 description: Lär dig hur du använder API:t för gruppbeslut för att välja de bästa erbjudandena för målgruppsprofiler inom ett fördefinierat beslutsområde.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
-source-git-commit: d629367413f106a00d0e940c90bd6d77e6f33a5c
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -30,7 +30,7 @@ För att göra detta skulle organisationen:
 
 * Exportera datauppsättningen till meddelandeleverantörens API.
 
-<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=sv-SE) to learn more about exporting audiences.) -->
+<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html) to learn more about exporting audiences.) -->
 
 >[!NOTE]
 >
@@ -102,12 +102,12 @@ curl -X POST 'https://platform.adobe.io/data/core/dwm/workloads/decisions' \
 
 | Egenskap | Beskrivning | Exempel |
 | -------- | ----------- | ------- |
-| `xdm:activityId` | Beslutets unika identifierare. |
+| `xdm:activityId` | Beslutets unika identifierare. |  |
 | `xdm:dataSetId` | DataSet-utdata som beslutshändelser kan skrivas till. | `6196b4a1a63bd118dafe093c` |
 | `xdm:includeContent` | Det här är ett valfritt fält och är `false` som standard. Om `true` inkluderas erbjudandeinnehållet i beslutshändelserna för datauppsättningen. | `false` |
-| `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per scope. | `1` | `xcore:offer-activity:1410cdcda196707b` |
+| `xdm:itemCount` | Det här är ett valfritt fält som visar antalet objekt, t.ex. alternativ som begärts för beslutsomfånget. Som standard returnerar API ett alternativ per omfång, men du kan uttryckligen be om fler alternativ genom att ange det här fältet. Minst 1 och högst 30 alternativ kan begäras per scope. | `xcore:offer-activity:1410cdcda196707b` |
 | `xdm:placementId` | Den unika placeringsidentifieraren. | `xcore:offer-placement:1410c4117306488a` |
-| `xdm:propositionRequests` | En wrapper som innehåller `placementId` och `activityId` |
+| `xdm:propositionRequests` | En wrapper som innehåller `placementId` och `activityId` |  |
 | `xdm:segmentIds` | Värdet är en array som innehåller målgruppens unika identifierare. Den får bara innehålla ett värde. | `609028e4-e66c-4776-b0d9-c782887e2273` |
 
 I [beslutsdokumentationen](../../get-started/starting-offer-decisioning.md) finns en översikt över de viktigaste begreppen och egenskaperna.

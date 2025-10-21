@@ -4,10 +4,10 @@ description: Lär dig skapa beslutsrapporter i Adobe Experience Platform.
 badge: label="Äldre" type="Informative"
 feature: Decision Management, Datasets
 topic: Integrations
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate
 exl-id: 51830c63-fa88-47e7-8605-192297fcf6b8
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 39%

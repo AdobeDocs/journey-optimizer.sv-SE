@@ -4,12 +4,12 @@ product: journey optimizer
 title: Funktionsområden
 description: Funktionsområden i AJO
 feature: Get Started
-role: Admin, Data Engineer, Developer, User
+role: Admin, Developer, User
 level: Beginner
 redpen-status: PASS_||_2025-04-28_15-13-07
 exl-id: c9b02ae2-e07b-41f4-90cc-b2c0966f1ed1
 hide: true
-source-git-commit: 72ff06a7d87d6d9e5bfc0c6462ea4d60a98fc940
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -41,6 +41,7 @@ Adobe Journey Optimizer (AJO) innehåller flera viktiga funktionsområden som sa
 Hantera datahantering som grunden för allt kundengagemang. En välstrukturerad grund för data säkerställer att varje beslut, meddelande och resa använder korrekt och ordnad information.
 
 **Nyckelkomponenter**:
+
 - **Skapa och hantera schema**: Definiera strukturen för kunddata.
    - Exempel: Skapa ett schema som visar fält som&quot;Förnamn&quot;,&quot;E-postadress&quot; och&quot;Inköpshistorik&quot;.
 - **Datauppsättningskonfiguration**: Ordna data i logiska behållare.
@@ -60,6 +61,7 @@ Hantera datahantering som grunden för allt kundengagemang. En välstrukturerad 
 Kundhanteringsverktygen kopplar samman olika datapunkter för att ge en sammanhängande bild av varje kund. Tack vare den här förståelsen kan ni leverera relevanta och personaliserade upplevelser.
 
 **Nyckelkomponenter**:
+
 - **Kundprofil i realtid**: Enhetlig vy över varje kund.
    - Exempel: Kombinera webbhistorik, appinteraktioner och offlineköp i en enda profil.
 - **Identitetsupplösning**: Länka kunddata mellan enheter och kanaler.
@@ -80,6 +82,7 @@ Kundhanteringsverktygen kopplar samman olika datapunkter för att ge en sammanh�
 Med verktygen för innehållshantering kan teamen effektivt skapa och leverera skräddarsydda meddelanden, med bibehållen enhetlighet och relevans vid alla kontaktytor.
 
 **Nyckelkomponenter**:
+
 - **Innehållsredigerare**: Skapa och formatera meddelanden visuellt eller med kod.
    - Exempel: Använd den visuella redigeraren för att utforma en e-postkampanj som främjar semesterförsäljning.
 - **Digital resurshantering**: Ordna och använda bilder och andra media.
@@ -101,6 +104,7 @@ Med verktygen för innehållshantering kan teamen effektivt skapa och leverera s
 Beslutshanteringen säkerställer att personaliseringen fungerar i stor skala genom att ge maximalt värde genom intelligent automatisering.
 
 **Nyckelkomponenter**:
+
 - **Erbjudandebibliotek**: Centralt lagringsutrymme för marknadsföringserbjudanden.
    - Exempel: Lagra erbjudanden som&quot;20 % rabatt&quot; eller&quot;fri frakt&quot; i ett delat bibliotek.
 - **Beslutsregler**: Logik för att välja optimalt innehåll.
@@ -122,6 +126,7 @@ Beslutshanteringen säkerställer att personaliseringen fungerar i stor skala ge
 Resehantering gör att upplevelserna känns anpassningsbara och sömlösa, och guidar individer baserat på deras preferenser och åtgärder.
 
 **Nyckelkomponenter**:
+
 - **Resedesigner**: Visuell arbetsyta för att skapa kundsökvägar.
    - Exempel: Designa en resa som skickar ett välkomstmeddelande när en kund registrerar sig.
 - **Reseutlösare**: Händelser som startar eller flyttar framåt.
@@ -143,6 +148,7 @@ Resehantering gör att upplevelserna känns anpassningsbara och sömlösa, och g
 Anslutningarna säkerställer att data kommer in i AJO effektivt och når kunderna på ett tillförlitligt sätt via rätt kontaktyta.
 
 **Nyckelkomponenter**:
+
 - **Source-anslutningar**: Importera data till plattformen.
    - Exempel: Använd en koppling för att hämta inköpsdata från en e-handelsplattform.
 - **Kanalkonfiguration**: Konfigurera och hantera leveransmekanismer.
@@ -162,6 +168,7 @@ Anslutningarna säkerställer att data kommer in i AJO effektivt och når kunder
 Administrations- och sekretessverktygen säkerställer att dataintegriteten skyddas och att alla juridiska och organisatoriska policyer följs.
 
 **Nyckelkomponenter**:
+
 - **Hantering av användare och åtkomst**: Kontrollera åtkomst och behörigheter.
    - Exempel: Tilldela specifika behörigheter till marknadsförings- och IT-team.
 - **Sandlådekonfiguration**: Separata miljöer för utveckling och testning.

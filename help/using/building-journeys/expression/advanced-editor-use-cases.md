@@ -4,14 +4,14 @@ product: journey optimizer
 title: Använda den avancerade uttrycksredigeraren
 description: Läs mer om hur du skapar avancerade uttryck
 feature: Journeys
-role: Data Engineer, Architect
+role: Engineer
 level: Experienced
 hide: true
 hidefromtoc: true
 keywords: uttryck, villkor, användningsfall, händelser
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
 version: Journey Orchestration
-source-git-commit: 7ac246c0aa6776d3ec67223c4b07536b8ed0c881
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 1%

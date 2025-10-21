@@ -3,12 +3,12 @@ title: Lista reserverbjudanden
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 0eb68312-5567-4728-b184-9d40107676a0
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '282'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden. Stegen för att skapa ett reserverbjudande består av att skapa en eller flera representationer, som när du skapar ett erbjudande.
 
-Du kan visa en lista över alla reserverbjudanden i en behållare genom att utföra en enda GET-förfrågan till [!DNL Offer Library] API.
+Du kan visa en lista över alla reserverbjudanden i en behållare genom att utföra en enda GET-begäran till API:t [!DNL Offer Library].
 
 **API-format**
 

@@ -3,10 +3,10 @@ title: Slå upp en placering
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: db337b5c-426a-4695-81e8-3a1b041791f2
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Slå upp en placering {#look-up-placement}
 
-Du kan söka efter specifika placeringar genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller placeringen `id`.
+Du kan söka efter specifika placeringar genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller placeringen `id`.
 
 **API-format**
 

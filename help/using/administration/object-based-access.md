@@ -5,11 +5,11 @@ title: Åtkomstkontroll på objektnivå
 description: Lär dig mer om åtkomstkontroll på objektnivå som gör att du kan definiera behörigheter för att hantera dataåtkomst till ett urval objekt
 feature: Access Management
 topic: Administration
-role: Admin, Developer, Architect
+role: Admin, Developer
 level: Experienced
 keywords: objekt, nivå, åtkomst, kontroll, etiketter, plats, auktorisering
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
-source-git-commit: 8b0310e91e5b5c1418e8e26f4505bda45146ceba
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -53,15 +53,15 @@ Med **[!UICONTROL Labels]** kan du kategorisera datauppsättningar och fält enl
 
 Använd etiketter för att ge åtkomst till användare och tillämpa regler för datastyrning och samtycke. Dessa styrningsetiketter kan påverka förbrukningen i efterföljande led.
 
-Du kan skapa etiketter i produkten [!DNL Permissions]. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html?lang=sv-SE){target="_blank"}.
+Du kan skapa etiketter i produkten [!DNL Permissions]. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html){target="_blank"}.
 
 Du kan också skapa **[!UICONTROL Labels]** direkt i Journey Optimizer. Så här skapar du en etikett:
 
-1. Klicka på knappen **[!UICONTROL Manage access]** från ett Adobe Journey Optimizer-objekt, till exempel ett nyskapat **[!UICONTROL Campaign]**.
+1. Klicka på knappen **[!UICONTROL Campaign]** från ett Adobe Journey Optimizer-objekt, till exempel ett nyskapat **[!UICONTROL Manage access]**.
 
    ![Hantera åtkomstknapp i Adobe Journey Optimizer](assets/olac_1.png)
 
-1. Klicka på **[!UICONTROL Create label]** i fönstret **[!UICONTROL Manage access]**.
+1. Klicka på **[!UICONTROL Manage access]** i fönstret **[!UICONTROL Create label]**.
 
    ![](assets/olac_2.png)
 
@@ -81,13 +81,13 @@ Din nyskapade **[!UICONTROL Label]** är nu tillgänglig i listan. Om det behöv
 
 Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter till dina Journey Optimizer-objekt:
 
-1. Klicka på knappen **[!UICONTROL Manage access]** från ett Adobe Journey Optimizer-objekt, till exempel ett nyskapat **[!UICONTROL Campaign]**.
+1. Klicka på knappen **[!UICONTROL Campaign]** från ett Adobe Journey Optimizer-objekt, till exempel ett nyskapat **[!UICONTROL Manage access]**.
 
    ![Hantera åtkomstknapp i Adobe Journey Optimizer](assets/olac_1.png)
 
 1. I fönstret **[!UICONTROL Manage access]** väljer du egna etiketter eller etiketter för kärndataanvändning för att hantera åtkomst till det här objektet.
 
-   Mer information om etiketter för användning av kärndata finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=sv-SE){target="_blank"}.
+   Mer information om etiketter för användning av kärndata finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html){target="_blank"}.
 
    ![](assets/olac_4.png)
 
@@ -95,4 +95,4 @@ Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter t
 
 För att få åtkomst till det här objektet måste användarna ha den specifika **[!UICONTROL Label]** i sin **[!UICONTROL Roles]**. En användare med etiketten C1 har till exempel bara åtkomst till objekt som är märkta med C1 eller som inte är märkta.
 
-Mer information om hur du tilldelar en **[!UICONTROL Label]** till en **[!UICONTROL Role]** finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html?lang=sv-SE#manage-labels-for-a-role){target="_blank"}.
+Mer information om hur du tilldelar en **[!UICONTROL Label]** till en **[!UICONTROL Role]** finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role){target="_blank"}.

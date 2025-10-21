@@ -5,11 +5,11 @@ title: Adobe Analytics-integrering
 description: Lär dig utnyttja Adobe Analytics-data i Journey Optimizer
 feature: Journeys, Events, Reporting, Integrations
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Engineer, Admin
 level: Intermediate, Experienced
 keywords: analys, integrering, web sdk, plattform
 exl-id: 9d842722-e5eb-4743-849d-b7ba9448062f
-source-git-commit: 0be35e14dba32523a7f28aaaa28d41ee693d44ba
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 5%
@@ -51,7 +51,7 @@ Gör så här:
 
 1. Välj om du vill använda ett standardschema eller ett anpassat schema.
 
-1. Välj **[!UICONTROL Dataflow name]** på skärmen **[!UICONTROL Dataflow detail]**.
+1. Välj **[!UICONTROL Dataflow detail]** på skärmen **[!UICONTROL Dataflow name]**.
 
 1. När konfigurationen är klar klickar du på **[!UICONTROL Finish]**.
 
@@ -61,7 +61,7 @@ Detta aktiverar Analytics-källkopplingen för den rapportsviten. När informati
 
 ![](assets/ajo-aa_4.png)
 
-Läs mer om Adobe Analytics källanslutning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=sv-SE){target="_blank"} och [självstudiekurs](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE){target="_blank"}.
+Läs mer om Adobe Analytics källanslutning i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html){target="_blank"} och [självstudiekurs](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html){target="_blank"}.
 
 ## Aktivera den här konfigurationen {#activate-analytics-data}
 
@@ -123,7 +123,7 @@ Nu när evenemanget är klart kan du skapa en resa för att använda det.
 
 1. Lägg till en händelse som utlöses om en order slutförs.
 
-1. Välj alternativen **[!UICONTROL Define the event timeout]** och **[!UICONTROL Set a timeout path]** i din **[!UICONTROL Event menu]**.
+1. Välj alternativen **[!UICONTROL Event menu]** och **[!UICONTROL Define the event timeout]** i din **[!UICONTROL Set a timeout path]**.
 
    ![](assets/ajo-aa_9.png)
 

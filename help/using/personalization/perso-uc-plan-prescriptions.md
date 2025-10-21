@@ -3,15 +3,15 @@ title: Exempel på Personalization-mallar
 description: Exempel på Journey Optimizer Personalization
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Experienced
-source-git-commit: f1d6c293fb8b22085911ab45c18f944a63b9655b
+exl-id: 832b0bfa-ec74-4b1d-ad85-d4e4ea2f8863
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
 
 ---
-
 
 # E-post om förskrivningar av hälsoplaner {#plan-prescription}
 

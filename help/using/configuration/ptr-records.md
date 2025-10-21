@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Om du vill redigera en PTR-post med en underdomän som är [helt delegerad](dele
 
    ![](assets/ptr-record-select.png)
 
-1. Välj en underdomän [som har delegerats &#x200B;](delegate-subdomain.md#full-subdomain-delegation) till Adobe i listan.
+1. Välj en underdomän [som har delegerats ](delegate-subdomain.md#full-subdomain-delegation) till Adobe i listan.
 
    ![](assets/ptr-record-subdomain.png)
 
@@ -153,6 +153,7 @@ När valideringsprocessen har slutförts kopplas den nya underdomänen automatis
 Om valideringsprocessen misslyckas visas den äldre PTR-posten. Den giltiga underdomänen som tidigare var associerad med IP-adressen ändras inte.
 
 Följande typer av uppdateringsfel är möjliga:
+
 * Det gick inte att skapa en ny framåtriktad DNS för PTR-posten
 * Det gick inte att uppdatera posten
 * Det gick inte att ta in tillhörigheterna på nytt

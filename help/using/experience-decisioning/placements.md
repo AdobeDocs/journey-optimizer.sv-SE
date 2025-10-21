@@ -5,13 +5,13 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-source-git-commit: 29532b5ebd140f9609a29c1375ceedecf55d0dfb
+exl-id: 20246512-ab7e-451a-83de-49cc339c481a
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 1%
 
 ---
-
 
 # Arbeta med placeringar {#create-decision}
 

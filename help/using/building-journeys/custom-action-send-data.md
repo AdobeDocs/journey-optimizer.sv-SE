@@ -5,11 +5,11 @@ title: Skicka data till AEP
 description: Lär dig skicka data till AEP
 feature: Journeys, Use Cases
 topic: Content Management
-role: User, Data Engineer
+role: User, Developer
 level: Intermediate, Experienced
 keywords: resa, användningsfall
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Användningsfall: skapa en anpassad åtgärd för att skicka data till Adobe Experience Platform{#send-data-to-aep}
 
-Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du ange ditt rykte som avsändare. Annars kan leveranserna blockeras eller flyttas till skräppostmappen i mottagarens postlåda. Lär dig hur du kan öka ditt e-postanseende med IP-uppvärmning i [Guiden &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html?lang=sv-SE){target="_blank"} Leveranssätt med bästa praxis.
+Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du ange ditt rykte som avsändare. Annars kan leveranserna blockeras eller flyttas till skräppostmappen i mottagarens postlåda. Lär dig hur du kan öka ditt e-postanseende med IP-uppvärmning i [Guiden ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"} Leveranssätt med bästa praxis.
 
 För att värma upp era immateriella tillgångar kan ni gradvis öka antalet leveranser. Läs mer om [att optimera leveransen i Journey Optimizer](../reports/deliverability.md).
 

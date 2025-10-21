@@ -5,11 +5,11 @@ title: Skapa dynamiskt innehåll
 description: Lär dig hur du lägger till dynamiskt innehåll i meddelanden.
 feature: Personalization
 topic: Personalization
-role: Data Engineer
+role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, dynamiskt innehåll
 exl-id: 639ad7df-0d0f-4c9b-95d1-f3101267aae2
-source-git-commit: 87245fffb3ad10d51a7500d006dbe69b1905640e
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%

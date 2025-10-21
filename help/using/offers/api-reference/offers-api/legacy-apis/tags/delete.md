@@ -3,10 +3,10 @@ title: Ta bort samlingskvalificerare
 description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden på ett bättre sätt.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: cc67519e-7a80-49c7-8c8b-c777be633026
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
@@ -45,4 +45,4 @@ curl -X DELETE \
 
 Ett lyckat svar returnerar HTTP-status 202 (inget innehåll) och en tom brödtext.
 
-Du kan bekräfta borttagningen genom att försöka med en sökbegäran (GET) till samlingskvalificeraren. Du måste inkludera en Accept-rubrik i begäran, men du bör få HTTP-status 404 (Hittades inte) eftersom samlingskvalificeraren har tagits bort från behållaren.
+Du kan bekräfta borttagningen genom att försöka utföra en uppslagsbegäran (GET) till samlingskvalificeraren. Du måste inkludera en Accept-rubrik i begäran, men du bör få HTTP-status 404 (Hittades inte) eftersom samlingskvalificeraren har tagits bort från behållaren.

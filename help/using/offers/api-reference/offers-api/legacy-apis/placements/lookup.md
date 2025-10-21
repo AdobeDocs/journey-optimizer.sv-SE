@@ -3,19 +3,19 @@ title: Slå upp en placering
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 42fb17a2-842e-4e20-9013-7227adba0105
-source-git-commit: 4e7c4e7e6fcf488f572ccf3e9037e597dde06510
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 # Slå upp en placering {#look-up-placement}
 
-Du kan söka efter specifika placeringar genom att göra en GET-förfrågan till [!DNL Offer Library]-API:t som innehåller placeringen `@id` eller namnet på placeringen i sökvägen för begäran.
+Du kan söka efter specifika placeringar genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller placeringen `@id` eller namnet på placeringen i sökvägen för begäran.
 
 **API-format**
 
@@ -29,7 +29,7 @@ GET /{ENDPOINT_PATH}/{CONTAINER_ID}/queries/core/search?schema={SCHEMA_PLACEMENT
 | `{CONTAINER_ID}` | Behållaren där placeringarna finns. | `e0bd8463-0913-4ca1-bd84-6309134ca1f6` |
 | `SCHEMA_PLACEMENT}` | Definierar schemat som är associerat med placeringar. | `https://ns.adobe.com/experience/offer-management/offer-placement;version=0.4` |
 | `id` | En sträng som används för att matcha egenskapen `@id` för entiteterna. Strängen matchas exakt. Parametrarna `id` och `name` kan inte användas tillsammans. | `xcore:offer-placement:124541309805b7e8` |
-| `name` | En sträng som används för att matcha egenskapen xdm:name för entiteterna. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Sales and Promotions Placement` |
+| `name` | En sträng som används för att matcha entiteternas xdm:name-egenskap. Strängen matchas exakt med versaler, men jokertecken kan användas. Parametrarna `id` och `name` kan inte användas tillsammans | `Sales and Promotions Placement` |
 
 ```shell
 curl -X GET \

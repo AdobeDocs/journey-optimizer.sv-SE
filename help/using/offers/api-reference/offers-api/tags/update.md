@@ -3,10 +3,10 @@ title: Uppdatera samlingskvalificerare
 description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden på ett bättre sätt.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 918927e1-ad7a-4937-b652-2a0932e9efa1
-source-git-commit: ba7d065523116c12e22eec300df13c29d92a54fb
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Uppdatera en samlingskvalificerare {#update-collection-qualifier}
 
-Du kan ändra eller uppdatera en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) genom att göra en PATCH-begäran till Offer Library API.
+Du kan ändra eller uppdatera en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) genom att göra en PATCH-begäran i Offer Library API.
 
 Mer information om JSON Patch, inklusive tillgängliga åtgärder, finns i den officiella [JSON Patch-dokumentationen](https://jsonpatch.com/).
 

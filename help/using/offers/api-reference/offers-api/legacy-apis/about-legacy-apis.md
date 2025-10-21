@@ -3,10 +3,10 @@ title: Äldre API:er
 description: Uppdaterade API:er för att skapa och hantera beslutshanteringsobjekt.
 feature: Decision Management, API
 topic: Integrations
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: cfe8162b-d50f-4ad3-8b62-9d30b756ad1b
-source-git-commit: 07b1f9b885574bb6418310a71c3060fa67f6cac3
+source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
