@@ -10,9 +10,9 @@ level: Experienced
 keywords: politik, styrning, plattform, samtycke, hälso- och sjukvård
 hide: true
 hidefromtoc: true
-source-git-commit: 0aa29a163e337359ea4455edee57bc49fd06a020
+source-git-commit: 95f101c3d8f875dbf7988f10b106fc58f705e926
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
 
 1. Definiera inställningsattribut med den booleska operatorn på profilnivå <!--how??-->. Du kan till exempel ange:
 
-   * nyhetsbrev_e-post - booleskt (sant/falskt)
-   * Erbjudanden - boolesk (sant/falskt)
-   * Nya produktstarter - booleskt (sant/falskt)
+   * *Newsletter_Email* - Boolean (true/false)
+   * *Offers_Push* - Boolean (sant/falskt)
+   * *Nya produktstarter* - Boolean (sant/falskt)
 
    Dessa attribut hämtas i schemat för en profilaktiverad [datamängd](../data/get-started-datasets.md) och mappas till den [enhetliga kundprofilen](../audience/get-started-profiles.md).
 
@@ -59,13 +59,13 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
    >
    >Kundens samtycke och kontaktpreferenser är komplexa ämnen. Om du vill veta hur samtycke och sammanhangsinställningar kan samlas in, bearbetas och filtreras i [!DNL Experience Platform] rekommenderar vi att du läser följande dokument:
    >
-   >* Mer information om schemafältgrupper som krävs för att samla in medgivandedata finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview){target="_blank"}. Den innehåller detaljerad information om hur ni hanterar data om samtycke som ni har samlat in från era kunder och integrerar dem i era lagrade kundprofiler.
-   >* Mer information om fältgruppen för samtycke och inställningar finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/profile/consents#ingest){target="_blank"}.
-   >* Följ stegen i [det här avsnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset#custom-consent){target="_blank"} om du vill lägga till anpassade inställningsfält i schemat.
+   >* Mer information om schemafältgrupper som krävs för att samla in medgivandedata finns på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview){target="_blank"}. Den innehåller detaljerad information om hur ni hanterar data om samtycke som ni har samlat in från era kunder och integrerar dem i era lagrade kundprofiler.
+   >* Mer information om fältgruppen för samtycke och inställningar finns på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents#ingest){target="_blank"}.
+   >* Följ stegen i [det här avsnittet](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset#custom-consent){target="_blank"} om du vill lägga till anpassade inställningsfält i schemat.
 
 1. Skapa en sida som fångar upp kundernas önskemål. Använd någon av följande metoder:
 
-   * Skapa en webbsida för att registrera dina kunders önskemål med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home){target="_blank"}.
+   * Skapa en webbsida för att registrera dina kunders önskemål med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home){target="_blank"}.
 
    * Använd en [!DNL Journey Optimizer] [landningssida](../landing-pages/create-lp.md) som innehåller formulär för att fånga upp dina kunders preferenser via profildata.  [Läs mer om formulär](../landing-pages/lp-forms.md) <!--Forms not released/announced yet - TBC-->
 
@@ -75,23 +75,25 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
 
 1. På den här sidan kan kunderna uppdatera sina inställningar, t.ex. ämnesvis prenumeration, genom att markera eller avmarkera kryssrutor.
 
-   Varje åtgärd utlöser en medgivandehändelse som sparas mot motsvarande profilattribut (`True` för avanmäld, `False` för avanmäld) genom att data hämtas till det profilaktiverade dataschemat <!-- that contains the corresponding preference fields-->.
+   Varje åtgärd utlöser en medgivandehändelse som sparas mot motsvarande profilattribut (`true` för avanmäld, `false` för avanmäld) genom att data hämtas till det profilaktiverade dataschemat <!-- that contains the corresponding preference fields-->.
 
    <!--Record your users' preferences through the web page or landing page that you created. The data is saved against the corresponding profile, meaning that the preference data is ingested into a Profile-enabled dataset whose schema contains consent/preference fields.-->
 
-   En användare vars e-postadress är john.black@lumamail.com gick med på att ta emot erbjudanden men vill inte ta emot nyhetsbrev.
+   En användare <!--whose email address is john.black@lumamail.com--> gick med på att ta emot push-erbjudanden men vill inte ta emot nyhetsbrev via e-post. Motsvarande profil uppdateras enligt följande:
 
-   Motsvarande profildatamängd uppdateras enligt följande:
+   ![](assets/profile-preference-attributes.png){width=80%}
 
-   | Attribut = E-post-ID | Attribut = Erbjudanden | Attribut = nyhetsbrev |
-   |---------|----------|---------|
-   | john.black@lumamail.com | Y | N |
+<!--The corresponding profile dataset is updated as follows:
 
-   >[!NOTE]
-   >
-   >Inkommande medgivandehändelser läggs in i kundprofilen och säkerställer uppdateringar i realtid. Varje profil återspeglar de senaste alternativen för olika prenumerationer.
+|Attribute = Email id | Attribute = Offers_Push | Attribute = Newsletters_Email |
+|---------|----------|---------|
+| john.black@lumamail.com | Y | N |-->
 
-1. Skapa en anpassad princip (från menyn **[!UICONTROL Privacy]** > **[!UICONTROL Policies]**) i Adobe Experience Platform. [Lär dig hur](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=sv-SE#create-policy){target="_blank"}
+    >[!OBS!]
+    >
+    >Inkommande händelser för samtycke matas in i kundprofilen och säkerställer uppdateringar i realtid. Varje profil återspeglar de senaste alternativen för prenumerationsinställningarna.
+
+1. Skapa en anpassad princip (från menyn **[!UICONTROL Privacy]** > **[!UICONTROL Policies]**) i Adobe Experience Platform. [Lär dig hur](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-policy){target="_blank"}
 
    >[!AVAILABILITY]
    >
@@ -99,7 +101,7 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
 
    Om du vill använda profiler för samtycke måste det finnas inställningsattribut i profildata. Därför måste du definiera dessa attribut på profilnivå (som beskrivs i steg 1).
 
-1. Välj typen **[!UICONTROL Consent policy]** och konfigurera ett villkor enligt följande. [Lär dig hur du konfigurerar principer för samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=sv-SE#consent-policy){target="_blank"}
+1. Välj typen **[!UICONTROL Consent policy]** och konfigurera ett villkor enligt följande. [Lär dig hur du konfigurerar principer för samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"}
 
 <!--Consent policies are comprised of two logical components:
 
@@ -111,9 +113,9 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
     
     * Om **[!UICONTROL Marketing action]** är lika med **[!UICONTROL Email]*
     
-    * Då finns inte **[!UICONTROL Newsletter_Email]*** **[!UICONTROL false]* Eller &#x200B;** [!UICONTROL Newsletter_Email] **&#x200B; är lika med &#x200B;** [!UICONTROL false]*
+    * Då finns inte **[!UICONTROL Newsletter_Email]*** **[!UICONTROL false]* Eller **[!UICONTROL Newsletter_Email]** är lika med **[!UICONTROL false]*
     
-    &rbrace;![](assets/consent-policy-email-newsletter.png){width=100%}
+    }![](assets/consent-policy-email-newsletter.png){width=80%}
     
     >[!TIP]
     >
