@@ -186,6 +186,6 @@ I videon nedan visas hur du konfigurerar WhatsApp-kanalen i Adobe Journey Optimi
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470272/?captions=swe&learn=on)
 
 +++

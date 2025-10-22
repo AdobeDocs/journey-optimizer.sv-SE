@@ -187,4 +187,4 @@ När din resa eller dina kampanjer har aktiverats och körts kan du visa antalet
 
 Lär dig hur du använder funktionen för tysta timmar i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475851?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3475856?captions=swe&quality=12)
