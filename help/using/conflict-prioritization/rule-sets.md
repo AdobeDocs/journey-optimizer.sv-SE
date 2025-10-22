@@ -80,7 +80,7 @@ Utöver den här regeluppsättningen för global standardregeluppsättning kan d
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"
 >title="Regeltyp"
->abstract="Välj önskad regeltyp för kanalregeluppsättningen: Använd typen **Frekvensbegränsning** för att tillämpa regler för appning på kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag. Välj **Tysta timmar** (tillgängligt i begränsad tillgänglighet) om du vill definiera tidsbaserade undantag för att säkerställa att inga meddelanden skickas under särskilda tidsperioder.&quot;
+>abstract="Välj önskad regeltyp för kanalregeluppsättningen: Använd typen **Frekvensbegränsning** för att tillämpa regler för appning på kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag. Välj **Tysta timmar** (tillgängligt i begränsad tillgänglighet) om du vill definiera tidsbaserade undantag för att säkerställa att inga meddelanden skickas under särskilda tidsperioder."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_duration"
