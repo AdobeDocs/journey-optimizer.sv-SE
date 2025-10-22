@@ -11,9 +11,9 @@ keywords: aktivitet, villkor, arbetsyta, resa, optimering
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: 15a143956156458cf78d02a4cf92300e97cef949
+source-git-commit: f69e482daf457f1c331d158d1bf04b4cfb392197
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ När resan är live utvärderas profiler mot de definierade kriterierna, och bas
 >id="ajo_path_experiment_success_metric"
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
 
 Experimentation gör att du kan testa olika banor baserat på en slumpmässig delning för att avgöra vilken som fungerar bäst baserat på fördefinierade framgångsmått.
 
@@ -186,9 +186,33 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 1. Klicka på **[!UICONTROL Create targeting rule]**.
 
-1. Använd regelbyggaren för att definiera dina villkor. Du kan till exempel definiera en regel för Guldmedlemmar i bonusprogrammet (`loyalty.status.equals("Gold", false)`) och en regel för de andra medlemmarna (`loyalty.status.notEqualTo("Gold", false)`).
+1. Klicka på **[!UICONTROL Create rule]** > **[!UICONTROL Create new]** och använd regelverktyget för att definiera villkoren.
+
+   ![](assets/journey-targeting-create-rule.png){width=100%}
+
+   Du kan till exempel definiera en regel för Guldmedlemmar i bonusprogrammet (`loyalty.status.equals("Gold", false)`) och en regel för de andra medlemmarna (`loyalty.status.notEqualTo("Gold", false)`).
 
    ![](assets/journey-targeting-rule.png)
+
+1. Du kan också klicka på **[!UICONTROL Create rule]** > **[!UICONTROL Select rule]** för att välja en befintlig målinriktningsregel som har skapats på menyn **[!UICONTROL Rules]**. [Läs mer](../experience-decisioning/rules.md)
+
+   ![](assets/journey-targeting-select-rule.png){width=70%}
+
+   I det här fallet kopieras formeln som utgör regeln helt enkelt till reseaktiviteten. Eventuella senare ändringar av den regeln från menyn **[!UICONTROL Rules]** påverkar inte kopian av resan.
+
+   >[!AVAILABILITY]
+   >
+   >[Det går för närvarande att skapa målgruppsregler](../experience-decisioning/rules.md#create) från den dedikerade [!DNL Journey Optimizer]-menyn för organisationer som har köpt erbjudandet om tillägg till beslut, och de är tillgängliga på begäran för andra organisationer (begränsad tillgänglighet).
+   >
+   >Denna kapacitet kommer att successivt lanseras för alla kunder. Under tiden kontaktar du Adobe för att få åtkomst.
+
+1. När du har lagt till en regel kan du fortfarande ändra den. Välj **[!UICONTROL Edit inline]** om du vill uppdatera den när du är i farten med regelverktyget eller **[!UICONTROL Select rule]** om du vill hämta en annan befintlig regel.
+
+   ![](assets/journey-targeting-modify-rule.png){width=100%}
+
+   >[!NOTE]
+   >
+   >När du redigerar en infogad regel påverkas inte den befintliga regel som den härstammar från.
 
 1. Välj alternativet **[!UICONTROL Enable fallback path]** efter behov. Den här åtgärden skapar en reservbana för målgruppen som inte uppfyller någon av målgruppsreglerna som definieras ovan.
 

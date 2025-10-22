@@ -7,9 +7,9 @@ feature: Whatsapp, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: f69e482daf457f1c331d158d1bf04b4cfb392197
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -119,7 +119,7 @@ När dina API-autentiseringsuppgifter för whatsApp har skapats kan du nu konfig
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din WhatsApp-webkrok.
 
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
 
    ![](assets/webhook-5.png)
 
@@ -149,15 +149,21 @@ Nu när din webkrok är konfigurerad kan du skapa din whatsApp-konfiguration.
 
 1. Välj **[!DNL WhatsApp]** som kanal.
 
-   ![](assets/whatsapp-config-2.png)
+   ![](assets/whatsapp-config-2.png){width=80%}
 
-1. Välj **[!UICONTROL Marketing action(s)]** om du vill associera medgivandeprinciper till meddelanden med den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. Läs mer
+1. Välj **[!UICONTROL Marketing action(s)]** om du vill associera medgivandeprinciper till meddelanden med den här konfigurationen. Alla policyer för samtycke som är kopplade till marknadsföringsåtgärden utnyttjas för att ta hänsyn till kundernas preferenser. [Läs mer](../action/consent.md#surface-marketing-actions)
 
-1. Markera tidigare skapade **[!UICONTROL WhatsApp API configuration]**.
+1. I avsnittet **[!UICONTROL WhatsApp Settings]** markerar du den **[!UICONTROL WhatsApp configuration]** som skapades tidigare.
 
-   ![](assets/whatsapp-config-3.png)
+   ![](assets/whatsapp-config-3.png){width=80%}
 
-1. Ange den **[!UICONTROL Sender name]**-&#x200B; som du vill använda för kommunikationen.
+1. Ange den **[!UICONTROL Sender Phone Number]**-&#x200B; som du vill använda för kommunikationen.
+
+1. Använd **[!UICONTROL WhatsApp Execution Field]** för att bland profilattributen välja det telefonnummer som du vill använda med prioritet om det finns flera tillgängliga nummer i databasen. [Läs mer](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
+
+   >[!NOTE]
+   >
+   >Som standard använder [!DNL Journey Optimizer] det telefonnummer som anges i de [allmänna inställningarna](../configuration/primary-email-addresses.md) på sandlådenivå. Om du uppdaterar det här fältet åsidosätts standardvärdet för resor och kampanjer som använder den här konfigurationen.
 
 1. När alla parametrar har konfigurerats klickar du på **[!UICONTROL Submit]** för att bekräfta. Du kan också spara kanalkonfigurationen som utkast och återuppta konfigurationen senare.
 
@@ -180,6 +186,6 @@ I videon nedan visas hur du konfigurerar WhatsApp-kanalen i Adobe Journey Optimi
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470272/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
 
 +++

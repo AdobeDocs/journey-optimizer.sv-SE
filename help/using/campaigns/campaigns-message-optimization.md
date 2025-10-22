@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Meddelandeoptimering
+title: Optimering av kampanjer och resor
 description: Använd optimering av meddelanden för att skapa personaliserade och optimerade marknadsföringsresor och kampanjer.
 role: User
 level: Intermediate
 keywords: kampanjoptimering, experiment, målinriktning, A/B-testning
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
-source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
+source-git-commit: f69e482daf457f1c331d158d1bf04b4cfb392197
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,35 @@ Följ stegen nedan för att konfigurera målinriktning.
 
    ![](assets/msg-optimization-select-targeting.png){width=85%}
 
-1. Använd regelbyggaren för att definiera dina villkor. Definiera t.ex. en regel för amerikanska medborgare, en regel för franska medborgare och en regel för indiska medborgare.
+1. Klicka på **[!UICONTROL Create rule]** > **[!UICONTROL Create new]** och använd regelbyggaren för att definiera dina villkor oavsett var du är.
+
+   ![](assets/msg-optimization-create-rule.png){width=100%}
+
+   Definiera t.ex. en regel för amerikanska medborgare, en regel för franska medborgare och en regel för indiska medborgare.
 
    ![](assets/msg-optimization-create-targeting.png){width=85%}
 
-1. Välj alternativet **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när ingen målinriktningsregel är kvalificerad.
+1. Du kan också klicka på **[!UICONTROL Create rule]** > **[!UICONTROL Select rule]** för att välja en befintlig målinriktningsregel som har skapats på menyn **[!UICONTROL Rules]**. [Läs mer](../experience-decisioning/rules.md)
+
+   ![](assets/msg-optimization-select-rule.png){width=70%}
+
+   I det här fallet kopieras formeln som utgör regeln helt enkelt till resan eller kampanjen. Eventuella senare ändringar av den regeln från menyn **[!UICONTROL Rules]** påverkar inte resan eller kampanjens kopia.
+
+   >[!AVAILABILITY]
+   >
+   >[Det går för närvarande att skapa målgruppsregler](../experience-decisioning/rules.md#create) från den dedikerade [!DNL Journey Optimizer]-menyn för organisationer som har köpt erbjudandet om tillägg till beslut, och de är tillgängliga på begäran för andra organisationer (begränsad tillgänglighet).
+   >
+   >Denna kapacitet kommer att successivt lanseras för alla kunder. Under tiden kontaktar du Adobe för att få åtkomst.
+
+1. När du har lagt till en regel kan du fortfarande ändra den. Välj **[!UICONTROL Edit inline]** om du vill uppdatera den när du är i farten med regelverktyget eller **[!UICONTROL Select rule]** om du vill hämta en annan befintlig regel.
+
+   ![](assets/msg-optimization-modify-rule.png){width=100%}
+
+   >[!NOTE]
+   >
+   >När du redigerar en infogad regel påverkas inte den befintliga regel som den härstammar från.
+
+1. Välj alternativet **[!UICONTROL Enable fallback content]** efter behov. Reservinnehåll gör att målgruppen kan få ett standardinnehåll när inga målinriktningsregler är kvalificerade.
 
    >[!NOTE]
    >
@@ -186,4 +210,4 @@ E.g. explaining how a marketer can look at the report to determine which treatme
 
 Lär dig hur ni utnyttjar meddelandeoptimering i praktiken eller API-utlösta kampanjer. Ni får se hur ni kan rikta in er på undergrupper, skapa meddelandevarianter efter plats, aktivera reservinnehåll och köra flera experiment inom en och samma kampanj. Den här självstudiekursen handlar också om hur du hanterar flerkanalskampanjer samtidigt som du bibehåller meddelandets enhetlighet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470372?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)

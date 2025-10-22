@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: fa46397b87ae3a81cd016d95afd3e09bb002cfaa
+source-git-commit: f69e482daf457f1c331d158d1bf04b4cfb392197
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1054'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Det finns flera sätt att skapa testprofiler. På den här sidan hittar du infor
 
   Adobe Journey Optimizer tillhandahåller även ett specifikt [användningsfall](#use-case-1) för produkten som underlättar skapandet av testprofiler.
 
-Du kan överföra en JSON-fil till en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=sv-SE#add-data-to-dataset){target="_blank"}.
+Du kan överföra en JSON-fil till en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
 
 Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
@@ -71,7 +71,7 @@ När du är klar klickar du på **[!UICONTROL Add field groups]**: listan med f�
 
 >[!NOTE]
 >
->Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#prerequisites){target="_blank"}.
+>Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
 
 ### Skapa en datauppsättning
 
@@ -90,7 +90,7 @@ Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. F�
 
 >[!NOTE]
 >
-> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE#getting-started){target="_blank"}.
+> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target="_blank"}.
 
 ## Exempel på användning i produkten{#use-case-1}
 
@@ -120,42 +120,44 @@ När du har valt identitetsnamnområdet och angett CSV-filen baserat på formate
 >
 >Testprofiler kan åsidosätta befintliga profiler. Innan du kör användningsfallet måste du kontrollera att CSV-filen bara innehåller testprofiler och att den körs mot rätt sandlåda.
 
-## Förvandla en profil till en testprofil{#turning-profile-into-test}
+<!-- Removed as asked in DOCAC-13605 AJO Test Profiles Using a Journey should be removed
+## Turn a profile into a test profile{#turning-profile-into-test}
 
-Du kan omvandla en befintlig profil till en testprofil: du kan uppdatera profilattribut på samma sätt som när du skapar en profil.
+You can turn an existing profile into a test profile: you can update profiles attributes in the same way as when you create a profile. 
 
-Ett enkelt sätt att göra detta är att använda en **[!UICONTROL Update Profile]**-åtgärdsaktivitet på en resa och ändra det booleska fältet **testProfile** från false till true.
+A simple way to do this is by using an **[!UICONTROL Update Profile]** action activity in a journey and change the **testProfile** boolean field from false to true.
 
-Din resa består av en **[!UICONTROL Read Audience]**- och en **[!UICONTROL Update Profile]**-aktivitet. Först måste ni skapa en målgrupp med de profiler ni vill omvandla till testprofiler.
+Your journey will be composed of a **[!UICONTROL Read Audience]** and an **[!UICONTROL Update Profile]** activity. You first need to create an audience targeting the profiles you want to turn into test profiles. 
 
 >[!NOTE]
 >
-> Eftersom du kommer att uppdatera fältet **testProfile** måste de valda profilerna innehålla det här fältet. Det relaterade schemat måste ha fältgruppen **Profiltestinformation**. Se [det här avsnittet](../audience/creating-test-profiles.md#test-profiles-prerequisites).
+> Since you will be updating the **testProfile** field, the chosen profiles must include this field. The related schema must have the **Profile test details** field group. See [this section](../audience/creating-test-profiles.md#test-profiles-prerequisites).
 
-1. Bläddra till **Publiker** och sedan till **Skapa målgrupp** i det övre högra hörnet.
-   ![](assets/test-profiles-22.png)
-1. Definiera ett namn för målgruppen och bygg målgruppen: välj de fält och värden som ska användas för de profiler du vill ha.
-   ![](assets/test-profiles-23.png)
-1. Klicka på **Spara** och kontrollera att målgruppen har angett rätt profiler.
-   ![](assets/test-profiles-24.png)
+1. Browse to **Audiences**, then **Create audience**, in the top right.
+    ![](assets/test-profiles-22.png) 
+1. Define a name for your audience and build the audience: choose the field(s) and value(s) to target the profiles you want.
+    ![](assets/test-profiles-23.png) 
+1. Click **Save** and check that the profiles are correctly targeted by the audience.
+    ![](assets/test-profiles-24.png) 
 
-   >[!NOTE]
-   >
-   > Målgruppsberäkning kan ta lite tid. Läs mer om målgrupper i [det här avsnittet](../audience/about-audiences.md).
+    >[!NOTE]
+    >
+    > Audience calculation can take some time. Learn more about audiences in [this section](../audience/about-audiences.md).
 
-1. Skapa nu en ny resa och börja med en **[!UICONTROL Read Audience]**-koordinationsaktivitet.
-1. Välj den målgrupp som skapats tidigare och det namnutrymme som profilerna använder.
-   ![](assets/test-profiles-25.png)
-1. Lägg till en **[!UICONTROL Update Profile]**-åtgärdsaktivitet.
-1. Markera schemat, fältet **testProfiles**, datamängden och ange värdet till **True**. Om du vill utföra det här i fältet **[!UICONTROL VALUE]** klickar du på ikonen **Ritstift** till höger, väljer **[!UICONTROL Advanced mode]** och anger **true**.
-   ![](assets/test-profiles-26.png)
-1. Klicka på **[!UICONTROL Publish]**.
-1. Kontrollera att profilerna har uppdaterats korrekt i avsnittet **[!UICONTROL Audiences]**.
-   ![](assets/test-profiles-28.png)
+1. Now create a new journey and start with a **[!UICONTROL Read Audience]** orchestration activity.
+1. Choose the previously created audience and the namespace that your profiles use.
+    ![](assets/test-profiles-25.png)
+1. Add an **[!UICONTROL Update Profile]** action activity. 
+1. Select the schema, the **testProfiles** field, the dataset and set the value to **True**. To perform this, in the **[!UICONTROL VALUE]** field, click the **Pen** icon on the right, select **[!UICONTROL Advanced mode]** and enter **true**.
+    ![](assets/test-profiles-26.png)
+1. Click **[!UICONTROL Publish]**.
+1. In the **[!UICONTROL Audiences]** section, check that the profiles have been correctly updated.
+    ![](assets/test-profiles-28.png)
 
-   >[!NOTE]
-   >
-   > Mer information om aktiviteten **[!UICONTROL Update Profile]** finns i [det här avsnittet](../building-journeys/update-profiles.md).
+    >[!NOTE]
+    >
+    > For more information on the **[!UICONTROL Update Profile]** activity, refer to [this section](../building-journeys/update-profiles.md).
+-->
 
 ## Skapa en testprofil med en CSV-fil{#create-test-profiles-csv}
 
@@ -187,7 +189,7 @@ Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det 
 
 >[!NOTE]
 >
->Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=sv-SE#tutorials){target="_blank"}.
+>Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
 >
 
 
