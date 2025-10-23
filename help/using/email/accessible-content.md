@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
 exl-id: 78011ec0-a3b6-4d4e-ab4b-9da032c283a2
-source-git-commit: da82432dd15f19ac7db52f491e5afd5ba6d4e3d7
+source-git-commit: d1e8120f361a04b47b20dbe71ecacad1be0aeb3d
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1627'
 ht-degree: 0%
 
 ---
@@ -142,9 +142,9 @@ Om du vill kontrollera på ett mer konsekvent sätt om innehållet är tillgäng
 
 ## Använd mörkt läge {#dark-mode}
 
-<!--TO PUBLISH WHEN DARK MODE IS RELEASED-->
-
 Mörkt läge förbättrar den visuella tillgängligheten för användare med ljuskänslighet eller synnedsättning, vilket ger en bättre visningsupplevelse.
+
+Med e-post-Designer kan du växla till **[!UICONTROL Dark mode]**-vyn och definiera specifika anpassade inställningar som ska visas av de e-postklienter som stöder e-post. [Läs mer](dark-mode.md)
 
 ![](assets/accessible-dark-mode.png){width="90%"}
 
