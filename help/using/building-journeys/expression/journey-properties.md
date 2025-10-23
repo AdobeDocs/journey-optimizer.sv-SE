@@ -29,7 +29,7 @@ Den innehåller information om:
 * aktuellt steg, senaste aktuella steg osv.
 * ignorerade profiler
 
-  Listan med fält är tillgänglig [ i det här avsnittet](#journey-properties-fields).
+  Listan med fält är tillgänglig [&#x200B; i det här avsnittet](#journey-properties-fields).
 
 Du kan använda dessa fält för att skapa uttryck. Under körningen hämtas värdena direkt från resan.
 
