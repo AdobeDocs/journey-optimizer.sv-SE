@@ -140,6 +140,6 @@ Lär dig hur du effektivt använder Heltidsrapporten i Adobe Journey Optimizer.
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428916?captions=swe&learn=on)
 
 +++
