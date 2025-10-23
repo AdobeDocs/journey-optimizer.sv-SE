@@ -53,7 +53,7 @@ Med **[!UICONTROL Labels]** kan du kategorisera datauppsättningar och fält enl
 
 Använd etiketter för att ge åtkomst till användare och tillämpa regler för datastyrning och samtycke. Dessa styrningsetiketter kan påverka förbrukningen i efterföljande led.
 
-Du kan skapa etiketter i produkten [!DNL Permissions]. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html){target="_blank"}.
+Du kan skapa etiketter i produkten [!DNL Permissions]. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/labels.html?lang=sv-SE){target="_blank"}.
 
 Du kan också skapa **[!UICONTROL Labels]** direkt i Journey Optimizer. Så här skapar du en etikett:
 
@@ -87,7 +87,7 @@ Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter t
 
 1. I fönstret **[!UICONTROL Manage access]** väljer du egna etiketter eller etiketter för kärndataanvändning för att hantera åtkomst till det här objektet.
 
-   Mer information om etiketter för användning av kärndata finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html){target="_blank"}.
+   Mer information om etiketter för användning av kärndata finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=sv-SE){target="_blank"}.
 
    ![](assets/olac_4.png)
 
@@ -95,4 +95,4 @@ Så här tilldelar du anpassade eller grundläggande dataanvändningsetiketter t
 
 För att få åtkomst till det här objektet måste användarna ha den specifika **[!UICONTROL Label]** i sin **[!UICONTROL Roles]**. En användare med etiketten C1 har till exempel bara åtkomst till objekt som är märkta med C1 eller som inte är märkta.
 
-Mer information om hur du tilldelar en **[!UICONTROL Label]** till en **[!UICONTROL Role]** finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html#manage-labels-for-a-role){target="_blank"}.
+Mer information om hur du tilldelar en **[!UICONTROL Label]** till en **[!UICONTROL Role]** finns på [den här sidan](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/permissions.html?lang=sv-SE#manage-labels-for-a-role){target="_blank"}.

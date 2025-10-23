@@ -40,7 +40,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 >[!CAUTION]
 >
->När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
+>När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
 
 ## Konfigurera källan med HTTP API Inlet
 
