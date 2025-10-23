@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 322e035c-7370-40c9-b1cb-3428bc26e874
-source-git-commit: ed00ef1f9aad7a9baf16b806e1cbffae677b2a91
+source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
    >[!NOTE]
    >
-   >Kanaler som stöds är: [E-post](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [push-meddelanden](../push/get-started-push.md).
+   >Kanaler som stöds är: [E-post](../email/get-started-email.md), [SMS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md). Kampanjer som utlösts av API:t för högflöde stöder för närvarande endast e-postkanalen.
    >
    >Vilka kanaler som är tillgängliga varierar beroende på licensmodell och tillägg.
 
@@ -36,7 +36,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
    En konfiguration definieras av en [systemadministratör](../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Lär dig hur du konfigurerar kanalkonfigurationer](../configuration/channel-surfaces.md)
 
-   ![](assets/create-campaign-action.png)
+   ![](assets/api-triggered-create-campaign-action.png)
 
 1. **Utnyttjandeoptimering**
 
@@ -68,7 +68,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 

@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -30,14 +30,11 @@ API-utlösta kampanjer gör det möjligt att antingen nå ut till en målgrupp v
 
 För att göra detta måste du först skapa en API-utlöst kampanj i Journey Optimizer och sedan starta körningen via ett API-anrop med [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
 
-Tillgängliga kanaler för API-utlösta kampanjer är e-post-, SMS- och push-meddelanden.
-
 ➡️ [Upptäck den här funktionen i en video](#video)
-
 
 >[!NOTE]
 >
->Kanaler som stöds är: [E-post](../email/get-started-email.md), [SMS/MMS/RCS](../sms/get-started-sms.md), [push-meddelanden](../push/get-started-push.md).
+>Kanaler som stöds är: [E-post](../email/get-started-email.md), [SMS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md). Kampanjer som utlösts av API:t för högflöde stöder för närvarande endast e-postkanalen.
 >
 >Vilka kanaler som är tillgängliga varierar beroende på licensmodell och tillägg.
 
@@ -57,4 +54,4 @@ Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i d
 
 Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452729?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)

@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '950'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
 >title="Kampanjtyp"
->abstract="Välj kampanjtyp. Tillgängliga kanaler varierar beroende på vald typ. <br>**Schemalagda kampanjer** (åtgärdskampanjer) - Perfekt för enkel engångsbatchkommunikation som du kan schemalägga att köras vid en viss tidpunkt.<br>**API-utlösta kampanjer** - Aktiveras via ett API-anrop, vilket möjliggör automatiserade, händelsebaserade meddelanden direkt från externa system.<br>**Samordnade kampanjer** - Skapa en visuell arbetsyta med dra-och-släpp för att utforma och automatisera komplexa arbetsflöden för flerstegsmarknadsföring, från målgruppssegmentering till personaliserad meddelandeleverans över flera kanaler."
+>abstract="Välj kampanjtyp. Tillgängliga kanaler varierar beroende på vald typ. <br>**Schemalagda kampanjer** (åtgärdskampanjer) - Perfekt för enkel engångsbatchkommunikation som du kan schemalägga att köras vid en viss tidpunkt.<br>**API-utlösta kampanjer** - Aktiveras via ett API-anrop, vilket aktiverar automatiserade händelsebaserade meddelanden direkt från externa system.<br>**Samordnade kampanjer** - Skapa en visuell arbetsyta med dra-och-släpp för att utforma och automatisera komplexa arbetsflöden för flerstegsmarknadsföring, från målgruppssegmentering till personaliserad meddelandeleverans över flera kanaler."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_orchestration"
@@ -166,7 +166,7 @@ Innan du arbetar med kampanjer måste du kontrollera att du har granskat villkor
 
    1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 

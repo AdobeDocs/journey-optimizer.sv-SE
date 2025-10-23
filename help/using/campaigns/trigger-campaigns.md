@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kampanj, granskning, validering, aktivering, aktivering, optimering
 exl-id: 86f35987-f0b7-406e-9ae6-0e4a2e651610
-source-git-commit: 1d3638499a9e8261a5f1b09744b82642198a5d5d
+source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ När kampanjen har aktiverats måste du hämta den genererade cURL-exempelbegär
 
    ![](assets/api-triggered-curl.png)
 
-1. Använd denna cURL-begäran i API:erna för att bygga upp din nyttolast och utlösa kampanjen. Mer information finns i [API-dokumentationen för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
+   >[!IMPORTANT]
+   >
+   >Slutpunkterna i cURL-avsnittet skiljer sig åt mellan standardkampanjer och [kampanjer med hög genomströmning](../campaigns/api-triggered-high-throughput.md).
+
+1. Använd denna cURL-begäran i API:erna för att bygga upp din nyttolast och utlösa kampanjen. Mer information finns i [API-dokumentationen för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution), där alla slutpunkter för standard- och högflödeskampanjer listas.
 
    Exempel på API-anrop finns också på [den här sidan](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).

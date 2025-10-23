@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: b7f12c65-c1af-4c49-b126-c13a51940a43
-source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
+source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,15 @@ Hur du skapar innehåll beror på vilken kanal du har valt. Lär dig detaljerade
 <div align="center"><a href="../push/create-push.md"><strong>Push-meddelande</strong></a></div></td>
 </tr></table>
 
+>[!IMPORTANT]
+>
+>[Högeffektiva genomströmningskampanjer](../campaigns/api-triggered-high-throughput.md) är inte beroende av Adobe-profiler. All personalisering måste inkluderas i API-nyttolasten som kontextdata, vilket beskrivs nedan. Det här läget är endast tillgängligt för e-postkanalen och i USA-regionen.
+
 ## Anpassa innehåll med kontextuella data {#contextual}
 
 Du kan skicka ytterligare data till API-nyttolasten som du kan använda för att anpassa meddelandet.
 
-Låt oss ta det här exemplet där kunderna vill återställa sitt lösenord och du vill skicka en URL för återställning av lösenord som genereras i ett verktyg från tredje part. Med API-utlösta kampanjer kan du skicka den här genererade URL:en till API-nyttolasten och sedan använda den i kampanjen för att lägga till den i meddelandet.
+Låt oss ta det här exemplet där kunderna vill återställa sitt lösenord och du vill skicka en URL för återställning av lösenord som genereras i ett verktyg från tredje part. Med API-utlösta kampanjer kan du skicka den här genererade URL:en till API-nyttolasten och använda den i kampanjen för att lägga till den i meddelandet.
 
 För att göra detta måste du skicka dem till API-nyttolasten och lägga till dem i meddelandet med personaliseringsredigeraren. Använd syntaxen `{{context.<contextualAttribute>}}`, där `<contextualAttribute>` ska matcha namnet på variabeln i API-nyttolasten som innehåller de data som du vill skicka.
 

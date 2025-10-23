@@ -9,10 +9,10 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: bda7e337-a246-4f01-b935-4a234d4c4baa
-source-git-commit: 93698c93f3750b4d7feff18509f8144a7c79f156
+source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 1%
+source-wordcount: '281'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +27,18 @@ Så här skapar du en ny API-utlöst kampanj:
    * **[!UICONTROL API triggered - Marketing]** - Välj den här typen av API-utlösta kampanj för att skicka personaliserad marknadsföringskommunikation till målgrupper.
 
    * **[!UICONTROL API triggered - Transactional]** - Transaktionskampanjer syftar till att skicka transaktionsmeddelanden, d.v.s. meddelanden som skickas ut efter en åtgärd som har utförts av en individ: lösenordsåterställning, kundvagn osv.
+
+     +++Läge med hög genomströmning
+
+     Du kan aktivera läget **[!UICONTROL High Throughput]** för transaktions-API-utlösta kampanjer. Det här läget är utformat för storskaliga meddelanden i realtid (upp till 5 000 transaktioner per sekund) och ger högre tillgänglighet med lägre latens. [Lär dig hur du arbetar med högdagerläge](../campaigns/api-triggered-high-throughput.md)
+
+     >[!AVAILABILITY]
+     >
+     >För närvarande är läget High Throput bara tillgängligt för e-postkanalen och i USA-regionen.
+     >
+     >Den här funktionen är bara tillgänglig för organisationer som har köpt tillägget **Transactional Messaging med hög genomströmning** för Adobe. Kontakta Adobe om du vill ha mer information.
+
+     +++
 
    ![](assets/api-triggered-modal.png)
 

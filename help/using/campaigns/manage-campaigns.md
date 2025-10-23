@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1635'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ För Action- och API-utlösta kampanjer finns ytterligare åtgärder nedan:
 
 ## Kampanjlivscykel {#statuses}
 
-I Adobe Journey Optimizer går varje kampanj igenom en livscykel som återspeglas av dess status i gränssnittet. De tillgängliga statusvärdena varierar beroende på kampanjtyp - Åtgärd, API-utlöses eller Orchestrated. Använd flikarna nedan för att utforska livscykeln och statusvärdena för varje kampanjtyp.
+I Adobe Journey Optimizer går varje kampanj igenom en livscykel som återspeglas av dess status i gränssnittet. De tillgängliga statusvärdena varierar beroende på kampanjtypen - Åtgärd, API-utlösta eller Orchestrated. Använd flikarna nedan för att utforska livscykeln och statusvärdena för varje kampanjtyp.
 
 >[!BEGINTABS]
 
