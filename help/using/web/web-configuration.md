@@ -65,7 +65,7 @@ När du skapar en webb- eller [kodbaserad upplevelse](../code-based/get-started-
 
 Du kanske vill använda ändringarna på en hjältebanderoll på en hel webbplats, eller lägga till en översta bild som visas på alla produktsidor på en webbplats.
 
-1. Välj [&#x200B; när du konfigurerar din &#x200B;](#web-configuration)webb[&#x200B; eller &#x200B;](../code-based/code-based-configuration.md)kodbaserade upplevelse **[!UICONTROL Pages matching rule]**.
+1. Välj [ när du konfigurerar din ](#web-configuration)webb[ eller ](../code-based/code-based-configuration.md)kodbaserade upplevelse **[!UICONTROL Pages matching rule]**.
 
 1. Definiera dina villkor för fälten **[!UICONTROL Domain]** och **[!UICONTROL Page]**.
 

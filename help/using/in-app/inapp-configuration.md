@@ -30,9 +30,9 @@ När du är klar kan du skapa, konfigurera och skicka ditt första meddelande i 
 
 För att meddelanden i appen ska kunna levereras på rätt sätt måste följande inställningar definieras:
 
-* I [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=sv-SE){target="_blank"} kontrollerar du att du har en datastream definierad, till exempel under tjänsten **[!UICONTROL Adobe Experience Platform]** som du har Adobe Experience Platform Edge och alternativet **[!UICONTROL Adobe Journey Optimizer]** aktiverat.
+* I [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"} kontrollerar du att du har en datastream definierad, till exempel under tjänsten **[!UICONTROL Adobe Experience Platform]** som du har Adobe Experience Platform Edge och alternativet **[!UICONTROL Adobe Journey Optimizer]** aktiverat.
 
-  Detta säkerställer att Journey Optimizer inkommande händelser hanteras korrekt av Adobe Experience Platform Edge. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE){target="_blank"}
+  Detta säkerställer att Journey Optimizer inkommande händelser hanteras korrekt av Adobe Experience Platform Edge. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html){target="_blank"}
 
 
   >[!NOTE]
@@ -41,9 +41,9 @@ För att meddelanden i appen ska kunna levereras på rätt sätt måste följand
 
   ![](assets/inapp_config_6.png)
 
-* I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} kontrollerar du att standardprincipen för sammanslagning är aktiverad med alternativet **[!UICONTROL Active-On-Edge Merge Policy]** . Om du vill göra det väljer du en princip på menyn **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=sv-SE#configure){target="_blank"}
+* I [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} kontrollerar du att standardprincipen för sammanslagning är aktiverad med alternativet **[!UICONTROL Active-On-Edge Merge Policy]** . Om du vill göra det väljer du en princip på menyn **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** > **[!UICONTROL Merge Policies]** Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#configure){target="_blank"}
 
-  Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att aktivera och publicera inkommande kampanjer korrekt. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=sv-SE){target="_blank"}
+  Den här sammanfogningsprincipen används av [!DNL Journey Optimizer] inkommande kanaler för att aktivera och publicera inkommande kampanjer korrekt. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html){target="_blank"}
 
   >[!NOTE]
   >
@@ -55,7 +55,7 @@ För att meddelanden i appen ska kunna levereras på rätt sätt måste följand
 
   Genom att använda plugin-programmet **Edge Delivery** får du de insikter du behöver för att förstå och felsöka dina inkommande implementeringar effektivt.
 
-  [Läs mer om Edge Delivery-vyn](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}
+  [Läs mer om Edge Delivery-vyn](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}
 
 ## Skapa en konfiguration i appen {#channel-prerequisites}
 
@@ -127,9 +127,9 @@ Du kan nu välja din konfiguration när du skapar ett meddelande i appen.
 >
 >Datauppsättningen används skrivskyddat av rapportsystemet [!DNL Journey Optimizer] och påverkar inte datainsamling eller datainmatning.
 
-Om du vill aktivera rapportering för in-app-kanal måste du se till att den [datamängd](../data/get-started-datasets.md) som används i implementeringen av [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=sv-SE){target="_blank"} också ingår i rapportkonfigurationen. Om du lägger till en datauppsättning som inte finns i appens datastam visas med andra ord inte appdata i dina rapporter när du konfigurerar rapporter. Lär dig hur du lägger till datauppsättningar för rapportering i [det här avsnittet](../reports/reporting-configuration.md#add-datasets).
+Om du vill aktivera rapportering för in-app-kanal måste du se till att den [datamängd](../data/get-started-datasets.md) som används i implementeringen av [datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html){target="_blank"} också ingår i rapportkonfigurationen. Om du lägger till en datauppsättning som inte finns i appens datastam visas med andra ord inte appdata i dina rapporter när du konfigurerar rapporter. Lär dig hur du lägger till datauppsättningar för rapportering i [det här avsnittet](../reports/reporting-configuration.md#add-datasets).
 
-Om du **inte** använder följande fördefinierade [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#field-group){target="_blank"} för datamängdsschemat: `AEP Web SDK ExperienceEvent` och `Consumer Experience Event` (enligt definition på [den här sidan](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html?lang=sv-SE#add-field-groups){target="_blank"}) måste du lägga till följande fältgrupper: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details` och `Web Details`. Dessa behövs av [!DNL Journey Optimizer] som rapporterar när de spårar vilka kampanjer och resor varje profil deltar i.
+Om du **inte** använder följande fördefinierade [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} för datamängdsschemat: `AEP Web SDK ExperienceEvent` och `Consumer Experience Event` (enligt definition på [den här sidan](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html#add-field-groups){target="_blank"}) måste du lägga till följande fältgrupper: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details` och `Web Details`. Dessa behövs av [!DNL Journey Optimizer] som rapporterar när de spårar vilka kampanjer och resor varje profil deltar i.
 
 [Läs mer om rapportkonfiguration](../reports/reporting-configuration.md)
 

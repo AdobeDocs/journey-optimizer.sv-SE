@@ -29,7 +29,7 @@ I det här avsnittet finns stegvisa anvisningar om hur du skapar ett modellbaser
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/model-based)
+➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
 
 ## Överföra en DDL-fil{#ddl-upload}
 

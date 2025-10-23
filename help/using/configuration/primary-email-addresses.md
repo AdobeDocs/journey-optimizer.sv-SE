@@ -74,7 +74,7 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 >id="ajo_journey_execution_address"
 >title="Definiera ett anpassat värde"
 >abstract="I vissa specifika fall kan du åsidosätta standardadressen för körningen. Använd ikonen **Aktivera åsidosättning av parameter** till höger om fältet för att definiera en anpassad primär adress."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="Om körningsadressen"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="Om körningsadressen"
 
 För specifika användningsfall kan du åsidosätta körningsfältet som ställts in globalt och definiera ett annat värde på resenivån.
 

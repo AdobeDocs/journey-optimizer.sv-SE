@@ -51,7 +51,7 @@ Många gånger är de en kombination av flera attribut, utöver kundbeteendehän
 
 Du kan använda dessa regler:
 
-* När du skapar [innehållsoptimering med &#x200B;](../campaigns/campaigns-message-optimization.md#targeting) som mål på resor eller kampanjer,
+* När du skapar [innehållsoptimering med ](../campaigns/campaigns-message-optimization.md#targeting) som mål på resor eller kampanjer,
 * När [optimering av kundresan](../building-journeys/optimize.md#targeting) skapas.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
@@ -136,4 +136,4 @@ Så här skapar du en regel:
 
 Lär dig hur du skapar, duplicerar och tillämpar återanvändbara **målinriktningsregler** i Adobe Journey Optimizer för att effektivt personalisera kampanjer baserat på kundattribut som region, språk och beteende, vilket sparar tid samtidigt som målgruppens precision förbättras.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476131/?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3476127/?quality=12)

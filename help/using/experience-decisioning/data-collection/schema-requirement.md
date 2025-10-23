@@ -109,4 +109,4 @@ För anpassade händelser måste schemat som används i datauppsättningen ocks�
 >* POST /ee/v2/interact
 >* POST /ee/v2/collect
 >
->Om du använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=sv-SE){target="_blank"} skapas anslutningen automatiskt.
+>Om du använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} eller [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} skapas anslutningen automatiskt.

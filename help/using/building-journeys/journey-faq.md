@@ -11,9 +11,9 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 4afd8e455ca0d61ad860ec735c30f1b36bb54e1b
 workflow-type: tm+mt
-source-wordcount: '4531'
+source-wordcount: '4526'
 ht-degree: 0%
 
 ---
@@ -744,19 +744,12 @@ Läs mer om [sammanfogningsprinciper](../audience/get-started-profiles.md) och [
 
 +++ Vad är skillnaden mellan ett villkor och en vänteaktivitet?
 
-**Villkorsaktivitet**:
-
-* **Syfte**: Skapar olika sökvägar baserat på logik (om/då)
-* **Funktion**: Utvärderar data och dirigerar profiler därefter
-* **Användningsfall**: Segmentera kunder, kontrollera status, gren baserat på beteende
-* **Exempel**: Om kunden är VIP skickar du premiumerbjudande; annars skickar du standarderbjudande
-
-**Vänteaktivitet**:
-
-* **Syfte**: Pausar resan under en tidsperiod
-* **Funktion**: Innehåller profiler vid en viss punkt innan du fortsätter
-* **Användningsfall**: Timing mellan meddelanden, väntan på arbetstider, skapa förseningar
-* **Exempel**: Vänta 3 dagar efter välkomstmeddelandet innan du skickar nästa meddelande
+| | **Villkorsaktivitet** | **Vänta på aktivitet** |
+|---|---|---|
+| **Syfte** | Skapar olika banor baserat på logik (if/then) | Pausar resan under en tidsperiod |
+| **Funktion** | Utvärderar data och ruttprofiler utifrån detta | Innehåller profiler vid en viss punkt innan du fortsätter |
+| **Användningsfall** | Segmentera kunder, kontrollera status, gren baserat på beteende | Tidsinställning mellan meddelanden, väntan på kontorstid, skapa förseningar |
+| **Exempel** | Om kunden är VIP skickar du Premium-erbjudande; annars skickar du standarderbjudande | Vänta 3 dagar efter välkomstmeddelandet innan du skickar nästa meddelande |
 
 **De fungerar tillsammans**:
 
@@ -871,4 +864,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

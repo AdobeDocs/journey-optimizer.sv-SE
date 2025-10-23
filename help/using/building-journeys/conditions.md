@@ -87,7 +87,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![](assets/journey64.png){width=80%}
 
-Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
+Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
 
 >[!NOTE]
 >
@@ -192,4 +192,4 @@ Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
