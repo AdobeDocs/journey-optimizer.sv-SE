@@ -5,9 +5,10 @@ title: Kom igång med rapportfunktioner i  [!DNL Adobe Journey Optimizer]
 description: Lär dig hur du får åtkomst till och arbetar med  [!DNL Adobe Journey Optimizer] rapporter.
 role: User
 level: Beginner
-source-git-commit: da2fb137a8af82a8487638dc3d762377dd5dc506
+exl-id: 7961dc5c-7918-4ae3-8361-0ed4bc4f145b
+source-git-commit: ac80d1cec351a3029c8b2bf862275ffe7fd5c86d
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -132,3 +133,13 @@ Välj en inkommande upplevelse för att identifiera associerade **globala heltid
 <td><img alt="innehållskort" src="../channels/assets/do-not-localize/cards.png">
 <div align="center"><p><strong>Innehållskort</strong></p><p><a href="campaign-global-report-cja-content.md"><strong>Kampanjrapport</strong></a></p><p><a href="journey-global-report-cja-content.md"><strong>Reserapport</strong></a></p></div></td>
 </tr></table>
+
+### Instruktionsvideo {#video}
+
+Lär dig hur du effektivt använder Heltidsrapporten i Adobe Journey Optimizer.
+
++++Se videon
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
+
++++

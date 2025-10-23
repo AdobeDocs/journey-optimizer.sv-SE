@@ -5,9 +5,9 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar modellbaserade scheman direkt via användargränssnittet.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 version: Campaign Orchestration
-source-git-commit: fc741db8db2ca9c05dbb87a41712e90a62a18c13
+source-git-commit: ac80d1cec351a3029c8b2bf862275ffe7fd5c86d
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ I följande exempel definieras schemat **Förmånsmedlemskap** manuellt för att
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-➡️ [Läs mer om manuella modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
+➡️ [Läs mer om manuella modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
 
 ## Skapa ditt schema {#schema}
 
@@ -109,6 +109,8 @@ Alla scheman som används för mål måste innehålla minst ett identitetsfält 
 1. Klicka på **[!UICONTROL Save]**.
 
 När du har skapat och sparat attribut kan du länka schemat till andra relationsscheman genom att definiera relationer.
+
+➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
 
 ## Länka scheman {#link-schema}
 

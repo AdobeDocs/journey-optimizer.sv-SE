@@ -5,9 +5,9 @@ title: Skapa en måldimension
 description: Lär dig mapp ett relationsschema till kundprofilen
 exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
 version: Campaign Orchestration
-source-git-commit: 0b92d0e806c47b0d87ba53b7c7f1d56ee4453abb
+source-git-commit: ac80d1cec351a3029c8b2bf862275ffe7fd5c86d
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,8 @@ När du konfigurerar mål definierar du två huvudaspekter:
 
   Systemet måste förstå hur målschemat mappar till `Profile`-schemat. Detta uppnås genom ett delat identitetsfält - ett som finns både i målschemat och `Profile`-schemat och som har konfigurerats som ett identitetsnamnområde.
 
+➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
+
 ## Skapa en måldimension {#targeting-dimension}
 
 Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema till kundprofilen.
@@ -43,7 +45,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
 1. Klicka på **[!UICONTROL Create]** för att börja skapa **[!UICONTROL Targeting dimension]**.
 
-1. Välj det [tidigare konfigurerade &#x200B; &#x200B;](gs-schemas.md) i listrutan.
+1. Välj det [tidigare konfigurerade &#x200B; ](gs-schemas.md) i listrutan.
 
    Alla relationsscheman är synliga, men endast scheman med en direkt identitetsrelation till **profilen** kan väljas.
 
@@ -51,7 +53,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
    I det här exemplet är kundprofilen länkad till flera prenumerationer, som vart och ett representeras av en unik `crmID` i `Recipient`-schemat. Genom att ange att **[!UICONTROL Target Dimension]** ska använda `Recipient`-schemat och dess `crmID`-identitet kan du skicka meddelanden på prenumerationsnivå i stället för till huvudkundprofilen, så att varje kontrakt eller rad får ett eget anpassat meddelande.
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)
 
    ![](assets/target-dimension-2.png)
 
