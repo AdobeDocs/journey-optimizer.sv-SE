@@ -9,10 +9,8 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär
 badge: label="Begränsad tillgänglighet" type="Informative"
-hidefromtoc: true
-hide: true
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
-source-git-commit: 58c9fb91bac95e343ddaee93eca24181b80c3894
+source-git-commit: 913104934e78b61b91ea3fca21ee80372050a1fb
 workflow-type: tm+mt
 source-wordcount: '1480'
 ht-degree: 1%
@@ -23,7 +21,7 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
+>Den här funktionen är för närvarande begränsad för kunder i USA och Australien. Kontakta din Adobe-representant för att få åtkomst.
 
 Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor och berika dina [!DNL Experience Platform] datauppsättningar kan du använda formulär på dina landningssidor.
 
@@ -33,7 +31,7 @@ Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor 
 >id="ajo_lp_form_connection"
 >title="Markera den slutpunkt som ska användas"
 >abstract="Definiera slutpunkten för direktuppspelning där data skickas när formuläret skickas."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_dataset"
@@ -42,7 +40,7 @@ Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor 
 
 Innan du kan skapa ett formulär måste du skapa en dedikerad förinställning där du väljer anslutningens slutpunkt där data skickas och datauppsättningen där data som hämtas via formuläret ska lagras.
 
-När data når strömningsslutpunkten länkas den med datauppsättningsinformationen. Med de genererade käll-/målanslutningarna och källflödet överförs data sedan till datauppsättningen.
+När data når direktuppspelningsslutpunkten länkas de till datauppsättningsinformationen. Med de genererade käll-/målanslutningarna och källflödet överförs data sedan till datauppsättningen.
 
 När du skapar en förinställning:
 
@@ -53,9 +51,13 @@ När du skapar en förinställning:
    * **Målanslutning** - där data lagras eller används.
    * **Source-flöde** - pipeline som flyttar data från källanslutningen till [!DNL Experience Platform], hanterar mappning, transformering och validering.
 
+<!--
 >[!NOTE]
 >
-> Om du vill komma åt och redigera formulärförinställningar måste du ha behörigheten **[!UICONTROL Manage form presets]** i produktionssandlådan. Läs mer om behörigheter i [det här avsnittet](../administration/high-low-permissions.md#administration-permissions).<!--TBC-->
+> To access and edit form presets, you must have the **[!UICONTROL Manage form presets]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).TBC
+-->
+
+Följ stegen nedan för att skapa en formulärförinställning.
 
 1. Om du vill komma åt **[!UICONTROL Form presets]**-lagret väljer du **[!UICONTROL Administration]** > **[!UICONTROL Channels]** >**[!UICONTROL Form settings]** på den vänstra menyn.
 
@@ -69,13 +71,13 @@ När du skapar en förinställning:
 
    >[!NOTE]
    >
-   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
 
 1. Välj en **[!UICONTROL Dataset]** att länka till formuläret. Här lagras och speglas formulärsvaren. Du kan skriva för att söka efter en viss datauppsättning eller välja den i listan.
 
    >[!NOTE]
    >
-   >För närvarande är bara [!DNL Adobe Experience Platform] datauppsättningar tillgängliga för val. Det går bara att välja en datauppsättning åt gången.
+   >För närvarande är bara [!DNL Adobe Experience Platform] datauppsättningar tillgängliga för val. En datauppsättning kan väljas åt gången. [Läs mer om datauppsättningar](../../data/get-started-datasets.md)
 
 1. Klicka på **[!UICONTROL Publish]**. Din förinställning kan nu användas i ett formulär.
 
@@ -93,7 +95,7 @@ Alla befintliga formulär visas. Du kan filtrera formulär baserat på deras sta
 >id="ajo_lp_form_preset"
 >title="Välj en förinställning"
 >abstract="Välj en fördefinierad förinställning som innehåller anslutningen som ska användas och en fördefinierad datauppsättning för formuläret."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
 
 Följ stegen nedan när du vill skapa ett formulär.
 
@@ -192,7 +194,7 @@ När du har valt ett fältattribut eller lagt till ett anpassat fält kan du jus
 >title="Tack"
 >abstract="Konfigurera vad som ska hända när någon fyller i eller vidarebefordrar formuläret."
 
-Konfigurera vad som ska hända när en användare fyller i formuläret i avsnittet **[!UICONTROL Thank you page]**.
+I formulärinformationen från avsnittet **[!UICONTROL Thank you page]** konfigurerar du vad som ska hända när en användare fyller i formuläret.
 
 ![](assets/lp_create-form-thank-you.png){width=70%}
 
@@ -215,7 +217,7 @@ Gör något av följande:
 
 När ett formulär har publicerats kan du fortfarande redigera det. Följ stegen nedan.
 
-1. Öppna [formulärlistan](#access-forms) och välj ett publicerat formulär.
+1. Gå till [formulärlistan](#access-forms) och välj ett publicerat formulär.
 
 1. Klicka på knappen **[!UICONTROL Edit form]**.
 
@@ -263,7 +265,7 @@ Nu kan du bädda in det här formuläret på en landningssida för att samla in 
 
    >[!NOTE]
    >
-   >Du kan uppdatera det markerade formuläret med knappen **[!UICONTROL Edit form]**. Formuläret öppnas på en ny flik. Stegen för att redigera formulärinnehållet är desamma som beskrivs i [det här avsnittet](#create-form).
+   >Du kan uppdatera det markerade formuläret med knappen **[!UICONTROL Edit form]**. Formuläret öppnas på en ny flik. Stegen för att redigera formulärinnehållet beskrivs i [det här avsnittet](#create-form).
 
 1. Konfigurera vad som ska hända när en användare fyller i formuläret i avsnittet **[!UICONTROL Follow up type]**:
 

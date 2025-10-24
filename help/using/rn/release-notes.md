@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
+source-git-commit: 913104934e78b61b91ea3fca21ee80372050a1fb
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1204'
 ht-degree: 6%
 
 ---
@@ -24,13 +24,33 @@ ht-degree: 6%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna.  Ett dedikerat avsnitt om [de senaste uppdateringarna](#updates-rn) visar på nya funktioner och förbättringar när de distribueras till produktionen, så att du alltid informeras om alla ändringar i realtid. <!--For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](#releases.md).-->
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 25 oktober {#oct-25-10-rn}
 
 **Releasedatum**: 22 oktober 2025
 
 ### Nya funktioner {#oct-25-10-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Anpassade formulär för landningssida</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med [!DNL Journey Optimizer] kan du nu hämta profilattribut via dina landningssidor.</p>
+<p>Skapa, designa och hantera anpassade formulär som är skräddarsydda efter era behov utifrån en specifik datamängd. Du kan sedan använda dessa formulär på landningssidor för att lägga till de profilattribut du väljer i datauppsättningen som definieras för varje formulär.</p>
+<p>Den här funktionen är för närvarande begränsad för kunder i USA och Australien. Kontakta din Adobe-representant för att få åtkomst.</p>
+<p><img src="assets/do-not-localize/forms.gif"/></p>
+<p>Mer information finns i den <a href="../landing-pages/lp-forms.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 23 oktober 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -268,7 +288,7 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 <tr>
 <td>
 <p>Journey Optimizer Experimentation Accelerator innehåller nu Experimentation Agent, ett AI-drivet konversationsverktyg med vilket du kan interagera med dina experiment, insikter och möjligheter. Det förbättrar Journey Optimizer Experimentation Accelerator upplevelse och hjälper dig att köra experiment effektivare, upptäcka vad som fungerar och se var du kan optimera nästa steg.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html?lang=sv-SE" target="_blank">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html" target="_blank">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 10 oktober 2025</p>
 </td>
 </tr>
@@ -427,24 +447,4 @@ Nu kan ni använda AI-modeller för att optimera det bästa innehållet i e-post
 </tbody>
 </table>
 
-
-<table>
-<thead>
-<tr>
-<th><strong>Landing page custom forms</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>With [!DNL Journey Optimizer], you can now capture profile attributes though your landing pages.</p>
-<p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
-<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p><img src="assets/do-not-localize/forms.gif"/></p>
-<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a></p>
-<p>Availability date: Sept XX, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
 -->
