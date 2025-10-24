@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
+source-git-commit: 460ac269404842001f320df6404db474a34c30b7
 workflow-type: tm+mt
-source-wordcount: '3011'
-ht-degree: 17%
+source-wordcount: '2992'
+ht-degree: 18%
 
 ---
 
@@ -555,13 +555,8 @@ ht-degree: 17%
    + Innehållsexperiment {#content-experiment}
       + [Innehållsexperiment](/help/rp_landing_pages/content-experiment-landing-page.md)
       + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
+      + [Kom igång med Experiment Accelerator](using/content-management/experiment-accelerator-gs.md)
       + [Skapa ett innehållsexperiment](using/content-management/content-experiment.md)
-      + Experimentera med accelerator {#experiment}
-         + [Kom igång med Experiment Accelerator](using/content-management/experiment-accelerator.md)
-         + [Dataanvändning i AI med Experimentation Accelerator](using/content-management/experiment-accelerator-security.md)
-         + [Experimentera med metodtips](using/content-management/experiment-accelerator-best-practices.md)
-         + [Experimentera med acceleratorskärm](using/content-management/experiment-accelerator-monitor.md)
-         + [Experimentera acceleratorvärden](using/content-management/experiment-accelerator-metrics.md)
       + Tekniska anmärkningar {#technotes}
          + [Tekniska anmärkningar](/help/rp_landing_pages/technotes-landing-page.md)
          + [A/B-test jämfört med beväpnad bandit](using/content-management/mab-vs-ab.md)
@@ -887,7 +882,7 @@ ht-degree: 17%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
