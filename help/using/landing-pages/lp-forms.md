@@ -31,7 +31,7 @@ Om du vill samla in profildata med dina [!DNL Journey Optimizer] landningssidor 
 >id="ajo_lp_form_connection"
 >title="Markera den slutpunkt som ska användas"
 >abstract="Definiera slutpunkten för direktuppspelning där data skickas när formuläret skickas."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
+>additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Skapa en HTTP API-direktuppspelningsanslutning"
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_dataset"
@@ -71,7 +71,7 @@ Följ stegen nedan för att skapa en formulärförinställning.
 
    >[!NOTE]
    >
-   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
+   >Läs mer om hur du skapar en direktuppspelad källanslutning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/streaming/http){target="_blank"}.
 
 1. Välj en **[!UICONTROL Dataset]** att länka till formuläret. Här lagras och speglas formulärsvaren. Du kan skriva för att söka efter en viss datauppsättning eller välja den i listan.
 
@@ -95,7 +95,7 @@ Alla befintliga formulär visas. Du kan filtrera formulär baserat på deras sta
 >id="ajo_lp_form_preset"
 >title="Välj en förinställning"
 >abstract="Välj en fördefinierad förinställning som innehåller anslutningen som ska användas och en fördefinierad datauppsättning för formuläret."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
+>additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/landing-pages/lp-forms#create-form-preset" text="Skapa en formulärförinställning"
 
 Följ stegen nedan när du vill skapa ett formulär.
 
