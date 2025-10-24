@@ -45,7 +45,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
 1. Klicka på **[!UICONTROL Create]** för att börja skapa **[!UICONTROL Targeting dimension]**.
 
-1. Välj det [tidigare konfigurerade &#x200B; ](gs-schemas.md) i listrutan.
+1. Välj det [tidigare konfigurerade &#x200B; &#x200B;](gs-schemas.md) i listrutan.
 
    Alla relationsscheman visas, men endast de med en direkt identitetsrelation till **profilen** kan väljas. Undvik att välja scheman som inte är personer, t.ex. inköp, och välj ett schema som är direkt associerat med en profil.
 
