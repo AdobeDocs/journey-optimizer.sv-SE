@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: cd47db2e8fd20049cb7598160e99555b448c7012
+source-git-commit: 9b7e10643aaa4cd6c82e0355c45fa810352f21c0
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Följ de här stegen för att skicka SMS- och RCS-meddelanden i Journey Optimize
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
-1. Klicka på **[!UICONTROL API Credentials]** bin-ikonen![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort dina API-autentiseringsuppgifter.
+1. Klicka på **[!UICONTROL API Credentials]** bin-ikonen![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort dina API-autentiseringsuppgifter.
 
    ![](assets/sms_byo_3.png)
 
@@ -210,9 +210,11 @@ När du konfigurerar en webkrok kan du definiera dess syfte baserat på den typ 
 
 1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) för att lägga till dina nyckelordskategorier och konfigurera dem sedan så här:
 
-   * **[!UICONTROL Inbound Keyword Category]**: Välj dina nyckelordskategorier antingen **[!UICONTROL Opt-In]**, **[!UICONTROL Opt-Out]**, **[!UICONTROL Help]** eller **[!UICONTROL Default]**.
+   * **[!UICONTROL Inbound Keyword Category]**: Välj dina nyckelordskategorier antingen **[!UICONTROL Opt-In]**, **[!UICONTROL Opt-Out]**, **[!UICONTROL Double Opt-In]**, **[!UICONTROL Help]** eller **[!UICONTROL Custom]**.
 
    * **[!UICONTROL Enter a keyword]**: Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt meddelande. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) om du vill lägga till flera nyckelord.
+
+     Använd icke-medgivande-relaterade nyckelord för gruppbaserade åtgärder inom en resa för **[!UICONTROL Custom keyword]**.
 
    * **[!UICONTROL Reply Message]**: Välj det anpassade svar som skickas automatiskt i listrutan.
 
@@ -224,7 +226,7 @@ När du konfigurerar en webkrok kan du definiera dess syfte baserat på den typ 
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din webkrok.
 
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
 
 1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
 
@@ -258,7 +260,7 @@ När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som 
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din webkrok.
 
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
 
 1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
 
