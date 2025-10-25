@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: 50491d039f2baf8c30a6af0c1b59fe9041244ac7
+source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,11 @@ ht-degree: 0%
 >abstract="Med Designer kan du enkelt definiera mallens layout genom att välja kolumnstrukturen."
 
 
-Använd Adobe Journey Optimizer Designer för att enkelt definiera innehållsstrukturen. Genom att lägga till och flytta strukturella element med enkla dra och släpp-åtgärder kan du designa formen på innehållet på några sekunder.
+Använd e-post-Designer för [!DNL Adobe Journey Optimizer] för att enkelt definiera innehållsstrukturen. Genom att lägga till och flytta strukturella element med enkla dra och släpp-åtgärder kan du designa formen på innehållet på några sekunder.
+
+>[!NOTE]
+>
+>I den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} anges att all digital kommunikation ska vara tillgänglig. Kontrollera att du följer de specifika riktlinjerna som anges på [den här sidan](accessible-content.md) när du designar innehåll i [!DNL Journey Optimizer].
 
 Följ stegen nedan när du vill börja skapa ditt innehåll:
 
@@ -80,7 +84,7 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 
    ![](assets/email_designer_structure_components.png)
 
-   Välj komponenten **[!UICONTROL n:n column]** för att definiera antalet kolumner som du vill använda (mellan 3 och 10). Du kan också definiera bredden på varje kolumn genom att flytta pilarna längst ned i varje kolumn.
+   Välj komponenten **[!UICONTROL n:nkolumn]** för att definiera antalet kolumner som du väljer (mellan 3 och 10). Du kan också definiera bredden på varje kolumn genom att flytta pilarna längst ned i varje kolumn.
 
    >[!NOTE]
    >

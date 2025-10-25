@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
 exl-id: 78011ec0-a3b6-4d4e-ab4b-9da032c283a2
-source-git-commit: d1e8120f361a04b47b20dbe71ecacad1be0aeb3d
+source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Följ de bästa metoderna nedan för att se till att ditt innehåll är synligt:
 * Optimera designen för mobil och responsiv layout och se till att knapparna är stora och har rätt avstånd.
 * Testa regelbundet olika enheter och skärmstorlekar för att bevara tillgängligheten.
 
-I [!DNL Journey Optimizer] kan storleken och mellanrummet för de olika elementen i ditt innehåll förfinas ytterligare med formatparametrarna och attributen i e-postrutan för Designer **[!UICONTROL Styles]**. [Läs mer](get-started-email-style.md)
+I [!DNL Journey Optimizer] kan storleken och mellanrummet för de olika elementen i ditt innehåll förfinas ytterligare med formatparametrarna och attributen i e-postrutan för Designer **[!UICONTROL Styles]**. [Lär dig hur](get-started-email-style.md)
 
 Du kan till exempel uppdatera [bakgrunden](backgrounds.md) eller ändra marginalerna, utfyllnaden och justeringen för att förbättra innehållets visuella tillgänglighet. [Läs mer](alignment-and-padding.md)
 
@@ -89,7 +89,7 @@ Dessutom kan du förhandsgranska och optimera designen för olika enheter och sk
 
 ## Använd alternativ text för bilder {#alt-text}
 
-Använd komponenten **[!UICONTROL Image]** för att ange alternativ text för bilder. [Läs mer](content-components.md#image)
+Använd komponenten **[!UICONTROL Image]** för att ange alternativ text för bilder. [Lär dig hur](content-components.md#image)
 
 ![](assets/accessible-alt-text.png){width="90%"}
 
@@ -144,7 +144,7 @@ Om du vill kontrollera på ett mer konsekvent sätt om innehållet är tillgäng
 
 Mörkt läge förbättrar den visuella tillgängligheten för användare med ljuskänslighet eller synnedsättning, vilket ger en bättre visningsupplevelse.
 
-Med e-post-Designer kan du växla till **[!UICONTROL Dark mode]**-vyn och definiera specifika anpassade inställningar som ska visas av de e-postklienter som stöder e-post. [Läs mer](dark-mode.md)
+Med e-post-Designer kan du växla till **[!UICONTROL Dark mode]**-vyn och definiera specifika anpassade inställningar som ska visas av de e-postklienter som stöder e-post. [Lär dig hur](dark-mode.md)
 
 ![](assets/accessible-dark-mode.png){width="90%"}
 

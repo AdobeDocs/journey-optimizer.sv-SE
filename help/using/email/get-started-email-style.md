@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, stil, css, brödtext, struktur
 exl-id: 2e20ecc5-bb58-4dc8-a2bc-ec5a02c16ae8
-source-git-commit: 8579acfa881f29ef3947f6597dc11d4c740c3d68
+source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -29,3 +29,9 @@ Följ länkarna nedan om du vill veta hur du justerar vissa formatinställningar
 * Lär dig hur du [anpassar din e-postbakgrund](backgrounds.md)
 * Lär dig hur du [hanterar lodrät justering och utfyllnad](alignment-and-padding.md)
 * Lär dig hur du [anpassar textbundna formatattribut](inline-styling.md)
+* Lär dig hur du [lägger till anpassad CSS i ditt e-postinnehåll](custom-css.md)
+* Lär dig hur du [hanterar innehåll i mörkt läge](dark-mode.md)
+
+>[!NOTE]
+>
+>I den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} anges att all digital kommunikation ska vara tillgänglig. Se till att du följer de specifika formatriktlinjer som anges på [den här sidan](../email/accessible-content.md) när du designar innehåll i [!DNL Journey Optimizer], till exempel justerar färger, etiketter och ikoner för att säkerställa tydlighet och optimerar designen för mobila och responsiva layouter.

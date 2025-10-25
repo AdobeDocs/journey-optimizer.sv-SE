@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: da82432dd15f19ac7db52f491e5afd5ba6d4e3d7
+source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,10 @@ I tabellen nedan finns information om de effektivaste strategierna för e-postde
 | Rekommenderas | Använd med försiktighet | Rekommenderas inte |
 |-|-|-|
 | <ul><li><b>Statiska, tabellbaserade layouter</b> för strukturen</li> <li><b>HTML-tabeller och kapslade tabeller</b> för enhetlig layout</li> <li><b>Mallbredder</b> mellan 600px och 800px </li> <li><b>Enkel, infogad CSS</b> för formatering </li> <li><b>Webbsäkra teckensnitt</b> för universell kompatibilitet</li> | <ul><li><b>Bakgrundsbilder</b> kanske inte visas på vissa e-postplattformar.</li><li><b>Anpassade webbteckensnitt</b> saknar universellt stöd.</li><li><b>Bred layout</b> kan visas dåligt på mindre skärmar.</li><li><b>Bildscheman</b> har begränsad funktionalitet.</li><li><b>Inbäddad CSS</b> tas ibland bort under e-postleverans.</li> | <ul><li><b>JavaScript</b> stöds vanligtvis inte i e-postmiljöer.</li> <li> <b>`<iframe>`</b> taggar blockeras på de flesta plattformar. </li> <li><b>Flash</b> är inaktuell och stöds inte längre.</li> <li><b>Inbäddat ljud</b> spelas ofta inte upp.</li> <li><b>Inbäddad video</b> är inte kompatibel med många e-postplattformar.</li> <li> <b>Forms</b> fungerar inte i e-postmeddelanden.</li> <li> `<div>`-lager kan leda till återgivningsproblem.</li> |
+
+>[!NOTE]
+>
+>I den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} anges att all digital kommunikation ska vara tillgänglig. Förutom de bästa metoderna för e-postdesign som anges i det här avsnittet, måste du även följa riktlinjerna som anges på [den här sidan](accessible-content.md) när det gäller att skapa tillgängligt innehåll med e-post-Designer.
 
 ## Viktiga steg för att skapa e-postinnehåll {#key-steps}
 
@@ -78,4 +82,4 @@ Lär dig skapa e-postinnehåll med meddelanderedigeraren.
 
 Lär dig hur du konfigurerar innehållsexperiment till A/B-tester och utforskar e-postinnehåll på bästa sätt för dina affärsmål.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447335?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3419893)

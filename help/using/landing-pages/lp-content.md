@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, skapande, sida, formulär, komponent
 exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1247'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 >id="ac_lp_components"
 >title="Använda innehållskomponenter"
 >abstract="Innehållskomponenterna är tomma platshållare för innehåll som du kan använda för att skapa layouten för en landningssida. Använd formulärkomponenten för att definiera specifikt innehåll som gör att användare kan välja och skicka sina val."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/design-email/add-content/content-components#add-content-components" text="Lägga till innehållskomponenter"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/content-components#add-content-components" text="Lägga till innehållskomponenter"
 
 Om du vill utforma innehållet på landningssidan kan du använda samma komponenter som för ett e-postmeddelande. [Läs mer](../email/content-components.md#add-content-components)
 
@@ -34,13 +34,17 @@ Om du vill utforma specifikt innehåll som gör det möjligt för användare att
 
 Med hjälp av layoutaren för landningssidans innehåll kan du även utnyttja sammanhangsberoende data som kommer från den primära sidan på en undersida. [Läs mer](#use-primary-page-context)
 
+>[!NOTE]
+>
+>I den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} anges att all digital kommunikation ska vara tillgänglig. Kontrollera att du följer de specifika riktlinjerna som anges på [den här sidan](../email/accessible-content.md) när du designar innehåll i [!DNL Journey Optimizer].
+
 ## Använda formulärkomponenten {#use-form-component}
 
 >[!CONTEXTUALHELP]
 >id="ac_lp_formfield"
 >title="Ange formulärkomponentfälten"
 >abstract="Definiera hur dina mottagare ska se och skicka sina val från din landningssida."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content#lp-form-styles" text="Definiera format för landningssidor"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content#lp-form-styles" text="Definiera format för landningssidor"
 
 >[!CONTEXTUALHELP]
 >id="ac_lp_submission"

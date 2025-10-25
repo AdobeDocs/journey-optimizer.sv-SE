@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: komponenter, e-post-Designer, redigerare, e-post
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1312'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,10 @@ ht-degree: 1%
 När du skapar ditt e-postinnehåll kan du i **[!UICONTROL Content components]** anpassa din e-post ytterligare med raw-komponenter som du kan redigera när du väl har placerat i ett e-postmeddelande.
 
 Du kan lägga till så många innehållskomponenter du behöver i en eller flera strukturkomponenter, som definierar layouten för e-postmeddelandet.
+
+>[!NOTE]
+>
+>I den [europeiska tillgänglighetslagen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} anges att all digital kommunikation ska vara tillgänglig. Se till att du följer de särskilda riktlinjerna som anges på [den här sidan](accessible-content.md) när du drar nytta av innehållskomponenter för att utforma e-postmeddelanden i [!DNL Journey Optimizer], t.ex. använda hjälpmedelsanpassade teckensnitt, läsbara format och ange alternativ text för bilder.
 
 ## Lägga till innehållskomponenter {#add-content-components}
 
@@ -72,7 +76,7 @@ Följ stegen nedan för att lägga till innehållskomponenter i e-postmeddelande
 
 Om du vill tillämpa en viss formatering på en grupp innehållskomponenter kan du lägga till en **[!UICONTROL Container]**-komponent och sedan lägga till den eller de innehållskomponenter som du vill använda. På så sätt kan du tillämpa ett distinkt format på behållaren, vilket skiljer sig från det format som tillämpas på innehållskomponenterna i behållaren.
 
-Lägg till exempel till en **[!UICONTROL Container]**-komponent och lägg sedan till en [&#x200B; Button](#button) -komponent i den behållaren. Du kan använda en specifik bakgrund för behållaren och en annan för knappen.
+Lägg till exempel till en **[!UICONTROL Container]**-komponent och lägg sedan till en [ Button](#button) -komponent i den behållaren. Du kan använda en specifik bakgrund för behållaren och en annan för knappen.
 
 ![](assets/email_designer_container_component.png)
 
@@ -80,7 +84,7 @@ Lägg till exempel till en **[!UICONTROL Container]**-komponent och lägg sedan 
 
 Använd komponenten **[!UICONTROL Button]** för att infoga en eller flera knappar i e-postmeddelandet och dirigera om din e-postmålgrupp till en annan sida.
 
-1. Dra och släpp **[!UICONTROL Button]**-komponenten från **[!UICONTROL Content components]** till en **[!UICONTROL Structure component]**.
+1. Dra och släpp **[!UICONTROL Content components]**-komponenten från **[!UICONTROL Button]** till en **[!UICONTROL Structure component]**.
 
 1. Klicka på den nyligen tillagda knappen om du vill anpassa texten och få tillgång till flikarna **[!UICONTROL Settings]** och **[!UICONTROL Styles]** i den högra rutan E-posta Designer.
 
@@ -106,7 +110,7 @@ Använd komponenten **[!UICONTROL Text]** för att infoga text i e-postmeddeland
 
 ![](assets/email_designer_text_component.png)
 
-1. Dra och släpp **[!UICONTROL Text]**-komponenten från **[!UICONTROL Content components]** till en **[!UICONTROL Structure component]**.
+1. Dra och släpp **[!UICONTROL Content components]**-komponenten från **[!UICONTROL Text]** till en **[!UICONTROL Structure component]**.
 
 1. Klicka på den nya komponenten som du har lagt till för att anpassa texten och för att få tillgång till flikarna **[!UICONTROL Settings]** och **[!UICONTROL Styles]** i den högra rutan i e-post-Designer.
 
@@ -145,7 +149,7 @@ Du kan justera formatattribut som linjefärg, format och höjd på flikarna **[!
 
 Använd komponenten **[!UICONTROL HTML]** för att kopiera och klistra in de olika delarna av din befintliga HTML. På så sätt kan du skapa kostnadsfria modulära HTML-komponenter för att återanvända externt innehåll.
 
-1. Dra och släpp **[!UICONTROL HTML]**-komponenten från **[!UICONTROL Content Components]** till en **[!UICONTROL Structure component]**.
+1. Dra och släpp **[!UICONTROL Content Components]**-komponenten från **[!UICONTROL HTML]** till en **[!UICONTROL Structure component]**.
 
 1. Klicka på den nya komponenten och välj sedan **[!UICONTROL Show the source code]** i det sammanhangsberoende verktygsfältet för att lägga till din HTML.
 
@@ -163,13 +167,13 @@ Använd komponenten **[!UICONTROL HTML]** för att kopiera och klistra in de oli
 
 Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från datorn i e-postinnehållet.
 
-1. Dra och släpp **[!UICONTROL Image]**-komponenten från **[!UICONTROL Content components]** till en **[!UICONTROL Structure component]**.
+1. Dra och släpp **[!UICONTROL Content components]**-komponenten från **[!UICONTROL Image]** till en **[!UICONTROL Structure component]**.
 
    ![](assets/email_designer_image_content.png)
 
-1. Klicka på **[!UICONTROL Browse]** på fliken **[!UICONTROL Settings]** för att välja en bildfil från dina resurser eller på **[!UICONTROL Import media]** för att överföra en resurs till Adobe Experience Manager Assets.
+1. Klicka på **[!UICONTROL Settings]** på fliken **[!UICONTROL Browse]** för att välja en bildfil från dina resurser eller på **[!UICONTROL Import media]** för att överföra en resurs till Adobe Experience Manager Assets.
 
-   Mer information om [!DNL Adobe Experience Manager Assets] finns i [Adobe Experience Manager Assets-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"}.
+   Mer information om [!DNL Adobe Experience Manager Assets] finns i [Adobe Experience Manager Assets-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
    >[!NOTE]
    >
@@ -180,7 +184,7 @@ Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från dato
 1. Klicka på den nya komponenten och ange bildegenskaper:
 
    * Med **[!UICONTROL Image title]** kan du definiera en titel för bilden.
-   * Med **[!UICONTROL Alt text]** kan du definiera bildtexten som är länkad till bilden. Detta motsvarar alt-HTML-attributet.
+   * Med **[!UICONTROL Alt text]** kan du definiera bildtexten som är länkad till bilden. Detta motsvarar alt-HTML-attributet. [Läs mer](../email/accessible-content.md#alt-text)
 
    ![](assets/email_designer_10.png)
 
@@ -192,7 +196,7 @@ Använd komponenten **[!UICONTROL Image]** för att infoga en bildfil från dato
 
 Använd komponenten **[!UICONTROL Social]** för att infoga länkar till sidor för sociala medier i ditt e-postinnehåll.
 
-1. Dra och släpp **[!UICONTROL Social]**-komponenten från **[!UICONTROL Content Components]** till en **[!UICONTROL Structure component]**.
+1. Dra och släpp **[!UICONTROL Content Components]**-komponenten från **[!UICONTROL Social]** till en **[!UICONTROL Structure component]**.
 
 1. Markera den nya komponenten.
 
@@ -214,7 +218,7 @@ Använd komponenten **[!UICONTROL Social]** för att infoga länkar till sidor f
 
 Använd komponenten **[!UICONTROL Offer decision]** för att infoga erbjudanden i dina meddelanden. Motorn för [beslutshantering](../offers/get-started/starting-offer-decisioning.md) väljer det bästa erbjudandet som ska levereras till dina kunder.
 
-1. Dra och släpp **[!UICONTROL Offer decision]**-komponenten från **[!UICONTROL Content Components]** till en **[!UICONTROL Structure component]**.
+1. Dra och släpp **[!UICONTROL Content Components]**-komponenten från **[!UICONTROL Offer decision]** till en **[!UICONTROL Structure component]**.
 
 1. Klicka på **[!UICONTROL Add]** för att välja din **[!UICONTROL Offer decision]**.
 
