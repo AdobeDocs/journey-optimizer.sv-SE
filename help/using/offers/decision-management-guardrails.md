@@ -6,10 +6,10 @@ feature: Decisioning
 role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: b9a515156e9a79519be59fb52b67762a32c9d03e
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 5%
+source-wordcount: '348'
+ht-degree: 4%
 
 ---
 
@@ -89,3 +89,9 @@ Leveransflödet motsvarar antalet beslutssvar som kan levereras av beslutsstyrni
 | Placeringar | 1000 |
 | AI-rankningsmodell | 5 |
 | Frekvensbegränsning - maximalt antal regler per erbjudande | 10 |
+
+## Konfigurationer {#configurations}
+
+Det totala antalet konfigurationer som stöds av beslutshanteringen får inte överstiga 20 000.
+
+Det totala antalet konfigurationer är det totala antalet [spärrregler](offer-library/add-constraints.md#capping) som finns i din sandlåda. För varje begränsningsregel som tillämpas på alla [placements](offer-library/creating-placements.md) måste regeln multipliceras med alla placeringar som är associerade med det angivna erbjudandet.

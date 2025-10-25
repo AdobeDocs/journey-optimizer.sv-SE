@@ -5,10 +5,10 @@ feature: Decisioning
 role: User
 level: Intermediate
 exl-id: 73548973-ff8d-4d6c-b383-dd3679fa159a
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+source-git-commit: b9a515156e9a79519be59fb52b67762a32c9d03e
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 6%
+source-wordcount: '237'
+ht-degree: 5%
 
 ---
 
@@ -67,3 +67,9 @@ Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsn
 | Totalt antal placeringar | 1 K |
 | AI-rankningsmodell | 5 |
 | Frekvensregler - maximalt antal regler per erbjudande | 10 |
+
+## Konfigurationer {#configurations}
+
+Det totala antalet konfigurationer som beslutsstöd stöder får inte överstiga 20 000.
+
+Det totala antalet konfigurationer är det totala antalet [spärrregler](items.md#capping) som finns i din sandlåda.
