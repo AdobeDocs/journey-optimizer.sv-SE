@@ -8,10 +8,10 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, konfigurera, miljö, underdomän, förinställningar
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: 8e5a904f9310385f5a8186159dedde9942624268
+source-git-commit: 18ff50d9625e3e5be555b6ca274b2d7f61dd126e
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '380'
+ht-degree: 1%
 
 ---
 
@@ -60,15 +60,23 @@ Följ stegen nedan för att skapa en förinställning för en landningssida:
 
    ![](assets/lp_preset-subdomain.png)
 
-   Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en underdomän för landningssida. [Lär dig hur](#lp-subdomains)
+   >[!NOTE]
+   >
+   >Om du vill kunna välja en underdomän kontrollerar du att du tidigare har konfigurerat minst en underdomän för landningssida. [Lär dig hur](lp-subdomains.md)
 
    De inställningar som motsvarar den valda underdomänens visning.
 
-1. Du kan välja landningssidans underdomän för spårnings-URL genom att markera alternativet **[!UICONTROL Same as landing page subdomain]**. [Läs mer om spårning](../email/message-tracking.md)
+1. Du kan välja landningssidans underdomän för **[!UICONTROL Tracking URL]** genom att markera alternativet **[!UICONTROL Same as landing page subdomain]**. [Läs mer om spårning](../email/message-tracking.md)
 
    ![](assets/lp_preset-subdomain-settings-same.png)
 
    Om till exempel landningssidans URL är pages.mail.luma.com och spårnings-URL:en är data.mail.luma.com kan du välja pages.mail.luma.com som ska användas som spårningsunderdomän.
+
+   >[!CAUTION]
+   >
+   >Den valda underdomänen för landningssidan används för att ange **[!UICONTROL Tracking URL]** <!--and **[!UICONTROL Image Delivery URL]** -->om den underdomänen skapades med en [befintlig underdomän](lp-subdomains.md#lp-use-existing-subdomain).
+   >
+   >Om underdomänen skapades med alternativet [Lägg till din egen domän](lp-subdomains.md#lp-configure-new-subdomain) används den primära underdomänen (dvs. den första delegerade underdomänen) i stället.
 
 1. Klicka på **[!UICONTROL Submit]** för att bekräfta att förinställningen för landningssidan har skapats. <!--You can also save the preset as draft and resume its configuration later on.-->
 
