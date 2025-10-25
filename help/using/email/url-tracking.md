@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 5a12280c-b937-4cd9-a1ef-563bab48e42e
-source-git-commit: 87d60ddafb8b3793ef774528a96f60501bb5a1b5
+source-git-commit: ffcf4711d733dad725cbb95fd30438535c922bda
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,10 @@ Du kan också redigera varje **[!UICONTROL Value]**-fält med [anpassningsredige
 
 Följande fördefinierade värden är tillgängliga via personaliseringsredigeraren:
 
+* **Meddelandeprofil-ID**: Meddelandeorienterat attribut som unikt identifierar varje meddelande som skickas till varje målprofil i en leverans.
+
+* **Erbjudande-ID**: ID för erbjudandet som används i e-postmeddelandet.
+
 * **Source åtgärds-ID**: ID för e-poståtgärden som har lagts till i resan eller kampanjen.
 
 * **Source-åtgärdsnamn**: namnet på e-poståtgärden som har lagts till i resan eller kampanjen.
@@ -53,8 +57,6 @@ Följande fördefinierade värden är tillgängliga via personaliseringsredigera
 * **Source-namn**: namn på den resa eller kampanj som e-postmeddelandet skickades med.
 
 * **Source version-ID**: ID för resan eller kampanjversionen som e-postmeddelandet skickades med.
-
-* **Erbjudande-ID**: ID för erbjudandet som används i e-postmeddelandet.
 
 >[!NOTE]
 >
