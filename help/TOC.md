@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 584d860d0908f354389037be860757dabe1c1e3f
+source-git-commit: ef395b65a92fea235811b595cca9bf73f9e78022
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '2999'
 ht-degree: 17%
 
 ---
@@ -48,7 +48,6 @@ ht-degree: 17%
    + [Arbeta med AI Assistant](using/start/ai-assistant.md)
    + [Use Case Playbooks](using/start/playbooks.md)
    + [Skyddsritningar och begränsningar](using/start/guardrails.md)
-   + [Felsökning](using/start/troubleshooting.md)
 + Resor {#orchestrate-journeys}
    + [Resor](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
    + [Kom igång med resor](using/building-journeys/journey.md)
@@ -304,6 +303,7 @@ ht-degree: 17%
    + [Övervakning och felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
    + [Systemvarningar](using/reports/alerts.md)
    + [Referens för felkoder](using/building-journeys/error-codes-reference.md)
+   + [Felsöka artiklar](using/start/troubleshooting.md)
    + Felsökning av resor {#troubleshoot-journey}
       + [Felsöka resefel](using/building-journeys/troubleshooting.md)
       + [Felsöka körning av resa](using/building-journeys/troubleshooting-execution.md)
@@ -884,7 +884,7 @@ ht-degree: 17%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

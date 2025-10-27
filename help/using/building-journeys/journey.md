@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
-source-git-commit: 05b8e6c4500d5ec3b6c2c3b0230499a369c8d8ac
+source-git-commit: ef395b65a92fea235811b595cca9bf73f9e78022
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Inom resedesignern kan marknadsförarna skicka :1-meddelanden i realtid via valf
 
 [Resedesignern](using-the-journey-designer.md) innehåller [inbyggda kanalåtgärder](journeys-message.md) som stöder utgående meddelanden, t.ex. e-post, push-meddelanden och SMS/MMS, samt inkommande kanaler, inklusive mobilappar, webbplatser och kodbaserade upplevelser som skapats direkt i Journey Optimizer. Du kan också använda tredjepartssystem för att skicka meddelanden - via e-post, text eller andra kanaler - i Journey Optimizer ingår [anpassade åtgärder](using-custom-actions.md) så att dessa system kan integreras på resorna direkt från kunddesignern.
 
-Lär dig hur du skapar resor [&#x200B; i dessa fall av typen end-to-end &#x200B;](jo-use-cases.md).
+Lär dig hur du skapar resor [ i dessa fall av typen end-to-end ](jo-use-cases.md).
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Lär dig hur du skapar resor [&#x200B; i dessa fall av typen end-to-end &#x200B;
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
 ## Ytterligare resurser {#additional-resources}
 
@@ -59,3 +59,4 @@ Identifiera komponenterna i en resa och förstå grunderna för hur man bygger e
 * [Felkodsreferens](error-codes-reference.md) - Resefelkoder och felsökningssteg
 * [Varningar](../reports/alerts.md) - Konfigurera aviseringar för reseövervakning
 * [Felsökning](troubleshooting.md) - Vanliga reseproblem och lösningar
+* [Övervakning och felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md) - Verktyg och funktioner för att övervaka och felsöka dina resor

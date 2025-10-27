@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
 version: Journey Orchestration
-source-git-commit: 9336b77e5b7682923dca6e95f0ede67c0d9b0f85
+source-git-commit: ef395b65a92fea235811b595cca9bf73f9e78022
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '696'
 ht-degree: 11%
 
 ---
@@ -118,3 +118,5 @@ När ett fel inträffar i en åtgärd eller ett villkor upphör en individs resa
 Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och publicerar din resa. Du kan inte utföra tester eller publikationer om fel fortfarande upptäcks av systemet.
 
 Lär dig hur du felsöker fel i aktiviteter och under resan [på den här sidan](troubleshooting.md).
+
+Se även **[Övervakning och felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)**.
