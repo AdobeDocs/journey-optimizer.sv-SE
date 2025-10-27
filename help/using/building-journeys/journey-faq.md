@@ -9,9 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
-hide: true
-hidefromtoc: true
-source-git-commit: aece514b3ce21fa7b7a7ada546b4757ce00fa912
+source-git-commit: 584d860d0908f354389037be860757dabe1c1e3f
 workflow-type: tm+mt
 source-wordcount: '4568'
 ht-degree: 0%
@@ -928,4 +926,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

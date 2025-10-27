@@ -7,10 +7,8 @@ feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-hidefromtoc: true
 keywords: fel, koder, felsökning, resa, kampanj, meddelanden
-source-git-commit: 012efffe4b38ccfdc88545566bc49b519c796ad2
+source-git-commit: 584d860d0908f354389037be860757dabe1c1e3f
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -154,7 +152,7 @@ Om du stöter på bestående fel som inte kan åtgärdas med den här guiden:
 
 1. **Samla in information**: Samla in felkoden, begärande-ID, tidsstämplar och steg för att återskapa
 2. **Kontrollera systemstatus**: Besök [Adobe-status](https://status.adobe.com/){target="_blank"} för information om kända tjänstproblem
-3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE){target="_blank"} innehåller lösningar
+3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html){target="_blank"} innehåller lösningar
 4. **Engagemangsgrupp**: Skicka frågor i [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 5. **Kontakta Adobe Support**: Skicka in en supportanmälan med all relevant information
 
