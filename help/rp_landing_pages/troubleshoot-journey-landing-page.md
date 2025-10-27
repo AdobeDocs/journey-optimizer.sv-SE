@@ -5,10 +5,10 @@ title: Felsökning
 description: Felsökning
 redpen-status: CREATED_||_2025-08-11_20-20-50
 exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
-source-git-commit: bf6cc008acba9df44b239e8ac2425c9ffe700229
+source-git-commit: 6ab58b82f5c18f54d8857452d1f91ea96a55933b
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 1%
+source-wordcount: '270'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,27 @@ När en kundresa inte beter sig som förväntat kan det vara svårt att identifi
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+
+Åtkomst och prenumeration på systemaviseringar
+
+Lär dig hur du får åtkomst till systemvarningar, prenumererar på meddelanden och övervakar viktiga händelser under resor och kampanjer.
+
+[Få tillgång till systemvarningar](../using/reports/alerts.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+Referens för felkoder
+
+Förstå vanliga felkoder i Adobe Journey Optimizer och hitta snabba lösningar på problem som rör resor, kampanjer och meddelanden.
+
+[Visa felkodsreferens](../using/building-journeys/error-codes-reference.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Felsöka fel innan du testar eller publicerar din resa
 
@@ -31,7 +51,7 @@ Identifiera och åtgärda fel som rör hela kundresan, aktivitetsproblem och ang
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Felsöka Live Journey-körning i Adobe Journey Optimizer
 
@@ -41,7 +61,7 @@ Diagnostisera problem med händelsvalidering, profilregistrering, resenavigering
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Felsöka inkommande åtgärder i Adobe Journey Optimizer Journeys
 
@@ -51,7 +71,7 @@ Felsök problem med inkommande åtgärder, till exempel saknat innehåll eller f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Felsöka anpassade åtgärder i Adobe Journey Optimizer
 
@@ -60,14 +80,10 @@ Validera och felsök anpassade åtgärder med funktionen Skicka testbegäran fö
 [Validera anpassade åtgärder](../using/action/troubleshoot-custom-action.md)
 :::
 
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
-
-Referens för felkoder
-
-Förstå vanliga felkoder i Adobe Journey Optimizer och hitta snabba lösningar på problem som rör resor, kampanjer och meddelanden.
-
-[Visa felkodsreferens](../using/building-journeys/error-codes-reference.md)
-:::
-
 ::::
+
+## Ytterligare resurser
+
+* [Vanliga frågor om resan](../using/building-journeys/journey-faq.md) - Omfattande svar på vanliga frågor om resor, som omfattar resetyper, körning, konfiguration och felsökning av bästa praxis.
+
+* [Skrivskydd och begränsningar](../using/start/guardrails.md) - Lär dig mer om Journey Optimizer-skyddsutkast, produktbegränsningar, prestandaöverväganden och vilka webbläsare som stöds för att säkerställa optimal användning.

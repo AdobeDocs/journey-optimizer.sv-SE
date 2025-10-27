@@ -4,23 +4,23 @@ product: Journey Optimizer
 title: Testa och godkänn
 description: Testa och godkänn
 redpen-status: CREATED_||_2025-08-11_20-30-59
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: a770412f-2f80-459d-8cce-32212154d154
+source-git-commit: 6ab58b82f5c18f54d8857452d1f91ea96a55933b
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
 
-
 # Testa och godkänn{#section-overview}
 
-Med funktionerna Testa och godkänn i Adobe Journey Optimizer kan ni lugnt fullända era kampanjer och resor före lansering. Vare sig ni förhandsgranskar personaliserat innehåll med testprofiler, ser till att e-postmeddelanden visas snyggt på olika enheter eller validerar att era resor uppfyller organisatoriska standarder genom strukturerade arbetsflöden för godkännande, vägleder det här avsnittet dig steg för steg. Upptäck hur ni simulerar verkliga scenarier, fångar upp potentiella fel tidigt och hanterar godkännanden effektivt - allt för att säkerställa att era kampanjer är korrekta, prydliga och redo att leverera enastående kundupplevelser. Med tydliga instruktioner och praktiska verktyg känner du dig redo att testa, förfina och tryggt publicera.
+Innan ni lanserar era kampanjer och resor måste ni verifiera att de fungerar som förväntat. Förhandsgranska ditt innehåll med [testprofiler](../using/content-management/test-profiles.md), kontrollera e-poståtergivningen på olika enheter och validera reselogiken med [testläge](../using/building-journeys/testing-the-journey.md) eller [torr körning](../using/building-journeys/journey-dry-run.md). Konfigurera [arbetsflöden för godkännande](../using/test-approve/gs-approval.md) för att säkerställa kvalitetskontroll och använd [systemvarningar](../using/reports/alerts.md) för att övervaka problem. Tack vare tidig testning kan ni fånga upp fel och leverera korrekta och effektiva kampanjer.
 
 ## Testa och godkänna innehåll
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förhandsgranska, testa och validera innehåll
 
@@ -30,7 +30,7 @@ Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Arbetsflöden för godkännande av resor och kampanjer
 
@@ -40,13 +40,45 @@ Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
-Åtkomst och prenumeration på systemaviseringar
+Testa din resa
 
-Upptäck hur du hanterar systemvarningar, prenumererar på meddelanden och felsöker problem under resor och kampanjer.
+Validera resan innan du publicerar den genom att testa den med specifika profiler för att säkerställa att händelser, villkor och åtgärder fungerar som förväntat.
 
-[Visa guiden för systemaviseringar](../using/reports/alerts.md)
+[Testa din resa](../using/building-journeys/testing-the-journey.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+
+Körning av resetorr
+
+Utför en torr körning för att simulera och validera kundresan och identifiera potentiella problem innan du publicerar.
+
+[Lär dig mer om körning av körning med resan](../using/building-journeys/journey-dry-run.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Övervakning och felsökning
+
+Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder för att lösa problem med kundresan och prestandan.
+
+[Visa övervakning och felsökning](troubleshoot-journey-landing-page.md)
 :::
 
 ::::
+
+## Ytterligare resurser
+
+* [Live-rapport i din resa](../using/building-journeys/report-journey.md) - Övervaka resemätningar i realtid för att spåra prestanda och identifiera problem under körningen.
+
+* [Skapa testprofiler](../using/audience/creating-test-profiles.md) - Skapa och hantera testprofiler för att simulera verkliga kundscenarier och validera personaliseringen.
+
+* [Innehållshantering](content-management-landing-page.md) - Lär dig hur du utformar, förhandsgranskar och hanterar innehåll med hjälp av mallar, fragment och e-post-Designer.
+
+* [Vanliga frågor och svar om resor](../using/building-journeys/journey-faq.md) - Hitta svar på vanliga frågor om att skapa, testa, köra och felsöka resor.
+
+* [Rapport om skräppost](../using/content-management/spam-report.md) - Kontrollera skräppostresultatet innan du skickar iväg det för att förbättra leveransen och placeringen av inkorgen.

@@ -11,9 +11,9 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 4afd8e455ca0d61ad860ec735c30f1b36bb54e1b
+source-git-commit: d1b031dffa860eb4618d985a53ed13b66f136654
 workflow-type: tm+mt
-source-wordcount: '4526'
+source-wordcount: '4568'
 ht-degree: 0%
 
 ---
@@ -729,7 +729,11 @@ Läs mer om [affärshändelser](general-events.md).
 **Påverkan på resor**:
 
 * Resurserna använder den sammanslagningsprincip som är kopplad till målgruppen eller händelsen för att avgöra vilka profildata som är tillgängliga
-* Sammanslagningspolicyn påverkar vilka attribut och identiteter som är tillgängliga under resan, personalisering och åtgärder
+   * På läs målgrupps- eller målgruppsklassificeringsresor: målgruppspolicyn används
+   * Vid Unitary-händelseresor: standardprincipen för sammanslagning används
+   * Vid affärsevenemangsresor: sammanfogningspolicyn från målgruppen i följande Läs målgruppsaktivitet används
+
+* Sammanslagningspolicyn påverkar vilka attribut som är tillgängliga i resevillkor, personalisering och åtgärder
 * Olika sammanfogningsprinciper kan leda till att olika profildata används under resan
 
 **God praxis**:
@@ -864,4 +868,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: bf6cc008acba9df44b239e8ac2425c9ffe700229
+source-git-commit: 6ab58b82f5c18f54d8857452d1f91ea96a55933b
 workflow-type: tm+mt
-source-wordcount: '2995'
-ht-degree: 18%
+source-wordcount: '2998'
+ht-degree: 17%
 
 ---
 
@@ -202,13 +202,6 @@ ht-degree: 18%
       + [Rita upp leveranser](using/building-journeys/ramp-up-deliveries-uc.md)
       + [Begränsa genomströmning med externa datakällor och anpassade åtgärder](using/building-journeys/limit-throughput.md)
       + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
-   + Felsökning {#troubleshoot-journey}
-      + [Felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
-      + [Referens för felkoder](using/building-journeys/error-codes-reference.md)
-      + [Felsöka resefel](using/building-journeys/troubleshooting.md)
-      + [Felsöka körning av resa](using/building-journeys/troubleshooting-execution.md)
-      + [Felsöka inkommande åtgärder](using/building-journeys/troubleshooting-inbound.md)
-      + [Felsöka anpassade åtgärder](using/action/troubleshoot-custom-action.md)
 + Kampanjer {#campaigns}
    + [Kampanjer](/help/rp_landing_pages/campaigns-landing-page.md)
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
@@ -278,7 +271,7 @@ ht-degree: 18%
          + [Dela](using/orchestrated/activities/split.md)
          + [Test](using/orchestrated/activities/test.md)
          + [Vänta](using/orchestrated/activities/wait.md)
-+ Konflikthantering och -prioritering {#conflict-prioritization}
++ Konflikt och prioritering {#conflict-prioritization}
    + [Konflikthantering och -prioritering](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
    + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
    + [Identifiera potentiella konflikter](using/conflict-prioritization/conflicts.md)
@@ -307,7 +300,15 @@ ht-degree: 18%
       + [Skapa och hantera godkännandepolicyer](using/test-approve/approval-policies.md)
       + [Begär godkännande](using/test-approve/request-approval.md)
       + [Godkänn en begäran](using/test-approve/review-approve-request.md)
++ Övervaka och felsök {#monitor}
+   + [Övervakning och felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
    + [Systemvarningar](using/reports/alerts.md)
+   + [Referens för felkoder](using/building-journeys/error-codes-reference.md)
+   + Felsökning av resor {#troubleshoot-journey}
+      + [Felsöka resefel](using/building-journeys/troubleshooting.md)
+      + [Felsöka körning av resa](using/building-journeys/troubleshooting-execution.md)
+      + [Felsöka inkommande åtgärder](using/building-journeys/troubleshooting-inbound.md)
+      + [Felsöka anpassade åtgärder](using/action/troubleshoot-custom-action.md)
 + Kommunikationskanaler {#channels}
    + [Kom igång med kommunikationskanaler](using/channels/gs-channels.md)
    + E-postkanal {#email}
@@ -883,7 +884,7 @@ ht-degree: 18%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
