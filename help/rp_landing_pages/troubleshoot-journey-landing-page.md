@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Felsökning
 description: Felsökning
 redpen-status: CREATED_||_2025-08-11_20-20-50
-source-git-commit: 54542a9172e34e0d9bc7c06ed4a6d0bd7778f31b
+exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
+source-git-commit: bf6cc008acba9df44b239e8ac2425c9ffe700229
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 3%
+source-wordcount: '203'
+ht-degree: 1%
 
 ---
-
 
 # Felsökning{#section-overview}
 
@@ -21,7 +21,7 @@ När en kundresa inte beter sig som förväntat kan det vara svårt att identifi
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Felsöka fel innan du testar eller publicerar din resa
 
@@ -31,7 +31,7 @@ Identifiera och åtgärda fel som rör hela kundresan, aktivitetsproblem och ang
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Felsöka Live Journey-körning i Adobe Journey Optimizer
 
@@ -41,7 +41,7 @@ Diagnostisera problem med händelsvalidering, profilregistrering, resenavigering
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Felsöka inkommande åtgärder i Adobe Journey Optimizer Journeys
 
@@ -51,7 +51,7 @@ Felsök problem med inkommande åtgärder, till exempel saknat innehåll eller f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Felsöka anpassade åtgärder i Adobe Journey Optimizer
 
@@ -60,8 +60,14 @@ Validera och felsök anpassade åtgärder med funktionen Skicka testbegäran fö
 [Validera anpassade åtgärder](../using/action/troubleshoot-custom-action.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+Referens för felkoder
+
+Förstå vanliga felkoder i Adobe Journey Optimizer och hitta snabba lösningar på problem som rör resor, kampanjer och meddelanden.
+
+[Visa felkodsreferens](../using/building-journeys/error-codes-reference.md)
+:::
+
 ::::
-
-### Ytterligare resurser
-
-Du kan även ta en titt på [det här blogginlägget för Adobe Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884) med information om vanliga felkoder och hur du löser dem effektivt.
