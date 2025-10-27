@@ -8,9 +8,9 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
-source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
+source-git-commit: 5a6abcd48495a66496495e62c6027c2fd0fdd4c4
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,11 @@ Den här sidan förklarar hur kampanjer med högt dataflöde skiljer sig från k
    * All personalisering måste inkluderas i API-nyttolasten som **kontextuella data**. [Lär dig hur du anpassar innehåll med sammanhangsberoende data](../campaigns/api-triggered-campaign-action.md#contextual)
    * Profilbaserad personalisering stöds inte. Om profilvariabler används inträffar valideringsfel.
 
+* **Personaliserade kanalkonfigurationer** - Kanalkonfigurationer som använder [profilbaserad personalisering](../email/surface-personalization.md) kan inte användas med kampanjer med högt dataflöde. Endast ytor utan profilanpassning kan användas.
+
 * **API-slutpunkt** - Högflödeskampanjer använder en annan slutpunkt än standardkampanjer som utlöses av API. Mer information finns i [Kör en API-utlöst kampanj](../campaigns/trigger-campaigns.md#trigger).
 
-* **Exklusivitet för kampanj**: Högeffektiva genomströmningskampanjer använder inte Adobe-profiler. Meddelanden levereras oavsett om det finns en profil eller inte.
+* **Exklusivitet för kampanj** - Högeffektiva kampanjer använder inte Adobe-profiler. Meddelanden levereras oavsett om det finns en profil eller inte.
 
   Dessutom kan en kampanj inte användas för både profilaktiverade och icke-profilerade användningsfall. Om ni behöver båda, skapar ni två separata kampanjer och ser till att det anropande systemet avgör vilken som ska utlösas baserat på sammanhanget.
 
