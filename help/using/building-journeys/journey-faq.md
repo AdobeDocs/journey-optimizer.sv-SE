@@ -11,9 +11,9 @@ keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: d1b031dffa860eb4618d985a53ed13b66f136654
+source-git-commit: 0b4dc91b945d17647029d89e294221ff97a26881
 workflow-type: tm+mt
-source-wordcount: '4568'
+source-wordcount: '4938'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,63 @@ En resa består av
 * **Anpassade åtgärder**: Integrering med tredjepartssystem
 
 Läs mer om [reseaktiviteter](about-journey-activities.md).
+
++++
+
++++ Vilka typer av målgrupper stöds vid resor och vilka begränsningar har de?
+
+Adobe Journey Optimizer har stöd för tre typer av målgrupper med olika egenskaper och skyddsräcken:
+
+**1. Direktuppspelande målgrupper**
+
+* **Beskrivning**: Målgrupper som utvärderas i realtid när profildata ändras
+* **Utvärdering**: Kontinuerlig utvärdering när profilattribut eller händelser matchar segmentkriterier
+* **Reseanvändning**: Stöds i aktiviteterna Läs målgrupp, Målgruppskvalifikation och Villkor
+* **Bäst för**: Interaktion i realtid baserat på beteendeförändringar eller profiluppdateringar
+* **Guardrails**:
+   * Största antal användare beror på din Journey Optimizer-licens
+   * Utvärderingsfördröjning normalt under 5 minuter
+   * Komplex segmentlogik kan påverka utvärderingen
+
+**2. Gruppera målgrupper**
+
+* **Beskrivning**: Publiker som utvärderas på schemalagd basis (vanligtvis dagligen)
+* **Utvärdering**: Bearbetad i batchjobb med schemalagda intervall
+* **Reseanvändning**: Stöds i Läs målgrupps- och villkorsaktiviteter; begränsat stöd i målgruppskompetensresor
+* **Bäst för**: Regelbundna kampanjer, nyhetsbrev, schemalagd kommunikation
+* **Guardrails**:
+   * Utvärderingen sker en gång om dagen (standard) eller enligt konfigurerat schema
+   * Profiler kanske inte återspeglar realtidsändringar förrän nästa utvärdering
+   * Läsa målgrupper kan bearbeta stora grupper effektivt
+
+**3. Överför målgrupper (anpassad överföring)**
+
+* **Beskrivning**: Målgrupper som skapats genom att CSV-filer har överförts med profilidentifierare
+* **Utvärdering**: Statisk lista uppdateras bara när nya filer överförs
+* **Reseanvändning**: Stöds i Läs målgrupps- och villkorsaktiviteter; **stöds inte** i målgruppskvalificeringsresor
+* **Bäst för**: Engångskampanjer, extern listimport, riktad kommunikation
+* **Guardrails**:
+   * Storleksbegränsningar för CSV-filer gäller (se produktdokumentationen för aktuella begränsningar)
+   * Målgruppsmedlemmarna är statiska tills de uppdateras med ny överföring
+   * Identitetsnamnrymden måste matcha resenamnrymden
+   * Profilerna måste finnas i Adobe Experience Platform
+
+**Resespecifika överväganden**:
+
+* **Läs målgruppsresor**: Alla tre målgruppstyper stöds; batchexport sker när resan körs
+* **Målgruppskvalificeringsresor**: Direktuppspelande målgrupper rekommenderas; batchmålgrupper har fördröjd kvalificeringsidentifiering; uppladdning av målgrupper stöds inte
+* **Villkorsaktiviteter**: Alla målgruppstyper kan användas för att kontrollera medlemskap
+* **Namnområdesjustering**: Namnområdet för målets identitet måste matcha kundens namnutrymme för korrekt profilidentifiering
+
+**God praxis**:
+
+* Använd **direktuppspelade målgrupper** för händelsestyrda resor i realtid som kräver omedelbar respons
+* Använd **gruppmålgrupper** för schemalagd kommunikation där daglig utvärdering är tillräckligt
+* Använd **överför målgrupper** för riktade engångskampanjer med externa listor
+* Övervaka målgruppens storlek och utvärderingsprestanda i storskaliga installationer
+* Fundera på uppdateringsfrekvensen när ni utformar restider och villkor
+
+Läs mer om [målgrupper](../audience/about-audiences.md), [skapa segment](../audience/creating-a-segment-definition.md) och [anpassade uppladdningsmålgrupper](../audience/custom-upload.md).
 
 +++
 
@@ -868,4 +925,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
