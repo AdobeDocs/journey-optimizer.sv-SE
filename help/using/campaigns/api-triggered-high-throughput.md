@@ -8,9 +8,9 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
-source-git-commit: 5a6abcd48495a66496495e62c6027c2fd0fdd4c4
+source-git-commit: 4521990a02092365f996a81299ada55433639fb7
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,15 @@ Den här sidan förklarar hur kampanjer med högt dataflöde skiljer sig från k
 * **Exklusivitet för kampanj** - Högeffektiva kampanjer använder inte Adobe-profiler. Meddelanden levereras oavsett om det finns en profil eller inte.
 
   Dessutom kan en kampanj inte användas för både profilaktiverade och icke-profilerade användningsfall. Om ni behöver båda, skapar ni två separata kampanjer och ser till att det anropande systemet avgör vilken som ska utlösas baserat på sammanhanget.
+
+* **Datauppsättningar för feedback och spårning** - Feedback- och spårningsdata för kampanjer med högt dataflöde lagras i dedikerade datauppsättningar som inte är aktiverade för profiler. Detta innebär att dessa händelser inte sammanfogas med profiler, även om det finns en matchande profil.
+
+  De datauppsättningar som används är:
+
+   * **Händelsedatauppsättning för AJO-meddelandefeedback - Ej profil**
+   * **AJO Experience Event-datauppsättning för e-postspårning - icke-profil**
+
+* **Genomströmningsallokering** - Genomströmningen som tillhandahålls med tillägget Högdataflöde är exklusivt reserverad för kampanjer med högt dataflöde. Det finns ingen delning av genomströmning mellan standardkampanjer och API-kampanjer med hög genomströmning.
 
 ## Välj mellan standardkampanjer och kampanjer med hög genomströmning
 
