@@ -5,9 +5,9 @@ title: Felsökning
 description: Felsökning
 redpen-status: CREATED_||_2025-08-11_20-20-50
 exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
-source-git-commit: 7894041f841ed14eb3feb626f7d8d818c1b464fa
+source-git-commit: eca6378093abcb2a75ebfee56be82bb2257d514d
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '402'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ På den här sidan samlas viktiga resurser som hjälper dig att övervaka resans
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Åtkomst och prenumeration på systemaviseringar
 
@@ -35,7 +35,7 @@ Lär dig hur du får åtkomst till systemvarningar, prenumererar på meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Referens för felkoder
 
@@ -45,7 +45,7 @@ Förstå vanliga felkoder i Adobe Journey Optimizer och hitta snabba lösningar 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Felsöka fel innan du testar eller publicerar din resa
 
@@ -55,9 +55,9 @@ Identifiera och åtgärda fel som rör hela kundresan, aktivitetsproblem och ang
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Felsöka Live Journey-körning i Adobe Journey Optimizer
+Felsökning av körning av Live Journey
 
 Diagnostisera problem med händelsvalidering, profilregistrering, resenavigering och meddelandeleverans under live-körning.
 
@@ -65,9 +65,9 @@ Diagnostisera problem med händelsvalidering, profilregistrering, resenavigering
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
-Felsöka inkommande åtgärder i Adobe Journey Optimizer Journeys
+Felsöka inkommande åtgärder i resor
 
 Felsök problem med inkommande åtgärder, till exempel saknat innehåll eller fortsatt leverans efter att profilen stängts med detaljerade stegvisa guider.
 
@@ -75,9 +75,9 @@ Felsök problem med inkommande åtgärder, till exempel saknat innehåll eller f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Felsöka anpassade åtgärder i Adobe Journey Optimizer
+Felsöka anpassade åtgärder
 
 Validera och felsök anpassade åtgärder med funktionen Skicka testbegäran för att säkerställa att API-anrop och autentiseringsinställningar är korrekta.
 
