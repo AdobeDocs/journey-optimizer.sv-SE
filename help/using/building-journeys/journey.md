@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 05b8e6c4500d5ec3b6c2c3b0230499a369c8d8ac
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Inom resedesignern kan marknadsförarna skicka :1-meddelanden i realtid via valf
 
 [Resedesignern](using-the-journey-designer.md) innehåller [inbyggda kanalåtgärder](journeys-message.md) som stöder utgående meddelanden, t.ex. e-post, push-meddelanden och SMS/MMS, samt inkommande kanaler, inklusive mobilappar, webbplatser och kodbaserade upplevelser som skapats direkt i Journey Optimizer. Du kan också använda tredjepartssystem för att skicka meddelanden - via e-post, text eller andra kanaler - i Journey Optimizer ingår [anpassade åtgärder](using-custom-actions.md) så att dessa system kan integreras på resorna direkt från kunddesignern.
 
-Lär dig hur du skapar resor [&#x200B; i dessa fall av typen end-to-end &#x200B;](jo-use-cases.md).
+Lär dig hur du skapar resor [ i dessa fall av typen end-to-end ](jo-use-cases.md).
 
 >[!NOTE]
 >
@@ -51,4 +51,11 @@ Lär dig hur du skapar resor [&#x200B; i dessa fall av typen end-to-end &#x200B;
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+
+## Ytterligare resurser {#additional-resources}
+
+* [Vanliga frågor om resan](journey-faq.md) - Vanliga frågor om resor
+* [Felkodsreferens](error-codes-reference.md) - Resefelkoder och felsökningssteg
+* [Varningar](../reports/alerts.md) - Konfigurera aviseringar för reseövervakning
+* [Felsökning](troubleshooting.md) - Vanliga reseproblem och lösningar
