@@ -51,7 +51,7 @@ Lär dig hur du skapar resor [&#x200B; i dessa fall av typen end-to-end &#x200B;
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
 
 ## Ytterligare resurser {#additional-resources}
 
