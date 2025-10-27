@@ -20,7 +20,7 @@ Adobe Journey Optimizer utnyttjar kraften i artificiell intelligens och maskinin
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 AI-assistenten för innehållsgenerering
 
@@ -30,7 +30,7 @@ Utnyttja generativ AI för att skapa och personalisera innehåll i e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Sändningsoptimering
 
@@ -40,7 +40,7 @@ Använd AI för att förutsäga den optimala tiden för att skicka meddelanden o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 AI-modeller för beslut
 
@@ -50,7 +50,7 @@ Skapa automatiska optimeringsmodeller och personaliserade optimeringsmodeller f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 AI Assistant Product Knowledge
 
@@ -60,7 +60,7 @@ Få svar och driftsinsikter om Adobe Journey Optimizer med hjälp av konversatio
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Experimentera med AI
 
@@ -70,7 +70,7 @@ Generera olika varianter och experimentera för att identifiera det material som
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 AI-integrering för kunder
 
