@@ -5,22 +5,24 @@ title: Kom igång
 description: Kom igång
 redpen-status: CREATED_||_2025-08-11_20-05-24
 exl-id: fee218bf-8c60-442d-ac41-a3856fc71b70
-source-git-commit: 08599d8a9249115a4ce7f339b3565b7805db83e4
+source-git-commit: f116775dfa5bb46857c5e9401a291b46105ebcca
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '352'
 ht-degree: 2%
 
 ---
 
 # Kom igång{#section-overview}
 
-Adobe Journey Optimizer ger företag möjlighet att skapa personaliserade kundupplevelser i realtid över flera kanaler, vilket hjälper er att möta kunderna där de befinner sig med rätt budskap vid rätt tidpunkt. Oavsett om ni genomför komplexa kundresor, utnyttjar AI-drivet beslutsfattande eller hanterar innehåll och data sömlöst, innehåller den här plattformen verktyg för att optimera varje interaktion. I det här avsnittet ska du utforska hur dess nyckelfunktioner - som flerkanalssamordning, realtidsinsikter och intelligent beslutsfattande - passar ihop för att ge slagkraftiga resultat. Varje avsnitt bygger upp din förståelse steg för steg och gör det enkelt att förstå hur Adobe Journey Optimizer omvandlar kundengagemang till en dynamisk och datadriven process.
+Adobe Journey Optimizer ger er möjlighet att leverera personaliserade kundupplevelser i realtid i alla kanaler. Möt era kunder där de är med rätt budskap vid rätt tidpunkt.
+
+I det här avsnittet presenteras plattformens kärnfunktioner - från flerkanalssamordning och AI-driven beslutsfattande till smidig innehålls- och datahantering. Ni kommer att upptäcka hur dessa kraftfulla verktyg fungerar tillsammans för att optimera varje kundinteraktion. Varje avsnitt bygger vidare på det sista, och vägleder er steg för steg mot att bemästra kundengagemanget på ett dynamiskt, datadrivet sätt.
 
 ## Kom igång med Adobe Journey Optimizer
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Nyckelfunktioner
 
@@ -30,7 +32,7 @@ Upptäck Adobe Journey Optimizer kärnfunktioner, användningsexempel och arkite
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Arkitektur - översikt
 
@@ -40,7 +42,7 @@ Förstå hur Adobe Journey Optimizer kan integreras med Adobe Experience Platfor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Roller och ansvarsområden
 
@@ -50,7 +52,7 @@ Få en översikt över de roller och arbetsflöden som krävs för att implement
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Översikt över användargränssnittet
 
@@ -60,7 +62,7 @@ Navigera i Adobe Journey Optimizer gränssnitt och utforska dess funktioner, ink
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Söka, filtrera och ordna innehåll
 
@@ -70,7 +72,7 @@ Använd sök-, filter- och taggningsfunktionerna för att hantera och ordna reso
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Gardrutor och begränsningar
 
