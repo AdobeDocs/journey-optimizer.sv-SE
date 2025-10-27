@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
-source-git-commit: da7d895fcc724e6b1c0d6480f6a8693037a03752
+source-git-commit: 71b12ea083d72597c65e8fb2dc3424ffafa77462
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1990'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Så här lägger du till ett meddelande i appen under en resa:
 
    1. Välj villkoret **[!UICONTROL And]** om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
 
-      +++Se tillgängliga fack.
+      +++Se tillgängliga egenskaper.
 
       | Paket | Traits | Definition |
       |---|---|---|
@@ -110,7 +110,7 @@ Så här lägger du till ett meddelande i appen under en resa:
    1. Välj hur ofta utlösaren ska visas när meddelandet i appen är aktivt:
 
       * **[!UICONTROL Show every time]**: Visa alltid meddelandet när de händelser som valts i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
-      * **[!UICONTROL Show once]**: Visa endast det här meddelandet första gången som de händelser som är markerade i listrutan **[!UICONTROL Mobile app trigger]** inträffar.
+      * **[!UICONTROL Show once]**: Det här meddelandet visas bara en gång per användarsession och är synligt i alla fönster eller aktiviteter tills det stängs. Använd anpassad logik med meddelandeombudet för att begränsa den till en viss skärm eller få den att stängas automatiskt.
       * **[!UICONTROL Show until click through]**: Visa det här meddelandet när de händelser som markerats i listrutan **[!UICONTROL Mobile app trigger]** inträffar tills en interaktionshändelse skickas av SDK med åtgärden&quot;klickad&quot;.
 
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
@@ -183,7 +183,7 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
    1. Välj villkoret **[!UICONTROL And]** om du vill lägga till **[!UICONTROL Traits]** och finjustera regeln bättre.
 
-      +++Se tillgängliga fack.
+      +++Se tillgängliga egenskaper.
 
       | Paket | Traits | Definition |
       |---|---|---|
@@ -234,25 +234,25 @@ Så här lägger du till ett meddelande i appen i en kampanj:
 
 * I videon nedan visas hur du skapar, konfigurerar och publicerar meddelanden i appen i dina kampanjer.
 
-  +++Se video
+  +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3451886?quality=12&learn=on&captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3410430?quality=12&learn=on)
 
   +++
 
 * I videon nedan visas hur du konfigurerar och analyserar innehållsexperiment med A/B-testmeddelanden i appen.
 
-  +++Se video
+  +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3445292/?learn=on&autoplay=true&captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3419898/?learn=on&autoplay=true)
 
   +++
 
 * I videon nedan visas hur du skapar ett meddelande i appen under en resa och hur du testar och publicerar din resa.
 
-  +++Se video
+  +++Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3451836/?learn=on&autoplay=true&captions=swe)
+  >[!VIDEO](https://video.tv.adobe.com/v/3423077/?learn=on&autoplay=true)
 
   +++
 
