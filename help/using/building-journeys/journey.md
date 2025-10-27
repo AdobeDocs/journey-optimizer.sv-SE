@@ -41,7 +41,7 @@ Inom resedesignern kan marknadsförarna skicka :1-meddelanden i realtid via valf
 
 [Resedesignern](using-the-journey-designer.md) innehåller [inbyggda kanalåtgärder](journeys-message.md) som stöder utgående meddelanden, t.ex. e-post, push-meddelanden och SMS/MMS, samt inkommande kanaler, inklusive mobilappar, webbplatser och kodbaserade upplevelser som skapats direkt i Journey Optimizer. Du kan också använda tredjepartssystem för att skicka meddelanden - via e-post, text eller andra kanaler - i Journey Optimizer ingår [anpassade åtgärder](using-custom-actions.md) så att dessa system kan integreras på resorna direkt från kunddesignern.
 
-Lär dig hur du skapar resor [ i dessa fall av typen end-to-end ](jo-use-cases.md).
+Lär dig hur du skapar resor [&#x200B; i dessa fall av typen end-to-end &#x200B;](jo-use-cases.md).
 
 >[!NOTE]
 >
