@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: fel, koder, felsökning, resa, kampanj, meddelanden
-source-git-commit: 584d860d0908f354389037be860757dabe1c1e3f
+source-git-commit: d9d0ca98d5f86a32653c9cb73197873cb31a2c6f
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
@@ -118,8 +118,9 @@ När du stöter på en felkod ska du följa detta systematiska tillvägagångss�
 
 ### Aktivering före resan {#journey-best-practices}
 
-* **Verifiera alla resurser**: Kontrollera att alla refererade målgrupper, datakällor och anpassade åtgärder är aktiva
+* **Verifiera alla resurser**: Kontrollera att alla refererade målgrupper, händelser, datakällor och anpassade åtgärder är korrekt konfigurerade
 * **Testa noggrant**: Använd testläge för att identifiera problem före publicering ([Läs mer](testing-the-journey.md))
+* **Verifiera volymer**: Använd torr körning för att validera målgruppens räckvidd och grenlogik innan du aktiverar ([Läs mer](journey-dry-run.md))
 * **Kontrollera behörigheter**: Kontrollera att du har nödvändiga åtkomstbehörigheter för alla komponenter
 * **Granska beroenden**: Se till att alla länkade meddelanden och allt innehåll publiceras
 
@@ -152,7 +153,7 @@ Om du stöter på bestående fel som inte kan åtgärdas med den här guiden:
 
 1. **Samla in information**: Samla in felkoden, begärande-ID, tidsstämplar och steg för att återskapa
 2. **Kontrollera systemstatus**: Besök [Adobe-status](https://status.adobe.com/){target="_blank"} för information om kända tjänstproblem
-3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE){target="_blank"} innehåller lösningar
+3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html){target="_blank"} innehåller lösningar
 4. **Engagemangsgrupp**: Skicka frågor i [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 5. **Kontakta Adobe Support**: Skicka in en supportanmälan med all relevant information
 
