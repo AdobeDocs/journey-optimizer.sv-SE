@@ -5,7 +5,7 @@ title: AI Capabilities in Adobe Journey Optimizer
 description: AI Capabilities in Adobe Journey Optimizer
 hide: true
 hidefromtoc: true
-source-git-commit: 9d0460d303a3701ad7ff5b7f2487ac6ccdd6facd
+source-git-commit: 2b377fea2f54c15d04fd0fc16633951c58598580
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Adobe Journey Optimizer utnyttjar kraften i artificiell intelligens och maskinin
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/sparkles.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 AI-assistenten för innehållsgenerering
 
@@ -30,7 +30,7 @@ Utnyttja generativ AI för att skapa och personalisera innehåll i e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Sändningsoptimering
 
@@ -40,7 +40,7 @@ Använd AI för att förutsäga den optimala tiden för att skicka meddelanden o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 AI-modeller för beslut
 
@@ -50,7 +50,7 @@ Skapa automatiska optimeringsmodeller och personaliserade optimeringsmodeller f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/help.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 AI Assistant Product Knowledge
 
@@ -60,7 +60,7 @@ Få svar och driftsinsikter om Adobe Journey Optimizer med hjälp av konversatio
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/experiment.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Experimentera med AI
 
@@ -70,7 +70,7 @@ Generera olika varianter och experimentera för att identifiera det material som
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/user-group.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 AI-integrering för kunder
 
