@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Innehållshantering
 description: Innehållshantering
 redpen-status: CREATED_||_2025-08-12_00-44-43
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 159ae1bf-e1bd-48c7-b91b-2ac8bdfffaf2
+source-git-commit: b8c2b05df22e4aa78ea95e47e1554c9d538dfc0f
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
-
 
 # Innehållshantering{#section-overview}
 
@@ -20,9 +20,9 @@ Med Adobe Journey Optimizer Content Management-funktioner kan ni skapa, personal
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
-PERSONALIZATION i ADOBE JOURNEY OPTIMIZER
+Lägg till Personalization
 
 Lär dig hur du implementerar och optimerar personaliseringsfunktioner för att skapa skräddarsydda kundupplevelser.
 
@@ -30,9 +30,9 @@ Lär dig hur du implementerar och optimerar personaliseringsfunktioner för att 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-Landningssidor i Adobe Journey Optimizer
+Skapa landningssidor
 
 Upptäck verktyg och självstudiekurser för att skapa, hantera och optimera landningssidor för marknadsföringskampanjer.
 
@@ -40,9 +40,9 @@ Upptäck verktyg och självstudiekurser för att skapa, hantera och optimera lan
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Innehållsmallar i Adobe Journey Optimizer
+Innehållsmallar
 
 Effektivisera framtagningen av innehåll med återanvändbara mallar för effektiv hantering av kampanjer och resor.
 
@@ -50,7 +50,7 @@ Effektivisera framtagningen av innehåll med återanvändbara mallar för effekt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Återanvändbara innehållsfragment
 
@@ -60,9 +60,9 @@ Lär dig hur du skapar och hanterar återanvändbara innehållsfragment för per
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Dynamiskt innehåll i Adobe Journey Optimizer
+Skapa dynamiskt innehåll
 
 Använd villkorsregler för att skapa dynamiskt, personaliserat innehåll för e-post, SMS och push-meddelanden.
 
@@ -70,7 +70,7 @@ Använd villkorsregler för att skapa dynamiskt, personaliserat innehåll för e
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Användningsexempel för flera lösningar
 
