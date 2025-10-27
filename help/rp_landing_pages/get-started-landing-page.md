@@ -20,7 +20,7 @@ Adobe Journey Optimizer ger företag möjlighet att skapa personaliserade kundup
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Viktiga funktioner i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Upptäck Adobe Journey Optimizer kärnfunktioner, användningsexempel och arkite
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Adobe Journey Optimizer Architecture Overview
 
@@ -40,7 +40,7 @@ Förstå hur Adobe Journey Optimizer kan integreras med Adobe Experience Platfor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Roller och ansvar i Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Få en översikt över de roller och arbetsflöden som krävs för att implement
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Adobe Journey Optimizer användargränssnitt - översikt
 
@@ -60,7 +60,7 @@ Navigera i Adobe Journey Optimizer gränssnitt och utforska dess funktioner, ink
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Söka, filtrera och ordna innehåll i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Använd sök-, filter- och taggningsfunktionerna för att hantera och ordna reso
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Guardrails and Limcitations in Adobe Journey Optimizer
 
