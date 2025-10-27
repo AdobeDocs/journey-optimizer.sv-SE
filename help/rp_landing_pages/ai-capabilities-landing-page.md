@@ -30,7 +30,7 @@ Utnyttja generativ AI för att skapa och personalisera innehåll i e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
 
 Sändningsoptimering
 
@@ -70,7 +70,7 @@ Generera olika varianter och experimentera för att identifiera det material som
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/user-group.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/user-group.svg?lang=sv-SE)
 
 AI-integrering för kunder
 
