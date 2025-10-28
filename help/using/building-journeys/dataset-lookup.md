@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 version: Journey Orchestration
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
-source-git-commit: 5b7847957cc0fa176a32c7e0b01d5f41fd424610
+source-git-commit: ccd9f1aa3359875796104d9789d5dd8c0279c0c1
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Datauppsättningen måste aktiveras för sökning i Adobe Experience Platform. D
 
 * Maximalt 10 uppslagsaktiviteter för datauppsättningar per resa.
 * Högst 20 markerade fält.
-* Högst 500 nycklar i uppslagstangentarrayen.
+* Högst 50 nycklar i uppslagstangentarrayen.
 * Förbättrad datastorlek är begränsad till 10 kB.
 
 ### Ytterligare prestandaöverväganden
