@@ -4,9 +4,9 @@ product: journey optimizer
 title: Adobe Journey Optimizer release cycle
 feature: Release Notes
 description: Förstå Adobe Journey Optimizer versionscykel
-source-git-commit: f116775dfa5bb46857c5e9401a291b46105ebcca
+source-git-commit: cef105e55f3353c616e18be84faa0ee774aeac06
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,11 @@ Du kan prenumerera på **e-postmeddelanden och produktmeddelanden** för Journey
 
 ![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
 
-## Vanliga frågor och svar {#faq}
+## Vanliga frågor {#faq}
+
+Nedan finns Frågor och svar om Adobe Journey Optimizer releasecykel.
+
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ När planeras Adobe Journey Optimizer-releaser?
 

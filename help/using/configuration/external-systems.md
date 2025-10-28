@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: cef105e55f3353c616e18be84faa0ee774aeac06
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 18%
+source-wordcount: '1654'
+ht-degree: 17%
 
 ---
 
@@ -33,7 +33,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## API:er för begränsning och begränsning {#capping}
 
@@ -106,21 +106,31 @@ Låt oss ta ett exempel i 5 sekunder.
    * Om ett av de tre försöken lyckas före slutet av de fem sekunderna utförs anropet och det finns inget fel.
    * Om tidsgränsen nås under återförsöken avbryts anropet och räknas som ett timeout-fel i rapporteringen.
 
-## Vanliga frågor och svar{#faq}
+## Vanliga frågor {#faq}
 
-**Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?**
+Nedan finns Frågor och svar om hur du integrerar Journey Optimizer med externa system.
+
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+
++++ Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?
 
 Se [det här avsnittet](../configuration/external-systems.md#capping) om du vill skapa regler för begränsning och begränsning. Som standard finns det ingen begränsning, men en begränsning på 300 000 anrop över en minut som definierats för alla anpassade åtgärder, per värd och per sandlåda. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning.
 
-**Hur många försök utförs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?**
++++
+
++++ Hur många återförsök görs? Kan jag ändra antalet återförsök eller definiera en minsta vänteperiod mellan återförsök?
 
 För ett visst anrop kan högst tre försök utföras efter det första anropet, tills tidsgränsen för anropet har nåtts. Antalet försök och tiden mellan varje nytt försök kan inte ändras. Se [det här avsnittet](../configuration/external-systems.md#timeout).
 
-**Var kan jag konfigurera timeout? Finns det ett maxvärde?**
++++
+
++++ Var kan jag konfigurera tidsgränsen? Finns det ett maxvärde?
 
 Under varje resa kan du definiera en tidsgräns. Tidsgränsen har konfigurerats i egenskaperna för en resa. Tidsgränsen måste vara mellan 1 och 30 sekunder. Se [det här avsnittet](../configuration/external-systems.md#timeout) och [sidan](../building-journeys/journey-properties.md#timeout_and_error).
 
-**Vad är det högsta antalet anslutningar som öppnas av Journey Optimizer när anpassade åtgärder används?**
++++
+
++++ Vilket är det högsta antalet anslutningar som öppnas av Journey Optimizer när anpassade åtgärder används?
 
 När IP-proxyn är aktiverad och en begränsningskonfiguration har definierats för målslutpunkten, baseras antalet anslutningar på hastigheten (dessa är uppskattningar, inte garanterade siffror):
 
@@ -130,3 +140,5 @@ När IP-proxyn är aktiverad och en begränsningskonfiguration har definierats f
 * mellan 4 000 och 5 000: 125 anslutningar
 
 Om ingen begränsningskonfiguration har definierats för en slutpunkt är Journey Optimizer-motorn utformad för att skalas upp och kan få ett stort antal anslutningar (fler än 2 000). För att få ett begränsat antal anslutningar måste kunderna använda en begränsningskonfiguration.
+
++++
