@@ -21,7 +21,7 @@ När du skapar resor och kampanjer använder du knappen **Varningar** för att k
 
 * Lär dig felsöka dina resor på [den här sidan](../building-journeys/troubleshooting.md)
 
-* Lär dig hur du granskar och aktiverar kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [ API-utlösta kampanjer ](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md)
+* Lär dig hur du granskar och aktiverar kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [&#x200B; API-utlösta kampanjer &#x200B;](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md)
 
 
 Dessutom kan varningsmeddelanden skickas till alla användare i organisationen som har prenumererat på dem när vissa villkor är uppfyllda. Dessa aviseringar är tillgängliga på den dedikerade **[!UICONTROL Alerts]**-menyn. Adobe Experience Platform innehåller flera fördefinierade varningsregler som du kan aktivera för din organisation. Dessutom kan du prenumerera på [!DNL Adobe Journey Optimizer]-specifika systemaviseringar så som beskrivs på den här sidan.
