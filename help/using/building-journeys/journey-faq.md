@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
-source-git-commit: 584d860d0908f354389037be860757dabe1c1e3f
+source-git-commit: fa4849cfbb43d74ab85437f00acf6da750080cca
 workflow-type: tm+mt
-source-wordcount: '4568'
+source-wordcount: '5125'
 ht-degree: 0%
 
 ---
@@ -74,65 +74,79 @@ Läs mer om [reseaktiviteter](about-journey-activities.md).
 
 +++
 
-<!-- WAITING FOR VALIDATION
++++ Vilka typer av målgrupper stöds vid resor och vilka begränsningar har de?
 
-+++ What types of audiences are supported in journeys and what are their limitations?
+Adobe Journey Optimizer har stöd för fyra typer av målgrupper med olika egenskaper och skyddsräcken:
 
-Adobe Journey Optimizer supports three types of audiences, each with different characteristics and guardrails:
+**1. Direktuppspelande målgrupper**
 
-**1. Streaming audiences**
-
-* **Description**: Audiences that evaluate in real-time as profile data changes
-* **Evaluation**: Continuous evaluation when profile attributes or events match segment criteria
-* **Journey usage**: Supported in Read Audience, Audience Qualification, and Condition activities
-* **Best for**: Real-time engagement based on behavioral changes or profile updates
+* **Beskrivning**: Målgrupper som utvärderas i realtid när profildata ändras
+* **Utvärdering**: Kontinuerlig utvärdering när profilattribut eller händelser matchar segmentkriterier
+* **Reseanvändning**: Stöds i aktiviteterna Läs målgrupp, Målgruppskvalifikation och Villkor
+* **Bäst för**: Interaktion i realtid baserat på beteendeförändringar eller profiluppdateringar
 * **Guardrails**:
-  * Maximum audience size depends on your Journey Optimizer license
-  * Evaluation latency typically under 5 minutes
-  * Complex segment logic may impact evaluation performance
+   * Största antal användare beror på din Journey Optimizer-licens
+   * Utvärderingsfördröjning normalt under 5 minuter
+   * Komplex segmentlogik kan påverka utvärderingen
 
-**2. Batch audiences**
+**2. Gruppera målgrupper**
 
-* **Description**: Audiences evaluated on a scheduled basis (typically daily)
-* **Evaluation**: Processed in batch jobs at scheduled intervals
-* **Journey usage**: Supported in Read Audience and Condition activities; limited support in Audience Qualification journeys
-* **Best for**: Regular campaigns, newsletters, scheduled communications
+* **Beskrivning**: Publiker som utvärderas på schemalagd basis (vanligtvis dagligen)
+* **Utvärdering**: Bearbetad i batchjobb med schemalagda intervall
+* **Reseanvändning**: Stöds i Läs målgrupps- och villkorsaktiviteter; begränsat stöd i målgruppskompetensresor
+* **Bäst för**: Regelbundna kampanjer, nyhetsbrev, schemalagd kommunikation
 * **Guardrails**:
-  * Evaluation occurs once per day (default) or at configured schedule
-  * Profiles may not reflect real-time changes until next evaluation
-  * Read Audience activity can process large batch audiences efficiently
+   * Utvärderingen sker en gång om dagen (standard) eller enligt konfigurerat schema
+   * Profiler kanske inte återspeglar realtidsändringar förrän nästa utvärdering
+   * Läsa målgrupper kan bearbeta stora grupper effektivt
 
-**3. Upload audiences (Custom upload)**
+**3. Överför målgrupper (anpassad överföring)**
 
-* **Description**: Audiences created by uploading CSV files with profile identifiers
-* **Evaluation**: Static list updated only when new files are uploaded
-* **Journey usage**: Supported in Read Audience and Condition activities; **not supported** in Audience Qualification journeys
-* **Best for**: One-time campaigns, external list imports, targeted communications
+* **Beskrivning**: Målgrupper som skapats genom att CSV-filer har överförts med profilidentifierare
+* **Utvärdering**: Statisk lista uppdateras bara när nya filer överförs
+* **Reseanvändning**: Stöds i Läs målgrupps- och villkorsaktiviteter; **stöds inte** i målgruppskvalificeringsresor
+* **Bäst för**: Engångskampanjer, extern listimport, riktad kommunikation
 * **Guardrails**:
-  * CSV file size limits apply (check product documentation for current limits)
-  * Audience members are static until refreshed with new upload
-  * Identity namespace must match journey namespace
-  * Profiles must exist in Adobe Experience Platform
+   * Storleksbegränsningar för CSV-filer gäller (se produktdokumentationen för aktuella begränsningar)
+   * Målgruppsmedlemmarna är statiska tills de uppdateras med ny överföring
+   * Identitetsnamnrymden måste matcha resenamnrymden
+   * Profilerna måste finnas i Adobe Experience Platform
 
-**Journey-specific considerations**:
+**4. Vanliga målgrupper (Federated Audience Composition)**
 
-* **Read Audience journeys**: All three audience types supported; batch export occurs when journey runs
-* **Audience Qualification journeys**: Streaming audiences recommended; batch audiences have delayed qualification detection; upload audiences not supported
-* **Condition activities**: All audience types can be used to check membership
-* **Namespace alignment**: Audience identity namespace must match the journey's namespace for proper profile identification
+* **Beskrivning**: Målgrupper som skapats med federerade data, så att du kan fråga efter och sätta samman målgrupper från externa datalager utan att kopiera data till Adobe Experience Platform
+* **Utvärdering**: Statisk disposition uppdateras när den federerade målgruppskompositionen körs
+* **Reseanvändning**: Stöds i Läs målgrupps- och villkorsaktiviteter; **stöds inte** i målgruppskvalificeringsresor (liknar överföring av målgrupper från ett backend-perspektiv)
+* **Bäst för**: Integrering av datalager i företag, målgruppskomposition med externa datakällor, scenarier där data måste finnas kvar i externa system
+* **Guardrails**:
+   * Målgruppsmedlemmarna är statiska tills nästa externa kompositionskörning
+   * Identitetsnamnrymden måste matcha resenamnrymden
+   * Prestanda beror på externa frågefunktioner för datalager
+   * Kräver tillägg för federerad målgruppskomposition
 
-**Best practices**:
+**Customer Journey Analytics (CJA) målgrupper**:
 
-* Use **streaming audiences** for real-time, event-driven journeys requiring immediate response
-* Use **batch audiences** for scheduled communications where daily evaluation is sufficient
-* Use **upload audiences** for targeted one-time campaigns with external lists
-* Monitor audience size and evaluation performance in large-scale deployments
-* Consider audience refresh rates when designing journey timing and entry conditions
+CJA-målgrupper stöds inte direkt på resor, men du kan använda en **tillfällig lösning** genom att&quot;paketera&quot; en CJA-målgrupp i en segmenteringsregel. Detta skapar en batch-UPS-målgrupp (Unified Profile Service) som refererar till CJA-målgruppen och gör den tillgänglig för användning i resor som en batchmålgrupp.
 
-Learn more about [audiences](../audience/about-audiences.md), [creating segments](../audience/creating-a-segment-definition.md), and [custom upload audiences](../audience/custom-upload.md).
+**Resespecifika överväganden**:
+
+* **Läs målgruppsresor**: Alla fyra målgruppstyper stöds; batchexport sker när resan körs
+* **Målgruppskvalificeringsresor**: Direktuppspelande målgrupper rekommenderas; batchmålgrupper har fördröjd kvalificeringsidentifiering; uppladdning och FAC-målgrupper stöds inte
+* **Villkorsaktiviteter**: Alla målgruppstyper kan användas för att kontrollera medlemskap
+* **Namnområdesjustering**: Namnområdet för målets identitet måste matcha kundens namnutrymme för korrekt profilidentifiering
+
+**God praxis**:
+
+* Använd **direktuppspelade målgrupper** för händelsestyrda resor i realtid som kräver omedelbar respons
+* Använd **gruppmålgrupper** för schemalagd kommunikation där daglig utvärdering är tillräckligt
+* Använd **överför målgrupper** för riktade engångskampanjer med externa listor
+* Använd **FAC-målgrupper** när du behöver utnyttja Enterprise-datalagerfunktioner utan datataperering
+* Övervaka målgruppens storlek och utvärderingsprestanda i storskaliga installationer
+* Fundera på uppdateringsfrekvensen när ni utformar restider och villkor
+
+Läs mer om [målgrupper](../audience/about-audiences.md), [skapa segment](../audience/creating-a-segment-definition.md), [anpassade uppladdningsgrupper](../audience/custom-upload.md) och [Federated målgruppskomposition](../audience/federated-audience-composition.md).
 
 +++
--->
 
 +++ Hur väljer jag mellan en enhetlig resa och en läsande målgruppsresa?
 
@@ -926,4 +940,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
