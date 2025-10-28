@@ -5,9 +5,9 @@ title: Upplevelsehändelser som söks igenom resor
 description: Lär dig använda Experience Events-sökning i resor
 exl-id: 35e2e347-0669-44a3-92ba-aee52e54c219
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: c4f6b7754255ce3bf0229702b10955abf9843548
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '949'
 ht-degree: 1%
 
 ---
@@ -52,9 +52,9 @@ Om du vill inaktivera profiler som har visat vissa beteenden använder du gruppm
 
 Läs mer:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-audiences-in-conditions)
 
@@ -71,9 +71,9 @@ Så här förhindrar du att meddelanden skickas till profiler som har tagit emot
 
 Läs mer om hur du använder målgrupper:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-audiences-in-conditions)
 
@@ -93,9 +93,9 @@ Om du vill inkludera eller exkludera profiler baserat på om de har fått ett vi
 
 Läs mer:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-audiences-in-conditions)
 
@@ -105,8 +105,8 @@ Läs mer:
 
 Skräddarsy kommunikationen utifrån den senaste kundvagnen eller se händelser i olika kundvagnstyper eller produktvyer:
 
-* Om du har tillgång till [Adobe Experience Platform Data Distiller](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/overview){target="_blank"} konfigurerar du automatiska frågor för att extrahera nödvändiga data från händelsen, ändra dem så att de passar användningsfallet och skriva tillbaka dem till en profilaktiverad datauppsättning för aktivering.
-* Om övergivna data kan modelleras utifrån profilen med skalära attribut kan du använda beräknade attribut för att hämta in den senaste informationen och sedan referera till dessa attribut under resan för att skapa kommunikationen. [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+* Om du har tillgång till [Adobe Experience Platform Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview){target="_blank"} konfigurerar du automatiska frågor för att extrahera nödvändiga data från händelsen, ändra dem så att de passar användningsfallet och skriva tillbaka dem till en profilaktiverad datauppsättning för aktivering.
+* Om övergivna data kan modelleras utifrån profilen med skalära attribut kan du använda beräknade attribut för att hämta in den senaste informationen och sedan referera till dessa attribut under resan för att skapa kommunikationen. [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
 ## Beteendebaserad reseutgång
@@ -123,13 +123,15 @@ Om du vill utlösa resor baserat på inköp och undertrycka om värdet ligger ö
 
 Läs mer:
 
-* Adobe Experience Platform [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+* Adobe Experience Platform [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
 
 ## Vanliga frågor {#faq-ee}
 
-Användning av upplevelsehändelser i reseuttryck/villkor stöds inte längre. Effekter listas i Frågor och svar nedan:
+Nedan hittar du Vanliga frågor om Experience-händelsesökning i resor.
+
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++Vilka specifika funktioner påverkas? 
 

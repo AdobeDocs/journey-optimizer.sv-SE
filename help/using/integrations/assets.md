@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: resurser, Experience Manager, integration
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: c4f6b7754255ce3bf0229702b10955abf9843548
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 0%
+source-wordcount: '801'
+ht-degree: 1%
 
 ---
 
@@ -26,11 +26,11 @@ Sammanför arbetsflöden för marknadsföring och kreativitet med **[!DNL Adobe 
 
 * **[!DNL Assets as a Cloud Service]**: Adobe Experience Manager Assets as a Cloud Service är en lättanvänd molnlösning för effektiv hantering av digitala resurser och dynamiska media. Programmet innehåller smidigt avancerade funktioner, bland annat artificiell intelligens och maskininlärning.
 
-  Läs mer i [Adobe Experience Manager as a Cloud Service-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html?lang=sv-SE){target="_blank"}.
+  Läs mer i [Adobe Experience Manager as a Cloud Service-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html){target="_blank"}.
 
 * **[!DNL Assets Essentials]**: Experience Manager Assets Essentials är en lättviktig Assets as a Cloud Service-lösning för enhetlig resurshantering och samarbete. Med ett modernt, förenklat gränssnitt kan kreatörer och marknadsförare enkelt lagra, upptäcka och distribuera digitalt material.
 
-  Läs mer i [dokumentationen till Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"}.
+  Läs mer i [dokumentationen till Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
 Beroende på ditt kontrakt kan du komma åt **[!DNL Adobe Experience Manager Assets Essentials]** eller **[!DNL Adobe Experience Manager Assets as a Cloud Service]** direkt från **[!DNL Adobe Journey Optimizer]** till den vänstra menyn **[!UICONTROL Assets]**. Du kan också komma åt resurser och mappar när [du utformar ett e-postinnehåll](../email/get-started-email-design.md).
 
@@ -40,14 +40,14 @@ Beroende på ditt kontrakt kan du komma åt **[!DNL Adobe Experience Manager Ass
 
 >[!TAB Adobe Experience Manager Assets Essentials]
 
-Innan du använder [!DNL Adobe Experience Manager Assets Essentials] måste du lägga till användare i produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer i [dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html?lang=sv-SE#add-user-groups){target="_blank"}.
+Innan du använder [!DNL Adobe Experience Manager Assets Essentials] måste du lägga till användare i produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer i [dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-user-groups){target="_blank"}.
 
 >[!NOTE]
->För Journey Optimizer-produkter som inhämtats före 6 januari 2022 måste du distribuera **[!DNL Adobe Experience Manager Assets Essentials]** för din organisation. Mer information finns i avsnittet [Distribuera resurser - Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+>För Journey Optimizer-produkter som inhämtats före 6 januari 2022 måste du distribuera **[!DNL Adobe Experience Manager Assets Essentials]** för din organisation. Mer information finns i avsnittet [Distribuera resurser - Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 >[!TAB Adobe Experience Manager Assets as a Cloud Service]
 
-Innan du använder **[!DNL Adobe Experience Manager Assets as a Cloud Service]** måste du lägga till användare i Assets Cloud Services. Läs mer i [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=sv-SE).
+Innan du använder **[!DNL Adobe Experience Manager Assets as a Cloud Service]** måste du lägga till användare i Assets Cloud Services. Läs mer i [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html).
 
 >[!ENDTABS]
 
@@ -63,13 +63,13 @@ Om du vill importera filer till **[!DNL Assets Essentials]** eller **[!DNL Asset
 
    ![](assets/media_library_4.png)
 
-+++ Lär dig hur du byter Assets-databas.
+   +++ Lär dig hur du byter Assets-databas.
 
    Om du vill ändra din Assets-databas väljer du kontoikonen i det övre högra hörnet och klickar på **[!UICONTROL Select Repository]**.
 
    ![](assets/media_library_3.png)
 
-+++
+   +++
 
 1. Dubbelklicka på en mapp från det centrala avsnittet eller från trädvyn för att öppna den.
 
@@ -81,11 +81,11 @@ Om du vill importera filer till **[!DNL Assets Essentials]** eller **[!DNL Asset
 
    ![](assets/media_library_2.png)
 
-1. Klicka på **[!UICONTROL Browse]** i **[!UICONTROL Upload files]** och välj om du vill **[!UICONTROL Browse files]** eller **[!UICONTROL Browse folders]**.
+1. Klicka på **[!UICONTROL Upload files]** i **[!UICONTROL Browse]** och välj om du vill **[!UICONTROL Browse files]** eller **[!UICONTROL Browse folders]**.
 
-1. Markera filen som du vill överföra. När du är klar klickar du på **[!UICONTROL Upload]**. Mer information om hur du hanterar dina resurser finns på [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=sv-SE).
+1. Markera filen som du vill överföra. När du är klar klickar du på **[!UICONTROL Upload]**. Mer information om hur du hanterar dina resurser finns på [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html).
 
-1. Om du vill redigera dina resurser ytterligare med Adobe Photoshop Express dubbelklickar du på resurserna. Välj sedan ikonen **[!UICONTROL Edit mode]** på den högra menyn. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/edit-images.html?lang=sv-SE){target="_blank"}.
+1. Om du vill redigera dina resurser ytterligare med Adobe Photoshop Express dubbelklickar du på resurserna. Välj sedan ikonen **[!UICONTROL Edit mode]** på den högra menyn. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/edit-images.html){target="_blank"}.
 
    ![](assets/media_library_12.png)
 
@@ -112,7 +112,11 @@ Om du vill importera filer till **[!DNL Assets Essentials]** eller **[!DNL Asset
     -->
 
 
-## Vanliga frågor om [!DNL Adobe Experience Manager Assets] {#faq-assets}
+## Vanliga frågor {#faq-assets}
+
+Nedan finns Frågor och svar om Adobe Experience Manager Assets.
+
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ Kan jag fortsätta använda den paketerade databasen Assets Essentials i Journey Optimizer?
 

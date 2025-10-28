@@ -10,9 +10,9 @@ level: Intermediate
 keywords: sändningstid, skicka, meddelande, optimering, resa, AI, intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: c4f6b7754255ce3bf0229702b10955abf9843548
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1520'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,10 @@ Utforska sändningstider väljs slumpvis bland de sändningstider som är tillg�
 
 
 ## Vanliga frågor {#faq-send-time}
+
+Nedan hittar du Vanliga frågor om optimering av sändningstid.
+
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++Hur lång tid behöver jag vänta innan jag använder optimering för Skicka-tid?
 

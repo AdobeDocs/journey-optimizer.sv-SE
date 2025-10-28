@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3ec496ba-7555-49e2-992c-403c33302a90
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: c4f6b7754255ce3bf0229702b10955abf9843548
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 0%
+source-wordcount: '550'
+ht-degree: 1%
 
 ---
 
@@ -56,10 +56,11 @@ Här är de åtgärder du kan utföra med hjälp av målgruppernas anrikningsatt
 >+++
 
 
+## Vanliga frågor {#faq-enrichment}
 
+Nedan finns frågor och svar om anrikningsattribut.
 
-
-
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ Vad är anrikningsattribut?
 

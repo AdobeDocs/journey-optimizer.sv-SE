@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: eae8a09a-5d27-4a80-b21f-7f795d800602
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: c4f6b7754255ce3bf0229702b10955abf9843548
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1236'
 ht-degree: 0%
 
 ---
@@ -206,16 +206,24 @@ I Edge Delivery Section of ensure trace som en del av körningsinformationen har
 
 ![](assets/external-data-troubleshoot.png "width=50%")
 
-## Vanliga frågor och svar
+## Vanliga frågor {#faq-external-data}
 
-* Hur skickar man ett sammanhangsberoende attribut från begäran som parameter till en extern datasökning?
+Nedan finns vanliga frågor och svar om hjälpen för sökning av externa data.
 
-  Använd Sammanhangsbaserade attribut > Datastream > Event-menyn för att bläddra i det Experience Event-schema som du använder och infoga det relevanta attributet som ett parametervärde som det här:
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
-  ```
-  {{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}
-  ```
++++ Hur skickar man ett sammanhangsberoende attribut från begäran som parameter till en extern datasökning?
 
-* Gör [!DNL Journey Optimizer] någon cachelagring av externa slutpunktssvar?
+Använd Sammanhangsbaserade attribut > Datastream > Event-menyn för att bläddra i det Experience Event-schema som du använder och infoga det relevanta attributet som ett parametervärde som det här:
 
-  Inte just nu. Den här funktionen kommer att stödjas i framtiden.
+```
+{{externalDataLookup actionId="..." result="result" query.myQueryParameter=context.datastream.event.<schemaId>.my.xdm.attribute}}
+```
+
++++
+
++++ Gör [!DNL Journey Optimizer] någon cachelagring av externa slutpunktssvar?
+
+Inte just nu. Den här funktionen kommer att stödjas i framtiden.
+
++++
