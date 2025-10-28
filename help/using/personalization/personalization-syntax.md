@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 50eff8b6c4aaa432595bf16ef1d567c272d6b084
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '588'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,8 @@ där:
 
 * I Handlebars är värdena som returneras av {{expression}} **HTML-escape**. Om uttrycket innehåller `&` genereras returnerade HTML-escape-utdata som `&amp;`. Om du inte vill att Handlebars ska hoppa över ett värde använder du &quot;trippelstreck&quot;.
 
+  Anta att värdet för fältet `profile.person.name` är &quot;Mark &amp; Mary&quot;. Syntaxen `{{profile.person.name}}` visar `Mark &amp; Mary` medan `{{{profile.person.name}}}` visar `Mark & Mary`.
+
 * När det gäller argument för literala funktioner saknar den mallande språkparsern stöd för ett omvänt snedstreck (`\`) av typen unescape. Det här tecknet måste föregås av ett ytterligare omvänt snedstreck (`\`). Exempel:
 
   `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}`
@@ -73,7 +75,7 @@ där:
 
 * **Målgrupp**
 
-  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
+  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 * **Erbjudanden**
 
