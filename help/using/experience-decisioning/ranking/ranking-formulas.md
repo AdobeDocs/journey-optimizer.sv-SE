@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
-source-git-commit: 6f4ec598a56b0e835e1e866f24dcc016f6835be8
+source-git-commit: af4a5965c9268baf88c5306f1aa20d305ee7e501
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -138,7 +138,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >
@@ -221,6 +221,22 @@ Med detta i åtanke för en profil som:
                     ]}
 }
 ```
+
++++
+
++++Öka erbjudandena baserat på en profils postnummer och årsinkomst
+
+I det här exemplet försöker systemet alltid att visa ett ZIP-matchningserbjudande först, och återgår till ett allmänt erbjudande om ingen matchning hittas, så att erbjudanden som är avsedda för andra ZIP-koder inte visas.
+
+```pql
+if( offer._luma.offerDetails.zipCode = _luma.zipCode,luma.annualIncome / 1000 + 10000, if( not offer.luma.offerDetails.zipCode,_luma.annualIncome / 1000, -9999) )
+```
+
+Vad formeln gör:
+
+* Om erbjudandet har samma ZIP-kod som användaren ger det ett mycket högt poäng så att det plockas först.
+* Om erbjudandet inte innehåller någon postnummer alls (det är ett allmänt erbjudande), ger du det en normal poäng baserad på användarens intäkter.
+* Om erbjudandet har en annan ZIP-kod än användaren kan du ge det en mycket låg poäng så att det inte väljs.
 
 +++
 
