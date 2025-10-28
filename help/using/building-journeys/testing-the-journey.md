@@ -10,9 +10,9 @@ level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 84f4bdf3f79d8f19b615c68a03e25b24f435f952
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1783'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,37 @@ Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan anti
 >[!NOTE]
 >
 >Innan du testar din resa måste du åtgärda eventuella fel. Lär dig hur du kontrollerar fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md).
+
+## Viktiga anteckningar {#important_notes}
+
+### Allmänna begränsningar
+
+* **Testa endast profiler** - Endast individer som markerats som testprofiler i kundprofiltjänsten i realtid kan gå in på en resa i testläge. [Lär dig skapa testprofiler](../audience/creating-test-profiles.md).
+* **Namnutrymmeskrav** - Testläget är bara tillgängligt för utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Adobe Experience Platform.
+* **Profilgräns** - Högst 100 testprofiler kan gå in på en resa under en enda testsession.
+* **Händelseutlösare** - Händelser kan bara utlösas från gränssnittet. Det går inte att skicka händelser från externa system med ett API.
+* **Anpassad uppladdning av målgrupper** - Resurstestläget stöder inte [anpassad uppladdning av målgrupper](../audience/custom-upload.md).
+
+### Beteende under och efter testning
+
+* **Inaktiverar testläge** - När du inaktiverar testläge tas alla profiler som för närvarande är i eller som tidigare har angetts under resan bort och rapporteringen rensas.
+* **Återaktiveringsflexibilitet** - Du kan aktivera och inaktivera testläget så många gånger som behövs.
+* **Automatisk inaktivering** - Resor som är inaktiva i testläge i **under en vecka** återgår automatiskt till utkaststatus för att optimera prestanda och förhindra föråldrad resursanvändning.
+* **Redigering och publicering** - Du kan inte ändra resan när testläget är aktivt. Du kan dock publicera resan direkt, du behöver inte inaktivera testläget tidigare.
+
+### Körning
+
+* **Delat beteende** - När resan går till en delning markeras alltid den översta grenen. Ändra ordning på grenarna om du vill att en annan sökväg ska testas.
+* **Händelsetiming** - Om resan omfattar*flera händelser, utlöser du varje händelse i sekvenser. Om du skickar en händelse för tidigt (innan den första väntenoden avslutas) eller för sent (efter den konfigurerade tidsgränsen) kommer händelsen att ignoreras och profilen skickas till en tidsgräns. Bekräfta alltid att referenser till händelsens nyttolastfält förblir giltiga genom att skicka nyttolasten i det definierade fönstret
+* **Aktivt datumfönster** - Se till att transportens konfigurerade fönster väljer [start- och slutdatum/tid](journey-properties.md#dates) och inkluderar aktuell tid när testläget startas. Annars ignoreras utlösta testhändelser.
+* **Reaktionshändelser** - För reaktionshändelser med en tidsgräns är den minsta och standardväntetiden 40 sekunder.
+* **Testa datamängder** - Händelser som utlöses i testläge lagras i dedikerade datamängder som är märkta så här: `JOtestmode - <schema of your event>`
+
+<!--
+* Fields from related entities are hidden from the test mode.
+-->
+
+## Aktivera testläget
 
 Så här använder du testläget:
 
@@ -59,25 +90,6 @@ Så här använder du testläget:
    ![](assets/journeyuctest2.png)
 
 1. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. När testerna är klara kan du publicera din resa. Läs [den här sidan](../building-journeys/publishing-the-journey.md).
-
-## Viktiga anteckningar {#important_notes}
-
-* I testläge kan du bara utlösa händelser med gränssnittet. Det går inte att skicka händelser från externa system med ett API.
-* Endast personer som markerats som&quot;testprofiler&quot; i kundprofiltjänsten i realtid får delta i den testade resan. Se det här [avsnittet](../audience/creating-test-profiles.md).
-* Testläget är bara tillgängligt i utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Adobe Experience Platform.
-* Det högsta antalet testprofiler som kan gå in på en resa under en testsession är 100.
-* När du inaktiverar testläget töms resorna från alla som har gått in i det tidigare eller som befinner sig i det. Rapporten blir också tydligare.
-* Du kan aktivera/inaktivera testläget så många gånger som behövs.
-* Du kan inte ändra din resa när testläget är aktiverat. När du är i testläge kan du publicera resan direkt, du behöver inte inaktivera testläget tidigare.
-* När en delning nås väljs alltid den översta grenen. Du kan ordna om placeringen av de delade grenarna om du vill att testet ska välja en annan bana.
-* För att optimera prestanda och förhindra föråldrad resursanvändning växlar alla resor i testläge som inte har utlösts på en vecka tillbaka till statusen **Utkast**.
-* Händelser som utlöses av testläget lagras i dedikerade datauppsättningar. Dessa datauppsättningar har följande etiketter: `JOtestmode - <schema of your event>`
-* När du testar resor som innehåller flera händelser måste du aktivera varje händelse i sekvens. Om du skickar en händelse för tidigt (innan den första väntenoden är klar) eller för sent (efter den konfigurerade tidsgränsen) kommer händelsen att ignoreras och profilen skickas till en tidsgräns. Bekräfta alltid att referenser till händelsens nyttolastfält förblir giltiga genom att skicka nyttolasten i det definierade fönstret
-* Kontrollera att transportens konfigurerade fönster väljer [start- och slutdatum/tid](journey-properties.md#dates) och att det innehåller den aktuella tiden när testläget startas. Annars ignoreras utlösta testhändelser.
-
-<!--
-* Fields from related entities are hidden from the test mode.
--->
 
 ## Utlös dina händelser {#firing_events}
 
