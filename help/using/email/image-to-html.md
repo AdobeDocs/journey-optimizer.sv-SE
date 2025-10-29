@@ -10,9 +10,9 @@ level: Beginner
 keywords: e-post, mall, bild, HTML, AI, design, accelerator
 hide: true
 hidefromtoc: true
-source-git-commit: ddbab603e4ac612a49a3853fcac428950def1d98
+source-git-commit: 86bf80c56a1bd50872d014a7aa92407227c823f8
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Kontrollera att du har:
 
 * Åtkomst till Adobe Journey Optimizer med e-post-Designer
 * En bildfil i JPEG- eller PNG-format som innehåller din e-postdesign
-* Begränsad tillgänglighet för funktionen Template Accelerator (kontakta Adobe)
+* Begränsad tillgänglighet till konverteringsfunktionen för bilder till HTML (kontakta din Adobe-representant)
 
 >[!NOTE]
 >
@@ -62,31 +62,28 @@ Så här konverterar du en bilddesign till en helt anpassningsbar e-postmall fr�
 
 1. Klicka på **[!UICONTROL Create template]**.
 
-1. Fyll i mallinformationen och välj **[!UICONTROL Email]** som kanal.
+1. Fyll i mallinformationen och välj **[!UICONTROL Email]** som kanal och klicka på **[!UICONTROL Create]**.
 
-1. Klicka på **[!UICONTROL Create]** för att komma åt e-post-Designer.
+1. Klicka på knappen **[!UICONTROL Convert image to template]** i det högra avsnittet i avsnittet **[!UICONTROL Upload image]** för att välja bildfilen.
 
-1. Välj **[!UICONTROL Import HTML]** på startsidan för e-post till Designer.
+   ![](assets/email_designer_convert_img.png)
 
-   ![](assets/import-html_2.png)
-
-1. I importdialogrutan visas avsnittet **[!UICONTROL Convert image to HTML]**.
 
    >[!CAUTION]
    >
    >När du överför en bild för konvertering tas **allt innehåll som för närvarande läggs till i e-postmeddelandet bort och ersätts** med den genererade mallen. Om du har befintligt innehåll i ditt e-postmeddelande måste du spara det innan du fortsätter med bildkonverteringen.
 
-1. Klicka på knappen **[!UICONTROL Load image]** för att välja bildfilen.
 
-1. Dra och släpp bildfilen (JPEG eller PNG) eller klicka för att bläddra och markera bildfilen.
-
-1. Klicka på **[!UICONTROL Generate]** för att starta den AI-baserade konverteringsprocessen.
+1. Välj bilden och klicka på **[!UICONTROL Open]** för att starta den AI-baserade konverteringsprocessen.
 
    >[!NOTE]
    >
    >Genereringsprocessen kan ta upp till 5 minuter beroende på hur komplex och stor din bilddesign är. Var tålmodig medan AI analyserar och konverterar bilden.
 
 1. När konverteringen är klar sparas innehållsmallen automatiskt som ett utkast. Du kan sedan granska och redigera den genererade HTML-mallen på Designer arbetsyta för e-post.
+
+   ![](assets/email_designer_converted_img.png)
+
 
 1. Den konverterade mallen öppnas i e-post-Designer med fullständiga redigeringsfunktioner. Nu kan du:
 
@@ -96,7 +93,7 @@ Så här konverterar du en bilddesign till en helt anpassningsbar e-postmall fr�
    * Lägga till, ta bort eller ordna om innehållskomponenter
    * Utnyttja alla e-post-Designer-funktioner på samma sätt som andra mallar
 
-   ![](assets/email_designer_structure_components.png)
+   ![](assets/email_designer_html_components.png)
 
 1. Gör nödvändiga justeringar för att förfina mallen och anpassa den efter varumärkesriktlinjerna.
 
@@ -106,17 +103,9 @@ Så här konverterar du en bilddesign till en helt anpassningsbar e-postmall fr�
 
 ## Använd den konverterade mallen i e-postmeddelanden {#use-template}
 
-När du har skapat och sparat din innehållsmall med Template Accelerator kan du använda den när du utformar e-postmeddelanden under resor eller kampanjer:
+När du har skapat och sparat din innehållsmall kan du använda den när du utformar e-postmeddelanden under resor eller kampanjer:
 
-1. När du skapar ett e-postmeddelande i en resa eller kampanj öppnar du e-post-Designer från skärmen **[!UICONTROL Edit content]**.
-
-1. Gå till fliken **[!UICONTROL Saved templates]** på Designer hemsida för e-post.
-
-1. Välj mallacceleratorgenererad mall i listan.
-
-1. Klicka på **[!UICONTROL Use this template]** om du vill använda den i ditt e-postmeddelande.
-
-1. Fortsätt redigera och anpassa e-postinnehållet efter behov.
+När du skapar ett e-postmeddelande i en resa eller kampanj öppnar du e-post-Designer från skärmen **[!UICONTROL Edit content]**.
 
 Läs mer om [att arbeta med e-postmallar](use-email-templates.md) och [skapa innehållsmallar](../content-management/content-templates.md).
 
@@ -127,7 +116,7 @@ Följ de här rekommendationerna för att få optimala resultat när du använde
 **Innan du börjar**
 
 * **Spara befintligt innehåll**: Om du konverterar en bild till HTML ersätts allt befintligt innehåll i e-postmeddelandet. Spara alltid ditt aktuella arbete innan du använder den här funktionen.
-* **Planera ditt arbetsflöde**: Använd mallaccelerator i början av e-postprocessen eller kontrollera att du är redo att ersätta allt aktuellt innehåll.
+* **Planera ditt arbetsflöde**: Använd konverteraren för bilden till HTML i början av e-postprocessen eller kontrollera att du är redo att ersätta allt aktuellt innehåll.
 
 **Bildförberedelse**
 
@@ -156,7 +145,7 @@ Följ de här rekommendationerna för att få optimala resultat när du använde
 
 ## Begränsningar och överväganden {#limitations}
 
-Tänk på följande begränsningar när du använder Template Accelerator:
+Tänk på följande begränsningar när du använder Image to HTML-konverteraren:
 
 * **AI-tolkning**: AI genererar HTML baserat på den visuella tolkningen av din bild. Komplexa eller ovanliga designer kan kräva manuella justeringar efter konverteringen.
 
@@ -168,7 +157,7 @@ Tänk på följande begränsningar när du använder Template Accelerator:
 
 * **Bearbetningstid**: Konverteringsprocessen kan ta upp till 5 minuter beroende på bildens komplexitet och storlek. Mallen sparas automatiskt som ett utkast när konverteringen är klar.
 
-* **Begränsad tillgänglighet**: Mallacceleratorn förbättras kontinuerligt som en begränsad tillgänglighetsfunktion. Funktionaliteten och exaktheten kan variera och din feedback förbättrar funktionen.
+* **Begränsad tillgänglighet**: Som en begränsad tillgänglighetsfunktion förbättras kontinuerligt bilden till HTML-konverteraren. Funktionaliteten och exaktheten kan variera och din feedback förbättrar funktionen.
 
 >[!NOTE]
 >
@@ -176,15 +165,15 @@ Tänk på följande begränsningar när du använder Template Accelerator:
 
 ## Vanliga frågor och svar {#faq}
 
-+++Vad händer med mitt befintliga e-postinnehåll när jag använder Template Accelerator?
++++Vad händer med mitt befintliga e-postinnehåll när jag använder bilden till HTML-konverteraren?
 
-Allt befintligt innehåll i e-postmeddelandet tas bort och ersätts med den nya mallen när du överför en bild för konvertering. Spara viktigt innehåll innan du använder den här funktionen. Det är bäst att använda Template Accelerator i början av e-postprocessen.
+Allt befintligt innehåll i e-postmeddelandet tas bort och ersätts med den nya mallen när du överför en bild för konvertering. Spara viktigt innehåll innan du använder den här funktionen. Det är bäst att använda konverteraren för bild till HTML i början av e-postprocessen.
 
 +++
 
 +++Vilka filformat stöds?
 
-Template Accelerator stöder bildformaten JPEG (.jpg, .jpeg) och PNG (.png).
+Konverteraren för bild till HTML stöder bildformaten JPEG (.jpg, .jpeg) och PNG (.png).
 
 +++
 
@@ -208,19 +197,19 @@ AI gör sitt bästa för att tolka din design på ett korrekt sätt, men det kan
 
 +++Kan jag använda den här funktionen för landningssidor eller andra innehållstyper?
 
-Template Accelerator är för närvarande specifikt framtagen för e-postmallar. För andra innehållstyper använder du standardalternativen för design och import som finns i e-post-Designer.
+Konverteraren av bilder till HTML är för närvarande särskilt framtagen för e-postmallar. För andra innehållstyper använder du standardalternativen för design och import som finns i e-post-Designer.
 
 +++
 
 +++Behövs särskild behörighet för att använda den här funktionen?
 
-Template Accelerator finns i Begränsad tillgänglighet. Du behöver begränsad tillgänglighetsåtkomst (kontakta din Adobe-representant för att få åtkomst) och Designer-standardbehörigheter för e-post för att använda den här funktionen.
+Konverteraren för bilder till HTML är tillgänglig med begränsad tillgänglighet. Du behöver begränsad tillgänglighetsåtkomst (kontakta din Adobe-representant för att få åtkomst) och Designer-standardbehörigheter för e-post för att använda den här funktionen.
 
 +++
 
 +++Kan jag återanvända konverterade mallar för flera kampanjer?
 
-Ja! Mallar som skapas med mallacceleratorn sparas automatiskt i biblioteket Innehållsmallar. Ni kan komma åt och återanvända dem i alla e-postmeddelanden under era resor och kampanjer. [Läs mer](../content-management/content-templates.md)
+Ja! Mallar som skapas med HTML-konverteraren sparas automatiskt i biblioteket Innehållsmallar. Ni kan komma åt och återanvända dem i alla e-postmeddelanden under era resor och kampanjer. [Läs mer](../content-management/content-templates.md)
 
 +++
 
