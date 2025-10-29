@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: e-post, import, innehåll, html, zip, css
 exl-id: 52011299-0c65-49c3-9edd-ba7bed5d7205
-source-git-commit: e35d18002fa32df8c1cfd9e0a609ce167df4641a
+source-git-commit: ddbab603e4ac612a49a3853fcac428950def1d98
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -26,6 +26,11 @@ Med [!DNL Journey Optimizer] kan du importera befintligt HTML-innehåll för att
   >[!NOTE]
   >
   >ZIP-filstrukturen har inga begränsningar. Referenserna måste dock vara relativa och passa in i trädstrukturen i ZIP-mappen.
+
+<!--DOCAC-13676
+>[!TIP]
+>
+>If you have image designs (JPEG or PNG) instead of HTML files, you can use the [Template Accelerator](image-to-html.md) to automatically convert them into editable HTML email templates using AI.-->
 
 Om du vill importera en fil som innehåller HTML-innehåll följer du stegen nedan:
 
