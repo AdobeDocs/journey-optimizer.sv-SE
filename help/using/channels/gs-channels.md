@@ -6,10 +6,10 @@ description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommuni
 role: User
 level: Beginner
 exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
-source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
+source-git-commit: d2ae91dd8f9f3ef8a38db12ea3c9356ca9a27c53
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 0%
+source-wordcount: '566'
+ht-degree: 1%
 
 ---
 
@@ -132,20 +132,15 @@ I Adobe Journey Optimizer kan du utnyttja kommunikationskanaler i två primära 
 
 Tabellen nedan visar tillgängligheten för varje kanal för olika resor och kampanjer, och visar var de stöds.
 
-&lt;&lt;&lt;&lt;&lt;&lt; Uppdaterat uppströms
-| Kanal              | Resor | Marknadsföringskampanjer | Åtgärdskampanjer (Transactional) | API-utlösta (marknadsföringskampanjer) | API-utlösta (Transactional) kampanjer | Samordnade kampanjer |
-=======
-| Kanal              | Resor | Åtgärdskampanjer (marknadsföring) | Åtgärdskampanjer (Transactional) | API-utlösta kampanjer | Samordnade kampanjer |
-&#x200B;>>>>>>>>>>Streckade ändringar
->&#x200B;>>>>>>>>>|—|—|—|—|—|—|—|—|
->&#x200B;>>>>>>>>>| E-post                | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
->&#x200B;>>>>>>>>>| SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
->&#x200B;>>>>>>>>>| Push-meddelande    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
->&#x200B;>>>>>>>>>| I appen               | ✅ | ✅ | — | — | — | — |
->&#x200B;>>>>>>>>>| Direktreklam          | ✅ | ✅ | — | — | — | — |
->&#x200B;>>>>>>>>>| Webb                  | ✅ | ✅ | — | — | — | — |
->&#x200B;>>>>>>>>>| Kodbaserad exp.      | ✅ | ✅ | — | — | — | — |
->&#x200B;>>>>>>>>>| Innehållskort        | ✅ | ✅ | — | — | — | — |
->&#x200B;>>>>>>>>>| WhatApp             | ✅ | ✅ | — | — | — | — |
->&#x200B;>>>>>>>>>| Linje                 | ✅ | ✅ | — | — | — | — |
-> 
+| Kanal | Resor | Åtgärdskampanjer (marknadsföring) | Åtgärdskampanjer (Transactional) | API-utlösta kampanjer | Samordnade kampanjer |
+|----------------------|---------------------|-------------------------|----------------------------|--------------------------------|--------------|--------------|
+| E-post | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Push-meddelande | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| I appen | ✅ | ✅ | — | — | — | — |
+| Direktmeddelande | ✅ | ✅ | — | — | — | — |
+| Webb | ✅ | ✅ | — | — | — | — |
+| Kodbaserad exp. | ✅ | ✅ | — | — | — | — |
+| Innehållskort | ✅ | ✅ | — | — | — | — |
+| WhatApp | ✅ | ✅ | — | — | — | — |
+| Linje | ✅ | ✅ | — | — | — | — |
