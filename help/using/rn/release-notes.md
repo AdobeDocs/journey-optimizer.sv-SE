@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 913104934e78b61b91ea3fca21ee80372050a1fb
+source-git-commit: b93d2288156713ac7479eef491f6104df1955a18
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1292'
 ht-degree: 6%
 
 ---
@@ -24,13 +24,31 @@ ht-degree: 6%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna.  Ett dedikerat avsnitt om [de senaste uppdateringarna](#updates-rn) visar på nya funktioner och förbättringar när de distribueras till produktionen, så att du alltid informeras om alla ändringar i realtid. <!--For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](#releases.md).-->
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 25 oktober {#oct-25-10-rn}
 
 **Releasedatum**: 22 oktober 2025
 
 ### Nya funktioner {#oct-25-10-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Övervakning och rapportering av anpassade åtgärder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Den här funktionen ger bättre synlighet i anpassade åtgärdsslutpunkters hälsa och prestanda. En ny kontrollpanel för anpassad åtgärdsövervakning och motsvarande fält i händelsedatauppsättningen för kundsteg hjälper dig att övervaka slutförda anrop, fel, genomströmning, svarstid och köväntetid för dina anpassade åtgärdsslutpunkter. Nu kan ni snabbt förstå när, var och varför en onormal situation inträffar i en anpassad åtgärd.</p>
+<p>Den här funktionen är för närvarande begränsad för kunderna.</p>
+<p>Mer information finns i den <a href="../action/reporting.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 28 oktober 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -71,24 +89,6 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 </tr>
 </tbody>
 </table>
-
-<!--table>
-<thead>
-<tr>
-<th><strong>Custom action monitoring and reporting</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>This capability provides better visibility into journey health and execution, including lifecycle status and performance alerts. You can now quickly understand when, where, and why an anomalous situation is occurring in a custom action.</p>
-<img src="assets/do-not-localize/FILE.gif">
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p>
-<p>Availability date: October 22, 2025</p>
-</td>
-</tr>
-</tbody>
-</table-->
 
 <!--table>
 <thead>
@@ -288,7 +288,7 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 <tr>
 <td>
 <p>Journey Optimizer Experimentation Accelerator innehåller nu Experimentation Agent, ett AI-drivet konversationsverktyg med vilket du kan interagera med dina experiment, insikter och möjligheter. Det förbättrar Journey Optimizer Experimentation Accelerator upplevelse och hjälper dig att köra experiment effektivare, upptäcka vad som fungerar och se var du kan optimera nästa steg.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html?lang=sv-SE" target="_blank">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html" target="_blank">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 10 oktober 2025</p>
 </td>
 </tr>

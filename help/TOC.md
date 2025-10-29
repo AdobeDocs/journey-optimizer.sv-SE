@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ddbab603e4ac612a49a3853fcac428950def1d98
+source-git-commit: b93d2288156713ac7479eef491f6104df1955a18
 workflow-type: tm+mt
-source-wordcount: '3006'
+source-wordcount: '3010'
 ht-degree: 17%
 
 ---
@@ -886,7 +886,7 @@ ht-degree: 17%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -945,6 +945,7 @@ ht-degree: 17%
       + [Kom igång med anpassade åtgärder](using/action/action.md)
       + [Konfigurera en anpassad åtgärd](using/action/about-custom-action-configuration.md)
       + [Använd API-anropssvar i anpassade åtgärder](using/action/action-response.md)
+      + [Övervaka anpassade åtgärder](using/action/reporting.md)
 + Koppla samman system och miljöer {#connect-systems}
    + [Koppla samman system och miljöer](/help/rp_landing_pages/connect-systems-landing-page.md)
    + [Integrera med andra lösningar](using/integrations/ajo-integrations.md)
