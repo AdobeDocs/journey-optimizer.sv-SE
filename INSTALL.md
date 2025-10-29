@@ -21,6 +21,7 @@ Du behöver bara göra detta **en gång** per databas.
    ```
    @setup-agents
    ```
+
 3. Följ anvisningarna
 4. Klart! ✨
 
@@ -32,11 +33,13 @@ Du behöver bara göra detta **en gång** per databas.
    ```bash
    ./setup-agents.sh
    ```
+
    Eller manuellt:
 
    ```bash
    git submodule update --init --recursive
    ```
+
 3. Klart! ✨
 
 ## Verifiering
@@ -136,7 +139,7 @@ Undermodulen pekar på:
 
 Detta garanterar att alla använder samma, aktuella agenter.
 
----
+&#x200B;---
 
 **Behöver du hjälp?** Kontakta dokumentationsteamets ledare eller kontrollera den interna wiki-instansen.
 
