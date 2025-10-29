@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: ddbab603e4ac612a49a3853fcac428950def1d98
+source-git-commit: 95701732933fabd37c7de0420438e180ee6fe5d2
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 2%
@@ -66,7 +66,7 @@ När du har [lagt till ett e-postmeddelande](create-email.md) till en resa eller
 
    * **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar ett e-postinnehåll i [det här avsnittet](existing-content.md).
 <!-- DOCAC-13676
-    * **Convert image designs to HTML templates** using the AI-powered Template Accelerator feature. Learn how to transform static images into editable email templates in [this section](image-to-html.md).-->
+    * **Convert image designs to HTML templates** using the AI-powered image to HTML converter. Learn how to transform static images into editable email templates in [this section](image-to-html.md).-->
 
     * **Välj ett befintligt innehåll** i en lista med inbyggda eller anpassade mallar. Lär dig hur du arbetar med e-postmallar i [det här avsnittet](../email/use-email-templates.md).
     
@@ -84,4 +84,4 @@ Lär dig skapa e-postinnehåll med meddelanderedigeraren.
 
 Lär dig hur du konfigurerar innehållsexperiment till A/B-tester och utforskar e-postinnehåll på bästa sätt för dina affärsmål.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447335?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3419893)

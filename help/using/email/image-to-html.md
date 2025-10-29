@@ -1,23 +1,24 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Konvertera bilder till HTML-mallar med Template Accelerator
-description: Lär dig använda AI-driven Template Accelerator för att konvertera bildmaterial till redigerbara e-postmallar från HTML
+title: Konvertera bilder till HTML-mallar med konverteraren image till HTML
+description: Lär dig hur du använder AI-baserade bilder till HTML-konverterare för att konvertera bildmaterial till redigerbara HTML e-postmallar
 feature: Email Design
 topic: Content Management
 role: User
 level: Beginner
-keywords: e-post, mall, bild, HTML, AI, design, accelerator
+badge: label="Begränsad tillgänglighet" type="Informative"
+keywords: e-post, mall, bild, HTML, AI, design, konverterare
 hide: true
 hidefromtoc: true
-source-git-commit: f23bb73a9aa1c3ca8a6fc7a9a7f4d18cebc1faf3
+source-git-commit: 95701732933fabd37c7de0420438e180ee6fe5d2
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
 
-# Konvertera bilder till HTML-mallar med Template Accelerator {#image-to-html}
+# Konvertera bilder till HTML-mallar med konverteraren image till HTML {#image-to-html}
 
 >[!AVAILABILITY]
 >
@@ -25,9 +26,9 @@ ht-degree: 0%
 
 ## Översikt {#overview}
 
-Template Accelerator är en innovativ AI-baserad funktion på menyn **Innehållsmallar** som dramatiskt snabbar upp e-postskapandet genom att konvertera statiska bilddesigner till fullt anpassningsbara HTML-mallar för e-postinnehåll. Med det här verktyget kan marknadsförare omvandla visuell design från grafiska designers eller designverktyg till responsiva, redigerbara e-postmallar som kan sparas i biblioteket Innehållsmallar och sedan återanvändas på flera resor och i flera kampanjer.
+Konverteraren för bilder till HTML är en innovativ AI-baserad funktion på menyn **Innehållsmallar** som dramatiskt snabbar upp e-postskapandet genom att konvertera statisk bilddesign till fullt anpassningsbara mallar för HTML-e-postinnehåll. Med det här verktyget kan marknadsförare omvandla visuell design från grafiska designers eller designverktyg till responsiva, redigerbara e-postmallar som kan sparas i biblioteket Innehållsmallar och sedan återanvändas på flera resor och i flera kampanjer.
 
-Genom att utnyttja generativ AI-teknik analyserar Template Accelerator-bilden till HTML-konverteraren layouten, typografin, färgerna och de visuella elementen i bilden och genererar ren, strukturerad HTML-kod som bevarar designtroheten samtidigt som man säkerställer full redigerbarhet och kompatibilitet med Email Designer.
+Genom att utnyttja generativ AI-teknik analyserar bilden till HTML-konverteraren layout, typografi, färger och visuella element i bilden och genererar ren, strukturerad HTML-kod som bevarar designtroheten samtidigt som den säkerställer fullständig redigerbarhet och kompatibilitet med Email Designer.
 
 **Viktiga fördelar:**
 
@@ -39,7 +40,7 @@ Genom att utnyttja generativ AI-teknik analyserar Template Accelerator-bilden ti
 
 ## Förhandskrav {#prerequisites}
 
-Kontrollera att du har:
+Innan du använder bilden i HTML-konverteraren bör du kontrollera att du har:
 
 * Åtkomst till Adobe Journey Optimizer med e-post-Designer
 * En bildfil i JPEG- eller PNG-format som innehåller din e-postdesign
@@ -73,7 +74,7 @@ Så här konverterar du en bilddesign till en helt anpassningsbar e-postmall fr�
 
    >[!NOTE]
    >
-   >Genereringsprocessen kan ta upp till 5 minuter beroende på hur komplex och stor din bilddesign är. Var tålmodig medan AI analyserar och konverterar bilden.
+   >Genereringsprocessen kan ta upp till 5 minuter beroende på hur komplex och stor din bilddesign är. AI-bearbetningen sker i bakgrunden, så du kan navigera bort från den här skärmen och arbeta med andra åtgärder medan konverteringen pågår. Du behöver inte hålla skärmen öppen.
 
 1. När konverteringen är klar sparas innehållsmallen automatiskt som ett utkast. Du kan sedan granska och redigera den genererade HTML-mallen på Designer arbetsyta för e-post.
 
@@ -150,7 +151,7 @@ Tänk på följande begränsningar när du använder Image to HTML-konverteraren
 
 * **Komplexa layouter**: Mycket komplexa designer med komplicerade lager, ovanliga former eller element som inte är standard kanske inte konverteras perfekt. Enklare design ger i allmänhet bättre resultat.
 
-* **Bearbetningstid**: Konverteringsprocessen kan ta upp till 5 minuter beroende på bildens komplexitet och storlek. Mallen sparas automatiskt som ett utkast när konverteringen är klar.
+* **Bearbetningstid**: Konverteringsprocessen kan ta upp till 5 minuter beroende på bildens komplexitet och storlek. AI-bearbetningen sker i bakgrunden, vilket gör att du kan arbeta med andra uppgifter utan att behöva hålla skärmen öppen. Mallen sparas automatiskt som ett utkast när konverteringen är klar.
 
 * **Begränsad tillgänglighet**: Som en begränsad tillgänglighetsfunktion förbättras kontinuerligt bilden till HTML-konverteraren. Funktionaliteten och exaktheten kan variera och din feedback förbättrar funktionen.
 
@@ -174,7 +175,7 @@ Konverteraren för bild till HTML stöder bildformaten JPEG (.jpg, .jpeg) och PN
 
 +++Hur lång tid tar konverteringsprocessen?
 
-Konverteringen kan ta upp till 5 minuter, beroende på hur komplex och stor bilddesignen är. När konverteringen är klar sparas filen automatiskt som ett utkast som du kan granska och redigera.
+Konverteringen kan ta upp till 5 minuter, beroende på hur komplex och stor bilddesignen är. AI-bearbetningen sker i bakgrunden, så du kan navigera bort och arbeta med andra åtgärder - du behöver inte hålla skärmen öppen. När konverteringen är klar sparas filen automatiskt som ett utkast som du kan granska och redigera.
 
 +++
 
