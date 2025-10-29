@@ -136,16 +136,16 @@ Tabellen nedan visar tillgängligheten för varje kanal för olika resor och kam
 | Kanal              | Resor | Marknadsföringskampanjer | Åtgärdskampanjer (Transactional) | API-utlösta (marknadsföringskampanjer) | API-utlösta (Transactional) kampanjer | Samordnade kampanjer |
 =======
 | Kanal              | Resor | Åtgärdskampanjer (marknadsföring) | Åtgärdskampanjer (Transactional) | API-utlösta kampanjer | Samordnade kampanjer |
->>>>>>>>>>Streckade ändringar
->>>>>>>>>>|—|—|—|—|—|—|—|—|
->>>>>>>>>>| E-post                | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
->>>>>>>>>>| SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
->>>>>>>>>>| Push-meddelande    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
->>>>>>>>>>| I appen               | ✅ | ✅ | — | — | — | — |
->>>>>>>>>>| Direktreklam          | ✅ | ✅ | — | — | — | — |
->>>>>>>>>>| Webb                  | ✅ | ✅ | — | — | — | — |
->>>>>>>>>>| Kodbaserad exp.      | ✅ | ✅ | — | — | — | — |
->>>>>>>>>>| Innehållskort        | ✅ | ✅ | — | — | — | — |
->>>>>>>>>>| WhatApp             | ✅ | ✅ | — | — | — | — |
->>>>>>>>>>| Linje                 | ✅ | ✅ | — | — | — | — |
+&#x200B;>>>>>>>>>>Streckade ändringar
+>&#x200B;>>>>>>>>>|—|—|—|—|—|—|—|—|
+>&#x200B;>>>>>>>>>| E-post                | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+>&#x200B;>>>>>>>>>| SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+>&#x200B;>>>>>>>>>| Push-meddelande    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+>&#x200B;>>>>>>>>>| I appen               | ✅ | ✅ | — | — | — | — |
+>&#x200B;>>>>>>>>>| Direktreklam          | ✅ | ✅ | — | — | — | — |
+>&#x200B;>>>>>>>>>| Webb                  | ✅ | ✅ | — | — | — | — |
+>&#x200B;>>>>>>>>>| Kodbaserad exp.      | ✅ | ✅ | — | — | — | — |
+>&#x200B;>>>>>>>>>| Innehållskort        | ✅ | ✅ | — | — | — | — |
+>&#x200B;>>>>>>>>>| WhatApp             | ✅ | ✅ | — | — | — | — |
+>&#x200B;>>>>>>>>>| Linje                 | ✅ | ✅ | — | — | — | — |
 > 
