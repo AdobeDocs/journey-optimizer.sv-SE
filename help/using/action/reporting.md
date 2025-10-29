@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
-source-git-commit: b93d2288156713ac7479eef491f6104df1955a18
+source-git-commit: 30a7ebde95f2cb1ddecf3dc48420076914db4b12
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,8 @@ Om du vill komma åt rapportsidan **[!UICONTROL Custom action]** klickar du på 
 ![](assets/monitor-1.png)
 
 ➡️ [Läs mer om hur du konfigurerar anpassade åtgärder](../action/about-custom-action-configuration.md)
+
+Utöver rapportsidan **[!UICONTROL Custom action]** kan du använda **[!DNL Adobe Experience Platform Query Service]** för att skapa frågor för att rapportera anpassade mått för åtgärdsprestanda. Frågeexempel finns i [det här avsnittet](../reports/query-examples.md).
 
 ## KPI:er {#kpis}
 
@@ -66,7 +68,7 @@ Diagrammet **[!UICONTROL Calls overtime]** visar trenden för KPI för HTTP-anro
 * Om du väljer ett 1-dagars tidsintervall visas nyckeltal per timme i diagrammet.
 * Om du väljer ett 1-timmars tidsintervall visas nyckeltal per minut i diagrammet.
 
-➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten &#x200B;](#kpis)
+➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten ](#kpis)
 
 ## Uppdelning av samtal {#breakdown}
 
@@ -74,6 +76,6 @@ Diagrammet **[!UICONTROL Calls overtime]** visar trenden för KPI för HTTP-anro
 
 Tabellen **[!UICONTROL Calls breakdown]** innehåller en hierarkisk uppdelning av HTTP-anropsmåtten, från de totala måtten per slutpunkt på den översta nivån till måtten per anpassad åtgärd, med varje slutpunkt ned till de resor som är beroende av dem på den nedersta nivån.
 
-➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten &#x200B;](#kpis)
+➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten ](#kpis)
 
 
