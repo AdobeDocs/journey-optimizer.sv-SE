@@ -11,32 +11,45 @@ badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: e-post, mall, bild, HTML, AI, design, konverterare
 hide: true
 hidefromtoc: true
-source-git-commit: 95701732933fabd37c7de0420438e180ee6fe5d2
+source-git-commit: 8a504f02de0d438213025f9741a31e66e318a5da
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1751'
 ht-degree: 0%
 
 ---
 
 # Konvertera bilder till HTML-mallar med konverteraren image till HTML {#image-to-html}
 
+
+
+## Översikt {#overview}
+
+Konverteraren för bilder till HTML är en innovativ AI-baserad funktion på menyn **Innehållsmallar** som dramatiskt snabbar upp e-postskapandet genom att konvertera statiska bilddesigner till fullt anpassningsbara, modulära mallar för HTML-e-postinnehåll. Med detta kodningsverktyg kan marknadsförare omvandla visuell design från grafiska designers eller designverktyg till responsiva, redigerbara e-postmallar som kan sparas i biblioteket Innehållsmallar och sedan återanvändas på flera resor och i flera kampanjer - utan att man behöver ha någon teknisk expertis.
+
 >[!AVAILABILITY]
 >
 >Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
 
-## Översikt {#overview}
-
-Konverteraren för bilder till HTML är en innovativ AI-baserad funktion på menyn **Innehållsmallar** som dramatiskt snabbar upp e-postskapandet genom att konvertera statisk bilddesign till fullt anpassningsbara mallar för HTML-e-postinnehåll. Med det här verktyget kan marknadsförare omvandla visuell design från grafiska designers eller designverktyg till responsiva, redigerbara e-postmallar som kan sparas i biblioteket Innehållsmallar och sedan återanvändas på flera resor och i flera kampanjer.
-
-Genom att utnyttja generativ AI-teknik analyserar bilden till HTML-konverteraren layout, typografi, färger och visuella element i bilden och genererar ren, strukturerad HTML-kod som bevarar designtroheten samtidigt som den säkerställer fullständig redigerbarhet och kompatibilitet med Email Designer.
+Genom att utnyttja generativ AI-teknik analyserar bilden till HTML-konverteraren layouten, typografin, färgerna och de visuella elementen i bilden och genererar ren, modulär HTML-kod som bevarar designtroheten samtidigt som den säkerställer fullständig redigerbarhet och kompatibilitet med Email Designer. Detta eliminerar den manuella, tidskrävande processen att konvertera dummies till HTML och minskar beroendet av utvecklingsresurser.
 
 **Viktiga fördelar:**
 
-* **Snabbare redigering**: Minska tiden det tar att skapa e-post genom att direkt konvertera designmodeller till återanvändbara innehållsmallar
-* **Designer-developer bridge**: Eliminera behovet av manuell HTML-kodning när du arbetar med visuell design
-* **Designåtergivning**: Behåll integriteten i den ursprungliga designen när du skapar redigerbart innehåll
-* **Återanvändbarhet**: Spara mallar i biblioteket Innehållsmallar för användning på flera resor och i flera kampanjer
+* **Designa för HTML på några minuter**: Med AI-baserad kodkonvertering omvandlas statiska bilder till redigerbara, modulära mallar på några minuter, vilket dramatiskt minskar tiden det tar att skapa mallar
+* **Ger icke-tekniska användare** möjlighet att minska beroendet av design- och utvecklingsteam - marknadsförarna kan generera och anpassa mallar med minimal teknisk kunskap
+* **Förenklad plattformsmigrering**: Konvertera externa mallar eller designer från andra plattformar till AJO-förberedda HTML utan problem
+* **Skapa ett återanvändbart mallbibliotek**: Skapa ett skalbart, varumärkeskonsekvent mallbibliotek som kan användas på flera resor och i flera kampanjer
+* **Designåtergivning**: Behåll den visuella enhetligheten med den ursprungliga designen när du skapar fullt redigerbart innehåll
 * **E-postkompatibilitet**: Generera HTML som fungerar smidigt med e-post-Designer och mellan e-postklienter
+
+## Vanliga användningsfall {#use-cases}
+
+Bilden till HTML-konverteraren är perfekt för:
+
+* **Plattformsmigrering**: Migrerar från en annan e-postmarknadsföringsplattform? Konvertera dina befintliga e-postdesigner till HTML-mallar som är redo för AJO utan att behöva bygga om från grunden
+* **Konvertering av designmodeller**: Omvandla designmodeller från verktyg som Photoshop, Figma eller andra designprogram till funktionella e-postmallar
+* **Skapa mallar snabbt**: Generera e-postmallar snabbt för tidskänsliga kampanjer utan att vänta på utvecklarresurser
+* **Skapa mallbibliotek**: Skapa ett omfattande bibliotek med varumärkeskonsekventa mallar som icke-tekniska teammedlemmar kan anpassa och distribuera
+* **Minska det tekniska beroendet**: Gör det möjligt för marknadsförare att skapa och iterera på e-postmallar oberoende av varandra, vilket snabbar upp kampanjkörningen
 
 ## Förhandskrav {#prerequisites}
 
@@ -206,6 +219,12 @@ Konverteraren för bilder till HTML är tillgänglig med begränsad tillgänglig
 +++Kan jag återanvända konverterade mallar för flera kampanjer?
 
 Ja! Mallar som skapas med HTML-konverteraren sparas automatiskt i biblioteket Innehållsmallar. Ni kan komma åt och återanvända dem i alla e-postmeddelanden under era resor och kampanjer. [Läs mer](../content-management/content-templates.md)
+
++++
+
++++Kan jag använda detta för plattformsmigrering?
+
+Ja! Image to HTML converter är idealisk för migrering från andra e-postmarknadsföringsplattformar. Exportera eller ta skärmdumpar av dina e-postdesigner från din tidigare plattform och konvertera dem till HTML-mallar som är redo för AJO utan att behöva bygga om dem från grunden.
 
 +++
 
