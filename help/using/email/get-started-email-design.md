@@ -84,4 +84,4 @@ Lär dig skapa e-postinnehåll med meddelanderedigeraren.
 
 Lär dig hur du konfigurerar innehållsexperiment till A/B-tester och utforskar e-postinnehåll på bästa sätt för dina affärsmål.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419893)
+>[!VIDEO](https://video.tv.adobe.com/v/3447335?captions=swe)
