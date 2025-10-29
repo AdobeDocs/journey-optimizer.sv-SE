@@ -5,10 +5,10 @@ title: AI Capabilities in Adobe Journey Optimizer
 description: AI Capabilities in Adobe Journey Optimizer
 hide: true
 hidefromtoc: true
-source-git-commit: e06876a2f7f6e7145f08f725c1bfd4fdf59caf5c
+source-git-commit: 7db2932d6f4c6455cc323103c89e6d673d50efd0
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 1%
+source-wordcount: '1436'
+ht-degree: 0%
 
 ---
 
@@ -80,68 +80,53 @@ Integrera med Adobe Intelligent Services för att förutsäga kundbeteende och u
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/analytics.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
-Reseanalysagent
+Klassificering av varumärkesjustering
 
-Analysera och optimera resor med hjälp av naturligt språk. Identifiera bortfallspunkter, identifiera målgrupper och schemalägg konflikter och få åtgärdbara rekommendationer.
+Utvärdera hur väl det AI-genererade innehållet överensstämmer med varumärkesriktlinjerna med hjälp av AI-baserad poängsättning.
 
-[Utforska Journey Agent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
+[Lär dig mer om varumärkesjustering](../using/content-management/brands-score.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/beaker.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg)
 
-Experimentationsagent
+Experiment Accelerator
 
-Kör och hantera digitala experiment med AI-baserade insikter. Få resultatsammanfattningar, innehållsanalys och rekommendationer för dina nästa tester.
+Snabba upp innehållsexperimenterandet med AI-baserade insikter och rekommendationer.
 
-[Upptäck experimenteringsagenten](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}
+[Utforska Experiment Accelerator](../using/content-management/experiment-accelerator-gs.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Audience-agent
+API:er med AI-funktioner
 
-Skapa, analysera och optimera målgruppssegment med hjälp av konversationsbaserad AI. Bygg komplexa segment med hjälp av naturliga språkfrågor och få insikter om publiköverlappning.
+Få tillgång till Journey Optimizer AI- och maskininlärningsfunktioner via programmeringsgränssnitt.
 
-[Lär dig mer om Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/workflow.svg)
-
-Agent Orchestrator
-
-Koordinera flera AI-agenter för smidigt samarbete. Lös komplexa uppgifter genom att kombinera agenterna Journey, Experimentation, Audience och Data Insights.
-
-[Utforska Agent Orchestrator](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
+[Upptäck API:er med AI-funktioner](../using/configuration/ajo-apis.md)
 :::
 
 ::::
 
 
-## Ytterligare resurser
-
-- **[Värdering av varumärkesjustering](../using/content-management/brands-score.md)** - Utvärdera hur väl ditt AI-genererade innehåll överensstämmer med varumärkesriktlinjerna med hjälp av AI-baserad poängsättning.
-- **[Experimentera med accelerator](../using/content-management/experiment-accelerator-gs.md)** - Snabba upp innehållsexperimenterandet med AI-drivna insikter och rekommendationer.
-- **[API:er med AI-funktioner](../using/configuration/ajo-apis.md)** - få tillgång till Journey Optimizer AI och maskininlärningsfunktioner via programmering via API:er.
 
 ## AI-agenter i Adobe Experience Cloud
 
 Adobe Experience Cloud AI-agenter utökar AI-funktionerna utanför Journey Optimizer och möjliggör naturlig språkinteraktion för komplexa marknadsföringsuppgifter:
 
-- **[Reseanalysagent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}** - Utför bortfallsanalys för resan, identifiera målgrupper och schemalägg överlappningar och få åtgärdbara rekommendationer för att optimera reseprestanda.
-- **[Experimentationsagent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}** - Analysera experimentresultat, identifiera vinnande mönster och identifiera nya möjligheter att testa över olika kanaler.
+- **[Reseanalysagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}** - Utför bortfallsanalys för resan, identifiera målgrupper och schemalägg överlappningar och få åtgärdbara rekommendationer för att optimera reseprestanda.
+- **[Experimentationsagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}** - Analysera experimentresultat, identifiera vinnande mönster och identifiera nya möjligheter att testa över olika kanaler.
 - **[Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}** - Skapa och hantera målgruppssegment med hjälp av konversations-AI, analysera målgruppssammansättning och optimera segmenteringsstrategier.
 - **[Agent Orchestrator](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}** - Koordinera flera specialiserade agenter för att effektivt lösa komplexa flerstegsutmaningar inom marknadsföring.
 
 ## Vanliga frågor
 
-+++**Vilka behörigheter krävs för att använda AI-funktioner?**
++++**Vilka behörigheter krävs för att använda AI-assistenten i Journey Optimizer?**
 
-Om du vill använda AI Assistant för innehållsgenerering måste användarna ha behörighet **Skapa innehåll**. Den här behörigheten tilldelas via AI Assistant-resursen i produkten Behörigheter. För att kunna använda AI Assistant för produktkunskaper och driftsinsikter måste användarna godkänna Adobe Experience Cloud Generative AI User Guidelines.
+Om du vill använda AI Assistant för innehållsgenerering måste användarna ha behörighet **Skapa innehåll**. Den här behörigheten tilldelas via AI Assistant-resursen i produkten Behörigheter. För att kunna använda AI Assistant för produktkunskaper och driftsinsikter måste användarna godkänna Adobe Experience Cloud Generative AI User Guidelines. Information om AI Agents-behörigheter finns i den separata posten med vanliga frågor och svar nedan.
 
 [Läs mer om behörigheter](../using/administration/ootb-permissions.md)
 
@@ -217,9 +202,47 @@ AI-assistenten för innehållsgenerering är tillgänglig för kanalerna **E-pos
 
 +++
 
++++**Vad är Adobe Experience Cloud AI-agenter?**
+
+AI-agenter är specialiserade AI-assistenter som bygger på Adobe Experience Platform och som använder naturligt språk för att hjälpa er att analysera, optimera och hantera komplexa marknadsföringsuppgifter. Till skillnad från AI Assistant för innehållsgenerering fokuserar AI-agenter på operativa insikter, reseanalys, målgruppshantering och experimenterande. Bland de tillgängliga agenterna finns Journey Analyze Agent, Experimentation Agent, Audience Agent och Agent Orchestrator.
+
+[Läs mer om AI-agenter](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
+
++++
+
++++**Vilka behörigheter krävs för att använda AI-agenter?**
+
+Behörigheterna varierar beroende på agent:
+
+- **Reseanalysagent** - Kräver **Visa resor** behörighet att visa insikter och **Hantera resor** för att skapa resor. Behörigheterna **Visa segment** och **Hantera segment** krävs också för att arbeta med målgrupper.
+- **Experimenteringsagenten** - Kräver **Visa experiment** behörighet att visa insikter och **Hantera experimentmetadata** för att skapa experiment.
+- **Audience Agent** - Kräver rätt behörighet för att visa och hantera segment.
+- Alla agenter kräver tillgång till AI Assistant och godkännande av Adobe Experience Cloud Generative AI User Guidelines.
+
++++
+
++++**Vad kan agenten för reseanalys göra?**
+
+Reseanalysagenten hjälper er att:
+
+- **Analysera bortfall för resa** - Identifiera var och varför kunderna faller bort under resor och identifiera bortfallsmönster.
+- **Identifiera målgruppsöverlappningar** - Analysera målgruppsöverlappning över flera resor för att förhindra trötthet från att övermåla.
+- **Identifiera schemaläggningskonflikter** - Identifiera tidskonflikter mellan schemalagda resor för samma målgrupp.
+- **Surface Operational Insights** - Få snabba insikter som &quot;show me all live travel&quot; eller &quot;which audiences are used in more than X travel&quot;.
+
+[Utforska reseanalysagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
+
++++
+
++++**Hur fungerar AI-agenter tillsammans?**
+
+**Agent Orchestrator** koordinerar flera specialiserade agenter för att lösa komplexa flerstegsutmaningar inom marknadsföring. Du kan till exempel använda agenten för reseanalys för att identifiera bortfallspunkter, Audience Agent för att analysera segmentkompositionen och Experimentationsagenten för att testa lösningar - allt via naturliga språkfrågor. Orchestrator bestämmer automatiskt vilka agenter som ska involveras och sekventierar deras arbete effektivt.
+
++++
+
 +++**Måste jag godkänna några villkor för att använda AI-funktioner?**
 
-Ja, du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) innan du kan använda AI Assistant i Journey Optimizer. Kontakta Adobe om du vill ha mer information. Dessutom tillämpar Adobe Content Credentials på Firefly-genererade mediefiler som en del av företagets strävan efter transparens vid generativ AI-användning.
+Ja, du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} innan du kan använda AI Assistant i Journey Optimizer eller AI Agents i Adobe Experience Cloud. Kontakta Adobe om du vill ha mer information. Dessutom tillämpar Adobe Content Credentials på Firefly-genererade mediefiler som en del av företagets strävan efter transparens vid generativ AI-användning.
 
 +++
 
