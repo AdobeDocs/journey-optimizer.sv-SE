@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
+source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Använd [!DNL Journey Optimizer] kampanjer för att leverera engångsinnehåll t
 
 ## Kampanjtyper
 
-[!DNL Journey Optimizer] har stöd för tre kampanjtyper. Varje typ passar olika användningsområden och har stöd för olika kanaler.
+[!DNL Journey Optimizer] har stöd för tre kampanjtyper. Varje typ passar olika användningsområden och har stöd för olika kanaler. Mer information om vilka kanaler som är tillgängliga för varje kampanjtyp finns i tabellen i det här avsnittet: [Kanaler i resor och kampanjer](../channels/gs-channels.md#channels)
 
 ![](assets/campaign-modal.png)
 
@@ -125,23 +125,6 @@ Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den söm
 
 >[!ENDTABS]
 
-## Kanaler som stöds efter kampanjtyp {#channels}
-
-Tabellen nedan visar tillgängligheten för varje kanal mellan olika kampanjtyper, vilket visar var de stöds.
-
-| Kanal | Åtgärd (marknadsföring) | Åtgärd (transaktionell) | API-utlöst (marknadsföring) | API-utlöst (Transactional) | Orchestrated |
-|----------------------|---------------------|-------------------------|----------------------------|--------------------------------|--------------|
-| E-post | ✅ | ✅ | ✅ | ✅ | ✅ |
-| SMS | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Push-meddelande | ✅ | ✅ | ✅ | ✅ | ✅ |
-| I appen | ✅ | — | — | — | — |
-| Direktmeddelande | ✅ | — | — | — | — |
-| Webb | ✅ | — | — | — | — |
-| Kodbaserad exp. | ✅ | — | — | — | — |
-| Innehållskort | ✅ | — | — | — | — |
-| WhatApp | ✅ | — | — | — | — |
-| Linje | ✅ | — | — | — | — |
-
 ## Förhandskrav {#prerequisites}
 
 Innan du arbetar med kampanjer måste du kontrollera att du har granskat villkoren nedan.
@@ -166,7 +149,7 @@ Innan du arbetar med kampanjer måste du kontrollera att du har granskat villkor
 
    1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 

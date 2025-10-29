@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '550'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Om du vill lägga till en inbyggd kanalåtgärd till din resa drar och släpper 
 
 ## Lägg till ett meddelande i en resa  {#add-msg-in-journey}
 
-Med inbyggda kanalåtgärder kan du konfigurera utgående eller inkommande meddelanden. Inkommande kanaler som stöds är e-post, textmeddelanden (SMS/MMS) och push-meddelanden. De utgående kanaler som stöds är appar, webben, kodbaserad upplevelse och innehållskort.
+Med inbyggda kanalåtgärder kan du konfigurera utgående eller inkommande meddelanden. Mer information om vilka kanaler som är tillgängliga under resor finns i tabellen i det här avsnittet: [Kanaler under resor och kampanjer](../channels/gs-channels.md#channels).
 
 Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 

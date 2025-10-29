@@ -6,9 +6,9 @@ description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommuni
 role: User
 level: Beginner
 exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Leveranskanaler för utgående meddelanden innebär att meddelanden skickas till
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 E-postkanal
 
@@ -37,7 +37,7 @@ Upptäck hur ni skapar, konfigurerar och optimerar e-postkampanjer, inklusive pe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Push-meddelandekanal
 
@@ -47,7 +47,7 @@ Lär dig hur du skapar, konfigurerar och skickar push-meddelanden för iOS och A
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
 
 SMS/MMS/RCS-meddelanden
 
@@ -57,7 +57,7 @@ Lär dig hur du skapar, hanterar och konfigurerar SMS-, MMS- och RCS-meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg)
 
 Direktreklamkampanjer
 
@@ -75,7 +75,7 @@ Med mobilappar och inkommande webbupplevelser startar kunderna interaktioner. Ex
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
 Meddelanden i appen
 
@@ -85,7 +85,7 @@ Upptäck hur du konfigurerar, utformar och personaliserar meddelanden i appen f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
 
 Webb
 
@@ -95,7 +95,7 @@ Lär dig hur du skapar, konfigurerar och personaliserar webbupplevelser och inte
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
 
 Kodbaserad upplevelse
 
@@ -105,7 +105,7 @@ Fördjupa dig i kodbaserade upplevelser för att leverera personaliserat innehå
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/id-card.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/id-card.svg)
 
 Innehållskort
 
@@ -122,10 +122,30 @@ Upptäck hur du konfigurerar, skapar och utformar innehållskort för engagerand
 - **[WhatsApp Messaging](../../rp_landing_pages/whatsapp-landing-page.md)** - Lär dig hur du integrerar och använder meddelanden i WhatsApp via Meta Cloud API för anpassade och kompatibla kommunikationskampanjer.
 - **[LINE-meddelanden](../../rp_landing_pages/line-landing-page.md)** - Upptäck hur du konfigurerar, skapar och anpassar LINE-meddelanden för effektiv kommunikation i kampanjer och resor.
 
-## Kanaler under resor och kampanjer {#leverage}
+## Kanaler under resor och kampanjer {#channels}
 
 I Adobe Journey Optimizer kan du utnyttja kommunikationskanaler i två primära sammanhang:
 
 - **Resor**: Skapa sömlösa kundupplevelser över flera kontaktytor. Automatisera interaktioner baserat på användarbeteende och preferenser, och säkerställ att användarens kommunikation vägleder användarna genom hela kundresan med ert varumärke. [Lär dig hur du skapar och kör en resa](../building-journeys/journey-gs.md).
 
 - **Kampanjer**: Distribuera specifika marknadsföringskampanjer som använder en viss kanal för att uppnå målinriktade mål. Vare sig ni marknadsför en ny produkt eller driver säsongsförsäljningen kan ni med kampanjer skapa fokuserade meddelandestrategier som är skräddarsydda för er målgrupp. [Lär dig skapa och köra en kampanj](../campaigns/get-started-with-campaigns.md).
+
+Tabellen nedan visar tillgängligheten för varje kanal för olika resor och kampanjer, och visar var de stöds.
+
+&lt;&lt;&lt;&lt;&lt;&lt; Uppdaterat uppströms
+| Kanal              | Resor | Marknadsföringskampanjer | Åtgärdskampanjer (Transactional) | API-utlösta (marknadsföringskampanjer) | API-utlösta (Transactional) kampanjer | Samordnade kampanjer |
+=======
+| Kanal              | Resor | Åtgärdskampanjer (marknadsföring) | Åtgärdskampanjer (Transactional) | API-utlösta kampanjer | Samordnade kampanjer |
+>>>>>>>>>>Streckade ändringar
+>>>>>>>>>>|—|—|—|—|—|—|—|—|
+>>>>>>>>>>| E-post                | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+>>>>>>>>>>| SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+>>>>>>>>>>| Push-meddelande    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+>>>>>>>>>>| I appen               | ✅ | ✅ | — | — | — | — |
+>>>>>>>>>>| Direktreklam          | ✅ | ✅ | — | — | — | — |
+>>>>>>>>>>| Webb                  | ✅ | ✅ | — | — | — | — |
+>>>>>>>>>>| Kodbaserad exp.      | ✅ | ✅ | — | — | — | — |
+>>>>>>>>>>| Innehållskort        | ✅ | ✅ | — | — | — | — |
+>>>>>>>>>>| WhatApp             | ✅ | ✅ | — | — | — | — |
+>>>>>>>>>>| Linje                 | ✅ | ✅ | — | — | — | — |
+> 

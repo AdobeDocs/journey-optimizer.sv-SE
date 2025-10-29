@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
+source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 1%
@@ -34,7 +34,7 @@ För att göra detta måste du först skapa en API-utlöst kampanj i Journey Opt
 
 >[!NOTE]
 >
->Kanaler som stöds är: [E-post](../email/get-started-email.md), [SMS](../sms/get-started-sms.md), [Push-meddelanden](../push/get-started-push.md). Kampanjer som utlösts av API:t för högflöde stöder för närvarande endast e-postkanalen.
+>Mer information om vilka kanaler som stöds finns i tabellen i det här avsnittet: [Kanaler i resor och kampanjer](../channels/gs-channels.md#channels).
 >
 >Vilka kanaler som är tillgängliga varierar beroende på licensmodell och tillägg.
 
@@ -54,4 +54,4 @@ Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i d
 
 Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452729?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
