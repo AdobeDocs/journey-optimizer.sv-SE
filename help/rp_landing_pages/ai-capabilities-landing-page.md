@@ -5,9 +5,9 @@ title: AI Capabilities in Adobe Journey Optimizer
 description: AI Capabilities in Adobe Journey Optimizer
 hide: true
 hidefromtoc: true
-source-git-commit: 2b377fea2f54c15d04fd0fc16633951c58598580
+source-git-commit: e06876a2f7f6e7145f08f725c1bfd4fdf59caf5c
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Adobe Journey Optimizer utnyttjar kraften i artificiell intelligens och maskinin
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 AI-assistenten för innehållsgenerering
 
@@ -30,7 +30,7 @@ Utnyttja generativ AI för att skapa och personalisera innehåll i e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Sändningsoptimering
 
@@ -40,7 +40,7 @@ Använd AI för att förutsäga den optimala tiden för att skicka meddelanden o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 AI-modeller för beslut
 
@@ -50,7 +50,7 @@ Skapa automatiska optimeringsmodeller och personaliserade optimeringsmodeller f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 AI Assistant Product Knowledge
 
@@ -60,7 +60,7 @@ Få svar och driftsinsikter om Adobe Journey Optimizer med hjälp av konversatio
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Experimentera med AI
 
@@ -70,13 +70,53 @@ Generera olika varianter och experimentera för att identifiera det material som
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 AI-integrering för kunder
 
 Integrera med Adobe Intelligent Services för att förutsäga kundbeteende och utnyttja bortfalls- och konverteringspoäng under kundresan.
 
 [Utforska intelligenta tjänster](../using/building-journeys/ai-services-overview.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/analytics.svg)
+
+Reseanalysagent
+
+Analysera och optimera resor med hjälp av naturligt språk. Identifiera bortfallspunkter, identifiera målgrupper och schemalägg konflikter och få åtgärdbara rekommendationer.
+
+[Utforska Journey Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/beaker.svg)
+
+Experimentationsagent
+
+Kör och hantera digitala experiment med AI-baserade insikter. Få resultatsammanfattningar, innehållsanalys och rekommendationer för dina nästa tester.
+
+[Upptäck experimenteringsagenten](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+
+Audience-agent
+
+Skapa, analysera och optimera målgruppssegment med hjälp av konversationsbaserad AI. Bygg komplexa segment med hjälp av naturliga språkfrågor och få insikter om publiköverlappning.
+
+[Lär dig mer om Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/workflow.svg)
+
+Agent Orchestrator
+
+Koordinera flera AI-agenter för smidigt samarbete. Lös komplexa uppgifter genom att kombinera agenterna Journey, Experimentation, Audience och Data Insights.
+
+[Utforska Agent Orchestrator](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
 :::
 
 ::::
@@ -87,6 +127,15 @@ Integrera med Adobe Intelligent Services för att förutsäga kundbeteende och u
 - **[Värdering av varumärkesjustering](../using/content-management/brands-score.md)** - Utvärdera hur väl ditt AI-genererade innehåll överensstämmer med varumärkesriktlinjerna med hjälp av AI-baserad poängsättning.
 - **[Experimentera med accelerator](../using/content-management/experiment-accelerator-gs.md)** - Snabba upp innehållsexperimenterandet med AI-drivna insikter och rekommendationer.
 - **[API:er med AI-funktioner](../using/configuration/ajo-apis.md)** - få tillgång till Journey Optimizer AI och maskininlärningsfunktioner via programmering via API:er.
+
+## AI-agenter i Adobe Experience Cloud
+
+Adobe Experience Cloud AI-agenter utökar AI-funktionerna utanför Journey Optimizer och möjliggör naturlig språkinteraktion för komplexa marknadsföringsuppgifter:
+
+- **[Reseanalysagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}** - Utför bortfallsanalys för resan, identifiera målgrupper och schemalägg överlappningar och få åtgärdbara rekommendationer för att optimera reseprestanda.
+- **[Experimentationsagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}** - Analysera experimentresultat, identifiera vinnande mönster och identifiera nya möjligheter att testa över olika kanaler.
+- **[Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}** - Skapa och hantera målgruppssegment med hjälp av konversations-AI, analysera målgruppssammansättning och optimera segmenteringsstrategier.
+- **[Agent Orchestrator](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}** - Koordinera flera specialiserade agenter för att effektivt lösa komplexa flerstegsutmaningar inom marknadsföring.
 
 ## Vanliga frågor
 
