@@ -6,9 +6,9 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: dfe611fb-9c50-473c-9eb7-b983e1e6f01e
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 07a582db495ecbfae97b6d299b65b06c0cdf8c14
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '592'
 ht-degree: 2%
 
 ---
@@ -107,10 +107,11 @@ Följande åtgärd returnerar den första av de fem främsta beställningarna me
 {%= head(topN(orders,price, 5)) %}
 ```
 
-## Första `n` i matris {#first-n}
+## Sortera och hämta första N i en array {#first-n}
 
-Funktionen `topN` används för att returnera de första `N` objekten i en array, sorterade i stigande ordning baserat på det angivna numeriska uttrycket.
+Funktionen `topN` sorterar en array i fallande ordning baserat på det angivna numeriska uttrycket och returnerar de första `N` objekten. Om arraystorleken är mindre än `N` returneras hela den sorterade arrayen.
 
+Den här funktionen
 **Syntax**
 
 ```sql
@@ -205,9 +206,9 @@ intersection(person1.favoriteColors,person2.favoriteColors) = ["red", "blue", "g
 ```
 -->
 
-## Senaste `n` i matris{#last-n}
+## Sortera och hämta sista N i en array {#last-n}
 
-Funktionen `bottomN` används för att returnera de sista `N` objekten i en array, sorterade i stigande ordning baserat på det angivna numeriska uttrycket.
+Funktionen `bottomN` sorterar en array i stigande ordning baserat på det angivna numeriska uttrycket och returnerar de första `N` objekten. Om arraystorleken är mindre än `N` returneras hela den sorterade arrayen.
 
 **Syntax**
 

@@ -6,9 +6,9 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 07a582db495ecbfae97b6d299b65b06c0cdf8c14
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1091'
 ht-degree: 3%
 
 ---
@@ -420,9 +420,22 @@ Följande åtgärd returnerar datumet i följande format: MM/DD/YY.
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY") %}
 ```
 
-## Formatera datum med språkstöd{#format-date-locale}
+### Mönstertecken {#pattern-characters}
 
-Funktionen `formatDate` används för att formatera ett datum- och tidvärde till motsvarande språkkänsliga representation, dvs. i ett önskat språkområde. Formatet ska vara ett giltigt Java DateTimeFormat-mönster.
+Vissa mönsterbokstäver kan se likadana ut men representerar olika koncept.
+
+| Mönster | Betydelse | Exempel (för `2023-12-31T10:15:30Z`) |
+|---------|---------|--------------------------------------|
+| `y` | Kalenderår (standardår) | `2023` |
+| `Y` | Veckobaserat år (ISO 8601). Kan skilja sig åt vid årsgränser. | `2024` (sedan 31 december 2023 infaller under den första veckan 2024) |
+| `M` | Månad på året (1-12 eller text som `Jan`, `January`) | `12` eller `Dec` |
+| `m` | Timme (0-59) | `15` |
+| `d` | Månadsdag (1-31) | `31` |
+| `D` | Årsdag (1-366) | `365` |
+
+### Formatera datum med språkstöd{#format-date-locale}
+
+Funktionen `formatDate` kan användas för att formatera ett datum- och tidvärde till motsvarande språkkänsliga representation, dvs. i ett önskat språkområde. Formatet ska vara ett giltigt Java DateTimeFormat-mönster.
 
 **Syntax**
 
