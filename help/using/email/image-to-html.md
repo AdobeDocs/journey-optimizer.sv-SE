@@ -10,19 +10,14 @@ level: Beginner
 keywords: e-post, mall, bild, HTML, AI, design, accelerator
 hide: true
 hidefromtoc: true
-source-git-commit: 86bf80c56a1bd50872d014a7aa92407227c823f8
+source-git-commit: f23bb73a9aa1c3ca8a6fc7a9a7f4d18cebc1faf3
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1466'
 ht-degree: 0%
 
 ---
 
 # Konvertera bilder till HTML-mallar med Template Accelerator {#image-to-html}
-
->[!CONTEXTUALHELP]
->id="ajo_template_accelerator"
->title="Template Accelerator"
->abstract="Använd Template Accelerator för att konvertera statisk bilddesign (JPEG eller PNG) till fullt anpassningsbara HTML e-postmallar. Den här AI-baserade funktionen hjälper dig att snabbt omvandla visuell design till responsivt, redigerbart e-postinnehåll. Obs! Allt befintligt innehåll i e-postmeddelandet tas bort när du överför en bild för konvertering."
 
 >[!AVAILABILITY]
 >
@@ -32,7 +27,7 @@ ht-degree: 0%
 
 Template Accelerator är en innovativ AI-baserad funktion på menyn **Innehållsmallar** som dramatiskt snabbar upp e-postskapandet genom att konvertera statiska bilddesigner till fullt anpassningsbara HTML-mallar för e-postinnehåll. Med det här verktyget kan marknadsförare omvandla visuell design från grafiska designers eller designverktyg till responsiva, redigerbara e-postmallar som kan sparas i biblioteket Innehållsmallar och sedan återanvändas på flera resor och i flera kampanjer.
 
-Genom att utnyttja generativ AI-teknik analyserar Template Accelerator layouten, typografin, färgerna och de visuella elementen i bilden och genererar ren, strukturerad HTML-kod som bevarar designtroheten samtidigt som den säkerställer fullständig redigerbarhet och kompatibilitet med Email Designer.
+Genom att utnyttja generativ AI-teknik analyserar Template Accelerator-bilden till HTML-konverteraren layouten, typografin, färgerna och de visuella elementen i bilden och genererar ren, strukturerad HTML-kod som bevarar designtroheten samtidigt som man säkerställer full redigerbarhet och kompatibilitet med Email Designer.
 
 **Viktiga fördelar:**
 
@@ -111,7 +106,7 @@ Läs mer om [att arbeta med e-postmallar](use-email-templates.md) och [skapa inn
 
 ## Bästa praxis {#best-practices}
 
-Följ de här rekommendationerna för att få optimala resultat när du använder Template Accelerator:
+Följ de här rekommendationerna för att få optimala resultat när du konverterar bilden till HTML:
 
 **Innan du börjar**
 
@@ -161,7 +156,7 @@ Tänk på följande begränsningar när du använder Image to HTML-konverteraren
 
 >[!NOTE]
 >
->Template Accelerator är utformad för att ge en bra startpunkt för e-postgenerering. Den genererade HTML bör granskas och förfinas med e-post-Designer för att säkerställa att den uppfyller dina exakta krav.
+>Konverteraren för bilder till HTML är utformad för att ge en bra startpunkt för e-postgenerering. Den genererade HTML bör granskas och förfinas med e-post-Designer för att säkerställa att den uppfyller dina exakta krav.
 
 ## Vanliga frågor och svar {#faq}
 
