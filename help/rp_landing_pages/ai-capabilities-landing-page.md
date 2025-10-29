@@ -86,7 +86,7 @@ Reseanalysagent
 
 Analysera och optimera resor med hjälp av naturligt språk. Identifiera bortfallspunkter, identifiera målgrupper och schemalägg konflikter och få åtgärdbara rekommendationer.
 
-[Utforska Journey Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
+[Utforska Journey Agent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
 :::
 
 :::
@@ -96,7 +96,7 @@ Experimentationsagent
 
 Kör och hantera digitala experiment med AI-baserade insikter. Få resultatsammanfattningar, innehållsanalys och rekommendationer för dina nästa tester.
 
-[Upptäck experimenteringsagenten](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}
+[Upptäck experimenteringsagenten](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}
 :::
 
 :::
@@ -132,8 +132,8 @@ Koordinera flera AI-agenter för smidigt samarbete. Lös komplexa uppgifter geno
 
 Adobe Experience Cloud AI-agenter utökar AI-funktionerna utanför Journey Optimizer och möjliggör naturlig språkinteraktion för komplexa marknadsföringsuppgifter:
 
-- **[Reseanalysagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}** - Utför bortfallsanalys för resan, identifiera målgrupper och schemalägg överlappningar och få åtgärdbara rekommendationer för att optimera reseprestanda.
-- **[Experimentationsagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}** - Analysera experimentresultat, identifiera vinnande mönster och identifiera nya möjligheter att testa över olika kanaler.
+- **[Reseanalysagent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}** - Utför bortfallsanalys för resan, identifiera målgrupper och schemalägg överlappningar och få åtgärdbara rekommendationer för att optimera reseprestanda.
+- **[Experimentationsagent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}** - Analysera experimentresultat, identifiera vinnande mönster och identifiera nya möjligheter att testa över olika kanaler.
 - **[Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}** - Skapa och hantera målgruppssegment med hjälp av konversations-AI, analysera målgruppssammansättning och optimera segmenteringsstrategier.
 - **[Agent Orchestrator](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}** - Koordinera flera specialiserade agenter för att effektivt lösa komplexa flerstegsutmaningar inom marknadsföring.
 
