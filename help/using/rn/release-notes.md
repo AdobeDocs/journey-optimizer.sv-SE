@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 9d58e16bb6717c4aeccede84b1ccc5b4e777fad8
+source-git-commit: 7176f5a1fa4c1b6c564fdb5d65f4e9208a1dce30
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1238'
 ht-degree: 7%
 
 ---
@@ -24,39 +24,42 @@ ht-degree: 7%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna.  Ett dedikerat avsnitt om [de senaste uppdateringarna](#latest-updates) visar på nya funktioner och förbättringar när de distribueras till produktionen, så att du alltid informeras om alla ändringar i realtid. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](#releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-<!-- DOCAC-13676
+<!--
 ## Latest updates {#latest-updates}
 
-New capabilities and improvements released recently are listed below, with their availability date.
 
-### New capabilities {#latest-features}
+New capabilities and improvements released in the past weeks are listed below, with their availability date. They will be grouped with the next release notes content at the end of the month. See also the latest [release notes below](#latest-rn).
+
+-->
+
+
+
+## Versionsinformation 25 oktober {#oct-25-10-rn}
+
+### Nya funktioner {#oct-25-10-features}
+
 
 <table>
 <thead>
 <tr>
-<th><strong>Image to HTML converter</strong><br/></th>
+<th><strong>Konverterare för bild till HTML</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The image to HTML converter is an AI-powered feature that converts static image designs into fully customizable, modular HTML email content templates. This no-code tool enables marketers to transform visual designs into responsive, editable email templates without requiring technical expertise—perfect for platform migration, rapid template creation, and building reusable template libraries.</p>
-<p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p>For more information, refer to the <a href="../email/image-to-html.md">detailed documentation</a>.</p>
-<p>Availability date: November 3, 2025</p>
+<p>Konverteraren av bilder till HTML är en AI-baserad funktion som konverterar statiska bilder till fullt anpassningsbara, modulära mallar för HTML e-postinnehåll. Med det här kodfria verktyget kan marknadsförarna omvandla visuell design till responsiva, redigerbara e-postmallar utan att behöva ha någon teknisk expertis - perfekt för plattformsmigrering, snabb mallframtagning och för att bygga återanvändbara mallbibliotek.</p>
+<p><img src="../email/assets/email_designer_converted_img.png"/></p>
+<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Mer information finns i den <a href="../email/image-to-html.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 30 okt 2025</p>
 </td>
 </tr>
 </tbody>
 </table>
--->
 
-## Versionsinformation 25 oktober {#oct-25-10-rn}
-
-**Releasedatum**: 22 oktober 2025
-
-### Nya funktioner {#oct-25-10-features}
 
 <table>
 <thead>
@@ -314,7 +317,7 @@ New capabilities and improvements released recently are listed below, with their
 <tr>
 <td>
 <p>Journey Optimizer Experimentation Accelerator innehåller nu Experimentation Agent, ett AI-drivet konversationsverktyg med vilket du kan interagera med dina experiment, insikter och möjligheter. Det förbättrar Journey Optimizer Experimentation Accelerator upplevelse och hjälper dig att köra experiment effektivare, upptäcka vad som fungerar och se var du kan optimera nästa steg.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html?lang=sv-SE" target="_blank">detaljerade dokumentationen</a>.</p>
+<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html" target="_blank">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 10 oktober 2025</p>
 </td>
 </tr>
@@ -362,15 +365,9 @@ New capabilities and improvements released recently are listed below, with their
 </tbody>
 </table>
 
-<!--
-## Latest updates {#updates-rn}
 
-New capabilities and improvements released in the past weeks are listed below, with their availability date. They will be grouped with the next release notes content at the end of the month. See also the latest [release notes below](#latest-rn).
--->
 
 ### Förbättringar {#updates-improvements}
-
-<!--Availability date: October 22, 2025-->
 
 **Körningsfält för WhatsApp-kanal**
 
