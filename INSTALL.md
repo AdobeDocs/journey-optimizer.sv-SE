@@ -177,6 +177,6 @@ Detta garanterar att alla använder samma, aktuella agenter.
 
 Alla databaser får uppdateringar via `git submodule update --remote`.
 
----
+&#x200B;---
 
 **Behöver du hjälp?** Kontakta dokumentationsteamets ledare eller kontrollera den interna wiki-instansen.
