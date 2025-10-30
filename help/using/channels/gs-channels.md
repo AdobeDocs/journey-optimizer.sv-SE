@@ -6,10 +6,10 @@ description: Lär dig hur du arbetar med  [!DNL Adobe Journey Optimizer] kommuni
 role: User
 level: Beginner
 exl-id: 5779bcee-49c0-4ffa-9b17-329ef458c96a
-source-git-commit: d2ae91dd8f9f3ef8a38db12ea3c9356ca9a27c53
+source-git-commit: 3093bd544dcc2f8a743c46cb0e45939bdf00adf1
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 1%
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -130,17 +130,18 @@ I Adobe Journey Optimizer kan du utnyttja kommunikationskanaler i två primära 
 
 - **Kampanjer**: Distribuera specifika marknadsföringskampanjer som använder en viss kanal för att uppnå målinriktade mål. Vare sig ni marknadsför en ny produkt eller driver säsongsförsäljningen kan ni med kampanjer skapa fokuserade meddelandestrategier som är skräddarsydda för er målgrupp. [Lär dig skapa och köra en kampanj](../campaigns/get-started-with-campaigns.md).
 
-Tabellen nedan visar tillgängligheten för varje kanal för olika resor och kampanjer, och visar var de stöds.
+<!--
+The table below shows the availability of each channel across different journeys and campaign, indicating where they are supported.
 
-| Kanal | Resor | Åtgärdskampanjer (marknadsföring) | Åtgärdskampanjer (Transactional) | API-utlösta kampanjer | Samordnade kampanjer |
+| Channel              | Journeys | Action campaigns (Marketing) | Action campaigns (Transactional) | API-triggered campaigns | Orchestrated campaigns |
 |----------------------|---------------------|-------------------------|----------------------------|--------------------------------|--------------|--------------|
-| E-post | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| SMS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Push-meddelande | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| I appen | ✅ | ✅ | — | — | — | — |
-| Direktmeddelande | ✅ | ✅ | — | — | — | — |
-| Webb | ✅ | ✅ | — | — | — | — |
-| Kodbaserad exp. | ✅ | ✅ | — | — | — | — |
-| Innehållskort | ✅ | ✅ | — | — | — | — |
-| WhatApp | ✅ | ✅ | — | — | — | — |
-| Linje | ✅ | ✅ | — | — | — | — |
+| Email                | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Push notification    | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| In-app               | ✅ | ✅ | — | — | — | — |
+| Direct mail          | ✅ | ✅ | — | — | — | — |
+| Web                  | ✅ | ✅ | — | — | — | — |
+| Code-based exp.      | ✅ | ✅ | — | — | — | — |
+| Content cards        | ✅ | ✅ | — | — | — | — |
+| WhatsApp             | ✅ | ✅ | — | — | — | — |
+| Line                 | ✅ | ✅ | — | — | — | — |-->
