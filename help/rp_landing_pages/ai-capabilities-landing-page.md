@@ -5,9 +5,9 @@ title: AI Capabilities in Adobe Journey Optimizer
 description: AI Capabilities in Adobe Journey Optimizer
 hide: true
 hidefromtoc: true
-source-git-commit: 7db2932d6f4c6455cc323103c89e6d673d50efd0
+source-git-commit: f3c1cfcbc2a76b698399de70493d3fd5136f11d5
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Utvärdera hur väl det AI-genererade innehållet överensstämmer med varumärk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Experiment Accelerator
 
@@ -100,13 +100,13 @@ Snabba upp innehållsexperimenterandet med AI-baserade insikter och rekommendati
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-API:er med AI-funktioner
+Resedriftsinsikter (Beta)
 
-Få tillgång till Journey Optimizer AI- och maskininlärningsfunktioner via programmeringsgränssnitt.
+Få omedelbara operativa insikter om era resor direkt i AI Assistant med hjälp av frågor på naturspråket.
 
-[Upptäck API:er med AI-funktioner](../using/configuration/ajo-apis.md)
+[Lär dig mer om reseinsikter](../using/start/ai-assistant.md)
 :::
 
 ::::
@@ -117,8 +117,8 @@ Få tillgång till Journey Optimizer AI- och maskininlärningsfunktioner via pro
 
 Adobe Experience Cloud AI-agenter utökar AI-funktionerna utanför Journey Optimizer och möjliggör naturlig språkinteraktion för komplexa marknadsföringsuppgifter:
 
-- **[Reseanalysagent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}** - Utför bortfallsanalys för resan, identifiera målgrupper och schemalägg överlappningar och få åtgärdbara rekommendationer för att optimera reseprestanda.
-- **[Experimentationsagent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}** - Analysera experimentresultat, identifiera vinnande mönster och identifiera nya möjligheter att testa över olika kanaler.
+- **[Reseanalysagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}** - Utför bortfallsanalys för resan, identifiera målgrupper och schemalägg överlappningar och få åtgärdbara rekommendationer för att optimera reseprestanda.
+- **[Experimentationsagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}** - Analysera experimentresultat, identifiera vinnande mönster och identifiera nya möjligheter att testa över olika kanaler.
 - **[Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience-agent){target="_blank"}** - Skapa och hantera målgruppssegment med hjälp av konversations-AI, analysera målgruppssammansättning och optimera segmenteringsstrategier.
 - **[Agent Orchestrator](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}** - Koordinera flera specialiserade agenter för att effektivt lösa komplexa flerstegsutmaningar inom marknadsföring.
 
@@ -230,7 +230,7 @@ Reseanalysagenten hjälper er att:
 - **Identifiera schemaläggningskonflikter** - Identifiera tidskonflikter mellan schemalagda resor för samma målgrupp.
 - **Surface Operational Insights** - Få snabba insikter som &quot;show me all live travel&quot; eller &quot;which audiences are used in more than X travel&quot;.
 
-[Utforska reseanalysagent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
+[Utforska reseanalysagent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
 
 +++
 
