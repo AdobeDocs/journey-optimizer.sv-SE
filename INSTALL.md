@@ -1,8 +1,8 @@
 ---
-source-git-commit: 80d5f294491b35dcdbfe4976cb3ec4cf14384858
+source-git-commit: 505810d58d7db1682cc434b0df6d1ec5f5edd23e
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 1%
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 # 🚀 installerar marköragenter
@@ -21,9 +21,13 @@ Du behöver bara göra detta **en gång** per databas.
    ```
    @setup-agents
    ```
-
-3. Följ anvisningarna
+3. Agenten kommer automatiskt att:
+   - Testa SSH- och HTTPS-åtkomst
+   - Använda arbetsmetoden
+   - Vägled vid behov
 4. Klart! ✨
+
+**Obs!** Agenten identifierar automatiskt om du har SSH- eller HTTPS-åtkomst till `git.corp.adobe.com` och använder rätt metod. Om ingen av funktionerna fungerar visas en guidad konfiguration.
 
 ### Alternativ 2: Använda terminal
 
@@ -34,7 +38,12 @@ Du behöver bara göra detta **en gång** per databas.
    ./setup-agents.sh
    ```
 
-   Eller manuellt:
+   Skriptet kommer automatiskt att:
+   - Testa SSH- och HTTPS-åtkomst
+   - Använda arbetsmetoden
+   - Visa installationsanvisningar om det behövs
+
+   Eller manuellt (om du vet att din Git är konfigurerad):
 
    ```bash
    git submodule update --init --recursive
@@ -64,7 +73,7 @@ När du har installerat programmet kan du använda agenter i markören:
 @fix-grammar     # Fix grammar in current file
 ```
 
-En fullständig lista över tillgängliga agenter finns i `.cursor-agents/AGENTS.md`.
+Se [AGENTS.md](AGENTS.md) för en fullständig lista över tillgängliga agenter.
 
 ## Uppdaterar agenter
 
@@ -123,15 +132,14 @@ chmod +x setup-agents.sh
 Marköragenter distribueras som en **Git-undermodul**:
 
 ```
-journey-optimizer.en/
+your-repo/
   ├── .cursor-agents/          ← Git submodule
   │   ├── agents/
   │   │   ├── draft-page-generator.md
   │   │   └── fix-grammar.md
   │   └── AGENTS.md
   ├── setup-agents.sh          ← Setup script
-  ├── setup-agent.md           ← Bootstrap agent
-  └── help/                    ← Your documentation
+  └── your-content/
 ```
 
 Undermodulen pekar på:
@@ -139,5 +147,35 @@ Undermodulen pekar på:
 
 Detta garanterar att alla använder samma, aktuella agenter.
 
-**Behöver du hjälp?** Kontakta dokumentationsteamets ledare eller kontrollera den interna wiki-instansen.
+## För underhållare
 
+### Lägga till i en ny databas
+
+1. Lägg till undermodulen:
+
+   ```bash
+   git submodule add https://git.corp.adobe.com/AdobeDocs/CursorAgents.git .cursor-agents
+   ```
+
+2. Kopiera installationsfiler:
+   - `setup-agents.sh`
+   - `setup-agent.md` (placera i roten, inte i undermodulen)
+   - `INSTALL.md`
+
+3. Verkställ:
+
+   ```bash
+   git add .gitmodules .cursor-agents setup-agents.sh
+   git commit -m "Add Cursor Agents submodule"
+   ```
+
+### Uppdaterar det centrala arkivet
+
+Ändringar av agens bör göras i:
+**https://git.corp.adobe.com/AdobeDocs/CursorAgents**
+
+Alla databaser får uppdateringar via `git submodule update --remote`.
+
+---
+
+**Behöver du hjälp?** Kontakta dokumentationsteamets ledare eller kontrollera den interna wiki-instansen.
