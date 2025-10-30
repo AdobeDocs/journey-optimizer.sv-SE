@@ -68,7 +68,7 @@ Diagrammet **[!UICONTROL Calls overtime]** visar trenden för KPI för HTTP-anro
 * Om du väljer ett 1-dagars tidsintervall visas nyckeltal per timme i diagrammet.
 * Om du väljer ett 1-timmars tidsintervall visas nyckeltal per minut i diagrammet.
 
-➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten &#x200B;](#kpis)
+➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten ](#kpis)
 
 ## Uppdelning av samtal {#breakdown}
 
@@ -76,6 +76,6 @@ Diagrammet **[!UICONTROL Calls overtime]** visar trenden för KPI för HTTP-anro
 
 Tabellen **[!UICONTROL Calls breakdown]** innehåller en hierarkisk uppdelning av HTTP-anropsmåtten, från de totala måtten per slutpunkt på den översta nivån till måtten per anpassad åtgärd, med varje slutpunkt ned till de resor som är beroende av dem på den nedersta nivån.
 
-➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten &#x200B;](#kpis)
+➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten ](#kpis)
 
 
