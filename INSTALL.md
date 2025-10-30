@@ -21,6 +21,7 @@ Du behöver bara göra detta **en gång** per databas.
    ```
    @setup-agents
    ```
+
 3. Agenten kommer automatiskt att:
    - Testa SSH- och HTTPS-åtkomst
    - Använda arbetsmetoden
@@ -176,6 +177,6 @@ Detta garanterar att alla använder samma, aktuella agenter.
 
 Alla databaser får uppdateringar via `git submodule update --remote`.
 
----
+&#x200B;---
 
 **Behöver du hjälp?** Kontakta dokumentationsteamets ledare eller kontrollera den interna wiki-instansen.

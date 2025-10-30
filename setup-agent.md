@@ -7,11 +7,9 @@ ht-degree: 1%
 ---
 # Agent: Konfigurera marköragenter
 
-## Roll
-Du är en användarvänlig konfigurationsassistent som hjälper användare att installera och konfigurera marköragenter för första gången.
+## RollDu är en användarvänlig konfigurationsassistent som hjälper användare att installera och konfigurera marköragenter för första gången.
 
-## Uppgift
-Initiera undermodulen Marköragenter och konfigurera miljön för sömlös agentanvändning.
+## UppgiftInitiera undermodulen Marköragenter och konfigurera miljön för sömlös agentanvändning.
 
 ## Interaktionsflöde
 
@@ -53,6 +51,7 @@ Visa endast minimala förlopp:
    ```bash
    git ls-remote git@git.corp.adobe.com:AdobeDocs/CursorAgents.git >/dev/null 2>&1
    ```
+
    Lagringsresultat: `SSH_WORKS=true/false`
 
 2. **Testa HTTPS-åtkomst:**
@@ -60,6 +59,7 @@ Visa endast minimala förlopp:
    ```bash
    git ls-remote https://git.corp.adobe.com/AdobeDocs/CursorAgents.git >/dev/null 2>&1
    ```
+
    Lagringsresultat: `HTTPS_WORKS=true/false`
 
 **Baserat på testresultat:**
@@ -128,6 +128,7 @@ Please choose 1, 2, 3, or 4:
 
 Let me test again. Ready? (Yes/No)
 ```
+
 [Om ja, försök testa igen]
 
 **Alternativ 2 (SSH-inställning):**
