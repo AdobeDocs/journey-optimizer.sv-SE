@@ -8,12 +8,11 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: tysta timmar, tidsundantag, affärsregler, regeluppsättningar, schema, kampanjer
-exl-id: [TO BE GENERATED]
-hide: yes
-hidefromtoc: yes
-source-git-commit: 11bccd63afa1bf5aafcd1dff70c8193ea754d256
+hide: true
+hidefromtoc: true
+source-git-commit: e5243565241551fab98a79fa118618535ce58de8
 workflow-type: tm+mt
-source-wordcount: 968
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
