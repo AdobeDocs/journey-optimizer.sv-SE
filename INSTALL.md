@@ -1,5 +1,5 @@
 ---
-source-git-commit: 08eaa7ae974c134ea2e920a1fa854dcf6a971e18
+source-git-commit: 7e2ed972b85255ccd64cd04d306f7de602b41165
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -177,6 +177,6 @@ Detta garanterar att alla använder samma, aktuella agenter.
 
 Alla databaser får uppdateringar via `git submodule update --remote`.
 
-&#x200B;---
+---
 
 **Behöver du hjälp?** Kontakta dokumentationsteamets ledare eller kontrollera den interna wiki-instansen.
