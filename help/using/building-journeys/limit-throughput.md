@@ -9,9 +9,9 @@ level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 5eddbb1f9ab53f1666ccd8518785677018e10f6f
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Detta kan göras med:
 >
 >Eftersom svaren nu stöds bör du använda anpassade åtgärder i stället för datakällor för externa datakällor som användningsfall. Mer information om svar finns i [avsnittet](../action/action-response.md)
 
-Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5 000 instanser/sekund för enastående resor och upp till 20 000 instanser/sekund för målgruppsinställda.
+Om du arbetar med externa datakällor eller anpassade åtgärder kanske du vill skydda dina externa system genom att begränsa resans genomströmning: upp till 5 000 instanser/sekund för enastående resor och upp till 20 000 instanser/sekund för målgruppsinställda. Läs mer om resefrekvenser och dataflöde i [det här avsnittet](entry-management.md#journey-processing-rate).
 
 För anpassade åtgärder finns begränsningsfunktioner på produktnivå. Se den här [sidan](../configuration/external-systems.md#capping).
 

@@ -9,10 +9,10 @@ level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 5eddbb1f9ab53f1666ccd8518785677018e10f6f
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 1%
+source-wordcount: '1109'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +34,36 @@ Med Adobe Journey Optimizer kan du skapa följande typer av resor:
 * **Målgruppskvalificering** resor: dessa resor börjar med en Audience-kvalificeringshändelse. Dessa resor lyssnar på ingångar och utgångar för profiler i målgrupper. När detta händer kommer den associerade profilen in på resan. [Läs mer](#entry-unitary)
 
 I alla resetyper kan en profil inte finnas flera gånger i samma resa, samtidigt, för alla aktiva [versioner av resan](publishing-the-journey.md#journey-versions-journey-versions). Om du vill kontrollera att en person befinner sig på en resa används profilidentiteten som en nyckel. Systemet tillåter inte att samma nyckel, till exempel nyckeln `CRMID=3224`, finns på olika platser under samma resa.
+
+## Bearbetningsgrad för resor {#journey-processing-rate}
+
+Bearbetningshastigheten för resan påverkas av flera faktorer som avgör hur profiler flödar genom en resa:
+
+### Ingångstakt för profil {#profile-entrance-rate}
+
+Hur profiler anger resor och hur ofta de förväntas tillkomma beror på den första aktiviteten som används:
+
+* **Läs målgrupper** resor (batchscenario, där du anger en målgrupp med profiler som mål och utlöser en resa för den fullständiga målgruppen): det högsta antalet är 20 000 TPS (transaktioner per sekund), vilket är den kvot som är tillgänglig på **sandlådenivå**. Om du har flera resor som körs samtidigt på den sandlådan kanske 20 000 TPS inte är möjligt. Använd det här maxvärdet som bästa scenario.
+
+* **Målgruppskvalificering** resor (enställigt scenario, där du vill utlösa en resa när en profil kvalificerar eller diskvalificerar för en målgrupp): det högsta antalet är 5 000 TPS. Observera att detta är en delad gräns med resor som börjar med händelser och som också delas över resor på **organisationsnivå**.
+
+* **Enhetlig händelse** resor (enställigt scenario, där du vill utlösa en resa när en händelse skickas från en profil): samma som ovan, båda delar samma gräns på 5 000 TPS. Mer information om händelseflöde för resan finns i [det här avsnittet](../event/about-events.md#event-thoughput).
+
+* **Affärshändelse** - resor (som egentligen är ett enastående till gruppscenario eftersom en affärshändelse alltid följs av en läsare): affärshändelser räknas också in i kvoten på 5 000 TPS, men aktiviteten Läs målgrupp direkt efter har samma gräns som resor som börjar med en läsare (20 000 TPS).
+
+### Evenemang och målgruppskvalifikationer inom resor {#events-inside-journeys}
+
+Efter ingången kan du använda **Unitary-aktiviteter** eller **Audience-kvalificeringsaktiviteter** inuti resan. En profil kan delta i någon av de fyra typer av resor som beskrivs ovan och vänta på att en händelse ska skickas ut eller vänta tills profilen kvalificerar sig för en målgrupp. Dessa Unitary Events- och Audience-kvalifikationer kommer att räknas in i den kvot som beskrivs ovan. Om du till exempel påbörjar en resa med en läsare (med högst 20 000 TPS) och har en händelse direkt efter, kommer den här händelsen att ha högst 5 000 TPS.
+
+### Påverkan av väntande aktiviteter {#wait-activities-impact}
+
+**Vänta**-aktiviteter på resor kan också påverka hur många profiler som följer en resa vid en viss tidpunkt. Vanligtvis baseras en Wait-aktivitet på en relativ tid (t.ex.: avsluta 2 timmar efter att vänta, så alla profiler inte avslutas samtidigt). Om en fast tid definieras för den vänteaktiviteten kan flera profiler avsluta den resan samtidigt. Detta rekommenderas inte. Stora volymer kan sedan ses och TPS:en kan från och med nu överstiga 20 000 TPS.
+
+### Åtgärdsaktiviteter {#action-activities-impact}
+
+Slutligen kan **åtgärd**-aktiviteter (interna kanaler som e-post, SMS, push osv., utgående eller inkommande, Anpassade åtgärder, Hoppar som skickar profiler till andra resor, Uppdatera profiler som skickar data till den enhetliga profiltjänsten osv.) påverkas av profilinläsningen från resor men kan även påverka bearbetningsfrekvensen. En anpassad åtgärd som till exempel har en extern slutpunkt med hög svarstid som mål kommer att göra resebearbetningen långsammare.
+
+För anpassade åtgärder är standardinställningen 300 000 anrop per minut, vilket kan ändras med en anpassad fästprincip. Läs mer om anpassad åtgärdsbegränsning i [det här avsnittet](../configuration/external-systems.md#capping).
 
 ## Unitär event- och målgruppskompetens{#entry-unitary}
 

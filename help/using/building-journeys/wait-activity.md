@@ -10,9 +10,9 @@ level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 5eddbb1f9ab53f1666ccd8518785677018e10f6f
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
@@ -81,7 +81,7 @@ Välj typen **Egen** om du vill definiera ett anpassat datum, med hjälp av ett 
 
 Uttrycket i redigeraren ska ha formatet `dateTimeOnly`. Se [den här sidan](expression/expressionadvanced.md). Mer information om formatet dateTimeOnly finns på [den här sidan](expression/data-types.md).
 
-Det bästa sättet är att använda anpassade datum som är specifika för dina profiler och undvika att använda samma datum för alla. Definiera till exempel inte `toDateTimeOnly('2024-01-01T01:11:00Z')` utan `toDateTimeOnly(@event{Event.productDeliveryDate})` som är specifik för varje profil. Tänk på att användning av fasta datum kan orsaka problem vid körningen av din resa.
+Det bästa sättet är att använda anpassade datum som är specifika för dina profiler och undvika att använda samma datum för alla. Definiera till exempel inte `toDateTimeOnly('2024-01-01T01:11:00Z')` utan `toDateTimeOnly(@event{Event.productDeliveryDate})` som är specifik för varje profil. Tänk på att användning av fasta datum kan orsaka problem vid körningen av din resa. Läs mer om hur vänteaktiviteter påverkar bearbetningshastigheten för resan i [det här avsnittet](entry-management.md#wait-activities-impact).
 
 
 >[!NOTE]
