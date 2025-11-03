@@ -5,9 +5,9 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: da691f761a691eda8f2f88947a9e3c407830426f
+source-git-commit: edd641112c8b4929990fb7d04972f43a71d53534
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,6 @@ ht-degree: 0%
 ## Uppdaterade sidor
 
 - [Adobe Journey Optimizer-dokumentation](help/ajo-home.md) - 22 okt
-- [AI-funktioner i Adobe Journey Optimizer](help/rp_landing_pages/ai-capabilities-landing-page.md) - 31 okt
 - [Innehållshantering](help/rp_landing_pages/content-management-landing-page.md) - 27 okt
 - [Kom igång](help/rp_landing_pages/get-started-landing-page.md) - 27 okt
 - [Tidigare versionsinformation](help/rp_landing_pages/previous-rn-new-landing-page.md) - 13 okt
@@ -48,8 +47,6 @@ ht-degree: 0%
 - [Felsökning](help/rp_landing_pages/troubleshoot-journey-landing-page.md) - 27 okt
 - [Kom igång med åtgärder](help/using/action/action.md) - 13 okt
 - [Arbeta med medgivandeprinciper](help/using/action/consent.md) - 21 oktober
-- [Hantera dina kunders preferenser](help/using/action/preference-center.md) - 24 okt
-- [Reserapport](help/using/action/reporting.md) - 29 okt
 - [Felsök anpassade åtgärder](help/using/action/troubleshoot-custom-action.md) - 13 okt
 - [Skapa en testprofil](help/using/audience/creating-test-profiles.md) - 22 okt
 - [Om Adobe Experience Platform-målgrupper](help/using/audience/enrichment-attributes.md) - 28 oktober
@@ -58,10 +55,8 @@ ht-degree: 0%
 - [Skicka samlingar till anpassade åtgärdsparametrar](help/using/building-journeys/collections.md) - 13 okt
 - [Villkorsaktivitet](help/using/building-journeys/condition-activity.md) - 24 okt
 - [Använd Adobe Experience Platform-data på resor](help/using/building-journeys/dataset-lookup.md) - 28 okt
-- [Felkodsreferens](help/using/building-journeys/error-codes-reference.md) - 27 okt
 - [Upplevelsehändelser som har sökts igenom på resor](help/using/building-journeys/exp-event-lookup.md) - 28 okt
 - [Använd åtgärdsreseaktiviteten](help/using/building-journeys/journey-action.md) - 14 okt
-- [Resor, frågor och svar](help/using/building-journeys/journey-faq.md) - 28 okt
 - [Pausa en resa](help/using/building-journeys/journey-pause.md) - 13 oktober
 - [Kom igång med resor](help/using/building-journeys/journey.md) - 27 okt
 - [Lägg till en inbyggd kanalåtgärd för en resa](help/using/building-journeys/journeys-message.md) - 29 oktober
@@ -74,7 +69,6 @@ ht-degree: 0%
 - [Redigera API-utlöst kampanjinnehåll](help/using/campaigns/api-triggered-campaign-content.md) - 23 okt
 - [Definiera API-utlösta kampanjegenskaper](help/using/campaigns/api-triggered-campaign-properties.md) - 23 okt
 - [Arbeta med API-utlösta kampanjer](help/using/campaigns/api-triggered-campaigns.md) - 29 okt
-- [Aktivera högt dataflöde för API-utlösta kampanjer](help/using/campaigns/api-triggered-high-throughput.md) - 27 okt
 - [Konfigurera kampanjåtgärden](help/using/campaigns/campaign-action.md) - 29 okt
 - [Optimering av kampanjer och resor](help/using/campaigns/campaigns-message-optimization.md) - 22 oktober
 - [Skapa en åtgärdskampanj](help/using/campaigns/create-campaign.md) - 29 okt
@@ -91,7 +85,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
@@ -101,20 +95,17 @@ ht-degree: 0%
 - [Kom igång med e-postkonfiguration](help/using/email/get-started-email-config.md) - 22 okt
 - [Designa e-postmeddelanden](help/using/email/get-started-email-design.md) - 30 okt
 - [Kom igång med e-postformat](help/using/email/get-started-email-style.md) - 25 okt
-- [Konvertera bilder till HTML-mallar med bilden till HTML converter](help/using/email/image-to-html.md) - 30 okt
 - [Avsluta prenumeration av lista](help/using/email/list-unsubscribe.md) - 15 okt
 - [Spåra meddelanden](help/using/email/message-tracking.md) - 18 okt
 - [Bifoga en PDF-fil i ett e-postmeddelande](help/using/email/pdf-attachments.md) - 6 okt
 - [Konfigurera URL-spårning](help/using/email/url-tracking.md) - 25 okt
 - [Använd Adobe Experience Platform-data för beslut](help/using/experience-decisioning/aep-data-exd.md) - 8 okt
-- [Skapa beslutsprofiler](help/using/experience-decisioning/create-decision-policy.md) - 7 okt
 - [Kom igång med beslutsprofiler](help/using/experience-decisioning/create-decision.md) - 7 okt
 - [Avgörande av skyddsprofiler och begränsningar](help/using/experience-decisioning/decisioning-guardrails.md) - 25 okt
 - [Beslutsobjekt](help/using/experience-decisioning/items.md) - 8 okt
 - [Rankningsformler](help/using/experience-decisioning/ranking/ranking-formulas.md) - 28 okt
 - [Skapa regler](help/using/experience-decisioning/rules.md) - 23 okt
 - [Skapa markeringsstrategier](help/using/experience-decisioning/selection-strategies.md) - 7 okt
-- [Använd beslutsprinciper i meddelanden](help/using/experience-decisioning/use-decision-policy.md) - 9 okt
 - [Skapa ett meddelande i appen i Journey Optimizer](help/using/in-app/create-in-app.md) - 27 okt
 - [Förutsättningar och konfiguration för kanal i appen](help/using/in-app/inapp-configuration.md) - 23 okt
 - [Dynamiska medier](help/using/integrations/aem-dynamic.md) - 17 okt
@@ -142,7 +133,6 @@ ht-degree: 0%
 - [Kampanjrapport](help/using/reports/campaign-global-report-cja-inapp.md) - 14 okt
 - [Kom igång med rapportfunktioner i [!DNL Adobe Journey Optimizer]](help/using/reports/gs-reports.md) - 23 okt
 - [Reserapport](help/using/reports/journey-global-report-cja-inapp.md) - 14 okt
-- [Arbeta med steg för kundresa](help/using/reports/journey-step-events-overview.md) - 16 okt
 - [Exempel på frågor](help/using/reports/query-examples.md) - 29 okt
 - [Rapportering](help/using/reports/report-cja-manage.md) - 13 okt
 - [goStep-händelseåtgärdsfält](help/using/reports/sharing-execution-fields.md) - 29 oktober
@@ -152,12 +142,10 @@ ht-degree: 0%
 - [Förhandsversionsinformation för Journey Optimizer](help/using/rn/e-release-notes.md) - 20 okt
 - [Versionsinformation 2025](help/using/rn/release-notes-2025.md) - 28 okt
 - [Versionsinformation](help/using/rn/release-notes.md) - 30 okt
-- [Adobe Journey Optimizer-lanseringscykel](help/using/rn/releases.md) - 28 okt
 - [Kom igång med textmeddelanden (SMS/MMS/RCS)](help/using/sms/get-started-sms.md) - 17 okt
 - [Konfigurera din anpassade leverantör](help/using/sms/sms-configuration-custom.md) - 24 okt
 - [Konfigurera Infobip-provider](help/using/sms/sms-configuration-infobip.md) - 27 okt
 - [Konfigurera Sinch-provider](help/using/sms/sms-configuration-sinch.md) - 27 okt
 - [Journey Optimizer skyddsräcken och begränsningar](help/using/start/guardrails.md) - 3 nov
-- [Designmeddelandeinnehåll](help/using/start/message-content-design.md) - 18 okt
 - [Journey Optimizer felsökningsartiklar](help/using/start/troubleshooting.md) - 27 okt
 - [Konfigurera WhatsApp-kanalen](help/using/whatsapp/whatsapp-configuration.md) - 22 okt
