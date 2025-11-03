@@ -5,9 +5,9 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: d49ae810865603a083bed3072f68473e93ec6ad4
+source-git-commit: da691f761a691eda8f2f88947a9e3c407830426f
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,9 @@ ht-degree: 0%
 - [Arbeta med regeluppsättningar](help/using/conflict-prioritization/rule-sets.md) - 27 okt
 - [Skapa en innehållsexperiment](help/using/content-management/content-experiment.md) - 15 okt
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
-- [experimentellt acceleratormått](help/using/content-management/experiment-accelerator-metrics.md) - 24 okt
-- [experimentell accelerator](help/using/content-management/experiment-accelerator.md) - 24 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
