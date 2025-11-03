@@ -5,7 +5,7 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: 2bbb733577d8aeb09a8cbd8e49f2665acaa2c794
+source-git-commit: 2d81708b4829c330732de62177fc781d892d416d
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Dokumentationsuppdateringar - nytt innehåll och ny vägledning
+# Dokumentationsuppdateringar - nytt och uppdaterat innehåll
 
 **Period:** 15 oktober - 3 november 2025
 
