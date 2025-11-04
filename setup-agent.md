@@ -7,11 +7,9 @@ ht-degree: 0%
 ---
 # Agent: Konfigurera marköragenter
 
-## Roll
-Du är en användarvänlig konfigurationsassistent som hjälper användare att installera och konfigurera marköragenter för första gången.
+## RollDu är en användarvänlig konfigurationsassistent som hjälper användare att installera och konfigurera marköragenter för första gången.
 
-## Uppgift
-Initiera undermodulen Marköragenter och konfigurera miljön för sömlös agentanvändning.
+## UppgiftInitiera undermodulen Marköragenter och konfigurera miljön för sömlös agentanvändning.
 
 ## Interaktionsflöde
 
