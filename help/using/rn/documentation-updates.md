@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
-source-git-commit: 07a582db495ecbfae97b6d299b65b06c0cdf8c14
+source-git-commit: 9320777cfb75fd1370c11b601908644ba17ff21e
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2783'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,33 @@ ht-degree: 9%
 
 På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimizer]-dokumentationen.
 
+## November 2025 {#november-2025}
+
+* Det som nu finns i kanalerna App och LINE för Action-kampanjer. [Läs mer](../campaigns/campaign-content.md)
+
+* Ett nytt omfattande avsnitt om hur snabbt resorna behandlas har lagts till i dokumentationen för hantering av bidrag, som omfattar antal deltagare, antal event och målgruppskvalifikationer inomresorna, effekt av vänteaktiviteter och påverkan av aktivitetsaktiviteter. [Läs mer](../building-journeys/entry-management.md#journey-processing-rate)
+
+* När du utformar e-postmeddelanden söker systemet nu efter nyckelinställningar och visar varningar för varningar och fel. Information om e-postaviseringar och valideringskrav har lagts till på sidan Guardrails. [Läs mer](../email/create-email.md#check-email-alerts)
+
+* Observera att frekvensbegränsning inte kan aktiveras eller inaktiveras för tidigare skapade erbjudanden har tagits bort från sidan Lägg till begränsningar till ett erbjudande. [Läs mer](../offers/offer-library/add-constraints.md#capping)
+
+* Nu finns dokumentation om hur du arbetar med steg för kundresan. [Läs mer](../reports/journey-step-events-overview.md)
+
 ## Oktober 2025 {#october-2025}
+
+* Nu kan du konvertera bilder till HTML-mallar med hjälp av bilden till HTML Converter. [Läs mer](../email/image-to-html.md)
+
+* Information om Adobe Journey Optimizer lanseringscykel finns nu tillgänglig. [Läs mer](releases.md)
+
+* Nu finns en ny sida med frågor och svar om Journeys. [Läs mer](../building-journeys/journey-faq.md)
+
+* Nu finns funktionen för övervakning av anpassade åtgärder tillgänglig. [Läs mer](../action/reporting.md)
+
+* Det finns nu ett avancerat genomströmningsläge för API-utlösta kampanjer. [Läs mer](../campaigns/api-triggered-high-throughput.md)
+
+* Det finns nu en felkodsreferens för resor. [Läs mer](../building-journeys/error-codes-reference.md)
+
+* Journey Optimizer Experimentation Accelerator-dokumentation finns nu tillgänglig. [Läs mer](../content-management/experiment-accelerator-gs.md)
 
 * Ett nytt avsnitt har lagts till i hjälpfunktionens dokumentation **formatDate**. I det här avsnittet klargörs betydelsen av nyckelmönstersymboler som y, Y, M, d och D. [Läs mer](../personalization/functions/dates.md#pattern-characters)
 
@@ -320,7 +346,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Information has been added regarding the behaviour of timeouts on event activities in journeys. When no event is received during the specified timeout period, individuals will continue the journey if no timeout path is defined. [Read more](../building-journeys/general-events.md#events-specific-time)
 * In-app channel configuration prerequisites have been updated with a note about the usage of a custom Dataset preference merge policy. [Read more](../in-app/inapp-configuration.md)
 * More details have been added about how to manipulate collections in a custom action response. [Read more](../action/action-response.md#exp-syntax).
-* A link to the [Schema Dictionary for Adobe Journey Optimizer](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE) has been added to the home page.
+* A link to the [Schema Dictionary for Adobe Journey Optimizer](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html) has been added to the home page.
 * An outdated reference to the AJO Message resource has been removed from the list of resources available in the Audit Log. When an update is done on a message in a journey, a **Journey** log is created. [Read more](../privacy/audit-logs.md)
 * Additional recommendations have been added about the usage of the **Read Audience** activity. [Read more](../building-journeys/read-audience.md#must-read)
 * The Get started with Adobe Experience Platform audiences page has been improved with a list of audience generation methods. [Read more](../audience/about-audiences.md)
@@ -350,7 +376,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * Decision Management guardrails have been added to the Guardrails and limitations page. [Read more](../start/guardrails.md#decision-management)
 * The Header parameters section has been updated to reflect how out-of-office notifications and challenge responses are handled (they are received on the **[!UICONTROL Error email]**). [Read more](../email/email-settings.md#email-header)
 * A new section on how to preview and test your content has been created. [Read more](../content-management/preview-test.md)
-* The Implement single-page applications page has been moved to the Adobe Experience Paltform Web SDK documentation. [Read more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html?lang=sv-SE){target="_blank"}
+* The Implement single-page applications page has been moved to the Adobe Experience Paltform Web SDK documentation. [Read more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
 * The Capping section has been updated to reflect the label changes relating to offer capping in the decision management interface. [Read more](../offers/offer-library/add-constraints.md#capping)
 * The Add dynamic content into emails has been updated with details on how to delete a variant. [Read more](../personalization/dynamic-content.md#emails)
 * The example for capping & throttling configurations has been updated. [Read more](../configuration/external-systems.md)
@@ -425,7 +451,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 
 ## March 2023 {#march-2023}
 
-* The Journey Optimizer schema dictionary is now available. You will find the complete list of fields and attributes for each schema.  [Read more](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+* The Journey Optimizer schema dictionary is now available. You will find the complete list of fields and attributes for each schema.  [Read more](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 * All new features and improvements coming with [!DNL Journey Optimizer] March '23 release have been detailed in the documentation. [Read more](release-notes.md)
 * Added a step to enable Adobe Analytics events in your journeys. [Read more](../event/about-analytics.md)
 * A new section has been created in the Decision management guide on how to collect offer decisioning feedback in Adobe Experience Platform, including which offers are displayed and how users interact with them. [Read more](../offers/data-collection/data-collection.md)
@@ -553,7 +579,7 @@ På den här sidan visas alla de senaste uppdateringarna i [!DNL Journey Optimiz
 * The **reactions** event documentation page has been updated. [Read more](../building-journeys/reaction-events.md)
 * Videos for Decision Management capabilities have been updated to reflect Journey Optimizer user interface. [Read more](../offers/get-started/starting-offer-decisioning.md)
 * The **Get Started with Datasets** section has been improved to detail how to access and create datasets. [Read more](../data/get-started-datasets.md)
-* Links to help guides and product release notes have been added to the **Adobe Journey Optimizer Documentation** home page. [Read more](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE)
+* Links to help guides and product release notes have been added to the **Adobe Journey Optimizer Documentation** home page. [Read more](https://experienceleague.adobe.com/docs/journey-optimizer.html)
 * The **Create message presets** section now specifies that you cannot proceed with preset creation while the selected IP pool is under edition (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. [Read more](../configuration/channel-surfaces.md#subdomains-and-ip-pools)
 * The message presets **URL tracking** section has been updated to reflect minor changes in the user interface. [Read more](../configuration/channel-surfaces.md#url-tracking)
 
