@@ -9,7 +9,7 @@ level: Experienced
 keywords: funktion, uttryck, redigerare, resa
 exl-id: 5b978eef-7d3e-41fe-bb08-0cf37c3b125d
 version: Journey Orchestration
-source-git-commit: af1babe501a5b2c6a67730396a8f5e2c5d85e60a
+source-git-commit: 7d75abf6b428becc8b535a63421e85cca417daac
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 31%
@@ -40,14 +40,14 @@ Här är en lista över funktioner som stöds.
 | Aggregering | [max](../functions/aggregation-functions.md#max) |
 | Aggregering | [min](../functions/aggregation-functions.md#min) |
 | Aggregering | [sum](../functions/aggregation-functions.md#sum) |
-| Konvertering | [toBool](../functions/functiontobool.md) |
-| Konvertering | [toDateOnly](../functions/functiontodateonly.md) |
-| Konvertering | [toDateTime](../functions/functiontodatetime.md) |
-| Konvertering | [toDateTimeOnly](../functions/functiontodatetimeonly.md) |
-| Konvertering | [toDecimal](../functions/functiontodecimal.md) |
-| Konvertering | [toDuration](../functions/functiontoduration.md) |
-| Konvertering | [toInteger](../functions/functiontointeger.md) |
-| Konvertering | [toString](../functions/functiontostring.md) |
+| Konvertering | [toBool](../functions/conversion-functions.md#toBool) |
+| Konvertering | [toDateOnly](../functions/conversion-functions.md#toDateOnly) |
+| Konvertering | [toDateTime](../functions/conversion-functions.md#toDateTime) |
+| Konvertering | [toDateTimeOnly](../functions/conversion-functions.md#toDateTimeOnly) |
+| Konvertering | [toDecimal](../functions/conversion-functions.md#toDecimal) |
+| Konvertering | [toDuration](../functions/conversion-functions.md#toDuration) |
+| Konvertering | [toInteger](../functions/conversion-functions.md#toInteger) |
+| Konvertering | [toString](../functions/conversion-functions.md#toString) |
 | Datum | [currentTimeInMillis](../functions/functioncurrenttimeinmillis.md) |
 | Datum | [inLastDays](../functions/functioninlastdays.md) |
 | Datum | [inLastHours](../functions/functioninlasthours.md) |

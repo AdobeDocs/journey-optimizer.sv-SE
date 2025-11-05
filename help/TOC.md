@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: af1babe501a5b2c6a67730396a8f5e2c5d85e60a
+source-git-commit: 7d75abf6b428becc8b535a63421e85cca417daac
 workflow-type: tm+mt
-source-wordcount: '3007'
+source-wordcount: '3000'
 ht-degree: 17%
 
 ---
@@ -117,15 +117,7 @@ ht-degree: 17%
          + Aggregering {#aggregation}
             + [Sammanställningsfunktioner](using/building-journeys/functions/aggregation-functions.md)
          + Konvertering {#conversion}
-            + [Konvertering](/help/rp_landing_pages/conversion-landing-page.md)
-            + [toBool](using/building-journeys/functions/functiontobool.md)
-            + [toDateOnly](using/building-journeys/functions/functiontodateonly.md)
-            + [toDateTime](using/building-journeys/functions/functiontodatetime.md)
-            + [toDateTimeOnly](using/building-journeys/functions/functiontodatetimeonly.md)
-            + [toDecimal](using/building-journeys/functions/functiontodecimal.md)
-            + [toDuration](using/building-journeys/functions/functiontoduration.md)
-            + [toInteger](using/building-journeys/functions/functiontointeger.md)
-            + [toString](using/building-journeys/functions/functiontostring.md)
+            + [Konverteringsfunktioner](using/building-journeys/functions/conversion-functions.md)
          + Datum {#date}
             + [Datum](/help/rp_landing_pages/date-landing-page.md)
             + [currentTimeInMillis](using/building-journeys/functions/functioncurrenttimeinmillis.md)
@@ -879,7 +871,7 @@ ht-degree: 17%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
