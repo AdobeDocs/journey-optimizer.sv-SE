@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 013c5758a106cfd3c2eaeecc25cc6ca4a4b41375
+source-git-commit: af1babe501a5b2c6a67730396a8f5e2c5d85e60a
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3007'
 ht-degree: 17%
 
 ---
@@ -115,16 +115,7 @@ ht-degree: 17%
          + Adobe Experience Platform {#adobe-experience-platform}
             + [inAudience](using/building-journeys/functions/functioninaudience.md)
          + Aggregering {#aggregation}
-            + [Aggregering](/help/rp_landing_pages/aggregation-landing-page.md)
-            + [avg](using/building-journeys/functions/functionavg.md)
-            + [count](using/building-journeys/functions/functioncount.md)
-            + [countOnlyNull](using/building-journeys/functions/functioncountonlynull.md)
-            + [countWithNull](using/building-journeys/functions/functioncountwithnull.md)
-            + [distinctCount](using/building-journeys/functions/functiondistinctcount.md)
-            + [distinctCountWithNull](using/building-journeys/functions/functiondistinctcountwithnull.md)
-            + [max](using/building-journeys/functions/functionmax.md)
-            + [min](using/building-journeys/functions/functionmin.md)
-            + [sum](using/building-journeys/functions/functionsum.md)
+            + [Sammanställningsfunktioner](using/building-journeys/functions/aggregation-functions.md)
          + Konvertering {#conversion}
             + [Konvertering](/help/rp_landing_pages/conversion-landing-page.md)
             + [toBool](using/building-journeys/functions/functiontobool.md)
@@ -888,7 +879,7 @@ ht-degree: 17%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

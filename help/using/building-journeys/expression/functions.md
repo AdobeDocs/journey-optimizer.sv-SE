@@ -9,7 +9,7 @@ level: Experienced
 keywords: funktion, uttryck, redigerare, resa
 exl-id: 5b978eef-7d3e-41fe-bb08-0cf37c3b125d
 version: Journey Orchestration
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: af1babe501a5b2c6a67730396a8f5e2c5d85e60a
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 31%
@@ -31,15 +31,15 @@ Här är en lista över funktioner som stöds.
 | Kategori | Funktion |
 |-------------|-----------------------|
 | Adobe Experience Platform | [inAudience](../functions/functioninaudience.md) |
-| Aggregering | [avg](../functions/functionavg.md) |
-| Aggregering | [count](../functions/functioncount.md) |
-| Aggregering | [countOnlyNull](../functions/functioncountonlynull.md) |
-| Aggregering | [countWithNull](../functions/functioncountwithnull.md) |
-| Aggregering | [distinctCount](../functions/functiondistinctcount.md) |
-| Aggregering | [distinctCountWithNull](../functions/functiondistinctcountwithnull.md) |
-| Aggregering | [max](../functions/functionmax.md) |
-| Aggregering | [min](../functions/functionmin.md) |
-| Aggregering | [sum](../functions/functionsum.md) |
+| Aggregering | [avg](../functions/aggregation-functions.md#avg) |
+| Aggregering | [count](../functions/aggregation-functions.md#count) |
+| Aggregering | [countOnlyNull](../functions/aggregation-functions.md#countOnlyNull) |
+| Aggregering | [countWithNull](../functions/aggregation-functions.md#countWithNull) |
+| Aggregering | [distinctCount](../functions/aggregation-functions.md#distinctCount) |
+| Aggregering | [distinctCountWithNull](../functions/aggregation-functions.md#distinctCountWithNull) |
+| Aggregering | [max](../functions/aggregation-functions.md#max) |
+| Aggregering | [min](../functions/aggregation-functions.md#min) |
+| Aggregering | [sum](../functions/aggregation-functions.md#sum) |
 | Konvertering | [toBool](../functions/functiontobool.md) |
 | Konvertering | [toDateOnly](../functions/functiontodateonly.md) |
 | Konvertering | [toDateTime](../functions/functiontodatetime.md) |
