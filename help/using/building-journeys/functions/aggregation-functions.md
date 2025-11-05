@@ -7,16 +7,26 @@ role: Developer
 level: Experienced
 keywords: aggregering, funktioner, uttryck, resa, avg, count, max, min, sum
 version: Journey Orchestration
-source-git-commit: af1babe501a5b2c6a67730396a8f5e2c5d85e60a
+source-git-commit: 6102fba3ba30b462654e218f08835be53b75e2cc
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 5%
+source-wordcount: '712'
+ht-degree: 4%
 
 ---
 
 # Sammanställningsfunktioner {#aggregation-functions}
 
-Sammanställningsfunktioner används för att utföra beräkningar på en uppsättning värden och returnera ett enda värde. De här funktionerna är särskilt användbara när du arbetar med listor och arrayer i dina reseuttryck.
+Sammanställningsfunktioner utför beräkningar på en uppsättning värden och returnerar ett enda summerat resultat. Dessa funktioner gör att du kan analysera data i dina reseuttryck genom att beräkna medelvärden, hitta minimi- och maximivärden, räkna element och summera numeriska värden.
+
+Använd sammanställningsfunktioner när du behöver:
+
+* Beräkna statistiska värden från listor eller matriser (genomsnitt, summa, min, max)
+* Räkna element i samlingar, med alternativ för att inkludera eller exkludera null-värden
+* Identifiera unika värden i datauppsättningar
+* Fatta databaserade beslut baserat på beräknade mätvärden
+
+Sammanställningsfunktioner hanterar automatiskt null-värden utifrån deras specifika beteende, vilket gör det enklare att arbeta med verkliga data som kan innehålla värden som saknas eller är odefinierade.
+
 
 ## avg {#avg}
 
@@ -115,8 +125,6 @@ Returnerar antalet objekt i den angivna arrayen med objekt (typen listObject). O
 
 Räknar antalet null-värden i listan.
 
-**Obs!** Parametern `<listObject>` stöds inte i den här funktionen.
-
 +++Syntax
 
 `countOnlyNull(<listAny>)`
@@ -147,11 +155,11 @@ Returnerar 1.
 
 +++
 
+**Obs!** Parametern `<listObject>` stöds inte i den här funktionen.
+
 ## countWithNull {#countWithNull}
 
 Räknar alla element i listan inklusive null-värden.
-
-**Obs!** Parametern `<listObject>` stöds inte i den här funktionen.
 
 +++Syntax
 
@@ -182,6 +190,8 @@ Returnerar ett heltal.
 Returnerar 4.
 
 +++
+
+**Obs!** Parametern `<listObject>` stöds inte i den här funktionen.
 
 ## distinctCount {#distinctCount}
 
@@ -236,8 +246,6 @@ Returnerar antalet objekt som har ett tydligt SKU-attributvärde {}.
 
 Räknar antalet olika värden inklusive null-värden.
 
-**Obs!** Parametern `<listObject>` stöds inte i den här funktionen.
-
 +++Syntax
 
 `distinctCountWithNull(<listAny>)`
@@ -267,6 +275,8 @@ Returnerar ett heltal.
 Returnerar 3.
 
 +++
+
+**Obs!** Parametern `<listObject>` stöds inte i den här funktionen.
 
 ## max {#max}
 
