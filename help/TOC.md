@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: d58319d687d113ce680c415524fdea0400cb38f0
+source-git-commit: a866442aa073c648d4455754e9945f0dddfb079d
 workflow-type: tm+mt
-source-wordcount: '2956'
-ht-degree: 16%
+source-wordcount: '2947'
+ht-degree: 15%
 
 ---
 
@@ -112,22 +112,13 @@ ht-degree: 16%
       + Funktioner {#main-functions-journey}
          + [Funktioner](/help/rp_landing_pages/main-functions-journey-landing-page.md)
          + [Huvudfunktioner](using/building-journeys/expression/functions.md)
-         + Adobe Experience Platform {#adobe-experience-platform}
-            + [inAudience](using/building-journeys/functions/functioninaudience.md)
-         + Aggregering {#aggregation}
-            + [Sammanställningsfunktioner](using/building-journeys/functions/aggregation-functions.md)
-         + Konvertering {#conversion}
-            + [Konverteringsfunktioner](using/building-journeys/functions/conversion-functions.md)
-         + Datum {#date}
-            + [Datumfunktioner](using/building-journeys/functions/date-functions.md)
-         + Lista {#list}
-            + [Listfunktioner](using/building-journeys/functions/list-functions.md)
-         + Matematik {#math}
-            + [Matematik](/help/rp_landing_pages/math-landing-page.md)
-            + [random](using/building-journeys/functions/functionrandom.md)
-            + [round](using/building-journeys/functions/functionround.md)
-         + Sträng {#string}
-            + [Strängfunktioner](using/building-journeys/functions/string-functions.md)
+         + [funktionen inAudience](using/building-journeys/functions/functioninaudience.md)
+         + [Sammanställningsfunktioner](using/building-journeys/functions/aggregation-functions.md)
+         + [Konverteringsfunktioner](using/building-journeys/functions/conversion-functions.md)
+         + [Datumfunktioner](using/building-journeys/functions/date-functions.md)
+         + [Listfunktioner](using/building-journeys/functions/list-functions.md)
+         + [Matematiska funktioner](using/building-journeys/functions/math-functions.md)
+         + [Strängfunktioner](using/building-journeys/functions/string-functions.md)
    + Användningsfall {#journey-use-cases}
       + [Användningsfall](/help/rp_landing_pages/journey-use-cases-landing-page.md)
       + [Lär dig mer om användningsexempel](using/building-journeys/jo-use-cases.md)
@@ -824,7 +815,7 @@ ht-degree: 16%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
