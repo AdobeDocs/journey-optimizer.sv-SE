@@ -20,7 +20,7 @@ Strängar är byggstenarna för textbaserade data, och Adobe Journey Optimizer s
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 concat Function Reference
 
@@ -30,7 +30,7 @@ Lär dig hur du kombinerar strängar eller en lista med strängar med funktionen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen &#39;contain&#39;
 
@@ -40,7 +40,7 @@ Upptäck hur du kontrollerar om en sträng finns i en annan sträng.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Funktionen containsIgnoreCase
 
@@ -50,7 +50,7 @@ Lär dig hur du utför skiftlägesokänsliga kontroller av stränginneslutning.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 endWith Function Reference
 
@@ -60,7 +60,7 @@ Lär dig kontrollera om en sträng slutar med ett visst suffix.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 endWithIgnoreCase-funktion
 
@@ -70,7 +70,7 @@ Kontrollera om en sträng avslutas med ett suffix och ignorerar skiftlägeskäns
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 equalIgnoreCase Function Reference
 
