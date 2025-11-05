@@ -5,7 +5,9 @@ title: Lista
 description: Lista
 redpen-status: CREATED_||_2025-08-11_20-15-54
 exl-id: 5cb96709-c1bf-415e-bcdf-217c1ae7c34d
-source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
+hide: true
+hidefromtoc: true
+source-git-commit: d58319d687d113ce680c415524fdea0400cb38f0
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -20,7 +22,7 @@ Med listfunktionerna i Adobe Journey Optimizer kan du hantera och förfina data 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda funktionen&quot;distinkt&quot; i Adobe Journey Optimizer
 
@@ -30,7 +32,7 @@ Lär dig hur du använder funktionen&quot;distinkt&quot; för att ta bort dubble
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 clearWithNull-funktion - Adobe Journey Optimizer
 
@@ -40,7 +42,7 @@ Lär dig hur du kan använda &#39;distincWithNull&#39; för att hämta distinkta
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda filterfunktionen i Adobe Journey Optimizer
 
@@ -50,7 +52,7 @@ Lär dig hur du använder filter på objektlistor som baseras på specifika nyck
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda funktionen getListItem i Adobe Journey Optimizer
 
@@ -60,7 +62,7 @@ Lär dig hur du hämtar ett objekt från en lista vid ett specifikt index med fu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda funktionen in i Adobe Journey Optimizer
 
@@ -70,7 +72,7 @@ Ta reda på hur du kontrollerar om det finns ett värde i en lista med funktione
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Överlappningsfunktion i Adobe Journey Optimizer
 

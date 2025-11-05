@@ -9,7 +9,7 @@ level: Experienced
 keywords: funktion, uttryck, redigerare, resa
 exl-id: 5b978eef-7d3e-41fe-bb08-0cf37c3b125d
 version: Journey Orchestration
-source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
+source-git-commit: d58319d687d113ce680c415524fdea0400cb38f0
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 31%
@@ -74,26 +74,26 @@ Här är en lista över funktioner som stöds.
 | Lista | [sort](../functions/list-functions.md#sort) |
 | Matematik | [random](../functions/functionrandom.md) |
 | Matematik | [round](../functions/functionround.md) |
-| Sträng | [concat](../functions/functionconcat.md) |
-| Sträng | [contain](../functions/functioncontain.md) |
-| Sträng | [containIgnoreCase](../functions/functioncontainwithignorecase.md) |
-| Sträng | [endWith](../functions/functionendwith.md) |
-| Sträng | [endWithIgnoreCase](../functions/functionendwithignorecase.md) |
-| Sträng | [equalIgnoreCase](../functions/functionequalignorecase.md) |
-| Sträng | [indexOf](../functions/functionindexof.md) |
-| Sträng | [isEmpty](../functions/functionisempty.md) |
-| Sträng | [isNotEmpty](../functions/functionisnotempty.md) |
-| Sträng | [lastIndexOf](../functions/functionlastindexof.md) |
-| Sträng | [length](../functions/functionlength.md) |
-| Sträng | [lower](../functions/functionlower.md) |
-| Sträng | [matchRegExp](../functions/functionmatchregexp.md) |
-| Sträng | [notEqualIgnoreCase](../functions/functionnotequalignorecase.md) |
-| Sträng | [replace](../functions/functionreplace.md) |
-| Sträng | [replaceAll](../functions/functionreplaceall.md) |
-| Sträng | [split](../functions/functionsplit.md) |
-| Sträng | [startWith](../functions/functionstartwith.md) |
-| Sträng | [startWithIgnoreCase](../functions/functionstartwithignorecase.md) |
-| Sträng | [substr](../functions/functionsubstr.md) |
-| Sträng | [trim](../functions/functiontrim.md) |
-| Sträng | [upper](../functions/functionupper.md) |
-| Sträng | [uuid](../functions/functionuuid.md) |
+| Sträng | [concat](../functions/string-functions.md#concat) |
+| Sträng | [contain](../functions/string-functions.md#contain) |
+| Sträng | [containIgnoreCase](../functions/string-functions.md#containIgnoreCase) |
+| Sträng | [endWith](../functions/string-functions.md#endWith) |
+| Sträng | [endWithIgnoreCase](../functions/string-functions.md#endWithIgnoreCase) |
+| Sträng | [equalIgnoreCase](../functions/string-functions.md#equalIgnoreCase) |
+| Sträng | [indexOf](../functions/string-functions.md#indexOf) |
+| Sträng | [isEmpty](../functions/string-functions.md#isEmpty) |
+| Sträng | [isNotEmpty](../functions/string-functions.md#isNotEmpty) |
+| Sträng | [lastIndexOf](../functions/string-functions.md#lastIndexOf) |
+| Sträng | [length](../functions/string-functions.md#length) |
+| Sträng | [lower](../functions/string-functions.md#lower) |
+| Sträng | [matchRegExp](../functions/string-functions.md#matchRegExp) |
+| Sträng | [notEqualIgnoreCase](../functions/string-functions.md#notEqualIgnoreCase) |
+| Sträng | [replace](../functions/string-functions.md#replace) |
+| Sträng | [replaceAll](../functions/string-functions.md#replaceAll) |
+| Sträng | [split](../functions/string-functions.md#split) |
+| Sträng | [startWith](../functions/string-functions.md#startWith) |
+| Sträng | [startWithIgnoreCase](../functions/string-functions.md#startWithIgnoreCase) |
+| Sträng | [substr](../functions/string-functions.md#substr) |
+| Sträng | [trim](../functions/string-functions.md#trim) |
+| Sträng | [upper](../functions/string-functions.md#upper) |
+| Sträng | [uuid](../functions/string-functions.md#uuid) |
