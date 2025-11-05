@@ -10,7 +10,7 @@ role: User
 level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
 exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
-source-git-commit: a051f93a02cd90af65e62fd97ea437d07a964d7c
+source-git-commit: 4d12c36391c2546788d49cca6e2468a29fc1e74f
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Den här funktionen gör att marknadsförarna kan använda visuellt tilltalande,
 
 * Om du använder innehåll som har skapats i HTML är du i [kompatibilitetsläge](existing-content.md) och du kan inte använda teman direkt på det här innehållet.
 
-   * Om du vill använda teman måste du först spara det importerade innehållet [&#x200B; som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
+   * Om du vill använda teman måste du först spara det importerade innehållet [ som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
 
    * Du kan även konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
 
@@ -146,7 +146,7 @@ Följ stegen nedan om du vill använda standardteman eller anpassade formatteman
 
 1. När du har valt ett tema i en innehållsmall kan du uppdatera det genom att klicka på knappen **[!UICONTROL Edit theme]**. [Läs mer](#create-and-edit-themes)
 
-   ![](assets/theme-edit-in-template.png){width="40%" align="center" zoomable="yes"}
+   ![](assets/theme-edit-in-template.png){width="40%"}
 
    >[!NOTE]
    >
@@ -170,7 +170,7 @@ Du kan växla teman när som helst. E-postinnehållet ändras inte, men formaten
 
 När en komponent är markerad kan du låsa upp dess stil med den dedikerade ikonen på fliken **[!UICONTROL Styles]**.
 
-![](assets/theme-unlock-style.png){width="90%" align="center" zoomable="yes"}
+![](assets/theme-unlock-style.png){width="90%"}
 
 Det valda temat används fortfarande på den komponenten, men du kan åsidosätta dess formatelement. Om du ändrar teman tillämpas det nya temat bara på formatelement som inte åsidosatts.<!--can you revert this action?-->
 
@@ -180,7 +180,7 @@ Om du till exempel låser upp en textkomponent kan du ändra <!--the font size f
 
 Om du ändrar teman <!--the font size is still 14 and -->är teckensnittsfärgen fortfarande röd för den komponenten, men bakgrundsfärgen för den här komponenten ändras med det nya temat:
 
-![](assets/theme-unlock-style-ex-colored.png){width="80%" align="center" zoomable="yes"}
+![](assets/theme-unlock-style-ex-colored.png){width="80%"}
 
 ## Använd teman i ett fragment {#leverage-themes-fragment}
 
@@ -192,7 +192,7 @@ Följ stegen nedan för att skapa ett fragment som är kompatibelt med teman.
 
 1. Välj **[!UICONTROL Use Themes]** om du vill börja med ett fördefinierat formattema.
 
-   ![](assets/fragment-use-themes.png){width="100%" align="center" zoomable="yes"}
+   ![](assets/fragment-use-themes.png){width="100%"}
 
    >[!CAUTION]
    >
@@ -206,11 +206,11 @@ Följ stegen nedan för att skapa ett fragment som är kompatibelt med teman.
 
 1. Du kan välja andra teman om du vill förhandsgranska fragmentinnehållet. Om du vill göra det markerar du pilen bredvid standardtemat och klickar på **[!UICONTROL Select themes]**.
 
-   ![](assets/fragment-select-themes.png){width="40%" align="center" zoomable="yes"}
+   ![](assets/fragment-select-themes.png){width="40%"}
 
 1. Du kan navigera mellan flikarna **[!UICONTROL Adobe themes]** och **[!UICONTROL My themes]** och välja upp till fem kompatibla teman (från båda flikarna) för fragmentet.
 
-   ![](assets/fragment-select-compatible-themes.png){width=70% align="center" zoomable="yes"}
+   ![](assets/fragment-select-compatible-themes.png){width=70%}
 
    >[!CAUTION]
    >
@@ -220,7 +220,7 @@ Följ stegen nedan för att skapa ett fragment som är kompatibelt med teman.
 
 1. Välj pilen bredvid **[!UICONTROL Default theme]** igen. Du kan nu växla mellan de olika teman du just valt för att förhandsgranska varje stilåtergivning.
 
-   ![](assets/fragment-selected-themes.png){width=90% align="center" zoomable="yes"}
+   ![](assets/fragment-selected-themes.png){width=90%}
 
 1. Klicka på **[!UICONTROL Select themes]** igen om du vill lägga till fler teman eller ändra urvalet.
 
@@ -232,16 +232,16 @@ Med [!DNL Journey Optimizer] kan du konvertera en mall som har skapats med manue
 
 1. Markera ikonen **[!UICONTROL Themes]** till höger och klicka på knappen **[!UICONTROL Generate theme from content]**.
 
-   ![](assets/generate-theme.png){width=100% align="center" zoomable="yes"}
+   ![](assets/generate-theme.png){width=100%}
 
 1. Fönstret **[!UICONTROL Create a theme]** öppnas. [!DNL Journey Optimizer] identifierar automatiskt formatelement och konsoliderar dem till ett nytt tema.
 
-   ![](assets/generate-theme-create-window.png){width=100% align="center" zoomable="yes"}
+   ![](assets/generate-theme-create-window.png){width=90%}
 
 1. Ge temat ett namn.
 
 1. Gör egna justeringar efter behov, precis som när du skapar ett tema från början, som att lägga till en färgvariant, redigera teckensnitt osv. [Lär dig hur](#create-and-edit-themes)
 
-   ![](assets/generate-theme-colors.png){width=100% align="center" zoomable="yes"}
+   ![](assets/generate-theme-colors.png){width=90%}
 
 1. Klicka på **[!UICONTROL Save]** om du vill lagra det nya temat för återanvändning. Du kan nu använda det här temat för ditt innehåll, till exempel andra teman. [Lär dig hur](#leverage-themes-fragment)
