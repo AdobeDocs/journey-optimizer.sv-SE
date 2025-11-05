@@ -36,7 +36,7 @@ Målgrupper kan ha två deltagarstatusar:
 * **Realiserad**: Personen kvalificerar sig för målgruppsdefinitionen och är en aktiv medlem
 * **Avslutade**: Personen har lämnat målgruppen och kvalificerar sig inte längre
 
-Endast personer med statusen **Realized** betraktas som aktiva målgruppsmedlemmar. När funktionen returnerar `true` bekräftar det att personen har uppnått status. När den returnerar `false` anger den att den har avslutat status. Mer information om målgruppsutvärdering finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+Endast personer med statusen **Realized** betraktas som aktiva målgruppsmedlemmar. När funktionen returnerar `true` bekräftar det att personen har uppnått status. När den returnerar `false` anger den att den har avslutat status. Mer information om målgruppsutvärdering finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
 
 +++Syntax
 
