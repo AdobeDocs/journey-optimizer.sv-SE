@@ -4,8 +4,10 @@ product: Journey Optimizer
 title: Sträng
 description: Sträng
 redpen-status: CREATED_||_2025-08-11_20-18-34
+hide: true
+hidefromtoc: true
 exl-id: 1085e570-10b8-4d96-912a-994979358b65
-source-git-commit: d58319d687d113ce680c415524fdea0400cb38f0
+source-git-commit: 18697bd59466a41ffa3fa55f758222ce61415f42
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -20,7 +22,7 @@ Strängar är byggstenarna för textbaserade data, och Adobe Journey Optimizer s
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 concat Function Reference
 
@@ -30,7 +32,7 @@ Lär dig hur du kombinerar strängar eller en lista med strängar med funktionen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda funktionen &#39;contain&#39;
 
@@ -40,7 +42,7 @@ Upptäck hur du kontrollerar om en sträng finns i en annan sträng.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Funktionen containsIgnoreCase
 
@@ -50,7 +52,7 @@ Lär dig hur du utför skiftlägesokänsliga kontroller av stränginneslutning.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 endWith Function Reference
 
@@ -60,7 +62,7 @@ Lär dig kontrollera om en sträng slutar med ett visst suffix.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 endWithIgnoreCase-funktion
 
@@ -70,7 +72,7 @@ Kontrollera om en sträng avslutas med ett suffix och ignorerar skiftlägeskäns
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 equalIgnoreCase Function Reference
 

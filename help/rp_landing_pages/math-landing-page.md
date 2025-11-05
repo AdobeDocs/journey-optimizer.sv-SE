@@ -4,13 +4,15 @@ product: Journey Optimizer
 title: Matematik
 description: Matematik
 redpen-status: CREATED_||_2025-08-11_20-16-12
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+hide: true
+hidefromtoc: true
+exl-id: 2df9c6ea-be94-475f-9997-16f10db22f03
+source-git-commit: 18697bd59466a41ffa3fa55f758222ce61415f42
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
 
 ---
-
 
 # Matematik{#section-overview}
 
@@ -20,23 +22,23 @@ Avsnittet Math i Adobe Journey Optimizer ger dig möjlighet att utföra exakta b
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 random-funktion
 
 Lär dig hur du använder funktionen &quot;random&quot; för att generera slumpmässiga tal mellan 0 och 1 i Adobe Journey Optimizer.
 
-[Utforska funktionen random](../using/building-journeys/functions/functionrandom.md)
+[Utforska funktionen random](../using/building-journeys/functions/math-functions.md#random)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 round-funktion
 
 Förstå funktionen round, dess syntax och hur du avrundar tal till närmaste heltal i Adobe Journey Optimizer.
 
-[Lär dig mer om funktionen round](../using/building-journeys/functions/functionround.md)
+[Lär dig mer om funktionen round](../using/building-journeys/functions/math-functions.md#round)
 :::
 
 ::::

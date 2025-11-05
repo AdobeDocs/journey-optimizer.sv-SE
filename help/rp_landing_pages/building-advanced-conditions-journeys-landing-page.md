@@ -5,7 +5,7 @@ title: Skapa uttryck
 description: Skapa uttryck
 redpen-status: CREATED_||_2025-08-11_20-19-10
 exl-id: 6ccd0bc7-fb40-48de-abcb-0cb1eb2c6303
-source-git-commit: a5f0b47b9af31c1ae1fd6ae3dffd4c260444297a
+source-git-commit: 18697bd59466a41ffa3fa55f758222ce61415f42
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Adobe Journey Optimizer innehåller en **avancerad uttrycksredigerare** som gör
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Använda den avancerade uttrycksredigeraren
 
@@ -30,7 +30,7 @@ Lär dig hur du använder den avancerade uttrycksredigeraren för att skapa anpa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Avancerad syntax för uttryck
 
@@ -40,18 +40,18 @@ Lär dig de syntaxregler, villkorliga instruktioner och datatyper som behövs f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Funktioner i Adobe Journey Optimizer
 
 Få tillgång till en omfattande guide för funktioner för datamanipulering, villkorsutvärdering och utveckling av komplexa arbetsflöden på resande fot.
 
-[Identifiera tillgängliga funktioner](main-functions-journey-landing-page.md)
+[Identifiera tillgängliga funktioner](../using/building-journeys/expression/functions.md)
 :::
 
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Exempel på frågor om Journey Optimizer datauppsättningar och relaterade användningsfall
 
@@ -61,7 +61,7 @@ Använd praktiska SQL-frågeexempel för att analysera och hantera data i olika 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Exempel på SQL-frågor för dataanalys
 
