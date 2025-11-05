@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Datum
 description: Datum
 redpen-status: CREATED_||_2025-08-11_20-14-40
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 38bf1898-9de0-470d-abd6-a9240e83e87f
+source-git-commit: 42abfcc9711d87b2dc00df47e964dad07443f0ed
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
 
 ---
-
 
 # Datum{#section-overview}
 
@@ -20,63 +20,63 @@ Med datumfunktionerna i Adobe Journey Optimizer kan du arbeta smidigt med tidsre
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Funktionsreferens för currentTimeInMillis
 
 Lär dig hur du använder funktionen currentTimeInMillis för att hämta den aktuella tiden i epokmillisekunder.
 
-[Läs om currentTimeInMillis](../using/building-journeys/functions/functioncurrenttimeinmillis.md)
+[Läs om currentTimeInMillis](../using/building-journeys/functions/date-functions.md#currentTimeInMillis)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 inLastDays-funktion
 
 Förstå funktionen &#39;inLastDays&#39; som kontrollerar om ett visst datum infaller inom ett visst antal dagar före idag.
 
-[Läs om inLastDays](../using/building-journeys/functions/functioninlastdays.md)
+[Läs om inLastDays](../using/building-journeys/functions/date-functions.md#inLastDays)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda funktionen inLastHours
 
 Utforska funktionen &#39;inLastHours&#39; för att avgöra om ett datum/tid infaller inom det senaste angivna antalet timmar.
 
-[Läs om inLastHours](../using/building-journeys/functions/functioninlasthours.md)
+[Läs om inLastHours](../using/building-journeys/functions/date-functions.md#inLastHours)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda funktionen inLastMonths
 
 Kontrollera om ett datum ligger inom ett angivet månadsintervall med hjälp av &#39;inLastMonths&#39; i Adobe Journey Optimizer.
 
-[Läs mer om inLastMonths](../using/building-journeys/functions/functioninlastmonths.md)
+[Läs mer om inLastMonths](../using/building-journeys/functions/date-functions.md#inLastMonths)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda funktionen inLastYears
 
 Lär dig hur du använder funktionen &#39;inLastYears&#39; för att utvärdera om ett datum ligger inom ett visst antal år före nu.
 
-[Utforska iSenaste året](../using/building-journeys/functions/functioninlastyears.md)
+[Utforska iSenaste året](../using/building-journeys/functions/date-functions.md#inLastYears)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 inNextDays-funktion
 
 Lär dig hur du kontrollerar om ett datum ligger inom ett angivet intervall med dagar från idag med funktionen inNextDays.
 
-[Upptäck om nästa dag](../using/building-journeys/functions/functioninnextdays.md)
+[Upptäck om nästa dag](../using/building-journeys/functions/date-functions.md#inNextDays)
 :::
 
 ::::
@@ -84,11 +84,11 @@ Lär dig hur du kontrollerar om ett datum ligger inom ett angivet intervall med 
 
 ## Ytterligare resurser
 
-- **[inNextHours Function](../using/building-journeys/functions/functioninnexthours.md)** - Lär dig hur du använder funktionen inNextHours för att utvärdera om ett datum/tid infaller inom de följande timmarna.
-- **[inNextMonths Function Reference](../using/building-journeys/functions/functioninnextmonths.md)** - Utforska funktionen &#39;inNextMonths&#39; för att kontrollera om ett datum ligger inom det angivna intervallet med månader.
-- **[inNextYears Function](../using/building-journeys/functions/functioninnextyears.md)** - Kontrollera om ett datum ligger inom ett angivet intervall med år i framtiden med funktionen inNextYears.
-- **[Använder funktionen &#39;now&#39;](../using/building-journeys/functions/functionnow.md)** - Lär dig mer om funktionen &#39;now&#39; för att hämta aktuellt datum och tid, med valfritt tidszonsstöd.
-- **[Använd funktionen nowWithDelta](../using/building-journeys/functions/functionnowwithdelta.md)** - Utforska funktionen nowWithDelta för att beräkna aktuell tid med en förskjutning.
-- **[setHours Function](../using/building-journeys/functions/functionsethours.md)** - Ändra timkomponenten för ett datum/tid-värde med funktionen setHours.
-- **[setDays Function](../using/building-journeys/functions/functionsetdays.md)** - Lär dig hur du ändrar dagkomponenten för ett date-time-objekt med funktionen setDays.
-- **[updateTimeZone Function](../using/building-journeys/functions/functionupdatetimezone.md)** - Justera ett datum- och tidsvärde till en ny tidszon med funktionen updateTimeZone.
+- **[inNextHours Function](../using/building-journeys/functions/date-functions.md#inNextHours)** - Lär dig hur du använder funktionen inNextHours för att utvärdera om ett datum/tid infaller inom de följande timmarna.
+- **[inNextMonths Function Reference](../using/building-journeys/functions/date-functions.md#inNextMonths)** - Utforska funktionen &#39;inNextMonths&#39; för att kontrollera om ett datum ligger inom det angivna intervallet med månader.
+- **[inNextYears Function](../using/building-journeys/functions/date-functions.md#inNextYears)** - Kontrollera om ett datum ligger inom ett angivet intervall med år i framtiden med funktionen inNextYears.
+- **[Använder funktionen &#39;now&#39;](../using/building-journeys/functions/date-functions.md#now)** - Lär dig mer om funktionen &#39;now&#39; för att hämta aktuellt datum och tid, med valfritt tidszonsstöd.
+- **[Använd funktionen nowWithDelta](../using/building-journeys/functions/date-functions.md#nowWithDelta)** - Utforska funktionen nowWithDelta för att beräkna aktuell tid med en förskjutning.
+- **[setHours Function](../using/building-journeys/functions/date-functions.md#setHours)** - Ändra timkomponenten för ett datum/tid-värde med funktionen setHours.
+- **[setDays Function](../using/building-journeys/functions/date-functions.md#setDays)** - Lär dig hur du ändrar dagkomponenten för ett date-time-objekt med funktionen setDays.
+- **[updateTimeZone Function](../using/building-journeys/functions/date-functions.md#updateTimeZone)** - Justera ett datum- och tidsvärde till en ny tidszon med funktionen updateTimeZone.
