@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 hidefromtoc: true
 hide: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
+source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
 workflow-type: tm+mt
 source-wordcount: '3599'
 ht-degree: 8%
@@ -393,7 +393,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* **Slutar en resa** - I arbetsytan har aktiviteten **Slut** tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se videon [documentation](../building-journeys/end-journey.md) och [feature &#x200B;](https://video.tv.adobe.com/v/345376){target="_blank"}.
+* **Slutar en resa** - I arbetsytan har aktiviteten **Slut** tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se videon [documentation](../building-journeys/end-journey.md) och [feature ](https://video.tv.adobe.com/v/345376){target="_blank"}.
 
 
 * Alternativet **Tidszon för profil** är nu avmarkerat som standard i resans egenskaper. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
@@ -617,7 +617,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 **Resor**
 
 * **Läsa målgrupp** - En bild Läs målgruppsresor flyttar nu till slutstatus 30 dagar efter resan. För schemalagda läsningsmålgrupper är det 30 dagar efter att den senaste förekomsten har körts. [Läs mer](../building-journeys/read-audience.md)
-* **Uttrycksredigeraren** - Funktionen [limit](../building-journeys/functions/functionlimit.md) har lagts till så att du kan begränsa antalet objekt i en lista. Med funktionen [sort](../building-journeys/functions/functionsort.md) kan du nu sortera ett listobjekt. Stöd för listObject har också lagts till i funktionerna [disctinct](../building-journeys/functions/functiondistinct.md) och [distinktWithNull](../building-journeys/functions/functiondistinctwithnull.md) .
+* **Uttrycksredigeraren** - Funktionen [limit](../building-journeys/functions/list-functions.md#limit) har lagts till så att du kan begränsa antalet objekt i en lista. Med funktionen [sort](../building-journeys/functions/list-functions.md#sort) kan du nu sortera ett listobjekt. Stöd för listObject har också lagts till i funktionerna [disctinct](../building-journeys/functions/list-functions.md#distinct) och [distinktWithNull](../building-journeys/functions/list-functions.md#distinctWithNull) .
 
 **Administration**
 
@@ -818,7 +818,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 **Resor**
 
-* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
+* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
 **Beslutshantering**
 

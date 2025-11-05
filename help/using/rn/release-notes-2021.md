@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 hidefromtoc: true
 hide: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
+source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 8%
@@ -78,7 +78,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 </table>
 
 
-Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html?lang=sv-SE){target="_blank"} för fler ändringar.
+Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html){target="_blank"} för fler ändringar.
 
 ### Förbättringar
 
@@ -152,7 +152,7 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 <p>Nu kan du skicka samlingar eller en lista med data i dina anpassade åtgärdsparametrar som fylls i dynamiskt vid körning. Det finns två sorters samlingar: enkla samlingar och objektsamlingar. Tidigare skapade anpassade åtgärder fortsätter att fungera. </p>
 <p>Mer information om samlingar finns i <a href="../building-journeys/collections.md">detaljerad dokumentation</a>. </p>
 <p>Funktionerna för att filtrera och överlappa har lagts till i listan med funktioner som är tillgängliga i den avancerade uttrycksredigeraren. Det ger fler möjligheter att filtrera och jämföra samlingar.</p>
-<p>Läs dokumentationen om funktionerna <a href="../building-journeys/functions/functionfilter.md">filter</a> och <a href="../building-journeys/functions/functionintersect.md">överlappa</a>.</p>
+<p>Läs dokumentationen om funktionerna <a href="../building-journeys/functions/list-functions.md#filter">filter</a> och <a href="../building-journeys/functions/list-functions.md#intersect">överlappa</a>.</p>
 </td>
 </tr>
 </tbody>

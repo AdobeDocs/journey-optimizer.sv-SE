@@ -5,10 +5,10 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 42abfcc9711d87b2dc00df47e964dad07443f0ed
+source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 17%
+source-wordcount: '2978'
+ht-degree: 16%
 
 ---
 
@@ -121,17 +121,7 @@ ht-degree: 17%
          + Datum {#date}
             + [Datumfunktioner](using/building-journeys/functions/date-functions.md)
          + Lista {#list}
-            + [Lista](/help/rp_landing_pages/list-landing-page.md)
-            + [distinct](using/building-journeys/functions/functiondistinct.md)
-            + [distinctWithNull](using/building-journeys/functions/functiondistinctwithnull.md)
-            + [filter](using/building-journeys/functions/functionfilter.md)
-            + [getListItem](using/building-journeys/functions/functiongetlistitem.md)
-            + [in](using/building-journeys/functions/functionin.md)
-            + [korsa](using/building-journeys/functions/functionintersect.md)
-            + [gräns](using/building-journeys/functions/functionlimit.md)
-            + [listSize](using/building-journeys/functions/functionlistsize.md)
-            + [serializeList](using/building-journeys/functions/functionserializelist.md)
-            + [sort](using/building-journeys/functions/functionsort.md)
+            + [Listfunktioner](using/building-journeys/functions/list-functions.md)
          + Matematik {#math}
             + [Matematik](/help/rp_landing_pages/math-landing-page.md)
             + [random](using/building-journeys/functions/functionrandom.md)
@@ -857,7 +847,7 @@ ht-degree: 17%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

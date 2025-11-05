@@ -9,7 +9,7 @@ level: Experienced
 keywords: funktion, uttryck, redigerare, resa
 exl-id: 5b978eef-7d3e-41fe-bb08-0cf37c3b125d
 version: Journey Orchestration
-source-git-commit: 42abfcc9711d87b2dc00df47e964dad07443f0ed
+source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 31%
@@ -62,16 +62,16 @@ Här är en lista över funktioner som stöds.
 | Datum | [setHours](../functions/date-functions.md#setHours) |
 | Datum | [setDays](../functions/date-functions.md#setDays) |
 | Datum | [updateTimeZone](../functions/date-functions.md#updateTimeZone) |
-| Lista | [distinct](../functions/functiondistinct.md) |
-| Lista | [distinctWithNull](../functions/functiondistinctwithnull.md) |
-| Lista | [filter](../functions/functionfilter.md) |
-| Lista | [getListItem](../functions/functiongetlistitem.md) |
-| Lista | [in](../functions/functionin.md) |
-| Lista | [överlappa](../functions/functionintersect.md) |
-| Lista | [gräns](../functions/functionlimit.md) |
-| Lista | [listSize](../functions/functionlistsize.md) |
-| Lista | [serializeList](../functions/functionserializelist.md) |
-| Lista | [sort](../functions/functionsort.md) |
+| Lista | [distinct](../functions/list-functions.md#distinct) |
+| Lista | [distinctWithNull](../functions/list-functions.md#distinctWithNull) |
+| Lista | [filter](../functions/list-functions.md#filter) |
+| Lista | [getListItem](../functions/list-functions.md#getListItem) |
+| Lista | [in](../functions/list-functions.md#in) |
+| Lista | [överlappa](../functions/list-functions.md#intersect) |
+| Lista | [gräns](../functions/list-functions.md#limit) |
+| Lista | [listSize](../functions/list-functions.md#listSize) |
+| Lista | [serializeList](../functions/list-functions.md#serializeList) |
+| Lista | [sort](../functions/list-functions.md#sort) |
 | Matematik | [random](../functions/functionrandom.md) |
 | Matematik | [round](../functions/functionround.md) |
 | Sträng | [concat](../functions/functionconcat.md) |

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Funktioner
 description: Funktioner
 redpen-status: CREATED_||_2025-08-11_20-18-53
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+exl-id: d82e30d6-abe5-4522-a8c4-a11ff5c9bd91
+source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
-
 
 # Funktioner{#section-overview}
 
@@ -20,7 +20,7 @@ Med funktionerna i Adobe Journey Optimizer kan ni skapa dynamiska och precisa ut
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Huvudfunktioner i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Utforska en översikt över de viktigaste funktionerna, indelade efter typ och s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Använda funktionen inAudience
 
@@ -40,37 +40,37 @@ Förstå hur ni utvärderar medlemskap för målgrupper med hjälp av funktionen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Referens för aggregeringsfunktioner
 
 Huvudaggregeringsfunktioner för att utföra åtgärder som medelvärden, antal, distinkta värden och summor i reseuttryck.
 
-[Fördjupa dig i aggregeringsfunktioner](aggregation-landing-page.md)
+[Fördjupa dig i aggregeringsfunktioner](../using/building-journeys/functions/aggregation-functions.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/exchange-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/exchange-alt.svg)
 
 Konverteringsfunktioner
 
 Omvandla datatyper med konverteringsfunktioner för att hantera indata effektivt för resesamordning.
 
-[Utforska konverteringsfunktioner](conversion-landing-page.md)
+[Utforska konverteringsfunktioner](../using/building-journeys/functions/conversion-functions.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 Datumfunktioner i Adobe Journey Optimizer
 
 Lär dig att hantera och utvärdera datum- och tidsvärden med hjälp av kraftfulla datumrelaterade funktioner i reseuttryck.
 
-[Visa dokumentation för datumfunktioner](date-landing-page.md)
+[Visa dokumentation för datumfunktioner](../using/building-journeys/functions/date-functions.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Listfunktioner i Adobe Journey Optimizer
 

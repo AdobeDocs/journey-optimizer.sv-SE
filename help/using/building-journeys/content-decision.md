@@ -11,7 +11,7 @@ badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: aktivitet, beslut, innehållsbeslut, beslutspolitik, arbetsyta, resa
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 1%
@@ -116,7 +116,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
    >
    >Alla begränsade etiketter som har definierats för ett attribut, antingen i en upplevelsehändelse för resan som används i en beslutsregel (som kontextdata) eller i [erbjudandeschemat](../experience-decisioning/catalogs.md#access-catalog-schema), resulterar i principöverträdelse för DULE eller samtycke. Läs mer om datastyrningsprinciper i [det här avsnittet](../action/action-privacy.md)
 
-1. Använd funktionen [listSize](functions/functionlistsize.md) med följande syntax för att kontrollera om något erbjudande har returnerats för de profiler som deltar i resan: `listSize(@decision{ContentdecisionName.items})>0`
+1. Använd funktionen [listSize](functions/list-functions.md#listSize) med följande syntax för att kontrollera om något erbjudande har returnerats för de profiler som deltar i resan: `listSize(@decision{ContentdecisionName.items})>0`
 
    >[!NOTE]
    >
@@ -146,7 +146,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    ![Redigera den anpassade åtgärdens frågeparametrar](assets/journey-content-decision-custom-action-param.png)
 
-1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [&#x200B; i den &#x200B;](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
+1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [ i den ](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
 
    >[!CAUTION]
    >
