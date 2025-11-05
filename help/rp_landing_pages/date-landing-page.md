@@ -20,7 +20,7 @@ Med datumfunktionerna i Adobe Journey Optimizer kan du arbeta smidigt med tidsre
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Funktionsreferens för currentTimeInMillis
 
@@ -30,7 +30,7 @@ Lär dig hur du använder funktionen currentTimeInMillis för att hämta den akt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 inLastDays-funktion
 
@@ -40,7 +40,7 @@ Förstå funktionen &#39;inLastDays&#39; som kontrollerar om ett visst datum inf
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen inLastHours
 
@@ -50,7 +50,7 @@ Utforska funktionen &#39;inLastHours&#39; för att avgöra om ett datum/tid infa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen inLastMonths
 
@@ -60,7 +60,7 @@ Kontrollera om ett datum ligger inom ett angivet månadsintervall med hjälp av 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen inLastYears
 
@@ -70,7 +70,7 @@ Lär dig hur du använder funktionen &#39;inLastYears&#39; för att utvärdera o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 inNextDays-funktion
 
