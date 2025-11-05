@@ -4,11 +4,10 @@ product: journey optimizer
 title: Arbeta med steg för resa
 description: Lär dig hur du arbetar med steg för kundresor i Adobe Journey Optimizer - förstå vad de är, varför de betyder något och hur du använder dem för analys och optimering
 feature: Journeys, Reporting
-topic: Content Management
 role: Developer, Admin, User
 level: Intermediate, Experienced
 keywords: resa, stegvisa händelser, analys, rapportering, övervakning, XDM
-source-git-commit: 9320777cfb75fd1370c11b601908644ba17ff21e
+source-git-commit: 17e0528849f2bd4d3cbf279c34c98a8359cad797
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 1%
@@ -21,7 +20,7 @@ Resestegshändelser genereras automatiskt händelser som samlar in detaljerad in
 
 ## Vad är steg-händelser för resan? {#what-are-step-events}
 
-Resestegshändelser är systemgenererade [XDM-händelser (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} som Adobe Journey Optimizer automatiskt skapar och skickar till [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE){target="_blank"} när en profil flyttas från en nod till en annan under en resa. Varje händelse motsvarar en specifik [reseaktivitet](../building-journeys/about-journey-activities.md) eller övergång i kundens reseupplevelse.
+Resestegshändelser är systemgenererade [XDM-händelser (Experience Data Model)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"} som Adobe Journey Optimizer automatiskt skapar och skickar till [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} när en profil flyttas från en nod till en annan under en resa. Varje händelse motsvarar en specifik [reseaktivitet](../building-journeys/about-journey-activities.md) eller övergång i kundens reseupplevelse.
 
 Det finns två huvudtyper av steg för resan:
 
@@ -179,7 +178,7 @@ Lär dig hur du [konfigurerar Customer Journey Analytics](report-gs-cja.md) för
 ### Dokumentationslänkar {#documentation-links}
 
 - **[Översikt över delning av resesteg](sharing-overview.md)**: Förstå hur resedata flödar till Adobe Experience Platform
-- **[Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}**: Fullständig XDM-schemareferens
+- **[Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}**: Fullständig XDM-schemareferens
 - **[Journey Optimizer-rapportering](report-gs-cja.md)**: Översikt över rapportfunktioner i Journey Optimizer
 
 ### Integreringsguider {#integration-guides}
