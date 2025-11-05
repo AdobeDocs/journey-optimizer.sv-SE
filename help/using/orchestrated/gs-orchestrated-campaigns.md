@@ -6,10 +6,10 @@ description: Lär dig hur du kommer igång med samordnade kampanjer
 short-description: Upptäck de viktigaste funktionerna för samordnade kampanjer samt användningsfall.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 version: Campaign Orchestration
-source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
+source-git-commit: 9619ffd2cde677c0c83ee1b53f232c41b5faaa9a
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 4%
+source-wordcount: '779'
+ht-degree: 3%
 
 ---
 
@@ -92,7 +92,7 @@ Lär dig viktiga koncept och funktioner som är tillgängliga med orkestrerade k
 
 ## Låt oss dyka djupare
 
-Nu när ni har en förståelse för vad flerkanalskampanjer är, är det dags att gå djupare in i dessa dokumentationsavsnitt för att börja arbeta med funktionen.
+Nu när ni vet vad som är samordnade kampanjer är det dags att fördjupa er i dessa dokumentationsavsnitt för att börja arbeta med funktionen.
 
 <table><tr style="border: 0; text-align: center;">
 <td>
@@ -121,3 +121,13 @@ Nu när ni har en förståelse för vad flerkanalskampanjer är, är det dags at
 </div>
 <p></td>
 </tr></table>
+
+## Ytterligare resurser
+
+* **[Bygg din första regel](build-query.md)** - Lär dig skapa riktade frågor och segmentera målgrupperna med precision med hjälp av relationsdata.
+* **[Skapa relationsscheman](gs-schemas.md)** - Lär dig hur du ställer in och konfigurerar relationsscheman för att utnyttja data för flera enheter i dina kampanjer.
+* **[Rapportering för samordnade kampanjer](reporting-campaigns.md)** - Spåra och analysera kampanjresultaten med detaljerade rapporteringsmått och insikter.
+* **[Starta och övervaka kampanjer](start-monitor-campaigns.md)** - Lär dig de bästa sätten att starta kampanjer och övervaka deras körning i realtid.
+* **[Garantier och begränsningar](guardrails.md)** - Granska viktiga säkerhetsutkast, begränsningar och bästa praxis för att säkerställa optimala kampanjresultat.
+* **[Vanliga frågor och svar](orchestrated-campaigns-faq.md)** - Hitta svar på vanliga frågor om orkestrerade kampanjfunktioner, funktioner och användningsexempel.
+* **[Samordnade kampanjsjälvstudiekurser](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-campaigns/orchestrated-campaigns/introduction-to-orchestrated-campaigns){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om funktioner och bästa praxis.

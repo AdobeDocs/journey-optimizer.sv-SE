@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: 9619ffd2cde677c0c83ee1b53f232c41b5faaa9a
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
@@ -67,5 +67,14 @@ Upptäck de detaljerade stegen för att skapa en webbkampanj i [den här videon]
 <p>
 </td>
 </tr></table>
+
+## Ytterligare resurser
+
+* **[Skapa webbupplevelser](create-web.md)** - Lär dig hur du skapar och konfigurerar webbkampanjer och resor för att ändra webbinnehåll.
+* **[Förutsättningar för webbkanaler](web-prerequisites.md)** - Förstå de tekniska krav och den konfiguration som krävs för implementering av webbkanaler.
+* **[Redigera webbinnehåll](create-web.md#edit-web-content)** - Lär dig mer om hur du ändrar sidor i visuella eller icke-visuella redigeringslägen.
+* **[Hantera webbändringar](manage-web-modifications.md)** - Lär dig hur du ordnar, använder och hanterar ändringar i dina webbupplevelser.
+* **[Övervaka webbupplevelser](monitor-web-experiences.md)** - Spåra och analysera resultatet för dina webbkampanjer med detaljerad rapportering.
+* **[Självstudiekurser för webbkampanjer](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Utforska steg-för-steg-videokurser om webbkanalsfunktioner och metodtips.
 
 
