@@ -22,7 +22,7 @@ Avsnittet Math i Adobe Journey Optimizer ger dig möjlighet att utföra exakta b
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 random-funktion
 
@@ -32,7 +32,7 @@ Lär dig hur du använder funktionen &quot;random&quot; för att generera slumpm
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 round-funktion
 
