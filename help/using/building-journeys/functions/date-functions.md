@@ -7,9 +7,9 @@ role: Developer
 level: Experienced
 keywords: datum, funktioner, uttryck, resa, tid
 version: Journey Orchestration
-source-git-commit: 42abfcc9711d87b2dc00df47e964dad07443f0ed
+source-git-commit: bb47ca4957129a4d05aa3d7286409eef0cb62143
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '791'
 ht-degree: 6%
 
 ---
@@ -20,9 +20,9 @@ Med datumfunktionerna kan du ändra och arbeta med datum- och tidsvärden i dina
 
 Använd datumfunktioner när du behöver:
 
-* Hämta aktuell tid eller aktuellt datum med specifik hantering av tidszoner
-* Kontrollera om ett datum ligger inom ett visst tidsintervall (tidigare eller framtida)
-* Ändra datum- och tidskomponenter (timmar, dagar, tidszoner)
+* Hämta aktuell tid eller aktuellt datum med specifik hantering av tidszoner ([nu](#now), [nowWithDelta](#nowWithDelta), [currentTimeInMillis](#currentTimeInMillis))
+* Kontrollera om ett datum ligger inom ett visst tidsintervall ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [in Nästa månad ](#inNextMonths), [inNästaÅr](#inNextYears))
+* Ändra datum- och tidskomponenter ([setHours](#setHours), [setDays](#setDays), [updateTimeZone](#updateTimeZone))
 * Tidsbaserade beräkningar och jämförelser
 * Konvertera mellan olika tidsformat och representationer
 

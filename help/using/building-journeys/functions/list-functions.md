@@ -7,9 +7,9 @@ role: Developer
 level: Experienced
 keywords: lista, funktioner, uttryck, resa, matris, samling
 version: Journey Orchestration
-source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
+source-git-commit: bb47ca4957129a4d05aa3d7286409eef0cb62143
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1158'
 ht-degree: 5%
 
 ---
@@ -20,13 +20,13 @@ Med listfunktioner kan du hantera och arbeta med samlingar av värden i dina res
 
 Använd listfunktioner när du behöver:
 
-* Filtrera och extrahera specifika objekt från samlingar baserat på kriterier
-* Sortera och ordna listelement i stigande eller fallande ordning
-* Ta bort dubbletter och hämta unika värden från listor
-* Kontrollera om det finns värden i samlingar
-* Begränsa antalet objekt som returneras från en lista
-* Omvandla listor till olika format eller datatyper
-* Utför uppsättningsåtgärder som att söka efter gemensamma element mellan listor
+* Filtrera och extrahera specifika objekt från samlingar baserat på villkor ([filter](#filter), [getListItem](#getListItem))
+* Sortera och ordna listelement i stigande eller fallande ordning ([sort](#sort))
+* Ta bort dubbletter och hämta unika värden från listor ([distinkt](#distinct), [distinktMedNull](#distinctWithNull))
+* Kontrollera om det finns värden i samlingar ([in](#in))
+* Begränsa antalet objekt som returneras från en lista ([limit](#limit))
+* Hämta storleken på en lista ([listSize](#listSize)) eller transformera listor till olika format ([serializeList](#serializeList))
+* Utför uppsättningsåtgärder som att hitta gemensamma element mellan listor ([överlappa](#intersect))
 
 Listfunktioner har kraftfulla verktyg för att arbeta med komplexa datastrukturer, vilket möjliggör avancerad databearbetning och villkorsstyrd logik baserat på samlingens innehåll.
 

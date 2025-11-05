@@ -7,9 +7,9 @@ role: Developer
 level: Experienced
 keywords: konvertering, funktioner, uttryck, resa, typ, skiftning
 version: Journey Orchestration
-source-git-commit: 7d75abf6b428becc8b535a63421e85cca417daac
+source-git-commit: bb47ca4957129a4d05aa3d7286409eef0cb62143
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '957'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,10 @@ Med konverteringsfunktionerna kan du omvandla data från en typ till en annan i 
 
 Använd konverteringsfunktioner när du behöver:
 
-* Konvertera strängvärden till numeriska, booleska eller datumtyper
-* Omvandla datum och tidpunkter mellan olika format och representationer
-* Sänd numeriska värden mellan heltal- och decimaltyper
+* Konvertera strängvärden till numeriska, booleska eller datumtyper ([toInteger](#toInteger), [toDecimal](#toDecimal), [toBool](#toBool))
+* Omforma datum och tider mellan olika format och representationer ([toDateTime](#toDateTime), [toDateTimeOnly](#toDateTimeOnly), [toDateOnly](#toDateOnly))
+* Kasta numeriska värden mellan heltal och decimaltyper ([toInteger](#toInteger), [toDecimal](#toDecimal))
+* Konvertera värden till strängformat ([toString](#toString)) eller varaktighet ([toDuration](#toDuration))
 * Säkerställ typkompatibilitet för jämförelser och åtgärder
 * Bearbeta data från externa källor som kan ha olika typformat
 

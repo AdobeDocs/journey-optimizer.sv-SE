@@ -7,9 +7,9 @@ role: Developer
 level: Experienced
 keywords: sträng, funktioner, uttryck, resa, text, manipulation
 version: Journey Orchestration
-source-git-commit: d58319d687d113ce680c415524fdea0400cb38f0
+source-git-commit: bb47ca4957129a4d05aa3d7286409eef0cb62143
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1127'
 ht-degree: 6%
 
 ---
@@ -20,15 +20,16 @@ Med strängfunktionerna kan du ändra och arbeta med textvärden i dina reseuttr
 
 Använd strängfunktioner när du behöver:
 
-* Sammanfoga och kombinera flera textvärden
-* Sök efter specifika textmönster eller delsträngar
-* Jämför strängar med skiftlägeskänslig eller skiftlägesokänslig matchning
-* Extrahera delar av text med delsträngsåtgärder
-* Omforma text till versaler eller gemener
-* Kontrollera om strängarna är tomma eller innehåller specifika värden
-* Ersätta textmönster med nya värden
-* Dela upp strängar i arrayer för vidare bearbetning
-* Validera text mot reguljära uttryck
+* Sammanfoga och kombinera flera textvärden ([sammanfoga](#concat))
+* Sök efter specifika textmönster eller delsträngar ([contains](#contain), [containIgnoreCase](#containIgnoreCase), [indexOf](#indexOf), [lastIndexOf](#lastIndexOf), [matchRegExp](#matchRegExp))
+* Jämför strängar med skiftlägeskänslig eller skiftlägeskänslig matchning ([equalIgnoreCase](#equalIgnoreCase), [notEqualIgnoreCase](#notEqualIgnoreCase))
+* Kontrollsträngen börjar och slutar ([startWith](#startWith), [startWithIgnoreCase](#startWithIgnoreCase), [endWith](#endWith), [endWithIgnoreCase](#endWithIgnoreCase))
+* Extrahera delar av text med delsträngsåtgärder ([substr](#substr))
+* Omforma text till versaler eller gemener ([övre](#upper), [nedre](#lower), [trimma](#trim))
+* Kontrollera om strängarna är tomma eller innehåller specifika värden ([isEmpty](#isEmpty), [isNotEmpty](#isNotEmpty))
+* Ersätt textmönster med nya värden ([replace](#replace), [replaceAll](#replaceAll))
+* Dela strängar i arrayer för vidare bearbetning ([split](#split))
+* Hämta stränglängd ([length](#length)) eller generera unika identifierare ([uid](#uuid))
 
 Strängfunktionerna ger omfattande funktioner för textbehandling, vilket möjliggör avancerad databehandling och villkorsstyrd logik som bygger på textinnehåll i dina resematerial.
 

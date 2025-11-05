@@ -7,9 +7,9 @@ role: Developer
 level: Experienced
 keywords: aggregering, funktioner, uttryck, resa, avg, count, max, min, sum
 version: Journey Orchestration
-source-git-commit: 6102fba3ba30b462654e218f08835be53b75e2cc
+source-git-commit: bb47ca4957129a4d05aa3d7286409eef0cb62143
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '717'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,9 @@ Sammanställningsfunktioner utför beräkningar på en uppsättning värden och 
 
 Använd sammanställningsfunktioner när du behöver:
 
-* Beräkna statistiska värden från listor eller matriser (genomsnitt, summa, min, max)
-* Räkna element i samlingar, med alternativ för att inkludera eller exkludera null-värden
-* Identifiera unika värden i datauppsättningar
+* Beräkna statistiska värden från listor eller matriser ([avg](#avg), [sum](#sum), [min](#min), [max](#max))
+* Räkna element i samlingar ([count](#count), [countOnlyNull](#countOnlyNull), [countWithNull](#countWithNull)), med alternativ för att inkludera eller exkludera null-värden
+* Identifiera unika värden i datauppsättningar ([distinktCount](#distinctCount), [distinktCountWithNull](#distinctCountWithNull))
 * Fatta databaserade beslut baserat på beräknade mätvärden
 
 Sammanställningsfunktioner hanterar automatiskt null-värden utifrån deras specifika beteende, vilket gör det enklare att arbeta med verkliga data som kan innehålla värden som saknas eller är odefinierade.
