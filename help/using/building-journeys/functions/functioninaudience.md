@@ -8,10 +8,10 @@ level: Experienced
 keywords: målgrupp, funktion, uttryck, resa, målgrupp, segmentering
 exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560
 version: Journey Orchestration
-source-git-commit: a866442aa073c648d4455754e9945f0dddfb079d
+source-git-commit: 4f653c0bd3f6998dd54deeae996b7b0427a1744e
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ Funktionen `inAudience` är en Adobe Experience Platform-funktion som gör att d
 
 Använd funktionen `inAudience` när du behöver:
 
-* [Sökvägar för grenresor baserat på målgruppsmedlemskap](../condition-activity.md#using-a-segment)
+* Sökvägar för kundresor baserat på medlemskap för målgrupper. [Läs mer](../condition-activity.md#using-a-segment)
 * Använd villkorsstyrd logik som beror på om en profil tillhör ett visst segment
 * Rikta in er till specifika kundgrupper med personaliserade upplevelser
 * Utvärdera målgruppernas deltagande i realtid under resan
@@ -36,7 +36,7 @@ Målgrupper kan ha två deltagarstatusar:
 * **Realiserad**: Personen kvalificerar sig för målgruppsdefinitionen och är en aktiv medlem
 * **Avslutade**: Personen har lämnat målgruppen och kvalificerar sig inte längre
 
-Endast personer med statusen **Realized** betraktas som aktiva målgruppsmedlemmar. När funktionen returnerar `true` bekräftar det att personen har uppnått status. När den returnerar `false` anger den att den har avslutat status. Mer information om målgruppsutvärdering finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+Endast personer med statusen **Realized** betraktas som aktiva målgruppsmedlemmar. När funktionen returnerar `true` bekräftar det att personen har uppnått status. När den returnerar `false` anger den att den har avslutat status. Mer information om målgruppsutvärdering finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 +++Syntax
 
