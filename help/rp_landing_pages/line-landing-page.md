@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: LINJE
 description: LINJE
 redpen-status: CREATED_||_2025-08-11_20-44-38
-source-git-commit: 588b0f805e9fcf1087e0eb368ebf31bbddaa30d4
+exl-id: 5f51bbfe-37f8-4e8d-8e4e-6b9d018cd076
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
 
 ---
-
 
 # LINJE{#section-overview}
 
@@ -30,7 +30,7 @@ Konfigurera LINE-kanalen med Journey Optimizer innan du skapar LINE-meddelandet.
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera LINE-kanalen
 
@@ -40,7 +40,7 @@ Följ stegvisa instruktioner för att manuellt konfigurera LINE-kanalen eller ko
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och konfigurera LINE-meddelanden
 
@@ -50,7 +50,7 @@ Lär dig hur du lägger till LINE-meddelanden till resor och kampanjer, anpassar
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Kontrollera och skicka LINE-meddelanden
 

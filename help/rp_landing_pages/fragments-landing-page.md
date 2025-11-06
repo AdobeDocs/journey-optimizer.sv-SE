@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Återanvändbara innehållsfragment
 description: Återanvändbara innehållsfragment
 redpen-status: CREATED_||_2025-08-12_00-39-41
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 8ec67807-8bcb-4510-bcba-ccf6e710ceb9
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
 
 ---
-
 
 # Återanvändbara innehållsfragment{#section-overview}
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Introduktion till att använda fragment
 
@@ -30,7 +30,7 @@ Lär dig grunderna i att skapa, hantera och återanvända visuella fragment och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa återanvändbara fragment
 
@@ -40,7 +40,7 @@ Följ en stegvis guide för att skapa återanvändbara visuella fragment och utt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Spara befintligt innehåll som fragment
 
@@ -50,7 +50,7 @@ Upptäck hur du sparar innehåll som återanvändbara visuella fragment eller ut
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Använda anpassningsbara fragment
 
@@ -60,7 +60,7 @@ Lär dig hur du gör specifika fält redigerbara i fragment för dynamisk anpass
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Hantera innehållsfragment
 

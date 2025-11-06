@@ -194,4 +194,4 @@ När du lägger till fragmentet i e-postinnehållet kan användarna nu redigera 
 
 I den här videon visas hur du gör HTML-komponenter i ett fragment redigerbara så att både innehåll och format kan uppdateras dynamiskt.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464372/?learn=on&#x26;enablevpops&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464363/?learn=on&#x26;enablevpops)

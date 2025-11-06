@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Konfigurera erbjudanden
 description: Konfigurera erbjudanden
 redpen-status: CREATED_||_2025-08-11_21-00-31
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: e03307f5-0024-463a-ad2b-78d49e6d158f
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera erbjudanden{#section-overview}
 
@@ -20,7 +20,7 @@ Avsnittet&quot;Konfigurera erbjudanden&quot; i Adobe Journey Optimizer ger er m�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa personaliserade erbjudanden
 
@@ -30,7 +30,7 @@ L채r dig hur du skapar och hanterar personaliserade erbjudanden med stegvis v채g
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 L채gg till representationer i erbjudanden
 
@@ -40,7 +40,7 @@ Definiera och konfigurera var erbjudandena visas med representationer, och anpas
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 L채gg till begr채nsningar i erbjudanden
 

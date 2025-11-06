@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Live-rapport
 description: Live-rapport
 redpen-status: CREATED_||_2025-08-11_20-47-56
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 08fa046a-4610-4923-a84e-db54e5ad7402
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
-
 
 # Live-rapport{#section-overview}
 
@@ -20,7 +20,7 @@ Live-rapportfunktionen i Adobe Journey Optimizer gör det möjligt att spåra oc
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med Live-rapport
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till, anpassar och exporterar Live-rapporter för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Lista över mått
 
@@ -40,7 +40,7 @@ Förstå definitioner och kategorier av mätvärden som används i Live-rapporte
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Rapport om resebesök
 
@@ -50,7 +50,7 @@ Analysera resultatet av resor och tillhörande kommunikationskanaler i realtid u
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Campaign Live-rapport
 
@@ -60,7 +60,7 @@ Visualisera kampanjresultat i flera kanaler som e-post, push, SMS, webb och dire
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Live-rapport för landningssida
 
@@ -70,7 +70,7 @@ Utvärdera landningssidans prestanda med realtidsstatistik som besök, konverter
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Live-prenumerationsrapport
 

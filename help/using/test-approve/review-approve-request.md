@@ -4,13 +4,13 @@ description: Lär dig hur du granskar och godkänner en förfrågan om rese- och
 role: User
 level: Beginner
 feature: Approval
-source-git-commit: 8fecd0d4812ba875dba1d47bc32ab08178a13f2c
+exl-id: 8f4260b5-98df-4350-bd9b-680c3986ffe6
+source-git-commit: f5df65a0225754ab66fb2ffa33c5130f7137b644
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
 
 ---
-
 
 # Granska och godkänn en begäran {#approve-requests}
 
@@ -49,4 +49,4 @@ När begäran har skickats meddelas den som skapat resan/kampanjen via ett e-pos
 
 >[!NOTE]
 >
-> Om du inte får något meddelande om godkännande via ett e-postmeddelande måste du uppdatera dina prenumerationsinställningar i dina Experience Cloud-profiler. [Läs mer](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences)
+> Om du inte får något meddelande om godkännande via ett e-postmeddelande måste du uppdatera dina prenumerationsinställningar i dina Experience Cloud-profiler. [Läs mer](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences)

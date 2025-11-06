@@ -7,7 +7,7 @@ level: Experienced
 exl-id: 67ba8861-be6f-42ae-b9b8-96168d0dd15c
 source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Var:
 
 Den tillförlitlighet som Adobe använder är en tillförsikt som kan erhållas när som helst genom att invertera konfidenssekvensen för den genomsnittliga behandlingseffekten.
 
-För att vara exakt finns det i ett *t* -test för skillnaden i medelvärde mellan två varianter en 1:1-mappning mellan *p*-värdet för det här testet och konfidensintervallet för mellanskillnaden. Ett *p*-värde kan erhållas när som helst genom att invertera (när som helst giltig) konfidenssekvens för den genomsnittliga uppskattaren av behandlingseffekt:
+För att vara exakt finns det i ett *t* -test för skillnaden i medelvärde mellan två varianter en :1-mappning mellan *p*-värdet för det här testet och konfidensintervallet för mellanskillnaden. Ett *p*-värde kan erhållas när som helst genom att invertera (när som helst giltig) konfidenssekvens för den genomsnittliga uppskattaren av behandlingseffekt:
 
 ![](assets/statistical_6.png){width="200" align="center"}
 
@@ -87,7 +87,7 @@ Om du ersätter tilldelningens sannolikhet med dess empiriska uppskattningar: π
 
 ![](assets/statistical_8.png){width="500" align="center"}
 
-Kom sedan ihåg att det finns en korrespondens mellan `p` -värden och konfidensintervall för en regelbunden hypotesstest med testvärdet z = (μ<sub>A</sub>-μ<sub>0</sub>/σ<sub>p</sub>):
+Kom sedan ihåg att det finns en korrespondens mellan <sub> -värden och konfidensintervall för en regelbunden hypotesstest med testvärdet z = (μ</sub>A<sub>-μ</sub>0<sub>/σ</sub>p`p`):
 
 ![](assets/statistical_9.png){width="500" align="center"}
 

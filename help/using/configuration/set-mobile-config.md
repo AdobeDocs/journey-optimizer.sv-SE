@@ -12,7 +12,7 @@ exl-id: 846e0d11-798b-4f3b-80db-848a17d32830
 source-git-commit: f916d91ffd2c41261612f2127f35c41275c9d013
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 >id="ajo_mobile_web_setup_validate_assurance"
 >title="Validera med Assurance"
 >abstract="Adobe Experience Platform Assurance är inbäddat i detta arbetsflöde för att hjälpa dig inspektera implementeringen av SDK samt simulera och validera programhändelser."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance - översikt"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance - översikt"
 
 Denna installation underlättar snabb konfigurering av marknadsföringskanaler och säkerställer att alla nödvändiga resurser finns tillgängliga i Experience Platform, Journey Optimizer och Data Collection. På så sätt kan marknadsföringsteamet börja med att skapa kampanjer och resor.
 
@@ -58,7 +58,7 @@ Observera att för varje plattform som du vill konfigurera måste du skapa en se
 
   Nedan visas de behörigheter som krävs för att köra installationen av den guidade kanalen.
 
-+++ Nödvändiga behörigheter
+  +++ Nödvändiga behörigheter
 
   <table>
     <thead>
@@ -107,9 +107,9 @@ Observera att för varje plattform som du vill konfigurera måste du skapa en se
     </tbody>
   </table>
 
-+++
+  +++
 
-* Om du använder konfigurationsalternativet Befintlig kontrollerar du att du använder följande tilläggsversioner för Adobe Experience Platform Mobile SDK. Mer information om SDK-konfigurationen, inklusive nödvändiga beroenden och initieringskod, finns i [följande dokumentation](https://experienceleague.adobe.com/sv/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
+* Om du använder konfigurationsalternativet Befintlig kontrollerar du att du använder följande tilläggsversioner för Adobe Experience Platform Mobile SDK. Mer information om SDK-konfigurationen, inklusive nödvändiga beroenden och initieringskod, finns i [följande dokumentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
 
   För Android
 

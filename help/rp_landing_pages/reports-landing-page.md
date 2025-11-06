@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Anpassade reserapporter
 description: Anpassade reserapporter
 redpen-status: CREATED_||_2025-08-11_20-54-10
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 1e685fcd-5bb1-4792-b851-e76b7273ddc7
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
 
 ---
-
 
 # Anpassade reserapporter{#section-overview}
 
@@ -20,7 +20,7 @@ Anpassade reserapporter i Adobe Journey Optimizer gör det möjligt att följa u
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Skapa och analysera reserapporter
 
@@ -30,7 +30,7 @@ Lär dig skapa reserapporter, förstå scheman och datauppsättningar och integr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Fältlista för steghändelser
 
@@ -40,7 +40,7 @@ Utforska en omfattande lista med stegvisa händelsefält, kategoriserade och bes
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Händelsefält för äldre steg
 
@@ -50,7 +50,7 @@ Förstå de äldre händelsefälten för steg som används i Adobe Journey Optim
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Exempel på SQL-frågor för dataanalys
 

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Hantera dina resor
 description: Hantera dina resor
 redpen-status: CREATED_||_2025-08-11_20-08-03
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 9f74019a-9a29-40f3-8f94-253814b984c0
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
 
 ---
-
 
 # Hantera dina resor{#section-overview}
 
@@ -20,7 +20,7 @@ Att hantera era resor i Adobe Journey Optimizer handlar om att ge er verktygen f
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Bläddra och filtrera dina resor
 
@@ -30,7 +30,7 @@ Lär dig navigera, filtrera och hantera resor effektivt, inklusive kontrollpanel
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Profilinträde i resor
 
@@ -40,7 +40,7 @@ Förstå hur profiler går in på resor, inklusive regler för återinträde fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Använd ytterligare identifierare i resor
 
@@ -50,7 +50,7 @@ Upptäck hur ni kan utnyttja tilläggsidentifierare för förbättrad personalis
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Tidszonshantering
 
@@ -60,7 +60,7 @@ Lär dig hur du konfigurerar fasta och profildefinierade tidszoner för att säk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Sändningsoptimering
 
@@ -70,7 +70,7 @@ Maximera engagemanget för e-post och push-meddelanden genom att förutsäga opt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Avsluta din resa
 

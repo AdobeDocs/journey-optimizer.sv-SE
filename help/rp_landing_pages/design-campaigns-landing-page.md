@@ -20,7 +20,7 @@ Samordnade kampanjaktiviteter i Adobe Journey Optimizer ger er möjlighet att sk
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Arbeta med samordnade kampanjaktiviteter
 
@@ -30,7 +30,7 @@ Lär dig mer om målinriktning, kanaler och flödeskontroll för att utforma och
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda aktiviteten OCH-join
 
@@ -40,7 +40,7 @@ Synkronisera flera körningsgrenar genom att se till att föregående åtgärder
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Bygg målgruppsaktivitet
 
@@ -50,7 +50,7 @@ Definiera och konfigurera målgruppssegment för era kampanjer med aktiviteten S
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Ändra dimensionsaktivitet
 
@@ -60,7 +60,7 @@ Förbättra målgruppsanpassningen genom att växla mellan olika datatekniker i 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Kanalaktiviteter
 
@@ -70,7 +70,7 @@ Konfigurera e-post, SMS, push-meddelanden och direktreklam för flerkanalsmarkna
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Kombinera aktivitet
 

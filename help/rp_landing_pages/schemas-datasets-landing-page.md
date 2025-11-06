@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Hantera relationsscheman och datauppsättningar
 description: Hantera relationsscheman och datauppsättningar
 redpen-status: CREATED_||_2025-08-11_20-23-42
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 17c64a34-d571-46d0-a144-d4b746118c96
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 1%
 
 ---
-
 
 # Hantera relationsscheman och datauppsättningar{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att hantera relationsscheman och datauppsättningar i Adobe Journey Optimi
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med relationsscheman och datauppsättningar
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar scheman, konfigurerar datauppsättningar och importerar d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Konfigurera ett manuellt relationsschema
 
@@ -40,7 +40,7 @@ Stegvisa instruktioner för att manuellt skapa scheman, lägga till attribut, l�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Skapa relationsscheman med en DDL-fil
 
@@ -50,7 +50,7 @@ Definiera scheman genom att överföra DDL-filer, länka tabeller och upprätta 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Ingest Data for Adobe Journey Optimizer Campaigns
 

@@ -4,23 +4,23 @@ product: Journey Optimizer
 title: WhatApp
 description: WhatApp
 redpen-status: CREATED_||_2025-08-11_20-44-12
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 43d23d66-7c15-42e2-94ff-3dc80927d07a
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-
 # WhatApp{#section-overview}
 
-Adobe Journey Optimizer ger er möjlighet att kommunicera med er målgrupp på WhatsApp, en kanal som är perfekt för personaliserad kommunikation i realtid. Oavsett om du skickar uppdateringar, kampanjer eller viktig information kan den här funktionen hjälpa dig att sömlöst integrera WhatsApp i era kampanjer och resor med Metas molnAPI. Du får lära dig hur du konfigurerar kanalen, skapar engagerande meddelanden, förhandsgranskar och validerar innehåll och ser till att materialet levereras smidigt samtidigt som du följer Metas regler. Varje avsnitt bygger vidare på det sista, vilket ger er en tydlig, stegvis väg till att lära er information om whatsApp-meddelanden för att få slagkraftiga kundrelationer.
+Adobe Journey Optimizer ger er möjlighet att kommunicera med er målgrupp på WhatsApp, en kanal som är perfekt för personaliserad kommunikation i realtid. Oavsett om du skickar uppdateringar, kampanjer eller viktig information kan den här funktionen hjälpa dig att sömlöst integrera WhatsApp i era kampanjer och resor med Meta Cloud API. Du får lära dig att konfigurera kanalen, skapa engagerande meddelanden, förhandsgranska och validera innehåll och säkerställa smidig leverans samtidigt som du följer Meta regler. Varje avsnitt bygger vidare på det sista, vilket ger er en tydlig, stegvis väg till att lära er information om whatsApp-meddelanden för att få slagkraftiga kundrelationer.
 
 ## WhatApp Documentation
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med whatsApp Messaging
 
@@ -30,7 +30,7 @@ Lär dig hur du integrerar WhatsApp med Adobe Journey Optimizer, inklusive krav,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera WhatsApp-kanalen
 
@@ -40,7 +40,7 @@ Stegvisa instruktioner för att ställa in inloggningsuppgifter för WhatsApp AP
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa whatsApp-meddelanden
 
@@ -50,7 +50,7 @@ Lär dig hur du utformar och skickar personaliserade meddelanden om whatsApp, in
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/check-circle.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/check-circle.svg)
 
 Förhandsgranska, validera och skicka meddelanden om appar
 

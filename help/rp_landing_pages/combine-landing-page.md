@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Användningsexempel för flera lösningar
 description: Användningsexempel för flera lösningar
 redpen-status: CREATED_||_2025-08-12_00-41-19
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: df3c6e57-9f76-4ce4-ad0d-c1e3c16daa8f
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # Användningsexempel för flera lösningar{#section-overview}
 
@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer lösningar kan ni smidigt integrera med andra Adobe-
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Kombinera Adobe-lösningar för att hantera innehåll
 
@@ -30,7 +30,7 @@ Lär dig hur du integrerar Adobe Journey Optimizer med andra Adobe-lösningar so
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Använd Adobe Experience Manager Assets
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du integrerar, överför och hanterar resurser från
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/images.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/images.svg)
 
 Arbeta med Adobe Stock-bilder
 
@@ -50,7 +50,7 @@ Lär dig hur du hämtar, licensierar och anpassar Adobe Stock-bilder för använ
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/pencil-ruler.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/pencil-ruler.svg)
 
 Redigera din Assets med Adobe Express
 
@@ -60,7 +60,7 @@ Lär dig hur du ändrar storlek på, beskär och tar bort bakgrunder från resur
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Arbeta med AEM Content Fragments
 
@@ -70,7 +70,7 @@ Stegvisa instruktioner för integrering av AEM Content Fragments med Adobe Journ
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Arbeta med Dynamic Media
 

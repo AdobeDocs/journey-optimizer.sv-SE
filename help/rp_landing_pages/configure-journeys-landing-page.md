@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Resekonfiguration
 description: Resekonfiguration
 redpen-status: CREATED_||_2025-08-11_21-12-10
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 9184a695-be6a-44af-b04a-124243c5aa64
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
 
 ---
-
 
 # Resekonfiguration{#section-overview}
 
@@ -20,7 +20,7 @@ Resekonfigurationen i Adobe Journey Optimizer ger er möjlighet att skapa söml�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med resekonfiguration
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar datakällor, händelser och åtgärder för att mö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Händelsekonfiguration i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Upptäck hur du konfigurerar och hanterar händelser som utlöser resor, inklusi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Data Source Configuration in Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Förstå och hantera datakällor, inklusive förkonfigurerade och externa typer,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Konfiguration och användning av anpassade åtgärder
 

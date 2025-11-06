@@ -20,7 +20,7 @@ Adobe Journey Optimizer innehåller en **avancerad uttrycksredigerare** som gör
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Använda den avancerade uttrycksredigeraren
 
@@ -30,7 +30,7 @@ Lär dig hur du använder den avancerade uttrycksredigeraren för att skapa anpa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Avancerad syntax för uttryck
 
@@ -40,7 +40,7 @@ Lär dig de syntaxregler, villkorliga instruktioner och datatyper som behövs f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Funktioner i Adobe Journey Optimizer
 
@@ -51,7 +51,7 @@ Få tillgång till en omfattande guide för funktioner för datamanipulering, vi
 
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Exempel på frågor om Journey Optimizer datauppsättningar och relaterade användningsfall
 
@@ -61,7 +61,7 @@ Använd praktiska SQL-frågeexempel för att analysera och hantera data i olika 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Exempel på SQL-frågor för dataanalys
 

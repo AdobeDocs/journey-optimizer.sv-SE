@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: SMS/MMS/RCS-kanal
 description: SMS/MMS/RCS-kanal
 redpen-status: CREATED_||_2025-08-11_20-38-50
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 1e59db2e-087f-4ce8-9d9e-99ff872c0062
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
 
 ---
-
 
 # SMS/MMS/RCS-kanal{#section-overview}
 
@@ -20,7 +20,7 @@ Tack vare SMS/MMS/RCS-kanalen i Adobe Journey Optimizer kan ni engagera kunderna
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med textmeddelanden
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar, skapar och hanterar SMS-, MMS- och RCS-meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa SMS-, MMS- och RCS-meddelanden
 
@@ -40,7 +40,7 @@ Stegvisa guider för att utforma, konfigurera och skicka personaliserade textmed
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Kontrollera och skicka textmeddelanden
 
@@ -50,7 +50,7 @@ Förhandsgranska, validera och skicka meddelanden samtidigt som ni säkerställe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Hantera avanmälan av textmeddelande
 
@@ -60,7 +60,7 @@ Säkerställ att branschstandarderna följs genom att hantera avanmälningsproce
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera SMS-underdomäner
 
@@ -70,7 +70,7 @@ Konfigurera SMS-underdomäner för meddelandeleverans, inklusive konfiguration, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Konfigurera SMS-/MMS-/RCS-kanaler
 

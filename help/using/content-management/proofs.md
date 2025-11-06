@@ -22,7 +22,7 @@ Ett korrektur är ett specifikt meddelande som gör att du kan testa ett meddela
 
 Om du vill skicka e-postkorrektur med testprofildata måste du först välja [testprofiler](test-profiles.md). Följ sedan dessa steg:
 
-1. Klicka på knappen **[!UICONTROL Send proof]** på skärmen **[!UICONTROL Simulate]**.
+1. Klicka på knappen **[!UICONTROL Simulate]** på skärmen **[!UICONTROL Send proof]**.
 
    ![](../email/assets/send-proof-button.png)
 
@@ -42,7 +42,7 @@ Om du vill skicka e-postkorrektur med testprofildata måste du först välja [te
 
    ![](../email/assets/send-proof-select.png)
 
-1. Klicka på knappen **[!UICONTROL View proofs]** på skärmen **[!UICONTROL Simulate]** för att kontrollera status.
+1. Klicka på knappen **[!UICONTROL Simulate]** på skärmen **[!UICONTROL View proofs]** för att kontrollera status.
 
    ![](../email/assets/send-proof-view.png)
 

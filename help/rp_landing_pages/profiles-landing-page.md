@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Profiler
 description: Profiler
 redpen-status: CREATED_||_2025-08-11_20-46-38
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 9fc17481-1983-4462-b904-4b24d69c797d
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
 
 ---
-
 
 # Profiler{#section-overview}
 
@@ -20,7 +20,7 @@ Profilerna i Adobe Journey Optimizer ger er möjlighet att skapa enhetliga vyer 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introduktion till profiler
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar, hanterar och använder profiler i Adobe Journey Optimize
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Så här skapar du testprofiler
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du skapar testprofiler för resetestning, förhandsg
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Arbeta med beräknade attribut
 

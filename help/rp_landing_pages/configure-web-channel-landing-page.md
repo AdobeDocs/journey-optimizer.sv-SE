@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Konfigurera webbkanal
 description: Konfigurera webbkanal
 redpen-status: CREATED_||_2025-08-11_20-39-49
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 07c6d86f-7077-4ba1-8da4-fc6752a4484d
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera webbkanal{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att konfigurera webbkanalen i Adobe Journey Optimizer kan ni leverera pers
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Förutsättningar för webbkanaler
 
@@ -30,7 +30,7 @@ Lär dig mer om de krav som krävs för att konfigurera och använda webbkanalsf
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera webbunderdomäner
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du konfigurerar, hanterar och avdelegerar webbunderd
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och konfigurera en webbkanal
 

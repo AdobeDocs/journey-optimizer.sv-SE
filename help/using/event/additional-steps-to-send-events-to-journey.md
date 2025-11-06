@@ -90,4 +90,4 @@ Här är ett exempel på en API-händelse för direktuppspelning:
 
 För att underlätta identifieringen av den plats där delen &quot;data&quot; ska klistras in kan du använda ett JSON-visualiseringsverktyg som [JSON-formatering](https://jsonformatter.curiousconcept.com){target="_blank"}.
 
-Information om hur du felsöker API:er för direktuppspelning finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"}.
+Information om hur du felsöker API:er för direktuppspelning finns i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"}.

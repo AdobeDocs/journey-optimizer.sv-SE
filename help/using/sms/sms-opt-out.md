@@ -71,6 +71,6 @@ De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och k
 
   +++ Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3440280/?captions=swe&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3427129/?learn=on)
 
   +++

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Personalisering
 description: Personalisering
 redpen-status: CREATED_||_2025-08-12_00-36-08
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: dadda702-fc45-46c6-91c5-2887ff732a95
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 1%
 
 ---
-
 
 # Personalisering{#section-overview}
 
@@ -20,7 +20,7 @@ Med Personalization i Adobe Journey Optimizer kan ni skapa skräddarsydda, slagk
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med Personalization
 
@@ -30,7 +30,7 @@ Lär dig grunderna om personalisering i Adobe Journey Optimizer, inklusive perso
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Lägg till och validera Personalization
 
@@ -40,7 +40,7 @@ Använd personaliseringsredigeraren för att skapa anpassat innehåll för e-pos
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Förstå Personalization-syntax
 
@@ -50,7 +50,7 @@ Fördjupa dig i reglerna och exemplen på Handlebars-baserad syntax för persona
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Återanvänd uttrycksfragment
 
@@ -60,7 +60,7 @@ Utnyttja återanvändbara uttrycksfragment för effektiv och konsekvent personal
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 Använd Adobe Experience Platform Data för Personalization (Beta)
 
@@ -70,7 +70,7 @@ Lär dig att använda AEP datamängder med hjälpfunktionen datasetLookup för a
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Referenshandbok för hjälpfunktioner
 

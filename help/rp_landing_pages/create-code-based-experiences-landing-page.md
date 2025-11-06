@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa kodbaserade upplevelser
 description: Skapa kodbaserade upplevelser
 redpen-status: CREATED_||_2025-08-11_20-42-15
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 571761d2-976c-4fe0-9631-23b62ba3b97c
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
 
 ---
-
 
 # Skapa kodbaserade upplevelser{#section-overview}
 
@@ -20,7 +20,7 @@ Med kodbaserade upplevelser i Adobe Journey Optimizer kan ni skapa anpassat, dyn
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Skapa och komponera kodbaserade upplevelser
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och konfigurerar kodbaserade upplevelser i Adobe Journey 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Använd redigerbara fält i kodbaserade upplevelser
 
@@ -40,7 +40,7 @@ Upptäck hur man lägger in redigerbara fält i mallar så att marknadsförarna 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Testa kodbaserade upplevelser
 
@@ -50,7 +50,7 @@ Lär dig hur du förhandsgranskar och simulerar kodbaserade upplevelser med test
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Publicera och hantera kodbaserade upplevelser
 

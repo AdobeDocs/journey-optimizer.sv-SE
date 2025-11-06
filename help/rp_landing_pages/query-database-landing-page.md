@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Fråga databasen
 description: Fråga databasen
 redpen-status: CREATED_||_2025-08-11_20-25-18
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 57ea921d-e881-44fb-b20a-a46028180e64
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
 
 ---
-
 
 # Fråga databasen{#section-overview}
 
@@ -20,7 +20,7 @@ Upptäck hur ni kan utnyttja era målgruppsdata fullt ut med Adobe Journey Optim
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Använda regelbyggaren för samordnade kampanjer
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och hanterar målgruppsanpassning och segmenteringsregler
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Så här skapar du din första regel i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Stegvis självstudiekurs om hur du skapar och validerar regler för filtrering o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Så här redigerar du uttryck i Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Lär dig bemästra uttrycksredigeraren för att manuellt definiera frågeregler 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Skapa återmarknadsföringsfrågor i Adobe Journey Optimizer
 

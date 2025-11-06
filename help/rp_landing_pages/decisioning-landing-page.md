@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Beslutsförmåga
 description: Beslutsförmåga
 redpen-status: CREATED_||_2025-08-11_21-05-27
-source-git-commit: e8b71a7efe1ca05a33bc6f33253900a58fa6665c
+exl-id: 07bdd927-059d-4000-a4dd-a9e455b26976
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
 
 ---
-
 
 # Beslutsförmåga{#section-overview}
 
@@ -20,7 +20,7 @@ Beslutsfunktionerna i Journey Optimizer ger er möjlighet att leverera de bästa
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Inledning till beslutsfunktioner
 
@@ -30,7 +30,7 @@ Läs om de verktyg och funktioner i Adobe Journey Optimizer som möjliggör pers
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Beslut i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Lär dig hur du skapar, hanterar och optimerar skräddarsytt innehåll med beslu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Beslutshantering i Adobe Journey Optimizer
 

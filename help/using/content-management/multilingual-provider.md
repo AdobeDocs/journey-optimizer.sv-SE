@@ -26,7 +26,7 @@ Adobe Journey Optimizer kan integreras med översättningsleverantörer från tr
 
 Kontrollera att du har skapat ett konto hos respektive leverantör innan du lägger till den valda översättningsprovidern.
 
-1. Navigera till **[!UICONTROL Translation]** på menyn **[!UICONTROL Content Management]**.
+1. Navigera till **[!UICONTROL Content Management]** på menyn **[!UICONTROL Translation]**.
 
 1. Gå till fliken **[!UICONTROL Providers]** och klicka på **[!UICONTROL Add Provider]**.
 

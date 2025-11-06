@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Direktmeddelande
 description: Direktmeddelande
 redpen-status: CREATED_||_2025-08-11_20-39-20
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 024fd5b5-5707-47ad-b90f-26e0d62f2fd2
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 3%
 
 ---
-
 
 # Direktmeddelande{#section-overview}
 
@@ -20,7 +20,7 @@ Med Direct Mail i Adobe Journey Optimizer kan ni nå kunder offline genom att sk
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Introduktion till kampanjer för direktreklam
 
@@ -30,7 +30,7 @@ Läs mer om direktreklamkampanjer i Adobe Journey Optimizer, inklusive extraheri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Så här skapar du en direktreklamkampanj
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar för att skapa direktreklamkampanjer och konfigurera extrah
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Kontrollera och skicka en direktreklamkampanj
 
@@ -50,7 +50,7 @@ Förhandsgranska, validera, aktivera och hantera samtycke för direktreklamkampa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera kanal för direktreklam
 

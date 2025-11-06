@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa målgrupper
 description: Skapa målgrupper
 redpen-status: CREATED_||_2025-08-11_20-45-40
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: d6d73fe7-4442-474b-8d2d-49e280c01a9e
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 1%
 
 ---
-
 
 # Skapa målgrupper{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att skapa målgrupper i Adobe Journey Optimizer kan ni definiera, hantera 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa segmentdefinitioner i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig definiera målgruppssegment, inklusive stegvisa instruktioner för att 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Kom igång med Audience Composition
 
@@ -40,7 +40,7 @@ Upptäck hur du skapar arbetsflöden som kombinerar, berikar och hanterar befint
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-upload.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/file-upload.svg)
 
 Importera målgrupper med anpassad CSV-överföring
 
@@ -50,7 +50,7 @@ Ta reda på hur du importerar målgrupper via CSV-filer och mappar attribut till
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Federerad målgruppssammansättning
 

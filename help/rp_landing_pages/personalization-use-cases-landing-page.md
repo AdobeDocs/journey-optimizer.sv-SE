@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Användningsexempel för Personalization
 description: Användningsexempel för Personalization
 redpen-status: CREATED_||_2025-08-12_00-35-09
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 1b351130-3caa-4389-9caf-1a56e263f085
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 1%
 
 ---
-
 
 # Användningsexempel för Personalization{#section-overview}
 
@@ -20,7 +20,7 @@ Tänk dig att skapa kommunikation som är så skräddarsydd för er målgrupp at
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Orderstatusmeddelande - Personalization självstudiekurs
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar personaliserade push-meddelanden för orderstatusuppdater
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Cart Abandonment Email Personalization Guide
 
@@ -40,7 +40,7 @@ Upptäck hur ni kan personalisera e-postmeddelanden om att kunden överger en va
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Exempel på förskrivning av hälsoplan E-post till Personalization
 

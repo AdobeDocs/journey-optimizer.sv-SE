@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Starta din första samordnade kampanj
 description: Starta din första samordnade kampanj
 redpen-status: CREATED_||_2025-08-11_20-24-42
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 2b553e08-5a20-4efb-895e-c8984c52d6b5
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # Starta din första samordnade kampanj{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att lansera din första Orchestrated-kampanj i Adobe Journey Optimizer kan
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Steg för steg-guide för att skapa en välstrukturerad kampanj
 
@@ -30,7 +30,7 @@ Lär dig de viktigaste stegen för att skapa, hantera och analysera en orkestrer
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och schemalägg en orkestrerad kampanj
 
@@ -40,7 +40,7 @@ Upptäck hur du skapar och konfigurerar kampanjegenskaper, körningsplaner och s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Samordna kampanjaktiviteter
 
@@ -50,7 +50,7 @@ Lär dig bemästra den visuella arbetsytan för att designa och konfigurera akti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Starta och övervaka era kampanjer
 
@@ -60,7 +60,7 @@ Lär dig hur du testar, publicerar och övervakar dina Orchestrated-kampanjer f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Rapportering för samordnade kampanjer
 

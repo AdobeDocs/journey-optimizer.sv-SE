@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa rankningar
 description: Skapa rankningar
 redpen-status: CREATED_||_2025-08-11_20-56-11
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 11edd7b2-0319-4576-9fef-042c239b25be
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Skapa rankningar{#section-overview}
 
@@ -20,7 +20,7 @@ I Adobe Journey Optimizer kan du genom att skapa rankningar prioritera hur objek
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och använda rangordningsmetoder
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och konfigurerar rankningsmetoder, inklusive formler och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Använda AI-formelverktyget
 
@@ -40,7 +40,7 @@ Lär dig hur du använder AI-formelverktyget för att skapa dynamiska rankningsf
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Förstå och implementera AI-modeller
 

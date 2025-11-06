@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skicka med Adobe lösningar
 description: Skicka med Adobe lösningar
 redpen-status: CREATED_||_2025-08-11_21-17-09
-source-git-commit: e8b71a7efe1ca05a33bc6f33253900a58fa6665c
+exl-id: a8d34150-32f1-4c58-8728-ba73b7e90ec4
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
 
 ---
-
 
 # Skicka med Adobe lösningar{#section-overview}
 
@@ -20,7 +20,7 @@ Adobe Journey Optimizer kan också skicka meddelanden via andra Adobe-lösningar
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Integrera Adobe Journey Optimizer med Adobe Campaign Standard
 
@@ -30,7 +30,7 @@ Lär dig hur du integrerar Adobe Journey Optimizer med Adobe Campaign Standard f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Integrera Adobe Journey Optimizer med Adobe Campaign v7/v8
 
@@ -40,7 +40,7 @@ Upptäck hur du ansluter Adobe Journey Optimizer med Adobe Campaign v7/v8 för t
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Integrera Adobe Journey Optimizer med Marketo Engage
 

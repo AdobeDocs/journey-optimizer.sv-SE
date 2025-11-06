@@ -10,7 +10,7 @@ exl-id: 19ec3410-761e-4a9c-a277-f105fc446d7a
 source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,15 +24,15 @@ Sekretessförfrågningar kan skapas och hanteras från menyn **[!UICONTROL Reque
 
 Mer information om Privacy Service och hur du skapar och hanterar sekretessförfrågningar finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv){target="_blank"}.
 
-<!--* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE)
-* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=sv-SE)-->
+<!--* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)-->
 
 ## Hantera enskilda dataförfrågningar som du kan skicka till Adobe Journey Optimizer {#data-privacy-requests}
 
 Du kan skicka enskilda förfrågningar om åtkomst till och radering av konsumentdata från Adobe Journey Optimizer på två sätt:
 
-* Via **Privacy Service-gränssnittet**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=sv-SE){target="_blank"}
-* Via **Privacy Service API**. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/api/overview){target="_blank"}
+* Via **Privacy Service-gränssnittet**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html){target="_blank"}
+* Via **Privacy Service API**. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/overview){target="_blank"}
   <!--More specific information on Privacy Service API [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank).-->
 
 Privacy Service stöder två typer av förfrågningar: **dataåtkomst** och **dataradering**.
@@ -51,10 +51,10 @@ De tre tjänsterna är:
 >
 >Den här handboken beskriver bara hur du gör sekretessförfrågningar för [!UICONTROL Adobe Journey Optimizer].
 >
->* Om du även planerar att göra sekretessförfrågningar för sjön med plattformsdata kan du läsa den här [handboken](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/privacy) förutom den här självstudiekursen.
+>* Om du även planerar att göra sekretessförfrågningar för sjön med plattformsdata kan du läsa den här [handboken](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) förutom den här självstudiekursen.
 >
->* Kundprofil i realtid finns i den här [guiden](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/privacy).
->* Identitetstjänsten finns i den här [handboken](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/privacy).
+>* Kundprofil i realtid finns i den här [guiden](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy).
+>* Identitetstjänsten finns i den här [handboken](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy).
 >
 >Om du vill ta bort eller få åtkomst till en begäran måste du anropa dessa enskilda system för att se till att förfrågningarna hanteras av var och en av dem. En sekretessbegäran till [!DNL Adobe Journey Optimizer] tar inte bort data från alla dessa system.
 
@@ -65,7 +65,7 @@ De tre tjänsterna är:
 Om du vill göra en begäran om åtkomst- och borttagningsdata för Adobe Journey Optimizer måste du ha:
 
 * ett Adobe-organisations-ID
-* en identitetsidentifierare för den person du vill agera på och motsvarande namnutrymmen. Mer information om identitetsnamnutrymmen i Adobe Journey Optimizer och Experience Platform finns i [översikten över identitetsnamnrymden](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* en identitetsidentifierare för den person du vill agera på och motsvarande namnutrymmen. Mer information om identitetsnamnutrymmen i Adobe Journey Optimizer och Experience Platform finns i [översikten över identitetsnamnrymden](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 
 >[!IMPORTANT]
 >

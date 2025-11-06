@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Använd Adobe Experience Platform-data
 description: Använd Adobe Experience Platform-data
 redpen-status: CREATED_||_2025-08-11_20-56-30
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 54df881d-f204-4979-89ce-45de2eb7b822
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
 
 ---
-
 
 # Använd Adobe Experience Platform-data{#section-overview}
 
@@ -20,7 +20,7 @@ Adobe Journey Optimizer ger er möjlighet att fatta smartare och snabbare beslut
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Utnyttja kontextdata i beslut
 
@@ -30,7 +30,7 @@ Lär dig integrera kontextdata från Adobe Experience Platform i Adobe Journey O
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Använda Adobe Experience Platform Data för beslut
 

@@ -71,7 +71,7 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
 >
 >Förhandsgranskning på enhet är inte tillgängligt när kontextattribut för [beslutsprinciper](../experience-decisioning/create-decision.md) eller [personalisering](../personalization/personalization-build-expressions.md) används.
 
-1. Klicka på knappen **[!UICONTROL Open preview options]** på skärmen **[!UICONTROL Simulate]**. Förhandsvisningsalternativen beror på vilken plattform du har valt i den [kodbaserade konfigurationen](code-based-configuration.md#create-code-based-configuration).
+1. Klicka på knappen **[!UICONTROL Simulate]** på skärmen **[!UICONTROL Open preview options]**. Förhandsvisningsalternativen beror på vilken plattform du har valt i den [kodbaserade konfigurationen](code-based-configuration.md#create-code-based-configuration).
 
 1. Om du använder en [webbplattform](code-based-configuration.md#web) i din kodbaserade konfiguration är det **[!UICONTROL Device preview URL]** skrivskyddade fältet ifyllt med den URL som angetts för den aktuella kanalkonfigurationen.
 
@@ -95,11 +95,11 @@ När ni skapar kodbaserade upplevelser för webbsidor eller mobilappar kan ni f�
 
    * Välj knappen **[!UICONTROL Copy link]** och dela länken med ditt team och intressenter, som kan förhandsgranska den nya upplevelsen i vilken mobilwebbläsare som helst innan ändringarna publiceras.
 
-   * Skanna QR-koden med din mobila enhet för att öppna förhandsgranskningslänken direkt i mobilprogrammet. Du måste ange PIN-koden på enheten för att kunna upprätta [Assurance](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/tutorials/implement-assurance){target="_blank"}-sessionen.
+   * Skanna QR-koden med din mobila enhet för att öppna förhandsgranskningslänken direkt i mobilprogrammet. Du måste ange PIN-koden på enheten för att kunna upprätta [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/implement-assurance){target="_blank"}-sessionen.
 
      >[!NOTE]
      >
-     >**Adobe Experience Platform Assurance** är en produkt från Adobe Experience Cloud som hjälper dig att inspektera, verifiera, simulera och validera hur du samlar in data eller levererar upplevelser i din mobilapp. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/home){target="_blank"}
+     >**Adobe Experience Platform Assurance** är en produkt från Adobe Experience Cloud som hjälper dig att inspektera, verifiera, simulera och validera hur du samlar in data eller levererar upplevelser i din mobilapp. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
 
 1. Om du använder någon [annan plattform](code-based-configuration.md#other) i din kodbaserade konfiguration väljer du den [yt-URI](code-based-surface.md#surface-uri) som du vill förhandsgranska i listrutan.
 

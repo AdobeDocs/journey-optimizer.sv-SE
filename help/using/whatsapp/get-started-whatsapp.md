@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,13 @@ I videon nedan visas hur du integrerar WhatsApp som en inbyggd kanal i Adobe Jou
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470248?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470244?learn=on)
 
 +++
+
+## Ytterligare utbildningsresurser
+
+Utforska fler videosjälvstudiekurser om meddelanden och konfiguration i whatsApp.
+
+➡️ [Självstudiekurser för whatsApp-kanal](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/whatsapp/whatsapp-introduction){target="_blank"}
 

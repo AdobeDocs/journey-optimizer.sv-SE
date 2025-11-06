@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Rapportering
 description: Rapportering
 redpen-status: CREATED_||_2025-08-11_20-54-26
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 37e906eb-8ae0-4988-93bf-00eb135199b2
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 3%
 
 ---
-
 
 # Rapportering{#section-overview}
 
@@ -20,7 +20,7 @@ Rapportering i Adobe Journey Optimizer handlar om att omvandla rådata till åtg
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Introduktion till rapportering
 
@@ -30,7 +30,7 @@ Läs om rapportfunktionerna i Adobe Journey Optimizer, inklusive live- och helti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Live-rapporter
 
@@ -40,7 +40,7 @@ Utforska rapportverktyg i realtid för att mäta och optimera resor, kampanjer, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Alla tidsrapporter
 
@@ -50,7 +50,7 @@ Förstå mätvärden, integrering med Customer Journey Analytics och verktyg fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Anpassad reserapportering
 

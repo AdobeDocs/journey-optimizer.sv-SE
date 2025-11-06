@@ -65,14 +65,14 @@ Alla data betraktas som kundens egendom och kan bara underhållas, krypteras, di
 
 Du kan använda flexibiliteten för data i [!DNL Journey Optimizer] för att uppfylla dina specifika krav för datalagring, arkivering eller borttagning:
 
-* **Dataextrahering/export**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffar eller tidsfördröjningar. [API:t för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=sv-SE){target="_blank"} ger användarna ett RESTful-gränssnitt som fokuserar på identifierbarhet och tillgänglighet för kapslade datauppsättningar i [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
+* **Dataextrahering/export**: Du kan initiera extraheringen av källdata när som helst via API:t för dataåtkomst utan straffar eller tidsfördröjningar. [API:t för dataåtkomst](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html){target="_blank"} ger användarna ett RESTful-gränssnitt som fokuserar på identifierbarhet och tillgänglighet för kapslade datauppsättningar i [!DNL Adobe Experience Platform]. <!--In the future (on roadmap), you can use file-based destinations to export and migrate log data from Adobe Journey Optimizer. -->
 
   Observera att innehåll som används i resor eller kampanjer inte kan extraheras via API- eller målmetoder som nämns ovan.
 
 <!--
 * **Profile Service Data Retention**: For Behavioral and Time series data appended to any Profile, you may choose to use Journey Optimizer's default setting of retaining this data for up to 91 days from the date of its addition to a Profile, or until an alternative time-period selected by the you. The time that Adobe keeps this data varies from contract to contract, and is outlined in an organization's data retention policy.
 
-  Learn more about Experience Event expirations in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/event-expirations.html?lang=sv-SE){target="_blank"}.
+  Learn more about Experience Event expirations in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/event-expirations.html){target="_blank"}.
 -->
 
 * **Töm- och arkiveringsmekanismer**: Tömning av data och arkivering kan definieras fritt och automatiseras i [!DNL Adobe Journey Optimizer] för att automatisera datalagringsprinciper. Det är möjligt att definiera olika strategier för åldersfördelning för olika datatabeller. Exportmekanismer kan också definieras för att automatiskt exportera åldersfördelningsdata innan de rensas eller arkiveras.

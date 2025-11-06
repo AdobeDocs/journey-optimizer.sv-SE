@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Integrera dina resor med externa system
 description: Integrera dina resor med externa system
 redpen-status: CREATED_||_2025-08-11_21-16-41
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: f61a2c42-f082-4eef-b890-8224357f215f
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
 
 ---
-
 
 # Integrera dina resor med externa system{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att integrera era resor med externa system i Adobe Journey Optimizer kan n
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Bästa praxis för integrering av externa system
 
@@ -30,7 +30,7 @@ Lär dig bästa praxis och tekniska riktlinjer för integrering av Adobe Journey
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Översikt och implementeringshandbok för taktAPI
 
@@ -40,7 +40,7 @@ Lär dig hur du skapar, konfigurerar och hanterar capping-inställningar för ex
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Begränsnings-API: Configuration and Management Guide
 

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Konfigurera landningssidor
 description: Konfigurera landningssidor
 redpen-status: CREATED_||_2025-08-12_00-37-08
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 599d9f7b-3e41-4926-95b6-f5f58255d91d
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 7%
 
 ---
-
 
 # Konfigurera landningssidor{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att konfigurera landningssidor i Adobe Journey Optimizer kan ni skapa söm
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera deldomäner för landningssidor
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar, hanterar och avdelegerar underdomäner för värdt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Definiera förinställningar för landningssida
 

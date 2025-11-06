@@ -11,8 +11,8 @@ keywords: kod, HTML, redigerare
 exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
 source-git-commit: ccfc0870a8d59d16c7f5b6b02856785aa28dd307
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '179'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Använd läget **[!UICONTROL Code your own]** för att importera råformaterat HTML och/eller koda ditt e-postinnehåll. Den här metoden kräver HTML kunskaper.
 
-➡️ [Upptäck den här funktionen i videon](#video)
+➡️ [Upptäck den här funktionen i en video](#video)
 
 >[!CAUTION]
 >

@@ -8,7 +8,8 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
-source-git-commit: c858d16ec520418148fb28ad2ecec0d3a6377ba9
+exl-id: 0b0e9344-f1ca-4aed-b143-facaa74c9b29
+source-git-commit: f5df65a0225754ab66fb2ffa33c5130f7137b644
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 3%
@@ -24,7 +25,7 @@ ht-degree: 3%
 
 När du konfigurerar språkinställningarna, enligt beskrivningen i avsnittet [Skapa språkinställningar](multilingual-manual.md#language-settings) , kan du skapa så många nya språkinställningar som behövs på menyn **[!UICONTROL Translation]** om det inte finns någon tillgänglig språkinställning för det flerspråkiga innehållet.
 
-1. Gå till **[!UICONTROL Translation]** på menyn **[!UICONTROL Content management]**.
+1. Gå till **[!UICONTROL Content management]** på menyn **[!UICONTROL Translation]**.
 
 1. Klicka på **[!UICONTROL Add locale]** på fliken **[!UICONTROL Locale dictionary]**.
 
@@ -35,4 +36,3 @@ När du konfigurerar språkinställningarna, enligt beskrivningen i avsnittet [S
 1. Klicka på **[!UICONTROL Save]** för att skapa din språkinställning.
 
    ![](assets/locale_2.png)
-

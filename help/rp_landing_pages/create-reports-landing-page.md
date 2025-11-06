@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa rapporter om beslutshantering
 description: Skapa rapporter om beslutshantering
 redpen-status: CREATED_||_2025-08-11_21-02-56
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 96be492d-5003-4954-94cb-467ec5a725bd
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
 
 ---
-
 
 # Skapa rapporter om beslutshantering{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att skapa beslutsrapporter i Adobe Journey Optimizer kan ni få värdefull
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Arbeta med beslutsledningshändelser
 
@@ -30,7 +30,7 @@ Lär dig hur du använder händelseuppsättningar för beslutshantering för rap
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Få åtkomst till och utforska beslutshändelser, XDM-fält
 

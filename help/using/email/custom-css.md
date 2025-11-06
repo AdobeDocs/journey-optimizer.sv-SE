@@ -174,7 +174,7 @@ body {
 
 Din anpassade CSS läggs till i slutet av avsnittet `<head>` som en del av en `<style>` -tagg med attributet `data-name="global-custom"`, som i exemplet nedan. På så sätt säkerställs att de anpassade formaten tillämpas globalt på innehållet.
 
-+++ Se exempel
++++ Se exempel 
 
 ```html
 <!DOCTYPE html>
@@ -235,13 +235,13 @@ Om din anpassade CSS inte används bör du överväga alternativen nedan.
 
 * Kontrollera om stiltaggen `global-custom` har attributet `data-disabled` inställt på `true`. Om så är fallet används inte den anpassade CSS:en.
 
-+++ Exempel:
+  +++ Exempel:
 
   ```html
   <style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
   ```
 
-+++
+  +++
 
 * Kontrollera att din CSS inte åsidosätts av andra CSS-regler, inklusive alla [teman](apply-email-themes.md) som tillämpas på ditt innehåll.
 
@@ -249,7 +249,7 @@ Om din anpassade CSS inte används bör du överväga alternativen nedan.
 
    * Överväg att lägga till `!important` i dina deklarationer för att säkerställa att de har företräde.
 
-+++ Exempel:
+     +++ Exempel:
 
      ```css
      .acr-Form {
@@ -257,4 +257,4 @@ Om din anpassade CSS inte används bör du överväga alternativen nedan.
      }
      ```
 
-+++
+     +++

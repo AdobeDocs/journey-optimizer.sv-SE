@@ -57,7 +57,7 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!IMPORTANT]
    >
-   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
+   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
 
    Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
@@ -79,5 +79,5 @@ En IP-värmare kan bara användas i en IP-värmeringsplan. Men samma kampanj kan
 
 >[!NOTE]
 >
->När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens status till **[!UICONTROL Stopped]** efter att planen är [markerad som slutförd](ip-warmup-execution.md#mark-as-completed).
+>När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens status till [ efter att planen är ](ip-warmup-execution.md#mark-as-completed)markerad som slutförd **[!UICONTROL Stopped]**.
 

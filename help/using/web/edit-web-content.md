@@ -37,17 +37,17 @@ Gå till följande avsnitt för att lära dig mer om varje ämne:
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
 >abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
 >title="Ange den URL som ska redigeras"
 >abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 Följ stegen nedan för att börja skapa din webbupplevelse.
 
-1. Välj **[!UICONTROL Edit content]** på fliken **[!UICONTROL Action]** i kampanjen eller webbupplevelseaktiviteten under resan.<!--change screen with rule-->
+1. Välj **[!UICONTROL Action]** på fliken **[!UICONTROL Edit content]** i kampanjen eller webbupplevelseaktiviteten under resan.<!--change screen with rule-->
 
    ![](assets/web-campaign-edit-content.png)
 
@@ -61,7 +61,7 @@ Följ stegen nedan för att börja skapa din webbupplevelse.
 
    >[!CAUTION]
    >
-   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"}. [Läs mer](web-prerequisites.md#implementation-prerequisites)
+   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}. [Läs mer](web-prerequisites.md#implementation-prerequisites)
 
 1. Klicka på **[!UICONTROL Edit web page]** för att börja redigera den. Webbdesignern visas.
 
@@ -184,4 +184,4 @@ Möjligheten att ändra enhetsstorleken är utformad för responsiva sajter som 
 
 I videon nedan visas hur du skapar en webbupplevelse med webbdesignern i [!DNL Journey Optimizer]-kampanjer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452639/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3418803/?quality=12&learn=on)

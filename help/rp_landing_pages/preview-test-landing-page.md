@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Förhandsgranska och testa innehåll
 description: Förhandsgranska och testa innehåll
 redpen-status: CREATED_||_2025-08-11_20-30-05
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: bd78e0af-573b-4880-a9f1-44467c9db159
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # Förhandsgranska och testa innehåll{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att förhandsgranska och testa innehåll i Adobe Journey Optimizer kan du 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Förhandsgranska och testa ditt innehåll i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du använder testprofiler och exempelindata för att förhandsgrans
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Välja testprofiler i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Lär dig hur du väljer och hanterar testprofiler för att förhandsgranska och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Förhandsgranska ditt innehåll med testprofiler
 
@@ -50,7 +50,7 @@ Stegvisa anvisningar för att förhandsgranska personaliserat innehåll med test
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Skicka korrektur med testprofildata
 
@@ -60,7 +60,7 @@ Testa och validera dina e-postmeddelanden genom att skicka korrektur med testpro
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/eye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/eye.svg)
 
 Testa e-poståtergivning med Litmus i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Integrera Litmus för att förhandsgranska e-poståtergivning i olika e-postklie
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Simulera och testa innehållsvariationer i Adobe Journey Optimizer
 

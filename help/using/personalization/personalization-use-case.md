@@ -110,4 +110,4 @@ I det här fallet krävs följande krav:
 
 I videon nedan visas ett liknande användningsexempel som utnyttjar sammanhangsberoende data från en resa för att personalisera ett e-postmeddelande.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428534?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425027?quality=12)

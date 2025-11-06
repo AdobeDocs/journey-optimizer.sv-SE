@@ -108,7 +108,7 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
 1. Följande gäller för förhandsvisnings-URL:en:
 
    * Om du anger en URL för en sida används den URL:en för förhandsgranskningen - du behöver inte ange en annan URL.
-   * Om du väljer en [sida som matchar regeln &#x200B;](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i en webbläsare. [Läs mer](test-code-based.md#preview-on-device)
+   * Om du väljer en [sida som matchar regeln ](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i en webbläsare. [Läs mer](test-code-based.md#preview-on-device)
 
      ![](assets/code_config_matching_rules_preview.png)
 
@@ -144,7 +144,7 @@ Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsins
 
    Förhandsgransknings-URL:en är en djup länk som konfigureras av apputvecklaren i din app. Detta garanterar att alla URL:er som matchar djuplänksschemat öppnas i appen i stället för i en mobilwebbläsare. Kontakta din apputvecklare för att få tillgång till det djuplänksschema som konfigurerats för din app.
 
-+++  Följande resurser kan hjälpa dig att konfigurera djupa länkar för appimplementeringen
+   +++  Följande resurser kan hjälpa dig att konfigurera djupa länkar för appimplementeringen
 
    * För Android:
 
@@ -156,11 +156,11 @@ Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsins
 
       * [Supporting Universal Links in your app](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app)
 
-+++
+   +++
 
    >[!NOTE]
    >
-   >Om du stöter på problem när du förhandsgranskar upplevelsen kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
+   >Om du stöter på problem när du förhandsgranskar upplevelsen kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
 
 ### Andra plattformar {#other}
 

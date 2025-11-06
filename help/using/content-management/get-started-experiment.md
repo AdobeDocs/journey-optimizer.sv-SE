@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: komma igång, börja, innehåll, experimentera
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
@@ -92,8 +92,8 @@ Om du till exempel ändrar innehållet i meddelandetexten påverkas inte öppnin
 +++Kör testet på rätt målgruppsstorlek eller tillräckligt länge
 
 Om du kör testerna längre kan du upptäcka mindre skillnader i målmåttet mellan behandlingarna. Om baslinjevärdet för målmåttet är litet behöver du större samplingsstorlekar.
-Antalet användare som måste ingå i ditt experiment beror på vilken effektstorlek du vill identifiera, variationen eller spridningen av målmåttet samt din tolerans för falska positiva och falska negativa fel. I klassiska experiment kan du använda en [exempelstorlekskalkylator](https://experienceleague.adobe.com/tools/calculator/testcalculator.html?lang=sv-SE){_blank} för att avgöra hur länge du måste köra testet.
-+++
+Antalet användare som måste ingå i ditt experiment beror på vilken effektstorlek du vill identifiera, variationen eller spridningen av målmåttet samt din tolerans för falska positiva och falska negativa fel. I klassiska experiment kan du använda en [exempelstorlekskalkylator](https://experienceleague.adobe.com/tools/calculator/testcalculator.html){_blank} för att avgöra hur länge du måste köra testet.
++++ 
 
 +++Förstå statistisk osäkerhet
 
@@ -123,13 +123,13 @@ Observera att en fullständig beskrivning av resultaten bör beakta alla tillgä
 
 Mer information om statistiska beräkningar finns på [sidan](../content-management/experiment-calculations.md).
 
-### 1. Jämför normaliserade värden {#normalized-metrics}
+### &#x200B;1. Jämför normaliserade värden {#normalized-metrics}
 
 När du jämför prestandan för två behandlingar bör du alltid jämföra normaliserade värden för att ta hänsyn till eventuella skillnader i antalet profiler som exponeras för varje behandling.
 
 Om experimentmålet till exempel är **[!UICONTROL Unique Opens]** och en viss behandling visades till 10 000 profiler med 200 unika öppningar, representerar detta **[!UICONTROL Conversion Rate]** 2 %. För icke-unika mått, t.ex. Öppnar mätvärden, visas det normaliserade måttet som **[!UICONTROL Count per Profile]**, medan det normaliserade måttet visas som **[!UICONTROL Total per Profile]** för kontinuerliga mätvärden som Totalt pris.
 
-### 2. Fokus på konfidensintervall {#confidence-intervals}
+### &#x200B;2. Fokus på konfidensintervall {#confidence-intervals}
 
 När du experimenterar med prov på dina profiler, representerar den konverteringsgrad som observerats för en given behandling en uppskattning av den verkliga underliggande konverteringsgraden.
 
@@ -141,17 +141,17 @@ Om konfidensintervallen för två behandlingar knappt överlappar varandra betyd
 
 Adobe använder 95 % Anytime Valid Confidence Intervals, eller Confidence Sequences, vilket innebär att resultatet kan visas när som helst under försöket.
 
-### 3. Förstå Lyft {#understand-lift}
+### &#x200B;3. Förstå Lyft {#understand-lift}
 
 Sammanfattningen av experimentrapporten visar **[!UICONTROL Lift over Baseline]**, vilket är ett mått på den procentuella förbättringen av konverteringsgraden för en given behandling över baslinjen. Definierat exakt är det skillnaden i prestanda mellan en given behandling och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
 
-### 3. Förstå förtroende {#understand-confidence}
+### &#x200B;3. Förstå förtroende {#understand-confidence}
 
 Även om du i första hand bör fokusera på **[!UICONTROL Confidence interval]** för utförandet av varje behandling, så visar Adobe även förtroendet, vilket är ett sannolikhetsmått på hur mycket det finns belägg för att en viss behandling är densamma som basbehandlingen. Ett högre konfidensintervall tyder på att det inte finns tillräckligt med belägg för antagandet att behandlingar före och efter utgångsvärdet har samma resultat. Mer exakt är den säkerhet som visas en sannolikhet (uttryckt i procent) att vi skulle ha observerat en mindre skillnad i konverteringsgraden mellan en viss behandling och baslinjen, om det i själva verket inte finns någon skillnad i den verkliga underliggande konverteringsgraden. När det gäller p-värden är den konfidensnivå som visas 1 - p-värde.
 
 Adobe använder &quot;Anytime Valid&quot; Confidence, och &quot;Anytime Valid&quot; p-värden som överensstämmer med de Confidence Sequences som beskrivs ovan.
 
-### 4. Statistisk betydelse
+### &#x200B;4. Statistisk betydelse
 
 Vid användning av Experiment anses ett resultat vara statistiskt signifikant om det var mycket osannolikt att det skulle ha observerats med en nollhypotes om att en viss behandling och baslinjen har identiska verkliga underliggande konverteringsgrader/resultat.
 
@@ -181,3 +181,12 @@ När du har kört din Experiment finns det flera möjliga uppföljningsåtgärde
   >[!CAUTION]
   >
   >Fler analyser innebär en större risk för att upptäcka en falsk effekt eller falskt positiv.
+
+## Ytterligare resurser
+
+* **[Skapa innehållsexperiment](content-experiment.md)** - Lär dig hur du utformar och konfigurerar A/B-tester för att optimera meddelandeprestanda.
+* **[Experimentera beräkningar](experiment-calculations.md)** - Förstå de statistiska metoder och mätvärden som används i experimentella analyser.
+* **[Flerarmad bandit kontra A/B-testning](mab-vs-ab.md)** - Jämför olika experimenteringsmetoder och när varje metod ska användas.
+* **[Experimentaccelerator](experiment-accelerator-gs.md)** - Upptäck hur du kan snabba upp experimenterandet med AI-driven optimering.
+* **[Experimentera med rapportberäkningar](experiment-report-calculations.md)** - Lär dig hur du tolkar experimentresultat och statistisk signifikans.
+* **[Experimenteringsjälvstudiekurser](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/experimentation-overview){target="_blank"}** - Utforska stegvisa videokurser om innehållsexperiment och metodtips.

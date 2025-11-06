@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Innehållsmallar
 description: Innehållsmallar
 redpen-status: CREATED_||_2025-08-12_00-38-47
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: a745742a-61c4-420e-bbd8-b3d72d782fb3
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 2%
 
 ---
-
 
 # Innehållsmallar{#section-overview}
 
@@ -20,7 +20,7 @@ Innehållsmallar i Adobe Journey Optimizer är kraftfulla verktyg som förenklar
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med innehållsmallar
 
@@ -30,7 +30,7 @@ Lär dig grunderna i att skapa och hantera innehållsmallar för att effektivise
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Få åtkomst till och hantera mallar
 
@@ -40,7 +40,7 @@ Lär dig hur du får tillgång till, ordnar och hanterar innehållsmallar, inklu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Skapa innehållsmallar
 
@@ -50,7 +50,7 @@ Steg för steg-guide om hur du skapar återanvändbara innehållsmallar från gr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Lås innehåll i e-postmallar
 
@@ -60,7 +60,7 @@ Lär dig hur du låser avsnitt eller hela mallar för att förhindra oavsiktliga
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Testa innehållsmallar
 
@@ -70,7 +70,7 @@ Validera e-postmallar genom att testa återgivning, variationer och korrektur in
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Använda innehållsmallar
 

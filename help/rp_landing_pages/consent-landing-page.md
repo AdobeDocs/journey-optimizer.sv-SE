@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Hantera medgivande
 description: Hantera medgivande
 redpen-status: CREATED_||_2025-08-11_21-19-40
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: ea8d895d-ec7e-40d9-814d-32135bcb8a2e
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 3%
 
 ---
-
 
 # Hantera medgivande{#section-overview}
 
@@ -20,7 +20,7 @@ Att hantera samtycke är avgörande för att bygga upp förtroende med er målgr
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Hantera avanmälan och Personalization-samtycke
 
@@ -30,7 +30,7 @@ Lär dig hur du hanterar avanmälningsinställningar och upprätthåller persona
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Arbeta med profiler för samtycke
 

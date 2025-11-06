@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Koppla samman system och miljöer
 description: Koppla samman system och miljöer
 redpen-status: CREATED_||_2025-08-11_21-18-12
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: fe784f79-f8a2-4091-a5f0-3e44a1838c1c
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
 
 ---
-
 
 # Koppla samman system och miljöer{#section-overview}
 
@@ -20,7 +20,7 @@ Adobe Journey Optimizer ger er möjlighet att smidigt koppla samman system och m
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Integrera Adobe Journey Optimizer med andra lösningar
 
@@ -30,7 +30,7 @@ Förstå hur Adobe Journey Optimizer kan kommunicera med andra lösningar från 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Arbeta med Adobe Journey Optimizer API:er
 
@@ -40,7 +40,7 @@ Upptäck hur ni kan använda API:er för att leverera personaliserade upplevelse
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Integrera dina resor med externa system
 
@@ -50,7 +50,7 @@ Lär dig de bästa sätten att integrera Adobe Journey Optimizer med externa sys
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Skicka med Adobe Solutions
 
@@ -60,7 +60,7 @@ Konfigurera Adobe Journey Optimizer för integrering med Adobe Campaign, Marketo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Hantering av sandlådor i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Hantera virtuella miljöer, roller och arbetsflöden effektivt med sandlådor i 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med Sources Connectors
 

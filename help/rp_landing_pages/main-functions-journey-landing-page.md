@@ -22,7 +22,7 @@ Med funktionerna i Adobe Journey Optimizer kan ni skapa dynamiska och precisa ut
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Huvudfunktioner i Adobe Journey Optimizer
 
@@ -32,7 +32,7 @@ Utforska en översikt över de viktigaste funktionerna, indelade efter typ och s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Använda funktionen inAudience
 
@@ -42,7 +42,7 @@ Förstå hur ni utvärderar medlemskap för målgrupper med hjälp av funktionen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Referens för aggregeringsfunktioner
 
@@ -52,7 +52,7 @@ Huvudaggregeringsfunktioner för att utföra åtgärder som medelvärden, antal,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/exchange-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/exchange-alt.svg)
 
 Konverteringsfunktioner
 
@@ -62,7 +62,7 @@ Omvandla datatyper med konverteringsfunktioner för att hantera indata effektivt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 Datumfunktioner i Adobe Journey Optimizer
 
@@ -72,7 +72,7 @@ Lär dig att hantera och utvärdera datum- och tidsvärden med hjälp av kraftfu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Listfunktioner i Adobe Journey Optimizer
 

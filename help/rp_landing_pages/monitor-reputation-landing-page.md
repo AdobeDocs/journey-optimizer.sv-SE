@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Övervaka e-postadresser
 description: Övervaka e-postadresser
 redpen-status: CREATED_||_2025-08-11_21-08-58
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: cbc8b2af-9df7-4523-88eb-fe73f74f2b01
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
-
 
 # Övervaka e-postadresser{#section-overview}
 
@@ -20,7 +20,7 @@ Hantera hälsotillståndet för era e-postkampanjer börjar med att övervaka de
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Hantera listan över utelämnanden
 
@@ -30,7 +30,7 @@ Lär dig hur du styr e-postleveransen genom att hantera undertryckningslistor, i
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Hantera återförsök och undertryckningslistor
 
@@ -40,7 +40,7 @@ Förstå och konfigurera återförsöksmekanismer för mjuka studsfel för att o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Konfigurera Tillåtelselista
 

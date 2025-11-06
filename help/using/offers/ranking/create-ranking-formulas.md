@@ -21,7 +21,7 @@ ht-degree: 0%
 
 **Rankningsformler** gör att du kan definiera regler som avgör vilket erbjudande som ska presenteras först för en viss placering, i stället för att ta hänsyn till offertens prioritetspoäng.
 
-Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Rankningsformler uttrycks i **PQL-syntax** och kan utnyttja profilattribut, kontextdata och attribut. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 När en rankningsformel har skapats kan du tilldela den till en placering i ett beslut. Mer information finns i [Konfigurera erbjudandeval i beslut](../offer-activities/configure-offer-selection.md).
 
@@ -185,7 +185,7 @@ Här är exempel som illustrerar hur man använder kontextdata i rankningsformle
 
 +++
 
-+++Öka prioriteten för alla erbjudanden med&quot;attribute=hot&quot; om&quot;contextData.wall=hot&quot; skickas i anropet.
++++Prioritera alla erbjudanden med&quot;attribute=hot&quot; om&quot;contextData.wall=hot&quot; skickas i anropet.
 
 >[!BEGINTABS]
 
@@ -201,7 +201,7 @@ Här är exempel som illustrerar hur man använder kontextdata i rankningsformle
 
 +++
 
-+++Content Origin Boost
++++Ökning av innehållets ursprung
 
 >[!BEGINTABS]
 

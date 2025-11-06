@@ -26,13 +26,13 @@ Med Journey Optimizer kan du identifiera vilka åtgärder som användare i syste
 
 Detta gör att ni kan öka synligheten för aktiviteter som utförs i systemet, felsöka problem och hjälpa ert företag att följa regler och policyer för företagsdatahantering.
 
-Varje åtgärd registreras med metadata i &quot;granskningsloggar&quot; som är tillgängliga i Adobe Experience Platform. Mer information om granskningsloggar, inklusive hur du visar och hanterar dem i användargränssnittet eller API, finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=sv-SE).
+Varje åtgärd registreras med metadata i &quot;granskningsloggar&quot; som är tillgängliga i Adobe Experience Platform. Mer information om granskningsloggar, inklusive hur du visar och hanterar dem i användargränssnittet eller API, finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html).
 
 ![](assets/audit-logs.png)
 
 ## Händelsetyper som hämtats av granskningsloggar {#events}
 
-Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna. Den fullständiga listan över åtgärder som har hämtats i granskningsloggarna finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=sv-SE#category).
+Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna. Den fullständiga listan över åtgärder som har hämtats i granskningsloggarna finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html#category).
 
 >[!NOTE]
 >
@@ -43,8 +43,8 @@ Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registrer
 | AJO-kampanj | Skapa/ta bort/uppdatera/aktivera/stoppa |
 | Allmänna inställningar för AJO-kanaler | Skapa/ta bort/uppdatera |
 | AJO IP-pool | Skapa/ta bort/uppdatera |
-| AJO landningssida | Create / Delete / Update / Publish / Unpublish |
-| AJO landningssida HTML mall | Skapa/ta bort/uppdatera |
+| AJO landningssida | Skapa/ta bort/uppdatera/publicera/avpublicera |
+| HTML-mall för AJO landningssida | Skapa/ta bort/uppdatera |
 | AJO förinställning för landningssida | Skapa/ta bort/uppdatera |
 | Underdomän för AJO landningssida | Skapa/ta bort/uppdatera |
 | AJO-meddelandeförinställning | Skapa/ta bort/uppdatera |
@@ -53,8 +53,8 @@ Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registrer
 | AJO SMS API-autentiseringsuppgifter | Skapa/ta bort/uppdatera |
 | AJO subdomän | Skapa/ta bort/uppdatera |
 | AJO Suppression List | Skapa/ta bort/hämta CSV |
-| Fältgrupp | Skapa/ta bort/uppdatera |
-| Resa | Create / Delete / Update / Stop / Publish |
+| Fältgrupper | Skapa/ta bort/uppdatera |
+| Resa | Skapa/ta bort/uppdatera/stoppa/publicera |
 | Anpassad reseåtgärd | Skapa/ta bort/uppdatera |
 | Resurs, datakälla | Skapa/ta bort/uppdatera |
 | Resehändelse | Skapa/ta bort/uppdatera |

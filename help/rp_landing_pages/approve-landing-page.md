@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Godkänn resor och kampanjer
 description: Godkänn resor och kampanjer
 redpen-status: CREATED_||_2025-08-11_20-30-36
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 88c48ccd-c3b7-4235-933b-7a08f5a8f346
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Godkänn resor och kampanjer{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att godkänna resor och kampanjer i Adobe Journey Optimizer säkerställs 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Konfigurera och hantera godkännande av resor och kampanjer
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar och hanterar godkännandeprocessen för resor och k
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Så här skapar och hanterar du godkännandeprinciper
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar för att skapa, konfigurera och hantera godkännandeprincip
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Hur man begär godkännande för resor och kampanjer
 
@@ -50,7 +50,7 @@ Lär dig hur du begär godkännande för resor och kampanjer, inklusive arbetsfl
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Granska och godkänn förfrågningar om resor och kampanjer
 

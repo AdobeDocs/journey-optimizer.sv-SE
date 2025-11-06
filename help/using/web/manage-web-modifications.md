@@ -60,7 +60,7 @@ Du kan enkelt hantera alla komponenter, justeringar och format som du har lagt t
 
 När du redigerar en sida med webbdesignern kan du lägga till nya ändringar i innehållet direkt från rutan **[!UICONTROL Modifications]**, utan att du behöver markera en komponent och redigera den i webbdesignergränssnittet. Följ stegen nedan.
 
-1. Klicka på knappen **[!UICONTROL More actions]** i rutan **[!UICONTROL Modifications]**.
+1. Klicka på knappen **[!UICONTROL Modifications]** i rutan **[!UICONTROL More actions]**.
 
 1. Välj **[!UICONTROL Add a modification]**.
 
@@ -181,7 +181,7 @@ Varje ändring skapar ett nytt element på panelen **[!UICONTROL Modifications]*
 
 +++
 
-+++ **Var försiktig när du använder ändringstypen &#x200B;** [!UICONTROL Page `<head>`]&#x200B;**för två kampanjer som påverkar samma URL.**
++++ **Var försiktig när du använder ändringstypen **[!UICONTROL Page `<head>`]**för två kampanjer som påverkar samma URL.**
 
 Om du använder ändringstypen **[!UICONTROL Page `<head>`]** för två kampanjer som påverkar samma URL, kommer JavaScript att matas in på sidan från båda kampanjerna. [!DNL Journey Optimizer] bestämmer automatiskt ordningen för det levererade innehållet. Kontrollera att koden inte är beroende av placering. Det är upp till dig att se till att det inte finns några konflikter i koden.
 

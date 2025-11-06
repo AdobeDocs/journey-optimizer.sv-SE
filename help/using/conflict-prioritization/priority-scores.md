@@ -72,4 +72,4 @@ Om du vill tilldela en prioritetspoäng till de inkommande åtgärder som defini
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3445005?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)

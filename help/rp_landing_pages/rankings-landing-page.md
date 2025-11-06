@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa rankningar
 description: Skapa rankningar
 redpen-status: CREATED_||_2025-08-11_21-00-00
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: c768d4b4-470d-4c53-b71b-0d09f89100e9
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
 
 ---
-
 
 # Skapa rankningar{#section-overview}
 
@@ -20,7 +20,7 @@ Rankningarna i Adobe Journey Optimizer ger er möjlighet att skräddarsy vilka e
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Komma igång med rankningar
 
@@ -30,7 +30,7 @@ Lär dig grunderna om rankning i Adobe Journey Optimizer, inklusive rankningsfor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och använda rankningsformler
 
@@ -40,7 +40,7 @@ Följ steg-för-steg-instruktionerna för att skapa rankningsformler med PQL-syn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 AI-modeller för rankning av erbjudanden
 

@@ -21,7 +21,7 @@ Genom att skapa en resa i Adobe Journey Optimizer kan ni skapa personaliserade, 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Så här skapar du din första kundresa
 
@@ -31,7 +31,7 @@ Lär dig hur du skapar, utformar, testar och publicerar din första kundresa med
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Definiera och hantera reseegenskaper
 
@@ -41,7 +41,7 @@ Konfigurera inresegler, tidsrelaterade inställningar, åtkomsthantering med mer
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Så här utformar du din resa
 
@@ -51,7 +51,7 @@ Använd dra-och-släpp-gränssnittet för att utforma personaliserade flerstegsm
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Hur du testar din resa
 
@@ -61,7 +61,7 @@ Testa dina resor med simulerade profiler och hitta fel innan du publicerar.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Testa resor med körläge för torr körning
 
@@ -71,7 +71,7 @@ Validera era resor med verkliga produktionsdata utan att kontakta kunder eller u
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Publicera en resa
 

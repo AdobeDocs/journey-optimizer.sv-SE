@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Utnyttja kontextdata
 description: Utnyttja kontextdata
 redpen-status: CREATED_||_2025-08-11_21-02-37
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 09ba2a43-f7f3-4414-b7b3-64c9932ff6c7
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
 
 ---
-
 
 # Utnyttja kontextdata{#section-overview}
 
@@ -20,7 +20,7 @@ Med kontextdata kan Adobe Journey Optimizer skapa smartare och mer personalisera
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med kontextdata
 
@@ -30,7 +30,7 @@ Lär dig hur du använder kontextdata i Adobe Journey Optimizer beslutsmotor, in
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda kontextdata i Edge-beslutsbegäranden
 
@@ -40,7 +40,7 @@ Upptäck hur ni skickar kontextdata i Edge Decisioning-begäranden om att levere
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Använda kontextdata i beslutsbegäranden och regler för behörighet
 

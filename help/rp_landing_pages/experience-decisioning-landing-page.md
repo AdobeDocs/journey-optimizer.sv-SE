@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Beslut
 description: Beslut
 redpen-status: CREATED_||_2025-08-11_20-57-38
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: cbfaffdc-79a5-4e61-b307-b670ed1e4835
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
 
 ---
-
 
 # Beslut{#section-overview}
 
@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer Decisioning-funktionen kan ni leverera personalisera
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introduktion till beslut
 
@@ -30,7 +30,7 @@ Lär dig grunderna i beslutsfattande i Adobe Journey Optimizer, inklusive skräd
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Beslutsfattarutkast och begränsningar
 
@@ -40,7 +40,7 @@ Förstå begränsningar och bästa metoder för att effektivt använda beslutspr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 API-referens: Leverera erbjudanden
 
@@ -50,7 +50,7 @@ Upptäck hur ni kan leverera erbjudanden med den kodbaserade upplevelsekanalen m
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Hantera beslutsobjekt och kataloger
 
@@ -60,7 +60,7 @@ Konfigurera och hantera beslutsunderlag, kataloger och samlingar för att organi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Skapa beslutsregler
 
@@ -70,7 +70,7 @@ Definiera beslutsregler för att exakt rikta in er på målgrupper med hjälp av
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Skapa rankningar med AI-modeller
 

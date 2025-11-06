@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Kanal i appen
 description: Kanal i appen
 redpen-status: CREATED_||_2025-08-11_20-36-05
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 79283c99-af70-4871-a72a-dec0b2e39c5a
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
-
 
 # Kanal i appen{#section-overview}
 
@@ -21,7 +21,7 @@ Med appkanalen i Adobe Journey Optimizer kan ni kommunicera med appanvändarna i
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Kanalkonfiguration i programmet
 
@@ -31,7 +31,7 @@ Stegvisa anvisningar om hur du ställer in behörigheter, leveransinställningar
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa meddelanden i appen för mobiler
 
@@ -41,7 +41,7 @@ Lär dig hur du skapar, konfigurerar och publicerar mobilmeddelanden i appen med
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Skapa meddelanden i appen för webben
 
@@ -51,7 +51,7 @@ Konfigurera och skapa webbkampanjer i appen med triggers, målgruppsanpassning o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/paint-brush.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/paint-brush.svg)
 
 Designa och anpassa innehåll i appen
 
@@ -61,7 +61,7 @@ Utforska layoutalternativen, anpassa innehållet och använd avancerad formateri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/paper-plane.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/paper-plane.svg)
 
 Kontrollera och skicka meddelanden i appen
 

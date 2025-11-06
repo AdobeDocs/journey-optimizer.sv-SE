@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Designa e-postinnehåll
 description: Designa e-postinnehåll
 redpen-status: CREATED_||_2025-08-11_20-33-11
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 21ba6677-f158-4d9d-8b01-304c4d3841ee
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
 
 ---
-
 
 # Designa e-postinnehåll{#section-overview}
 
@@ -20,7 +20,7 @@ När du utformar ditt e-postinnehåll i Adobe Journey Optimizer kan du skapa vis
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med e-postdesign
 
@@ -30,7 +30,7 @@ Lär dig grunderna i e-postdesign i Adobe Journey Optimizer, inklusive bästa pr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och optimera e-postinnehåll
 
@@ -40,7 +40,7 @@ Utforska metoder för att designa e-postinnehåll, importera HTML, koda e-post, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Designa ditt innehåll i Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Upptäck verktyg och metodtips för att använda komponenter, visuella fragment,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Redigera stil: Anpassa e-postdesign
 

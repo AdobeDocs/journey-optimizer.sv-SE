@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa komponenter
 description: Skapa komponenter
 redpen-status: CREATED_||_2025-08-11_20-58-59
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 490fa22c-40b3-4c70-b31c-a971c941a232
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Skapa komponenter{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att skapa komponenter som praktik, beslutsregler och samlingskvalificerare
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Guide till att skapa praktik för erbjudanden
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och hanterar praktik för att se till att rätt erbjudand
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Skapa beslutsregler i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Definiera beslutsregler för att personalisera erbjudanden genom att rikta in sp
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/tags.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/tags.svg)
 
 Så här skapar och hanterar du samlingskvalificerare i Adobe Journey Optimizer
 

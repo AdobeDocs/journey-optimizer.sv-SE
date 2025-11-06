@@ -66,7 +66,7 @@ eller
 
 **Användbara länkar**
 
-* Läs mer om DMARC i [Handboken om bästa praxis för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv-SE#about){target="_blank"}
+* Läs mer om DMARC i [Handboken om bästa praxis för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"}
 * Läs [Google Gmail-meddelandet](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
 * Läs upp [Yahoo! meddelande](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam){target="_blank"}
 

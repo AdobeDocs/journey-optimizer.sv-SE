@@ -9,9 +9,9 @@ exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
 keywords: konfiguration, konfigurera, meddelanden, kanal, sandlåda, optimerare
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '397'
 ht-degree: 4%
 
 ---
@@ -73,3 +73,12 @@ För att kunna skicka meddelanden måste du gå igenom konfigurationsstegen som 
    * Konfigurera **affärsregler** för att undvika att dina mottagare blir överdrivna. [Läs mer](../conflict-prioritization/rule-sets.md)
 
    * Avgör vilken e-postadress och/eller vilket telefonnummer som ska användas i prioritetsordning för dina mottagare när flera adresser/nummer är tillgängliga i Adobe Experience Platform. [Läs mer](primary-email-addresses.md)
+
+## Ytterligare resurser
+
+* **[Konfigurera kanalytor](channel-surfaces.md)** - Lär dig hur du konfigurerar och hanterar kanalytor för e-post, push, SMS och andra kanaler.
+* **[Delegering via underdomän](delegate-subdomain.md)** - Lär dig hur du delegerar underdomäner till Adobe för e-postleverans och profilering.
+* **[IP-värmare](ip-warmup-gs.md)** - Upptäck bästa praxis för IP-adresshämning för att förbättra e-postleveransen och avsändarens anseende.
+* **[Hantera undertryckningslista](manage-suppression-list.md)** - Lär dig hur du hanterar undertryckningslistor för att hantera gränser och upprätthålla listhygienen.
+* **[Konfigurera mobilappar](set-mobile-config.md)** - Konfigurera mobilappskonfigurationer för push-meddelanden och meddelanden i appen.
+* **[Konfigurationsinstruktioner](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/configuration/channel-configuration/configure-channels){target="_blank"}** - Utforska steg-för-steg-videokurser om kanalkonfiguration och metodtips.

@@ -20,7 +20,7 @@ Adobe Journey Optimizer kommunikationskanaler ger er möjlighet att kommunicera 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Introduktion till kommunikationskanaler
 
@@ -30,7 +30,7 @@ Lär dig mer om de utgående och inkommande kommunikationskanalerna i Adobe Jour
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 E-postkanal
 
@@ -40,7 +40,7 @@ Upptäck hur ni skapar, konfigurerar och optimerar e-postkampanjer, inklusive pe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
 Meddelanden i appen
 
@@ -50,7 +50,7 @@ Upptäck hur du konfigurerar, utformar och personaliserar meddelanden i appen f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Push-meddelandekanal
 
@@ -60,7 +60,7 @@ Lär dig hur du skapar, konfigurerar och skickar push-meddelanden för iOS och A
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
 
 SMS/MMS/RCS-meddelanden
 
@@ -70,7 +70,7 @@ Lär dig hur du skapar, hanterar och konfigurerar SMS-, MMS- och RCS-meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg)
 
 Direktreklamkampanjer
 
@@ -87,5 +87,5 @@ Upptäck hur ni skapar och hanterar direktreklamkampanjer, inklusive exportering
 - **[Webbkanal](web-landing-page.md)** - Lär dig hur du skapar, konfigurerar och personaliserar webbupplevelser och integrerar webbkanaler med utgående marknadsföringsstrategier.
 - **[Kodbaserad upplevelse](code-based-experience-landing-page.md)** - Dela i kodbaserade upplevelser för att leverera personaliserat innehåll över digitala plattformar med SDK och API:er.
 - **[Innehållskort](content-card-landing-page.md)** - Upptäck hur du konfigurerar, skapar och utformar innehållskort för engagerande och personaliserade meddelanden i mobilappar och på webbplatser.
-- **[WhatsApp Messaging](whatsapp-landing-page.md)** - Lär dig hur du integrerar och använder meddelanden i WhatsApp via Metas molnAPI för anpassade och kompatibla kommunikationskampanjer.
+- **[WhatsApp Messaging](whatsapp-landing-page.md)** - Lär dig hur du integrerar och använder meddelanden i WhatsApp via Meta Cloud API för anpassade och kompatibla kommunikationskampanjer.
 - **[LINE-meddelanden](line-landing-page.md)** - Upptäck hur du konfigurerar, skapar och anpassar LINE-meddelanden för effektiv kommunikation i kampanjer och resor.

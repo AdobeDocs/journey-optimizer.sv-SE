@@ -102,7 +102,7 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
 
    ![](assets/exd-uc-edit-cbe-content.png){width="90%"}
 
-1. Klicka på **[!UICONTROL Edit code]** i innehållsutgåvans fönster för att börja personalisera **Behandling A**.
+1. Klicka på **i innehållsutgåvans fönster för att börja personalisera** Behandling A **[!UICONTROL Edit code]**.
 
    ![](assets/exd-uc-experiment-treatment-a.png){width="90%"}
 
@@ -110,7 +110,7 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
 
    ![](assets/decision-code-based-create.png){width="90%"}
 
-1. Klicka på knappen **[!UICONTROL Add]** i avsnittet **[!UICONTROL Strategy sequence]** och välj **[!UICONTROL Selection strategy]**. [Läs mer](create-decision.md#select)
+1. Klicka på knappen **[!UICONTROL Strategy sequence]** i avsnittet **[!UICONTROL Add]** och välj **[!UICONTROL Selection strategy]**. [Läs mer](create-decision.md#select)
 
    ![](assets/decision-code-based-strategy-sequence.png){width="80%"}
 

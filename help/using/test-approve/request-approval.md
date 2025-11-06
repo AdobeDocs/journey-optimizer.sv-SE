@@ -4,13 +4,13 @@ description: Lär dig hur du begär godkännande innan du publicerar dina resor 
 role: User
 level: Beginner
 feature: Approval
-source-git-commit: 509ebc377ac8c24db464728b7544eaa96e8e5da4
+exl-id: 75dafecd-805d-4aa2-86c6-99e6da4d378b
+source-git-commit: f5df65a0225754ab66fb2ffa33c5130f7137b644
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
 
 ---
-
 
 # Begär godkännande {#request-approval}
 
@@ -55,6 +55,3 @@ Om godkännarna begär ändringar meddelas du via ett e-postmeddelande och en Jo
 ![](assets/changes-requested.png)
 
 Om du vill gå igenom ändringsbegäran öppnar du den i e-postmeddelandet eller aviseringen för att få åtkomst till resan eller kampanjen och göra de begärda ändringarna. När din resa/kampanj är klar att granskas igen skickar du en ny godkännandebegäran med knappen **[!UICONTROL Request approval]**.
-
-
-

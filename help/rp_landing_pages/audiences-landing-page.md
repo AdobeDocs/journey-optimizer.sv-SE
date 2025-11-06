@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Målgrupper
 description: Målgrupper
 redpen-status: CREATED_||_2025-08-11_20-46-11
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: c3b9f97d-7c2f-436c-abba-60b7c0726ee4
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 1%
 
 ---
-
 
 # Målgrupper{#section-overview}
 
@@ -20,7 +20,7 @@ Målgrupperna i Adobe Journey Optimizer hjälper er att få kontakt med rätt pe
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med målgrupper
 
@@ -30,7 +30,7 @@ Lär dig grunderna i målgruppshantering, segmentering och aktivering i Adobe Jo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och hantera målgrupper
 
@@ -40,7 +40,7 @@ Upptäck avancerade arbetsflöden för målgruppsframställning, komposition och
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Aktivera målgrupper i kampanjer och resor
 
@@ -50,7 +50,7 @@ Förstå hur ni aktiverar målgrupper och använder dem effektivt inom kampanjer
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Utnyttja anrikningsattribut
 

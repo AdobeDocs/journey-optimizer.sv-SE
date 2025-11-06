@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Dynamiskt innehåll
 description: Dynamiskt innehåll
 redpen-status: CREATED_||_2025-08-12_00-40-11
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 87d500e0-4a2c-4e22-a90c-611229b55d7c
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 1%
 
 ---
-
 
 # Dynamiskt innehåll{#section-overview}
 
@@ -20,7 +20,7 @@ Med dynamiskt innehåll i Adobe Journey Optimizer kan ni skapa personaliserade m
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med dynamiskt innehåll
 
@@ -30,7 +30,7 @@ Lär dig hur du använder villkorsregler och redigeringsprogrammet för anpassni
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och hantera villkorsregler
 
@@ -40,7 +40,7 @@ Lär dig skapa, spara och hantera villkorliga regler för att definiera dynamisk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Så här skapar du dynamiskt innehåll i Adobe Journey Optimizer
 

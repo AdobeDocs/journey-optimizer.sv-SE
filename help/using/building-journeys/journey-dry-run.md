@@ -149,4 +149,4 @@ Vid analys av **reserapporteringsmått** med hjälp av Adobe Experience Platform
 
 Lär dig hur du torkar dina resor i den här videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464686/?learn=on&enablevpops&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)

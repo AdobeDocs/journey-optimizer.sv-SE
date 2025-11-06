@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Innehållsexperiment
 description: Innehållsexperiment
 redpen-status: CREATED_||_2025-08-12_00-44-26
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 7f01dd97-ef28-498a-8a8b-d72abaa7fdd4
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
-
 
 # Innehållsexperiment{#section-overview}
 
@@ -20,7 +20,7 @@ Med hjälp av innehållsexperiment i Adobe Journey Optimizer kan ni testa och f�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med innehållsexperiment
 
@@ -30,7 +30,7 @@ Lär dig grunderna i innehållsexperiment, deras syfte och hur du konfigurerar, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och skala innehållsexperiment
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar för att skapa, konfigurera och skala experiment för att t
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Avancerade statistiska tekniker för experiment
 

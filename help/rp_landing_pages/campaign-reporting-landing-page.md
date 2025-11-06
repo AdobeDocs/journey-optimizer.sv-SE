@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Kampanjrapporter
 description: Kampanjrapporter
 redpen-status: CREATED_||_2025-08-11_20-49-35
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 01d60382-ea80-4ebd-9918-7e7821083cb9
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
 
 ---
-
 
 # Kampanjrapporter{#section-overview}
 
@@ -20,7 +20,7 @@ Kampanjrapporter i Adobe Journey Optimizer ger er möjlighet att låsa upp åtg�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Översikt över kampanjrapport
 
@@ -30,7 +30,7 @@ Lär dig hur du analyserar kampanjresultat med hjälp av nyckeltal som klickfrek
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Kodbaserad kampanjrapport
 
@@ -40,7 +40,7 @@ Förstå hur ni kan bedöma personaliserade upplevelser och AI-drivna strategier
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Kampanjrapport för innehållskort
 
@@ -50,7 +50,7 @@ Analysera Content Card-kampanjer med mätvärden som display och Click-trender, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Kampanjrapport för direktreklam
 
@@ -60,7 +60,7 @@ Utvärdera direktreklamkampanjernas effektivitet genom att analysera leveranssta
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope-open-text.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope-open-text.svg)
 
 Rapport om e-postkampanj
 
@@ -70,7 +70,7 @@ Få insikter i mätvärden för e-postprestanda, engagemangsnivåer och trattana
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/vial.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/vial.svg)
 
 Kampanjrapport för experiment
 

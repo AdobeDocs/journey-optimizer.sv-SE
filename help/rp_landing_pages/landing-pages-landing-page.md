@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Landningssidor
 description: Landningssidor
 redpen-status: CREATED_||_2025-08-12_00-37-59
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 94ad5ecb-b1f1-4fd7-8ef4-5fdbae25ae36
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%
 
 ---
-
 
 # Landningssidor{#section-overview}
 
@@ -20,7 +20,7 @@ Med landningssidor i Adobe Journey Optimizer kan du skapa skräddarsydda, frist�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Introduktion till landningssidor
 
@@ -30,7 +30,7 @@ Lär dig grunderna för landningssidor, deras funktionalitet och integrering med
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och publicera landningssidor
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar för att effektivt skapa, konfigurera, testa och publicera 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Hantera era landningssidor
 
@@ -50,7 +50,7 @@ Få tillgång till, ordna och utför åtgärder som att publicera, duplicera och
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Designa innehåll för landningssidor
 
@@ -60,7 +60,7 @@ Skapa och anpassa landningssidor med mallar, formulär och avancerade JavaScript
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och hantera prenumerationslistor
 
@@ -70,7 +70,7 @@ Ställ in prenumerationslistor för att hantera profiler som valts in och effekt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Användningsexempel för landningssida
 

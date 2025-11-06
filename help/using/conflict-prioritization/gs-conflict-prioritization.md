@@ -4,9 +4,9 @@ description: Lär dig utnyttja Journey Optimizer verktyg för konfliktlösning o
 role: User
 level: Beginner
 exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Genom att utnyttja dessa verktyg kan ni säkerställa smidigare och mer målinri
 
 Med **konfliktidentifieringsverktyget** kan du identifiera potentiella överlappningar i resor och kampanjer. Detta är avgörande eftersom alltför många samtidiga kommunikationer kan leda till att kunderna blir trötta. Med Journey Optimizer kan du övervaka element som tidslinjer, målgruppsöverlappning och kanalkonfigurationer. Genom att identifiera konflikter tidigt kan ni förfina era kampanjer för att undvika att bombardera kunder med flera meddelanden samtidigt.
 
-➡️ [Lär dig hur du upptäcker potentiella konflikter i resor och kampanjer &#x200B;](conflicts.md)
+➡️ [Lär dig hur du upptäcker potentiella konflikter i resor och kampanjer ](conflicts.md)
 
 ### Prioritetspoäng
 
@@ -68,3 +68,12 @@ Med regeluppsättningar kan du **gruppera flera regler i regeluppsättningar** o
 * **Samtidiga aktiveringar i målgruppsklassificeringsresor**
 
   När flera kvalificeringsresor aktiveras av samma publikkvalificeringshändelse, kommer antalet för att klippa in inte att vara korrekt. Om antalet ligger under gränsen fortsätter resan att godtyckas, men den kommer inte att kunna få de senaste siffrorna med samtidiga aktiveringar.
+
+## Ytterligare resurser
+
+* **[Hantera konflikter](conflicts.md)** - Lär dig hur du identifierar och löser konflikter mellan överlappande kampanjer och resor.
+* **[Ange prioritetspoäng](priority-scores.md)** - Lär dig hur du tilldelar och använder prioritetspoäng för att styra meddelandets leveransprioritet.
+* **[Konfigurera frekvensbegränsning](channel-capping.md)** - Upptäck hur du anger frekvensgränser på kanalnivå för att förhindra överskjutande meddelanden.
+* **[Skapa regeluppsättningar](rule-sets.md)** - Lär dig hur du skapar affärsregler för avancerad konflikthantering och meddelandestyrning.
+* **[Resespecifik begränsning](journey-capping.md)** - Ange regler för begränsning av antalet resor på resenivå för att styra meddelandefrekvensen på resorna.
+* **[Självstudiekurser för konflikthantering](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Utforska steg-för-steg-videokurser om konflikthantering och prioritering.

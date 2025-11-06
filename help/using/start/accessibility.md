@@ -30,7 +30,7 @@ Tillgänglighetsfunktionerna i [!DNL Adobe Journey Optimizer] ärvs från Adobe 
 * Färgkontrast
 * Validering av obligatoriska fält
 
-Hjälpmedelsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html?lang=sv-SE){target="_blank"}.
+Hjälpmedelsfunktionerna i Adobe Experience Platform är detaljerade [i den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/accessibility/features.html){target="_blank"}.
 
 Följande vanliga kortkommandon är tillgängliga i [!DNL Journey Optimizer]:
 

@@ -23,7 +23,7 @@ ht-degree: 1%
 >title="Skapa innehåll från en mall"
 >abstract="Om du vill börja skapa ditt e-postinnehåll väljer du antingen en mall som inte är klar eller en egen mall som har skapats från grunden eller sparats som en mall från ett tidigare e-postmeddelande."
 
-Använd avsnittet **[!UICONTROL Select design template]** på skärmen **[!UICONTROL Create your email]** för att börja skapa ditt innehåll från en mall.
+Använd avsnittet **[!UICONTROL Create your email]** på skärmen **[!UICONTROL Select design template]** för att börja skapa ditt innehåll från en mall.
 
 ![](assets/email_designer-templates.png)
 
@@ -41,7 +41,7 @@ Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmall
 
 1. [Öppna e-postmeddelandet för Designer](get-started-email-design.md) från e-postskärmen **[!UICONTROL Edit content]**.
 
-1. Fliken **[!UICONTROL Sample templates]** är markerad som standard på skärmen **[!UICONTROL Create your email]**.
+1. Fliken **[!UICONTROL Create your email]** är markerad som standard på skärmen **[!UICONTROL Sample templates]**.
 
 1. Om du vill använda en anpassad mall går du till fliken **[!UICONTROL Saved templates]**.
 

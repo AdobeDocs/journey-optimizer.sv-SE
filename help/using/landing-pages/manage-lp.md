@@ -8,7 +8,8 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: landningssida, landningssida
-source-git-commit: 38ed45222aad458bb581e714a9a2a0e5ed088c3f
+exl-id: cc4cfd17-4d85-4dcd-8dd9-23cc2cd898be
+source-git-commit: 27e5d1565522f5daa006a16438671ce9d559465b
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%

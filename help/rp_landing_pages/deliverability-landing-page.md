@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: E-postleverans
 description: E-postleverans
 redpen-status: CREATED_||_2025-08-11_20-34-41
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 1657152e-4a93-4664-a56f-3ea7f9e69098
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
 
 ---
-
 
 # E-postleverans{#section-overview}
 
@@ -20,7 +20,7 @@ E-postleverans handlar om att se till att era e-postmeddelanden når målgruppen
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Introduktion till e-postleverans
 
@@ -30,7 +30,7 @@ Lär dig mer om koncept, bästa praxis och verktyg för att optimera e-postlever
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förstå undertryckningslistor
 
@@ -40,7 +40,7 @@ Upptäck hur inaktiveringslistor skyddar avsändarens anseende och förbättrar 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Uppfyll nya krav från DMARC
 

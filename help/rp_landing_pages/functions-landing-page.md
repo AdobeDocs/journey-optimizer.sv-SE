@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Hjälpfunktionslista
 description: Hjälpfunktionslista
 redpen-status: CREATED_||_2025-08-12_00-34-42
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 39d68cae-8d6b-4e34-bcd9-75d9531bc6aa
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
 
 ---
-
 
 # Hjälpfunktionslista{#section-overview}
 
@@ -20,7 +20,7 @@ Hjälpfunktionerna i Adobe Journey Optimizer gör det möjligt att personalisera
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med hjälpfunktioner
 
@@ -30,7 +30,7 @@ Lär dig hur du använder hjälpfunktioner för datahantering och personaliserin
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Sammanställningsfunktionens bibliotek
 
@@ -40,7 +40,7 @@ Upptäck funktioner för att sammanfatta flera värden till ett enda värde för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Aritmetiskt funktionsbibliotek
 
@@ -50,7 +50,7 @@ Se hur aritmetiska funktioner utför beräkningar som addition, subtraktion med 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Referens för Array- och List-funktioner
 
@@ -60,7 +60,7 @@ Lär dig att hantera arrayer och listor med funktioner som att räkna, hämta di
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 Funktionsbibliotek för datum och tid
 
@@ -70,7 +70,7 @@ Använd datum- och tidsfunktioner för att hantera och formatera datum för pers
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Bibliotek för booleska funktioner och jämförelsefunktioner
 

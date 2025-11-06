@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Designa innehåll
 description: Designa innehåll
 redpen-status: CREATED_||_2025-08-11_20-32-28
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 407918ea-abc5-45b4-96b5-3afbdfa89238
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
 
 ---
-
 
 # Designa innehåll{#section-overview}
 
@@ -20,7 +20,7 @@ Att designa innehåll i Adobe Journey Optimizer handlar om att skapa personalise
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Använd innehållskomponenter
 
@@ -30,7 +30,7 @@ Lär dig hur du lägger till och anpassar komponenter som text, knappar, bilder 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/layer-group.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/layer-group.svg)
 
 Utnyttja visuella fragment
 
@@ -40,7 +40,7 @@ Upptäck hur du kan skapa återanvändbara fragment för att effektivisera e-pos
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Lägg till länkar och spåra meddelanden
 
@@ -50,7 +50,7 @@ Aktivera spårning, infoga länkar och hantera länkutseenden för att optimera 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Infoga personaliserade erbjudanden
 
@@ -60,7 +60,7 @@ Använd beslutshantering för att dynamiskt visa personaliserade erbjudanden som
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg)
 
 Generera textversion
 
@@ -70,7 +70,7 @@ Skapa och anpassa e-postversionen med vanlig text för mottagare som inte kan vi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Lägg till metadata
 

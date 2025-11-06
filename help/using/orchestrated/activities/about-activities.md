@@ -19,7 +19,7 @@ Samordnade kampanjaktiviteter grupperas i tre kategorier. Beroende på sammanhan
 
 Alla aktiviteter beskrivs i avsnitten nedan:
 
-* [Målinriktade aktiviteter](#targeting)
+* [Aktiviteter för målgruppsanpassning](#targeting)
 * [Kanalaktiviteter](#channel)
 * [Flödeskontrollaktiviteter](#flow-control)
 
@@ -33,7 +33,7 @@ Alla aktiviteter beskrivs i avsnitten nedan:
 >* Antalet aktiviteter i en orkestrerad kampanj är begränsat till 500.
 
 
-## Målinriktade aktiviteter {#targeting}
+## Aktiviteter för målgruppsanpassning {#targeting}
 
 Dessa aktiviteter är specifika för målgruppsanpassning. Med dem kan du skapa ett eller flera mål genom att definiera en målgrupp och dela eller kombinera dessa målgrupper med hjälp av skärnings-, union- eller uteslutningsåtgärder.
 

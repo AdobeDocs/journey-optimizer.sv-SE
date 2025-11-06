@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: API-referens
 description: API-referens
 redpen-status: CREATED_||_2025-08-11_21-04-46
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 0b5e61d7-14a1-446e-8cb0-8861295d6e94
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
-
 
 # API-referens{#section-overview}
 
@@ -20,7 +20,7 @@ I API-referensavsnittet i Adobe Journey Optimizer frigörs de verktyg ni behöve
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med erbjudandebiblioteks-API
 
@@ -30,7 +30,7 @@ Lär dig hur du integrerar Offer Library API för beslutshantering, med guider o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Leverera erbjudanden med Adobe Journey Optimizer API:er
 

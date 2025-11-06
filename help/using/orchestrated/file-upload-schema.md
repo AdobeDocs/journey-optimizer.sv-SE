@@ -5,7 +5,7 @@ title: Konfigurationssteg
 description: Lär dig hur du skapar ett modellbaserat schema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 version: Campaign Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 80c136409821388a4baea9286b298220c91bba7a
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
@@ -29,7 +29,7 @@ I det här avsnittet finns stegvisa anvisningar om hur du skapar ett modellbaser
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
+➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)
 
 ## Överföra en DDL-fil{#ddl-upload}
 

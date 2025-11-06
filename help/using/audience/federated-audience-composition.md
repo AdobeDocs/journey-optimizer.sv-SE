@@ -28,8 +28,8 @@ som nyligen har lagt beställningar online med varje kunds favoritrestaurang, vi
 * **Effektiv datahantering** - Minimera datakopiering, styr känslig
 dataanvändning och optimera IT-investeringar för att komplettera kanalövergripande användningsfall i realtid på Adobe
 
-Mer information finns i handboken om [Federated Audience Composition](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home){target="_blank"}.
+Mer information finns i guiden om [Federated Audience Composition](https://experienceleague.adobe.com/sv/docs/federated-audience-composition/using/home){target="_blank"}.
 
 Lär dig mer om Federated Audience Composition i video:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450886?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3432261?quality=12)

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Exportera erbjudandekatalogen
 description: Exportera erbjudandekatalogen
 redpen-status: CREATED_||_2025-08-11_21-03-50
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: b73438e0-8ebe-4188-bb63-1095dcfc4679
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 4%
 
 ---
-
 
 # Exportera erbjudandekatalogen{#section-overview}
 
@@ -20,7 +20,7 @@ Att exportera din erbjudandekatalog i Adobe Journey Optimizer är som att öppna
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Guide till att exportera erbjudandekataloger
 
@@ -30,7 +30,7 @@ Lär dig hur du exporterar din erbjudandekatalog som en datauppsättning till Ad
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Åtkomst till den exporterade erbjudandekatalogen
 
@@ -40,7 +40,7 @@ Upptäck hur du hittar och interagerar med den exporterade erbjudandekatalogen i
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Datauppsättningsreferens för personaliserade erbjudanden
 
@@ -50,7 +50,7 @@ Utforska datamängdens fält och hierarkiska schema för anpassade erbjudanden, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Översikt över beslutsdatauppsättning
 
@@ -60,7 +60,7 @@ Förstå den hierarkiska strukturen, fältdefinitionerna och metadata för beslu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Information om placeringsdatauppsättning
 
@@ -70,7 +70,7 @@ Lär dig mer om fälten, schemat och metadata för Placements-datauppsättningen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Reservation för datauppsättningsdokumentation
 

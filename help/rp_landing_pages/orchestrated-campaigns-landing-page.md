@@ -20,7 +20,7 @@ Med samordnade kampanjer i Adobe Journey Optimizer kan ni utforma och genomföra
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Introduktion till samordnade kampanjer
 
@@ -30,7 +30,7 @@ Lär dig mer om kärnfunktioner, komponenter och distinktioner i orkestrerade ka
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Gardrutor och begränsningar
 
@@ -40,7 +40,7 @@ Förstå de begränsningar och begränsningar som ska beaktas när orkestrerade 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Datakonfiguration för samordnade kampanjer
 
@@ -50,7 +50,7 @@ Konfigurera modellbaserade scheman, datamängder och kanaler för att säkerstä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Starta och hantera samordnade kampanjer
 
@@ -60,7 +60,7 @@ En stegvis guide för att skapa, samordna, övervaka och analysera din första s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Fråga databasen efter samordnade kampanjer
 
@@ -70,7 +70,7 @@ Använd databasfrågor för att effektivt rikta in, segmentera och återrikta m�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Omfattande guide till kampanjaktiviteter
 

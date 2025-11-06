@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: e-post, börja, skapa, förhandsgranska
 exl-id: 621c4256-449d-4376-96cd-02cbdcd4de05
-source-git-commit: f670eddab41c2317d2dbe76ad7aea5a77bb87f2a
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 10%
+source-wordcount: '284'
+ht-degree: 7%
 
 ---
 
@@ -109,3 +109,12 @@ E-postleveranser kan skapas:
 <p>
 </td>
 </tr></table>
+
+## Ytterligare resurser
+
+* **[Skapa ett e-postmeddelande](create-email.md)** - Lär dig hur du skapar e-postmeddelanden i kampanjer och resor med stegvisa instruktioner.
+* **[Designa e-postinnehåll](get-started-email-design.md)** - Upptäck olika sätt att designa e-postinnehåll, från scratch eller med mallar.
+* **[E-postkonfiguration](get-started-email-config.md)** - Lär dig hur du konfigurerar e-postinställningar, inklusive e-postytor, underdomäner och IP-pooler.
+* **[Anpassning och formatering av e-post](get-started-email-style.md)** - De vanligaste formateringsteknikerna, inklusive anpassade CSS-format, justering, utfyllnad och stöd för mörkt läge.
+* **[Spåra och övervaka e-post](message-tracking.md)** - Lär dig hur du spårar meddelandeöppningar, klickningar och hanterar URL-spårning för prestandaanalys.
+* **[Självstudiekurser via e-post](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/email-channel){target="_blank"}** - Utforska steg-för-steg-videokurser om e-postfunktioner och metodtips.

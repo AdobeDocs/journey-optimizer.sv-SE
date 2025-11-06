@@ -6,7 +6,8 @@ description: Lär dig mer om AI-modeller som gör det möjligt att rangordna erb
 feature: Ranking, Decision Management
 role: User
 level: Intermediate
-source-git-commit: 58f4fdf8ec3cdb609efebf5b8713f6b770ef5414
+exl-id: 07679823-2288-4528-b09a-12fd76a69482
+source-git-commit: 18a1020971dc6a1101e4e35c1523d004f3fd4188
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 3%
@@ -31,7 +32,7 @@ Med den här funktionen kan du skapa olika **AI-modeller** utifrån dina affärs
 >id="ajo_exd_ai_model_type"
 >title="Välj modelltyp"
 >abstract="Välj den typ av AI-modell som du vill skapa: **Automatisk optimering** optimerar erbjudanden baserat på tidigare erbjudanden, medan **Anpassad optimering** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjudandeprestanda."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
 
 Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 

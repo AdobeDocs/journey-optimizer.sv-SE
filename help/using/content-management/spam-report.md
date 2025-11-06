@@ -19,7 +19,7 @@ ht-degree: 0%
 >title="Rapport om skräppost"
 >abstract="Med skräppostrapporten kan du kontrollera hur ditt e-postinnehåll beter sig. Det här poängtalet anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta ditt meddelande som skräppost eller inte. Ju lägre poäng, desto bättre. Om e-postinnehållets poäng är högre än 2 bör du överväga att åtgärda problem som gör att testerna misslyckas."
 
-Du kan kontrollera hur ditt e-postinnehåll beter sig i en dedikerad skräppostrapport. Med [SpamAssassin](https://spamassassin.apache.org/){target="_blank"} kan Adobe Journey Optimizer testa ditt e-postinnehåll och ge det ett poängvärde som anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta det som skräppost eller inte.
+Du kan kontrollera hur ditt e-postinnehåll beter sig i en dedikerad skräppostrapport. Med [SpamAssassin](https://spamassassin.apache.org/){target="_blank"} kan Adobe Journey Optimizer testa ditt e-postinnehåll och ge det en poäng som anger om Internet-leverantörer eller postlådeleverantörer kommer att betrakta det som skräppost eller inte.
 
 När du redigerar eller förhandsgranskar ditt e-postinnehåll ger knappen **[!UICONTROL Spam report]** en poäng och råd för att förbättra poängen för varje enskilt objekt i listan.
 
@@ -27,7 +27,7 @@ Med den här funktionen kan du avgöra om ett meddelande kan betraktas som skrä
 
 Följ stegen nedan för att få åtkomst till **[!UICONTROL Spam report]**.
 
-1. Klicka på knappen **[!UICONTROL Spam report]** på skärmen **[!UICONTROL Simulate]**.
+1. Klicka på knappen **[!UICONTROL Simulate]** på skärmen **[!UICONTROL Spam report]**.
 
    ![](assets/spam-report-button.png)
 

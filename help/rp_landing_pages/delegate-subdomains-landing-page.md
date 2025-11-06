@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Delegera e-postunderdomäner
 description: Delegera e-postunderdomäner
 redpen-status: CREATED_||_2025-08-11_21-07-51
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 7df9b8e2-136a-4ffc-9243-53c7be026d81
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
 
 ---
-
 
 # Delegera e-postunderdomäner{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att delegera e-postunderdomäner i Adobe Journey Optimizer kan administrat
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med underdomänsdelegering
 
@@ -30,7 +30,7 @@ Lär dig fördelarna, konfigurationsmetoderna och överväganden för att delege
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Delegera en underdomän
 
@@ -40,7 +40,7 @@ Stegvis vägledning för delegering av underdomäner till Adobe, inklusive fulls
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Konfigurera DMARC-poster
 
@@ -50,7 +50,7 @@ Konfigurera DMARC-poster för att förbättra e-postsäkerheten och leveransen f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Lägg till en Google TXT-post
 
@@ -60,7 +60,7 @@ Verifiera underdomäner för Gmail-leverans genom att lägga till Google TXT-pos
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Få åtkomst till och redigera PTR-poster
 
@@ -70,7 +70,7 @@ Hantera PTR-poster för delegerade underdomäner, inklusive redigering och förs
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa IP-pooler
 

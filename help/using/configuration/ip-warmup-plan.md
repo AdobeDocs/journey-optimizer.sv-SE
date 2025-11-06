@@ -22,7 +22,7 @@ När du har skapat en eller flera [IP-värmeringskampanjer](ip-warmup-campaign.m
 
 Om du vill få åtkomst till, skapa, redigera och ta bort IP-beredskapsplanerna måste du ha behörighet som är relaterad till rollen **[!UICONTROL Deliverability Consultant]** eller IP-beredningsplanerna.
 
-+++Lär dig hur du tilldelar rollen Deliverability Consultant eller IP Warmup-planerrelaterade behörigheter
++++Lär dig hur du tilldelar rollen Deliverability Consultant eller IP Warmup-planer relaterade behörigheter
 
 Åtkomstkontroll på objektnivå gör att du kan skydda data och ge specifik åtkomst för att visa och hantera dina planer. Om ingen etikett har tilldelats din IP-värmerappsplan öppnas den för visning och redigering av alla användare.
 
@@ -32,7 +32,7 @@ Så här tilldelar du motsvarande behörighet till en specifik **[!UICONTROL Rol
 
 1. Navigera från produkten [!DNL Permissions] till menyn **[!UICONTROL Roles]** och välj den roll som du vill uppdatera med de nya **[!UICONTROL IP Warmup Configurations]** behörigheterna.
 
-1. Klicka på **[!UICONTROL Edit]** på din **[!UICONTROL Role]**-instrumentpanel.
+1. Klicka på **[!UICONTROL Role]** på din **[!UICONTROL Edit]**-instrumentpanel.
 
    ![](assets/ip_permissions_1.png)
 
@@ -48,7 +48,7 @@ Så här tilldelar du motsvarande roll till en **[!UICONTROL User]**:
 
 1. Navigera från produkten [!DNL Permissions] till menyn **[!UICONTROL Roles]** och välj den inbyggda rollen **[!UICONTROL Deliverability Consultant]**.
 
-1. Gå till fliken **[!UICONTROL Users]** från din **[!UICONTROL Role]**-kontrollpanel.
+1. Gå till fliken **[!UICONTROL Role]** från din **[!UICONTROL Users]**-kontrollpanel.
 
    ![](assets/ip_permissions_3.png)
 
@@ -167,7 +167,7 @@ voila.com;francetelecom.com;orange.com;orange.fr;wanadoo.fr;voila.fr
 laposte.net
 +++
 
-+++Italia online
++++Italia Online
 inwind.it;blu.it;virgilio.it;giallo.it;iol.it;libero.it
 +++
 
@@ -204,7 +204,7 @@ Säg att du vill ha två anpassade domängrupper:
 
 Domäner utanför Hotmail och från domängruppen Microsoft samlas i kolumnen **[!UICONTROL Others]**.
 
-1. Skapa domängruppen **Hotmail** på fliken **[!UICONTROL Custom Domain Group]**.
+1. Skapa domängruppen **[!UICONTROL Custom Domain Group]** Hotmail **på fliken**.
 
 1. Lägg till alla Hotmail-domäner på samma rad.
 
@@ -267,14 +267,14 @@ Varje domän visas nu i en egen kolumn på samma rad.
 >id="ajo_admin_ip_warmup_upload"
 >title="Ange din IP-värmerammanslutning"
 >abstract="Fyll i Excel-mallen med alla data som kommer att mata din plan, som IP-värmersfaser och målantal profiler, och överför den här."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-plan.html?lang=sv-SE#prepare-file" text="Förbered filen för IP-warmup-planen"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-plan.html#prepare-file" text="Förbered filen för IP-warmup-planen"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_surface"
 >title="Välj en marknadsföringskonfiguration"
 >abstract="Du måste välja samma konfiguration som den som valts i kampanjen som du vill koppla till din IP-värmeringsplan."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html?lang=sv-SE" text="Konfigurera kanalkonfigurationer"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html?lang=sv-SE" text="Skapa IP-värmningskampanjer"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Konfigurera kanalkonfigurationer"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Skapa IP-värmningskampanjer"
 
 Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 

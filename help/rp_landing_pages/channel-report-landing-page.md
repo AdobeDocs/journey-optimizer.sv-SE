@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Heltidsrapport
 description: Heltidsrapport
 redpen-status: CREATED_||_2025-08-11_20-52-29
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: cc658ad0-79ec-4403-bdda-18f0c428d3fa
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
 
 ---
-
 
 # Heltidsrapport{#section-overview}
 
@@ -20,7 +20,7 @@ The &#39;All Time Report&#39; in Adobe Journey Optimizer is your gateway to unde
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med All Time Reporting
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till och utnyttjar funktionen&quot;All Time Repor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Omfattande lista med mätvärden
 
@@ -40,7 +40,7 @@ Utforska detaljerade definitioner av mätvärden som används i olika leveranska
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera Customer Journey Analytics manuellt
 
@@ -50,7 +50,7 @@ Stegvisa anvisningar för att manuellt konfigurera integrering med Customer Jour
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Hantera dina rapporter
 
@@ -60,7 +60,7 @@ Lär dig hur du analyserar, anpassar, exporterar och schemalägger rapporter, li
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Konfigurera rapportdatakällor
 
@@ -70,7 +70,7 @@ Ställ in datakällor och datauppsättningar för att aktivera experimenterande 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Uteslutningsorsaker
 

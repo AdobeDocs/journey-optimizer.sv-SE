@@ -26,7 +26,7 @@ Gör så här:
 
    ![](assets/in_app_create_6.png)
 
-1. Klicka på **[!UICONTROL Start]** i fönstret **[!UICONTROL Connect to device]**.
+1. Klicka på **[!UICONTROL Connect to device]** i fönstret **[!UICONTROL Start]**.
 
 1. Ange **[!UICONTROL Base URL]** för programmet och klicka på **[!UICONTROL Next]**.
 

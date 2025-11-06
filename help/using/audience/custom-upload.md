@@ -27,8 +27,8 @@ Under den anpassade överföringsprocessen anger du det CSV-attribut som ska anv
 
 ![](assets/import-audience.png)
 
-Detaljerad information om hur du importerar målgrupper finns i Adobe Experience Platform [Segmenteringstjänstens dokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}.
+Detaljerad information om hur du importerar målgrupper finns i Adobe Experience Platform [Segmenteringstjänstens dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}.
 
 Lär dig hur du överför målgrupper i CSV-format i video:
 
->[!VIDEO](https://video.tv.adobe.com/v/3432430?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3421714?quality=12)

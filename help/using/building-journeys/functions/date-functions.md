@@ -21,7 +21,7 @@ Med datumfunktionerna kan du ändra och arbeta med datum- och tidsvärden i dina
 Använd datumfunktioner när du behöver:
 
 * Hämta aktuell tid eller aktuellt datum med specifik hantering av tidszoner ([nu](#now), [nowWithDelta](#nowWithDelta), [currentTimeInMillis](#currentTimeInMillis))
-* Kontrollera om ett datum ligger inom ett visst tidsintervall ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [in Nästa månad &#x200B;](#inNextMonths), [inNästaÅr](#inNextYears))
+* Kontrollera om ett datum ligger inom ett visst tidsintervall ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [in Nästa månad ](#inNextMonths), [inNästaÅr](#inNextYears))
 * Ändra datum- och tidskomponenter ([setHours](#setHours), [setDays](#setDays), [updateTimeZone](#updateTimeZone))
 * Tidsbaserade beräkningar och jämförelser
 * Konvertera mellan olika tidsformat och representationer

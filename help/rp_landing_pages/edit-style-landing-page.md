@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Redigera stil
 description: Redigera stil
 redpen-status: CREATED_||_2025-08-11_20-32-57
-source-git-commit: e8b71a7efe1ca05a33bc6f33253900a58fa6665c
+exl-id: c4269d5d-95fa-4b00-add5-42a26ab0de9f
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # Redigera stil{#section-overview}
 
@@ -20,7 +20,7 @@ Adobe Journey Optimizer Email Designer innehåller kraftfulla formateringsverkty
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Anpassa e-postformat
 
@@ -30,7 +30,7 @@ Lär dig justera formatparametrar som brödtext, struktur och innehållskomponen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Anpassa e-postbakgrunden
 
@@ -40,7 +40,7 @@ Lär dig hur du anger bakgrundsfärger och bilder på olika nivåer i e-poststru
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Justera lodrät justering och utfyllnad
 
@@ -50,7 +50,7 @@ Stegvisa instruktioner för att ändra lodrät justering och utfyllnad i struktu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Lägg till textbundna formatattribut
 

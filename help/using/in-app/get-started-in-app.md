@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-source-git-commit: 47482adb84e05fe41eb1c50479a8b50e00469ec4
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 1%
 
 ---
 
@@ -56,3 +56,11 @@ Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upp
 <p>
 </td>
 </tr></table>
+
+## Ytterligare resurser
+
+* **[Skapa meddelanden i appen](create-in-app.md)** - Lär dig hur du skapar och konfigurerar meddelanden i appen för mobilprogram.
+* **[Konfigurera kanal i appen](inapp-configuration.md)** - Konfigurera din meddelandekanal i appen med rätt mobilappskonfigurationer.
+* **[Designa innehåll i appen](design-in-app.md)** - Anpassa layout, format, knappar och interaktiva element i appmeddelanden.
+* **[I appen för webben](create-in-app-web.md)** - Upptäck hur du skapar och levererar meddelanden i appen för webbprogram.
+* **[Kanalsjälvstudiekurser i appen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/in-app-channel/in-app-messages-overview){target="_blank"}** - Utforska steg-för-steg-videokurser om meddelandefunktioner i appen och metodtips.

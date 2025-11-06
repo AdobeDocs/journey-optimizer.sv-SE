@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landning, landningssida, start, komma igång
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 2%

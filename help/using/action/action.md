@@ -49,7 +49,7 @@ Lär dig hur du felsöker en anpassad åtgärd [på den här dedikerade sidan](.
 
 Lär dig hur du konfigurerar anpassade åtgärder.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430273?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3428396?quality=12)
 
 ## Ytterligare resurser
 

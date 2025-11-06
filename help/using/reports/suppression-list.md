@@ -45,7 +45,7 @@ Adresser läggs till i listan över undertryckningar enligt följande:
 
 * **Mjuka studsar** skickar inte omedelbart en adress till listan över inaktiveringar, men de ökar en felräknare. Flera [försök](../configuration/retries.md) utförs sedan, och när felräknaren når tröskelvärdet läggs adressen till i listan.
 
-* Du kan också [**manuellt** lägga till en adress eller en domän &#x200B;](../configuration/manage-suppression-list.md#add-addresses-and-domains) i listan över inaktiveringar.
+* Du kan också [**manuellt** lägga till en adress eller en domän ](../configuration/manage-suppression-list.md#add-addresses-and-domains) i listan över inaktiveringar.
 
 Läs mer om hårda studsar och mjuka studsar i [det här avsnittet](#delivery-failures).
 
@@ -59,7 +59,7 @@ För varje adress visas den grundläggande orsaken till inaktiveringen och under
 >
 >Profilerna med statusen **[!UICONTROL Suppressed]** har uteslutits under meddelandeöverföringsprocessen. Det innebär att även om **reserapporterna** visar att de här profilerna har flyttats genom resan ([Läs målgrupp](../building-journeys/read-audience.md) och [meddelandeaktiviteter](../building-journeys/journeys-message.md)) så inkluderas de inte i **e-postrapporterna** i **[!UICONTROL Sent]**-måtten eftersom de filtreras ut innan e-postmeddelanden skickas.
 >
->Läs mer om [Live-rapporten](../reports/live-report.md) och [Customer Journey Analytics-rapporten](../reports/report-gs-cja.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"}.
+>Läs mer om [Live-rapporten](../reports/live-report.md) och [Customer Journey Analytics-rapporten](../reports/report-gs-cja.md). Om du vill ta reda på orsaken till alla undantagsfall kan du använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}.
 
 ### Leveransfel {#delivery-failures}
 

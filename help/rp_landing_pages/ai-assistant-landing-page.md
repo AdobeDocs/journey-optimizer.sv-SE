@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: AI Assistant för innehållsgenerering
 description: AI Assistant för innehållsgenerering
 redpen-status: CREATED_||_2025-08-12_00-42-48
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 0fdc67ab-3646-4c6e-884d-604238549c3d
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
 
 ---
-
 
 # AI Assistant för innehållsgenerering{#section-overview}
 
@@ -20,7 +20,7 @@ Adobe Journey Optimizer AI Assistant revolutionerar innehållsskapandet genom at
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med AI Assistant
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till och konfigurerar AI Assistant-funktionen fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Generering av e-postinnehåll med AI
 
@@ -40,7 +40,7 @@ Upptäck hur du använder AI Assistant för att skapa, anpassa och optimera e-po
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Generering av push-meddelandeinnehåll
 
@@ -50,7 +50,7 @@ Skapa och personalisera push-meddelandeinnehåll med AI, inklusive text och bild
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/message.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
 
 Skapa SMS-innehåll med AI
 
@@ -60,7 +60,7 @@ Använd AI Assistant för att generera och förfina SMS-innehåll som får genkl
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
 
 Skapa webbsidesinnehåll och resurser
 
@@ -70,7 +70,7 @@ Förbättra webbsidor och bilder med AI Assistant, och säkerställ att de är a
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/window-maximize.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/window-maximize.svg)
 
 Generering av landningssidor med AI
 

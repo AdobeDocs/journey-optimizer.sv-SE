@@ -21,7 +21,7 @@ ht-degree: 2%
 >id="ajo_web_designer_modifications_views"
 >title="Tillämpa ändringar på markerade vyer"
 >abstract="Ändringarna används bara för de valda vyerna. Vyer kan identifieras med läget **Bläddra** och navigera till dem. Hittar du inte den vy du söker?"
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 **Enkelsidiga program** (SPA) kan nu skapas i webbdesignerns visuella redigerare. På så sätt kan du välja vilka specifika **vyer** du vill använda webbsidesändringarna på.
 
@@ -33,9 +33,9 @@ Det krävs en engångsinstallation av utvecklaren för att definiera vyerna i Ad
 
 ## Definiera vyer i Web SDK-implementeringen {#define-views}
 
-XDM-vyer kan utnyttjas i Adobe [!DNL Journey Optimizer] för att marknadsförare ska kunna köra webbpersonaliserings- och experimenteringskampanjer på SPA via den webbaserade visuella redigeraren. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html?lang=sv-SE){target="_blank"}
+XDM-vyer kan utnyttjas i Adobe [!DNL Journey Optimizer] för att marknadsförare ska kunna köra webbpersonaliserings- och experimenteringskampanjer på SPA via den webbaserade visuella redigeraren. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
 
-Om du vill kunna komma åt och redigera vyer i användargränssnittet för [!DNL Journey Optimizer] måste du följa de steg som anges i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html?lang=sv-SE#implement-xdm-views){target="_blank"}.
+Om du vill kunna komma åt och redigera vyer i användargränssnittet för [!DNL Journey Optimizer] måste du följa de steg som anges i [det här avsnittet](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html#implement-xdm-views){target="_blank"}.
 
 ## Upptäck vyer i webbdesignern {#discover-views}
 
@@ -90,4 +90,4 @@ I den här videon beskrivs hur du:
 * Använd webbplatsändringar på flera vyer eller på alla vyer som identifierats
 * Göra satsåtgärder på ändringar
 
->[!VIDEO](https://video.tv.adobe.com/v/3446889/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424536/?quality=12&learn=on)

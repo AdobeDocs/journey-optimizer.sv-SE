@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa och hantera erbjudanden
 description: Skapa och hantera erbjudanden
 redpen-status: CREATED_||_2025-08-11_21-00-55
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 4578e8fe-341e-4678-b21f-d344f0a9a63d
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
-
 
 # Skapa och hantera erbjudanden{#section-overview}
 
@@ -20,7 +20,7 @@ Avsnittet&quot;Skapa och hantera erbjudanden&quot; i Adobe Journey Optimizer ger
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera erbjudanden i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar personaliserade erbjudanden, konfigurerar representatione
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa reserverbjudanden
 
@@ -40,7 +40,7 @@ Stegvis självstudiekurs om hur du skapar erbjudanden för kunder som inte är b
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och hantera offertsamlingar
 

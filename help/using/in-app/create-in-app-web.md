@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
 exl-id: 5a67177e-a7cf-41a8-9e7d-37f7fe3d34dc
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 3%
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 Följ stegen nedan för att konfigurera webbkanalen i appen:
 
-* Installera taggtillägget Web SDK om du vill ha stöd för Web In-app Messaging. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=sv-SE)
+* Installera taggtillägget Web SDK om du vill ha stöd för Web In-app Messaging. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html){target="_blank"}
 
-* Anpassa utlösarna. Meddelanden i appen stöder två typer av utlösare: Skickade data till plattformen och Manuella utlösare. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html?lang=sv-SE)
+* Anpassa utlösarna. Meddelanden i appen stöder två typer av utlösare: Skickade data till plattformen och Manuella utlösare. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html){target="_blank"}
 
 * Skapa en webbkonfiguration i appen. [Läs mer](inapp-configuration.md)
 
@@ -32,7 +32,7 @@ Följ stegen nedan för att konfigurera webbkanalen i appen:
 
 1. Välj typ av kampanjkörning: Schemalagd eller API-utlöst. Läs mer om kampanjtyper på [den här sidan](../campaigns/create-campaign.md#campaigntype).
 
-1. Välj **[!UICONTROL In-app message]** i listrutan **[!UICONTROL Actions]**.
+1. Välj **[!UICONTROL Actions]** i listrutan **[!UICONTROL In-app message]**.
 
    ![](assets/in_app_web_surface_1.png)
 
@@ -62,7 +62,7 @@ Följ stegen nedan för att konfigurera webbkanalen i appen:
 
       | Paket | Utlösare | Definition |
       |---|---|---|
-      | Plattform | Skickade data till plattformen | Utlöses när mobilappen utfärdar en edge experience-händelse för att skicka data till Adobe Experience Platform. Vanligtvis API-anropet [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) från AEP Edge-tillägget. |
+      | Plattform | Skickade data till plattformen | Utlöses när mobilappen utfärdar en edge experience-händelse för att skicka data till Adobe Experience Platform. Vanligtvis API-anropet [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent){target="_blank"} från AEP Edge-tillägget. |
       | Manuell | Manuell utlösare | Två associerade dataelement: en nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris), och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). |
 
       +++
@@ -75,7 +75,7 @@ Följ stegen nedan för att konfigurera webbkanalen i appen:
 
    1. Välj villkoret **[!UICONTROL And]** om du vill lägga till en anpassad **[!UICONTROL Trait]** och finjustera regeln bättre.
 
-      +++Se tillgängliga fack.
+      +++Se tillgängliga egenskaper.
 
       | Paket | Trait | Definition |
       |---|---|---|

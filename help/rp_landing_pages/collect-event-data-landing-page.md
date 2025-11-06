@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Samla in händelsedata
 description: Samla in händelsedata
 redpen-status: CREATED_||_2025-08-11_21-02-07
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: fa55faae-1258-49c7-884f-83d1c33db969
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 1%
 
 ---
-
 
 # Samla in händelsedata{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att samla in händelsedata i Adobe Journey Optimizer kan ni spåra viktiga
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Komma igång med insamling av beslutsdata
 
@@ -30,7 +30,7 @@ Lär dig grunderna i datainsamling för beslutshantering, inklusive typer av hä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Så här skapar du en datauppsättning för att samla in upplevelsehändelser
 
@@ -40,7 +40,7 @@ Följ stegvisa instruktioner för att skapa en datauppsättning och ett schema f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera händelsedatainhämtning för beslutshantering
 

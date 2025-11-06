@@ -38,9 +38,9 @@ Följ de här stegen för att skapa flerspråkigt innehåll med hjälp av manuel
 
 I det här avsnittet kan du ange olika språkområden för hantering av ditt flerspråkiga innehåll. Du kan också välja det attribut som du vill använda för att söka efter information om profilspråket
 
-1. Gå till **[!UICONTROL Channel]** > **[!UICONTROL General settings]** på menyn **[!UICONTROL Administration]**.
+1. Gå till **[!UICONTROL Administration]** > **[!UICONTROL Channel]** på menyn **[!UICONTROL General settings]**.
 
-1. Klicka på **[!UICONTROL Create language settings]** på menyn **[!UICONTROL Language settings]**.
+1. Klicka på **[!UICONTROL Language settings]** på menyn **[!UICONTROL Create language settings]**.
 
    ![](assets/language_settings_1.png)
 
@@ -77,7 +77,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
    ![](assets/multilingual-settings-6.png)
 
-   +++Förutsättningar för att använda sammanhangsberoende händelser under dina förhållanden
+   +++Förutsättningar för att använda sammanhangsberoende händelser i dina förhållanden
 
    När användarna visar ditt innehåll skickas en personaliseringsbegäran tillsammans med upplevelsehändelsen. Om du vill utnyttja sammanhangsbaserade data i dina villkor måste du bifoga ytterligare data till nyttolasten för personaliseringsbegäran. För att göra detta måste du skapa en regel i Adobe Experience Platform Data Collection som anger: Om en personaliseringsbegäran skickas, bifogar SEDAN extra data till begäran och definierar vilket attribut som ska matcha språkfältet i ditt schema.
 
@@ -85,7 +85,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
    >
    >Dessa krav är endast obligatoriska för kanalerna In-App och Content Card.
 
-   1. Gå till menyn **[!UICONTROL Rules]** i Adobe Experience Platform Data Collection och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [Datainsamlingsdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+   1. Gå till menyn **[!UICONTROL Rules]** i Adobe Experience Platform Data Collection och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [dokumentationen för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
    2. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
 

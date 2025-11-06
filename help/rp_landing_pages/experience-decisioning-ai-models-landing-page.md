@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: AI-modeller
 description: AI-modeller
 redpen-status: CREATED_||_2025-08-11_20-55-44
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 71f24028-0a4c-4945-ad74-d52472f59c1f
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
 
 ---
-
 
 # AI-modeller{#section-overview}
 
@@ -20,7 +20,7 @@ AI-modeller i Adobe Journey Optimizer hjälper er att leverera rätt erbjudande 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Kom igång med AI-modeller
 
@@ -30,7 +30,7 @@ Lär dig mer om typer, syften och steg för att skapa och använda AI-modeller f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Automatisk optimering
 
@@ -40,7 +40,7 @@ Förstå hur Automatisk optimering fungerar, inklusive Thompson-provtagning och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Anpassade optimeringsmodeller
 
@@ -50,7 +50,7 @@ Upptäck hur personaliserade optimeringsmodeller utnyttjar kunddata för att rek
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Steg-för-steg-guide: Skapa AI-modeller
 

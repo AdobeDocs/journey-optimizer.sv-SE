@@ -49,7 +49,7 @@ Du kan lägga till eller ta bort taggar från alla typer av resor (live, draft, 
 
 ## Hantera taggar
 
-Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **Taggar** under **ADMINISTRATION**. Läs den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html?lang=sv-SE).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **Taggar** under **ADMINISTRATION**. Läs den här [dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html).
 
 >[!NOTE]
 >

@@ -110,7 +110,7 @@ När du skapar en kodbaserad innehållsmall för upplevelser kan du använda en 
 
    ![](assets/cbe-template-insert-policy.png)
 
-1. Efter taggen `{{#each}}` infogar du koden som motsvarar de redigerbara formulärfält som du vill lägga till med syntaxen **inline** som beskrivs [&#x200B; ovan](#add-editable-fields). Ersätt `"name"` med ett unikt ID för att identifiera det redigerbara fältet. I det här exemplet använder du &quot;title&quot;.
+1. Efter taggen `{{#each}}` infogar du koden som motsvarar de redigerbara formulärfält som du vill lägga till med syntaxen **inline** som beskrivs [ ovan](#add-editable-fields). Ersätt `"name"` med ett unikt ID för att identifiera det redigerbara fältet. I det här exemplet använder du &quot;title&quot;.
 
    ![](assets/cbe-template-policy-inline.png){width="90%"}
 
@@ -246,4 +246,4 @@ Du kan enkelt redigera formulärfälten från en kodbaserad upplevelseresa eller
 
 Lär dig hur du lägger till redigerbara fält i kodbaserade innehållsmallar för upplevelsekanaler.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463995/?learn=on&#x26;enablevpops&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3463990/?learn=on&#x26;enablevpops)

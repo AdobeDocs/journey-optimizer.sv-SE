@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Leverera erbjudanden med API:er
 description: Leverera erbjudanden med API:er
 redpen-status: CREATED_||_2025-08-11_21-04-29
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 4f959425-2b45-4257-a0a6-09738913bd68
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # Leverera erbjudanden med API:er{#section-overview}
 
@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer Offer Delivery API:er kan ni leverera personaliserad
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Kom igång med offertleverans-API:er
 
@@ -30,7 +30,7 @@ Läs mer om de API:er som finns för att leverera personaliserade erbjudanden, i
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Leverera erbjudanden med hjälp av API:t för beslutsfattande
 
@@ -40,7 +40,7 @@ Skapa och leverera personaliserade marknadsföringserbjudanden med hjälp av API
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Leverera erbjudanden med Edge Decisioning API
 
@@ -50,7 +50,7 @@ Implementera skräddarsydda erbjudanden med Adobe Experience Platform Web SDK vi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Använda API för gruppbeslut för att leverera erbjudanden
 

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Konfigurera e-postkanal
 description: Konfigurera e-postkanal
 redpen-status: CREATED_||_2025-08-11_20-34-10
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: c9377c3c-d716-4fae-adc8-458cbe7213dd
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera e-postkanal{#section-overview}
 
@@ -20,7 +20,7 @@ Att konfigurera e-postkanalen i Adobe Journey Optimizer är er väg mot att skap
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med e-postkonfiguration
 
@@ -30,7 +30,7 @@ Lär dig de viktigaste stegen för att konfigurera e-postfunktioner, inklusive d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Definiera inställningar för e-postkonfiguration
 
@@ -40,7 +40,7 @@ Konfigurera e-postkonfigurationer för leverans, regelefterlevnad och anpassning
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Aktivera och konfigurera lista för att avbryta prenumeration
 
@@ -50,7 +50,7 @@ Lär dig hur du aktiverar funktionen &#39;Avsluta prenumeration&#39; så att du 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera parametrar för e-postmeddelandehuvud
 
@@ -60,7 +60,7 @@ Anpassa avsändare och svara på e-postadresser, hantera fel och skicka e-postme
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Konfigurera URL-spårning för e-postkanal
 
@@ -70,7 +70,7 @@ Ställ in parametrar för URL-spårning för att mäta effekten av e-postkampanj
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Inställningar för personlig e-postkonfiguration
 

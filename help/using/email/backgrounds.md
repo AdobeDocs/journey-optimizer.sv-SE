@@ -57,6 +57,6 @@ Nedan visas de tillgängliga bakgrundsinställningarna som du kan använda.
 
   >[!NOTE]
   >
-  >Detta är det vanligaste användningsfallet. Adobe rekommenderar att du ställer in bakgrundsfärger på kolumnnivå eftersom detta ger större flexibilitet när du redigerar hela e-postinnehållet.
+  >Detta är det vanligaste användningsfallet. Adobe rekommenderar att du ställer in bakgrundsfärger på kolumnnivå så att du får större flexibilitet när du redigerar hela e-postinnehållet.
 
   Du kan också ange en bakgrundsbild på kolumnnivå, men den används sällan.

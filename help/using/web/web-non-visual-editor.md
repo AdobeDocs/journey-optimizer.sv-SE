@@ -5,7 +5,8 @@ feature: Web Channel
 topic: Content Management
 role: User
 level: Experienced
-source-git-commit: d51e28261908018824bcf65180534ced836b3765
+exl-id: 00d2fc73-3ac8-421c-982a-0f3ec7e3dacd
+source-git-commit: f5df65a0225754ab66fb2ffa33c5130f7137b644
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%
@@ -22,7 +23,7 @@ I vissa fall kan det också vara enklare att använda en icke-visuell redigerare
 
 Följ stegen nedan för att skapa webbupplevelser med den icke-visuella redigeraren.
 
-1. Avmarkera alternativet **[!UICONTROL Visual editor]** på skärmen **[!UICONTROL Edit content]** i resan eller kampanjen.
+1. Avmarkera alternativet **[!UICONTROL Edit content]** på skärmen **[!UICONTROL Visual editor]** i resan eller kampanjen.
 
 1. Klicka på **[!UICONTROL Add a modification]** för att börja redigera ditt webbinnehåll.
 

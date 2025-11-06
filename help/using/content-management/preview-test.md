@@ -41,10 +41,10 @@ Journey Optimizer tillhandahåller två upplevelser för att testa ert innehåll
   Du kan använda testprofiler för att förhandsgranska ditt innehåll, skicka e-postkorrektur och kontrollera e-poståtergivningen. Om du har lagt till anpassade fält kan du kontrollera hur de visas med testprofildata. Mer information finns i följande avsnitt:
 
   ➡️ [Välj testprofiler](test-profiles.md)
-➡️ [Förhandsgranska med testprofiler &#x200B;](preview.md)
+➡️ [Förhandsgranska med testprofiler ](preview.md)
 ➡️ [Skicka e-postkorrektur](proofs.md)
 ➡️ [Kontrollera e-poståtergivning](rendering.md)
-➡️ [Förhandsgranska och korrekturgranska din e-post (video) &#x200B;](#video-preview)
+➡️ [Förhandsgranska och korrekturgranska din e-post (video) ](#video-preview)
 
 * **Testa innehållsvariationer med exempelindata**
 
@@ -68,4 +68,4 @@ Journey Optimizer tillhandahåller två upplevelser för att testa ert innehåll
 
 Lär dig hur du använder testprofiler för att testa e-poståtergivning i inkorgar, förhandsgranska dina personaliserade e-postmeddelanden mot testprofiler och skicka korrektur.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430343?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3425026?quality=12)

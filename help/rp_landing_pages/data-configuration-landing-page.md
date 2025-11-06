@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Datakonfiguration
 description: Datakonfiguration
 redpen-status: CREATED_||_2025-08-11_20-24-01
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: e1c20d14-4d0e-4ef9-9745-ca8ffe706f0b
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
-
 
 # Datakonfiguration{#section-overview}
 
@@ -20,7 +20,7 @@ Datakonfigurationen i Adobe Journey Optimizer handlar om att lägga grunden för
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Hantera relationsscheman och datauppsättningar
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och hanterar relationsscheman, konfigurerar datauppsättn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Konfigurera en måldimension
 

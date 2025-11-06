@@ -27,9 +27,9 @@ Kodbaserad upplevelse stöder alla typer av kundimplementeringar. På den här s
 
 ## Implementering på klientsidan {#client-side-implementation}
 
-Om du har en implementering på klientsidan kan du använda någon av AEP-klientens SDK: AEP Web SDK eller AEP Mobile SDK.
+Om du har en implementering på klientsidan kan du använda någon av AEP klient-SDK: AEP Web SDK eller AEP Mobile SDK.
 
-* Stegen [&#x200B; nedan](#client-side-how) beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelsegångarna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
+* Stegen [ nedan](#client-side-how) beskriver processen att hämta innehåll som publiceras på kanten av de kodbaserade upplevelseresorna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
 
 * Stegen för att implementera kodbaserad kanal med **Mobile SDK** beskrivs i [den här självstudiekursen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
@@ -39,7 +39,7 @@ Om du har en implementering på klientsidan kan du använda någon av AEP-klient
 
 ### Så här fungerar det - Web SDK {#client-side-how}
 
-1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} ingår på sidan.
+1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} ingår på sidan.
 
 1. Du måste använda kommandot `sendEvent` och ange [yt-URI](code-based-surface.md)<!--( or location/path)--> för att hämta personaliseringsinnehåll.
 
@@ -116,7 +116,7 @@ Om du har en implementering på klientsidan kan du använda någon av AEP-klient
 
 **Cookies**
 
-Cookies används för att bevara användaridentitet och klusterinformation. När du använder en implementering på klientsidan hanterar Web SDK automatiskt lagring och sändning av dessa cookies under begärans livscykel.
+Cookies används för att bevara användaridentitet och klusterinformation. När du använder en implementering på klientsidan hanterar Web SDK lagring och sändning av dessa cookies automatiskt under den begärda livscykeln.
 
 | Cookie | Syfte | Lagrad av | Skickat av |
 | ------------------------ | -------------------------------------------------------------------------- | --------- | ------- |
@@ -138,14 +138,14 @@ Begäranden till Adobe Experience Platform API krävs för att få förslag och 
 
 ## Implementering på serversidan {#server-side-implementation}
 
-Om du har en implementering på serversidan kan du använda ett API för AEP Edge Network.
+Om du har en implementering på serversidan kan du använda ett AEP Edge Network API.
 
-Stegen nedan beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelseflödena och kampanjerna i en exempelimplementering av Edge Network-API för en webbsida och visa det personaliserade innehållet.
+Stegen nedan beskriver processen att hämta det innehåll som publiceras på kanten av de kodbaserade upplevelseflödena och kampanjerna i en exempelimplementering av Edge Network API för en webbsida och visa det personaliserade innehållet.
 
 ### Så fungerar det
 
 1. Webbsidan har begärts och alla cookies som tidigare lagrats av webbläsaren som har prefixet `kndctr_` ingår.
-1. När sidan begärs från programservern skickas en händelse till [slutpunkten för interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE) för att hämta personaliseringsinnehåll. I det här exempelprogrammet används vissa hjälpmetoder för att förenkla generering och sändning av begäranden till API (se [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). Men begäran är bara en `POST` med en nyttolast som innehåller en händelse och fråga. Cookies (om de är tillgängliga) från föregående steg inkluderas i begäran i arrayen `meta>state>entries`.
+1. När sidan begärs från programservern skickas en händelse till [slutpunkten för interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) för att hämta personaliseringsinnehåll. Det här exempelprogrammet använder vissa hjälpmetoder för att förenkla skapandet och skickandet av begäranden till API:t (se [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). Men begäran är bara en `POST` med en nyttolast som innehåller en händelse och fråga. Cookies (om de är tillgängliga) från föregående steg inkluderas i begäran i arrayen `meta>state>entries`.
 
    ```javascript
    fetch(
@@ -226,7 +226,7 @@ Stegen nedan beskriver processen att hämta det innehåll som publiceras på kan
    ).then((res) => res.json());
    ```
 
-1. JSON-upplevelsen från de kodbaserade upplevelseresorna och kampanjen läses från svaret och används när svaret från HTML tas fram.
+1. JSON-upplevelsen från de kodbaserade upplevelseresorna och kampanjen läses från svaret och används när HTML-svaret produceras.
 
 1. För kodbaserade upplevelseresor och kampanjer måste displayhändelser skickas manuellt i implementeringen för att ange när resan eller kampanjinnehållet har visats. I det här exemplet skickas meddelandet på serversidan under livscykeln för begäran.
 
@@ -306,4 +306,4 @@ Begäranden till Adobe Experience Platform API krävs för att få förslag och 
 Om du har en hybridimplementering kan du kolla in länkarna nedan.
 
 * Adobe Tech Blog: [Hybrid Personalization i Adobe Experience Platform Web SDK](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}
-* SDK-dokumentation: [Hybrid-anpassning med API:t för Web SDK och Edge Network Server &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html?lang=sv-SE){target="_blank"}
+* SDK-dokumentation: [Hybrid-anpassning med API:t för Web SDK och Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html){target="_blank"}

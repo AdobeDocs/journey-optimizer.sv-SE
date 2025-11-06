@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Konfigurera push-meddelanden
 description: Konfigurera push-meddelanden
 redpen-status: CREATED_||_2025-08-11_20-36-35
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 52a58dc4-20fa-467d-b790-d9c7eecbdaf6
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera push-meddelanden{#section-overview}
 
@@ -20,7 +20,7 @@ Push-meddelanden i Adobe Journey Optimizer gör att ni kan kommunicera med er m�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Push-meddelandedataflöde och -konfiguration
 
@@ -30,7 +30,7 @@ Förstå de komponenter, arbetsflöden och det dataflöde som krävs för att le
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfiguration av push-meddelandekanal
 
@@ -40,7 +40,7 @@ Stegvisa riktlinjer för att konfigurera behörigheter, integrera appar och konf
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Snabbstart för mobil introduktion
 

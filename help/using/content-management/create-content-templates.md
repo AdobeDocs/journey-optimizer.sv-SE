@@ -95,7 +95,7 @@ Den här mallen kan nu användas när du skapar innehåll i [!DNL Journey Optimi
 
 När du utformar innehåll i en kampanj eller resa kan du spara det för framtida återanvändning. Följ stegen nedan för att göra detta.
 
-1. Klicka på knappen **[!UICONTROL Content template]** på skärmen **[!UICONTROL Edit content]**.
+1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen **[!UICONTROL Content template]**.
 
 1. Välj **[!UICONTROL Save as content template]** i listrutan.
 

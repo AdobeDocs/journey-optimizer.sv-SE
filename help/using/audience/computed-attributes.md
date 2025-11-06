@@ -38,7 +38,7 @@ Från den här skärmen kan du skapa beräknade attribut genom att skapa regler 
 
 När regeln är klar publicerar du det beräknade attributet så att det blir tillgängligt i andra tjänster längre fram i kedjan, inklusive Journey Optimizer.
 
-Detaljerad information om hur du skapar och hanterar beräknade attribut finns i [dokumentationen om beräknade attribut](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/overview.html?lang=sv-SE)
+Detaljerad information om hur du skapar och hanterar beräknade attribut finns i [dokumentationen om beräknade attribut](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/overview.html)
 
 ## Lägg till beräknade attribut i Adobe Experience Platform-datakällan {#source}
 

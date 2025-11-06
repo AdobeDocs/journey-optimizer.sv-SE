@@ -22,7 +22,7 @@ ht-degree: 0%
 >title="Direktprenumerationsrapport"
 >abstract="Med prenumerationens Live-rapport kan du bara mäta och visualisera dina prenumeranters aktivitet i realtid under de senaste 24 timmarna. Din rapport är uppdelad i olika widgetar som detaljerar dina prenumerationer och avbeställningar. Varje rapportkontrollpanel kan ändras genom att widgetar storleksändras eller tas bort."
 
-Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics i fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
+Live-rapporter, som du kommer åt från fliken Senaste 24 timmarna, visar händelser som har inträffat under de senaste 24 timmarna, med ett tidsintervall på minst två minuter från händelseförekomsten. Som jämförelse rapporterar Customer Journey Analytics fokus på händelser som inträffade för minst två timmar sedan och täcker händelser under en viss tidsperiod.
 
 Du öppnar dina rapporter genom att klicka på ikonen **[!UICONTROL Report]** i den valda prenumerationslistan.
 

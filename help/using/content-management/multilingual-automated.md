@@ -156,7 +156,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
    ![](assets/multilingual-settings-6.png)
 
-   +++Förutsättningar för att använda sammanhangsberoende händelser under dina förhållanden
+   +++Förutsättningar för att använda sammanhangsberoende händelser i dina förhållanden
 
    När användarna visar ditt innehåll skickas en personaliseringsbegäran tillsammans med upplevelsehändelsen. Om du vill utnyttja sammanhangsbaserade data i dina villkor måste du bifoga ytterligare data till nyttolasten för personaliseringsbegäran. För att göra detta måste du skapa en regel i Adobe Experience Platform Data Collection som anger: Om en personaliseringsbegäran skickas, bifogar SEDAN extra data till begäran och definierar vilket attribut som ska matcha språkfältet i ditt schema.
 
@@ -166,7 +166,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
    1. Gå till taggegenskaper i Adobe Experience Platform Data Collection.
 
-   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [dokumentationen för datainsamling](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [dokumentationen för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
    1. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
 

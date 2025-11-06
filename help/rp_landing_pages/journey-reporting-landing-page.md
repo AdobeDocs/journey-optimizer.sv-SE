@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Reserapporter
 description: Reserapporter
 redpen-status: CREATED_||_2025-08-11_20-51-07
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 1feffdeb-2bdc-4197-8c04-e4ae48879401
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
-
 
 # Reserapporter{#section-overview}
 
@@ -20,7 +20,7 @@ Reserapporter i Adobe Journey Optimizer innehåller kraftfulla verktyg för att 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Analyserar reserapporter
 
@@ -30,7 +30,7 @@ Upptäck hur ni kan analysera och optimera reseprestanda med hjälp av mätvärd
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Kodbaserade reserapporter
 
@@ -40,7 +40,7 @@ Förstå och analysera mätvärden för engagemang i kodbaserade upplevelser på
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Engagemang för innehållskort
 
@@ -50,7 +50,7 @@ Lär dig hur du mäter och utvärderar användarinteraktionen med innehållskort
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Mätvärden för direktreklam
 
@@ -60,7 +60,7 @@ Analysera och tolka viktiga mätvärden för direktreklamkampanjer, inklusive le
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope-open.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope-open.svg)
 
 E-postreserapportering
 
@@ -70,7 +70,7 @@ Få insikter om hur era kampanjer fungerar, engagerar och levererar e-post.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
 Meddelandeinsikter i appen
 

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Datakällans konfiguration
 description: Datakällans konfiguration
 redpen-status: CREATED_||_2025-08-11_21-11-22
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: e940bc83-77d2-4c5a-9895-20534d70e7ee
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
 
 ---
-
 
 # Datakällans konfiguration{#section-overview}
 
@@ -20,7 +20,7 @@ Med datakällor i Adobe Journey Optimizer kan ni ansluta till system som berikar
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med datakällor
 
@@ -30,7 +30,7 @@ Lär dig mer om datakällor, deras typer, användningsfall och fältgrupper. Inn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera en Data Source
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du konfigurerar datakällor och hanterar fältgruppe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Adobe Experience Platform Data Source
 
@@ -50,7 +50,7 @@ Lär dig konfigurera den inbyggda Adobe Experience Platform-datakällan för att
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Konfigurera externa datakällor
 

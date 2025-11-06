@@ -69,7 +69,7 @@ I tabellen **[!UICONTROL Error Reasons]** kan du identifiera de specifika fel so
 
 ## Undantagna orsaker {#exclude-reasons-directmail}
 
-[&#128279;](assets/cja-direct-excluded.png)
+[](assets/cja-direct-excluded.png)
 
 Tabellen **[!UICONTROL Exclude Reasons]** visar de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen, vilket förhindrar dem från att ta emot dina direktutskick.
 

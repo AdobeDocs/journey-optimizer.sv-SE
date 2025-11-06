@@ -21,7 +21,7 @@ ht-degree: 0%
 >id="ajo_create_fragment"
 >title="Definiera egna fragment"
 >abstract="Skapa och hantera fristående fragment för att göra innehållet återanvändbart på flera resor och i flera kampanjer."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/fragments/create-fragments" text="Skapa fragment"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/create-fragments" text="Skapa fragment"
 
 Ett fragment är en återanvändbar komponent som kan refereras i en eller flera e-postmeddelanden över [!DNL Journey Optimizer] kampanjer och resor. Med den här funktionen kan ni skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa e-postinnehåll i en förbättrad designprocess.
 
@@ -60,8 +60,8 @@ Alla skapade fragment kan nås från den vänstra menyn **[!UICONTROL Content Ma
 
 Lär dig hur du hanterar, redigerar och använder **visuella fragment** i [!DNL Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3451186/?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3419932/?quality=12)
 
 Lär dig hantera, redigera och använda **uttrycksfragment** i [!DNL Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3438921/?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424587/?quality=12)

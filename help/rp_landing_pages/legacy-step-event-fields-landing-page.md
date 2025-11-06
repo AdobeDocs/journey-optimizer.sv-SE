@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Händelsefält för äldre steg
 description: Händelsefält för äldre steg
 redpen-status: CREATED_||_2025-08-11_20-53-35
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 046a5e06-a827-4194-be1c-e6546a8da747
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
-
 
 # Händelsefält för äldre steg{#section-overview}
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Förstå äldre fält
 
@@ -30,7 +30,7 @@ Lär dig mer om äldre steg-händelsefält i Adobe Journey Optimizer, inklusive 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Översikt över resefält
 
@@ -40,7 +40,7 @@ Upptäck fälten inom reseschemat, deras typer och hur de stöder rapportering o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Vanliga fält för resesegmenthändelser
 
@@ -50,7 +50,7 @@ Hitta viktiga fält som delas över hela resanStepEvent och travelStepProfileEve
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Körningsfält för åtgärd
 
@@ -60,7 +60,7 @@ Förstå fält som rör körning av åtgärder i progressStep-händelser, inklus
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Datainhämtningsfält
 
@@ -70,7 +70,7 @@ Lär dig mer om fälten som är kopplade till datainhämtning under stegbearbetn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 JourneyStep-identitetsfält
 

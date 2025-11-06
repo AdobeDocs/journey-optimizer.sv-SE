@@ -33,7 +33,7 @@ Tack vare Adobe Express integrering i Adobe Journey Optimizer kan du enkelt komm
 >
 >Adobe Express integrering i Adobe Journey Optimizer kan för närvarande inte användas tillsammans med hälso- och sjukvårdsskölden eller skölden för skydd av privatlivet och säkerheten.
 
-Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/se/express/user-guide.html).
+Mer information om Adobe Express finns i [den här dokumentationen](https://helpx.adobe.com/express/user-guide.html).
 
 Du kommer åt **[!DNL Adobe Express]**-menyn genom att gå till dina **bildinställningar** från e-post-Designer och klicka på **[!UICONTROL Edit in Adobe Express]**.
 
@@ -49,7 +49,7 @@ Med Enterprise-licens har man full tillgång till Adobe Express Web Editor där 
 
 ![](assets/express-licence.png)
 
-Mer information om tillgängliga användningsexempel för användare med en Enterprise-licens för Adobe Express finns i [Adobe Express webbdokumentation](https://helpx.adobe.com/se/express/web.html).
+Mer information om tillgängliga användningsexempel för användare med en Enterprise-licens för Adobe Express finns i [Adobe Express webbdokumentation](https://helpx.adobe.com/express/web.html).
 
 ## Använda Adobe Express utan Enterprise License  {#edit}
 
@@ -148,7 +148,7 @@ Din bild är nu klar att användas i ditt innehåll.
 
 Lär dig hur du redigerar resurser i Adobe Journey Optimizer med Adobe Express verktyg.
 
->[!VIDEO](https://video.tv.adobe.com/v/3455527/?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3455523/?quality=12)
 
 
 

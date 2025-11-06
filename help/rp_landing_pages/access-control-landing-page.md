@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Åtkomstkontroll
 description: Åtkomstkontroll
 redpen-status: CREATED_||_2025-08-11_21-19-16
-source-git-commit: e8b71a7efe1ca05a33bc6f33253900a58fa6665c
+exl-id: 812d29b1-8ef3-4f41-8a32-bf2839f924a1
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 3%
 
 ---
-
 
 # Åtkomstkontroll{#section-overview}
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med åtkomstkontroll
 
@@ -30,7 +30,7 @@ Lär dig begreppen och processerna för att hantera användarbehörigheter, roll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Hantera användare och roller
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du tilldelar, redigerar och skapar roller som styr a
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Inbyggda roller
 
@@ -50,7 +50,7 @@ Upptäck de fördefinierade rollerna och tillhörande behörigheter för att eff
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Inbyggda behörigheter
 
@@ -60,7 +60,7 @@ Förstå tillgängliga behörigheter och deras funktioner för att konfigurera r
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Behörighetsnivåer
 
@@ -70,7 +70,7 @@ Lär dig mer om behörigheter på hög och låg nivå och hur de ger exakt kontr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Attributbaserad åtkomstkontroll
 

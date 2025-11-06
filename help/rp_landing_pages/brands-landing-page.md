@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Varumärken
 description: Varumärken
 redpen-status: CREATED_||_2025-08-12_00-41-41
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: f1e3cb9d-83a8-48af-9121-4ebc56dce251
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
-
 
 # Varumärken{#section-overview}
 
@@ -20,7 +20,7 @@ I Adobe Journey Optimizer ger funktionen&quot;Varumärke&quot; er möjlighet att
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och hantera varumärkesriktlinjer
 
@@ -30,7 +30,7 @@ Lär dig definiera, anpassa och underhålla varumärkesriktlinjer för enhetlig 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Utvärdera er poäng för varumärkesjustering
 

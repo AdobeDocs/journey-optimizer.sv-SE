@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Innehållskort
 description: Innehållskort
 redpen-status: CREATED_||_2025-08-11_20-43-30
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+exl-id: 4916bc53-a6d7-4d11-9a7f-3acf920c7a93
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
 
 ---
-
 
 # Innehållskort{#section-overview}
 
@@ -23,7 +23,7 @@ Med den här funktionen kan marknadsförarna presentera relevant, multimediemate
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera kanal för innehållskort
 
@@ -33,7 +33,7 @@ Konfigurera och integrera Content Cards-kanalen för webb-, mobil- och kioskplat
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och konfigurera innehållskort
 
@@ -43,7 +43,7 @@ Stegvis självstudiekurs för att skapa, anpassa och implementera innehållskort
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Design Content Cards
 

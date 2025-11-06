@@ -6,10 +6,10 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: 64f6bd0e-f910-469b-b089-570668d4c4f2
-source-git-commit: c24dc217567cc65f8ce0dc79d648f016cd8ad740
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '152'
+ht-degree: 1%
 
 ---
 
@@ -46,3 +46,9 @@ Med den här funktionen kan marknadsförarna presentera relevant, multimediemate
 <p>
 </td>
 </tr></table>
+
+## Ytterligare resurser
+
+* **[Innehållskort på landningssidor](content-card-lp.md)** - Upptäck hur du implementerar innehållskort på landningssidor för ökat engagemang.
+* **[Innehållskortsrapportering](content-card-report.md)** - Spåra och analysera innehållskortets prestanda med detaljerade mått och insikter.
+* **[Självstudiekurser för innehållskort](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/content-cards/create-content-cards){target="_blank"}** - Utforska steg-för-steg-videokurser om innehållskortsfunktioner och bästa praxis.

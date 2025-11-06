@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: API-utlösta kampanjer
 description: API-utlösta kampanjer
 redpen-status: CREATED_||_2025-08-11_20-23-06
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: f98e85b4-8d8a-4a9a-b814-59aa3759e534
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
 
 ---
-
 
 # API-utlösta kampanjer{#section-overview}
 
@@ -20,7 +20,7 @@ Med API-utlösta kampanjer i Adobe Journey Optimizer kan ni leverera personalise
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och hantera API-utlösta kampanjer
 
@@ -30,7 +30,7 @@ Lär dig skapa, konfigurera och hantera API-utlösta kampanjer i Adobe Journey O
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Definiera API-utlösta kampanjegenskaper
 
@@ -40,7 +40,7 @@ Följ stegvisa instruktioner för att definiera kampanjegenskaper som namngivnin
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera den API-utlösta kampanjåtgärden
 
@@ -50,7 +50,7 @@ Lär dig hur du konfigurerar åtgärder, väljer kommunikationskanaler, optimera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Redigera och anpassa API-utlöst kampanjinnehåll
 
@@ -60,7 +60,7 @@ Anpassa och personalisera kampanjinnehåll med kontextuella data. Lär dig utfor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
 
 Definiera den API-utlösta kampanjmålgruppen
 
@@ -70,7 +70,7 @@ Ställ in kampanjmålgruppen genom att välja profiler, konfigurera identitetsty
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 Schemalägg en API-utlöst kampanj
 

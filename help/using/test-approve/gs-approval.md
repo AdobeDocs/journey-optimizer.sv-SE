@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: 92d1439e-5cac-4e7d-85f8-ebf432e9ef7c
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Alla användare som redan har tilldelats den här rollen får sina behörigheter
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
 
@@ -83,3 +83,10 @@ Den globala godkännandeprocessen är följande:
 Du kan övervaka alla begäranden om godkännande och ändring som har skickats in för en viss resa eller kampanj. Det gör du genom att klicka på ikonen **[!UICONTROL Show Audit Trail]** som finns i det övre högra avsnittet på arbetsytan för resan eller på granskningsskärmen för kampanjer.
 
 ![](assets/monitor-requests.png)
+
+## Ytterligare resurser
+
+* **[Skapa godkännandeprinciper](approval-policies.md)** - Lär dig hur du ställer in godkännandeprinciper för att framtvinga granskningsarbetsflöden för kampanjer och resor.
+* **[Begär godkännande](request-approval.md)** - Lär dig hur du skickar in innehåll för godkännande och spårar godkännandestatus.
+* **[Granska och godkänn begäranden](review-approve-request.md)** - Lär dig hur du granskar, godkänner eller avvisar godkännandebegäranden som godkännare.
+* **[Simulera med exempelindata](simulate-sample-input.md)** - Lär dig hur du testar och validerar innehåll med exempelprofildata.

@@ -22,7 +22,7 @@ Med Conversion-delen i Adobe Journey Optimizer kan ni omvandla data till format 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 toBool-funktion
 
@@ -32,7 +32,7 @@ Konvertera olika datatyper till booleska värden med funktionen toBool.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Funktionen toDateOnly
 
@@ -42,7 +42,7 @@ Konvertera datumrepresentationer till en dateOnly-typ med funktionen toDateOnly.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 toDateTime-funktion
 
@@ -52,7 +52,7 @@ Konvertera olika indata till ett datum/tid-värde med funktionen toDateTime.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 toDateTimeOnly-funktion
 
@@ -62,7 +62,7 @@ Konvertera ett värde till datum-/tidsformat utan tidszon med funktionen toDateT
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 toDecimal-funktion
 
@@ -72,7 +72,7 @@ Konvertera olika datatyper till decimalvärden med funktionen toDecimal.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 toDuration-funktion
 

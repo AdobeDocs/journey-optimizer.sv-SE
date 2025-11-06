@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Journey Optimizer dataset
 description: Journey Optimizer dataset
 redpen-status: CREATED_||_2025-08-11_21-06-02
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 0e750496-fad5-44bc-a38d-014a0f7f82dc
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
 
 ---
-
 
 # Journey Optimizer dataset{#section-overview}
 
@@ -20,7 +20,7 @@ Adobe Journey Optimizer datamängder är ryggraden i hur ni hanterar och använd
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Använda och hantera datauppsättningar i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till, skapar, hanterar och styr datauppsättninga
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Datamängder TTL-stödlinjer (Time-to-live)
 
@@ -40,7 +40,7 @@ Förstå TTL-skyddsräcken som tillämpas på systemgenererade datauppsättninga
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Exportera Adobe Journey Optimizer-datauppsättningar
 
@@ -50,7 +50,7 @@ Lär dig hur du exporterar datauppsättningar till molnlagringsmål för rapport
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Adobe Journey Optimizer: Exempel på datauppsättningsfrågor
 

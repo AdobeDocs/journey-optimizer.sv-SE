@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Händelsekonfiguration
 description: Händelsekonfiguration
 redpen-status: CREATED_||_2025-08-11_21-10-50
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 4f9f480d-8c71-4486-8074-d6fa9ed828bb
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 1%
 
 ---
-
 
 # Händelsekonfiguration{#section-overview}
 
@@ -20,7 +20,7 @@ Händelsekonfiguration i Adobe Journey Optimizer handlar om att ställa in utlö
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Arbeta med reseevenemang
 
@@ -30,7 +30,7 @@ Lär dig mer om resehändelser, deras typer, livscykel och konfiguration för at
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Konfigurera en enhetshändelse
 
@@ -40,7 +40,7 @@ Följ en steg-för-steg-guide för att konfigurera enhetshändelser, inklusive d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 ExperienceEvent-scheman
 
@@ -50,7 +50,7 @@ Förstå schemakrav och konfigurationer för händelseinmatning och avancerade f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Adobe Analytics Integration
 
@@ -60,7 +60,7 @@ Lär dig hur du integrerar Adobe Analytics-data för att automatisera resor och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Konfigurera en affärshändelse
 
@@ -70,7 +70,7 @@ Stegvisa instruktioner för att konfigurera affärshändelser, inklusive schemad
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Skicka händelser med API:er för direktuppspelning
 

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Åtgärdskampanjer
 description: Åtgärdskampanjer
 redpen-status: CREATED_||_2025-08-11_20-22-10
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 577ba2bf-0491-4e4a-bbf3-0cfb374086c1
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 2%
 
 ---
-
 
 # Åtgärdskampanjer{#section-overview}
 
@@ -20,7 +20,7 @@ Med åtgärdskampanjer i Adobe Journey Optimizer kan ni leverera vältajmade, m�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa en åtgärdskampanj
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och hanterar åtgärdskampanjer, inklusive egenskaper, å
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Definiera kampanjegenskaper för åtgärd
 
@@ -40,7 +40,7 @@ Stegvisa instruktioner för att definiera kampanjegenskaper som namngivning, tag
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Konfigurera kampanjåtgärder
 
@@ -50,7 +50,7 @@ Guide till konfiguration av kampanjåtgärder, inklusive kanalval, optimering oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Utnyttja optimering av meddelanden
 
@@ -60,7 +60,7 @@ Använd målinriktning och experiment för att maximera engagemanget och skapa p
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/pencil-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/pencil-alt.svg)
 
 Redigera kampanjinnehåll
 
@@ -70,7 +70,7 @@ Designa, testa och konfigurera innehåll för era Action-kampanjer i flera kanal
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
 
 Definiera kampanjmålgrupp
 

@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Ange regler för capping av meddelanden och resor
 description: Ange regler för capping av meddelanden och resor
 redpen-status: CREATED_||_2025-08-11_20-28-34
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 630e252a-aab2-4a27-ad46-d4dbfbc3f3a4
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
-
 
 # Ange regler för capping av meddelanden och resor{#section-overview}
 
@@ -20,7 +20,7 @@ Genom att hantera regler för budskaps- och resebegränsning i Adobe Journey Opt
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Arbeta med regeluppsättningar
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar, hanterar och aktiverar regeluppsättningar för att styr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Resebegränsning och skiljedom
 
@@ -40,7 +40,7 @@ Upptäck hur ni ställer in resedagång och tidsgränser för samtidighet, prior
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Frekvensbegränsning per kanal
 

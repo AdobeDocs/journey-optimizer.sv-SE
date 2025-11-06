@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Datahantering
 description: Datahantering
 redpen-status: CREATED_||_2025-08-11_21-06-39
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: d60bd99c-aa17-4ef0-85a9-384ef21b96da
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 2%
 
 ---
-
 
 # Datahantering{#section-overview}
 
@@ -20,7 +20,7 @@ Datahanteringen i Adobe Journey Optimizer ger er möjlighet att ta kontroll öve
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Kom igång med datahantering
 
@@ -30,7 +30,7 @@ Läs om hur Adobe Journey Optimizer ger användare avancerade funktioner för da
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Arbeta med scheman i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Förstå och hantera Adobe Experience Platform-scheman för effektiv datamodelle
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 Journey Optimizer dataset
 
@@ -50,7 +50,7 @@ Få omfattande vägledning om hur du hanterar datauppsättningar, inklusive TTL-
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Använd Adobe Experience Platform-data
 
@@ -60,7 +60,7 @@ Aktivera och använd Adobe Experience Platform datauppsättningar i Journey Opti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Kom igång med frågor i Journey Optimizer
 

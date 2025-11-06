@@ -76,6 +76,6 @@ I videon nedan visas hur du skapar och anpassar dina egna varumärken för att t
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470550/?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3470544/?learn=on)
 
 +++

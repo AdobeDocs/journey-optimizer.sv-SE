@@ -196,4 +196,4 @@ Här är några exempel på e-postutgåvor och tillhörande konfigurationer för
 
 Lär dig låsa innehåll i e-postmallar.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451611?quality=12&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3451591?quality=12)

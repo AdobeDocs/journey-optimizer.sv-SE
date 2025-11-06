@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Sekretess
 description: Sekretess
 redpen-status: CREATED_||_2025-08-11_21-20-29
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: d6c8e958-de3b-4aec-8b3b-8b0b3daa0098
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
 
 ---
-
 
 # Sekretess{#section-overview}
 
@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer sekretessverktyg kan ni hantera känsliga kunddata p
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Översikt över sekretesshantering
 
@@ -30,7 +30,7 @@ Lär dig hur du hanterar sekretess i Adobe Journey Optimizer och Adobe Experienc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Hantera sekretessförfrågningar
 
@@ -40,7 +40,7 @@ Följ stegvisa instruktioner för att skapa och hantera sekretessförfrågningar
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Granskningsloggar för användaråtgärder
 
@@ -50,7 +50,7 @@ Spåra och övervaka åtgärder som utförs på Adobe Journey Optimizer-resurser
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
 
 Utföra datalivscykelåtgärder
 
@@ -60,7 +60,7 @@ Upptäck hur du hanterar uppgifter under datalängden, som att uppdatera och ta 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Hantering av samtycke
 
@@ -70,7 +70,7 @@ Hantera mottagarnas samtyckesinställningar och -profiler för att följa sekret
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Datastyrningsprinciper
 

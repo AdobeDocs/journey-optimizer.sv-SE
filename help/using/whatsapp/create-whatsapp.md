@@ -134,7 +134,7 @@ Observera att din whatsApp-mall först måste godkännas av Meta innan den kan a
 
    ![](assets/whatsapp-design-2.png)
 
-1. Lägg till medie-URL:er i fältet **[!UICONTROL Image URL]** för att ersätta platshållare i mallen. Metas mallmedier är bara platshållare. Om du vill visa bilder, ljud eller video på rätt sätt måste du använda externa URL:er från Adobe Experience Manager eller andra källor.
+1. Lägg till medie-URL:er i fältet **[!UICONTROL Image URL]** för att ersätta platshållare i mallen. Meta mallmedier är bara platshållare. Om du vill visa bilder, ljud eller video på rätt sätt måste du använda externa URL:er från Adobe Experience Manager eller andra källor.
 
    ![](assets/whatsapp-design-3.png)
 
@@ -195,6 +195,6 @@ I videon nedan visas hur du skapar en whatsApp-resa i flera steg med Adobe Journ
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470286/?learn=on&captions=swe")
+>[!VIDEO](https://video.tv.adobe.com/v/3470282/?learn=on")
 
 +++

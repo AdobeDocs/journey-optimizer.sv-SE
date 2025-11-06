@@ -11,7 +11,7 @@ keywords: IP, leverans
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
 source-git-commit: 5e0d683bf52df4992773c6147b9e418241777e5d
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '244'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Med [!DNL Journey Optimizer] kan du enkelt utföra arbetsflöden för IP-uppvär
 
 För att undvika att markeras som skräppost kan du öka volymen som skickas stegvis med funktionen för IP-värmerappning. Med det här nya alternativet på menyn **[!UICONTROL Administration]** kan du göra det enklare på ett konsoliderat sätt i stället för att skapa komplexa dagliga resor.
 
-➡️ [Lär dig hur du skapar och kör en IP-uppvärmningsplan i den här videon](#video)
+➡️ [Lär dig hur du skapar och kör en IP-värmeringsplan i den här videon](#video)
 
 >[!AVAILABILITY]
 >
@@ -52,8 +52,8 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 
 Lär dig hur du skapar och kör en IP-värmeringsplan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3453844/?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3432637/?learn=on)
 
 >[!NOTE]
 >
->Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html?lang=sv-SE) Leveranssätt med bästa praxis.
+>Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html) Leveranssätt med bästa praxis.

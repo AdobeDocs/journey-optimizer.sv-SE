@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Skapa webbsidor
 description: Skapa webbsidor
 redpen-status: CREATED_||_2025-08-11_20-40-34
-source-git-commit: 5a8ef88cba254241933607ca59156d35e0e92926
+exl-id: 6f1ce53e-ab5a-4c77-bbd6-fc049e3dc4f5
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
 
 ---
-
 
 # Skapa webbsidor{#section-overview}
 
@@ -20,7 +20,7 @@ Upptäck hur du skapar, anpassar och optimerar webbupplevelser med Adobe Journey
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Redigera innehåll med Designer för webben
 
@@ -30,7 +30,7 @@ Lär dig hur du använder den visuella webbdesignern i Adobe Journey Optimizer f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Redigera webbinnehåll med den icke-visuella redigeraren
 
@@ -40,7 +40,7 @@ Upptäck hur du använder den icke-visuella redigeraren för webbändringar, ink
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Hantera webbändringar i Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Lär dig att hantera webbändringar med hjälp av panelen Ändringar, inklusive 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Övervaka dina webbupplevelser
 
@@ -60,7 +60,7 @@ Lär dig hur du övervakar webbengagemang med hjälp av rapporter och klickspår
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Skapa ensidiga program i Adobe Journey Optimizer
 

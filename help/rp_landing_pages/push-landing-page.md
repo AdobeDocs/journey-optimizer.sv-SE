@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Push-meddelandekanal
 description: Push-meddelandekanal
 redpen-status: CREATED_||_2025-08-11_20-37-12
-source-git-commit: 79fdb9535703e961922dfcfaaad1b6731d2d88c0
+exl-id: 8d82ef2f-91ee-4502-9a01-f66ccbd55fea
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
 
 ---
-
 
 # Push-meddelandekanal{#section-overview}
 
@@ -38,7 +38,7 @@ Push-meddelanden kan skapas:
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa och konfigurera push-meddelanden
 
@@ -48,7 +48,7 @@ Stegvisa anvisningar för att skapa och konfigurera push-meddelanden, inklusive 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Designa push-meddelanden
 
@@ -58,7 +58,7 @@ Upptäck hur du utformar och anpassar push-meddelanden med media, knappar, tysta
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förhandsgranska, validera och skicka push-meddelanden
 
@@ -68,7 +68,7 @@ Lär dig hur du förhandsgranskar, validerar och skickar push-meddelanden, vilke
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfiguration av push-meddelanden
 

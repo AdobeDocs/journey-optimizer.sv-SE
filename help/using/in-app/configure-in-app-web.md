@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: i appen, meddelande, skapa, börja
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 * Installera tillägget **Adobe Experience Platform Web SDK** i **taggegenskaperna** och aktivera alternativet **Personalization Storage**.
 
-  Den här konfigurationen är nödvändig för att lagra händelsehistorik på klienten, vilket är en förutsättning för att regler för frekvens ska kunna implementeras i Regelbyggaren. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=sv-SE)
+  Den här konfigurationen är nödvändig för att lagra händelsehistorik på klienten, vilket är en förutsättning för att regler för frekvens ska kunna implementeras i Regelbyggaren. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html){target="_blank"}
 
   ![](assets/configure_web_inapp_1.png)
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 1. Spara din **Åtgärdskonfiguration** genom att klicka på **Behåll ändringar**.
 
-1. Navigera till menyn **Publiceringsflöde**. Skapa ett nytt **bibliotek** eller markera ett befintligt **bibliotek** och lägg till din nya **regel** i det. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=sv-SE#create-a-library)
+1. Navigera till menyn **Publiceringsflöde**. Skapa ett nytt **bibliotek** eller markera ett befintligt **bibliotek** och lägg till din nya **regel** i det. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library){target="_blank"}
 
 1. Välj **Spara och bygg till utveckling** i ditt **bibliotek**.
 
@@ -104,7 +104,7 @@ ht-degree: 1%
 
 1. I avsnittet **Beslutskontext** definierar du de **Key** - och **Value** -par som avgör vilken upplevelse som ska levereras.
 
-1. Gå till menyn **Publiceringsflöde**, skapa ett nytt **bibliotek** eller välj ett befintligt **bibliotek** och lägg till din nya **regel**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=sv-SE#create-a-library)
+1. Gå till menyn **Publiceringsflöde**, skapa ett nytt **bibliotek** eller välj ett befintligt **bibliotek** och lägg till din nya **regel**. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library){target="_blank"}
 
 1. Välj **Spara och bygg till utveckling** i ditt **bibliotek**.
 
@@ -134,7 +134,7 @@ ht-degree: 1%
 
    * Du kan skapa en regel för flera URL:er som följer samma mönster.
 
-+++ Så här skapar du en sidmatchningsregel.
+     +++ Så här skapar du en sidmatchningsregel.
 
       1. Välj **[!UICONTROL Pages matching rule]** som appkonfiguration och ange **[!UICONTROL Page URL]**.
 
@@ -151,7 +151,7 @@ ht-degree: 1%
 
       1. Spara ändringarna. Regeln visas på skärmen **[!UICONTROL Create campaign]**.
 
-+++
+     +++
 
 1. Skicka in webbkonfigurationen i appen.
 

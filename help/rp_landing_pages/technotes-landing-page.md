@@ -4,13 +4,13 @@ product: Journey Optimizer
 title: Tekniska anmärkningar
 description: Tekniska anmärkningar
 redpen-status: CREATED_||_2025-08-12_00-43-53
-source-git-commit: fc85686dfa7d482416b439dfd1610cd0cd6b5555
+exl-id: 853c6c96-2dab-495f-946a-1b03c50632a2
+source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 2%
 
 ---
-
 
 # Tekniska anmärkningar{#section-overview}
 
@@ -20,7 +20,7 @@ Teknikerna i Adobe Journey Optimizer ger en inblick i de avancerade statistiska 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Statistiska beräkningar som används i Adobe Journey Optimizer Experiment
 
@@ -30,7 +30,7 @@ Lär dig mer om avancerade statistiska metoder som t.ex. konfidenssekvenser och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Förstå statistiska beräkningar i experimentrapporter
 

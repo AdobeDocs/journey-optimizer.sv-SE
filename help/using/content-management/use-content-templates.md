@@ -7,13 +7,13 @@ feature: Templates
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 59c675dd2ac94b6967cfb3a93f74b2016a090190
+exl-id: f5508708-0f09-4fde-8057-d2637f5679c7
+source-git-commit: c7ecfdbc9c97c49c77f3c4fb8bcb1656e04819a8
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 3%
 
 ---
-
 
 # Använda innehållsmallar {#use-content-templates}
 
@@ -25,7 +25,7 @@ När du skapar innehåll för valfri kanal (utom webben) i [!DNL Journey Optimiz
 
 Följ stegen nedan när du vill börja skapa innehåll med någon av dessa mallar.
 
-1. Oavsett om du befinner dig i en kampanj eller resa klickar du på knappen **[!UICONTROL Content template]** när du har valt **[!UICONTROL Edit content]**.
+1. Oavsett om du befinner dig i en kampanj eller resa klickar du på knappen **[!UICONTROL Edit content]** när du har valt **[!UICONTROL Content template]**.
 
 1. Välj **[!UICONTROL Apply content template]**.
 

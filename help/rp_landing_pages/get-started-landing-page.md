@@ -5,7 +5,7 @@ title: Kom igång
 description: Kom igång
 redpen-status: CREATED_||_2025-08-11_20-05-24
 exl-id: fee218bf-8c60-442d-ac41-a3856fc71b70
-source-git-commit: f116775dfa5bb46857c5e9401a291b46105ebcca
+source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 2%
@@ -22,7 +22,7 @@ I det här avsnittet presenteras plattformens kärnfunktioner - från flerkanals
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Nyckelfunktioner
 
@@ -32,7 +32,7 @@ Upptäck Adobe Journey Optimizer kärnfunktioner, användningsexempel och arkite
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Arkitektur - översikt
 
@@ -42,7 +42,7 @@ Förstå hur Adobe Journey Optimizer kan integreras med Adobe Experience Platfor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Roller och ansvarsområden
 
@@ -52,7 +52,7 @@ Få en översikt över de roller och arbetsflöden som krävs för att implement
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Översikt över användargränssnittet
 
@@ -62,7 +62,7 @@ Navigera i Adobe Journey Optimizer gränssnitt och utforska dess funktioner, ink
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Söka, filtrera och ordna innehåll
 
@@ -72,13 +72,13 @@ Använd sök-, filter- och taggningsfunktionerna för att hantera och ordna reso
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Gardrutor och begränsningar
 
 Läs mer om begränsningar och rekommenderade rutiner för effektiv användning av Adobe Journey Optimizer-funktioner.
 
-[Fördjupa dig i kärnbegrepp](../using/start/guardrails.md)
+[Kontrollera armaturer och begränsningar](../using/start/guardrails.md)
 :::
 
 ::::
