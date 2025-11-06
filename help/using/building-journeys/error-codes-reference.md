@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: fel, koder, felsökning, resa, kampanj, meddelanden
-source-git-commit: 405c87f9ca138e4e92438704b5051ce89c73d726
+source-git-commit: 28a8f113d594f80ba7de22229e9a223b7f17ae8d
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Dessa fel inträffar när meddelanden, förinställningar och innehåll skapas, 
 
 | Felkod | Beskrivning | Rotorsak | Upplösning |
 |------------|-------------|-----------|-----------|
-| **CJMAS-1732-500** | Beviset misslyckades - Alla resurser som inte publicerades när du skickade korrektur/test med AEM-mediefil | Den nyligen publicerade resursen finns inte i AJO ännu; fel i resurs-ID; korsrepoanvändning; AEM synkroniseringsfördröjning | &#x200B;1. Använd bara publicerade resurs-ID:n från rätt databas/miljö<br/>2. Tillåt synkroniseringstid mellan AEM och AJO<br/>3. Försök igen med en känd bra resurs <br/>4. Verifiera publiceringsstatus för resurser i AEM <br/><br/>**Relaterad dokumentation**: [Assets-integrering](../content-management/assets.md) |
+| **CJMAS-1732-500** | Beviset misslyckades - Alla resurser som inte publicerades när du skickade korrektur/test med AEM-mediefil | Den nyligen publicerade resursen finns inte i AJO ännu; fel i resurs-ID; korsrepoanvändning; AEM synkroniseringsfördröjning | &#x200B;1. Använd bara publicerade resurs-ID:n från rätt databas/miljö<br/>2. Tillåt synkroniseringstid mellan AEM och AJO<br/>3. Försök igen med en känd bra resurs <br/>4. Verifiera publiceringsstatus för resurser i AEM <br/><br/>**Relaterad dokumentation**: [Assets-integrering](../integrations/assets.md) |
 | **CJMAS-1069-500** | Internt fel när meddelandemallen sparades eller publicerades | Backend-undantag (infrastrukturfel/tjänstfel eller innehållsproblem); kod/funktion som inte stöds | &#x200B;1. Förenkla eller minska mallens komplexitet<br/>2. Lägg till innehåll igen i steg för att identifiera problemet <br/>3. Kontrollera [Adobe-statussidan](https://status.adobe.com/)<br/>4. Ta bort funktioner eller markeringar som inte stöds <br/><br/>**Relaterad dokumentation**: [Innehållsmallar](../content-management/content-templates.md) |
 | **CJMAS-1149-400** | Felaktig begäran när meddelande, förinställning eller variant sparas | Obligatoriska fält saknas i meddelandet eller konfigurationen är felaktig | &#x200B;1. Fyll i alla obligatoriska fält (markerade med asterisk)<br/>2. Validera meddelande-/förinställd konfiguration<br/>3. Kontrollera fältvärdeformat och begränsningar<br/>4. Granska valideringsmeddelanden i användargränssnittet <br/><br/>**Relaterad dokumentation**: [E-postkanal](../email/get-started-email.md), [Kanalytor](../configuration/channel-surfaces.md) |
 | **CJMAS-2073-422** | Enhet som inte kan bearbetas i redigering av meddelandeförinställning | Valideringsfel, fält som inte stöds eller felaktig syntax | &#x200B;1. Korrigera syntax-/fältfel enligt <br/>2. Jämför med en fungerande konfiguration<br/>3. Använd verifiering av meddelandeanvändargränssnitt innan du sparar<br/>4. Granska fältkrav i dokumentation <br/><br/>**Relaterad dokumentation**: [Meddelandeförinställningar](../configuration/channel-surfaces.md), [E-postinställningar](../email/email-settings.md) |
@@ -113,7 +113,7 @@ Dessa fel inträffar vid konfiguration av rapporter och provisionering av dataup
 
 | Felkod | Beskrivning | Rotorsak | Upplösning |
 |------------|-------------|-----------|-----------|
-| **CJMRPS-1047-409** | &quot;Konflikt. Datauppsättningen har redan lagts till när rapportdatauppsättningen lades till | Försöker lägga till en datauppsättning som redan har etablerats | &#x200B;1. Granska datauppsättningskonfigurationen i rapportinställningarna<br/>2. Lägg inte till datamängder som redan finns<br/>3 igen. Använd checklistor för officiell migrering för att rapportera migrering <br/>4. Ta bort dubblettdatamängdsreferenser <br/><br/>**Relaterad dokumentation**: [Globala rapporter](../reports/global-report.md), [Live-rapporter](../reports/live-report.md) |
+| **CJMRPS-1047-409** | &quot;Konflikt. Datauppsättningen har redan lagts till när rapportdatauppsättningen lades till | Försöker lägga till en datauppsättning som redan har etablerats | &#x200B;1. Granska datauppsättningskonfigurationen i rapportinställningarna<br/>2. Lägg inte till datamängder som redan finns<br/>3 igen. Använd checklistor för officiell migrering för att rapportera migrering <br/>4. Ta bort dubblettdatamängdsreferenser <br/><br/>**Relaterad dokumentation**: [Rapporteringsöversikt](../reports/gs-reports.md), [Kampanjrapporter](../reports/campaign-global-report-cja.md), [Resursrapporter](../reports/journey-global-report-cja.md) |
 
 ## Allmän felsökningsmetod {#troubleshooting-approach}
 
@@ -181,7 +181,7 @@ Om du stöter på bestående fel som inte kan åtgärdas med den här guiden:
 
 1. **Samla in information**: Samla in felkoden, begärande-ID, tidsstämplar och steg för att återskapa
 2. **Kontrollera systemstatus**: Besök [Adobe-status](https://status.adobe.com/){target="_blank"} för information om kända tjänstproblem
-3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE){target="_blank"} innehåller lösningar
+3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html){target="_blank"} innehåller lösningar
 4. **Engagemangsgrupp**: Skicka frågor i [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 5. **Kontakta Adobe Support**: Skicka in en supportanmälan med all relevant information
 
