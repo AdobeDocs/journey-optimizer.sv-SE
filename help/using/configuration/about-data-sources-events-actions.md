@@ -48,7 +48,7 @@ Journey Optimizer meddelandefunktioner är inbyggda: du behöver bara lägga til
 
 När du definierar [händelsers nyttolast](../event/about-creating.md#define-the-payload-fields), [fältgruppers nyttolast](../datasource/configure-data-sources.md#define-field-groups) och väljer fält i [uttrycksredigeraren](../building-journeys/expression/expressionadvanced.md) visas visningsnamnet förutom fältnamnet. Den här informationen hämtas från schemadefinitionen i upplevelsedatamodellen.
 
-Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när scheman konfigureras, kommer de användarvänliga namnen att ersätta visningsnamnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i [utvecklarhandboken för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"}.
+Om beskrivningar som &quot;xdm:alternateDisplayInfo&quot; anges när scheman konfigureras, kommer de användarvänliga namnen att ersätta visningsnamnen. Det är särskilt användbart när du arbetar med&quot;eVars&quot; och generiska fält. Du kan konfigurera egna namnbeskrivningar via ett API-anrop. Mer information finns i [utvecklarhandboken för schemaregister](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=sv-SE){target="_blank"}.
 
 ![](assets/xdm-from-descriptors.png)
 

@@ -20,7 +20,7 @@ Innehållsmallar i Adobe Journey Optimizer är kraftfulla verktyg som förenklar
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med innehållsmallar
 
@@ -30,7 +30,7 @@ Lär dig grunderna i att skapa och hantera innehållsmallar för att effektivise
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Få åtkomst till och hantera mallar
 
@@ -40,7 +40,7 @@ Lär dig hur du får tillgång till, ordnar och hanterar innehållsmallar, inklu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skapa innehållsmallar
 
@@ -50,7 +50,7 @@ Steg för steg-guide om hur du skapar återanvändbara innehållsmallar från gr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Lås innehåll i e-postmallar
 
@@ -60,7 +60,7 @@ Lär dig hur du låser avsnitt eller hela mallar för att förhindra oavsiktliga
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Testa innehållsmallar
 
@@ -70,7 +70,7 @@ Validera e-postmallar genom att testa återgivning, variationer och korrektur in
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Använda innehållsmallar
 

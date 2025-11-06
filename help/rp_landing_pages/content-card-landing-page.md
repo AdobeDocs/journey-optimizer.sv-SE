@@ -23,7 +23,7 @@ Med den här funktionen kan marknadsförarna presentera relevant, multimediemate
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera kanal för innehållskort
 
@@ -33,7 +33,7 @@ Konfigurera och integrera Content Cards-kanalen för webb-, mobil- och kioskplat
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa och konfigurera innehållskort
 
@@ -43,7 +43,7 @@ Stegvis självstudiekurs för att skapa, anpassa och implementera innehållskort
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Design Content Cards
 

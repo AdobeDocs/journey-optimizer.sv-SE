@@ -20,7 +20,7 @@ Med hjälp av innehållsexperiment i Adobe Journey Optimizer kan ni testa och f�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med innehållsexperiment
 
@@ -30,7 +30,7 @@ Lär dig grunderna i innehållsexperiment, deras syfte och hur du konfigurerar, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och skala innehållsexperiment
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar för att skapa, konfigurera och skala experiment för att t
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Avancerade statistiska tekniker för experiment
 

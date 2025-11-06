@@ -30,7 +30,7 @@ Konfigurera LINE-kanalen med Journey Optimizer innan du skapar LINE-meddelandet.
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera LINE-kanalen
 
@@ -40,7 +40,7 @@ Följ stegvisa instruktioner för att manuellt konfigurera LINE-kanalen eller ko
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och konfigurera LINE-meddelanden
 
@@ -50,7 +50,7 @@ Lär dig hur du lägger till LINE-meddelanden till resor och kampanjer, anpassar
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Kontrollera och skicka LINE-meddelanden
 

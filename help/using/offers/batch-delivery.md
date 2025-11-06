@@ -27,7 +27,7 @@ Batchleverans kan också utföras med API:er. Mer information finns i [API-dokum
 
 Innan du konfigurerar en jobbförfrågan bör du kontrollera att du har skapat:
 
-* **En datauppsättning** i Adobe Experience Platform. Den här datauppsättningen används för att lagra beslutsresultatet med ODE-schema för beslutshändelser. Läs mer i [dokumentationen för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+* **En datauppsättning** i Adobe Experience Platform. Den här datauppsättningen används för att lagra beslutsresultatet med ODE-schema för beslutshändelser. Läs mer i [dokumentationen för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE).
 
 * **En målgrupp** i Adobe Experience Platform. Publiken bör utvärderas och sedan uppdateras. Lär dig hur du uppdaterar utvärdering av målgruppsmedlemskap i [dokumentationen för segmenteringstjänsten](https://www.adobe.com/go/segmentation-overview-en)
 

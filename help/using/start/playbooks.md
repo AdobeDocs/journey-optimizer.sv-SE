@@ -29,7 +29,7 @@ Varje spelbok innehåller en omfattande översikt som innehåller avsikter, mål
 
 ## Förhandskrav {#prerequisites}
 
-Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns på sidan [Kom igång](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html){target="_blank"} i dokumentationen för Use Case Playbooks.
+Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsböcker. Detaljerad information om varje steg finns på sidan [Kom igång](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=sv-SE){target="_blank"} i dokumentationen för Use Case Playbooks.
 
 * Skapa en sandlåda
 * Konfigurera användarbehörigheter
@@ -37,7 +37,7 @@ Följande konfigurationssteg krävs innan du arbetar med Använd fallspelningsb�
 
 ## Få åtkomst till och aktivera en spelbok {#access}
 
-Om du vill få åtkomst till spelböcker går du till menyn **[!UICONTROL Playbooks]** som finns i den vänstra navigeringslisten. Biblioteket innehåller flera spelböcker som har implementerats med Adobe Journey Optimizer. Om du enkelt vill komma åt dem använder du de filter som finns bredvid sökfältet. En omfattande lista över Journey Optimizer spelböcker finns i [Use Case Playbooks-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"}.
+Om du vill få åtkomst till spelböcker går du till menyn **[!UICONTROL Playbooks]** som finns i den vänstra navigeringslisten. Biblioteket innehåller flera spelböcker som har implementerats med Adobe Journey Optimizer. Om du enkelt vill komma åt dem använder du de filter som finns bredvid sökfältet. En omfattande lista över Journey Optimizer spelböcker finns i [Use Case Playbooks-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html?lang=sv-SE){target="_blank"}.
 
 ![Spelningsbokslista med filterruta öppnad](assets/playbooks-filter.png){width="85%"}
 
@@ -49,7 +49,7 @@ När du har valt den spelbok som bäst passar dina behov kan du aktivera den. De
 
 Om du vill implementera ditt användningssätt kan du navigera till varje objekt för att anpassa det efter dina behov. Du kan också dela URL:en för spelningsbokens instanssida mellan ditt team för att samarbeta vid implementeringen av användningsexemplet.
 
-Dessutom kan du importera spelboksresurser till andra sandlådor. På så sätt kan du justera de genererade resurserna mot dina befintliga resurser och se till att de är kompatibla med dina data, om du redan har konfigurerat dina egna scheman, fält och fältgrupper. De här stegen beskrivs i Använd fallspelningsböcker: [Publicera spelboksgenererade resurser till andra sandlådor](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/data-awareness.html){target="_blank"}.
+Dessutom kan du importera spelboksresurser till andra sandlådor. På så sätt kan du justera de genererade resurserna mot dina befintliga resurser och se till att de är kompatibla med dina data, om du redan har konfigurerat dina egna scheman, fält och fältgrupper. De här stegen beskrivs i Använd fallspelningsböcker: [Publicera spelboksgenererade resurser till andra sandlådor](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/data-awareness.html?lang=sv-SE){target="_blank"}.
 
 ## Skapa egna spelböcker (privat beta) {#create}
 
@@ -61,4 +61,4 @@ Förutom att använda fördefinierade spelböcker kan du skapa och dela egna spe
 
 Du kan definiera metadata med hjälp av AI-assistans eller manuell inmatning, associera tekniska resurser som scheman, segment och dela dina spelböcker i olika IMS-organisationer.
 
-Mer information om hur du skapar och delar spelböcker finns i Use Case Playbooks-dokumentationen: [Författare och dela dina egna spelböcker med hjälp av AI Assistant](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/author.html#sharing-playbooks-sandboxes){target="_blank"}.
+Mer information om hur du skapar och delar spelböcker finns i Use Case Playbooks-dokumentationen: [Författare och dela dina egna spelböcker med hjälp av AI Assistant](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/author.html?lang=sv-SE#sharing-playbooks-sandboxes){target="_blank"}.

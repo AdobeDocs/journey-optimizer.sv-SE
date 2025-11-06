@@ -20,7 +20,7 @@ ht-degree: 3%
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med åtkomstkontroll
 
@@ -30,7 +30,7 @@ Lär dig begreppen och processerna för att hantera användarbehörigheter, roll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Hantera användare och roller
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du tilldelar, redigerar och skapar roller som styr a
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Inbyggda roller
 
@@ -50,7 +50,7 @@ Upptäck de fördefinierade rollerna och tillhörande behörigheter för att eff
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Inbyggda behörigheter
 
@@ -60,7 +60,7 @@ Förstå tillgängliga behörigheter och deras funktioner för att konfigurera r
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Behörighetsnivåer
 
@@ -70,7 +70,7 @@ Lär dig mer om behörigheter på hög och låg nivå och hur de ger exakt kontr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Attributbaserad åtkomstkontroll
 

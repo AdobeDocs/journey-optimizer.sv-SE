@@ -23,7 +23,7 @@ Om du vill få åtkomst till dina rapporter väljer du **[!UICONTROL Report]** p
 
 ![](assets/cja-lp.png)
 
-Mer information om Customer Journey Analytics arbetsyta och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+Mer information om Customer Journey Analytics arbetsyta och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home).
 
 ## Konverteringsgrad för landningssida {#lp-conversion}
 

@@ -37,13 +37,13 @@ Gå till följande avsnitt för att lära dig mer om varje ämne:
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
 >abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
 >title="Ange den URL som ska redigeras"
 >abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
 
 Följ stegen nedan för att börja skapa din webbupplevelse.
 
@@ -61,7 +61,7 @@ Följ stegen nedan för att börja skapa din webbupplevelse.
 
    >[!CAUTION]
    >
-   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}. [Läs mer](web-prerequisites.md#implementation-prerequisites)
+   >Webbsidan måste innehålla [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"}. [Läs mer](web-prerequisites.md#implementation-prerequisites)
 
 1. Klicka på **[!UICONTROL Edit web page]** för att börja redigera den. Webbdesignern visas.
 

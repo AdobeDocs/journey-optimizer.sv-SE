@@ -20,7 +20,7 @@ ht-degree: 0%
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Introduktion till att använda fragment
 
@@ -30,7 +30,7 @@ Lär dig grunderna i att skapa, hantera och återanvända visuella fragment och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa återanvändbara fragment
 
@@ -40,7 +40,7 @@ Följ en stegvis guide för att skapa återanvändbara visuella fragment och utt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Spara befintligt innehåll som fragment
 
@@ -50,7 +50,7 @@ Upptäck hur du sparar innehåll som återanvändbara visuella fragment eller ut
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Använda anpassningsbara fragment
 
@@ -60,7 +60,7 @@ Lär dig hur du gör specifika fält redigerbara i fragment för dynamisk anpass
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Hantera innehållsfragment
 

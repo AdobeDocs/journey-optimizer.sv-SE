@@ -20,7 +20,7 @@ Med Direct Mail i Adobe Journey Optimizer kan ni nå kunder offline genom att sk
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Introduktion till kampanjer för direktreklam
 
@@ -30,7 +30,7 @@ Läs mer om direktreklamkampanjer i Adobe Journey Optimizer, inklusive extraheri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Så här skapar du en direktreklamkampanj
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar för att skapa direktreklamkampanjer och konfigurera extrah
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Kontrollera och skicka en direktreklamkampanj
 
@@ -50,7 +50,7 @@ Förhandsgranska, validera, aktivera och hantera samtycke för direktreklamkampa
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera kanal för direktreklam
 

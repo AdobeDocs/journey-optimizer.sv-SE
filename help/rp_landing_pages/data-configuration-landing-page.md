@@ -20,7 +20,7 @@ Datakonfigurationen i Adobe Journey Optimizer handlar om att lägga grunden för
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Hantera relationsscheman och datauppsättningar
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och hanterar relationsscheman, konfigurerar datauppsättn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Konfigurera en måldimension
 

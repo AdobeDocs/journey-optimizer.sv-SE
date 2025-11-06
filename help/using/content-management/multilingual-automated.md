@@ -166,7 +166,7 @@ I det här avsnittet kan du ange olika språkområden för hantering av ditt fle
 
    1. Gå till taggegenskaper i Adobe Experience Platform Data Collection.
 
-   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [dokumentationen för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+   1. Öppna menyn **[!UICONTROL Rules]** och skapa en ny regel. Detaljerad information om hur du skapar regler finns i [!DNL Adobe Experience Platform] [dokumentationen för datainsamling](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
 
    1. Lägg till en händelse som konfigurerats enligt nedan i regelns **[!UICONTROL IF]**-avsnitt:
 

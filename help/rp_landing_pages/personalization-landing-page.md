@@ -20,7 +20,7 @@ Med Personalization i Adobe Journey Optimizer kan ni skapa skräddarsydda, slagk
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med Personalization
 
@@ -30,7 +30,7 @@ Lär dig grunderna om personalisering i Adobe Journey Optimizer, inklusive perso
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Lägg till och validera Personalization
 
@@ -40,7 +40,7 @@ Använd personaliseringsredigeraren för att skapa anpassat innehåll för e-pos
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Förstå Personalization-syntax
 
@@ -50,7 +50,7 @@ Fördjupa dig i reglerna och exemplen på Handlebars-baserad syntax för persona
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Återanvänd uttrycksfragment
 
@@ -60,7 +60,7 @@ Utnyttja återanvändbara uttrycksfragment för effektiv och konsekvent personal
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
 
 Använd Adobe Experience Platform Data för Personalization (Beta)
 
@@ -70,7 +70,7 @@ Lär dig att använda AEP datamängder med hjälpfunktionen datasetLookup för a
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Referenshandbok för hjälpfunktioner
 

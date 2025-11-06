@@ -20,7 +20,7 @@ Målgrupperna i Adobe Journey Optimizer hjälper er att få kontakt med rätt pe
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med målgrupper
 
@@ -30,7 +30,7 @@ Lär dig grunderna i målgruppshantering, segmentering och aktivering i Adobe Jo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och hantera målgrupper
 
@@ -40,7 +40,7 @@ Upptäck avancerade arbetsflöden för målgruppsframställning, komposition och
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Aktivera målgrupper i kampanjer och resor
 
@@ -50,7 +50,7 @@ Förstå hur ni aktiverar målgrupper och använder dem effektivt inom kampanjer
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Utnyttja anrikningsattribut
 

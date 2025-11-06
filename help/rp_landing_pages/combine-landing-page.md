@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer lösningar kan ni smidigt integrera med andra Adobe-
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Kombinera Adobe-lösningar för att hantera innehåll
 
@@ -30,7 +30,7 @@ Lär dig hur du integrerar Adobe Journey Optimizer med andra Adobe-lösningar so
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Använd Adobe Experience Manager Assets
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du integrerar, överför och hanterar resurser från
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/images.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/images.svg?lang=sv-SE)
 
 Arbeta med Adobe Stock-bilder
 
@@ -50,7 +50,7 @@ Lär dig hur du hämtar, licensierar och anpassar Adobe Stock-bilder för använ
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/pencil-ruler.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/pencil-ruler.svg?lang=sv-SE)
 
 Redigera din Assets med Adobe Express
 
@@ -60,7 +60,7 @@ Lär dig hur du ändrar storlek på, beskär och tar bort bakgrunder från resur
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Arbeta med AEM Content Fragments
 
@@ -70,7 +70,7 @@ Stegvisa instruktioner för integrering av AEM Content Fragments med Adobe Journ
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Arbeta med Dynamic Media
 

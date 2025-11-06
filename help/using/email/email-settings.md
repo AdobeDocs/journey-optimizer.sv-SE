@@ -111,7 +111,7 @@ Om du får ett felmeddelande när du skickar e-postkonfigurationen betyder det a
 >id="ajo_surface_suppressed_addresses"
 >title="Åsidosätt prioritet för undertryckningslista"
 >abstract="Du kan välja att skicka transaktionsmeddelanden till profiler även om deras e-postadresser finns med i listan över Adobe Journey Optimizer-inaktiveringar på grund av skräppost. Det här alternativet är inaktiverat som standard."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html" text="Hantera listan över inaktiveringar"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=sv-SE" text="Hantera listan över inaktiveringar"
 
 >[!IMPORTANT]
 >
@@ -141,7 +141,7 @@ När det här alternativet är aktiverat kan kunden, trots att kunden har marker
 >id="ajo_surface_seed_list"
 >title="Lägga till en startvärdeslista"
 >abstract="Välj önskad startlista för att automatiskt lägga till specifika interna adresser till era målgrupper. Dessa dirigerade adresser kommer att inkluderas vid leveranstillfället och kommer att få en exakt kopia av meddelandet i säkerhetssyfte."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html?lang=sv-SE#use-seed-list" text="Vad är utsädeslistor?"
 
 Med en startvärdeslista i [!DNL Journey Optimizer] kan du automatiskt inkludera specifika e-postadresser i dina leveranser. [Läs mer](../configuration/seed-lists.md)
 
@@ -167,7 +167,7 @@ Lär dig hur du använder startvärdeslista i en kampanj eller en resa i [det h�
 >id="ajo_admin_presets_retryperiod"
 >title="Justera tidsperioden för återförsök"
 >abstract="Försök utförs i 3,5 dagar (84 timmar) när en e-postleverans misslyckas på grund av ett tillfälligt fel med mjuk avhoppning. Du kan justera den här standardperioden för återförsök så att den passar dina behov bättre."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/retries.html" text="Om återförsök"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/retries.html?lang=sv-SE" text="Om återförsök"
 
 Du kan konfigurera **parametrarna för återförsök via e-post**.
 

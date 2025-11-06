@@ -38,4 +38,4 @@ Innan du utför storskaliga borttagningar ska du validera och exportera alla nö
 Mer information om Privacy Service och hur du utför livscykelåtgärder för data finns i Adobe Experience Platform dokumentation:
 
 * [Privacy Service - översikt](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv)
-* [Datalifecykel i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html)
+* [Datalifecykel i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=sv-SE)

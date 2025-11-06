@@ -20,7 +20,7 @@ Med åtgärdskampanjer i Adobe Journey Optimizer kan ni leverera vältajmade, m�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa en åtgärdskampanj
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och hanterar åtgärdskampanjer, inklusive egenskaper, å
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Definiera kampanjegenskaper för åtgärd
 
@@ -40,7 +40,7 @@ Stegvisa instruktioner för att definiera kampanjegenskaper som namngivning, tag
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Konfigurera kampanjåtgärder
 
@@ -50,7 +50,7 @@ Guide till konfiguration av kampanjåtgärder, inklusive kanalval, optimering oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Utnyttja optimering av meddelanden
 
@@ -60,7 +60,7 @@ Använd målinriktning och experiment för att maximera engagemanget och skapa p
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/pencil-alt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/pencil-alt.svg?lang=sv-SE)
 
 Redigera kampanjinnehåll
 
@@ -70,7 +70,7 @@ Designa, testa och konfigurera innehåll för era Action-kampanjer i flera kanal
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=sv-SE)
 
 Definiera kampanjmålgrupp
 

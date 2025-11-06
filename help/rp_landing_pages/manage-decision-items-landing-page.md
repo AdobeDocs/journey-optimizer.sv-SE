@@ -20,7 +20,7 @@ Att hantera beslutsfrågor i Adobe Journey Optimizer handlar om att säkerställ
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera artikelkatalogen
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar och hanterar objektkatalogen i Adobe Journey Optimi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och hantera beslutsobjekt
 
@@ -40,7 +40,7 @@ Upptäck hur du skapar, konfigurerar och hanterar beslutsobjekt, inklusive attri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Hantera artikelsamlingar
 

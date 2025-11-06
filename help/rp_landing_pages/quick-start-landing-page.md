@@ -20,7 +20,7 @@ Adobe Journey Optimizer framgång beror på att ett expertteam samarbetar, var o
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Översikt över roller och ansvarsområden
 
@@ -30,7 +30,7 @@ Läs om de viktigaste rollerna, ansvarsområdena och beroendena som krävs för 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Kom igång som marknadsförare
 
@@ -40,7 +40,7 @@ Stegvisa riktlinjer för marknadsförare när det gäller att skapa målgrupper,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Kom igång som datatekniker
 
@@ -50,7 +50,7 @@ Detaljerade instruktioner för datatekniker som förbereder scheman, datauppsät
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Kom igång som systemadministratör
 

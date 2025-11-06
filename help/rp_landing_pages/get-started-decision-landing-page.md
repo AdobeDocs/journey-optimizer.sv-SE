@@ -20,7 +20,7 @@ Adobe Journey Optimizer beslutsstöd ger marknadsförarna möjlighet att leverer
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Introduktion till beslutshantering
 
@@ -30,7 +30,7 @@ Läs om Beslutshantering i Adobe Journey Optimizer, inklusive dess fördelar, ko
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Beslutsledningens riktlinjer och begränsningar
 
@@ -40,7 +40,7 @@ Förstå de operativa begränsningarna och prestandatröskelerna i beslutslednin
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Användargränssnittshandbok för bibliotek
 
@@ -50,7 +50,7 @@ Utforska gränssnittet och funktionerna i Erbjudandebiblioteket för att skapa, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Viktiga steg för att skapa och hantera erbjudanden
 
@@ -60,7 +60,7 @@ Följ en steg-för-steg-guide för att skapa, hantera och konfigurera erbjudande
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Använda anpassade uppladdningsmålgrupper för beslut
 
@@ -70,7 +70,7 @@ Upptäck hur ni kan förfina kvalificeringskriterierna och personalisera erbjuda
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Använd personaliserade erbjudanden i ett e-postmeddelande
 

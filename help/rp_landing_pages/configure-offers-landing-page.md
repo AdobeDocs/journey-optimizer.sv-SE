@@ -20,7 +20,7 @@ Avsnittet&quot;Konfigurera erbjudanden&quot; i Adobe Journey Optimizer ger er m�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa personaliserade erbjudanden
 
@@ -30,7 +30,7 @@ L채r dig hur du skapar och hanterar personaliserade erbjudanden med stegvis v채g
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 L채gg till representationer i erbjudanden
 
@@ -40,7 +40,7 @@ Definiera och konfigurera var erbjudandena visas med representationer, och anpas
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 L채gg till begr채nsningar i erbjudanden
 

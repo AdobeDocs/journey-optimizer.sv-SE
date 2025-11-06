@@ -81,4 +81,4 @@ För att kunna skicka meddelanden måste du gå igenom konfigurationsstegen som 
 * **[IP-värmare](ip-warmup-gs.md)** - Upptäck bästa praxis för IP-adresshämning för att förbättra e-postleveransen och avsändarens anseende.
 * **[Hantera undertryckningslista](manage-suppression-list.md)** - Lär dig hur du hanterar undertryckningslistor för att hantera gränser och upprätthålla listhygienen.
 * **[Konfigurera mobilappar](set-mobile-config.md)** - Konfigurera mobilappskonfigurationer för push-meddelanden och meddelanden i appen.
-* **[Konfigurationsinstruktioner](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/configuration/channel-configuration/configure-channels){target="_blank"}** - Utforska steg-för-steg-videokurser om kanalkonfiguration och metodtips.
+* **[Konfigurationsinstruktioner](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/configuration/channel-configuration/configure-channels){target="_blank"}** - Utforska steg-för-steg-videokurser om kanalkonfiguration och metodtips.

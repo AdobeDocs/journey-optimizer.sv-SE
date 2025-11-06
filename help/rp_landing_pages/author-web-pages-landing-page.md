@@ -20,7 +20,7 @@ Upptäck hur du skapar, anpassar och optimerar webbupplevelser med Adobe Journey
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Redigera innehåll med Designer för webben
 
@@ -30,7 +30,7 @@ Lär dig hur du använder den visuella webbdesignern i Adobe Journey Optimizer f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Redigera webbinnehåll med den icke-visuella redigeraren
 
@@ -40,7 +40,7 @@ Upptäck hur du använder den icke-visuella redigeraren för webbändringar, ink
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Hantera webbändringar i Adobe Journey Optimizer
 
@@ -50,7 +50,7 @@ Lär dig att hantera webbändringar med hjälp av panelen Ändringar, inklusive 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Övervaka dina webbupplevelser
 
@@ -60,7 +60,7 @@ Lär dig hur du övervakar webbengagemang med hjälp av rapporter och klickspår
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skapa ensidiga program i Adobe Journey Optimizer
 

@@ -76,4 +76,4 @@ Med regeluppsättningar kan du **gruppera flera regler i regeluppsättningar** o
 * **[Konfigurera frekvensbegränsning](channel-capping.md)** - Upptäck hur du anger frekvensgränser på kanalnivå för att förhindra överskjutande meddelanden.
 * **[Skapa regeluppsättningar](rule-sets.md)** - Lär dig hur du skapar affärsregler för avancerad konflikthantering och meddelandestyrning.
 * **[Resespecifik begränsning](journey-capping.md)** - Ange regler för begränsning av antalet resor på resenivå för att styra meddelandefrekvensen på resorna.
-* **[Självstudiekurser för konflikthantering](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Utforska steg-för-steg-videokurser om konflikthantering och prioritering.
+* **[Självstudiekurser för konflikthantering](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Utforska steg-för-steg-videokurser om konflikthantering och prioritering.

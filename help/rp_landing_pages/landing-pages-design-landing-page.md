@@ -20,7 +20,7 @@ Genom att utforma innehåll i Adobe Journey Optimizer kan ni skapa slagkraftiga 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Designa en landningssida i Adobe Journey Optimizer
 
@@ -40,7 +40,7 @@ Lägg till komponenter som formulär, anpassa deras format och använd sammanhan
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Arbeta med landningssidmallar
 
@@ -50,7 +50,7 @@ Spara landningssidor som mallar och återanvänd dem för att effektivisera arbe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använd anpassad JavaScript på landningssidor
 

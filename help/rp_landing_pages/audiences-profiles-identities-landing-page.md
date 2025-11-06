@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Målgrupper, profiler och identitet{#section-overview}
 
-Målgrupper, profiler och identiteter i Adobe Journey Optimizer förlitar sig på [Adobe kundprofil för realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) för att driva personaliserade upplevelser. Med **målgrupper** kan du segmentera kunder med hjälp av avancerade data, med **profiler** får du realtidsinsikter som har berikats med beteenden och attribut, och med **identiteter** kan du koppla interaktioner mellan kanaler med hjälp av identitetsdiagrammet. Dessa element fungerar tillsammans för att möjliggöra riktade budskap och enhetliga kundresor. I det här avsnittet beskrivs hur du aktiverar målgrupper, hanterar profiler och kartlägger identiteter för att samla data och leverera relevanta, aktuella upplevelser.
+Målgrupper, profiler och identiteter i Adobe Journey Optimizer förlitar sig på [Adobe kundprofil för realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home) för att driva personaliserade upplevelser. Med **målgrupper** kan du segmentera kunder med hjälp av avancerade data, med **profiler** får du realtidsinsikter som har berikats med beteenden och attribut, och med **identiteter** kan du koppla interaktioner mellan kanaler med hjälp av identitetsdiagrammet. Dessa element fungerar tillsammans för att möjliggöra riktade budskap och enhetliga kundresor. I det här avsnittet beskrivs hur du aktiverar målgrupper, hanterar profiler och kartlägger identiteter för att samla data och leverera relevanta, aktuella upplevelser.
 
 ## Målgrupper, profiler och identitet
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Målgruppshantering och Personalization
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar, hanterar och aktiverar målgrupper med hjälp av segment
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/user-circle.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/user-circle.svg?lang=sv-SE)
 
 Profiler: Hantera och optimera kunddata
 
@@ -40,7 +40,7 @@ Förstå hur ni använder profiler, beräknade attribut och testprofiler för at
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/fingerprint.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/fingerprint.svg?lang=sv-SE)
 
 Kom igång med identiteter
 
@@ -50,7 +50,7 @@ Upptäck hur du hanterar kundidentiteter med Identity Graph och verktyg för int
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Kontrollpanel för licensanvändning
 

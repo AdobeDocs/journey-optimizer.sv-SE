@@ -20,7 +20,7 @@ ht-degree: 1%
 >id="ajo_admin_surface_sms_type"
 >title="Definiera meddelandekategorin"
 >abstract="Välj typ av textmeddelanden med den här konfigurationen: Marknadsföring för kampanjmeddelanden som kräver användarens samtycke eller Transaktionsmeddelanden för icke-kommersiella meddelanden, till exempel lösenordsåterställning."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Avanmäl dig i marknadsföringstextmeddelanden"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html?lang=sv-SE#sms-opt-out-management" text="Avanmäl dig i marknadsföringstextmeddelanden"
 
 När din SMS/MMS/RCS-kanal har konfigurerats måste du skapa en kanalkonfiguration för att kunna skicka SMS-, RCS- och MMS-meddelanden från **[!DNL Journey Optimizer]**.
 

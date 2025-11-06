@@ -20,7 +20,7 @@ Push-meddelanden i Adobe Journey Optimizer gör att ni kan kommunicera med er m�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Push-meddelandedataflöde och -konfiguration
 
@@ -30,7 +30,7 @@ Förstå de komponenter, arbetsflöden och det dataflöde som krävs för att le
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfiguration av push-meddelandekanal
 
@@ -40,7 +40,7 @@ Stegvisa riktlinjer för att konfigurera behörigheter, integrera appar och konf
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Snabbstart för mobil introduktion
 

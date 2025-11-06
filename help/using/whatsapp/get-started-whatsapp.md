@@ -66,5 +66,5 @@ I videon nedan visas hur du integrerar WhatsApp som en inbyggd kanal i Adobe Jou
 
 Utforska fler videosjälvstudiekurser om meddelanden och konfiguration i whatsApp.
 
-➡️ [Självstudiekurser för whatsApp-kanal](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/whatsapp/whatsapp-introduction){target="_blank"}
+➡️ [Självstudiekurser för whatsApp-kanal](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/whatsapp/whatsapp-introduction){target="_blank"}
 

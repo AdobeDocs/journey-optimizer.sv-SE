@@ -26,13 +26,13 @@ Med Journey Optimizer kan du identifiera vilka åtgärder som användare i syste
 
 Detta gör att ni kan öka synligheten för aktiviteter som utförs i systemet, felsöka problem och hjälpa ert företag att följa regler och policyer för företagsdatahantering.
 
-Varje åtgärd registreras med metadata i &quot;granskningsloggar&quot; som är tillgängliga i Adobe Experience Platform. Mer information om granskningsloggar, inklusive hur du visar och hanterar dem i användargränssnittet eller API, finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html).
+Varje åtgärd registreras med metadata i &quot;granskningsloggar&quot; som är tillgängliga i Adobe Experience Platform. Mer information om granskningsloggar, inklusive hur du visar och hanterar dem i användargränssnittet eller API, finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=sv-SE).
 
 ![](assets/audit-logs.png)
 
 ## Händelsetyper som hämtats av granskningsloggar {#events}
 
-Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna. Den fullständiga listan över åtgärder som har hämtats i granskningsloggarna finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html#category).
+Följande tabell visar vilka åtgärder som Journey Optimizer-resurser registreras på i granskningsloggarna. Den fullständiga listan över åtgärder som har hämtats i granskningsloggarna finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=sv-SE#category).
 
 >[!NOTE]
 >

@@ -38,7 +38,7 @@ Push-meddelanden kan skapas:
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa och konfigurera push-meddelanden
 
@@ -48,7 +48,7 @@ Stegvisa anvisningar för att skapa och konfigurera push-meddelanden, inklusive 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Designa push-meddelanden
 
@@ -58,7 +58,7 @@ Upptäck hur du utformar och anpassar push-meddelanden med media, knappar, tysta
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Förhandsgranska, validera och skicka push-meddelanden
 
@@ -68,7 +68,7 @@ Lär dig hur du förhandsgranskar, validerar och skickar push-meddelanden, vilke
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfiguration av push-meddelanden
 

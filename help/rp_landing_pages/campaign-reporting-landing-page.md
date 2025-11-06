@@ -30,7 +30,7 @@ Lär dig hur du analyserar kampanjresultat med hjälp av nyckeltal som klickfrek
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Kodbaserad kampanjrapport
 
@@ -40,7 +40,7 @@ Förstå hur ni kan bedöma personaliserade upplevelser och AI-drivna strategier
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Kampanjrapport för innehållskort
 
@@ -50,7 +50,7 @@ Analysera Content Card-kampanjer med mätvärden som display och Click-trender, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 Kampanjrapport för direktreklam
 
@@ -60,7 +60,7 @@ Utvärdera direktreklamkampanjernas effektivitet genom att analysera leveranssta
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope-open-text.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope-open-text.svg?lang=sv-SE)
 
 Rapport om e-postkampanj
 
@@ -70,7 +70,7 @@ Få insikter i mätvärden för e-postprestanda, engagemangsnivåer och trattana
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/vial.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/vial.svg?lang=sv-SE)
 
 Kampanjrapport för experiment
 

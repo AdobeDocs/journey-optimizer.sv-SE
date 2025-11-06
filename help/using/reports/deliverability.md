@@ -102,7 +102,7 @@ Domänbaserad meddelandeautentisering, rapportering och överensstämmelse (DMAR
 >id="ajo_surface_dynamic_subdomain_list"
 >title="Vissa underdomäner kanske inte är tillgängliga"
 >abstract="Vissa underdomäner är för närvarande inte tillgängliga för val på grund av väntande registrering av feedbackloop. Den här processen kan ta upp till 10 arbetsdagar. När du är klar kan du välja bland alla tillgängliga underdomäner."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Kom igång med delegering till underdomäner"
+>additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation" text="Kom igång med delegering till underdomäner"
 
 En feedbackslinga (FBL) är en tjänst som erbjuds av vissa Internet-leverantörer som gör att e-postavsändaren automatiskt kan meddelas när den användare som tar emot ett e-postmeddelande väljer att markera det som skräppost (kallas även för ett klagomål).
 

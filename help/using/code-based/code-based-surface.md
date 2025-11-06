@@ -21,7 +21,7 @@ ht-degree: 1%
 >id="ajo_admin_surface_uri"
 >title="Lägg till yt-URI för komponenten"
 >abstract="Om implementeringen inte är för webben, iOS eller Android, eller om du behöver ange specifika URI:er, anger du en yt-URI, som är en unik identifierare som dirigerar till enheten där du vill leverera upplevelsen. Se till att du anger en yt-URI som matchar den som används i din egen implementering."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/code-based-experience/configure-code-based-channel/code-based-configuration#other" text="Skapa en kodbaserad upplevelsekonfiguration för andra plattformar"
+>additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/code-based-experience/configure-code-based-channel/code-based-configuration#other" text="Skapa en kodbaserad upplevelsekonfiguration för andra plattformar"
 
 En kodbaserad upplevelse **surface** är en entitet som är utformad för användar- eller systeminteraktion, unikt identifierad av en [URI](#surface-uri). Ytan anges i [programimplementeringen](code-based-prerequisites.md#implementation-prerequisites) och måste matcha ytan som refereras i din [kodbaserade upplevelsekanalskonfiguration](code-based-configuration.md).
 
@@ -76,8 +76,8 @@ Tabellerna nedan visar några exempel på URI-definitioner för olika enheter.
 
 I [!DNL Journey Optimizer] har den kodbaserade upplevelsekanalen stöd för två typer av kundimplementeringar:
 
-* Baserat på [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} för dina webbplatser eller på [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} för dina mobilappar.
-* Server-side eller hybrid med [AEP Edge Network Server-API:er](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"}.
+* Baserat på [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} för dina webbplatser eller på [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} för dina mobilappar.
+* Server-side eller hybrid med [AEP Edge Network Server-API:er](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE){target="_blank"}.
 
 >[!NOTE]
 >

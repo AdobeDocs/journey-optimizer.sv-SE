@@ -20,7 +20,7 @@ Adobe Experience Platform är grunden för att leverera verkligt personaliserade
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Använda funktionen inAudience
 

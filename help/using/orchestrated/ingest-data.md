@@ -39,29 +39,29 @@ Följande källor stöds för användning med Orchestrated-kampanjer:
   <tbody>
     <tr>
       <td rowspan="3">molnlagring</td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
+      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
+      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
+      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
     </tr>
       <td rowspan="4">Datalager i molnet</td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
+      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
+      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
+      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
+      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
     </tr>
     <tr>
       <td rowspan="3">Filbaserade överföringar</td>
-      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
+      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
     </tr>
 
 </tbody>
@@ -85,7 +85,7 @@ Om kunden bara vill ta bort poster från Adobe Experience Platform utan att orig
 
   Om den är licensierad kan **Data Distiller** användas för borttagningsåtgärder direkt i Adobe Experience Platform, oberoende av källsystemet.
 
-  [Läs mer om Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
+  [Läs mer om Data Distiller](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/overview)
 
 ## Konfigurera ett dataflöde
 

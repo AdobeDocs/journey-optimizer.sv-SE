@@ -75,6 +75,6 @@ Upptäck de detaljerade stegen för att skapa en webbkampanj i [den här videon]
 * **[Redigera webbinnehåll](create-web.md#edit-web-content)** - Lär dig mer om hur du ändrar sidor i visuella eller icke-visuella redigeringslägen.
 * **[Hantera webbändringar](manage-web-modifications.md)** - Lär dig hur du ordnar, använder och hanterar ändringar i dina webbupplevelser.
 * **[Övervaka webbupplevelser](monitor-web-experiences.md)** - Spåra och analysera resultatet för dina webbkampanjer med detaljerad rapportering.
-* **[Självstudiekurser för webbkampanjer](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Utforska steg-för-steg-videokurser om webbkanalsfunktioner och metodtips.
+* **[Självstudiekurser för webbkampanjer](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Utforska steg-för-steg-videokurser om webbkanalsfunktioner och metodtips.
 
 

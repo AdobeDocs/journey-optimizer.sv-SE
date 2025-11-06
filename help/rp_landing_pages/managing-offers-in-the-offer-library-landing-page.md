@@ -20,7 +20,7 @@ Avsnittet&quot;Skapa och hantera erbjudanden&quot; i Adobe Journey Optimizer ger
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera erbjudanden i Adobe Journey Optimizer
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar personaliserade erbjudanden, konfigurerar representatione
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa reserverbjudanden
 
@@ -40,7 +40,7 @@ Stegvis självstudiekurs om hur du skapar erbjudanden för kunder som inte är b
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och hantera offertsamlingar
 

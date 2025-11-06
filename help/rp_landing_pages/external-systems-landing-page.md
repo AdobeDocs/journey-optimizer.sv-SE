@@ -20,7 +20,7 @@ Genom att integrera era resor med externa system i Adobe Journey Optimizer kan n
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Bästa praxis för integrering av externa system
 
@@ -30,7 +30,7 @@ Lär dig bästa praxis och tekniska riktlinjer för integrering av Adobe Journey
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Översikt och implementeringshandbok för taktAPI
 
@@ -40,7 +40,7 @@ Lär dig hur du skapar, konfigurerar och hanterar capping-inställningar för ex
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Begränsnings-API: Configuration and Management Guide
 

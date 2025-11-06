@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Konfigurera stöd för innehållskort i Web SDK {#content-card-configuration-sdk}
 
-I det här exemplet visas hur du hämtar innehållskort från Adobe Journey Optimizer (AJO) med Adobe Experience Platform. Genom att utnyttja [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) hämtas personaliseringsinnehållet och återges helt på klientsidan.
+I det här exemplet visas hur du hämtar innehållskort från Adobe Journey Optimizer (AJO) med Adobe Experience Platform. Genom att utnyttja [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home) hämtas personaliseringsinnehållet och återges helt på klientsidan.
 
 När den första sidan läses in visas sidans standardläge. Om du interagerar med knapparna **Insättningsfonder** eller **Dela på sociala medier** visas ytterligare innehållskort. Dessa kort aktiveras av klientvillkoren, vilket säkerställer att de bara visas när specifika åtgärder vidtas.
 
@@ -46,7 +46,7 @@ När den första sidan läses in visas sidans standardläge. Om du interagerar m
 
 ## Så fungerar det {#setup}
 
-1. Inkludera och konfigurera [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) på sidan med inställningar från filen `.env` i exempelmappen.
+1. Inkludera och konfigurera [Web SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home) på sidan med inställningar från filen `.env` i exempelmappen.
 
    ```
    <script src="https://cdn1.adoberesources.net/alloy/2.18.0/alloy.min.js" async></script>

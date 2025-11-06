@@ -160,7 +160,7 @@ Följ stegen nedan för att definiera de kodbaserade upplevelsekonfigurationsins
 
    >[!NOTE]
    >
-   >Om du stöter på problem när du förhandsgranskar upplevelsen kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
+   >Om du stöter på problem när du förhandsgranskar upplevelsen kan du läsa [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/assurance/troubleshooting#app-does-not-open-link).
 
 ### Andra plattformar {#other}
 

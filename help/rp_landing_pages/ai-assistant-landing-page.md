@@ -20,7 +20,7 @@ Adobe Journey Optimizer AI Assistant revolutionerar innehållsskapandet genom at
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med AI Assistant
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till och konfigurerar AI Assistant-funktionen fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 Generering av e-postinnehåll med AI
 
@@ -40,7 +40,7 @@ Upptäck hur du använder AI Assistant för att skapa, anpassa och optimera e-po
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
 
 Generering av push-meddelandeinnehåll
 
@@ -50,7 +50,7 @@ Skapa och personalisera push-meddelandeinnehåll med AI, inklusive text och bild
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg?lang=sv-SE)
 
 Skapa SMS-innehåll med AI
 
@@ -60,7 +60,7 @@ Använd AI Assistant för att generera och förfina SMS-innehåll som får genkl
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg?lang=sv-SE)
 
 Skapa webbsidesinnehåll och resurser
 
@@ -70,7 +70,7 @@ Förbättra webbsidor och bilder med AI Assistant, och säkerställ att de är a
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/window-maximize.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/window-maximize.svg?lang=sv-SE)
 
 Generering av landningssidor med AI
 

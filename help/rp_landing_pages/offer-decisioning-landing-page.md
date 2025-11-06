@@ -20,7 +20,7 @@ Beslutshantering i Adobe Journey Optimizer ger er möjlighet att leverera rätt 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med beslutshantering
 
@@ -30,7 +30,7 @@ Lär dig grunderna i beslutshantering, inklusive komponenter, arbetsflöden och 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skapa och hantera beslutskomponenter
 
@@ -40,7 +40,7 @@ Lär dig hur du bygger praktik, beslutsregler och samlar kvalificerare för effe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Skapa och optimera rankningar
 
@@ -50,7 +50,7 @@ Lär dig rangordna erbjudanden med hjälp av formler och AI-modeller för att op
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och hantera erbjudanden
 
@@ -60,7 +60,7 @@ Stegvisa anvisningar för hur du skapar personaliserade erbjudanden, reservalter
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Skapa och hantera beslut
 
@@ -70,7 +70,7 @@ Lär dig konfigurera, rangordna och simulera beslut för personaliserad leverans
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Använda gruppbeslut
 

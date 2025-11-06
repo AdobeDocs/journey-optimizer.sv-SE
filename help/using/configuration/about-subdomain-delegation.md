@@ -110,7 +110,7 @@ Tabellen nedan tillhandahåller en sammanfattning av hur dessa metoder fungerar 
 | **CNAME-metod** | Skapa underdomänen och posten för namnrymden. Adobe tillhandahåller sedan de poster som ska placeras i DNS-servrarna och konfigurerar motsvarande värden i Adobe Campaign DNS-servrar.<br/><br/>I den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS:er. | Hög |
 | **Anpassad delegeringsmetod** | Skapa post för underdomän och namnområde - Adobe tillhandahåller sedan de poster som ska placeras i dina DNS-servrar. Överför SSL-certifikatet som hämtats från certifikatutfärdaren och fyll i feedbackloopstegen genom att verifiera domänägarskap och rapportera e-postadress.<br/><br/>I den här konfigurationen har du fullt ansvar för att underhålla DNS. | Mycket hög |
 
-Ytterligare information om domänkonfiguration finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html){target="_blank"}.
+Ytterligare information om domänkonfiguration finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html?lang=sv-SE){target="_blank"}.
 
 Om du har några frågor om konfigureringsmetoder för subdomäner kan du kontakta Adobe eller kontakta kundtjänst för att få rådgivning om slutprodukten.
 

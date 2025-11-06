@@ -20,7 +20,7 @@ Att designa innehåll i Adobe Journey Optimizer handlar om att skapa personalise
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Använd innehållskomponenter
 
@@ -30,7 +30,7 @@ Lär dig hur du lägger till och anpassar komponenter som text, knappar, bilder 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/layer-group.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/layer-group.svg?lang=sv-SE)
 
 Utnyttja visuella fragment
 
@@ -40,7 +40,7 @@ Upptäck hur du kan skapa återanvändbara fragment för att effektivisera e-pos
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Lägg till länkar och spåra meddelanden
 
@@ -50,7 +50,7 @@ Aktivera spårning, infoga länkar och hantera länkutseenden för att optimera 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Infoga personaliserade erbjudanden
 
@@ -60,7 +60,7 @@ Använd beslutshantering för att dynamiskt visa personaliserade erbjudanden som
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg?lang=sv-SE)
 
 Generera textversion
 
@@ -70,7 +70,7 @@ Skapa och anpassa e-postversionen med vanlig text för mottagare som inte kan vi
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Lägg till metadata
 

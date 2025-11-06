@@ -20,7 +20,7 @@ Med resor i Adobe Journey Optimizer kan ni skapa personaliserade kundresor i fle
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med Adobe Journey Optimizer Journeys
 
@@ -30,7 +30,7 @@ Lär dig skapa flerstegskunder i realtid med Adobe Journey Optimizer intuitiva d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Omfattande guide till att skapa och hantera resor
 
@@ -40,7 +40,7 @@ Stegvisa riktlinjer för att utforma, testa, publicera och spåra kundresor för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Omfattande guide till resehantering
 
@@ -50,7 +50,7 @@ Hantera kundresor effektivt med verktyg för filtrering, profilhantering, tidszo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Verksamheter i Adobe Journey Optimizer
 
@@ -60,7 +60,7 @@ Upptäck hur ni konfigurerar och använder aktiviteter som triggers, beslutssteg
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Skapa uttryck i Adobe Journey Optimizer
 
@@ -70,7 +70,7 @@ Masteruttryck för dynamiska arbetsflöden, datamanipulering och avancerad reses
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Exempel på praktisk användning för Adobe Journey Optimizer
 
@@ -88,6 +88,6 @@ Utforska verkliga program i Adobe Journey Optimizer, inklusive meddelanden i fle
 
 - **[Prenumerera på researney Alerts](../using/reports/alerts.md)** - Upptäck hur du hanterar systemaviseringar, prenumererar på aviseringar och felsöker problem under resor och kampanjer.
 
-- **[Självstudiekurser på resa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resor med praktiska videokurser som omfattar funktioner, funktioner och bästa praxis.
+- **[Självstudiekurser på resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resor med praktiska videokurser som omfattar funktioner, funktioner och bästa praxis.
 
 

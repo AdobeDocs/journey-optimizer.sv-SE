@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Att ge mottagarna möjlighet att avbryta prenumerationen på information från ett varumärke är ett juridiskt krav, liksom att se till att detta val respekteras. Om ni inte följer dessa regler medför detta juridiska risker för ert varumärke. Det hjälper er att undvika att skicka oombedda meddelanden till era mottagare, vilket kan få dem att märka era meddelanden som skräppost och skada ert rykte.
 
-Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.
+Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=sv-SE#regulations){target="_blank"}.
 
 ## Hantera avbeställningar under resor och kampanjer {#opt-out-ajo}
 
@@ -55,7 +55,7 @@ Lär dig hur du hanterar avanmälan i Journey Optimizer e-post och SMS-meddeland
 
 >[!NOTE]
 >
->I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
+>I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=sv-SE){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=sv-SE#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
 
 ## Genomför personalisering {#opt-out-personalization}
 
@@ -69,7 +69,7 @@ När du utnyttjar erbjudanden implementeras inte personaliseringsinställningar 
 >
 >Beslutsomfattningar som används i [!DNL Journey Optimizer] skapade kanaler uppfyller detta krav från den resa eller kampanj de tillhör.
 
-1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"} och använd ett profilattribut som **[!UICONTROL Personalize Content = Yes (opt-in)]** för målanvändare som har samtyckt till personalisering.
+1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE){target="_blank"} och använd ett profilattribut som **[!UICONTROL Personalize Content = Yes (opt-in)]** för målanvändare som har samtyckt till personalisering.
 
    ![](assets/perso-consent-od-audience.png)
 
@@ -121,7 +121,7 @@ Följ ett av alternativen nedan om du manuellt vill framtvinga godkännande av p
 
 Du kan använda segmentregelbyggaren för att skapa en målgrupp som innehåller avanmälningsprofiler.
 
-1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html){target="_blank"}.
+1. Skapa en [Adobe Experience Platform-målgrupp](../audience/about-audiences.md) med [segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE){target="_blank"}.
 
    ![](assets/perso-consent-audience-build-rule.png)
 
@@ -159,7 +159,7 @@ Du kan också lägga till en kontroll för godkännande av personalisering till 
 
 1. **[!UICONTROL Path 1]** blir den icke-personliga målgruppen. Välj en relevant etikett.
 
-1. Välj lämpligt värde i [listan](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}.
+1. Välj lämpligt värde i [listan](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=sv-SE#choice-values){target="_blank"}.
 
    I det här fallet använder vi `n` för att ange att användare inte godkänner att deras data används för personalisering.
 

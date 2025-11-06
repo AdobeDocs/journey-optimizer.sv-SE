@@ -21,7 +21,7 @@ Med appkanalen i Adobe Journey Optimizer kan ni kommunicera med appanvändarna i
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Kanalkonfiguration i programmet
 
@@ -31,7 +31,7 @@ Stegvisa anvisningar om hur du ställer in behörigheter, leveransinställningar
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa meddelanden i appen för mobiler
 
@@ -41,7 +41,7 @@ Lär dig hur du skapar, konfigurerar och publicerar mobilmeddelanden i appen med
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skapa meddelanden i appen för webben
 
@@ -51,7 +51,7 @@ Konfigurera och skapa webbkampanjer i appen med triggers, målgruppsanpassning o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/paint-brush.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/paint-brush.svg?lang=sv-SE)
 
 Designa och anpassa innehåll i appen
 
@@ -61,7 +61,7 @@ Utforska layoutalternativen, anpassa innehållet och använd avancerad formateri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/paper-plane.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/paper-plane.svg?lang=sv-SE)
 
 Kontrollera och skicka meddelanden i appen
 

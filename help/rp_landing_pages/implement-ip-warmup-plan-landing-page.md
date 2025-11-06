@@ -20,7 +20,7 @@ Genom att implementera en IP-värmerappsplan i Adobe Journey Optimizer kan du s�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Komma igång med IP Warmup Plans
 
@@ -30,7 +30,7 @@ Lär dig syftet, fördelarna och stegen i IP-warmup-planerna för att förbättr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa IP Warmup-kampanjer
 
@@ -40,7 +40,7 @@ Följ steg-för-steg-instruktioner för att utforma och aktivera kampanjer för 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Så här skapar och hanterar du en plan för IP-förstärkning
 
@@ -50,7 +50,7 @@ Upptäck hur du skapar, konfigurerar och hanterar din IP-värmerappsplan, inklus
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Kör och hantera din IP-säkerhetsplan
 

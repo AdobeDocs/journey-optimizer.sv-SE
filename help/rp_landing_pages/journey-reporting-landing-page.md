@@ -20,7 +20,7 @@ Reserapporter i Adobe Journey Optimizer innehåller kraftfulla verktyg för att 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Analyserar reserapporter
 
@@ -30,7 +30,7 @@ Upptäck hur ni kan analysera och optimera reseprestanda med hjälp av mätvärd
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Kodbaserade reserapporter
 
@@ -40,7 +40,7 @@ Förstå och analysera mätvärden för engagemang i kodbaserade upplevelser på
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Engagemang för innehållskort
 
@@ -50,7 +50,7 @@ Lär dig hur du mäter och utvärderar användarinteraktionen med innehållskort
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 Mätvärden för direktreklam
 
@@ -60,7 +60,7 @@ Analysera och tolka viktiga mätvärden för direktreklamkampanjer, inklusive le
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope-open.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope-open.svg?lang=sv-SE)
 
 E-postreserapportering
 
@@ -70,7 +70,7 @@ Få insikter om hur era kampanjer fungerar, engagerar och levererar e-post.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg?lang=sv-SE)
 
 Meddelandeinsikter i appen
 

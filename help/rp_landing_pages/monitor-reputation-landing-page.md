@@ -20,7 +20,7 @@ Hantera hälsotillståndet för era e-postkampanjer börjar med att övervaka de
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Hantera listan över utelämnanden
 
@@ -30,7 +30,7 @@ Lär dig hur du styr e-postleveransen genom att hantera undertryckningslistor, i
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Hantera återförsök och undertryckningslistor
 
@@ -40,7 +40,7 @@ Förstå och konfigurera återförsöksmekanismer för mjuka studsfel för att o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Konfigurera Tillåtelselista
 

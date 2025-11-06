@@ -63,4 +63,4 @@ Använd Journey Optimizer för att skapa meddelanden i appen och konfigurera upp
 * **[Konfigurera kanal i appen](inapp-configuration.md)** - Konfigurera din meddelandekanal i appen med rätt mobilappskonfigurationer.
 * **[Designa innehåll i appen](design-in-app.md)** - Anpassa layout, format, knappar och interaktiva element i appmeddelanden.
 * **[I appen för webben](create-in-app-web.md)** - Upptäck hur du skapar och levererar meddelanden i appen för webbprogram.
-* **[Kanalsjälvstudiekurser i appen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/in-app-channel/in-app-messages-overview){target="_blank"}** - Utforska steg-för-steg-videokurser om meddelandefunktioner i appen och metodtips.
+* **[Kanalsjälvstudiekurser i appen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/in-app-channel/in-app-messages-overview){target="_blank"}** - Utforska steg-för-steg-videokurser om meddelandefunktioner i appen och metodtips.

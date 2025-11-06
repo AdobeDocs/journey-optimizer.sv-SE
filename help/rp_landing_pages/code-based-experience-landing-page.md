@@ -20,7 +20,7 @@ Med kodbaserade upplevelser i Adobe Journey Optimizer kan ni leverera personalis
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Introduktion till kodbaserade upplevelser
 
@@ -30,7 +30,7 @@ Lär dig mer om kodbaserade upplevelser, användningsexempel och stegvis vägled
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera kodbaserade kanaler
 
@@ -40,7 +40,7 @@ Lär dig konfigurera och hantera kodbaserade kanaler, inklusive förutsättninga
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa kodbaserade upplevelser
 

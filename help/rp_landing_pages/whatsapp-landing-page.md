@@ -20,7 +20,7 @@ Adobe Journey Optimizer ger er möjlighet att kommunicera med er målgrupp på W
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med whatsApp Messaging
 
@@ -30,7 +30,7 @@ Lär dig hur du integrerar WhatsApp med Adobe Journey Optimizer, inklusive krav,
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera WhatsApp-kanalen
 
@@ -40,7 +40,7 @@ Stegvisa instruktioner för att ställa in inloggningsuppgifter för WhatsApp AP
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa whatsApp-meddelanden
 
@@ -50,7 +50,7 @@ Lär dig hur du utformar och skickar personaliserade meddelanden om whatsApp, in
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/check-circle.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/check-circle.svg?lang=sv-SE)
 
 Förhandsgranska, validera och skicka meddelanden om appar
 

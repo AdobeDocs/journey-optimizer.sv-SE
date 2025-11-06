@@ -20,7 +20,7 @@ Kanalkonfigurationen i Adobe Journey Optimizer gör det möjligt för er att han
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med kanalkonfiguration
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar kanaler i Adobe Journey Optimizer, inklusive teknis
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Konfigurera och hantera kanalkonfigurationer
 
@@ -40,7 +40,7 @@ Följ en detaljerad guide för att skapa, redigera, inaktivera och övervaka kan
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Inställningar för guidad kanal
 
@@ -50,7 +50,7 @@ Konfigurera mobil- och webbkanaler effektivt med stegvisa instruktioner och resu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg?lang=sv-SE)
 
 Delegera och hantera e-postunderdomäner
 
@@ -60,7 +60,7 @@ Lär dig delegera och konfigurera e-postunderdomäner för att optimera leverans
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Implementera en plan för IP-förstärkning
 
@@ -70,7 +70,7 @@ Skapa och genomför IP-värmeringsplaner för att etablera avsändarens anseende
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Övervaka e-postleverans och anseende
 

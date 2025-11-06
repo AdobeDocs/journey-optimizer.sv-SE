@@ -20,7 +20,7 @@ Genom att hantera relationsscheman och datauppsättningar i Adobe Journey Optimi
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med relationsscheman och datauppsättningar
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar scheman, konfigurerar datauppsättningar och importerar d
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Konfigurera ett manuellt relationsschema
 
@@ -40,7 +40,7 @@ Stegvisa instruktioner för att manuellt skapa scheman, lägga till attribut, l�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Skapa relationsscheman med en DDL-fil
 
@@ -50,7 +50,7 @@ Definiera scheman genom att överföra DDL-filer, länka tabeller och upprätta 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Ingest Data for Adobe Journey Optimizer Campaigns
 

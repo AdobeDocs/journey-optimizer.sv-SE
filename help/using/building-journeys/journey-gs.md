@@ -120,7 +120,7 @@ Läs mer om reserapporter i det här [avsnittet](../reports/live-report.md).
 * **[Publicerar resor](publish-journey.md)** - Förstå processen för att publicera resan och hur du hanterar direktresor.
 * **[Reserapportering](report-journey.md)** - Spåra och analysera reseprestanda med detaljerade mått och insikter.
 * **[Felsökning av resor](troubleshooting.md)** - Hitta lösningar på vanliga reseproblem och bästa praxis för felsökning.
-* **[Resehandledningar](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
+* **[Resehandledningar](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
 
 >[!NOTE]
 >

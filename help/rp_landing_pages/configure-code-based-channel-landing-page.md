@@ -20,7 +20,7 @@ Avsnittet Konfigurera kodbaserad kanal i Adobe Journey Optimizer hjälper er att
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Kodbaserade upplevelsekrav
 
@@ -30,7 +30,7 @@ Läs om förutsättningarna för kodbaserade upplevelser, inklusive implementeri
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Kodbaserade upplevelseytor
 
@@ -40,7 +40,7 @@ Förstå ytor och deras identifierare, komposition och användning i kodbaserade
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Exempel på implementeringsmetoder
 
@@ -50,7 +50,7 @@ Få stegvis vägledning för implementering av kodbaserade upplevelser på klien
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Beslut i kodbaserade implementeringar av upplevelser
 
@@ -60,7 +60,7 @@ Lär dig hur du konfigurerar deduplicering och hanterar beslutsbegäranden i kod
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Skapa kodbaserad upplevelsekonfiguration
 

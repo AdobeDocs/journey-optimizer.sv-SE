@@ -20,7 +20,7 @@ Med kodbaserade upplevelser i Adobe Journey Optimizer kan ni skapa anpassat, dyn
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Skapa och komponera kodbaserade upplevelser
 
@@ -30,7 +30,7 @@ Lär dig hur du skapar och konfigurerar kodbaserade upplevelser i Adobe Journey 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Använd redigerbara fält i kodbaserade upplevelser
 
@@ -40,7 +40,7 @@ Upptäck hur man lägger in redigerbara fält i mallar så att marknadsförarna 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Testa kodbaserade upplevelser
 
@@ -50,7 +50,7 @@ Lär dig hur du förhandsgranskar och simulerar kodbaserade upplevelser med test
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Publicera och hantera kodbaserade upplevelser
 

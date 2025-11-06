@@ -51,4 +51,4 @@ Med den här funktionen kan marknadsförarna presentera relevant, multimediemate
 
 * **[Innehållskort på landningssidor](content-card-lp.md)** - Upptäck hur du implementerar innehållskort på landningssidor för ökat engagemang.
 * **[Innehållskortsrapportering](content-card-report.md)** - Spåra och analysera innehållskortets prestanda med detaljerade mått och insikter.
-* **[Självstudiekurser för innehållskort](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/content-cards/create-content-cards){target="_blank"}** - Utforska steg-för-steg-videokurser om innehållskortsfunktioner och bästa praxis.
+* **[Självstudiekurser för innehållskort](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/content-cards/create-content-cards){target="_blank"}** - Utforska steg-för-steg-videokurser om innehållskortsfunktioner och bästa praxis.

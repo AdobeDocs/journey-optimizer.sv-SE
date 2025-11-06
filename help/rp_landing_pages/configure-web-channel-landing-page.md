@@ -20,7 +20,7 @@ Genom att konfigurera webbkanalen i Adobe Journey Optimizer kan ni leverera pers
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Förutsättningar för webbkanaler
 
@@ -30,7 +30,7 @@ Lär dig mer om de krav som krävs för att konfigurera och använda webbkanalsf
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera webbunderdomäner
 
@@ -40,7 +40,7 @@ Stegvisa anvisningar om hur du konfigurerar, hanterar och avdelegerar webbunderd
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa och konfigurera en webbkanal
 

@@ -267,14 +267,14 @@ Varje domän visas nu i en egen kolumn på samma rad.
 >id="ajo_admin_ip_warmup_upload"
 >title="Ange din IP-värmerammanslutning"
 >abstract="Fyll i Excel-mallen med alla data som kommer att mata din plan, som IP-värmersfaser och målantal profiler, och överför den här."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-plan.html#prepare-file" text="Förbered filen för IP-warmup-planen"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-plan.html?lang=sv-SE#prepare-file" text="Förbered filen för IP-warmup-planen"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_surface"
 >title="Välj en marknadsföringskonfiguration"
 >abstract="Du måste välja samma konfiguration som den som valts i kampanjen som du vill koppla till din IP-värmeringsplan."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Konfigurera kanalkonfigurationer"
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html" text="Skapa IP-värmningskampanjer"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html?lang=sv-SE" text="Konfigurera kanalkonfigurationer"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/channel-surfaces.html?lang=sv-SE" text="Skapa IP-värmningskampanjer"
 
 Följ stegen nedan om du vill skapa en IP-värmeringsplan.
 

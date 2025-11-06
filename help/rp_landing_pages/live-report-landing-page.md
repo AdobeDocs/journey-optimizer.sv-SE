@@ -20,7 +20,7 @@ Live-rapportfunktionen i Adobe Journey Optimizer gör det möjligt att spåra oc
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med Live-rapport
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till, anpassar och exporterar Live-rapporter för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Lista över mått
 
@@ -40,7 +40,7 @@ Förstå definitioner och kategorier av mätvärden som används i Live-rapporte
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Rapport om resebesök
 
@@ -50,7 +50,7 @@ Analysera resultatet av resor och tillhörande kommunikationskanaler i realtid u
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Campaign Live-rapport
 
@@ -60,7 +60,7 @@ Visualisera kampanjresultat i flera kanaler som e-post, push, SMS, webb och dire
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Live-rapport för landningssida
 
@@ -70,7 +70,7 @@ Utvärdera landningssidans prestanda med realtidsstatistik som besök, konverter
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Live-prenumerationsrapport
 

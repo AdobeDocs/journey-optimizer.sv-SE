@@ -53,7 +53,7 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 **Webb**
 
 * Redigera ditt innehåll med den visuella [webbdesignern](../web/web-visual-editor.md){target="_blank"} eller den icke-visuella [webbredigeraren](../web/web-non-visual-editor.md).
-* Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} - en implementering på klientsidan.
+* Du behöver [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} - en implementering på klientsidan.
   <!--* You need the [Adobe Experience Cloud Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca){target="_blank"} extension installed on your web browser. [Learn more](../web/web-prerequisites.md){target="_blank"}-->
 * Med webbkanalen kan du ändra allt på sidan och ha en fördefinierad lista över åtgärder som du kan använda för att göra ändringar. [Läs mer](../web/web-visual-editor.md){target="_blank"}
 * Det är enkelt att konfigurera och komma igång snabbt.
@@ -62,7 +62,7 @@ Om du vill köra webbanvändningsfall kan du använda antingen webbkanalen eller
 **Kodbaserad upplevelse**
 
 * Redigera ditt innehåll med [anpassningsredigeraren](create-code-based.md#edit-code).
-* Du behöver antingen [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} - implementering på klientsidan eller [AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"} - implementering på serversidan.
+* Du behöver antingen [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} - implementering på klientsidan eller [AEP Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE){target="_blank"} - implementering på serversidan.
 * Den kodbaserade upplevelsen kräver tidigare utvecklingsarbete med implementeringen för att säkerställa att dina program kan tolka och leverera innehåll som publiceras på kanten av [!DNL Journey Optimizer] för dessa platser. [Läs mer](code-based-surface.md)
 * Det kräver mer planering och kan bara ändra det som utvecklarna anger. Därför är det viktigt att identifiera komponenterna (hembanner, hjältebild, menyrad osv.) i de program som behöver ändras för personalisering eller testning, och samarbeta med utvecklingsteamet för att skapa den implementering som behövs för att hantera dessa ändringar.
 * Du kan använda JSON-kodinnehåll.
@@ -109,5 +109,5 @@ De viktigaste stegen för att skapa och leverera en kodbaserad upplevelse är f�
 * **[Kodbaserade förutsättningar](code-based-prerequisites.md)** - Förstå de tekniska krav och utvecklarresurser som krävs för implementeringen.
 * **[Testa kodbaserade upplevelser](test-code-based.md)** - Lär dig hur du förhandsgranskar och testar kodbaserade upplevelser innan du publicerar.
 * **[Implementeringsexempel](code-based-implementation-samples.md)** - Utforska kodexempel och implementeringsmönster för olika användningsområden.
-* **[Kodbaserade självstudiekurser för upplevelser](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/code-based-experience-channel/create-a-code-based-experience-campaign){target="_blank"}** - Utforska stegvisa videokurser om kodbaserade funktioner och metodtips.
+* **[Kodbaserade självstudiekurser för upplevelser](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/code-based-experience-channel/create-a-code-based-experience-campaign){target="_blank"}** - Utforska stegvisa videokurser om kodbaserade funktioner och metodtips.
 

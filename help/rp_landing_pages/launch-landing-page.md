@@ -20,7 +20,7 @@ Genom att lansera din första Orchestrated-kampanj i Adobe Journey Optimizer kan
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Steg för steg-guide för att skapa en välstrukturerad kampanj
 
@@ -30,7 +30,7 @@ Lär dig de viktigaste stegen för att skapa, hantera och analysera en orkestrer
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa och schemalägg en orkestrerad kampanj
 
@@ -40,7 +40,7 @@ Upptäck hur du skapar och konfigurerar kampanjegenskaper, körningsplaner och s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Samordna kampanjaktiviteter
 
@@ -50,7 +50,7 @@ Lär dig bemästra den visuella arbetsytan för att designa och konfigurera akti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Starta och övervaka era kampanjer
 
@@ -60,7 +60,7 @@ Lär dig hur du testar, publicerar och övervakar dina Orchestrated-kampanjer f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Rapportering för samordnade kampanjer
 
