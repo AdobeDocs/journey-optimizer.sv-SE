@@ -31,4 +31,4 @@ Detaljerad information om hur du importerar målgrupper finns i Adobe Experience
 
 Lär dig hur du överför målgrupper i CSV-format i video:
 
->[!VIDEO](https://video.tv.adobe.com/v/3421714?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3432430?captions=swe&quality=12)

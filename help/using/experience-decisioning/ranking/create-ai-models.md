@@ -117,4 +117,4 @@ För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klic
 
 Learn how to create a personalized optimization model and how to apply it to a decision.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419954?quality=12)-->
+>[!VIDEO](https://video.tv.adobe.com/v/3445955?captions=swe&quality=12)-->

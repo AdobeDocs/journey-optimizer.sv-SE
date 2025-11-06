@@ -100,4 +100,4 @@ För det flerspråkiga innehållet måste följande inställningar definieras:
 
 Lär dig hur du skapar innehåll på flera språk i en enda kampanj eller resa.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430921/)
+>[!VIDEO](https://video.tv.adobe.com/v/3452117?captions=swe)

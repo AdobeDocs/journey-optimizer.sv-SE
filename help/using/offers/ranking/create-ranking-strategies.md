@@ -95,4 +95,4 @@ För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klic
 
 Lär dig hur du skapar en personaliserad optimeringsmodell och hur du tillämpar den på ett beslut.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419954?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3445955?captions=swe&quality=12)

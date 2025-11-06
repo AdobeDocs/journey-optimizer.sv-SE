@@ -184,4 +184,4 @@ Möjligheten att ändra enhetsstorleken är utformad för responsiva sajter som 
 
 I videon nedan visas hur du skapar en webbupplevelse med webbdesignern i [!DNL Journey Optimizer]-kampanjer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418803/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452639/?captions=swe&quality=12&learn=on)

@@ -195,6 +195,6 @@ I videon nedan visas hur du skapar en whatsApp-resa i flera steg med Adobe Journ
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470282/?learn=on")
+>[!VIDEO](https://video.tv.adobe.com/v/3470286/?captions=swe&learn=on")
 
 +++

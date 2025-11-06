@@ -148,7 +148,7 @@ Din bild är nu klar att användas i ditt innehåll.
 
 Lär dig hur du redigerar resurser i Adobe Journey Optimizer med Adobe Express verktyg.
 
->[!VIDEO](https://video.tv.adobe.com/v/3455523/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3455527/?captions=swe&quality=12)
 
 
 

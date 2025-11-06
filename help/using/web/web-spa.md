@@ -90,4 +90,4 @@ I den här videon beskrivs hur du:
 * Använd webbplatsändringar på flera vyer eller på alla vyer som identifierats
 * Göra satsåtgärder på ändringar
 
->[!VIDEO](https://video.tv.adobe.com/v/3424536/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446889/?captions=swe&quality=12&learn=on)
