@@ -28,7 +28,7 @@ Därifrån kan man
 
 * **Kod eller klistra in HTML i Raw-format** direkt i innehållsdesignern. Lär dig hur du kodar ditt eget innehåll [i det här avsnittet](../email/code-content.md).
 
-* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [ i det här avsnittet](../email/existing-content.md).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [&#x200B; i det här avsnittet](../email/existing-content.md).
 
 * **Använd en sparad landningssidmall** som skapats i [!DNL Journey Optimizer]. [Läs mer](lp-templates.md)
 

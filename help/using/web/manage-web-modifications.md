@@ -181,7 +181,7 @@ Varje ändring skapar ett nytt element på panelen **[!UICONTROL Modifications]*
 
 +++
 
-+++ **Var försiktig när du använder ändringstypen **[!UICONTROL Page `<head>`]**för två kampanjer som påverkar samma URL.**
++++ **Var försiktig när du använder ändringstypen &#x200B;** [!UICONTROL Page `<head>`]&#x200B;**för två kampanjer som påverkar samma URL.**
 
 Om du använder ändringstypen **[!UICONTROL Page `<head>`]** för två kampanjer som påverkar samma URL, kommer JavaScript att matas in på sidan från båda kampanjerna. [!DNL Journey Optimizer] bestämmer automatiskt ordningen för det levererade innehållet. Kontrollera att koden inte är beroende av placering. Det är upp till dig att se till att det inte finns några konflikter i koden.
 

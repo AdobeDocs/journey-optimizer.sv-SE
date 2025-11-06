@@ -38,7 +38,7 @@ Observera att **[!UICONTROL Roles]**, **[!UICONTROL Policies]** och **[!UICONTRO
 
 >[!IMPORTANT]
 >
->>Skapa en profil innan du hanterar behörigheter för en roll. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/policies.html){target="_blank"}.
+>&#x200B;>Skapa en profil innan du hanterar behörigheter för en roll. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/permissions-ui/policies.html){target="_blank"}.
 
 **[!UICONTROL Roles]** är en uppsättning användare som delar samma behörigheter, etiketter och sandlådor i din organisation. Varje användare som tillhör en **[!UICONTROL Role]** har rätt till de Adobe-program och -tjänster som ingår i produkten. Du kan också skapa egna **[!UICONTROL Roles]** för att finjustera användarnas åtkomst till vissa funktioner eller objekt i gränssnittet.
 

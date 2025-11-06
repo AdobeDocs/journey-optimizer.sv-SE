@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Kontrollera webbrapporter {#check-web-reports}
 
-När webbupplevelsen är live kan du kontrollera fliken **[!UICONTROL Web]** i [reserapporten](../reports/journey-global-report-cja-web.md) och [ kampanjrapporten](../reports/campaign-global-report-cja-web.md) för att jämföra element som antalet visningar, klickfrekvens och antal aktiviteter med webbsidan.
+När webbupplevelsen är live kan du kontrollera fliken **[!UICONTROL Web]** i [reserapporten](../reports/journey-global-report-cja-web.md) och [&#x200B; kampanjrapporten](../reports/campaign-global-report-cja-web.md) för att jämföra element som antalet visningar, klickfrekvens och antal aktiviteter med webbsidan.
 
 <!--You can check the **[!UICONTROL Web]** tab of the campaign reports. Learn more about the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [global report](../reports/campaign-global-report-cja.md#web).-->
 

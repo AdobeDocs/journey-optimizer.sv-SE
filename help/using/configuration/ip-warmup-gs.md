@@ -56,4 +56,4 @@ Lär dig hur du skapar och kör en IP-värmeringsplan.
 
 >[!NOTE]
 >
->Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html) Leveranssätt med bästa praxis.
+>Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html) Leveranssätt med bästa praxis.

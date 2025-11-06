@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Om du vill hantera dina fragment kan du komma åt fragmentlistan från den vänstra menyn **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**.
 
-Alla fragment som skapades i den aktuella sandlådan - antingen [ från **[!UICONTROL Fragments]**-menyn](create-fragments.md#create-fragments), antingen med alternativet [Spara som fragment](save-fragments.md) - visas.
+Alla fragment som skapades i den aktuella sandlådan - antingen [&#x200B; från **[!UICONTROL Fragments]**-menyn](create-fragments.md#create-fragments), antingen med alternativet [Spara som fragment](save-fragments.md) - visas.
 
 I rutan till vänster kan du ordna fragment i mappar. Som standard visas alla fragment. När du väljer en mapp visas endast de fragment och mappar som finns i den valda mappen. [Läs mer](#folders)
 

@@ -108,7 +108,7 @@ Följ stegen nedan för att definiera de kodbaserade inställningarna för upple
 1. Följande gäller för förhandsvisnings-URL:en:
 
    * Om du anger en URL för en sida används den URL:en för förhandsgranskningen - du behöver inte ange en annan URL.
-   * Om du väljer en [sida som matchar regeln ](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i en webbläsare. [Läs mer](test-code-based.md#preview-on-device)
+   * Om du väljer en [sida som matchar regeln &#x200B;](../web/web-configuration.md#web-page-matching-rule) måste du ange en **[!UICONTROL Default authoring and preview URL]** som ska användas för att förhandsgranska upplevelsen i en webbläsare. [Läs mer](test-code-based.md#preview-on-device)
 
      ![](assets/code_config_matching_rules_preview.png)
 

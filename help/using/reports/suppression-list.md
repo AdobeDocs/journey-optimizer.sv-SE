@@ -45,7 +45,7 @@ Adresser läggs till i listan över undertryckningar enligt följande:
 
 * **Mjuka studsar** skickar inte omedelbart en adress till listan över inaktiveringar, men de ökar en felräknare. Flera [försök](../configuration/retries.md) utförs sedan, och när felräknaren når tröskelvärdet läggs adressen till i listan.
 
-* Du kan också [**manuellt** lägga till en adress eller en domän ](../configuration/manage-suppression-list.md#add-addresses-and-domains) i listan över inaktiveringar.
+* Du kan också [**manuellt** lägga till en adress eller en domän &#x200B;](../configuration/manage-suppression-list.md#add-addresses-and-domains) i listan över inaktiveringar.
 
 Läs mer om hårda studsar och mjuka studsar i [det här avsnittet](#delivery-failures).
 

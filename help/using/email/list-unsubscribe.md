@@ -20,7 +20,7 @@ ht-degree: 0%
 
 <!--Do not modify - Legal Review Done -->
 
-När du konfigurerar en ny e-postkanalskonfiguration i [!DNL Adobe Journey Optimizer] visas alternativet [ när du ](email-settings.md#subdomains-and-ip-pools)väljer en underdomän **[!UICONTROL Enable List-Unsubscribe]** i listan. Den är aktiverad som standard.
+När du konfigurerar en ny e-postkanalskonfiguration i [!DNL Adobe Journey Optimizer] visas alternativet [&#x200B; när du &#x200B;](email-settings.md#subdomains-and-ip-pools)väljer en underdomän **[!UICONTROL Enable List-Unsubscribe]** i listan. Den är aktiverad som standard.
 
 ![](assets/preset-list-unsubscribe.png)
 
@@ -83,7 +83,7 @@ Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL On
 
 * Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen.
 
-   * Om du lägger till en **[!UICONTROL Enable List-Unsubscribe]**-klicksavanmälningslänk **[!UICONTROL One-click Unsubscribe URL]** i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet [ är aktiverat och funktionen ](../email/email-opt-out.md#one-click-opt-out) inte är markerad.
+   * Om du lägger till en **[!UICONTROL Enable List-Unsubscribe]**-klicksavanmälningslänk **[!UICONTROL One-click Unsubscribe URL]** i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet [&#x200B; är aktiverat och funktionen &#x200B;](../email/email-opt-out.md#one-click-opt-out) inte är markerad.
 
      ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
@@ -127,7 +127,7 @@ Om du vill anpassa slutpunkterna <!-- (**[!UICONTROL Mailto (unsubscribe)]** and
 
 >[!AVAILABILITY]
 >
->Den här funktionen är tillgänglig med begränsad tillgänglighet för alternativet **[!UICONTROL Mailto (unsubscribe)]**. Kontakta din Adobe-representant för att få åtkomst. I det här fallet måste du använda de nya frågeparametrarna som beskrivs i **Mailto (unsubscribe) med anpassade attribut (Begränsad tillgänglighet)** [ nedan](#configure-decrypt-api).
+>Den här funktionen är tillgänglig med begränsad tillgänglighet för alternativet **[!UICONTROL Mailto (unsubscribe)]**. Kontakta din Adobe-representant för att få åtkomst. I det här fallet måste du använda de nya frågeparametrarna som beskrivs i **Mailto (unsubscribe) med anpassade attribut (Begränsad tillgänglighet)** [&#x200B; nedan](#configure-decrypt-api).
 
 Använd avsnittet **[!UICONTROL URL tracking parameters]** om du vill definiera anpassade attribut för slutpunkterna. Alla URL-spårningsparametrar som du anger i motsvarande avsnitt läggs till i slutet av de anpassade slutpunkterna, förutom standardparametrarna. [Lär dig hur du ställer in anpassad URL-spårning](url-tracking.md)
 
@@ -164,7 +164,7 @@ Nedan visas exempelparametrar och samtycke:
 
 | Frågeparameter | Exempel på nyttolast |
 |---------|----------|
-| pid | {<br>&quot;pid&quot; : &quot;514273041546020095851529937068211571&quot;,<br>&quot;pns&quot; : &quot;CRMID&quot;,<br> 2}&quot;e&quot;    :&quot;john@google.com&quot;,<br>&quot;ens&quot; :&quot;Email&quot;,<br>} |
+| pid | {<br>&quot;pid&quot; : &quot;514273041546020095851529937068211571&quot;,<br>&quot;pns&quot; : &quot;CRMID&quot;,<br> 2}&quot;e&quot;    :&quot;john@google.com&quot;,<br>&quot;ens&quot; :&quot;Email&quot;,<br>&rbrace; |
 | parametrar | {<br>&quot;m&quot; : &quot;messageExecutionId&quot;,<br>&quot;ci&quot; : &quot;campaignId&quot;,<br>&quot;jv&quot; : &quot;travelVersionId&quot;,<br>&quot;ja&quot; : &quot;travelActionId&quot;,<br>&quot;s&quot; : &quot;sandboxId&quot;,<br>&quot;us&quot; : &quot;unsubscribeScope&quot;<br>} |
 
 Samtyckessvar:
@@ -214,7 +214,7 @@ Nedan visas exempelparametrar och samtycke:
 
 | Frågeparameter | Exempel på nyttolast |
 |---------|----------|
-| emailParams | {<br>&quot;p&quot; : &quot;profileId&quot;,<br>&quot;pn&quot; : &quot;profileNamespace&quot;,<br>&quot;en&quot; : &quot;emailNamespace&quot;,<br>&quot;ci&quot; : &quot;campaignId&quot;,<br>&quot;jv&quot; : &quot;travelVersionId&quot;,<br>&quot;ja&quot; : &quot;travelActionId&quot;,<br>&quot;si&quot; : &quot;sandboxId&quot;,<br>&quot;us&quot;: &quot;unsubscribeScope&quot;<br> |
+| emailParams | &lbrace;<br>&quot;p&quot; : &quot;profileId&quot;,<br>&quot;pn&quot; : &quot;profileNamespace&quot;,<br>&quot;en&quot; : &quot;emailNamespace&quot;,<br>&quot;ci&quot; : &quot;campaignId&quot;,<br>&quot;jv&quot; : &quot;travelVersionId&quot;,<br>&quot;ja&quot; : &quot;travelActionId&quot;,<br>&quot;si&quot; : &quot;sandboxId&quot;,<br>&quot;us&quot;: &quot;unsubscribeScope&quot;<br> |
 
 Samtyckessvar:
 
@@ -259,7 +259,7 @@ Frågeparametrar:
 
    * Analyserat värde: *v1.xyz*
 
-API-exempel: https://platform.adobe.io/journey/imp/consent/decrypt?emailParamsSub=v1.abc&amp;emailParamsBody=v1.xyz
+API-exempel: https://platform.adobe.io/journey/imp/consent/decrypt?emailParamsSub=v1.abc&emailParamsBody=v1.xyz
 
 >[!CAUTION]
 >
