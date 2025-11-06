@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: 528e1a54dd64503e5de716e63013c4fc41fd98db
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Så här lägger du till en **webbaktivitet** på en resa:
 
 1. Slutför vid behov kundresan genom att dra och släppa ytterligare åtgärder eller händelser. [Läs mer](../building-journeys/about-journey-activities.md)
 
-1. När webbupplevelsen är klar kan du slutföra konfigurationen och publicera din resa för att aktivera den. [Läs mer](../building-journeys/publishing-the-journey.md)
+1. När webbupplevelsen är klar kan du slutföra konfigurationen och publicera din resa för att aktivera den. [Läs mer](../building-journeys/publish-journey.md)
 
 Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
 
@@ -103,13 +103,13 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
 >abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
 >title="Ange den URL som ska redigeras"
 >abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 När du har [lagt till en webbåtgärd](#create-web-experience) på en resa eller en kampanj kan du redigera innehållet på din webbplats med:
 
@@ -118,7 +118,7 @@ När du har [lagt till en webbåtgärd](#create-web-experience) på en resa elle
 
 Följ stegen nedan för att börja skapa din webbupplevelse.
 
-1. Välj **[!UICONTROL Edit content]** på fliken **[!UICONTROL Action]** i kampanjen eller **[!UICONTROL Web]**-aktiviteten i resan.
+1. Välj **[!UICONTROL Action]** på fliken **[!UICONTROL Web]** i kampanjen eller **[!UICONTROL Edit content]**-aktiviteten i resan.
 
    ![](assets/web-campaign-edit-content.png)
 
@@ -206,7 +206,7 @@ Följ stegen nedan för att göra din webbupplevelse levande från en resa.
 
    >[!NOTE]
    >
-   >Läs mer om att publicera resor i [det här avsnittet](../building-journeys/publishing-the-journey.md).
+   >Läs mer om att publicera resor i [det här avsnittet](../building-journeys/publish-journey.md).
 
 Din webbresa har statusen **[!UICONTROL Live]** och är nu skrivskyddad. Varje mottagare av resan kan se de ändringar du har lagt till på webbplatsen.
 
@@ -266,4 +266,4 @@ När en webbresa eller kampanj är aktiv kan ni stoppa den för att hindra publi
 
 I videon nedan visas hur du skapar en webbkampanj, konfigurerar dess egenskaper, granskar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449985/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3418800/?quality=12&learn=on)

@@ -10,7 +10,7 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 186b061d-0941-48be-8917-bbdfff6dae90
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 1%
@@ -54,7 +54,7 @@ För varje aktivitet inom varje resa i Live eller [Torr körningsläge](journey-
 >[!MORELIKETHIS]
 >
 >* [Kom igång med rapportering](../reports/gs-reports.md)
->* [Publicera din resa](publishing-the-journey.md)
+>* [Publicera din resa](publish-journey.md)
 >* [Renstorkning](journey-dry-run.md)
 >* [Konfigurera och spåra dina resemått](success-metrics.md)
 >* [Anpassade reserapporter](../reports/sharing-overview.md)

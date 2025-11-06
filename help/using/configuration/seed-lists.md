@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: utsädeslista, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
-source-git-commit: 1cca05a4f7590f42c1ed5104cb530930e139b2b9
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 2%
@@ -32,17 +32,17 @@ Seed-adresser är inte riktiga profiler eller testprofiler eftersom de inte inne
 
   Exempel:
 
-+++ Om du är marknadschef:
+  +++ Om du är marknadschef:
 
   Ni vill att alla teammedlemmar ska få kopior av skickade meddelanden samtidigt som era kunder. På så sätt kan teamet se till att meddelanden skickas ut med den förväntade layouten, aktiva URL:er, korrekt text och bilder - allt som planerat före körningen.
 
-+++
+  +++
 
-+++ Om du är produktägare:
+  +++ Om du är produktägare:
 
   Ni måste hålla reda på faktiska meddelanden som skickas till kunderna. Ert team och ert ledarskap kan vara intresserade av vissa kampanjer och behöver läggas till på ad hoc-basis för att kunna ta emot kopior av meddelanden vid leveranstillfället.
 
-+++
+  +++
 
 * En annan orsak till att du använder listor med startsidor är att du skyddar din sändlista. Genom att infoga dirigerade adresser i din e-postlista kan du lägga märke till om de används av en tredje part, eftersom de dirigerade adresserna som finns där kommer att få leveranserna som skickas till din e-postlista.
 
@@ -73,7 +73,7 @@ Använd knappen **[!UICONTROL Delete]** om du vill ta bort en post permanent.
 
 >[!CAUTION]
 >
->Det går inte att ta bort en startvärdeslista som används i en aktiv [kampanj](../campaigns/review-activate-campaign.md) eller [resa](../building-journeys/publishing-the-journey.md). Du måste inaktivera kampanjen/resan eller redigera den för att använda en annan konfiguration som inte har startvärdeslistan markerad. [Läs mer om hur du använder en startvärdeslista](#use-seed-list)
+>Det går inte att ta bort en startvärdeslista som används i en aktiv [kampanj](../campaigns/review-activate-campaign.md) eller [resa](../building-journeys/publish-journey.md). Du måste inaktivera kampanjen/resan eller redigera den för att använda en annan konfiguration som inte har startvärdeslistan markerad. [Läs mer om hur du använder en startvärdeslista](#use-seed-list)
 
 Du kan klicka på ett namn på en startlista om du vill redigera den. <!--Use the **[!UICONTROL Edit]** button to edit a seed list.-->
 
@@ -83,7 +83,7 @@ Du kan klicka på ett namn på en startlista om du vill redigera den. <!--Use th
 >id="ajo_seed_list_details"
 >title="Definiera en startvärdeslista"
 >abstract="Använd en lista för att automatiskt lägga till specifika interna adresser till era leveransgrupper för att försäkra er. Med hjälp av dirigerade listor kan du övervaka utskickade meddelandekopior för att säkerställa att alla visningselement är korrekta och för att skydda din sändningslista. Den här funktionen gäller för närvarande bara för e-postkanalen."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html?lang=sv-SE#use-seed-list" text="Vad är utsädeslistor?"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="Vad är utsädeslistor?"
 
 >[!CONTEXTUALHELP]
 >id="ajo_seed_addresses"
@@ -150,7 +150,7 @@ Nu när din startlista har skapats kan du använda den i alla kampanjer och unde
 
    ![](assets/seed-list-campaign-email.png)
 
-1. Aktivera din [kampanj](../campaigns/review-activate-campaign.md) eller publicera din [resa](../building-journeys/publishing-the-journey.md).
+1. Aktivera din [kampanj](../campaigns/review-activate-campaign.md) eller publicera din [resa](../building-journeys/publish-journey.md).
 
 Varje gång ett e-postmeddelande skickas till kunderna via kampanjen eller resan får e-postadresserna på den valda startlistan också det på samma villkor, vid samma tidpunkt och med samma innehåll som målmottagarna.
 

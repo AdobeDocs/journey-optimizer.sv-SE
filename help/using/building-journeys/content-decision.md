@@ -11,7 +11,7 @@ badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: aktivitet, beslut, innehållsbeslut, beslutspolitik, arbetsyta, resa
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 version: Journey Orchestration
-source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 1%
@@ -146,7 +146,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    ![Redigera den anpassade åtgärdens frågeparametrar](assets/journey-content-decision-custom-action-param.png)
 
-1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [&#x200B; i den &#x200B;](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
+1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [ i den ](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
 
    >[!CAUTION]
    >
@@ -166,9 +166,9 @@ Nedan visas det fullständiga exemplet på en resa där en innehållsbeslutsakti
 
 ![Hela resan](assets/journey-content-decision-full-journey.png)
 
-<!--When all activities are properly configured and saved, [publish](publishing-the-journey.md) your journey.-->
+<!--When all activities are properly configured and saved, [publish](publish-journey.md) your journey.-->
 
-När resan är [aktiverad](publishing-the-journey.md):
+När resan är [aktiverad](publish-journey.md):
 
 <!--* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
 

@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
-source-git-commit: fa4849cfbb43d74ab85437f00acf6da750080cca
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '5125'
 ht-degree: 0%
@@ -374,7 +374,7 @@ När du publicerar en resa:
 * Meddelanden och åtgärder börjar köras för profiler som rör sig genom resan
 * Du kan bara redigera begränsade saker på en publicerad resa (du måste skapa en ny version om du vill redigera fler)
 
-Läs mer om [publiceringsresor](publishing-the-journey.md).
+Läs mer om [publiceringsresor](publish-journey.md).
 
 +++
 
@@ -435,7 +435,7 @@ Läs mer om [slutresor](end-journey.md).
 * Använd detta för akuta situationer eller kritiska fel
 * Exempel: Återkallande av produkter kräver omedelbart stopp av kampanjmeddelanden
 
-Läs mer om [avslut på resor](end-journey.md) och [publiceringsresor](publishing-the-journey.md).
+Läs mer om [avslut på resor](end-journey.md) och [publiceringsresor](publish-journey.md).
 
 +++
 
@@ -940,4 +940,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

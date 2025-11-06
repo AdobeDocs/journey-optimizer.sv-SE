@@ -10,7 +10,7 @@ level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
 version: Journey Orchestration
-source-git-commit: 46fe967c55db9f37221a616e7979bd3fafd6b070
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 1%
@@ -93,7 +93,7 @@ Så här använder du testläget:
 
    ![](assets/journeyuctest2.png)
 
-1. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. När testerna är klara kan du publicera din resa. Läs [den här sidan](../building-journeys/publishing-the-journey.md).
+1. Om något fel uppstår kan du inaktivera testläget, ändra din resa och testa den igen. När testerna är klara kan du publicera din resa. Läs [den här sidan](../building-journeys/publish-journey.md).
 
 ## Utlös dina händelser {#firing_events}
 

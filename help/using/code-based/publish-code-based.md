@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: a1daf6f7-c26c-4d70-984b-0b4eeb04a1a8
-source-git-commit: d3f15c09194a50b95107fb84d680606a468f8644
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Följ stegen nedan för att göra din kodbaserade upplevelse levande från en re
 
    >[!NOTE]
    >
-   >Läs mer om att publicera resor i [det här avsnittet](../building-journeys/publishing-the-journey.md).
+   >Läs mer om att publicera resor i [det här avsnittet](../building-journeys/publish-journey.md).
 
 Din kodbaserade resa har statusen **[!UICONTROL Live]** och är nu synlig för den valda målgruppen. Varje mottagare av resan kan se dina ändringar.
 

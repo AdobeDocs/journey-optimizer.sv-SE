@@ -11,7 +11,7 @@ keywords: aktivitet, villkor, arbetsyta, resa, optimering
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: f69e482daf457f1c331d158d1bf04b4cfb392197
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
@@ -53,7 +53,7 @@ När resan är live utvärderas profiler mot de definierade kriterierna, och bas
 >id="ajo_path_experiment_success_metric"
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
 
 Experimentation gör att du kan testa olika banor baserat på en slumpmässig delning för att avgöra vilken som fungerar bäst baserat på fördefinierade framgångsmått.
 
@@ -115,7 +115,7 @@ Låt oss säga att du vill jämföra tre banor:
 
    ![](assets/journey-optimize-experiment-content.png){width=100%}
 
-1. [Publicera](publishing-the-journey.md) din resa.
+1. [Publicera](publish-journey.md) din resa.
 
 När resan är live tilldelas användarna slumpvis olika vägar. [!DNL Journey Optimizer] spårar vilken sökväg som fungerar bäst och ger åtgärdbara insikter.
 
@@ -238,7 +238,7 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
    I det här exemplet skapar du ett e-postmeddelande med specialerbjudanden för guldmedlemmar och en SMS-påminnelse för de andra medlemmarna.
 
-1. [Publicera](publishing-the-journey.md) din resa.
+1. [Publicera](publish-journey.md) din resa.
 
 När resan är live behandlas den sökväg som anges för varje segment så att Guld-medlemmar anger sökvägen med e-posterbjudandena, medan de andra medlemmarna anger sökvägen med SMS-påminnelsen.
 

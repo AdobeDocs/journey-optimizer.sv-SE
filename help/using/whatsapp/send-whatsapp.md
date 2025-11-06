@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 31acb095-de90-495f-8e8c-43a78dedfa06
-source-git-commit: 623d9b15d1f7f4e7f73f26cf3e19516bed4c0f56
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -39,4 +39,4 @@ Du måste kontrollera varningar i den övre delen av redigeraren. Vissa av dem �
 >
 > Om din kampanj omfattas av en policy för godkännande måste du begära godkännande för att kunna skicka dina textmeddelanden. [Läs mer](../test-approve/gs-approval.md)
 
-När whatsApp-meddelandet är klart slutför du konfigurationen av din [resa](../building-journeys/publishing-the-journey.md) eller [kampanj](../campaigns/review-activate-campaign.md) för att skicka det.
+När whatsApp-meddelandet är klart slutför du konfigurationen av din [resa](../building-journeys/publish-journey.md) eller [kampanj](../campaigns/review-activate-campaign.md) för att skicka det.

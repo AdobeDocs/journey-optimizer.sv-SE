@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 mini-toc-levels: 1
-source-git-commit: f8b91ef5504396ab696acc05ac273423dd5f208e
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Nu kan du lägga till alla beslutsattribut du vill i den koden. De tillgängliga
 >[!NOTE]
 >
 >För artikelspårning för beslutsprincip måste attributet `trackingToken` läggas till enligt följande för beslutsprincipinnehåll:
->&#x200B;>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+>`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
 Om du vill lägga till ett attribut klickar du på plusikonen (+) bredvid det. Du kan lägga till så många attribut du vill i koden.
 
@@ -105,7 +105,7 @@ Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable`
 
 >[!TAB Följ de detaljerade stegen]
 
-1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **&#x200B;**&#x200B;`{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
 
    ![](assets/decision-let-function.png)
 
@@ -166,7 +166,7 @@ Vid körning valideras kampanjinnehållet (inklusive fragmentinnehåll från bes
 
 När innehållet är klart kan du granska och publicera kampanjen eller resan:
 
-* [Publicera en resa](../building-journeys/publishing-the-journey.md)
+* [Publicera en resa](../building-journeys/publish-journey.md)
 * [Granska aktivering av en kampanj](../campaigns/review-activate-campaign.md)
 * [Publicera och aktivera en kodbaserad upplevelse](../code-based/publish-code-based.md)
 

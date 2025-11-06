@@ -10,7 +10,7 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
 version: Journey Orchestration
-source-git-commit: ed00ef1f9aad7a9baf16b806e1cbffae677b2a91
+source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -104,7 +104,7 @@ Snabba leveranser används när fördröjningar i meddelandeleverans är affärs
 
 Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
@@ -179,7 +179,7 @@ Följ stegen nedan för att definiera flera inkommande åtgärder i en enda åtg
 
 1. Fortsätt på samma sätt om du vill lägga till fler åtgärder. Du kan lägga till upp till 10 inkommande åtgärder i en åtgärdsgrupp för resan.
 
-När resan är [live](publishing-the-journey.md) aktiveras alla åtgärder samtidigt.
+När resan är [live](publish-journey.md) aktiveras alla åtgärder samtidigt.
 <!--
 ## Next steps {#next}
 
