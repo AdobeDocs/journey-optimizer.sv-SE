@@ -9,10 +9,10 @@ role: Developer, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: d88daa58-20af-4dac-ae5d-4c10c1db6956
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: 221368c7766e942143639fcd554b32f9de5ab0c9
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 3%
+source-wordcount: '713'
+ht-degree: 2%
 
 ---
 
@@ -211,6 +211,37 @@ currentActionField.description == "abc"
 )}
 )
 ```
+
+### Använda anpassade åtgärdssvar i inbyggda kanaler {#response-in-channels}
+
+Du kan iterera över kapslade arrayer från ett anpassat åtgärdssvar i inbyggda kanaler (som e-post, push eller SMS) med hjälp av Handlebars-syntax. Detta är användbart när du behöver anpassa meddelandeinnehåll med dynamiska data från externa system.
+
+Om din anpassade åtgärd till exempel returnerar följande svar från ett externt system:
+
+```json
+{    
+    "id": "84632848268632",    
+    "responses": [
+        { "productIDs": [1111,2222,3333] },
+        { "productIDs": [4444,5555,6666] },
+        { "productIDs": [7777,8888,9999] }
+    ]
+}
+```
+
+Du kan iterera över arrayen `responses` och de kapslade `productIDs`-arrayerna i en intern kanal (till exempel i ett e-postmeddelande) så här:
+
+```handlebars
+{{#each context.journey.actions.<yourcustomaction>.responses as |res|}}
+
+  {{#each res.productIDs as |productID|}}
+    <li>{{productID}}</li>
+  {{/each}}
+
+{{/each}}
+```
+
+Ersätt `<yourcustomaction>` med det faktiska namnet på din anpassade åtgärd som konfigurerats under resan.
 
 ## Ytterligare resurser
 

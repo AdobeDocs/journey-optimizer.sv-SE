@@ -6,9 +6,9 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 221368c7766e942143639fcd554b32f9de5ab0c9
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -162,6 +162,10 @@ Visa en lista över produkter som den här användaren har i kundvagnen:
     <li>{{product.productName}} {{product.productRating}}</li>
 {{/each}}
 ```
+
+>[!NOTE]
+>
+>Du kan också använda hjälpen för `each` för att iterera över arrayer som returneras från anpassade åtgärdssvar. Ett exempel på hur du itererar över kapslade arrayer från ett anpassat åtgärdssvar finns i [Använda anpassade åtgärdssvar i inbyggda kanaler](../../action/action-response.md#response-in-channels).
 
 ## Med{#with}
 

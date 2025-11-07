@@ -10,10 +10,10 @@ level: Intermediate
 keywords: åtgärd, anpassad, API, resa, konfiguration, tjänst
 exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 221368c7766e942143639fcd554b32f9de5ab0c9
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 18%
+source-wordcount: '422'
+ht-degree: 17%
 
 ---
 
@@ -29,6 +29,8 @@ Använd anpassade åtgärder för att aktivera anslutning till ett tredjepartssy
 Läs mer om anpassade åtgärder i [det här avsnittet](../action/action.md).
 
 Lär dig skapa och konfigurera en anpassad åtgärd på [den här sidan](../action/about-custom-action-configuration.md).
+
+Lär dig hur du använder API-anropssvar från anpassade åtgärder för personalisering på [den här sidan](../action/action-response.md).
 
 ## Samtycke- och datahantering {#privacy}
 
