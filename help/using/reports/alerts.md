@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: cc38101d0745770cca196372fc5fdbb64318e601
+source-git-commit: 1349da209bc90dd8ebad0bd309f89039aa6ea3f2
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '2127'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,18 @@ När du skapar resor och kampanjer använder du knappen **Varningar** för att k
 
 * Lär dig felsöka dina resor på [den här sidan](../building-journeys/troubleshooting.md)
 
-* Lär dig hur du granskar och aktiverar kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [&#x200B; API-utlösta kampanjer &#x200B;](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md)
+* Lär dig hur du granskar och aktiverar kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [ API-utlösta kampanjer ](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md)
 
 
 Dessutom kan varningsmeddelanden skickas till alla användare i organisationen som har prenumererat på dem när vissa villkor är uppfyllda. Dessa aviseringar är tillgängliga på den dedikerade **[!UICONTROL Alerts]**-menyn. Adobe Experience Platform innehåller flera fördefinierade varningsregler som du kan aktivera för din organisation. Dessutom kan du prenumerera på [!DNL Adobe Journey Optimizer]-specifika systemaviseringar så som beskrivs på den här sidan.
 
 >[!NOTE]
 >
->Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
 Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Alerts]** på den vänstra menyn. Flera förkonfigurerade varningar för Journey Optimizer finns tillgängliga på fliken **Bläddra**.
 
+![](assets/updated-alerts-list.png){width=50%}
 
 * Registreringar som är specifika för resor:
 
@@ -39,6 +40,9 @@ Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Alerts]** på den
    * aviseringen [Felfrekvens för anpassad åtgärd överskreds](#alert-custom-action-error-rate) (ersätter den tidigare felaviseringen för anpassad åtgärd på resan)
    * varningen [Profilens ignoreringsfrekvens har överskridits](#alert-discard-rate)
    * [Profilens felfrekvens överskreds](#alert-profile-error-rate)-varningen
+   * aviseringen [Resa publicerad](#alert-journey-published)
+   * aviseringen [Resan slutförd](#alert-journey-finished)
+   * aviseringen [Custom Action Capping utlöstes](#alert-custom-action-capping)
 
 * Aviseringar som är specifika för kanalkonfigurationen:
 
@@ -71,7 +75,7 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en aviseri
 
 1. Använd samma metod för **[!UICONTROL Unsubscribe]**.
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
 
 ### Enhetsspecifik prenumeration {#unitary-subscription}
 
@@ -81,13 +85,13 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en viss re
 
    ![Prenumerera på en avisering för en viss resa](assets/subscribe-journey-alert.png){width=75%}
 
-1. Välj aviseringar. Följande aviseringar är tillgängliga: [Profilens borttagningsfrekvens har överskridits](#alert-discard-rate), [Felfrekvens för anpassad åtgärd har överskridits](#alert-custom-action-error-rate) och [Profilens felfrekvens har överskridits](#alert-profile-error-rate).
+1. Välj aviseringar. Följande aviseringar är tillgängliga: [Profilens borttagningsfrekvens har överskridits](#alert-discard-rate), [Anpassad åtgärdsfelfrekvens har överskridits](#alert-custom-action-error-rate), [Profilfelsfrekvens har överskridits](#alert-profile-error-rate), [Resan har publicerats](#alert-journey-published), [Resan har slutförts](#alert-journey-finished) och [Anpassad åtgärd har startats](#alert-custom-action-capping).
 
 1. Om du vill avbryta prenumerationen på en varning avmarkerar du den på samma skärm.
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
 ## Resevarningar {#journey-alerts}
 
@@ -101,8 +105,6 @@ Alla resemeddelanden som är tillgängliga i användargränssnittet listas nedan
 ### Det gick inte att läsa målutlösaren {#alert-read-audiences}
 
 Den här varningen varnar dig om en **Läs målgrupp**-aktivitet inte har bearbetat någon profil 10 minuter efter den schemalagda körningen. Felet kan bero på tekniska problem eller på att målgruppen är tom. Om det här felet orsakas av tekniska problem ska du vara medveten om att försök fortfarande kan göras, beroende på typ av problem (t.ex. om det inte går att skapa exportjobbet kommer vi att försöka igen var 10:e minut med maximalt 1 timme).
-
-![](assets/read-audience-alert.png)
 
 Varningar för **Läs målgruppsaktiviteter** gäller endast återkommande resor. **Läs målgruppsaktiviteter** i liveresor som har ett schema för att köra **En gång** eller **Så snart som möjligt** ignoreras.
 
@@ -153,6 +155,42 @@ Den här varningen varnar dig om förhållandet mellan felprofiler och angivna p
 Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
 
 Om du vill felsöka profilfel kan du fråga data i steghändelser för att förstå var och varför profilen misslyckades under resan.
+
+### Journey Published {#alert-journey-published}
+
+Den här varningen meddelar dig när en resa har publicerats av en person på arbetsytan.
+
+Det här är en informativ varning som hjälper dig att hålla reda på händelser i din organisations livscykel. Det finns inga lösningsvillkor eftersom detta är ett engångsmeddelande.
+
+### Resan avslutad {#alert-journey-finished}
+
+Den här varningen meddelar dig när en resa är klar. Definitionen av&quot;färdig&quot; varierar beroende på resetyp:
+
+| Resetyp | Återkommande? | Har slutdatum? | Definition av&quot;färdigt&quot; |
+|--------------|------------|---------------|--------------------------|
+| Läs målgrupp | Nej | n/a | 91 dagar efter att körningen har startat |
+| Läs målgrupp | Ja | Nej | 91 dagar efter att körningen har startat |
+| Läs målgrupp | Ja | Ja | När slutdatumet nås |
+| Händelseutlöst resa | n/a | Ja | När slutdatumet nås |
+| Händelseutlöst resa | n/a | Nej | När den stängs i användargränssnittet eller via API |
+
+Det här är en informativ varning som hjälper dig att hålla reda på slutförandet av en resa. Det finns inga lösningsvillkor eftersom detta är ett engångsmeddelande.
+
+### Anpassad åtgärd som aktiveras {#alert-custom-action-capping}
+
+Den här varningen varnar dig när capping har utlösts för en anpassad åtgärd. Takning används för att begränsa antalet anrop som skickas till en extern slutpunkt för att förhindra överbelastning av slutpunkten.
+
+Klicka på namnet på varningen för att kontrollera varningsinformationen och konfigurationen.
+
+När capping aktiveras innebär det att det maximala antalet API-anrop har uppnåtts inom den definierade tidsperioden och att ytterligare anrop stryps eller köas. Läs mer om att sätta stopp för anpassade åtgärder på [den här sidan](../action/about-custom-action-configuration.md#custom-action-enhancements-best-practices).
+
+Den här varningen löses när appningen inte längre är aktiv eller när inga profiler når den anpassade åtgärden under utvärderingsperioden.
+
+Så här felsöker du problem med appning:
+
+* Granska takkonfigurationen för din anpassade åtgärd för att se till att gränserna är lämpliga för ditt användningsfall.
+* Kontrollera om antalet API-anrop är större än förväntat och överväg att justera inställningarna för kundresan.
+* Övervaka den externa slutpunkten för att säkerställa att den kan hantera den förväntade inläsningen.
 
 ## Konfigurationsaviseringar {#configuration-alerts}
 
