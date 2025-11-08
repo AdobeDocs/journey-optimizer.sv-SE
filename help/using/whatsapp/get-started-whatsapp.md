@@ -58,7 +58,7 @@ I videon nedan visas hur du integrerar WhatsApp som en inbyggd kanal i Adobe Jou
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470244?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470248?captions=swe&learn=on)
 
 +++
 
