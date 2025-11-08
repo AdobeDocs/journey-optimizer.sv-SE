@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 42d40abf8290bac64e142f5cf0bf595446ccb2e9
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -26,13 +26,13 @@ ht-degree: 0%
 >id="ajo_admin_subdomain_lp"
 >title="Delegera en underdomän för landningssida"
 >abstract="Du måste konfigurera en underdomän att använda för dina landningssidor, eftersom du behöver den här underdomänen för att skapa en förinställning för landningssidor. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html?lang=sv-SE#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_lp_subdomain"
 >title="Skapa en förinställning för landningssida"
 >abstract="Om du vill kunna skapa en förinställning för landningssida måste du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida att välja från listan med underdomännamn."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html?lang=sv-SE#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 ## Kom igång med underdomäner för landningssidor {#gs-lp-subdomains}
 
@@ -88,7 +88,7 @@ Om du vill använda en underdomän som redan har delegerats till Adobe följer d
 
    ![](assets/lp_subdomain-processing.png)
 
-   Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta **upp till 4 timmar**.<!--Learn more in [this section](delegate-subdomain.md#subdomain-validation).-->
+   Innan du kan använda den underdomänen för att skicka meddelanden måste du vänta tills Adobe utför de kontroller som krävs, vilket kan ta **upp till 4 timmar**.<!--Learn more in [this section](../configuration/delegate-subdomain.md#subdomain-validation).-->
 
 1. När kontrollerna har slutförts får underdomänen statusen **[!UICONTROL Success]**. Den är klar att användas för att skapa förinställningar för landningssidor.
 

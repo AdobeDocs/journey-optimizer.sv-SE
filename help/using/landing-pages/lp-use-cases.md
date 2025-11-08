@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: landning, landningssida, fallstudie
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 42d40abf8290bac64e142f5cf0bf595446ccb2e9
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Om du vill att mottagarna ska kunna avbeställa din kommunikation kan du inklude
 
 ### Hantering av avanmälan {#opt-out-management}
 
-Att ge mottagarna möjlighet att avbryta prenumerationen på information från ett varumärke är ett juridiskt krav. Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=sv-SE#regulations){target="_blank"}.
+Att ge mottagarna möjlighet att avbryta prenumerationen på information från ett varumärke är ett juridiskt krav. Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.
 
 Därför måste du alltid inkludera en **länk för att avbryta prenumerationen** i alla e-postmeddelanden som skickas till mottagarna:
 
@@ -153,7 +153,7 @@ Följ stegen nedan för att göra det möjligt för mottagarna av ett e-postmedd
 
    * Profildata uppdateras och kommer inte att få information från ert varumärke om ni inte prenumererar igen.
 
-Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=sv-SE#getting-started){target="_blank"}.
+Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
 ![](assets/lp_opt-out-profile-choice.png)
 
@@ -163,7 +163,7 @@ Information om avanmälan lagras i datamängden för **tjänsten för samtycke**
 
 >[!NOTE]
 >
->Om sammanfogningsmetoden för din standardprincip för [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} **[!UICONTROL Profiles]** är **[!UICONTROL Dataset Precedence]** måste du aktivera **[!UICONTROL AJO Consent Service Dataset]** och prioritera den i sammanfogningsprincipen. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=sv-SE#dataset-precedence-profile){target="_blank"}
+>Om sammanfogningsmetoden för din standardprincip för [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} **[!UICONTROL Profiles]** är **[!UICONTROL Dataset Precedence]** måste du aktivera **[!UICONTROL AJO Consent Service Dataset]** och prioritera den i sammanfogningsprincipen. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#dataset-precedence-profile){target="_blank"}
 >
 >Även om inga batchar har lagts till i den här datauppsättningen kommer den fortfarande att innehålla information om anmälan/avanmälan.
 
@@ -186,7 +186,7 @@ You can also enable your recipients to unsubscribe whithout using landing pages.
 
 * **Unsubscribe link in header**
 
-    If the recipients' email client supports displaying an unsubscribe link in the email header, emails sent with [!DNL Journey Optimizer] automatically include this link. [Learn more](../privacy/opt-out.md#unsubscribe-header)
+    If the recipients' email client supports displaying an unsubscribe link in the email header, emails sent with [!DNL Journey Optimizer] automatically include this link. [Learn more](../email/email-opt-out.md#unsubscribe-header)
 
 ////////
 
