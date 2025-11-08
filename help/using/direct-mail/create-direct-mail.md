@@ -7,10 +7,10 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: e823be2257d49158492af508e23f40e749bc33be
+source-git-commit: 5f2ccb102d08151da5616ef42559164f29542e5d
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 3%
+source-wordcount: '740'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Skapa en schemalagd kampanj och konfigurera extraheringsfilen om du vill skapa d
 >
 >Direct Mail har stöd för funktionen Holdout, men för närvarande saknar stöd för Beställningar.
 
-Så här skapar du en direktreklamkampanj:
+Om du vill skapa en direktreklamkampanj skapar du en schemalagd kampanj, väljer målgrupp och konfigurerar inställningar för direktreklam inklusive meddelandekonfigurationen. Följ de här stegen:
 
 1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**.
 

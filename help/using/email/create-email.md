@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 5f2ccb102d08151da5616ef42559164f29542e5d
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '983'
 ht-degree: 2%
 
 ---
@@ -79,6 +79,8 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="test_id"
 >title="Konfigurera e-postinnehåll"
 >abstract="Skapa innehållet i e-postmeddelandet. Definiera ämnet och använd sedan e-post-Designer för att skapa och personalisera e-postmeddelandets brödtext."
+
+När du har lagt till e-poståtgärden till din resa eller kampanj måste du definiera e-postinnehållet, inklusive ämnesraden, avsändarinformation och e-postbrödtext med hjälp av e-postmeddelandet för Designer. Följ de här stegen:
 
 1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för resan eller kampanjkonfigurationen för att konfigurera e-postinnehållet. [Läs mer](get-started-email-design.md)
 
