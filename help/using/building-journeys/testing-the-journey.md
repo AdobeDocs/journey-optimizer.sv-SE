@@ -10,9 +10,9 @@ level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: 36c44728172313492898bf3374a37512e4c19789
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1783'
 ht-degree: 1%
 
 ---
@@ -68,10 +68,6 @@ Så här använder du testläget:
 1. Om du vill aktivera testläget klickar du på knappen **[!UICONTROL Test mode]** i det övre högra hörnet.
 
    ![](assets/journeytest1.png)
-
-   >[!NOTE]
-   >
-   >När du har aktiverat testläget väntar du ca 1-2 minuter innan du utlöser en profilentré. Detta gör att beslutspaketet till fullo kan spridas via beslutssystemet. Om du utlöser en profilentré omedelbart efter att du aktiverat testläget kan det hända att resan ibland misslyckas.
 
 1. Om resan har minst en **Wait**-aktivitet ställer du in parametern **[!UICONTROL Wait time]** så att den anger den tid som varje vänteaktivitet och händelsetimeout ska vara i testläge. Standardtiden är 10 sekunder för timeout för väntetider och händelser. Detta säkerställer att du får testresultaten snabbt.
 
