@@ -30,7 +30,7 @@ Lär dig hur du skapar landningssidor från grunden, använder HTML i Raw-format
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Skapa och anpassa landningssidans innehåll
 

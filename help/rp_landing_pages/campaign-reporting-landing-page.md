@@ -20,7 +20,7 @@ Kampanjrapporter i Adobe Journey Optimizer ger er möjlighet att låsa upp åtg�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Översikt över kampanjrapport
 
