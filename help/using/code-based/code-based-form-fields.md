@@ -246,4 +246,4 @@ Du kan enkelt redigera formulärfälten från en kodbaserad upplevelseresa eller
 
 Lär dig hur du lägger till redigerbara fält i kodbaserade innehållsmallar för upplevelsekanaler.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463990/?learn=on&#x26;enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463995/?captions=swe&learn=on&#x26;enablevpops)
