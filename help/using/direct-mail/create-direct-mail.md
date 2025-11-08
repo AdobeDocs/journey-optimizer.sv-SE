@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 4f1ae3a812b75c180716c5af0d6f87ef58bc2a13
+source-git-commit: e823be2257d49158492af508e23f40e749bc33be
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 3%
@@ -63,7 +63,7 @@ Så här skapar du en direktreklamkampanj:
 
    ![](assets/direct-mail-campaign.png){width="800" align="center"}
 
-1. Kampanjer kan schemaläggas för ett specifikt datum eller ställas in så att de återkommer med regelbundna intervall. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
+1. Kampanjer kan schemaläggas för ett specifikt datum eller ställas in så att de återkommer med regelbundna intervall. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/campaign-schedule.md).
 
 Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör.
 
