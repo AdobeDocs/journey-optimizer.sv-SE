@@ -393,7 +393,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* **Slutar en resa** - I arbetsytan har aktiviteten **Slut** tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se videon [documentation](../building-journeys/end-journey.md) och [feature ](https://video.tv.adobe.com/v/345376){target="_blank"}.
+* **Slutar en resa** - I arbetsytan har aktiviteten **Slut** tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se videon [documentation](../building-journeys/end-journey.md) och [feature &#x200B;](https://video.tv.adobe.com/v/345376){target="_blank"}.
 
 
 * Alternativet **Tidszon för profil** är nu avmarkerat som standard i resans egenskaper. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)

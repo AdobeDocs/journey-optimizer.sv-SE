@@ -98,7 +98,7 @@ Flerkanalsdesignern hjälper er att skapa flerstegsresor med riktade målgrupper
 
 Testa resan innan du publicerar den när du har byggt den. Journey Optimizer erbjuder ett **testläge** som ett sätt att visa testprofiler under resan och upptäcka eventuella fel före aktiveringen. Genom att köra snabbtester kan du vara säker på att resorna fungerar som de ska så att du kan publicera dem med tillförsikt. Lär dig hur du testar din resa [i det här avsnittet](testing-the-journey.md)
 
-Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [ i det här avsnittet](journey-dry-run.md).
+Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [&#x200B; i det här avsnittet](journey-dry-run.md).
 
 ## Publicera resan {#jo-pub}
 

@@ -126,7 +126,7 @@ Följ stegen nedan för att konfigurera en anpassad underdomän.
 >title="Slutför stegen för feedbackslingan"
 >abstract="Gå till Yahoo! Avsändarhubben och fyll i formuläret för att verifiera domänägarskap. Ange den e-postadress för FBL-rapportering som anges nedan och använd den engångslösenord som kommer att tas emot för att verifiera ägarskapet på Yahoo! Avsändarhubb."
 
-1. Gå till [Yahoo! Webbplatsen för avsändarhubben ](https://senders.yahooinc.com/) och fyll i det formulär som krävs för att verifiera din domänägarskap.
+1. Gå till [Yahoo! Webbplatsen för avsändarhubben &#x200B;](https://senders.yahooinc.com/) och fyll i det formulär som krävs för att verifiera din domänägarskap.
 
 1. För att verifiera domänägarskapet, Yahoo! Avsändarhubben kräver att du anger en e-postadress. Ange den e-postadress för FBL-rapportering som listas under **[!UICONTROL Value]**. Det här är en e-postadress som ägs av Adobe.
 
