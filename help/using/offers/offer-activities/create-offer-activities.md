@@ -7,7 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
-source-git-commit: fb036e910431a4ce9709b394c93484e6b76bf8f8
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '2483'
 ht-degree: 0%
@@ -397,7 +397,7 @@ När ett beslut har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/decision_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar &#x200B;](../get-started/user-interface.md#changes-log) som har gjorts i beslutet.
+På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#changes-logs) som har gjorts i beslutet.
 
 ![](../assets/decision_information.png)
 

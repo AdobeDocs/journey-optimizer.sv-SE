@@ -7,7 +7,7 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: 851d988a-2582-4c30-80f3-b881d90771be
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 2%
@@ -109,7 +109,7 @@ Du hittar dem under **[!UICONTROL Decision Management]** > **[!UICONTROL Compone
 
    >[!NOTE]
    >
-   >I det här exemplet använder vi bara prioritetspoängen. Läs mer om [regler och begränsningar för behörighet](../../using/offers/offer-library/creating-personalized-offers.md#eligibility).
+   >I det här exemplet använder vi bara prioritetspoängen. Läs mer om [regler och begränsningar för behörighet](../../using/offers/offer-library/add-constraints.md#eligibility).
 
 ## Konfigurera erbjudanden {#configure-offers}
 
@@ -127,7 +127,7 @@ Nu kan du skapa och konfigurera dina erbjudanden. I det här exemplet skapar du 
    >
    >Ett erbjudande kan visas på olika platser i ett meddelande för att skapa fler möjligheter att använda erbjudandet i olika placeringssammanhang.
 
-   Läs mer om representationer i [det här avsnittet](../../using/offers/offer-library/creating-personalized-offers.md#representations).
+   Läs mer om representationer i [det här avsnittet](../../using/offers/offer-library/add-representations.md#representations).
 
 1. Välj en lämplig bild för de två första placeringarna. Ange anpassad text för placeringen *Icke-digital - Text*.
 

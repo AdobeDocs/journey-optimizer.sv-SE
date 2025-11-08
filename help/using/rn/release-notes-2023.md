@@ -10,7 +10,7 @@ hidefromtoc: true
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
-source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 8%
@@ -67,7 +67,7 @@ Den här versionen innehåller de förbättringar som anges nedan.
 
 **Publiker**
 
-* Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer. [Läs mer](../audience/about-audiences.md#segments-in-journey-optimizer)
+* Nu kan ni rikta in er på målgrupper som överförts från en CSV-fil till resor och kampanjer. [Läs mer](../audience/about-audiences.md#about-segments)
 * Nu kan ni inrikta er på målgrupper som skapats genom målgruppssammansättning och utnyttja anrikningsattribut i Journeys. [Läs mer](../building-journeys/read-audience.md)
 
 >[!AVAILABILITY]
@@ -339,7 +339,7 @@ A new option is available in the email surface settings to include email address
 <p>Nu kan du skapa arbetsflöden för kompositioner för att kombinera befintliga Adobe Experience Platform-målgrupper till en visuell arbetsyta och utnyttja olika aktiviteter (dela, berika...) för att skapa nya målgrupper. Nyligen skapade målgrupper sparas tillbaka i Adobe Experience Platform tillsammans med befintliga målgrupper och kan utnyttjas i Journey Optimizer kampanjer för att nå ut till kunder.</p>
 <img src="assets/do-not-localize/gif-ao.gif"/>
 <p>Mer information finns i den <a href="../audience/get-started-audience-orchestration.md">detaljerade dokumentationen</a>.</p>
-<p>Målgruppsdispositionen är helt integrerad med den nya Adobe Experience Platform-menyn"Publiker", som fungerar som en central portal till målgrupper. Nu kan du använda en bläddringssida som innehåller en ny instrumentpanel med segmenttrender och överlappningar för att hitta nya insikter och utforska organisationsverktygen för mappning och taggning. Detta innefattar styrningskontroller för standardiserad målgruppsmärkning och funktioner för hantering av målgruppslivscykler för att hantera aktiveringsarbetsflöden. Med den nya hanteringsupplevelsen kan ni nu enkelt och säkert hantera målgrupper från ett och samma ställe. Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE" target="_blank">Adobe Experience Platform-dokumentationen</a>.</p></p>
+<p>Målgruppsdispositionen är helt integrerad med den nya Adobe Experience Platform-menyn"Publiker", som fungerar som en central portal till målgrupper. Nu kan du använda en bläddringssida som innehåller en ny instrumentpanel med segmenttrender och överlappningar för att hitta nya insikter och utforska organisationsverktygen för mappning och taggning. Detta innefattar styrningskontroller för standardiserad målgruppsmärkning och funktioner för hantering av målgruppslivscykler för att hantera aktiveringsarbetsflöden. Med den nya hanteringsupplevelsen kan ni nu enkelt och säkert hantera målgrupper från ett och samma ställe. Mer information finns i <a href="https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html" target="_blank">Adobe Experience Platform-dokumentationen</a>.</p></p>
 </td>
 </tr>
 </tbody>
@@ -945,7 +945,7 @@ Note that each widget can be resized and deleted as needed.
 
 * **Tillåtelselista** - Nu kan du hämta tillåtelselista som en CSV-fil. [Läs mer](../configuration/allow-list.md#download-allowed-list)
 
-* **E-postyta** - En extra kontroll har lagts till i inställningarna för e-postytan: om MX-posten för den underdomän som används i **svarsadressen** eller i **BCC-e-postadressen** inte är korrekt konfigurerad kan e-postytan inte längre skapas. Du måste ha den konfigurerad eller använda en annan. [Läs mer](../email/email-settings.md#reply-to-email)
+* **E-postyta** - En extra kontroll har lagts till i inställningarna för e-postytan: om MX-posten för den underdomän som används i **svarsadressen** eller i **BCC-e-postadressen** inte är korrekt konfigurerad kan e-postytan inte längre skapas. Du måste ha den konfigurerad eller använda en annan. [Läs mer](../email/email-settings.md#send-to-suppressed-email-addresses)
 
 * **E-postyta** - I avsnittet **URL-spårningsparametrar** i inställningarna för e-postytan har begränsningen för varje **Värde**-fält uppdaterats från 255 tecken till 5 kB för kompatibilitet med Adobe Analytics-spårning. [Läs mer](../email/email-settings.md#url-tracking)
 
@@ -988,7 +988,7 @@ Note that each widget can be resized and deleted as needed.
 <p>Nu kan ni skapa fristående innehållsmallar som kan utnyttjas på olika resor och i kampanjer för snabb återanvändning.</p> 
 </p>
 <img src="assets/do-not-localize/content-template.gif"/>
-<p>Lär dig hur du skapar, redigerar och använder innehållsmallar i <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/content-templates.html?lang=sv-SE">den här videon</a>. Mer information finns i den <a href="../content-management/content-templates.md">detaljerade dokumentationen</a>.
+<p>Lär dig hur du skapar, redigerar och använder innehållsmallar i <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/content-templates.html">den här videon</a>. Mer information finns i den <a href="../content-management/content-templates.md">detaljerade dokumentationen</a>.
 </p>
 </td>
 </tr>
@@ -1009,11 +1009,11 @@ Note that each widget can be resized and deleted as needed.
 
 **Administration**
 
-* Ett nytt underavsnitt ger rekommendationer om hur du skapar adressen **Svar till (e-post)** och säkerställer korrekt svarshantering. [Läs mer](../email/email-settings.md#reply-to-email)
+* Ett nytt underavsnitt ger rekommendationer om hur du skapar adressen **Svar till (e-post)** och säkerställer korrekt svarshantering. [Läs mer](../email/email-settings.md#send-to-suppressed-email-addresses)
 
 * När du skapar eller redigerar **IP-pooler** visas nu de associerade PTR-posterna i IP-listan och när du hovrar över de valda IP-adresserna. [Läs mer](../configuration/ip-pools.md#create-ip-pool)
 
-* När en IP-pool har valts i en kanalkonfiguration visas PTR-postinformation när du hovrar över IP-adresserna. [Läs mer](../email/email-settings.md#subdomains-and-ip-pools)
+* När en IP-pool har valts i en kanalkonfiguration visas PTR-postinformation när du hovrar över IP-adresserna. [Läs mer](../email/email-settings.md#ip-pools)
 
 * Användargränssnittet för redigering av [PTR-poster](../configuration/ptr-records.md#edit-ptr-record) och [körningsfält](../configuration/primary-email-addresses.md) har uppdaterats.
 

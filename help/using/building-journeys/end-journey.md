@@ -9,7 +9,7 @@ level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Du kan också [stoppa en resa](#stop-journey) endast i händelse av en nödsitua
 
 >[!IMPORTANT]
 >
->* Du kan inte starta om eller ta bort en [stängd](#close-journey)- eller [stoppad](#stop-journey)-resa. Du kan [skapa en ny version](publish-journey.md#journey-versions-journey-versions) av den eller [duplicera den](journey-ui.md#duplicate-a-journey-duplicate-a-journey).
+>* Du kan inte starta om eller ta bort en [stängd](#close-journey)- eller [stoppad](#stop-journey)-resa. Du kan [skapa en ny version](publish-journey.md#journey-versions) av den eller [duplicera den](journey-ui.md#duplicate-a-journey).
 >
 >* Endast slutförda resor kan tas bort.
 

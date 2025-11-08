@@ -8,7 +8,7 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 3%
@@ -112,11 +112,11 @@ Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligas
    * **PAUSED_JOURNEY_VERSION**: Ignorerar som inträffade vid ingången till resan
    * **JOURNEY_IN_PAUSED_STATE**: Ignorerar vilket som hände när profiler befinner sig på en resa
 
-  Läs mer om de här händelserna och hur du felsöker dem i [Pausa en resa](../building-journeys/journey-pause.md#troubleshoot-profile-discards-in-paused-journeys).
+  Läs mer om de här händelserna och hur du felsöker dem i [Pausa en resa](../building-journeys/journey-pause.md#discards-troubleshoot).
 
 ## Ytterligare resurser
 
 * [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
 * [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
-* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 

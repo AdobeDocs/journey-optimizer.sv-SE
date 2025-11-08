@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: df13e473-8003-4dde-aaf8-df8385c9ee21
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -59,4 +59,4 @@ Diagrammen **[!UICONTROL Visits by messages]** / **[!UICONTROL Conversions by me
 Diagrammen **[!UICONTROL Visits by channels]** / **[!UICONTROL Conversions by channels]** representerar det totala antalet besök och personer som interagerat framgångsrikt med landningssidan under de senaste 24 timmarna beroende på kanalerna.
 +++
 
-En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](live-report.md#list-of-components-live).
+En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](live-report.md#live-report).

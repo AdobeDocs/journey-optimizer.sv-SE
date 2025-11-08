@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 badge: label="Beta" type="Informative"
 exl-id: 364ef926-3f92-4297-acbd-a283668106ac
-source-git-commit: 4d7ad2c3ed71801298f1afe31d0e29d7bb1d5c7f
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 3%
@@ -24,7 +24,7 @@ Den här funktionen är tillgänglig via startsidan för **[!DNL Adobe Experienc
 
 ## Kom igång{#gs-mobile-wf}
 
-Det nya arbetsflödet automatiserar konfigurationen av datainsamling genom att minska det totala antalet klick och påskynda mobilkonfigurationen för Journey Optimizer. Det här snabbstartsarbetsflödet tar dig igenom fyra enkla steg för att [konfigurera](##setup-mobile-wf), [implementera](#implement-mobile-wf), [validate](#valid-mobile-wf) och [granska](#review-mobile-wf) din mobilkonfiguration.
+Det nya arbetsflödet automatiserar konfigurationen av datainsamling genom att minska det totala antalet klick och påskynda mobilkonfigurationen för Journey Optimizer. Det här snabbstartsarbetsflödet tar dig igenom fyra enkla steg för att [konfigurera](#gs-mobile-wf), [implementera](#implement-mobile-wf), [validate](#valid-mobile-wf) och [granska](#review-mobile-wf) din mobilkonfiguration.
 
 Bläddra till **[!DNL Data Collection]** från lösningsväljaren om du vill få tillgång till det nya arbetsflödet för snabbstart av introduktion för mobila enheter. Välj sedan **[!DNL Start Collecting Mobile Data]**-kortet på startsidan.
 
@@ -34,7 +34,7 @@ Nedan följer några ytterligare funktioner:
 
 * Smidigt arbetsflöde i fyra steg och användargränssnitt.
 * Levererar en grundläggande konfiguration för att börja samla in mobilhändelsedata via [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} på några minuter.
-* Möjlighet att testa och validera en grundläggande mobil push-händelse med [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=sv-SE){target="_blank"}.
+* Möjlighet att testa och validera en grundläggande mobil push-händelse med [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 * Auto skapar och konfigurerar alla nödvändiga datainsamlingar och Journey Optimizer-resurser.
 * I produktvägledning och verktygstips.
 * Ger en naturlig övergång för mer avancerad implementering vid behov.
@@ -75,5 +75,5 @@ Automatiserad installation är klar. Nu kan du gå till taggens mobila egenskap 
 * [Kom igång med push-meddelanden](../../rp_landing_pages/push-landing-page.md)
 * [Dataflöde och komponenter för push-meddelanden](push-gs.md)
 * [Konfigurera push-kanalen](push-configuration.md)
-* [Rapport om push-meddelanden](../reports/journey-global-report-cja-push.md#push-global)
+* [Rapport om push-meddelanden](../reports/journey-global-report-cja-push.md#track-link-url-push)
 * [Skapa ett push-meddelande](create-push.md)

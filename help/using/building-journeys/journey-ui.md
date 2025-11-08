@@ -10,7 +10,7 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Fliken **[!UICONTROL Browse]** visar en lista över befintliga resor. Du kan sö
 
 ![kontrollpanelen för resan markerar fliken Bläddra](assets/journeys-browse.png)
 
-I reselistan visas alla reseversioner med versionsnumret. När du söker efter en resa visas de senaste versionerna högst upp i listan första gången programmet öppnas. Sedan kan du definiera den sortering som du vill ha så att programmet behåller den som en användarinställning. Färdens version visas också överst i reseupplagans gränssnitt, ovanför arbetsytan. Läs mer om [reseversionshantering](publish-journey.md#journey-versions-journey-versions).
+I reselistan visas alla reseversioner med versionsnumret. När du söker efter en resa visas de senaste versionerna högst upp i listan första gången programmet öppnas. Sedan kan du definiera den sortering som du vill ha så att programmet behåller den som en användarinställning. Färdens version visas också överst i reseupplagans gränssnitt, ovanför arbetsytan. Läs mer om [reseversionshantering](publish-journey.md#journey-versions).
 
 ### Resekalender {#calendar}
 
@@ -108,7 +108,7 @@ Använd olika filter i listan över resor för att förfina listan över resor.
 
 ![Skärm som visar ett urval av reseverktfiltrering med två typer av valda resor](assets/filter-journeys.png)
 
-Du kan filtrera resor utifrån deras [status](#journey-statuses), [typ](#journey-types), [version](publish-journey.md#journey-versions-journey-versions) och tilldelade [taggar](../start/search-filter-categorize.md#tags) från **[!UICONTROL Status and version filters]**.
+Du kan filtrera resor utifrån deras [status](#journey-statuses), [typ](#journey-types), [version](publish-journey.md#journey-versions) och tilldelade [taggar](../start/search-filter-categorize.md#tags) från **[!UICONTROL Status and version filters]**.
 
 Använd **[!UICONTROL Creation filters]** om du vill filtrera resorna efter när de skapades eller efter den användare som skapade dem.
 
@@ -140,15 +140,15 @@ Resans status beror på dess livscykel. Den kan vara:
 
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
 * **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** . [Läs mer](../building-journeys/testing-the-journey.md)
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [&#128279;](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
 * **Live**: resan har publicerats med knappen **Publicera** . [Läs mer](../building-journeys/publish-journey.md)
 * **Pausad**: den aktiva resan har pausats med knappen **Paus** . [Läs mer](../building-journeys/journey-pause.md)
-* **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt. [Läs mer](../building-journeys/end-journey.md#stop-a-journey)
+* **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt. [Läs mer](../building-journeys/end-journey.md#stop-journey)
 * **Stängd**: resan har stängts med knappen **Stäng till nya ingångar**. Resan slutar med att nya individer kan komma in på resan. Personer som redan är på resan kan slutföra resan normalt. [Läs mer](../building-journeys/end-journey.md)
 
 >[!NOTE]
 >
->* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **&rbrace;Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+>* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **}Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
 >
 >* Om du behöver ändra till en **Live**-resa [skapar du en ny version](#journey-versions) av din resa. Du kan även pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst. [Läs mer om att pausa resor](../building-journeys/journey-pause.md)
 

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
-source-git-commit: 7a8a0c133318b0bfc33b0fdb294e5b9ef53de9a5
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 1%
@@ -64,8 +64,8 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 1. På fliken **[!UICONTROL Settings]** kan du:
 
    * Välj de enheter som du vill att fragmentet ska visas på.
-   * Öppna fragmentet på en ny flik om du vill redigera det. [Läs mer](../content-management/fragments.md#edit-fragments)
-   * Utforska referenser. [Läs mer](../content-management/fragments.md#explore-references)
+   * Öppna fragmentet på en ny flik om du vill redigera det. [Läs mer](../content-management/fragments.md#fragments)
+   * Utforska referenser. [Läs mer](../content-management/fragments.md#visual-expression)
 
 1. Du kan anpassa fragmentet ytterligare med fliken **[!UICONTROL Styles]**.
 

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 69742163-7378-49ab-929e-86213d6e65e3
-source-git-commit: 08d444f499229f0942e4dae17d87030225f34d5f
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Observera att det kan ta en stund att definiera den bästa utföraren. Om ditt e
 
 * **[!UICONTROL Lift]**: Mät den procentuella förbättringen av konverteringsgraden för en given behandling över baslinjen.
 
-* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#adobes-statistical-methodology-any-time-valid-confidence-sequences)
 
 +++
 
@@ -64,7 +64,7 @@ En djupdykning i dessa resultat och hur du tolkar dem finns på [den här sidan]
 
 * **[!UICONTROL Confidence Lower bound]**: Det lägsta uppskattade värdet av konverteringsskillnaden mellan behandlingen och baslinjen, inom det valda konfidensintervallet.
 
-* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#understand-confidence)
+* **[!UICONTROL Confidence]**: Bevis på att en viss behandling är densamma som den initiala behandlingen. [Läs mer](../content-management/experiment-calculations.md#adobes-statistical-methodology-any-time-valid-confidence-sequences)
 
 * **[!UICONTROL Confidence Upper bound]**: Det högsta uppskattade värdet av konverteringsskillnaden mellan behandlingen och baslinjen, inom det valda konfidensintervallet.
 
@@ -75,4 +75,4 @@ En djupdykning i dessa resultat och hur du tolkar dem finns på [den här sidan]
 ![](assets/cja-experimentation-conversion.png)
 
 
-Diagrammet **[!UICONTROL Confidence interval]** visar intervallet av möjliga förbättringar, som jämför baslinjen med den bästa behandlingen för det valda framgångsmåttet. [Läs mer](../content-management/experiment-calculations.md#confidence-intervals).
+Diagrammet **[!UICONTROL Confidence interval]** visar intervallet av möjliga förbättringar, som jämför baslinjen med den bästa behandlingen för det valda framgångsmåttet. [Läs mer](../content-management/experiment-calculations.md#adobes-statistical-methodology-any-time-valid-confidence-sequences).

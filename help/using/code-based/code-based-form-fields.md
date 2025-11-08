@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 5dd46ea8-acba-4c42-a65a-c18e45cba2cd
-source-git-commit: 92247adabc56f369c9b11cdc519cdc7bf30c99f1
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 0%
@@ -104,13 +104,13 @@ När du skapar en kodbaserad innehållsmall för upplevelser kan du använda en 
 
 1. Klicka på **[!UICONTROL Add decision policy]** med ikonen **[!UICONTROL Show Decisioning]** i den högra listen på skärmen eller i uttrycksredigeraren i avsnittet **[!UICONTROL Decision policy]** på den vänstra menyn.
 
-   Lär dig hur du skapar en beslutsprincip i [det här avsnittet](../experience-decisioning/create-decision.md#add-decision).
+   Lär dig hur du skapar en beslutsprincip i [det här avsnittet](../experience-decisioning/create-decision.md#create-decision).
 
 1. Klicka på knappen **[!UICONTROL Insert policy]**. Koden som motsvarar beslutspolicyn läggs till.
 
    ![](assets/cbe-template-insert-policy.png)
 
-1. Efter taggen `{{#each}}` infogar du koden som motsvarar de redigerbara formulärfält som du vill lägga till med syntaxen **inline** som beskrivs [&#x200B; ovan](#add-editable-fields). Ersätt `"name"` med ett unikt ID för att identifiera det redigerbara fältet. I det här exemplet använder du &quot;title&quot;.
+1. Efter taggen `{{#each}}` infogar du koden som motsvarar de redigerbara formulärfält som du vill lägga till med syntaxen **inline** som beskrivs [ ovan](#add-editable-fields). Ersätt `"name"` med ett unikt ID för att identifiera det redigerbara fältet. I det här exemplet använder du &quot;title&quot;.
 
    ![](assets/cbe-template-policy-inline.png){width="90%"}
 
@@ -246,4 +246,4 @@ Du kan enkelt redigera formulärfälten från en kodbaserad upplevelseresa eller
 
 Lär dig hur du lägger till redigerbara fält i kodbaserade innehållsmallar för upplevelsekanaler.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463995/?captions=swe&learn=on&#x26;enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463990/?learn=on&#x26;enablevpops)

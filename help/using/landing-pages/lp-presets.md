@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, konfigurera, miljö, underdomän, förinställningar
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-source-git-commit: 18ff50d9625e3e5be555b6ca274b2d7f61dd126e
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Kom igång med förinställningar för landningssidor {#gs-lp-presets}
 
-När du [skapar en landningssida](../landing-pages/create-lp.md#create-a-lp) måste du välja en förinställning för landningssidan för att kunna skapa landningssidan och använda den via **[!DNL Journey Optimizer]**. Förinställningen innehåller den underdomän som ska användas för landningssidorna baserat på den här förinställningen.
+När du [skapar en landningssida](../landing-pages/create-lp.md#create-lp) måste du välja en förinställning för landningssidan för att kunna skapa landningssidan och använda den via **[!DNL Journey Optimizer]**. Förinställningen innehåller den underdomän som ska användas för landningssidorna baserat på den här förinställningen.
 
 Innan du skapar en förinställning bör du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida. [Lär dig hur du skapar en underdomän för landningssida](lp-subdomains.md).
 
@@ -93,4 +93,4 @@ Du kan nu [skapa landningssidor](../landing-pages/create-lp.md) i [!DNL Journey 
 **Relaterade ämnen**:
 
 * [Kom igång med landningssidor](../landing-pages/get-started-lp.md)
-* [Skapa en landningssida](../landing-pages/create-lp.md#create-a-lp)
+* [Skapa en landningssida](../landing-pages/create-lp.md#create-lp)

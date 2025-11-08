@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
 version: Journey Orchestration
-source-git-commit: ef395b65a92fea235811b595cca9bf73f9e78022
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 11%
@@ -97,7 +97,7 @@ För bättre läsbarhet kan du dölja de här parametrarna med knappen **[!UICON
 
 ![Dölj ikonen för skrivskyddade fält i egenskaperna för reseaktivitet](assets/journey-hide-read-only-fields.png)
 
-I vissa specifika sammanhang kan du åsidosätta parametrarnas värden för specifik användning. Om du vill framtvinga ett värde klickar du på ikonen **[!UICONTROL Enable parameter override]** till höger om fältet. [Läs mer](../configuration/primary-email-addresses.md#journey-parameters)
+I vissa specifika sammanhang kan du åsidosätta parametrarnas värden för specifik användning. Om du vill framtvinga ett värde klickar du på ikonen **[!UICONTROL Enable parameter override]** till höger om fältet. [Läs mer](../configuration/primary-email-addresses.md#override-execution-address-journey)
 
 ![Aktivera alternativ för åsidosättning av parameter i egenskaperna för e-postaktivitet](assets/journey-enable-parameter-override.png)
 

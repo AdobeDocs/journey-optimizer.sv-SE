@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Den här dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du bara är kund i realtidsprofilen och inte använder Adobe Journey Optimizer [klickar du här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html?lang=sv-SE){target="_blank"}.
+Den här dokumentationen innehåller detaljerad information om hur du arbetar med målgruppsdispositioner i Adobe Journey Optimizer. Om du bara är kund i realtidsprofilen och inte använder Adobe Journey Optimizer [klickar du här](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/audience-composition.html){target="_blank"}.
 
 >[!ENDSHADEBOX]
 
@@ -118,7 +118,7 @@ Målgruppskomposition finns på Adobe Journey Optimizer **[!UICONTROL Audiences]
 
 ![](assets/audiences-browse.png)
 
-* Fliken **[!UICONTROL Overview]** innehåller en dedikerad instrumentpanel med nyckelvärden som är relaterade till organisationens målgruppsdata. Mer information finns i [Adobe Experience Platform Dashboards guide](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/segments.html?lang=sv-SE).
+* Fliken **[!UICONTROL Overview]** innehåller en dedikerad instrumentpanel med nyckelvärden som är relaterade till organisationens målgruppsdata. Mer information finns i [Adobe Experience Platform Dashboards guide](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/segments.html).
 
 * Fliken **[!UICONTROL Browse]** visar alla befintliga målgrupper som lagras i Adobe Experience Platform.
 
@@ -146,7 +146,7 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    ![](assets/audiences-properties.png)
 
-1. Konfigurera kompositionen genom att lägga till så många aktiviteter som behövs mellan **[!UICONTROL Audience]** och **[!UICONTROL Save]** aktiviteter. Mer information om hur du skapar en komposition finns i [dokumentationen om målgruppskomposition](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-composition).
+1. Konfigurera kompositionen genom att lägga till så många aktiviteter som behövs mellan **[!UICONTROL Audience]** och **[!UICONTROL Save]** aktiviteter. Mer information om hur du skapar en komposition finns i [dokumentationen om målgruppskomposition](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition).
 
    ![](assets/audiences-publish.png)
 
@@ -160,7 +160,7 @@ Så här skapar du ett dispositionsarbetsflöde:
 
    ![](assets/audiences-alerts.png)
 
-1. Dispositionen publiceras. Målgrupperna sparas i Adobe Experience Platform och kan nu användas i Journey Optimizer. [Lär dig målinrikta målgrupper i Journey Optimizer](../audience/about-audiences.md#segments-in-journey-optimizer)
+1. Dispositionen publiceras. Målgrupperna sparas i Adobe Experience Platform och kan nu användas i Journey Optimizer. [Lär dig målinrikta målgrupper i Journey Optimizer](../audience/about-audiences.md#about-segments)
 
 >[!NOTE]
 >
@@ -179,4 +179,4 @@ Kompositioner kan ha flera statusvärden:
 
 >[!NOTE]
 >
->Målgruppskomposition är för närvarande inte integrerat med funktionen för återställning av sandlådor. Innan du initierar en sandlådeåterställning måste du ta bort dina kompositioner manuellt för att se till att de associerade målgruppsdata rensas ordentligt. Detaljerad information finns i Adobe Experience Platform [sandlådedokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=sv-SE#delete-audience-compositions)
+>Målgruppskomposition är för närvarande inte integrerat med funktionen för återställning av sandlådor. Innan du initierar en sandlådeåterställning måste du ta bort dina kompositioner manuellt för att se till att de associerade målgruppsdata rensas ordentligt. Detaljerad information finns i Adobe Experience Platform [sandlådedokumentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html#delete-audience-compositions)

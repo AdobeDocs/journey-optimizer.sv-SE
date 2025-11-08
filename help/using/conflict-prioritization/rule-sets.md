@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 25f581e0f501c148140716da1ef1bf7fd4f43352
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 0%
@@ -151,7 +151,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
    Detaljerad information om hur du använder regeluppsättningen finns i följande avsnitt:
 
    * [Tillämpa en regeluppsättning på en resa](../conflict-prioritization/journey-capping.md#apply-capping)
-   * [Använd regler för begränsning av rese- och kampanjaktiviteter](../conflict-prioritization/channel-capping.md#apply)
+   * [Använd regler för begränsning av rese- och kampanjaktiviteter](../conflict-prioritization/channel-capping.md#apply-frequency-rule)
    * [Använd regler för tysta timmar för resa och kampanj](../conflict-prioritization/quiet-hours.md#apply)
 
 ## Få åtkomst till och hantera regeluppsättningar {#access-rule-sets}
@@ -180,4 +180,4 @@ Dess status ändras till **[!UICONTROL Inactive]** och regeln gäller inte för 
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

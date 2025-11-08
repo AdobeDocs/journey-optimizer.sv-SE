@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 2%
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 Du kan utforma och skicka textmeddelanden (SMS), multimediemeddelanden (RCS) och multimediemeddelanden (MMS) med Adobe Journey Optimizer. Du måste först lägga till en SMS-åtgärd på en resa eller i en kampanj och sedan definiera innehållet i textmeddelandet, enligt beskrivningen nedan. Adobe Journey Optimizer har också funktioner för att testa textmeddelanden innan de skickas, så att du kan kontrollera återgivning, anpassningsattribut och alla andra inställningar.
 
-I enlighet med branschens standarder och bestämmelser måste alla SMS/MMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hantera avanmälan](../privacy/opt-out.md#sms-opt-out-management-sms-opt-out-management)
+I enlighet med branschens standarder och bestämmelser måste alla SMS/MMS-marknadsföringsmeddelanden innehålla ett sätt för mottagarna att enkelt avbryta prenumerationen. För att göra detta kan SMS-mottagare svara med nyckelord för deltagande och avanmälan. [Lär dig hantera avanmälan](../privacy/opt-out.md#opt-out-decision-management)
 
 ## Lägga till ett textmeddelande {#create-sms-journey-campaign}
 
@@ -78,7 +78,7 @@ Nu kan du börja designa innehållet i SMS-meddelandet med knappen **[!UICONTROL
 
 1. I avsnittet **[!UICONTROL Actions tracking]** anger du om du vill spåra klickningar på länkar i SMS-meddelandet.
 
-1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
+1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/campaign-schedule.md#action-campaign-schedule).
 
 1. Välj **[!UICONTROL Action triggers]** i SMS-meddelandet på menyn **[!UICONTROL Frequency]**:
 

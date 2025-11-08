@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 hidefromtoc: true
 hide: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 8%
@@ -78,7 +78,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 </table>
 
 
-Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html?lang=sv-SE){target="_blank"} för fler ändringar.
+Se även [Versionsinformation för Adobe Experience Platform oktober](https://experienceleague.adobe.com/docs/experience-platform/release-notes/2021/october-2021.html){target="_blank"} för fler ändringar.
 
 ### Förbättringar
 
@@ -86,7 +86,7 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 
 * **Uttrycksredigeraren** - Som kraftfull användare kan du nu använda funktioner för att arbeta med kartor. Den här funktionen kan utnyttjas med prenumerationslistorna. Från en viss målgrupp kan du nu till exempel få en e-postadress från en prenumerationslista. [Läs mer i exemplet](../building-journeys/message-to-subscribers-uc.md)
 
-* **Övervakning** - steghändelser för direktresor och testläge har förbättrats. [Nya fält](../reports/sharing-field-list.md#serviceevents) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier. Alla föregående steg-händelsefält är fortfarande tillgängliga i kategorin [stepEvents](../reports/sharing-legacy-fields.md).
+* **Övervakning** - steghändelser för direktresor och testläge har förbättrats. [Nya fält](../reports/sharing-field-list.md#servicevents-field) har lagts till i samband med profilexportjobb. För en bättre användarupplevelse är steghändelsefält nu ordnade i olika kategorier. Alla föregående steg-händelsefält är fortfarande tillgängliga i kategorin [stepEvents](../reports/sharing-legacy-fields.md).
 * **Tillgänglighet** - Tillgänglighetsförbättringar har implementerats under resor.
 * **Samlingar** - Nu stöds arrayer med objekt som innehåller underobjekt. [Läs mer](../building-journeys/collections.md)
 * **Listor** - Listskärmar har förbättrats för resor, händelser, åtgärder och datakällor.
@@ -277,7 +277,7 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 **Innehållsdesign**
 
 * **Bakgrund** - Bakgrundsbilder stöds nu i direktförhandsvisning. [Läs mer](../content-management/preview-test.md)
-  <!--* **One-click opt-out link** - You can insert a new type of link into your email content: the **Opt-out** link allows users to unsubscribe from receiving your communications in just one click, without being redirected to a landing page to confirm opting out. [Learn more](../privacy/opt-out.md#one-click-opt-out-link)-->
+  <!--* **One-click opt-out link** - You can insert a new type of link into your email content: the **Opt-out** link allows users to unsubscribe from receiving your communications in just one click, without being redirected to a landing page to confirm opting out. [Learn more](../privacy/opt-out.md#opt-out-personalization)-->
 
 **Personalization**
 
@@ -351,7 +351,7 @@ Se även [Versionsinformation för Adobe Experience Platform oktober](https://ex
 
 **Förhandsgranska och testa**
 
-* Identitet och namnutrymme visas nu på skärmen **[!UICONTROL Preview]**. [Läs mer](../content-management/preview-test.md#preview-your-messages)
+* Identitet och namnutrymme visas nu på skärmen **[!UICONTROL Preview]**. [Läs mer](../content-management/preview-test.md#preview-test)
 * Antalet testmeddelanden för korrektur är nu begränsat till 10.
 * Tecken som tillåts för **ämnesradsprefixet** i korrektur är nu begränsade. [Läs mer](../content-management/preview-test.md#send-proofs)
 

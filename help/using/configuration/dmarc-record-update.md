@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
 exl-id: 15b10a61-6ecd-4ffa-b1c2-21e862263f6d
-source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Google och Yahoo är en del av deras branschledande arbetsmetoder! båda kräver
 
 Därför rekommenderar Adobe att du ser till att du har DMARC-post konfigurerad för alla underdomäner som du har delegerat till Adobe i [!DNL Journey Optimizer]. Följ stegen nedan som gäller ditt ärende:
 
-* Om du har [delegerat](delegate-subdomain.md#full-subdomain-delegation) dina sändande underdomäner till Adobe följer du ett av alternativen nedan:
+* Om du har [delegerat](delegate-subdomain.md#set-up-subdomain) dina sändande underdomäner till Adobe följer du ett av alternativen nedan:
 
    * Konfigurera DMARC på den överordnade domänen för dina delegerade underdomäner **i din värdlösning**.
 eller
@@ -66,7 +66,7 @@ eller
 
 **Användbara länkar**
 
-* Läs mer om DMARC i [Handboken om bästa praxis för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv-SE#about){target="_blank"}
+* Läs mer om DMARC i [Handboken om bästa praxis för slutprodukter](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html#about){target="_blank"}
 * Läs [Google Gmail-meddelandet](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
 * Läs upp [Yahoo! meddelande](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam){target="_blank"}
 

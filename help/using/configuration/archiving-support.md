@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: arkiv, meddelanden, HIPAA, BCC, e-post
 exl-id: 186a5044-80d5-4633-a7a7-133e155c5e9f
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%
@@ -123,7 +123,7 @@ Om du vill komma åt den här datauppsättningen via användargränssnittet väl
 
 <!--![](assets/preset-bcc-dataset.png)-->
 
-Om du vill köra frågor mot den här datauppsättningen kan du använda frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
+Om du vill köra frågor mot den här datauppsättningen kan du använda frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
 
 ![](assets/preset-bcc-queries.png)
 
@@ -148,7 +148,7 @@ Beroende på vilken information du söker kan du köra följande frågor.
 
    >[!NOTE]
    >
-   >Om du vill hämta parametern `<journey version id>`väljer du motsvarande [reseversion](../building-journeys/journey.md#journey-versions) på menyn **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** . Resursversions-ID visas i slutet av den URL som visas i webbläsaren.
+   >Om du vill hämta parametern `<journey version id>`väljer du motsvarande [reseversion](../building-journeys/journey.md#uc-journey) på menyn **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** . Resursversions-ID visas i slutet av den URL som visas i webbläsaren.
    >
    >![](assets/preset-bcc-action-id.png)
 
@@ -234,7 +234,7 @@ Rubriken `x-message-profile-id` lagras också i följande systemdatauppsättning
 
 * Om du vill komma åt dessa datauppsättningar via användargränssnittet väljer du **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Läs mer om hur du får åtkomst till datauppsättningar i [det här avsnittet](../data/get-started-datasets.md#access-datasets).
 
-* Använd Frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
+* Använd Frågeredigeraren som tillhandahålls av [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. Om du vill komma åt den väljer du **[!UICONTROL Data management]** > **[!UICONTROL Queries]** och klickar på **[!UICONTROL Create query]**. [Läs mer](../data/get-started-queries.md)
 
 Nedan visas några exempelfrågor som du kan köra för att hämta information som motsvarar dina BCC-kopior.
 

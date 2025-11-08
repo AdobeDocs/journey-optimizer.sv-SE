@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 2%
@@ -97,7 +97,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_code_based_experience"
 >title="Använda personaliseringsredigeraren"
 >abstract="Infoga och redigera koden som du vill leverera som en del av den här kodbaserade upplevelseåtgärden."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
 
 Följ stegen nedan för att redigera innehållet i din kodbaserade upplevelse.
 
@@ -123,9 +123,9 @@ Följ stegen nedan för att redigera innehållet i din kodbaserade upplevelse.
 
 1. Du kan lägga till HTML- eller JSON-uttrycksfragment om det behövs. [Lär dig hur](../personalization/use-expression-fragments.md)
 
-   Du kan också spara en del av kodinnehållet som fragment. [Lär dig hur](../content-management/fragments.md#save-as-expression-fragment)
+   Du kan också spara en del av kodinnehållet som fragment. [Lär dig hur](../content-management/fragments.md#visual-expression)
 
-1. Med kodbaserade upplevelser kan ni använda beslutsfunktionen. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md#add-decision)
+1. Med kodbaserade upplevelser kan ni använda beslutsfunktionen. Välj ikonen **[!UICONTROL Decision policy]** i det vänstra fältet och klicka på **[!UICONTROL Add decision policy]**. [Läs mer](../experience-decisioning/create-decision.md#create-decision)
 
    ![](assets/code-based-campaign-create-decision.png)
 
@@ -135,7 +135,7 @@ Följ stegen nedan för att redigera innehållet i din kodbaserade upplevelse.
 
    <!--![](assets/code-based-campaign-show-decisioning.png)-->
 
-   De detaljerade stegen för att skapa en beslutsprincip visas i [det här avsnittet](../experience-decisioning/create-decision.md#add-decision).
+   De detaljerade stegen för att skapa en beslutsprincip visas i [det här avsnittet](../experience-decisioning/create-decision.md#create-decision).
 
 1. Klicka på **[!UICONTROL Save and close]** för att bekräfta ändringarna.
 
@@ -145,4 +145,4 @@ När utvecklaren gör ett API- eller SDK-anrop för att hämta innehåll för de
 
 I videon nedan visas hur du skapar en kodbaserad upplevelsekampanj, konfigurerar dess egenskaper, testar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449457/?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428868/?quality=12&learn=on)

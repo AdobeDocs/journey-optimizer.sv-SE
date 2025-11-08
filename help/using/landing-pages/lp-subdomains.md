@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landning, landningssida, underdomäner, konfiguration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -26,13 +26,13 @@ ht-degree: 0%
 >id="ajo_admin_subdomain_lp"
 >title="Delegera en underdomän för landningssida"
 >abstract="Du måste konfigurera en underdomän att använda för dina landningssidor, eftersom du behöver den här underdomänen för att skapa en förinställning för landningssidor. Du kan använda en underdomän som redan har delegerats till Adobe eller konfigurera en ny underdomän."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html?lang=sv-SE#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_lp_subdomain"
 >title="Skapa en förinställning för landningssida"
 >abstract="Om du vill kunna skapa en förinställning för landningssida måste du kontrollera att du tidigare har konfigurerat minst en underdomän för landningssida att välja från listan med underdomännamn."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html?lang=sv-SE#lp-create-preset" text="Skapa förinställningar för landningssidor"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Skapa förinställningar för landningssidor"
 
 ## Kom igång med underdomäner för landningssidor {#gs-lp-subdomains}
 
@@ -141,7 +141,7 @@ Följ stegen nedan för att konfigurera en ny underdomän.
 
 Om du vill avdelegera en underdomän till en landningssida följer du stegen nedan.
 
-1. I [!DNL Journey Optimizer] avpublicerar du alla landningssidor som är associerade med underdomänen. [Lär dig hur](create-lp.md#access-landing-pages)
+1. I [!DNL Journey Optimizer] avpublicerar du alla landningssidor som är associerade med underdomänen. [Lär dig hur](create-lp.md#create-landing-page)
 
 1. Om landningssidans underdomän pekar på en CNAME-post kan du ta bort den CNAME DNS-post som du skapade för landningssidans underdomän från din värdlösning (men ta inte bort den ursprungliga e-postunderdomänen om sådan finns).
 

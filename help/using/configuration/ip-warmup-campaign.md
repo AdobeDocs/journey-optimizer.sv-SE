@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: IP, pooler, leveransbarhet
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: 6da1d9a3edb8a30b8f13fd0cb6a138f22459ad00
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 2%
@@ -29,13 +29,13 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
 1. Skapa en [konfiguration](channel-surfaces.md) för e-postkanalen för domänen och IP-adresserna som du har identifierat för din värdplan.
 
-   Samarbeta med er leveranskonsult för att identifiera vilken domän och vilka IP-adresser som ska användas. Lär dig hur du väljer dem i en e-postkonfiguration i [det här avsnittet](../email/email-settings.md#subdomains-and-ip-pools).
+   Samarbeta med er leveranskonsult för att identifiera vilken domän och vilka IP-adresser som ska användas. Lär dig hur du väljer dem i en e-postkonfiguration i [det här avsnittet](../email/email-settings.md#ip-pools).
 
    >[!CAUTION]
    >
    >Redigera inte e-postkanalkonfigurationen efter att IP-värmningsplanen har [startat](ip-warmup-execution.md).
 
-1. Skapa en [kampanj](../campaigns/create-campaign.md) för den schemalagda marknadsföringen och välj åtgärden [E-post](../email/create-email.md#create-email-journey-campaign).
+1. Skapa en [kampanj](../campaigns/create-campaign.md) för den schemalagda marknadsföringen och välj åtgärden [E-post](../email/create-email.md#create-email).
 
    <!--Select the Marketing category. The IP warmup plan activation option is only available for  marketing-type campaigns.-->
 
@@ -57,7 +57,7 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!IMPORTANT]
    >
-   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
+   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
 
    Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
@@ -65,7 +65,7 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!NOTE]
    >
-   >[Affärsregler](../conflict-prioritization/rule-sets.md#apply-frequency-rule) ska inte användas i IP-värmeringsplaner. Om dessa regler tillämpas kan det bli svårt att nå det önskade antalet målgruppsprofiler för kampanjer.
+   >[Affärsregler](../conflict-prioritization/rule-sets.md#rule-sets) ska inte användas i IP-värmeringsplaner. Om dessa regler tillämpas kan det bli svårt att nå det önskade antalet målgruppsprofiler för kampanjer.
 
    Knappen **[!UICONTROL Delete]** är tillgänglig tills den är associerad med en IP-värmeringsplan för en aktiv kampanj med en IP-värmeringsplan aktiverad. När kampanjen väl har använts i en plan kan den inte längre tas bort.
 
@@ -79,5 +79,5 @@ En IP-värmare kan bara användas i en IP-värmeringsplan. Men samma kampanj kan
 
 >[!NOTE]
 >
->När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens status till [&#x200B; efter att planen är &#x200B;](ip-warmup-execution.md#mark-as-completed)markerad som slutförd **[!UICONTROL Stopped]**.
+>När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens status till [ efter att planen är ](ip-warmup-execution.md#mark-as-completed)markerad som slutförd **[!UICONTROL Stopped]**.
 

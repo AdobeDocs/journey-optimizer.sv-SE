@@ -11,7 +11,7 @@ role: User
 level: Beginner
 badge: label="Beta" type="Informative"
 exl-id: e4935129-c1cb-41b1-b84d-cd419053c303
-source-git-commit: 4fa50df6827e07e6f6f3c5730d1ae2a1af0d426d
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Innan du börjar använda den här funktionen bör du kontrollera att du uppfyll
 
 * **Experience Manager-inställningar**
 
-  Den här funktionen är tillgänglig med [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=sv-SE){target="_blank"}.
+  Den här funktionen är tillgänglig med [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html){target="_blank"}.
 
   Som en del av betaprogrammet utförs Cloud Service-konfigurationen av Adobe i Adobe Experience Manager för att ansluta till Adobe Journey Optimizer.
 
@@ -62,7 +62,7 @@ Om du vill exportera en Adobe Experience Manager-mall till Adobe Journey Optimiz
 
    ![](assets/aem-outbound-menu.png)
 
-1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html?lang=sv-SE#creating-a-new-page)
+1. Från ditt innehållsbibliotek kan du använda tidigare konfigurerade mallar eller skapa en från grunden. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html#creating-a-new-page)
 
 1. Genom att lägga in Journey Optimizer personaliseringssyntax i mallen kan du förbättra dess anpassningsmöjligheter. [Läs mer](../personalization/personalization-syntax.md)
 
@@ -100,7 +100,7 @@ När Experience Manager-mallen är tillgänglig i Journey Optimizer som en inneh
    >
    > Om du vill redigera och anpassa mallen kan du bara använda kompatibilitetsläget.
 
-1. [Testa och validera innehållsmallen](../content-management/content-templates.md#test-template) när den är klar.
+1. [Testa och validera innehållsmallen](../content-management/content-templates.md#content-templates) när den är klar.
 
 1. När innehållet har definierats kan du använda det när du skapar ny e-post genom att bläddra i samlingen **[!UICONTROL Saved templates]**. Välj sedan **[!UICONTROL Use this template]**.
 

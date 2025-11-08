@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: e-post, mallar, design
 exl-id: 94d5e615-a7d6-468c-bee8-1ae5fcd4a694
-source-git-commit: 5be9ac1f77d7a09089dd8115fd7c9cfa0a3ab0d2
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 1%
@@ -33,9 +33,9 @@ Du kan välja mellan:
 
 * **Sparade mallar**. Du kan också använda en anpassad mall som du antingen:
 
-   * Skapad från början med menyn **[!UICONTROL Content templates]**. [Läs mer](../content-management/content-templates.md#create-template-from-scratch)
+   * Skapad från början med menyn **[!UICONTROL Content templates]**. [Läs mer](../content-management/content-templates.md#content-templates)
 
-   * Sparas från ett e-postmeddelande under en resa eller en kampanj med alternativet **[!UICONTROL Save as content template]**. [Läs mer](../content-management/content-templates.md#save-as-template)
+   * Sparas från ett e-postmeddelande under en resa eller en kampanj med alternativet **[!UICONTROL Save as content template]**. [Läs mer](../content-management/content-templates.md#video-templates)
 
 Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmallarna eller sparade mallar.
 
@@ -47,7 +47,7 @@ Följ stegen nedan när du vill börja skapa innehåll med någon av exempelmall
 
    ![](assets/email_designer-saved-templates-tab.png)
 
-1. Listan med alla [innehållsmallar](../content-management/content-templates.md#create-content-templates) som skapats i den aktuella sandlådan visas. Du kan sortera dem **[!UICONTROL By name]**, **[!UICONTROL Last modified]** och **[!UICONTROL Last created]**.
+1. Listan med alla [innehållsmallar](../content-management/content-templates.md#content-templates) som skapats i den aktuella sandlådan visas. Du kan sortera dem **[!UICONTROL By name]**, **[!UICONTROL Last modified]** och **[!UICONTROL Last created]**.
 
    ![](assets/email_designer-saved-templates-filter.png)
 

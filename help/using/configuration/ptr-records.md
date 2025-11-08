@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: underdomän, PTR, poster, DNS, domän, post
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -64,13 +64,13 @@ När du skapar ytterligare underdomäner måste du ändra en eller flera PTR-pos
 
 ### Fullt delegerade underdomäner {#fully-delegated-subdomains}
 
-Om du vill redigera en PTR-post med en underdomän som är [helt delegerad](delegate-subdomain.md#full-subdomain-delegation) till Adobe följer du stegen nedan.
+Om du vill redigera en PTR-post med en underdomän som är [helt delegerad](delegate-subdomain.md#set-up-subdomain) till Adobe följer du stegen nedan.
 
 1. Öppna en PTR-post genom att klicka på dess namn i listan.
 
    ![](assets/ptr-record-select.png)
 
-1. Välj en underdomän [som har delegerats &#x200B;](delegate-subdomain.md#full-subdomain-delegation) till Adobe i listan.
+1. Välj en underdomän [som har delegerats ](delegate-subdomain.md#set-up-subdomain) till Adobe i listan.
 
    ![](assets/ptr-record-subdomain.png)
 

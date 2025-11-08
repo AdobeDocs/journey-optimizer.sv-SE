@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 hidefromtoc: true
 hide: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '3599'
 ht-degree: 8%
@@ -393,7 +393,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Resor**
 
-* **Slutar en resa** - I arbetsytan har aktiviteten **Slut** tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se videon [documentation](../building-journeys/end-journey.md) och [feature &#x200B;](https://video.tv.adobe.com/v/345376){target="_blank"}.
+* **Slutar en resa** - I arbetsytan har aktiviteten **Slut** tagits bort från paletten. Sluttaggar läggs nu till som standard i slutet av varje bana och kan inte tas bort. Denna förbättring gör det möjligt att bättre rapportera var en kund lämnade resan, utan att någon åtgärd krävs från kundens sida. Se videon [documentation](../building-journeys/end-journey.md) och [feature ](https://video.tv.adobe.com/v/345376){target="_blank"}.
 
 
 * Alternativet **Tidszon för profil** är nu avmarkerat som standard i resans egenskaper. [Läs mer](../building-journeys/timezone-management.md#timezone-from-profiles)
@@ -518,7 +518,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **E-post**
 
-* **Spara som mall** - Nu kan du spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../content-management/content-templates.md#save-as-template)
+* **Spara som mall** - Nu kan du spara ett e-postinnehåll som en mall och återanvända det när du skapar andra meddelanden. [Läs mer](../content-management/content-templates.md#video-templates)
 
 
 **Administration**
@@ -630,7 +630,7 @@ På den här sidan visas alla funktioner och förbättringar för [!DNL Journey 
 
 **Landningssidor**
 
-* **Nytt alternativ för kryssrutor för anmälan/avanmälan** - Nu kan du infoga en enda kryssruta för avanmälan/avanmälan på prenumerationens landningssidor. Användarna måste markera kryssrutan för att godkänna (anmälan) och avmarkera den för att ta bort sitt samtycke (avanmälan). [Läs mer](../landing-pages/design-lp.md#define-lp-specific-content)
+* **Nytt alternativ för kryssrutor för anmälan/avanmälan** - Nu kan du infoga en enda kryssruta för avanmälan/avanmälan på prenumerationens landningssidor. Användarna måste markera kryssrutan för att godkänna (anmälan) och avmarkera den för att ta bort sitt samtycke (avanmälan). [Läs mer](../landing-pages/design-lp.md#design-lp)
 
 * **Fyll i fält för landningssidor i förväg** - Nu kan användarna fylla i fält för landningssidor i förväg med profilinformation. [Läs mer](../landing-pages/create-lp.md#configure-primary-page)
 
@@ -818,7 +818,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 
 **Resor**
 
-* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
+* Journey Optimizer steghändelser kan nu länkas till andra datauppsättningar i [Adobe Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). Fältet **profileID**, i det inbyggda händelseschemat för kundsteg, har nu definierats som ett identitetsfält. [Läs mer](../reports/sharing-overview.md#integration-cja)
 
 **Beslutshantering**
 

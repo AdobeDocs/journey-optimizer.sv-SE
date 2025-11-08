@@ -7,7 +7,7 @@ topic: Integrations
 role: User
 level: Beginner, Intermediate
 exl-id: 722f9c3b-b505-48c0-b126-31a7a841c245
-source-git-commit: 0ec43a204f5fcf0bddf38cfd381f0ea496c7de70
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 3%
@@ -41,7 +41,7 @@ Använd menyn **[!UICONTROL Components]** för att skapa och hantera komponenter
 
 >[!NOTE]
 >
->Om du har problem med att komma åt beslutshanteringen eller vissa funktioner i den, bör du höra med en Admin-användare att du har fått de behörigheter som krävs. Se [Bevilja åtkomst till beslutshantering](starting-offer-decisioning.md#granting-access-to-decision-management).
+>Om du har problem med att komma åt beslutshanteringen eller vissa funktioner i den, bör du höra med en Admin-användare att du har fått de behörigheter som krävs. Se [Bevilja åtkomst till beslutshantering](starting-offer-decisioning.md#granting-acess-to-decision-management).
 
 ## Översikt {#overview}
 

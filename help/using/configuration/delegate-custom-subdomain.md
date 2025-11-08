@@ -10,7 +10,7 @@ level: Experienced
 keywords: underdomän, delegering, domän, DNS
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
-source-git-commit: 722d37dc4bcb9ab7983ea336aa0b12a6a09e01dc
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 >
 >Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
 
-Som ett alternativ till metoderna [Fullt delegerad](about-subdomain-delegation.md#full-subdomain-delegation) och [CNAME konfigurerad](about-subdomain-delegation.md#cname-subdomain-delegation) kan du med metoden **Anpassad delegering** ta ägarskapet för dina underdomäner inom Journey Optimizer för att få fullständig kontroll över de genererade certifikaten.
+Som ett alternativ till metoderna [Fullt delegerad](about-subdomain-delegation.md#full-subdomain-delegation) och [CNAME konfigurerad](about-subdomain-delegation.md#subdomain-delegation-methods) kan du med metoden **Anpassad delegering** ta ägarskapet för dina underdomäner inom Journey Optimizer för att få fullständig kontroll över de genererade certifikaten.
 
 Som en del av den här processen måste Adobe se till att din DNS är konfigurerad för att leverera, återge och spåra meddelanden. Det är därför du måste [överföra SSL-certifikatet](#upload-ssl-certificate) från certifikatutfärdaren och slutföra [feedbackloopstegen](#feedback-loop-steps) genom att verifiera domänägarskap och rapportera e-postadressen.
 
@@ -126,7 +126,7 @@ Följ stegen nedan för att konfigurera en anpassad underdomän.
 >title="Slutför stegen för feedbackslingan"
 >abstract="Gå till Yahoo! Avsändarhubben och fyll i formuläret för att verifiera domänägarskap. Ange den e-postadress för FBL-rapportering som anges nedan och använd den engångslösenord som kommer att tas emot för att verifiera ägarskapet på Yahoo! Avsändarhubb."
 
-1. Gå till [Yahoo! Webbplatsen för avsändarhubben &#x200B;](https://senders.yahooinc.com/) och fyll i det formulär som krävs för att verifiera din domänägarskap.
+1. Gå till [Yahoo! Webbplatsen för avsändarhubben ](https://senders.yahooinc.com/) och fyll i det formulär som krävs för att verifiera din domänägarskap.
 
 1. För att verifiera domänägarskapet, Yahoo! Avsändarhubben kräver att du anger en e-postadress. Ange den e-postadress för FBL-rapportering som listas under **[!UICONTROL Value]**. Det här är en e-postadress som ägs av Adobe.
 

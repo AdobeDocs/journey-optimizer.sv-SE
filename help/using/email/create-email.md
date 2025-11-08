@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 3aa3203ae7763d81288cb70a2984d017b0006bb3
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 2%
@@ -51,7 +51,7 @@ Mer information om hur du konfigurerar en resa finns på [den här sidan](../bui
 
 1. Skapa en ny schemalagd eller API-utlöst kampanj och välj **[!UICONTROL Email]** som din åtgärd.
 
-1. Slutför stegen för att skapa en e-postkampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/create-campaign.md#schedule).
+1. Slutför stegen för att skapa en e-postkampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/campaign-schedule.md#action-campaign-schedule).
 
    ![](assets/email_campaign_steps.png)
 
@@ -86,7 +86,7 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 
 1. Växla **[!UICONTROL Enable decisioning]** om du vill lägga till beslutsprinciper i e-postmeddelandet.
 
-   Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem. [Lär dig hur du lägger till en beslutsprincip i ett e-postmeddelande](../experience-decisioning/create-decision.md#add)
+   Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem. [Lär dig hur du lägger till en beslutsprincip i ett e-postmeddelande](../experience-decisioning/create-decision.md#create-decision)
 
    ![](assets/../../experience-decisioning/assets/decision-policy-enable.png)
 
@@ -132,7 +132,7 @@ Två typer av varningar kan inträffa:
 
 * **Varningar** hänvisar till rekommendationer och bästa praxis, som:
 
-   * **[!UICONTROL The opt-out link is not present in the email body]**: det är bäst att lägga till en länk för att avbryta prenumerationen i e-postmeddelandet. Lär dig hur du konfigurerar det i [det här avsnittet](../privacy/opt-out.md#opt-out-management).
+   * **[!UICONTROL The opt-out link is not present in the email body]**: det är bäst att lägga till en länk för att avbryta prenumerationen i e-postmeddelandet. Lär dig hur du konfigurerar det i [det här avsnittet](../privacy/opt-out.md#opt-out-decision-management).
 
      >[!NOTE]
      >

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Sidan Campaign **[!UICONTROL Live report]** visas med följande flikar:
 
 Campaign **[!UICONTROL Live report]** är uppdelad i olika widgetar som beskriver kampanjens framgångar och fel. Varje widget kan storleksändras och tas bort vid behov. Mer information finns i [avsnittet](../reports/live-report.md#modify-dashboard).
 
-En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](live-report.md#list-of-components-live).
+En detaljerad lista över alla mätvärden som är tillgängliga i Adobe Journey Optimizer finns på [den här sidan](live-report.md#live-report).
 
 ## Fliken Kampanj {#campaign-live}
 

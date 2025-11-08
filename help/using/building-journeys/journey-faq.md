@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '5125'
 ht-degree: 0%
@@ -403,7 +403,7 @@ Ja, men med begränsningar. Du kan redigera vissa element i en Live-resa:
 
 Profiler som redan är under färd kommer att slutföra den ursprungliga versionen, medan nya profiler kommer att gå in i den nya versionen.
 
-Läs mer om [reseversioner](journey-ui.md#journey-versions).
+Läs mer om [reseversioner](journey-ui.md#journey-filter).
 
 +++
 
@@ -940,4 +940,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

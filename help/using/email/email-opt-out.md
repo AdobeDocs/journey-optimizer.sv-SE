@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: 47185cdcfb243d7cb3becd861fec87abcef1f929
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 0%
@@ -22,7 +22,7 @@ När ni skickar meddelanden från resor eller kampanjer måste ni alltid se till
 
 >[!NOTE]
 >
->Alla marknadsföringsmeddelanden måste innehålla en länk för avanmälan. Detta krävs inte för transaktionsmeddelanden. Meddelandekategorin - **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]** - definieras på [kanalkonfigurationsnivån](../configuration/channel-surfaces.md#email-type) och när meddelandet skapas.
+>Alla marknadsföringsmeddelanden måste innehålla en länk för avanmälan. Detta krävs inte för transaktionsmeddelanden. Meddelandekategorin - **[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]** - definieras på [kanalkonfigurationsnivån](email-settings.md#email-type) och när meddelandet skapas.
 
 Om du vill infoga en länk för att avbryta prenumerationen i ditt e-postinnehåll kan du:
 
@@ -34,7 +34,7 @@ Om du vill infoga en länk för att avbryta prenumerationen i ditt e-postinnehå
 
 När en mottagare klickar på avanmälningslänken behandlas deras avanmälningsförfrågan därefter.
 
-Om du vill kontrollera att den motsvarande profilens val har uppdaterats går du till Experience Platform och [bläddrar till profilen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide#attributes-tab). På fliken **[!UICONTROL Attributes]** kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
+Om du vill kontrollera att den motsvarande profilens val har uppdaterats går du till Experience Platform och [bläddrar till profilen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes-tab). På fliken **[!UICONTROL Attributes]** kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#browse-identity){target="_blank"}.
 
 ![](assets/opt-out-profile-choice.png)
 
@@ -134,7 +134,7 @@ Begärandetext:
 }
 ```
 
-[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera den motsvarande profilens val via API-anropet [&#x200B; Adobe Developer](https://developer.adobe.com){target="_blank"}.
+[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera den motsvarande profilens val via API-anropet [ Adobe Developer](https://developer.adobe.com){target="_blank"}.
 
 +++
 

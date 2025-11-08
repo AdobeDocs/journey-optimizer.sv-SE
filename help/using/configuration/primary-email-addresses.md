@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: f69e482daf457f1c331d158d1bf04b4cfb392197
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 >id="ajo_journey_execution_address"
 >title="Definiera ett anpassat värde"
 >abstract="I vissa specifika fall kan du åsidosätta standardadressen för körningen. Använd ikonen **Aktivera åsidosättning av parameter** till höger om fältet för att definiera en anpassad primär adress."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="Om körningsadressen"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="Om körningsadressen"
 
 För specifika användningsfall kan du åsidosätta körningsfältet som ställts in globalt och definiera ett annat värde på resenivån.
 
@@ -83,7 +83,7 @@ Att åsidosätta det här värdet kan vara användbart för att:
 * Testa leveransen. Du kan lägga till en egen e-postadress eller ett eget telefonnummer: när du har publicerat resan skickas e-postmeddelandet, SMS-meddelandet eller whatsApp-meddelandet till dig.
 * Skicka ett meddelande till prenumeranterna på en lista. Läs mer i [det här användningsexemplet](../building-journeys/message-to-subscribers-uc.md).
 
-När du lägger till en **[!UICONTROL Email]**-, **[!UICONTROL SMS]**- eller **[!UICONTROL WhatsApp]**-åtgärd för en [-resa](../email/create-email.md#create-email-journey-campaign) visas den primära e-postadressen eller telefonnumret under de avancerade parametrarna för resan.
+När du lägger till en **[!UICONTROL Email]**-, **[!UICONTROL SMS]**- eller **[!UICONTROL WhatsApp]**-åtgärd för en [-resa](../email/create-email.md#create-email) visas den primära e-postadressen eller telefonnumret under de avancerade parametrarna för resan.
 
 Åsidosätt det här värdet med ikonen **[!UICONTROL Enable parameter override]** till höger om fältet.
 

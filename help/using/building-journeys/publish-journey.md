@@ -10,7 +10,7 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Steg för att publicera en resa beskrivs nedan:
 1. Innan du publicerar din resa kontrollerar du att den är giltig och att inga fel har uppstått. Du kan inte publicera en resa med fel.
 
    * Lär dig testa din resa på [den här sidan](testing-the-journey.md).
-   * Lär dig hur du felsöker dina resefel i [det här avsnittet](../building-journeys/troubleshooting.md#checking-for-errors-before-testing).
+   * Lär dig hur du felsöker dina resefel i [det här avsnittet](../building-journeys/troubleshooting.md#activity-errors).
 
 1. Om du vill publicera resan klickar du på alternativet **[!UICONTROL Publish]** som finns i den övre högra menyn.
 
@@ -40,7 +40,7 @@ Steg för att publicera en resa beskrivs nedan:
 
    ![](assets/journeyuc1_18.png)
 
-När resan publiceras är den i **skrivskyddat**-läge. I skrivskyddat läge kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning. Om du behöver göra ytterligare ändringar i en publicerad resa skapar du [en ny version](journey-ui.md#journey-versions) av din resa.
+När resan publiceras är den i **skrivskyddat**-läge. I skrivskyddat läge kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning. Om du behöver göra ytterligare ändringar i en publicerad resa skapar du [en ny version](journey-ui.md#journey-filter) av din resa.
 
 När du avbryter en resa stoppas den permanent. Alla personer som passerar genom resan stoppas permanent, och resan avbryts så att nya deltagare kan komma in. Om du behöver göra om resan duplicerar du den och publicerar den nya resan.
 
@@ -81,11 +81,11 @@ När du publicerar en ny version av en resa avslutas den tidigare versionen auto
 
 >[!NOTE]
 >
->Särskilda skyddsräcken och begränsningar gäller för versionshantering av resorna. Läs mer på [den här sidan](../start/guardrails.md#journey-versions-journey-versions-g).
+>Särskilda skyddsräcken och begränsningar gäller för versionshantering av resorna. Läs mer på [den här sidan](../start/guardrails.md#journey-versions-g).
 
 
 ## Instruktionsvideo {#video}
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427940?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)

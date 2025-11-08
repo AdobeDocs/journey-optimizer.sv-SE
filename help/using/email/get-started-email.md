@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: e-post, börja, skapa, förhandsgranska
 exl-id: 621c4256-449d-4376-96cd-02cbdcd4de05
-source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 7%
@@ -29,7 +29,7 @@ E-postleveranser kan skapas:
 
 * I en **resa**: när du har lagt till en **[!UICONTROL Email]**-aktivitet på din resa, och har definierat grundläggande inställningar, använder du den högra panelen i **[!UICONTROL Actions: Email]** för att skapa innehållet för meddelandet. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
-* I en **kampanj**: när du har skapat en kampanj väljer du **[!UICONTROL Email]** som din åtgärd och definierar grundläggande inställningar. [Lär dig skapa en kampanj](../campaigns/create-campaign.md#configure)
+* I en **kampanj**: när du har skapat en kampanj väljer du **[!UICONTROL Email]** som din åtgärd och definierar grundläggande inställningar. [Lär dig skapa en kampanj](../campaigns/campaign-action.md#action-campaign-action)
 
 
 >[!IMPORTANT]

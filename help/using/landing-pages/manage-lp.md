@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landningssida, landningssida
 exl-id: cc4cfd17-4d85-4dcd-8dd9-23cc2cd898be
-source-git-commit: 27e5d1565522f5daa006a16438671ce9d559465b
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -87,6 +87,6 @@ För att enkelt kunna navigera bland landningssidorna kan du använda mappar fö
 
 1. Med knappen **[!UICONTROL More actions]** kan du även flytta landningssidor till en annan befintlig mapp.
 
-1. Nu kan du navigera till mappen som du nyss skapade. Varje ny landningssida som du [skapar](create-lp.md#create-landing-page.md) från här sparas i den aktuella mappen.
+1. Nu kan du navigera till mappen som du nyss skapade. Varje ny landningssida som du [skapar](create-lp.md#create-landing-page) från här sparas i den aktuella mappen.
 
    ![](assets/lp-folder-create.png)

@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate, Experienced
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
-source-git-commit: 5b377982f43902a4549f24c022fa8f4947d896a8
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 3%
@@ -124,7 +124,7 @@ När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad uppl
 
 1. Spara ändringarna och klicka på **[!UICONTROL Create]**. Det nya beslutet läggs till under **[!UICONTROL Decision policy]**.
 
-1. Klicka på knappen **[!UICONTROL Insert policy]**. Koden som motsvarar beslutspolicyn läggs till. Lägg sedan till alla attribut du vill använda i koden, inklusive profilattribut. [Läs mer](create-decision.md#use-decision-policy)
+1. Klicka på knappen **[!UICONTROL Insert policy]**. Koden som motsvarar beslutspolicyn läggs till. Lägg sedan till alla attribut du vill använda i koden, inklusive profilattribut. [Läs mer](create-decision.md#create-decision)
 
    ![](assets/exd-uc-experiment-insert-policy.png){width="90%"}
 

@@ -10,7 +10,7 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '1635'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 >title="Åtgärd"
 >abstract="I det här avsnittet visas alla åtgärder som används i den samordnade kampanjen."
 
-Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**. Använd flikarna för att bläddra bland kampanjer efter typ: **Åtgärd** kampanjer, **API-utlösta** kampanjer och **samordnade** kampanjer. Läs mer om de [olika kampanjtyperna](get-started-with-campaigns.md#get-started-with-campaigns). Vilka typer som är tillgängliga beror på ditt licensavtal och dina behörigheter.
+Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**. Använd flikarna för att bläddra bland kampanjer efter typ: **Åtgärd** kampanjer, **API-utlösta** kampanjer och **samordnade** kampanjer. Läs mer om de [olika kampanjtyperna](get-started-with-campaigns.md#get-started-campaigns). Vilka typer som är tillgängliga beror på ditt licensavtal och dina behörigheter.
 
 >[!BEGINTABS]
 
@@ -66,7 +66,7 @@ Dessutom finns det ett sökfält och filter som gör det enklare att söka i lis
 ![bild som visar kampanjlagret](assets/inventory-actions.png)
 
 * **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Få tillgång till rapporter för att mäta och visualisera effekten och resultatet av era kampanjer. Läs mer om [kampanjrapporter](../reports/campaign-global-report-cja.md).
-* **[!UICONTROL Edit tags]** - Redigera de taggar som är associerade med kampanjen. Lär dig hur du [använder taggar i dina kampanjer](../start/search-filter-categorize.md#add-tags-to-an-object)
+* **[!UICONTROL Edit tags]** - Redigera de taggar som är associerade med kampanjen. Lär dig hur du [använder taggar i dina kampanjer](../start/search-filter-categorize.md#add-tags)
 * **[!UICONTROL Duplicate]** - Använd det här alternativet för att duplicera en kampanj, till exempel för att köra en Orchestrated-kampanj som har stoppats. [Läs mer](#duplicate-a-campaign)
 * **[!UICONTROL Delete]** - Använd det här alternativet om du vill ta bort en kampanj. [Läs mer](#delete-a-campaign)
 * **[!UICONTROL Archive]** - Arkivera kampanjen. Alla arkiverade kampanjer tas bort enligt ett rullande schema 30 dagar efter det att de senast ändrades. Den här åtgärden är tillgänglig för alla kampanjer förutom **[!UICONTROL Draft]** kampanjer. Läs mer om [kampanjarkivering](#archive-a-campaign).

@@ -9,7 +9,7 @@ feature: Channel Configuration, Email
 topic: Administration
 keywords: e-post, konfiguration, yta, underdomäner
 exl-id: 1fc9a4f6-6c34-4414-b400-aac6bda9ee25
-source-git-commit: ea8f77c2821bfae7b853b3ac39ea22f0d19ae43d
+source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 7%
@@ -35,7 +35,7 @@ Om du vill kunna skicka e-post via resor och kampanjer i [!DNL Journey Optimizer
 
 1. Konfigurera alla **tekniska parametrar** som krävs för att leverera e-postmeddelanden i varje e-postkanalskonfiguration. [Läs mer](email-settings.md)
 
-   * Här väljer du den underdomän som ska användas för att skicka e-postmeddelanden och de IP-pooler som ska associeras med konfigurationen. [Läs mer](email-settings.md#subdomains-and-ip-pools)
+   * Här väljer du den underdomän som ska användas för att skicka e-postmeddelanden och de IP-pooler som ska associeras med konfigurationen. [Läs mer](email-settings.md#ip-pools)
 
    ![](assets/surface-subdomain-ip-pool.png)
 
