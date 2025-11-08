@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1027268-0bbe-4e35-a5a6-2aef78083dd3
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 73a347c104fe28799c264f9a8b6c3e5e12c8d892
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Textmeddelanden kan skapas och skickas på en resa eller i en kampanj. För SMS,
 
 * På en **resa**. Skapa en resa, lägg till en SMS-aktivitet och definiera grundläggande inställningar. Bläddra sedan till rutan SMS-åtgärder till höger för att skapa innehållet för SMS-, MMS- eller RCS-meddelandet. [Lär dig skapa en resa](../building-journeys/journey-gs.md)
 
-* I en **kampanj**. Skapa en kampanj, välj SMS som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera SMS-, MMS- eller RCS-meddelandet som ska skickas. [Lär dig skapa en kampanj](../campaigns/campaign-action.md#action-campaign-action)
+* I en **kampanj**. Skapa en kampanj, välj SMS som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera SMS-, MMS- eller RCS-meddelandet som ska skickas. Lär dig skapa [en åtgärdskampanj](../campaigns/campaign-action.md#action-campaign-action) | [en API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) | [en orkestrerad kampanj](../orchestrated/create-orchestrated-campaign.md#create)
 
 >[!IMPORTANT]
 >
@@ -201,7 +201,7 @@ Lär dig hur du konfigurerar, redigerar och inkluderar SMS-meddelanden i dina ku
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3428916?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 
 +++
 
@@ -211,7 +211,7 @@ Upptäck de omfattande mobilmeddelandefunktionerna som Adobe Journey Optimizer e
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3430381?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426021?quality=12&learn=on)
 
 +++
 
@@ -221,7 +221,7 @@ Lär dig hur du konfigurerar och skickar varumärkesanpassade, interaktiva RCS-m
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3464759?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3464755)
 
 +++
 
@@ -230,4 +230,4 @@ Lär dig hur du konfigurerar och skickar varumärkesanpassade, interaktiva RCS-m
 * [Lägg till meddelanden under resor](../building-journeys/journeys-message.md)
 * [Skapa marknadsföringskampanjer](../campaigns/create-campaign.md)
 * [Skyddsritningar och begränsningar](../start/guardrails.md#sms-guardrails)
-* [Självstudiekurser för SMS och mobilmeddelanden](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/sms-channel/sms-mms-messages-overview){target="_blank"}
+* [Självstudiekurser för SMS och mobilmeddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/sms-channel/sms-mms-messages-overview){target="_blank"}

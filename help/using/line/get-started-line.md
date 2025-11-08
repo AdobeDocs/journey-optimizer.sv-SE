@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: dc1bddaf-968f-405d-b8cc-b9443a838fa6
-source-git-commit: 61a30dcc93823dc5e8b647e683bfa2ebf5bfa01b
+source-git-commit: 73a347c104fe28799c264f9a8b6c3e5e12c8d892
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '161'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Radmeddelanden kan skapas och skickas under en resa eller i en kampanj:
 
 * På en **resa**. Skapa en resa, lägg till en LINE-aktivitet och definiera grundläggande inställningar. Bläddra sedan till den högra panelen **[!UICONTROL Actions: LINE]** för att skapa innehållet för LINE-meddelandet. Lär dig hur du skapar en resa på [den här sidan](../building-journeys/journey-gs.md).
 
-* I en **kampanj**. Skapa en kampanj, välj LINE som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera det LINE-meddelande som ska skickas. Lär dig hur du skapar en kampanj på [den här sidan](../campaigns/create-campaign.md#configure).
+* I en **kampanj**. Skapa en kampanj, välj LINE som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera det LINE-meddelande som ska skickas. Lär dig skapa [en åtgärdskampanj](../campaigns/campaign-action.md#action-campaign-action) | [en API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) | [en orkestrerad kampanj](../orchestrated/create-orchestrated-campaign.md#create)
 
 Konfigurera LINE-kanalen med Journey Optimizer innan du skapar LINE-meddelandet. [Läs mer](line-configuration.md).
 

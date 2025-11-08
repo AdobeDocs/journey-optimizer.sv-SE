@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
-source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
+source-git-commit: 73a347c104fe28799c264f9a8b6c3e5e12c8d892
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Du kan nu skicka whatsApp-meddelanden direkt via Journey Optimizer via Meta [Clo
 
 * På en **resa**. Skapa en resa, lägg till en **whatsApp**-aktivitet och definiera grundläggande inställningar. Bläddra sedan till den högra panelen i **[!UICONTROL Actions: WhatsApp]** för att skapa innehållet för WhatsApp-meddelandet. Lär dig skapa en resa på [den här sidan](../building-journeys/journey-gs.md).
 
-* I en **kampanj**. Skapa en kampanj, välj **WhatsApp** som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera det WhatsApp-meddelande som ska skickas. Lär dig skapa en kampanj på [den här sidan](../campaigns/create-campaign.md#configure).
+* I en **kampanj**. Skapa en kampanj, välj **WhatsApp** som åtgärd och definiera grundläggande inställningar. Redigera sedan meddelandeinnehållet för att definiera det WhatsApp-meddelande som ska skickas. Lär dig skapa [en åtgärdskampanj](../campaigns/campaign-action.md#action-campaign-action) | [en API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) | [en orkestrerad kampanj](../orchestrated/create-orchestrated-campaign.md#create)
 
 ![](assets/do-not-localize/whatsapp-beta.png){zoomable="yes"}
 
@@ -58,7 +58,7 @@ I videon nedan visas hur du integrerar WhatsApp som en inbyggd kanal i Adobe Jou
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470248?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470244?learn=on)
 
 +++
 
@@ -66,5 +66,5 @@ I videon nedan visas hur du integrerar WhatsApp som en inbyggd kanal i Adobe Jou
 
 Utforska fler videosjälvstudiekurser om meddelanden och konfiguration i whatsApp.
 
-➡️ [Självstudiekurser för whatsApp-kanal](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/whatsapp/whatsapp-introduction){target="_blank"}
+➡️ [Självstudiekurser för whatsApp-kanal](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/whatsapp/whatsapp-introduction){target="_blank"}
 
