@@ -52,7 +52,7 @@ I listorna kan du utföra grundläggande åtgärder för varje element. Du kan t
 >title="Taggar"
 >abstract="I det här fältet kan du tilldela enhetliga Adobe Experience Platform-taggar till din kampanj. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan."
 
-Med Adobe Experience Platform [enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html) kan du enkelt klassificera dina Journey Optimizer-objekt och förbättra sökningen från listorna.
+Med Adobe Experience Platform [enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html?lang=sv-SE) kan du enkelt klassificera dina Journey Optimizer-objekt och förbättra sökningen från listorna.
 
 ![](../rn/assets/do-not-localize/campaigns-tag.gif)
 
@@ -105,7 +105,7 @@ Du kan lägga till eller ta bort taggar från alla typer av resor och kampanjer 
 
 ### Hantera taggar {#manage-tags}
 
-Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **[!UICONTROL Tags]** under **[!UICONTROL ADMINISTRATION]**. Läs mer om tagghantering i [dokumentationen för enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/ui/managing-tags.html).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **[!UICONTROL Tags]** under **[!UICONTROL ADMINISTRATION]**. Läs mer om tagghantering i [dokumentationen för enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/ui/managing-tags.html?lang=sv-SE).
 
 >[!NOTE]
 >
