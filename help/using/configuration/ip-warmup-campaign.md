@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: IP, pooler, leveransbarhet
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: a44b68e99ec4c55b8ed27b244fcb9e76bdb97760
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 2%
@@ -51,13 +51,13 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    ![](assets/ip-warmup-campaign-plan-activation.png)
 
-   Kampanjen [Schedule](../campaigns/create-campaign.md#schedule) styrs av IP-värmeringsplanen som den är associerad med, vilket innebär att schemat inte längre är definierat i själva kampanjen.
+   Kampanjen [Schedule](../campaigns/campaign-schedule.md) styrs av IP-värmeringsplanen som den är associerad med, vilket innebär att schemat inte längre är definierat i själva kampanjen.
 
 1. Slutför stegen för att skapa en e-postkampanj, som att definiera kampanjegenskaperna, [målgrupp](../audience/about-audiences.md)<!--best practices for IP warmup in terms of audience?--> och [innehåll](../email/get-started-email-design.md#key-steps).
 
    >[!IMPORTANT]
    >
-   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
+   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
 
    Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../campaigns/get-started-with-campaigns.md).
 
@@ -75,9 +75,9 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
 När kampanjen är klar att användas i en IP-värmerapport är den klar att användas. [Läs mer](ip-warmup-plan.md)
 
-En IP-värmare kan bara användas i en IP-värmeringsplan. Men samma kampanj kan användas i en eller flera faser i samma IP-värpportplan. [Läs mer](ip-warmup-plan.md#define-phases)
+En IP-värmare kan bara användas i en IP-värmeringsplan. Men samma kampanj kan användas i en eller flera faser i samma IP-värpportplan. [Läs mer](ip-warmup-plan.md#ip-warmup-plan-tab)
 
 >[!NOTE]
 >
->När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens status till [&#x200B; efter att planen är &#x200B;](ip-warmup-execution.md#mark-as-completed)markerad som slutförd **[!UICONTROL Stopped]**.
+>När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens status till [ efter att planen är ](ip-warmup-execution.md#mark-as-completed)markerad som slutförd **[!UICONTROL Stopped]**.
 

@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, pooler, grupp, underdomäner, leveransbarhet
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: a44b68e99ec4c55b8ed27b244fcb9e76bdb97760
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Uppdateringen träder i kraft omedelbart eller asynkront, beroende på om IP-poo
 
 >[!NOTE]
 >
->När [skapar en kanalkonfiguration](channel-surfaces.md#create-channel-surface) och du väljer en IP-pool som är under utgåva (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som valts för den konfigurationen, kan du inte fortsätta med att skapa en konfiguration. [Läs mer](channel-surfaces.md#subdomains-and-ip-pools)
+>När [skapar en kanalkonfiguration](channel-surfaces.md#create-channel-surface) och du väljer en IP-pool som är under utgåva (**[!UICONTROL Processing]** status) och aldrig har associerats med den underdomän som valts för den konfigurationen, kan du inte fortsätta med att skapa en konfiguration. [Läs mer](channel-surfaces.md#create-channel-surface)
 
 Om du vill kontrollera IP-poolens uppdateringsstatus klickar du på knappen **[!UICONTROL More actions]** och väljer **[!UICONTROL Recent updates]**.
 
