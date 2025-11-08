@@ -230,4 +230,4 @@ Lär dig hur du konfigurerar och skickar varumärkesanpassade, interaktiva RCS-m
 * [Lägg till meddelanden under resor](../building-journeys/journeys-message.md)
 * [Skapa marknadsföringskampanjer](../campaigns/create-campaign.md)
 * [Skyddsritningar och begränsningar](../start/guardrails.md#sms-guardrails)
-* [Självstudiekurser för SMS och mobilmeddelanden](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/sms-channel/sms-mms-messages-overview){target="_blank"}
+* [Självstudiekurser för SMS och mobilmeddelanden](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/sms-channel/sms-mms-messages-overview){target="_blank"}
