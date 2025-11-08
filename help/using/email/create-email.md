@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: 5f2ccb102d08151da5616ef42559164f29542e5d
+source-git-commit: fbd99b95b0e9aeb06435a81bf345dd615a0f9d02
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '979'
 ht-degree: 2%
 
 ---
@@ -49,9 +49,9 @@ Mer information om hur du konfigurerar en resa finns på [den här sidan](../bui
 
 >[!TAB Lägg till ett e-postmeddelande till en kampanj]
 
-1. Skapa en ny schemalagd eller API-utlöst kampanj och välj **[!UICONTROL Email]** som din åtgärd.
+1. [Skapa en kampanj](../campaigns/create-campaign.md) och välj **[!UICONTROL Email]** som åtgärd.
 
-1. Slutför stegen för att skapa en e-postkampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/campaign-schedule.md#action-campaign-schedule).
+1. Slutför stegen för att skapa en e-postkampanj, till exempel kampanjegenskaperna, [målgrupp](../audience/about-audiences.md) och [schema](../campaigns/campaign-schedule.md).
 
    ![](assets/email_campaign_steps.png)
 
