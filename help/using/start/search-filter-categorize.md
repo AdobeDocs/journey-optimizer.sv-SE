@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 452a0a3a08a7b90d0e3a5b78b2e16f532f04ef1a
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 6%
@@ -52,7 +52,7 @@ I listorna kan du utföra grundläggande åtgärder för varje element. Du kan t
 >title="Taggar"
 >abstract="I det här fältet kan du tilldela enhetliga Adobe Experience Platform-taggar till din kampanj. På så sätt kan ni enkelt klassificera dem och förbättra sökningen från kampanjlistan."
 
-Med Adobe Experience Platform [enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html?lang=sv-SE) kan du enkelt klassificera dina Journey Optimizer-objekt och förbättra sökningen från listorna.
+Med Adobe Experience Platform [enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/overview.html) kan du enkelt klassificera dina Journey Optimizer-objekt och förbättra sökningen från listorna.
 
 ![](../rn/assets/do-not-localize/campaigns-tag.gif)
 
@@ -62,7 +62,7 @@ Genom att lägga till meningsfulla taggar till målgrupper i Journey Optimizer k
 
 I fältet **[!UICONTROL Tags]** kan du definiera taggar för objektet. Taggar är tillgängliga för följande objekt:
 
-* [Kampanjer](../campaigns/create-campaign.md#create)
+* [Kampanjer](../campaigns/create-campaign.md)
 * [Beslutsobjekt](../experience-decisioning/items.md)
 * [Fragment](../content-management/fragments.md)
 * [Resor](../building-journeys/journey-properties.md)
@@ -105,7 +105,7 @@ Du kan lägga till eller ta bort taggar från alla typer av resor och kampanjer 
 
 ### Hantera taggar {#manage-tags}
 
-Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **[!UICONTROL Tags]** under **[!UICONTROL ADMINISTRATION]**. Läs mer om tagghantering i [dokumentationen för enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/ui/managing-tags.html?lang=sv-SE).
+Administratörer kan ta bort taggar och ordna dem efter kategorier med hjälp av menyn **[!UICONTROL Tags]** under **[!UICONTROL ADMINISTRATION]**. Läs mer om tagghantering i [dokumentationen för enhetliga taggar](https://experienceleague.adobe.com/docs/experience-platform/administrative-tags/ui/managing-tags.html).
 
 >[!NOTE]
 >
