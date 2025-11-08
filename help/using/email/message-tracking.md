@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7a83bb558559ba814ed9431bb85a68929a276ed5
 workflow-type: tm+mt
 source-wordcount: '1285'
 ht-degree: 1%
@@ -204,4 +204,4 @@ När e-postmeddelandet skickas läggs den här parametern automatiskt till i slu
 
 >[!NOTE]
 >
->Om du vill verifiera den slutliga URL:en kan du [skicka ett korrektur](../content-management/preview-test.md#send-proofs) och klicka på länken i innehållet i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan blir den slutliga URL:en: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
+>Om du vill verifiera den slutliga URL:en kan du [skicka ett korrektur](../content-management/proofs.md) och klicka på länken i innehållet i e-postmeddelandet när du har fått korrekturet. URL:en ska visa spårningsparametern. I exemplet ovan blir den slutliga URL:en: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>

@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
+source-git-commit: 81e54a3e3428d58818805b5dcb397ede4039436a
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 1%
@@ -40,7 +40,7 @@ För att göra detta måste du först skapa en API-utlöst kampanj i Journey Opt
 
 ## Viktiga steg för att skapa API-utlösta kampanjer {#steps}
 
-Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i det här avsnittet](get-started-with-campaigns.md#permissions). När dessa förutsättningar är uppfyllda kan ni börja skapa kampanjen:
+Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i det här avsnittet](get-started-with-campaigns.md#prerequisites). När dessa förutsättningar är uppfyllda kan ni börja skapa kampanjen:
 
 1. [Definiera kampanjegenskaperna](api-triggered-campaign-properties.md)
 1. [Konfigurera kampanjåtgärden](api-triggered-campaign-action.md)
@@ -54,4 +54,4 @@ Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i d
 
 Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452729?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)

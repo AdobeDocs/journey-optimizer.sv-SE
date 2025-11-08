@@ -8,7 +8,7 @@ topic: Content Management
 role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
-source-git-commit: 4521990a02092365f996a81299ada55433639fb7
+source-git-commit: 81e54a3e3428d58818805b5dcb397ede4039436a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Den här sidan förklarar hur kampanjer med högt dataflöde skiljer sig från k
 
 * **Personalization**:
 
-   * All personalisering måste inkluderas i API-nyttolasten som **kontextuella data**. [Lär dig hur du anpassar innehåll med sammanhangsberoende data](../campaigns/api-triggered-campaign-action.md#contextual)
+   * All personalisering måste inkluderas i API-nyttolasten som **kontextuella data**. [Lär dig hur du anpassar innehåll med sammanhangsberoende data](../campaigns/api-triggered-campaign-content.md#contextual)
    * Profilbaserad personalisering stöds inte. Om profilvariabler används inträffar valideringsfel.
 
 * **Personaliserade kanalkonfigurationer** - Kanalkonfigurationer som använder [profilbaserad personalisering](../email/surface-personalization.md) kan inte användas med kampanjer med högt dataflöde. Endast ytor utan profilanpassning kan användas.
@@ -69,7 +69,7 @@ Använd den här tabellen för att bestämma vilken API-utlöst kampanjtyp som p
 Med andra ord:
 
 * Välj **Standard API utlöste** kampanjer om:
-   * Du har inte kontrakt med High Thfeedback.
+   * Du har inte kontrakt med högdataström.
    * Ditt genomströmningsbehov är &lt;500 TPS.
    * Ni behöver personalisering baserat på Adobe-profiler.
    * Ni vill att kampanjdata ska sammanfogas med profiler för framtida målinriktning.
@@ -77,7 +77,7 @@ Med andra ord:
 
 * Välj **kampanjer med hög genomströmning** om:
    * Du behöver ett genomflöde på >500 TPS.
-   * Du behöver inte använda samma profil.
+   * Du behöver inte sy ihop profiler.
    * Du kan skicka all personalisering i API-nyttolasten.
    * Du vill använda e-postkanalen.
 

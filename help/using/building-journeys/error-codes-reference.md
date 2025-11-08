@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: fel, koder, felsökning, resa, kampanj, meddelanden
-source-git-commit: 28a8f113d594f80ba7de22229e9a223b7f17ae8d
+source-git-commit: 7a83bb558559ba814ed9431bb85a68929a276ed5
 workflow-type: tm+mt
 source-wordcount: '2394'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Dessa fel inträffar under körning, händelsebearbetning och API-åtgärder.
 | **CJMRT-080605-400** | Felaktig begäran från körningsmiljön (t.ex. nodutlösare, åtgärd) | Konfigurationen refererar till en borttagen/namnändrad eller inaktuell funktion/mall/kanal | &#x200B;1. Verifiera alla resursreferenser<br/>2. Granska konfigurationen av resan och funktionsflaggor<br/>3. Uppdatera brutna referenser<br/>4. Granska senaste systemuppdateringar och migreringar <br/><br/>**Relaterad dokumentation**: [Reseskapande](journey-gs.md) |
 | **CJMRT-030012-422** | Obearbetbar entitet - misslyckades åtgärd, ogiltig händelse eller felaktig nyttolast | Ogiltiga indata (t.ex. obefintlig publik, händelse eller attribut) | &#x200B;1. Dubbelkontrollera nyttolaststrukturen för indata/händelser<br/>2. Kontrollera att refererade objekt (målgrupper, datauppsättningar) finns och är aktiva<br/>3. Verifiera att alla obligatoriska fält finns tillgängliga<br/>4. Testa med en fungerande nyttolast <br/><br/>**Relaterad dokumentation**: [Felsökning på resan](troubleshooting.md), [Händelsekonfiguration](../event/about-events.md) |
 | **CJMRT-130004-400** | Felaktig begäran - felaktigt formaterad inmatning i kundnod eller kanalkonfiguration | Resursnyttolast eller konfigurationsreferenser har tagits bort/ogiltig resurs | &#x200B;1. Granska konfigurationen av resenoden <br/>. . Kontrollera att alla refererade resurser (meddelanden, målgrupper, åtgärder) finns<br/>3. Korrigera eller uppdatera brutna referenser<br/>4. Återskapa resekonfigurationen om det behövs <br/><br/>**Relaterad dokumentation**: [Reseskapande](journey-gs.md), [Anpassade åtgärder](../action/about-custom-action-configuration.md) |
-| **CJMRT-000032-409** | Konflikt - resursen finns redan | Försök att skapa en resurs med duplicerat ID eller namn | &#x200B;1. Använd unika ID:n och namn för alla resurser <br/>2. Kontrollera om det finns befintliga resurser med samma identifierare <br/>3. Ta bort eller byt namn på objekt som är i konflikt <br/>4. Granska namnkonventioner <br/><br/>**Relaterad dokumentation**: [Reseversioner](journey-gs.md#journey-versions) |
+| **CJMRT-000032-409** | Konflikt - resursen finns redan | Försök att skapa en resurs med duplicerat ID eller namn | &#x200B;1. Använd unika ID:n och namn för alla resurser <br/>2. Kontrollera om det finns befintliga resurser med samma identifierare <br/>3. Ta bort eller byt namn på objekt som är i konflikt <br/>4. Granska namnkonventioner <br/><br/>**Relaterad dokumentation**: [Reseskapande](journey-gs.md) |
 | **CJMRT-170016-400** | Felaktig begäran vid konfiguration/förhandsgranskning av resan | Nödvändigt beroende eller trasig malllänk saknas för nyttolast | &#x200B;1. Verifiera att alla nödvändiga resurser är aktiva<br/>2. Kontrollera att mallar och innehållsblock har publicerats<br/>3. Kontrollera att alla beroenden är korrekt länkade<br/>4. Granska resultat av resetestläge <br/><br/>**Relaterad dokumentation**: [Testar resor](testing-the-journey.md), [Reseberoenden](journey-gs.md) |
 | **CJMRT-080608-400** | Felaktig begäran i domän/kanal/delegering | Nödvändiga DNS-poster eller e-post-/SMS-konfiguration saknas | &#x200B;1. Slutför DNS-konfigurationen för e-postdomäner<br/>2. Verifiera att delegering av underdomän har slutförts<br/>3. Kör konfigurationsguiderna igen<br/>4. Tillåt tid för DNS-spridning (upp till 72 timmar)<br/><br/>**Relaterad dokumentation**: [Kanalytor](../configuration/channel-surfaces.md), [Delegering via underdomän](../configuration/delegate-subdomain.md) |
 | **CJMRT-110100-500** | Internt fel vid nyttolast | Fel i backend-data/konfiguration eller konfiguration som inte stöds | &#x200B;1. Försök igen med åtgärden <br/>2. Förenkla konfigurationen om du använder avancerade funktioner<br/>3. Eskalera till Adobe Support med begärande-ID och exakt nyttolast <br/>4. Kontrollera om det finns kända fel i versionsinformationen <br/><br/>**Relaterad dokumentation**: [Felsökning på resan](troubleshooting.md) |
@@ -181,7 +181,7 @@ Om du stöter på bestående fel som inte kan åtgärdas med den här guiden:
 
 1. **Samla in information**: Samla in felkoden, begärande-ID, tidsstämplar och steg för att återskapa
 2. **Kontrollera systemstatus**: Besök [Adobe-status](https://status.adobe.com/){target="_blank"} för information om kända tjänstproblem
-3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE){target="_blank"} innehåller lösningar
+3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html){target="_blank"} innehåller lösningar
 4. **Engagemangsgrupp**: Skicka frågor i [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 5. **Kontakta Adobe Support**: Skicka in en supportanmälan med all relevant information
 

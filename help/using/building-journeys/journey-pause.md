@@ -9,7 +9,7 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-source-git-commit: b1598fe695a53fd5261b3067f220dc3eea295dfb
+source-git-commit: 7a83bb558559ba814ed9431bb85a68929a276ed5
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -158,7 +158,7 @@ Den här gränsen kontrolleras var 30:e minut. Detta innebär att du tillfällig
 
   Om du återupptar resor för att få tillbaka antalet hållna profiler under gränsen återupptas resan omedelbart, men det kan ta upp till 30 minuter innan profilantalet uppdateras. Under den tiden kan systemet fortfarande betrakta profilerna som pausade.
 
-* För resor som innehåller [inkommande aktiviteter](../channels/gs-channels.md#mobile-app-and-web-experiences) (t.ex. i appen, på webben, osv.) avbryts inte kommunikation som redan har utlösts om resan pausas. Om en profil har kvalificerat sig för en inkommande aktivitet innan paus, kommer motsvarande meddelande fortfarande att levereras. Om du vill stoppa all inkommande kommunikation helt måste du stoppa resan.
+* För resor som innehåller [inkommande aktiviteter](../channels/gs-channels.md#inbound-channels) (t.ex. i appen, på webben, osv.) avbryts inte kommunikation som redan har utlösts om resan pausas. Om en profil har kvalificerat sig för en inkommande aktivitet innan paus, kommer motsvarande meddelande fortfarande att levereras. Om du vill stoppa all inkommande kommunikation helt måste du stoppa resan.
 * Pausade resor räknas in i kvoten för direktfärd
 * Profiler som hade passerat resan men ignorerats under pausen räknas fortfarande som profiler som kan användas
 * Pausade resor beaktas i alla affärsregler, på samma sätt som om de var levande
@@ -201,7 +201,7 @@ När du återupptar den här resan:
 
 ## Felsöka uteblivna profiler under pausade resor {#discards-troubleshoot}
 
-Du kan använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
+Du kan använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
 
 * Använd följande kod för att ta bort filer som inträffar innan profilen kommer in på resan:
 

@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
+source-git-commit: 81e54a3e3428d58818805b5dcb397ede4039436a
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 2%
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 ## Viktiga steg för att skapa åtgärdskampanjer {#steps}
 
-Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i det här avsnittet](get-started-with-campaigns.md#permissions). När dessa förutsättningar är uppfyllda kan ni börja skapa kampanjen:
+Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i det här avsnittet](get-started-with-campaigns.md#prerequisites). När dessa förutsättningar är uppfyllda kan ni börja skapa kampanjen:
 
 1. [Definiera egenskaperna för åtgärdskampanjen](campaign-properties.md)
 1. [Konfigurera kampanjåtgärden](campaign-action.md)

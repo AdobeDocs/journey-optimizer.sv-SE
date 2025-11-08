@@ -11,7 +11,7 @@ badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: aktivitet, beslut, innehållsbeslut, beslutspolitik, arbetsyta, resa
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: 7a83bb558559ba814ed9431bb85a68929a276ed5
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 1%
@@ -60,13 +60,13 @@ Följ stegen nedan för att konfigurera aktiviteten **[!UICONTROL Content decisi
 
 1. Välj det antal objekt som du vill returnera. Om du t.ex. väljer 2 visas de två bästa erbjudandena. Klicka på **[!UICONTROL Next]**.
 
-1. I avsnittet **[!UICONTROL Strategy sequence]** väljer du de beslutsobjekt och/eller urvalsstrategier som ska presenteras med beslutspolicyn. [Läs mer](../experience-decisioning/create-decision.md#select)
+1. I avsnittet **[!UICONTROL Strategy sequence]** väljer du de beslutsobjekt och/eller urvalsstrategier som ska presenteras med beslutspolicyn. [Läs mer](../experience-decisioning/create-decision.md#create-decision)
 
 1. Ordna utvärderingsordningen efter behov.
 
-   När du lägger till flera beslutsobjekt och/eller strategier utvärderas de i sekventiell ordning, vilket anges med siffror till vänster om varje objekt eller grupp av objekt. Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer](../experience-decisioning/create-decision.md#evaluation-order)
+   När du lägger till flera beslutsobjekt och/eller strategier utvärderas de i sekventiell ordning, vilket anges med siffror till vänster om varje objekt eller grupp av objekt. Om du vill ändra standardsekvensen kan du dra och släppa objekten och/eller grupperna för att ordna om dem som du vill. [Läs mer](../experience-decisioning/create-decision.md#create-decision)
 
-1. (valfritt) Lägg till ett reserverbjudande. [Läs mer](../experience-decisioning/create-decision.md#fallback)
+1. (valfritt) Lägg till ett reserverbjudande. [Läs mer](../experience-decisioning/create-decision.md#create-decision)
 
 1. Granska och spara din beslutspolicy.
 
@@ -146,7 +146,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    ![Redigera den anpassade åtgärdens frågeparametrar](assets/journey-content-decision-custom-action-param.png)
 
-1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [&#x200B; i den &#x200B;](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
+1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [ i den ](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
 
    >[!CAUTION]
    >
