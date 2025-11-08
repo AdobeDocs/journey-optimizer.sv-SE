@@ -90,7 +90,7 @@ Om du vill definiera faserna i din IP-värmeringsplan måste du välja en kampan
 
       ![](assets/ip-warmup-plan-exclude-campaigns.png)
 
-      När fas 1 kördes var du till exempel tvungen att [dela ](#split-phase) av någon anledning. Därför kan ni utesluta kampanjen som används i fas 1 så att de tidigare kontaktade profilerna från fas 1 inte inkluderas i fas 2. Du kan även utesluta kampanjer från andra IP-värmeringsplaner.
+      När fas 1 kördes var du till exempel tvungen att [dela &#x200B;](#split-phase) av någon anledning. Därför kan ni utesluta kampanjen som används i fas 1 så att de tidigare kontaktade profilerna från fas 1 inte inkluderas i fas 2. Du kan även utesluta kampanjer från andra IP-värmeringsplaner.
 
    1. I avsnittet **[!UICONTROL Journeys for exclusion of profiles]** väljer du resor med de målgrupper som du vill utesluta från den aktuella fasen.
 
@@ -325,7 +325,7 @@ En ny fas skapas för de återstående körningarna i den aktuella fasen.
 
 Om du t.ex. väljer det här alternativet för Kör #4 flyttas körningarna #4 till #8 till en ny fas precis efter den aktuella fasen.
 
-Följ stegen [ ovan](#define-phases) för att definiera den nya fasen.
+Följ stegen [&#x200B; ovan](#define-phases) för att definiera den nya fasen.
 
 * Du kan använda alternativen **[!UICONTROL Replace]** eller **[!UICONTROL Clear]** för den nya fasen.
 
@@ -345,7 +345,7 @@ Om din IP-warmup-plan inte fungerar som förväntat (till exempel om du observer
 
 Alla tidigare körningar är skrivskyddade. Den nya planen visas under den första planen.
 
-Följ stegen [ ovan](#define-phases) för att definiera faserna från den nya planen.
+Följ stegen [&#x200B; ovan](#define-phases) för att definiera faserna från den nya planen.
 
 >[!NOTE]
 >
