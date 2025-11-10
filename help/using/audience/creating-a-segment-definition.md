@@ -140,4 +140,4 @@ Ni kan utvärdera upp till 20 målgrupper i taget, och icke berättigade målgru
 
 Förstå hur Journey Optimizer använder regler för att generera målgrupper och lär sig hur man använder attribut, händelser och befintliga målgrupper för att skapa en målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425020?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430334?captions=swe&quality=12)
