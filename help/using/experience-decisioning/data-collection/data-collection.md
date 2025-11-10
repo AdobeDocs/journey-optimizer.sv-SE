@@ -8,7 +8,8 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 32e3a5b9-0633-48df-95b5-c03536be23a1
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+version: Journey Orchestration
+source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 1%
@@ -47,9 +48,9 @@ Feedback om visningar och klickningar hämtas beroende på vilken [!DNL Journey 
 
 De **flesta kanaler** kräver dock att visningar och klickdata skickas till Adobe Experience Platform som en **upplevelsehändelse**. Detta inkluderar:
 
-* Webbsidor som använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} för att återge erbjudanden
+* Webbsidor som använder [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} för att återge erbjudanden
 
-* Mobilappar som använder [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=sv-SE){target="_blank"} för att återge erbjudanden - [Läs mer](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#ab-sj-tracking-servers){target="_blank"}
+* Mobilappar som använder [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"} för att återge erbjudanden - [Läs mer](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#ab-sj-tracking-servers){target="_blank"}
 * Kiosker
 * Meddelanden som skickas via program från tredje part
 

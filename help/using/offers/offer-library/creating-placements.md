@@ -7,7 +7,8 @@ topic: Integrations
 role: User
 level: Intermediate
 exl-id: dfaf887e-d4b3-45b0-8297-bffdb0abff4d
-source-git-commit: 87f3da0a1d73f9aa26c7420d260778286bacdf0c
+version: Journey Orchestration
+source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -68,11 +69,11 @@ Så här skapar du en placering:
 
    * **[!UICONTROL Include content]** / **[!UICONTROL Include metadata]**: Ange om erbjudandets innehåll och metadata ska returneras i API-svaret. Du kan endast inkludera alla metadata eller specifika fält. Som standard är Inkludera metadata inställt på true.
 
-   Dessa parametrar kan också anges direkt i din API-begäran om du arbetar med [besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/decisioning-api.html?lang=sv-SE). Om du konfigurerar dem i användargränssnittet kan du spara tid eftersom du inte behöver skicka dem i varje API-begäran. Observera, att om du konfigurerar parametrarna både i användargränssnittet och i API-begäran, gäller värdena från API-begäran framför dem i gränssnittet.
+   Dessa parametrar kan också anges direkt i din API-begäran om du arbetar med [besluts-API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/decisioning-api.html). Om du konfigurerar dem i användargränssnittet kan du spara tid eftersom du inte behöver skicka dem i varje API-begäran. Observera, att om du konfigurerar parametrarna både i användargränssnittet och i API-begäran, gäller värdena från API-begäran framför dem i gränssnittet.
 
    >[!NOTE]
    >
-   >Om du arbetar med [Edge Decisioning API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/edge-decisioning-api.html?lang=sv-SE&) kan du inte ange de här parametrarna i din begäran. Du måste definiera dem på den här skärmen.
+   >Om du arbetar med [Edge Decisioning API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/edge-decisioning-api.html?) kan du inte ange de här parametrarna i din begäran. Du måste definiera dem på den här skärmen.
    >
    >Om du arbetar med [API:t för gruppbeslut](../api-reference/offer-delivery-api/batch-decisioning-api.md) kan du ange de här parametrarna antingen på den här skärmen eller i din API-begäran. Om parametervärdena inte överensstämmer mellan skärmen och APi-begäran används värdena för begäran.
 
