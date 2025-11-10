@@ -1,6 +1,6 @@
 ---
-product: experience platform
-solution: Experience Platform
+solution: Journey Optimizer
+product: Journey Optimizer
 title: Skapa AI-modeller
 description: Lär dig hur du skapar AI-modeller för att rangordna erbjudanden
 feature: Ranking, Decision Management
@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 exl-id: 532392d6-3637-4381-984d-f5b630f6d32d
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: 3fa90fa707b562ecf2160ec980520bc8bc267a21
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Så här skapar du en AI-modell:
    * **Impression-händelser** (erbjudanden som visas)
    * **Konverteringshändelser** (erbjudanden som resulterar i klickningar via e-post eller webben).
 
-   Dessa händelser spelas in automatiskt med Web SDK eller Mobile SDK som medföljer. Läs mer i översikten för [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE).
+   Dessa händelser spelas in automatiskt med Web SDK eller Mobile SDK som medföljer. Läs mer i översikten för [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
 
    +++ Optimera modeller på anpassade [!DNL Customer Journey Analytics]-mått
 
@@ -71,7 +71,7 @@ Så här skapar du en AI-modell:
 
    Som standard använder personaliserade optimeringsmodeller **erbjudandeklick** som optimeringsmått. Om du arbetar med [!DNL Customer Journey Analytics] kan du med [!DNL Decisioning] utnyttja dina egna anpassade mått för att optimera din modell.
 
-   Det gör du genom att välja modelltypen **[!UICONTROL Personalized optimization]** och expandera listrutan **[!UICONTROL Conversion event]**. Alla mätvärden från din standardvy för [!DNL Customer Journey Analytics] [data](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} visas i listan. Välj det mätvärde som du vill optimera modellen på.
+   Det gör du genom att välja modelltypen **[!UICONTROL Personalized optimization]** och expandera listrutan **[!UICONTROL Conversion event]**. Alla mätvärden från din standardvy för [!DNL Customer Journey Analytics] [data](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} visas i listan. Välj det mätvärde som du vill optimera modellen på.
 
    ![](../assets/ai-model-custom-metrics.png){width=85%}
 
@@ -81,7 +81,7 @@ Så här skapar du en AI-modell:
    >
    >Även om det går att ändra attribueringsmodellen är inte alla attribueringsmodeller idealiska för optimering av AI-modeller. Vi rekommenderar att du väljer en attribueringsmodell som är anpassad efter dina optimeringsmål för att säkerställa att modellen är korrekt och fungerar korrekt.
    >
-   >Mer information om tillgängliga attribueringsmodeller och riktlinjer för hur de används finns i [[!DNL Customer Journey Analytics] dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/attribution){target="_blank"}
+   >Mer information om tillgängliga attribueringsmodeller och riktlinjer för hur de används finns i [[!DNL Customer Journey Analytics] dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution){target="_blank"}
 
    +++
 
@@ -109,7 +109,7 @@ Så här skapar du en AI-modell:
 * defined which type of event you want to capture - offer displayed (impression) and/or offer clicked (conversion),
 * and in which dataset you want to collect the event data.-->
 
-Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händelse ska hämtas automatiskt av fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html?lang=sv-SE#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK.
+Varje gång ett erbjudande visas och/eller klickas vill du att motsvarande händelse ska hämtas automatiskt av fältgruppen **[!UICONTROL Experience Event - Proposition Interactions]** med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} eller Mobile SDK.
 
 För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klickas) måste du ange rätt värde för varje händelsetyp i en upplevelsehändelse som skickas till Adobe Experience Platform. [Lär dig hur](../data-collection/schema-requirement.md)
 
@@ -118,4 +118,4 @@ För att kunna skicka i händelsetyper (erbjudandet visas eller erbjudandet klic
 
 Learn how to create a personalized optimization model and how to apply it to a decision.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445955?captions=swe&quality=12)-->
+>[!VIDEO](https://video.tv.adobe.com/v/3419954?quality=12)-->
