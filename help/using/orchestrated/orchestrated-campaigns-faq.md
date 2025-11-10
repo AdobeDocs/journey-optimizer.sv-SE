@@ -5,9 +5,9 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
+source-git-commit: a166534edc3e9b52cc3f1f905ec310378a18a67a
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1415'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Viktiga funktioner:
 
 För att få åtkomst till kampanjsamordning måste din licens innehålla antingen paketet **Journey Optimizer - Campaigns &amp; Journeys** eller paketet **Journey Optimizer - Campaigns**. Kontakta din Adobe-representant för att bekräfta din licens och uppdatera vid behov.
 
-Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Läs mer om licensieringsmodellen för kampanjsamordning i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
@@ -183,7 +183,7 @@ Journey Optimizer Campaign-samordning kan först skapa ad hoc-frågor ovanpå mo
 
 +++ Har orkestrerade kampanjer stöd för beslut?
 
-Ja. Vid beslut kan relationsdata från samordnade kampanjer användas. När ett modellbaserat schema är anslutet till XDM-scheman kan XDM-data användas vid beslut.
+Nej, samordnade kampanjer saknar stöd för beslutsfunktioner.
 
 +++
 
@@ -260,4 +260,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Samordnade kampanjer skyddar mot detaljer och begränsningar](../orchestrated/guardrails.md)
 * [Kom igång med scheman och datauppsättningar i samordnade kampanjer](../orchestrated/gs-schemas.md)
 * [Skapa din första samordnade kampanj](../orchestrated/gs-campaign-creation.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
