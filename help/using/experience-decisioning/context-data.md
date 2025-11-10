@@ -30,7 +30,7 @@ Om du vill använda kontextdata måste du först definiera de data som du vill g
 
 Stegen för att mata in beslut med Adobe Experience Platform-data är följande:
 
-1. Skapa ett **Experience Event-schema** i Adobe Experience Platform och dess associerade **datauppsättning**. [Lär dig skapa scheman](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas){target="_blank"}
+1. Skapa ett **Experience Event-schema** i Adobe Experience Platform och dess associerade **datauppsättning**. [Lär dig skapa scheman](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas){target="_blank"}
 
 1. Skapa en ny Adobe Experience Platform-datastream:
 
@@ -48,6 +48,6 @@ När datastream har sparats hämtas den markerade datauppsättningens informatio
 
 Mer information om hur du arbetar med Adobe Experience Platform finns i följande resurser:
 
-* [XDM-scheman (Experience Data Model)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition){target="_blank"}
-* [Datauppsättningar](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview){target="_blank"}
-* [Datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview){target="_blank"}
+* [XDM-scheman (Experience Data Model)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition){target="_blank"}
+* [Datauppsättningar](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/overview){target="_blank"}
+* [Datastreams](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/overview){target="_blank"}

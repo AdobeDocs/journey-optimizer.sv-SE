@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Visa urvalsstrategier {#list-selection-strategies}
 
-En urvalsstrategi består av en samling som är associerad med en berättigandebegränsning och en rangordningsmetod som avgör vilka erbjudanden som ska visas när de väljs i en [beslutspolicy](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision).
+En urvalsstrategi består av en samling som är associerad med en berättigandebegränsning och en rangordningsmetod som avgör vilka erbjudanden som ska visas när de väljs i en [beslutspolicy](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision).
 
 Du kan visa en lista över alla urvalsstrategier genom att utföra en enda GET-begäran till Offer Library API.
 
