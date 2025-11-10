@@ -106,7 +106,7 @@ Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable`
 
 >[!TAB Följ de detaljerade stegen]
 
-1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **&#x200B;**&#x200B;`{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
 
    ![](assets/decision-let-function.png)
 
