@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Kom igång med Beslutshantering
 description: Lär dig om hur Adobe Journey Optimizer kan hjälpa dig att skicka rätt erbjudande till kunderna vid rätt tidpunkt
 badge: label="Äldre" type="Informative"
@@ -8,7 +10,7 @@ role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 48%
@@ -42,7 +44,7 @@ Några fördelar:
 
 >[!NOTE]
 >
->Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE){target="_blank"}-användare och använder **Offer Decisioning**-programmet gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
+>Om du är [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"}-användare och använder **Offer Decisioning**-programmet gäller även alla beslutshanteringsfunktioner som beskrivs i det här avsnittet dig.
 
 ## Om erbjudanden och beslut {#about-offers-and-decisions}
 
@@ -122,6 +124,6 @@ I videon nedan ges en introduktion till nyckelfunktioner, arkitektur och använd
 
 I videon nedan visas hur du använder Beslutshantering för att definiera och hantera dina erbjudanden och utnyttja kunddata i realtid.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470050?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326841?quality=12&learn=on)
 
 

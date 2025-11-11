@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Skapa beslut
 description: Lär dig hur du skapar beslut
 badge: label="Äldre" type="Informative"
@@ -8,7 +10,7 @@ role: User
 level: Intermediate
 exl-id: 7a217c97-57e1-4f04-a92c-37632f8dfe91
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
 workflow-type: tm+mt
 source-wordcount: '2483'
 ht-degree: 0%
@@ -398,7 +400,7 @@ När ett beslut har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/decision_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar &#x200B;](../get-started/user-interface.md#changes-logs) som har gjorts i beslutet.
+På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#changes-logs) som har gjorts i beslutet.
 
 ![](../assets/decision_information.png)
 

@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Datauppsättning med beslut
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för beslut
 badge: label="Äldre" type="Informative"
@@ -8,7 +10,7 @@ role: User, Developer
 level: Intermediate
 exl-id: 064762b7-9774-42eb-bcef-1d92bc94a988
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 0%
@@ -33,7 +35,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -42,7 +44,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ upplevelse
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -179,7 +181,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * Identifierare
 
-  **Fält:**&#x200B;_id
+  **Fält:**_id
   **Titel:** Identifierare
   **Beskrivning:** Identitet för målgruppen i det relaterade namnområdet.
   **Typ:** sträng
@@ -297,7 +299,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
 +++

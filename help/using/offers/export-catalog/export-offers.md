@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Datauppsättning med personaliserade erbjudanden
 description: I det här avsnittet visas alla fält som används i den exporterade datauppsättningen för erbjudanden
 badge: label="Äldre" type="Informative"
@@ -8,7 +10,7 @@ role: User, Developer
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
 workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 0%
@@ -33,7 +35,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -42,7 +44,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ _upplevelse {#experience}
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -105,14 +107,14 @@ Egenskaper används som värden i innehåll som representerar det här alternati
 
 * **_experience > decisioning > contents > components > Content Component Type**
 
-  **Fält:**&#x200B;_typ
+  **Fält:**_typ
   **Titel:** Innehållskomponenttyp
   **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som anges för innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schemat som beskriver ytterligare egenskaper för innehållskomponenten.
   **Typ:** sträng
 
 * **_experience > Decision > contents > components > _dc**
 
-  **Fält:**&#x200B;_dc
+  **Fält:**_dc
   **Typ:** objekt
   **Obligatoriskt:** &quot;format&quot;
 
@@ -133,7 +135,7 @@ Egenskaper används som värden i innehåll som representerar det här alternati
 
 * **_experience > Decision > contents > components > _repo**
 
-  **Fält:**&#x200B;_repo
+  **Fält:**_repo
   **Typ:** objekt
 
    * **id**
@@ -181,7 +183,7 @@ Egenskaper används som värden i innehåll som representerar det här alternati
   **Fält:** linkURL
   **Beskrivning:** En unik resurslokaliserare (valfritt) för användarinteraktioner. Den här URL:en används för att referera slutanvändaren till i en användaragent och kan spåras.
   **Typ:** sträng
-  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
+  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
 +++_experience > decisioning > contents > Placement
 
@@ -263,7 +265,7 @@ Egenskaper används som värden i innehåll som representerar det här alternati
 
 * **Identifierare**
 
-  **Fält:**&#x200B;_id
+  **Fält:**_id
   **Titel:** Identifierare
   **Beskrivning:** Identitet för målgrupperna i det relaterade namnområdet.
   **Typ:** sträng
@@ -356,7 +358,7 @@ Egenskaper används som värden i innehåll som representerar det här alternati
 
 +++repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
 +++ 

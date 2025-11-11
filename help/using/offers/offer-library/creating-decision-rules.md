@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Skapa beslutsregler
 description: Lär dig hur du skapar beslutsregler som definierar vilka erbjudanden som kan visas
 badge: label="Äldre" type="Informative"
@@ -8,7 +10,7 @@ role: User
 level: Intermediate
 exl-id: 401ce05b-412b-4fa0-a516-bf75727f6387
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 4%
@@ -53,7 +55,7 @@ Så här skapar du en beslutsregel:
 
    >[!NOTE]
    >
-   >Segment Builder som har tillhandahållits för att skapa beslutsregler har vissa egenskaper jämfört med den som används med tjänsten **[!UICONTROL Segmentation]**. Den globala processen som beskrivs i [Segment Builder](../../audience/creating-a-segment-definition.md) -dokumentationen är dock fortfarande giltig för att skapa beslutsregler för erbjudanden. Läs mer i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE).
+   >Segment Builder som har tillhandahållits för att skapa beslutsregler har vissa egenskaper jämfört med den som används med tjänsten **[!UICONTROL Segmentation]**. Den globala processen som beskrivs i [Segment Builder](../../audience/creating-a-segment-definition.md) -dokumentationen är dock fortfarande giltig för att skapa beslutsregler för erbjudanden. Läs mer i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
 
 1. När du lägger till och konfigurerar nya fält på arbetsytan visas information om de beräknade profilerna som tillhör målgruppen i rutan **[!UICONTROL Audience properties]**. Klicka på **[!UICONTROL Refresh estimate]** för att uppdatera data.
 
@@ -71,7 +73,7 @@ Så här skapar du en beslutsregel:
 
 >[!CAUTION]
 >
->Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=sv-SE#events){target="_blank"} kan du inte utnyttja den i ett erbjudande.
+>Händelsebaserade erbjudanden stöds för närvarande inte i [!DNL Journey Optimizer]. Om du skapar en beslutsregel baserad på en [händelse](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#events){target="_blank"} kan du inte utnyttja den i ett erbjudande.
 
 ## Självstudievideo {#video}
 

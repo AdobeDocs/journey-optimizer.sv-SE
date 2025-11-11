@@ -1,5 +1,5 @@
 ---
-solution: Journey Optimizer
+solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Kom igång med AI-modeller
 description: Lär dig mer om AI-modeller som gör det möjligt att rangordna erbjudanden
@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 exl-id: 4f7f7d1d-a12a-4ff6-b0ff-1a1c3d305a9d
 version: Journey Orchestration
-source-git-commit: 3fa90fa707b562ecf2160ec980520bc8bc267a21
+source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 4%
@@ -36,7 +36,7 @@ Du kan till exempel välja en AI-modell för e-postkanalen och en annan för pus
 >id="ajo_decisioning_ai_model_type"
 >title="Välj modelltyp"
 >abstract="Välj den typ av AI-modell som du vill skapa: **Automatisk optimering** optimerar erbjudanden baserat på tidigare erbjudanden, medan **Anpassad optimering** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjudandeprestanda."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
 
 Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 
@@ -64,4 +64,4 @@ De viktigaste stegen för att skapa och använda AI-modeller är följande:
 
 Lär dig hur du skapar en AI-modell för Offer Decisioning och hur du tillämpar den på ett beslut.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445648?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3419959?quality=12)

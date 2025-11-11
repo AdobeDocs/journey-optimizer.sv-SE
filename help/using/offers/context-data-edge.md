@@ -1,5 +1,5 @@
 ---
-solution: Journey Optimizer
+solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Kontextdata och Edge Decisioneringsbegäranden
 description: Lär dig hur du skickar kontextdata i Edge Decisioning-begäranden.
@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
 version: Journey Orchestration
-source-git-commit: 3fa90fa707b562ecf2160ec980520bc8bc267a21
+source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -52,11 +52,11 @@ I motsats till att skicka kontext i ett ganska fritt format med hjälp av API:t 
 
    ![](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
 
-   Lär dig hur du arbetar med scheman i guiden [Experience Data Model (XDM)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home){target="_blank"} (Adobe Experience Platform Experience Data Model)
+   Lär dig hur du arbetar med scheman i guiden [Experience Data Model (XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home){target="_blank"} (Adobe Experience Platform Experience Data Model)
 
 1. Skapa en datauppsättning (här&quot;Erbjudandekontext&quot;) och se till att den är aktiverad för profilen.
 
-1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar datastream i Adobe Experience Platform [Datastreams-guiden](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure){target="_blank"}
+1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar datastream i Adobe Experience Platform [Datastreams-guiden](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure){target="_blank"}
 
    Här har vi skapat en datastam för&quot;Erbjudandekontext&quot; med händelseschemat&quot;Erbjudandeinnehåll&quot; markerat.
 

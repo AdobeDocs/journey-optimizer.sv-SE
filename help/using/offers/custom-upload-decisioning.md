@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer, Experience Platform
+product: Journey Optimizer
 title: Utnyttja anpassade uppladdningsmålgrupper för beslut
 description: Lär dig hur du utnyttjar anpassade uppladdningsmålgrupper för beslut.
 badge: label="Äldre" type="Informative"
@@ -7,7 +9,7 @@ role: User
 level: Intermediate
 exl-id: bd950410-691b-49d8-8851-8c6c448c00fd
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -26,7 +28,7 @@ Data från anpassade uppladdningsgrupper kan utnyttjas i Beslutshantering för:
 Mer information om anpassade uppladdningsgrupper finns i avsnitten:
 
 * [Kom igång med målgrupper och Journey Optimizer](../audience/about-audiences.md)
-* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
+* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
 
 ## Måste läsas {#must-read}
 
