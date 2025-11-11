@@ -249,7 +249,7 @@ Du har till exempel definierat en anpassad capping-händelse som antalet utcheck
 >title="Ange takfrekvens"
 >abstract="Du kan välja att återställa antalet erbjudanden per dag, vecka eller månad. Observera att när du har publicerat erbjudandet med frekvensbegränsning aktiverat kan du inte ändra den frekvens som har definierats."
 
-I fältet **[!UICONTROL Reset capping frequency]** kan du definiera hur ofta antalet appningar återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
+I fältet **[!UICONTROL Reset capping frequency]** kan du definiera hur ofta antalet appningar återställs. Om du vill göra det anger du tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och anger hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **&#x200B;**&#x200B;i det andra fältet.
 
 ![](../assets/offer-capping-frequency.png)
 
