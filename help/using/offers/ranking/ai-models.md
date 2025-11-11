@@ -64,4 +64,4 @@ De viktigaste stegen för att skapa och använda AI-modeller är följande:
 
 Lär dig hur du skapar en AI-modell för Offer Decisioning och hur du tillämpar den på ett beslut.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419959?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3445648?captions=swe&quality=12)

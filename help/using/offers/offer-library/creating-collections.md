@@ -92,6 +92,6 @@ Så här skapar du en samling:
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/329376?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3474877?captions=swe&quality=12)
 
 
