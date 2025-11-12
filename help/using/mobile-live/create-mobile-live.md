@@ -55,7 +55,7 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[ på fliken ](../audience/about-audiences.md).
+1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[&#x200B; på fliken &#x200B;](../audience/about-audiences.md).
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
@@ -74,11 +74,11 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
    Observera att de flesta fält från följande exempel på nyttolast är obligatoriska, men bara `requestId`, `dismissal-date` och `alert` är valfria.
 
        &quot;json
-       {
+       &lbrace;
        &quot;requestId&quot;: &quot;your-request-id&quot;,
        &quot;campaignId&quot;: &quot;your-campaign-id&quot;, 
-       &quot;mottagare&quot;: [
-       {
+       &quot;mottagare&quot;: &lbrack;
+       &lbrace;
        &quot;type&quot;: &quot;aep&quot;, 
        &quot;userId&quot;: &quot;testemail@gmail.com&quot;,
        &quot;namespace&quot;: &quot;email&quot;, 
@@ -111,7 +111,7 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
        
        
        
-       ]
+       &rbrack;
        
        &quot;
    +++
