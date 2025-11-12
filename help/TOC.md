@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: ce6bfca78d097588b5958c10c721b29b7013b3e2
 workflow-type: tm+mt
-source-wordcount: '2946'
+source-wordcount: '2977'
 ht-degree: 15%
 
 ---
@@ -385,6 +385,13 @@ ht-degree: 15%
       + [Konfigurera LINE-kanal i Journey Optimizer](using/line/line-configuration.md)
       + [Skapa ett LINE-meddelande](using/line/create-line.md)
       + [Kontrollera och skicka LINE-meddelanden](using/line/send-line.md)
+   + Live-aktivitet {#live-activity}
+      + [Kom igång med Live-aktivitet](using/mobile-live/get-started-mobile-live.md)
+      + [Skapa en Live-aktivitet](using/mobile-live/create-mobile-live.md)
+      + [Vanliga frågor och svar](using/mobile-live/mobile-live-faq.md)
+      + Konfigurera innehållskortskanal {#configure}
+         + [Konfigurera Live-aktivitet i Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
+         + [Konfigurera SDK-integrering med Live Activity](using/mobile-live/mobile-live-configuration-sdk.md)
 + Innehållshantering {#content-management}
    + [Innehållshantering](/help/rp_landing_pages/content-management-landing-page.md)
    + Personalisering {#personalization}
@@ -542,6 +549,7 @@ ht-degree: 15%
          + [Rapport om e-postkampanj](using/reports/campaign-global-report-cja-email.md)
          + [Rapport om experimentkampanjer](using/reports/campaign-global-report-cja-experimentation.md)
          + [Kampanjrapport i appen](using/reports/campaign-global-report-cja-inapp.md)
+         + [Rapport om aktiv aktivitetskampanj](using/reports/campaign-global-report-cja-activity.md)
          + [Kampanjrapport för push-meddelanden](using/reports/campaign-global-report-cja-push.md)
          + [SMS-kampanjrapport](using/reports/campaign-global-report-cja-sms.md)
          + [Webbkampanjrapport](using/reports/campaign-global-report-cja-web.md)
@@ -814,7 +822,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
