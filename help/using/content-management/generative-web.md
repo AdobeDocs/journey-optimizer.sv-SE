@@ -152,7 +152,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimi
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![Genererade webbsidesbildvariationer med kontroll för punktjustering och förhandsgranskning ](assets/web-gen-img-4.png){zoomable="yes"}
+   ![Genererade webbsidesbildvariationer med kontroll för punktjustering och förhandsgranskning &#x200B;](assets/web-gen-img-4.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 

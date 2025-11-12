@@ -57,7 +57,7 @@ Den här resursen ger insiktsfulla rekommendationer för att finjustera ert inne
    * **[!UICONTROL Tone]**: Se till att texten passar din målgrupp och ditt syfte.
    * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 
-   ![Textinställningspanelen för SMS-visning med kontrollerna Kommunikationsstrategi, Språk, Ton och Längd ](assets/sms-genai-3.png){zoomable="yes"}
+   ![Textinställningspanelen för SMS-visning med kontrollerna Kommunikationsstrategi, Språk, Ton och Längd &#x200B;](assets/sms-genai-3.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 

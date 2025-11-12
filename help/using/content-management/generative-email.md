@@ -62,7 +62,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
    * **[!UICONTROL Languages]**: Välj språk för det genererade innehållet.
    * **[!UICONTROL Tone]**: Tonen i ditt e-postmeddelande bör matcha med din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
 
-   ![Panelen Textinställningar som visar Kommunikationsstrategi, Språk och Tonalternativ ](assets/full-email-4.png){zoomable="yes"}
+   ![Panelen Textinställningar som visar Kommunikationsstrategi, Språk och Tonalternativ &#x200B;](assets/full-email-4.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
@@ -72,7 +72,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![Panelen Bildinställningar med alternativen Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition ](assets/full-email-6.png){zoomable="yes"}
+   ![Panelen Bildinställningar med alternativen Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition &#x200B;](assets/full-email-6.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -139,7 +139,7 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
    * **[!UICONTROL Tone]**: Tonen i ditt e-postmeddelande bör matcha med din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
    * **Textlängd**: Använd reglaget för att välja önskad längd på texten.
 
-   ![Textinställningar utökade med kontrollerna Kommunikationsstrategi, Språk, Ton och Textlängd ](assets/text-genai-4.png){zoomable="yes"}
+   ![Textinställningar utökade med kontrollerna Kommunikationsstrategi, Språk, Ton och Textlängd &#x200B;](assets/text-genai-4.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -218,7 +218,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![Panelen Bildinställningar med kontrollerna Proportioner, Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition ](assets/image-genai-4.png){zoomable="yes"}
+   ![Panelen Bildinställningar med kontrollerna Proportioner, Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition &#x200B;](assets/image-genai-4.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 

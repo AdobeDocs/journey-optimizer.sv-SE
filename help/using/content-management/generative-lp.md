@@ -58,7 +58,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig mal
    * **[!UICONTROL Languages]**: Välj språk för det genererade innehållet.
    * **[!UICONTROL Tone]**: Tonen på din landningssida ska tolkas som målgruppen. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
 
-   ![Panelen Textinställningar för landningssidan med alternativ för kommunikationsstrategi, språk och ton ](assets/lp-full-gen-3.png){zoomable="yes"}
+   ![Panelen Textinställningar för landningssidan med alternativ för kommunikationsstrategi, språk och ton &#x200B;](assets/lp-full-gen-3.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
@@ -94,7 +94,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig mal
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![Förfina meny för landningssida med Rephrase, använd enklare språk med listrutorna Tone och Communication Strategy ](assets/lp-full-gen-6.png){zoomable="yes"}
+   ![Förfina meny för landningssida med Rephrase, använd enklare språk med listrutorna Tone och Communication Strategy &#x200B;](assets/lp-full-gen-6.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 

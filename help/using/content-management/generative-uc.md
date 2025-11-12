@@ -41,7 +41,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 ## Förfina variation
 
-![Animerad demonstration av hur du förfinar AI-genererade innehållsvariationer med alternativen för frys och sammanfattning ](assets/do-not-localize/gen-ai-variation.gif)
+![Animerad demonstration av hur du förfinar AI-genererade innehållsvariationer med alternativen för frys och sammanfattning &#x200B;](assets/do-not-localize/gen-ai-variation.gif)
 
 1. När kampanjen har konfigurerats och konfigurerats klickar du på **[!UICONTROL Edit content]**.
 
