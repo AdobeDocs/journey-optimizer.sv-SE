@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1b3930ff-f7b0-43f0-bcf2-5c3de0a88b25
-source-git-commit: 50933d991c6a337e6d1739652d680778759ef0d5
+source-git-commit: 22c3c44106d51032cd9544b642ae209bfd62d69a
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1815'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
 
 1. Anpassa layouten efter behov och öppna menyn **[!UICONTROL AI Assistant]**.
 
-   ![](assets/full-email-1.png){zoomable="yes"}
+   ![AI Assistant-panelen i e-post-Designer visar varumärkesval och frågefält](assets/full-email-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
@@ -52,7 +52,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/full-email-2.png){zoomable="yes"}
+   ![Fråga fält med knappen Fråga bibliotek som visar förskrivna promptförslag](assets/full-email-2.png){zoomable="yes"}
 
 1. Du kan växla mellan alternativen **[!UICONTROL Subject line]** och **[!UICONTROL Preheader]** för att inkludera dem i variantgenereringen.
 
@@ -62,7 +62,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
    * **[!UICONTROL Languages]**: Välj språk för det genererade innehållet.
    * **[!UICONTROL Tone]**: Tonen i ditt e-postmeddelande bör matcha med din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
 
-   ![](assets/full-email-4.png){zoomable="yes"}
+   ![Panelen Textinställningar som visar Kommunikationsstrategi, Språk och Tonalternativ ](assets/full-email-4.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
@@ -72,13 +72,13 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![](assets/full-email-6.png){zoomable="yes"}
+   ![Panelen Bildinställningar med alternativen Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition ](assets/full-email-6.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
-   ![](assets/full-email-3.png){zoomable="yes"}
+   ![Området varumärkesresurser med knappen Överför varumärkesresurs och en lista över tidigare överförda resurser](assets/full-email-3.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
@@ -88,7 +88,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/full-email-7.png){zoomable="yes"}
+   ![Panelen Poäng för varumärkesjustering som visar procentpoäng med detaljerade justeringsmått](assets/full-email-7.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -98,7 +98,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig e-p
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/full-email-5.png){zoomable="yes"}
+   ![Förfina-menyn med repetering och Använd enklare språkalternativ med listrutorna Ton och Kommunikationsstrategi](assets/full-email-5.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
@@ -120,7 +120,7 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
 1. Välj en **[!UICONTROL Text component]** om du bara vill ha ett specifikt innehåll som mål. och gå till menyn **[!UICONTROL AI Assistant]**.
 
-   ![](assets/text-genai-1.png){zoomable="yes"}
+   ![Skicka e-post till Designer med textkomponenten markerad och AI Assistant-menyn öppnad i den högra panelen](assets/text-genai-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
@@ -130,7 +130,7 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/text-genai-2.png){zoomable="yes"}
+   ![Genereringspanel för AI Assistant-text med promptfält, Brand-väljare och snabbbiblioteksåtkomst](assets/text-genai-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
@@ -139,13 +139,13 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
    * **[!UICONTROL Tone]**: Tonen i ditt e-postmeddelande bör matcha med din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
    * **Textlängd**: Använd reglaget för att välja önskad längd på texten.
 
-   ![](assets/text-genai-4.png){zoomable="yes"}
+   ![Textinställningar utökade med kontrollerna Kommunikationsstrategi, Språk, Ton och Textlängd ](assets/text-genai-4.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
    Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
-   ![](assets/text-genai-3.png){zoomable="yes"}
+   ![Listruta med varumärkesresurser som visar växlingar för tidigare överförda varumärkesresurser](assets/text-genai-3.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
@@ -157,7 +157,7 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/text-genai-6.png){zoomable="yes"}
+   ![Genererade textvariationer med procentindikatorn för justering av klammerparentes och förhandsvisningsalternativen](assets/text-genai-6.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -173,7 +173,7 @@ I följande exempel använder vi AI Assistant för att förbättra innehållet i
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/text-genai-5.png){zoomable="yes"}
+   ![Menyn Förfina alternativ med knapparna Arbeta, Sammanfattning, Återfras och Använd enklare språk med listrutan Ton](assets/text-genai-5.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
@@ -197,7 +197,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
 1. Välj **[!UICONTROL AI Assistant]** på den högra menyn.
 
-   ![](assets/image-genai-1.png){zoomable="yes"}
+   ![Skicka e-post till Designer med bildresurs markerad och AI Assistant-panelen öppen för bildgenerering](assets/image-genai-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
@@ -207,7 +207,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/image-genai-2.png){zoomable="yes"}
+   ![Panelen för bildgenerering i AI Assistant med alternativet för referensstil, Varumärkesväljaren och Frågefältet](assets/image-genai-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Image settings]**:
 
@@ -218,7 +218,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![](assets/image-genai-4.png){zoomable="yes"}
+   ![Panelen Bildinställningar med kontrollerna Proportioner, Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition ](assets/image-genai-4.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -247,7 +247,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
    * **[!UICONTROL Save]** om du vill lagra resurserna för senare åtkomst.
 
-   ![](assets/image-genai-5.png){zoomable="yes"}
+   ![Förfina alternativ för genererade bilder med knapparna Generera liknande, Redigera i Adobe Express och Spara](assets/image-genai-5.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 

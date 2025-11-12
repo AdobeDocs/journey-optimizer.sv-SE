@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 5fd1cc3a-c023-4e8e-bfac-9a86bd33bbb3
-source-git-commit: 50933d991c6a337e6d1739652d680778759ef0d5
+source-git-commit: 22c3c44106d51032cd9544b642ae209bfd62d69a
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +38,7 @@ Den här resursen ger insiktsfulla rekommendationer för att finjustera ert inne
 
 1. Öppna menyn **[!UICONTROL Show AI Assistant]**.
 
-   ![](assets/sms-genai-1.png){zoomable="yes"}
+   ![SMS-meddelanderedigeraren med AI Assistant-panelen öppen med Varumärkesväljaren och Frågefältet](assets/sms-genai-1.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
@@ -48,7 +48,7 @@ Den här resursen ger insiktsfulla rekommendationer för att finjustera ert inne
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/sms-genai-2.png){zoomable="yes"}
+   ![AI-assistenten för SMS med varumärkesväljare, frågefält och åtkomstknappen Fråga bibliotek](assets/sms-genai-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
@@ -57,7 +57,7 @@ Den här resursen ger insiktsfulla rekommendationer för att finjustera ert inne
    * **[!UICONTROL Tone]**: Se till att texten passar din målgrupp och ditt syfte.
    * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 
-   ![](assets/sms-genai-3.png){zoomable="yes"}
+   ![Textinställningspanelen för SMS-visning med kontrollerna Kommunikationsstrategi, Språk, Ton och Längd ](assets/sms-genai-3.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -73,7 +73,7 @@ Den här resursen ger insiktsfulla rekommendationer för att finjustera ert inne
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/sms-genai-5.png){zoomable="yes"}
+   ![Genererade SMS-variationer med procentindikator för justering av klammerparentes och förhandsvisningsalternativ](assets/sms-genai-5.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner och finjustera variationerna efter dina inställningar:
 
@@ -85,7 +85,7 @@ Den här resursen ger insiktsfulla rekommendationer för att finjustera ert inne
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/sms-genai-4.png){zoomable="yes"}
+   ![Förfina alternativ för SMS med Rephrase, använd enklare språk med listrutorna Tone och Communication Strategy](assets/sms-genai-4.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 

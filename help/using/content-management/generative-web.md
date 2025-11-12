@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ebe2df77-4aaa-45b1-a8ce-931d4191cc67
-source-git-commit: 50933d991c6a337e6d1739652d680778759ef0d5
+source-git-commit: 22c3c44106d51032cd9544b642ae209bfd62d69a
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1203'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era lev
 
 1. Välj en **[!UICONTROL Text component]** om du bara vill ha ett specifikt innehåll som mål. och gå till menyn **[!UICONTROL Show AI Assistant]**.
 
-   ![](assets/web-gen-full-1.png){zoomable="yes"}
+   ![Webbdesigner med komponenten Text markerad och menyknappen Visa AI-assistenten](assets/web-gen-full-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
@@ -50,7 +50,7 @@ AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era lev
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/web-gen-full-2.png){zoomable="yes"}
+   ![AI Assistant-panel för webbsidestext med Varumärkesväljaren, Frågefältet och knappen Fråga bibliotek](assets/web-gen-full-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
@@ -59,7 +59,7 @@ AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era lev
    * **[!UICONTROL Tone]**: Din webbsidas ton ska tolkas som målgruppen. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
    * **Textlängd**: Använd reglaget för att välja önskad längd på texten.
 
-   ![](assets/web-gen-full-3.png){zoomable="yes"}
+   ![Panelen Textinställningar som visar kommunikationsstrategi, språk, ton och skjutreglaget för textlängd för webbinnehåll](assets/web-gen-full-3.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -75,7 +75,7 @@ AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era lev
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/web-gen-full-4.png){zoomable="yes"}
+   ![Genererade textvariationer på webbsidor med procentindikator för justering av klammerparentes](assets/web-gen-full-4.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -91,7 +91,7 @@ AI Assistant i Journey Optimizer kan hjälpa er att optimera effekten av era lev
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/web-gen-full-5.png){zoomable="yes"}
+   ![Förfina meny för webbtext som visar Arbeta, Sammanfattning, Återfras, Använd enklare språk med listrutan Ton](assets/web-gen-full-5.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
@@ -113,7 +113,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimi
 
 1. Välj **[!UICONTROL Show AI Assistant]** på den högra menyn.
 
-   ![](assets/web-gen-img-1.png){zoomable="yes"}
+   ![Webbdesigner med bildresurs markerad och Visa AI Assistant-panel öppnad för bildgenerering](assets/web-gen-img-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
@@ -125,7 +125,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimi
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/web-gen-img-2.png){zoomable="yes"}
+   ![AI Assistant-bildgenerering för webben med alternativet för referensstil, markörväljaren och fältet Fråga](assets/web-gen-img-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Image settings]**:
 
@@ -136,7 +136,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimi
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![](assets/web-gen-img-3.png){zoomable="yes"}
+   ![Panelen Bildinställningar för webben med Proportioner, Innehållstyp, Visuell intensitet, Färg och ton, Ljus och Disposition](assets/web-gen-img-3.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -152,7 +152,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimi
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/web-gen-img-4.png){zoomable="yes"}
+   ![Genererade webbsidesbildvariationer med kontroll för punktjustering och förhandsgranskning ](assets/web-gen-img-4.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -163,7 +163,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant i Journey Optimi
 
    * **[!UICONTROL Save]** om du vill lagra resurserna för senare åtkomst.
 
-   ![](assets/web-gen-img-5.png){zoomable="yes"}
+   ![Förfina alternativ för webbilder med knapparna Generera liknande, Redigera i Adobe Express och Spara](assets/web-gen-img-5.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 

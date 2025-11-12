@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a9f9d8af-c762-4038-8bbc-bbd519e0ef3a
-source-git-commit: 50933d991c6a337e6d1739652d680778759ef0d5
+source-git-commit: 22c3c44106d51032cd9544b642ae209bfd62d69a
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1749'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Följ de här stegen:
 
 1. Öppna menyn **[!UICONTROL Show AI Assistant]**.
 
-   ![](assets/push-genai-full-1.png){zoomable="yes"}
+   ![Redigerare för push-meddelanden med AI Assistant-panelen öppen med alternativ för märke och uppmaning](assets/push-genai-full-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa det nya innehållsalternativet baserat på det valda innehållet.
 
@@ -58,7 +58,7 @@ Följ de här stegen:
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/push-genai-full-2.png){zoomable="yes"}
+   ![AI-assistenten för push-meddelanden med fältet Fråga, fältväljare för titelmeddelande och bild samt promptbibliotek](assets/push-genai-full-2.png){zoomable="yes"}
 
 1. Välj vilket fält du vill generera: **[!UICONTROL Title]**, **[!UICONTROL Message]** och/eller **[!UICONTROL Image]**.
 
@@ -68,7 +68,7 @@ Följ de här stegen:
    * **[!UICONTROL Languages]**: Välj språk för det genererade innehållet.
    * **[!UICONTROL Tone]**: Tonen på dina push-meddelanden ska matcha din publik. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
 
-   ![](assets/push-genai-full-3.png){zoomable="yes"}
+   ![Panelen Textinställningar för push-meddelanden som visar kommunikationsstrategi, språk och listrutor med toner](assets/push-genai-full-3.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
@@ -78,7 +78,7 @@ Följ de här stegen:
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![](assets/push-genai-full-5.png){zoomable="yes"}
+   ![Bildinställningar för push-meddelanden med alternativen Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition ](assets/push-genai-full-5.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -94,7 +94,7 @@ Följ de här stegen:
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/push-genai-full-4.png){zoomable="yes"}
+   ![Genererade variationer för push-meddelanden med procentandelar för justering av klammerparenteser och förhandsgranskningskontroller](assets/push-genai-full-4.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -106,7 +106,7 @@ Följ de här stegen:
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/push-genai-full-6.png){zoomable="yes"}
+   ![Förfina alternativ för push-meddelanden med kontrollerna för att förkorta, Använd enklare språk, ton och kommunikation ](assets/push-genai-full-6.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
@@ -132,7 +132,7 @@ I just det här exemplet får du lära dig hur du använder AI Assistant i Journ
 
 1. Gå till menyn **[!UICONTROL Edit text with AI Assistant]** bredvid dina **[!UICONTROL Title]**- eller **[!UICONTROL Message]**-fält.
 
-   ![](assets/push-genai-1.png){zoomable="yes"}
+   ![Skärm för push-meddelandekomposition med knappen Redigera text med AI Assistant bredvid titel- och meddelandefälten ](assets/push-genai-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Use reference content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
@@ -144,7 +144,7 @@ I just det här exemplet får du lära dig hur du använder AI Assistant i Journ
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/push-genai-2.png){zoomable="yes"}
+   ![Textredigerare för AI Assistant med växlingsknappen Använd referensinnehåll, Varumärkesväljaren, Frågefältet och knappen Fråga bibliotek](assets/push-genai-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
@@ -153,7 +153,7 @@ I just det här exemplet får du lära dig hur du använder AI Assistant i Journ
    * **[!UICONTROL Tone]**: Tonen i ditt push-meddelande bör motsvara målgruppen. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
    * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 
-   ![](assets/push-genai-4.png){zoomable="yes"}
+   ![Textinställningar utökade med kommunikationsstrategi, språk, listrutor med toner och skjutreglaget Längd](assets/push-genai-4.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -167,7 +167,7 @@ I just det här exemplet får du lära dig hur du använder AI Assistant i Journ
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/push-genai-5.png){zoomable="yes"}
+   ![Genererade textvariationer för push-meddelanden med markeringsjusteringskodsindikator](assets/push-genai-5.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -183,7 +183,7 @@ I just det här exemplet får du lära dig hur du använder AI Assistant i Journ
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/push-genai-6.png){zoomable="yes"}
+   ![Förfina-menyn med listrutan Upprepa, Sammanfattning, Återfras och Använd enklare språk ](assets/push-genai-6.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
@@ -207,7 +207,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 1. Öppna menyn **[!UICONTROL Add media]**.
 
-   ![](assets/push-gen-img-1.png){zoomable="yes"}
+   ![Redigera push-meddelanden med knappen Lägg till media för att inkludera bilder i meddelandet](assets/push-gen-img-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
@@ -219,7 +219,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina kampanjer.
 
-   ![](assets/push-gen-img.png){zoomable="yes"}
+   ![Generering av AI Assistant-bilder för push med alternativet för referensstil, markörväljaren och fältet Fråga](assets/push-gen-img.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
@@ -250,7 +250,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
    * **[!UICONTROL Save]** om du vill lagra resurserna för senare åtkomst.
 
-   ![](assets/push-gen-img-2.png){zoomable="yes"}
+   ![Förfina alternativ för push-meddelandebilder med knapparna Generera liknande, Redigera i Adobe Express och Spara](assets/push-gen-img-2.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
-source-git-commit: 36bef8f07645b1e9a5a010e3f1b4044f2099b002
+source-git-commit: 22c3c44106d51032cd9544b642ae209bfd62d69a
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Använd befintligt innehåll
 
-![](assets/do-not-localize/gen-ai-reuse-text.gif)
+![Animerad demonstration som visar hur AI Assistant återanvänder befintligt kampanjinnehåll för att generera nya varianter](assets/do-not-localize/gen-ai-reuse-text.gif)
 
 1. Välj **[!UICONTROL Edit content]** när du har konfigurerat kampanjen.
 
@@ -41,7 +41,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 ## Förfina variation
 
-![](assets/do-not-localize/gen-ai-variation.gif)
+![Animerad demonstration av hur du förfinar AI-genererade innehållsvariationer med alternativen för frys och sammanfattning ](assets/do-not-localize/gen-ai-variation.gif)
 
 1. När kampanjen har konfigurerats och konfigurerats klickar du på **[!UICONTROL Edit content]**.
 
@@ -71,7 +71,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 ## Generera liknande bild
 
-![](assets/do-not-localize/uc-image-similar.gif)
+![Animerad demonstration av generering av liknande bildvariationer baserat på en vald AI-genererad bild](assets/do-not-localize/uc-image-similar.gif)
 
 1. Välj **[!UICONTROL Edit content]** när du har konfigurerat kampanjen.
 
@@ -91,7 +91,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 ## Överföra en formatreferens
 
-![](assets/do-not-localize/uc-image-reference.gif)
+![Animerad demonstration av överföring av en referensbild som guide för generering av AI Assistant-bilder](assets/do-not-localize/uc-image-reference.gif)
 
 1. Klicka på **[!UICONTROL Edit content]** när du har konfigurerat din e-postkampanj.
 
@@ -115,7 +115,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 ## Generera innehåll för olika språk{#languages}
 
-![](assets/do-not-localize/gen-ai-language.gif)
+![Animerad demonstration av AI Assistant som genererar innehåll på flera språk, bland annat franska, spanska och tyska](assets/do-not-localize/gen-ai-language.gif)
 
 1. När kampanjen har konfigurerats och konfigurerats klickar du på **[!UICONTROL Edit content]**.
 

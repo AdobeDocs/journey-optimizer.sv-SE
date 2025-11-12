@@ -10,10 +10,10 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 22c3c44106d51032cd9544b642ae209bfd62d69a
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 36%
+source-wordcount: '1102'
+ht-degree: 23%
 
 ---
 
@@ -31,7 +31,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
@@ -74,3 +74,79 @@ Om enskilda personer flödar rätt väg på resan men inte får meddelanden som 
 * [!DNL Journey Optimizer] har skickat meddelandet. Kontrollera reserapporteringen för att se till att det inte finns några fel.
 
 Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontrolleras under resan att anropet till den anpassade åtgärdens system leder till ett fel eller inte. Om anropet till det externa system som är kopplat till den anpassade åtgärden inte leder till ett fel, men inte leder till att ett meddelande skickas, bör vissa undersökningar utföras på den externa datorns sida.
+
+## Duplicerade poster i resestegshändelser {#duplicate-step-events}
+
+### Varför ser jag flera poster med samma reseinstans, profil, nod och begärande-ID?
+
+När du frågar efter data om steg för resa kan du ibland se vad som verkar vara dubblettposter för samma körning. De här posterna har samma värden för:
+
+* `profileID` - Profilens identitet
+* `instanceID` - Identifieraren för reseinstansen
+* `nodeID` - Den specifika resenoden
+* `requestID` - Begärandeidentifieraren
+
+De här posterna har dock **olika `_id` värden**, vilket är nyckelindikatorn som skiljer det här scenariot från faktisk datatypsduplicering.
+
+### Vad orsakar detta beteende?
+
+Detta inträffar på grund av autoskalningsåtgärder i bakomliggande system (kallas även&quot;ombalansering&quot;) i Adobe Journey Optimizer mikrotjänstarkitektur. Under perioder med hög belastning eller systemoptimering:
+
+1. En händelse i ett steg på resan börjar bearbetas och loggas till datamängden för händelser i ett steg på resan
+2. En automatisk skalning omfördelar arbetsbelastningen över tjänstinstanser
+3. Samma händelse kan bearbetas om av en annan tjänstinstans, vilket skapar en andra loggpost med en annan `_id`
+
+Det här är ett förväntat systembeteende och **fungerar som avsett**.
+
+### Påverkar det körningen av resan eller budskapet?
+
+**Nej.** Effekten är begränsad till enbart loggning. Adobe Journey Optimizer har inbyggda funktioner för borttagning av dubbletter i meddelandekörningslagret som säkerställer:
+
+* Endast ett meddelande (e-post, SMS, push-meddelanden osv.) skickas till varje profil
+* Åtgärder utförs bara en gång
+* Körningen av resan fortskrider korrekt
+
+Du kan verifiera detta genom att fråga `ajo_message_feedback_event_dataset` eller kontrollera körningsloggarna för åtgärder - du kommer att se att endast ett meddelande faktiskt skickades, trots de duplicerade händelseposterna för steg för resan.
+
+### Hur kan jag identifiera de här fallen i mina frågor?
+
+Vid analys av data för resesegmenthändelser:
+
+1. **Kontrollera `_id` field**: True system-level-duplicates skulle ha samma `_id`. Olika `_id`-värden indikerar separata loggposter från det ombalanseringsscenario som beskrivs ovan.
+
+2. **Verifiera meddelandeleverans**: Korsreferens med meddelandefeeddata för att bekräfta att endast ett meddelande skickades:
+
+   ```sql
+   SELECT
+     timestamp,
+     _experience.customerJourneyManagement.messageExecution.messageExecutionID,
+     _experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus
+   FROM ajo_message_feedback_event_dataset
+   WHERE
+     _experience.customerJourneyManagement.messageExecution.journeyVersionID = '<journeyVersionID>'
+     AND TO_JSON(identityMap) like '%<profileID>%'
+   ORDER BY timestamp DESC;
+   ```
+
+3. **Gruppera efter unika identifierare**: När du räknar körningar använder du `_id` för att få korrekta antal:
+
+   ```sql
+   SELECT
+     COUNT(DISTINCT _id) as unique_executions
+   FROM journey_step_events
+   WHERE
+     _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>'
+     AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID>'
+   ```
+
+### Vad ska jag göra om jag observerar det här?
+
+Det här är normalt systembeteende och **ingen åtgärd krävs**. Dubblettloggningen tyder inte på något problem med konfigurationen av resan eller meddelandeleveransen.
+
+Om du skapar rapporter eller analyser baserade på händelser i kundens steg:
+
+* Använd `_id` som primärnyckel för att räkna unika händelser
+* Korsreferens med datauppsättningar för meddelandefeedback vid analys av meddelandeleverans
+* Observera att timinganalys kan visa poster grupperade inom några sekunder från varandra
+
+Mer information om hur du frågar efter steg för resa finns i [Exempel på frågor](../reports/query-examples.md).

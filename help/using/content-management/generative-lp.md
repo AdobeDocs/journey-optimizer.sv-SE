@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d38c3b44-9183-4537-a9dd-fd7761328cc1
-source-git-commit: 50933d991c6a337e6d1739652d680778759ef0d5
+source-git-commit: 22c3c44106d51032cd9544b642ae209bfd62d69a
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig mal
 
 1. Anpassa layouten efter behov och öppna menyn **[!UICONTROL AI Assistant]**.
 
-   ![](assets/lp-full-gen-1.png){zoomable="yes"}
+   ![Landningssidans designer med AI Assistant-panel öppnad för generering av helsidesinnehåll](assets/lp-full-gen-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
@@ -50,7 +50,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig mal
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra din landningssida.
 
-   ![](assets/lp-full-gen-2.png){zoomable="yes"}
+   ![AI-assistenten för landningssida med fältet Fråga och snabbbiblioteket har åtkomst för helsidesgenerering](assets/lp-full-gen-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
@@ -58,7 +58,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig mal
    * **[!UICONTROL Languages]**: Välj språk för det genererade innehållet.
    * **[!UICONTROL Tone]**: Tonen på din landningssida ska tolkas som målgruppen. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
 
-   ![](assets/lp-full-gen-3.png){zoomable="yes"}
+   ![Panelen Textinställningar för landningssidan med alternativ för kommunikationsstrategi, språk och ton ](assets/lp-full-gen-3.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
@@ -68,7 +68,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig mal
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![](assets/lp-full-gen-4.png){zoomable="yes"}
+   ![Panelen Bildinställningar för landningssida med innehållstyp, visuell intensitet, färg och ton, ljus och komposition](assets/lp-full-gen-4.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -84,7 +84,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig mal
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/lp-full-gen-5.png){zoomable="yes"}
+   ![Genererade variationer för landningssidor med procentindikatorn för justering av klammerparenteser och förhandsgranskningskontroller](assets/lp-full-gen-5.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -94,7 +94,7 @@ I följande exempel använder vi AI Assistant för att förfina en befintlig mal
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/lp-full-gen-6.png){zoomable="yes"}
+   ![Förfina meny för landningssida med Rephrase, använd enklare språk med listrutorna Tone och Communication Strategy ](assets/lp-full-gen-6.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
@@ -114,7 +114,7 @@ I följande exempel kommer vi att använda AI Assistant för att förbättra inn
 
 1. Välj en **[!UICONTROL Text component]** om du bara vill ha ett specifikt innehåll som mål. och gå till menyn **[!UICONTROL AI Assistant]**.
 
-   ![](assets/lp-text-gen-1.png){zoomable="yes"}
+   ![Landningssidans designer med Textkomponent markerad och AI Assistant-panel för textgenerering](assets/lp-text-gen-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Use original content]** för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
@@ -122,7 +122,7 @@ I följande exempel kommer vi att använda AI Assistant för att förbättra inn
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina landningssidor.
 
-   ![](assets/lp-text-gen-2.png){zoomable="yes"}
+   ![Generering av AI Assistant-text för landningssida med fältet Fråga och knappen Visa bibliotek](assets/lp-text-gen-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
@@ -131,7 +131,7 @@ I följande exempel kommer vi att använda AI Assistant för att förbättra inn
    * **[!UICONTROL Tone]**: Tonen på din landningssida ska tolkas som målgruppen. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
    * **Textlängd**: Använd reglaget för att välja önskad längd på texten.
 
-   ![](assets/lp-text-gen-3.png){zoomable="yes"}
+   ![Textinställningar för landningssida med reglaget Kommunikationsstrategi, Språk, Ton och Textlängd](assets/lp-text-gen-3.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -148,7 +148,7 @@ I följande exempel kommer vi att använda AI Assistant för att förbättra inn
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/lp-text-gen-4.png){zoomable="yes"}
+   ![Genererade textvariationer för landningssidor med procentandelar för justering av klammerparenteser och markeringsalternativ](assets/lp-text-gen-4.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -164,7 +164,7 @@ I följande exempel kommer vi att använda AI Assistant för att förbättra inn
 
    Du kan också ändra **[!UICONTROL Tone]** och **[!UICONTROL Communication strategy]** för texten.
 
-   ![](assets/lp-text-gen-5.png){zoomable="yes"}
+   ![Förfina meny för text på landningssidor som visar Arbeta, Sammanfattning, Återfras, Använd enklare språk med listrutan Ton](assets/lp-text-gen-5.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
@@ -186,7 +186,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
 1. Välj **[!UICONTROL AI Assistant]** på den högra menyn.
 
-   ![](assets/lp-image-gen-1.png){zoomable="yes"}
+   ![Landningssidans designer med bildresurs markerad och AI Assistant-panel öppnad för bildgenerering](assets/lp-image-gen-1.png){zoomable="yes"}
 
 1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
 
@@ -194,7 +194,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
    Om du vill ha hjälp med att skapa din fråga kan du få tillgång till **[!UICONTROL Prompt Library]**, som innehåller en mängd olika tips för att förbättra dina landningssidor.
 
-   ![](assets/lp-image-gen-2.png){zoomable="yes"}
+   ![AI Assistant-bildgenerering för landningssida med alternativet för referensstil, fältet Fråga och promptbiblioteket](assets/lp-image-gen-2.png){zoomable="yes"}
 
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Image settings]**:
 
@@ -205,7 +205,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![](assets/lp-image-gen-3.png){zoomable="yes"}
+   ![Bildinställningar för landningssida med proportioner, innehållstyp, visuell intensitet, färg och ton, ljus och komposition](assets/lp-image-gen-3.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
@@ -221,7 +221,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![](assets/lp-image-gen-4.png){zoomable="yes"}
+   ![Genererade variationer av landningssidans bilder med procentandelar för justering av klammerparenteser och förhandsgranskningskontroller](assets/lp-image-gen-4.png){zoomable="yes"}
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -232,7 +232,7 @@ I exemplet nedan kan du lära dig hur du använder AI Assistant för att optimer
 
    * **[!UICONTROL Save]** om du vill lagra resurserna för senare åtkomst.
 
-   ![](assets/lp-image-gen-5.png){zoomable="yes"}
+   ![Förfina alternativ för landningssidesbilder med knapparna Generera liknande, Redigera i Adobe Express och Spara](assets/lp-image-gen-5.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
