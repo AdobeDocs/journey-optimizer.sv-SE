@@ -64,7 +64,7 @@ För att få åtkomst till kampanjsamordning måste din licens innehålla anting
 **Läs mer**
 
 * [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)
-* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
 +++
 
@@ -375,4 +375,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Samordnade kampanjer skyddar mot detaljer och begränsningar](guardrails.md)
 * [Kom igång med scheman och datauppsättningar i samordnade kampanjer](gs-schemas.md)
 * [Skapa din första samordnade kampanj](gs-campaign-creation.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
