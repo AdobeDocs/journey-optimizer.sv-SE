@@ -34,7 +34,7 @@ Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det f
 
 Se [Om åtgärdsaktiviteter](../building-journeys/about-journey-activities.md#action-activities).
 
-![Konfiguration av reaktionshändelser med kanalval och händelsetyp ](assets/journey45.png)
+![Konfiguration av reaktionshändelser med kanalval och händelsetyp &#x200B;](assets/journey45.png)
 
 Här följer de olika stegen för att konfigurera reaktionshändelser:
 

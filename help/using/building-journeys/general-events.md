@@ -55,7 +55,7 @@ Så här konfigurerar du en timeout för en händelse:
 
 1. När ingen händelse tas emot inom den angivna tidsgränsen är det bästa sättet att skicka personerna till en tidsgräns. Aktivera alternativet **[!UICONTROL Set a timeout path]** för detta. I så fall fortsätter kundresan för personen när tidsgränsen nås. Du bör alltid aktivera alternativet **[!UICONTROL Set a timeout path]**.
 
-   ![Händelsens timeout-konfiguration med alternativ för varaktighet och tidsgräns ](assets/event-timeout.png)
+   ![Händelsens timeout-konfiguration med alternativ för varaktighet och tidsgräns &#x200B;](assets/event-timeout.png)
 
 I det här exemplet skickar resan ett första välkomstmeddelande till en kund när han/hon kommer in i lobbyn. Sedan skickas ett mejl med rabatt endast om kunden kommer in på restaurangen nästa dag. Därför har vi konfigurerat restaurangevenemanget med en 1-dagars timeout:
 
