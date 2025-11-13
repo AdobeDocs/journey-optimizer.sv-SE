@@ -9,9 +9,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 version: Journey Orchestration
-source-git-commit: 598be5d2c5aca0262063c61e80e6b36020983131
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Du kan använda körningsfunktionen Torr i alla utkast-resor utan fel.
 Så här aktiverar du Torr körning:
 
 1. Öppna den resa du vill testa.
-1. Markera knappen **Torr körning**.
+1. Markera knappen **[!UICONTROL Dry run]**.
 
    ![Starta färdens torra körning](assets/dry-run-button.png)
 
@@ -85,9 +85,9 @@ Så här aktiverar du Torr körning:
 
    ![Bekräfta den torra publikationen för resan](assets/dry-run-publish.png){width="50%" align="left"}
 
-   Ett statusmeddelande, **Aktivera Torr körning**, visas medan övergången pågår.
+   Ett statusmeddelande, **[!UICONTROL Activating Dry run]**, visas medan övergången pågår.
 
-1. När den har aktiverats går resan in i läget **Torr körning**.
+1. När den har aktiverats går resan in i **[!UICONTROL Dry run]**-läge.
 
 
 ## Övervaka en torr körning {#journey-dry-monitor}
@@ -109,17 +109,17 @@ Du kan även komma åt **Senaste 24-timmarsrapporterna** och **heltidsrapportern
 
 ## Stoppa en torr körning {#journey-dry-run-stop}
 
-Efter 14 dagar övergår Dry Run-resor automatiskt till statusen **Draft**.
+Efter 14 dagar övergår Dry Run-resor automatiskt till statusen **[!UICONTROL Draft]**.
 
 Torra körningar kan också stoppas manuellt. Så här inaktiverar du körningsläget Torr:
 
 1. Öppna den torra körningsresa du vill stoppa.
-1. Välj knappen **Stäng** för att avsluta testet.
+1. Välj knappen **[!UICONTROL Close]** för att avsluta testet.
 Länkar till de senaste 24 timmarna och alla tidsrapporter är tillgängliga på bekräftelseskärmen.
 
    ![Stoppa körningen av torr körning](assets/dry-run-stop.png){width="50%" align="left"}
 
-1. Bekräfta genom att klicka på **Tillbaka till utkast**.
+1. Klicka på **[!UICONTROL Back to Draft]** för att bekräfta.
 
 
 ## Skyddsritningar och begränsningar {#journey-dry-run-limitations}
@@ -149,4 +149,4 @@ Vid analys av **reserapporteringsmått** med hjälp av Adobe Experience Platform
 
 Lär dig hur du torkar dina resor i den här videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464686/?captions=swe&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)

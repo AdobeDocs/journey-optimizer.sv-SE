@@ -10,10 +10,10 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
 version: Journey Orchestration
-source-git-commit: 118bf89f56d26213fde71fa795fc6576ce764ef2
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 42%
+source-wordcount: '465'
+ht-degree: 40%
 
 ---
 
@@ -33,11 +33,11 @@ Fel visas med en varningssymbol på själva aktiviteterna på arbetsytan. Placer
 
 * om ett obligatoriskt fält är tomt visas ett fel
 
-  ![](assets/journey63.png)
+  ![Fel vid resevalidering som visas på arbetsytan med felindikatorer](assets/journey63.png)
 
 * på arbetsytan visas en varning när två aktiviteter är frånkopplade
 
-  ![](assets/canvas-disconnected.png)
+  ![Varningsikonen visar aktiviteter som inte är kopplade på arbetsytan för resan](assets/canvas-disconnected.png)
 
 ## Fel under resan {#canvas-errors}
 
@@ -45,7 +45,7 @@ Fel visas också från knappen **[!UICONTROL Alerts]** ovanför arbetsytan. Med 
 
 Systemet identifierar två typer av problem: **fel** och **varningar**. Fel blockerar publicering och testaktivering. Varningar indikerar potentiella problem som inte blockerar testaktivering eller publicering. En beskrivning av problemet och ett ID från felloggen med typen ERR_XXX_XXX visas. Detta kan hjälpa till att identifiera problemet.
 
-![](assets/journey-error-and-warning.png)
+![Fel- och varningsindikatorer under resan med beskrivande verktygstips](assets/journey-error-and-warning.png)
 
 <!--Most of the time, errors detected by the system are linked to errors visible on the activities but they can also relate to other issues. In all cases, check alerts and resolve the issue using to the error description. If you cannot identify the issue, use the **[!UICONTROL Copy details]** button to store the alerts, and send them to your administrator.-->
 

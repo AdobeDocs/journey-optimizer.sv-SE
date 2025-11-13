@@ -9,9 +9,9 @@ level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
 version: Journey Orchestration
-source-git-commit: 5eddbb1f9ab53f1666ccd8518785677018e10f6f
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ För **målgruppsinlösta resor** kan du definiera läsfrekvensen för din Läs 
 > Det här är det maximala antalet profiler som kan komma in på resan per sekund. Denna avgift gäller endast denna aktivitet och inga andra delar av resan. [Läs mer](../building-journeys/read-audience.md)
 
 
-![](assets/limit-throughput-1.png)
+![Begränsa genomströmningskonfigurationspanelen med inställningar för hastighetsbegränsning](assets/limit-throughput-1.png)
 
 Du kan ändra det här värdet från 500 till 20 000 instanser per sekund. Om du behöver gå under 500/s kan du även lägga till villkor för&quot;procentuell delning&quot; med vänteaktiviteter för att dela upp din resa i flera grenar och få dem att köras vid en viss tidpunkt.
 
-![](assets/limit-throughput-2.png)
+![Resa med begränsad genomströmningsaktivitet som styr leveransfrekvensen för meddelanden](assets/limit-throughput-2.png)
 
 Låt oss ta ett exempel på en **målgruppsinställd resa** som arbetar med en population av **10 000 profiler** och skickar data till ett externt system som stöder **100 förfrågningar/sekund**.
 

@@ -10,9 +10,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 186b061d-0941-48be-8917-bbdfff6dae90
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '389'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ När din resa har publicerats och [Dry run mode](journey-dry-run.md) har aktiver
 
 De visade händelserna inträffade under de senaste 24 timmarna, med ett minsta intervall på två minuter mellan händelsen och dess visning, vanligtvis inom fem minuter.
 
-![](assets/journey_live_report.png)
+![Kontrollpanel för liverapport i resan som visar prestandamått i realtid](assets/journey_live_report.png)
 
 För dina resor i Live eller [Torr körning](journey-dry-run.md) kan du kontrollera:
 

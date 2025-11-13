@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 version: Journey Orchestration
-source-git-commit: 0331f8fe2439d41c08ad88a6d0bd95dd150bab90
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Du kan se att `products` är en array med två objekt. Du måste ha minst ett ob
 
 1. Klistra in JSON-exemplet i avsnittet **[!UICONTROL Action parameters]**. Den visade strukturen är statisk: när du klistrar in nyttolasten definieras alla fält som konstanter.
 
-   ![](assets/uc-collection-1.png)
+   ![Uttrycksredigeraren som visar samlingsfunktioner och åtgärder](assets/uc-collection-1.png)
 
 1. Justera fälttyperna om det behövs. Följande fälttyper stöds för samlingar: listString, listInteger, listDecimal, listBoolean, listDateTime, listDateTimeOnly, listDateOnly, listObject
 
@@ -120,21 +120,21 @@ Du kan se att `products` är en array med två objekt. Du måste ha minst ett ob
 
 1. Definiera den etikett som ska visas på arbetsytan för varje fält.
 
-   ![](assets/uc-collection-2.png){width="70%" align="left"}
+   ![Filtersamlingsfunktion med villkorsbyggargränssnitt](assets/uc-collection-2.png){width="70%" align="left"}
 
 1. Skapa din resa och lägg till den anpassade åtgärd du skapade. Läs mer på [den här sidan](../building-journeys/using-custom-actions.md).
 
 1. I avsnittet **[!UICONTROL Action parameters]** definierar du arrayparametern (`products` i vårt exempel) med den avancerade uttrycksredigeraren.
 
-   ![](assets/uc-collection-3.png)
+   ![Uttryck för samlingsfiltrering med fältval](assets/uc-collection-3.png)
 
 1. För vart och ett av följande objektfält anger du motsvarande fältnamn från XDM-källschemat. Om namnen är identiska behövs inte detta. I vårt exempel behöver vi bara definiera `product id` och&quot;color&quot;.
 
-   ![](assets/uc-collection-4.png){width="50%" align="left"}
+   ![Sorteringsfunktion för samling med beställningskonfiguration](assets/uc-collection-4.png){width="50%" align="left"}
 
 För arrayfältet kan du även använda den avancerade uttrycksredigeraren för att utföra datamanipulering. I följande exempel använder vi funktionerna [filter](functions/list-functions.md#filter) och [intersect](functions/list-functions.md#intersect):
 
-![](assets/uc-collection-5.png)
+![Fullständigt samlingsuttryck med filtrerings-, sorterings- och begränsningsåtgärder](assets/uc-collection-5.png)
 
 ## Begränsningar {#limitations}
 
@@ -194,7 +194,7 @@ Samlingar i anpassade åtgärder ger flexibilitet när det gäller att skicka dy
 
 För heterogena typer och arrayer av arrayer definieras arrayen med typen listAny. Du kan bara mappa enskilda objekt, men inte ändra arrayen till variabel.
 
-![](assets/uc-collection-heterogeneous.png){width="70%" align="left"}
+![Heterogen samling med blandade datatyper och fältval](assets/uc-collection-heterogeneous.png){width="70%" align="left"}
 
 Exempel på heterogen typ:
 

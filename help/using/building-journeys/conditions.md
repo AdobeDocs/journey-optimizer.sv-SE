@@ -12,10 +12,10 @@ hidefromtoc: true
 hide: true
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 5%
+source-wordcount: '1653'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Följ stegen nedan för att lägga till ett villkor i din resa.
 
 1. Välj ett villkor i listrutan **[!UICONTROL Method]**.
 
-   ![](assets/journey-optimize-condition.png){width=80%}
+   ![Optimera aktivitet med villkorsmetod vald](assets/journey-optimize-condition.png){width=80%}
 
    Följande typer av villkor är tillgängliga:
 
@@ -66,13 +66,13 @@ När du använder flera villkor under en resa kan du definiera etiketter för va
 
 Klicka på **[!UICONTROL Add a path]** om du vill definiera flera villkor. För varje villkor läggs en ny bana till på arbetsytan efter aktiviteten.
 
-![](assets/journey-condition-add-path.png){width=80%}
+![Lägg till en banknapp för att skapa flera villkorssökvägar](assets/journey-condition-add-path.png){width=80%}
 
 Observera att utformningen av resorna har funktionell inverkan. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. Det innebär att du kan ändra prioriteringen av banor genom att placera dem över eller under varandra.
 
 Låt oss ta exemplet med den första sökvägens villkor &quot;Personen är en VIP&quot; och en andra sökvägs villkor &quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är VIP) klarar det här steget väljs den första vägen även om den personen också är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
 
-![](assets/journey48.png)
+![Exempel på prioritering av sökväg som visar VIP-villkor över manligt villkor](assets/journey48.png)
 
 Du kan skapa en annan sökväg för målgrupper som inte uppfyller de definierade villkoren genom att markera **[!UICONTROL Show path for other cases than the one(s) above]**.
 
@@ -85,9 +85,9 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 * **AND** - En skärning av två villkor. Endast de element som uppfyller alla villkor beaktas.
 * **OR** - en union av två villkor. Element som matchar minst ett av de två villkoren beaktas.
 
-![](assets/journey64.png){width=80%}
+![Enkel uttrycksredigerare med dra och släpp-fält och logiska operatorer](assets/journey64.png){width=80%}
 
-Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
+Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ Om du till exempel riktar dig till en målgrupp med anrikningsattribut som gener
 
 Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor för att hantera samlingar eller använda datakällor som kräver att parametrar skickas. [Läs mer](../datasource/external-data-sources.md)
 
-![](assets/journey50.png){width=80%}
+![Data-Source-villkor med avancerad uttrycksredigerare](assets/journey50.png){width=80%}
 
 ## Datumvillkor {#date_condition}
 
@@ -115,7 +115,7 @@ På så sätt kan du definiera ett annat flöde baserat på datumet. Om personen
 >
 >Tidszonen är inte längre specifik för ett villkor och har nu definierats på färdsnivå i färdegenskaperna. [Läs mer](../building-journeys/timezone-management.md)
 
-![](assets/journey53.png)
+![Konfiguration av datumvillkor med start- och slutdatumfält](assets/journey53.png)
 
 ## Procentdelning {#percentage_split}
 
@@ -127,7 +127,7 @@ I testläge väljs alltid den översta grenen när en delning nås. Du kan ordna
 >
 >Observera att det inte finns någon knapp för att lägga till en bana i det procentuella delningsvillkoret. Antalet banor beror på antalet delningar. I delningsvillkor kan du inte lägga till en sökväg för andra fall eftersom det inte kan ske. Folk kommer alltid att gå in på en av de delade vägarna.
 
-![](assets/journey52.png)
+![Procentandel av delad konfiguration med reglage som visar trafikfördelning](assets/journey52.png)
 
 ## Tidsvillkor {#time_condition}
 
@@ -139,7 +139,7 @@ Använd en **[!UICONTROL Time condition]** för att utföra olika åtgärder ber
 >
 >* Som standard anges **[!UICONTROL Time condition]** som timma, från 00:00 till 12:00.
 
-![](assets/journey51.png)
+![Tidsvillkor med timintervall och veckodag-väljare](assets/journey51.png)
 
 Tre filtreringsalternativ är tillgängliga:
 
@@ -172,7 +172,7 @@ Här följer de tröskelvärden som ska beaktas för att se till att gränsvärd
 
 Profilände beaktas inte i testläge.
 
-![](assets/profile-cap-condition.png)
+![Begränsningsvillkor för profil med inmatningsfält för maximal profilgräns](assets/profile-cap-condition.png)
 
 ## Använd målgrupper under förhållanden {#using-a-segment}
 
@@ -182,14 +182,14 @@ Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
 1. Öppna en resa, släpp en **[!UICONTROL Optimize]**-aktivitet och välj **[!UICONTROL Data source condition]**.
 
-   ![](assets/segment3.png)
+   ![Source-villkorsmetoden Data har valts i listrutan](assets/segment3.png)
 
 1. Klicka på **[!UICONTROL Add a path]** för varje extra sökväg som behövs. Klicka på fältet **[!UICONTROL Expression]** för varje sökväg.
 
 1. Till vänster kan du visa **[!UICONTROL Audiences]**-noden. Dra och släpp den målgrupp du vill använda för ditt villkor. Som standard är villkoret för målgruppen sant.
 
-   ![](assets/segment4.png){width=80%}
+   ![Publiknod i uttrycksredigeraren för val av Adobe Experience Platform-målgrupper](assets/segment4.png){width=80%}
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.

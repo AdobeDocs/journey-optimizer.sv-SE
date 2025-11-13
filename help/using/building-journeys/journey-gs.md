@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '912'
 ht-degree: 3%
 
 ---
@@ -78,7 +78,7 @@ Så här skapar du en resa i flera steg:
 
 1. Redigera kundens konfigurationsruta för att definiera namnet på resan och ange dess egenskaper. Lär dig hur du anger egenskaper för din resa på [den här sidan](journey-properties.md).
 
-   ![](assets/jo-properties.png)
+   ![Resegenskapspanelen med inställningar och konfigurationsalternativ](assets/jo-properties.png)
 
 Sedan kan du börja designa din resa.
 
@@ -86,11 +86,11 @@ Sedan kan du börja designa din resa.
 
 Flerkanalsdesignern hjälper er att skapa flerstegsresor med riktade målgrupper, uppdateringar baserade på kundinteraktioner eller affärsinteraktioner i realtid och flerkanalsmeddelanden med ett intuitivt dra-och-släpp-gränssnitt.
 
-![](assets/journey38.png)
+![Resedesignerns gränssnitt med aktivitetspaletten och arbetsytan](assets/journey38.png)
 
 1. Börja med att dra och släppa en händelse eller en **Läs publikens**-aktivitet från paletten till arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
 
-   ![](assets/read-segment.png)
+   ![Konfiguration av målgruppsaktivitet för val av målgrupp](assets/read-segment.png)
 
 1. Dra och släpp en händelse eller en **Läs publikens**-aktivitet från paletten på arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
 
@@ -98,17 +98,17 @@ Flerkanalsdesignern hjälper er att skapa flerstegsresor med riktade målgrupper
 
 Testa resan innan du publicerar den när du har byggt den. Journey Optimizer erbjuder ett **testläge** som ett sätt att visa testprofiler under resan och upptäcka eventuella fel före aktiveringen. Genom att köra snabbtester kan du vara säker på att resorna fungerar som de ska så att du kan publicera dem med tillförsikt. Lär dig hur du testar din resa [i det här avsnittet](testing-the-journey.md)
 
-Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [&#x200B; i det här avsnittet](journey-dry-run.md).
+Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [ i det här avsnittet](journey-dry-run.md).
 
 ## Publicera resan {#jo-pub}
 
 Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att delta i den. Innan du publicerar din resa kontrollerar du att den är giltig och att inga fel har uppstått. Du kan inte publicera en resa med fel. Läs mer om resepublikation i det här [avsnittet](publish-journey.md).
 
-![](assets/jo-journeyuc2_32bis.png)
+![Hela kundresan med målgrupp, villkor och åtgärder](assets/jo-journeyuc2_32bis.png)
 
 När den publicerats kan ni övervaka er resa med de dedikerade rapporteringsverktygen för att mäta hur effektiv resan är.
 
-![](assets/jo-dynamic_report_journey_12.png)
+![Reseanalysrapport som visar prestanda och statistik](assets/jo-dynamic_report_journey_12.png)
 
 Läs mer om reserapporter i det här [avsnittet](../reports/live-report.md).
 
@@ -120,7 +120,7 @@ Läs mer om reserapporter i det här [avsnittet](../reports/live-report.md).
 * **[Publicerar resor](publish-journey.md)** - Förstå processen för att publicera resan och hur du hanterar direktresor.
 * **[Reserapportering](report-journey.md)** - Spåra och analysera reseprestanda med detaljerade mått och insikter.
 * **[Felsökning av resor](troubleshooting.md)** - Hitta lösningar på vanliga reseproblem och bästa praxis för felsökning.
-* **[Resehandledningar](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
+* **[Resehandledningar](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
 
 >[!NOTE]
 >

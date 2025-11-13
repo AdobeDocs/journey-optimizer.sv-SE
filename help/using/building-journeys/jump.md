@@ -10,9 +10,9 @@ level: Intermediate
 keywords: hopp, aktivitet, resa, dela, dela upp
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '860'
 ht-degree: 2%
 
 ---
@@ -76,16 +76,16 @@ Under resa B utlöses den första händelsen internt via aktiviteten **[!UICONTR
 
 1. Utforma din **ursprungliga resa**.
 
-   ![](assets/jump1.png)
+   ![Hoppaktivitet på resepaletten för övergång mellan resor](assets/jump1.png)
 
 1. Lägg till en **[!UICONTROL Jump]**-aktivitet från kategorin **[!UICONTROL ACTIONS]** när som helst under resan. Lägg till en etikett och en beskrivning.
 
-   ![](assets/jump2.png)
+   ![Listruta för val av målresa i konfiguration för hoppaktivitet](assets/jump2.png)
 
 1. Klicka i fältet **Målresa**.
 I listan visas alla reseversioner som är utkast, live eller i testläge. Resor som använder ett annat namnutrymme eller som börjar med en **målgruppskvalificeringshändelse** är inte tillgängliga. Målresor som skulle skapa ett slingmönster filtreras också bort.
 
-   ![](assets/jump3.png)
+   ![Hoppaktivitet som visar målresan och åtgärdsparametrar](assets/jump3.png)
 
    >[!NOTE]
    >
@@ -94,12 +94,12 @@ I listan visas alla reseversioner som är utkast, live eller i testläge. Resor 
 1. Välj den målresa som du vill hoppa till.
 Fältet **Första händelsen** är förifyllt med namnet på målresans första händelse. Om målresan innehåller flera händelser tillåts endast **[!UICONTROL Jump]** för den första händelsen.
 
-   ![](assets/jump4.png)
+   ![Parametermappningskonfiguration för hoppaktivitet med uttrycksredigeraren](assets/jump4.png)
 
 1. Avsnittet **Åtgärdsparametrar** visar alla fält i målhändelsen. Mappa varje fält med fält från ursprungshändelsen eller datakällan, precis som med andra typer av åtgärder. Den här informationen skickas till målresan vid körning.
 1. Lägg till nästa aktiviteter för att slutföra din ursprungliga resa.
 
-   ![](assets/jump5.png)
+   ![Testlägesgränssnitt för att testa hoppaktivitet mellan resor](assets/jump5.png)
 
 
    >[!NOTE]
@@ -110,7 +110,7 @@ Din **[!UICONTROL Jump]**-aktivitet har konfigurerats. Så snart din resa är li
 
 När en **[!UICONTROL Jump]**-aktivitet har konfigurerats på en resa läggs en **[!UICONTROL Jump]**-postikon automatiskt till i början av målresan. Detta hjälper dig att identifiera att resan kan utlösas externt men också internt från en **[!UICONTROL Jump]**-aktivitet.
 
-![](assets/jump7.png)
+![Reseflödet visar hopp från källresan till målresan](assets/jump7.png)
 
 ## Felsökning {#jump-troubleshoot}
 
@@ -120,4 +120,4 @@ Fel uppstår om:
 * Målresan är utkast, avslutad eller stoppad
 * Den första händelsen i målresan har ändrats och mappningen är bruten
 
-![](assets/jump6.png)
+![Reseanalys som visar körningsmått för hoppaktivitet](assets/jump6.png)

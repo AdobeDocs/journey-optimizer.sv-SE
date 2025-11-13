@@ -10,9 +10,9 @@ level: Intermediate
 keywords: skräddarsydd, allmän, evenemang, resa
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
 version: Journey Orchestration
-source-git-commit: 5eddbb1f9ab53f1666ccd8518785677018e10f6f
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '626'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ För den här händelsetypen kan du bara lägga till en etikett och en beskrivni
 
 Läs mer om händelsegenomströmning och resefrekvenser i [det här avsnittet](entry-management.md#journey-processing-rate).
 
-![](assets/general-events.png)
+![Konfigurationspanelen för allmänna händelser med händelserval och inställningar](assets/general-events.png)
 
 När du släpper en affärshändelse läggs automatiskt en **Läs målgrupp**-aktivitet till. Mer information om affärshändelser finns i [det här avsnittet](../event/about-events.md)
 
@@ -55,7 +55,7 @@ Så här konfigurerar du en timeout för en händelse:
 
 1. När ingen händelse tas emot inom den angivna tidsgränsen är det bästa sättet att skicka personerna till en tidsgräns. Aktivera alternativet **[!UICONTROL Set a timeout path]** för detta. I så fall fortsätter kundresan för personen när tidsgränsen nås. Du bör alltid aktivera alternativet **[!UICONTROL Set a timeout path]**.
 
-   ![](assets/event-timeout.png)
+   ![Händelsens timeout-konfiguration med alternativ för varaktighet och tidsgräns ](assets/event-timeout.png)
 
 I det här exemplet skickar resan ett första välkomstmeddelande till en kund när han/hon kommer in i lobbyn. Sedan skickas ett mejl med rabatt endast om kunden kommer in på restaurangen nästa dag. Därför har vi konfigurerat restaurangevenemanget med en 1-dagars timeout:
 
@@ -69,4 +69,4 @@ Den definierade tidsgränsen gäller för alla händelser som placerats efter ak
 * Om en händelse tas emot inom tidsgränsen flödas den enskilda händelsen till den mottagna händelsens sökväg.
 * Om ingen händelse tas emot inom tidsgränsen flödar den enskilda händelsen in i den timeout-gren för händelsen där tidsgränsen har definierats.
 
-![](assets/event-timeout-group.png)
+![Flera händelser med timeoutkonfigurationer under resan](assets/event-timeout-group.png)

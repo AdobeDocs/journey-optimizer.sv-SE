@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1444'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Hur resorna presenteras:
 
 Så här navigerar du i din resekalender:
 
-1. Om du vill komma åt kalendervyn öppnar du reselistan och klickar på ikonen ![kalenderikon](assets/do-not-localize/timeline-icon.svg) .
+1. Om du vill komma åt kalendervyn öppnar du reselistan och klickar på ikonen ![Kalender för att växla till kalendervyn](assets/do-not-localize/timeline-icon.svg) .
 
 1. Använd pilknapparna eller datumväljaren ovanför kalendern för att flytta mellan veckor.
 
@@ -73,11 +73,11 @@ Så här navigerar du i din resekalender:
 
    ![kalendervy som visar direktresor](assets/timeline-journeys.png)
 
-1. Klicka på ![kugghjulsikonen](assets/do-not-localize/Smock_Gears_18_N.png) för att växla visningen av objekt som sträcker sig över flera dagar eller veckor.
+1. Klicka på ikonen ![Inställningar för att växla visningen av flerdagarsresan](assets/do-not-localize/Smock_Gears_18_N.png) för att växla visningen av objekt som sträcker sig över flera dagar eller veckor.
 
    ![kalendervy som visar aktiva kampanjer](assets/journey-calendar-1.png)
 
-1. Klicka på ikonen ![Lägg till kalender](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) för att hantera och lägga till upp till tre externa kalendrar.
+1. Klicka på ikonen ![Lägg till extern kalender](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) för att hantera och lägga till upp till tre externa kalendrar.
 
    ![kalendervy som visar externa kalendrar](assets/journey-calendar-2.png)
 
@@ -120,7 +120,7 @@ Om du vill filtrera resor baserat på ett visst datumintervall väljer du **[!UI
 
 I konfigurationsrutorna Händelse, Datakälla och Åtgärd visar fältet **[!UICONTROL Used in]** dessutom antalet resor som använder just den händelsen, fältgruppen eller åtgärden. Du kan klicka på knappen **[!UICONTROL View journeys]** för att visa en lista över motsvarande resor.
 
-![](assets/journey3bis.png)
+![Används i fält som visar antalet resor som använder en händelse eller åtgärd](assets/journey3bis.png)
 
 ## Resetyper {#journey-types}
 
@@ -140,7 +140,7 @@ Resans status beror på dess livscykel. Den kan vara:
 
 * **Utkast**: resan är i det första steget. Den har inte publicerats än.
 * **Utkast (test)**: Testläget har aktiverats med knappen **Testläge** . [Läs mer](../building-journeys/testing-the-journey.md)
-* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [&#128279;](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
+* **Slutförd**: resan växlar automatiskt till den här statusen efter den globala tidsgränsen på 91 dagar [](journey-properties.md#global_timeout). Profiler som redan finns på resan slutför normalt. Nya profiler kan inte längre komma in på resan.
 * **Live**: resan har publicerats med knappen **Publicera** . [Läs mer](../building-journeys/publish-journey.md)
 * **Pausad**: den aktiva resan har pausats med knappen **Paus** . [Läs mer](../building-journeys/journey-pause.md)
 * **Stoppad**: resan har inaktiverats med knappen **Stoppa**. Alla individer lämnar resan direkt. [Läs mer](../building-journeys/end-journey.md#stop-journey)
@@ -148,7 +148,7 @@ Resans status beror på dess livscykel. Den kan vara:
 
 >[!NOTE]
 >
->* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **&rbrace;Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+>* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **}Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
 >
 >* Om du behöver ändra till en **Live**-resa [skapar du en ny version](#journey-versions) av din resa. Du kan även pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst. [Läs mer om att pausa resor](../building-journeys/journey-pause.md)
 
@@ -166,7 +166,7 @@ Gör så här:
 
 1. Ange namnet på resan och bekräfta. Du kan också ändra namnet på skärmen för reseegenskaper. Som standard anges namnet på följande sätt: `[JOURNEY-NAME]_copy`
 
-   ![](assets/duplicate-jo2.png)
+   ![Indatafält för resenamn för duplicerad resa](assets/duplicate-jo2.png)
 
 1. Den nya resan skapas och är tillgänglig i reselistan.
 

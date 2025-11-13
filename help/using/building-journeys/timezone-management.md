@@ -10,9 +10,9 @@ level: Intermediate
 keywords: tidszon, egenskaper, resa, villkor, tid, datum, anpassad
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '373'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Tidszonen kan korrigeras. Rensa den fördefinierade tidszonen och välj en i lis
 
 Gör detta genom att markera en tidszon i rutan **[!UICONTROL Journey Properties]**.
 
-![](assets/journey72.png)
+![Listruta för val av tidszon i resans egenskaper](assets/journey72.png)
 
 ## Använd profilens tidszon {#timezone-from-profiles}
 
@@ -60,7 +60,7 @@ Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan 
 
 Om en tidszon har definierats för en profil hämtas den och används av resan. Om så inte är fallet används tidszonen som definieras i tidszonsfältet.
 
-![](assets/journey73.png)
+![Profilens tidszonskonfiguration i datakällor för anpassad timing](assets/journey73.png)
 
 >[!NOTE]
 >

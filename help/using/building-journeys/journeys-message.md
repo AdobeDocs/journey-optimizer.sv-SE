@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 version: Journey Orchestration
-source-git-commit: afac93abcd2bacc4371748b94c0e66942a4c5076
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '565'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
 1. Dra och släpp en kanalaktivitet på arbetsytan från avsnittet **Åtgärder** på paletten.
 
-   ![](assets/journey-web-activity.png)
+   ![Åtgärdsaktivitet för webbkanal på arbetsytan för resan](assets/journey-web-activity.png)
 
 1. Du kan också välja aktiviteten **[!UICONTROL Action]**, som gör att du kan välja flera inkommande åtgärder. [Läs mer](journey-action.md)
 
@@ -139,7 +139,7 @@ Ni kan uppdatera innehållet i en inbyggd kanalåtgärd i en direktresa.
 
 Det gör du genom att öppna din direktresa, välja kanalaktiviteten och klicka på **Redigera innehåll**.
 
-![](assets/add-a-message2.png)
+![Listrutan Lägg till åtgärdsaktivitet med tillgängliga kanalalternativ](assets/add-a-message2.png)
 
 Du kan dock inte ändra de attribut som används i personaliseringen, vare sig det är profilattribut eller kontextuella data (från händelse- eller reseegenskaper).
 

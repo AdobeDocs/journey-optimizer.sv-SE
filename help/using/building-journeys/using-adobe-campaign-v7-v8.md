@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, integrering, kampanj, v7, v8
 exl-id: 3da712e7-0e08-4585-8ca4-b6ff79df0b68
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ Ett slutanvändarfall visas i det här [avsnittet](../building-journeys/ajo-ac.m
 1. Välj en Campaign-åtgärd i **Åtgärd**-delen av paletten och lägg till den på din resa.
 1. I **åtgärdsparametrarna** visas alla fält som förväntas i meddelandenyttolasten. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Detta liknar anpassade åtgärder. Se det här [avsnittet](../building-journeys/using-custom-actions.md).
 
-![](assets/accintegration2.png)
+![Åtgärdskonfiguration och integreringsinställningar för Adobe Campaign v7/v8](assets/accintegration2.png)

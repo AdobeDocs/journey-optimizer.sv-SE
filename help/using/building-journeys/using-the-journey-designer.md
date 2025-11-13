@@ -10,9 +10,9 @@ level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Händelser, samordning och åtgärder har en särskild roll och plats i processe
 
 När du påbörjar en ny resa döljs element som inte kan släppas på arbetsytan som det första steget. Detta gäller alla åtgärder, villkorsaktiviteten, väntetiden och reaktionen.
 
-![](assets/journey38.png)
+![Resedesignerns gränssnitt med palett, arbetsyta och egenskapspanelen](assets/journey38.png)
 
 Med ikonen **[!UICONTROL Filter items]** i det övre vänstra hörnet kan du visa följande filter:
 
@@ -46,23 +46,23 @@ Du kan också använda fältet **[!UICONTROL Search]**. Endast händelser och å
 
 **Arbetsytan** är den centrala zonen i resedesignern. Det är i den här zonen som du kan släppa dina aktiviteter och konfigurera dem. Klicka på en aktivitet på arbetsytan för att konfigurera den. Aktivitetskonfigurationsrutan öppnas till höger.
 
-![](assets/journey39.png)
+![Researbetsyta med aktivitetskonfigurationsruta öppen till höger](assets/journey39.png)
 
 Med **verktygsfältet**, som finns i det övre högra hörnet av arbetsytan, kan du visa/dölja stödrastret, zooma in/ut och hämta en skärmbild av arbetsytan. Se [avsnittet](../building-journeys/journey-properties.md#timeout_and_error).
 
 <!--and show/hide timeout and error paths-->
 
-![](assets/toolbar.png){width="70%" align="left"}
+![Reseverktygsfältet med kontroller för zoomning, stödraster och skärmbild](assets/toolbar.png){width="70%" align="left"}
 
 **Aktivitetskonfigurationsrutan** visas när du klickar på en aktivitet på paletten. Fyll i obligatoriska fält. Klicka på ikonen **[!UICONTROL Delete]** för att ta bort aktiviteten. Klicka på **[!UICONTROL Cancel]** om du vill avbryta ändringarna eller på **[!UICONTROL Ok]** om du vill bekräfta. Om du vill ta bort aktiviteter kan du även markera en aktivitet (eller flera) och trycka på backstegstangenten. Om du trycker på Esc-tangenten stängs aktivitetskonfigurationsrutan.
 
 Som standard är skrivskyddade fält dolda. Om du vill visa skrivskyddade fält klickar du på ikonen **Visa skrivskyddade fält** längst upp till vänster i aktivitetskonfigurationsrutan. Denna inställning gäller för alla aktiviteter på alla resor.
 
-![](assets/journey59bis.png)
+![Aktivitetskonfigurationsfönstret med alternativet Visa skrivskyddade fält](assets/journey59bis.png)
 
 Beroende på resans status kan du utföra olika åtgärder under resan med hjälp av knapparna i det övre högra hörnet: **[!UICONTROL Publish]**, **[!UICONTROL Duplicate]**, **[!UICONTROL Delete]**, **[!UICONTROL Test mode]**, **[!UICONTROL Manage access]**, **[!UICONTROL Alerts]**. De här knapparna visas när ingen aktivitet är markerad. Vissa knappar visas i sitt sammanhang. Loggknappen för testläget visas när testläget aktiveras.
 
-![](assets/journey41.png)
+![Reseåtgärdsknappar: Publicera, Duplicera, Ta bort, Testa, Hantera åtkomst, Varningar](assets/journey41.png)
 
 ## Påbörja din resa {#start-your-journey}
 
@@ -112,7 +112,7 @@ Du kan definiera en reservåtgärd om ett fel eller en timeout inträffar för f
 
 Om du vill lägga till en reservåtgärd för en aktivitet markerar du rutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i aktivitetsegenskaperna: en annan sökväg läggs till efter aktiviteten. Tidsgränsen har definierats av Admin-användare i [reseegenskaperna](../building-journeys/journey-properties.md). Om det t.ex. tar för lång tid att skicka ett e-postmeddelande eller om ett fel uppstår, kan du välja att skicka ett push-meddelande.
 
-![](assets/journey42.png)
+![Lägg till en alternativ sökväg vid timeout eller felalternativ](assets/journey42.png)
 
 Med olika aktiviteter (händelse, åtgärd, vänta) kan du lägga till flera sökvägar efter dem. Placera markören på aktiviteten och klicka på plustecknet (+). Endast händelse- och vänteaktiviteter kan anges parallellt. Om flera händelser anges parallellt är den valda sökvägen den första händelsen som inträffar.
 
@@ -120,11 +120,11 @@ När du lyssnar på en händelse rekommenderar vi att du inte väntar på hände
 
 Om du vill ta bort banan placerar du markören på den och klickar på ikonen **[!UICONTROL Delete path]**.
 
-![](assets/journey42ter.png)
+![Ikonen Ta bort bana om du vill ta bort en alternativ bana](assets/journey42ter.png)
 
 När två aktiviteter inte är kopplade till arbetsytan visas en varning. Placera markören på varningsikonen för att visa felmeddelandet. Åtgärda problemet genom att flytta den frånkopplade aktiviteten och koppla den till föregående aktivitet.
 
-![](assets/canvas-disconnected.png)
+![Varningsikon som visar frånkopplade aktiviteter på arbetsytan](assets/canvas-disconnected.png)
 
 ## Kopiera och klistra in aktiviteter {#copy-paste}
 
@@ -143,9 +143,9 @@ Så här kopierar/klistrar du in aktiviteter:
 
 1. Öppna en resa.
 1. Välj de aktiviteter du vill kopiera genom att flytta musen medan du klickar. Du kan också klicka på varje aktivitet samtidigt som du trycker på tangenten **Ctrl/Kommando**. Använd **Ctrl/Cmd + A** om du vill markera alla aktiviteter.
-   ![](assets/copy-paste1.png)
+   ![Markera flera aktiviteter under resan för kopiering](assets/copy-paste1.png)
 1. Tryck på **Ctrl/Kommando + C**.
 Om du bara vill kopiera en aktivitet kan du klicka på den och använda ikonen **Kopiera** längst upp till vänster i aktivitetskonfigurationsrutan.
-   ![](assets/copy-paste2.png)
+   ![Kopiera ikon i aktivitetskonfigurationsrutan](assets/copy-paste2.png)
 1. Tryck på **Ctrl/Cmd + V** för att klistra in aktiviteterna utan att länka dem till en befintlig nod. Inklistrade aktiviteter placeras i samma ordning. När du har klistrat in aktiviteter förblir de markerade så att du enkelt kan flytta dem. Du kan också placera markören på en tom platshållare och trycka på **Ctrl/Kommando + V**. Inklistrade aktiviteter länkas till noden.
-   ![](assets/copy-paste3.png)
+   ![Inklistrade aktiviteter på arbetsytan för resan som kan anslutas](assets/copy-paste3.png)

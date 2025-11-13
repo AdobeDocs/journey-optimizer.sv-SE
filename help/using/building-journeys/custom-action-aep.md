@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Det här användningsexemplet förklarar hur du skriver anpassade händelser til
 
 1. Klicka på **OAuth Server-to-Server** i avsnittet **Autentiseringsuppgifter**.
 
-   ![](assets/custom-action-aep-1.png)
+   ![Konfigurationsskärmen för anpassad åtgärd med listrutan för åtgärdstyp](assets/custom-action-aep-1.png)
 
 1. Klicka på **Visa cURL-kommando**.
 
-   ![](assets/custom-action-aep-2.png)
+   ![Val av åtgärdstyp för Adobe Experience Platform](assets/custom-action-aep-2.png)
 
 1. Kopiera kommandot cURL och lagra client_id, client_secrets, grant_type och scope.
 
@@ -40,7 +40,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 >[!CAUTION]
 >
->När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
+>När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
 
 ## Konfigurera källan med HTTP API Inlet
 
@@ -48,15 +48,15 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 1. I Adobe Experience Platform klickar du på **Källor** under **Anslutningar** i den vänstra menyn. Klicka på **Lägg till data** under **HTTP API**.
 
-   ![](assets/custom-action-aep-3.png)
+   ![Listruta för val av sandlåda för Adobe Experience Platform](assets/custom-action-aep-3.png)
 
 1. Välj **Nytt konto** och aktivera autentisering. Välj **Anslut till Source**.
 
-   ![](assets/custom-action-aep-4.png)
+   ![Gränssnitt för datauppsättningsval för direktuppspelningsdata](assets/custom-action-aep-4.png)
 
 1. Välj **Nästa** och den datauppsättning där du vill skriva data. Klicka på **Nästa** och **Slutför**.
 
-   ![](assets/custom-action-aep-5.png)
+   ![XDM-schemafält mappade till åtgärdsparametrar](assets/custom-action-aep-5.png)
 
 1. Öppna det nya dataflödet. Kopiera schemanyttolasten och spara den i din anteckningsruta.
 
@@ -109,7 +109,7 @@ I det här exemplet gör du så här:
 
 1. Kontrollera att rubrikerna (Content-Type, Charset, sandbox-name) är konfigurerade.
 
-   ![](assets/custom-action-aep-7bis.png)
+   ![Anpassad åtgärd på arbetsytan med konfigurationsfönstret](assets/custom-action-aep-7bis.png)
 
 ### Konfigurera autentiseringen {#custom-action-aep-authentication}
 
@@ -143,7 +143,7 @@ I det här exemplet gör du så här:
 
 1. Använd **Klicka för att testa autentiserings**-knappen för att testa anslutningen.
 
-   ![](assets/custom-action-aep-8.png)
+   ![Gränssnitt för parametermappning med uttrycksredigeraren](assets/custom-action-aep-8.png)
 
 ### Ställ in nyttolasten {#custom-action-aep-payload}
 
@@ -182,4 +182,4 @@ I det här exemplet gör du så här:
 
 1. Fyll i resans versions-ID, nod-ID, nodnamn och andra attribut enligt ditt användningsexempel.
 
-   ![](assets/custom-action-aep-9.png)
+   ![Avancerad lägesredigerare för komplex fältmappning](assets/custom-action-aep-9.png)

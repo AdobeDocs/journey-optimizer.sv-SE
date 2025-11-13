@@ -11,9 +11,9 @@ keywords: aktivitet, villkor, arbetsyta, resa, optimering
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Genom aktiviteten **Optimera** kan du utföra följande åtgärder på de result
 * Utnyttja [målinriktningsreglerna](#targeting) i varje resesökväg
 * Använd [villkor](#conditions) på dina sökvägar
 
-![](assets/journey-optimize.png)
+![Optimera-knapp på paletten Resursaktivitet](assets/journey-optimize.png)
 
 När resan är live utvärderas profiler mot de definierade kriterierna, och baserat på matchningskriterier skickas de vidare längs lämplig väg från resan.
 
@@ -53,7 +53,7 @@ När resan är live utvärderas profiler mot de definierade kriterierna, och bas
 >id="ajo_path_experiment_success_metric"
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
 
 Experimentation gör att du kan testa olika banor baserat på en slumpmässig delning för att avgöra vilken som fungerar bäst baserat på fördefinierade framgångsmått.
 
@@ -71,13 +71,13 @@ Låt oss säga att du vill jämföra tre banor:
 
 1. Välj **[!UICONTROL Experiment]** i listrutan **[!UICONTROL Method]**.
 
-   ![](assets/journey-optimize-experiment.png){width=65%}
+   ![Panelen Konfiguration av innehållsexperiment](assets/journey-optimize-experiment.png){width=65%}
 
 1. Klicka på **[!UICONTROL Create experiment]**.
 
 1. Välj den **[!UICONTROL Success metric]** som du vill ange för ditt experiment. Läs mer om tillgängliga mätvärden och hur du konfigurerar listan i [det här avsnittet](success-metrics.md).
 
-   ![](assets/journey-optimize-experiment-metrics.png){width=80%}
+   ![Val av primär och ytterligare mätvärden för experiment](assets/journey-optimize-experiment-metrics.png){width=80%}
 
 1. Du kan lägga till en **[!UICONTROL Holdout]**-grupp i leveransen. Den här gruppen kommer inte att ange någon sökväg från det här experimentet.
 
@@ -91,7 +91,7 @@ Låt oss säga att du vill jämföra tre banor:
 
 1. Du kan tilldela en exakt procentandel till varje **[!UICONTROL Treatment]**, eller bara växla på **[!UICONTROL Distribute evenly]**-växlingsfältet.
 
-   ![](assets/journey-optimize-experiment-treatments.png){width=80%}
+   ![Behandlingsallokeringsreglage med procentfördelning](assets/journey-optimize-experiment-treatments.png){width=80%}
 
 1. Klicka på **[!UICONTROL Create]**.
 
@@ -103,17 +103,17 @@ Låt oss säga att du vill jämföra tre banor:
 
    * Dra och släpp en [e-post](../email/create-email.md)-aktivitet till den tredje grenen, följt av en [SMS](../sms/create-sms.md)-aktivitet (**Behandling C**).
 
-   ![](assets/journey-optimize-experiment-ex.png){width=100%}
+   ![Exempel på innehållsexperiment med tre behandlingsvägar](assets/journey-optimize-experiment-ex.png){width=100%}
 
 1. Du kan också använda **[!UICONTROL Add an alternative path in case of a timeout or an error]** för att definiera en reservåtgärd. [Läs mer](using-the-journey-designer.md#paths)
 
 1. Välj en kanalåtgärd och använd knappen **[!UICONTROL Edit content]** för att komma åt designverktygen.
 
-   ![](assets/journey-optimize-experiment-edit-content.png){width=70%}
+   ![Redigera innehållsknapp i kanalåtgärdsaktivitet](assets/journey-optimize-experiment-edit-content.png){width=70%}
 
 1. Därifrån kan du i den vänstra rutan navigera mellan olika innehåll för varje åtgärd i ditt experiment. Markera varje innehåll och utforma det efter behov.
 
-   ![](assets/journey-optimize-experiment-content.png){width=100%}
+   ![Panelen Innehållsval visar behandlingar för experiment](assets/journey-optimize-experiment-content.png){width=100%}
 
 1. [Publicera](publish-journey.md) din resa.
 
@@ -131,7 +131,7 @@ Testa om det första meddelandet skickas via e-post eller SMS leder till högre 
 
 ➡️ Använd konverteringsgraden som framgångsmått (till exempel köp, registreringar).
 
-![](assets/journey-optimize-experiment-uc-channel.png)
+![Effektivitetsexperiment med att jämföra e-post och SMS](assets/journey-optimize-experiment-uc-channel.png)
 
 +++
 
@@ -141,7 +141,7 @@ Kör ett experiment för att kontrollera om ett e-postmeddelande eller tre e-pos
 
 ➡️ Använd köp eller avbeställningsfrekvensen som framgångsmått.
 
-![](assets/journey-optimize-experiment-uc-frequency.png)
+![Experimentera med meddelandefrekvens och testa ett e-postmeddelande jämfört med tre e-postmeddelanden](assets/journey-optimize-experiment-uc-frequency.png)
 
 +++
 
@@ -151,7 +151,7 @@ Jämför en 24-timmars väntan jämfört med en 72-timmars väntan före en uppf
 
 ➡️ Använd genomklickningsfrekvensen eller intäkterna som framgångsmått.
 
-![](assets/journey-optimize-experiment-uc-wait.png)
+![Väntetidsexperiment där 24-timmarsversionen jämförs med 72-timmars fördröjning](assets/journey-optimize-experiment-uc-wait.png)
 
 +++
 
@@ -182,21 +182,21 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 1. Välj **[!UICONTROL Targeting rule]** i listrutan **[!UICONTROL Method]**.
 
-   ![](assets/journey-optimize-targeting.png){width=60%}
+   ![Markering av målregel i aktiviteten Optimera](assets/journey-optimize-targeting.png){width=60%}
 
 1. Klicka på **[!UICONTROL Create targeting rule]**.
 
 1. Klicka på **[!UICONTROL Create rule]** > **[!UICONTROL Create new]** och använd regelverktyget för att definiera villkoren.
 
-   ![](assets/journey-targeting-create-rule.png){width=100%}
+   ![Gränssnitt för regelbyggaren för att skapa målobjekt](assets/journey-targeting-create-rule.png){width=100%}
 
    Du kan till exempel definiera en regel för Guldmedlemmar i bonusprogrammet (`loyalty.status.equals("Gold", false)`) och en regel för de andra medlemmarna (`loyalty.status.notEqualTo("Gold", false)`).
 
-   ![](assets/journey-targeting-rule.png)
+   ![Regel för lojalitetsstatus för målgruppsanpassning för Guld- och andra medlemmar](assets/journey-targeting-rule.png)
 
 1. Du kan också klicka på **[!UICONTROL Create rule]** > **[!UICONTROL Select rule]** för att välja en befintlig målinriktningsregel som har skapats på menyn **[!UICONTROL Rules]**. [Läs mer](../experience-decisioning/rules.md)
 
-   ![](assets/journey-targeting-select-rule.png){width=70%}
+   ![Välj befintlig målinriktningsregel på Regler-menyn](assets/journey-targeting-select-rule.png){width=70%}
 
    I det här fallet kopieras formeln som utgör regeln helt enkelt till reseaktiviteten. Eventuella senare ändringar av den regeln från menyn **[!UICONTROL Rules]** påverkar inte kopian av resan.
 
@@ -208,7 +208,7 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 1. När du har lagt till en regel kan du fortfarande ändra den. Välj **[!UICONTROL Edit inline]** om du vill uppdatera den när du är i farten med regelverktyget eller **[!UICONTROL Select rule]** om du vill hämta en annan befintlig regel.
 
-   ![](assets/journey-targeting-modify-rule.png){width=100%}
+   ![Redigera infogade regler eller välj regelalternativ för att ändra målarregler](assets/journey-targeting-modify-rule.png){width=100%}
 
    >[!NOTE]
    >
@@ -224,17 +224,17 @@ Följ stegen nedan för att konfigurera målinriktning på en resa.
 
 1. Tillbaka på resan, släpp specifika åtgärder för att anpassa varje bana. Skapa till exempel ett e-postmeddelande med personliga erbjudanden för Gold Loyalty-medlemmar och en SMS-påminnelse för alla andra medlemmar.
 
-   ![](assets/journey-targeting-paths.png)
+   ![Resesökvägar med e-post för guldmedlemmar och SMS för andra](assets/journey-targeting-paths.png)
 
 1. Om du valde alternativet **[!UICONTROL Enable fallback content]** när du definierade regelinställningarna definierar du en eller flera åtgärder för den återställningssökväg som lades till automatiskt.
 
-   ![](assets/journey-targeting-fallback.png){width=70%}
+   ![Konfiguration av återställningssökväg för okvalificerade profiler](assets/journey-targeting-fallback.png){width=70%}
 
 1. Du kan även använda **[!UICONTROL Add an alternative path in case of a timeout or an error]** för att definiera en alternativ åtgärd om det uppstår problem. [Läs mer](using-the-journey-designer.md#paths)
 
 1. Utforma lämpligt innehåll för varje åtgärd som motsvarar varje grupp som definieras av målarregelinställningarna. Du kan smidigt navigera mellan olika innehåll för varje åtgärd.
 
-   ![](assets/journey-targeting-design.png)
+   ![Panelen Innehållsdesign för riktade regelåtgärder](assets/journey-targeting-design.png)
 
    I det här exemplet skapar du ett e-postmeddelande med specialerbjudanden för guldmedlemmar och en SMS-påminnelse för de andra medlemmarna.
 
@@ -254,7 +254,7 @@ Gold-status som lojalitetsmedlemmar kan få personaliserade erbjudanden via e-po
 
 <!--➡️ Use the revenue per profile or conversion rate as the optimization metric.-->
 
-![](assets/journey-optimize-targeting-uc-segment.png)
+![Segmentspecifika kanaler som riktar sig till Guldmedlemmar med e-post och andra med SMS](assets/journey-optimize-targeting-uc-segment.png)
 
 +++
 
@@ -264,7 +264,7 @@ Kunder som har öppnat ett e-postmeddelande men inte klickat kan få ett push-me
 
 <!--➡️ Use the click-through rate or downstream conversions as the optimization metric.-->
 
-![](assets/journey-optimize-targeting-uc-behavior.png)
+![Beteendebaserad målinriktning för e-postinteraktion med push- eller SMS-reserv](assets/journey-optimize-targeting-uc-behavior.png)
 
 +++
 
@@ -274,7 +274,7 @@ Kunder som nyligen har köpt kan gå in på en kort&quot;Tack + Korsförsäljnin
 
 <!--➡️ Use the repeat purchase rate or engagement rate as the optimization metric.-->
 
-![](assets/journey-optimize-targeting-uc-purchase.png)
+![Målgruppsinriktning för inköpshistorik med korsförsäljningssökväg för köpare och vårdssökväg för icke-köpare](assets/journey-optimize-targeting-uc-purchase.png)
 
 +++
 
@@ -282,7 +282,7 @@ Kunder som nyligen har köpt kan gå in på en kort&quot;Tack + Korsförsäljnin
 
 Villkor är en typ av [målgruppsregler](#targeting) som gör att du kan definiera hur enskilda personer ska gå igenom din resa genom att skapa flera sökvägar baserat på specifika kriterier.
 
-![](assets/journey-condition.png)
+![Villkorsaktivitet i resan skapar flera sökvägar baserat på villkor](assets/journey-condition.png)
 
 Lär dig definiera ett villkor i [det här avsnittet](conditions.md).
 

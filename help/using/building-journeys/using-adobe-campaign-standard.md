@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, integrering, standard, kampanj, ACS
 exl-id: 50565cd9-7415-4c6a-9651-24fefeded3f5
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '941'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ För var och en av dessa kanaler väljer du en Adobe Campaign Standard Transacti
 >
 >Campaign Standard transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Optimizer. Om händelsen publiceras men meddelandet inte visas, visas den inte i Journey Optimizer-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det, visas det i Journey Optimizer-gränssnittet, men det går inte att använda det.
 
-![](assets/journey59.png)
+![Adobe Campaign Standard åtgärdskonfiguration under resan](assets/journey59.png)
 
 Du kan använda en händelsemall (kallas även realtid) eller en transaktionsmall för profiler.
 
@@ -46,7 +46,7 @@ Du kan använda en händelsemall (kallas även realtid) eller en transaktionsmal
 
 När du väljer en mall visas alla fält som förväntas i meddelandenyttolasten i aktivitetskonfigurationsrutan under **[!UICONTROL Address]** och **[!UICONTROL Personalization Data]**. Du måste mappa vart och ett av dessa fält till det fält som du vill använda, antingen från händelsen eller från datakällan. Du kan också använda den avancerade uttrycksredigeraren för att skicka ett värde manuellt, utföra databearbetning på hämtad information (t.ex. konvertera en sträng till versaler) eller använda funktioner som &quot;if, then, else&quot;. Läs [den här sidan](expression/expressionadvanced.md).
 
-![](assets/journey60.png)
+![Campaign Standard gränssnitt för val av meddelandemall](assets/journey60.png)
 
 ## E-post och SMS {#section_asc_51g_nhb}
 
@@ -70,7 +70,7 @@ Du kan enkelt definiera var **[!UICONTROL Address]** eller **[!UICONTROL Persona
 
 Det här är de fält som systemet behöver för att kunna skicka meddelandet. För en e-postmall är det e-postadressen. För ett SMS är det mobiltelefonnumret.
 
-![](assets/journey61.png)
+![Konfigurering av meddelandeparametrar för Campaign Standard-integrering](assets/journey61.png)
 
 **[!UICONTROL Personalization Data]**
 
@@ -80,7 +80,7 @@ Det här är de fält som systemet behöver för att kunna skicka meddelandet. F
 
 Detta är de fält som förväntas av Adobe Campaign Standard-meddelandet. Dessa fält kan användas för att anpassa meddelandet, använda villkorsstyrd formatering eller välja en viss meddelandevariant.
 
-![](assets/journey62.png)
+![Fältmappning mellan Journey Optimizer och Campaign Standard](assets/journey62.png)
 
 ## Push {#section_im3_hvf_nhb}
 
@@ -88,7 +88,7 @@ Innan du använder push-aktiviteten måste din mobilapp konfigureras tillsammans
 
 Först måste du välja en mobilapp i listrutan och ett transaktionsmeddelande.
 
-![](assets/journey62bis.png)
+![Avancerad uttrycksredigerare för Campaign Standard-parametermappning](assets/journey62bis.png)
 
 Det finns två kategorier: **[!UICONTROL Target]** och **[!UICONTROL Personalization Data]**.
 

@@ -3,9 +3,9 @@ title: Använd tilläggsidentifierare under resor
 description: Lär dig hur du använder tilläggsidentifierare under resor.
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
 version: Journey Orchestration
-source-git-commit: 62c0c1f46b5bd575102d9f27037cb6add1355ba2
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1404'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Följ de här stegen om du vill använda en extra identifierare i en händelseut
 
    1. Markera identifieraren som **[!UICONTROL Identity]**.
 
-      ![](assets/supplemental-ID-schema.png)
+      ![Schemakonfiguration med tilläggsfältgrupp för identifierare](assets/supplemental-ID-schema.png)
 
       >[!IMPORTANT]
       >
@@ -105,7 +105,7 @@ Följ de här stegen om du vill använda en extra identifierare i en händelseut
 
    1. Markera alternativet **[!UICONTROL Use supplemental identifier]** på skärmen för händelsekonfiguration.
 
-      ![](assets/supplemental-ID-event.png)
+      ![Händelsekonfiguration med val av extra identifierarnamnområde](assets/supplemental-ID-event.png)
 
    1. Använd uttrycksredigeraren för att välja det attribut du markerade som tilläggs-ID.
 
@@ -119,7 +119,7 @@ Följ de här stegen om du vill använda en extra identifierare i en händelseut
 
    Dra den konfigurerade händelsen till arbetsytan för resan. Det kommer att utlösa resepost baserat på både profil-ID och det kompletterande ID:t.
 
-   ![](assets/supplemental-ID-journey.png)
+   ![Resa med tilläggsidentifierare för händelseutlösare](assets/supplemental-ID-journey.png)
 
 >[!TAB Läs målgruppsresan]
 
@@ -131,7 +131,7 @@ Följ de här stegen för att använda en extra identifierare i en läsande mål
 
    1. Markera identifieraren som **[!UICONTROL Identity]**.
 
-      ![](assets/supplemental-ID-schema-profile.png)
+      ![Profilschema med extra identifierarfält konfigurerat](assets/supplemental-ID-schema-profile.png)
 
       >[!IMPORTANT]
       >
@@ -145,7 +145,7 @@ Följ de här stegen för att använda en extra identifierare i en läsande mål
 
     1. Navigate to the **[!UICONTROL Configuration]** / **[!UICONTROL Data Sources]** menu, then locate the "ExperiencePlatformDataSource" data source.
 
-        ![](assets/supplemental-ID-data-source.png)
+        ![Data source configuration with supplemental identifier mapping](assets/supplemental-ID-data-source.png)
 
     1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).-->
 
@@ -155,7 +155,7 @@ Följ de här stegen för att använda en extra identifierare i en läsande mål
 
    1. Aktivera alternativet **[!UICONTROL Use supplemental identifier]** i rutan för aktivitetsegenskaper.
 
-      ![](assets/supplemental-ID-read-audience.png)
+      ![Läs målgruppsaktivitet med konfiguration för extra identifierare](assets/supplemental-ID-read-audience.png)
 
    1. I fältet **[!UICONTROL Supplement identifier]** använder du uttrycksredigeraren för att välja det attribut du markerade som tilläggs-ID.
 
@@ -171,7 +171,7 @@ Följ de här stegen för att använda en extra identifierare i en läsande mål
 
 Använd uttrycksredigeraren och personaliseringsredigeraren för att referera till attribut för den kompletterande identifieraren för personalisering eller villkorslogik. Attribut är tillgängliga på menyn **[!UICONTROL Contextual attributes]**.
 
-![](assets/supplemental-ID-perso.png)
+![Personalization-redigeraren visar ytterligare identifierarfält för innehåll](assets/supplemental-ID-perso.png)
 
 För händelseutlösta resor om du arbetar med matriser (t.ex. flera recept eller policyer) använder du en formel för att extrahera specifika element.
 
@@ -246,4 +246,4 @@ I en objektmatris med det kompletterande ID:t `bookingNum` och ett attribut på 
 
 Lär dig hur du aktiverar och använder en extra identifierare i [!DNL Adobe Journey Optimizer].
 
->[!VIDEO](https://video.tv.adobe.com/v/3464796?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)

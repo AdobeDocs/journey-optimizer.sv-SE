@@ -10,9 +10,9 @@ level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
 version: Journey Orchestration
-source-git-commit: 7a83bb558559ba814ed9431bb85a68929a276ed5
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1247'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
 
 1. Öppna kategorin **[!UICONTROL Events]** och släpp en **[!UICONTROL Audience Qualification]**-aktivitet på arbetsytan.
 
-   ![](assets/segment5.png)
+   ![Publikkvalificeringshändelse på resepaletten](assets/segment5.png)
 
 1. Lägg till en **[!UICONTROL Label]** i aktiviteten. Det här steget är valfritt.
 
@@ -56,19 +56,19 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
    >
    >Du kan anpassa kolumnerna som visas i listan och sortera dem.
 
-   ![](assets/segment6.png)
+   ![Listruta för val av publik för konfiguration av kvalificeringshändelse](assets/segment6.png)
 
    När målgruppen har lagts till kan du med knappen **[!UICONTROL Copy]** kopiera dess namn och ID:
 
    `{"name":"Loyalty membership","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
-   ![](assets/segment-copy.png)
+   ![Kopiera-knapp för att kopiera målgruppsnamn och ID i JSON-format](assets/segment-copy.png)
 
 1. I fältet **[!UICONTROL Behaviour]** väljer du om du vill lyssna på målgruppsinkomster, utgångar eller både och.
 
    >[!NOTE]
    >
-   >**[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** målgruppsdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >**[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** målgruppsdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan. Som standard är fältet förifyllt med det senast använda namnutrymmet.
 
@@ -76,7 +76,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
    >
    >Du kan bara välja ett personbaserat ID-namnutrymme. Om du har definierat ett namnområde för en uppslagstabell (till exempel: ProductID-namnområde för en produktsökning), är det inte tillgängligt i listrutan **Namespace**.
 
-   ![](assets/segment7.png)
+   ![Namnområdesval för publikens kvalificeringsidentitet](assets/segment7.png)
 
 Nyttolasten innehåller följande kontextinformation som du kan använda i villkor och åtgärder:
 
@@ -88,7 +88,7 @@ När du använder uttrycksredigeraren i ett villkor eller en åtgärd som följe
 
 Se [Villkorsaktivitet](../building-journeys/condition-activity.md#about_condition).
 
-![](assets/segment8.png)
+![Konfigurationen av målgruppsinkomst och -avslutning i händelseinställningarna](assets/segment8.png)
 
 En ny resa som innehåller en **publikkvalificeringshändelse** tas i bruk tio minuter efter att du har publicerat den. Det här tidsintervallet motsvarar cacheuppdateringsintervallet för den dedikerade tjänsten. Du måste därför vänta tio minuter innan du kan använda den här resan.
 
@@ -110,7 +110,7 @@ När man använder sig av Audience Qualification för direktuppspelade målgrupp
 
 Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för att skicka händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md)
 
-Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
+Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 ### Så här undviker du överbelastningar {#overloads-speed-segment-qualification}
 
@@ -118,13 +118,13 @@ Här följer några tips för att undvika att överbelasta system som används i
 
 * Använd inte en gruppmålgrupp omedelbart efter att den har skapats i en **[!UICONTROL Audience Qualification]**-aktivitet. På så sätt undviks den första beräkningstopp. En gul varning visas på arbetsytan om du ska använda en målgrupp som aldrig har beräknats.
 
-  ![](assets/segment-error.png)
+  ![Felmeddelande när målgruppen inte hittas i Adobe Experience Platform](assets/segment-error.png)
 
-* Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html?lang=sv-SE){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök använder du en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
+* Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök använder du en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
 
 * Innan målgruppen används i en produktionsresa bör man utvärdera den mängd individer som är kvalificerade för denna målgrupp varje dag. Det gör du genom att kontrollera menyn **[!UICONTROL Audience]**, öppna målgruppen och titta på diagrammet **[!UICONTROL Profiles over time]**.
 
-  ![](assets/segment-overload.png)
+  ![Varningsmeddelande när målgruppen har för många händelser för realtidsbearbetning](assets/segment-overload.png)
 
 Läs mer om hastighetsbegränsningar och dataflöde i [det här avsnittet](entry-management.md#profile-entrance-rate).
 
@@ -156,7 +156,7 @@ Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompe
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} gäller även för Adobe Journey Optimizer.
+>[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även för Adobe Journey Optimizer.
 
 
 
@@ -164,4 +164,4 @@ Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompe
 
 Lär dig mer om tillämpliga användningsfall för målgruppskvalificeringsresor i den här videon. Lär dig hur du bygger en resa med målgruppskvalifikation och vilka bästa metoder som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446208?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)

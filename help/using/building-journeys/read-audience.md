@@ -10,9 +10,9 @@ level: Intermediate
 keywords: aktivitet, resa, läsning, målgrupp, plattform
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2509'
 ht-degree: 0%
 
 ---
@@ -56,21 +56,21 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
 
    >[!NOTE]
    >
-   >Dessutom kan du rikta in dig på Adobe Experience Platform-målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförda från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE#import-audience){target="_blank"}.
+   >Dessutom kan du rikta in dig på Adobe Experience Platform-målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md) eller [överförda från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
 
    Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
-   ![](assets/read-segment-selection.png)
+   ![Gränssnitt för målgruppsval som visar tillgängliga Adobe Experience Platform-målgrupper](assets/read-segment-selection.png)
 
    När målgruppen har lagts till kan du med knappen **[!UICONTROL Copy]** kopiera dess namn och ID:
 
    `{"name":"Luma app opening and checkout","id":"8597c5dc-70e3-4b05-8fb9-7e938f5c07a3"}`
 
-   ![](assets/read-segment-copy.png)
+   ![Kopiera-knapp för att kopiera målgruppsnamn och ID i JSON-format](assets/read-segment-copy.png)
 
    >[!NOTE]
    >
-   >Det är bara de personer som har **Realiserad**-målgruppsdeltagarstatus som går in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Det är bara de personer som har **Realiserad**-målgruppsdeltagarstatus som går in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. I fältet **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera personerna. Som standard är fältet förifyllt med det senast använda namnutrymmet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
 
@@ -90,7 +90,7 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
 
 * Vi rekommenderar att du bara använder gruppmålgrupper i en **Läs målgrupp** -aktivitet. Detta ger en tillförlitlig och enhetlig räkning för de målgrupper som används under en resa. Läsarna är utformade för att gruppbearbetas. Om ditt användningsfall behöver realtidsdata använder du aktiviteten **[Målgruppskvalificering](audience-qualification-events.md)**.
 
-* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
+* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
 
 * Concurrent Read Audience Limit per Organization: Varje organisation kan köra upp till fem Read Audience-instanser samtidigt. Detta omfattar både schemalagda körningar och körningar som triggas av affärshändelser, över alla sandlådor och resor. Den här gränsen tillämpas för att säkerställa en rättvis och balanserad resursallokering för alla organisationer.
 
@@ -107,7 +107,7 @@ Guardrutor för aktiviteten **Läs målgrupp** visas på [den här sidan](../sta
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} gäller även för Adobe Journey Optimizer.
+>[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även för Adobe Journey Optimizer.
 
 
 ### Hantera profilinträde under resan
@@ -165,15 +165,15 @@ Som standard är resan konfigurerad att köras en gång. Följ stegen nedan för
 
 1. Välj **[!UICONTROL Read audience]** i aktivitetsegenskaperna för **[!UICONTROL Edit journey schedule]**.
 
-   ![](assets/read-segment-schedule.png)
+   ![Redigera knappen för transportschema i Läsa egenskaper för målgruppsaktivitet](assets/read-segment-schedule.png)
 
 1. Resans egenskaper visas. I listrutan **[!UICONTROL Scheduler type]** väljer du hur ofta du vill att resan ska köras.
 
-   ![](assets/read-segment-schedule-list.png)
+   ![Listruta av schemaläggartyp med frekvensalternativ: en gång, dagligen, varje vecka, varje månad](assets/read-segment-schedule-list.png)
 
 För återkommande resor finns det specifika alternativ som hjälper dig att hantera inmatningen av profiler på resan. Expandera avsnitten nedan om du vill ha mer information om varje alternativ.
 
-![](assets/read-audience-options.png)
+![Läs återkommande målgruppsalternativ: Inkrementell läsning, Tvinga återinträde, Utlös efter batch](assets/read-audience-options.png)
 
 +++**[!UICONTROL Incremental read]**
 
@@ -239,13 +239,13 @@ Med aktiviteten **[!UICONTROL Read Audience]** kan du testa resan med en enhetsp
 
 Det gör du genom att aktivera testläget.
 
-![](assets/read-segment-test-mode.png)
+![Gränssnitt för testläge för aktiviteten Läs publik med val av testprofil](assets/read-segment-test-mode.png)
 
 Konfigurera och kör testläget som vanligt. [Lär dig testa en resa](testing-the-journey.md).
 
 När testet har körts kan du med knappen **[!UICONTROL Show logs]** se testresultaten. Mer information finns i [det här avsnittet](testing-the-journey.md#viewing_logs)
 
-![](assets/read-segment-log.png)
+![Testloggar som visar målgruppskörningsresultat och profilflöde](assets/read-segment-log.png)
 
 När testerna har slutförts kan du publicera din resa (se [Publicera resan](publish-journey.md)). Enskilda personer som tillhör målgruppen kommer att gå in på resan det datum/den tid som anges i avsnittet med egenskaper **[!UICONTROL Scheduler]** för resan.
 
@@ -273,7 +273,7 @@ Segmenteringen kan baseras på:
 * en tid, till exempel: är det morgon i personens tidszon?
 * en algoritm som delar den målgrupp som flödar i resan baserat på en procentandel, till exempel: 90 % - 10 % för att utesluta en kontrollgrupp
 
-![](assets/read-segment-audience1.png)
+![Villkorsaktivitet för målgruppssegmentering i sökvägar i VIP och utanför VIP](assets/read-segment-audience1.png)
 
 >[!NOTE]
 >
@@ -287,7 +287,7 @@ Med samma **villkorsaktivitet** som används för segmentering (se ovan) kan du 
 
 Detta kan inträffa direkt efter det att målgruppen har hämtats, för att räkna antalet personer eller längs en flerstegsresa.
 
-![](assets/read-segment-audience2.png)
+![Resväg med exkluderingsgren med slutaktivitet](assets/read-segment-audience2.png)
 
 **Union**
 
@@ -295,7 +295,7 @@ Med Resor kan du skapa N-grenar och förena dem efter en segmentering. Det inneb
 
 Om du till exempel har följt en annan upplevelse under tio dagar på en resa kan VIP- och icke-VIP-kunder återgå till samma resa. Efter en union kan du dela upp publiken igen genom att utföra en segmentering eller ett exkluderingsmoment.
 
-![](assets/read-segment-audience3.png)
+![Resebanor som sammanfogas igen efter segmentering med union](assets/read-segment-audience3.png)
 
 ## Försök igen {#read-audience-retry}
 
@@ -307,4 +307,4 @@ Om du till exempel har följt en annan upplevelse under tio dagar på en resa ka
 
 Förstå tillämpliga användningsfall för en resa som triggas av läsmålgruppsaktiviteten. Lär dig hur du bygger batchbaserade resor och vilka metodtips som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430367?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424997?quality=12)

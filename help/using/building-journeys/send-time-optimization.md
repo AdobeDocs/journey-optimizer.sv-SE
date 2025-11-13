@@ -10,9 +10,9 @@ level: Intermediate
 keywords: sändningstid, skicka, meddelande, optimering, resa, AI, intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
 version: Journey Orchestration
-source-git-commit: c4f6b7754255ce3bf0229702b10955abf9843548
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Sändningsoptimering är endast tillgängligt för Journey Optimizer inbyggda å
 
 Använd optimering av sändningstid för ett e-postmeddelande eller push-åtgärd genom att aktivera alternativet för optimering av sändningstid från åtgärdsparametrarna.
 
-![](assets/jo-message5.png)
+![Växla optimering av sändningstid i e-postkanalskonfiguration](assets/jo-message5.png)
 
 Optimering av sändningstid ska inte användas för brådskande, tidskänsliga operativa meddelanden, till exempel en orderbekräftelse, ett meddelande om lösenordsåterställning eller ett meddelande om ändring av flygport. Optimering för sändningstid är bäst när det gäller mindre brådskande marknadsföringsmeddelanden, t.ex. en veckoannons, kampanjinformation för en ny produkt eller information om en månadsförsäljning.
 
@@ -80,11 +80,11 @@ Med optimering för sändningstid kan man förutse för varje timme i veckan, f�
 
 Dessa prognoser vägs och kombineras med hjälp av en bayesisk metod, vilket ger en&quot;värmekarta&quot; för varje mätvärde (e-postöppning, e-postklick och push-öppning) för varje kund, som anger de timmar i veckan som kontaktar användaren mest och minst sannolikt resulterar i önskat engagemangsresultat (öppna/klicka), vilket visas i följande exempelheatmap:
 
-![](assets/heatmap-1.png)
+![Åtagandeheatmap som visar optimala sändningstider för e-post per dag och timme](assets/heatmap-1.png)
 
 Om en användare med ovanstående sannolikhet för meddelande anges som mål på onsdagen kl. 9 och optimering av sändningstid aktiverat och en maximal väntetid på 7 timmar, kommer den valda sändningstiden för meddelandet att vara 12.00:
 
-![](assets/heatmap-2.png)
+![Åtagandeheatmap med detaljerade timmars-för-timma-optimeringsdata](assets/heatmap-2.png)
 
 ## Utbildning och poänginformation om modellerna för optimering av sändningstid  {#model-send-time}
 

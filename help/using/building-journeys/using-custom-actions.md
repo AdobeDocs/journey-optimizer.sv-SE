@@ -10,10 +10,10 @@ level: Intermediate
 keywords: åtgärd, anpassad, API, resa, konfiguration, tjänst
 exl-id: 2b1b3613-3096-43ec-a860-600dda1d83b2
 version: Journey Orchestration
-source-git-commit: 221368c7766e942143639fcd554b32f9de5ab0c9
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 17%
+source-wordcount: '437'
+ht-degree: 16%
 
 ---
 
@@ -60,7 +60,7 @@ Den sammanfogade URL:en har följande format:
 
 `https://xxx.yyy.com:8080/somethingstatic/`\&lt;ID>`/messages`
 
-![](assets/journey-custom-action-url.png)
+![Anpassad URL för åtgärd med dynamisk parametermappning](assets/journey-custom-action-url.png)
 
 ### Huvuden och frågeparametrar {#headers}
 
@@ -68,7 +68,7 @@ Avsnittet **[!UICONTROL URL Configuration]** visar de dynamiska huvud- och fråg
 
 Om du vill ange värdet för dynamiska huvud- och frågeparameterfält klickar du i fältet eller på pennikonen och markerar önskat fält.
 
-![](assets/journey-dynamicheaderfield.png)
+![Konfiguration av dynamiskt rubrikfält i anpassad åtgärd](assets/journey-dynamicheaderfield.png)
 
 ## Åtgärdsparametrar
 

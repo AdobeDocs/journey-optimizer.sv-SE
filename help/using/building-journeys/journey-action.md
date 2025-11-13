@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
 version: Journey Orchestration
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -50,17 +50,17 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
 
 1. Välj den inbyggda kanalaktivitet som du vill använda under resan.
 
-   ![](assets/journey-action-type-cbe.png)
+   ![Listruta med åtgärdstyp som visar kanalåtgärd och alternativ för anpassade åtgärder](assets/journey-action-type-cbe.png)
 
 1. Lägg till en etikett till åtgärden och välj **[!UICONTROL Configure action]**.
 
-   ![](assets/journey-action-configure.png){width="80%"}
+   ![Åtgärdsaktivitetskonfigurationsfönster med etikett- och beskrivningsfält](assets/journey-action-configure.png){width="80%"}
 
 1. Du dirigeras till fliken **[!UICONTROL Actions]** på konfigurationsskärmen för reseåtgärder.
 
    Välj den konfiguration som ska användas för den valda kanalen.
 
-   ![](assets/journey-action-actions-tab.png)
+   ![Fliken Åtgärder på menyn Administration som visar anpassade åtgärder och Adobe-åtgärder](assets/journey-action-actions-tab.png)
 
 1. Om du har valt en inkommande kanal kan du lägga till flera åtgärder. [Läs mer](#multi-action)
 
@@ -104,7 +104,7 @@ Snabba leveranser används när fördröjningar i meddelandeleverans är affärs
 
 Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
@@ -159,15 +159,15 @@ Följ stegen nedan för att definiera flera inkommande åtgärder i en enda åtg
 
 1. Välj **[!UICONTROL Multi action]** som åtgärdstyp.
 
-   ![](assets/journey-multi-action.png)
+   ![Flerfunktionsaktivitet på resepaletten under Orchestration](assets/journey-multi-action.png)
 
 1. Lägg till en etikett om det behövs och välj **[!UICONTROL Configure action]**.
 
-   ![](assets/journey-multi-action-configure.png){width="60%"}
+   ![Fleråtgärdskonfigurationsruta med etikett- och beskrivningsfält](assets/journey-multi-action-configure.png){width="60%"}
 
 1. Du dirigeras till fliken **[!UICONTROL Actions]** på konfigurationsskärmen för reseåtgärder.
 
-   ![](assets/journey-multi-action-configuration.png){width="70%"}
+   ![Fleråtgärdskonfiguration med en lista över åtgärder som ska utföras](assets/journey-multi-action-configuration.png){width="70%"}
 
 1. Välj en inkommande åtgärd (**Kodbaserad upplevelse**, **Meddelande i appen**, **Innehållskort** eller **webb**) i avsnittet **[!UICONTROL Actions]**.
 
@@ -175,7 +175,7 @@ Följ stegen nedan för att definiera flera inkommande åtgärder i en enda åtg
 
 1. Använd knappen **[!UICONTROL Add action]** för att välja en annan inkommande åtgärd från listrutan.
 
-   ![](assets/journey-multi-action-add.png){width="80%"}
+   ![Lägg till åtgärdsknapp om du vill inkludera ytterligare åtgärder i en multiaktionsaktivitet](assets/journey-multi-action-add.png){width="80%"}
 
 1. Fortsätt på samma sätt om du vill lägga till fler åtgärder. Du kan lägga till upp till 10 inkommande åtgärder i en åtgärdsgrupp för resan.
 

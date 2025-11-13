@@ -10,9 +10,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '618'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Steg för att publicera en resa beskrivs nedan:
    >
    > Om din resa omfattas av en policy för godkännande måste du begära godkännande för att publicera din resa. [Läs mer](../test-approve/gs-approval.md)
 
-   ![](assets/journeyuc1_18.png)
+   ![Knappen Publicera i resans verktygsfält för att aktivera resan](assets/journeyuc1_18.png)
 
 När resan publiceras är den i **skrivskyddat**-läge. I skrivskyddat läge kan du bara ändra aktivitetsetiketter och beskrivningar, kundens namn och resans beskrivning. Om du behöver göra ytterligare ändringar i en publicerad resa skapar du [en ny version](journey-ui.md#journey-filter) av din resa.
 
@@ -52,7 +52,7 @@ När du avbryter en resa stoppas den permanent. Alla personer som passerar genom
 
 I reselistan visas alla reseversioner med versionsnumret. När du söker efter en resa visas de senaste versionerna högst upp i listan första gången programmet öppnas. Sedan kan du definiera den sortering som du vill ha så att programmet behåller den som en användarinställning. Färdens version visas också överst i reseupplagans gränssnitt, ovanför arbetsytan.
 
-![](assets/journeyversions1.png)
+![Reseversionslista med publicerade versioner och utkastversioner](assets/journeyversions1.png)
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Om du behöver ändra till en direktresa skapar du en ny version av din resa. S�
 
 1. Öppna den senaste versionen av din liveresa, klicka på **[!UICONTROL Create a new version]** och bekräfta.
 
-   ![](assets/journeyversions2.png)
+   ![Skapa en ny versionsdialogruta för duplicering av resa](assets/journeyversions2.png)
 
    >[!NOTE]
    >
@@ -88,4 +88,4 @@ När du publicerar en ny version av en resa avslutas den tidigare versionen auto
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427940?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)

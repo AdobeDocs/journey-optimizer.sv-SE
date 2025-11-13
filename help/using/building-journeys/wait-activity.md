@@ -10,7 +10,7 @@ level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 version: Journey Orchestration
-source-git-commit: 5eddbb1f9ab53f1666ccd8518785677018e10f6f
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 3%
@@ -69,7 +69,7 @@ Välj typen **Varaktighet** om du vill ange den relativa väntetiden innan näst
 
 Select the date for the execution of the next activity.
 
-![](assets/journey56.png)
+![Wait activity configuration panel with duration and fixed date options](assets/journey56.png)
 
 -->
 

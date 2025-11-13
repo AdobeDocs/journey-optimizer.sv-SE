@@ -10,10 +10,10 @@ level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, meddelanden, resa, kanal, händelser, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 1%
+source-wordcount: '745'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 I det här avsnittet visas ett användningsexempel som kombinerar en Läs publik, en händelse, reaktionshändelser och e-post/push-meddelanden.
 
-![](assets/jo-uc1.png)
+![Enkelt reseflöde med Läs publik, Vänta och e-postaktiviteter](assets/jo-uc1.png)
 
 ## Beskrivning av användningsfallet
 
@@ -52,7 +52,7 @@ Mer information om målgrupper finns på [den här sidan](../audience/about-audi
 1. Dra och släpp önskade fält från den vänstra rutan till arbetsytan i mitten och konfigurera dem efter behov. I det här exemplet använder du attributfälten **City** och **Birth year** .
 1. Klicka på **[!UICONTROL Save]**.
 
-   ![](assets/add-attributes.png)
+   ![Panelen Ytterligare attribut för att välja anrikningsdata](assets/add-attributes.png)
 
 Publiken är nu skapad och redo att användas under resan. Med en **Läs målgrupp**-aktivitet kan alla personer som tillhör målgruppen komma in på resan.
 
@@ -76,7 +76,7 @@ Använd en [regelbaserad händelse](../event/about-events.md) för detta.
 
 1. Klicka på **[!UICONTROL Save]**.
 
-   ![](assets/jo-uc2.png)
+   ![Resa med villkorsaktivitet som grenar in i guldmedlemmar och andra sökvägar](assets/jo-uc2.png)
 
 Händelsen är nu konfigurerad och klar att användas under resan. Med motsvarande händelseaktivitet kan en åtgärd utlösas varje gång en kund gör ett köp.
 
@@ -84,11 +84,11 @@ Händelsen är nu konfigurerad och klar att användas under resan. Med motsvaran
 
 1. Starta resan med aktiviteten **Läs målgrupp**. Välj den målgrupp som skapats tidigare. Alla personer som tillhör målgruppen deltar i resan.
 
-   ![](assets/jo-uc4.png)
+   ![Kontroll av väderförhållanden om temperaturen är under 50 grader](assets/jo-uc4.png)
 
 1. Släpp en **e-postaktivitet** och definiera innehållet i det&quot;första meddelandet&quot;. Det här meddelandet skickas till alla personer på resan. Läs i det här [avsnittet](../email/create-email.md) om du vill veta mer om hur du konfigurerar och utformar ett e-postmeddelande.
 
-   ![](assets/jo-uc5.png)
+   ![Fullständig väderbaserad resa med temperaturförhållanden och e-poståtgärder](assets/jo-uc5.png)
 
 1. Lägg till en **reaktion**-händelse och välj **E-post öppnad**. Händelsen utlöses när en person som tillhör målgruppen öppnar e-postmeddelandet.
 

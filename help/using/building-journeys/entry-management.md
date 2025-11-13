@@ -9,9 +9,9 @@ level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1123'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Som standard tillåter resor återinträde. När alternativet **Tillåt återint
 When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. 
 -->
 
-![](assets/journey-re-entrance.png)
+![Inställningarna för återinträde växlar mellan resans egenskaper](assets/journey-re-entrance.png)
 
 Efter återinträdesperioden kan profilerna återkomma till resan. För att undvika detta och helt inaktivera återinträde för dessa profiler kan du lägga till ett villkor som testar om profilen redan har angetts eller inte, med hjälp av profil- eller målgruppsdata.
 
@@ -94,7 +94,7 @@ Business events follow reentrance rules in the same way as for unitary events. I
 
 Aktivera motsvarande alternativ i avsnittet **i resans egenskaper om du vill tillåta flera körningar av affärshändelser i** Affärsresor **[!UICONTROL Execution]**.
 
-![](assets/business-entry.png)
+![Alternativ för hantering av affärshändelsepost i resekonfigurationen](assets/business-entry.png)
 
 När det gäller affärshändelser återanvänds målgruppsdata som hämtas vid den första exekveringen under en timmes tid för en viss resa.
 

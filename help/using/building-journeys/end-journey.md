@@ -9,9 +9,9 @@ level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ När du skapar en resa visas sluttaggen i slutet av varje bana. Den här noden k
 
 Om resan har flera sökvägar rekommenderar vi att du lägger till en etikett i varje ände för att göra rapporter enklare att läsa. Läs mer om [reserapporter](../reports/live-report.md).
 
-![](assets/journey-end.png)
+![Knappen Slutåtgärd för resan i verktygsfältet för resan](assets/journey-end.png)
 
 ## Stänga en resa {#close-journey}
 
@@ -69,14 +69,14 @@ Genom att stänga en resa manuellt försäkrar du dig om att kunder som redan ha
 
 Om du vill stänga en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** som finns till höger om resenamnet och väljer **[!UICONTROL Close to new entrances]**.
 
-![](assets/journey-finish-quick-action.png)
+![Slutför åtgärdslistrutan i snabbåtgärdsmenyn för att avsluta resan](assets/journey-finish-quick-action.png)
 
 Du kan även:
 
 1. Klicka på den resa du vill stänga i listan **[!UICONTROL Journeys]**.
 1. Klicka på nedpilen i det övre högra hörnet.
 
-   ![](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
+   ![Menyn Slutalternativ som visar slutresan och alternativa åtgärder](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Close to new entrances]** och bekräfta i dialogrutan.
 
@@ -89,14 +89,14 @@ Om ni behöver stoppa alla enskilda personers framsteg på resan kan ni stoppa d
 
 Du kan till exempel stoppa en resa om en marknadsförare upptäcker att resan riktar sig mot fel målgrupp eller en anpassad åtgärd som ska leverera meddelanden inte fungerar korrekt. Om du vill stoppa en resa från listan med resor klickar du på knappen **[!UICONTROL Ellipsis]** som finns till höger om resenamnet och väljer **[!UICONTROL Stop]**.
 
-![](assets/journey-finish-quick-action.png)
+![Slutför åtgärdslistrutan i snabbåtgärdsmenyn för att avsluta resan](assets/journey-finish-quick-action.png)
 
 Du kan även:
 
 1. Klicka på den resa du vill stoppa i listan **[!UICONTROL Journeys]**.
 1. Klicka på nedpilen i det övre högra hörnet.
 
-   ![](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
+   ![Ytterligare avslutningsalternativ, inklusive närresa och rensning](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Stop]** och bekräfta i dialogrutan.
 

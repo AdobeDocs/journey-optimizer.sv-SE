@@ -10,9 +10,9 @@ level: Intermediate, Experienced
 keywords: resa, användningsfall, meddelande, prenumeranter, lista, läsa
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
 version: Journey Orchestration
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '320'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Så här konfigurerar du den här resan:
 
    1. Klicka på ikonen **[!UICONTROL Enable parameter override]** till höger om fältet **[!UICONTROL Address]** och klicka sedan på ikonen **[!UICONTROL Edit]** .
 
-      ![](assets/message-to-subscribers-uc-1.png)
+      ![Resursflöde med Läs målgrupp för prenumerantlista ](assets/message-to-subscribers-uc-1.png)
 
    1. I uttrycksredigeraren anger du uttrycket för att hämta prenumeranternas e-postadresser. [Läs mer](expression/expressionadvanced.md).
 
@@ -54,7 +54,7 @@ Så här konfigurerar du den här resan:
 
       Läs mer om [referenser till fält](expression/field-references.md) i uttryck.
 
-      ![](assets/message-to-subscribers-uc-2.png)
+      ![E-postkonfiguration med anpassat innehåll för prenumeranter](assets/message-to-subscribers-uc-2.png)
 
    1. Klicka på **[!UICONTROL Add an expression]** i dialogrutan **[!UICONTROL Ok]**.
 

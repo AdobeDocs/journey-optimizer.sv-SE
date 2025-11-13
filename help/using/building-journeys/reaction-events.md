@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, händelser, reaktion, spårning, plattform
 exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
 version: Journey Orchestration
-source-git-commit: 62783c5731a8b78a8171fdadb1da8a680d249efd
+source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '383'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Observera att du bara kan använda en reaktionsaktivitet på arbetsytan om det f
 
 Se [Om åtgärdsaktiviteter](../building-journeys/about-journey-activities.md#action-activities).
 
-![](assets/journey45.png)
+![Konfiguration av reaktionshändelser med kanalval och händelsetyp ](assets/journey45.png)
 
 Här följer de olika stegen för att konfigurera reaktionshändelser:
 
