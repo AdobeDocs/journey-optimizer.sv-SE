@@ -8,9 +8,9 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ce6bfca78d097588b5958c10c721b29b7013b3e2
+source-git-commit: bfd36dddb5795cd8b6eeb164f70b6cf3fdcb5750
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,6 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
    >
    > Observera att alternativet **inte ska aktiveras för** API-utlösta transaktioner **[!UICONTROL High Throughput]**.
 
-
    ![](assets/create-live-1.png)
 
 1. I avsnittet **[!UICONTROL Properties]** redigerar du din kampanjs **[!UICONTROL Title]** och **[!UICONTROL Description]**.
@@ -55,7 +54,7 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
 1. Klicka på **[!UICONTROL Create experiment]** för att börja konfigurera ditt innehållsexperiment och skapa behandlingar för att mäta deras prestanda och identifiera det bästa alternativet för målgruppen. [Läs mer](../content-management/content-experiment.md)
 
-1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[&#x200B; på fliken &#x200B;](../audience/about-audiences.md).
+1. Välj **[!UICONTROL Audience]** **[!UICONTROL Identity type]** Läs mer[ på fliken ](../audience/about-audiences.md).
 
 1. Kampanjer är utformade för att köras ett visst datum eller med en återkommande frekvens. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/create-campaign.md#schedule).
 
@@ -73,47 +72,48 @@ När du har konfigurerat din mobilkonfiguration och implementerat din mobila SDK
 
    Observera att de flesta fält från följande exempel på nyttolast är obligatoriska, men bara `requestId`, `dismissal-date` och `alert` är valfria.
 
-       &quot;json
-       &lbrace;
-       &quot;requestId&quot;: &quot;your-request-id&quot;,
-       &quot;campaignId&quot;: &quot;your-campaign-id&quot;, 
-       &quot;mottagare&quot;: &lbrack;
-       &lbrace;
-       &quot;type&quot;: &quot;aep&quot;, 
-       &quot;userId&quot;: &quot;testemail@gmail.com&quot;,
-       &quot;namespace&quot;: &quot;email&quot;, 
-       &quot;context&quot;: 
-       &quot;requestPayload&quot;: 
-       &quot;aps&quot;: 
-       &quot;content-available&quot;: 1,
-       &quot;timestamp&quot;: 1756984054,              // aktuell epoktid 
-       &quot;dismissal-date&quot;: 1756984084,         // valfritt - ta bort automatiskt när event=&quot;end&quot;
-       &quot;event&quot;: &quot;update&quot;,                    // start | uppdatera | end
-       
-       // Fält från FoodDeliveryLiveActivityAttributes 
-       &quot;content-state&quot;: 
-       &quot;orderStatus&quot;: &quot;Levererad&quot; 
-       ,
-       
-       &quot;attributes-type&quot;: &quot;FoodDeliveryLiveActivityAttributes&quot;,
-       &quot;attributes&quot;: 
-       &quot;aurangnamn&quot;: &quot;Pizza&quot;, 
-       &quot;liveActivityData&quot;: 
-       &quot;liveActivityID&quot;: &quot;orderId1&quot;       // kundreferens-ID 
-       
-       ,
-       
-       &quot;alert&quot;: 
-       &quot;title&quot;: &quot;Order Delived!&quot;,
-       &quot;body&quot;: &quot;Your pizza has come.&quot;
-        
-       
-       
-       
-       
-       &rbrack;
-       
-       &quot;
+   ```json
+   {
+       "requestId": "your-request-id",
+       "campaignId": "your-campaign-id",
+       "recipients": [
+   {
+       "type": "aep",
+       "userId": "testemail@gmail.com",
+       "namespace": "email",
+       "context": {
+        "requestPayload": {
+       "aps": {
+       "content-available": 1,
+       "timestamp": 1756984054,              // current epoch time
+       "dismissal-date": 1756984084,         // optional – auto remove when event="end"
+       "event": "update",                    // start | update | end
+   
+       // Fields from FoodDeliveryLiveActivityAttributes
+       "content-state": {
+         "orderStatus": "Delivered"
+       },
+   
+       "attributes-type": "FoodDeliveryLiveActivityAttributes",
+       "attributes": {
+         "restaurantName": "Pizza",
+         "liveActivityData": {
+           "liveActivityID": "orderId1"       // customer reference ID
+         }
+       },
+   
+       "alert": {
+         "title": "Order Delivered!",
+         "body": "Your pizza has arrived."
+       }
+     }
+   }
+   }
+   }
+   ]
+   }
+   ```
+
    +++
 
 När du har utformat din Live-aktivitet kan du spåra effekten av din Live-aktivitet med [inbyggda rapporter](../reports/campaign-global-report-cja-activity.md).
