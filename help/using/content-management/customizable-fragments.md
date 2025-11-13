@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: cd47ca1d-f707-4425-b865-14f3fbbe5fd1
-source-git-commit: 5bc467f7fd25dd4218470c0e73bc0dc87938e218
+source-git-commit: 71d4fae1eecb2acfcf3ba889c58bf71fb74d48fa
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1466'
 ht-degree: 0%
 
 ---
@@ -143,8 +143,8 @@ För att göra detta:
 ## Lägga till formaterad text i ett anpassningsbart fragment {#rich-text}
 
 RTF, t.ex. radbrytningar, fet stil, kursiv stil, kan läggas till i ett redigerbart fragment med hjälp av HTML-komponenter. Följ stegen nedan för att göra det.
-
-➡️ [Lär dig hur du lägger till och använder RTF i ett redigerbart fragment i den här videon](#video)
+<!--
+➡️ [Learn how to add and use rich text to an editable fragment in this video](#video)-->
 
 ### Skapa ett fragment med formaterad text {#add-rich-text}
 
@@ -190,8 +190,10 @@ När du lägger till fragmentet i e-postinnehållet kan användarna nu redigera 
 
    ![](assets/fragment-rich-editable-fields-update-styling.png)
 
-## Instruktionsvideo {#video}
+<!--
+## How-to video {#video}
 
-I den här videon visas hur du gör HTML-komponenter i ett fragment redigerbara så att både innehåll och format kan uppdateras dynamiskt.
+This video shows how to make HTML components within a fragment editable, allowing for dynamic updates to both content and styling.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464372/?captions=swe&learn=on&#x26;enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464363/?learn=on&#x26;enablevpops)
+-->
