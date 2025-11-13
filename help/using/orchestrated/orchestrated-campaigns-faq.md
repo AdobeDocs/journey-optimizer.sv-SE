@@ -5,7 +5,7 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 536d080e455e4872ed6e58b11adc3324b332f7b5
+source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
 workflow-type: tm+mt
 source-wordcount: '1799'
 ht-degree: 5%
@@ -64,7 +64,7 @@ För att få åtkomst till kampanjsamordning måste din licens innehålla anting
 **Läs mer**
 
 * [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)
-* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
 +++
 
@@ -247,7 +247,7 @@ I Campaign-orkestrering talar vi om ad hoc-segmentering som&quot;Live-segmenteri
 
 +++ Kommer Campaign Orchestration endast att få åtkomst till data som lästs in via batch, eller kan den även fråga efter uppdaterade realtidstabeller (som analysdata)?
 
-Journey Optimizer Campaign-samordning kan skapa ad hoc-frågor utöver modellbaserade scheman. Modellbaserade scheman stöder endast batchkällor för tillfället. Dessutom har programmet stöd för Läs publikaktiviteter från alla typer av Adobe Experience Platform Audience.
+Journey Optimizer Campaign-samordning kan skapa ad hoc-frågor utöver relationsscheman. Relationsscheman har endast stöd för batchkällor just nu. Dessutom har programmet stöd för Läs publikaktiviteter från alla typer av Adobe Experience Platform Audience.
 
 **Läs mer**
 
@@ -375,4 +375,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Samordnade kampanjer skyddar mot detaljer och begränsningar](guardrails.md)
 * [Kom igång med scheman och datauppsättningar i samordnade kampanjer](gs-schemas.md)
 * [Skapa din första samordnade kampanj](gs-campaign-creation.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

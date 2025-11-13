@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: ce6bfca78d097588b5958c10c721b29b7013b3e2
+source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
 workflow-type: tm+mt
 source-wordcount: '2977'
 ht-degree: 15%
@@ -161,8 +161,8 @@ ht-degree: 15%
       + [Vanliga frågor och svar](using/orchestrated/orchestrated-campaigns-faq.md)
       + Datakonfiguration {#data-configuration}
          + [Datakonfiguration](/help/rp_landing_pages/data-configuration-landing-page.md)
-         + Hantera modellbaserade scheman och datauppsättningar {#schemas-datasets}
-            + [Hantera modellbaserade scheman och datauppsättningar](/help/rp_landing_pages/schemas-datasets-landing-page.md)
+         + Hantera relationsscheman och datauppsättningar {#schemas-datasets}
+            + [Hantera relationsscheman och datauppsättningar](/help/rp_landing_pages/schemas-datasets-landing-page.md)
             + [Kom igång med scheman och datauppsättningar](using/orchestrated/gs-schemas.md)
             + [Manuellt schema](using/orchestrated/manual-schema.md)
             + [Filöverföringsschema](using/orchestrated/file-upload-schema.md)
@@ -822,7 +822,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

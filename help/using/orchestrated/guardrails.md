@@ -5,7 +5,7 @@ title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 version: Campaign Orchestration
-source-git-commit: a9b790bc833b5819862bf2f3284968d81f595f28
+source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Nedan visas säkerhetsbeskrivningar och begränsningar när du använder orkestr
 
 * Det genomsnittliga antalet attribut per schema **får inte överstiga 50 kolumner** för att upprätthålla hanterbarhet och prestanda.
 
-* Modellbaserade scheman kan inte aktiveras för Adobe Experience Platform **Profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Modellbaserade scheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
+* Relationsscheman kan inte aktiveras för Adobe Experience Platform **profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Relationsscheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
 
 ### Datainhämtning
 

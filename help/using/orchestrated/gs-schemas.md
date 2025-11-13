@@ -2,10 +2,10 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurationssteg
-description: Lär dig hur du skapar ett modellbaserat schema i Adobe Experience Platform genom att överföra en DDL
+description: Lär dig hur du skapar ett relationsschema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 version: Campaign Orchestration
-source-git-commit: e189bb6a52691770655a436e45c6788d1011a8ca
+source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 1%
@@ -13,9 +13,9 @@ ht-degree: 1%
 ---
 
 
-# Kom igång med modellbaserade scheman och datauppsättningar{#gs-schemas}
+# Kom igång med relationsscheman och datauppsättningar{#gs-schemas}
 
-I den här guiden får du hjälp med att skapa ett modellbaserat schema, konfigurera en datauppsättning för orkestrerade kampanjer och inhämta data.
+I den här guiden får du hjälp med att skapa ett relationsschema, konfigurera en datauppsättning för orkestrerade kampanjer och inhämta data.
 
 ![schema](assets/do-not-localize/schema_admin.png){zoomable="yes"}
 
@@ -35,13 +35,13 @@ Den beskriver:
 
 En datamodell är logisk och begreppsmässig, och den är inte knuten till en fysisk implementering i Orchestrated Campaign
 
-I en **modellbaserad datamodell** ordnas data i tabeller som relaterar till andra tabeller.
+I en **relationsdatamodell** ordnas data i tabeller som relaterar till andra tabeller.
 
 * Varje tabell har rader (poster) och kolumner (attribut)
 * Varje tabell har en primärnyckel som unikt identifierar rader
 * Relationer mellan tabeller uttrycks med hjälp av sekundärnycklar
 
-Ett **modellbaserat schema** är den formella definitionen av den modellbaserade datamodellen.
+Ett **relationsschema** är den formella definitionen av relationsdatamodellen.
 
 Den anger:
 
@@ -50,15 +50,15 @@ Den anger:
 * Begränsningarna
 * Relationerna mellan tabeller
 
-Att ordna scheman eller tabeller i en modellbaserad datamodell handlar om att strukturera data i flera tabeller. Se till att varje register lagrar en typ av entitet/scheman
+Att ordna scheman eller tabeller i en relationsdatamodell handlar om att strukturera data i flera tabeller. Se till att varje register lagrar en typ av entitet/scheman
 
-➡️ [Läs mer om scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas#create-model-based-schema)
+➡️ [Läs mer om scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-model-based-schema)
 
 ## Implementeringssteg {#implementation}
 
-Så här importerar du data och skapar ett modellbaserat schema:
+Så här importerar du data och skapar relationsschema:
 
-1. Skapa [modellbaserat schema manuellt](manual-schema.md) eller [med en DDL-fil](file-upload-schema.md)
+1. Skapa [relationsschema manuellt](manual-schema.md) eller [med en DDL-fil](file-upload-schema.md)
 
    Definiera strukturen för din datamodell, inklusive tabeller, attribut och relationer. Välj om du vill skapa schemat manuellt i användargränssnittet eller överföra en DDL-fil för snabbare konfiguration.
 

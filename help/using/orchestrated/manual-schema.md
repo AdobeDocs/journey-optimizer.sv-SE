@@ -2,23 +2,23 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurationssteg
-description: Lär dig hur du skapar modellbaserade scheman direkt via användargränssnittet.
+description: Lär dig hur du skapar relationsscheman direkt via användargränssnittet.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 version: Campaign Orchestration
-source-git-commit: ac80d1cec351a3029c8b2bf862275ffe7fd5c86d
+source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
 
 ---
 
-# Konfigurera ett manuellt modellbaserat schema {#manual-schema}
+# Konfigurera ett manuellt relationsschema {#manual-schema}
 
-Modellbaserade scheman kan skapas direkt via användargränssnittet, vilket möjliggör detaljerad konfiguration av attribut, primärnycklar, versionsfält och relationer.
+Relationsscheman kan skapas direkt via användargränssnittet, vilket möjliggör detaljerad konfiguration av attribut, primärnycklar, versionsfält och relationer.
 
 I följande exempel definieras schemat **Förmånsmedlemskap** manuellt för att illustrera den struktur som krävs för Orchestrated-kampanjer.
 
-1. [Skapa ett modellbaserat schema manuellt](#schema) med Adobe Experience Platform-gränssnittet.
+1. [Skapa ett relationsschema manuellt](#schema) med Adobe Experience Platform-gränssnittet.
 
 1. [Lägg till attribut](#schema-attributes) som kund-ID, medlemsnivå och statusfält.
 
@@ -28,11 +28,11 @@ I följande exempel definieras schemat **Förmånsmedlemskap** manuellt för att
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-➡️ [Läs mer om manuella modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
+➡️ [Läs mer om manuella relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#create-manually)
 
 ## Skapa ditt schema {#schema}
 
-Börja med att skapa ett nytt modellbaserat schema manuellt i Adobe Experience Platform. Med den här processen kan du definiera schemastrukturen från grunden, inklusive dess namn och beteende.
+Börja med att skapa ett nytt relationsschema manuellt i Adobe Experience Platform. Med den här processen kan du definiera schemastrukturen från grunden, inklusive dess namn och beteende.
 
 1. Logga in på Adobe Experience Platform.
 
@@ -40,7 +40,7 @@ Börja med att skapa ett nytt modellbaserat schema manuellt i Adobe Experience P
 
 1. Klicka på **[!UICONTROL Create Schema]**.
 
-1. Välj **[!UICONTROL Model-based]** som **schematyp**.
+1. Välj **[!UICONTROL Relational]** som **schematyp**.
 
    ![](assets/admin_schema_1.png){zoomable="yes"}
 
@@ -60,7 +60,7 @@ Sedan lägger du till attribut för att definiera strukturen för ditt schema. D
 
 Alla scheman som används för mål måste innehålla minst ett identitetsfält av typen `String` med ett associerat identitetsnamnområde. Detta garanterar kompatibilitet med Adobe Journey Optimizer verktyg för målinriktning och identitetsupplösning.
 
-+++Följande funktioner stöds när du skapar modellbaserade scheman i Adobe Experience Platform
++++Följande funktioner stöds när du skapar relationsscheman i Adobe Experience Platform
 
 * **ENUM**\
   ENUM-fält stöds i både DDL-baserade och manuella schemagenereringar, vilket gör att du kan definiera attribut med en fast uppsättning tillåtna värden.
@@ -69,7 +69,7 @@ Alla scheman som används för mål måste innehålla minst ett identitetsfält 
   Etikettering stöds på schemafältnivå för att tillämpa datastyrningsprinciper som åtkomstkontroll och användningsbegränsningar. Mer information finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv).
 
 * **Sammansatt nyckel**\
-  Sammansatta primärnycklar stöds i modellbaserade schemadefinitioner, vilket gör det möjligt att använda flera fält tillsammans för att unikt identifiera poster.
+  Sammansatta primärnycklar stöds i relationsschemadefinitioner, vilket gör det möjligt att använda flera fält tillsammans för att unikt identifiera poster.
 
 +++
 
@@ -110,7 +110,7 @@ Alla scheman som används för mål måste innehålla minst ett identitetsfält 
 
 När du har skapat och sparat attribut kan du länka schemat till andra relationsscheman genom att definiera relationer.
 
-➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
+➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
 
 ## Länka scheman {#link-schema}
 

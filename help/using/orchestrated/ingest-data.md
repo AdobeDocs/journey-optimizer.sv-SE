@@ -5,7 +5,7 @@ title: Konfigurationssteg
 description: Lär dig hur du hämtar data till Adobe Experience Platform från källor som stöds, som SFTP, molnlagring eller databaser.
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
 version: Campaign Orchestration
-source-git-commit: c584ce48029bd298b503a342a1e663eeeedbba42
+source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 1%
@@ -39,35 +39,35 @@ Följande källor stöds för användning med Orchestrated-kampanjer:
   <tbody>
     <tr>
       <td rowspan="3">molnlagring</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3">Amazon S3</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/google-cloud-storage">Google Cloud-lagring</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/sftp">SFTP</a></td>
     </tr>
       <td rowspan="4">Datalager i molnet</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/snowflake">Snowflake</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery">Google BigQuery</a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/data-landing-zone">Datallandningszon<a></td>
     </tr>
     <tr>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/databases/databricks">Azure-databaser</a></td>
     </tr>
     <tr>
       <td rowspan="3">Filbaserade överföringar</td>
-      <td><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
+      <td><a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload">Lokal filöverföring<a></td>
     </tr>
 
 </tbody>
 </table>
 
-## Riktlinjer för modellbaserad datahygien för scheman {#cdc}
+## Riktlinjer för datahygien i relationsschemat {#cdc}
 
 För datauppsättningar som är aktiverade med **[!UICONTROL Change data capture]** speglas alla dataändringar automatiskt, inklusive borttagningar, från källsystemet till Adobe Experience Platform.
 
@@ -85,7 +85,7 @@ Om kunden bara vill ta bort poster från Adobe Experience Platform utan att orig
 
   Om den är licensierad kan **Data Distiller** användas för borttagningsåtgärder direkt i Adobe Experience Platform, oberoende av källsystemet.
 
-  [Läs mer om Data Distiller](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/overview)
+  [Läs mer om Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 
 ## Konfigurera ett dataflöde
 
@@ -105,9 +105,9 @@ I det här exemplet visas hur du konfigurerar ett dataflöde som importerar stru
 
    ![](assets/S3_config_1.png)
 
-1. På sidan **[!UICONTROL Dataset details]** markerar du **[!UICONTROL Enable Change data capture]** om du bara vill visa datauppsättningar som är mappade till modellbaserade scheman och innehåller både en primärnyckel och en versionsbeskrivning.
+1. På sidan **[!UICONTROL Dataset details]** markerar du **[!UICONTROL Enable Change data capture]** om du bara vill visa datauppsättningar som är mappade till relationsscheman och innehåller både en primärnyckel och en versionsbeskrivning.
 
-[Läs mer om riktlinjer för modellbaserad datahygien för scheman](#cdc)
+[Läs mer om riktlinjer för datahygien i relationsscheman](#cdc)
 
    >[!IMPORTANT]
    >

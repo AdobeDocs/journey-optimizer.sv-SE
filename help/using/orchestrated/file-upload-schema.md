@@ -2,10 +2,10 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Konfigurationssteg
-description: Lär dig hur du skapar ett modellbaserat schema i Adobe Experience Platform genom att överföra en DDL
+description: Lär dig hur du skapar ett relationsschema i Adobe Experience Platform genom att överföra en DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 version: Campaign Orchestration
-source-git-commit: 80c136409821388a4baea9286b298220c91bba7a
+source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
@@ -13,23 +13,23 @@ ht-degree: 0%
 ---
 
 
-# Skapa modellbaserade scheman med en DDL-fil {#file-upload-schema}
+# Skapa relationsscheman med en DDL-fil {#file-upload-schema}
 
-Definiera den modellbaserade datamodell som krävs för orkestrerade kampanjer genom att skapa scheman som **lojalitetsmedlemskap**, **Loyalty-transaktioner** och **Loyalty-belöningar**. Varje schema måste innehålla en primärnyckel, ett versionsattribut och lämpliga relationer till referensentiteter som **Mottagare** eller **Varumärken**.
+Definiera relationsdatamodellen som krävs för Orchestrated-kampanjer genom att skapa scheman som **Loyalty Memberships**, **Loyalty Transactions** och **Loyalty Rewards**. Varje schema måste innehålla en primärnyckel, ett versionsattribut och lämpliga relationer till referensentiteter som **Mottagare** eller **Varumärken**.
 
 Scheman kan skapas manuellt via gränssnittet eller importeras i grupp med hjälp av en DDL-fil.
 
-I det här avsnittet finns stegvisa anvisningar om hur du skapar ett modellbaserat schema i Adobe Experience Platform genom att överföra en DDL-fil (Data Definition Language). Med hjälp av en DDL-fil kan du definiera datamodellens struktur i förväg, inklusive tabeller, attribut, nycklar och relationer.
+I det här avsnittet finns stegvisa anvisningar om hur du skapar ett relationsschema i Adobe Experience Platform genom att överföra en DDL-fil (Data Definition Language). Med hjälp av en DDL-fil kan du definiera datamodellens struktur i förväg, inklusive tabeller, attribut, nycklar och relationer.
 
-1. [Överför en DDL-fil](#ddl-upload) för att skapa modellbaserade scheman och definiera deras struktur.
+1. [Överför en DDL-fil](#ddl-upload) för att skapa relationsscheman och definiera deras struktur.
 
 1. [Definiera relationer](#relationships) mellan tabeller i datamodellen.
 
-1. [Länka scheman](#link-schema) om du vill koppla modellbaserade data till befintliga profilentiteter som mottagare eller varumärken.
+1. [Länka scheman](#link-schema) för att koppla relationsdata till befintliga profilentiteter som mottagare eller varumärken.
 
 1. [Infoga data](ingest-data.md) i datauppsättningen från källor som stöds.
 
-➡️ [Läs mer om modellbaserade scheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/relational)
+➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)
 
 ## Överföra en DDL-fil{#ddl-upload}
 
@@ -37,7 +37,7 @@ Genom att överföra en DDL-fil kan du definiera datamodellens struktur i förv�
 
 Överföringar av Excel-baserade schemabilder stöds. Hämta [tillhandahållen mall](assets/template.zip) för att enkelt förbereda dina schemadefinitioner.
 
-+++Följande funktioner stöds när du skapar modellbaserade scheman i Adobe Experience Platform
++++Följande funktioner stöds när du skapar relationsscheman i Adobe Experience Platform
 
 * **ENUM**\
   ENUM-fält stöds i både DDL-baserade och manuella schemagenereringar, vilket gör att du kan definiera attribut med en fast uppsättning tillåtna värden.
@@ -66,7 +66,7 @@ Här är ett exempel:
 
 1. Klicka på **Skapa schema**.
 
-1. Välj **[!UICONTROL Model-based]** som **schematyp**.
+1. Välj **[!UICONTROL Relational]** som **schematyp**.
 
    ![](assets/admin_schema_1.png)
 
