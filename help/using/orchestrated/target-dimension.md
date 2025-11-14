@@ -33,7 +33,7 @@ När du konfigurerar mål definierar du två huvudaspekter:
 
   Systemet måste förstå hur målschemat mappar till `Profile`-schemat. Detta uppnås genom ett delat identitetsfält - ett som finns både i målschemat och `Profile`-schemat och som har konfigurerats som ett identitetsnamnområde.
 
-➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
+➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
 
 ## Skapa en måldimension {#targeting-dimension}
 
@@ -53,7 +53,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
    I det här exemplet är kundprofilen länkad till flera prenumerationer, som vart och ett representeras av en unik `crmID` i `Recipient`-schemat. Genom att ange att **[!UICONTROL Target Dimension]** ska använda `Recipient`-schemat och dess `crmID`-identitet kan du skicka meddelanden på prenumerationsnivå i stället för till huvudkundprofilen, så att varje kontrakt eller rad får ett eget anpassat meddelande.
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity)
 
    ![](assets/target-dimension-2.png)
 
