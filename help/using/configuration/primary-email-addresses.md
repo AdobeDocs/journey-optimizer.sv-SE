@@ -9,14 +9,14 @@ role: Admin
 level: Intermediate
 keywords: primär, körning, e-post, mål, profil, optimering
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 36a9a4afb24f3c7909c57e983992de2bf12acd24
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
 
-# Ändra körningsadresserna {#change-primary-email}
+# Hantera standardkörningsfält {#change-primary-email}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address"
@@ -73,8 +73,7 @@ Körningsfältet uppdateras och kommer nu att användas som primär adress.
 >[!CONTEXTUALHELP]
 >id="ajo_journey_execution_address"
 >title="Definiera ett anpassat värde"
->abstract="I vissa specifika fall kan du åsidosätta standardadressen för körningen. Använd ikonen **Aktivera åsidosättning av parameter** till höger om fältet för att definiera en anpassad primär adress."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/primary-email-addresses#journey-parameters" text="Om körningsadressen"
+>abstract="I vissa specifika fall kan du åsidosätta standardvärdet för körningsfältet. Använd ikonen **Aktivera åsidosättning av parameter** till höger om det här fältet för att definiera en anpassad e-postadress eller ett telefonnummer som ska prioriteras för sändning."
 
 För specifika användningsfall kan du åsidosätta körningsfältet som ställts in globalt och definiera ett annat värde på resenivån.
 
@@ -91,7 +90,7 @@ När du lägger till en **[!UICONTROL Email]**-, **[!UICONTROL SMS]**- eller **[
 
 >[!CAUTION]
 >
->Åsidosättning av e-postadress eller telefonnummer bör endast användas för särskilda ändamål. För det mesta behöver du inte ändra det eftersom det värde som definieras som primär adress i **[!UICONTROL Execution fields]** på sandlådenivå är det som ska användas.
+>Åsidosättning av e-postadress eller telefonnummer bör endast användas för särskilda ändamål. För det mesta behöver du inte ändra det eftersom det värde som definieras som primärt fält i **[!UICONTROL Execution fields]** på sandlådenivå är det som ska användas. [Läs mer](#change-primary-email)
 
 ## Åsidosätt standardfältet för körning i kanalkonfigurationen {#override-execution-address-channel-config}
 
