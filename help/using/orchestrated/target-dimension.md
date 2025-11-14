@@ -5,9 +5,9 @@ title: Skapa en måldimension
 description: Lär dig mapp ett relationsschema till kundprofilen
 exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
 version: Campaign Orchestration
-source-git-commit: 9003668674302c576ed9738c803446c476877e47
+source-git-commit: f842142a985481004192c88af2973787912c85b3
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ När du konfigurerar mål definierar du två huvudaspekter:
 
   >[!IMPORTANT]
   >
-  > Målschemat måste ha en :1-relation med `Profile`-schemat. Du kan till exempel inte använda `Purchases` som målschema eftersom det vanligtvis representerar en 1:N-relation.
+  > Orchestrated Campaigns tillåter målinriktning för alla scheman som har en direkt eller relaterad relation till **Profile**-schemat. Dess användning är främst avsedd för 1:1-relationer, men stöder även 1:N-relationer, till exempel Account `>` -mottagare, så länge relationssökvägen är korrekt modellerad i datamodellen. Detta möjliggör målinriktning baserat på kontonivådata samtidigt som rätt profilidentitet för meddelandeleverans matchas.
 
 * **Profillänkning**
 
   Systemet måste förstå hur målschemat mappar till `Profile`-schemat. Detta uppnås genom ett delat identitetsfält - ett som finns både i målschemat och `Profile`-schemat och som har konfigurerats som ett identitetsnamnområde.
 
-➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
+➡️ [Läs mer om relationsscheman i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational#how-relational-schemas-differ-from-standard-xdm-schemas)
 
 ## Skapa en måldimension {#targeting-dimension}
 
@@ -45,7 +45,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
 1. Klicka på **[!UICONTROL Create]** för att börja skapa **[!UICONTROL Targeting dimension]**.
 
-1. Välj det [tidigare konfigurerade &#x200B; &#x200B;](gs-schemas.md) i listrutan.
+1. Välj det [tidigare konfigurerade &#x200B; ](gs-schemas.md) i listrutan.
 
    Alla relationsscheman visas, men endast de med en direkt identitetsrelation till **profilen** kan väljas. Undvik att välja scheman som inte är personer, t.ex. inköp, och välj ett schema som är direkt associerat med en profil.
 
@@ -53,7 +53,7 @@ Börja med att konfigurera kampanjsamordning genom att mappa ett relationsschema
 
    I det här exemplet är kundprofilen länkad till flera prenumerationer, som vart och ett representeras av en unik `crmID` i `Recipient`-schemat. Genom att ange att **[!UICONTROL Target Dimension]** ska använda `Recipient`-schemat och dess `crmID`-identitet kan du skicka meddelanden på prenumerationsnivå i stället för till huvudkundprofilen, så att varje kontrakt eller rad får ett eget anpassat meddelande.
 
-   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity)
+   [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity)
 
    ![](assets/target-dimension-2.png)
 
