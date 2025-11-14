@@ -10,7 +10,7 @@ role: User
 level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
 exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
-source-git-commit: 4d12c36391c2546788d49cca6e2468a29fc1e74f
+source-git-commit: b0b786203d176c3d817f28e1f4cef1f31eda4640
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 0%
@@ -42,11 +42,11 @@ Den här funktionen gör att marknadsförarna kan använda visuellt tilltalande,
 
    * Om du vill utnyttja ett [fragment](../content-management/fragments.md) i ett temainnehåll måste det här fragmentet ha skapats själv med teman. [Läs mer](#leverage-themes-fragment)
 
-   * När du använder ett fragment i ett e-postinnehåll måste du använda ett tema som du har definierat för det här fragmentet. Om du inte gör det kan det orsaka visningsproblem, särskilt i Outlook 2021 och tidigare versioner. [Läs mer](#leverage-themes-fragment)
+   * När du använder ett fragment i e-postinnehåll måste du se till att du använder ett tema som du har definierat för det här fragmentet. Om du inte gör det kan det orsaka visningsproblem, särskilt i Outlook 2021 och tidigare versioner. [Läs mer](#leverage-themes-fragment)
 
 * Om du använder innehåll som har skapats i HTML är du i [kompatibilitetsläge](existing-content.md) och du kan inte använda teman direkt på det här innehållet.
 
-   * Om du vill använda teman måste du först spara det importerade innehållet [&#x200B; som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
+   * Om du vill använda teman måste du först spara det importerade innehållet [ som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
 
    * Du kan även konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
 

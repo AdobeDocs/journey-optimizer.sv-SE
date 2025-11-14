@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
-source-git-commit: 3cb16d48c8f478643e8c9891e4fd8c0c3b18f2c5
+source-git-commit: b0b786203d176c3d817f28e1f4cef1f31eda4640
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '736'
 ht-degree: 1%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 1%
 >id="ajo_create_visual_fragment"
 >title="Markera den visuella typen"
 >abstract="Skapa ett fristående visuellt fragment för att göra innehållet återanvändbart i ett e-postmeddelande inom en resa eller kampanj, eller i en innehållsmall."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments" text="Lägg till visuella fragment i e-postmeddelanden"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments" text="Lägg till visuella fragment i e-postmeddelanden"
 
 >[!CONTEXTUALHELP]
 >id="ajo_create_expression_fragment"
 >title="Välj uttryckstyp"
 >abstract="Skapa ett fristående uttrycksfragment som gör att innehållet kan återanvändas på flera resor och i flera kampanjer. När du använder personaliseringsredigeraren kan du utnyttja alla uttrycksfragment som har skapats i den aktuella sandlådan."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-build-expressions" text="Arbeta med personaliseringsredigeraren"
 
 Fragment kan skapas från grunden på den vänstra menyn **[!UICONTROL Fragments]**. Dessutom kan du spara en del av befintligt innehåll som fragment när du utformar innehåll. [Lär dig hur](save-fragments.md#)
 
@@ -79,7 +79,7 @@ När du har konfigurerat fragmentets egenskaper öppnas e-post-Designer eller pe
 
   >[!CAUTION]
   >
-  >Fragment är inte korskompatibla mellan Använd teman och Manuell formatering. Om du vill kunna använda ett fragment i ett innehåll där du vill använda ett tema, måste det här fragmentet skapas i läget Använd teman. [Läs mer om teman](../email/apply-email-themes.md)
+  >Fragment är inte korskompatibla mellan Använd teman och Manuell formatering. När du använder ett fragment i e-postinnehåll måste du se till att du använder ett tema som du har definierat för det här fragmentet. [Läs mer](../email/apply-email-themes.md#leverage-themes-fragment)
 
 * Använd anpassningsredigeraren [!DNL Journey Optimizer] för uttrycksfragment med alla dess anpassnings- och redigeringsfunktioner för att skapa fragmentinnehållet. [Läs mer](../personalization/personalization-build-expressions.md)
 
