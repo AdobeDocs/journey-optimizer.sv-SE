@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
-source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
+source-git-commit: 7eaca4faf61431fa438afc7550ff4b89f95fa192
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 2%
+source-wordcount: '441'
+ht-degree: 1%
 
 ---
 
@@ -26,6 +26,22 @@ Om du vill göra det klickar du på **[!UICONTROL Simulate content]** och kontro
 ![](assets/sms_preview_2.png)
 
 Detaljerad information om hur du förhandsgranskar och testar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
+
+### Teckenkodning och -begränsningar {#sms-character-limits}
+
+Ett antal tecken visas vid åtkomst till menyn **[!UICONTROL Simulate content]** för att hjälpa dig att planera och hantera dina SMS-meddelanden.
+
+![](assets/sms_preview_3.png)
+
+I Journey Optimizer används UTF-8-kodning i SMS-redigeraren så att du kan skriva eller klistra in dubbelbyte- eller Unicode-tecken. Dessa tecken skickas sedan till tjänsteleverantören för leverans. De flesta SMS-leverantörer använder GSM 7-bitars kodning för standardmeddelanden med en gräns på 160 tecken och växlar till UTF-16 (UCS-2) när icke-GSM-tecken identifieras med en gräns på 70 tecken.
+
+Observera att antalet tecken inte återspeglar variationer som introducerats genom dynamisk personalisering eller specialtecken som inte är GSM med 7 bitar.
+
+>[!IMPORTANT]
+>
+>Journey Optimizer SMS-leveransrapportering tar inte hänsyn till sammanfogade meddelanden och dynamisk personalisering, vilket kan innebära att det faktiska antalet meddelanden som skickas från leverantören inte visas. Kontakta Adobe om du vill ha mer information om användning och fakturering.
+>
+>Mer information om hur du minimerar SMS-faktureringsöverläggningar finns i [SMS Best Practices for Character Optimization](sms-cost-optimization.md).
 
 ## Validera ditt innehåll {#sms-validate}
 
