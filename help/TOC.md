@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 7eaca4faf61431fa438afc7550ff4b89f95fa192
+source-git-commit: 57494753f24570a1f14c16e4e98d27ee0c710813
 workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 15%
@@ -316,7 +316,7 @@ ht-degree: 15%
       + [Kontrollera och skicka textmeddelanden](using/sms/send-sms.md)
       + [Hantera avanmälan av textmeddelande](using/sms/sms-opt-out.md)
       + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
-      + [Bästa tillvägagångssätt för SMS-kostnadsoptimering](using/sms/sms-subdomains.md)
+      + [Bästa tillvägagångssätt för SMS-kostnadsoptimering](using/sms/sms-cost-optimization.md)
       + Konfigurera SMS/MMS/RCS-kanal {#configure-sms}
          + [Konfigurera SMS/MMS/RCS-kanal](/help/rp_landing_pages/configure-sms-landing-page.md)
          + [Kom igång med SMS-/MMS-/RCS-konfiguration](using/sms/sms-configuration.md)
@@ -823,7 +823,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
