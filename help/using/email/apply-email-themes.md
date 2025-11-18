@@ -10,9 +10,9 @@ role: User
 level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
 exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
-source-git-commit: b0b786203d176c3d817f28e1f4cef1f31eda4640
+source-git-commit: 53ae620926fc8ba3e9c8b558584ed8eb6942e3d4
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1540'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,15 @@ Den här funktionen gör att marknadsförarna kan använda visuellt tilltalande,
 
 * [Fragment](../content-management/fragments.md) är inte korskompatibla mellan lägena Använd teman och Manuell formatering.
 
+   * Tematiska fragment är inte tillgängliga i e-postinnehåll som skapas utan att teman används.
+
    * Om du vill utnyttja ett [fragment](../content-management/fragments.md) i ett temainnehåll måste det här fragmentet ha skapats själv med teman. [Läs mer](#leverage-themes-fragment)
 
    * När du använder ett fragment i e-postinnehåll måste du se till att du använder ett tema som du har definierat för det här fragmentet. Om du inte gör det kan det orsaka visningsproblem, särskilt i Outlook 2021 och tidigare versioner. [Läs mer](#leverage-themes-fragment)
 
 * Om du använder innehåll som har skapats i HTML är du i [kompatibilitetsläge](existing-content.md) och du kan inte använda teman direkt på det här innehållet.
 
-   * Om du vill använda teman måste du först spara det importerade innehållet [&#x200B; som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
+   * Om du vill använda teman måste du först spara det importerade innehållet [ som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
 
    * Du kan även konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
 
@@ -227,6 +229,10 @@ Följ stegen nedan för att skapa ett fragment som är kompatibelt med teman.
 ## Gör en mall kompatibel med teman {#theme-convertor}
 
 Med [!DNL Journey Optimizer] kan du konvertera en mall som har skapats med manuell formatering till ett temakompatibelt innehåll. Detta kan vara särskilt användbart om du har skapat innehållsmallar innan teman introducerades i [!DNL Journey Optimizer] eller om du importerar externt innehåll.
+
+>[!NOTE]
+>
+> Endast **e-postmallar** kan konverteras så att de är kompatibla med teman. Det går inte att konvertera enskilda e-postmeddelanden. Du måste spara innehållet som en mall först.
 
 1. Öppna en [innehållsmall](../content-management/create-content-templates.md) för e-post och redigera innehållet med e-post-Designer.
 
