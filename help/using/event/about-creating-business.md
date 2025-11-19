@@ -9,7 +9,7 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: händelse, resa, verksamhet, konfiguration
 exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: 712c077d146058c5f5c407e622972d2d10e278fa
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 
 >[!NOTE]
 >
->Du kan också titta på användningsexemplet [självstudiekurs](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-business-event.html) för affärshändelser. Observera att schemat inte behöver aktiveras för profilen.
+>Du kan också titta på användningsexemplet [självstudiekurs](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/use-case-business-event){target="_blank"} för affärshändelser. Observera att schemat inte behöver aktiveras för profilen.
 
 ## Viktiga anteckningar {#important-notes}
 
@@ -56,7 +56,7 @@ Affärshändelser följer reglerna för återinträde på samma sätt som för e
 
 **Vilka är skyddsräckena för att undvika att materialiserade målgrupper läses in för mycket?**
 
-När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE).
+När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 ## Kom igång med affärsevenemang {#gs-business-events}
 
