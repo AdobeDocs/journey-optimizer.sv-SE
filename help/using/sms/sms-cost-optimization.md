@@ -7,9 +7,9 @@ feature: SMS
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 7eaca4faf61431fa438afc7550ff4b89f95fa192
+source-git-commit: 13b3c8aa7fce85029167ef31feb7272e4877b7b0
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -66,9 +66,9 @@ När Journey Optimizer visar ett antal tecken, inklusive mellanslag, under inneh
 
 ## Förstå rapportering {#understanding-reporting}
 
-**Journey Optimizer-rapportering** räknar det fullständiga meddelandet som en sändning, oavsett SMS-delar. Detta bidrar till att minska mängden engagerande profiler.
+**Journey Optimizer-rapportering** räknar det fullständiga meddelandet som en sändning, oavsett SMS-delar.
 
-**Leverantörsrapportering** visar faktiska SMS-delar för leverans och bör användas för att fastställa fakturering och övertäckning.
+**Leverantörsrapportering** återspeglar det faktiska antalet SMS-meddelandedelar som används för leverans och bör refereras till för att bekräfta fakturering och eventuella overages. Om Adobe är din SMS-leverantör via Sinch får du faktureringsrapporten separat varje månad.
 
 ## Personalization att tänka på {#personalization-considerations}
 
