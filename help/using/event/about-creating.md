@@ -9,7 +9,7 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: händelse, enhet, skapa, resa
 exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: b8c2eced0f517e917021e9f42a8943b4a5e4f287
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 7%
@@ -42,15 +42,13 @@ Nedan följer de första stegen för att konfigurera en ny händelse:
 
 1. Ange namnet på händelsen. Du kan också lägga till en beskrivning.
 
-   ![](assets/jo-event3.png)
-
    >[!NOTE]
    >
    >Endast alfanumeriska tecken och understreck tillåts. Maximala längden är 30 tecken.
 
-1. Välj **[!UICONTROL Type]** Enhet **i fältet**.
+   ![](assets/jo-event3.png)
 
-   ![](assets/jo-event3bis.png)
+1. Välj **[!UICONTROL Type]** Enhet **i fältet**.
 
 1. I fältet **[!UICONTROL Event ID type]** väljer du den händelse-ID-typ som du vill använda: **Regelbaserad** eller **Systemgenererad**. Läs mer om typer av händelse-ID i [det här avsnittet](../event/about-events.md#event-id-type).
 
@@ -68,8 +66,6 @@ Nedan följer de första stegen för att konfigurera en ny händelse:
 
 1. För regelbaserade händelser klickar du i fältet **[!UICONTROL Event ID condition]**. Använd den enkla eller avancerade uttrycksredigeraren för att definiera villkoret som ska användas av systemet för att identifiera de händelser som utlöser din resa.
 
-   ![](assets/jo-event6.png)
-
    I vårt exempel skrev vi ett villkor baserat på profilens stad. Det innebär att när systemet tar emot en händelse som matchar det här villkoret (**[!UICONTROL City]** fält och **[!UICONTROL Paris]** värde), skickas den till resorna.
 
    >[!NOTE]
@@ -81,8 +77,6 @@ Nedan följer de första stegen för att konfigurera en ny händelse:
 1. Lägg till en identitetstyp. Det här steget är valfritt, men rekommenderas eftersom du kan lägga till en identitetstyp för att utnyttja information som lagras i kundprofiltjänsten i realtid. Denna definierar vilken typ av nyckel händelsen har. Läs mer i [det här avsnittet](../event/about-creating.md#select-the-namespace).
 
 1. Definiera profilidentifieraren: välj ett fält bland dina nyttolastfält eller definiera en formel för att identifiera den person som är associerad med händelsen. Den här nyckeln konfigureras automatiskt (men kan fortfarande redigeras) om du väljer en identitetstyp. Resor väljer nyckeln som ska motsvara identitetstypen (om du t.ex. väljer en e-postadresstyp väljs e-postnyckeln). Läs mer i [det här avsnittet](../event/about-creating.md#define-the-event-key).
-
-   ![](assets/jo-event7.png)
 
 1. Klicka på **[!UICONTROL Save]**.
 
