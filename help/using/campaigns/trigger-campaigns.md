@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kampanj, granskning, validering, aktivering, aktivering, optimering
 exl-id: 86f35987-f0b7-406e-9ae6-0e4a2e651610
-source-git-commit: d93b7ce225294257f49caee6ac08cfb575611a93
+source-git-commit: 8cb37cf0fb9dc8048d7da8ddda0c67280477d57f
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,29 @@ När kampanjen har aktiverats måste du hämta den genererade cURL-exempelbegär
 1. Använd denna cURL-begäran i API:erna för att bygga upp din nyttolast och utlösa kampanjen. Mer information finns i [API-dokumentationen för interaktiv meddelandekörning](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution), där alla slutpunkter för standard- och högflödeskampanjer listas.
 
    Exempel på API-anrop finns också på [den här sidan](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).
+
+## Felsökning {#troubleshooting}
+
+### Azure Cosmos DB-autentiseringsfel (500 internt serverfel) {#cosmosdb-auth-errors}
+
+Om **500 interna serverfel** inträffar när API-utlösta kampanjer utlöses och systemloggarna visar ett **403 Forbidden** -fel från Azure Cosmos DB med ett meddelande som:
+
+_&quot;Åtkomsten till ditt konto har återkallats eftersom Azure Cosmos DB-tjänsten inte kan hämta AAD-autentiseringstoken för kontots standardidentitet&quot;_
+
+Det här felet inträffar vanligtvis när Azure-tjänstens huvudnamn som krävs för Cosmos DB-autentisering har inaktiverats, tagits bort eller felkonfigurerats.
+
++++Så här löser du det här problemet
+
+1. **Verifiera din Azure-tjänstens huvudnamn** - Kontrollera att din Azure-tjänstens huvudnamn eller hanterade identitet är aktiverad och inte har inaktiverats eller tagits bort i din Azure Active Directory.
+
+1. **Kontrollera behörigheter** - Bekräfta att tjänstens huvudnamn har de behörigheter som krävs för att komma åt Azure Key Vault- och Cosmos-databasresurserna. Tjänstens huvudnamn måste ha lämpliga rolltilldelningar för att kunna autentisera med Azure Cosmos DB.
+
+1. **Granska Azure Cosmos DB CMK-konfiguration** - Om du använder kundhanterade nycklar (CMK) kan du läsa [felsökningsguiden för Azure Cosmos DB CMK](https://learn.microsoft.com/en-us/azure/cosmos-db/cmk-troubleshooting-guide#azure-active-directory-token-acquisition-error){target="_blank"} för att få mer information om hur du återställer AAD-tokenvärvet.
+
+1. **Återaktivera och testa** - När konfigurationen har korrigerats aktiverar du tjänstens huvudnamn om det inaktiverades och testar om dina API-anrop för transaktionskampanj för att bekräfta att autentiseringen lyckades och att meddelanden levererades.
+
+>[!NOTE]
+>
+>Problemet orsakas vanligtvis av en felkonfiguration eller oavsiktlig inaktivering av det Azure-tjänsthuvudkonto som krävs för Cosmos DB-autentisering. Om tjänstens huvudnamn är aktiverat och korrekt konfigurerat kommer detta fel inte att uppstå i framtiden.
+
++++
