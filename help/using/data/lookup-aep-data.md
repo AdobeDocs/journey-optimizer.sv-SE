@@ -10,9 +10,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: c910664b343f8143579e4a22ff101d38476c4585
+source-git-commit: d4736257166a1fb19350aca45ee55decd3afd0b2
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 
 * **Ingen PII i datauppsättningar** - datauppsättningar som har aktiverats för sökning får inte innehålla någon PII (Personally Identiitable Information).
 
-* &#x200B;
+* 
    * **Borttagningsrisk** - Datauppsättningar som används i personalisering skyddas inte från att tas bort. Du måste hålla reda på vilka datauppsättningar som används för att vara säker på att de inte tas bort.
 
 * **Schematyp** - Datauppsättningar måste associeras med ett schema som är **NOT** av profiltyp eller händelsetyp.
@@ -100,10 +100,6 @@ Om ett anpassat namnutrymme inte har definierats än kontrollerar du att identit
 Använd växlingsknappen i användargränssnittet för datauppsättningshantering för att aktivera datauppsättningen för sökning.
 
 ![](assets/aep-data-enable.png)
-
->[!NOTE]
->
->Vi rekommenderar att datauppsättningen INTE är aktiverad för profilen eftersom detta kan leda till ökad profilrikedom och inte behövs för att utföra sökningarna.
 
 ### API-metod
 
