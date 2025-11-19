@@ -8,10 +8,10 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: cef105e55f3353c616e18be84faa0ee774aeac06
+source-git-commit: e6e8178f7a57a6d57c8d137dd313a26a5878994b
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 17%
+source-wordcount: '1781'
+ht-degree: 16%
 
 ---
 
@@ -33,7 +33,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## API:er för begränsning och begränsning {#capping}
 
@@ -127,6 +127,24 @@ För ett visst anrop kan högst tre försök utföras efter det första anropet,
 +++ Var kan jag konfigurera tidsgränsen? Finns det ett maxvärde?
 
 Under varje resa kan du definiera en tidsgräns. Tidsgränsen har konfigurerats i egenskaperna för en resa. Tidsgränsen måste vara mellan 1 och 30 sekunder. Se [det här avsnittet](../configuration/external-systems.md#timeout) och [sidan](../building-journeys/journey-properties.md#timeout_and_error).
+
++++
+
++++ Vad är egresutkastet och när ska jag använda det?
+
+Gresproxyn tillhandahåller en **statisk IP-adress** för utgående samtal från Journey Optimizer till dina externa system. Använd det när slutpunkterna från tredje part kräver IP-tillåtelselistning.
+
+**Viktigt!** Gressproxyn kontrollerar INTE genomströmning, hastighetsbegränsningar eller antalet samtidiga anslutningar. Om du vill hantera samtalsvolym och anslutningsgränser använder du [API:t för begränsning](capping.md) eller [API:t för begränsning](throttling.md).
+
+**Använd egresproxy för:**
+* Tillåtslista en statisk IP-adress på en brandvägg eller slutpunkt från tredje part
+
+**Använd API:er för begränsning/begränsning för:**
+* Begränsa antalet API-anrop per sekund
+* Styra samtidiga anslutningar till slutpunkten
+* Skydda det externa systemet mot överbelastning
+
+Kontakta Adobe för att aktivera offresproxy för din organisation om du behöver en statisk IP för tillåtelselistning.
 
 +++
 
