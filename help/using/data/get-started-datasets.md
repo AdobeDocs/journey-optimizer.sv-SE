@@ -44,7 +44,7 @@ Om du vill förhandsgranska en datauppsättning väljer du **Förhandsgranska da
 
 ## [!DNL Journey Optimizer] systemdatauppsättningar {#system-datasets}
 
-I det här avsnittet visas systemdatauppsättningar som används av [!DNL Journey Optimizer]. Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+I det här avsnittet visas systemdatauppsättningar som används av [!DNL Journey Optimizer]. Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -74,8 +74,8 @@ Att lägga till data i [!DNL Adobe Experience Platform] är grunden för att ska
 
 Du kan skapa en datauppsättning från ett schema eller en CSV-fil. Detaljerad information om hur du skapar datauppsättningar finns i [!DNL Adobe Experience Platform]-dokumentationen:
 
-* [Skapa en datauppsättning med ett befintligt schema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema){target="_blank"}
-* [Mappa en CSV-fil till ett befintligt XDM-schema](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema){target="_blank"}
+* [Skapa en datauppsättning med ett befintligt schema](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#schema){target="_blank"}
+* [Mappa en CSV-fil till ett befintligt XDM-schema](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema){target="_blank"}
 
 I den här videon får du lära dig hur du skapar en datauppsättning, mappar den till ett schema, lägger till data i den och bekräftar att data har importerats.
 
@@ -89,16 +89,16 @@ En av kärnfunktionerna i [!DNL Adobe Experience Platform] är att samla data fr
 
 Med [!DNL Adobe Experience Platform Data Governance] kan du hantera kunddata och säkerställa efterlevnad av regler, begränsningar och policyer som gäller för dataanvändning. Det spelar en nyckelroll inom Experience Platform på olika nivåer, bland annat i fråga om katalogisering, datalinje, dataanvändningsetiketter, dataanvändningspolicyer och kontroll av användningen av data för marknadsföringsåtgärder.
 
-Läs mer om etiketter för datastyrning och dataanvändning i [dokumentationen för datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html){target="_blank"}
+Läs mer om etiketter för datastyrning och dataanvändning i [dokumentationen för datastyrning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html?lang=sv-SE){target="_blank"}
 
 ## Exempel och användningsområden {#samples}
 
-* [Självstudiekurs - Importera data till Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html){target="_blank"}
+* [Självstudiekurs - Importera data till Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=sv-SE){target="_blank"}
 * [Användningsfall från början till slut](../audience/creating-test-profiles.md) - Skapa ett schema, en datauppsättning och inmatningsdata för att lägga till testprofiler i [!DNL Adobe Journey Optimizer]
 * [Frågeexempel](../data/datasets-query-examples.md) - [!DNL Adobe Journey Optimizer] datauppsättningar och relaterade användningsexempel.
 
 >[!MORELIKETHIS]
 >
->* [Dokumentation för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}
->* [Dokumentation om dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
->* [Bästa praxis för berättigande av datahanteringslicens](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/data-management-best-practices#data-management-best-practices){target="_blank"}
+>* [Dokumentation för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE){target="_blank"}
+>* [Dokumentation om dataöverföring](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+>* [Bästa praxis för berättigande av datahanteringslicens](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/license/data-management-best-practices#data-management-best-practices){target="_blank"}
