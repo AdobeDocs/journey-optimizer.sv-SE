@@ -8,9 +8,9 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 19e237f8b83d26eb7fa2c6b7548fcb6c4c01c9ce
+source-git-commit: 507a3caa79856dd2c8b58b395507caf164eb0546
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '2598'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,8 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 
 +++Vilken regel gjorde att en profil inte gick in på en viss resa
 
+Den här frågan returnerar den avvisade regeluppsättningen och regelinformationen när en profil hindras från att registrera en resa på grund av begränsningar eller behörighetskrav.
+
 _Exempel_
 
 ```sql
@@ -75,6 +77,8 @@ AND
 +++
 
 +++Hur många fel som har inträffat på varje nod i en viss resa under en viss tid
+
+Den här frågan räknar de distinkta profiler som upplevde fel vid varje nod i en resa, grupperade efter nodnamn. Den innehåller alla typer av körningsfel och hämtningsfel.
 
 _Datasjöfråga_
 
@@ -100,6 +104,8 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
 
 +++Hur många händelser som har tagits bort från en viss resa under en viss tidsperiod
 
+Den här frågan räknar det totala antalet händelser som har tagits bort från en resa. Den filtrerar efter olika bortkastningshändelsekoder, inklusive fel i segmentexportjobb, borttagning av dispatcher och kassering av tillståndsdatorer.
+
 _Datasjöfråga_
 
 ```sql
@@ -120,9 +126,9 @@ AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 
 +++Vad som händer med en viss profil under en viss resa inom en viss tidsram
 
-_Datasjöfråga_
-
 Den här frågan returnerar alla steg-händelser och tjänsthändelser för den angivna profilen och resan för den angivna tiden i kronologisk ordning.
+
+_Datasjöfråga_
 
 ```sql
 SELECT
@@ -330,6 +336,8 @@ Den här frågan returnerar alla olika fel som inträffade när en åtgärd kör
 
 +++Sök efter om en profil har angett en viss resa
 
+Den här frågan kontrollerar om en viss profil har påbörjat en resa genom att räkna händelserna som är kopplade till den profilen och den aktuella kombinationen av resan.
+
 _Datasjöfråga_
 
 ```sql
@@ -406,6 +414,8 @@ Frågan returnerar listan med alla meddelanden tillsammans med antalet som anrop
 
 +++Hitta alla meddelanden en profil har tagit emot de senaste 30 dagarna
 
+Den här frågan hämtar alla slutförda meddelandeåtgärder för en viss profil under de senaste 30 dagarna grupperade efter meddelandenamn.
+
 _Datasjöfråga_
 
 ```sql
@@ -434,6 +444,8 @@ Frågan returnerar listan med alla meddelanden tillsammans med antalet som anrop
 
 +++Hitta alla resor en profil har registrerat under de senaste 30 dagarna
 
+Den här frågan returnerar alla resor som en viss profil har angivit under de senaste 30 dagarna, tillsammans med antalet poster för varje resa.
+
 _Datasjöfråga_
 
 ```sql
@@ -459,6 +471,8 @@ Frågan returnerar listan med alla resenamn tillsammans med det antal gånger so
 +++
 
 +++Antal profiler som är kvalificerade för en resa dagligen
+
+Den här frågan ger en daglig uppdelning av antalet distinkta profiler som har passerat en resa under en viss tidsperiod.
 
 _Datasjöfråga_
 
@@ -490,6 +504,8 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 ## Frågor relaterade till den lästa målgruppen {#read-segment-queries}
 
 +++Tidsåtgång för att slutföra ett målgruppsexportjobb
+
+Den här frågan beräknar varaktigheten för ett målgruppsexportjobb genom att hitta tidsskillnaden mellan när jobbet placerades i kö och när det slutfördes.
 
 _Datasjöfråga_
 
@@ -525,6 +541,8 @@ Frågan returnerar tidsskillnaden i minuter, mellan den tidpunkt då målgruppen
 
 +++Antal profiler som har ignorerats under resan eftersom de var dubbletter
 
+Den här frågan räknar antalet distinkta profiler som ignorerades på grund av instansdupliceringsfel under Läs publik-aktiviteten.
+
 _Datasjöfråga_
 
 ```sql
@@ -548,6 +566,8 @@ Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom de var dub
 +++
 
 +++Antal profiler som har ignorerats under resan på grund av ogiltigt namnutrymme
+
+Den här frågan returnerar antalet profiler som ignorerades eftersom de hade ett ogiltigt namnutrymme eller saknades en identitet för det önskade namnutrymmet.
 
 _Datasjöfråga_
 
@@ -573,6 +593,8 @@ Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom de hade
 
 +++Antal profiler som har ignorerats under resan på grund av ingen identitetskarta
 
+Den här frågan räknar de profiler som ignorerades eftersom de saknade en identitetskarta som krävs för körning av resan.
+
 _Datasjöfråga_
 
 ```sql
@@ -597,6 +619,8 @@ Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom identit
 
 +++Antal profiler som ignorerades under resan eftersom resan var i testnoden och profilen inte var en testprofil
 
+Den här frågan identifierar profiler som ignorerades när resan kördes i testläge, men profilen hade inte attributet testProfile inställt på true.
+
 _Datasjöfråga_
 
 ```sql
@@ -615,11 +639,13 @@ _experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NOT_A_TEST_PROFILE'
 ```
 
-Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom exportjobbet kördes i testläge, men profilen hade inte attributet testProfile inställt på true.
+Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom exportjobbet kördes i testläge, men profilen hade inte attributet testProfile inställt på true.
 
 +++
 
 +++Antal profiler som har ignorerats under resan på grund av ett internt fel
+
+Den här frågan returnerar antalet profiler som ignorerades på grund av interna systemfel under körningen.
 
 _Datasjöfråga_
 
@@ -644,6 +670,8 @@ Frågan returnerar alla profil-ID:n som ignorerades av resan på grund av ett in
 +++
 
 +++Översikt över Läs målgrupp för en viss reseversion
+
+Den här frågan innehåller en omfattande översikt över aktiviteten Läs målgrupp, inklusive information om segmentexportjobb, händelsekoder, status och antal profiler för alla faser i målgruppsexportprocessen.
 
 _Datasjöfråga_
 
@@ -679,12 +707,14 @@ Vi kan också upptäcka problem som:
 VIKTIGT! Om ingen händelse returneras av frågan kan det bero på någon av följande orsaker:
 
 * transportversionen inte har nått schemat
-* Om reseversionen ska ha utlöst exportjobbet genom att anropa orchestrator, gick något fel i upstram-flödet: problem vid resedistribution, affärshändelse eller problem med schemaläggaren.
+* Om reseversionen ska ha utlöst exportjobbet genom att anropa orchestrator, gick något fel i det överordnade flödet: problem vid resedistribution, affärshändelse eller problem med schemaläggare.
 
 +++
 
 
 +++Få läsfel för en viss reseversion
+
+Den här frågan filtrerar efter specifika felhändelsekoder som är relaterade till fel i läsningen av målgrupper, t.ex. ämnesfel, API-anropsfel, timeout och misslyckade exportjobb.
 
 _Datasjöfråga_
 
@@ -713,6 +743,8 @@ WHERE
 +++
 
 +++Hämta bearbetningsstatus för exportjobb
+
+Den här frågan hämtar bearbetningsstatus för målgruppsexportjobb, och visar om de lyckades eller misslyckades tillsammans med profilexportstatistik.
 
 _Datasjöfråga_
 
@@ -744,6 +776,8 @@ Om ingen post returneras betyder det att antingen:
 +++
 
 +++Få mätvärden för exporterade profiler, inklusive utkast och exportjobbstatistik för varje exportjobb
+
+I den här frågan kombineras antalet ignorerade profiler med exportjobbstatistik för att ge en fullständig bild av målgruppens exportresultat för varje enskilt exportjobb.
 
 _Datasjöfråga_
 
@@ -806,6 +840,8 @@ WHERE T1.EXPORTJOB_ID = T2.EXPORTJOB_ID
 +++
 
 +++Få aggregerade mätvärden (målgruppsexportjobb och utkast) för alla exportjobb
+
+Den här frågan sammanställer övergripande mätvärden för alla exportjobb för en viss reseversion, vilket är användbart för återkommande resor eller affärsutlösta resor med återanvändning av ämnen.
 
 _Datasjöfråga_
 
@@ -874,6 +910,8 @@ Den returnerar den totala mätningen för en viss reseversion, oavsett vilka job
 
 +++Profilen ignoreras på grund av en annan målgruppsimplementering än den konfigurerade
 
+Den här frågan identifierar profiler som har ignorerats eftersom deras status för målgruppsrealisering inte matchade kundens konfiguration för målgruppskvalifikation (t.ex. konfigurerad för &quot;enter&quot; men profilen &quot;avslutad&quot;).
+
 _Datasjöfråga_
 
 ```sql
@@ -899,6 +937,8 @@ Den här frågan returnerar alla profil-ID:n som ignorerades av reseversionen p�
 +++
 
 +++Publikkvalificeringshändelser som ignorerats av någon annan orsak för en viss profil
+
+Den här frågan hämtar alla målgruppsklassificeringar eller externa händelser som har tagits bort för en viss profil på grund av interna tjänstfel.
 
 _Datasjöfråga_
 
@@ -930,6 +970,8 @@ Den här frågan returnerar alla händelser (externa händelser/målgruppsklassi
 
 +++Kontrollera om en affärshändelse har tagits emot för en resa
 
+Den här frågan räknar antalet gånger en affärshändelse har tagits emot av en resa, grupperad efter datum, inom en angiven tidsram.
+
 _Datasjöfråga_
 
 ```sql
@@ -958,6 +1000,8 @@ WHERE DATE(timestamp) > (now() - interval '6' hour)
 
 +++Kontrollera om en extern händelse för en profil ignorerades eftersom ingen relaterad resa hittades
 
+Den här frågan identifierar när en extern händelse för en viss profil ignorerades eftersom ingen aktiv eller matchande resa har konfigurerats för att ta emot händelsen.
+
 _Datasjöfråga_
 
 ```sql
@@ -985,6 +1029,8 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 +++
 
 +++Kontrollera om en extern händelse för en profil har ignorerats av någon annan anledning
+
+Den här frågan hämtar externa händelser som ignorerats för en viss profil på grund av interna tjänstfel, tillsammans med händelse-ID och felkod.
 
 _Datasjöfråga_
 
@@ -1016,6 +1062,8 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 
 +++Kontrollera antalet händelser som ignoreras av stateMachine av errorCode
 
+Den här frågan sammanställer alla händelser som ignoreras av transporttillståndsdatorn, grupperade efter felkod, för att hjälpa till att identifiera de vanligaste orsakerna till ignorering.
+
 _Datasjöfråga_
 
 ```sql
@@ -1037,6 +1085,8 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 +++
 
 +++Kontrollera alla ignorerade händelser eftersom återinträde inte tillåts
+
+Den här frågan identifierar alla händelser som har ignorerats eftersom en profil försökte att ange en resa igen när återinträde inte var tillåtet i resekonfigurationen.
 
 _Datasjöfråga_
 
@@ -1068,6 +1118,8 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 
 +++Antal dagliga aktiva resor
 
+Den här frågan returnerar ett dagligt antal unika reseversioner som har haft aktivitet, vilket hjälper dig att förstå mönster för körning av resan över tid.
+
 _Datasjöfråga_
 
 ```sql
@@ -1094,6 +1146,8 @@ Frågan returnerar, för den angivna perioden, antalet unika resor som utlöstes
 ## Frågor om reseinstanser {#journey-instances-queries}
 
 +++Antal profiler i ett specifikt tillstånd vid en viss tidpunkt
+
+I den här frågan används CTE (Common Table Expressions) för att identifiera profiler som väntar på en viss nod i en resa genom att söka efter profiler som passerat genom noden men som ännu inte har gått vidare till nästa nod.
 
 _Datasjöfråga_
 
@@ -1245,6 +1299,8 @@ ORDER BY
 
 +++Hur många profiler som slutade resan under den angivna tidsperioden
 
+Den här frågan räknar vilka resinstanser som avslutats under en angiven tidsperiod, inklusive avslut på grund av slutförande, fel, timeout eller fel vid capping.
+
 _Datasjöfråga_
 
 ```sql
@@ -1284,6 +1340,8 @@ ORDER BY
 +++
 
 +++Hur många profiler slutade resan under den angivna tidsperioden med nod/status
+
+Den här frågan innehåller en detaljerad beskrivning av resans avslutningar, som visar nodnamnet och avslutningsstatusen för varje avslutad instans för att hjälpa till att identifiera var och varför profiler lämnade resan.
 
 _Datasjöfråga_
 
@@ -1330,6 +1388,8 @@ ORDER BY
 ## Frågor relaterade till prestandamått för anpassade åtgärder {#query-custom-action}
 
 +++ Totalt antal lyckade anrop, fel och begäranden per sekund för varje slutpunkt under en viss tidsperiod
+
+Den här frågan innehåller prestandamått för anpassade HTTP-åtgärder, inklusive totalt antal anrop, slutförda anrop, antal fel per typ (4xx, 5xx, timeouts, cApped) och genomströmning i begäranden per sekund för varje slutpunkt.
 
 _Datasjöfråga_
 
@@ -1390,6 +1450,8 @@ ORDER BY
 +++
 
 +++ Tidsserie med lyckade anrop, fel och genomströmning för varje slutpunkt under en viss tidsperiod
+
+Den här frågan ger samma prestandamått som föregående fråga men är ordnad som en tidsserie, och visar hur slutpunktsprestanda varierar över tid med en minuts granularitet.
 
 _Datasjöfråga_
 
@@ -1457,6 +1519,8 @@ ORDER BY
 
 +++Svarsfördröjning för varje slutpunkt vid 50, 95, 99 och 99,9:e percentilen under en specifik tidsperiod
 
+Den här frågan beräknar responstidens för anpassade åtgärdsslutpunkter, vilket hjälper dig att förstå fördröjningsfördelningen och identifiera prestandavärden vid olika percentiltröskelvärden.
+
 _Datasjöfråga_
 
 ```sql
@@ -1508,6 +1572,8 @@ ORDER BY
 +++
 
 +++Tidsserie för svarstidsfördröjning i procent för varje slutpunkt under en viss tidsperiod
+
+Den här frågan tillhandahåller fördröjningspercentiler ordnade som en tidsserie, så att du kan spåra hur svarstiderna för slutpunkter ändras över tid på olika percentilnivåer.
 
 _Datasjöfråga_
 
@@ -1567,6 +1633,8 @@ ORDER BY
 
 +++ Väntetid i kö på strypta slutpunkter vid 50:e och 95:e percentilen under en viss tidsperiod
 
+Den här frågan analyserar köväntetider för begränsning av slutpunkter, vilket visar väntetiderna i 50 och 95:e percentilen så att du lättare kan förstå hur strypningen påverkar dina anpassade åtgärder.
+
 _Datasjöfråga_
 
 ```sql
@@ -1614,6 +1682,8 @@ ORDER BY
 +++
 
 +++ Tidsserie med köväntetidpercentiler för varje strypt slutpunkt
+
+Den här frågan tillhandahåller köns kötidspoängen som en tidsserie, vilket gör att du kan övervaka hur begränsning påverkar väntetiderna över tiden för varje slutpunkt.
 
 _Datasjöfråga_
 
@@ -1668,6 +1738,8 @@ ORDER BY
 +++
 
 +++ Antal fel per typ och kod för en specifik slutpunkt under en viss tidsperiod
+
+Den här frågan innehåller en detaljerad beskrivning av fel för en specifik slutpunkt, grupperade efter feltyp och felkod, inklusive information om nya försök.
 
 _Datasjöfråga_
 
