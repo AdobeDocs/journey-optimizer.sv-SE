@@ -94,11 +94,11 @@ Klicka på din roll nedan för att få tillgång till specifik vägledning som �
 
 Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430318?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
 
 ## Ytterligare resurser
 
 Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 * [Versionsinformation](../rn/release-notes.md)
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE)
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html)
