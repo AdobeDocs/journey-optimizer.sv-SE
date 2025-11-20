@@ -31,7 +31,7 @@ Affärshändelser kan vara&quot;en produkt är tillbaka i lager&quot;,&quot;ett 
 
 >[!NOTE]
 >
->Du kan också titta på användningsexemplet [självstudiekurs](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/use-case-business-event){target="_blank"} för affärshändelser. Observera att schemat inte behöver aktiveras för profilen.
+>Du kan också titta på användningsexemplet [självstudiekurs](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/use-case-business-event){target="_blank"} för affärshändelser. Observera att schemat inte behöver aktiveras för profilen.
 
 ## Viktiga anteckningar {#important-notes}
 
@@ -56,7 +56,7 @@ Affärshändelser följer reglerna för återinträde på samma sätt som för e
 
 **Vilka är skyddsräckena för att undvika att materialiserade målgrupper läses in för mycket?**
 
-När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+När det gäller företagsevenemang som tagits under en viss resa återanvänds data som drivs av det första händelsejobbet under en 1-timmars tidsperiod. För schemalagda resor finns det ingen garanti. Läs mer om målgrupper i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
 
 ## Kom igång med affärsevenemang {#gs-business-events}
 
