@@ -10,7 +10,7 @@ role: User
 level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
 exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
-source-git-commit: 53ae620926fc8ba3e9c8b558584ed8eb6942e3d4
+source-git-commit: 365ed7f735760ee5763d0f12ea366c662a097948
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Den här funktionen gör att marknadsförarna kan använda visuellt tilltalande,
 
 * Om du använder innehåll som har skapats i HTML är du i [kompatibilitetsläge](existing-content.md) och du kan inte använda teman direkt på det här innehållet.
 
-   * Om du vill använda teman måste du först spara det importerade innehållet [&#x200B; som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
+   * Om du vill använda teman måste du först spara det importerade innehållet [ som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
 
    * Du kan även konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
 
@@ -250,4 +250,4 @@ Med [!DNL Journey Optimizer] kan du konvertera en mall som har skapats med manue
 
    ![](assets/generate-theme-colors.png){width=90%}
 
-1. Klicka på **[!UICONTROL Save]** om du vill lagra det nya temat för återanvändning. Du kan nu använda det här temat för ditt innehåll, till exempel andra teman. [Lär dig hur](#leverage-themes-fragment)
+1. Klicka på **[!UICONTROL Save]** om du vill lagra det nya temat för återanvändning. Du kan nu använda det här temat för ditt innehåll, till exempel andra teman. [Lär dig hur](#apply-themes-email)
