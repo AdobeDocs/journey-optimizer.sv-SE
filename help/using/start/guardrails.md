@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 78cf16d0f62d6cb7fac82b9e8f89e8726e2db896
 workflow-type: tm+mt
-source-wordcount: '2915'
+source-wordcount: '3061'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 Nedan hittar du ytterligare skyddsförslag och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 
 ## Webbläsare som stöds {#browsers}
@@ -60,6 +60,24 @@ Följande skyddsutkast gäller för [e-postkanalen](../email/get-started-email.m
 
 När du utformar e-postmeddelanden söker systemet efter nyckelinställningar och visar varningar (rekommendationer och bästa praxis) och fel (blockerar problem som förhindrar testning eller aktivering). Läs mer om e-postaviseringar och valideringskrav i [det här avsnittet](../email/create-email.md#check-email-alerts).
 
+#### Meddelandeinnehållets storlek för resepublikation {#message-content-size}
+
+Vid publicering av resor som innehåller e-postmeddelanden får meddelandets totala innehållsstorlek inte överstiga **2 MB** efter backend-bearbetning. Under publiceringen bearbetar systemet automatiskt meddelandeinnehåll genom att lagra länkar, bilder och använda omformningar, vilket ökar nyttolastens storlek utöver det innehåll som skapats.
+
+>[!CAUTION]
+>
+>Om det slutliga bearbetade meddelandeinnehållet överstiger 2 MB kommer det inte att gå att publicera färderna. För att undvika publiceringsfel bör du behålla det skapade meddelandeinnehållet långt under 2 MB - helst under **1 MB** - så att en buffert på 300-400 kB kan användas för backend-bearbetning av overhead.
+
+**Bästa tillvägagångssätt för att förhindra publiceringsfel:**
+
+* Behåll e-postinnehåll som skapats under 1 MB
+* Minimera antalet innehållsvarianter
+* Optimera och komprimera bilder innan du lägger till dem i meddelanden
+* Ta bort oanvända resurser och onödiga HTML-element
+* Testa meddelandestorlek före publicering av resor till produktion
+
+Om det inte går att publicera resan på grund av innehållets storlek kan du minska meddelandeinnehållet och publicera om resan.
+
 ### SMS-skyddsräcken {#sms-guardrails}
 
 Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
@@ -74,7 +92,7 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
   Journey Optimizer inkommande kanaler har nya profiler som kanske inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids.
 
-  Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+  Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 * Journey Optimizer stöder maximalt 500 aktiva inkommande åtgärder när som helst. Dessa inkommande åtgärder ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [kodbaserade upplevelser](../code-based/get-started-code-based.md), [innehållskort](../../rp_landing_pages/content-card-landing-page.md)) räknas om de är en del av en live-kampanj eller om de är en nod som används i en direktresa. När du har nått det här numret måste du inaktivera äldre kampanjer eller resor som använder inkommande åtgärder innan du kan starta nya.
 
