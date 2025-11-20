@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: resurser, Experience Manager, integration
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
-source-git-commit: c4f6b7754255ce3bf0229702b10955abf9843548
+source-git-commit: 5ac4220250b69289ec0f722ca54fef3b63174643
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 1%
+source-wordcount: '1081'
+ht-degree: 0%
 
 ---
 
@@ -26,11 +26,11 @@ Sammanför arbetsflöden för marknadsföring och kreativitet med **[!DNL Adobe 
 
 * **[!DNL Assets as a Cloud Service]**: Adobe Experience Manager Assets as a Cloud Service är en lättanvänd molnlösning för effektiv hantering av digitala resurser och dynamiska media. Programmet innehåller smidigt avancerade funktioner, bland annat artificiell intelligens och maskininlärning.
 
-  Läs mer i [Adobe Experience Manager as a Cloud Service-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html?lang=sv-SE){target="_blank"}.
+  Läs mer i [Adobe Experience Manager as a Cloud Service-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html){target="_blank"}.
 
 * **[!DNL Assets Essentials]**: Experience Manager Assets Essentials är en lättviktig Assets as a Cloud Service-lösning för enhetlig resurshantering och samarbete. Med ett modernt, förenklat gränssnitt kan kreatörer och marknadsförare enkelt lagra, upptäcka och distribuera digitalt material.
 
-  Läs mer i [dokumentationen till Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=sv-SE){target="_blank"}.
+  Läs mer i [dokumentationen till Adobe Experience Manager Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target="_blank"}.
 
 Beroende på ditt kontrakt kan du komma åt **[!DNL Adobe Experience Manager Assets Essentials]** eller **[!DNL Adobe Experience Manager Assets as a Cloud Service]** direkt från **[!DNL Adobe Journey Optimizer]** till den vänstra menyn **[!UICONTROL Assets]**. Du kan också komma åt resurser och mappar när [du utformar ett e-postinnehåll](../email/get-started-email-design.md).
 
@@ -40,14 +40,14 @@ Beroende på ditt kontrakt kan du komma åt **[!DNL Adobe Experience Manager Ass
 
 >[!TAB Adobe Experience Manager Assets Essentials]
 
-Innan du använder [!DNL Adobe Experience Manager Assets Essentials] måste du lägga till användare i produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer i [dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html?lang=sv-SE#add-user-groups){target="_blank"}.
+Innan du använder [!DNL Adobe Experience Manager Assets Essentials] måste du lägga till användare i produktprofilerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. Läs mer i [dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/get-started-admins/deploy-administer.html#add-user-groups){target="_blank"}.
 
 >[!NOTE]
->För Journey Optimizer-produkter som inhämtats före 6 januari 2022 måste du distribuera **[!DNL Adobe Experience Manager Assets Essentials]** för din organisation. Mer information finns i avsnittet [Distribuera resurser - Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+>För Journey Optimizer-produkter som inhämtats före 6 januari 2022 måste du distribuera **[!DNL Adobe Experience Manager Assets Essentials]** för din organisation. Mer information finns i avsnittet [Distribuera resurser - Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 >[!TAB Adobe Experience Manager Assets as a Cloud Service]
 
-Innan du använder **[!DNL Adobe Experience Manager Assets as a Cloud Service]** måste du lägga till användare i Assets Cloud Services. Läs mer i [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=sv-SE).
+Innan du använder **[!DNL Adobe Experience Manager Assets as a Cloud Service]** måste du lägga till användare i Assets Cloud Services. Läs mer i [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html).
 
 >[!ENDTABS]
 
@@ -83,9 +83,9 @@ Om du vill importera filer till **[!DNL Assets Essentials]** eller **[!DNL Asset
 
 1. Klicka på **[!UICONTROL Upload files]** i **[!UICONTROL Browse]** och välj om du vill **[!UICONTROL Browse files]** eller **[!UICONTROL Browse folders]**.
 
-1. Markera filen som du vill överföra. När du är klar klickar du på **[!UICONTROL Upload]**. Mer information om hur du hanterar dina resurser finns på [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=sv-SE).
+1. Markera filen som du vill överföra. När du är klar klickar du på **[!UICONTROL Upload]**. Mer information om hur du hanterar dina resurser finns på [sidan](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html).
 
-1. Om du vill redigera dina resurser ytterligare med Adobe Photoshop Express dubbelklickar du på resurserna. Välj sedan ikonen **[!UICONTROL Edit mode]** på den högra menyn. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/edit-images.html?lang=sv-SE){target="_blank"}.
+1. Om du vill redigera dina resurser ytterligare med Adobe Photoshop Express dubbelklickar du på resurserna. Välj sedan ikonen **[!UICONTROL Edit mode]** på den högra menyn. [Läs mer](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/edit-images.html){target="_blank"}.
 
    ![](assets/media_library_12.png)
 
@@ -139,5 +139,42 @@ Ja, du kan använda dynamiska medie-URL:er i Journey Optimizer e-postredigering.
 +++ Kan Journey Optimizer-användare göra ändringar i Adobe Experience Manager Assets as a Cloud Service-databasen från Journey Optimizer gränssnitt?
 
 Så länge som Journey Optimizer-användaren är en berättigad **[!DNL Adobe Experience Manager Assets as a Cloud Service]**-standardanvändare och har behörigheten Redigera i databasen, kan användaren redigera **[!DNL Adobe Experience Manager Assets as a Cloud Service]**-databasen.
+
++++
+
++++ Varför går det inte att läsa in bilder i e-postmeddelanden som skickas från Journey Optimizer?
+
+Om resurser (t.ex. bilder) hanteras via Adobe Experience Manager och används i Journey Optimizer omfattas de av en livscykelpolicy med en TTL (Time-To-Live). När TTL-perioden har löpt ut kan resurser tas bort från lagringsutrymmet (CDN), vilket kan resultera i brutna bilder i e-postmeddelanden som refererar till dessa resurser.
+
+>[!NOTE]
+>
+>Resursens TTL hanteras av Adobe Journey Optimizer backend-tjänster och kan för närvarande inte konfigureras av kunder. Den aktuella TTL-perioden är inställd på 730 dagar för alla Journey Optimizer-organisationer.
+
++++
+
++++ Hur kan jag lösa trasiga bilder på grund av att resursen har gått ut?
+
+Så här återställer du bildens tillgänglighet när resurserna har gått ut:
+
+1. **Publicera om de berörda resurserna**: Navigera till resursen i Adobe Experience Manager och publicera den igen. Detta gör att resursen blir tillgänglig igen i CDN.
+
+2. **Uppdatera innehållsreferenser**: Om du använder innehållsfragment eller mallar som refererar till utgångna resurser:
+   * Skapa ett utkast eller en klon av innehållsfragmentet
+   * Lägg till eller markera om resursen
+   * Publicera det uppdaterade innehållet
+
+3. **Proaktiv hantering**: För att undvika framtida avbrott bör du regelbundet granska och publicera om resurser som används i aktiva e-postkampanjer, särskilt de som närmar sig TTL-förfalloperioden.
+
+>[!CAUTION]
+>
+>Kraven för återpublicering gäller alla miljöer (produktion, fas, utveckling). Se till att resurserna är tillgängliga genom att hantera livscykeln på rätt sätt.
+
++++
+
++++ Kommer logiken för att förfalla tillgångar att förbättras i framtiden?
+
+Ja, Adobe arbetar aktivt med förbättringar för att förfina tillgångarnas förfallodatum och logik för livscykelhantering. Dessa förbättringar syftar till att ge bättre insyn i tillgångarnas livscykelstatus och minska risken för trasiga bilder i livekampanjer.
+
+Om du vill ha de senaste uppdateringarna kan du kontakta ditt Adobe-kontoteam eller övervaka versionsinformationen för Adobe Journey Optimizer.
 
 +++

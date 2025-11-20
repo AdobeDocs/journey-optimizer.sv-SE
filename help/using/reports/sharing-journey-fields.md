@@ -8,10 +8,10 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 177b4a97-c757-40ca-a190-fbd88169e5e2
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 6961a07e2874f9beb76a9beaebb29997d114d8e7
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 6%
+source-wordcount: '130'
+ht-degree: 3%
 
 ---
 
@@ -42,6 +42,10 @@ Typ: sträng
 Namn på resan.
 
 Typ: sträng
+
+>[!NOTE]
+>
+>Resursnamnet används för att länka data för körning av resan till rapportdatamängder. Om du byter namn på en resa kontrollerar du att det nya namnet matchar namnet i rapportdatauppsättningen för att få korrekta rapporter. En felmatchning kan göra att rapportdata inte visas som förväntat. Läs mer om [felsökning av saknade rapporteringsdata](../building-journeys/report-journey.md#troubleshooting-missing-data).
 
 ## description {#description-field}
 

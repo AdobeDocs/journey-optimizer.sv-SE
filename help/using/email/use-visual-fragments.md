@@ -8,16 +8,16 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 6a5b4c94228db0ab9573124762e89181c2c41b45
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
 
 # Lägg till visuella fragment i e-postmeddelanden {#use-visual-fragments}
 
-Ett fragment är en återanvändbar komponent som kan refereras i ett eller flera e-postmeddelanden för Journey Optimizer-kampanjer, resor eller innehållsmall. Med den här funktionen kan man skapa flera anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa e-postinnehåll i en förbättrad designprocess. [Lär dig skapa och hantera fragment](../content-management/fragments.md).
+Ett fragment är en återanvändbar komponent som kan refereras i ett eller flera e-postmeddelanden för Journey Optimizer-kampanjer, resor eller innehållsmall. Med den här funktionen kan man skapa färdiga anpassade innehållsblock som kan användas av marknadsföringsanvändare för att snabbt sammanställa e-postinnehåll i en förbättrad designprocess. [Lär dig skapa och hantera fragment](../content-management/fragments.md).
 
 ➡️ [Lär dig hur du hanterar, redigerar och använder fragment i den här videon](../content-management/fragments.md#video-fragments)
 
@@ -28,7 +28,6 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 >[!NOTE]
 >
 >Du kan lägga till upp till 30 fragment i en viss leverans. Fragment kan bara kapslas upp till 1 nivå.
-
 
 1. Öppna e-post- eller mallinnehåll med hjälp av [e-post-Designer](get-started-email-design.md).
 
@@ -72,6 +71,35 @@ Följ stegen nedan om du vill använda ett fragment i ett e-postmeddelande.
 1. Vid behov kan du bryta arvet med det ursprungliga fragmentet. [Läs mer](#break-inheritance)
 
 1. Lägg till så många fragment du vill och **[!UICONTROL Save]** dina ändringar.
+
+### Begränsningar när dynamiskt innehåll används i fragment {#fragment-dynamic-content}
+
+>[!CAUTION]
+>
+>Tänk på följande begränsning när du arbetar med fragment som innehåller dynamiskt innehåll (villkorligt innehåll):
+>
+>**Kapsling av fragment med dynamiskt innehåll stöds inte.** Du kan inte placera ett fragment som innehåller dynamiskt innehåll i ett olåst fragment som även innehåller dynamiskt innehåll. Den här konfigurationen som inte stöds kan orsaka:
+>
+>* Förlorade villkorade innehållsmappningar
+>* Varningar för kompatibilitetsläge i e-postmeddelandet om Designer
+>* Inkonsekvent e-poståtergivning
+>
+>**Rekommenderad metod:** Om du använder flera fragment med dynamiskt innehåll i ditt e-postmeddelande lägger du till varje fragment direkt i dess eget strukturblock på e-postnivå. Detta garanterar korrekt funktionalitet och förhindrar de problem som nämns ovan.
+
+## Bästa tillvägagångssätt för fragment med dynamiskt innehåll {#fragment-best-practices}
+
+Följ dessa metodtips när du arbetar med visuella fragment och dynamiskt innehåll (villkorligt innehåll):
+
+* **Strukturera e-postmeddelandet korrekt**: När du skapar e-postmeddelanden med fragment som innehåller dynamiskt innehåll lägger du till varje fragment i ett dedikerat strukturblock på e-postnivå. Undvik kapsling av fragment med dynamiskt innehåll i andra olåsta fragment som även innehåller dynamiskt innehåll.
+
+* **Planera framåt**: Innan du lägger till fragment i e-postmeddelandet måste du identifiera vilka som innehåller dynamiskt innehåll och planera layouten utifrån detta. Detta förhindrar konfigurationsproblem och säkerställer en ren struktur från början.
+
+* **Designa återanvändbara fragment noggrant**: När du skapar fragment som ska innehålla dynamiskt innehåll bör du fundera på hur de ska användas. Om ett fragment måste kapslas i andra fragment bör du undvika att lägga till dynamiskt innehåll i både det överordnade och det underordnade fragmentet.
+
+* **Felsökning**: Om villkorliga innehållsmappningar eller kompatibilitetslägesvarningar försvinner:
+   * Kontrollera e-poststrukturen för kapslade fragment som innehåller dynamiskt innehåll
+   * Strukturera om genom att flytta varje fragment med dynamiskt innehåll till ett eget strukturblock på e-postnivå
+   * Spara och verifiera att villkorliga innehållsmappningar återställs korrekt
 
 ## Använd implicita variabler {#implicit-variables-in-fragments}
 

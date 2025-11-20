@@ -10,9 +10,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 186b061d-0941-48be-8917-bbdfff6dae90
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 6961a07e2874f9beb76a9beaebb29997d114d8e7
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -50,6 +50,19 @@ För varje aktivitet inom varje resa i Live eller [Torr körningsläge](journey-
 * **[!UICONTROL Exited (forced exit)]**: Totalt antal personer som avbrutit resan medan den pausades på grund av en konfiguration för reseadministratörer. Det här måttet är alltid lika med noll för resor i körläge med torr körning.
 * **[!UICONTROL Error]**: Totalt antal personer som hade ett fel i den aktiviteten.
 
+## Felsöka saknade rapporteringsdata {#troubleshooting-missing-data}
+
+Om du inte ser förväntade data i dina reserapporter bör du tänka på följande:
+
+* **Resensnamnsynkronisering**: Verifiera att resenamnet i Adobe Journey Optimizer matchar det namn som lagrats i rapporteringsdatauppsättningen. Om namnen inte matchar kan det förhindra att rapportdata visas korrekt.
+
+* **Tidsåtgång för datauppdatering**: När du har uppdaterat ett resenamn eller en konfiguration kan du vänta tillräckligt länge för att data ska uppdateras. Rapporteringsdata visas vanligtvis inom några minuter, men kan i vissa fall ta längre tid.
+
+* **Åtkomstbehörigheter**: Kontrollera att du har de behörigheter som krävs för att visa reserapporter. Om du inte ser några data bör du kontrollera med administratören att behörigheten **[!UICONTROL View journeys report]** är aktiverad. [Läs mer om behörigheter](../administration/permissions.md)
+
+* **Resursstatus**: Rapporteringsdata är bara tillgängliga för publicerade resor eller resor som körs i [Torrkörningsläge](journey-dry-run.md). Utkastresor genererar inga rapportdata.
+
+Kontakta Adobe-administratören eller Adobe support om problemet kvarstår efter att du har verifierat dessa objekt.
 
 >[!MORELIKETHIS]
 >
