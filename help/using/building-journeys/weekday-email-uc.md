@@ -11,10 +11,10 @@ keywords: resa, användningsfall, veckodagar, villkor, e-post, schemaläggning
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 4b7d406e39328571a157b2d4c7b17f2adba77cdf
+source-git-commit: f8b594a14a1f89f77aa560a4de2b99189046af4f
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 1%
+source-wordcount: '1807'
+ht-degree: 0%
 
 ---
 
@@ -67,6 +67,9 @@ Direkt efter att resan påbörjats lägger du till en **[!UICONTROL Condition]**
 
 1. Välj **[!UICONTROL Condition type]** i avsnittet **[!UICONTROL Data Source Condition]**. [Läs mer om villkorstyper](condition-activity.md#data_source_condition)
 
+   ![Konfigurerar lördagsvillkoret i uttrycksredigeraren](assets/weekday-email-uc-condition-expression.png)
+
+
 ### Steg 3: Konfigurera villkoret för att identifiera lördag
 
 Skapa den första villkorssökvägen för att identifiera lördagsbidrag.
@@ -81,7 +84,6 @@ Skapa den första villkorssökvägen för att identifiera lördagsbidrag.
 
    Detta använder funktionen `dayOfWeek()` med `now()` för att hämta den aktuella dagen. [Läs mer om datumfunktioner](functions/date-functions.md)
 
-   ![Konfigurerar lördagsvillkoret i uttrycksredigeraren](assets/weekday-email-uc-condition-expression.png)
 
 1. Klicka på **[!UICONTROL Ok]** för att spara villkoret.
 
@@ -103,17 +105,6 @@ Skapa den första villkorssökvägen för att identifiera lördagsbidrag.
 
 1. Kontrollera **[!UICONTROL Show path for other cases than the one(s) above]** om du vill skapa en sökväg för veckodagsposter (måndag-fredag).
 
-**Veckodag:**
-
-| Värde | Dag |
-|-------|-----|
-| 1 | söndag |
-| 2 | måndag |
-| 3 | tisdag |
-| 4 | onsdag |
-| 5 | torsdag |
-| 6 | fredag |
-| 7 | Lördag |
 
 >[!NOTE]
 >
@@ -123,7 +114,6 @@ Skapa den första villkorssökvägen för att identifiera lördagsbidrag.
 
 För profiler som kommer in på lördag eller söndag använder du Vänteaktiviteter med anpassade formler för att fördröja e-postmeddelandet till måndag till önskad timme.
 
-![Resa med tre villkorssökvägar - lördag, söndag och veckodagar](assets/weekday-email-uc-paths.png)
 
 **För lördagssökvägen:**
 
@@ -144,6 +134,8 @@ För profiler som kommer in på lördag eller söndag använder du Vänteaktivit
    ```javascript
    setHours(nowWithDelta(2, "days"), 9)
    ```
+
+   ![Resa med tre villkorssökvägar - lördag, söndag och veckodagar](assets/weekday-email-uc-paths.png)
 
    **Förklaring**: Den här formeln beräknar väntetiden från lördag till måndag klockan 9. Värdet X=2 representerar 2 dagar framåt (lördag + 2 dagar = måndag). [Läs mer om datumfunktioner](functions/date-functions.md#nowWithDelta)
 
@@ -211,7 +203,7 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 >[!IMPORTANT]
 >
->Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan &#x200B;](testing-the-journey.md)
+>Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan ](testing-the-journey.md)
 
 ### Steg 9: Publicera din resa
 
@@ -316,7 +308,7 @@ Om villkoret matchar en semester lägger du till en Wait-aktivitet som fördröj
 
 Lär dig hur du skickar e-post endast på vardagar med Adobe Journey Optimizer. I den här videon visas hur du stegvis implementerar villkorsaktiviteter och väntar-formler för att placera helgposter i kö för måndagsleverans.
 
->[!VIDEO](https://video.tv.adobe.com/v/3469384?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469330?quality=12&learn=on)
 
 ## Ytterligare resurser
 
