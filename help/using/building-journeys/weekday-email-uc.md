@@ -8,12 +8,12 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: resa, användningsfall, veckodagar, villkor, e-post, schemaläggning
-version: Journey Optimizer
+version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: c8d5160b473faac873b765fc5daead935a83760d
+source-git-commit: f688244bbf91d2ab9acbdc1742f180ce14b48179
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ För **veckodagssökvägen** (måndag-fredag):
    * Konfigurera [e-postparametrarna](../email/email-settings.md)
    * Konfigurera [personalisering](../personalization/personalize.md) efter behov
 
-1. Lägg till en **[!UICONTROL End]**-aktivitet efter e-postmeddelandet. [Läs mer om slutaktiviteter](end-activity.md)
+1. Lägg till en **[!UICONTROL End]**-aktivitet efter e-postmeddelandet.
 
 ### Steg 6: Sammanfoga helgsökvägar till e-post
 
@@ -227,7 +227,7 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 >[!IMPORTANT]
 >
->Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan &#x200B;](testing-the-journey.md)
+>Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan ](testing-the-journey.md)
 
 ### Steg 8: Publicera din resa
 
@@ -343,7 +343,7 @@ Om villkoret matchar en semester lägger du till en Wait-aktivitet som fördröj
 
 Lär dig hur du skickar e-post endast på vardagar med Adobe Journey Optimizer. I den här videon visas hur du stegvis implementerar villkorsaktiviteter och väntar-formler för att placera helgposter i kö för måndagsleverans.
 
->[!VIDEO](https://video.tv.adobe.com/v/3469384?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469330?quality=12&learn=on)
 
 ## Ytterligare resurser
 
