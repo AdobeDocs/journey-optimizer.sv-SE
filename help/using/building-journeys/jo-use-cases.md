@@ -145,34 +145,34 @@ Bläddra bland självstudiekurser på video och lär dig hur du bygger de vanlig
     <td>
       <img src="../assets/do-not-localize/icon-quick-start.svg" width="35px">
     <br/>
-      <strong>Kundintroduktion</strong><br/><p>Lär dig implementera en kundintroduktionsresa i Journey Optimizer.</p> - <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">Titta på fallvideon </a>
+      <strong>Kundintroduktion</strong><br/><p>Lär dig implementera en kundintroduktionsresa i Journey Optimizer.</p> - <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">Titta på fallvideon </a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-campaign.svg" width="35px">
     <br/>
-      <strong> Övergiven varukorg </strong><br/><p>Lär dig hur du implementerar det övergivna användningsexemplet för kundvagn med Playbook-funktionen i Adobe Journey Optimizer.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">Titta på fallvideon </a>
+      <strong> Övergiven varukorg </strong><br/><p>Lär dig hur du implementerar det övergivna användningsexemplet för kundvagn med Playbook-funktionen i Adobe Journey Optimizer.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">Titta på fallvideon </a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-content.svg" width="35px">
     <br/>
-      <strong>Återengagemang</strong><br/><p>Läs om hur Adobe anpassade användningen av intelligent återanvändning till att fungera med Lumas demosajt och byggde vidare på den grundläggande implementeringen som beskrivs i självstudiekursen om dataarkitektur och dataingenjörsvetenskap samt i självstudiekursen om Experience Platform Web SDK.</p><a href="https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma" target="_blank">Titta på fallvideor</a> 
+      <strong>Återengagemang</strong><br/><p>Läs om hur Adobe anpassade användningen av intelligent återanvändning till att fungera med Lumas demosajt och byggde vidare på den grundläggande implementeringen som beskrivs i självstudiekursen om dataarkitektur och dataingenjörsvetenskap samt i självstudiekursen om Experience Platform Web SDK.</p><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma" target="_blank">Titta på fallvideor</a> 
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="../assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Erbjudandepersonalisering i realtid</strong><br/><p>Genom att använda väderrelaterade data i Adobe Journey Optimizer för att leverera erbjudanden kan företag personalisera kundupplevelser baserat på miljöförhållanden i realtid.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction" target="_blank">Följ den stegvisa självstudiekursen</a>
+      <strong>Erbjudandepersonalisering i realtid</strong><br/><p>Genom att använda väderrelaterade data i Adobe Journey Optimizer för att leverera erbjudanden kan företag personalisera kundupplevelser baserat på miljöförhållanden i realtid.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction" target="_blank">Följ den stegvisa självstudiekursen</a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>Spåra och rapportera erbjudanden via beslut</strong><br/><p>Aktivera rapportering och resultatanalys för erbjudanden som levereras via Adobe Journey Optimizer: när erbjudandena personaliseras och levereras baserat på kontextuella signaler är det viktigt att spåra både visningar och användarinteraktioner för att utvärdera deras effektivitet.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/reporting-on-ajo-od/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
+      <strong>Spåra och rapportera erbjudanden via beslut</strong><br/><p>Aktivera rapportering och resultatanalys för erbjudanden som levereras via Adobe Journey Optimizer: när erbjudandena personaliseras och levereras baserat på kontextuella signaler är det viktigt att spåra både visningar och användarinteraktioner för att utvärdera deras effektivitet.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/reporting-on-ajo-od/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
     </td>
     <td>
       <img src="../assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>Anpassa erbjudanden med rankningsformler </strong><br/><p>Läs om hur ni kan leverera personaliserade ekonomiska erbjudanden genom att utnyttja användarattribut som ZIP-kod och årsintäkter inom Adobe Journey Optimizer. Genom att använda rankningsformler kan erbjudandena poängsättas och prioriteras utifrån platsspecifika kampanjer och inkomstbaserad kvalificering.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
+      <strong>Anpassa erbjudanden med rankningsformler </strong><br/><p>Läs om hur ni kan leverera personaliserade ekonomiska erbjudanden genom att utnyttja användarattribut som ZIP-kod och årsintäkter inom Adobe Journey Optimizer. Genom att använda rankningsformler kan erbjudandena poängsättas och prioriteras utifrån platsspecifika kampanjer och inkomstbaserad kvalificering.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
     </td>
   </tr>
 </table>
