@@ -11,9 +11,9 @@ keywords: resa, användningsfall, veckodagar, villkor, e-post, schemaläggning
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: f8b594a14a1f89f77aa560a4de2b99189046af4f
+source-git-commit: 46a46fb25c1ef985a0bdea8974aa009e3699c7a3
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1791'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,15 @@ Den här metoden visar hur du använder en villkorsaktivitet för att kontroller
 
 Den här metoden är idealisk för e-postkampanjer från företag till företag, professionella nyhetsbrev och kommunikation, affärsrelaterade meddelanden, arbetsrelaterade produktuppdateringar och alla marknadsföringskampanjer där slutleverans inte är önskvärd.
 
-Titta på den stegvisa [videosjälvstudiekursen](#how-to-video) längst ned på den här sidan för att se den fullständiga implementeringen.
+➡️ Se videosjälvstudien [steg för steg](#how-to-video)
 
-## Förhandskrav
+>[!NOTE]
+>
+>För att implementera det här användningsfallet behöver du en aktiv Adobe Journey Optimizer-instans med en konfigurerad [e-postkanalsyta](../configuration/channel-surfaces.md), en [målgrupp](../audience/about-audiences.md) eller [händelse](../event/about-events.md) som utlöser resan, samt en grundläggande förståelse för [resevillkor](condition-activity.md) och [uttryck](expression/expressionadvanced.md).
 
-För att implementera det här användningsfallet behöver du en aktiv Adobe Journey Optimizer-instans med en konfigurerad [e-postkanalsyta](../configuration/channel-surfaces.md), en [målgrupp](../audience/about-audiences.md) eller [händelse](../event/about-events.md) som utlöser resan, samt en grundläggande förståelse för [resevillkor](condition-activity.md) och [uttryck](expression/expressionadvanced.md).
+
+
+
 
 ## Implementeringssteg
 
@@ -203,7 +207,7 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 >[!IMPORTANT]
 >
->Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan &#x200B;](testing-the-journey.md)
+>Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan ](testing-the-journey.md)
 
 ### Steg 9: Publicera din resa
 
@@ -293,29 +297,25 @@ Om villkoret matchar en semester lägger du till en Wait-aktivitet som fördröj
 
 ## Relaterade ämnen
 
-| Ämne | Beskrivning |
-|-------|-------------|
-| [Om villkorsaktiviteter](condition-activity.md) | Lär dig hur du skapar olika banor i din resa |
-| [Använd villkor i en resa](conditions.md) | Detaljerad guide om resevillkor |
-| [Vänta på aktivitet](wait-activity.md) | Konfigurera väntetider och -formler |
-| [Datumfunktioner](functions/date-functions.md) | Fullständig referens för datum- och tidsfunktioner |
-| [Uttrycksredigeraren](expression/expressionadvanced.md) | Bygg komplexa uttryck |
-| [Testa din resa](testing-the-journey.md) | Validera reslogiken före publicering |
-| [Hantering av tidszoner](timezone-management.md) | Hantera olika tidszoner under resor |
-| [Bästa praxis på resan](journey-gs.md#best-practices) | Rekommenderade strategier för resedesign |
+* [Om villkorsaktiviteter](condition-activity.md) - Lär dig hur du skapar olika sökvägar i din resa
+* [Användningsvillkor i en resa](conditions.md) - Detaljerad guide om resevillkor
+* [Vänteaktivitet](wait-activity.md) - Konfigurera väntetider och formler
+* [Datumfunktioner](functions/date-functions.md) - Fullständig referens för datum- och tidsfunktioner
+* [Uttrycksredigeraren](expression/expressionadvanced.md) - Skapa komplexa uttryck
+* [Testa din resa](testing-the-journey.md) - Verifiera reselogik före publicering
+* [Tidszonshantering](timezone-management.md) - Hantera olika tidszoner under resor
+* [Bästa praxis på resan](journey-gs.md#best-practices) - Rekommenderade strategier för resedesign
 
 ## Instruktionsvideo
 
 Lär dig hur du skickar e-post endast på vardagar med Adobe Journey Optimizer. I den här videon visas hur du stegvis implementerar villkorsaktiviteter och väntar-formler för att placera helgposter i kö för måndagsleverans.
 
->[!VIDEO](https://video.tv.adobe.com/v/3469384?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469330?quality=12&learn=on)
 
 ## Ytterligare resurser
 
-| Resurs | Beskrivning |
-|----------|-------------|
-| [Dokumentation för uttrycksredigeraren](expression/expressionadvanced.md) | Bygg och validera reseuttryck |
-| [Resedesignerguide](using-the-journey-designer.md) | Hantera resans arbetsyta |
-| [Översikt över användningsfall på resa](jo-use-cases.md) | Utforska fler resemönster och exempel |
-| [Community-blogginlägg: Så här skickar du e-post endast på veckodagar](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} | Ursprungligt blogginlägg med detaljerade exempel |
+* [Dokumentation för uttrycksredigeraren](expression/expressionadvanced.md) - Bygg och validera reseuttryck
+* [Resedesignerguide](using-the-journey-designer.md) - bemästra arbetsytan
+* [Översikt över användningsfall under resan](jo-use-cases.md) - Utforska fler resemönster och exempel
+* [Community-blogginlägg: Så här skickar du e-post endast på veckodagar](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} - Ursprungligt blogginlägg med detaljerade exempel
 
