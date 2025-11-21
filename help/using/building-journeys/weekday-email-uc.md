@@ -11,10 +11,10 @@ keywords: resa, användningsfall, veckodagar, villkor, e-post, schemaläggning
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: e9e215bfb2de955b27e6bc2395df4975d86b17f0
+source-git-commit: 4b7d406e39328571a157b2d4c7b17f2adba77cdf
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 0%
+source-wordcount: '1827'
+ht-degree: 1%
 
 ---
 
@@ -28,31 +28,15 @@ Det här användningsexemplet visar hur du konfigurerar en resa i Adobe Journey 
 
 **Lösning**: Använd en villkorsaktivitet för att identifiera veckodagen. För helgposter väntar du på aktiviteter med anpassade formler med e-postadressen tills måndag. Veckodagsposter fortsätter direkt till e-postsändningssteget.
 
-Det här sättet visar hur du:
+Den här metoden visar hur du använder en villkorsaktivitet för att kontrollera om den aktuella dagen är lördag eller söndag, implementera vänteaktiviteter med anpassade formler för helgposter, skicka e-postmeddelanden i kö för måndag vid en viss timme och skicka e-postmeddelanden direkt för veckodagsposter (måndag-fredag).
 
-* Använd en villkorsaktivitet för att kontrollera om den aktuella dagen är lördag eller söndag
-* Implementera väntande aktiviteter med anpassade formler för helgposter
-* Köa e-postmeddelanden under helger för måndag som levereras en viss timme
-* Skicka e-postmeddelanden direkt för veckodagsbidrag (måndag-fredag)
-
-Detta tillvägagångssätt är idealiskt för:
-
-* E-postkampanjer från företag till företag (B2B)
-* Nyhetsbrev och kommunikation
-* Affärsrelaterade meddelanden
-* Arbetsrelaterade produktuppdateringar
-* Alla marknadsföringskampanjer där leverans under helger inte önskas
+Den här metoden är idealisk för e-postkampanjer från företag till företag, professionella nyhetsbrev och kommunikation, affärsrelaterade meddelanden, arbetsrelaterade produktuppdateringar och alla marknadsföringskampanjer där slutleverans inte är önskvärd.
 
 Titta på den stegvisa [videosjälvstudiekursen](#how-to-video) längst ned på den här sidan för att se den fullständiga implementeringen.
 
 ## Förhandskrav
 
-För att implementera det här användningsexemplet behöver du:
-
-* En aktiv Adobe Journey Optimizer-instans
-* En konfigurerad [e-postkanalsyta](../configuration/channel-surfaces.md)
-* En [målgrupp](../audience/about-audiences.md) eller [händelse](../event/about-events.md) som utlöser resan
-* Grundläggande förståelse för [resevillkor](condition-activity.md) och [uttryck](expression/expressionadvanced.md)
+För att implementera det här användningsfallet behöver du en aktiv Adobe Journey Optimizer-instans med en konfigurerad [e-postkanalsyta](../configuration/channel-surfaces.md), en [målgrupp](../audience/about-audiences.md) eller [händelse](../event/about-events.md) som utlöser resan, samt en grundläggande förståelse för [resevillkor](condition-activity.md) och [uttryck](expression/expressionadvanced.md).
 
 ## Implementeringssteg
 
@@ -119,20 +103,23 @@ Skapa den första villkorssökvägen för att identifiera lördagsbidrag.
 
 1. Kontrollera **[!UICONTROL Show path for other cases than the one(s) above]** om du vill skapa en sökväg för veckodagsposter (måndag-fredag).
 
-   **Veckodag:**
-   * 1 = söndag
-   * 2 = måndag
-   * 3 = tisdag
-   * 4 = onsdag
-   * 5 = Torsdag
-   * 6 = fredag
-   * 7 = lördag
+**Veckodag:**
+
+| Värde | Dag |
+|-------|-----|
+| 1 | söndag |
+| 2 | måndag |
+| 3 | tisdag |
+| 4 | onsdag |
+| 5 | torsdag |
+| 6 | fredag |
+| 7 | Lördag |
 
 >[!NOTE]
 >
 >Funktionen `dayOfWeek()` returnerar ett heltal som representerar veckodagen, där 1 är söndag och 7 är lördag. Detta följer ISO-8601-standarden för dagnumrering.
 
-### Steg 4: Konfigurera vänteaktiviteter för helgposter
+### Steg 5: Konfigurera vänteaktiviteter för helgposter
 
 För profiler som kommer in på lördag eller söndag använder du Vänteaktiviteter med anpassade formler för att fördröja e-postmeddelandet till måndag till önskad timme.
 
@@ -180,7 +167,7 @@ För profiler som kommer in på lördag eller söndag använder du Vänteaktivit
 >
 >Du kan anpassa timparametern (H) när du vill att e-postmeddelandet ska skickas på måndag. Ändra till exempel 9 till 10 för 10 eller 14 för 2 PM.
 
-### Steg 5: Konfigurera veckodagssökvägen
+### Steg 6: Konfigurera veckodagssökvägen
 
 För **veckodagssökvägen** (måndag-fredag):
 
@@ -193,7 +180,7 @@ För **veckodagssökvägen** (måndag-fredag):
 
 1. Lägg till en **[!UICONTROL End]**-aktivitet efter e-postmeddelandet.
 
-### Steg 6: Sammanfoga helgsökvägar till e-post
+### Steg 7: Sammanfoga helgsökvägar till e-post
 
 Efter Wait-aktiviteterna på båda lördag- och söndagsvägarna sammanfogar du dem till samma e-postaktivitet:
 
@@ -203,8 +190,7 @@ Efter Wait-aktiviteterna på båda lördag- och söndagsvägarna sammanfogar du 
 
 1. Sökvägen för veckodag bör även följa den här e-poståtgärden.
 
-
-### Steg 7: Testa din resa
+### Steg 8: Testa din resa
 
 Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimizer testläge för att bekräfta att allt fungerar som förväntat:
 
@@ -225,9 +211,9 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 >[!IMPORTANT]
 >
->Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan &#x200B;](testing-the-journey.md)
+>Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan ](testing-the-journey.md)
 
-### Steg 8: Publicera din resa
+### Steg 9: Publicera din resa
 
 När testningen är klar:
 
@@ -239,55 +225,39 @@ När testningen är klar:
 
 ## Bästa praxis och överväganden
 
-### Optimera arbetsflödet med förbättrade formler
++++**Optimera arbetsflödet med förbättrade formler**
 
-För att förbättra arbetsflödet och hantera mer komplexa affärskrav:
+Om du vill förbättra arbetsflödet och hantera mer komplexa affärsbehov kan du utöka formlerna så att de omfattar helger, tidszoner eller specifika arbetstimmar efter den grundläggande veckodagskontrollen. Justera timparametern (H) i Wait-formeln så att den matchar din optimala sändningstid. Om till exempel 10:00 visar bättre engagemangsfrekvens ändrar du formeln så att den använder timmen 10. För stöd för flera tidszoner bör du överväga att skapa separata resor för olika geografiska regioner för att säkerställa måndagsleverans i varje mottagares lokala tidszon.
 
-* **Komplexa arbetstider**: Utöka formlerna för att ta hänsyn till helger, tidszoner eller specifika arbetstimmar efter den grundläggande veckodagskontrollen.
++++
 
-* **Anpassade leveranstider**: Justera timparametern (H) i Wait-formeln så att den matchar den optimala sändningstiden. Om till exempel 10 förmiddag visar bättre engagemangsgrader ändrar du formeln till timme 10.
++++**Hantering av tidszoner**
 
-* **Stöd för flera tidszoner**: Överväg att skapa separata resor för olika geografiska regioner för att säkerställa måndagsleverans i varje mottagares lokala tidszon.
+Funktionen `now()` och körningen av resan använder den tidszon som konfigurerats på resenivån. Se till att resetidszonen matchar dina behov genom att konfigurera detta i reseegenskaperna före publicering ([Läs mer om tidszonshantering](timezone-management.md)). Om målgruppen sträcker sig över flera tidszoner bör du tänka på att veckodagskontrollen sker i kundens konfigurerade tidszon, inte i mottagarens lokala tidszon. För tidszonsspecifik leverans skapar du separata resor för olika regioner eller använder tidszonsinställningarna i aktiviteten Läs målgrupp.
 
-### Hantering av tidszoner
++++
 
-Funktionen `now()` och körningen av resan använder den tidszon som konfigurerats på resenivån. Tänk på följande:
++++**Resepost och timing**
 
-* **Resans tidszon**: Kontrollera att resetidszonen matchar dina behov. Konfigurera detta i resans egenskaper före publicering. [Läs mer om hantering av tidszoner](timezone-management.md).
+För gruppresor schemalägger [Läs målgruppen](read-audience.md#schedule) att utlösas vid en tidpunkt som passar din målgrupp - tidiga morgonexekveringar (t.ex. 6:00 AM) är vanliga för affärskommunikation. För händelsebaserade resor utvärderas villkoret omedelbart när händelsen tas emot, och profiler som anges på helger väntar automatiskt till måndag ([Läs mer om händelser](../event/about-events.md)). Se till att dina [inställningar för tidsgräns för resa](journey-properties.md#timeout) har plats för den maximala vänteperioden (upp till 2 dagar från lördag till måndag).
 
-* **Globala målgrupper**: Om din målgrupp sträcker sig över flera tidszoner utförs veckodagskontrollen i kundens konfigurerade tidszon, inte i mottagarens lokala tidszon.
++++
 
-* **Lokaliserad schemaläggning**: För tidszonsspecifik leverans skapar du separata resor för olika regioner eller använder tidszonsinställningarna i aktiviteten Läs målgrupp.
++++**Testning är nödvändigt**
 
-### Inträde och timing på resa
+Så som det betonas i implementeringsguiden ska du alltid testa din reselogik för att bekräfta att allt fungerar som det ska. Använd **Testläge** för att simulera olika startscenarier utan att skicka riktiga e-postmeddelanden. Testa alla tre sökvägarna (lördagsposter, söndagsposter och veckodagsposter), kontrollera att beräkningarna av väntetiden är korrekta, bekräfta att måndagsleveransen sker vid den angivna timmen och kontrollera visualiseringen av resan för att säkerställa rätt väg.
 
-* **Läs målgruppsresor**: För gruppresor schemalägger [Läs målgrupp](read-audience.md#schedule) så att den utlöses vid en tidpunkt som passar er målgrupp. Körningar på morgonen (t.ex. 6:00 AM) är vanliga för affärskommunikation.
++++
 
-* **Händelsebaserade resor**: Villkoret utvärderas omedelbart när händelsen tas emot. Profiler som läggs in på helger väntar automatiskt till måndag. [Läs mer om händelser](../event/about-events.md)
++++**Återinträde och frekvens**
 
-* **Väntetidsgräns**: Se till att dina [inställningar för resetimeout](journey-properties.md#timeout) har plats för den maximala vänteperioden (upp till 2 dagar från lördag till måndag).
+För återkommande kampanjer konfigurerar du inställningarna för **[!UICONTROL Re-entrance]** korrekt ([Läs mer om inställningarna för återinträde](entry-management.md)). Om profilerna kan återinträda på resan kontrolleras varje gång varje dag, vilket säkerställer att alla helgposter alltid är köade på måndag. Överväg att lägga till [regler för frekvensbegränsning](../conflict-prioritization/journey-capping.md) för att undvika överskjutande meddelanden om profiler kan registrera sig ofta.
 
-### Testning är nödvändigt
-
-Så som det betonas i implementeringsguiden ska du alltid testa din reselogik för att bekräfta att allt fungerar som det ska:
-
-* Använd **testläge** för att simulera olika startscenarier utan att skicka riktiga e-postmeddelanden
-* Testa alla tre sökvägarna: lördagsposter, söndagsposter och veckodagsposter
-* Kontrollera att beräkningarna av väntetiden är korrekta
-* Bekräfta att måndagsleverans sker på den angivna timmen
-* Kontrollera resevisualisering för att säkerställa korrekt routning
-
-### Återinträde och frekvens
-
-* Konfigurera inställningarna för **[!UICONTROL Re-entrance]** korrekt för återkommande kampanjer. [Läs mer om inställningar för återinträde](entry-management.md)
-
-* Om profilerna kan återinträda på resan kontrolleras varje gång varje dag, vilket säkerställer att alla helgposter alltid är köade på måndag.
-
-* Överväg att lägga till [regler för frekvensbegränsning](../conflict-prioritization/journey-capping.md) för att undvika överskjutande meddelanden om profiler kan registrera sig ofta.
++++
 
 ## Avancerade varianter
 
-### Specifik dagmålinriktning
++++**Specifik dagmålinriktning**
 
 Ändra villkoret om du endast vill skicka e-post på en viss dag (t.ex. tisdagar och torsdagar):
 
@@ -297,16 +267,15 @@ dayOfWeek(now()) == 3 or dayOfWeek(now()) == 5
 
 För alla andra dagar lägger du till en Wait-aktivitet som beräknar antalet dagar till nästa tisdag eller torsdag.
 
-### Olika sändningstider för olika dagar
++++
 
-Du kan skapa flera sökvägar med olika Vänteformler för olika helger:
++++**Olika sändningstider för olika dagar**
 
-* **Lördag → Onsdag-leverans**: Använd `nowWithDelta(4, "days")`
-* **Söndag → tisdag**: Använd `nowWithDelta(2, "days")`
+Du kan skapa flera sökvägar med olika Vänteformler för olika helgsbeteenden. Använd till exempel `nowWithDelta(4, "days")` för leverans lördag till onsdag eller `nowWithDelta(2, "days")` för leverans söndag till tisdag. Detta ger större flexibilitet i sändningsplanen.
 
-Detta ger större flexibilitet i sändningsplanen.
++++
 
-### Leverans under kontorstid
++++**Leverans under kontorstid**
 
 Justera timparametern i din Wait-formel för att försäkra dig om leverans under kontorstid. För leverans klockan 2 i stället för 09:
 
@@ -316,7 +285,9 @@ setHours(nowWithDelta(1, "days"), 14)
 
 Du kan också lägga till ett andra villkor efter väntetiden för att kontrollera om den aktuella tiden är inom kontorstid innan du skickar.
 
-### Undantag på semester
++++
+
++++**Undantag för helgdag**
 
 Om du vill utesluta helger lägger du till en extra sökväg som söker efter specifika datum:
 
@@ -326,27 +297,33 @@ toDateTimeOnly(now()) == toDateTimeOnly("2024-12-25T00:00:00")
 
 Om villkoret matchar en semester lägger du till en Wait-aktivitet som fördröjs till nästa arbetsdag. [Läs mer om funktioner för datumjämförelse](functions/date-functions.md)
 
++++
+
 ## Relaterade ämnen
 
-* [Om villkorsaktiviteter](condition-activity.md) - Lär dig hur du skapar olika sökvägar i din resa
-* [Användningsvillkor i en resa](conditions.md) - Detaljerad guide om resevillkor
-* [Vänteaktivitet](wait-activity.md) - Konfigurera väntetider och formler
-* [Datumfunktioner](functions/date-functions.md) - Fullständig referens för datum- och tidsfunktioner
-* [Uttrycksredigeraren](expression/expressionadvanced.md) - Skapa komplexa uttryck
-* [Testa din resa](testing-the-journey.md) - Verifiera reselogik före publicering
-* [Tidszonshantering](timezone-management.md) - Hantera olika tidszoner under resor
-* [Bästa praxis på resan](journey-gs.md#best-practices) - Rekommenderade strategier för resedesign
+| Ämne | Beskrivning |
+|-------|-------------|
+| [Om villkorsaktiviteter](condition-activity.md) | Lär dig hur du skapar olika banor i din resa |
+| [Använd villkor i en resa](conditions.md) | Detaljerad guide om resevillkor |
+| [Vänta på aktivitet](wait-activity.md) | Konfigurera väntetider och -formler |
+| [Datumfunktioner](functions/date-functions.md) | Fullständig referens för datum- och tidsfunktioner |
+| [Uttrycksredigeraren](expression/expressionadvanced.md) | Bygg komplexa uttryck |
+| [Testa din resa](testing-the-journey.md) | Validera reslogiken före publicering |
+| [Hantering av tidszoner](timezone-management.md) | Hantera olika tidszoner under resor |
+| [Bästa praxis på resan](journey-gs.md#best-practices) | Rekommenderade strategier för resedesign |
 
 ## Instruktionsvideo
 
 Lär dig hur du skickar e-post endast på vardagar med Adobe Journey Optimizer. I den här videon visas hur du stegvis implementerar villkorsaktiviteter och väntar-formler för att placera helgposter i kö för måndagsleverans.
 
->[!VIDEO](https://video.tv.adobe.com/v/3469384?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469330?quality=12&learn=on)
 
 ## Ytterligare resurser
 
-* [Dokumentation för uttrycksredigeraren](expression/expressionadvanced.md) - Bygg och validera reseuttryck
-* [Resedesignerguide](using-the-journey-designer.md) - bemästra arbetsytan
-* [Översikt över användningsfall under resan](jo-use-cases.md) - Utforska fler resemönster och exempel
-* [Community-blogginlägg: Så här skickar du e-post endast på veckodagar](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} - Ursprungligt blogginlägg med detaljerade exempel
+| Resurs | Beskrivning |
+|----------|-------------|
+| [Dokumentation för uttrycksredigeraren](expression/expressionadvanced.md) | Bygg och validera reseuttryck |
+| [Resedesignerguide](using-the-journey-designer.md) | Hantera resans arbetsyta |
+| [Översikt över användningsfall på resa](jo-use-cases.md) | Utforska fler resemönster och exempel |
+| [Community-blogginlägg: Så här skickar du e-post endast på veckodagar](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} | Ursprungligt blogginlägg med detaljerade exempel |
 
