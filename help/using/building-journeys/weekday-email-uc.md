@@ -329,7 +329,7 @@ Så här exkluderar du helgdagar från e-postutskick:
 
 Lär dig hur du skickar e-post endast på vardagar med Adobe Journey Optimizer. I den här videon visas hur du stegvis implementerar villkorsaktiviteter och väntar-formler för att placera helgposter i kö för måndagsleverans.
 
->[!VIDEO](https://video.tv.adobe.com/v/3469330?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469384?captions=swe&quality=12&learn=on)
 
 ## Ytterligare resurser
 
