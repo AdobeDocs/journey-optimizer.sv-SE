@@ -227,7 +227,7 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 >[!IMPORTANT]
 >
->Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan ](testing-the-journey.md)
+>Testa alltid kundens logik noggrant innan du publicerar till produktion. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan &#x200B;](testing-the-journey.md)
 
 ### Steg 8: Publicera din resa
 
