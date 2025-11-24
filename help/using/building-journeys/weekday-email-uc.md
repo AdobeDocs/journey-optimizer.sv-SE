@@ -11,9 +11,9 @@ keywords: resa, användningsfall, veckodagar, villkor, e-post, schemaläggning
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: c92e5bacdab179587b9cdec6bbde962a597b8de8
+source-git-commit: eee9a460fc443be29c1ef407a02c5645869ca11d
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Den här metoden är idealisk för e-postkampanjer från företag till företag,
 
 1. Navigera till **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** i Adobe Journey Optimizer.
 
-1. Klicka på **[!UICONTROL Create Journey]** för att skapa en ny resa. [Läs mer om att skapa resor](journey-gs.md)
+1. Klicka på **[!UICONTROL Create Journey]** för att [skapa en ny resa](journey-gs.md).
 
 1. Konfigurera [reseegenskaperna](journey-properties.md).
 
@@ -55,7 +55,7 @@ Den här metoden är idealisk för e-postkampanjer från företag till företag,
 
 Direkt efter att resan påbörjats lägger du till en **[!UICONTROL Condition]**-aktivitet för att kontrollera om den aktuella dagen är lördag eller söndag. Det innebär att arbetsflödet grenas i enlighet därmed.
 
-1. Dra och släpp en **[!UICONTROL Condition]**-aktivitet på arbetsytan efter startpunkten. [Läs mer om villkorsaktiviteter](condition-activity.md)
+1. Dra och släpp en [**[!UICONTROL Condition]**aktivitet ](condition-activity.md) på arbetsytan efter startpunkten.
 
 1. Klicka på aktiviteten **[!UICONTROL Condition]** för att öppna dess konfigurationspanel.
 
@@ -76,7 +76,7 @@ Direkt efter att resan påbörjats lägger du till en **[!UICONTROL Condition]**
 
 >[!NOTE]
 >
->Den tidszon som används för veckodagsutvärderingen definieras på resenivån i reseegenskaperna, inte på villkorsnivå. Tidszonen för resan som används i formeln är transportens konfigurerade tidszon, inte mottagarens. [Läs mer om hantering av tidszoner](timezone-management.md).
+>Den tidszon som används för veckodagsutvärderingen definieras på resenivån i reseegenskaperna, inte på villkorsnivå. Resan [timezone](timezone-management.md) som används i formeln är den konfigurerade tidszonen för resan, inte mottagarens.
 
 ### Steg 3: Konfigurera vänteaktiviteter för helgposter
 
@@ -155,7 +155,7 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 1. Klicka på knappen **[!UICONTROL Test]** längst upp till höger.
 
-1. Aktivera testläge. [Lär dig hur du testar din resa](testing-the-journey.md)
+1. Aktivera [testläge](testing-the-journey.md).
 
 1. Skapa [testprofiler](../audience/creating-test-profiles.md) med simulerade starttider på olika veckodagar:
    * **Lördagsinträde**: Verifiera att profilen följer lördagssökvägen, väntar och får e-post på måndag den angivna timmen
@@ -164,13 +164,13 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 1. Granska visualiseringen av resan för att säkerställa att profilerna följer rätt villkorsstyrda sökvägar (lördag, söndag eller veckodag).
 
-1. Kontrollera om resan innehåller fel eller varningar. [Läs om felsökning av resor](troubleshooting.md)
+1. Kontrollera om det finns [fel eller varningar](troubleshooting.md) under resan.
 
 1. Kontrollera att Wait-formlerna beräknar rätt varaktighet för den önskade måndagsleveranstiden.
 
 >[!IMPORTANT]
 >
->Testa alltid kundreslogiken i testläge för att kontrollera att vänteaktiviteterna fungerar som förväntat. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan &#x200B;](testing-the-journey.md)
+>Testa alltid kundreslogiken i testläge för att kontrollera att vänteaktiviteterna fungerar som förväntat. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. Mer information finns i [testning av resan ](testing-the-journey.md).
 
 ### Steg 7: Publicera din resa
 
@@ -178,18 +178,16 @@ När testningen är klar:
 
 1. Klicka på **[!UICONTROL Publish]** längst upp till höger.
 
-1. Bekräfta publikationen. [Läs mer om publiceringsresor](publish-journey.md)
+1. Bekräfta [publikationen](publish-journey.md).
 
 1. Övervaka reseprestanda med hjälp av [reserapportering](report-journey.md) och [liverapporter](../reports/journey-live-report.md).
 
 
 ## Relaterade ämnen
 
-* [Om villkorsaktiviteter](condition-activity.md) - Lär dig hur du skapar olika sökvägar i din resa
-* [Användningsvillkor i en resa](conditions.md) - Detaljerad guide om resevillkor
-* [Vänteaktivitet](wait-activity.md) - Konfigurera väntetider och formler
-* [Datumfunktioner](functions/date-functions.md) - Fullständig referens för datum- och tidsfunktioner
-* [Uttrycksredigeraren](expression/expressionadvanced.md) - Skapa komplexa uttryck
-* [Bästa praxis på resan](journey-gs.md#best-practices) - Rekommenderade strategier för resedesign
-* [Community-blogginlägg: Så här skickar du e-post endast på veckodagar](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400){target="_blank"} - Ursprungligt blogginlägg med detaljerade exempel
-
+* Lär dig hur du skapar olika sökvägar i din resa med [Villkorsaktiviteter](condition-activity.md)
+* Detaljerad guide om [användning av villkor under en resa](conditions.md)
+* Konfigurera väntetider och -formler med [Wait-aktiviteten](wait-activity.md)
+* Fullständig referens för [datumfunktioner](functions/date-functions.md)
+* Skapa komplexa uttryck med [uttrycksredigeraren](expression/expressionadvanced.md)
+* Rekommenderade strategier för [resedesign och bästa praxis](journey-gs.md#best-practices)
