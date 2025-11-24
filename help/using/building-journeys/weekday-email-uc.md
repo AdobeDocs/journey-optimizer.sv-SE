@@ -11,9 +11,9 @@ keywords: resa, användningsfall, veckodagar, villkor, e-post, schemaläggning
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: eee9a460fc443be29c1ef407a02c5645869ca11d
+source-git-commit: 9b3c9f7c0327c8c3c3d2b7f1b4255b7e1457a51e
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Den här metoden är idealisk för e-postkampanjer från företag till företag,
 
 Direkt efter att resan påbörjats lägger du till en **[!UICONTROL Condition]**-aktivitet för att kontrollera om den aktuella dagen är lördag eller söndag. Det innebär att arbetsflödet grenas i enlighet därmed.
 
-1. Dra och släpp en [**[!UICONTROL Condition]**&#x200B;aktivitet &#x200B;](condition-activity.md) på arbetsytan efter startpunkten.
+1. Dra och släpp en [**[!UICONTROL Condition]**aktivitet ](condition-activity.md) på arbetsytan efter startpunkten.
 
 1. Klicka på aktiviteten **[!UICONTROL Condition]** för att öppna dess konfigurationspanel.
 
@@ -170,7 +170,7 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 >[!IMPORTANT]
 >
->Testa alltid kundreslogiken i testläge för att kontrollera att vänteaktiviteterna fungerar som förväntat. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. Mer information finns i [testning av resan &#x200B;](testing-the-journey.md).
+>Testa alltid kundreslogiken i testläge för att kontrollera att vänteaktiviteterna fungerar som förväntat. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. Mer information finns i [testning av resan ](testing-the-journey.md).
 
 ### Steg 7: Publicera din resa
 
@@ -185,9 +185,9 @@ När testningen är klar:
 
 ## Relaterade ämnen
 
-* Lär dig hur du skapar olika sökvägar i din resa med [Villkorsaktiviteter](condition-activity.md)
-* Detaljerad guide om [användning av villkor under en resa](conditions.md)
-* Konfigurera väntetider och -formler med [Wait-aktiviteten](wait-activity.md)
-* Fullständig referens för [datumfunktioner](functions/date-functions.md)
-* Skapa komplexa uttryck med [uttrycksredigeraren](expression/expressionadvanced.md)
-* Rekommenderade strategier för [resedesign och bästa praxis](journey-gs.md#best-practices)
+* [Villkorsaktiviteter](condition-activity.md) - Lär dig hur du skapar olika sökvägar i din resa
+* [Användningsvillkor i en resa](conditions.md) - Detaljerad guide om resevillkor
+* [Vänteaktivitet](wait-activity.md) - Konfigurera väntetider och formler
+* [Datumfunktioner](functions/date-functions.md) - Fullständig referens för datum- och tidsfunktioner
+* [Uttrycksredigeraren](expression/expressionadvanced.md) - Skapa komplexa uttryck
+* [Bästa praxis på resan](journey-gs.md#best-practices) - Rekommenderade strategier för resedesign
