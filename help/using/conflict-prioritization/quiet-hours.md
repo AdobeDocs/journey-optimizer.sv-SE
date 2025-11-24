@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: meddelande, frekvens, regler, tryck
-source-git-commit: f69e482daf457f1c331d158d1bf04b4cfb392197
+source-git-commit: 2f4c6a4a82784ae2fae99b3d802b2d8f94d2ca75
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Genom att effektivisera dessa processer kan ni förbättra kundupplevelsen, spar
 
 >[!AVAILABILITY]
 >
->Regler för tysta timmar är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet). Om du vill bli medlem i väntelistan kontaktar du Adobe.
+>Regler för tysta timmar är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet).  De kommer att vara progressivt tillgängliga för alla kunder i framtida versioner.
 
 
 ➡️ [Upptäck den här funktionen i en video](#video)
@@ -187,4 +187,4 @@ När din resa eller dina kampanjer har aktiverats och körts kan du visa antalet
 
 Lär dig hur du använder funktionen för tysta timmar i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475856?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3475851?quality=12)
