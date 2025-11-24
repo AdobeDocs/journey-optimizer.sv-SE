@@ -11,9 +11,9 @@ keywords: resa, användningsfall, veckodagar, villkor, e-post, schemaläggning
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: ad902c1055ea2e883c028172297aab878a898b94
+source-git-commit: c92e5bacdab179587b9cdec6bbde962a597b8de8
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,6 @@ Det här användningsexemplet visar hur du konfigurerar en resa i Adobe Journey 
 Den här metoden visar hur du använder en villkorsaktivitet för att kontrollera om den aktuella dagen är lördag eller söndag, implementera vänteaktiviteter med anpassade formler för helgposter, skicka e-postmeddelanden i kö för måndag vid en viss timme och skicka e-postmeddelanden direkt för veckodagsposter (måndag-fredag).
 
 Den här metoden är idealisk för e-postkampanjer från företag till företag, professionella nyhetsbrev och kommunikation, affärsrelaterade meddelanden, arbetsrelaterade produktuppdateringar och alla marknadsföringskampanjer där slutleverans inte är önskvärd.
-
-➡️ Se videosjälvstudien [steg för steg](#how-to-video)
 
 >[!NOTE]
 >
@@ -55,21 +53,21 @@ Den här metoden är idealisk för e-postkampanjer från företag till företag,
 
 ### Steg 2: Lägg till en villkorsaktivitet för att kontrollera veckodagen
 
-När resan har startats lägger du till ett villkor för att kontrollera om den aktuella dagen är lördag eller söndag. Det innebär att arbetsflödet grenas i enlighet därmed.
+Direkt efter att resan påbörjats lägger du till en **[!UICONTROL Condition]**-aktivitet för att kontrollera om den aktuella dagen är lördag eller söndag. Det innebär att arbetsflödet grenas i enlighet därmed.
 
 1. Dra och släpp en **[!UICONTROL Condition]**-aktivitet på arbetsytan efter startpunkten. [Läs mer om villkorsaktiviteter](condition-activity.md)
 
-1. Klicka på villkorsaktiviteten för att öppna dess konfigurationspanel.
+1. Klicka på aktiviteten **[!UICONTROL Condition]** för att öppna dess konfigurationspanel.
 
 1. Välj **[!UICONTROL Time condition]** som villkorstyp.
 
-1. Välj **Veckodag** som tidsfiltreringsalternativ.
+1. Välj **[!UICONTROL Day of the week]** som tidsfiltreringsalternativ.
 
 1. För den **första sökvägen (lördag)** väljer du endast **lördag**. Ange den här sökvägen som &quot;lördag&quot;.
 
 1. Klicka på **[!UICONTROL Add a path]** om du vill skapa ett andra villkor.
 
-1. För den **andra sökvägen (söndag)** väljer du **Veckodag** och bara **Söndag**. Ange den här sökvägen som &quot;söndag&quot;.
+1. För den **andra sökvägen (söndag)** markerar du **[!UICONTROL Day of the week]** och väljer endast **söndag**. Ange den här sökvägen som &quot;söndag&quot;.
 
    ![Konfigurerar lördags- och söndagsvillkoren i uttrycksredigeraren](assets/weekday-email-uc-condition-expression.png)
 
@@ -82,9 +80,9 @@ När resan har startats lägger du till ett villkor för att kontrollera om den 
 
 ### Steg 3: Konfigurera vänteaktiviteter för helgposter
 
-För profiler som kommer in på lördag eller söndag använder du Vänteaktiviteter med anpassade formler för att fördröja e-postmeddelandet till måndag till önskad timme.
+För profiler som kommer in på lördag eller söndag använder du **[!UICONTROL Wait]**-aktiviteter med anpassade formler för att fördröja e-postmeddelandet till måndag vid önskad timma.
 
-Använd följande formel i aktiviteten Vänta:
+Använd följande formel i aktiviteten **[!UICONTROL Wait]**:
 
 ```javascript
 toDateTimeOnly(setHours(nowWithDelta(X, "days"), H))
@@ -132,22 +130,22 @@ Så här implementerar du detta under din resa:
 
 För profiler som kommer in måndag till fredag går du vidare till e-poststeget som vanligt.
 
-1. Gå direkt till **Veckodagssökvägen** (den andra ärendesökvägen) och lägg till en **[!UICONTROL Email]**-åtgärdsaktivitet. Ingen vänteaktivitet behövs för veckodagsposter.
+1. Gå direkt till **Veckodagssökvägen** (den andra ärendesökvägen) och lägg till en **[!UICONTROL Email]**-åtgärdsaktivitet. Ingen **[!UICONTROL Wait]**-aktivitet behövs för veckodagsposter.
 
 1. Konfigurera e-postmeddelandet efter behov.
 
 ### Steg 5: Slutför hela reseflödet
 
-Efter Wait-aktiviteterna på både lördag- och söndagsbanorna ska alla tre sökvägarna (lördag, söndag och veckodagar) flöda till samma e-poståtgärd. Lägg till en **[!UICONTROL End]**-aktivitet efter e-postmeddelandet.
+Efter **[!UICONTROL Wait]**-aktiviteterna på både lördag- och söndagssökvägar ska alla tre sökvägarna (lördag, söndag och veckodagar) flöda till samma **[!UICONTROL Email]**-åtgärdsaktivitet. Lägg till en **[!UICONTROL End]**-aktivitet efter e-postmeddelandet.
 
 ### Översikt över visuellt arbetsflöde
 
 Hela arbetsflödet följer denna logik:
 
-* **Start** → **Villkor: Är det lördag eller söndag?**
-   * **Ja (lördag):** Vänta till måndag 9 → Skicka e-post
-   * **Ja (söndag):** Vänta till måndag 9 → Skicka e-post
-   * **Nej (måndag-fredag):** Skicka e-post omedelbart
+* **Start** → **[!UICONTROL Condition]**: Är det lördag eller söndag?
+   * **Ja (lördag):** **[!UICONTROL Wait]** till måndag 9 → **[!UICONTROL Send email]**
+   * **Ja (söndag):** **[!UICONTROL Wait]** till måndag 9 → **[!UICONTROL Send email]**
+   * **Nej (måndag-fredag):** **[!UICONTROL Send email]** omedelbart
 
 Detta garanterar att alla e-postmeddelanden skickas endast på vardagar, med helgposter automatiskt i kö för måndagsleverans.
 
@@ -172,7 +170,7 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 >[!IMPORTANT]
 >
->Testa alltid kundreslogiken i testläge för att kontrollera att vänteaktiviteterna fungerar som förväntat. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan &#x200B;](testing-the-journey.md)
+>Testa alltid kundreslogiken i testläge för att kontrollera att vänteaktiviteterna fungerar som förväntat. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. [Läs mer om hur du testar resan ](testing-the-journey.md)
 
 ### Steg 7: Publicera din resa
 
