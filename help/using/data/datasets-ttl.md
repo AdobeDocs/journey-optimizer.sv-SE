@@ -8,9 +8,9 @@ role: Developer, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 08633a79-5601-4e36-b8cf-080234956d99
-source-git-commit: 4532db3f84cdf41d295050e85e721f65cb4f1f0e
+source-git-commit: d4729294a007a348e0233aa8a75bbe3b2999742a
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -78,13 +78,13 @@ TTL-tillägg stöds för närvarande inte. Det finns dock planer på att optimer
 
 >[!NOTE]
 >
->Data som lagras i profilen omfattas av berättigandet Total Data Volume. Alla datalagringsökningar i profilen som ett resultat av ett TTL-tillägg räknas därför av mot det totala datavolymtillståndet. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html?lang=sv-SE){target=_blank}
+>Data som lagras i profilen omfattas av berättigandet Total Data Volume. Alla datalagringsökningar i profilen som ett resultat av ett TTL-tillägg räknas därför av mot det totala datavolymtillståndet. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target=&quot;_blank}
 
 +++
 
 +++Kan kunder öka TTL-värdet för [!DNL Journey Optimizer]-systemdatauppsättningsdata i datasjön? 
 
-TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=sv-SE){target=_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/derived-datasets/overview){target=_blank}
+TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target=&quot;_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target=&quot;_blank}
 
 +++
 
@@ -111,5 +111,17 @@ TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Desti
 +++Vilken tidsstämpel används för att kontrollera TTL (t.ex. för bakåtfyllnad)? 
 
 Händelsens tidsstämpel används (dvs. inte datumet för inmatningen).
+
++++
+
++++Kan jag ta bort datauppsättningar som genererats av Journey Optimizer?
+
+Journey Optimizer systemgenererade datauppsättningar är skyddade och kan inte tas bort via Adobe Experience Platform standardgränssnitt. Dessa datauppsättningar är viktiga för Journey Optimizer-funktioner och hanteras av systemet.
+
+Om du behöver ta bort en Journey Optimizer-systemdatauppsättning permanent (t.ex. för QA-miljöer, rensning av sandlådor eller särskilda krav på datahygien) kontaktar du Adobe Engineering eller Adobe kundtjänst. Dessa datauppsättningar kräver speciella backend-procedurer för att säkerställa fullständig och säker borttagning.
+
+>[!NOTE]
+>
+>Om du vill rensa rutindata i dessa systemdatauppsättningar använder du de **[!UICONTROL Data Lifecycle]**-åtgärder som är tillgängliga via Privacy Service för att ta bort specifika poster eller identiteter. [Läs mer](../privacy/data-hygiene.md)
 
 +++
