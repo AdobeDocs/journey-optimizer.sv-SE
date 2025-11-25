@@ -10,9 +10,9 @@ level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 02de069c-3009-4105-aa98-c49959d3efda
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 486d742ea2b1e8e6eca9e434ff862da3d40fd7ec
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1735'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Du kan också använda en målgrupp i ett resevillkor. [Läs mer](#using-a-segme
 
 >[!NOTE]
 >
->Villkorsutvärderingen misslyckas för profiler som innehåller fler än två enhetsidentiteter i [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv-SE#profile-data-store){target="_blank"}.
+>Villkorsutvärderingen misslyckas för profiler som innehåller fler än två enhetsidentiteter i [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
 
 ## Lägga till och hantera villkorssökvägar {#about_condition}
 
@@ -72,7 +72,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![Uttrycksredigeraren visar fältval och logiska operatorer OCH ELLER](assets/journey64.png)
 
-Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
+Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
 
 
 >[!NOTE]
@@ -90,6 +90,14 @@ I den enkla redigeraren hittar du även kategorin Reseegenskaper, nedanför kate
 Använd en **[!UICONTROL Data Source condition]** för att definiera ett villkor baserat på fält från datakällorna eller händelser som tidigare placerats under resan. Den här typen av villkor definieras med uttrycksredigeraren. Lär dig hur du använder uttrycksredigeraren i [det här avsnittet](expression/expressionadvanced.md).
 
 Om du till exempel riktar dig till en målgrupp med anrikningsattribut som genererats med ett dispositionsarbetsflöde eller en anpassad uppladdning (CSV-fil), kan du använda dessa anrikningsattribut för att bygga upp ditt villkor.
+
+>[!IMPORTANT]
+>
+>**Hantera saknade eller ej inkapslade attribut**
+>
+>Om ett schemafält definieras i ditt profilschema men inga data har importerats för det fältet tolkar Journey Optimizer och den underliggande kundprofilen i realtid fältet som `null`. Därför utvärderas villkor som söker efter `isEmpty()`, `isNull()` eller liknande funktioner till `true` även om attributet aldrig har importerats. Detta kan leda till oväntat resebeteende om du inte är medveten om att fältet saknar data.
+>
+>För att undvika förvirring bör du se till att attributen som du använder i villkorsuttryck har importerats med faktiska data innan profilen kommer in på resan. Du kan verifiera attributvärden i [kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} för att bekräfta om det finns data för fälten som används i dina villkor.
 
 Med den avancerade uttrycksredigeraren kan du ställa in mer avancerade villkor för att hantera samlingar eller använda datakällor som kräver att parametrar skickas. [Läs mer](../datasource/external-data-sources.md).
 
@@ -180,4 +188,4 @@ Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
