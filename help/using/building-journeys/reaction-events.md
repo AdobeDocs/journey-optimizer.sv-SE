@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, händelser, reaktion, spårning, plattform
 exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
 version: Journey Orchestration
-source-git-commit: dff732d14dd143f085b1287274f7571a900a0c87
+source-git-commit: d8fa1c7055e4e31e393e36ba16863e0f8f95ca9b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '491'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 En av de olika händelseaktiviteterna som finns på paletten finns i den inbyggda **[!UICONTROL Reactions]**-händelsen. Med den här aktiviteten kan du reagera på spårningsdata som är relaterade till ett meddelande som skickas inom samma resa. Vi hämtar denna information i realtid när den delas med Adobe Experience Platform.
 
-Du kan reagera på klickade eller öppna meddelanden.
+Du kan reagera på klickade eller öppna meddelanden. Du kan till exempel skicka ett annat meddelande om en person har öppnat det tidigare e-postmeddelandet eller klickat i det, eller skicka ett annat uppföljningsmeddelande om personen inte har interagerat med din kommunikation.
 
 Se [Åtgärder](../building-journeys/about-journey-activities.md#action-activities).
 
@@ -36,7 +36,7 @@ Du kan använda aktiviteten **[!UICONTROL Reaction]** för att utföra en åtgä
 
 ## Konfigurera reaktionshändelser {#configure}
 
-![Konfiguration av reaktionshändelser med kanalval och händelsetyp &#x200B;](assets/journey45.png)
+![Konfiguration av reaktionshändelser med kanalval och händelsetyp ](assets/journey45.png)
 
 Följ de här stegen för att konfigurera reaktionshändelser:
 
