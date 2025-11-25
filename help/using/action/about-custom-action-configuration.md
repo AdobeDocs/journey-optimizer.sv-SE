@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: bc614a78229771e826edea581aefb97b0e3f4159
+source-git-commit: bd7ed127c09e24dc1b29c4fcdecb8a2fd70c9009
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -79,9 +79,13 @@ När du väljer en slutpunkt som ska användas som mål med en anpassad åtgärd
 
 En begränsning på 300 000 anrop över en minut har definierats för alla anpassade åtgärder. Dessutom utförs standardcapping per värd och per sandlåda. Om du till exempel har två slutpunkter med samma värd (till exempel `https://www.adobe.com/endpoint1` och `https://www.adobe.com/endpoint2`) i en sandlåda, gäller det för alla slutpunkter under adobe.com. &quot;endpoint1&quot; och &quot;endpoint2&quot; har samma begränsningskonfiguration och om en slutpunkt når gränsen påverkas den andra slutpunkten.
 
-Standardgränsen på 300 000 anrop per minut gäller på domännivå (t.ex. example.com). Om du vill ha en högre gräns kan du kontakta Adobe Support med användningsbevis och bekräfta slutpunktens dataflöde. Ange information om den förväntade samtalsvolymen och slutpunktskapaciteten om du vill begära en ökning av antalet samtal. Adobe kan anpassa capping om kapacitetstestning visar att slutpunkten kan hantera högre genomströmning. För bästa praxis bör du överväga att minska läsfrekvensen, göra om resor eller genomföra vänteaktiviteter för att få fler att ringa och undvika fel.
+>[!NOTE]
+>
+>300 000 anrop per minut används som ett **skjutningsfönster** per sandlåda och per slutpunkt för slutpunkter med svarstider som är mindre än 0,75 sekunder. Skjutningsfönstret kan börja när som helst i millisekunder, vilket innebär att det kan uppstå ett cappningsfel även om hastigheten är under 300 k/min vid justering till klockminuter. För slutpunkter med svarstider som är större än 0,75 sekunder gäller en separat gräns på 150 000 anrop per 30 sekunder (även ett skjutfönster). Läs mer om långsamma slutpunkter på [den här sidan](../configuration/external-systems.md#response-time).
 
-Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som är inriktade på anpassade åtgärder. Du måste ta hänsyn till detta vid målgruppsbaserade resor genom att definiera en lämplig läsfrekvens (5 000 profiler/er när anpassade åtgärder används). Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
+Standardgränsen på 300 000 anrop per minut gäller på domännivå (t.ex. example.com). Om du vill ha en högre gräns kan du kontakta Adobe Support med användningsbevis och bekräfta slutpunktens dataflöde. Ange information om den förväntade samtalsvolymen och slutpunktskapaciteten om du vill begära en ökning av antalet samtal. Adobe kan anpassa capping om kapacitetstestning visar att slutpunkten kan hantera högre genomströmning. För bästa praxis bör man överväga att omstrukturera resorna eller genomföra vänteaktiviteter för att stagnera utgående samtal och undvika att få fel.
+
+Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som är inriktade på anpassade åtgärder. Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Läs [den här sidan](../configuration/external-systems.md).
 
 Du bör inte ange allmänna slutpunkter som mål med anpassade åtgärder av olika anledningar:
 
@@ -159,7 +163,7 @@ Adobe Journey Optimizer stöder TLS 1.3 som standard för anpassade åtgärder. 
 
 Du kan använda mTLS (Mutual Transport Layer Security) för att säkerställa förbättrad säkerhet vid utgående anslutningar till anpassade Adobe Journey Optimizer-åtgärder. mTLS är en heltäckande säkerhetsmetod för ömsesidig autentisering som ser till att båda parter delar information är de som gör anspråk på att vara innan data delas. mTLS innehåller ytterligare ett steg jämfört med TLS, där servern också frågar efter klientens certifikat och verifierar det i slutet.
 
-Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
+Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
 ## Definiera nyttolastparametrarna {#define-the-message-parameters}
 
