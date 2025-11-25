@@ -38,7 +38,7 @@ Se [Om åtgärdsaktiviteter](../building-journeys/about-journey-activities.md#ac
 >
 >Placering av en **[!UICONTROL Wait]**-aktivitet eller någon annan aktivitet mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten stöds inte och kan leda till att åtgärden inte fungerar som förväntat.
 
-![Konfiguration av reaktionshändelser med kanalval och händelsetyp ](assets/journey45.png)
+![Konfiguration av reaktionshändelser med kanalval och händelsetyp &#x200B;](assets/journey45.png)
 
 Här följer de olika stegen för att konfigurera reaktionshändelser:
 

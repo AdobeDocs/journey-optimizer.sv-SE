@@ -120,7 +120,7 @@ När du använder direktuppspelade målgrupper med aktiviteten **Målgruppskvali
 
 * **Profiler som redan finns i målgruppen**: Det är bara profiler som nyligen har kvalificerats för målgruppen efter att resan har publicerats som utlöser inträde. Profiler som redan finns före publiceringen kommer inte att spelas in.
 
-* **Reseaktiveringstid**: När du publicerar en resa tar det upp till **10 minuter** för aktiviteten Målgruppskvalificering att bli aktiv och börja lyssna efter profilposter och utträden. **** [Läs mer om aktivering av resan](#configure-segment-qualification).
+* **Reseaktiveringstid**: När du publicerar en resa tar det upp till **10 minuter** för aktiviteten Målgruppskvalificering att bli aktiv och börja lyssna efter profilposter och utträden. **&#x200B;**&#x200B;[Läs mer om aktivering av resan](#configure-segment-qualification).
 
 * **Snabb avslutas från målgrupp**: Om en profil kvalificerar sig för målgruppen men avslutas innan reseposten aktiveras, kanske profilen inte kommer in på resan.
 
