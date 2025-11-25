@@ -2,20 +2,41 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Lista över undantag
-description: Läs mer om undantag som inträffar när du skickar
+description: Läs mer om undantag under sändning
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: a34ba1a8-87d5-4f9c-a181-2f49e74e8f09
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 853e87cdd69a3fc180dcb1aa38b4b67f27977939
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 9%
+source-wordcount: '830'
+ht-degree: 7%
 
 ---
 
 # Uteslutningsorsaker {#exclusion-list}
+
+## Hur undantag räknas i kampanjrapporter
+
+Observera att måttet *Undantag* beräknas så här när kampanjrapporter visas:
+
+**Undantag = unika undantag + dubblerade undantagshändelser**
+
+Det innebär att om en profil utesluts flera gånger (t.ex. på grund av flera undantagshändelser för samma profil) räknas varje händelse in i summan för uteslutningar. Därför kan summan av *Levererade* och *Undantag* överstiga den ursprungliga målgruppsstorleken. Detta beteende förväntas och återspeglar hur undantagshändelser spåras i systemet.
+
+**Exempel:**
+
+- Målgrupp: 94 000 profiler
+- Levererat: 69 000
+- Undantag: 37 000 (inkluderar dubblerade exclude-händelser)
+- Totalt (levererat + Uteslutning): 106 000
+
+Summan överskrider målgruppen eftersom dubblerade undantagshändelser ingår i antalet undantag.
+
+Mer information om de specifika exkluderingsorsakerna finns i tabellen nedan.
+
+## Lista över orsaker till undantag
 
 | Uteslutningsorsak | Felkod | Kanal | Förklaring |
 |-|-|-|-|

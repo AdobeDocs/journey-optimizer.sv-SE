@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: aa060d8e-23e2-4bab-b709-636077eb5d20
-source-git-commit: be0a240f73e884fd91798952167e81689aa2ae2f
+source-git-commit: 853e87cdd69a3fc180dcb1aa38b4b67f27977939
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2162'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   </tr> 
   <tr> 
    <td> Skicka undantag <br/> </td> 
-   <td> Antal profiler som har uteslutits av Adobe Journey Optimizer.<br/> </td> 
+   <td> Antal profiler som har uteslutits av Adobe Journey Optimizer. <a href="exclusion-list.md">Läs mer om hur undantag räknas</a>.<br/> </td> 
   </tr>
   <tr> 
    <td> Placeringsnamn <br/> </td> 
@@ -193,7 +193,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   </tr>
   <tr> 
    <td> Unika sändningsundantag <br/> </td> 
-   <td>Antal unika profiler som har uteslutits från att ta emot meddelanden på grund av regler för behörighet, målgruppssegmentering eller profilstatus.<br/> </td> 
+   <td>Antal unika profiler som uteslutits från att ta emot meddelanden på grund av regler för behörighet, målgruppssegmentering eller profilstatus. <a href="exclusion-list.md">Läs mer om hur undantag räknas</a>.<br/> </td> 
   </tr>
   <tr> 
    <td>Unik målinriktad<br/> </td> 
@@ -234,7 +234,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
     </tr>
     <tr> 
       <td>Utgående SMS-undantag</td> 
-      <td>Antal profiler som har uteslutits från att ta emot SMS-meddelanden från Adobe Journey Optimizer.</td> 
+      <td>Antal profiler som har uteslutits från att ta emot SMS-meddelanden från Adobe Journey Optimizer. <a href="exclusion-list.md">Läs mer om hur undantag räknas</a>.</td> 
     </tr>
     <tr> 
       <td>Unika klick</td> 
@@ -548,7 +548,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 </tr>
 <tr> 
    <td>Utgående undantag <br/> </td> 
-   <td>Antal profiler som har uteslutits från att ta emot direktreklam på grund av fördefinierade villkor eller filtrering från Adobe Journey Optimizer.<br/> </td> 
+   <td>Antal profiler som har uteslutits från direktreklam på grund av fördefinierade kriterier eller filtrering från Adobe Journey Optimizer. <a href="exclusion-list.md">Läs mer om hur undantag räknas</a>.<br/> </td> 
 </tr>
 <tr> 
    <td>Profiler<br/> </td> 
