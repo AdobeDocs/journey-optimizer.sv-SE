@@ -5,15 +5,19 @@ title: Guiden Fråga om innehåll i AI Assistant
 description: Lär dig hur du skapar effektiva uppmaningar för AI-driven innehållsgenerering med hjälp av CO-STAR-ramverket för att skapa varumärkesanpassat, konverterande marknadsföringsmaterial.
 role: User
 level: Intermediate
-source-git-commit: bacfe2e04898e8417308e3f1c889214547e3ea02
+source-git-commit: 5063115c6ac93ef332044bfff43a4df817a1a4e3
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2107'
 ht-degree: 0%
 
 ---
 
-
 # Bästa praxis för AI Assistant-tips {#ai-assistant-prompting-guide}
+
+>[!CONTEXTUALHELP]
+>id="ajo_ai_assistant_prompt"
+>title="Exempel på fråga"
+>abstract="Läs Journey Optimizer dokumentation och lär dig hur ni skapar effektiva budskap som skapar konverteringsfullt varumärkesanpassat marknadsföringsmaterial."
 
 Den här guiden hjälper er att strukturera era förfrågningar, förmedla avsikter på ett tydligt sätt och se till att AI producerar meddelanden som är anpassade till era varumärkesriktlinjer, målgruppsbehov och kampanjmål.
 Lär dig hur du skriver effektiva uppmaningar som gör det möjligt för AI Assistant att generera högkvalitativt marknadsföringsmaterial som är skräddarsytt efter era mål.
@@ -116,19 +120,19 @@ Dessa begäranden stöds inte och bör hanteras med andra verktyg:
 
 Innan du genererar innehåll bör du kontrollera följande:
 
-&check; **Clear Objective**: Anger tydligt åtgärd, produkt/tjänst, värde och sammanhang.
+&amp;check; **Clear Objective**: Anger tydligt åtgärd, produkt/tjänst, värde och sammanhang.
 
-&check; **Definierad målpublik**: Anger demografi, roll eller segment.
+&amp;check; **Definierad målpublik**: Anger demografi, roll eller segment.
 
-&check; **Justering av innehållstyp**: Målet matchar den valda kanalen eller det valda formatet.
+&amp;check; **Justering av innehållstyp**: Målet matchar den valda kanalen eller det valda formatet.
 
-&check; **Listrutor konfigurerade**: Ton, strategi och språkområde har valts, ta inte med dem i uppmaningen.
+&amp;check; **Listrutor konfigurerade**: Ton, strategi och språkområde har valts, ta inte med dem i uppmaningen.
 
-&check; **Dokumentfokus angiven**: Markerar vilket innehåll eller vilka avsnitt som ska refereras.
+&amp;check; **Dokumentfokus angiven**: Markerar vilket innehåll eller vilka avsnitt som ska refereras.
 
-&check; **Varumärke används**: Lämpliga varumärkesriktlinjer har valts.
+&amp;check; **Varumärke används**: Lämpliga varumärkesriktlinjer har valts.
 
-&check; **Realistiskt omfång**: Undvik begäranden om layoutändringar, formatering eller strukturändringar.
+&amp;check; **Realistiskt omfång**: Undvik begäranden om layoutändringar, formatering eller strukturändringar.
 
 ## Skriv effektiva marknadsföringsmål {#marketing-objectives}
 
@@ -138,11 +142,11 @@ När ni utformar marknadsföringsmålen ska ni se till att de är tydliga, anvä
 
 **Exempel på bra mål:**
 
-&check;&quot;Drive sign-ups for our free 30 day trial of the new AI-powered analytics dashboard&quot;
+&amp;check;&quot;Drive sign-ups for our free 30 day trial of the new AI-powered analytics dashboard&quot;
 
-&check;&quot;Generera leads för vårt B2B-webbinarium om &#39;Minska molnkostnaderna med 40 %&#39; som inträffar den 15 mars&quot;
+&amp;check;&quot;Generera leads för vårt B2B-webbinarium om &#39;Minska molnkostnaderna med 40 %&#39; som inträffar den 15 mars&quot;
 
-&check; &quot;Promote our limited-time 25% semester discount on premium subscriptions, ending December 25th&quot;
+&amp;check; &quot;Promote our limited-time 25% semester discount on premium subscriptions, ending December 25th&quot;
 
 **Exempel som ska undvikas:**
 
@@ -159,11 +163,11 @@ Använd den här formeln för att hjälpa dig att skriva effektiva mål: **Åtg�
 
 **Exempel på bra mål:**
 
-&check;&quot;Uppmuntra nedladdningar av vår nya mobilapp som hjälper användarna att spåra hållbara levnadsvanor med personaliserade, miljövänliga rekommendationer&quot;
+&amp;check;&quot;Uppmuntra nedladdningar av vår nya mobilapp som hjälper användarna att spåra hållbara levnadsvanor med personaliserade, miljövänliga rekommendationer&quot;
 
-&check;&quot;Promote registration for our exclusive workshop on advanced data visualization techniques for marketing professionals&quot;
+&amp;check;&quot;Promote registration for our exclusive workshop on advanced data visualization techniques for marketing professionals&quot;
 
-&check;&quot;Driv närvaro vid vår produktlanseringsevent med den revolutionerande AI-skrivassistenten som sparar mer än fem timmar per vecka&quot;
+&amp;check;&quot;Driv närvaro vid vår produktlanseringsevent med den revolutionerande AI-skrivassistenten som sparar mer än fem timmar per vecka&quot;
 
 **Exempel som ska undvikas:**
 
