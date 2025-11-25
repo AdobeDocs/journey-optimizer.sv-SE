@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: de71f603b98c44d09ede5cc6bafc945f124ceb09
 workflow-type: tm+mt
-source-wordcount: '5125'
+source-wordcount: '5246'
 ht-degree: 0%
 
 ---
@@ -271,15 +271,19 @@ Läs mer om [händelsekonfiguration](../event/about-events.md) och [e-poståtgä
 
 +++ Kan jag skicka om ett meddelande om någon inte öppnar eller klickar på det?
 
-Ja. Använd en **reaktionshändelse** med en **Timeout**:
+Ja. Använd en **[!UICONTROL Reaction]**-händelse med en **Timeout**:
 
-1. När du har skickat meddelandet lägger du till en Reaction-händelse som lyssnar efter e-postöppningar eller klick
-2. Konfigurera en timeout-period (t.ex. 3 dagar) för Reaction-händelsen
+1. När du har skickat meddelandet lägger du till en **[!UICONTROL Reaction]**-händelse **omedelbart** efter kanalåtgärden (utan någon **[!UICONTROL Wait]**-aktivitet däremellan)
+2. Konfigurera en timeout-period (t.ex. 3 dagar) för händelsen **[!UICONTROL Reaction]** för att lyssna efter e-postöppningar eller klick
 3. Skapa två banor:
    * **Om du har öppnat/klickat**: Fortsätt med nästa steg eller avsluta resan
    * **Timeout-sökväg (ej öppnad/klickad)**: Skicka ett påminnelsemeddelande med en annan ämnesrad
 
 **Bästa tillvägagångssätt**: Begränsa antalet omgångar så att inte skräppost visas (vanligtvis 1-2 påminnelser maximalt).
+
+>[!IMPORTANT]
+>
+>Placera inte en **[!UICONTROL Wait]**-aktivitet mellan [kanalåtgärden](journeys-message.md) och **[!UICONTROL Reaction]**-aktiviteten. **[!UICONTROL Reaction]** måste komma omedelbart efter kanalåtgärden. Använd den inbyggda timeout-funktionen i **[!UICONTROL Reaction]** för att vänta på kundsvar.
 
 Läs mer om [reaktionshändelser](reaction-events.md).
 
@@ -287,15 +291,20 @@ Läs mer om [reaktionshändelser](reaction-events.md).
 
 +++ Hur skapar jag en kundvagnsöverlämningsresa?
 
-Skapa en händelseutlöst resa med en Reaction-händelse med en Timeout:
+Skapa en händelseutlöst resa med en **[!UICONTROL Reaction]**-händelse med en Timeout:
 
 1. **Konfigurera en händelse om att kundvagnen överges**: Utlöses när objekt läggs till men utcheckningen inte slutförs inom en tidsram
-2. **Lägg till en Reaction-händelse**: Konfigurera den för att lyssna efter en Purchase-händelse
-3. **Ange en timeout-period**: Definiera en timeout (t.ex. 1-2 timmar) för Reaction-händelsen för att ge kunden tid att slutföra naturligt
-4. **Skapa två banor**:
+2. **Skicka ett första meddelande** (valfritt): E-postbekräftelse av kundvagnsobjekt
+3. **Lägg till en [!UICONTROL Reaction]-händelse omedelbart efter kanalåtgärden**: Konfigurera den så att den lyssnar efter en köphändelse
+4. **Ange en timeout-period**: Definiera en timeout (t.ex. 1-2 timmar) för händelsen **[!UICONTROL Reaction]** för att ge kunden tid att slutföra naturligt
+5. **Skapa två banor**:
    * **Om en köphändelse inträffar**: Avsluta resan eller fortsätt med flödet efter köpet
    * **Timeout-sökväg (inget köp)**: Skicka en påminnelse om att kunden avbryter prenumerationen via e-post med kundvagnsinnehåll
-5. **Valfritt**: Lägg till ytterligare en Reaction-händelse med timeout (24 timmar) och skicka en andra påminnelse med ett incitament (till exempel 10 % rabatt)
+6. **Valfritt**: Lägg till ytterligare en **[!UICONTROL Reaction]** händelse **omedelbart efter** påminnelsemeddelandet med timeout (24 timmar) och skicka en andra påminnelse med en fördel (t.ex. 10 % rabatt)
+
+>[!IMPORTANT]
+>
+>**[!UICONTROL Reaction]** händelser måste placeras omedelbart efter [kanalåtgärder](journeys-message.md). Placera inte **[!UICONTROL Wait]** aktiviteter mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten.
 
 Läs mer om [resans användningsfall](jo-use-cases.md) och [reaktionshändelser](reaction-events.md).
 
@@ -463,8 +472,9 @@ Vanliga orsaker till varför profiler inte får resa:
 * **Resan har inte publicerats**: Resan har statusen Utkast
 * **Ogiltigt namnområde**: Resursens namnområde matchar inte profilens identitet
 * **Resan stängd**: Resan tar inte längre emot nya ingångar
+* **Strömmande timing för målgruppskvalifikation**: För resor som använder Audience Qualification med direktuppspelade målgrupper kanske profiler inte kommer in om de redan fanns i målgruppen innan resan publicerades, eller om resan inte har slutfört sin aktiveringsperiod (upp till 10 minuter efter publiceringen)
 
-Läs mer om [hantering av inträde](entry-management.md).
+Läs mer om [hantering av mottagarnas inträde](entry-management.md) och [bedömning av målgruppernas kvalificeringstider](audience-qualification-events.md#streaming-entry-caveats).
 
 +++
 
@@ -940,4 +950,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

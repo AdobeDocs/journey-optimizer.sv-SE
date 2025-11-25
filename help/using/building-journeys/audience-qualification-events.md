@@ -10,9 +10,9 @@ level: Intermediate
 keywords: kvalificering, evenemang, målgrupp, resa, plattform
 exl-id: 7e70b8a9-7fac-4450-ad9c-597fe0496df9
 version: Journey Orchestration
-source-git-commit: b8fb0c0fd9e9e119428b430563cbb35d1961516e
+source-git-commit: acf73fbce4a8ebfc6f228c92480a5e597e0bfe53
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1560'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
 
    >[!NOTE]
    >
-   >**[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** målgruppsdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >**[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** målgruppsdeltagarstatus från Adobe Experience Platform. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan. Som standard är fältet förifyllt med det senast använda namnutrymmet.
 
@@ -108,11 +108,33 @@ När man använder sig av Audience Qualification för direktuppspelade målgrupp
 
 Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för att skicka händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md)
 
-Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
+Mer information om direktuppspelningssegmentering finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 >[!NOTE]
 >
 >För direktuppspelningssegmentering kan det ta upp till **2 timmar** att sprida nyimporterade data helt inom Adobe Experience Platform för realtidsanvändning. Målgrupper som förlitar sig på vardag- eller tidsbaserade förhållanden (t.ex. &quot;händelser som inträffat idag&quot;) kan uppleva ytterligare komplexitet när det gäller tidpunkten för kvalificeringen. Om din resa är beroende av omedelbar målgruppskvalifikation kan du lägga till en kort [Wait-aktivitet](wait-activity.md) i början eller tillåta buffringstid för att säkerställa korrekt kvalificering.
+
+#### Varför inte alla kvalificerade profiler kan komma in på resan {#streaming-entry-caveats}
+
+När du använder direktuppspelade målgrupper med aktiviteten **Målgruppskvalificering** behöver inte alla profiler som är kvalificerade för målgruppen nödvändigtvis gå in på resan. Det här beteendet kan inträffa på grund av:
+
+* **Profiler som redan finns i målgruppen**: Det är bara profiler som nyligen har kvalificerats för målgruppen efter att resan har publicerats som utlöser inträde. Profiler som redan finns före publiceringen kommer inte att spelas in.
+
+* **Reseaktiveringstid**: När du publicerar en resa tar det upp till **10 minuter** för aktiviteten Målgruppskvalificering att bli aktiv och börja lyssna efter profilposter och utträden. **** [Läs mer om aktivering av resan](#configure-segment-qualification).
+
+* **Snabb avslutas från målgrupp**: Om en profil kvalificerar sig för målgruppen men avslutas innan reseposten aktiveras, kanske profilen inte kommer in på resan.
+
+* **Tidsinställning mellan kvalificering och resehantering**: På grund av Adobe Experience Platform utspridda karaktär kan det finnas luckor i tidsintervallet mellan när en profil kvalificerar sig för en målgrupp och när resan bearbetar den kvalificeringshändelsen.
+
+**Rekommendationer:**
+
+* Efter publicering av en resa väntar du minst 10 minuter innan du skickar händelser eller data som ska utlösa profilkvalificering. Detta garanterar att resan är helt aktiverad och klar att bearbeta poster.
+
+* I viktiga fall där du måste se till att alla kvalificerade profiler anges bör du överväga att använda en [Läs målgrupp](read-audience.md)-aktivitet i stället, som bearbetar alla profiler i en målgrupp vid en viss tidpunkt.
+
+* Övervaka resans [ingångsfrekvens och genomströmning](entry-management.md#profile-entrance-rate) för att förstå profilflödesmönster.
+
+* Om profiler inte anges som förväntat kan du läsa [felsökningsguiden](troubleshooting-execution.md#checking-if-people-enter-the-journey) för ytterligare diagnostiksteg.
 
 ### Så här undviker du överbelastningar {#overloads-speed-segment-qualification}
 
@@ -122,7 +144,7 @@ Här följer några tips för att undvika att överbelasta system som används i
 
   ![Felmeddelande när målgruppen inte hittas i Adobe Experience Platform](assets/segment-error.png)
 
-* Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html?lang=sv-SE){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök använder du en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
+* Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök använder du en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
 
 * Innan målgruppen används i en produktionsresa bör man utvärdera den mängd individer som är kvalificerade för denna målgrupp varje dag. Det gör du genom att kontrollera menyn **[!UICONTROL Audience]**, öppna målgruppen och titta på diagrammet **[!UICONTROL Profiles over time]**.
 
@@ -158,7 +180,7 @@ Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompe
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} gäller även för Adobe Journey Optimizer.
+>[Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även för Adobe Journey Optimizer.
 
 
 
@@ -166,4 +188,4 @@ Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompe
 
 Lär dig mer om tillämpliga användningsfall för målgruppskvalificeringsresor i den här videon. Lär dig hur du bygger en resa med målgruppskvalifikation och vilka bästa metoder som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446208?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425028?quality=12)

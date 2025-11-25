@@ -10,10 +10,10 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 version: Journey Orchestration
-source-git-commit: 22c3c44106d51032cd9544b642ae209bfd62d69a
+source-git-commit: acf73fbce4a8ebfc6f228c92480a5e597e0bfe53
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 23%
+source-wordcount: '1260'
+ht-degree: 20%
 
 ---
 
@@ -31,7 +31,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
@@ -56,6 +56,10 @@ Du kan börja felsöka med frågorna nedan:
   X-gw-ims-org-id - your organization's ID
   Content-type - application/json
   ```
+
+>[!NOTE]
+>
+>**För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
 
 ## Kontrollera hur människor navigerar genom resan {#checking-how-people-navigate-through-the-journey}
 
@@ -150,3 +154,13 @@ Om du skapar rapporter eller analyser baserade på händelser i kundens steg:
 * Observera att timinganalys kan visa poster grupperade inom några sekunder från varandra
 
 Mer information om hur du frågar efter steg för resa finns i [Exempel på frågor](../reports/query-examples.md).
+
+## Felsöka instrumentpanelens måttavvikelser {#dashboard-metrics}
+
+Om mätvärdena som visas på kontrollpanelen **Översikt** inte matchar det faktiska antalet resor på fliken **Bläddra** kontrollerar du följande:
+
+* Se till att resorna i fråga har haft trafik under de senaste 24 timmarna, eftersom resor utan nyligen genomförd aktivitet inte ingår i kontrollpanelen.
+* Kontrollera att du har rätt åtkomstbehörighet för att visa alla resor i organisationen.
+* Det kan ta upp till 30 minuter för mätvärdena att uppdateras efter att du har gjort ändringar i dina resor.
+
+Om diskrepanser kvarstår kontaktar du Adobe Support med skärmbilder av flikarna Översikt och Bläddra för att få hjälp.
