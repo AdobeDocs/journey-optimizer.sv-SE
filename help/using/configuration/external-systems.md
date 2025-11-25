@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: e6e8178f7a57a6d57c8d137dd313a26a5878994b
+source-git-commit: bc614a78229771e826edea581aefb97b0e3f4159
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1805'
 ht-degree: 16%
 
 ---
@@ -33,7 +33,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## API:er för begränsning och begränsning {#capping}
 
@@ -114,7 +114,7 @@ Behöver du mer information? Använd alternativen för feedback längst ned på 
 
 +++ Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?
 
-Se [det här avsnittet](../configuration/external-systems.md#capping) om du vill skapa regler för begränsning och begränsning. Som standard finns det ingen begränsning, men en begränsning på 300 000 anrop över en minut som definierats för alla anpassade åtgärder, per värd och per sandlåda. Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning.
+Se [det här avsnittet](../configuration/external-systems.md#capping) om du vill skapa regler för begränsning och begränsning. Som standard finns det ingen begränsning, men en begränsning på 300 000 anrop över en minut som definierats för alla anpassade åtgärder, per värd och per sandlåda. Gränsvärdet per värd gäller på domännivå (t.ex. example.com). Den här gränsen har fastställts baserat på kundanvändning för att skydda externa slutpunkter som har anpassats efter anpassade åtgärder. Om det behövs kan du åsidosätta den här inställningen genom att definiera en större begränsning för begränsning eller begränsning via våra API:er för begränsning/begränsning. Se [den här sidan](../action/about-custom-action-configuration.md) om du vill ha mer information om hur du begär höjda capping.
 
 +++
 
