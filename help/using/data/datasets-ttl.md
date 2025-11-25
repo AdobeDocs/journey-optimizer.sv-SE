@@ -8,7 +8,7 @@ role: Developer, Admin
 level: Experienced
 keywords: plattform, datasjön, skapa, sjö, datamängder, profil
 exl-id: 08633a79-5601-4e36-b8cf-080234956d99
-source-git-commit: c4f6b7754255ce3bf0229702b10955abf9843548
+source-git-commit: 4532db3f84cdf41d295050e85e721f65cb4f1f0e
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Tabellen nedan listar alla påverkade datauppsättningar och deras respektive Ti
 | Inkommande aktivitetshändelsedatauppsättning för AJO | 13 månader | 90 dagar |
 | AJO Klassificeringsdatauppsättning | 13 månader | n/a |
 | AJO BCC Feedback Event DataSet | 13 månader | n/a |
-| acpEntity - händelsedatamängd | 13 månader | n/a |
+| Entitetshändelsedatauppsättning | 13 månader | n/a |
 | Resor | 13 månader | n/a |
 | Resestegshändelser | 13 månader | n/a |
 | Repository - Personalized offers | 13 månader | n/a |
@@ -78,13 +78,13 @@ TTL-tillägg stöds för närvarande inte. Det finns dock planer på att optimer
 
 >[!NOTE]
 >
->Data som lagras i profilen omfattas av berättigandet Total Data Volume. Alla datalagringsökningar i profilen som ett resultat av ett TTL-tillägg räknas därför av mot det totala datavolymtillståndet. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html?lang=sv-SE){target=_blank}
+>Data som lagras i profilen omfattas av berättigandet Total Data Volume. Alla datalagringsökningar i profilen som ett resultat av ett TTL-tillägg räknas därför av mot det totala datavolymtillståndet. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target=&quot;_blank}
 
 +++
 
 +++Kan kunder öka TTL-värdet för [!DNL Journey Optimizer]-systemdatauppsättningsdata i datasjön? 
 
-TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=sv-SE){target=_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/derived-datasets/overview){target=_blank}
+TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target=&quot;_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target=&quot;_blank}
 
 +++
 
