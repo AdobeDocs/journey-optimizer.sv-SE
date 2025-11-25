@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide
 version: Journey Orchestration
-source-git-commit: de71f603b98c44d09ede5cc6bafc945f124ceb09
+source-git-commit: dff732d14dd143f085b1287274f7571a900a0c87
 workflow-type: tm+mt
-source-wordcount: '5246'
+source-wordcount: '5215'
 ht-degree: 0%
 
 ---
@@ -281,11 +281,7 @@ Ja. Använd en **[!UICONTROL Reaction]**-händelse med en **Timeout**:
 
 **Bästa tillvägagångssätt**: Begränsa antalet omgångar så att inte skräppost visas (vanligtvis 1-2 påminnelser maximalt).
 
->[!IMPORTANT]
->
->Placera inte en **[!UICONTROL Wait]**-aktivitet mellan [kanalåtgärden](journeys-message.md) och **[!UICONTROL Reaction]**-aktiviteten. **[!UICONTROL Reaction]** måste komma omedelbart efter kanalåtgärden. Använd den inbyggda timeout-funktionen i **[!UICONTROL Reaction]** för att vänta på kundsvar.
-
-Läs mer om [reaktionshändelser](reaction-events.md).
+Läs mer om [Reaktionshändelser](reaction-events.md).
 
 +++
 
@@ -950,4 +946,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

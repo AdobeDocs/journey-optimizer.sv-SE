@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Reaktionshändelser
-description: Läs mer om reaktionshändelser
+description: Lär dig hur du använder reaktionshändelser för att svara på data om meddelandespårning, som öppningar och klickningar inom dina resor, och konfigurera timeoutsökvägar för deltagare som inte svarar.
 feature: Journeys, Activities
 topic: Content Management
 role: User
@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, händelser, reaktion, spårning, plattform
 exl-id: 235384f3-0dce-4797-8f42-1d4d01fa42d9
 version: Journey Orchestration
-source-git-commit: de71f603b98c44d09ede5cc6bafc945f124ceb09
+source-git-commit: dff732d14dd143f085b1287274f7571a900a0c87
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
@@ -24,37 +24,33 @@ ht-degree: 2%
 >title="Reaktionshändelser"
 >abstract="Med den här aktiviteten kan du reagera på spårningsdata som är relaterade till ett meddelande som skickas inom samma resa. Vi hämtar denna information i realtid när den delas med Adobe Experience Platform."
 
+## Översikt {#overview}
+
 En av de olika händelseaktiviteterna som finns på paletten finns i den inbyggda **[!UICONTROL Reactions]**-händelsen. Med den här aktiviteten kan du reagera på spårningsdata som är relaterade till ett meddelande som skickas inom samma resa. Vi hämtar denna information i realtid när den delas med Adobe Experience Platform.
 
 Du kan reagera på klickade eller öppna meddelanden.
 
-Du kan också använda den här funktionen för att utföra en åtgärd när det inte finns någon reaktion på dina meddelanden. Det gör du genom att skapa en andra sökväg parallellt med reaktionsaktiviteten och lägga till en vänteaktivitet. Om ingen reaktion inträffar under den period som anges i vänteaktiviteten väljs den andra banan. Du kan välja att skicka t.ex. ett uppföljningsmeddelande.
+Se [Åtgärder](../building-journeys/about-journey-activities.md#action-activities).
 
-Se [Om åtgärdsaktiviteter](../building-journeys/about-journey-activities.md#action-activities).
+Du kan använda aktiviteten **[!UICONTROL Reaction]** för att utföra en åtgärd när det inte finns någon reaktion på dina meddelanden. Det gör du genom att skapa en andra sökväg som är parallell med aktiviteten **[!UICONTROL Reaction]** och lägga till en aktivitet av typen **[!UICONTROL Wait]**. Om ingen reaktion inträffar under den period som definierats i aktiviteten **[!UICONTROL Wait]** väljs den andra sökvägen. Du kan välja att skicka t.ex. ett uppföljningsmeddelande.
 
->[!IMPORTANT]
->
->En **[!UICONTROL Reaction]**-aktivitet måste placeras **omedelbart** efter en [kanalåtgärdsaktivitet](journeys-message.md) på arbetsytan för resan. Du kan inte använda en **[!UICONTROL Reaction]**-aktivitet om det inte finns någon kanalåtgärdsaktivitet innan.
->
->Placering av en **[!UICONTROL Wait]**-aktivitet eller någon annan aktivitet mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten stöds inte och kan leda till att åtgärden inte fungerar som förväntat.
+## Konfigurera reaktionshändelser {#configure}
 
-![Konfiguration av reaktionshändelser med kanalval och händelsetyp &#x200B;](assets/journey45.png)
+![Konfiguration av reaktionshändelser med kanalval och händelsetyp ](assets/journey45.png)
 
-Här följer de olika stegen för att konfigurera reaktionshändelser:
+Följ de här stegen för att konfigurera reaktionshändelser:
 
-1. Placera en **[!UICONTROL Reaction]**-aktivitet omedelbart efter en [kanalåtgärdsaktivitet](journeys-message.md) på arbetsytan för resan.
+1. Placera en **[!UICONTROL Reaction]**-aktivitet **omedelbart** efter en [kanalåtgärdsaktivitet](journeys-message.md) på arbetsytan för resan.
 1. Lägg till en **[!UICONTROL Label]** i svaret. Det här steget är valfritt.
 1. Välj den åtgärd som du vill reagera på i listrutan. Du kan välja vilken åtgärdsaktivitet som helst som placerats i banans tidigare steg.
 1. Beroende på vilken åtgärd du har valt väljer du vad du vill reagera på.
 1. Du kan definiera en timeout för en händelse (mellan 40 sekunder och 90 dagar) och en timeout-sökväg. Detta skapar en andra väg för individer som inte reagerade inom den angivna tiden. När du testar en resa som använder en reaktionshändelse är standardvärdet **[!UICONTROL Wait time]** och minimivärdet 40 sekunder. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 
->[!NOTE]
->
->
->Reaktionshändelser kan inte spåra meddelanden som äger rum under en annan resa.
->
->Reaktionshändelser spårar klickningar på länkar av typen &quot;spårade&quot;. Ta inte hänsyn till länkar för att ta bort prenumerationer och spegla sidor.
+## Skyddsritningar och begränsningar {#guardrails-limitations}
 
->[!IMPORTANT]
->
->E-postklienter som Gmail tillåter bildblockering. E-postöppningar spåras med en bild på 0 pixlar som ingår i e-postmeddelandet. Om bilder blockeras kommer e-postöppningar inte att beaktas.
+* En **[!UICONTROL Reaction]**-aktivitet måste placeras **omedelbart** efter en [kanalåtgärdsaktivitet](journeys-message.md) på arbetsytan för resan.
+* Du kan inte använda en **[!UICONTROL Reaction]**-aktivitet om det inte finns någon kanalåtgärdsaktivitet innan.
+* Placering av en **[!UICONTROL Wait]**-aktivitet eller någon annan aktivitet mellan kanalåtgärden och **[!UICONTROL Reaction]**-aktiviteten stöds inte och kan leda till att åtgärden inte fungerar som förväntat.
+* Reaktionshändelser kan bara spåra meddelanden som skickas inom samma resa. De kan inte spåra meddelanden som äger rum under en annan resa.
+* Reaktionshändelser spårar klickningar på länkar av typen &quot;spårade&quot;. Ta inte hänsyn till länkar för att ta bort prenumerationer och spegla sidor.
+* E-postöppningar spåras med en bild på 0 pixlar som ingår i e-postmeddelandet. Om e-postklienter (t.ex. Gmail) blockerar bilder tas ingen hänsyn till e-postöppningar.
