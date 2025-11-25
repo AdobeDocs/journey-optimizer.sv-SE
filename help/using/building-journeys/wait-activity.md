@@ -10,9 +10,9 @@ level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: cec807afe35bc95be9fa8d455cd72c2600e51fa7
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '727'
 ht-degree: 3%
 
 ---
@@ -90,6 +90,15 @@ Det bästa sättet är att använda anpassade datum som är specifika för dina 
 >
 >**Tidszonen** förväntas i egenskaperna för din resa. Därför är det inte möjligt att direkt peka från användargränssnittet vid en fullständig ISO-8601-tidsstämpelblandningstid och tidszonsförskjutning som 2023-08-12T09:46:06.982-05. [Läs mer](../building-journeys/timezone-management.md).
 
+>[!CAUTION]
+>
+>När du skapar ett anpassat vänteuttryck med `toDateTimeOnly()` ska du undvika att lägga till Z eller någon tidszonsförskjutning (t.ex. -05:00) i uttrycksresultatet. Uttrycket måste använda en giltig ISO-syntax för datum/tid som refererar till kundens konfigurerade tidszon utan explicita tidszonsdesigners.
+>
+>**Korrekt exempel:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))`
+>
+>**Felaktigt exempel:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (innehåller &#39;Z&#39;)
+>
+>Om tidszonsdesigners som inte stöds används kan det leda till att profiler fastnar i vänteaktiviteten i stället för att utvecklas som förväntat.
 
 Om du vill verifiera att vänteaktiviteten fungerar som förväntat kan du använda steghändelser. [Läs mer](../reports/query-examples.md#common-queries).
 
