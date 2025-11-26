@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 81e54a3e3428d58818805b5dcb397ede4039436a
+source-git-commit: 10eaebc1d24eae4a0a149822d31ff92509d1e6f8
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1701'
 ht-degree: 0%
 
 ---
@@ -128,6 +128,10 @@ I Adobe Journey Optimizer går varje kampanj igenom en livscykel som återspegla
 När ett fel inträffar inom en av era kampanjer visas en varningsikon bredvid kampanjens status. Klicka på den för att visa information om varningen. Dessa varningar kan inträffa i olika situationer, t.ex. när kampanjmeddelandet inte har publicerats eller om den valda konfigurationen är felaktig.
 
 ![](assets/campaign-alerts.png)
+
+>[!NOTE]
+>
+>Assets/Bilder är tillgängliga i levererat material i upp till två år (730 dagar) sedan det publicerades första gången i ett fragment/textbundet meddelande. Återpublicering krävs efter denna förfalloperiod (när som helst efter 730 dagar) för att hålla dem tillgängliga i ytterligare två år. Om publiceringen görs inom 730 dagar efter den första publikationen kommer inte förfallodagen för mediefiler/bilder att förlängas till de kommande 730 dagarna.
 
 ## Kampanjkalender {#calendar}
 
