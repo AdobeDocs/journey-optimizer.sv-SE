@@ -39,7 +39,7 @@ Om du har en implementering på klientsidan kan du använda någon av AEP klient
 
 ### Så här fungerar det - Web SDK {#client-side-how}
 
-1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} ingår på sidan.
+1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} ingår på sidan.
 
 1. Du måste använda kommandot `sendEvent` och ange [yt-URI](code-based-surface.md)<!--( or location/path)--> för att hämta personaliseringsinnehåll.
 
@@ -145,7 +145,7 @@ Stegen nedan beskriver processen att hämta det innehåll som publiceras på kan
 ### Så fungerar det
 
 1. Webbsidan har begärts och alla cookies som tidigare lagrats av webbläsaren som har prefixet `kndctr_` ingår.
-1. När sidan begärs från programservern skickas en händelse till [slutpunkten för interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) för att hämta personaliseringsinnehåll. Det här exempelprogrammet använder vissa hjälpmetoder för att förenkla skapandet och skickandet av begäranden till API:t (se [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). Men begäran är bara en `POST` med en nyttolast som innehåller en händelse och fråga. Cookies (om de är tillgängliga) från föregående steg inkluderas i begäran i arrayen `meta>state>entries`.
+1. När sidan begärs från programservern skickas en händelse till [slutpunkten för interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE) för att hämta personaliseringsinnehåll. Det här exempelprogrammet använder vissa hjälpmetoder för att förenkla skapandet och skickandet av begäranden till API:t (se [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). Men begäran är bara en `POST` med en nyttolast som innehåller en händelse och fråga. Cookies (om de är tillgängliga) från föregående steg inkluderas i begäran i arrayen `meta>state>entries`.
 
    ```javascript
    fetch(
@@ -306,7 +306,7 @@ Begäranden till Adobe Experience Platform API krävs för att få förslag och 
 Om du har en hybridimplementering kan du kolla in länkarna nedan.
 
 * Adobe Tech Blog: [Hybrid Personalization i Adobe Experience Platform Web SDK](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}
-* SDK-dokumentation: [Hybrid-anpassning med API:t för Web SDK och Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html){target="_blank"}
+* SDK-dokumentation: [Hybrid-anpassning med API:t för Web SDK och Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html?lang=sv-SE){target="_blank"}
 
 <!--
 ## Implementation guides and tutorials {#implementation-guides}
@@ -317,4 +317,4 @@ To help you get started with implementing code-based experiences, refer to the c
 
 * **Web SDK implementation**: Learn how to configure the Web SDK for decisioning and code-based experiences in [these tutorials](code-based-decisioning-implementations.md#tutorials).
 
-* **Decisioning implementation**: To learn how to implement decisioning capabilities on a code-based campaign, follow [this use case tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-uc){target="_blank"}.-->
+* **Decisioning implementation**: To learn how to implement decisioning capabilities on a code-based campaign, follow [this use case tutorial](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-uc){target="_blank"}.-->
