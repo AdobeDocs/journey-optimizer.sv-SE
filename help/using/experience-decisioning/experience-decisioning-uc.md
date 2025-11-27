@@ -7,9 +7,9 @@ role: User
 level: Intermediate, Experienced
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: 1b6158132e5df1912d9658805fa8b1344c6f938f
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '809'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 3%
 # Använd Beslutsfattandet i en kodbaserad upplevelse med hjälp av innehållsexperimentet {#experience-decisioning-uc}
 
 I det här användningsexemplet beskrivs alla steg som behövs för att använda Decisionering med den kodbaserade kanalen [!DNL Journey Optimizer].
+
+>[!NOTE]
+>
+>Den äldre beslutsfunktionen stöds inte med den kodbaserade upplevelsekanalen.
 
 I det här exemplet är du osäker på om en viss rankningsformel fungerar bättre än de förtilldelade prioriteterna. Om du vill mäta vilken som fungerar bäst för målgruppen skapar du en kampanj med [Innehållsexperiment](../content-management/content-experiment.md) där du definierar två leveranssätt:
 

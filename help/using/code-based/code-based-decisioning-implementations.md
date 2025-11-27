@@ -6,16 +6,22 @@ topic: Content Management
 role: Developer
 level: Experienced
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 1b6158132e5df1912d9658805fa8b1344c6f938f
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
 
-# Beslut om kodbaserade upplevelseimplementeringar
+# Beslut om kodbaserade upplevelseimplementeringar {#code-based-decisioning-implementations}
 
 När du använder Beslutsfattning i kodbaserade upplevelser bör du överväga att lägga till följande flaggor i din klientimplementering i de fall som beskrivs nedan.
+
+➡️ Läs mer om hur du konfigurerar Web SDK för beslut och kodbaserade upplevelser i [dessa självstudier](#tutorials).
+
+>[!CAUTION]
+>
+>Den kodbaserade upplevelsekanalen har bara stöd för funktionen [!DNL Journey Optimizer] [Decisioning](../experience-decisioning/gs-experience-decisioning.md) . Den äldre beslutsfunktionen är inte tillgänglig med kodbaserade upplevelser.
 
 ## Testa kodbaserade upplevelser med hjälp av beslut {#code-based-test-decisions}
 
@@ -288,3 +294,9 @@ Låt oss säga att ni har samma beslutspolicy med sidhuvuds- och sidfotsplacerin
 ```
 
 +++
+
+## Självstudiekurser{#tutorials}
+
+Lär dig hur du använder beslut i Journey Optimizer för att anpassa innehållserbjudanden på din webbplats, med fokus på Web SDK-konfiguration i [den här självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
+
+Lär dig hur du konfigurerar SDK för webben och använder kodbaserade upplevelser för att anpassa erbjudanden med hjälp av väderdata i realtid och sammanhangsbaserad information i [den här självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.

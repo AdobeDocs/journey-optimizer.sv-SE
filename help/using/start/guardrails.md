@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 3d5ed7c5efd76616c8dbc89078f7368eedc5f1af
+source-git-commit: 1f9841ddd039a7591f396e38d8a93ed840d6879e
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3317'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 Nedan hittar du ytterligare skyddsförslag och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 
 ## Webbläsare som stöds {#browsers}
@@ -98,11 +98,21 @@ För att Adobe Journey Optimizer ska kunna visa innehållskort på rätt sätt m
 
 * Journey Optimizer stöder en toppvolym på 5 000 inkommande begäranden per sekund. Skyddsplanen gäller för alla inkommande begäranden, som kan härröra från någon av de ingående kanaler som stöds av Journey Optimizer ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [kodbaserade upplevelser](../code-based/get-started-code-based.md), [innehållskort](../../rp_landing_pages/content-card-landing-page.md)).
 
-* Journey Optimizer inkommande kanaler har nya profiler som kanske inte har varit engagerade tidigare i andra kanaler som mål. Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
-
-  För att dina engagerande profiler ska hållas inom rimliga gränser rekommenderar Adobe att du ställer in en TTL-inställning (Time-To-Live) på 14 dagar så att pseudonyma profiler på navet automatiskt tas bort om de inte har visats eller varit engagerade inom det här tidsfönstret. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
-
 * Journey Optimizer stöder maximalt 500 aktiva inkommande åtgärder när som helst. Dessa inkommande åtgärder ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [kodbaserade upplevelser](../code-based/get-started-code-based.md), [innehållskort](../../rp_landing_pages/content-card-landing-page.md)) räknas om de är en del av en live-kampanj eller om de är en nod som används i en direktresa. När du har nått det här numret måste du inaktivera äldre kampanjer eller resor som använder inkommande åtgärder innan du kan starta nya.
+
+#### Profilhantering med inkommande kanaler {#profile-management-inbound}
+
+[!DNL Journey Optimizer] inkommande kanaler kan ha pseudonyma profiler som mål, vilket innebär profiler som inte är autentiserade eller okända än eftersom de inte har varit engagerade tidigare i andra kanaler. Detta är till exempel fallet när man riktar sig till alla besökare eller målgrupper baserat på tillfälliga ID:n som ECID.
+
+Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
+
+För att hålla dina engagerande profiler inom rimliga gränser rekommenderar Adobe att du ställer in en TTL (Time-To-Live) som automatiskt tar bort pseudonyma profiler från kundprofilen i realtid om de inte har setts eller engagerats inom ett visst tidsfönster.
+
+>[!NOTE]
+>
+>Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+
+Adobe rekommenderar att TTL-värdet ställs in på 14 dagar för att matcha den aktuella Edge-profilen TTL.
 
 ### Skyddsutkast för transaktionsmeddelanden {#transactional-message-guardrails}
 
@@ -141,6 +151,8 @@ Följande skyddsutkast gäller för [fragment](../content-management/fragments.m
   Läs mer om målgruppskompositioner på [den här sidan](../audience/get-started-audience-orchestration.md).
 
 * Vid inmatning av data är e-postmeddelanden skiftlägeskänsliga. Det innebär att dubblettprofiler kan skapas (till exempel en profil för John.Greene@luma.com, en annan profil för john.greene@luma.com) och användas när du riktar in dig mot motsvarande mottagare på dina [!DNL Journey Optimizer]-resor och -kampanjer.
+
+* När du riktar in dig på pseudonyma profiler (oautentiserade besökare) med dina innehållskort bör du överväga att ställa in en TTL (Time-To-Live) för automatisk borttagning av profiler för att hantera ditt engagerande profilantal och tillhörande kostnader. [Läs mer](#profile-management-inbound)
 
 ## Beslutsfattare och beslutsföringsgarantier {#decisioning-guardrails}
 
