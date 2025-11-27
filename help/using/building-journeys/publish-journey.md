@@ -10,7 +10,7 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
 version: Journey Orchestration
-source-git-commit: 10eaebc1d24eae4a0a149822d31ff92509d1e6f8
+source-git-commit: 01ab3f5236acb914c3efe71ffe3d5281d1126589
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 1%
@@ -46,9 +46,9 @@ När du avbryter en resa stoppas den permanent. Alla personer som passerar genom
 
 >[!IMPORTANT]
 >
->Om ett beslut om erbjudande som används i ett resemeddelande ändras måste du avpublicera resan och publicera den på nytt. Detta säkerställer att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
+>* Om ett beslut om erbjudande som används i ett resemeddelande ändras måste du avpublicera resan och publicera den på nytt. Detta säkerställer att ändringarna införlivas i kundens budskap och att meddelandet överensstämmer med de senaste uppdateringarna.
 >
->Assets/Bilder är tillgängliga i levererat material i upp till två år (730 dagar) sedan det publicerades första gången i ett fragment/textbundet meddelande. Återpublicering krävs efter denna förfalloperiod (när som helst efter 730 dagar) för att hålla dem tillgängliga i ytterligare två år. Om publiceringen görs inom 730 dagar efter den första publikationen kommer inte förfallodagen för mediefiler/bilder att förlängas till de kommande 730 dagarna.
+>* Assets/Bilder är tillgängliga i levererat material i upp till två år (730 dagar) sedan det publicerades första gången i ett fragment/textbundet meddelande. Återpublicering krävs efter denna förfalloperiod (när som helst efter 730 dagar) för att hålla dem tillgängliga i ytterligare två år. Om publiceringen görs inom 730 dagar efter den första publikationen kommer inte förfallodagen för mediefiler/bilder att förlängas till de kommande 730 dagarna.
 
 ## Reseversioner {#journey-versions}
 
@@ -90,4 +90,4 @@ När du publicerar en ny version av en resa avslutas den tidigare versionen auto
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427940?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)

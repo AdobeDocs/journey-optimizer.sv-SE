@@ -5,7 +5,7 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: e742c04e-2987-4466-84af-bdaf4d714552
-source-git-commit: 10eaebc1d24eae4a0a149822d31ff92509d1e6f8
+source-git-commit: 01ab3f5236acb914c3efe71ffe3d5281d1126589
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -50,6 +50,6 @@ Vi rekommenderar att du skickar korrektur efter varje ändring av meddelandeinne
 
 >[!NOTE]
 >
->I det skickade korrekturet är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
+>* I det skickade korrekturet är länken till spegelsidan inte aktiv. Den aktiveras endast i de slutliga meddelandena.
 >
->Assets/Bilder är tillgängliga i levererat innehåll eller korrekturinnehåll i upp till 2 år (730 dagar) sedan de publicerades första gången i ett fragment- eller textbundet meddelande. Återpublicering krävs efter denna förfalloperiod (när som helst efter 730 dagar) för att hålla dem tillgängliga i ytterligare två år. Om publiceringen görs inom 730 dagar efter den första publikationen kommer inte förfallodagen för mediefiler/bilder att förlängas till de kommande 730 dagarna.
+>* Assets/Bilder är tillgängliga i levererat innehåll eller korrekturinnehåll i upp till 2 år (730 dagar) sedan de publicerades första gången i ett fragment- eller textbundet meddelande. Återpublicering krävs efter denna förfalloperiod (när som helst efter 730 dagar) för att hålla dem tillgängliga i ytterligare två år. Om publiceringen görs inom 730 dagar efter den första publikationen kommer inte förfallodagen för mediefiler/bilder att förlängas till de kommande 730 dagarna.
