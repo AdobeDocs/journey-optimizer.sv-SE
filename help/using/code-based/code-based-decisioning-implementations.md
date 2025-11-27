@@ -297,6 +297,6 @@ Låt oss säga att ni har samma beslutspolicy med sidhuvuds- och sidfotsplacerin
 
 ## Självstudiekurser {#tutorials}
 
-Lär dig hur du använder beslut i Journey Optimizer för att anpassa innehållserbjudanden på din webbplats, med fokus på Web SDK-konfiguration i [den här självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
+Lär dig hur du använder beslut i Journey Optimizer för att anpassa innehållserbjudanden på din webbplats, med fokus på Web SDK-konfiguration i [den här självstudiekursen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
 
-Lär dig hur du konfigurerar SDK för webben och använder kodbaserade upplevelser för att anpassa erbjudanden med hjälp av väderdata i realtid och sammanhangsbaserad information i [den här självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.
+Lär dig hur du konfigurerar SDK för webben och använder kodbaserade upplevelser för att anpassa erbjudanden med hjälp av väderdata i realtid och sammanhangsbaserad information i [den här självstudiekursen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.
