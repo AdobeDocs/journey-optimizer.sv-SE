@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Kom igång med GenStudio {#gs-genstudio}
 
-[Adobe GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/home){target="_blank"} är en generativ AI-tillämpning som gör att marknadsföringsteamen kan skapa egna annonser och e-postmeddelanden för att skapa effektiva, personaliserade marknadsföringskampanjer som följer ert varumärke och följer företagets policy. Genom att utnyttja Adobe AI-teknik får du en omfattande verktygslåda som förenklar komplexa funktioner för att skapa och hantera innehåll så att kreatörerna kan fokusera på innovation.
+[Adobe GenStudio for Performance Marketing](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/home){target="_blank"} är en generativ AI-tillämpning som gör att marknadsföringsteamen kan skapa egna annonser och e-postmeddelanden för att skapa effektiva, personaliserade marknadsföringskampanjer som följer ert varumärke och följer företagets policy. Genom att utnyttja Adobe AI-teknik får du en omfattande verktygslåda som förenklar komplexa funktioner för att skapa och hantera innehåll så att kreatörerna kan fokusera på innovation.
 
 >[!AVAILABILITY]
 >
@@ -39,7 +39,7 @@ För att effektivisera marknadsföringen och upprätthålla varumärkets enhetli
 
 >[!INFO]
 >
->Mer information finns i [översikten](https://business.adobe.com/products/genstudio-for-performance-marketing.html#watch-overview){target="_blank"} och i [demon](https://business.adobe.com/products/genstudio-for-performance-marketing.html#demo){target="_blank"} av [!DNL Adobe GenStudio for Performance Marketing].
+>Mer information finns i [översikten](https://business.adobe.com/se/products/genstudio-for-performance-marketing.html#watch-overview){target="_blank"} och i [demon](https://business.adobe.com/se/products/genstudio-for-performance-marketing.html#demo){target="_blank"} av [!DNL Adobe GenStudio for Performance Marketing].
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
@@ -51,7 +51,7 @@ Om du vill använda integreringen [!DNL GenStudio for Performance Marketing] med
 
 * Både [!DNL GenStudio for Performance Marketing] och [!DNL Adobe Journey Optimizer] måste tillhöra samma IMS-organisation.
 
-* Användarna måste ha minst rollen **Collaborator** eller senare i [!DNL GenStudio for Performance Marketing] för att kunna använda integreringsfunktionerna. [Läs mer om användarroller i GenStudio](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/intro/user-roles){target="_blank"}
+* Användarna måste ha minst rollen **Collaborator** eller senare i [!DNL GenStudio for Performance Marketing] för att kunna använda integreringsfunktionerna. [Läs mer om användarroller i GenStudio](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/intro/user-roles){target="_blank"}
 
 <!--To access the GenStudio integration in [!DNL Adobe Journey Optimizer] feature, users need to be granted the **xxx** permission. [Learn more](../administration/permissions.md)
 
@@ -119,13 +119,13 @@ Börja med att exportera en [!DNL Journey Optimizer] HTML-mall med ditt varumär
 
    >[!NOTE]
    >
-   >Lär dig hur du överför en HTML-mall till [!DNL GenStudio] i det dedikerade avsnittet [Adobe GenStudio for Performance Marketing användarhandbok](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/content/templates/use-templates#templates-from-ajo-and-marketo){target="_blank"} .
+   >Lär dig hur du överför en HTML-mall till [!DNL GenStudio] i det dedikerade avsnittet [Adobe GenStudio for Performance Marketing användarhandbok](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/content/templates/use-templates#templates-from-ajo-and-marketo){target="_blank"} .
 
 1. I GenStudio använder du den här mallen för att skapa flera e-postvarianter med AI-uppmaningar och spara dem.
 
    >[!NOTE]
    >
-   >Lär dig hur du skapar e-postupplevelser i den dedikerade [sektionen](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/create/create-email-experience){target="_blank"} i GenStudio.
+   >Lär dig hur du skapar e-postupplevelser i den dedikerade [sektionen](https://experienceleague.adobe.com/sv/docs/genstudio-for-performance-marketing/user-guide/create/create-email-experience){target="_blank"} i GenStudio.
 
 ### Utnyttja GenStudio upplevelser i Journey Optimizer {#leverage-genstudio-experiences}
 
