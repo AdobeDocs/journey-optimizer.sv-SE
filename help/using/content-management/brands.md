@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
-source-git-commit: 3a44111345c1627610a6b026d7b19b281c4538d3
+source-git-commit: 9cd13e97315daef36918d4352f182efe0d3d9c7a
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1524'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Så här tilldelar du behörigheter för varumärken:
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 +++
 
@@ -275,11 +275,21 @@ Så här anpassar du din **[!UICONTROL Writing Style]**:
 
 1. Klicka på **[!UICONTROL Writing Style]** på fliken ![](assets/do-not-localize/Smock_Add_18_N.svg) för att lägga till en stödlinje, ett undantag eller ett undantag.
 
-1. Ange din riktlinje, undantag eller undantag och klicka på **[!UICONTROL Add]**.
+1. Ange riktlinjer, undantag eller undantag. Du kan även inkludera **[!UICONTROL Examples]** för att bättre illustrera hur det ska användas.
 
    ![](assets/brands-3.png)
 
-1. Välj en av stödlinjerna eller uteslutningen som du vill uppdatera eller ta bort.
+1. Ange användningssammanhanget för din riktlinje, undantag eller undantag:
+
+   * **[!UICONTROL Channel type]**: Välj var den här riktlinjen, undantaget eller undantaget ska gälla. Du kanske vill att ett specifikt textformat endast ska visas i e-post, mobil, utskrift eller andra kommunikationskanaler.
+
+   * **[!UICONTROL Element type]**: Ange vilket innehållselement regeln gäller för. Detta kan omfatta element som rubriker, knappar, länkar eller andra komponenter i innehållet.
+
+     ![](assets/brands-16.png)
+
+1. Klicka på **[!UICONTROL Add]** när du har ställt in din riktlinje, undantag eller undantag.
+
+1. Om det behövs kan du välja en av stödlinjerna eller uteslutningen som du vill uppdatera eller ta bort.
 
 1. Klicka på ![Dive image alt text](assets/do-not-localize/Smock_Edit_18_N.svg "Edit") om du vill redigera ditt exempel eller på ikonen ![Dirigera bildens alt-text](assets/do-not-localize/Smock_Delete_18_N.svg "Ta bort")om du vill ta bort den.
 
@@ -337,18 +347,29 @@ Så här anpassar du din **[!UICONTROL Visual content]**:
 
 1. Klicka på **[!UICONTROL Visual content]** på fliken ![](assets/do-not-localize/Smock_Add_18_N.svg) för att lägga till en stödlinje, ett undantag eller ett exempel.
 
-1. Ange din riktlinje, ditt undantag eller exempel och klicka på **[!UICONTROL Add]**.
+1. Ange stödlinje, undantag eller exempel.
 
    ![](assets/brands-4.png)
+
+1. Ange användningssammanhanget för din riktlinje eller exkludering:
+
+   * **[!UICONTROL Channel type]**: Välj var den här riktlinjen, undantaget eller undantaget ska gälla. Du kanske vill att ett specifikt textformat endast ska visas i e-post, mobil, utskrift eller andra kommunikationskanaler.
+
+   * **[!UICONTROL Element type]**: Ange vilket innehållselement regeln gäller för. Detta kan omfatta element som rubriker, knappar, länkar eller andra komponenter i innehållet.
+
+     ![](assets/brands-16.png)
+
+1. Klicka på **[!UICONTROL Add]** när du har ställt in din riktlinje, undantag eller undantag.
 
 1. Om du vill lägga till en bild som visar korrekt användning väljer du **[!UICONTROL Example]** och klickar på **[!UICONTROL Select image]**. Du kan också lägga till en bild som visar felaktig användning som ett exkluderingsexempel.
 
    ![](assets/brands-13.png)
 
-1. Välj en av stödlinjerna eller uteslutningen som du vill uppdatera eller ta bort.
+1. Om det behövs kan du välja en av stödlinjerna eller uteslutningen som du vill uppdatera eller ta bort.
 
 1. Välj en stödlinje eller uteslutning för att uppdatera den. Klicka på ikonen ![Dive image alt text](assets/do-not-localize/Smock_Delete_18_N.svg "Delete")för att ta bort den.
 
    ![](assets/brands-14.png)
 
 Du kan nu anpassa ditt varumärke ytterligare eller [publicera ditt varumärke](#create-brand-kit).
+
