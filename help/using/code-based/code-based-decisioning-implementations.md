@@ -299,8 +299,8 @@ Låt oss säga att ni har samma beslutspolicy med sidhuvuds- och sidfotsplacerin
 
 Lär dig hur du hämtar, visar och spårar kodbaserade upplevelser med [Adobe Journey Optimizer-tillägget](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/#implement-extension-in-mobile-app){target="_blank"} för Adobe Experience Platform Mobile SDK:er i [den här självstudiekursen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
-Lär dig hur du använder beslut i Journey Optimizer för att anpassa innehållserbjudanden på din webbplats, med fokus på Web SDK-konfiguration, i [den här självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
+Lär dig hur du använder beslut i Journey Optimizer för att anpassa innehållserbjudanden på din webbplats, med fokus på Web SDK-konfiguration, i [den här självstudiekursen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
 
-Lär dig hur du konfigurerar SDK för webben och använder kodbaserade upplevelser för att anpassa erbjudanden med hjälp av väderdata i realtid och sammanhangsbaserad information i [den här självstudiekursen](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.
+Lär dig hur du konfigurerar SDK för webben och använder kodbaserade upplevelser för att anpassa erbjudanden med hjälp av väderdata i realtid och sammanhangsbaserad information i [den här självstudiekursen](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"}.
 
 
