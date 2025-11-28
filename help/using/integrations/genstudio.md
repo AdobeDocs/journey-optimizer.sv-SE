@@ -216,4 +216,4 @@ Ja, GenStudio är utformat för samarbete. Flera teammedlemmar med lämplig beh�
 
 Upptäck hur du exporterar en e-postmall från Journey Optimizer till GenStudio for Performance Marketing, skapar varumärkeskompatibla e-postmeddelanden med hjälp av mallen i GenStudio och importerar dem smidigt tillbaka till Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3456038/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3456053/?captions=swe&quality=12)
