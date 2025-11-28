@@ -91,8 +91,8 @@ Integrationen ger er kraftfulla funktioner för ert marknadsföringsföretag:
 
 ### Vanliga användningsfall {#genstudio-use-cases}
 
-Integrationen mellan [!DNL GenStudio for Performance Marketing] och [!DNL
-Journey Optimizer ] har stöd för olika marknadsföringsscenarier:
+Integrationen mellan [!DNL GenStudio for Performance Marketing] och 
+Journey Optimizer &rbrack; har stöd för olika marknadsföringsscenarier:
 
 * **Produktlanseringskampanjer**: Generera snabbt flera e-postvarianter för produktlanseringar, testa dem med olika målgruppssegment och skala den vinnande versionen för hela kundbasen.
 
@@ -132,7 +132,7 @@ Börja med att exportera en [!DNL Journey Optimizer] HTML-mall med ditt varumär
 
 När du har skapat e-postvarianter i GenStudio kan du importera dem tillbaka till [!DNL Journey Optimizer] och använda dem i dina kampanjer. Följ stegen nedan.
 
-1. I [!DNL Journey Optimizer] [lägger du till ett e-postmeddelande ](../email/create-email.md) i en kampanj.
+1. I [!DNL Journey Optimizer] [lägger du till ett e-postmeddelande &#x200B;](../email/create-email.md) i en kampanj.
 
 1. Gå igenom skärmen [Redigera innehåll](../email/create-email.md#define-email-content) på konfigurationsskärmen för kampanjen och klicka på **[!UICONTROL Edit email body]** för att öppna e-post-Designer. [Lär dig hur](../email/get-started-email-design.md#key-steps)
 
@@ -158,7 +158,7 @@ När du har skapat e-postvarianter i GenStudio kan du importera dem tillbaka til
 
    >[!NOTE]
    >
-   >GenStudio-upplevelser [ som skapats från en [!DNL Journey Optimizer] mall](#export-from-ajo-to-genstudio) importeras direkt till e-postgränssnittet i Designer med fullständiga redigeringsfunktioner. GenStudio-upplevelser som skapats utan en [!DNL Journey Optimizer]-mall importeras till [kompatibilitetsläge](../email/existing-content.md), vilket kan ha begränsade redigeringsfunktioner.
+   >GenStudio-upplevelser [&#x200B; som skapats från en [!DNL Journey Optimizer] mall](#export-from-ajo-to-genstudio) importeras direkt till e-postgränssnittet i Designer med fullständiga redigeringsfunktioner. GenStudio-upplevelser som skapats utan en [!DNL Journey Optimizer]-mall importeras till [kompatibilitetsläge](../email/existing-content.md), vilket kan ha begränsade redigeringsfunktioner.
 
 1. Använd [redigeringsverktygen för e-postinnehåll](../email/content-from-scratch.md) och [anpassningsfälten](../personalization/personalize.md) för att redigera e-postmeddelandet efter behov. Spara innehållet.
 
