@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, domän, e-post, marc, post
 exl-id: f9e217f8-5aa8-4d3a-96fc-65defcb5d340
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 502f26ba3f8f5fa0db73be9f0cf66b21dbea507b
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1547'
 ht-degree: 0%
 
 ---
@@ -190,6 +190,16 @@ Om du vill låta Adobe hantera DMARC-posten åt dig väljer du alternativet **[!
    Som en god praxis bör du sträva efter en hög efterlevnadsnivå för DMARC, helst nära 100 %, för att maximera säkerhetsfördelarna samtidigt som risken för falskt positiva resultat minimeras.
 
 1. Välj ett **rapporteringsintervall** mellan 24 och 168 timmar. Det gör det möjligt för domänägare att få regelbundna uppdateringar om resultaten av e-postautentiseringen och vidta nödvändiga åtgärder för att förbättra e-postsäkerheten.
+
+### Felsökning {#troubleshooting}
+
+När du konfigurerar en DMARC-post lägger du till en DNS TXT-post i domänens DNS-inställningar. Den här posten anger din DMARC-policy, till exempel om meddelanden som inte kan autentiseras ska sättas i karantän eller inte.
+
+Det tar tid att sprida DNS-ändringar över Internet, vanligtvis mellan några minuter och 48 timmar.
+
+Om du precis har gjort en konfigurationsändring i DMARC och försöker verifiera uppdateringen omedelbart, kan det bero på fel eller att ändringarna inte har identifierats ännu.
+
+Ge DNS-posterna tillräckligt med tid att sprida sig innan du försöker verifiera din DMARC-konfiguration.
 
 <!--The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
 
