@@ -8,9 +8,9 @@ level: Intermediate
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 59e85eb7a14f88d95b2ef97e3ace11a65f115b75
+source-git-commit: e42640e791e6bec3bfd09a3095bad5e44e2ab128
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,12 @@ På den här sidan hittar du svar på vanliga frågor om beslutsfunktioner i Ado
 
 ## Begränsningsregler {#capping-rules}
 
-+++**Vad händer när du skapar mer än en begränsningsregel för ett erbjudande? Kommer vi sluta visa erbjudandet när vi matchar någon av appreglerna, eller alla?**
++++**Vad händer när flera appningsregler tillämpas på ett erbjudande?**
 
-Erbjudandet har en övre gräns så snart **ett villkor är uppfyllt**. Detta innebär att alla regler om begränsning av prenumerationstak kommer att hindra att erbjudandet visas när tröskelvärdet har uppnåtts.
+Ett erbjudande har ett tak så snart **ett enskilt villkor är uppfyllt**. När det finns flera regler för begränsning av antalet prenumerationer upphör erbjudandet att visas när en regel når sitt tröskelvärde.
 
-Om du till exempel har två regler för begränsning:
+**Exempel:**
+Om du definierar två regler för begränsning av ett erbjudande:
 * 5 gånger per profil och vecka
 * 100 gånger totalt för alla användare
 
@@ -37,32 +38,34 @@ Läs mer om [begränsning av regler](items.md#capping).
 
 ## Rankningsformler {#ranking-formulas}
 
-+++**Varför skulle jag lägga till en målgrupp i en AI-modell? Vad är fördelen med att lägga till målgrupper jämfört med en fullständig datauppsättning? Begränsar det modellen eller utökar modellen?**
++++**Vilken roll har målgrupper i AI-modeller?**
 
-När du arbetar med AI-modeller (särskilt [personaliserade optimeringsmodeller](ranking/personalized-optimization-model.md)):
+När [personaliserade optimeringsmodeller](ranking/personalized-optimization-model.md) konfigureras har både datauppsättningar och målgrupper olika syften:
 
-* **Datauppsättningar** läggs till för att samla in konverteringshändelser (klick, order, intäkter). Detta är de resultat som modellen försöker optimera för.
-* **Publiker** läggs till för att användas som prediktorvariabler i modellen. De hjälper er att personalisera förutsägelser för att försöka förutse klick, order eller intäkter för olika kundsegment.
+* **Datauppsättningar**: Hämta konverteringshändelser (klick, order, intäkter) som fungerar som optimeringsmål för modellen.
+* **Publiker**: Funktion som prediktorvariabler som gör att modellen kan anpassa rekommendationer baserat på medlemskap i kundsegment.
 
-Både datauppsättningar och målgrupper behövs för att den personaliserade optimeringsmodellen ska fungera effektivt. Målgrupperna **varken begränsar eller utökar** modellen, utan i stället ger de ytterligare kontext som hjälper modellen att fatta bättre personaliserade beslut.
+Målgrupperna begränsar inte eller utökar inte modellens omfång. I stället tillhandahåller de sammanhangsberoende attribut som förbättrar modellens förmåga att skapa personaliserade prognoser över olika kundsegment.
 
-Läs mer om [AI-modeller](ranking/ai-models.md).
+Båda komponenterna krävs för effektiv prestanda för personaliserad optimeringsmodell. Läs mer om [AI-modeller](ranking/ai-models.md).
 
 +++
 
-+++**Kommer tillägg eller borttagning av erbjudanden i en samling att påverka modellen om jag använder automatiska optimeringsmodeller eller personaliserade optimeringsmodeller?**
++++**Hur påverkar ändringar i erbjudandesamlingar AI-modeller om automatisk optimering eller personaliserade optimeringsmodeller används?**
 
 Båda modellerna levererar trafik till nästa bästa tillgängliga erbjudande baserat på trafikdata från de senaste 30 dagarna.
 
-Om flera erbjudanden tas bort samtidigt och de återstående erbjudandena inte når så mycket trafik under de senaste 30 dagarna, kan distributionen av erbjudanden uppträda oväntat. Detta kan leda till slumpmässig distribution eller partiskhet i vissa erbjudanden som har en högre konverteringsgrad baserat på bara ett fåtal visningar.
+När flera erbjudanden tas bort samtidigt och de återstående erbjudandena har minimal trafikinformation inom 30-dagarsfönstret kan modellen uppvisa ett ooptimalt beteende, som:
+* Slumpmässiga distributionsmönster
+* Vinn mot erbjudanden med högre konverteringsgrader baserat på begränsade tryckdata
 
-**Bästa praxis**: När du gör betydande ändringar i erbjudandesamlingar måste du se till att de återstående erbjudandena har tillräckligt med historiska prestandadata för att behålla optimala modellprestanda.
+**Bästa praxis**: När erbjudandesamlingar ändras avsevärt bör du kontrollera att återstående erbjudanden har tillräckliga historiska prestandadata för att behålla modellens effektivitet.
 
 +++
 
-+++**Hur lång tid tar det för AI-modellerna att förstå att det finns nytt innehåll tillagt och börja lägga till dem i mixen?**
++++**Hur snabbt inför AI-modeller nya erbjudanden?**
 
-Båda AI-modellerna identifierar nya erbjudanden under nästa utbildningsperiod:
+AI-modeller identifierar och börjar testa nya erbjudanden i nästa utbildningscykel:
 
 * **Automatisk optimering**: Dagliga utbildningstillfällen
 * **Anpassad optimering**: Veckokurser körs
@@ -73,25 +76,25 @@ Läs mer om modellerna [automatisk optimering](ranking/auto-optimization-model.m
 
 +++
 
-+++**Om vi inte har kontrollgrupper i AI-modellerna, lär vi oss och optimerar vi all trafik samtidigt?**
++++**Hur optimerar AI-modeller utan kontrollgrupper?**
 
-Ja. Båda AI-modellerna (automatisk optimering och personaliserad optimering) använder en utforskande och utnyttjandemetod:
+Både automatisk optimering och personaliserade optimeringsmodeller använder en strategi för utforskande och utnyttjande som eliminerar behovet av dedikerade kontrollgrupper:
 
-* Till att börja med är båda modellerna **100 % prospektering**, vilket innebär att de testar olika erbjudanden för att samla in prestandadata.
-* Med tiden hanterar modellerna **automatiskt utforsknings-/utnyttjandehandeln** allt eftersom beteendehändelser samlas in och förutsägelserna förbättras.
-* Modellerna leder gradvis över mer trafik till bättre erbjudanden samtidigt som de fortsätter att utforska och testa andra alternativ.
+* **Inledande fas**: Modeller börjar med 100 % utforskande, och testar olika erbjudanden för att upprätta baslinjeprestandadata.
+* **Adaptiv optimering**: När beteendehändelser ackumuleras och förutsägelsenoggrannheten förbättras balanserar modellerna automatiskt utforskande och utnyttjande.
+* **Pågående inlärning**: Systemet tilldelar progressivt mer trafik till högpresterande erbjudanden samtidigt som det fortsätter att testa alternativen.
 
 Detta garanterar kontinuerlig inlärning och optimering över all trafik utan att särskilda kontrollgrupper behövs.
 
 +++
 
-+++**Hur många optimeringshändelser behöver vi vara statistiskt viktiga? Finns det ett lägsta tröskelvärde för trafik för en yta?**
++++**Vilka är de lägsta trafikkraven för optimal AI-modellprestanda?**
 
-För att optimera modellprestanda rekommenderar Adobe följande miniminivåer:
+Adobe rekommenderar följande minimitrösklar för att säkerställa effektiva modellprestanda:
 
 **Rekommenderade minimumvärden (per vecka):**
-* Minst **1 000 visningar** per erbjudande/artikel
-* Minst **100 konverteringshändelser** per erbjudande/artikel
+* 1 000 visningar per erbjudande/artikel
+* 100 konverteringshändelser per erbjudande/artikel
 
 <!--**Absolute minimums (per 30 days):**
 * At least **250 impressions** per offer/item  
@@ -99,36 +102,37 @@ För att optimera modellprestanda rekommenderar Adobe följande miniminivåer:
 
 Som standard försöker systemet inte skapa personaliserade modeller för erbjudanden/artiklar med färre än 1 000 visningar eller 50 konverteringshändelser.
 
-**Viktigt**: I praktiken har vissa kunder många erbjudanden (~300) i en och samma modell, och vissa erbjudanden kan ha mycket restriktiva affärsregler. De absoluta minimumen (250 visningar/25 konverteringar per 30 dagar) är det lägsta tröskelvärde som systemet har stöd för för att bygga modeller.
+>[!NOTE]
+>
+>I produktionsmiljöer med stora erbjudandekataloger (~300 erbjudanden) och begränsande affärsregler kan vissa erbjudanden närma sig lägre absoluta tröskelvärden (250 visningar och 25 konverteringar per 30 dagar). Dessa utgör de lägsta datakraven för modellutbildning, men garanterar kanske inte optimala prestanda.
 
 Läs mer om [datainsamlingskrav](data-collection/data-collection.md).
 
 +++
 
-+++**Måste innehållet i erbjudandena vara tydligt differentierat för att AI-modellerna ska fungera bra? Vad händer om jag har flera erbjudanden som är för lika?**
++++**Hur påverkar likhet AI-modellens prestanda?**
 
-I allmänhet är det mer sannolikt att AI-modellen genererar fördelar av personalisering när **erbjudanden passar olika typer av kunder**.
+AI-modeller genererar större personaliseringsfördelar när erbjudanden passar olika kundsegment. När erbjudandena liknar varandra i hög grad är det två typiska utfall:
 
-När erbjudandena är mycket lika är det troligt att ett av följande två utfall visas:
-
-* **Liknande prestanda**: Erbjudandena fungerar likadant och får en relativt jämn andel av trafiken.
-* **Dominans**: Små skillnader kan göra att ett erbjudande dominerar de andra för alla kundtyper, och det får större delen av trafiken.
+* **Motsvarande prestanda**: Erbjudandena fungerar likadant och får ungefär samma trafikfördelning.
+* **Dominerande erbjudande**: Mindre skillnader gör att ett erbjudande presterar bättre än andra i alla segment, vilket fångar huvuddelen av trafiken.
 
 >[!NOTE]
 >
->Skillnader i erbjudanden är ingen garanti för att ett erbjudande inte kommer att dominera de andra. Ett erbjudande på 100 euro kommer till exempel nästan alltid att ge ett pris på 50 euro över alla kundtyper, oavsett personalisering.
+>Offertdifferentieringen garanterar inte en balanserad trafikfördelning. Erbjudanden med objektivt sett oöverträffade priser (t.ex. 100 euro i rabatt jämfört med 50 euro) kommer normalt att dominera i alla kundsegment oavsett personaliseringsgrad.
 
-**Bästa praxis**: Se till att dina erbjudanden ger meningsfull differentiering som kan tilltala olika kundsegment för optimala AI-modellprestanda.
+**Bästa praxis**: Designa erbjuder med meningsfull differentiering som är anpassad efter olika kundsegmentsinställningar för att maximera AI-modellens effektivitet.
 
 +++
 
-+++**Vad händer med modellen om det finns trafikavvikelser, som en stor trafikspik? Kommer det att orsaka problem eller öka tyngdkraften?**
++++**Hur påverkar trafikavvikelser AI-modellens prestanda?**
 
-En trafikspik skulle inkluderas i modellerna proportionellt mot annan trafik under de senaste 30 dagarna.
+Trafikavvikelser införlivas i modellen proportionellt i det 30-dagars rullande fönstret.
 
-En trafiktopp på 2 gånger dagligen kommer till exempel att få en relativt blygsam effekt på den övergripande modellen, eftersom det finns 29 dagars normal trafik som representerar betydligt mer av den totala beteendeinformationen.
+**Konsekvensbedömning:**
+En tillfällig trafiktopp (till exempel 2 gånger dagstrafiken) har minimal effekt på den totala modellprestandan eftersom den onormala trafiken utgör en liten del av datauppsättningen på 30 dagar.
 
-**Nyckelpunkt**: Det rullande 30-dagars fönstret hjälper modellen att behålla stabiliteten under temporära trafikavvikelser. Kortsiktiga toppar och dalar påverkar inte modellens prestanda nämnvärt.
+**Nyckelinformation**: Det rullande 30-dagars datafönstret ger modellstabilitet vid tillfälliga trafikfluktuationer. Kortsiktiga toppar och fall påverkar inte modellens prognoser eller prestanda nämnvärt.
 
 +++
 
