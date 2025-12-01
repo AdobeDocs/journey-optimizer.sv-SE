@@ -8,9 +8,9 @@ level: Intermediate
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 7205017785283e3db4d64ed595ac8f187f43307b
+source-git-commit: 7bf0b3fbfe56ef8ae3a35be9aa604287f43d6d74
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -38,26 +38,24 @@ Läs mer om [begränsning av regler](items.md#capping).
 
 ## Rankningsformler {#ranking-formulas}
 
-+++**Vilken roll har målgrupper i AI-modeller?**
++++**Vilken är målgruppernas roll jämfört med en fullständig datauppsättning i AI-modeller?**
 
-När [personaliserade optimeringsmodeller](ranking/personalized-optimization-model.md) konfigureras har både datauppsättningar och målgrupper olika syften:
+När du konfigurerar [AI-modeller](ranking/ai-models.md) har både datauppsättningar och målgrupper olika syften.
 
 * **Datauppsättningar**: Hämta konverteringshändelser (klick, order, intäkter) som fungerar som optimeringsmål för modellen.
 * **Publiker**: Funktion som prediktorvariabler som gör att modellen kan anpassa rekommendationer baserat på medlemskap i kundsegment.
 
 Målgrupperna begränsar inte eller utökar inte modellens omfång. I stället tillhandahåller de sammanhangsberoende attribut som förbättrar modellens förmåga att skapa personaliserade prognoser över olika kundsegment.
 
-Båda komponenterna krävs för effektiv prestanda för personaliserad optimeringsmodell. Läs mer om [AI-modeller](ranking/ai-models.md).
+Båda komponenterna krävs för effektiva [personaliserade optimeringsmodeller](ranking/personalized-optimization-model.md) med modellprestanda.
 
 +++
 
-+++**Hur påverkar ändringar i erbjudandesamlingar AI-modeller om automatisk optimering eller personaliserade optimeringsmodeller används?**
++++**Hur påverkar ändringar i erbjudandesamlingar automatisk optimering eller personaliserade optimeringsmodeller?**
 
 Båda modellerna levererar trafik till nästa bästa tillgängliga erbjudande baserat på trafikdata från de senaste 30 dagarna.
 
-När flera erbjudanden tas bort samtidigt och de återstående erbjudandena har minimal trafikinformation inom 30-dagarsfönstret kan modellen uppvisa ett ooptimalt beteende, som:
-* Slumpmässiga distributionsmönster
-* Vinn mot erbjudanden med högre konverteringsgrader baserat på begränsade tryckdata
+När flera erbjudanden tas bort samtidigt och de återstående erbjudandena har minimala trafikdata inom 30-dagarsfönstret kan modellen uppvisa ett ooptimalt beteende, inklusive slumpmässiga distributionsmönster eller avvikelser mot erbjudanden med högre konverteringsgrad baserat på begränsade visningsdata.
 
 **Bästa praxis**: När erbjudandesamlingar ändras avsevärt bör du kontrollera att återstående erbjudanden har tillräckliga historiska prestandadata för att behålla modellens effektivitet.
 
@@ -67,8 +65,8 @@ När flera erbjudanden tas bort samtidigt och de återstående erbjudandena har 
 
 AI-modeller identifierar och börjar testa nya erbjudanden i nästa utbildningscykel:
 
-* **Automatisk optimering**: Dagliga utbildningstillfällen
-* **Anpassad optimering**: Veckokurser körs
+* **Automatisk optimering**: Daglig
+* **Anpassad optimering**: Varje vecka
 
 När båda modellerna har identifierats börjar de leverera nya erbjudanden till vissa besökare omedelbart för att testa deras prestanda och samla in uppgifter om deras effektivitet.
 
@@ -78,7 +76,7 @@ Läs mer om modellerna [automatisk optimering](ranking/auto-optimization-model.m
 
 +++**Hur optimerar AI-modeller utan kontrollgrupper?**
 
-Både automatisk optimering och personaliserade optimeringsmodeller använder en strategi för utforskande och utnyttjande som eliminerar behovet av dedikerade kontrollgrupper:
+Både automatisk optimering och personaliserade optimeringsmodeller har en strategi där man kan utnyttja saker och ting som eliminerar behovet av dedikerade kontrollgrupper.
 
 * **Inledande fas**: Modeller börjar med 100 % utforskande, och testar olika erbjudanden för att upprätta baslinjeprestandadata.
 * **Adaptiv optimering**: När beteendehändelser ackumuleras och förutsägelsenoggrannheten förbättras balanserar modellerna automatiskt utforskande och utnyttjande.
@@ -91,10 +89,8 @@ Detta garanterar kontinuerlig inlärning och optimering över all trafik utan at
 +++**Vilka är de lägsta trafikkraven för optimal AI-modellprestanda?**
 
 Adobe rekommenderar följande minimitrösklar för att säkerställa effektiva modellprestanda:
-
-**Rekommenderade minimumvärden (per vecka):**
-* 1 000 visningar per erbjudande/artikel
-* 100 konverteringshändelser per erbjudande/artikel
+* 1 000 visningar per erbjudande/artikel per vecka
+* 100 konverteringshändelser per erbjudande/artikel per vecka
 
 <!--**Absolute minimums (per 30 days):**
 * At least **250 impressions** per offer/item  
@@ -110,7 +106,7 @@ Läs mer om [datainsamlingskrav](data-collection/data-collection.md).
 
 +++
 
-+++**Hur påverkar likhet AI-modellens prestanda?**
++++**Hur påverkar liknande erbjudanden prestanda för AI-modeller?**
 
 AI-modeller genererar större personaliseringsfördelar när erbjudanden passar olika kundsegment. När erbjudandena liknar varandra i hög grad är det två typiska utfall:
 
@@ -127,11 +123,8 @@ AI-modeller genererar större personaliseringsfördelar när erbjudanden passar 
 
 +++**Hur påverkar trafikavvikelser AI-modellens prestanda?**
 
-Trafikavvikelser införlivas i modellen proportionellt i det 30-dagars rullande fönstret.
+Trafikavvikelser införlivas i modellen proportionellt i det 30-dagars rullande fönstret, vilket ger modellstabilitet vid tillfälliga trafikfluktuationer. Kortsiktiga toppar och fall påverkar inte modellens prognoser eller prestanda nämnvärt.
 
-**Konsekvensbedömning:**
-En tillfällig trafiktopp (till exempel 2 gånger dagstrafiken) har minimal effekt på den totala modellprestandan eftersom den onormala trafiken utgör en liten del av datauppsättningen på 30 dagar.
-
-**Nyckelinformation**: Det rullande 30-dagars datafönstret ger modellstabilitet vid tillfälliga trafikfluktuationer. Kortsiktiga toppar och fall påverkar inte modellens prognoser eller prestanda nämnvärt.
+En tillfällig trafiktoppning (till exempel två gånger den dagliga trafiken) har minimal effekt på den totala modellprestandan eftersom den onormala trafiken utgör en liten del av den 30-dagars datauppsättningen.
 
 +++
