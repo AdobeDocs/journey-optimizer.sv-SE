@@ -8,9 +8,9 @@ level: Intermediate
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: e42640e791e6bec3bfd09a3095bad5e44e2ab128
+source-git-commit: 7205017785283e3db4d64ed595ac8f187f43307b
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -135,11 +135,3 @@ En tillfällig trafiktopp (till exempel 2 gånger dagstrafiken) har minimal effe
 **Nyckelinformation**: Det rullande 30-dagars datafönstret ger modellstabilitet vid tillfälliga trafikfluktuationer. Kortsiktiga toppar och fall påverkar inte modellens prognoser eller prestanda nämnvärt.
 
 +++
-
-## Relaterade ämnen {#related-topics}
-
-<!--* [Get started with Decisioning](gs-experience-decisioning.md)-->
-* [Skapa beslutsobjekt](items.md)
-* [Översikt över AI-modeller](ranking/ai-models.md)
-* [Avgörande av skyddsräcken och begränsningar](decisioning-guardrails.md)
-
