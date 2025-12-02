@@ -7,9 +7,9 @@ role: User
 level: Intermediate, Experienced
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
 version: Journey Orchestration
-source-git-commit: 1b6158132e5df1912d9658805fa8b1344c6f938f
+source-git-commit: 17c8bc8b37c4bdf7c93735e152eedf7e0bbaf62a
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '826'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,10 @@ I det här exemplet är du osäker på om en viss rankningsformel fungerar bätt
 
 * I den första behandlingen används **priority** som rangordningsmetod.
 * Den andra behandlingen använder **en formel** som rangordningsmetod.
+
+>[!NOTE]
+>
+>Implementeringsinformation om testning och borttagning av dubbletter när du använder beslut i kodbaserade upplevelser finns på [den här sidan](../code-based/code-based-decisioning-implementations.md).
 
 ## Skapa urvalsstrategier
 
