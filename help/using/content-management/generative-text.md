@@ -7,9 +7,9 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
+source-git-commit: b70911f1f1fa00154729b5b88517233b67a377cb
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Innan du kan börja generera textinnehåll med AI Assistant måste du konfigurer
 
    * **E-post**: När du har skapat och konfigurerat din e-postkampanj klickar du på **[!UICONTROL Edit content]**. [Läs mer](../email/create-email.md)
    * **Webb**: När du har skapat och konfigurerat webbsidan klickar du på **[!UICONTROL Edit web page]**. [Läs mer](../web/create-web.md)
-   * **Landningssida**: När du har skapat och konfigurerat landningssidan klickar du på **[!UICONTROL Edit content]**. [Läs mer](../landing-pages/create-lp.md)
+   * **Landningssida**: När du har skapat och konfigurerat landningssidan klickar du på **[!UICONTROL Open designer]**. [Läs mer](../landing-pages/create-lp.md)
 
 1. Välj en **[!UICONTROL Text component]** om du bara vill ange ett specifikt innehåll som mål och få tillgång till **[!UICONTROL AI Assistant]**-menyn (eller **[!UICONTROL Show AI Assistant]** för webben).
 
@@ -134,19 +134,17 @@ Innan du börjar generera text med AI Assistant för mobila kanaler måste du ko
    * **SMS**: [Läs mer](../sms/create-sms.md)
 
 1. Access AI Assistant:
-   * **För push-meddelanden**: Klicka på menyn **[!UICONTROL Edit text with AI Assistant]** bredvid dina **[!UICONTROL Title]** - eller **[!UICONTROL Message]**-fält.
+   * **För push-meddelanden**: Klicka på menyn **[!UICONTROL Edit text with AI Assistant]** bredvid dina **[!UICONTROL Title]** - eller **[!UICONTROL Message]**-fält. Du kan även komma åt **AI-assistentmenyn** direkt.
 
-     ![Skärm för push-meddelandekomposition med knappen Redigera text med AI-assistenten](assets/push-genai-1.png){zoomable="yes"}
+     ![Skärm för push-meddelandekomposition med knappen Redigera text med AI-assistenten](assets/push-text-1.png){zoomable="yes"}
 
-   * **För SMS**: Öppna menyn **[!UICONTROL Show AI Assistant]**.
+   * **För SMS**: Klicka på menyn **[!UICONTROL Edit text with AI Assistant]** bredvid **[!UICONTROL Message]** eller öppna menyn **[!UICONTROL Show AI Assistant]** .
 
      ![SMS-meddelanderedigeraren med AI Assistant-panelen öppen](assets/sms-genai-1.png){zoomable="yes"}
 
 ### Generera innehåll {#mobile-generate-content}
 
 När du har använt AI Assistant kan du konfigurera genereringsinställningarna för att skapa mobilt innehåll som matchar ert varumärke och era kampanjmål. Anpassa textparametrar, lägg till varumärkesresurser och ge anvisningar om hur AI genererar relevanta variationer.
-
-1. Aktivera alternativet **[!UICONTROL Use reference content]** (för push) eller **[!UICONTROL Use original content]** (för SMS) för AI Assistant för att anpassa nytt innehåll baserat på det valda innehållet.
 
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
@@ -158,20 +156,19 @@ När du har använt AI Assistant kan du konfigurera genereringsinställningarna 
 
    ![AI-assistenten med snabbfält och alternativ](assets/push-genai-2.png){zoomable="yes"}
 
+1. **För push-meddelanden** väljer du vilket fält du vill generera: Titel och/eller Meddelande.
+
 1. Skräddarsy din fråga med alternativet **[!UICONTROL Text settings]**:
 
    * **[!UICONTROL Communication strategy]**: Välj den lämpligaste kommunikationsstilen för den genererade texten.
    * **[!UICONTROL Languages]**: Välj språk för det genererade innehållet.
    * **[!UICONTROL Tone]**: Tonen bör återges med din målgrupp. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
-   * **[!UICONTROL Length]**: Välj längden på ditt innehåll med intervallreglaget.
 
-   ![Panelen Textinställningar](assets/push-genai-4.png){zoomable="yes"}
+     ![Panelen Textinställningar](assets/push-genai-4.png){zoomable="yes"}
 
-1. Under Tryck väljer du vilket fält du vill generera: Titel och/eller Meddelande.
+1. Klicka på **[!UICONTROL Reference content]** på menyn **[!UICONTROL Upload file]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
-1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
-
-   Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
+   Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded reference content]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
 
@@ -181,13 +178,13 @@ När du har genererat textvarianter för dina mobilmeddelanden kan du finjustera
 
 1. Bläddra igenom **[!UICONTROL Variations]** efter generering.
 
-   Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller klicka på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
-
 1. Klicka på procentikonen för att visa din **[!UICONTROL Brand Alignment Score]** och identifiera eventuella feljusteringar av ditt varumärke.
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
    ![Genererade textvariationer med bakgrundsjusteringspoäng](assets/push-genai-5.png){zoomable="yes"}
+
+1. Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller klicka på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -197,11 +194,13 @@ När du har genererat textvarianter för dina mobilmeddelanden kan du finjustera
 
    * **[!UICONTROL Use simpler language]**: Använd AI Assistant för att förenkla ditt språk och säkerställa tydlighet och tillgänglighet för en större publik.
 
+   * **[!UICONTROL Translate]**: Förenkla ditt språk för att säkerställa tydlighet och tillgänglighet för en större publik.
+
    * **[!UICONTROL Change tone]**: Justera tonen i meddelandet så att det bättre matchar din kommunikationsstil, dvs. gör det mer användarvänligt, professionellt, brådskande eller inspirerande.
 
    * **[!UICONTROL Change Communication strategy]**: Ändra meddelandetillvägagångssättet baserat på dina mål, till exempel skapa en tränglighet eller framhäva en spännande tilltalande upplevelse.
 
-   ![Förfina meny](assets/push-genai-6.png){zoomable="yes"}
+     ![Förfina meny](assets/push-genai-6.png){zoomable="yes"}
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 

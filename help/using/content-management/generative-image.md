@@ -7,9 +7,9 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
+source-git-commit: b70911f1f1fa00154729b5b88517233b67a377cb
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
@@ -36,11 +36,11 @@ Om du vill börja generera bilder med AI Assistant skapar du först en kampanj e
 1. Skapa och konfigurera kampanj eller resa:
    * **E-post**: När du har skapat och konfigurerat din e-postkampanj klickar du på **[!UICONTROL Edit content]**. [Läs mer](../email/create-email.md)
    * **Webb**: När du har skapat och konfigurerat webbsidan klickar du på **[!UICONTROL Edit web page]**. [Läs mer](../web/create-web.md)
-   * **Landningssida**: När du har skapat och konfigurerat landningssidan klickar du på **[!UICONTROL Edit content]**. [Läs mer](../landing-pages/create-lp.md)
+   * **Landningssida**: När du har skapat och konfigurerat landningssidan klickar du på **[!UICONTROL Open designer]**. [Läs mer](../landing-pages/create-lp.md)
 
 1. Markera den resurs som du vill ändra med AI Assistant.
 
-1. Välj **[!UICONTROL AI Assistant]** (eller **[!UICONTROL Show AI Assistant]** för webben) på den högra menyn.
+1. Välj **[!UICONTROL AI Assistant]** (eller **[!UICONTROL Show Content Assistant]** för webben) på den högra menyn.
 
    ![Bildresurs vald och AI Assistant-panelen öppnad](assets/image-genai-1.png){zoomable="yes"}
 
@@ -67,25 +67,27 @@ Lär dig skapa effektiva uppmaningar och konfigurera bildinställningar för att
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-   ![Panelen Bildinställningar med kontroller](assets/image-genai-4.png){zoomable="yes"}
+     ![Panelen Bildinställningar med kontroller](assets/image-genai-4.png){zoomable="yes"}
 
-1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+1. Klicka på **[!UICONTROL Reference content]** på menyn **[!UICONTROL Upload file]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 
-   Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
+   Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded reference content]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
 1. När du är nöjd med promptkonfigurationen klickar du på **[!UICONTROL Generate]**.
 
-1. Bläddra i **[!UICONTROL Variation suggestions]** för att hitta den önskade resursen.
+### Förfina och slutför {#refine-finalize}
 
-   Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
+När du har genererat bildvariationer kan du granska resultatet, kontrollera varumärkesjusteringen, redigera i Adobe Express och välja det bästa alternativet för ditt innehåll.
+
+1. Bläddra i **[!UICONTROL Variation suggestions]** för att hitta den önskade resursen.
 
 1. Klicka på procentikonen för att visa din **[!UICONTROL Brand Alignment Score]** och identifiera eventuella feljusteringar av ditt varumärke.
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-### Förfina och slutför {#refine-finalize}
+   ![Märkesjusteringspoäng för variationer](assets/image-genai-6.png){zoomable="yes"}
 
-När du har genererat bildvariationer kan du granska resultatet, kontrollera varumärkesjusteringen, redigera i Adobe Express och välja det bästa alternativet för ditt innehåll.
+1. Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
 
 1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
 
@@ -96,7 +98,7 @@ När du har genererat bildvariationer kan du granska resultatet, kontrollera var
 
    * **[!UICONTROL Save]** om du vill lagra resurserna för senare åtkomst.
 
-   ![Förfina alternativ som visar tillgängliga åtgärder](assets/image-genai-5.png){zoomable="yes"}
+     ![Förfina alternativ som visar tillgängliga åtgärder](assets/image-genai-5.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Select]** när du har hittat rätt innehåll.
 
@@ -131,8 +133,6 @@ Om du vill använda AI Assistant för push-meddelanden måste du konfigurera din
 
 När du har öppnat AI Assistant kan du justera genereringsinställningarna för att skapa bilder som är anpassade efter ditt varumärke och stöder dina mål för push-meddelanden. Konfigurera prompten och bildparametrarna för att generera bilder som är optimerade för mobila skärmar.
 
-1. Aktivera alternativet **[!UICONTROL Reference style]** för AI Assistant för att anpassa nytt innehåll baserat på referensinnehållet. Du kan också överföra en bild för att lägga till kontext till variationen.
-
 1. Välj din **[!UICONTROL Brand]** för att se till att det AI-genererade innehållet följer varumärkesspecifikationerna. [Läs mer](brands.md) om varumärken.
 
    Observera att funktionen Varumärke släpps som en privat betaversion och kommer att finnas tillgänglig för alla kunder i framtida versioner.
@@ -143,6 +143,8 @@ När du har öppnat AI Assistant kan du justera genereringsinställningarna för
 
    ![AI Assistant-bildgenerering för push](assets/push-gen-img.png){zoomable="yes"}
 
+1. Välj **[!UICONTROL Image]** som fält att generera.
+
 1. Välj din **[!UICONTROL Image settings]**:
 
    * **[!UICONTROL Content type]**: Detta kategoriserar det visuella elementets karaktär och skiljer mellan olika former av visuell representation, t.ex. foton, grafik eller grafik.
@@ -151,11 +153,17 @@ När du har öppnat AI Assistant kan du justera genereringsinställningarna för
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-1. Klicka på **[!UICONTROL Brand assets]** på menyn **[!UICONTROL Upload brand asset]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+     ![AI Assistant-bildgenerering för push](assets/push-gen-img-3.png){zoomable="yes"}
 
-   Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded brand assets]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
+1. Klicka på **[!UICONTROL Reference content]** på menyn **[!UICONTROL Upload file]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
+
+   Tidigare överförda filer är tillgängliga i listrutan **[!UICONTROL Uploaded reference content]**. Du behöver bara växla mellan de resurser du vill ha med i din generation.
 
 1. Klicka på **[!UICONTROL Generate]** när din fråga är klar.
+
+### Förfina och slutför {#mobile-refine-finalize}
+
+När du har genererat bildvariationer för dina push-meddelanden kan du finjustera resultatet för att säkerställa att de uppfyller dina exakta krav. Granska varumärkesjusteringen, redigera i Adobe Express vid behov och välj den bästa bilden för er mobilkampanj.
 
 1. Bläddra igenom den genererade **[!UICONTROL Variations]**.
 
@@ -163,20 +171,9 @@ När du har öppnat AI Assistant kan du justera genereringsinställningarna för
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-### Förfina och slutför {#mobile-refine-finalize}
+   ![Märkesjusteringspoäng för variationer](assets/q.png){zoomable="yes"}
 
-När du har genererat bildvariationer för dina push-meddelanden kan du finjustera resultatet för att säkerställa att de uppfyller dina exakta krav. Granska varumärkesjusteringen, redigera i Adobe Express vid behov och välj den bästa bilden för er mobilkampanj.
-
-1. Navigera till alternativet **[!UICONTROL Refine]** i fönstret **[!UICONTROL Preview]** för att få tillgång till ytterligare anpassningsfunktioner:
-
-   * **[!UICONTROL Generate Similar]** om du vill visa relaterade bilder till den här varianten.
-   * **[!UICONTROL Edit in Adobe Express]** om du vill anpassa resursen ytterligare.
-
-[Läs mer om Adobe Express-integrering](../integrations/express.md)
-
-   * **[!UICONTROL Save]** om du vill lagra resurserna för senare åtkomst.
-
-   ![Förfina alternativ för bilder för push-meddelanden](assets/push-gen-img-2.png){zoomable="yes"}
+1. Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
 
 1. Öppna fliken **[!UICONTROL Brand Alignment]** och se hur ditt innehåll överensstämmer med [varumärkesriktlinjerna](brands.md).
 
