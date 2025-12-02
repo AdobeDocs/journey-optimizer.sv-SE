@@ -76,6 +76,6 @@ Upptäck de detaljerade stegen för att skapa en webbkampanj i [den här videon]
 * **[Hantera webbändringar](manage-web-modifications.md)** - Lär dig hur du ordnar, använder och hanterar ändringar i dina webbupplevelser.
 * **[Övervaka webbupplevelser](monitor-web-experiences.md)** - Spåra och analysera resultatet för dina webbkampanjer med detaljerad rapportering.
 * **[Generera webbinnehåll med AI Assistant](../content-management/generative-full-content.md)** - Använd AI för att skapa och optimera webbinnehåll med text och bilder.
-* **[Självstudiekurser för webbkampanjer](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Utforska steg-för-steg-videokurser om webbkanalsfunktioner och metodtips.
+* **[Självstudiekurser för webbkampanjer](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Utforska steg-för-steg-videokurser om webbkanalsfunktioner och metodtips.
 
 

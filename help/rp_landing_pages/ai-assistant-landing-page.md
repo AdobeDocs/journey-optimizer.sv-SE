@@ -20,7 +20,7 @@ Adobe Journey Optimizer AI Assistant revolutionerar innehållsskapandet genom at
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med AI Assistant
 
@@ -30,7 +30,7 @@ Lär dig hur du får tillgång till och konfigurerar AI Assistant-funktionen fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 Generera allt innehåll
 
@@ -40,7 +40,7 @@ Upptäck hur du använder AI Assistant för att skapa komplett innehåll, inklus
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg?lang=sv-SE)
 
 Generera endast text
 
@@ -50,7 +50,7 @@ Använd AI Assistant för att generera och förfina textinnehåll för alla kana
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=sv-SE)
 
 Generera endast bilder
 
