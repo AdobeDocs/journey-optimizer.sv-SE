@@ -5,9 +5,9 @@ title: AI Assistant för innehållsgenerering
 description: AI Assistant för innehållsgenerering
 redpen-status: CREATED_||_2025-08-12_00-42-48
 exl-id: 0fdc67ab-3646-4c6e-884d-604238549c3d
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Journey Optimizer AI Assistant revolutionerar innehållsskapandet genom at
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med AI Assistant
 
@@ -30,53 +30,33 @@ Lär dig hur du får tillgång till och konfigurerar AI Assistant-funktionen fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
-Generering av e-postinnehåll med AI
+Generera allt innehåll
 
-Upptäck hur du använder AI Assistant för att skapa, anpassa och optimera e-postinnehåll med varumärkesanpassning.
+Upptäck hur du använder AI Assistant för att skapa komplett innehåll, inklusive text och bilder för e-post, push-meddelanden, webbsidor och landningssidor.
 
-[Läs mer om e-postgenerering](../using/content-management/generative-email.md)
+[Läs om generering av fullt innehåll](../using/content-management/generative-full-content.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
 
-Generering av push-meddelandeinnehåll
+Generera endast text
 
-Skapa och personalisera push-meddelandeinnehåll med AI, inklusive text och bilder, som är anpassat efter ert varumärke.
+Använd AI Assistant för att generera och förfina textinnehåll för alla kanaler, inklusive e-post, SMS, push-meddelanden, webbsidor och landningssidor.
 
-[Generera push-meddelanden](../using/content-management/generative-push.md)
+[Upptäck textgenerering](../using/content-management/generative-text.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/message.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/image.svg)
 
-Skapa SMS-innehåll med AI
+Generera endast bilder
 
-Använd AI Assistant för att generera och förfina SMS-innehåll som får genklang hos er målgrupp samtidigt som ni följer varumärkesriktlinjerna.
+Skapa och anpassa bilder med AI Assistant för e-post, push-meddelanden, webbsidor och landningssidor.
 
-[Utforska SMS-generering](../using/content-management/generative-sms.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/globe.svg?lang=sv-SE)
-
-Skapa webbsidesinnehåll och resurser
-
-Förbättra webbsidor och bilder med AI Assistant, och säkerställ att de är anpassade efter varumärkesriktlinjerna.
-
-[Generera webbsidesinnehåll](../using/content-management/generative-web.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/window-maximize.svg?lang=sv-SE)
-
-Generering av landningssidor med AI
-
-Skapa och förfina innehåll och resurser på landningssidor, inklusive text och bilder, för att öka engagemanget.
-
-[Generera landningssidor](../using/content-management/generative-lp.md)
+[Generera bilder](../using/content-management/generative-image.md)
 :::
 
 ::::

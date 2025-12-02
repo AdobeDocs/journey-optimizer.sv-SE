@@ -6,9 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
-source-git-commit: 9619ffd2cde677c0c83ee1b53f232c41b5faaa9a
+source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '275'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,7 @@ Upptäck de detaljerade stegen för att skapa en webbkampanj i [den här videon]
 * **[Redigera webbinnehåll](create-web.md#edit-web-content)** - Lär dig mer om hur du ändrar sidor i visuella eller icke-visuella redigeringslägen.
 * **[Hantera webbändringar](manage-web-modifications.md)** - Lär dig hur du ordnar, använder och hanterar ändringar i dina webbupplevelser.
 * **[Övervaka webbupplevelser](monitor-web-experiences.md)** - Spåra och analysera resultatet för dina webbkampanjer med detaljerad rapportering.
-* **[Självstudiekurser för webbkampanjer](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Utforska steg-för-steg-videokurser om webbkanalsfunktioner och metodtips.
+* **[Generera webbinnehåll med AI Assistant](../content-management/generative-full-content.md)** - Använd AI för att skapa och optimera webbinnehåll med text och bilder.
+* **[Självstudiekurser för webbkampanjer](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Utforska steg-för-steg-videokurser om webbkanalsfunktioner och metodtips.
 
 

@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 59e85eb7a14f88d95b2ef97e3ace11a65f115b75
+source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
 workflow-type: tm+mt
-source-wordcount: '2995'
+source-wordcount: '2988'
 ht-degree: 15%
 
 ---
@@ -475,12 +475,10 @@ ht-degree: 15%
       + [AI Assistant för innehållsgenerering](/help/rp_landing_pages/ai-assistant-landing-page.md)
       + [Kom igång med AI Assistant](using/content-management/gs-generative.md)
       + [Bästa praxis för AI-tips](using/content-management/ai-assistant-prompting-guide.md)
-      + [E-postgenerering med AI](using/content-management/generative-email.md)
-      + [Push-generering med AI](using/content-management/generative-push.md)
-      + [SMS-generering med AI](using/content-management/generative-sms.md)
-      + [Webbgenerering med AI](using/content-management/generative-web.md)
+      + [Generera fullständigt innehåll med AI](using/content-management/generative-full-content.md)
+      + [Generera text med AI](using/content-management/generative-text.md)
+      + [Generera bilder med AI](using/content-management/generative-image.md)
       + [Innehållsexperiment med AI](using/content-management/generative-experimentation.md)
-      + [Landningssida med AI](using/content-management/generative-lp.md)
       + [Användningsexempel för AI Assistant](using/content-management/generative-uc.md)
       + Varumärken {#brands}
          + [Varumärken](/help/rp_landing_pages/brands-landing-page.md)
@@ -826,7 +824,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 36056208cd1e435c4801bd178bdc5f2d74068dc5
+source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1473'
 ht-degree: 4%
 
 ---
@@ -27,6 +27,8 @@ ht-degree: 4%
 Klicka på fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet. Använd personaliseringsredigeraren för att definiera innehåll, personalisera data och lägga till dynamiskt innehåll. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i personaliseringsredigeraren.
 
 Använd enhetens förhandsgranskningssektion för att se hur push-meddelanden visas på iOS- och Android-enheter.
+
+Snabba upp skapandet av ditt innehåll med AI Assistant och generera övertygande push-meddelanden med [AI Assistant för textgenerering](../content-management/generative-text.md) eller skapa kompletta push-meddelanden med [AI Assistant för generering av fullständigt innehåll](../content-management/generative-full-content.md).
 
 ## Beteende vid klickning {#on-click-behavior}
 

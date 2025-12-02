@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1072'
 ht-degree: 2%
 
 ---
@@ -98,6 +98,7 @@ Nu kan du börja designa innehållet i ditt textmeddelande med knappen **[!UICON
 >title="Definiera ditt SMS-innehåll"
 >abstract="Anpassa och anpassa dina textmeddelanden (SMS/MMS/RCS) genom att använda personaliseringsredigeraren för att definiera innehållet och införliva dynamiska element."
 
+
 Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna för MMS finns i [det här avsnittet](#mms-content).
 
 1. Klicka på knappen **[!UICONTROL Edit content]** på skärmen för resan eller kampanjkonfigurationen för att konfigurera textmeddelandeinnehållet.
@@ -107,6 +108,8 @@ Följ stegen nedan för att konfigurera meddelandeinnehållet. Inställningarna 
    För RCS-meddelanden med Infobip, Twilio eller andra tredjepartsleverantörer klistrar du in den JSON-nyttolast som krävs i din [anpassade SMS-konfiguration](sms-configuration-custom.md#api-credential).
 
    ![](assets/sms-content.png)
+
+1. Generera engagerande textmeddelanden som är skräddarsydda för läsarna med [AI Assistant för textgenerering](../content-management/generative-text.md).
 
 1. Använd personaliseringsredigeraren för att definiera innehåll, lägga till personalisering och dynamiskt innehåll. Du kan använda alla attribut, till exempel profilnamnet eller stad. Du kan också definiera villkorliga regler. Bläddra till följande sidor om du vill veta mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i personaliseringsredigeraren.
 

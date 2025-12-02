@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
+source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,9 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 1. På Designer hemsida väljer du alternativet **[!UICONTROL Design from scratch]**.
 
    ![](assets/email_designer.png)
+
+
+1. Snabba upp e-postgenereringen med AI Assistant och generera komplett e-postinnehåll med text och bilder med [AI Assistant för generering av fullständigt innehåll](../content-management/generative-full-content.md).
 
 1. Börja designa ditt innehåll genom att dra och släppa **[!UICONTROL Structures]** på arbetsytan för att definiera layouten för e-postmeddelandet.
 

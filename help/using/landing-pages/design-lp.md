@@ -9,10 +9,10 @@ role: User
 level: Beginner
 keywords: landning, landningssida, design, HTML
 exl-id: c61b8d80-17e1-4fdd-a739-efcee032dc23
-source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
+source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 1%
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +26,11 @@ Därifrån kan man
 
 * **Utforma landningssidan från grunden** via innehållsdesignerns gränssnitt och utnyttja bilder från [Adobe Experience Manager Assets](../integrations/assets.md). Lär dig hur du utformar ditt innehåll <!--or use built-in templates--> [i det här avsnittet](../email/content-from-scratch.md).
 
+* **Generera innehåll med AI Assistant** för att snabba upp skapandet av landningssidor med AI-genererad text och bilder. [Läs mer om AI Assistant](../content-management/generative-full-content.md).
+
 * **Kod eller klistra in HTML i Raw-format** direkt i innehållsdesignern. Lär dig hur du kodar ditt eget innehåll [i det här avsnittet](../email/code-content.md).
 
-* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [&#x200B; i det här avsnittet](../email/existing-content.md).
+* **Importera befintligt HTML-innehåll** från en fil eller en ZIP-mapp. Lär dig hur du importerar innehåll [ i det här avsnittet](../email/existing-content.md).
 
 * **Använd en sparad landningssidmall** som skapats i [!DNL Journey Optimizer]. [Läs mer](lp-templates.md)
 
