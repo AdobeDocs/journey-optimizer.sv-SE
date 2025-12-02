@@ -9,9 +9,9 @@ level: Experienced
 keywords: fråga, samlingar, funktioner, nyttolast, resa
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
 version: Journey Orchestration
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: e7693ba84d8806cf4b0dc10e8fdd18f2511e37ea
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '536'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Uttrycksspråket innehåller även en uppsättning funktioner för att fråga efter samlingar. Dessa funktioner förklaras nedan.
 
-I följande exempel använder vi händelsens nyttolast som innehåller en samling:
+I följande exempel använder vi en händelse med namnet&quot;LobbyBeacon&quot; som innehåller en samling push-meddelandetoken. Exemplen på den här sidan använder den händelsenyttolaststruktur som visas nedan:
 
 ```json
                 { 
@@ -65,6 +65,10 @@ I följande exempel använder vi händelsens nyttolast som innehåller en samlin
 }
 ```
 
+>[!NOTE]
+>
+>I exemplen nedan refereras den här nyttolasten med hjälp av `@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens}` där&quot;LobbyBeacon&quot; är händelsenamnet och resten av sökvägen motsvarar strukturen som visas ovan.
+
 ## Funktionen all(`<condition>`)
 
 Funktionen **[!UICONTROL all]** aktiverar definitionen av ett filter för en given samling genom att använda ett booleskt uttryck.
@@ -73,9 +77,13 @@ Funktionen **[!UICONTROL all]** aktiverar definitionen av ett filter för en giv
 <listExpression>.all(<condition>)
 ```
 
-Bland alla appanvändare kan du till exempel hämta de som använder IOS 13 (booleskt uttryck &quot;app used == IOS 13&quot;). Resultatet av den här funktionen är den filtrerade lista som innehåller objekt som matchar det booleska uttrycket (exempel: appanvändare 1, appanvändare 34, appanvändare 432).
+**Exempel på begrepp:** Bland alla appanvändare kan du hämta de som använder IOS 13 (booleskt uttryck &quot;app used == IOS 13&quot;). Resultatet av den här funktionen är den filtrerade lista som innehåller objekt som matchar det booleska uttrycket (exempel: appanvändare 1, appanvändare 34, appanvändare 432).
 
 I en Data Source Condition-aktivitet kan du kontrollera om resultatet av **[!UICONTROL all]**-funktionen är null eller inte. Du kan också kombinera den här **[!UICONTROL all]**-funktionen med andra funktioner som **[!UICONTROL count]**. Mer information finns i [Datavillkorsaktivitet för Source](../condition-activity.md#data_source_condition).
+
+**Kodexempel med LobbyBeacon-nyttolasten:**
+
+I exemplen nedan används händelsens nyttolast som visas högst upp på den här sidan.
 
 
 >[!CAUTION]
