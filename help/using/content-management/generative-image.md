@@ -7,7 +7,7 @@ feature: Content Assistant
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b70911f1f1fa00154729b5b88517233b67a377cb
+source-git-commit: d552008195d324227ecf91ea7a1ab905fe3981cc
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 2%
@@ -171,7 +171,7 @@ När du har genererat bildvariationer för dina push-meddelanden kan du finjuste
 
    Läs mer om [varumärkesjusteringspoäng](brands-score.md).
 
-   ![Märkesjusteringspoäng för variationer](assets/q.png){zoomable="yes"}
+   ![Märkesjusteringspoäng för variationer](assets/push-gen-img-2.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Preview]** om du vill visa en fullskärmsversion av den markerade varianten eller på **[!UICONTROL Apply]** om du vill ersätta det aktuella innehållet.
 
