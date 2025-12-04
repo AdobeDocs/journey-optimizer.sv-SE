@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 33b6cc18-dd63-48d9-8d85-526500d83d37
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 670464cf2e6fdec6e1f74cc472fe15ad35760765
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Du kan komma åt din kodbaserade reserapport genom att klicka på knappen **[!UI
 ![](assets/report-access-jo.png)
 
 >[!ENDSHADEBOX]
+
+>[!NOTE]
+>
+>Kodbaserade upplevelser fungerar som inkommande interaktioner där användarna väljer att gå med på er webbplats eller app. Därför ökas inte **Måtten** eller **Målgrupp**, som spårar profiler som valts för utgående meddelandeleverans, för kodbaserade kampanjer.
 
 ## Visa och klicka {#impressions-code}
 

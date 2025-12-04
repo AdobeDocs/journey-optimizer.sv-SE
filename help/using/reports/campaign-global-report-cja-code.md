@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d35a0e1c-2376-4cc5-88fc-5f8dfcfae666
-source-git-commit: f407c5d4c20aab50350588d89e9d7682f24f5c33
+source-git-commit: 670464cf2e6fdec6e1f74cc472fe15ad35760765
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ Du kommer åt den kodbaserade kampanjrapporten genom att klicka på knappen **[!
 ![](assets/report-access.png)
 
 >[!ENDSHADEBOX]
+
+>[!NOTE]
+>
+>Kodbaserade upplevelser fungerar som inkommande interaktioner där användarna väljer att gå med på er webbplats eller app. Därför ökas inte **Måtten** eller **Målgrupp**, som spårar profiler som valts för utgående meddelandeleverans, för kodbaserade kampanjer.
 
 ## Visa och klicka {#impressions-code}
 
@@ -97,11 +101,11 @@ Tabellen **[!UICONTROL Tracked link labels]** innehåller en omfattande översik
 
 * **[!UICONTROL Fallback rate]**: procentandel instanser där inga urvalsstrategier kvalificerades, vilket resulterar i att ett allmänt eller mindre specifikt alternativ visas.
 
-### Engagement tratt {#engagement-funnel}
+### Engagement funnel {#engagement-funnel}
 
 ![](assets/cja-engagement-funnel.png)
 
-Tabellen **[!UICONTROL Engagement Funnel]** övervakar prestanda för personaliserade upplevelser genom att utvärdera hur effektivt varje fas i tratten genererar användarinteraktioner.
+Tabellen **[!UICONTROL Engagement Funnel]** övervakar prestanda för personaliserade upplevelser genom att utvärdera hur effektivt varje steg i funnel skapar användarinteraktioner.
 
 * **[!UICONTROL Displays]**: Totalt antal gånger personaliserade upplevelser har visats eller presenterats för användare över olika kontaktytor.
 
