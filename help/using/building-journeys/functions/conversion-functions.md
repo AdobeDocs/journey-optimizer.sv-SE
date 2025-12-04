@@ -7,10 +7,10 @@ role: Developer
 level: Experienced
 keywords: konvertering, funktioner, uttryck, resa, typ, skiftning
 version: Journey Orchestration
-source-git-commit: bb47ca4957129a4d05aa3d7286409eef0cb62143
+source-git-commit: 451a9e1e5d5e6e1408849e8d1c5c9644a95359da
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 3%
+source-wordcount: '1054'
+ht-degree: 2%
 
 ---
 
@@ -142,12 +142,13 @@ Konverterar parametrar till ett datum/tid-värde, beroende på deras typer.
 
 +++Parametrar
 
-| Parameter | Typ |
-|-----------|------------------|
-| datum och tid i ISO-8601-format | string |
-| tidszon-id | string |
-| datum tid utan tidszon | dateTimeOnly |
-| heltalsvärde för en epok i millisekunder | heltal |
+| Parameter | Beskrivning |
+|--- |--- |
+| string | datum och tid i ISO-8601-format. En strängbeteckning för en datetime med tidszonsinformation |
+| string | tidszon-ID. En tidszonsidentifierare (t.ex. &quot;UTC&quot;, &quot;Europe/Paris&quot;) |
+| dateOnly | representerar ett datum utan tidszon, som visas som årsdag |
+| dateTimeOnly | representerar en datetime utan tidszon, som visas som år-månad-timme-minut-sekund-millisekund |
+| heltal | heltalsvärde för en epok i millisekunder |
 
 +++
 
@@ -155,7 +156,9 @@ Konverterar parametrar till ett datum/tid-värde, beroende på deras typer.
 
 `toDateTime(<string>)`
 
-`toDateTime(<stringified time zone id>, <dateTimeOnly>)`
+`toDateTime(<string>, <dateOnly>)`
+
+`toDateTime(<string>, <dateTimeOnly>)`
 
 `toDateTime(<integer>)`
 
@@ -165,17 +168,29 @@ Returnera en **dateTime**.
 
 +++Exempel
 
-`toDateTime ("2023-08-18T23:17:59.123Z")`
+`toDateTime("2023-08-18T23:17:59.123Z")`
 
 Returnerar 2023-08-18T23:17:59.123Z
 
-`toDateTime(toDateTimeOnly("UTC", "2023-08-18T23:17:59.123"))`
+ISO-8601-strängen innehåller redan tidszonsinformation.
+
+`toDateTime("Europe/Paris", toDateOnly("2023-08-18"))`
+
+Returnerar 2023-08-18T00:00:00.000+02:00
+
+Detta skapar en dateTime genom att kombinera en tidszon med ett värde som bara innehåller datum. Tiden anges till midnatt (00:00:00) i den angivna tidszonen.
+
+`toDateTime("UTC", toDateTimeOnly("2023-08-18T23:17:59.123"))`
 
 Returnerar 2023-08-18T23:17:59.123Z
+
+Detta skapar en dateTime genom att tillämpa en tidszon på ett dateTimeOnly-värde (som saknar tidszonsinformation).
 
 `toDateTime(1560762190189)`
 
-Returnerar 2023-06-17T09:03:10.189Z
+Returnerar 2019-06-17T09:03:10.189Z
+
+Konverterar en Unix-tidsstämpel i millisekunder till ett dateTime-värde.
 
 +++
 
