@@ -164,7 +164,7 @@ När ett erbjudande har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/offer_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar &#x200B;](../get-started/user-interface.md#changes-logs) som har gjorts i erbjudandet.
+På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#changes-logs) som har gjorts i erbjudandet.
 
 ![](../assets/offer_information.png)
 
