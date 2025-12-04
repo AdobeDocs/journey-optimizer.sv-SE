@@ -78,13 +78,13 @@ TTL-tillägg stöds för närvarande inte. Det finns dock planer på att optimer
 
 >[!NOTE]
 >
->Data som lagras i profilen omfattas av berättigandet Total Data Volume. Alla datalagringsökningar i profilen som ett resultat av ett TTL-tillägg räknas därför av mot det totala datavolymtillståndet. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target=&quot;_blank}
+>Data som lagras i profilen omfattas av berättigandet Total Data Volume. Alla datalagringsökningar i profilen som ett resultat av ett TTL-tillägg räknas därför av mot det totala datavolymtillståndet. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target=_blank}
 
 +++
 
 +++Kan kunder öka TTL-värdet för [!DNL Journey Optimizer]-systemdatauppsättningsdata i datasjön? 
 
-TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target=&quot;_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target=&quot;_blank}
+TTL-tillägg stöds för närvarande inte. Kunderna kan exportera data via Destinationer för att behålla data längre. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target=_blank}. Dessutom kan kunder med ett **[!DNL Data Distiller]**-berättigande skapa härledda datauppsättningar för att lagra data i datasjön utan en TTL. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target=_blank}
 
 +++
 
@@ -122,7 +122,7 @@ Den nya TTL-principen begränsar kontrollperioden för systemgenererade data i p
 
 +++Vilka alternativ finns för att lagra data längre än TTL-värdet?
 
-Kunder som kräver längre lagring bör överväga att exportera relevanta data från AJO datamängder till extern lagring innan TTL-värdet löper ut. Adobe Journey Optimizer stöder export av datauppsättningar till olika molnlagringsmål (Amazon S3, Azure Blob, Google Cloud Storage, osv.). [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target=&quot;_blank}
+Kunder som kräver längre lagring bör överväga att exportera relevanta data från AJO datamängder till extern lagring innan TTL-värdet löper ut. Adobe Journey Optimizer stöder export av datauppsättningar till olika molnlagringsmål (Amazon S3, Azure Blob, Google Cloud Storage, osv.). [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target=_blank}
 
 +++
 
