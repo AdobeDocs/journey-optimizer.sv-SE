@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 59ea67d9-e90c-4ad0-afb9-d0e0fd868855
-source-git-commit: 7b1be144776fd11cd4aa90aa315eee60b1acc40f
+source-git-commit: 38d537eb7a14f926cafd2769fd09821eebb1186a
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ När du använder Infobip måste du se till att Vidarebefordringsåtgärden är 
 
 Inga steg krävs för att säkerställa att SMS-avanmälningsfunktioner fungerar i Adobe Journey Optimizer när nyckelordssvaren STOP, UNSTOP, START, QUIT, CANCEL, END och UNSUBSCRIBE identifieras automatiskt. Profilernas avanmälningsstatus uppdateras i realtid i Adobe Journey Optimizer.
 
+Om du definierar anpassade avanmälningsnyckelord i dina SMS API-autentiseringsuppgifter åsidosätter de standardvärdena för inkommande nyckelord som listas ovan. Om du vill behålla standardnyckelorden, som STOP, QUIT, CANCEL, END och UNSUBSCRIBE, ska du inkludera dem explicit tillsammans med dina anpassade nyckelord i fältet Avandesnyckelord i din SMS-konfiguration. Annars identifieras bara dina anpassade nyckelord och standardnyckelorden utlöser inte längre avanmälningsåtgärder.
+
 Observera att om en kund svarar STOP på ett textmeddelande blockerar leverantören alla efterföljande SMS från det specifika avsändar-ID:t (kort kod eller långt nummer), inklusive transaktionsmeddelanden. Använd ett separat avsändar-ID som inte tidigare har valts ut för att säkerställa oavbruten leverans av transaktionsmeddelanden.
 
 
@@ -71,6 +73,6 @@ De alfanumeriska avsändar-ID:n är endast avsedda för envägsmeddelanden och k
 
   +++ Se videon
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3440280/?captions=swe&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3427129/?learn=on)
 
   +++

@@ -7,9 +7,9 @@ feature: Whatsapp, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: f69e482daf457f1c331d158d1bf04b4cfb392197
+source-git-commit: bd0f1f6b63616bcef4cfc50706e42612e0a04e89
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '986'
 ht-degree: 1%
 
 ---
@@ -119,7 +119,7 @@ När dina API-autentiseringsuppgifter för whatsApp har skapats kan du nu konfig
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din WhatsApp-webkrok.
 
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
 
    ![](assets/webhook-5.png)
 
@@ -179,6 +179,23 @@ När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som 
 
 Du kan nu skicka meddelanden om whatsApp med Journey Optimizer.
 
+## Felsöka konfigurationen av whatsApp-kanalen {#troubleshooting}
+
+### HTTP 500-fel vid konfiguration av API-autentiseringsuppgifter
+
+Om du får ett HTTP 500-fel när du konfigurerar API-autentiseringsuppgifter för WhatsApp följer du dessa felsökningssteg:
+
+1. **Verifiera berättiganden**: Bekräfta att din organisation har `cjm_whatsapp`-berättigandet etablerat. Utan det här berättigandet kan inte whatsApp-kanalen konfigureras.
+
+1. **Verifiera företagskontofält**: Kontrollera att alla obligatoriska fält är korrekt ifyllda:
+   * **API-token**: Måste vara en giltig Meta-åtkomsttoken med lämplig behörighet. [Läs mer](https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/)
+   * **Konto-ID**: Måste matcha ditt Meta Business Account ID exakt. [Läs mer](https://www.facebook.com/business/help/1181250022022158?id=180505742745347)
+
+1. **Testa autentiseringsuppgifterna externt**: Verifiera dina autentiseringsuppgifter direkt med Meta API för att bekräfta om problemet gäller autentiseringsuppgifterna eller med Journey Optimizer autentiseringsuppgifter.
+
+1. **Aktivera avancerad loggning**: Om du vill identifiera interna server- eller autentiseringsfel aktiverar du avancerade loggar i Journey Optimizer-miljön för att ge detaljerad information om API-anropsfel.
+
+1. **Kontakta support**: Om miljön och berättigandena har bekräftats vara giltiga men HTTP 500-felet kvarstår kontaktar du Adobe.
 
 ## Instruktionsvideo {#video}
 
@@ -186,6 +203,6 @@ I videon nedan visas hur du konfigurerar WhatsApp-kanalen i Adobe Journey Optimi
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470272/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
 
 +++

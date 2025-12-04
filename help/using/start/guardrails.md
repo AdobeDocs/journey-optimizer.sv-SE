@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 5ddce63ac21f7cbfff435b4914cc91a8d6d58b93
+source-git-commit: b8af73485227dc102b5b190b58a5d4341ffb2708
 workflow-type: tm+mt
-source-wordcount: '3310'
+source-wordcount: '3516'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 Nedan hittar du ytterligare skyddsförslag och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 
 ## Webbläsare som stöds {#browsers}
@@ -104,13 +104,13 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] inkommande kanaler kan ha pseudonyma profiler som mål, vilket innebär profiler som inte är autentiserade eller okända än eftersom de inte har varit engagerade tidigare i andra kanaler. Detta är till exempel fallet när man riktar sig till alla besökare eller målgrupper baserat på tillfälliga ID:n som ECID.
 
-Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
+Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
 
 För att hålla dina engagerande profiler inom rimliga gränser rekommenderar Adobe att du ställer in en TTL (Time-To-Live) som automatiskt tar bort pseudonyma profiler från kundprofilen i realtid om de inte har setts eller engagerats inom ett visst tidsfönster.
 
 >[!NOTE]
 >
->Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+>Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
 
 Adobe rekommenderar att TTL-värdet ställs in på 14 dagar för att matcha den aktuella Edge-profilen TTL.
 
@@ -171,6 +171,23 @@ Garantier och begränsningar som ska beaktas när man arbetar med beslut eller b
 * När du använder en målgruppskvalifikation på en resa kan det ta upp till 10 minuter innan målgruppsaktiviteten är aktiv och lyssnar på profiler som kommer in eller lämnar målgruppen.
 * En reseinstans för en profil har en maxstorlek på 1 MB. Alla data som samlas in som en del av körningen lagras i den aktuella reseinstansen. Det innebär att data från en inkommande händelse, profilinformation som hämtats från Adobe Experience Platform, anpassade åtgärdssvar osv. lagras i den reseinstansen och påverkar resans storlek. När en resa börjar med en händelse bör du begränsa den maximala nyttolasten för händelsen (t.ex. under 800 kB) för att undvika att nå den gränsen efter några få aktiviteter vid körningen av resan. När gränsen nås har profilen en felstatus och kommer inte att ingå i resan.
 * Förutom den tidsgräns som används i reseaktiviteter finns det också en global tidsgräns för resan som inte visas i gränssnittet och som inte kan ändras. Den här globala tidsgränsen stoppar de enskilda personernas framsteg under resan 91 dagar efter att de har gått in. [Läs mer](../building-journeys/journey-properties.md#global_timeout)
+
+### Välj paketbegränsningar för enhetsresor {#select-package-limitations}
+
+>[!NOTE]
+>
+>Dessa begränsningar gäller inte för att läsa målgrupps- eller affärshändelseresor med paketet **Select**. Om du behöver mer komplex reselogik med flera åtgärder, villkor eller vänteaktiviteter kan du uppgradera ditt licenspaket eller använda Läs målgruppsresor där det är tillämpligt.
+
+För kunder som använder **Select**-licenspaketet gäller följande ytterligare begränsningar specifikt för enhetsresor, resor som börjar med en händelse eller en målgruppskvalifikation:
+
+* **SELECT-paket: endast en åtgärd tillåts i en enhetsresa (ERR_PKG_SELECT_8)**: Enhetsresor kan endast innehålla en åtgärdsaktivitet. Du kan inte lägga till flera e-post-, push-, SMS- eller andra åtgärdsaktiviteter inom samma resa.
+
+* **SELECT-paket: Inget villkor tillåts i en enhetsresa (ERR_PKG_SELECT_7)**: Villkorsaktiviteter kan inte användas i enhetsresor. Färden måste följa en enda linjär väg utan förgrenade logik.
+
+* **SELECT-paket: ingen väntetid tillåts i en enhetsresa (ERR_PKG_SELECT_6)**: Det går inte att lägga till väntningsaktiviteter i enhetsresor. Åtgärder måste utföras omedelbart utan dröjsmål.
+
+* **SELECT-paket: timeout/felövergång från nod får endast peka på slutnoden (ERR_PKG_SELECT_2)**: Om du konfigurerar timeout eller felövergångar för en åtgärd, till exempel en e-poståtgärd, måste sökvägarna peka direkt på en slutnod. De kan inte koppla samman med andra aktiviteter eller åtgärder under resan.
+
 
 ### Allmänna åtgärder {#general-actions-g}
 

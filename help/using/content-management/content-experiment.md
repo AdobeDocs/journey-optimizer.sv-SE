@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: innehåll, experimentera, multipelt, målgrupp, behandling
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-source-git-commit: 4f1ae3a812b75c180716c5af0d6f87ef58bc2a13
+source-git-commit: 462859568ffcacab644d587e328cf92ce053aa00
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1827'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,12 @@ Du kan välja mellan tre olika typer av experiment:
 1. Klicka på **[!UICONTROL Add treatment]** för att skapa så många nya behandlingar som behövs.
 
    ![](assets/content_experiment_8.png)
+
+   >[!CAUTION]
+   >
+   >Observera följande begränsningar när du skapar ett kodbaserat experiment:
+   >* **Behandlingsantal**: Om du skapar fler än 3-5 behandlingar kan prestanda- och gränssnittsproblem uppstå. Om du råkar ut för fel när du lägger till behandlingar kan du försöka minska antalet behandlingar eller lägga till dem stegvis tills problemet är löst.
+   >* **Reserverade nyckelord**: Undvik att använda reserverade nyckelord som &quot;holdout&quot; i dina behandlingsnamn, eftersom detta kan orsaka mappningsfel för beslutsnoder och förhindra att experimentet fungerar korrekt.
 
 1. Ändra **[!UICONTROL Title]** för din behandling så att du bättre kan skilja dem åt.
 

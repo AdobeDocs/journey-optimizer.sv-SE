@@ -10,14 +10,24 @@ role: User
 level: Intermediate
 exl-id: 9ba16ad9-a5e7-4ce7-8ed6-7707d37178c6
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: e99ba08b86c682cdcb20be758590b97c0d474040
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 3%
+source-wordcount: '379'
+ht-degree: 2%
 
 ---
 
 # Skapa reserverbjudanden {#create-fallback-offers}
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_new_fallback"
+>title="Reserverbjudande"
+>abstract="Ett reserverbjudande är standarderbjudande som visas när en slutanvändare inte är berättigad till något av de anpassade erbjudandena."
+
+>[!CONTEXTUALHELP]
+>id="ajo_decisioning_fallback_offer_details "
+>title="Information om reserverbjudanden"
+>abstract="Ange erbjudandets namn. Du kan också koppla en eller flera befintliga samlingskvalificerare till den, så att du enklare kan söka efter och ordna erbjudandebiblioteket."
 
 Reserverbjudandet skickas till kunderna om de inte är berättigade till andra erbjudanden. Stegen för att skapa ett reserverbjudande består av att skapa en eller flera representationer, som när du skapar ett erbjudande.
 

@@ -10,9 +10,9 @@ role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: e99ba08b86c682cdcb20be758590b97c0d474040
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '772'
 ht-degree: 3%
 
 ---
@@ -52,11 +52,6 @@ Listan med anpassade erbjudanden finns på menyn **[!UICONTROL Offers]**.
 >id="ajo_decisioning_new_personalized"
 >title="Personligt erbjudande"
 >abstract="Ett personaliserat erbjudande är ett anpassningsbart meddelande baserat på regler och begränsningar för behörighet."
-
->[!CONTEXTUALHELP]
->id="ajo_decisioning_new_fallback"
->title="Reserverbjudande"
->abstract="Ett reserverbjudande är standarderbjudande som visas när en slutanvändare inte är berättigad till något av de anpassade erbjudandena."
 
 Så här skapar du ett **erbjudande**:
 
@@ -169,7 +164,7 @@ När ett erbjudande har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/offer_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar &#x200B;](../get-started/user-interface.md#changes-logs) som har gjorts i erbjudandet.
+På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#changes-logs) som har gjorts i erbjudandet.
 
 ![](../assets/offer_information.png)
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a34ba1a8-87d5-4f9c-a181-2f49e74e8f09
-source-git-commit: 853e87cdd69a3fc180dcb1aa38b4b67f27977939
+source-git-commit: ca6f722c93fffe0cebcddb4f730f23d9a720ef9d
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '868'
 ht-degree: 7%
 
 ---
@@ -63,7 +63,7 @@ Mer information om de specifika exkluderingsorsakerna finns i tabellen nedan.
 | InAppNoVariantDefined | 050041 | InApp | En undantagshändelse genereras när ingen variant har definierats för InApp-meddelandet. |
 | InAppNoMessageFoundForTreatment | 050042 | InApp | En undantagshändelse genereras när experimentet aktiveras för meddelandet och inget meddelande hittas för den kvalificerade behandlingen. |
 | PushNoTokenFoundInProfile | 050030 | Push | En undantagshändelse genereras när profilen inte har push-tokens. |
-| PushNoValidTokenFoundForApps | 050031 | Push | En undantagshändelse genereras när ingen giltig token hittas för målprogrammen i konfigurationen. |
+| PushNoValidTokenFoundForApps | 050031 | Push | En undantagshändelse genereras när ingen giltig token hittas för målprogrammen i konfigurationen. **Viktigt!** När du använder ett produktionscertifikat måste attributet `pushNotificationDetails.platform` i användarprofilen anges till `apns`. Om du använder ett sandlådecertifikat anger du det till `apnsSandbox`. Ett matchningsfel mellan plattformsattributet och certifikattypen utlöser detta undantag. |
 | PushMalformedProfile | 050034 | Push | En undantagshändelse genereras när pushNotificationDetails i profilen har fel format. |
 | PushNoConsent | 050111 | Push | En undantagshändelse genereras när användaren har valt bort push-meddelanden för marknadsföring. |
 | PushNoApplicationDefinedInPreset | 050033 | Push | En undantagshändelse genereras när konfigurationen inte innehåller något program att rikta sig till. |
