@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 keywords: uttryck, redigerare, handtag, iteration, matriser, kontext, personalisering
-source-git-commit: 44999e7b1a246d584dccd81bfb426222169d4f67
+source-git-commit: 61f5302510cc5082a36f17314378760e5ba7c3ae
 workflow-type: tm+mt
 source-wordcount: '2484'
 ht-degree: 0%
@@ -72,7 +72,7 @@ context.journey.events.<event_ID>.<fieldPath>
 
 ### Exempel: Skapa kundvagnsobjekt från en händelse
 
-Om [händelseschemat](../event/experience-event-schema.md) innehåller en `productListItems`-matris (standardformat [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html?lang=sv-SE){target="_blank"}) kan du visa kundvagnsinnehåll så här:
+Om [händelseschemat](../event/experience-event-schema.md) innehåller en `productListItems`-matris (standardformat [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}) kan du visa kundvagnsinnehåll så här:
 
 ```handlebars
 {{#each context.journey.events.event_ID.productListItems as |product|}}
@@ -221,7 +221,7 @@ Visa dynamiska fördelar baserat på lojalitetsstatus:
 
 ## Iterera sökresultat för datauppsättningar {#dataset-lookup}
 
-[Uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) gör att du kan hämta data från [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE){target="_blank"} under körning. De inkapslade data lagras som en array och kan itereras över i dina meddelanden.
+[Uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) gör att du kan hämta data från [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"} under körning. De inkapslade data lagras som en array och kan itereras över i dina meddelanden.
 
 >[!AVAILABILITY]
 >
@@ -529,6 +529,7 @@ serializeList(
 * Resultat: `"SKU-1,SKU-3"` (lämpligt för en frågeparameter)
 
 Läs mer om:
+
 * [&quot;all&quot;](../building-journeys/expression/collection-management-functions.md)
 * [`serializeList`](../building-journeys/functions/list-functions.md#serializeList)
 
@@ -565,11 +566,11 @@ Samlingshantering för anpassade åtgärder beskrivs i [Överför samlingar till
 
 1. I avancerat läge anger du mängduttrycket:
 
-```javascript
-@event{YourEventName.commerce.productListItems.all(currentEventField.priceTotal > 0)}
-```
+   ```javascript
+   @event{YourEventName.commerce.productListItems.all(currentEventField.priceTotal > 0)}
+   ```
 
-&#x200B;2. I samlingsmappningens användargränssnitt:
+1. I samlingsmappningens användargränssnitt:
    * Karta `id` → `productListItems.SKU`
    * Karta `name` → `productListItems.name`
    * Karta `price` → `productListItems.priceTotal`
@@ -685,13 +686,13 @@ Läs mer i [Använd API-anropssvar](../action/action-response.md).
 **Steg 3: Vidga åtgärden i resan**
 
 1. Lägg till den anpassade åtgärden efter kundvagnsöverhoppningen
-2. I avancerat läge för samlingen `cartItems`:
+1. I avancerat läge för samlingen `cartItems`:
 
-```javascript
-@event{cartAbandonment.commerce.productListItems.all(currentEventField.quantity > 0)}
-```
+   ```javascript
+   @event{cartAbandonment.commerce.productListItems.all(currentEventField.quantity > 0)}
+   ```
 
-&#x200B;3. Mappa samlingsfälten:
+1. Mappa samlingsfälten:
    * `sku` → `productListItems.SKU`
    * `price` → `productListItems.priceTotal`
    * `quantity` → `productListItems.quantity`
@@ -837,13 +838,13 @@ Har du problem med upprepningen? I det här avsnittet beskrivs vanliga problem o
 
 **Vanliga misstag**:
 
-* Avslutande taggar saknas: Varje `{{#each}}` måste ha en `{{/each}}`. Granska [Interaktionssyntaxen &#x200B;](#syntax) för att se om strukturen är korrekt.
+* Avslutande taggar saknas: Varje `{{#each}}` måste ha en `{{/each}}`. Granska [Interaktionssyntaxen ](#syntax) för att se om strukturen är korrekt.
 * Felaktigt variabelnamn: Kontrollera att variabelnamnet används konsekvent genom hela blocket. Mer information om namnkonventioner finns i [Bästa tillvägagångssätt](#best-practices).
 * Felaktiga sökvägsavgränsare: Använd punkter (`.`), inte snedstreck eller andra tecken
 
 ### Testa dina iterationer
 
-Använd [testläget &#x200B;](../building-journeys/testing-the-journey.md) för resan för att verifiera dina iterationer. Detta är särskilt viktigt när du använder [anpassade åtgärder](#custom-action-responses) eller [datauppsättningssökningar](#dataset-lookup):
+Använd [testläget ](../building-journeys/testing-the-journey.md) för resan för att verifiera dina iterationer. Detta är särskilt viktigt när du använder [anpassade åtgärder](#custom-action-responses) eller [datauppsättningssökningar](#dataset-lookup):
 
 1. Starta din resa i [testläge](../building-journeys/testing-the-journey.md)
 2. Utlös händelsen eller den anpassade åtgärden med exempeldata
