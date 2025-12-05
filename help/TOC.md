@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
+source-git-commit: 7ab576435c2605167ad1dd463ae5e7d5dc71c13c
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2992'
 ht-degree: 15%
 
 ---
@@ -403,6 +403,7 @@ ht-degree: 15%
       + [Personalization syntax](using/personalization/personalization-syntax.md)
       + [Återanvänd uttrycksfragment](using/personalization/use-expression-fragments.md)
       + [Använd Adobe Experience Platform-data för personalisering](using/personalization/aep-data-perso.md)
+      + [Iterera över kontextuella data](using/personalization/personalization-contexts.md)
       + Hjälpfunktionslista {#functions}
          + [Hjälpfunktionslista](/help/rp_landing_pages/functions-landing-page.md)
          + [Kom igång med hjälpfunktioner](using/personalization/functions/functions.md)
@@ -824,7 +825,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

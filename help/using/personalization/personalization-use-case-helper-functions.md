@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, hjälpprogram, användningsfall, personalisering
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: bf5b054eaaca73abf484ccbabf160e902fad3f5b
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Skapa en händelse vars schema innehåller arrayen `productListItems`.
 1. Definiera alla fält från den här arrayen som nyttolastfält för den här händelsen.
 
-   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html?lang=sv-SE){target="_blank"}.
+   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}.
 
 1. Skapa en resa som börjar med det här evenemanget.
 1. Lägg till en **e-postaktivitet** på resan.
@@ -105,7 +105,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
       ![](assets/personalization-uc-helpers-5.png)
 
-      Läs mer om datatypen för personnamn i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html?lang=sv-SE){target="_blank"}.
+      Läs mer om datatypen för personnamn i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Validate]** och sedan på **[!UICONTROL Save]**.
 
@@ -114,6 +114,8 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Spara meddelandet.
 
 ## Steg 4: Infoga listan med artiklar från vagnen {#each-helper}
+
+<!--This step demonstrates iterating over event data. For comprehensive examples of iterating over different data sources (events, custom action responses, and other contextual data), see [Iterate over contextual data with Handlebars](personalization-contexts.md).-->
 
 1. Öppna meddelandeinnehållet igen.
 
