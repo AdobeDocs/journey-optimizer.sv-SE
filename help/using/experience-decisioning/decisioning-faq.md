@@ -8,9 +8,9 @@ level: Intermediate
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 7bf0b3fbfe56ef8ae3a35be9aa604287f43d6d74
+source-git-commit: 54ed4dec71703a0444920baf4fb0a2d8318034cd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,9 @@ Båda komponenterna krävs för effektiva [personaliserade optimeringsmodeller](
 
 +++**Hur påverkar ändringar i erbjudandesamlingar automatisk optimering eller personaliserade optimeringsmodeller?**
 
-Båda modellerna levererar trafik till nästa bästa tillgängliga erbjudande baserat på trafikdata från de senaste 30 dagarna.
+Den automatiska optimeringsmodellen levererar trafik till nästa bästa tillgängliga erbjudande baserat på trafikdata från de senaste 14 dagarna, oavsett om den personaliserade optimeringsmodellen använder trafikdata från de senaste 30 dagarna eller inte.
 
-När flera erbjudanden tas bort samtidigt och de återstående erbjudandena har minimala trafikdata inom 30-dagarsfönstret kan modellen uppvisa ett ooptimalt beteende, inklusive slumpmässiga distributionsmönster eller avvikelser mot erbjudanden med högre konverteringsgrad baserat på begränsade visningsdata.
+När flera erbjudanden tas bort samtidigt och de återstående erbjudandena har minimala trafikdata inom 14-dagars- eller 30-dagarsfönstret kan modellen uppvisa ett ooptimalt beteende, inklusive slumpmässiga distributionsmönster eller fördomar mot erbjudanden med högre konverteringsgrad baserat på begränsade visningsdata.
 
 **Bästa praxis**: När erbjudandesamlingar ändras avsevärt bör du kontrollera att återstående erbjudanden har tillräckliga historiska prestandadata för att behålla modellens effektivitet.
 
