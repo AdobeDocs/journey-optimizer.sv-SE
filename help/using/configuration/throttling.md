@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
-source-git-commit: 13af123030449d870f44f3470710b0da2c6f4775
+source-git-commit: 0b0badfa09a24d451671f5bae9ddc437c6db2911
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 48%
@@ -32,7 +32,7 @@ Det här avsnittet innehåller global information om hur du arbetar med API:t. E
 
 ## Beskrivningar av begränsnings-API och Postman-samling {#description}
 
-I tabellen nedan visas tillgängliga kommandon för begränsnings-API:t. Detaljerad information, inklusive frågeexempel, parametrar och svarsformat, finns i [Adobe Journey Optimizer API:s dokumentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys/).
+I tabellen nedan visas tillgängliga kommandon för begränsnings-API:t. Detaljerad information, inklusive frågeexempel, parametrar och svarsformat, finns i [Adobe Journey Optimizer API:s dokumentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/).
 
 | Metod | Sökväg | Beskrivning |
 |---|---|---|

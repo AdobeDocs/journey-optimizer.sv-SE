@@ -8,7 +8,7 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: bc614a78229771e826edea581aefb97b0e3f4159
+source-git-commit: 0b0badfa09a24d451671f5bae9ddc437c6db2911
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 16%
@@ -33,7 +33,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## API:er för begränsning och begränsning {#capping}
 
@@ -60,7 +60,7 @@ Mer information om hur du arbetar med API:erna finns i följande avsnitt:
 * [API för reglering](capping.md)
 * [API för begränsning](throttling.md)
 
-En detaljerad beskrivning av API:erna finns i [dokumentationen för Adobe Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/journeys/)
+En detaljerad beskrivning av API:erna finns i [dokumentationen för Adobe Journey Optimizer API:er](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/)
 
 ### Datakällor och kapacitet för anpassade åtgärder {#capacity}
 
