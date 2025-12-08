@@ -11,9 +11,9 @@ keywords: aktivitet, villkor, arbetsyta, resa, optimering
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: f6618de4-7861-488e-90c0-f299ef5897ca
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: fd42ff8502f03debb0bb8c6c0c286744be62c561
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1588'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ När resan är live utvärderas profiler mot de definierade kriterierna, och bas
 >id="ajo_path_experiment_success_metric"
 >title="Resultatmått"
 >abstract="Resultatmått används för att spåra och utvärdera den bästa behandlingen i ett experiment."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/success-metrics" text="Konfigurera och spåra dina resemått"
 
 Experimentation gör att du kan testa olika banor baserat på en slumpmässig delning för att avgöra vilken som fungerar bäst baserat på fördefinierade framgångsmått.
 
@@ -120,6 +120,10 @@ Låt oss säga att du vill jämföra tre banor:
 När resan är live tilldelas användarna slumpvis olika vägar. [!DNL Journey Optimizer] spårar vilken sökväg som fungerar bäst och ger åtgärdbara insikter.
 
 Följ framgången på din resa med rapporten&quot;Journey Path Experiment&quot;. [Läs mer](../reports/journey-global-report-cja-experimentation.md)
+
+>[!CAUTION]
+>
+>Redigera inte metadata för ett sökvägsexperiment när det väl har publicerats. Redigering av metadata kommer att störa beräkningen och rapporteringen av försöksresultat.
 
 ### Exempel på användningsområden {#uc-experiment}
 
