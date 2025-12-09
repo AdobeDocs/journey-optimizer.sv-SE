@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 exl-id: ce3a2c33-c15b-436f-90b1-7373d7b2b1ca
 version: Journey Orchestration
-source-git-commit: f43b1ea0dd2197331329e24cb3d76eef0b5a9e86
+source-git-commit: 093e5ba2a74b498bb31d0398e1df460fd93b285f
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,10 @@ Kontrollera att följande fält är korrekt konfigurerade:
 
 Varje erbjudande i ett erbjudande innehåller en spårningstoken, som är en unik identifierare som genereras av Adobe. Denna token måste skickas exakt som den tagits emot - utan ändringar - i motsvarande click- eller intryckshändelse. Matchande spårningstoken säkerställer att Adobe kan koppla användaråtgärden till rätt erbjudande, vilket möjliggör rapportering i efterföljande led och AI-baserad optimering.
 
+>[!CAUTION]
+>
+>Om du inte skickar spårningstoken i fältet `propositionAction.tokens` när du spårar klickningar, kommer klickningshändelserna inte att tillskrivas motsvarande erbjudande. Detta resulterar i ofullständiga spårningsdata och påverkar rapporteringen negativt och AI-baserad rankningsoptimering. Se alltid till att du tar med spårningstoken från förslaget i klickspårningsimplementeringen.
+
 +++**Exempel på nyttolast:**
 
 ```json
@@ -179,4 +183,4 @@ För anpassade händelser måste schemat som används i datauppsättningen ocks�
 >* POST /ee/v2/interact
 >* POST /ee/v2/collect
 >
->If you are using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=sv-SE){target="_blank"}, the connection is made automatically.-->
+>If you are using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}, the connection is made automatically.-->
