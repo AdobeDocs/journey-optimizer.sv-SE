@@ -62,7 +62,7 @@ Följ de här stegen för att komma åt katalogschemat där beslutsobjektens att
 
 1. Fyll i de fält som krävs för det tillagda attributet och klicka på **[!UICONTROL Apply]**.
 
-   Värdet som anges för ett attribut med ett decimalresursattribut är en offentlig URL. Oftast pekar detta på en bild. Detaljerad information om hur du arbetar med [!DNL Adobe Experience Platform]-scheman finns i [&#x200B; XDM-systemdokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
+   Värdet som anges för ett attribut med ett decimalresursattribut är en offentlig URL. Oftast pekar detta på en bild. Detaljerad information om hur du arbetar med [!DNL Adobe Experience Platform]-scheman finns i [&#x200B; XDM-systemdokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=sv-SE).
 
 1. Spara schemat när du har lagt till de anpassade attributen. Det nya fältet är nu tillgängligt på skärmen för att skapa beslutsobjekt i avsnittet **[!UICONTROL Custom attributes]**.
 
