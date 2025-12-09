@@ -52,11 +52,11 @@ Till skillnad från när kontext skickas i ett kostnadsfritt format med hjälp a
 
    ![XDM-schema som visar fältgruppen Erbjudandekontext med egenskaperna language och deviceType &#x200B;](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
 
-   Lär dig hur du arbetar med scheman i guiden [!DNL Adobe Experience Platform] [Experience Data Model (XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home){target="_blank"}
+   Lär dig hur du arbetar med scheman i guiden [!DNL Adobe Experience Platform] [Experience Data Model (XDM)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home){target="_blank"}
 
 1. Skapa en datauppsättning (här&quot;Erbjudandekontext&quot;) och se till att den är aktiverad för profilen.
 
-1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar dataström i [!DNL Adobe Experience Platform] [Datastreams-guiden](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure){target="_blank"}
+1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar dataström i [!DNL Adobe Experience Platform] [Datastreams-guiden](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure){target="_blank"}
 
    Här har vi skapat en datastam för&quot;Erbjudandekontext&quot; med händelseschemat&quot;Erbjudandeinnehåll&quot; markerat.
 
