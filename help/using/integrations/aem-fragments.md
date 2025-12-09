@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
-source-git-commit: 74723337f97c8196b506ccc1ace11077710494ea
+source-git-commit: e292d584e3c3d1997c2c3e6bb3675758ff530bf9
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -18,21 +18,45 @@ ht-degree: 0%
 
 Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journey Optimizer kan du nu smidigt införliva dina AEM Content Fragments i ditt Journey Optimizer-innehåll. Denna smidiga anslutning förenklar processen att komma åt och utnyttja AEM-innehåll, vilket gör det möjligt att skapa personaliserade och dynamiska kampanjer och resor.
 
-Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} i Experience Manager-dokumentationen.
+Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} i Experience Manager-dokumentationen.
+
+## Före start {#start}
 
 >[!AVAILABILITY]
 >
 >För hälso- och sjukvårdskunder aktiveras integreringen endast när man licensierar Journey Optimizer Healthcare Shield och Adobe Experience Manager Enhanced Security-tillägg.
 
-## Begränsningar {#limitations}
+### Begränsningar {#limitations}
 
-* Vi rekommenderar att du begränsar antalet användare som har tillgång till publicering av innehållsfragment för att minska risken för oavsiktliga fel.
+Observera följande begränsningar när du arbetar med Adobe Experience Manager Content Fragments i Journey Optimizer:
 
-* För flerspråkigt innehåll stöds endast det manuella flödet.
+* **Typ av innehållsfragment**: Endast enkla innehållsfragment stöds. Variationer och kapslade fragment stöds för närvarande inte.
 
-* Variationer stöds för närvarande inte.
+* **Flerspråkigt innehåll**: Endast det manuella flödet stöds.
 
-* Korrektur för publicerade kampanjer och resor visar data från den senaste utgåvan av Experience Manager Content fragment.
+* **Personalization**: Endast profilattribut, kontextattribut, statiska strängar och fördeklarerade variabler stöds. Härledda eller beräknade attribut stöds inte.
+
+* **Uppdateringar och versionshantering**: Uppdateringar av innehållsfragment kräver manuell publicering från Adobe Experience Manager. Det finns ingen automatisk versionsavstämning mellan Adobe Experience Manager och Journey Optimizer.
+
+* **Cachelagring**: Journey Optimizer hämtar innehållsfragment i realtid från Adobe Experience Manager-publicering. Det finns ingen cachelagring före rendering.
+
+* **Språkkontroll**: Korrektur för publicerade kampanjer och resor speglar data från den senaste Experience Manager Content Fragment-publikationen. Det finns inget historiskt versionslås.
+
+* **Användaråtkomst**: Vi rekommenderar att du begränsar antalet användare som har behörighet att publicera innehållsfragment för att minska risken för oavsiktliga fel.
+
+### Innehållssynkroniseringsflöde {#content-sync-flow}
+
+Integrationen mellan Adobe Experience Manager och Journey Optimizer följer detta dataflöde:
+
+1. **[Skapa och författare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#creating-a-content-fragment)**: Innehåll skapas och konfigureras i Adobe Experience Manager som innehållsfragment.
+
+1. **[Taggning](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#manage-tags)**: Innehållsfragment måste vara taggade med den Journey Optimizer-specifika taggen (`ajo-enabled:{OrgId}/{SandboxName}`).
+
+1. **[Publicera](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#publishing-and-previewing-a-fragment)**: Innehållsfragment publiceras i Adobe Experience Manager och görs tillgängliga för Journey Optimizer.
+
+1. **[Åtkomst](#aem-add)**: Journey Optimizer hämtar och visar tillgängliga innehållsfragment från Adobe Experience Manager publiceringsinstans i realtid.
+
+1. **[Integrering](#aem-add)**: Innehållsfragment väljs ut och integreras i kampanjer eller resor.
 
 ## Skapa och tilldela en tagg i Experience Manager
 
@@ -50,9 +74,11 @@ Innan du använder ditt Content-fragment i Journey Optimizer måste du skapa en 
 
 1. Klicka på **Skapa**.
 
-1. Definiera innehållsfragmentmodellen så som beskrivs i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} och tilldela den nya Journey Optimizer-taggen.
+1. Definiera innehållsfragmentmodellen så som beskrivs i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} och tilldela den nya Journey Optimizer-taggen.
 
-Nu kan du börja skapa och konfigurera ditt innehållsfragment för senare användning i Journey Optimizer. Läs mer i [Experience Manager-dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
+Denna realtidsanslutning ser till att ert innehåll alltid är uppdaterat, men innebär också att ändringar i publicerade fragment omedelbart påverkar aktiva kampanjer och resor.
+
+Nu kan du börja skapa och konfigurera ditt innehållsfragment för senare användning i Journey Optimizer. Läs mer i [Experience Manager-dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
 
 ## Lägg till Experience Manager Content-fragment {#aem-add}
 
@@ -117,9 +143,22 @@ I det här fallet kontrollerar du att **_variableName_** har deklarerats innan d
 
    ![](assets/aem_campaign_9.png){zoomable="yes"}
 
-
 1. Klicka på **[!UICONTROL Save]**. Du kan nu testa och kontrollera meddelandeinnehållet enligt beskrivningen i [det här avsnittet](../content-management/preview.md).
-
 När du har utfört dina tester och validerat innehållet kan du [skicka din kampanj](../campaigns/review-activate-campaign.md) eller [publicera din resa](../building-journeys/publish-journey.md) till din målgrupp.
 
-Med Adobe Experience Manager kan ni identifiera de Journey Optimizer-kampanjer eller resor där ett innehållsfragment används. Läs mer i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references).
+Med Adobe Experience Manager kan ni identifiera de Journey Optimizer-kampanjer eller resor där ett innehållsfragment används. Läs mer i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references).
+
+## Felsökning {#troubleshooting}
+
+Om du får problem när du arbetar med Adobe Experience Manager Content Fragments i Journey Optimizer, se följande vanliga problem och lösningar:
+
+| Problem | Orsak | Upplösning |
+|-|-|-|
+| **Taggen hittades inte** eller **Innehållsfragmentet visas inte i väljaren** | Adobe Experience Manager-taggsyntaxen matchar inte det obligatoriska formatet `ajo-enabled:{OrgId}/{SandboxName}` | Verifiera att tagg-ID:t använder rätt **organisations-ID** och **sandlådenamn**. Kontrollera att det inte finns några blanksteg eller felaktiga avgränsare. Publicera om innehållsfragmentet när du har korrigerat taggen. |
+| **Innehållsfragment visas inte i listan** | Innehållsfragment är i utkastläge eller inte godkänt | Endast godkända och publicerade innehållsfragment visas i Journey Optimizer-väljaren. Publicera innehållsfragmentet i Adobe Experience Manager och kontrollera att det har statusen Godkänd. |
+| **Variabelfel odefinierat** | Personalization-platshållaren har inte deklarerats i hjälptaggen för fragment | Lägg till alla nödvändiga parametrar i fragmentets hjälptagg. Varje platshållare som används i Content Fragment måste deklareras explicit med dess mappning. |
+| **Korrektur visar oväntat innehåll** | Korrektur använder den senaste publicerade versionen från Adobe Experience Manager | Korrektur återspeglar alltid den senaste publikationen av Content Fragment i Adobe Experience Manager. Om du nyligen har gjort ändringar i Adobe Experience Manager publicerar du om fragmentet och uppdaterar korrekturet. |
+| **Åtkomst nekad (CPES) fel** | Användarrollen har inte behörighet att komma åt vissa attribut | Kontakta systemadministratören för att verifiera att din roll har rätt behörighet för den profil eller de kontextuella attribut som används vid personalisering. |
+| **Fragment visar tomt eller saknat innehåll** | Obligatoriska personaliseringsparametrar eller reservvärden saknas | Se till att alla obligatoriska parametrar anges och överväg att lägga till reservvärden för valfria attribut. |
+
+Om problemet kvarstår kontaktar du Adobe-representanten med information om ditt ID för innehållsfragment, kampanj- eller resa samt eventuella felmeddelanden.
