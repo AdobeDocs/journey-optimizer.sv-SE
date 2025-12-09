@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
 version: Journey Orchestration
-source-git-commit: 9894abfbc07268fea7c5081beaa93179cd63f689
+source-git-commit: 86145ff79de58391cc31c9b1a4bd34135868920e
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_custom_attributes"
->title="Definiera anpassade attribut"
+>title="Åtkomst till och redigering av katalogschemat"
 >abstract="Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De skapas i beslutsobjektens katalogschema."
 
 I beslut fungerar kataloger som centrala behållare för att organisera beslutsobjekt. Varje katalog är länkad till ett [!DNL Adobe Experience Platform]-schema, med alla attribut som kan tilldelas ett beslutsobjekt.
@@ -62,7 +62,7 @@ Följ de här stegen för att komma åt katalogschemat där beslutsobjektens att
 
 1. Fyll i de fält som krävs för det tillagda attributet och klicka på **[!UICONTROL Apply]**.
 
-   Värdet som anges för ett attribut med ett decimalresursattribut är en offentlig URL. Oftast pekar detta på en bild. Detaljerad information om hur du arbetar med [!DNL Adobe Experience Platform]-scheman finns i [&#x200B; XDM-systemdokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=sv-SE).
+   Värdet som anges för ett attribut med ett decimalresursattribut är en offentlig URL. Oftast pekar detta på en bild. Detaljerad information om hur du arbetar med [!DNL Adobe Experience Platform]-scheman finns i [ XDM-systemdokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
 1. Spara schemat när du har lagt till de anpassade attributen. Det nya fältet är nu tillgängligt på skärmen för att skapa beslutsobjekt i avsnittet **[!UICONTROL Custom attributes]**.
 
