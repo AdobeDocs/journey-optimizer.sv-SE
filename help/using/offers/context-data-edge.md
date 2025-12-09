@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: f30113bf07c42f75bb986a81af49367ac682f4af
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Det här exemplet innehåller flera viktiga steg:
 
 >[!BEGINSHADEBOX]
 
-Om du vill gå vidare kan du även använda kontextdata i **rankningsformler** eller för att **anpassa dina offertrepresentationer** dynamiskt. Du kan till exempel skapa ett enda erbjudande och använda personaliseringsfält för att anpassa dess representation baserat på kontextdata. Visa till exempel en viss bild om användaren har en iPhone och en annan för iPad-användare. Mer information finns i följande avsnitt:
+Om du vill gå vidare kan du även använda kontextdata i **rankningsformler** eller för att **anpassa dina offertrepresentationer** dynamiskt. Du kan till exempel skapa ett enda erbjudande och använda personaliseringsfält för att anpassa dess representation baserat på kontextdata. Du kan till exempel visa en viss bild om användaren har en iPhone och en annan för iPad-användare. Mer information finns i följande avsnitt:
 
 * [Rankningsformler - Öka erbjudanden baserat på kontextdata](../offers/ranking/create-ranking-formulas.md#context-data)
 * [Anpassa representationer baserat på kontextdata](../offers/offer-library/add-representations.md#context-data)
@@ -40,9 +40,9 @@ Om du vill gå vidare kan du även använda kontextdata i **rankningsformler** e
 
 ## Krav för att skicka kontextdata i Edge Decisioning-begäranden {#prerequisites}
 
-I motsats till att skicka kontext i ett ganska fritt format med hjälp av API:t för beslutskontext måste Edge Decisioning-kontextens nyttolast vara XDM Experience Event-kompatibel. För att göra detta måste sammanhanget definieras som en del av XDM Experience Event som används för datainsamling.
+Till skillnad från när kontext skickas i ett kostnadsfritt format med hjälp av API:t för beslut kräver Edge Decisioning-kontexten XDM-kompatibilitet. Kontextnyttolasten måste vara XDM Experience Event-kompatibel. För att göra detta måste sammanhanget definieras som en del av XDM Experience Event som används för datainsamling.
 
-1. Definiera ett händelseschema för upplevelser. I det här fallet skapas ett&quot;Erbjudandekontext&quot;-schema och erbjudandekontextfälten ingår i en&quot;Erbjudandekontext&quot;-fältgrupp. I själva verket skulle fältgruppen läggas till i det händelseschema som används för datainsamling som är kopplat till datastream&quot;Edge Collection Network&quot;.
+1. Definiera ett händelseschema för upplevelser. I det här fallet skapas ett&quot;Erbjudandekontext&quot;-schema och erbjudandekontextfälten ingår i en&quot;Erbjudandekontext&quot;-fältgrupp. I själva verket läggs fältgruppen till i det händelseschema för upplevelsehändelser som används för datainsamling som är associerad med datastream&quot;Edge Collection Network&quot;.
 
    >[!NOTE]
    >
@@ -50,31 +50,31 @@ I motsats till att skicka kontext i ett ganska fritt format med hjälp av API:t 
 
    I det här exemplet har fältgruppen&quot;Erbjudandekontext&quot; två egenskaper: language och deviceType. Dessa egenskaper kommer att användas i reglerna för rankning och behörighet.
 
-   ![](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
+   ![XDM-schema som visar fältgruppen Erbjudandekontext med egenskaperna language och deviceType ](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
 
-   Lär dig hur du arbetar med scheman i guiden [Experience Data Model (XDM)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home){target="_blank"} (Adobe Experience Platform Experience Data Model)
+   Lär dig hur du arbetar med scheman i guiden [!DNL Adobe Experience Platform] [Experience Data Model (XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home){target="_blank"}
 
 1. Skapa en datauppsättning (här&quot;Erbjudandekontext&quot;) och se till att den är aktiverad för profilen.
 
-1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar datastream i Adobe Experience Platform [Datastreams-guiden](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/configure){target="_blank"}
+1. Skapa en ny datastream från menyn **[!UICONTROL Data Collection]** > **[!UICONTROL Datastreams]**. Lär dig hur du skapar och konfigurerar dataström i [!DNL Adobe Experience Platform] [Datastreams-guiden](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure){target="_blank"}
 
    Här har vi skapat en datastam för&quot;Erbjudandekontext&quot; med händelseschemat&quot;Erbjudandeinnehåll&quot; markerat.
 
-   ![](assets/context-edge-datastream.png)
+   ![Erbjud Context DataStream-konfiguration med valt händelseschema](assets/context-edge-datastream.png)
 
 1. Redigera den nya datastreamen och välj&quot;Adobe Experience Platform&quot; som tjänst och&quot;Erbjud kontext&quot; som händelsedatamängd.
 
-   ![](assets/context-edge-datastream-new.png)
+   ![Dataströmtjänstkonfiguration med Adobe Experience Platform och kontextdatauppsättning](assets/context-edge-datastream-new.png)
 
 1. Spara datastream och kopiera dess ID. Detta ID används i API-begärans slutpunkt. [Lär dig hur du skapar API-anropet](#request)
 
-   ![](assets/context-edge-datastream-copy.png)
+   ![Datastream-ID kopieras från konfigurationsgränssnittet](assets/context-edge-datastream-copy.png)
 
 ## Använd kontextdata i berättiganderegler {#rules}
 
 Skapa regler för behörighet som avgör vilka erbjudanden som ska visas baserat på användarens enhetstyp:
 
-![](assets/context-edge-device.png)
+![Behörighetsregler för enhetstyp för iPhone och iPad erbjuder](assets/context-edge-device.png)
 
 * Regel för iPhone-enhet:
 
@@ -100,14 +100,14 @@ Skapa regler för behörighet som avgör vilka erbjudanden som ska visas baserat
 
 Skapa ett erbjudande för varje enhetstyp och länka det till motsvarande berättiganderegel som skapats tidigare:
 
-* Erbjudande för iphone-användare:
+* Erbjudande för iPhone-användare:
 
-   * Erbjudandenamn :&quot;Edge Context - iPhone Offer Content&quot;
+   * Erbjudandenamn:&quot;Edge Context - iPhone Offer Content&quot;
    * Associerad regel:&quot;Edge Context Rule - iphone&quot;
 
 * Erbjudande för iPad-användare:
 
-   * Erbjudandets namn: Edge Context - iPad Offer Content:
+   * Erbjudandenamn:&quot;Edge Context - iPad Offer Content&quot;
    * Associerad regel:&quot;Edge Context Rule - ipad&quot;
 
 Skapa dessutom ett reserverbjudande (här&quot;Context Fallback Content&quot;) som visas om inga specifika enhetskriterier uppfylls.
@@ -116,13 +116,13 @@ Skapa dessutom ett reserverbjudande (här&quot;Context Fallback Content&quot;) s
 
 Lägg till erbjudanden som skapats tidigare i en statisk samling som heter här&quot;Edge Device Context&quot;. I den här samlingen väljs valbara erbjudanden ut till kunderna.
 
-![](assets/context-edge-collection.png)
+![Edge Device Context-samling som innehåller enhetsspecifika erbjudanden](assets/context-edge-collection.png)
 
 ## Skapa offertbeslut {#decision}
 
 Skapa ett nytt beslut som utnyttjar beslutsmotorn för erbjudanden för att välja det bästa erbjudandet som ska visas för användarna baserat på deras enhetstyp med erbjudandet&quot;Context Fallback&quot; valt som reserverbjudande.
 
-![](assets/context-edge-decision.png)
+![Erbjud beslutskonfiguration med Context Fallback som reserverbjudande](assets/context-edge-decision.png)
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ Här är ett exempel på en begäran som skickar kontextdata.
 
   +++Var beslutets omfattning ska hämtas
 
-  ![](assets/context-edge-copy-scope.png)
+  ![Plats för att kopiera beslutsomfånget från beslutsgränssnittet för erbjudandet](assets/context-edge-copy-scope.png)
 
   +++
 

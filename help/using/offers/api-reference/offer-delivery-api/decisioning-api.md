@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: f30113bf07c42f75bb986a81af49367ac682f4af
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,12 @@ Med Beslutshantering kan ni skapa och leverera personaliserade erbjudandeuppleve
 Du kan skapa och leverera erbjudanden genom att göra en POST-begäran till API:t [!DNL Decisioning].
 
 Den här självstudiekursen kräver en fungerande förståelse av API:er, särskilt när det gäller beslutshantering. Mer information finns i [Utvecklarhandboken för API:t för beslutshantering](../getting-started.md). Den här självstudien kräver också att du har ett unikt värde för placering-ID och beslut-ID tillgängligt. Om du inte har inhämtat dessa värden kan du gå till självstudiekurserna för att [skapa en placering](../offers-api/placements/create.md) och [skapa ett beslut](../activities-api/activities/create.md).
+
+>[!NOTE]
+>
+>**Skickar kontextdata i beslutsbegäranden**
+>
+>Du kan skicka kontextdata (t.ex. enhetstyp, plats eller användarinställningar) i din beslutsbegäran för att skapa dynamiska regler för behörighet och leverera personaliserade erbjudanden baserat på realtidsvillkor. [Läs mer om kontextdata och beslutsbegäranden](../../context-data-decisioning.md)
 
 ## Obligatoriska rubriker {#required-headers}
 
