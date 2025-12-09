@@ -9,14 +9,18 @@ level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: b0b297ed33ab273a3201569760e1d2db5b3ccaad
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Avsluta en resa {#journey-ending}
+
+>[!TIP]
+>
+>Letar du efter praktisk vägledning om när och hur profiler bör avsluta resor? Se vår [omfattande guide till resans in- och utträdeskriterier](entry-exit-criteria-guide.md), som innehåller verkliga utträdesscenarier, bästa praxis och konfigurationsvägledning.
 
 ## Så här slutar en live-resa
 
@@ -105,3 +109,10 @@ När den stoppas anges resestatusen till **[!UICONTROL Stopped]**.
 >[!CAUTION]
 >
 >Behörigheter att stoppa en resa som är begränsad till användare med hög behörighet på **[!DNL Manage journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+
+## Relaterade ämnen
+
+* [Guide för in- och utträdeskriterier för resor](entry-exit-criteria-guide.md) - Fullständig guide med verkliga exempel och bästa praxis
+* [Profilingångshantering](entry-management.md) - Konfigurera hur profiler anger resor
+* [Konfigurera avslutsvillkor](journey-properties.md#exit-criteria) - Konfigurera automatisk profilborttagning från resor
+* [Pausa en resa](journey-pause.md) - Stoppa körning tillfälligt

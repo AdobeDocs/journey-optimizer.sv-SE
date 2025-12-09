@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: b0b297ed33ab273a3201569760e1d2db5b3ccaad
 workflow-type: tm+mt
-source-wordcount: '2751'
+source-wordcount: '2829'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Hanteringen av profilentréer beror på typen av resa. Läs mer om hantering av 
 >id="ajo_journey_properties_entrance"
 >title="Tillåt återinträde"
 >abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** till exempel om du vill erbjuda en engångspresentation när en person går in i en affär."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går till en affär.
 
@@ -73,7 +73,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Vänteperiod för återinträde"
 >abstract="Ställ in väntetiden innan du tillåter att en profil går in på resan igen med enhetsresor. Detta förhindrar att användarna kommer in på resan igen under en viss tid. Maximal varaktighet: 90 dagar."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återkommande vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
@@ -254,7 +254,7 @@ Adobe Journey Optimizer använder sammanfogningsprinciper när profildata hämta
 
 Adobe Journey Optimizer tillämpar den kopplingsregel som används under hela kundresan. Om flera målgrupper används i en resa (till exempel med in [`inAudience`-funktioner](functions/functioninaudience.md)) skapas därför inkonsekvenser med den sammanfogningsprincip som används för resan. Ett fel genereras och publikationen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
-Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 >[!NOTE]
 >
@@ -272,6 +272,10 @@ Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-do
 Genom att lägga till kriterier för att avsluta resan gör du så att profilerna avslutas så snart en händelse inträffar (t.ex. köp) eller så kvalificerar de sig för en viss målgrupp. Detta förhindrar användaren från att få ut mer information från resan.
 
 Du kanske vill ta bort profiler från en resa när de inte längre uppfyller resans syfte. Detta kan uppnås med **globala avslutningskriterier**, som är nära kopplade till målhantering.
+
+>[!TIP]
+>
+>Söker du praktisk vägledning med exempel från verkligheten? Se vår [omfattande guide till kriterier för resa in- och utträde](entry-exit-criteria-guide.md), som omfattar fullständiga användningsfall med både in- och utresekonfigurationer, bästa praxis och optimeringsstrategier.
 
 **Exempel på användning**
 
@@ -331,6 +335,13 @@ Följande skyddsutkast gäller när du använder funktionen [Profilattributsbase
 
    * I ett **utkast** visas alternativet *Profilattribut* inaktiverat (skrivskyddat), medan alternativen *Händelse* och *målgrupp* fortfarande är aktiva.
    * I en **pausad resa** går det att redigera alternativet *Profilattribut* och alternativen *Händelse* och *målgrupp* blir skrivskyddade.
+
+### Relaterade ämnen {#exit-criteria-related}
+
+* [Guide för in- och utträdeskriterier för resor](entry-exit-criteria-guide.md) - Fullständig guide med verkliga exempel och bästa praxis
+* [Profilingångshantering](entry-management.md) - Konfigurera hur profiler anger resor
+* [Hur resorna slutar](end-journey.md) - Förstå naturligt slutförande av resan
+* [Pausa en resa med villkor för utträde av profilattribut](journey-pause.md#journey-exit-criteria) - Använd villkor för utträde när du pausar resor
 
 ## Reseschema {#schedule}
 
