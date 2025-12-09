@@ -7,14 +7,19 @@ role: User
 level: Intermediate
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: 20408838a030ceeb8e61f5e1b80d910a8a21b87d
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
-# Artikelkatalog {#catalog}
+# Konfigurera artikelkatalogen {#catalog}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_custom_attributes"
+>title="Definiera anpassade attribut"
+>abstract="Anpassade attribut är specifika attribut som är anpassade efter dina behov och som du kan tilldela till ett beslutsobjekt. De skapas i beslutsobjektens katalogschema."
 
 I beslut fungerar kataloger som centrala behållare för att organisera beslutsobjekt. Varje katalog är länkad till ett Adobe Experience Platform-schema som innehåller alla attribut som kan tilldelas ett beslutsobjekt.
 
@@ -48,11 +53,11 @@ Följ de här stegen för att komma åt katalogschemat där beslutsobjektens att
 1. Katalogens schema öppnas på en ny flik, enligt strukturen nedan:
 
    * Noden **`_experience`** innehåller standardattribut för beslutsobjekt som namn, start- och slutdatum samt beskrivning.
-   * Noden **`_<imsOrg>`** innehåller attribut för anpassade beslutsobjekt. Som standard har inga anpassade attribut konfigurerats, men du kan lägga till så många som behövs för att passa dina behov. När du är klar visas anpassade attribut tillsammans med standardattributen på skärmen för att skapa beslutsobjekt.
+   * Noden **`_<imsOrg>`** innehåller attribut för anpassade beslutsobjekt, där `<imsOrg>` ersätts av organisationens namn (till exempel `_luma` för Luma-företaget). Som standard har inga anpassade attribut konfigurerats, men du kan lägga till så många som behövs för att passa dina behov. När du är klar visas anpassade attribut tillsammans med standardattributen på skärmen för att skapa beslutsobjekt.
 
    ![](assets/catalogs-schema.png)
 
-1. Om du vill lägga till ett anpassat attribut i schemat expanderar du noden **`_<imsOrg>`** och klickar på plusknappen (+) på önskad plats i strukturen.
+1. Om du vill lägga till ett anpassat attribut i schemat expanderar du organisationens nod (till exempel **`_luma`**) och klickar på plusknappen (+) på önskad plats i strukturen.
 
    ![](assets/catalogs-add.png)
 
@@ -60,7 +65,7 @@ Följ de här stegen för att komma åt katalogschemat där beslutsobjektens att
 
    Värdet som anges för ett attribut med ett decimalresursattribut är en publik url. För det mesta pekar detta på en bild.
 
-   Detaljerad information om hur du arbetar med Adobe Experience Platform-scheman finns i [XDM-systemdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=sv-SE).
+   Detaljerad information om hur du arbetar med Adobe Experience Platform-scheman finns i [XDM-systemdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
 1. Spara schemat när du har lagt till de anpassade attributen. Det nya fältet är nu tillgängligt på skärmen för att skapa beslutsobjekt i avsnittet **[!UICONTROL Custom attributes]**.
 
