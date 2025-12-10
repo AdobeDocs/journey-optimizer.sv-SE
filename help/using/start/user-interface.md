@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 87f714e380957b40df196652ac37d1e6cd611925
+source-git-commit: b48a8fa89605ac18c6db85751bf71d2ccec08f63
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1119'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Om du vill få tillgång till Adobe Journey Optimizer loggar du in på [Adobe Ex
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* Dokumentationen uppdateras ofta. Vissa skärmbilder kan skilja sig något från gränssnittet.
 
 ## Snabbdemo {#quick-tour}
@@ -57,6 +57,7 @@ I den vänstra navigeringen ordnas Journey Optimizer-funktioner i funktionskateg
 * **Innehållsmallar** - Återanvändbara meddelandemallar för kampanjer och resor. [Skapa mallar](../content-management/content-templates.md)
 * **Fragment** - Innehållsblock som kan användas i flera meddelanden. [Arbeta med fragment](../content-management/fragments.md)
 * **Landningssidor** - Webbformulär för prenumerationer och inställningar. [Utforma landningssidor](../landing-pages/get-started-lp.md)
+* **Använd fallspelsböcker** - Fördefinierade arbetsflöden för vanliga marknadsföringsscenarier. [Utforska spelböcker](ai-features.md#playbooks)
 
 **Datahantering** - Hantera din datamängd. [Läs om scheman och datauppsättningar](../data/get-started-schemas.md)
 * **Scheman** - Definiera datastruktur
@@ -85,8 +86,8 @@ I den vänstra navigeringen ordnas Journey Optimizer-funktioner i funktionskateg
 * **Affärsregler** - Kontrollera meddelandefrekvens och reseinmatning. [Konfigurera affärsregler](../conflict-prioritization/rule-sets.md)
 * **Varningar** - Visa och hantera systemvarningar. [Övervaka aviseringar](../reports/alerts.md)
 * **Sandlådor** - Hantera miljöer och kopiera objekt mellan sandlådor. [Arbeta med sandlådor](../administration/sandboxes.md)
-* **Kanaler** - Konfigurera kanalinställningar och leveransbarhet
-* **Taggar** - Ordna och kategorisera innehåll
+* **Kanaler** - Konfigurera kanalinställningar och leveransbarhet. [Konfigurera kanalkonfigurationer](../configuration/channel-surfaces.md) | [Kom igång med konfiguration](../configuration/get-started-configuration.md)
+* **Taggar** - Ordna och kategorisera innehåll. [Arbeta med enhetliga taggar](search-filter-categorize.md#tags)
 
 ## Funktioner på översta raden {#top-bar}
 

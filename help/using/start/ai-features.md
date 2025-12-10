@@ -7,16 +7,16 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 4847276532155a698cf997e22a0894c737208595
+source-git-commit: b48a8fa89605ac18c6db85751bf71d2ccec08f63
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1469'
 ht-degree: 1%
 
 ---
 
 # AI och intelligenta funktioner {#ai-features}
 
-Adobe Journey Optimizer utnyttjar kraften i artificiell intelligens och maskininlärning för att hjälpa er att skapa, optimera och leverera enastående kundupplevelser. Med AI-funktionerna kan du effektivisera arbetsflödet och maximera påverkan, från att skapa personaliserat innehåll till att förutsäga optimala sändningstider.
+Adobe Journey Optimizer utnyttjar kraften i artificiell intelligens och maskininlärning för att hjälpa er att skapa, optimera och leverera enastående kundupplevelser. Med AI-funktionerna kan du effektivisera arbetsflödet och maximera påverkan, från att skapa personaliserat innehåll till att förutsäga optimala sändningstider. Använd fallspelsböcker som innehåller färdiga mallar för att snabbt implementera vanliga marknadsföringsscenarier.
 
 ## AI-assistenten {#ai-assistant}
 
@@ -30,7 +30,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 >[!IMPORTANT]
 >
->Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
+>Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
 
 ### Vad AI-assistenten kan göra
 
@@ -60,7 +60,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 ![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
 
-[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"}
+[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
 
 ## Avancerade AI-agenter för reseoptimering {#ai-agents}
 
@@ -68,7 +68,7 @@ Adobe Journey Optimizer bygger på AI Assistants konversationsfunktioner och erb
 
 ### Reseanalysagent {#journey-agent}
 
-Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} kan du optimera resan genom naturlig språkanalys:
+Med agenten [Reseanalys](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} kan du optimera resan genom naturlig språkanalys:
 
 +++**Nyckelfunktioner**
 
@@ -99,7 +99,7 @@ Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-c
 
 ### Experimentationsagent {#experimentation-agent}
 
-[Experimentationsagenten](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
+[Experimentationsagenten](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
 
 +++**Nyckelfunktioner**
 
@@ -135,10 +135,6 @@ Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-c
 **Audience Agent** - För prospektering och hantering av konversationer i hela Adobe Experience Platform, inklusive identifiering av dubbletter och storleksspårning. [Läs mer om Audience Agent](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/audience){target="_blank"}
 
 **Agent Orchestrator** - koordinerar flera specialiserade agenter för att lösa komplexa, flerstegsutmaningar inom marknadsföring. Orchestrator bestämmer automatiskt vilka agenter som ska involveras och sekventierar deras arbete effektivt. [Läs mer om Agent Orchestrator](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
-
-**Hämtar åtkomst:**
-
-AI-agenter är tillgängliga för kunder med tillgång till AI Assistant. Kontakta Adobe om du vill ha information om licenser och aktivering.
 
 ## AI-driven generering av innehåll {#content-generation}
 
@@ -245,7 +241,7 @@ Bläddra bland Journey Optimizer spelböcker efter vanliga scenarier som:
 
 +++
 
-[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html?lang=sv-SE){target="_blank"} | [Läs mer i Experience Platform-dokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=sv-SE){target="_blank"}
+[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Läs mer i Experience Platform-dokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
 
 ## Ytterligare AI-funktioner {#additional-capabilities}
 
