@@ -6,11 +6,9 @@ topic: Integrations
 role: User
 level: Intermediate
 version: Journey Orchestration
-hide: true
-hidefromtoc: true
-source-git-commit: 54ed4dec71703a0444920baf4fb0a2d8318034cd
+source-git-commit: 74f8db8f71cbf51260868a93702a563b3c0d4a2d
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -65,8 +63,8 @@ När flera erbjudanden tas bort samtidigt och de återstående erbjudandena har 
 
 AI-modeller identifierar och börjar testa nya erbjudanden i nästa utbildningscykel:
 
-* **Automatisk optimering**: Daglig
-* **Anpassad optimering**: Varje vecka
+* **Automatisk optimering** identifierar och börjar testa nya erbjudanden under nästa utbildningscykel. Automatisk optimeringskurs sker 3 till 4 gånger dagligen, ungefär var 6: e timme.
+* **Anpassad optimering** identifierar och börjar testa nya erbjudanden allt eftersom de läggs till i erbjudandestrategin. De kommer att inkluderas i slumpmässig provtrafik. Sedan personaliseras dessa erbjudanden i modellens nästa utbildningscykel, som sker varje vecka.
 
 När båda modellerna har identifierats börjar de leverera nya erbjudanden till vissa besökare omedelbart för att testa deras prestanda och samla in uppgifter om deras effektivitet.
 
