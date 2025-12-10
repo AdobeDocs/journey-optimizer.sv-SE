@@ -10,9 +10,9 @@ level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 24d66f146ea3ed0e89a3b928b805bc53a70a8895
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Det finns två möjligheter:
 
 1. **Börja med en händelse**: När en resa är inställd på att lyssna på händelser, kommer individer in på resan **unitally** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om händelser](../event/about-events.md)
 
-1. **Börja med en läs målgrupp**: du kan ange att din resa ska lyssna på Adobe Experience Platform målgrupper. I det här fallet kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läsmålgruppen](read-audience.md).
+1. **Börja med en läs målgrupp**: du kan ange att din resa ska lyssna på Adobe Experience Platform målgrupper. I det här fallet kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läsmålgruppen](read-audience.md). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
 
 ## Definiera nästa steg{#define-next-steps}
 

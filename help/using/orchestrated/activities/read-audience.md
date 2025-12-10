@@ -5,9 +5,9 @@ title: Använda aktiviteten Läsa målgrupper
 description: Lär dig hur du använder Läs-målgruppsaktiviteten i en orkestrerad kampanj
 exl-id: ef8eba57-cd33-4746-8eb4-5214ef9cbe2f
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: 24d66f146ea3ed0e89a3b928b805bc53a70a8895
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Read audience]**:
 
 1. Ange en **[!UICONTROL Label]** till din aktivitet. Den här etiketten kommer att fungera som målgruppens namn.
 
-1. Klicka på ![mappsökningsikonen](../assets/do-not-localize/folder-search.svg) för att välja den målgrupp du vill ha för din Orchestrated-kampanj.
+1. Klicka på ![mappsökningsikonen](../assets/do-not-localize/folder-search.svg) för att välja den målgrupp du vill ha för din Orchestrated-kampanj. [Läs mer om hur du genererar och målgruppsanpassar i Journey Optimizer](../audience/about-audiences.md).
 
    ![](../assets/read-audience-2.png)
 
