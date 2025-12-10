@@ -174,7 +174,7 @@ Börja skapa direkt med dessa oumbärliga guider:
 | Ställ in kanaler | [Kanalkonfigurationsguide](../using/configuration/get-started-configuration.md) |
 | Skapa personaliserade erbjudanden | [Handbok för beslutshantering](../using/offers/get-started/starting-offer-decisioning.md) |
 
----
+&#x200B;---
 
 ## Vill du komma igång?
 
