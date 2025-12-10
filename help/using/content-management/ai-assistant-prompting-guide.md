@@ -121,19 +121,19 @@ Dessa begäranden stöds inte och bör hanteras med andra verktyg:
 
 Innan du genererar innehåll bör du kontrollera följande:
 
-&amp;check; **Clear Objective**: Anger tydligt åtgärd, produkt/tjänst, värde och sammanhang.
+&check; **Clear Objective**: Anger tydligt åtgärd, produkt/tjänst, värde och sammanhang.
 
-&amp;check; **Definierad målpublik**: Anger demografi, roll eller segment.
+&check; **Definierad målpublik**: Anger demografi, roll eller segment.
 
-&amp;check; **Justering av innehållstyp**: Målet matchar den valda kanalen eller det valda formatet.
+&check; **Justering av innehållstyp**: Målet matchar den valda kanalen eller det valda formatet.
 
-&amp;check; **Listrutor konfigurerade**: Ton, strategi och språkområde har valts, ta inte med dem i uppmaningen.
+&check; **Listrutor konfigurerade**: Ton, strategi och språkområde har valts, ta inte med dem i uppmaningen.
 
-&amp;check; **Dokumentfokus angiven**: Markerar vilket innehåll eller vilka avsnitt som ska refereras.
+&check; **Dokumentfokus angiven**: Markerar vilket innehåll eller vilka avsnitt som ska refereras.
 
-&amp;check; **Varumärke används**: Lämpliga varumärkesriktlinjer har valts.
+&check; **Varumärke används**: Lämpliga varumärkesriktlinjer har valts.
 
-&amp;check; **Realistiskt omfång**: Undvik begäranden om layoutändringar, formatering eller strukturändringar.
+&check; **Realistiskt omfång**: Undvik begäranden om layoutändringar, formatering eller strukturändringar.
 
 ## Skriv effektiva marknadsföringsmål {#marketing-objectives}
 
@@ -143,11 +143,11 @@ När ni utformar marknadsföringsmålen ska ni se till att de är tydliga, anvä
 
 **Exempel på bra mål:**
 
-&amp;check;&quot;Drive sign-ups for our free 30 day trial of the new AI-powered analytics dashboard&quot;
+&check;&quot;Drive sign-ups for our free 30 day trial of the new AI-powered analytics dashboard&quot;
 
-&amp;check;&quot;Generera leads för vårt B2B-webbinarium om &#39;Minska molnkostnaderna med 40 %&#39; som inträffar den 15 mars&quot;
+&check;&quot;Generera leads för vårt B2B-webbinarium om &#39;Minska molnkostnaderna med 40 %&#39; som inträffar den 15 mars&quot;
 
-&amp;check; &quot;Promote our limited-time 25% semester discount on premium subscriptions, ending December 25th&quot;
+&check; &quot;Promote our limited-time 25% semester discount on premium subscriptions, ending December 25th&quot;
 
 **Exempel som ska undvikas:**
 
@@ -164,11 +164,11 @@ Använd den här formeln för att hjälpa dig att skriva effektiva mål: **Åtg�
 
 **Exempel på bra mål:**
 
-&amp;check;&quot;Uppmuntra nedladdningar av vår nya mobilapp som hjälper användarna att spåra hållbara levnadsvanor med personaliserade, miljövänliga rekommendationer&quot;
+&check;&quot;Uppmuntra nedladdningar av vår nya mobilapp som hjälper användarna att spåra hållbara levnadsvanor med personaliserade, miljövänliga rekommendationer&quot;
 
-&amp;check;&quot;Promote registration for our exclusive workshop on advanced data visualization techniques for marketing professionals&quot;
+&check;&quot;Promote registration for our exclusive workshop on advanced data visualization techniques for marketing professionals&quot;
 
-&amp;check;&quot;Driv närvaro vid vår produktlanseringsevent med den revolutionerande AI-skrivassistenten som sparar mer än fem timmar per vecka&quot;
+&check;&quot;Driv närvaro vid vår produktlanseringsevent med den revolutionerande AI-skrivassistenten som sparar mer än fem timmar per vecka&quot;
 
 **Exempel som ska undvikas:**
 
