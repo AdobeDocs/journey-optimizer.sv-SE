@@ -104,7 +104,7 @@ Guardrutor för aktiviteten **Läs målgrupp** visas på [den här sidan](../sta
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
+>[Garantier för kundprofildata och segmentering i realtid &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
 
 ### Hantera profilinträde under resan
 
