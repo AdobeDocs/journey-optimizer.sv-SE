@@ -3,9 +3,10 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Starta och övervaka samordnade kampanjer med Adobe Journey Optimizer
 description: Lär dig hur du startar och övervakar samordnade kampanjer med Adobe Journey Optimizer.
+feature: Monitoring
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%

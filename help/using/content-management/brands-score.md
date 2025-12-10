@@ -1,11 +1,11 @@
 ---
 title: Märkesjustering
 description: Lär dig hur du skapar, validerar och hanterar varumärkesinnehåll med hjälp av varumärkespoäng.
-topic: Content Management
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 exl-id: 01e74670-7431-4791-b98c-12278e6d3332
-source-git-commit: 03699215020770d0636c77e9d197990ab5da0975
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 2%
@@ -76,6 +76,6 @@ I videon nedan visas hur du skapar och anpassar dina egna varumärken för att t
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470550/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470544/?learn=on)
 
 +++

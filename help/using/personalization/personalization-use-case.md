@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Personalization use case&colon; order status notification
 description: Lär dig hur du personaliserar ett meddelande med profil, offertbeslut och kontextinformation.
-feature: Personalization
+feature: Personalization, Use Cases
 topic: Personalization
 role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, användningsfall, personalisering
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 0%
@@ -110,4 +110,4 @@ I det här fallet krävs följande krav:
 
 I videon nedan visas ett liknande användningsexempel som utnyttjar sammanhangsberoende data från en resa för att personalisera ett e-postmeddelande.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428534?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425027?quality=12)

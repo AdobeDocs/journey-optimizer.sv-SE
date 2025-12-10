@@ -4,10 +4,10 @@ product: journey optimizer
 title: Generera allt innehåll med AI Assistant
 description: Lär dig generera kompletta innehållsupplevelser med AI Assistant i Journey Optimizer.
 feature: Content Assistant
-topic: Content Management
+topic: Artificial Intelligence
 role: User
 level: Beginner
-source-git-commit: b70911f1f1fa00154729b5b88517233b67a377cb
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '1699'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Med AI Assistant öppen kan du nu konfigurera genereringsinställningarna för a
    * **[!UICONTROL Languages]**: Välj språk för det genererade innehållet.
    * **[!UICONTROL Tone]**: Tonen bör återges med din målgrupp. Vare sig du vill låta informativ, lekfull eller övertygande kan AI Assistant anpassa budskapet därefter.
 
-     ![Panelen Textinställningar som visar Kommunikationsstrategi, Språk och Tonalternativ &#x200B;](assets/full-email-4.png){zoomable="yes"}
+     ![Panelen Textinställningar som visar Kommunikationsstrategi, Språk och Tonalternativ ](assets/full-email-4.png){zoomable="yes"}
 
 1. Välj din **[!UICONTROL Image settings]**:
 
@@ -72,7 +72,7 @@ Med AI Assistant öppen kan du nu konfigurera genereringsinställningarna för a
    * **[!UICONTROL Lighting]**: Det här refererar till blixten i en bild, som formar atmosfären och markerar specifika element.
    * **[!UICONTROL Composition]**: Det här refererar till elementens placering i en bilds bildruta
 
-     ![Panelen Bildinställningar med alternativen Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition &#x200B;](assets/full-email-6.png){zoomable="yes"}
+     ![Panelen Bildinställningar med alternativen Innehållstyp, Visuell intensitet, Färg och Ton, Ljus och Disposition ](assets/full-email-6.png){zoomable="yes"}
 
 1. Klicka på **[!UICONTROL Reference content]** på menyn **[!UICONTROL Upload file]** om du vill lägga till en varumärkesresurs som innehåller innehåll som kan ge ytterligare kontext-AI Assistant eller välja en tidigare överförd.
 

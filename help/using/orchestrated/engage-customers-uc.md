@@ -3,8 +3,9 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Engagera kunderna genom att surfa
 description: Engagera kunderna genom att surfa
+feature: Use Cases
 version: Campaign Orchestration
-source-git-commit: 51c8c9282cb6eb9cdbd310d8f263d7973f28bbf0
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Observera att det här användningsexemplet börjar med en publik som redan finns i Experience Platform, närmare bestämt en webbpublik i realtid som samlar in webbläsaraktiviteter när de inträffar. [Läs mer i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started#audiences)
+Observera att det här användningsexemplet börjar med en publik som redan finns i Experience Platform, närmare bestämt en webbpublik i realtid som samlar in webbläsaraktiviteter när de inträffar. [Läs mer i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started#audiences)
 
 **Scheman som behövs för det här användningsfallet:**
 

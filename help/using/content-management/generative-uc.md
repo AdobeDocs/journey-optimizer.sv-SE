@@ -3,12 +3,12 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Användningsexempel för AI Assistant
 description: Lär dig använda AI Assistant med hjälp av användningsexempel
-feature: Content Assistant
-topic: Content Management
+feature: Content Assistant, Use Cases
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
-source-git-commit: bacfe2e04898e8417308e3f1c889214547e3ea02
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -41,7 +41,7 @@ När ni har definierat ert innehåll, er målgrupp och ert schema är ni redo at
 
 ## Förfina variation {#refine}
 
-![Animerad demonstration av hur du förfinar AI-genererade innehållsvariationer med alternativen för frys och sammanfattning &#x200B;](assets/do-not-localize/gen-ai-variation.gif)
+![Animerad demonstration av hur du förfinar AI-genererade innehållsvariationer med alternativen för frys och sammanfattning ](assets/do-not-localize/gen-ai-variation.gif)
 
 1. När kampanjen har konfigurerats och konfigurerats klickar du på **[!UICONTROL Edit content]**.
 

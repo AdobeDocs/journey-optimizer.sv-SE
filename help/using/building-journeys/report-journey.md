@@ -3,14 +3,14 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Publicera resan
 description: Lär dig rapportera om din resa
-feature: Journeys
+feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 186b061d-0941-48be-8917-bbdfff6dae90
 version: Journey Orchestration
-source-git-commit: 6961a07e2874f9beb76a9beaebb29997d114d8e7
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 1%

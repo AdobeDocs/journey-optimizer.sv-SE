@@ -1,12 +1,12 @@
 ---
 title: Övervaka era webbupplevelser
 description: Lär dig övervaka dina webbupplevelser i Journey Optimizer
-feature: Web Channel, Reporting
+feature: Web Channel, Reporting, Monitoring
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: d89795bb-c51d-4d1f-b7ed-2b2c5d278922
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Kontrollera webbrapporter {#check-web-reports}
 
-När webbupplevelsen är live kan du kontrollera fliken **[!UICONTROL Web]** i [reserapporten](../reports/journey-global-report-cja-web.md) och [&#x200B; kampanjrapporten](../reports/campaign-global-report-cja-web.md) för att jämföra element som antalet visningar, klickfrekvens och antal aktiviteter med webbsidan.
+När webbupplevelsen är live kan du kontrollera fliken **[!UICONTROL Web]** i [reserapporten](../reports/journey-global-report-cja-web.md) och [ kampanjrapporten](../reports/campaign-global-report-cja-web.md) för att jämföra element som antalet visningar, klickfrekvens och antal aktiviteter med webbsidan.
 
 <!--You can check the **[!UICONTROL Web]** tab of the campaign reports. Learn more about the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [global report](../reports/campaign-global-report-cja.md#web).-->
 

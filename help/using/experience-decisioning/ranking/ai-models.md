@@ -4,11 +4,12 @@ product: Journey Optimizer
 title: Kom igång med AI-modeller
 description: Lär dig mer om AI-modeller som gör det möjligt att rangordna erbjudanden
 feature: Ranking, Decision Management
+topic: Artificial Intelligence
 role: User
 level: Intermediate
 exl-id: 07679823-2288-4528-b09a-12fd76a69482
 version: Journey Orchestration
-source-git-commit: 3fa90fa707b562ecf2160ec980520bc8bc267a21
+source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 3%
@@ -33,7 +34,7 @@ Med den här funktionen kan du skapa olika **AI-modeller** utifrån dina affärs
 >id="ajo_exd_ai_model_type"
 >title="Välj modelltyp"
 >abstract="Välj den typ av AI-modell som du vill skapa: **Automatisk optimering** optimerar erbjudanden baserat på tidigare erbjudanden, medan **Anpassad optimering** optimerar och personaliserar erbjudanden baserat på målgrupper och erbjudandeprestanda."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/create-ranking-strategies#create-ranking-strategy" text="Skapa en AI-modell"
 
 Det finns två typer av AI-modeller i [!DNL Journey Optimizer]:
 
