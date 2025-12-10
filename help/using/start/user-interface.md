@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: c936f42c8b5d96bd5a7e0ccb36ecdb0d9b2e9957
+source-git-commit: 4ae9e908d259dbd266417242cf9e65d693227061
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 0%
+source-wordcount: '1096'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ Om du vill få tillgång till Adobe Journey Optimizer loggar du in på [Adobe Ex
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* Dokumentationen uppdateras ofta. Vissa skärmbilder kan skilja sig något från gränssnittet.
 
 ## Snabbdemo {#quick-tour}
@@ -44,51 +44,49 @@ I den vänstra navigeringen ordnas Journey Optimizer-funktioner i funktionskateg
 **Hem** - Din startpunkt med snabb åtkomst till nyligen skapade objekt och användbara resurser
 
 **Resehantering** - Skapa och hantera kundupplevelser
-* **Kampanjer** - Skapa engångs- eller schemalagda meddelanden till specifika målgrupper
-* **Resor** - Bygg flerstegskunderna kundupplevelser i flera kanaler
-* **Rapporter** - Analysera prestanda med integrerade Customer Journey Analytics-rapporter
+* **Kampanjer** - Skapa engångs- eller schemalagda meddelanden till specifika målgrupper. [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
+* **Resor** - Bygg flerstegskunderna kundupplevelser i flera kanaler. [Skapa din första resa](../building-journeys/journey-gs.md)
+* **Rapporter** - Analysera prestanda med integrerade Customer Journey Analytics-rapporter. [Visa rapportdokumentation](../reports/campaign-global-report.md)
 
-**Beslutshantering** - Hantera personaliserade erbjudanden
+**Beslutshantering** - Hantera personaliserade erbjudanden. [Läs om beslutshantering](../offers/get-started/starting-offer-decisioning.md)
 * **Erbjudanden** - Skapa och hantera personaliserade erbjudanden
 * **Komponenter** - Konfigurera ersättningar, regler och taggar för erbjudanden
 
 **Innehållshantering** - Skapa och ordna innehåll
-* **Assets** - Centraliserad databas för bilder och media
-* **Innehållsmallar** - Återanvändbara meddelandemallar för kampanjer och resor
-* **Fragment** - Innehållsblock som kan användas i flera meddelanden
-* **Landningssidor** - Webbformulär för prenumerationer och inställningar
+* **Assets** - Centraliserad databas för bilder och media. [Hantera resurser](../content-management/assets.md)
+* **Innehållsmallar** - Återanvändbara meddelandemallar för kampanjer och resor. [Skapa mallar](../content-management/content-templates.md)
+* **Fragment** - Innehållsblock som kan användas i flera meddelanden. [Arbeta med fragment](../content-management/fragments.md)
+* **Landningssidor** - Webbformulär för prenumerationer och inställningar. [Utforma landningssidor](../landing-pages/get-started-lp.md)
 
-**Datahantering** - Hantera din datagrund
+**Datahantering** - Hantera din datamängd. [Läs om scheman och datauppsättningar](../data/get-started-schemas.md)
 * **Scheman** - Definiera datastruktur
 * **Datauppsättningar** - Lagra och hantera datainsamlingar
 * **Frågor** - Skriv och kör frågor
 * **Övervakning** - Spåra datainmatning
 
 **Anslutningar** - Integrera med andra system
-* **Källor** - Infoga data från externa system
-* **Destinationer** - Exportera data till molnlagring
+* **Källor** - Infoga data från externa system. [Konfigurera källor](../data/get-started-sources.md)
+* **Destinationer** - Exportera data till molnlagring. [Konfigurera mål](../data/export-datasets.md)
 
 **Kund** - Hantera målgrupper och profiler
-* **Målgrupper** - Skapa och hantera kundsegment
-* **Prenumerationslistor** - Hantera anmälningslistor
-* **Profiler** - Visa enhetliga kundprofiler
-* **Identiteter** - Hantera identitetsupplösning
+* **Publiker** - Skapa och hantera kundsegment. [Arbeta med målgrupper](../audience/about-audiences.md)
+* **Prenumerationslistor** - Hantera anmälningslistor. [Hantera prenumerationer](../landing-pages/subscription-list.md)
+* **Profiler** - Visa enhetliga kundprofiler. [Utforska profiler](../audience/get-started-profiles.md)
+* **Identiteter** - Hantera identitetsupplösning. [Lär dig mer om identiteter](../audience/get-started-identity.md)
 
-**Sekretess** - Kontrollera sekretess och efterlevnad
+**Sekretess** - Kontrollera sekretess och efterlevnad. [Sekretessöversikt](../privacy/get-started-privacy.md)
 * **Principer** - Definiera datastyrningsprinciper
 * **Begäranden** - Hantera sekretessförfrågningar (GDPR, CCPA)
-* **Granskning** - Granska aktivitetsloggar
+* **Granskning** - Granska aktivitetsloggar. [Visa granskningsloggar](../privacy/audit-logs.md)
 * **Datalifecycle** - Konfigurera datalagring
 
-**Administration** - Konfigurera systeminställningar
-* **Konfigurationer** - Konfigurera händelser, datakällor och åtgärder
-* **Affärsregler** - Kontrollera meddelandefrekvens och resepost
-* **Varningar** - Visa och hantera systemvarningar
-* **Sandlådor** - Hantera miljöer och kopiera objekt mellan sandlådor
+**Administration** - Konfigurera systeminställningar. [Översikt över åtkomstkontroll](../administration/permissions-overview.md)
+* **Konfigurationer** - Konfigurera händelser, datakällor och åtgärder. [Konfigurera kanaler](../configuration/get-started-configuration.md)
+* **Affärsregler** - Kontrollera meddelandefrekvens och reseinmatning. [Konfigurera affärsregler](../configuration/frequency-rules.md)
+* **Varningar** - Visa och hantera systemvarningar. [Övervaka aviseringar](../reports/alerts.md)
+* **Sandlådor** - Hantera miljöer och kopiera objekt mellan sandlådor. [Arbeta med sandlådor](../administration/sandboxes.md)
 * **Kanaler** - Konfigurera kanalinställningar och leveransbarhet
 * **Taggar** - Ordna och kategorisera innehåll
-
-[Läs mer om de olika funktionerna i den detaljerade funktionsdokumentationen](#feature-links)
 
 ## Funktioner på översta raden {#top-bar}
 
@@ -159,20 +157,6 @@ AI Assistant ger omedelbar hjälp och driftsinsikter. Klicka på ikonen AI-assis
 * Navigera mellan koncept och metodtips
 
 [Läs mer om AI Assistant](ai-features.md#ai-assistant)
-
-## Detaljerade länkar {#feature-links}
-
-För utförlig dokumentation om varje funktion:
-
-* **Resor** - [Skapa din första resa](../building-journeys/journey-gs.md)
-* **Kampanjer** - [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
-* **Erbjudanden och beslut** - [Beslutshantering](../offers/get-started/starting-offer-decisioning.md)
-* **Skapa innehåll** - [E-postdesign](../email/get-started-email-design.md)
-* **Målgrupper** - [Målgruppshantering](../audience/about-audiences.md)
-* **Kanalkonfiguration** - [Konfigurera kanaler](../configuration/get-started-configuration.md)
-* **Datahantering** - [Arbeta med scheman](../data/get-started-schemas.md)
-* **Integritet och styrning** - [Integritetsöversikt](../privacy/get-started-privacy.md)
-* **Administration** - [Åtkomstkontroll](../administration/permissions-overview.md)
 
 ## Relaterade ämnen {#related-topics}
 

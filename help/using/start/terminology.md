@@ -6,10 +6,10 @@ description: Grundläggande termer och begrepp i Adobe Journey Optimizer
 feature: Get Started
 role: Admin, Developer, User
 level: Beginner
-source-git-commit: 965bb76529f500d6fa4d89fa1d56979afe9d5bb0
+source-git-commit: 4ae9e908d259dbd266417242cf9e65d693227061
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 6%
+source-wordcount: '751'
+ht-degree: 7%
 
 ---
 
@@ -25,8 +25,8 @@ Den här referenshandboken definierar de viktigaste termer du kommer att stöta 
 
 | Villkor | Definition |
 |------|------------|
-| **Adobe Journey Optimizer (AJO)** | En applikation för att skapa och leverera personaliserade meddelanden till kunder över alla kanaler (e-post, SMS, push-meddelanden, webb). Det gör det möjligt för er att utforma kundresor som svarar på kundåtgärder i realtid. |
-| **Adobe Experience Platform (AEP)** | Grunden till Adobe Journey Optimizer som samlar in och organiserar alla kunddata på ett och samma ställe. Det skapar enhetliga kundprofiler som Journey Optimizer använder för personalisering. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=sv-SE){target="_blank"} |
+| **Adobe Journey Optimizer** | En applikation för att skapa och leverera personaliserade meddelanden till kunder över alla kanaler (e-post, SMS, push-meddelanden, webb). Det gör det möjligt för er att utforma kundresor som svarar på kundåtgärder i realtid. |
+| **Adobe Experience Platform** | Grunden till Adobe Journey Optimizer som samlar in och organiserar alla kunddata på ett och samma ställe. Det skapar enhetliga kundprofiler som Journey Optimizer använder för personalisering. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} |
 | **Kundprofil i realtid** | En enhetlig realtidsvy över varje kund som kombinerar data från flera kanaler, inklusive online-, offline-, CRM- och tredjepartsdata. Varje profil uppdateras dynamiskt när kunderna interagerar med ert varumärke. [Läs mer](../audience/get-started-profiles.md) |
 | **Sandbox** | En separat arbetsyta för testning och experimenterande utan att påverka kundkommunikationen. Adobe Journey Optimizer innehåller flera sandlådor för utvecklings-, testnings- och produktionsmiljöer. [Läs mer](../administration/sandboxes.md) |
 
@@ -74,7 +74,7 @@ Den här referenshandboken definierar de viktigaste termer du kommer att stöta 
 
 >[!NOTE]
 >
->En omfattande ordlista med Adobe Experience Platform-termer finns i [Adobe Experience Platform-ordlistan](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=sv-SE){target="_blank"}.
+>En omfattande ordlista med Adobe Experience Platform-termer finns i [Adobe Experience Platform-ordlistan](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html){target="_blank"}.
 
 ## Relaterade ämnen {#related-topics}
 
