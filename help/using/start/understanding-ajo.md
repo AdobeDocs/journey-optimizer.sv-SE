@@ -90,7 +90,7 @@ Journey Optimizer kan integreras med Adobe Experience Platform på flera nivåer
 * **Tjänstlager** - Utnyttjar Adobe Experience Platform styrning, sekretess och frågetjänster
 * **Programlager** - Tillhandahåller resesamordning, beslutshantering och innehållshantering utöver Adobe Experience Platform
 
-Läs mer om [Adobe Journey Optimizer-ritningar](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}.
+Läs mer om [Adobe Journey Optimizer-ritningar](https://experienceleague.adobe.com/sv/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}.
 
 ## Integritet och säkerhet {#privacy-security}
 
