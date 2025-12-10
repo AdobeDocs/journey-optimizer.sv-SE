@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: e09cdd834abd0a0ca3f6f5210c0ecbe3afa29b45
+source-git-commit: f08488433432c26cab4fa880f70d6ddb65f5a0ef
 workflow-type: tm+mt
-source-wordcount: '2997'
+source-wordcount: '2995'
 ht-degree: 15%
 
 ---
@@ -32,24 +32,22 @@ ht-degree: 15%
    + [Förbättrad arbetsyta](using/rn/new-canvas.md)
 + Kom igång {#get-started}
    + [Kom igång](/help/rp_landing_pages/get-started-landing-page.md)
-   + [Nyckelfunktioner](using/start/get-started.md)
-   + [Arkitektur](using/start/architecture-concepts-redpen.md)
-   + [Kärnbegrepp](using/start/functional-areas-redpen.md)
-   + [Nyckelterminologi](using/start/terminology-md-redpen.md)
-   + Roller och ansvarsområden {#quick-start}
-      + [Översikt](using/start/quick-start.md)
+   + Grundläggande {#essentials}
+      + [Vad är Journey Optimizer?](using/start/get-started.md)
+      + [Förstå hur det fungerar](using/start/understanding-ajo.md)
+      + [Nyckelterminologi](using/start/terminology.md)
+      + [Skyddsritningar och begränsningar](using/start/guardrails.md)
+   + Kom igång med rollen {#by-role}
+      + [Välj utbildningsväg](using/start/quick-start.md)
       + [Kom igång som marknadsförare](using/start/path/marketer.md)
       + [Kom igång som datatekniker](using/start/path/data-engineer.md)
       + [Kom igång som administratör](using/start/path/administrator.md)
       + [Kom igång som utvecklare](using/start/path/developer.md)
-   + Användargränssnitt {#ui}
-      + [Kom igång med gränssnittet](using/start/user-interface.md)
-      + [Söka, filtrera, kategorisera](using/start/search-filter-categorize.md)
+   + Arbeta effektivt {#work-efficiently}
+      + [Navigera i gränssnittet](using/start/user-interface.md)
+      + [Söka, filtrera och ordna](using/start/search-filter-categorize.md)
+      + [AI och intelligenta funktioner](using/start/ai-features.md)
       + [Tillgänglighet](using/start/accessibility.md)
-   + [Arbeta med AI Assistant](using/start/ai-assistant.md)
-   + [AI Capabilities in AJO](/help/rp_landing_pages/ai-capabilities-landing-page.md)
-   + [Use Case Playbooks](using/start/playbooks.md)
-   + [Skyddsritningar och begränsningar](using/start/guardrails.md)
 + Resor {#orchestrate-journeys}
    + [Resor](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
    + [Kom igång med resor](using/building-journeys/journey.md)
@@ -826,7 +824,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

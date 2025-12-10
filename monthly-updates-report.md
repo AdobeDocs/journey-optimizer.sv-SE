@@ -5,9 +5,9 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: afa3c88093b7a3802b98aee1ed391a519499ccc2
+source-git-commit: fb74c0c14cf35aeb0c28719878d009e040be4214
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Nya sidor
 
-- [AI-funktioner i Adobe Journey Optimizer](help/rp_landing_pages/ai-capabilities-landing-page.md) - 31 okt
+- [AI och intelligenta funktioner i Adobe Journey Optimizer](help/using/start/ai-features.md) - 31 okt
 - [Hantera dina kunders preferenser](help/using/action/preference-center.md) - 24 okt
 - [Reserapport](help/using/action/reporting.md) - 29 okt
 - [Felkodsreferens](help/using/building-journeys/error-codes-reference.md) - 27 okt
@@ -85,7 +85,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
