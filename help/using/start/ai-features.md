@@ -7,10 +7,10 @@ feature: Overview
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 26f9228bacee5865cbc368cf2e3db02370d43a4b
+source-git-commit: 4847276532155a698cf997e22a0894c737208595
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 0%
+source-wordcount: '1479'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 >[!IMPORTANT]
 >
->Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
+>Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
 
 ### Vad AI-assistenten kan göra
 
@@ -60,7 +60,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 ![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
 
-[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"}
+[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
 
 ## Avancerade AI-agenter för reseoptimering {#ai-agents}
 
@@ -68,34 +68,40 @@ Adobe Journey Optimizer bygger på AI Assistants konversationsfunktioner och erb
 
 ### Reseanalysagent {#journey-agent}
 
-Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} kan du optimera resan genom naturlig språkanalys:
+Med agenten [Reseanalys](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} kan du optimera resan genom naturlig språkanalys:
 
-**Nyckelfunktioner:**
++++**Nyckelfunktioner**
 
 * **Resebortfallsanalys** - Identifiera var och varför kunder faller bort under resor, identifiera bortfallsmönster
 * **Identifiering av målgruppsöverlappning** - Analysera målgruppsöverlappning över flera resor för att förhindra trötthet från övermålning
 * **Schemalägg konfliktidentifiering** - Identifiera tidskonflikter mellan schemalagda resor med samma målgrupp
 * **Driftsinsikter** - Få snabba insikter som&quot;visa mig alla live-resor&quot; eller&quot;vilka målgrupper som används på fler än X resor&quot;
 
-**Exempelfrågor:**
++++
+
++++**Exempelfrågor**
 
 * &quot;Utför en bortfallsanalys för resan \[resenamn\]&quot;
 * &quot;Finns det några schemaläggningskonflikter för resan \[Resenamn\]?&quot;
 * &quot;Visa mig att målgruppen överlappar konflikter för resan \[resenamn\]&quot;
 * &quot;Vilka målgrupper används på fler än fem resor?&quot;
 
-**Behörigheter krävs:**
++++
+
++++**Behörigheter krävs**
 
 * **Visa resor** - Visa insikter om resor direkt i AI Assistant
 * **Hantera resor** - Skapa nya resor direkt i AI Assistant
 * **Visa segment** - Visa insikter om målgrupper
 * **Hantera segment** - Skapa nya målgrupper direkt i AI Assistant
 
++++
+
 ### Experimentationsagent {#experimentation-agent}
 
-[Experimentationsagenten](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
+[Experimentationsagenten](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
 
-**Nyckelfunktioner:**
++++**Nyckelfunktioner**
 
 * **Prestandaanalys** - Tydlig vy över vad som hänt i försök
 * **Insights Generation** - Förklaring av varför resultatet inträffade
@@ -103,7 +109,9 @@ Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-c
 * **Innehållsanalys** - Undersök meddelandeelement för att förstå varför vissa behandlingar överträffade andra
 * **Rekommendationsgenerering** - Föreslå nya behandlingar eller justeringar baserat på insikter
 
-**Exempelfrågor:**
++++
+
++++**Exempelfrågor**
 
 * &quot;Vilka experiment körs för \[Campaign Name\]?&quot;
 * &quot;För min \[Experimentnamn\], vilken behandling leder?&quot;
@@ -111,12 +119,16 @@ Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-c
 * &quot;Vad rekommenderar du att jag gör efter detta experiment?&quot;
 * &quot;Vilka vanliga mönster kommer från de senaste testerna?&quot;
 
-**Behörigheter krävs:**
++++
+
++++**Behörigheter krävs**
 
 * **Visa experiment** - Visa insikter i experiment i AI Assistant
 * **Hantera experimentmetadata** - Skapa nya experiment i AI Assistant
 
 **Obs!** Finns med Journey Optimizer Experimentation Accelerator-licens.
+
++++
 
 ### Ytterligare AI-agenter
 
@@ -130,24 +142,15 @@ AI-agenter är tillgängliga för kunder med tillgång till AI Assistant. Kontak
 
 ## AI-driven generering av innehåll {#content-generation}
 
-Använd generativ AI för att skapa och personalisera innehåll i flera kanaler, vilket snabbar upp processen för att skapa innehåll samtidigt som varumärkets enhetlighet bibehålls.
-
-### Kanaler som stöds
-
-AI Assistant för innehållsgenerering finns för:
-
-* **E-post** - Generera ämnesrader, brödtext och bilder
-* **Push-meddelanden** - Skapa engagerande meddelanden
-* **SMS** - Skriv kortfattade, övertygande textmeddelanden
-* **Webb** - Generera webbsidesinnehåll och -upplevelser
+Använd generativ AI för att skapa och personalisera innehåll i flera kanaler, vilket snabbar upp processen för att skapa innehåll samtidigt som varumärkets enhetlighet bibehålls. AI-assistenten för innehållsgenerering är tillgänglig för [e-post](../email/get-started-email.md), [push-meddelanden](../push/get-started-push.md), [SMS](../sms/get-started-sms.md) och [webb](../web/get-started-web.md) - vilket hjälper dig att generera ämnesrader, brödtext, bilder och fullständiga meddelandevarianter.
 
 ### Viktiga funktioner
 
-* **Textgenerering** - Skapa övertygande text baserat på din varumärkesröst och dina mål
-* **Bildgenerering** - Generera anpassade bilder med Adobe Firefly
-* **Innehållsvariationer** - Skapa flera variationer för A/B-testning
-* **Varumärkesjustering** - Kontrollera att det genererade innehållet överensstämmer med varumärkesriktlinjerna
-* **Mallsupport** - Utnyttja dina befintliga e-postmallar
+* **Textgenerering** - Skapa övertygande text baserat på din varumärkesröst och dina mål. [Generera text med AI](../content-management/generative-text.md)
+* **Bildgenerering** - Generera anpassade bilder med Adobe Firefly. [Generera bilder med AI](../content-management/generative-image.md)
+* **Innehållsvariationer** - Skapa flera variationer för A/B-testning. [Experimentera med AI](../content-management/generative-experimentation.md)
+* **Märkesjustering** - Kontrollera att det genererade innehållet matchar varumärkesriktlinjerna. [Utvärdera varumärkesjustering](../content-management/brands-score.md)
+* **Mallsupport** - Utnyttja dina befintliga e-postmallar. [Arbeta med innehållsmallar](../content-management/content-templates.md)
 
 ### Bästa praxis
 
@@ -169,25 +172,12 @@ Sändningsoptimering analyserar historiska engagemangsdata (öppningar och klick
 
 ### När ska den användas
 
-**Bäst för:**
-
-* Marknadsföringskampanjer och nyhetsbrev
-* Kampanjmeddelanden
-* Utbildningsmaterial
-* Engagerande kampanjer
-
-**Rekommenderas inte för:**
-
-* Tidskänsliga operativa meddelanden (orderbekräftelser, lösenordsåterställningar)
-* Akuta meddelanden (flygförseningar, larm om nödsituationer)
-* Händelsebaserade meddelanden med specifika timingkrav
-
-### Konfigurationstips
-
-* **Vänta 30 dagar** - Samla in minst 30 dagars historik eller push-data innan du aktiverar
-* **Ange optimala väntetider** - Använd 6-24 timmar för bästa resultat (kortare optimering av begränsningar, längre kan resultera i inaktuellt innehåll)
-* **Välj rätt mätvärde** - Optimera för klickningar (actionkörningsmeddelanden) eller Öppnar (informationsmeddelanden)
-* **Schemalagd morgon skickar** - För push-meddelanden kan du börja tidigt på dagen för att undvika leverans på kvällen
+| Bäst för | Rekommenderas inte för |
+|----------|---------------------|
+| Marknadsföringskampanjer och nyhetsbrev | Tidskänsliga operativa meddelanden (orderbekräftelser, lösenordsåterställningar) |
+| Kampanjmeddelanden | Akuta meddelanden (flygförseningar, larm om nödsituationer) |
+| Utbildningsmaterial | Händelsebaserade meddelanden med specifika timingkrav |
+| Engagerande kampanjer | |
 
 [Läs mer om optimering av sändningstid](../building-journeys/send-time-optimization.md)
 
@@ -209,7 +199,7 @@ Skapa intelligenta rangordningsmodeller som automatiskt optimerar vilka erbjudan
    * Under de senaste 14 dagarna
 * Max 5 AI-rankningsmodeller per organisation
 
-[Läs mer om AI-modeller för beslutsfattande](../experience-decisioning/ranking/ai-models.md)
+[Läs mer om AI-modeller för beslut](../experience-decisioning/ranking/ai-models.md) | [Skapa AI-rankningsmodeller](../experience-decisioning/ranking/create-ai-models.md)
 
 ## Experimentera med AI {#experimentation}
 
@@ -228,6 +218,8 @@ Viktiga funktioner:
 
 Case Playbooks är färdiga arbetsflöden som hjälper er att implementera vanliga marknadsföringsscenarier snabbt. Varje spelbok innehåller färdiga resor, meddelanden, scheman och segment.
 
+![Använd gränssnittet för fallspelningsböcker](assets/playbooks-filter.png)
+
 ### Så här fungerar Playbooks
 
 1. **Bläddra** i spelboksbiblioteket för att hitta användningsfall som matchar dina mål
@@ -245,15 +237,15 @@ Bläddra bland Journey Optimizer spelböcker efter vanliga scenarier som:
 * Födelsedag
 * Återengagemangskampanjer
 
-### Förhandskrav
++++**Förhandskrav**
 
 * Sandlåda med lämpliga behörigheter
 * Kanalkonfigurationer för e-post, push och/eller SMS
 * Användarbehörigheter för att skapa resor och meddelanden
 
-![Använd gränssnittet för fallspelningsböcker](assets/playbooks-filter.png)
++++
 
-[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html?lang=sv-SE){target="_blank"} | [Läs mer i Experience Platform-dokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=sv-SE){target="_blank"}
+[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Läs mer i Experience Platform-dokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
 
 ## Ytterligare AI-funktioner {#additional-capabilities}
 
@@ -273,10 +265,10 @@ Utvärdera hur väl innehållet överensstämmer med varumärkesriktlinjerna med
 
 +++**Vilka behörigheter behöver jag för AI-funktioner?**
 
-* **AI-assistenten för innehållsgenerering** - Kräver behörigheten Generera innehåll
-* **AI Assistant-produktkunskap** - Kräver godkännande av Adobe Generative AI User Guidelines
-* **Reseanalysagent** - Kräver behörighet för att visa/hantera resor och visa/hantera segment
-* **Experimenteringsagent** - Kräver behörighet för att visa och hantera experimentella metadata
+* **[AI-assistenten för innehållsgenerering](#content-generation)** - Kräver behörigheten Generera innehåll
+* **[AI Assistant](#ai-assistant)** produktkunskap - Kräver godkännande av Adobe Generative AI User Guidelines
+* **[Reseanalysagent](#journey-agent)** - Kräver behörighet för att visa/hantera resor och visa/hantera segment
+* **[Experimenteringsagent](#experimentation-agent)** - Kräver behörighet för att visa och hantera experimentella metadata
 
 Alla AI-agenter kräver åtkomst till AI Assistant och godkännande av Adobe Experience Cloud Generative AI User Guidelines.
 
@@ -286,31 +278,20 @@ Alla AI-agenter kräver åtkomst till AI Assistant och godkännande av Adobe Exp
 
 +++**Är AI-genererat innehåll alltid korrekt?**
 
-Nej. Granska alltid AI-genererat innehåll för att se om det är korrekt och lämpligt för varumärket. Använd feedbackverktygen (dra upp/ned) för att förbättra modellerna.
+Nej. Granska alltid [AI-genererat innehåll](#content-generation) för att se om det är korrekt och lämpligt för varumärket. Använd feedbackverktygen (dra upp/ned) för att förbättra modellerna.
 
 +++
 
 +++**Vilka är de huvudsakliga begränsningarna?**
 
-* **Tidsoptimering vid sändning** - Endast tillgängligt för e-post och push-resor; kräver 30-dagars utbildningsperiod
-* **Generering av AI-innehåll** - Inte tillgängligt för direktreklam, innehållskort, LINE eller whatsApp
-* **AI-rangordningsmodeller** - Högst 5 modeller per organisation; kräver minimala interaktionsdata
+* **[Tidsoptimering vid sändning](#send-time-optimization)** - Endast tillgängligt för e-post och push-resor; kräver 30-dagars utbildningsperiod
+* **[Generering av AI-innehåll](#content-generation)** - Inte tillgängligt för direktreklam, innehållskort, LINE eller whatsApp
+* **[AI-rangordningsmodeller](#ai-decisioning)** - Högst 5 modeller per organisation; kräver minimala interaktionsdata
 
 +++
 
 +++**Hur får jag åtkomst till de här funktionerna?**
 
-De flesta AI-funktioner ingår i Adobe Journey Optimizer. Vissa funktioner som Send-Time Optimization eller AI Agents kan kräva att Adobe aktiverar dem. Kontakta din Adobe-representant för att få information om din specifika licens och tillgängliga funktioner.
+De flesta AI-funktioner ingår i Adobe Journey Optimizer. Vissa funktioner som [Send-Time Optimization](#send-time-optimization) eller [AI Agents](#ai-agents) kan kräva aktivering av Adobe. Kontakta din Adobe-representant för att få information om din specifika licens och tillgängliga funktioner.
 
 +++
-
->[!MORELIKETHIS]
->
->* [Kom igång med AI Assistant för innehållsgenerering](../content-management/gs-generative.md)
->* [AI-assistenten i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"}
->* [Reseanalysagentdokumentation](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"}
->* [Experimentationsagentdokumentation](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"}
->* [Guiden för optimering av sändningstid](../building-journeys/send-time-optimization.md)
->* [Skapa AI-rankningsmodeller](../experience-decisioning/ranking/create-ai-models.md)
->* [Använd dokumentation för fallspelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=sv-SE){target="_blank"}
-
