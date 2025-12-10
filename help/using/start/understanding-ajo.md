@@ -6,7 +6,7 @@ description: Lär dig hur Adobe Journey Optimizer kan leverera personaliserade k
 feature: Get Started
 role: Admin, Developer, User
 level: Beginner
-source-git-commit: 4ae9e908d259dbd266417242cf9e65d693227061
+source-git-commit: 87f714e380957b40df196652ac37d1e6cd611925
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Förstå Journey Optimizer {#understanding-ajo}
 
-Adobe Journey Optimizer och Adobe Experience Platform samarbetar för att möjliggöra datadriven personalisering i stor skala. På den här sidan beskrivs hur dessa system fungerar och hur deras viktigaste funktionsområden kombinerar för att leverera enastående kundupplevelser. [Lär dig mer om nyckelfunktioner](get-started.md) | [&#x200B; Utforska nyckelterminologi &#x200B;](terminology.md)
+Adobe Journey Optimizer och Adobe Experience Platform samarbetar för att möjliggöra datadriven personalisering i stor skala. På den här sidan beskrivs hur dessa system fungerar och hur deras viktigaste funktionsområden kombinerar för att leverera enastående kundupplevelser. [Lär dig mer om nyckelfunktioner](get-started.md) | [ Utforska nyckelterminologi ](terminology.md)
 
 ## Så här fungerar Journey Optimizer {#how-it-works}
 
@@ -28,7 +28,7 @@ Adobe Journey Optimizer fungerar som ett kontinuerligt flöde där data samlas i
 Adobe Experience Platform fungerar som ryggrad och gör det möjligt för varumärken att centralisera kunddata och aktivera dem för personaliserade upplevelser:
 
 * **Dataplattform** - Centralt nav för att samla in, hantera och strukturera kunddata för att säkerställa konsekvens mellan system. [Läs om scheman och datauppsättningar](../data/get-started-schemas.md)
-* **Datainmatning (källor)** - Importera data från CRM-plattformar, webbplatser, mobilappar och molnlagring med hjälp av färdiga anslutningar. [Utforska datakällor](../data/get-started-sources.md)
+* **Datainmatning (källor)** - Importera data från CRM-plattformar, webbplatser, mobilappar och molnlagring med hjälp av färdiga anslutningar. [Utforska datakällor](get-started-sources.md)
 * **Kundprofil i realtid** - Skapar enhetliga profiler genom att sammanfoga data från flera källor (e-postinteraktioner, butiksköp, webbbeteende). [Läs om profiler](../audience/get-started-profiles.md)
 * **Styrningslager** - Styr dataåtkomst, sekretessefterlevnad och säkerhet samtidigt som du följer regler. [Visa sekretessdokumentation](../privacy/get-started-privacy.md)
 
@@ -37,10 +37,10 @@ Adobe Experience Platform fungerar som ryggrad och gör det möjligt för varum�
 Adobe Journey Optimizer använder data och insikter från Adobe Experience Platform för att leverera intelligenta, personaliserade kundupplevelser:
 
 * **Kundförståelse** - Kundprofiler i realtid möjliggör segmentering i målgrupper för riktade meddelanden. [Skapa målgrupper](../audience/about-audiences.md)
-* **Innehåll och erbjudanden** - Verktyg för att skapa, hantera och personalisera innehåll, logik i realtid för att välja det bästa erbjudandet för varje individ. [Designa innehåll](../content-management/get-started-content.md) | [Hantera erbjudanden](../offers/get-started/starting-offer-decisioning.md)
+* **Innehåll och erbjudanden** - Verktyg för att skapa, hantera och personalisera innehåll, logik i realtid för att välja det bästa erbjudandet för varje individ. [Designa innehåll](../../rp_landing_pages/content-management-landing-page.md) | [Hantera erbjudanden](../offers/get-started/starting-offer-decisioning.md)
 * **Resurs- och kampanjhantering** - Automatiserar sekvenser av interaktioner (resor) eller schemalägger engångsinriktade meddelanden (kampanjer). [Skapa resor](../building-journeys/journey-gs.md) | [Skapa kampanjer](../campaigns/get-started-with-campaigns.md)
 * **Leverans (anslutningar)** - Levererar meddelanden via kanaler som e-post, SMS, push-meddelanden och direktreklam. Exporterar data till externa system. [Konfigurera kanaler](../configuration/get-started-configuration.md)
-* **Mätning och analys** - Håll koll på kundens engagemang och kampanjresultat med rapporter för kontinuerlig förbättring. [Visa rapporter](../reports/campaign-global-report.md)
+* **Mätning och analys** - Håll koll på kundens engagemang och kampanjresultat med rapporter för kontinuerlig förbättring. [Visa rapporter](../reports/campaign-global-report-cja.md)
 
 ### Kontinuerlig optimeringscykel {#optimization-cycle}
 
@@ -56,7 +56,7 @@ Journey Optimizer har sju viktiga funktionsområden som fungerar ihop:
 |-----------------|---------|----------------|
 | **Datahantering** | Organisera kunddata | Definiera scheman, skapa datauppsättningar och importera data från olika system. [Läs mer](../data/get-started-schemas.md) |
 | **Kundhantering** | Förstå vilka era kunder är | Skapa enhetliga profiler, lös identiteter, skapa målgrupper. [Läs mer](../audience/get-started-profiles.md) |
-| **Innehållshantering** | Skapa personliga meddelanden | Designa e-postmeddelanden, hantera resurser, bygg mallar och fragment, personalisera innehåll. [Läs mer](../content-management/get-started-content.md) |
+| **Innehållshantering** | Skapa personliga meddelanden | Designa e-postmeddelanden, hantera resurser, bygg mallar och fragment, personalisera innehåll. [Läs mer](../../rp_landing_pages/content-management-landing-page.md) |
 | **Beslutshantering** | Välj det bästa erbjudandet i realtid | Hantera erbjudandebiblioteket, definiera regler, tillämpa begränsningar och upprätta rangordningslogik. [Läs mer](../offers/get-started/starting-offer-decisioning.md) |
 | **Resehantering** | Designa automatiserade kundupplevelser | Skapa resor med visuell designer, ställ in triggers, lägg till villkor och vänta steg. [Läs mer](../building-journeys/journey-gs.md) |
 | **Anslutningar** | Koppla samman datakällor och kanaler | Konfigurera källanslutningar, konfigurera kanaler, ansluta till externa plattformar. [Läs mer](../configuration/get-started-configuration.md) |
@@ -90,7 +90,7 @@ Journey Optimizer kan integreras med Adobe Experience Platform på flera nivåer
 * **Tjänstlager** - Utnyttjar Adobe Experience Platform styrning, sekretess och frågetjänster
 * **Programlager** - Tillhandahåller resesamordning, beslutshantering och innehållshantering utöver Adobe Experience Platform
 
-Läs mer om [Adobe Journey Optimizer-ritningar](https://experienceleague.adobe.com/sv/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}.
+Läs mer om [Adobe Journey Optimizer-ritningar](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}.
 
 ## Integritet och säkerhet {#privacy-security}
 

@@ -5,9 +5,9 @@ title: Kom igång
 description: Kom igång med Adobe Journey Optimizer
 redpen-status: CREATED_||_2025-08-11_20-05-24
 exl-id: fee218bf-8c60-442d-ac41-a3856fc71b70
-source-git-commit: 8bedc1162edb042767b3cab68bfac25e85c7f283
+source-git-commit: 87f714e380957b40df196652ac37d1e6cd611925
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '570'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Lär dig grunderna i Adobe Journey Optimizer och hur det möjliggör datadriven 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Vad är Journey Optimizer?
 
@@ -34,7 +34,7 @@ Upptäck kärnfunktioner, användningsexempel och hur Journey Optimizer leverera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Så här fungerar det
 
@@ -44,7 +44,7 @@ Läs om hur Journey Optimizer kan integreras med Adobe Experience Platform och h
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list.svg)
 
 Nyckelterminologi
 
@@ -61,7 +61,7 @@ Kom igång med rollspecifik vägledning som är anpassad efter ditt ansvar och d
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/user.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/user.svg)
 
 För marknadsförare
 
@@ -71,7 +71,7 @@ Designa kundresor, skapa kampanjer och personalisera innehåll för att engagera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 För datatekniker
 
@@ -81,23 +81,13 @@ Konfigurera datastrukturer, hantera scheman och datauppsättningar och säkerst�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 För administratörer
 
 Konfigurera miljöer, hantera behörigheter och konfigurera kanaler för organisationen.
 
 [Starta som administratör](../using/start/path/administrator.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
-
-För utvecklare
-
-Integrera mobilappar, implementera API:er och skapa anpassade åtgärder och integreringar.
-
-[Börja som utvecklare](../using/start/path/developer.md)
 :::
 
 ::::
@@ -120,7 +110,7 @@ Lär dig använda Journey Optimizer gränssnitt, få tillgång till viktiga funk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/search.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/search.svg)
 
 Söka och ordna
 
@@ -151,13 +141,13 @@ Upptäck hur AI hjälper er att skapa innehåll, optimera sändningstiderna och 
 
 ### Lär dig med att göra
 
-* **[Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}** - Stegvisa videokurser som omfattar kärnfunktioner
+* **[Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}** - Stegvisa videokurser som omfattar kärnfunktioner
 * **[Använd fallspelningsböcker](../using/start/ai-features.md#playbooks)** - Förbyggda arbetsflöden för vanliga scenarier som övergiven kundvagnsåterställning och välkomstkampanjer
 * **[Dokumentationsuppdateringar](../using/rn/documentation-updates.md)** - Håll dig informerad om de senaste ändringarna och tilläggen i dokumentationen
 
 ### Få support
 
-* **[Övervakning och felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Verktyg för att spåra prestanda, identifiera problem och snabbt lösa problem
+* **[Övervakning och felsökning](troubleshoot-journey-landing-page.md)** - Verktyg för att spåra prestanda, identifiera problem och snabbt lösa problem
 * **[Nyheter](../using/rn/release-notes.md)** - Håll dig uppdaterad med de senaste funktionerna, förbättringarna och korrigeringarna
 * **[Community-forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Kommunicera med andra användare, ställa frågor och dela med dig av bästa praxis
 
@@ -185,4 +175,4 @@ Välj den sökväg som passar dig:
 
 >[!NOTE]
 >
->Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../using/administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Kontakta Adobe Customer Success Manager om du har frågor om din specifika konfiguration.
+>Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../using/administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Kontakta Adobe Customer Success Manager om du har frågor om din specifika konfiguration.

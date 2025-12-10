@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
-source-git-commit: 4ae9e908d259dbd266417242cf9e65d693227061
+source-git-commit: 87f714e380957b40df196652ac37d1e6cd611925
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Om du vill få tillgång till Adobe Journey Optimizer loggar du in på [Adobe Ex
 
 >[!NOTE]
 >
->* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+>* Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* Dokumentationen uppdateras ofta. Vissa skärmbilder kan skilja sig något från gränssnittet.
 
 ## Snabbdemo {#quick-tour}
@@ -46,14 +46,14 @@ I den vänstra navigeringen ordnas Journey Optimizer-funktioner i funktionskateg
 **Resehantering** - Skapa och hantera kundupplevelser
 * **Kampanjer** - Skapa engångs- eller schemalagda meddelanden till specifika målgrupper. [Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)
 * **Resor** - Bygg flerstegskunderna kundupplevelser i flera kanaler. [Skapa din första resa](../building-journeys/journey-gs.md)
-* **Rapporter** - Analysera prestanda med integrerade Customer Journey Analytics-rapporter. [Visa rapportdokumentation](../reports/campaign-global-report.md)
+* **Rapporter** - Analysera prestanda med integrerade Customer Journey Analytics-rapporter. [Visa rapportdokumentation](../reports/campaign-global-report-cja.md)
 
 **Beslutshantering** - Hantera personaliserade erbjudanden. [Läs om beslutshantering](../offers/get-started/starting-offer-decisioning.md)
 * **Erbjudanden** - Skapa och hantera personaliserade erbjudanden
 * **Komponenter** - Konfigurera ersättningar, regler och taggar för erbjudanden
 
 **Innehållshantering** - Skapa och ordna innehåll
-* **Assets** - Centraliserad databas för bilder och media. [Hantera resurser](../content-management/assets.md)
+* **Assets** - Centraliserad databas för bilder och media. [Hantera resurser](../integrations/assets.md)
 * **Innehållsmallar** - Återanvändbara meddelandemallar för kampanjer och resor. [Skapa mallar](../content-management/content-templates.md)
 * **Fragment** - Innehållsblock som kan användas i flera meddelanden. [Arbeta med fragment](../content-management/fragments.md)
 * **Landningssidor** - Webbformulär för prenumerationer och inställningar. [Utforma landningssidor](../landing-pages/get-started-lp.md)
@@ -65,7 +65,7 @@ I den vänstra navigeringen ordnas Journey Optimizer-funktioner i funktionskateg
 * **Övervakning** - Spåra datainmatning
 
 **Anslutningar** - Integrera med andra system
-* **Källor** - Infoga data från externa system. [Konfigurera källor](../data/get-started-sources.md)
+* **Källor** - Infoga data från externa system. [Konfigurera källor](get-started-sources.md)
 * **Destinationer** - Exportera data till molnlagring. [Konfigurera mål](../data/export-datasets.md)
 
 **Kund** - Hantera målgrupper och profiler
@@ -82,7 +82,7 @@ I den vänstra navigeringen ordnas Journey Optimizer-funktioner i funktionskateg
 
 **Administration** - Konfigurera systeminställningar. [Översikt över åtkomstkontroll](../administration/permissions-overview.md)
 * **Konfigurationer** - Konfigurera händelser, datakällor och åtgärder. [Konfigurera kanaler](../configuration/get-started-configuration.md)
-* **Affärsregler** - Kontrollera meddelandefrekvens och reseinmatning. [Konfigurera affärsregler](../configuration/frequency-rules.md)
+* **Affärsregler** - Kontrollera meddelandefrekvens och reseinmatning. [Konfigurera affärsregler](../conflict-prioritization/rule-sets.md)
 * **Varningar** - Visa och hantera systemvarningar. [Övervaka aviseringar](../reports/alerts.md)
 * **Sandlådor** - Hantera miljöer och kopiera objekt mellan sandlådor. [Arbeta med sandlådor](../administration/sandboxes.md)
 * **Kanaler** - Konfigurera kanalinställningar och leveransbarhet
