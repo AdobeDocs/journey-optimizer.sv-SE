@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: b8af73485227dc102b5b190b58a5d4341ffb2708
+source-git-commit: c30a74ccdaec81cbbb28e3129d5c351a0fe64bfc
 workflow-type: tm+mt
-source-wordcount: '3516'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 Nedan hittar du ytterligare skyddsförslag och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
 
 ## Webbläsare som stöds {#browsers}
@@ -104,13 +104,13 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] inkommande kanaler kan ha pseudonyma profiler som mål, vilket innebär profiler som inte är autentiserade eller okända än eftersom de inte har varit engagerade tidigare i andra kanaler. Detta är till exempel fallet när man riktar sig till alla besökare eller målgrupper baserat på tillfälliga ID:n som ECID.
 
-Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
+Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
 
 För att hålla dina engagerande profiler inom rimliga gränser rekommenderar Adobe att du ställer in en TTL (Time-To-Live) som automatiskt tar bort pseudonyma profiler från kundprofilen i realtid om de inte har setts eller engagerats inom ett visst tidsfönster.
 
 >[!NOTE]
 >
->Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+>Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
 
 Adobe rekommenderar att TTL-värdet ställs in på 14 dagar för att matcha den aktuella Edge-profilen TTL.
 
@@ -319,6 +319,7 @@ Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Jump]**. De visas 
 Följande skyddsutkast gäller för [Läs målgruppsaktiviteten](../building-journeys/read-audience.md):
 
 * Direktuppspelade målgrupper är alltid uppdaterade, men batchmålgrupper beräknas inte vid hämtningen. De utvärderas endast varje dag vid den dagliga grupputvärderingen.
+* Vid registrering på resan använder profiler attributvärden från ögonblicksbilden av gruppmålgruppen. När en profil når en **Wait**-aktivitet uppdaterar resan automatiskt profilattributen genom att hämta de senaste data från UPS (Unified Profile Service). Detta innebär att profilattribut kan ändras under körning av resan.
 * För resor som använder en **Läs målgrupp**-aktivitet finns det ett maximalt antal resor som kan påbörjas exakt samtidigt. Återförsök kommer att utföras av systemet men undvik att ha fler än fem resor (med **Läs målgrupp**, schemalagd eller starta&quot;så snart som möjligt&quot;) med början vid exakt samma tid genom att sprida dem över tiden, t.ex. mellan 5 och 10 minuter. Läs mer om hastigheter för resebearbetning i [det här avsnittet](../building-journeys/entry-management.md#journey-processing-rate).
 * Det går inte att använda aktiviteten **Läs målgrupp** med Adobe Campaign-aktiviteter.
 * Aktiviteten **Läs målgrupp** kan bara användas som en första aktivitet i en resa, efter en affärshändelseaktivitet.

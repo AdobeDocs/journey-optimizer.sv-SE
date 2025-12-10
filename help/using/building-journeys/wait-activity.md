@@ -10,10 +10,10 @@ level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 version: Journey Orchestration
-source-git-commit: cec807afe35bc95be9fa8d455cd72c2600e51fa7
+source-git-commit: c30a74ccdaec81cbbb28e3129d5c351a0fe64bfc
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 3%
+source-wordcount: '886'
+ht-degree: 2%
 
 ---
 
@@ -102,8 +102,18 @@ Det bästa sättet är att använda anpassade datum som är specifika för dina 
 
 Om du vill verifiera att vänteaktiviteten fungerar som förväntat kan du använda steghändelser. [Läs mer](../reports/query-examples.md#common-queries).
 
-## Automatisk väntenod  {#auto-wait-node}
+## Profiluppdatering efter väntan {#profile-refresh}
 
+När en profil har parkerats vid en **Wait**-aktivitet på en resa som börjar med en **Läs målgrupp** -aktivitet, uppdaterar resan automatiskt profilens attribut från UPS (Unified Profile Service) för att hämta de senaste tillgängliga data.
+
+* **Vid resepost**: Profiler använder attributvärden från målgruppsögonblicksbilden som utvärderades när resan påbörjades.
+* **Efter en väntenod**: Under resan utförs en sökning för att hämta de senaste profildata från UPS, inte de äldre ögonblicksbildsdata. Detta innebär att profilattributen kan ha ändrats sedan resan påbörjades.
+
+Detta beteende säkerställer att efterföljande aktiviteter använder aktuell profilinformation efter en vänteperiod. Det kan dock ge oväntade resultat om du förväntar dig att resan bara ska använda ursprungliga ögonblicksbildsdata under hela körningen.
+
+Exempel: Om en profil kvalificerar sig för en&quot;silverkund&quot;-målgrupp när resan börjar, men uppgraderar till&quot;guldkund&quot; under en 3-dagars väntetid, kommer aktiviteter efter väntetiden att se den uppdaterade statusen&quot;guldkund&quot;.
+
+## Automatisk väntenod  {#auto-wait-node}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_auto_wait_node "
