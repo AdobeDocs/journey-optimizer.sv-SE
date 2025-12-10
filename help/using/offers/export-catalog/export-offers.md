@@ -10,9 +10,9 @@ role: User, Developer
 level: Intermediate
 exl-id: c7f691aa-8f89-4f23-b897-53211863eb6d
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 47f4ab608df3439c01ca962232a956016a1f8667
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1929'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -44,7 +44,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ _upplevelse {#experience}
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -83,9 +83,8 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 **Fält:** - egenskaper
 **Titel:** Beslutsalternativsegenskaper
-**Beskrivning:** Egenskaper är ytterligare attribut eller egenskaper som tillhör ett visst beslutsalternativ. Dessa attribut är nyckelvärdepar, vilket innebär att de innehåller ett attributnamn (kallas ibland för nyckel) som har ett associerat värde och används för att skilja mellan olika beslutsalternativ och andra erbjudanden. För attributnamnet &quot;color&quot; kan värdet till exempel vara &quot;green&quot; för ett visst erbjudande.
-Egenskaper används som värden i innehåll som representerar det här alternativet och som funktioner för att analysera och optimera prestanda för ett erbjudande. När alla instanser har samma attribut eller egenskap bör den aspekten modelleras som ett tilläggsschema som härleds från beslutsalternativsdetaljen.
-**Typ:** objekt
+**Beskrivning:** Egenskaper är ytterligare attribut eller egenskaper som tillhör ett visst beslutsalternativ. Dessa attribut är nyckelvärdepar, vilket innebär att de innehåller ett attributnamn (kallas ibland för nyckel) som har ett associerat värde och används för att skilja mellan olika beslutsalternativ och andra erbjudanden. För attributnamnet &quot;color&quot; kan värdet till exempel vara &quot;green&quot; för ett visst erbjudande.<!--Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an offer. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from the decision option detail.-->
+**Type:** -objekt
 
 +++
 
@@ -107,14 +106,14 @@ Egenskaper används som värden i innehåll som representerar det här alternati
 
 * **_experience > decisioning > contents > components > Content Component Type**
 
-  **Fält:**&#x200B;_typ
+  **Fält:**_typ
   **Titel:** Innehållskomponenttyp
   **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som anges för innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schemat som beskriver ytterligare egenskaper för innehållskomponenten.
   **Typ:** sträng
 
 * **_experience > Decision > contents > components > _dc**
 
-  **Fält:**&#x200B;_dc
+  **Fält:**_dc
   **Typ:** objekt
   **Obligatoriskt:** &quot;format&quot;
 
@@ -135,7 +134,7 @@ Egenskaper används som värden i innehåll som representerar det här alternati
 
 * **_experience > Decision > contents > components > _repo**
 
-  **Fält:**&#x200B;_repo
+  **Fält:**_repo
   **Typ:** objekt
 
    * **id**
@@ -183,7 +182,7 @@ Egenskaper används som värden i innehåll som representerar det här alternati
   **Fält:** linkURL
   **Beskrivning:** En unik resurslokaliserare (valfritt) för användarinteraktioner. Den här URL:en används för att referera slutanvändaren till i en användaragent och kan spåras.
   **Typ:** sträng
-  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
+  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
 +++_experience > decisioning > contents > Placement
 
@@ -265,7 +264,7 @@ Egenskaper används som värden i innehåll som representerar det här alternati
 
 * **Identifierare**
 
-  **Fält:**&#x200B;_id
+  **Fält:**_id
   **Titel:** Identifierare
   **Beskrivning:** Identitet för målgrupperna i det relaterade namnområdet.
   **Typ:** sträng
@@ -358,7 +357,7 @@ Egenskaper används som värden i innehåll som representerar det här alternati
 
 +++repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
 +++ 

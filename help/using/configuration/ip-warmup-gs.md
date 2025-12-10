@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, leverans
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: 5e0d683bf52df4992773c6147b9e418241777e5d
+source-git-commit: fd9ae1f554357a0379e4c93b91f1d475c99d8ac3
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '321'
 ht-degree: 2%
 
 ---
@@ -52,8 +52,18 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 
 Lär dig hur du skapar och kör en IP-värmeringsplan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3453844/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432637/?learn=on)
 
 >[!NOTE]
 >
->Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html?lang=sv-SE) Leveranssätt med bästa praxis.
+>Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html) Leveranssätt med bästa praxis.
+
+## Ytterligare resurser {#additional-resources}
+
+Utforska de här praktiska blogginläggen för mer ingående vägledning om IP-värmare:
+
+* [Förstå hur du konfigurerar IP-värmerappningen](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949) - Lär dig grunderna i hur du konfigurerar IP-värmeringsplaner och metodtips för en lyckad implementering.
+
+* [Avancerade funktioner i IP-uppvärmningsplaner](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-features-in-ajo-ip-warm-up-plans-granular-controls-for/ba-p/761958) - Upptäck avancerade funktioner och detaljerade kontroller för att optimera din strategi för IP-uppvärmning.
+
+* [Felsökning av IP-uppvärmning](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warm-up-troubleshooting-audience-delays-and-smart-retry/ba-p/761952) - Hitta lösningar på vanliga problem, som fördröjningar av målgrupper och läs om smarta återförsöksmekanismer.
