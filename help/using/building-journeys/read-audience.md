@@ -348,4 +348,4 @@ Om antalet avvikelser kvarstår efter att du har utfört dessa steg kontaktar du
 
 Förstå tillämpliga användningsfall för en resa som triggas av läsmålgruppsaktiviteten. Lär dig hur du bygger batchbaserade resor och vilka metodtips som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424997?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430367?captions=swe&quality=12)
