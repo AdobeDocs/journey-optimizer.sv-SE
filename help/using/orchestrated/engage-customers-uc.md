@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Observera att det här användningsexemplet börjar med en publik som redan finns i Experience Platform, närmare bestämt en webbpublik i realtid som samlar in webbläsaraktiviteter när de inträffar. [Läs mer i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started#audiences)
+Observera att det här användningsexemplet börjar med en publik som redan finns i Experience Platform, närmare bestämt en webbpublik i realtid som samlar in webbläsaraktiviteter när de inträffar. [Läs mer i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started#audiences)
 
 **Scheman som behövs för det här användningsfallet:**
 

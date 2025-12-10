@@ -30,7 +30,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 >[!IMPORTANT]
 >
->Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
+>Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
 
 ### Vad AI-assistenten kan göra
 
@@ -60,7 +60,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 ![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
 
-[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
+[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"}
 
 ## Avancerade AI-agenter för reseoptimering {#ai-agents}
 
@@ -68,7 +68,7 @@ Adobe Journey Optimizer bygger på AI Assistants konversationsfunktioner och erb
 
 ### Reseanalysagent {#journey-agent}
 
-Med agenten [Reseanalys](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} kan du optimera resan genom naturlig språkanalys:
+Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} kan du optimera resan genom naturlig språkanalys:
 
 +++**Nyckelfunktioner**
 
@@ -99,7 +99,7 @@ Med agenten [Reseanalys](https://experienceleague.adobe.com/en/docs/experience-c
 
 ### Experimentationsagent {#experimentation-agent}
 
-[Experimentationsagenten](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
+[Experimentationsagenten](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
 
 +++**Nyckelfunktioner**
 
@@ -241,7 +241,7 @@ Bläddra bland Journey Optimizer spelböcker efter vanliga scenarier som:
 
 +++
 
-[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Läs mer i Experience Platform-dokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
+[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html?lang=sv-SE){target="_blank"} | [Läs mer i Experience Platform-dokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=sv-SE){target="_blank"}
 
 ## Ytterligare AI-funktioner {#additional-capabilities}
 
