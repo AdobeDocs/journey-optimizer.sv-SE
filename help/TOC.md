@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: f08488433432c26cab4fa880f70d6ddb65f5a0ef
+source-git-commit: 51c8c9282cb6eb9cdbd310d8f263d7973f28bbf0
 workflow-type: tm+mt
-source-wordcount: '2995'
+source-wordcount: '3013'
 ht-degree: 15%
 
 ---
@@ -199,6 +199,10 @@ ht-degree: 15%
          + [Dela](using/orchestrated/activities/split.md)
          + [Test](using/orchestrated/activities/test.md)
          + [Vänta](using/orchestrated/activities/wait.md)
+      + Lär dig mer om användningsexempel {#use-cases}
+         + [Skicka uppdateringar av önskelisteobjekt](using/orchestrated/wishlist-uc.md)
+         + [Engagera kunderna genom att surfa](using/orchestrated/engage-customers-uc.md)
+         + [Meddela användare om produkttillgänglighet](using/orchestrated/product-availability-uc.md)
 + Konflikt och prioritering {#conflict-prioritization}
    + [Konflikthantering och -prioritering](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
    + [Kom igång med konflikthantering och -prioritering](using/conflict-prioritization/gs-conflict-prioritization.md)
@@ -824,7 +828,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
