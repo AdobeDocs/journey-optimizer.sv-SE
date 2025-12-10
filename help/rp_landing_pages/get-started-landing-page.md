@@ -24,7 +24,7 @@ Lär dig grunderna i Adobe Journey Optimizer och hur det möjliggör datadriven 
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Vad är Journey Optimizer?
 
@@ -34,7 +34,7 @@ Upptäck kärnfunktioner, användningsexempel och hur Journey Optimizer leverera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Så här fungerar det
 
@@ -44,7 +44,7 @@ Läs om hur Journey Optimizer kan integreras med Adobe Experience Platform och h
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list.svg?lang=sv-SE)
 
 Nyckelterminologi
 
@@ -61,7 +61,7 @@ Kom igång med rollspecifik vägledning som är anpassad efter ditt ansvar och d
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/user.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/user.svg?lang=sv-SE)
 
 För marknadsförare
 
@@ -71,7 +71,7 @@ Designa kundresor, skapa kampanjer och personalisera innehåll för att engagera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
 
 För datatekniker
 
@@ -81,7 +81,7 @@ Konfigurera datastrukturer, hantera scheman och datauppsättningar och säkerst�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 För administratörer
 
@@ -110,7 +110,7 @@ Lär dig använda Journey Optimizer gränssnitt, få tillgång till viktiga funk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/search.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/search.svg?lang=sv-SE)
 
 Söka och ordna
 
@@ -141,7 +141,7 @@ Upptäck hur AI hjälper er att skapa innehåll, optimera sändningstiderna och 
 
 ### Lär dig med att göra
 
-* **[Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}** - Stegvisa videokurser som omfattar kärnfunktioner
+* **[Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}** - Stegvisa videokurser som omfattar kärnfunktioner
 * **[Använd fallspelningsböcker](../using/start/ai-features.md#playbooks)** - Förbyggda arbetsflöden för vanliga scenarier som övergiven kundvagnsåterställning och välkomstkampanjer
 * **[Dokumentationsuppdateringar](../using/rn/documentation-updates.md)** - Håll dig informerad om de senaste ändringarna och tilläggen i dokumentationen
 
@@ -175,4 +175,4 @@ Välj den sökväg som passar dig:
 
 >[!NOTE]
 >
->Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../using/administration/permissions.md) och [licenspaket](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Kontakta Adobe Customer Success Manager om du har frågor om din specifika konfiguration.
+>Vilka komponenter och funktioner som är tillgängliga i din miljö beror på dina [behörigheter](../using/administration/permissions.md) och [licenspaket](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Kontakta Adobe Customer Success Manager om du har frågor om din specifika konfiguration.
