@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: kanal, yta, teknik, parametrar, optimerare
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-source-git-commit: 722d37dc4bcb9ab7983ea336aa0b12a6a09e01dc
+source-git-commit: 29d99fd55fd31d5c4f6e86fabed2b45c0636a7b8
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1788'
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ Om du vill redigera en kanalkonfiguration följer du stegen nedan.
    >
    >Du kan också spara kanalkonfigurationen som utkast och återuppta uppdateringen senare.
 
-När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration &#x200B;](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
+När ändringarna har skickats går kanalkonfigurationen igenom en valideringscykel som liknar den som fanns när [en kanalkonfiguration ](#create-channel-surface) skapades. Versionens bearbetningstid kan ta upp till **3 timmar**.
 
 >[!NOTE]
 >
@@ -252,11 +252,17 @@ När uppdateringen misslyckas kan konfigurationen redigeras igen. Du kan klicka 
 
 ## Inaktivera en kanalkonfiguration {#deactivate-a-surface}
 
-Om du vill göra en **[!UICONTROL Active]**-kanalkonfiguration otillgänglig för att skapa nya meddelanden kan du inaktivera den. Resebudskap som för närvarande använder den här konfigurationen kommer dock inte att påverkas och kommer att fortsätta fungera.
+Om du vill göra en **[!UICONTROL Active]**-kanalkonfiguration otillgänglig för att skapa nya meddelanden kan du inaktivera den. <!--However, journeys' messages currently using this configuration will not be affected and will continue working.-->
 
->[!NOTE]
->
->Du kan inte inaktivera en kanalkonfiguration medan en uppdatering bearbetas. Du måste vänta tills uppdateringen har slutförts eller misslyckats. Läs mer om [redigering av kanalkonfigurationer](#edit-channel-surface) och om [uppdateringsstatus](#update-statuses).
+Du kan inte inaktivera en kanalkonfiguration i följande fall:
+
+* Om det hänvisas till av någon direktresa. Försök att inaktivera en konfiguration som fortfarande används av en direktresa resulterar i ett fel.
+
+  Om du vill inaktivera en kanalkonfiguration måste du se till att alla direktresor som använder den här konfigurationen stängs eller stoppas. [Lär dig att avsluta en resa](../building-journeys/end-journey.md)
+
+* En uppdatering av kanalkonfigurationen bearbetas. Du måste vänta tills uppdateringen har slutförts eller misslyckats. Läs mer om [redigering av kanalkonfigurationer](#edit-channel-surface) och om [uppdateringsstatus](#update-statuses).
+
+Följ stegen nedan för att inaktivera en kanalkonfiguration.
 
 1. Öppna listan Kanalkonfigurationer.
 
