@@ -3,14 +3,14 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Skapa en datauppsättning för att samla in händelser
 description: Lär dig hur du skapar en datauppsättning för att samla in händelser
-feature: Ranking, Decision Management, Datasets
+feature: Ranking, Datasets, Decisioning
 role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 96c1326f-be40-4738-8997-a67dc14872bb
 version: Journey Orchestration
-source-git-commit: 3fa90fa707b562ecf2160ec980520bc8bc267a21
+source-git-commit: 1735324b5fd330ecfc9261a54d0317b71d57ff4f
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Börja med att skapa schemat som ska användas i din datauppsättning:
 
 >[!NOTE]
 >
->Läs mer om att skapa scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=sv-SE#understanding-schemas){target="_blank"}.
+>Läs mer om att skapa scheman i [Grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#understanding-schemas){target="_blank"}.
 
 Du är nu redo att skapa en datauppsättning med det här schemat. Gör så här:
 

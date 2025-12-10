@@ -1,13 +1,13 @@
 ---
 title: Söka efter en rangordningsformel
 description: Med rankningsformler kan du definiera funktionerna för poängsättning, som används för att rangordna artiklar.
-feature: Decision Management, API, Collections
+feature: API, Collections, Decisioning
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: f048b2d1-d26b-4987-8acb-3558df506ec2
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: 1735324b5fd330ecfc9261a54d0317b71d57ff4f
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 1%
