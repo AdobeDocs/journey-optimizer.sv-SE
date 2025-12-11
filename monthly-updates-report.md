@@ -5,7 +5,7 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: 72506de77ca5311fd36efc5477a4c2b86e81f0e1
+source-git-commit: a65c35ee1b1257afffa617f9bcd30b06331c9f5f
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 - [Kom igång med kodbaserade upplevelser](help/using/code-based/get-started-code-based.md) - 22 nov
 - [Förhandsgranska och testa ditt innehåll](help/using/content-management/preview.md) - 22 nov
 - [Webbkanalskonfiguration](help/using/web/web-configuration.md) - 22 nov
-- [Skapa en testprofil](help/using/building-journeys/creating-test-profiles.md) - 22 nov
+- [Skapa en testprofil](help/using/audience/creating-test-profiles.md) - 22 nov
 - [Skicka korrektur](help/using/content-management/proofs.md) - 22 november
 - [Testa innehållsmallar](help/using/content-management/test-content-templates.md) - 22 nov
 - [Använd testprofiler](help/using/content-management/test-profiles.md) - 22 nov
@@ -67,7 +67,7 @@ ht-degree: 0%
 - [Beslut om CJA-rapportering](help/using/experience-decisioning/cja-reporting.md) - 15 nov
 - [Fragment](help/using/content-management/fragments.md) - 15 nov
 - [Kom igång med Adobe Experience Platform-målgrupper](help/using/audience/about-audiences.md) - 14 november
-- [Använd anpassade överförda målgrupper för beslut (federerad komposition)](help/using/audience/custom-upload-fac.md) - 14 nov
+- [Använd anpassade överförda målgrupper för beslut (federerad komposition)](help/using/audience/custom-upload.md) - 14 nov
 - [Konfigurera Sinch-provider](help/using/sms/sms-configuration-sinch.md) - 12 nov
 - [Kampanjrapporter i Customer Journey Analytics](help/using/reports/channel-report-cja.md) - 12 nov
 - [Reserapporter i Customer Journey Analytics](help/using/reports/journey-global-report-cja.md) - 12 nov
@@ -78,10 +78,10 @@ ht-degree: 0%
 - [Kom igång med beslutsprinciper](help/using/experience-decisioning/create-decision.md) - 7 nov
 - [Kom igång med Experience Decision](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
 - [Beslutsobjekt](help/using/experience-decisioning/items.md) - 7 nov
-- [Bestämmer rangordningsmetoder](help/using/experience-decisioning/ranking.md) - 7 nov
+- [Bestämmer rangordningsmetoder](help/using/experience-decisioning/ranking/ranking.md) - 7 nov
 - [Skapa regler](help/using/experience-decisioning/rules.md) - 7 nov
 - [Skapa markeringsstrategier](help/using/experience-decisioning/selection-strategies.md) - 7 nov
-- [Arbeta med regeluppsättningar](help/using/configuration/rule-sets.md) - 6 nov
+- [Arbeta med regeluppsättningar](help/using/conflict-prioritization/rule-sets.md) - 6 nov
 - [Skapa beslut](help/using/offers/offer-activities/create-offer-activities.md) - 5 nov
 - [Skapa en samling](help/using/offers/offer-library/creating-collections.md) - nov 5
 - [Skapa personaliserade erbjudanden](help/using/offers/offer-library/creating-personalized-offers.md) - 5 nov
@@ -158,7 +158,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
