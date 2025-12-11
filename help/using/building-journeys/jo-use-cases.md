@@ -9,9 +9,9 @@ level: Intermediate, Experienced
 keywords: användningsfall, flerkanal, resa, event
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
 version: Journey Orchestration
-source-git-commit: b0b297ed33ab273a3201569760e1d2db5b3ccaad
+source-git-commit: 970712614b0d4da37d9ecbe45701f93147b1428c
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -149,34 +149,34 @@ Bläddra bland självstudiekurser på video och lär dig hur du bygger de vanlig
     <td>
       <img src="../assets/do-not-localize/icon-quick-start.svg" width="35px">
     <br/>
-      <strong>Kundintroduktion</strong><br/><p>Lär dig implementera en kundintroduktionsresa i Journey Optimizer.</p> - <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">Titta på fallvideon </a>
+      <strong>Kundintroduktion</strong><br/><p>Lär dig implementera en kundintroduktionsresa i Journey Optimizer.</p> - <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">Titta på fallvideon </a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-campaign.svg" width="35px">
     <br/>
-      <strong> Övergiven varukorg </strong><br/><p>Lär dig hur du implementerar det övergivna användningsexemplet för kundvagn med Playbook-funktionen i Adobe Journey Optimizer.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">Titta på fallvideon </a>
+      <strong> Övergiven varukorg </strong><br/><p>Lär dig hur du implementerar det övergivna användningsexemplet för kundvagn med Playbook-funktionen i Adobe Journey Optimizer.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">Titta på fallvideon </a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-content.svg" width="35px">
     <br/>
-      <strong>Återengagemang</strong><br/><p>Läs om hur Adobe anpassade användningen av intelligent återanvändning till att fungera med Lumas demosajt och byggde vidare på den grundläggande implementeringen som beskrivs i självstudiekursen om dataarkitektur och dataingenjörsvetenskap samt i självstudiekursen om Experience Platform Web SDK.</p><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma" target="_blank">Titta på fallvideor</a> 
+      <strong>Återengagemang</strong><br/><p>Läs om hur Adobe anpassade användningen av intelligent återanvändning till att fungera med Lumas demosajt och byggde vidare på den grundläggande implementeringen som beskrivs i självstudiekursen om dataarkitektur och dataingenjörsvetenskap samt i självstudiekursen om Experience Platform Web SDK.</p><a href="https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma" target="_blank">Titta på fallvideor</a> 
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="../assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Erbjudandepersonalisering i realtid</strong><br/><p>Genom att använda väderrelaterade data i Adobe Journey Optimizer för att leverera erbjudanden kan företag personalisera kundupplevelser baserat på miljöförhållanden i realtid.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction" target="_blank">Följ den stegvisa självstudiekursen</a>
+      <strong>Erbjudandepersonalisering i realtid</strong><br/><p>Genom att använda väderrelaterade data i Adobe Journey Optimizer för att leverera erbjudanden kan företag personalisera kundupplevelser baserat på miljöförhållanden i realtid.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction" target="_blank">Följ den stegvisa självstudiekursen</a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>Spåra och rapportera erbjudanden via beslut</strong><br/><p>Aktivera rapportering och resultatanalys för erbjudanden som levereras via Adobe Journey Optimizer: när erbjudandena personaliseras och levereras baserat på kontextuella signaler är det viktigt att spåra både visningar och användarinteraktioner för att utvärdera deras effektivitet.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/reporting-on-ajo-od/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
+      <strong>Spåra och rapportera erbjudanden via beslut</strong><br/><p>Aktivera rapportering och resultatanalys för erbjudanden som levereras via Adobe Journey Optimizer: när erbjudandena personaliseras och levereras baserat på kontextuella signaler är det viktigt att spåra både visningar och användarinteraktioner för att utvärdera deras effektivitet.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/reporting-on-ajo-od/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
     </td>
     <td>
       <img src="../assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>Anpassa erbjudanden med rankningsformler </strong><br/><p>Läs om hur ni kan leverera personaliserade ekonomiska erbjudanden genom att utnyttja användarattribut som ZIP-kod och årsintäkter inom Adobe Journey Optimizer. Genom att använda rankningsformler kan erbjudandena poängsättas och prioriteras utifrån platsspecifika kampanjer och inkomstbaserad kvalificering.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
+      <strong>Anpassa erbjudanden med rankningsformler </strong><br/><p>Läs om hur ni kan leverera personaliserade ekonomiska erbjudanden genom att utnyttja användarattribut som ZIP-kod och årsintäkter inom Adobe Journey Optimizer. Genom att använda rankningsformler kan erbjudandena poängsättas och prioriteras utifrån platsspecifika kampanjer och inkomstbaserad kvalificering.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
     </td>
   </tr>
 </table>
@@ -199,7 +199,6 @@ Bläddra bland följande blogginlägg för att hitta mer vägledning och bästa 
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">God praxis: Läs målgruppsresor</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270" target="_blank">Användningsfall: Testa dina resor</a></p>
 <p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/deliver-with-confidence-approval-workflows-across-adobe-journey/ba-p/760900" target="_blank">Användningsfall: Arbetsflöden för godkännande</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958" target="_blank">Community-blogg: Villkor för inträde och utträde på resa</a> - Se även vår omfattande guide <a href="entry-exit-criteria-guide.md">Villkor för inträde och utträde på resa</a> med verkliga exempel, bästa praxis och fullständiga konfigurationsinstruktioner</p>
 </div>
 <p>
 </td>
