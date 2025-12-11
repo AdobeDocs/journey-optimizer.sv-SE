@@ -50,7 +50,7 @@ ht-degree: 15%
 + Resor {#orchestrate-journeys}
    + [Resor](/help/rp_landing_pages/orchestrate-journeys-landing-page.md)
    + [Kom igång med resor](using/building-journeys/journey.md)
-   + [Journey Orchestration - fullständig guide](using/building-journeys/journey-get-started.md){hide="yes"}
+   + [Journey Orchestration - fullständig guidehide="yes"](using/building-journeys/journey-get-started.md)
    + [Journeys FAQ](using/building-journeys/journey-faq.md)
    + Skapa en resa {#create-journey}
       + [Skapa en resa](/help/rp_landing_pages/create-journey-landing-page.md)
