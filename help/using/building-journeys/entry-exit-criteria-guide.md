@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: inträde, utförsel, kriterier, resa, profil, återinträde, bästa praxis
 version: Journey Orchestration
-source-git-commit: 970712614b0d4da37d9ecbe45701f93147b1428c
+source-git-commit: a60ea57ffed3fa9e11dc202f26889d05862604d9
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,15 @@ Här följer vanliga scenarier som visar hur start- och slutkriterier fungerar i
 
 **Välkomstkampanj för nya prenumeranter**
 
+Skapa ett personligt första intryck genom att automatiskt vägleda nya prenumeranter genom en introduktion till ert varumärke, era produkter och era tjänster.
+
 * **Post**: Profiler går in på resan när de prenumererar på ett nyhetsbrev
 * **Avsluta**: Profilerna avslutas när de har slutfört en välkomstserie med e-postmeddelanden eller efter en angiven tid om de inte engagerar
 * **Fördelar**: Ser till att nya prenumeranter får snabb introduktion samtidigt som repetitiva meddelanden undviks
 
 **Övergiven kundvagnsåterställning**
+
+Återvinn förlorade intäkter genom att påminna kunderna om artiklar de lämnat och ge incitament att slutföra köpet.
 
 * **Post**: Kunder anger resan om de lägger till artiklar i en kundvagn men inte slutför utcheckningen inom 24 timmar
 * **Avsluta**: Profilerna avslutas när köpet har slutförts eller efter 7 dagar om inget köp har gjorts
@@ -76,11 +80,15 @@ Här följer vanliga scenarier som visar hur start- och slutkriterier fungerar i
 
 **Förmånsprogramsengagemang**
 
+Belöna era mest värdefulla kunder med exklusiva fördelar och personlig kommunikation som stärker varumärkeslojaliteten och ökar livstidsvärdet.
+
 * **Post**: Kunder ansluter sig till resan efter att ha uppnått ett visst tröskelvärde för förmånspoäng
 * **Avsluta**: Profilerna avslutas efter att du har gjort om belöningar eller om de varit inaktiva i 60 dagar
 * **Fördelar**: håller värdefulla kunder engagerade med personaliserade erbjudanden och undviker kommunikationströtthet
 
 **Samling med produktfeedback**
+
+Samla in insikter om kundnöjdhet och produktresultat genom att begära feedback vid det rätta tillfället efter leveransen.
 
 * **Post**: Kunder anger resan efter att ha tagit emot en bekräftelsehändelse för produktleverans
 * **Avsluta**: Profilerna avslutas när feedback skickas eller efter 10 dagar om inget svar ges
@@ -124,11 +132,11 @@ Här följer vanliga scenarier som visar hur start- och slutkriterier fungerar i
 
 Använd följande dokumenterade användningsexempel för stegvis implementeringsvägledning med fullständig teknisk information:
 
-* **[Kundintroduktionsresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
+* **[Kundintroduktionsresa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
 
-* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
+* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
 
-* **[Återengagemangskampanjer](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
+* **[Återengagemangskampanjer](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
 
 * **[Skicka meddelanden till prenumeranter](message-to-subscribers-uc.md)** - Målprenumerationslistor med Läs publik och personaliserat innehåll
 
@@ -188,26 +196,12 @@ Börja med att tydligt kartlägga kundens triggers och exitpunkter, testa noggra
 
 **Teknisk dokumentation**
 
-* [Profilingångshantering](entry-management.md) - Detaljerad teknisk guide för ingångskontroller
-* [Reseegenskaper och avslutningskriterier](journey-properties.md) - fullständig konfigurationsreferens
-* [Hur resor avslutas](end-journey.md) - Livscykelhantering för resor
-* [Ytterligare identifierare](supplemental-identifier.md) - Avancerade scenarier för återinträde
-* [Resedesigner](using-the-journey-designer.md) - Bygg- och designresor
+[Profilingångshantering](entry-management.md) | [ Reseegenskaper och avslutningskriterier ](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
 
 **Självstudiekurser och exempel**
 
-* [Användningsexempel på resan](jo-use-cases.md) - Fullständiga exempel och mönster på resan
-* [Video om kundintroduktion](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
-* [Övergiven kundvagnsvideo](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
-* [Community-blogg: Inmatnings- och avslutsvillkor](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
+[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo ](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
 
 **Relaterade funktioner**
 
-* [Elevkvalificeringshändelser](audience-qualification-events.md)
-* [Resultatstatistik och mål](success-metrics.md)
-* [Konflikthantering](../conflict-prioritization/conflicts.md)
-* [Frekvensbegränsning](../conflict-prioritization/rule-sets.md)
-* [Testa resor](testing-the-journey.md)
-* [Villkorsaktivitet](condition-activity.md)
-* [Reaktionshändelser](reaction-events.md)
-* [Vänta på aktivitet](wait-activity.md)
+[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål ](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)
