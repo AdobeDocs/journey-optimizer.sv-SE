@@ -6,30 +6,39 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 8ca1c995bc38b110fa07573f922906c775fd5e6f
+source-git-commit: cdf9eadc36d7e7b3538690a7a165bc39eccc40b5
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2458'
 ht-degree: 0%
 
 ---
 
 # Kom igång med hjälp av hjälpfunktioner{#functions}
 
-Använd mallspråket [!DNL Journey Optimizer] för att utföra dataåtgärder, till exempel beräkningar, dataformatering eller konvertering, villkor och ändra dem i personaliseringssammanhang. Lär dig riktlinjerna för syntaxen för personalisering på [den här sidan](../personalization-syntax.md).
+Hjälpfunktionerna gör att ni kan omvandla och hantera data i ert personaliserade innehåll. Använd dem för att utföra beräkningar, formatera data, tillämpa villkor och utföra olika åtgärder för att skapa dynamiska, skräddarsydda upplevelser för era kunder.
+
+Dessa funktioner utnyttjar mallspråket [!DNL Journey Optimizer]. Läs mer om riktlinjerna för syntaxen för personalisering på [den här sidan](../personalization-syntax.md).
 
 ➡️ [Lär dig använda hjälpfunktioner i den här videon](#video)
 
-Mallspråk används i hjälpfunktioner som finns i personaliseringslistrutan i personaliseringsredigeraren, enligt nedan:
+## Få tillgång till hjälpfunktioner
+
+Hjälpfunktioner finns på personaliseringsredigerarens funktionsmeny:
 
 ![](../assets/access-helper-functions.png)
 
-Hjälpfunktionerna i redigeraren för anpassning av [!DNL Journey Optimizer] är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpprogram](#helper-helper) och [Operatorer](#operators-helper).
+Funktionerna är ordnade i tre kategorier för enkel navigering:
 
-Välj en kategori för att komma åt underkategorier och funktioner.
+* **[Funktioner](#functions-helper)** - Datamanipulerings- och omformningsåtgärder
+* **[Hjälpprogram](#helper-helper)** - Villkorlig logik och verktygsfunktioner
+* **[Operatorer](#operators-helper)** - jämförelseoperatorer och logiska operatorer
 
-Du får åtkomst till underkategorier genom att klicka på ikonen `>`. Välj en funktion genom att klicka på ikonen `+`: funktionen läggs automatiskt till på anpassningsskärmen.
+**Så här använder du en hjälpfunktion:**
 
-Klicka på ikonen `...` för att visa beskrivningen av funktionen och lägga till den i dina favoriter. [Läs mer](../personalize.md#fav)
+1. Välj en kategori för att visa dess underkategorier och tillgängliga funktioner
+1. Klicka på ikonen `>` för att expandera underkategorier
+1. Klicka på ikonen `+` bredvid en funktion för att lägga till den i din personaliseringskod
+1. Klicka på ikonen `...` om du vill visa funktionsbeskrivningen eller lägga till den i dina favoriter. [Läs mer](../personalize.md#fav)
 
 >[!NOTE]
 >
