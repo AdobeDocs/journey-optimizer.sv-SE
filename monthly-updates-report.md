@@ -5,7 +5,7 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: a65c35ee1b1257afffa617f9bcd30b06331c9f5f
+source-git-commit: 3f0da68c95a1fbd5b3cf6beaa38eae1a475ab941
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## Uppdaterade sidor
 
-- [Sök efter Adobe Experience Platform-data för personalisering](help/using/personalization/lookup-aep-data.md) - 10 dec
+- [Sök efter Adobe Experience Platform-data för personalisering](help/using/data/lookup-aep-data.md) - 10 dec
 - [Konfigurera mobilprogram](help/using/configuration/set-mobile-config.md) - dec 6
 - [Flerspråkigt innehåll med manuell översättning](help/using/content-management/multilingual-provider.md) - dec 5
 - [Använd beslut i dina kodbaserade upplevelser](help/using/experience-decisioning/experience-decisioning-uc.md) - dec 3
@@ -158,7 +158,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
