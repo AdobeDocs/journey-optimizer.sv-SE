@@ -34,7 +34,7 @@ Om du vill infoga en länk för att avbryta prenumerationen i ditt e-postinnehå
 
 När en mottagare klickar på avanmälningslänken behandlas deras avanmälningsförfrågan därefter.
 
-Om du vill kontrollera att den motsvarande profilens val har uppdaterats går du till Experience Platform och [bläddrar till profilen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide?lang=en#browse-tab){target="_blank"}. På fliken [Attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes){target="_blank"} kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**. Läs mer om godkännandebearbetning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html){target="_blank"}.
+Om du vill kontrollera att den motsvarande profilens val har uppdaterats går du till Experience Platform och [bläddrar till profilen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide?lang=en#browse-tab){target="_blank"}. På fliken [Attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide#attributes){target="_blank"} kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**. Läs mer om godkännandebearbetning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=sv-SE){target="_blank"}.
 
 ![](assets/opt-out-profile-choice.png)
 
