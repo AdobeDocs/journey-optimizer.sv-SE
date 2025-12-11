@@ -66,7 +66,7 @@ Utnyttja **sammanhangsbaserade data** från händelser, information från Adobe 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg?lang=sv-SE)
 
 **Inbyggda åtgärder**
 
@@ -76,7 +76,7 @@ Använd **inbyggda kanalåtgärder** för att skicka meddelanden som är utforma
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
 
 **Anpassade åtgärder**
 
@@ -128,7 +128,7 @@ Skicka en personlig välkomstresa när kunderna prenumererar på tjänsten och v
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar.svg?lang=sv-SE)
 
 **Optimera e-posttider**
 
@@ -184,7 +184,7 @@ Identifiera komponenterna i en resa och förstå grunderna för hur man bygger e
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 **Skapa och hantera resor**
 
@@ -194,7 +194,7 @@ Stegvisa riktlinjer för att utforma, testa, publicera och spåra kundresor för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 **Reseaktiviteter**
 
@@ -204,7 +204,7 @@ Upptäck hur ni konfigurerar och använder aktiviteter som triggers, beslutssteg
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 **Uttryck och villkor**
 
@@ -231,7 +231,7 @@ Diagnostisera och åtgärda problem med körning av resor med verktyg, felkoder 
 * **[Felkodsreferens](error-codes-reference.md)** - Resefelkoder och felsökningssteg
 * **[Varningar](../reports/alerts.md)** - Konfigurera aviseringar för reseövervakning
 * **[Felsökning](troubleshooting.md)** - Vanliga reseproblem och lösningar
-* **[Självstudiekurser på resa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resor med praktiska videokurser
+* **[Självstudiekurser på resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resor med praktiska videokurser
 
 >[!ENDTABS]
 
