@@ -8,9 +8,9 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 85cfc6d19c60f7aa04f052c84efa03480868d179
+source-git-commit: 81d8d068f1337516adc76c852225fd7850a292e8
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2749'
 ht-degree: 0%
 
 ---
@@ -123,6 +123,64 @@ WHERE (
 AND _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
 AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
 ```
+
++++
+
++++Visa steghändelser för ignorerade profiler
+
+Den här frågan returnerar information om steghändelser för profiler som har tagits bort från en resa. Det hjälper till att identifiera varför profiler ignorerades, till exempel på grund av affärsregler eller tysta tidsbegränsningar. Frågefiltren innehåller specifika typer av ignorerade händelser och visar viktig information, inklusive profil-ID, instans-ID, reseinformation och felet som orsakade ignoreringen.
+
+_Datasjöfråga_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.profileID,
+    _experience.journeyOrchestration.stepEvents.instanceID,
+    _experience.journeyOrchestration.stepEvents.journeyID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.actionExecutionError,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    DATE(timestamp),
+    timestamp
+FROM journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = '<eventType>' AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>' AND
+    _experience.journeyOrchestration.stepEvents.instanceID = '<instanceID>';
+```
+
+_Exempel_
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.profileID,
+    _experience.journeyOrchestration.stepEvents.instanceID,
+    _experience.journeyOrchestration.stepEvents.journeyID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.actionExecutionError,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    DATE(timestamp),
+    timestamp
+FROM journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'quietHours' AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID = '6f21a072-6235-4c39-9f6a-9d9f3f3b2c3a' AND
+    _experience.journeyOrchestration.stepEvents.instanceID = 'unitary_089dc93a-1970-4875-9660-22433b18e500';
+```
+
+![Exempelfrågeresultat som visar ignorerade profildetaljer](assets/query-discarded-profiles.png)
+
+Frågeresultaten visar nyckelfält som hjälper till att identifiera orsaken till att en profil tas bort:
+
+* **actionExecutionError** - Om värdet är `businessRuleProfileDiscarded` ignoreras profilen på grund av en affärsregel. Fältet `eventType` innehåller ytterligare information om vilken specifik affärsregel som orsakade borttagningen.
+
+* **eventType** - Anger vilken typ av affärsregel som orsakade borttagningen:
+   * `quietHours`: Profilen ignorerades på grund av konfigurationen för tysta timmar
+   * `forcedDiscardDueToQuietHours`: Profilen tvingades ignoreras eftersom skyddsgränsen nåddes för profiler som hålls i tysta timmar
 
 +++
 
