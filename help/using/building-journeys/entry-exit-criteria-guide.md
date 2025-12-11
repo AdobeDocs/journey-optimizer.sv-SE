@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 keywords: inträde, utförsel, kriterier, resa, profil, återinträde, bästa praxis
 version: Journey Orchestration
-source-git-commit: a60ea57ffed3fa9e11dc202f26889d05862604d9
+source-git-commit: d1c7c9d454497f0d3c0ec75663d01aac91378d65
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,11 @@ Samla in insikter om kundnöjdhet och produktresultat genom att begära feedback
 
 Använd följande dokumenterade användningsexempel för stegvis implementeringsvägledning med fullständig teknisk information:
 
-* **[Kundintroduktionsresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
+* **[Kundintroduktionsresa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
 
-* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
+* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
 
-* **[Återengagemangskampanjer](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
+* **[Återengagemangskampanjer](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
 
 * **[Skicka meddelanden till prenumeranter](message-to-subscribers-uc.md)** - Målprenumerationslistor med Läs publik och personaliserat innehåll
 
@@ -152,6 +152,8 @@ Använd följande dokumenterade användningsexempel för stegvis implementerings
 
 **Radera definition**
 
+Upprätta tydlig dokumentation och namnkonventioner för att säkerställa att teamet förstår hur profiler rör sig genom era resor:
+
 * Dokumentera era era in- och utresegleringslogik innan ni bygger upp resor för att anpassa marknadsförings- och analysteam
 * Skapa flödesscheman med ingångspunkter, resvägar och avslutningsvillkor
 * Definiera tydligt affärsregler:&quot;Profilerna avslutas när X inträffar ELLER efter Y-dagar&quot;
@@ -159,6 +161,8 @@ Använd följande dokumenterade användningsexempel för stegvis implementerings
 * [Tagga resor](../start/search-filter-categorize.md#tags) konsekvent för rapportering och filtrering
 
 **Undvik överlappande resor**
+
+Förhindra förvirring och meddelandekonflikter mellan kunder genom att samordna er strategi för olika kampanjer:
 
 * [Granska aktiva resor](journey-ui.md) innan liknande startas för att förhindra konflikter
 * Utnyttja [konflikthantering](../conflict-prioritization/conflicts.md) och [prioritetspoäng](../conflict-prioritization/priority-scores.md) för att lösa överlappningar och prioritera resor
@@ -170,6 +174,8 @@ Använd följande dokumenterade användningsexempel för stegvis implementerings
 
 **Övervaka och optimera**
 
+Kontinuerlig utvärdering av reseprestanda och förfina era kriterier för inträde och utträde baserat på kundbeteende:
+
 * Spåra ingångs-, avslutnings- och slutförandefrekvens för varje resa med [reserapporter](../reports/journey-global-report-cja.md)
 * Övervaka [framgångsmått](success-metrics.md): procentandelen som avslutas via måttet för lyckad åtgärd kontra tidsgränsen
 * [Testa start- och avslutsvillkor](testing-the-journey.md) med olika profilscenarier innan du startar
@@ -177,6 +183,8 @@ Använd följande dokumenterade användningsexempel för stegvis implementerings
 * Granska alla aktiva resor kvartalsvis
 
 **Respektera frekvensändar**
+
+Bevara kundernas förtroende och engagemang genom att styra meddelanderefrekvensen i all kommunikation under resan:
 
 * Ange lämpliga [vänteperioder för återinträde](entry-management.md) eller inaktivera återinträde för engångsresor
 * Använd [regler för frekvensbegränsning](../conflict-prioritization/rule-sets.md) för att förhindra överkommunikation
@@ -196,12 +204,12 @@ Börja med att tydligt kartlägga kundens triggers och exitpunkter, testa noggra
 
 **Teknisk dokumentation**
 
-[Profilingångshantering](entry-management.md) | [&#x200B; Reseegenskaper och avslutningskriterier &#x200B;](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
+[Profilingångshantering](entry-management.md) | [ Reseegenskaper och avslutningskriterier ](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
 
 **Självstudiekurser och exempel**
 
-[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
+[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo ](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
 
 **Relaterade funktioner**
 
-[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål &#x200B;](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)
+[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål ](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)
