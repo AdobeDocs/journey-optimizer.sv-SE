@@ -5,7 +5,7 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: 856f35ebd70f38065e9b116bb648de1f2c2d439a
+source-git-commit: 6c1df24a1184fb7f3fb5e6b2a2cbb3b77015b4bc
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 0%
@@ -95,8 +95,6 @@ ht-degree: 0%
 - [Skapa placeringar](help/using/offers/offer-library/creating-placements.md) - 5 nov
 - [Skapa rankningsstrategier](help/using/offers/ranking/create-ranking-strategies.md) - 5 nov
 
-&#x200B;---
-
 ## Föregående rapport: 1 oktober - 3 november 2025
 
 ### Nya sidor
@@ -167,7 +165,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
