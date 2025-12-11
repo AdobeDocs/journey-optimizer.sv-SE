@@ -95,7 +95,7 @@ ht-degree: 0%
 - [Skapa placeringar](help/using/offers/offer-library/creating-placements.md) - 5 nov
 - [Skapa rankningsstrategier](help/using/offers/ranking/create-ranking-strategies.md) - 5 nov
 
----
+&#x200B;---
 
 ## Föregående rapport: 1 oktober - 3 november 2025
 
@@ -167,7 +167,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
