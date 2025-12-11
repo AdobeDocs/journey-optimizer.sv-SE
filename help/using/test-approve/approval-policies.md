@@ -5,15 +5,14 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
-source-git-commit: 471fb04fd1cbaff0db827d1f5320577103b35d33
+source-git-commit: b70233b3ac1741fa645a426fba3c6bd3175b13a0
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
 
 # Skapa och hantera godkännandepolicyer {#approval-policies}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_approval"
@@ -25,12 +24,13 @@ ht-degree: 1%
 >title="Begär ändring"
 >abstract="Begär ändring"
 
-
 >[!NOTE]
 >
->Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home)
+>Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 
-Med godkännandeprinciper kan administratörer upprätta en valideringsprocess för resor och kampanjer. Det här systemet anger specifika villkor som avgör om en resa eller kampanj kräver godkännande. Dessa profiler kan variera i komplexitet, från att kräva att alla kampanjer granskas av en viss användare eller team, till att fastställa kriterier baserade på vem som skapade kampanjen.
+Med godkännandeprinciper kan administratörer upprätta en valideringsprocess för resor och kampanjer. Det här systemet anger specifika villkor som avgör om en resa eller kampanj kräver godkännande. Dessa profiler kan variera i komplexitet. De kan helt enkelt kräva att alla kampanjer granskas av en viss användare eller ett visst team, eller fastställa kriterier baserat på vem som skapade kampanjen.
+
+Du kan rikta in godkännandepolicyer med hjälp av flexibla kriterier som taggar, kampanj-/resenamn, kanaltyper eller begärandeinformation. Du kan till exempel kräva godkännande för alla objekt som är taggade med&quot;hög risk&quot; eller för alla kampanjer som matchar ett visst namnmönster.
 
 ## Skapa godkännandepolicyer {#create-policies}
 
@@ -41,9 +41,9 @@ Med godkännandeprinciper kan administratörer upprätta en valideringsprocess f
 
 Så här skapar du en godkännandeprincip:
 
-1. Gå till **[!UICONTROL Administration]** och sedan **[!UICONTROL Permissions]** från menyn **[!UICONTROL Policies]** i Journey Optimizer.
+1. Gå till **[!UICONTROL Administration]** och sedan [!DNL Journey Optimizer] från menyn **[!UICONTROL Permissions]** i **[!UICONTROL Policies]**.
 
-   ![](assets/policy_create_1.png)
+   ![Skapa knapp för godkännandeprincip på menyn Behörigheter](assets/policy_create_1.png)
 
 1. Klicka på **[!UICONTROL Create]** på fliken **[!UICONTROL Approval Policy]**, välj **[!UICONTROL Approval Policy]** och klicka på **[!UICONTROL Confirm]**.
 
@@ -61,6 +61,14 @@ Du kan nu förfina villkoren för att ange vem som kan initiera godkännandebeg�
 
 ## Ange villkor för godkännandeprofiler {#conditions}
 
+Godkännandepolicyer erbjuder flexibla alternativ för målinriktning som passar era styrningsbehov. Du kan skapa godkännandeprofiler baserat på olika kriterier, bland annat:
+
+* **Kampanj-/resenamn**: Målspecifika objekt efter namn
+* **Taggar**: Använd principer för alla kampanjer eller resor med en viss tagg
+* **Kanaltyper**: Kräv godkännande för specifika åtgärder (e-post, SMS, push osv.)
+* **Kampanjtyper**: Ange andra regler för schemalagda eller API-utlösta kampanjer
+* **Beställare**: Definiera principer baserat på vem som skapar kampanjen eller resan
+
 Följ de här stegen för att definiera villkoren som är kopplade till en godkännandeprincip:
 
 1. Få åtkomst till din **[!UICONTROL Approval policy]**.
@@ -69,9 +77,9 @@ Följ de här stegen för att definiera villkoren som är kopplade till en godk�
 
 1. Välj lämplig **[!UICONTROL Category]**, **[!UICONTROL Matching Rule]** och **[!UICONTROL Options]**.
 
-   Exempel:&quot;if Action match any Direct Mail&quot; eller&quot;If Requestor User name match John Do.&quot;
+   Exempel:&quot;if Action match any Direct Mail&quot; eller&quot;If Requestor User name match John Doe.&quot;
 
-   ![](assets/policy_condition_1.png)
+   ![Gränssnitt för villkorsbyggare för godkännandeprincip](assets/policy_condition_1.png)
 
    +++ Läs mer om tillgängliga kategorier och alternativ
    <table>
@@ -124,14 +132,13 @@ Följ de här stegen för att definiera villkoren som är kopplade till en godk�
     </tr>
     <tr>
     <td>Användarnamn för begärande</td>
-    <td>Namn och e-postadress för den som gjort begäran</td>
+    <td>Den utsedda begärarens namn och e-postadress</td>
     </tr>
     <tr>
     <td>Användargrupp för begärande</td>
-    <td>Namn på användargruppen med designade beställare</td>
+    <td>Namn på användargruppen med utsedda beställare</td>
     </tr>
     </table>
-
 
 1. Om du vill lägga till fler villkor klickar du på **[!UICONTROL Add condition]** för att definiera ytterligare regler och väljer antingen **[!UICONTROL And]** eller **[!UICONTROL Or]** för att ange hur villkoren ska anslutas.
 
@@ -143,7 +150,7 @@ Följ de här stegen för att definiera villkoren som är kopplade till en godk�
 
    Den valda användaren eller användargruppen ansvarar för att validera godkännandebegäran.
 
-   ![](assets/policy_condition_2.png)
+   ![Gränssnitt för mottagarval för godkännandebegäran](assets/policy_condition_2.png)
 
 1. Om du vill lägga till fler villkor klickar du på **[!UICONTROL Add condition]** för att definiera ytterligare regler och väljer antingen **[!UICONTROL And]** eller **[!UICONTROL Or]** för att ange hur villkoren ska anslutas.
 
@@ -163,8 +170,8 @@ Om du vill tillämpa din godkännandeprincip måste du aktivera den. Gör så h�
    >
    >När du har aktiverat profiler kan de inte redigeras. Om du vill ändra villkoren måste du först inaktivera principen.
 
-   ![](assets/policy_activate_1.png)
+   ![Aktivera principknapp för godkännande](assets/policy_activate_1.png)
 
 1. Öppna de avancerade alternativen på menyn **[!UICONTROL Policy]** till **[!UICONTROL Edit]**, **[!UICONTROL Deactivate]** eller **[!UICONTROL Duplicate]** profilen efter behov.
 
-   ![](assets/policy_activate_2.png)
+   ![Alternativ för hantering av godkännandeprincip](assets/policy_activate_2.png)
