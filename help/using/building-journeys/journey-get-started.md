@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 keywords: resa, orkestrering, komma igång, introduktion, funktioner
-source-git-commit: 902790b2e172ef02e868592794fc110d3e14ac07
+source-git-commit: 856f35ebd70f38065e9b116bb648de1f2c2d439a
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '896'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,6 @@ Med resor i Adobe Journey Optimizer kan ni skapa personaliserade kundresor i fle
 
 Oavsett om ni utforskar triggers i realtid, hanterar reseegenskaper eller använder avancerade verktyg som anpassade åtgärder och uttryck, ger den här guiden en tydlig färdplan för att utforma och förfina resor som levererar meningsfulla och vältajmade kundupplevelser.
 
-➡️ [Upptäck Journey Optimizer i video](#video)
-
->[!BEGINTABS]
-
->[!TAB Översikt]
-
 ## Vad är resor?
 
 Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor. Utforma avancerade scenarier i flera steg som svarar på kundbeteenden och affärshändelser i realtid.
@@ -39,14 +33,44 @@ Journey Optimizer resedesigner har allt som marknadsförare och reseansvariga be
 
 **Vill du börja bygga?** Lär dig hur du skapar och utformar din första resa på [den här sidan](journey-gs.md).
 
->[!TAB Nyckelfunktioner]
+## Komma igång med resor {#section-getting-started}
 
-## Vad kan du göra med resor?
+Utforska de viktigaste områdena för att bemästra resesamordning i Adobe Journey Optimizer.
+
+>[!BEGINTABS]
+
+>[!TAB Skapa din första resa]
+
+Lär dig hur du skapar och designar din första resa från grunden, inklusive hur du ställer in händelser, lägger till aktiviteter och testar före publicering.
+
+[![läs mer](../assets/do-not-localize/learn-more-button.svg)](journey-gs.md)
+
+>[!TAB Viktiga möjligheter]
+
+Upptäck vad du kan göra på resorna: leverans i realtid, kontextuella data, inbyggda och anpassade åtgärder, visuell design och testningsfunktioner.
+
+[![läs mer](../assets/do-not-localize/learn-more-button.svg)](#capabilities)
+
+>[!TAB Användningsfall]
+
+Utforska exempel på resor i realtid, inklusive välkomstmeddelanden, optimering av sändningstid, uppgraderingsleveranser och målinriktning veckodag.
+
+[![läs mer](../assets/do-not-localize/learn-more-button.svg)](#use-cases)
+
+>[!TAB Utbildningsresurser]
+
+Få tillgång till videokurser, stegvisa guider och dokumentation som lär dig hur du skapar och felsöker resor.
+
+[![läs mer](../assets/do-not-localize/learn-more-button.svg)](#learning-resources)
+
+>[!ENDTABS]
+
+## Viktiga funktioner {#capabilities}
 
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/send-real-time.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 **Realtid och batchleverans**
 
@@ -56,7 +80,7 @@ Skicka **enhetsleverans** i realtid när en händelse tas emot, eller **i batch*
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 **Sammanhangsberoende data**
 
@@ -66,7 +90,7 @@ Utnyttja **sammanhangsbaserade data** från händelser, information från Adobe 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/message.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 **Inbyggda åtgärder**
 
@@ -76,7 +100,7 @@ Använd **inbyggda kanalåtgärder** för att skicka meddelanden som är utforma
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Anpassade åtgärder**
 
@@ -86,7 +110,7 @@ Skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att sk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/canvas.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/layout.svg)
 
 **Designer för visuell resa**
 
@@ -96,7 +120,7 @@ Med **resedesignern** kan du skapa dina flerstegsfall: enkelt dra och släppa en
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/test.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Testa och optimera**
 
@@ -107,9 +131,7 @@ Testa dina resor innan du publicerar, övervaka deras prestanda och optimera lev
 
 ::::
 
->[!TAB Användningsexempel]
-
-## Exempel på verkliga resor
+## Användningsexempel {#use-cases}
 
 Inom resedesignern kan marknadsförarna skicka :1-meddelanden i realtid via valfri kanal när en händelse inträffar. När en kund prenumererar på en tjänst kan den till exempel [utlösa ett välkomstmeddelande](message-to-subscribers-uc.md) som uppmanar dem att logga in i appen för första gången och ange sina inställningar. Åtgärder som att slutföra köpet, öppna e-postmeddelandet och logga in i appen kan användas för att locka nya kunder genom deras resor.
 
@@ -118,7 +140,7 @@ Inom resedesignern kan marknadsförarna skicka :1-meddelanden i realtid via valf
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/email.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 **Välkommen nya prenumeranter**
 
@@ -128,7 +150,7 @@ Skicka en personlig välkomstresa när kunderna prenumererar på tjänsten och v
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Optimera e-posttider**
 
@@ -138,7 +160,7 @@ Använd AI-baserad optimering för sändningstid för att leverera e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/delivery.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Dra upp leveranser**
 
@@ -148,7 +170,7 @@ Använd AI-baserad optimering för sändningstid för att leverera e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/targeting.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Mål efter veckodag**
 
@@ -169,22 +191,20 @@ Skicka olika innehåll baserat på vilken veckodag kunderna kommer in på din re
 >
 >Resegarantier och begränsningar finns på [den här sidan](../start/guardrails.md)
 
->[!TAB Utbildningsresurser]
-
-## Bygg huvudresan
+## Utbildningsresurser {#learning-resources}
 
 ### Videosjälvstudiekurs {#video}
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
 ### Utforska efter ämne
 
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 **Skapa och hantera resor**
 
@@ -194,7 +214,7 @@ Stegvisa riktlinjer för att utforma, testa, publicera och spåra kundresor för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 **Reseaktiviteter**
 
@@ -204,7 +224,7 @@ Upptäck hur ni konfigurerar och använder aktiviteter som triggers, beslutssteg
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 **Uttryck och villkor**
 
@@ -214,7 +234,7 @@ Masteruttryck för dynamiska arbetsflöden, datamanipulering och avancerad reses
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/monitor.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 **Felsök och övervaka**
 
@@ -231,7 +251,5 @@ Diagnostisera och åtgärda problem med körning av resor med verktyg, felkoder 
 * **[Felkodsreferens](error-codes-reference.md)** - Resefelkoder och felsökningssteg
 * **[Varningar](../reports/alerts.md)** - Konfigurera aviseringar för reseövervakning
 * **[Felsökning](troubleshooting.md)** - Vanliga reseproblem och lösningar
-* **[Självstudiekurser på resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resor med praktiska videokurser
-
->[!ENDTABS]
+* **[Självstudiekurser på resa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resor med praktiska videokurser
 

@@ -5,9 +5,9 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: fb74c0c14cf35aeb0c28719878d009e040be4214
+source-git-commit: 856f35ebd70f38065e9b116bb648de1f2c2d439a
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '1244'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,91 @@ ht-degree: 0%
 
 # Uppdateringsrapport för månatlig dokumentation
 
-*Rapport skapad för 1 oktober - 3 november 2025*
+*Rapport skapad för 3 november - 11 december 2024*
 
 ## Nya sidor
+
+- [Guide för in- och utträdesvillkor för resa](help/using/building-journeys/entry-exit-criteria-guide.md) - 11 dec
+- [Användningsexempel på resa](help/using/building-journeys/jo-use-cases.md) - 11 dec
+- [Skicka e-post endast på vardagar](help/using/building-journeys/weekday-email-uc.md) - 11 dec
+- [Iterera över kontextdata](help/using/personalization/iterate-contextual-data.md) - 11 dec
+- [Kom igång med beslutsfunktioner i Journey Optimizer](help/using/experience-decisioning/gs-decision.md) - 18 nov
+- [Definiera en yta för kodbaserade upplevelser](help/using/code-based/code-based-surface.md) - 22 nov
+- [Publicera och hantera kodbaserade upplevelser](help/using/code-based/publish-code-based.md) - 22 nov
+- [Testa kodbaserade upplevelser](help/using/code-based/test-code-based.md) - 22 nov
+
+## Uppdaterade sidor
+
+- [Sök efter Adobe Experience Platform-data för personalisering](help/using/personalization/lookup-aep-data.md) - 10 dec
+- [Konfigurera mobilprogram](help/using/configuration/set-mobile-config.md) - dec 6
+- [Flerspråkigt innehåll med manuell översättning](help/using/content-management/multilingual-provider.md) - dec 5
+- [Använd beslut i dina kodbaserade upplevelser](help/using/experience-decisioning/experience-decisioning-uc.md) - dec 3
+- [Innehållskortrapporter](help/using/content-card/content-card-report.md) - dec 2
+- [Skapa ett innehållskort](help/using/content-card/create-content-card.md) - dec 2
+- [Kom igång med innehållskort](help/using/content-card/get-started-content-card.md) - dec 2
+- [Utforma innehållskort](help/using/content-card/design-content-card.md) - dec 2
+- [Krav för konfiguration av innehållskort](help/using/content-card/content-card-configuration-prereq.md) - dec 2
+- [SDK-konfiguration för innehållskort](help/using/content-card/content-card-configuration-sdk.md) - dec 2
+- [Konfiguration av innehållskort](help/using/content-card/content-card-configuration.md) - dec 2
+- [Skapa en åtgärdskampanj](help/using/campaigns/create-campaign.md) - 2 dec
+- [Körning av IP-värmare](help/using/configuration/ip-warmup-execution.md) - 26 nov
+- [Skapa en landningssida](help/using/landing-pages/create-lp.md) - 25 nov
+- [Landningssidans live-rapport](help/using/reports/lp-report-live.md) - 25 nov
+- [Kodbaserad konfiguration](help/using/code-based/code-based-configuration.md) - 22 nov
+- [Kodbaserade implementeringsmetoder - exempel](help/using/code-based/code-based-implementation-samples.md) - 22 nov
+- [Kodbaserade krav och skyddsförslag](help/using/code-based/code-based-prerequisites.md) - 22 nov
+- [Skapa en kodbaserad upplevelse](help/using/code-based/create-code-based.md) - 22 nov
+- [Kom igång med kodbaserade upplevelser](help/using/code-based/get-started-code-based.md) - 22 nov
+- [Förhandsgranska och testa ditt innehåll](help/using/content-management/preview.md) - 22 nov
+- [Webbkanalskonfiguration](help/using/web/web-configuration.md) - 22 nov
+- [Skapa en testprofil](help/using/building-journeys/creating-test-profiles.md) - 22 nov
+- [Skicka korrektur](help/using/content-management/proofs.md) - 22 november
+- [Testa innehållsmallar](help/using/content-management/test-content-templates.md) - 22 nov
+- [Använd testprofiler](help/using/content-management/test-profiles.md) - 22 nov
+- [Skapa ett e-postmeddelande](help/using/email/create-email.md) - 22 nov
+- [Ytspersonalisering](help/using/email/surface-personalization.md) - 22 nov
+- [Skapa ett push-meddelande](help/using/push/create-push.md) - 22 nov
+- [Skicka ett push-meddelande](help/using/push/send-push.md) - 22 nov
+- [Skicka ett textmeddelande (SMS/MMS)](help/using/sms/send-sms.md) - 22 november
+- [Användarsökväg för markör](help/using/start/path/marketer.md) - 22 nov
+- [Användarsökväg för administratör](help/using/start/path/administrator.md) - 22 nov
+- [Förhandsgranska och testa meddelandet](help/using/content-management/preview-test.md) - 22 nov
+- [Attributbaserad åtkomstkontroll](help/using/administration/attribute-based-access.md) - 21 nov
+- [Åtkomstkontroll på objektnivå](help/using/administration/object-based-access.md) - 21 nov
+- [Arbeta med API-utlösta kampanjer](help/using/campaigns/api-triggered-campaigns.md) - 21 nov
+- [Kom igång med beslutshantering](help/using/offers/get-started/starting-offer-decisioning.md) - 21 nov
+- [IP-värmare](help/using/configuration/ip-warmup-campaign.md) - 20 nov
+- [IP-värdskapsplan](help/using/configuration/ip-warmup-plan.md) - 20 nov
+- [Behörighetsöversikt](help/using/administration/permissions-overview.md) - 15 nov
+- [Beslut om CJA-rapportering](help/using/experience-decisioning/cja-reporting.md) - 15 nov
+- [Fragment](help/using/content-management/fragments.md) - 15 nov
+- [Kom igång med Adobe Experience Platform-målgrupper](help/using/audience/about-audiences.md) - 14 november
+- [Använd anpassade överförda målgrupper för beslut (federerad komposition)](help/using/audience/custom-upload-fac.md) - 14 nov
+- [Konfigurera Sinch-provider](help/using/sms/sms-configuration-sinch.md) - 12 nov
+- [Kampanjrapporter i Customer Journey Analytics](help/using/reports/channel-report-cja.md) - 12 nov
+- [Reserapporter i Customer Journey Analytics](help/using/reports/journey-global-report-cja.md) - 12 nov
+- [Flerspråkigt innehåll med automatiserad översättning](help/using/content-management/multilingual-automated.md) - 12 nov
+- [Bestämmer kataloger](help/using/experience-decisioning/catalogs.md) - 7 nov
+- [Skapa och hantera beslutsartikelsamlingar](help/using/experience-decisioning/collections.md) - 7 nov
+- [Kontextdata](help/using/experience-decisioning/context-data.md) - 7 nov
+- [Kom igång med beslutsprinciper](help/using/experience-decisioning/create-decision.md) - 7 nov
+- [Kom igång med Experience Decision](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
+- [Beslutsobjekt](help/using/experience-decisioning/items.md) - 7 nov
+- [Bestämmer rangordningsmetoder](help/using/experience-decisioning/ranking.md) - 7 nov
+- [Skapa regler](help/using/experience-decisioning/rules.md) - 7 nov
+- [Skapa markeringsstrategier](help/using/experience-decisioning/selection-strategies.md) - 7 nov
+- [Arbeta med regeluppsättningar](help/using/configuration/rule-sets.md) - 6 nov
+- [Skapa beslut](help/using/offers/offer-activities/create-offer-activities.md) - 5 nov
+- [Skapa en samling](help/using/offers/offer-library/creating-collections.md) - nov 5
+- [Skapa personaliserade erbjudanden](help/using/offers/offer-library/creating-personalized-offers.md) - 5 nov
+- [Skapa placeringar](help/using/offers/offer-library/creating-placements.md) - 5 nov
+- [Skapa rankningsstrategier](help/using/offers/ranking/create-ranking-strategies.md) - 5 nov
+
+---
+
+## Föregående rapport: 1 oktober - 3 november 2025
+
+### Nya sidor
 
 - [AI och intelligenta funktioner i Adobe Journey Optimizer](help/using/start/ai-features.md) - 31 okt
 - [Hantera dina kunders preferenser](help/using/action/preference-center.md) - 24 okt
@@ -37,7 +119,7 @@ ht-degree: 0%
 - [Adobe Journey Optimizer-lanseringscykel](help/using/rn/releases.md) - 28 okt
 - [Designmeddelandeinnehåll](help/using/start/message-content-design.md) - 18 okt
 
-## Uppdaterade sidor
+### Uppdaterade sidor
 
 - [Adobe Journey Optimizer-dokumentation](help/ajo-home.md) - 22 okt
 - [Innehållshantering](help/rp_landing_pages/content-management-landing-page.md) - 27 okt
@@ -85,7 +167,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
