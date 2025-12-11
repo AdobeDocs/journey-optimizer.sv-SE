@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
-source-git-commit: 24d66f146ea3ed0e89a3b928b805bc53a70a8895
+source-git-commit: 1d32db0103fd4f2afcd021cff5e8491515c86d65
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -61,8 +61,8 @@ Du kan utnyttja målgrupper i **[!DNL Journey Optimizer]** på olika sätt:
 
 ## Aktivering av målgruppstyper som inte stöds i [!DNL Journey Optimizer]
 
-Det är bara målgrupper som skapats i målportalen som kan målgruppsanpassas direkt i [!DNL Journey Optimizer] resor och kampanjer. [Läs mer om tillgängliga målgruppstyper](../audience/about-audiences.md#types).
+Endast målgrupper som skapats med **segmentdefinition**, **målgruppskompositioner**, **anpassad överföring (CSV-fil)** och **sammanställning av externa målgrupper** kan målgruppsanpassas direkt i Journey Optimizer resor och kampanjer. [Läs mer om tillgängliga målgruppstyper](../audience/about-audiences.md#types)
 
-Om ni behöver rikta in er på profiler från en publik som inte stöds, t.ex. en Customer Journey Analytics-målgrupp, måste ni lägga in dem i en ny segmentdefinition i Audience-portalen. Detaljerad information om hur du lägger till målgrupper i en segmentdefinition finns i [Segment Builder-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#adding-audiences){target="_blank"}
+Om ni behöver rikta in er på profiler från en publik som inte stöds, t.ex. en Customer Journey Analytics-målgrupp, måste ni lägga in dem i en ny segmentdefinition i Audience-portalen. Detaljerad information om hur du lägger till målgrupper i en segmentdefinition finns i [Segment Builder-dokumentationen](https://experienceleagu;e.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#adding-audiences){target="_blank"}
 
 När det är klart väntar du tills segmenteringsutvärderingen är klar och använder den på dina resor och i dina kampanjer.
