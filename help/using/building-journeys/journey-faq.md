@@ -1,25 +1,25 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Resor, frågor och svar
-description: Frågor och svar om Journey Optimizer Journeys
+title: Journey Orchestration - Frågor och svar
+description: Frågor och svar om Journey Orchestration i Adobe Journey Optimizer
 feature: Journeys, Get Started
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-keywords: resa, frågor, svar, felsökning, hjälp, guide
+keywords: resa, frågor, svar, felsökning, hjälp, guide, orkestrering
 version: Journey Orchestration
-source-git-commit: dff732d14dd143f085b1287274f7571a900a0c87
+source-git-commit: 63d37e1cb4042323eb764350dc2c89b5483ccae3
 workflow-type: tm+mt
-source-wordcount: '5215'
+source-wordcount: '5222'
 ht-degree: 0%
 
 ---
 
 
-# Vanliga frågor {#faq-journeys}
+# Journey Orchestration - Frågor och svar {#faq-journeys}
 
-Nedan finns Frågor och svar om Adobe Journey Optimizer Journeys.
+Hitta svar på vanliga frågor om Journey Orchestration i Adobe Journey Optimizer.
 
 Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
@@ -946,4 +946,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
