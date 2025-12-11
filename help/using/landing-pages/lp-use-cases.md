@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: landning, landningssida, fallstudie
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: f00550c1df41ff785d433e31847e890718a72f4c
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1110'
 ht-degree: 1%
 
 ---
@@ -100,7 +100,7 @@ Om du vill att mottagarna ska kunna avbeställa din kommunikation kan du inklude
 
 ### Hantering av avanmälan {#opt-out-management}
 
-Att ge mottagarna möjlighet att avbryta prenumerationen på information från ett varumärke är ett juridiskt krav. Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=sv-SE#regulations){target="_blank"}.
+Att ge mottagarna möjlighet att avbryta prenumerationen på information från ett varumärke är ett juridiskt krav. Läs mer om gällande lagstiftning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.
 
 Därför måste du alltid inkludera en **länk för att avbryta prenumerationen** i alla e-postmeddelanden som skickas till mottagarna:
 
@@ -155,7 +155,7 @@ Följ stegen nedan för att göra det möjligt för mottagarna av ett e-postmedd
 
    * Profildata uppdateras och kommer inte att få information från ert varumärke om ni inte prenumererar igen.
 
-Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=sv-SE#getting-started){target="_blank"}.
+Om du vill kontrollera att den aktuella profilens val har uppdaterats går du till Experience Platform och öppnar profilen genom att välja ett identitetsnamnutrymme och ett motsvarande identitetsvärde. Läs mer i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
 ![](assets/lp_opt-out-profile-choice.png)
 
@@ -165,11 +165,9 @@ Information om avanmälan lagras i datamängden för **tjänsten för samtycke**
 
 >[!NOTE]
 >
->Om sammanfogningsmetoden för din standardprincip för [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} **[!UICONTROL Profiles]** är **[!UICONTROL Dataset Precedence]** måste du aktivera **[!UICONTROL AJO Consent Service Dataset]** och prioritera den i sammanfogningsprincipen. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=sv-SE#dataset-precedence-profile){target="_blank"}
+>Om sammanfogningsmetoden för din standardprincip för [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"} **[!UICONTROL Profiles]** är **[!UICONTROL Dataset Precedence]** måste du aktivera **[!UICONTROL AJO Consent Service Dataset]** och prioritera den i sammanfogningsprincipen. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html#dataset-precedence-profile){target="_blank"}
 >
 >Även om inga batchar har lagts till i den här datauppsättningen kommer den fortfarande att innehålla information om anmälan/avanmälan.
-
-
 
 **Se även:**
 
@@ -190,14 +188,21 @@ You can also enable your recipients to unsubscribe whithout using landing pages.
 
     If the recipients' email client supports displaying an unsubscribe link in the email header, emails sent with [!DNL Journey Optimizer] automatically include this link. [Learn more](../email/email-opt-out.md#unsubscribe-header)
 
-////////
+-->
 
+## Utnyttja landningssidans inlämningshändelse {#leverage-lp-event}
 
-## Leverage landing page submission event {#leverage-lp-event}
+Du kan använda information som har skickats in på en landningssida för att utföra ytterligare åtgärder. Om en användare t.ex. prenumererar på en viss prenumerationslista kan du dra nytta av den informationen och skicka ett e-postmeddelande med en rekommendation om andra prenumerationslistor till den användaren.
 
-You can use information that was submitted on a landing page to send communications to your customers. For example, if a user subscribes to a given subscription list, you can leverage that information to send an email recommending other subscription lists to that user.
+För att kunna göra detta måste du skapa en [regelbaserad enhetshändelse](../event/about-creating.md) baserat på den **[!UICONTROL AJO Email Tracking Experience Event Schema]** som innehåller överföringsinformationen och [använda den här händelsen i en resa](../building-journeys/general-events.md).
 
-To do this, you need to create an event containing the landing page submission information and use it in a journey. Follow the steps below.
+>[!NOTE]
+>
+>När du arbetar med Skicka-händelser för landningssidor ska du tänka på att fältet `interactionType` kanske inte alltid exakt återspeglar den specifika användaråtgärden. För att kunna avgöra om en användare har avanmält sig, prenumererat eller utfört en annan åtgärd måste du alltid verifiera de faktiska profilattributen (till exempel medgivandeinställningar) eller formulärfältsvärdena i stället för att förlita dig enbart på händelsen `interactionType`.
+
+<!--DETAILED STEPS TBC:
+
+Follow the steps below.
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Configurations]**, and in the **[!UICONTROL Events]** section, select **[!UICONTROL Manage]**.
 
