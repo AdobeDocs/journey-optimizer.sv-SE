@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-source-git-commit: 24d66f146ea3ed0e89a3b928b805bc53a70a8895
+source-git-commit: 6c4bf9edf3b5d3031f5b0ef43db7c8699cfb75dc
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -38,9 +38,9 @@ När dataströmmar i realtid eller batchöverföringar inträffar uppdateras dat
 
 Den här dokumentationen innehåller information om hur du arbetar med målgrupper inom [!DNL Adobe Journey Optimizer]. Detaljerad information om Audience-portalen och målgrupper finns i dokumentationen för Adobe Experience Platform Segmentation-tjänsten. Mer information finns i följande avsnitt:
 
-* [Användargränssnittsguide för segmenteringstjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/overview){target="_blank"}
+* [Användargränssnittsguide för segmenteringstjänst](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview){target="_blank"}
 
-* [Segmenteringstjänst - Vanliga frågor](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/faq){target="_blank"}
+* [Segmenteringstjänst - Vanliga frågor](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/faq){target="_blank"}
 
 >[!ENDSHADEBOX]
 
@@ -54,19 +54,19 @@ En kontrollpanel visar överlappningar mellan viktiga målgrupper och har stöd 
 
 Från Audience Portal kan ni enkelt hantera, hitta och utforska målgrupper med standardiserade etiketter, styrningsfunktioner, sökbara mappar och taggar.
 
-Mer information om hur du arbetar med målgrupper i publikportalen finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
+Mer information om hur du arbetar med målgrupper i publikportalen finns i [dokumentationen för Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 ## Målgruppstyper {#types}
 
 Målgrupper kan genereras på olika sätt:
 
-* **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform segmenteringstjänst. Målgrupper genereras från segmentdefinitioner och uppdateras vid olika tidpunkter beroende på utvärderingstyp.
+* **Segmentdefinitioner**: Skapa en ny målgruppsdefinition med Adobe Experience Platform segmenteringstjänst. Målgrupper genereras från segmentdefinitioner och uppdateras vid olika tidpunkter beroende på utvärderingstyp:
 
    * Direktuppspelningssegmentering: Målgrupperna uppdateras i realtid när nya data flödar in, vilket ger kontinuerlig relevans baserat på användaraktivitet.
    * Gruppsegmentering: Målgrupperna uppdateras var 24:e timme och en ögonblicksbild av profilerna sparas med ett fast intervall.
    * Edge Segmentering: Målgrupperna utvärderas direkt i farten, vilket möjliggör personalisering i realtid.
 
-[Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
+  [Lär dig hur du skapar segmentdefinitioner](creating-a-segment-definition.md)
 
 * **Anpassad överföring**: Importera en målgrupp med en CSV-fil. [Lär dig skapa anpassade överförda målgrupper](custom-upload.md)
 
