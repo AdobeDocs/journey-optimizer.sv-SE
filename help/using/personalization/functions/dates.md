@@ -6,9 +6,9 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: 07a582db495ecbfae97b6d299b65b06c0cdf8c14
+source-git-commit: 48b3ef3d2e041ea49d1b0c91cc72ea04237a5e33
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1110'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 3%
 # Funktioner för datum och tid{#date-time}
 
 Datum- och tidsfunktioner används för att utföra datum- och tidsåtgärder på värden inom Journey Optimizer.
+
+>[!NOTE]
+>
+>Funktionen `now()` är inte tillgänglig i personaliseringsredigeraren. Använd `getCurrentZonedDateTime()` eller `currentTimeInMillis()` i stället för aktuella datum/tid-värden. [Läs mer](../../email/code-content.md#date-time-limitations)
 
 ## Lägg till dagar {#add-days}
 

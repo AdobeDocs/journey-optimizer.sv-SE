@@ -7,9 +7,9 @@ role: Developer
 level: Experienced
 keywords: datum, funktioner, uttryck, resa, tid
 version: Journey Orchestration
-source-git-commit: bb47ca4957129a4d05aa3d7286409eef0cb62143
+source-git-commit: 48b3ef3d2e041ea49d1b0c91cc72ea04237a5e33
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '834'
 ht-degree: 6%
 
 ---
@@ -18,10 +18,14 @@ ht-degree: 6%
 
 Med datumfunktionerna kan du ändra och arbeta med datum- och tidsvärden i dina reseuttryck. Dessa funktioner är viktiga för tidsbaserade förhållanden, schemaläggning och tidsberäkningar i kundresor.
 
+>[!NOTE]
+>
+>Funktionerna på den här sidan är tillgängliga i reseuttryck. Vissa funktioner som `now()` är inte tillgängliga i anpassningsredigeraren för e-postinnehåll. [Läs mer](../../personalization/functions/dates.md)
+
 Använd datumfunktioner när du behöver:
 
 * Hämta aktuell tid eller aktuellt datum med specifik hantering av tidszoner ([nu](#now), [nowWithDelta](#nowWithDelta), [currentTimeInMillis](#currentTimeInMillis))
-* Kontrollera om ett datum ligger inom ett visst tidsintervall ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [in Nästa månad &#x200B;](#inNextMonths), [inNästaÅr](#inNextYears))
+* Kontrollera om ett datum ligger inom ett visst tidsintervall ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [in Nästa månad ](#inNextMonths), [inNästaÅr](#inNextYears))
 * Ändra datum- och tidskomponenter ([setHours](#setHours), [setDays](#setDays), [updateTimeZone](#updateTimeZone))
 * Tidsbaserade beräkningar och jämförelser
 * Konvertera mellan olika tidsformat och representationer
@@ -347,6 +351,10 @@ Returnerar true.
 ## now {#now}
 
 Returnerar aktuellt datum i tidsformat för datum. Mer information om datatyper finns på [den här sidan](../expression/data-types.md).
+
+>[!NOTE]
+>
+>Den här funktionen är bara tillgänglig i reseuttryck. Använd `getCurrentZonedDateTime()` i stället för e-postanpassning och annat innehåll. [Läs mer](../../personalization/functions/dates.md#get-current-zoned-date-time)
 
 +++Syntax
 

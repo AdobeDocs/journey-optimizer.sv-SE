@@ -10,10 +10,10 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 version: Journey Orchestration
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: 578950270213177b4d4cc67bad8ae627e440ff44
 workflow-type: tm+mt
-source-wordcount: '1260'
-ht-degree: 20%
+source-wordcount: '1591'
+ht-degree: 16%
 
 ---
 
@@ -31,7 +31,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
@@ -57,9 +57,43 @@ Du kan börja felsöka med frågorna nedan:
   Content-type - application/json
   ```
 
+>>
+**För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
+
+## Felsöka övergångar i testläge {#troubleshooting-test-transitions}
+
+Om testprofiler inte går igenom din resa i testläge, eller om det visuella flödet inte visar gröna pilar som indikerar stegförloppet, kan problemet bero på övergångsvalidering. I det här avsnittet finns vägledning om diagnostisering och lösning av vanliga testlägesproblem.
+
+### Testprofiler går inte framåt
+
+Om testprofilerna kommer in på resan men inte fortsätter förbi det första steget, ska du kontrollera följande:
+
+* **Resans startdatum** - Den vanligaste orsaken är när resans startdatum anges i framtiden. Testprofiler ignoreras omedelbart om den aktuella tiden ligger utanför transportens konfigurerade [start- och slutdatum/tid](journey-properties.md#dates)-fönster. Så här löser du:
+   * Kontrollera att transportens startdatum inte har angetts i framtiden
+   * Se till att den aktuella tiden ligger inom resans aktiva datumfönster
+   * Uppdatera reseegenskaperna om det behövs för att justera startdatumet
+
+* **Testa profilkonfigurationen** - Bekräfta att profilen är korrekt flaggad som en testprofil i Adobe Experience Platform. Mer information finns i [Skapa testprofiler](../audience/creating-test-profiles.md).
+
+* **Identitetsnamnrymd** - Kontrollera att det identitetsnamnutrymme som används i händelsekonfigurationen matchar namnutrymmet för testprofilen.
+
+### Null-övergångsindikatorer
+
+Under den tekniska felsökningen kan du stöta på en `isValidTransition`-egenskap som är inställd på null i kundens tekniska information. Egenskapen Endast användargränssnitt påverkar inte backend-bearbetning eller reseprestanda. Ett null-värde kan dock visa:
+
+* **Resefel** - Resans startdatum anges i framtiden, vilket gör att testhändelser ignoreras
+* **Skadad övergång** - I sällsynta fall måste resenoderna återanslutas
+
+Om du stöter på beständiga övergångsproblem:
+
+1. Kontrollera att transportens startdatum är aktuellt
+1. Inaktivera och återaktivera testläge
+1. Om problemet kvarstår bör du överväga att duplicera noderna för den berörda resan och koppla dem igen
+1. För olösta fall kontaktar du supporten med reseloggar, profil-ID:n som påverkas och information om övergången till null
+
 >[!NOTE]
 >
->**För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
+>Kom ihåg att händelser som skickas utanför resans aktiva datumfönster ignoreras utan felmeddelande. Kontrollera alltid din timingkonfiguration för resan först när du felsöker testprofilens förlopp.
 
 ## Kontrollera hur människor navigerar genom resan {#checking-how-people-navigate-through-the-journey}
 

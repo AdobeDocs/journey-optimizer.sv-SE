@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, bibliotek, personalisering
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 20421485e354b0609dd445f2db2b7078ee81d891
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1295'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,89 @@ Följande användningsområden är möjliga:
 >
 >Under körning expanderar systemet det som är inuti fragment och tolkar sedan personaliseringskoden uppifrån och ned. Med detta i åtanke kan man uppnå mer komplexa användningsfall. Du kan till exempel ha ett fragment F1 som skickar variabler till ett annat fragment F2 som sitter nedanför. Du kan också ha ett visuellt fragment F1 som skickar variabler till ett kapslat uttrycksfragment F2.
 
+## Använd uttrycksfragment i slingor {#fragments-in-loops}
+
+När du använder uttrycksfragment i `{{#each}}`-slingor är det viktigt att förstå hur variabelomfångsfunktionen fungerar. Uttrycksfragment kan komma åt globala variabler som definierats i meddelandeinnehållet, men de kan inte ta emot loopspecifika variabler som parametrar.
+
+### Mönster som stöds: Använd globala variabler {#global-variables-in-loops}
+
+Uttrycksfragment kan referera till globala variabler som är definierade utanför fragmentet, även när fragmentet anropas inifrån en slinga. Detta är det rekommenderade sättet när du behöver använda fragment i iterativa kontexter.
+
+**Exempel: Använda ett fragment med globala variabler i en slinga**
+
+I meddelandeinnehållet definierar du en global variabel och använder ett fragment som refererar till den:
+
+```handlebars
+{% let globalDiscount = 15 %}
+
+{{#each context.journey.actions.GetProducts.items as |product|}}
+  <div class="product">
+    <h3>{{product.name}}</h3>
+    <p>Price: ${{product.price}}</p>
+    {{fragment id='ajo:fragment123/variant456' mode='inline'}}
+  </div>
+{{/each}}
+```
+
+I uttrycksfragmentet (fragment123) kan du referera till variabeln `globalDiscount`:
+
+```handlebars
+<p class="discount-info">Save {{globalDiscount}}% on all items!</p>
+```
+
+Det här mönstret fungerar eftersom den globala variabeln är tillgänglig i hela meddelandet, även i fragment, oavsett slingkontext.
+
+### Stöds inte: skicka slingvariabler som fragmentparametrar {#loop-variables-limitations}
+
+Du kan inte skicka det aktuella upprepningsobjektet (t.ex. `product` i exemplet ovan) som en parameter till ett uttrycksfragment. Fragmentet kan inte komma åt loopvariabler direkt från det omgivande `{{#each}}`-blocket.
+
+**Exempel: Vad fungerar INTE**
+
+```handlebars
+{{#each context.journey.actions.GetProducts.items as |product|}}
+  <!-- This will NOT work as expected -->
+  {{fragment id='ajo:fragment123/variant456' mode='inline' currentProduct=product}}
+{{/each}}
+```
+
+Fragmentet kan inte ta emot `product` som en parameter och använda det internt eftersom parametern som skickas för loopspecifika variabler inte stöds i den aktuella implementeringen.
+
+### Rekommenderade tillfälliga lösningar {#fragments-in-loops-workarounds}
+
+När du behöver använda uttrycksfragment med data från en slinga bör du tänka på följande:
+
+1. **Inkludera logik direkt i meddelandet**: I stället för att använda ett fragment för loopspecifik logik lägger du till personaliseringskoden direkt i `{{#each}}` -blocket.
+
+   ```handlebars
+   {{#each context.journey.actions.GetProducts.items as |product|}}
+     <div class="product">
+       <h3>{{product.name}}</h3>
+       <p>Price: ${{product.price}}</p>
+       {{#if product.price > 100}}
+         <span class="premium-badge">Premium Product</span>
+       {{/if}}
+     </div>
+   {{/each}}
+   ```
+
+2. **Använd fragment utanför slingor**: Om fragmentinnehållet inte är loopberoende anropar du fragmentet före eller efter upprepningsblocket.
+
+   ```handlebars
+   {{fragment id='ajo:fragment123/variant456' mode='inline'}}
+   
+   {{#each context.journey.actions.GetProducts.items as |product|}}
+     <div class="product">
+       <h3>{{product.name}}</h3>
+       <p>Price: ${{product.price}}</p>
+     </div>
+   {{/each}}
+   ```
+
+3. **Ange flera globala variabler**: Om du behöver skicka olika värden till ett fragment över iterationer anger du globala variabler före varje fragmentanrop (men detta begränsar flexibiliteten).
+
+>[!NOTE]
+>
+>Mer information om hur du itererar över kontextdata och arbetar med slingor finns i den omfattande guiden [iterera över kontextdata](iterate-contextual-data.md), som innehåller bästa praxis, felsökningstips och avancerade mönster.
 
 ## Anpassa redigerbara fält {#customize-fields}
 

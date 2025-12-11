@@ -6,9 +6,9 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 48b3ef3d2e041ea49d1b0c91cc72ea04237a5e33
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2434'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Mallspråk används i hjälpfunktioner som finns i personaliseringslistrutan i p
 
 >[!NOTE]
 >
->De funktioner och funktioner som är tillgängliga i personaliseringsredigeraren skiljer sig från dem som finns i den avancerade uttrycksredigeraren [Journey](../../building-journeys/expression/expressionadvanced.md).
+>De funktioner och funktioner som är tillgängliga i personaliseringsredigeraren skiljer sig från dem som finns i den avancerade uttrycksredigeraren [Journey](../../building-journeys/expression/expressionadvanced.md). Funktionen `now()` är till exempel bara tillgänglig i reseuttryck. [Läs mer](../../email/code-content.md#date-time-limitations)
 
 Hjälpfunktionerna i redigeraren för anpassning av [!DNL Journey Optimizer] är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpprogram](#helper-helper) och [Operatorer](#operators-helper).
 

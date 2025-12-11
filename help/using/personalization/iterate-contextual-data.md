@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 keywords: uttryck, redigerare, handtag, iteration, matriser, kontext, personalisering
-source-git-commit: d3a06e15440dc58267528444f90431c3b32b49f2
+source-git-commit: 20421485e354b0609dd445f2db2b7078ee81d891
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '3008'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ context.journey.events.<event_ID>.<fieldPath>
 
 ### Exempel: Skapa kundvagnsobjekt från en händelse
 
-Om ditt [händelseschema](../event/experience-event-schema.md) innehåller en `productListItems`-matris (standardformat [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html?lang=sv-SE){target="_blank"}) kan du visa kundvagnens innehåll enligt exemplet nedan.
+Om ditt [händelseschema](../event/experience-event-schema.md) innehåller en `productListItems`-matris (standardformat [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}) kan du visa kundvagnens innehåll enligt exemplet nedan.
 
 +++ Visa exempelkod
 
@@ -245,7 +245,7 @@ Om du vill visa dynamiska fördelar baserat på lojalitetsstatus, se exemplet ne
 
 ## Iterera sökresultat för datauppsättningar {#dataset-lookup}
 
-[Uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) gör att du kan hämta data från [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE){target="_blank"} under körning. De inkapslade data lagras som en array och kan itereras över i dina meddelanden.
+[Uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) gör att du kan hämta data från [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"} under körning. De inkapslade data lagras som en array och kan itereras över i dina meddelanden.
 
 >[!AVAILABILITY]
 >
@@ -838,6 +838,44 @@ Välj variabelnamn som tydligt anger vad du itererar över. Detta gör koden mer
 
 +++
 
+### Uttrycksfragment i slingor
+
+När du använder [uttrycksfragment](use-expression-fragments.md) i `{{#each}}` -slingor bör du vara medveten om att du inte kan skicka loopomfattade variabler som fragmentparametrar. Fragment kan dock komma åt globala variabler som är definierade i meddelandeinnehållet utanför fragmentet.
+
++++ Visa exempelkod
+
+**Mönster som stöds - Använd globala variabler:**
+
+```handlebars
+{% let globalDiscount = 15 %}
+
+{{#each context.journey.actions.GetProducts.items as |product|}}
+  <div class="product">
+    <h3>{{product.name}}</h3>
+    {{fragment id='ajo:fragment123/variant456' mode='inline'}}
+  </div>
+{{/each}}
+```
+
+Fragmentet kan referera till `globalDiscount` eftersom det har definierats globalt i meddelandet.
+
+**Stöds inte - skicka loopvariabler:**
+
+```handlebars
+{{#each products as |product|}}
+  <!-- This will NOT work as expected -->
+  {{fragment id='ajo:fragment123/variant456' currentProduct=product}}
+{{/each}}
+```
+
+**Tillfällig lösning**: Inkludera personaliseringslogiken direkt i slingan i stället för att använda ett fragment, eller anropa fragmentet utanför slingan.
+
++++
+
+Läs mer om [att använda uttrycksfragment i slingor](use-expression-fragments.md#fragments-in-loops), inklusive detaljerade exempel och ytterligare tillfälliga lösningar.
+
+
+
 ### Hantera tomma arrayer
 
 Använd `{{else}}`-satsen för att tillhandahålla reservinnehåll när en matris är tom. Läs mer om [hjälpfunktioner](functions/helpers.md):
@@ -948,15 +986,43 @@ Har du problem med upprepningen? I det här avsnittet beskrivs vanliga problem o
 
 **Vanliga misstag**:
 
-* Avslutande taggar saknas: Varje `{{#each}}` måste ha en `{{/each}}`. Granska [Interaktionssyntaxen &#x200B;](#syntax) för att se om strukturen är korrekt.
+* Avslutande taggar saknas: Varje `{{#each}}` måste ha en `{{/each}}`. Granska [Interaktionssyntaxen ](#syntax) för att se om strukturen är korrekt.
 * Felaktigt variabelnamn: Kontrollera att variabelnamnet används konsekvent genom hela blocket. Mer information om namnkonventioner finns i [Bästa tillvägagångssätt](#best-practices).
 * Felaktiga sökvägsavgränsare: Använd punkter (`.`), inte snedstreck eller andra tecken
 
 +++
 
+### Uttrycksfragment fungerar inte i slingor
+
+**Problem**: Ett uttrycksfragment visar inte förväntat innehåll när det används i en `{{#each}}`-slinga eller visar tomma/oväntade utdata.
+
++++ Visa möjliga orsaker och lösningar
+
+**Möjliga orsaker och lösningar**:
+
+1. **Försöker skicka loopvariabler som parametrar**: Uttrycksfragment kan inte ta emot loopomfångsvariabler (som det aktuella upprepningsobjektet) som parametrar. Detta är en känd begränsning.
+
+   **Lösning**: Använd något av följande tillfälliga lösningar:
+
+   * Definiera globala variabler i meddelandet som fragmentet kan komma åt
+   * Inkludera personaliseringslogiken direkt i slingan i stället för att använda ett fragment
+   * Anropa fragmentet utanför slingan om det inte behöver loopspecifika data
+
+2. **Fragment förväntar sig en parameter som inte är tillgänglig**: Om fragmentet har utformats för att ta emot specifika indataparametrar fungerar det inte korrekt när dessa parametrar inte kan skickas från en slinga.
+
+   **Lösning**: Strukturera om ditt tillvägagångssätt så att du kan använda globala variabler som fragmentet har åtkomst till. Se [God praxis - Uttrycksfragment i slingor](#best-practices) för exempel.
+
+3. **Felaktigt variabelomfång**: Fragmentet kanske försöker referera till en variabel som bara finns inom slingomfånget.
+
+   **Lösning**: Definiera alla variabler som fragmentet behöver på meddelandenivå (utanför slingan) så att de är globalt tillgängliga.
+
+Läs mer om [att använda uttrycksfragment i slingor](use-expression-fragments.md#fragments-in-loops), inklusive detaljerade förklaringar, exempel och rekommenderade mönster.
+
++++
+
 ### Testa dina iterationer
 
-Använd [testläget &#x200B;](../building-journeys/testing-the-journey.md) för resan för att verifiera dina iterationer. Detta är särskilt viktigt när du använder [anpassade åtgärder](#custom-action-responses) eller [datauppsättningssökningar](#dataset-lookup):
+Använd [testläget ](../building-journeys/testing-the-journey.md) för resan för att verifiera dina iterationer. Detta är särskilt viktigt när du använder [anpassade åtgärder](#custom-action-responses) eller [datauppsättningssökningar](#dataset-lookup):
 
 +++ Visa teststeg
 
@@ -969,9 +1035,9 @@ Använd [testläget &#x200B;](../building-journeys/testing-the-journey.md) för 
 
 ## Relaterade ämnen {#related-topics}
 
-**Grundläggande om Personalization:** [Kom igång med personalisering](personalize.md) | [Lägg till personalisering](personalization-build-expressions.md) | [Personalization-syntax &#x200B;](personalization-syntax.md) | [Hjälpfunktioner](functions/helpers.md) | [Skapa villkorliga regler](create-conditions.md)
+**Grundläggande om Personalization:** [Kom igång med personalisering](personalize.md) | [Lägg till personalisering](personalization-build-expressions.md) | [Personalization-syntax ](personalization-syntax.md) | [Hjälpfunktioner](functions/helpers.md) | [Skapa villkorliga regler](create-conditions.md)
 
-**Resekonfiguration:** [Om händelser](../event/about-events.md) | [Konfigurera anpassade åtgärder](../action/about-custom-action-configuration.md) | [Skicka samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md#passing-collection) | [Använd API-anropssvar i anpassade åtgärder](../action/action-response.md) | [Felsöka anpassade åtgärder](../action/troubleshoot-custom-action.md) | [Använd Adobe Experience Platform-data på resor](../building-journeys/dataset-lookup.md) | [Använd extra identifierare på resor](../building-journeys/supplemental-identifier.md) | [Skyddsritningar och begränsningar &#x200B;](../start/guardrails.md) | [Testa din resa](../building-journeys/testing-the-journey.md)
+**Resekonfiguration:** [Om händelser](../event/about-events.md) | [Konfigurera anpassade åtgärder](../action/about-custom-action-configuration.md) | [Skicka samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md#passing-collection) | [Använd API-anropssvar i anpassade åtgärder](../action/action-response.md) | [Felsöka anpassade åtgärder](../action/troubleshoot-custom-action.md) | [Använd Adobe Experience Platform-data på resor](../building-journeys/dataset-lookup.md) | [Använd extra identifierare på resor](../building-journeys/supplemental-identifier.md) | [Skyddsritningar och begränsningar ](../start/guardrails.md) | [Testa din resa](../building-journeys/testing-the-journey.md)
 
 **Reseuttrycksfunktioner:** [Avancerad uttrycksredigerare](../building-journeys/expression/expressionadvanced.md) | [Funktioner för samlingshantering](../building-journeys/expression/collection-management-functions.md) (först, alla, sist) | [Listfunktioner](../building-journeys/functions/list-functions.md) (serializeList, filter, sort) | [Arrayfunktioner](../personalization/functions/arrays-list.md) (head, tail)
 

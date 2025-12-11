@@ -10,9 +10,9 @@ level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 578950270213177b4d4cc67bad8ae627e440ff44
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1887'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan anti
 
 >[!NOTE]
 >
->Innan du testar din resa måste du åtgärda eventuella fel. Lär dig hur du kontrollerar fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md).
+>Innan du testar din resa måste du åtgärda eventuella fel. Lär dig hur du kontrollerar fel innan du testar i [det här avsnittet](../building-journeys/troubleshooting.md). Om testprofiler inte kan bearbetas i testläge läser du [felsöka övergångar i testläge](troubleshooting-execution.md#troubleshooting-test-transitions).
 
 ## Viktiga anteckningar {#important_notes}
 
@@ -53,7 +53,7 @@ Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan anti
 
 * **Delat beteende** - När resan går till en delning markeras alltid den översta grenen. Ändra ordning på grenarna om du vill att en annan sökväg ska testas.
 * **Händelsetiming** - Om resan omfattar*flera händelser, utlöser du varje händelse i sekvenser. Om du skickar en händelse för tidigt (innan den första väntenoden avslutas) eller för sent (efter den konfigurerade tidsgränsen) kommer händelsen att ignoreras och profilen skickas till en tidsgräns. Bekräfta alltid att referenser till händelsens nyttolastfält förblir giltiga genom att skicka nyttolasten i det definierade fönstret
-* **Aktivt datumfönster** - Se till att transportens konfigurerade fönster väljer [start- och slutdatum/tid](journey-properties.md#dates) och inkluderar aktuell tid när testläget startas. Annars ignoreras utlösta testhändelser.
+* **Aktivt datumfönster** - Se till att transportens konfigurerade fönster väljer [start- och slutdatum/tid](journey-properties.md#dates) och inkluderar aktuell tid när testläget startas. Annars ignoreras utlösta testhändelser. Läs mer om hur du felsöker det här problemet [på den här sidan](troubleshooting-execution.md#troubleshooting-test-transitions).
 * **Reaktionshändelser** - För reaktionshändelser med en tidsgräns är den minsta och standardväntetiden 40 sekunder.
 * **Testa datamängder** - Händelser som utlöses i testläge lagras i dedikerade datamängder som är märkta så här: `JOtestmode - <schema of your event>`
 
@@ -132,7 +132,7 @@ En teknisk användare kan också använda det här gränssnittet för att kompon
 
 När du klickar på knappen **[!UICONTROL Send]** påbörjas testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
 
-![Visuellt reseprovflöde med profilförlopp och eventuella fel &#x200B;](assets/journeytest6.png)
+![Visuellt reseprovflöde med profilförlopp och eventuella fel ](assets/journeytest6.png)
 
 När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör testet igen rensas det visuella flödet och den nya personens sökväg visas.
 
