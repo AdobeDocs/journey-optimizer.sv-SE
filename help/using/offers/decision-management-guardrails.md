@@ -4,12 +4,12 @@ product: Journey Optimizer
 title: Garantier och begränsningar för beslutshantering
 description: Läs mer om avtalsutkast och begränsningar.
 badge: label="Äldre" type="Informative"
-feature: Decisioning
+feature: Decision Management
 role: User
 level: Intermediate
 exl-id: d2872bd3-42f8-4744-bb5b-41c49340098a
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 753f6bc8130b0a743aac1208a8e5aac58e3dbbfd
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 4%
