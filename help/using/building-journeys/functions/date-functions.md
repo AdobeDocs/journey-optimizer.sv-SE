@@ -7,7 +7,7 @@ role: Developer
 level: Experienced
 keywords: datum, funktioner, uttryck, resa, tid
 version: Journey Orchestration
-source-git-commit: 48b3ef3d2e041ea49d1b0c91cc72ea04237a5e33
+source-git-commit: 8ca1c995bc38b110fa07573f922906c775fd5e6f
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 6%
@@ -18,19 +18,19 @@ ht-degree: 6%
 
 Med datumfunktionerna kan du ändra och arbeta med datum- och tidsvärden i dina reseuttryck. Dessa funktioner är viktiga för tidsbaserade förhållanden, schemaläggning och tidsberäkningar i kundresor.
 
->[!NOTE]
->
->Funktionerna på den här sidan är tillgängliga i reseuttryck. Vissa funktioner som `now()` är inte tillgängliga i anpassningsredigeraren för e-postinnehåll. [Läs mer](../../personalization/functions/dates.md)
-
 Använd datumfunktioner när du behöver:
 
 * Hämta aktuell tid eller aktuellt datum med specifik hantering av tidszoner ([nu](#now), [nowWithDelta](#nowWithDelta), [currentTimeInMillis](#currentTimeInMillis))
-* Kontrollera om ett datum ligger inom ett visst tidsintervall ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [in Nästa månad &#x200B;](#inNextMonths), [inNästaÅr](#inNextYears))
+* Kontrollera om ett datum ligger inom ett visst tidsintervall ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [in Nästa månad ](#inNextMonths), [inNästaÅr](#inNextYears))
 * Ändra datum- och tidskomponenter ([setHours](#setHours), [setDays](#setDays), [updateTimeZone](#updateTimeZone))
 * Tidsbaserade beräkningar och jämförelser
 * Konvertera mellan olika tidsformat och representationer
 
 Datumfunktioner ger exakt kontroll över tidslogiken, vilket gör att du kan skapa tidskänsliga resvägar och villkor som svarar på specifika tidsramar och tidsplaner.
+
+>[!NOTE]
+>
+>Funktionerna på den här sidan är tillgängliga i reseuttryck. Vissa funktioner som `now()` är inte tillgängliga i anpassningsredigeraren för e-postinnehåll. [Läs mer](../../personalization/functions/dates.md)
 
 ## currentTimeInMillis {#currentTimeInMillis}
 

@@ -6,7 +6,7 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
-source-git-commit: 48b3ef3d2e041ea49d1b0c91cc72ea04237a5e33
+source-git-commit: 8ca1c995bc38b110fa07573f922906c775fd5e6f
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 0%
@@ -23,10 +23,6 @@ Mallspråk används i hjälpfunktioner som finns i personaliseringslistrutan i p
 
 ![](../assets/access-helper-functions.png)
 
->[!NOTE]
->
->De funktioner och funktioner som är tillgängliga i personaliseringsredigeraren skiljer sig från dem som finns i den avancerade uttrycksredigeraren [Journey](../../building-journeys/expression/expressionadvanced.md). Funktionen `now()` är till exempel bara tillgänglig i reseuttryck. [Läs mer](../../email/code-content.md#date-time-limitations)
-
 Hjälpfunktionerna i redigeraren för anpassning av [!DNL Journey Optimizer] är grupperade i tre kategorier: [Funktioner](#functions-helper), [Hjälpprogram](#helper-helper) och [Operatorer](#operators-helper).
 
 Välj en kategori för att komma åt underkategorier och funktioner.
@@ -34,6 +30,10 @@ Välj en kategori för att komma åt underkategorier och funktioner.
 Du får åtkomst till underkategorier genom att klicka på ikonen `>`. Välj en funktion genom att klicka på ikonen `+`: funktionen läggs automatiskt till på anpassningsskärmen.
 
 Klicka på ikonen `...` för att visa beskrivningen av funktionen och lägga till den i dina favoriter. [Läs mer](../personalize.md#fav)
+
+>[!NOTE]
+>
+>De funktioner och funktioner som är tillgängliga i personaliseringsredigeraren skiljer sig från dem som finns i den avancerade uttrycksredigeraren [Journey](../../building-journeys/expression/expressionadvanced.md). Funktionen `now()` är till exempel bara tillgänglig i reseuttryck. [Läs mer](../../email/code-content.md#date-time-limitations)
 
 ## Funktioner{#functions-helper}
 
