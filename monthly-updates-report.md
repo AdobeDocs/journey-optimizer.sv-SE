@@ -5,9 +5,9 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: 6c1df24a1184fb7f3fb5e6b2a2cbb3b77015b4bc
+source-git-commit: 72506de77ca5311fd36efc5477a4c2b86e81f0e1
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,6 @@ ht-degree: 0%
 - [Konfigurera mobilprogram](help/using/configuration/set-mobile-config.md) - dec 6
 - [Flerspråkigt innehåll med manuell översättning](help/using/content-management/multilingual-provider.md) - dec 5
 - [Använd beslut i dina kodbaserade upplevelser](help/using/experience-decisioning/experience-decisioning-uc.md) - dec 3
-- [Innehållskortrapporter](help/using/content-card/content-card-report.md) - dec 2
-- [Skapa ett innehållskort](help/using/content-card/create-content-card.md) - dec 2
-- [Kom igång med innehållskort](help/using/content-card/get-started-content-card.md) - dec 2
-- [Utforma innehållskort](help/using/content-card/design-content-card.md) - dec 2
-- [Krav för konfiguration av innehållskort](help/using/content-card/content-card-configuration-prereq.md) - dec 2
-- [SDK-konfiguration för innehållskort](help/using/content-card/content-card-configuration-sdk.md) - dec 2
-- [Konfiguration av innehållskort](help/using/content-card/content-card-configuration.md) - dec 2
 - [Skapa en åtgärdskampanj](help/using/campaigns/create-campaign.md) - 2 dec
 - [Körning av IP-värmare](help/using/configuration/ip-warmup-execution.md) - 26 nov
 - [Skapa en landningssida](help/using/landing-pages/create-lp.md) - 25 nov
@@ -165,7 +158,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
