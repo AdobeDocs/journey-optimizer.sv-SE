@@ -197,7 +197,7 @@ Skicka olika innehåll baserat på vilken veckodag kunderna kommer in på din re
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
 
 ### Utforska efter ämne
 
