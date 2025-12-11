@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 keywords: uttryck, redigerare, handtag, iteration, matriser, kontext, personalisering
-source-git-commit: a67707e50960e4848197fa1bd39ce95af3ef14ab
+source-git-commit: ebe367a91dc1bb20ceeb03b13a6008433fadf023
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2557'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,9 @@ Den här guiden visar hur du itererar över arrayer från var och en av dessa k�
 
 ## Syntax för iterering av Handlebars {#syntax}
 
-Hanteringsfält ger `{{#each}}` [hjälpen](functions/helpers.md) som kan itereras över arrayer. Grundsyntaxen är:
+Hanteringsfält ger `{{#each}}` [hjälpen](functions/helpers.md) som kan itereras över arrayer.
+
++++ Grundläggande syntax
 
 ```handlebars
 {{#each arrayPath as |item|}}
@@ -52,6 +54,8 @@ Hanteringsfält ger `{{#each}}` [hjälpen](functions/helpers.md) som kan iterera
 * Ersätt `item` med valfritt variabelnamn (t.ex. `product`, `response`, `element`)
 * Åtkomst till egenskaper för varje objekt med `{{item.propertyName}}`
 * Du kan kapsla in flera `{{#each}}`-block för flernivåarrayer
+
++++
 
 ## Iterera över händelsedata {#event-data}
 
@@ -72,7 +76,9 @@ context.journey.events.<event_ID>.<fieldPath>
 
 ### Exempel: Skapa kundvagnsobjekt från en händelse
 
-Om [händelseschemat](../event/experience-event-schema.md) innehåller en `productListItems`-matris (standardformat [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html?lang=sv-SE){target="_blank"}) kan du visa kundvagnsinnehåll så här:
+Om [händelseschemat](../event/experience-event-schema.md) innehåller en `productListItems`-matris (standardformat [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}) kan du visa kundvagnsinnehåll så här:
+
++++ Visa exempelkod
 
 ```handlebars
 {{#each context.journey.events.event_ID.productListItems as |product|}}
@@ -84,9 +90,13 @@ Om [händelseschemat](../event/experience-event-schema.md) innehåller en `produ
 {{/each}}
 ```
 
++++
+
 ### Exempel: Kapslade arrayer i händelser
 
 Använd kapslade `{{#each}}`-block för kapslade strukturer. Läs mer om kapsling i [Bästa tillvägagångssätt](#best-practices).
+
++++ Visa exempelkod
 
 ```handlebars
 {{#each context.journey.events.event_ID.categories as |category|}}
@@ -98,6 +108,8 @@ Använd kapslade `{{#each}}`-block för kapslade strukturer. Läs mer om kapslin
   </ul>
 {{/each}}
 ```
+
++++
 
 ## Iterera över anpassade åtgärdssvar {#custom-action-responses}
 
@@ -119,6 +131,8 @@ context.journey.actions.<actionName>.<fieldPath>
 ### Exempel: Produktrekommendationer från ett API
 
 Om din anpassade åtgärd returnerar produktrekommendationer:
+
++++ Visa exempelkod
 
 **API-svar:**
 
@@ -156,9 +170,13 @@ Om din anpassade åtgärd returnerar produktrekommendationer:
 </div>
 ```
 
++++
+
 ### Exempel: Kapslade arrayer från anpassade åtgärder
 
 Om din anpassade åtgärd returnerar kapslade arrayer (t.ex. kategorier med produkter). Mer komplexa kapslingsmönster finns i [Bästa tillvägagångssätt](#best-practices).
+
++++ Visa exempelkod
 
 **API-svar:**
 
@@ -188,9 +206,13 @@ Om din anpassade åtgärd returnerar kapslade arrayer (t.ex. kategorier med prod
 {{/each}}
 ```
 
++++
+
 ### Exempel: Förmåner i bonusskiktet
 
 Visa dynamiska fördelar baserat på lojalitetsstatus:
+
++++ Visa exempelkod
 
 **API-svar:**
 
@@ -219,9 +241,11 @@ Visa dynamiska fördelar baserat på lojalitetsstatus:
 </ul>
 ```
 
++++
+
 ## Iterera sökresultat för datauppsättningar {#dataset-lookup}
 
-[Uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) gör att du kan hämta data från [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE){target="_blank"} under körning. De inkapslade data lagras som en array och kan itereras över i dina meddelanden.
+[Uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) gör att du kan hämta data från [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"} under körning. De inkapslade data lagras som en array och kan itereras över i dina meddelanden.
 
 >[!AVAILABILITY]
 >
@@ -241,6 +265,8 @@ context.journey.datasetLookup.<activityID>.entities
 ### Exempel: Produktinformation från en datauppsättning
 
 Om du använder en datauppslagsaktivitet för att hämta produktinformation baserat på SKU:er:
+
++++ Visa exempelkod
 
 **Uppslagskonfiguration för datauppsättning:**
 
@@ -271,9 +297,13 @@ Om du använder en datauppslagsaktivitet för att hämta produktinformation base
 </table>
 ```
 
++++
+
 ### Exempel: Filtrerad iteration med datauppsättningsdata
 
 Visa endast produkter från en viss kategori. Läs mer om villkorsstyrd filtrering i [Bästa praxis](#best-practices).
+
++++ Visa exempelkod
 
 ```handlebars
 <h2>Household Products</h2>
@@ -287,7 +317,11 @@ Visa endast produkter från en viss kategori. Läs mer om villkorsstyrd filtreri
 {{/each}}
 ```
 
++++
+
 ### Exempel: Beräkna summor från datauppsättningssökning
+
++++ Visa exempelkod
 
 ```handlebars
 {% let householdTotal = 0 %}
@@ -299,6 +333,8 @@ Visa endast produkter från en viss kategori. Läs mer om villkorsstyrd filtreri
 
 <p>Your household products total: ${{householdTotal}}</p>
 ```
+
++++
 
 ## Använd resans tekniska egenskaper {#technical-properties}
 
@@ -317,6 +353,8 @@ När du använder tilläggsidentifierare i händelseutlösta resor med matriser 
 
 **Scenario**: En resa aktiveras med flera bokningar, men du vill bara visa information för den specifika bokningen (identifieras med ett extra ID) som utlöste den här reseinstansen.
 
++++ Visa exempelkod
+
 ```handlebars
 {{#each context.journey.events.event_ID.bookingList as |booking|}}
   {%#if booking.bookingInfo.bookingNum = context.journey.technicalProperties.supplementalId%}
@@ -329,13 +367,19 @@ När du använder tilläggsidentifierare i händelseutlösta resor med matriser 
 {{/each}}
 ```
 
++++
+
 ### Exempel: Inkludera rese-ID för spårning
+
++++ Visa exempelkod
 
 ```handlebars
 <footer>
   <p>Journey Reference: {{context.journey.technicalProperties.journeyUID}}</p>
 </footer>
 ```
+
++++
 
 ## Kombinera flera sammanhangskällor {#combine-sources}
 
@@ -350,6 +394,8 @@ Ni kan kombinera data från olika källor i samma budskap för att skapa innehå
 ### Exempel: Kundvagnsartiklar med realtidslager
 
 Kombinera händelsedata (kundvagnsinnehåll) med anpassade åtgärdsdata (lagerstatus):
+
++++ Visa exempelkod
 
 ```handlebars
 <h2>Your Cart</h2>
@@ -375,9 +421,13 @@ Kombinera händelsedata (kundvagnsinnehåll) med anpassade åtgärdsdata (lagers
 {{/each}}
 ```
 
++++
+
 ### Exempel: Händelsedata som har berikats med datasökning
 
 Kombinera [händelse-SKU:er](#event-data) med detaljerad produktinformation från en [datauppslagssökning](#dataset-lookup):
+
++++ Visa exempelkod
 
 ```handlebars
 <h2>Your Order Details</h2>
@@ -398,7 +448,11 @@ Kombinera [händelse-SKU:er](#event-data) med detaljerad produktinformation frå
 {{/each}}
 ```
 
++++
+
 ### Exempel: Kombinera flera källor med tekniska egenskaper
+
++++ Visa exempelkod
 
 ```handlebars
 <div class="personalized-content">
@@ -428,6 +482,8 @@ Kombinera [händelse-SKU:er](#event-data) med detaljerad produktinformation frå
   </footer>
 </div>
 ```
+
++++
 
 ## Andra sammanhangstyper {#other-contexts}
 
@@ -464,6 +520,8 @@ Läs mer om hur du skickar samlingar i [Överför samlingar till anpassade åtg�
 
 **Exempelscenario**: Extrahera den första SKU:n med ett pris som är större än 0 från en produktlista.
 
++++ Visa exempelkod
+
 **Exempel på händelseschema**:
 
 ```json
@@ -499,9 +557,13 @@ Läs mer om hur du skickar samlingar i [Överför samlingar till anpassade åtg�
 
 Läs mer om funktionen `first` i [Samlingshanteringsfunktioner](../building-journeys/expression/collection-management-functions.md).
 
++++
+
 #### Skapa en lista med värden från en array
 
 **Använd skiftläge**: Skapa en kommaavgränsad lista med ID:n som ska skickas som en frågeparameter (t.ex. `/products?ids=sku1,sku2,sku3`).
+
++++ Visa exempelkod
 
 **Anpassad åtgärdskonfiguration**:
 
@@ -535,9 +597,13 @@ Läs mer om:
 
 Samlingshantering för anpassade åtgärder beskrivs i [Överför samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md#passing-collection).
 
++++
+
 #### Överföra en array med objekt till en anpassad åtgärd
 
 **Använd skiftläge**: Skicka en fullständig array med objekt i en begärandebrödtext (för POST eller GET med brödtext).
+
++++ Visa exempelkod
 
 **Exempel på begärandetext**:
 
@@ -584,11 +650,15 @@ Journey Optimizer konstruerar en array med objekt som matchar din åtgärdsnytto
 
 Läs mer i [Överför samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md#passing-collection).
 
++++
+
 ### Använda arrayer med datasetsökningar {#arrays-with-dataset-lookup}
 
 När du använder [uppslagsaktiviteten för datauppsättningar](../building-journeys/dataset-lookup.md) kan du skicka en array med värden som uppslagsnycklar för att hämta inkapslade data.
 
 **Exempel**: Sök efter produktinformation för alla SKU:er i en händelsearray.
+
++++ Visa exempelkod
 
 **Uppslagskonfiguration för datauppsättning**:
 
@@ -599,6 +669,8 @@ list(@event{purchaseEvent.productListItems.SKU})
 ```
 
 Då skapas en lista med alla SKU-värden som ska slås upp i datauppsättningen. Resultaten är tillgängliga som en array på `context.journey.datasetLookup.<activityID>.entities` som du kan iterera igenom i meddelandet (se [Upprepa sökresultat för datauppsättningar](#dataset-lookup)).
+
++++
 
 ### Begränsningar och mönster {#array-limitations}
 
@@ -638,6 +710,8 @@ Stora disksystem kan påverka resprestanda:
 Här är ett komplett arbetsflöde som visar hur du använder en händelsearray med en anpassad åtgärd.
 
 **Scenario**: När en användare överger sin kundvagn skickar du kundvagnsdata till ett externt rekommendations-API för att få anpassade förslag och visar dem sedan i ett e-postmeddelande.
+
++++ Visa hela exemplet
 
 **Steg 1: Konfigurera den anpassade åtgärden**
 
@@ -731,6 +805,8 @@ Innan du kör en direktresa testar du den anpassade åtgärden med funktionen&qu
 
 Läs mer i [Felsöka anpassade åtgärder](../action/troubleshoot-custom-action.md).
 
++++
+
 ## Bästa praxis {#best-practices}
 
 Följ dessa metodtips när du itererar över kontextuella data för att skapa underhållande, högpresterande personalisering.
@@ -738,6 +814,8 @@ Följ dessa metodtips när du itererar över kontextuella data för att skapa un
 ### Använd beskrivande variabelnamn
 
 Välj variabelnamn som tydligt anger vad du itererar över. Detta gör koden mer läsbar och enklare att underhålla. Läs mer om [personaliseringssyntax](personalization-syntax.md):
+
++++ Visa exempel
 
 ```handlebars
 <!-- Good -->
@@ -750,9 +828,13 @@ Välj variabelnamn som tydligt anger vad du itererar över. Detta gör koden mer
 {{#each array as |element|}}
 ```
 
++++
+
 ### Hantera tomma arrayer
 
 Använd `{{else}}`-satsen för att tillhandahålla reservinnehåll när en matris är tom. Läs mer om [hjälpfunktioner](functions/helpers.md):
+
++++ Visa exempel
 
 ```handlebars
 {{#each context.journey.actions.GetRecommendations.items as |item|}}
@@ -762,9 +844,13 @@ Använd `{{else}}`-satsen för att tillhandahålla reservinnehåll när en matri
 {{/each}}
 ```
 
++++
+
 ### Kombinera med villkorliga hjälpmedel
 
 Använd `{{#if}}` i slingor för villkorligt innehåll. Läs mer om [villkorliga regler](create-conditions.md) och se exempel i avsnitten [Anpassade åtgärder](#custom-action-responses) och [Datauppsättningssökning](#dataset-lookup).
+
++++ Visa exempel
 
 ```handlebars
 {{#each context.journey.actions.GetProducts.items as |product|}}
@@ -780,9 +866,13 @@ Använd `{{#if}}` i slingor för villkorligt innehåll. Läs mer om [villkorliga
 {{/each}}
 ```
 
++++
+
 ### Begränsa iteration för prestanda
 
 För stora arrayer bör du överväga att begränsa antalet iterationer:
+
++++ Visa exempel
 
 ```handlebars
 <!-- Display only first 5 items -->
@@ -793,6 +883,8 @@ För stora arrayer bör du överväga att begränsa antalet iterationer:
 {{/each}}
 ```
 
++++
+
 ### Åtkomst till arraymetadata
 
 Handlebars innehåller speciella variabler i slingor som hjälper till med avancerade iterationsmönster:
@@ -801,6 +893,8 @@ Handlebars innehåller speciella variabler i slingor som hjälper till med avanc
 * `@first`: Sant för den första iterationen
 * `@last`: Sant för den senaste upprepningen
 
++++ Visa exempel
+
 ```handlebars
 {{#each products as |product|}}
   <div class="product {{#if @first}}featured{{/if}}">
@@ -808,6 +902,8 @@ Handlebars innehåller speciella variabler i slingor som hjälper till med avanc
   </div>
 {{/each}}
 ```
+
++++
 
 >[!NOTE]
 >
@@ -821,6 +917,8 @@ Har du problem med upprepningen? I det här avsnittet beskrivs vanliga problem o
 
 **Problem**: Din arrayiteration visar inget innehåll.
 
++++ Visa möjliga orsaker och lösningar
+
 **Möjliga orsaker och lösningar**:
 
 1. **Felaktig sökväg**: Verifiera den exakta sökvägen till arrayen baserat på kontextkällan:
@@ -832,63 +930,44 @@ Har du problem med upprepningen? I det här avsnittet beskrivs vanliga problem o
 
 3. **Data är inte tillgängliga än**: Kontrollera att aktiviteten för anpassad åtgärd, händelse eller sökning efter datauppsättningar har körts innan meddelandeaktiviteten i ditt kundflöde.
 
++++
+
 ### Syntaxfel
 
 **Problem**: Uttrycksvalideringen misslyckas eller meddelandet återges inte.
 
++++ Visa vanliga misstag
+
 **Vanliga misstag**:
 
-* Avslutande taggar saknas: Varje `{{#each}}` måste ha en `{{/each}}`. Granska [Interaktionssyntaxen &#x200B;](#syntax) för att se om strukturen är korrekt.
+* Avslutande taggar saknas: Varje `{{#each}}` måste ha en `{{/each}}`. Granska [Interaktionssyntaxen ](#syntax) för att se om strukturen är korrekt.
 * Felaktigt variabelnamn: Kontrollera att variabelnamnet används konsekvent genom hela blocket. Mer information om namnkonventioner finns i [Bästa tillvägagångssätt](#best-practices).
 * Felaktiga sökvägsavgränsare: Använd punkter (`.`), inte snedstreck eller andra tecken
 
++++
+
 ### Testa dina iterationer
 
-Använd [testläget &#x200B;](../building-journeys/testing-the-journey.md) för resan för att verifiera dina iterationer. Detta är särskilt viktigt när du använder [anpassade åtgärder](#custom-action-responses) eller [datauppsättningssökningar](#dataset-lookup):
+Använd [testläget ](../building-journeys/testing-the-journey.md) för resan för att verifiera dina iterationer. Detta är särskilt viktigt när du använder [anpassade åtgärder](#custom-action-responses) eller [datauppsättningssökningar](#dataset-lookup):
+
++++ Visa teststeg
 
 1. Starta din resa i [testläge](../building-journeys/testing-the-journey.md)
 2. Utlös händelsen eller den anpassade åtgärden med exempeldata
 3. Kontrollera [förhandsgranskningen av meddelandet](../content-management/preview.md) för att verifiera att iterationen visas korrekt
 4. Granska testlägesloggar för eventuella fel (se [Loggar för testläge för anpassade åtgärder](../action/action-response.md#test-mode-logs))
 
++++
+
 ## Relaterade ämnen {#related-topics}
 
-**Grundläggande om Personalization:**
+**Grundläggande om Personalization:** [Kom igång med personalisering](personalize.md) | [Lägg till personalisering](personalization-build-expressions.md) | [Personalization-syntax ](personalization-syntax.md) | [Hjälpfunktioner](functions/helpers.md) | [Skapa villkorliga regler](create-conditions.md)
 
-* [Kom igång med personalisering](personalize.md)
-* [Lägg till personalisering](personalization-build-expressions.md)
-* [Personalization syntax](personalization-syntax.md)
-* [Hjälpfunktioner](functions/helpers.md)
-* [Skapa villkorsregler](create-conditions.md)
+**Resekonfiguration:** [Om händelser](../event/about-events.md) | [Konfigurera anpassade åtgärder](../action/about-custom-action-configuration.md) | [Skicka samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md#passing-collection) | [Använd API-anropssvar i anpassade åtgärder](../action/action-response.md) | [Felsöka anpassade åtgärder](../action/troubleshoot-custom-action.md) | [Använd Adobe Experience Platform-data på resor](../building-journeys/dataset-lookup.md) | [Använd extra identifierare på resor](../building-journeys/supplemental-identifier.md) | [Skyddsritningar och begränsningar ](../start/guardrails.md) | [Testa din resa](../building-journeys/testing-the-journey.md)
 
-**Resekonfiguration:**
+**Reseuttrycksfunktioner:** [Avancerad uttrycksredigerare](../building-journeys/expression/expressionadvanced.md) | [Funktioner för samlingshantering](../building-journeys/expression/collection-management-functions.md) (först, alla, sist) | [Listfunktioner](../building-journeys/functions/list-functions.md) (serializeList, filter, sort) | [Arrayfunktioner](../personalization/functions/arrays-list.md) (head, tail)
 
-* [Om händelser](../event/about-events.md)
-* [Konfigurera anpassade åtgärder](../action/about-custom-action-configuration.md)
-* [Skicka samlingar till anpassade åtgärdsparametrar](../building-journeys/collections.md#passing-collection)
-* [Använd API-anropssvar i anpassade åtgärder](../action/action-response.md)
-* [Felsöka anpassade åtgärder](../action/troubleshoot-custom-action.md)
-* [Använd Adobe Experience Platform-data under resor](../building-journeys/dataset-lookup.md)
-* [Använd tilläggsidentifierare under resor](../building-journeys/supplemental-identifier.md)
-* [Skyddsritningar och begränsningar](../start/guardrails.md)
-* [Testa din resa](../building-journeys/testing-the-journey.md)
+**Användningsexempel för Personalization:** [E-post om att kunden har lämnat en kundvagn](personalization-use-case-helper-functions.md) | [Meddelande om orderstatus](personalization-use-case.md)
 
-**Reseuttrycksfunktioner:**
-
-* [Avancerad uttrycksredigerare](../building-journeys/expression/expressionadvanced.md)
-* [Samlingshanteringsfunktioner](../building-journeys/expression/collection-management-functions.md) (först, alla, sist)
-* [Listfunktioner](../building-journeys/functions/list-functions.md) (serializeList, filter, sort)
-* [Arrayfunktioner](../personalization/functions/arrays-list.md) (head, tail)
-
-**Användningsexempel för Personalization:**
-
-* [E-post om att kunden överger en kundvagn](personalization-use-case-helper-functions.md)
-* [Meddelande om orderstatus](personalization-use-case.md)
-
-**Meddelandedesign:**
-
-* [Kom igång med e-postdesign](../email/get-started-email-design.md)
-* [Skapa push-meddelanden](../push/create-push.md)
-* [Skapa SMS-meddelanden](../sms/create-sms.md)
-* [Förhandsgranska och testa ditt innehåll](../content-management/preview-test.md)
+**Meddelandedesign:** [Kom igång med e-postdesign](../email/get-started-email-design.md) | [Skapa push-meddelanden](../push/create-push.md) | [Skapa SMS-meddelanden](../sms/create-sms.md) | [Förhandsgranska och testa ditt innehåll](../content-management/preview-test.md)
 
