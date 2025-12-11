@@ -8,9 +8,9 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 81d8d068f1337516adc76c852225fd7850a292e8
+source-git-commit: d6db3514a459e37d7c598efc82ffe0985ce72c41
 workflow-type: tm+mt
-source-wordcount: '2749'
+source-wordcount: '2734'
 ht-degree: 0%
 
 ---
@@ -78,57 +78,9 @@ AND
 
 +++
 
-+++Hur många fel som har inträffat på varje nod i en viss resa under en viss tid
++++Vilken regel som gjorde att en profil inte tog emot en reseåtgärd
 
-Den här frågan räknar de distinkta profiler som upplevde fel vid varje nod i en resa, grupperade efter nodnamn. Den innehåller alla typer av körningsfel och hämtningsfel.
-
-_Datasjöfråga_
-
-```sql
-SELECT
-_experience.journeyOrchestration.stepEvents.nodeName,
-count(distinct _experience.journeyOrchestration.stepEvents.profileID)
-FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
-AND DATE(timestamp) > (now() - interval '<last x hours>' hour)
-AND
-  (_experience.journeyOrchestration.stepEvents.actionExecutionError is not NULL
-    OR _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode is not NULL
-    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginCode is not NULL
-    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginError is not NULL
-    OR _experience.journeyOrchestration.stepEvents.fetchError is not NULL
-    OR _experience.journeyOrchestration.stepEvents.fetchErrorCode is not NULL
-  )
-GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
-```
-
-+++
-
-+++Hur många händelser som har tagits bort från en viss resa under en viss tidsperiod
-
-Den här frågan räknar det totala antalet händelser som har tagits bort från en resa. Den filtrerar efter olika bortkastningshändelsekoder, inklusive fel i segmentexportjobb, borttagning av dispatcher och kassering av tillståndsdatorer.
-
-_Datasjöfråga_
-
-```sql
-SELECT
-count(_id) AS NUMBER_OF_EVENTS_DISCARDED
-FROM journey_step_events
-WHERE (
-   _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'error'
-   OR _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
-   OR _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode = 'discard'
-   OR _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode is not null
-)
-AND _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
-AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
-```
-
-+++
-
-+++Visa steghändelser för ignorerade profiler
-
-Den här frågan returnerar information om steghändelser för profiler som har tagits bort från en resa. Det hjälper till att identifiera varför profiler ignorerades, till exempel på grund av affärsregler eller tysta tidsbegränsningar. Frågefiltren innehåller specifika typer av ignorerade händelser och visar viktig information, inklusive profil-ID, instans-ID, reseinformation och felet som orsakade ignoreringen.
+Den här frågan returnerar information om steghändelser för profiler som tagits bort under en resa och som inte fått någon reseåtgärd. Det hjälper till att identifiera varför profiler ignorerades på grund av affärsregler som tysta timbegränsningar.
 
 _Datasjöfråga_
 
@@ -181,6 +133,54 @@ Frågeresultaten visar nyckelfält som hjälper till att identifiera orsaken til
 * **eventType** - Anger vilken typ av affärsregel som orsakade borttagningen:
    * `quietHours`: Profilen ignorerades på grund av konfigurationen för tysta timmar
    * `forcedDiscardDueToQuietHours`: Profilen tvingades ignoreras eftersom skyddsgränsen nåddes för profiler som hålls i tysta timmar
+
++++
+
++++Hur många fel som har inträffat på varje nod i en viss resa under en viss tid
+
+Den här frågan räknar de distinkta profiler som upplevde fel vid varje nod i en resa, grupperade efter nodnamn. Den innehåller alla typer av körningsfel och hämtningsfel.
+
+_Datasjöfråga_
+
+```sql
+SELECT
+_experience.journeyOrchestration.stepEvents.nodeName,
+count(distinct _experience.journeyOrchestration.stepEvents.profileID)
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
+AND DATE(timestamp) > (now() - interval '<last x hours>' hour)
+AND
+  (_experience.journeyOrchestration.stepEvents.actionExecutionError is not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode is not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginCode is not NULL
+    OR _experience.journeyOrchestration.stepEvents.actionExecutionOriginError is not NULL
+    OR _experience.journeyOrchestration.stepEvents.fetchError is not NULL
+    OR _experience.journeyOrchestration.stepEvents.fetchErrorCode is not NULL
+  )
+GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
+```
+
++++
+
++++Hur många händelser som har tagits bort från en viss resa under en viss tidsperiod
+
+Den här frågan räknar det totala antalet händelser som har tagits bort från en resa. Den filtrerar efter olika bortkastningshändelsekoder, inklusive fel i segmentexportjobb, borttagning av dispatcher och kassering av tillståndsdatorer.
+
+_Datasjöfråga_
+
+```sql
+SELECT
+count(_id) AS NUMBER_OF_EVENTS_DISCARDED
+FROM journey_step_events
+WHERE (
+   _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'error'
+   OR _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
+   OR _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode = 'discard'
+   OR _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode is not null
+)
+AND _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionID>'
+AND DATE(timestamp) > (now() - interval '<last x hours>' hour);
+```
 
 +++
 
