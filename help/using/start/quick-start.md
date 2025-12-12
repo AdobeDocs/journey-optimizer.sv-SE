@@ -8,9 +8,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07
-source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
+source-git-commit: d3765f66beff13aaf77cd585c5da5f93c44fa1df
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -163,12 +163,43 @@ Implementera tekniska integreringar som kopplar Journey Optimizer till era appli
 
 ## Collaboration med flera roller
 
-Lyckade Journey Optimizer-implementeringar kräver samarbete i alla roller:
+Framgångsrika Journey Optimizer-implementeringar kräver samarbete i alla roller. Varje roll samverkar med andra för att leverera sömlösa kundupplevelser:
 
-* **Administratörer** aktiverar andra roller genom att konfigurera sandlådor, behörigheter och kanalkonfigurationer
-* **Datatekniker** tillhandahåller den datamöjligheter som utvecklare och marknadsförare bygger på
-* **Utvecklare** implementerar de tekniska integreringar som marknadsförare använder för att utlösa resor
-* **Marknadsförarna** ger feedback till alla team om datakvalitet, förslag på nya funktioner och användarupplevelser
+>[!BEGINTABS]
+
+>[!TAB Administratörer]
+
+**Administratörer** aktiverar alla team genom att hantera åtkomst och konfigurationer. De arbetar med:
+
+* **Datatekniker**: Bevilja behörigheter för datahantering, godkänna sandlådeåtkomst, koordinera för styrningsprinciper
+* **Utvecklare**: Ange API-autentiseringsuppgifter, konfigurera testmiljöer, godkänna kanalkonfigurationer
+* **Marknadsförare**: Tilldela behörigheter för resor/kampanjer, konfigurera kanaler, stödja testmiljöer
+
+>[!TAB Datatekniker]
+
+**Datatekniker** tillhandahåller en grund för alla. De arbetar med:
+
+* **Administratörer**: Begär behörigheter för datahantering, koordinat för styrnings- och lagringsprinciper
+* **Utvecklare**: Ange XDM-scheman och händelsestrukturer, definiera format för händelsenyttolast, testa datainmatning
+* **Marknadsförare**: Skapa beräknade attribut för personalisering, skapa målgrupper, konfigurera relationsscheman
+
+>[!TAB Utvecklare]
+
+**Utvecklare** implementerar tekniska integreringar som driver resor. De arbetar med:
+
+* **Datatekniker**: Hämta XDM-scheman och händelsestrukturer, anpassa efter datainsamlingsbehov, leverans av testhändelser
+* **Administratörer**: Ange API-specifikationer, begär behörigheter och autentiseringsuppgifter, koordinera för testningsstrategi
+* **Marknadsförare**: Förstå händelseutlösare, implementera spårning, supporttester, felsökning
+
+>[!TAB Marknadsförare]
+
+**Marknadsförare** utformar kundupplevelser och ger feedback. De arbetar med:
+
+* **Datatekniker**: Begär beräknade attribut, koordinera för målgruppskrav, ge feedback om datakvaliteten
+* **Utvecklare**: Justera mot händelseutlösare, testimplementeringar, validera spårning
+* **Administratörer**: Begär kanalkonfigurationer, bekräfta funktionsåtkomst, koordinera vid aktivering
+
+>[!ENDTABS]
 
 **Bästa praxis:** Håll regelbundna funktionsövergripande möten för att anpassa sig till prioriteringar, dela framsteg och hantera blockerare i olika team.
 
@@ -176,26 +207,30 @@ Lyckade Journey Optimizer-implementeringar kräver samarbete i alla roller:
 
 Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430318?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
 
 ## Ytterligare resurser
 
 Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
-**Utbildning och dokumentation:**
+>[!BEGINTABS]
 
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"} - Självstudiekurser steg för steg för alla roller
+>[!TAB Utbildning och dokumentation]
+
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Självstudiekurser steg för steg för alla roller
 * [Bibliotek för reseanvändningsexempel](../building-journeys/jo-use-cases.md) - Praktiska exempel och implementeringsmönster
 * [AI och intelligenta funktioner](ai-features.md) - Läs mer om AI Assistant, optimering vid sändning och innehållsgenerering
 * [Användargränssnittshandbok](user-interface.md) - Navigera effektivt i Journey Optimizer
 
-**Fortsätt vara uppdaterad:**
+>[!TAB Fortsätt vara uppdaterad]
 
 * [Versionsinformation](../rn/release-notes.md) - Senaste funktioner, förbättringar och korrigeringar
 * [Dokumentationsuppdateringar](../rn/documentation-updates.md) - Spåra senaste dokumentationsändringar
 * [Produktmeddelanden](../rn/releases.md#staying-informed) - Lär dig hur du prenumererar på e-post och produktmeddelanden för Journey Optimizer-uppdateringar
 
-**Community och support:**
+>[!TAB Community och support]
 
 * [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Kontakta andra användare och experter
 * [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ställ frågor och dela kunskap
+
+>[!ENDTABS]
