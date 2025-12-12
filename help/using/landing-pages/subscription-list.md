@@ -22,7 +22,7 @@ ht-degree: 1%
 >id="ajo_subscription_list"
 >title="Konfigurera en prenumerationslista"
 >abstract="Skapa en prenumerationslista för att samla in profiler som har valt att ta emot meddelanden om ett visst ämne eller evenemang. "
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/subscription-list.html#define-subscription-list" text="Skapa en prenumerationslista"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/subscription-list.html?lang=sv-SE#define-subscription-list" text="Skapa en prenumerationslista"
 
 En prenumerationstjänst avser marknadsföringsvaror och marknadsföringstjänster som tillhandahålls kunder som har valt att ta emot meddelanden om ett visst ämne/evenemang/intresse/osv. fortlöpande. I [!DNL Journey Optimizer] samlas de här kunderna i en prenumerationslista.
 
@@ -40,7 +40,7 @@ Profilerna kan läggas till i en prenumerationslista via en [landningssida](crea
 
 >[!NOTE]
 >
->När du skapar en prenumerationslista genereras ett associerat direktuppspelningssegment automatiskt i Adobe Experience Platform. För att direktuppspelningssegmentet ska kunna skapas måste alternativet **Active-On-Edge** vara aktiverat i sammanfogningsprincipen. Läs mer om villkoren för att direktuppspela segment i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation).
+>När du skapar en prenumerationslista genereras ett associerat direktuppspelningssegment automatiskt i Adobe Experience Platform. För att direktuppspelningssegmentet ska kunna skapas måste alternativet **Active-On-Edge** vara aktiverat i sammanfogningsprincipen. Läs mer om villkoren för att direktuppspela segment i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation).
 
 Följ stegen nedan för att skapa en prenumerationslista.
 
