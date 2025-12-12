@@ -8,23 +8,25 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: d6db3514a459e37d7c598efc82ffe0985ce72c41
+source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
 workflow-type: tm+mt
-source-wordcount: '2734'
+source-wordcount: '2747'
 ht-degree: 0%
 
 ---
 
 # Exempel på frågor{#query-examples}
 
-I det här avsnittet visas flera vanliga exempel för att fråga efter händelser i resesteg i datasjön.
+I det här avsnittet finns exempel som används ofta för att ställa frågor om händelser i resesteg i datasjön. Innan man går in på specifika användningsfall är det viktigt att förstå de nyckelidentifierare som används i data om resehändelser.
 
 Se till att fälten som används i dina frågor har associerade värden i motsvarande schema.
 
-+++Vad är skillnaden mellan id, instance och profileid?
+## Nyckelidentifierare {#key-identifiers}
+
++++Vad är skillnaden mellan id, instanceID och profileID?
 
 * id: unikt för alla steg-händelseposter. Två olika steghändelser kan inte ha samma ID.
-* instanceId: instanceID är samma för alla steg-händelser som är kopplade till en profil inom en körning. Om en profil återgår till resan används ett annat instanceId. Detta nya instanceId är samma för alla steg-händelser för den ommatade instansen (från start till slut).
+* instanceID: instanceID är samma för alla steg-händelser som är kopplade till en profil inom en körning. Om en profil återgår till resan används ett annat instans-ID. Det nya instans-ID:t är samma för alla steg-händelser för den ommatade instansen (från start till slut).
 * profileID: Profilens identitet motsvarar resenamnutrymmet.
 
 >[!NOTE]
@@ -124,7 +126,6 @@ WHERE
     _experience.journeyOrchestration.stepEvents.instanceID = 'unitary_089dc93a-1970-4875-9660-22433b18e500';
 ```
 
-![Exempelfrågeresultat som visar ignorerade profildetaljer](assets/query-discarded-profiles.png)
 
 Frågeresultaten visar nyckelfält som hjälper till att identifiera orsaken till att en profil tas bort:
 
@@ -1068,7 +1069,7 @@ _Datasjöfråga_
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
 where
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '<eventId>' AND
-_experience.journeyOrchestration.profile.ID = '<profileId>' AND
+_experience.journeyOrchestration.profile.ID = '<profileID>' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```

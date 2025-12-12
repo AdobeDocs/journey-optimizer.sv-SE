@@ -8,10 +8,10 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07
-source-git-commit: 4ae9e908d259dbd266417242cf9e65d693227061
+source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 2%
+source-wordcount: '1177'
+ht-degree: 1%
 
 ---
 
@@ -28,10 +28,10 @@ För att förenkla implementeringen organiserar Adobe Journey Optimizer uppgifte
 
 | Roll | Primärt ansvar | Viktiga färdigheter | Vanliga uppgifter |
 |-------------------|----------------------------------|--------------------------------|-----------------------------------------------|
-| **Administratör** | Systeminstallation och behörighetshantering | Systemkonfiguration, användarhantering, säkerhet | Konfigurera sandlådor, hantera användare, konfigurera kanaler |
-| **Datatekniker** | Konfigurera datastruktur och flöden | Datamodellering, schemadesign, API-integrering | Konfigurera scheman, hantera datauppsättningar, konfigurera datakällor |
-| **Utvecklare** | Tekniska integreringar och anpassningar | Mobilutveckling, API-implementering, kodning | Integrera mobilappar, implementera API:er, skapa anpassade åtgärder |
-| **Marketer** | Utforma och genomför kundresor | Marknadsföringsstrategi, innehållsskapande, resedesign | Skapa kampanjer, utforma resor, analysera rapporter |
+| **Administratör** | Miljöinställningar och åtkomsthantering | Systemkonfiguration, användarhantering, säkerhet | Konfigurera sandlådor, hantera behörigheter, konfigurera kanalkonfigurationer |
+| **Datatekniker** | Datagrund och -arkitektur | Datamodellering, XDM-scheman, datakvalitet | Skapa scheman och datauppsättningar, konfigurera datainmatning, hantera datalängd |
+| **Utvecklare** | Teknisk implementering och integrering | Mobile/Web SDK, API:er, händelsestyrd arkitektur | Integrera SDK:er, implementera händelser, skapa anpassade åtgärdsslutpunkter |
+| **Marketer** | Design och utförande av kundupplevelser | Resedesign, innehållsskapande, dataanalys | Skapa resor, skapa personaliserat innehåll, optimera kampanjer |
 
 Varje roll hanterar en viss fas av Adobe Journey Optimizer implementering och säkerställer en strukturerad och effektiv driftsättningsprocess.
 
@@ -40,31 +40,37 @@ Varje roll hanterar en viss fas av Adobe Journey Optimizer implementering och s�
 En lyckad Journey Optimizer-implementering följer vanligtvis den här sekvensen, som visar beroenden mellan roller:
 
 1. **Administratör**: Konfigurerar miljön\
-   Administratören lägger grunden för systemet och ser till att alla användare har korrekt åtkomst och konfiguration.
-   * Konfigurera sandlådor och behörigheter
-   * Konfigurera användaråtkomst
-   * Konfigurera meddelandekanaler och tekniska inställningar
+   Administratören lägger grunden genom att konfigurera sandlådor, konfigurera åtkomstkontroller och förbereda kanalkonfigurationer. Detta måste ske först för att andra team ska kunna arbeta.
+   * Konfigurera sandlådor för utveckling, staging och produktion
+   * Ställ in roller, behörigheter och åtkomstkontroll på objektnivå (OLAC)
+   * Konfigurera kanalkonfigurationer (e-post, SMS, push, in-app, webb, innehållskort)
+   * Delegera underdomäner och konfigurera IP-pooler
+   * Konfigurera inaktiveringslistor och medgivandeprinciper
 
 2. **Datatekniker**: Skapar datagrunden\
-   Datatekniker definierar datastrukturen och dataflödet, som är avgörande för personaliserade upplevelser.
-   * Utforma och implementera scheman
-   * Konfigurera identitetsnamnutrymmen
-   * Konfigurera datainmatning
-   * Skapa testprofiler
+   Datatekniker bygger upp den datainfrastruktur som driver personaliseringen, och definierar hur kunddata flödar in i och genom systemet.
+   * Skapa identitetsnamnutrymmen för kundidentifiering
+   * Utforma XDM-scheman (profil, upplevelsehändelser, relation)
+   * Konfigurera datauppsättningar och aktivera dem för kundprofil i realtid
+   * Konfigurera datainmatning (batch- och direktuppspelning)
+   * Skapa beräknade attribut för komplexa beräkningar
+   * Konfigurera händelser och datakällor för resor
 
-3. **Utvecklare**: Hanterar tekniska integreringar\
-   Utvecklarna gör det möjligt för Adobe Journey Optimizer att interagera med mobilappar, webbplatser och externa system genom att implementera tekniska integreringar. Push-meddelanden är till exempel beroende av utvecklarledda konfigurationer.
-   * Integrera mobilappar för push-meddelanden
-   * Implementera webb-SDK
-   * Utveckla anpassade integreringar med API:er
-   * Skapa anpassade åtgärder för tredjepartssystem
+3. **Utvecklare**: Implementerar tekniska integreringar\
+   Utvecklare kopplar program till Journey Optimizer genom att integrera SDK:er, skicka händelser och bygga API-slutpunkter. Dessa implementeringar gör det möjligt att utlösa och genomföra resor.
+   * Integrera Mobile SDK (iOS/Android) med inställningar för push-meddelanden
+   * Implementera SDK för webben
+   * Skicka händelser från program för att utlösa resor
+   * Skapa anpassade åtgärdsslutpunkter för integration med externa system
+   * Testa implementeringar med Adobe Experience Platform Assurance
 
-4. **Marketer**: Skapar och startar resor\
-   Marknadsförarna använder grunden från andra roller för att utforma och distribuera kundupplevelser. De fokuserar på målgruppssegmentering, personaliserat innehåll och reseoptimering.
-   * Utforma målgruppssegment
-   * Skapa personaliserat innehåll
-   * Bygga och testa resor
-   * Analysera prestanda och optimera
+4. **Marknadsförare**: Utformar och kör kundupplevelser\
+   Marknadsförarna utnyttjar allt det grundläggande arbetet för att skapa resor, skapa innehåll och optimera kundupplevelser i alla kanaler.
+   * Bygg målgrupper med segmentering, CSV-överföring eller målgruppskomposition
+   * Designa personaliserat material med AI Assistant och mallar
+   * Skapa flerkanaliga resor med event- och målgruppsutlösare
+   * Testa med arbetsflöden för godkännande före start
+   * Övervaka prestanda och optimera baserat på rapportinsikter
 
 **Obs!** Även om den här sekvensen är vanlig kan vissa aktiviteter förekomma parallellt. Utvecklare kan till exempel arbeta med appintegreringar medan datateknikerna konfigurerar scheman.
 
@@ -72,33 +78,113 @@ En lyckad Journey Optimizer-implementering följer vanligtvis den här sekvensen
 
 Varje roll börjar med specifika uppgifter som är anpassade efter dess fokus. När du slutför dessa inledande steg får du smidigare introduktion och anpassning till den övergripande implementeringsprocessen:
 
-1. **För marknadsförare**: Fokusera på att resa skapas, meddelandedesign och kampanjutförande.\
-   Exempel: Börja med att skapa en välkomstkampanj för nya kunder.
+### För marknadsförare {#for-marketers}
 
-2. **För datatekniker**: Upprätta datamängden, konfigurera scheman och integrera datakällor.\
-   Exempel: Ställ in ett schema för att spåra kundens inköpshistorik för anpassade rekommendationer.
+Fokusera på att skapa personaliserade kundupplevelser i alla kanaler.
 
-3. **För administratörer**: Konfigurera miljöer, hantera behörigheter och konfigurera meddelandekanaler.\
-   Exempel: Konfigurera sandlådemiljöer för att testa olika meddelandestrategier.
+**Nyckelfunktioner du kommer att använda:**
 
-4. **För utvecklare**: Integrera mobilappar, implementera API:er och skapa anpassade integreringar.\
-   Exempel: Använd Adobe Journey Optimizer API för att utlösa push-meddelanden baserat på kundåtgärder i din mobilapp.
+* Skapa målgrupper och bygg segment med flera metoder (segmentdefinitioner, CSV-överföring, målgruppskomposition)
+* Skapa material med AI Assistant för generering av text och bilder
+* Skapa flerkanaliga kundresor med dra-och-släpp-designer
+* Utnyttja optimering och konflikthantering vid sändning för att maximera engagemanget
+* Testa innehåll och använd arbetsflöden för godkännande före publicering
+* Övervaka prestanda med integrerade rapportpaneler
 
-Klicka på din roll nedan för att få tillgång till specifik vägledning som är anpassad efter ditt ansvar:
+**Börja med:** Skapa en enkel välkomstresa eller en övergiven kundvagnsåterställningskampanj med färdiga mallar.
 
-* [Kom igång som marknadsförare](path/marketer.md)
-* [Kom igång som datatekniker](path/data-engineer.md)
-* [Kom igång som administratör](path/administrator.md)
+[Kom igång som marknadsförare →](path/marketer.md)
+
+### För datatekniker {#for-data-engineers}
+
+Upprätta en grund för de data som ligger till grund för personaliserade upplevelser.
+
+**Viktiga ansvarsområden:**
+
+* Skapa identitetsnamnutrymmen och konfigurera identitetsupplösning
+* Utforma XDM-scheman för profil- och händelsedata (standard och relation)
+* Konfigurera datauppsättningar och aktivera dem för kundprofil i realtid
+* Konfigurera källanslutningar för import av batch- och direktuppspelningsdata
+* Skapa beräknade attribut för att förenkla segmenteringen
+* Konfigurera händelser och datakällor för körning av resan
+* Hantera datakvalitet, styrning och livscykel
+
+**Börja med:** Konfigurera identitetsnamnutrymmen och skapa ditt första profilschema med de obligatoriska fältgrupperna.
+
+[Kom igång som datatekniker →](path/data-engineer.md)
+
+### För administratörer {#for-administrators}
+
+Konfigurera och hantera Journey Optimizer-miljön för er organisation.
+
+**Viktiga ansvarsområden:**
+
+* Skapa och hantera sandlådor för utveckling, testning och produktion
+* Konfigurera roller och behörigheter med färdiga eller anpassade roller
+* Använd åtkomstkontroll på objektnivå (OLAC) för att skydda resurser
+* Konfigurera kanalkonfigurationer för e-post, SMS, push, in-app, webb och innehållskort
+* Delegera underdomäner och skapa IP-pooler för e-postleverans
+* Hantera undertryckningslistor och tillåtelselista
+* Konfigurera policyer för samtycke och datahantering (med hälso- och sjukvård/sköld för skydd av privatlivet)
+
+**Börja med:** Konfigurera sandlådor, konfigurera grundläggande roller och behörigheter och arbeta sedan med teamet i kanalkonfigurationer.
+
+[Kom igång som administratör →](path/administrator.md)
+
+### För utvecklare {#for-developers}
+
+Implementera tekniska integreringar som kopplar Journey Optimizer till era applikationer.
+
+**Viktiga ansvarsområden:**
+
+* Integrera Adobe Experience Platform Mobile SDK (iOS/Android)
+* Implementera Web SDK för webbupplevelser och push-meddelanden på webben
+* Konfigurera autentiseringsuppgifter och certifikat för push-meddelanden
+* Skicka händelser från program för att utlösa resor
+* Skapa API-slutpunkter som Journey Optimizer anropar via anpassade åtgärder
+* Implementera kodbaserade upplevelser för webben, mobiler och andra ytor
+* Testa och felsöka implementeringar med Adobe Experience Platform Assurance
+* Arbeta med Journey Optimizer API:er för programmatisk åtkomst
+
+**Börja med:** Integrera Mobile eller Web SDK och implementera sedan din första händelse för att utlösa en resa.
+
+[Kom igång som utvecklare →](path/developer.md)
+
+## Collaboration med flera roller
+
+Lyckade Journey Optimizer-implementeringar kräver samarbete i alla roller:
+
+* **Administratörer** aktiverar andra roller genom att konfigurera sandlådor, behörigheter och kanalkonfigurationer
+* **Datatekniker** tillhandahåller den datamöjligheter som utvecklare och marknadsförare bygger på
+* **Utvecklare** implementerar de tekniska integreringar som marknadsförare använder för att utlösa resor
+* **Marknadsförarna** ger feedback till alla team om datakvalitet, förslag på nya funktioner och användarupplevelser
+
+**Bästa praxis:** Håll regelbundna funktionsövergripande möten för att anpassa sig till prioriteringar, dela framsteg och hantera blockerare i olika team.
 
 ## Instruktionsvideo {#video}
 
 Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430318?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
 
 ## Ytterligare resurser
 
 Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
-* [Versionsinformation](../rn/release-notes.md)
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE)
+**Utbildning och dokumentation:**
+
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Självstudiekurser steg för steg för alla roller
+* [Bibliotek för reseanvändningsexempel](../building-journeys/jo-use-cases.md) - Praktiska exempel och implementeringsmönster
+* [AI och intelligenta funktioner](ai-features.md) - Läs mer om AI Assistant, optimering vid sändning och innehållsgenerering
+* [Användargränssnittshandbok](user-interface.md) - Navigera effektivt i Journey Optimizer
+
+**Fortsätt vara uppdaterad:**
+
+* [Versionsinformation](../rn/release-notes.md) - Senaste funktioner, förbättringar och korrigeringar
+* [Dokumentationsuppdateringar](../rn/documentation-updates.md) - Spåra senaste dokumentationsändringar
+* **Produktmeddelanden** - Aktivera aviseringar i din [Adobe Experience Cloud-profil](https://experience.adobe.com/preferences){target="_blank"} för att få meddelanden om nya releaser, underhållsperioder och viktiga meddelanden. Klicka på din profilikon > Inställningar > Meddelanden för att konfigurera.
+
+**Community och support:**
+
+* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Kontakta andra användare och experter
+* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ställ frågor och dela kunskap
