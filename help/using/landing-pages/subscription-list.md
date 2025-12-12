@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: landning, landningssida, lista, prenumeration, service
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-source-git-commit: 1aa2ac109cdbf0ba6af58204926f1cd5add334b0
+source-git-commit: c18f6f450bdc37f7ffbe87befb8601a920e46171
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '708'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 >id="ajo_subscription_list"
 >title="Konfigurera en prenumerationslista"
 >abstract="Skapa en prenumerationslista för att samla in profiler som har valt att ta emot meddelanden om ett visst ämne eller evenemang. "
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/subscription-list.html?lang=sv-SE#define-subscription-list" text="Skapa en prenumerationslista"
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/subscription-list.html#define-subscription-list" text="Skapa en prenumerationslista"
 
 En prenumerationstjänst avser marknadsföringsvaror och marknadsföringstjänster som tillhandahålls kunder som har valt att ta emot meddelanden om ett visst ämne/evenemang/intresse/osv. fortlöpande. I [!DNL Journey Optimizer] samlas de här kunderna i en prenumerationslista.
 
@@ -37,6 +37,10 @@ En prenumerationstjänst kan användas för:
 Profilerna kan läggas till i en prenumerationslista via en [landningssida](create-lp.md). Ett exempel visas i [det här avsnittet](lp-use-cases.md#subscription-to-a-service).
 
 ## Skapa en prenumerationslista {#define-subscription-list}
+
+>[!NOTE]
+>
+>När du skapar en prenumerationslista genereras ett associerat direktuppspelningssegment automatiskt i Adobe Experience Platform. För att direktuppspelningssegmentet ska kunna skapas måste alternativet **Active-On-Edge** vara aktiverat i sammanfogningsprincipen. Läs mer om villkoren för att direktuppspela segment i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation).
 
 Följ stegen nedan för att skapa en prenumerationslista.
 
