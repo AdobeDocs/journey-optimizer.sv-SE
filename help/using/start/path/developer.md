@@ -5,9 +5,9 @@ feature: Get Started
 role: Developer
 level: Experienced
 exl-id: 5053dd4f-d050-415f-bc74-d6d061bdcbe1
-source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
+source-git-commit: 2d699fe8a3320400dad2d5d962028d6e2a5425f8
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1816'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,9 @@ För intern mobilappspersonalisering med kodbaserade upplevelser:
 
 För webbaserade implementeringar är Web SDK den primära integrationspunkten:
 
-1. **Installera SDK** för webben: Följ [implementeringshandboken för SDK för webben](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} för att konfigurera SDK på webbplatsen.
+1. **Installera SDK** för webben: Följ [implementeringshandboken för SDK för webben](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} för att konfigurera SDK på webbplatsen.
 
-1. **Konfigurera datastreams**: Skapa och konfigurera ett datastream i [!DNL Adobe Experience Platform Data Collection] med Journey Optimizer aktiverat. Läs mer i [datastreams-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=sv-SE){target="_blank"}.
+1. **Konfigurera datastreams**: Skapa och konfigurera ett datastream i [!DNL Adobe Experience Platform Data Collection] med Journey Optimizer aktiverat. Läs mer i [datastreams-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}.
 
 1. **Aktivera push-meddelanden på webben** (valfritt): Konfigurera egenskapen [pushNotifications](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications){target="_blank"} i din SDK-webbkonfiguration och använd kommandot [sendPushSubscription](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription){target="_blank"} för att registrera push-prenumerationer.
 
@@ -187,7 +187,7 @@ Journey Optimizer erbjuder omfattande REST API:er för programmatisk åtkomst:
 
 ## Testning och felsökning {#testing}
 
-1. **Felsök SDK-implementering**: Använd Adobe Experience Platform Assurance för att inspektera SDK-händelser, validera datainsamling och felsöka integreringsproblem i realtid. [Läs mer om Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=sv-SE){target="_blank"}.
+1. **Felsök SDK-implementering**: Använd Adobe Experience Platform Assurance för att inspektera SDK-händelser, validera datainsamling och felsöka integreringsproblem i realtid. [Läs mer om Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 1. **Testa händelseleverans**: Verifiera att händelser från ditt program tas emot korrekt av Adobe Experience Platform och utlöser resor som förväntat. Övervaka händelseinmatning och validera nyttolaststrukturen.
 
@@ -231,7 +231,7 @@ Implementera policyer för datastyrning och samtycke i era integreringar:
 
 * **Developer Console**: Använd [Adobe Developer Console](https://developer.adobe.com){target="_blank"} för att skapa integreringar och hantera API-autentiseringsuppgifter.
 * **Exempelkod**: Utforska [exempelimplementeringar på GitHub](https://github.com/adobe/alloy-samples/tree/main/ajo){target="_blank"}.
-* **Självstudievideor**: Lär dig med praktiska självstudiekurser på [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}.
+* **Självstudievideor**: Lär dig med praktiska självstudiekurser på [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}.
 * **Developer Community**: Kommunicera med andra utvecklare och få support i Adobe community-forum.
 
 ## Samarbeta mellan roller {#next-steps}
@@ -268,14 +268,6 @@ Samarbeta med [marknadsförare](marketer.md) om resekrav och testning:
 * Felsöka problem med meddelandeleverans eller personalisering
 
 >[!ENDTABS]
-
-## Håll dig uppdaterad
-
-Håll dig à jour med de senaste funktionerna från Journey Optimizer och tekniska förändringar:
-
-* **[Versionsinformation](../../rn/release-notes.md)**: Granska nya funktioner, API-ändringar, SDK-uppdateringar och felkorrigeringar som släpps varje månad
-* **[Dokumentationsuppdateringar](../../rn/documentation-updates.md)**: Spåra senaste ändringar av teknisk dokumentation, inklusive nya implementeringsguider och kodexempel
-* **[Produktmeddelanden](../../rn/releases.md#staying-informed)**: Lär dig hur du prenumererar på e-post och produktmeddelanden för Journey Optimizer-uppdateringar, inklusive nya SDK-versioner, API-ändringar, ändringar och viktiga säkerhetsuppdateringar
 
 ## Börja implementera
 

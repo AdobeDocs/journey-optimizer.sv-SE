@@ -7,9 +7,9 @@ feature: Get Started
 role: Developer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
+source-git-commit: 2d699fe8a3320400dad2d5d962028d6e2a5425f8
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Som **dataarkitekt** eller **datatekniker** konfigurerar och underhåller du kun
 
 >[!NOTE]
 >
->Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+>Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 ## Konfigurationssteg för viktiga data
 
@@ -67,10 +67,37 @@ När resorna är klara kan du ställa frågor om steg i kundresan i Data Lake f�
 
 Utforska färdiga [frågeexempel för reseanalys](../../reports/query-examples.md) för att komma igång med dataanalys och felsökning.
 
-## Håll dig uppdaterad
+## Samarbeta mellan roller
 
-Håll dig à jour med de senaste funktionerna i Journey Optimizer och förbättringarna:
+Ditt datakonfigurationsarbete är viktigt för andra team:
 
-* **[Versionsinformation](../../rn/release-notes.md)**: Granska nya funktioner, förbättringar och korrigeringar som släpps varje månad
-* **[Dokumentationsuppdateringar](../../rn/documentation-updates.md)**: Spåra senaste ändringar av dokumentationen, inklusive nya sidor och uppdaterat innehåll
-* **[Produktmeddelanden](../../rn/releases.md#staying-informed)**: Lär dig hur du prenumererar på e-post- och produktaviseringar för Journey Optimizer-uppdateringar, inklusive nya funktioner, underhållsfönster och viktiga systemändringar
+>[!BEGINTABS]
+
+>[!TAB Arbeta med administratörer]
+
+Samarbeta med [administratörer](administrator.md) om åtkomst och styrning:
+
+* Begär nödvändiga behörigheter för datahantering och schemaskapande
+* Koordinera åtkomst till sandlådor för utveckling och testning
+* Anpassa er efter policyer för datastyrning och samtyckeshantering
+* Diskutera principer för datalagring och lagringskrav
+
+>[!TAB Arbeta med utvecklare]
+
+Samarbeta med [utvecklare](developer.md) om datastruktur och händelser:
+
+* tillhandahålla XDM-scheman och händelsestrukturer som de behöver implementera
+* Definiera vilka händelser som ska skickas och deras obligatoriska nyttolastformat
+* Anpassa er efter datainsamlingskrav och standarder för datakvalitet
+* Testa händelseleverans och datainmatning tillsammans
+
+>[!TAB Arbeta med marknadsförare]
+
+Samarbeta med [marknadsförare](marketer.md) om målgrupper och data:
+
+* Skapa beräknade attribut för personalisering och segmentering
+* Bygg målgrupper baserat på deras kampanj- och resebehov
+* Konfigurera relationsscheman för orkestrerade kampanjer
+* Stöd för segmentering av flera enheter för avancerade användningsområden
+
+>[!ENDTABS]

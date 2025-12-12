@@ -7,9 +7,9 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
+source-git-commit: 2d699fe8a3320400dad2d5d962028d6e2a5425f8
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -140,8 +140,8 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 
 **Användningsexempel på resan** (realtid, en-till-en):
 
-* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
-* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
+* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
+* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
 * **Händelsestyrda meddelanden**: Svara på kundåtgärder i realtid
 * **Födelsedagskampanjer**: Skicka personaliserade födelsedagsmeddelanden som utlösts av profildatum
 * **Produktrekommendationer**: Föreslå relevanta produkter baserat på bläddring och inköpshistorik
@@ -153,7 +153,7 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 * **Lojalitetsprogram erbjuder**: Belöna värdefulla kunder med nivåindelade erbjudanden baserat på inköpshistorik
 * **Kontobaserad marknadsföring**: Målkonton med specifika egenskaper och relaterade kontakter
 * **Prenumerationsförnyelser**: Nå kunder med prenumerationer som snart går ut med hjälp av multientitetsfrågor
-* **Återengagemangskampanjer**: Vinn inaktiva kunder med målinriktade erbjudanden i gruppläge. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
+* **Återengagemangskampanjer**: Vinn inaktiva kunder med målinriktade erbjudanden i gruppläge. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
 
 **Resemönster:**
 
@@ -163,25 +163,44 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 
 Bläddra i det fullständiga biblioteket för [användningsfall för resan](../../building-journeys/jo-use-cases.md) och läs mer om [samordnade kampanjer](../../orchestrated/gs-orchestrated-campaigns.md).
 
-## Samarbeta med andra roller
+## Samarbeta mellan roller
 
 Marknadsföringsarbetet samverkar med andra team:
 
-* **Arbeta med [datatekniker](data-engineer.md)**: Begär nya beräknade attribut, koordinera relationsscheman för orkestrerade kampanjer, ge feedback på målgruppskvaliteten och anpassa sig till datakraven för flera enheter för avancerad segmentering
-* **Arbeta med [utvecklare](developer.md)**: Justera mot händelseutlösare, testa mobilimplementeringar och validera spårning
-* **Arbeta med [administratörer](administrator.md)**: Begär kanalkonfigurationer, bekräfta licensåtkomst för orkestrerade kampanjer, rapportera problem med behörigheter och koordinera för aktivering av nya funktioner
+>[!BEGINTABS]
 
-## Håll dig uppdaterad
+>[!TAB Arbeta med datatekniker]
 
-Håll dig à jour med de senaste funktionerna i Journey Optimizer och marknadsföringsfunktionerna:
+Samarbeta med [datatekniker](data-engineer.md) om data- och målgruppskonfigurationer:
 
-* **[Versionsinformation](../../rn/release-notes.md)**: Granska nya funktioner, kanaluppdateringar och förbättringar som släpps varje månad
-* **[Dokumentationsuppdateringar](../../rn/documentation-updates.md)**: Spåra senaste ändringar, inklusive nya användningsfall, bästa praxis och funktionsdokumentation
-* **[Produktmeddelanden](../../rn/releases.md#staying-informed)**: Lär dig hur du prenumererar på e-postmeddelanden och produktmeddelanden för Journey Optimizer-uppdateringar, inklusive nya kanaler, kommande funktionsstarter och viktiga kampanjmeddelanden
+* Begär nya beräknade attribut för personalisering och segmentering
+* Koordinera relationsscheman för orkestrerade kampanjer
+* Ge återkoppling om målgruppens kvalitet och datakvalitet
+* Justera mot datakrav för flera enheter för avancerad segmentering
+
+>[!TAB Arbeta med utvecklare]
+
+Samarbeta med [utvecklare](developer.md) om händelsespårning och implementering:
+
+* Justera vilka användarinteraktioner som ska utlösa resthändelser
+* Testa mobil- och webbimplementeringar före start
+* Validera spårning för innehållsprestanda och användarengagemang
+* Felsöka problem med meddelandeleverans eller personalisering
+
+>[!TAB Arbeta med administratörer]
+
+Samarbeta med [administratörer](administrator.md) om åtkomst och konfigurationer:
+
+* Begär kanalkonfigurationer för era kampanjer och resor
+* Bekräfta licensåtkomst för orkestrerade kampanjer och andra funktioner
+* Rapportera problem med behörigheter eller åtkomst
+* Koordinera för nya funktioner i aktiverings- och testmiljöer
+
+>[!ENDTABS]
 
 ## Nästa steg
 
 1. **Start small**: Skapa en enkel välkomstresa eller kampanj med ett enda meddelande för att lära dig plattformen
 2. **Utnyttja AI**: Använd AI Assistant för att ställa frågor och snabba upp skapandet av innehåll
 3. **Gå med i communityn**: Anslut till andra Journey Optimizer-användare i [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
-4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}
+4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}

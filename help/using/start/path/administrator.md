@@ -7,9 +7,9 @@ feature: Get Started
 role: Admin
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
+source-git-commit: 2d699fe8a3320400dad2d5d962028d6e2a5425f8
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '959'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Följ de här stegen för att konfigurera åtkomsthantering:
 
 1. **Använd åtkomstkontroll på objektnivå** (valfritt). Använd etiketter på objekt som resor, kampanjer och kanalkonfigurationer för att styra vilka användare som har tillgång till specifika resurser. Läs mer om [Åtkomstkontroll på objektnivå (OLAC)](../../administration/object-based-access.md).
 
-Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 När du använder [!DNL Journey Optimizer] för första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
@@ -88,23 +88,40 @@ I takt med att organisationens behov växer bör du tänka på följande avancer
 
 * **IP-värmeringsplaner**: Öka antalet e-postutskick gradvis för att skapa avsändarens anseende hos e-postleverantörer. [Läs mer](../../configuration/ip-warmup-gs.md)
 
-## Samarbeta med andra roller
+## Samarbeta mellan roller
 
 Tack vare ert administrativa arbete kan alla team lyckas:
 
-* **Stöd för [datatekniker](data-engineer.md)**: Bevilja behörigheter för datahantering, godkänn sandlådeåtkomst och koordinera för datalagringspolicyer
+>[!BEGINTABS]
 
-* **Aktivera [Utvecklare](developer.md)**: Ange API-autentiseringsuppgifter, konfigurera sandlådemiljöer för testning och godkänna kanalkonfigurationer
+>[!TAB Supporttekniker]
 
-* **Stärk [marknadsförare](marketer.md)**: Tilldela lämpliga behörigheter för att skapa resor och kampanjer, konfigurera kanaler som de ska använda och ge support för testmiljöer
+Samarbeta med [datatekniker](data-engineer.md) om datahantering och åtkomst:
 
-## Håll dig uppdaterad
+* Bevilja behörigheter för datahantering och schemaskapande
+* Godkänn sandlådeåtkomst för utveckling och testning
+* Koordinera om policyer för datalagring och styrningsregler
+* Möjliggör åtkomst till avancerade funktioner som Federated Audience Composition
 
-Håll dig à jour med de senaste uppdateringarna och administrativa förändringar för Journey Optimizer:
+>[!TAB Aktivera utvecklare]
 
-* **[Versionsinformation](../../rn/release-notes.md)**: Granska nya funktioner, plattformsuppdateringar, säkerhetsuppdateringar och konfigurationsändringar som släpps varje månad
-* **[Dokumentationsuppdateringar](../../rn/documentation-updates.md)**: Spåra senaste ändringar av konfigurationsguider, behörighetsuppdateringar och nya administrativa funktioner
-* **[Produktmeddelanden](../../rn/releases.md#staying-informed)**: Lär dig hur du prenumererar på e-post och produktmeddelanden för Journey Optimizer-uppdateringar, inklusive systemunderhåll, säkerhetsuppdateringar och viktiga produktmeddelanden. Som administratör bör du aktivera alla viktiga systemmeddelanden
+Samarbeta med [utvecklare](developer.md) om API-åtkomst och -testning:
+
+* Ange API-autentiseringsuppgifter via Adobe Developer Console
+* Konfigurera sandlådemiljöer för utveckling och testning
+* Godkänn kanalkonfigurationer (push-certifikat, SMS-providers)
+* Koordinera testmiljöer och distributionsstrategier
+
+>[!TAB Empower Marketers]
+
+Samarbeta med [marknadsförare](marketer.md) om behörigheter och kanalinställningar:
+
+* Tilldela lämpliga behörigheter för att skapa resor och kampanjer
+* Konfigurera de kanaler som de ska använda (e-post, push, SMS etc.)
+* Stödja testmiljöer och arbetsflöden för godkännande
+* Möjliggör åtkomst till nya funktioner
+
+>[!ENDTABS]
 
 ## Nästa steg
 
