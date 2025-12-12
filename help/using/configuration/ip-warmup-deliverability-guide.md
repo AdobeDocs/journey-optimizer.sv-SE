@@ -8,8 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, leveransförmåga, anseende, internetleverantör, engagemang
-exl-id: TBD
-source-git-commit: b1b9b34aec305d6690d93e68238aed852ef689b7
+source-git-commit: 07896931a7c06e1b712f3b65e1dcf939b521ba83
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -145,7 +144,7 @@ När du har slutfört din vårdsplan och mätvärden har stabiliserats:
 
 Lär dig mer om grunderna för leveransförmåga, anseende och de bästa metoderna för IP-uppvärmning i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463786/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on)
 
 <!--
 >[!NOTE]
