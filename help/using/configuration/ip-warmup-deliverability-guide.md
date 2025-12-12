@@ -145,7 +145,7 @@ När du har slutfört din vårdsplan och mätvärden har stabiliserats:
 
 Lär dig mer om grunderna för leveransförmåga, anseende och de bästa metoderna för IP-uppvärmning i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3463786/?captions=swe&learn=on)
 
 <!--
 >[!NOTE]

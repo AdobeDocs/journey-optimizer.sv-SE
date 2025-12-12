@@ -56,7 +56,7 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 
 Lär dig hur du skapar och kör en IP-värmeringsplan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432637/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453844/?captions=swe&learn=on)
 
 >[!NOTE]
 >
