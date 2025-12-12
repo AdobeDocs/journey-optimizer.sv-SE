@@ -8,9 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: IP, leveransförmåga, anseende, internetleverantör, engagemang
-source-git-commit: 07896931a7c06e1b712f3b65e1dcf939b521ba83
+source-git-commit: 5dd6ebadd7b8c7490cb10496282697ce32ff3693
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1046'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 När du lanserar e-postkampanjer med nya IP-adresser eller domäner i Adobe Journey Optimizer är det viktigt att förstå leveransgrunderna för att skapa ett starkt avsändarrykte. Den här guiden beskriver viktiga koncept, förberedelser och metodtips som hjälper dig att gå över från noll till färdig inkorg.
 
-➡️ [Titta på den här videon om du vill veta mer om grundläggande IP-värmersleverans](#video)
+➡️ Lär dig mer om grundläggande leveransmöjligheter, anseende och bästa praxis för IP-uppvärmning i videon från detta [Adobe-blogginlägg](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950){target="_blank"}.
 
 >[!NOTE]
 >
@@ -42,11 +42,11 @@ Innan du börjar värma upp dina IP-adresser måste du se till att alla grundlä
 
 | Uppgift | Varför det spelar någon roll | Så här uppnår du |
 |------|----------------|-------------------|
-| Reservera fasta IP-adresser och delegera underdomäner i AJO | Alla framtida anseende knyts till dessa infrastrukturelement | Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]**. [Läs mer](delegate-subdomain.md) |
-| Konfigurera SPF och DKIM | Bekräftar att den avsändande servern är legitim och auktoriserad | Hanteras automatiskt av Adobe efter att underdomäner delegerats och kanalkonfigurationer skapats. [Läs mer](delegate-subdomain.md) |
-| Ställ in DMARC-post | Aktiverar rapportering om e-postautentisering och principer för framtida tillämpning | Hanteras automatiskt av Adobe efter att underdomäner delegerats och kanalkonfigurationer skapats. [Läs mer](dmarc-record.md) |
-| Konfigurera övervakning av dirigeringslista | Identifierar placeringsproblem i inkorgen tidigt i uppvärmningsprocessen | Lägg till dirigerade adresser när du skapar kanalkonfigurationen. [Läs mer](seed-lists.md) |
-| Bygg fas 1 för målgrupper med högt engagemang | Ökar mätvärdena för tidigt engagemang med de mest aktiva mottagarna | Skapa en målgrupp med färre än 5 000 kontakter som har öppnat eller klickat de senaste 30 dagarna |
+| Reservera fasta IP-adresser och delegera underdomäner i AJO | Alla framtida anseende knyts till dessa infrastrukturelement. | Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]**. [Läs mer](delegate-subdomain.md) |
+| Konfigurera SPF och DKIM | Bekräftar att den avsändande servern är legitim och auktoriserad. | Hanteras automatiskt av Adobe efter [underdomänsdelegering](delegate-subdomain.md) och [skapande av kanalkonfiguration](channel-surfaces.md). |
+| Kontrollera att DMARC-posten är konfigurerad (p=ingen) | Aktiverar rapportering om e-postautentisering och principer för framtida tillämpning. | Kontrollera att DMARC-posten har konfigurerats för alla delegerade underdomäner. När du delegerar en ny underdomän kan du konfigurera DMARC direkt i gränssnittet. [Läs mer](dmarc-record.md) |
+| Konfigurera övervakning av dirigeringslista | Identifierar placeringsproblem i inkorgen tidigt i uppvärmningsprocessen. | Lägg till dirigerade adresser när du skapar kanalkonfigurationen. [Läs mer](seed-lists.md) |
+| Bygg fas 1 för målgrupper med högt engagemang | Ökar mätvärdena för tidigt engagemang med era mest aktiva mottagare. | Skapa en målgrupp med färre än 5 000 kontakter som har öppnat eller klickat de senaste 30 dagarna. [Läs mer](../audience/creating-a-segment-definition.md) |
 
 >[!CAUTION]
 >
@@ -58,19 +58,15 @@ I den här exempelkalendern visas en progressiv volymbildruta baserat på procen
 
 | Dagar | % av UDV | Målgrupper | Innehållsrekommendationer |
 |------|----------|-----------------|------------------------|
-| 1-3 | 0,5 % | Dina mest engagerade mottagare | Använd ett kort, oformaterat textformat med en tydlig call-to-action-formatering som ligger över förskjutningen |
-| 4-7 | 1 % | Engagerade användare och nya köpare | Lägg till en liten hjältebild, begränsa länkarna till 3 eller färre |
-| 8-14 | 5 % | Bredare aktiv prenumerantlista | Presentera din standardmall för e-post, men undvik kostsamt reklammaterial |
-| 15-21 | 25 % | Aktiva plus svagt inaktiva prenumeranter | Använd normalt marknadsföringsmaterial samtidigt som man noggrant övervakar antalet klagomål |
-| 22-28 | 50-100 % | Fullständig lista (med hänsyn till undertryckningslistor) | Övergång till din stationära sändningsstation |
+| 1-3 | 0,5 % | Dina mest engagerade mottagare | Använd ett kort, oformaterat textformat med en tydlig call-to-action-bild som ligger över förskjutningen. |
+| 4-7 | 1 % | Engagerade användare och nya köpare | Lägg till en lättviktig hjältebild, begränsa länkarna till 3 eller färre. |
+| 8-14 | 5 % | Bredare aktiv prenumerantlista | Presentera din standardmall för e-post, men undvik mycket reklam. |
+| 15-21 | 25 % | Aktiva plus svagt inaktiva prenumeranter | Använd normalt marknadsföringsmaterial samtidigt som ni noggrant övervakar antalet klagomål. |
+| 22-28 | 50-100 % | Fullständig lista (med hänsyn till undertryckningslistor) | Gå över till din stadiga sändningsstation. |
 
->[!NOTE]
->
->Adobe Journey Optimizer har en dedikerad funktion för [IP-värmningsplaner](ip-warmup-gs.md) som automatiserar volymhanteringen och förenklar värmningsprocessen utan att det krävs komplexa kundresekonfigurationer.
+## Använda funktionen för IP-värmningsplaner {#ajo-warmup-feature}
 
-## Använda funktionen för AJO IP-uppvärmningsplaner {#ajo-warmup-feature}
-
-Adobe Journey Optimizer har en smidig funktion för IP-uppvärmningsplaner som eliminerar behovet av manuell volymbegränsning genom komplexa kundresor. Den här funktionen garanterar en standardiserad metod för att bygga upp avsändarens anseende.
+Adobe Journey Optimizer innehåller en smidig funktion för [IP-uppvärmningsplaner](ip-warmup-gs.md) som eliminerar behovet av manuell volymbegränsning via komplexa inställningar för resor. Den här funktionen garanterar en standardiserad metod för att bygga upp avsändarens anseende.
 
 ### Så fungerar det
 
@@ -86,23 +82,19 @@ Adobe Journey Optimizer har en smidig funktion för IP-uppvärmningsplaner som e
 
 Adobe Journey Optimizer har inbyggda rapporteringsfunktioner för att spåra prestanda för IP-värmare:
 
-* **Live-rapporter**: Få åtkomst till realtidsmätning och visualisering av era kampanjer från fliken **[!UICONTROL Last 24hrs]**. [Läs mer](../reports/live-report.md)
+* **Live-rapporter**: Få åtkomst till realtidsmätning och visualisering av era kampanjer från fliken **[!UICONTROL Last 24hrs]**. [Läs mer](../reports/campaign-live-report.md#email-live)
 
-* **Customer Journey Analytics-integrering**: Använd Customer Journey Analytics för att analysera data från Adobe Experience Platform och skapa anpassade visualiseringar om du vill ha mer information. [Läs mer](../reports/report-gs-cja.md)
+* **Alla tidsrapporter**: Använd Customer Journey Analytics för att analysera data från Adobe Experience Platform och skapa anpassade visualiseringar om du vill ha mer information. [Läs mer](../reports/report-gs-cja.md)
 
 ### Måttmål
 
 Övervaka dessa nyckeltal under hela värmen:
 
-| Mått | Måltröskel | Åtgärd om överskriden |
+| Mått | Måltröskel | Korrigeringsåtgärd |
 |--------|-----------------|-------------------|
-| Klagomålssats | ≤ 0,1 % | Granska segment och undertrycka kroniska klagare |
-| Hård studsfrekvens | ≤ 2 % | Granska kvalitet och hygienrutiner för listor |
-| Öppen kurs | ≥ 10 % | Verifiera att ni riktar in er på engagerade målgrupper |
-
->[!TIP]
->
->Använd funktionerna [kampanjliverapport](../reports/campaign-live-report.md#email-live) och [Customer Journey Analytics-rapport](../reports/campaign-global-report-cja-email.md) om du vill ha omfattande kampanjanalyser.
+| Klagomålssats | ≤ 0,1 % | Om det överskrids, ska man granska segment och undertrycka kroniska klagare. |
+| Hård studsfrekvens | ≤ 2 % | Om detta överskrids, se över listans kvalitet och hygienrutiner. |
+| Öppen kurs | ≥ 10 % | Om nivån är för låg kontrollerar du att du riktar in dig på engagerade målgrupper. |
 
 ## Felsöka spelningsbok {#troubleshooting}
 
@@ -110,9 +102,9 @@ Använd den här beslutsmatrisen för att åtgärda vanliga problem under värme
 
 | Symptom | Trolig orsak | Rekommenderad åtgärd |
 |---------|--------------|-------------------|
-| Tillfälliga Yahoo-fel (421 fel) | Volymen ökade för snabbt | Pausa sändning i 24 timmar och starta sedan om på föregående nivå |
-| Öppen ränta under 2 % på startkonton | IP-blockeringslistning | Markera [Google Postmaster Tools](https://postmaster.google.com/) och [Microsoft SNDS](https://sendersupport.olc.protection.outlook.com/snds/); öppna en leveransbiljett om det behövs |
-| Andelen klagomål överstiger 0,3 % | Målgrupp eller målgrupp som inte är särskilt inriktad | Granska segmentdefinitioner och exkludera kroniska klagare från din [undertryckningslista](manage-suppression-list.md) |
+| Tillfälliga Yahoo-fel (421 fel) | Volymen ökade för snabbt | Pausa sändning i 24 timmar och starta sedan om på föregående nivå. |
+| Öppen ränta under 2 % på startkonton | IP-blockeringslistning | Markera [Google Postmaster Tools](https://postmaster.google.com/) och [Microsoft SNDS](https://sendersupport.olc.protection.outlook.com/snds/); öppna en leveransbiljett om det behövs. |
+| Andelen klagomål överstiger 0,3 % | Målgrupp eller målgrupp som inte är särskilt inriktad | Granska segmentdefinitioner och exkludera kroniska klagare från din [undertryckningslista](manage-suppression-list.md). |
 
 >[!IMPORTANT]
 >
@@ -122,29 +114,23 @@ Använd den här beslutsmatrisen för att åtgärda vanliga problem under värme
 
 När du har slutfört din vårdsplan och mätvärden har stabiliserats:
 
-* **Behåll enhetlighet**: Behåll dagliga volymökningar under 30 % vecka för vecka för att bevara ditt etablerade rykte
+* **Behåll enhetlighet**: Behåll dagliga volymökningar under 30 % vecka för vecka för att bevara ditt etablerade rykte.
 
-* **Övervaka kontinuerligt**: Schemalägg kvartalsvisa hälsokontroller för att identifiera och åtgärda problem proaktivt
+* **Övervaka kontinuerligt**: Schemalägg kvartalsvisa hälsokontroller för att identifiera och åtgärda problem proaktivt.
 
-* **Respektera engagemangssignaler**: Fortsätt att prioritera engagerade mottagare och implementera återengagemangskampanjer för inaktiva prenumeranter
+* **Respektera engagemangssignaler**: Fortsätt att prioritera engagerade mottagare och implementera återengagemangskampanjer för inaktiva prenumeranter.
 
-* **Håll autentiseringen aktuell**: Kontrollera regelbundet att dina SPF-, DKIM- och DMARC-poster är korrekt konfigurerade
+* **Håll autentiseringen aktuell**: Kontrollera regelbundet att dina SPF-, DKIM- och DMARC-poster är korrekt konfigurerade.
 
 ## Viktiga uppgifter {#key-takeaways}
 
-* **IP-warmup är nödvändig**: Om du hoppar över warmup-processen kostar det mer tid och anseende än vad som krävs för att den ska fungera korrekt
+* **IP-värmare är nödvändigt**: Om du hoppar över värmningsprocessen kostar det mer tid och rykte än vad som krävs för att göra det på rätt sätt.
 
-* **Datadrivna beslut**: Följ upp klagomål, avhoppsfrekvens och engagemangsgrader dagligen och justera strategin innan internetleverantörer straffar dig
+* **Datadrivna beslut**: Följ upp klagomål, avhoppsfrekvens och engagemangsgrader dagligen och justera strategin innan internetleverantörer straffar dig.
 
-* **Autentisering först, volym två**: Lös alla problem med SPF, DKIM och DMARC innan du börjar montera volymen
+* **Autentisering först, volym två**: Lös alla problem med SPF, DKIM och DMARC innan du börjar med att rensa volymen.
 
-* **Konsekvensproblem**: Postlådeprovidrar föredrar förutsägbara sändningsmönster och undviker plötsliga volymtoppar eller oregelbundna sändningsscheman
-
-## Instruktionsvideo {#video}
-
-Lär dig mer om grunderna för leveransförmåga, anseende och de bästa metoderna för IP-uppvärmning i Adobe Journey Optimizer.
-
->[!VIDEO](https://video.tv.adobe.com/v/3463786/?captions=swe&learn=on)
+* **Konsekvensproblem**: Postlådeprovidrar föredrar förutsägbara sändningsmönster och undviker plötsliga volymtoppar eller oregelbundna sändningsscheman.
 
 <!--
 >[!NOTE]
