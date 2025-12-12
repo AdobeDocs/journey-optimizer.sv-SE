@@ -8,17 +8,28 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07
-source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
+source-git-commit: 344a5509731b455ee283af22bfdd8c67e028b83e
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 1%
+source-wordcount: '1585'
+ht-degree: 0%
 
 ---
 
 
 # Roller och ansvarsområden
 
-Med Adobe Journey Optimizer kan varumärken leverera sammankopplade och kontextualiserade kundresor under hela kundlivscykeln. Det gör det möjligt för team att personalisera interaktioner i stor skala och anpassa kundens förväntningar till affärsmålen. I den här dokumentationen förklaras de viktigaste rollerna när det gäller att använda Journey Optimizer effektivt, deras ansvarsområden och hur man kommer igång.
+Med Adobe Journey Optimizer kan varumärken leverera sammankopplade, kontextuella och personaliserade upplevelser under hela kundresan. Journey Optimizer har byggts med ett heltäckande fokus på skala, hastighet och flexibilitet och kombinerar tre viktiga drivrutiner i ett enhetligt program:
+
+* **Kundinsikter och engagemang i realtid** som drivs av Adobe kundprofil i realtid
+* **Modern flerkanalsmarknadsföring** genom enhetliga kanvaser för både realtidsresor och batchkampanjer, plus en modern meddelandedesigner
+* **Intelligent beslutsfattande och personalisering** med hjälp av beslutshantering och AI/ML-funktioner
+
+Journey Optimizer erbjuder två orkestreringsstrategier för olika marknadsföringsbehov:
+
+* **Resor**: Passar bäst för 1:1-engagemang i realtid där varje kund går igenom i sin egen takt, triggas av beteende eller händelser
+* **Samordnade kampanjer**: Passar bäst för batch-, en-till-många-kampanjer där målgrupper går samman i arbetsflöden i flera steg enligt ett schema - idealiskt för säsongskampanjer, produktlanseringar och kontobaserad kommunikation
+
+Med denna enhetliga upplevelse kan ni implementera hela användningsfall på ett och samma ställe, från att definiera målgrupper och utforma resor till att skapa personaliserat innehåll och analysera resultat. I den här dokumentationen förklaras de viktigaste rollerna när det gäller att använda Journey Optimizer effektivt, deras ansvarsområden och hur man kommer igång.
 
 **Viktigt!** Adobe Journey Optimizer definierar distinkta roller med specifika ansvarsområden. En enskild person kan utföra flera roller eller alla roller beroende på organisationens struktur.
 
@@ -28,10 +39,10 @@ För att förenkla implementeringen organiserar Adobe Journey Optimizer uppgifte
 
 | Roll | Primärt ansvar | Viktiga färdigheter | Vanliga uppgifter |
 |-------------------|----------------------------------|--------------------------------|-----------------------------------------------|
-| **Administratör** | Miljöinställningar och åtkomsthantering | Systemkonfiguration, användarhantering, säkerhet | Konfigurera sandlådor, hantera behörigheter, konfigurera kanalkonfigurationer |
-| **Datatekniker** | Datagrund och -arkitektur | Datamodellering, XDM-scheman, datakvalitet | Skapa scheman och datauppsättningar, konfigurera datainmatning, hantera datalängd |
+| **Administratör** | Miljöinställningar och åtkomsthantering | Systemkonfiguration, användarhantering, säkerhet | Konfigurera sandlådor, hantera användarbehörigheter, konfigurera kanaler och meddelandeförinställningar |
+| **Datatekniker** | Kundprofildata och datakällor | Datamodellering, XDM-scheman, källkopplingar | Modellprofil och affärsdata till scheman, konfigurera källanslutningar, övervaka datainmatning |
 | **Utvecklare** | Teknisk implementering och integrering | Mobile/Web SDK, API:er, händelsestyrd arkitektur | Integrera SDK:er, implementera händelser, skapa anpassade åtgärdsslutpunkter |
-| **Marketer** | Design och utförande av kundupplevelser | Resedesign, innehållsskapande, dataanalys | Skapa resor, skapa personaliserat innehåll, optimera kampanjer |
+| **Marketer** | Resedesign och personaliserade upplevelser | Resesamordning, innehållsskapande, målgruppsanpassning | Utforma kundresor, skapa och personalisera meddelanden, hantera erbjudanden och beslutskomponenter, definiera målgrupper |
 
 Varje roll hanterar en viss fas av Adobe Journey Optimizer implementering och säkerställer en strukturerad och effektiv driftsättningsprocess.
 
@@ -80,54 +91,54 @@ Varje roll börjar med specifika uppgifter som är anpassade efter dess fokus. N
 
 ### För marknadsförare {#for-marketers}
 
-Fokusera på att skapa personaliserade kundupplevelser i alla kanaler.
+Som marknadsförare eller affärsadministratör utformar ni kundresor för att leverera personliga, sammanhangsbaserade upplevelser över alla kontaktytor. Du arbetar i ett enhetligt gränssnitt för att implementera hela användningsexempel från början till slut.
 
 **Nyckelfunktioner du kommer att använda:**
 
-* Skapa målgrupper och bygg segment med flera metoder (segmentdefinitioner, CSV-överföring, målgruppskomposition)
-* Skapa material med AI Assistant för generering av text och bilder
-* Skapa flerkanaliga kundresor med dra-och-släpp-designer
-* Utnyttja optimering och konflikthantering vid sändning för att maximera engagemanget
-* Testa innehåll och använd arbetsflöden för godkännande före publicering
-* Övervaka prestanda med integrerade rapportpaneler
+* **Journey Orchestration**: Skapa ett-till-ett-kundengagemang i realtid där varje person går igenom i sin egen takt, triggas av beteende eller händelser i olika kanaler
+* **Kampanjsamordning**: Designa och automatisera komplexa flerstegskampanjer i stor skala med en visuell arbetsyta. Perfekt för varumärkesinitierade kampanjer som säsongskampanjer, produktlanseringar och kontobaserad kommunikation. Utnyttja segmentering av flera enheter för att skapa exakta målgrupper genom att koppla kunddata till relaterade enheter (konton, inköp, bokningar)
+* **Modern Message Designer**: Designa och anpassa e-post och mobilmeddelanden med dra-och-släpp-gränssnitt. Redigera färdiga mallar för att korta time-to-market
+* **Beslutshantering**: Skapa och hantera erbjudanden, berättiganderegler och andra komponenter i ett centraliserat bibliotek som kan bäddas in i e-postmeddelanden och kundkontaktytor
+* **Resurshantering**: Få tillgång till Adobe Experience Manager Assets Essentials som är inbäddade i Journey Optimizer för smidig åtkomst och leverans av resurser
+* **Målgruppsdefinition**: Skapa målgrupper på begäran med direktförfining med hjälp av relationsfrågor, med synlighet före sändning för korrekt antal målgrupper
+* **AI/ML-tjänster**: Utnyttja optimering och prediktiva engagemangsmätningar för att rikta sig till värdefulla kunder och minimera risken för bortfall
 
-**Börja med:** Skapa en enkel välkomstresa eller en övergiven kundvagnsåterställningskampanj med färdiga mallar.
+**Börja med:** Använd fallmallar och guider för att enkelt skapa och distribuera nya kundresor.
 
 [Kom igång som marknadsförare →](path/marketer.md)
 
 ### För datatekniker {#for-data-engineers}
 
-Upprätta en grund för de data som ligger till grund för personaliserade upplevelser.
+Som dataarkitekt eller ingenjör kan ni skapa och underhålla kundprofildata och andra datakällor som stöder upplevelser som samordnas av Journey Optimizer.
 
 **Viktiga ansvarsområden:**
 
-* Skapa identitetsnamnutrymmen och konfigurera identitetsupplösning
-* Utforma XDM-scheman för profil- och händelsedata (standard och relation)
-* Konfigurera datauppsättningar och aktivera dem för kundprofil i realtid
-* Konfigurera källanslutningar för import av batch- och direktuppspelningsdata
-* Skapa beräknade attribut för att förenkla segmenteringen
-* Konfigurera händelser och datakällor för körning av resan
-* Hantera datakvalitet, styrning och livscykel
+* **Kundprofildata**: Modellera kundprofildata och affärsdata till scheman för att skapa en enhetlig helhetsbild av kunden i 360 grader
+* **Relationell datamodellering**: För samordnade kampanjer skapar du relationsscheman för att aktivera segmentering av flera enheter, som kopplar kunddata till relaterade entiteter som konton, inköp, prenumerationer och bokningar för att skapa flexibla målgrupper
+* **Source Connectors**: Konfigurera källanslutningar för import av data från webben, CRM, offlinedata och andra källor till Adobe Experience Platform
+* **Identitetsupplösning**: Konfigurera identitetsnamnutrymmen för att kontinuerligt uppdatera profiler och flytta kunder in och ut ur segment och resor i realtid
+* **Datakällor**: Konfigurera datakällor för att i realtid lyssna på externa signaler under kundresan
+* **Profilhantering**: Aktivera datauppsättningar för kundprofil i realtid för att stärka personaliserade upplevelser
+* **Datakvalitet**: Övervaka datainmatning för att säkerställa att allt flyter smidigt in i Journey Optimizer
 
-**Börja med:** Konfigurera identitetsnamnutrymmen och skapa ditt första profilschema med de obligatoriska fältgrupperna.
+**Börja med:** Modellera ditt första kundprofilschema och konfigurera en källkoppling för att börja inhämta data.
 
 [Kom igång som datatekniker →](path/data-engineer.md)
 
 ### För administratörer {#for-administrators}
 
-Konfigurera och hantera Journey Optimizer-miljön för er organisation.
+Som administratör konfigurerar du Journey Optimizer-miljön så att dina team kan arbeta effektivt och säkert.
 
 **Viktiga ansvarsområden:**
 
-* Skapa och hantera sandlådor för utveckling, testning och produktion
-* Konfigurera roller och behörigheter med färdiga eller anpassade roller
-* Använd åtkomstkontroll på objektnivå (OLAC) för att skydda resurser
-* Konfigurera kanalkonfigurationer för e-post, SMS, push, in-app, webb och innehållskort
-* Delegera underdomäner och skapa IP-pooler för e-postleverans
-* Hantera undertryckningslistor och tillåtelselista
-* Konfigurera policyer för samtycke och datahantering (med hälso- och sjukvård/sköld för skydd av privatlivet)
+* **Sandlådor**: Skapa och hantera sandlådor för att partitionera data och resor för olika användargrupper (utveckling, testning, produktion)
+* **Användarhantering**: Konfigurera användargrupper och behörigheter för att styra åtkomsten till olika funktioner
+* **Kanalinställning**: Konfigurera leveranskanaler och meddelandeförinställningar för att säkerställa enhetlig märkning av meddelanden och resurser som levereras via Journey Optimizer
+* **Säkerhet och styrning**: Använd åtkomstkontroll på objektnivå (OLAC), konfigurera medgivandeprinciper och implementera datastyrningsprinciper
+* **Leverans**: Delegera underdomäner, skapa IP-pooler och hantera undertryckningslistor och tillåtelselista
+* **Resekonfiguration**: Konfigurera reseelement och konfigurationer för dina team
 
-**Börja med:** Konfigurera sandlådor, konfigurera grundläggande roller och behörigheter och arbeta sedan med teamet i kanalkonfigurationer.
+**Börja med:** Konfigurera sandlådor och användarbehörigheter och konfigurera sedan dina första kanalkonfigurationer och meddelandeförinställningar.
 
 [Kom igång som administratör →](path/administrator.md)
 
@@ -165,7 +176,7 @@ Lyckade Journey Optimizer-implementeringar kräver samarbete i alla roller:
 
 Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430318?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
 
 ## Ytterligare resurser
 
@@ -173,7 +184,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 **Utbildning och dokumentation:**
 
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"} - Självstudiekurser steg för steg för alla roller
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Självstudiekurser steg för steg för alla roller
 * [Bibliotek för reseanvändningsexempel](../building-journeys/jo-use-cases.md) - Praktiska exempel och implementeringsmönster
 * [AI och intelligenta funktioner](ai-features.md) - Läs mer om AI Assistant, optimering vid sändning och innehållsgenerering
 * [Användargränssnittshandbok](user-interface.md) - Navigera effektivt i Journey Optimizer

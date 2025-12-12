@@ -7,20 +7,20 @@ feature: Get Started
 role: Developer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
+source-git-commit: 344a5509731b455ee283af22bfdd8c67e028b83e
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
 
 # Kom igång med datatekniker {#data-engineer}
 
-Som **Adobe Journey Optimizer datatekniker** förbereder och underhåller du kundprofildata för att hantera upplevelser som är samordnade av [!DNL Journey Optimizer], modellera kund- och affärsdata i scheman och konfigurera källanslutningar för inmatning av data. Du kan börja arbeta med [!DNL Adobe Journey Optimizer] när [systemadministratören](administrator.md) har gett dig åtkomst och förberett miljön.
+Som **dataarkitekt** eller **datatekniker** konfigurerar och underhåller du kundprofildata och andra datakällor som används för upplevelser som orkestreras av [!DNL Journey Optimizer]. Detta innefattar att integrera alla era kund- och affärsdata - oavsett om de kommer från webb, CRM eller offlinekällor - i en enhetlig helhetsbild av kunden. Ni kan modellera kundprofildata och affärsdata i scheman, konfigurera källkopplingar för datainhämtning och säkerställa smidiga dataflöden för att möjliggöra kundinsikter och engagemang i realtid. Du kan börja arbeta med [!DNL Adobe Journey Optimizer] när [systemadministratören](administrator.md) har gett dig åtkomst och förberett miljön.
 
 >[!NOTE]
 >
->Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+>Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 ## Konfigurationssteg för viktiga data
 

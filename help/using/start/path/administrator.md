@@ -7,18 +7,18 @@ feature: Get Started
 role: Admin
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
+source-git-commit: 344a5509731b455ee283af22bfdd8c67e028b83e
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1006'
 ht-degree: 1%
 
 ---
 
 # Kom igång med systemadministratörer {#get-started-sys-admins}
 
-Innan du börjar använda [!DNL Adobe Journey Optimizer] krävs flera steg för att förbereda miljön. Du måste utföra de här stegen så att [datateknikern](data-engineer.md) och [marknadsföraren](marketer.md) kan börja arbeta med [!DNL Adobe Journey Optimizer].
+Som **systemadministratör** konfigurerar du Journey Optimizer-miljön och hanterar åtkomsten så att dina team kan arbeta effektivt och säkert. Du utför viktiga konfigurationssteg så att [datateknikern](data-engineer.md), [utvecklaren](developer.md) och [marknadsföraren](marketer.md) kan börja arbeta med [!DNL Adobe Journey Optimizer].
 
-Som **systemadministratör** måste du **förstå roller och tilldela behörigheter** för sandlådeadministration och kanalkonfiguration. Du måste också konfigurera sandlådor och hantera dem för de tillgängliga rollerna. Sedan kan du tilldela teammedlemmar till roller. Medan [datatekniker](data-engineer.md) konfigurerar datamodeller och datakällor, och [utvecklare](developer.md) implementerar tekniska integreringar, ser du till att rätt personer har tillgång till rätt funktioner.
+Ditt primära ansvar är bland annat att konfigurera användargrupper och behörigheter, skapa och hantera sandlådor för partitionering av data och resor för olika användargrupper och konfigurera leveranskanaler och meddelandeförinställningar för att säkerställa enhetlig branding för de olika meddelanden och resurser som levereras via Journey Optimizer. Ni ser till att rätt personer har tillgång till rätt funktioner samtidigt som ni upprätthåller säkerhet och styrning.
 
 Dessa funktioner kan hanteras av **[!UICONTROL Product administrators]** som har åtkomst till produkten Behörigheter. [Läs mer om behörigheter](../../administration/permissions.md){target="_blank"}.
 
@@ -37,7 +37,7 @@ Följ de här stegen för att konfigurera åtkomsthantering:
 
 1. **Använd åtkomstkontroll på objektnivå** (valfritt). Använd etiketter på objekt som resor, kampanjer och kanalkonfigurationer för att styra vilka användare som har tillgång till specifika resurser. Läs mer om [Åtkomstkontroll på objektnivå (OLAC)](../../administration/object-based-access.md).
 
-Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 När du använder [!DNL Journey Optimizer] för första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 

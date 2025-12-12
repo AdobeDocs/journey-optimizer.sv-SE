@@ -7,20 +7,27 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 6fbb9f3d47f4299b35214be4966aafb8151183a2
+source-git-commit: 344a5509731b455ee283af22bfdd8c67e028b83e
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1516'
 ht-degree: 0%
 
 ---
 
 # Kom igång med marknadsförare {#get-started-marketers}
 
-Som **marknadsförare** eller **resenär** ansvarar du för att skapa erbjudanden och resor och utforma innehåll. Du kan börja arbeta med [!DNL Adobe Journey Optimizer] när [systemadministratören](administrator.md) och [datateknikern](data-engineer.md) har gett dig åtkomst och förberett din miljö.
+Som **marknadsförare** eller **affärsadministratör** kan du utforma kundresor för att leverera personliga, sammanhangsbaserade upplevelser till kunder. Ni kan skapa och hantera alla de olika komponenterna i dessa personaliserade resor, inklusive e-post och push-meddelanden, erbjudanden och beslutskomponenter för att på ett intelligent sätt personalisera meddelandeinnehåll. Journey Optimizer ger en enhetlig användarupplevelse där man kan implementera hela användningen från början till slut på ett och samma ställe. Du kan börja arbeta med [!DNL Adobe Journey Optimizer] när [systemadministratören](administrator.md) och [datateknikern](data-engineer.md) har gett dig åtkomst och förberett din miljö.
 
 ## Kom igång med grunderna
 
-Journey Optimizer ger er möjlighet att skapa personaliserade, sammankopplade kundupplevelser via e-post, SMS, push, i appen, webben, innehållskort med mera. Arbeta med dina [administratörer](administrator.md) för att få åtkomst och med [datatekniker](data-engineer.md) för att konfigurera målgrupper och data.
+Journey Optimizer sammanför kundinsikter i realtid, modern flerkanalsmarknadsföring och intelligent beslutsfattande i en enda applikation. Skapa personaliserade, sammankopplade kundupplevelser via e-post, SMS, push, i appen, webben, innehållskort med mera.
+
+Journey Optimizer erbjuder två kraftfulla orkestreringsmetoder:
+
+* **Resor**: Ett-till-ett-engagemang i realtid där varje kund går igenom i sin egen takt, triggas av beteende eller händelser
+* **Samordnade kampanjer**: Komplexa gruppkampanjer i flera steg i stor skala där målgrupperna samverkar via arbetsflöden - perfekt för varumärkesinitierade kampanjer som säsongskampanjer, produktlanseringar eller kontobaserad kommunikation
+
+Arbeta med dina [administratörer](administrator.md) för att få åtkomst och med [datatekniker](data-engineer.md) för att konfigurera målgrupper, data och relationsscheman för avancerad segmentering.
 
 Så här börjar du med att skapa upplevelser:
 
@@ -63,6 +70,17 @@ Så här börjar du med att skapa upplevelser:
 
    Lär dig hur du [utformar och kör resor](../../building-journeys/journey-gs.md) och utforskar [användningsexempel för resor](../../building-journeys/jo-use-cases.md). Förstå [villkor för in-/utträde](../../building-journeys/entry-exit-criteria-guide.md) för att styra profilflödet.
 
+1. **Starta samordnade kampanjer**. Utforma komplexa flerstegskampanjer i stor skala med en visuell arbetsyta:
+
+   * Bygg **on demand-målgrupper** direkt med relationsfrågor för att koppla kunddata till konton, inköp, prenumerationer och andra enheter
+   * Skapa **segmentering för flera enheter** för exakt målgruppsanpassning (t.ex. &quot;kunder med prenumerationer som upphör om 30 dagar&quot; eller &quot;konton med nyligen gjorda värdefulla köp&quot;)
+   * Få **synlighet före sändning** med korrekt antal målgrupper innan du startar
+   * Utforma **flerstegsarbetsflöden** för säsongskampanjer, produktlanseringar, lojalitetserbjudanden eller kontobaserad marknadsföring
+   * Schemalägg kampanjkörningar direkt, vid specifika tidpunkter eller i återkommande tidsplaner (varje dag, varje vecka, varje månad)
+   * Bearbeta målgrupper i **gruppläge** där alla profiler sammanförs genom arbetsflödet
+
+   Lär dig hur du [kommer igång med orkestrerade kampanjer](../../orchestrated/gs-orchestrated-campaigns.md) och förstår när du ska [använda kampanjer eller resor](../../orchestrated/orchestrated-campaigns-faq.md).
+
 1. **Övervaka och optimera**. Spåra prestanda och förbättra resultaten över tid:
    * Övervaka **direktresan** och identifiera flaskhalsar
    * Analysera **leveransfrekvenser och interaktionsmått för**-meddelanden
@@ -91,6 +109,15 @@ Så här börjar du med att skapa upplevelser:
 
 [Lär dig de bästa sätten att få resan att fungera](../../building-journeys/entry-exit-criteria-guide.md#best-practices)
 
+### Kampanjsamordning
+
+* **Välj rätt metod**: Använd resor för upplevelser som triggas av beteenden i realtid; använd orkestrerade kampanjer för schemalagda gruppkampanjer
+* **Definiera tydliga kampanjmål**: Upprätta mål innan du utformar flerstegsarbetsflöden
+* **Börja med pilotmålgrupper**: Validera antal och segmenteringslogik före skalförändring
+* **Utnyttja relationsdata**: Använd segmentering för flera enheter för att koppla kunddata till konton, inköp och prenumerationer för exakt målinriktning
+* **Behåll segmenteringen enkelt**: Optimera prestanda och genomskinlighet med tydliga, underhållbara regler
+* **Använd konsekvent namngivning**: Gör kampanjhanteringen enklare med tydliga namnkonventioner
+
 ### Målgruppsanpassning
 
 * **Segmentera noggrant**: Skapa specifika, åtgärdbara målgruppssegment baserat på tydliga kriterier
@@ -111,14 +138,22 @@ Så här börjar du med att skapa upplevelser:
 
 Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 
-**Populära användningsfall:**
+**Användningsexempel på resan** (realtid, en-till-en):
 
-* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
-* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
-* **Återengagemangskampanjer**: Vinn inaktiva kunder med riktade erbjudanden. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
-* **Födelsedagskampanjer**: Skicka personliga födelsedagsmeddelanden med specialerbjudanden
-* **Produktrekommendationer**: Föreslå relevanta produkter baserat på bläddring och inköpshistorik
+* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
+* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
 * **Händelsestyrda meddelanden**: Svara på kundåtgärder i realtid
+* **Födelsedagskampanjer**: Skicka personaliserade födelsedagsmeddelanden som utlösts av profildatum
+* **Produktrekommendationer**: Föreslå relevanta produkter baserat på bläddring och inköpshistorik
+
+**Samordnade kampanjanvändningsfall** (batch, en-till-många):
+
+* **Säsongskampanjer**: Starta samordnade kampanjer i olika kundsegment (t.ex. semesterförsäljning, skolstartsförsäljning)
+* **Produktlanseringar**: Nu kommer nya produkter att visas för riktade målgrupper med sekvensmeddelanden
+* **Lojalitetsprogram erbjuder**: Belöna värdefulla kunder med nivåindelade erbjudanden baserat på inköpshistorik
+* **Kontobaserad marknadsföring**: Målkonton med specifika egenskaper och relaterade kontakter
+* **Prenumerationsförnyelser**: Nå kunder med prenumerationer som snart går ut med hjälp av multientitetsfrågor
+* **Återengagemangskampanjer**: Vinn inaktiva kunder med målinriktade erbjudanden i gruppläge. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
 
 **Resemönster:**
 
@@ -126,15 +161,15 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 * [Flerkanalsmeddelanden](../../building-journeys/journeys-uc.md): Kombinera e-post och push med reaktionshändelser
 * [E-postmeddelanden som endast är veckodag](../../building-journeys/weekday-email-uc.md): Schemalägg kommunikation med tidsbaserade villkor
 
-Bläddra i det fullständiga biblioteket för [resans användningsfall](../../building-journeys/jo-use-cases.md) om du vill ha fler mönster och implementeringar.
+Bläddra i det fullständiga biblioteket för [användningsfall för resan](../../building-journeys/jo-use-cases.md) och läs mer om [samordnade kampanjer](../../orchestrated/gs-orchestrated-campaigns.md).
 
 ## Samarbeta med andra roller
 
 Marknadsföringsarbetet samverkar med andra team:
 
-* **Arbeta med [datatekniker](data-engineer.md)**: Begär nya beräknade attribut, ge feedback om målgruppens kvalitet och koordinera för datakrav
+* **Arbeta med [datatekniker](data-engineer.md)**: Begär nya beräknade attribut, koordinera relationsscheman för orkestrerade kampanjer, ge feedback på målgruppskvaliteten och anpassa sig till datakraven för flera enheter för avancerad segmentering
 * **Arbeta med [utvecklare](developer.md)**: Justera mot händelseutlösare, testa mobilimplementeringar och validera spårning
-* **Arbeta med [administratörer](administrator.md)**: Begär kanalkonfigurationer, rapportera problem med behörigheter och koordinera för aktivering av nya funktioner
+* **Arbeta med [administratörer](administrator.md)**: Begär kanalkonfigurationer, bekräfta licensåtkomst för orkestrerade kampanjer, rapportera problem med behörigheter och koordinera för aktivering av nya funktioner
 
 ## Håll dig uppdaterad
 
@@ -155,4 +190,4 @@ Håll dig à jour med de senaste funktionerna i Journey Optimizer och marknadsf�
 1. **Start small**: Skapa en enkel välkomstresa eller kampanj med ett enda meddelande för att lära dig plattformen
 2. **Utnyttja AI**: Använd AI Assistant för att ställa frågor och snabba upp skapandet av innehåll
 3. **Gå med i communityn**: Anslut till andra Journey Optimizer-användare i [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
-4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}
+4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}
