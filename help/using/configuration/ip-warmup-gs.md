@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: IP, leverans
 exl-id: 393f051d-b86d-4b4f-b564-7a9ae3a5d4b8
-source-git-commit: fd9ae1f554357a0379e4c93b91f1d475c99d8ac3
+source-git-commit: b1b9b34aec305d6690d93e68238aed852ef689b7
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '366'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 2%
 Med [!DNL Journey Optimizer] kan du enkelt utföra arbetsflöden för IP-uppvärmning direkt från användargränssnittet på ett standardiserat och effektivt sätt som följer bästa praxis för optimal leverans. När e-postmeddelanden skickas via en ny plattform, är Internetleverantörer (ISP) misstänkta för IP-adresser som inte känns igen. Om stora mängder e-postmeddelanden plötsligt skickas markerar internetleverantörerna dem ofta som skräppost.
 
 För att undvika att markeras som skräppost kan du öka volymen som skickas stegvis med funktionen för IP-värmerappning. Med det här nya alternativet på menyn **[!UICONTROL Administration]** kan du göra det enklare på ett konsoliderat sätt i stället för att skapa komplexa dagliga resor.
+
+>[!NOTE]
+>
+>Innan du implementerar din IP-värmeplan bör du lära dig mer om grundläggande leveransfunktioner, anseende och bästa praxis i den här [IP-leveransguiden](ip-warmup-deliverability-guide.md).
 
 ➡️ [Lär dig hur du skapar och kör en IP-värmeringsplan i den här videon](#video)
 
@@ -52,15 +56,17 @@ De viktigaste stegen för att implementera en plan för IP-uppvärmning är föl
 
 Lär dig hur du skapar och kör en IP-värmeringsplan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3453844/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432637/?learn=on)
 
 >[!NOTE]
 >
->Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html?lang=sv-SE) Leveranssätt med bästa praxis.
+>Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [Guiden ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html) Leveranssätt med bästa praxis.
 
 ## Ytterligare resurser {#additional-resources}
 
 Utforska de här praktiska blogginläggen för mer ingående vägledning om IP-värmare:
+
+* [Adobe Journey Optimizer Deliverability Guide: Från Zero Reputation till Inbox Hero](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950) - Omfattande guide som täcker viktiga aspekter av anseende, värmeringskalendrar, övervakning och felsökning av bästa praxis.
 
 * [Förstå hur du konfigurerar IP-värmerappningen](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949) - Lär dig grunderna i hur du konfigurerar IP-värmeringsplaner och metodtips för en lyckad implementering.
 

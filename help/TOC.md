@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
+source-git-commit: b1b9b34aec305d6690d93e68238aed852ef689b7
 workflow-type: tm+mt
-source-wordcount: '3018'
+source-wordcount: '3022'
 ht-degree: 15%
 
 ---
@@ -829,7 +829,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -851,6 +851,7 @@ ht-degree: 15%
       + [Skapa IP-pooler](using/configuration/ip-pools.md)
    + Implementera en IP-värmerappsplan {#implement-ip-warmup-plan}
       + [Implementera en IP-värmerappsplan](/help/rp_landing_pages/implement-ip-warmup-plan-landing-page.md)
+      + [Leveransguide för IP-värmare](using/configuration/ip-warmup-deliverability-guide.md)
       + [Kom igång med planer för IP-värmare](using/configuration/ip-warmup-gs.md)
       + [Skapa IP-värmningskampanjer](using/configuration/ip-warmup-campaign.md)
       + [Skapa en IP-värdplan](using/configuration/ip-warmup-plan.md)

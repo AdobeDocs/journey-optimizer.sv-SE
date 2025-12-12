@@ -5,9 +5,9 @@ title: Implementera en IP-värmerappsplan
 description: Implementera en IP-värmerappsplan
 redpen-status: CREATED_||_2025-08-11_21-08-31
 exl-id: 6f34e9c9-05ae-4a9c-b099-9a7ddf68a412
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: b1b9b34aec305d6690d93e68238aed852ef689b7
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '249'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,17 @@ Genom att implementera en IP-värmerappsplan i Adobe Journey Optimizer kan du s�
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg)
+
+IP Warmup Deliverability Guide
+
+Förstå grunderna om leveransförmåga, anseende och beprövade metoder innan ni påbörjar er IP-värmeresresa.
+
+[Läs guiden](../using/configuration/ip-warmup-deliverability-guide.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Komma igång med IP Warmup Plans
 
@@ -30,7 +40,7 @@ Lär dig syftet, fördelarna och stegen i IP-warmup-planerna för att förbättr
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa IP Warmup-kampanjer
 
@@ -40,7 +50,7 @@ Följ steg-för-steg-instruktioner för att utforma och aktivera kampanjer för 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Så här skapar och hanterar du en plan för IP-förstärkning
 
@@ -50,7 +60,7 @@ Upptäck hur du skapar, konfigurerar och hanterar din IP-värmerappsplan, inklus
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Kör och hantera din IP-säkerhetsplan
 
