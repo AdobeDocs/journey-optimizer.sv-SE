@@ -176,7 +176,7 @@ Lyckade Journey Optimizer-implementeringar kräver samarbete i alla roller:
 
 Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430318?captions=swe&quality=12)
 
 ## Ytterligare resurser
 
