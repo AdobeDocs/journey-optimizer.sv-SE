@@ -124,9 +124,9 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 
 **Populära användningsfall:**
 
-* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
-* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
-* **Återengagemangskampanjer**: Vinn inaktiva kunder med riktade erbjudanden. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
+* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
+* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
+* **Återengagemangskampanjer**: Vinn inaktiva kunder med riktade erbjudanden. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
 * **Födelsedagskampanjer**: Skicka personliga födelsedagsmeddelanden med specialerbjudanden
 * **Produktrekommendationer**: Föreslå relevanta produkter baserat på bläddring och inköpshistorik
 * **Händelsestyrda meddelanden**: Svara på kundåtgärder i realtid
@@ -166,4 +166,4 @@ Håll dig à jour med de senaste funktionerna i Journey Optimizer och marknadsf�
 1. **Start small**: Skapa en enkel välkomstresa eller kampanj med ett enda meddelande för att lära dig plattformen
 2. **Utnyttja AI**: Använd AI Assistant för att ställa frågor och snabba upp skapandet av innehåll
 3. **Gå med i communityn**: Anslut till andra Journey Optimizer-användare i [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
-4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}
+4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}
