@@ -7,7 +7,7 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
+source-git-commit: e86fa9f6e62aea9dd1f7e6d35e7cf4b20f79aaa6
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Så här börjar du med att skapa upplevelser:
 
 Journey Optimizer utvecklas kontinuerligt med nya funktioner för att förbättra er marknadsföring:
 
-* **Innehållskort**: Leverera permanenta, icke-påträngande meddelanden i mobilappar och på webbplatser som användarna kan interagera med när de vill. Till skillnad från push-meddelanden förblir innehållskort synliga tills de stängs. [Lär dig mer om innehållskort](../../content-card/get-started-content-card.md)
+* **Innehållskort**: Leverera permanenta, icke-påträngande meddelanden i mobilappar och på webbplatser som användarna kan interagera med när de vill. Till skillnad från push-meddelanden förblir innehållskort synliga tills de stängs. [Lär dig mer om innehållskort](../../content-card/create-content-card.md)
 
 * **Konflikthantering och prioritering**: Kontrollera meddelandefrekvens och förhindra överkommunikation med avancerade regler för begränsning. Ange prioritetspoäng för att säkerställa att de viktigaste meddelandena når kunderna först. [Läs om konflikthantering](../../conflict-prioritization/gs-conflict-prioritization.md)
 
@@ -124,9 +124,9 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 
 **Populära användningsfall:**
 
-* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
-* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
-* **Återengagemangskampanjer**: Vinn inaktiva kunder med riktade erbjudanden. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
+* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
+* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
+* **Återengagemangskampanjer**: Vinn inaktiva kunder med riktade erbjudanden. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
 * **Födelsedagskampanjer**: Skicka personliga födelsedagsmeddelanden med specialerbjudanden
 * **Produktrekommendationer**: Föreslå relevanta produkter baserat på bläddring och inköpshistorik
 * **Händelsestyrda meddelanden**: Svara på kundåtgärder i realtid
@@ -166,4 +166,4 @@ Håll dig à jour med de senaste funktionerna i Journey Optimizer och marknadsf�
 1. **Start small**: Skapa en enkel välkomstresa eller kampanj med ett enda meddelande för att lära dig plattformen
 2. **Utnyttja AI**: Använd AI Assistant för att ställa frågor och snabba upp skapandet av innehåll
 3. **Gå med i communityn**: Anslut till andra Journey Optimizer-användare i [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
-4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}
+4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}
