@@ -20,7 +20,7 @@ Som **dataarkitekt** eller **datatekniker** konfigurerar och underhåller du kun
 
 >[!NOTE]
 >
->Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
+>Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
 
 ## Konfigurationssteg för viktiga data
 
