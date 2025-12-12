@@ -7,9 +7,9 @@ feature: Get Started
 role: Developer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-source-git-commit: 344a5509731b455ee283af22bfdd8c67e028b83e
+source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '813'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Som **dataarkitekt** eller **datatekniker** konfigurerar och underhåller du kun
 
 >[!NOTE]
 >
->Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+>Läs mer om **dataöverföring** i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 ## Konfigurationssteg för viktiga data
 
@@ -73,9 +73,4 @@ Håll dig à jour med de senaste funktionerna i Journey Optimizer och förbättr
 
 * **[Versionsinformation](../../rn/release-notes.md)**: Granska nya funktioner, förbättringar och korrigeringar som släpps varje månad
 * **[Dokumentationsuppdateringar](../../rn/documentation-updates.md)**: Spåra senaste ändringar av dokumentationen, inklusive nya sidor och uppdaterat innehåll
-* **Produktmeddelanden**: Aktivera aviseringar i din [Adobe Experience Cloud-profil](https://experience.adobe.com/preferences){target="_blank"} för att få aviseringar om:
-   * Nya produktreleaser och funktioner
-   * Underhållsfönster och systemuppdateringar
-   * Viktiga meddelanden och ändringar
-
-  Om du vill aktivera meddelanden klickar du på din profilikon i det övre högra hörnet av Adobe Experience Cloud, går till **Inställningar > Meddelanden** och konfigurerar Journey Optimizer meddelandeinställningar.
+* **[Produktmeddelanden](../../rn/releases.md#staying-informed)**: Lär dig hur du prenumererar på e-post- och produktaviseringar för Journey Optimizer-uppdateringar, inklusive nya funktioner, underhållsfönster och viktiga systemändringar

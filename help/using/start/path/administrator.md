@@ -7,9 +7,9 @@ feature: Get Started
 role: Admin
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
-source-git-commit: 344a5509731b455ee283af22bfdd8c67e028b83e
+source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '965'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Följ de här stegen för att konfigurera åtkomsthantering:
 
 1. **Använd åtkomstkontroll på objektnivå** (valfritt). Använd etiketter på objekt som resor, kampanjer och kanalkonfigurationer för att styra vilka användare som har tillgång till specifika resurser. Läs mer om [Åtkomstkontroll på objektnivå (OLAC)](../../administration/object-based-access.md).
 
-Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html?lang=sv-SE){target="_blank"}.
+Dessutom måste du lägga till användare som behöver åtkomst till Assets Essentials i rollerna **Assets Essentials Consumer Users** eller **Assets Essentials Users**. [Läs mer i dokumentationen för Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/deploy-administer.html){target="_blank"}.
 
 När du använder [!DNL Journey Optimizer] för första gången tilldelas du en produktionssandlåda och ett visst antal IP-adresser beroende på ditt kontrakt.
 
@@ -104,14 +104,7 @@ Håll dig à jour med de senaste uppdateringarna och administrativa förändring
 
 * **[Versionsinformation](../../rn/release-notes.md)**: Granska nya funktioner, plattformsuppdateringar, säkerhetsuppdateringar och konfigurationsändringar som släpps varje månad
 * **[Dokumentationsuppdateringar](../../rn/documentation-updates.md)**: Spåra senaste ändringar av konfigurationsguider, behörighetsuppdateringar och nya administrativa funktioner
-* **Produktmeddelanden**: Aktivera aviseringar i din [Adobe Experience Cloud-profil](https://experience.adobe.com/preferences){target="_blank"} för att få viktiga aviseringar om:
-   * Systemets underhållstid och schemalagda driftstopp
-   * Säkerhetsuppdateringar och korrigeringar
-   * Nya administrativa funktioner och behörighetsändringar
-   * Licens- och berättigandeuppdateringar
-   * Viktiga produktmeddelanden
-
-  Om du vill aktivera meddelanden klickar du på din profilikon i det övre högra hörnet av Adobe Experience Cloud, går till **Inställningar > Meddelanden** och konfigurerar Journey Optimizer meddelandeinställningar. Som administratör bör du aktivera alla viktiga systemmeddelanden.
+* **[Produktmeddelanden](../../rn/releases.md#staying-informed)**: Lär dig hur du prenumererar på e-post och produktmeddelanden för Journey Optimizer-uppdateringar, inklusive systemunderhåll, säkerhetsuppdateringar och viktiga produktmeddelanden. Som administratör bör du aktivera alla viktiga systemmeddelanden
 
 ## Nästa steg
 

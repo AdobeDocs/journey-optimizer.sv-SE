@@ -8,9 +8,9 @@ role: Admin, Developer, User
 level: Beginner
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07
-source-git-commit: 344a5509731b455ee283af22bfdd8c67e028b83e
+source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1570'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Lyckade Journey Optimizer-implementeringar kräver samarbete i alla roller:
 
 Titta på introduktionsvideon om du vill veta mer om Journey Optimizer nyckelfunktioner och personligheter. Videon går igenom användargränssnittet och markerar viktiga funktioner baserat på rollspecifika arbetsflöden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430318?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)
 
 ## Ytterligare resurser
 
@@ -184,7 +184,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 **Utbildning och dokumentation:**
 
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"} - Självstudiekurser steg för steg för alla roller
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Självstudiekurser steg för steg för alla roller
 * [Bibliotek för reseanvändningsexempel](../building-journeys/jo-use-cases.md) - Praktiska exempel och implementeringsmönster
 * [AI och intelligenta funktioner](ai-features.md) - Läs mer om AI Assistant, optimering vid sändning och innehållsgenerering
 * [Användargränssnittshandbok](user-interface.md) - Navigera effektivt i Journey Optimizer
@@ -193,7 +193,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 * [Versionsinformation](../rn/release-notes.md) - Senaste funktioner, förbättringar och korrigeringar
 * [Dokumentationsuppdateringar](../rn/documentation-updates.md) - Spåra senaste dokumentationsändringar
-* **Produktmeddelanden** - Aktivera aviseringar i din [Adobe Experience Cloud-profil](https://experience.adobe.com/preferences){target="_blank"} för att få meddelanden om nya releaser, underhållsperioder och viktiga meddelanden. Klicka på din profilikon > Inställningar > Meddelanden för att konfigurera.
+* [Produktmeddelanden](../rn/releases.md#staying-informed) - Lär dig hur du prenumererar på e-post och produktmeddelanden för Journey Optimizer-uppdateringar
 
 **Community och support:**
 

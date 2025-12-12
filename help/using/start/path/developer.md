@@ -5,9 +5,9 @@ feature: Get Started
 role: Developer
 level: Experienced
 exl-id: 5053dd4f-d050-415f-bc74-d6d061bdcbe1
-source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
+source-git-commit: ed3246d0bd552fee9c4df01babe18a5c1acd3b5f
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -34,25 +34,11 @@ Den här guiden beskriver de viktigaste tekniska implementeringsstegen för att 
 
 Innan du börjar implementeringen måste du se till att du har:
 
-**Tekniska färdigheter:**
-
-* Upplev JavaScript (för Web SDK) eller Swift/Kotlin (för Mobile SDK)
-* Förstå RESTful-API:er och JSON
-* Kännedom om asynkron programmering och händelsestyrda arkitekturer
-* Kunskap om organisationens programarkitektur
-
-**Åtkomst och verktyg:**
-
-* Åtkomst till [Adobe Developer Console](https://developer.adobe.com){target="_blank"} för API-autentiseringsuppgifter
-* Utvecklingsmiljö med tillgång till programmets kodbas
-* Testverktyg som Postman för API-testning
-* Verktyg för webbläsarutvecklare eller felsökningsverktyg för mobila enheter
-
-**Från andra teammedlemmar:**
-
-* Miljöåtkomst som beviljas av din [administratör](administrator.md)
-* XDM-scheman och händelsedefinitioner från din [datatekniker](data-engineer.md)
-* Krav och användningsexempel från dina [marknadsförare](marketer.md)
+| Kategori | Krav |
+|----------|-------------|
+| **Tekniska färdigheter** | * Upplevelse med JavaScript (för Web SDK) eller Swift/Kotlin (för Mobile SDK)<br>* Förståelse av RESTful-API:er och JSON<br>* Förståelse med asynkron programmering och händelsestyrda arkitekturer<br>* Kunskap om organisationens programarkitektur |
+| **Åtkomst och verktyg** | * Åtkomst till [Adobe Developer Console](https://developer.adobe.com){target="_blank"} för API-autentiseringsuppgifter<br>* Utvecklingsmiljö med tillgång till programmets kodbas<br>* Testverktyg som Postman för API-testning<br>* Webbläsarutvecklingsverktyg eller mobilfelsökningsverktyg |
+| **Från andra teammedlemmar** | * Miljöåtkomst beviljas av [Administrator](administrator.md)<br>* XDM-scheman och händelsedefinitioner från [Data Engineer](data-engineer.md)<br>* Krav och användningsexempel från [Marketers](marketer.md) |
 
 ## Förstå den tekniska grunden {#technical-foundation}
 
@@ -95,9 +81,9 @@ För intern mobilappspersonalisering med kodbaserade upplevelser:
 
 För webbaserade implementeringar är Web SDK den primära integrationspunkten:
 
-1. **Installera SDK** för webben: Följ [implementeringshandboken för SDK för webben](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE){target="_blank"} för att konfigurera SDK på webbplatsen.
+1. **Installera SDK** för webben: Följ [implementeringshandboken för SDK för webben](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} för att konfigurera SDK på webbplatsen.
 
-1. **Konfigurera datastreams**: Skapa och konfigurera ett datastream i [!DNL Adobe Experience Platform Data Collection] med Journey Optimizer aktiverat. Läs mer i [datastreams-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=sv-SE){target="_blank"}.
+1. **Konfigurera datastreams**: Skapa och konfigurera ett datastream i [!DNL Adobe Experience Platform Data Collection] med Journey Optimizer aktiverat. Läs mer i [datastreams-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}.
 
 1. **Aktivera push-meddelanden på webben** (valfritt): Konfigurera egenskapen [pushNotifications](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications){target="_blank"} i din SDK-webbkonfiguration och använd kommandot [sendPushSubscription](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription){target="_blank"} för att registrera push-prenumerationer.
 
@@ -201,7 +187,7 @@ Journey Optimizer erbjuder omfattande REST API:er för programmatisk åtkomst:
 
 ## Testning och felsökning {#testing}
 
-1. **Felsök SDK-implementering**: Använd Adobe Experience Platform Assurance för att inspektera SDK-händelser, validera datainsamling och felsöka integreringsproblem i realtid. [Läs mer om Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=sv-SE){target="_blank"}.
+1. **Felsök SDK-implementering**: Använd Adobe Experience Platform Assurance för att inspektera SDK-händelser, validera datainsamling och felsöka integreringsproblem i realtid. [Läs mer om Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 1. **Testa händelseleverans**: Verifiera att händelser från ditt program tas emot korrekt av Adobe Experience Platform och utlöser resor som förväntat. Övervaka händelseinmatning och validera nyttolaststrukturen.
 
@@ -245,33 +231,43 @@ Implementera policyer för datastyrning och samtycke i era integreringar:
 
 * **Developer Console**: Använd [Adobe Developer Console](https://developer.adobe.com){target="_blank"} för att skapa integreringar och hantera API-autentiseringsuppgifter.
 * **Exempelkod**: Utforska [exempelimplementeringar på GitHub](https://github.com/adobe/alloy-samples/tree/main/ajo){target="_blank"}.
-* **Självstudievideor**: Lär dig med praktiska självstudiekurser på [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}.
+* **Självstudievideor**: Lär dig med praktiska självstudiekurser på [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}.
 * **Developer Community**: Kommunicera med andra utvecklare och få support i Adobe community-forum.
 
 ## Samarbeta mellan roller {#next-steps}
 
 Implementeringsarbetet korsar med andra gruppmedlemmar:
 
-**Arbeta med [datatekniker](data-engineer.md):**
+>[!BEGINTABS]
+
+>[!TAB Arbeta med datatekniker]
+
+Samarbeta med [datatekniker](data-engineer.md) om data- och händelsekonfigurationer:
 
 * Få de XDM-scheman och händelsestrukturer du behöver implementera
 * Förstå vilka händelser du måste skicka och deras obligatoriska nyttolastformat
 * Anpassa er efter datainsamlingskrav och standarder för datakvalitet
 * Testa händelseleverans och datainmatning tillsammans
 
-**Arbeta med [Administratörer](administrator.md):**
+>[!TAB Arbeta med administratörer]
+
+Samarbeta med [administratörer](administrator.md) om åtkomst och konfigurationer:
 
 * Ange API-specifikationer för anpassade åtgärder som de konfigurerar
 * Begär nödvändiga behörigheter och API-autentiseringsuppgifter
 * Koordinera kanalkonfigurationskrav (t.ex. push-certifikat)
 * Justera mot testmiljöer och sandlådestrategi
 
-**Arbeta med [marknadsförare](marketer.md):**
+>[!TAB Arbeta med marknadsförare]
+
+Samarbeta med [marknadsförare](marketer.md) om resekrav och testning:
 
 * Förstå vilka användarinteraktioner som ska utlösa händelser
 * Implementera spårning för innehållsprestanda och användarengagemang
 * Stödja testning av resor med de implementerade funktionerna
 * Felsöka problem med meddelandeleverans eller personalisering
+
+>[!ENDTABS]
 
 ## Håll dig uppdaterad
 
@@ -279,13 +275,7 @@ Håll dig à jour med de senaste funktionerna från Journey Optimizer och teknis
 
 * **[Versionsinformation](../../rn/release-notes.md)**: Granska nya funktioner, API-ändringar, SDK-uppdateringar och felkorrigeringar som släpps varje månad
 * **[Dokumentationsuppdateringar](../../rn/documentation-updates.md)**: Spåra senaste ändringar av teknisk dokumentation, inklusive nya implementeringsguider och kodexempel
-* **Produktmeddelanden**: Aktivera aviseringar i din [Adobe Experience Cloud-profil](https://experience.adobe.com/preferences){target="_blank"} för att få aviseringar om:
-   * Nya versioner av SDK och API-uppdateringar
-   * Bryta ändringar och borttagningar
-   * Underhållsfönster som påverkar integreringar
-   * Viktiga säkerhetsuppdateringar
-
-  Om du vill aktivera meddelanden klickar du på din profilikon i det övre högra hörnet av Adobe Experience Cloud, går till **Inställningar > Meddelanden** och konfigurerar Journey Optimizer meddelandeinställningar.
+* **[Produktmeddelanden](../../rn/releases.md#staying-informed)**: Lär dig hur du prenumererar på e-post och produktmeddelanden för Journey Optimizer-uppdateringar, inklusive nya SDK-versioner, API-ändringar, ändringar och viktiga säkerhetsuppdateringar
 
 ## Börja implementera
 
