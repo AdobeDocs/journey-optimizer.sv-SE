@@ -173,7 +173,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 **Utbildning och dokumentation:**
 
-* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Självstudiekurser steg för steg för alla roller
+* [Självstudievideor](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"} - Självstudiekurser steg för steg för alla roller
 * [Bibliotek för reseanvändningsexempel](../building-journeys/jo-use-cases.md) - Praktiska exempel och implementeringsmönster
 * [AI och intelligenta funktioner](ai-features.md) - Läs mer om AI Assistant, optimering vid sändning och innehållsgenerering
 * [Användargränssnittshandbok](user-interface.md) - Navigera effektivt i Journey Optimizer
