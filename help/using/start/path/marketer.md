@@ -7,9 +7,9 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-source-git-commit: e86fa9f6e62aea9dd1f7e6d35e7cf4b20f79aaa6
+source-git-commit: 6fbb9f3d47f4299b35214be4966aafb8151183a2
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,12 @@ Så här börjar du med att skapa upplevelser:
 
 1. **Skapa målgrupper**. Bygg målgrupper genom segmentdefinitioner, ladda upp CSV-filer eller använd målgruppskomposition. Journey Optimizer erbjuder flera sätt att inrikta sig på rätt kunder. Läs mer om [målgrupper](../../audience/about-audiences.md) och [att skapa segmentdefinitioner](../../audience/creating-a-segment-definition.md).
 
-1. **Skapa innehåll**. Skapa övertygande budskap i alla kanaler:
+1. **Skapa innehåll**. Skapa övertygande budskap i alla kanaler, inklusive e-post, SMS, push, appar, webben och innehållskort:
    * Använd **AI-assistenten** för att generera e-postinnehåll, ämnesrader och bilder baserat på varumärkesriktlinjerna. [Läs mer om generering av AI-innehåll](../../content-management/gs-generative.md)
    * **Anpassa meddelanden** med kunddata, dynamiskt innehåll och villkorslogik. [Läs om personalisering](../../personalization/personalize.md)
    * **Iterera kontextdata** om du vill visa dynamiska listor från händelser, anpassade åtgärder och datauppsättningssökningar. [Lär dig mer om att iterera sammanhangsberoende data](../../personalization/iterate-contextual-data.md)
    * Skapa återanvändbara **innehållsmallar** och **fragment** för att upprätthålla varumärkets enhetlighet. [Arbeta med mallar](../../content-management/content-templates.md)
+   * Leverera permanenta, icke-påträngande **innehållskort** i mobilappar och på webbplatser. Till skillnad från push-meddelanden förblir innehållskort synliga tills de stängs. [Lär dig mer om innehållskort](../../content-card/create-content-card.md)
    * Hantera resurser med **Adobe Experience Manager Assets**-integrering. [Läs om resurser](../../integrations/assets.md)
 
    ![](../assets/perso_ee2.png)
@@ -43,7 +44,8 @@ Så här börjar du med att skapa upplevelser:
    * Använd **testprofiler** för att förhandsgranska personalisering och kontrollera återgivning på olika enheter
    * Testa med **exempeldata** från CSV-/JSON-filer
    * Förhandsgranska **e-poståtergivning** för vanliga e-postklienter
-   * Ställ in **arbetsflöden för godkännande** för kampanjer och resor (kräver ytterligare licens)
+   * Kör **A/B-tester och experiment** för att optimera innehållsvariationer. Använd multiväpnad bandit-experimenterande för att automatiskt tilldela mer trafik till vinnande variationer i realtid. [Lär dig mer om experiment](../../content-management/content-experiment.md)
+   * Ställ in **arbetsflöden för godkännande** för kampanjer och resor (kräver ytterligare licens). [Läs om godkännanden](../../test-approve/gs-approval.md)
 
    Lär dig hur du [testar och validerar meddelanden](../../content-management/preview-test.md).
 
@@ -53,7 +55,7 @@ Så här börjar du med att skapa upplevelser:
    * Lägg till **villkor** för att skapa anpassade sökvägar baserat på kunddata
    * Använd **vänteaktiviteter** för att skapa perfekt timing mellan meddelanden
    * Skicka meddelanden över **flera kanaler** inom en resa
-   * Använd **A/B-testning** för att optimera resans effektivitet
+   * Använd **A/B-testning** och optimera sändningstider för att maximera engagemanget
    * Använd **datauppslagssökning** för att berika resor med realtidsdata från Adobe Experience Platform. [Lär dig mer om datauppsättningssökning](../../building-journeys/dataset-lookup.md)
    * Utnyttja **kompletterande identifierare** så att samma profil kan ange flera resesförekomster (t.ex. olika order eller bokningar). [Läs om ytterligare identifierare](../../building-journeys/supplemental-identifier.md)
 
@@ -66,22 +68,9 @@ Så här börjar du med att skapa upplevelser:
    * Analysera **leveransfrekvenser och interaktionsmått för**-meddelanden
    * Använd **rapportinstrumentpaneler** med Customer Journey Analytics-integrering
    * Spåra **konvertering** och affärsmässiga konsekvenser
+   * Hantera **meddelandefrekvens och prioritering** med konflikthanteringsregler för att förhindra överkommunikation. [Läs om konflikthantering](../../conflict-prioritization/gs-conflict-prioritization.md)
 
    Lär dig [övervaka prestanda](../../reports/report-gs-cja.md).
-
-## Utnyttja de senaste funktionerna
-
-Journey Optimizer utvecklas kontinuerligt med nya funktioner för att förbättra er marknadsföring:
-
-* **Innehållskort**: Leverera permanenta, icke-påträngande meddelanden i mobilappar och på webbplatser som användarna kan interagera med när de vill. Till skillnad från push-meddelanden förblir innehållskort synliga tills de stängs. [Lär dig mer om innehållskort](../../content-card/create-content-card.md)
-
-* **Konflikthantering och prioritering**: Kontrollera meddelandefrekvens och förhindra överkommunikation med avancerade regler för begränsning. Ange prioritetspoäng för att säkerställa att de viktigaste meddelandena når kunderna först. [Läs om konflikthantering](../../conflict-prioritization/gs-conflict-prioritization.md)
-
-* **AI-driven Send-Time Optimization**: Låt AI förutse den optimala sändningstiden för varje kund utifrån deras historiska engagemangsmönster, öka öppnings- och klickfrekvensen med upp till 10 %. [Läs om optimering vid sändning](../../building-journeys/send-time-optimization.md)
-
-* **Multi-Armed Bandit Experimentation**: Allokera automatiskt mer trafik till vinnande variationer i realtid medan du testar, maximera resultaten utan att vänta på att testet ska slutföras. [Lär dig mer om experiment](../../content-management/content-experiment.md)
-
-* **Arbetsflöden för godkännande**: Implementera granskningsprocesser för kampanjer och resor innan de publiceras (tillgängligt med ytterligare licens). [Läs om godkännanden](../../test-approve/gs-approval.md)
 
 ## Bästa tillvägagångssätt för framgång
 
@@ -124,9 +113,9 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 
 **Populära användningsfall:**
 
-* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
-* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
-* **Återengagemangskampanjer**: Vinn inaktiva kunder med riktade erbjudanden. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
+* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
+* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
+* **Återengagemangskampanjer**: Vinn inaktiva kunder med riktade erbjudanden. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
 * **Födelsedagskampanjer**: Skicka personliga födelsedagsmeddelanden med specialerbjudanden
 * **Produktrekommendationer**: Föreslå relevanta produkter baserat på bläddring och inköpshistorik
 * **Händelsestyrda meddelanden**: Svara på kundåtgärder i realtid
@@ -166,4 +155,4 @@ Håll dig à jour med de senaste funktionerna i Journey Optimizer och marknadsf�
 1. **Start small**: Skapa en enkel välkomstresa eller kampanj med ett enda meddelande för att lära dig plattformen
 2. **Utnyttja AI**: Använd AI Assistant för att ställa frågor och snabba upp skapandet av innehåll
 3. **Gå med i communityn**: Anslut till andra Journey Optimizer-användare i [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
-4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}
+4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}
