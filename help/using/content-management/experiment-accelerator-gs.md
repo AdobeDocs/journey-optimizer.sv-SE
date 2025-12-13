@@ -39,4 +39,4 @@ Några viktiga fördelar:
 
 * **Smidig Collaboration**: Dela enkelt resultat och hantera teamroller med aviseringar i realtid.
 
-➡️ [Öppna Journey Optimizer Experimentation Accelerator-dokumentation](https://experienceleague.adobe.com/en/docs/experimentation-accelerator/using/overview)
+➡️ [Öppna Journey Optimizer Experimentation Accelerator-dokumentation](https://experienceleague.adobe.com/sv/docs/experimentation-accelerator/using/overview)
