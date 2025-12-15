@@ -144,4 +144,4 @@ Lär dig hur du effektivt använder Heltidsrapporten i Adobe Journey Optimizer.
 
 +++
 
-Utforska fler videosjälvstudiekurser om rapportering och analys i [Rapportturser](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/report-and-monitor/report-and-monitor){target="_blank"}
+Utforska fler videosjälvstudiekurser om rapportering och analys i [Rapportturser](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/report-and-monitor/report-and-monitor){target="_blank"}
