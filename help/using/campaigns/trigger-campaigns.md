@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: kampanj, granskning, validering, aktivering, aktivering, optimering
 exl-id: 86f35987-f0b7-406e-9ae6-0e4a2e651610
-source-git-commit: 8cb37cf0fb9dc8048d7da8ddda0c67280477d57f
+source-git-commit: a5d8f10c8751d6be47f5423aea576e16590b86d6
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,10 @@ När kampanjen har aktiverats måste du hämta den genererade cURL-exempelbegär
    Exempel på API-anrop finns också på [den här sidan](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).
 
 ## Felsökning {#troubleshooting}
+
+### Fördröjningar för e-postleverans {#delivery-delays}
+
+Om leveranstiden för e-post överstiger förväntningarna bör du undersöka potentiella avbrott eller prestandaproblem med externa tjänster, som leverantörer av molninfrastruktur eller e-postleverantörer. Journey Optimizer loggar in tidsstämplar för avsändning av postmeddelanden, som kan hjälpa till att avgöra om förseningar inträffar längre fram i leveransflödet.
 
 ### Azure Cosmos DB-autentiseringsfel (500 internt serverfel) {#cosmosdb-auth-errors}
 
