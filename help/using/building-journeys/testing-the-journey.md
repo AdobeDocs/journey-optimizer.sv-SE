@@ -10,9 +10,9 @@ level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
 version: Journey Orchestration
-source-git-commit: 578950270213177b4d4cc67bad8ae627e440ff44
+source-git-commit: 8a1c6ccad1e0ff66bc23b6fbdd873db5f54e3e0a
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1926'
 ht-degree: 1%
 
 ---
@@ -56,6 +56,7 @@ Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan anti
 * **Aktivt datumfönster** - Se till att transportens konfigurerade fönster väljer [start- och slutdatum/tid](journey-properties.md#dates) och inkluderar aktuell tid när testläget startas. Annars ignoreras utlösta testhändelser. Läs mer om hur du felsöker det här problemet [på den här sidan](troubleshooting-execution.md#troubleshooting-test-transitions).
 * **Reaktionshändelser** - För reaktionshändelser med en tidsgräns är den minsta och standardväntetiden 40 sekunder.
 * **Testa datamängder** - Händelser som utlöses i testläge lagras i dedikerade datamängder som är märkta så här: `JOtestmode - <schema of your event>`
+* **Delad infrastruktur** - Testläget körs på samma infrastruktur som produktionen. Under långa trafikperioder kan du märka fördröjningar i e-postutskick eller händelsehantering. I det här fallet kontrollerar du kontrollpanelerna för plattformstrafik eller gör om testerna under tider med låg belastning.
 
 <!--
 * Fields from related entities are hidden from the test mode.
@@ -132,7 +133,7 @@ En teknisk användare kan också använda det här gränssnittet för att kompon
 
 När du klickar på knappen **[!UICONTROL Send]** påbörjas testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
 
-![Visuellt reseprovflöde med profilförlopp och eventuella fel &#x200B;](assets/journeytest6.png)
+![Visuellt reseprovflöde med profilförlopp och eventuella fel ](assets/journeytest6.png)
 
 När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör testet igen rensas det visuella flödet och den nya personens sökväg visas.
 
