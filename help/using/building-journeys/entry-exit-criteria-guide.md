@@ -8,7 +8,7 @@ role: User
 level: Intermediate
 keywords: inträde, utförsel, kriterier, resa, profil, återinträde, bästa praxis
 version: Journey Orchestration
-source-git-commit: d1c7c9d454497f0d3c0ec75663d01aac91378d65
+source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -132,11 +132,11 @@ Samla in insikter om kundnöjdhet och produktresultat genom att begära feedback
 
 Använd följande dokumenterade användningsexempel för stegvis implementeringsvägledning med fullständig teknisk information:
 
-* **[Kundintroduktionsresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
+* **[Kundintroduktionsresa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
 
-* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
+* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
 
-* **[Återengagemangskampanjer](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
+* **[Återengagemangskampanjer](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
 
 * **[Skicka meddelanden till prenumeranter](message-to-subscribers-uc.md)** - Målprenumerationslistor med Läs publik och personaliserat innehåll
 
@@ -204,12 +204,12 @@ Börja med att tydligt kartlägga kundens triggers och exitpunkter, testa noggra
 
 **Teknisk dokumentation**
 
-[Profilingångshantering](entry-management.md) | [&#x200B; Reseegenskaper och avslutningskriterier &#x200B;](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
+[Profilingångshantering](entry-management.md) | [ Reseegenskaper och avslutningskriterier ](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
 
 **Självstudiekurser och exempel**
 
-[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
+[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo ](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
 
 **Relaterade funktioner**
 
-[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål &#x200B;](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)
+[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål ](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)

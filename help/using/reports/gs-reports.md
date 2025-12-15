@@ -6,7 +6,7 @@ description: Lär dig hur du får åtkomst till och arbetar med  [!DNL Adobe Jou
 role: User
 level: Beginner
 exl-id: 7961dc5c-7918-4ae3-8361-0ed4bc4f145b
-source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
+source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -140,8 +140,8 @@ Lär dig hur du effektivt använder Heltidsrapporten i Adobe Journey Optimizer.
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3428916?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3420509?learn=on)
 
 +++
 
-Utforska fler videosjälvstudiekurser om rapportering och analys i [Rapportturser](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/report-and-monitor/report-and-monitor){target="_blank"}
+Utforska fler videosjälvstudiekurser om rapportering och analys i [Rapportturser](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/report-and-monitor/report-and-monitor){target="_blank"}

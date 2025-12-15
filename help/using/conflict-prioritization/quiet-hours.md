@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: meddelande, frekvens, regler, tryck
-source-git-commit: 2f4c6a4a82784ae2fae99b3d802b2d8f94d2ca75
+source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 0%
@@ -187,4 +187,4 @@ När din resa eller dina kampanjer har aktiverats och körts kan du visa antalet
 
 Lär dig hur du använder funktionen för tysta timmar i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475856?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3475851?quality=12)

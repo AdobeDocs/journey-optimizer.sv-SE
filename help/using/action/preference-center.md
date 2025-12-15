@@ -8,7 +8,7 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: politik, styrning, plattform, samtycke, hälso- och sjukvård
-source-git-commit: bbea90bd21bd19941e8c8df93c8ec7a8a2769d77
+source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -57,13 +57,13 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
    >
    >Kundens samtycke och kontaktpreferenser är komplexa ämnen. Om du vill veta hur samtycke och sammanhangsinställningar kan samlas in, bearbetas och filtreras i [!DNL Experience Platform] rekommenderar vi att du läser följande dokument:
    >
-   >* Mer information om schemafältgrupper som krävs för att samla in medgivandedata finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview){target="_blank"}. Den innehåller detaljerad information om hur ni hanterar data om samtycke som ni har samlat in från era kunder och integrerar dem i era lagrade kundprofiler.
-   >* Mer information om fältgruppen för samtycke och inställningar finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/profile/consents#ingest){target="_blank"}.
-   >* Följ stegen i [det här avsnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset#custom-consent){target="_blank"} om du vill lägga till anpassade inställningsfält i schemat.
+   >* Mer information om schemafältgrupper som krävs för att samla in medgivandedata finns på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview){target="_blank"}. Den innehåller detaljerad information om hur ni hanterar data om samtycke som ni har samlat in från era kunder och integrerar dem i era lagrade kundprofiler.
+   >* Mer information om fältgruppen för samtycke och inställningar finns på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents#ingest){target="_blank"}.
+   >* Följ stegen i [det här avsnittet](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset#custom-consent){target="_blank"} om du vill lägga till anpassade inställningsfält i schemat.
 
 1. Skapa en sida som fångar upp kundernas önskemål. Använd någon av följande metoder:
 
-   * Skapa en webbsida för att registrera dina kunders önskemål med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/home){target="_blank"}.
+   * Skapa en webbsida för att registrera dina kunders önskemål med [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home){target="_blank"}.
 
    * Använd en [!DNL Journey Optimizer] [landningssida](../landing-pages/create-lp.md) som innehåller formulär för att fånga upp dina kunders preferenser via profildata.  [Läs mer om formulär](../landing-pages/lp-forms.md) <!--Forms not released/announced yet - TBC-->
 
@@ -87,11 +87,11 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
 |---------|----------|---------|
 | john.black@lumamail.com | Y | N |-->
 
-    >[ !OBS!]
+    >[!OBS!]
     >
     >Inkommande händelser för samtycke matas in i kundprofilen och säkerställer uppdateringar i realtid. Varje profil återspeglar de senaste alternativen för prenumerationsinställningarna.
 
-1. Skapa en anpassad princip (från menyn **[!UICONTROL Privacy]** > **[!UICONTROL Policies]**) i Adobe Experience Platform. [Lär dig hur](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=sv-SE#create-policy){target="_blank"}
+1. Skapa en anpassad princip (från menyn **[!UICONTROL Privacy]** > **[!UICONTROL Policies]**) i Adobe Experience Platform. [Lär dig hur](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-policy){target="_blank"}
 
    >[!AVAILABILITY]
    >
@@ -99,7 +99,7 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
 
    Om du vill använda profiler för samtycke måste det finnas inställningsattribut i profildata. Därför måste du definiera dessa attribut på profilnivå (som beskrivs i steg 1).
 
-1. Välj typen **[!UICONTROL Consent policy]** och konfigurera ett villkor enligt följande. [Lär dig hur du konfigurerar principer för samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=sv-SE#consent-policy){target="_blank"}
+1. Välj typen **[!UICONTROL Consent policy]** och konfigurera ett villkor enligt följande. [Lär dig hur du konfigurerar principer för samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"}
 
 <!--Consent policies are comprised of two logical components:
 
@@ -111,9 +111,9 @@ Anta att du vill rikta in dig på kundresor och kampanjer baserat på deras komm
     
     * Om **[!UICONTROL Marketing action]** är lika med **[!UICONTROL Email]*
     
-    * Då finns inte **[!UICONTROL Newsletter_Email]*** **[!UICONTROL false]* Eller &#x200B;** [!UICONTROL Newsletter_Email] **&#x200B; är lika med &#x200B;** [!UICONTROL false]*
+    * Då finns inte **[!UICONTROL Newsletter_Email]*** **[!UICONTROL false]* Eller **[!UICONTROL Newsletter_Email]** är lika med **[!UICONTROL false]*
     
-    &rbrace;![](assets/consent-policy-email-newsletter.png){width=80%}
+    }![](assets/consent-policy-email-newsletter.png){width=80%}
     
     >[!TIP]
     >

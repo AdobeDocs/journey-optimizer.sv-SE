@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
+source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Innan du arbetar med kampanjer måste du kontrollera att du har granskat villkor
 
    1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}
 
 
   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.

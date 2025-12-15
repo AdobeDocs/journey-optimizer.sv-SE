@@ -9,7 +9,7 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 0%
@@ -149,4 +149,4 @@ Vid analys av **reserapporteringsmått** med hjälp av Adobe Experience Platform
 
 Lär dig hur du torkar dina resor i den här videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464686/?captions=swe&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)
