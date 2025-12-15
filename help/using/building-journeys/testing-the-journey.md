@@ -133,7 +133,7 @@ En teknisk användare kan också använda det här gränssnittet för att kompon
 
 När du klickar på knappen **[!UICONTROL Send]** påbörjas testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
 
-![Visuellt reseprovflöde med profilförlopp och eventuella fel ](assets/journeytest6.png)
+![Visuellt reseprovflöde med profilförlopp och eventuella fel &#x200B;](assets/journeytest6.png)
 
 När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör testet igen rensas det visuella flödet och den nya personens sökväg visas.
 
