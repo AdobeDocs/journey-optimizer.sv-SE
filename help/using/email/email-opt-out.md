@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: avanmälan, e-post, länk, avanmälan
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
-source-git-commit: b1d262723b68083d1a32d259f3974a287f898579
+source-git-commit: af7451c0495e442328368a6a308af5c14dcda142
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Om du vill infoga en länk för att avbryta prenumerationen i ditt e-postinnehå
 
 När en mottagare klickar på avanmälningslänken behandlas deras avanmälningsförfrågan därefter.
 
-Om du vill kontrollera att den motsvarande profilens val har uppdaterats går du till Experience Platform och [bläddrar till profilen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide?lang=en#browse-tab){target="_blank"}. På fliken [Attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/ui/user-guide#attributes){target="_blank"} kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**. Läs mer om godkännandebearbetning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=sv-SE){target="_blank"}.
+Om du vill kontrollera att den motsvarande profilens val har uppdaterats går du till Experience Platform och [bläddrar till profilen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide?lang=en#browse-tab){target="_blank"}. På fliken [Attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#attributes){target="_blank"} kan du se att värdet för **[!UICONTROL choice]** har ändrats till **[!UICONTROL no]**. Läs mer om godkännandebearbetning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html){target="_blank"}.
 
 ![](assets/opt-out-profile-choice.png)
 
@@ -134,7 +134,7 @@ Begärandetext:
 }
 ```
 
-[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera den motsvarande profilens val via API-anropet [&#x200B; Adobe Developer](https://developer.adobe.com){target="_blank"}.
+[!DNL Journey Optimizer] använder de här parametrarna för att uppdatera den motsvarande profilens val via API-anropet [ Adobe Developer](https://developer.adobe.com){target="_blank"}.
 
 +++
 
@@ -160,25 +160,30 @@ Du måste först lägga till en länk för att avbryta prenumerationen i ett med
 1. Klicka på **[!UICONTROL Save]**.
 
 
-### Skicka meddelandet med en länk för att avbryta prenumerationen {#send-message-unsubscribe-link}
+### Förstå avanmälningsflödet {#send-message-unsubscribe-link}
 
-När du har konfigurerat länken för att avbryta prenumerationen på din landningssida kan du skapa och skicka ett meddelande.
+När du har konfigurerat länken för att avbryta prenumerationen på din landningssida kan du slutföra och skicka meddelandet till dina prenumeranter.
 
-1. Konfigurera meddelandet med en länk för att avbryta prenumerationen och skicka det till prenumeranterna.
+För att avanmälningsflödet för hela landningssidan ska kunna slutföras, förväntas följande händelser inträffa i ordning:
 
-1. Om mottagaren klickar på länken för att avbryta prenumerationen visas din startsida när meddelandet har tagits emot.
+1. **Klicka** - När meddelandet har tagits emot klickar mottagaren på länken för att avbryta prenumerationen i e-postmeddelandet.
+
+1. **Besök** - Startsidan läses in och visas för mottagaren.
 
    ![](assets/opt-out-lp-example.png)
+
+1. **Skicka** - Mottagaren skickar avanmälningsformuläret genom att klicka på avanmälningsknappen på landningssidan.
 
    >[!WARNING]
    >
    >Om du klickar på länken för att avbryta prenumerationen i e-postmeddelandet öppnas bara landningssidan. Mottagaren måste **skicka formuläret genom att klicka på avanmälningsknappen på landningssidan** för att slutföra avprenumerationen och uppdatera sitt profilgodkännande.
 
-1. Om mottagaren skickar formuläret - här genom att klicka på knappen **[!UICONTROL Unsubscribe]** på landningssidan - uppdateras profildata via API-anropet.
-
-1. Mottagaren omdirigeras sedan till ett bekräftelsemeddelande som anger att avanmälan lyckades.
+1. **Avbeställ** - Systemet bearbetar begäran om att avbryta prenumerationen. Mottagaren omdirigeras till ett bekräftelsemeddelande som anger att avanmälan lyckades.
 
    ![](assets/opt-out-confirmation-example.png)
 
+1. **Samtyckesuppdatering** - Profildata uppdateras med medgivande i profilattribut via API-anropet, som utesluter profilen från framtida e-postmeddelanden.
+
    Därför får den här användaren inte information från ert varumärke om han eller hon inte prenumererar igen.
 
+Den här händelsesekvensen säkerställer att avprenumerationsprocessen spåras korrekt och att profilens medgivandeinställningar återspeglas korrekt i systemet. Om något steg i det här flödet saknas eller inte fungerar som det ska, kan det tyda på ett problem med avanmälningsimplementeringen som bör undersökas.
