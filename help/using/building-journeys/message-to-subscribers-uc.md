@@ -10,10 +10,10 @@ level: Intermediate, Experienced
 keywords: resa, användningsfall, meddelande, prenumeranter, lista, läsa
 exl-id: 2540938f-8ac7-43fa-83ff-fed59f6bc417
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 52126b42ff400a355db9c75afde0c86059daf164
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
+source-wordcount: '330'
+ht-degree: 1%
 
 ---
 
@@ -27,13 +27,13 @@ I det här exemplet används fältgruppen **[!UICONTROL Consent and Preference D
 
 Så här konfigurerar du den här resan:
 
-1. Skapa en resa som börjar med en **[!UICONTROL Read]**-aktivitet. [Läs mer](journey-gs.md).
-1. Lägg till en **[!UICONTROL Email]**-åtgärdsaktivitet på resan. [Läs mer](journeys-message.md).
+1. Skapa en resa som börjar med en **[!UICONTROL Read]**-aktivitet. Läs mer i [Skapa din första resa](journey-gs.md).
+1. Lägg till en **[!UICONTROL Email]**-åtgärdsaktivitet på resan. Lär dig hur du [arbetar med kanalåtgärder](journeys-message.md).
 1. I avsnittet **[!UICONTROL Email parameters]** i aktivitetsinställningarna för **[!UICONTROL Email]** ersätter du den förvalda e-postadressen (`PersonalEmail.adress`) med e-postadressen till listprenumeranterna:
 
    1. Klicka på ikonen **[!UICONTROL Enable parameter override]** till höger om fältet **[!UICONTROL Address]** och klicka sedan på ikonen **[!UICONTROL Edit]** .
 
-      ![Resursflöde med Läs målgrupp för prenumerantlista &#x200B;](assets/message-to-subscribers-uc-1.png)
+      ![Resursflöde med Läs målgrupp för prenumerantlista ](assets/message-to-subscribers-uc-1.png)
 
    1. I uttrycksredigeraren anger du uttrycket för att hämta prenumeranternas e-postadresser. [Läs mer](expression/expressionadvanced.md).
 
