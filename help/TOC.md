@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: e46ab0637a0fa4a2b4b8b6ff3b8ab3eb5d38e0f7
+source-git-commit: 8328e32f91c5541ec8561aef0e34757c4c7ecf9c
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3024'
 ht-degree: 15%
 
 ---
@@ -628,6 +628,11 @@ ht-degree: 15%
             + [Uppslagsberättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/lookup.md)
             + [Lista över bidragsregler](using/experience-decisioning/api-reference/eligibility-rules/eligibility-rules-list.md)
             + [Uppdatera berättiganderegler](using/experience-decisioning/api-reference/eligibility-rules/update.md)
+         + Placeringar {#placements}
+            + [Skapa placeringar](using/experience-decisioning/api-reference/exd-placements/create.md)
+            + [Placeringslista](using/experience-decisioning/api-reference/exd-placements/exd-placements-list.md)
+            + [Sökningar](using/experience-decisioning/api-reference/exd-placements/lookup.md)
+            + [Uppdatera placeringar](using/experience-decisioning/api-reference/exd-placements/update.md)
       + Hantera beslutsobjekt {#manage-decision-items}
          + [Hantera beslutsobjekt](/help/rp_landing_pages/manage-decision-items-landing-page.md)
          + [Konfigurera artikelkatalogen](using/experience-decisioning/catalogs.md)
@@ -828,7 +833,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
