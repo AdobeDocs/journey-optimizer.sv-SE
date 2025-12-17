@@ -7,9 +7,9 @@ feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
 exl-id: 4c897c52-6eb2-4d6e-aaa9-9bd83608b2b6
-source-git-commit: cbfebeaaa3ef6e55d48457012fd94bd74afc91de
+source-git-commit: e46ab0637a0fa4a2b4b8b6ff3b8ab3eb5d38e0f7
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 >* **[Bläddra i den fullständiga API-referensen](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}** - få tillgång till alla Journey Optimizer API:er och testa dem direkt
 >* **[Konfigurera autentisering](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}** - Samla in nödvändiga autentiseringsuppgifter för att börja använda API:erna
 >* **[API:er för beslutshantering](../offers/api-reference/getting-started.md)** - Hantera erbjudanden och beslut programmatiskt
->* **[API:er för Experience Decision](../experience-decisioning/api-reference/deliver.md)** - Leverera personaliserade beslutsobjekt med kodbaserade upplevelser
+>* **[API:er för Experience Decision](../experience-decisioning/api-reference/getting-started.md)** - Hantera beslutsobjekt, urvalsstrategier och berättiganderegler programmatiskt
 
 ## Översikt {#overview}
 
@@ -64,4 +64,4 @@ Journey Optimizer erbjuder även API:er för Experience Decision för att levere
 * **Rankningsformler** - Konfigurera anpassad rankningslogik
 * **Placements** - Definiera var beslutsobjekt kan visas
 
-Läs mer i [API-referens för Experience Decision](../experience-decisioning/api-reference/deliver.md) och utforska hur du [levererar erbjudanden med kodbaserade upplevelser](../experience-decisioning/api-reference/deliver.md).
+Läs mer i [API-referens för Experience Decision](../experience-decisioning/api-reference/getting-started.md)
