@@ -22,7 +22,7 @@ Adobe Journey Optimizer kodbaserade upplevelsekanal ger er möjlighet att levere
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Leverera erbjudanden med den kodbaserade upplevelsekanalen
 
