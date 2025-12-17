@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-source-git-commit: a6f2cc11f57c5cd766cd31e941649fb5003ae30b
+source-git-commit: e6395120223a0e87ef3557c9f5d7e2af84462968
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1173'
 ht-degree: 1%
 
 ---
@@ -21,19 +21,13 @@ Testprofiler krävs när [testläget](../building-journeys/testing-the-journey.m
 
 >[!NOTE]
 >
->[!DNL Journey optimizer] tillåter att du testar olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV- eller JSON-fil, eller läggs till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
+>[!DNL Journey Optimizer] tillåter att du testar olika varianter av ditt innehåll genom att förhandsgranska det och skicka korrektur med exempelindata som överförts från en CSV- eller JSON-fil, eller läggs till manuellt. [Lär dig hur du testar innehåll med exempelindata](../test-approve/simulate-sample-input.md)
 
-Det finns flera sätt att skapa testprofiler. På den här sidan hittar du information om:
+Du kan skapa testprofiler genom att [överföra en CSV-fil](#create-test-profiles-csv) eller använda [API-anrop](#create-test-profiles-api). [!DNL Adobe Journey Optimizer] innehåller också ett specifikt [användningsfall i produkten](#use-case-1) som underlättar skapandet av testprofiler.
 
-* Omvandla en [befintlig profil](#turning-profile-into-test) till en testprofil
+Du kan överföra en JSON-fil till en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
 
-* Skapa testprofiler genom att överföra en [CSV-fil](#create-test-profiles-csv) eller använda [API-anrop](#create-test-profiles-api).
-
-  Adobe Journey Optimizer tillhandahåller även ett specifikt [användningsfall](#use-case-1) för produkten som underlättar skapandet av testprofiler.
-
-Du kan överföra en JSON-fil till en befintlig datauppsättning. Mer information finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=sv-SE#add-data-to-dataset){target="_blank"}.
-
-Observera att det liknar att skapa en testprofil att skapa vanliga profiler i Adobe Experience Platform. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
+Observera att det liknar att skapa en testprofil att skapa vanliga profiler i [!DNL Adobe Experience Platform]. Mer information finns i [dokumentationen för kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
 ➡️ [Lär dig skapa testprofiler i den här videon](#video)
 
@@ -45,57 +39,60 @@ Om du vill skapa profiler måste du först skapa ett schema och en datauppsättn
 
 Så här skapar du ett **schema**:
 
-1. Klicka på **[!UICONTROL Schemas]** i menyavsnittet DATAHANTERING.
-   ![](assets/test-profiles-0.png)
-1. Klicka på **[!UICONTROL Create schema]** i det övre högra hörnet, välj en schematyp, till exempel **Individual Profile**, och klicka på **Next**.
-   ![](assets/test-profiles-1.png)
+1. Klicka på **[!UICONTROL Schemas]** i menyavsnittet DATAHANTERING och välj knappen **[!UICONTROL Create schema]**.
+
+   ![Schemameny med knappen Skapa schema](assets/test-profiles-0.png)
+
+1. Välj **[!UICONTROL Standard]** som alternativ för att skapa schema.
+1. Välj en schematyp, till exempel **Enskild profil**, och klicka på **Nästa**.
+   ![Val av schematyp med alternativet Individual Profile](assets/test-profiles-1.png)
 1. Ange ett namn för schemat och klicka på **Slutför**.
-   ![](assets/test-profiles-1-bis.png)
+   ![Namnge och spara schemadialogrutan](assets/test-profiles-1-bis.png)
 1. Klicka på **Lägg till** till vänster i avsnittet **Fältgrupper** och välj rätt fältgrupper. Se till att du lägger till fältgruppen **Profiltestinformation**.
-   ![](assets/test-profiles-1-ter.png)
+   ![Fältgruppsavsnittet med knappen Lägg till](assets/test-profiles-1-ter.png)
 När du är klar klickar du på **[!UICONTROL Add field groups]**: listan med fältgrupper visas på schemaöversiktsskärmen.
-   ![](assets/test-profiles-2.png)
+   ![Schemaöversikt med fältgruppslista](assets/test-profiles-2.png)
 
    >[!NOTE]
    >
    >Klicka på schemats namn för att uppdatera dess egenskaper.
 
 1. Klicka i listan med fält på det fält som du vill definiera som primär identitet.
-   ![](assets/test-profiles-3.png)
+   ![Schemafältlista för val av primär identitet](assets/test-profiles-3.png)
 1. I den högra rutan **[!UICONTROL Field properties]** kontrollerar du alternativen **[!UICONTROL Identity]** och **[!UICONTROL Primary Identity]** och väljer ett namnutrymme. Om du vill att den primära identiteten ska vara en e-postadress väljer du namnutrymmet **[!UICONTROL Email]**. Klicka på **[!UICONTROL Apply]**.
-   ![](assets/test-profiles-4bis.png)
+   ![Panelen Fältegenskaper med alternativen Identitet och Primär identitet](assets/test-profiles-4bis.png)
 1. Markera schemat och aktivera alternativet **[!UICONTROL Profile]** i rutan **[!UICONTROL Schema properties]**.
-   ![](assets/test-profiles-5.png)
+   ![Panelen Schemaegenskaper med profilalternativet aktiverat](assets/test-profiles-5.png)
 1. Klicka på **Spara**.
 
 >[!NOTE]
 >
->Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#prerequisites){target="_blank"}.
+>Mer information om schemaskapande finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
 
 ### Skapa en datauppsättning
 
 Sedan måste du **skapa datauppsättningen** som profilerna ska importeras i. Följ de här stegen:
 
 1. Bläddra till **[!UICONTROL Datasets]** och klicka sedan på **[!UICONTROL Create dataset]**.
-   ![](assets/test-profiles-6.png)
+   ![Datauppsättningsmenyn med knappen Skapa datauppsättning](assets/test-profiles-6.png)
 1. Välj **[!UICONTROL Create dataset from schema]**.
-   ![](assets/test-profiles-7.png)
+   ![Skapa datauppsättning från schemaalternativ](assets/test-profiles-7.png)
 1. Markera det tidigare skapade schemat och klicka sedan på **[!UICONTROL Next]**.
-   ![](assets/test-profiles-8.png)
+   ![Schemaväljningsskärm för att skapa datauppsättningar](assets/test-profiles-8.png)
 1. Välj ett namn och klicka sedan på **[!UICONTROL Finish]**.
-   ![](assets/test-profiles-9.png)
+   ![Dialogrutan för namn och slut på datauppsättning](assets/test-profiles-9.png)
 1. Aktivera alternativet **[!UICONTROL Profile]**.
-   ![](assets/test-profiles-10.png)
+   ![Datauppsättningsinställningar med Profil aktiverat](assets/test-profiles-10.png)
 
 >[!NOTE]
 >
-> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE#getting-started){target="_blank"}.
+> Mer information om hur du skapar datauppsättningar finns i [dokumentationen för katalogtjänsten](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target="_blank"}.
 
 ## Exempel på användning i produkten{#use-case-1}
 
-På Adobe Journey Optimizer hemsida kan du använda testprofilerna i programmet. Det här användningsexemplet underlättar skapandet av testprofiler som används för att testa resor före publicering.
+Från startsidan för [!DNL Adobe Journey Optimizer] kan du använda testprofilerna i produkten. Det här användningsexemplet underlättar skapandet av testprofiler som används för att testa resor före publicering.
 
-![](assets/use-cases-home.png)
+![Testprofiler använder skiftlägeskort på startsidan](assets/use-cases-home.png)
 
 Klicka på knappen **[!UICONTROL Begin]** för att starta användningsfallet.
 
@@ -114,7 +111,6 @@ Följande information krävs:
    1. **Kön**: Testa profilkön. Tillgängliga värden är **man**, **hona** och **non_specified**
 
 När du har valt identitetsnamnområdet och angett CSV-filen baserat på formatet ovan, väljer du knappen **[!UICONTROL Run]** längst upp till höger. Användningsexemplet kan ta några minuter att slutföra. När användningsärendet har slutförts och testprofilerna har skapats skickas ett meddelande till användaren.
-
 >[!NOTE]
 >
 >Testprofiler kan åsidosätta befintliga profiler. Innan du kör användningsfallet måste du kontrollera att CSV-filen bara innehåller testprofiler och att den körs mot rätt sandlåda.
@@ -160,41 +156,38 @@ Your journey will be composed of a **[!UICONTROL Read Audience]** and an **[!UIC
 
 ## Skapa en testprofil med en CSV-fil{#create-test-profiles-csv}
 
-I Adobe Experience Platform kan du skapa profiler genom att överföra en CSV-fil som innehåller de olika profilfälten till datauppsättningen. Det här är den enklaste metoden.
+I [!DNL Adobe Experience Platform] kan du skapa profiler genom att överföra en CSV-fil som innehåller de olika profilfälten till datauppsättningen. Det här är den enklaste metoden.
 
 1. Skapa en enkel csv-fil med ett kalkylprogram.
-1. Lägg till en kolumn för varje fält som behövs. Se till att du lägger till det primära identitetsfältet (&quot;personID&quot; i exemplet ovan) och att fältet&quot;testProfile&quot; har värdet&quot;true&quot;.
-   ![](assets/test-profiles-11.png)
+1. Lägg till en kolumn för varje obligatoriskt fält. Se till att du lägger till det primära identitetsfältet (&quot;personID&quot; i exemplet ovan) och att fältet&quot;testProfile&quot; har värdet&quot;true&quot;.
+   ![CSV-fil med kolumnrubriker inklusive personID och testProfile](assets/test-profiles-11.png)
 1. Lägg till en rad per profil och fyll i värdena för varje fält.
-   ![](assets/test-profiles-12.png)
+   ![CSV-fil med exempeltestprofildata](assets/test-profiles-12.png)
 1. Spara kalkylbladet som en CSV-fil. Se till att kommatecken används som avgränsare.
-1. Bläddra till Adobe Experience Platform **arbetsflöden**.
-   ![](assets/test-profiles-14.png)
+1. Bläddra till [!DNL Adobe Experience Platform] **Arbetsflöden**.
+   ![Menyn Arbetsflöden i Adobe Experience Platform](assets/test-profiles-14.png)
 1. Välj **Mappa CSV till XDM-schema** och klicka sedan på **Starta**.
-   ![](assets/test-profiles-16.png)
+   ![Mappa CSV till arbetsflödesalternativ för XDM-schema](assets/test-profiles-16.png)
 1. Markera den datauppsättning som du vill importera profilerna till. Klicka på **Nästa**.
-   ![](assets/test-profiles-17.png)
+   ![Väljningsskärm för datauppsättning för CSV-import](assets/test-profiles-17.png)
 1. Klicka på **Välj filer** och markera din CSV-fil. När filen har överförts klickar du på **Nästa**.
-   ![](assets/test-profiles-18.png)
+   ![Skärm för filöverföring med knappen Välj filer](assets/test-profiles-18.png)
 1. Mappa CSV-källfälten till schemafälten och klicka sedan på **Slutför**.
-   ![](assets/test-profiles-19.png)
+   ![Gränssnitt för CSV-fältmappning som visar käll- och målfält](assets/test-profiles-19.png)
 1. Dataimporten börjar. Statusen ändras från **Bearbetning** till **Slutfört**. Klicka på **Förhandsgranska datauppsättning** längst upp till höger.
-   ![](assets/test-profiles-20.png)
+   ![Importstatus med knappen Slutfört med datauppsättning för förhandsgranskning](assets/test-profiles-20.png)
 1. Kontrollera att testprofilerna har lagts till korrekt.
-   ![](assets/test-profiles-21.png)
+   ![Förhandsgranskning av datauppsättning med importerade testprofiler](assets/test-profiles-21.png)
 
 Testprofilerna läggs till och kan nu användas när du testar en resa. Se [det här avsnittet](../building-journeys/testing-the-journey.md).
 
-
 >[!NOTE]
 >
->Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=sv-SE#tutorials){target="_blank"}.
->
-
+>Mer information om csv-import finns i [dokumentationen för datainmatning](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html#tutorials){target="_blank"}.
 
 ## Skapa testprofiler med API-anrop{#create-test-profiles-api}
 
-Du kan också skapa testprofiler via API-anrop. Läs mer i [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
+Du kan också skapa testprofiler via API-anrop. Läs mer i [[!DNL Adobe Experience Platform] dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv){target="_blank"}.
 
 Du måste använda ett profilschema som innehåller fältgruppen &quot;Profiltestinformation&quot;. Flaggan testProfile ingår i den här fältgruppen.
 När du skapar en profil måste du skicka värdet: testProfile = true.
@@ -203,7 +196,7 @@ Observera att du även kan uppdatera en befintlig profil för att ändra dess te
 
 Här är ett exempel på ett API-anrop för att skapa en testprofil:
 
-```
+```bash
 curl -X POST \
 'https://dcs.adobedc.net/collection/xxxxxxxxxxxxxx' \
 -H 'Cache-Control: no-cache' \
