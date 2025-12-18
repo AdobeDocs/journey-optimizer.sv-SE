@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 759c58e7-af1e-409c-8400-996b9a647ba7
 version: Journey Orchestration
-source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
+source-git-commit: 0b6d41fad9715985ec6418cdda27760f977bbc47
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../../../../experience-decisioning/gs-experience-decisioning.md)
 
 
 Du kan ändra eller uppdatera en placering i behållaren genom att göra en PATCH-begäran till API:t [!DNL Offer Library].

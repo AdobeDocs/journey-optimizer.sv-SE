@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: ca7af3b0-62cd-44ac-8856-b3d1ec15f284
 version: Journey Orchestration
-source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
+source-git-commit: 0b6d41fad9715985ec6418cdda27760f977bbc47
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../../../experience-decisioning/gs-experience-decisioning.md)
 
 
 Ibland kan det vara nödvändigt att ta bort (DELETE) en placering. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med ID:t för den placering som du vill ta bort.

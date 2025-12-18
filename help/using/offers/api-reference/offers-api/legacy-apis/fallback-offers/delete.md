@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 5e97a1fd-7542-4c9a-8234-21c1fa419671
 version: Journey Orchestration
-source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
+source-git-commit: 0b6d41fad9715985ec6418cdda27760f977bbc47
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 >[!TIP]
 >
->Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../../../../experience-decisioning/gs-experience-decisioning.md)
 
 
 Ibland kan det vara nödvändigt att ta bort (DELETE) ett reserverbjudande. Endast reserverbjudanden som du skapar i innehavarbehållaren kan tas bort. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med $id för det reserverbjudande som du vill ta bort.
