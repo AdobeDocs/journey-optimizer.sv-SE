@@ -7,9 +7,9 @@ feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
 exl-id: 4c897c52-6eb2-4d6e-aaa9-9bd83608b2b6
-source-git-commit: 7864012ad148c2e52bc38598016e7bd7fac9644e
+source-git-commit: f0b9eb87608eb8183cf0b08926b1dee695634e11
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
@@ -77,8 +77,8 @@ Läs mer i [API-referens för Experience Decision](../experience-decisioning/api
 
 **Integrering med Journey Optimizer**
 
-* [Integrera Adobe Analytics](../integrations/integration-ajo-analytics.md)
-* [Integrera Adobe Target](../integrations/integration-ajo-target.md)
+* [Integrering med andra lösningar](../integrations/ajo-integrations.md)
+* [Integrera med Adobe Analytics](../event/about-analytics.md)
 * [Integrera Adobe Campaign](../building-journeys/using-adobe-campaign-v7-v8.md)
 
 **Resurser för utvecklare**
