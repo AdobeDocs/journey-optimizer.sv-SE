@@ -71,7 +71,7 @@ Journey Optimizer har stöd för olika typer av källor för att ansluta till er
 * Salesforce
 * Salesforce Marketing Cloud
 
-➡️ Se hela listan i [Experience Platform-källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}
+➡️ Se hela listan i [Experience Platform-källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#sources-catalog){target="_blank"}
 
 ## Innan du börjar {#prerequisites}
 
@@ -109,7 +109,7 @@ Mer information om hur du konfigurerar och hanterar källor finns i [dokumentati
 
 Nu när ni förstår vilka källor som är och varför de är viktiga:
 
-* Utforska [källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"} för att hitta anslutningar för dina system
+* Utforska [källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#sources-catalog){target="_blank"} för att hitta anslutningar för dina system
 * Lär dig hur du [skapar en källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/overview.html){target="_blank"}
 * Förstå [datamappning och -omvandling](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/overview.html){target="_blank"}
 * Se hur du [använder importerade data på resor](../building-journeys/journey-gs.md)
