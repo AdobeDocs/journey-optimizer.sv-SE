@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journey Optimizer kan du nu smidigt införliva dina AEM Content Fragments i ditt Journey Optimizer-innehåll. Denna smidiga anslutning förenklar processen att komma åt och utnyttja AEM-innehåll, vilket gör det möjligt att skapa personaliserade och dynamiska kampanjer och resor.
 
-Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} i Experience Manager-dokumentationen.
+Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} i Experience Manager-dokumentationen.
 
 ## Före start {#start}
 
@@ -50,7 +50,7 @@ Observera följande begränsningar när du arbetar med Adobe Experience Manager 
 
 ![](assets/do-not-localize/AEM_CF.png)
 
-Innehållsfragment följer olika livscykelsteg beroende på vilken Adobe Experience Manager-nivå de finns i. [Läs mer i Adobe Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/author-publish)
+Innehållsfragment följer olika livscykelsteg beroende på vilken Adobe Experience Manager-nivå de finns i. [Läs mer i Adobe Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/authoring/author-publish)
 
 Innehåll skapas och hanteras på **författarnivå**, där fragment kan ha status som Nytt, Utkast, Publicerat, Ändrat eller Opublicerat. Dessa statusvärden gäller endast för **författarnivån** och stöder skapande och granskning av innehåll.
 
