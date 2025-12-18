@@ -404,7 +404,7 @@ När ett beslut har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/decision_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#changes-logs) som har gjorts i beslutet.
+På så sätt kan du få tillgång till detaljerad information för det beslutet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar &#x200B;](../get-started/user-interface.md#changes-logs) som har gjorts i beslutet.
 
 ![](../assets/decision_information.png)
 

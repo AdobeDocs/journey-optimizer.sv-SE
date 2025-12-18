@@ -54,7 +54,7 @@ Till skillnad från när kontext skickas i ett kostnadsfritt format med hjälp a
 
    I det här exemplet har fältgruppen&quot;Erbjudandekontext&quot; två egenskaper: language och deviceType. Dessa egenskaper kommer att användas i reglerna för rankning och behörighet.
 
-   ![XDM-schema som visar fältgruppen Erbjudandekontext med egenskaperna language och deviceType ](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
+   ![XDM-schema som visar fältgruppen Erbjudandekontext med egenskaperna language och deviceType &#x200B;](assets/context-edge-xdm.png){width="60%" align="center" zoomable="yes"}
 
    Lär dig hur du arbetar med scheman i guiden [!DNL Adobe Experience Platform] [Experience Data Model (XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home){target="_blank"}
 
