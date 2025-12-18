@@ -7,10 +7,10 @@ feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
 exl-id: 4c897c52-6eb2-4d6e-aaa9-9bd83608b2b6
-source-git-commit: e46ab0637a0fa4a2b4b8b6ff3b8ab3eb5d38e0f7
+source-git-commit: 5d1e62ba9f42a0828cc1faec5f0b7aa4e4f90a24
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 0%
+source-wordcount: '527'
+ht-degree: 1%
 
 ---
 
@@ -18,20 +18,20 @@ ht-degree: 0%
 
 ## Snabb åtkomst {#quick-access}
 
->[!IMPORTANT]
->
->**Kom igång med Journey Optimizer API:er:**
->
->* **[Bläddra i den fullständiga API-referensen](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}** - få tillgång till alla Journey Optimizer API:er och testa dem direkt
->* **[Konfigurera autentisering](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}** - Samla in nödvändiga autentiseringsuppgifter för att börja använda API:erna
->* **[API:er för beslutshantering](../offers/api-reference/getting-started.md)** - Hantera erbjudanden och beslut programmatiskt
->* **[API:er för Experience Decision](../experience-decisioning/api-reference/getting-started.md)** - Hantera beslutsobjekt, urvalsstrategier och berättiganderegler programmatiskt
+Bläddra i den [fullständiga API-referensen](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"} för att få tillgång till alla Journey Optimizer API:er och testa dem direkt. Kom igång genom att [konfigurera autentisering](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} för att samla in de nödvändiga inloggningsuppgifterna.
 
 ## Översikt {#overview}
 
 Med Adobe Journey Optimizer API kan ni leverera personaliserade, sammankopplade och aktuella kundupplevelser i alla appar, enheter och kanaler och i sin tur effektivt hantera hela kundresan. Kundresan är hela processen för en kunds interaktioner med ett varumärke, från det första kontaktytan tills kunden går ur. Det börjar med informationsfasen, där kunderna lär sig om varumärket och börjar engagera. Kunden kommer sedan att interagera ytterligare med varumärket, besöka webbplatser online och fysiska, göra inköp, skicka meddelanden eller genomföra granskningar.
 
 Adobe Journey Optimizer bygger på Adobe Experience Platform och kombinerar en enhetlig kundprofil i realtid, ett API-första öppet ramverk, centraliserad definition av erbjudanden samt artificiell intelligens (AI) och maskininlärning (ML) för personalisering och optimering. Genom att integrera med Journey Optimizer API kan varumärken på ett intelligent sätt avgöra vilken interaktion som är bäst när det gäller skala, hastighet och flexibilitet under hela kundresan.
+
+**Kom igång med Journey Optimizer API:er:**
+
+* **[Bläddra i den fullständiga API-referensen](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}** - få tillgång till alla Journey Optimizer API:er och testa dem direkt
+* **[Konfigurera autentisering](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}** - Samla in nödvändiga autentiseringsuppgifter för att börja använda API:erna
+* **[API:er för beslutshantering](../offers/api-reference/getting-started.md)** - Hantera erbjudanden och beslut programmatiskt
+* **[API:er för Experience Decision](../experience-decisioning/api-reference/deliver.md)** - Leverera personaliserade beslutsobjekt med kodbaserade upplevelser
 
 ## Autentisering {#authentication}
 
@@ -64,4 +64,25 @@ Journey Optimizer erbjuder även API:er för Experience Decision för att levere
 * **Rankningsformler** - Konfigurera anpassad rankningslogik
 * **Placements** - Definiera var beslutsobjekt kan visas
 
-Läs mer i [API-referens för Experience Decision](../experience-decisioning/api-reference/getting-started.md)
+Läs mer i [API-referens för Experience Decision](../experience-decisioning/api-reference/deliver.md) och utforska hur du [levererar erbjudanden med kodbaserade upplevelser](../experience-decisioning/api-reference/deliver.md).
+
+## Relaterade ämnen {#related-topics}
+
+**API-dokumentation och -guider**
+
+* [API-referens för Adobe Journey Optimizer](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}
+* [Autentiseringsguide](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}
+* [Utvecklarhandbok för API för beslutshantering](../offers/api-reference/getting-started.md)
+* [API-referens för Experience Decision](../experience-decisioning/api-reference/deliver.md)
+
+**Integrering med Journey Optimizer**
+
+* [Integrera Adobe Analytics](../integrations/integration-ajo-analytics.md)
+* [Integrera Adobe Target](../integrations/integration-ajo-target.md)
+* [Integrera Adobe Campaign](../building-journeys/using-adobe-campaign-v7-v8.md)
+
+**Resurser för utvecklare**
+
+* [Adobe Experience Platform API:er](https://developer.adobe.com/experience-platform-apis/){target="_blank"}
+* [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}
+* [Anpassade åtgärder under resor](../action/about-custom-action-configuration.md)
