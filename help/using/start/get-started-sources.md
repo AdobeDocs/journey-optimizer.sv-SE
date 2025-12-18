@@ -7,7 +7,7 @@ feature: Integrations, Data Ingestion
 role: User
 level: Beginner
 exl-id: 359ea3c6-7746-469e-8a24-624f9726f2d8
-source-git-commit: 52b58d18cdbbff79f4dcb7af2817b178a4a0b429
+source-git-commit: 7864012ad148c2e52bc38598016e7bd7fac9644e
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 3%
@@ -71,7 +71,7 @@ Journey Optimizer har stöd för olika typer av källor för att ansluta till er
 * Salesforce
 * Salesforce Marketing Cloud
 
-➡️ Se hela listan i [Experience Platform-källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#sources-catalog){target="_blank"}
+➡️ Se hela listan i [Experience Platform-källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}
 
 ## Innan du börjar {#prerequisites}
 
@@ -81,7 +81,7 @@ Innan du konfigurerar källor måste du se till att:
 * **Source systemautentiseringsuppgifter** - Autentiseringsinformation för det externa system som du vill ansluta
 * **Förstå dina data** - Ta reda på vilka datafält du behöver och hur de kopplas till Journey Optimizer-profiler
 
-➡️ Läs mer om [åtkomstkontroll och behörigheter](../../administration/permissions.md)
+➡️ Läs mer om [åtkomstkontroll och behörigheter](../administration/permissions.md)
 
 ## Så fungerar källor {#how-sources-work}
 
@@ -109,7 +109,7 @@ Mer information om hur du konfigurerar och hanterar källor finns i [dokumentati
 
 Nu när ni förstår vilka källor som är och varför de är viktiga:
 
-* Utforska [källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#sources-catalog){target="_blank"} för att hitta anslutningar för dina system
+* Utforska [källkatalogen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"} för att hitta anslutningar för dina system
 * Lär dig hur du [skapar en källanslutning](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/overview.html){target="_blank"}
 * Förstå [datamappning och -omvandling](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/overview.html){target="_blank"}
 * Se hur du [använder importerade data på resor](../building-journeys/journey-gs.md)

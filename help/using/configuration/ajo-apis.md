@@ -7,7 +7,7 @@ feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
 exl-id: 4c897c52-6eb2-4d6e-aaa9-9bd83608b2b6
-source-git-commit: 5d1e62ba9f42a0828cc1faec5f0b7aa4e4f90a24
+source-git-commit: 7864012ad148c2e52bc38598016e7bd7fac9644e
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Adobe Journey Optimizer bygger på Adobe Experience Platform och kombinerar en e
 * **[Bläddra i den fullständiga API-referensen](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}** - få tillgång till alla Journey Optimizer API:er och testa dem direkt
 * **[Konfigurera autentisering](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}** - Samla in nödvändiga autentiseringsuppgifter för att börja använda API:erna
 * **[API:er för beslutshantering](../offers/api-reference/getting-started.md)** - Hantera erbjudanden och beslut programmatiskt
-* **[API:er för Experience Decision](../experience-decisioning/api-reference/deliver.md)** - Leverera personaliserade beslutsobjekt med kodbaserade upplevelser
+* **[API:er för Experience Decision](../experience-decisioning/api-reference/getting-started.md)** - Leverera personaliserade beslutsobjekt med kodbaserade upplevelser
 
 ## Autentisering {#authentication}
 
@@ -64,7 +64,7 @@ Journey Optimizer erbjuder även API:er för Experience Decision för att levere
 * **Rankningsformler** - Konfigurera anpassad rankningslogik
 * **Placements** - Definiera var beslutsobjekt kan visas
 
-Läs mer i [API-referens för Experience Decision](../experience-decisioning/api-reference/deliver.md) och utforska hur du [levererar erbjudanden med kodbaserade upplevelser](../experience-decisioning/api-reference/deliver.md).
+Läs mer i [API-referens för Experience Decision](../experience-decisioning/api-reference/getting-started.md) och utforska hur du [levererar erbjudanden med kodbaserade upplevelser](../experience-decisioning/gs-experience-decisioning.md).
 
 ## Relaterade ämnen {#related-topics}
 
@@ -73,7 +73,7 @@ Läs mer i [API-referens för Experience Decision](../experience-decisioning/api
 * [API-referens för Adobe Journey Optimizer](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}
 * [Autentiseringsguide](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}
 * [Utvecklarhandbok för API för beslutshantering](../offers/api-reference/getting-started.md)
-* [API-referens för Experience Decision](../experience-decisioning/api-reference/deliver.md)
+* [API-referens för Experience Decision](../experience-decisioning/api-reference/getting-started.md)
 
 **Integrering med Journey Optimizer**
 
