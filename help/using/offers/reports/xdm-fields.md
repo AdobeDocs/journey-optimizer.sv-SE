@@ -9,14 +9,18 @@ role: User, Developer
 level: Intermediate
 exl-id: f85563e2-fc83-49fb-8771-0f0656a90f9a
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 63%
+source-wordcount: '113'
+ht-degree: 55%
 
 ---
 
 # Åtkomst till XDM-fält för händelser {#decisioningevents-xdm-schema}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 
 Du kommer åt DecisioningEvents-XDM-schemat direkt från en datauppsättning som innehåller beslutshanteringshändelser.
 

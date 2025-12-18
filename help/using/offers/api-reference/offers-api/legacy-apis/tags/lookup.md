@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: Söka efter en samlingskvalificerare
 description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden på ett bättre sätt.
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: f31e6a17-c99a-4db9-a301-426a1f0bcc92
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 1%
+source-wordcount: '108'
+ht-degree: 2%
 
 ---
 
 # Söka efter en samlingskvalificerare {#look-up-tag}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Du kan söka efter specifika samlingskvalificerare (som tidigare kallades &quot;taggar&quot;) genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller samlingskvalificeraren `id` i sökvägen för begäran.
 

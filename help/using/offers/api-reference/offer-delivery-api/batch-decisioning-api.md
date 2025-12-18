@@ -3,21 +3,26 @@ solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: API för gruppbeslut
 description: Lär dig hur du använder API:t för gruppbeslut för att välja de bästa erbjudandena för målgruppsprofiler inom ett fördefinierat beslutsområde.
+badge: label="Äldre" type="Informative"
 feature: Decision Management, API
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 1ed01a6b-5e42-47c8-a436-bdb388f50b4e
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 0%
+source-wordcount: '747'
+ht-degree: 1%
 
 ---
 
 
 # Leverera erbjudanden med API:t [!DNL Batch Decisioning] {#deliver-offers-batch}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../../experience-decisioning/gs-experience-decisioning.md)
 
 Med API:t [!DNL Batch Decisioning] kan organisationer använda beslutsfunktioner för alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 
@@ -33,7 +38,7 @@ För att göra detta skulle organisationen:
 
 * Exportera datauppsättningen till meddelandeleverantörens API.
 
-<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=sv-SE) to learn more about exporting audiences.) -->
+<!-- (Refer to the [export jobs endpoint documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html) to learn more about exporting audiences.) -->
 
 >[!NOTE]
 >

@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: Uppdatera samlingar
 description: Samlingar är delmängder av erbjudanden som baseras på fördefinierade villkor som definieras av en marknadsförare, t.ex. erbjudandets kategori.
 feature: Decision Management, API, Collections
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 7d766f0a-4fcb-434a-bbfd-e18ade71ae56
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 3%
+source-wordcount: '169'
+ht-degree: 4%
 
 ---
 
 # Uppdatera en samling {#update-collection}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Du kan ändra eller uppdatera en samling genom att göra en PATCH-begäran till API:t [!DNL Offer Library]
 

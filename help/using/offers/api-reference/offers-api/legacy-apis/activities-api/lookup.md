@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: Slå upp ett beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 99159704-fa39-47ff-b445-0cd6b325007d
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
 # Slå upp ett beslut {#look-up-decision}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Du kan slå upp specifika beslut genom att göra en GET-begäran till API:t [!DNL Offer Library] som innehåller antingen besluten `@id` eller namnet på beslutet i sökvägen för begäran.
 

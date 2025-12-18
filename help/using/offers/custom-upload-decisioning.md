@@ -9,14 +9,18 @@ role: User
 level: Intermediate
 exl-id: bd950410-691b-49d8-8851-8c6c448c00fd
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
 
 # Utnyttja anpassade uppladdningsmålgrupper för beslut {#custom-upload-decisioning}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
 
 Med Journey Optimizer kan ni utnyttja data från målgrupper som skapats med anpassad överföring (CSV-fil) till Adobe Experience Platform för att stödja era beslutsflöden. Detta är särskilt användbart när informationen inte behövs i profilen men ändå är viktig för att fatta beslut.
 
@@ -28,7 +32,7 @@ Data från anpassade uppladdningsgrupper kan utnyttjas i Beslutshantering för:
 Mer information om anpassade uppladdningsgrupper finns i avsnitten:
 
 * [Kom igång med målgrupper och Journey Optimizer](../audience/about-audiences.md)
-* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
+* [Importera en målgrupp i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}
 
 ## Måste läsas {#must-read}
 

@@ -3,20 +3,25 @@ solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
 title: Kom igång med erbjudandeleverans-API:er
 description: Läs mer om de API:er som finns för att leverera personaliserade erbjudanden.
+badge: label="Äldre" type="Informative"
 feature: Decision Management, API
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 7bc1a4ec-113c-4af7-b549-ee17b843b818
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # Kom igång med erbjudandeleverans-API:er {#about-decisioning-apis}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../../experience-decisioning/gs-experience-decisioning.md)
 
 Du kan leverera erbjudanden med API:t **Decisioning** eller **Edge Decisioning** . Med API:t **Batch Decisioning** kan du dessutom leverera erbjudanden till alla profiler i en viss målgrupp i ett enda anrop. Erbjudandeinnehållet för varje profil i målgruppen placeras i en Adobe Experience Platform-datauppsättning där det är tillgängligt för anpassade grupparbetsflöden.
 

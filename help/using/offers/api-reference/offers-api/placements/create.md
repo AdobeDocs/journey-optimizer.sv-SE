@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: Skapa en placering
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 7b735873-86f5-466f-b079-5e84d9f03a08
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '127'
 ht-degree: 7%
 
 ---
 
 # Skapa en placering {#create-placement}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Du kan skapa en placering genom att göra en POST-begäran till API:t [!DNL Offer Library].
 

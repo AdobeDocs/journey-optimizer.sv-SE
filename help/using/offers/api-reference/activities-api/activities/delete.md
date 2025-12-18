@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: Ta bort beslut
 description: Ett beslut innehåller den logik som ligger till grund för valet av ett erbjudande.
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 1eb19ff1-b210-4891-ab41-5488e2635527
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 3%
+source-wordcount: '127'
+ht-degree: 4%
 
 ---
 
 # Ta bort ett beslut {#delete-decision}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Ibland kan det vara nödvändigt att ta bort (DELETE) ett beslut. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med `id` för det beslut som du vill ta bort.
 

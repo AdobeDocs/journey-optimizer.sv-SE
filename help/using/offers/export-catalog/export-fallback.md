@@ -10,14 +10,18 @@ role: User, Developer
 level: Intermediate
 exl-id: 73bfdc24-28cf-4cfd-bac9-a4ff1ea543e3
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
 
 # Reserverbjudanden - datauppsättning {#fallback-dataset}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 
 Varje gång ett erbjudande ändras uppdateras den autogenererade datauppsättningen för reserverbjudanden.
 
@@ -33,7 +37,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ Identifierare
 
-**Fält:**&#x200B;_id
+**Fält:**_id
 **Titel:** Identifierare
 **Beskrivning:** En unik identifierare för posten.
 **Typ:** sträng
@@ -42,7 +46,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ upplevelse
 
-**Fält:**&#x200B;_upplevelse
+**Fält:**_upplevelse
 **Typ:** objekt
 
 +++
@@ -83,14 +87,14 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > decisioning > contents > components > Content Component Type**
 
-  **Fält:**&#x200B;_typ
+  **Fält:**_typ
   **Titel:** Innehållskomponenttyp
   **Beskrivning:** En uppräknad uppsättning URI:er där varje värde mappas till en typ som anges för innehållskomponenten. En del användare av innehållsrepresentationerna förväntar sig att värdet @type ska vara en referens till schema som beskriver ytterligare egenskaper för innehållskomponenten.
   **Typ:** sträng
 
 * **_experience > Decision > contents > components > _dc**
 
-  **Fält:**&#x200B;_dc
+  **Fält:**_dc
   **Typ:** objekt
   **Obligatoriskt:** &quot;format&quot;
 
@@ -112,7 +116,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 * **_experience > Decision > contents > components > _repo**
 
-  **Fält:**&#x200B;_repo
+  **Fält:**_repo
   **Typ:** objekt
 
    * **id**
@@ -160,7 +164,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
   **Fält:** linkURL
   **Beskrivning:** En unik resurslokaliserare (valfritt) för användarinteraktioner. Den här URL:en används för att referera slutanvändaren till i en användaragent och kan spåras.
   **Typ:** sträng
-  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
+  **Exempel:** &quot;https://cdn.adobe.io/tracker?code=23432&amp;redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg&quot;
 
 +++
 
@@ -205,7 +209,7 @@ Här är en lista över alla fält som kan användas i datamängden **[!UICONTRO
 
 +++ repo
 
-**Fält:**&#x200B;_repo
+**Fält:**_repo
 **Typ:** objekt
 
 +++

@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: Radera beslutsregler
 description: Beslutsregler läggs till i ett personaliserat erbjudande och tillämpas på en profil för att avgöra vem som är berättigad.
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 52f4803b-9e9a-4ad0-ae24-de652006763d
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 4%
+source-wordcount: '138'
+ht-degree: 5%
 
 ---
 
 # Ta bort en beslutsregel {#delete-decision-rule}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Ibland kan det vara nödvändigt att ta bort (DELETE) en beslutsregel. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med `id` för den beslutsregel som du vill ta bort.
 

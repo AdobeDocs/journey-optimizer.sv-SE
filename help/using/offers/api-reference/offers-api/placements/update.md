@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: uppdatera en placering
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 6990918c-e736-4f28-9ac6-9ac3101b069f
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '161'
 ht-degree: 4%
 
 ---
 
 # Uppdatera en placering {#update-placement}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Du kan ändra eller uppdatera en placering genom att göra en PATCH-förfrågan till API:t [!DNL Offer Library].
 

@@ -10,14 +10,18 @@ role: User, Developer
 level: Intermediate
 exl-id: d822c541-c043-41f5-916c-6a8e39fb148a
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '84'
+source-wordcount: '101'
 ht-degree: 11%
 
 ---
 
 # Åtkomst till den exporterade erbjudandekatalogen {#access-exported-catalog}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 
 Katalogen för det exporterade erbjudandet är tillgänglig på Adobe Experience Platform **[!UICONTROL Datasets]**-menyn. En datauppsättning skapas för varje objekt i erbjudandebiblioteket.
 

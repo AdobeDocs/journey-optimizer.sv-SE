@@ -10,14 +10,18 @@ role: User, Developer
 level: Intermediate
 exl-id: 51830c63-fa88-47e7-8605-192297fcf6b8
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 39%
+source-wordcount: '303'
+ht-degree: 37%
 
 ---
 
 # Kom igång med beslutsledningshändelser {#monitor-offer-events}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 
 Varje gång en beslutshantering fattar ett beslut om en viss profil, skickas information om dessa händelser automatiskt till Adobe Experience Platform.
 

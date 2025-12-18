@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: ta bort placeringar
 description: Placeringar är behållare som används för att visa upp dina erbjudanden.
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: ca7af3b0-62cd-44ac-8856-b3d1ec15f284
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 3%
+source-wordcount: '127'
+ht-degree: 4%
 
 ---
 
 # Ta bort en placering {#delete-placement}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Ibland kan det vara nödvändigt att ta bort (DELETE) en placering. Detta görs genom att utföra en DELETE-begäran till [!DNL Offer Library]-API:t med ID:t för den placering som du vill ta bort.
 

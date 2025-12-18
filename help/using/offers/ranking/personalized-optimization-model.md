@@ -9,14 +9,18 @@ role: User
 level: Experienced
 exl-id: c73b3092-e96d-4957-88e6-500e99542782
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # Anpassad optimeringsmodell {#personalized-optimization-model}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 
 ## Översikt {#overview}
 

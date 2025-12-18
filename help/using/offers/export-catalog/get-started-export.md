@@ -10,14 +10,18 @@ role: User, Developer
 level: Intermediate
 exl-id: f30abea1-b204-4470-9836-75fae916bbb1
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '132'
 ht-degree: 10%
 
 ---
 
 # Kom igång med export av din erbjudandekatalog {#export-catalog}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 
 Med Journey Optimizer kan du automatiskt exportera erbjudandekatalogen till Adobe Experience Platform.
 

@@ -4,20 +4,26 @@ product: Journey Optimizer
 title: Uppdatera samlingskvalificerare
 description: Med en samling kvalificerare kan ni ordna och sortera genom era erbjudanden på ett bättre sätt.
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 918927e1-ad7a-4937-b652-2a0932e9efa1
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 1%
+source-wordcount: '135'
+ht-degree: 2%
 
 ---
 
 
 # Uppdatera en samlingskvalificerare {#update-collection-qualifier}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Du kan ändra eller uppdatera en samlingskvalificerare (som tidigare kallades &quot;tagg&quot;) genom att göra en PATCH-begäran i Offer Library API.
 

@@ -10,12 +10,16 @@ role: User, Developer
 level: Intermediate
 exl-id: 07be59e8-e994-4854-8089-25614d005dbe
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '23'
-ht-degree: 0%
+source-wordcount: '40'
+ht-degree: 5%
 
 ---
 
 # Viktig information om beslutshändelser {#events-key-information}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 

@@ -10,14 +10,18 @@ role: User
 level: Intermediate
 exl-id: 4a53ea96-632a-41c7-ab15-b85b99db4f3e
 version: Journey Orchestration
-source-git-commit: e99ba08b86c682cdcb20be758590b97c0d474040
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '789'
 ht-degree: 3%
 
 ---
 
 # Skapa personaliserade erbjudanden {#create-personalized-offers}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
 
 Innan du skapar ett erbjudande måste du kontrollera att du har skapat:
 
@@ -164,7 +168,7 @@ När ett erbjudande har skapats kan du klicka på dess namn i listan.
 
 ![](../assets/offer_click-name.png)
 
-På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar &#x200B;](../get-started/user-interface.md#changes-logs) som har gjorts i erbjudandet.
+På så sätt kan du få tillgång till detaljerad information om erbjudandet. Välj fliken **[!UICONTROL Change log]** om du vill [övervaka alla ändringar ](../get-started/user-interface.md#changes-logs) som har gjorts i erbjudandet.
 
 ![](../assets/offer_information.png)
 

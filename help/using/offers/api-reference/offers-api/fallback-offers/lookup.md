@@ -4,19 +4,25 @@ product: Journey Optimizer
 title: erbjudanden för sökning efter reserverbjudanden
 description: Ett reserverbjudande skickas till kunderna om de inte är berättigade till andra erbjudanden
 feature: Decision Management, API
+badge: label="Äldre" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 8f1fa116-30d2-4732-8973-bbce0dc66dec
 version: Journey Orchestration
-source-git-commit: d6a9a8a392f0492aa6e4f059198ce77b6b2cd962
+source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 2%
 
 ---
 
 # Slå upp reserverbjudanden {#look-up-fallback-offers}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Du kan slå upp specifika reserverbjudanden genom att göra en GET-begäran till [!DNL Offer Library]-API:t som innehåller reserverbjudandets ID i sökvägen för begäran.
 
