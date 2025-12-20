@@ -181,7 +181,7 @@ Bläddra bland självstudiekurser på video och lär dig hur du bygger de vanlig
   </tr>
 </table>
 
-Se även videosjälvstudiekursen för [Skalning av orkestrering till flerkanalsengagemang i Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/scaling-orchestration-to-omnichannel-engagement/introduction){target="_blank"}: Under de sex lektionerna får du lära dig hur du lyfter affärskommunikationen från enkla utgående meddelanden till sofistikerade flerkanalsupplevelser. Med praktiska exempel får ni insikter i hur ni skapar kundresor som sömlöst kombinerar proaktiv utåtriktad marknadsföring med lyhört engagemang.
+Se även videosjälvstudiekursen för [Skalning av orkestrering till flerkanalsengagemang i Adobe Journey Optimizer](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/scaling-orchestration-to-omnichannel-engagement/introduction){target="_blank"}: Under de sex lektionerna får du lära dig hur du lyfter affärskommunikationen från enkla utgående meddelanden till sofistikerade flerkanalsupplevelser. Med praktiska exempel får ni insikter i hur ni skapar kundresor som sömlöst kombinerar proaktiv utåtriktad marknadsföring med lyhört engagemang.
 
 
 
