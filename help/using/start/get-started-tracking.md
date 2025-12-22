@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Beginner
 keywords: spåra, övervaka, analysera, rapportera, leverera
-source-git-commit: c7ff5b6cc83313855f3ecd6c6d7b3b7ed6358af9
+source-git-commit: a326f6df3332519b2c3efc77a0a0f26e629f1145
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1813'
 ht-degree: 3%
 
 ---
@@ -91,7 +91,7 @@ Spårning av e-post aktiveras automatiskt när du skapar ett e-postmeddelande. J
 
 * **Ställ in URL-spårningsparametrar** - Konfigurera spårningsparametrar på ytnivå för att automatiskt lägga till kampanjidentifierare (utm_campaign, utm_source osv.) till alla e-postlänkar. Detta möjliggör attribueringsspårning i hela det digitala ekosystemet. [Läs mer](../email/url-tracking.md)
 
-* **Spåra länkar i fragment** - Alla länkar i återanvändbara innehållsfragment spåras automatiskt, vilket ger en fullständig bild av engagemanget i delade innehållskomponenter.
+* **Spåra länkar i sparade fragment** - När spårning är aktiverat i en resa eller kampanj spåras även länkarna i ett fragment som sparats från innehållet i den här resan eller kampanjen när det här fragmentet återanvänds. [Läs mer](../content-management/save-fragments.md)
 
 * **Lägg till spårning av spegelsida** - Aktivera alternativet för spegelsida om du vill skapa en webbversion av ditt e-postmeddelande med automatisk spårning av vem som tittar på det. [Läs mer](../email/message-tracking.md#mirror-page)
 
@@ -129,7 +129,7 @@ Penselspårning aktiveras automatiskt och visar avtryck (levererat), klickningar
 
 >[!NOTE]
 >
->Push tracking kräver mobil SDK-implementering. Kontrollera att din app har Adobe Experience Platform Mobile SDK korrekt konfigurerat.
+>Push tracking kräver mobil SDK-implementering. Kontrollera att din app har Adobe Experience Platform Mobile SDK korrekt konfigurerat. [Läs mer](../push/push-configuration.md#integrate-mobile-app)
 
 **Analysera engagemang:** Visa klickfrekvens, knappprestanda och spårad länkinformation i rapporter. [Kampanjrapporter](../reports/campaign-global-report-cja-push.md) | [Reserapporter](../reports/journey-global-report-cja-push.md)
 
@@ -175,7 +175,7 @@ Innan spårning fungerar måste du konfigurera implementeringen för att skicka 
 
 * Konfigurera en dataström för Adobe Experience Platform
 * Implementera händelseinsamling i koden med Web SDK eller Mobile SDK
-* Skicka interaktionshändelser för förslag när användare visar eller klickar på personaliserat innehåll
+* Skicka visnings- och interaktionshändelser när innehåll visas eller klickas
 
 [Läs mer om implementeringskrav](../code-based/code-based-prerequisites.md#reporting-prerequisites)
 
@@ -185,7 +185,7 @@ Innan spårning fungerar måste du konfigurera implementeringen för att skicka 
 
 +++Spårning av innehållskort
 
-Innehållskort spårar automatiskt användarinteraktioner. Konfigurera innehåll och visningsregler för att styra spårningsbeteendet.
+[Innehållskort](../content-card/create-content-card.md) spårar automatiskt användarinteraktioner. Konfigurera innehåll och visningsregler för att styra spårningsbeteendet.
 
 **Så här implementerar du:**
 
@@ -201,7 +201,7 @@ Innehållskort spårar automatiskt användarinteraktioner. Konfigurera innehåll
 
 +++Spårning av landningssida
 
-Landningssidor levereras med inbyggd spårning som inte kräver några ytterligare inställningar. Journey Optimizer samlar automatiskt in besök, konverteringar och studsfrekvenser.
+[Landningssidor](../reports/lp-report-global-cja.md) levereras med inbyggd spårning som inte kräver någon ytterligare konfiguration. Journey Optimizer samlar automatiskt in besök, konverteringar och studsfrekvenser.
 
 **Vad som spåras automatiskt:**
 
@@ -210,7 +210,7 @@ Landningssidor levereras med inbyggd spårning som inte kräver några ytterliga
 * **Studsfrekvens** - Andel besökare som lämnar utan att interagera
 * **Prestandatrender** - tidsseriedata som visar hur mätvärden utvecklas
 
-**Optimera prestanda:** Använd spårningsdata för att förfina formulärfält, testa innehållsvariationer, identifiera effektiva trafikkällor och minska antalet övergivna formulär. [Läs mer](../reports/lp-report-global-cja.md)
+**Optimera prestanda:** Använd spårningsdata för att förfina formulärfält, testa innehållsvariationer, identifiera effektiva trafikkällor och minska antalet övergivna formulär.
 
 +++
 
@@ -218,19 +218,11 @@ Landningssidor levereras med inbyggd spårning som inte kräver några ytterliga
 
 Förutom spårning på kanalnivå kan du konfigurera spårning för att mäta övergripande prestanda och förstå kundbeteenden i alla era marknadsföringsinitiativ.
 
-**Konfigurera kampanjspårning:**
-<!--
-* **Configure optimization** - When setting up campaigns, enable experimentation or targeting to track which content variations perform best. [Learn more](../campaigns/campaigns-message-optimization.md)-->
-
-* **Definiera konverteringsmått** - Ange vilka åtgärder som räknas som konverteringar (inköp, registreringar, hämtningar) för att mäta kampanjens effektivitet utöver interaktionsstatistik.
-
-* **Konfigurera schemaläggning** - Konfigurera optimering för sändningstid för att spåra prestanda i olika timingstrategier och identifiera optimala sändningsfönster. [Läs mer](../building-journeys/send-time-optimization.md)
-
-**Konfigurera resespårning:**
-
 * **Definiera anpassade framgångsmått** - Konfigurera specifika nyckeltal som är anpassade till dina affärsmål (inköp, registreringar, förnyelser osv.) utöver standardengagemangsvärden. [Läs mer](../building-journeys/success-metrics.md)
 
 * **Aktivera resesegmenthändelser** - Aktivera detaljerad spårning av alla åtgärder som kunderna utför när de förflyttar sig på resorna. Detta ger detaljerad synlighet för start- och slutpunkter, banmarkering och platser där användaren kan lämna banan. [Läs mer](../reports/journey-step-events-overview.md)
+
+* **Konfigurera schemaläggning** - Konfigurera optimering för sändningstid för att spåra prestanda i olika timingstrategier och identifiera optimala sändningsfönster. [Läs mer](../building-journeys/send-time-optimization.md)
 
 * **Konfigurera övervakning av anpassade åtgärder** - Ställ in spårning för integreringar med externa system för att övervaka API-anrop, svarstider och felmönster. [Läs mer](../action/reporting.md)
 
@@ -258,7 +250,7 @@ När du använder Decisioning för att personalisera innehåll spårar Journey O
 * **Impressionsspårning** - För e-postmeddelanden spåras visningar automatiskt. För kodbaserade upplevelser måste ni implementera dispositionshändelser i koden.
 * **Klickspårning** - Klickningar på beslutsobjekt spåras automatiskt i e-postmeddelanden. Kodbaserade upplevelser kräver implementeringshändelser.
 
-**Krav för kodbaserad spårning:** För att spåra beslut i kodbaserade upplevelser måste implementeringen skicka interaktionshändelser (displayer och clicks) till Adobe Experience Platform med Web SDK eller Mobile SDK. [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
+**Krav för kodbaserad spårning:** För att spåra beslut i kodbaserade upplevelser måste implementeringen skicka interaktionshändelser (displayer och clicks) till Adobe Experience Platform med Web SDK eller Mobile SDK. [Läs mer](../experience-decisioning/data-collection/schema-requirement.md)
 
 **Analysera prestanda:** Visa KPI för beslutsfattande, jämföra beslutsobjekt, analysera urvalsstrategier och övervaka AI-modellens prestanda i rapporter. [Läs mer](../experience-decisioning/cja-reporting.md)
 
@@ -288,7 +280,7 @@ Förutom att spåra engagemang kan du konfigurera övervakning för att säkerst
 
 **Leveransövervakning:**
 
-* **Granska undertryckningslistor** regelbundet för att förstå varför adresser blockeras och för att upprätthålla listhygienen. [Läs mer](../reports/suppression-list.md)
+* **Granska suppressionslistan** regelbundet för att förstå varför adresser blockeras och för att upprätthålla listhygienen. [Läs mer](../reports/suppression-list.md)
 
 * **Analysera leveransfel** för att diagnostisera fel och vidta korrigerande åtgärder. [Läs mer](../configuration/email-error-types.md)
 
