@@ -5,7 +5,9 @@ title: Kampanjer
 description: Kampanjer
 redpen-status: CREATED_||_2025-08-11_20-28-03
 exl-id: 6fc5b0f4-95a5-431d-a80a-3a1f71b4dd0d
-source-git-commit: 311dbb72079b91d3faa1c60c38a66a806d80da42
+hide: true
+hidefromtoc: true
+source-git-commit: 7c47940713484dd6d6047eefe6e0ae0d0a276b9c
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 1%
@@ -20,7 +22,7 @@ Med kampanjer i Adobe Journey Optimizer kan ni leverera personaliserade, vältaj
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med kampanjer
 
@@ -30,7 +32,7 @@ Lär dig grunderna i kampanjer i Adobe Journey Optimizer, inklusive typer, behö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Åtkomst till och hantering av kampanjer
 
@@ -40,7 +42,7 @@ Lär dig hur du får tillgång till, hanterar, ändrar eller arkiverar kampanjer
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Åtgärdskampanjer
 
@@ -50,7 +52,7 @@ Stegvisa anvisningar för att skapa, anpassa och aktivera åtgärdskampanjer fö
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 API-utlösta kampanjer
 
@@ -60,7 +62,7 @@ Omfattande vägledning för utvecklare när det gäller att skapa och hantera AP
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Samordnade kampanjer
 
