@@ -49,7 +49,7 @@ Få tillgång till viktiga rapporter för att övervaka reseprestanda, analysera
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
 
 Åtkomst och prenumeration på systemaviseringar
 
@@ -59,7 +59,7 @@ Lär dig hur du får åtkomst till systemvarningar, prenumererar på meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Referens för felkoder
 
@@ -69,7 +69,7 @@ Förstå vanliga felkoder i Adobe Journey Optimizer och hitta snabba lösningar 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Felsöka fel innan du testar eller publicerar din resa
 
@@ -79,7 +79,7 @@ Identifiera och åtgärda fel som rör hela kundresan, aktivitetsproblem och ang
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Felsökning av körning av Live Journey
 
@@ -89,7 +89,7 @@ Diagnostisera problem med händelsvalidering, profilregistrering, resenavigering
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Felsöka inkommande åtgärder i resor
 
@@ -99,7 +99,7 @@ Felsök problem med inkommande åtgärder, till exempel saknat innehåll eller f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Felsöka anpassade åtgärder
 

@@ -175,7 +175,7 @@ Kodbaserade upplevelser kräver implementeringskonfiguration för att skicka sp�
 
 Innan spårning fungerar måste du konfigurera implementeringen för att skicka interaktionshändelser (skärmar, klickningar) till Adobe Experience Platform. Detta kräver:
 
-* Konfigurera en dataström för Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html)
+* Konfigurera en dataström för Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=sv-SE)
 * Implementera händelseinsamling i koden med Web SDK eller Mobile SDK.
 * Skicka visnings- och interaktionshändelser när innehåll visas eller klickas.
 
