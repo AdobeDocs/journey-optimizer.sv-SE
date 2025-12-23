@@ -8,7 +8,7 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 4f13f863a5e08cc0e92c26d782d888f0d6d2fea4
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 3%
@@ -95,7 +95,7 @@ Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligas
 
   **Felsökning**: Kontrollera att minst en resa är aktiv och konfigurerad för segmentet och verifiera segment-ID:n.
 
-* **JOURNEY_INSTANCE_ID_NOT_CREATE**: Det gick inte att skapa en reseinstans för kunden.
+* **JOURNEY_INSTANCE_ID_NOT_CREATED**: Det gick inte att skapa en reseinstans för kunden.
 
   **Vanliga orsaker**: Dubbletthändelser, hög händelsemängd, begränsningar för systemresurser.
 
@@ -118,5 +118,5 @@ Nedan finns definitioner, vanliga orsaker och felsökningssteg för det vanligas
 
 * [Datauppsättningsfrågeexempel - Resestegshändelse](../data/datasets-query-examples.md#journey-step-event).
 * [Exempel på frågor - Händelsebaserade frågor](query-examples.md#event-based-queries).
-* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+* [Inbyggda schemaordlistor](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 
