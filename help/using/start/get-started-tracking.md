@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Beginner
 keywords: spåra, övervaka, analysera, rapportera, leverera
-source-git-commit: a326f6df3332519b2c3efc77a0a0f26e629f1145
+source-git-commit: 4dfda2a13bfd01c7c556ae3e8eb31916592c569b
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1916'
 ht-degree: 3%
 
 ---
@@ -91,7 +91,7 @@ Spårning av e-post aktiveras automatiskt när du skapar ett e-postmeddelande. J
 
 * **Ställ in URL-spårningsparametrar** - Konfigurera spårningsparametrar på ytnivå för att automatiskt lägga till kampanjidentifierare (utm_campaign, utm_source osv.) till alla e-postlänkar. Detta möjliggör attribueringsspårning i hela det digitala ekosystemet. [Läs mer](../email/url-tracking.md)
 
-* **Spåra länkar i sparade fragment** - När spårning är aktiverat i en resa eller kampanj spåras även länkarna i ett fragment som sparats från innehållet i den här resan eller kampanjen när det här fragmentet återanvänds. [Läs mer](../content-management/save-fragments.md)
+* **Spåra länkar i sparade fragment** - När du sparar ett fragment från innehåll som har spårning aktiverat spåras länkarna i det fragmentet även när du återanvänder det på andra resor eller i andra kampanjer. [Läs mer](../content-management/save-fragments.md)
 
 * **Lägg till spårning av spegelsida** - Aktivera alternativet för spegelsida om du vill skapa en webbversion av ditt e-postmeddelande med automatisk spårning av vem som tittar på det. [Läs mer](../email/message-tracking.md#mirror-page)
 
@@ -105,11 +105,11 @@ Webbspårning kräver explicit konfiguration för att spåra användarinteraktio
 
 **Konfigurera klickspårning:**
 
-När du utformar en webbändring kan du markera specifika element (knappar, bilder, länkar) som du vill spåra. Detta aktiverar klickspårning för dessa element utan att ytterligare kod behövs. [Läs mer](../web/monitor-web-experiences.md)
+När du skapar en webbsida kan du markera specifika element (knappar, bilder, länkar) som du vill spåra. Detta aktiverar klickspårning för dessa element utan att ytterligare kod behövs. [Läs mer](../web/monitor-web-experiences.md)
 
-* **Spåra alla klickbara element** - Välj knappar, bilder, länkar eller andra interaktiva element i din webbanpassning
-* **Automatisk datainsamling** - När den har konfigurerats hämtar Journey Optimizer automatiskt klickhändelser och associerar dem med profiler
-* **Övervaka i realtid** - Följ upp användarinteraktioner när de validerar personaliseringseffektiviteten
+* **Spåra alla klickbara element** - Välj knappar, bilder, länkar eller andra interaktiva element i din webbanpassning.
+* **Automatisk datainsamling** - När den har konfigurerats hämtar Journey Optimizer automatiskt klickhändelser och associerar dem med profiler.
+* **Övervaka i realtid** - Följ upp användarinteraktioner när de validerar personaliseringseffekten.
 
 **Visa spårningsdata:** Få åtkomst till visningsvärden, klickfrekvens och prestanda på elementnivå i rapporter. [Kampanjrapporter](../reports/campaign-global-report-cja-web.md) | [Reserapporter](../reports/journey-global-report-cja-web.md)
 
@@ -139,13 +139,15 @@ Penselspårning aktiveras automatiskt och visar avtryck (levererat), klickningar
 
 Meddelanden i appen spårar automatiskt visningar och användarinteraktioner. Konfigurera triggers och innehåll för att maximera spårningseffektiviteten.
 
-**Konfigurera spårning:**
+**Ställ in spårning:**
 
-* **Konfigurera visningsregler** - Definiera när och var meddelanden i appen ska visas med hjälp av utlösare (appstart, skärminläsning), frekvensregler och målgruppsvillkor. Korrekt konfiguration säkerställer korrekt spårning av både utlösta och visade meddelanden. [Läs mer](../in-app/create-in-app.md)
+* **Definiera visningsregler** - Ange när och var meddelanden i appen ska visas med utlösare (appstart, skärminläsning), frekvensregler och målgruppsvillkor. Korrekt konfiguration säkerställer korrekt spårning av både utlösta och visade meddelanden.
 
 * **Lägg till spårade element** - Inkludera knappar, länkar och interaktiva element i meddelandeinnehållet. Varje interaktion spåras automatiskt med detaljerade etiketter.
 
 * **Optimera visningstidsplanering** - Konfigurera veckodag- och tidsinställningar för att maximera sannolikheten för att utlösta meddelanden visas för användarna.
+
+[Lär dig hur du konfigurerar meddelanden i programmet](../in-app/create-in-app.md)
 
 **Vad som spåras:** Journey Optimizer hämtar automatiskt bildskärmar, knappklickningar, avskedanden, utlösta kontra visade mätvärden och länkprestanda. [Kampanjrapporter](../reports/campaign-global-report-cja-inapp.md) | [Reserapporter](../reports/journey-global-report-cja-inapp.md)
 
@@ -157,9 +159,9 @@ SMS-spårning kräver minimal konfiguration - Journey Optimizer kortar automatis
 
 **Så här fungerar det:**
 
-* **Automatisk länkspårning** - Lägg till valfri URL till SMS-innehållet med hjälp av URL-hjälpfunktionen. Journey Optimizer förkortar automatiskt länken och spårar klickningar utan ytterligare konfiguration. Om du vill använda URL-förkortning måste du först konfigurera en SMS-underdomän. [Läs mer](../sms/create-sms.md#sms-content)
+* **Automatisk länkspårning** - Lägg till valfri URL till SMS-innehållet med hjälp av URL-hjälpfunktionen. Journey Optimizer förkortar automatiskt länken och spårar klickningar utan ytterligare konfiguration. Om du vill använda URL-förkortning måste du först konfigurera en SMS-underdomän. [Läs mer](../sms/sms-subdomains.md)
 
-* **Spårning av inkommande meddelanden** - Svar från mottagare hämtas automatiskt så att du kan övervaka dubbelriktade konversationer och svarsmönster.
+* **Spårning av inkommande meddelanden** - Svar från mottagare hämtas automatiskt så att du kan övervaka dubbelriktade konversationer och svarsmönster. [Läs mer](../sms/sms-opt-out.md#sms-native-keywords)
 
 **Visa mått:** Få åtkomst till länkklickdata, inkommande meddelandevolymer och meddelandetypsprestanda i rapporter. [Kampanjrapporter](../reports/campaign-global-report-cja-sms.md) | [Reserapporter](../reports/journey-global-report-cja-sms.md)
 
@@ -173,9 +175,9 @@ Kodbaserade upplevelser kräver implementeringskonfiguration för att skicka sp�
 
 Innan spårning fungerar måste du konfigurera implementeringen för att skicka interaktionshändelser (skärmar, klickningar) till Adobe Experience Platform. Detta kräver:
 
-* Konfigurera en dataström för Adobe Experience Platform
-* Implementera händelseinsamling i koden med Web SDK eller Mobile SDK
-* Skicka visnings- och interaktionshändelser när innehåll visas eller klickas
+* Konfigurera en dataström för Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html)
+* Implementera händelseinsamling i koden med Web SDK eller Mobile SDK.
+* Skicka visnings- och interaktionshändelser när innehåll visas eller klickas.
 
 [Läs mer om implementeringskrav](../code-based/code-based-prerequisites.md#reporting-prerequisites)
 
@@ -185,7 +187,7 @@ Innan spårning fungerar måste du konfigurera implementeringen för att skicka 
 
 +++Spårning av innehållskort
 
-[Innehållskort](../content-card/create-content-card.md) spårar automatiskt användarinteraktioner. Konfigurera innehåll och visningsregler för att styra spårningsbeteendet.
+Innehållskort spårar automatiskt användarinteraktioner. Konfigurera innehåll och visningsregler för att styra spårningsbeteendet.
 
 **Så här implementerar du:**
 
@@ -195,13 +197,15 @@ Innan spårning fungerar måste du konfigurera implementeringen för att skicka 
 
 * **Konfigurera visningsregler** - Definiera när och var kort visas för att säkerställa korrekt spårning av skärmar och interaktioner.
 
+[Lär dig konfigurera innehållskort](../content-card/create-content-card.md)
+
 **Övervaka engagemang:** Spåra visningar, klick, klickfrekvens och engagemangsmönster i flera sessioner. [Kampanjrapporter](../reports/campaign-global-report-cja-content.md) | [Reserapporter](../reports/journey-global-report-cja-content.md)
 
 +++
 
 +++Spårning av landningssida
 
-[Landningssidor](../reports/lp-report-global-cja.md) levereras med inbyggd spårning som inte kräver någon ytterligare konfiguration. Journey Optimizer samlar automatiskt in besök, konverteringar och studsfrekvenser.
+Landningssidor levereras med inbyggd spårning som inte kräver några ytterligare inställningar. Journey Optimizer samlar automatiskt in besök, konverteringar och studsfrekvenser.
 
 **Vad som spåras automatiskt:**
 
@@ -210,7 +214,9 @@ Innan spårning fungerar måste du konfigurera implementeringen för att skicka 
 * **Studsfrekvens** - Andel besökare som lämnar utan att interagera
 * **Prestandatrender** - tidsseriedata som visar hur mätvärden utvecklas
 
-**Optimera prestanda:** Använd spårningsdata för att förfina formulärfält, testa innehållsvariationer, identifiera effektiva trafikkällor och minska antalet övergivna formulär.
+[Lär dig konfigurera landningssidor](../landing-pages/create-lp.md)
+
+**Övervaka prestanda:** Spåra besöksmönster, konverteringsgrader och studsfrekvens över tiden för att förstå hur användare interagerar med formulären och identifiera områden som kan förbättras. [Kampanjrapporter](../reports/lp-report-global-cja.md)
 
 +++
 
@@ -234,15 +240,19 @@ Förutom spårning på kanalnivå kan du konfigurera spårning för att mäta ö
 
 Journey Optimizer spårar automatiskt optimeringsexperiment, målgruppsstrategier och beslutsresultat. Konfigurera inställningarna för att säkerställa korrekt datainsamling.
 
-**Konfigurera optimeringsspårning:**
+### Ställ in optimeringsspårning {#optimization-tracking}
 
-* **Konfigurera experimenterande** - När du skapar experiment eller använder målinriktning definierar du vilka mätvärden som ska spåras (konverteringar, klickningar, anpassade händelser). Journey Optimizer samlar automatiskt in prestandadata för varje behandling. [Läs mer](../campaigns/campaigns-message-optimization.md)
+* **Optimering av kampanjer och resor**
 
-* **Konfigurera sökvägsoptimering** - Lägg till en **Optimera**-aktivitet på din resa och konfigurera flera sökvägar. Journey Optimizer spårar automatiskt vilka banprofiler som används och mäter prestandan. [Läs mer](../building-journeys/optimize.md)
+   * När du skapar experiment definierar du vilka mätvärden som ska spåras (konverteringar, klickningar, anpassade händelser). Journey Optimizer samlar automatiskt in prestandadata för varje behandling. [Läs mer](../campaigns/campaigns-message-optimization.md#experimentation)
 
-**Analysera resultat:** Visa konverteringsgrader, statistisk betydelse och lyft mellan behandlingar i experimenteringsrapporter. [Kampanjrapporter](../reports/campaign-global-report-cja-experimentation.md) | [Reserapporter](../reports/journey-global-report-cja-experimentation.md)
+   * Skapa målinriktningsregler för att leverera olika innehåll till olika målgruppssegment. Journey Optimizer spårar automatiskt interaktionsstatistik för varje målgrupp så att ni kan jämföra prestanda mellan olika segment. [Läs mer](../campaigns/campaigns-message-optimization.md#targeting)
 
-**Spåra beslutsprestanda:**
+* **Sökvägsoptimering** - Lägg till en **Optimera**-aktivitet på resan och konfigurera flera sökvägar. Journey Optimizer spårar automatiskt vilka banprofiler som används och mäter prestandan. [Läs mer](../building-journeys/optimize.md)
+
+**Analysera resultat:** Visa konverteringsgrader, statistisk signifikans och lyft mellan behandlingar i experimenteringsrapporter, eller jämför interaktionsvärden mellan målsegment. [Rapport om experimentkampanj](../reports/campaign-global-report-cja-experimentation.md) | [Rapport om experimenterad resa ](../reports/journey-global-report-cja-experimentation.md) | [Rapport om målinriktning på resa](../reports/journey-global-report-cja.md#targeting)
+
+### Spåra beslutsprestanda {#decisioning-tracking}
 
 När du använder Decisioning för att personalisera innehåll spårar Journey Optimizer automatiskt beslutshändelser, visningar och klickningar utan någon ytterligare konfiguration.
 
@@ -270,19 +280,19 @@ Datastyrning säkerställer efterlevnad av regler som GDPR och CCPA samtidigt so
 
 Förutom att spåra engagemang kan du konfigurera övervakning för att säkerställa att meddelandena når sina inkorgar och system fungerar optimalt.
 
-**Konfigurera proaktiv övervakning:**
-
-* **Konfigurera aviseringar** - Konfigurera meddelanden i realtid om resefel, anpassade åtgärdsfel och kritiska problem så att du snabbt kan åtgärda problem. [Läs mer](../reports/alerts.md)
-
-* **Aktivera granskningsloggar** - Aktivera granskningsloggning för att spåra alla åtgärder på resurser för regelefterlevnad och felsökning. [Läs mer](../privacy/audit-logs.md)
-
-* **Övervaka integreringar** - Spåra anpassade åtgärdsprestanda och externa systemanslutningar för att identifiera integreringsproblem tidigt. [Läs mer](../action/reporting.md)
-
-**Leveransövervakning:**
+Leveransövervakning hjälper till att säkerställa att dina meddelanden når mottagarnas inkorgar och upprätthåller ett gott avsändaranseende genom att spåra viktiga indikatorer:
 
 * **Granska suppressionslistan** regelbundet för att förstå varför adresser blockeras och för att upprätthålla listhygienen. [Läs mer](../reports/suppression-list.md)
 
 * **Analysera leveransfel** för att diagnostisera fel och vidta korrigerande åtgärder. [Läs mer](../configuration/email-error-types.md)
 
 * **Följ bästa praxis** för DMARC, SPF och DKIM för att maximera placeringen av inkorgen. [Läs mer](../reports/deliverability.md)
+
+Konfigurera proaktiv övervakning för att få meddelanden i realtid om kritiska händelser och systemproblem, så att ni kan reagera snabbt innan de påverkar era kundupplevelser:
+
+* **Konfigurera aviseringar** - Konfigurera meddelanden i realtid om resefel, anpassade åtgärdsfel och kritiska problem så att du snabbt kan åtgärda problem. [Läs mer](../reports/alerts.md)
+
+* **Aktivera granskningsloggar** - Aktivera granskningsloggning för att spåra alla åtgärder på resurser för regelefterlevnad och felsökning. [Läs mer](../privacy/audit-logs.md)
+
+* **Övervaka integreringar** - Spåra anpassade åtgärdsprestanda och externa systemanslutningar för att identifiera integreringsproblem tidigt. [Läs mer](../action/reporting.md)
 
