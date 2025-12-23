@@ -250,7 +250,7 @@ Journey Optimizer spårar automatiskt optimeringsexperiment, målgruppsstrategie
 
 * **Sökvägsoptimering** - Lägg till en **Optimera**-aktivitet på resan och konfigurera flera sökvägar. Journey Optimizer spårar automatiskt vilka banprofiler som används och mäter prestandan. [Läs mer](../building-journeys/optimize.md)
 
-**Analysera resultat:** Visa konverteringsgrader, statistisk signifikans och lyft mellan behandlingar i experimenteringsrapporter, eller jämför interaktionsvärden mellan målsegment. [Rapport om experimentkampanj](../reports/campaign-global-report-cja-experimentation.md) | [Rapport om experimenterad resa ](../reports/journey-global-report-cja-experimentation.md) | [Rapport om målinriktning på resa](../reports/journey-global-report-cja.md#targeting)
+**Analysera resultat:** Visa konverteringsgrader, statistisk signifikans och lyft mellan behandlingar i experimenteringsrapporter, eller jämför interaktionsvärden mellan målsegment. [Rapport om experimentkampanj](../reports/campaign-global-report-cja-experimentation.md) | [Rapport om experimenterad resa &#x200B;](../reports/journey-global-report-cja-experimentation.md) | [Rapport om målinriktning på resa](../reports/journey-global-report-cja.md#targeting)
 
 ### Spåra beslutsprestanda {#decisioning-tracking}
 
