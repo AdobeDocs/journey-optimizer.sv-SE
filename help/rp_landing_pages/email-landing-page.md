@@ -5,7 +5,7 @@ title: E-postkanal
 description: E-postkanal
 redpen-status: CREATED_||_2025-08-11_20-35-15
 exl-id: f7c61cc3-943e-40a3-94be-f3f1bd46961d
-source-git-commit: 9cb3a60fb9a2266b4723dfc1b952f1bab11b97e3
+source-git-commit: e2ecfcd3163965bbd0ada68edd61ac07373eaad2
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -32,7 +32,7 @@ E-postleveranser kan skapas:
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Så här skapar du ett e-postmeddelande
 
@@ -42,7 +42,7 @@ Stegvisa anvisningar för att lägga till, konfigurera och testa e-poståtgärde
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Designa och optimera e-postinnehåll
 
@@ -52,7 +52,7 @@ Utforska verktyg och metodtips för att utforma responsivt och personaliserat e-
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Hantera e-postavanmälan
 
@@ -62,7 +62,7 @@ Konfigurera avanmälningsmekanismer i ett eller två steg för att hantera anvä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera e-postkanal
 
@@ -72,13 +72,13 @@ Konfigurera och hantera e-postkonfigurationer som delegering av underdomäner, u
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Mastering Email Delivery
 
 Förstå och optimera e-postleveransen med verktyg, bästa praxis och åtgärdbara insikter för att förbättra avsändarens anseende.
 
-[Förbättra e-postleveransen](deliverability-landing-page.md)
+[Förbättra e-postleveransen](../using/reports/deliverability.md)
 :::
 
 ::::
