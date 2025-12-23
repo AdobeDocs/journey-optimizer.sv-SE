@@ -79,7 +79,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 * Produktmeddelanden till alla kunder
 * Säsongskampanjer
 
-➡️ [Lär dig mer om aktiviteten Läs målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md) | [Användning av flerkanalsmeddelanden ](journeys-uc.md)
+➡️ [Lär dig mer om aktiviteten Läs målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md) | [Användning av flerkanalsmeddelanden &#x200B;](journeys-uc.md)
 
 >[!TAB Målgruppskvalificeringsresor]
 
@@ -99,7 +99,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 * Första prisvärda meddelanden
 * Geografisk målgruppsanpassning när kunderna flyttar
 
-➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Villkorsaktivitet](condition-activity.md) | [Skapa segmentdefinitioner ](../audience/creating-a-segment-definition.md)
+➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Villkorsaktivitet](condition-activity.md) | [Skapa segmentdefinitioner &#x200B;](../audience/creating-a-segment-definition.md)
 
 >[!TAB Affärshändelseresor]
 
@@ -195,7 +195,7 @@ Inom resedesignern kan marknadsförarna skicka :1-meddelanden i realtid via valf
 
 [Resedesignern](using-the-journey-designer.md) innehåller [inbyggda kanalåtgärder](journeys-message.md) som stöder utgående meddelanden, t.ex. e-post, push-meddelanden och SMS/MMS, samt inkommande kanaler, inklusive mobilappar, webbplatser och kodbaserade upplevelser som skapats direkt i Journey Optimizer. Du kan också använda tredjepartssystem för att skicka meddelanden - via e-post, text eller andra kanaler - i Journey Optimizer ingår [anpassade åtgärder](using-custom-actions.md) så att dessa system kan integreras på resorna direkt från kunddesignern.
 
-Lär dig hur du skapar resor [ i dessa fall av typen end-to-end ](jo-use-cases.md).
+Lär dig hur du skapar resor [&#x200B; i dessa fall av typen end-to-end &#x200B;](jo-use-cases.md).
 
 >[!NOTE]
 >
