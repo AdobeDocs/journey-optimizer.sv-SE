@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: f874456748a8bd7fce69c7ad2a7e69380d5336a6
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Genom att utnyttja kanalregeluppsättningar kan ni ange frekvensbegränsning eft
 
 >[!IMPORTANT]
 >
->Se till att du väljer namnutrymmet med högst prioritet när du skapar en kampanj eller resa, så att du kan vara säker på att kanalnivåappningen fungerar som den ska. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+>Se till att du väljer namnutrymmet med högst prioritet när du skapar en kampanj eller resa, så att du kan vara säker på att kanalnivåappningen fungerar som den ska. Läs mer om namnområdesprioritet i [Handboken för Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
 
 ## Skapa en regel för kanalbegränsning
 
@@ -72,7 +72,7 @@ Så här skapar du en kanalregeluppsättning:
 
    >[!IMPORTANT]
    >
-   >* För att vara säker på att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
+   >* För att vara säker på att du väljer det namnutrymme som har högst prioritet när du skapar en kampanj eller resa. Läs mer om namnområdesprioritet i handboken [Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
    >
    >* Profilräknarens värde uppdateras när kommunikationen har levererats. Tänk på det här när du skickar stora mängder kommunikation eftersom dataflödet kan resultera i att mottagaren får e-postminuterna eller till och med timmar efter att kommunikationen har startats (om du skickar miljontals meddelanden samtidigt). Detta gäller om en mottagare får två kommunikationer nära ihop. Vi föreslår att kommunikationen ska hållas isär med minst två timmar om det är möjligt, så att mottagaren får tillräckligt med tid för att kunna ta emot kommunikationen och räkningsvärdet för att kunna uppdatera den.
 
@@ -128,6 +128,10 @@ Så här använder du en regeluppsättning i ett meddelande:
 
 När du testar frekvensregler rekommenderar vi att du använder en ny [testprofil](../audience/creating-test-profiles.md) eftersom det inte finns något sätt att återställa räknaren förrän nästa period när en profils frekvensgräns har nåtts. Om du inaktiverar en regel kan mappade profiler ta emot meddelanden, men inga räknarsteg tas bort eller tas bort.
 
+>[!CAUTION]
+>
+>Regler för frekvensbegränsning gäller också när [korrektur](../content-management/proofs.md) skickas. Om en testprofil redan har nått gränsvärdet för frekvens visas korrektur som färdigt, men inget e-postmeddelande skickas.
+
 <!--add a new section for default priority namespace.-->
 
 <!--
@@ -161,4 +165,4 @@ In this scenario, an individual profile:
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
