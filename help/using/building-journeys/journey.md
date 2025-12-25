@@ -146,7 +146,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 * Produktmeddelanden till alla kunder
 * Säsongskampanjer
 
-➡️ [Lär dig mer om aktiviteten Läs målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md) | [Användning av flerkanalsmeddelanden ](journeys-uc.md)
+➡️ [Lär dig mer om aktiviteten Läs målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md) | [Användning av flerkanalsmeddelanden &#x200B;](journeys-uc.md)
 
 >[!TAB Målgruppskvalificeringsresor]
 
@@ -166,7 +166,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 * Första prisvärda meddelanden
 * Geografisk målgruppsanpassning när kunderna flyttar
 
-➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Villkorsaktivitet](condition-activity.md) | [Skapa segmentdefinitioner ](../audience/creating-a-segment-definition.md)
+➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Villkorsaktivitet](condition-activity.md) | [Skapa segmentdefinitioner &#x200B;](../audience/creating-a-segment-definition.md)
 
 >[!TAB Affärshändelseresor]
 
@@ -203,7 +203,7 @@ Resedesignern har allt du behöver för att skapa flerstegsupplevelser:
 * **[Villkor](condition-activity.md)** - Fördela din resa baserat på profilattribut, målgruppsmedlemskap eller realtidshändelser
 * **[Uttryck](expression/expressionadvanced.md)** - Skapa avancerad logik och personalisering med uttrycksredigeraren
 
-Lär dig hur du använder resedesignern [i dessa situationer från början till slut ](jo-use-cases.md).
+Lär dig hur du använder resedesignern [i dessa situationer från början till slut &#x200B;](jo-use-cases.md).
 
 >[!NOTE]
 >

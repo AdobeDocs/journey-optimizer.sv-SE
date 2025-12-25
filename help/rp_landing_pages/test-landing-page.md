@@ -109,7 +109,7 @@ Efter start fortsätter du övervakningen för att upptäcka eventuella problem 
 
 * Ställ in [systemvarningar](../using/reports/alerts.md) för resefel, hög avhoppsfrekvens eller lågt engagemang
 * Granska [liverapporter](../using/building-journeys/report-journey.md) för att spåra prestanda i förhållande till förväntningarna
-* Var redo att [pausa eller ändra ](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
+* Var redo att [pausa eller ändra &#x200B;](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
 * Dokumentlärdomar som kan förbättra framtida testprocesser
 
 ## Testning in action: Användningsexempel
