@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
-source-git-commit: cfac40f73a68362f8490de28cf1865f3dd4952f7
+source-git-commit: dd3d91266c0edea562f75ceb1f75974c7242ee1a
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,13 @@ Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssa
 
 * Med **[resedesignern](using-the-journey-designer.md)** kan du skapa dina flerstegsfall: enkelt dra och släppa en anmälningshändelse eller en [läs målgruppsaktivitet](read-audience.md), lägga till [villkor](condition-activity.md) och skicka personliga meddelanden.
 
-Journey Optimizer [resedesigner](using-the-journey-designer.md) innehåller allt som marknadsförare och reseansvariga behöver för att kunna genomföra flerstegsresor i 1:1 över flera kanaler. Detta inkluderar en intuitiv dra-och-släpp-arbetsyta för att samordna varje steg av resan, definiera målgruppen och inkludera de meddelanden, erbjudanden och innehåll i olika kanaler som målgruppsmedlemmarna kan se baserat på beteende, kontextuella data och affärshändelser. Utforska [användningsexempel från verkligheten](jo-use-cases.md) och se hur du kan använda dessa funktioner.
-
 ➡️ [Upptäck Journey Optimizer i video](#video)
 
 ## Översikt över resor
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Komma igång med att skapa resan
 
@@ -49,7 +47,7 @@ Stegvisa riktlinjer för att utforma, testa, publicera och spåra kundresor för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Journey Orchestration - komplett guide
 
@@ -59,7 +57,7 @@ Omfattande dokumentation som täcker alla aspekter av att skapa, hantera och opt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Hantera era resor
 
@@ -69,7 +67,7 @@ Hantera kundresor effektivt med verktyg för filtrering, profilhantering, tidszo
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Reseverksamhet
 
@@ -79,7 +77,7 @@ Upptäck hur ni konfigurerar och använder aktiviteter som triggers, beslutssteg
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Skapar uttryck
 
@@ -89,7 +87,7 @@ Masteruttryck för dynamiska arbetsflöden, datamanipulering och avancerad reses
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Användningsexempel på resa
 
@@ -148,7 +146,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 * Produktmeddelanden till alla kunder
 * Säsongskampanjer
 
-➡️ [Lär dig mer om aktiviteten Läs målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md) | [Användning av flerkanalsmeddelanden &#x200B;](journeys-uc.md)
+➡️ [Lär dig mer om aktiviteten Läs målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md) | [Användning av flerkanalsmeddelanden ](journeys-uc.md)
 
 >[!TAB Målgruppskvalificeringsresor]
 
@@ -168,7 +166,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 * Första prisvärda meddelanden
 * Geografisk målgruppsanpassning när kunderna flyttar
 
-➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Villkorsaktivitet](condition-activity.md) | [Skapa segmentdefinitioner &#x200B;](../audience/creating-a-segment-definition.md)
+➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Villkorsaktivitet](condition-activity.md) | [Skapa segmentdefinitioner ](../audience/creating-a-segment-definition.md)
 
 >[!TAB Affärshändelseresor]
 
@@ -195,7 +193,9 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 
 ## Journey Designer{#journey-designer}
 
-[Resedesignern](using-the-journey-designer.md) är en intuitiv dra och släpp-arbetsyta som gör att du kan skapa och ordna kundresor visuellt. Här finns allt du behöver för att skapa flerstegsupplevelser:
+[Resedesignern](using-the-journey-designer.md) innehåller allt som marknadsförare och resande personer behöver för att orkestrera flerstegsresor i :1 olika kanaler. Detta inkluderar en intuitiv dra-och-släpp-arbetsyta för att samordna varje steg av resan, definiera målgruppen och inkludera de meddelanden, erbjudanden och innehåll i olika kanaler som målgruppsmedlemmarna kan se baserat på beteende, kontextuella data och affärshändelser.
+
+Resedesignern har allt du behöver för att skapa flerstegsupplevelser:
 
 * **[Inbyggda kanalåtgärder](journeys-message.md)** - Skicka meddelanden via e-post, push-meddelanden, SMS/MMS, appar, webb, kodbaserade upplevelser med mera, allt utformat direkt i Journey Optimizer
 * **[Anpassade åtgärder](using-custom-actions.md)** - Integrera tredjepartssystem för att skicka meddelanden eller utlösa arbetsflöden på externa plattformar
@@ -203,7 +203,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 * **[Villkor](condition-activity.md)** - Fördela din resa baserat på profilattribut, målgruppsmedlemskap eller realtidshändelser
 * **[Uttryck](expression/expressionadvanced.md)** - Skapa avancerad logik och personalisering med uttrycksredigeraren
 
-Lär dig hur du använder resedesignern [i dessa situationer från början till slut &#x200B;](jo-use-cases.md).
+Lär dig hur du använder resedesignern [i dessa situationer från början till slut ](jo-use-cases.md).
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Lär dig hur du använder resedesignern [i dessa situationer från början till 
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
 ## Ytterligare resurser {#additional-resources}
 
@@ -222,4 +222,4 @@ Identifiera komponenterna i en resa och förstå grunderna för hur man bygger e
 * **[Resensaviseringar](../reports/alerts.md)** - Konfigurera aviseringar för reseövervakning och prenumerera på aviseringar för realtidsuppdateringar
 * **[Felkodsreferens](error-codes-reference.md)** - Resefelkoder och felsökningssteg
 * **[Felsökning](troubleshooting.md)** - Vanliga reseproblem och lösningar
-* **[Självstudiekurser (videoklipp)](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resan med praktiska videokurser som omfattar funktioner, funktioner och bästa praxis
+* **[Självstudiekurser (videoklipp)](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resan med praktiska videokurser som omfattar funktioner, funktioner och bästa praxis
