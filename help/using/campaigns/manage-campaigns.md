@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
+source-git-commit: 5623511099f7b09fa95bccb411776bc4416637fd
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,17 @@ ht-degree: 0%
 
 Lär dig hur du får tillgång till, ordnar och hanterar kampanjer i Adobe Journey Optimizer. Den här guiden täcker allt från att hitta kampanjer till att förstå status, utföra vanliga åtgärder och underhålla kampanjarbetsytan.
 
-## Snabbstart: Vanliga uppgifter {#quick-tasks}
+>[!BEGINSHADEBOX]
 
-Gå direkt till det du behöver:
+**Gå direkt till det du behöver:**
 
-* **Skapa en ny kampanj** → [Välj kampanjtyp](get-started-with-campaigns.md#campaign-types)
-   * [Skapa en åtgärdskampanj](create-campaign.md)
-   * [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
-   * [Skapa en orkestrerad kampanj](../orchestrated/gs-orchestrated-campaigns.md)
-* **Hitta befintliga kampanjer** → [Sök och filtrera](#access)
-* **Visa kampanjresultat** → [Kampanjrapporter](../reports/campaign-global-report-cja.md)
-* **Schemalägg kampanjer** → [Använd kalendern](#calendar)
-* **Hantera konflikter** → [Konflikthanteringsguide](../conflict-prioritization/gs-conflict-prioritization.md)
+* **Skapa en ny kampanj** - [Välj kampanjtyp](get-started-with-campaigns.md#campaign-types) | [Skapa en åtgärdskampanj](create-campaign.md) | [Skapa API-utlösta kampanjer](api-triggered-campaigns.md) | [Skapa en orkestrerad kampanj](../orchestrated/gs-orchestrated-campaigns.md)
+* **Hitta befintliga kampanjer** - [Sök och filtrera](#access)
+* **Visa kampanjresultat** - [Kampanjrapporter](../reports/campaign-global-report-cja.md)
+* **Schemalägg kampanjer** - [Använd kalendern](#calendar)
+* **Hantera konflikter** - [Konflikthanteringsguide](../conflict-prioritization/gs-conflict-prioritization.md)
+
+>[!ENDSHADEBOX]
 
 ## Få tillgång till och bläddra bland kampanjer {#access}
 
@@ -262,7 +261,7 @@ Kampanjen skapas och läggs till i kampanjlistan.
 
 * **Kampanjkonfiguration** - [Kampanjegenskaper](campaign-properties.md) | [Kampanjåtgärder och -kanaler](campaign-action.md) | [Design av kampanjinnehåll](campaign-content.md) | [Kampanjmålgrupp](campaign-audience.md) | [Kampanjplanering](campaign-schedule.md)
 
-* **Avancerade funktioner** - [Arbetsflöden för godkännande](../test-approve/gs-approval.md) | [Konflikthantering och -prioritering](../conflict-prioritization/gs-conflict-prioritization.md) | [Frekvensbegränsning per kanal &#x200B;](../conflict-prioritization/channel-capping.md) | [Prioritetspoäng](../conflict-prioritization/priority-scores.md) | [Exportera kampanjer till andra sandlådor](../configuration/copy-objects-to-sandbox.md)
+* **Avancerade funktioner** - [Arbetsflöden för godkännande](../test-approve/gs-approval.md) | [Konflikthantering och -prioritering](../conflict-prioritization/gs-conflict-prioritization.md) | [Frekvensbegränsning per kanal ](../conflict-prioritization/channel-capping.md) | [Prioritetspoäng](../conflict-prioritization/priority-scores.md) | [Exportera kampanjer till andra sandlådor](../configuration/copy-objects-to-sandbox.md)
 
 * **Övervakning och optimering** - [Kampanjrapporter (CJA)](../reports/campaign-global-report-cja.md) | [Konfigurera aviseringar](../reports/alerts.md)
 
