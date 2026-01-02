@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: cebb21aba29a15236b6810309efc488b578a1ca6
+source-git-commit: 2090f99e6aa1b255e36d01687cef49295b88f1ce
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -122,13 +122,7 @@ Använd [!DNL Journey Optimizer] för att:
 * **Marknadsföring** - Kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar. Kräver att mottagarna är invalda.
 * **Transaktionell** - Avbrott, nödsituationer, annulleringar. Kräver inte deltagande.
 
-**Perfekt för:**
-
-* Månatliga nyhetsbrev till kundsegment
-* Tidskänsliga reklamutskick
-* Säsongskampanjer
-* Kommunikation om produktlansering
-* Meddelanden om tjänstavbrott
+**Perfekt för:** Månatliga nyhetsbrev till kundsegment, tidskänsliga kampanjmeddelanden, säsongskampanjer, meddelanden om produktlansering och meddelanden om avbrott i tjänster.
 
 ➡️ [Lär dig mer om åtgärdskampanjer](create-campaign.md)
 
@@ -143,13 +137,7 @@ Använd [!DNL Journey Optimizer] för att:
 * **Marknadsföring** - Personlig marknadskommunikation till målgrupper
 * **Transactional** - Meddelanden efter enskilda åtgärder (lösenordsåterställningar, kundvagn osv.)
 
-**Perfekt för:**
-
-* Bekräftelser för återställning av lösenord
-* Återvinning av kundvagn
-* Beställningsbekräftelser och leveransuppdateringar
-* Meddelanden om kontoaktivitet
-* Personaliserade rekommendationer i realtid
+**Perfekt för:** Bekräftelser av lösenordsåterställning, återställning av kundvagn, orderbekräftelser och leveransuppdateringar, meddelanden om kontoaktivitet och personaliserade rekommendationer i realtid.
 
 ➡️ [Läs om API-utlösta kampanjer](api-triggered-campaigns.md)
 
@@ -159,13 +147,7 @@ Använd [!DNL Journey Optimizer] för att:
 
 **Samordnade kampanjer** ger en visuell arbetsyta med dra-och-släpp-funktioner för att utforma och automatisera sofistikerade arbetsflöden för marknadsföring. Från målgruppssegmentering till skräddarsydd meddelandeleverans i alla kanaler - allt sker i en intuitiv miljö som utformats för snabbhet och kontroll.
 
-**Perfekt för:**
-
-* Flerstegsprogram för kundengagemang
-* Komplexa strategier för segmentering och målinriktning
-* Samordna kampanjer i flera kanaler
-* Varumärkesinitierad marknadsföring i stor skala
-* Avancerad automatisering av arbetsflöden med flera beslutspunkter
+**Perfekt för:** Flerstegsprogram för kundengagemang, komplexa strategier för segmentering och målinriktning, flerkanalsmarknadsföring, storskalig varumärkesinitierad marknadsföring och avancerad automatisering av arbetsflöden med flera beslutspunkter.
 
 ➡️ [Läs om samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)
 
@@ -181,7 +163,7 @@ Framgångsrika kampanjer följer en tydlig och upprepningsbar process. Här är 
 
 **1. Planera** → **2. Konfigurera** → **3. Design** → **4. Granska** → **5. Aktivera** → **6. Monitor**
 
-### &#x200B;1. **Planera din kampanj** {#plan}
+### &#x200B;1. Planera din kampanj {#plan}
 
 Förtydliga era mål innan du börjar:
 
@@ -191,7 +173,7 @@ Förtydliga era mål innan du börjar:
 * **Vilka kanaler ska du använda?** (e-post, push, SMS, in-app, webb osv.) → [Visa kanaler som stöds efter kampanjtyp](../channels/gs-channels.md#channels)
 * **När ska det köras?** (omedelbar, schemalagd eller API-utlöst)
 
-### &#x200B;2. **Konfigurera kampanjegenskaper** {#configure}
+### &#x200B;2. Konfigurera kampanjegenskaper {#configure}
 
 Lägg grunden till er kampanj:
 
@@ -206,7 +188,7 @@ Lägg grunden till er kampanj:
 * [Egenskaper för API-utlösta kampanjer →](api-triggered-campaign-properties.md)
 * [Samordnade kampanjinställningar →](../orchestrated/create-orchestrated-campaign.md)
 
-### &#x200B;3. **Designa ditt innehåll** {#design}
+### &#x200B;3. Designa innehåll {#design}
 
 Skapa övertygande budskap för er målgrupp:
 
@@ -221,7 +203,7 @@ Skapa övertygande budskap för er målgrupp:
 * [API-utlöst kampanjinnehåll →](api-triggered-campaign-content.md)
 * [Samordnat kampanjinnehåll →](../orchestrated/create-orchestrated-campaign.md)
 
-### &#x200B;4. **Granska och testa** {#review}
+### &#x200B;4. Granska och testa {#review}
 
 Granska alltid kampanjen före aktiveringen:
 
@@ -236,7 +218,7 @@ Granska alltid kampanjen före aktiveringen:
 * [Granska kampanjer som triggas av API →](review-activate-api-triggered-campaign.md)
 * [Granska samordnade kampanjer →](../orchestrated/create-orchestrated-campaign.md)
 
-### &#x200B;5. **Aktivera kampanjen** {#activate}
+### &#x200B;5. Aktivera kampanjen {#activate}
 
 Aktivera kampanjen när granskningen är klar:
 
@@ -250,7 +232,7 @@ Aktivera kampanjen när granskningen är klar:
 * [Aktivera API-utlösta kampanjer →](review-activate-api-triggered-campaign.md)
 * [Aktivera samordnade kampanjer →](../orchestrated/create-orchestrated-campaign.md)
 
-### &#x200B;6. **Övervaka och analysera** {#monitor}
+### &#x200B;6. Övervaka och analysera {#monitor}
 
 Spåra kampanjens resultat:
 
@@ -296,7 +278,7 @@ Innan du arbetar med kampanjer bör du kontrollera att du har följande på plat
 
 1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}.
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
@@ -309,7 +291,7 @@ Utforska följande kraftfulla funktioner när ni blir mer bekväma med kampanjer
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Schemaläggning och timing**
 
@@ -319,7 +301,7 @@ Schemalägg kampanjer för specifika datum/tidpunkter, ange återkommande levera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Klassificeringskontroll**
 
@@ -329,7 +311,7 @@ Begränsa meddelandegenomströmningen för att förhindra överbelastning i syst
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Målgruppsanpassning**
 
@@ -339,7 +321,7 @@ Rikta in er på specifika Adobe Experience Platform-målgrupper med precision oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Arbetsflöden för godkännande**
 
@@ -349,7 +331,7 @@ Implementera gransknings- och godkännandeprocesser innan kampanjer publiceras, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 **Tysta timmar**
 
@@ -359,7 +341,7 @@ Följ kundernas önskemål genom att undvika meddelandeleverans under angivna ti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Tidsoptimering vid sändning**
 
