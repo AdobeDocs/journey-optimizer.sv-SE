@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 87351e845c7a6267cc78c26c838e69e77325f2b8
+source-git-commit: b038865ee71ae4acb463b32d5ea66488f42b5c54
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Använd [!DNL Journey Optimizer] för att:
 
 >[!TAB Åtgärdskampanjer (schemalagda)]
 
-![ikon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE) **När du ska använda:** Enkel, schemalagd batchkommunikation
+![ikon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg) **När du ska använda:** Enkel, schemalagd batchkommunikation
 
 **Åtgärdskampanjer** (kallas även schemalagda kampanjer) är idealiska för enkel, engångs- eller återkommande batchkommunikation som körs vid en viss tidpunkt.
 
@@ -134,7 +134,7 @@ Använd [!DNL Journey Optimizer] för att:
 
 >[!TAB API-utlösta kampanjer]
 
-![ikon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE) **När ska du använda:** Händelsestyrda meddelanden i realtid med externa system
+![ikon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg) **När ska du använda:** Händelsestyrda meddelanden i realtid med externa system
 
 **API-utlösta kampanjer** aktiveras via API-anrop, vilket aktiverar automatiserade meddelanden direkt från externa system. Dessa kampanjer stöder personalisering med både profilattribut och kontextdata i realtid från API-nyttolasten.
 
@@ -155,7 +155,7 @@ Använd [!DNL Journey Optimizer] för att:
 
 >[!TAB Samordnade kampanjer]
 
-![ikon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE) **När ska du använda:** Komplexa arbetsflöden för flerstegsmarknadsföring
+![ikon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg) **När ska du använda:** Komplexa arbetsflöden för flerstegsmarknadsföring
 
 **Samordnade kampanjer** ger en visuell arbetsyta med dra-och-släpp-funktioner för att utforma och automatisera sofistikerade arbetsflöden för marknadsföring. Från målgruppssegmentering till skräddarsydd meddelandeleverans i alla kanaler - allt sker i en intuitiv miljö som utformats för snabbhet och kontroll.
 
@@ -263,7 +263,7 @@ Spåra kampanjens resultat:
 **Typspecifika stödlinjer:**
 * [Kampanjrapporter →](../reports/campaign-global-report-cja.md)
 * [API-utlöst kampanjövervakning →](api-triggered-campaigns.md#monitor)
-* [Samlad kampanjanalys →](../orchestrated/create-orchestrated-campaigns.md)
+* [Samlad kampanjanalys →](../orchestrated/create-orchestrated-campaign.md)
 
 ➡️ **Vill du börja?** Välj kampanjtyp:
 * [Skapa en åtgärdskampanj →](create-campaign.md)
@@ -296,7 +296,7 @@ Innan du arbetar med kampanjer bör du kontrollera att du har följande på plat
 
 1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}.
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
@@ -309,7 +309,7 @@ Utforska följande kraftfulla funktioner när ni blir mer bekväma med kampanjer
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Schemaläggning och timing**
 
@@ -319,7 +319,7 @@ Schemalägg kampanjer för specifika datum/tidpunkter, ange återkommande levera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Klassificeringskontroll**
 
@@ -329,7 +329,7 @@ Begränsa meddelandegenomströmningen för att förhindra överbelastning i syst
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Målgruppsanpassning**
 
@@ -339,7 +339,7 @@ Rikta in er på specifika Adobe Experience Platform-målgrupper med precision oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Arbetsflöden för godkännande**
 
@@ -349,7 +349,7 @@ Implementera gransknings- och godkännandeprocesser innan kampanjer publiceras, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 **Tysta timmar**
 
@@ -359,7 +359,7 @@ Följ kundernas önskemål genom att undvika meddelandeleverans under angivna ti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Tidsoptimering vid sändning**
 
