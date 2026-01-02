@@ -159,33 +159,33 @@ Kombinerar arbetsflödeskomplexitet med batchkörning av kampanjer.
 
 ### Användningsexempel på resa
 
-* **Återställning av kundvagnsåsidosättning**: Utlöses av en händelse om kundvagn läggs till, vänta på utcheckning, skicka påminnelser om inget köp görs
-* **Kundintroduktion**: Välkomstserie i flera steg med anpassat innehåll baserat på profildata
-* **Bonusnivåuppgradering**: Utlöses när kunden når en ny nivå, skickar gratulationer och förmåner
-* **Födelsedagskampanjer**: Anmälan baseras på födelsedatum, personaliserade erbjudanden
-* **Återengagemang**: Utlöses av målgruppskvalifikation (inaktivitet), progressiv utåtriktad
+&#x200B;* **Återställning av kundvagnsåsidosättning**: Utlöses av en händelse om kundvagn läggs till, vänta på utcheckning, skicka påminnelser om inget köp görs
+&#x200B;* **Kundintroduktion**: Välkomstserie i flera steg med anpassat innehåll baserat på profildata
+&#x200B;* **Bonusnivåuppgradering**: Utlöses när kunden når en ny nivå, skickar gratulationer och förmåner
+&#x200B;* **Födelsedagskampanjer**: Anmälan baseras på födelsedatum, personaliserade erbjudanden
+&#x200B;* **Återengagemang**: Utlöses av målgruppskvalifikation (inaktivitet), progressiv utåtriktad
 
 ### Användningsexempel för kampanj (åtgärd och API-utlösta)
 
 **Åtgärdskampanjer:**
-* **Månatliga nyhetsbrev**: Schemalagd batchleverans till prenumerantsegment
-* **Kampanjmeddelanden**: Tidskänsliga erbjudanden för målgrupper
-* **Produktlanseringar**: Koordinerat meddelande till alla kunder
-* **Säsongshälsningar**: Helgdagsmeddelanden på vissa datum
+&#x200B;* **Månatliga nyhetsbrev**: Schemalagd batchleverans till prenumerantsegment
+&#x200B;* **Kampanjmeddelanden**: Tidskänsliga erbjudanden för målgrupper
+&#x200B;* **Produktlanseringar**: Koordinerat meddelande till alla kunder
+&#x200B;* **Säsongshälsningar**: Helgdagsmeddelanden på vissa datum
 
 **API-utlösta kampanjer:**
-* **Beställningsbekräftelser**: Utlöses av e-handelssystemet efter köp
-* **Leveransmeddelanden**: Utlöses av logistiksystemet
-* **Kontovarningar**: Utlöses av system för upptäckt av bedrägeri
-* **Lösenordsåterställning**: Utlöses av användaråtgärd i programmet
+&#x200B;* **Beställningsbekräftelser**: Utlöses av e-handelssystemet efter köp
+&#x200B;* **Leveransmeddelanden**: Utlöses av logistiksystemet
+&#x200B;* **Kontovarningar**: Utlöses av system för upptäckt av bedrägeri
+&#x200B;* **Lösenordsåterställning**: Utlöses av användaråtgärd i programmet
 
 ### Samordnade kampanjanvändningsfall
 
-* **Säsongskampanj med katalogintegration**: Fråga efter produktkatalog, identifiera berättigade kunder, segmentera efter önskemål, skicka personaliserade produktrekommendationer
-* **Butiksspecifika kampanjer**: Rikta kunderna mot specifika butiksplatser med lagerdata
-* **Flerbokskommunikation**: Skicka ett meddelande per bokning (hotellbokningar, flygbokningar)
-* **Komplex segmentsamordning**: Bygg målgrupper steg för steg med berikning från flera datakällor
-* **Validering före sändning**: Få exakt antal mottagare innan du startar större kampanjer
+&#x200B;* **Säsongskampanj med katalogintegration**: Fråga efter produktkatalog, identifiera berättigade kunder, segmentera efter önskemål, skicka personaliserade produktrekommendationer
+&#x200B;* **Butiksspecifika kampanjer**: Rikta kunderna mot specifika butiksplatser med lagerdata
+&#x200B;* **Flerbokskommunikation**: Skicka ett meddelande per bokning (hotellbokningar, flygbokningar)
+&#x200B;* **Komplex segmentsamordning**: Bygg målgrupper steg för steg med berikning från flera datakällor
+&#x200B;* **Validering före sändning**: Få exakt antal mottagare innan du startar större kampanjer
 
 ## Tillgänglighet {#feature-availability}
 
@@ -252,9 +252,9 @@ S: Ja, målgrupper som skapats i Adobe Experience Platform kan användas på all
 
 Vill du börja bygga? Utforska den detaljerade dokumentationen för det sätt du valt:
 
-* **[Kom igång med resor](../building-journeys/journey.md)** - Lär dig mer om resetyper, designer och arbetsflöde
-* **[Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)** - Utforska åtgärder och API-utlösta kampanjer
-* **[Kom igång med samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)** - Upptäck arbetsflöden för arbetsytan i batch
+&#x200B;* **[Kom igång med resor](../building-journeys/journey.md)** - Lär dig mer om resetyper, designer och arbetsflöde
+&#x200B;* **[Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)** - Utforska åtgärder och API-utlösta kampanjer
+&#x200B;* **[Kom igång med samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)** - Upptäck arbetsflöden för arbetsytan i batch
 
 **Behöver du mer hjälp med att bestämma dig?**
 - [Jämförelse av resetyper](../building-journeys/journey.md#journey-types-comparison)
