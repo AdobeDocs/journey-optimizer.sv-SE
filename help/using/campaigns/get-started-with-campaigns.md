@@ -10,10 +10,10 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
+source-git-commit: 8b57aa06f40cfc5c1b4d1971e54eecb224338cc7
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 1%
+source-wordcount: '1560'
+ht-degree: 0%
 
 ---
 
@@ -84,81 +84,299 @@ ht-degree: 1%
 >title="Kampanjer"
 >abstract="Skicka transaktionsinformation till enskilda profiler eller profiler. Kanaler som stöds: E-post, SMS, push-meddelanden."
 
-Använd [!DNL Journey Optimizer] kampanjer för att leverera engångsinnehåll till en viss målgrupp i flera kanaler. Till skillnad från resor, som utför åtgärder steg för steg, utför kampanjer samtidigt - antingen direkt eller enligt ett bestämt schema.
+Adobe Journey Optimizer ger er möjlighet att leverera målinriktat engångsinnehåll till specifika målgrupper i flera kanaler. Med kampanjer kan ni genomföra samordnade marknadsföringsåtgärder samtidigt och nå er målgrupp med rätt budskap vid rätt tidpunkt.
+
+Den här guiden ger en tydlig färdplan som hjälper er att förstå grunderna i kampanjer, välja rätt kampanjtyp för ert användningsfall och utforma kampanjer som ger slagkraftiga kundupplevelser.
+
+## Vad är kampanjer?
+
+**Kampanjer** är samordnade marknadsföringsåtgärder som levererar innehåll till en viss målgrupp i en eller flera kanaler. Till skillnad från resor där åtgärderna utförs sekventiellt utför kampanjer samtidigt - antingen direkt eller enligt ett angivet schema.
+
+Använd [!DNL Journey Optimizer] för att:
+
+* Leverera **engångs- eller återkommande innehåll** till målgruppssegment
+* Utför **samordnade flerkanalskommunikationer** via e-post, push, SMS, i appen, webben med mera
+* Utlös **automatiska svar** via API-anrop för händelsestyrda meddelanden i realtid
+* Utforma **komplexa arbetsflöden för marknadsföring** med visuella orkestreringsverktyg
 
 ![](assets/gs-campaigns.png)
 
-## Kampanjtyper
+➡️ **Vill du börja bygga?** [Skapa din första kampanj](create-campaign.md) på några minuter.
 
-[!DNL Journey Optimizer] har stöd för tre kampanjtyper. Varje typ passar olika användningsområden och har stöd för olika kanaler. Mer information om vilka kanaler som är tillgängliga för varje kampanjtyp finns i tabellen i det här avsnittet: [Kanaler i resor och kampanjer](../channels/gs-channels.md#channels)
+## Välj kampanjtyp {#campaign-types}
+
+**Innan du börjar bygga** är det viktigt att du förstår vilken typ av kampanj som passar ditt användningsexempel. Adobe Journey Optimizer har stöd för tre olika kampanjtyper, var och en för olika scenarier och aktiveringsmekanismer:
 
 ![](assets/campaign-modal.png)
 
 >[!BEGINTABS]
 
->[!TAB Samordnade kampanjer]
+>[!TAB Åtgärdskampanjer (schemalagda)]
 
-**Samordnade kampanjer** används för sofistikerade, varumärkesinitierade marknadsföringskampanjer i alla kanaler, vilket hjälper er att öka engagemanget, intäkterna och kundlojaliteten i stor skala.
+![ikon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg) **När du ska använda:** Enkel, schemalagd batchkommunikation
 
-Flerkanalsmarknadsföring är avgörande, men samordnade kampanjer gör den sömlös. Med ett visuellt dra-och-släpp-gränssnitt kan ni utforma och automatisera komplexa marknadsföringsarbetsflöden, från segmentering till meddelandeleverans, i flera kanaler. Allt sker i en intuitiv miljö som är byggd för snabbhet, kontroll och effektivitet.
+**Åtgärdskampanjer** (kallas även schemalagda kampanjer) är idealiska för enkel, engångs- eller återkommande batchkommunikation som körs vid en viss tidpunkt.
 
-➡️ [Lär dig hur du arbetar med samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md).
+**Två kategorier:**
 
->[!TAB Åtgärdskampanjer (eller schemalagda kampanjer)]
+* **Marknadsföring** - Kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar. Kräver att mottagarna är invalda.
+* **Transaktionell** - Avbrott, nödsituationer, annulleringar. Kräver inte deltagande.
 
-**Åtgärdskampanjer**, som också kallas schemalagda kampanjer, möjliggör enkel ad hoc-batchkommunikation.
+**Perfekt för:**
 
-* **Schemalagd - Marknadsföring** - För marknadsföringsfall som kampanjerbjudanden, engagemangskampanjer, meddelanden, juridiska meddelanden eller policyuppdateringar. Kräver att mottagarna är invalda.
-* **Schemalagd - Transaktionell** - Till skillnad från marknadsföringskampanjer kräver inte Transactional-kampanjer att mottagare väljs. Använd den här kategorin för kommunikation i samband med avbrott, kriser och annulleringar. Kanaler som stöds: e-post, SMS, push-meddelanden.
+* Månatliga nyhetsbrev till kundsegment
+* Tidskänsliga reklamutskick
+* Säsongskampanjer
+* Kommunikation om produktlansering
+* Meddelanden om tjänstavbrott
 
-➡️ [Lär dig arbeta med åtgärdskampanjer](create-campaign.md)
+➡️ [Lär dig mer om åtgärdskampanjer](create-campaign.md)
 
 >[!TAB API-utlösta kampanjer]
 
-**API-utlösta kampanjer** gör att du kan utlösa kampanjkörningen med ett API-anrop. Kommunikationen kan skickas där behovet av anpassning kan innebära att inte bara profilattribut som lösenordsåterställning används, utan även kontextdata i realtid i utlösaren, som är en REST API-nyttolast.
+![ikon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg) **När ska du använda:** Händelsestyrda meddelanden i realtid med externa system
 
-* **API utlöstes - Marketing** - Skicka personaliserad marknadsföringskommunikation till målgrupper.
-* **API har utlösts - Transactional** - Skicka meddelanden efter en åtgärd som har utförts av en individ, t.ex. en begäran om återställning av lösenord, ett kundvagnsinköp.
+**API-utlösta kampanjer** aktiveras via API-anrop, vilket aktiverar automatiserade meddelanden direkt från externa system. Dessa kampanjer stöder personalisering med både profilattribut och kontextdata i realtid från API-nyttolasten.
 
-➡️ [Lär dig hur du arbetar med API-utlösta kampanjer](api-triggered-campaigns.md)
+**Två kategorier:**
 
+* **Marknadsföring** - Personlig marknadskommunikation till målgrupper
+* **Transactional** - Meddelanden efter enskilda åtgärder (lösenordsåterställningar, kundvagn osv.)
+
+**Perfekt för:**
+
+* Bekräftelser för återställning av lösenord
+* Återvinning av kundvagn
+* Beställningsbekräftelser och leveransuppdateringar
+* Meddelanden om kontoaktivitet
+* Personaliserade rekommendationer i realtid
+
+➡️ [Läs om API-utlösta kampanjer](api-triggered-campaigns.md)
+
+>[!TAB Samordnade kampanjer]
+
+![ikon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg) **När ska du använda:** Komplexa arbetsflöden för flerstegsmarknadsföring
+
+**Samordnade kampanjer** ger en visuell arbetsyta med dra-och-släpp-funktioner för att utforma och automatisera sofistikerade arbetsflöden för marknadsföring. Från målgruppssegmentering till skräddarsydd meddelandeleverans i alla kanaler - allt sker i en intuitiv miljö som utformats för snabbhet och kontroll.
+
+**Perfekt för:**
+
+* Flerstegsprogram för kundengagemang
+* Komplexa strategier för segmentering och målinriktning
+* Samordna kampanjer i flera kanaler
+* Varumärkesinitierad marknadsföring i stor skala
+* Avancerad automatisering av arbetsflöden med flera beslutspunkter
+
+➡️ [Läs om samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)
 
 >[!ENDTABS]
 
+>[!NOTE]
+>
+>Vet du inte vilken typ du ska välja? Börja med **Åtgärdskampanjer** för schemalagd batchkommunikation eller **API-utlösta kampanjer** för meddelanden i realtid - dessa omfattar de vanligaste användningsfallen.
+
+>[!NOTE]
+>
+>Vet du inte vilken typ du ska välja? Börja med **Åtgärdskampanjer** för schemalagd batchkommunikation eller **API-utlösta kampanjer** för meddelanden i realtid - dessa omfattar de vanligaste användningsfallen.
+
+## Arbetsflöde för kampanjskapande {#workflow}
+
+Framgångsrika kampanjer följer en tydlig och upprepningsbar process. Här är ditt stegvisa arbetsflöde:
+
+**1. Planera** → **2. Konfigurera** → **3. Design** → **4. Granska** → **5. Aktivera** → **6. Monitor**
+
+### &#x200B;1. **Planera din kampanj** {#plan}
+
+Förtydliga era mål innan du börjar:
+
+* **Vad är målet?** (t.ex. enhetskonverteringar, öka engagemanget, meddela kunderna)
+* **Vem är målgruppen?** (specifikt segment från Adobe Experience Platform)
+* **Vilken kampanjtyp passar?** (Se [kampanjtyper](#campaign-types) ovan)
+* **Vilka kanaler ska du använda?** (e-post, push, SMS, in-app, webb, osv.)
+* **När ska det köras?** (omedelbar, schemalagd eller API-utlöst)
+
+### &#x200B;2. **Konfigurera kampanjegenskaper** {#configure}
+
+Lägg grunden till er kampanj:
+
+1. **Namnge och beskriv** din kampanj för enkel identifiering
+2. **Välj kampanjtyp** (åtgärd, API-utlöst eller Orchestrated)
+3. **Välj målgrupp** från Adobe Experience Platform
+4. **Ange prioritet** om konflikthantering används
+5. **Konfigurera schema** (för åtgärdskampanjer) eller API-information (för API-utlösta)
+
+**Typspecifika stödlinjer:**
+* [Egenskaper för åtgärdskampanj →](campaign-properties.md)
+* [Egenskaper för API-utlösta kampanjer →](api-triggered-campaign-properties.md)
+* [Samordnade kampanjinställningar →](../orchestrated/create-orchestrated-campaigns.md)
+
+### &#x200B;3. **Designa ditt innehåll** {#design}
+
+Skapa övertygande budskap för er målgrupp:
+
+* Använd **e-post-Designer** för e-postupplevelser
+* Konfigurera **push-meddelanden** med bilder och djupa länkar
+* Utforma **SMS/MMS-meddelanden** med personalisering
+* Skapa **upplevelser i appen** och **webb**
+* Lägg till **personalisering** med profilattribut och sammanhangsbaserade data
+
+**Typspecifika stödlinjer:**
+* [Åtgärdskampanjens innehåll →](campaign-content.md)
+* [API-utlöst kampanjinnehåll →](api-triggered-campaign-content.md)
+* [Samordnat kampanjinnehåll →](../orchestrated/create-orchestrated-campaigns.md)
+
+### &#x200B;4. **Granska och testa** {#review}
+
+Granska alltid kampanjen före aktiveringen:
+
+* **Förhandsgranska innehåll** med testprofiler
+* **Kontrollera målinriktning** för att säkerställa rätt målgrupp
+* **Verifiera schema** och aktiveringsinställningar
+* **Begär godkännande** om arbetsflödet för godkännande används
+* **Testa leveransen** med startvärdeslistor
+
+**Typspecifika stödlinjer:**
+* [Granska åtgärdskampanjer →](review-activate-campaign.md)
+* [Granska kampanjer som triggas av API →](review-activate-api-triggered-campaign.md)
+* [Granska samordnade kampanjer →](../orchestrated/create-orchestrated-campaigns.md)
+
+### &#x200B;5. **Aktivera kampanjen** {#activate}
+
+Aktivera kampanjen när granskningen är klar:
+
+* **Manuell aktivering** - Aktivera omedelbart eller vid schemalagd tidpunkt
+* **API-aktivering** - Använd aktiveringsslutpunkten för API-utlösta kampanjer
+* **Godkännandeprocess** - Om det behövs väntar du på godkännande från berörda parter
+* Obs! Aktiva kampanjer kan inte redigeras (du måste duplicera dem för att kunna göra ändringar)
+
+**Typspecifika stödlinjer:**
+* [Aktivera åtgärdskampanjer →](review-activate-campaign.md)
+* [Aktivera API-utlösta kampanjer →](review-activate-api-triggered-campaign.md)
+* [Aktivera samordnade kampanjer →](../orchestrated/create-orchestrated-campaigns.md)
+
+### &#x200B;6. **Övervaka och analysera** {#monitor}
+
+Spåra kampanjens resultat:
+
+* Visa kampanjrapporter och analyser
+* Övervaka leveransfrekvenser och engagemangsmått
+* Spåra fel och studsar
+* Analysera konvertering och avkastning
+* Använd insikter för optimering
+
+**Typspecifika stödlinjer:**
+* [Kampanjrapporter →](../reports/campaign-global-report-cja.md)
+* [API-utlöst kampanjövervakning →](api-triggered-campaigns.md#monitor)
+* [Samlad kampanjanalys →](../orchestrated/create-orchestrated-campaigns.md)
+
+➡️ **Vill du börja?** Välj kampanjtyp:
+* [Skapa en åtgärdskampanj →](create-campaign.md)
+* [Skapa API-utlöst kampanj →](api-triggered-campaigns.md)
+* [Skapa en orkestrerad kampanj →](../orchestrated/gs-orchestrated-campaigns.md)
+
 ## Förhandskrav {#prerequisites}
 
-Innan du arbetar med kampanjer måste du kontrollera att du har granskat villkoren nedan.
+Innan du arbetar med kampanjer bör du kontrollera att du har följande på plats:
 
-* **Publiker** måste vara tillgängliga innan kampanjen kan skapas. [Kom igång med målgrupper](../audience/about-audiences.md).
+### Nödvändig konfiguration
 
-* **Kanalkonfigurationer** - Om du vill kunna välja en kanal måste du ha motsvarande kanalkonfiguration (dvs. förinställning) skapad och tillgänglig. [Lär dig hur du konfigurerar kanalkonfigurationer](../configuration/channel-surfaces.md).
+* **Publiker** - Publiker måste vara tillgängliga i Adobe Experience Platform innan kampanjer kan skapas. [Kom igång med målgrupper →](../audience/about-audiences.md)
 
-* **Behörigheter** - kampanjer är bara tillgängliga för användare med lämplig behörighet som listas nedan. Om du inte kan komma åt kampanjfunktioner kontaktar du administratören för att få den behörighet som krävs. [Läs mer om Journey Optimizer inbyggda roller](../administration/ootb-product-profiles.md)
+* **Kanalkonfigurationer** - Kanalkonfigurationer (förinställningar) måste skapas och vara tillgängliga för de kanaler som du vill använda. [Konfigurera kanalkonfigurationer →](../configuration/channel-surfaces.md)
 
-  | Kampanjtyp | Behörigheter |
-  |----------------------------|----------------------------------------------------------------------------|
-  | **Åtgärdskampanjer** | Kampanjadministratör<br>Kampanjgodkännare<br>Kampanjhanterare<br>Kampanjvisningsprogram |
-  | **API-utlösta kampanjer** | Kampanjadministratör<br>Kampanjgodkännare<br>Kampanjhanterare<br>Kampanjvisningsprogram |
-  | **Samordnade kampanjer** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
+* **Behörigheter** - Du behöver lämpliga behörigheter baserat på kampanjtypen. Kontakta administratören om du inte har åtkomst till kampanjfunktioner. [Läs om inbyggda roller →](../administration/ootb-product-profiles.md)
 
-  +++Lär dig hur du tilldelar kampanjrelaterad roll
+| Kampanjtyp | Behörigheter |
+|----------------------------|----------------------------------------------------------------------------|
+| **Åtgärdskampanjer** | Kampanjadministratör<br>Kampanjgodkännare<br>Kampanjhanterare<br>Kampanjvisningsprogram |
+| **API-utlösta kampanjer** | Kampanjadministratör<br>Kampanjgodkännare<br>Kampanjhanterare<br>Kampanjvisningsprogram |
+| **Samordnade kampanjer** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
 
-   1. Om du vill tilldela en roll till en användare i [!DNL Permissions]-produkten går du till fliken **[!UICONTROL Roles]** och väljer en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]** som beskrivs ovan.
++++Tilldela kampanjbehörigheter
 
-   1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
+1. Navigera till fliken **[!UICONTROL Roles]** i produkten [!DNL Permissions] och välj en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]**.
 
-   1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}
+1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
 
-  Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
+Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
-  +++
++++
 
-## Låt oss dyka djupare
+## Kampanjfunktioner {#capabilities}
 
-Nu när du har en förståelse för kampanjer i [!DNL Journey Optimizer] är det dags att gå djupare in i dessa dokumentationsavsnitt för att börja skapa dina första kampanjer.
+Utforska följande kraftfulla funktioner när ni blir mer bekväma med kampanjer:
+
+:::: landing-cards-container
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
+
+**Schemaläggning och timing**
+
+Schemalägg kampanjer för specifika datum/tidpunkter, ange återkommande leveranser och optimera sändningstiderna för maximal effekt.
+
+[Läs mer om schemaläggning](campaign-schedule.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+**Klassificeringskontroll**
+
+Begränsa meddelandegenomströmningen för att förhindra överbelastning i system längre fram i kedjan, som landningssidor eller kundtjänstplattformar.
+
+[Begränsningar för kontrollfrekvens](create-campaign.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+**Målgruppsanpassning**
+
+Rikta in er på specifika Adobe Experience Platform-målgrupper med precision och hantera målgruppskvalifikationer dynamiskt.
+
+[Välj kampanjmålgrupp](campaign-audience.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+
+**Arbetsflöden för godkännande**
+
+Implementera gransknings- och godkännandeprocesser innan kampanjer publiceras, för att säkerställa kvalitet och efterlevnad.
+
+[Granska och aktivera](review-activate-campaign.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
+
+**Tysta timmar**
+
+Följ kundernas önskemål genom att undvika meddelandeleverans under angivna tidsperioder.
+
+[Konfigurera tysta timmar](quiet-hours.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+**Tidsoptimering vid sändning**
+
+Använd AI för att fastställa den bästa tidpunkten för att skicka meddelanden för maximal interaktion med varje individ.
+
+[Optimera sändningstiden](campaigns-message-optimization.md)
+:::
+
+::::
+
+## Kom igång med kampanjtyper {#get-started-types}
+
+Nu när du förstår kampanjer i [!DNL Journey Optimizer] väljer du kampanjtyp för att komma igång:
 
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
 <td><a href="create-campaign.md"><img width="70%" alt="åtgärdskampanjer" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Åtgärdskampanjer</a></td>
