@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 10eaebc1d24eae4a0a149822d31ff92509d1e6f8
+source-git-commit: d33a299523b7964be5ec1694de49c777e54bf98c
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,24 @@ ht-degree: 0%
 >title="Åtgärd"
 >abstract="I det här avsnittet visas alla åtgärder som används i den samordnade kampanjen."
 
-Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**. Använd flikarna för att bläddra bland kampanjer efter typ: **Åtgärd** kampanjer, **API-utlösta** kampanjer och **samordnade** kampanjer. Läs mer om de [olika kampanjtyperna](get-started-with-campaigns.md#get-started-campaigns). Vilka typer som är tillgängliga beror på ditt licensavtal och dina behörigheter.
+Lär dig hur du får tillgång till, ordnar och hanterar kampanjer i Adobe Journey Optimizer. Den här guiden täcker allt från att hitta kampanjer till att förstå status, utföra vanliga åtgärder och underhålla kampanjarbetsytan.
+
+## Snabbstart: Vanliga uppgifter {#quick-tasks}
+
+Gå direkt till det du behöver:
+
+* **Skapa en ny kampanj** → [Välj kampanjtyp](get-started-with-campaigns.md#campaign-types)
+   * [Skapa en åtgärdskampanj](create-campaign.md)
+   * [Skapa API-utlösta kampanjer](api-triggered-campaigns.md)
+   * [Skapa en orkestrerad kampanj](../orchestrated/gs-orchestrated-campaigns.md)
+* **Hitta befintliga kampanjer** → [Sök och filtrera](#access)
+* **Visa kampanjresultat** → [Kampanjrapporter](../reports/campaign-global-report-cja.md)
+* **Schemalägg kampanjer** → [Använd kalendern](#calendar)
+* **Hantera konflikter** → [Konflikthanteringsguide](../conflict-prioritization/gs-conflict-prioritization.md)
+
+## Få tillgång till och bläddra bland kampanjer {#access}
+
+Kampanjer är tillgängliga på menyn **[!UICONTROL Campaigns]**. Använd flikarna för att bläddra bland kampanjer efter typ: **Åtgärd** kampanjer, **API-utlösta** kampanjer och **samordnade** kampanjer. Läs mer om de [olika kampanjtyperna](get-started-with-campaigns.md#campaign-types). Vilka typer som är tillgängliga beror på ditt licensavtal och dina behörigheter.
 
 >[!BEGINTABS]
 
@@ -53,77 +70,59 @@ Som standard visas alla kampanjer med statusvärdena **[!UICONTROL Draft]**, **[
 
 Välj fliken **[!UICONTROL Orchestration]** om du vill få åtkomst till listan över Orchestrated-kampanjer.
 
-![bild som visar lagret för orkestrerade kampanjer](assets/inventory.png){zoomable="yes"}{zoomable="yes"}
+![bild som visar lagret för orkestrerade kampanjer](assets/inventory.png){zoomable="yes"}
 
-Varje orkestrerad kampanj i listan visar information som kampanjens aktuella [status](#status), den associerade kanalen och de associerade taggarna eller den senaste gången den ändrades. Du kan anpassa de kolumner som visas genom att klicka på knappen ![Konfigurera layout](assets/do-not-localize/inventory-configure-layout.svg) .
+Varje orkestrerad kampanj i listan visar information som kampanjens aktuella [status](#statuses), den associerade kanalen och de associerade taggarna eller den senaste gången den ändrades. Du kan anpassa de kolumner som visas genom att klicka på knappen ![Konfigurera layout](assets/do-not-localize/inventory-configure-layout.svg) .
 
 >[!ENDTABS]
+
+### Söka efter och filtrera kampanjer {#search-filter}
 
 Dessutom finns det ett sökfält och filter som gör det enklare att söka i listan. Du kan till exempel filtrera kampanjer så att de bara visas för en viss kanal eller tagg, eller för kampanjer som skapats under ett visst datumintervall.
 
-![Bilden som visar knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) i kampanjinventeringen gör att du kan utföra olika åtgärder som beskrivs nedan.
+## Kampanjåtgärder {#operations}
+
+![Bilden som visar knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) i kampanjinventeringen gör att du kan utföra olika åtgärder.
 
 ![bild som visar kampanjlagret](assets/inventory-actions.png)
 
-* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Få tillgång till rapporter för att mäta och visualisera effekten och resultatet av era kampanjer. Läs mer om [kampanjrapporter](../reports/campaign-global-report-cja.md).
-* **[!UICONTROL Edit tags]** - Redigera de taggar som är associerade med kampanjen. Lär dig hur du [använder taggar i dina kampanjer](../start/search-filter-categorize.md#add-tags)
-* **[!UICONTROL Duplicate]** - Använd det här alternativet för att duplicera en kampanj, till exempel för att köra en Orchestrated-kampanj som har stoppats. [Läs mer](#duplicate-a-campaign)
-* **[!UICONTROL Delete]** - Använd det här alternativet om du vill ta bort en kampanj. [Läs mer](#delete-a-campaign)
-* **[!UICONTROL Archive]** - Arkivera kampanjen. Alla arkiverade kampanjer tas bort enligt ett rullande schema 30 dagar efter det att de senast ändrades. Den här åtgärden är tillgänglig för alla kampanjer förutom **[!UICONTROL Draft]** kampanjer. Läs mer om [kampanjarkivering](#archive-a-campaign).
+### Tillgängliga åtgärder
 
-För Action- och API-utlösta kampanjer finns ytterligare åtgärder nedan:
+**För alla kampanjtyper:**
 
-* **[!UICONTROL Add to package]** - Lägg till kampanjen i ett paket för att exportera den till en annan sandlåda. Lär dig hur du [exporterar objekt till en annan sandlåda](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Få tillgång till rapporter för att mäta och visualisera effekten och resultatet av era kampanjer. [Läs mer om kampanjrapporter →](../reports/campaign-global-report-cja.md)
+* **[!UICONTROL Edit tags]** - Redigera de taggar som är associerade med kampanjen. [Lär dig använda taggar →](../start/search-filter-categorize.md#add-tags)
+* **[!UICONTROL Duplicate]** - Använd det här alternativet för att duplicera en kampanj, till exempel för att köra en Orchestrated-kampanj som har stoppats. [Läs mer om duplicering →](#duplicate-a-campaign)
+* **[!UICONTROL Delete]** - Använd det här alternativet om du vill ta bort en kampanj. [Läs mer om att ta bort →](#delete-a-campaign)
+* **[!UICONTROL Archive]** - Arkivera kampanjen. Alla arkiverade kampanjer tas bort enligt ett rullande schema 30 dagar efter det att de senast ändrades. Den här åtgärden är tillgänglig för alla kampanjer förutom **[!UICONTROL Draft]** kampanjer. [Läs mer om arkivering →](#archive-a-campaign)
+
+**Endast för åtgärdskampanjer och API-utlösta kampanjer:**
+
+* **[!UICONTROL Add to package]** - Lägg till kampanjen i ett paket för att exportera den till en annan sandlåda. [Lär dig hur du exporterar objekt →](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - Om en ny version av kampanjen har skapats och ännu inte har aktiverats kan du komma åt dess utkastversion med den här åtgärden.
 
-## Kampanjlivscykel {#statuses}
+## Förstå kampanjstatus {#statuses}
 
-I Adobe Journey Optimizer går varje kampanj igenom en livscykel som återspeglas av dess status i gränssnittet. De tillgängliga statusvärdena varierar beroende på kampanjtypen - Åtgärd, API-utlösta eller Orchestrated. Använd flikarna nedan för att utforska livscykeln och statusvärdena för varje kampanjtyp.
+Varje kampanj går igenom en livscykel som återspeglas av dess status i gränssnittet. Genom att förstå dessa statusar kan du veta vilka åtgärder som är tillgängliga och vad du ska göra härnäst.
 
->[!BEGINTABS]
-
->[!TAB Åtgärdskampanjer]
-
-* **[!UICONTROL Draft]**: Kampanjen redigeras, den har inte aktiverats.
-* **[!UICONTROL Scheduled]**: Kampanjen är konfigurerad att aktiveras ett visst startdatum.
-* **[!UICONTROL Live]**: Kampanjen har aktiverats.
-* **[!UICONTROL In review]**: Kampanjen har skickats in för godkännande för publicering. [Lär dig arbeta med godkännanden](../test-approve/gs-approval.md)
-* **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Lär dig stoppa en kampanj](manage-campaigns.md#stop)
-* **[!UICONTROL Completed]**: Kampanjen är slutförd. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
-* **[!UICONTROL Failed]**: Kampanjkörningen misslyckades. Kontrollera loggarna för att identifiera problemet.
-* **[!UICONTROL Archived]**: Kampanjen har arkiverats. [Lär dig arkivera kampanjer](manage-campaigns.md#archive)
-
->[!NOTE]
->
->Ikonen Öppna utkast till version bredvid statusen **[!UICONTROL Live]** eller **[!UICONTROL Scheduled]** anger att en ny version av en kampanj som utlösts av en åtgärd eller API har skapats och inte har aktiverats än.
-
->[!TAB API-utlösta kampanjer]
-
-* **[!UICONTROL Draft]**: Kampanjen redigeras, den har inte aktiverats.
-* **[!UICONTROL Scheduled]**: Kampanjen är konfigurerad att aktiveras ett visst startdatum.
-* **[!UICONTROL Live]**: Kampanjen har aktiverats.
-* **[!UICONTROL In review]**: Kampanjen har skickats in för godkännande för publicering. [Lär dig arbeta med godkännanden](../test-approve/gs-approval.md)
-* **[!UICONTROL Stopped]**: Kampanjen har stoppats manuellt. Du kan inte aktivera eller återanvända den längre. [Lär dig stoppa en kampanj](manage-campaigns.md#stop)
-* **[!UICONTROL Completed]**: Kampanjen är slutförd. Den här statusen tilldelas automatiskt 3 dagar efter att en kampanj har aktiverats, eller vid kampanjens slutdatum om den har en återkommande körning.
-* **[!UICONTROL Failed]**: Kampanjkörningen misslyckades. Kontrollera loggarna för att identifiera problemet.
-* **[!UICONTROL Archived]**: Kampanjen har arkiverats. [Lär dig arkivera kampanjer](manage-campaigns.md#archive)
+| Status | Åtgärdskampanjer | API-utlösta kampanjer | Samordnade kampanjer | Vad det betyder | Nästa åtgärd |
+|--------|:----------------:|:-----------------------:|:----------------------:|---------------|--------------|
+| **[!UICONTROL Draft]** | ✅ | ✅ | ✅ | Redigeras, aktiveras inte | Fortsätt redigera eller [aktivera kampanj](review-activate-campaign.md) |
+| **[!UICONTROL Scheduled]** | ✅ | ✅ | ✅ | Konfigurerad för ett specifikt startdatum | Vänta på start, [ändra vid behov](#modify) eller [visa i kalendern](#calendar) |
+| **[!UICONTROL Live]** | ✅ | ✅ | ✅ | Aktiverat och körs | [Övervakningsprestanda](../reports/campaign-global-report-cja.md), [skapa ny version](#modify) vid behov |
+| **[!UICONTROL In review]** | ✅ | ✅ | — | Skickat för godkännande | Vänta på [godkännande](../test-approve/gs-approval.md) eller ändra |
+| **[!UICONTROL Stopped]** | ✅ | ✅ | ✅ | Manuellt stoppad, kan inte återaktiveras | [Duplicera för återanvändning](#duplicate-a-campaign) |
+| **[!UICONTROL Completed]** | ✅ | ✅ | ✅ | Körningen är klar (autotilldelad 3 dagar efter aktivering eller vid slutdatumet för återkommande) | [Visa rapporter](../reports/campaign-global-report-cja.md), [arkiv](#archive-a-campaign) eller [dubblett](#duplicate-a-campaign) |
+| **[!UICONTROL Failed]** | ✅ | ✅ | — | Körningen misslyckades | Kontrollera loggar, åtgärda problem, [duplicera för att försöka igen](#duplicate-a-campaign) |
+| **[!UICONTROL Archived]** | ✅ | ✅ | ✅ | Arkiverad (tas bort automatiskt efter 30 dagar) | [Hämta med filter](#access) vid behov |
+| **[!UICONTROL Closed]** | — | — | ✅ | Återkommande kampanj stängd, inga nya poster tillåts (fortsätter tills alla aktiviteter är slutförda) | Vänta på slutförande |
+| **[!UICONTROL Publishing]** | — | — | ✅ | Publiceras | Vänta tills publiceringen är klar |
 
 >[!NOTE]
 >
->Ikonen Öppna utkast till version bredvid statusen **[!UICONTROL Live]** eller **[!UICONTROL Scheduled]** anger att en ny version av en kampanj som utlösts av en åtgärd eller API har skapats och inte har aktiverats än.
+>För åtgärdskampanjer och API-utlösta kampanjer anger ikonen&quot;Öppna utkast till version&quot; bredvid statusen **[!UICONTROL Live]** eller **[!UICONTROL Scheduled]** att en ny version har skapats och inte har aktiverats än.
 
->[!TAB Samordnade kampanjer]
-
-* **[!UICONTROL Draft]**: Den orchestrerade kampanjen har skapats. Den har inte publicerats än.
-* **[!UICONTROL Publishing]**: Den Orchestrerade kampanjen publiceras.
-* **[!UICONTROL Live]**: Den Orchestrerade kampanjen har publicerats och körs.
-* **[!UICONTROL Scheduled]**: Den Orchestrerade kampanjkörningen har schemalagts.
-* **[!UICONTROL Completed]**: Den Orchestrerade kampanjkörningen har slutförts. Statusen Slutförd tilldelas automatiskt upp till 3 dagar efter det att en kampanj har slutfört meddelanden som skickas utan fel.
-* **[!UICONTROL Closed]**: Den här statusen visas när en återkommande kampanj har stängts. Kampanjen fortsätter att köras tills alla dess aktiviteter har slutförts, men inga fler profiler kan gå in i kampanjen.
-* **[!UICONTROL Archived]**: Den orkestrerade kampanjen har arkiverats. Alla arkiverade kampanjer tas bort vid en rullande tidplan 30 dagar efter det senaste ändringsdatumet. Du kan duplicera en arkiverad kampanj om det behövs för att fortsätta arbeta med den.
-* **[!UICONTROL Stopped]**: Den Orchestrerade kampanjkörningen har stoppats. Om du vill starta kampanjen igen måste du duplicera den.
-
->[!ENDTABS]
+### Felindikatorer
 
 När ett fel inträffar inom en av era kampanjer visas en varningsikon bredvid kampanjens status. Klicka på den för att visa information om varningen. Dessa varningar kan inträffa i olika situationer, t.ex. när kampanjmeddelandet inte har publicerats eller om den valda konfigurationen är felaktig.
 
@@ -142,6 +141,8 @@ När ett fel inträffar inom en av era kampanjer visas en varningsikon bredvid k
 
 Förutom kampanjlistan innehåller [!DNL Journey Optimizer] en kalendervy över dina kampanjer, som ger en tydlig visuell representation av deras scheman.
 
+### Så här fungerar kalendern
+
 Hur kampanjer presenteras:
 
 * Som standard visar kalenderrutnätet alla aktiva och schemalagda kampanjer för den valda veckan. Ytterligare filteralternativ kan visa slutförda, stoppade och avslutade aktiveringar eller aktiveringar av en viss typ eller kanal.
@@ -150,7 +151,7 @@ Hur kampanjer presenteras:
 * Om ingen starttid anges används den närmaste manuella aktiveringstiden för att placera den i kalendern.
 * Kampanjer visas som 1-timmars tidsintervall, men detta återspeglar inte den faktiska tiden för sändning eller slutförande.
 
-Så här navigerar du i din kampanjkalender:
+### Navigera i kalendern
 
 1. Klicka på ikonen ![kalender](assets/do-not-localize/Smock_Calendar_18_N.svg) för att komma åt din kampanjkalender.
 
@@ -210,6 +211,13 @@ Följ de här stegen för att ändra och skapa en ny version av en kampanj för 
    >
    >När du aktiverar utkastet ersätts kampanjens liveversion.
 
+**Relaterade ämnen:**
+* [Kampanjegenskaper](campaign-properties.md)
+* [Kampanjåtgärder](campaign-action.md)
+* [Kampanjinnehåll](campaign-content.md)
+* [Kampanjmålgrupp](campaign-audience.md)
+* [Kampanjschema](campaign-schedule.md)
+
 ### Stoppa en Action-kampanj {#stop}
 
 Om du vill stoppa en återkommande kampanj öppnar du den och klickar sedan på knappen **[!UICONTROL Stop campaign]**.
@@ -220,7 +228,7 @@ Om du vill stoppa en återkommande kampanj öppnar du den och klickar sedan på 
 >
 >Att stoppa en kampanj kommer inte att stoppa en pågående sändning, men det kommer att stoppa en schemalagd sändning eller nästa förekomst om sändning redan pågår.
 
-## Arkivera en kampanj {#archive}
+## Arkivera en kampanj {#archive-a-campaign}
 
 Med tiden växer listan över kampanjer och blir så småningom svårare att hitta färdiga och stoppade kampanjer.
 
@@ -230,8 +238,7 @@ För att förhindra detta kan ni arkivera slutförda och stoppade kampanjer som 
 
 Arkiverade kampanjer kan sedan hämtas med det dedikerade filtret i listan.
 
-
-## Ta bort en kampanj {#delete}
+## Ta bort en kampanj {#delete-a-campaign}
 
 Om du vill ta bort en kampanj använder du ellipsen ![som visar knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) och väljer **[!UICONTROL Delete]**.
 
@@ -241,11 +248,22 @@ Om du vill ta bort en kampanj använder du ellipsen ![som visar knappen Fler åt
 >
 >Det här alternativet är endast tillgängligt för **[!UICONTROL Draft]** kampanjer.
 
-
-## Duplicera en kampanj {#duplicate}
+## Duplicera en kampanj {#duplicate-a-campaign}
 
 Om du vill duplicera en kampanj, till exempel om den har stoppats, använder du ellipsen ![som visar knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) och väljer **[!UICONTROL Duplicate]**.
 
 Ange namnet på kampanjen och bekräfta.
 
 Kampanjen skapas och läggs till i kampanjlistan.
+
+## Ytterligare resurser
+
+* **Komma igång** - [Kom igång med kampanjer](get-started-with-campaigns.md) | [Skapa din första Action-kampanj](create-campaign.md) | [Guide för API-utlösta kampanjer](api-triggered-campaigns.md) | [Guide för samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)
+
+* **Kampanjkonfiguration** - [Kampanjegenskaper](campaign-properties.md) | [Kampanjåtgärder och -kanaler](campaign-action.md) | [Design av kampanjinnehåll](campaign-content.md) | [Kampanjmålgrupp](campaign-audience.md) | [Kampanjplanering](campaign-schedule.md)
+
+* **Avancerade funktioner** - [Arbetsflöden för godkännande](../test-approve/gs-approval.md) | [Konflikthantering och -prioritering](../conflict-prioritization/gs-conflict-prioritization.md) | [Frekvensbegränsning per kanal ](../conflict-prioritization/channel-capping.md) | [Prioritetspoäng](../conflict-prioritization/priority-scores.md) | [Exportera kampanjer till andra sandlådor](../configuration/copy-objects-to-sandbox.md)
+
+* **Övervakning och optimering** - [Kampanjrapporter (CJA)](../reports/campaign-global-report-cja.md) | [Konfigurera aviseringar](../reports/alerts.md)
+
+* **Organisation** - [Arbeta med taggar](../start/search-filter-categorize.md) | [Hantera behörigheter](../administration/ootb-product-profiles.md)
