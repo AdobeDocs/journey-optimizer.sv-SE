@@ -2,16 +2,16 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med resor
-description: Kom igång med resor
+description: Kom igång med resor - Lär dig mer om resetyper, arbetsflöde, funktioner och bästa praxis för att skapa personaliserade kundupplevelser i Adobe Journey Optimizer
 feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
-keywords: resa, upptäckt, komma igång
+keywords: resa, upptäck, komma-start, unitär, läsare, målgruppskvalifikation, affärshändelse, realtid, schemalagd, batch, händelseutlöst, arbetsflöde, orkestration, personalisering, flerkanalsmarknadsföring
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
-source-git-commit: a4b6b048d60847531e0e61de702b48ebe82884d3
+source-git-commit: 8ea2a0fe685678d41004d549443a1757eb30c765
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -37,57 +37,29 @@ Använd [!DNL Journey Optimizer] för att:
 
 ➡️ **Vill du börja bygga?** [Skapa din första resa](journey-gs.md) på 5 minuter.
 
+### Journeys vs Campaigns: När ska man använda varje {#journeys-vs-campaigns-intro}
+
+Adobe Journey Optimizer erbjuder tre metoder för att nå kunder: **Journeys** (1:1 realtidssamordning), **Campaigns** (enkel batchleverans eller API-utlöst leverans) och **Orchestrerade Campaigns** (batcharbetsytearbetsflöden med multientitetsdata).
+
+**Snabbt beslut:**
+
+* Använd **Resor** för beteendestyrda upplevelser i flera steg där varje kund utvecklas i sin egen takt
+* Använd **Action/API-kampanjer** för enkel, schemalagd eller utlöst meddelandeleverans till målgrupper
+* Använd **samordnade kampanjer** för komplexa batcharbetsflöden som kräver segmentering av flera enheter och exakt antal före sändning
+
+<!-- waiting for DOCAC-13912
+➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability-->
+
 ## Välj typ av resa {#journey-types}
 
-**Innan du börjar bygga** är det viktigt att förstå vilken typ av resa som passar ditt användningsexempel. Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utformade för olika ingångs- och affärsscenarier:
+Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utformade för olika ingångs- och affärsscenarier:
 
->[!BEGINTABS]
+* **Enhetliga resor**: Händelseutlösta upplevelser i realtid (orderbekräftelser, välkomstmeddelanden)
+* **Läs målgruppsresor**: Schemalagda gruppmeddelanden till målgruppssegment (nyhetsbrev, kampanjkampanjer)
+* **Målgruppskvalificeringsresor**: Realtidssvar på ändringar av målgruppsmedlemskap (VIP-uppgraderingar, återengagemang)
+* **Affärshändelseresor**: Affärsvillkor som påverkar flera kunder (lagervarningar, flash-försäljning)
 
->[!TAB Unitära resor]
-
-**När:** Händelseutlösta upplevelser i realtid ska användas
-
-**Unitära resor** aktiveras individuellt när en viss åtgärd inträffar (inköp, appinloggning, formuläröverföring). Profilerna anger en i taget i realtid, vilket gör detta idealiskt för omedelbara, beteendestyrda svar.
-
-**Perfekt för:** Beställningsbekräftelser efter köp, välkomstmeddelanden när någon prenumererar, övergivna kundvagnar utlösta av surfning och meddelanden om lösenordsåterställning.
-
-➡️ [Läs mer om händelser](../event/about-events.md) | [Meddelande till prenumeranter - användningsfall](message-to-subscribers-uc.md)
-
->[!TAB Läs målgruppsresor]
-
-**När:** schemalagda kampanjer ska användas till målgruppssegment
-
-**Läs målgruppsresor** börjar med en Adobe Experience Platform-målgrupp och skicka meddelanden gruppvis till alla profiler samtidigt. Den här typen av resa är perfekt för schemalagd, storskalig kommunikation.
-
-**Perfekt för:** Månatliga nyhetsbrev, kampanjkampanjer för målsegment, produktmeddelanden och säsongskampanjer.
-
-➡️ [Lär dig mer om att läsa målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md)
-
->[!TAB Målgruppskvalificeringsresor]
-
-**När ska användas:** Realtidssvar på ändringar av målgruppsmedlemskap
-
-**Målgruppskvalificeringsresor** utlöser när profiler kvalificerar sig för (eller avslutar) en viss målgrupp. Profilerna läggs in individuellt när de uppfyller kriterierna i realtid, vilket ger ett omedelbart engagemang när kundbeteendet förändras.
-
-**Perfekt för:** VIP-uppgraderingsmeddelanden, återengagemang när kunderna blir inaktiva, första besöksmeddelanden och geografisk anpassning när kunderna rör sig.
-
-➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Skapa målgrupper](../audience/creating-a-segment-definition.md)
-
->[!TAB Affärshändelseresor]
-
-**När:** Affärsvillkor som påverkar flera kunder
-
-**Affärshändelseresor** utlöses av händelser på företagsnivå (stockuppdateringar, vädervarningar, prisförändringar) som påverkar flera profiler samtidigt. Dessa svarar mot mer allmänna affärsvillkor än enskilda åtgärder.
-
-**Perfekt för:** Låga lagervarningar till intresserade kunder, meddelanden om flash-försäljning, väderbaserade kampanjer, meddelanden om prisfall och produktmeddelanden.
-
-➡️ [Läs mer om affärshändelser](../event/about-creating-business.md) | [Anmälningshantering](entry-management.md)
-
->[!ENDTABS]
-
->[!NOTE]
->
->Vet du inte vilken typ du ska välja? Börja med **enhetliga resor** för händelsebaserade upplevelser eller **Läs målgruppsresor** för schemalagda kampanjer - de här omfattar de vanligaste användningsfallen.
+➡️ **[Resetyper och urvalsguide](journey-types-selection.md)** - Detaljerad jämförelse, beslutsträd och kompatibilitetsmatris för funktioner
 
 ## Bygg med resedesignern {#journey-designer}
 
@@ -100,7 +72,7 @@ Använd [!DNL Journey Optimizer] för att:
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 **Definiera startpunkter**
 
@@ -110,7 +82,7 @@ Välj hur kunderna ska delta: via en händelse, ett målgruppssegment eller en m
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 **Skicka meddelanden**
 
@@ -120,7 +92,7 @@ Använd de inbyggda kanalåtgärderna för e-post, push, SMS/MMS, i appen, på w
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 **Lägg till logik och villkor**
 
@@ -130,7 +102,7 @@ Förse er resa utifrån profilattribut, målgruppsmedlemskap eller realtidsevene
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 **Utnyttja data**
 
@@ -140,7 +112,7 @@ Använd sammanhangsbaserade data från händelser, Adobe Experience Platform ell
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Anslut externa system**
 
@@ -150,7 +122,7 @@ Skapa anpassade åtgärder för att integrera tredjepartssystem för att skicka 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 **Lägg till koordinationsaktiviteter**
 
@@ -199,7 +171,7 @@ Testa alltid kundresan för att fånga upp problem innan kunderna upplever dem:
 * Verifiera att alla villkor, meddelanden och åtgärder fungerar som förväntat
 * Kontrollera timing, dataflöden och personalisering
 
-[Testa din resa →](testing-the-journey.md) | [Lär dig mer om torr körning → &#x200B;](journey-dry-run.md)
+[Testa din resa →](testing-the-journey.md) | [Lär dig mer om torr körning → ](journey-dry-run.md)
 
 ### &#x200B;4. Publicera din resa {#publish}
 
@@ -241,7 +213,7 @@ Lär dig av praktiska exempel som visar hur man använder resekoncept för att l
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 **Välkommen nya prenumeranter**
 
@@ -251,7 +223,7 @@ När en kund prenumererar på din tjänst kan du utlösa en välkomstresa som up
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Tidsoptimering vid sändning**
 
@@ -261,7 +233,7 @@ Använd AI för att leverera e-postmeddelanden när varje kund är mest benägen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Dra upp leveranser**
 
@@ -271,7 +243,7 @@ Använd AI för att leverera e-postmeddelanden när varje kund är mest benägen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Mål efter veckodag**
 
@@ -281,7 +253,7 @@ Skicka olika innehåll baserat på vilken veckodag kunderna är på er resa för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 **Flerkanalskampanjer**
 
@@ -291,7 +263,7 @@ Samordna smidiga upplevelser över e-post, push, SMS och webbkanaler under en en
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 **Alla användningsfall**
 
@@ -309,7 +281,7 @@ När ni blir mer bekväma med att bygga kundresor kan ni utforska dessa kraftful
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Avancerade uttryck**
 
@@ -319,7 +291,7 @@ Bygg dynamiska villkor och personalisering med uttrycksredigeraren för datahant
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 **Hantering av tidszoner**
 
@@ -329,7 +301,7 @@ Hantera globala målgrupper med automatiska tidszonsjusteringar och optimala sä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Testläge och torr körning**
 
@@ -339,7 +311,7 @@ Validera resor med testprofiler innan du publicerar och förhandsgranska körnin
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 **Kopiera till sandlåda**
 
@@ -349,7 +321,7 @@ Duplicera resor mellan sandlådor för att effektivisera arbetsflödena för tes
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 **Taggar och organisation**
 
@@ -359,7 +331,7 @@ Använd taggar för att kategorisera och filtrera resor för bättre hantering i
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Genomströmningskontroll**
 
@@ -376,9 +348,37 @@ Begränsa meddelandets genomströmning för att hantera sändningens rykte och u
 
 Få en visuell introduktion till resekomponenterna och lär dig grunderna för att bygga resor på arbetsytan:
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
-➡️ **Vill du ha fler videoklipp?** [Utforska självstudiekurser om resan &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
+➡️ **Vill du ha fler videoklipp?** [Utforska självstudiekurser om resan ](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
+
+## Vanliga frågor {#common-questions}
+
+**F: Vad är skillnaden mellan en resa och en kampanj?**
+
+S: Adobe Journey Optimizer erbjuder tre strategier:
+
+* **Resor**: :1 realtidssamordning där varje profil färdas genom steg i sin egen takt. Passar bäst för beteendestyrda flerstegsupplevelser med villkorsstyrd logik (t.ex. onboarding, cart abonment).
+
+* **Kampanjer (Action &amp; API-utlösta)**: Enkel meddelandeleverans till målgrupper, som körs samtidigt till alla profiler antingen enligt schema eller via API-utlösare. Bäst för kampanjkampanjer, nyhetsbrev och transaktionsmeddelanden.
+
+* **Samordnade kampanjer**: Batcharbetsflöden i flera steg med komplex segmentering med hjälp av relationsdata (profiler + produkter/butiker/bokningar). Alla profiler har bearbetats tillsammans med exakt antal före sändning. Bäst för säsongskampanjer, produktlanseringar och kampanjer som kräver data från flera enheter.
+
+**Viktig skillnad**: Resor behåller enskilda kundtillstånd för åtgärder i realtid. Action/API-kampanjer levererar enkla meddelanden i batch. Orchestrerade-kampanjer erbjuder arbetsflödesyta i batch med segmenteringsfunktioner för flera enheter.
+
+<!-- waiting for DOCAC-13912 [See detailed comparison](#journeys-vs-campaigns) | -->[Läs om samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)
+
+<!-- Waiting for DOCAC-13912
+**Q: Which journey type should I use?**
+
+A: Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
+-->
+
+**F: Kan jag redigera en direktresa?**
+
+S: Du kan redigera begränsade element (namn, meddelandeinnehåll), men för strukturella ändringar måste du skapa en ny version. [Läs mer om reseversioner](publish-journey.md#journey-versions)
+
+➡️ **Fler frågor?** [Visa frågor och svar om hela resan](journey-faq.md) med över 40 detaljerade svar
 
 ## Behöver du hjälp? {#help}
 
