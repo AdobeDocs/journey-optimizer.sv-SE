@@ -10,7 +10,7 @@ keywords: resetyper, enhet, läsare, målgruppskvalifikation, affärshändelse, 
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: 8ea2a0fe685678d41004d549443a1757eb30c765
+source-git-commit: f749eae4e0a826428880e913219cf6f5a135b17c
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 1%
@@ -177,5 +177,6 @@ Nu när du förstår olika typer av resor är du redo att:
 * **[Visa vanliga frågor om resan](journey-faq.md)** - Vanliga frågor besvarade
 
 **Behöver du jämföra med kampanjer?**
-&#x200B;- [Jämförelseguide för resor och kampanjer](../start/journeys-vs-campaigns.md) - Välj mellan resor, Action/API-kampanjer och samordnade kampanjer
+
+* [Jämförelseguide för resor och kampanjer](../start/journeys-vs-campaigns.md) - Välj mellan resor, Action/API-kampanjer och samordnade kampanjer
 
