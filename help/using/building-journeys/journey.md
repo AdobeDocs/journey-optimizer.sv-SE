@@ -348,7 +348,7 @@ Begränsa meddelandets genomströmning för att hantera sändningens rykte och u
 
 Få en visuell introduktion till resekomponenterna och lär dig grunderna för att bygga resor på arbetsytan:
 
->[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
 
 ➡️ **Vill du ha fler videoklipp?** [Utforska självstudiekurser om resan &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
 
