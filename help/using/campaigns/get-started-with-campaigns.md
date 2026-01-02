@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: e2cf581c2638a71d76b1a8d198ceb48c53c97188
+source-git-commit: cebb21aba29a15236b6810309efc488b578a1ca6
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -186,9 +186,9 @@ Framgångsrika kampanjer följer en tydlig och upprepningsbar process. Här är 
 Förtydliga era mål innan du börjar:
 
 * **Vad är målet?** (t.ex. enhetskonverteringar, öka engagemanget, meddela kunderna)
-* **Vem är målgruppen?** (specifikt segment från Adobe Experience Platform)
+* **Vem är målgruppen?** (t.ex. bygg eller välj från Adobe Experience Platform)
 * **Vilken kampanjtyp passar?** (Se [kampanjtyper](#campaign-types) ovan)
-* **Vilka kanaler ska du använda?** (e-post, push, SMS, in-app, webb, osv.)
+* **Vilka kanaler ska du använda?** (e-post, push, SMS, in-app, webb osv.) → [Visa kanaler som stöds efter kampanjtyp](../channels/gs-channels.md#channels)
 * **När ska det köras?** (omedelbar, schemalagd eller API-utlöst)
 
 ### &#x200B;2. **Konfigurera kampanjegenskaper** {#configure}
@@ -197,7 +197,7 @@ Lägg grunden till er kampanj:
 
 1. **Namnge och beskriv** din kampanj för enkel identifiering
 2. **Välj kampanjtyp** (åtgärd, API-utlöst eller Orchestrated)
-3. **Välj målgrupp** från Adobe Experience Platform
+3. **Välj målgrupp**
 4. **Ange prioritet** om konflikthantering används
 5. **Konfigurera schema** (för åtgärdskampanjer) eller API-information (för API-utlösta)
 
@@ -296,7 +296,7 @@ Innan du arbetar med kampanjer bör du kontrollera att du har följande på plat
 
 1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}.
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
@@ -309,7 +309,7 @@ Utforska följande kraftfulla funktioner när ni blir mer bekväma med kampanjer
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Schemaläggning och timing**
 
@@ -319,7 +319,7 @@ Schemalägg kampanjer för specifika datum/tidpunkter, ange återkommande levera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Klassificeringskontroll**
 
@@ -329,7 +329,7 @@ Begränsa meddelandegenomströmningen för att förhindra överbelastning i syst
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Målgruppsanpassning**
 
@@ -339,7 +339,7 @@ Rikta in er på specifika Adobe Experience Platform-målgrupper med precision oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Arbetsflöden för godkännande**
 
@@ -349,7 +349,7 @@ Implementera gransknings- och godkännandeprocesser innan kampanjer publiceras, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 **Tysta timmar**
 
@@ -359,7 +359,7 @@ Följ kundernas önskemål genom att undvika meddelandeleverans under angivna ti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Tidsoptimering vid sändning**
 
