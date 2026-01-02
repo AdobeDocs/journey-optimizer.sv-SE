@@ -81,5 +81,5 @@ En IP-värmare kan bara användas i en IP-värmeringsplan. Men samma kampanj kan
 
 >[!NOTE]
 >
->När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens [status](ip-warmup-execution.md#mark-as-completed) till [ efter att planen är ](../campaigns/manage-campaigns.md#statuses)markerad som slutförd **[!UICONTROL Stopped]**.
+>När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens [status](ip-warmup-execution.md#mark-as-completed) till [&#x200B; efter att planen är &#x200B;](../campaigns/manage-campaigns.md#statuses)markerad som slutförd **[!UICONTROL Stopped]**.
 
