@@ -9,10 +9,10 @@ role: Admin
 level: Experienced
 keywords: subdomain, google, txt, record, gmail, deliverability
 exl-id: 311eb2d1-e445-43e6-bc2c-c6288b637f47
-source-git-commit: 8b755351e25ecae9a2058e63919d6512ea0bf153
+source-git-commit: e89bec74f597185065b274d22740324a09e9319e
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 7%
+source-wordcount: '265'
+ht-degree: 6%
 
 ---
 
@@ -40,3 +40,17 @@ Så här lägger du till en Google TXT-post i din underdomän:
    ![](assets/subdomain-google-txt.png)
 
 1. När TXT-posten har lagts till måste den verifieras av Google. Navigera till [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools--> och starta sedan verifieringssteget.
+
+## Uppdatera en Google TXT-post {#update-google-txt-record}
+
+Så här uppdaterar du en befintlig Google TXT-post:
+
+1. Öppna underdomänen från menyn **[!UICONTROL Subdomains]**.
+
+1. Rensa det befintliga värdet i fältet **[!UICONTROL Google txt record]** och klicka på **[!UICONTROL Save]**. Det här steget ersätter det tidigare Google TXT-postvärdet med en tom sträng.
+
+1. Öppna nu samma underdomän igen och ange den nya verifieringskoden.
+
+1. Klicka på **[!UICONTROL Save]** igen.
+
+1. Verifiera den uppdaterade posten genom [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}.
