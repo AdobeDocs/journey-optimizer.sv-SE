@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-source-git-commit: 81e54a3e3428d58818805b5dcb397ede4039436a
+source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -50,8 +50,10 @@ Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i d
 1. [Granska och aktivera kampanjen](review-activate-api-triggered-campaign.md)
 1. [Utlösa kampanjkörningen](trigger-campaigns.md)
 
+Läs mer om det [kompletta arbetsflödet för kampanjskapande med typspecifika guider →](get-started-with-campaigns.md#workflow)
+
 ## Instruktionsfilmer {#video}
 
 Lär dig hur du skapar en kampanj och utlöser den från ett externt system baserat på användarinteraktioner med hjälp av REST-API:t för interaktiv meddelandekörning.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452729?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)

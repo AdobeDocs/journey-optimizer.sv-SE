@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: 81e54a3e3428d58818805b5dcb397ede4039436a
+source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '201'
 ht-degree: 2%
 
 ---
@@ -48,6 +48,8 @@ Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i d
 1. [Definiera målgruppen för Action-kampanjen](campaign-audience.md)
 1. [Schemalägg åtgärdskampanjen](campaign-schedule.md)
 1. [Granska och aktivera åtgärdskampanjen](review-activate-campaign.md)
+
+Läs mer om det [kompletta arbetsflödet för kampanjskapande med typspecifika guider →](get-started-with-campaigns.md#workflow)
 
 ## Instruktionsfilmer {#video}
 

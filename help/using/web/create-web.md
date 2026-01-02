@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 1%
@@ -103,13 +103,13 @@ Mer information om hur du konfigurerar en kampanj finns på [den här sidan](../
 >id="ajo_web_url_to_edit_surface"
 >title="Bekräfta den URL som ska redigeras"
 >abstract="Bekräfta URL-adressen till den specifika webbsidan som ska användas för att redigera innehållet som ska användas i webbkonfigurationen som definieras ovan. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
 >title="Ange den URL som ska redigeras"
 >abstract="Ange URL-adressen till en viss webbsida som ska användas för att redigera innehållet som ska användas på alla sidor som matchar regeln. Webbsidan måste implementeras med Adobe Experience Platform Web SDK."
->additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=sv-SE" text="Läs mer"
+>additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Läs mer"
 
 När du har [lagt till en webbåtgärd](#create-web-experience) på en resa eller en kampanj kan du redigera innehållet på din webbplats med:
 
@@ -230,13 +230,13 @@ När du har definierat inställningarna för webbkampanjen och redigerat innehå
    >
    >Läs mer om hur du aktiverar kampanjer i [det här avsnittet](../campaigns/review-activate-campaign.md).
 
-Din webbkampanj har statusen **[!UICONTROL Live]** och är nu synlig för den valda målgruppen. Alla mottagare av kampanjen kan se de ändringar du har lagt till på webbplatsen.
+Din webbkampanj har statusen **[!UICONTROL Live]** [status](../campaigns/manage-campaigns.md#statuses) och är nu synlig för den valda målgruppen. Alla mottagare av kampanjen kan se de ändringar du har lagt till på webbplatsen.
 
 >[!NOTE]
 >
 >När du har klickat på **[!UICONTROL Activate]** kan det ta upp till 15 minuter innan webbkampanjer blir tillgängliga live på din webbplats.
 >
->Om du har definierat ett schema för webbkampanjen har den statusen **[!UICONTROL Scheduled]** tills startdatumet och starttiden nås.
+>Om du har definierat ett schema för webbkampanjen har den **[!UICONTROL Scheduled]** [status](../campaigns/manage-campaigns.md#statuses) tills startdatumet och starttiden nås.
 
 När upplevelsen är klar kan ni övervaka era webbresor och kampanjer. [Läs mer](monitor-web-experiences.md)
 
@@ -266,4 +266,4 @@ När en webbresa eller kampanj är aktiv kan ni stoppa den för att hindra publi
 
 I videon nedan visas hur du skapar en webbkampanj, konfigurerar dess egenskaper, granskar och publicerar den.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449985/?captions=swe&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418800/?quality=12&learn=on)

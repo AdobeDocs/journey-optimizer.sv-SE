@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: IP, pooler, leveransbarhet
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-source-git-commit: 05e300476ee77c7ac449f3cbb1ecb506e94c3da0
+source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%
@@ -57,7 +57,7 @@ Följ stegen nedan om du vill skapa en IP-värmare.
 
    >[!IMPORTANT]
    >
-   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
+   >Publiker som tillåts i en IP-uppvärmningskampanj måste vara [segmentbaserade](../audience/creating-a-segment-definition.md) och skapas med [standardsammanslagningsprincipen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
    >
    >Målgrupper för CSV-uppladdning stöds inte för IP-uppvärmningskampanjer och kommer att resultera i ett fel när kampanjen aktiveras.
 
@@ -81,5 +81,5 @@ En IP-värmare kan bara användas i en IP-värmeringsplan. Men samma kampanj kan
 
 >[!NOTE]
 >
->När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens status till [&#x200B; efter att planen är &#x200B;](ip-warmup-execution.md#mark-as-completed)markerad som slutförd **[!UICONTROL Stopped]**.
+>När en livekampanj används i en IP-uppvärmningsplan ändras kampanjens [status](ip-warmup-execution.md#mark-as-completed) till [ efter att planen är ](../campaigns/manage-campaigns.md#statuses)markerad som slutförd **[!UICONTROL Stopped]**.
 

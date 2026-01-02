@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: a1daf6f7-c26c-4d70-984b-0b4eeb04a1a8
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 1%
@@ -69,13 +69,13 @@ Din kodbaserade resa har statusen **[!UICONTROL Live]** och är nu synlig för d
    >
    >Läs mer om hur du aktiverar kampanjer i [det här avsnittet](../campaigns/review-activate-campaign.md).
 
-Din kodbaserade kampanj har statusen **[!UICONTROL Live]** och är nu synlig för den valda målgruppen. Alla mottagare av kampanjen kan se de ändringar du har lagt till i innehållet.
+Din kodbaserade kampanj tar **[!UICONTROL Live]** [status](../campaigns/manage-campaigns.md#statuses) och är nu synlig för den valda målgruppen. Alla mottagare av kampanjen kan se de ändringar du har lagt till i innehållet.
 
 >[!NOTE]
 >
 >När du har klickat på **[!UICONTROL Activate]** kan det ta upp till 15 minuter innan dina ändringar är tillgängliga live.
 >
->Om du har definierat ett schema för den kodbaserade kampanjen har den statusen **[!UICONTROL Scheduled]** tills startdatumet och starttiden nås.
+>Om du har definierat ett schema för den kodbaserade kampanjen har den **[!UICONTROL Scheduled]** [status](../campaigns/manage-campaigns.md#statuses) tills startdatumet och starttiden nås.
 
 ## Stoppa en kodbaserad resa eller kampanj {#stop-code-based-experience}
 

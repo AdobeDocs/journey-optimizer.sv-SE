@@ -10,7 +10,7 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: d33a299523b7964be5ec1694de49c777e54bf98c
+source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 0%
@@ -191,7 +191,7 @@ Hur kampanjer presenteras:
 
 ## Ändra och stoppa återkommande åtgärdskampanjer {#modify}
 
-### Ändra en åtgärdskampanj
+### Ändra en åtgärdskampanj {#modify-an-action-campaign}
 
 Följ de här stegen för att ändra och skapa en ny version av en kampanj för återkommande åtgärder:
 
@@ -262,7 +262,7 @@ Kampanjen skapas och läggs till i kampanjlistan.
 
 * **Kampanjkonfiguration** - [Kampanjegenskaper](campaign-properties.md) | [Kampanjåtgärder och -kanaler](campaign-action.md) | [Design av kampanjinnehåll](campaign-content.md) | [Kampanjmålgrupp](campaign-audience.md) | [Kampanjplanering](campaign-schedule.md)
 
-* **Avancerade funktioner** - [Arbetsflöden för godkännande](../test-approve/gs-approval.md) | [Konflikthantering och -prioritering](../conflict-prioritization/gs-conflict-prioritization.md) | [Frekvensbegränsning per kanal &#x200B;](../conflict-prioritization/channel-capping.md) | [Prioritetspoäng](../conflict-prioritization/priority-scores.md) | [Exportera kampanjer till andra sandlådor](../configuration/copy-objects-to-sandbox.md)
+* **Avancerade funktioner** - [Arbetsflöden för godkännande](../test-approve/gs-approval.md) | [Konflikthantering och -prioritering](../conflict-prioritization/gs-conflict-prioritization.md) | [Frekvensbegränsning per kanal ](../conflict-prioritization/channel-capping.md) | [Prioritetspoäng](../conflict-prioritization/priority-scores.md) | [Exportera kampanjer till andra sandlådor](../configuration/copy-objects-to-sandbox.md)
 
 * **Övervakning och optimering** - [Kampanjrapporter (CJA)](../reports/campaign-global-report-cja.md) | [Konfigurera aviseringar](../reports/alerts.md)
 

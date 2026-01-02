@@ -9,9 +9,9 @@ level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
 version: Journey Orchestration
-source-git-commit: b0b297ed33ab273a3201569760e1d2db5b3ccaad
+source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Med Adobe Journey Optimizer kan du skapa följande typer av resor:
 * **Läs målgrupper** resor: De här resorna börjar med en **Läs målgrupp**-aktivitet. När resan är genomförd kommer profiler som tillhör målgruppen in på resan. En instans av den här resan skapas för varje profil. Resorna kan vara återkommande eller &quot;engångsvisa&quot;. [Läs mer](#entry-read-audience)
 
 * **Målgruppskvalificering** resor: dessa resor börjar med en Audience-kvalificeringshändelse. Dessa resor lyssnar på ingångar och utgångar för profiler i målgrupper. När detta händer kommer den associerade profilen in på resan. [Läs mer](#entry-unitary)
+
+[Jämför alla resetyper med användningsexempel →](journey.md#journey-types)
 
 I alla resetyper kan en profil inte finnas flera gånger i samma resa, samtidigt, för alla aktiva [versioner av resan](publish-journey.md#journey-versions). Om du vill kontrollera att en person befinner sig på en resa används profilidentiteten som en nyckel. Systemet tillåter inte att samma nyckel, till exempel nyckeln `CRMID=3224`, finns på olika platser under samma resa.
 

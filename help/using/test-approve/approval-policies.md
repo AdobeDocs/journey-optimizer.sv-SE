@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
-source-git-commit: b70233b3ac1741fa645a426fba3c6bd3175b13a0
+source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home)
+>Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 
 Med godkännandeprinciper kan administratörer upprätta en valideringsprocess för resor och kampanjer. Det här systemet anger specifika villkor som avgör om en resa eller kampanj kräver godkännande. Dessa profiler kan variera i komplexitet. De kan helt enkelt kräva att alla kampanjer granskas av en viss användare eller ett visst team, eller fastställa kriterier baserat på vem som skapade kampanjen.
 
@@ -66,7 +66,7 @@ Godkännandepolicyer erbjuder flexibla alternativ för målinriktning som passar
 * **Kampanj-/resenamn**: Målspecifika objekt efter namn
 * **Taggar**: Använd principer för alla kampanjer eller resor med en viss tagg
 * **Kanaltyper**: Kräv godkännande för specifika åtgärder (e-post, SMS, push osv.)
-* **Kampanjtyper**: Ange andra regler för schemalagda eller API-utlösta kampanjer
+* **Kampanjtyper**: Ange andra regler för [Åtgärd jämfört med API-utlösta kampanjer](../campaigns/get-started-with-campaigns.md#campaign-types)
 * **Beställare**: Definiera principer baserat på vem som skapar kampanjen eller resan
 
 Följ de här stegen för att definiera villkoren som är kopplade till en godkännandeprincip:
