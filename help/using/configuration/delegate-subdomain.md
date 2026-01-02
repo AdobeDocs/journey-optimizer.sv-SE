@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, delegering, domän, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-source-git-commit: 6f7b9bfb65617ee1ace3a2faaebdb24fa068d74f
+source-git-commit: 8f9eca37076c899912616134f75b8e05690831fc
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1890'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 >id="ajo_admin_subdomainname"
 >title="Delegering av underdomän"
 >abstract="Med Journey Optimizer kan du delegera dina underdomäner till Adobe. Du kan delegera en underdomän helt till Adobe, vilket är den rekommenderade metoden. </br>Du kan också skapa en underdomän med CNAME för att peka på Adobe-specifika poster, men på det här sättet måste du behålla och hantera DNS-poster på egen hand."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Konfigurationsmetoder för underdomäner"
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname_header"
@@ -125,6 +125,10 @@ Följ stegen nedan för att konfigurera en ny underdomän i [!DNL Journey Optimi
 
     Capital letters are not allowed in subdomains. TBC by PM
 -->
+
+    >[!NOTE]
+    >
+    >Efter att du skapat en ny underdomän hos din DNS-leverantör bör du tillåta DNS-spridning under 24-48 timmar innan du försöker delegera till Adobe.
 
 1. Konfigurera **[!UICONTROL DMARC record]** i det dedikerade avsnittet. Om underdomänen har en befintlig [DMARC-post](dmarc-record.md), och om den hämtas av [!DNL Journey Optimizer], kan du använda samma värden eller ändra dem efter behov. Om du inte lägger till några värden används standardvärdena. [Lär dig hantera DMARC-post](dmarc-record.md#set-up-dmarc)
 
