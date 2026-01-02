@@ -73,7 +73,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 **Definiera startpunkter**
 
@@ -83,7 +83,7 @@ Välj hur kunderna ska delta: via en händelse, ett målgruppssegment eller en m
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 **Skicka meddelanden**
 
@@ -93,7 +93,7 @@ Använd de inbyggda kanalåtgärderna för e-post, push, SMS/MMS, i appen, på w
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 **Lägg till logik och villkor**
 
@@ -103,7 +103,7 @@ Förse er resa utifrån profilattribut, målgruppsmedlemskap eller realtidsevene
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
 
 **Utnyttja data**
 
@@ -113,7 +113,7 @@ Använd sammanhangsbaserade data från händelser, Adobe Experience Platform ell
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 **Anslut externa system**
 
@@ -123,7 +123,7 @@ Skapa anpassade åtgärder för att integrera tredjepartssystem för att skicka 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 **Lägg till koordinationsaktiviteter**
 
@@ -214,7 +214,7 @@ Lär dig av praktiska exempel som visar hur man använder resekoncept för att l
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 **Välkommen nya prenumeranter**
 
@@ -224,7 +224,7 @@ När en kund prenumererar på din tjänst kan du utlösa en välkomstresa som up
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
 
 **Tidsoptimering vid sändning**
 
@@ -234,7 +234,7 @@ Använd AI för att leverera e-postmeddelanden när varje kund är mest benägen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 **Dra upp leveranser**
 
@@ -244,7 +244,7 @@ Använd AI för att leverera e-postmeddelanden när varje kund är mest benägen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 **Mål efter veckodag**
 
@@ -254,7 +254,7 @@ Skicka olika innehåll baserat på vilken veckodag kunderna är på er resa för
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 **Flerkanalskampanjer**
 
@@ -264,7 +264,7 @@ Samordna smidiga upplevelser över e-post, push, SMS och webbkanaler under en en
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 **Alla användningsfall**
 
@@ -282,7 +282,7 @@ När ni blir mer bekväma med att bygga kundresor kan ni utforska dessa kraftful
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 **Avancerade uttryck**
 
@@ -292,7 +292,7 @@ Bygg dynamiska villkor och personalisering med uttrycksredigeraren för datahant
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
 
 **Hantering av tidszoner**
 
@@ -302,7 +302,7 @@ Hantera globala målgrupper med automatiska tidszonsjusteringar och optimala sä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 **Testläge och torr körning**
 
@@ -312,7 +312,7 @@ Validera resor med testprofiler innan du publicerar och förhandsgranska körnin
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
 
 **Kopiera till sandlåda**
 
@@ -322,7 +322,7 @@ Duplicera resor mellan sandlådor för att effektivisera arbetsflödena för tes
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 **Taggar och organisation**
 
@@ -332,7 +332,7 @@ Använd taggar för att kategorisera och filtrera resor för bättre hantering i
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 **Genomströmningskontroll**
 
@@ -351,7 +351,7 @@ Få en visuell introduktion till resekomponenterna och lär dig grunderna för a
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
-➡️ **Vill du ha fler videoklipp?** [Utforska självstudiekurser om resan &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
+➡️ **Vill du ha fler videoklipp?** [Utforska självstudiekurser om resan &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
 
 ## Vanliga frågor {#common-questions}
 
