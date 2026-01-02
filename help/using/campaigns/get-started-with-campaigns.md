@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 2090f99e6aa1b255e36d01687cef49295b88f1ce
+source-git-commit: edf8ad3cf95cc2a8dcaf3e1abd0203785eda8fb5
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -183,10 +183,7 @@ Lägg grunden till er kampanj:
 4. **Ange prioritet** om konflikthantering används
 5. **Konfigurera schema** (för åtgärdskampanjer) eller API-information (för API-utlösta)
 
-**Typspecifika stödlinjer:**
-* [Egenskaper för åtgärdskampanj →](campaign-properties.md)
-* [Egenskaper för API-utlösta kampanjer →](api-triggered-campaign-properties.md)
-* [Samordnade kampanjinställningar →](../orchestrated/create-orchestrated-campaign.md)
+**Typspecifika stödlinjer:** [Egenskaper för åtgärdskampanjer](campaign-properties.md) | [Egenskaper för kampanjer som utlöses av API](api-triggered-campaign-properties.md) | [Samlad kampanjkonfiguration](../orchestrated/create-orchestrated-campaign.md)
 
 ### &#x200B;3. Designa innehåll {#design}
 
@@ -198,10 +195,7 @@ Skapa övertygande budskap för er målgrupp:
 * Skapa **upplevelser i appen** och **webb**
 * Lägg till **personalisering** med profilattribut och sammanhangsbaserade data
 
-**Typspecifika stödlinjer:**
-* [Åtgärdskampanjens innehåll →](campaign-content.md)
-* [API-utlöst kampanjinnehåll →](api-triggered-campaign-content.md)
-* [Samordnat kampanjinnehåll →](../orchestrated/create-orchestrated-campaign.md)
+**Typspecifika guider:** [Åtgärdskampanjinnehåll](campaign-content.md) | [API-utlöst kampanjinnehåll](api-triggered-campaign-content.md) | [Samordnat kampanjinnehåll](../orchestrated/create-orchestrated-campaign.md)
 
 ### &#x200B;4. Granska och testa {#review}
 
@@ -213,10 +207,7 @@ Granska alltid kampanjen före aktiveringen:
 * **Begär godkännande** om arbetsflödet för godkännande används
 * **Testa leveransen** med startvärdeslistor
 
-**Typspecifika stödlinjer:**
-* [Granska åtgärdskampanjer →](review-activate-campaign.md)
-* [Granska kampanjer som triggas av API →](review-activate-api-triggered-campaign.md)
-* [Granska samordnade kampanjer →](../orchestrated/create-orchestrated-campaign.md)
+**Typspecifika guider:** [Granska åtgärdskampanjer](review-activate-campaign.md) | [Granska kampanjer som triggas av API:t](review-activate-api-triggered-campaign.md) | [Granska samordnade kampanjer](../orchestrated/create-orchestrated-campaign.md)
 
 ### &#x200B;5. Aktivera kampanjen {#activate}
 
@@ -227,10 +218,7 @@ Aktivera kampanjen när granskningen är klar:
 * **Godkännandeprocess** - Om det behövs väntar du på godkännande från berörda parter
 * Obs! Aktiva kampanjer kan inte redigeras (du måste duplicera dem för att kunna göra ändringar)
 
-**Typspecifika stödlinjer:**
-* [Aktivera åtgärdskampanjer →](review-activate-campaign.md)
-* [Aktivera API-utlösta kampanjer →](review-activate-api-triggered-campaign.md)
-* [Aktivera samordnade kampanjer →](../orchestrated/create-orchestrated-campaign.md)
+**Typspecifika guider:** [Aktivera åtgärdskampanjer](review-activate-campaign.md) | [Aktivera API-utlösta kampanjer](review-activate-api-triggered-campaign.md) | [Aktivera samordnade kampanjer](../orchestrated/create-orchestrated-campaign.md)
 
 ### &#x200B;6. Övervaka och analysera {#monitor}
 
@@ -242,10 +230,7 @@ Spåra kampanjens resultat:
 * Analysera konvertering och avkastning
 * Använd insikter för optimering
 
-**Typspecifika stödlinjer:**
-* [Kampanjrapporter →](../reports/campaign-global-report-cja.md)
-* [API-utlöst kampanjövervakning →](api-triggered-campaigns.md#monitor)
-* [Samlad kampanjanalys →](../orchestrated/create-orchestrated-campaign.md)
+**Typspecifika guider:** [Åtgärdskampanjrapporter](../reports/campaign-global-report-cja.md) | [API-utlöst kampanjövervakning](api-triggered-campaigns.md#monitor) | [Samlad kampanjanalys](../orchestrated/create-orchestrated-campaign.md)
 
 ➡️ **Vill du börja?** Välj kampanjtyp:
 * [Skapa en åtgärdskampanj →](create-campaign.md)
@@ -278,7 +263,7 @@ Innan du arbetar med kampanjer bör du kontrollera att du har följande på plat
 
 1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}.
+   Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
 
 Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
@@ -291,7 +276,7 @@ Utforska följande kraftfulla funktioner när ni blir mer bekväma med kampanjer
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Schemaläggning och timing**
 
@@ -301,7 +286,7 @@ Schemalägg kampanjer för specifika datum/tidpunkter, ange återkommande levera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Klassificeringskontroll**
 
@@ -311,7 +296,7 @@ Begränsa meddelandegenomströmningen för att förhindra överbelastning i syst
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Målgruppsanpassning**
 
@@ -321,7 +306,7 @@ Rikta in er på specifika Adobe Experience Platform-målgrupper med precision oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Arbetsflöden för godkännande**
 
@@ -331,7 +316,7 @@ Implementera gransknings- och godkännandeprocesser innan kampanjer publiceras, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 **Tysta timmar**
 
@@ -341,7 +326,7 @@ Följ kundernas önskemål genom att undvika meddelandeleverans under angivna ti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Tidsoptimering vid sändning**
 
