@@ -171,7 +171,7 @@ Testa alltid kundresan för att fånga upp problem innan kunderna upplever dem:
 * Verifiera att alla villkor, meddelanden och åtgärder fungerar som förväntat
 * Kontrollera timing, dataflöden och personalisering
 
-[Testa din resa →](testing-the-journey.md) | [Lär dig mer om torr körning → ](journey-dry-run.md)
+[Testa din resa →](testing-the-journey.md) | [Lär dig mer om torr körning → &#x200B;](journey-dry-run.md)
 
 ### &#x200B;4. Publicera din resa {#publish}
 
@@ -350,7 +350,7 @@ Få en visuell introduktion till resekomponenterna och lär dig grunderna för a
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
-➡️ **Vill du ha fler videoklipp?** [Utforska självstudiekurser om resan ](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
+➡️ **Vill du ha fler videoklipp?** [Utforska självstudiekurser om resan &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
 
 ## Vanliga frågor {#common-questions}
 
@@ -366,7 +366,7 @@ S: Adobe Journey Optimizer erbjuder tre strategier:
 
 **Viktig skillnad**: Resor behåller enskilda kundtillstånd för åtgärder i realtid. Action/API-kampanjer levererar enkla meddelanden i batch. Orchestrerade-kampanjer erbjuder arbetsflödesyta i batch med segmenteringsfunktioner för flera enheter.
 
-<!-- waiting for DOCAC-13912 [See detailed comparison](#journeys-vs-campaigns) | -->[Läs om samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)
+&#x200B;<!-- waiting for DOCAC-13912 [See detailed comparison](#journeys-vs-campaigns) | -->[Läs om samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)
 
 <!-- Waiting for DOCAC-13912
 **Q: Which journey type should I use?**

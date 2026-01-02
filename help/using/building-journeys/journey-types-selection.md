@@ -177,5 +177,5 @@ Nu när du förstår olika typer av resor är du redo att:
 * **[Visa vanliga frågor om resan](journey-faq.md)** - Vanliga frågor besvarade
 
 **Behöver du jämföra med kampanjer?**
-- [Jämförelseguide för resor och kampanjer](../start/journeys-vs-campaigns.md) - Välj mellan resor, Action/API-kampanjer och samordnade kampanjer
+&#x200B;- [Jämförelseguide för resor och kampanjer](../start/journeys-vs-campaigns.md) - Välj mellan resor, Action/API-kampanjer och samordnade kampanjer
 
