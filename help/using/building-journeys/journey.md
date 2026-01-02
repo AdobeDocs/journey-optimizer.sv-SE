@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: resa, upptäckt, komma igång
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
-source-git-commit: 4b78a7b2b4c437882c5e760efac1120e004bf640
+source-git-commit: 82db04eb2da8b69404d99185471495ea41739c6d
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -19,292 +19,82 @@ ht-degree: 0%
 
 # Kom igång med resor{#jo-general-principle}
 
-Med resor i Adobe Journey Optimizer kan ni skapa personaliserade kundresor i flera steg som i realtid anpassar sig efter målgruppens beteende och behov. Med en intuitiv dra-och-släpp-arbetsyta kan ni samordna meddelanden och åtgärder i flera kanaler och utnyttja sammanhangsberoende data och målgruppsanpassning för maximal effekt.
+Adobe Journey Optimizer ger er möjlighet att skapa personaliserade kundresor i flera steg som i realtid anpassar sig efter målgruppens beteende och behov. Med en intuitiv dra-och-släpp-arbetsyta kan ni samordna meddelanden och åtgärder i flera kanaler och utnyttja sammanhangsberoende data och målgruppsanpassning för maximal effekt.
 
-Oavsett om ni utforskar triggers i realtid, hanterar reseegenskaper eller använder avancerade verktyg som anpassade åtgärder och uttryck, ger den här guiden en tydlig färdplan för att utforma och förfina resor som levererar meningsfulla och vältajmade kundupplevelser.
+Den här guiden ger en tydlig färdplan för att hjälpa er att förstå viktiga delar av kundresan, välja rätt resetyp för ert användningsfall och utforma tryggt kundresor som levererar meningsfulla, aktuella kundupplevelser.
 
 ## Vad är resor?
 
-Använd [!DNL Journey Optimizer] för att skapa användningsfall för realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor. Utforma avancerade scenarier i flera steg som svarar på kundbeteenden och affärshändelser i realtid.
+**Resor** är automatiserade, flerstegskunderna kundupplevelser som koordinerar personaliserade interaktioner över olika kanaler som svar på kundbeteende, affärshändelser eller schemalagda kampanjer.
 
-Journey Optimizer resedesigner har allt som marknadsförare och reseansvariga behöver för att samordna flerstegsresor i :1 olika kanaler. Detta inkluderar en intuitiv dra-och-släpp-arbetsyta för att samordna varje steg av resan, definiera målgruppen och inkludera de meddelanden, erbjudanden och innehåll i olika kanaler som målgruppsmedlemmarna kan se baserat på beteende, kontextuella data och affärshändelser.
+Använd [!DNL Journey Optimizer] för att:
+
+* Bygg **realtidskoordinering** med kontextuella data lagrade i händelser eller datakällor
+* Utforma **avancerade flerstegsscenarier** som dynamiskt svarar på kundbeteende och affärshändelser
+* Leverera **1:1 personaliserade upplevelser** i stor skala via e-post, push, SMS, appar, webben med mera
 
 ![Resedesignerns gränssnitt med palett, arbetsyta och egenskapspanelen](assets/journey38.png)
 
-**Vill du börja bygga?** Lär dig hur du skapar och utformar din första resa på [den här sidan](journey-gs.md).
+➡️ **Vill du börja bygga?** [Skapa din första resa](journey-gs.md) på 5 minuter.
 
-## Viktiga funktioner {#capabilities}
+## Välj typ av resa {#journey-types}
 
-:::: landing-cards-container
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
-
-**Realtid och batchleverans**
-
-Skicka **enhetsleverans** i realtid när en händelse tas emot, eller **i batch** med Adobe Experience Platform-målgrupper.
-
-[Läs mer om reseanmälan](entry-management.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
-
-**Sammanhangsberoende data**
-
-Utnyttja **sammanhangsbaserade data** från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part.
-
-[Arbeta med datakällor](../datasource/about-data-sources.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
-
-**Inbyggda åtgärder**
-
-Använd **inbyggda kanalåtgärder** för att skicka meddelanden som är utformade i [!DNL Journey Optimizer] via e-post, push, SMS/MMS med mera.
-
-[Skicka meddelanden under resor](journeys-message.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
-
-**Anpassade åtgärder**
-
-Skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att skicka meddelanden eller ansluta till externa API:er.
-
-[Konfigurera anpassade åtgärder](../action/about-custom-action-configuration.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
-
-**Designer för visuell resa**
-
-Med **resedesignern** kan du skapa dina flerstegsfall: enkelt dra och släppa en anmälningshändelse eller en läsningsaktivitet, lägga till villkor och skicka personaliserade meddelanden.
-
-[Utforska resedesignern](using-the-journey-designer.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
-
-**Testa och optimera**
-
-Testa dina resor innan du publicerar, övervaka deras prestanda och optimera leveransen med avancerade funktioner som optimering vid sändning.
-
-[Testa och publicera resor](testing-the-journey.md)
-:::
-
-::::
-
-➡️ [Upptäck Journey Optimizer i video](#video)
-
-## Översikt över resor
-
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
-
-Komma igång med att skapa resan
-
-Stegvisa riktlinjer för att utforma, testa, publicera och spåra kundresor för att skapa personaliserade flerkanalskampanjer.
-
-[Skapa den första resan](journey-gs.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
-
-Hantera era resor
-
-Hantera kundresor effektivt med verktyg för filtrering, profilhantering, tidszoner och optimeringstekniker.
-
-[Lär dig resehantering](/help/rp_landing_pages/manage-journey-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
-
-Reseverksamhet
-
-Upptäck hur ni konfigurerar och använder aktiviteter som triggers, beslutssteg, målgruppshantering och personaliserade meddelanden på resorna.
-
-[Utforska aktiviteter](/help/rp_landing_pages/about-journey-building-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
-
-Skapar uttryck
-
-Masteruttryck för dynamiska arbetsflöden, datamanipulering och avancerad resesamordning med kraftfulla verktyg och syntax.
-
-[Läs mer om uttryck](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
-
-Användningsexempel på resa
-
-Utforska verkliga program i Adobe Journey Optimizer, inklusive meddelanden i flera kanaler och integration med externa system.
-
-[Upptäck användningsexempel](/help/rp_landing_pages/journey-use-cases-landing-page.md)
-:::
-
-::::
-
-## Användningsexempel {#use-cases}
-
-Inom resedesignern kan marknadsförarna skicka :1-meddelanden i realtid via valfri kanal när en händelse inträffar. När en kund prenumererar på en tjänst kan den till exempel [utlösa ett välkomstmeddelande](message-to-subscribers-uc.md) som uppmanar dem att logga in i appen för första gången och ange sina inställningar. Åtgärder som att slutföra köpet, öppna e-postmeddelandet och logga in i appen kan användas för att locka nya kunder genom deras resor.
-
-[Resedesignern](using-the-journey-designer.md) innehåller [inbyggda kanalåtgärder](journeys-message.md) som stöder utgående meddelanden, t.ex. e-post, push-meddelanden och SMS/MMS, samt inkommande kanaler, inklusive mobilappar, webbplatser och kodbaserade upplevelser som skapats direkt i Journey Optimizer. Du kan också använda tredjepartssystem för att skicka meddelanden - Journey Optimizer innehåller [anpassade åtgärder](using-custom-actions.md) som gör att dessa system kan integreras på resorna direkt från resedesignern.
-
-
-:::: landing-cards-container
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
-
-**Lär dig mer med användningsexempel**
-
-Utforska omfattande fallstudier av hela kundresan som visar på verkliga implementeringar och bästa praxis.
-
-[Upptäck alla användningsfall](jo-use-cases.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
-
-**Välkommen nya prenumeranter**
-
-Skicka en personlig välkomstresa när kunderna prenumererar på tjänsten och vägleder dem genom introduktionssteg.
-
-[Läs mer](message-to-subscribers-uc.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
-
-**Optimera e-posttider**
-
-Använd AI-baserad optimering för sändningstid för att leverera e-postmeddelanden när varje kund är mest benägen att engagera sig.
-
-[Läs mer](send-time-optimization.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
-
-**Dra upp leveranser**
-
-Öka volymen för meddelanden gradvis för att värma upp ert anseende och undvika leveransproblem.
-
-[Läs mer](ramp-up-deliveries-uc.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
-
-**Mål efter veckodag**
-
-Skicka olika innehåll baserat på vilken veckodag kunderna kommer in på din resa.
-
-[Läs mer](weekday-email-uc.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/question.svg?lang=sv-SE)
-
-**Vanliga frågor om resan**
-
-Hitta svar på vanliga frågor om reseuppbyggnad, felsökning och metodtips.
-
-[Visa vanliga frågor](journey-faq.md)
-:::
-
-::::
-
-## Resetyper
-
-Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utformade för olika användningsfall och inresemekanismer. Välj rätt typ baserat på hur ni vill att profilerna ska gå igenom era kundupplevelser och utvecklas.
+**Innan du börjar bygga** är det viktigt att förstå vilken typ av resa som passar ditt användningsexempel. Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utformade för olika ingångs- och affärsscenarier:
 
 >[!BEGINTABS]
 
 >[!TAB Unitära resor]
 
-**Unitära resor** utlöses individuellt av en händelse när en viss åtgärd inträffar, till exempel ett köp, en appinloggning eller en formuläröverföring. Profiler tar sig in på resan en i taget när evenemanget tas emot, vilket gör det idealiskt för personaliserade, beteendestyrda upplevelser.
+![ikon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg) **När ska användas:** Händelseutlösta upplevelser i realtid
 
-**Viktiga egenskaper:**
+**Unitära resor** aktiveras individuellt när en viss åtgärd inträffar (inköp, appinloggning, formuläröverföring). Profilerna anger en i taget i realtid, vilket gör detta idealiskt för omedelbara, beteendestyrda svar.
 
-* Händelsestyrd post i realtid
-* Individuell profilbearbetning
-* Perfekt för transaktionsmeddelanden och omedelbara svar
-* Stöder kontextuella data från utlösarhändelsen
+**Perfekt för:**
 
-**Användningsexempel:**
-
-* Orderbekräftelse efter köp
-* Välkomstmeddelande när någon prenumererar
-* Övergivna kundvagnar orsakade av surfbeteende
+* Beställningsbekräftelser efter köp
+* Välkomstmeddelanden när någon prenumererar
+* Avbruten kundvagn på grund av surfning
 * Meddelanden om återställning av lösenord
 
-➡️ [Lär dig mer om händelsekonfiguration](../event/about-events.md) | [Allmänna händelser](general-events.md) | [Meddelande till prenumeranter - användningsfall](message-to-subscribers-uc.md)
+➡️ [Läs mer om händelser](../event/about-events.md) | [Meddelande till prenumeranter - användningsfall](message-to-subscribers-uc.md)
 
 >[!TAB Läs målgruppsresor]
 
-**Läs målgruppsresor** börjar med en målgrupp från Adobe Experience Platform och skickar meddelanden gruppvis till alla profiler i den målgruppen. Den här typen av resa bearbetar hela målgruppen samtidigt, vilket gör den idealisk för schemalagda kampanjer och återkommande kommunikation.
+![ikon](https://cdn.experienceleague.adobe.com/icons/database.svg) **När ska användas:** Schemalagda kampanjer till målgruppssegment
 
-**Viktiga egenskaper:**
+**Läs målgruppsresor** börjar med en Adobe Experience Platform-målgrupp och skicka meddelanden gruppvis till alla profiler samtidigt. Den här typen av resa är perfekt för schemalagd, storskalig kommunikation.
 
-* Gruppbearbetning av målgruppssegment
-* Schemalagd eller engångskörning
-* Alla profiler anges samtidigt
-* Stöder storskalig kommunikation
-
-**Användningsexempel:**
+**Perfekt för:**
 
 * Månatliga nyhetsbrev
 * Kampanjkampanjer för målgruppssegment
-* Produktmeddelanden till alla kunder
+* Produktmeddelanden
 * Säsongskampanjer
 
-➡️ [Lär dig mer om aktiviteten Läs målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md) | [Användning av flerkanalsmeddelanden &#x200B;](journeys-uc.md)
+➡️ [Lär dig mer om att läsa målgrupp](read-audience.md) | [Kom igång med målgrupper](../audience/about-audiences.md)
 
 >[!TAB Målgruppskvalificeringsresor]
 
-**Målgruppskvalificeringsresor** aktiveras när profiler kvalificerar sig för (eller avslutar) ett visst målgruppssegment. Profiler tar sig in på resan individuellt när de uppfyller målgruppskriterierna i realtid, vilket möjliggör ett omedelbart engagemang när kundbeteendet förändras.
+![ikon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg) **När ska du använda:** Realtidssvar på ändringar i målgruppsmedlemskap
 
-**Viktiga egenskaper:**
+**Målgruppskvalificeringsresor** utlöser när profiler kvalificerar sig för (eller avslutar) en viss målgrupp. Profilerna läggs in individuellt när de uppfyller kriterierna i realtid, vilket ger ett omedelbart engagemang när kundbeteendet förändras.
 
-* Kvalificeringsbaserad post i realtid
-* Kontinuerlig övervakning av medlemskap för målgrupper
-* Individuell profilbearbetning när de kvalificerar sig
-* Bäst med direktuppspelande målgrupper
-
-**Användningsexempel:**
+**Perfekt för:**
 
 * Meddelanden om uppgraderingar av VIP-nivå
 * Engagera igen när kunderna blir inaktiva
 * Första prisvärda meddelanden
 * Geografisk målgruppsanpassning när kunderna flyttar
 
-➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Villkorsaktivitet](condition-activity.md) | [Skapa segmentdefinitioner &#x200B;](../audience/creating-a-segment-definition.md)
+➡️ [Lär dig mer om Audience Qualification](audience-qualification-events.md) | [Skapa målgrupper](../audience/creating-a-segment-definition.md)
 
 >[!TAB Affärshändelseresor]
 
-**Affärshändelseresor** utlöses av affärshändelser (till exempel aktieuppdateringar, vädervarningar eller prisändringar) som påverkar flera profiler samtidigt. I stället för att reagera på individuella kundaktiviteter svarar dessa resor på bredare affärsförhållanden eller externa faktorer.
+![ikon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg) **När ska du använda:** Affärsvillkor som påverkar flera kunder
 
-**Viktiga egenskaper:**
+**Affärshändelseresor** utlöses av händelser på företagsnivå (stockuppdateringar, vädervarningar, prisförändringar) som påverkar flera profiler samtidigt. Dessa svarar mot mer allmänna affärsvillkor än enskilda åtgärder.
 
-* Utlöses av händelser på företagsnivå, inte av individuella åtgärder
-* Påverkar flera profiler samtidigt
-* Målgrupper för en viss målgrupp när händelsen inträffar
-* Kombinerar händelsestyrd timing med målgruppsanpassning
-
-**Användningsexempel:**
+**Perfekt för:**
 
 * Låga lagervarningar till intresserade kunder
 * Flash, utskick
@@ -312,41 +102,331 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 * Meddelande om prisfall
 * Aviseringar om produkter som inte finns i lager
 
-➡️ [Läs mer om affärshändelser](general-events.md) | [Konfigurera affärshändelser](../event/about-creating-business.md) | [Anmälningshantering](entry-management.md)
+➡️ [Läs mer om affärshändelser](../event/about-creating-business.md) | [Anmälningshantering](entry-management.md)
 
 >[!ENDTABS]
 
-## Journey Designer{#journey-designer}
-
-[Resedesignern](using-the-journey-designer.md) innehåller allt som marknadsförare och resande personer behöver för att orkestrera flerstegsresor i :1 olika kanaler. Detta inkluderar en intuitiv dra-och-släpp-arbetsyta för att samordna varje steg av resan, definiera målgruppen och inkludera de meddelanden, erbjudanden och innehåll i olika kanaler som målgruppsmedlemmarna kan se baserat på beteende, kontextuella data och affärshändelser.
-
-Resedesignern har allt du behöver för att skapa flerstegsupplevelser:
-
-* **[Inbyggda kanalåtgärder](journeys-message.md)** - Skicka meddelanden via e-post, push-meddelanden, SMS/MMS, appar, webb, kodbaserade upplevelser med mera, allt utformat direkt i Journey Optimizer
-* **[Anpassade åtgärder](using-custom-actions.md)** - Integrera tredjepartssystem för att skicka meddelanden eller utlösa arbetsflöden på externa plattformar
-* **[Organisationsaktiviteter](about-journey-activities.md)** - Lägg till logik, villkor, väntetider och målgruppsanpassning för att skapa sofistikerade kundupplevelser
-* **[Villkor](condition-activity.md)** - Fördela din resa baserat på profilattribut, målgruppsmedlemskap eller realtidshändelser
-* **[Uttryck](expression/expressionadvanced.md)** - Skapa avancerad logik och personalisering med uttrycksredigeraren
-
-Lär dig hur du använder resedesignern [i dessa situationer från början till slut &#x200B;](jo-use-cases.md).
-
 >[!NOTE]
 >
->Resegarantier och begränsningar finns på [den här sidan](../start/guardrails.md)
+>Vet du inte vilken typ du ska välja? Börja med **enhetliga resor** för händelsebaserade upplevelser eller **Läs målgruppsresor** för schemalagda kampanjer - de här omfattar de vanligaste användningsfallen.
 
-## Instruktionsvideo {#video}
+## Bygg med resedesignern {#journey-designer}
 
-Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
+**[Resedesignern](using-the-journey-designer.md)** är den visuella arbetsytan för att skapa kundupplevelser. Med ett intuitivt dra-och-släpp-gränssnitt kan ni samordna alla steg i resan utan att behöva skriva kod.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
+![Resedesignerns gränssnitt med palett, arbetsyta och egenskapspanelen](assets/journey38.png)
 
+### Vad du kan göra i designern:
 
-## Ytterligare resurser {#additional-resources}
+:::: landing-cards-container
 
-* **[Felsökning av kundresor](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Diagnostisera och åtgärda problem med körning av resan med verktyg, felkoder och bästa praxis för felsökning och optimering
-* **[Vanliga frågor om resan](journey-faq.md)** - Vanliga frågor om resor
-* **[Resensaviseringar](../reports/alerts.md)** - Konfigurera aviseringar för reseövervakning och prenumerera på aviseringar för realtidsuppdateringar
-* **[Felkodsreferens](error-codes-reference.md)** - Resefelkoder och felsökningssteg
-* **[Felsökning](troubleshooting.md)** - Vanliga reseproblem och lösningar
-* **[Självstudiekurser (videoklipp)](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resan med praktiska videokurser som omfattar funktioner, funktioner och bästa praxis
-* **[Reservoarer och begränsningar för resan](../start/guardrails.md)** - Kontrollera skyddslingar och begränsningar när du använder [!DNL Adobe Journey Optimizer]
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+
+**Definiera startpunkter**
+
+Välj hur kunderna ska delta: via en händelse, ett målgruppssegment eller en målgruppskompetens.
+
+[Läs mer om hantering av inträde](entry-management.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+
+**Skicka meddelanden**
+
+Använd de inbyggda kanalåtgärderna för e-post, push, SMS/MMS, i appen, på webben med mera - allt som tagits fram i Journey Optimizer.
+
+[Skicka meddelanden under resor](journeys-message.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+
+**Lägg till logik och villkor**
+
+Förse er resa utifrån profilattribut, målgruppsmedlemskap eller realtidsevenemang.
+
+[Användningsvillkor](condition-activity.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+
+**Utnyttja data**
+
+Använd sammanhangsbaserade data från händelser, Adobe Experience Platform eller API-tjänster från tredje part.
+
+[Arbeta med datakällor](../datasource/about-data-sources.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+**Anslut externa system**
+
+Skapa anpassade åtgärder för att integrera tredjepartssystem för att skicka meddelanden eller aktivera arbetsflöden.
+
+[Konfigurera anpassade åtgärder](../action/about-custom-action-configuration.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+**Lägg till koordinationsaktiviteter**
+
+Använd väntetider, hopp, profiluppdateringar och målgruppshantering för att skapa avancerade flöden.
+
+[Utforska alla aktiviteter](about-journey-activities.md)
+:::
+
+::::
+
+➡️ **Praktisk inlärning:** [Titta på resedesignervideon](#video) eller [utforska användningsexempel från början till slut](jo-use-cases.md)
+
+## Arbetsflöde för att skapa resan {#workflow}
+
+Att skapa framgångsrika resor följer en tydlig och upprepningsbar process. Här är ditt stegvisa arbetsflöde:
+
+```mermaid
+graph LR
+    A[1. Plan] --> B[2. Design]
+    B --> C[3. Test]
+    C --> D[4. Publish]
+    D --> E[5. Monitor]
+    E --> F[6. Optimize]
+```
+
+### &#x200B;1. **Planera din resa** {#plan}
+
+Förtydliga målen innan du öppnar designern:
+
+* **Vad är målet?** (t.ex. introducera nya kunder, engagera inaktiva användare igen)
+* **Vem är målgruppen?** (specifikt segment, händelsestyrda individer)
+* **Vilken resetyp passar?** (Se [resetyper](#journey-types) ovan)
+* **Vilka kanaler ska du använda?** (e-post, push, SMS osv.)
+
+### &#x200B;2. **Designa på arbetsytan** {#design}
+
+Använd resedesignern för att bygga upp ditt flöde:
+
+1. **Ange anmälningsvillkor** - Definiera hur profiler ska anges (händelse, målgrupp, kvalificering)
+2. **Lägg till orkestreringslogik** - Inkludera väntetider, villkor och beslutspunkter
+3. **Konfigurera meddelanden** - Designa dina meddelanden eller utnyttja befintliga mallar
+4. **Konfigurera åtgärder** - Konfigurera inbyggda eller anpassade åtgärder som ska köras
+5. **Definiera avslutningskriterier** - Ange när och hur profiler slutför resan
+
+[Lär dig använda resedesignern →](using-the-journey-designer.md)
+
+### &#x200B;3. **Testa innan du publicerar** {#test}
+
+Testa alltid kundresan för att fånga upp problem innan kunderna upplever dem:
+
+* Använd **testläge** för att simulera resan med testprofiler
+* Använd **torr körning** om du vill förhandsgranska körningen utan att påverka verkliga data eller skicka meddelanden
+* Verifiera att alla villkor, meddelanden och åtgärder fungerar som förväntat
+* Kontrollera timing, dataflöden och personalisering
+
+[Testa din resa →](testing-the-journey.md) | [Lär dig mer om torr körning → ](journey-dry-run.md)
+
+### &#x200B;4. **Publicera din resa** {#publish}
+
+När testningen är klar publicerar du för att göra din resa levande:
+
+* Granska de slutliga inställningarna och egenskaperna
+* Publicera för att aktivera för riktiga kunder
+* Obs! Live-resor kan stoppas men inte redigeras (du måste skapa en ny version)
+
+[Publicera din resa →](publish-journey.md)
+
+### &#x200B;5. **Skärmprestanda** {#monitor}
+
+Spåra hur din resa fungerar i verkligheten:
+
+* Visa reserapporter och analyser
+* Övervaka antalet inmatningar, slutföranden och fel
+* Ställ in aviseringar för kritiska problem
+
+[Övervaka och rapportera →](report-journey.md) | [Konfigurera aviseringar →](../reports/alerts.md)
+
+### &#x200B;6. **Optimera och iterera** {#optimize}
+
+Använd insikter för att förbättra:
+
+* Analysera engagemangsmått och konverteringsgrader
+* Testa optimering vid sändning
+* Skapa nya versioner av resan med förbättringar
+* Använd AI-baserade rekommendationer
+
+[Optimera dina resor →](optimize.md) | [Tidsoptimering →](send-time-optimization.md)
+
+➡️ **Vill du börja?** [Skapa din första resa nu →](journey-gs.md)
+
+## Användningsexempel i verkligheten {#use-cases}
+
+Lär dig av praktiska exempel som visar hur man använder resekoncept för att lösa vanliga marknadsföringsutmaningar:
+
+:::: landing-cards-container
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+
+**Välkommen nya prenumeranter**
+
+När en kund prenumererar på din tjänst kan du utlösa en välkomstresa som uppmuntrar dem att slutföra introduktionsstegen.
+
+[Visa användningsfall →](message-to-subscribers-uc.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
+
+**Tidsoptimering vid sändning**
+
+Använd AI för att leverera e-postmeddelanden när varje kund är mest benägen att engagera sig och maximera öppnings- och klickfrekvensen.
+
+[Visa användningsfall →](send-time-optimization.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+**Dra upp leveranser**
+
+Öka volymen för meddelanden gradvis för att värma upp ert anseende och undvika leveransproblem.
+
+[Visa användningsfall →](ramp-up-deliveries-uc.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+**Mål efter veckodag**
+
+Skicka olika innehåll baserat på vilken veckodag kunderna är på er resa för att få bättre relevans.
+
+[Visa användningsfall →](weekday-email-uc.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+**Flerkanalskampanjer**
+
+Samordna smidiga upplevelser över e-post, push, SMS och webbkanaler under en enda resa.
+
+[Visa användningsfall →](journeys-uc.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+**Alla användningsfall**
+
+Utforska hela biblioteket med användningsexempel för resor med stegvisa implementeringar.
+
+[Bläddra bland alla →](jo-use-cases.md) | [Använd fallbibliotek →](/help/rp_landing_pages/journey-use-cases-landing-page.md)
+:::
+
+::::
+
+## Utforska resefunktioner {#capabilities}
+
+När ni blir mer bekväma med att bygga kundresor kan ni utforska dessa kraftfulla funktioner för att skapa sofistikerade kundupplevelser:
+
+:::: landing-cards-container
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+**Avancerade uttryck**
+
+Bygg dynamiska villkor och personalisering med uttrycksredigeraren för datahantering och komplex logik.
+
+[Läs mer om uttryck](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
+
+**Hantering av tidszoner**
+
+Hantera globala målgrupper med automatiska tidszonsjusteringar och optimala sändningstider.
+
+[Hantera tidszoner](timezone-management.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+
+**Testläge och torr körning**
+
+Validera resor med testprofiler innan du publicerar och förhandsgranska körningen utan att påverka verkliga data.
+
+[Använd torr körning](journey-dry-run.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+
+**Kopiera till sandlåda**
+
+Duplicera resor mellan sandlådor för att effektivisera arbetsflödena för testning och driftsättning.
+
+[Kopiera resor](copy-to-sandbox.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+
+**Taggar och organisation**
+
+Använd taggar för att kategorisera och filtrera resor för bättre hantering i stor skala.
+
+[Ordna med taggar](tags.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+**Genomströmningskontroll**
+
+Begränsa meddelandets genomströmning för att hantera sändningens rykte och undvika överväldigande system.
+
+[Styr genomströmning](limit-throughput.md)
+:::
+
+::::
+
+[Se alla funktioner för resan →](/help/rp_landing_pages/manage-journey-landing-page.md)
+
+## Lär dig mer genom att titta {#video}
+
+Få en visuell introduktion till resekomponenterna och lär dig grunderna för att bygga resor på arbetsytan:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
+
+➡️ **Vill du ha fler videoklipp?** [Utforska självstudiekurser om resan ](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}
+
+## Behöver du hjälp? {#help}
+
+### Snabblänkar för vanliga uppgifter
+
+* **[Skapa din första resa](journey-gs.md)** - Steg för steg-guide för nybörjare
+* **[Vanliga frågor om resan](journey-faq.md)** - Vanliga frågor besvarade
+* **[Felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Diagnostisera och åtgärda problem
+* **[Felkodsreferens](error-codes-reference.md)** - Förstå felmeddelanden
+* **[Garantier och begränsningar](../start/guardrails.md)** - Tekniska gränser och bästa praxis
+
+### Få meddelanden om problem
+
+Konfigurera **[resemeddelanden](../reports/alerts.md)** för att ta emot meddelanden i realtid när resor stöter på fel eller ovanliga mönster.
+
+### Ytterligare resurser
+
+* **[Nav för resehantering](/help/rp_landing_pages/manage-journey-landing-page.md)** - Verktyg för filtrering, optimering och profilhantering
+* **[Reseaktiviteter, referens](/help/rp_landing_pages/about-journey-building-landing-page.md)** - Fullständig guide till alla aktivitetstyper
+* **[Felsöka körningsproblem](troubleshooting-execution.md)** - Felsöka körningsproblem för resan
+* **[Felsöka inkommande aktiviteter](troubleshooting-inbound.md)** - Åtgärda problem med inträde och kvalificering
+
+**Vill du skapa din första resa?** [Kom igång nu →](journey-gs.md)
