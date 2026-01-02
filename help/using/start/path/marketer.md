@@ -140,8 +140,8 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 
 **Användningsexempel på resan** (realtid, en-till-en):
 
-* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
-* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
+* **Välkomstserie**: Ta in nya kunder med personaliserade flerstegsresor. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)
+* **Övergiven kundvagnsåterställning**: Engagera kunder som lämnat artiklar i kundvagnen igen. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)
 * **Händelsestyrda meddelanden**: Svara på kundåtgärder i realtid
 * **Födelsedagskampanjer**: Skicka personaliserade födelsedagsmeddelanden som utlösts av profildatum
 * **Produktrekommendationer**: Föreslå relevanta produkter baserat på bläddring och inköpshistorik
@@ -153,7 +153,7 @@ Ta del av praktiska exempel som demonstrerar Journey Optimizer funktioner:
 * **Lojalitetsprogram erbjuder**: Belöna värdefulla kunder med nivåindelade erbjudanden baserat på inköpshistorik
 * **Kontobaserad marknadsföring**: Målkonton med specifika egenskaper och relaterade kontakter
 * **Prenumerationsförnyelser**: Nå kunder med prenumerationer som snart går ut med hjälp av multientitetsfrågor
-* **Återengagemangskampanjer**: Vinn inaktiva kunder med målinriktade erbjudanden i gruppläge. [Visa användningsfall](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
+* **Återengagemangskampanjer**: Vinn inaktiva kunder med målinriktade erbjudanden i gruppläge. [Visa användningsfall](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)
 
 **Resemönster:**
 
@@ -203,4 +203,4 @@ Samarbeta med [administratörer](administrator.md) om åtkomst och konfiguration
 1. **Start small**: Skapa en enkel välkomstresa eller kampanj med ett enda meddelande för att lära dig plattformen
 2. **Utnyttja AI**: Använd AI Assistant för att ställa frågor och snabba upp skapandet av innehåll
 3. **Gå med i communityn**: Anslut till andra Journey Optimizer-användare i [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
-4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}
+4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}
