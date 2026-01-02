@@ -9,9 +9,9 @@ level: Beginner
 keywords: resa, kampanj, iscensatt, jämförelse, val, beslut, arbetsflöde, realtid, batch, orkestrering, flera steg, schemalagd, API-utlöst, händelsestyrd
 hide: true
 hidefromtoc: true
-source-git-commit: 5c842eb5d744380b462c6830af0838aa3329e9f7
+source-git-commit: 3fd971c719bfd667fe5b237c8f03a5915422c1e7
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1334'
 ht-degree: 1%
 
 ---
@@ -221,32 +221,42 @@ Kombinerar arbetsflödeskomplexitet med batchkörning av kampanjer.
 
 ## Vanliga frågor {#common-questions}
 
-**F: Kan jag kombinera resor och kampanjer i min marknadsföringsstrategi?**
++++ Kan jag kombinera resor och kampanjer i min marknadsföringsstrategi?
 
-S: Absolut! De flesta organisationer använder alla tre metoder för olika scenarier:
+Absolut! De flesta organisationer använder alla tre metoder för olika scenarier:
 - Resor för beteendeengagemang i realtid
 - Åtgärdskampanjer för schemalagd sändningskommunikation
 - API-utlösta kampanjer för transaktionsmeddelanden
 - Samordnade kampanjer för komplexa, dataintensiva gruppkampanjer
 
-**F: Kan jag konvertera en kampanj till en resa eller vice versa?**
++++
 
-S: Nej, du måste återskapa upplevelsen i rätt format. Men ni kan återanvända innehåll, målgrupper och logiska koncept.
++++ Kan jag omvandla en kampanj till en resa eller vice versa?
 
-**F: Vilken metod är enklare att bygga?**
+Nej, du måste återskapa upplevelsen i rätt format. Men ni kan återanvända innehåll, målgrupper och logiska koncept.
 
-S: Åtgärdskampanjer är oftast de enklaste (enskilda meddelanden till målgrupper), följt av API-utlösta kampanjer, resor (mer komplexa med flerstegslogik) och samordnade kampanjer (mest komplexa på grund av arbetsytans arbetsflöde och funktioner för flera enheter).
++++
 
-**Q: Vilken skala passar bäst för stora målgrupper?**
++++ Vilken metod är enklare att bygga?
 
-S: Alla tre kan skalas bra, men:
+Action Campaigns är oftast det enklaste (ett enda meddelande till en målgrupp), följt av API-utlösta kampanjer, resor (mer komplexa med flerstegslogik) och samordnade kampanjer (mest komplexa på grund av arbetsflöden på arbetsytan och funktioner för flera enheter).
+
++++
+
++++ Vilken skala passar bäst för stora målgrupper?
+
+Alla tre kan skalas bra, men:
 - **Läs målgrupper** och **Åtgärdskampanjer** är optimerade för stora grupper
 - **Orchestrerade kampanjer** kan inte användas vid komplex segmentering med stora datamängder
 - **Unitary Journeys** bearbetar profiler individuellt, så skalan beror på händelsens volym
 
-**F: Kan jag använda samma målgrupp på resor och i kampanjer?**
++++
 
-S: Ja, målgrupper som skapats i Adobe Experience Platform kan användas på alla tre inriktningarna.
++++ Kan jag använda samma målgrupp på alla resor och i alla kampanjer?
+
+Ja, målgrupper som skapats i Adobe Experience Platform kan användas på alla tre inriktningarna.
+
++++
 
 ## Nästa steg {#next-steps}
 
