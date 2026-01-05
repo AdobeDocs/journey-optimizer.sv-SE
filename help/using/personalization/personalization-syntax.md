@@ -95,7 +95,7 @@ Utan de här blocken misslyckas personaliseringsredigeraren med valideringen och
 
 * **Målgrupp**
 
-  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
 
 * **Erbjudanden**
 
