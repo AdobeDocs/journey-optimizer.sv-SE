@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: testa, validera, godkänna, godkänna, kvalitetssäkring, qa, testprofiler, personalisering, återgivning, skräppost, innehållstestning, a/b-test, konfliktidentifiering, utsädeslista, korrektur, exempeldata, godkännande-arbetsflöde, e-posttestning, valideringsarbetsflöde
 redpen-status: CREATED_||_2025-08-11_20-30-59
 exl-id: a770412f-2f80-459d-8cce-32212154d154
-source-git-commit: abb2ed3cfa617bb9afc23c8f69634d5afe89b33e
+source-git-commit: d004bdaccab07110408860e67b52bf4c00c1fb15
 workflow-type: tm+mt
-source-wordcount: '2997'
+source-wordcount: '2735'
 ht-degree: 0%
 
 ---
@@ -38,64 +38,109 @@ Testnings- och godkännandeprocesserna fungerar som viktiga kvalitetsgater som s
 
 * **Spara tid och resurser** - Hitta problem tidigt i utvecklingscykeln när korrigeringarna är billigare och snabbare och förhindra kostsamma efterstartsändringar eller kundtjänsteskaleringar.
 
-## Översikt över testfunktioner
+<!--## Testing capabilities overview
 
-**Testtyper finns:**
+**Testing types available:**
 
-* Innehållstestning: Förhandsgranska och validera meddelandeinnehåll innan du skickar → [Testa kampanjer](#testing-campaigns), [Testa personalisering](#testing-personalization)
-* Reselogiktestning: Simulera kundens utveckling genom resan → [Testa resorna](#testing-journeys)
-* Teknisk testning: Verifiera återgivning, leverans och autentisering → [Teknisk validering](#2-technical-validation)
-* Prestandatestning: Jämför innehållsvariationer med A/B-experiment → [Innehållsexperiment](#content-experiments--ab-testing)
-* Konflikttestning: Identifiera kampanjer och resor överlappar → [Konfliktidentifiering](#conflict-detection)
-* Godkännandeprovning: Strukturerade granskningsarbetsflöden före aktivering → [Arbetsflöden för godkännande](#approval-workflows-for-journeys-and-campaigns)
+* Content testing: Preview and validate message content before sending → [Choose your testing approach](#choose-your-testing-approach)
+* Journey logic testing: Simulate customer progression through journey paths → [Choose your testing approach](#choose-your-testing-approach)
+* Technical testing: Validate rendering, deliverability, and authentication → [Technical validation](#2-technical-validation)
+* Performance testing: Compare content variations using A/B experiments → [Content Experiments & A/B Testing](#test--approve-content)
+* Conflict testing: Detect campaign and journey overlaps → [Conflict Detection](#test--approve-content)
+* Approval testing: Structured review workflows before activation → [Approval Workflows](#test--approve-content)
 
-**Nyckelfunktioner efter kontext:**
+**Key capabilities by context:**
 
-| Funktion | Gäller för | Kanalbegränsningar | Förhandskrav | Primärt syfte |
+| Capability | Applies to | Channel restrictions | Prerequisites | Primary purpose |
 |------------|-----------|---------------------|--------------|-----------------|
-| [Testprofiler](../using/content-management/test-profiles.md) | Kampanjer, resor | Alla kanaler | Testprofiler har skapats | Förhandsgranska personaliserat innehåll |
-| [Exempelindata](../using/test-approve/simulate-sample-input.md) | Kampanjer, resor | E-post, SMS, push, webb, kodbaserad, i appen, innehållskort | CSV/JSON-fil | Testa flera personaliseringsvarianter |
-| [Testläge](../using/building-journeys/testing-the-journey.md) | Endast resor | N/A | Utkastresa, namnområde konfigurerat | Simulera profilförlopp |
-| [Torr körning](../using/building-journeys/journey-dry-run.md) | Endast resor | N/A | Resan skapad | Analysera körningssökvägar |
-| [E-poståtergivning](../using/content-management/rendering.md) | Kampanjer, resor | Endast e-post | Litmus-integrering | Verifiera visning mellan klienter |
-| [Spam score](../using/content-management/spam-report.md) | Kampanjer, resor | Endast e-post | Ingen | Validering av slutprodukt |
-| [Startlistor](../using/configuration/seed-lists.md) | Kampanjer, resor | Endast e-post | Startlista konfigurerad | Intressentövervakning |
-| [Innehållsexperiment](../using/content-management/get-started-experiment.md) | Endast kampanjer | Alla kanaler | Ingen | A/B-tester och multiväpnad bankutprövning |
-| [Konfliktidentifiering](../using/conflict-prioritization/conflicts.md) | Kampanjer, resor (begränsat) | Alla kanaler | Ingen | Förhindra att kundens meddelanden blir för många |
-| [Arbetsflöden för godkännande](../using/test-approve/gs-approval.md) | Kampanjer, resor | Alla kanaler | Godkännandeprincip har skapats | Strukturerad granskningsprocess |
-| [Personalization playground](../using/personalization/personalize.md#playground) | Alla | Alla kanaler | Ingen | Lär dig mer om och testa personaliseringssyntax |
+| [Test profiles](../using/content-management/test-profiles.md) | Campaigns, Journeys | All channels | Test profiles created | Preview personalized content |
+| [Sample input data](../using/test-approve/simulate-sample-input.md) | Campaigns, Journeys | Email, SMS, Push, Web, Code-based, In-app, Content cards | CSV/JSON file | Test multiple personalization variants |
+| [Test mode](../using/building-journeys/testing-the-journey.md) | Journeys only | N/A | Draft journey, namespace configured | Simulate profile progression |
+| [Dry run](../using/building-journeys/journey-dry-run.md) | Journeys only | N/A | Journey created | Analyze execution paths |
+| [Email rendering](../using/content-management/rendering.md) | Campaigns, Journeys | Email only | Litmus integration | Verify display across clients |
+| [Spam score](../using/content-management/spam-report.md) | Campaigns, Journeys | Email only | None | Deliverability validation |
+| [Seed lists](../using/configuration/seed-lists.md) | Campaigns, Journeys | Email only | Seed list configured | Stakeholder monitoring |
+| [Content experiments](../using/content-management/get-started-experiment.md) | Campaigns only | All channels | None | A/B and multi-armed bandit testing |
+| [Conflict detection](../using/conflict-prioritization/conflicts.md) | Campaigns, Journeys (limited) | All channels | None | Prevent customer over-messaging |
+| [Approval workflows](../using/test-approve/gs-approval.md) | Campaigns, Journeys | All channels | Approval policy created | Structured review process |
+| [Personalization playground](../using/personalization/personalize.md#playground) | All | All channels | None | Learn and test personalization syntax |
 
-**Vanliga arbetsflöden för testning:**
+**Common testing workflows:**
 
-1. Förutveckling: Använd [personaliseringsuppspelning](#testing-personalization) för att lära dig syntax
-2. Under utvecklingen: Förhandsgranska med [testprofiler](#testing-campaigns), validera med [exempelindata](#simulate-content-variations)
-3. Förstart: Kör [tekniska tester](#2-technical-validation) (återgivning, skräppost), kontrollera [konflikter](#conflict-detection), skicka för [godkännande](#approval-workflows-for-journeys-and-campaigns)
-4. Efter start: Övervaka med live-rapporter (se [Övervakning och felsökning](#monitoring--troubleshooting)), iterera baserat på resultat
+1. Pre-development: Use [personalization playground](#test--approve-content) to learn syntax
+2. During development: Preview with [test profiles](#choose-your-testing-approach), validate with [sample input data](#choose-your-testing-approach)
+3. Pre-launch: Run [technical tests](#2-technical-validation) (rendering, spam), check [conflicts](#test--approve-content), submit for [approval](#test--approve-content)
+4. Post-launch: Monitor with live reports (see [Monitoring & Troubleshooting](#test--approve-content)), iterate based on results
 
+-->
 
 ## Nyckelterminologi
 
-**[Testa profiler](../using/content-management/test-profiles.md)** = Syntetiska kundprofiler (inte verkliga kunder) som används för att förhandsgranska personaliserat innehåll. Flaggas i Kundprofiltjänst i realtid. Krävs för testläge och förhandsgranskning av innehåll. [Lär dig skapa testprofiler](../using/audience/creating-test-profiles.md)
++++**Testprofiler**
 
-**[Testläge](../using/building-journeys/testing-the-journey.md)** = Funktion för resesimulering som skickar testprofiler via resebanor. Begränsningar: Endast utkast, endast namnutrymme, endast testprofiler krävs. [Se testlägesdokumentation](../using/building-journeys/testing-the-journey.md)
+Syntetiska kundprofiler (inte verkliga kunder) som används för att förhandsgranska personaliserat innehåll. Flaggas i Kundprofiltjänst i realtid. Krävs för testläge och förhandsgranskning av innehåll. [Läs mer](../using/content-management/test-profiles.md) | [Lär dig skapa testprofiler](../using/audience/creating-test-profiles.md)
 
-**[Torr körning](../using/building-journeys/journey-dry-run.md)** = Resekörningsanalysverktyg som spårar sökvägar utan att skicka meddelanden eller anropa API. Användningsfall: Validera logiken utan att behöva använda resurser. [Lär dig mer om torr körning](../using/building-journeys/journey-dry-run.md)
++++
 
-**[Exempelindata](../using/test-approve/simulate-sample-input.md)** = CSV- eller JSON-filer som innehåller profilattributvärden för testning av personalisering. Stöder upp till 30 varianter. Alternativ för att skapa testprofiler. [Så här simulerar du innehållsvariationer](../using/test-approve/simulate-sample-input.md)
++++**Testläge**
 
-**[Utsändningslistor](../using/configuration/seed-lists.md)** = E-postadresser till interna intressenter som automatiskt inkluderas i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Konfigurera dirigerade listor](../using/configuration/seed-lists.md)
+Resesimuleringsfunktion som skickar testprofiler via resevägar. Begränsningar: Endast utkast, endast namnutrymme, endast testprofiler krävs. [Läs mer](../using/building-journeys/testing-the-journey.md)
 
-**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment &#x200B;](../using/content-management/content-experiment.md)
++++
 
-**[Korrektur](../using/content-management/proofs.md)** = Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Skicka korrektur](../using/content-management/proofs.md)
++++**Torr körning**
 
-**[Konfliktidentifiering](../using/conflict-prioritization/conflicts.md)** = Verktyg som identifierar överlappande kampanjer och resor som riktar sig till samma målgrupper. Begränsat stöd för resor: endast typerna enhet, målgruppskvalitet och läsning av målgrupper. [Läs om konflikthantering](../using/conflict-prioritization/gs-conflict-prioritization.md)
+Reseanalysverktyg som spårar sökvägar utan att skicka meddelanden eller anropa API. Användningsfall: Validera logiken utan att behöva använda resurser. [Läs mer](../using/building-journeys/journey-dry-run.md)
 
-**[Arbetsflöden för godkännande](../using/test-approve/gs-approval.md)** = Granskningsprocess i flera steg som kräver godkännande av berörda parter före aktivering. Kräver konfiguration av godkännandeprincip. [Konfigurera godkännanden](../using/test-approve/gs-approval.md) | [Skapa profiler](../using/test-approve/approval-policies.md)
++++
 
-**[Återgivningstester](../using/content-management/rendering.md)** = Verifiering av e-postvisning för e-postklienter (Gmail, Outlook, Apple Mail) och enheter. Kräver integrering med Litmus. [Testa e-poståtergivning](../using/content-management/rendering.md)
++++**Exempelindata**
 
-**[Personalization playground](../using/personalization/personalize.md#playground)** = Interaktiv utbildningsmiljö för att experimentera med personaliseringssyntax och testa uttryck med exempeldata. Inga livedatauppsättningar krävs. [Åtkomst till uppspelningsmiljön](../using/personalization/personalize.md#playground)
+CSV- eller JSON-filer som innehåller profilattributvärden för testning av personalisering. Stöder upp till 30 varianter. Alternativ för att skapa testprofiler. [Läs mer](../using/test-approve/simulate-sample-input.md)
+
++++
+
++++**Startlistor**
+
+E-postadresser till interna intressenter som automatiskt ingår i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Läs mer](../using/configuration/seed-lists.md)
+
++++
+
++++**Innehållsexperiment**
+
+A/B-tester eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Läs mer](../using/content-management/get-started-experiment.md) | [Skapa experiment ](../using/content-management/content-experiment.md)
+
++++
+
++++**Korrektur**
+
+Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Läs mer](../using/content-management/proofs.md)
+
++++
+
++++**Konfliktidentifiering**
+
+Verktyg som identifierar överlappande kampanjer och resor som riktar sig till samma målgrupper. Begränsat stöd för resor: endast typerna enhet, målgruppskvalitet och läsning av målgrupper. [Läs mer](../using/conflict-prioritization/conflicts.md) | [Lär dig mer om konflikthantering](../using/conflict-prioritization/gs-conflict-prioritization.md)
+
++++
+
++++**Arbetsflöden för godkännande**
+
+Granskningsprocess i flera steg som kräver godkännande från berörda parter före aktivering. Kräver konfiguration av godkännandeprincip. [Läs mer](../using/test-approve/gs-approval.md) | [Skapa profiler](../using/test-approve/approval-policies.md)
+
++++
+
++++**Återgivningstester**
+
+E-postvalidering för e-postklienter (Gmail, Outlook, Apple Mail) och enheter. Kräver integrering med Litmus. [Läs mer](../using/content-management/rendering.md)
+
++++
+
++++**Personalization playground**
+
+Interaktiv utbildningsmiljö för att experimentera med personaliseringssyntax och testa uttryck med exempeldata. Inga livedatauppsättningar krävs. [Läs mer](../using/personalization/personalize.md#playground)
+
++++
 
 ## Beslutsträd för val av testmetod
 
@@ -103,36 +148,36 @@ Använd det här beslutsträdet för att snabbt identifiera rätt testverktyg f�
 
 +++ **Fråga 1: Vad testar du?**
 
-* Kampanj → [Testar kampanjer](#testing-campaigns)
-* Resa → [Testar resor](#testing-journeys)
-* Personalization-uttryck → [Personalization playground](#testing-personalization)
+* Campaign → [Välj testmetod](#choose-your-testing-approach)
+* Resa → [Välj testmetod](#choose-your-testing-approach)
+* Personalization-uttryck → [Personalization playground](#test--approve-content)
 +++
 
 +++**Fråga 2: Vilken aspekt behöver valideras?**
 
-* Innehåll och personalisering → [Testa profiler](#testing-campaigns) eller [exempelindata](#simulate-content-variations)
+* Innehåll och personalisering → [Testa profiler](#choose-your-testing-approach) eller [exempelindata](#choose-your-testing-approach)
 * E-postvisning → [Återgivningstest via e-post](#2-technical-validation)
 * Leverans → [Spam score check](#2-technical-validation)
-* Reselogik och -flöde → [Testläge](#testing-journeys) eller [torr körning](#journey-dry-run)
-* Prestandajämförelse → [Innehållsexperiment](#content-experiments--ab-testing) (endast kampanjer)
-* Tidskonflikter → [Konfliktidentifiering](#conflict-detection)
-* Granskning av intressenter → [Arbetsflöde för godkännande](#approval-workflows-for-journeys-and-campaigns)
+* Reselogik och -flöde → [Testläge](#choose-your-testing-approach) eller [torr körning](#test--approve-content)
+* Prestandajämförelse → [Innehållsexperiment](#test--approve-content) (endast kampanjer)
+* Tidskonflikter → [Konfliktidentifiering](#test--approve-content)
+* Granskning av intressenter → [Arbetsflöde för godkännande](#test--approve-content)
 +++
 
 +++**Fråga 3: Vilken kanal?**
 
-* E-post → Alla testmetoder är tillgängliga (se [Testa kampanjer](#testing-campaigns))
-* SMS, push → [Innehållstestning](#testing-campaigns), [exempelindata](#simulate-content-variations), [arbetsflöden för godkännande](#approval-workflows-for-journeys-and-campaigns)
-* Webb, In-app, kodbaserad → [Innehållstestning](#testing-campaigns), [exempelindata](#simulate-content-variations), [arbetsflöden för godkännande](#approval-workflows-for-journeys-and-campaigns)
+* E-post → Alla tillgängliga testmetoder (se [Välj testmetod](#choose-your-testing-approach))
+* SMS, push → [Innehållstestning](#choose-your-testing-approach), [exempelindata](#choose-your-testing-approach), [arbetsflöden för godkännande](#test--approve-content)
+* Webb, In-app, kodbaserad → [Innehållstestning](#choose-your-testing-approach), [exempelindata](#choose-your-testing-approach), [arbetsflöden för godkännande](#test--approve-content)
 * Flera kanaler → Testa varje kanal separat
 +++
 
 +++**Fråga 4: När i arbetsflödet?**
 
-* Innan du skapar → [Personalization playground](#personalization-playground) för lärande
-* Under generering → [Testprofiler](#testing-campaigns) och [exempelindata](#simulate-content-variations) för validering
-* Innan du startar → [Återgivningstester](#2-technical-validation), [skräppostkontroller](#email-spam-report), [konfliktidentifiering](#conflict-detection), [godkännanden](#approval-workflows-for-journeys-and-campaigns)
-* Efter start → [Live-rapporter](../using/building-journeys/report-journey.md) och [övervakning](#monitoring--troubleshooting)
+* Innan du skapar → [Personalization playground](#test--approve-content) för lärande
+* Under generering → [Testprofiler](#choose-your-testing-approach) och [exempelindata](#choose-your-testing-approach) för validering
+* Innan du startar → [Återgivningstester](#2-technical-validation), [skräppostkontroller](#2-technical-validation), [konfliktidentifiering](#test--approve-content), [godkännanden](#test--approve-content)
+* Efter start → [Live-rapporter](../using/building-journeys/report-journey.md) och [övervakning](#test--approve-content)
 +++
 
 
@@ -296,7 +341,7 @@ Efter start fortsätter du övervakningen för att upptäcka eventuella problem 
 
 * Granska [liverapporter](../using/building-journeys/report-journey.md) för att spåra prestanda i förhållande till förväntningarna
 
-* Var redo att [pausa eller ändra &#x200B;](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
+* Var redo att [pausa eller ändra ](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
 
 * Dokumentlärdomar som kan förbättra framtida testprocesser
 
@@ -315,7 +360,7 @@ Se hur testkoncept kan användas i verkliga scenarier:
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förhandsgranska, testa och validera innehåll
 
@@ -325,7 +370,7 @@ Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Arbetsflöden för godkännande av resor och kampanjer
 
@@ -335,7 +380,7 @@ Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Testa din resa
 
@@ -345,7 +390,7 @@ Validera resan innan du publicerar den genom att testa den med specifika profile
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Körning av resetorr
 
@@ -355,7 +400,7 @@ Utför en torr körning för att simulera och validera kundresan och identifiera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Övervakning och felsökning
 
@@ -365,7 +410,7 @@ Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
 
 Personalization Playground
 
@@ -385,7 +430,7 @@ Optimera era kampanjer genom att testa olika innehållsvariationer och mäta pre
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Utsändningslistor för övervakning av intressenter
 
@@ -395,7 +440,7 @@ Inkludera automatiskt interna intressentadresser i leveranser för att övervaka
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Konfliktidentifiering
 
@@ -486,7 +531,7 @@ Lär dig hur testfunktionerna samverkar med varandra och med era större arbetsf
 +++**F: Hur testar jag personalisering utan att skapa många testprofiler?**
 
 **Primär lösning:** Använd [exempelindata](../using/test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
-**Alternativ:** Skapa 3-5 representativa [testprofiler &#x200B;](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
+**Alternativ:** Skapa 3-5 representativa [testprofiler ](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
 **Utbildningsverktyg:** Experimentera först i [personaliseringspresentationen](../using/personalization/personalize.md#playground)
 
 +++
