@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 9c013883e1bcdbf7dffffa599a910178def80e39
+source-git-commit: 5e9ce28bf19d2f4406ab4fd395b44b72894928e6
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '678'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ där:
 
 ## Allmänna syntaxregler {#general-rules}
 
-* Identifierare kan vara vilket Unicode-tecken som helst utom för följande:
+* Identifierare kan vara vilket Unicode-tecken som helst förutom följande specialtecken, som är reserverade för Handlebars-syntaxen:
 
   ```
   Whitespace ! " # % & ' ( ) * + , . / ; < = > @ [ \ ] ^ ` { | } ~
@@ -95,7 +95,7 @@ Utan de här blocken misslyckas personaliseringsredigeraren med valideringen och
 
 * **Målgrupp**
 
-  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
+  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 * **Erbjudanden**
 
@@ -136,7 +136,7 @@ Utan de här blocken misslyckas personaliseringsredigeraren med valideringen och
 
   +++
 
-## Hjälpmedel{#helpers-all}
+## Hjälpmedel {#helpers-all}
 
 Handtag-hjälpen är en enkel identifierare som kan följas av parametrar. Varje parameter är ett Handlebars-uttryck. Hjälpprogrammen kan nås från alla sammanhang i en mall.
 
@@ -144,7 +144,7 @@ Dessa blockhjälpare identifieras av en `#` före hjälpnamnet och kräver en ma
 
 Blocken är uttryck som har ett blocköppning (`{{# }}`) och stängning (`{{/}}`).
 
-Mer information om hjälpfunktioner finns i [det här avsnittet](functions/helpers.md).
+    Mer information om hjälpfunktioner finns i [det här avsnittet](functions/helpers.md).
 
 ## Literala typer {#literal-types}
 
