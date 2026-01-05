@@ -25,7 +25,7 @@ AI-modeller i Adobe Journey Optimizer hjälper er att fatta smartare, datadrivna
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Kom igång med AI-modeller
 
@@ -35,7 +35,7 @@ Lär dig mer om AI-modeller i Adobe Journey Optimizer, deras typer, funktioner o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 Förstå modeller för automatisk optimering
 
@@ -45,7 +45,7 @@ Upptäck hur Automatisk optimering använder algoritmer som Thompson sampling f�
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Förstå personaliserade optimeringsmodeller
 
@@ -55,7 +55,7 @@ Upptäck hur personaliserade optimeringsmodeller använder kunddata och maskinin
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Så här skapar du AI-modeller
 

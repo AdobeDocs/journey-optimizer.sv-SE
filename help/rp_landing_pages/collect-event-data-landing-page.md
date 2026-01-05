@@ -25,7 +25,7 @@ Genom att samla in händelsedata i Adobe Journey Optimizer kan ni spåra viktiga
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Komma igång med insamling av beslutsdata
 
@@ -35,7 +35,7 @@ Lär dig grunderna i datainsamling för beslutshantering, inklusive typer av hä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Så här skapar du en datauppsättning för att samla in upplevelsehändelser
 
@@ -45,7 +45,7 @@ Följ stegvisa instruktioner för att skapa en datauppsättning och ett schema f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera händelsedatainhämtning för beslutshantering
 

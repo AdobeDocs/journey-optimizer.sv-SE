@@ -25,7 +25,7 @@ I API-referensavsnittet i Adobe Journey Optimizer frigörs de verktyg ni behöve
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med erbjudandebiblioteks-API
 
@@ -35,7 +35,7 @@ Lär dig hur du integrerar Offer Library API för beslutshantering, med guider o
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Leverera erbjudanden med Adobe Journey Optimizer API:er
 

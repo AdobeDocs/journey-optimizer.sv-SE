@@ -25,7 +25,7 @@ Genom att skapa komponenter som praktik, beslutsregler och samlingskvalificerare
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Guide till att skapa praktik för erbjudanden
 
@@ -35,7 +35,7 @@ Lär dig hur du skapar och hanterar praktik för att se till att rätt erbjudand
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
 
 Skapa beslutsregler i Adobe Journey Optimizer
 
@@ -45,7 +45,7 @@ Definiera beslutsregler för att personalisera erbjudanden genom att rikta in sp
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/tags.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/tags.svg?lang=sv-SE)
 
 Så här skapar och hanterar du samlingskvalificerare i Adobe Journey Optimizer
 

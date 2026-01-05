@@ -25,7 +25,7 @@ Rankningarna i Adobe Journey Optimizer ger er möjlighet att skräddarsy vilka e
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
 
 Komma igång med rankningar
 
@@ -35,7 +35,7 @@ Lär dig grunderna om rankning i Adobe Journey Optimizer, inklusive rankningsfor
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Skapa och använda rankningsformler
 
@@ -45,7 +45,7 @@ Följ steg-för-steg-instruktionerna för att skapa rankningsformler med PQL-syn
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 AI-modeller för rankning av erbjudanden
 

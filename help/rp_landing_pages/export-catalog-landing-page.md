@@ -25,7 +25,7 @@ Att exportera din erbjudandekatalog i Adobe Journey Optimizer är som att öppna
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Guide till att exportera erbjudandekataloger
 
@@ -35,7 +35,7 @@ Lär dig hur du exporterar din erbjudandekatalog som en datauppsättning till Ad
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Åtkomst till den exporterade erbjudandekatalogen
 
@@ -45,7 +45,7 @@ Upptäck hur du hittar och interagerar med den exporterade erbjudandekatalogen i
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Datauppsättningsreferens för personaliserade erbjudanden
 
@@ -55,7 +55,7 @@ Utforska datamängdens fält och hierarkiska schema för anpassade erbjudanden, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Översikt över beslutsdatauppsättning
 
@@ -65,7 +65,7 @@ Förstå den hierarkiska strukturen, fältdefinitionerna och metadata för beslu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Information om placeringsdatauppsättning
 
@@ -75,7 +75,7 @@ Lär dig mer om fälten, schemat och metadata för Placements-datauppsättningen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
 
 Reservation för datauppsättningsdokumentation
 
