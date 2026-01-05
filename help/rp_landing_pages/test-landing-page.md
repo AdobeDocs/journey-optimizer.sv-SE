@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: testa, validera, godkänna, godkänna, kvalitetssäkring, qa, testprofiler, personalisering, återgivning, skräppost, innehållstestning, a/b-test, konfliktidentifiering, utsädeslista, korrektur, exempeldata, godkännande-arbetsflöde, e-posttestning, valideringsarbetsflöde
 redpen-status: CREATED_||_2025-08-11_20-30-59
 exl-id: a770412f-2f80-459d-8cce-32212154d154
-source-git-commit: 57f32088aa9cef55ed68729995326d3eae401bd5
+source-git-commit: f774ce00cea82eca84410bd76f482e53d3c60bf6
 workflow-type: tm+mt
 source-wordcount: '3103'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Denna landningssida hjälper er att välja rätt testmetod baserat på vad ni by
 | Funktion | Gäller för | Kanalbegränsningar | Förhandskrav | Primärt syfte | Dokumentation |
 |------------|-----------|---------------------|--------------|-----------------|---------------|
 | [Testprofiler](../using/content-management/test-profiles.md) | Kampanjer, resor | Alla kanaler | Testprofiler har skapats | Förhandsgranska personaliserat innehåll | [Guide](#testing-campaigns) |
-| [Exempelindata](../test-approve/simulate-sample-input.md) | Kampanjer, resor | E-post, SMS, push, webb, kodbaserad, i appen, innehållskort | CSV/JSON-fil | Testa flera personaliseringsvarianter | [Guide](#simulate-content-variations) |
+| [Exempelindata](../using/test-approve/simulate-sample-input.md) | Kampanjer, resor | E-post, SMS, push, webb, kodbaserad, i appen, innehållskort | CSV/JSON-fil | Testa flera personaliseringsvarianter | [Guide](#simulate-content-variations) |
 | [Testläge](../using/building-journeys/testing-the-journey.md) | Endast resor | N/A | Utkastresa, namnområde konfigurerat | Simulera profilförlopp | [Kort](#test-your-journey) |
 | [Torr körning](../using/building-journeys/journey-dry-run.md) | Endast resor | N/A | Resan skapad | Analysera körningssökvägar | [Kort](#journey-dry-run) |
 | [E-poståtergivning](../using/content-management/rendering.md) | Kampanjer, resor | Endast e-post | Litmus-integrering | Verifiera visning mellan klienter | [Arbetsflöde](#2-technical-validation) |
@@ -81,11 +81,11 @@ Testnings- och godkännandeprocesserna fungerar som viktiga kvalitetsgater som s
 
 **[Torr körning](../using/building-journeys/journey-dry-run.md)** = Resekörningsanalysverktyg som spårar sökvägar utan att skicka meddelanden eller anropa API. Användningsfall: Validera logiken utan att behöva använda resurser. [Lär dig mer om torr körning](../using/building-journeys/journey-dry-run.md)
 
-**[Exempelindata](../test-approve/simulate-sample-input.md)** = CSV- eller JSON-filer som innehåller profilattributvärden för testning av personalisering. Stöder upp till 30 varianter. Alternativ för att skapa testprofiler. [Så här simulerar du innehållsvariationer](../test-approve/simulate-sample-input.md)
+**[Exempelindata](../using/test-approve/simulate-sample-input.md)** = CSV- eller JSON-filer som innehåller profilattributvärden för testning av personalisering. Stöder upp till 30 varianter. Alternativ för att skapa testprofiler. [Så här simulerar du innehållsvariationer](../using/test-approve/simulate-sample-input.md)
 
 **[Utsändningslistor](../using/configuration/seed-lists.md)** = E-postadresser till interna intressenter som automatiskt inkluderas i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Konfigurera dirigerade listor](../using/configuration/seed-lists.md)
 
-**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment &#x200B;](../using/content-management/content-experiment.md)
+**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment ](../using/content-management/content-experiment.md)
 
 **[Korrektur](../using/content-management/proofs.md)** = Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Skicka korrektur](../using/content-management/proofs.md)
 
@@ -144,7 +144,7 @@ Rätt testmetod beror på vad du bygger och vad du behöver för att validera. A
 
 **För alla kampanjer:**
 
-* Förhandsgranska och testa innehåll med [testprofiler](../using/content-management/test-profiles.md) eller [exempelindata](../test-approve/simulate-sample-input.md)
+* Förhandsgranska och testa innehåll med [testprofiler](../using/content-management/test-profiles.md) eller [exempelindata](../using/test-approve/simulate-sample-input.md)
 * Kontrollera [e-poståtergivning](../using/content-management/rendering.md) på enheter och klienter (endast e-postkanal)
 * Kör [skräppostpoängskontroller](../using/content-management/spam-report.md) (endast e-postkanal)
 * Granska [konflikter](../using/conflict-prioritization/conflicts.md) med andra kampanjer och resor
@@ -184,7 +184,7 @@ Rätt testmetod beror på vad du bygger och vad du behöver för att validera. A
 **När innehåll skapas:**
 
 * Förhandsgranska med [testprofiler](../using/content-management/test-profiles.md) för att validera återgivningar av personalisering korrekt
-* Testa flera scenarier med [exempelindata](../test-approve/simulate-sample-input.md) från CSV-/JSON-filer (stöder upp till 30 varianter)
+* Testa flera scenarier med [exempelindata](../using/test-approve/simulate-sample-input.md) från CSV-/JSON-filer (stöder upp till 30 varianter)
 
 ## Testa bästa praxis
 
@@ -198,7 +198,7 @@ Följ de här rekommenderade arbetssätten för att maximera effekten av testnin
 
 1. **Verifiera personalisering noggrant** - Testa med flera [testprofiler](../using/content-management/test-profiles.md) som har olika attributvärden för att bekräfta att personaliseringstoken återges korrekt och reservvärden fungerar. Använd [personaliseringsspelgrunden](../using/personalization/personalize.md#playground) om du vill experimentera med personaliseringsuttryck och testa kod med exempeldata innan du använder dem på dina kampanjer.
 
-1. **Testa innehållsvariationer med exempeldata** - Använd [exempelindata](../test-approve/simulate-sample-input.md) från CSV- eller JSON-filer för att testa upp till 30 personaliseringsscenarier utan att skapa flera testprofiler, spara tid samtidigt som du får en heltäckande täckning. Stöder e-post, SMS, push, webb, kodbaserad upplevelse, kanaler i appen och innehållskort.
+1. **Testa innehållsvariationer med exempeldata** - Använd [exempelindata](../using/test-approve/simulate-sample-input.md) från CSV- eller JSON-filer för att testa upp till 30 personaliseringsscenarier utan att skapa flera testprofiler, spara tid samtidigt som du får en heltäckande täckning. Stöder e-post, SMS, push, webb, kodbaserad upplevelse, kanaler i appen och innehållskort.
 
 1. **Använd startlistor för övervakning av intressenter** - Konfigurera [startlistor](../using/configuration/seed-lists.md) för att automatiskt inkludera interna intressenter som tar emot kopior av alla leveranser vid körning för kvalitetsövervakning och kompatibilitetsverifiering (endast e-postkanal).
 
@@ -226,7 +226,7 @@ Börja med att skapa ditt innehåll och använda förhandsgranskningsfunktionern
 
 * Experimentera med personaliseringsuttryck i **[personaliseringsuppspelningen](../using/personalization/personalize.md#playground)** för att testa och förfina koden med exempeldata innan den tillämpas på livematerial
 
-* Testa flera variationer med **[exempelindata](../test-approve/simulate-sample-input.md)** från CSV-/JSON-filer för att validera personalisering i olika profilscenarier
+* Testa flera variationer med **[exempelindata](../using/test-approve/simulate-sample-input.md)** från CSV-/JSON-filer för att validera personalisering i olika profilscenarier
 
 * Verifiera [återgivning](../using/content-management/rendering.md) för olika skärmstorlekar och e-postklienter
 
@@ -292,7 +292,7 @@ Efter start fortsätter du övervakningen för att upptäcka eventuella problem 
 
 * Granska [liverapporter](../using/building-journeys/report-journey.md) för att spåra prestanda i förhållande till förväntningarna
 
-* Var redo att [pausa eller ändra &#x200B;](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
+* Var redo att [pausa eller ändra ](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
 
 * Dokumentlärdomar som kan förbättra framtida testprocesser
 
@@ -311,7 +311,7 @@ Se hur testkoncept kan användas i verkliga scenarier:
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förhandsgranska, testa och validera innehåll
 
@@ -321,7 +321,7 @@ Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Arbetsflöden för godkännande av resor och kampanjer
 
@@ -331,7 +331,7 @@ Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Testa din resa
 
@@ -341,7 +341,7 @@ Validera resan innan du publicerar den genom att testa den med specifika profile
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Körning av resetorr
 
@@ -351,7 +351,7 @@ Utför en torr körning för att simulera och validera kundresan och identifiera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Övervakning och felsökning
 
@@ -361,7 +361,7 @@ Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
 
 Personalization Playground
 
@@ -381,7 +381,7 @@ Optimera era kampanjer genom att testa olika innehållsvariationer och mäta pre
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Utsändningslistor för övervakning av intressenter
 
@@ -391,7 +391,7 @@ Inkludera automatiskt interna intressentadresser i leveranser för att övervaka
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Konfliktidentifiering
 
@@ -406,7 +406,7 @@ Identifiera potentiella överlappningar mellan kampanjer och resor för att för
 
 ### Grundläggande riktlinjer för testning och validering
 
-* [Simulera innehållsvariationer](../test-approve/simulate-sample-input.md) - Testa upp till 30 personaliseringsscenarier med CSV- eller JSON-filer. Perfekt för testning av flerspråkigt innehåll utan att behöva skapa flera testprofiler. Har stöd för e-post, SMS, push, webb, kodbaserade kort, kort i appen och innehållskort.
+* [Simulera innehållsvariationer](../using/test-approve/simulate-sample-input.md) - Testa upp till 30 personaliseringsscenarier med CSV- eller JSON-filer. Perfekt för testning av flerspråkigt innehåll utan att behöva skapa flera testprofiler. Har stöd för e-post, SMS, push, webb, kodbaserade kort, kort i appen och innehållskort.
 
 * [Skapa testprofiler](../using/audience/creating-test-profiles.md) - Skapa och hantera testprofiler för att simulera kundscenarier. Lär dig hur du flaggar profiler för testning, anger attribut och organiserar testsegment.
 
@@ -479,8 +479,8 @@ Lär dig hur testfunktionerna samverkar med varandra och med era större arbetsf
 
 +++**F: Hur testar jag personalisering utan att skapa många testprofiler?**
 
-**Primär lösning:** Använd [exempelindata](../test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
-**Alternativ:** Skapa 3-5 representativa [testprofiler &#x200B;](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
+**Primär lösning:** Använd [exempelindata](../using/test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
+**Alternativ:** Skapa 3-5 representativa [testprofiler ](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
 **Utbildningsverktyg:** Experimentera först i [personaliseringspresentationen](../using/personalization/personalize.md#playground)
 
 +++
