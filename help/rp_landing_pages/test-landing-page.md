@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: testa, validera, godkänna, godkänna, kvalitetssäkring, qa, testprofiler, personalisering, återgivning, skräppost, innehållstestning, a/b-test, konfliktidentifiering, utsädeslista, korrektur, exempeldata, godkännande-arbetsflöde, e-posttestning, valideringsarbetsflöde
 redpen-status: CREATED_||_2025-08-11_20-30-59
 exl-id: a770412f-2f80-459d-8cce-32212154d154
-source-git-commit: 1b774d95a117903695e6954fb2c820adfdf0d3bb
+source-git-commit: abb2ed3cfa617bb9afc23c8f69634d5afe89b33e
 workflow-type: tm+mt
-source-wordcount: '2768'
+source-wordcount: '2997'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Testnings- och godkännandeprocesserna fungerar som viktiga kvalitetsgater som s
 
 **[Utsändningslistor](../using/configuration/seed-lists.md)** = E-postadresser till interna intressenter som automatiskt inkluderas i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Konfigurera dirigerade listor](../using/configuration/seed-lists.md)
 
-**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment &#x200B;](../using/content-management/content-experiment.md)
+**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment ](../using/content-management/content-experiment.md)
 
 **[Korrektur](../using/content-management/proofs.md)** = Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Skicka korrektur](../using/content-management/proofs.md)
 
@@ -296,7 +296,7 @@ Efter start fortsätter du övervakningen för att upptäcka eventuella problem 
 
 * Granska [liverapporter](../using/building-journeys/report-journey.md) för att spåra prestanda i förhållande till förväntningarna
 
-* Var redo att [pausa eller ändra &#x200B;](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
+* Var redo att [pausa eller ändra ](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
 
 * Dokumentlärdomar som kan förbättra framtida testprocesser
 
@@ -315,7 +315,7 @@ Se hur testkoncept kan användas i verkliga scenarier:
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förhandsgranska, testa och validera innehåll
 
@@ -325,7 +325,7 @@ Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Arbetsflöden för godkännande av resor och kampanjer
 
@@ -335,7 +335,7 @@ Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Testa din resa
 
@@ -345,7 +345,7 @@ Validera resan innan du publicerar den genom att testa den med specifika profile
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Körning av resetorr
 
@@ -355,7 +355,7 @@ Utför en torr körning för att simulera och validera kundresan och identifiera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Övervakning och felsökning
 
@@ -365,7 +365,7 @@ Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
 
 Personalization Playground
 
@@ -385,7 +385,7 @@ Optimera era kampanjer genom att testa olika innehållsvariationer och mäta pre
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Utsändningslistor för övervakning av intressenter
 
@@ -395,7 +395,7 @@ Inkludera automatiskt interna intressentadresser i leveranser för att övervaka
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Konfliktidentifiering
 
@@ -408,7 +408,9 @@ Identifiera potentiella överlappningar mellan kampanjer och resor för att för
 
 ## Ytterligare resurser
 
-### Grundläggande riktlinjer för testning och validering
+>[!BEGINTABS]
+
+>[!TAB Grundläggande stödlinjer]
 
 * [Simulera innehållsvariationer](../using/test-approve/simulate-sample-input.md) - Testa upp till 30 personaliseringsscenarier med CSV- eller JSON-filer. Perfekt för testning av flerspråkigt innehåll utan att behöva skapa flera testprofiler. Har stöd för e-post, SMS, push, webb, kodbaserade kort, kort i appen och innehållskort.
 
@@ -418,61 +420,60 @@ Identifiera potentiella överlappningar mellan kampanjer och resor för att för
 
 * [Vanliga frågor och svar om resan](../using/building-journeys/journey-faq.md) - Snabbreferens för vanliga frågor om resetestning, körning och felsökning.
 
-<!-- ### Dependencies and relationships
+>[!TAB Beroenden och relationer]
 
-Understand how testing capabilities connect to each other and to your broader Journey Optimizer workflows. This section maps prerequisites, upstream/downstream dependencies, and common capability combinations.
+Lär dig hur testfunktionerna samverkar med varandra och med era större arbetsflöden i Journey Optimizer. I det här avsnittet mappas förutsättningar, överordnade och underordnade beroenden samt gemensamma funktionskombinationer.
 
-+++**Prerequisites (required before testing)**
++++**Förutsättningar (krävs före testning)**
 
-* Test profiles must be created before using test mode or content preview
-* Approval policies must be configured before submitting for approval
-* Seed lists must be created before adding to campaigns/journeys
-* Litmus integration required for email rendering tests
-* Journey must be in draft status to use test mode
-* Journey must have namespace configured to use test mode
-
-+++
-
-+++**What testing depends on (upstream)**
-
-* Content creation: Need campaigns or journeys to test
-* Test profiles: Required for test mode and content preview
-* Approval policies: Required for approval workflows
-* Configuration: Channel configurations, email authentication, domain settings
+* Testprofiler måste skapas innan du kan använda testläge eller innehållsförhandsgranskning
+* Godkännandeprinciper måste konfigureras innan de skickas för godkännande
+* Utsändningslistor måste skapas innan de läggs till i kampanjer/resor
+* Litmusintegrering krävs för e-postrenderingstest
+* Resan måste ha utkaststatus för att kunna använda testläge
+* Resursen måste ha ett namnutrymme som är konfigurerat att använda testläge
 
 +++
 
-+++**What depends on testing (downstream)**
++++**Vilka tester som är beroende av (uppströms)**
 
-* Campaign/journey activation: Cannot activate without resolving errors
-* Publishing: Approval may be required before publishing
-* Live monitoring: Post-launch monitoring and reporting
-* Optimization: Use test results to refine future campaigns
-
-+++
-
-+++**Related capabilities**
-
-* Testing + Approval workflows = Quality assurance process
-* Testing + Conflict detection = Preventing customer over-messaging
-* Testing + Content experiments = Performance optimization
-* Testing + Reporting = Continuous improvement cycle
-* Test profiles + Personalization = Content validation
-* Dry run + Test mode = Comprehensive journey validation
+* Skapa innehåll: Behöver kampanjer eller resor för att testa
+* Testprofiler: Krävs för testläge och förhandsgranskning av innehåll
+* Godkännandeprinciper: Krävs för godkännandearbetsflöden
+* Konfiguration: Kanalkonfigurationer, e-postautentisering, domäninställningar
 
 +++
 
-+++**Common capability combinations**
++++**Vad är beroende av testning (nedåt)**
 
-* Content testing: Test profiles + Sample input data + Personalization playground
-* Email validation: Rendering tests + Spam scores + Test profiles + Proofs
-* Journey validation: Test mode + Dry run + Test profiles
-* Pre-launch checklist: All technical tests + Conflict detection + Approval workflows
+* Aktivering av kampanj/resa: Det går inte att aktivera utan att åtgärda fel
+* Publicering: Godkännande kan krävas före publicering
+* Live-övervakning: Övervakning och rapportering efter lansering
+* Optimering: Använd testresultat för att förfina framtida kampanjer
 
 +++
--->
 
-### Vanliga frågor
++++**Relaterade funktioner**
+
+* Testning + Godkännandearbetsflöden = Kvalitetssäkringsprocess
+* Testning + Konfliktidentifiering = Förhindra att kunderna överskickar meddelanden
+* Testning + Innehållsexperiment = Prestandaoptimering
+* Testning + rapportering = Kontinuerlig förbättringscykel
+* Testprofiler + Personalization = Innehållsvalidering
+* Torr körning + testläge = Omfattande validering av resan
+
++++
+
++++**Vanliga funktionskombinationer**
+
+* Innehållstestning: Testprofiler + Exempelindata + Personalization playground
+* E-postvalidering: Återgivningstester + skräppostpoäng + testprofiler + korrektur
+* Resevalidering: Testläge + Torr körning + Testprofiler
+* Checklista före start: Alla tekniska tester + Konfliktidentifiering + Arbetsflöden för godkännande
+
++++
+
+>[!TAB Vanliga frågor]
 
 +++**F: Vilken testning krävs innan en kampanj startas?**
 
@@ -485,7 +486,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 +++**F: Hur testar jag personalisering utan att skapa många testprofiler?**
 
 **Primär lösning:** Använd [exempelindata](../using/test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
-**Alternativ:** Skapa 3-5 representativa [testprofiler &#x200B;](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
+**Alternativ:** Skapa 3-5 representativa [testprofiler ](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
 **Utbildningsverktyg:** Experimentera först i [personaliseringspresentationen](../using/personalization/personalize.md#playground)
 
 +++
@@ -524,3 +525,4 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 +++
 
+>[!ENDTABS]
