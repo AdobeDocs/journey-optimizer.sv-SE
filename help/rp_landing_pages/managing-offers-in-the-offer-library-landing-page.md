@@ -4,15 +4,20 @@ product: Journey Optimizer
 title: Skapa och hantera erbjudanden
 description: Skapa och hantera erbjudanden
 redpen-status: CREATED_||_2025-08-11_21-00-55
+badge: label="Äldre" type="Informative"
 exl-id: 4578e8fe-341e-4678-b21f-d344f0a9a63d
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: 0ab80fd627eb44df6a581547bb0467514d146b49
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # Skapa och hantera erbjudanden{#section-overview}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../using/experience-decisioning/gs-experience-decisioning.md)
 
 Avsnittet&quot;Skapa och hantera erbjudanden&quot; i Adobe Journey Optimizer ger dig möjlighet att skapa skräddarsydda, slagkraftiga erbjudanden som når rätt målgrupp vid rätt tidpunkt. Vare sig ni skapar personaliserade erbjudanden, alternativa valmöjligheter för mer tilltalande eller organiserar era erbjudanden i dynamiska eller statiska samlingar för smidig hantering ger det här avsnittet tydlig och användbar vägledning. Ni får lära er att optimera era erbjudanden med hjälp av strategiska konfigurationer som placeringar, begränsningar och prioriteringar, så att alla interaktioner blir meningsfulla. Ta en titt på hur de här komponenterna fungerar tillsammans för att hjälpa er att leverera smartare och mer engagerande upplevelser till era kunder.
 
@@ -20,7 +25,7 @@ Avsnittet&quot;Skapa och hantera erbjudanden&quot; i Adobe Journey Optimizer ger
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera erbjudanden i Adobe Journey Optimizer
 
@@ -30,7 +35,7 @@ Lär dig hur du skapar personaliserade erbjudanden, konfigurerar representatione
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa reserverbjudanden
 
@@ -40,7 +45,7 @@ Stegvis självstudiekurs om hur du skapar erbjudanden för kunder som inte är b
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Skapa och hantera offertsamlingar
 

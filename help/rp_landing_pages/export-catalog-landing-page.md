@@ -4,15 +4,20 @@ product: Journey Optimizer
 title: Exportera erbjudandekatalogen
 description: Exportera erbjudandekatalogen
 redpen-status: CREATED_||_2025-08-11_21-03-50
+badge: label="Äldre" type="Informative"
 exl-id: b73438e0-8ebe-4188-bb63-1095dcfc4679
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: 0ab80fd627eb44df6a581547bb0467514d146b49
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '292'
 ht-degree: 4%
 
 ---
 
 # Exportera erbjudandekatalogen{#section-overview}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../using/experience-decisioning/gs-experience-decisioning.md)
 
 Att exportera din erbjudandekatalog i Adobe Journey Optimizer är som att öppna dörren för smidig dataintegrering med Adobe Experience Platform. Den här funktionen ser till att personaliserade erbjudanden, reservalternativ, placeringar och beslut automatiskt uppdateras och organiseras i datauppsättningar, redo för avancerad analys och beslutsfattande. Processen är intuitiv och effektiv oavsett om du förhandsgranskar exporterade datauppsättningar, förstår deras struktur eller går in i specifika detaljer som rankningar eller begränsningar. Genom att utforska de ämnen som ligger framför får ni de verktyg ni behöver för att utnyttja den här funktionen och skapa mer exakta, datadrivna kundupplevelser.
 
@@ -20,7 +25,7 @@ Att exportera din erbjudandekatalog i Adobe Journey Optimizer är som att öppna
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Guide till att exportera erbjudandekataloger
 
@@ -30,7 +35,7 @@ Lär dig hur du exporterar din erbjudandekatalog som en datauppsättning till Ad
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Åtkomst till den exporterade erbjudandekatalogen
 
@@ -40,7 +45,7 @@ Upptäck hur du hittar och interagerar med den exporterade erbjudandekatalogen i
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Datauppsättningsreferens för personaliserade erbjudanden
 
@@ -50,7 +55,7 @@ Utforska datamängdens fält och hierarkiska schema för anpassade erbjudanden, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Översikt över beslutsdatauppsättning
 
@@ -60,7 +65,7 @@ Förstå den hierarkiska strukturen, fältdefinitionerna och metadata för beslu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Information om placeringsdatauppsättning
 
@@ -70,7 +75,7 @@ Lär dig mer om fälten, schemat och metadata för Placements-datauppsättningen
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Reservation för datauppsättningsdokumentation
 

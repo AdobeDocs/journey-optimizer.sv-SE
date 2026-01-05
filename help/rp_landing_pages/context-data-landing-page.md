@@ -4,15 +4,20 @@ product: Journey Optimizer
 title: Utnyttja kontextdata
 description: Utnyttja kontextdata
 redpen-status: CREATED_||_2025-08-11_21-02-37
+badge: label="Äldre" type="Informative"
 exl-id: 09ba2a43-f7f3-4414-b7b3-64c9932ff6c7
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: 0ab80fd627eb44df6a581547bb0467514d146b49
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
 
 # Utnyttja kontextdata{#section-overview}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../using/experience-decisioning/gs-experience-decisioning.md)
 
 Med kontextdata kan Adobe Journey Optimizer skapa smartare och mer personaliserade upplevelser genom att använda realtidsinformation för att utforma beslutsresultaten. Oavsett om ni skräddarsyr erbjudandena baserat på en användares enhetstyp eller utnyttjar väderdata för att förfina reglerna för behörighet, kan ni använda kontextdata för att anpassa era strategier med precision. I den här guiden beskrivs hur kontextdata fungerar i två centrala API:er: Decisioning och Edge Decisioning, där deras unika styrkor, begränsningar och användningsfall markeras. Ni får lära er att skicka och använda kontextdata, konfigurera regler för behörighet och använda rankningsformler, allt med steg-för-steg-instruktioner som hjälper er att frigöra sin fulla potential i era kampanjer.
 
@@ -20,7 +25,7 @@ Med kontextdata kan Adobe Journey Optimizer skapa smartare och mer personalisera
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Kom igång med kontextdata
 
@@ -30,7 +35,7 @@ Lär dig hur du använder kontextdata i Adobe Journey Optimizer beslutsmotor, in
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Använda kontextdata i Edge-beslutsbegäranden
 
@@ -40,7 +45,7 @@ Upptäck hur ni skickar kontextdata i Edge Decisioning-begäranden om att levere
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Använda kontextdata i beslutsbegäranden och regler för behörighet
 

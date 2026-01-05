@@ -4,15 +4,20 @@ product: Journey Optimizer
 title: Samla in händelsedata
 description: Samla in händelsedata
 redpen-status: CREATED_||_2025-08-11_21-02-07
+badge: label="Äldre" type="Informative"
 exl-id: fa55faae-1258-49c7-884f-83d1c33db969
-source-git-commit: 2b907a3be8b11ac6308d0b563e122c88478d1d37
+source-git-commit: 0ab80fd627eb44df6a581547bb0467514d146b49
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 1%
+source-wordcount: '216'
+ht-degree: 2%
 
 ---
 
 # Samla in händelsedata{#section-overview}
+
+>[!TIP]
+>
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../using/experience-decisioning/gs-experience-decisioning.md)
 
 Genom att samla in händelsedata i Adobe Journey Optimizer kan ni spåra viktiga interaktioner som beslut, visningar, klickningar och anpassade händelser, så att era erbjudanden är skräddarsydda och effektiva. Dessa data driver viktiga processer som rapportering, frekvensbegränsning och AI-modellbyggande genom smidig integrering med Adobe Experience Platform. Du får lära dig hur olika händelsetyper, oavsett om de aktiveras automatiskt eller anpassas, fungerar ihop för att ge användbar feedback. Från att skapa datauppsättningar till att konfigurera scheman, skapar varje steg en grund för att hämta in och utnyttja insikter, vilket hjälper er att fatta välgrundade beslut och optimera kundupplevelserna med tillförsikt.
 
@@ -20,7 +25,7 @@ Genom att samla in händelsedata i Adobe Journey Optimizer kan ni spåra viktiga
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 Komma igång med insamling av beslutsdata
 
@@ -30,7 +35,7 @@ Lär dig grunderna i datainsamling för beslutshantering, inklusive typer av hä
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Så här skapar du en datauppsättning för att samla in upplevelsehändelser
 
@@ -40,7 +45,7 @@ Följ stegvisa instruktioner för att skapa en datauppsättning och ett schema f
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Konfigurera händelsedatainhämtning för beslutshantering
 
