@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: 2f7c620a712cfc104418bc985bd74e81da12147c
+source-git-commit: b85210a46c928389db985f0f794618209773c071
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1576'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Innan du kan generera filen måste du skapa:
 >id="ajo_dm_file_routing_details"
 >title="Definiera filroutningskonfigurationen"
 >abstract="När du har skapat ett direktutskick skapas och exporteras filen som innehåller målgruppsdata till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/direct-mail/create-direct-mail" text="Skapa ett direktutskick"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/create-direct-mail" text="Skapa ett direktutskick"
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details_header"
@@ -115,6 +115,10 @@ Om du valde **[!UICONTROL SFTP]** som **[!UICONTROL Server type]** fyller du i i
 
 ![](assets/file-routing-config-sftp-detail.png)
 
+>[!TIP]
+>
+>När SSH-nyckelautentisering används måste nyckeln vara en **Base64-kodad OpenSSH** -privat nyckel. Om det är en PPK-formatfil använder du PuTTY-verktyget för att konvertera den till OpenSSH-format. Detaljerade instruktioner finns i [det här avsnittet](#ssh-key-generation).
+
 >[!NOTE]
 >
 >Om du vill ange en sökväg på servern för att spara filen uppdaterar du fältet **[!UICONTROL Filename]** för direktreklamkampanjen så att det innehåller den önskade sökvägen. [Läs mer](create-direct-mail.md#extraction-file)
@@ -145,7 +149,7 @@ Om du valde **[!UICONTROL Data Landing Zone]** som **[!UICONTROL Server type]** 
 
 ![](assets/file-routing-config-dlz-detail.png)
 
-Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landing Zone-behållare per sandlåda. Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
+Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landing Zone-behållare per sandlåda. Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
 >[!ENDTABS]
 
@@ -155,13 +159,43 @@ Välj **[!UICONTROL Submit]** när du har fyllt i informationen om din servertyp
 
 Du kan också välja **[!UICONTROL Save as draft]** för att skapa filroutningskonfigurationen, men du kan inte välja den i en konfiguration förrän den är **[!UICONTROL Active]**.
 
+### Generera SSH-nyckel för SFTP-autentisering {#ssh-key-generation}
+
+Om du använder SFTP med SSH-nyckelautentisering måste du ha en Base64-kodad privat nyckel för OpenSSH. Om nyckeln inte är korrekt formaterad kan du få anslutningsfel när du konfigurerar filroutningen.
+
++++Skapa en Base64-kodad privat nyckel för OpenSSH
+
+1. Generera nyckelparet i PuTTYgen. RSA med 2 048 bitar eller mer rekommenderas.
+1. Välj **Konverteringar** > **Exportera OpenSSH-nyckel** på menyn.
+1. Välj att spara den privata nyckeln **utan lösenfrasskydd** när du uppmanas till detta.
+1. Välj **Alla filer (*) i dialogrutan Spara.*)** som filtyp för att säkerställa att nyckeln sparas som oformaterad text och inte som en .ppk-fil.
+1. Öppna den sparade filen med en textredigerare och verifiera filens format:
+   * Filen måste börja med `-----BEGIN RSA PRIVATE KEY-----` (fem streck före och efter).
+   * Det ska inte finnas någon formulering som anger kryptering.
+   * Filen måste sluta med `-----END RSA PRIVATE KEY-----` (fem streck före och efter).
+1. Kopiera **hela filinnehållet** (inklusive `-----BEGIN/END RSA PRIVATE KEY-----`-markörerna) och koda det till Base64 med ett verktyg som [Base64-kodning och Decode](https://www.base64encode.org/).
+
+   >[!NOTE]
+   >
+   >I Base64-kodningsutdata tar du bort eventuell MIME-formatering. Den kodade nyckeln måste vara en enda kontinuerlig sträng.
+
+1. Nu kan du klistra in Base64-kodad SSH-nyckel i det dedikerade fältet i Journey Optimizer.
+
+>[!CAUTION]
+>
+>Efter Base64-kodning innehåller nyckeln inte längre `-----BEGIN/END RSA PRIVATE KEY-----`-markörerna och får inte innehålla några radbrytningar. Motsvarande offentliga nyckel måste läggas till i SFTP-serverns auktoriserade nyckelfil.
+
+Mer information om hur du ansluter ditt SFTP-konto till Experience Platform finns i [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/sftp).
+
++++
+
 ## Skapa en konfiguration för direktreklam {#direct-mail-surface}
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_settings"
 >title="Definiera inställningar för direktreklam"
 >abstract="En konfiguration för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Konfigurera filroutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Konfigurera filroutning"
 
 <!--
 >[!CONTEXTUALHELP]
