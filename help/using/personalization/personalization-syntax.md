@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 keywords: uttryck, redigerare, syntax, personalisering
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
-source-git-commit: 50eff8b6c4aaa432595bf16ef1d567c272d6b084
+source-git-commit: 9c013883e1bcdbf7dffffa599a910178def80e39
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '666'
 ht-degree: 1%
 
 ---
@@ -51,6 +51,26 @@ där:
 
   `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}`
 
+## Reserverade nyckelord {#reserved-keywords}
+
+Vissa nyckelord är reserverade i Profile Query Language (PQL) och kan inte användas direkt som fält- eller variabelnamn i personaliseringsuttryck. Om XDM-schemat innehåller fält med namn som matchar reserverade nyckelord måste du undvika dem med hjälp av bakterier (`` ` ``) för att referera till dem i dina uttryck.
+
+**Reserverade nyckelord är:**
+
+* `next`
+* `last`
+* `this`
+
+**Exempel:**
+
+Om ditt profilschema har ett fält med namnet `next` måste du omsluta det med bakgrunder:
+
+```
+{{profile.person.`next`.name}}
+```
+
+Utan de här blocken misslyckas personaliseringsredigeraren med valideringen och ett fel inträffar.
+
 ## Tillgängliga namnutrymmen {#namespaces}
 
 * **Profil**
@@ -75,7 +95,7 @@ där:
 
 * **Målgrupp**
 
-  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"}.
+  Mer information om segmenteringstjänsten finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 * **Erbjudanden**
 
