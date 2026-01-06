@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: testa, validera, godkänna, godkänna, kvalitetssäkring, qa, testprofiler, personalisering, återgivning, skräppost, innehållstestning, a/b-test, konfliktidentifiering, utsädeslista, korrektur, exempeldata, godkännande-arbetsflöde, e-posttestning, valideringsarbetsflöde
 redpen-status: CREATED_||_2025-08-11_20-30-59
 exl-id: a770412f-2f80-459d-8cce-32212154d154
-source-git-commit: 670503f9aedcd3008b3cd63c0ec6e59fac3dc31a
+source-git-commit: 23ca6aa1372e66439002f02896e46ccead7e28ce
 workflow-type: tm+mt
 source-wordcount: '2328'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Denna landningssida hjälper er att välja rätt testmetod baserat på vad ni by
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förhandsgranska, testa och validera innehåll
 
@@ -36,7 +36,7 @@ Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Arbetsflöden för godkännande av resor och kampanjer
 
@@ -46,7 +46,7 @@ Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Testa din resa
 
@@ -56,7 +56,7 @@ Validera resan innan du publicerar den genom att testa den med specifika profile
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Körning av resetorr
 
@@ -66,7 +66,7 @@ Utför en torr körning för att simulera och validera kundresan och identifiera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Övervakning och felsökning
 
@@ -76,7 +76,7 @@ Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
 
 Personalization Playground
 
@@ -96,7 +96,7 @@ Optimera era kampanjer genom att testa olika innehållsvariationer och mäta pre
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Utsändningslistor för övervakning av intressenter
 
@@ -106,7 +106,7 @@ Inkludera automatiskt interna intressentadresser i leveranser för att övervaka
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Konfliktidentifiering
 
@@ -330,7 +330,7 @@ Testa resor som avser prenumerationslistor med dynamisk e-postadress. Validera p
 </td>
 <td>
 <a href="../using/building-journeys/weekday-email-uc.md">
-<img alt="Skicka tidsbundna meddelanden" src="../using/assets/do-not-localize/icon-first-journey.svg">
+<img alt="Skicka tidsbundna meddelanden" src="../using/assets/do-not-localize/calendar.jpeg">
 </a>
 <div>
 <a href="../using/building-journeys/weekday-email-uc.md"><strong>Skicka tidsbundna meddelanden</strong></a>
@@ -369,7 +369,7 @@ Bekanta dig med dessa viktiga testkoncept för att bättre förstå Journey Opti
 
 **[Startlistor](../using/configuration/seed-lists.md)** - E-postadresser till interna intressenter inkluderas automatiskt i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Konfigurera dirigerade listor](../using/configuration/seed-lists.md)
 
-**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** - A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment &#x200B;](../using/content-management/content-experiment.md)
+**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** - A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment ](../using/content-management/content-experiment.md)
 
 **[Korrektur](../using/content-management/proofs.md)** - Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Skicka korrektur](../using/content-management/proofs.md)
 
@@ -461,7 +461,7 @@ Lär dig hur testfunktionerna samverkar med varandra och med era större arbetsf
 +++**F: Hur testar jag personalisering utan att skapa många testprofiler?**
 
 **Primär lösning:** Använd [exempelindata](../using/test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
-**Alternativ:** Skapa 3-5 representativa [testprofiler &#x200B;](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
+**Alternativ:** Skapa 3-5 representativa [testprofiler ](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
 **Utbildningsverktyg:** Experimentera först i [personaliseringspresentationen](../using/personalization/personalize.md#playground)
 
 +++
