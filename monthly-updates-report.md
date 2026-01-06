@@ -5,9 +5,9 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: 3f0da68c95a1fbd5b3cf6beaa38eae1a475ab941
+source-git-commit: e0e82dad61d3ccc1c48435ba7b49bff51c7e9636
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,34 @@ ht-degree: 0%
 
 # Uppdateringsrapport för månatlig dokumentation
 
-*Rapport skapad för 3 november - 11 december 2024*
+## Rapport: 11 december 2024 - 6 januari 2026
 
-## Nya sidor
+### Nya sidor
+
+- [Kom igång med spårning](help/using/start/get-started-tracking.md) - 19 dec
+
+### Uppdaterade sidor
+
+- [Journey Optimizer skyddsräcken och begränsningar](help/using/start/guardrails.md) - 6 jan
+- [Konfiguration för direktreklam](help/using/direct-mail/direct-mail-configuration.md) - 5 jan
+- [Personalization-syntax](help/using/personalization/personalization-syntax.md) - 5 jan
+- [Kom igång med resor](help/using/building-journeys/journey.md) - 2 jan
+- [Kom igång med kampanjer](help/using/campaigns/get-started-with-campaigns.md) - 2 jan
+- [Hantera kampanjer](help/using/campaigns/manage-campaigns.md) - 2 jan
+- [Delegera en underdomän](help/using/configuration/delegate-subdomain.md) - 2 jan
+- [Konfigurera Google TXT-post](help/using/configuration/google-txt.md) - 2 jan
+- [Kom igång med spårning](help/using/start/get-started-tracking.md) - 23 dec
+- [Lista med steghändelsefält](help/using/reports/sharing-field-list.md) - 23 dec
+- [Skicka bevis](help/using/content-management/proofs.md) - 23 dec
+- [Arbeta med regeluppsättningar för kanalbegränsning](help/using/conflict-prioritization/channel-capping.md) - 23 dec
+- [Använd anpassade överförda målgrupper för beslut](help/using/offers/custom-upload-decisioning.md) - 23 dec
+- [Kom igång med kommunikationskanaler](help/using/channels/gs-channels.md) - 22 dec
+- [Versionsinformation 2025](help/using/rn/release-notes-2025.md) - 18 dec
+- [Arbeta med AEM-fragment](help/using/integrations/aem-fragments.md) - 18 dec
+
+## Föregående rapport: 3 november - 11 december 2024
+
+### Nya sidor
 
 - [Guide för in- och utträdesvillkor för resa](help/using/building-journeys/entry-exit-criteria-guide.md) - 11 dec
 - [Användningsexempel på resa](help/using/building-journeys/jo-use-cases.md) - 11 dec
@@ -28,7 +53,7 @@ ht-degree: 0%
 - [Publicera och hantera kodbaserade upplevelser](help/using/code-based/publish-code-based.md) - 22 nov
 - [Testa kodbaserade upplevelser](help/using/code-based/test-code-based.md) - 22 nov
 
-## Uppdaterade sidor
+### Uppdaterade sidor
 
 - [Sök efter Adobe Experience Platform-data för personalisering](help/using/data/lookup-aep-data.md) - 10 dec
 - [Konfigurera mobilprogram](help/using/configuration/set-mobile-config.md) - dec 6
@@ -88,7 +113,7 @@ ht-degree: 0%
 - [Skapa placeringar](help/using/offers/offer-library/creating-placements.md) - 5 nov
 - [Skapa rankningsstrategier](help/using/offers/ranking/create-ranking-strategies.md) - 5 nov
 
-## Föregående rapport: 1 oktober - 3 november 2025
+## Föregående rapport: 1 oktober - 3 november 2024
 
 ### Nya sidor
 
@@ -104,11 +129,8 @@ ht-degree: 0%
 - [Skapa beslutsprofiler](help/using/experience-decisioning/create-decision-policy.md) - 7 okt
 - [Använd beslutsprinciper i meddelanden](help/using/experience-decisioning/use-decision-policy.md) - 9 okt
 - [Konfigurera kanalkonfigurationen](help/using/orchestrated/channel-config.md) - 14 okt
-- [Designa ett push-meddelande](help/using/push/design-push-web.md) - 14 okt
-- [Konfiguration för push-meddelanden](help/using/push/push-configuration-web.md) - 14 okt
 - [Arbeta med steg för kundresa](help/using/reports/journey-step-events-overview.md) - 21 oktober
 - [Adobe Journey Optimizer-lanseringscykel](help/using/rn/releases.md) - 28 okt
-- [Designmeddelandeinnehåll](help/using/start/message-content-design.md) - 18 okt
 
 ### Uppdaterade sidor
 
@@ -158,7 +180,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt
