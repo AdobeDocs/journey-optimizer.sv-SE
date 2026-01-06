@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: testa, validera, godkänna, godkänna, kvalitetssäkring, qa, testprofiler, personalisering, återgivning, skräppost, innehållstestning, a/b-test, konfliktidentifiering, utsädeslista, korrektur, exempeldata, godkännande-arbetsflöde, e-posttestning, valideringsarbetsflöde
 redpen-status: CREATED_||_2025-08-11_20-30-59
 exl-id: a770412f-2f80-459d-8cce-32212154d154
-source-git-commit: 1fd6f4cc191a65fcd62457ee22509473bbfe2b98
+source-git-commit: ab78157988c533b3dc8a0c747bf094649c7a8671
 workflow-type: tm+mt
 source-wordcount: '2753'
 ht-degree: 0%
@@ -21,6 +21,101 @@ ht-degree: 0%
 I det här avsnittet beskrivs alla testnings- och godkännandefunktioner i Journey Optimizer. Du hittar verktyg för att förhandsgranska innehåll med testprofiler, validera reselogik, kontrollera e-poståtergivning och skräppostpoäng, köra A/B-experiment, identifiera konflikter och konfigurera arbetsflöden för godkännande.
 
 Denna landningssida hjälper er att välja rätt testmetod baserat på vad ni bygger (kampanjer kontra resor), leder er genom rekommenderade testarbetsflöden och ger snabb tillgång till alla testnings- och godkännanderesurser. Börja med [Välj din testmetod](#choose-your-testing-approach) nedan för att identifiera vilka verktyg som gäller för ditt användningsfall. Definitioner av nyckeltesttermer finns i [Nyckelterminologi](#key-terminology).
+
+## Testa och godkänna innehåll
+
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Förhandsgranska, testa och validera innehåll
+
+Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll med testprofiler, e-postrenderingstester, utvärderingar av skräppostpoäng med mera.
+
+[Förhandsgranska och testa innehåll](preview-test-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+
+Arbetsflöden för godkännande av resor och kampanjer
+
+Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att säkerställa kvalitetskontroll för resor och kampanjer.
+
+[Läs mer om arbetsflöden för godkännande](approve-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Testa din resa
+
+Validera resan innan du publicerar den genom att testa den med specifika profiler för att säkerställa att händelser, villkor och åtgärder fungerar som förväntat. Tillgängligt för utkastresor som använder ett namnutrymme.
+
+[Testa din resa](../using/building-journeys/testing-the-journey.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+
+Körning av resetorr
+
+Utför en torr körning för att simulera och validera kundresan och identifiera potentiella problem innan du publicerar.
+
+[Lär dig mer om körning av körning med resan](../using/building-journeys/journey-dry-run.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Övervakning och felsökning
+
+Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder för att lösa problem med kundresan och prestandan.
+
+[Visa övervakning och felsökning](troubleshoot-journey-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
+
+Personalization Playground
+
+Experimentera med personaliseringsuttryck i en säker miljö. Testa koden med exempeldata och förhandsgranska resultaten innan du lägger in dem i era kampanjer och resor.
+
+[Läs mer om Personalization Playground](../using/personalization/personalize.md#playground)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
+
+Content Experiments &amp; A/B Testing
+
+Optimera era kampanjer genom att testa olika innehållsvariationer och mäta prestanda för att identifiera de mest effektiva behandlingarna. Endast tillgängligt för kampanjer (stöder A/B och multiväpnade banditexperiment).
+
+[Lär dig mer om Content Experiments](../using/content-management/get-started-experiment.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+
+Utsändningslistor för övervakning av intressenter
+
+Inkludera automatiskt interna intressentadresser i leveranser för att övervaka faktiska meddelanden som skickas till kunderna för kvalitetssäkring och efterlevnad. Endast tillgängligt för e-postkanaler.
+
+[Konfigurera dirigeringslistor](../using/configuration/seed-lists.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+
+Konfliktidentifiering
+
+Identifiera potentiella överlappningar mellan kampanjer och resor för att förhindra överväldigande kunder med för många samtidiga kommunikationer. Tillgängligt för kampanjer och för enhetsaktiviteter, målgruppskvalifikationer och för att läsa målgruppsresor.
+
+[Identifiera konflikter](../using/conflict-prioritization/conflicts.md)
+:::
+
+::::
 
 ## Varför det är viktigt att testa och godkänna
 
@@ -273,7 +368,7 @@ Efter start fortsätter du övervakningen för att upptäcka eventuella problem 
 
 * Granska [liverapporter](../using/building-journeys/report-journey.md) för att spåra prestanda i förhållande till förväntningarna
 
-* Var redo att [pausa eller ändra &#x200B;](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
+* Var redo att [pausa eller ändra ](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
 
 * Dokumentlärdomar som kan förbättra framtida testprocesser
 
@@ -288,101 +383,6 @@ Se hur testkoncept kan användas i verkliga scenarier:
 | **[Skicka tidsbundna meddelanden](../using/building-journeys/weekday-email-uc.md)** | Testa resor med tidsbaserade villkor för att säkerställa att meddelanden skickas på specifika dagar. Validera vänteaktiviteter och schemaläggningslogik. | Tidsbaserade villkor, vänteaktiviteter, schemaläggningsvalidering |
 | **[Utforska fler användningsexempel för resor](../using/building-journeys/jo-use-cases.md)** | Få tillgång till en omfattande samling praktiska exempel som omfattar upplevelsehändelser, flerkanalsmeddelanden och externa systemintegreringar. | Olika scenarier, avancerade mönster, integrationstestning |
 
-## Testa och godkänna innehåll
-
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
-
-Förhandsgranska, testa och validera innehåll
-
-Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll med testprofiler, e-postrenderingstester, utvärderingar av skräppostpoäng med mera.
-
-[Förhandsgranska och testa innehåll](preview-test-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
-
-Arbetsflöden för godkännande av resor och kampanjer
-
-Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att säkerställa kvalitetskontroll för resor och kampanjer.
-
-[Läs mer om arbetsflöden för godkännande](approve-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
-
-Testa din resa
-
-Validera resan innan du publicerar den genom att testa den med specifika profiler för att säkerställa att händelser, villkor och åtgärder fungerar som förväntat. Tillgängligt för utkastresor som använder ett namnutrymme.
-
-[Testa din resa](../using/building-journeys/testing-the-journey.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
-
-Körning av resetorr
-
-Utför en torr körning för att simulera och validera kundresan och identifiera potentiella problem innan du publicerar.
-
-[Lär dig mer om körning av körning med resan](../using/building-journeys/journey-dry-run.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
-
-Övervakning och felsökning
-
-Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder för att lösa problem med kundresan och prestandan.
-
-[Visa övervakning och felsökning](troubleshoot-journey-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
-
-Personalization Playground
-
-Experimentera med personaliseringsuttryck i en säker miljö. Testa koden med exempeldata och förhandsgranska resultaten innan du lägger in dem i era kampanjer och resor.
-
-[Läs mer om Personalization Playground](../using/personalization/personalize.md#playground)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/data.svg)
-
-Content Experiments &amp; A/B Testing
-
-Optimera era kampanjer genom att testa olika innehållsvariationer och mäta prestanda för att identifiera de mest effektiva behandlingarna. Endast tillgängligt för kampanjer (stöder A/B och multiväpnade banditexperiment).
-
-[Lär dig mer om Content Experiments](../using/content-management/get-started-experiment.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
-
-Utsändningslistor för övervakning av intressenter
-
-Inkludera automatiskt interna intressentadresser i leveranser för att övervaka faktiska meddelanden som skickas till kunderna för kvalitetssäkring och efterlevnad. Endast tillgängligt för e-postkanaler.
-
-[Konfigurera dirigeringslistor](../using/configuration/seed-lists.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
-
-Konfliktidentifiering
-
-Identifiera potentiella överlappningar mellan kampanjer och resor för att förhindra överväldigande kunder med för många samtidiga kommunikationer. Tillgängligt för kampanjer och för enhetsaktiviteter, målgruppskvalifikationer och för att läsa målgruppsresor.
-
-[Identifiera konflikter](../using/conflict-prioritization/conflicts.md)
-:::
-
-::::
-
 ## Nyckelterminologi
 
 **[Testa profiler](../using/content-management/test-profiles.md)** = Syntetiska kundprofiler (inte verkliga kunder) som används för att förhandsgranska personaliserat innehåll. Flaggas i Kundprofiltjänst i realtid. Krävs för testläge och förhandsgranskning av innehåll. [Lär dig skapa testprofiler](../using/audience/creating-test-profiles.md)
@@ -395,7 +395,7 @@ Identifiera potentiella överlappningar mellan kampanjer och resor för att för
 
 **[Utsändningslistor](../using/configuration/seed-lists.md)** = E-postadresser till interna intressenter som automatiskt inkluderas i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Konfigurera dirigerade listor](../using/configuration/seed-lists.md)
 
-**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment &#x200B;](../using/content-management/content-experiment.md)
+**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment ](../using/content-management/content-experiment.md)
 
 **[Korrektur](../using/content-management/proofs.md)** = Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Skicka korrektur](../using/content-management/proofs.md)
 
@@ -487,7 +487,7 @@ Lär dig hur testfunktionerna samverkar med varandra och med era större arbetsf
 +++**F: Hur testar jag personalisering utan att skapa många testprofiler?**
 
 **Primär lösning:** Använd [exempelindata](../using/test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
-**Alternativ:** Skapa 3-5 representativa [testprofiler &#x200B;](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
+**Alternativ:** Skapa 3-5 representativa [testprofiler ](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
 **Utbildningsverktyg:** Experimentera först i [personaliseringspresentationen](../using/personalization/personalize.md#playground)
 
 +++
