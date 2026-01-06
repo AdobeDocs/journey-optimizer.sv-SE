@@ -8,7 +8,7 @@ topic: Administration
 role: User
 level: Beginner
 keywords: spåra, övervaka, analysera, rapportera, leverera
-source-git-commit: 4dfda2a13bfd01c7c556ae3e8eb31916592c569b
+source-git-commit: 955dbbf944e40cd18530c9777c7f06ad39e45563
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Kom igång med spårning i Journey Optimizer {#get-started-tracking}
 
-Tack vare spårning och övervakning kan ni mäta kampanjens effektivitet, optimera kundupplevelserna och se till att meddelandena når de avsedda mottagarna. Journey Optimizer har omfattande spårningsfunktioner som fångar upp kundinteraktioner, leveransresultat och systemhälsa - vilket hjälper er att fatta datadrivna beslut samtidigt som ni respekterar sekretess och upprätthåller regelefterlevnaden.
+Med spårning kan ni mäta kampanjens effektivitet, optimera kundupplevelserna och se till att meddelandena når de avsedda mottagarna. Journey Optimizer har omfattande spårningsfunktioner som fångar upp kundinteraktioner, leveransresultat och systemhälsa - vilket hjälper er att fatta datadrivna beslut samtidigt som ni respekterar sekretess och upprätthåller regelefterlevnaden.
 
 Den mesta spårningen konfigureras automatiskt när du skapar meddelanden och resor. För avancerade scenarier kan du ställa in anpassade mått, konfigurera URL-parametrar och integrera med externa analysplattformar. Få tillgång till dina spårningsdata via inbyggda rapporter eller exportera dem för djupare analys i Customer Journey Analytics.
 
@@ -175,7 +175,7 @@ Kodbaserade upplevelser kräver implementeringskonfiguration för att skicka sp�
 
 Innan spårning fungerar måste du konfigurera implementeringen för att skicka interaktionshändelser (skärmar, klickningar) till Adobe Experience Platform. Detta kräver:
 
-* Konfigurera en dataström för Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=sv-SE)
+* Konfigurera en dataström för Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html)
 * Implementera händelseinsamling i koden med Web SDK eller Mobile SDK.
 * Skicka visnings- och interaktionshändelser när innehåll visas eller klickas.
 
@@ -232,9 +232,9 @@ Förutom spårning på kanalnivå kan du konfigurera spårning för att mäta ö
 
 * **Konfigurera övervakning av anpassade åtgärder** - Ställ in spårning för integreringar med externa system för att övervaka API-anrop, svarstider och felmönster. [Läs mer](../action/reporting.md)
 
-* **Anpassad rapportering och dataexport** - Bygg skräddarsydda rapporter och exportera spårningsdata till externa system för djupare analyser. [Läs mer](../reports/sharing-overview.md)
+* **Skapa anpassade rapporter och exportera data** - Skapa anpassade rapporter och exportera spårningsdata till externa system för djupare analyser. [Läs mer](../reports/sharing-overview.md)
 
-**Visa enhetliga prestanda:** Få tillgång till omfattande rapporter för både kampanjer och resor för att jämföra prestanda via e-post, push, SMS och andra kanaler och för att förstå vilka kombinationer som ger bäst resultat. [Kampanjrapporter](../reports/campaign-global-report-cja.md) | [Reserapporter](../reports/journey-global-report-cja.md)
+* **Visa enhetliga prestanda:** Få tillgång till omfattande rapporter för både kampanjer och resor för att jämföra prestanda via e-post, push, SMS och andra kanaler och för att förstå vilka kombinationer som ger bäst resultat. [Kampanjrapporter](../reports/campaign-global-report-cja.md) | [Reserapporter](../reports/journey-global-report-cja.md)
 
 ## Spåra optimering och beslutsresultat {#optimization-decisioning-tracking}
 
@@ -242,27 +242,29 @@ Journey Optimizer spårar automatiskt optimeringsexperiment, målgruppsstrategie
 
 ### Ställ in optimeringsspårning {#optimization-tracking}
 
-* **Optimering av kampanjer och resor**
+* **Optimering av kampanjer och resor**:
 
    * När du skapar experiment definierar du vilka mätvärden som ska spåras (konverteringar, klickningar, anpassade händelser). Journey Optimizer samlar automatiskt in prestandadata för varje behandling. [Läs mer](../campaigns/campaigns-message-optimization.md#experimentation)
 
    * Skapa målinriktningsregler för att leverera olika innehåll till olika målgruppssegment. Journey Optimizer spårar automatiskt interaktionsstatistik för varje målgrupp så att ni kan jämföra prestanda mellan olika segment. [Läs mer](../campaigns/campaigns-message-optimization.md#targeting)
 
-* **Sökvägsoptimering** - Lägg till en **Optimera**-aktivitet på resan och konfigurera flera sökvägar. Journey Optimizer spårar automatiskt vilka banprofiler som används och mäter prestandan. [Läs mer](../building-journeys/optimize.md)
+* **Sökvägsoptimering**: Lägg till en **Optimera**-aktivitet på resan och konfigurera flera sökvägar. Journey Optimizer spårar automatiskt vilka banprofiler som används och mäter prestandan. [Läs mer](../building-journeys/optimize.md)
 
-**Analysera resultat:** Visa konverteringsgrader, statistisk signifikans och lyft mellan behandlingar i experimenteringsrapporter, eller jämför interaktionsvärden mellan målsegment. [Rapport om experimentkampanj](../reports/campaign-global-report-cja-experimentation.md) | [Rapport om experimenterad resa &#x200B;](../reports/journey-global-report-cja-experimentation.md) | [Rapport om målinriktning på resa](../reports/journey-global-report-cja.md#targeting)
+Analysera resultaten: visa konverteringsgrader, statistisk signifikans och lyft mellan behandlingar i experimentrapporter, eller jämföra interaktionsvärden för olika målsegment. [Rapport om experimentkampanj](../reports/campaign-global-report-cja-experimentation.md) | [Rapport om experimenterad resa ](../reports/journey-global-report-cja-experimentation.md) | [Rapport om målinriktning på resa](../reports/journey-global-report-cja.md#targeting)
 
 ### Spåra beslutsprestanda {#decisioning-tracking}
 
 När du använder Decisioning för att personalisera innehåll spårar Journey Optimizer automatiskt beslutshändelser, visningar och klickningar utan någon ytterligare konfiguration.
 
 * **Automatisk händelsehämtning** - Journey Optimizer samlar automatiskt in beslutshändelser när ett beslutsobjekt väljs för en profil.
-* **Impressionsspårning** - För e-postmeddelanden spåras visningar automatiskt. För kodbaserade upplevelser måste ni implementera dispositionshändelser i koden.
+* **Impressionsspårning** - För e-postmeddelanden spåras visningar automatiskt. För kodbaserade upplevelser måste ni implementera dispositionshändelser i koden. [Läs mer](../code-based/code-based-implementation-samples.md#client-side-how)
 * **Klickspårning** - Klickningar på beslutsobjekt spåras automatiskt i e-postmeddelanden. Kodbaserade upplevelser kräver implementeringshändelser.
 
-**Krav för kodbaserad spårning:** För att spåra beslut i kodbaserade upplevelser måste implementeringen skicka interaktionshändelser (displayer och clicks) till Adobe Experience Platform med Web SDK eller Mobile SDK. [Läs mer](../experience-decisioning/data-collection/schema-requirement.md)
+>[!NOTE]
+>
+>Om du vill spåra beslut i **kodbaserade upplevelser** kontrollerar du att implementeringen skickar interaktionshändelser (displayer och klickningar) till Adobe Experience Platform med Web SDK eller Mobile SDK. [Läs mer](../experience-decisioning/data-collection/schema-requirement.md)
 
-**Analysera prestanda:** Visa KPI för beslutsfattande, jämföra beslutsobjekt, analysera urvalsstrategier och övervaka AI-modellens prestanda i rapporter. [Läs mer](../experience-decisioning/cja-reporting.md)
+För att övervaka prestanda: visa KPI:er för beslutsfattande, jämföra beslutsobjekt, analysera urvalsstrategier och övervaka AI-modellens prestanda i rapporter. [Läs mer](../experience-decisioning/cja-reporting.md)
 
 ## Kontroll av dataanvändning {#data-governance}
 
