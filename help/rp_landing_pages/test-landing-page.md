@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: testa, validera, godkänna, godkänna, kvalitetssäkring, qa, testprofiler, personalisering, återgivning, skräppost, innehållstestning, a/b-test, konfliktidentifiering, utsädeslista, korrektur, exempeldata, godkännande-arbetsflöde, e-posttestning, valideringsarbetsflöde
 redpen-status: CREATED_||_2025-08-11_20-30-59
 exl-id: a770412f-2f80-459d-8cce-32212154d154
-source-git-commit: ab78157988c533b3dc8a0c747bf094649c7a8671
+source-git-commit: 3f2bf04dbeb3e5099c151a412a4a5e54f13122ee
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Denna landningssida hjälper er att välja rätt testmetod baserat på vad ni by
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förhandsgranska, testa och validera innehåll
 
@@ -36,7 +36,7 @@ Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Arbetsflöden för godkännande av resor och kampanjer
 
@@ -46,7 +46,7 @@ Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Testa din resa
 
@@ -56,7 +56,7 @@ Validera resan innan du publicerar den genom att testa den med specifika profile
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Körning av resetorr
 
@@ -66,7 +66,7 @@ Utför en torr körning för att simulera och validera kundresan och identifiera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Övervakning och felsökning
 
@@ -76,7 +76,7 @@ Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
 
 Personalization Playground
 
@@ -96,7 +96,7 @@ Optimera era kampanjer genom att testa olika innehållsvariationer och mäta pre
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Utsändningslistor för övervakning av intressenter
 
@@ -106,7 +106,7 @@ Inkludera automatiskt interna intressentadresser i leveranser för att övervaka
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Konfliktidentifiering
 
@@ -169,44 +169,46 @@ Testnings- och godkännandeprocesserna fungerar som viktiga kvalitetsgater som s
 
 -->
 
-## Beslutsträd för val av testmetod
+<!--
+## Decision tree for testing method selection
 
-Använd det här beslutsträdet för att snabbt identifiera rätt testverktyg för ditt specifika scenario. Svara på varje fråga baserat på ditt sammanhang (vad du bygger, vad du behöver validera och vilken kanal du använder) för att navigera direkt till relevanta funktioner och dokumentation.
+Use this decision tree to quickly identify the right testing tools for your specific scenario. Answer each question based on your context (what you're building, what you need to validate, and which channel you're using) to navigate directly to the relevant capabilities and documentation.
 
-+++ **Fråga 1: Vad testar du?**
++++ **Question 1: What are you testing?**
 
-* Campaign → [Välj testmetod](#choose-your-testing-approach)
-* Resa → [Välj testmetod](#choose-your-testing-approach)
-* Personalization-uttryck → [Personalization playground](#test--approve-content)
+* Campaign → [Choose your testing approach](#choose-your-testing-approach)
+* Journey → [Choose your testing approach](#choose-your-testing-approach)
+* Personalization expressions → [Personalization playground](#test--approve-content)
 +++
 
-+++**Fråga 2: Vilken aspekt behöver valideras?**
++++**Question 2: What aspect needs validation?**
 
-* Innehåll och personalisering → [Testa profiler](#choose-your-testing-approach) eller [exempelindata](#choose-your-testing-approach)
-* E-postvisning → [Återgivningstest via e-post](#2-technical-validation)
-* Leverans → [Spam score check](#2-technical-validation)
-* Reselogik och -flöde → [Testläge](#choose-your-testing-approach) eller [torr körning](#test--approve-content)
-* Prestandajämförelse → [Innehållsexperiment](#test--approve-content) (endast kampanjer)
-* Tidskonflikter → [Konfliktidentifiering](#test--approve-content)
-* Granskning av intressenter → [Arbetsflöde för godkännande](#test--approve-content)
+* Content and personalization → [Test profiles](#choose-your-testing-approach) or [sample input data](#choose-your-testing-approach)
+* Email display → [Email rendering tests](#2-technical-validation)
+* Deliverability → [Spam score checks](#2-technical-validation)
+* Journey logic and flow → [Test mode](#choose-your-testing-approach) or [dry run](#test--approve-content)
+* Performance comparison → [Content experiment](#test--approve-content) (campaigns only)
+* Timing conflicts → [Conflict detection](#test--approve-content)
+* Stakeholder review → [Approval workflow](#test--approve-content)
 +++
 
-+++**Fråga 3: Vilken kanal?**
++++**Question 3: What channel?**
 
-* E-post → Alla tillgängliga testmetoder (se [Välj testmetod](#choose-your-testing-approach))
-* SMS, push → [Innehållstestning](#choose-your-testing-approach), [exempelindata](#choose-your-testing-approach), [arbetsflöden för godkännande](#test--approve-content)
-* Webb, In-app, kodbaserad → [Innehållstestning](#choose-your-testing-approach), [exempelindata](#choose-your-testing-approach), [arbetsflöden för godkännande](#test--approve-content)
-* Flera kanaler → Testa varje kanal separat
+* Email → All testing methods available (see [Choose your testing approach](#choose-your-testing-approach))
+* SMS, Push → [Content testing](#choose-your-testing-approach), [sample input data](#choose-your-testing-approach), [approval workflows](#test--approve-content)
+* Web, In-app, Code-based → [Content testing](#choose-your-testing-approach), [sample input data](#choose-your-testing-approach), [approval workflows](#test--approve-content)
+* Multiple channels → Test each channel separately
 +++
 
-+++**Fråga 4: När i arbetsflödet?**
++++**Question 4: When in the workflow?**
 
-* Innan du skapar → [Personalization playground](#test--approve-content) för lärande
-* Under generering → [Testprofiler](#choose-your-testing-approach) och [exempelindata](#choose-your-testing-approach) för validering
-* Innan du startar → [Återgivningstester](#2-technical-validation), [skräppostkontroller](#2-technical-validation), [konfliktidentifiering](#test--approve-content), [godkännanden](#test--approve-content)
-* Efter start → [Live-rapporter](../using/building-journeys/report-journey.md) och [övervakning](#test--approve-content)
+* Before building → [Personalization playground](#test--approve-content) for learning
+* During building → [Test profiles](#choose-your-testing-approach) and [sample input data](#choose-your-testing-approach) for validation
+* Before launch → [Rendering tests](#2-technical-validation), [spam checks](#2-technical-validation), [conflict detection](#test--approve-content), [approvals](#test--approve-content)
+* After launch → [Live reports](../using/building-journeys/report-journey.md) and [monitoring](#test--approve-content)
 +++
 
+-->
 
 ## Välj testmetod
 
@@ -368,7 +370,7 @@ Efter start fortsätter du övervakningen för att upptäcka eventuella problem 
 
 * Granska [liverapporter](../using/building-journeys/report-journey.md) för att spåra prestanda i förhållande till förväntningarna
 
-* Var redo att [pausa eller ändra &#x200B;](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
+* Var redo att [pausa eller ändra ](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
 
 * Dokumentlärdomar som kan förbättra framtida testprocesser
 
@@ -395,7 +397,7 @@ Se hur testkoncept kan användas i verkliga scenarier:
 
 **[Utsändningslistor](../using/configuration/seed-lists.md)** = E-postadresser till interna intressenter som automatiskt inkluderas i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Konfigurera dirigerade listor](../using/configuration/seed-lists.md)
 
-**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment &#x200B;](../using/content-management/content-experiment.md)
+**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment ](../using/content-management/content-experiment.md)
 
 **[Korrektur](../using/content-management/proofs.md)** = Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Skicka korrektur](../using/content-management/proofs.md)
 
@@ -487,7 +489,7 @@ Lär dig hur testfunktionerna samverkar med varandra och med era större arbetsf
 +++**F: Hur testar jag personalisering utan att skapa många testprofiler?**
 
 **Primär lösning:** Använd [exempelindata](../using/test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
-**Alternativ:** Skapa 3-5 representativa [testprofiler &#x200B;](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
+**Alternativ:** Skapa 3-5 representativa [testprofiler ](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
 **Utbildningsverktyg:** Experimentera först i [personaliseringspresentationen](../using/personalization/personalize.md#playground)
 
 +++
