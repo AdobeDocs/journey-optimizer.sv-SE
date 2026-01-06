@@ -326,7 +326,7 @@ Bekanta dig med dessa viktiga testkoncept för att bättre förstå Journey Opti
 
 **[Startlistor](../using/configuration/seed-lists.md)** - E-postadresser till interna intressenter inkluderas automatiskt i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Konfigurera dirigerade listor](../using/configuration/seed-lists.md)
 
-**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** - A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment ](../using/content-management/content-experiment.md)
+**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** - A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment &#x200B;](../using/content-management/content-experiment.md)
 
 **[Korrektur](../using/content-management/proofs.md)** - Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Skicka korrektur](../using/content-management/proofs.md)
 
@@ -418,7 +418,7 @@ Lär dig hur testfunktionerna samverkar med varandra och med era större arbetsf
 +++**F: Hur testar jag personalisering utan att skapa många testprofiler?**
 
 **Primär lösning:** Använd [exempelindata](../using/test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
-**Alternativ:** Skapa 3-5 representativa [testprofiler ](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
+**Alternativ:** Skapa 3-5 representativa [testprofiler &#x200B;](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
 **Utbildningsverktyg:** Experimentera först i [personaliseringspresentationen](../using/personalization/personalize.md#playground)
 
 +++
