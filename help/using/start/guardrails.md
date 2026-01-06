@@ -8,9 +8,9 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-source-git-commit: 8d8f47cafb05cacbda19930a4ca741e05f1e4d1d
+source-git-commit: 8c61d7cb30da328791aabb84318960e2f42d1ca0
 workflow-type: tm+mt
-source-wordcount: '3560'
+source-wordcount: '3647'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 Nedan hittar du skyddsförslag och begränsningar när du använder [!DNL Adobe Journey Optimizer].
 
-Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
-
+Tillstånd, produktbegränsningar och prestandaskydd visas på [Adobe Journey Optimizer produktbeskrivningssida](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 >[!CAUTION]
 >
->* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
+>* [Garantier för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} gäller även för Adobe Journey Optimizer.
 >
->* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/guardrails){target="_blank"}
+>* Se även [Guardsutkast för datainmatning i kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
+## System och plattform {#system-platform}
 
-## Webbläsare som stöds {#browsers}
+### Webbläsare som stöds {#browsers}
 
 Adobe [!DNL Journey Optimizer]-gränssnittet är utformat för att fungera optimalt i den senaste versionen av Google Chrome. Du kan ha problem med att använda vissa funktioner i äldre versioner eller i andra webbläsare.
 
-## Skyddsutkast för datauppsättningar {#datasets-guardrails}
+### Skyddsutkast för datauppsättningar {#datasets-guardrails}
 
 Från och med februari 2025 introduceras ett TTL-skyddsräcke (time-to-live) för Journey Optimizer systemgenererade datauppsättningar i **nya sandlådor och nya organisationer** enligt följande:
 
@@ -42,12 +42,13 @@ Från och med februari 2025 introduceras ett TTL-skyddsräcke (time-to-live) fö
 
 Den här ändringen kommer att introduceras i **befintliga kundsandlådor** i en efterföljande fas. [Läs mer om datauppsättningar - TTL-skyddsutkast (Time-To-Live)](../data/datasets-ttl.md)
 
-## Kanaler, skyddsräcken {#channel-guardrails}
+## Kanaler och meddelanden {#channel-guardrails}
+
+I det här avsnittet beskrivs säkerhetsutkast för alla kommunikationskanaler, inklusive e-post, SMS, inkommande kanaler (webb, i appen, kodbaserade, innehållskort) och transaktionsmeddelanden.
 
 >[!NOTE]
 >
 >I sällsynta fall kan tillfälliga avbrott i en viss region leda till att giltiga profiler utesluts från resor eller att felaktigt markerade e-postmeddelanden markeras som studsar. När tjänsterna har återställts kontrollerar du reseloggarna på nytt, kontrollerar tillståndsprofilfälten och publicerar sedan resan på nytt om det behövs. Om ett ISP-fel inträffar bör du lära dig hur du tar bort profiler från listan över inaktiveringar i [det här avsnittet](../configuration/manage-suppression-list.md#remove-from-suppression-list).
->
 
 ### E-postskyddsutkast {#message-guardrails}
 
@@ -103,13 +104,13 @@ Följande skyddsförslag gäller för [SMS-kanalen](../sms/get-started-sms.md):
 
 [!DNL Journey Optimizer] inkommande kanaler kan ha pseudonyma profiler som mål, vilket innebär profiler som inte är autentiserade eller okända än eftersom de inte har varit engagerade tidigare i andra kanaler. Detta är till exempel fallet när man riktar sig till alla besökare eller målgrupper baserat på tillfälliga ID:n som ECID.
 
-Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
+Detta ökar det totala antalet profiler du kan göra gällande, vilket kan ha kostnadskonsekvenser om det avtalsenliga antalet profiler du har köpt överskrids. Licensvärden för varje paket visas på sidan [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Du kan kontrollera antalet profiler som kan användas på kontrollpanelen för [licensanvändning](../audience/license-usage.md).
 
 För att hålla dina engagerande profiler inom rimliga gränser rekommenderar Adobe att du ställer in en TTL (Time-To-Live) som automatiskt tar bort pseudonyma profiler från kundprofilen i realtid om de inte har setts eller engagerats inom ett visst tidsfönster.
 
 >[!NOTE]
 >
->Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+>Lär dig hur du konfigurerar förfallodatum för pseudonyma profiler i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
 
 Adobe rekommenderar att TTL-värdet ställs in på 14 dagar för att matcha den aktuella Edge-profilen TTL.
 
@@ -117,7 +118,11 @@ Adobe rekommenderar att TTL-värdet ställs in på 14 dagar för att matcha den 
 
 Journey Optimizer har stöd för en toppvolym på 500 transaktionsmeddelanden per sekund i kampanjer.
 
-## Garantier för landningssidor {#lp-guardrails}
+## Innehåll och Assets {#content-assets}
+
+I det här avsnittet beskrivs hur du kan skapa och hantera innehåll, inklusive landningssidor, underdomäner och fragment.
+
+### Garantier för landningssidor {#lp-guardrails}
 
 Följande skyddsutkast gäller för [landningssidorna](../landing-pages/get-started-lp.md):
 
@@ -126,11 +131,11 @@ Följande skyddsutkast gäller för [landningssidorna](../landing-pages/get-star
 * Du kan inte lägga till en förrubrik på en landningssida.
 * Du kan inte välja alternativet **Kod för egen** när du utformar en primär landningssida.
 
-## Underdomänsskydd {#subdomain-guardrails}
+### Underdomänsskydd {#subdomain-guardrails}
 
 Skyddsförslag och begränsningar som gäller för delegering av underdomäner i Journey Optimizer finns på [den här sidan](../configuration/delegate-subdomain.md#guardrails).
 
-## Fragmentskyddsräcken {#fragments-guardrails}
+### Fragmentskyddsräcken {#fragments-guardrails}
 
 Följande skyddsutkast gäller för [fragment](../content-management/fragments.md):
 
@@ -143,7 +148,11 @@ Följande skyddsutkast gäller för [fragment](../content-management/fragments.m
 * Visuella fragment är inte korskompatibla mellan Använd teman och Manuell formatering. Om du vill kunna använda ett fragment i ett innehåll där du vill använda ett tema, måste det här fragmentet skapas i läget Använd teman. [Läs mer om teman](../email/apply-email-themes.md)
 * När spårning är aktiverat i en resa eller kampanj spåras länkarna, om du lägger till länkar till ett fragment och om det här fragmentet används i ett meddelande, till exempel alla andra länkar som finns i meddelandet. [Läs mer om länkar och spårning](../email/message-tracking.md)
 
-## Målgrupps- och profilskydd {#audience}
+## Målgrupper och profiler {#audiences-profiles}
+
+I det här avsnittet beskrivs hur man hanterar målgrupper, hanterar profiler och tar hänsyn till engagerande profiler.
+
+### Målgrupps- och profilskydd {#audience}
 
 * Du kan publicera upp till 10 publikkompositioner i en given sandlåda. Om du har nått det här tröskelvärdet måste du ta bort en disposition för att frigöra utrymme och publicera en ny.
 
@@ -153,14 +162,18 @@ Följande skyddsutkast gäller för [fragment](../content-management/fragments.m
 
 * När du riktar in dig på pseudonyma profiler (oautentiserade besökare) med inkommande kanaler bör du överväga att ställa in en TTL (Time-To-Live) för automatisk borttagning av profiler för att hantera antalet engagerande profiler och tillhörande kostnader. [Läs mer](#profile-management-inbound)
 
-## Beslutsfattare och beslutsföringsgarantier {#decisioning-guardrails}
+## Beslutshantering {#decision-management}
+
+### Beslutsfattare och beslutsföringsgarantier {#decisioning-guardrails}
 
 Garantier och begränsningar som ska beaktas när man arbetar med beslut eller beslutsfattande beskrivs närmare i avsnitten om beslutsfattande och beslutshantering:
 
 * [Avgörande av skyddsräcken och begränsningar](../experience-decisioning/decisioning-guardrails.md)
 * [Garantier och begränsningar för beslutshantering](../offers/decision-management-guardrails.md)
 
-## Resehanddukar {#journeys-guardrails}
+## Resor {#journeys-guardrails}
+
+Detta avsnitt behandlar säkerhetsutkast och begränsningar för resor, inklusive allmänna resefriktioner, resekomponenter (åtgärder, händelser, datakällor), reseaktiviteter och särskilda funktioner som skräddarsydda åtgärder och uttrycksredigerare.
 
 ### Allmänna skyddsräcken för resan {#journeys-guardrails-journeys}
 
@@ -333,6 +346,8 @@ Se även [den här sidan](../building-journeys/read-audience.md#must-read).
 
 Specifika skyddsutkast gäller för aktiviteten **[!UICONTROL Update profile]**. De visas på [den här sidan](../building-journeys/update-profiles.md).
 
-## Garantier för kampanjsamordning {#orchestration-guardrails}
+## Kampanjsamordning {#campaign-orchestration}
+
+### Garantier för kampanjsamordning {#orchestration-guardrails}
 
 Garantier och begränsningar som du bör tänka på när du arbetar med kampanjsamordning beskrivs i det här avsnittet: [Guardsänkar och begränsningar](../orchestrated/guardrails.md).
