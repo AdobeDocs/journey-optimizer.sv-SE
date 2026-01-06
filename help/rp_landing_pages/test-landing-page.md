@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: testa, validera, godkänna, godkänna, kvalitetssäkring, qa, testprofiler, personalisering, återgivning, skräppost, innehållstestning, a/b-test, konfliktidentifiering, utsädeslista, korrektur, exempeldata, godkännande-arbetsflöde, e-posttestning, valideringsarbetsflöde
 redpen-status: CREATED_||_2025-08-11_20-30-59
 exl-id: a770412f-2f80-459d-8cce-32212154d154
-source-git-commit: 3f2bf04dbeb3e5099c151a412a4a5e54f13122ee
+source-git-commit: 1f0890dd4257f049fd041dc2dbf6d45cd0d7092c
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2284'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Denna landningssida hjälper er att välja rätt testmetod baserat på vad ni by
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Förhandsgranska, testa och validera innehåll
 
@@ -36,7 +36,7 @@ Lär dig hur du förhandsgranskar, testar och validerar personaliserat innehåll
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 Arbetsflöden för godkännande av resor och kampanjer
 
@@ -46,7 +46,7 @@ Lär dig hur man skapar, hanterar och genomför godkännandeprocesser för att s
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Testa din resa
 
@@ -56,7 +56,7 @@ Validera resan innan du publicerar den genom att testa den med specifika profile
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Körning av resetorr
 
@@ -66,7 +66,7 @@ Utför en torr körning för att simulera och validera kundresan och identifiera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Övervakning och felsökning
 
@@ -76,7 +76,7 @@ Få tillgång till omfattande felsökningsresurser, systemvarningar och felkoder
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code.svg)
 
 Personalization Playground
 
@@ -96,7 +96,7 @@ Optimera era kampanjer genom att testa olika innehållsvariationer och mäta pre
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 Utsändningslistor för övervakning av intressenter
 
@@ -106,7 +106,7 @@ Inkludera automatiskt interna intressentadresser i leveranser för att övervaka
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 Konfliktidentifiering
 
@@ -290,89 +290,16 @@ Följ de här rekommenderade arbetssätten för att maximera effekten av testnin
 
 ## Rekommenderat testarbetsflöde
 
-Följ detta systematiska tillvägagångssätt för att säkerställa grundlig testning och smidiga godkännanden:
+Följ den här 4-stegsmetoden för att validera era kampanjer och resor före lansering:
 
-### &#x200B;1. Innehållsutveckling och förhandsgranskning
+| Fas | Testa | Viktiga åtgärder |
+|-------|-------------|-------------|
+| **1. Innehållsvalidering** | Personalization, design, rendering | [Förhandsgranska med testprofiler](../using/content-management/preview-test.md), testa [flera varianter](../using/test-approve/simulate-sample-input.md) med CSV/JSON, verifiera [återgivning](../using/content-management/rendering.md) på olika enheter |
+| **2. Tekniska kontroller** | Leverans, länkar, konflikter | Kör [skräppostpoängkontroller](../using/content-management/spam-report.md), validera länkar, kontrollera om det finns [konflikter](../using/conflict-prioritization/conflicts.md) med andra kampanjer |
+| **3. Reselogik** (endast resor) | Ingångsvillkor, flöde, förgrening | Använd [testläge](../using/building-journeys/testing-the-journey.md) för att simulera förloppet, kör [torr körning](../using/building-journeys/journey-dry-run.md) för komplexa banor |
+| **4. Förstart** | Inställningar, godkännanden, övervakning | Skicka för [godkännande](../using/test-approve/gs-approval.md), verifiera scheman och målgrupper, aktivera [aviseringar](../using/reports/alerts.md) |
 
-Börja med att skapa ditt innehåll och använda förhandsgranskningsfunktionerna för att verifiera den ursprungliga designen och personaliseringen:
-
-* Utforma ditt [e-postmeddelande](../using/email/create-email.md), [SMS](../using/sms/create-sms.md), [push-meddelande](../using/push/create-push.md) eller annat kanalinnehåll
-
-* Använd funktionen **[Simulera innehåll](../using/content-management/preview-test.md)** för att förhandsgranska med testprofiler
-
-* Kontrollera [personaliseringstoken](../using/personalization/personalization-syntax.md), dynamiskt innehåll och reservvärden
-
-* Experimentera med personaliseringsuttryck i **[personaliseringsuppspelningen](../using/personalization/personalize.md#playground)** för att testa och förfina koden med exempeldata innan den tillämpas på livematerial
-
-* Testa flera variationer med **[exempelindata](../using/test-approve/simulate-sample-input.md)** från CSV-/JSON-filer för att validera personalisering i olika profilscenarier
-
-* Verifiera [återgivning](../using/content-management/rendering.md) för olika skärmstorlekar och e-postklienter
-
-### &#x200B;2. Teknisk validering
-
-Validera tekniska aspekter som påverkar leveransen och funktionaliteten:
-
-* Kör [skräppostpoängkontroller](../using/content-management/spam-report.md) för att identifiera potentiella leveransproblem
-
-* Testa länkar för att säkerställa att de inte bryts och spåras korrekt
-
-* Verifiera konfigurationen för [e-postautentisering](../using/configuration/dmarc-record.md) (SPF, DKIM, DMARC)
-
-* Granska HTML-rendering och sök efter CSS-kompatibilitetsproblem
-
-* Testa [responsiv design](../using/email/content-from-scratch.md) på mobila och stationära enheter
-
-* Kontrollera om det finns [potentiella konflikter](../using/conflict-prioritization/conflicts.md) med andra kampanjer och resor för att förhindra problem med trötthet och timing i kundmeddelanden
-
-### &#x200B;3. Reseprovning (endast resor)
-
-Om du testar en resa, validera orkestreringslogiken:
-
-* Aktivera **[testläge](../using/building-journeys/testing-the-journey.md)** för att simulera profilförloppet under resan
-
-* Testa olika [anmälningsvillkor](../using/building-journeys/entry-management.md) och målgruppskvalifikationer
-
-* Verifiera att [vänteaktiviteter](../using/building-journeys/wait-activity.md), [villkor](../using/building-journeys/condition-activity.md) och förgreningslogik fungerar korrekt
-
-* Använd **[Torr körning](../using/building-journeys/journey-dry-run.md)** för komplexa resor för att analysera körningssökvägar utan att skicka meddelanden
-
-* Kontrollera att [händelser](../using/event/about-events.md) utlöses korrekt och att [anpassade åtgärder](../using/action/about-custom-action-configuration.md) körs som förväntat
-
-### &#x200B;4. Inlämning av godkännande
-
-När testningen är klar och problemen är lösta:
-
-* Skicka kampanjen eller resan för godkännande enligt din organisations [godkännandepolicy](../using/test-approve/approval-policies.md)
-
-* Inkludera testresultat och dokumentation i [godkännandebegäran](../using/test-approve/request-approval.md)
-
-* Åtgärda eventuella feedback- eller ändringsbegäranden från [godkännare](../using/test-approve/review-approve-request.md)
-
-* Gör nödvändiga ändringar och försök igen om ändringarna är betydande
-
-### &#x200B;5. Verifiering före start
-
-Innan du aktiverar kampanjen eller resan:
-
-* Utför en slutgiltig granskning av alla inställningar, målgrupper och [scheman](../using/building-journeys/journey-properties.md)
-
-* Verifiera att alla godkännanden finns på plats och dokumenteras
-
-* Bekräfta sändningstider och [tidszoner](../using/building-journeys/timezone-management.md) är korrekta
-
-* Aktivera [övervakning och aviseringar](../using/reports/alerts.md) för att spåra prestanda efter start
-
-### &#x200B;6. Övervaka och iterera
-
-Efter start fortsätter du övervakningen för att upptäcka eventuella problem tidigt:
-
-* Ställ in [systemvarningar](../using/reports/alerts.md) för resefel, hög avhoppsfrekvens eller lågt engagemang
-
-* Granska [liverapporter](../using/building-journeys/report-journey.md) för att spåra prestanda i förhållande till förväntningarna
-
-* Var redo att [pausa eller ändra &#x200B;](../using/building-journeys/journey-pause.md) resor om allvarliga problem uppstår
-
-* Dokumentlärdomar som kan förbättra framtida testprocesser
+**Pro-tips:** Börja med [personaliseringsuppspelningen](../using/personalization/personalize.md#playground) om du vill testa uttryck innan du skapar innehåll, och kontrollera alltid [konfliktidentifiering](../using/conflict-prioritization/conflicts.md) innan du startar programmet för att förhindra överskjutande meddelanden.
 
 ## Testning in action: Användningsexempel
 
@@ -397,7 +324,7 @@ Se hur testkoncept kan användas i verkliga scenarier:
 
 **[Utsändningslistor](../using/configuration/seed-lists.md)** = E-postadresser till interna intressenter som automatiskt inkluderas i faktiska leveranser (inte testmeddelanden). Endast e-postkanal. Användningsfall: Kvalitetsövervakning och efterlevnad. [Konfigurera dirigerade listor](../using/configuration/seed-lists.md)
 
-**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment &#x200B;](../using/content-management/content-experiment.md)
+**[Innehållsexperiment](../using/content-management/get-started-experiment.md)** = A/B-testning eller multiväpnade bandit-experiment där innehållsvariationer jämförs. Endast kampanjer, inte tillgängliga under resor. [Kom igång med experiment](../using/content-management/get-started-experiment.md) | [Skapa experiment ](../using/content-management/content-experiment.md)
 
 **[Korrektur](../using/content-management/proofs.md)** = Testa e-postleveranser som skickas till specifika e-postadresser med hjälp av testprofildata. Olika utsädeslistor (korrektur är manuella testutskick, utsädeslistor är automatiska kopior av intressenter). [Skicka korrektur](../using/content-management/proofs.md)
 
@@ -489,7 +416,7 @@ Lär dig hur testfunktionerna samverkar med varandra och med era större arbetsf
 +++**F: Hur testar jag personalisering utan att skapa många testprofiler?**
 
 **Primär lösning:** Använd [exempelindata](../using/test-approve/simulate-sample-input.md) med CSV/JSON-filer (stöder upp till 30 varianter)
-**Alternativ:** Skapa 3-5 representativa [testprofiler &#x200B;](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
+**Alternativ:** Skapa 3-5 representativa [testprofiler ](../using/audience/creating-test-profiles.md) som täcker nyckelsegment
 **Utbildningsverktyg:** Experimentera först i [personaliseringspresentationen](../using/personalization/personalize.md#playground)
 
 +++
