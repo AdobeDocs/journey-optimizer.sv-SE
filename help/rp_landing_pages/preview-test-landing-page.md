@@ -123,10 +123,10 @@ Följ den här sekvensen för fullständig validering:
 **Kontext:** Exempel från verkligheten som visar hur du använder testverktyg i vanliga fall.
 
 **Scenario 1: Testa personliga e-postmeddelanden för en kampanj i flera segment**
-→ Använd [ exempelindata ](../using/test-approve/simulate-sample-input.md) för att testa 20-30 variationer utan att skapa individuella testprofiler. Ladda upp en CSV-fil med olika kundattribut och förhandsgranska alla samtidigt.
+→ Använd [&#x200B; exempelindata &#x200B;](../using/test-approve/simulate-sample-input.md) för att testa 20-30 variationer utan att skapa individuella testprofiler. Ladda upp en CSV-fil med olika kundattribut och förhandsgranska alla samtidigt.
 
 **Scenario 2: Verifierar e-poståtergivning före en större sändning**
-→ Kör [ Litmus-tester ](../using/content-management/rendering.md) för att kontrollera visningen över de vanligaste e-postklienterna och kontrollera sedan [skräppostrapporten](../using/content-management/spam-report.md) för att se till att inkorgen är placerad.
+→ Kör [&#x200B; Litmus-tester &#x200B;](../using/content-management/rendering.md) för att kontrollera visningen över de vanligaste e-postklienterna och kontrollera sedan [skräppostrapporten](../using/content-management/spam-report.md) för att se till att inkorgen är placerad.
 
 **Scenario 3: Få berörda parter att godkänna**
 → [Skicka korrektur](../using/content-management/proofs.md) till interna granskare med testprofildata så att de ser exakt vad kunderna får.
