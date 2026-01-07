@@ -9,10 +9,10 @@ role: User
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 4162403bedc1632ed28db122e2ec16e3c00a2630
+source-git-commit: 5a1a356d6bf0dbd5290b2cf8257d87aa7db43b5b
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 1%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
@@ -82,8 +82,7 @@ Följ stegen nedan om du vill lägga till sammanhangsberoende attribut i ett pub
 ## Relaterade ämnen {#related-topics}
 
 * [Hantera fragment](manage-fragments.md)
-* [Använd visuella fragment i e-postmeddelanden](../email/use-visual-fragments.md)
-* [Använd uttrycksfragment](../personalization/use-expression-fragments.md)
+* [Redigera ett fragment](manage-fragments.md#edit-fragments)
 * [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)
 * [Personalization syntax](../personalization/personalization-syntax.md)
 
