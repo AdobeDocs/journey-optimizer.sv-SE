@@ -6,9 +6,9 @@ topic: Content Management
 role: Developer
 level: Experienced
 exl-id: e5ae8b4e-7cd2-4a1d-b2c0-8dafd5c4cdfd
-source-git-commit: 0cdc5dce00d2240b2de6c4cba1648b4517323cce
+source-git-commit: cd31c50de91593348744ead8042e480a2f1164de
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '933'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Kodbaserad upplevelse stöder alla typer av kundimplementeringar. På den här s
 
 Om du har en implementering på klientsidan kan du använda någon av AEP klient-SDK: AEP Web SDK eller AEP Mobile SDK.
 
-* Stegen [&#x200B; nedan](#client-side-how) beskriver processen att hämta innehåll som publiceras på kanten av de kodbaserade upplevelseresorna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
+* Stegen [ nedan](#client-side-how) beskriver processen att hämta innehåll som publiceras på kanten av de kodbaserade upplevelseresorna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
 
 * Stegen för att implementera kodbaserad kanal med **Mobile SDK** beskrivs i [den här självstudiekursen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
@@ -41,7 +41,7 @@ Om du har en implementering på klientsidan kan du använda någon av AEP klient
 
 ### Så här fungerar det - Web SDK {#client-side-how}
 
-1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE){target="_blank"} ingår på sidan.
+1. [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} ingår på sidan.
 
 1. Du måste använda kommandot `sendEvent` och ange [yt-URI](code-based-surface.md)<!--( or location/path)--> för att hämta personaliseringsinnehåll.
 
@@ -147,7 +147,7 @@ Stegen nedan beskriver processen att hämta det innehåll som publiceras på kan
 ### Så fungerar det
 
 1. Webbsidan har begärts och alla cookies som tidigare lagrats av webbläsaren som har prefixet `kndctr_` ingår.
-1. När sidan begärs från programservern skickas en händelse till [slutpunkten för interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=sv-SE) för att hämta personaliseringsinnehåll. Det här exempelprogrammet använder vissa hjälpmetoder för att förenkla skapandet och skickandet av begäranden till API:t (se [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). Men begäran är bara en `POST` med en nyttolast som innehåller en händelse och fråga. Cookies (om de är tillgängliga) från föregående steg inkluderas i begäran i arrayen `meta>state>entries`.
+1. När sidan begärs från programservern skickas en händelse till [slutpunkten för interaktiv datainsamling](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) för att hämta personaliseringsinnehåll. Det här exempelprogrammet använder vissa hjälpmetoder för att förenkla skapandet och skickandet av begäranden till API:t (se [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). Men begäran är bara en `POST` med en nyttolast som innehåller en händelse och fråga. Cookies (om de är tillgängliga) från föregående steg inkluderas i begäran i arrayen `meta>state>entries`.
 
    ```javascript
    fetch(
@@ -308,7 +308,45 @@ Begäranden till Adobe Experience Platform API krävs för att få förslag och 
 Om du har en hybridimplementering kan du kolla in länkarna nedan.
 
 * Adobe Tech Blog: [Hybrid Personalization i Adobe Experience Platform Web SDK](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}
-* SDK-dokumentation: [Hybrid-anpassning med API:t för Web SDK och Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html?lang=sv-SE){target="_blank"}
+* SDK-dokumentation: [Hybrid-anpassning med API:t för Web SDK och Edge Network Server](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html){target="_blank"}
+
+## Felsöka Edge nätverks-API-anrop med Adobe Experience Platform Assurance {#debugging-edge-api-assurance}
+
+När du direkt använder Edge Network API för kodbaserade upplevelser (som inte använder Web SDK eller Mobile SDK) kan du felsöka dina API-anrop med Adobe Experience Platform Assurance genom att inkludera Assurance sessions-ID som en valideringstokenrubrik.
+
+1. Hämta ditt Assurance sessions-ID från en aktiv Adobe Experience Platform Assurance-session eller skapa ett med Assurance API.
+
+1. Lägg till rubriken `x-adobe-aep-validation-token` med ditt Assurance sessions-ID för att dirigera dina Edge Network API-begäranden genom Assurance-sessionen.
+
+   **Exempel:**
+
+   ```bash
+   curl -v 'https://edge.adobedc.net/ee/v1/interact?configId={DATASTREAM_ID}&requestId={REQUEST_ID}' \
+   --header 'Content-Type: application/json' \
+   --header 'x-adobe-aep-validation-token: {ASSURANCE_SESSION_ID}' \
+   --data-raw '{
+       "xdm": {
+         "identityMap": {
+               "ECID": [
+                   {
+                       "id": "{ECID_VALUE}"
+                   }
+               ]
+           }
+       },
+       "events": [
+           {
+               "xdm": {
+                   "eventType": "test",
+                   "timestamp": "{TIMESTAMP}"
+               }
+           }
+       ]
+   }'
+   ```
+
+1. Öppna din Assurance-session och välj vyn **[!UICONTROL Edge Delivery]** för att se Edge Network API-begäranden och svar i realtid, inklusive nyttolaster, svarsinnehåll, personaliseringsförslag och felmeddelanden.
+
 
 <!--
 ## Implementation guides and tutorials {#implementation-guides}
@@ -319,4 +357,4 @@ To help you get started with implementing code-based experiences, refer to the c
 
 * **Web SDK implementation**: Learn how to configure the Web SDK for decisioning and code-based experiences in [these tutorials](code-based-decisioning-implementations.md#tutorials).
 
-* **Decisioning implementation**: To learn how to implement decisioning capabilities on a code-based campaign, follow [this use case tutorial](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-uc){target="_blank"}.-->
+* **Decisioning implementation**: To learn how to implement decisioning capabilities on a code-based campaign, follow [this use case tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-uc){target="_blank"}.-->
