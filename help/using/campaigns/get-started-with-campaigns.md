@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 129c2af3a7a8db00c400f5c6e78530c0649d9896
+source-git-commit: 6c8649726f8faad0a9e4945778a3f9217f3627d8
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1507'
 ht-degree: 0%
 
 ---
@@ -157,11 +157,44 @@ Använd [!DNL Journey Optimizer] kampanjer för att:
 >
 >Vet du inte vilken typ du ska välja? Börja med **Åtgärdskampanjer** för schemalagd batchkommunikation eller **API-utlösta kampanjer** för meddelanden i realtid - dessa omfattar de vanligaste användningsfallen.
 
+## Förhandskrav {#prerequisites}
+
+Innan du arbetar med kampanjer bör du kontrollera att du har följande på plats:
+
+* **Publiker** - Publiker måste vara tillgängliga i Adobe Experience Platform innan kampanjer kan skapas. [Kom igång med målgrupper →](../audience/about-audiences.md)
+
+* **Kanalkonfigurationer** - Kanalkonfigurationer (förinställningar) måste skapas och vara tillgängliga för de kanaler som du vill använda. [Konfigurera kanalkonfigurationer →](../configuration/channel-surfaces.md)
+
+* **Behörigheter** - Du behöver lämpliga behörigheter baserat på kampanjtypen. Kontakta administratören om du inte har åtkomst till kampanjfunktioner. [Läs om inbyggda roller →](../administration/ootb-product-profiles.md)
+
+  +++Lista över kampanjbehörigheter
+
+  | Kampanjtyp | Behörigheter |
+  |-------------|---------------|
+  | **Åtgärdskampanjer** och **API-utlösta kampanjer** | Kampanjadministratör<br>Kampanjgodkännare<br>Kampanjhanterare<br>Kampanjvisningsprogram |
+  | **Samordnade kampanjer** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
+
+  +++
+
+  +++Tilldela kampanjbehörigheter
+
+   1. Navigera till fliken **[!UICONTROL Roles]** i produkten [!DNL Permissions] och välj en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]**.
+
+   1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
+
+   1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
+
+  Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
+
+  Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
+
+  +++
+
 ## Arbetsflöde för kampanjskapande {#workflow}
 
 Framgångsrika kampanjer följer en tydlig och upprepningsbar process. Här är ditt stegvisa arbetsflöde:
 
-+++ &#x200B;1. Planera din kampanj
++++&#x200B;1. Planera din kampanj
 
 Förtydliga era mål innan du börjar:
 
@@ -173,7 +206,7 @@ Förtydliga era mål innan du börjar:
 
 +++
 
-+++Konfigurera kampanjegenskaper
++++&#x200B;2. Konfigurera kampanjegenskaper
 
 Lägg grunden till er kampanj:
 
@@ -187,7 +220,7 @@ Lägg grunden till er kampanj:
 
 +++
 
-+++Designa innehåll
++++&#x200B;3. Designa innehåll
 
 Skapa övertygande budskap för er målgrupp:
 
@@ -201,7 +234,7 @@ Skapa övertygande budskap för er målgrupp:
 
 +++
 
-+++Granska och testa
++++&#x200B;4. Granska och testa
 
 Granska alltid kampanjen före aktiveringen:
 
@@ -215,7 +248,7 @@ Granska alltid kampanjen före aktiveringen:
 
 +++
 
-+++Aktivera kampanjen
++++&#x200B;5. Aktivera kampanjen
 
 Aktivera kampanjen när granskningen är klar:
 
@@ -229,7 +262,7 @@ Obs! Aktiva kampanjer kan inte redigeras (du måste duplicera dem för att kunna
 
 +++
 
-+++Övervaka och analysera
++++&#x200B;6. Övervaka och analysera
 
 Spåra kampanjens resultat:
 
@@ -243,48 +276,22 @@ Spåra kampanjens resultat:
 
 +++
 
-➡️ **Vill du börja?** Välj kampanjtyp:
-* [Skapa en åtgärdskampanj →](create-campaign.md)
-* [Skapa API-utlöst kampanj →](api-triggered-campaigns.md)
-* [Skapa en orkestrerad kampanj →](../orchestrated/gs-orchestrated-campaigns.md)
+## Låt oss dyka djupare {#get-started-types}
 
-## Förhandskrav {#prerequisites}
+Nu när du förstår kampanjer i [!DNL Journey Optimizer] väljer du kampanjtyp för att komma igång:
 
-Innan du arbetar med kampanjer bör du kontrollera att du har följande på plats:
-
-* **Publiker** - Publiker måste vara tillgängliga i Adobe Experience Platform innan kampanjer kan skapas. [Kom igång med målgrupper →](../audience/about-audiences.md)
-
-* **Kanalkonfigurationer** - Kanalkonfigurationer (förinställningar) måste skapas och vara tillgängliga för de kanaler som du vill använda. [Konfigurera kanalkonfigurationer →](../configuration/channel-surfaces.md)
-
-* **Behörigheter** - Du behöver lämpliga behörigheter baserat på kampanjtypen. Kontakta administratören om du inte har åtkomst till kampanjfunktioner. [Läs om inbyggda roller →](../administration/ootb-product-profiles.md)
-
-  | Kampanjtyp | Behörigheter |
-  |-------------|---------------|
-  | **Åtgärdskampanjer** och **API-utlösta kampanjer** | Kampanjadministratör<br>Kampanjgodkännare<br>Kampanjhanterare<br>Kampanjvisningsprogram |
-  | **Samordnade kampanjer** | Orchestrated Campaign Administrator<br>Orchestrated Campaign Approver<br>Orchestrated Campaign Manager<br>Orchestrated Campaign Viewer |
-
-  +++Tilldela kampanjbehörigheter
-
-   1. Navigera till fliken **[!UICONTROL Roles]** i produkten [!DNL Permissions] och välj en av de inbyggda kampanjrelaterade **[!UICONTROL Roles]**.
-
-   1. Klicka på **[!UICONTROL Add user]** på fliken **[!UICONTROL Users]**.
-
-   1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
-
-  Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}.
-
-  Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
-
-  +++
-
-## Kampanjfunktioner {#capabilities}
+<table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
+<td><a href="create-campaign.md"><img width="70%" alt="åtgärdskampanjer" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Åtgärdskampanjer</a></td>
+<td><a href="api-triggered-campaigns.md"><img width="70%" alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png"></a><br/><a href="api-triggered-campaigns.md">API-utlösta kampanjer</a></td>
+<td><a href="../orchestrated/gs-orchestrated-campaigns.md"><img width="70%" alt="push" src="assets/do-not-localize/gs-orchestrated-campaign.png"></a><a href="../orchestrated/gs-orchestrated-campaigns.md">Samordnade kampanjer</a></td>
+</tr></table>
 
 Utforska följande kraftfulla funktioner när ni blir mer bekväma med kampanjer:
 
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Schemaläggning och timing**
 
@@ -294,7 +301,7 @@ Schemalägg kampanjer för specifika datum/tidpunkter, ange återkommande levera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Klassificeringskontroll**
 
@@ -304,7 +311,7 @@ Begränsa meddelandegenomströmningen för att förhindra överbelastning i syst
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Målgruppsanpassning**
 
@@ -314,7 +321,7 @@ Rikta in er på specifika Adobe Experience Platform-målgrupper med precision oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Arbetsflöden för godkännande**
 
@@ -324,7 +331,7 @@ Implementera gransknings- och godkännandeprocesser innan kampanjer publiceras, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 **Tysta timmar**
 
@@ -334,7 +341,7 @@ Följ kundernas önskemål genom att undvika meddelandeleverans under angivna ti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Optimering**
 
@@ -344,13 +351,3 @@ Använd målinriktningsregler och innehållsexperiment för att leverera persona
 :::
 
 ::::
-
-## Kom igång med kampanjtyper {#get-started-types}
-
-Nu när du förstår kampanjer i [!DNL Journey Optimizer] väljer du kampanjtyp för att komma igång:
-
-<table style="table-layout:fixed"><tr style="border: 0; text-align: center;">
-<td><a href="create-campaign.md"><img width="70%" alt="åtgärdskampanjer" src="assets/do-not-localize/gs-action-campaign.png"></a><br/><a href="create-campaign.md">Åtgärdskampanjer</a></td>
-<td><a href="api-triggered-campaigns.md"><img width="70%" alt="sms" src="assets/do-not-localize/gs-api-triggered-campaign.png"></a><br/><a href="api-triggered-campaigns.md">API-utlösta kampanjer</a></td>
-<td><a href="../orchestrated/gs-orchestrated-campaigns.md"><img width="70%" alt="push" src="assets/do-not-localize/gs-orchestrated-campaign.png"></a><a href="../orchestrated/gs-orchestrated-campaigns.md">Samordnade kampanjer</a></td>
-</tr></table>
