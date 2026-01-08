@@ -31,7 +31,7 @@ Kodbaserad upplevelse stöder alla typer av kundimplementeringar. På den här s
 
 Om du har en implementering på klientsidan kan du använda någon av AEP klient-SDK: AEP Web SDK eller AEP Mobile SDK.
 
-* Stegen [ nedan](#client-side-how) beskriver processen att hämta innehåll som publiceras på kanten av de kodbaserade upplevelseresorna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
+* Stegen [&#x200B; nedan](#client-side-how) beskriver processen att hämta innehåll som publiceras på kanten av de kodbaserade upplevelseresorna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
 
 * Stegen för att implementera kodbaserad kanal med **Mobile SDK** beskrivs i [den här självstudiekursen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
