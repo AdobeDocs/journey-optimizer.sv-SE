@@ -2,15 +2,15 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Åtkomst och prenumeration på systemvarningar
-description: Lär dig hur du får åtkomst till och prenumererar på systemvarningar
+description: Lär dig hur du får åtkomst till, prenumererar på och hanterar systemvarningar i Adobe Journey Optimizer. Övervaka reseprestanda, anpassade åtgärdsfel, profilproblem och e-postleverans med proaktiva varningsmeddelanden.
 feature: Journeys, Alerts, Monitoring
 topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 03e9d4205f59a32347cd1702b24bfbad2bf540b9
+source-git-commit: 455e462078cffd43f1654278e0478951e78717b2
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2610'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,20 @@ ht-degree: 0%
 
 ## Översikt
 
-Adobe Journey Optimizer har två typer av varningar som hjälper dig att övervaka och felsöka dina åtgärder:
+Aviseringar är automatiska meddelanden som hjälper dig att övervaka och felsöka problem i Adobe Journey Optimizer. De ger realtidsmedvetenhet om potentiella problem i era resor, kampanjer och kanalkonfigurationer, så att ni kan vidta korrigerande åtgärder innan kundupplevelserna påverkas.
+
+Adobe Journey Optimizer erbjuder två typer av varningar:
 
 * **Verifieringsvarningar på arbetsytan**: När du skapar resor och kampanjer använder du knappen **Varningar** på arbetsytan för att identifiera och åtgärda konfigurationsfel före publicering. Lär dig hur du [felsöker dina resor](../building-journeys/troubleshooting.md) och granskar dina kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [API-utlösta kampanjer](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md).
 
-* **Systemövervakningsmeddelanden** (som beskrivs på den här sidan): Ta emot proaktiva meddelanden när tröskelvärden för användning överskrids eller när problem upptäcks i direktresor och kanalkonfigurationer. Dessa varningar hjälper er att snabbt reagera på potentiella problem innan de påverkar era kundupplevelser.
+* **Systemövervakningsmeddelanden** (som beskrivs på den här sidan): Ta emot proaktiva meddelanden när tröskelvärden för användning överskrids eller när problem upptäcks i direktresor och kanalkonfigurationer. Systemvarningar övervakar mätvärden som felfrekvens, ignorerade profiler och problem med e-postleverans.
+
+**Viktiga fördelar med systemvarningar:**
+
+* Proaktiv problemidentifiering före kundpåverkan
+* Automatisk övervakning av reseprestanda och hälsa
+* Tidig varning om e-postleveransproblem
+* Minskad tid för att identifiera och lösa operativa problem
 
 Systemvarningar är tillgängliga på menyn **[!UICONTROL Alerts]** under **[!UICONTROL Administration]**. Adobe Experience Platform tillhandahåller flera fördefinierade varningsregler som du kan aktivera, inklusive [!DNL Adobe Journey Optimizer]-specifika aviseringar för resor och kanalkonfigurationer.
 
@@ -31,7 +40,7 @@ Systemvarningar är tillgängliga på menyn **[!UICONTROL Alerts]** under **[!UI
 
 Innan du arbetar med varningar:
 
-* **Behörigheter**: Du behöver särskilda behörigheter för att visa och hantera aviseringar. Se [nödvändiga behörigheter i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE#permissions){target="_blank"}.
+* **Behörigheter**: Du behöver särskilda behörigheter för att visa och hantera aviseringar. Se [nödvändiga behörigheter i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html#permissions){target="_blank"}.
 
 * **Sandlådemedvetenhet**: Varningsprenumerationer är sandlådespecifika. När du prenumererar på aviseringar gäller de bara den aktuella sandlådan. När en sandlåda återställs återställs även alla aviseringsprenumerationer.
 
@@ -39,17 +48,27 @@ Innan du arbetar med varningar:
 
 >[!NOTE]
 >
->Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge. Mer information om varningsramverket finns i [Adobe Experience Platform-varningsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge. Mer information om varningsramverket finns i [Adobe Experience Platform-varningsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
-## Tillgängliga aviseringar
+## Tillgängliga aviseringar i Journey Optimizer {#available-alerts}
 
-Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** på den vänstra menyn för att få åtkomst till aviseringar. Fliken **Bläddra** visar alla förkonfigurerade aviseringar som är tillgängliga för Journey Optimizer.
+Journey Optimizer tillhandahåller förkonfigurerade varningsregler som övervakar specifika aspekter av dina resor och kanalkonfigurationer. Du behöver inte skapa de här aviseringarna - de är färdiga och kan aktiveras via prenumeration.
+
+**Så här kommer du åt varningslistan:**
+
+Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** på den vänstra menyn. Fliken **Bläddra** visar alla förkonfigurerade aviseringar som är tillgängliga för Journey Optimizer.
 
 ![](assets/updated-alerts-list.png){width=50%}
 
+### Aviseringskategorier
+
 Journey Optimizer erbjuder två typer av systemvarningar:
 
-**Resensaviseringar** - Övervaka körning och prestanda för resan:
+>[!BEGINTABS]
+
+>[!TAB Resensaviseringar]
+
+Övervaka körning och prestanda för resan:
 
 * [Det gick inte att läsa målgrupputlösaren](#alert-read-audiences) - Varnar när en läsmålgruppsaktivitet inte kan bearbeta profiler
 * [Felfrekvens för anpassad åtgärd överskreds](#alert-custom-action-error-rate) - Upptäcker höga felfrekvenser i API-anrop för anpassad åtgärd (ersätter den tidigare felvarningen för anpassad åtgärd på resan)
@@ -59,34 +78,51 @@ Journey Optimizer erbjuder två typer av systemvarningar:
 * [Resan har slutförts](#alert-journey-finished) - Informationsindikator när en resa har slutförts
 * [Anpassad åtgärdshämtning utlöst](#alert-custom-action-capping) - Meddelar när API-anropsgränsen har nåtts
 
-**Varningar för kanalkonfiguration** - Upptäck problem med inställningar för e-postleverans:
+>[!TAB Varningar om kanalkonfiguration]
+
+Upptäck problem med e-postleveransinställningar:
 
 * [DNS-post för AJO-domän saknas](#alert-dns-record-missing) - Identifierar saknade eller felkonfigurerade DNS-poster
 * [AJO-kanalkonfigurationsfel](#alert-channel-config-failure) - Identifierar e-postkonfigurationsproblem (SPF-, DKIM-, MX-poster)
   <!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
 
+>[!ENDTABS]
+
 >[!NOTE]
 >
->Information om varningar från andra Adobe Experience Platform-tjänster (datainmatning, identitetsupplösning, segmentering med mera) finns i [standarddokumentationen för varningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html?lang=sv-SE){target="_blank"}.
+>Information om varningar från andra Adobe Experience Platform-tjänster (datainmatning, identitetsupplösning, segmentering med mera) finns i [standarddokumentationen för varningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"}.
 
 ## Prenumerera på aviseringar {#subscribe-alerts}
 
-Varningsmeddelanden skickas till användare som prenumererar på dem när specifika villkor uppfylls (t.ex. att tröskelvärden överskrids eller konfigurationsproblem upptäcks).
+Varningsprenumerationer avgör vilka användare som får meddelanden när specifika villkor uppfylls (t.ex. att felprocentströskeln överskrids eller konfigurationsproblem upptäcks). Endast prenumererade användare får varningsmeddelanden för de valda aviseringarna.
+
+### Prenumerationsmetoder
 
 Du kan prenumerera på aviseringar på två sätt:
 
-* **[Global prenumeration](#global-subscription)**: Gäller alla resor och kampanjer i den aktuella sandlådan
-* **[Resespecifik prenumeration](#unitary-subscription)**: Gäller endast för enskilda resor
+* **[Global prenumeration](#global-subscription)**: Gäller alla resor och kampanjer i den aktuella sandlådan. Använd den här metoden när du vill övervaka all reseaktivitet i hela organisationen.
+* **[Resespecifik prenumeration](#unitary-subscription)**: Gäller endast för enskilda resor. Använd den här metoden när du vill övervaka vissa högprioriterade resor utan att få meddelanden om alla resor.
 
-**Så här fungerar aviseringsmeddelanden:**
+### Hur varningsmeddelanden fungerar
+
+**Varningslivscykel:**
+
+1. **Utlösande**: Varningen utlöses när dess specifika villkor är uppfyllt (felfrekvensen överskrider t.ex. 20 %)
+2. **Meddelande**: Alla prenumererade användare får meddelanden via sina konfigurerade kanaler
+3. **Övervakning**: Varningen fortsätter att övervaka villkoret med regelbundna intervall
+4. **Lösning**: När villkoret är löst får prenumeranterna ett meddelande om att villkoret är löst
+
+**Meddelandeleverans:**
 
 * **Leveranskanaler**: Aviseringar skickas via e-post och/eller meddelanden i appen i meddelandecentret för Journey Optimizer (klockikon i det övre högra hörnet). Konfigurera dina önskade leveranskanaler i dina [Adobe Experience Cloud-inställningar](../start/user-interface.md#in-product-uc).
 
-* **Varningstyper**: Journey Optimizer tillhandahåller både engångsaviseringar (informativa händelser som publicerad resa) och upprepade varningar (övervakningströsklar). Upprepade aviseringar fortsätter tills villkoret är löst.
+* **Varningstyper**: Journey Optimizer tillhandahåller både engångsaviseringar (informativa händelser som&quot;publicerad resa&quot;) och upprepade varningar (övervakningströsklar). Upprepade varningar fortsätter att utvärdera och meddela tills villkoret är löst.
 
-* **Upplösning**: När ett varningsproblem har åtgärdats får prenumeranterna ett meddelande om att det har lösts. För att förhindra att meddelandetrötthet varierar mellan olika värden, löses varningar automatiskt efter 1 timme även om tillståndet kvarstår.
+* **Automatisk upplösning**: För att förhindra att meddelandetrötthet ändrar värden, löses varningar automatiskt efter 1 timme även om villkoret kvarstår. Detta förhindrar kontinuerliga meddelanden när mätvärden håller pekaren över tröskelvärden.
 
-Mer information om att prenumerera via I/O-händelser finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}.
+**Alternativ prenumerationsmetod:**
+
+För avancerade integreringar kan du prenumerera via I/O Events för att skicka aviseringar till externa system. Se [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}.
 
 
 ### Global prenumeration {#global-subscription}
@@ -113,7 +149,7 @@ Klicka på **[!UICONTROL Unsubscribe]** bredvid aviseringen.
 
 **Alternativ prenumerationsmetod:**
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"} som tillåter integrering med externa system. Evenemangsprenumerationsnamn för Journey Optimizer-aviseringar visas i varje [varningsbeskrivning nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"} som tillåter integrering med externa system. Evenemangsprenumerationsnamn för Journey Optimizer-aviseringar visas i varje [varningsbeskrivning nedan](#journey-alerts).
 
 ### Resespecifik prenumeration {#unitary-subscription}
 
@@ -147,7 +183,7 @@ Med resespecifika abonnemang kan ni övervaka enskilda högprioriterade resor ut
 >
 >Varningen [Read Audience Trigger Unsuccess](#alert-read-audiences) är bara tillgänglig via global prenumeration, inte per resa.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
 ## Resevarningar {#journey-alerts}
 
@@ -367,7 +403,14 @@ Om du vill lägga till fler prenumeranter anger du deras e-postadresser avgräns
 
 Om du vill ta bort prenumeranter tar du bort deras e-postadress från de aktuella prenumeranterna och väljer **[!UICONTROL Update]**.
 
-## Ytterligare resurser {#additional-resources-alerts}
+## Relaterade ämnen {#additional-resources-alerts}
 
-* Lär dig hur du felsöker dina resor på [den här sidan](../building-journeys/troubleshooting.md).
-* Lär dig hur du granskar kampanjer på [den här sidan](../campaigns/review-activate-campaign.md).
+**Resor och kampanjhantering:**
+
+* [Felsök resor](../building-journeys/troubleshooting.md) - Lös vanliga reseproblem och fel
+* [Granska och aktivera kampanjer](../campaigns/review-activate-campaign.md) - validering av kampanj före publicering
+
+**Varningsramverk:**
+
+* [Adobe Experience Platform Alerts Overview](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html) - Understanding the alert framework
+* [Prenumerera på aviseringar via I/O-händelser](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html) - Avancerade integreringsalternativ
