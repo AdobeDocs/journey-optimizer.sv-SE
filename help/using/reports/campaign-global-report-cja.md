@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b74d3137-2dd9-4302-a56e-73503d318d18
-source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
+source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Tabellen **[!UICONTROL Tracked link label]** ger viktiga insikter i besökarnas 
 
 Om du har konfigurerat **[!UICONTROL Targeting rules]** för ditt innehåll ger tabellen **[!UICONTROL Targeting overview]** en detaljerad vy över viktiga engagemangsmått, som visar hur målprofilerna för varje regel interagerade med ditt innehåll.
 
-➡️ [Läs mer om målregler](../campaigns/optimization-targeting.md)
+➡️ [Läs mer om målregler](../content-management/optimization-targeting.md)
 
 +++ Läs mer om mätvärden för målinriktning
 

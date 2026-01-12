@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 30d4f967-e085-44f1-973d-11e79f693e6e
-source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
+source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Resursrapporten **Journey** fungerar som en heltäckande kontrollpanel, som till
 
 ![](assets/gs-cja-report-3.png)
 
-Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home).
+Mer information om Customer Journey Analytics Workspace och hur du filtrerar och analyserar data finns på [den här sidan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
 ## Reseöversikt {#journey-global}
 
@@ -85,7 +85,7 @@ Widgeten **[!UICONTROL Action errors]** innehåller information om de olika fel 
 
 ![](assets/cja-journey-canvas.png)
 
-Med widgeten **[!UICONTROL Journey Canvas]** kan du visuellt spåra sökvägen för dina målprofiler när de navigerar genom din resa. [Läs mer i Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)
+Med widgeten **[!UICONTROL Journey Canvas]** kan du visuellt spåra sökvägen för dina målprofiler när de navigerar genom din resa. [Läs mer i Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas)
 
 Förbättra anpassningen av arbetsytan med följande alternativ:
 
@@ -154,7 +154,7 @@ Tabellen **[!UICONTROL Event overview]** visar hur många profiler som uppfyller
 
 Om du har konfigurerat **[!UICONTROL Targeting rules]** för ditt innehåll ger tabellen **[!UICONTROL Targeting overview]** en detaljerad vy över viktiga engagemangsmått, som visar hur målprofilerna för varje regel interagerade med ditt innehåll.
 
-➡️ [Läs mer om målregler](../campaigns/optimization-targeting.md)
+➡️ [Läs mer om målregler](../content-management/optimization-targeting.md)
 
 +++ Läs mer om mätvärden för målinriktning
 

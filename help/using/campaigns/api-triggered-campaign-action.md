@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: kampanjer, API-utlösta, REST, optimering, meddelanden
 exl-id: 322e035c-7370-40c9-b1cb-3428bc26e874
-source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
+source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
 1. **Utnyttjandeoptimering**
 
-   Använd avsnittet **[!UICONTROL Message Optimization]** för att köra innehållsexperiment, utnyttja målinriktningsregler eller använda avancerade kombinationer av både experiment och målinriktning. De här olika alternativen och stegen som ska följas beskrivs i det här avsnittet: [Optimering i kampanjer](gs-message-optimization.md).
+   Använd avsnittet **[!UICONTROL Message Optimization]** för att köra innehållsexperiment, utnyttja målinriktningsregler eller använda avancerade kombinationer av både experiment och målinriktning. De här olika alternativen och stegen som ska följas beskrivs i det här avsnittet: [Optimering i kampanjer](../content-management/gs-message-optimization.md).
 <!--
 1. **Create a content experiment**
 
@@ -68,7 +68,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
