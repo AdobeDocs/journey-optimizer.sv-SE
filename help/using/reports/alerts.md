@@ -40,7 +40,7 @@ Systemvarningar är tillgängliga på menyn **[!UICONTROL Alerts]** under **[!UI
 
 Innan du arbetar med varningar:
 
-* **Behörigheter**: Du behöver särskilda behörigheter för att visa och hantera aviseringar. Se [nödvändiga behörigheter i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html#permissions){target="_blank"}.
+* **Behörigheter**: Du behöver särskilda behörigheter för att visa och hantera aviseringar. Se [nödvändiga behörigheter i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE#permissions){target="_blank"}.
 
 * **Sandlådemedvetenhet**: Varningsprenumerationer är sandlådespecifika. När du prenumererar på aviseringar gäller de bara den aktuella sandlådan. När en sandlåda återställs återställs även alla aviseringsprenumerationer.
 
@@ -48,7 +48,7 @@ Innan du arbetar med varningar:
 
 >[!NOTE]
 >
->Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge. Mer information om varningsramverket finns i [Adobe Experience Platform-varningsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
+>Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge. Mer information om varningsramverket finns i [Adobe Experience Platform-varningsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
 
 ## Tillgängliga aviseringar i Journey Optimizer {#available-alerts}
 
@@ -90,7 +90,7 @@ Upptäck problem med e-postleveransinställningar:
 
 >[!NOTE]
 >
->Information om varningar från andra Adobe Experience Platform-tjänster (datainmatning, identitetsupplösning, segmentering med mera) finns i [standarddokumentationen för varningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"}.
+>Information om varningar från andra Adobe Experience Platform-tjänster (datainmatning, identitetsupplösning, segmentering med mera) finns i [standarddokumentationen för varningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html?lang=sv-SE){target="_blank"}.
 
 ## Prenumerera på aviseringar {#subscribe-alerts}
 
@@ -122,7 +122,7 @@ Du kan prenumerera på aviseringar på två sätt:
 
 **Alternativ prenumerationsmetod:**
 
-För avancerade integreringar kan du prenumerera via I/O Events för att skicka aviseringar till externa system. Se [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}.
+För avancerade integreringar kan du prenumerera via I/O Events för att skicka aviseringar till externa system. Se [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}.
 
 
 ### Global prenumeration {#global-subscription}
@@ -149,7 +149,7 @@ Klicka på **[!UICONTROL Unsubscribe]** bredvid aviseringen.
 
 **Alternativ prenumerationsmetod:**
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"} som tillåter integrering med externa system. Evenemangsprenumerationsnamn för Journey Optimizer-aviseringar visas i varje [varningsbeskrivning nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"} som tillåter integrering med externa system. Evenemangsprenumerationsnamn för Journey Optimizer-aviseringar visas i varje [varningsbeskrivning nedan](#journey-alerts).
 
 ### Resespecifik prenumeration {#unitary-subscription}
 
@@ -183,7 +183,7 @@ Med resespecifika abonnemang kan ni övervaka enskilda högprioriterade resor ut
 >
 >Varningen [Read Audience Trigger Unsuccess](#alert-read-audiences) är bara tillgänglig via global prenumeration, inte per resa.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
 
 ## Resevarningar {#journey-alerts}
 
@@ -415,7 +415,7 @@ Om du vill ta bort prenumeranter tar du bort deras e-postadress från de aktuell
 
 **Varningsramverk:**
 
-* [Adobe Experience Platform Alerts Overview](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"} - Understanding the alert framework
-* [Hantera aviseringar i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html){target="_blank"} - Visa, prenumerera och hantera aviseringar
-* [Prenumerera på aviseringar via I/O-händelser](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"} - Avancerade integreringsalternativ
-* [Standardvarningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"} - Fullständig lista över tillgängliga plattformsaviseringar
+* [Adobe Experience Platform Alerts Overview](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"} - Understanding the alert framework
+* [Hantera aviseringar i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE){target="_blank"} - Visa, prenumerera och hantera aviseringar
+* [Prenumerera på aviseringar via I/O-händelser](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"} - Avancerade integreringsalternativ
+* [Standardvarningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html?lang=sv-SE){target="_blank"} - Fullständig lista över tillgängliga plattformsaviseringar
