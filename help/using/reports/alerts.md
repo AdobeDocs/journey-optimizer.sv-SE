@@ -8,9 +8,9 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: 0271dfdf9578921f48001f2bdcc0dbb15f785762
 workflow-type: tm+mt
-source-wordcount: '2190'
+source-wordcount: '2076'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,14 @@ När du skapar resor och kampanjer använder du knappen **Varningar** för att k
 
 * Lär dig felsöka dina resor på [den här sidan](../building-journeys/troubleshooting.md)
 
-* Lär dig hur du granskar och aktiverar kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [&#x200B; API-utlösta kampanjer &#x200B;](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md)
+* Lär dig hur du granskar och aktiverar kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [ API-utlösta kampanjer ](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md)
 
 
 Dessutom kan varningsmeddelanden skickas till alla användare i organisationen som har prenumererat på dem när vissa villkor är uppfyllda. Dessa aviseringar är tillgängliga på den dedikerade **[!UICONTROL Alerts]**-menyn. Adobe Experience Platform innehåller flera fördefinierade varningsregler som du kan aktivera för din organisation. Dessutom kan du prenumerera på [!DNL Adobe Journey Optimizer]-specifika systemaviseringar så som beskrivs på den här sidan.
 
 >[!NOTE]
 >
->Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
 Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Alerts]** på den vänstra menyn. Flera förkonfigurerade varningar för Journey Optimizer finns tillgängliga på fliken **Bläddra**.
 
@@ -75,7 +75,7 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en aviseri
 
 1. Använd samma metod för **[!UICONTROL Unsubscribe]**.
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
 
 ### Enhetsspecifik prenumeration {#unitary-subscription}
 
@@ -91,7 +91,7 @@ Följ de här stegen för att prenumerera/avbryta prenumerationen på en viss re
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta.
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
 ## Resevarningar {#journey-alerts}
 
@@ -158,37 +158,17 @@ Om du vill felsöka profilfel kan du fråga data i steghändelser för att förs
 
 ### Journey Published {#alert-journey-published}
 
->[!AVAILABILITY]
->
->Den här varningen är för närvarande tillgänglig med begränsad funktionalitet. Även om du kan prenumerera på den här aviseringen fungerar inte meddelandena ännu.
-
 Den här varningen meddelar dig när en resa har publicerats av en person på arbetsytan.
 
 Det här är en informativ varning som hjälper dig att hålla reda på händelser i din organisations livscykel. Det finns inga lösningsvillkor eftersom detta är ett engångsmeddelande.
 
 ### Resan avslutad {#alert-journey-finished}
 
->[!AVAILABILITY]
->
->Den här varningen är för närvarande tillgänglig med begränsad funktionalitet. Även om du kan prenumerera på den här aviseringen fungerar inte meddelandena ännu.
-
-Den här varningen meddelar dig när en resa är klar. Definitionen av&quot;färdig&quot; varierar beroende på resetyp:
-
-| Resetyp | Återkommande? | Har slutdatum? | Definition av&quot;färdigt&quot; |
-|--------------|------------|---------------|--------------------------|
-| Läs målgrupp | Nej | n/a | 91 dagar efter att körningen har startat |
-| Läs målgrupp | Ja | Nej | 91 dagar efter att körningen har startat |
-| Läs målgrupp | Ja | Ja | När slutdatumet nås |
-| Händelseutlöst resa | n/a | Ja | När slutdatumet nås |
-| Händelseutlöst resa | n/a | Nej | När den stängs i användargränssnittet eller via API |
+Den här varningen meddelar dig när en resa är klar. Definitionen av&quot;färdig&quot; varierar beroende på resans typ. [Läs mer om när resor anses vara slutförda](../building-journeys/end-journey.md#journey-finished-definition).
 
 Det här är en informativ varning som hjälper dig att hålla reda på slutförandet av en resa. Det finns inga lösningsvillkor eftersom detta är ett engångsmeddelande.
 
 ### Anpassad åtgärd som aktiveras {#alert-custom-action-capping}
-
->[!AVAILABILITY]
->
->Den här varningen är för närvarande tillgänglig med begränsad funktionalitet. Även om du kan prenumerera på den här aviseringen fungerar inte meddelandena ännu.
 
 Den här varningen varnar dig när capping har utlösts för en anpassad åtgärd. Takning används för att begränsa antalet anrop som skickas till en extern slutpunkt för att förhindra överbelastning av slutpunkten.
 

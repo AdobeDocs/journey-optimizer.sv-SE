@@ -9,10 +9,10 @@ level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 version: Journey Orchestration
-source-git-commit: b0b297ed33ab273a3201569760e1d2db5b3ccaad
+source-git-commit: 0271dfdf9578921f48001f2bdcc0dbb15f785762
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 1%
 
 ---
 
@@ -66,6 +66,20 @@ Efter den globala tidsgränsen **för** 91-dagarsresan växlar en läsmålgrupps
 >[!TIP]
 >
 >En segmentbaserad engångsresa behåller statusen **Live** även efter att en gång har körts. Profiler kan inte anges igen när de är klara, men resan är fortfarande i **Live**-status tills standardtidsgränsen för global är slut. Du kan stänga den manuellt tidigare med alternativet **Stäng till nya ingångar**.
+
+### När betraktas en resa som&quot;avslutad&quot;? {#journey-finished-definition}
+
+Definitionen av&quot;färdig&quot; varierar beroende på resetyp:
+
+| Resetyp | Återkommande? | Har slutdatum? | Definition av&quot;färdigt&quot; |
+|--------------|------------|---------------|--------------------------|
+| Läs målgrupp | Nej | n/a | 91 dagar efter att körningen har startat |
+| Läs målgrupp | Ja | Nej | 91 dagar efter att körningen har startat |
+| Läs målgrupp | Ja | Ja | När slutdatumet nås |
+| Händelseutlöst resa | n/a | Ja | När slutdatumet nås |
+| Händelseutlöst resa | n/a | Nej | När den stängs i användargränssnittet eller via API |
+
+Det här är en informativ varning som hjälper dig att hålla reda på slutförandet av en resa. Det finns inga lösningsvillkor eftersom detta är ett engångsmeddelande.
 
 ### Nära nya ingångar {#close-to-new-entrances}
 
