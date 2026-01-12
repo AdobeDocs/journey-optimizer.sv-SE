@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 version: Journey Orchestration
-source-git-commit: a67707e50960e4848197fa1bd39ce95af3ef14ab
+source-git-commit: 6976f2b1b8b95f7dc9bffe65b7a7ddcc5dab5474
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -231,5 +231,5 @@ Bläddra i avsnitten nedan om du vill veta mer om hur du konfigurerar, använder
 * [Konfigurera dina anpassade åtgärder](../action/about-custom-action-configuration.md) - Lär dig hur du skapar och konfigurerar en anpassad åtgärd
 * [Använd anpassade åtgärder](../building-journeys/using-custom-actions.md) - Lär dig hur du använder anpassade åtgärder på dina resor
 * [Felsökning av anpassad åtgärd](../action/troubleshoot-custom-action.md) - Lär dig hur du felsöker en anpassad åtgärd
-  <!--* [Iterate over contextual data](../personalization/iterate-contextual-data.md#arrays-in-journeys) - Learn how to work with arrays in Journey expressions and iterate over custom action responses, event data, and dataset lookups in message personalization-->
+* [Iterera över kontextuella data](../personalization/iterate-contextual-data.md#arrays-in-journeys) - Lär dig hur du arbetar med arrayer i Journey-uttryck och itererar över anpassade åtgärdssvar, händelsedata och datauppsättningar i meddelandepersonalisering
 
