@@ -111,7 +111,7 @@ När resan eller kampanjen är live utvärderas profiler utifrån de kriterier d
 
 Lär dig hur ni kan utnyttja innehållsoptimering i praktiken eller API-utlösta kampanjer. Ni får se hur ni kan rikta in er på undergrupper, skapa meddelandevarianter efter plats, aktivera reservinnehåll och köra flera experiment inom en och samma kampanj. Den här självstudiekursen handlar också om hur du hanterar flerkanalskampanjer samtidigt som du bibehåller meddelandets enhetlighet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3470372?captions=swe&quality=12)
 
 **Relaterade ämnen**
 
