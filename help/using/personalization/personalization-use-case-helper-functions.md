@@ -52,7 +52,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 1. Skapa en händelse vars schema innehåller arrayen `productListItems`.
 1. Definiera alla fält från den här arrayen som nyttolastfält för den här händelsen.
 
-   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}.
+   Läs mer om datatypen för produktlisteobjektet i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html?lang=sv-SE){target="_blank"}.
 
 1. Skapa en resa som börjar med det här evenemanget.
 1. Lägg till en **e-postaktivitet** på resan.
@@ -105,7 +105,7 @@ Kundvagnens innehåll är sammanhangsberoende information från resan. Därför 
 
       ![](assets/personalization-uc-helpers-5.png)
 
-      Läs mer om datatypen för personnamn i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
+      Läs mer om datatypen för personnamn i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html?lang=sv-SE){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Validate]** och sedan på **[!UICONTROL Save]**.
 
