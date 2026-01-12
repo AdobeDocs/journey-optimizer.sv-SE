@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: c9274ddf086fd0ea5fd4d2de9d90daffbccd5ae5
+source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
 workflow-type: tm+mt
-source-wordcount: '3051'
+source-wordcount: '3061'
 ht-degree: 15%
 
 ---
@@ -501,9 +501,12 @@ ht-degree: 15%
       + [Skapa en språkleverantör](using/content-management/multilingual-provider.md)
       + [Skapa flerspråkigt innehåll med manuell översättning](using/content-management/multilingual-manual.md)
       + [Skapa flerspråkigt innehåll med automatiserad översättning](using/content-management/multilingual-automated.md)
-   + [Meddelandeoptimering](using/campaigns/campaigns-message-optimization.md)
+   + Innehållsoptimering {#message-optimization}
+      + [Kom igång med optimering](using/campaigns/gs-message-optimization.md)
+      + [Använd målinriktning](using/campaigns/optimization-targeting.md)
+      + [Använd experimenterande](using/campaigns/optimization-experimentation.md)
+      + [Kombinera målinriktning och experimenterande](using/campaigns/optimization-combination.md)
    + Innehållsexperiment {#content-experiment}
-      + [Innehållsexperiment](/help/rp_landing_pages/content-experiment-landing-page.md)
       + [Kom igång med innehållsexperiment](using/content-management/get-started-experiment.md)
       + [Kom igång med Experiment Accelerator](using/content-management/experiment-accelerator-gs.md)
       + [Skapa ett innehållsexperiment](using/content-management/content-experiment.md)
@@ -838,7 +841,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

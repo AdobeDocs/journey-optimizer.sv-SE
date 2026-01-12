@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b74d3137-2dd9-4302-a56e-73503d318d18
-source-git-commit: 853e87cdd69a3fc180dcb1aa38b4b67f27977939
+source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -80,13 +80,13 @@ Observera att mätvärdena varierar beroende på vilka kanaler som används i ka
 
 +++
 
-### Kampanjtrattresultat {#campaign-funnel}
+### Kampanjresultat för funnel {#campaign-funnel}
 
 ![](assets/cja-campaign-funnel.png)
 
 Diagrammet **[!UICONTROL Campaign funnel results]** innehåller en detaljerad analys av hur era profiler interagerar med dina meddelanden, och ger värdefulla insikter om hur olika profiler interagerade med ditt innehåll.
 
-+++ Läs mer om resultatstatistik för Campaign-tratten
++++ Läs mer om resultaten från Campaign funnel
 
 * **[!UICONTROL Delivered]**: Antal e-postmeddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 
@@ -113,7 +113,7 @@ Tabellen **[!UICONTROL Tracked link label]** ger viktiga insikter i besökarnas 
 
 Om du har konfigurerat **[!UICONTROL Targeting rules]** för ditt innehåll ger tabellen **[!UICONTROL Targeting overview]** en detaljerad vy över viktiga engagemangsmått, som visar hur målprofilerna för varje regel interagerade med ditt innehåll.
 
-➡️ [Läs mer om målregler](../campaigns/campaigns-message-optimization.md)
+➡️ [Läs mer om målregler](../campaigns/optimization-targeting.md)
 
 +++ Läs mer om mätvärden för målinriktning
 

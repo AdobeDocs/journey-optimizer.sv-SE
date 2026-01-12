@@ -8,7 +8,7 @@ topic: Administration
 role: User
 level: Beginner
 keywords: spåra, övervaka, analysera, rapportera, leverera
-source-git-commit: 955dbbf944e40cd18530c9777c7f06ad39e45563
+source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 3%
@@ -175,7 +175,7 @@ Kodbaserade upplevelser kräver implementeringskonfiguration för att skicka sp�
 
 Innan spårning fungerar måste du konfigurera implementeringen för att skicka interaktionshändelser (skärmar, klickningar) till Adobe Experience Platform. Detta kräver:
 
-* Konfigurera en dataström för Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=sv-SE)
+* Konfigurera en dataström för Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html)
 * Implementera händelseinsamling i koden med Web SDK eller Mobile SDK.
 * Skicka visnings- och interaktionshändelser när innehåll visas eller klickas.
 
@@ -244,13 +244,13 @@ Journey Optimizer spårar automatiskt optimeringsexperiment, målgruppsstrategie
 
 * **Optimering av kampanjer och resor**:
 
-   * När du skapar experiment definierar du vilka mätvärden som ska spåras (konverteringar, klickningar, anpassade händelser). Journey Optimizer samlar automatiskt in prestandadata för varje behandling. [Läs mer](../campaigns/campaigns-message-optimization.md#experimentation)
+   * När du skapar experiment definierar du vilka mätvärden som ska spåras (konverteringar, klickningar, anpassade händelser). Journey Optimizer samlar automatiskt in prestandadata för varje behandling. [Läs mer](../campaigns/optimization-experimentation.md)
 
-   * Skapa målinriktningsregler för att leverera olika innehåll till olika målgruppssegment. Journey Optimizer spårar automatiskt interaktionsstatistik för varje målgrupp så att ni kan jämföra prestanda mellan olika segment. [Läs mer](../campaigns/campaigns-message-optimization.md#targeting)
+   * Skapa målinriktningsregler för att leverera olika innehåll till olika målgruppssegment. Journey Optimizer spårar automatiskt interaktionsstatistik för varje målgrupp så att ni kan jämföra prestanda mellan olika segment. [Läs mer](../campaigns/optimization-targeting.md)
 
 * **Sökvägsoptimering**: Lägg till en **Optimera**-aktivitet på resan och konfigurera flera sökvägar. Journey Optimizer spårar automatiskt vilka banprofiler som används och mäter prestandan. [Läs mer](../building-journeys/optimize.md)
 
-Analysera resultaten: visa konverteringsgrader, statistisk signifikans och lyft mellan behandlingar i experimentrapporter, eller jämföra interaktionsvärden för olika målsegment. [Rapport om experimentkampanj](../reports/campaign-global-report-cja-experimentation.md) | [Rapport om experimenterad resa &#x200B;](../reports/journey-global-report-cja-experimentation.md) | [Rapport om målinriktning på resa](../reports/journey-global-report-cja.md#targeting)
+Analysera resultaten: visa konverteringsgrader, statistisk signifikans och lyft mellan behandlingar i experimentrapporter, eller jämföra interaktionsvärden för olika målsegment. [Rapport om experimentkampanj](../reports/campaign-global-report-cja-experimentation.md) | [Rapport om experimenterad resa ](../reports/journey-global-report-cja-experimentation.md) | [Rapport om målinriktning på resa](../reports/journey-global-report-cja.md#targeting)
 
 ### Spåra beslutsprestanda {#decisioning-tracking}
 

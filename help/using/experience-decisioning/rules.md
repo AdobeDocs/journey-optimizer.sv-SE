@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Många gånger är de en kombination av flera attribut, utöver kundbeteendehän
 
 Du kan använda dessa regler:
 
-* När du skapar [innehållsoptimering med &#x200B;](../campaigns/campaigns-message-optimization.md#targeting) som mål på resor eller kampanjer,
+* När du skapar [innehållsoptimering med ](../campaigns/optimization-targeting.md) som mål på resor eller kampanjer,
 * När [optimering av kundresan](../building-journeys/optimize.md#targeting) skapas.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
@@ -90,7 +90,7 @@ Så här skapar du en regel:
    ![](assets/rules-select-entity.png){width=90%}
 
    * **[!UICONTROL Decision item]** - Regeln kan tillämpas på ett [beslutsobjekt](#decision-rules) i samband med beslut;
-   * **[!UICONTROL Targeting]** - Regeln kan användas när [målinriktningsregler](#targeting-rules) skapas, antingen som en del av [innehållsoptimeringen](../campaigns/campaigns-message-optimization.md#targeting) i en kampanj eller en resa, antingen i [Optimera reseaktiviteten](../building-journeys/optimize.md#targeting).
+   * **[!UICONTROL Targeting]** - Regeln kan användas när [målinriktningsregler](#targeting-rules) skapas, antingen som en del av [innehållsoptimeringen](../campaigns/optimization-targeting.md) i en kampanj eller en resa, antingen i [Optimera reseaktiviteten](../building-journeys/optimize.md#targeting).
 
 1. Om du skapar en **[!UICONTROL Decision item]**-regel kan du välja **[!UICONTROL Enable dataset lookup]** för att använda data från Adobe Experience Platform för att berika din beslutslogik med externa data. Detta är särskilt användbart för attribut som ändras ofta, t.ex. produkttillgänglighet eller realtidspriser.
 
@@ -137,4 +137,4 @@ Så här skapar du en regel:
 
 Lär dig hur du skapar, duplicerar och tillämpar återanvändbara **målinriktningsregler** i Adobe Journey Optimizer för att effektivt personalisera kampanjer baserat på kundattribut som region, språk och beteende, vilket sparar tid samtidigt som målgruppens precision förbättras.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476131/?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3476127/?quality=12)

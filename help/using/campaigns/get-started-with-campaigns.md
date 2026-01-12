@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 6c8649726f8faad0a9e4945778a3f9217f3627d8
+source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
@@ -184,7 +184,7 @@ Innan du arbetar med kampanjer bör du kontrollera att du har följande på plat
 
    1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-  Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}.
+  Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
 
   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
@@ -291,7 +291,7 @@ Utforska följande kraftfulla funktioner när ni blir mer bekväma med kampanjer
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Schemaläggning och timing**
 
@@ -301,7 +301,7 @@ Schemalägg kampanjer för specifika datum/tidpunkter, ange återkommande levera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Klassificeringskontroll**
 
@@ -311,7 +311,7 @@ Begränsa meddelandegenomströmningen för att förhindra överbelastning i syst
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Målgruppsanpassning**
 
@@ -321,7 +321,7 @@ Rikta in er på specifika Adobe Experience Platform-målgrupper med precision oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Arbetsflöden för godkännande**
 
@@ -331,7 +331,7 @@ Implementera gransknings- och godkännandeprocesser innan kampanjer publiceras, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 **Tysta timmar**
 
@@ -341,13 +341,13 @@ Följ kundernas önskemål genom att undvika meddelandeleverans under angivna ti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Optimering**
 
 Använd målinriktningsregler och innehållsexperiment för att leverera personaliserat innehåll och maximera engagemanget.
 
-[Optimera kampanjer](campaigns-message-optimization.md)
+[Optimera kampanjer](gs-message-optimization.md)
 :::
 
 ::::

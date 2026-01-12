@@ -5,7 +5,7 @@ title: Innehållshantering
 description: Innehållshantering
 redpen-status: CREATED_||_2025-08-12_00-44-43
 exl-id: 159ae1bf-e1bd-48c7-b91b-2ac8bdfffaf2
-source-git-commit: b8c2b05df22e4aa78ea95e47e1554c9d538dfc0f
+source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Med Adobe Journey Optimizer Content Management-funktioner kan ni skapa, personal
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Lägg till Personalization
 
@@ -30,7 +30,7 @@ Lär dig hur du implementerar och optimerar personaliseringsfunktioner för att 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Skapa landningssidor
 
@@ -40,7 +40,7 @@ Upptäck verktyg och självstudiekurser för att skapa, hantera och optimera lan
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Innehållsmallar
 
@@ -50,7 +50,7 @@ Effektivisera framtagningen av innehåll med återanvändbara mallar för effekt
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Återanvändbara innehållsfragment
 
@@ -60,7 +60,7 @@ Lär dig hur du skapar och hanterar återanvändbara innehållsfragment för per
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Skapa dynamiskt innehåll
 
@@ -70,7 +70,7 @@ Använd villkorsregler för att skapa dynamiskt, personaliserat innehåll för e
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 Användningsexempel för flera lösningar
 
@@ -86,4 +86,4 @@ Integrera Adobe-lösningar som Experience Manager, Stock och GenStudio för smid
 
 - **[AI-assistenten för innehållsgenerering](ai-assistant-landing-page.md)** - Använd AI-verktygen för att generera och anpassa innehåll för e-post, SMS, webbsidor och experiment.
 - **[Hantering av flerspråkigt innehåll](content-multilingual-landing-page.md)** - Skapa och hantera flerspråkigt innehåll med hjälp av manuella och automatiserade översättningsarbetsflöden.
-- **[Innehållsexperiment](content-experiment-landing-page.md)** - Konfigurera och analysera experiment för att optimera publikens engagemang och kampanjresultat.
+- **[Innehållsexperiment](../using/content-management/get-started-experiment.md)** - Konfigurera och analysera experiment för att optimera publikens engagemang och kampanjresultat.
