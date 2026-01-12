@@ -9,9 +9,9 @@ level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 version: Journey Orchestration
-source-git-commit: 0271dfdf9578921f48001f2bdcc0dbb15f785762
+source-git-commit: 03e9d4205f59a32347cd1702b24bfbad2bf540b9
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '947'
 ht-degree: 1%
 
 ---
@@ -78,8 +78,6 @@ Definitionen av&quot;färdig&quot; varierar beroende på resetyp:
 | Läs målgrupp | Ja | Ja | När slutdatumet nås |
 | Händelseutlöst resa | n/a | Ja | När slutdatumet nås |
 | Händelseutlöst resa | n/a | Nej | När den stängs i användargränssnittet eller via API |
-
-Det här är en informativ varning som hjälper dig att hålla reda på slutförandet av en resa. Det finns inga lösningsvillkor eftersom detta är ett engångsmeddelande.
 
 ### Nära nya ingångar {#close-to-new-entrances}
 

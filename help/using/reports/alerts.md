@@ -8,90 +8,146 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-source-git-commit: 0271dfdf9578921f48001f2bdcc0dbb15f785762
+source-git-commit: 03e9d4205f59a32347cd1702b24bfbad2bf540b9
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
 
 # Åtkomst och prenumeration på systemvarningar {#alerts}
 
-När du skapar resor och kampanjer använder du knappen **Varningar** för att kontrollera och åtgärda fel innan du kör eller publicerar dem.
+## Översikt
 
-* Lär dig felsöka dina resor på [den här sidan](../building-journeys/troubleshooting.md)
+Adobe Journey Optimizer har två typer av varningar som hjälper dig att övervaka och felsöka dina åtgärder:
 
-* Lär dig hur du granskar och aktiverar kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [&#x200B; API-utlösta kampanjer &#x200B;](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md)
+* **Verifieringsvarningar på arbetsytan**: När du skapar resor och kampanjer använder du knappen **Varningar** på arbetsytan för att identifiera och åtgärda konfigurationsfel före publicering. Lär dig hur du [felsöker dina resor](../building-journeys/troubleshooting.md) och granskar dina kampanjer: [Åtgärdskampanjer](../campaigns/review-activate-campaign.md) | [API-utlösta kampanjer](../campaigns/review-activate-api-triggered-campaign.md) | [Samordnade kampanjer](../orchestrated/start-monitor-campaigns.md).
 
+* **Systemövervakningsmeddelanden** (som beskrivs på den här sidan): Ta emot proaktiva meddelanden när tröskelvärden för användning överskrids eller när problem upptäcks i direktresor och kanalkonfigurationer. Dessa varningar hjälper er att snabbt reagera på potentiella problem innan de påverkar era kundupplevelser.
 
-Dessutom kan varningsmeddelanden skickas till alla användare i organisationen som har prenumererat på dem när vissa villkor är uppfyllda. Dessa aviseringar är tillgängliga på den dedikerade **[!UICONTROL Alerts]**-menyn. Adobe Experience Platform innehåller flera fördefinierade varningsregler som du kan aktivera för din organisation. Dessutom kan du prenumerera på [!DNL Adobe Journey Optimizer]-specifika systemaviseringar så som beskrivs på den här sidan.
+Systemvarningar är tillgängliga på menyn **[!UICONTROL Alerts]** under **[!UICONTROL Administration]**. Adobe Experience Platform tillhandahåller flera fördefinierade varningsregler som du kan aktivera, inklusive [!DNL Adobe Journey Optimizer]-specifika aviseringar för resor och kanalkonfigurationer.
+
+## Förhandskrav
+
+Innan du arbetar med varningar:
+
+* **Behörigheter**: Du behöver särskilda behörigheter för att visa och hantera aviseringar. Se [nödvändiga behörigheter i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html#permissions){target="_blank"}.
+
+* **Sandlådemedvetenhet**: Varningsprenumerationer är sandlådespecifika. När du prenumererar på aviseringar gäller de bara den aktuella sandlådan. När en sandlåda återställs återställs även alla aviseringsprenumerationer.
+
+* **Meddelandeinställningar**: Konfigurera hur du tar emot aviseringar (e-post och/eller i programmet) i dina [Adobe Experience Cloud-inställningar](../start/user-interface.md#in-product-uc).
 
 >[!NOTE]
 >
->Läs mer om varningar i Adobe Experience Platform i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=sv-SE){target="_blank"}.
+>Journey Optimizer-specifika aviseringar gäller endast för **live**-resor. Varningar utlöses inte för resor i testläge. Mer information om varningsramverket finns i [Adobe Experience Platform-varningsdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html){target="_blank"}.
 
-Klicka på **[!UICONTROL Administration]** under **[!UICONTROL Alerts]** på den vänstra menyn. Flera förkonfigurerade varningar för Journey Optimizer finns tillgängliga på fliken **Bläddra**.
+## Tillgängliga aviseringar
+
+Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** på den vänstra menyn för att få åtkomst till aviseringar. Fliken **Bläddra** visar alla förkonfigurerade aviseringar som är tillgängliga för Journey Optimizer.
 
 ![](assets/updated-alerts-list.png){width=50%}
 
-* Registreringar som är specifika för resor:
+Journey Optimizer erbjuder två typer av systemvarningar:
 
-   * aviseringen [Läs målutlösaren misslyckades](#alert-read-audiences)
-   * aviseringen [Felfrekvens för anpassad åtgärd överskreds](#alert-custom-action-error-rate) (ersätter den tidigare felaviseringen för anpassad åtgärd på resan)
-   * varningen [Profilens ignoreringsfrekvens har överskridits](#alert-discard-rate)
-   * [Profilens felfrekvens överskreds](#alert-profile-error-rate)-varningen
-   * aviseringen [Resa publicerad](#alert-journey-published)
-   * aviseringen [Resan slutförd](#alert-journey-finished)
-   * aviseringen [Custom Action Capping utlöstes](#alert-custom-action-capping)
+**Resensaviseringar** - Övervaka körning och prestanda för resan:
 
-* Aviseringar som är specifika för kanalkonfigurationen:
+* [Det gick inte att läsa målgrupputlösaren](#alert-read-audiences) - Varnar när en läsmålgruppsaktivitet inte kan bearbeta profiler
+* [Felfrekvens för anpassad åtgärd överskreds](#alert-custom-action-error-rate) - Upptäcker höga felfrekvenser i API-anrop för anpassad åtgärd (ersätter den tidigare felvarningen för anpassad åtgärd på resan)
+* [Profilens ignoreringsfrekvens har överskridits](#alert-discard-rate) - Identifierar när profiler ignoreras med en onormal hastighet
+* [Profilfelsfrekvensen har överskridits](#alert-profile-error-rate) - flaggor när profiler stöter på fel under körningen
+* [Resan har publicerats](#alert-journey-published) - Informationsavisering när en resa har publicerats
+* [Resan har slutförts](#alert-journey-finished) - Informationsindikator när en resa har slutförts
+* [Anpassad åtgärdshämtning utlöst](#alert-custom-action-capping) - Meddelar när API-anropsgränsen har nåtts
 
-   * [DNS-posten för AJO-domänen saknar](#alert-dns-record-missing)-varning
-   * meddelandet [Fel i AJO-kanalkonfiguration](#alert-channel-config-failure)
-     <!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+**Varningar för kanalkonfiguration** - Upptäck problem med inställningar för e-postleverans:
+
+* [DNS-post för AJO-domän saknas](#alert-dns-record-missing) - Identifierar saknade eller felkonfigurerade DNS-poster
+* [AJO-kanalkonfigurationsfel](#alert-channel-config-failure) - Identifierar e-postkonfigurationsproblem (SPF-, DKIM-, MX-poster)
+  <!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+
+>[!NOTE]
+>
+>Information om varningar från andra Adobe Experience Platform-tjänster (datainmatning, identitetsupplösning, segmentering med mera) finns i [standarddokumentationen för varningsregler](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/rules.html){target="_blank"}.
 
 ## Prenumerera på aviseringar {#subscribe-alerts}
 
-Om ett oväntat beteende inträffar och/eller om vissa villkor i åtgärderna har nåtts (t.ex. ett eventuellt problem när systemet överskrider ett tröskelvärde), skickas varningsmeddelanden till alla användare i organisationen som prenumererar på dem.
+Varningsmeddelanden skickas till användare som prenumererar på dem när specifika villkor uppfylls (t.ex. att tröskelvärden överskrids eller konfigurationsproblem upptäcks).
 
-Du kan prenumerera på varje avisering individuellt från användargränssnittet, antingen globalt på menyn **[!UICONTROL Alerts]** (se [Global prenumeration](#global-subscription)) eller enhetsspecifikt för en viss resa (se [Unitär prenumeration](#unitary-subscription)).
+Du kan prenumerera på aviseringar på två sätt:
 
-Beroende på prenumerantens önskemål skickas varningar via e-post och/eller direkt i Journey Optimizer meddelandecenter i det övre högra hörnet av användargränssnittet (meddelanden i appen). Välj hur du vill få dessa aviseringar i [!DNL Adobe Experience Cloud] **[!UICONTROL Preferences]**. [Läs mer](../start/user-interface.md#in-product-uc)
+* **[Global prenumeration](#global-subscription)**: Gäller alla resor och kampanjer i den aktuella sandlådan
+* **[Resespecifik prenumeration](#unitary-subscription)**: Gäller endast för enskilda resor
 
-När en varning har lösts får prenumeranterna ett meddelande om att den har lösts. Varningarna löses efter 1 timme för att skydda mot växlande värden.
+**Så här fungerar aviseringsmeddelanden:**
+
+* **Leveranskanaler**: Aviseringar skickas via e-post och/eller meddelanden i appen i meddelandecentret för Journey Optimizer (klockikon i det övre högra hörnet). Konfigurera dina önskade leveranskanaler i dina [Adobe Experience Cloud-inställningar](../start/user-interface.md#in-product-uc).
+
+* **Varningstyper**: Journey Optimizer tillhandahåller både engångsaviseringar (informativa händelser som publicerad resa) och upprepade varningar (övervakningströsklar). Upprepade aviseringar fortsätter tills villkoret är löst.
+
+* **Upplösning**: När ett varningsproblem har åtgärdats får prenumeranterna ett meddelande om att det har lösts. För att förhindra att meddelandetrötthet varierar mellan olika värden, löses varningar automatiskt efter 1 timme även om tillståndet kvarstår.
+
+Mer information om att prenumerera via I/O-händelser finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}.
 
 
 ### Global prenumeration {#global-subscription}
 
-Följ de här stegen för att prenumerera/avbryta prenumerationen på en avisering för alla resor och kampanjer:
+Med globala prenumerationer kan ni få aviseringar för alla resor och kampanjer i den aktuella sandlådan.
 
-1. Bläddra till kontrollpanelen **[!UICONTROL Alerts]** på den vänstra menyn och välj alternativet **[!UICONTROL Subscribe]** för den avisering som du vill prenumerera på.
+**Så här prenumererar du på en avisering:**
+
+1. Navigera till **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** på den vänstra menyn.
+
+1. Leta reda på aviseringen som du vill övervaka på fliken **[!UICONTROL Browse]**.
+
+1. Klicka på **[!UICONTROL Subscribe]** om du vill ha en varning.
 
    ![Prenumererar på en avisering](assets/alert-subscribe.png){width=80%}
 
-   >[!NOTE]
-   >
-   >Prenumerationen gäller bara för en viss sandlåda. Du måste prenumerera på varningar för varje enskild sandlåda.
+**Så här avslutar du prenumerationen:**
 
-1. Använd samma metod för **[!UICONTROL Unsubscribe]**.
+Klicka på **[!UICONTROL Unsubscribe]** bredvid aviseringen.
 
-Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html?lang=sv-SE){target="_blank"}. Varningsregler är ordnade i olika prenumerationspaket. Evenemangsprenumerationer som motsvarar specifika Journey Optimizer-aviseringar visas [nedan](#journey-alerts).
+>[!IMPORTANT]
+>
+>Aviseringsprenumerationer är sandlådespecifika. Du måste prenumerera på varningar separat i varje sandlåda där du vill få meddelanden.
 
-### Enhetsspecifik prenumeration {#unitary-subscription}
+**Alternativ prenumerationsmetod:**
 
-Följ de här stegen för att prenumerera/avbryta prenumerationen på en viss resa:
+Du kan också prenumerera via [I/O-händelsemeddelanden](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"} som tillåter integrering med externa system. Evenemangsprenumerationsnamn för Journey Optimizer-aviseringar visas i varje [varningsbeskrivning nedan](#journey-alerts).
 
-1. Bläddra till reseinventeringen och välj alternativet **[!UICONTROL Subscribe to alerts]** för en viss resa.
+### Resespecifik prenumeration {#unitary-subscription}
+
+Med resespecifika abonnemang kan ni övervaka enskilda högprioriterade resor utan att få meddelanden om alla resor i organisationen.
+
+**Så här prenumererar du på aviseringar för en viss resa:**
+
+1. Gå till reseinventeringen.
+
+1. Klicka på menyn **⋯** (fler åtgärder) för den resa du vill övervaka.
+
+1. Välj **[!UICONTROL Subscribe to alerts]**.
 
    ![Prenumerera på en avisering för en viss resa](assets/subscribe-journey-alert.png){width=75%}
 
-1. Välj aviseringar. Följande aviseringar är tillgängliga: [Profilens borttagningsfrekvens har överskridits](#alert-discard-rate), [Anpassad åtgärdsfelfrekvens har överskridits](#alert-custom-action-error-rate), [Profilfelsfrekvens har överskridits](#alert-profile-error-rate), [Resan har publicerats](#alert-journey-published), [Resan har slutförts](#alert-journey-finished) och [Anpassad åtgärd har startats](#alert-custom-action-capping).
+1. Markera de aviseringar som du vill aktivera bland de tillgängliga alternativen:
+   * [Frekvensen för ignorerade profiler har överskridits](#alert-discard-rate)
+   * [Felfrekvens för anpassad åtgärd överskreds](#alert-custom-action-error-rate)
+   * [Profilfelsfrekvensen har överskridits](#alert-profile-error-rate)
+   * [Journey Published](#alert-journey-published)
+   * [Resan avslutad](#alert-journey-finished)
+   * [Anpassad åtgärd som aktiveras](#alert-custom-action-capping)
 
-1. Om du vill avbryta prenumerationen på en varning avmarkerar du den på samma skärm.
+1. Klicka på **[!UICONTROL Save]** för att bekräfta dina prenumerationer.
 
-1. Klicka på **[!UICONTROL Save]** för att bekräfta.
+**Så här avslutar du prenumerationen:**
 
-<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html?lang=sv-SE#enable-email-alerts){target="_blank"}.-->
+Öppna samma dialogruta, avmarkera aviseringarna och klicka på **[!UICONTROL Save]**.
+
+>[!NOTE]
+>
+>Varningen [Read Audience Trigger Unsuccess](#alert-read-audiences) är bara tillgänglig via global prenumeration, inte per resa.
+
+<!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 
 ## Resevarningar {#journey-alerts}
 
