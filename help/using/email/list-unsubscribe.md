@@ -43,7 +43,7 @@ Beroende på e-postklienten och inställningarna för att avbryta prenumeratione
 >
 >Lär dig hur du hanterar avprenumerationsinställningarna i [det här avsnittet](#enable-list-unsubscribe) nedan.
 
-I båda fallen bearbetas deras begäran om att avbryta prenumerationen när en mottagare klickar på länken för att avanmäla sig. Motsvarande profil är omedelbart avanmäld och det här valet uppdateras i [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html){target="_blank"}. Läs mer om godkännandebearbetning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html){target="_blank"}.
+I båda fallen bearbetas deras begäran om att avbryta prenumerationen när en mottagare klickar på länken för att avanmäla sig. Motsvarande profil är omedelbart avanmäld och det här valet uppdateras i [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=sv-SE){target="_blank"}. Läs mer om godkännandebearbetning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=sv-SE){target="_blank"}.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ I båda fallen bearbetas deras begäran om att avbryta prenumerationen när en m
 >id="ajo_admin_preset_unsubscribe"
 >title="Lägg till en avbruten URL i dina e-postmeddelanden"
 >abstract="Aktivera det här alternativet om du automatiskt vill lägga till en URL för att avbryta prenumerationen i e-postrubriken. Du kan också ange en avanmälnings-URL i ett meddelande genom att infoga en länk för avanmälan med ett klick i e-postinnehållet."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="Ange avanmälan med ett klick från e-postinnehållet"
+>additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="Ange avanmälan med ett klick från e-postinnehållet"
 
 När alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat, om det stöds av mottagarnas e-postklient, innehåller e-posthuvudet både ett mailto och/eller en URL som standard som mottagarna kan använda för att avbryta prenumerationen från din e-postlista.
 
@@ -93,7 +93,7 @@ Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL On
   >
   >Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
 
-I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
+I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=sv-SE){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=sv-SE#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
 
 [!DNL Journey Optimizer] lägger för närvarande inte till någon specifik tagg för att avbryta prenumerationshändelser som utlöses av funktionen för att avsluta prenumerationen. Om du behöver skilja ut avbeställningsklickningar i List från andra avbeställningsåtgärder måste du implementera anpassad taggning externt eller utnyttja en extern landningssida för spårning.
 
