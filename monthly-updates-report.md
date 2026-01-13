@@ -5,7 +5,7 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: fec72c63d41a41adce5107082c50a68a7b8c0af2
+source-git-commit: f4eb982ba0840acfe336e759fcbf9cfd47b3b98c
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%
@@ -165,7 +165,7 @@ ht-degree: 0%
 - [Definiera API-utlösta kampanjegenskaper](help/using/campaigns/api-triggered-campaign-properties.md) - 23 okt
 - [Arbeta med API-utlösta kampanjer](help/using/campaigns/api-triggered-campaigns.md) - 29 okt
 - [Konfigurera kampanjåtgärden](help/using/campaigns/campaign-action.md) - 29 okt
-- [Optimering av kampanjer och resor](help/using/campaigns/gs-message-optimization.md) - 22 oktober
+- [Optimering av kampanjer och resor](help/using/content-management/gs-message-optimization.md) - 22 oktober
 - [Skapa en åtgärdskampanj](help/using/campaigns/create-campaign.md) - 29 okt
 - [Kom igång med kampanjer](help/using/campaigns/get-started-with-campaigns.md) - 29 okt
 - [Få tillgång till och hantera kampanjer](help/using/campaigns/manage-campaigns.md) - 23 okt
@@ -180,7 +180,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt

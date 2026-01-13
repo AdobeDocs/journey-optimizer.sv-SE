@@ -6,7 +6,7 @@ description: Lär dig hur ni kombinerar målinriktning och experiment inom en en
 role: User
 level: Intermediate
 keywords: optimering, målinriktning, experiment, kombination, avancerat
-source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
+source-git-commit: f4eb982ba0840acfe336e759fcbf9cfd47b3b98c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Följ stegen nedan om du vill kombinera både målinriktning och experiment i en
 
 1. Fortsätt på samma sätt med de andra målinriktningsreglerna och utforma motsvarande innehåll för varje variant.
 
-1. Spara ändringarna och [aktivera](review-activate-campaign.md) din resa eller kampanj.
+1. Spara ändringarna och [aktivera](../campaigns/review-activate-campaign.md) din resa eller kampanj.
 
 När resan/kampanjen är live tilldelas användare från varje målgrupp slumpvis de olika innehållsvariationerna som definierats för den grupp de tillhör.
 

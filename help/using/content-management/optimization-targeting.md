@@ -6,7 +6,7 @@ description: Lär dig hur ni kan utnyttja regler för målinriktning för att le
 role: User
 level: Intermediate
 keywords: målgruppsanpassning, optimering, målgrupp, personalisering, regler
-source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
+source-git-commit: f4eb982ba0840acfe336e759fcbf9cfd47b3b98c
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Följ stegen nedan för att konfigurera målinriktning.
 
    I det här exemplet utformar du ett specifikt innehåll för amerikanska medborgare, ett annat innehåll för franska medborgare och ett annat innehåll för indiska medborgare.
 
-1. [Aktivera](review-activate-campaign.md) din resa eller kampanj.
+1. [Aktivera](../campaigns/review-activate-campaign.md) din resa eller kampanj.
 
 När resan/kampanjen är live skickas innehåll som är skräddarsytt för varje mål så att amerikanska medborgare får ett specifikt meddelande, Frankrike har ett annat budskap och så vidare.
 

@@ -6,7 +6,7 @@ description: Lär dig hur du använder innehållsexperiment för att testa flera
 role: User
 level: Intermediate
 keywords: experiment, optimering, A/B-testning, innehållsexperiment, behandlingar
-source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
+source-git-commit: f4eb982ba0840acfe336e759fcbf9cfd47b3b98c
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Följ stegen nedan om du vill konfigurera experimenterande och avgöra vilket me
    >
    >Du kan välja andra åtgärder: experimentet gäller för alla åtgärder som läggs till i kampanjen eller för resan [Åtgärdsaktivitet](../building-journeys/journey-action.md).
 
-1. [Aktivera](review-activate-campaign.md) din resa eller kampanj.
+1. [Aktivera](../campaigns/review-activate-campaign.md) din resa eller kampanj.
 
 När resan/kampanjen är live tilldelas användarna slumpvis olika innehållsvariationer. [!DNL Journey Optimizer] spårar vilka varianter som driver fler inköp och ger åtgärdbara insikter.
 
