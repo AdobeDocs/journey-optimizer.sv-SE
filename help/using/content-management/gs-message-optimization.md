@@ -3,13 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Kom igång med innehållsoptimering
 description: Lär dig hur ni kan använda innehållsoptimering för att leverera personaliserat och optimerat innehåll i era kampanjer och resor.
-feature: Experimentation, Targeting
+feature: Experimentation
 topic: Content Management
 role: User
 level: Beginner
 keywords: optimering, målinriktning, experiment, A/B-testning, kampanjer, resor, personalisering
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
-source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
+source-git-commit: 8dba26f29fda47d0b953d80656aa0f0b6fe294a9
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 2%
@@ -111,7 +111,7 @@ När resan eller kampanjen är live utvärderas profiler utifrån de kriterier d
 
 Lär dig hur ni kan utnyttja innehållsoptimering i praktiken eller API-utlösta kampanjer. Ni får se hur ni kan rikta in er på undergrupper, skapa meddelandevarianter efter plats, aktivera reservinnehåll och köra flera experiment inom en och samma kampanj. Den här självstudiekursen handlar också om hur du hanterar flerkanalskampanjer samtidigt som du bibehåller meddelandets enhetlighet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470372?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)
 
 **Relaterade ämnen**
 
