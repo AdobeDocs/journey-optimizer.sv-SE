@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
-source-git-commit: 13879953461a28c4c911030a165fbd0b6393bb07
+source-git-commit: 780c197da342968c6dc125277f325219e0717082
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Genom att integrera Adobe Experience Manager as a Cloud Service med Adobe Journey Optimizer kan du nu smidigt införliva dina AEM Content Fragments i ditt Journey Optimizer-innehåll. Denna smidiga anslutning förenklar processen att komma åt och utnyttja AEM-innehåll, vilket gör det möjligt att skapa personaliserade och dynamiska kampanjer och resor.
 
-Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} i Experience Manager-dokumentationen.
+Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} i Experience Manager-dokumentationen.
 
 >[!AVAILABILITY]
 >
@@ -38,7 +38,7 @@ Mer information om AEM Content Fragments finns i [Arbeta med innehållsfragment]
 
 >[!IMPORTANT]
 >
->Om du vill att Journey Optimizer ska kunna komma åt Adobe Experience Manager Content Fragments via API:t för hantering av innehållsfragment, måste du först [konfigurera Dispatcher](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration).
+>Om du vill att Journey Optimizer ska kunna komma åt Adobe Experience Manager Content Fragments via API:t för hantering av innehållsfragment, måste du först [konfigurera Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration).
 
 Innan du använder ditt Content-fragment i Journey Optimizer måste du skapa en tagg speciellt för Journey Optimizer:
 
@@ -54,9 +54,9 @@ Innan du använder ditt Content-fragment i Journey Optimizer måste du skapa en 
 
 1. Klicka på **Skapa**.
 
-1. Definiera innehållsfragmentmodellen så som beskrivs i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} och tilldela den nya Journey Optimizer-taggen.
+1. Definiera innehållsfragmentmodellen så som beskrivs i [Experience Manager-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} och tilldela den nya Journey Optimizer-taggen.
 
-Nu kan du börja skapa och konfigurera ditt innehållsfragment för senare användning i Journey Optimizer. Läs mer i [Experience Manager-dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
+Nu kan du börja skapa och konfigurera ditt innehållsfragment för senare användning i Journey Optimizer. Läs mer i [Experience Manager-dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
 
 ## Lägg till Experience Manager Content-fragment {#aem-add}
 
@@ -105,6 +105,10 @@ När du har skapat och personaliserat dina AEM Content Fragments kan du nu impor
 
    ![](assets/aem_campaign_6.png)
 
+1. Välj **Piller: Av** om du vill aktivera pilleupplevelsen för att förbättra läsbarheten genom att dölja långa attributsökvägar.
+
+   ![](assets/aem_campaign_10.png)
+
 1. Om du vill aktivera realtidspersonalisering måste alla platshållare som används i en **[!UICONTROL Content fragment]** uttryckligen deklareras som parametrar i fragmenthjälpposten. Du kan mappa dessa platshållare till profilattribut, sammanhangsberoende attribut, statiska strängar eller fördefinierade variabler på följande sätt:
 
    1. **Mappning av profil- eller kontextuella attribut**: Tilldela platshållaren till en profil eller ett sammanhangsberoende attribut, t.ex. name = profile.person.name.firstName.
@@ -118,7 +122,7 @@ I det här fallet kontrollerar du att **_variableName_** har deklarerats innan d
       {% let variableName = attribute name %} 
       ```
 
-   I exemplet nedan mappas platshållaren **_name_** till attributet **_profile.person.name.firstName_** i fragmentet.
+   I exemplet nedan mappas platshållaren **_month_** till attributet **_profile.person.bornDate_** i fragmentet.
 
    ![](assets/aem_campaign_9.png){zoomable="yes"}
 
@@ -127,4 +131,4 @@ I det här fallet kontrollerar du att **_variableName_** har deklarerats innan d
 
 När du har utfört dina tester och validerat innehållet kan du [skicka din kampanj](../campaigns/review-activate-campaign.md) eller [publicera din resa](../building-journeys/publish-journey.md) till din målgrupp.
 
-Med Adobe Experience Manager kan ni identifiera de Journey Optimizer-kampanjer eller resor där ett innehållsfragment används. Läs mer i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references).
+Med Adobe Experience Manager kan ni identifiera de Journey Optimizer-kampanjer eller resor där ett innehållsfragment används. Läs mer i [Adobe Experience Manager-dokumentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references).
