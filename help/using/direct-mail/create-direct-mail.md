@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 5f2ccb102d08151da5616ef42559164f29542e5d
+source-git-commit: ef109382448b013398b83714b0f5e85f428ffadd
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '746'
 ht-degree: 2%
 
 ---
@@ -30,12 +30,7 @@ Skapa en schemalagd kampanj och konfigurera extraheringsfilen om du vill skapa d
 >1. En [filroutningskonfiguration](../direct-mail/direct-mail-configuration.md#file-routing-configuration) som anger på vilken server extraheringsfilen ska överföras och lagras,
 >1. En [konfiguration för direktmeddelandetjänst](../direct-mail/direct-mail-configuration.md#direct-mail-surface) som refererar till filroutningskonfigurationen.
 
-
 ## Skapa en kampanj för direktreklam{#create-dm-campaign}
-
->[!AVAILABILITY]
->
->Direct Mail har stöd för funktionen Holdout, men för närvarande saknar stöd för Beställningar.
 
 Om du vill skapa en direktreklamkampanj skapar du en schemalagd kampanj, väljer målgrupp och konfigurerar inställningar för direktreklam inklusive meddelandekonfigurationen. Följ de här stegen:
 
@@ -62,6 +57,10 @@ Om du vill skapa en direktreklamkampanj skapar du en schemalagd kampanj, väljer
 1. Välj eller skapa en **[!UICONTROL Direct mail configuration]** som ska användas. [Lär dig hur du skapar en konfiguration för direktreklam](direct-mail-configuration.md#direct-mail-surface).
 
    ![](assets/direct-mail-campaign.png){width="800" align="center"}
+
+   >[!AVAILABILITY]
+   >
+   >Direct Mail har stöd för funktionen **Holdout** men för närvarande saknar stöd för **Bearbetningar**. [Lär dig arbeta med experiment](../content-management/get-started-experiment.md)
 
 1. Kampanjer kan schemaläggas för ett specifikt datum eller ställas in så att de återkommer med regelbundna intervall. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/campaign-schedule.md).
 
