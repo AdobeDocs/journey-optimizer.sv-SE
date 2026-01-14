@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide, orkestrering
 version: Journey Orchestration
-source-git-commit: 63d37e1cb4042323eb764350dc2c89b5483ccae3
+source-git-commit: bf5d018fa6c3e88cf84345e892de72ada9f2c489
 workflow-type: tm+mt
-source-wordcount: '5222'
+source-wordcount: '5220'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ Läs mer om [villkoren](condition-activity.md).
 
 +++ Kan jag skicka meddelanden till profiler under en resa?
 
-Ja. Journey Optimizer innehåller **inbyggda kanalåtgärder** som gör att du kan skicka meddelanden via e-post, push-meddelanden, SMS/MMS/RCS, meddelanden i appen, webbupplevelser, kodbaserade upplevelser, direktreklam, innehållskort, WhatsApp och LINE. Du kan designa meddelandeinnehåll direkt i Journey Optimizer och lägga till dem som åtgärdsaktiviteter under din resa.
+Ja. Journey Optimizer innehåller **inbyggda kanalåtgärder** som gör att du kan skicka meddelanden via e-post, push-meddelanden, SMS/MMS/RCS, meddelanden i appen, webbupplevelser, kodbaserade upplevelser, innehållskort, WhatsApp och LINE. Du kan designa meddelandeinnehåll direkt i Journey Optimizer och lägga till dem som åtgärdsaktiviteter under din resa.
 
 För kanaler som inte stöds internt kan du använda **anpassade åtgärder** för att integrera med externa meddelandeplattformar och skicka meddelanden via valfri tredjepartskanal.
 
@@ -946,4 +946,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

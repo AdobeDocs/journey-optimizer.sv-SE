@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: bb52f400-6289-4a7f-a34f-98eb5d27c76a
-source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
+source-git-commit: bf5d018fa6c3e88cf84345e892de72ada9f2c489
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,7 @@ De viktigaste stegen för att skicka direktutskick är följande:
 
 * **[Skapa direktreklam](create-direct-mail.md)** - Lär dig hur du skapar direktreklam och konfigurerar extraheringsfiler för offlinekanaler.
 * **[Konfigurera direktpostkanal](direct-mail-configuration.md)** - Konfigurera direktpostytor och konfigurationer för filroutning.
-* **[Direktreklam på resor](direct-mail-journeys.md)** - Upptäck hur du använder direktreklam på kundresor.
 * **[Testa och skicka direktreklam](test-send-direct-mail.md)** - Lär dig hur du testar, validerar och publicerar direktreklam.
-* **[Självstudiekurser för direktreklam](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Utforska steg-för-steg-videokurser om direktreklam och metodtips.
+* **[Självstudiekurser för direktreklam](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Utforska steg-för-steg-videokurser om direktreklam och metodtips.
 
 
