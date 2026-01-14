@@ -39,6 +39,6 @@ De viktigaste stegen för att skicka direktutskick är följande:
 * **[Skapa direktreklam](create-direct-mail.md)** - Lär dig hur du skapar direktreklam och konfigurerar extraheringsfiler för offlinekanaler.
 * **[Konfigurera direktpostkanal](direct-mail-configuration.md)** - Konfigurera direktpostytor och konfigurationer för filroutning.
 * **[Testa och skicka direktreklam](test-send-direct-mail.md)** - Lär dig hur du testar, validerar och publicerar direktreklam.
-* **[Självstudiekurser för direktreklam](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Utforska steg-för-steg-videokurser om direktreklam och metodtips.
+* **[Självstudiekurser för direktreklam](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Utforska steg-för-steg-videokurser om direktreklam och metodtips.
 
 
