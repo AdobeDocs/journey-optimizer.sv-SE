@@ -9,9 +9,9 @@ level: Intermediate
 keywords: återinträde, resa, slut, live, stopp
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 version: Journey Orchestration
-source-git-commit: 03e9d4205f59a32347cd1702b24bfbad2bf540b9
+source-git-commit: 63f7b09d8b8de578c32ba0f5d6fdd6b2f5786722
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '974'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ När den stoppas anges resestatusen till **[!UICONTROL Stopped]**.
 
 >[!CAUTION]
 >
->Behörigheter att stoppa en resa som är begränsad till användare med hög behörighet på **[!DNL Manage journeys]**. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
+>**[!DNL Manage journeys]**-behörighet krävs för att stoppa en resa. Om resan omfattar textbundna kampanjer eller meddelandenoder behöver användarna även behörighet **Kampanjer > Publicera kampanjer**. Om resurserna används i resan (till exempel i e-postmeddelanden) måste användarna ha tillgång till dessa resursmappar. Läs mer om hur du hanterar [!DNL Journey Optimizer] användares åtkomsträttigheter i [det här avsnittet](../administration/permissions-overview.md).
 
 ## Relaterade ämnen
 
