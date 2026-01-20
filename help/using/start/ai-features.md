@@ -270,7 +270,7 @@ Bläddra bland Journey Optimizer spelböcker efter vanliga scenarier som:
 
 +++
 
-[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Läs mer i Experience Platform-dokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
+[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Läs mer i Experience Platform-dokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
 
 ## Ytterligare AI-funktioner {#additional-capabilities}
 
