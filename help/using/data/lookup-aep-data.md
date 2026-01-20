@@ -10,9 +10,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: a6f2cc11f57c5cd766cd31e941649fb5003ae30b
+source-git-commit: 41364a89289f0657a2b7646c5daa45a369936e57
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,8 @@ Läs följande begränsningar och riktlinjer innan du börjar:
 * **Schematyp** - Datauppsättningar måste associeras med ett schema som är **NOT** av profiltyp eller händelsetyp.
 
 * **Aktivera** för att aktivera och inaktivera sökningen - Undvik att aktivera och inaktivera datauppsättningar flera gånger. Om du gör det kan det leda till oväntade indexeringsbeteenden. Det bästa sättet är att låta datauppsättningen vara aktiverad så länge du tänker använda den för uppslag.
+
+* **Edge aktiveringsområde** - Datauppsättningar som har aktiverats för sökning är bara tillgängliga för inkommande kantbaserad aktivering i den region där datauppsättningens sandlåda finns (till exempel NLD2 eller VA7). Du kan se sandlådeområdet i användargränssnittet bredvid namnet på sandlådan.
 
 * **Batch med borttagning av data** - Om du tar bort en grupp med data från datauppsättningen tas alla matchande nycklar bort helt från söktjänsten. Exempel:
 
