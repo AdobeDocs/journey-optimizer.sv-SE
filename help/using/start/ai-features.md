@@ -7,10 +7,10 @@ feature: Overview
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: 76a970f4edf0cef3fc15ab69c78ef46fbb0497c7
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 1%
+source-wordcount: '1676'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 >[!IMPORTANT]
 >
->Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
+>Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
 
 ### Vad AI-assistenten kan göra
 
@@ -60,15 +60,29 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 ![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
 
-[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"}
+[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
 
 ## Avancerade AI-agenter för reseoptimering {#ai-agents}
 
 Adobe Journey Optimizer bygger på AI Assistants konversationsfunktioner och erbjuder specialiserade AI-agenter som ger djupgående analyser och användbara rekommendationer för optimering och experimenterande av resor.
 
-### Reseanalysagent {#journey-agent}
+### Journey Agent {#journey-agent}
 
-Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} kan du optimera resan genom naturlig språkanalys:
+Journey Agent har två kunskaper i AI Assistant: Analysera och skapa. Använd dem för att optimera befintliga resor eller skapa nya från naturliga språk.
+
++++**Behörigheter krävs**
+
+* **Visa resor** - Visa insikter om resor direkt i AI Assistant
+* **Hantera resor** - Skapa nya resor direkt i AI Assistant
+* **Visa segment** - Visa insikter om målgrupper och söka efter befintliga målgrupper
+* **Hantera segment** - Skapa nya målgrupper direkt i AI Assistant
+* **Visa resehändelser, datakällor och åtgärder** - krävs för Skapa-kompetensen för att söka efter resehändelser och anpassade åtgärder
+
++++
+
+#### Reseanalys - skicklighet {#journey-analyze-skill}
+
+Med agenten [Reseanalys](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze){target="_blank"} kan du optimera resan genom naturlig språkanalys:
 
 +++**Nyckelfunktioner**
 
@@ -88,18 +102,33 @@ Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-c
 
 +++
 
-+++**Behörigheter krävs**
++++
 
-* **Visa resor** - Visa insikter om resor direkt i AI Assistant
-* **Hantera resor** - Skapa nya resor direkt i AI Assistant
-* **Visa segment** - Visa insikter om målgrupper
-* **Hantera segment** - Skapa nya målgrupper direkt i AI Assistant
+#### Resa, skapa skicklighet {#journey-create-skill}
+
+Med [agenten för att skapa resan](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-create){target="_blank"} kan du skapa resor från naturliga språkuppmaningar och omvandla dina mål till strukturerade resekonfigurationer:
+
++++**Nyckelfunktioner**
+
+* **Språkresa** - Beskriv din resa och låt den skapas automatiskt
+* **Händelse- och målgruppsbaserade starter** - Skapa händelseutlösta, målgruppsbaserade, affärs- eller målgruppsbaserade kvalificeringsresor
+* **Villkorlig logik** - Skapa delade sökvägar baserat på kundattribut eller beteende
+* **Flerkanalsmeddelanden** - Lägg till e-post, push och SMS
+* **Schemaläggning** - Konfigurera startdatum och tid mellan steg
+
++++
+
++++**Exempelfrågor**
+
+* &quot;Skapa en resa som börjar när en kund gör ett köp online och skickar ett push-meddelande till dig.&quot;
+* &quot;Bygg en resa som riktar sig mot min dag och värvar publiken med tre e-postmeddelanden över två veckor, med början 20/12.&quot;
+* &quot;Skapa en resa som börjar när en användare kommer till min butiksplats och följer upp baserat på om de har en giltig e-postadress.&quot;
 
 +++
 
 ### Experimentationsagent {#experimentation-agent}
 
-[Experimentationsagenten](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
+[Experimentationsagenten](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
 
 +++**Nyckelfunktioner**
 
@@ -241,7 +270,7 @@ Bläddra bland Journey Optimizer spelböcker efter vanliga scenarier som:
 
 +++
 
-[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html?lang=sv-SE){target="_blank"} | [Läs mer i Experience Platform-dokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=sv-SE){target="_blank"}
+[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Läs mer i Experience Platform-dokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
 
 ## Ytterligare AI-funktioner {#additional-capabilities}
 
@@ -264,6 +293,7 @@ Utvärdera hur väl innehållet överensstämmer med varumärkesriktlinjerna med
 * **[AI-assistenten för innehållsgenerering](#content-generation)** - Kräver behörigheten Generera innehåll
 * **[AI Assistant](#ai-assistant)** produktkunskap - Kräver godkännande av Adobe Generative AI User Guidelines
 * **[Reseanalysagent](#journey-agent)** - Kräver behörighet för att visa/hantera resor och visa/hantera segment
+* **[Reseskapandeagent](#journey-create-agent)** - Kräver behörighet för att hantera resor, visa resthändelser/datakällor/åtgärder, visa segment och hantera segment
 * **[Experimenteringsagent](#experimentation-agent)** - Kräver behörighet för att visa och hantera experimentella metadata
 
 Alla AI-agenter kräver åtkomst till AI Assistant och godkännande av Adobe Experience Cloud Generative AI User Guidelines.
