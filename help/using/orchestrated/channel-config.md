@@ -4,9 +4,9 @@ product: journey optimizer
 title: Konfigurera kanalkonfigurationen
 description: Lär dig konfigurera kanalkonfigurationen
 version: Campaign Orchestration
-source-git-commit: 0b92d0e806c47b0d87ba53b7c7f1d56ee4453abb
+source-git-commit: 2bdabace34546bd27c2e3c19a3aee3c8a3eae5f2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -66,3 +66,25 @@ Så här konfigurerar du kanalkonfigurationen:
 1. När du har konfigurerat klickar du på **[!UICONTROL Submit]**.
 
 Din kanal är nu klar att användas med **samordnade kampanjer**, och meddelanden levereras enligt den valda måldimensionen.
+
+## URL-spårningsparametrar {#url-tracking}
+
+När du konfigurerar din kanalkonfiguration kan du definiera parametrar för URL-spårning för att övervaka hur e-postkampanjer fungerar genom att lägga till metadata till de spårade länkarna, för analys- och rapportändamål.
+
+Det gör du genom att sammanhangsberoende attribut som är specifika för samordnade kampanjer är tillgängliga med syntaxen `{{context.system.source.*}}`:
+
+* **`context.system.source.id`**: Orchestrated campaign ID
+* **`context.system.source.name`**: Orchestrated campaign name
+* **`context.system.source.versionId`**: Orchestrated campaign version ID
+* **`context.system.source.actionId`**: Kanalåtgärdsnod-ID
+* **`context.system.source.actionName`**: Nodnamn för kanalåtgärd
+* **`context.system.source.channel`**: Kanaltyp (E-post, SMS, push)
+* **`context.system.IdentityNamespace`**: Identitetsnamnrymd används
+
+Exempel:
+
+```
+www.YourLandingURL.com?utm_source=AJO&utm_campaign={{context.system.source.id}}&utm_content={{context.system.source.actionName}}
+```
+
+Läs mer om parametrar för URL-spårning i [det här avsnittet](../email/url-tracking.md).

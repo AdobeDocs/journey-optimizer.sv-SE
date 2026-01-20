@@ -5,7 +5,7 @@ title: Lägga till en kanalaktivitet i en flerstegskampanj
 description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampanj
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 version: Campaign Orchestration
-source-git-commit: 5fea202c36720f58cc5610446ff0273ce891a17a
+source-git-commit: 2bdabace34546bd27c2e3c19a3aee3c8a3eae5f2
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 1%
@@ -86,7 +86,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
 1. **Välj en kanalkonfiguration**
 
-   En konfiguration definieras av en [systemadministratör](../../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Lär dig hur du konfigurerar kanalkonfigurationer](../../configuration/channel-surfaces.md).
+   En konfiguration definieras av en [systemadministratör](../../start/path/administrator.md). Den innehåller alla tekniska parametrar för att skicka meddelandet, som rubrikparametrar, underdomän, mobilappar osv. [Lär dig hur du konfigurerar kanalkonfigurationer](../../configuration/channel-surfaces.md)
 
    ![bild som visar avsnittet Åtgärder](../assets/channel-actions.png)
 
@@ -102,7 +102,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
    Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabb leverans används när fördröjd leverans av meddelanden är affärskritisk. Du vill till exempel skicka en snabb push-varning för mobiltelefoner, som att få nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../../push/create-push.md#rapid-delivery).
 
-   Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+   Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 1. **Skapa ett innehållsexperiment**
 
@@ -110,7 +110,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
 1. **Lägg till flerspråkigt innehåll**
 
-   Använd avsnittet **[!UICONTROL Languages]** för att skapa innehåll på flera språk i kampanjen. Om du vill göra det klickar du på knappen **[!UICONTROL Add languages]** och väljer önskad **[!UICONTROL Language settings]**. Detaljerad information om hur du konfigurerar och använder flerspråkiga funktioner finns i det här avsnittet: [Kom igång med flerspråkigt innehåll](../../content-management/multilingual-gs.md)
+   Använd avsnittet **[!UICONTROL Languages]** för att skapa innehåll på flera språk i kampanjen. Om du vill göra det klickar du på knappen **[!UICONTROL Add languages]** och väljer önskad **[!UICONTROL Language settings]**. Detaljerad information om hur du konfigurerar och använder flerspråkiga funktioner finns i det här avsnittet: [Kom igång med flerspråkigt innehåll](../../content-management/multilingual-gs.md).
 
    ![bild som visar avsnittet om innehållsexperiment](../assets/channel-experiment.png)
 
@@ -144,7 +144,7 @@ När du öppnar personaliseringsredigeraren från en Orchestrated-kampanj inneh�
 
    * **`Enrichment`**: Inkluderar data som lagts till via **[!UICONTROL Enrichment]** aktiviteter på arbetsytan. På så sätt kan ni personalisera meddelanden baserat på externa datauppsättningar eller ytterligare logik som integrerats under orkestreringen. [Lär dig använda en anrikningsaktivitet](../activities/enrichment.md)
 
-En detaljerad översikt om hur du använder personaliseringsredigeraren finns i [Kom igång med personalisering](../../personalization/personalize.md)
+En detaljerad översikt över hur du använder personaliseringsredigeraren finns i [Kom igång med personalisering](../../personalization/personalize.md).
 
 ## Kontrollera och testa innehållet
 
