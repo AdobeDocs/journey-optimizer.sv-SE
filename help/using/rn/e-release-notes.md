@@ -244,9 +244,9 @@ Förbättringar i den här versionen visas nedan.
 
 * **Schemalägg kampanj med profiltidszon** - Kampanjplaneringen kan nu använda varje profils tidszon för att leverera meddelanden vid den avsedda lokala tidpunkten.
 
-  >>
-  [!AVAILABILITY]
-  >>
+  &#x200B;>>
+  >[!AVAILABILITY]
+  &#x200B;>>
   Den här förbättringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet).
 
 #### Kanaler
@@ -271,9 +271,9 @@ Förbättringar i den här versionen visas nedan.
 
 * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer.
 
-  >>
-  [!AVAILABILITY]
-  >>
+  &#x200B;>>
+  >[!AVAILABILITY]
+  &#x200B;>>
   Den här förbättringen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer (Allmän tillgänglighet).
 
 #### Resor
@@ -284,9 +284,9 @@ Förbättringar i den här versionen visas nedan.
 
 * **Flera inkommande åtgärder under resor** - För att förenkla din resesamordning kan du nu definiera flera inkommande åtgärder under en enskild resa. Den här funktionen, som tidigare fanns i kampanjer, gör att ni kan leverera flera kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, och varje åtgärd innehåller ett visst innehåll.
 
-  >>
-  [!AVAILABILITY]
-  >>
+  &#x200B;>>
+  >[!AVAILABILITY]
+  &#x200B;>>
   Den här förbättringen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer (Allmän tillgänglighet).
 
 #### Samordnade kampanjer
