@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: a6e6e8fce90fbd730c049f8a39878a44cea9c73c
+source-git-commit: f7cdbb8f4a0e43a6a2fa15032d1376faf0424168
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '1990'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 26 januari 2026
 
@@ -312,16 +312,6 @@ Förbättringar i den här versionen visas nedan.
 * **SMS-webbhooks: Fas II** - Beskrivning ska anges.
 
 * **WhatsApp Resell Offer** - Beskrivning ska anges.
-
-* **Körningsfält för WhatsApp-kanal** - Förutom e-post och SMS kan du nu uppdatera standardkörningsfältet för dina WhatsApp-leveranser på sandlådenivå. Du kan också åsidosätta körningsfältet som angetts globalt genom att ändra det i de avancerade parametrarna för whatsApp-reseaktiviteten eller i konfigurationen för WhatsApp-kanalen. [Läs mer](../configuration/primary-email-addresses.md)
-
-  Tillgänglighetsdatum: 22 oktober 2025
-
-* **Stöd för anpassade attribut för e-postadress** - Med Journey Optimizer kan du ange externa anpassade slutpunkter genom att definiera en egen länk för att avbryta prenumerationen och en anpassad e-postadress för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering. Om du vill anpassa dina anpassade slutpunkter ytterligare kan du nu definiera anpassade attribut som också läggs till i medgivandehändelsen. [Läs mer](../email/list-unsubscribe.md#custom-attributes)
-
-  **Obs!**: Den här funktionen har redan varit tillgänglig för det anpassade **[!UICONTROL One-click Unsubscribe URL]** sedan 25 augusti och har nu släppts för alternativet **[!UICONTROL Mailto (unsubscribe)]** i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
-
-  Tillgänglighetsdatum: 6 oktober 2025
 
 #### E-postdesigner
 
