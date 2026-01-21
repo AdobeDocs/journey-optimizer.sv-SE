@@ -5,10 +5,10 @@ title: Arbeta med samordnade kampanjaktiviteter
 description: Lär dig hur ni samordnar kampanjaktiviteter
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
 version: Campaign Orchestration
-source-git-commit: 4d5505cbb46bdff846218bfc3657c6a6e5447af3
+source-git-commit: 43fa71d7ec05e8c4b1ccd8d8c0ff8727128f5030
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 2%
+source-wordcount: '411'
+ht-degree: 3%
 
 ---
 
@@ -61,6 +61,11 @@ Lär dig hur du [skapar en kanalåtgärd i en orkestrerad kampanj](channels.md).
 >id="ajo_orchestration_end"
 >title="Avsluta aktivitet"
 >abstract="Med aktiviteten **End** kan du grafiskt markera slutet på en orkestrerad kampanj. Denna aktivitet har ingen funktionell inverkan och är därför frivillig."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_signal"
+>title="Extern signal"
+>abstract="extern signal"
 
 Följande aktiviteter är specifika för att organisera och köra Orchestrated-kampanjer. Deras huvuduppgift är att samordna de andra aktiviteterna.
 
