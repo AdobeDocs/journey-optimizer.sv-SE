@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 7965928aca9d4e36bacc058776c24065b8cfff21
+source-git-commit: 5cdb4e9f8e01a2db17d2c831178053db620286eb
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 26 januari 2026
 
@@ -32,14 +32,36 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Tysta timmar/tidsbaserade undantag</strong><br/></th>
+<th><strong>Verksamhet under resor</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med tysta timmar kan du definiera tidsbaserade undantag för e-post-, SMS-, push- och whatsApp-kanaler. De ser till att inga meddelanden skickas under särskilda tidsperioder och hjälper er att följa kundönskemål och krav på regelefterlevnad. Du kan lägga till tysta timmar genom regeluppsättningar, som kan tilldelas enskilda åtgärder i kampanjer eller resor för exakt kontroll.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer. I den här allmänna tillgänglighetsversionen inkluderar funktionen nu möjligheten för kunden att ställa en kampanjåtgärd i kö tills tysta timmar har slutförts och möjligheten att förhandsgranska den aktiverade regeln Tysta timmar.</p>
+<p>Journey Optimizer har stöd för en ny generisk Action-aktivitet som gör att du kan konfigurera både enskilda åtgärder och inkommande funktionsmakrogrupper för flera åtgärder, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Den här nya funktionen gör det möjligt att:</p>
+<ul>
+<li>En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.</li>
+<li>Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.</li>
+<li>Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.</li>
+<li>Möjlighet att lägga till både experimentella och flerspråkiga alternativ i alla funktionsmakron.</li>
+</ul>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni inkludera personaliserade erbjudanden på era resor genom en dedikerad innehållsbeslutsaktivitet på arbetsytan och använda dem i reseaktiviteter, inklusive villkor och anpassade åtgärder.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 </td>
 </tr>
 </tbody>
@@ -64,13 +86,29 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Anpassade formulär för landningssida</strong><br/></th>
+<th><strong>Tysta timmar/tidsbaserade undantag</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med Journey Optimizer kan du nu hämta profilattribut via dina landningssidor. Skapa, designa och hantera anpassade formulär som är skräddarsydda efter era behov utifrån en specifik datamängd. Du kan sedan använda dessa formulär på landningssidor för att lägga till de profilattribut du väljer i datauppsättningen som definieras för varje formulär.</p>
+<p>Med tysta timmar kan du definiera tidsbaserade undantag för e-post-, SMS-, push- och whatsApp-kanaler. De ser till att inga meddelanden skickas under särskilda tidsperioder och hjälper er att följa kundönskemål och krav på regelefterlevnad. Du kan lägga till tysta timmar genom regeluppsättningar, som kan tilldelas enskilda åtgärder i kampanjer eller resor för exakt kontroll.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer. I den här allmänna tillgänglighetsversionen inkluderar funktionen nu möjligheten för kunden att ställa en kampanjåtgärd i kö tills tysta timmar har slutförts och möjligheten att förhandsgranska den aktiverade regeln Tysta timmar.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Direktreklam, kanal på resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Tidigare begränsad till Campaigns finns nu Direct Mail Channel på arbetsytan, vilket gör att du kan lägga in Direct Mail på dina resor. Direktreklam kan nu användas i både batch- och 1:1-resscenarier, med stöd för filextraheringskonfiguration och tidsbaserade frekvensinställningar.</p>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 </td>
 </tr>
@@ -96,14 +134,20 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Direktreklam, kanal på resor</strong><br/></th>
+<th><strong>Grundläggande RCS-meddelanden</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Tidigare begränsad till Campaigns finns nu Direct Mail Channel på arbetsytan, vilket gör att du kan lägga in Direct Mail på dina resor. Direktreklam kan nu användas i både batch- och 1:1-resscenarier, med stöd för filextraheringskonfiguration och tidsbaserade frekvensinställningar.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Med det nya RCS Basic-tilläggserbjudandet kan du nu leverera grundläggande RCS-meddelanden (Rich Communication Services) i Journey Optimizer, vilket möjliggör följande förbättrade meddelandefunktioner beroende på leverantör och operatörssupport:</p>
+<ul>
+<li>Stöd för varumärken och verifierade avsändare: Skicka meddelanden med verifierade affärsprofiler med varumärkeselement (logotyp, avsändarnamn osv.).</li>
+<li>Information om meddelandeleverans: Ta emot detaljerade leveransrapporter inklusive meddelandestatusuppdateringar (t.ex. skickade, levererade, lästa).</li>
+<li>Länkspårning: Bädda in och spåra URL:er i RCS-meddelanden för engagemangsanalys.</li>
+<li>Återställning till SMS: Automatisk återgång till SMS när profilens enhet inte stöder RCS eller är tillfälligt oåtkomlig via RCS.</li>
+<li>Grundläggande meddelandekomposition: Skicka grundläggande textbaserade RCS-meddelanden.</li>
+</ul>
 </td>
 </tr>
 </tbody>
@@ -144,20 +188,13 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Grundläggande RCS-meddelanden</strong><br/></th>
+<th><strong>Direktreklamkanal i samordnade kampanjer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Med det nya RCS Basic-tilläggserbjudandet kan du nu leverera grundläggande RCS-meddelanden (Rich Communication Services) i Journey Optimizer, vilket möjliggör följande förbättrade meddelandefunktioner beroende på leverantör och operatörssupport:</p>
-<ul>
-<li>Stöd för varumärken och verifierade avsändare: Skicka meddelanden med verifierade affärsprofiler med varumärkeselement (logotyp, avsändarnamn osv.).</li>
-<li>Information om meddelandeleverans: Ta emot detaljerade leveransrapporter inklusive meddelandestatusuppdateringar (t.ex. skickade, levererade, lästa).</li>
-<li>Länkspårning: Bädda in och spåra URL:er i RCS-meddelanden för engagemangsanalys.</li>
-<li>Återställning till SMS: Automatisk återgång till SMS när profilens enhet inte stöder RCS eller är tillfälligt oåtkomlig via RCS.</li>
-<li>Grundläggande meddelandekomposition: Skicka grundläggande textbaserade RCS-meddelanden.</li>
-</ul>
+<p>Direktreklamkanalen finns nu tillgänglig i samordnade kampanjer. Aktiviteten Direktutskick underlättar direktutskick inom din samordnade kampanj, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data.</p>
 </td>
 </tr>
 </tbody>
@@ -166,13 +203,14 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Direktreklamkanal i samordnade kampanjer</strong><br/></th>
+<th><strong>Anpassade formulär för landningssida</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Direktreklamkanalen finns nu tillgänglig i samordnade kampanjer. Aktiviteten Direktutskick underlättar direktutskick inom din samordnade kampanj, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data.</p>
+<p>Med Journey Optimizer kan du nu hämta profilattribut via dina landningssidor. Skapa, designa och hantera anpassade formulär som är skräddarsydda efter era behov utifrån en specifik datamängd. Du kan sedan använda dessa formulär på landningssidor för att lägga till de profilattribut du väljer i datauppsättningen som definieras för varje formulär.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 </td>
 </tr>
 </tbody>
@@ -193,44 +231,6 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Verksamhet under resor</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer har stöd för en ny generisk Action-aktivitet som gör att du kan konfigurera både enskilda åtgärder och inkommande funktionsmakrogrupper för flera åtgärder, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Den här nya funktionen gör det möjligt att:</p>
-<ul>
-<li>En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.</li>
-<li>Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.</li>
-<li>Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.</li>
-<li>Möjlighet att lägga till både experimentella och flerspråkiga alternativ i alla funktionsmakron.</li>
-</ul>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan ni inkludera personaliserade erbjudanden på era resor genom en dedikerad innehållsbeslutsaktivitet på arbetsytan och använda dem i reseaktiviteter, inklusive villkor och anpassade åtgärder.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 ### Förbättringar {#jan-26-01-improv}
 
 Förbättringar i den här versionen visas nedan.
@@ -244,10 +244,7 @@ Förbättringar i den här versionen visas nedan.
 
 * **Schemalägg kampanj med profiltidszon** - Kampanjplaneringen kan nu använda varje profils tidszon för att leverera meddelanden vid den avsedda lokala tidpunkten.
 
-  &#x200B;>>
-  >[!AVAILABILITY]
-  &#x200B;>>
-  Den här förbättringen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet).
+  **Obs!**: Den här förbättringen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet).
 
 #### Kanaler
 
@@ -271,10 +268,7 @@ Förbättringar i den här versionen visas nedan.
 
 * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer.
 
-  &#x200B;>>
-  >[!AVAILABILITY]
-  &#x200B;>>
-  Den här förbättringen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer (Allmän tillgänglighet).
+  **Obs!**: Den här förbättringen har tidigare släppts i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).
 
 #### Resor
 
@@ -284,10 +278,7 @@ Förbättringar i den här versionen visas nedan.
 
 * **Flera inkommande åtgärder under resor** - För att förenkla din resesamordning kan du nu definiera flera inkommande åtgärder under en enskild resa. Den här funktionen, som tidigare fanns i kampanjer, gör att ni kan leverera flera kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, och varje åtgärd innehåller ett visst innehåll.
 
-  &#x200B;>>
-  >[!AVAILABILITY]
-  &#x200B;>>
-  Den här förbättringen fanns tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer (Allmän tillgänglighet).
+  **Obs!**: Den här förbättringen har tidigare släppts i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).
 
 #### Samordnade kampanjer
 
