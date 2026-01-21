@@ -12,9 +12,9 @@ badge: label="Begränsad tillgänglighet" type="Informative"
 hide: true
 hidefromtoc: true
 exl-id: 7b50c933-9738-4b1b-acae-08f0a8d41dab
-source-git-commit: c62653af3c1eacaaf55dcf181d33f2253521e33d
+source-git-commit: 8bc0d28ea3e7c26bd8f7a35d00a73e41f35720d0
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '507'
 ht-degree: 1%
 
 ---
@@ -24,28 +24,28 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="ajo_admin_msg_export"
 >title="Behåll och exportera skickat innehåll"
->abstract="Om du väljer det här alternativet kan du skriva innehållet i skickade e-postmeddelanden eller SMS-meddelanden med den här konfigurationen till en [!DNL Experience Platform]-datauppsättning. Posterna sparas i 3 kalenderdagar, under vilka du kan exportera dem till ditt eget lagringsutrymme."
+>abstract="Om du väljer det här alternativet kan du skriva innehållet i skickade e-postmeddelanden eller SMS-meddelanden med den här konfigurationen till en [!DNL Experience Platform]-datauppsättning. Posterna sparas i 7 kalenderdagar efter intag, under vilka du kan exportera dem till ditt eget lagringsutrymme."
 
 >[!AVAILABILITY]
 >
 >Den här funktionen är för närvarande endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
 
-Med **Meddelandeexport** kan du överföra skickat e-post- och SMS-meddelandeinnehåll från [!DNL Journey Optimizer] till ditt eget lagringsutrymme via [!DNL Adobe Experience Platform] mål, som gör att du kan leverera data från [!DNL Experience Platform] till externa slutpunkter. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home){target="_blank"}
+Med **Meddelandeexport** kan du överföra skickat e-post- och SMS-meddelandeinnehåll från [!DNL Journey Optimizer] till ditt eget lagringsutrymme via [!DNL Adobe Experience Platform] mål, som gör att du kan leverera data från [!DNL Experience Platform] till externa slutpunkter. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}
 
 Med den här funktionen skrivs innehållet i e-post- och SMS-meddelanden som skickas via [!DNL Journey Optimizer] och som har markerats för export till [!DNL Experience Platform] **AJO Message Export DataSet**.
 
-Posterna sparas sedan i **AJO Message Export DataSet** i tre kalenderdagar, under vilka du kan exportera dem till valfritt externt system.
+Posterna sparas sedan i **AJO Message Export DataSet** i sju kalenderdagar från att du har tagit dem, under vilka du kan exportera dem till valfritt externt system.
 <!--
 ## Terminology
 
-* **[!DNL Experience Platform] destinations** - Framework to deliver data out of Experience Platform into external endpoints. [Learn more](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home){target="_blank"}
+* **[!DNL Experience Platform] destinations** - Framework to deliver data out of Experience Platform into external endpoints. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}
 * **AJO Message Export Dataset** - An [!DNL Experience Platform] dataset which stores the message content of email and SMS messages sent via [!DNL Journey Optimizer] which have been marked for export.
 * **Retention**: Records in the AJO Message Export Dataset are retained for 3 calendar days from ingestion.-->
 
 ## Guardrails
 
 * Den här funktionen stöder endast e-post- och SMS-kanalerna.
-* Poster i AJO Message Export Dataset sparas i tre kalenderdagar efter intag.
+* Poster i AJO Message Export Dataset sparas i sju kalenderdagar efter intag.
 * Backfill stöds inte för meddelanden som skickas innan meddelandeexport aktiverades enligt beskrivningen nedan.
 
 ## Aktivera meddelandeexport {#enable-message-export}
@@ -67,15 +67,15 @@ Innan du kan exportera dina data måste du konfigurera exportprocessen genom att
 >
 >Den här inställningen måste konfigureras för varje sandlåda.
 
-1. Välj en [måltyp](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/destination-types){target="_blank"} för Experience Platform. En lista över tillgängliga målplattformar som kan ta emot data finns tillgänglig på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview){target="_blank"}.
+1. Välj en [måltyp](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/destination-types){target="_blank"} för Experience Platform. En lista över tillgängliga målplattformar som kan ta emot data finns tillgänglig på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview){target="_blank"}.
 
-1. I [!DNL Experience Platform] konfigurerar du målet genom att definiera autentiseringsuppgifter, bucket/container, sökvägsprefix och säkerhetsalternativ. [Lär dig hur](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/export-datasets){target="_blank"}
+1. I [!DNL Experience Platform] konfigurerar du målet genom att definiera autentiseringsuppgifter, bucket/container, sökvägsprefix och säkerhetsalternativ. [Lär dig hur](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets){target="_blank"}
 
 1. Skapa ett datauppsättningsexportflöde med följande data:
 
    * Source-datauppsättning: välj **AJO Message Export DataSet**.
    * Filformat: välj JSON eller Parquet (välj ett som baseras på de underordnade verktygen).
-   * Schema: kontrollera att det körs inom 3-dagars kvarhållningsfönstret.
+   * Schema: kontrollera att det körs inom 7-dagars kvarhållningsfönstret.
 
 ### Aktivera meddelandeexport i kanalkonfigurationen {#config-message-export}
 
