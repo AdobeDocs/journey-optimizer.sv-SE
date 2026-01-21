@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
-source-git-commit: 6a5b4c94228db0ab9573124762e89181c2c41b45
+source-git-commit: 288e3418b7152410166ddb9e520997933f1f589c
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 1%
+source-wordcount: '1019'
+ht-degree: 0%
 
 ---
 
@@ -110,6 +110,10 @@ Lär dig använda implicita variabler i [det här avsnittet](../personalization/
 ## Anpassa redigerbara fält {#customize-fields}
 
 Om vissa delar av det markerade fragmentet har gjorts redigerbara kan du åsidosätta deras standardvärde efter att du har lagt till fragmentet i innehållet. [Lär dig hur du anpassar fragment](../content-management/customizable-fragments.md)
+
+>[!CAUTION]
+>
+>När både **label** och **URL** för en knappkomponent är redigerbara i ett fragment visar uppföljningsrapporter URL:en i stället för knappetiketten. <!--If accurate label tracking is critical for your reporting, one potential approach is to break the inheritance on the fragment after adding it to your email, though note that this disconnects the fragment from centralized updates. [Learn more about breaking inheritance](#break-inheritance)-->
 
 Så här anpassar du redigerbara fält i ett fragment:
 

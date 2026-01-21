@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
+source-git-commit: 288e3418b7152410166ddb9e520997933f1f589c
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1321'
 ht-degree: 1%
 
 ---
@@ -96,6 +96,10 @@ Följ stegen nedan om du vill infoga länkar i ditt e-postinnehåll:
 >E-postmeddelanden av marknadsföringstyp måste innehålla en [länk för avanmälan](../privacy/opt-out.md#opt-out-decision-management), vilket inte krävs för transaktionsmeddelanden. Meddelandekategorin (**[!UICONTROL Marketing]** eller **[!UICONTROL Transactional]**) definieras i [kanalkonfigurationen](email-settings.md#email-type) när meddelandet skapas.
 
 När meddelandet har skickats är kvarhållningsperioden för en länk **25 månader**. Efter den fördröjningen är länken inte längre tillgänglig.
+
+>[!CAUTION]
+>
+>När både **label** och **URL** för en knapp kan redigeras i ett fragment visar uppföljningsrapporter URL:en i stället för knappetiketten. Fältet `_experience.customerJourneyManagement.messageInteraction.label` i spårningsdatauppsättningen loggar URL-värdet.
 
 ## Länka till en spegelsida {#mirror-page}
 

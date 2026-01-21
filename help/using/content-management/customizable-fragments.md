@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: cd47ca1d-f707-4425-b865-14f3fbbe5fd1
-source-git-commit: 71d4fae1eecb2acfcf3ba889c58bf71fb74d48fa
+source-git-commit: 288e3418b7152410166ddb9e520997933f1f589c
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1492'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ Gör så här för att göra delar av ett visuellt fragment redigerbara:
 1. När du är klar sparar du ändringarna för att uppdatera fragmentet.
 
 1. När du har lagt till fragmentet i ett e-postmeddelande kan användarna anpassa alla redigerbara fält som är konfigurerade i fragmentet. [Lär dig hur du anpassar redigerbara fält i ett visuellt fragment](../email/use-visual-fragments.md#customize-fields)
+
+>[!CAUTION]
+>
+>När både **label** och **URL** för en knappkomponent görs redigerbara i ett fragment visar uppföljningsrapporter URL:en i stället för knappetiketten. <!--If accurate label tracking is critical for your reporting, one potential approach is to break the inheritance on the fragment after adding it to your email, though note that this disconnects the fragment from centralized updates.-->
 
 ## Lägga till redigerbara fält i HTML-komponenter och uttrycksfragment {#expression}
 
@@ -195,5 +199,5 @@ När du lägger till fragmentet i e-postinnehållet kan användarna nu redigera 
 
 This video shows how to make HTML components within a fragment editable, allowing for dynamic updates to both content and styling.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464372/?captions=swe&learn=on&#x26;enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464363/?learn=on&#x26;enablevpops)
 -->
