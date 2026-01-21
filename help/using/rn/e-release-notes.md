@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 157e880de7dc63e4972b4e6794cc4a5f736d7bd4
+source-git-commit: 3635cb3ad81cc3462dc3ebb6d60594b4b83051e9
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '2068'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 26 januari 2026
 
@@ -218,6 +218,21 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
+<th><strong>Meddelandeexport</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Det är nu möjligt att <strong>exportera skickade leveranser</strong> till en viss datauppsättning, för arkivering och efterlevnad. Den här kapaciteten är inte bara tillgänglig för e-post, utan även för andra kanaler som SMS.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Nytt API för att hämta åtgärdskampanjer</strong><br/></th>
 </tr>
 </thead>
@@ -291,23 +306,21 @@ Förbättringar i den här versionen visas nedan.
 
 #### Kanaler
 
-* **Meddelandeexport** - Det går nu att <strong>exportera skickade leveranser</strong> till en viss datauppsättning, för arkivering och efterlevnad. Den här kapaciteten är inte bara tillgänglig för e-post, utan även för andra kanaler som SMS.
-
 * **SMS-webbhooks: Fas II** - Beskrivning ska anges.
 
 * **WhatsApp Resell Offer** - Beskrivning ska anges.
 
 #### E-postdesigner
 
-* **Korrigeringar på plats - Acrit - E-post- och landningssidor** - beskrivning som ska anges.
+* **Korrigeringar på plats i e-postdesignern** - <strong>AI-baserade automatiska innehållsförslag</strong> är nu tillgängliga i e-post-Designer när fel upptäcks under innehållsvalideringen. Om innehållet markeras som felanpassat med riktlinjer för varumärket eller inte uppfyller kvalitetskriterierna genererar systemet proaktivt korrigerade alternativ som kan granskas och tillämpas internt, vilket förbättrar regelefterlevnaden och snabbar upp produktionen.
 
 #### Experience Decision
 
-* **Reseskiljeförfarande - Formler** - Nu kan du använda <strong>formler och AI-modeller</strong> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kommer in på de mest relevanta resorna.
+* **Reseskiljeförfarande** - Nu kan du använda <strong>formler och AI-modeller</strong> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kommer in på de mest relevanta resorna.
 
 * **dokumentation för verktyg för utökad sandlåda - uppdatering** - Beskrivning ska anges.
 
-* **Självbetjäningsmigrerings-API:er** - beskrivning som ska anges.
+* **Självbetjäningsverktyg för migrering av verktyg-API:er** - En ny uppsättning <strong>migreringsverktyg-API:er</strong> finns tillgängliga för att migrera Offer Management-entiteter till Experience Decision. Verktyget möjliggör sömlös migrering mellan sandlådor med beroendeupplösning och återställningsfunktioner.
 
 * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla <strong>fragment</strong> till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutsprinciper.
 
@@ -316,6 +329,8 @@ Förbättringar i den här versionen visas nedan.
 #### Resor
 
 * **Utnyttja nyttolasten för felsvar i resan Anpassade åtgärder** - Beskrivning ska anges.
+
+* **Kombinera inbyggda meddelandeåtgärder och Adobe Campaign-meddelandeåtgärder** - Med Journey Optimizer kan du nu kombinera Adobe Campaign v7/v8-meddelandeåtgärder med inbyggda kanalåtgärder på samma resa.
 
 * **Verifiering av nyttolastens storlek på resan** - Journey Optimizer tillhandahåller nu validering av <strong>nyttolastens storlek</strong> för att säkerställa optimala prestanda och systemstabilitet. När du bygger eller publicerar resor får du tydliga varningar och fel om nyttolasterna närmar sig eller överskrider de rekommenderade gränserna, tillsammans med användbar vägledning för att optimera kundresans konfiguration. Denna proaktiva validering hjälper er att identifiera potentiella problem tidigt och att upprätthålla kundresan.
 
@@ -359,6 +374,23 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <tr>
 <td>
 <p><strong>Journey Agent</strong>, som drivs av Adobe Experience Platform Agent Orchestrator, finns i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i Content Designer för kontextredigering.</p>
+<p>Tillgänglighetsdatum: 2 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu inkludera <strong>personaliserade erbjudanden</strong> på dina resor via en dedikerad innehållsbeslutsaktivitet på arbetsytan och använda dem i reseaktiviteter, inklusive villkor och anpassade åtgärder.</p>
+<p>Tillgänglighetsdatum: 2 februari 2026</p>
 </td>
 </tr>
 </tbody>
