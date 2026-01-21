@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: länkar, spåra, övervaka, e-post
 exl-id: 689e630a-00ca-4893-8bf5-6d1ec60c52e7
-source-git-commit: 288e3418b7152410166ddb9e520997933f1f589c
+source-git-commit: 60907756a261c1f672944eccefbfe2ee90d0d017
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1311'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ När meddelandet har skickats är kvarhållningsperioden för en länk **25 mån
 
 >[!CAUTION]
 >
->När både **label** och **URL** för en knapp kan redigeras i ett fragment visar uppföljningsrapporter URL:en i stället för knappetiketten. Fältet `_experience.customerJourneyManagement.messageInteraction.label` i spårningsdatauppsättningen loggar URL-värdet.
+>När både **label** och **URL** för en knapp är redigerbara i ett [anpassbart fragment](../content-management/customizable-fragments.md) visas URL:en i spårningsrapporter i stället för knappetiketten.
 
 ## Länka till en spegelsida {#mirror-page}
 

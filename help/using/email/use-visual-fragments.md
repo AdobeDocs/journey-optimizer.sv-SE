@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
-source-git-commit: 288e3418b7152410166ddb9e520997933f1f589c
+source-git-commit: 60907756a261c1f672944eccefbfe2ee90d0d017
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -111,10 +111,6 @@ Lär dig använda implicita variabler i [det här avsnittet](../personalization/
 
 Om vissa delar av det markerade fragmentet har gjorts redigerbara kan du åsidosätta deras standardvärde efter att du har lagt till fragmentet i innehållet. [Lär dig hur du anpassar fragment](../content-management/customizable-fragments.md)
 
->[!CAUTION]
->
->När både **label** och **URL** för en knappkomponent är redigerbara i ett fragment visar uppföljningsrapporter URL:en i stället för knappetiketten. <!--If accurate label tracking is critical for your reporting, one potential approach is to break the inheritance on the fragment after adding it to your email, though note that this disconnects the fragment from centralized updates. [Learn more about breaking inheritance](#break-inheritance)-->
-
 Så här anpassar du redigerbara fält i ett fragment:
 
 1. Lägg till fragmentet i ditt innehåll.
@@ -128,6 +124,10 @@ Så här anpassar du redigerbara fält i ett fragment:
    I exemplet nedan kan bilden **source** och **alt text** redigeras, liksom knappen &quot;Klicka här&quot; **URL**.
 
    ![](assets/fragment-editable.png)
+
+>[!CAUTION]
+>
+>När både **label** och **URL** för en knappkomponent görs redigerbara i ett fragment visar uppföljningsrapporter URL:en i stället för knappetiketten. [Läs mer om spårning](../email/message-tracking.md)
 
 ## Bryt arv {#break-inheritance}
 
