@@ -7,10 +7,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 5cdb4e9f8e01a2db17d2c831178053db620286eb
+source-git-commit: a6e6e8fce90fbd730c049f8a39878a44cea9c73c
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 0%
+source-wordcount: '2163'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 26 januari 2026
 
@@ -231,6 +231,65 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Nytt API för att hämta åtgärdskampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu finns ett nytt Journey Optimizer-API, som gör att du kan hämta och inspektera kampanjrelaterade data via programkod, som information, versioner och konfigurationer.</p>
+<p>Mer information finns i den <a href="https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve/">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 24 november 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Nya resevarningar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Det finns nu tre nya varningsmeddelanden för resan som hjälper dig att övervaka och spåra livscykelhändelser för resan och anpassade åtgärder:</p>
+<ul>
+<li><strong>Resa publicerad</strong>: Få meddelanden när en resa publiceras av en behandlare på arbetsytan.</li>
+<li><strong>Resan har slutförts</strong>: Få aviseringar när en resa har slutförts, med specifika definitioner baserade på resetyp (läsning eller händelseutlösta).</li>
+<li><strong>Anpassad åtgärdsbegränsning utlöstes</strong>: meddelas när appning aktiveras för en anpassad åtgärdsslutpunkt.</li>
+</ul>
+<p>Dessa registreringar kan prenumereras på på organisationsnivå eller för specifika resor.</p>
+<p>Mer information finns i den <a href="../reports/alerts.md#journey-alerts">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 5 november 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Teman i e-post-Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan ni snabbt tillämpa förgodkända teman för att säkerställa ett enhetligt varumärke i alla e-postmeddelanden, snabba upp kampanjprocessen och oberoende producera högkvalitativa e-postmeddelanden samtidigt som ni minskar beroendet av designteam.</p>
+<p>Tidigare släppt i betaversion är den här funktionen nu tillgänglig för ett antal organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<img src="assets/do-not-localize/themes.gif">
+<p>Mer information finns i den <a href="../email/apply-email-themes.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 5 november 2025</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Förbättringar {#jan-26-01-improv}
 
 Förbättringar i den här versionen visas nedan.
@@ -253,6 +312,16 @@ Förbättringar i den här versionen visas nedan.
 * **SMS-webbhooks: Fas II** - Beskrivning ska anges.
 
 * **WhatsApp Resell Offer** - Beskrivning ska anges.
+
+* **Körningsfält för WhatsApp-kanal** - Förutom e-post och SMS kan du nu uppdatera standardkörningsfältet för dina WhatsApp-leveranser på sandlådenivå. Du kan också åsidosätta körningsfältet som angetts globalt genom att ändra det i de avancerade parametrarna för whatsApp-reseaktiviteten eller i konfigurationen för WhatsApp-kanalen. [Läs mer](../configuration/primary-email-addresses.md)
+
+  Tillgänglighetsdatum: 22 oktober 2025
+
+* **Stöd för anpassade attribut för e-postadress** - Med Journey Optimizer kan du ange externa anpassade slutpunkter genom att definiera en egen länk för att avbryta prenumerationen och en anpassad e-postadress för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering. Om du vill anpassa dina anpassade slutpunkter ytterligare kan du nu definiera anpassade attribut som också läggs till i medgivandehändelsen. [Läs mer](../email/list-unsubscribe.md#custom-attributes)
+
+  **Obs!**: Den här funktionen har redan varit tillgänglig för det anpassade **[!UICONTROL One-click Unsubscribe URL]** sedan 25 augusti och har nu släppts för alternativet **[!UICONTROL Mailto (unsubscribe)]** i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
+
+  Tillgänglighetsdatum: 6 oktober 2025
 
 #### E-postdesigner
 
