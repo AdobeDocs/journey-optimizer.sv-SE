@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: d1d544b484eb92fd29d0f3f2dc637c8617394304
+source-git-commit: 3ea5dd845569508421092bdf53634619354206e2
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2407'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 27 januari 2026
 
@@ -178,7 +178,13 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p>Det är nu möjligt att <strong>exportera skickade leveranser</strong> till en viss datauppsättning, för arkivering och efterlevnad. Den här kapaciteten är inte bara tillgänglig för e-post, utan även för andra kanaler som SMS. Datalagring för meddelandets exportdatauppsättning är nu <strong>7 dagar</strong>.</p>
+<p>En ny <strong>meddelandeexportfunktion</strong> är nu tillgänglig för e-post- och SMS-kanaler. Med den här funktionen kan du automatiskt exportera skickat meddelandeinnehåll till en dedikerad Experience Platform-datauppsättning, vilket gör att du kan:</p>
+<ul>
+<li>Uppfyll formella krav (t.ex. HIPAA)</li>
+<li>Arkivera meddelanden om juridiska anspråk och kundvårdsfrågor</li>
+<li>Bevara kopior av personaliserat innehåll som skickas till enskilda personer</li>
+</ul>
+<p>Poster sparas i datauppsättningen för export av AJO-meddelanden i <strong>7 kalenderdagar från att användaren har fått det </strong>. Under den här kvarhållningsperioden kan du exportera data till din egen lagring via Experience Platform destinationer. Funktionen är aktiverad på kanalkonfigurationsnivå, vilket ger dig detaljkontroll över vilka meddelanden som exporteras.</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-12915">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-105313">Länk till JIRA-uppgiften PRODUCT </a></p>
 </td>
 </tr>
@@ -297,9 +303,6 @@ Förbättringar i den här versionen visas nedan.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13979">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95365">Länk till JIRA-uppgiften PRODUCT </a>
 
 #### Experience Decision
-
-* **dokumentation för verktyg för utökad sandlåda - uppdatering** - Beskrivning ska anges.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13596">Länka till DOCAC JIRA-aktivitet</a>
 
 * **Självbetjäningsverktyg för migrering av verktyg-API:er** - En ny uppsättning <strong>migreringsverktyg-API:er</strong> finns tillgängliga för att migrera Offer Management-entiteter till Experience Decision. Verktyget möjliggör sömlös migrering mellan sandlådor med beroendeupplösning och återställningsfunktioner.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13837">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-109695">Länk till JIRA-uppgiften PRODUCT </a>
