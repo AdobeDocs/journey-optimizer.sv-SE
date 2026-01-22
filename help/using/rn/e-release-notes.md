@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 9605b5bec688c5afcbcc7b391218cdef6cb3b196
+source-git-commit: a47a1f3064c4166217d23517fe2d1082977bbc2c
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2358'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 27 januari 2026
 
@@ -188,6 +188,24 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
+<th><strong>Journey Agent - Skapa en resa</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Journey Create Agent kan Journey Optimizer-användare skapa och konfigurera marknadsföringsresor med ett naturligt språkgränssnitt. Med Journey Create Agent kan man snabbt skapa resor genom att beskriva kraven i samtal. Agenten effektiviserar framtagningen av resor så att marknadsförarna kan fokusera på strategi istället för teknisk konfiguration.</p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Läs mer</a></p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-13747">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95142">Länk till JIRA-uppgiften PRODUCT </a></p>
+<p>Tillgänglighetsdatum: 12 januari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Nytt API för att hämta åtgärdskampanjer</strong><br/></th>
 </tr>
 </thead>
@@ -279,11 +297,6 @@ Förbättringar i den här versionen visas nedan.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13979">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95365">Länk till JIRA-uppgiften PRODUCT </a>
 
 #### Experience Decision
-
-* **Reseskiljeförfarande** - Nu kan du använda <strong>formler och AI-modeller</strong> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kommer in på de mest relevanta resorna.
-
-  **Obs!**: Den här förbättringen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet).
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13976">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-78932">Länk till JIRA-uppgiften PRODUCT </a>
 
 * **dokumentation för verktyg för utökad sandlåda - uppdatering** - Beskrivning ska anges.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13596">Länka till DOCAC JIRA-aktivitet</a>
@@ -380,3 +393,4 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 </tr>
 </tbody>
 </table>
+
