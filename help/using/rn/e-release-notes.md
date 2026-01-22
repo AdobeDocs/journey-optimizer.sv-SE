@@ -7,7 +7,7 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: a47a1f3064c4166217d23517fe2d1082977bbc2c
+source-git-commit: d1d544b484eb92fd29d0f3f2dc637c8617394304
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 27 januari 2026
 
@@ -388,7 +388,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <td>
 <p>Du kan nu inkludera <strong>personaliserade erbjudanden</strong> på dina resor via en dedikerad innehållsbeslutsaktivitet på arbetsytan och använda dem i reseaktiviteter, inklusive villkor och anpassade åtgärder.</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-12902">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-99223">Länk till JIRA-uppgiften PRODUCT </a></p>
-<p>Tillgänglighetsdatum: 2 februari 2026</p>
+<p>Tillgänglighetsdatum: 3 februari 2026</p>
 </td>
 </tr>
 </tbody>
