@@ -44,7 +44,7 @@ Följ stegen nedan om du vill lägga till sammanhangsberoende attribut i ett pub
 
 >[!IMPORTANT]
 >
->Fortsätt bara om du [förstår ](#limitations) helt och hållet på resor och kampanjer som refererar till fragmentet.
+>Fortsätt bara om du [förstår &#x200B;](#limitations) helt och hållet på resor och kampanjer som refererar till fragmentet.
 
 1. Navigera till **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**.
 
