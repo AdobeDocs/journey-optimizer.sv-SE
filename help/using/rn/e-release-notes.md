@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **Förhandsanteckningarna nedan kan ändras utan föregående meddelande fram till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsanteckningarna vid releasedatumet.
 
-Se även [Adobe Experience Platform Pre-release anteckningar](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Adobe Experience Platform Pre-release anteckningar](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 26 januari 2026
 
