@@ -9,10 +9,10 @@ role: User
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 5a1a356d6bf0dbd5290b2cf8257d87aa7db43b5b
+source-git-commit: 69efe0254aae3cb067f2c9f89db6aa4fe0a50549
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 2%
+source-wordcount: '348'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Följ stegen nedan om du vill lägga till sammanhangsberoende attribut i ett pub
 
 >[!IMPORTANT]
 >
->Fortsätt bara om ni är fullt medvetna om påverkan på resor och kampanjer som refererar till fragmentet. [Läs mer](#limitations)
+>Fortsätt bara om du [förstår ](#limitations) helt och hållet på resor och kampanjer som refererar till fragmentet.
 
 1. Navigera till **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]**.
 
@@ -56,11 +56,7 @@ Följ stegen nedan om du vill lägga till sammanhangsberoende attribut i ett pub
 
 1. Växla till **[!UICONTROL Code editor]** eller **[!UICONTROL Advanced mode]** i personaliseringsredigeraren.
 
-1. Skriv eller kopiera och klistra in sammanhangsberoende attribut manuellt med syntaxen:
-
-   ```
-   {{context.attribute_name}}
-   ```
+1. Skriv eller kopiera och klistra in sammanhangsberoende attribut manuellt med syntaxen `{{context.attribute_name}}`:
 
    Exempel på ett `promotionCode`-attribut:
 
