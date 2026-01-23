@@ -6,10 +6,10 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: a18ccb6f7928250e9b3bc453971689bb378dac11
+source-git-commit: ca652ee1469f411a1bd80733ba89921b0ddb1b1c
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 8%
+source-wordcount: '2048'
+ht-degree: 2%
 
 ---
 
@@ -22,15 +22,190 @@ ht-degree: 8%
 
 [!DNL Adobe Journey Optimizer] följer en kontinuerlig leveransmodell som gör att Adobe kan leverera nya funktioner, förbättringar och korrigeringar kontinuerligt. Detta tillvägagångssätt möjliggör en skalbar, fasad driftsättning av funktioner för att säkerställa prestanda och stabilitet i alla miljöer.
 
-På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna.  Ett dedikerat avsnitt om [de senaste uppdateringarna](#latest-updates) visar på nya funktioner och förbättringar när de distribueras till produktionen, så att du alltid informeras om alla ändringar i realtid. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
+På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## Senaste uppdateringar {#latest-updates}
+## Versionsinformation januari 26 {#latest-rn}
 
-Nya funktioner och förbättringar som släppts under de senaste veckorna listas nedan med deras tillgänglighetsdatum. De grupperas med nästa versionsinformation i slutet av månaden. Se även den senaste [versionsinformationen nedan](#latest-rn).
+**Releasedatum**: 27 januari 2026
 
-### Nya funktioner {#features}
+Versionsinformationen är förhandsversion och kan ändras fram till releasedatum. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
+
+### Nya funktioner {#jan-26-01-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Verksamhet under resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer har stöd för en ny generisk <strong>åtgärdsaktivitet</strong> som gör att du kan konfigurera både enskilda åtgärder och <strong>flera inkommande åtgärdsgrupper</strong>, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Den här nya funktionen gör det möjligt att:</p>
+<ul>
+<li>En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.</li>
+<li>Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.</li>
+<li>Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.</li>
+<li>Möjlighet att lägga till både experimentella och flerspråkiga alternativ i alla funktionsmakron.</li>
+</ul>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Övervakning av anpassade åtgärder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Få djupare insikter i hälsa och prestanda för dina anpassade åtgärdsslutpunkter med en ny <strong>kontrollpanel</strong> och förbättrade händelsedata för kundsteg. Spåra lyckade samtal, fel, dataflöde, svarstider och väntetider för kön för att snabbt förstå när, var och varför avvikelser inträffar.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Tysta timmar/tidsbaserade undantag</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med tysta timmar kan du definiera <strong>tidsbaserade undantag</strong> för kanalerna Email, SMS, Push och WhatsApp. De ser till att inga meddelanden skickas under särskilda tidsperioder och hjälper er att följa kundönskemål och krav på regelefterlevnad. Du kan använda tysta timmar genom <strong>regeluppsättningar</strong>, som kan tilldelas enskilda åtgärder i kampanjer eller resor för exakt kontroll.</p>
+<p><strong>Obs!</strong>: Tysta timmar stöds inte för Orchestrated-kampanjer.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer. I den här allmänna tillgänglighetsversionen inkluderar funktionen nu möjligheten för kunden att ställa en kampanjåtgärd i kö tills tysta timmar har slutförts och möjligheten att förhandsgranska den aktiverade regeln Tysta timmar.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Direktreklam, kanal på resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Tidigare begränsad till Campaigns är nu <strong>Direct Mail-kanalen</strong> tillgänglig på <strong>arbetsytan för resan</strong>, vilket gör att du kan infoga Direct Mail i dina resor. Direktreklam kan nu användas i både batch- och 1:1-resscenarier, med stöd för filextraheringskonfiguration och tidsbaserade frekvensinställningar.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<img src="assets/do-not-localize/dm-journey.gif">
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Meddelandekanal för Web Push</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer har nu stöd för <strong>Web Push-meddelanden</strong>, vilket gör att push-kanalen kan användas även utanför mobila enheter. Ni kan smidigt leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen gör att ni kan engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttja samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Beslutsstöd i Push- och SMS-kanaler</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu lägga till <strong>beslutsprinciper</strong> i push- och SMS-resor och -kampanjer. Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem.</p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Direktreklamkanal i samordnade kampanjer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Direktreklamkanalen finns nu tillgänglig i samordnade kampanjer. <strong>Direkte-postaktiviteten</strong> gör det lättare att skicka direktreklam i din samordnade kampanj, både för engångs- och återkommande meddelanden. Den används för att automatisera processen att generera den <strong>extraheringsfil</strong> som krävs av direktmeddelandeleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data.</p>
+<img src="assets/do-not-localize/dm-oc.gif">
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Nya källkopplingar för lojalitetsappar</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nya <strong>källanslutningar</strong> är nu tillgängliga i Adobe Experience Platform för lojalitetsapparna Talon.One, Capillary och Kobie. Med dessa kopplingar kan ni smidigt strömma lojalitetsdata till Adobe Experience Platform och utnyttja dessa data i Journey Optimizer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Meddelandeexport</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>En ny <strong>meddelandeexportfunktion</strong> är nu tillgänglig för e-post- och SMS-kanaler. Med den här funktionen kan du automatiskt exportera skickat meddelandeinnehåll till en dedikerad Experience Platform-datauppsättning, vilket gör att du kan:</p>
+<ul>
+<li>Uppfyll formella krav (t.ex. HIPAA)</li>
+<li>Arkivera meddelanden om juridiska anspråk och kundvårdsfrågor</li>
+<li>Bevara kopior av personaliserat innehåll som skickas till enskilda personer</li>
+</ul>
+<p>Poster sparas i datauppsättningen för export av AJO-meddelanden i <strong>7 kalenderdagar från att användaren har fått det </strong>. Under den här kvarhållningsperioden kan du exportera data till din egen lagring via Experience Platform destinationer. Funktionen är aktiverad på kanalkonfigurationsnivå, vilket ger dig detaljkontroll över vilka meddelanden som exporteras.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Agent - Skapa en resa</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Journey Create Agent kan Journey Optimizer-användare skapa och konfigurera marknadsföringsresor med ett naturligt språkgränssnitt. Med Journey Create Agent kan man snabbt skapa resor genom att beskriva kraven i samtal. Agenten effektiviserar framtagningen av resor så att marknadsförarna kan fokusera på strategi istället för teknisk konfiguration.</p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Läs mer</a></p>
+<p>Tillgänglighetsdatum: 12 januari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -41,7 +216,7 @@ Nya funktioner och förbättringar som släppts under de senaste veckorna listas
 <tbody>
 <tr>
 <td>
-<p>Nu finns ett nytt Journey Optimizer-API, som gör att du kan hämta och inspektera kampanjrelaterade data via programkod, som information, versioner och konfigurationer.</p>
+<p>Det finns nu ett nytt <strong>Journey Optimizer API</strong> som gör att du kan hämta och inspektera kampanjrelaterade data programmatiskt, till exempel information, versioner och konfigurationer.</p>
 <p>Mer information finns i den <a href="https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve/">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 24 november 2025</p>
 </td>
@@ -58,7 +233,7 @@ Nya funktioner och förbättringar som släppts under de senaste veckorna listas
 <tbody>
 <tr>
 <td>
-<p>Det finns nu tre nya varningsmeddelanden för resan som hjälper dig att övervaka och spåra livscykelhändelser för resan och anpassade åtgärder:</p>
+<p>Det finns nu tre nya <strong>resevarningar</strong> som hjälper dig att övervaka och spåra händelser i reselivscykler och anpassade åtgärder:</p>
 <ul>
 <li><strong>Resa publicerad</strong>: Få meddelanden när en resa publiceras av en behandlare på arbetsytan.</li>
 <li><strong>Resan har slutförts</strong>: Få aviseringar när en resa har slutförts, med specifika definitioner baserade på resetyp (läsning eller händelseutlösta).</li>
@@ -81,7 +256,7 @@ Nya funktioner och förbättringar som släppts under de senaste veckorna listas
 <tbody>
 <tr>
 <td>
-<p>Nu kan ni snabbt tillämpa förgodkända teman för att säkerställa ett enhetligt varumärke i alla e-postmeddelanden, snabba upp kampanjprocessen och oberoende producera högkvalitativa e-postmeddelanden samtidigt som ni minskar beroendet av designteam.</p>
+<p>Nu kan du snabbt tillämpa <strong>förgodkända teman</strong> för att säkerställa att alla e-postmeddelanden är enhetliga, snabba upp kampanjprocessen och oberoende producera högkvalitativa e-postmeddelanden samtidigt som du minskar beroendet av designteam.</p>
 <p>Tidigare släppt i betaversion är den här funktionen nu tillgänglig för ett antal organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
 <img src="assets/do-not-localize/themes.gif">
 <p>Mer information finns i den <a href="../email/apply-email-themes.md">detaljerade dokumentationen</a>.</p>
@@ -91,197 +266,87 @@ Nya funktioner och förbättringar som släppts under de senaste veckorna listas
 </tbody>
 </table>
 
-## Versionsinformation 25 oktober {#latest-rn}
+### Förbättringar {#jan-26-01-improv}
 
-### Nya funktioner {#oct-25-10-features}
+Förbättringar i den här versionen visas nedan.
 
+#### AI
 
-<table>
-<thead>
-<tr>
-<th><strong>Konverterare för bild till HTML</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Konverteraren av bilder till HTML är en AI-baserad funktion som konverterar statiska bilder till fullt anpassningsbara, modulära mallar för HTML e-postinnehåll. Med det här kodfria verktyget kan marknadsförarna omvandla visuell design till responsiva, redigerbara e-postmallar utan att behöva ha någon teknisk expertis - perfekt för plattformsmigrering, snabb mallframtagning och för att bygga återanvändbara mallbibliotek.</p>
-<p><img src="../email/assets/email_designer_converted_img.png"/></p>
-<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Mer information finns i den <a href="../email/image-to-html.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 30 okt 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
+* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att identifiera potentiella problem med läsbarhet, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor.
 
+* **Uppdatera varumärken med nya färgflikar** - Riktlinjer för varumärken hjälper dig att se till att ert varumärke presenteras på ett enhetligt sätt över alla kontaktytor. I det nya avsnittet <strong>Färger</strong> definieras standarderna för ditt varumärkes färgsystem, som visar hur färger väljs, ordnas och används i olika upplevelser. Det säkerställer konsekvent användning av primära, sekundära, dekorativa och neutrala färger för att stödja en sammanhängande, tillgänglig och identifierbar varumärkesidentitet.
 
-<table>
-<thead>
-<tr>
-<th><strong>Övervakning och rapportering av anpassade åtgärder</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Den här funktionen ger bättre synlighet i anpassade åtgärdsslutpunkters hälsa och prestanda. En ny kontrollpanel för anpassad åtgärdsövervakning och motsvarande fält i händelsedatauppsättningen för kundsteg hjälper dig att övervaka slutförda anrop, fel, genomströmning, svarstid och köväntetid för dina anpassade åtgärdsslutpunkter. Nu kan ni snabbt förstå när, var och varför en onormal situation inträffar i en anpassad åtgärd.</p>
-<p>Den här funktionen är för närvarande begränsad för kunderna.</p>
-<p>Mer information finns i den <a href="../action/reporting.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 28 oktober 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
+#### Kampanjer
 
-<table>
-<thead>
-<tr>
-<th><strong>Anpassade formulär för landningssida</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med [!DNL Journey Optimizer] kan du nu hämta profilattribut via dina landningssidor.</p>
-<p>Skapa, designa och hantera anpassade formulär som är skräddarsydda efter era behov utifrån en specifik datamängd. Du kan sedan använda dessa formulär på landningssidor för att lägga till de profilattribut du väljer i datauppsättningen som definieras för varje formulär.</p>
-<p>Den här funktionen är för närvarande begränsad för kunder i USA och Australien. Kontakta din Adobe-representant för att få åtkomst.</p>
-<p><img src="assets/do-not-localize/forms.gif"/></p>
-<p>Mer information finns i den <a href="../landing-pages/lp-forms.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 23 oktober 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
+* **Schemalägg kampanj med profiltidszon** - Kampanjplanering kan nu använda varje profils <strong>tidszon</strong> för att leverera meddelanden vid den avsedda lokala tidpunkten.
 
-<table>
-<thead>
-<tr>
-<th><strong>Tysta timmar/tidsbaserade undantag</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med tysta timmar kan du definiera tidsbaserade undantag för e-post-, SMS-, push- och whatsApp-kanaler. De ser till att inga meddelanden skickas under särskilda tidsperioder och hjälper er att följa kundönskemål och krav på regelefterlevnad.</p>
-<p>Du kan lägga till tysta timmar genom regeluppsättningar, som kan tilldelas enskilda åtgärder i kampanjer eller resor för exakt kontroll.</p>
-<p>Regler för tysta timmar är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet).  De kommer att vara progressivt tillgängliga för alla kunder i framtida versioner.</p>
-<img src="assets/do-not-localize/quiet-hour.gif">
-<p>Mer information finns i den <a href="../conflict-prioritization/quiet-hours.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 22 oktober 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
+  **Obs!**: Den här förbättringen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet).
 
-<!--table>
-<thead>
-<tr>
-<th><strong>RCS Basic Messaging</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>With the new RCS Basic add-on offering, you can now deliver basic Rich Communication Services (RCS) messaging in Journey Optimizer, enabling the following enhanced messaging capabilities subject to provider and geographical support:</p>
-<ul>
-<li><strong>Branded and verified sender support:</strong> Send messages using verified business profiles with branding elements (logo, sender name, etc.).</li>
-<li><strong>Message delivery insights:</strong> Receive detailed delivery reports including message status updates (e.g., sent, delivered, read).</li>
-<li><strong>Link tracking:</strong> Embed and track URLs within RCS messages for engagement analytics.</li>
-<li><strong>Fallback to SMS:</strong> Automatic fallback to SMS when the recipient's device does not support RCS or is temporarily unreachable via RCS.</li>
-<li><strong>Basic message composition:</strong> Send basic text-based RCS messages.</li>
-</ul>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<!--/td>
-</tr>
-</tbody>
-</table-->
+#### Kanaler
 
-<!--table>
-<thead>
-<tr>
-<th><strong>Direct mail channel in Orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Direct mail channel is now available in orchestrated campaigns. The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data.</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<!--/td>
-</tr>
-</tbody>
-</table-->
+* **SMS-webbhooks: Fas II** - Beskrivning ska anges.
 
-<!--table>
-<thead>
-<tr>
-<th><strong>Direct Mail channel in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Previously limited to Campaigns, Direct Mail channel is now available on the journey canvas, enabling you to incorporate Direct Mail into your journeys. Direct Mail can now be used in both batch and 1:1 journey scenarios, with support for file extraction configuration and time-based frequency settings.</p>
-<p> Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<!--/td>
-</tr>
-</tbody>
-</table-->
+#### E-postdesigner
 
-<!--<table>
-<thead>
-<tr>
-<th><strong>New source connectors for loyalty apps</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>New source connectors are now available in Adobe Experience Platform for the Talon.One, Capillary and Kobie loyalty Apps. These connectors let you seamlessly stream loyalty data into Adobe Experience Platform and leverage these data in Journey Optimizer.</p>
-<p>For more information, refer to the <a href="../start/get-started-sources.md">detailed documentation</a>.</p>
-<p>Availability date: October 22, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>-->
+* **Korrigeringar på plats i e-postdesignern** - <strong>AI-baserade automatiska innehållsförslag</strong> är nu tillgängliga i e-post-Designer när fel upptäcks under innehållsvalideringen. Om innehållet markeras som felanpassat med riktlinjer för varumärket eller inte uppfyller kvalitetskriterierna genererar systemet proaktivt korrigerade alternativ som kan granskas och tillämpas internt, vilket förbättrar regelefterlevnaden och snabbar upp produktionen.
 
-<!--table>
-<thead>
-<tr>
-<th><strong>Decisioning support in email channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now add Decision policies into email journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<img src="assets/do-not-localize/FILE.gif">
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p>
-<p>Availability date: October 22, 2025</p>
-</td>
-</tr>
-</tbody>
-</table-->
+#### Experience Decision
+
+* **Självbetjäningsverktyg för migrering av verktyg-API:er** - En ny uppsättning <strong>migreringsverktyg-API:er</strong> finns tillgängliga för att migrera Offer Management-entiteter till Experience Decision. Verktyget möjliggör sömlös migrering mellan sandlådor med beroendeupplösning och återställningsfunktioner.
+
+* **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla <strong>fragment</strong> till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutsprinciper.
+
+  **Obs!**: Den här förbättringen har tidigare släppts i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).
+
+#### Resor
+
+* **Utnyttja nyttolasten för felsvar i kundresan med anpassade åtgärder** - Du kan nu definiera en valfri <strong>felsvarsnyttolast</strong> för anpassade åtgärder. När ett anrop misslyckas visas felnyttolasten i resekontexten och är tillgänglig i timeout/error-grenen för att stödja mer omfattande reservlogik och felsökning.
+
+* **Kombinera inbyggda meddelandeåtgärder och Adobe Campaign-meddelandeåtgärder** - Med Journey Optimizer kan du nu kombinera Adobe Campaign v7/v8-meddelandeåtgärder med inbyggda kanalåtgärder på samma resa.
+
+* **Verifiering av nyttolastens storlek på resan** - Journey Optimizer tillhandahåller nu validering av <strong>nyttolastens storlek</strong> för att säkerställa optimala prestanda och systemstabilitet. När du bygger eller publicerar resor får du tydliga varningar och fel om nyttolasterna närmar sig eller överskrider de rekommenderade gränserna, tillsammans med användbar vägledning för att optimera kundresans konfiguration. Denna proaktiva validering hjälper er att identifiera potentiella problem tidigt och att upprätthålla kundresan.
+
+* **Flera inkommande åtgärder på resor** - För att förenkla kundresan kan du nu definiera <strong>flera inkommande åtgärder</strong> på en enskild resa. Den här funktionen, som tidigare fanns i kampanjer, gör att ni kan leverera flera kodbaserade upplevelser, meddelanden i appen, innehållskort eller webbåtgärder till olika platser samtidigt, och varje åtgärd innehåller ett visst innehåll.
+
+  **Obs!**: Den här förbättringen har tidigare släppts i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).
+
+#### Samordnade kampanjer
+
+* **Välj attribut och kopiera distributionsvärden** - Nu kan du välja eller kopiera värden direkt från värdedistributionen i samordnade kampanjer.
+
+* **Etikettarv för dataanvändning för målgrupper** - <strong>Etiketter för dataanvändning</strong> som används i Adobe Experience Platform överförs nu automatiskt när målgrupper sparas i orkestrerade kampanjer, vilket minskar den manuella DULE-taggningen.
+
+* **Fördefinierade återmarknadsföringsfilter** - Den här versionen innehåller nya <strong>återmarknadsföringsfilter</strong> som stöd för enklare återmarknadsföring för samordnade kampanjanvändningsfall. Med dessa filter kan ni rikta in er direkt på målgrupper baserat på meddelandeengagemang, som t.ex. skickat, öppnat, klickat eller öppnat och klickat, och välja den kampanj eller kampanj i övergången som du vill rikta om.
+
+* **Fördefinierade filter med parametrar** - Nu kan du skapa <strong>filter med parametrar</strong> i samordnade kampanjer för återanvändbara, redigerbara regler.
+
+* **Meddelandebekräftelse före sändning** - Ett <strong>bekräftelsesteg</strong> är nu aktiverat som standard innan orkestrerade kampanjer skickas för att minska antalet oavsiktliga sändningar.
+
+* **Användargenererat metadatastöd** - Hjälpfunktionen <strong>executionMetadata</strong> är nu tillgänglig i personaliseringsredigeraren för Orchestrated Campaigns, så att du kan bifoga kontextinformation till alla interna åtgärder och lagra den i en datauppsättning för export till externa system.
+
+* **Starta om-knapp** - Orchestrerade-kampanjer innehåller nu en <strong>omstartsknapp</strong> så att du snabbt kan starta om kampanjer när det behövs innan kampanjen publiceras.
+
+* **Stöd för hastighetskontroll** - Orchestrerade kampanjer har nu stöd för <strong>hastighetskontroll</strong> som hjälper dig att jämna ut leveranser och anpassa dig till volymbegränsningar.
+
+#### Behörigheter
+
+* **Förhindra självgodkännande för resor och kampanjer** - Nu kan du kräva att skapare inte kan godkänna sina egna resor eller kampanjer, vilket förbättrar <strong>ansvarsfördelningen</strong> i arbetsflöden för godkännande.
+
+## Kommer snart {#jan-26-01-coming-soon}
+
+Följande funktioner och förbättringar planeras släppas under de närmaste dagarna. **Informationen kan komma att ändras**. Uppdaterade länkar, skärmar och dokumentation delas när uppdateringarna är klara.
 
 <table>
 <thead>
 <tr>
-<th><strong>Meddelanden med hög genomströmning för API-utlösta e-postkampanjer</strong><br/></th>
+<th><strong>Generering av innehåll i Journey Agent</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Ett nytt transaktionsläge med hög genomströmning är tillgängligt i API-utlösta kampanjer. Det här läget är utformat för storskaliga transaktionsmeddelanden i realtid och stöder upp till 5 000 transaktioner per sekund med högre tillgänglighet. I det här läget kan du även hantera transaktionsmeddelanden utan att referera till eller skapa kundprofiler, till exempel gästutcheckning, orderbekräftelse, lösenordsåterställningar, säkerhetsmeddelanden och andra service-/driftsmeddelanden.</p>
-<p>Den här funktionen är endast tillgänglig för e-postkanalen, för organisationer som har köpt tillägget Adobe High Throput Transactional Messaging. Kontakta Adobe om du vill ha mer information.</p>
-<p>Mer information finns i den <a href="../campaigns/api-triggered-high-throughput.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 22 oktober 2025</p>
+<p><strong>Journey Agent</strong>, som drivs av Adobe Experience Platform Agent Orchestrator, finns i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i Content Designer för kontextredigering.</p>
+<p>Tillgänglighetsdatum: 2 februari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -290,224 +355,15 @@ Nya funktioner och förbättringar som släppts under de senaste veckorna listas
 <table>
 <thead>
 <tr>
-<th><strong>Återanvändbara målinriktningsregler</strong><br/></th>
+<th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>För att spara tid och arbete kan du nu med Journey Optimizer skapa återanvändbara regler från en dedikerad användargränssnittsmeny och utnyttja dem när du skapar målinriktning, antingen som en del av optimeringen av innehåll i en kampanj eller en resa, antingen i Optimera kundresan.</p>
-<p>Målreglerna är för närvarande begränsade. Kontakta din Adobe-representant för att få åtkomst. Observera att den här funktionen endast är tillgänglig för organisationer som har köpt tilläggserbjudandet för beslut. Den kommer att successivt lanseras för alla kunder.</p>
-<img src="assets/do-not-localize/targeting-rules.gif">
-<p>Mer information finns i den <a href="../experience-decisioning/rules.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 22 oktober 2025</p>
+<p>Du kan nu inkludera <strong>personaliserade erbjudanden</strong> på dina resor via en dedikerad innehållsbeslutsaktivitet på arbetsytan och använda dem i reseaktiviteter, inklusive villkor och anpassade åtgärder.</p>
+<p>Tillgänglighetsdatum: 3 februari 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Nya reseaviseringar</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Det finns nya förkonfigurerade aviseringar som kan övervaka din resa:</p>
-<ul><li><a href="../reports/alerts.md#alert-discard-rate">Frekvensen för ignorerade profiler överskreds</a>: Profilförhållandet mellan ignorerade profiler och angivna profiler under de senaste 5 minuterna överskred tröskelvärdet</li>
-<li><a href="../reports/alerts.md#alert-custom-action-error-rate">Felfrekvens för anpassad åtgärd överskreds</a>: Förhållandet mellan anpassade åtgärdsfel och lyckade HTTP-anrop under de senaste 5 minuterna överskred tröskelvärdet</li>
-<li><a href="../reports/alerts.md#alert-profile-error-rate">Profilens felfrekvens har överskridits</a>: Profilernas felförhållande till de angivna profilerna under de senaste 5 minuterna överskred tröskelvärdet.</li></ul> <p>Du kan ändra tröskelvärden och prenumerera på enskilda varningar på resenivå jämfört med globalt.</p>
-<p>Mer information finns i den <a href="../reports/alerts.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 14 oktober 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Hjälp för körningsmetadata</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>En ny hjälpfunktion, executeMetadata, är tillgänglig i personaliseringsredigeraren. Det gör att du kan lägga till sammanhangsbaserad information till alla inbyggda åtgärder och hämta den i en datauppsättning för export till externa system.</p>
-<p>Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.</p>
-<img src="assets/do-not-localize/execution-metadata.gif">
-<p>Mer information finns i den <a href="../personalization/functions/helpers.md#execution-metadata">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 13 oktober 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Experimentation Accelerator med Experimentation Agent</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer Experimentation Accelerator innehåller nu Experimentation Agent, ett AI-drivet konversationsverktyg med vilket du kan interagera med dina experiment, insikter och möjligheter. Det förbättrar Journey Optimizer Experimentation Accelerator upplevelse och hjälper dig att köra experiment effektivare, upptäcka vad som fungerar och se var du kan optimera nästa steg.</p>
-<p>Mer information finns i den <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment.html?lang=sv-SE" target="_blank">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 10 oktober 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>PDF bilagor till e-postmeddelanden</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Du kan nu bifoga en statisk PDF-fil i ett e-postmeddelande som skickas med Journey Optimizer.</p>
-<ul>
-<li>Du kan skicka upp till 6 meddelanden med en PDF-bilaga per profil och år.</li>
-<li>Den största tillåtna filstorleken för varje bifogad fil är 5 MB.</li>
-<li>För ytterligare storlekar och volymer kan du köpa tillägget PDF-bilagor. Mer information får du av Adobe.</li>
-</ul>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p><img src="assets/do-not-localize/pdf-attachments.gif"/></p>
-<p>Mer information finns i den <a href="../email/pdf-attachments.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 30 september 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Offentligt API för att hämta resor</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Det finns nu ett nytt Journey Optimizer-API för att hämta resor och tillhörande objekt som kampanjer och ytor.</p>
-<p>Mer information finns i <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve/">detaljerad dokumentation</a></p>
-<p>Tillgänglighetsdatum: 25 september 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-### Förbättringar {#updates-improvements}
-
-**Körningsfält för WhatsApp-kanal**
-
-Förutom E-post och SMS kan du även uppdatera standardkörningsfältet för dina WhatsApp-leveranser på sandlådenivå. Det går också att åsidosätta körningsfältet som angetts globalt genom att ändra det i de avancerade parametrarna för whatsApp-reseaktiviteten eller i konfigurationen för WhatsApp-kanalen. [Läs mer](../configuration/primary-email-addresses.md)
-
-Tillgänglighetsdatum: 22 oktober 2025
-
-**Stöd för anpassade attribut för adressen Mailto (unsubscribe)**
-
-Med Journey Optimizer kan du, om du hanterar samtycke utanför Adobe, ange externa anpassade slutpunkter genom att definiera en egen länk för att avbryta prenumerationen och en anpassad e-postadress för att avbryta prenumerationen i e-postkonfigurationen. När mottagarna klickar på länken för att avbryta prenumerationen lägger Journey Optimizer till vissa standardprofilspecifika parametrar i händelsen för att skicka medgivandeuppdatering.
-
-Om du vill anpassa dina anpassade slutpunkter ytterligare kan du nu definiera anpassade attribut som också läggs till i medgivandehändelsen. [Läs mer](../email/list-unsubscribe.md#custom-attributes)
-
->[!AVAILABILITY]
->
->Den här funktionen har redan varit tillgänglig för den anpassade **[!UICONTROL One-click Unsubscribe URL]** sedan 25 augusti och har nu släppts för alternativet **[!UICONTROL Mailto (unsubscribe)]** med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
-
-Tillgänglighetsdatum: 6 oktober 2025
-
-<!--
-### Coming soon {#oct-25-10-soon}
-
-In the next few days, the following capabilities and enhancements are scheduled for release. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
-
-#### New capabilities {#oct-25-10-soon-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>Themes in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now quickly apply pre-approved themes to ensure brand consistency across all emails, speed up your campaign creation process, and independently produce high-quality emails while reducing dependency on design teams.</p>
-<p>Previously released in beta version, this capability is now available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<img src="assets/do-not-localize/themes.gif">
-<p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
-<p>Availability date: November 4, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Improvements {#oct-25-10-soon-improvements}
-
-**Decisioning in emails through AI models**
-
-You can now use AI models to optimize the best content in your email through the use of Decisioning. For example, this capability allows you to offer the best content based on custom events such as Purchases, Button Clicks, Add to Cart, etc.
--->
-
-<!--
-<table>
-<thead>
-<tr>
-<th><strong>New Web Push notifications channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer now supports Web Push notifications, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app.</p>
-<p>This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
-<p>Availability date: Sept XX, 2025</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom action monitoring and reporting</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Custom action monitoring and reporting is now available. This capability provides better visibility into journey health and execution, including lifecycle status and performance alerts. You can now quickly understand when, where, and why an anomalous situation is occurring in a custom action.</p>
-<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a></p>
-<p>Availability date: Sept XX, 2025</p>
-</td>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>New source connectors for loyalty apps</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>New source connectors are now available in Adobe Experience Platform for the Talon.One, Capillary, and Kobie loyalty apps. These connectors let you seamlessly stream loyalty data into Adobe Experience Platform and leverage these data in Journey Optimizer.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
--->
