@@ -6,9 +6,9 @@ feature: Release Notes
 topic: Content Management
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: ca652ee1469f411a1bd80733ba89921b0ddb1b1c
+source-git-commit: 789bae8373dda34cd132ea7abffea37f002dbc50
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2051'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation januari 26 {#latest-rn}
 
@@ -100,7 +100,6 @@ Versionsinformationen är förhandsversion och kan ändras fram till releasedatu
 <td>
 <p>Tidigare begränsad till Campaigns är nu <strong>Direct Mail-kanalen</strong> tillgänglig på <strong>arbetsytan för resan</strong>, vilket gör att du kan infoga Direct Mail i dina resor. Direktreklam kan nu användas i både batch- och 1:1-resscenarier, med stöd för filextraheringskonfiguration och tidsbaserade frekvensinställningar.</p>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<img src="assets/do-not-localize/dm-journey.gif">
 </td>
 </tr>
 </tbody>
@@ -148,7 +147,6 @@ Versionsinformationen är förhandsversion och kan ändras fram till releasedatu
 <tr>
 <td>
 <p>Direktreklamkanalen finns nu tillgänglig i samordnade kampanjer. <strong>Direkte-postaktiviteten</strong> gör det lättare att skicka direktreklam i din samordnade kampanj, både för engångs- och återkommande meddelanden. Den används för att automatisera processen att generera den <strong>extraheringsfil</strong> som krävs av direktmeddelandeleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data.</p>
-<img src="assets/do-not-localize/dm-oc.gif">
 </td>
 </tr>
 </tbody>
@@ -200,7 +198,7 @@ Versionsinformationen är förhandsversion och kan ändras fram till releasedatu
 <tr>
 <td>
 <p>Med Journey Create Agent kan Journey Optimizer-användare skapa och konfigurera marknadsföringsresor med ett naturligt språkgränssnitt. Med Journey Create Agent kan man snabbt skapa resor genom att beskriva kraven i samtal. Agenten effektiviserar framtagningen av resor så att marknadsförarna kan fokusera på strategi istället för teknisk konfiguration.</p>
-<p><a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Läs mer</a></p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Läs mer</a></p>
 <p>Tillgänglighetsdatum: 12 januari 2026</p>
 </td>
 </tr>
@@ -288,7 +286,7 @@ Förbättringar i den här versionen visas nedan.
 
 #### E-postdesigner
 
-* **Korrigeringar på plats i e-postdesignern** - <strong>AI-baserade automatiska innehållsförslag</strong> är nu tillgängliga i e-post-Designer när fel upptäcks under innehållsvalideringen. Om innehållet markeras som felanpassat med riktlinjer för varumärket eller inte uppfyller kvalitetskriterierna genererar systemet proaktivt korrigerade alternativ som kan granskas och tillämpas internt, vilket förbättrar regelefterlevnaden och snabbar upp produktionen.
+* **Korrigeringar på plats i e-postdesignern** - När du hanterar innehåll med din varumärkesriktlinje är <strong>AI-baserade automatiska innehållsförslag</strong> nu tillgängliga när fel upptäcks under innehållsvalideringen. Om innehållet markeras som felanpassat med riktlinjer för varumärket eller inte uppfyller kvalitetskriterierna genererar systemet proaktivt korrigerade alternativ som kan granskas och tillämpas internt, vilket förbättrar regelefterlevnaden och snabbar upp produktionen.
 
 #### Experience Decision
 
