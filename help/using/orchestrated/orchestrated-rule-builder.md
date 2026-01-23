@@ -5,15 +5,20 @@ title: Arbeta med regelbyggaren
 description: Lär dig hur du skapar regler för dina samordnade kampanjer
 exl-id: fb7a0eb2-b2ff-49fa-af1f-f1c10f219b00
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: 78fe305975ec97b45e73d60b1dcd66800f67d26e
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
 
 # Arbeta med regelbyggaren {#orchestrated-rule-builder}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_predefinedfilter"
+>title="Fördefinierat filter"
+>abstract="Genom att använda alternativet **Fördefinierat filter** kan du välja ett fördefinierat filter i listan över anpassade filter eller bland favoriter."
 
 Samordnade kampanjer har en regelbyggare som förenklar processen att filtrera databasen baserat på olika kriterier. Regelbyggaren hanterar mycket komplexa och långa frågor effektivt och erbjuder större flexibilitet och precision.
 

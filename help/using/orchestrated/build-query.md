@@ -5,15 +5,25 @@ title: Bygg din första regel
 description: Lär dig hur du skapar regler för dina samordnade kampanjer
 exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: 78fe305975ec97b45e73d60b1dcd66800f67d26e
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1856'
 ht-degree: 0%
 
 ---
 
 
 # Bygg din första regel {#build-query}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_selectaudience"
+>title="Välj målgrupp"
+>abstract="Genom att använda alternativet **Välj målgrupp** kan du välja vilken målgrupp du vill använda för att filtrera din fråga."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_predefinedfilter"
+>title="Fördefinierat filter"
+>abstract="Genom att använda alternativet **Fördefinierat filter** kan du välja ett fördefinierat filter i listan över anpassade filter eller bland favoriter."
 
 De viktigaste stegen för att skapa regler för era samordnade kampanjer är följande:
 
@@ -22,6 +32,11 @@ De viktigaste stegen för att skapa regler för era samordnade kampanjer är fö
 1. **Kontrollera och validera regeln** - Kontrollera regelns resultatdata innan du sparar den.
 
 ## Lägg till ett villkor {#conditions}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_customcondition"
+>title="Anpassat villkor"
+>abstract="Anpassade villkor är att filtrera komponenter som gör att du kan filtrera frågan genom att skapa ett eget villkor med attribut från databasen och avancerade uttryck."
 
 Så här lägger du till villkor i frågan:
 
@@ -160,6 +175,11 @@ Med anpassade villkor kan du utföra sammanställningsåtgärder. För att göra
 
 ## Kombinera villkor med operatorer {#operators}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_group"
+>title="Grupp"
+>abstract="I den här rutan kan du ändra operatorn som används för att länka samman filtervillkoren."
+
 Varje gång du lägger till ett nytt villkor i regeln länkas det automatiskt till det befintliga villkoret av en **AND** -operator. Detta innebär att resultaten från de två villkoren kombineras.
 
 Om du vill ändra operatorn mellan villkor klickar du på den och väljer önskad operator.
@@ -188,7 +208,7 @@ Verktygsfältet för regelhanterarens arbetsyta innehåller alternativ för att 
 
 Beroende på dina behov kan du behöva skapa mellanliggande grupper av komponenter genom att gruppera komponenterna i en och samma grupp och länka dem tillsammans.
 
-* Om du vill gruppera två befintliga villkor markerar du ett av de två villkoren och klickar på ikonen ![Flytta upp &#x200B;](assets/do-not-localize/rule-builder-icon-up.svg) eller ![Flytta ned markeringsikonen](assets/do-not-localize/rule-builder-icon-down.svg) för att gruppera det med villkoret ovanför eller nedanför.
+* Om du vill gruppera två befintliga villkor markerar du ett av de två villkoren och klickar på ikonen ![Flytta upp ](assets/do-not-localize/rule-builder-icon-up.svg) eller ![Flytta ned markeringsikonen](assets/do-not-localize/rule-builder-icon-down.svg) för att gruppera det med villkoret ovanför eller nedanför.
 
 * Om du vill gruppera ett befintligt villkor med ett nytt, markerar du villkoret, klickar på ![bilden med knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) och väljer **[!UICONTROL Add group]**. Markera det nya attributet som ska läggas till i gruppen och bekräfta sedan.
 
@@ -199,6 +219,11 @@ I exemplet nedan har vi skapat en mellanliggande grupp för kunder som köpt ant
 ![](assets/rule-builder-groups.png)
 
 ## Kontrollera och validera frågan
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_querymodeler_ruleproperties"
+>title="Regelegenskaper"
+>abstract="När du har skapat frågan på arbetsytan kan du kontrollera den med rutan **Regelegenskaper** som finns till höger.<br/>I den här rutan kan du visa resulterande data, hämta en SQL-kodversion av frågan och kontrollera antalet målposter.<br/>Använd knappen **Markera eller spara filter** om du vill spara frågan som ett fördefinierat filter eller ersätta arbetsytans innehåll med ett befintligt filter."
 
 När du har skapat frågan på arbetsytan kan du kontrollera den med rutan **Regelegenskaper** . Tillgängliga åtgärder är:
 
