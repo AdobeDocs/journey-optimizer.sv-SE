@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 27 januari 2026
 
@@ -201,7 +201,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Med Journey Create Agent kan Journey Optimizer-användare skapa och konfigurera marknadsföringsresor med ett naturligt språkgränssnitt. Med Journey Create Agent kan man snabbt skapa resor genom att beskriva kraven i samtal. Agenten effektiviserar framtagningen av resor så att marknadsförarna kan fokusera på strategi istället för teknisk konfiguration.</p>
-<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Läs mer</a></p>
+<p><a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Läs mer</a></p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-13747">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95142">Länk till JIRA-uppgiften PRODUCT </a></p>
 <p>Tillgänglighetsdatum: 12 januari 2026</p>
 </td>
