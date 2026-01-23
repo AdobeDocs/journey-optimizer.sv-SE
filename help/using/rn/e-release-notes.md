@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 3ea5dd845569508421092bdf53634619354206e2
+source-git-commit: 7c505152995cc54bea4fb3cbb8ca7eecd68df737
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2388'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 27 januari 2026
 
@@ -293,9 +293,6 @@ Förbättringar i den här versionen visas nedan.
 
 * **SMS-webbhooks: Fas II** - Beskrivning ska anges.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13978">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-93914">Länk till JIRA-uppgiften PRODUCT </a>
-
-* **WhatsApp Resell Offer** - Beskrivning ska anges.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13669">Länka till DOCAC JIRA-aktivitet</a> | <a href="https://jira.corp.adobe.com/browse/CJM-86420">Länk till JIRA-uppgiften PRODUCT </a>
 
 #### E-postdesigner
 
