@@ -201,7 +201,7 @@ Skillnaden kan uppstå när resan använder en profilögonblicksbild från en f�
 
 Läs [den här felsökningsartikeln](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26253){target="_blank"} om du vill veta mer om hur du löser det här problemet.
 
-Läs mer i [det här Journey Optimizer Community-inlägget](https://experienceleaguecommunities.adobe.com/t5/real-time-customer-data-platform/profile-snapshot-and-segment-qualification-troubleshooting/ba-p/698998){target="_blank"}.
+Läs mer i [det här Journey Optimizer Community-inlägget](https://experienceleaguecommunities.adobe.com/t5/real-time-customer-data-platform/profile-snapshot-and-segment-qualification-troubleshooting/ba-p/698998?profile.language=sv){target="_blank"}.
 
 Se även [API-dokumentationen för Adobe Experience Platform-scheman](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/api/schedules){target="_blank"} för att kontrollera när ditt dagliga jobb är schemalagt.
 

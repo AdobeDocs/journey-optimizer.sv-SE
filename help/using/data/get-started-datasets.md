@@ -21,7 +21,7 @@ Alla data som importeras till Adobe Experience Platform lagras i Data Lake som d
 
 ## Skyddsritningar och begränsningar
 
-* Från och med 1 november 2024 har direktuppspelningssegmentering inte längre stöd för skicka och öppna händelser från [!DNL Journey Optimizer] spårnings- och feedbackdatauppsättningar. Använd affärsregler i stället för att implementera frekvensbegränsning eller trötthetshantering. Mer information finns i [det här avsnittet](../conflict-prioritization/rule-sets.md), inklusive en fallförklaring för det dagliga taktavlägget [här](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510){target="_blank"}.
+* Från och med 1 november 2024 har direktuppspelningssegmentering inte längre stöd för skicka och öppna händelser från [!DNL Journey Optimizer] spårnings- och feedbackdatauppsättningar. Använd affärsregler i stället för att implementera frekvensbegränsning eller trötthetshantering. Mer information finns i [det här avsnittet](../conflict-prioritization/rule-sets.md), inklusive en fallförklaring för det dagliga taktavlägget [här](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510?profile.language=sv){target="_blank"}.
 
 * Från och med februari 2025 introduceras ett TTL-skyddsutkast till Journey Optimizer systemgenererade datauppsättningar. [Läs mer](datasets-ttl.md)
 

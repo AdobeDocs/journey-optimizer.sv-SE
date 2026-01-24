@@ -52,7 +52,7 @@ Tabellen nedan listar alla påverkade datauppsättningar och deras respektive Ti
 
 Nedan hittar du Vanliga frågor om datauppsättningar TTL (Time-to-live).
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
 
 +++Gäller den här ändringen endast för produktionssandlådor eller gäller den även för dev-sandlådor?
 

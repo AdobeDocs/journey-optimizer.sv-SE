@@ -116,7 +116,7 @@ Om du vill importera filer till **[!DNL Assets Essentials]** eller **[!DNL Asset
 
 Nedan finns Frågor och svar om Adobe Experience Manager Assets.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
 
 +++ Kan jag fortsätta använda den paketerade databasen Assets Essentials i Journey Optimizer?
 

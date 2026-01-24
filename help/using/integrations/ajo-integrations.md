@@ -121,7 +121,7 @@ Läs mer om [Journey Optimizer + Campaign Standard](../building-journeys/using-a
 
 Använd Adobe Journey Optimizer-modulerna i Adobe Workfront för att skapa, läsa, uppdatera eller ta bort poster eller utföra ett anpassat API-anrop till Adobe Journey Optimizer API.
 
-En översikt över det viktiga steget i den här integreringen finns tillgänglig [i blogginlägget](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/accelerating-go-to-market-how-workfront-workfront-fusion-aep-and/ba-p/653685){target="_blank"}.
+En översikt över det viktiga steget i den här integreringen finns tillgänglig [i blogginlägget](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/accelerating-go-to-market-how-workfront-workfront-fusion-aep-and/ba-p/653685?profile.language=sv){target="_blank"}.
 
 Läs mer om Journey Optimizer + Adobe Workfront [i Adobe Workfront-dokumentationen](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-journey-optimizer-modules.html?lang=sv-SE){target="_blank"}.
 

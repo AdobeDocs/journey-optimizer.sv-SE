@@ -155,7 +155,7 @@ Upptäck hur AI hjälper er att skapa innehåll, optimera sändningstiderna och 
 * **[Använd fallspelningsböcker](../using/start/ai-features.md#playbooks)** - Förbyggda arbetsflöden för vanliga scenarier som övergiven kundvagnsåterställning och välkomstkampanjer
 * **[Övervakning och felsökning](troubleshoot-journey-landing-page.md)** - Verktyg för att spåra prestanda, identifiera problem och snabbt lösa problem
 * **[Nyheter](../using/rn/release-notes.md)** - Håll dig uppdaterad med de senaste funktionerna, förbättringarna och korrigeringarna
-* **[Community-forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Kommunicera med andra användare, ställa frågor och dela med dig av bästa praxis
+* **[Community-forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}** - Kommunicera med andra användare, ställa frågor och dela med dig av bästa praxis
 * **[Dokumentationsuppdateringar](../using/rn/documentation-updates.md)** - Håll dig informerad om de senaste ändringarna och tilläggen i dokumentationen
 
 ## Vill du komma igång?
@@ -165,7 +165,7 @@ Välj den sökväg som passar dig:
 * **Ny på Journey Optimizer?** Börja med [Vad är Journey Optimizer?](../using/start/get-started.md) för att förstå grunderna
 * **Känner du till din roll?** Hoppa till den [rollspecifika guiden](../using/start/quick-start.md) som matchar ditt ansvar
 * **Vill du utforska?** Bläddra bland [AI-funktionerna](../using/start/ai-features.md) eller prova [Använd fallspelningsböcker](../using/start/ai-features.md#playbooks)
-* **Behöver du hjälp?** Kontrollera [felsökningsguiden](../using/start/troubleshooting.md) eller gå till [Community-forumet](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
+* **Behöver du hjälp?** Kontrollera [felsökningsguiden](../using/start/troubleshooting.md) eller gå till [Community-forumet](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}
 
 ## Snabblänkar {#quick-links}
 

@@ -101,7 +101,7 @@ Utforska sändningstider väljs slumpvis bland de sändningstider som är tillg�
 
 Nedan hittar du Vanliga frågor om optimering av sändningstid.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
 
 +++Hur lång tid behöver jag vänta innan jag använder optimering för Skicka-tid?
 

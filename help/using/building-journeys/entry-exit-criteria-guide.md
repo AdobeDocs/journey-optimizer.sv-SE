@@ -208,7 +208,7 @@ Börja med att tydligt kartlägga kundens triggers och exitpunkter, testa noggra
 
 **Självstudiekurser och exempel**
 
-[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
+[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958?profile.language=sv)
 
 **Relaterade funktioner**
 

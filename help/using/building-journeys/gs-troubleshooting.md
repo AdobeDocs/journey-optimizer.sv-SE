@@ -59,9 +59,9 @@ Gå igenom sidorna nedan och fördjupa dig i specifika felsökningsfrågor:
 <tr style="border: 0;">
   <td>
     <div>
-    <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884">
+    <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884?profile.language=sv">
     <img alt="Förstå vanliga felkoder" src="../assets/do-not-localize/icon-quick-start.svg" /></a> 
-    <br>Ta även en titt på <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884" target="_blank">det här blogginlägget från Adobe Community </a> där du får mer information om <strong>vanliga felkoder</strong> och hur du löser dem effektivt.
+    <br>Ta även en titt på <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884?profile.language=sv" target="_blank">det här blogginlägget från Adobe Community </a> där du får mer information om <strong>vanliga felkoder</strong> och hur du löser dem effektivt.
     </div>
   </td>
 </tr>

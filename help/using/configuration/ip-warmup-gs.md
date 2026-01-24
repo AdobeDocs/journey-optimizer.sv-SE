@@ -66,10 +66,10 @@ Lär dig hur du skapar och kör en IP-värmeringsplan.
 
 Utforska de här praktiska blogginläggen för mer ingående vägledning om IP-värmare:
 
-* [Adobe Journey Optimizer Deliverability Guide: Från Zero Reputation till Inbox Hero](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950) - Omfattande guide som täcker viktiga aspekter av anseende, värmeringskalendrar, övervakning och felsökning av bästa praxis.
+* [Adobe Journey Optimizer Deliverability Guide: Från Zero Reputation till Inbox Hero](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950?profile.language=sv) - Omfattande guide som täcker viktiga aspekter av anseende, värmeringskalendrar, övervakning och felsökning av bästa praxis.
 
-* [Förstå hur du konfigurerar IP-värmerappningen](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949) - Lär dig grunderna i hur du konfigurerar IP-värmeringsplaner och metodtips för en lyckad implementering.
+* [Förstå hur du konfigurerar IP-värmerappningen](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949?profile.language=sv) - Lär dig grunderna i hur du konfigurerar IP-värmeringsplaner och metodtips för en lyckad implementering.
 
-* [Avancerade funktioner i IP-uppvärmningsplaner](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-features-in-ajo-ip-warm-up-plans-granular-controls-for/ba-p/761958) - Upptäck avancerade funktioner och detaljerade kontroller för att optimera din strategi för IP-uppvärmning.
+* [Avancerade funktioner i IP-uppvärmningsplaner](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-features-in-ajo-ip-warm-up-plans-granular-controls-for/ba-p/761958?profile.language=sv) - Upptäck avancerade funktioner och detaljerade kontroller för att optimera din strategi för IP-uppvärmning.
 
-* [Felsökning av IP-uppvärmning](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warm-up-troubleshooting-audience-delays-and-smart-retry/ba-p/761952) - Hitta lösningar på vanliga problem, som fördröjningar av målgrupper och läs om smarta återförsöksmekanismer.
+* [Felsökning av IP-uppvärmning](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warm-up-troubleshooting-audience-delays-and-smart-retry/ba-p/761952?profile.language=sv) - Hitta lösningar på vanliga problem, som fördröjningar av målgrupper och läs om smarta återförsöksmekanismer.

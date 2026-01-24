@@ -202,5 +202,5 @@ Samarbeta med [administratörer](administrator.md) om åtkomst och konfiguration
 
 1. **Start small**: Skapa en enkel välkomstresa eller kampanj med ett enda meddelande för att lära dig plattformen
 2. **Utnyttja AI**: Använd AI Assistant för att ställa frågor och snabba upp skapandet av innehåll
-3. **Gå med i communityn**: Anslut till andra Journey Optimizer-användare i [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
+3. **Gå med i communityn**: Anslut till andra Journey Optimizer-användare i [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}
 4. **Utforska självstudiekurser**: Titta på stegvisa videor om [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html?lang=sv-SE){target="_blank"}

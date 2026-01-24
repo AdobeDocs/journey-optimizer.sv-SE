@@ -230,7 +230,7 @@ Utforska följande resurser om du vill veta mer om utbildning och uppdateringar:
 
 >[!TAB Community och support]
 
-* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Kontakta andra användare och experter
-* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ställ frågor och dela kunskap
+* [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"} - Kontakta andra användare och experter
+* [Produktforum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"} - Ställ frågor och dela kunskap
 
 >[!ENDTABS]

@@ -93,7 +93,7 @@ Du kan prenumerera på **e-postmeddelanden och produktmeddelanden** för Journey
 
 Nedan finns Frågor och svar om Adobe Journey Optimizer releasecykel.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
 
 +++ När planeras Adobe Journey Optimizer-releaser?
 

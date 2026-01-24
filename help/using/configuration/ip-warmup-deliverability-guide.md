@@ -19,7 +19,7 @@ ht-degree: 2%
 
 När du lanserar e-postkampanjer med nya IP-adresser eller domäner i Adobe Journey Optimizer är det viktigt att förstå leveransgrunderna för att skapa ett starkt avsändarrykte. Den här guiden beskriver viktiga koncept, förberedelser och metodtips som hjälper dig att gå över från noll till färdig inkorg.
 
-➡️ Lär dig mer om grundläggande leveransmöjligheter, anseende och bästa praxis för IP-uppvärmning i videon från detta [Adobe-blogginlägg](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950){target="_blank"}.
+➡️ Lär dig mer om grundläggande leveransmöjligheter, anseende och bästa praxis för IP-uppvärmning i videon från detta [Adobe-blogginlägg](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950?profile.language=sv){target="_blank"}.
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ När du har slutfört din vårdsplan och mätvärden har stabiliserats:
 <!--
 >[!NOTE]
 >
->For more guidance, explore the [Adobe Journey Optimizer Deliverability Guide blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950).-->
+>For more guidance, explore the [Adobe Journey Optimizer Deliverability Guide blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950?profile.language=sv).-->
 
 ## Relaterade ämnen {#related-topics}
 
