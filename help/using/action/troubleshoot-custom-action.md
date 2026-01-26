@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: c0bb473a-82dc-4604-bd8a-020447ac0c93
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: 70cac01cf79d7de66667e6fd786caf9df5499dd7
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,11 @@ Som administratör kan du använda funktionen **[!UICONTROL Send test request]**
 ![](assets/send-test-request.png){width="70%" align="left"}
 
 Använd den här funktionen för att effektivisera testnings- och valideringsprocessen och säkerställa att anpassade åtgärder fungerar korrekt på liveresor.
+
+>[!NOTE]
+>
+>Om din organisation har IP-proxyn (egress) aktiverad kringgår **[!UICONTROL Send test request]**-anropet det. Kör ett test eller en direktresa för att bekräfta proxyroutning. Läs mer om IP-proxyn (egress) och aktiveringen i [Integrera med externa system](../configuration/external-systems.md#faq).
+
 
 ## Förhandskrav {#troubleshoot-custom-action-prereq}
 
