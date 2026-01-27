@@ -94,4 +94,4 @@ När du publicerar en ny version av en resa avslutas den tidigare versionen auto
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3427940?captions=swe&quality=12)
