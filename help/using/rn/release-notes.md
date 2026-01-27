@@ -7,7 +7,7 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: aa66cc14a9d10df066f91403ed072cb95eebaa8f
+source-git-commit: 13d728fddb3179563edd9d5df752c732591c4a45
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 4%
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation januari 26 {#latest-rn}
 
@@ -35,7 +35,7 @@ Avsnitten [Funktioner](#jan-26-01-features) och [Förbättringar](#jan-26-01-imp
 
 <!-- **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date. 
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -128,7 +128,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 #### Samordnade kampanjer
 
-* **Välj attribut och kopiera distributionsvärden** - Nu kan du välja eller kopiera värden direkt från värdedistributionen i samordnade kampanjer. [Läs mer](../orchestrated/orchestrated-rule-builder.md)
+* **Välj attribut och kopiera distributionsvärden** - Nu kan du välja eller kopiera värden direkt från värdedistributionen i samordnade kampanjer. [Läs mer](../orchestrated/build-query.md)
 
 * **Etikettarv för dataanvändning för målgrupper** - Etiketter som används i Adobe Experience Platform överförs nu automatiskt när målgrupper sparas i orkestrerade kampanjer, vilket minskar den manuella DULE-taggningen. [Läs mer](../orchestrated/activities/save-audience.md)
 
