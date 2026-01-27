@@ -5,9 +5,9 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1819'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Nedan hittar du Frågor och svar om Adobe Journey Optimizer samordnade kampanjer.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ Vad är Campaign-samordning?
 
@@ -64,7 +64,7 @@ För att få åtkomst till kampanjsamordning måste din licens innehålla anting
 **Läs mer**
 
 * [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)
-* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
 +++
 
@@ -357,7 +357,7 @@ Ja, ni kan utöka data från relationsbutiken och från Adobe Experience Platfor
 
 +++ Måste alla filter definieras via målgrupper eller kan någon typ av filter konfigureras?
 
-Samordnade kampanjer har stöd för fördefinierade filter: du kan definiera och spara en fråga som ett filter och lägga till den i dina favoriter så att den kan återanvändas i andra segmenteringsuppgifter.
+Samordnade kampanjer har stöd för fördefinierade filter: du kan definiera och spara en fråga som ett filter, lägga till den i dina favoriter och återanvända den i andra segmenteringsuppgifter. Fördefinierade filter kan innehålla parametrar så att du kan ange värden när du använder dem. [Lär dig arbeta med fördefinierade filter](predefined-filters.md).
 
 **Läs mer**
 
@@ -375,4 +375,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Samordnade kampanjer skyddar mot detaljer och begränsningar](guardrails.md)
 * [Kom igång med scheman och datauppsättningar i samordnade kampanjer](gs-schemas.md)
 * [Skapa din första samordnade kampanj](gs-campaign-creation.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

@@ -5,7 +5,7 @@ title: Skicka uppdateringar av önskelisteobjekt
 description: Skicka uppdateringar av önskelisteobjekt
 feature: Use Cases
 version: Campaign Orchestration
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
@@ -25,7 +25,7 @@ I det här exemplet används ett **Önsklisteschema**, men samma metod gäller f
 * **Produkt**: med fält: `description`, `priceref`, `imageurl`
 * **AbandonedCarts** (valfritt): med fält: `lastmodified`
 
-➡️ [Lär dig konfigurera modellbaserade scheman](gs-schemas.md)
+➡️ [Lär dig hur du konfigurerar relationsscheman ](gs-schemas.md)
 
 >[!ENDSHADEBOX]
 

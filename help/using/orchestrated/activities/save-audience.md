@@ -5,9 +5,9 @@ title: Använda aktiviteten Spara målgrupp
 description: Lär dig hur du använder aktiviteten Spara målgrupp i en orkestrerad kampanj
 exl-id: 7b5b03ba-fbb1-4916-8c72-10778752d8e4
 version: Campaign Orchestration
-source-git-commit: 07ec28f7d64296bdc2020a77f50c49fa92074a83
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,9 @@ Innehållet i den sparade målgruppen är sedan tillgängligt i detaljvyn för m
 
 ![](../assets/save-audience-4.png)
 
+>[!NOTE]
+>
+>Om målgruppsdefinitionen använder Experience Platform-schemaattribut som är märkta med dataanvändning (DULE), ärvs dessa etiketter automatiskt av den sparade målgruppen. Du behöver inte tillämpa dem igen. [Läs mer om datastyrning](../../action/action-privacy.md)
 
 ## Exempel {#save-audience-example}
 

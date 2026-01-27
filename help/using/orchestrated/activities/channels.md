@@ -5,10 +5,10 @@ title: Lägga till en kanalaktivitet i en flerstegskampanj
 description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampanj
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 version: Campaign Orchestration
-source-git-commit: 2bdabace34546bd27c2e3c19a3aee3c8a3eae5f2
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 1%
+source-wordcount: '1380'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ UNUSED IDs in BJ
 >title="Aktivitet för direktreklam"
 >abstract="Aktiviteten Direktutskick underlättar direktutskick inom din samordnade kampanj, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
 
-Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra marknadsföringskampanjer över flera kanaler - e-post, SMS och push-meddelanden. Ni kan kombinera de här kanalaktiviteterna i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer. Dessa kampanjer kan utlösa åtgärder baserat på kundbeteende och data.
+Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra marknadsföringskampanjer i alla kanaler: e-post, SMS och push-meddelanden. Ni kan kombinera de här kanalaktiviteterna i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer. Dessa kampanjer kan utlösa åtgärder baserat på kundbeteende och data.
 
 Exempel:
 
@@ -92,17 +92,7 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
 1. **Använd regler för begränsning**
 
-   I listrutan **[!UICONTROL Rule set]** väljer du en kanalregeluppsättning för att tillämpa appningsregler på kampanjen. Genom att utnyttja kanalregeluppsättningar kan ni ange frekvensbegränsning efter kommunikationstyp för att förhindra att kunder med liknande meddelanden överbelastas. [Lär dig arbeta med regeluppsättningar](../../conflict-prioritization/rule-sets.md)
-
-1. **Spåra engagemang** (e-post och SMS)
-
-   Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mottagare svarar på dina e-post- eller SMS-leveranser. Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../../reports/campaign-global-report-cja.md)
-
-1. **Aktivera läget Snabb leverans** (push)
-
-   Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabb leverans används när fördröjd leverans av meddelanden är affärskritisk. Du vill till exempel skicka en snabb push-varning för mobiltelefoner, som att få nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../../push/create-push.md#rapid-delivery).
-
-   Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+   I listrutan **[!UICONTROL Rule set]** väljer du en kanalregeluppsättning för att tillämpa appningsregler på kampanjen. Genom att utnyttja kanalregeluppsättningar kan ni ange frekvensbegränsning efter kommunikationstyp för att förhindra att kunder med liknande meddelanden överbelastas. [Lär dig arbeta med regeluppsättningar](../../conflict-prioritization/rule-sets.md).
 
 1. **Skapa ett innehållsexperiment**
 
@@ -114,9 +104,28 @@ Använd fliken **[!UICONTROL Actions]** för att välja en kanalkonfiguration f�
 
    ![bild som visar avsnittet om innehållsexperiment](../assets/channel-experiment.png)
 
+Ytterligare inställningar är tillgängliga beroende på den valda kommunikationskanalen. Expandera avsnitten nedan om du vill ha mer information.
+
++++**Spåra engagemang** (e-post och SMS).
+
+Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mottagare svarar på dina e-post- eller SMS-leveranser. Spåra resultat kan nås från kampanjrapporten när kampanjen har genomförts. [Läs mer om kampanjrapporter](../../reports/campaign-global-report-cja.md)
+
++++
+
++++**Aktivera läget Snabb leverans** (push).
+
+Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabb leverans används när fördröjd leverans av meddelanden är affärskritisk. Du vill till exempel skicka en snabb push-varning för mobiltelefoner, som att få nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../../push/create-push.md#rapid-delivery).
+
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+
++++
+
 När kanalaktiviteten har konfigurerats väljer du fliken **[!UICONTROL Content]** för att definiera dess innehåll.
 
 ## Definiera innehållet {#content}
+
+
+### Skapa meddelandeinnehållet
 
 Växla till fliken **[!UICONTROL Content]** för att skapa meddelandet. Processstegen varierar beroende på den valda kanalen. Lär dig detaljerade steg för att skapa meddelandeinnehåll på följande sidor.
 
@@ -126,9 +135,9 @@ Växla till fliken **[!UICONTROL Content]** för att skapa meddelandet. Processs
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Skapa ett push-meddelande</strong></a></td>
 </tr></table>
 
-## Lägg till personalisering
+### Lägg till personalisering
 
-Personalization i samordnade kampanjer fungerar på liknande sätt som andra **[!UICONTROL Journey Optimizer]**-kampanjer eller resor. Det finns emellertid några viktiga skillnader som är specifika för den orkestrerade arbetsytan.
+Personalization i samordnade kampanjer fungerar på ungefär samma sätt som andra [!DNL Journey Optimizer]-kampanjer eller resor, med några viktiga skillnader som är specifika för den orkestrerade arbetsytan.
 
 När du öppnar personaliseringsredigeraren från en Orchestrated-kampanj innehåller två huvudmappar tillgängliga attribut för personalisering som anges nedan.
 
@@ -146,11 +155,46 @@ När du öppnar personaliseringsredigeraren från en Orchestrated-kampanj inneh�
 
 En detaljerad översikt över hur du använder personaliseringsredigeraren finns i [Kom igång med personalisering](../../personalization/personalize.md).
 
-## Kontrollera och testa innehållet
+### Kontrollera och testa innehållet
 
 När innehållet har skapats kan du använda knappen **[!UICONTROL Simulate Content]** för att förhandsgranska och testa innehållet med testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt. [Läs mer](../../content-management/preview-test.md)
 
 ![bild som visar knappen Simulera innehåll](../assets/channel-simulate.png)
+
+## Bekräfta att meddelandet skickas
+
+Som standard pausas meddelandeleveransen för icke-återkommande orkestrerade kampanjer tills du uttryckligen godkänner sändningen. Bekräfta sändningsbegäran från kanalaktivitetens egenskapspanel när kampanjen har publicerats.
+
+![bild som visar knappen Bekräfta](../assets/confirm-sending.png)
+
+Det går att inaktivera bekräftelsemeddelandet innan den orkestrerade kampanjen publiceras. Om du vill göra det väljer du kanalaktiviteten på arbetsytan för att visa dess egenskaper och aktiverar **[!UICONTROL Send without confirmation]**.
+
+![bild som visar Skicka utan bekräftelseknapp](../assets/send-without-confirmation.png)
+
+## Ange hastighetskontroll {#rate-control}
+
+Med [!DNL Journey Optimizer] kan du aktivera hastighetskontroll för utgående åtgärder i Orchestrated-kampanjer.
+
+Den här funktionen är särskilt användbar för att förhindra överbelastning i system längre fram i kedjan, som landningssidor eller kundtjänstplattformar. Du kan till exempel ange en hastighetsgräns på 165 meddelanden per sekund för att säkerställa stabil leverans utan överväldigande system i efterföljande led.
+
+Så här anger du hastighetskontroll:
+
+1. Välj en utgående kanalaktivitet på arbetsytan och klicka på **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]** eller **[!UICONTROL Edit Push]** beroende på vald kanal.
+
+   ![bild som visar arbetsytan med en e-postaktivitet](../assets/channel-edit.png)
+
+1. Navigera till fliken **[!UICONTROL Schedule]** och aktivera alternativet **[!UICONTROL Throttle delivery]** i avsnittet **[!UICONTROL Delivery settings]**.
+
+   ![Inställningar för hastighetskontroll med begränsat leveransalternativ och leveransfrekvens per sekund](../assets/rate-control.png)
+
+1. Ange önskad **[!UICONTROL Delivery rate]** per sekund.
+
+   * Lägsta tillåtna leveransfrekvens: 1 per sekund.
+   * Högsta leveransfrekvens som stöds: 2 000 per sekund när alternativet Begränsad leverans är aktiverat.
+
+>[!IMPORTANT]
+>
+>När en leveransfrekvens anges är den maximala tidsramen som en kampanjmålgrupp kan genomföra 12 timmar. Om leveransfrekvensen är inställd på ett värde som inte tillåter att alla mottagare får meddelandet inom 12-timmarsgränsen, kommer de återstående profilerna att uteslutas från kampanjen. Du kan se antalet uteslutna profiler i kampanjrapporten.
 
 ## Nästa steg {#next}
 

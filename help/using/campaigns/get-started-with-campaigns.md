@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: kampanj, hur, starta, optimera
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1504'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Innan du arbetar med kampanjer bör du kontrollera att du har följande på plat
 
    1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-  Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users){target="_blank"}.
+  Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"}.
 
   Användaren bör sedan få ett e-postmeddelande som omdirigeras till din instans.
 
@@ -291,7 +291,7 @@ Utforska följande kraftfulla funktioner när ni blir mer bekväma med kampanjer
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Schemaläggning och timing**
 
@@ -301,17 +301,17 @@ Schemalägg kampanjer för specifika datum/tidpunkter, ange återkommande levera
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Klassificeringskontroll**
 
-Begränsa meddelandegenomströmningen för att förhindra överbelastning i system längre fram i kedjan, som landningssidor eller kundtjänstplattformar. (Action- och API-utlösta kampanjer)
+Begränsa meddelandegenomströmningen för att förhindra överbelastning i system längre fram i kedjan, som landningssidor eller kundtjänstplattformar.
 
 [Begränsningar för kontrollfrekvens](create-campaign.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Målgruppsanpassning**
 
@@ -321,7 +321,7 @@ Rikta in er på specifika Adobe Experience Platform-målgrupper med precision oc
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Arbetsflöden för godkännande**
 
@@ -331,7 +331,7 @@ Implementera gransknings- och godkännandeprocesser innan kampanjer publiceras, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
 
 **Tysta timmar**
 
@@ -341,7 +341,7 @@ Följ kundernas önskemål genom att undvika meddelandeleverans under angivna ti
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Optimering**
 

@@ -5,7 +5,7 @@ title: Engagera kunderna genom att surfa
 description: Engagera kunderna genom att surfa
 feature: Use Cases
 version: Campaign Orchestration
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -16,14 +16,14 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Observera att det här användningsexemplet börjar med en publik som redan finns i Experience Platform, närmare bestämt en webbpublik i realtid som samlar in webbläsaraktiviteter när de inträffar. [Läs mer i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started#audiences)
+Observera att det här användningsexemplet börjar med en publik som redan finns i Experience Platform, närmare bestämt en webbpublik i realtid som samlar in webbläsaraktiviteter när de inträffar. [Läs mer i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started#audiences)
 
 **Scheman som behövs för det här användningsfallet:**
 
 * **Mottagare**: används som måldimension, med fält: `email`, `churnprop`
 * **Önsklista**: med fält: `description`, `priceref`, `imageurl`
 
-➡️ [Lär dig konfigurera modellbaserade scheman](gs-schemas.md)
+➡️ [Lär dig hur du konfigurerar relationsscheman ](gs-schemas.md)
 
 >[!ENDSHADEBOX]
 

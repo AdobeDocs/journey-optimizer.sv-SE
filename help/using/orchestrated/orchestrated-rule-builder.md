@@ -5,9 +5,9 @@ title: Arbeta med regelbyggaren
 description: Lär dig hur du skapar regler för dina samordnade kampanjer
 exl-id: fb7a0eb2-b2ff-49fa-af1f-f1c10f219b00
 version: Campaign Orchestration
-source-git-commit: f85fab10da9cea7c8fd8f83c9e01b6ba06a19e8c
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Samordnade kampanjer har en regelbyggare som förenklar processen att filtrera d
 
 Det har också stöd för fördefinierade filter under förhållanden, vilket gör att du enkelt kan förfina frågor samtidigt som du använder avancerade uttryck och operatorer för omfattande målgruppsanpassning och segmenteringsstrategier.
 
-## Åtkomst till regelbyggaren
+## Åtkomst till regelbyggaren {#access}
 
 Regelbyggaren är tillgänglig i alla sammanhang där du behöver definiera regler för att filtrera data.
 
@@ -40,3 +40,7 @@ Regelbyggaren innehåller en central arbetsyta där du skapar frågan och en ege
 * Panelen **[!UICONTROL Rule properties]** innehåller information om din regel. Det gör att du kan utföra olika åtgärder för att kontrollera regeln och se till att den passar dina behov.
 
   Den här rutan visas när du skapar en fråga för att skapa en målgrupp. [Lär dig hur du kontrollerar och validerar din fråga](build-query.md#check-and-validate-your-query)
+
+## Arbeta med fördefinierade filter
+
+Med fördefinierade filter kan du återanvända sparade frågor i regelbyggaren, inklusive versioner med parametrar. En fullständig genomgång av hur du sparar, använder och hanterar fördefinierade filter finns i [Arbeta med fördefinierade filter](predefined-filters.md).

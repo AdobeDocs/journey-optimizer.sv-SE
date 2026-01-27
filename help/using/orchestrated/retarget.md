@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 feature: Monitoring
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
 version: Campaign Orchestration
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Med återmarknadsföring kan ni följa upp med mottagare baserat på hur de svarade på en tidigare Orchestrated-kampanj. Du kan till exempel skicka ett andra e-postmeddelande till mottagare som har tagit emot men inte klickat på det första.
 
-**[!UICONTROL Orchestrated Campaign]** har två huvudattribut för detta:
+**[!UICONTROL Orchestrated Campaign]** innehåller två huvudscheman för detta:
 
 * **[!UICONTROL Message Feedback]**: hämtar leveransrelaterade händelser, t.ex. skickade, öppnade, studsade osv.
 * **[!UICONTROL Email Tracking]**: hämtar användaråtgärder, t.ex. klickar och öppnar.
@@ -28,15 +28,31 @@ Med återmarknadsföring kan ni följa upp med mottagare baserat på hur de svar
 
 ## Skapa en feedbackbaserad återmarknadsföringsregel {#feedback-retarget}
 
-Med den feedbackbaserade återmarknadsföringsregeln kan du återrikta mottagare baserat på meddelandeleveranshändelser som hämtats i attributet **[!UICONTROL Message Feedback]**. Dessa händelser innehåller utfall som meddelanden som skickas, öppnas, studsas eller markeras som skräppost.
+Med den feedbackbaserade återmarknadsföringsregeln kan du återrikta mottagare baserat på meddelandeleveranshändelser som hämtats i schemat **[!UICONTROL Message Feedback]**. Dessa händelser innehåller utfall som meddelanden som skickas, öppnas, studsas eller markeras som skräppost.
 
 Med hjälp av dessa data kan du definiera regler för att identifiera mottagare som har tagit emot ett tidigare meddelande som möjliggör uppföljningskommunikation baserat på specifika leveransstatus.
 
 1. Skapa en ny **[!UICONTROL Orchestrated Campaign]**.
 
-1. Lägg till en **[!UICONTROL Build Audience]**-aktivitet och ange måldimensionen till **[!UICONTROL Recipient (caas)]**.
+1. Lägg till en **[!UICONTROL Build Audience]**-aktivitet och ange måldimensionen till **[!UICONTROL Recipient (caas)]**. Klicka på **[!UICONTROL Continue]**.
 
-1. Klicka på **[!UICONTROL Rule Builder]** i **[!UICONTROL Add Condition]** och välj **[!UICONTROL Message Feedback]** i **[!UICONTROL Attributes Picker]**. Klicka på **[!UICONTROL Confirm]** om du vill skapa ett **meddelande som Feedback finns, till exempel** villkor.
+1. Om du snabbt vill komma igång kan du använda ett inbyggt **[!UICONTROL Campaign Feedback]**-filter för att rikta mottagare baserat på meddelandeleveranshändelser.
+
+   +++ Detaljerad stegvis
+
+   1. Klicka på **[!UICONTROL Rule Builder]** i **[!UICONTROL Select or save a filter]** och välj **[!UICONTROL Campaign feedback]** i listan.
+
+   1. Markera filterregeln och välj den **[!UICONTROL Behavior]** som du vill ha som mål, till exempel **[!UICONTROL Message sent]**.
+
+   1. Klicka på mappikonen ![](assets/do-not-localize/folder-search.svg) för att välja den kampanj som du vill rikta om. Du har två alternativ:
+
+      * **[!UICONTROL Select a specific campaign]**: Välj en viss kampanj i listan för att återrikta mottagare som interagerade med kampanjen.
+
+      * **[!UICONTROL Campaign from transition]**: Referera en kampanj från en tidigare aktivitet i din Orchestrated-kampanj.
+
+   +++
+
+1. Du kan också skapa anpassade regler manuellt. Klicka på **[!UICONTROL Rule Builder]** i **[!UICONTROL Add Condition]** och välj **[!UICONTROL Message Feedback]** i **[!UICONTROL Attributes Picker]**. Klicka på **[!UICONTROL Confirm]** om du vill skapa ett **meddelande som Feedback finns, till exempel** villkor.
 
    ![](assets/retarget_1.png){zoomable="yes"}
 
@@ -99,7 +115,7 @@ Du har nu konfigurerat en återmarknadsföringsregel baserad på feedback för a
 
 ## Skapa en spårningsbaserad regel för återmarknadsföring {#tracking-based}
 
-Spårningsbaserad regel för återmarknadsföring riktar sig till mottagare baserat på deras interaktioner med ett meddelande, med data från attributet **[!UICONTROL Email Tracking]**. Den fångar upp användaråtgärder som e-postöppningar och länkar.
+Spårningsbaserad regel för återmarknadsföring riktar sig till mottagare baserat på deras interaktioner med ett meddelande, med data från schemat **[!UICONTROL Email Tracking]**. Den fångar upp användaråtgärder som e-postöppningar och länkar.
 
 Använd entiteten **[!UICONTROL Email Tracking]** om du vill omdirigera mottagare baserat på meddelandeinteraktioner (t.ex. öppna eller klicka) enligt följande:
 
@@ -107,7 +123,27 @@ Använd entiteten **[!UICONTROL Email Tracking]** om du vill omdirigera mottagar
 
 1. Lägg till en **[!UICONTROL Build Audience]**-aktivitet och ange måldimensionen till **[!UICONTROL Recipient (caas)]** för att fokusera på tidigare mottagare av orkestrerade kampanjer.
 
-1. Klicka på **[!UICONTROL Rule Builder]** i **[!UICONTROL Add Condition]** och välj **[!UICONTROL Email Tracking]** i **[!UICONTROL Attributes Picker]**.
+1. Om du snabbt vill komma igång kan du använda ett inbyggt **[!UICONTROL Campaign Feedback]**-filter för att rikta mottagare baserat på meddelandeleveranshändelser.
+
+   +++ Detaljerad stegvis
+
+   1. Klicka på **[!UICONTROL Rule Builder]** i **[!UICONTROL Select or save a filter]** och välj **[!UICONTROL Campaign feedback]** i listan.
+
+      ![](assets/retarget_11.png){zoomable="yes"}
+
+   1. Markera filterregeln och välj den **[!UICONTROL Behavior]** som du vill ha som mål, till exempel **[!UICONTROL Message opened]** eller **[!UICONTROL Message clicked]**.
+
+      ![](assets/retarget_13.png){zoomable="yes"}
+
+   1. Klicka på mappikonen ![](assets/do-not-localize/folder-search.svg) för att välja den kampanj som du vill rikta om. Du har två alternativ:
+
+      * **[!UICONTROL Select a specific campaign]**: Välj en viss kampanj i listan för att återrikta mottagare som interagerade med kampanjen.
+
+      * **[!UICONTROL Campaign from transition]**: Referera en kampanj från en tidigare aktivitet i din Orchestrated-kampanj.
+
+   +++
+
+1. Du kan också skapa anpassade regler manuellt. Klicka på **[!UICONTROL Rule Builder]** i **[!UICONTROL Add Condition]** och välj **[!UICONTROL Email Tracking]** i **[!UICONTROL Attributes Picker]**.
 
    Klicka på **[!UICONTROL Confirm]** om du vill skapa ett **e-postspårning finns, till exempel** villkor.
 

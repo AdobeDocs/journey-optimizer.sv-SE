@@ -7,9 +7,9 @@ role: User
 level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,11 @@ Du kan också lägga till andra attribut som är tillgängliga i personalisering
 
 Om din beslutspolicy innehåller beslutsposter, inklusive fragment, kan du utnyttja dessa fragment i beslutspolicykoden. [Läs mer om fragment](../content-management/fragments.md)
 
->[!AVAILABILITY]
+>[!CAUTION]
 >
->Den här funktionen är för närvarande endast tillgänglig för den kodbaserade upplevelsekanalen och för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant om du vill veta mer.
+>Den här funktionen är för närvarande bara tillgänglig för den kodbaserade upplevelsekanalen.
+>
+>För närvarande kan bara [uttrycksfragment](../personalization/use-expression-fragments.md) användas. Kapslade fragment (fragment som refererar till andra fragment) stöds inte.
 
 Anta till exempel att du vill visa olika innehåll för flera mobila enhetsmodeller. Se till att du har lagt till fragment som motsvarar de enheterna i beslutsposten som du använder i beslutspolicyn. [Lär dig hur](items.md#attributes).
 
@@ -106,7 +108,7 @@ Kopiera och klistra in kodblocket nedan i beslutspolicykoden. Ersätt `variable`
 
 >[!TAB Följ de detaljerade stegen]
 
-1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **&#x200B;**&#x200B;`{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
+1. Navigera till **[!UICONTROL Helper functions]** och lägg till funktionen **** `{% let variable = expression %} {{variable}}` i kodfönstret, där du kan deklarera variabeln för fragmentet.
 
    ![](assets/decision-let-function.png)
 
@@ -134,7 +136,7 @@ Fragment-ID och referensnyckel väljs från beslutsobjektets **[!UICONTROL Fragm
 
 **Beslutsobjekt och kontextattribut**
 
-Attribut för beslutsobjekt och kontextalattribut stöds inte som standard i [!DNL Journey Optimizer]-fragment. Du kan emellertid använda globala variabler i stället, som beskrivs nedan.
+Attribut för beslutsobjekt och sammanhangsbaserade attribut stöds inte som standard i [!DNL Journey Optimizer]-fragment. Du kan emellertid använda globala variabler i stället, som beskrivs nedan.
 
 Säg att du vill använda variabeln *sport* i ditt fragment.
 

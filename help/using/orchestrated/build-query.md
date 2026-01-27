@@ -5,9 +5,9 @@ title: Bygg din första regel
 description: Lär dig hur du skapar regler för dina samordnade kampanjer
 exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
 version: Campaign Orchestration
-source-git-commit: e8b17fc5a7339092d2b276c36078d8841df28ef6
+source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Så här lägger du till villkor i frågan:
 
 1. Klicka på knappen **Lägg till villkor** för att skapa ett första villkor för frågan.
 
-   Du kan också starta frågan med ett fördefinierat filter. Om du vill göra det klickar du på knappen **[!UICONTROL Select or save filter]** och väljer **[!UICONTROL Select predefined filter]**.
+   Du kan också starta frågan med ett fördefinierat filter. Om du vill göra det klickar du på knappen **[!UICONTROL Select or save filter]** och väljer **[!UICONTROL Select predefined filter]**. Mer information finns i [Arbeta med fördefinierade filter](predefined-filters.md).
 
    ![bild som visar regelbyggaren](assets/rule-builder-add.png)
 
@@ -50,9 +50,13 @@ Så här lägger du till villkor i frågan:
 
    +++ Fördelning av värden
 
-   Analysera värdefördelningen för ett visst attribut i tabellen. Den här funktionen är användbar för att förstå tillgängliga värden, antal och procenttal. Det kan också hjälpa dig att undvika problem som inkonsekvent skiftläge eller stavning när du skapar frågor eller skapar uttryck.
+   Genom att distribuera värden kan du identifiera hur värden används i databasen. Det är praktiskt om du vill förstå de tillgängliga värdena, deras antal och procentandelar. Det kan också hjälpa dig att undvika problem som inkonsekvent skiftläge eller stavning när du skapar frågor eller skapar uttryck.
 
    För attribut med ett stort antal värden visas endast de första tjugo. I sådana fall visas ett **[!UICONTROL Partial load]**-meddelande som indikerar den här begränsningen. Du kan använda avancerade filter för att förfina de visade resultaten och fokusera på specifika värden eller delmängder av data.
+
+   Om du vill skapa ditt villkor snabbare väljer du ett värde och klickar på **[!UICONTROL Select attribute and value]** för att fylla i attributet och värdet i det aktuella villkoret.
+
+   Du kan också kopiera ett värde i Urklipp med bilden ![som visar ikonen för uttrycksredigeraren](assets/do-not-localize/activity-copy.svg) , till exempel för att klistra in den i uttrycksredigeraren.
 
    ![bild som visar distributionen av värdegränssnittet](assets/rule-builder-distribution-values.png)
 
@@ -193,7 +197,7 @@ Verktygsfältet för regelhanterarens arbetsyta innehåller alternativ för att 
 
 Beroende på dina behov kan du behöva skapa mellanliggande grupper av komponenter genom att gruppera komponenterna i en och samma grupp och länka dem tillsammans.
 
-* Om du vill gruppera två befintliga villkor markerar du ett av de två villkoren och klickar på ikonen ![Flytta upp &#x200B;](assets/do-not-localize/rule-builder-icon-up.svg) eller ![Flytta ned markeringsikonen](assets/do-not-localize/rule-builder-icon-down.svg) för att gruppera det med villkoret ovanför eller nedanför.
+* Om du vill gruppera två befintliga villkor markerar du ett av de två villkoren och klickar på ikonen ![Flytta upp ](assets/do-not-localize/rule-builder-icon-up.svg) eller ![Flytta ned markeringsikonen](assets/do-not-localize/rule-builder-icon-down.svg) för att gruppera det med villkoret ovanför eller nedanför.
 
 * Om du vill gruppera ett befintligt villkor med ett nytt, markerar du villkoret, klickar på ![bilden med knappen Fler åtgärder](assets/do-not-localize/rule-builder-icon-more.svg) och väljer **[!UICONTROL Add group]**. Markera det nya attributet som ska läggas till i gruppen och bekräfta sedan.
 
@@ -215,7 +219,7 @@ När du har skapat frågan på arbetsytan kan du kontrollera den med rutan **Reg
 * **Visa resultat:** Visar data från din fråga.
 * **Kodvyn**: Visar en kodbaserad version av frågan i SQL.
 * **Beräkna**: Uppdaterar och visar antalet poster som omfattas av din regel.
-* **Välj eller spara filter**: Välj ett befintligt fördefinierat filter som ska användas på arbetsytan eller spara frågan som ett fördefinierat filter för framtida återanvändning.
+* **Välj eller spara filter**: Välj ett befintligt fördefinierat filter som ska användas på arbetsytan eller spara frågan som ett fördefinierat filter för framtida återanvändning. Om filtret innehåller parametrar anger du värden innan du använder det. Mer information finns i [Arbeta med fördefinierade filter](predefined-filters.md).
 
 <br/>
 
@@ -224,4 +228,3 @@ När regeln är klar klickar du på knappen **[!UICONTROL Confirm]** i för att 
 >[!IMPORTANT]
 >
 >Om du väljer ett fördefinierat filter i rutan Regelegenskaper ersätts den regel som har byggts in på arbetsytan med det valda filtret.
-
