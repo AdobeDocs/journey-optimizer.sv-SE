@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 33bb27ff4181e196d05f320c5b958628a6bd6bf6
+source-git-commit: 79e9023a9b555a75a13c4f5da2db1b7dbb04c344
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1726'
 ht-degree: 1%
 
 ---
@@ -25,15 +25,15 @@ ht-degree: 1%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## 26 förhandsversionsinformation januari {#latest-rn}
 
-**Releasedatum**: 27 januari 2026
+**Releasedatum**: 27-28 januari 2026
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -48,22 +48,6 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <td>
 <p>Med tysta timmar kan du definiera <strong>tidsbaserade undantag</strong> för kanalerna Email, SMS, Push och WhatsApp. De ser till att inga meddelanden skickas under specifika perioder, vilket hjälper dig att uppfylla kundönskemål och krav på regelefterlevnad. Du kan använda tysta timmar genom <strong>regeluppsättningar</strong>, som kan tilldelas enskilda åtgärder i kampanjer eller resor för exakt kontroll.</p>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet). I den här allmänna tillgänglighetsversionen inkluderar funktionen nu möjligheten för kunder att placera en kampanjåtgärd i kö tills tysta timmar har slutförts och möjligheten att förhandsgranska den aktiverade regeln Tysta timmar.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Meddelandekanal för Web Push</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer har nu stöd för <strong>Web Push-meddelanden</strong>, vilket gör att push-kanalen kan användas även utanför mobila enheter. Ni kan leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen hjälper er att engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttjar samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
-<p>Den här funktionen lanserades tidigare i Beta och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 </td>
 </tr>
 </tbody>
@@ -119,27 +103,6 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Verktyg-API:er för självbetjäningsmigrering</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Migreringsverktygs-API:er</strong> är nu tillgängliga för programmässig migrering av beslutshanteringsenheter till Beslutsfattare, med följande innehåll:</p>
-<ul>
-<li>Flexibla migreringsomfång (sandlåda, erbjudande eller beslutsnivå)</li>
-<li>Automatisk beroendeanalys och validering</li>
-<li>Återställningsstöd för slutförda migreringar</li>
-<li>Detaljerade migreringsrapporter med objektmappningar</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Övervakning av anpassade åtgärder</strong><br/></th>
 </tr>
 </thead>
@@ -176,11 +139,9 @@ Förbättringar i den här versionen visas nedan.
 
 * **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att identifiera potentiella problem med läsbarhet, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor.
 
-* **Uppdatera varumärken med nya färgflikar** - Riktlinjer för varumärken hjälper dig att se till att ditt varumärke visas på ett enhetligt sätt på alla kontaktytor. I det nya avsnittet <strong>Färger</strong> definieras standarderna för ditt varumärkes färgsystem, som visar hur färger väljs, ordnas och används i olika upplevelser. Det säkerställer konsekvent användning av primära, sekundära, dekorativa och neutrala färger för att stödja en sammanhängande, tillgänglig och identifierbar varumärkesidentitet.
+* **Uppdatera varumärken med nya färgflikar** - Riktlinjer för varumärken hjälper dig att se till att ert varumärke presenteras på ett enhetligt sätt över alla kontaktytor. I det nya avsnittet <strong>Färger</strong> definieras standarderna för ditt varumärkes färgsystem, som visar hur färger väljs, ordnas och används i olika upplevelser. Det säkerställer konsekvent användning av primära, sekundära, dekorativa och neutrala färger för att stödja en sammanhängande, tillgänglig och identifierbar varumärkesidentitet.
 
 #### Kanaler
-
-* **SMS-webbhooks** - <strong>Webbhooks</strong> stöds nu för alla SMS-providers. Du kan konfigurera varje webkrok baserat på dess avsedda syfte: Inkommande webbhooks för att fånga inkommande meddelanden och Feedback-webbhooks för att ta emot leveranskvitton, statusuppdateringar och andra meddelanderelaterade händelser.
 
 #### Kampanjer
 
@@ -232,45 +193,13 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <table>
 <thead>
 <tr>
-<th><strong>Generering av innehåll i Journey Agent</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Journey Agent</strong>, som drivs av Adobe Experience Platform Agent Orchestrator, finns i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
-<p>Tillgänglighetsdatum: 2 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Beslutsstöd i push-kanal</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Du kan nu anpassa och optimera innehållet i dina push-meddelanden med <strong>beslutande</strong>. Använd <strong>Prioritetsresultat</strong>, formler eller AI-modeller för att visa det bästa innehållet för dina kunder.</p>
-<p>Tillgänglighetsdatum: 3 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Meddelandeexport</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>En ny <strong>meddelandeexportfunktion</strong> är nu tillgänglig för e-post- och SMS-kanaler. Med den här funktionen kan du automatiskt exportera skickat meddelandeinnehåll till en dedikerad Experience Platform-datauppsättning, vilket gör att du kan:</p>
+<p>En ny <strong>meddelandeexportfunktion</strong> kommer att vara tillgänglig för e-post- och SMS-kanaler. Med den här funktionen kan du automatiskt exportera skickat meddelandeinnehåll till en dedikerad Experience Platform-datauppsättning, vilket gör att du kan:</p>
 <ul>
 <li>Uppfyll formella krav (t.ex. HIPAA)</li>
 <li>Arkivera meddelanden om juridiska anspråk och kundvårdsfrågor</li>
@@ -287,13 +216,100 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <table>
 <thead>
 <tr>
+<th><strong>SMS Webhooks</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Webhooks</strong> stöds av alla SMS-leverantörer. Du kan konfigurera varje webkrok baserat på dess avsedda syfte: inkommande webbhooks för att hämta inkommande meddelanden och Feedback-webbhooks för att ta emot leveranskvitton, statusuppdateringar och andra meddelanderelaterade händelser.</p>
+<p>Tillgänglighetsdatum: 28 januari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Meddelandekanal för Web Push</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer stöder <strong>Web Push-meddelanden</strong>, vilket utökar push-kanalen bortom mobilen. Ni kan leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen hjälper er att engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttjar samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
+<p>Den här funktionen lanserades tidigare i Beta och är tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Tillgänglighetsdatum: 28 januari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Verktyg-API:er för självbetjäningsmigrering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>API:er för migreringsverktyg</strong> kommer att vara tillgängliga för programmässig migrering av beslutshanteringsenheter till beslut, med följande innehåll:</p>
+<ul>
+<li>Flexibla migreringsomfång (sandlåda, erbjudande eller beslutsnivå)</li>
+<li>Automatisk beroendeanalys och validering</li>
+<li>Återställningsstöd för slutförda migreringar</li>
+<li>Detaljerade migreringsrapporter med objektmappningar</li>
+</ul>
+<p>Tillgänglighetsdatum: 28 januari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Generering av innehåll i Journey Agent</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Journey Agent</strong> kommer att vara tillgänglig i Journey Optimizer med Adobe Experience Platform Agent Orchestrator och du kan analysera resor via ett naturligt språkgränssnitt. Du kan generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
+<p>Tillgänglighetsdatum: 2 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Beslutsstöd i push-kanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan anpassa och optimera innehållet i dina push-meddelanden med <strong>Beslutsfattning</strong>. Använd <strong>Prioritetsresultat</strong>, formler eller AI-modeller för att visa det bästa innehållet för dina kunder.</p>
+<p>Tillgänglighetsdatum: 3 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>En ny <strong>aktivitet för innehållsbeslut</strong> är nu tillgänglig på arbetsytan för att integrera personaliserade erbjudanden direkt i kundresorna. Med den här aktiviteten kan ni leverera beslutsbaserat innehåll och hänvisa till dessa erbjudanden under hela kundresan, skapa kvalificeringsbaserade förgreningar, i anpassade åtgärder för att skicka erbjudandedata till externa system och i andra aktiviteter för att skapa helt personaliserade kundupplevelser.</p>
+<p>En ny <strong>aktivitet för innehållsbeslut</strong> kommer att vara tillgänglig på arbetsytan för att integrera personaliserade erbjudanden direkt på kundresorna. Med den här aktiviteten kan ni leverera beslutsbaserat innehåll och hänvisa till dessa erbjudanden under hela kundresan, skapa kvalificeringsbaserade förgreningar, i anpassade åtgärder för att skicka erbjudandedata till externa system och i andra aktiviteter för att skapa helt personaliserade kundupplevelser.</p>
 <p>Den här funktionen är tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p>Tillgänglighetsdatum: 3 februari 2026</p>
 </td>
