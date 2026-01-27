@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: dfd95301186c066bb024e8200140a10407b4e79e
+source-git-commit: 33bb27ff4181e196d05f320c5b958628a6bd6bf6
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1707'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## 26 förhandsversionsinformation januari {#latest-rn}
 
@@ -33,7 +33,7 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -111,28 +111,6 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <td>
 <p>Du kan nu lägga till <strong>beslutsprinciper</strong> i SMS-resor och -kampanjer. Beslutspolicyer är behållare för era erbjudanden som utnyttjar beslutsmotorn för att dynamiskt returnera det bästa innehållet för varje målgruppsmedlem.</p>
 <p>Den här funktionen är tillgänglig i begränsad tillgänglighet för en uppsättning organisationer. Kontakta Adobe.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Meddelandeexport</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>En ny <strong>meddelandeexportfunktion</strong> är nu tillgänglig för e-post- och SMS-kanaler. Med den här funktionen kan du automatiskt exportera skickat meddelandeinnehåll till en dedikerad Experience Platform-datauppsättning, vilket gör att du kan:</p>
-<ul>
-<li>Uppfyll formella krav (t.ex. HIPAA)</li>
-<li>Arkivera meddelanden om juridiska anspråk och kundvårdsfrågor</li>
-<li>Bevara kopior av personaliserat innehåll som skickas till enskilda personer</li>
-</ul>
-<p>Poster sparas i datauppsättningen för export av AJO-meddelanden i 7 kalenderdagar från intag. Under den här kvarhållningsperioden kan du exportera data till din egen lagring via Experience Platform destinationer. Funktionen är aktiverad på kanalkonfigurationsnivå, vilket ger dig detaljkontroll över vilka meddelanden som exporteras.</p>
-<p>Den här funktionen är bara tillgänglig för e-post- och SMS-kanalen, för organisationer som har köpt tillägget för meddelandeexport. Kontakta din Adobe-representant om du vill veta mer.</p>
 </td>
 </tr>
 </tbody>
@@ -278,6 +256,29 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <td>
 <p>Du kan nu anpassa och optimera innehållet i dina push-meddelanden med <strong>beslutande</strong>. Använd <strong>Prioritetsresultat</strong>, formler eller AI-modeller för att visa det bästa innehållet för dina kunder.</p>
 <p>Tillgänglighetsdatum: 3 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Meddelandeexport</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>En ny <strong>meddelandeexportfunktion</strong> är nu tillgänglig för e-post- och SMS-kanaler. Med den här funktionen kan du automatiskt exportera skickat meddelandeinnehåll till en dedikerad Experience Platform-datauppsättning, vilket gör att du kan:</p>
+<ul>
+<li>Uppfyll formella krav (t.ex. HIPAA)</li>
+<li>Arkivera meddelanden om juridiska anspråk och kundvårdsfrågor</li>
+<li>Bevara kopior av personaliserat innehåll som skickas till enskilda personer</li>
+</ul>
+<p>Poster sparas i datauppsättningen för export av AJO-meddelanden i 7 kalenderdagar från intag. Under den här kvarhållningsperioden kan du exportera data till din egen lagring via Experience Platform destinationer. Funktionen är aktiverad på kanalkonfigurationsnivå, vilket ger dig detaljkontroll över vilka meddelanden som exporteras.</p>
+<p>Den här funktionen är bara tillgänglig för e-post- och SMS-kanalen, för organisationer som har köpt tillägget för meddelandeexport. Kontakta din Adobe-representant om du vill veta mer.</p>
+<p>Tillgänglighetsdatum: 28 januari 2026</p>
 </td>
 </tr>
 </tbody>
