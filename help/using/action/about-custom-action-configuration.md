@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: bd7ed127c09e24dc1b29c4fcdecb8a2fd70c9009
+source-git-commit: 5213c60df3494c43a96d9098593a6ab539add8bb
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1971'
 ht-degree: 1%
 
 ---
@@ -163,7 +163,7 @@ Adobe Journey Optimizer stöder TLS 1.3 som standard för anpassade åtgärder. 
 
 Du kan använda mTLS (Mutual Transport Layer Security) för att säkerställa förbättrad säkerhet vid utgående anslutningar till anpassade Adobe Journey Optimizer-åtgärder. mTLS är en heltäckande säkerhetsmetod för ömsesidig autentisering som ser till att båda parter delar information är de som gör anspråk på att vara innan data delas. mTLS innehåller ytterligare ett steg jämfört med TLS, där servern också frågar efter klientens certifikat och verifierar det i slutet.
 
-Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
+Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
 ## Definiera nyttolastparametrarna {#define-the-message-parameters}
 
@@ -175,7 +175,13 @@ Du kan definiera nyttolastparametern så som beskrivs nedan:
 
    ![](assets/null-values.png){width="70%" align="left"}
 
-1. Klistra in ett exempel på nyttolasten som returneras av anropet i avsnittet **[!UICONTROL Response]**. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Mer information om hur du använder API-anropssvar i anpassade åtgärder finns på [den här sidan](../action/action-response.md).
+1. I avsnittet **[!UICONTROL Response]** klistrar du in ett exempel på nyttolasten som returneras när anropet lyckas. Det här fältet är valfritt och tillgängligt för alla anropsmetoder. Mer information om hur du använder API-anropssvar i anpassade åtgärder finns på [den här sidan](../action/action-response.md).
+
+   ![](assets/response-values.png){width="70%" align="left"}
+
+1. (Valfritt) Välj **[!UICONTROL Define a failure response payload]** om du vill aktivera nyttolastfältet för felsvar. När det här alternativet är aktiverat använder du avsnittet **[!UICONTROL Error Response]** för att klistra in ett exempel på nyttolasten som returneras när anropet misslyckas. Samma krav gäller som för svarsnyttolasten (fälttyper och format). Lär dig hur du kan utnyttja nyttolasten för felsvar på resor [här](../action/action-response.md).
+
+   ![](assets/response-values.png){width="70%" align="left"}
 
 >[!NOTE]
 >
@@ -184,7 +190,7 @@ Du kan definiera nyttolastparametern så som beskrivs nedan:
 
 ![](assets/customactionpayloadmessage2.png)
 
-I fältkonfigurationen måste du:
+I den här fältkonfigurationen måste du:
 
 * Välj parametertyp, t.ex. sträng, heltal osv.
 

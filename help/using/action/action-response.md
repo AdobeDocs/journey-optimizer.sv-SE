@@ -9,10 +9,10 @@ role: Developer, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: d88daa58-20af-4dac-ae5d-4c10c1db6956
-source-git-commit: 6976f2b1b8b95f7dc9bffe65b7a7ddcc5dab5474
+source-git-commit: 5213c60df3494c43a96d9098593a6ab539add8bb
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 3%
+source-wordcount: '844'
+ht-degree: 2%
 
 ---
 
@@ -94,7 +94,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. Skapa den anpassade åtgärden. Se [den här sidan](../action/about-custom-action-configuration.md).
 
-1. Klicka i fältet **Svar**.
+1. Klicka i fältet **Svar** (slutfört svar).
 
    ![](assets/action-response2.png){width="80%" align="left"}
 
@@ -111,6 +111,16 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
    Varje gång API anropas hämtas alla fält som ingår i nyttolastexemplet.
 
+1. (Valfritt) Aktivera en nyttolast för felsvar för att hämta det format som returneras när anropet misslyckas och klistra sedan in ett exempel på nyttolast. Det gör du genom att välja **Definiera en nyttolast för felsvar** i den anpassade åtgärdskonfigurationen. Läs mer om hur du konfigurerar nyttolastfälten i [Konfigurera en anpassad åtgärd](../action/about-custom-action-configuration.md).
+
+   ```
+   {
+   "errorResponse" : "customer not found"
+   }
+   ```
+
+   Nyttolasten för felsvar är bara tillgänglig om du aktiverar den i den anpassade åtgärdskonfigurationen.
+
 1. Vi lägger också till customerID som frågeparameter.
 
    ![](assets/action-response9.png){width="80%" align="left"}
@@ -120,6 +130,8 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 ## Utnyttja svarsalternativen under en resa {#response-in-journey}
 
 Lägg bara till den anpassade åtgärden på en resa. Du kan sedan utnyttja svarsnyttolastfälten under förhållanden, andra åtgärder och meddelandepersonalisering.
+
+Om du har definierat en nyttolast för felsvar visas den under **Sammanhangsberoende attribut** > **Journey Orchestration** > **Åtgärder** > `<action name>` > **errorResponse**. Du kan använda den i timeout- och felgrenen för att driva reservlogik och felhantering.
 
 Du kan till exempel lägga till ett villkor för att kontrollera antalet förmånspoäng. När personen kommer in på restaurangen skickar din lokala slutpunkt ett samtal med profilens lojalitetsinformation. Du kan skicka en push-funktion om profilen är en guldkund. Om ett fel upptäcks i samtalet skickar du en anpassad åtgärd till systemadministratören.
 
@@ -150,6 +162,12 @@ Du kan till exempel lägga till ett villkor för att kontrollera antalet förmå
    @action{ActionLoyalty.jo_status_code} == "http_400"
    ```
 
+   Om en nyttolast för felsvar har definierats kan du även ange dess fält som mål, till exempel:
+
+   ```
+   @action{ActionLoyalty.errorResponse.errorResponse} == "customer not found"
+   ```
+
    ![](assets/action-response7.png)
 
 1. Lägg till en anpassad åtgärd som ska skickas till din organisation.
@@ -158,7 +176,7 @@ Du kan till exempel lägga till ett villkor för att kontrollera antalet förmå
 
 ## Loggar för testläge {#test-mode-logs}
 
-I testläge har du åtkomst till statusloggar som är relaterade till anpassade åtgärdssvar. Om du har definierat anpassade åtgärder med svar under din resa, visas ett **actionsHistory** -avsnitt i loggarna med den nyttolast som returneras av den externa slutpunkten (som ett svar från den anpassade åtgärden). Detta kan vara mycket användbart när det gäller felsökning.
+I testläge har du åtkomst till statusloggar som är relaterade till anpassade åtgärdssvar. Om du har definierat anpassade åtgärder med svar under din resa, visas ett **actionsHistory** -avsnitt i loggarna med den nyttolast som returneras av den externa slutpunkten (som ett svar från den anpassade åtgärden). När en nyttolast för felsvar definieras inkluderas den för misslyckade anrop. Detta kan vara mycket användbart när det gäller felsökning.
 
 ![](assets/action-response12.png)
 
@@ -174,6 +192,8 @@ Här är möjliga värden för det här fältet:
 * internt fel: **internalError**
 
 Ett åtgärdsanrop hanteras av fel när den returnerade http-koden är större än 2xx eller om ett fel inträffar. I sådana fall skickas resan till den särskilda tidsgränsen eller felavdelningen.
+
+Om en nyttolast för felsvar har konfigurerats för den anpassade åtgärden visas fälten under noden **errorResponse** för misslyckade anrop. Om ingen nyttolast för felsvar har konfigurerats är den noden inte tillgänglig.
 
 >[!WARNING]
 >
