@@ -23,7 +23,7 @@ Observera att det här användningsexemplet börjar med en publik som redan finn
 * **Mottagare**: används som måldimension, med fält: `email`, `churnprop`
 * **Önsklista**: med fält: `description`, `priceref`, `imageurl`
 
-➡️ [Lär dig hur du konfigurerar relationsscheman ](gs-schemas.md)
+➡️ [Lär dig hur du konfigurerar relationsscheman &#x200B;](gs-schemas.md)
 
 >[!ENDSHADEBOX]
 

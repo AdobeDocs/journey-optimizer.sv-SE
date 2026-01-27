@@ -25,7 +25,7 @@ I det här exemplet används ett **Önsklisteschema**, men samma metod gäller f
 * **Produkt**: med fält: `description`, `priceref`, `imageurl`
 * **AbandonedCarts** (valfritt): med fält: `lastmodified`
 
-➡️ [Lär dig hur du konfigurerar relationsscheman ](gs-schemas.md)
+➡️ [Lär dig hur du konfigurerar relationsscheman &#x200B;](gs-schemas.md)
 
 >[!ENDSHADEBOX]
 
