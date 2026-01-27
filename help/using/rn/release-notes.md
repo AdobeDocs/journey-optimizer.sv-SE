@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: c0ed4d941863730e6bc8dbea771cba94b305dd5b
+source-git-commit: dfd95301186c066bb024e8200140a10407b4e79e
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1704'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## 26 förhandsversionsinformation januari {#latest-rn}
 
@@ -33,7 +33,7 @@ På grund av den här modellen uppdateras versionsinformationen mellan månadsve
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -184,7 +184,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p>Journey Create Agent gör det möjligt för Journey Optimizer-användare att skapa och konfigurera marknadsföringsresor med ett <strong>naturligt språkgränssnitt</strong>. Praktikanter kan snabbt skapa resor genom att beskriva sina behov på samtal, effektivisera framtagningen av resor och låta marknadsförarna fokusera på strategi i stället för teknisk konfiguration.</p>
+<p>Journey Agent har nu funktioner för att skapa, vilket gör det möjligt för Journey Optimizer-användare att skapa och konfigurera marknadsföringsresor via ett <strong>naturligt språkgränssnitt</strong>. Praktikanter kan snabbt skapa resor genom att beskriva sina krav på samtal. Detta effektiviserar processen att skapa kundresan, så att marknadsförarna kan fokusera på strategi snarare än teknisk konfiguration.</p>
 </td>
 </tr>
 </tbody>
