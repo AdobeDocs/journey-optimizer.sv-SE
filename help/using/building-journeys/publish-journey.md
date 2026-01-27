@@ -10,9 +10,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: e0ca8aef-4f1d-4631-8c34-1692d96e8b51
 version: Journey Orchestration
-source-git-commit: 01ab3f5236acb914c3efe71ffe3d5281d1126589
+source-git-commit: 3866cedf2c264d94e981a43b649073aa1bdcd4f2
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 1%
 # Publicera din resa {#publishing-the-journey}
 
 Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att komma in på resan. Innan du publicerar din resa kontrollerar du att den är giltig och att inga fel har uppstått. Du kan inte publicera en resa med fel.
+
+>[!NOTE]
+>
+>När du sparar eller publicerar en resa validerar Journey Optimizer den totala transportnyttolaststorleken och kan varna eller blockera publicering om du närmar dig eller överskrider gränsen. Läs mer i [Storleksvalidering för nyttolast på resan](../start/guardrails.md#journey-payload-size).
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
@@ -90,4 +94,4 @@ När du publicerar en ny version av en resa avslutas den tidigare versionen auto
 
 Lär dig hur du publicerar en resa i den här videon:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427940?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)
