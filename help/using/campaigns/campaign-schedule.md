@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: b183eeb8-606f-444d-9302-274f159c3847
-source-git-commit: bc779f732b865d5c178141f0b660d5c75f95a237
+source-git-commit: e6aa361229f068c475732c715160b7c644189e51
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,46 @@ Använd fliken **[!UICONTROL Schedule]** för att definiera kampanjschemat.
 
 ## Ange startdatum för kampanj
 
-Åtgärdskampanjer startar som standard när de aktiveras manuellt och avslutas så snart meddelandet har skickats en gång.
+Åtgärdskampanjer startar som standard när de aktiveras manuellt och avslutas så snart meddelandet har skickats en gång. Om du inte vill köra kampanjen direkt efter aktiveringen kan du ange ett datum och en tidpunkt då meddelandet ska skickas i avsnittet **[!UICONTROL Campaign start]**.
 
-Om du inte vill köra kampanjen direkt efter aktiveringen kan du ange ett datum och en tidpunkt då meddelandet ska skickas i avsnittet **[!UICONTROL Campaign start]**.
+När du schemalägger kampanjer i [!DNL Adobe Journey Optimizer] måste du se till att startdatumet/starttiden är i linje med den önskade första leveransen. Om den initiala schemalagda tiden redan har passerat för återkommande kampanjer kommer kampanjerna att föras över till nästa tillgängliga tidsrymd enligt reglerna för återkommande kampanjer.
 
 ![](assets/campaign-start.png)
 
->[!NOTE]
+## Skicka vid mottagarens lokala tid {#profile-timezone}
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_schedule_profile_timezone"
+>title="Använd profilens tidszon"
+>abstract="Skicka meddelanden baserat på varje mottagares tidszon. Alla mottagare får meddelandet vid samma lokala tidpunkt, oavsett geografisk plats. Systemet använder fältet&quot;timeZone&quot; från Adobe Experience Platform-profiler, med kampanjskaparens tidszon som reserv."
+
+När du schemalägger en kampanj för ett visst datum och en viss tid kan du välja att skicka meddelanden baserat på varje mottagares profiltidszon. Detta garanterar att alla mottagare får meddelandet på samma lokala tid, oavsett geografisk plats.
+
+Om du t.ex. schemalägger en kampanj att skickas kl. 9.00 med tidszon för profiler, får mottagarna i New York (ET) den kl. 9.00 ET, medan mottagarna i Los Angeles (PT) får den kl. 9.00 PT.
+
+>[!AVAILABILITY]
 >
->När du schemalägger kampanjer i [!DNL Adobe Journey Optimizer] måste du se till att startdatumet/starttiden är i linje med den önskade första leveransen. Om den initiala schemalagda tiden redan har passerat för återkommande kampanjer kommer kampanjerna att föras över till nästa tillgängliga tidsrymd enligt reglerna för återkommande kampanjer.
+>Den här funktionen är begränsad. Kontakta din Adobe-representant för att få åtkomst.
+>
+>Schemaläggning med tidszoner för profiler är endast tillgängligt för dessa utgående kanaler: Email, Push, SMS, WhatsApp och LINE.
+
+Så här aktiverar du tidszonsplanering för profiler:
+
+1. I avsnittet **[!UICONTROL Campaign start]** anger du datum och tid när meddelandet ska skickas.
+
+1. Aktivera alternativet **[!UICONTROL Use profile timezone]**.
+
+   ![](assets/campaign-profile-timezone.png)
+
+**Så här fungerar det:**
+
+Systemet använder fältet `profile.timeZone` från varje mottagares Adobe Experience Platform-profil för att fastställa den lokala tidszonen. Om en profil inte har något tidszonsvärde används den tidszon som kampanjen skapades i som reserv.
+
+Kampanjen behåller statusen **Live** medan meddelanden levereras över alla tidszoner. När alla tidszoner har bearbetats ändras kampanjstatusen till **Slutförd**.
+
+**Tidszonsidentifierare som stöds:**
+
+Journey Optimizer validerar värdet `profile.timeZone` mot IANA-standardidentifierare för tidszon. Identifierare är skiftlägeskänsliga och måste matcha det officiella IANA-namnet. Förskjutningar kan ändras över tid på grund av sommarregler och historiska uppdateringar. I [IANA-tidszonsdatabasen](https://www.iana.org/time-zones){_blank} finns en officiell lista över identifierare.
 
 ## Ange en körningsfrekvens
 
