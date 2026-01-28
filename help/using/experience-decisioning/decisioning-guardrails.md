@@ -6,10 +6,10 @@ role: User
 level: Intermediate
 exl-id: 73548973-ff8d-4d6c-b383-dd3679fa159a
 version: Journey Orchestration
-source-git-commit: 3fa90fa707b562ecf2160ec980520bc8bc267a21
+source-git-commit: 57017310f5ed34e447c47babe288b28186809f6e
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 6%
+source-wordcount: '272'
+ht-degree: 5%
 
 ---
 
@@ -26,6 +26,15 @@ Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsn
 | Kodbaserad API-begäran för upplevelser med beslutspolicy med Edge segmentering | 1500 |
 | Kodbaserad API-begäran för upplevelser med beslutspolicy som inte använder Edge-segmentering | 5000 |
 | Max antal yt-URI:er per Edge-beslutsbegäran | 30 |
+
+## Beslutsobjekt {#decision-items}
+
+| Guardrail | Gräns |
+| ------- | ------- |
+| Totalt antal beslutsartiklar | 10 kB |
+| Maximal storlek på objekt inklusive attribut (1 kB), maximalt 30 attribut | 1 kB |
+| Maximal artikelrepresentationsstorlek (totalt för alla placeringar) | 1 kB |
+| Frekvensregler - maximalt antal regler per erbjudande | 10 |
 
 ## Artikelsamlingar {#item-collections}
 
@@ -65,10 +74,8 @@ Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsn
 | Guardrail | Gräns |
 | ------- | ------- |
 | Antal anpassade attribut per katalogschema för erbjudanden | 100 |
-| Totalt antal erbjudanden | 10 kB |
 | Totalt antal placeringar | 1 K |
 | AI-rankningsmodell | 5 |
-| Frekvensregler - maximalt antal regler per erbjudande | 10 |
 
 ## Konfigurationer {#configurations}
 
