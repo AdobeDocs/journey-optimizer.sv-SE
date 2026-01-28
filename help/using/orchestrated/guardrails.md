@@ -5,9 +5,9 @@ title: Samordnade kampanjer skyddar mot detaljer och begränsningar
 description: Läs mer om säkra kampanjer och begränsningar
 exl-id: 82744db7-7358-4cc6-a9dd-03001759fef7
 version: Campaign Orchestration
-source-git-commit: 059670c143595b9cacdf7e82a8a5c3efda78f30b
+source-git-commit: 266bf3afde663b17aedce5fb51e7c5f424fee9ad
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Nedan visas säkerhetsbeskrivningar och begränsningar när du använder orkestr
 
 * Det genomsnittliga antalet attribut per schema **får inte överstiga 50 kolumner** för att upprätthålla hanterbarhet och prestanda.
 
-* Relationsscheman kan inte aktiveras för Adobe Experience Platform **profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Relationsscheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
+* Relationsscheman kan inte aktiveras för Adobe Experience Platform **profiler**. Endast XDM-standardscheman stöds för Adobe Experience Platform **Profiles**. Relationsscheman kan aktiveras för samordnade kampanjer eller åtgärdskampanjer. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile)
 
 ### Datainhämtning
 
@@ -91,4 +91,4 @@ Nedan visas säkerhetsbeskrivningar och begränsningar när du använder orkestr
 
 ## Kanalbegränsningar
 
-Endast SMS-, push- och e-postkanaler stöds i samordnade kampanjer.
+Endast SMS-, Push-, Email- och Direct mail-kanaler stöds i samordnade kampanjer.

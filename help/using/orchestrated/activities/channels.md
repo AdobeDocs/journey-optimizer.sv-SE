@@ -5,9 +5,9 @@ title: Lägga till en kanalaktivitet i en flerstegskampanj
 description: Lär dig hur du lägger till en kanalaktivitet i en flerstegskampanj
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 version: Campaign Orchestration
-source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
+source-git-commit: 266bf3afde663b17aedce5fb51e7c5f424fee9ad
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ UNUSED IDs in BJ
 >title="Aktivitet för direktreklam"
 >abstract="Aktiviteten Direktutskick underlättar direktutskick inom din samordnade kampanj, både för enstaka och återkommande meddelanden. Den automatiserar processen för att generera extraheringsfilen som krävs av direktreklamleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data."
 
-Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra marknadsföringskampanjer i alla kanaler: e-post, SMS och push-meddelanden. Ni kan kombinera de här kanalaktiviteterna i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer. Dessa kampanjer kan utlösa åtgärder baserat på kundbeteende och data.
+Med [!DNL Adobe Journey Optimizer] kan du automatisera och köra marknadsföringskampanjer över flera kanaler - e-post, SMS, push-meddelanden och direktreklam. Ni kan kombinera de här kanalaktiviteterna i kampanjarbetsytan för att skapa flerkanaliga samordnade kampanjer. Dessa kampanjer kan utlösa åtgärder baserat på kundbeteende och data.
 
 Exempel:
 
-* Skicka en välkomstserie via e-post, SMS och push.
+* Skicka en välkomstserie via e-post, SMS, push och direktreklam.
 * Skicka ett uppföljningsmejl efter köpet.
 * Skicka personliga födelsedagshälsningar via SMS.
 
@@ -62,7 +62,7 @@ Genom att använda kanalaktiviteter kan ni skapa omfattande och personaliserade 
 
 >[!CAUTION]
 >
->Endast SMS-, push- och e-postkanaler stöds i samordnade kampanjer.
+>Endast SMS-, Push-, Email- och Direct mail-kanaler stöds i samordnade kampanjer.
 
 ## Lägga till en kanalaktivitet och definiera dess egenskaper {#add}
 
@@ -70,11 +70,11 @@ Genom att använda kanalaktiviteter kan ni skapa omfattande och personaliserade 
 >
 >Innan du lägger till en kanalaktivitet definierar du målgruppen med en [Skapa målgrupp](build-audience.md) eller en [Läs målgrupp](read-audience.md) -aktivitet.
 
-1. Lägg till en kanalaktivitet på arbetsytan. De tillgängliga kanalaktiviteterna är **[!UICONTROL Email]**, **[!UICONTROL SMS]** och **[!UICONTROL Push]**.
+1. Lägg till en kanalaktivitet på arbetsytan. De tillgängliga kanalaktiviteterna är **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push]** och **[!UICONTROL Direct mail]**.
 
    ![bild som visar arbetsytan med tillgängliga aktiviteter](../assets/channel-add.png)
 
-1. Markera aktiviteten och klicka på **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]** eller **[!UICONTROL Edit Push]** beroende på vald kanal.
+1. Markera aktiviteten och klicka på **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]** eller **[!UICONTROL Edit direct mail]** beroende på vald kanal.
 
    ![bild som visar arbetsytan med en e-postaktivitet](../assets/channel-edit.png)
 
@@ -116,7 +116,7 @@ Använd avsnittet **[!UICONTROL Action tracking]** för att spåra hur dina mott
 
 Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket snabba push-meddelanden som skickas i stora volymer via kampanjer. Snabb leverans används när fördröjd leverans av meddelanden är affärskritisk. Du vill till exempel skicka en snabb push-varning för mobiltelefoner, som att få nyheter till användare som har installerat din nyhetskanalapp. Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
@@ -132,7 +132,7 @@ Växla till fliken **[!UICONTROL Content]** för att skapa meddelandet. Processs
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;" >
 <td><a href="../../email/create-email.md"><img alt="e-post" src="../../channels/assets/do-not-localize/email.png"></a><br/><a href="../../email/create-email.md"><strong>Skapa ett e-postmeddelande</strong></a></td>
 <td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../sms/create-sms.md"><strong>Skapa ett SMS</strong></a></td>
-<td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Skapa ett push-meddelande</strong></a></td>
+<td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Skapa ett push-meddelande</strong></a></td><td><a href="../../direct-mail/create-direct-mail.md"><img alt="direktreklam" src="../../channels/assets/do-not-localize/direct-mail.jpg"></a><a href="../../direct-mail/create-direct-mail.md"><strong>Skapa direktreklam</strong></a></td>
 </tr></table>
 
 ### Lägg till personalisering
