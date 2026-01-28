@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: 217c7d1aead043e1978c8e0dd40190f789368fd0
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
 
@@ -207,6 +207,10 @@ Du kan välja valfritt objekt i listan, som visar alla beslutsobjekt som har ska
 ## Granska och spara beslutsprocessen {#review}
 
 När du har konfigurerat en urvalsstrategi och lagt till reserverbjudanden klickar du på **[!UICONTROL Next]** för att granska och spara din beslutspolicy och sedan på **[!UICONTROL Create]** för att bekräfta att principen har skapats.
+
+>[!IMPORTANT]
+>
+>När en beslutspolicy väl har skapats kan det ta upp till 15 minuter att sprida ändringar i den över alla dataområden, och upp till 30 minuter för Kanada. Detta inkluderar ändringar som att lägga till en ny beslutspost i en samling, ändra en regel i en artikel, ändra artikelinnehåll eller uppdatera en formel.
 
 Du kan redigera eller ta bort en beslutsprincip när som helst med hjälp av ellipsknappen i personaliseringsredigeraren, eller på menyn **[!UICONTROL Decisioning]** i komponentens egenskapspanel.
 
