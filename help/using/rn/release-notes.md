@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 0706cb23bb41aff56984d7723df22c5a07bbe51d
+source-git-commit: d819b559e335ed743e1835edb170bca6e6653a4d
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1863'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation januari 26 {#latest-rn}
 
@@ -35,7 +35,7 @@ Avsnitten [Funktioner](#jan-26-01-features) och [Förbättringar](#jan-26-01-imp
 
 <!-- **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date. 
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -110,24 +110,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Meddelandekanal för Web Push</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer stöder <strong>Web Push-meddelanden</strong>, vilket utökar push-kanalen bortom mobilen. Ni kan leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen hjälper er att engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttjar samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
-<p>Mer information finns i den <a href="../push/push-configuration-web.md">detaljerade dokumentationen</a>.</p>
-<p>Den här funktionen lanserades tidigare i Beta och är tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Tillgänglighetsdatum: 28 januari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 ### Förbättringar {#jan-26-01-improv}
 
 #### Experience Decision
@@ -166,10 +148,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Förhindra självgodkännande för resor och kampanjer** - Ett alternativ lades till när en godkännandeprincip skapades eller ställdes in för att förhindra att den som skapar kampanjen godkänner sina egna objekt. [Läs mer](../test-approve/approval-policies.md)
 
-#### AI-assistenten
-
-* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du utvärdera den övergripande <strong>innehållskvaliteten</strong> för att identifiera potentiella problem med läsbarhet, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner eller strukturella luckor. Tillgänglighetsdatum: 28 januari 2026.
-
 ## Kommer snart {#jan-26-01-coming-soon}
 
 Följande funktioner och förbättringar planeras släppas under de närmaste dagarna. **Informationen kan komma att ändras**. Uppdaterade länkar, skärmar och dokumentation delas när uppdateringarna är klara.
@@ -193,6 +171,23 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 </ul>
 <p>Poster sparas i datauppsättningen för export av AJO-meddelanden i 7 kalenderdagar från intag. Under den här kvarhållningsperioden kan du exportera data till din egen lagring via Experience Platform destinationer. Funktionen är aktiverad på kanalkonfigurationsnivå, vilket ger dig detaljkontroll över vilka meddelanden som exporteras.</p>
 <p>Den här funktionen är bara tillgänglig för e-post- och SMS-kanalen, för organisationer som har köpt tillägget för meddelandeexport. Kontakta din Adobe-representant om du vill veta mer.</p>
+<p>Tillgänglighetsdatum: 28 januari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Meddelandekanal för Web Push</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer stöder <strong>Web Push-meddelanden</strong>, vilket utökar push-kanalen bortom mobilen. Ni kan leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen hjälper er att engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttjar samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
+<p>Den här funktionen lanserades tidigare i Beta och är tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p>Tillgänglighetsdatum: 28 januari 2026</p>
 </td>
 </tr>
@@ -338,6 +333,10 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 </table>
 
 ### Förbättringar
+
+* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du utvärdera den övergripande <strong>innehållskvaliteten</strong> för att identifiera potentiella problem med läsbarhet, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner eller strukturella luckor. Tillgänglighetsdatum: 28 januari 2026.
+
+* **Uppdatera varumärken med nya färgflikar** - Riktlinjer för varumärket hjälper dig att se till att ert varumärke presenteras på ett enhetligt sätt över alla kontaktytor. Det nya avsnittet <strong>Färger</strong> definierar standarderna för ditt varumärkes färgsystem och visar hur färger väljs, ordnas och används i olika upplevelser. Det kommer att säkerställa en konsekvent användning av primära, sekundära, dekorativa och neutrala färger för att stödja en sammanhängande, tillgänglig och identifierbar varumärkesidentitet. Tillgänglighetsdatum: 28 januari 2026.
 
 * **SMS-webbhooks** - <strong>Webbhooks</strong> stöds av alla SMS-providers. Du kan konfigurera varje webkrok baserat på dess avsedda syfte: inkommande webbhooks för att hämta inkommande meddelanden och Feedback-webbhooks för att ta emot leveranskvitton, statusuppdateringar och andra meddelanderelaterade händelser. Tillgänglighetsdatum: 28 januari 2026.
 
