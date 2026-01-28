@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
-source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
+source-git-commit: 4ce83c9cd3f70462c977db6e872a7ac51ea0e006
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '659'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home)
+>Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 
 Med godkännandeprinciper kan administratörer upprätta en valideringsprocess för resor och kampanjer. Det här systemet anger specifika villkor som avgör om en resa eller kampanj kräver godkännande. Dessa profiler kan variera i komplexitet. De kan helt enkelt kräva att alla kampanjer granskas av en viss användare eller ett visst team, eller fastställa kriterier baserat på vem som skapade kampanjen.
 
@@ -38,6 +38,11 @@ Du kan rikta in godkännandepolicyer med hjälp av flexibla kriterier som taggar
 >id="ajo_permissions_approval_policy"
 >title="Ny godkännandeprincip"
 >abstract="På den här skärmen anger du namnet och väljer sammanhang för godkännandeprincipen, skapar sedan villkoren för att avgöra vem som kan initiera godkännandebegäran och vem som kan validera den."
+
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_self_approval"
+>title="Blockera självgodkännande"
+>abstract="Aktivera det här alternativet om du vill hindra användare från att godkänna egna godkännandebegäranden, även när de tillhör en användargrupp eller roll som har utsetts till granskare."
 
 Så här skapar du en godkännandeprincip:
 
