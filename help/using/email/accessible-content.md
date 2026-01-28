@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, tillgänglighet
 exl-id: 78011ec0-a3b6-4d4e-ab4b-9da032c283a2
-source-git-commit: a5dd21377a26debb0aa3174fafb29c0532562c63
+source-git-commit: 3f363a006ed25c07f3ea5b516f5fc306b230d029
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1641'
 ht-degree: 0%
 
 ---
@@ -131,6 +131,8 @@ Om du vill verifiera innehållets tillgänglighet kan du använda testfunktioner
 * Använd alternativet [Återgivning via e-post](../content-management/rendering.md) som använder Litmus för att simulera dina designer för de vanligaste e-postklienterna (Apple Mail, Gmail, Outlook) och se om text, färger och bilder gör ditt innehåll tillgängligt. <!--Litmus includes accessibility testing-->
 
 * Skicka korrektur för att testa återgivningen av materialet innan det skickas till den verkliga målgruppen. [Lär dig hur](../content-management/proofs.md)
+
+* Validera innehållskvaliteten för att utvärdera läsbarhet, innehållets enhetlighet och övergripande effektivitet. [Lär dig hur](../content-management/brands-score.md#validate-quality)
 
 ![](assets/accessible-simulate.png){width="90%"}
 

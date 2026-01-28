@@ -5,9 +5,9 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
-source-git-commit: aa28d13b2ad874e4dc61510bfdc250415e8e8be1
+source-git-commit: 3f363a006ed25c07f3ea5b516f5fc306b230d029
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 När innehållet har definierats kan du förhandsgranska innehållet innan du skickar meddelandet. Detta är ett viktigt steg för att säkerställa att det är korrekt, men även fritt från fel, både i innehålls- och personaliseringsinställningarna.
 
-Du kan också skicka testleveranser av e-postmeddelanden till specifika mottagare eller prenumeranter för testning och validering, och kontrollera återgivningen i populära dator-, mobil- och webbaserade klienter.
+Du kan också skicka testleveranser av e-postmeddelanden till specifika mottagare eller prenumeranter för testning och validering, och kontrollera återgivningen i populära dator-, mobil- och webbaserade klienter. Dessutom kan du utvärdera allmänna aspekter av innehållskvaliteten, som läsbarhet och effektivitet. [Läs mer om validering av innehållskvalitet](brands-score.md#validate-quality)
 
 Alla dessa åtgärder kan utföras med knappen **[!UICONTROL Simulate Content]**, som du kommer åt från redigeringsfönstret i ditt meddelande, eller från e-post- och webbdesigners för e-post- och webbkanalerna.
 
@@ -41,10 +41,10 @@ Journey Optimizer tillhandahåller två upplevelser för att testa ert innehåll
   Du kan använda testprofiler för att förhandsgranska ditt innehåll, skicka e-postkorrektur och kontrollera e-poståtergivningen. Om du har lagt till anpassade fält kan du kontrollera hur de visas med testprofildata. Mer information finns i följande avsnitt:
 
   ➡️ [Välj testprofiler](test-profiles.md)
-➡️ [Förhandsgranska med testprofiler &#x200B;](preview.md)
+➡️ [Förhandsgranska med testprofiler ](preview.md)
 ➡️ [Skicka e-postkorrektur](proofs.md)
 ➡️ [Kontrollera e-poståtergivning](rendering.md)
-➡️ [Förhandsgranska och korrekturgranska din e-post (video) &#x200B;](#video-preview)
+➡️ [Förhandsgranska och korrekturgranska din e-post (video) ](#video-preview)
 
 * **Testa innehållsvariationer med exempelindata**
 
@@ -68,4 +68,4 @@ Journey Optimizer tillhandahåller två upplevelser för att testa ert innehåll
 
 Lär dig hur du använder testprofiler för att testa e-poståtergivning i inkorgar, förhandsgranska dina personaliserade e-postmeddelanden mot testprofiler och skicka korrektur.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430343?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425026?quality=12)

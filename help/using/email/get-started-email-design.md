@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: e-post, design, stockinnehåll, resurser
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-source-git-commit: 2762eb74ee4bd1c9dba4f8e542375ab7b4b25290
+source-git-commit: 3f363a006ed25c07f3ea5b516f5fc306b230d029
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '715'
 ht-degree: 2%
 
 ---
@@ -62,6 +62,8 @@ När du har skapat ett e-postmeddelande kan du börja designa ditt e-postinnehå
 
    ![](assets/email_designer_export.png)
 
+1. Ni kan också validera innehållskvaliteten för att identifiera potentiella problem med läsbarhet, innehållets enhetlighet och effektivitet. [Läs mer om validering av innehållskvalitet](../content-management/brands-score.md#validate-quality)
+
 ## Bästa praxis för e-postdesign {#best-practices}
 
 När du skickar e-postmeddelanden är det viktigt att tänka på att mottagarna kan vidarebefordra dem, vilket ibland kan orsaka problem med e-postens återgivning. Detta gäller särskilt när du använder CSS-klasser som kanske inte stöds av e-postleverantören som används för vidarebefordran, till exempel om du använder CSS-klassen&quot;is-desktop-hidden&quot; för att dölja en bild på mobila enheter.
@@ -86,4 +88,4 @@ Lär dig skapa e-postinnehåll med meddelanderedigeraren.
 
 Lär dig hur du konfigurerar innehållsexperiment till A/B-tester och utforskar e-postinnehåll på bästa sätt för dina affärsmål.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447335?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3419893)

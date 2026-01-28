@@ -9,9 +9,9 @@ role: User
 level: Beginner, Intermediate
 keywords: innehåll, redigerare, e-post, börja
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
-source-git-commit: de418dc4feefd99231155c550ad3a51e4850ee66
+source-git-commit: 3f363a006ed25c07f3ea5b516f5fc306b230d029
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -126,5 +126,7 @@ Följ stegen nedan när du vill börja skapa ditt innehåll:
 1. När innehållet är klart klickar du på knappen **[!UICONTROL Simulate content]** för att kontrollera återgivningen. Du kan välja skrivbordsvy eller mobilvy. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
 
    ![](assets/email_designer_simulate_content.png)
+
+1. Ni kan också validera innehållskvaliteten för att utvärdera läsbarhet, effektivitet och innehållets enhetlighet. [Läs mer om validering av innehållskvalitet](../content-management/brands-score.md#validate-quality)
 
 1. När innehållet är klart klickar du på **[!UICONTROL Save]**.

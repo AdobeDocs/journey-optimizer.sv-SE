@@ -9,9 +9,9 @@ role: User
 level: Beginner
 keywords: skapa, e-post, start, resa, kampanj
 exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
-source-git-commit: fbd99b95b0e9aeb06435a81bf345dd615a0f9d02
+source-git-commit: 3f363a006ed25c07f3ea5b516f5fc306b230d029
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -163,6 +163,8 @@ Två typer av varningar kan inträffa:
 ## Kontrollera och skicka din e-post
 
 När meddelandeinnehållet har definierats kan du använda testprofiler för att förhandsgranska det, skicka korrektur och kontrollera återgivningen i vanliga dator-, mobil- och webbaserade klienter. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
+
+Ni kan också validera innehållskvaliteten för att utvärdera läsbarhet, effektivitet och innehållets enhetlighet. [Läs mer om validering av innehållskvalitet](../content-management/brands-score.md#validate-quality)
 
 >[!NOTE]
 >
