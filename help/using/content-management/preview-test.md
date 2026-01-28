@@ -68,4 +68,4 @@ Journey Optimizer tillhandahåller två upplevelser för att testa ert innehåll
 
 Lär dig hur du använder testprofiler för att testa e-poståtergivning i inkorgar, förhandsgranska dina personaliserade e-postmeddelanden mot testprofiler och skicka korrektur.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425026?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3430343?captions=swe&quality=12)
