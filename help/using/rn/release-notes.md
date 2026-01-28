@@ -7,7 +7,7 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: d727acc1d01376a4abb8a0766340a2d32832305e
+source-git-commit: 8a7926be7a8e73d889cf38a047400236fd352dab
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 5%
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation januari 26 {#latest-rn}
 
@@ -35,7 +35,7 @@ Avsnitten [Funktioner](#jan-26-01-features) och [Förbättringar](#jan-26-01-imp
 
 <!-- **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date. 
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -155,7 +155,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 #### AI
 
-* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att upptäcka potentiella problem med <strong>läsbarhet</strong>, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor. [Läs mer](../content-management/brands-score.md#validate-quality). [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470550/?captions=swe&learn=on).
+* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att upptäcka potentiella problem med <strong>läsbarhet</strong>, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor. [Läs mer](../content-management/brands-score.md#validate-quality). [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470544/?learn=on).
 
 #### Experience Decision
 
@@ -238,7 +238,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <td>
 <p>Med <strong>tysta timmar</strong> kan du definiera tidsbaserade undantag för e-post-, SMS-, push- och whatsApp-kanaler. De ser till att inga meddelanden skickas under särskilda tidsperioder och hjälper er att följa kundönskemål och krav på regelefterlevnad. Du kan använda tysta timmar genom <strong>regeluppsättningar</strong>, som kan tilldelas enskilda åtgärder i kampanjer eller resor för exakt kontroll.</p>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer. I den här allmänna tillgänglighetsversionen inkluderar funktionen nu möjligheten för kunden att ställa en kampanjåtgärd i kö tills tysta timmar har slutförts och möjligheten att förhandsgranska den aktiverade regeln Tysta timmar.</p>
-<p>Tillgänglighetsdatum: 28 januari 2026</p>
+<p>Tillgänglighetsdatum: 29 januari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -260,7 +260,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <li>Återställningsstöd för slutförda migreringar</li>
 <li>Detaljerade migreringsrapporter med objektmappningar</li>
 </ul>
-<p>Tillgänglighetsdatum: 28 januari 2026</p>
+<p>Tillgänglighetsdatum: 29 januari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -277,7 +277,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <td>
 <p>Få djupare insikter i hälsa och prestanda för dina <strong>anpassade åtgärdsslutpunkter</strong> med en ny kontrollpanel och förbättrade händelsedata för kundsteg. Spåra lyckade samtal, fel, dataflöde, svarstider och väntetider för kön för att snabbt förstå när, var och varför avvikelser inträffar.</p>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Tillgänglighetsdatum: 28 januari 2026</p>
+<p>Tillgänglighetsdatum: 29 januari 2026</p>
 </td>
 </tr>
 </tbody>
