@@ -130,4 +130,4 @@ Nu när ni vet vad som är samordnade kampanjer är det dags att fördjupa er i 
 * **[Starta och övervaka kampanjer](start-monitor-campaigns.md)** - Lär dig de bästa sätten att starta kampanjer och övervaka deras körning i realtid.
 * **[Garantier och begränsningar](guardrails.md)** - Granska viktiga säkerhetsutkast, begränsningar och bästa praxis för att säkerställa optimala kampanjresultat.
 * **[Vanliga frågor och svar](orchestrated-campaigns-faq.md)** - Hitta svar på vanliga frågor om orkestrerade kampanjfunktioner, funktioner och användningsexempel.
-* **[Samordnade kampanjsjälvstudiekurser](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-campaigns/orchestrated-campaigns/introduction-to-orchestrated-campaigns){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om funktioner och bästa praxis.
+* **[Samordnade kampanjsjälvstudiekurser](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/create-campaigns/orchestrated-campaigns/introduction-to-orchestrated-campaigns){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om funktioner och bästa praxis.
