@@ -27,11 +27,11 @@ Med [!DNL Journey Optimizer] kan du skapa dina resor och skicka meddelanden till
 
 ### Konfigurera behörigheter {#setup-permissions}
 
-Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
+Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=sv-SE){target="_blank"}.
 
 >[!CAUTION]
 >
->Push-konfigurationen måste utföras av en expertanvändare. Beroende på din implementeringsmodell och vilka profiler som används i den här implementeringen kan du behöva tilldela en enskild produktprofil den fullständiga behörighetsuppsättningen eller dela behörigheter mellan apputvecklaren och **Adobe Journey Optimizer** -administratören. Läs mer om **taggar**-behörigheter i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
+>Push-konfigurationen måste utföras av en expertanvändare. Beroende på din implementeringsmodell och vilka profiler som används i den här implementeringen kan du behöva tilldela en enskild produktprofil den fullständiga behörighetsuppsättningen eller dela behörigheter mellan apputvecklaren och **Adobe Journey Optimizer** -administratören. Läs mer om **taggar**-behörigheter i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=sv-SE){target="_blank"}.
 
 <!--ou need to your have access to perform following roles :
 
@@ -48,7 +48,7 @@ Följ stegen nedan för att tilldela **Egenskap** och **Företag** behörigheter
 
    ![](assets/push_product_1.png)
 
-1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
+1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=sv-SE#ui){target="_blank"}.
 
 1. På fliken **[!UICONTROL Permissions]** väljer du **[!UICONTROL Property rights]**.
 
@@ -94,7 +94,7 @@ Följ stegen nedan för att tilldela **[!UICONTROL Product profile]** till anvä
 
    >[!NOTE]
    >
-   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-users-individually.ug.html#add-users).
+   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/manage-users-individually.ug.html#add-users).
 
    ![](assets/push_product_7.png)
 
@@ -113,7 +113,7 @@ Följande scheman och datauppsättningar är tillgängliga med push-meddelandeka
 >
 >När push-spårningshändelser infogas i händelsedatauppsättningen CJM Push Tracking Experience kan vissa fel inträffa, även om data delvis har importerats korrekt. Detta kan inträffa om vissa fält i din mappning inte finns i inkommande händelser: systemet loggar varningar men förhindrar inte att giltiga delar av data matas in. Dessa varningar visas i batchstatus som&quot;misslyckades&quot; men avspeglar en partiell slutförd import.
 >
->Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+>Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
 
 
 
@@ -208,7 +208,7 @@ To get the SDKs needed for push notification to work you will need the following
 * **[!UICONTROL Adobe Experience Platform Edge]**
 * **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
 
-Learn more about [!DNL Adobe Experience Platform Launch] extensions in [Adobe Experience Platform Launch documentation](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-add-extensions.html).
+Learn more about [!DNL Adobe Experience Platform Launch] extensions in [Adobe Experience Platform Launch documentation](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-add-extensions.html?lang=sv-SE).
 -->
 
 ## Steg 2: Skapa en kanalkonfiguration för push{#message-preset}
@@ -321,7 +321,7 @@ När du har konfigurerat din mobilapp i både Adobe Experience Platform och i [!
 You can use a test mobile app for this use case. For more on this, refer to this [page](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=CJM&title=Details+of+setting+the+mobile+test+app) (internal use only).
 -->
 
-För att den här resan ska fungera måste du skapa ett XDM-schema. Mer information finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schemas-and-data-ingestion){target="_blank"}.
+För att den här resan ska fungera måste du skapa ett XDM-schema. Mer information finns i [XDM-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=sv-SE#schemas-and-data-ingestion){target="_blank"}.
 
 1. Klicka på **[!UICONTROL Schemas]** i menyavsnittet DATAHANTERING.
    ![](assets/test_push_1.png)
@@ -331,7 +331,7 @@ För att den här resan ska fungera måste du skapa ett XDM-schema. Mer informat
    ![](assets/test_push_3.png)
 1. Klicka på **Lägg till** till vänster i avsnittet **Fältgrupper** och välj **[!UICONTROL Create a new field group]**.
 
-1. Ange en **[!UICONTROL Display Name]** och en **[!UICONTROL Description]**. Klicka på **[!UICONTROL Add field groups]** när du är klar. Mer information om hur du skapar fältgrupper finns i [XDM-systemdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html){target="_blank"}.
+1. Ange en **[!UICONTROL Display Name]** och en **[!UICONTROL Description]**. Klicka på **[!UICONTROL Add field groups]** när du är klar. Mer information om hur du skapar fältgrupper finns i [XDM-systemdokumentationen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE){target="_blank"}.
 
 
    ![](assets/test_push_4.png)

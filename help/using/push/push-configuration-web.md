@@ -28,11 +28,11 @@ Med [!DNL Journey Optimizer] kan du skapa dina resor och skicka meddelanden till
 
 ### Konfigurera behörigheter {#setup-permissions}
 
-Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
+Innan du skapar ett mobilprogram måste du kontrollera att du har eller tilldelar rätt användarbehörigheter för taggar i Adobe Experience Platform. Läs mer i [Tagg-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=sv-SE){target="_blank"}.
 
 >[!CAUTION]
 >
->Push-konfigurationen måste utföras av en expertanvändare. Beroende på din implementeringsmodell och vilka profiler som används i den här implementeringen kan du behöva tilldela en enskild produktprofil den fullständiga behörighetsuppsättningen eller dela behörigheter mellan apputvecklaren och **Adobe Journey Optimizer** -administratören. Läs mer om **taggar**-behörigheter i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
+>Push-konfigurationen måste utföras av en expertanvändare. Beroende på din implementeringsmodell och vilka profiler som används i den här implementeringen kan du behöva tilldela en enskild produktprofil den fullständiga behörighetsuppsättningen eller dela behörigheter mellan apputvecklaren och **Adobe Journey Optimizer** -administratören. Läs mer om **taggar**-behörigheter i [den här dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=sv-SE){target="_blank"}.
 
 <!--ou need to your have access to perform following roles :
 
@@ -49,7 +49,7 @@ Följ stegen nedan för att tilldela **Egenskap** och **Företag** behörigheter
 
    ![](assets/push_product_1.png)
 
-1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}.
+1. Välj en befintlig **[!UICONTROL Product Profile]** eller skapa en ny med knappen **[!UICONTROL New profile]**. Lär dig hur du skapar en ny **[!UICONTROL New profile]** i [Admin Console-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=sv-SE#ui){target="_blank"}.
 
 1. På fliken **[!UICONTROL Permissions]** väljer du **[!UICONTROL Property rights]**.
 
@@ -95,7 +95,7 @@ Följ stegen nedan för att tilldela **[!UICONTROL Product profile]** till anvä
 
    >[!NOTE]
    >
-   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-users-individually.ug.html#add-users).
+   >Om användaren inte redan har skapats i Admin Console läser du [dokumentationen till Lägg till användare](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/manage-users-individually.ug.html#add-users).
 
    ![](assets/push_product_7.png)
 
@@ -114,11 +114,11 @@ Följande scheman och datauppsättningar är tillgängliga med push-meddelandeka
 >
 >När push-spårningshändelser infogas i händelsedatauppsättningen CJM Push Tracking Experience kan vissa fel inträffa, även om data delvis har importerats korrekt. Detta kan inträffa om vissa fält i din mappning inte finns i inkommande händelser: systemet loggar varningar men förhindrar inte att giltiga delar av data matas in. Dessa varningar visas i batchstatus som&quot;misslyckades&quot; men avspeglar en partiell slutförd import.
 >
->Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+>Om du vill visa en fullständig lista över fält och attribut för varje schema kan du läsa [Journey Optimizer schemaordlista](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE){target="_blank"}.
 
 ### Konfigurera egenskapen pushNotification {#push-property}
 
-Om du vill aktivera **webb-push-meddelanden** måste du först kontrollera att egenskapen [pushNotifications](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/pushnotifications) är korrekt konfigurerad i Web SDK. Den här egenskapen styr hur push-meddelanden hanteras av webbprogrammet.
+Om du vill aktivera **webb-push-meddelanden** måste du först kontrollera att egenskapen [pushNotifications](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/js/commands/configure/pushnotifications) är korrekt konfigurerad i Web SDK. Den här egenskapen styr hur push-meddelanden hanteras av webbprogrammet.
 
 Dessutom måste du generera VAPID-nycklar, som krävs för att konfigurera [dina push-autentiseringsuppgifter för appen](#push-credentials-launch) i Journey Optimizer.
 
@@ -175,7 +175,7 @@ Du kan nu välja din konfiguration när du skapar push-meddelanden.
 
 ## Steg 3: Konfigurera egenskapen sendPushSubscription {#sendPushSubscription-property}
 
-När du har konfigurerat push-autentiseringsuppgifterna och kanalen måste du implementera [kommandot sendPushSubscription](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendpushsubscription) i webbprogrammet. Det här kommandot registrerar push-prenumerationer för användare med Adobe Experience Platform, vilket gör att systemet kan spåra vilka användare som har valt att ta emot push-meddelanden och behålla sin prenumerationsstatus. Registreringen är nödvändig för att Journey Optimizer ska kunna skicka riktade push-meddelanden till dina användare.
+När du har konfigurerat push-autentiseringsuppgifterna och kanalen måste du implementera [kommandot sendPushSubscription](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/js/commands/sendpushsubscription) i webbprogrammet. Det här kommandot registrerar push-prenumerationer för användare med Adobe Experience Platform, vilket gör att systemet kan spåra vilka användare som har valt att ta emot push-meddelanden och behålla sin prenumerationsstatus. Registreringen är nödvändig för att Journey Optimizer ska kunna skicka riktade push-meddelanden till dina användare.
 
 ## Steg 4: Testa mobilappen med en händelse {#mobile-app-test}
 
