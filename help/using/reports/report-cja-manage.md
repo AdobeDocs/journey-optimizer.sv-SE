@@ -29,7 +29,7 @@ Förbättra dataanalysupplevelsen med din **[!DNL Customer Journey Analytics]**-
 
 Det här kraftfulla alternativet dirigerar om dig till din **[!DNL Customer Journey Analytics]**-miljö, så att du kan anpassa dina rapporter i stor utsträckning. Ni kan berika era widgetar med specialiserade Customer Journey Analytics-mätvärden och ta era insikter till en helt ny nivå.
 
-[Läs mer om Customer Journey Analytics gränssnitt.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-getting-started)
+[Läs mer om Customer Journey Analytics gränssnitt.](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-getting-started)
 
 ## Definiera rapportperioden {#report-period}
 
@@ -137,7 +137,7 @@ Du kan skapa anpassade beräknade mätvärden direkt i dina rapporter. Ni kan ge
 
    >[!NOTE]
    >
-   >Om ni äger Customer Journey Analytics kan ni anpassa mätvärdena ytterligare med ytterligare alternativ. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics#areas-of-the-calculated-metrics-builder)
+   >Om ni äger Customer Journey Analytics kan ni anpassa mätvärdena ytterligare med ytterligare alternativ. [Läs mer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics#areas-of-the-calculated-metrics-builder)
 
 1. Välj lämplig **[!UICONTROL Decimal Places]** och välj en **[!UICONTROL Format]** (decimal, tid, procent eller valuta) baserat på hur du vill att måttet ska visas.
 
@@ -157,7 +157,7 @@ De nya mätvärdena inkluderas när du exporterar rapporten som en PDF eller CSV
 
 ## Utforska data med Insight Builder {#exploratory}
 
-Använd verktyget Insight builder för att enkelt skapa tabeller och visualiseringar från dina valda **[!UICONTROL Dimensions]** och **[!UICONTROL Metrics]**. Verktyget effektiviserar datautforskandet så att du automatiskt kan anpassa och analysera information. Läs mer i [den här dokumentationen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight).
+Använd verktyget Insight builder för att enkelt skapa tabeller och visualiseringar från dina valda **[!UICONTROL Dimensions]** och **[!UICONTROL Metrics]**. Verktyget effektiviserar datautforskandet så att du automatiskt kan anpassa och analysera information. Läs mer i [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/quickinsight).
 
 1. Börja med att gå till rapporten där du vill använda Insight Builder.
 
@@ -207,7 +207,7 @@ Nu kan du markera specifika data i tabellen och direkt skapa en målgrupp utifr�
 
    >[!NOTE]
    >
-   >Om ni äger Customer Journey Analytics kan ni anpassa mätvärdena ytterligare med ytterligare alternativ. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)
+   >Om ni äger Customer Journey Analytics kan ni anpassa mätvärdena ytterligare med ytterligare alternativ. [Läs mer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/audiences/publish)
 
    ![](assets/audience_1.png)
 
@@ -217,7 +217,7 @@ Du kan nu fortsätta att använda den nya målgruppen med en resa eller kampanj.
 
 ## Hantera mallar {#cja-template}
 
-Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. [Läs mer om Customer Journey Analytics-mallen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
+Nu kan du förbättra dina Journey Optimizer-rapporter genom att använda Customer Journey Analytics-mallar. [Läs mer om Customer Journey Analytics-mallen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/templates/use-templates#use-reports)
 
 När du får åtkomst till dina rapporter kan du välja mellan två malltyper i listrutan **[!UICONTROL Select a template]**:
 
@@ -230,19 +230,19 @@ Om ingen mall har skapats visas inte listrutan **[!UICONTROL Select a template]*
 
 Så här skapar du en mall:
 
-1. I [!DNL Customer Journey Analytics] går du till menyn **[!UICONTROL Workspace]** och väljer **[!UICONTROL Adobe templates]**. [Läs mer om tillgängliga mallar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#available-templates)
+1. I [!DNL Customer Journey Analytics] går du till menyn **[!UICONTROL Workspace]** och väljer **[!UICONTROL Adobe templates]**. [Läs mer om tillgängliga mallar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/templates/use-templates#available-templates)
 
 1. Bläddra bland de tillgängliga färdiga mallarna och klicka på **[!UICONTROL Use template]** för att välja en.
 
    ![](assets/cja_template_1.png)
 
-1. Anpassa rapporten efter era behov. Läs [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
+1. Anpassa rapporten efter era behov. Läs [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home).
 
 1. När den anpassade mallen är klar går du till menyn **[!UICONTROL Project]** och väljer **[!UICONTROL Save as template]**.
 
    ![](assets/cja_template_2.png)
 
-1. Ange nödvändig information för mallen. Mer information finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#edit-or-delete-a-template).
+1. Ange nödvändig information för mallen. Mer information finns i [Customer Journey Analytics-dokumentationen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/templates/create-templates#edit-or-delete-a-template).
 
    >[!IMPORTANT]
    >
