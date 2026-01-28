@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 0706cb23bb41aff56984d7723df22c5a07bbe51d
+source-git-commit: 5b586627473bd4e7618c235cbea1b286167859ab
 workflow-type: tm+mt
-source-wordcount: '3070'
+source-wordcount: '3073'
 ht-degree: 15%
 
 ---
@@ -843,13 +843,14 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
    + [Kanalkonfiguration](/help/rp_landing_pages/configuration-landing-page.md)
    + [Kom igång med kanalkonfiguration](using/configuration/get-started-configuration.md)
    + [Konfigurera kanalkonfigurationer](using/configuration/channel-surfaces.md)
+   + [Exportera meddelandeinnehåll](using/configuration/message-export.md)
    + Inställningar för guidad kanal {#guided-setup}
       + [Inställningar för guidad kanal](/help/rp_landing_pages/guided-setup-landing-page.md)
       + [Kom igång med konfiguration av guidade kanaler](using/configuration/set-mobile-config.md)
