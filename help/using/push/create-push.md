@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
-source-git-commit: 8205d248d986cdc1a2262705c58524c2434265f5
+source-git-commit: 0706cb23bb41aff56984d7723df22c5a07bbe51d
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 1%
 >id="ajo_message_push"
 >title="Skapa push-meddelanden"
 >abstract="Lägg till ditt push-meddelande och börja personalisera det med personaliseringsredigeraren."
+
+Du kan skapa push-meddelanden för mobila enheter (iOS och Android) och webbläsare. På den här sidan får du hjälp med att skapa ett push-meddelande för en resa eller kampanj.
 
 ## Skapa push-meddelanden i en resa eller kampanj {#create}
 
@@ -70,7 +72,7 @@ Följ stegen nedan för att skapa ett push-meddelande:
 
 1. I avsnittet **[!UICONTROL Actions]** väljer du **[!UICONTROL Push notification]** och väljer eller skapar en ny konfiguration.
 
-   Läs mer om push-konfiguration på [den här sidan](push-configuration.md).
+   Läs mer om push-konfiguration för mobilen på [den här sidan](push-configuration.md) och för webben på [den här sidan](push-configuration-web.md).
 
    ![](assets/push_create_3.png)
 
@@ -111,7 +113,7 @@ Snabb leverans är ett [!DNL Journey Optimizer]-tillägg som tillåter mycket sn
 
 Snabba leveranser används när fördröjningar i meddelandeleverans är affärskritiska när du vill skicka en snabb push-varning på mobiltelefoner, till exempel nyheter till användare som har installerat din nyhetskanalapp.
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 ### Förhandskrav {#prerequisites}
 

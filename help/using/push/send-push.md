@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: aad4e08a-3369-454d-9e32-974347a3b393
-source-git-commit: 22a8742bf9000ed1cc8437d7ac89747276284dbf
+source-git-commit: 0706cb23bb41aff56984d7723df22c5a07bbe51d
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '364'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 När meddelandeinnehållet har definierats kan du använda testprofiler eller exempelindata som har överförts från en CSV-/JSON-fil, eller lägga till manuellt för att förhandsgranska innehållet. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet.
 
-Klicka på **[!UICONTROL Simulate content]** om du vill göra det. Du kan sedan välja typ av enhet för att förhandsgranska innehåll: **[!UICONTROL iOS]** eller **[!UICONTROL Android]**.
+Klicka på **[!UICONTROL Simulate content]** om du vill göra det. Du kan sedan välja typ av enhet för att förhandsgranska innehåll: **[!UICONTROL iOS]**, **[!UICONTROL Android]** eller **[!UICONTROL Web]**.
 
 ![](assets/push_preview_3.png)
 
@@ -58,7 +58,8 @@ När ditt push-meddelande är klart slutför du konfigurationen av din [resa](..
 
 **Relaterade ämnen**
 
-* [Konfigurera push-kanal](push-configuration.md)
+* [Konfigurera push-kanal för mobilen](push-configuration.md)
+* [Konfigurera push-kanal för webben](push-configuration-web.md)
 * [Rapport om push-meddelanden](../reports/journey-global-report-cja-push.md)
 * [Skapa ett push-meddelande](create-push.md)
 * [Lägg till ett meddelande i en resa](../building-journeys/journeys-message.md)

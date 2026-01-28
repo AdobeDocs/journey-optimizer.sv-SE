@@ -8,14 +8,16 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 31f0ff2497b5d3c1211c26e8bcd9a12d072f298d
+source-git-commit: 0706cb23bb41aff56984d7723df22c5a07bbe51d
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 4%
+source-wordcount: '1820'
+ht-degree: 3%
 
 ---
 
 # Utforma ett push-meddelande {#design-push-notification}
+
+När du har skapat ett push-meddelande kan du utforma dess innehåll för iOS, Android och webbplattformar. På den här sidan får du hjälp med att komponera ditt meddelande, konfigurera klickbeteenden, lägga till media och knappar och ange avancerade alternativ för att skapa engagerande push-meddelanden som får genklang hos publiken.
 
 ## Titel och brödtext {#push-title-body}
 
@@ -24,9 +26,11 @@ ht-degree: 4%
 >title="Anpassa ditt push-meddelande."
 >abstract="Skriv innehållet i fälten **Titel** och **Brödtext** för att skapa meddelandet. Om du vill ta med personaliseringstoken öppnar du dialogrutan för personalisering."
 
+![](assets/title-body.png)
+
 Klicka på fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet. Använd personaliseringsredigeraren för att definiera innehåll, personalisera data och lägga till dynamiskt innehåll. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i personaliseringsredigeraren.
 
-Använd enhetens förhandsgranskningssektion för att se hur push-meddelanden visas på iOS- och Android-enheter.
+Använd enhetens förhandsgranskningssektion för att se hur push-meddelanden visas på iOS, Android och webben.
 
 Snabba upp skapandet av ditt innehåll med AI Assistant och generera övertygande push-meddelanden med [AI Assistant för textgenerering](../content-management/generative-text.md) eller skapa kompletta push-meddelanden med [AI Assistant för generering av fullständigt innehåll](../content-management/generative-full-content.md).
 
@@ -37,13 +41,13 @@ Snabba upp skapandet av ditt innehåll med AI Assistant och generera övertygand
 >title="Om klickbeteende"
 >abstract="Välj beteende när en mottagare klickar på texten i push-meddelandet."
 
-Du kan välja beteende när en användare klickar på texten i push-meddelandet.
+Konfigurera den åtgärd som ska utföras när mottagarna trycker på texten i push-meddelandet. Välj bland följande alternativ:
 
 ![](assets/title-body-push.png)
 
-* Om du vill öppna appen väljer du alternativet **[!UICONTROL Open app]**. Programmet som är associerat med meddelandet definieras i [kanalkonfigurationen](../configuration/channel-surfaces.md) (d.v.s. meddelandeförinställningen).
-* Om du vill dirigera om användaren till en viss del av innehållet i en app väljer du alternativet **[!UICONTROL Deeplink]**.  Det specifika innehållet kan vara en specifik vy, ett visst avsnitt på en sida eller en viss flik. När alternativet är markerat anger du länken i det tillhörande fältet.
-* Om du vill dirigera om användaren till en extern URL använder du alternativet **[!UICONTROL Web URL]**. När alternativet är markerat anger du URL-adressen i det associerade fältet.
+* **[!UICONTROL Open app]**: Startar programmet som är associerat med meddelandet. Appen anges i din [kanalkonfiguration](../configuration/channel-surfaces.md) (d.v.s. meddelandeförinställning).
+* **[!UICONTROL Deeplink]**: dirigerar användare till specifikt innehåll i din app, till exempel en viss vy, ett visst sidavsnitt eller en viss flik. Ange URL-adressen för överordnad länk i fältet.
+* **[!UICONTROL Web URL]**: dirigerar användare till en extern webbsida. Ange mål-URL i det angivna fältet.
 
 ## Lägg till media {#add-media-push}
 
@@ -52,26 +56,55 @@ Du kan välja beteende när en användare klickar på texten i push-meddelandet.
 >title="Lägg till media i ditt push-meddelande"
 >abstract="Du kan lägga till en bild, en video eller en GIF som visas i meddelandet."
 
-I iOS-versionen av ditt push-meddelande kan du lägga till en bild, en video eller en GIF som visas i meddelandet.
+Förbättra dina push-meddelanden genom att lägga till visuella medier. Tillgängliga medietyper och implementeringsmetoder varierar beroende på operativsystem, vilket visas på flikarna nedan.
 
-I Android-versionen kan du bara lägga till en bildikon och en bild för utökade meddelanden.
+>[!BEGINTABS]
+
+>[!TAB Android]
+
+I Android kan du bara lägga till en bildikon och en bild för utökade meddelanden.
 
 ![](assets/push-config-add-media.png)
 
-Det finns två alternativ. Du kan:
+Du kan lägga till media på något av följande sätt:
 
-* Använd knappen **[!UICONTROL Add media]** för att välja en resurs i **[!DNL Adobe Experience Manager Assets]**.
+* **[!UICONTROL Add media]**-knapp: Välj en resurs från [Adobe Experience Manager Assets](../integrations/assets.md) eller öppna AI-assistenten för att generera [engagerande bilder](../content-management/generative-image.md) för push-meddelanden.
 
-  Lär dig använda **[!DNL Adobe Experience Manager Assets]** på [den här sidan](../integrations/assets.md).
-
-* Eller ange URL:en för mediet i fältet **[!UICONTROL Add media]**. I så fall kan du lägga till personalisering i URL:en.
+* **[!UICONTROL Add media]**-fält: Ange medie-URL:en direkt. Du kan inkludera personaliseringstoken i URL:en.
 
 När mediet har lagts till visas det till höger om meddelandetexten.
 
-Observera att när du inkluderar mediebilagor i nyttolasten för push-meddelanden, som bilder i anpassade datafält som `adb_media`, måste ditt mobilprogram implementera en specifik hantering på klientsidan för bilderna som ska återges på enheter:
+>[!NOTE]
+>
+>När du inkluderar mediebilagor i nyttolasten för push-meddelanden (till exempel bilder i anpassade datafält som `adb_media`), måste ditt mobilprogram implementera en specifik hantering på klientsidan för bilderna som ska återges på enheter. Ditt program måste implementera det [automatiska arbetsflödet för visning och spårning](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/android/automatic-display-and-tracking/){target="_blank"} för att hantera bildbilagor från nyttolasten.
 
-* **iOS**: Din app måste implementera ett [Notification Service-tillägg](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications){target="_blank"} för att kunna hämta och bearbeta medieinnehåll från nyttolasten. Dessutom måste alternativet **[!UICONTROL Add mutable-content flag]** aktiveras i avsnittet [Avancerade alternativ](#advanced-options-push).
-* **Android**: Din app måste implementera det [automatiska arbetsflödet för visning och spårning](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/android/automatic-display-and-tracking/){target="_blank"} för att kunna hantera bildbilagor från nyttolasten.
+>[!TAB iOS]
+
+För iOS kan du lägga till en bild, video eller GIF som ska visas i ditt meddelande.
+
+![](assets/push-config-add-media-ios.png)
+
+Du kan lägga till media på något av följande sätt:
+
+* **[!UICONTROL Add media]**-knapp: Välj en resurs från **[!DNL Adobe Experience Manager Assets]**. Läs mer om hur du använder **[!DNL Adobe Experience Manager Assets]** på [den här sidan](../integrations/assets.md).
+
+* **[!UICONTROL Add media]**-fält: Ange medie-URL:en direkt. Du kan inkludera personaliseringstoken i URL:en.
+
+När mediet har lagts till visas det till höger om meddelandetexten.
+
+>[!NOTE]
+>
+>När du inkluderar mediebilagor i nyttolasten för push-meddelanden (till exempel bilder i anpassade datafält som `adb_media`), måste ditt mobilprogram implementera en specifik hantering på klientsidan för bilderna som ska återges på enheter. Din app måste implementera ett [Notification Service-tillägg](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications){target="_blank"} för att kunna hämta och bearbeta medieinnehåll från nyttolasten. Dessutom måste alternativet **[!UICONTROL Add mutable-content flag]** aktiveras i avsnittet [Avancerade alternativ](#advanced-options-push).
+
+>[!TAB Webb]
+
+Ange mediets URL i fältet **[!UICONTROL Add media]**. Du kan också inkludera personaliseringstoken i URL:en för att anpassa innehållet för varje användare.
+
+Klicka på ![Redigera text med AI-assistenten](assets/do-not-localize/Smock_ImageAdd_18_N.svg) om du snabbt vill generera media med Journey Optimizer AI Assistant.
+
+![](assets/web-media.png)
+
+>[!ENDTABS]
 
 ## Lägg till knappar {#add-buttons-push}
 
@@ -80,19 +113,39 @@ Observera att när du inkluderar mediebilagor i nyttolasten för push-meddelande
 >title="Lägg till knappar så att användarna kan interagera med push-meddelanden."
 >abstract="I det här avsnittet lägger du till call-to-action-knappar i meddelandet. Ange en meddelandekategoriidentifierare för Apple iOS. För Google Android kan du inkludera anpassad text och mål för varje knapp."
 
-Skapa ett användbart meddelande genom att lägga till knappar i ditt push-innehåll.
+Skapa ett användbart meddelande genom att lägga till knappar i ditt push-innehåll. Bläddra bland flikarna nedan baserat på ditt operativsystem.
 
 Om enhetsskärmen är låst visas inte dessa knappar: bara **Rubrik** och **Meddelande** i meddelandet visas. Om enheten är olåst ser mottagarna knapparna.
 
-I Android-versionen kan du lägga till upp till tre knappar.
+>[!BEGINTABS]
 
-I iOS-versionen anges en meddelandekategoriidentifierare. Meddelandekategorier måste vara förkonfigurerade i iOS-appen, som definierar vilka knappar som ska visas och vilka åtgärder som ska vidtas. Mer information finns i [Apple-dokumentationen](https://developer.apple.com/documentation/usernotifications/declaring_your_actionable_notification_types).
+>[!TAB Android]
+
+För Android kan du lägga till upp till tre knappar.
 
 1. Använd **[!UICONTROL Add button]** för att definiera inställningar: etiketten och den associerade åtgärden. Möjliga åtgärder är desamma som för [klickbeteendet](#on-click-behavior).
 
+   ![](assets/push_buttons.png)
+
 1. Använd ikonen **[!UICONTROL Expand view]** under den centrala förhandsvisningsbilden för att förhandsgranska dina anpassade knappar.
 
-   ![](assets/push_buttons.png)
+>[!TAB iOS]
+
+![](assets/push_buttons-ios.png)
+
+För iOS anges en meddelandekategoriidentifierare. Meddelandekategorier måste vara förkonfigurerade i iOS-appen, som definierar vilka knappar som ska visas och vilka åtgärder som ska vidtas. Mer information finns i [Apple-dokumentationen](https://developer.apple.com/documentation/usernotifications/declaring_your_actionable_notification_types).
+
+>[!TAB Webb]
+
+![](assets/push_buttons-web.png)
+
+Använd alternativet **[!UICONTROL Add Button]** för att definiera varje knapps etikett och tillhörande åtgärd, enligt beskrivningen nedan:
+
+* **[!UICONTROL Deeplink]**: Omdirigera användare till en viss vy, avsnitt eller flik i din app. Ange URL-adressen för överordnad länk i det associerade fältet.
+
+* **[!UICONTROL Web URL]**: Omdirigera användare till en extern webbsida. Ange URL-adressen i det associerade fältet.
+
+>[!ENDTABS]
 
 ## Skicka ett tyst meddelande {#silent-notification}
 
@@ -100,6 +153,10 @@ I iOS-versionen anges en meddelandekategoriidentifierare. Meddelandekategorier m
 >id="ajo_message_push_silent_notification"
 >title="Om tyst meddelande"
 >abstract="Skicka meddelanden utan att störa användaren. Meddelanden visas inte i meddelandecentret eller meddelandefältet."
+
+>[!AVAILABILITY]
+>
+>Webb-push-meddelanden i Journey Optimizer stöder inte funktionen **tyst meddelande**.
 
 Ett tyst push-meddelande (eller bakgrundsmeddelande) är en dold instruktion som skickas till programmet. Den används till exempel för att meddela programmet om att nytt innehåll är tillgängligt eller för att initiera en nedladdning i bakgrunden.
 
