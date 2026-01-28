@@ -27,7 +27,7 @@ ht-degree: 1%
 >
 >Den här funktionen är bara tillgänglig för e-post- och SMS-kanalen, för organisationer som har köpt tillägget för meddelandeexport. Kontakta din Adobe-representant om du vill veta mer.
 
-Med **Meddelandeexport** kan du överföra skickat e-post- och SMS-meddelandeinnehåll från [!DNL Journey Optimizer] till ditt eget lagringsutrymme via [!DNL Adobe Experience Platform] mål, vilket gör att du kan leverera data från [!DNL Experience Platform] till externa slutpunkter. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}
+Med **Meddelandeexport** kan du överföra skickat e-post- och SMS-meddelandeinnehåll från [!DNL Journey Optimizer] till ditt eget lagringsutrymme via [!DNL Adobe Experience Platform] mål, vilket gör att du kan leverera data från [!DNL Experience Platform] till externa slutpunkter. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/home){target="_blank"}
 
 Med den här funktionen skrivs innehållet i e-post- och SMS-meddelanden som skickas via [!DNL Journey Optimizer] och som har markerats för export till [!DNL Experience Platform] **AJO Message Export DataSet**. [Läs mer om datauppsättningar](../data/get-started-datasets.md)
 
@@ -58,9 +58,9 @@ Innan du kan exportera dina data måste du konfigurera exportprocessen genom att
 >
 >Den här inställningen måste konfigureras för varje sandlåda.
 
-1. Välj en [måltyp](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/destination-types){target="_blank"} för Experience Platform. En lista över tillgängliga målplattformar som kan ta emot data finns tillgänglig på [den här sidan](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview){target="_blank"}.
+1. Välj en [måltyp](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/destination-types){target="_blank"} för Experience Platform. En lista över tillgängliga målplattformar som kan ta emot data finns tillgänglig på [den här sidan](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/overview){target="_blank"}.
 
-1. I [!DNL Experience Platform] konfigurerar du målet genom att definiera autentiseringsuppgifter, bucket/container, sökvägsprefix och säkerhetsalternativ. [Lär dig hur](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets){target="_blank"}
+1. I [!DNL Experience Platform] konfigurerar du målet genom att definiera autentiseringsuppgifter, bucket/container, sökvägsprefix och säkerhetsalternativ. [Lär dig hur](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/export-datasets){target="_blank"}
 
 1. Skapa ett datauppsättningsexportflöde med följande data:
 
