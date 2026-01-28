@@ -5,7 +5,7 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-source-git-commit: 48d7d6e9e92c6bcd35cf0b88e5383aa068cdefd0
+source-git-commit: 669ea379f9e0ca54eb53be66f65343a9e00203cb
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Beslutsfattandet ger betydande möjligheter och fördelar jämfört med den äld
 
 ### AI och maskininlärning
 
-* **Anpassade mått**: Möjlighet att använda anpassade optimeringsmått för AI-modeller. Detta ger interoperabilitet för rapporter med [Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview){target="_blank"}, standardiserar rapportering för båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten. Den sömlösa integreringen ger en tydligare bild av prestandamätningarna och lägger till nya funktioner som att skapa enkla mätvärden, publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter.
+* **Anpassade mått**: Möjlighet att använda anpassade optimeringsmått för AI-modeller. Detta ger interoperabilitet för rapporter med [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview){target="_blank"}, standardiserar rapportering för båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten. Den sömlösa integreringen ger en tydligare bild av prestandamätningarna och lägger till nya funktioner som att skapa enkla mätvärden, publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter.
 
 * **Lyft mätning**: Möjlighet att visualisera utforska och utnyttja trafik i AI-modeller. Detta gör det möjligt för marknadsförare och datavetare att kvantifiera hur AI-utforskandet förbättrar den långsiktiga modellens prestanda och upptäcker nya vinnande erbjudanden. Öppenhet när det gäller trafikallokering bygger upp förtroende för AI-beslut och ger team möjlighet att optimera både inlärning och prestanda över tid. [Läs mer](ranking/auto-optimization-model.md#lift)
 
@@ -62,11 +62,11 @@ Instrumentpanel som dokumenterar prestanda för beslutsobjekt och urvalsstrategi
 
 ### Ytterligare funktioner
 
-* **Tillämpning av principer**: Företagsanvändarbehörighet att använda funktioner som [Dataanvändningsmärkning och -framtvingning (DULE)](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview){target="_blank"} och [samtycke](../action/consent.md) i beslutet, vilket aktiverar skydd av sekretessen i hela beslutsarbetsflödet. Detta säkerställer att beslut automatiskt följer dataanvändningsprinciper och att kundens samtycke används.
+* **Tillämpning av principer**: Företagsanvändarbehörighet att använda funktioner som [Dataanvändningsmärkning och -framtvingning (DULE)](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview){target="_blank"} och [samtycke](../action/consent.md) i beslutet, vilket aktiverar skydd av sekretessen i hela beslutsarbetsflödet. Detta säkerställer att beslut automatiskt följer dataanvändningsprinciper och att kundens samtycke används.
 
 * **Stöd för inbyggda meddelandekanaler**: Integrerade meddelanden och beslut i ett enda ramverk över flera kanaler ([Kodbaserad upplevelse](../code-based/get-started-code-based.md) och [E-post](../email/get-started-email.md) är för närvarande tillgängliga, andra kanaler kommer i H1 2026). Intuitivt gränssnittsstöd gör att användare kan infoga beslutskomponenter direkt i arbetsflöden för meddelanderedigering.
 
-* **Experience Platform-datauppslagssökning**: Möjlighet att överföra och referera till [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/overview){target="_blank"} direkt inom urvalsregler, rankning och personaliserat innehåll för erbjudanden. Detta utökar flexibiliteten för personalisering och målinriktning genom att tillåta beslutslogik att använda dynamiska externa datakällor. [Läs mer](../data/lookup-aep-data.md)
+* **Experience Platform-datauppslagssökning**: Möjlighet att överföra och referera till [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview){target="_blank"} direkt inom urvalsregler, rankning och personaliserat innehåll för erbjudanden. Detta utökar flexibiliteten för personalisering och målinriktning genom att tillåta beslutslogik att använda dynamiska externa datakällor. [Läs mer](../data/lookup-aep-data.md)
 
 * **Skalbarhet och prestanda**: Arkitekturförbättring som flyttar beslutsberäkning från navet till kanten, vilket avsevärt minskar latensen och förbättrar genomströmningen för användning med hög trafik.
 
@@ -74,16 +74,16 @@ Instrumentpanel som dokumenterar prestanda för beslutsobjekt och urvalsstrategi
 
 | Användningsfall | Beslutshantering | Beslut |
 |----------|---------------------|-------------|
-| **Flerplaceringsstrategi** | En och samma strategi driver både hemsidan och mobilappen | Beslutslogik som är knuten till en viss placering (t.ex. webb- eller e-postplats) |
-| **Konsekventa attribut för erbjudande** | En marknadsförare definierar&quot;rabattType&quot; och&quot;offerValue&quot; en gång. Alla erbjudanden ärver dessa fält automatiskt | Varje erbjudande hanterar sina egna attribut manuellt - ingen konsekvens på schemanivå |
-| **Dynamisk AI-rankning** | En marknadsförare kan justera viktningen (t.ex. 60 % AI-konverteringspoäng + 40 % vinstmarginal) för att balansera intäkter och engagemang | Rankningarna bygger endast på modellutdata eller statiska regler |
-| **A/B-testningsstrategier** | Ett team kan A/B-testa om&quot;AI + företagsregler&quot; matchar&quot;prioritetsbaserad rankning&quot; | Inget inbyggt stöd för experiment |
-| **Anpassade AI-mått** | Återförsäljare utbildar en modell som&quot;sannolikt kommer att köpa&quot; och övervakar lyft över nya jämfört med kända produkter | Optimerar endast mot klickbenägenhet; ingen synlighet för modellundersökning eller lyft |
-| **Återanvändbarhet av innehåll** | Uppdatera en rubrik eller CTA automatiskt till hundratals erbjudanden | Alla erbjudanden lagrar fullständigt innehåll oberoende av varandra |
-| **Integrerad redigering** | En marknadsförare infogar personaliserade erbjudanden i ett e-postmeddelande utan att lämna meddelanderedigeraren | Beslutsfattandet och budskapet finns i separata ramverk med begränsad integrering |
-| **Sekretessregler** | En marknadsförare skapar en regel för erbjudanden i vetskap om att medgivandeinställningarna automatiskt utesluter vissa profiler | Kräver manuell samordning med tekniker och datateam för genomförande |
-| **Realtidslager** | Använd en produktlagerdatamängd för att utelämna erbjudanden för artiklar som inte finns i lager i realtid | Statiska data; begränsad flexibilitet att använda externa eller kontextuella datauppsättningar |
-| **Skalningsprestanda** | Realtidspersonalisering för miljontals inkommande förfrågningar under 100 ms svarstid | Beslut som fattas i navet med högre latens |
+| **Flerplaceringsstrategi** | Beslutslogik som är knuten till en viss placering (t.ex. webb- eller e-postplats) | En och samma strategi driver både hemsidan och mobilappen |
+| **Konsekventa attribut för erbjudande** | Varje erbjudande hanterar sina egna attribut manuellt - ingen konsekvens på schemanivå | En marknadsförare definierar&quot;rabattType&quot; och&quot;offerValue&quot; en gång. Alla erbjudanden ärver dessa fält automatiskt |
+| **Dynamisk AI-rankning** | Rankningarna bygger endast på modellutdata eller statiska regler | En marknadsförare kan justera viktningen (t.ex. 60 % AI-konverteringspoäng + 40 % vinstmarginal) för att balansera intäkter och engagemang |
+| **A/B-testningsstrategier** | Inget inbyggt stöd för experiment | Ett team kan A/B-testa om&quot;AI + företagsregler&quot; matchar&quot;prioritetsbaserad rankning&quot; |
+| **Anpassade AI-mått** | Optimerar endast mot klickbenägenhet; ingen synlighet för modellundersökning eller lyft | Återförsäljare utbildar en modell som&quot;sannolikt kommer att köpa&quot; och övervakar lyft över nya jämfört med kända produkter |
+| **Återanvändbarhet av innehåll** | Alla erbjudanden lagrar fullständigt innehåll oberoende av varandra | Uppdatera en rubrik eller CTA automatiskt till hundratals erbjudanden |
+| **Integrerad redigering** | Beslutsfattandet och budskapet finns i separata ramverk med begränsad integrering | En marknadsförare infogar personaliserade erbjudanden i ett e-postmeddelande utan att lämna meddelanderedigeraren |
+| **Sekretessregler** | Kräver manuell samordning med tekniker och datateam för genomförande | En marknadsförare skapar en regel för erbjudanden i vetskap om att medgivandeinställningarna automatiskt utesluter vissa profiler |
+| **Realtidslager** | Statiska data; begränsad flexibilitet att använda externa eller kontextuella datauppsättningar | Använd en produktlagerdatamängd för att utelämna erbjudanden för artiklar som inte finns i lager i realtid |
+| **Skalningsprestanda** | Beslut som fattas i navet med högre latens | Realtidspersonalisering för miljontals inkommande förfrågningar under 100 ms svarstid |
 
 ## Migreringsverktyg {#migration-tooling}
 
