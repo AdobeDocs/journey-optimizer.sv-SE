@@ -148,9 +148,9 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 * **Verifiering av nyttolastens storlek på resan** - Journey Optimizer validerar nu <strong>nyttolaststorlekarna</strong> för att säkerställa optimala prestanda och systemstabilitet. När du skapar eller publicerar resor får du tydliga <strong>varningar och fel</strong> om nyttolaststorlekarna närmar sig eller överskrider de rekommenderade gränserna, tillsammans med användbar vägledning för att optimera konfigurationen av din resa. Denna proaktiva validering hjälper er att identifiera potentiella problem tidigt och att upprätthålla kundresan. [Läs mer](../start/guardrails.md#journey-payload-size)
 
 * **Resensaviseringar** - Nya <strong>förkonfigurerade aviseringar</strong> är tillgängliga för resor.
-   - <strong>Frekvensen för ignorerade profiler har överskridits</strong> - Profilförhållandet ignoreras för angivna profiler under de senaste 5 minuterna
-   - <strong>Felfrekvens för anpassad åtgärd överskreds</strong> - Förhållandet mellan anpassade åtgärdsfel och lyckade HTTP-anrop under de senaste 5 minuterna överskred tröskelvärdet
-   - <strong>Profilens felfrekvens har överskridits</strong> - Profilernas felförhållande till de angivna profilerna under de senaste 5 minuterna har överskridit tröskelvärdet
+   &#x200B;- <strong>Frekvensen för ignorerade profiler har överskridits</strong> - Profilförhållandet ignoreras för angivna profiler under de senaste 5 minuterna
+   &#x200B;- <strong>Felfrekvens för anpassad åtgärd överskreds</strong> - Förhållandet mellan anpassade åtgärdsfel och lyckade HTTP-anrop under de senaste 5 minuterna överskred tröskelvärdet
+   &#x200B;- <strong>Profilens felfrekvens har överskridits</strong> - Profilernas felförhållande till de angivna profilerna under de senaste 5 minuterna har överskridit tröskelvärdet
 
   Mer information finns i den [detaljerade dokumentationen](../reports/alerts.md).
 
