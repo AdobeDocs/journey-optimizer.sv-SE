@@ -7,7 +7,7 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: aa1df60e810cac63af52caaebd8d521c9ad91fb5
+source-git-commit: eaf35e2c75bde0c8ce613b10fd7945cb707e1c7a
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 5%
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation januari 26 {#latest-rn}
 
@@ -35,7 +35,7 @@ Avsnitten [Funktioner](#jan-26-01-features) och [Förbättringar](#jan-26-01-imp
 
 <!-- **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date. 
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -131,7 +131,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 #### AI
 
-* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att upptäcka potentiella problem med <strong>läsbarhet</strong>, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor. [Läs mer](../content-management/brands-score.md#validate-quality). [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470550/?captions=swe&learn=on).
+* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att upptäcka potentiella problem med <strong>läsbarhet</strong>, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor. [Läs mer](../content-management/brands-score.md#validate-quality). [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470544/?learn=on).
 
 #### Experience Decision
 
@@ -335,7 +335,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 
   **Obs!**: Den här förbättringen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet).
 
-  Tillgänglighetsdatum: 28 januari 2026.
+  Tillgänglighetsdatum: 29 januari 2026.
 
 * **SMS-webbhooks** - <strong>Webbhooks</strong> stöds nu av alla SMS-providers. Du kan konfigurera varje webkrok baserat på dess avsedda syfte, inkommande webbhooks för att hämta inkommande meddelanden och Feedback-webbhooks för att ta emot leveranskvitton, statusuppdateringar och andra meddelanderelaterade händelser.
 
