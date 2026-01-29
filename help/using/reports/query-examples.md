@@ -8,10 +8,10 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-source-git-commit: 5ff7987c00afda3263cb97654967c5b698f726c2
+source-git-commit: 4a15ee3ac4805880ce80f788e4619b501afb3d8b
 workflow-type: tm+mt
-source-wordcount: '2747'
-ht-degree: 0%
+source-wordcount: '3337'
+ht-degree: 1%
 
 ---
 
@@ -369,27 +369,25 @@ WHERE _experience.journeyOrchestration.serviceType is not null;
 
 Med den här frågan kan du lista alla fel som påträffas under resor när ett meddelande/en åtgärd körs.
 
-_Datasjöfråga_
-
 ```sql
-SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.nodeName=<'message-name'>
+SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) AS ERROR_COUNT 
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.nodeName = '<message-name>'
 AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NULL
 AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>'
 GROUP BY _experience.journeyOrchestration.stepEvents.actionExecutionError
+ORDER BY ERROR_COUNT DESC;
 ```
 
-_Exempel_
+_Exempelutdata_
 
-```sql
-SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.nodeName='Message - 100KB Email with Gateway and Kafkav2'
-AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NULL
-AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f83-9cf5-cfec0fca3d26'
-GROUP BY _experience.journeyOrchestration.stepEvents.actionExecutionError
-```
+| actionExecutionError | ERROR_COUNT |
+|---|---|
+| TimedOut | 145 |
+| ErrorConnecting | 87 |
+| InvalidResponse | 23 |
 
-Den här frågan returnerar alla olika fel som inträffade när en åtgärd kördes i en resa tillsammans med antalet gånger åtgärden utfördes.
+Den här frågan returnerar alla olika fel som inträffade när en åtgärd kördes i en resa tillsammans med antalet gånger som varje fel inträffade, ordnade efter frekvens.
 
 +++
 
@@ -399,25 +397,20 @@ Den här frågan returnerar alla olika fel som inträffade när en åtgärd kör
 
 Den här frågan kontrollerar om en viss profil har påbörjat en resa genom att räkna händelserna som är kopplade till den profilen och den aktuella kombinationen av resan.
 
-_Datasjöfråga_
-
 ```sql
-SELECT count(distinct _id) FROM journey_step_events
-where
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>'
+SELECT count(distinct _id) AS EVENT_COUNT 
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>';
 ```
 
-_Exempel_
+_Exempelutdata_
 
-```sql
-SELECT count(distinct _id) FROM journey_step_events
-where
-_experience.journeyOrchestration.stepEvents.journeyVersionID = 'ec9efdd0-8a7c-4d7a-a765-b2cad659fa4e' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
-```
+| EVENT_COUNT |
+|---|
+| 3 |
 
-Resultatet måste vara större än 0. Den här frågan returnerar det exakta antalet gånger en profil har påbörjat en resa.
+Den här frågan returnerar det exakta antalet gånger en profil har påbörjat en resa. Ett resultat som är större än 0 bekräftar att profilen har passerat resan.
 
 +++
 
@@ -425,51 +418,41 @@ Resultatet måste vara större än 0. Den här frågan returnerar det exakta ant
 
 Metod 1: Om namnet på ditt meddelande inte är unikt i resan (det används på flera platser).
 
-_Datasjöfråga_
-
 ```sql
-SELECT count(distinct _id) FROM journey_step_events WHERE
-_experience.journeyOrchestration.stepEvents.nodeID='<NodeId in the UI corresponding to the message>' AND
-_experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>'
+SELECT count(distinct _id) AS MESSAGE_SENT_COUNT 
+FROM journey_step_events 
+WHERE _experience.journeyOrchestration.stepEvents.nodeID = '<NodeId in the UI corresponding to the message>' 
+AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL 
+AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>';
 ```
 
-_Exempel_
+_Exempelutdata_
 
-```sql
-SELECT count(distinct _id) FROM journey_step_events WHERE
-_experience.journeyOrchestration.stepEvents.nodeID='17ae65a1-02dd-439d-b54e-b56a78520eba' AND
-_experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f83-9cf5-cfec0fca3d26' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
-```
+| MESSAGE_SENT_COUNT |
+|---|
+| 1 |
 
-Resultatet måste vara större än 0. Den här frågan talar bara om för oss om meddelandeåtgärden har utförts på resans sida.
+Ett resultat som är större än 0 bekräftar att meddelandeåtgärden har utförts. Den här frågan talar bara om för oss om meddelandeåtgärden har utförts på resans sida.
 
 Metod 2: Om namnet på ditt meddelande är unikt under resan.
 
-_Datasjöfråga_
-
 ```sql
-SELECT count(distinct _id) FROM journey_step_events WHERE
-_experience.journeyOrchestration.stepEvents.nodeName='<NodeName in the UI corresponding to the message>' AND
-_experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>'
+SELECT count(distinct _id) AS MESSAGE_SENT_COUNT 
+FROM journey_step_events 
+WHERE _experience.journeyOrchestration.stepEvents.nodeName = '<NodeName in the UI corresponding to the message>' 
+AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL 
+AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>';
 ```
 
-_Exempel_
+_Exempelutdata_
 
-```sql
-SELECT count(distinct _id) FROM journey_step_events WHERE
-_experience.journeyOrchestration.stepEvents.nodeID='Message- 100KB Email' AND
-_experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f83-9cf5-cfec0fca3d26' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
-```
+| MESSAGE_SENT_COUNT |
+|---|
+| 1 |
 
-Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
+Frågan returnerar antalet gånger som meddelandet anropades för den valda profilen.
 
 +++
 
@@ -477,27 +460,26 @@ Frågan returnerar listan med alla meddelanden tillsammans med antalet som anrop
 
 Den här frågan hämtar alla slutförda meddelandeåtgärder för en viss profil under de senaste 30 dagarna grupperade efter meddelandenamn.
 
-_Datasjöfråga_
-
 ```sql
-SELECT _experience.journeyOrchestration.stepEvents.nodeName, count(distinct _id) FROM journey_step_events
-WHERE  _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.nodeType = 'action' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' AND
-timestamp > (now() - interval '30' day)
+SELECT _experience.journeyOrchestration.stepEvents.nodeName AS MESSAGE_NAME, 
+       count(distinct _id) AS MESSAGE_COUNT 
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL 
+AND _experience.journeyOrchestration.stepEvents.nodeType = 'action' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' 
+AND timestamp > (now() - interval '30' day)
 GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
+ORDER BY MESSAGE_COUNT DESC;
 ```
 
-_Exempel_
+_Exempelutdata_
 
-```sql
-SELECT _experience.journeyOrchestration.stepEvents.nodeName, count(distinct _id) FROM journey_step_events
-WHERE  _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.nodeType = 'action' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com' AND
-timestamp > (now() - interval '30' day)
-GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
-```
+| MESSAGE_NAME | MESSAGE_COUNT |
+|---|---|
+| Välkomstmeddelande | 1 |
+| Produktrekommendation | 3 |
+| Cart Abandonment Reminder | 2 |
+| Nyhetsbrev varje vecka | 4 |
 
 Frågan returnerar listan med alla meddelanden tillsammans med antalet som anropats för den valda profilen.
 
@@ -507,27 +489,26 @@ Frågan returnerar listan med alla meddelanden tillsammans med antalet som anrop
 
 Den här frågan returnerar alla resor som en viss profil har angivit under de senaste 30 dagarna, tillsammans med antalet poster för varje resa.
 
-_Datasjöfråga_
-
 ```sql
-SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName, count(distinct _id) FROM journey_step_events
-WHERE  _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' AND
-timestamp > (now() - interval '30' day)
+SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME, 
+       count(distinct _id) AS ENTRY_COUNT 
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.nodeType = 'start' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' 
+AND timestamp > (now() - interval '30' day)
 GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
+ORDER BY ENTRY_COUNT DESC;
 ```
 
-_Exempel_
+_Exempelutdata_
 
-```sql
-SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName, count(distinct _id) FROM journey_step_events
-WHERE  _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com' AND
-timestamp > (now() - interval '30' day)
-GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
-```
+| JOURNEY_NAME | POST_COUNT |
+|---|---|
+| Welcome Journey v2 | 1 |
+| Produktrekommendationer | 5 |
+| Återengagemangskampanj | 2 |
 
-Frågan returnerar listan med alla resenamn tillsammans med det antal gånger som den efterfrågade profilen angav resan.
+Frågan returnerar listan med alla resenamn tillsammans med det antal gånger den efterfrågade profilen har angetts för varje resa.
 
 +++
 
@@ -535,25 +516,25 @@ Frågan returnerar listan med alla resenamn tillsammans med det antal gånger so
 
 Den här frågan ger en daglig uppdelning av antalet distinkta profiler som har passerat en resa under en viss tidsperiod.
 
-_Datasjöfråga_
-
 ```sql
-SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.profileID) FROM journey_step_events
+SELECT DATE(timestamp) AS ENTRY_DATE, 
+       count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS PROFILES_COUNT 
+FROM journey_step_events
 WHERE DATE(timestamp) > (now() - interval '<last x days>' day)
 AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>'
 GROUP BY DATE(timestamp)
-ORDER BY DATE(timestamp) desc
+ORDER BY DATE(timestamp) DESC;
 ```
 
-_Exempel_
+_Exempelutdata_
 
-```sql
-SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.profileID) FROM journey_step_events
-WHERE DATE(timestamp) > (now() - interval '100' day)
-AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1'
-GROUP BY DATE(timestamp)
-ORDER BY DATE(timestamp) desc
-```
+| POST_DATE | PROFILES_COUNT |
+|---|---|
+| 2024-11-25 | 1 245 |
+| 2024-11-24 | 1 189 |
+| 2024-11-23 | 15 340 |
+| 2024-11-22 | 1 205 |
+| 2024-11-21 | 1 167 |
 
 Frågan returnerar, för den angivna perioden, antalet profiler som har angetts för resan varje dag. Om en profil anges via flera identiteter räknas den två gånger. Om återinträde är aktiverat kan antalet profiler dupliceras över olika dagar om det återgick till resan på en annan dag.
 
@@ -568,8 +549,6 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 
 Den här frågan beräknar varaktigheten för ett målgruppsexportjobb genom att hitta tidsskillnaden mellan när jobbet placerades i kö och när det slutfördes.
 
-_Datasjöfråga_
-
 ```sql
 select DATEDIFF (minute,
               (select timestamp
@@ -579,20 +558,6 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'queued
               (select timestamp
                 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finished')) AS export_job_runtime;
-```
-
-_Exempel_
-
-```sql
-select DATEDIFF (minute,
-              (select timestamp
-                where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'queued') ,
-              (select timestamp
-                where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finished')) AS export_job_runtime;
 ```
 
@@ -604,21 +569,10 @@ Frågan returnerar tidsskillnaden i minuter, mellan den tidpunkt då målgruppen
 
 Den här frågan räknar antalet distinkta profiler som ignorerades på grund av instansdupliceringsfel under Läs publik-aktiviteten.
 
-_Datasjöfråga_
-
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_DUPLICATION'
-```
-
-_Exempel_
-
-```sql
-SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_DUPLICATION'
 ```
 
@@ -630,21 +584,10 @@ Frågan returnerar alla profil-ID:n som ignorerades av resan eftersom de var dub
 
 Den här frågan returnerar antalet profiler som ignorerades eftersom de hade ett ogiltigt namnutrymme eller saknades en identitet för det önskade namnutrymmet.
 
-_Datasjöfråga_
-
 ```sql
 SELECT count(*) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_BAD_NAMESPACE'
-```
-
-_Exempel_
-
-```sql
-SELECT count(*) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_BAD_NAMESPACE'
 ```
 
@@ -656,21 +599,10 @@ Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom de hade
 
 Den här frågan räknar de profiler som ignorerades eftersom de saknade en identitetskarta som krävs för körning av resan.
 
-_Datasjöfråga_
-
 ```sql
 SELECT count(*) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NO_IDENTITY_MAP'
-```
-
-_Exempel_
-
-```sql
-SELECT count(*) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NO_IDENTITY_MAP'
 ```
 
@@ -682,21 +614,10 @@ Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom identit
 
 Den här frågan identifierar profiler som ignorerades när resan kördes i testläge, men profilen hade inte attributet testProfile inställt på true.
 
-_Datasjöfråga_
-
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NOT_A_TEST_PROFILE'
-```
-
-_Exempel_
-
-```sql
-SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NOT_A_TEST_PROFILE'
 ```
 
@@ -708,21 +629,10 @@ Frågan returnerar alla profil-ID:n som ignorerades under resan eftersom exportj
 
 Den här frågan returnerar antalet profiler som ignorerades på grund av interna systemfel under körningen.
 
-_Datasjöfråga_
-
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_INTERNAL'
-```
-
-_Exempel_
-
-```sql
-SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_INTERNAL'
 ```
 
@@ -1033,8 +943,6 @@ Den här frågan returnerar alla händelser (externa händelser/målgruppsklassi
 
 Den här frågan räknar antalet gånger en affärshändelse har tagits emot av en resa, grupperad efter datum, inom en angiven tidsram.
 
-_Datasjöfråga_
-
 ```sql
 SELECT DATE(timestamp), count(distinct _id)
 FROM journey_step_events
@@ -1045,42 +953,17 @@ _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
 WHERE DATE(timestamp) > (now() - interval '<last x hours>' hour)
 ```
 
-_Exempel_
-
-```sql
-SELECT DATE(timestamp), count(distinct _id)
-FROM journey_step_events
-where
-_experience.journeyOrchestration.stepEvents.journeyVersionID = 'b1093bd4-11f3-44cc-961e-33925cc58e18' AND
-_experience.journeyOrchestration.stepEvents.nodeName = 'TEST_MLTrainingSession' AND
-_experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
-WHERE DATE(timestamp) > (now() - interval '6' hour)
-```
-
 +++
 
 +++Kontrollera om en extern händelse för en profil ignorerades eftersom ingen relaterad resa hittades
 
 Den här frågan identifierar när en extern händelse för en viss profil ignorerades eftersom ingen aktiv eller matchande resa har konfigurerats för att ta emot händelsen.
 
-_Datasjöfråga_
-
 ```sql
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
 where
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '<eventId>' AND
 _experience.journeyOrchestration.profile.ID = '<profileID>' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
-```
-
-_Exempel_
-
-```sql
-SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
-where
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '515bff852185e434ca5c83bcfc4f24626b1545ca615659fc4cfff91626ce61a6' AND
-_experience.journeyOrchestration.profile.ID = 'mandee@adobe.com' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```
@@ -1093,26 +976,12 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 
 Den här frågan hämtar externa händelser som ignorerats för en viss profil på grund av interna tjänstfel, tillsammans med händelse-ID och felkod.
 
-_Datasjöfråga_
-
 ```sql
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp), _experience.journeyOrchestration.serviceEvents.dispatcher.eventID, _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode
 FROM journey_step_events
 where
 _experience.journeyOrchestration.profile.ID='<profileID>' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventID='<eventID>' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
-```
-
-_Exempel_
-
-```sql
-SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp), _experience.journeyOrchestration.serviceEvents.dispatcher.eventID, _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode
-FROM journey_step_events
-where
-_experience.journeyOrchestration.profile.ID='mandee@adobe.com' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventID='81c51be978d8bdf9ef497076b3e12b14533615522ecea9f5080a81c736491656' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
 ```
@@ -1124,16 +993,6 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 +++Kontrollera antalet händelser som ignoreras av stateMachine av errorCode
 
 Den här frågan sammanställer alla händelser som ignoreras av transporttillståndsdatorn, grupperade efter felkod, för att hjälpa till att identifiera de vanligaste orsakerna till ignorering.
-
-_Datasjöfråga_
-
-```sql
-SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, COUNT() FROM journey_step_events
-where
-_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' GROUP BY _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode
-```
-
-_Exempel_
 
 ```sql
 SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, COUNT() FROM journey_step_events
@@ -1149,19 +1008,6 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 
 Den här frågan identifierar alla händelser som har ignorerats eftersom en profil försökte att ange en resa igen när återinträde inte var tillåtet i resekonfigurationen.
 
-_Datasjöfråga_
-
-```sql
-SELECT DATE(timestamp), _experience.journeyOrchestration.profile.ID,
-_experience.journeyOrchestration.journey.versionID,
-_experience.journeyOrchestration.serviceEvents.stateMachine.eventCode 
-FROM journey_step_events
-where
-_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
-```
-
-_Exempel_
-
 ```sql
 SELECT DATE(timestamp), _experience.journeyOrchestration.profile.ID,
 _experience.journeyOrchestration.journey.versionID,
@@ -1175,29 +1021,175 @@ Lär dig hur du [felsöker ignorerade händelsetyper i travel_step_events](../re
 
 +++
 
+## Frågor för aktiveringsbara profiler {#engageable-profiles-queries}
+
+Med hjälp av de här frågorna kan du övervaka och analysera hur många profiler du kan aktivera. En engagerande profil är en unik profil som har använts under resor eller kampanjer de senaste tolv månaderna. Läs mer om [Engagerbara profiler och licensanvändning](../audience/license-usage.md#what-is-engageable-profile).
+
+>[!IMPORTANT]
+>
+>**Bästa tillvägagångssätt för att fråga efter engagerande profiler:**
+>* Kontrollera att alla icke-aggregerade fält inkluderas i `GROUP BY`-satsen
+>* Undvik att referera till datauppsättningar som inte finns i sandlådan - bekräfta datauppsättningsnamnen i plattformens användargränssnitt
+>* Använd `distinct` när du räknar unika profiler för att undvika dubbletter i identitetsnamnutrymmen
+>* När du använder `LIMIT` placerar du den i slutet av frågan efter `ORDER BY` -satser
+
++++Räkna unika profiler som används av en viss resa
+
+Den här frågan returnerar antalet distinkta profiler som har använts under en viss resa, vilket ökar antalet profiler som kan aktiveras.
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>'
+AND timestamp > (now() - interval '12' month);
+```
+
+Den här frågan hjälper dig att förstå hur många unika profiler en viss resa har bidragit till antalet [aktiverbara profiler](../audience/license-usage.md) under de senaste 12 månaderna.
+
++++
+
++++Antal profiler per resa de senaste 12 månaderna
+
+Den här frågan visar antalet unika profiler som använts av varje resa i din organisation under de senaste 12 månaderna, vilket hjälper dig att identifiera vilka resor som bidrar mest till ditt [engagerande profilantal](../audience/license-usage.md).
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '12' month)
+GROUP BY 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName
+ORDER BY ENGAGED_PROFILES DESC;
+```
+
+_Exempelutdata_
+
+| JOURNEY_VERSION_ID | JOURNEY_NAME | ENGAGED_PROFILES |
+|---|---|---|
+| 67b14482-143e-4f83-9cf5-cfec0fca3d26 | Välkomstkampanj v2 | 125 450 |
+| a3c21b89-456d-4e21-b8f3-9a8e7c6d5432 | Produktlansering | 98 230 |
+| f9e8d7c6-b5a4-3210-9876-543210fedcba | Återengagemang - flöde | 45 670 |
+
+Detta hjälper er att identifiera vilka resor som engagerar de flesta profiler och som bidrar mest till att antalet engagerande profiler ökar.
+
+>[!NOTE]
+>
+>Den här frågegruppen sorteras efter både `journeyVersionID` och `journeyVersionName`. Båda fälten måste inkluderas i `GROUP BY`-satsen eftersom de är markerade i frågan. Om du utelämnar fält från `GROUP BY`-satsen misslyckas frågan.
+
++++
+
++++Räkna profiler som använts av resor dagligen under de senaste 30 dagarna
+
+Den här frågan ger en daglig uppdelning av nyligen engagerade profiler, vilket hjälper dig att identifiera toppar i [antal aktiverbara profiler](../audience/license-usage.md).
+
+```sql
+SELECT 
+    DATE(timestamp) AS ENGAGEMENT_DATE,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '30' day)
+GROUP BY DATE(timestamp)
+ORDER BY ENGAGEMENT_DATE DESC;
+```
+
+_Exempelutdata_
+
+| ENGAGEMENT_DATE | ENGAGED_PROFILES |
+|---|---|
+| 2024-11-25 | 8 450 |
+| 2024-11-24 | 7 820 |
+| 2024-11-23 | 125 340 |
+| 2024-11-22 | 9 230 |
+| 2024-11-21 | 8 670 |
+
+Med den här typen av utdata kan du övervaka dagliga trender och identifiera när ett stort antal profiler används. I det här exemplet visar den 23 november en betydande topp (125 340 profiler) jämfört med det vanliga dagliga engagemanget (~8 000 profiler), vilket skulle göra det värt att undersöka vilken resa eller kampanj som orsakade ökningen av antalet [engagerande profiler](../audience/license-usage.md).
+
++++
+
++++Identifiera resor som nyligen engagerade stora målgrupper
+
+Den här frågan hjälper dig att identifiera vilka resor som har engagerat ett stort antal nya profiler under de senaste tidsperioderna, vilket kan förklara plötsliga ökningar i antalet [aktiverbara profiler](../audience/license-usage.md).
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
+    DATE(timestamp) AS ENGAGEMENT_DATE,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '7' day)
+AND _experience.journeyOrchestration.stepEvents.nodeType = 'start'
+GROUP BY 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName,
+    DATE(timestamp)
+HAVING count(distinct _experience.journeyOrchestration.stepEvents.profileID) > 1000
+ORDER BY ENGAGEMENT_DATE DESC, ENGAGED_PROFILES DESC;
+```
+
+_Exempelutdata_
+
+| JOURNEY_VERSION_ID | JOURNEY_NAME | ENGAGEMENT_DATE | ENGAGED_PROFILES |
+|---|---|---|---|
+| 67b14482-143e-4f83-9cf5-cfec0fca3d26 | Black Friday Campaign | 2024-11-23 | 125 340 |
+| a3c21b89-456d-4e21-b8f3-9a8e7c6d5432 | Produktlansering | 2024-11-22 | 45 230 |
+| f9e8d7c6-b5a4-3210-9876-543210fedcba | Nyhetsbrev - helgdag | 2024-11-21 | 32 150 |
+
+Den här frågan filtrerar efter resor som använt mer än 1 000 profiler per dag de senaste 7 dagarna. Utdata visar vilka specifika resor och datum som ligger bakom stora profilåtaganden. Justera tröskelvärdet för `HAVING`-satsen baserat på dina behov (ändra t.ex. `> 1000` till `> 10000` för större tröskelvärden).
+
++++
+
++++Totalt antal unika profiler som använts under alla resor de senaste tolv månaderna
+
+Den här frågan innehåller ett antal unika profiler som använts under alla resor de senaste 12 månaderna, vilket ger dig en översikt över ditt resebaserade engagemang.
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS TOTAL_ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '12' month);
+```
+
+_Exempelutdata_
+
+| TOTAL_ENGAGED_PROFILES |
+|---|
+| 2 547 890 |
+
+Detta enda nummer representerar det totala antalet unika profiler som har använts av minst en resa under de senaste 12 månaderna.
+
+>[!NOTE]
+>
+>Den här frågan räknar distinkta profil-ID:n i datauppsättningen för kundstegshändelser. Det faktiska antalet profiler som kan aktiveras och som visas på [kontrollpanelen för licensanvändning](../audience/license-usage.md) kan skilja sig något, eftersom den även innehåller profiler som används via kampanjer och andra Journey Optimizer-funktioner bortom resor.
+
++++
+
 ## Vanliga resebaserade frågor {#journey-based-queries}
 
 +++Antal dagliga aktiva resor
 
 Den här frågan returnerar ett dagligt antal unika reseversioner som har haft aktivitet, vilket hjälper dig att förstå mönster för körning av resan över tid.
 
-_Datasjöfråga_
-
 ```sql
-SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) FROM journey_step_events
+SELECT DATE(timestamp) AS ACTIVITY_DATE, 
+       count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) AS ACTIVE_JOURNEYS
+FROM journey_step_events
 WHERE DATE(timestamp) > (now() - interval '<last x days>' day)
 GROUP BY DATE(timestamp)
-ORDER BY DATE(timestamp) desc
+ORDER BY DATE(timestamp) DESC;
 ```
 
-_Exempel_
+_Exempelutdata_
 
-```sql
-SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) FROM journey_step_events
-WHERE DATE(timestamp) > (now() - interval '100' day)
-GROUP BY DATE(timestamp)
-ORDER BY DATE(timestamp) desc
-```
+| ACTIVITY_DATE | ACTIVE_JOURNEYS |
+|---|---|
+| 2024-11-25 | 12 |
+| 2024-11-24 | 15 |
+| 2024-11-23 | 14 |
+| 2024-11-22 | 11 |
+| 2024-11-21 | 13 |
 
 Frågan returnerar, för den angivna perioden, antalet unika resor som utlöstes varje dag. En enda resa som utlöses på flera dagar räknas en gång om dagen.
 
