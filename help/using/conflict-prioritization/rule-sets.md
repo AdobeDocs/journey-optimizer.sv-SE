@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 keywords: meddelande, frekvens, regler, tryck
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-source-git-commit: 9613586e576c9010917352b721b4b335418a4e40
+source-git-commit: a7d2557790054e7c6e28ca3ffa937f454c4b004c
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Du kan skapa två typer av regeluppsättningar:
 * Regeluppsättningar för **Kanal** tillämpar regler på kommunikationskanaler. De gör att du kan ange:
 
    * **Regler för frekvensbegränsning** - *Skicka inte fler än 1 e-post eller SMS-kommunikation per dag.*
-   * **Regler för tysta timmar** (begränsad tillgänglighet) - *Skicka inte e-postmeddelanden utanför 8:00-9:00-tiden.*
+   * **Regler för tysta timmar** - *Skicka inte e-postmeddelanden utanför 8:00-9:00-tiden.*
 
 * Regeluppsättningar för **resor** tillämpar regler för antal inmatningar och samtidighet på en resa. Ange till exempel inte profiler i mer än en resa samtidigt.
 
@@ -80,7 +80,7 @@ Utöver den här regeluppsättningen för global standardregeluppsättning kan d
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"
 >title="Regeltyp"
->abstract="Välj önskad regeltyp för kanalregeluppsättningen: Använd typen **Frekvensbegränsning** för att tillämpa regler för appning på kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag. Välj **Tysta timmar** (tillgängligt i begränsad tillgänglighet) om du vill definiera tidsbaserade undantag för att säkerställa att inga meddelanden skickas under specifika tidsperioder."
+>abstract="Välj önskad regeltyp för kanalregeluppsättningen: Använd typen **Frekvensbegränsning** för att tillämpa regler för appning på kommunikationskanaler. Skicka till exempel inte mer än 1 e-post eller SMS-kommunikation per dag. Välj **Tysta timmar** om du vill definiera tidsbaserade undantag så att inga meddelanden skickas under specifika tidsperioder."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_duration"
@@ -124,7 +124,7 @@ Följ stegen nedan för att skapa en regeluppsättning.
 
    * [Resekurser](../conflict-prioritization/journey-capping.md)
    * [Frekvensbegränsning per kanal och kommunikationstyp](../conflict-prioritization/channel-capping.md)
-   * [Tysta timmar](../conflict-prioritization/quiet-hours.md) (tillgängligt i begränsad tillgänglighet)
+   * [Tysta timmar](../conflict-prioritization/quiet-hours.md)
 
 1. Klicka på **[!UICONTROL Save]** för att bekräfta att regeln har skapats. Meddelandet läggs till i regeluppsättningen med statusen **[!UICONTROL Draft]**.
 
@@ -180,4 +180,4 @@ Dess status ändras till **[!UICONTROL Inactive]** och regeln gäller inte för 
 
 ## Instruktionsvideo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/3444730?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)

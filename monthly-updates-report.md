@@ -5,7 +5,7 @@ title: Uppdateringsrapport för månatlig dokumentation
 description: Lista över nya och uppdaterade dokumentationssidor
 hide: true
 hidefromtoc: true
-source-git-commit: f4eb982ba0840acfe336e759fcbf9cfd47b3b98c
+source-git-commit: a7d2557790054e7c6e28ca3ffa937f454c4b004c
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%
@@ -169,7 +169,7 @@ ht-degree: 0%
 - [Skapa en åtgärdskampanj](help/using/campaigns/create-campaign.md) - 29 okt
 - [Kom igång med kampanjer](help/using/campaigns/get-started-with-campaigns.md) - 29 okt
 - [Få tillgång till och hantera kampanjer](help/using/campaigns/manage-campaigns.md) - 23 okt
-- [Tysta timmar](help/using/campaigns/quiet-hours.md) - 31 okt
+- [Tysta timmar](help/using/conflict-prioritization/quiet-hours.md) - 31 okt
 - [Granska och aktivera en kampanj](help/using/campaigns/trigger-campaigns.md) - 23 okt
 - [Kom igång med kommunikationskanaler i [!DNL Adobe Journey Optimizer]](help/using/channels/gs-channels.md) - 3 nov
 - [Integrera Journey Optimizer med externa system](help/using/configuration/external-systems.md) - 28 okt
@@ -180,7 +180,7 @@ ht-degree: 0%
 - [Skapa ett fragment](help/using/content-management/create-fragments.md) - 7 okt
 - [Hantera fragment](help/using/content-management/manage-fragments.md) - 7 okt
 - [Exempel på datauppsättningsfrågor](help/using/data/datasets-query-examples.md) - 17 okt
-- [Om datauppsättningar TTL-skyddsutkast &#x200B;](help/using/data/datasets-ttl.md) - 28 okt
+- [Om datauppsättningar TTL-skyddsutkast ](help/using/data/datasets-ttl.md) - 28 okt
 - [Skapa ett direktutskick](help/using/direct-mail/create-direct-mail.md) - 15 okt
 - [Designa tillgängligt innehåll](help/using/email/accessible-content.md) - 25 okt
 - [Använd e-post för Designer-innehållskomponenter](help/using/email/content-components.md) - 25 okt

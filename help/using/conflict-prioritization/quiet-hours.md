@@ -7,11 +7,10 @@ feature: Rules
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: meddelande, frekvens, regler, tryck
-source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
+source-git-commit: a7d2557790054e7c6e28ca3ffa937f454c4b004c
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -32,24 +31,21 @@ Genom att effektivisera dessa processer kan ni förbättra kundupplevelsen, spar
 * **Tidsbesparande** - Hantera undantag på ett ställe genom att skapa en **tidsbaserad regel** i stället för att lägga till flera villkorsnoder med anpassade uttryck.\
   <!--* **Extra Safeguard** - Benefit from an extra safeguard in case audience criteria or time-window configurations were incorrectly set, ensuring individuals are still excluded when they should be.-->
 
->[!AVAILABILITY]
->
->Regler för tysta timmar är för närvarande bara tillgängliga för en uppsättning organisationer (begränsad tillgänglighet).  De kommer att vara progressivt tillgängliga för alla kunder i framtida versioner.
-
-
 ➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Skyddsritningar och begränsningar
 
 * **Kanaler som stöds** - E-post, SMS, push och WhatsApp.
-  <!--* **Custom actions** – For custom actions, only quiet hours rules are enforced. If a rule set also includes other rules (e.g., frequency capping), those rules are ignored.-->
+* **Samordnade kampanjer** - Tysta timmar stöds inte för orkestrerade kampanjer.
 * **Spridningsfördröjning** - Det kan ta upp till 12 timmar att tillämpa uppdateringar av en regel för tysta timmar för kanalåtgärder som redan använder den regeln.
-  <!--* **Pre-suppression window** – The system begins suppressing communications 30 minutes before quiet hours start, ensuring that no messages are delivered once the quiet period begins.-->
 * **Högvolymsfördröjning** - Vid kommunikation med stora volymer kan det ta ytterligare tid innan systemet kan börja framtvinga tyst timmes-inaktiveringar.
+
+<!--* **Custom actions** – For custom actions, only quiet hours rules are enforced. If a rule set also includes other rules (e.g., frequency capping), those rules are ignored.-->
+<!--* **Pre-suppression window** – The system begins suppressing communications 30 minutes before quiet hours start, ensuring that no messages are delivered once the quiet period begins.-->
 
 ## Skapa regler för tysta timmar
 
-Om du vill ange tysta timmar skapar du en regel inuti en anpassad regeluppsättning. Följ de här stegen:
+Om du vill ange tysta timmar skapar du en regel inuti en anpassad regeluppsättning. [Lär dig skapa regeluppsättningar](../conflict-prioritization/rule-sets.md#Create). Följ de här stegen:
 
 1. Navigera till **[!UICONTROL Business rules]** för att komma åt lagret för regeluppsättningar.
 
@@ -85,22 +81,21 @@ Om du vill ange tysta timmar skapar du en regel inuti en anpassad regeluppsättn
 
 1. I avsnittet **[!UICONTROL Dates & times]** anger du när tysta timmar ska användas:
 
-   1. Välj **[!UICONTROL Time zone]** som ska användas:
+   1. I listrutan **[!UICONTROL Time zone]** använder du en standardtidszon för alla mottagare i målgruppen, oavsett deras enskilda tidszoner.
 
-      * **[!UICONTROL UTC/GMT]** - Använd ett standard-GMT-tidsfönster för alla mottagare i målgruppen, oavsett deras individuella tidszoner.
-      * **[!UICONTROL Use recipients local time zone]** - Använd tidszonsfältet från varje profil. [Läs mer om hantering av tidszoner under resor](../building-journeys/timezone-management.md#timezone-from-profiles)
+      Välj **[!UICONTROL Use recipients local time zone]** om du vill använda tidszonsfältet från varje profil. [Läs mer om hantering av tidszoner under resor](../building-journeys/timezone-management.md#timezone-from-profiles)
 
-        >[!IMPORTANT]
-        >
-        >Om en profil inte har något tidszonsvärde används inga tysta timmar för den profilen.
+      >[!IMPORTANT]
+      >
+      >Om en profil inte har något tidszonsvärde används inga tysta timmar för den profilen.
 
    1. Ange den tidsperiod under vilken tysta timmar ska gälla.
 
-      * **[!UICONTROL Weekly]** - Välj specifika veckodagar och en tidsrymd. Du kan också använda regeln **[!UICONTROL All day]** (det här alternativet är endast tillgängligt i upp till 3 dagar i följd).
+      * **[!UICONTROL Weekly]** - Välj specifika veckodagar och en tidsrymd. Du kan också använda regeln **[!UICONTROL All day]**.
 
         ![](assets/quiet-hours-weekly.png)
 
-      * **[!UICONTROL Custom date]** - Välj specifika datum i kalendern och en tidsrymd. Du kan också använda regeln **[!UICONTROL All day]** (det här alternativet är endast tillgängligt i upp till 3 dagar i följd).
+      * **[!UICONTROL Custom date]** - Välj specifika datum i kalendern och en tidsrymd. Du kan också använda regeln **[!UICONTROL All day]**.
 
         ![](assets/quiet-hours-custom.png)
 
@@ -116,9 +111,19 @@ Om du vill ange tysta timmar skapar du en regel inuti en anpassad regeluppsättn
 
      >[!NOTE]
      >
-     >Det här alternativet är bara tillgängligt för reseåtgärder. Om det används för en kampanjåtgärd fungerar det på samma sätt som om du väljer alternativet **[!UICONTROL Discard message]**.
+     >Om ett meddelande står i kö för en profil i mer än 7 dagar kommer meddelandet att ignoreras.
 
-   * **[!UICONTROL Discard message]** - Meddelanden skickas aldrig. Om du vill att den resa eller kampanj som innehåller meddelandet ska avslutas med att sändningen avbryts väljer du **[!UICONTROL Discard and exit journey or campaign]**.
+   * **[!UICONTROL Discard message]** - Meddelanden skickas aldrig.
+
+     >[!NOTE]
+     >
+     >Om du väljer **[!UICONTROL Discard]** och tillämpar den här regeln på en reseåtgärd tas profilen bort från meddelandeleveransen och avslutas från resan.
+
+Regeln visas nu i regeluppsättningen. Du kan markera den om du vill visa information om den i egenskapspanelen.
+
+![](assets/quiet-hours-preview.png)
+
+Om regeln är klar aktiverar du den och slutför konfigurationen av regeluppsättningen. [Lär dig skapa och aktivera regeluppsättningar](../conflict-prioritization/rule-sets.md#Create)
 
 ## Använd tysta timmar på resor och kampanjer {#apply}
 
@@ -187,4 +192,4 @@ När din resa eller dina kampanjer har aktiverats och körts kan du visa antalet
 
 Lär dig hur du använder funktionen för tysta timmar i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475856?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3475851?quality=12)
