@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 598164d4b78b21d4a17038a364b15253fdcf55ef
+source-git-commit: 50dbebcd16631f5df624c962af1a84da0846f53d
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1849'
 ht-degree: 5%
 
 ---
@@ -25,17 +25,17 @@ ht-degree: 5%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation januari 26 {#latest-rn}
 
-**Releasedatum**: 27-28 januari 2026
+<!--**Release date**: January 27-28, 2026-->
 
 Avsnitten [Funktioner](#jan-26-01-features) och [Förbättringar](#jan-26-01-improv) omfattar funktioner som redan är tillgängliga, medan [Kommer snart](#jan-26-01-coming-soon) listar objekt som är schemalagda för ett senare tillgänglighetsdatum.
 
 <!-- **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date. 
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -58,6 +58,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Den här funktionen är bara tillgänglig för e-post- och SMS-kanalen, för organisationer som har köpt tillägget för meddelandeexport. Kontakta din Adobe-representant om du vill veta mer.</p>
 <p><img src="assets/do-not-localize/message-export.gif"/></p>
 <p>Mer information finns i den <a href="../configuration/message-export.md#message-export">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 28 januari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -76,6 +77,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p><img src="assets/do-not-localize/web-push.gif"/></p>
 <p>Den här funktionen lanserades tidigare i Beta och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p>Mer information finns i den <a href="../push/push-configuration-web.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 28 januari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -93,6 +95,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Direktreklamkanalen finns nu tillgänglig i samordnade kampanjer. <strong>Direkte-postaktiviteten</strong> gör det lättare att skicka direktreklam i din samordnade kampanj, både för engångs- och återkommande meddelanden. Den används för att automatisera processen att generera den <strong>extraheringsfil</strong> som krävs av direktmeddelandeleverantörer. Ni kan kombinera kanalaktiviteter i den orkestrerade kampanjarbetsytan för att skapa flerkanalskampanjer som kan utlösa åtgärder baserat på kundbeteende och data.</p>
 <p><img src="assets/do-not-localize/dm-oc.gif"/></p>
 <p>Mer information finns i den <a href="../orchestrated/activities/channels.md#channel">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 28 januari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -155,7 +158,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 #### AI
 
-* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att upptäcka potentiella problem med <strong>läsbarhet</strong>, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor. [Läs mer](../content-management/brands-score.md#validate-quality). [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470550/?captions=swe&learn=on).
+* **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att upptäcka potentiella problem med <strong>läsbarhet</strong>, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor. [Läs mer](../content-management/brands-score.md#validate-quality). [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470544/?learn=on).
 
 #### Experience Decision
 
@@ -163,9 +166,16 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Kombinera inbyggda meddelandeåtgärder och Adobe Campaign-meddelandeåtgärder** - Med Journey Optimizer kan du nu kombinera <strong>Adobe Campaign v7/v8</strong>-meddelandeåtgärder med <strong>inbyggda kanalåtgärder</strong> under samma resa. [Läs mer](../building-journeys/using-adobe-campaign-v7-v8.md)
 
+  Tillgänglighetsdatum: 27 januari 2026.
+
 * **Nyttolast för anpassat åtgärdsfelsvar** - Du kan nu definiera en valfri <strong>felsvarsnyttolast</strong> för anpassade åtgärder. När ett anrop misslyckas visas felnyttolasten i kundresans kontext (under åtgärdens errorResponse-nod) och är tillgänglig i <strong>timeout/error-grenen</strong>, tillsammans med `jo_status_code`, som stöd för större reservlogik och felsökning. [Läs mer](../action/action-response.md)
 
+  Tillgänglighetsdatum: 27 januari 2026.
+
 * **Verifiering av nyttolastens storlek på resan** - Journey Optimizer validerar nu <strong>nyttolaststorlekarna</strong> för att säkerställa optimala prestanda och systemstabilitet. När du skapar eller publicerar resor får du tydliga <strong>varningar och fel</strong> om nyttolaststorlekarna närmar sig eller överskrider de rekommenderade gränserna, tillsammans med användbar vägledning för att optimera konfigurationen av din resa. Denna proaktiva validering hjälper er att identifiera potentiella problem tidigt och att upprätthålla kundresan. [Läs mer](../start/guardrails.md#journey-payload-size)
+
+  Tillgänglighetsdatum: 27 januari 2026.
+
 
 * **Resensaviseringar** - Nya <strong>förkonfigurerade aviseringar</strong> är tillgängliga för resor.
    * <strong>Frekvensen för ignorerade profiler har överskridits</strong> - Profilförhållandet ignoreras för angivna profiler under de senaste 5 minuterna
@@ -194,15 +204,21 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Användargenererat stöd för metadata** - Hjälpfunktionen <strong>executionMetadata</strong> är nu tillgänglig i personaliseringsredigeraren för Orchestrated-kampanjer, vilket gör att du kan bifoga kontextinformation till alla interna åtgärder och lagra den i en datauppsättning för export till externa system. [Läs mer](../personalization/functions/helpers.md#execution-metadata)
 
+  Tillgänglighetsdatum: 27 januari 2026.
+
 #### Kampanjer
 
 * **Schemalägg kampanj med profiltidszon** - Kampanjplanering kan nu använda varje profils <strong>tidszon</strong> för att leverera meddelanden vid den avsedda lokala tidpunkten. [Läs mer](../campaigns/campaign-schedule.md)
 
   **Obs!**: Den här förbättringen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet).
 
+  Tillgänglighetsdatum: 27 januari 2026.
+
 #### Behörigheter
 
 * **Förhindra självgodkännande för resor och kampanjer** - Ett alternativ lades till när <strong>Godkännandeprincip</strong> skapades eller ställdes in för att förhindra att den som skapar kampanjer eller reser <strong>godkänner sina egna objekt</strong>. [Läs mer](../test-approve/approval-policies.md)
+
+  Tillgänglighetsdatum: 27 januari 2026.
 
 ## Kommer snart {#jan-26-01-coming-soon}
 
@@ -220,7 +236,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <tr>
 <td>
 <p>Kanalen <strong>Direktreklam</strong> har tidigare begränsats till kampanjer och är nu tillgänglig på arbetsytan så att du kan lägga in direktreklam på dina resor. Direktreklam kan nu användas i både <strong>batch- och 1:1-resescenarier</strong>, med stöd för filextraheringskonfiguration och tidsbaserade frekvensinställningar.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p>Tillgänglighetsdatum: 28 januari 2026</p>
 </td>
 </tr>
