@@ -10,9 +10,9 @@ mini-toc-levels: 1
 level: Beginner
 keywords: hantera kampanjer, status, schema, åtkomst, optimering
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
-source-git-commit: 5623511099f7b09fa95bccb411776bc4416637fd
+source-git-commit: 478bd6df8a82c9e37ec9319dedb27d99c021ee99
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1622'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ Dessutom finns det ett sökfält och filter som gör det enklare att söka i lis
 * **[!UICONTROL Add to package]** - Lägg till kampanjen i ett paket för att exportera den till en annan sandlåda. [Lär dig hur du exporterar objekt →](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - Om en ny version av kampanjen har skapats och ännu inte har aktiverats kan du komma åt dess utkastversion med den här åtgärden.
 
+**Endast för samordnade kampanjer:**
+
+* **[!UICONTROL Back to draft]** - Avpublicera och återställ en kampanj till utkaststatus för felåterställning. Den här åtgärden är tillgänglig när en schemalagd kampanj ännu inte har startats eller när en aktiv kampanj påträffar ett fel innan några körningar har slutförts. [Läs mer om att återställa kampanjer →](../orchestrated/start-monitor-campaigns.md#back-to-draft)
+
 ## Förstå kampanjstatus {#statuses}
 
 Varje kampanj går igenom en livscykel som återspeglas av dess status i gränssnittet. Genom att förstå dessa statusar kan du veta vilka åtgärder som är tillgängliga och vad du ska göra härnäst.
@@ -108,7 +112,7 @@ Varje kampanj går igenom en livscykel som återspeglas av dess status i gränss
 |--------|:----------------:|:-----------------------:|:----------------------:|---------------|--------------|
 | **[!UICONTROL Draft]** | ✅ | ✅ | ✅ | Redigeras, aktiveras inte | Fortsätt redigera eller [aktivera kampanj](review-activate-campaign.md) |
 | **[!UICONTROL Scheduled]** | ✅ | ✅ | ✅ | Konfigurerad för ett specifikt startdatum | Vänta på start, [ändra vid behov](#modify) eller [visa i kalendern](#calendar) |
-| **[!UICONTROL Live]** | ✅ | ✅ | ✅ | Aktiverat och körs | [Övervakningsprestanda](../reports/campaign-global-report-cja.md), [skapa ny version](#modify) vid behov |
+| **[!UICONTROL Live]** | ✅ | ✅ | ✅ | Aktiverat och körs | [Övervakningsprestanda](../reports/campaign-global-report-cja.md), [skapa ny version](#modify) om det behövs. För samordnade kampanjer: [återgå till utkast](../orchestrated/start-monitor-campaigns.md#back-to-draft) för schemalagda kampanjer som inte har startats ännu eller kampanjer med körningsfel innan några meddelanden skickas |
 | **[!UICONTROL In review]** | ✅ | ✅ | — | Skickat för godkännande | Vänta på [godkännande](../test-approve/gs-approval.md) eller ändra |
 | **[!UICONTROL Stopped]** | ✅ | ✅ | ✅ | Manuellt stoppad, kan inte återaktiveras | [Duplicera för återanvändning](#duplicate-a-campaign) |
 | **[!UICONTROL Completed]** | ✅ | ✅ | ✅ | Körningen är klar (autotilldelad 3 dagar efter aktivering eller vid slutdatumet för återkommande) | [Visa rapporter](../reports/campaign-global-report-cja.md), [arkiv](#archive-a-campaign) eller [dubblett](#duplicate-a-campaign) |
@@ -261,7 +265,7 @@ Kampanjen skapas och läggs till i kampanjlistan.
 
 * **Kampanjkonfiguration** - [Kampanjegenskaper](campaign-properties.md) | [Kampanjåtgärder och -kanaler](campaign-action.md) | [Design av kampanjinnehåll](campaign-content.md) | [Kampanjmålgrupp](campaign-audience.md) | [Kampanjplanering](campaign-schedule.md)
 
-* **Avancerade funktioner** - [Arbetsflöden för godkännande](../test-approve/gs-approval.md) | [Konflikthantering och -prioritering](../conflict-prioritization/gs-conflict-prioritization.md) | [Frekvensbegränsning per kanal &#x200B;](../conflict-prioritization/channel-capping.md) | [Prioritetspoäng](../conflict-prioritization/priority-scores.md) | [Exportera kampanjer till andra sandlådor](../configuration/copy-objects-to-sandbox.md)
+* **Avancerade funktioner** - [Arbetsflöden för godkännande](../test-approve/gs-approval.md) | [Konflikthantering och -prioritering](../conflict-prioritization/gs-conflict-prioritization.md) | [Frekvensbegränsning per kanal ](../conflict-prioritization/channel-capping.md) | [Prioritetspoäng](../conflict-prioritization/priority-scores.md) | [Exportera kampanjer till andra sandlådor](../configuration/copy-objects-to-sandbox.md)
 
 * **Övervakning och optimering** - [Kampanjrapporter (CJA)](../reports/campaign-global-report-cja.md) | [Konfigurera aviseringar](../reports/alerts.md)
 

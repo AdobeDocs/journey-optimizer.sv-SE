@@ -6,9 +6,9 @@ description: Lär dig hur du startar och övervakar samordnade kampanjer med Ado
 feature: Monitoring
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 version: Campaign Orchestration
-source-git-commit: e486aae3a6635d8eec0c398bfe03b6a63a007ef1
+source-git-commit: 478bd6df8a82c9e37ec9319dedb27d99c021ee99
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,22 @@ När kampanjen är testad och klar klickar du på **[!UICONTROL Publish]** för 
 Det visuella flödet startar om och verkliga profiler börjar flöda genom resan i realtid.
 
 Om publiceringsåtgärden misslyckas (t.ex. på grund av att meddelandeinnehåll saknas) får du ett varningsmeddelande och måste åtgärda problemet innan du försöker igen. När publiceringen är klar börjar kampanjen köras (omedelbart eller enligt schema), går från statusen **Utkast** till **Live** och blir&quot;Skrivskyddad&quot;.
+
+## Återställa en kampanj till utkast {#back-to-draft}
+
+Med funktionen **[!UICONTROL Back to draft]** kan du avpublicera och återställa en orkestrerad kampanj till utkaststatus i särskilda situationer. Detta är utformat som en återställningsmekanism som åtgärdar problem innan meddelanden skickas, samtidigt som integriteten i kampanjens livscykel bibehålls.
+
+Det här alternativet är tillgängligt i två scenarier:
+
+* **Schemalagda kampanjer som väntar på körning**: När en kampanj är schemalagd att köras vid en viss tidpunkt och den tidpunkten inte har uppnåtts kan du använda tillbaka till utkastet för att granska och ändra kampanjen innan den börjar köras. Om kampanjen är återkommande (till exempel en daglig schemalagd kampanj) och minst en körning redan har utförts, är alternativet inte längre tillgängligt. I så fall bör du [duplicera kampanjen](../campaigns/manage-campaigns.md#duplicate-a-campaign) i stället.
+
+* **Live-kampanjer med körningsfel**: När en kampanj har påträffat ett fel under körningen och är pausad och inga kampanjkörningar har slutförts ännu kan du använda utkast för att åtgärda felet och publicera kampanjen igen.
+
+Om du vill växla tillbaka en kampanj till utkaststatus öppnar du den orkestrerade kampanjen och klickar på knappen **[!UICONTROL Back to draft]** i verktygsfältet för kampanjarbetsytan.
+
+![](assets/back-to-draft.png)
+
+Kampanjen är opublicerad och arbetsflödet stoppas. Kampanjen återgår till statusen **Utkast**. Du kan nu åtgärda de identifierade problemen, [testa kampanjen](#test) och [publicera den](#publish) igen när det är klart.
 
 ## Bekräfta att meddelandet skickas {#confirm-sending}
 

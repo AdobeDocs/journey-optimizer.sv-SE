@@ -5,9 +5,9 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 266bf3afde663b17aedce5fb51e7c5f424fee9ad
+source-git-commit: 478bd6df8a82c9e37ec9319dedb27d99c021ee99
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1878'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Nedan hittar du Frågor och svar om Adobe Journey Optimizer samordnade kampanjer.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ Vad är Campaign-samordning?
 
@@ -64,7 +64,7 @@ För att få åtkomst till kampanjsamordning måste din licens innehålla anting
 **Läs mer**
 
 * [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)
-* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
 +++
 
@@ -140,6 +140,14 @@ Yes. Campaign orchestration is natively integrated with:
 * **Customer Journey Analytics**: Campaign orchestration reports are available.  
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
 * **Federated Audience Composition (FAC)**: Available as an add-on.  -->
+
++++ Kan jag återställa en live-orkestrerad kampanj till utkast?
+
+Ja, i vissa situationer. Alternativet **[!UICONTROL Back to draft]** är utformat som en återställningsmekanism som avpublicerar och återställer en kampanj till utkaststatus.
+
+Det här alternativet är tillgängligt för schemalagda kampanjer som väntar på att köras eller för direktkampanjer med körningsfel. [Lär dig hur du återställer en livekampanj till utkastet](start-monitor-campaigns.md#back-to-draft)
+
++++
 
 +++ Vilka kanaler stöds?
 
@@ -375,4 +383,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Samordnade kampanjer skyddar mot detaljer och begränsningar](guardrails.md)
 * [Kom igång med scheman och datauppsättningar i samordnade kampanjer](gs-schemas.md)
 * [Skapa din första samordnade kampanj](gs-campaign-creation.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
