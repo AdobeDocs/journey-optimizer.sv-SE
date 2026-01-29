@@ -7,9 +7,9 @@ feature: Whatsapp, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
-source-git-commit: bd0f1f6b63616bcef4cfc50706e42612e0a04e89
+source-git-commit: 8b042e4750dd7f7d841717f648afe120d0bdfc4a
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1054'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,13 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 >
 >Utan angivna nyckelord för anmälan eller avanmälan aktiveras inte standardmeddelanden för samtycke.
 
-När dina API-autentiseringsuppgifter för whatsApp har skapats kan du nu konfigurera Webhooks så att inkommande svar hämtas för hantering av medgivande för anmälan och avanmälan, och så att du får leveransrapporter som läskvitton när de är tillgängliga.
+När dina API-autentiseringsuppgifter för whatsApp har skapats kan du nu konfigurera Webhooks till:
+
+* **Hämta inkommande svar** för hantering av godkännande av anmälan och avanmälan
+* **Ta emot leveransrapporter**, t.ex. läskvitton (om tillgängligt) och meddelandeleveransstatus
+* **Aktivera spårningshändelser** för analys och rapportering i Adobe Experience Platform-datauppsättningar
+
+Webhooks fungerar som en kommunikationslänk mellan Meta whatsApp Business Platform och Adobe Journey Optimizer, så att du kan få meddelanden i realtid om meddelandehändelser och användarinteraktioner.
 
 1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL WhatsApp Webhooks]** under **[!UICONTROL WhatsApp settings]** och klicka på knappen **[!UICONTROL Create Webhook]**.
 
@@ -101,6 +107,7 @@ När dina API-autentiseringsuppgifter för whatsApp har skapats kan du nu konfig
    * **[!UICONTROL Opt-in Keywords]**
    * **[!UICONTROL Opt-out Keywords]**
    * **[!UICONTROL Help Keywords]**
+   * **[!UICONTROL Default]** - Reservkategori för alla inkommande meddelanden som inte matchar andra nyckelord. Använd den här kategorin för att aktivera spårningshändelser (öppningar, leveransrapporter) i Adobe Experience Platform datamängder.
 
 1. Ange din **[!UICONTROL Keywords]** och klicka på ![Lägg till](assets/do-not-localize/Smock_AddCircle_18_N.svg).
 
@@ -119,7 +126,7 @@ När dina API-autentiseringsuppgifter för whatsApp har skapats kan du nu konfig
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din WhatsApp-webkrok.
 
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
+1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort din WhatsApp-webkrok.
 
    ![](assets/webhook-5.png)
 
@@ -203,6 +210,6 @@ I videon nedan visas hur du konfigurerar WhatsApp-kanalen i Adobe Journey Optimi
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470272/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
 
 +++
