@@ -25,7 +25,7 @@ Gå till **[!UICONTROL Administration]** > **[!UICONTROL License Usage]** om du 
 
 >[!NOTE]
 >
->* Om du vill visa kontrollpanelen måste du ha behörigheten [Visa kontrollpanel för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/permissions.html#available-permissions){target="_blank"}.
+>* Om du vill visa kontrollpanelen måste du ha behörigheten [Visa kontrollpanel för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/permissions.html?lang=sv-SE#available-permissions){target="_blank"}.
 >
 >* Vissa mått (t.ex. beräkningstimmar, e-post) visas inte för utvecklingssandlådor, vilket anges av `N/A` i kvotkolumnen. Endast värden som inte är null visas på kontrollpanelen: när mätvärdena är noll eller nära noll fylls de inte i.
 
@@ -79,7 +79,7 @@ Följ de här stegen för att åtgärda problemet:
 
 2. **Undersök resor, kampanjer och beslut som riktar sig till stora målgrupper:**
 
-   * Granska nyligen utförda resor och kampanjer med ett stort antal profiler som mål med hjälp av [aktiveringsbara profilfrågor](../reports/query-examples.md#engageable-profiles-queries) eller [frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}.
+   * Granska nyligen utförda resor och kampanjer med ett stort antal profiler som mål med hjälp av [aktiveringsbara profilfrågor](../reports/query-examples.md#engageable-profiles-queries) eller [frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/home){target="_blank"}.
    * Identifiera specifika reseversioner som bidrog till att antalet profiler ökade.
    * Resor, kampanjer och beslut som rör nya profiler kommer sannolikt att leda till en ökning av antalet händelser i datauppsättningarna för resan, vilket bidrar till att antalet profiler som kan tas med i kampanjen ökar.
 
@@ -91,7 +91,7 @@ Följ de här stegen för att åtgärda problemet:
 4. **Minska adresserbar målgruppsstorlek:**
 
    * Ta bort pseudonyma profiler om det behövs. Observera att åtgärden påverkar både Journey Optimizer och Real-Time Customer Data Platform.
-   * Läs mer om [Pseudonym förfallotid för profildata](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"} i kundprofilguiden för realtid.
+   * Läs mer om [Pseudonym förfallotid för profildata](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"} i kundprofilguiden för realtid.
    * **Obs!** Det går inte att konfigurera förfallodatum för pseudonyma profildata via plattformens gränssnitt eller API:er. Du måste kontakta supporten för att aktivera den här funktionen.
 
 5. **Ändringar i övervakningsdatauppsättningen:**
@@ -106,13 +106,13 @@ Följ de här stegen för att åtgärda problemet:
 **Se även:**
 
 * [Engagerbara profiler - frågeexempel](../reports/query-examples.md#engageable-profiles-queries) - Exempelfrågor för att övervaka och analysera dina engagerande profiler
-* [Adobe Experience Platform Query Service - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}
+* [Adobe Experience Platform Query Service - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/query/home){target="_blank"}
 
 ## Relaterad dokumentation {#related-documentation}
 
 Läs mer i Adobe Experience Platform-dokumentationen:
 
-* [Kontrollpanel för licensanvändning - översikt](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html){target="_blank"}
-* [Utforska kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#exploring-the-license-usage-dashboard){target="_blank"}
-* [Tillgängliga mått](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#available-metrics){target="_blank"}
-* [Pseudonymt utgångsdatum för profildata](https://experienceleague.adobe.com/docs/experience-platform/profile/pseudonymous-profiles.html){target="_blank"}
+* [Kontrollpanel för licensanvändning - översikt](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html?lang=sv-SE){target="_blank"}
+* [Utforska kontrollpanelen för licensanvändning](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html?lang=sv-SE#exploring-the-license-usage-dashboard){target="_blank"}
+* [Tillgängliga mått](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html?lang=sv-SE#available-metrics){target="_blank"}
+* [Pseudonymt utgångsdatum för profildata](https://experienceleague.adobe.com/docs/experience-platform/profile/pseudonymous-profiles.html?lang=sv-SE){target="_blank"}
