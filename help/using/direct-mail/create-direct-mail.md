@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: 916239c98c982acf9c6f999316e46036d36b2098
+source-git-commit: 3fdfc98c0049f39d12b1cb2241fde892f449cdc1
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 2%
@@ -92,6 +92,8 @@ När extraheringsfilen är klar slutför du konfigurationen av din [resa](../bui
 1. Kampanjer kan schemaläggas för ett specifikt datum eller ställas in så att de återkommer med regelbundna intervall. Lär dig hur du konfigurerar **[!UICONTROL Schedule]** för din kampanj i [det här avsnittet](../campaigns/campaign-schedule.md).
 
 Nu kan du börja konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör.
+
+>[!ENDTABS]
 
 ## Konfigurera extraheringsfilen {#extraction-file}
 
