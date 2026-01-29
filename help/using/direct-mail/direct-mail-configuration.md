@@ -7,9 +7,9 @@ role: User
 level: Experienced
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: ae5cc885-ade1-4683-b97e-eda1f2142041
-source-git-commit: b85210a46c928389db985f0f794618209773c071
+source-git-commit: 916239c98c982acf9c6f999316e46036d36b2098
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1636'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Innan du kan generera filen måste du skapa:
 >id="ajo_dm_file_routing_details"
 >title="Definiera filroutningskonfigurationen"
 >abstract="När du har skapat ett direktutskick skapas och exporteras filen som innehåller målgruppsdata till en server. Du måste ange serverinformationen så att din direktreklamleverantör kan komma åt och använda den filen för att leverera direktreklam."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/direct-mail/create-direct-mail" text="Skapa ett direktutskick"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/create-direct-mail" text="Skapa ett direktutskick"
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details_header"
@@ -60,6 +60,11 @@ Innan du kan generera filen måste du skapa:
 >id="ajo_dm_file_routing_aws_region"
 >title="Välj AWS"
 >abstract="Markera det geografiska område på AWS-servern där du vill exportera dina direktmeddelandefiler. Som allmän praxis är det att föredra att välja den närmaste regionen till den plats där direktreklamleverantören finns."
+
+>[!CONTEXTUALHELP]
+>id="ajo_dm_file_routing_frequency"
+>title="Välj AWS"
+>abstract="Om din filroutningskonfiguration ska skickas med resor kan du ange hur ofta filen ska skickas till servern."
 
 >[!NOTE]
 >
@@ -149,11 +154,15 @@ Om du valde **[!UICONTROL Data Landing Zone]** som **[!UICONTROL Server type]** 
 
 ![](assets/file-routing-config-dlz-detail.png)
 
-Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landing Zone-behållare per sandlåda. Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
+Alla kunder i [!DNL Adobe Experience Platform] har etablerats med en Data Landing Zone-behållare per sandlåda. Läs mer om Data Landing Zone i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
 >[!ENDTABS]
 
 Om du vill kryptera filen kopierar och klistrar du in krypteringsnyckeln i fältet **[!UICONTROL PGP/GPG encryption key]**.
+
+Om din filroutningskonfiguration ska skickas med resor kan du ange hur ofta filen ska skickas till servern.
+
+![](assets/file-routing-journey.png)
 
 Välj **[!UICONTROL Submit]** när du har fyllt i informationen om din servertyp. Filroutningskonfigurationen skapas med statusen **[!UICONTROL Active]**. Den är nu klar att användas i en [direktadresskonfiguration](#direct-mail-surface).
 
@@ -185,7 +194,7 @@ Om du använder SFTP med SSH-nyckelautentisering måste du ha en Base64-kodad pr
 >
 >Efter Base64-kodning innehåller nyckeln inte längre `-----BEGIN/END RSA PRIVATE KEY-----`-markörerna och får inte innehålla några radbrytningar. Motsvarande offentliga nyckel måste läggas till i SFTP-serverns auktoriserade nyckelfil.
 
-Mer information om hur du ansluter ditt SFTP-konto till Experience Platform finns i [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/cloud-storage/sftp).
+Mer information om hur du ansluter ditt SFTP-konto till Experience Platform finns i [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/sftp).
 
 +++
 
@@ -195,7 +204,7 @@ Mer information om hur du ansluter ditt SFTP-konto till Experience Platform finn
 >id="ajo_dm_surface_settings"
 >title="Definiera inställningar för direktreklam"
 >abstract="En konfiguration för direktreklam innehåller formateringsinställningarna för filen som innehåller målgruppsdata och kommer att användas av e-postleverantören. Du måste också definiera var filen ska exporteras genom att välja filroutningskonfigurationen."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Konfigurera filroutning"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Konfigurera filroutning"
 
 <!--
 >[!CONTEXTUALHELP]

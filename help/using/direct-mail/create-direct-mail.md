@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
-source-git-commit: ef109382448b013398b83714b0f5e85f428ffadd
+source-git-commit: 916239c98c982acf9c6f999316e46036d36b2098
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '924'
 ht-degree: 2%
 
 ---
@@ -19,9 +19,14 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_direct_mail"
 >title="Skapa direktreklam"
->abstract="Skapa direktreklam i schemalagda kampanjer och utforma de extraheringsfiler som direktreklamleverantörer behöver för att skicka e-post till era kunder."
+>abstract="Skapa direktreklam i schemalagda kampanjer och resor och utforma de extraheringsfiler som direktreklamleverantörer behöver för att skicka post till era kunder."
 
-Skapa en schemalagd kampanj och konfigurera extraheringsfilen om du vill skapa direktutskick. Den här filen krävs av direktreklamleverantörer för att skicka e-post till dina kunder.
+>[!CONTEXTUALHELP]
+>id="ajo_journey_direct_mail"
+>title="Avsluta aktivitet"
+>abstract="Direktreklam är en offlinekanal som gör att du kan anpassa och generera extraheringsfiler som tredjepartsleverantörer av direktreklam behöver för att skicka e-post till dina kunder."
+
+Om du vill skapa direktutskick skapar du en schemalagd kampanj eller en resa och konfigurerar extraheringsfilen. Den här filen krävs av direktreklamleverantörer för att skicka e-post till dina kunder.
 
 >[!IMPORTANT]
 >
@@ -30,17 +35,39 @@ Skapa en schemalagd kampanj och konfigurera extraheringsfilen om du vill skapa d
 >1. En [filroutningskonfiguration](../direct-mail/direct-mail-configuration.md#file-routing-configuration) som anger på vilken server extraheringsfilen ska överföras och lagras,
 >1. En [konfiguration för direktmeddelandetjänst](../direct-mail/direct-mail-configuration.md#direct-mail-surface) som refererar till filroutningskonfigurationen.
 
-## Skapa en kampanj för direktreklam{#create-dm-campaign}
+## Lägg till ett direktmeddelandemeddelande {#create-dm-campaign}
 
-Om du vill skapa en direktreklamkampanj skapar du en schemalagd kampanj, väljer målgrupp och konfigurerar inställningar för direktreklam inklusive meddelandekonfigurationen. Följ de här stegen:
+Bläddra bland flikarna nedan för att lära dig hur du lägger till ett direktutskick i en kampanj eller en resa.
+
+>[!BEGINTABS]
+
+>[!TAB Lägg till ett direktutskick till en resa]
+
+1. Öppna resan och dra och släpp en **[!UICONTROL Direct mail]**-aktivitet från **Åtgärder**-delen av paletten.
+
+1. Ange grundläggande information i meddelandet (etikett, beskrivning, kategori) och välj sedan den meddelandekonfiguration som ska användas. Fältet **[!UICONTROL configuration]** är som standard förfyllt med den senaste konfigurationen som används av användaren för den kanalen. Mer information om hur du konfigurerar en resa finns på [den här sidan](../building-journeys/journey-gs.md).
+
+1. Konfigurera extraheringsfilen som ska skickas till din direktmeddelandeleverantör. Klicka på knappen **[!UICONTROL Edit content]** om du vill göra det.
+
+   ![](assets/direct-mail-add-journey.png)
+
+1. Justera extraheringsfilens egenskaper, t.ex. filnamnet eller kolumnerna som ska visas. Mer information om hur du konfigurerar extraheringsfilens egenskaper finns i följande avsnitt: [Skapa ett direktmeddelandemeddelande](../direct-mail/create-direct-mail.md#extraction-file).
+
+   ![](assets/direct-mail-journey-content.png)
+
+1. När innehållet i extraheringsfilen har definierats kan du använda testprofiler för att förhandsgranska det. Om du har infogat anpassat innehåll kan du kontrollera hur det här innehållet visas i meddelandet med hjälp av testprofildata.
+
+   Om du vill göra det klickar du på **[!UICONTROL Simulate content]** och lägger sedan till en testprofil för att kontrollera hur extraheringsfilens återgivning använder testprofildata. Detaljerad information om hur du väljer testprofiler och förhandsgranskar innehåll finns i avsnittet [Innehållshantering](../content-management/preview-test.md).
+
+   ![](assets/direct-mail-simulate.png){width="800" align="center"}
+
+När extraheringsfilen är klar slutför du konfigurationen av din [resa](../building-journeys/journey-gs.md) för att skicka den.
+
+>[!TAB Lägg till ett direktmeddelandemeddelande i en kampanj]
 
 1. Öppna menyn **[!UICONTROL Campaigns]** och klicka sedan på **[!UICONTROL Create campaign]**.
 
-1. Välj den typ av kampanj som du vill köra
-
-   * **Schemalagd - marknadsföring**: Kör kampanjen direkt eller på ett angivet datum. Schemalagda kampanjer syftar till att skicka marknadsföringsmeddelanden. De konfigureras och körs från användargränssnittet.
-
-   * **API-utlöst - Markering/transaktion**: Kör kampanjen med ett API-anrop. API-utlösta kampanjer syftar till att skicka antingen marknadsförings- eller transaktionsmeddelanden, dvs. meddelanden som skickas ut efter en åtgärd som utförs av en individ: lösenordsåterställning, kundvagn osv.
+1. Välj kampanjtypen **Schemalagd - marknadsföring**.
 
 1. I avsnittet **[!UICONTROL Properties]** redigerar du kampanjens **[!UICONTROL Title]** och **[!UICONTROL Description]**.
 
@@ -113,4 +140,3 @@ Extraheringsfilen krävs av direktreklamleverantörer för att skicka e-post til
       Om du vill ändra en kolumns position drar och släpper du den till önskad plats i avsnittet **[!UICONTROL Data field]**. Om du vill ta bort en kolumn markerar du den och klickar på knappen **[!UICONTROL Remove]** i rutan **[!UICONTROL Formatting]**.
 
 Nu kan du testa ditt direktutskick och skicka det till din publik. [Lär dig hur du testar och skickar direktmeddelanden](test-send-direct-mail.md)
-

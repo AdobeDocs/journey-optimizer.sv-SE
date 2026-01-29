@@ -7,9 +7,9 @@ role: User
 level: Beginner
 keywords: direktreklam, meddelande, kampanj
 exl-id: bb52f400-6289-4a7f-a34f-98eb5d27c76a
-source-git-commit: 266bf3afde663b17aedce5fb51e7c5f424fee9ad
+source-git-commit: 916239c98c982acf9c6f999316e46036d36b2098
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Direktreklam är en offlinekanal som gör att du kan anpassa och generera extraheringsfiler som tredjepartsleverantörer av direktreklam behöver för att skicka e-post till dina kunder.
 
-När du skapar en kampanj för direktreklam genererar Journey Optimizer automatiskt en fil som innehåller alla målprofiler och valda data, till exempel postadresser och profilattribut. Den här filen skickas till valfri server så att den kan nås av den externa direktreklamleverantören, som hanterar den faktiska utskicksprocessen åt dig.
+När du skapar en kampanj eller resa för direktreklam genererar Journey Optimizer automatiskt en fil som innehåller alla målprofiler och valda data, till exempel postadresser och profilattribut. Den här filen skickas till valfri server så att den kan nås av den externa direktreklamleverantören, som hanterar den faktiska utskicksprocessen åt dig.
 
 Du måste samarbeta med den tredjepartsleverantör av direktreklam som du har valt för att få kundernas samtycke, om tillämpligt, så att dina kunder kan ta emot e-post från dig.
 
@@ -30,7 +30,7 @@ De viktigaste stegen för att skicka direktutskick är följande:
 
 >[!AVAILABILITY]
 >
->Direktpostmeddelanden kan bara skapas i samband med schemalagda och samordnade kampanjer. De är inte tillgängliga för användning i API-utlösta kampanjer eller under resor.
+>Direktpostmeddelanden kan bara skapas i samband med resor och schemalagda kampanjer. De kan inte användas i samordnade och API-utlösta kampanjer.
 
 ![](../rn/assets/do-not-localize/gif-dm.gif)
 
@@ -39,6 +39,10 @@ De viktigaste stegen för att skicka direktutskick är följande:
 * **[Skapa direktreklam](create-direct-mail.md)** - Lär dig hur du skapar direktreklam och konfigurerar extraheringsfiler för offlinekanaler.
 * **[Konfigurera direktpostkanal](direct-mail-configuration.md)** - Konfigurera direktpostytor och konfigurationer för filroutning.
 * **[Testa och skicka direktreklam](test-send-direct-mail.md)** - Lär dig hur du testar, validerar och publicerar direktreklam.
-* **[Självstudiekurser för direktreklam](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Utforska steg-för-steg-videokurser om direktreklam och metodtips.
+* **[Självstudiekurser för direktreklam](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Utforska steg-för-steg-videokurser om direktreklam och metodtips.
 
+## Instruktionsvideo
 
+Lär dig hur du använder Direct Mail-kanalen i Adobe Journey Optimizer för att automatisera och schemalägga direktutskick under dina resor.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479162?quality=12)

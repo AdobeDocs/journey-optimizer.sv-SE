@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 916239c98c982acf9c6f999316e46036d36b2098
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '572'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="ajo_message_activity"
 >title="Inbyggd kanalåtgärd"
->abstract="Journey Optimizer har inbyggda funktioner för kanalåtgärder. Du kan bara lägga till en meddelandeaktivitet (e-post, SMS/MMS), push) eller en inkommande upplevelse (In-app, webb, kodbaserad upplevelse, innehållskort) och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
+>abstract="Journey Optimizer har inbyggda funktioner för kanalåtgärder. Du kan bara lägga till en meddelandeaktivitet (e-post, SMS/MMS), push, direktreklam) eller en inkommande upplevelse (In-app, webb, kodbaserad upplevelse, innehållskort) och definiera inställningar och innehåll. Sedan utförs den och skickas i samband med resan."
 
 [!DNL Journey Optimizer] innehåller inbyggda funktioner för kanalåtgärder som används för att skicka meddelanden: när en profil anger den här aktiviteten skickas ett meddelande till dem.
 
@@ -75,6 +75,15 @@ Följ stegen nedan om du vill lägga till en inbyggd kanalåtgärd för en resa.
       </a>
       <div>
       <a href="../sms/create-sms.md"><strong>Skapa textmeddelanden (SMS/MMS)</strong></a>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../direct-mail/create-direct-mail.md">
+      <img alt="Validering" src="../assets/do-not-localize/direct-mail.jpg">
+      </a>
+      <div>
+      <a href="../direct-mail/create-direct-mail.md"><strong>Skapa direktutskick</strong></a>
       </div>
       <p>
       </td>
