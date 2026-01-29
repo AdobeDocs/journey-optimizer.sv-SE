@@ -45,4 +45,4 @@ De viktigaste stegen för att skicka direktutskick är följande:
 
 Lär dig hur du använder Direct Mail-kanalen i Adobe Journey Optimizer för att automatisera och schemalägga direktutskick under dina resor.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479162?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479166?captions=swe&quality=12)
