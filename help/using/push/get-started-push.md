@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1f16edd-efdf-41c2-a0ad-5f55009008f5
-source-git-commit: 0706cb23bb41aff56984d7723df22c5a07bbe51d
+source-git-commit: af40716070ab28001acb6f5c02f41a0ec3ad8258
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 >
 >Om det är första gången du skapar ett push-meddelande kontrollerar du att push-kanalen har konfigurerats. [Läs mer](push-gs.md).
 
-Push-meddelanden hjälper dig att nå mobilappsanvändare och webbbesökare när som helst, särskilt när de inte aktivt använder din app eller surfar på din webbplats. Push-meddelanden kan hjälpa dig att få en mängd olika användningsfall, som att tillhandahålla uppdateringar om tjänsten, be en användare att vidta åtgärder, varna användaren för ett nytt avtal osv. Enhetsplattformar kräver deltagande innan slutanvändarna kan ta emot eller visa dina meddelanden. Användaranmälan kan tas emot så snart appen startats för första gången efter installationen, eller i en efterföljande session eller arbetsflöde efter behov.
+Push-meddelanden hjälper dig att nå mobilappsanvändare när som helst, särskilt när de inte aktivt använder din app. Push-meddelanden kan hjälpa dig att få en mängd olika användningsfall, som att tillhandahålla uppdateringar om tjänsten, be en användare att vidta åtgärder, varna användaren för ett nytt avtal osv. Enhetsplattformar kräver deltagande innan slutanvändarna kan ta emot eller visa dina meddelanden. Användaranmälan kan tas emot så snart appen startats för första gången efter installationen, eller i en efterföljande session eller arbetsflöde efter behov.
 
 [!DNL Journey Optimizer] har stöd för push-meddelanden och hjälper dig att skicka mycket relevanta meddelanden med branschledande dataöverföringshastigheter. Push-meddelanden kan omfatta personalisering och resebaserade sammanhang för att utnyttja de datainsikter ert varumärke har med Adobe Experience Cloud.
 
@@ -31,11 +31,11 @@ Push-meddelanden kan skapas:
 
 * I en **kampanj**: När du har skapat en kampanj väljer du Push-meddelande som åtgärd och definierar grundläggande inställningar. Lär dig skapa [en åtgärdskampanj](../campaigns/campaign-action.md#action-campaign-action) | [en API-utlöst kampanj](../campaigns/api-triggered-campaigns.md) | [en orkestrerad kampanj](../orchestrated/create-orchestrated-campaign.md#create)
 
-Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för plattformarna **iOS**, **Android** och **Web**.
+Använd de dedikerade flikarna för att definiera inställningar för push-meddelanden för **iOS** och **Android**.
 
 >[!NOTE]
 >
->I **[!DNL Journey Optimizer]** finns sätt att hantera avanmälan i e-postmeddelanden och SMS-meddelanden, men push-meddelanden kräver ingen åtgärd från din sida, eftersom mottagarna kan avbeställa prenumerationen via sina enheter själva. När du till exempel hämtar eller använder programmet kan de välja att stoppa meddelanden. På samma sätt kan de ändra meddelandeinställningarna via det mobila operativsystemet eller webbläsarinställningarna.
+>I **[!DNL Journey Optimizer]** finns sätt att hantera avanmälan i e-postmeddelanden och SMS-meddelanden, men push-meddelanden kräver ingen åtgärd från din sida, eftersom mottagarna kan avbeställa prenumerationen via sina enheter själva. När du till exempel hämtar eller använder programmet kan de välja att stoppa meddelanden. På samma sätt kan de ändra meddelandeinställningarna via det mobila operativsystemet.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
