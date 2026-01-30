@@ -8,9 +8,9 @@ feature: Push, Overview
 role: Admin
 level: Intermediate
 exl-id: 9718c4b6-2558-4dfd-9d8f-f8845def19ba
-source-git-commit: 5b8d26b4fbc323308b5a49672f9d30298756ccf9
+source-git-commit: 5758c9db8b1b12367126f4adb8bd1c0bac766514
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -36,6 +36,11 @@ Följande bild visar vilka system och tjänster som är kopplade till tillhöran
 1. Registrering av din varumärkesanpassade mobilapp (Android eller iOS) med Apple APN:er och Google FCM push messaging services
 1. Meddelandetjänster genererar en push-token, vilket är en identifierare som [!DNL Adobe Journey Optimizer] använder för att ange den specifika enheten som mål med ett push-meddelande.
 1. Den tidigare genererade push-token skickas till Adobe Experience Platform och synkroniseras med kundprofilen i realtid. Detta görs med OTB med en enkel integrering av SDK-klienten
+
+   >[!NOTE]
+   >
+   >Tokenhantering skiljer sig mellan olika plattformar. På **Android (FCM)** markeras tokens automatiskt som ogiltiga när användare rensar appcachen eller installerar om appen, vilket genererar en ny token och ECID. På **iOS (APN:er)** markeras inte variabler konsekvent som ogiltiga i dessa scenarier. Om en profil innehåller flera ECID:n med giltiga token, skickas push-meddelanden till alla associerade enheter.
+
 1. Push-meddelanden skapas i [!DNL Adobe Journey Optimizer], push-meddelanden skapas mot en kanalkonfiguration (t.ex. meddelandeförinställning)
 1. Push-meddelanden kan finnas på arbetsytan under orkestration i Journeys
 1. Vid en Journey-publikation är kundprofiler baserade på resevillkor kvalificerade att ta emot push-meddelanden, push-meddelandenyttolaster personaliseras i det här steget
