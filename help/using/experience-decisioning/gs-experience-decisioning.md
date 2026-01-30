@@ -104,4 +104,4 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
 Läs mer om beslutsfunktionerna i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451101?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3475867?captions=swe&quality=12)
