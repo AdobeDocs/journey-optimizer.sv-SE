@@ -7,9 +7,9 @@ role: User
 level: Intermediate, Experienced
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
 version: Journey Orchestration
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: 21de0b9616c414db204a3eafebc6a8184028a1e1
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '848'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 3%
 # Använd Beslutsfattandet i en kodbaserad upplevelse med hjälp av innehållsexperimentet {#experience-decisioning-uc}
 
 I det här användningsexemplet beskrivs alla steg som behövs för att använda Decisionering med den kodbaserade kanalen [!DNL Journey Optimizer].
+
+➡️ [Upptäck ett användningsfall i video](#video)
 
 >[!NOTE]
 >
@@ -95,11 +97,7 @@ Om du vill bygga den andra urvalsstrategin med en formel som rangordningsmetod f
 
 ## Bygg en kodbaserad upplevelsekampanj
 
-<!--To present the best dynamic offer and experience to your visitors on your website or mobile app, add a decision policy to a code-based campaign.
-
-Define two delivery treatments each containing a different decision policy.-->
-
-När du har konfigurerat de två urvalsstrategierna skapar du en kodbaserad upplevelsekampanj där du definierar olika behandlingar för varje strategi, för att jämföra vilken som fungerar bäst.
+När du har konfigurerat de två urvalsstrategierna kan du skapa en kodbaserad upplevelsekampanj där du definierar olika behandlingar för varje strategi, för att jämföra vilken som fungerar bäst.
 
 1. Skapa en kampanj och välj åtgärden **[!UICONTROL Code-base experience]**. [Läs mer](../code-based/create-code-based.md)
 
@@ -157,3 +155,9 @@ Om resultatet är klart:
 
 * Ni kan göra behandlingen med bästa resultat rankad för alla era kunder.
 * Du kan också skapa en ny kampanj med hjälp av urvalsstrategin där rankningsmetoden som ger bästa resultat replikeras.
+
+## Instruktionsvideo {#video}
+
+Upptäck en genomgång från början till slut som visar hur du använder Decisioning i en kodbaserad upplevelse.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3451100/?learn=on&enablevpops)

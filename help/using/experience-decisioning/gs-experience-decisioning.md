@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: 21de0b9616c414db204a3eafebc6a8184028a1e1
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '625'
 ht-degree: 4%
 
 ---
@@ -25,11 +25,13 @@ ht-degree: 4%
 
 Beslutsfattandet förenklar personanpassningen genom att erbjuda en centraliserad katalog med marknadsföringserbjudanden som kallas Beslutsposter och en avancerad beslutsmotor. Den här motorn använder regler och rankningskriterier för att välja ut och presentera de mest relevanta beslutsobjekten för varje enskild person.
 
-Dessa beslutsobjekt är sömlöst integrerade i ett brett urval av inkommande ytor via den [nya kodbaserade upplevelsekanalen](../code-based/get-started-code-based.md), som är tillgänglig inom Journey Optimizer-kampanjer.
+Dessa beslutsobjekt är sömlöst integrerade i ett brett urval av inkommande ytor via den [kodbaserade upplevelsekanalen](../code-based/get-started-code-based.md), som är tillgänglig inom [!DNL Adobe Journey Optimizer]-kampanjer.
 
 >[!IMPORTANT]
 >
 >Beslutsprinciper är tillgängliga för kodbaserad upplevelse och e-postkampanjer.
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ➡️ Ett heltäckande användningsexempel som visar hur du skapar beslut och använder dem i innehållsexperiment med den kodbaserade upplevelsekanalen visas i [det här avsnittet](experience-decisioning-uc.md).
 
@@ -51,7 +53,7 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
    1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
       ![](assets/decision_permission_3.png)
 
@@ -96,5 +98,10 @@ De viktigaste stegen för att arbeta med beslut är följande:
 * **[Skapa beslutspolicyer](create-decision-policy.md)** - Lär dig hur du skapar beslutspolicyer som kombinerar strategier och begränsningar.
 * **[Ranknings- och AI-modeller](ranking/ranking.md)** - Huvudrankningsformler och AI-modeller för personaliserade beslut.
 * **[Beslutsfattarskyddsutkast](decisioning-guardrails.md)** - Granska viktiga begränsningar och bästa praxis för att fatta beslut om implementering.
-* **[Självstudiekurser för beslutsfattande](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}** - Utforska steg-för-steg-videokurser om beslutsfunktioner och metodtips.
+* **[Självstudiekurser för beslutsfattande](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}** - Utforska steg-för-steg-videokurser om beslutsfunktioner och metodtips.
 
+## Instruktionsvideo {#video}
+
+Läs mer om beslutsfunktionerna i Adobe Journey Optimizer.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3451101?quality=12)

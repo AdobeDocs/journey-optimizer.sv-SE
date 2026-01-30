@@ -7,22 +7,24 @@ role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: 21de0b9616c414db204a3eafebc6a8184028a1e1
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
 # Använda AI-formelverktyget {#create-ranking-formulas}
 
-**Rankningsformler** gör att du kan definiera regler som avgör vilket erbjudande som ska presenteras först, i stället för att ta hänsyn till prioritetspoängen.
+**Rankningsformler** gör att du kan definiera regler som bestämmer vilket erbjudande som ska presenteras först, i stället för att ta hänsyn till prioritetspoängen.
 
 Om du vill skapa de här reglerna ger formelverktyget för AI i **[!UICONTROL Adobe Journey Optimizer]** större flexibilitet och kontroll över hur erbjudanden rangordnas. I stället för att förlita dig på en statisk erbjudandeprioritet kan du nu definiera anpassade rankningsformler som kombinerar AI-modellpoäng, erbjudandeprioriteringar, profilattribut, erbjudandeattribut och sammanhangsbaserade signaler via ett guidat gränssnitt.
 
 Med den här metoden kan ni dynamiskt justera offertrankningen baserat på valfri kombination av AI-driven benägenhet, affärsvärde och realtidskontext, vilket gör det enklare att anpassa beslut efter både marknadsföringsmål och kundbehov. AI-formelverktyget har stöd för enkla eller avancerade formler beroende på hur mycket kontroll du vill använda.
 
 När en rankningsformel har skapats kan du tilldela den till en [urvalsstrategi](../selection-strategies.md). Om flera erbjudanden kan presenteras när den här urvalsstrategin används, kommer beslutsmotorn att använda den valda formeln för att beräkna vilket erbjudande som ska levereras först.
+
+➡️ [Upptäck den här funktionen i en video](#video)
 
 ## Skapa en rankningsformel {#create-ranking-formula}
 
@@ -64,7 +66,7 @@ Följ stegen nedan för att skapa en rankningsformel.
    >
    >Inkapslingsdjupet i en rankningsformel är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen. En regelsträng kan vara upp till 8 kB för UTF-8-kodade tecken. Detta motsvarar 8 000 ASCII-tecken (1 byte vardera), eller 2 000-4 000 icke-ASCII-tecken (2-4 byte vardera). [Läs mer om hur du bestämmer dig för skyddsprofiler och begränsningar](../decisioning-guardrails.md#ranking-formulas)
 
-1. Ni kan också använda data från Adobe Experience Platform för att dynamiskt justera rankningslogiken så att den speglar de verkliga förhållandena. Detta är särskilt användbart för attribut som ändras ofta, t.ex. produkttillgänglighet eller realtidspriser.
+1. Ni kan också använda data från Adobe Experience Platform för att dynamiskt justera rankningslogiken så att den speglar de verkliga förhållandena. Detta är särskilt användbart för attribut som ofta ändras, till exempel produkttillgänglighet eller realtidspriser.
 
    Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion. Kontakta din kontorepresentant om du vill ha tillgång till tjänsten. [Lär dig använda Adobe Experience Platform-data för beslut](../aep-data-exd.md)
 
@@ -93,9 +95,9 @@ Följ stegen nedan för att definiera villkor direkt från gränssnittet.
 <!--![](../assets/ranking-formula-criteria.png){width="80%"}-->
 
 1. I avsnittet **[!UICONTROL Criterion 1]** anger du vilka beslutsobjekt du vill tillämpa ett rangordningsresultat på genom att göra följande:
-   * välj ett [beslutsobjektattribut](../items.md#attributes),
-   * välja en logisk operator,
-   * lägg till ett matchande villkor - du kan antingen ange ett värde eller välja ett profilattribut eller [kontextdata](../context-data.md).
+   * välj ett [beslutsobjektattribut](../items.md#attributes)
+   * välj en logisk operator
+   * lägg till ett matchande villkor - du kan antingen ange ett värde eller välja ett profilattribut eller [kontextdata](../context-data.md)
 
    ![](../assets/ranking-formula-criterion-1.png){width="70%"}
 
@@ -139,7 +141,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >
@@ -274,3 +276,9 @@ Observera att när du använder API:t **Decisioning** läggs kontextdata till i 
 ```
 
 +++
+
+## Instruktionsvideo {#video}
+
+Lär dig hur du använder AI-formelverktyget i Adobe Journey Optimizer för att skapa anpassade strategier för rangordning av erbjudanden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3464446/?learn=on&enablevpops)
