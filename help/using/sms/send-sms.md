@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 31c9b080-e334-4a11-af33-4c6f115c70a4
-source-git-commit: 7eaca4faf61431fa438afc7550ff4b89f95fa192
+source-git-commit: d6a46a6db9bcef4def71e915389d725c69d851c3
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '525'
 ht-degree: 1%
 
 ---
@@ -45,18 +45,23 @@ Observera att antalet tecken inte återspeglar variationer som introducerats gen
 
 ## Validera ditt innehåll {#sms-validate}
 
+>[!NOTE]
+>
+> Använd telefonnumren i de format som stöds av leverantören för att förbättra leveransmöjligheterna. Twilio och Sinch har till exempel bara stöd för telefonnummer i E.164-format.
+
 Du måste kontrollera varningar i den övre delen av redigeraren. Vissa av dem är enkla varningar, men andra kan hindra dig från att skicka meddelandet. Två typer av varningar kan inträffa: varningar och fel.
 
 ![](assets/sms-alert-button.png)
 
-* **Varningar** hänvisar till rekommendationer och bästa praxis. Ett varningsmeddelande visas till exempel om ditt textmeddelande är tomt.
+* **Varningar** hänvisar till rekommendationer och bästa praxis. Ett varningsmeddelande visas till exempel om textmeddelandet är tomt eller om teckengränserna kan överskridas med dynamiskt innehåll.
+
+  **Teckengränser:** 160 tecken per segment (GSM 7-bitars), 70 för Unicode/emojis, totalt upp till 1 500 tecken.
 
 * **Fel** hindrar dig från att testa eller aktivera resan, eller publicera kampanjen, så länge som de inte har lösts. Ett felmeddelande varnar dig till exempel när ämnesraden saknas.
 
+Varningen **&quot;Teckengränsen för SMS-text har överskridits&quot;** kan visas även när ditt simulerade meddelande är kortare eftersom valideringen beräknar den **maximala möjliga längden** genom att utvärdera alla villkorsstyrda grenar, anpassningsfält och dynamiskt innehåll som längst.
 
->[!NOTE]
->
-> Använd telefonnumren i de format som stöds av leverantören för att förbättra leveransmöjligheterna. Twilio och Sinch har till exempel bara stöd för telefonnummer i E.164-format.
+Valideringen beräknar den maximala längden för alla möjliga profildata, medan simuleringen visar faktiska utdata för en testprofil.
 
 ## Skicka dina textmeddelanden {#sms-send}
 
