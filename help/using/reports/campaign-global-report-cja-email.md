@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d11dd1cb-041b-48cd-b1fc-bcbe12338a07
-source-git-commit: cc435a133f5fe24bff0f6ec9ec135941cf0bab99
+source-git-commit: 7945ab9369498f23685aa2f727542c7367c2d830
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2028'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >Eftersom Apple har infört nya funktioner för integritetsskydd för sin egen e-postapp, bland annat skydd av personuppgifter, kan avsändare inte längre använda spårningspixlar för att samla in data om profiler som har aktiverat Apple skydd av personuppgifter. Därför kan Adobe Journey Optimizer förmåga att spåra e-postöppningar med hjälp av spårningspixlar påverkas.
-> [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/the-impact-of-apple-ios-privacy-changes-on-email-marketing-and/ba-p/699780?profile.language=sv) om hur Apple iOS sekretessändringar påverkar e-postmarknadsföringen.
+> [Läs mer](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/the-impact-of-apple-ios-privacy-changes-on-email-marketing-and/ba-p/699780) om hur Apple iOS sekretessändringar påverkar e-postmarknadsföringen.
 > 
 > Vi rekommenderar att ni fokuserar på klick och konverteringsvärden i stället för öppna frekvenser för mer korrekta insikter.
 
@@ -64,15 +64,15 @@ Du kommer åt rapporten för e-postkampanjen genom att klicka på knappen **[!UI
 +++
 
 
-## Unik klicktratt
+## Unik klickning på funnel
 
 ![](assets/cja-email-click-funnel.png)
 
 Diagrammet **[!UICONTROL Click funnel]** innehåller en detaljerad analys av hur profiler interagerar med ditt e-postinnehåll och ger värdefulla insikter om varje interaktionsfas, från leverans till klickning, vilket hjälper dig att förstå hur effektivt dina meddelanden ökar användarengagemanget.
 
-+++ Läs mer om Click trnel-statistik
++++ Läs mer om Click funnel-statistik
 
-* **[!UICONTROL Unique Targeted]**: Antal unika profiler som har angetts som mål under sändningsprocessen.
+* **[!UICONTROL Unique Targeted]**: Antal unika profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades.
 
 * **[!UICONTROL Unique Sends]**: Antal unika profiler för vilka minst ett e-postmeddelande försökte skickas.
 
@@ -124,7 +124,7 @@ Tabellen **[!UICONTROL Unique Sending Statistics]** ger en detaljerad översikt 
 
 +++ Läs mer om statistik för unika sändningar
 
-* **[!UICONTROL Unique Targeted]**: Antal unika profiler som har angetts som mål under sändningsprocessen.
+* **[!UICONTROL Unique Targeted]**: Antal unika profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades.
 
 * **[!UICONTROL Unique Sends]**: Antal unika profiler för vilka minst ett e-postmeddelande försökte skickas.
 
@@ -170,7 +170,7 @@ Tabellen **[!UICONTROL Sending Statistics]** innehåller en omfattande sammanfat
 
 +++ Läs mer om att skicka statistik
 
-* **[!UICONTROL Targeted]**: Totalt antal e-postmeddelanden som bearbetats under sändningsprocessen.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades. På resor där återinträde är aktiverat kan en profil användas flera gånger.
 
 * **[!UICONTROL Sends]**: Totalt antal skickade meddelanden för din e-post.
 

@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7945ab9369498f23685aa2f727542c7367c2d830
 workflow-type: tm+mt
-source-wordcount: '3309'
+source-wordcount: '3331'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Tabellen **[!UICONTROL Sending metrics by Email]** innehåller en omfattande sam
 
 * **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande e-postmeddelande. Om du bara vill ange ett eller flera återkommande e-postmeddelanden som mål väljer du det i listrutan **[!UICONTROL Execution time]**.
 
-* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under sändningsprocessen.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades.
 
 * **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
 
@@ -330,7 +330,7 @@ Tabellen **[!UICONTROL Push notification - Statistics]** innehåller en kortfatt
 
 * **[!UICONTROL Execution time]**: Starttid för varje körning av ditt återkommande push-meddelande. Om du bara vill ange ett eller flera återkommande push-meddelanden som mål väljer du det i listrutan **[!UICONTROL Execution time]**.
 
-* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under sändningsprocessen.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades.
 
 * **[!UICONTROL Excluded]**: Antal användarprofiler, exkluderade från målprofilerna, som inte fick meddelandet.
 
@@ -400,7 +400,7 @@ Diagrammet och tabellen **[!UICONTROL Push notification - Breakdown by platform]
 
 +++ Läs mer om push-meddelanden - Uppdelning efter plattformsmått
 
-* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under analysen.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades.
 
 * **[!UICONTROL Delivered]**: Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.
 

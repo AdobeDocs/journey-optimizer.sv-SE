@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 43b10f54-0c19-46a1-8d51-eb6bf22e6da9
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 7945ab9369498f23685aa2f727542c7367c2d830
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Tabellen **[!UICONTROL Sending Statistics]** innehåller en omfattande sammanfat
 
 +++ Läs mer om att skicka statistik
 
-* **[!UICONTROL Targeted]**: Totalt antal push-meddelanden som bearbetats under analysen.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades. På resor där återinträde är aktiverat kan en profil användas flera gånger.
 
 * **[!UICONTROL Sends]**: Totalt antal skickade för push-meddelandet.
 

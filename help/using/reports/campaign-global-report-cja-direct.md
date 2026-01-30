@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b0771fd9-72bd-4891-a394-f08e3dde6126
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 7945ab9369498f23685aa2f727542c7367c2d830
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Tabellen **[!UICONTROL Sending Statistics]** innehåller en omfattande sammanfat
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina meddelanden.
 
-* **[!UICONTROL Targeted]**: Totalt antal direktmeddelandemeddelanden som bearbetats under sändningsprocessen.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades. På resor där återinträde är aktiverat kan en profil användas flera gånger.
 
 * **[!UICONTROL Sends]**: Totalt antal skickade meddelanden för dina direktutskick.
 
@@ -69,7 +69,7 @@ I tabellen **[!UICONTROL Error Reasons]** kan du identifiera de specifika fel so
 
 ## Undantagna orsaker {#exclude-reasons-directmail}
 
-[&#128279;](assets/cja-direct-excluded.png)
+[](assets/cja-direct-excluded.png)
 
 Tabellen **[!UICONTROL Exclude Reasons]** visar de olika faktorer som ledde till att användarprofiler exkluderades från målgruppen, vilket förhindrar dem från att ta emot dina direktutskick.
 

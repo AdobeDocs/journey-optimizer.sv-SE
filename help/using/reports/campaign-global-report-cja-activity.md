@@ -7,9 +7,9 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: ce6bfca78d097588b5958c10c721b29b7013b3e2
+source-git-commit: 7945ab9369498f23685aa2f727542c7367c2d830
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Tabellen **[!UICONTROL Sending Statistics]** innehåller en detaljerad översikt
 
 +++ Läs mer om att skicka statistik
 
-* **[!UICONTROL Targeted]**: Totalt antal profiler som har angetts som mål under Live-aktiviteten.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades.
 
 * **[!UICONTROL Sends]**: Totalt antal push-meddelanden som försökte skickas till målprofiler.
 

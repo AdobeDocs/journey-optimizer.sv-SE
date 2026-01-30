@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: aa060d8e-23e2-4bab-b709-636077eb5d20
-source-git-commit: 853e87cdd69a3fc180dcb1aa38b4b67f27977939
+source-git-commit: 7945ab9369498f23685aa2f727542c7367c2d830
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2189'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   </tr> 
   <tr> 
    <td> Målinriktad<br/> </td> 
-   <td> Totalt antal meddelanden som bearbetats under leveransanalysen.<br/> </td> 
+   <td> Antal profiler som kvalificerats för målgruppen innan uteslutningar, undertryckningar eller medgivandeborttagningar tillämpades. På resor där återinträde är aktiverat kan en profil anges flera gånger.<br/> </td> 
   </tr>
   <tr> 
    <td>Unika studsar <br/> </td> 
@@ -197,7 +197,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
   </tr>
   <tr> 
    <td>Unik målinriktad<br/> </td> 
-   <td>Antal unika profiler som har angetts under sändningsprocessen.<br/> </td> 
+   <td>Antal unika profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades.<br/> </td> 
   </tr> 
   <tr> 
    <td> Avbeställer<br/> </td> 
@@ -675,11 +675,11 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
    <td>Totalt antal gånger personaliserade upplevelser har visats eller presenterats för användare över olika kontaktytor.<br/> </td> 
 </tr>
 <tr> 
-   <td>Förlovningsgrupp <br/> </td> 
-   <td>Övervakar prestanda för personaliserade upplevelser genom att utvärdera hur effektivt varje fas i tratten driver användarinteraktioner.<br/> </td> 
+   <td>Engagement Funnel<br/> </td> 
+   <td>Övervakar prestanda för personaliserade upplevelser genom att utvärdera hur effektivt varje steg i funnel påverkar användarinteraktioner.<br/> </td> 
 </tr>
 <tr> 
-   <td>Engagement Trnel by Selection Strategy<br/> </td> 
+   <td>Engagement Funnel by Selection Strategy<br/> </td> 
    <td>Övervakar och analyserar hur effektivt olika urvalsstrategier engagerar användare med personaliserade upplevelser.<br/> </td> 
 </tr>
 <tr> 

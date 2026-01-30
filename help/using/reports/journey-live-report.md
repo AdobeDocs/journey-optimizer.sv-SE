@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 7945ab9369498f23685aa2f727542c7367c2d830
 workflow-type: tm+mt
-source-wordcount: '3489'
+source-wordcount: '3508'
 ht-degree: 0%
 
 ---
@@ -210,7 +210,7 @@ Tabellen **[!UICONTROL Email - Statistics]** innehåller en omfattande sammanfat
 
 +++ Läs mer om statistik för e-postsändning
 
-* **[!UICONTROL Targeted]**: Totalt antal meddelanden som bearbetats under sändningsprocessen.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades. På resor där återinträde är aktiverat kan en profil användas flera gånger.
 
 * **[!UICONTROL Excluded]**: Antal profiler som har undantagits av Adobe Journey Optimizer.
 

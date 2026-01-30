@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6d4b7669-7852-42f0-9347-399a3994011f
-source-git-commit: b6fd60b23b1a744ceb80a97fb092065b36847a41
+source-git-commit: 7945ab9369498f23685aa2f727542c7367c2d830
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Tabellen **[!UICONTROL Sending Statistics]** hjälper dig att förstå hur push-
 
 * **[!UICONTROL People]**: Antal användarprofiler som kvalificerar sig som målprofiler för dina SMS-meddelanden.
 
-* **[!UICONTROL Targeted]**: Totalt antal push-meddelanden som bearbetats under analysen.
+* **[!UICONTROL Targeted]**: Antal profiler som kvalificerats för målgruppen innan undantag, inaktiveringar eller medgivandeborttagningar tillämpades. På resor där återinträde är aktiverat kan en profil användas flera gånger.
 
 * **[!UICONTROL Sends]**: Totalt antal skickade för push-meddelandet.
 
