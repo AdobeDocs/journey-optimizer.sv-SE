@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 73548973-ff8d-4d6c-b383-dd3679fa159a
 version: Journey Orchestration
-source-git-commit: 57017310f5ed34e447c47babe288b28186809f6e
+source-git-commit: 5be6ecd85b0b45e01f7a27e0ffc55a2c6a22bcea
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '263'
 ht-degree: 5%
 
 ---
@@ -33,22 +33,21 @@ Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsn
 | ------- | ------- |
 | Totalt antal beslutsartiklar | 10 kB |
 | Maximal storlek på objekt inklusive attribut (1 kB), maximalt 30 attribut | 1 kB |
-| Maximal artikelrepresentationsstorlek (totalt för alla placeringar) | 1 kB |
-| Frekvensregler - maximalt antal regler per erbjudande | 10 |
+| Frekvensregler - maximalt antal regler för begränsning per beslutsobjekt | 10 |
 
 ## Artikelsamlingar {#item-collections}
 
 | Guardrail | Gräns |
 | ------- | ------- |
 | Objektsamlingar | 10 kB |
-| Totalt antal erbjudandeartiklar per artikelsamling | 500 |
+| Totalt antal beslutsartiklar per samling | 500 |
 
 ## Beslutspolitik {#decision-policy}
 
 | Guardrail | Gräns |
 | ------- | ------- |
 | Antal urvalsstrategier och manuella poster per beslutspolicy | 10 |
-| Max antal erbjudandeartiklar som returneras per beslutspolicy | 30 |
+| Max antal beslutsartiklar som returneras per beslutspolicy | 30 |
 
 ## Villkor för deltagande {#eligibility-rules}
 
@@ -73,7 +72,7 @@ Den fullständiga listan med [!DNL Journey Optimizer] skyddsutkast och begränsn
 
 | Guardrail | Gräns |
 | ------- | ------- |
-| Antal anpassade attribut per katalogschema för erbjudanden | 100 |
+| Antal anpassade attribut per objektkatalogschema | 100 |
 | Totalt antal placeringar | 1 K |
 | AI-rankningsmodell | 5 |
 
