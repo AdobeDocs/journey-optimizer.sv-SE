@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 6442512f29fd691d759375ad50cce2f95a42c402
+source-git-commit: 99dfadf6ac370187fd54d87f660c36662dbcb8d3
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1709'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation januari 26 {#latest-rn}
 
@@ -35,7 +35,7 @@ Avsnitten [Funktioner](#jan-26-01-features) och [Förbättringar](#jan-26-01-imp
 
 <!-- **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date. 
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 ### Nya funktioner {#jan-26-01-features}
 
@@ -198,7 +198,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att upptäcka potentiella problem med <strong>läsbarhet</strong>, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor. [Läs mer](../content-management/brands-score.md#validate-quality).
 
-  [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470550/?captions=swe&learn=on).
+  [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470544/?learn=on).
 
 #### Experience Decision
 
@@ -293,23 +293,6 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <table>
 <thead>
 <tr>
-<th><strong>Övervakning av anpassade åtgärder</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Få djupare insikter i hälsa och prestanda för dina <strong>anpassade åtgärdsslutpunkter</strong> med en ny kontrollpanel och förbättrade händelsedata för kundsteg. Spåra lyckade samtal, fel, dataflöde, svarstider och väntetider för kön för att snabbt förstå när, var och varför avvikelser inträffar.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Tillgänglighetsdatum: 29 januari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Generering av innehåll i Journey Agent</strong><br/></th>
 </tr>
 </thead>
@@ -317,7 +300,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <tr>
 <td>
 <p><strong>Journey Agent</strong>, som drivs av Adobe Experience Platform Agent Orchestrator, finns i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även <strong>generera och hantera innehåll</strong> direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i Designer för kontextredigering.</p>
-<p>Tillgänglighetsdatum: 2 februari 2026</p>
+<p>Tillgänglighetsdatum: 9 februari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -333,7 +316,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <tr>
 <td>
 <p>Du kan nu anpassa och optimera innehållet i dina <strong>push- och SMS</strong>-meddelanden med <strong>Decisioning</strong>. Använd prioriteringspoäng, formler eller AI-modeller för att visa det bästa innehållet för era kunder.</p>
-<p>Tillgänglighetsdatum: 3 februari 2026</p>
+<p>Tillgänglighetsdatum: 9 februari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -350,7 +333,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 <td>
 <p>En ny <strong>aktivitet för innehållsbeslut</strong> är nu tillgänglig på arbetsytan för att integrera <strong>personaliserade erbjudanden</strong> direkt på kundresorna. Med den här aktiviteten kan ni leverera beslutsbaserat innehåll och hänvisa till dessa erbjudanden under hela kundresan - under villkor för att skapa kvalificeringsbaserade förgreningar, i anpassade åtgärder för att skicka erbjudandedata till externa system och i andra aktiviteter för att skapa helt personaliserade kundupplevelser.</p>
 <p>Den här funktionen är tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Tillgänglighetsdatum: 3 februari 2026</p>
+<p>Tillgänglighetsdatum: 9 februari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -358,10 +341,7 @@ Följande funktioner och förbättringar planeras släppas under de närmaste da
 
 ### Förbättringar
 
-* **SMS-webbhooks** - <strong>Webbhooks</strong> stöds nu av alla SMS-providers. Du kan konfigurera varje webkrok baserat på dess avsedda syfte, inkommande webbhooks för att hämta inkommande meddelanden och Feedback-webbhooks för att ta emot leveranskvitton, statusuppdateringar och andra meddelanderelaterade händelser.
-
-  Tillgänglighetsdatum: 30 januari 2026.
 
 * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla <strong>fragment</strong> till <strong>beslutsobjekt</strong> som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutsprinciper.
 
-  Tillgänglighetsdatum: 3 februari 2026.
+  Tillgänglighetsdatum: 9 februari 2026.
