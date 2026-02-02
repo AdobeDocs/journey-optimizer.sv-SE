@@ -7,9 +7,9 @@ role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: c2388c84346ed9a0409270fd96f3a1458bf8ad88
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 0%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_decision_policy"
 >title="Definiera en beslutspolicy"
 >abstract="Med en beslutspolicy kan ni välja ut de bästa elementen från beslutsmotorn och leverera dem till rätt målgrupp."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_policy"
@@ -85,3 +85,8 @@ Nu när ni förstår hur beslutsfattandet fungerar och hur de hjälper er att le
 
 ➡️ [Lär dig hur du skapar en beslutsprincip](../experience-decisioning/create-decision-policy.md)
 
+## Instruktionsvideo {#video}
+
+Lär dig hur du använder Decisioning för att anpassa e-postmeddelanden för din målgrupp.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479199?quality=12)
