@@ -30,7 +30,7 @@ ht-degree: 1%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
 
