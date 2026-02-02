@@ -6,10 +6,10 @@ topic: Integrations
 role: User
 level: Experienced
 version: Journey Orchestration
-source-git-commit: 083545ff7b2dc5ce45ef3766321fdf12e1b96c5c
+source-git-commit: 2dfc9c2db5af1b9b74f7405a68e85563f633a54f
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 0%
+source-wordcount: '2027'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
 
@@ -43,7 +43,7 @@ Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina
 
 >[!AVAILABILITY]
 >
->Beslutsprinciper är tillgängliga för alla kunder för kanalerna **Kodbaserad upplevelse** och **Push-meddelanden**.
+>Beslutsprinciper är tillgängliga för alla kunder för kanalerna **Kodbaserad upplevelse**, **Push-meddelanden** och SMS.
 >
 >Beslut om e-postkanalen finns i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
@@ -114,6 +114,27 @@ För kodbaserade upplevelser kan du lägga till en ny beslutsprincip med antinge
    >[!NOTE]
    >
    >Med **[!UICONTROL Reuse decision output]** kan du återanvända en beslutsprincip som redan har skapats i det här e-postmeddelandet.
+
+>[!TAB SMS]
+
+För SMS kan du lägga till en ny beslutsprincip med antingen **personaliseringsredigeraren** eller med menyn **Beslutsfattning** som finns i egenskapspanelen.
+
++++Lägg till en beslutsprincip från personaliseringsredigeraren
+
+1. Öppna personaliseringsredigeraren med ikonen ![](assets/do-no-localize/editor-icon.svg).
+1. Navigera till menyn **[!UICONTROL Decision policies]** och klicka sedan på knappen **[!UICONTROL Add decision policy]**.
+
+   ![](assets/decision-policy-add-sms-editor.png)
+
++++
+
++++Lägg till en beslutsprincip från menyn Beslut
+
+1. Klicka på ikonen ![](assets/do-no-localize/decisioning-icon.png) i egenskapsrutan för att komma åt menyn **[!UICONTROL Decisioning]**.
+
+1. Klicka på knappen **[!UICONTROL Add decision policy]**.
+
+   ![](assets/decision-policy-add-sms.png)
 
 >[!TAB Push-meddelande]
 

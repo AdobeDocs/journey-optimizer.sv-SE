@@ -7,9 +7,9 @@ role: User
 level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
-source-git-commit: 083545ff7b2dc5ce45ef3766321fdf12e1b96c5c
+source-git-commit: 2dfc9c2db5af1b9b74f7405a68e85563f633a54f
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '705'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ När du har lagt till en beslutsprincip i innehållet kan du använda attribut f
 
 >[!CAUTION]
 >
->Beslutsprinciper är tillgängliga för alla kunder för kanalerna **Kodbaserad upplevelse** och **Push-meddelanden**.
+>Beslutsprinciper är tillgängliga för alla kunder för kanalerna **Kodbaserad upplevelse**, **SMS** och **push-meddelanden**.
 >
 >Beslut om e-postkanalen finns i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
@@ -56,6 +56,14 @@ När du har lagt till en beslutsprincip i innehållet kan du använda attribut f
 
    ![](assets/decision-policy-placement.png)
 
+>[!TAB SMS]
+
+1. Öppna **Personalization Editor** och gå till **[!UICONTROL Decision policies]**.
+
+2. Välj **[!UICONTROL Insert syntax]** om du vill lägga till koden för din beslutsprincip.
+
+   ![](assets/decision-policy-add-sms-insert-syntax.png)
+
 >[!TAB Tryck]
 
 1. Öppna **Personalization Editor** och gå till **[!UICONTROL Decision policies]**.
@@ -74,7 +82,7 @@ Koden för beslutspolicyn läggs till. Du kan nu använda attribut från de retu
 
 >[!NOTE]
 >
->För kodbaserad upplevelse och e-postkanaler upprepar du den här sekvensen en gång per beslutsobjekt som du vill returnera. Om du till exempel väljer att returnera 2 objekt när [du skapar beslutet](create-decision-policy.md), upprepar du sekvensen två gånger. För push-kanalen kan bara ett beslutsobjekt returneras.
+>För kodbaserad upplevelse och e-postkanaler upprepar du den här sekvensen en gång per beslutsobjekt som du vill returnera. Om du till exempel väljer att returnera 2 objekt när [du skapar beslutet](create-decision-policy.md), upprepar du sekvensen två gånger. För SMS- och push-kanaler kan bara ett beslutsobjekt returneras.
 
 ## Anpassa med attribut för beslutsobjekt {#attributes}
 
@@ -98,10 +106,16 @@ Om du vill lägga till ett attribut klickar du på ikonen **`+`** bredvid attrib
 
   +++
 
-* Kontrollera att du infogar attribut efter syntaxkoden för beslutsprincipen för kanalen **Push**. Den här syntaxen ska alltid hållas på rad 1.
+* För kanalerna **SMS** och **Push** måste du infoga attribut efter syntaxkoden för beslutsprincipen. Den här syntaxen ska alltid hållas på rad 1.
+
+  +++Se exempel
+
+  ![](assets/decision-added-sms.png)
+
+  +++
 
   >[!NOTE]
-  >Om du infogar ett bildresursattribut i push-innehåll (till exempel i titeln eller brödtexten) visas attributvärdet som en URL. Själva bilden återges inte i dessa fält.
+  >Om du infogar ett bildresursattribut i SMS- eller push-innehåll (till exempel i titeln eller brödtexten) visas attributvärdet som en URL. Själva bilden återges inte i dessa fält.
 
 * Om du vill aktivera spårning av beslutsobjekt lägger du till attributet `trackingToken`: `trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 
