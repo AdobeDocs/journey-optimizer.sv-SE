@@ -89,4 +89,4 @@ Nu när ni förstår hur beslutsfattandet fungerar och hur de hjälper er att le
 
 Lär dig hur du använder Decisioning för att anpassa e-postmeddelanden för din målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479199?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479214?captions=swe&quality=12)
