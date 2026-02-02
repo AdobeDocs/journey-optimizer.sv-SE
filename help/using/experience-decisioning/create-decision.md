@@ -85,12 +85,12 @@ De viktigaste stegen för att utnyttja beslutsstrategier i meddelanden är följ
 
 Lär dig hur du använder Decisioning för att anpassa e-postmeddelanden för din målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479199?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479214?captions=swe&quality=12)
 
 Lär dig hur du använder Decisioning för att anpassa push-meddelanden för din målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479199?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479214?captions=swe&quality=12)
 
 Lär dig hur du använder Decisioning för att anpassa SMS-meddelanden för din målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479529?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479533?captions=swe&quality=12)
