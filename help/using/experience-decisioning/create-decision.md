@@ -20,13 +20,13 @@ ht-degree: 1%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_decision_policy"
 >title="Definiera en beslutspolicy"
 >abstract="Med en beslutspolicy kan ni välja ut de bästa elementen från beslutsmotorn och leverera dem till rätt målgrupp."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_policy"
