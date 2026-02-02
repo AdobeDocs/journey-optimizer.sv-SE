@@ -6,9 +6,9 @@ topic: Integrations
 role: User
 level: Experienced
 version: Journey Orchestration
-source-git-commit: 217c7d1aead043e1978c8e0dd40190f789368fd0
+source-git-commit: 083545ff7b2dc5ce45ef3766321fdf12e1b96c5c
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -30,68 +30,135 @@ ht-degree: 0%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
 
-1. [Lägg till en beslutspolicy](#add) - Från Personalization-redigeraren eller e-postprogrammet för Designer.
-1. [Konfigurera beslutsprincipen](#configurre) - Lägg till ett namn och ange antalet objekt som ska returneras.
+1. [Lägg till en beslutspolicy](#add)
+1. [Konfigurera beslutsprincipen](#configure) - Lägg till ett namn och ange antalet objekt som ska returneras för e-postkanalen.
 1. [Konfigurera en strategisekvens](#strategy) - Välj de objekt som ska returneras med beslutsprincipen.
 1. [Välj reserverbjudanden](#fallback) (valfritt) - Välj objekt som ska visas om inga objekt eller urvalsstrategier är kvalificerade.
 1. [Granska och spara](#review) markeringsstrategin
+1. [Tilldela en placering](#placement) (e-postkanal)
 
 >[!AVAILABILITY]
 >
->För närvarande är beslutsprofiler tillgängliga för alla kunder för den **kodbaserade upplevelsen** -kanalen. De är tillgängliga för kanalen **Email** som begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
+>Beslutsprinciper är tillgängliga för alla kunder för kanalerna **Kodbaserad upplevelse** och **Push-meddelanden**.
+>
+>Beslut om e-postkanalen finns i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
 ## Lägg till en beslutspolicy {#add}
 
-1. Öppna en resa eller kampanj, välj en [kanalåtgärd](../building-journeys/journeys-message.md) och redigera innehållet i meddelandet.
+Om du vill lägga till en beslutsprincip i meddelandet öppnar du en resa eller kampanj och väljer en [kanalåtgärd](../building-journeys/journeys-message.md).
 
-1. Växla alternativet **[!UICONTROL Enable decisioning]** för e-post.
+Redigera innehållet i ditt meddelande och bläddra bland flikarna nedan om du vill ha mer information om hur du lägger till beslutsprincipen baserat på den valda kanalen.
+
+>[!BEGINTABS]
+
+>[!TAB Kodbaserad upplevelse]
+
+För kodbaserade upplevelser kan du lägga till en ny beslutsprincip med antingen **kodredigeraren** eller menyn **Beslutsfattning** som finns i egenskapspanelen.
+
++++Lägga till en beslutsprincip från kodredigeraren
+
+1. Öppna kodredigeraren med knappen **[!UICONTROL Edit code]**.
+
+1. Navigera till menyn **[!UICONTROL Decision policy]** och klicka sedan på knappen **[!UICONTROL Add decision policy]**.
+
+   ![](assets/decision-policy-add-code-editor.png)
+
++++
+
++++Lägg till en beslutsprincip från menyn Beslut
+
+1. Klicka på ikonen ![](assets/do-no-localize/decisioning-icon.png) i egenskapsrutan för att komma åt menyn **[!UICONTROL Decisioning]**.
+
+1. Klicka på knappen **[!UICONTROL Add decision policy]**.
+
+   ![](assets/decision-policy-add-code.png)
+
++++
+
+>[!TAB E-post]
+
+1. Växla alternativet **[!UICONTROL Enable decisioning]**.
 
    ![](assets/decision-policy-enable.png)
 
    >[!IMPORTANT]
    >
    >Om du aktiverar beslutsfattande rensas befintligt e-postinnehåll. Om du redan har utformat e-postmeddelandet måste du spara innehållet som en mall i förväg.
+
+1. Lägg till en ny beslutsprincip med antingen **anpassningsredigeraren** eller menyn **Beslutsfattare** som finns i e-postdesignern.
+
+   +++Lägga till en beslutspolicy från Personalization Editor
+
+   1. Öppna personaliseringsredigeraren med ikonen ![](assets/do-no-localize/editor-icon.svg) som finns i ämnesraden eller i något fält i e-postbrödtexten där du kan lägga till personalisering.
+
+   1. Navigera till menyn **[!UICONTROL Decision policies]** och klicka sedan på knappen **[!UICONTROL Add decision policy]**.
+
+      ![](assets/decision-policy-add-email-editor.png)
+
+   +++
+
+   +++Lägg till en beslutsprincip från menyn Beslut
+
+   1. Öppna e-post-Designer och markera en komponent i e-poststrukturen.
+
+   1. Klicka på ikonen ![](assets/do-no-localize/decisioning-icon.png) i egenskapsrutan för att komma åt menyn **[!UICONTROL Decisioning]**.
+
+   1. Klicka på knappen **[!UICONTROL Add new policy]**.
+
+      ![](assets/decision-policy-add-email-add.png)
+
+   >[!NOTE]
    >
-   >Observera att alla beslutsprinciper som har konfigurerats i e-postmeddelandet inte sparas i mallen. Om du tillämpar mallen på ett annat e-postmeddelande måste du konfigurera om profilen.
+   >Med **[!UICONTROL Reuse decision output]** kan du återanvända en beslutsprincip som redan har skapats i det här e-postmeddelandet.
 
-1. Öppna **personaliseringsredigeraren** för att skapa beslutsprincipen. För e-postmeddelanden kan du även använda en dedikerad meny i **e-postdesignern** för att skapa en beslutsprincip. Expandera avsnitten nedan för att utforska de två metoderna.
+>[!TAB Push-meddelande]
 
-   +++Skapa en beslutspolicy från Personalization Editor
+För push-meddelanden kan du lägga till en ny beslutsprincip med antingen **personaliseringsredigeraren** eller menyn **Beslutsfattning** som finns i egenskapsrutan.
 
-   1. Öppna anpassningsredigeraren och välj **[!UICONTROL Decision policy]**.
-   1. Klicka på knappen **[!UICONTROL Add decision policy]** om du vill skapa en ny profil.
++++Lägg till en beslutsprincip från personaliseringsredigeraren
 
-      ![](assets/decision-code-based-create.png)
+1. Öppna personaliseringsredigeraren med ikonen ![](assets/do-no-localize/editor-icon.svg).
+1. Navigera till menyn **[!UICONTROL Decision policies]** och klicka sedan på knappen **[!UICONTROL Add decision policy]**.
 
-   +++
+   ![](assets/decision-policy-add-push.png)
 
-   +++Skapa en beslutsprincip från e-post-Designer
++++
 
-   Markera en komponent i e-postinnehållet, klicka på ikonen **[!UICONTROL Decisioning]** i verktygsfältet eller egenskapsrutan och välj sedan **[!UICONTROL Add new policy]**.
++++Lägg till en beslutsprincip från menyn Beslut
 
-   Med **[!UICONTROL Reuse decision output]** kan du återanvända en beslutsprincip som redan har skapats i det här e-postmeddelandet.
+1. Klicka på ikonen ![](assets/do-no-localize/decisioning-icon.png) i egenskapsrutan för att komma åt menyn **[!UICONTROL Decisioning]**.
 
-   ![](assets/decision-policy-email-designer.png)
+1. Klicka på knappen **[!UICONTROL Add decision policy]**.
 
-   +++
+   ![](assets/decision-policy-add-push-menu.png)
+
+>[!IMPORTANT]
+>
+>Experience Decision med push-meddelanden kräver en specifik version av Mobile SDK. Innan du implementerar den här funktionen bör du kontrollera [versionsinformationen](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} för att identifiera den version som krävs och kontrollera att du har uppgraderat därefter. Du kan även visa alla tillgängliga SDK-versioner för din plattform i [det här avsnittet](https://developer.adobe.com/client-sdks/home/current-sdk-versions/){target="_blank"}.
+
+>[!ENDTABS]
 
 ## Konfigurera beslutsprincipen {#configure}
 
-När du har lagt till en ny beslutsprincip i innehållet öppnas skärmen för konfiguration av beslutsprincip.
+När du har lagt till en ny beslutsprincip i innehållet öppnas skärmen för konfiguration av beslutsprincip. Så här konfigurerar du beslutsprincipen:
 
 1. Ange ett namn för beslutsprincipen och välj en katalog (som för närvarande är begränsad till standardkatalogen **[!UICONTROL Offers]**).
 
-1. Välj antalet objekt som ska returneras. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen.
-
    ![](assets/decision-code-based-details.png)
 
-   För e-postkanalen är fältet **[!UICONTROL Number of items]** inställt på 1 som standard och kan inte ändras om inte beslutsprincipen läggs till i en **[!UICONTROL Repeat Grid]** -komponent. Expandera avsnittet nedan om du vill ha mer information:
+1. I fältet **[!UICONTROL Number of items]** kan du definiera antalet beslutsobjekt som ska returneras med en beslutspolicy. Om du till exempel väljer 2 visas de två bästa erbjudandena för den aktuella konfigurationen.
 
-   +++Returnera flera beslutsobjekt i e-postmeddelanden med en **[!UICONTROL Repeat Grid]**-komponent
+   >[!NOTE]
+   >
+   >Det här alternativet är endast tillgängligt för e-post- och kodbaserade upplevelsekanaler. För alla andra kanaler kan bara 1 beslutsobjekt returneras per åtgärd.
+
+   Om du vill returnera flera objekt för e-postkanalen måste du lägga till beslutsprincipen i en **[!UICONTROL Repeat Grid]**-komponent. Expandera avsnittet nedan om du vill ha mer information:
+
+   +++Returnera flera beslutsobjekt i e-postmeddelanden
 
    1. Dra en **[!UICONTROL Repeat Grid]**-komponent i e-postmeddelandet och konfigurera den som du vill med hjälp av rutan **[!UICONTROL Settings]**.
 
@@ -220,7 +287,7 @@ Du kan redigera eller ta bort en beslutsprincip när som helst med hjälp av ell
 
 ![](assets/decision-policy-edit.png)
 
->[!TAB Redigera eller ta bort en princip från komponentens egenskaper]
+>[!TAB Redigera eller ta bort en princip från beslutsmenyn]
 
 ![](assets/decision-policy-edit-properties.png)
 
@@ -237,4 +304,3 @@ För e-postmeddelanden måste du definiera en placering för den komponent som �
 Nu när du förstår hur du skapar en beslutspolicy är du redo att använda den i [!DNL Journey Optimizer] kanaler för att leverera erbjudanden.
 
 ➡️ [Lär dig hur du använder beslutsprinciper i meddelanden](../experience-decisioning/use-decision-policy.md)
-
