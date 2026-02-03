@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 419c7b3913ca4da50c69ed36ffc1a8c8520607b4
+source-git-commit: 7b075996eebd03f0aa812da3ece9cfebef8c65fc
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Skapa en lojalitetsutmaning för att definiera engagemangserbjudandet, konfigure
 
 * [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
 * [Förstå lojalitetsutmaningar](get-started.md) - Funktioner, arbetsflöde, förutsättningar
-* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
@@ -54,8 +54,6 @@ Detaljerade steg för att skapa utmaningar:
 * Utmaningstyper (Standard, Streak, Sequential)
 * Målgruppsval
 * Datumkonfiguration
-
-Se den fullständiga guiden i [huvuddokumentationen](loyalty-challenges.md#create-challenges).
 
 ## Lägga till uppgifter {#add-tasks}
 
@@ -248,16 +246,12 @@ Detaljerade anvisningar om hur du konfigurerar innehållskort, inklusive:
 * Design och personalisering
 * Förhandsgranska och testa
 
-Se den fullständiga guiden i [huvuddokumentationen](loyalty-challenges.md#configure-content-cards).
-
 ## Konfigurera meddelanden {#configure-messaging}
 
 Detaljerade anvisningar om hur du konfigurerar meddelanden i flera kanaler, inklusive:
 * Meddelandekanaler (i appen, e-post, push)
 * Meddelandefaser (start, pågående, slutförd)
 * Tidsinställning och utlösare för meddelanden
-
-Se den fullständiga guiden i [huvuddokumentationen](loyalty-challenges.md#configure-messaging).
 
 ## Granska och publicera {#review-and-publish}
 

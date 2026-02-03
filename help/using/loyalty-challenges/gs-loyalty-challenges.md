@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 419c7b3913ca4da50c69ed36ffc1a8c8520607b4
+source-git-commit: 7b075996eebd03f0aa812da3ece9cfebef8c65fc
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ Detaljerade krav finns i [Förstå lojalitetsproblem](get-started.md#prerequisit
   </td>
   <td>
     <a href="create-challenges.md">
-      <img alt="Skapa" src="../assets/do-not-localize/start-button.svg">
+      <!--<img alt="Create" src="../assets/do-not-localize/start-button.svg">-->
     </a>
     <div>
     <a href="create-challenges.md"><strong>Skapa utmaningar</strong></a>
@@ -105,7 +105,7 @@ Detaljerade krav finns i [Förstå lojalitetsproblem](get-started.md#prerequisit
   </td>
   <td>
     <a href="manage-challenges.md">
-    <img alt="Hantera" src="../assets/do-not-localize/monitor-button.svg">
+    <!--<img alt="Manage" src="../assets/do-not-localize/monitor-button.svg">-->
     </a>
     <div>
     <a href="manage-challenges.md"><strong>Hantera utmaningar</strong></a>

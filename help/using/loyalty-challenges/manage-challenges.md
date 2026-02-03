@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 37606966f56468009aa1ef127751517eee0b3222
+source-git-commit: 7b075996eebd03f0aa812da3ece9cfebef8c65fc
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ När ni har skapat och publicerat lojalitetsutmaningar kan ni visa, redigera, ö
 * [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
 * [Förstå lojalitetsutmaningar](get-started.md) - Funktioner, arbetsflöde, förutsättningar
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
-* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
@@ -49,8 +49,6 @@ Utmaningarna rör sig mellan olika statusar:
 * **Stoppad**: Manuellt stoppad före slutförande
 * **Arkiverad**: Har arkiverats i organisationssyfte
 
-Detaljerad information om varje status och hur du hanterar problem finns i [huvuddokumentationen](loyalty-challenges.md#manage-challenges).
-
 ## Redigera utmaningar {#edit-challenges}
 
 Du kan redigera utmaningar beroende på deras aktuella status:
@@ -60,8 +58,6 @@ Du kan redigera utmaningar beroende på deras aktuella status:
 
 För ändringar som kräver större ändringar, duplicera utmaningen och skapa en ny version.
 
-Detaljerade riktlinjer för redigering finns i [huvuddokumentationen](loyalty-challenges.md#edit-challenges).
-
 ## Duplicerade utmaningar {#duplicate-challenges}
 
 Duplicera utmaningarna med:
@@ -69,8 +65,6 @@ Duplicera utmaningarna med:
 * Skapa varianter för olika målgrupper
 * Uppdatera uppgiftskrav eller belöningar
 * Återaktivera stoppade eller slutförda problem
-
-Mer information finns i [huvuddokumentationen](loyalty-challenges.md#duplicate-challenge).
 
 ## Bildskärmsprestanda {#monitor-performance}
 
@@ -82,8 +76,6 @@ Spåra utmaningsprestanda genom:
 * **Interaktionsstatistik**: Intryck av innehållskort, meddelandeleverans
 
 Få åtkomst till prestandadata på fliken Prestanda för utmaningar och de automatiskt genererade reserapporterna.
-
-Mer information om mått och rapportering finns i [huvuddokumentationen](loyalty-challenges.md#monitor-performance).
 
 ## Bästa praxis {#best-practices}
 
@@ -101,8 +93,6 @@ Mer information om mått och rapportering finns i [huvuddokumentationen](loyalty
 * Använd konsekventa taggar för organisationen
 * Arkivera slutförda utmaningar för att hålla lagret hanterbart
 
-Mer information om bästa praxis finns i [huvuddokumentationen](loyalty-challenges.md#best-practices).
-
 ## Felsökning {#troubleshooting}
 
 Vanliga problem och lösningar:
@@ -111,8 +101,6 @@ Vanliga problem och lösningar:
 * **Låga deltagandefrekvenser**: Granska innehållssynlighet, meddelandeklarhet, uppgiftsgenomförbarhet
 * **Aktiviteter som inte utlöser**: Kontrollera dataöverföring, händelseattribut, rätt målgrupp
 * **Utmärkelser som inte allokerar**: Bekräfta konfigurationen och den externa systemanslutningen
-
-Detaljerad felsökningsvägledning finns i [huvuddokumentationen](loyalty-challenges.md#troubleshooting).
 
 ## Nästa steg {#next-steps}
 
