@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 223209750f1147e97d003ffb9d7231c7cef75663
+source-git-commit: 4278d8c8294b1413788402cd8eac5959996ad3f5
 workflow-type: tm+mt
-source-wordcount: '3077'
+source-wordcount: '3074'
 ht-degree: 15%
 
 ---
@@ -328,12 +328,12 @@ ht-degree: 15%
       + [Konfigurera SMS-underdomäner](using/sms/sms-subdomains.md)
       + [Bästa tillvägagångssätt för SMS-kostnadsoptimering](using/sms/sms-cost-optimization.md)
       + Konfigurera SMS/MMS/RCS-kanal {#configure-sms}
-         + [Konfigurera SMS/MMS/RCS-kanal](/help/rp_landing_pages/configure-sms-landing-page.md)
          + [Kom igång med SMS-/MMS-/RCS-konfiguration](using/sms/sms-configuration.md)
          + [Konfigurera Sinch-provider](using/sms/sms-configuration-sinch.md)
          + [Konfigurera Infobip-provider](using/sms/sms-configuration-infobip.md)
          + [Konfigurera Twilio-provider](using/sms/sms-configuration-twilio.md)
          + [Konfigurera en anpassad provider](using/sms/sms-configuration-custom.md)
+         + [Skapa webkrok](using/sms/sms-webhook.md)
          + [Skapa en SMS-/MMS-/RCS-konfiguration](using/sms/sms-configuration-surface.md)
    + Direktmeddelande {#direct-mail}
       + [Direktmeddelande](/help/rp_landing_pages/direct-mail-landing-page.md)
@@ -844,7 +844,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

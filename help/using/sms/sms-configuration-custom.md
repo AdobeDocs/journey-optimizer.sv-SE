@@ -7,9 +7,9 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
-source-git-commit: 9b7e10643aaa4cd6c82e0355c45fa810352f21c0
+source-git-commit: 4278d8c8294b1413788402cd8eac5959996ad3f5
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Med anpassad leverantörskonfiguration kan du ansluta tredjepartstjänster direk
 Följ stegen nedan för att konfigurera din anpassade leverantör:
 
 1. [Skapa API-autentiseringsuppgifter](#api-credential)
-1. [Skapa webkrok](#webhook)
+1. [Skapa webkrok](sms-webhook.md)
 1. [Skapa kanalkonfiguration](sms-configuration-surface.md)
 1. [Skapa resa eller kampanj med SMS-kanalsåtgärd](create-sms.md)
 
@@ -87,7 +87,7 @@ Följ de här stegen för att skicka SMS- och RCS-meddelanden i Journey Optimize
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
-1. Klicka på **[!UICONTROL API Credentials]** bin-ikonen![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort dina API-autentiseringsuppgifter.
+1. Klicka på **[!UICONTROL API Credentials]** bin-ikonen![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort dina API-autentiseringsuppgifter.
 
    ![](assets/sms_byo_3.png)
 
@@ -163,117 +163,6 @@ När API-autentiseringsuppgifterna har skapats fyller du i fälten som krävs f�
 ![](assets/sms-byop-jwt.png)
 
 >[!ENDTABS]
-
-## Skapa webkrok {#webhook}
-
->[!BEGINSHADEBOX]
-
-Om nyckelord för anmälan eller avanmälan inte anges används standardmeddelanden för godkännande för att respektera användarens integritet. Om du lägger till anpassade nyckelord åsidosätts standardvärdena automatiskt.
-
-**Standardnyckelord:**
-
-* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, FORTSÄTT, RESUME, BEGIN
-* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
-* **Hjälp**: HJÄLP
-
->[!ENDSHADEBOX]
-
-När API-autentiseringsuppgifterna har skapats kan du nu konfigurera Webhooks så att inkommande svar hämtas för hantering av godkännande av anmälan och avanmälan, och så att du får leveransrapporter som läskvitton när de är tillgängliga.
-
-När du konfigurerar en webkrok kan du definiera dess syfte baserat på den typ av data som du vill hämta:
-
-* **[!UICONTROL Inbound]**: Använd det här alternativet om du vill samla in medgivandesvar, t.ex. anmälan eller avanmälan, och samla in användarinställningar.
-
-* **[!UICONTROL Feedback]**: Välj det här alternativet om du vill spåra leverans- och engagemangshändelser, inklusive läskvitton och användarinteraktioner, som stöd för rapportering och analys.
-
->[!BEGINTABS]
-
->[!TAB Inkommande]
-
-1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL SMS Webhooks]** under **[!UICONTROL SMS settings]** och klicka på knappen **[!UICONTROL Create Webhook]**.
-
-   ![](assets/sms_byo_5.png)
-
-1. Konfigurera webkrosinställningarna enligt anvisningarna nedan:
-
-   * **[!UICONTROL Name]**: Ange ett namn för din webkrok.
-
-   * **[!UICONTROL Select SMS vendor]**: Anpassad.
-
-   * **[!UICONTROL Type]**: Inkommande.
-
-   * **[!UICONTROL API credentials]**: Välj i listrutan [tidigare konfigurerade API-autentiseringsuppgifter](#api-credential).
-
-   * **[!UICONTROL Sender Phone Number &#x200B;]**: Ange det &#x200B; för avsändarens telefonnummer som du vill använda för kommunikationen.
-
-     ![](assets/webhook-inbound.png)
-
-1. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) för att lägga till dina nyckelordskategorier och konfigurera dem sedan så här:
-
-   * **[!UICONTROL Inbound Keyword Category]**: Välj dina nyckelordskategorier antingen **[!UICONTROL Opt-In]**, **[!UICONTROL Opt-Out]**, **[!UICONTROL Double Opt-In]**, **[!UICONTROL Help]** eller **[!UICONTROL Custom]**.
-
-   * **[!UICONTROL Enter a keyword]**: Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt meddelande. Klicka på ![](assets/do-not-localize/Smock_Add_18_N.svg) om du vill lägga till flera nyckelord.
-
-     Använd icke-medgivande-relaterade nyckelord för gruppbaserade åtgärder inom en resa för **[!UICONTROL Custom keyword]**.
-
-   * **[!UICONTROL Reply Message]**: Välj det anpassade svar som skickas automatiskt i listrutan.
-
-   ![](assets/sms_byo_6.png)
-
-1. Klicka på **[!UICONTROL View payload editor]** för att validera och anpassa dina begärandataströmmar.
-
-   Du kan dynamiskt anpassa din nyttolast med hjälp av profilattribut och säkerställa att korrekta data skickas för bearbetning och svarsgenerering med hjälp av inbyggda hjälpfunktioner.
-
-1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din webkrok.
-
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
-
-1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
-
-1. Få åtkomst till och kopiera din nya **[!UICONTROL Webhook URL]** från din tidigare inskickade **[!UICONTROL Webhook]**.
-
-   ![](assets/sms_byo_7.png)
-
-När du har skapat och konfigurerat inställningarna för inkommande trafik för webkroken måste du nu skapa en [kanalkonfiguration](sms-configuration-surface.md) för SMS-meddelanden.
-
-När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som meddelandeframställning, personalisering, länkspårning och rapportering.
-
->[!TAB Feedback]
-
-1. Navigera till **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** i den vänstra listen, välj menyn **[!UICONTROL SMS Webhooks]** under **[!UICONTROL SMS settings]** och klicka på knappen **[!UICONTROL Create Webhook]**.
-
-   ![](assets/sms_byo_5.png)
-
-1. Konfigurera webkrosinställningarna enligt anvisningarna nedan:
-
-   * **[!UICONTROL Name]**: Ange ett namn för din webkrok.
-
-   * **[!UICONTROL Select SMS vendor]**: Anpassad.
-
-   * **[!UICONTROL Type]**: Feedback.
-
-   ![](assets/webhook-feedback.png)
-
-1. Klicka på **[!UICONTROL View payload editor]** för att validera och anpassa dina begärandataströmmar.
-
-   Du kan dynamiskt anpassa din nyttolast med hjälp av profilattribut och säkerställa att korrekta data skickas för bearbetning och svarsgenerering med hjälp av inbyggda hjälpfunktioner.
-
-1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av din webkrok.
-
-1. Klicka på ikonen **[!UICONTROL Webhooks]** bin![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort webkroken.
-
-1. Om du vill ändra den befintliga konfigurationen letar du reda på önskad webbkrok och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
-
-1. Få åtkomst till och kopiera din nya **[!UICONTROL Webhook URL]** från din tidigare inskickade **[!UICONTROL Webhook]**.
-
-   ![](assets/sms_byo_8.png)
-
-När du har skapat och konfigurerat inställningarna för inkommande trafik för webkroken måste du nu skapa en [kanalkonfiguration](sms-configuration-surface.md) för SMS-meddelanden.
-
-När konfigurationen är klar kan ni utnyttja alla färdiga kanalfunktioner som meddelandeframställning, personalisering, länkspårning och rapportering.
-
->[!ENDTABS]
-
 
 ## Instruktionsvideo {#video}
 

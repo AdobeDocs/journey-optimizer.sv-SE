@@ -7,10 +7,10 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
-source-git-commit: 5b719ccfb38ea51d6f6c6a9204e235c022b01b4f
+source-git-commit: 4278d8c8294b1413788402cd8eac5959996ad3f5
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 1%
+source-wordcount: '1303'
+ht-degree: 0%
 
 ---
 
@@ -23,6 +23,13 @@ När du använder Sinch-providern med Journey Optimizer finns det tre olika alte
 * **MMS-konfiguration**: Konfigurera dina Single MMS API-autentiseringsuppgifter för multimediemeddelanden (MMS). Observera att spårning och svar på inkommande meddelanden hanteras av SMS-konfigurationen. MMS-konfigurationen är endast avsedd för utgående leverans av MMS-meddelandet.
 
 * **RCS-konfiguration**: Konfigurera dina Single API-autentiseringsuppgifter för att skicka RCS-meddelanden sömlöst.
+
+Följ stegen nedan för att konfigurera din Sinch-leverantör:
+
+1. [Skapa API-autentiseringsuppgifter](#create-api)
+1. [Skapa webkrok](sms-webhook.md)
+1. [Skapa kanalkonfiguration](sms-configuration-surface.md)
+1. [Skapa resa eller kampanj med SMS-kanalsåtgärd](create-sms.md)
 
 ## Konfigurera API-autentiseringsuppgifter för SMS{#create-api}
 
@@ -51,14 +58,14 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
    | SMS-leverantör | Sinch |
    | Namn | Välj ett namn för API-autentiseringsuppgifterna. |
    | Tjänst-ID och API-token | Du hittar dina autentiseringsuppgifter på fliken SMS på API:er-sidan. Läs mer i [Signera dokumentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}. |
-   | Nyckelord för deltagande | Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt meddelande om att anmäla dig. Använd kommaseparerade värden för flera nyckelord. |
-   | Opt-in-meddelande | Ange det anpassade svar som automatiskt skickas som ditt meddelande. |
-   | Avanmäl nyckelord | Ange standardnyckelord eller anpassade nyckelord som automatiskt utlöser ditt avanmälningsmeddelande. Använd kommaseparerade värden för flera nyckelord. |
-   | Avanmäl meddelande | Ange det anpassade svar som automatiskt skickas som ditt avanmälningsmeddelande. |
-   | Hjälpnyckelord | Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt **hjälpmeddelande**. Använd kommaseparerade värden för flera nyckelord. |
-   | Hjälpmeddelande | Ange det anpassade svar som automatiskt skickas som **hjälpmeddelande**. |
-   | Nyckelord för dubbel anmälan | Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3440280/?captions=swe&learn=on). |
-   | Dubbelt meddelande om anmälan | Ange det anpassade svar som automatiskt skickas som svar på bekräftelsen av dubbel anmälan. |
+   | Nyckelord för deltagande | **Använd menyn [Webhooks](sms-webhook.md) för att konfigurera medgivandenyckelord för nya SMS-konfigurationer. Befintliga konfigurationer kan fortsätta med hjälp av medgivandenyckelord i det här avsnittet.** </br>Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt meddelande om anmälan. Använd kommaseparerade värden för flera nyckelord. |
+   | Opt-in-meddelande | **Använd menyn [Webhooks](sms-webhook.md) för att konfigurera medgivandenyckelord för nya SMS-konfigurationer. Befintliga konfigurationer kan fortsätta med hjälp av medgivandenyckelord i det här avsnittet.** </br> Ange det anpassade svar som automatiskt skickas som ditt meddelande. |
+   | Avanmäl nyckelord | **Använd menyn [Webhooks](sms-webhook.md) för att konfigurera medgivandenyckelord för nya SMS-konfigurationer. Befintliga konfigurationer kan fortsätta med hjälp av medgivandenyckelord i det här avsnittet.** </br> Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt avanmälningsmeddelande. Använd kommaseparerade värden för flera nyckelord. |
+   | Avanmäl meddelande | **Använd menyn [Webhooks](sms-webhook.md) för att konfigurera medgivandenyckelord för nya SMS-konfigurationer. Befintliga konfigurationer kan fortsätta med hjälp av medgivandenyckelord i det här avsnittet.** </br>Ange det anpassade svar som automatiskt skickas som ditt meddelande. |
+   | Hjälpnyckelord | **Använd menyn [Webhooks](sms-webhook.md) för att konfigurera medgivandenyckelord för nya SMS-konfigurationer. Befintliga konfigurationer kan fortsätta med hjälp av medgivandenyckelord i det här avsnittet.** </br> Ange standardnyckelord eller anpassade nyckelord som automatiskt kommer att utlösa ditt **hjälpmeddelande**. Använd kommaseparerade värden för flera nyckelord. |
+   | Hjälpmeddelande | **Använd menyn [Webhooks](sms-webhook.md) för att konfigurera medgivandenyckelord för nya SMS-konfigurationer. Befintliga konfigurationer kan fortsätta med hjälp av medgivandenyckelord i det här avsnittet.** </br>Ange det anpassade svar som automatiskt skickas som **hjälpmeddelande**. |
+   | Nyckelord för dubbel anmälan | **Använd menyn [Webhooks](sms-webhook.md) för att konfigurera medgivandenyckelord för nya SMS-konfigurationer. Befintliga konfigurationer kan fortsätta med hjälp av medgivandenyckelord i det här avsnittet.** </br>Ange de nyckelord som utlöser processen för dubbel anmälan. Om en användarprofil inte finns skapas den när den har bekräftats. Använd kommaseparerade värden för flera nyckelord. [Läs mer om SMS-dubbelanmälan](https://video.tv.adobe.com/v/3427129/?learn=on). |
+   | Dubbelt meddelande om anmälan | **Använd menyn [Webhooks](sms-webhook.md) för att konfigurera medgivandenyckelord för nya SMS-konfigurationer. Befintliga konfigurationer kan fortsätta med hjälp av medgivandenyckelord i det här avsnittet.** </br>Ange det anpassade svar som skickas automatiskt som svar på bekräftelsen av dubbel anmälan. |
    | Ingående nummer | Lägg till ditt unika inkommande nummer eller din korta kod. På så sätt kan du använda samma API-autentiseringsuppgifter för olika sandlådor, var och en med ett eget inkommande nummer eller kort kod. |
    | Anpassade inkommande nyckelord | Definiera unika nyckelord utan medgivande för batchbaserade åtgärder, t.ex. RABATT, ERBJUDANDEN, REGISTRERING. Dessa nyckelord fångas in och lagras som attribut i profilen, vilket gör att du kan aktivera en gruppbaserad segmentkvalificering under resan och leverera ett anpassat svar eller en anpassad åtgärd. |
    | Standardsvarsmeddelande för inkommande trafik | Ange standardsvaret som skickas när en slutanvändare skickar ett inkommande SMS som inte matchar något av de definierade nyckelorden. |
@@ -86,7 +93,7 @@ Så här konfigurerar du din Sinch-leverantör för att skicka SMS-meddelanden o
 
    ![](assets/verify-connection.png)
 
-När du har skapat och konfigurerat dina API-autentiseringsuppgifter måste du nu skapa en kanalkonfiguration för SMS-meddelanden. [Läs mer](sms-configuration-surface.md)
+När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa [din webkrok](sms-webhook.md) och en kanalkonfiguration för dina RCS-meddelanden. [Läs mer](sms-configuration-surface.md)
 
 ## Konfigurera API-autentiseringsuppgifter för MMS{#sinch-mms}
 
@@ -107,7 +114,7 @@ Så här konfigurerar du Sinch MMS att skicka MMS med Journey Optimizer:
    * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** och **[!UICONTROL API Token]**: Följ stegen nedan för att samla in dina MMS API-autentiseringsuppgifter.
 
       * För **[!UICONTROL Project ID]** och **[!UICONTROL App ID]**: Gå till sidan [Översikt över konversation-API](https://dashboard.sinch.com/convapi/overview) i ditt Sinch-projekt på din Sinch-instrumentpanel.
-      * För **[!UICONTROL API Token]**: Hämta [&#x200B; Access-nycklarna &#x200B;](https://community.sinch.com/t5/Customer-Dashboard/Sinch-Access-Keys/ta-p/12638) för ditt Sinch-projekt och generera en **Base64 API-token** från ditt Single Project **Access-nycklar**.
+      * För **[!UICONTROL API Token]**: Hämta [ Access-nycklarna ](https://community.sinch.com/t5/Customer-Dashboard/Sinch-Access-Keys/ta-p/12638) för ditt Sinch-projekt och generera en **Base64 API-token** från ditt Single Project **Access-nycklar**.
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
@@ -115,8 +122,7 @@ Så här konfigurerar du Sinch MMS att skicka MMS med Journey Optimizer:
 
 1. Om du vill ändra befintliga autentiseringsuppgifter letar du reda på de API-autentiseringsuppgifter du vill ha och klickar på alternativet **[!UICONTROL Edit]** för att göra de ändringar som behövs.
 
-När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa en kanalkonfiguration för MMS-meddelanden. [Läs mer](sms-configuration-surface.md)
-
+När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu skapa [din webkrok](sms-webhook.md) och en kanalkonfiguration för dina RCS-meddelanden. [Läs mer](sms-configuration-surface.md)
 
 ## Konfigurera API-autentiseringsuppgifter för RCS
 
