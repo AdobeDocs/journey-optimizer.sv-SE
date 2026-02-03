@@ -34,7 +34,7 @@ När ni har skapat och publicerat lojalitetsutmaningar kan ni visa, redigera, ö
 * [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
 * [Förstå lojalitetsutmaningar](get-started.md) - Funktioner, arbetsflöde, förutsättningar
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
-* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
@@ -87,17 +87,9 @@ Mer information om mått och rapportering finns i [huvuddokumentationen](loyalty
 
 ## Bästa praxis {#best-practices}
 
-### Skapa problem
-* Börja enkelt för din första utmaning
-* Testa grundligt före publicering till produktion
-* Försäkra er om tydlig kommunikation om krav och belöningar
-* Ställ in realistisk timing så att kunderna kan klara av utmaningar
+### Skapa problem* Börja enkelt för din första utmaning* Testa grundligt före publicering till produktion* Försäkra er om tydlig kommunikation om krav och belöningar* Ställ in realistisk timing så att kunderna kan klara av utmaningar
 
-### Förvaltning och övervakning
-* Kontrollera hur utmaningen fungerar regelbundet (minst en gång i veckan för utmaningar live)
-* Använd beskrivande namn som anger syfte, målgrupp eller tidsperiod
-* Använd konsekventa taggar för organisationen
-* Arkivera slutförda utmaningar för att hålla lagret hanterbart
+### Förvaltning och övervakning* Kontrollera hur utmaningen fungerar regelbundet (minst en gång i veckan för utmaningar live)* Använd beskrivande namn som anger syfte, målgrupp eller tidsperiod* Använd konsekventa taggar för organisationen* Arkivera slutförda utmaningar för att hålla lagret hanterbart
 
 Mer information om bästa praxis finns i [huvuddokumentationen](loyalty-challenges.md#best-practices).
 
