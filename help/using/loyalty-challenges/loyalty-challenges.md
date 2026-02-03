@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 version: Journey Orchestration
-source-git-commit: ee67a1a9270c12fdf199bc378deaa6006553533c
+source-git-commit: 48ccfc4047251fa97777d3fb2f160c33797a113e
 workflow-type: tm+mt
-source-wordcount: '4742'
+source-wordcount: '4963'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,7 @@ Med lojalitetsutmaningar kan ni skapa personaliserade engagemangserbjudanden fö
 >**I den här guiden:**
 >
 >* [Översikt](#overview) - Förstå vad lojalitetsutmaningar erbjuder
+>* [Så här fungerar det](#how-it-works) - Stegvisa arbetsflöden från installation till övervakning
 >* [Förutsättningar](#prerequisites) - Konfigurera datahämtning och behörigheter
 >* [Åtkomst till lojalitetsproblem](#access) - Öppna menyn och visa problem
 >* [Skapa utmaningar](#create-challenges) - Bygg nya lojalitetsutmaningar
@@ -43,6 +44,32 @@ Med lojalitetsutmaningar kan ni skapa personaliserade engagemangserbjudanden fö
 ## Översikt {#overview}
 
 Med lojalitetsutmaningar kan ni utforma och driftsätta personaliserade engagemangserbjudanden som motiverar kunderna att slutföra specifika åtgärder och tjäna pengar. Funktionen är en komplett lösning för att skapa storskaliga lojalitetsprogram, från att definiera uppgifter och milstolpar till att leverera innehåll och spåra prestanda i alla kanaler. Ni kan skapa tre olika typer av utmaningsupplevelser, konfigurera belöningar, skicka meddelanden i flera kanaler under viktiga livscykelsteg och övervaka prestanda via automatiskt genererade resor - allt med bibehållen integrering med ert externa lojalitetshanteringssystem.
+
+## Så fungerar det {#how-it-works}
+
+När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
+
+1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (som Capillary) för att importera lojalitetshändelsedata som spårar kundaktiviteter och kundframsteg.
+
+2. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential), målgrupp och datumintervall.
+
+3. **Lägg till aktiviteter** - Definiera de specifika åtgärder som kunder måste utföra, inklusive aktivitetstyper (inköp, utgifter, besök, osv.), kvantiteter, produktfilter och belöningar.
+
+4. **Utforma innehållskort** - Skapa den visuella representationen av din utmaning med Journey Optimizer innehållskort som visas på kundenheter.
+
+5. **Konfigurera meddelanden** (valfritt) - Konfigurera flerkanalsmeddelanden (i programmet, e-post, push) för nyckelstadier: start, pågående och slutförande.
+
+6. **Granska och publicera** - Testa din utmaning med testprofiler och publicera den sedan för att göra den tillgänglig för målgruppen.
+
+7. **Automatiskt genererad resa** - När du publicerar skapar Journey Optimizer automatiskt en resa som ordnar leverans av innehållskort och meddelanden.
+
+8. **Aktivera resa** - Den automatiskt genererade resan aktiveras på startdatumet för din utmaning och hanterar alla kundinteraktioner.
+
+9. **Övervaka prestanda** - Spåra deltagande, slutförandegrad, belöningsdistribution och meddelandeengagemang via inbyggda rapporter och arbetsytan.
+
+>[!NOTE]
+>
+>Den automatiskt genererade resan visas i kundreseinventeringen och kan anpassas vid behov. Ändringar som görs direkt på resan synkroniseras dock inte tillbaka till utmaningskonfigurationen.
 
 ## Viktiga funktioner
 
@@ -90,7 +117,7 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
   Detaljerade instruktioner finns i:
 
-   * [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+   * [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
    * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 * Nödvändiga behörigheter {#required-permissions}
@@ -147,6 +174,59 @@ Visa utmaningar inom ett visst datumintervall med **[!UICONTROL Filter by date]*
 
 Visa problem med specifika taggar som används med **[!UICONTROL Filter by tags]**.
 
+
+**[!UICONTROL Discount]**: Ange en rabattkod eller ett rabattvärde.
+
+* Ange rabattyp (procent eller fast belopp)
+* Ange rabattvärde
+* Ange rabattkoden eller låt systemet generera en
+
+**[!UICONTROL Free item]**: Bevilja en kostnadsfri produkt eller tjänst.
+
+* Ange artikelns SKU eller beskrivning
+* Ange hur den kostnadsfria artikeln ska tas i anspråk
+
+**[!UICONTROL Custom reward]**: Definiera en anpassad belöningstyp.
+
+* Ange belöningsbeskrivning
+* Ange relevanta koder eller identifierare
+* Konfigurera hur belöningen ska levereras eller tas i anspråk
+
+#### Exempel på konfiguration av belöning {#reward-example}
+
+**Utmaning**: &quot;Kaffe-övertäckningsutmaning&quot;
+
+**Aktivitet 1**: Köp 3 kassetter
+
+* Belöning: 30 poäng (10 poäng per kaffe)
+* Timing: När aktiviteten har slutförts
+
+**Aktivitet 2**: Prova 2 nya säsongsbaserade drycker
+
+* Belöning: 50 poäng
+* Timing: När aktiviteten har slutförts
+
+**Resultatbelöning för utmaning**:
+
+* Belöning: Kaffe utan extra kostnad + 100 poäng
+* Timing: När alla uppgifter har slutförts
+
+**Totalt antal möjliga belöningar**: 180 poäng + 1 fritt kaffe
+
+### Avancerade uppgiftsattribut {#advanced-attributes}
+
+För avancerade användningsområden kan du konfigurera ytterligare uppgiftsattribut:
+
+**[!UICONTROL Custom conditions]**: Lägg till anpassad logik eller anpassade villkor utöver standarduppgiftstyper med Experience Platform-segment eller regler.
+
+**[!UICONTROL Geofencing]**: (För besöksuppgifter) Kräv besök på specifika platser som definieras av geografiska koordinater och radie.
+
+**[!UICONTROL Time-based requirements]**: Kräv att aktiviteter ska slutföras under specifika timmar, dagar eller datumintervall.
+
+**[!UICONTROL Cooldown period]**: Ange en minsta tid mellan slutförda uppgifter för att förhindra snabba upprepade åtgärder.
+
+**[!UICONTROL Task dependencies]**: (För sekventiella utmaningar) Definiera krav som måste slutföras innan den här aktiviteten blir tillgänglig.
+
 ## Skapa utmaningar {#create-challenges}
 
 Skapa en lojalitetsutmaning för att definiera engagemangserbjudandet, konfigurera innehållskort för leverans, lägga till uppgifter, konfigurera belöningar och (valfritt) konfigurera meddelanden över olika kanaler.
@@ -198,7 +278,7 @@ Så här skapar du en ny lojalitetsutmaning:
 
 Mer information om hur du skapar eller förfinar målgrupper finns i [Skapa målgrupper i Journey Optimizer](../audience/about-audiences.md).
 
-&#x200B;4. Välj **[!UICONTROL Save as draft]** om du vill fortsätta konfigurera din utmaning.
+1. Välj **[!UICONTROL Save as draft]** om du vill fortsätta konfigurera din utmaning.
 
 ## Skapa uppgifter {#create-tasks}
 
@@ -372,59 +452,6 @@ Välj när kunderna ska få belöningar:
 
 * Ange antalet punkter (t.ex. 100)
 * Poäng skickas till ert externa lojalitetshanteringssystem via API
-
-**[!UICONTROL Discount]**: Ange en rabattkod eller ett rabattvärde.
-
-* Ange rabattyp (procent eller fast belopp)
-* Ange rabattvärde
-* Ange rabattkoden eller låt systemet generera en
-
-**[!UICONTROL Free item]**: Bevilja en kostnadsfri produkt eller tjänst.
-
-* Ange artikelns SKU eller beskrivning
-* Ange hur den kostnadsfria artikeln ska tas i anspråk
-
-**[!UICONTROL Custom reward]**: Definiera en anpassad belöningstyp.
-
-* Ange belöningsbeskrivning
-* Ange relevanta koder eller identifierare
-* Konfigurera hur belöningen ska levereras eller tas i anspråk
-
-#### Exempel på konfiguration av belöning {#reward-example}
-
-**Utmaning**: &quot;Kaffe-övertäckningsutmaning&quot;
-
-**Aktivitet 1**: Köp 3 kassetter
-
-* Belöning: 30 poäng (10 poäng per kaffe)
-* Timing: När aktiviteten har slutförts
-
-**Aktivitet 2**: Prova 2 nya säsongsbaserade drycker
-
-* Belöning: 50 poäng
-* Timing: När aktiviteten har slutförts
-
-**Resultatbelöning för utmaning**:
-
-* Belöning: Kaffe utan extra kostnad + 100 poäng
-* Timing: När alla uppgifter har slutförts
-
-**Totalt antal möjliga belöningar**: 180 poäng + 1 fritt kaffe
-
-### Avancerade uppgiftsattribut {#advanced-attributes}
-
-För avancerade användningsområden kan du konfigurera ytterligare uppgiftsattribut:
-
-**[!UICONTROL Custom conditions]**: Lägg till anpassad logik eller anpassade villkor utöver standarduppgiftstyper med Experience Platform-segment eller regler.
-
-**[!UICONTROL Geofencing]**: (För besöksuppgifter) Kräv besök på specifika platser som definieras av geografiska koordinater och radie.
-
-**[!UICONTROL Time-based requirements]**: Kräv att aktiviteter ska slutföras under specifika timmar, dagar eller datumintervall.
-
-**[!UICONTROL Cooldown period]**: Ange en minsta tid mellan slutförda uppgifter för att förhindra snabba upprepade åtgärder.
-
-**[!UICONTROL Task dependencies]**: (För sekventiella utmaningar) Definiera krav som måste slutföras innan den här aktiviteten blir tillgänglig.
-
 ## Konfigurera innehållskort {#configure-content-cards}
 
 Innehållskort är det viktigaste sättet som utmaningar visas för kunderna på deras enheter. Du måste konfigurera ett innehållskort för din utmaning.
@@ -1040,5 +1067,5 @@ Under betaversionen är din feedback värdefull för att hjälpa oss att förbä
 * [Skapa push-meddelanden](../push/create-push.md)
 * [Bygg resor](../building-journeys/journey-gs.md)
 * [Övervaka era resor](../building-journeys/report-journey.md)
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
