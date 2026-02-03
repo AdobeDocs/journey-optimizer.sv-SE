@@ -87,7 +87,7 @@ Följ de här stegen för att skicka SMS- och RCS-meddelanden i Journey Optimize
 
 1. Klicka på **[!UICONTROL Submit]** när du är klar med konfigurationen av dina API-autentiseringsuppgifter.
 
-1. Klicka på **[!UICONTROL API Credentials]** bin-ikonen![ på menyn ](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort dina API-autentiseringsuppgifter.
+1. Klicka på **[!UICONTROL API Credentials]** bin-ikonen![&#x200B; på menyn &#x200B;](assets/do-not-localize/Smock_Delete_18_N.svg) för att ta bort dina API-autentiseringsuppgifter.
 
    ![](assets/sms_byo_3.png)
 

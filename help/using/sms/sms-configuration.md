@@ -57,7 +57,7 @@ Dessa steg måste utföras av en Adobe Journey Optimizer [systemadministratör](
 
 ## Förhandskrav{#sms-prerequisites}
 
-Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverantörer som erbjuder textmeddelandetjänster oberoende av Adobe Journey Optimizer. Providrar som stöds för textmeddelanden och MMS är: **Sinch**, **Twilio** och **Infobip**. Observera att du kan konfigurera ytterligare meddelandeproviders med den anpassade providerkonfigurationen [](sms-configuration-custom.md).
+Adobe Journey Optimizer är för närvarande integrerat med tredjepartsleverantörer som erbjuder textmeddelandetjänster oberoende av Adobe Journey Optimizer. Providrar som stöds för textmeddelanden och MMS är: **Sinch**, **Twilio** och **Infobip**. Observera att du kan konfigurera ytterligare meddelandeproviders med den anpassade providerkonfigurationen [&#128279;](sms-configuration-custom.md).
 
 Innan du konfigurerar SMS-kanalen måste du skapa ett konto hos någon av dessa leverantörer för att få din **API-token** och **tjänst-ID**, som du måste konfigurera anslutningen mellan Adobe Journey Optimizer och den tillämpliga providern.
 

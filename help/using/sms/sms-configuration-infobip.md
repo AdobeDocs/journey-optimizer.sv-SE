@@ -96,7 +96,7 @@ När du har skapat och konfigurerat API-autentiseringsuppgifterna måste du nu s
 
 RCS-meddelanden stöds i Adobe Journey Optimizer via Infobip med funktionen [Anpassad SMS-provider](sms-configuration-custom.md) . På så sätt kan du leverera interaktiva budskap via verifierade affärsprofiler, som innehåller element som karuseller, knappar och multimediematerial.
 
-➡️ [Se hur Infobip stöder RCS i Infobip-dokumentationen ](https://www.infobip.com/docs/api/channels/rcs)
+➡️ [Se hur Infobip stöder RCS i Infobip-dokumentationen &#x200B;](https://www.infobip.com/docs/api/channels/rcs)
 
 Om du vill aktivera RCS-meddelanden med Infobip måste nya API-autentiseringsuppgifter konfigureras via en anpassad SMS-provider. Befintliga SMS-autentiseringsuppgifter för Infobip är inte kompatibla eftersom RCS kräver ett distinkt nyttolastformat.
 
