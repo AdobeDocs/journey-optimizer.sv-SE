@@ -20,7 +20,7 @@ Tack vare SMS/MMS/RCS-kanalen i Adobe Journey Optimizer kan ni engagera kunderna
 
 :::: landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 Komma igång med textmeddelanden
 
@@ -30,7 +30,7 @@ Lär dig hur du konfigurerar, skapar och hanterar SMS-, MMS- och RCS-meddelanden
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Skapa SMS-, MMS- och RCS-meddelanden
 
@@ -40,7 +40,7 @@ Stegvisa guider för att utforma, konfigurera och skicka personaliserade textmed
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
 
 Kontrollera och skicka textmeddelanden
 
@@ -50,7 +50,7 @@ Förhandsgranska, validera och skicka meddelanden samtidigt som ni säkerställe
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
 
 Hantera avanmälan av textmeddelande
 
@@ -60,7 +60,7 @@ Säkerställ att branschstandarderna följs genom att hantera avanmälningsproce
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 Konfigurera SMS-underdomäner
 
@@ -70,7 +70,7 @@ Konfigurera SMS-underdomäner för meddelandeleverans, inklusive konfiguration, 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
 
 Konfigurera SMS-/MMS-/RCS-kanaler
 
