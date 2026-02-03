@@ -10,9 +10,9 @@ role: User
 level: Beginner, Intermediate
 keywords: E-postteman, moduler, återanvändbarhet, varumärkeskonsekvens, e-postdesign, anpassad CSS, mobiloptimering
 exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
-source-git-commit: 365ed7f735760ee5763d0f12ea366c662a097948
+source-git-commit: 8caa8f8e126f062535b5276b4d96de10875a3406
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,17 @@ Den här funktionen gör att marknadsförarna kan använda visuellt tilltalande,
 
 * Om du använder innehåll som har skapats i HTML är du i [kompatibilitetsläge](existing-content.md) och du kan inte använda teman direkt på det här innehållet.
 
-   * Om du vill använda teman måste du först spara det importerade innehållet [&#x200B; som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
+   * Om du vill använda teman måste du först spara det importerade innehållet [ som en ny mall](../content-management/create-content-templates.md#save-as-template) och sedan konvertera mallen till ett temakompatibelt innehåll. Du kan sedan använda den här mallen för att skapa ditt e-postinnehåll. Lär dig hur du konverterar en mall som har skapats med manuell formatering i [det här avsnittet](#theme-convertor).
 
    * Du kan även konvertera ditt importerade HTML-innehåll. [Läs mer](existing-content.md)
 
   <!--To fully leverage all the capabilities of the Email Designer, including themes, you must either create a new content in Use Themes mode, or convert your imported HTML content. [Learn more](existing-content.md)-->
+
+* När du använder anpassade webbteckensnitt (inklusive Google-teckensnitt) i dina teman ska du vara medveten om att många e-postklienter inte har stöd för dem. Definiera alltid rätt reservteckensnitt i temat för att säkerställa läsbarhet för alla e-postklienter.
+
+   * Gmail och Yahoo! läser inte in externa webbteckensnitt och återgår till systemteckensnitt, oavsett vilken teckensnittsfamilj du har angett i HTML/CSS.
+   * De enda Google-teckensnitt som stöds av Gmail är Roboto och Google Sans.
+   * E-postklienter som *do* stöder webbteckensnitt är bland annat Apple Mail, iOS Mail, Android Mail, Thunderbird och Outlook för macOS.
 
 <!--If you apply a theme to a content using a [fragment](../content-management/fragments.md) created with Manual Styling mode, the rendering may not be optimal.-->
 
@@ -99,6 +105,10 @@ Följ stegen nedan för att definiera ett tema som du kan använda i ditt framti
 1. I **[!UICONTROL Text settings]** kan du ange det globala teckensnitt som du vill använda för hela temat. Du kan också redigera varje rubrik- och stycketyp för att justera teckensnitt, storlek, format och så vidare.
 
    ![](assets/theme-text.png)
+
+   >[!NOTE]
+   >
+   >När du väljer anpassade webbteckensnitt bör du tänka på att många e-postklienter som Gmail och Yahoo! har inte stöd för externa webbteckensnitt och kommer att återgå till systemteckensnitt. Överväg att ta med reservteckensnitt för att se till att innehållet visas korrekt på alla e-postklienter. [Läs mer](#themes-guardrails)
 
 1. På fliken **[!UICONTROL Spacing]** väljer du ett enskilt element i listan för att det ska vara tillräckligt stort mellan de olika komponenterna.
 
