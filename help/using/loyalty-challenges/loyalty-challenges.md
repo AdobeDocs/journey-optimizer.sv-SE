@@ -452,6 +452,7 @@ Välj när kunderna ska få belöningar:
 
 * Ange antalet punkter (t.ex. 100)
 * Poäng skickas till ert externa lojalitetshanteringssystem via API
+
 ## Konfigurera innehållskort {#configure-content-cards}
 
 Innehållskort är det viktigaste sättet som utmaningar visas för kunderna på deras enheter. Du måste konfigurera ett innehållskort för din utmaning.
