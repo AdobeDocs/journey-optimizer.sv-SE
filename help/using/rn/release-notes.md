@@ -214,7 +214,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 * **Kvalitetskontroller för AI-assistentinnehåll** - Förutom varumärkesjustering kan du nu utvärdera den övergripande <strong>innehållskvaliteten</strong> för att upptäcka potentiella problem med <strong>läsbarhet</strong>, kohesivitet och effektivitet, oberoende av varumärkesriktlinjerna. Dessa automatiska kontroller hjälper till att identifiera otydliga meddelanden, inkonsekventa toner och strukturella luckor. [Läs mer](../content-management/brands-score.md#validate-quality).
 
-  [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470544/?learn=on).
+  [Upptäck den här funktionen i videon](https://video.tv.adobe.com/v/3470550/?captions=swe&learn=on).
 
 #### Resor
 
