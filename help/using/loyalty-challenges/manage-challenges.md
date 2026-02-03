@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 419c7b3913ca4da50c69ed36ffc1a8c8520607b4
+source-git-commit: 37606966f56468009aa1ef127751517eee0b3222
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -34,7 +34,7 @@ När ni har skapat och publicerat lojalitetsutmaningar kan ni visa, redigera, ö
 * [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
 * [Förstå lojalitetsutmaningar](get-started.md) - Funktioner, arbetsflöde, förutsättningar
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
-* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
@@ -87,9 +87,19 @@ Mer information om mått och rapportering finns i [huvuddokumentationen](loyalty
 
 ## Bästa praxis {#best-practices}
 
-### Skapa problem* Börja enkelt för din första utmaning* Testa grundligt före publicering till produktion* Försäkra er om tydlig kommunikation om krav och belöningar* Ställ in realistisk timing så att kunderna kan klara av utmaningar
+### Skapa problem
 
-### Förvaltning och övervakning* Kontrollera hur utmaningen fungerar regelbundet (minst en gång i veckan för utmaningar live)* Använd beskrivande namn som anger syfte, målgrupp eller tidsperiod* Använd konsekventa taggar för organisationen* Arkivera slutförda utmaningar för att hålla lagret hanterbart
+* Börja enkelt för din första utmaning
+* Testa grundligt före publicering till produktion
+* Försäkra er om tydlig kommunikation om krav och belöningar
+* Ställ in realistisk timing så att kunderna kan klara av utmaningar
+
+### Förvaltning och övervakning
+
+* Kontrollera hur utmaningen fungerar regelbundet (minst en gång i veckan för utmaningar live)
+* Använd beskrivande namn som anger syfte, målgrupp eller tidsperiod
+* Använd konsekventa taggar för organisationen
+* Arkivera slutförda utmaningar för att hålla lagret hanterbart
 
 Mer information om bästa praxis finns i [huvuddokumentationen](loyalty-challenges.md#best-practices).
 
