@@ -9,25 +9,23 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-badge: label="Beta" type="Informative"
+badge: label="Privat beta" type="Informative"
 version: Journey Orchestration
-source-git-commit: 223209750f1147e97d003ffb9d7231c7cef75663
+source-git-commit: ee67a1a9270c12fdf199bc378deaa6006553533c
 workflow-type: tm+mt
-source-wordcount: '4762'
+source-wordcount: '4742'
 ht-degree: 0%
 
 ---
 
-<!-- markdownlint-disable MD025 -->
-# Lojalitetsutmaningar {#loyalty-challenges}
 
-Med lojalitetsutmaningar kan ni skapa personaliserade engagemangserbjudanden för era kunder, så att ni kan samordna lojalitetsprogram i stor skala. Du kan utforma utmaningar med specifika uppgifter och milstolpar, belöna kunder för att de fyllt i dem och leverera upplevelsen via Adobe Journey Optimizer-kanaler.
+# Lojalitetsutmaningar {#loyalty-challenges}
 
 >[!AVAILABILITY]
 >
->Lojalitetsutmaningar finns för närvarande i **beta**. Under betafasen är den här dokumentationen dold och tillgänglig endast via sammanhangsberoende hjälp från användargränssnittet för lojalitetsutmaningar.
->
->Om du inte ser Lojalitetsproblem i din instans kontaktar du din Adobe-representant för att få betaåtkomst.
+>Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst.
+
+Med lojalitetsutmaningar kan ni skapa personaliserade engagemangserbjudanden för era kunder, så att ni kan samordna lojalitetsprogram i stor skala. Du kan utforma utmaningar med specifika uppgifter och milstolpar, belöna kunder för att de fyllt i dem och leverera upplevelsen via Adobe Journey Optimizer-kanaler.
 
 >[!BEGINSHADEBOX]
 >
@@ -92,7 +90,7 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
   Detaljerade instruktioner finns i:
 
-   * [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+   * [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
    * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 * Nödvändiga behörigheter {#required-permissions}
@@ -200,7 +198,7 @@ Så här skapar du en ny lojalitetsutmaning:
 
 Mer information om hur du skapar eller förfinar målgrupper finns i [Skapa målgrupper i Journey Optimizer](../audience/about-audiences.md).
 
-&#x200B;4. Välj **[!UICONTROL Save as draft]** om du vill fortsätta konfigurera din utmaning.
+4. Välj **[!UICONTROL Save as draft]** om du vill fortsätta konfigurera din utmaning.
 
 ## Skapa uppgifter {#create-tasks}
 
@@ -1042,5 +1040,5 @@ Under betaversionen är din feedback värdefull för att hjälpa oss att förbä
 * [Skapa push-meddelanden](../push/create-push.md)
 * [Bygg resor](../building-journeys/journey-gs.md)
 * [Övervaka era resor](../building-journeys/report-journey.md)
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
