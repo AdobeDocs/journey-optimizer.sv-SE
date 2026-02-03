@@ -3,15 +3,13 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Lojalitetsutmaningar
 description: Lär dig hur du skapar och hanterar lojalitetsproblem i Adobe Journey Optimizer för att skapa engagerande lojalitetsprogram.
-feature: Loyalty challenges
-topic: Journeys
 role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 version: Journey Orchestration
-source-git-commit: b68c2610cbaaa8dbd86deb677562185e08d517ea
+source-git-commit: ef8f7754b689491bb052023ffbef0c8400dd79fe
 workflow-type: tm+mt
 source-wordcount: '4963'
 ht-degree: 0%
@@ -117,7 +115,7 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
   Detaljerade instruktioner finns i:
 
-   * [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+   * [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
    * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 * Nödvändiga behörigheter {#required-permissions}
@@ -1068,5 +1066,5 @@ Under betaversionen är din feedback värdefull för att hjälpa oss att förbä
 * [Skapa push-meddelanden](../push/create-push.md)
 * [Bygg resor](../building-journeys/journey-gs.md)
 * [Övervaka era resor](../building-journeys/report-journey.md)
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
