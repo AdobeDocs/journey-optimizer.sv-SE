@@ -200,7 +200,7 @@ Så här skapar du en ny lojalitetsutmaning:
 
 Mer information om hur du skapar eller förfinar målgrupper finns i [Skapa målgrupper i Journey Optimizer](../audience/about-audiences.md).
 
-4. Välj **[!UICONTROL Save as draft]** om du vill fortsätta konfigurera din utmaning.
+&#x200B;4. Välj **[!UICONTROL Save as draft]** om du vill fortsätta konfigurera din utmaning.
 
 ## Skapa uppgifter {#create-tasks}
 
