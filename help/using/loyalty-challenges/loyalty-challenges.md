@@ -90,7 +90,7 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
   Detaljerade instruktioner finns i:
 
-   * [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+   * [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
    * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 * Nödvändiga behörigheter {#required-permissions}
@@ -1040,5 +1040,5 @@ Under betaversionen är din feedback värdefull för att hjälpa oss att förbä
 * [Skapa push-meddelanden](../push/create-push.md)
 * [Bygg resor](../building-journeys/journey-gs.md)
 * [Övervaka era resor](../building-journeys/report-journey.md)
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
