@@ -34,7 +34,7 @@ När ni har skapat och publicerat lojalitetsutmaningar kan ni visa, redigera, ö
 * [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
 * [Förstå lojalitetsutmaningar](get-started.md) - Funktioner, arbetsflöde, förutsättningar
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
-* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
