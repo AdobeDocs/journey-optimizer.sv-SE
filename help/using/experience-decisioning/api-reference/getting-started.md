@@ -7,9 +7,9 @@ role: Developer
 level: Experienced
 exl-id: 7a4b5d4e-9c1d-4f3a-b8e9-1d5f6e7a8c3a
 version: Journey Orchestration
-source-git-commit: e46ab0637a0fa4a2b4b8b6ff3b8ab3eb5d38e0f7
+source-git-commit: 9ac3eaba0b4c6536c1c447df825eb5f5c0afc900
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -60,3 +60,7 @@ Nu när du förstår grunderna i API:erna för beslut kan du fortsätta med de s
 * [Skapa berättiganderegler](eligibility-rules/create.md)
 
 Mer information om hur du använder beslut i kampanjer och resor finns i [beslutsdokumentationen](../gs-experience-decisioning.md).
+
+>[!NOTE]
+>
+>Om du behöver migrera befintliga beslutshanteringsobjekt till Beslutsfattandet använder du det dedikerade [API:t för beslutsmigrering](../decisioning-migration-api.md). Detta specialiserade API har automatiserade beroendeupplösningar och återställningsfunktioner som är särskilt utformade för att migrera beslutsenheter över sandlådor.

@@ -7,10 +7,10 @@ role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
 version: Journey Orchestration
-source-git-commit: 0b94bfeaf694e8eaf0dd85e3c67ee97bd9b56294
+source-git-commit: 9ac3eaba0b4c6536c1c447df825eb5f5c0afc900
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 19%
+source-wordcount: '303'
+ht-degree: 18%
 
 ---
 
@@ -40,6 +40,10 @@ Vårt nästa generations beslutsramverk, utformat för att förena befintliga Jo
 Beslutsfattandet stöds för närvarande i den kodbaserade upplevelsekanalen.
 
 ➡️ [Kom igång med beslut](../experience-decisioning/gs-experience-decisioning.md)
+
+>[!NOTE]
+>
+>Information om hur du migrerar från beslutshantering till beslut finns i [migreringsdokumentationen](../experience-decisioning/migrate-to-decisioning.md) och [API-handboken för migrering](../experience-decisioning/decisioning-migration-api.md).
 
 ## Beslutshantering {#decision-management}
 

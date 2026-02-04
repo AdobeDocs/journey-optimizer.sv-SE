@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
 version: Journey Orchestration
-source-git-commit: 21de0b9616c414db204a3eafebc6a8184028a1e1
+source-git-commit: 9ac3eaba0b4c6536c1c447df825eb5f5c0afc900
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '641'
 ht-degree: 4%
 
 ---
@@ -53,7 +53,7 @@ De viktigaste stegen för att arbeta med beslut är följande:
 
    1. Ange användarens namn eller e-postadress eller välj användaren i listan och klicka på **[!UICONTROL Save]**.
 
-      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/users).
+      Om användaren inte har skapats tidigare, se [dokumentationen för Lägg till användare](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
 
       ![](assets/decision_permission_3.png)
 
@@ -97,11 +97,12 @@ De viktigaste stegen för att arbeta med beslut är följande:
 * **[Definiera urvalsstrategier](selection-strategies.md)** - Upptäck hur du skapar urvalsstrategier med berättiganderegler och rangordningsmetoder.
 * **[Skapa beslutspolicyer](create-decision-policy.md)** - Lär dig hur du skapar beslutspolicyer som kombinerar strategier och begränsningar.
 * **[Ranknings- och AI-modeller](ranking/ranking.md)** - Huvudrankningsformler och AI-modeller för personaliserade beslut.
+* **[Migrera från beslutshantering](migrate-to-decisioning.md)** - Förstå fördelarna med att migrera till API:er för beslutsfattande och användning av migreringsverktyg.
 * **[Beslutsfattarskyddsutkast](decisioning-guardrails.md)** - Granska viktiga begränsningar och bästa praxis för att fatta beslut om implementering.
-* **[Självstudiekurser för beslutsfattande](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}** - Utforska steg-för-steg-videokurser om beslutsfunktioner och metodtips.
+* **[Självstudiekurser för beslutsfattande](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}** - Utforska steg-för-steg-videokurser om beslutsfunktioner och metodtips.
 
 ## Instruktionsvideo {#video}
 
 Läs mer om beslutsfunktionerna i Adobe Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475867?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3451101?quality=12)
