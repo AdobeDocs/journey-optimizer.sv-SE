@@ -28,7 +28,7 @@ ht-degree: 0%
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
-* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
