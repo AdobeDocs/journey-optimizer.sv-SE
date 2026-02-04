@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: dbed4ffeb63ec3c58ff61845bbdb91fd2d51e69b
+source-git-commit: fd87aeabfae1f07d8f7bea7057f0c6dd0559d024
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
-* **Skapa aktiviteter** ◀ &rbrace;︎ **Du är här** - Definiera utmaningsaktiviteter
+* **Skapa aktiviteter** ◀ }︎ **Du är här** - Definiera utmaningsaktiviteter
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
@@ -60,7 +60,7 @@ Du kan skapa uppgifter från två startpunkter. Konfigurationsprocessen är dens
 
 +++Från aktivitetslagret
 
-1. Navigera till **[!UICONTROL Loyalty challenges]** i Journey Optimizer.
+1. Navigera till **[!UICONTROL Loyalty Challenges (Beta)]** i Journey Optimizer.
 
 1. Klicka på fliken **[!UICONTROL Tasks]**.  
 

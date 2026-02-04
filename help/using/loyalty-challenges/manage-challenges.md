@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: dbed4ffeb63ec3c58ff61845bbdb91fd2d51e69b
+source-git-commit: fd87aeabfae1f07d8f7bea7057f0c6dd0559d024
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
-* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
@@ -45,67 +45,38 @@ ht-degree: 0%
 Utmaningarna rör sig genom olika statusar under livscykeln:
 
 * **Utkast**: Utmaningen skapas eller redigeras och är ännu inte tillgänglig för kunder
-* **Schemalagd**: Utmaningen har publicerats och blir automatiskt aktiv det angivna startdatumet
-* **Live**: Utmaningen är aktiv och kunderna kan delta
-* **Slutförd**: Utmaningen har avslutats - antingen har slutdatumet passerats eller alla mål har uppfyllts
-* **Stoppad**: Utmaningen stoppades manuellt innan den slutfördes naturligt
-* **Arkiverad**: Utmaningen har arkiverats för organisationssyften och är inte längre synlig i huvudlagret
+* **Publicerad**: Utmaningen är aktiv, den associerade resan har skapats.
 
 ### Redigera utmaningar {#edit-challenges}
 
-Du kan redigera utmaningar beroende på deras aktuella status:
+Du kan redigera utmaningar genom att öppna dem i probleminventeringen. Redigeringsbeteendet varierar beroende på hur utmaningen fungerar:
 
-* **Utmaningar**: Fullständig redigering - alla egenskaper kan ändras
-* **Schemalagda/dynamiska utmaningar**: Begränsad redigering - du kan uppdatera innehåll, meddelanden och förlänga datum, men du kan inte ändra huvudstrukturen för utmaningar (typ, målgrupp eller aktivitetsdefinitioner)
+**Utmaningar**: Du har fullständig redigeringsfunktion. Alla egenskaper, uppgifter, innehåll och meddelanden kan ändras utan begränsningar.
 
-Så här redigerar du en utmaning:
+**Publicerade utmaningar**: När du öppnar en publicerad utmaning för redigering måste du först återställa den till utkaststatus.
 
-1. Gå till fliken **[!UICONTROL Challenges]** i lagret för lojalitetsutmaningar.
+* Alla anpassningar som gjorts direkt i den automatiskt genererade resan går förlorade
+* Utmaningen återgår till utkastläget
+* När du har gjort ändringarna måste du spara och publicera utmaningen igen
+* Du måste återaktivera den associerade resan för att göra den uppdaterade utmaningen tillgänglig för kunderna
 
-1. Leta reda på den utmaning som du vill redigera.
-
-1. Markera utmaningsnamnet om du vill öppna det i redigeringsläge.
-
-1. Gör dina ändringar baserat på utmaningsstatus:
-   * **Utmaningar**: Ändra egenskaper, uppgifter, innehåll eller meddelanden
-   * **Schemalagda/dynamiska utmaningar**: Uppdatera innehållskort, meddelanden eller utöka slutdatum efter behov
-
-1. Spara ändringarna. För schemalagda eller aktiva utmaningar träder ändringarna i kraft omedelbart eller i enlighet med ditt uppdateringsschema.
-
->[!NOTE]
+>[!IMPORTANT]
 >
->För ändringar som kräver större ändringar (till exempel ändring av utmaningstyp, målgrupp eller uppgiftsstruktur), ska du duplicera utmaningen och skapa en ny version i stället för att redigera den befintliga.
+>Det går inte att ångra en publicerad utmaning till ett utkast. Fundera på vilken effekt din aktiva resa har innan du fortsätter.
 
 ### Duplicerade utmaningar {#duplicate-challenges}
-
-Duplicera utmaningarna med:
-
-* Kör om framgångsrika utmaningar för nya tidsperioder
-* Skapa varianter för olika målgrupper
-* Uppdatera uppgiftskrav eller belöningar
-* Återaktivera stoppade eller slutförda problem
 
 När du duplicerar en utmaning skapas en exakt kopia med alla uppgifter, allt innehåll och alla meddelanden intakta, så att du snabbt kan skapa nya versioner utan att börja om från början.
 
 Så här duplicerar du en utmaning:
 
-1. Gå till fliken **[!UICONTROL Challenges]** i lagret för lojalitetsutmaningar.
+1. Navigera till fliken **[!UICONTROL Challenges]** och leta reda på den fråga du vill duplicera.
 
-1. Leta reda på den utmaning som du vill duplicera.
+1. Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) bredvid den utmaningen och välj **[!UICONTROL Duplicate]**.
 
-1. Välj menyn Fler åtgärder (tre punkter) bredvid den utmaningen.
+1. En kopia av utmaningen skapas. Öppna den duplicerade utmaningen och ändra de nödvändiga egenskaperna.
 
-1. Välj **[!UICONTROL Duplicate]**.
-
-1. En kopia av utmaningen skapas med &quot;[Kopiera]&quot; tillagd i namnet.
-
-1. Öppna den duplicerade utmaningen och ändra de nödvändiga egenskaperna:
-   * Uppdatera utmaningsnamnet
-   * Justera start- och slutdatum
-   * Ändra målgruppen vid behov
-   * Ändra uppgifter, belöningar, innehåll eller meddelanden efter behov
-
-1. Granska och publicera den duplicerade utmaningen.
+1. Spara den duplicerade utmaningen och generera den tillhörande resan.
 
 ### Bildskärmsprestanda {#monitor-performance}
 
@@ -184,7 +155,7 @@ Så här tar du bort en uppgift:
 
 1. Kontrollera att antalet **[!UICONTROL Used in challenges]** visar 0. Om antalet är större än 0 måste du först ta bort uppgiften från alla utmaningar innan du tar bort den.
 
-1. Välj menyn Fler åtgärder (tre punkter) bredvid uppgiften.
+1. Välj ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) bredvid uppgiften.
 
 1. Välj **[!UICONTROL Delete]**.
 

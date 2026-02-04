@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 5120eb51311348b8561b0a20f982576f6c945921
+source-git-commit: fd87aeabfae1f07d8f7bea7057f0c6dd0559d024
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källan
 
 Detaljerade instruktioner finns i:
 
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 +++
@@ -95,7 +95,7 @@ Detaljerade instruktioner finns i:
 
 Om du vill använda lojalitetsutmaningar måste du ha rätt behörigheter i Journey Optimizer. Nödvändiga behörigheter är:
 
-* Åtkomst till funktionen **[!UICONTROL Loyalty challenges]**
+* Åtkomst till funktionen **[!UICONTROL Loyalty Challenges (Beta)]**
 * Tillstånd att skapa och hantera resor
 * Behörigheter för att skapa och hantera innehållskort
 * Behörigheter att skapa och hantera målgrupper
@@ -106,7 +106,7 @@ Kontakta administratören om du inte kan komma åt funktionen eller behöver ytt
 
 +++Målgrupper
 
-Skapa målgrupper i Experience Platform innan ni skapar utmaningar. Dessa målgrupper definierar vilka kunder som är berättigade att delta i era lojalitetsutmaningar. Mer information om hur du skapar målgrupper finns i [Kom igång med målgrupper](../audience/about-audiences.md).
+Definiera målgrupper som specificerar vilka kunder som är berättigade att delta i era lojalitetsutmaningar. Du kan välja befintliga målgrupper eller skapa nya direkt från gränssnittet för att skapa utmaningar. Mer information om hur du arbetar med målgrupper finns i [Kom igång med målgrupper](../audience/about-audiences.md).
 
 +++
 
