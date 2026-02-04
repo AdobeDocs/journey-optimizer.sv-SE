@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: e98fe328b5a72a7091d48b5e2939a24e4ad6954c
+source-git-commit: dbed4ffeb63ec3c58ff61845bbdb91fd2d51e69b
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -26,242 +26,175 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
-* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
+* [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_create_challenge"
->title="Skapa en lojalitetsutmaning"
->abstract="Skapa en lojalitetsutmaning för att definiera engagemangserbjudandet, konfigurera innehållskort för leverans, lägga till uppgifter, konfigurera belöningar och (valfritt) konfigurera meddelanden över olika kanaler."
-
-## Innan du börjar {#before-you-start}
-
-Innan du skapar en utmaning måste du se till att du har:
-
-* Konfigurerad och validerad datainmatning via källanslutningar
-* Skapade alla målgrupper som krävs i Experience Platform
-* Förberett innehåll (bilder, text osv.) för din utmaning
-* Definierade de uppgifter och belöningar du vill erbjuda
-
-## Skapa en utmaning {#create-a-challenge}
-
-Detaljerade steg för att skapa utmaningar:
-* Konfiguration av utmaningsegenskaper
-* Utmaningstyper (Standard, Streak, Sequential)
-* Målgruppsval
-* Datumkonfiguration
-
-## Lägga till uppgifter {#add-tasks}
-
-Uppgifter definierar de specifika åtgärder eller milstolpar som kunderna måste slutföra för att få belöningar i en lojalitetsutmaning. Ni kan konfigurera uppgiftstyper, kvantiteter, produktkrav och belöningsvärden för att skapa engagerande och personaliserade lojalitetsupplevelser.
-
-### Uppgiftsöversikt {#task-overview}
-
-Varje uppgift representerar en mätbar åtgärd som bidrar till att slutföra en utmaning. Beroende på vilken typ av utmaning du använder (Standard, Streak eller Sequential) utför kunderna olika uppgifter:
-
-* **Standardutmaningar**: Kunderna utför ett angivet antal uppgifter i valfri ordning
-* **Utmaningar**: Kunderna utför samma uppgift flera gånger i följd
-* **Sekventiella utmaningar**: Kunderna slutför uppgifter i en definierad ordning
-
-### Lägg till en uppgift {#add-task}
-
-Så här lägger du till en uppgift i en utmaning:
-
-1. Öppna din utmaning eller skapa en ny.
-
-2. Navigera till avsnittet **[!UICONTROL Tasks]**.
-
-3. Välj **[!UICONTROL Add task]** eller **[!UICONTROL Create new task]**.
-
-4. Konfigurera följande egenskaper på skärmen för att skapa uppgifter.
-
-### Uppgiftsegenskaper {#task-properties}
-
-#### Grundläggande aktivitetsinformation {#basic-info}
-
-**[!UICONTROL Task name]**: Ange ett beskrivande namn för aktiviteten. Det här namnet är synligt för dig och ditt team, men det kanske inte visas för kunderna beroende på designen av ditt innehållskort.
-
-**[!UICONTROL Task description]**: (Valfritt) Lägg till information om aktivitetens syfte eller krav.
-
-**[!UICONTROL Task type]**: Välj vilken typ av åtgärd som kunder måste utföra. Tillgängliga uppgiftstyper är:
-
-* **[!UICONTROL Purchase]**: Kunden gör en inköpstransaktion
-* **[!UICONTROL Spend amount]**: Kunden spenderar ett angivet penningbelopp
-* **[!UICONTROL Visit]**: Kunden besöker en fysisk plats eller en digital egenskap
-* **[!UICONTROL Engagement]**: Kunden engagerar sig i innehåll, som att visa en video eller läsa en artikel
-* **[!UICONTROL Custom event]**: Kunden utlöser en anpassad händelse som spåras genom ditt databehov
-
-#### Kvantitetskrav {#quantity-requirements}
-
-**[!UICONTROL Required quantity]**: Ange hur många gånger kunden måste utföra uppgiften för att slutföra den.
-
-Exempel:
-
-* För en köpuppgift:&quot;Köp 2 artiklar&quot; (kvantitet = 2)
-* Aktivitet för ett utgiftsbelopp: &quot;Utgift $50&quot; (kvantitet = 50)
-* För en besöksuppgift: &quot;Besök 5 gånger&quot; (kvantitet = 5)
-
-**[!UICONTROL Tracking period]**: (Valfritt) Definiera tidsfönstret för att slutföra den här uppgiften:
-
-* Varaktighet per utmaning (standard)
-* Per dag
-* Per vecka
-* Per månad
-* Anpassat datumintervall
-
-### Produkt- och artikelfiltrering {#product-filtering}
-
-För Inköp- och Utgiftsbeloppsuppgifter kan du ange vilka produkter som är kvalificerade för att slutföra uppgiften.
-
-#### Inkluderingar {#product-inclusions}
-
-Definiera vilka produkter eller kategorier som räknas för uppgiften:
-
-1. Välj **[!UICONTROL Add product criteria]**.
-
-2. Välj hur du vill definiera kvalificerande produkter:
-   * **[!UICONTROL By SKU]**: Ange specifika produkt-SKU-koder
-   * **[!UICONTROL By category]**: Välj produktkategorier från din katalog
-   * **[!UICONTROL By attribute]**: Filtrera efter produktattribut som märke, storlek, färg eller anpassade attribut
-
-3. Ange eller välj produktidentifierare:
-
-   **Exempel - av SKU**:
-
-   ```text
-   SKU001, SKU002, SKU003
-   ```
-
-   **Exempel - Efter kategori**:
-
-   * Beverages > Coffee
-   * Bageri > Pasterier
-
-   **Exempel - Efter attribut**:
-
-   * Märke = &quot;Premium Brand&quot;
-   * Kategori = &quot;Säsongsobjekt&quot;
-   * Pris > $20
-
-4. Välj **[!UICONTROL Add]** om du vill spara produktvillkoren.
-
-#### Undantag för produkter {#product-exclusions}
-
-Om du vill kan du exkludera specifika produkter från att räknas in i uppgiften:
-
-1. Välj **[!UICONTROL Add exclusions]**.
-
-2. Använd samma filtreringsmetoder som produktinkluderingar för att ange vilka produkter som ska uteslutas.
-
-3. Vanliga uteslutningsscenarier:
-
-   * Försäljning eller clearing
-   * Presentkort
-   * Kampanjartiklar eller gratisartiklar
-   * Specifika varumärken eller kategorier
-
->[!NOTE]
+>[!AVAILABILITY]
 >
->**Inkluderings- och exkluderingslogik**: När både inkludering och exkludering har definierats:
->
->* Produkterna måste matcha inkluderingskriterierna
->* Produkter som matchar exkluderingsvillkor tas bort, även om de matchar inkluderingar
->* Om inga inkluderingar definieras kvalificerar sig alla produkter utom de som uttryckligen exkluderas
+>Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
-#### Exempel på produktfiltrering {#product-filtering-examples}
+## Så fungerar det {#how-it-works}
 
-##### Exempel 1: Kaffeutmaning {#example-1}
+<!-- SCHEMA: Visual workflow showing the 5 main steps with icons: Create challenge → Add tasks → Design content cards → Configure messaging → Review and publish -->
 
-* Uppgiftstyp: Inköp
-* Obligatorisk kvantitet: 3
-* Innehåll: Kategori = &quot;Dragningar > kaffe&quot;
-* Resultat: Kunden måste köpa 3 kaffedrycker
+När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
 
-##### Exempel 2: Premiumutgifter {#example-2}
+1. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential), målgrupp och datumintervall.
 
-* Aktivitetstyp: Utgiftsbelopp
-* Obligatorisk kvantitet: $100
-* Innehåll: Varumärke = &quot;Premium Brand&quot;
-* Undantag: Kategori = &quot;Godkännande&quot;
-* Resultat: Kunden måste spendera 100 dollar på Premium Brand-artiklar, exklusive rensningsartiklar
+1. **Lägg till aktiviteter** - Definiera de specifika åtgärder som kunder måste utföra, inklusive aktivitetstyper (inköp, utgifter, besök, osv.), kvantiteter, produktfilter och belöningar.
 
-##### Exempel 3: Specifikt produktinköp {#example-3}
+1. **Utforma innehållskort** - Skapa den visuella representationen av din utmaning med Journey Optimizer innehållskort som visas på kundenheter.
 
-* Uppgiftstyp: Inköp
-* Obligatorisk kvantitet: 1
-* Innehåll: SKU = &quot;NEWPRODUCT2024&quot;
-* Resultat: Kunden måste köpa den specifika produkten med SKU &quot;NEWPRODUCT2024&quot;
+1. **Konfigurera meddelanden** (valfritt) - Konfigurera flerkanalsmeddelanden (i programmet, e-post, push, SMS) för nyckelstadier: start, pågående och slutförande.
 
-### Konfigurera belöningar {#configure-rewards}
+1. **Granska och publicera** - Testa din utmaning med testprofiler och publicera den sedan för att göra den tillgänglig för målgruppen.
 
-Definiera vad kunderna tjänar på att utföra uppgifter. Belöningar kan beviljas på aktivitetsnivå eller på utmaningsnivå när alla uppgifter är slutförda.
+## Skapa utmaningen {#create-challenge}
 
-#### Belöningstidning {#reward-timing}
+<!-- SCREENSHOT: Challenge creation screen showing challenge properties form with fields for name, type, audience, dates -->
 
-Välj när kunderna ska få belöningar:
+Så här skapar du en ny lojalitetsutmaning:
 
-**[!UICONTROL After task completion]**: Kunderna får en belöning omedelbart efter att ha slutfört den här specifika uppgiften (kallas även&quot;progressiva belöningar&quot; eller&quot;milstolpebelöningar&quot;).
+1. Navigera till **[!UICONTROL Loyalty challenges]** i Journey Optimizer.
 
-**[!UICONTROL After challenge completion]**: Kunder får en belöning endast efter att ha slutfört alla nödvändiga uppgifter i utmaningen (kallas även&quot;final rewards&quot; eller&quot;grand prizes&quot;).
+1. Klicka på fliken **[!UICONTROL Challenges]**.  
 
->[!TIP]
->
->Ni kan kombinera båda belöningstyperna i en enda utmaning för att upprätthålla engagemanget under hela kundresan. Exempel:
->
->* Ge 10 poäng efter varje avslutad åtgärd (progressiv belöning)
->* Ge ytterligare 100 poäng när du är klar med hela utmaningen (slutbelöning)
+1. Välj **[!UICONTROL Create challenge]**.
 
-#### Belöningstyper och värden {#reward-types}
+1. Konfigurera utmaningsegenskaperna:
 
-**[!UICONTROL Points]**: Betala lojalitet som poäng för kundens konto.
+   **Utmaningsnamn**: Ange ett beskrivande namn för utmaningen. Det här namnet visas i utmaningslagret och hjälper dig att identifiera utmaningen.
 
-* Ange antalet punkter (t.ex. 100)
-* Poäng skickas till ert externa lojalitetshanteringssystem via API
+   **Utmaningstyp**: Välj en av följande typer:
+   * **[!UICONTROL Standard]**: Kunderna utför ett angivet antal uppgifter i valfri ordning
+   * **[!UICONTROL Streak]**: Kunder slutför samma uppgift flera gånger i följd
+   * **[!UICONTROL Sequential]**: Kunder slutför uppgifter i en definierad ordning
 
-**[!UICONTROL Discount]**: Ange en rabattkod eller ett rabattvärde.
+   **Målgrupp**: Välj det målgruppssegment som definierar vem som kan delta i den här utmaningen. Du måste skapa målgrupper i Experience Platform innan du kan skapa utmaningar. Mer information finns i [Kom igång med målgrupper](../audience/about-audiences.md).
 
-* Ange rabattyp (procent eller fast belopp)
-* Ange rabattvärde
-* Ange rabattkoden eller låt systemet generera en
+   **Startdatum**: Ange när utmaningen blir tillgänglig för kunder.
 
-**[!UICONTROL Free item]**: Bevilja en kostnadsfri produkt eller tjänst.
+   **Slutdatum**: Ange när utmaningen upphör att gälla och inte längre accepterar nya slutföranden.
 
-* Ange artikelns SKU eller beskrivning
-* Ange hur den kostnadsfria artikeln ska tas i anspråk
+<!-- VISUAL: Comparison table or diagram showing the three challenge types (Standard, Streak, Sequential) with examples of each -->
 
-**[!UICONTROL Custom reward]**: Definiera en anpassad belöningstyp.
+### Lägga till uppgifter {#add-tasks}
 
-* Ange belöningsbeskrivning
-* Ange relevanta koder eller identifierare
-* Konfigurera hur belöningen ska levereras eller tas i anspråk
+Uppgifter definierar de specifika åtgärder eller milstolpar som kunderna måste slutföra för att få belöningar. Du konfigurerar uppgiftstyper (inköp, utgifter, besök, engagemang, anpassade händelser), kvantiteter, produktfilter och belöningar.
 
-## Konfigurera innehållskort {#configure-content-cards}
+Beroende på vilken typ av utmaning du har kan kunderna utföra olika uppgifter på olika sätt:
 
-Detaljerade anvisningar om hur du konfigurerar innehållskort, inklusive:
-* Inställning av innehållskort
-* Design och personalisering
-* Förhandsgranska och testa
+* **Standardutmaningar**: Slutför ett angivet antal uppgifter i valfri ordning
+* **Utmaningar för strömning**: Slutför samma uppgift flera gånger i följd
+* **Sekventiella utmaningar**: Slutför uppgifter i en definierad ordning
 
-## Konfigurera meddelanden {#configure-messaging}
+Om du vill lägga till uppgifter i din utmaning väljer du **[!UICONTROL Add task]** i aktivitetsavsnittet och konfigurerar uppgiftsegenskaperna.
 
-Detaljerade anvisningar om hur du konfigurerar meddelanden i flera kanaler, inklusive:
-* Meddelandekanaler (i appen, e-post, push)
-* Meddelandefaser (start, pågående, slutförd)
-* Tidsinställning och utlösare för meddelanden
+Detaljerade instruktioner om hur du skapar och konfigurerar uppgifter finns i [Skapa uppgifter](create-tasks.md).
 
-## Granska och publicera {#review-and-publish}
+### Konfigurera innehållskort {#configure-content-cards}
+
+<!-- SCREENSHOT: Content cards configuration section in the challenge editor -->
+
+Innehållskort ger en visuell representation av utmaningen på kundenheter och visar utmaningsinformation, framsteg och belöningar. Läs mer om [innehållskort](../content-card/get-started-content-card.md).
+
+<!-- VISUAL: Example content card designs showing different states: challenge start, in-progress with progress bar, completion with reward -->
+
+Så här konfigurerar du innehållskort för din utmaning:
+
+1. Gå till avsnittet **[!UICONTROL Content cards]** i utmaningsredigeraren.
+
+1. Välj **[!UICONTROL Create content card]** eller välj en befintlig mall.
+
+1. Designa ditt innehållskort:
+   * Lägga till bilder, text och märkeselement
+   * Inkludera [personaliseringstoken](../personalization/personalization-syntax.md) för att visa kundspecifik information
+   * Visa förloppsindikatorer för utmaning
+   * Visa belöningar och incitament
+
+1. Konfigurera när innehållskortet visas:
+   * **Utmaningen startar**: Visa när utmaningen blir tillgänglig
+   * **Pågår**: Visas medan kunderna aktivt deltar
+   * **Slutförande**: Visa efter att kunderna har slutfört alla uppgifter
+
+1. Förhandsgranska innehållskortet på olika enheter för att se om det visas korrekt.
+
+1. Spara konfigurationen för innehållskortet.
+
+Mer information om hur du utformar och anpassar innehållskort finns i [Skapa innehållskort](../content-card/design-content-card.md).
+
+### Konfigurera meddelanden {#configure-messaging}
+
+<!-- SCREENSHOT: Messaging configuration section showing the three lifecycle stages: Launch, In-progress, Completion -->
+
+Skapa flerkanalsmeddelanden för att engagera kunderna i viktiga stadier av utmaningens livscykel.
+
+<!-- VISUAL: Timeline diagram showing when each message type is sent during the challenge lifecycle -->
+
+Så här konfigurerar du meddelanden för din utmaning:
+
+1. Gå till avsnittet **[!UICONTROL Messaging]** i utmaningsredigeraren.
+
+1. Konfigurera meddelanden för varje livscykelsteg:
+
+   **Startmeddelanden** - Meddela kunderna när problemet börjar:
+   * Välj kanaler: [In-app](../in-app/get-started-in-app.md), [email](../email/get-started-email.md), [push-meddelanden](../push/get-started-push.md) eller [SMS](../sms/get-started-sms.md)
+   * Designa budskapet med probleminformation och call-to-action
+   * Ange timing: Skicka omedelbart när en utmaning publiceras eller schemaläggs för en viss tid
+
+   **Pågående meddelanden** - Håll kunderna engagerade under utmaningen:
+   * Definiera utlösarvillkor (till exempel 50 % slutförande, specifik uppgift slutförd)
+   * Skapa påminnelsemeddelanden för att uppmuntra fortsatt deltagande
+   * Inkludera förloppsuppdateringar och nästa steg
+
+   **Slutförandemeddelanden** - Fira lyckade och leverera belöningar:
+   * Grattis till att kunderna slutfört denna utmaning
+   * Bekräfta belöningsallokering
+   * Ange instruktioner för att begära belöningar
+   * Föreslå nästa utmaningar eller åtgärder
+
+Mer information om hur du skapar meddelanden för specifika kanaler finns i:
+
+* [Dokumentation för meddelanden i appen](../in-app/get-started-in-app.md)
+* [Dokumentation för e-postmeddelanden](../email/get-started-email.md)
+* [Dokumentation för push-meddelanden](../push/get-started-push.md)
+* [Dokumentation för SMS](../sms/get-started-sms.md)
+
+## Granska och publicera utmaningen {#review-and-publish}
+
+<!-- SCREENSHOT: Review screen showing summary of challenge configuration with all components listed -->
 
 Innan du publicerar din utmaning:
 
-1. **Granska alla komponenter**: Utmaningsegenskaper, uppgifter, belöningar, innehåll, meddelanden
-2. **Testa upplevelsen**: Använd testprofiler för att validera innehåll och aktivitetsutlösare
-3. **Publicera**: Gör utmaningen aktiv för målgruppen
+1. **Granska alla komponenter**: Verifiera utmaningsegenskaper, uppgifter, belöningar, innehållskort och meddelandekonfigurationer.
 
-Den automatiskt genererade resan aktiveras på det angivna startdatumet.
+1. **Testa upplevelsen**: Använd [testprofiler](../test-approve/test-profiles.md) för att validera hur innehållskortet visas och aktivitetsutlösaren fungerar.
+
+1. **Publicera**: Välj **[!UICONTROL Publish]** om du vill att utmaningen ska vara tillgänglig för målgruppen.
+
+<!-- SCREENSHOT: Journeys inventory showing the auto-generated journey in Draft status with name format "Challenge: [Challenge Name]" -->
+
+När du publicerar en fråga skapas automatiskt en [resa](../building-journeys/journey-gs.md) i utkaststatus i Journey Optimizer. Den automatiskt genererade resan visas i kundresearkivet med namnformatet Utmaning: [Utmaningsnamn].
+
+Så här gör du utmaningen tillgänglig för kunderna:
+
+1. Navigera till **[!UICONTROL Journeys]**-lagret i Journey Optimizer.
+
+1. Leta reda på den automatiskt genererade resan (den kommer att ha&quot;Problem:&quot; som ett prefix i sitt namn).
+
+1. [Aktivera resan](../building-journeys/publishing-the-journey.md).
+
+Resan startar automatiskt på det angivna utmaningsstartdatumet.
+
+>[!NOTE]
+>
+>Den automatiskt genererade resan visas i kundreseinventeringen och kan anpassas vid behov. Ändringar som görs direkt på resan synkroniseras dock inte tillbaka till utmaningskonfigurationen.
 
 ## Nästa steg {#next-steps}
 
 * [Hantera utmaningar](manage-challenges.md) - Lär dig redigera, övervaka och optimera utmaningar
 * [Förstå lojalitetsutmaningar](get-started.md) - Granska funktioner och funktioner
+

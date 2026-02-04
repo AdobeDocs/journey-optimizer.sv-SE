@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: e98fe328b5a72a7091d48b5e2939a24e4ad6954c
+source-git-commit: dbed4ffeb63ec3c58ff61845bbdb91fd2d51e69b
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -27,105 +27,88 @@ ht-degree: 0%
 * **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här **- Översikt, arbetsflöde, förutsättningar**
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
+* [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_challenges_overview"
->title="Om lojalitetsutmaningar"
->abstract="Lojalitetsutmaningar gör att ni kan skapa personaliserade engagemangserbjudanden som motiverar kunderna att slutföra specifika åtgärder och få belöningar."
-
 >[!AVAILABILITY]
 >
->Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst.
+>Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
 ## Översikt {#overview}
 
-Lojalitetsutmaningar är en komplett lösning för att skapa storskaliga lojalitetsprogram, från att definiera uppgifter och milstolpar till att leverera innehåll och spåra prestanda i olika kanaler. Ni kan skapa tre olika typer av utmaningsupplevelser, konfigurera belöningar, skicka meddelanden i flera kanaler under viktiga livscykelsteg och övervaka prestanda via automatiskt genererade resor - allt med bibehållen integrering med ert externa lojalitetshanteringssystem.
+Lojalitetsutmaningar är en komplett lösning för att skapa storskaliga lojalitetsprogram, från att definiera uppgifter och milstolpar till att leverera innehåll och spåra prestanda i olika kanaler.
 
-## Viktiga funktioner {#key-capabilities}
+Ni kan skapa tre typer av utmaningsupplevelser:
 
-Använd lojalitetsutmaningar för att:
+* **Standardutmaningar**: Kunderna utför ett angivet antal uppgifter i valfri ordning
+* **Utmaningar**: Kunderna utför samma uppgift flera gånger i följd
+* **Sekventiella utmaningar**: Kunderna slutför uppgifter i en definierad ordning
 
-* **Skapa tre typer av utmaningar**:
-   * **Standard**: Kunderna utför valfritt antal uppgifter för att få belöningar
-   * **Strömma**: Kunder slutför samma uppgift flera gånger i följd
-   * **Sekventiellt**: Kunder slutför uppgifter i en viss ordning
+Med lojalitetsutmaningar kan ni konfigurera belöningar, skicka meddelanden i flera kanaler i viktiga faser av livscykeln och övervaka prestanda via automatiskt genererade resor - allt med bibehållen integrering med ert externa lojalitetshanteringssystem.
 
-* **Utmaningsinnehåll**: Använd Journey Optimizer-innehållskort för att skapa en visuell representation av din utmaning på kundenheter. Innehållskort visar information om utmaningar, framsteg och belöningar.
-
-* **Ange uppgiftskrav**: Definiera vad kunder måste göra för att få belöningar, inklusive:
-   * Uppgiftstyper (inköp, utgiftsbelopp, besök, engagemang, anpassade händelser)
-   * Kvantitetskrav
-   * Inkluderingar/uteslutningar av produkter med SKU:er, kategorier eller attribut
-   * Anpassade attribut och villkor
-
-* **Konfigurera belöningar**: Definiera belöningar som kunder får när de har slutfört en uppgift (progressiva belöningar) eller efter att ha slutfört hela utmaningen (slutliga belöningar).
-
-* **Skicka meddelanden i flera kanaler**: Leverera meddelanden i flera kanaler (i appen, e-post, push) i viktiga steg:
-   * **Starta**: När utmaningen startar
-   * **Pågår**: När kunderna är på väg genom
-   * **Fullständigt**: När kunderna slutför utmaningen
-
-* **Spåra prestanda**: Övervaka automatiskt genererade resor och granska utmaningsprestanda genom inbyggda rapporter.
+<!-- SCREENSHOT: High-level diagram showing Loyalty Challenges architecture with: Data ingestion from source connectors -> Challenge creation in JO -> Content cards & messaging -> Customer device -> Journey tracking -->
 
 ## Så fungerar det {#how-it-works}
 
+<!-- SCHEMA: Visual workflow diagram showing the 8 steps in the loyalty challenge creation process with icons for each step -->
+
 När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
 
-1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (som Capillary) för att importera lojalitetshändelsedata som spårar kundaktiviteter och kundframsteg.
+1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. Capillary-kopplingen) för att importera lojalitetshändelsedata som spårar kundaktiviteter och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
 
-2. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential), målgrupp och datumintervall.
+1. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential), målgrupp och datumintervall. Mer information finns i [Skapa utmaningar](create-challenges.md).
 
-3. **Lägg till aktiviteter** - Definiera de specifika åtgärder som kunder måste utföra, inklusive aktivitetstyper (inköp, utgifter, besök, osv.), kvantiteter, produktfilter och belöningar.
+1. **Lägg till aktiviteter** - Definiera de specifika åtgärder som kunderna måste utföra, inklusive aktivitetstyper (inköp, utgifter, besök, engagemang, anpassade händelser), kvantiteter, produktfilter och belöningar. Mer information finns i [Skapa aktiviteter](create-tasks.md).
 
-4. **Utforma innehållskort** - Skapa den visuella representationen av din utmaning med Journey Optimizer innehållskort som visas på kundenheter.
+1. **Utforma innehållskort** - Skapa den visuella representationen av din utmaning med Journey Optimizer [innehållskort](../content-card/get-started-content-card.md) som visas på kundenheter. Innehållskort visar information om utmaningar, framsteg och belöningar.
 
-5. **Konfigurera meddelanden** (valfritt) - Konfigurera flerkanalsmeddelanden (i programmet, e-post, push) för nyckelstadier: start, pågående och slutförande.
+1. **Konfigurera meddelanden** (valfritt) - Konfigurera flerkanalsmeddelanden ([i appen](../in-app/get-started-in-app.md), [e-post](../email/get-started-email.md), [push](../push/get-started-push.md)) för nyckelstadier i livscykeln: start, pågående och slutförande.
 
-6. **Granska och publicera** - Testa din utmaning med testprofiler och publicera den sedan för att göra den tillgänglig för målgruppen.
+1. **Granska och publicera** - Testa din utmaning med [testprofiler](../test-approve/test-profiles.md) och publicera den sedan för att göra den tillgänglig för målgruppen.
 
-7. **Automatiskt genererad resa** - När du publicerar skapar Journey Optimizer automatiskt en resa som ordnar leverans av innehållskort och meddelanden.
+1. **Aktivera resa** - När du publicerar en utmaning skapar Journey Optimizer automatiskt en [resa](../building-journeys/journey-gs.md) i utkaststatus som koordinerar leverans och meddelanden för innehållskort. Navigera till lagret Resurser, leta upp den automatiskt genererade resan (med namnet&quot;Utmaning: [Utmaningsnamn]&quot;) och [aktivera den](../building-journeys/publishing-the-journey.md) för att göra utmaningen tillgänglig för dina kunder.
 
-8. **Aktivera resa** - Den automatiskt genererade resan aktiveras på startdatumet för din utmaning och hanterar alla kundinteraktioner.
-
-9. **Övervaka prestanda** - Spåra deltagande, slutförandegrad, belöningsdistribution och meddelandeengagemang via inbyggda rapporter och arbetsytan.
-
->[!NOTE]
->
->Den automatiskt genererade resan visas i kundreseinventeringen och kan anpassas vid behov. Ändringar som görs direkt på resan synkroniseras dock inte tillbaka till utmaningskonfigurationen.
+1. **Övervaka prestanda** - Spåra deltagande, slutförandegrad, belöningsdistribution och meddelandeengagemang via inbyggda rapporter och arbetsytan. Se [Hantera utmaningar](manage-challenges.md) för mer information om övervakning.
 
 ## Förhandskrav {#prerequisites}
 
 Innan du använder lojalitetsutmaningar måste du se till att du har:
 
-### Inställning av datainmatning {#data-ingestion}
++++Inställning av datainmatning
 
 Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källanslutningar för att spåra kundens framsteg och slutförande av uppgifter.
 
-1. **Konfigurera en källanslutning som stöds**: För närvarande är den kapillära kopplingen allmänt tillgänglig. Ytterligare anslutningar planeras.
+1. **Konfigurera en källanslutning som stöds**: För närvarande är den kapillära kopplingen allmänt tillgänglig. Ytterligare anslutningar planeras för framtida releaser.
 
-2. **Validera datainmatning**: Kontrollera att lojalitetshändelser och kunddata följer med till Experience Platform och är tillgängliga i Journey Optimizer.
+1. **Validera datainmatning**: Kontrollera att lojalitetshändelser och kunddata följer med till Experience Platform och är tillgängliga i Journey Optimizer. Verifiera att dataschemat innehåller de fält som behövs för att spåra kundåtgärder och -förlopp.
 
 Detaljerade instruktioner finns i:
 
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
-### Nödvändiga behörigheter {#required-permissions}
++++
 
-Om du vill använda lojalitetsutmaningar måste du ha rätt behörigheter i Journey Optimizer. Kontakta administratören om du inte kan komma åt funktionen.
++++Nödvändiga behörigheter
 
-### Målgrupper {#target-audiences}
+Om du vill använda lojalitetsutmaningar måste du ha rätt behörigheter i Journey Optimizer. Nödvändiga behörigheter är:
 
-Skapa målgrupper i Experience Platform innan ni skapar utmaningar. Du kan välja befintliga målgrupper men inte skapa nya målgrupper med hjälp av användargränssnittet för lojalitetsutmaningar.
+* Åtkomst till funktionen **[!UICONTROL Loyalty challenges]**
+* Tillstånd att skapa och hantera resor
+* Behörigheter för att skapa och hantera innehållskort
+* Behörigheter att skapa och hantera målgrupper
 
-## Viktiga begränsningar {#limitations}
+Kontakta administratören om du inte kan komma åt funktionen eller behöver ytterligare behörigheter.
 
-* **Inget redovisningssystem**: Lojalitetsproblem spårar inte monetära värden eller punktsaldon. När kunderna genomför en utmaning och får en belöning, anropar Journey Optimizer ditt externa lojalitetshanteringssystem för att hantera punktallokering.
++++
 
-* **Endast målgruppsval**: Du kan välja befintliga målgrupper men inte skapa nya målgrupper från användargränssnittet för lojalitetsutmaningar.
++++Målgrupper
+
+Skapa målgrupper i Experience Platform innan ni skapar utmaningar. Dessa målgrupper definierar vilka kunder som är berättigade att delta i era lojalitetsutmaningar. Mer information om hur du skapar målgrupper finns i [Kom igång med målgrupper](../audience/about-audiences.md).
+
++++
 
 ## Nästa steg {#next-steps}
 
@@ -140,7 +123,7 @@ Skapa målgrupper i Experience Platform innan ni skapar utmaningar. Du kan välj
     </div>
     <p>
     <em>Lär dig hur du får åtkomst till inventering och filtrering av utmaningar</em>
-    <p>
+    </p>
   </td>
   <td>
     <a href="create-challenges.md">
@@ -151,7 +134,18 @@ Skapa målgrupper i Experience Platform innan ni skapar utmaningar. Du kan välj
     </div>
     <p>
     <em>Skapa och konfigurera din första lojalitetsutmaning</em>
+    </p>
+  </td>
+  <td>
+    <a href="create-tasks.md">
+    <!--<img alt="Tasks" src="../assets/do-not-localize/start-button.svg">-->
+    </a>
+    <div>
+    <a href="create-tasks.md"><strong>Skapa aktiviteter</strong></a>
+    </div>
     <p>
+    <em>Definiera åtgärder och belöningar för utmaningar</em>
+    </p>
   </td>
   <td>
     <a href="manage-challenges.md">
@@ -162,7 +156,7 @@ Skapa målgrupper i Experience Platform innan ni skapar utmaningar. Du kan välj
     </div>
     <p>
     <em>Redigera, övervaka och optimera utmaningar</em>
-    <p>
+    </p>
   </td>
 </tr>
 </table>

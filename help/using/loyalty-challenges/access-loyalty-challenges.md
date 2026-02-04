@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: e98fe328b5a72a7091d48b5e2939a24e4ad6954c
+source-git-commit: dbed4ffeb63ec3c58ff61845bbdb91fd2d51e69b
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -27,29 +27,34 @@ ht-degree: 0%
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * **Åtkomst till lojalitetsproblem** {2 }︎ ◀Du är här **- Lager och filtrering**
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
+* [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
+>[!AVAILABILITY]
+>
+>Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
+
 ## Få tillgång till lagret med lojalitetsutmaningar {#access-inventory}
 
-Så här kommer du åt lojalitetsutmaningar:
+<!-- SCREENSHOT: Journey Optimizer main menu showing "Loyalty challenges" under "Customer journeys" section -->
 
-1. I Adobe Journey Optimizer väljer du **[!UICONTROL Loyalty challenges]** i den vänstra navigeringsmenyn under avsnittet **[!UICONTROL Customer journeys]**.
+Om du vill få åtkomst till lojalitetsutmaningar går du till Journey Optimizer och väljer **[!UICONTROL Loyalty challenges]** under avsnittet **[!UICONTROL Customer journeys]**.
 
-2. Sidan Loyalty Challenges visas med två flikar:
-   * **[!UICONTROL Challenges]**: Visa och hantera alla lojalitetsutmaningar
-   * **[!UICONTROL Tasks]**: Visa och hantera alla uppgifter som kan återanvändas i flera utmaningar
+<!-- SCREENSHOT: Loyalty Challenges landing page showing the two tabs: Challenges and Tasks -->
 
-Som standard är fliken **[!UICONTROL Challenges]** markerad och visar alla befintliga utmaningar i organisationen.
+Sidan Loyalty Challenges visas med två flikar:
 
-## Fliken Utmaningar {#challenges-tab}
+* **[!UICONTROL Challenges]**: Visa och hantera alla lojalitetsutmaningar
 
-På fliken Utmaningar visas alla utmaningar sorterade efter senaste ändringsdatum, där de senast ändrade utmaningarna visas först.
+* **[!UICONTROL Tasks]**: Visa och hantera alla uppgifter som kan återanvändas i flera utmaningar
 
-### Förstå utmaningarna {#inventory-overview}
+## Utmaningslager {#challenges-tab}
 
-I inventeringen av utmaningar visas alla utmaningar med följande information:
+<!-- SCREENSHOT: Challenges tab showing the inventory table with columns: Challenge name, Status, Type, Start date, End date, Created by, Last modified, Tags -->
+
+På fliken Utmaningar visas alla utmaningar sorterade efter senaste ändringsdatum, där de senast ändrade utmaningarna visas först. Följande information visas:
 
 * **[!UICONTROL Challenge name]**: Namnet som du tilldelade till utmaningen
 * **[!UICONTROL Status]**: Aktuellt tillstånd för utmaningen (se statusbeskrivningar nedan)
@@ -62,51 +67,63 @@ I inventeringen av utmaningar visas alla utmaningar med följande information:
 
 ### Utmaningsstatus {#challenge-statuses}
 
-Utmaningar kan ha följande status:
+<!-- VISUAL: Status badges showing different challenge statuses with color coding: Draft (gray), Scheduled (blue), Live (green), Completed (gray), Stopped (red), Archived (gray) -->
 
-* **[!UICONTROL Draft]**: Utmaningen skapas eller redigeras men publiceras inte ännu
-* **[!UICONTROL Scheduled]**: Utmaningen har publicerats och schemalagts att starta vid ett framtida datum
-* **[!UICONTROL Live]**: Utmaningen är för närvarande aktiv och tillgänglig för målgruppen
-* **[!UICONTROL Completed]**: Utmaningen har passerat sitt slutdatum eller så har alla mål uppfyllts
-* **[!UICONTROL Stopped]**: Utmaningen stoppades manuellt innan den slutfördes
-* **[!UICONTROL Archived]**: Utmaningen har arkiverats för organisatoriska syften
+Utmaningar visas med olika statusvärden som anger deras aktuella status i livscykeln:
+
+* **Utkast**: Utmaningen skapas eller redigeras
+* **Schemalagd**: Utmaningen publiceras och blir aktiv på startdatumet
+* **Live**: Utmaningen är aktiv och kunderna kan delta
+* **Slutförd**: Slutdatum för utmaning har passerats eller mål har uppfyllts
+* **Stoppad**: Utmaningen stoppades manuellt innan den slutfördes
+* **Arkiverad**: Utmaningen har arkiverats i organisationssyfte
+
+Detaljerad information om statusövergångar och provningens livscykel finns i [Utmaningens livscykel](manage-challenges.md#challenge-lifecycle).
 
 ### Söka efter och filtrera problem {#search-challenges}
 
-Använd sökfunktionen för att snabbt hitta specifika problem efter namn eller beskrivning.
+<!-- SCREENSHOT: Search bar and filter panel showing available filters (status, type, dates, tags) with an example of active filters applied -->
 
-Du kan också använda filter för att begränsa utmaningslistan baserat på specifika villkor. Du kan kombinera flera filter för att förfina sökningen.
+Du kan snabbt hitta utmaningar med hjälp av sökning och filter:
 
-Du kan filtrera utmaningar efter deras aktuella status, utifrån deras utmaningstyp, baserat på start- och slutdatum eller efter taggar som du har tillämpat för organisationen.
+**Sök:**
+
+* Använd sökfältet för att hitta problem genom att ange nyckelord från utmaningsnamnet eller beskrivningen. Sökningen uppdateras i realtid medan du skriver.
+
+**Filter:**
+
+* Använd ett eller flera filter för att begränsa resultatet:
+   * **Status**: Filtrera efter utmaningsstatus (Utkast, Schemalagd, Live, Slutförd, Stoppad, Arkiverad)
+   * **Typ**: Filtrera efter utmaningstyp (Standard, Streak, Sequential)
+   * **Datum**: Filtrera efter startdatum eller slutdatumintervall
+   * **Taggar**: Filtrera efter taggar som används i problem
+
+Du kan kombinera flera filter samtidigt. Filtrera till exempel efter Live Standard-utmaningar som taggas med&quot;Sommaren 2024&quot; för att snabbt hitta aktiva säsongskampanjer.
+
+Om du vill ta bort filter väljer du **[!UICONTROL Clear all]** eller tar bort enskilda filter.
 
 ### Utmaningar {#inventory-actions}
 
+<!-- SCREENSHOT: More actions menu (three dots) expanded showing options: Edit, Duplicate, Stop, Archive, Delete -->
+
 På fliken Utmaningar kan du utföra snabba åtgärder på utmaningar:
 
-* **Visa information om utmaning**: Välj ett utmanarnamn för att öppna informationssidan
-* **Redigera en utmaning**: Välj menyn Fler åtgärder (tre punkter) och välj **[!UICONTROL Edit]**
-* **Duplicera en utmaning**: Välj menyn Fler åtgärder och välj **[!UICONTROL Duplicate]**
-* **Stoppa en aktiv utmaning**: Välj menyn för fler åtgärder och välj **[!UICONTROL Stop]**
-* **Arkivera en utmaning**: Välj menyn Fler åtgärder och välj **[!UICONTROL Archive]**
-* **Ta bort ett utkast**: Välj menyn Fler åtgärder och välj **[!UICONTROL Delete]** (endast tillgängligt för utkast)
+* **Visa information om utmaning**: Välj utmanarnamnet för att öppna informationssidan
+* **Redigera en utmaning**: Välj menyn **[!UICONTROL More actions]** (tre punkter) och välj **[!UICONTROL Edit]**
+* **Duplicera en utmaning**: Välj menyn **[!UICONTROL More actions]** och välj **[!UICONTROL Duplicate]**
+* **Stoppa en aktiv utmaning**: Välj menyn **[!UICONTROL More actions]** och välj **[!UICONTROL Stop]**
+* **Arkivera en utmaning**: Välj menyn **[!UICONTROL More actions]** och välj **[!UICONTROL Archive]**
+* **Ta bort ett utkast**: Välj menyn **[!UICONTROL More actions]** och välj **[!UICONTROL Delete]** (endast tillgängligt för utkast)
 
-### Skapa en ny utmaning {#create-from-inventory}
+Detaljerad information om hur du hanterar problem efter skapande, inklusive redigeringsbegränsningar, dupliceringsstrategier, prestandaövervakning och felsökning finns i [Hantera utmaningar](manage-challenges.md).
 
-Så här skapar du en ny utmaning på fliken Utmaningar:
+## Aktivitetslager {#tasks-tab}
 
-1. Välj **[!UICONTROL Create challenge]** i det övre högra hörnet.
-
-2. Arbetsflödet för att skapa en utmaning börjar.
-
-Mer information finns i [Skapa utmaningar](create-challenges.md).
-
-## Fliken Uppgifter {#tasks-tab}
+<!-- SCREENSHOT: Tasks tab showing the inventory table with columns: Task name, Task type, Description, Created by, Last modified, Used in challenges -->
 
 Fliken Uppgifter visar alla återanvändbara uppgifter som kan användas för flera utmaningar. Uppgifter som skapas här blir tillgängliga för markering när du skapar eller redigerar utmaningar.
 
-### Förstå aktivitetslagret {#tasks-inventory-overview}
-
-I aktivitetslagret visas alla uppgifter med följande information:
+I aktivitetslagret visas följande information:
 
 * **[!UICONTROL Task name]**: Namnet som du tilldelade uppgiften
 * **[!UICONTROL Task type]**: Typ av åtgärd (inköp, utgiftsbelopp, besök, engagemang, anpassad händelse)
@@ -115,38 +132,20 @@ I aktivitetslagret visas alla uppgifter med följande information:
 * **[!UICONTROL Last modified]**: Datum och tid för senaste ändring
 * **[!UICONTROL Used in challenges]**: Antal utmaningar som för närvarande använder den här aktiviteten
 
-### Skapa uppgifter från fliken Uppgifter {#create-tasks-from-tab}
-
-Du kan skapa uppgifter på två sätt:
-
-1. **Från aktivitetsfliken** (rekommenderas för återanvändbara uppgifter):
-   * Navigera till fliken **[!UICONTROL Tasks]**
-   * Välj **[!UICONTROL Create task]**
-   * Konfigurera uppgiftsegenskaperna (namn, typ, kvantitet, produktfilter, belöningar)
-   * Spara uppgiften så att den blir tillgänglig för användning i alla utmaningar
-
-2. **När du skapar en utmaning** (för utmaningsspecifika uppgifter):
-   * Välj **[!UICONTROL Add task]** i aktivitetsavsnittet när du skapar en utmaning
-   * Välj **[!UICONTROL Create new task]** eller välj bland befintliga uppgifter
-   * Aktiviteter som skapas på det här sättet sparas också i aktivitetslagret och kan återanvändas
-
->[!TIP]
->
->Du bör skapa uppgifter från fliken Uppgifter när du tänker använda samma uppgift i flera olika utmaningar. Detta ger enhetlighet och gör det enklare att uppdatera uppgiftsdefinitionerna centralt.
-
 ### Vidta åtgärder för uppgifter {#tasks-actions}
 
 På fliken Åtgärder kan du utföra åtgärder för uppgifter:
 
-* **Visa aktivitetsinformation**: Välj ett aktivitetsnamn om du vill visa fullständig konfiguration
-* **Redigera en aktivitet**: Välj menyn Fler åtgärder (tre punkter) och välj **[!UICONTROL Edit]**
-* **Duplicera en uppgift**: Välj menyn Fler åtgärder och välj **[!UICONTROL Duplicate]**
-* **Ta bort en uppgift**: Välj menyn Fler åtgärder och välj **[!UICONTROL Delete]** (endast om den inte används i några aktiva utmaningar)
+* **Visa aktivitetsinformation**: Välj aktivitetsnamnet om du vill visa fullständig konfiguration
+* **Redigera en uppgift**: Välj menyn **[!UICONTROL More actions]** (tre punkter) och välj **[!UICONTROL Edit]**
+* **Duplicera en uppgift**: Välj menyn **[!UICONTROL More actions]** och välj **[!UICONTROL Duplicate]**
+* **Ta bort en uppgift**: Välj menyn **[!UICONTROL More actions]** och välj **[!UICONTROL Delete]** (endast om den inte används i några aktiva utmaningar)
 * **Visa användning**: Se vilka utmaningar som för närvarande använder uppgiften
 
 ## Nästa steg {#next-steps}
 
 Nu när du vet hur man hittar och navigerar i lagret Lojalitetsutmaningar:
 
-* [Skapa utmaningar](create-challenges.md) - Lär dig hur du skapar din första utmaning
-* [Hantera utmaningar](manage-challenges.md) - Lär dig hur du redigerar och övervakar utmaningar
+* [Skapa utmaningar](create-challenges.md) - Lär dig hur du skapar din första utmaning och konfigurerar uppgifter
+* [Skapa aktiviteter](create-tasks.md) - Lär dig definiera återanvändbara uppgifter för utmaningar
+* [Hantera utmaningar](manage-challenges.md) - Lär dig redigera, övervaka och optimera utmaningar
