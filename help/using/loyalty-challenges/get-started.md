@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: fd87aeabfae1f07d8f7bea7057f0c6dd0559d024
+source-git-commit: e978d075efbbcb42e7500d921bd8cc3ed1eee890
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källan
 
 Detaljerade instruktioner finns i:
 
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 +++
@@ -106,7 +106,7 @@ Kontakta administratören om du inte kan komma åt funktionen eller behöver ytt
 
 +++Målgrupper
 
-Definiera målgrupper som specificerar vilka kunder som är berättigade att delta i era lojalitetsutmaningar. Du kan välja befintliga målgrupper eller skapa nya direkt från gränssnittet för att skapa utmaningar. Mer information om hur du arbetar med målgrupper finns i [Kom igång med målgrupper](../audience/about-audiences.md).
+Definiera målgrupper som specificerar vilka kunder som är berättigade att delta i era lojalitetsutmaningar. Du kan välja befintliga målgrupper eller skapa nya direkt från gränssnittet för att skapa utmaningar. [Lär dig arbeta med målgrupper](../audience/about-audiences.md).
 
 +++
 

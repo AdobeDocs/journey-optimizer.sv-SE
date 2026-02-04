@@ -10,15 +10,15 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: fd87aeabfae1f07d8f7bea7057f0c6dd0559d024
+source-git-commit: e978d075efbbcb42e7500d921bd8cc3ed1eee890
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
 
 
-# Hantera utmaningar {#manage-challenges}
+# Hantera utmaningar och uppgifter {#manage-challenges}
 
 >[!BEGINSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
-* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
@@ -38,9 +38,7 @@ ht-degree: 0%
 
 ## Hantera utmaningar {#manage-challenges-section}
 
-### Utmaningens livscykel {#challenge-lifecycle}
-
-<!-- VISUAL: Flowchart diagram showing challenge lifecycle with status transitions: Draft → Scheduled → Live → Completed/Stopped/Archived -->
+### Utmaningstillstånd {#challenge-lifecycle}
 
 Utmaningarna rör sig genom olika statusar under livscykeln:
 
