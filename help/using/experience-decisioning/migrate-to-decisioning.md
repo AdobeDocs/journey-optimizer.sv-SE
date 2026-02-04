@@ -5,9 +5,9 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-source-git-commit: 9ac3eaba0b4c6536c1c447df825eb5f5c0afc900
+source-git-commit: d336684656c75af682a72b0acab071df15a79004
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1243'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Beslutsfattandet ger betydande möjligheter och fördelar jämfört med den äld
 
 ### AI och maskininlärning
 
-* **Anpassade mått**: Möjlighet att använda anpassade optimeringsmått för AI-modeller. Detta ger interoperabilitet för rapporter med [Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview){target="_blank"}, standardiserar rapportering för båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten. Den sömlösa integreringen ger en tydligare bild av prestandamätningarna och lägger till nya funktioner som att skapa enkla mätvärden, publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter.
+* **Anpassade mått**: Möjlighet att använda anpassade optimeringsmått för AI-modeller. Detta ger interoperabilitet för rapporter med [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview){target="_blank"}, standardiserar rapportering för båda plattformarna och förbättrar datakonsekvensen och tillförlitligheten. Den sömlösa integreringen ger en tydligare bild av prestandamätningarna och lägger till nya funktioner som att skapa enkla mätvärden, publicera målgrupper, ställa ad hoc-frågor med Insight Builder och schemalägga rapporter.
 
 * **Lyft mätning**: Möjlighet att visualisera utforska och utnyttja trafik i AI-modeller. Detta gör det möjligt för marknadsförare och datavetare att kvantifiera hur AI-utforskandet förbättrar den långsiktiga modellens prestanda och upptäcker nya vinnande erbjudanden. Öppenhet när det gäller trafikallokering bygger upp förtroende för AI-beslut och ger team möjlighet att optimera både inlärning och prestanda över tid. [Läs mer](ranking/auto-optimization-model.md#lift)
 
@@ -62,11 +62,11 @@ Instrumentpanel som dokumenterar prestanda för beslutsobjekt och urvalsstrategi
 
 ### Ytterligare funktioner
 
-* **Tillämpning av principer**: Företagsanvändarbehörighet att använda funktioner som [Dataanvändningsmärkning och -framtvingning (DULE)](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview){target="_blank"} och [samtycke](../action/consent.md) i beslutet, vilket aktiverar skydd av sekretessen i hela beslutsarbetsflödet. Detta säkerställer att beslut automatiskt följer dataanvändningsprinciper och att kundens samtycke används.
+* **Tillämpning av principer**: Företagsanvändarbehörighet att använda funktioner som [Dataanvändningsmärkning och -framtvingning (DULE)](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview){target="_blank"} och [samtycke](../action/consent.md) i beslutet, vilket aktiverar skydd av sekretessen i hela beslutsarbetsflödet. Detta säkerställer att beslut automatiskt följer dataanvändningsprinciper och att kundens samtycke används.
 
 * **Stöd för inbyggda meddelandekanaler**: Integrerade meddelanden och beslut i ett enda ramverk över flera kanaler ([Kodbaserad upplevelse](../code-based/get-started-code-based.md) och [E-post](../email/get-started-email.md) är för närvarande tillgängliga, andra kanaler kommer i H1 2026). Intuitivt gränssnittsstöd gör att användare kan infoga beslutskomponenter direkt i arbetsflöden för meddelanderedigering.
 
-* **Experience Platform-datauppslagssökning**: Möjlighet att överföra och referera till [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/overview){target="_blank"} direkt inom urvalsregler, rankning och personaliserat innehåll för erbjudanden. Detta utökar flexibiliteten för personalisering och målinriktning genom att tillåta beslutslogik att använda dynamiska externa datakällor. [Läs mer](../data/lookup-aep-data.md)
+* **Experience Platform-datauppslagssökning**: Möjlighet att överföra och referera till [Adobe Experience Platform-datauppsättningar](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview){target="_blank"} direkt inom urvalsregler, rankning och personaliserat innehåll för erbjudanden. Detta utökar flexibiliteten för personalisering och målinriktning genom att tillåta beslutslogik att använda dynamiska externa datakällor. [Läs mer](../data/lookup-aep-data.md)
 
 * **Skalbarhet och prestanda**: Arkitekturförbättring som flyttar beslutsberäkning från navet till kanten, vilket avsevärt minskar latensen och förbättrar genomströmningen för användning med hög trafik.
 
@@ -95,12 +95,11 @@ Med API:erna för migreringsverktyget kan du:
 * **Migrera vid olika scope** - sandlåda, erbjudande eller beslutsnivå
 * **Återställningsmigreringar** om problem upptäcks
 
-Fullständig API-dokumentation, inklusive autentisering, slutpunkter, exempel på begäran/svar och steg-för-steg-arbetsflöden, finns i [API-dokumentationen för beslutsmigrering](decisioning-migration-api.md).
+Fullständig API-dokumentation, inklusive autentisering, slutpunkter, exempel på begäran/svar och stegvisa arbetsflöden finns på [den här sidan](decisioning-migration-api.md).
 
 ## Relaterade ämnen {#related-topics}
 
 * [Kom igång med beslutsfattande](gs-experience-decisioning.md)
 * [Beslut om skyddsräcken och begränsningar](decisioning-guardrails.md)
 * [Frågor och svar om beslut](decisioning-faq.md)
-* [API för beslutsmigrering](decisioning-migration-api.md)
 

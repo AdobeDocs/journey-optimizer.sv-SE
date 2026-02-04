@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
-source-git-commit: 743609dbc10741c2a6e573be9c5a2d27be87e755
+source-git-commit: d336684656c75af682a72b0acab071df15a79004
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 <!--Do not modify - Legal Review Done -->
 
-När du konfigurerar en ny e-postkanalskonfiguration i [!DNL Adobe Journey Optimizer] visas alternativet [&#x200B; när du &#x200B;](email-settings.md#ip-pools)väljer en underdomän **[!UICONTROL Enable List-Unsubscribe]** i listan. Den är aktiverad som standard.
+När du konfigurerar en ny e-postkanalskonfiguration i [!DNL Adobe Journey Optimizer] visas alternativet [ när du ](email-settings.md#ip-pools)väljer en underdomän **[!UICONTROL Enable List-Unsubscribe]** i listan. Den är aktiverad som standard.
 
 ![](assets/preset-list-unsubscribe.png)
 
@@ -43,7 +43,7 @@ Beroende på e-postklienten och inställningarna för att avbryta prenumeratione
 >
 >Lär dig hur du hanterar avprenumerationsinställningarna i [det här avsnittet](#enable-list-unsubscribe) nedan.
 
-I båda fallen bearbetas deras begäran om att avbryta prenumerationen när en mottagare klickar på länken för att avanmäla sig. Motsvarande profil är omedelbart avanmäld och det här valet uppdateras i [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html?lang=sv-SE){target="_blank"}. Läs mer om godkännandebearbetning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=sv-SE){target="_blank"}.
+I båda fallen bearbetas deras begäran om att avbryta prenumerationen när en mottagare klickar på länken för att avanmäla sig. Motsvarande profil är omedelbart avanmäld och det här valet uppdateras i [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html){target="_blank"}. Läs mer om godkännandebearbetning i [Experience Platform-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html){target="_blank"}.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ I båda fallen bearbetas deras begäran om att avbryta prenumerationen när en m
 >id="ajo_admin_preset_unsubscribe"
 >title="Lägg till en avbruten URL i dina e-postmeddelanden"
 >abstract="Aktivera det här alternativet om du automatiskt vill lägga till en URL för att avbryta prenumerationen i e-postrubriken. Du kan också ange en avanmälnings-URL i ett meddelande genom att infoga en länk för avanmälan med ett klick i e-postinnehållet."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="Ange avanmälan med ett klick från e-postinnehållet"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-opt-out#one-click-opt-out" text="Ange avanmälan med ett klick från e-postinnehållet"
 
 När alternativet **[!UICONTROL Enable List-Unsubscribe]** är aktiverat, om det stöds av mottagarnas e-postklient, innehåller e-posthuvudet både ett mailto och/eller en URL som standard som mottagarna kan använda för att avbryta prenumerationen från din e-postlista.
 
@@ -83,7 +83,7 @@ Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL On
 
 * Om du inte vill använda den standardgenererade URL-adressen för ett enda klick kan du avmarkera funktionen.
 
-   * Om du lägger till en **[!UICONTROL Enable List-Unsubscribe]**-klicksavanmälningslänk **[!UICONTROL One-click Unsubscribe URL]** i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet [&#x200B; är aktiverat och funktionen &#x200B;](../email/email-opt-out.md#one-click-opt-out) inte är markerad.
+   * Om du lägger till en **[!UICONTROL Enable List-Unsubscribe]**-klicksavanmälningslänk **[!UICONTROL One-click Unsubscribe URL]** i ett meddelande som skapats med den här konfigurationen, kommer rubriken Lista avanmälan att hämta den enklicksavanmälningslänk som du har infogat i e-postmeddelandets brödtext och använda den som ett-klicksvärde för att avbryta prenumerationen i scenariot där alternativet [ är aktiverat och funktionen ](../email/email-opt-out.md#one-click-opt-out) inte är markerad.
 
      ![](assets/preset-list-unsubscribe-opt-out-url.png)
 
@@ -93,7 +93,7 @@ Funktionen **[!UICONTROL Mailto (unsubscribe)]** och funktionen **[!UICONTROL On
   >
   >Läs mer om hur du hanterar funktioner för att avbryta prenumerationen i dina meddelanden i [det här avsnittet](../email/email-opt-out.md#unsubscribe-header).
 
-I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=sv-SE){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=sv-SE#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
+I [!DNL Journey Optimizer] hanteras samtycke av Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. Som standard är värdet för medgivandefältet tomt och behandlas som samtycke för att ta emot dina meddelanden. Du kan ändra det här standardvärdet vid introduktion till ett av de möjliga värden som anges [här](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#choice-values){target="_blank"}, eller använda [medgivandeprinciper](../action/consent.md) för att åsidosätta standardlogiken.
 
 [!DNL Journey Optimizer] lägger för närvarande inte till någon specifik tagg för att avbryta prenumerationshändelser som utlöses av funktionen för att avsluta prenumerationen. Om du behöver skilja ut avbeställningsklickningar i List från andra avbeställningsåtgärder måste du implementera anpassad taggning externt eller utnyttja en extern landningssida för spårning.
 
@@ -133,6 +133,10 @@ Om du vill anpassa slutpunkterna <!-- (**[!UICONTROL Mailto (unsubscribe)]** and
 
 Använd avsnittet **[!UICONTROL URL tracking parameters]** om du vill definiera anpassade attribut för slutpunkterna. Alla URL-spårningsparametrar som du anger i motsvarande avsnitt läggs till i slutet av de anpassade slutpunkterna, förutom standardparametrarna. [Lär dig hur du ställer in anpassad URL-spårning](url-tracking.md)
 
+>[!NOTE]
+>
+>Ordningen på UTM-parametrarna som läggs till i URL:en är slumpmässig och kan inte kontrolleras. Om systemet kräver parametrar i en viss ordning måste du analysera dem och ordna om dem på din sida.
+
 ### Konfigurera dekrypterings-API {#configure-decrypt-api}
 
 När dina mottagare klickar på en anpassad länk för att avbryta prenumerationen skickas parametrarna som är tillagda i den godkända uppdateringshändelsen till slutpunkten på ett krypterat sätt. Det externa tillståndssystemet måste därför implementera ett specifikt API via [Adobe Developer](https://developer.adobe.com){target="_blank"} för att dekryptera de parametrar som skickas av Adobe.
@@ -166,7 +170,7 @@ Nedan visas exempelparametrar och samtycke:
 
 | Frågeparameter | Exempel på nyttolast |
 |---------|----------|
-| pid | {<br>&quot;pid&quot; : &quot;514273041546020095851529937068211571&quot;,<br>&quot;pns&quot; : &quot;CRMID&quot;,<br> 2}&quot;e&quot;    :&quot;john@google.com&quot;,<br>&quot;ens&quot; :&quot;Email&quot;,<br>&rbrace; |
+| pid | {<br>&quot;pid&quot; : &quot;514273041546020095851529937068211571&quot;,<br>&quot;pns&quot; : &quot;CRMID&quot;,<br> 2}&quot;e&quot;    :&quot;john@google.com&quot;,<br>&quot;ens&quot; :&quot;Email&quot;,<br>} |
 | parametrar | {<br>&quot;m&quot; : &quot;messageExecutionId&quot;,<br>&quot;ci&quot; : &quot;campaignId&quot;,<br>&quot;jv&quot; : &quot;travelVersionId&quot;,<br>&quot;ja&quot; : &quot;travelActionId&quot;,<br>&quot;s&quot; : &quot;sandboxId&quot;,<br>&quot;us&quot; : &quot;unsubscribeScope&quot;<br>} |
 
 Samtyckessvar:
@@ -216,7 +220,7 @@ Nedan visas exempelparametrar och samtycke:
 
 | Frågeparameter | Exempel på nyttolast |
 |---------|----------|
-| emailParams | &lbrace;<br>&quot;p&quot; : &quot;profileId&quot;,<br>&quot;pn&quot; : &quot;profileNamespace&quot;,<br>&quot;en&quot; : &quot;emailNamespace&quot;,<br>&quot;ci&quot; : &quot;campaignId&quot;,<br>&quot;jv&quot; : &quot;travelVersionId&quot;,<br>&quot;ja&quot; : &quot;travelActionId&quot;,<br>&quot;si&quot; : &quot;sandboxId&quot;,<br>&quot;us&quot;: &quot;unsubscribeScope&quot;<br> |
+| emailParams | {<br>&quot;p&quot; : &quot;profileId&quot;,<br>&quot;pn&quot; : &quot;profileNamespace&quot;,<br>&quot;en&quot; : &quot;emailNamespace&quot;,<br>&quot;ci&quot; : &quot;campaignId&quot;,<br>&quot;jv&quot; : &quot;travelVersionId&quot;,<br>&quot;ja&quot; : &quot;travelActionId&quot;,<br>&quot;si&quot; : &quot;sandboxId&quot;,<br>&quot;us&quot;: &quot;unsubscribeScope&quot;<br> |
 
 Samtyckessvar:
 
@@ -261,7 +265,7 @@ Frågeparametrar:
 
    * Analyserat värde: *v1.xyz*
 
-API-exempel: https://platform.adobe.io/journey/imp/consent/decrypt?emailParamsSub=v1.abc&emailParamsBody=v1.xyz
+API-exempel: https://platform.adobe.io/journey/imp/consent/decrypt?emailParamsSub=v1.abc&amp;emailParamsBody=v1.xyz
 
 >[!CAUTION]
 >

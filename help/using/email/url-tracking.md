@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: inställningar, e-post, konfiguration
 exl-id: 5a12280c-b937-4cd9-a1ef-563bab48e42e
-source-git-commit: ffcf4711d733dad725cbb95fd30438535c922bda
+source-git-commit: d336684656c75af682a72b0acab071df15a79004
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ ht-degree: 0%
 När du konfigurerar en ny [e-postkanalskonfiguration](email-settings.md) kan du definiera **[!UICONTROL URL tracking parameters]** för att mäta effekten av dina marknadsföringssatsningar i olika kanaler. Det är valfritt att aktivera den här funktionen.
 
 Parametrarna som definieras i motsvarande avsnitt läggs till i slutet av de URL:er som ingår i e-postmeddelandeinnehållet. Du kan sedan hämta parametrarna i webbanalysverktyg som Adobe Analytics eller Google Analytics och skapa olika prestandarapporter.
+
+>[!NOTE]
+>
+>Ordningen på parametrarna för URL-spårning som läggs till i URL:en är slumpmässig och kan inte kontrolleras. Om systemet kräver parametrar i en viss ordning måste du analysera dem och ordna om dem på din sida.
 
 Du kan lägga till upp till 10 spårningsparametrar med knappen **[!UICONTROL Add new parameter]**.
 
