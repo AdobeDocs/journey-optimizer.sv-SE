@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: dbed4ffeb63ec3c58ff61845bbdb91fd2d51e69b
+source-git-commit: 831809b4c1dd19fdaeeb646695f606c02ec21265
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
-* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
@@ -99,7 +99,7 @@ Detaljerade instruktioner om hur du skapar och konfigurerar uppgifter finns i [S
 
 <!-- SCREENSHOT: Content cards configuration section in the challenge editor -->
 
-Innehållskort ger en visuell representation av utmaningen på kundenheter och visar utmaningsinformation, framsteg och belöningar. Läs mer om [innehållskort](../content-card/get-started-content-card.md).
+Innehållskort ger en visuell representation av utmaningen på kundenheter och visar utmaningsinformation, framsteg och belöningar. Läs mer om [innehållskort](../content-card/create-content-card.md).
 
 <!-- VISUAL: Example content card designs showing different states: challenge start, in-progress with progress bar, completion with reward -->
 
