@@ -33,7 +33,7 @@ Skapa en lojalitetsutmaning för att definiera engagemangserbjudandet, konfigure
 
 * [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
 * [Förstå lojalitetsutmaningar](get-started.md) - Funktioner, arbetsflöde, förutsättningar
-* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
