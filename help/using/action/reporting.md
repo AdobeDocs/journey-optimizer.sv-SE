@@ -102,6 +102,6 @@ I videon nedan visas hur du övervakar tillförlitligheten och prestandan för A
 
 +++Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3479541?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479545?captions=swe&quality=12&learn=on)
 
 +++
