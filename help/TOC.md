@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: cd85a3916735373c2cb63f0ad517ff7e5fbf001c
+source-git-commit: f41c1ed8a2d9e74b9d8fe97e0bf9e565d326aec6
 workflow-type: tm+mt
 source-wordcount: '3091'
 ht-degree: 15%
@@ -134,10 +134,9 @@ ht-degree: 15%
       + [Använda anpassade åtgärder för att skriva reseventen i Experience Platform](using/building-journeys/custom-action-aep.md)
 + Lojalitetsutmaningar {#loyalty-challenges}
    + [Kom igång med lojalitetsutmaningar](using/loyalty-challenges/get-started.md)
-   + [Utmaningar om lojalitet](using/loyalty-challenges/access-loyalty-challenges.md)
+   + [Få tillgång till och hantera lojalitetsutmaningar](using/loyalty-challenges/access-loyalty-challenges.md)
    + [Skapa utmaningar](using/loyalty-challenges/create-challenges.md)
    + [Skapa uppgifter](using/loyalty-challenges/create-tasks.md)
-   + [Hantera utmaningar](using/loyalty-challenges/manage-challenges.md)
 + Kampanjer {#campaigns}
    + [Kampanjer](/help/rp_landing_pages/campaigns-landing-page.md)
    + [Kom igång med kampanjer](using/campaigns/get-started-with-campaigns.md)
@@ -851,7 +850,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

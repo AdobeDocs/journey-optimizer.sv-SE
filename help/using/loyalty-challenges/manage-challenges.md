@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: e978d075efbbcb42e7500d921bd8cc3ed1eee890
+source-git-commit: f41c1ed8a2d9e74b9d8fe97e0bf9e565d326aec6
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '794'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
-* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
 
@@ -42,8 +42,8 @@ ht-degree: 0%
 
 Utmaningarna rör sig genom olika statusar under livscykeln:
 
-* **Utkast**: Utmaningen skapas eller redigeras och är ännu inte tillgänglig för kunder
-* **Publicerad**: Utmaningen är aktiv, den associerade resan har skapats.
+* **Utkast**: Utmaningen skapas eller redigeras och är ännu inte tillgänglig för kunder.
+* **Publicerad**: Utmaningen är aktiv och den associerade resan har skapats.
 
 ### Redigera utmaningar {#edit-challenges}
 
@@ -53,10 +53,10 @@ Du kan redigera utmaningar genom att öppna dem i probleminventeringen. Redigeri
 
 **Publicerade utmaningar**: När du öppnar en publicerad utmaning för redigering måste du först återställa den till utkaststatus.
 
-* Alla anpassningar som gjorts direkt i den automatiskt genererade resan går förlorade
-* Utmaningen återgår till utkastläget
-* När du har gjort ändringarna måste du spara och publicera utmaningen igen
-* Du måste återaktivera den associerade resan för att göra den uppdaterade utmaningen tillgänglig för kunderna
+* Eventuella anpassningar som gjorts direkt i den automatiskt genererade resan går förlorade.
+* Utmaningen återgår till utkaststatus.
+* När du har gjort ändringarna måste du spara och publicera utmaningen igen.
+* Du måste publicera den associerade resan på nytt för att göra den uppdaterade utmaningen tillgänglig för kunderna.
 
 >[!IMPORTANT]
 >
@@ -109,14 +109,14 @@ Du kan även få tillgång till detaljerade prestandadata i de [automatiskt gene
 
 ## Hantera uppgifter {#manage-tasks}
 
-Aktiviteter är återanvändbara komponenter som kan användas i flera utmaningar. Att hantera uppgifter effektivt säkerställer enhetlighet i alla lojalitetsprogram och gör det enklare att uppdatera uppgiftsdefinitionerna centralt. Uppgifter som skapats i en utmaning kan återanvändas i andra utmaningar, vilket minskar dubbelarbete och upprätthåller standardiseringen.
+Aktiviteter är återanvändbara komponenter som kan användas i flera utmaningar. Att hantera uppgifter effektivt säkerställer enhetlighet i alla lojalitetsprogram och gör det enklare att uppdatera uppgiftsdefinitionerna centralt. Uppgifter som skapas i en utmaning kan återanvändas i andra utmaningar, vilket minskar dubbelarbetet och upprätthåller standardiseringen.
 
 ### Redigera uppgifter {#edit-tasks}
 
 Du kan redigera befintliga uppgifter från aktivitetslagret. Tänk på följande:
 
-* **Uppgifter som inte används i aktiva utmaningar**: Kan redigeras fritt - alla egenskaper kan ändras utan påverkan
-* **Uppgifter som används i live-utmaningar**: Var försiktig eftersom ändringar påverkar alla utmaningar som använder aktiviteten - ändringar tillämpas omedelbart på alla referensutmaningar
+* **Uppgifter som inte används i aktiva utmaningar**: Kan redigeras fritt. Alla egenskaper kan ändras utan att påverkas.
+* **Uppgifter som används i aktiva utmaningar**: Var försiktig, eftersom ändringar påverkar alla utmaningar när aktiviteten används. Ändringarna tillämpas omedelbart på alla hänvisningsproblem.
 
 Så här redigerar du en uppgift:
 
@@ -142,8 +142,8 @@ Så här redigerar du en uppgift:
 
 Det går bara att ta bort uppgifter om de inte används för närvarande i några utmaningar. Innan du tar bort en uppgift:
 
-* Kontrollera antalet **[!UICONTROL Used in challenges]** i aktivitetslagret
-* Se till att inga utkast, schemalagda eller aktiva utmaningar refererar till uppgiften
+* Kontrollera antalet **[!UICONTROL Used in challenges]** i aktivitetslagret.
+* Se till att inga utkast, schemalagda eller aktiva utmaningar refererar till uppgiften.
 
 Så här tar du bort en uppgift:
 
