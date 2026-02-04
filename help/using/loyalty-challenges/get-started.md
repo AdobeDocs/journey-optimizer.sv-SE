@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: dbed4ffeb63ec3c58ff61845bbdb91fd2d51e69b
+source-git-commit: bd98e4dc77a0adde83df6251af749aa6da8c058d
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -62,7 +62,7 @@ När du skapar och startar en lojalitetsutmaning följer du det här arbetsflöd
 
 1. **Lägg till aktiviteter** - Definiera de specifika åtgärder som kunderna måste utföra, inklusive aktivitetstyper (inköp, utgifter, besök, engagemang, anpassade händelser), kvantiteter, produktfilter och belöningar. Mer information finns i [Skapa aktiviteter](create-tasks.md).
 
-1. **Utforma innehållskort** - Skapa den visuella representationen av din utmaning med Journey Optimizer [innehållskort](../content-card/get-started-content-card.md) som visas på kundenheter. Innehållskort visar information om utmaningar, framsteg och belöningar.
+1. **Utforma innehållskort** - Skapa den visuella representationen av din utmaning med Journey Optimizer [innehållskort](../content-card/create-content-card.md) som visas på kundenheter. Innehållskort visar information om utmaningar, framsteg och belöningar.
 
 1. **Konfigurera meddelanden** (valfritt) - Konfigurera flerkanalsmeddelanden ([i appen](../in-app/get-started-in-app.md), [e-post](../email/get-started-email.md), [push](../push/get-started-push.md)) för nyckelstadier i livscykeln: start, pågående och slutförande.
 
@@ -86,7 +86,7 @@ Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källan
 
 Detaljerade instruktioner finns i:
 
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 +++
