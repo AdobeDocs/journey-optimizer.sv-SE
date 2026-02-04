@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
-* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
@@ -205,7 +205,7 @@ Skapa flerkanalsmeddelanden för att engagera kunderna i viktiga stadier av utma
    * **Pågående meddelanden**: Håll kunderna engagerade under utmaningen med påminnelser, förloppsuppdateringar och uppmuntran att fortsätta
    * **Slutförandemeddelanden**: Fira lyckade, bekräfta belöningsallokering och föreslå nästa utmaningar eller åtgärder
 
-1. För varje fas väljer du **[!UICONTROL Add *stage *message]**för att skapa ett meddelande för den scenen.
+1. För varje fas väljer du **[!UICONTROL Add *stage *message]**&#x200B;för att skapa ett meddelande för den scenen.
 
 1. Välj önskad kanal: **[!UICONTROL In-app]**, **[!UICONTROL Email]** eller **[!UICONTROL Push notification]** och välj den associerade kanalkonfigurationen.
 
