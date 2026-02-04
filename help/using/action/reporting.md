@@ -7,9 +7,9 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: a5868a3c9eb1d0faca62887353145cd86cde883f
+source-git-commit: 97464b7afa07199792bd4311d0477b5bcb140d8e
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Diagrammet **[!UICONTROL Calls over time]** visar trenden för KPI för HTTP-anr
 * Om du väljer ett 1-dagars tidsintervall visas nyckeltal per timme i diagrammet.
 * Om du väljer ett 1-timmars tidsintervall visas nyckeltal per minut i diagrammet.
 
-➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten &#x200B;](#kpis)
+➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten ](#kpis)
 
 ## Latens över tid {#latency-overtime}
 
@@ -77,7 +77,7 @@ Diagrammet **[!UICONTROL Calls over time]** visar trenden för KPI för HTTP-anr
 
 Diagrammet **[!UICONTROL Latency over time]** visar trenden för fördröjningsmått under den valda tidsperioden. I den här tidsserievyn kan du spåra prestandamönster, identifiera perioder med hög fördröjning och övervaka effekten av optimeringar eller systemändringar över tid.
 
-➡️[En beskrivning av svarstiderna finns i avsnittet KPI:er &#x200B;](#kpis)
+➡️[En beskrivning av svarstiderna finns i avsnittet KPI:er ](#kpis)
 
 
 ## Uppdelning av samtal {#breakdown}
@@ -86,7 +86,7 @@ Diagrammet **[!UICONTROL Latency over time]** visar trenden för fördröjningsm
 
 Tabellen **[!UICONTROL Calls breakdown]** innehåller en hierarkisk uppdelning av HTTP-anropsmåtten, från de totala måtten per slutpunkt på den översta nivån till måtten per anpassad åtgärd, med varje slutpunkt ned till de resor som är beroende av dem på den nedersta nivån.
 
-➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten &#x200B;](#kpis)
+➡️[I avsnittet KPI:er finns en beskrivning av HTTP-anropsmåtten ](#kpis)
 
 ## Uppdelning av svarstid {#latency-breakdown}
 
@@ -94,5 +94,14 @@ Tabellen **[!UICONTROL Calls breakdown]** innehåller en hierarkisk uppdelning a
 
 Tabellen **[!UICONTROL Latency breakdown]** innehåller en detaljerad beskrivning av svarstiderna för dina anpassade åtgärder. I den här vyn kan du identifiera vilka specifika slutpunkter eller åtgärder som har prestandaproblem, så att du effektivt kan identifiera och åtgärda flaskhalsar med fördröjning.
 
-➡️[En beskrivning av svarstiderna finns i avsnittet KPI:er &#x200B;](#kpis)
+➡️[En beskrivning av svarstiderna finns i avsnittet KPI:er ](#kpis)
 
+## Instruktionsvideo {#video}
+
+I videon nedan visas hur du övervakar tillförlitligheten och prestandan för API-anrop som görs från resor till tredjepartssystem.
+
++++Se videon
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479541?quality=12&learn=on)
+
++++
