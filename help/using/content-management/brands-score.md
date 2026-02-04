@@ -5,9 +5,9 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 exl-id: 01e74670-7431-4791-b98c-12278e6d3332
-source-git-commit: 3f363a006ed25c07f3ea5b516f5fc306b230d029
+source-git-commit: cd85a3916735373c2cb63f0ad517ff7e5fbf001c
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '602'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ När [ditt varumärke har konfigurerats och publicerats](brands.md) kan du bedö
 
 >[!NOTE]
 >
->Utvärderingen av innehållskvaliteten är varumärkesagnostikbaserad. Även om ett varumärke väljs i listrutan tillämpas inte dess riktlinjer på kvalitetskontrollen. Varumärkesvalet är endast relevant för bedömning av varumärkesanpassning.
+>Utvärderingen av innehållskvaliteten är oberoende av varumärkesriktlinjerna. Även om ett varumärke väljs i listrutan tillämpas inte dess riktlinjer på kvalitetskontrollen. Varumärkesvalet är endast relevant för bedömning av varumärkesanpassning.
 
 Förutom varumärkesanpassning kan ni utvärdera den allmänna innehållskvaliteten för att identifiera potentiella problem med läsbarhet, innehållets enhetlighet och effektivitet, oberoende av varumärkesriktlinjerna.
 
@@ -109,7 +109,7 @@ Så här utvärderar du innehållskvaliteten:
 
    ![](assets/brand-score-6.png)
 
-1. Klicka på ikonen ![Helskärm om du vill ha mer information om &#x200B;](assets/do-not-localize/Smock_FullScreen_18_N.svg "helskärmsläget") om du vill se din kvalitetspoäng.
+1. Klicka på ikonen ![Helskärm om du vill ha mer information om ](assets/do-not-localize/Smock_FullScreen_18_N.svg "helskärmsläget") om du vill se din kvalitetspoäng.
 
    ![](assets/brand-score-7.png)
 
@@ -134,6 +134,6 @@ I videon nedan visas hur du skapar och anpassar dina egna varumärken för att t
 
 +++ Se videon
 
->[!VIDEO](https://video.tv.adobe.com/v/3470550/?captions=swe&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470544/?learn=on)
 
 +++
