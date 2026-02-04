@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: f235c56fd06b0e6ec41d1040c2b1ac057eb872f9
+source-git-commit: e683461c6adbf45cacb30692e23927175685f9fb
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -39,29 +39,36 @@ ht-degree: 0%
 
 Lojalitetsutmaningar är en komplett lösning för att skapa storskaliga lojalitetsprogram, från att definiera uppgifter och milstolpar till att leverera innehåll och spåra prestanda i olika kanaler.
 
+![](assets/challenges-gs.png)
+
 Ni kan skapa tre typer av utmaningsupplevelser:
 
-* **Standardutmaningar**: Kunderna utför ett angivet antal uppgifter i valfri ordning
-* **Utmaningar**: Kunderna utför samma uppgift flera gånger i följd
-* **Sekventiella utmaningar**: Kunderna slutför uppgifter i en definierad ordning
+* **Standardutmaningar**: Kunderna utför ett angivet antal uppgifter i valfri ordning\
+  *Exempel: Slutför 3 av 5 tillgängliga uppgifter*
 
-Med lojalitetsutmaningar kan ni konfigurera belöningar, skicka meddelanden i flera kanaler i viktiga faser av livscykeln och övervaka prestanda via automatiskt genererade resor - allt med bibehållen integrering med ert externa lojalitetshanteringssystem.
+* **Utmaningar**: Kunderna utför samma uppgift flera gånger i följd\
+  *Exempel: Köp 7 dagar i följd*
+
+* **Sekventiella utmaningar**: Kunderna slutför uppgifter i en definierad ordning\
+  *Exempel: Inköp → Granska → Dela (måste slutföras i den här sekvensen)*
+
+Med lojalitetsutmaningar kan du konfigurera belöningar, skicka meddelanden i flera kanaler i viktiga faser av livscykeln, med autogenererade resor - allt med bibehållen integrering med det externa lojalitetshanteringssystemet.
 
 ## Så fungerar det {#how-it-works}
 
 När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
 
-1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
-
-1. **Välj målgrupp** - Definiera vilka kunder som kan delta i din utmaning genom att välja en målgrupp från Adobe Experience Platform.
+1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
 
 1. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential) och datumintervall.
 
-1. **Lägg till aktiviteter** - Definiera de specifika åtgärder som kunderna måste utföra, inklusive aktivitetstyper (inköp, utgifter, besök, engagemang, anpassade händelser), kvantiteter, produktfilter och belöningar.
+1. **Lägg till aktiviteter** - Definiera de specifika åtgärder som kunder måste utföra, inklusive aktivitetstyper (inköp, utgifter), kvantiteter, produktfilter och belöningar.
 
 1. **Utforma innehållskort** - Skapa den visuella representationen av din utmaning med Journey Optimizer innehållskort som visas på kundenheter. Innehållskort visar information om utmaningar, framsteg och belöningar.
 
 1. **Konfigurera meddelanden** (valfritt) - Konfigurera flerkanalsmeddelanden (i programmet, e-post, push) för nyckelstadier i livscykeln: start, pågående och slutförande.
+
+1. **Välj målgrupp** - Definiera vilka kunder som kan delta i din utmaning genom att välja en målgrupp från Adobe Experience Platform.
 
 1. **Publiceringsresa** - Journey Optimizer genererar automatiskt en resa för din utmaning. Navigera till lagret Resor och publicera den automatiskt genererade resan för att göra utmaningen tillgänglig för kunderna.
 
@@ -75,11 +82,11 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
 Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källanslutningar för att spåra kundens framsteg och slutförande av uppgifter.
 
-1. **Konfigurera en källanslutning som stöds**: För närvarande är den kapillära kopplingen tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty).
+1. **Konfigurera en källanslutning som stöds**: För närvarande är den kapillära kopplingen tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
 
 1. **Validera datainmatning**: Kontrollera att lojalitetshändelser och kunddata följer med till Experience Platform och är tillgängliga i Journey Optimizer. Verifiera att dataschemat innehåller de fält som behövs för att spåra kundåtgärder och -förlopp.
 
-Mer information finns i [Översikt över Experience Platform-källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+Mer information finns i [Översikt över Experience Platform-källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 
 +++
 
@@ -136,18 +143,7 @@ Definiera en målgrupp som specificerar vilka kunder som är berättigade att de
     <a href="create-tasks.md"><strong>Skapa aktiviteter</strong></a>
     </div>
     <p>
-    <em>Definiera åtgärder och belöningar för utmaningar</em>
-    </p>
-  </td>
-  <td>
-    <a href="access-loyalty-challenges.md">
-    <!--<img alt="Manage" src="../assets/do-not-localize/monitor-button.svg">-->
-    </a>
-    <div>
-    <a href="access-loyalty-challenges.md"><strong>Hantera utmaningar och uppgifter</strong></a>
-    </div>
-    <p>
-    <em>Redigera, duplicera och ta bort utmaningar och uppgifter</em>
+    <em>Definiera åtgärder som ska slutföras för utmaningar</em>
     </p>
   </td>
 </tr>

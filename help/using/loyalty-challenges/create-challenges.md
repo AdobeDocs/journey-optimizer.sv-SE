@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: f41c1ed8a2d9e74b9d8fe97e0bf9e565d326aec6
+source-git-commit: e683461c6adbf45cacb30692e23927175685f9fb
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * [Få åtkomst till och hantera lojalitetsutmaningar](access-loyalty-challenges.md) - Hantering av inventeringar, utmaningar och uppgifter
-* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 
 >[!ENDSHADEBOX]
@@ -71,13 +71,13 @@ På fliken **[!UICONTROL Structure]** definierar du hur utmaningen är organiser
 
 ### Schemalägg utmaningen {#schedule}
 
-Konfigurera när utmaningen ska köras genom att välja ikonen ![](assets/do-not-localize/schedule-icon.svg) **[!UICONTROL Open schedule]**:
+Konfigurera när utmaningen ska köras genom att välja ikonen **[!UICONTROL Open schedule]**:
 
-![](assets/challenge-create-properties.png)
+![](assets/challenge-create-schedule.png)
 
 * **[!UICONTROL Start date and time]**: Ange när utmaningen blir tillgänglig för kunder.
 * **[!UICONTROL End date and time]**: Ange när utmaningen upphör att gälla och inte längre accepterar nya slutföranden.
-   * **[!UICONTROL Time zone]**: Utmaningen använder mottagarens lokala tidszon som standard.
+* **[!UICONTROL Time zone]**: Utmaningen använder mottagarens lokala tidszon som standard.
 * **[!UICONTROL Tasks must be completed]**: Välj när kunder kan slutföra uppgifter:
 
    * **[!UICONTROL Any time during challenge]**: Kunder kan slutföra uppgifter när som helst mellan utmaningens start- och slutdatum.
@@ -89,17 +89,6 @@ Utfrågningsschemat har konfigurerats. Lägg sedan till de uppgifter kunderna be
 
 Uppgifter definierar de specifika åtgärder som kunderna måste utföra för att få belöningar. Du kan konfigurera uppgiftstyper (inköp, utgifter), kvantiteter, produktfilter och andra attribut.
 
-Beroende på vilken typ av utmaning du har kan kunderna utföra olika uppgifter på olika sätt:
-
-* **Standardutmaningar**: Slutför ett angivet antal uppgifter i valfri ordning\
-  *Exempel: Slutför 3 av 5 uppgifter - gör ett köp, skriv en recension, referera till en vän, dela på sociala medier eller uppdatera profilen*
-
-* **Utmaningar för strömning**: Slutför samma uppgift flera gånger i följd\
-  *Exempel: Gör ett köp under 7 dagar i följd för att få bonusbelöningar*
-
-* **Sekventiella utmaningar**: Slutför uppgifter i en definierad ordning\
-  *Exempel: Gör först ett köp, skriv en recension och dela sedan på sociala medier - aktiviteterna måste slutföras i just den här sekvensen*
-
 Så här lägger du till uppgifter i en utmaning:
 
 1. Välj **[!UICONTROL Tasks]** i avsnittet **[!UICONTROL Add task]**.
@@ -108,12 +97,41 @@ Så här lägger du till uppgifter i en utmaning:
 
 1. **[!UICONTROL Tasks Inventory]** öppnas. Markera en eller flera uppgifter i listan och välj **[!UICONTROL Add]**. Om du vill skapa en ny uppgift väljer du **[!UICONTROL New]**. [Lär dig hur du skapar och konfigurerar uppgifter](create-tasks.md).
 
-1. I avsnittet **[!UICONTROL Task completion requirement]** anger du när utmaningen anses vara slutförd:
+1. Ange när utmaningen anses vara slutförd. Vilka inställningar som är tillgängliga beror på typen av utmaning:
 
-   * **[!UICONTROL Customer chooses 1 task to complete]**: Kunderna kan välja och slutföra vilken uppgift som helst för att få belöningar.
-   * **[!UICONTROL Customer completes specific number of tasks]**: Kunderna måste slutföra ett definierat antal uppgifter.
+   +++Standardutmaningar
 
-1. Som standard tillåter utmaningar kunderna att slutföra uppgifter över flera transaktioner. Om du vill att alla uppgifter ska slutföras i en enda transaktion markerar du ikonen ![](assets/do-not-localize/settings-icon.svg) **[!UICONTROL Settings]** och aktiverar alternativet nedan.
+   **[!UICONTROL Task completion requirement]** - Välj mellan:
+
+   * **[!UICONTROL Customer chooses 1 task to complete]**: Kunder kan välja och slutföra vilken uppgift som helst för att få belöningar
+   * **[!UICONTROL Customer completes specific number of tasks]**: Kunderna måste slutföra ett definierat antal uppgifter. Ange önskat nummer - *Exempel: Slutför 3 av 5 uppgifter*
+
+   +++
+
+   +++Utmaningar
+
+   * **[!UICONTROL Streak type]**:
+
+      * **Flera dagar i följd**: Kunderna måste slutföra aktiviteten på dagar i följd utan avbrott - *Exempel: Köp på måndag, tisdag, onsdag - om en dag saknas bryts flödet*
+
+      * **Icke sammanhängande**: Kunder kan slutföra uppgiften med luckor mellan slutföranden - *Exempel: Slutför 7 köp under 30 dagar, med tillåtna brytningar*
+
+   * **[!UICONTROL Streak length]**: Ange hur många gånger aktiviteten måste slutföras - *Exempel: Ange till 7 för en&quot;7-dagars inköpsström&quot;*
+
+   +++
+
+   +++Sekventa utmaningar
+
+   **[!UICONTROL Task completion requirement]** - Välj mellan:
+
+   * **[!UICONTROL Customer chooses 1 task to complete]**: Kunder kan välja och slutföra vilken uppgift som helst för att få belöningar
+   * **[!UICONTROL Customer completes specific number of tasks]**: Kunderna måste slutföra ett definierat antal uppgifter i exakt den ordning som du anger. Om en uppgift saknas eller hoppas över bryts sekvensen. Ange önskat nummer (t.ex. fyll i 3 av 5 uppgifter)
+
+   *Exempel: Aktivitet 1 (Inköp) → Aktivitet 2 (Granskning) → Aktivitet 3 (Dela) - måste slutföras i den här ordningen*
+
+   +++
+
+1. Som standard kan kunder utföra uppgifter i flera transaktioner med standardutmaningar och sekventiella utmaningar. Om du vill att alla uppgifter ska slutföras i en enda transaktion markerar du ikonen ![](assets/do-not-localize/settings-icon.svg) **[!UICONTROL Settings]** och aktiverar alternativet nedan.
 
    ![](assets/challenge-create-single-transaction.png)
 
