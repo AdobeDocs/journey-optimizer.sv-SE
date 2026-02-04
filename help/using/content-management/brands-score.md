@@ -109,7 +109,7 @@ Så här utvärderar du innehållskvaliteten:
 
    ![](assets/brand-score-6.png)
 
-1. Klicka på ikonen ![Helskärm om du vill ha mer information om ](assets/do-not-localize/Smock_FullScreen_18_N.svg "helskärmsläget") om du vill se din kvalitetspoäng.
+1. Klicka på ikonen ![Helskärm om du vill ha mer information om &#x200B;](assets/do-not-localize/Smock_FullScreen_18_N.svg "helskärmsläget") om du vill se din kvalitetspoäng.
 
    ![](assets/brand-score-7.png)
 
