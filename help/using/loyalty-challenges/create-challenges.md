@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
-* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
