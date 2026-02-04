@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 7b075996eebd03f0aa812da3ece9cfebef8c65fc
+source-git-commit: e98fe328b5a72a7091d48b5e2939a24e4ad6954c
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -20,23 +20,21 @@ ht-degree: 0%
 
 # Skapa utmaningar {#create-challenges}
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_create_challenge"
->title="Skapa en lojalitetsutmaning"
->abstract="Skapa en lojalitetsutmaning för att definiera engagemangserbjudandet, konfigurera innehållskort för leverans, lägga till uppgifter, konfigurera belöningar och (valfritt) konfigurera meddelanden över olika kanaler."
-
-Skapa en lojalitetsutmaning för att definiera engagemangserbjudandet, konfigurera innehållskort, lägga till uppgifter, konfigurera belöningar och konfigurera meddelanden över olika kanaler.
-
 >[!BEGINSHADEBOX]
 
 **Dokumentation om lojalitetsproblem:**
 
-* [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
-* [Förstå lojalitetsutmaningar](get-started.md) - Funktioner, arbetsflöde, förutsättningar
-* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
+* [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
+* [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
+* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_create_challenge"
+>title="Skapa en lojalitetsutmaning"
+>abstract="Skapa en lojalitetsutmaning för att definiera engagemangserbjudandet, konfigurera innehållskort för leverans, lägga till uppgifter, konfigurera belöningar och (valfritt) konfigurera meddelanden över olika kanaler."
 
 ## Innan du börjar {#before-you-start}
 

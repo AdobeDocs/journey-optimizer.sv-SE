@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Förstå lojalitetsutmaningar
-description: Läs mer om lojalitetsfunktioner, arbetsflöden och funktioner i Adobe Journey Optimizer.
+title: Kom igång med lojalitetsutmaningar
+description: Lär dig hur du skapar och hanterar lojalitetsproblem i Adobe Journey Optimizer för att skapa engagerande lojalitetsprogram.
 feature: Journeys
 topic: Content Management
 role: User
@@ -10,37 +10,65 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 419c7b3913ca4da50c69ed36ffc1a8c8520607b4
+source-git-commit: e98fe328b5a72a7091d48b5e2939a24e4ad6954c
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
 
-# Förstå lojalitetsutmaningar {#understand-loyalty-challenges}
+# Kom igång med lojalitetsutmaningar {#get-started-loyalty-challenges}
+
+>[!BEGINSHADEBOX]
+
+**Dokumentation om lojalitetsproblem:**
+
+* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här **- Översikt, arbetsflöde, förutsättningar**
+* [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
+* [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
+* [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenges_overview"
 >title="Om lojalitetsutmaningar"
 >abstract="Lojalitetsutmaningar gör att ni kan skapa personaliserade engagemangserbjudanden som motiverar kunderna att slutföra specifika åtgärder och få belöningar."
 
-Med lojalitetsutmaningar kan ni utforma och driftsätta personaliserade engagemangserbjudanden som motiverar kunderna att slutföra specifika åtgärder och tjäna pengar.
-
->[!BEGINSHADEBOX]
-
-**Dokumentation om lojalitetsproblem:**
-
-* [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
-* **Förstå lojalitetsproblem** {2 }︎ ◀Du är här **- Funktioner, arbetsflöde, förutsättningar**
-* [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
-* [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
-
->[!ENDSHADEBOX]
+>[!AVAILABILITY]
+>
+>Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst.
 
 ## Översikt {#overview}
 
 Lojalitetsutmaningar är en komplett lösning för att skapa storskaliga lojalitetsprogram, från att definiera uppgifter och milstolpar till att leverera innehåll och spåra prestanda i olika kanaler. Ni kan skapa tre olika typer av utmaningsupplevelser, konfigurera belöningar, skicka meddelanden i flera kanaler under viktiga livscykelsteg och övervaka prestanda via automatiskt genererade resor - allt med bibehållen integrering med ert externa lojalitetshanteringssystem.
+
+## Viktiga funktioner {#key-capabilities}
+
+Använd lojalitetsutmaningar för att:
+
+* **Skapa tre typer av utmaningar**:
+   * **Standard**: Kunderna utför valfritt antal uppgifter för att få belöningar
+   * **Strömma**: Kunder slutför samma uppgift flera gånger i följd
+   * **Sekventiellt**: Kunder slutför uppgifter i en viss ordning
+
+* **Utmaningsinnehåll**: Använd Journey Optimizer-innehållskort för att skapa en visuell representation av din utmaning på kundenheter. Innehållskort visar information om utmaningar, framsteg och belöningar.
+
+* **Ange uppgiftskrav**: Definiera vad kunder måste göra för att få belöningar, inklusive:
+   * Uppgiftstyper (inköp, utgiftsbelopp, besök, engagemang, anpassade händelser)
+   * Kvantitetskrav
+   * Inkluderingar/uteslutningar av produkter med SKU:er, kategorier eller attribut
+   * Anpassade attribut och villkor
+
+* **Konfigurera belöningar**: Definiera belöningar som kunder får när de har slutfört en uppgift (progressiva belöningar) eller efter att ha slutfört hela utmaningen (slutliga belöningar).
+
+* **Skicka meddelanden i flera kanaler**: Leverera meddelanden i flera kanaler (i appen, e-post, push) i viktiga steg:
+   * **Starta**: När utmaningen startar
+   * **Pågår**: När kunderna är på väg genom
+   * **Fullständigt**: När kunderna slutför utmaningen
+
+* **Spåra prestanda**: Övervaka automatiskt genererade resor och granska utmaningsprestanda genom inbyggda rapporter.
 
 ## Så fungerar det {#how-it-works}
 
@@ -68,38 +96,6 @@ När du skapar och startar en lojalitetsutmaning följer du det här arbetsflöd
 >
 >Den automatiskt genererade resan visas i kundreseinventeringen och kan anpassas vid behov. Ändringar som görs direkt på resan synkroniseras dock inte tillbaka till utmaningskonfigurationen.
 
-## Viktiga funktioner {#key-capabilities}
-
-Använd lojalitetsutmaningar för att:
-
-* **Skapa tre typer av utmaningar**:
-   * **Standard**: Kunderna utför ett valfritt antal uppgifter för att få belöningar.
-   * **Streak**: Kunderna utför samma uppgift flera gånger.
-   * **Sekventiellt**: Kunder slutför uppgifter i en viss ordning.
-
-* **Utmaningsinnehåll**: Använd Journey Optimizer-innehållskort för att skapa en visuell representation av din utmaning på kundenheter. Innehållskort visar information om utmaningar, framsteg och belöningar på kundens enhet.
-
-* **Ange uppgiftskrav**: Definiera vad kunder måste göra för att få belöningar, inklusive:
-   * Uppgiftstyper (inköp, utgiftsbelopp, besök osv.)
-   * Kvantitetskrav
-   * Inkluderingar/uteslutningar av produkter med SKU:er
-   * Anpassade attribut och villkor
-
-* **Konfigurera belöningar**: Definiera belöningar som kunder får när de har slutfört en uppgift eller när hela utmaningen har slutförts
-
-* **Skicka meddelanden**: Leverera meddelanden i flera kanaler (i appen, e-post, push) i viktiga steg:
-   * **Starta**: När utmaningen startar
-   * **Pågår**: När kunderna är på väg genom
-   * **Fullständigt**: När kunderna slutför utmaningen
-
-* **Spåra prestanda**: Övervaka automatiskt genererade resor och granska provprestanda
-
-### Viktiga begränsningar {#limitations}
-
-* **Inget redovisningssystem**: Lojalitetsproblem spårar inte monetära värden eller punktsaldon. När kunderna genomför en utmaning och får en belöning, anropar Journey Optimizer ditt externa lojalitetshanteringssystem för att hantera punktallokering.
-
-* **Endast målgruppsval**: Du kan välja befintliga målgrupper men inte skapa nya målgrupper från användargränssnittet för lojalitetsutmaningar.
-
 ## Förhandskrav {#prerequisites}
 
 Innan du använder lojalitetsutmaningar måste du se till att du har:
@@ -114,41 +110,59 @@ Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källan
 
 Detaljerade instruktioner finns i:
 
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 ### Nödvändiga behörigheter {#required-permissions}
 
 Om du vill använda lojalitetsutmaningar måste du ha rätt behörigheter i Journey Optimizer. Kontakta administratören om du inte kan komma åt funktionen.
 
-## Utmaningar om lojalitet {#access}
+### Målgrupper {#target-audiences}
 
-Så här kommer du åt lojalitetsutmaningar:
+Skapa målgrupper i Experience Platform innan ni skapar utmaningar. Du kan välja befintliga målgrupper men inte skapa nya målgrupper med hjälp av användargränssnittet för lojalitetsutmaningar.
 
-1. I Adobe Journey Optimizer väljer du **[!UICONTROL Loyalty challenges]** i den vänstra navigeringsmenyn.
+## Viktiga begränsningar {#limitations}
 
-2. I lagret Lojalitetsutmaningar visas alla befintliga utmaningar med information som:
-   * Namn och beskrivning av utmaning
-   * Status (utkast, live, stoppad osv.)
-   * Utmaningstyp (Standard, Streak, Sequential)
-   * Start- och slutdatum
-   * Senaste ändringsdatum
+* **Inget redovisningssystem**: Lojalitetsproblem spårar inte monetära värden eller punktsaldon. När kunderna genomför en utmaning och får en belöning, anropar Journey Optimizer ditt externa lojalitetshanteringssystem för att hantera punktallokering.
 
-3. Välj **[!UICONTROL Create challenge]** om du vill börja skapa en ny utmaning.
-
-### Söka efter och filtrera problem {#search-filter}
-
-Använd sök- och filtreringsfunktionerna för att snabbt hitta specifika utmaningar:
-
-* **Sök**: Ange utmaningsnamn eller nyckelord i sökfältet
-* **Filtrera efter status**: Utkast, Schemalagt, Live, Slutfört, Stoppat eller Arkiverat
-* **Filtrera efter typ**: Utmaningar av standardtyp, strömning eller sekventiell typ
-* **Filtrera efter datum**: Utmaningar inom ett visst datumintervall
-* **Filtrera efter taggar**: Problem med att använda särskilda taggar
+* **Endast målgruppsval**: Du kan välja befintliga målgrupper men inte skapa nya målgrupper från användargränssnittet för lojalitetsutmaningar.
 
 ## Nästa steg {#next-steps}
 
-Nu när ni förstår lojalitetsutmaningarna kan ni lära er hur ni skapar er första utmaning:
-
-* [Skapa utmaningar](create-challenges.md)
-* [Hantera utmaningar](manage-challenges.md)
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+  <td>
+    <a href="access-loyalty-challenges.md">
+    <!--<img alt="Access" src="../assets/do-not-localize/learn-more-button.svg">-->
+    </a>
+    <div>
+    <a href="access-loyalty-challenges.md"><strong>Hitta lojalitetsproblem</strong></a>
+    </div>
+    <p>
+    <em>Lär dig hur du får åtkomst till inventering och filtrering av utmaningar</em>
+    <p>
+  </td>
+  <td>
+    <a href="create-challenges.md">
+      <!--<img alt="Create" src="../assets/do-not-localize/start-button.svg">-->
+    </a>
+    <div>
+    <a href="create-challenges.md"><strong>Skapa utmaningar</strong></a>
+    </div>
+    <p>
+    <em>Skapa och konfigurera din första lojalitetsutmaning</em>
+    <p>
+  </td>
+  <td>
+    <a href="manage-challenges.md">
+    <!--<img alt="Manage" src="../assets/do-not-localize/monitor-button.svg">-->
+    </a>
+    <div>
+    <a href="manage-challenges.md"><strong>Hantera utmaningar</strong></a>
+    </div>
+    <p>
+    <em>Redigera, övervaka och optimera utmaningar</em>
+    <p>
+  </td>
+</tr>
+</table>

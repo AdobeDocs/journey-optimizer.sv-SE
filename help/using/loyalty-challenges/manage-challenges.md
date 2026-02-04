@@ -10,9 +10,9 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 7b075996eebd03f0aa812da3ece9cfebef8c65fc
+source-git-commit: e98fe328b5a72a7091d48b5e2939a24e4ad6954c
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -20,23 +20,21 @@ ht-degree: 0%
 
 # Hantera utmaningar {#manage-challenges}
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_manage_challenges"
->title="Hantera lojalitetsutmaningar"
->abstract="När ni har skapat och publicerat lojalitetsutmaningar kan ni visa, redigera, övervaka och optimera dem för att säkerställa att de ger önskat resultat för ert lojalitetsprogram."
-
-När ni har skapat och publicerat lojalitetsutmaningar kan ni visa, redigera, övervaka och optimera dem för att säkerställa att de ger önskat resultat för ert lojalitetsprogram.
-
 >[!BEGINSHADEBOX]
 
 **Dokumentation om lojalitetsproblem:**
 
-* [Kom igång med lojalitetsutmaningar](gs-loyalty-challenges.md) - snabböversikt och nästa steg
-* [Förstå lojalitetsutmaningar](get-started.md) - Funktioner, arbetsflöde, förutsättningar
+* [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
+* [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
-* **Hantera utmaningar** ◀ &rbrace;︎ **Du är här** - Redigera, övervaka, optimera
+* **Hantera utmaningar** ◀ }︎ **Du är här** - Redigera, övervaka, optimera
 
 >[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_manage_challenges"
+>title="Hantera lojalitetsutmaningar"
+>abstract="När ni har skapat och publicerat lojalitetsutmaningar kan ni visa, redigera, övervaka och optimera dem för att säkerställa att de ger önskat resultat för ert lojalitetsprogram."
 
 ## Utmaningens livscykel {#challenge-lifecycle}
 
