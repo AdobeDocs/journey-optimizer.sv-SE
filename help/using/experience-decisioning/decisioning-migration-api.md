@@ -5,9 +5,9 @@ feature: Decisioning
 topic: Integrations
 role: Developer
 level: Experienced
-source-git-commit: 9ac3eaba0b4c6536c1c447df825eb5f5c0afc900
+source-git-commit: 398d4c2ab3a2312a0af5b8ac835f7d1f49a61b5b
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Med API:t för migreringstjänsten för beslut kan du migrera beslutshanteringso
 
 Med detta API kan du smidigt överföra ditt beslutsinnehåll mellan miljöer (t.ex. från utveckling till staging eller från mellanlagring till produktion) samtidigt som dataintegritet och relationer upprätthålls.
 
-Om du vill veta mer om fördelarna och möjligheterna med att fatta beslut jämfört med att hantera beslut kan du läsa [Fördelarna med att migrera till beslut](migrate-to-decisioning.md).
+Om du vill veta mer om fördelarna och möjligheterna med att fatta beslut jämfört med att hantera beslut kan du läsa [den här sidan](migrate-to-decisioning.md).
 
 ## Funktioner {#capabilities}
 
