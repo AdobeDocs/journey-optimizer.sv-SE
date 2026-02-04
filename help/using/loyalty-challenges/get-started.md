@@ -51,7 +51,7 @@ Med lojalitetsutmaningar kan ni konfigurera belöningar, skicka meddelanden i fl
 
 När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
 
-1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
+1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
 
 1. **Välj målgrupp** - Definiera vilka kunder som kan delta i din utmaning genom att välja en målgrupp från Adobe Experience Platform.
 
@@ -75,11 +75,11 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
 Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källanslutningar för att spåra kundens framsteg och slutförande av uppgifter.
 
-1. **Konfigurera en källanslutning som stöds**: För närvarande är den kapillära kopplingen tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
+1. **Konfigurera en källanslutning som stöds**: För närvarande är den kapillära kopplingen tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty).
 
 1. **Validera datainmatning**: Kontrollera att lojalitetshändelser och kunddata följer med till Experience Platform och är tillgängliga i Journey Optimizer. Verifiera att dataschemat innehåller de fält som behövs för att spåra kundåtgärder och -förlopp.
 
-Mer information finns i [Översikt över Experience Platform-källor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+Mer information finns i [Översikt över Experience Platform-källor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
 
 +++
 
