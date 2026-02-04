@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: 831809b4c1dd19fdaeeb646695f606c02ec21265
+source-git-commit: 5120eb51311348b8561b0a20f982576f6c945921
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * [Åtkomst till lojalitetsproblem](access-loyalty-challenges.md) - Lager och filtrering
-* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 * [Hantera utmaningar](manage-challenges.md) - Redigera, övervaka, optimera
 
@@ -171,7 +171,7 @@ Innan du publicerar din utmaning:
 
 1. **Granska alla komponenter**: Verifiera utmaningsegenskaper, uppgifter, belöningar, innehållskort och meddelandekonfigurationer.
 
-1. **Testa upplevelsen**: Använd [testprofiler](../test-approve/test-profiles.md) för att validera hur innehållskortet visas och aktivitetsutlösaren fungerar.
+1. **Testa upplevelsen**: Använd [testprofiler](../content-management/test-profiles.md) för att validera hur innehållskortet visas och aktivitetsutlösaren fungerar.
 
 1. **Publicera**: Välj **[!UICONTROL Publish]** om du vill att utmaningen ska vara tillgänglig för målgruppen.
 
@@ -185,7 +185,7 @@ Så här gör du utmaningen tillgänglig för kunderna:
 
 1. Leta reda på den automatiskt genererade resan (den kommer att ha&quot;Problem:&quot; som ett prefix i sitt namn).
 
-1. [Aktivera resan](../building-journeys/publishing-the-journey.md).
+1. [Aktivera resan](../building-journeys/publish-journey.md).
 
 Resan startar automatiskt på det angivna utmaningsstartdatumet.
 

@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: bd98e4dc77a0adde83df6251af749aa6da8c058d
+source-git-commit: 5120eb51311348b8561b0a20f982576f6c945921
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -66,9 +66,9 @@ När du skapar och startar en lojalitetsutmaning följer du det här arbetsflöd
 
 1. **Konfigurera meddelanden** (valfritt) - Konfigurera flerkanalsmeddelanden ([i appen](../in-app/get-started-in-app.md), [e-post](../email/get-started-email.md), [push](../push/get-started-push.md)) för nyckelstadier i livscykeln: start, pågående och slutförande.
 
-1. **Granska och publicera** - Testa din utmaning med [testprofiler](../test-approve/test-profiles.md) och publicera den sedan för att göra den tillgänglig för målgruppen.
+1. **Granska och publicera** - Testa din utmaning med [testprofiler](../content-management/test-profiles.md) och publicera den sedan för att göra den tillgänglig för målgruppen.
 
-1. **Aktivera resa** - När du publicerar en utmaning skapar Journey Optimizer automatiskt en [resa](../building-journeys/journey-gs.md) i utkaststatus som koordinerar leverans och meddelanden för innehållskort. Navigera till lagret Resurser, leta upp den automatiskt genererade resan (med namnet&quot;Utmaning: [Utmaningsnamn]&quot;) och [aktivera den](../building-journeys/publishing-the-journey.md) för att göra utmaningen tillgänglig för dina kunder.
+1. **Aktivera resa** - När du publicerar en utmaning skapar Journey Optimizer automatiskt en [resa](../building-journeys/journey-gs.md) i utkaststatus som koordinerar leverans och meddelanden för innehållskort. Navigera till lagret Resurser, leta upp den automatiskt genererade resan (med namnet&quot;Utmaning: [Utmaningsnamn]&quot;) och [aktivera den](../building-journeys/publish-journey.md) för att göra utmaningen tillgänglig för dina kunder.
 
 1. **Övervaka prestanda** - Spåra deltagande, slutförandegrad, belöningsdistribution och meddelandeengagemang via inbyggda rapporter och arbetsytan. Se [Hantera utmaningar](manage-challenges.md) för mer information om övervakning.
 
@@ -86,7 +86,7 @@ Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källan
 
 Detaljerade instruktioner finns i:
 
-* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home)
+* [Experience Platform-källdokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Konfigurera källanslutningar i Journey Optimizer](../start/get-started-sources.md)
 
 +++
