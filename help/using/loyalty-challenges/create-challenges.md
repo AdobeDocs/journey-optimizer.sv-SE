@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
-* **Skapa utmaningar** {2 }︎ ◀Du är här ****
+* **Skapa utmaningar** {2 }︎ ◀Du är här **&#x200B;**
 * [Skapa uppgifter](create-tasks.md)
 
 >[!ENDSHADEBOX]
