@@ -6,9 +6,9 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
-source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
+source-git-commit: dc417c88021bdb042d7a600ee13a7cbab0ceeb4a
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '678'
 ht-degree: 1%
 
 ---
@@ -269,11 +269,11 @@ Vid körning läggs metadatavärdet till i befintliga **[!UICONTROL Message Feed
 >
 >Läs mer om datauppsättningar i [det här avsnittet](../../data/get-started-datasets.md).
 
-**Begränsning**
+**Begränsningar**
 
-Det finns en övre gräns på 2 kB för nyckelvärdepar per åtgärd.
+Det finns en övre gräns på 2 kB för nyckelvärdepar per åtgärd. Om gränsen på 2 kB överskrids levereras meddelandet fortfarande, men något av nyckelvärdeparen kan trunkeras.
 
-Om gränsen på 2 kB överskrids levereras meddelandet fortfarande, men något av nyckelvärdeparen kan trunkeras.
+Metadata hämtas inte för profiler som är exkluderade från åtgärden. När en profil utesluts från att ta emot ett meddelande skapas ingen metadatapost för den profilen i datauppsättningen.
 
 **Exempel**
 
