@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
-source-git-commit: 342df0950622de1c4c246bf624d05843671e199f
+source-git-commit: 5ccbddb37c0f45b6dd004cb4b70378b300228c0c
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
-* **Skapa utmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Skapa utmaningar** {2 }︎ ◀Du är här ****
 * [Skapa uppgifter](create-tasks.md)
 
 >[!ENDSHADEBOX]
@@ -236,23 +236,29 @@ Definiera vilka kunder som kan delta i er lojalitetsutmaning.
 
 1. I dialogrutan för målgruppsval väljer du målgrupp i listan över tillgängliga Adobe Experience Platform-målgrupper och väljer **[!UICONTROL Add audience]**. [Lär dig arbeta med målgrupper](../audience/about-audiences.md).
 
-Utmaningen är nu helt konfigurerad med sin struktur, sitt innehåll, sina meddelanden och sin målgrupp. Det sista steget är att generera och publicera resan.
+Utmaningen är nu helt konfigurerad med sin struktur, sitt innehåll, sina meddelanden och sin målgrupp. För att lansera den måste du publicera utmaningen och den tillhörande resan.
 
-## Generera och publicera resan {#review-and-publish}
+## Utmaningen startas {#launch}
 
-När du har konfigurerat alla komponenter för utmaning kan du skapa den resa som kommer att styra hanteringen av dina utmaningar:
+För att starta en utmaning krävs **tre steg**: (1) publicera utmaningen, (2) generera resan, (3) publicera resan. Alla tre måste slutföras för att utmaningen ska kunna levereras till kunderna.
 
 1. Granska konfigurationen för att se till att alla obligatoriska fält är ifyllda.
 
-1. Välj **[!UICONTROL Save]** om du vill spara din provkonfiguration och välj **[!UICONTROL Generate Journey]**.
+1. Klicka på ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Publish]**.
+
+   ![](assets/challenge-create-publish.png)
+
+1. Välj **[!UICONTROL Generate Journey]** om du vill skapa den resa som ska samordna din utmaningsleverans.
 
    ![](assets/challenge-create-generate-journey.png)
 
-1. Journey Optimizer skapar automatiskt en resa med statusen&quot;Utkast&quot;. Den automatiskt genererade resan visas i kundresans lager med namnformatet *&quot;Resa: [Utmaningsnamn]&quot;*. [Läs mer om reseinventeringen](../building-journeys/journey-ui.md).
+1. Journey Optimizer skapar automatiskt en resa med statusen&quot;Utkast&quot;. Resan visas i reseinventeringen med namnformatet *&quot;Resa: [Utmaningsnamn]&quot;*. [Läs mer om reseinventeringen](../building-journeys/journey-ui.md).
 
    ![](assets/challenge-create-journey.png)
 
-1. Publicera resan när den är klar för att göra den tillgänglig för kunderna. Resan startar automatiskt på det angivna startdatumet för utmaningen och levererar innehåll och meddelanden enligt din konfiguration. [Lär dig publicera en resa](../building-journeys/publish-journey.md).
+1. Öppna resan och publicera den. Resan startar automatiskt på det angivna startdatumet för utmaningen och levererar innehåll och meddelanden enligt din konfiguration. [Lär dig publicera en resa](../building-journeys/publish-journey.md).
+
+1. När din utmaning är aktiv kan du övervaka prestanda och meddelandeleverans i [reserapporten](../reports/journey-global-report-cja.md).
 
 >[!NOTE]
 >

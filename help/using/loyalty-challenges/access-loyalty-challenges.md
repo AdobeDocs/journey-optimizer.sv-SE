@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
-source-git-commit: 342df0950622de1c4c246bf624d05843671e199f
+source-git-commit: 5ccbddb37c0f45b6dd004cb4b70378b300228c0c
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 **Dokumentation om lojalitetsproblem:**
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
-* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här **&#x200B;**
+* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här ****
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
 
@@ -45,7 +45,6 @@ Gränssnittet ger tillgång till två huvudsakliga inventeringar:
 * **Utmaningar**: Visa och hantera alla lojalitetsproblem, övervaka deras status och utföra snabba åtgärder som att visa, redigera, duplicera eller ta bort utmaningar
 * **Uppgifter**: Bläddra bland återanvändbara uppgifter som kan användas i flera utmaningar och hantera uppgiftsdefinitioner oberoende av varandra
 
-
 ## Utmaningslager {#challenges-tab}
 
 Fliken **[!UICONTROL Challenges]** visar alla utmaningar sorterade efter senaste ändringsdatum, där de senast ändrade utmaningarna visas först.
@@ -57,17 +56,22 @@ Visad nyckelinformation:
 * **[!UICONTROL State]**: Utfrågans aktuella tillstånd (utkast eller publicerat)
 * **[!UICONTROL Tasks]**: Antal konfigurerade uppgifter i utmaningen
 * **[!UICONTROL Journey]**: Länk till den automatiskt genererade resan som är associerad med utmaningen
-* **[!UICONTROL Status]**: Aktuell status för den associerade resan (utkast, Live, stoppad osv.)
+* **[!UICONTROL Status]**: Aktuell status för den automatiskt genererade resan som levererar utmaningen.
 * **[!UICONTROL Start/End Date (UTC)]**: När utmaningen blir aktiv och upphör att gälla
 
 På fliken Utmaningar kan du utföra åtgärder på utmaningar:
 
 * **Visa utmaning**: Välj utmaningsnamnet för att öppna informationssidan
 * **Duplicera en utmaning**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Duplicate]**. En kopia skapas med alla uppgifter, allt innehåll och alla meddelanden intakta.
-* **Ta bort en utmaning**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Delete]**
-* **Redigera en utmaning**: Välj utmaningsnamnet för att öppna dess informationssida och redigera den.
+* **Ta bort en utmaning**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Delete]**.
 
-  När du öppnar en publicerad utmaning för redigering måste du först återställa den till statusen Utkast. Eventuella anpassningar som gjorts direkt i den automatiskt genererade resan går förlorade. När du har gjort ändringarna sparar och publicerar du utmaningen igen och publicerar den tillhörande resan igen.
+  >[!IMPORTANT]
+  >
+  >Du kan ta bort en utmaning även när den publiceras. Tänk på effekten innan du tar bort den.
+
+* **Redigera en utmaning**: Välj utmaningsnamnet för att öppna informationssidan och göra önskade ändringar.
+
+  När du öppnar en publicerad utmaning för redigering måste du först återställa den till utkastläge. Eventuella anpassningar som gjorts direkt i den automatiskt genererade resan går förlorade. När du har gjort ändringarna sparar och publicerar du utmaningen igen och publicerar sedan den tillhörande resan. [Lär dig hur du startar en utmaning](create-challenges.md#launch)
 
   >[!IMPORTANT]
   >
@@ -90,4 +94,8 @@ På fliken Åtgärder kan du utföra åtgärder för uppgifter:
 
 * **Visa/redigera en uppgift**: Markera aktivitetsnamnet om du vill visa den fullständiga konfigurationen och redigera uppgiften
 * **Duplicera en uppgift**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Duplicate]**
-* **Ta bort en uppgift**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Delete]**
+* **Ta bort en uppgift**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Delete]**.
+
+  >[!IMPORTANT]
+  >
+  >Du kan ta bort en uppgift även när den används i en eller flera utmaningar. Tänk på effekten på utmaningar som refererar till uppgiften innan du tar bort den.
