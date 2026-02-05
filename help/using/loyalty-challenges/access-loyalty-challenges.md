@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
-source-git-commit: 94b553b19dbb0ba3020979fa710c2c35af237816
+source-git-commit: 5e11a0817ef6d1c7ef2e363cde48cddf932cd2c1
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,10 @@ ht-degree: 0%
 
 **Dokumentation om lojalitetsproblem:**
 
-* [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
-* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här **- Inventering, utmaning och uppgiftshantering**
-* [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
-* [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
+* [Kom igång med lojalitetsutmaningar](get-started.md)
+* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här ****
+* [Skapa utmaningar](create-challenges.md)
+* [Skapa uppgifter](create-tasks.md)
 
 >[!ENDSHADEBOX]
 
