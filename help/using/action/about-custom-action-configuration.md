@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 30241f4504ad82bf8ef9f6b58d3bb9482f572dae
+source-git-commit: c81d9e4c6339ea5637462afb87b6d81a716b22f1
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '1971'
 ht-degree: 1%
 
 ---
@@ -163,7 +163,7 @@ Adobe Journey Optimizer stöder TLS 1.3 som standard för anpassade åtgärder. 
 
 Du kan använda mTLS (Mutual Transport Layer Security) för att säkerställa förbättrad säkerhet vid utgående anslutningar till anpassade Adobe Journey Optimizer-åtgärder. mTLS är en heltäckande säkerhetsmetod för ömsesidig autentisering som ser till att båda parter delar information är de som gör anspråk på att vara innan data delas. mTLS innehåller ytterligare ett steg jämfört med TLS, där servern också frågar efter klientens certifikat och verifierar det i slutet.
 
-Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
+Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
 ## Definiera nyttolastparametrarna {#define-the-message-parameters}
 
@@ -207,13 +207,14 @@ I den här fältkonfigurationen måste du:
 >Om du konfigurerar valfria parametrar samtidigt som du tillåter Null-värden, skickas parametrar som inte fyllts i av en reseadministratör som Null.
 >
 
-## Omfattande JSON-exempel {#json-examples}
+<!--
+## Comprehensive JSON examples {#json-examples}
 
-I det här avsnittet finns fullständiga JSON-exempel som visar alla parametertyper och konfigurationer som stöds för anpassade åtgärder.
+This section provides complete JSON examples demonstrating all supported parameter types and configurations for custom actions.
 
-### Exempel 1: Grundläggande parametertyper
+### Example 1: Basic parameter types
 
-I det här exemplet visas hur du använder olika datatyper i din anpassade åtgärdsnyttolast:
+This example shows how to use different data types in your custom action payload:
 
 ```json
 {
@@ -227,16 +228,16 @@ I det här exemplet visas hur du använder olika datatyper i din anpassade åtg�
 }
 ```
 
-I åtgärdskonfigurationen:
-* `userId` - Variabelparameter (String) - Mappar till profilen firstName
-* `accountId` - Konstant parameter (String) - Skickar alltid &quot;ABC123&quot;
-* `age` - Variabelparameter (heltal) - Mappar till profilsida
-* `isActive` - Konstant parameter (Boolean) - Skickar alltid true
-* `loyaltyScore` - Variabelparameter (decimal) - Mappar till anpassat profilfält
+In the action configuration:
+* `userId` - Variable parameter (String) - Maps to profile firstName
+* `accountId` - Constant parameter (String) - Always sends "ABC123"
+* `age` - Variable parameter (Integer) - Maps to profile age
+* `isActive` - Constant parameter (Boolean) - Always sends true
+* `loyaltyScore` - Variable parameter (Decimal) - Maps to custom profile field
 
-### Exempel 2: Använda systemkonstanter och resekontext
+### Example 2: Using system constants and journey context
 
-Du kan referera till kundspecifik information och systemvärden:
+You can reference journey-specific information and system values:
 
 ```json
 {
@@ -252,22 +253,22 @@ Du kan referera till kundspecifik information och systemvärden:
 }
 ```
 
-**Tillgängliga variabler för resekontext:**
+**Available journey context variables:**
 
 >[!NOTE]
 >
->Syntaxen för resekontextvariabler verifieras av produktteamet. De faktiska fältnamnen kan vara: travelUID, travelVersionName, travelVersion, currentNodeId, currentNodeName baserat på dokumentationen för reseegenskaper.
+>Journey context variables syntax is being verified with Product team. The actual field names may be: journeyUID, journeyVersionName, journeyVersion, currentNodeId, currentNodeName based on Journey Properties documentation.
 
-* `@{journey.id}` - Unik identifierare för resan
-* `@{journey.name}` - Namn på resan
-* `@{journey.version}` - Resans versionsnummer
-* `@{journey.startTime}` - Tidsstämpel när resan påbörjades för den här profilen (verifiering krävs)
-* `@{journey.stepId}` - ID för aktuellt steg
-* `@{journey.stepName}` - Namnet på det aktuella steget
+* `@{journey.id}` - Unique identifier of the journey
+* `@{journey.name}` - Name of the journey
+* `@{journey.version}` - Version number of the journey
+* `@{journey.startTime}` - Timestamp when the journey started for this profile (verification needed)
+* `@{journey.stepId}` - Current step identifier
+* `@{journey.stepName}` - Name of the current step
 
-### Exempel 3: Valfria och obligatoriska parametrar
+### Example 3: Optional and required parameters
 
-Konfigurera parametrar som resenärerna kan fylla i:
+Configure parameters that journey practitioners can optionally fill:
 
 ```json
 {
@@ -279,18 +280,18 @@ Konfigurera parametrar som resenärerna kan fylla i:
 }
 ```
 
-I gränssnittet för åtgärdskonfigurationen:
-* Ange `email` som **obligatoriskt** (markera inte Är valfritt)
-* Ange `mobilePhone` som **valfri** (markera &quot;Är valfri&quot;)
-* Ange `preferredLanguage` som **valfri** med standardvärde
+In the action configuration UI:
+* Set `email` as **required** (do not check "Is optional")
+* Set `mobilePhone` as **optional** (check "Is optional")
+* Set `preferredLanguage` as **optional** with default value
 
 >[!TIP]
 >
->När en parameter är markerad som valfri och inte ifylld av resebyrån, utelämnas den från nyttolasten eller skickas som null (om Tillåt NULL-värden är aktiverat).
+>When a parameter is marked as optional and not filled by the journey practitioner, it will either be omitted from the payload or sent as null (if "Allow NULL values" is enabled).
 
-### Exempel 4: Arbeta med arrayer och samlingar
+### Example 4: Working with arrays and collections
 
-Skicka datainsamlingar till dina anpassade åtgärder:
+Pass collections of data to your custom actions:
 
 ```json
 {
@@ -313,11 +314,11 @@ Skicka datainsamlingar till dina anpassade åtgärder:
 
 >[!NOTE]
 >
->Läs mer om hur du skickar samlingar i anpassade åtgärder på [den här sidan](../building-journeys/collections.md).
+>Learn more about passing collections in custom actions on [this page](../building-journeys/collections.md).
 
-### Exempel 5: Kapslade objekt och komplexa strukturer
+### Example 5: Nested objects and complex structures
 
-Skapa hierarkiska datastrukturer:
+Build hierarchical data structures:
 
 ```json
 {
@@ -347,9 +348,9 @@ Skapa hierarkiska datastrukturer:
 }
 ```
 
-### Exempel 6: En fullständig anpassad åtgärd i verkligheten
+### Example 6: Complete real-world custom action
 
-Ett omfattande exempel som integrerar flera koncept:
+A comprehensive example integrating multiple concepts:
 
 ```json
 {
@@ -386,26 +387,27 @@ Ett omfattande exempel som integrerar flera koncept:
 }
 ```
 
-**Konfigurationstips för det här exemplet:**
-* Blandning av konstanta värden (`eventSource`, `specialPromotion`, `sandbox`) och variabelparametrar
-* Använder resekontext för spårning och felsökning
-* Inkluderar profildata för personalisering i tredjepartssystemet
-* Lägger till beslutskontext när erbjudanden används
-* Systemmetadata för routning och spårning på organisationsnivå
+**Configuration tips for this example:**
+* Mix of constant values (`eventSource`, `specialPromotion`, `sandbox`) and variable parameters
+* Uses journey context for tracking and debugging
+* Includes profile data for personalization in the third-party system
+* Adds decisioning context when using offers
+* System metadata for routing and organization-level tracking
 
-### Tips för konfiguration av konstanter
+### Tips for configuring constants
 
-**Namn på sandlåda:** Använd en konstant parameter som angetts till ditt miljönamn (t.ex. &quot;prod&quot;, &quot;dev&quot;, &quot;stage&quot;)
+**Sandbox name:** Use a constant parameter set to your environment name (e.g., "prod", "dev", "stage")
 
-**Körningstidsstämpel:** Använd `@{journey.startTime}` eller skapa en variabelparameter som reseansvariga kan mappa till funktionen `#{nowWithDelta()}`
+**Execution timestamp:** Use `@{journey.startTime}` or create a variable parameter that journey practitioners can map to `#{nowWithDelta()}` function
 
-**API-version:** Använd en konstant för API-versionsnummer för att säkerställa konsekvens mellan resor
+**API version:** Use a constant for API version numbers to ensure consistency across journeys
 
-**Autentiseringstoken:** Ange aldrig autentiseringstoken i nyttolasten - använd autentiseringsavsnittet i den anpassade åtgärdskonfigurationen i stället
+**Authentication tokens:** Never put authentication tokens in the payload - use the Authentication section of the custom action configuration instead
 
 >[!CAUTION]
 >
->Fältnamn i nyttolasten får inte innehålla en punkt `.` eller börja med ett `$`-tecken. Se till att JSON-strukturen följer dessa namnkonventioner.
+>Field names in the payload cannot contain a dot `.` character, nor start with a `$` character. Ensure your JSON structure follows these naming conventions.
+-->
 
 * [Felsökning av anpassad åtgärd](../action/troubleshoot-custom-action.md) - Lär dig hur du felsöker en anpassad åtgärd
 
