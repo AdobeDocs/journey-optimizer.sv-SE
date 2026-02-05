@@ -30,7 +30,7 @@ ht-degree: 0%
 **Dokumentation om lojalitetsproblem:**
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
-* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här ****
+* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här **&#x200B;**
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
 
