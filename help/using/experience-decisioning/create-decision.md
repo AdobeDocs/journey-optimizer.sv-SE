@@ -7,7 +7,7 @@ role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 version: Journey Orchestration
-source-git-commit: 2dfc9c2db5af1b9b74f7405a68e85563f633a54f
+source-git-commit: fb35bc5a51421818297586b5e386aa75deb1c669
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 1%
@@ -20,13 +20,13 @@ ht-degree: 1%
 >id="ajo_code_based_decision"
 >title="Vad är ett beslut?"
 >abstract="Beslutspolicyer innehåller all urvalslogik för att beslutsmotorn ska kunna välja det bästa innehållet. Beslutspolicyn är kampanjspecifika. Deras mål är att välja de bästa erbjudandena för varje profil medan kampanjutvecklingen gör att du kan ange hur de valda beslutsobjekten ska presenteras, inklusive vilka objektattribut som ska inkluderas i meddelandet."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_decision_policy"
 >title="Definiera en beslutspolicy"
 >abstract="Med en beslutspolicy kan ni välja ut de bästa elementen från beslutsmotorn och leverera dem till rätt målgrupp."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Om beslut"
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_policy"
@@ -85,12 +85,12 @@ De viktigaste stegen för att utnyttja beslutsstrategier i meddelanden är följ
 
 Lär dig hur du använder Decisioning för att anpassa e-postmeddelanden för din målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479214?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3476158?quality=12)
 
 Lär dig hur du använder Decisioning för att anpassa push-meddelanden för din målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479214?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479199?quality=12)
 
 Lär dig hur du använder Decisioning för att anpassa SMS-meddelanden för din målgrupp.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479533?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479529?quality=12)
