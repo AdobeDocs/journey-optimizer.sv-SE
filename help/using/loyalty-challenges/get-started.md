@@ -10,8 +10,8 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-mini-toc-levels: 2
-source-git-commit: f50cc244f6d5ec8b38844e8240e72502ddfe3ae0
+mini-toc-levels: 1
+source-git-commit: 94b553b19dbb0ba3020979fa710c2c35af237816
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Ni kan skapa tre typer av utmaningsupplevelser:
 
 När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
 
-1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
+1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
 
 1. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential) och datumintervall.
 
@@ -89,7 +89,7 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
 Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källanslutningar för att spåra kundens framsteg och slutförande av uppgifter.
 
-Konfigurera en källkoppling som stöds innan du startar programmet. Kapillärkopplingen är tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty).
+Konfigurera en källkoppling som stöds innan du startar programmet. Kapillärkopplingen är tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
 
 +++
 

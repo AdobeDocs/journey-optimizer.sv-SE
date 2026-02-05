@@ -10,10 +10,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-mini-toc-levels: 2
-source-git-commit: 43d3593264ea6d33794914e1b1f9ea45c295c79e
+mini-toc-levels: 1
+source-git-commit: 94b553b19dbb0ba3020979fa710c2c35af237816
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -31,10 +31,12 @@ ht-degree: 0%
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
 * [Få åtkomst till och hantera utmaningar och uppgifter](access-loyalty-challenges.md) - Inventering, utmaning och uppgiftshantering
-* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
+* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 
 >[!ENDSHADEBOX]
+
+På den här sidan beskrivs hela processen med att skapa en lojalitetsutmaning, från att välja utmaningstyp och konfigurera dess egenskaper till att generera och publicera den resa som kommer att leverera utmaningen till dina kunder.
 
 ## Skapa utmaningen {#create-the-challenge}
 
@@ -68,9 +70,9 @@ På fliken **[!UICONTROL Structure]** definierar du hur utmaningen är organiser
    * **[!UICONTROL Name]**: Ange ett beskrivande namn för utmaningen. Det här namnet visas i listan över utmaningar.
    * **[!UICONTROL Description]**: Ange en beskrivning som förklarar syftet och målen med utmaningen.
 
-   ![](assets/challenge-create-properties.png)
-
 1. Använd avsnittet **[!UICONTROL Custom metadata]** om du vill lägga till anpassade metadata med hjälp av nyckel/värde-par. Dessa metadata kan användas för att spåra eller integrera med externa system.
+
+   ![](assets/challenge-create-properties.png)
 
 ### Schemalägg utmaningen {#schedule}
 
@@ -117,13 +119,13 @@ Så här lägger du till uppgifter i en utmaning:
 
    +++Utmaningar
 
-   * **[!UICONTROL Streak type]**:
+   I listrutan **[!UICONTROL Streak type]** väljer du mellan:
 
-      * **Flera dagar i följd**: Kunderna måste slutföra uppgiften på dagar i följd utan avbrott. *Exempel: Köp på måndag, tisdag, onsdag - om en dag saknas bryts flödet.*
+   * **Flera dagar i följd**: Kunderna måste slutföra uppgiften på dagar i följd utan avbrott. *Exempel: Köp på måndag, tisdag, onsdag - om en dag saknas bryts flödet.*
 
-      * **Ej efterföljande**: Kunder kan slutföra uppgiften med luckor mellan slutföranden. *Exempel: Slutför 7 köp under 30 dagar med tillåtna brytningar.*
+   * **Ej efterföljande**: Kunder kan slutföra uppgiften med luckor mellan slutföranden. *Exempel: Slutför 7 köp under 30 dagar med tillåtna brytningar.*
 
-   * **[!UICONTROL Streak length]**: Ange hur många gånger aktiviteten måste slutföras. *Exempel: Ange till 7 för en&quot;7-dagars inköpsström&quot;.*
+   I fältet **[!UICONTROL Streak length]** anger du hur många gånger aktiviteten måste slutföras. *Exempel: Ange till 7 för en&quot;7-dagars inköpsström&quot;.*
 
    +++
 
@@ -157,6 +159,8 @@ Så här konfigurerar du när och hur belöningar levereras:
      *Exempel: Ge 10 poäng efter uppgift 1, 20 poäng efter uppgift 2 och 50 poäng efter uppgift 3*
 
 1. Välj belöningsleverantör. Det här är er lojalitetslösning som hanterar kundpoäng och belöningar.
+
+   ![](assets/challenge-create-reward-type.png)
 
 1. Konfigurera belöningsbeloppen baserat på vald leveransmetod:
 
@@ -210,7 +214,7 @@ Skapa flerkanalsmeddelanden för att engagera kunderna i viktiga stadier av utma
    * **Pågående** meddelande: Håll kunderna engagerade med påminnelser och förloppsuppdateringar
    * **Slutförd** meddelande: Fira lyckade och bekräfta belöningsallokering
 
-1. Lägg till en meddelandeknapp för varje fas för att skapa ett meddelande för den scenen.
+1. Klicka på knappen Lägg till meddelande för varje scen för att skapa ett meddelande för den scenen.
 
 1. Välj önskad kanal: **[!UICONTROL In-app]**, **[!UICONTROL Email]** eller **[!UICONTROL Push notification]** och välj den associerade kanalkonfigurationen.
 
@@ -245,8 +249,6 @@ När du har konfigurerat alla komponenter för utmaning kan du skapa den resa so
    ![](assets/challenge-create-generate-journey.png)
 
 1. Journey Optimizer skapar automatiskt en resa med statusen&quot;Utkast&quot;. Den automatiskt genererade resan visas i kundresans lager med namnformatet *&quot;Resa: [Utmaningsnamn]&quot;*. [Läs mer om reseinventeringen](../building-journeys/journey-ui.md).
-
-   Navigera till lagret **[!UICONTROL Journeys]** för att granska den automatiskt genererade resekonfigurationen om det behövs.
 
    ![](assets/challenge-create-journey.png)
 
