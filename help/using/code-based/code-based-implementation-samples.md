@@ -31,7 +31,7 @@ Kodbaserad upplevelse stöder alla typer av kundimplementeringar. På den här s
 
 Om du har en implementering på klientsidan kan du använda någon av AEP klient-SDK: AEP Web SDK eller AEP Mobile SDK.
 
-* Stegen [ nedan](#client-side-how) beskriver processen att hämta innehåll som publiceras på kanten av de kodbaserade upplevelseresorna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
+* Stegen [&#x200B; nedan](#client-side-how) beskriver processen att hämta innehåll som publiceras på kanten av de kodbaserade upplevelseresorna och kampanjerna i en exempelimplementering av **Web SDK** och visa det personaliserade innehållet.
 
 * Stegen för att implementera kodbaserad kanal med **Mobile SDK** beskrivs i [den här självstudiekursen](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
 
@@ -119,9 +119,9 @@ Om du har en implementering på klientsidan kan du använda någon av AEP klient
    >[!IMPORTANT]
    >
    >Fältet `tokens` i `propositionAction` är viktigt för korrekt spårning och attribuering i Adobe Journey Optimizer Decisioning (AJO-D). Dessa variabler aktiverar:
-   >- Korrekt klickattribuering för beslutsaktiviteter
-   >- Korrekt rapportering av användarinteraktioner med beslutat innehåll
-   >- Optimering av erbjudandeprestanda baserat på användarinteraktion
+   >&#x200B;- Korrekt klickattribuering för beslutsaktiviteter
+   >&#x200B;- Korrekt rapportering av användarinteraktioner med beslutat innehåll
+   >&#x200B;- Optimering av erbjudandeprestanda baserat på användarinteraktion
    >
    >Token finns vanligtvis i `proposition.items[0].characteristics.tokens` och ska alltid inkluderas när användarinteraktioner spåras med beslutat innehåll.
 
