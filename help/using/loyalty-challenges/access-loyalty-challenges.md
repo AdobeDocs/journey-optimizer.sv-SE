@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
-source-git-commit: 5e11a0817ef6d1c7ef2e363cde48cddf932cd2c1
+source-git-commit: 342df0950622de1c4c246bf624d05843671e199f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -21,20 +21,20 @@ ht-degree: 0%
 
 # Få tillgång till och hantera utmaningar och uppgifter {#access-loyalty-challenges}
 
->[!AVAILABILITY]
->
->Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
-
 >[!BEGINSHADEBOX]
 
 **Dokumentation om lojalitetsproblem:**
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
-* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här **&#x200B;**
+* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här ****
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
 
 >[!ENDSHADEBOX]
+
+>[!AVAILABILITY]
+>
+>Den här funktionen finns för närvarande i **privat beta**. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
 ## Få tillgång till och hantera utmaningar och uppgifter
 
