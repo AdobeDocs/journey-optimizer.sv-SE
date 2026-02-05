@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-source-git-commit: 5213c60df3494c43a96d9098593a6ab539add8bb
+source-git-commit: 30241f4504ad82bf8ef9f6b58d3bb9482f572dae
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '2376'
 ht-degree: 1%
 
 ---
@@ -163,7 +163,7 @@ Adobe Journey Optimizer stöder TLS 1.3 som standard för anpassade åtgärder. 
 
 Du kan använda mTLS (Mutual Transport Layer Security) för att säkerställa förbättrad säkerhet vid utgående anslutningar till anpassade Adobe Journey Optimizer-åtgärder. mTLS är en heltäckande säkerhetsmetod för ömsesidig autentisering som ser till att båda parter delar information är de som gör anspråk på att vara innan data delas. mTLS innehåller ytterligare ett steg jämfört med TLS, där servern också frågar efter klientens certifikat och verifierar det i slutet.
 
-Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
+Samuell TLS-autentisering (mTLS) stöds i anpassade åtgärder. Det krävs ingen ytterligare konfiguration i den anpassade åtgärden eller resan för att aktivera mTLS. Den sker automatiskt när en mTLS-aktiverad slutpunkt identifieras. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
 ## Definiera nyttolastparametrarna {#define-the-message-parameters}
 
@@ -207,6 +207,205 @@ I den här fältkonfigurationen måste du:
 >Om du konfigurerar valfria parametrar samtidigt som du tillåter Null-värden, skickas parametrar som inte fyllts i av en reseadministratör som Null.
 >
 
+## Omfattande JSON-exempel {#json-examples}
+
+I det här avsnittet finns fullständiga JSON-exempel som visar alla parametertyper och konfigurationer som stöds för anpassade åtgärder.
+
+### Exempel 1: Grundläggande parametertyper
+
+I det här exemplet visas hur du använder olika datatyper i din anpassade åtgärdsnyttolast:
+
+```json
+{
+  "requestData": {
+    "userId": "@{profile.person.name.firstName}",
+    "accountId": "ABC123",
+    "age": "@{profile.person.age}",
+    "isActive": true,
+    "loyaltyScore": "@{profile.customField.score}"
+  }
+}
+```
+
+I åtgärdskonfigurationen:
+* `userId` - Variabelparameter (String) - Mappar till profilen firstName
+* `accountId` - Konstant parameter (String) - Skickar alltid &quot;ABC123&quot;
+* `age` - Variabelparameter (heltal) - Mappar till profilsida
+* `isActive` - Konstant parameter (Boolean) - Skickar alltid true
+* `loyaltyScore` - Variabelparameter (decimal) - Mappar till anpassat profilfält
+
+### Exempel 2: Använda systemkonstanter och resekontext
+
+Du kan referera till kundspecifik information och systemvärden:
+
+```json
+{
+  "metadata": {
+    "sandboxName": "prod",
+    "executionTimestamp": "@{journey.startTime}",
+    "journeyId": "@{journey.id}",
+    "journeyName": "@{journey.name}",
+    "journeyVersion": "@{journey.version}",
+    "stepId": "@{journey.stepId}",
+    "profileId": "@{profile.identityMap.ECID[0].id}"
+  }
+}
+```
+
+**Tillgängliga variabler för resekontext:**
+
+>[!NOTE]
+>
+>Syntaxen för resekontextvariabler verifieras av produktteamet. De faktiska fältnamnen kan vara: travelUID, travelVersionName, travelVersion, currentNodeId, currentNodeName baserat på dokumentationen för reseegenskaper.
+
+* `@{journey.id}` - Unik identifierare för resan
+* `@{journey.name}` - Namn på resan
+* `@{journey.version}` - Resans versionsnummer
+* `@{journey.startTime}` - Tidsstämpel när resan påbörjades för den här profilen (verifiering krävs)
+* `@{journey.stepId}` - ID för aktuellt steg
+* `@{journey.stepName}` - Namnet på det aktuella steget
+
+### Exempel 3: Valfria och obligatoriska parametrar
+
+Konfigurera parametrar som resenärerna kan fylla i:
+
+```json
+{
+  "customer": {
+    "email": "@{profile.personalEmail.address}",
+    "mobilePhone": "@{profile.mobilePhone.number}",
+    "preferredLanguage": "@{profile.preferredLanguage}"
+  }
+}
+```
+
+I gränssnittet för åtgärdskonfigurationen:
+* Ange `email` som **obligatoriskt** (markera inte Är valfritt)
+* Ange `mobilePhone` som **valfri** (markera &quot;Är valfri&quot;)
+* Ange `preferredLanguage` som **valfri** med standardvärde
+
+>[!TIP]
+>
+>När en parameter är markerad som valfri och inte ifylld av resebyrån, utelämnas den från nyttolasten eller skickas som null (om Tillåt NULL-värden är aktiverat).
+
+### Exempel 4: Arbeta med arrayer och samlingar
+
+Skicka datainsamlingar till dina anpassade åtgärder:
+
+```json
+{
+  "products": [
+    {
+      "id": "@{product1.id}",
+      "name": "@{product1.name}",
+      "price": "@{product1.price}"
+    },
+    {
+      "id": "@{product2.id}",
+      "name": "@{product2.name}",
+      "price": "@{product2.price}"
+    }
+  ],
+  "tags": ["premium", "loyalty", "vip"],
+  "categoryIds": ["CAT001", "CAT002"]
+}
+```
+
+>[!NOTE]
+>
+>Läs mer om hur du skickar samlingar i anpassade åtgärder på [den här sidan](../building-journeys/collections.md).
+
+### Exempel 5: Kapslade objekt och komplexa strukturer
+
+Skapa hierarkiska datastrukturer:
+
+```json
+{
+  "customer": {
+    "personalInfo": {
+      "firstName": "@{profile.person.name.firstName}",
+      "lastName": "@{profile.person.name.lastName}",
+      "email": "@{profile.personalEmail.address}"
+    },
+    "address": {
+      "street": "@{profile.homeAddress.street1}",
+      "city": "@{profile.homeAddress.city}",
+      "postalCode": "@{profile.homeAddress.postalCode}",
+      "country": "@{profile.homeAddress.country}"
+    },
+    "preferences": {
+      "language": "@{profile.preferredLanguage}",
+      "timezone": "@{profile.timeZone}",
+      "emailOptIn": "@{profile.consents.marketing.email.val}"
+    }
+  },
+  "context": {
+    "channel": "email",
+    "campaignId": "CAMPAIGN_2025_Q1",
+    "segment": "@{segmentMembership.status}"
+  }
+}
+```
+
+### Exempel 6: En fullständig anpassad åtgärd i verkligheten
+
+Ett omfattande exempel som integrerar flera koncept:
+
+```json
+{
+  "event": {
+    "eventType": "journey.action.triggered",
+    "eventId": "@{journey.stepId}",
+    "timestamp": "@{journey.stepTimestamp}",
+    "eventSource": "Adobe Journey Optimizer"
+  },
+  "profile": {
+    "id": "@{profile.identityMap.ECID[0].id}",
+    "email": "@{profile.personalEmail.address}",
+    "firstName": "@{profile.person.name.firstName}",
+    "lastName": "@{profile.person.name.lastName}",
+    "loyaltyTier": "@{profile.loyaltyTier}",
+    "lifetimeValue": "@{profile.lifetimeValue}"
+  },
+  "journey": {
+    "id": "@{journey.id}",
+    "name": "@{journey.name}",
+    "version": "@{journey.version}",
+    "step": "@{journey.stepName}"
+  },
+  "customData": {
+    "offerName": "@{decisioning.offerName}",
+    "offerPlacement": "@{decisioning.placementName}",
+    "specialPromotion": "WINTER2025"
+  },
+  "system": {
+    "sandbox": "prod",
+    "dataStreamId": "YOUR_DATASTREAM_ID",
+    "imsOrgId": "@{imsOrgId}"
+  }
+}
+```
+
+**Konfigurationstips för det här exemplet:**
+* Blandning av konstanta värden (`eventSource`, `specialPromotion`, `sandbox`) och variabelparametrar
+* Använder resekontext för spårning och felsökning
+* Inkluderar profildata för personalisering i tredjepartssystemet
+* Lägger till beslutskontext när erbjudanden används
+* Systemmetadata för routning och spårning på organisationsnivå
+
+### Tips för konfiguration av konstanter
+
+**Namn på sandlåda:** Använd en konstant parameter som angetts till ditt miljönamn (t.ex. &quot;prod&quot;, &quot;dev&quot;, &quot;stage&quot;)
+
+**Körningstidsstämpel:** Använd `@{journey.startTime}` eller skapa en variabelparameter som reseansvariga kan mappa till funktionen `#{nowWithDelta()}`
+
+**API-version:** Använd en konstant för API-versionsnummer för att säkerställa konsekvens mellan resor
+
+**Autentiseringstoken:** Ange aldrig autentiseringstoken i nyttolasten - använd autentiseringsavsnittet i den anpassade åtgärdskonfigurationen i stället
+
+>[!CAUTION]
+>
+>Fältnamn i nyttolasten får inte innehålla en punkt `.` eller börja med ett `$`-tecken. Se till att JSON-strukturen följer dessa namnkonventioner.
 
 * [Felsökning av anpassad åtgärd](../action/troubleshoot-custom-action.md) - Lär dig hur du felsöker en anpassad åtgärd
 
