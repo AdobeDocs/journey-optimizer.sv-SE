@@ -10,9 +10,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: e683461c6adbf45cacb30692e23927175685f9fb
+mini-toc-levels: 2
+source-git-commit: 43d3593264ea6d33794914e1b1f9ea45c295c79e
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -20,20 +21,20 @@ ht-degree: 0%
 
 # Skapa utmaningar {#create-challenges}
 
+>[!AVAILABILITY]
+>
+>Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
+
 >[!BEGINSHADEBOX]
 
 **Dokumentation om lojalitetsproblem:**
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
-* [Få åtkomst till och hantera lojalitetsutmaningar](access-loyalty-challenges.md) - Hantering av inventeringar, utmaningar och uppgifter
-* **Skapa utmaningar** ◀ &rbrace;︎ **Du är här** - Bygg och konfigurera utmaningar
+* [Få åtkomst till och hantera utmaningar och uppgifter](access-loyalty-challenges.md) - Inventering, utmaning och uppgiftshantering
+* **Skapa utmaningar** ◀ }︎ **Du är här** - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 
 >[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
 ## Skapa utmaningen {#create-the-challenge}
 
@@ -54,6 +55,8 @@ ht-degree: 0%
    * **[!UICONTROL Sequential]**: Kunder slutför uppgifter i en definierad ordning\
      *Exempel: Inköp → Granska → Dela (måste slutföras i den här sekvensen)*
 
+   När du har valt en utmaningstyp öppnas gränssnittet för att skapa en utmaning med flera konfigurationsflikar. Börja med att konfigurera utmaningsstrukturen.
+
 ## Konfigurera utmaningsstrukturen {#structure}
 
 På fliken **[!UICONTROL Structure]** definierar du hur utmaningen är organiserad: dess egenskaper, schema, uppgifter som ska slutföras och belöningar som ska levereras.
@@ -71,17 +74,21 @@ På fliken **[!UICONTROL Structure]** definierar du hur utmaningen är organiser
 
 ### Schemalägg utmaningen {#schedule}
 
-Konfigurera när utmaningen ska köras genom att välja ikonen **[!UICONTROL Open schedule]**:
+Konfigurera när utmaningen körs:
 
-![](assets/challenge-create-schedule.png)
+1. Välj ikonen **[!UICONTROL Open schedule]**:
 
-* **[!UICONTROL Start date and time]**: Ange när utmaningen blir tillgänglig för kunder.
-* **[!UICONTROL End date and time]**: Ange när utmaningen upphör att gälla och inte längre accepterar nya slutföranden.
-* **[!UICONTROL Time zone]**: Utmaningen använder mottagarens lokala tidszon som standard.
-* **[!UICONTROL Tasks must be completed]**: Välj när kunder kan slutföra uppgifter:
+   ![](assets/challenge-create-schedule.png)
 
-   * **[!UICONTROL Any time during challenge]**: Kunder kan slutföra uppgifter när som helst mellan utmaningens start- och slutdatum.
-   * **[!UICONTROL During specific hours of the day]**: Begränsa aktivitetsslutförandet till specifika dagliga timmar genom att ange **[!UICONTROL Start Time]** och **[!UICONTROL End Time]**.
+1. Konfigurera följande schemaläggningsalternativ:
+
+   * **[!UICONTROL Start date and time]**: Ange när utmaningen blir tillgänglig för kunder.
+   * **[!UICONTROL End date and time]**: Ange när utmaningen upphör att gälla och inte längre accepterar nya slutföranden.
+   * **[!UICONTROL Time zone]**: Utmaningen använder mottagarens lokala tidszon som standard.
+   * **[!UICONTROL Tasks must be completed]**: Välj när kunder kan slutföra uppgifter:
+
+      * **[!UICONTROL Any time during challenge]**: Kunder kan slutföra uppgifter när som helst mellan utmaningens start- och slutdatum.
+      * **[!UICONTROL During specific hours of the day]**: Begränsa aktivitetsslutförandet till specifika dagliga timmar genom att ange **[!UICONTROL Start Time]** och **[!UICONTROL End Time]**.
 
 Utfrågningsschemat har konfigurerats. Lägg sedan till de uppgifter kunderna behöver för att slutföra.
 
@@ -101,10 +108,10 @@ Så här lägger du till uppgifter i en utmaning:
 
    +++Standardutmaningar
 
-   **[!UICONTROL Task completion requirement]** - Välj mellan:
+   I listrutan **[!UICONTROL Task completion requirement]** väljer du mellan:
 
-   * **[!UICONTROL Customer chooses 1 task to complete]**: Kunder kan välja och slutföra vilken uppgift som helst för att få belöningar
-   * **[!UICONTROL Customer completes specific number of tasks]**: Kunderna måste slutföra ett definierat antal uppgifter. Ange önskat nummer - *Exempel: Slutför 3 av 5 uppgifter*
+   * **[!UICONTROL Customer chooses 1 task to complete]** - *Kunder kan välja och slutföra en enstaka uppgift för att få belöningar*
+   * **[!UICONTROL Customer completes a specific number of tasks]** - *Kunder måste slutföra ett definierat antal aktiviteter. Ange det antal uppgifter som krävs för att slutföra.*
 
    +++
 
@@ -112,26 +119,24 @@ Så här lägger du till uppgifter i en utmaning:
 
    * **[!UICONTROL Streak type]**:
 
-      * **Flera dagar i följd**: Kunderna måste slutföra aktiviteten på dagar i följd utan avbrott - *Exempel: Köp på måndag, tisdag, onsdag - om en dag saknas bryts flödet*
+      * **Flera dagar i följd**: Kunderna måste slutföra uppgiften på dagar i följd utan avbrott. *Exempel: Köp på måndag, tisdag, onsdag - om en dag saknas bryts flödet.*
 
-      * **Icke sammanhängande**: Kunder kan slutföra uppgiften med luckor mellan slutföranden - *Exempel: Slutför 7 köp under 30 dagar, med tillåtna brytningar*
+      * **Ej efterföljande**: Kunder kan slutföra uppgiften med luckor mellan slutföranden. *Exempel: Slutför 7 köp under 30 dagar med tillåtna brytningar.*
 
-   * **[!UICONTROL Streak length]**: Ange hur många gånger aktiviteten måste slutföras - *Exempel: Ange till 7 för en&quot;7-dagars inköpsström&quot;*
+   * **[!UICONTROL Streak length]**: Ange hur många gånger aktiviteten måste slutföras. *Exempel: Ange till 7 för en&quot;7-dagars inköpsström&quot;.*
 
    +++
 
    +++Sekventa utmaningar
 
-   **[!UICONTROL Task completion requirement]** - Välj mellan:
+   I listrutan **[!UICONTROL Task completion requirement]** väljer du mellan:
 
-   * **[!UICONTROL Customer chooses 1 task to complete]**: Kunder kan välja och slutföra vilken uppgift som helst för att få belöningar
-   * **[!UICONTROL Customer completes specific number of tasks]**: Kunderna måste slutföra ett definierat antal uppgifter i exakt den ordning som du anger. Om en uppgift saknas eller hoppas över bryts sekvensen. Ange önskat nummer (t.ex. fyll i 3 av 5 uppgifter)
-
-   *Exempel: Aktivitet 1 (Inköp) → Aktivitet 2 (Granskning) → Aktivitet 3 (Dela) - måste slutföras i den här ordningen*
+   * **[!UICONTROL Customer chooses 1 task to complete]** - *Kunder kan välja och slutföra en enstaka uppgift för att få belöningar*
+   * **[!UICONTROL Customer completes a specific number of tasks]** - *Kunder måste slutföra ett definierat antal uppgifter i exakt den ordning som du anger. Om en uppgift saknas eller hoppas över bryts sekvensen. Ange det antal uppgifter som krävs för att slutföra*
 
    +++
 
-1. Som standard kan kunder utföra uppgifter i flera transaktioner med standardutmaningar och sekventiella utmaningar. Om du vill att alla uppgifter ska slutföras i en enda transaktion markerar du ikonen ![](assets/do-not-localize/settings-icon.svg) **[!UICONTROL Settings]** och aktiverar alternativet nedan.
+1. Som standard kan kunder utföra uppgifter i flera transaktioner med standardutmaningar och sekventiella utmaningar. Om du vill att alla uppgifter ska slutföras i en enda transaktion väljer du ikonen **[!UICONTROL Settings]** och aktiverar alternativet nedan.
 
    ![](assets/challenge-create-single-transaction.png)
 
@@ -139,7 +144,9 @@ När du har lagt till uppgifter i din utmaning kan du konfigurera belöningar so
 
 ### Konfigurera belöningar {#rewards}
 
-Belöningar är de förmånspoäng eller fördelar kunderna får för att klara av utmaningar. Konfigurera när och hur belöningar levereras.
+Belöningar är de förmånspoäng eller fördelar kunderna får för att klara av utmaningar.
+
+Så här konfigurerar du när och hur belöningar levereras:
 
 1. I listrutan **[!UICONTROL Reward delivery]** väljer du när du vill leverera belöningar:
 
@@ -157,9 +164,9 @@ Belöningar är de förmånspoäng eller fördelar kunderna får för att klara 
 
    Ange det totala belöningsbeloppet som ska ges när kunderna slutför hela utmaningen.
 
-   ![](assets/challenge-create-reward-total.png)
+   *I exemplet nedan tilldelas kunderna 100 poäng när de slutför utmaningen.*
 
-   **Exempel**: Kunder tilldelas 100 poäng när de slutför utmaningen.
+   ![](assets/challenge-create-reward-total.png)
 
    +++
 
@@ -169,13 +176,9 @@ Belöningar är de förmånspoäng eller fördelar kunderna får för att klara 
 
    För varje uppgift där du vill ge en belöning aktiverar du belöningsalternativet och anger hur många poäng som ska belönas när kunderna slutför den specifika uppgiften. Du kan välja att belöna endast vissa slutförda uppgifter. Om du t.ex. har 10 uppgifter kanske du bara belönar uppgifter 1, 5 och 10.
 
+   *I exemplet nedan tilldelas kunderna 10 poäng när de slutför den första aktiviteten och sedan 50 ytterligare poäng när de har slutfört den andra aktiviteten.*
+
    ![](assets/challenge-create-reward-milestones.png)
-
-   **Exempel**: Kunderna får 10 poäng när de slutför den första uppgiften, och sedan 50 ytterligare poäng när den andra uppgiften är slutförd, vilket ger totalt 60 poäng.
-
-   >[!TIP]
-   >
-   >Överväg att öka belöningsvärdet för senare uppgifter för att behålla kundengagemanget under hela utmaningen.
 
    +++
 
@@ -207,7 +210,7 @@ Skapa flerkanalsmeddelanden för att engagera kunderna i viktiga stadier av utma
    * **Pågående** meddelande: Håll kunderna engagerade med påminnelser och förloppsuppdateringar
    * **Slutförd** meddelande: Fira lyckade och bekräfta belöningsallokering
 
-1. För varje fas väljer du **[!UICONTROL Add [stage] message]** (där [stage] representerar Starta, Pågår eller Slutfört) för att skapa ett meddelande för den scenen.
+1. Lägg till en meddelandeknapp för varje fas för att skapa ett meddelande för den scenen.
 
 1. Välj önskad kanal: **[!UICONTROL In-app]**, **[!UICONTROL Email]** eller **[!UICONTROL Push notification]** och välj den associerade kanalkonfigurationen.
 
@@ -215,11 +218,7 @@ Skapa flerkanalsmeddelanden för att engagera kunderna i viktiga stadier av utma
 
    ![](assets/challenge-create-messaging.png)
 
-Lär dig hur du skapar meddelanden för specifika kanaler:
-
-* [Meddelanden i appen](../in-app/get-started-in-app.md)
-* [E-postmeddelanden](../email/get-started-email.md)
-* [Push-meddelanden](../push/get-started-push.md)
+Lär dig hur du skapar meddelanden för specifika kanaler i följande avsnitt: [Meddelanden i appen](../in-app/get-started-in-app.md) - [E-postmeddelanden](../email/get-started-email.md) - [Push-meddelanden](../push/get-started-push.md)
 
 När du är klar med meddelandekonfigurationen definierar du vilka kunder som är berättigade att delta i utmaningen.
 
@@ -227,29 +226,31 @@ När du är klar med meddelandekonfigurationen definierar du vilka kunder som ä
 
 Definiera vilka kunder som kan delta i er lojalitetsutmaning.
 
-1. Navigera till fliken **[!UICONTROL Audience]** och markera knappen **[!UICONTROL Select audience]**.
+1. Navigera till fliken **[!UICONTROL Audience]** och klicka på knappen **[!UICONTROL Select audience]**.
 
    ![](assets/challenge-create-audience.png)
 
-1. Välj målgrupp i listan över tillgängliga Adobe Experience Platform-målgrupper. [Lär dig arbeta med målgrupper](../audience/about-audiences.md).
-
-1. Välj **[!UICONTROL Add audience]**.
+1. I dialogrutan för målgruppsval väljer du målgrupp i listan över tillgängliga Adobe Experience Platform-målgrupper och väljer **[!UICONTROL Add audience]**. [Lär dig arbeta med målgrupper](../audience/about-audiences.md).
 
 Utmaningen är nu helt konfigurerad med sin struktur, sitt innehåll, sina meddelanden och sin målgrupp. Det sista steget är att generera och publicera resan.
 
 ## Generera och publicera resan {#review-and-publish}
 
-Generera den resa som kommer att samordna er problemleverans och kundinteraktioner. Välj **[!UICONTROL Generate Journey]** om du vill göra det.
+När du har konfigurerat alla komponenter för utmaning kan du skapa den resa som kommer att styra hanteringen av dina utmaningar:
 
-![](assets/challenge-create-generate-journey.png)
+1. Granska konfigurationen för att se till att alla obligatoriska fält är ifyllda.
 
-Journey Optimizer skapar automatiskt en [resa](../building-journeys/journey-gs.md) med statusen Utkast. Den automatiskt genererade resan visas i kundresearkivet med namnformatet Utmaning: [Utmaningsnamn].
+1. Välj **[!UICONTROL Save]** om du vill spara din provkonfiguration och välj **[!UICONTROL Generate Journey]**.
 
-![](assets/challenge-create-journey.png)
+   ![](assets/challenge-create-generate-journey.png)
 
-Granska konfigurationen av resan om det behövs och publicera sedan resan för att göra den tillgänglig för kunderna. [Lär dig publicera en resa](../building-journeys/publish-journey.md).
+1. Journey Optimizer skapar automatiskt en resa med statusen&quot;Utkast&quot;. Den automatiskt genererade resan visas i kundresans lager med namnformatet *&quot;Resa: [Utmaningsnamn]&quot;*. [Läs mer om reseinventeringen](../building-journeys/journey-ui.md).
 
-Resan startar automatiskt på det angivna startdatumet för utmaningen och levererar innehåll och meddelanden enligt din konfiguration.
+   Navigera till lagret **[!UICONTROL Journeys]** för att granska den automatiskt genererade resekonfigurationen om det behövs.
+
+   ![](assets/challenge-create-journey.png)
+
+1. Publicera resan när den är klar för att göra den tillgänglig för kunderna. Resan startar automatiskt på det angivna startdatumet för utmaningen och levererar innehåll och meddelanden enligt din konfiguration. [Lär dig publicera en resa](../building-journeys/publish-journey.md).
 
 >[!NOTE]
 >

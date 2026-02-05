@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Få tillgång till och hantera lojalitetsutmaningar
+title: Få tillgång till och hantera utmaningar och uppgifter
 description: Lär dig hur du får tillgång till, hanterar och organiserar lojalitetsutmaningar och uppgifter i Adobe Journey Optimizer.
 feature: Journeys
 topic: Content Management
@@ -10,38 +10,41 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
-source-git-commit: f41c1ed8a2d9e74b9d8fe97e0bf9e565d326aec6
+mini-toc-levels: 2
+source-git-commit: 43d3593264ea6d33794914e1b1f9ea45c295c79e
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
 
 
-# Få tillgång till och hantera lojalitetsutmaningar {#access-loyalty-challenges}
+# Få tillgång till och hantera utmaningar och uppgifter {#access-loyalty-challenges}
+
+>[!AVAILABILITY]
+>
+>Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
 >[!BEGINSHADEBOX]
 
 **Dokumentation om lojalitetsproblem:**
 
 * [Kom igång med lojalitetsutmaningar](get-started.md) - Översikt, arbetsflöde, förutsättningar
-* **Få åtkomst till lojalitetsutmaningar** {2 }︎ ◀Du är här **- Inventering, utmaningar och uppgiftshantering**
+* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här **- Inventering, utmaning och uppgiftshantering**
 * [Skapa utmaningar](create-challenges.md) - Bygg och konfigurera utmaningar
 * [Skapa aktiviteter](create-tasks.md) - Definiera utmaningsuppgifter
 
 >[!ENDSHADEBOX]
 
->[!AVAILABILITY]
->Den här funktionen är för närvarande i **privat beta** och är kanske inte tillgänglig i din miljö. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
+## Få tillgång till och hantera utmaningar och uppgifter
 
-## Tillgång till lojala utmaningar
+Om du vill få åtkomst till lojalitetsutmaningar går du till Journey Optimizer och väljer **[!UICONTROL Loyalty Challenge (Beta)]** under avsnittet **[!UICONTROL Journey management]**. Gränssnittet Lojalitetsutmaningar är en central plats där du kan visa, hantera och organisera alla utmaningar och uppgifter.
 
-Om du vill få åtkomst till lojalitetsutmaningar går du till Journey Optimizer och väljer **[!UICONTROL Loyalty Challenge (Beta)]** under avsnittet **[!UICONTROL Journey management]**.
+Gränssnittet ger tillgång till två huvudsakliga inventeringar:
 
-Gränssnittet Lojalitetsutmaningar är en central plats där du kan visa, hantera och organisera alla utmaningar och uppgifter. Du har tillgång till två huvudsakliga inventeringar:
+* **Utmaningar**: Visa och hantera alla lojalitetsproblem, övervaka deras status och utföra snabba åtgärder som att visa, redigera, duplicera eller ta bort utmaningar
+* **Uppgifter**: Bläddra bland återanvändbara uppgifter som kan användas i flera utmaningar och hantera uppgiftsdefinitioner oberoende av varandra
 
-* **Utmaningslager**: Visa och hantera alla lojalitetsutmaningar, övervaka deras status och utföra snabba åtgärder
-* **Aktivitetslager**: Bläddra bland återanvändbara uppgifter som kan användas i flera utmaningar
 
 ## Utmaningslager {#challenges-tab}
 
@@ -51,7 +54,6 @@ Fliken **[!UICONTROL Challenges]** visar alla utmaningar sorterade efter senaste
 
 Visad nyckelinformation:
 
-* **[!UICONTROL Challenge]**: Utmaningsnamn
 * **[!UICONTROL State]**: Utfrågans aktuella tillstånd (utkast eller publicerat)
 * **[!UICONTROL Tasks]**: Antal konfigurerade uppgifter i utmaningen
 * **[!UICONTROL Journey]**: Länk till den automatiskt genererade resan som är associerad med utmaningen
@@ -65,12 +67,7 @@ På fliken Utmaningar kan du utföra åtgärder på utmaningar:
 * **Ta bort en utmaning**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Delete]**
 * **Redigera en utmaning**: Välj utmaningsnamnet för att öppna dess informationssida och redigera den.
 
-  När du öppnar en publicerad utmaning för redigering måste du först återställa den till utkaststatus:
-
-   * Alla anpassningar som gjorts direkt i den automatiskt genererade resan går förlorade
-   * Utmaningen återgår till utkaststatus
-   * När du har gjort ändringarna måste du spara och publicera utmaningen igen
-   * Du måste publicera den associerade resan på nytt för att göra den uppdaterade utmaningen tillgänglig för kunderna
+  När du öppnar en publicerad utmaning för redigering måste du först återställa den till statusen Utkast. Eventuella anpassningar som gjorts direkt i den automatiskt genererade resan går förlorade. När du har gjort ändringarna sparar och publicerar du utmaningen igen och publicerar den tillhörande resan igen.
 
   >[!IMPORTANT]
   >
@@ -84,7 +81,6 @@ Fliken **[!UICONTROL Tasks]** visar alla återanvändbara uppgifter som kan anv�
 
 Visad nyckelinformation:
 
-* **[!UICONTROL Task Name]**: Namnet som du tilldelade uppgiften
 * **[!UICONTROL Description]**: En kort beskrivning av vad aktiviteten kräver
 * **[!UICONTROL Task Activity]**: Typ av aktivitet (Inköp, Utgift)
 * **[!UICONTROL SKU]**: Godtagbara och/eller undantagna objekt
@@ -92,6 +88,6 @@ Visad nyckelinformation:
 
 På fliken Åtgärder kan du utföra åtgärder för uppgifter:
 
-* **Visa/redigera uppgift**: Markera aktivitetsnamnet om du vill visa fullständig konfiguration och redigera uppgiften
+* **Visa/redigera en uppgift**: Markera aktivitetsnamnet om du vill visa den fullständiga konfigurationen och redigera uppgiften
 * **Duplicera en uppgift**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Duplicate]**
 * **Ta bort en uppgift**: Markera ikonen ![](assets/do-not-localize/Smock_More_18_N.svg) och välj **[!UICONTROL Delete]**
