@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
-source-git-commit: 342df0950622de1c4c246bf624d05843671e199f
+source-git-commit: 6c6a1b31c81000877cea2af8bca0377264ec4833
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 **Dokumentation om lojalitetsproblem:**
 
-* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här ****
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
@@ -65,7 +65,7 @@ Ni kan skapa tre typer av utmaningsupplevelser:
 
 När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
 
-1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
+1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
 
 1. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential) och datumintervall.
 
@@ -77,7 +77,7 @@ När du skapar och startar en lojalitetsutmaning följer du det här arbetsflöd
 
 1. **Välj målgrupp** - Definiera vilka kunder som kan delta i din utmaning genom att välja en målgrupp från Adobe Experience Platform.
 
-1. **Publiceringsresa** - Journey Optimizer genererar automatiskt en resa för din utmaning. Navigera till lagret Resor och publicera den automatiskt genererade resan för att göra utmaningen tillgänglig för kunderna.
+1. **Starta utmaningen** - Publicera utmaningen och generera sedan en resa. Journey Optimizer skapar automatiskt en resa som klarar dina utmaningar. Publicera den autogenererade resan för att göra utmaningen tillgänglig för kunderna.
 
 Detaljerade stegvisa instruktioner finns i [Skapa utmaningar](create-challenges.md).
 
@@ -89,19 +89,21 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
 Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källanslutningar för att spåra kundens framsteg och slutförande av uppgifter.
 
-Konfigurera en källkoppling som stöds innan du startar programmet. Kapillärkopplingen är tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty).
+Konfigurera en källkoppling som stöds innan du startar programmet. Kapillärkopplingen är tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
 
 +++
 
-<!--+++Required permissions
++++Nödvändiga behörigheter
 
-To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer. Required permissions include:
+Om du vill använda lojalitetsutmaningar måste du ha rätt behörigheter i Journey Optimizer. Nödvändiga behörigheter är:
 
-TBD
+* TBD
+* TBD
+* TBD
 
-Contact your administrator if you cannot access the feature or need additional permissions.
+Kontakta administratören om du inte kan komma åt funktionen eller behöver ytterligare behörigheter.
 
-+++-->
++++
 
 +++Målgrupper
 
