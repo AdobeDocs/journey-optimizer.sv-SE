@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
-source-git-commit: 6c6a1b31c81000877cea2af8bca0377264ec4833
+source-git-commit: be28458ac4eed51bf3de91a56d3de27cc77113d7
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 **Dokumentation om lojalitetsproblem:**
 
-* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här ****
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
@@ -65,7 +65,7 @@ Ni kan skapa tre typer av utmaningsupplevelser:
 
 När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
 
-1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
+1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
 
 1. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential) och datumintervall.
 
@@ -89,7 +89,7 @@ Innan du använder lojalitetsutmaningar måste du se till att du har:
 
 Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källanslutningar för att spåra kundens framsteg och slutförande av uppgifter.
 
-Konfigurera en källkoppling som stöds innan du startar programmet. Kapillärkopplingen är tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty).
+Konfigurera en källkoppling som stöds innan du startar programmet. Kapillärkopplingen är tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
 
 +++
 
@@ -117,7 +117,7 @@ Se till att målgruppen finns i Adobe Experience Platform innan du skapar en utm
 <tr style="border: 0;">
   <td>
     <a href="access-loyalty-challenges.md">
-    <!--<img alt="Access" src="../assets/do-not-localize/learn-more-button.svg">-->
+      <img alt="Skapa" src="assets/do-not-localize/icon-access.png">
     </a>
     <div>
     <a href="access-loyalty-challenges.md"><strong>Få åtkomst till och hantera utmaningar och uppgifter</strong></a>
@@ -128,7 +128,7 @@ Se till att målgruppen finns i Adobe Experience Platform innan du skapar en utm
   </td>
   <td>
     <a href="create-challenges.md">
-      <!--<img alt="Create" src="../assets/do-not-localize/start-button.svg">-->
+      <img alt="Skapa" src="assets/do-not-localize/icon-challenge.png">
     </a>
     <div>
     <a href="create-challenges.md"><strong>Skapa utmaningar</strong></a>
@@ -139,7 +139,7 @@ Se till att målgruppen finns i Adobe Experience Platform innan du skapar en utm
   </td>
   <td>
     <a href="create-tasks.md">
-    <!--<img alt="Tasks" src="../assets/do-not-localize/start-button.svg">-->
+    &lt;<img alt="Uppgifter" src="assets/do-not-localize/icon-task.png">
     </a>
     <div>
     <a href="create-tasks.md"><strong>Skapa aktiviteter</strong></a>
