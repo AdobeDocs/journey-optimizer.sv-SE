@@ -7,9 +7,10 @@ role: User
 level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
-source-git-commit: 2dfc9c2db5af1b9b74f7405a68e85563f633a54f
+exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
+source-git-commit: be4c0453630388d898d53feeb5f9dcfe57ad5934
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -20,9 +21,9 @@ När du har lagt till en beslutsprincip i innehållet kan du använda attribut f
 
 >[!CAUTION]
 >
->Beslutsprinciper är tillgängliga för alla kunder för kanalerna **Kodbaserad upplevelse**, **SMS** och **push-meddelanden**.
+>Beslutsprinciper är tillgängliga för alla kunder för kanalerna **Kodbaserad upplevelse**, **SMS** och **Push-meddelanden**.
 >
->Beslut om e-postkanalen finns i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
+>Beslut för kanalen **Email** finns endast i Begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
 ## Infoga koden för beslutspolicy {#insert}
 
