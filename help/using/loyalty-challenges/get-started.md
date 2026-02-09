@@ -11,13 +11,13 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
-source-git-commit: 7aeb36b88af415d59d9e7275ec3605db1a243b07
+exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
+source-git-commit: 17d7cf7ae18ff987b7a9c9bebdec44b354ed11da
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
-
 
 # Kom igång med lojalitetsutmaningar {#get-started-loyalty-challenges}
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 **Dokumentation om lojalitetsproblem:**
 
-* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här ****
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
@@ -65,8 +65,6 @@ Ni kan skapa tre typer av utmaningsupplevelser:
 
 När du skapar och startar en lojalitetsutmaning följer du det här arbetsflödet:
 
-1. **Ställ in datainmatning** - Konfigurera Experience Platform-källanslutningar (t.ex. [Capillary-kopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty)) för att importera lojalitetshändelsedata som spårar kundåtgärder och kundframsteg. Dessa data gör det svårt att spåra och slutföra uppgifter.
-
 1. **Skapa en utmaning** - Definiera grundläggande utmaningsegenskaper, inklusive namn, typ (Standard, Streak eller Sequential) och datumintervall.
 
 1. **Lägg till aktiviteter** - Definiera de specifika åtgärder som kunder måste utföra, inklusive aktivitetstyper (inköp, utgifter), kvantiteter, produktfilter och belöningar.
@@ -85,21 +83,28 @@ Detaljerade stegvisa instruktioner finns i [Skapa utmaningar](create-challenges.
 
 Innan du använder lojalitetsutmaningar måste du se till att du har:
 
-+++Inställning av datainmatning
-
-Lojalitetsutmaningar bygger på data som hämtas via Experience Platform källanslutningar för att spåra kundens framsteg och slutförande av uppgifter.
-
-Konfigurera en källkoppling som stöds innan du startar programmet. Kapillärkopplingen är tillgänglig. Ytterligare anslutningar planeras för framtida releaser. [Läs mer om lojalitetskällanslutningar](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#loyalty).
-
-+++
-
 +++Nödvändiga behörigheter
 
-Om du vill använda lojalitetsutmaningar måste du ha rätt behörigheter i Journey Optimizer. Nödvändiga behörigheter är:
+Om du vill använda lojalitetsutmaningar måste du ha rätt behörigheter i Journey Optimizer och Adobe Experience Platform.
 
-* TBD
-* TBD
-* TBD
+**Journey Optimizer:**
+
+* `journeys.read`
+* `journeys.write`
+* `journeys.delete`
+* `journeys.publish`
+* `journeys_events.read`
+* `journeys_events.write`
+* `journeys_events.delete`
+* `journeys_report.read`
+* `messages.read`
+* `messages_report.read`
+
+**Adobe Experience Platform:**
+
+* `segments.read`
+* `profiles.read`
+* `identity_namespace.read`
 
 Kontakta administratören om du inte kan komma åt funktionen eller behöver ytterligare behörigheter.
 
