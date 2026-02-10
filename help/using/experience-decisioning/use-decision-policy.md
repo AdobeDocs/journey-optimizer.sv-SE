@@ -8,7 +8,7 @@ level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
 exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
-source-git-commit: be4c0453630388d898d53feeb5f9dcfe57ad5934
+source-git-commit: 71a5b2163500b26ef3ea61e55d18cad539bfeb7f
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%
@@ -39,7 +39,7 @@ När du har lagt till en beslutsprincip i innehållet kan du använda attribut f
 
 >[!NOTE]
 >
->Om din beslutspolicy innehåller beslutsposter, inklusive fragment, kan du utnyttja dessa fragment i beslutspolicykoden för kodbaserade upplevelser. [Lär dig använda fragment](../experience-decisioning/fragments-decision-policies.md)
+>Om din beslutspolicy innehåller beslutsposter, inklusive fragment, kan du utnyttja dessa fragment i beslutspolicykoden för kodbaserade upplevelser. [Lär dig använda fragment](fragments-decision-policies.md)
 
 >[!TAB E-post]
 
@@ -87,7 +87,7 @@ Koden för beslutspolicyn läggs till. Du kan nu använda attribut från de retu
 
 ## Anpassa med attribut för beslutsobjekt {#attributes}
 
-När du har lagt till koden för en beslutspolicy i ditt innehåll blir alla attribut från de returnerade beslutsposterna tillgängliga för personalisering. [Lär dig hur du arbetar med personalisering](../personalization/personalize.md).
+När du har lagt till koden för en beslutsprincip i ditt innehåll blir alla attribut från de returnerade beslutsobjekten tillgängliga för personalisering. [Lär dig hur du arbetar med personalisering](../personalization/personalize.md).
 
 Attribut lagras i [katalogschemat](catalogs.md) för erbjudanden. De visas i följande mappar från personaliseringsredigeraren:
 * **Anpassade attribut**: `_\<imsOrg\>`-mapp
