@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: 75dafecd-805d-4aa2-86c6-99e6da4d378b
-source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
+source-git-commit: 692b539f2c7623a14192558c3eba55d90c54f22d
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Om ingen godkännandeprincip gäller för det markerade objektet när användare
    * **Resor**: Om det finns en eller flera aktiva godkännandeprinciper för reseobjektet i en sandlåda visas knappen **[!UICONTROL Request Approval]** för alla resor.
 Om ingen godkännandeprincip gäller för det markerade objektet när användaren klickar på knappen **[!UICONTROL Request Approval]**, kommer arbetsflödet för automatiskt godkännande att aktiveras.
 
-## Skicka godkännandebegäran
+## Skicka begäran om godkännande
 
 Klicka på knappen **[!UICONTROL Request Approval]** när du har skapat kampanjen eller resan. Detta kontrollerar om det finns en aktiv godkännandeprincip i sandlådan som gäller kampanjen eller resan.
 
@@ -40,11 +40,11 @@ Klicka på knappen **[!UICONTROL Request Approval]** när du har skapat kampanje
 
 Fönstret **[!UICONTROL Request approval]** öppnas. Skriv ett meddelande till godkännarna om det behövs och klicka på **[!UICONTROL Send]** för att skicka din begäran.
 
-![](assets/approval-request.png)
+![Dialogrutan Godkännandebegäran](assets/approval-request.png)
 
 När kampanjen eller resan är **[!UICONTROL In review]** tillstånd kan du välja att avbryta godkännandebegäran. Genom att klicka på knappen **[!UICONTROL Cancel request]** återgår kampanjen eller resan till utkastsfasen och ett meddelande skickas till granskarna om att begäran har avbrutits. Sedan kan ni göra nödvändiga ändringar och skicka in kampanjen eller resan på nytt för godkännande.
 
-![](assets/approval-cancel.png)
+![Avbryt begäran om godkännande](assets/approval-cancel.png)
 
 ## Hantera godkännandebegäranden
 
@@ -52,6 +52,6 @@ När godkännandebegäran har skickats till godkännarna kan de granska den och 
 
 Om godkännarna begär ändringar meddelas du via ett e-postmeddelande och en Journey Optimizer-avisering, som är tillgänglig när du klickar på klockikonen till höger på skärmen, på fliken **[!UICONTROL Requests]**.
 
-![](assets/changes-requested.png)
+![Ändringarna har begärt meddelande](assets/changes-requested.png)
 
 Om du vill gå igenom ändringsbegäran öppnar du den i e-postmeddelandet eller aviseringen för att få åtkomst till resan eller kampanjen och göra de begärda ändringarna. När din resa/kampanj är klar att granskas igen skickar du en ny godkännandebegäran med knappen **[!UICONTROL Request approval]**.

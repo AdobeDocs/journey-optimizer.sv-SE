@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Adobe Campaign v7/v8-åtgärder
-description: Läs om åtgärder i Adobe Campaign v7/v8
+title: '[!DNL Adobe Campaign] v7/v8-åtgärder'
+description: Läs mer om  [!DNL Adobe Campaign] v7/v8-åtgärder
 feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: User
@@ -10,21 +10,21 @@ level: Intermediate
 keywords: resa, integrering, kampanj, v7, v8
 exl-id: 3da712e7-0e08-4585-8ca4-b6ff79df0b68
 version: Journey Orchestration
-source-git-commit: a068d3a4005d8f2247755f56ffb70665dc4c957f
+source-git-commit: 692b539f2c7623a14192558c3eba55d90c54f22d
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
 
-# Adobe Campaign v7/v8-åtgärder {#using_campaign_v7-v8}
+# [!DNL Adobe Campaign] v7/v8-åtgärder {#using_campaign_v7-v8}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_acc"
 >title="Anpassade åtgärder"
->abstract="Det finns en integrering om du har Adobe Campaign v7 eller v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner."
+>abstract="En integrering är tillgänglig om du har [!DNL Adobe Campaign] v7 eller v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med hjälp av funktionerna för transaktionsmeddelanden i [!DNL Adobe Campaign]."
 
-Det finns en integrering om du har Adobe Campaign v7 eller v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med Adobe Campaign Transactional Messaging-funktioner.
+En integrering är tillgänglig om du har [!DNL Adobe Campaign] v7 eller v8. Det gör att du kan skicka e-post, push-meddelanden och SMS med hjälp av funktionerna för transaktionsmeddelanden i [!DNL Adobe Campaign].
 
 Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av Adobe vid etableringstidpunkten. Kontakta Adobe.
 
@@ -32,7 +32,7 @@ Anslutningen mellan Journey Optimizer- och Campaign-instanserna konfigureras av 
 
 **Förhandskrav**
 
-* Din Adobe Campaign v7/v8-instans har etablerats och är ansluten till Journey Optimizer av Adobe.
+* Din [!DNL Adobe Campaign] v7/v8-instans har etablerats och är ansluten till Journey Optimizer av Adobe.
 * Du har tillgång till transaktionsmeddelanden för Campaign och de behörigheter som krävs.
 
 För att detta ska fungera måste du konfigurera en dedikerad åtgärd. Se det här [avsnittet](../action/acc-action.md).
@@ -48,4 +48,4 @@ Ett slutanvändarfall visas i det här [avsnittet](../building-journeys/ajo-ac.m
 >* Kampanjåtgärder v7/v8 kan användas tillsammans med åtgärder för inbyggda kanaler under samma resa. Detta gäller inte Campaign Standard åtgärder. Se [Garantier för kampanjaktiviteter](../start/guardrails.md#ac-g).
 >* Kampanjåtgärder v7/v8 kan inte användas med aktiviteter som hör till Läs målgrupp eller Audience Qualification. Se Läs skyddsutkast för målgrupps- och målgruppskvalitet på sidan Guardrails (GuarDRAils).
 
-![Åtgärdskonfiguration och integreringsinställningar för Adobe Campaign v7/v8](assets/accintegration2.png)
+![[!DNL Adobe Campaign] v7/v8-åtgärdskonfiguration och integreringsinställningar ](assets/accintegration2.png)

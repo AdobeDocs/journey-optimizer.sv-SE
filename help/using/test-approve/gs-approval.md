@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: 92d1439e-5cac-4e7d-85f8-ebf432e9ef7c
-source-git-commit: efb943e5a6f27becc6e8b6128b776e46d6141823
+source-git-commit: 692b539f2c7623a14192558c3eba55d90c54f22d
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Kom igång med godkännandepolicyer {#gs}
 
-Med Journey Optimizer kan ni skapa en godkännandeprocess som gör det möjligt för marknadsföringsteamen att se till att kampanjer och resor granskas och signeras av lämpliga intressenter innan de publiceras.
+Med [!DNL Journey Optimizer] kan du konfigurera en godkännandeprocess som gör det möjligt för marknadsföringsteamen att se till att kampanjer och resor granskas och signeras av lämpliga intressenter innan de publiceras.
 
 Godkännandeprofiler inför ett strukturerat arbetsflöde direkt i användargränssnittet, vilket eliminerar behovet av externa medier som e-post eller uppgiftshanteringsverktyg och säkerställer att alla godkännanden hanteras och spåras centralt.
 
@@ -26,7 +26,7 @@ Dessutom ger den här funktionen bättre kontroll över publiceringen av era res
 
 Innan du startar kontrollerar du att behörigheterna nedan har konfigurerats.
 
-För att få åtkomst till godkända och publicerade resor och kampanjer måste användarna beviljas behörigheterna **Godkänn och publicera kampanjer** och **Godkänn och publicera resor**. [Läs mer](../administration/permissions.md)
+För att kunna godkänna och publicera resor och kampanjer måste användare beviljas behörigheterna **Godkänn och publicera kampanjer** och **Godkänn och publicera resor**. [Läs mer](../administration/permissions.md)
 
 +++  Lär dig hur du tilldelar godkännanderelaterade behörigheter
 
@@ -36,11 +36,11 @@ För att få åtkomst till godkända och publicerade resor och kampanjer måste 
 
 1. Lägg till resursen **Kampanjer** och välj sedan **Godkänn och publicera kampanjer** i listrutan.
 
-   ![](assets/permissions_approval.png){zoomable="yes"}
+   ![Tilldela behörighet för att godkänna och publicera kampanjer](assets/permissions_approval.png){zoomable="yes"}
 
 1. Lägg till resursen **Resurser** och välj sedan **Godkänn och publicera resor** i listrutan.
 
-   ![](assets/permissions_approval_2.png){zoomable="yes"}
+   ![Tilldela behörighet för att godkänna och publicera resor](assets/permissions_approval_2.png){zoomable="yes"}
 
 1. Klicka på **Spara** om du vill använda ändringarna.
 
@@ -50,7 +50,7 @@ Alla användare som redan har tilldelats den här rollen får sina behörigheter
 
 1. Ange användarens namn, e-postadress eller välj i listan och klicka sedan på **Spara**.
 
-1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. Om användaren inte har skapats tidigare, se [den här dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt instansen.
 
@@ -60,11 +60,11 @@ Användaren får ett e-postmeddelande med instruktioner om hur du kommer åt ins
 
 Den globala godkännandeprocessen är följande:
 
-![](assets/approval-process.png){zoomable="yes"}
+![Processflöde för godkännande](assets/approval-process.png){zoomable="yes"}
 
 1. **Inställningar för godkännandeprofiler**
 
-   En administratörsanvändare skapar en policy för godkännande, som definierar villkoren som ska gälla för resor eller kampanjer. Du kan till exempel skapa en godkännandeprincip som kräver att alla schemalagda kampanjer som skapas av en viss användare ska godkännas innan de aktiveras. [Lär dig hur du skapar godkännandeprofiler](approval-policies.md)
+   En administratörsanvändare skapar en policy för godkännande, som definierar villkoren för att policyn ska gälla för resor eller kampanjer. Du kan till exempel skapa en godkännandeprincip som kräver att alla schemalagda kampanjer som skapats av en viss användare ska godkännas före aktiveringen. [Lär dig hur du skapar godkännandeprofiler](approval-policies.md)
 
 1. **Kampanj/resa skickas för godkännande**
 
@@ -82,7 +82,7 @@ Den globala godkännandeprocessen är följande:
 
 Du kan övervaka alla begäranden om godkännande och ändring som har skickats in för en viss resa eller kampanj. Det gör du genom att klicka på ikonen **[!UICONTROL Show Audit Trail]** som finns i det övre högra avsnittet på arbetsytan för resan eller på granskningsskärmen för kampanjer.
 
-![](assets/monitor-requests.png)
+![Granskningsspårning begärs för godkännande](assets/monitor-requests.png)
 
 ## Ytterligare resurser
 

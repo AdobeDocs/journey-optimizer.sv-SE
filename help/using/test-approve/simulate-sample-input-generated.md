@@ -11,9 +11,9 @@ badge: label="Privat beta" type="Informative"
 hidefromtoc: true
 hide: true
 exl-id: 9b7fbd43-3d90-458b-8a2f-0bf0ac5437c3
-source-git-commit: 45ebae048a748429a1918326526f3756a3e93c4c
+source-git-commit: 692b539f2c7623a14192558c3eba55d90c54f22d
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '273'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,11 @@ Följ de här stegen för att generera variationer för ditt innehåll och förh
 
 1. Öppna ditt innehåll och välj **[!UICONTROL Simulate content]** / **[!UICONTROL Simulate content variations]**.
 
-   ![](assets/simulate-sample.png)
+   ![Alternativet Simulera innehållsvariationer](assets/simulate-sample.png)
 
 2. Klicka på knappen **[!UICONTROL Generate]**.
 
-   ![](assets/simulate-generate-variant.png)
+   ![Knappen Generera varianter](assets/simulate-generate-variant.png)
 
 3. [!DNL Journey Optimizer] genererar automatiskt varianter baserat på identifierade attribut.
 

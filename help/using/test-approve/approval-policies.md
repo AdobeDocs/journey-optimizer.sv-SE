@@ -5,9 +5,9 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
-source-git-commit: 4ce83c9cd3f70462c977db6e872a7ac51ea0e006
+source-git-commit: 692b539f2c7623a14192558c3eba55d90c54f22d
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '664'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home)
+>Om du vill skapa godkännandeprinciper måste du ha system- eller produktadministratörsbehörighet i Adobe Experience Platform. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 
 Med godkännandeprinciper kan administratörer upprätta en valideringsprocess för resor och kampanjer. Det här systemet anger specifika villkor som avgör om en resa eller kampanj kräver godkännande. Dessa profiler kan variera i komplexitet. De kan helt enkelt kräva att alla kampanjer granskas av en viss användare eller ett visst team, eller fastställa kriterier baserat på vem som skapade kampanjen.
 
@@ -58,7 +58,7 @@ Så här skapar du en godkännandeprincip:
 
 1. Aktivera **[!UICONTROL Block self-approval]** för att förhindra att användare som skapar en resa/kampanj godkänner sina egna objekt.
 
-   ![](assets/policy_create_2.png)
+   ![Information om godkännandeprincip](assets/policy_create_2.png)
 
 Du kan nu förfina villkoren för att ange vem som kan initiera godkännandebegäran och vem som kan validera den.
 
