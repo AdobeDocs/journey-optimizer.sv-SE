@@ -6,9 +6,9 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
-source-git-commit: 80c652afef03b0be6d917cb4389850780c2a4379
+source-git-commit: 241af4304f0bed8f3addf28ed8e7bc746550d823
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1269'
 ht-degree: 3%
 
 ---
@@ -408,9 +408,11 @@ Funktionen `formatDate` används för att formatera ett datum/tid-värde. Format
 {%= formatDate(datetime, format) %}
 ```
 
-Där den första strängen är datumattributet och det andra värdet är hur du vill att datumet ska konverteras och visas.
+Där den första parametern är attributet date-time och det andra värdet är hur du vill att datumet ska konverteras och visas.
 
 >[!NOTE]
+>
+> Funktionen `formatDate` kräver en **datum-tid-fälttyp** som indata, inte en sträng. Om fältet lagras som en strängtyp i XDM-schemat måste du först konvertera det till datum/tid med en konverteringsfunktion som `stringToDate()` eller `toDateTime()`. Se exemplen nedan.
 >
 > Om ett datummönster är ogiltigt återgår datumet till ISO-standardformat.
 >
@@ -418,11 +420,69 @@ Där den första strängen är datumattributet och det andra värdet är hur du 
 
 **Exempel**
 
-Följande åtgärd returnerar datumet i följande format: MM/DD/YY.
++++Formatera ett datum/tid-fält
+
+Följande åtgärd formaterar ett datum/tid-fält till formatet MM/DD/YY.
 
 ```sql
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY") %}
 ```
+
++++
+
++++Konvertera en sträng till datum först
+
+Om fältet lagras som en sträng måste du först konvertera det till ett datum/tid med `stringToDate()` innan du formaterar det.
+
+```sql
+{%= formatDate(stringToDate(profile.person.birthDayAndMonth), "MM/DD/YY") %}
+```
+
++++
+
++++Fullständigt datumformat med dagnamn
+
+Följande åtgärd returnerar ett fullständigt datumformat med namn på dag, månad, dag och år.
+
+```sql
+{%= formatDate(profile.person.birthDateTime, "EEEE MMMM dd yyyy") %}
+```
+
+Utdata: `Wednesday January 01 2020`
+
++++
+
++++Dynamiskt datum baserat på systemtid
+
+Du kan formatera den aktuella systemtiden för att generera dynamiska datum. Följande åtgärd returnerar aktuellt datum i formatet MM/dd/ÅÅÅÅ.
+
+```sql
+{%= formatDate(getCurrentZonedDateTime(), "MM/dd/YYYY") %}
+```
+
+Utdata (30 januari 2026): `01/30/2026`
+
++++
+
++++Veckodag, format
+
+Du kan extrahera veckodagen i kort form.
+
+```sql
+{%= formatDate(getCurrentZonedDateTime(), "EEE") %}
+```
+
+Utdata: `Sun` (för söndag), `Mon` (för måndag), `Tue` (för tisdag) osv.
+
+Kombinera med funktionen `lowerCase` för gemener:
+
+```sql
+{%= lowerCase(formatDate(getCurrentZonedDateTime(), "EEE")) %}
+```
+
+Utdata: `sun`, `mon`, `tue` osv.
+
++++
 
 ### Mönstertecken {#pattern-characters}
 
