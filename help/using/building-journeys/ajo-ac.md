@@ -10,16 +10,16 @@ level: Intermediate, Experienced
 keywords: resa, meddelande, kampanj, integrering
 exl-id: b07feb98-b2ae-476c-8fcb-873b308176f0
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # Skicka ett meddelande med Campaign v7/v8 {#campaign-v7-v8-use-case}
 
-I det här användningsexemplet förklaras alla steg som krävs för att skicka e-post med hjälp av integreringen med Adobe Campaign v7 och Adobe Campaign v8.
+I det här användningsexemplet förklaras alla steg som krävs för att skicka ett e-postmeddelande med integreringen med [!DNL Adobe Campaign] v7 och [!DNL Adobe Campaign] v8.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Mer information om Campaign-integrationen finns på följande sidor:
 * [Skapa en kampanjåtgärd](../action/acc-action.md)
 * [Använda åtgärden i en resa](../building-journeys/using-adobe-campaign-v7-v8.md).
 
-**Adobe Campaign**
+**[!DNL Adobe Campaign]**
 
 Din Campaign-instans måste etableras för den här integreringen. Funktionen för transaktionsmeddelanden måste konfigureras.
 
@@ -40,7 +40,7 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
 1. Välj uppräkningen **Event type** (eventType) under **Administration** > **Platform** > **Enumerations**. Skapa en ny händelsetyp (&quot;travel-event&quot;, i vårt exempel). Använd händelsetypens interna namn när du skriver JSON-filen senare.
 
-   ![Konfigurera en händelse i Adobe Journey Optimizer med schema- och fältval](assets/accintegration-uc-1.png)
+   ![Konfigurera en händelse i [!DNL Adobe Journey Optimizer] med schema- och fältval](assets/accintegration-uc-1.png)
 
 1. Koppla från och återanslut till instansen för att skapa.
 
@@ -48,7 +48,7 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
    ![Händelsekonfiguration som visar inställningar för namnområde och profilidentifierare](assets/accintegration-uc-2.png)
 
-1. Designa din mall. I det här exemplet tillämpas personalisering på profilens förnamn och ordernummer. Förnamnet finns i Adobe Experience Platform datakälla och ordernumret är ett fält från händelsen Journey Optimizer. Se till att du använder rätt fältnamn i Campaign.
+1. Designa din mall. I det här exemplet tillämpas personalisering på profilens förnamn och ordernummer. Förnamnet finns i datakällan [!DNL Adobe Experience Platform] och ordernumret är ett fält från händelsen Journey Optimizer. Se till att du använder rätt fältnamn i Campaign.
 
    ![Förhandsvisning av händelsenyttolast som visar JSON-strukturen med profil- och händelsedata](assets/accintegration-uc-3.png)
 
@@ -78,11 +78,11 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
 1. Skapa en händelse. Inkludera fältet&quot;purchaseOrderNumber&quot;.
 
-   ![Konfigurationsskärmen för anpassad åtgärd för Adobe Campaign Classic-integrering](assets/accintegration-uc-5.png)
+   ![Konfigurationsskärmen för anpassade åtgärder för [!DNL Adobe Campaign] klassisk integrering ](assets/accintegration-uc-5.png)
 
-1. Skapa en åtgärd i Journey Optimizer som motsvarar er Campaign-mall. I listrutan **Åtgärdstyp** väljer du **Adobe Campaign Classic**.
+1. Skapa en åtgärd i Journey Optimizer som motsvarar er Campaign-mall. I listrutan **Åtgärdstyp** väljer du **[!DNL Adobe Campaign]Klassisk**.
 
-   ![Åtgärdstypsval som visar Adobe Campaign Classic-alternativ](assets/accintegration-uc-6.png)
+   ![Val av åtgärdstyp med [!DNL Adobe Campaign] Klassiskt alternativ ](assets/accintegration-uc-6.png)
 
 1. Klicka på **Nyttolastfältet** och klistra in den JSON som skapades tidigare.
 

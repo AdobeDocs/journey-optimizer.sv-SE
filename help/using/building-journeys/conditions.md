@@ -12,9 +12,9 @@ hidefromtoc: true
 hide: true
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1619'
 ht-degree: 4%
 
 ---
@@ -70,7 +70,7 @@ Klicka på **[!UICONTROL Add a path]** om du vill definiera flera villkor. För 
 
 Observera att utformningen av resorna har funktionell inverkan. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. Det innebär att du kan ändra prioriteringen av banor genom att placera dem över eller under varandra.
 
-Låt oss ta exemplet med den första sökvägens villkor &quot;Personen är en VIP&quot; och en andra sökvägs villkor &quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är VIP) klarar det här steget väljs den första vägen även om den personen också är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
+Låt oss ta två banvillkor: &quot;Personen är en VIP&quot; och &quot;Personen är en man.&quot; Om en person uppfyller båda villkoren väljs den första sökvägen eftersom den är över den andra. Flytta dina aktiviteter till en annan lodrät ordning om du vill ändra den här prioriteten.
 
 ![Exempel på prioritering av sökväg som visar VIP-villkor över manligt villkor](assets/journey48.png)
 
@@ -87,7 +87,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![Enkel uttrycksredigerare med dra och släpp-fält och logiska operatorer](assets/journey64.png){width=80%}
 
-Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
+Om du använder [[!DNL Adobe Experience Platform] segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment).
 
 >[!NOTE]
 >
@@ -188,8 +188,8 @@ Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
 1. Till vänster kan du visa **[!UICONTROL Audiences]**-noden. Dra och släpp den målgrupp du vill använda för ditt villkor. Som standard är villkoret för målgruppen sant.
 
-   ![Publiknod i uttrycksredigeraren för val av Adobe Experience Platform-målgrupper](assets/segment4.png){width=80%}
+   ![Publiknod i uttrycksredigeraren för att välja [!DNL Adobe Experience Platform] målgrupper ](assets/segment4.png){width=80%}
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.

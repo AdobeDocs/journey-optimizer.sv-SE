@@ -9,9 +9,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-source-git-commit: 0d016d45495c359e226dd1c30611b2c381ef29a4
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '2515'
+source-wordcount: '2512'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ När du återupptar den här resan:
 
 ## Felsöka uteblivna profiler under pausade resor {#discards-troubleshoot}
 
-Du kan använda [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=sv-SE){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
+Du kan använda [[!DNL Adobe Experience Platform] frågetjänsten](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} för att fråga efter steghändelser, som kan ge mer information om ignorerade profiler, beroende på när de inträffar.
 
 * Använd följande kod för att ta bort filer som inträffar innan profilen kommer in på resan:
 

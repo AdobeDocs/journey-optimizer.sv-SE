@@ -9,9 +9,9 @@ role: Developer
 level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 version: Journey Orchestration
-source-git-commit: 6976f2b1b8b95f7dc9bffe65b7a7ddcc5dab5474
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ Samlingar i anpassade åtgärder ger flexibilitet när det gäller att skicka dy
 
 * **Stöd för kapslade arrayer i anpassade åtgärder**
 
-  Adobe Journey Optimizer stöder kapslade arrayer med objekt i den anpassade åtgärden **svarsnyttolaster**, men det här stödet är begränsat i **begärannyttolaster**.
+  [!DNL Adobe Journey Optimizer] stöder kapslade arrayer med objekt i den anpassade åtgärden **svarsnyttolaster**, men det här stödet är begränsat i **begärannyttolaster**.
 
   I begärandenyttolaster stöds bara kapslade arrayer när de innehåller ett fast antal objekt, enligt definitionen i den anpassade åtgärdskonfigurationen. Om en kapslad array till exempel alltid innehåller exakt tre objekt, kan den konfigureras som en konstant. När antalet objekt behöver vara dynamiskt kan bara icke-kapslade arrayer (arrayer på den nedersta nivån) definieras som variabler.
 

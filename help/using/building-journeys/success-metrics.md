@@ -10,9 +10,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 95d0267e-fab4-4057-8ab5-6f7c9c866b0f
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
@@ -23,17 +23,17 @@ Få tydlig insyn i hur effektiva era kundresor är med hjälp av kundstatistik. 
 
 ## Förhandskrav {#prerequisites}
 
-Innan du använder dina resemått måste du lägga till en datamängd som innehåller fältgrupperna `Commerce Details`, `Web` och `Mobile` [&#x200B; &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#field-group){target="_blank"} under Konfiguration > Rapportering i Adobe Experience Platform.
+Innan du använder dina resemått måste du lägga till en datamängd som innehåller fältgrupperna `Commerce Details`, `Web` och `Mobile` [ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} under Konfiguration > Rapportering i [!DNL Adobe Experience Platform].
 
 Dessa fältgrupper måste väljas bland de inbyggda alternativen, inte från anpassade grupper. Se avsnittet [Lägg till datauppsättningar](../reports/reporting-configuration.md#add-datasets).
 
 ## Tillgängliga mått {#metrics}
 
-Listan med mätvärden varierar beroende på vilka [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#field-group){target="_blank"} som ingår i datauppsättningen.
+Listan med mätvärden varierar beroende på vilka [fältgrupper](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} som ingår i datauppsättningen.
 
 Om datauppsättningen inte har konfigurerats är bara följande mått tillgängliga: **[!UICONTROL Click]**, **[!UICONTROL Unique Click]**, **[!UICONTROL Clickthrough Rate]** och **[!UICONTROL Open Rate]**.
 
-Observera att med en Customer Journey Analytics-licens kan ni skapa anpassade framgångsmått. [Läs mer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/participation-metric)
+Observera att med en Customer Journey Analytics-licens kan ni skapa anpassade framgångsmått. [Läs mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/participation-metric)
 
 
 | Mätvärden | Relaterad fältgrupp |
@@ -70,7 +70,7 @@ Varje mätresultat har en angiven attribuering som avgör vilka kontaktytor elle
 
   Med både Journey Optimizer- och Customer Journey Analytics-licenser kan ni skapa anpassade mätvärden med specifika attribueringsinställningar eller ändra de inbyggda mätningsattributen.
 
-  Läs mer om [Attributmodeller](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-settings/attribution#attribution-models)
+  Läs mer om [Attributmodeller](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution#attribution-models)
 
 ## Tilldela dina resemått {#assign}
 

@@ -5,9 +5,9 @@ title: Upplevelsehändelser som söks igenom resor
 description: Lär dig använda Experience Events-sökning i resor
 exl-id: 35e2e347-0669-44a3-92ba-aee52e54c219
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '914'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 >
 >Behöver du mer information? [Läs Frågor och svar](#faq-ee).
 
-På den här sidan beskrivs vanliga mönster och skalbara strategier som hjälper dig att få ut det mesta av Experience Events i Adobe Journey Optimizer. De här användningsexemplen är utformade för att hjälpa dig att lösa vanliga problem som att hantera avanmälan, styra meddelandefrekvensen, anpassa innehåll baserat på användarbeteende och reagera på realtidssignaler.
+Den här sidan innehåller vanliga mönster och skalbara metoder som hjälper dig att få ut det mesta av Experience Events i [!DNL Adobe Journey Optimizer]. De här användningsexemplen är utformade för att hjälpa dig att lösa vanliga problem som att hantera avanmälan, styra meddelandefrekvensen, anpassa innehåll baserat på användarbeteende och reagera på realtidssignaler.
 
 Genom att utnyttja dessa strategier kan ni omvandla beteendedata till meningsfulla åtgärder - att undertrycka, kvalificera eller exkludera profiler baserat på de händelser de utlöser eller de attribut de har. Oavsett om du bygger upp logik för inköpströsklar, övergivna triggers eller studshantering ger de här exemplen praktisk vägledning som du kan anpassa efter dina behov.
 
@@ -39,7 +39,7 @@ Läs mer:
 
 ## Studsbaserad undertryckning
 
-Om du vill exkludera profiler som har fått e-poststudsar använder du Adobe Journey Optimizer automatiska lista för inaktivering för studsade adresser. Denna inbyggda mekanism säkerställer att ogiltiga eller onåbara e-postmeddelanden utesluts från framtida utskick utan att någon anpassad logik krävs.
+Om du vill exkludera profiler som har fått e-poststudsar använder du den automatiska undertryckningslistan för [!DNL Adobe Journey Optimizer] för studsade adresser. Denna inbyggda mekanism säkerställer att ogiltiga eller onåbara e-postmeddelanden utesluts från framtida utskick utan att någon anpassad logik krävs.
 
 Läs mer:
 
@@ -52,9 +52,9 @@ Om du vill inaktivera profiler som har visat vissa beteenden använder du gruppm
 
 Läs mer:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segmentbyggare - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segmentbyggare - Tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-a-segment)
 
@@ -71,9 +71,9 @@ Så här förhindrar du att meddelanden skickas till profiler som har tagit emot
 
 Läs mer om hur du använder målgrupper:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segmentbyggare - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segmentbyggare - Tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-a-segment)
 
@@ -93,9 +93,9 @@ Om du vill inkludera eller exkludera profiler baserat på om de har fått ett vi
 
 Läs mer:
 
-* Adobe Experience Platform [Segment builder - händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segmentbyggare - händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder - tidsbegränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segmentbyggare - Tidsbegränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Använda målgrupper under förhållanden](../building-journeys/condition-activity.md#using-a-segment)
 
@@ -105,8 +105,8 @@ Läs mer:
 
 Skräddarsy kommunikationen utifrån den senaste kundvagnen eller se händelser i olika kundvagnstyper eller produktvyer:
 
-* Om du har tillgång till [Adobe Experience Platform Data Distiller](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/overview){target="_blank"} konfigurerar du automatiska frågor för att extrahera nödvändiga data från händelsen, ändra dem så att de passar användningsfallet och skriva tillbaka dem till en profilaktiverad datauppsättning för aktivering.
-* Om övergivna data kan modelleras utifrån profilen med skalära attribut kan du använda beräknade attribut för att hämta in den senaste informationen och sedan referera till dessa attribut under resan för att skapa kommunikationen. [Läs mer i Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+* Om du har tillgång till [[!DNL Adobe Experience Platform] Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview){target="_blank"} konfigurerar du automatiska frågor för att extrahera nödvändiga data från händelsen, ändra dem så att de passar användningsfallet och skriva tillbaka dem till en profilaktiverad datauppsättning för aktivering.
+* Om övergivna data kan modelleras utifrån profilen med skalära attribut kan du använda beräknade attribut för att hämta in den senaste informationen och sedan referera till dessa attribut under resan för att skapa kommunikationen. [Läs mer i [!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
 ## Beteendebaserad reseutgång
@@ -123,7 +123,7 @@ Om du vill utlösa resor baserat på inköp och undertrycka om värdet ligger ö
 
 Läs mer:
 
-* Adobe Experience Platform [Översikt över beräknade attribut](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+* [!DNL Adobe Experience Platform] [Översikt över beräknade attribut](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
 
@@ -131,7 +131,7 @@ Läs mer:
 
 Nedan hittar du Vanliga frågor om Experience-händelsesökning i resor.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [[!DNL Adobe Journey Optimizer] communityn](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++Vilka specifika funktioner påverkas? 
 

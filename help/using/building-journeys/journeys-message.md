@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 version: Journey Orchestration
-source-git-commit: 916239c98c982acf9c6f999316e46036d36b2098
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '570'
 ht-degree: 2%
 
 ---
@@ -164,7 +164,7 @@ I stället för att använda de inbyggda meddelandefunktionerna kan du använda 
 
 * Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en anpassad åtgärd. [Läs mer](../action/action.md)
 
-* Om du arbetar med Adobe Campaign, se följande avsnitt:
+* Om du arbetar med [!DNL Adobe Campaign] kan du läsa följande avsnitt:
 
    * [[!DNL Journey Optimizer] och Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] och Campaign Standard](../action/acs-action.md)

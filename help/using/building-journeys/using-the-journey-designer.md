@@ -10,9 +10,9 @@ level: Intermediate
 keywords: design, arbetsyta, resa, gränssnitt, dra, släpp
 exl-id: 1998f6fc-60fd-4038-8669-39cd55bc02d1
 version: Journey Orchestration
-source-git-commit: 24d66f146ea3ed0e89a3b928b805bc53a70a8895
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1714'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 >title="Designa din resa"
 >abstract="Med resegränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan. Du kan också dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa steg som är tillgängligt."
 
-Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Observera att du även kan dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa tillgängliga steg.
+[!DNL Adobe Journey Optimizer] innehåller en flerkanalig orchestration-arbetsyta som gör det möjligt för marknadsförare att harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Observera att du även kan dubbelklicka på en aktivitet för att lägga till den på arbetsytan i nästa tillgängliga steg.
 
 Händelser, samordning och åtgärder har en särskild roll och plats i processen. Aktiviteterna är sekvenserade: när en aktivitet är klar fortsätter flödet och bearbetar nästa aktivitet, och så vidare.
 
@@ -72,7 +72,7 @@ Det finns två möjligheter:
 
 1. **Börja med en händelse**: När en resa är inställd på att lyssna på händelser, kommer individer in på resan **unitally** i realtid. Meddelanden som ingår i din resa skickas till den person som för tillfället är på väg in på resan. [Läs mer om händelser](../event/about-events.md)
 
-1. **Börja med en läs målgrupp**: du kan ange att din resa ska lyssna på Adobe Experience Platform målgrupper. I det här fallet kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läsmålgruppen](read-audience.md). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
+1. **Börja med en läsmålgrupp**: du kan ställa in din resa så att den lyssnar på [!DNL Adobe Experience Platform] målgrupper. I det här fallet kommer alla personer som tillhör den angivna målgruppen in på resan. Meddelanden som ingår i din resa skickas till personer som tillhör målgruppen. Läs mer om [läsmålgruppen](read-audience.md). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
 
 ## Definiera nästa steg{#define-next-steps}
 
@@ -88,13 +88,13 @@ Du kan lägga till **flera händelser** under din resa, så länge de använder 
 
 Du kan också lägga till en **Reaction** -händelse efter ett meddelande för att reagera på spårningsdata som är relaterade till meddelandet. Detta gör att du till exempel kan skicka ett till meddelande om personen öppnade det föregående meddelandet eller klickade i det. [Läs mer om reaktionshändelser](reaction-events.md).
 
-Använd aktiviteten **Målgruppskvalificering** för att få enskilda personer att komma in på eller gå framåt i en resa baserat på Adobe Experience Platform målgruppsinkomster och utträden. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer i det här [avsnittet](audience-qualification-events.md).
+Använd aktiviteten **Målgruppskvalificering** för att få individer att komma in eller gå framåt i en resa baserat på [!DNL Adobe Experience Platform] målgruppsinkomster och utträden. Ni kan få alla nya silverkunder att delta i en resa och skicka personaliserade meddelanden. Läs mer i det här [avsnittet](audience-qualification-events.md).
 
 ### Orchestration{#jo-orch}
 
 Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan.
 
-Använd aktiviteten **Läs målgrupp** från orkestreringsaktiviteterna för att ange din resa för att lyssna på en Adobe Experience Platform-målgrupp. [Läs mer om aktiviteten Läs målgrupp](read-audience.md).
+Använd aktiviteten **Läs målgrupp** från orkestreringsaktiviteterna för att ställa in din resa så att den lyssnar på en [!DNL Adobe Experience Platform] målgrupp. [Läs mer om aktiviteten Läs målgrupp](read-audience.md).
 
 Med de andra aktiviteterna kan du lägga till villkor för din resa för att definiera flera olika vägar, ange en väntetid innan nästa aktivitet utförs eller avsluta din resa. [Läs mer om orkestreringsaktiviteter](about-journey-activities.md#orchestration-activities).
 

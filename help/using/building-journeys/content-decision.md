@@ -11,9 +11,9 @@ badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: aktivitet, beslut, innehållsbeslut, beslutspolitik, arbetsyta, resa
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 version: Journey Orchestration
-source-git-commit: 7a83bb558559ba814ed9431bb85a68929a276ed5
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Du är nu redo att utnyttja resultatet av den här innehållsbeslutsaktiviteten 
 
 Det tar upp till 48 timmar att genomföra uppdateringar av godkännandepolicyer. Om en beslutspolicy refererar till ett attribut som är knutet till en nyligen uppdaterad medgivandepolicy, kommer ändringarna inte att tillämpas omedelbart.
 
-Om nya profilattribut som omfattas av en samtyckespolicy läggs till i en beslutspolicy kommer de att vara användbara, men den medgivandepolicy som är kopplad till dem kommer inte att tillämpas förrän förseningen har passerat.
+På samma sätt kan nya profilattribut som omfattas av en samtyckespolicy läggas till i en beslutspolicy och användas. Den relaterade principen för samtycke kommer inte att tillämpas förrän fördröjningen har passerat.
 
 Samtyckesregler är endast tillgängliga för organisationer som har Adobe Healthcare Shield eller tillägg till Privacy and Security Shield.
 
@@ -114,7 +114,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    >[!NOTE]
    >
-   >Alla begränsade etiketter som har definierats för ett attribut, antingen i en upplevelsehändelse för resan som används i en beslutsregel (som kontextdata) eller i [erbjudandeschemat](../experience-decisioning/catalogs.md#access-catalog-schema), resulterar i principöverträdelse för DULE eller samtycke. Läs mer om datastyrningsprinciper i [det här avsnittet](../action/action-privacy.md)
+   >Alla begränsade etiketter som definieras för ett attribut kan resultera i en policyöverträdelse för DULE eller medgivande. Detta gäller upplevelsehändelser för resan som används i en beslutsregel och för [erbjudandeschemat](../experience-decisioning/catalogs.md#access-catalog-schema). Läs mer om datastyrningsprinciper i [det här avsnittet](../action/action-privacy.md).
 
 1. Använd funktionen [listSize](functions/list-functions.md#listSize) med följande syntax för att kontrollera om något erbjudande har returnerats för de profiler som deltar i resan: `listSize(@decision{ContentdecisionName.items})>0`
 
@@ -146,7 +146,7 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    ![Redigera den anpassade åtgärdens frågeparametrar](assets/journey-content-decision-custom-action-param.png)
 
-1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [&#x200B; i den &#x200B;](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
+1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [ i den ](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
 
    >[!CAUTION]
    >

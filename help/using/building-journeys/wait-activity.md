@@ -10,9 +10,9 @@ level: Intermediate
 keywords: vänta, aktivitet, resa, nästa, arbetsyta
 exl-id: 7268489a-38c1-44da-b043-f57aaa12d7d5
 version: Journey Orchestration
-source-git-commit: c30a74ccdaec81cbbb28e3129d5c351a0fe64bfc
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '901'
 ht-degree: 2%
 
 ---
@@ -38,6 +38,8 @@ Du kan ange två typer av **Wait**-aktivitet:
 
 ## Rekommendationer {#wait-recommendations}
 
+Använd dessa rekommendationer för att hålla väntar förutsägbart och säkert.
+
 ### Flera väntande aktiviteter {#multiple-wait-activities}
 
 När du använder flera **Wait**-aktiviteter på en resa ska du vara medveten om att den [globala tidsgränsen](journey-properties.md#global_timeout) för resor är 91 dagar, vilket innebär att profiler alltid tas bort från resan högst 91 dagar efter att de har registrerat sig. Läs mer på [den här sidan](journey-properties.md#global_timeout).
@@ -57,6 +59,8 @@ I testläge kan du med parametern **[!UICONTROL Wait time in test]** definiera d
 Om du vill visa ett [in-app-meddelande](../in-app/create-in-app.md) kort efter att du har skickat ett [push-meddelande](../../rp_landing_pages/push-landing-page.md) använder du en **Wait**-aktivitet för att tillåta inläsningstiden för meddelanden i appen att spridas. Vanligtvis rekommenderas en 5-15 minuters väntan, men de exakta tiderna kan variera beroende på nyttolastens komplexitet och personaliseringsbehov.
 
 ## Konfiguration {#wait-configuration}
+
+Konfigurera väntetid och timing här.
 
 ### Väntetid {#duration}
 

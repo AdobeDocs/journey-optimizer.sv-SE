@@ -10,9 +10,9 @@ level: Intermediate
 keywords: profil, uppdatering, resa, aktivitet
 exl-id: 8b2b2d1e-9bd1-439d-a15e-acdbab387c4b
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_update_profiles"
 >title="Uppdatera profilaktivitet"
->abstract="Med aktiviteten Uppdatera profil kan du uppdatera en befintlig Adobe Experience Platform-profil med information som kommer från händelsen, en datakälla eller med ett specifikt värde."
+>abstract="Med aktiviteten Uppdatera profil kan du uppdatera en befintlig [!DNL Adobe Experience Platform]-profil med information som kommer från händelsen, en datakälla eller med ett specifikt värde."
 
-Använd åtgärdsaktiviteten **[!UICONTROL Update Profile]** för att uppdatera en befintlig Adobe Experience Platform-profil med information från en händelse, en datakälla eller med ett specifikt värde.
+Använd åtgärdsaktiviteten **[!UICONTROL Update Profile]** för att uppdatera en befintlig [!DNL Adobe Experience Platform]-profil med information från en händelse, en datakälla eller med ett specifikt värde.
 
 ## Viktiga begrepp {#key-concepts}
 
@@ -32,9 +32,9 @@ Använd åtgärdsaktiviteten **[!UICONTROL Update Profile]** för att uppdatera 
 * Åtgärden uppdaterar bara befintliga fält, inga nya profilfält skapas.
 * Du kan inte använda åtgärden **Uppdatera profil** för att generera upplevelsehändelser, till exempel ett köp.
 * Precis som med andra åtgärder kan du definiera en alternativ sökväg om fel eller timeout inträffar, och du kan inte placera två åtgärder parallellt.
-* Uppdateringsbegäran som skickas till Adobe Experience Platform är omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Om en åtgärd till exempel använder&quot;fält 1&quot; som har uppdaterats av en **Uppdatera profil** -åtgärd som har placerats precis tidigare, bör du därför inte förvänta dig att&quot;fält 1&quot; kommer att uppdateras i åtgärden.
+* Uppdateringsbegäran som skickades till [!DNL Adobe Experience Platform] är omedelbart/inom en sekund. Det tar normalt några sekunder men ibland mer utan garanti. Om en åtgärd till exempel använder&quot;fält 1&quot; som har uppdaterats av en **Uppdatera profil** -åtgärd som har placerats precis tidigare, bör du därför inte förvänta dig att&quot;fält 1&quot; kommer att uppdateras i åtgärden.
 * Aktiviteten **Uppdatera profil** stöder inte XDM-fält som är definierade som uppräkningar eller föreslagna värden.
-* Aktiviteten **[!UICONTROL Update profile]** uppdaterar bara [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv-SE#profile-data-store){target="_blank"}, inte datasjön.
+* Aktiviteten **[!UICONTROL Update profile]** uppdaterar bara [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, inte datasjön.
 
 ## Val av datauppsättning {#dataset-selection}
 
@@ -81,6 +81,6 @@ Aktivitetskonfigurationen **Uppdatera profil** kräver inte heller något identi
 
 I testläge simuleras inte profiluppdateringen. Uppdateringen utförs på testprofilen.
 
-Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I Adobe Experience Platform kan du uppdatera profilattribut via csv-filimport eller API-anrop. En enklare metod är att använda en **Uppdatera profil**-åtgärd och ändra testprofilens booleska fält från false till true.
+Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan antingen skapa en ny testprofil eller omvandla en befintlig profil till en testprofil. I [!DNL Adobe Experience Platform] kan du uppdatera profilattribut via en CSV-filimport eller API-anrop. En enklare metod är att använda en **Uppdatera profil**-åtgärd och ändra testprofilens booleska fält från false till true.
 
 Mer information om hur du omvandlar en befintlig profil till en testprofil finns i det här [avsnittet](../audience/creating-test-profiles.md#create-test-profiles-csv).

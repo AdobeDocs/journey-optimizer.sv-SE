@@ -10,9 +10,9 @@ level: Intermediate
 keywords: tidszon, egenskaper, resa, villkor, tid, datum, anpassad
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Gör detta genom att markera en tidszon i rutan **[!UICONTROL Journey Properties
 >title="Använd profilens tidszon"
 >abstract="Markera kryssrutan om du vill använda tidszonen för realtidsprofilen i väntan- och villkorsaktiviteter. Om en tidszon har definierats för en profil hämtas den och används av resan. Annars är tidszonen den som definieras i tidszonsfältet ovan."
 
-Om resans inträde-händelse har ett namnutrymme, vilket innebär att resan kan nå kundprofiltjänsten i realtid i Adobe Experience Platform, kanske du vill använda den tidszon som har definierats på profilnivån. Om du vill göra det går du till **Egenskaper** och markerar **Använd profiltidszon i väntetider och villkor**. Det här alternativet är inte markerat som standard.
+Om resestarthändelsen har ett namnområde, vilket innebär att resan kan nå kundprofiltjänsten i realtid på [!DNL Adobe Experience Platform], kan du använda den tidszon som definierats på profilnivån. Om du vill göra det går du till **Egenskaper** och markerar **Använd profiltidszon i väntetider och villkor**. Det här alternativet är inte markerat som standard.
 
 Om en tidszon har definierats för en profil hämtas den och används av resan. Om så inte är fallet används tidszonen som definieras i tidszonsfältet.
 

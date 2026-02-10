@@ -10,7 +10,7 @@ level: Intermediate
 keywords: test, resa, kontroll, fel, felsökning
 exl-id: 9937d9b5-df5e-4686-83ac-573c4eba983a
 version: Journey Orchestration
-source-git-commit: 8a1c6ccad1e0ff66bc23b6fbdd873db5f54e3e0a
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 1%
@@ -34,10 +34,12 @@ Det är bara testprofiler som kan ta sig in på en resa i testläge. Du kan anti
 
 ## Viktiga anteckningar {#important_notes}
 
+Granska anteckningarna innan du kör tester på din resa.
+
 ### Allmänna begränsningar
 
 * **Testa endast profiler** - Endast individer som markerats som testprofiler i kundprofiltjänsten i realtid kan gå in på en resa i testläge. [Lär dig skapa testprofiler](../audience/creating-test-profiles.md).
-* **Namnutrymmeskrav** - Testläget är bara tillgängligt för utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå Adobe Experience Platform.
+* **Namnutrymmeskrav** - Testläget är bara tillgängligt för utkastresor som använder ett namnutrymme. Testläget måste kontrollera om en person som deltar i resan är en testprofil eller inte och därför måste kunna nå [!DNL Adobe Experience Platform].
 * **Profilgräns** - Högst 100 testprofiler kan gå in på en resa under en enda testsession.
 * **Händelseutlösare** - Händelser kan bara utlösas från gränssnittet. Det går inte att skicka händelser från externa system med ett API.
 * **Anpassad uppladdning av målgrupper** - Resurstestläget stöder inte [anpassad uppladdning av målgrupper](../audience/custom-upload.md).
@@ -104,7 +106,7 @@ Använd knappen **[!UICONTROL Trigger an event]** för att konfigurera en hände
 
 ### Förhandskrav {#trigger-events-prerequisites}
 
-Du måste känna till vilka profiler som är flaggade som testprofiler i Adobe Experience Platform. Testläget tillåter bara dessa profiler under resan.
+Som en förutsättning måste du veta vilka profiler som har flaggats som testprofiler i [!DNL Adobe Experience Platform]. Testläget tillåter bara dessa profiler under resan.
 
 Händelsen måste innehålla ett ID. Det förväntade ID:t beror på händelsekonfigurationen. Det kan till exempel vara ett ECID eller en e-postadress. Värdet för den här nyckeln måste läggas till i fältet **Profilidentifierare**.
 
@@ -133,7 +135,7 @@ En teknisk användare kan också använda det här gränssnittet för att kompon
 
 När du klickar på knappen **[!UICONTROL Send]** påbörjas testet. Personens förlopp under resan representeras av ett visuellt flöde. Vägen blir progressivt grön allt eftersom personen rör sig över resan. Om ett fel inträffar visas en varningssymbol i motsvarande steg. Du kan placera markören på den för att visa mer information om felet och få tillgång till fullständig information (när den är tillgänglig).
 
-![Visuellt reseprovflöde med profilförlopp och eventuella fel &#x200B;](assets/journeytest6.png)
+![Visuellt reseprovflöde med profilförlopp och eventuella fel ](assets/journeytest6.png)
 
 När du väljer en annan testprofil på händelsekonfigurationsskärmen och kör testet igen rensas det visuella flödet och den nya personens sökväg visas.
 
@@ -190,5 +192,5 @@ Här är en persons olika status:
 
 När en händelse aktiveras i testläget genereras en datauppsättning automatiskt med källans namn.
 
-Testläget skapar automatiskt en Experience Event och skickar den till Adobe Experience Platform. Källan för upplevelsehändelsen heter&quot;Journey Orchestration Test Events&quot;.
+Testläget skapar automatiskt en Experience Event och skickar den till [!DNL Adobe Experience Platform]. Källan för upplevelsehändelsen heter&quot;Journey Orchestration Test Events&quot;.
 

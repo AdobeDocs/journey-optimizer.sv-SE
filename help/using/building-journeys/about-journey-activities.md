@@ -10,22 +10,22 @@ level: Beginner, Intermediate
 keywords: resa, aktiviteter, komma igång, händelser, åtgärd
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
 version: Journey Orchestration
-source-git-commit: b8d56578aae90383092978446cb3614a4a033f80
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '685'
 ht-degree: 11%
 
 ---
 
 # Kom igång med reseaktiviteter {#about-journey-activities}
 
-Kombinera de olika händelserna, samordningen och åtgärderna för att skapa flerstegsscenarier för olika kanaler.
+Kombinera händelser, samordning och åtgärder för att skapa flerstegsscenarier för flera kanaler.
 
 ## Händelseaktiviteter {#event-activities}
 
-Personaliserade resor utlöses av händelser, t.ex. ett onlineköp. När en profil går in på en resa förflyttas de som en individ, och inga två personer följer med på samma hastighet eller längs samma väg. När du påbörjar en resa med en händelse utlöses resan när händelsen tas emot. Varje person på resan följer sedan, individuellt, de steg som definieras på din resa.
+Personaliserade resor börjar med exempelvis online-köp. När en profil går in på en resa, förflyttas den på egen hand. Varje profil kan ha olika sökväg och takt. När du börjar med en händelse utlöses resan när händelsen kommer fram. Varje profil följer sedan de steg som definieras under din resa.
 
-Händelser som konfigurerats av den tekniska användaren (se [den här sidan](../event/about-events.md)) visas alla i den första kategorin på paletten, till vänster på skärmen. Följande händelseaktiviteter är tillgängliga:
+Händelser som konfigurerats av den tekniska användaren (se [den här sidan](../event/about-events.md)) visas i palettens första kategori. Den här kategorin finns till vänster på skärmen. Följande händelseaktiviteter är tillgängliga:
 
 * [Allmänna händelser](../building-journeys/general-events.md)
 * [Reaktion](../building-journeys/reaction-events.md)
@@ -39,7 +39,7 @@ Dra och släpp en händelseaktivitet för att starta din resa. Du kan också dub
 
 ## Orchestration-verksamhet {#orchestration-activities}
 
-Orchestration-aktiviteter är olika villkor som hjälper till att bestämma nästa steg i resan. Dessa villkor kan vara huruvida personen har ett öppet supportärende, väderprognosen på sin aktuella plats, om de slutfört ett köp eller om de uppnått 10 000 förmånspoäng.
+Orchestration-aktiviteter är villkor som hjälper till att bestämma nästa steg i resan. Dessa villkor kan vara huruvida personen har ett öppet supportärende eller slutfört ett köp. De kan även omfatta lokala väderprognoser eller huruvida personen nått 10 000 kundpoäng.
 
 På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
@@ -55,7 +55,7 @@ På paletten till vänster på skärmen finns följande orkestreringsfunktioner:
 
 Åtgärder är vad du vill ska hända som ett resultat av någon typ av utlösare, som att skicka ett meddelande. Det är den del av resan som kundupplevelsen innebär.
 
-På paletten, till vänster på skärmen, under **[!UICONTROL Events]** och **[!UICONTROL Orchestration]**, hittar du kategorin **[!UICONTROL Actions]**. Följande åtgärdsaktiviteter är tillgängliga:
+På paletten till vänster på skärmen, under **[!UICONTROL Events]** och **[!UICONTROL Orchestration]**, hittar du kategorin **[!UICONTROL Actions]**. Följande åtgärdsaktiviteter är tillgängliga:
 
 * [Inbyggda kanalåtgärder](../building-journeys/journeys-message.md)
 * [Anpassade åtgärder](../building-journeys/using-custom-actions.md)
@@ -69,13 +69,15 @@ Du kan också ange specifika åtgärder för att skicka meddelanden:
 
 * Om du använder ett tredjepartssystem för att skicka meddelanden kan du skapa en specifik anpassad åtgärd. [Läs mer](../action/action.md)
 
-* Om du arbetar med Campaign och Journey Optimizer, se följande avsnitt:
+* Om du arbetar med [!DNL Adobe Campaign] och [!DNL Adobe Journey Optimizer] kan du läsa följande avsnitt:
 
-   * [[!DNL Journey Optimizer] och Campaign v7/v8](../action/acc-action.md)
-   * [[!DNL Journey Optimizer] och Campaign Standard](../action/acs-action.md)
-   * [[!DNL Journey Optimizer] och Marketo Engage](../action/marketo-engage.md)
+   * [[!DNL Adobe Journey Optimizer] och [!DNL Adobe Campaign] v7/v8](../action/acc-action.md)
+   * [[!DNL Adobe Journey Optimizer] och [!DNL Adobe Campaign] Standard](../action/acs-action.md)
+   * [[!DNL Adobe Journey Optimizer] och [!DNL Adobe Marketo Engage]](../action/marketo-engage.md)
 
 ## Bästa praxis {#best-practices}
+
+Använd dessa rekommendationer för att hålla resorna läsbara, enhetliga och enkla att felsöka.
 
 ### Lägga till en etikett
 
@@ -119,4 +121,4 @@ Kontrollera att alla aktiviteter är konfigurerade korrekt innan du testar och p
 
 Lär dig hur du felsöker fel i aktiviteter och under resan [på den här sidan](troubleshooting.md).
 
-Se även **[Övervakning och felsökning](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)**.
+Se även **[Övervakning och felsökning](../../rp_landing_pages/troubleshoot-journey-landing-page.md)**.

@@ -10,9 +10,9 @@ level: Intermediate
 keywords: sändningstid, skicka, meddelande, optimering, resa, AI, intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
 version: Journey Orchestration
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_disabled"
 >title="Om Tidsoptimering för Skickat"
->abstract="Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka e-post eller push-meddelanden för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser."
+>abstract="Funktionen för optimering av sändningstid för [!DNL Adobe Journey Optimizer], som drivs av Adobe AI-tjänster, kan förutsäga den bästa tidpunkten för att skicka ett e-postmeddelande eller push-meddelande för att maximera engagemanget baserat på tidigare öppnings- och klickfrekvenser."
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_email"
@@ -34,13 +34,13 @@ ht-degree: 0%
 >title="Aktivera optimering av sändningstid"
 >abstract="Standardinställningen för push-meddelanden är öppningsalternativet, eftersom klickningar inte kan användas för push-meddelanden. Du kan också välja att klamra de sändningstider som används av systemet genom att ange ett värde för Skicka i nästa alternativ."
 
-Adobe Journey Optimizer funktion för optimering av sändningstid, som bygger på Adobe AI-tjänster för resan, väljer den optimala sändningstiden för e-post och push-meddelanden för att maximera kundengagemanget, baserat på kundernas tidigare öppnings- och klickbeteende.
+Funktionen för optimering av sändningstid för [!DNL Adobe Journey Optimizer], som drivs av Adobe Journey AI-tjänster, väljer den optimala sändningstiden för e-post och push-meddelanden för att maximera kundengagemanget, baserat på kundernas tidigare öppnings- och klickbeteende.
 
 Sändningsoptimering är endast tillgängligt för Journey Optimizer inbyggda åtgärdstyper för e-post och push och är för närvarande inte tillgängligt för meddelanden som skickas via anpassade åtgärder eller för andra åtgärdstyper. Tidsoptimering för sändning är endast tillgängligt för e-post- och push-åtgärder inom resor och är för närvarande inte tillgängligt för meddelanden som skickas via kampanjer.
 
 >[!AVAILABILITY]
 >
->* Funktionen för optimering av sändningstid är aktiverad för Adobe Journey Optimizer-kunder på begäran. Kontakta Adobe kundtjänst eller en Adobe-representant för att aktivera funktionen för din organisation.
+>* Funktionen för optimering av sändningstid är aktiverad för [!DNL Adobe Journey Optimizer] kunder på begäran. Kontakta Adobe kundtjänst eller en Adobe-representant för att aktivera funktionen för din organisation.
 >
 >* Tidsoptimering för sändning gäller endast för kanalerna **E-post** och **Push-meddelanden**.
 >
@@ -70,7 +70,7 @@ När kundresan aktiveras och kunden når åtgärden E-post eller push under resa
 
 ## Så här fungerar optimering vid körning {#how-send-time}
 
-Modellen för optimering av sändningstid innebär att din organisations kundbeteendedata från Adobe Journey Optimizer importeras och att användaren undersöker öppna- och klickhändelser för att avgöra när det är mest troligt att dina kunder interagerar med dina meddelanden.
+Modellen för optimering av sändningstid innehåller information om din organisations [!DNL Adobe Journey Optimizer] kundbeteenden och tittar på öppnings- och klickningshändelser på användarnivå för att avgöra när det är mest troligt att dina kunder interagerar med dina meddelanden.
 
 Med optimering för sändningstid kan man förutse för varje timme i veckan, för varje användare, baserat på tre typer av beteendedata:
 
@@ -101,7 +101,7 @@ Utforska sändningstider väljs slumpvis bland de sändningstider som är tillg�
 
 Nedan hittar du Vanliga frågor om optimering av sändningstid.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [[!DNL Adobe Journey Optimizer] communityn](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++Hur lång tid behöver jag vänta innan jag använder optimering för Skicka-tid?
 

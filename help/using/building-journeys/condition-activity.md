@@ -10,14 +10,16 @@ level: Intermediate
 keywords: aktivitet, villkor, arbetsyta, resa
 exl-id: 02de069c-3009-4105-aa98-c49959d3efda
 version: Journey Orchestration
-source-git-commit: 24d66f146ea3ed0e89a3b928b805bc53a70a8895
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1750'
 ht-degree: 4%
 
 ---
 
 # Villkorsaktivitet {#condition-activity}
+
+Använd villkorsaktiviteten för att dirigera profiler till olika sökvägar baserat på regler och data.
 
 ## Lägg till en villkorsaktivitet {#add-condition-activity}
 
@@ -42,7 +44,7 @@ Du kan också använda en målgrupp i ett resevillkor. [Läs mer](#using-a-segme
 
 >[!NOTE]
 >
->Villkorsutvärderingen misslyckas för profiler som innehåller fler än två enhetsidentiteter i [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv-SE#profile-data-store){target="_blank"}.
+>Villkorsutvärderingen misslyckas för profiler som innehåller fler än två enhetsidentiteter i [profilarkivet](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
 
 ## Lägga till och hantera villkorssökvägar {#about_condition}
 
@@ -59,7 +61,7 @@ Klicka på **[!UICONTROL Add a path]** om du vill definiera flera villkor. För 
 
 Observera att utformningen av resorna har funktionell inverkan. När flera sökvägar definieras efter ett villkor kommer endast den första giltiga sökvägen att köras. Det innebär att du kan ändra prioriteringen av banor genom att placera dem över eller under varandra.
 
-Låt oss ta exemplet med den första sökvägens villkor &quot;Personen är en VIP&quot; och en andra sökvägs villkor &quot;Personen är en man&quot;. Om en person som uppfyller båda villkoren (en man som är VIP) klarar det här steget väljs den första vägen även om den personen också är berättigad till den andra, eftersom den första sökvägen är &quot;ovan&quot;. Om du vill ändra den här prioriteten flyttar du dina aktiviteter i en annan lodrät ordning.
+Låt oss ta två banvillkor: &quot;Personen är en VIP&quot; och &quot;Personen är en man.&quot; Om en person uppfyller båda villkoren väljs den första sökvägen eftersom den är över den andra. Flytta dina aktiviteter till en annan lodrät ordning om du vill ändra den här prioriteten.
 
 ![Sökvägsprioritering som visar VIP- och manliga villkor](assets/journey48.png)
 
@@ -72,7 +74,7 @@ I det enkla läget kan du utföra enkla frågor baserat på en kombination av f�
 
 ![Uttrycksredigeraren visar fältval och logiska operatorer OCH ELLER](assets/journey64.png)
 
-Om du använder [Adobe Experience Platform segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
+Om du använder [[!DNL Adobe Experience Platform] segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} för att skapa dina målgrupper kan du utnyttja dem under dina reseförhållanden. Se [Använda målgrupp i villkor](../building-journeys/condition-activity.md#using-a-segment). Mer information om hur du skapar och målgruppsanpassar i Journey Optimizer finns i [det här avsnittet](../audience/about-audiences.md).
 
 
 >[!NOTE]
@@ -188,4 +190,4 @@ Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
    >[!NOTE]
    >
-   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Observera att endast de personer som har **Realiserad**-målgruppsdeltagarstatus kommer att betraktas som medlemmar av målgruppen. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.

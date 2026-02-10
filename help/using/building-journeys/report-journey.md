@@ -10,9 +10,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 186b061d-0941-48be-8917-bbdfff6dae90
 version: Journey Orchestration
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ För varje aktivitet inom varje resa i Live eller [Torr körningsläge](journey-
 
 Om du inte ser förväntade data i dina reserapporter bör du tänka på följande:
 
-* **Resensnamnsynkronisering**: Verifiera att resenamnet i Adobe Journey Optimizer matchar det namn som lagrats i rapporteringsdatauppsättningen. Om namnen inte matchar kan det förhindra att rapportdata visas korrekt.
+* **Resensnamnsynkronisering**: Verifiera att resenamnet i [!DNL Adobe Journey Optimizer] matchar det namn som lagras i rapporteringsdatauppsättningen. Om namnen inte matchar kan det förhindra att rapportdata visas korrekt.
 
 * **Tidsåtgång för datauppdatering**: När du har uppdaterat ett resenamn eller en konfiguration kan du vänta tillräckligt länge för att data ska uppdateras. Rapporteringsdata visas vanligtvis inom några minuter, men kan i vissa fall ta längre tid.
 

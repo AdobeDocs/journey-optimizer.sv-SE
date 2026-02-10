@@ -10,17 +10,17 @@ keywords: resetyper, enhet, läsare, målgruppskvalifikation, affärshändelse, 
 version: Journey Orchestration
 hide: true
 hidefromtoc: true
-source-git-commit: f749eae4e0a826428880e913219cf6f5a135b17c
+exl-id: 0c894dc1-76b6-4b33-baf8-eaf6686f7d38
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '977'
 ht-degree: 1%
 
 ---
 
-
 # Resetyper och urvalsguide {#journey-types-selection}
 
-Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utformade för olika ingångs- och affärsscenarier. Den här guiden hjälper dig att förstå skillnaderna och välja rätt typ för ditt användningsfall.
+[!DNL Adobe Journey Optimizer] har stöd för fyra typer av resor, där var och en är utformad för olika startmekanismer och affärsscenarier. Den här guiden hjälper dig att förstå skillnaderna och välja rätt typ för ditt användningsfall.
 
 ## Översikt över resetyper {#journey-types}
 
@@ -40,7 +40,7 @@ Adobe Journey Optimizer har stöd för fyra olika typer av resor, var och en utf
 
 **När:** schemalagda kampanjer ska användas till målgruppssegment
 
-**Läs målgruppsresor** börjar med en Adobe Experience Platform-målgrupp och skicka meddelanden gruppvis till alla profiler samtidigt. Den här typen av resa är perfekt för schemalagd, storskalig kommunikation.
+**Läs målgruppsresor** börjar med en [!DNL Adobe Experience Platform]-målgrupp och skicka meddelanden gruppvis till alla profiler samtidigt. Den här typen av resa är perfekt för schemalagd, storskalig kommunikation.
 
 **Perfekt för:** Månatliga nyhetsbrev, kampanjkampanjer för målsegment, produktmeddelanden och säsongskampanjer.
 
@@ -122,7 +122,7 @@ Använd den här tabellen om du snabbt vill jämföra olika typer av resor och v
 | **Använd när** | Omedelbar respons på enskilda åtgärder som behövs | Nå ut till stora målgruppssegment enligt tidsplanen | Svara på kundstatusändringar | Affärshändelser påverkar flera kunder |
 | **Exempel** | Orderbekräftelse, lösenordsåterställning | Månatligt nyhetsbrev, säsongskampanj | Uppgradering av VIP, avisering om inaktivitet | Varning vid låg lagernivå, blixtförsäljning, prisfall |
 | **Återinträde** | Konfigurerbar (tillåt flera poster per profil) | Varje profil anger en gång per körning | Konfigurerbar per kvalificeringshändelse | Flera profiler kan påverkas av samma händelse |
-| **Datakrav** | Händelseschema med utlösardata | Adobe Experience Platform | Direktuppspelning eller gruppbearbetning | Affärshändelsens schema |
+| **Datakrav** | Händelseschema med utlösardata | [!DNL Adobe Experience Platform] publik | Direktuppspelning eller gruppbearbetning | Affärshändelsens schema |
 
 ## Kompatibilitet per resetyp {#feature-compatibility}
 
@@ -179,4 +179,3 @@ Nu när du förstår olika typer av resor är du redo att:
 **Behöver du jämföra med kampanjer?**
 
 * [Jämförelseguide för resor och kampanjer](../start/journeys-vs-campaigns.md) - Välj mellan resor, Action/API-kampanjer och samordnade kampanjer
-

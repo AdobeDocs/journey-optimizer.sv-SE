@@ -9,9 +9,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 version: Journey Orchestration
-source-git-commit: 4a15ee3ac4805880ce80f788e4619b501afb3d8b
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dry_run"
 >title="Torr körning"
->abstract="Den här resan är i Torrkörning. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation.  Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live."
+>abstract="Den här resan är i Torrkörning. Körning av Rundtur är ett särskilt läge för resepublicering i [!DNL Adobe Journey Optimizer] som gör att resenärerna kan testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation.  Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live."
 
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dry_run_start"
 >title="Publicera en resa i torrkörningsläge"
->abstract="Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata. När du har utformat din resa kan du utföra en torr körning för att bekräfta att den fungerar och se till att stegen är korrekta. I det här publiceringsläget kan du röka en resa utan att skicka kommunikation till någon profil."
+>abstract="Körningen av Rundtur är ett särskilt publiceringsläge för resan i [!DNL Adobe Journey Optimizer] som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata. När du har utformat din resa kan du utföra en torr körning för att bekräfta att den fungerar och se till att stegen är korrekta. I det här publiceringsläget kan du röka en resa utan att skicka kommunikation till någon profil."
 
-Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation.  Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live.
+Körning av Rundtur är ett särskilt läge för resepublicering i [!DNL Adobe Journey Optimizer] som gör att resenärerna kan testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation.  Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live.
 
 ➡️ [Läs mer om torr körning av resor i den här videon](#dry-run-video)
 
@@ -143,10 +143,10 @@ Körning av körning av resedagring genererar **stepEvents**. Dessa stepEvents h
 
 Om du exporterar stepEvent-data till **externa system** kan du filtrera körningar med flaggan `inDryRun`.
 
-Vid analys av **reserapporteringsmått** med hjälp av Adobe Experience Platform Query Service, måste torrkörningsgenererade steghändelser uteslutas. Om du vill göra det anger du flaggan `inDryRun` till `false`.
+Vid analys av **reserapporteringsmått** med hjälp av [!DNL Adobe Experience Platform]-frågetjänsten måste händelser som genererats av Dry Run uteslutas. Om du vill göra det anger du flaggan `inDryRun` till `false`.
 
 ## Instruktionsvideo {#dry-run-video}
 
 Lär dig hur du torkar dina resor i den här videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464686/?captions=swe&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)

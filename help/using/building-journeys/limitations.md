@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resor, begränsning
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 version: Journey Orchestration
-source-git-commit: de71f603b98c44d09ede5cc6bafc945f124ceb09
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '552'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Här är begränsningar för användningen av resor.
 
 ## Begränsningar för händelser {#events-limitations}
 
-* För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Detta Orchestration-ID måste bifogas till strömningsnyttolasten som kommer till Adobe Experience Platform. Denna begränsning gäller inte regelbaserade händelser.
+* För systemgenererade händelser måste strömmande data som används för att initiera en kundresa konfigureras inom Journey Optimizer först för att få ett unikt orkestrerings-ID. Det här Orchestration-ID:t måste läggas till i strömmande nyttolast som kommer till [!DNL Adobe Experience Platform]. Denna begränsning gäller inte regelbaserade händelser.
 
 ## Begränsningar för reaktionshändelser {#reaction-limitations}
 
@@ -59,13 +59,13 @@ Här är begränsningar för användningen av resor.
 
 ## Resor som börjar samtidigt som en profil skapas {#journeys-limitation-profile-creation}
 
-Det finns en fördröjning i skapandet/uppdateringen av API-baserade profiler i Adobe Experience Platform. Servicenivåmålet (SLT) i form av fördröjning är &lt; 1 min från intag till en enhetlig profil för 95:e percentilen begäranden, vid en volym på 20 000 förfrågningar per sekund (RPS).
+Det finns en fördröjning kopplad till skapande/uppdatering av API-baserad profil i [!DNL Adobe Experience Platform]. Servicenivåmålet (SLT) i form av fördröjning är &lt; 1 min från intag till en enhetlig profil för 95:e percentilen begäranden, vid en volym på 20 000 förfrågningar per sekund (RPS).
 
 Om en resa utlöses samtidigt för att skapa en profil och omedelbart kontrollerar/hämtar information från profiltjänsten kanske den inte fungerar som den ska.
 
 Du kan välja mellan följande två lösningar:
 
-* Lägg till en vänteaktivitet efter den första händelsen för att ge Adobe Experience Platform den tid det behöver för att utföra inmatningen till profiltjänsten.
+* Lägg till en vänteaktivitet efter den första händelsen för att ge [!DNL Adobe Experience Platform] den tid det behöver för att utföra inmatningen till profiltjänsten.
 
 * Konfigurera en resa som inte omedelbart utnyttjar profilen. Om resan till exempel är utformad för att bekräfta att ett konto har skapats, kan upplevelsehändelsen innehålla information som behövs för att skicka det första bekräftelsemeddelandet (förnamn, efternamn, e-postadress osv.).
 

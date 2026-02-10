@@ -10,9 +10,9 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 version: Journey Orchestration
-source-git-commit: 578950270213177b4d4cc67bad8ae627e440ff44
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1592'
 ht-degree: 16%
 
 ---
@@ -31,7 +31,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resorna förlitar sig faktiskt på Adobe Experience Platform API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [Adobe Experience Platform-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
@@ -57,7 +57,7 @@ Du kan börja felsöka med frågorna nedan:
   Content-type - application/json
   ```
 
-&#x200B;>>
+>>
 **För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
 
 ## Felsöka övergångar i testläge {#troubleshooting-test-transitions}
@@ -73,7 +73,7 @@ Om testprofilerna kommer in på resan men inte fortsätter förbi det första st
    * Se till att den aktuella tiden ligger inom resans aktiva datumfönster
    * Uppdatera reseegenskaperna om det behövs för att justera startdatumet
 
-* **Testa profilkonfigurationen** - Bekräfta att profilen är korrekt flaggad som en testprofil i Adobe Experience Platform. Mer information finns i [Skapa testprofiler](../audience/creating-test-profiles.md).
+* **Testa profilkonfigurationen** - Bekräfta att profilen är korrekt flaggad som en testprofil i [!DNL Adobe Experience Platform]. Mer information finns i [Skapa testprofiler](../audience/creating-test-profiles.md).
 
 * **Identitetsnamnrymd** - Kontrollera att det identitetsnamnutrymme som används i händelsekonfigurationen matchar namnutrymmet för testprofilen.
 
@@ -115,6 +115,8 @@ Om ett meddelande skickas via en anpassad åtgärd är det enda som kan kontroll
 
 ## Duplicerade poster i resestegshändelser {#duplicate-step-events}
 
+Använd det här avsnittet för att förstå varför dubblerade rader kan visas i guidade händelser.
+
 ### Varför ser jag flera poster med samma reseinstans, profil, nod och begärande-ID?
 
 När du frågar efter data om steg för resa kan du ibland se vad som verkar vara dubblettposter för samma körning. De här posterna har samma värden för:
@@ -128,7 +130,7 @@ De här posterna har dock **olika `_id` värden**, vilket är nyckelindikatorn s
 
 ### Vad orsakar detta beteende?
 
-Detta inträffar på grund av autoskalningsåtgärder i bakomliggande system (kallas även&quot;ombalansering&quot;) i Adobe Journey Optimizer mikrotjänstarkitektur. Under perioder med hög belastning eller systemoptimering:
+Detta inträffar på grund av autoskalningsåtgärder i serverdelen (kallas även ombalansering) i mikrotjänstarkitekturen för [!DNL Adobe Journey Optimizer]. Under perioder med hög belastning eller systemoptimering:
 
 1. En händelse i ett steg på resan börjar bearbetas och loggas till datamängden för händelser i ett steg på resan
 2. En automatisk skalning omfördelar arbetsbelastningen över tjänstinstanser
@@ -138,7 +140,7 @@ Det här är ett förväntat systembeteende och **fungerar som avsett**.
 
 ### Påverkar det körningen av resan eller budskapet?
 
-**Nej.** Effekten är begränsad till enbart loggning. Adobe Journey Optimizer har inbyggda funktioner för borttagning av dubbletter i meddelandekörningslagret som säkerställer:
+**Nej.** Effekten är begränsad till enbart loggning. [!DNL Adobe Journey Optimizer] har inbyggda funktioner för borttagning av dubbletter på meddelandekörningslagret som säkerställer:
 
 * Endast ett meddelande (e-post, SMS, push-meddelanden osv.) skickas till varje profil
 * Åtgärder utförs bara en gång

@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Använd Adobe Experience Platform-data under resor
-description: Lär dig hur du använder Dataset Lookup Activity i Adobe Journey Optimizer för att berika kundresor med externa data från Adobe Experience Platform.
+title: Använd  [!DNL Adobe Experience Platform] data i resor
+description: Lär dig hur du använder datauppsättningsaktiviteten i [!DNL Adobe Journey Optimizer] för att förbättra kundresor med externa data från [!DNL Adobe Experience Platform].
 feature: Journeys, Activities
 topic: Content Management
 role: User
@@ -10,9 +10,9 @@ level: Intermediate
 version: Journey Orchestration
 badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
-source-git-commit: 6e74fc363784fe4f4bae07bfe766035285c9a2ca
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dataset_lookup"
 >title="Uppslagsaktivitet för datauppsättning"
->abstract="Med aktiviteten **[!UICONTROL Dataset lookup]** kan du hämta data dynamiskt från Adobe Experience Platform postdatamängder under körning. Genom att utnyttja den här funktionen kan ni få tillgång till data som kanske inte finns i profilen eller händelsens nyttolast, vilket säkerställer att era kundinteraktioner är både relevanta och aktuella."
+>abstract="Med aktiviteten **[!UICONTROL Dataset lookup]** kan du hämta data dynamiskt från [!DNL Adobe Experience Platform] postdatamängder under körning. Genom att utnyttja den här funktionen kan ni få tillgång till data som kanske inte finns i profilen eller händelsens nyttolast, vilket säkerställer att era kundinteraktioner är både relevanta och aktuella."
 
-Med aktiviteten **[!UICONTROL Dataset lookup]** kan du hämta data dynamiskt från Adobe Experience Platform postdatamängder under körning. Genom att utnyttja den här funktionen kan ni få tillgång till data som kanske inte finns i profilen eller händelsens nyttolast, vilket säkerställer att era kundinteraktioner är både relevanta och aktuella.
+Med aktiviteten **[!UICONTROL Dataset lookup]** kan du hämta data dynamiskt från [!DNL Adobe Experience Platform] postdatamängder under körning. Genom att utnyttja den här funktionen kan ni få tillgång till data som kanske inte finns i profilen eller händelsens nyttolast, vilket säkerställer att era kundinteraktioner är både relevanta och aktuella.
 
 Viktiga fördelar:
 
@@ -38,9 +38,11 @@ Viktiga fördelar:
 
 ## Måste läsas {#must-read}
 
+Granska dessa krav innan du konfigurerar datasökningar.
+
 ### Aktivera datauppsättning
 
-Datauppsättningen måste aktiveras för sökning i Adobe Experience Platform. Detaljerad information finns i det här avsnittet: [Använd Adobe Experience Platform-data](../data/lookup-aep-data.md).
+Datauppsättningen måste aktiveras för sökning i [!DNL Adobe Experience Platform]. Detaljerad information finns i det här avsnittet: [Använd [!DNL Adobe Experience Platform] data](../data/lookup-aep-data.md).
 
 ### Begränsningar och begränsningar
 
@@ -64,7 +66,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Dataset lookup]**:
 
 1. Öppna kategorin **[!UICONTROL Orchestration]** och släpp en **[!UICONTROL Dataset lookup]**-aktivitet på arbetsytan.
 
-   ![Uppslagsaktivitet för Adobe Experience Platform-datauppsättningar under resan](assets/aep-data-activity.png)
+   ![[!DNL Adobe Experience Platform]-datauppsättningssökningsaktivitet på resan ](assets/aep-data-activity.png)
 
 1. Lägg till en etikett och en beskrivning.
 

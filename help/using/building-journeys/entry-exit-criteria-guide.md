@@ -8,19 +8,19 @@ role: User
 level: Intermediate
 keywords: inträde, utförsel, kriterier, resa, profil, återinträde, bästa praxis
 version: Journey Orchestration
-source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
+exl-id: e879a0f6-b969-4de0-a733-f2880d58d59b
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
-
 
 # Arbeta med kriterier för inträde och utträde på resan {#entry-exit-criteria-guide}
 
 Vid kundupplevelsesamordning kräver rätt budskap vid rätt tidpunkt exakt kontroll över när kunderna kommer in på och lämnar era resor. Att förstå och konfigurera kriterier för inträde och utträde kan göra skillnaden mellan en framgångsrik, engagerande kampanj och missade möjligheter eller utmattning av meddelanden.
 
-Den här guiden ger praktisk vägledning, exempel från verkligheten och bästa metoder för att hantera kriterier för att ta sig in på och lämna resan i Adobe Journey Optimizer.
+Den här handboken innehåller praktiska riktlinjer, exempel från verkligheten och metodtips för att hantera kriterier för inträde och utträde på resan i [!DNL Adobe Journey Optimizer].
 
 ## Vad är kriterier för inträde och utträde? {#what-are-criteria}
 
@@ -100,7 +100,7 @@ Samla in insikter om kundnöjdhet och produktresultat genom att begära feedback
 
 **Lär dig allt du behöver veta om anmälningsvillkor här:**
 
-* **[Händelsebaserade utlösare](../event/about-events.md)**: Använd händelser som&quot;profilskapande&quot;,&quot;transaktionen slutförd&quot; eller anpassade händelser för att starta en resa. [Konfigurera händelser](../event/about-creating.md) i **[!UICONTROL Administration]** > **[!UICONTROL Events]**, definiera [händelseschema och fält](../event/experience-event-schema.md) och lägg sedan till händelsen från paletten **[!UICONTROL Events]** i [resedesignern](using-the-journey-designer.md).
+* **[Händelsebaserade utlösare](../event/about-events.md)**: Använd händelser som&quot;profilskapande&quot;,&quot;transaktionen slutförd&quot; eller anpassade händelser för att starta en resa. [Konfigurera händelser](../event/about-creating.md) i **[!UICONTROL Administration]** > **[!UICONTROL Events]** och definiera [händelseschema och fält](../event/experience-event-schema.md). Lägg sedan till händelsen från paletten **[!UICONTROL Events]** i [resedesignern](using-the-journey-designer.md).
 
 * **[Målgruppsbaserad post](read-audience.md)**: Målsöker profiler som tillhör en viss målgrupp, antingen som en engångsbatch eller som ett återkommande schema. [Skapa målgrupper](../audience/creating-a-segment-definition.md) på menyn **[!UICONTROL Audiences]**, lägg till en **[!UICONTROL Read Audience]**-aktivitet och [konfigurera schemat](journey-properties.md#schedule).
 
@@ -132,11 +132,11 @@ Samla in insikter om kundnöjdhet och produktresultat genom att begära feedback
 
 Använd följande dokumenterade användningsexempel för stegvis implementeringsvägledning med fullständig teknisk information:
 
-* **[Kundintroduktionsresa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
+* **[Kundintroduktionsresa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding)** - Skapa personliga välkomstupplevelser med målgruppskvalificering, tidsgräns för evenemang och målbaserade avslutningar
 
-* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
+* **[Återvinning av övergiven kundvagn](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart)** - Återställa förlorad försäljning med händelseutlösta resor, spelböcker och kanalroutning
 
-* **[Återengagemangskampanjer](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
+* **[Återengagemangskampanjer](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma)** - Återvänd till inaktiva kunder med beteendeanpassning och aktivering av betalda medier
 
 * **[Skicka meddelanden till prenumeranter](message-to-subscribers-uc.md)** - Målprenumerationslistor med Läs publik och personaliserat innehåll
 
@@ -146,7 +146,7 @@ Använd följande dokumenterade användningsexempel för stegvis implementerings
 
 >[!TIP]
 >
->Bläddra bland alla tillgängliga användningsfall i [biblioteket för reseanvändningsfall](jo-use-cases.md) om du vill ha fler mönster och implementeringar, inklusive [mappa upp leveranser](ramp-up-deliveries-uc.md), [upplevelsehändelsemönster](exp-event-lookup.md) och [ta bort profiler från direktresor](journey-pause.md#apply-an-exit-criteria-in-a-paused-journey).
+>Bläddra bland alla tillgängliga användningsfall i [biblioteket för reseanvändningsfall](jo-use-cases.md) för fler mönster och implementeringar. Exempel är [mappa upp leveranser](ramp-up-deliveries-uc.md), [upplev händelsemönster](exp-event-lookup.md) och [ta bort profiler från direktresor](journey-pause.md#apply-an-exit-criteria-in-a-paused-journey).
 
 ## Bästa tillvägagångssätt för hantering av inträde och utträde {#best-practices}
 
@@ -196,7 +196,7 @@ Bevara kundernas förtroende och engagemang genom att styra meddelanderefrekvens
 
 ## Slutsats {#conclusion}
 
-Kriterierna för att resa in och ut är grundläggande när det gäller att leverera personaliserade, vältajmade och effektiva kundupplevelser med Adobe Journey Optimizer. Genom att skapa dessa villkor noggrant kan marknadsförarna öka engagemanget, minska friktionen och bygga starkare kundrelationer.
+Kriterierna för inträde och utträde på resa är grundläggande när det gäller att leverera personaliserade, aktuella och effektiva kundupplevelser med [!DNL Adobe Journey Optimizer]. Genom att skapa dessa villkor noggrant kan marknadsförarna öka engagemanget, minska friktionen och bygga starkare kundrelationer.
 
 Börja med att tydligt kartlägga kundens triggers och exitpunkter, testa noggrant och övervaka resultaten för att kontinuerligt förfina kundresan.
 
@@ -204,12 +204,12 @@ Börja med att tydligt kartlägga kundens triggers och exitpunkter, testa noggra
 
 **Teknisk dokumentation**
 
-[Profilingångshantering](entry-management.md) | [&#x200B; Reseegenskaper och avslutningskriterier &#x200B;](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
+[Profilingångshantering](entry-management.md) | [ Reseegenskaper och avslutningskriterier ](journey-properties.md) | [Hur resorna avslutas](end-journey.md) | [Ytterligare identifierare](supplemental-identifier.md) | [Resedesigner](using-the-journey-designer.md)
 
 **Självstudiekurser och exempel**
 
-[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo &#x200B;](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958?profile.language=sv)
+[Användningsexempel på resan](jo-use-cases.md) | [Video om kundintroduktion](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding) | [Övergiven kundvagnsvideo ](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart) | [Community-blogg: Inmatnings- och avslutningskriterier](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-journey-entry-and-exit-criteria-in-adobe-journey/ba-p/760958)
 
 **Relaterade funktioner**
 
-[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål &#x200B;](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)
+[Publikkvalificeringshändelser](audience-qualification-events.md) | [Resultatstatistik och mål ](success-metrics.md) | [Konflikthantering](../conflict-prioritization/conflicts.md) | [Frekvensbegränsning](../conflict-prioritization/rule-sets.md) | [Testa resor](testing-the-journey.md) | [Villkorsaktivitet](condition-activity.md) | [Reaktionshändelser](reaction-events.md) | [Vänteaktivitet](wait-activity.md)

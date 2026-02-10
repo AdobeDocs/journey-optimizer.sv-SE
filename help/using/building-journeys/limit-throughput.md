@@ -9,18 +9,20 @@ level: Experienced
 keywords: resa, datakällor, begränsning, genomströmning, anpassade åtgärder
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
 
 # Användningsfall: begränsa dataflöde med externa datakällor och anpassade åtgärder{#limit-throughput}
 
+Använd det här användningsexemplet för att begränsa hanteringen av resor när externa system måste hantera ett begränsat antal förfrågningar per sekund.
+
 ## Beskrivning av användningsfallet
 
-Med Adobe Journey Optimizer kan användare skicka API-anrop till externa system via anpassade åtgärder och datakällor.
+I [!DNL Adobe Journey Optimizer] kan användare skicka API-anrop till externa system via anpassade åtgärder och datakällor.
 
 Detta kan göras med:
 

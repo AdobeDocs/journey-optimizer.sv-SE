@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skapa den första resan
-description: Viktiga steg för att skapa din första resa med Adobe Journey Optimizer
+description: Viktiga steg för att skapa din första resa med  [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started
 topic: Content Management
 role: User
@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 version: Journey Orchestration
-source-git-commit: 3866cedf2c264d94e981a43b649073aa1bdcd4f2
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '283'
 ht-degree: 3%
 
 ---
@@ -22,14 +22,14 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card2"
 >title="Skapa resor"
->abstract="Använd **Adobe Journey Optimizer** för att skapa användningsfall för realtidssamordning med kontextuella data som lagras i händelser eller datakällor."
+>abstract="Använd **[!DNL Adobe Journey Optimizer]** för att skapa användningsfall för realtidssamordning med hjälp av kontextuella data som lagras i händelser eller datakällor."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_create"
 >title="Resor"
 >abstract="Utforma kundresor för att leverera personaliserade, sammanhangsbaserade upplevelser. Med Journey Optimizer kan du skapa användningsfall för realtidssamordning med kontextuella data som lagras i händelser eller datakällor. Fliken **Översikt** visar en instrumentpanel med viktiga mått för dina resor. Fliken **Bläddra** visar en lista över befintliga resor."
 
-Adobe Journey Optimizer har en flerkanalig orkestreringsyta som gör att marknadsförarna kan harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Användargränssnittet för resan visas på [den här sidan](journey-ui.md).
+[!DNL Adobe Journey Optimizer] innehåller en flerkanalig orchestration-arbetsyta som gör det möjligt för marknadsförare att harmonisera marknadsföringen med ett-till-ett-kundengagemang. Med användargränssnittet kan du enkelt dra och släppa aktiviteter från paletten till arbetsytan för att skapa din resa. Användargränssnittet för resan visas på [den här sidan](journey-ui.md).
 
 ![exempel på resans arbetsyta](assets/journey38.png)
 
@@ -46,82 +46,3 @@ Innan du börjar bygga din resa måste du se till att de relevanta konfiguration
 
 * Om du vill utlösa dina resor individuellt när en händelse tas emot, **konfigurerar du en händelse**. Definiera den förväntade informationen och hur den ska behandlas. [Läs mer](../event/about-events.md).
 
-<!--   ![](assets/jo-event7bis.png)  -->
-
-* Din resa kan även lyssna på Adobe Experience Platform målgrupper för att skicka meddelanden i grupper till en viss uppsättning profiler. För detta skapar **målgrupper**. [Läs mer](../audience/about-audiences.md).
-
-<!--   ![](assets/segment2.png)  -->
-
-* Definiera en anslutning till ett system för att hämta ytterligare information som ska användas i dina resor, till exempel i dina villkor. Den här anslutningen är beroende av en **datakälla**. [Läs mer](../datasource/about-data-sources.md).
-
-<!--   ![](assets/jo-datasource.png)  -->
-
-* Journey Optimizer har [inbyggda meddelandefunktioner](../building-journeys/journeys-message.md). Om du använder ett tredjepartssystem för att skicka meddelanden kan du **skapa en anpassad åtgärd**. Läs mer i det här [avsnittet](../action/action.md).
-
-<!--    ![](assets/custom2.png)  -->
-
-
-Som datatekniker beskrivs stegen för att konfigurera dina resor, inklusive datakällor, händelser och åtgärder i [det här avsnittet](../configuration/about-data-sources-events-actions.md).
-
-
->[!NOTE]
->
->Resegarantier och begränsningar finns på [den här sidan](../start/guardrails.md)
-
-## Skapa en resa {#jo-build}
-
-Så här skapar du en resa i flera steg:
-
-1. Klicka på **[!UICONTROL Journeys]** på menyn RESURSHANTERING.
-
-1. Klicka på knappen **[!UICONTROL Create Journey]** för att skapa en ny resa.
-
-1. Redigera kundens konfigurationsruta för att definiera namnet på resan och ange dess egenskaper. Lär dig hur du anger egenskaper för din resa på [den här sidan](journey-properties.md).
-
-   ![Resegenskapspanelen med inställningar och konfigurationsalternativ](assets/jo-properties.png)
-
-Sedan kan du börja designa din resa.
-
-## Designa resan {#jo-design}
-
-Flerkanalsdesignern hjälper er att skapa flerstegsresor med riktade målgrupper, uppdateringar baserade på kundinteraktioner eller affärsinteraktioner i realtid och flerkanalsmeddelanden med ett intuitivt dra-och-släpp-gränssnitt.
-
-![Resedesignerns gränssnitt med aktivitetspaletten och arbetsytan](assets/journey38.png)
-
-1. Börja med att dra och släppa en händelse eller en **Läs publikens**-aktivitet från paletten till arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
-
-   ![Konfiguration av målgruppsaktivitet för val av målgrupp](assets/read-segment.png)
-
-1. Dra och släpp en händelse eller en **Läs publikens**-aktivitet från paletten på arbetsytan. Mer information om resedesign finns i [det här avsnittet](using-the-journey-designer.md).
-
-## Testa resan {#jo-test}
-
-Testa resan innan du publicerar den när du har byggt den. Journey Optimizer erbjuder ett **testläge** som ett sätt att visa testprofiler under resan och upptäcka eventuella fel före aktiveringen. Genom att köra snabbtester kan du vara säker på att resorna fungerar som de ska så att du kan publicera dem med tillförsikt. Lär dig hur du testar din resa [i det här avsnittet](testing-the-journey.md)
-
-Du kan även utföra din resa i **Torr körning**. Körning på resa Dry är ett särskilt publiceringsläge för resor i Adobe Journey Optimizer som gör det möjligt för resenärer att testa en resa med hjälp av verkliga produktionsdata utan att behöva kontakta riktiga kunder eller uppdatera profilinformation. Den här funktionen hjälper resenärer att få förtroende för sin resedesign och målgruppsanpassning innan de publicerar den live. Lär dig hur du publicerar en resa i körningsläget [&#x200B; i det här avsnittet](journey-dry-run.md).
-
-## Publicera resan {#jo-pub}
-
-Du måste publicera en resa för att aktivera den och göra den tillgänglig för nya profiler för att delta i den. Innan du publicerar din resa kontrollerar du att den är giltig och att inga fel har uppstått. Du kan inte publicera en resa med fel. Journey Optimizer validerar också nyttolastens storlek vid sparande och publiceringstid för att bevara stabilitet och prestanda. Läs mer om resepublicering i det här [avsnittet](publish-journey.md) och se [validering av nyttolaststorlek för resan](../start/guardrails.md#journey-payload-size).
-
-![Hela kundresan med målgrupp, villkor och åtgärder](assets/jo-journeyuc2_32bis.png)
-
-När den publicerats kan ni övervaka er resa med de dedikerade rapporteringsverktygen för att mäta hur effektiv resan är.
-
-![Reseanalysrapport som visar prestanda och statistik](assets/jo-dynamic_report_journey_12.png)
-
-Läs mer om reserapporter i det här [avsnittet](../reports/live-report.md).
-
-## Ytterligare resurser
-
-* **[Översikt över resedesignern](using-the-journey-designer.md)** - bemästra arbetsytans gränssnitt för att designa och samordna kundresor.
-* **[Reseaktiviteter](about-journey-activities.md)** - Upptäck alla tillgängliga aktiviteter, inklusive händelser, åtgärder och orkestreringskomponenter.
-* **[Testar resor](testing-the-journey.md)** - Lär dig hur du testar dina resor i testläge innan du publicerar till produktion.
-* **[Publicerar resor](publish-journey.md)** - Förstå processen för att publicera resan och hur du hanterar direktresor.
-* **[Reserapportering](report-journey.md)** - Spåra och analysera reseprestanda med detaljerade mått och insikter.
-* **[Felsökning av resor](troubleshooting.md)** - Hitta lösningar på vanliga reseproblem och bästa praxis för felsökning.
-* **[Resehandledningar](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Utforska steg-för-steg-videosjälvstudiekurser om resebyggande och metodtips.
-
->[!NOTE]
->
->Om du behöver ändra en **live**-resa [skapar du en ny version](journey-ui.md#journey-filter) av din resa.

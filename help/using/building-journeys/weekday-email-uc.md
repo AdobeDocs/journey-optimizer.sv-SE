@@ -2,23 +2,24 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Skicka e-post endast på vardagar
-description: Lär dig hur du konfigurerar en resa för att skicka e-post endast på vardagar i Adobe Journey Optimizer
+description: Lär dig hur du konfigurerar en resa för att skicka e-post endast på veckodagar i  [!DNL Adobe Journey Optimizer]
 feature: Journeys, Use Cases, Email
 topic: Content Management
 role: User
 level: Intermediate
 keywords: resa, användningsfall, veckodagar, villkor, e-post, schemaläggning
 version: Journey Orchestration
-source-git-commit: 970712614b0d4da37d9ecbe45701f93147b1428c
+exl-id: 2f313e59-ee50-473c-9346-8859889346ec
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
 
 # Skicka e-post endast på vardagar {#send-emails-only-on-weekdays}
 
-Det här användningsexemplet visar hur du konfigurerar en resa i Adobe Journey Optimizer som endast skickar e-post på vardagar (måndag till fredag). För profiler som går in på resan på helger (lördag eller söndag) köas e-postmeddelanden automatiskt och skickas på måndag vid en viss tidpunkt. Detta säkerställer ett optimalt engagemang genom att leverera meddelanden under arbetsveckan.
+Det här användningsexemplet visar hur du konfigurerar en resa i [!DNL Adobe Journey Optimizer] som endast skickar e-post på veckodagar (måndag till fredag). För profiler som går in på resan på helger (lördag eller söndag) köas e-postmeddelanden automatiskt och skickas på måndag vid en viss tidpunkt. Detta säkerställer ett optimalt engagemang genom att leverera meddelanden under arbetsveckan.
 
 ## Använd ärendeöversikt
 
@@ -32,14 +33,16 @@ Den här metoden är idealisk för e-postkampanjer från företag till företag,
 
 >[!NOTE]
 >
->För att implementera det här användningsfallet behöver du en aktiv Adobe Journey Optimizer-instans med en konfigurerad [e-postkanalsyta](../configuration/channel-surfaces.md), en [målgrupp](../audience/about-audiences.md) eller [händelse](../event/about-events.md) som utlöser resan, samt en grundläggande förståelse för [resevillkor](condition-activity.md) och [uttryck](expression/expressionadvanced.md).
+>För att implementera det här användningsfallet behöver du en aktiv [!DNL Adobe Journey Optimizer]-instans med en konfigurerad [e-postkanalsyta](../configuration/channel-surfaces.md), en [målgrupp](../audience/about-audiences.md) eller [händelse](../event/about-events.md) som utlöser resan, samt en grundläggande förståelse för [resevillkor](condition-activity.md) och [uttryck](expression/expressionadvanced.md).
 
 
 ## Implementeringssteg
 
+Följ de här stegen för att skapa e-postflödet som bara gäller vardagar.
+
 ### Steg 1: Skapa din resa
 
-1. Navigera till **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** i Adobe Journey Optimizer.
+1. Navigera till **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** i [!DNL Adobe Journey Optimizer].
 
 1. Klicka på **[!UICONTROL Create Journey]** för att [skapa en ny resa](journey-gs.md).
 
@@ -53,7 +56,7 @@ Den här metoden är idealisk för e-postkampanjer från företag till företag,
 
 Direkt efter att resan påbörjats lägger du till en **[!UICONTROL Condition]**-aktivitet för att kontrollera om den aktuella dagen är lördag eller söndag. Det innebär att arbetsflödet grenas i enlighet därmed.
 
-1. Dra och släpp en [**[!UICONTROL Condition]**&#x200B;aktivitet &#x200B;](condition-activity.md) på arbetsytan efter startpunkten.
+1. Dra och släpp en [**[!UICONTROL Condition]**aktivitet ](condition-activity.md) på arbetsytan efter startpunkten.
 
 1. Klicka på aktiviteten **[!UICONTROL Condition]** för att öppna dess konfigurationspanel.
 
@@ -149,7 +152,7 @@ Detta garanterar att alla e-postmeddelanden skickas endast på vardagar, med hel
 
 ### Steg 6: Testa din resa
 
-Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimizer testläge för att bekräfta att allt fungerar som förväntat:
+Innan du publicerar bör du noggrant testa din reselogik i testläget för [!DNL Adobe Journey Optimizer] för att bekräfta att allt fungerar som förväntat:
 
 1. Klicka på knappen **[!UICONTROL Test]** längst upp till höger.
 
@@ -168,7 +171,7 @@ Innan du publicerar testar du kundens reselogik noggrant i Adobe Journey Optimiz
 
 >[!IMPORTANT]
 >
->Testa alltid kundreslogiken i testläge för att kontrollera att vänteaktiviteterna fungerar som förväntat. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. Mer information finns i [testning av resan &#x200B;](testing-the-journey.md).
+>Testa alltid kundreslogiken i testläge för att kontrollera att vänteaktiviteterna fungerar som förväntat. Använd testläge för att simulera olika inmatningsscenarier och validera att helgposter är korrekt köade för måndagsleverans. Mer information finns i [testning av resan ](testing-the-journey.md).
 
 ### Steg 7: Publicera din resa
 

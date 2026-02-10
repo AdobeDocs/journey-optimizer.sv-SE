@@ -9,9 +9,9 @@ level: Intermediate
 keywords: återinträde, resa, profil, återkommande
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
 version: Journey Orchestration
-source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Hanteringen av profilentréer beror på typen av resa.
 
 ## Resetyper {#types-of-journeys}
 
-Med Adobe Journey Optimizer kan du skapa följande typer av resor:
+Med [!DNL Adobe Journey Optimizer] kan du skapa följande typer av resor:
 
 * **Unitary event**-resor: Dessa resor börjar med en Unitary-händelse. När händelsen tas emot kommer den associerade profilen in i resan. [Läs mer](#entry-unitary)
 
@@ -49,13 +49,13 @@ Bearbetningshastigheten för resan påverkas av flera faktorer som avgör hur pr
 
 Hur profiler anger resor och hur ofta de förväntas tillkomma beror på den första aktiviteten som används:
 
-* **Läs målgrupper** resor (batchscenario, där du anger en målgrupp med profiler som mål och utlöser en resa för den fullständiga målgruppen): det högsta antalet är 20 000 TPS (transaktioner per sekund), vilket är den kvot som är tillgänglig på **sandlådenivå**. Om du har flera resor som körs samtidigt på den sandlådan kanske 20 000 TPS inte är möjligt. Använd det här maxvärdet som bästa scenario.
+* **Läs målgrupper** resor (batchscenario, där du riktar in dig på en målgrupp med profiler och utlöser en resa för hela målgruppen): det högsta antalet är 20 000 TPS (transaktioner per sekund). Detta är kvoten som är tillgänglig på **sandlådenivå**. Om flera resor körs samtidigt i den sandlådan kanske 20 000 TPS inte kan uppnås. Använd det här maxscenariot som bästa fall.
 
 * **Målgruppskvalificering** resor (enställigt scenario, där du vill utlösa en resa när en profil kvalificerar eller diskvalificerar för en målgrupp): det högsta antalet är 5 000 TPS. Observera att detta är en delad gräns med resor som börjar med händelser och som också delas över resor på **organisationsnivå**.
 
 * **Enhetlig händelse** resor (enställigt scenario, där du vill utlösa en resa när en händelse skickas från en profil): samma som ovan, båda delar samma gräns på 5 000 TPS. Mer information om händelseflöde för resan finns i [det här avsnittet](../event/about-events.md#event-thoughput).
 
-* **Affärshändelse** - resor (som egentligen är ett enastående till gruppscenario eftersom en affärshändelse alltid följs av en läsare): affärshändelser räknas också in i kvoten på 5 000 TPS, men aktiviteten Läs målgrupp direkt efter har samma gräns som resor som börjar med en läsare (20 000 TPS).
+* **Affärshändelse** - resor (ett enhetsscenario eftersom en affärshändelse alltid följs av en läsare): affärshändelser räknas in i kvoten på 5 000 TPS. Den följande aktiviteten för läsmålgrupper har samma begränsning som resor som börjar med en läsare (20 000 TPS).
 
 ### Evenemang och målgruppskvalifikationer inom resor {#events-inside-journeys}
 
@@ -67,7 +67,7 @@ Efter ingången kan du använda **Unitary-aktiviteter** eller **Audience-kvalifi
 
 ### Åtgärdsaktiviteter {#action-activities-impact}
 
-Slutligen kan **åtgärd**-aktiviteter (interna kanaler som e-post, SMS, push osv., utgående eller inkommande, Anpassade åtgärder, Hoppar som skickar profiler till andra resor, Uppdatera profiler som skickar data till den enhetliga profiltjänsten osv.) påverkas av profilinläsningen från resor men kan även påverka bearbetningsfrekvensen. En anpassad åtgärd som till exempel har en extern slutpunkt med hög svarstid som mål kommer att göra resebearbetningen långsammare.
+Slutligen kan **åtgärd**-aktiviteter påverkas av profilinläsningen från resor och även påverka bearbetningsfrekvensen. Det kan vara inbyggda kanaler som e-post, SMS och push, plus anpassade åtgärder, hopp till andra resor och uppdatera profilaktiviteter. En anpassad åtgärd som till exempel har en extern slutpunkt med hög svarstid som mål kommer att göra resebearbetningen långsammare.
 
 För anpassade åtgärder är standardinställningen 300 000 anrop per minut, vilket kan ändras med en anpassad fästprincip. Läs mer om anpassad åtgärdsbegränsning i [det här avsnittet](../configuration/external-systems.md#capping).
 

@@ -2,30 +2,30 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Orchestration - Frågor och svar
-description: Frågor och svar om Journey Orchestration i Adobe Journey Optimizer
+description: Vanliga frågor om Journey Orchestration i [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: resa, frågor, svar, felsökning, hjälp, guide, orkestrering
 version: Journey Orchestration
-source-git-commit: bf5d018fa6c3e88cf84345e892de72ada9f2c489
+exl-id: cac9fc24-b78e-48d9-9c0c-f43181246f6f
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '5220'
+source-wordcount: '5180'
 ht-degree: 0%
 
 ---
 
-
 # Journey Orchestration - Frågor och svar {#faq-journeys}
 
-Hitta svar på vanliga frågor om Journey Orchestration i Adobe Journey Optimizer.
+Hitta svar på vanliga frågor om Journey Orchestration i [!DNL Adobe Journey Optimizer].
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ta upp din fråga. Du kan även ansluta till [[!DNL Adobe Journey Optimizer] communityn](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 ## Allmänna begrepp
 
-+++ Vad är en resa i Adobe Journey Optimizer?
++++ Vad är en resa i [!DNL Adobe Journey Optimizer]?
 
 En resa är en flerstegssamordning som gör att ni kan designa och köra kundupplevelser i realtid i flera kanaler. Journeys kombinerar händelser, samordnade aktiviteter, åtgärder och meddelanden för att skapa personaliserade, sammanhangsbaserade upplevelser baserade på kundbeteende och affärshändelser.
 
@@ -35,10 +35,10 @@ Läs mer om [resor](journey.md).
 
 +++ Vilka typer av resor finns det?
 
-Adobe Journey Optimizer stöder fyra typer av resor:
+[!DNL Adobe Journey Optimizer] har stöd för fyra typer av resor:
 
 * **Unitära resor**: Utlöses individuellt av en händelse (t.ex. ett köp, appinloggning). Profilerna kommer in på resan en i taget när händelsen inträffar.
-* **Läs målgruppsresor**: Börja med en målgrupp från Adobe Experience Platform och skicka meddelanden gruppvis till alla profiler i den målgruppen.
+* **Läs målgruppsresor**: Börja med en målgrupp från [!DNL Adobe Experience Platform] och skicka meddelanden gruppvis till alla profiler i den målgruppen.
 * **Målgruppskvalificeringsresor**: Utlöses när profiler kvalificerar sig för (eller avslutar) ett visst målgruppssegment. Profilerna går in på resan när de uppfyller målgruppskriterierna.
 * **Affärshändelseresor**: Utlöses av affärshändelser (t.ex. börsuppdateringar, vädervarningar) som påverkar flera profiler samtidigt.
 
@@ -56,7 +56,7 @@ Läs mer om [resetyper](entry-management.md#types-of-journeys).
 * **[API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md)**: Kampanjer utlöses via API-anrop, vilket gör att integrering med externa system kan skicka meddelanden baserat på realtidshändelser eller affärslogik.
 * **[Samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)**: Flerstegs målgruppsbaserade kampanjer som bygger på en arbetsyta och som kan innehålla villkor, väntetider och flera åtgärder för att skapa schemalagda, samordnade upplevelser.
 
-**Bästa praxis**: Använd [resor](journey.md) för komplext, händelseutlöst engagemang med avancerad samordning, [åtgärdskampanjer](../campaigns/create-campaign.md) för schemalagd, målgruppsbaserad kommunikation, [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md) för programmatisk utlösande från externa system och [samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md) för kommunikation i flera steg med kampanjspecifika krav.
+**Bästa praxis**: Använd [resor](journey.md) för komplext, händelseutlöst engagemang med avancerad samordning. Använd [åtgärdskampanjer](../campaigns/create-campaign.md) för schemalagd, målgruppsbaserad kommunikation. Använd [API-utlösta kampanjer](../campaigns/api-triggered-campaigns.md) för programmatisk utlösande från externa system. Använd [samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md) för kommunikation i flera steg med kampanjspecifika krav.
 
 +++
 
@@ -76,7 +76,7 @@ Läs mer om [reseaktiviteter](about-journey-activities.md).
 
 +++ Vilka typer av målgrupper stöds vid resor och vilka begränsningar har de?
 
-Adobe Journey Optimizer har stöd för fyra typer av målgrupper med olika egenskaper och skyddsräcken:
+[!DNL Adobe Journey Optimizer] stöder fyra typer av målgrupper, var och en med olika egenskaper och skyddsprofiler:
 
 **1. Direktuppspelande målgrupper**
 
@@ -110,11 +110,11 @@ Adobe Journey Optimizer har stöd för fyra typer av målgrupper med olika egens
    * Storleksbegränsningar för CSV-filer gäller (se produktdokumentationen för aktuella begränsningar)
    * Målgruppsmedlemmarna är statiska tills de uppdateras med ny överföring
    * Identitetsnamnrymden måste matcha resenamnrymden
-   * Profilerna måste finnas i Adobe Experience Platform
+   * Profiler måste finnas i [!DNL Adobe Experience Platform]
 
 **4. Vanliga målgrupper (Federated Audience Composition)**
 
-* **Beskrivning**: Målgrupper som skapats med federerade data, så att du kan fråga efter och sätta samman målgrupper från externa datalager utan att kopiera data till Adobe Experience Platform
+* **Beskrivning**: Målgrupper skapade med federerade data, så att du kan fråga efter och sätta samman målgrupper från externa datalager utan att kopiera data till [!DNL Adobe Experience Platform]
 * **Utvärdering**: Statisk disposition uppdateras när den federerade målgruppskompositionen körs
 * **Reseanvändning**: Stöds i Läs målgrupps- och villkorsaktiviteter; **stöds inte** i målgruppskvalificeringsresor (liknar överföring av målgrupper från ett backend-perspektiv)
 * **Bäst för**: Integrering av datalager i företag, målgruppskomposition med externa datakällor, scenarier där data måste finnas kvar i externa system
@@ -187,7 +187,7 @@ Följ [steg för steg-guiden](journey-gs.md).
 Förutsättningar beror på din resetyp:
 
 * **Händelseutlösta resor**: Konfigurera händelser för att definiera när profiler ska gå in på resan
-* **Målgruppsbaserade resor**: Skapa målgrupper i Adobe Experience Platform
+* **Målgruppsbaserade resor**: Skapa målgrupper i [!DNL Adobe Experience Platform]
 * **Dataanrikning**: Konfigurera datakällor för att hämta ytterligare information
 * **Tredjepartsintegreringar**: Konfigurera anpassade åtgärder om externa system används
 
@@ -202,7 +202,7 @@ Ja, det finns flera sätt att utnyttja externa data:
 **God praxis**:
 
 * **Anpassade åtgärder**: Anropa externa API:er via anpassade åtgärder för att hämta eller skicka data till tredjepartssystem. Detta är det rekommenderade tillvägagångssättet för realtidsinteraktion med externa system.
-* **Datauppsättningssökning**: Om du kan läsa in data från externa system till Adobe Experience Platform använder du sökfunktionen för datauppsättningar för att hämta information som lagras i Experience Platform datauppsättningar.
+* **Datauppsättningssökning**: Om du kan läsa in data från externa system till [!DNL Adobe Experience Platform] kan du använda sökfunktionen för datauppsättningar för att hämta information som lagras i Experience Platform datauppsättningar.
 * **Externa datakällor**: Konfigurera externa datakällor för att hämta information från API-tjänster från tredje part (mindre rekommenderas än ovanstående metoder).
 
 Med dessa alternativ kan ni berika kundupplevelsen med data från era CRM, lojalitetssystem, vädertjänster eller andra externa plattformar.
@@ -247,7 +247,7 @@ Läs mer om [vänteaktiviteter](wait-activity.md).
 
 +++ Kan jag uppdatera profilinformation under en resa?
 
-Ja. Använd aktiviteten **Uppdatera profil** för att ändra profilattribut i Adobe Experience Platform baserat på resehändelser eller villkor. Det här är användbart när du vill uppdatera kundlojalitetspunkter, registrera milstolpar för kundresan, ändra inställningar eller spåra kundinteraktionspoäng.
+Ja. Använd aktiviteten **Uppdatera profil** för att ändra profilattribut i [!DNL Adobe Experience Platform] baserat på resehändelser eller villkor. Det här är användbart när du vill uppdatera kundlojalitetspunkter, registrera milstolpar för kundresan, ändra inställningar eller spåra kundinteraktionspoäng.
 
 Läs mer om [profiluppdateringar](update-profiles.md).
 
@@ -468,7 +468,7 @@ Vanliga orsaker till varför profiler inte får resa:
 * **Resan har inte publicerats**: Resan har statusen Utkast
 * **Ogiltigt namnområde**: Resursens namnområde matchar inte profilens identitet
 * **Resan stängd**: Resan tar inte längre emot nya ingångar
-* **Strömmande timing för målgruppskvalifikation**: För resor som använder Audience Qualification med direktuppspelade målgrupper kanske profiler inte kommer in om de redan fanns i målgruppen innan resan publicerades, eller om resan inte har slutfört sin aktiveringsperiod (upp till 10 minuter efter publiceringen)
+* **Strömmande timing för målgruppskvalifikation**: För resor som använder Audience Qualification med direktuppspelade målgrupper kanske profiler inte kommer in om de redan fanns i målgruppen innan resan publicerades. De kan också fördröjas om resan inte har slutfört sin aktiveringsperiod (upp till 10 minuter efter publiceringen).
 
 Läs mer om [hantering av mottagarnas inträde](entry-management.md) och [bedömning av målgruppernas kvalificeringstider](audience-qualification-events.md#streaming-entry-caveats).
 
@@ -699,12 +699,12 @@ Läs mer om [anpassade åtgärder](using-custom-actions.md).
 
 +++
 
-+++ Hur kan jag använda Adobe Campaign på resor?
++++ Hur kan jag använda [!DNL Adobe Campaign] med resor?
 
-Journey Optimizer kan integreras med Adobe Campaign för att utnyttja sina avancerade funktioner:
+Journey Optimizer kan integreras med [!DNL Adobe Campaign] för att utnyttja sina avancerade funktioner:
 
-* **Adobe Campaign Standard**: Använd Campaign Standard-åtgärder för att skicka transaktionsmeddelanden
-* **Adobe Campaign v7/v8**: Utlös kampanjarbetsflöden och använd Campaigns leveransinfrastruktur
+* **[!DNL Adobe Campaign]Standard**: Använd Campaign Standard-åtgärder för att skicka transaktionsmeddelanden
+* **[!DNL Adobe Campaign]v7/v8**: Utlös kampanjarbetsflöden och använd Campaigns leveransinfrastruktur
 
 **Bästa praxis**: Använd den här integreringen om du har befintliga Campaign-mallar, datamodeller eller om du behöver Campaign-specifika funktioner.
 
@@ -802,7 +802,7 @@ Läs mer om [affärshändelser](general-events.md).
 
 +++ Vad är sammanslagningspolicyer och hur påverkar de resorna?
 
-**Sammanslagningsprinciper** avgör hur Adobe Experience Platform kombinerar data från flera källor för att skapa en enhetlig profilvy. De definierar regler för dataprioritet och identitetssammanfogning när det finns profilfragment i olika datauppsättningar.
+**Sammanslagningsprinciper** avgör hur [!DNL Adobe Experience Platform] kombinerar data från flera källor för att skapa en enhetlig profilvy. De definierar regler för dataprioritet och identitetssammanfogning när det finns profilfragment i olika datauppsättningar.
 
 **Påverkan på resor**:
 
@@ -931,7 +931,7 @@ Läs mer om [resedesign](using-the-journey-designer.md) och [skyddsutkast och be
 
 * Använd [testläge](testing-the-journey.md) och [torr körning](journey-dry-run.md) för att validera prestanda före publicering
 * Minimera externa API-anrop via [anpassade åtgärder](using-custom-actions.md) för att undvika fördröjning och beroende av system från tredje part
-* Lagra data som används ofta i Adobe Experience Platform med [datauppslagssökning](dataset-lookup.md) i stället för att göra externa anrop, när det är möjligt
+* Lagra data som används ofta i [!DNL Adobe Experience Platform] med [datasuppslagning](dataset-lookup.md) i stället för att göra externa anrop, när det är möjligt
 * Granska och optimera prestanda för [meddelandeleverans](journeys-message.md)
 
 Läs mer om [skyddsutkast och begränsningar](../start/guardrails.md).
@@ -946,4 +946,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Skapa den första resan](journey-gs.md)
 * [Felsökningsguider](troubleshooting.md)
 * [Användningsexempel på resa](jo-use-cases.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

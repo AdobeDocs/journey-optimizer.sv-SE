@@ -2,24 +2,24 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Orchestration - fullständig guide
-description: Omfattande guide för att komma igång med resesamordning i Adobe Journey Optimizer
+description: Omfattande guide för att komma igång med resesamordning i  [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 keywords: resa, orkestrering, komma igång, introduktion, funktioner
-source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
+exl-id: 96b1d619-986d-493d-a73b-d7c63b92cca8
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '839'
 ht-degree: 1%
 
 ---
 
-
 # Journey Orchestration - fullständig guide{#journey-orchestration-guide}
 
-Med resor i Adobe Journey Optimizer kan ni skapa personaliserade kundresor i flera steg som i realtid anpassar sig efter målgruppens beteende och behov. Med en intuitiv dra-och-släpp-arbetsyta kan ni samordna meddelanden och åtgärder i flera kanaler och utnyttja sammanhangsberoende data och målgruppsanpassning för maximal effekt.
+Resor i [!DNL Adobe Journey Optimizer] ger dig möjlighet att skapa personaliserade kundresor i flera steg som i realtid anpassar sig efter målgruppens beteende och behov. Med en intuitiv dra-och-släpp-arbetsyta kan ni samordna meddelanden och åtgärder i flera kanaler och utnyttja sammanhangsberoende data och målgruppsanpassning för maximal effekt.
 
 Oavsett om ni utforskar triggers i realtid, hanterar reseegenskaper eller använder avancerade verktyg som anpassade åtgärder och uttryck, ger den här guiden en tydlig färdplan för att utforma och förfina resor som levererar meningsfulla och vältajmade kundupplevelser.
 
@@ -39,27 +39,27 @@ Journey Optimizer resedesigner har allt som marknadsförare och reseansvariga be
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 **Realtid och batchleverans**
 
-Skicka **enhetsleverans** i realtid när en händelse tas emot, eller **i batch** med Adobe Experience Platform-målgrupper.
+Skicka **enhetsleverans** i realtid när en händelse tas emot, eller **i batch** med [!DNL Adobe Experience Platform] målgrupper.
 
 [Läs mer om reseanmälan](entry-management.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
 **Sammanhangsberoende data**
 
-Utnyttja **sammanhangsbaserade data** från händelser, information från Adobe Experience Platform eller data från API-tjänster från tredje part.
+Utnyttja **sammanhangsbaserade data** från händelser, information från [!DNL Adobe Experience Platform] eller data från API-tjänster från tredje part.
 
 [Arbeta med datakällor](../datasource/about-data-sources.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 **Inbyggda åtgärder**
 
@@ -69,7 +69,7 @@ Använd **inbyggda kanalåtgärder** för att skicka meddelanden som är utforma
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Anpassade åtgärder**
 
@@ -79,7 +79,7 @@ Skapa **anpassade åtgärder** om du använder ett tredjepartssystem för att sk
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 **Designer för visuell resa**
 
@@ -89,7 +89,7 @@ Med **resedesignern** kan du skapa dina flerstegsfall: enkelt dra och släppa en
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Testa och optimera**
 
@@ -110,7 +110,7 @@ Inom resedesignern kan marknadsförarna skicka :1-meddelanden i realtid via valf
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 **Lär dig mer med användningsexempel**
 
@@ -120,7 +120,7 @@ Utforska omfattande fallstudier av hela kundresan som visar på verkliga impleme
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
 **Välkommen nya prenumeranter**
 
@@ -130,7 +130,7 @@ Skicka en personlig välkomstresa när kunderna prenumererar på tjänsten och v
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
 
 **Optimera e-posttider**
 
@@ -140,7 +140,7 @@ Använd AI-baserad optimering för sändningstid för att leverera e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 **Dra upp leveranser**
 
@@ -150,7 +150,7 @@ Använd AI-baserad optimering för sändningstid för att leverera e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 **Mål efter veckodag**
 
@@ -160,7 +160,7 @@ Skicka olika innehåll baserat på vilken veckodag kunderna kommer in på din re
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/question.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/question.svg)
 
 **Vanliga frågor om resan**
 
@@ -178,47 +178,47 @@ Hitta svar på vanliga frågor om reseuppbyggnad, felsökning och metodtips.
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 **Skapa och hantera resor**
 
 Stegvisa riktlinjer för att utforma, testa, publicera och spåra kundresor för att skapa personaliserade flerkanalskampanjer.
 
-[Utforska skapandet av resan](/help/rp_landing_pages/create-journey-landing-page.md) | [Lär dig resehantering](/help/rp_landing_pages/manage-journey-landing-page.md) | [Researbetsflödessteg](journey.md#workflow)
+[Utforska skapandet av resan](../../rp_landing_pages/create-journey-landing-page.md) | [Lär dig resehantering](../../rp_landing_pages/manage-journey-landing-page.md) | [Researbetsflödessteg](journey.md#workflow)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
 **Reseaktiviteter**
 
 Upptäck hur ni konfigurerar och använder aktiviteter som triggers, beslutssteg, målgruppshantering och personaliserade meddelanden på resorna.
 
-[Utforska aktiviteter](/help/rp_landing_pages/about-journey-building-landing-page.md)
+[Utforska aktiviteter](../../rp_landing_pages/about-journey-building-landing-page.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 **Uttryck och villkor**
 
 Masteruttryck för dynamiska arbetsflöden, datamanipulering och avancerad resesamordning med kraftfulla verktyg och syntax.
 
-[Läs mer om uttryck](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
+[Läs mer om uttryck](../../rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
 
 **Felsök och övervaka**
 
 Diagnostisera och åtgärda problem med körning av resor med verktyg, felkoder och bästa praxis för felsökning och optimering.
 
-[Felsökningsguide](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
+[Felsökningsguide](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/book.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
 **Resedesignern - översikt**
 
@@ -228,7 +228,7 @@ Förstå resans arbetsyta, palett och hur ni utformar era kundresor med det visu
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg?lang=sv-SE)
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Testa och publicera**
 
@@ -243,13 +243,12 @@ Testa era resor noggrant innan ni publicerar dem för att säkerställa att de f
 
 Identifiera komponenterna i en resa och förstå grunderna för hur man bygger en resa på arbetsytan.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430354?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424996?quality=12)
 
 ### Ytterligare resurser
 
 * **[Felkodsreferens](error-codes-reference.md)** - Resefelkoder och felsökningssteg
 * **[Varningar](../reports/alerts.md)** - Konfigurera aviseringar för reseövervakning
 * **[Felsökning](troubleshooting.md)** - Vanliga reseproblem och lösningar
-* **[Självstudiekurser på resa](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resor med praktiska videokurser
+* **[Självstudiekurser på resa](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Lär dig hur du skapar resor med praktiska videokurser
 * **[Reservoarer och begränsningar för resan](../start/guardrails.md)** - Kontrollera skyddslingar och begränsningar när du använder [!DNL Adobe Journey Optimizer]
-

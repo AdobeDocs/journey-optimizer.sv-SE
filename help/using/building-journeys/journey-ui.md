@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Bläddra och filtrera dina resor
-description: Bläddra och filtrera dina resor i Adobe Journey Optimizer
+description: Bläddra och filtrera dina resor i  [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started
 topic: Content Management
 role: User
@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, första, start, snabbstart, målgrupp, händelse, åtgärd
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 version: Journey Orchestration
-source-git-commit: 0271dfdf9578921f48001f2bdcc0dbb15f785762
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1446'
 ht-degree: 2%
 
 ---
@@ -128,7 +128,7 @@ Vilken typ av resa det är beror på vilka aktiviteter som används under resan.
 
 * **[!UICONTROL Unitary event]** - Rutiner för enhetshändelser är kopplade till en viss profil. Händelser relaterar till en persons beteende eller något som händer i samband med en person (en person har till exempel nått 10 000 poäng för lojalitet). [Läs mer](../event/about-events.md).
 * **[!UICONTROL Business event]**. Affärsevenemangets resa börjar med en händelse som inte är profilrelaterad. Händelsekonfigurationen utförs av en teknisk användare och kan inte redigeras. [Läs mer](../event/about-events.md).
-* **[!UICONTROL Audience Qualification]** - Publikkvalificeringsresor lyssnar på ingångar och utgångar för profiler i Adobe Experience Platform-målgrupper för att få individer att komma in på eller gå framåt under en resa. [Läs mer](audience-qualification-events.md).
+* **[!UICONTROL Audience Qualification]** - Publikkvalificeringsresor lyssnar på ingångar och utgångar för profiler i [!DNL Adobe Experience Platform] målgrupper för att få individer att komma in på eller gå framåt under en resa. [Läs mer](audience-qualification-events.md).
 * **[!UICONTROL Read audience]** - Vid målgruppsresor för läsning kommer alla personer i målgruppen in på resan och får de meddelanden som ingår i din resa.  [Läs mer](read-audience.md).
 
 
@@ -148,7 +148,7 @@ Resans status beror på dess livscykel. Den kan vara:
 
 >[!NOTE]
 >
->* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **&rbrace;Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
+>* Resursredigeringscykeln innehåller också en uppsättning mellanliggande statusvärden som inte är tillgängliga för filtrering: **Publicering** (mellan &quot;Utkast&quot; och &quot;Live&quot;), **Aktiverar testläge** eller **Inaktiverar testläge** (mellan **Utkast** och **Utkast (test)**), **Stoppar** **(mellan Live** och **Stoppad**), **Återupptar** (mellan **Pausad** och **Live**), **Pausar** (mellan **Live** och **}Pausad**) När en resa befinner sig i ett mellanliggande tillstånd är den skrivskyddad.
 >
 >* Om du behöver ändra till en **Live**-resa [skapar du en ny version](#journey-versions) av din resa. Du kan även pausa dina resor, utföra alla ändringar som behövs och återuppta dem igen när som helst. [Läs mer om att pausa resor](../building-journeys/journey-pause.md)
 

@@ -2,29 +2,30 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Referens för felkoder
-description: Läs om vanliga felkoder i Adobe Journey Optimizer och hur du felsöker dem
+description: Lär dig mer om vanliga felkoder i [!DNL Adobe Journey Optimizer] och hur du felsöker dem
 feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
 keywords: fel, koder, felsökning, resa, kampanj, meddelanden
-source-git-commit: 7a83bb558559ba814ed9431bb85a68929a276ed5
+exl-id: 84924153-1bb5-465a-b91c-797628fc816c
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2381'
 ht-degree: 0%
 
 ---
 
-
 # Referens för felkoder {#error-codes}
 
-Adobe Journey Optimizer använder standardiserade felkoder för att hjälpa er att snabbt identifiera och lösa problem mellan resor, kampanjer och meddelandekonfigurationer. Om du förstår dessa felkoder kan du minska felsökningstiden avsevärt och få bättre kampanjprestanda.
+[!DNL Adobe Journey Optimizer] använder standardiserade felkoder för att hjälpa dig att snabbt identifiera och lösa problem mellan resor, kampanjer och meddelandekonfigurationer. Om du förstår dessa felkoder kan du minska felsökningstiden avsevärt och få bättre kampanjprestanda.
 
 ## Om felkodsstrukturen {#error-code-structure}
 
-Adobe Journey Optimizer-felkoder följer ett konsekvent namngivningsmönster som hjälper till att identifiera komponenten och problemtypen:
+[!DNL Adobe Journey Optimizer]-felkoder följer ett konsekvent namnmönster som hjälper till att identifiera komponenten och problemtypen:
 
-* **Tjänstprefix**: Anger vilken Adobe Journey Optimizer-tjänst som genererade felet (t.ex. CJMPTS för push-/transporttjänsten, CJMRT för körningsmiljön, CJMMAS för meddelanderedigeringstjänsten, CJMCMP för kampanj, CJMTL för transportnivån, CJMRPS för rapporterings-/provisioneringstjänsten)
+* **Tjänstprefix**: Anger vilken [!DNL Adobe Journey Optimizer]-tjänst som genererade felet.
+Exempel: CJMPTS (push/Transport Service), CJMRT (Journey Runtime), CJMMAS (Message Authoring Service), CJMCMP (Campaign), CJMTL (Transport Layer), CJMRPS (Reporting/Provisioning Service)
 * **Felnummer**: Unik identifierare för det specifika felvillkoret
 * **HTTP-statuskod**: HTTP-standardstatuskod (t.ex. 400, 403, 422, 500)
 
@@ -32,7 +33,7 @@ Exempel: `CJMRT-030012-422` indikerar ett CJMRT-fel (Journey Runtime error) med 
 
 ## Var kan du hitta felkoder? {#find-error-codes}
 
-Felkoder visas på flera platser i Adobe Journey Optimizer:
+Felkoder visas på flera platser inom [!DNL Adobe Journey Optimizer]:
 
 * Rapporter och loggar för körning av resor
 * Kampanjaktiveringsskärmar
@@ -43,6 +44,8 @@ Felkoder visas på flera platser i Adobe Journey Optimizer:
 När ett fel inträffar bör du notera den fullständiga felkoden och eventuella tillhörande begärande-ID, eftersom dessa är viktiga för felsökning och eskalering av support.
 
 ## Vanliga felkoder efter tjänst {#error-codes-by-service}
+
+Använd det här avsnittet för att hitta felkoder grupperade efter tjänst.
 
 ### CJMPTS: Fel i push- och transporttjänst {#cjmpts-errors}
 
@@ -144,6 +147,8 @@ När du stöter på en felkod ska du följa detta systematiska tillvägagångss�
 
 ## Bästa tillvägagångssätt för att undvika vanliga fel {#best-practices}
 
+Använd dessa metoder för att minska antalet fel som kan undvikas och förbättra tillförlitligheten.
+
 ### Aktivering före resan {#journey-best-practices}
 
 * **Verifiera alla resurser**: Kontrollera att alla refererade målgrupper, händelser, datakällor och anpassade åtgärder är korrekt konfigurerade
@@ -181,16 +186,15 @@ Om du stöter på bestående fel som inte kan åtgärdas med den här guiden:
 
 1. **Samla in information**: Samla in felkoden, begärande-ID, tidsstämplar och steg för att återskapa
 2. **Kontrollera systemstatus**: Besök [Adobe-status](https://status.adobe.com/){target="_blank"} för information om kända tjänstproblem
-3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=sv-SE){target="_blank"} innehåller lösningar
-4. **Engagemangsgrupp**: Skicka frågor i [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}
+3. **Sökdokumentation**: [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html){target="_blank"} innehåller lösningar
+4. **Engagemangsgrupp**: Skicka frågor i [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 5. **Kontakta Adobe Support**: Skicka in en supportanmälan med all relevant information
 
 >[!NOTE]
 >
->Den här felkodsreferensen uppdateras kontinuerligt när nya koder identifieras och dokumenteras. Den senaste informationen finns i [Adobe Journey Optimizer Community-bloggarna](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/bg-p/journey-optimizer-blogs?profile.language=sv){target="_blank"} regelbundet.
+>Den här felkodsreferensen uppdateras kontinuerligt när nya koder identifieras och dokumenteras. Den senaste informationen finns i [[!DNL Adobe Journey Optimizer] Community-bloggarna](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/bg-p/journey-optimizer-blogs){target="_blank"} regelbundet.
 
 **Relaterade ämnen**
 
-* [Demystifiera Adobe Journey Optimizer-felkoder: Del 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884?profile.language=sv){target="_blank"}
-* [Demystifiera Adobe Journey Optimizer-felkoder: Del 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661?profile.language=sv){target="_blank"}
-
+* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884){target="_blank"}
+* [Demystifiera [!DNL Adobe Journey Optimizer] Felkoder: Del 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661){target="_blank"}

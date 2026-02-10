@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Definiera resans egenskaper
-description: Lär dig hur du ställer in egenskaper för din resa med Adobe Journey Optimizer
+description: Lär dig hur du ställer in egenskaper för din resa med  [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started
 topic: Content Management
 role: User
@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 version: Journey Orchestration
-source-git-commit: 0271dfdf9578921f48001f2bdcc0dbb15f785762
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '2846'
+source-wordcount: '2839'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ I det här avsnittet definierar du namnet på resan, lägger till en beskrivning
 
 Du kan:
 
-* Tilldela enhetliga Adobe Experience Platform-taggar till resan, så att du enkelt kan klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
+* Tilldela [!DNL Adobe Experience Platform] enhetliga taggar till din resa för att enkelt klassificera dem och förbättra sökningen från kampanjlistan. [Lär dig arbeta med taggar](../start/search-filter-categorize.md#tags)
 * Välj resemätningar. [Lär dig hur du konfigurerar och spårar dina resemått](success-metrics.md)
 * Hantera [inträde och återinträde](#entrance). Hanteringen av profilentréer beror på typen av resa. Information finns på [den här sidan](entry-management.md)
 * Hantera [åtkomst till data](#manage-access)
@@ -63,7 +63,7 @@ Hanteringen av profilentréer beror på typen av resa. Läs mer om hantering av 
 >id="ajo_journey_properties_entrance"
 >title="Tillåt återinträde"
 >abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** till exempel om du vill erbjuda en engångspresentation när en person går in i en affär."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går till en affär.
 
@@ -73,7 +73,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Vänteperiod för återinträde"
 >abstract="Ställ in väntetiden innan du tillåter att en profil går in på resan igen med enhetsresor. Detta förhindrar att användarna kommer in på resan igen under en viss tid. Maximal varaktighet: 90 dagar."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återkommande vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
@@ -87,7 +87,7 @@ Om du vill tilldela anpassade etiketter för dataanvändning till resan klickar 
 
 ## Tidszoner för resa och profil {#timezone}
 
-Tidszonen definieras på resenivå. Du kan ange en fast tidszon eller använda Adobe Experience Platform-profiler för att definiera resetidszonen. Om en tidszon definieras i Adobe Experience Platform-profilen kan den hämtas under resan.
+Tidszonen definieras på resenivå. Du kan ange en fast tidszon eller använda [!DNL Adobe Experience Platform]-profiler för att definiera resetidszonen. Om en tidszon definieras i profilen [!DNL Adobe Experience Platform] kan den hämtas under resan.
 
 [Läs mer om hantering av tidszoner](../building-journeys/timezone-management.md)
 
@@ -108,6 +108,8 @@ Som standard kan profiler ta sig in på din resa så snart den har publicerats, 
 Om det behövs kan du definiera ett anpassat **startdatum** och **slutdatum**. Detta gör att profilerna kan gå in på din resa ett visst datum och avsluta automatiskt när slutdatumet nås.
 
 ## Timeout {#timeout}
+
+Timeoutinställningarna styr hur länge en resa väntar på att en aktivitet ska köras och hur länge profiler kan finnas kvar under en resa.
 
 ### Tidsgräns för reseaktiviteter {#timeout_and_error}
 
@@ -140,7 +142,7 @@ En enskild person kan bara förlägga en vänteaktivitet om han eller hon har ti
 
 #### TTL (Time-to-Live) och datalagring - frågor och svar {#timeout-faq}
 
-Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala tidsgränsen för resan flyttats från 30 till 91 dagar. Effekter listas i Frågor och svar nedan:
+Från och med [!DNL Adobe Journey Optimizer] juni 2024 har den globala tidsgränsen för resan flyttats från 30 till 91 dagar. Effekter listas i Frågor och svar nedan:
 
 **För Unitary Journeys**
 
@@ -250,15 +252,15 @@ Från och med Adobe Journey Optimizer-versionen från juni 2024 har den globala 
 
 ## Sammanfoga profiler {#merge-policies}
 
-Adobe Journey Optimizer använder sammanfogningsprinciper när profildata hämtas från Adobe Experience Platform. Beroende på resetyp används olika kopplingsprofiler:
+[!DNL Adobe Journey Optimizer] använder sammanslagningsprinciper när profildata hämtas från [!DNL Adobe Experience Platform]. Beroende på resetyp används olika kopplingsprofiler:
 
 * På läs målgrupps- eller målgruppsklassificeringsresor: målgruppspolicyn används
 * Vid Unitary-händelseresor: standardprincipen för sammanslagning används
 * Vid affärsevenemangsresor: sammanfogningspolicyn från målgruppen i följande Läs målgruppsaktivitet används
 
-Adobe Journey Optimizer tillämpar den kopplingsregel som används under hela kundresan. Om flera målgrupper används i en resa (till exempel med in [`inAudience`-funktioner](functions/functioninaudience.md)) skapas därför inkonsekvenser med den sammanfogningsprincip som används för resan. Ett fel genereras och publikationen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
+[!DNL Adobe Journey Optimizer] tillämpar den sammanslagningsprincip som används under hela resan. Om flera målgrupper används i en resa (till exempel med in [`inAudience`-funktioner](functions/functioninaudience.md)) skapas därför inkonsekvenser med den sammanfogningsprincip som används för resan. Ett fel genereras och publikationen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
-Mer information om sammanfogningsprinciper finns i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+Mer information om sammanfogningsprinciper finns i [[!DNL Adobe Experience Platform] dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 >[!NOTE]
 >

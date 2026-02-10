@@ -9,16 +9,16 @@ role: Developer
 level: Experienced
 exl-id: 890a194f-f54d-4230-863a-fb2b924d716a
 version: Journey Orchestration
-source-git-commit: 7822e9662d03e6c6b2d5bc5ecb9ca85dc32f0942
+source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
 # Använda anpassade åtgärder för att skriva reseventen i Experience Platform {#custom-action-aep}
 
-Det här användningsexemplet förklarar hur du skriver anpassade händelser till Adobe Experience Platform från Journeys med hjälp av anpassade åtgärder och autentiserade samtal.
+Det här användningsexemplet förklarar hur du skriver anpassade händelser till [!DNL Adobe Experience Platform] från Journeys med hjälp av anpassade åtgärder och autentiserade anrop.
 
 ## Konfigurera ett utvecklarprojekt {#custom-action-aep-IO}
 
@@ -30,7 +30,7 @@ Det här användningsexemplet förklarar hur du skriver anpassade händelser til
 
 1. Klicka på **Visa cURL-kommando**.
 
-   ![Val av åtgärdstyp för Adobe Experience Platform](assets/custom-action-aep-2.png)
+   Markering av åtgärdstyp för ![[!DNL Adobe Experience Platform]](assets/custom-action-aep-2.png)
 
 1. Kopiera kommandot cURL och lagra client_id, client_secrets, grant_type och scope.
 
@@ -40,15 +40,15 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
 
 >[!CAUTION]
 >
->När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [Adobe Experience Platform-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
+>När du har skapat ditt projekt på Adobe Developer Console måste du ge utvecklare och API-åtkomstkontroll med rätt behörigheter. Läs mer i [[!DNL Adobe Experience Platform] dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
 
 ## Konfigurera källan med HTTP API Inlet
 
-1. Skapa en slutpunkt i Adobe Experience Platform för att skriva data från resor.
+1. Skapa en slutpunkt i [!DNL Adobe Experience Platform] för att skriva data från resor.
 
-1. I Adobe Experience Platform klickar du på **Källor** under **Anslutningar** i den vänstra menyn. Klicka på **Lägg till data** under **HTTP API**.
+1. I [!DNL Adobe Experience Platform] klickar du på **Källor** under **Anslutningar** i den vänstra menyn. Klicka på **Lägg till data** under **HTTP API**.
 
-   ![Listruta för val av sandlåda för Adobe Experience Platform](assets/custom-action-aep-3.png)
+   ![Listruta för val av sandlåda för [!DNL Adobe Experience Platform]](assets/custom-action-aep-3.png)
 
 1. Välj **Nytt konto** och aktivera autentisering. Välj **Anslut till Source**.
 
@@ -101,7 +101,7 @@ Konfigurationen av anpassade åtgärder anges på [den här sidan](../action/abo
 
 I det här exemplet gör du så här:
 
-1. Öppna Adobe Journey Optimizer och klicka på **Konfigurationer** under **Administration** i den vänstra menyn. Under **Åtgärder** klickar du på **Hantera** och sedan på **Skapa åtgärd**.
+1. Öppna [!DNL Adobe Journey Optimizer] och klicka på **Konfigurationer** under **Administration** i den vänstra menyn. Under **Åtgärder** klickar du på **Hantera** och sedan på **Skapa åtgärd**.
 
 1. Ange URL-adressen och välj metoden Post.
 
