@@ -9,10 +9,11 @@ role: Developer
 level: Intermediate
 keywords: uttryck, redigerare
 mini-toc-levels: 1
+badge: label="Begränsad tillgänglighet" type="Informative"
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-source-git-commit: 41364a89289f0657a2b7646c5daa45a369936e57
+source-git-commit: c5fe9a17bc0ddcffb1af63bf040a9c84d995fdba
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -25,6 +26,10 @@ ht-degree: 0%
 >abstract="Genom att aktivera en datauppsättning för sökning kan ni utnyttja data i Journey Optimizer personalisering, beslutsfattande och möjlighet att samordna kundresor."
 
 Med [!DNL Journey Optimizer] kan du utnyttja data från [!DNL Adobe Experience Platform] med funktioner för personalisering, beslutsfattande och resesamordning. För att göra detta måste postbaserade datauppsättningar som behövs för sökpersonalisering först aktiveras för söktjänsten enligt beskrivningen nedan.
+
+>[!NOTE]
+>
+>Datasökningsfunktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst. Läs mer om [tillgänglighetsetiketter](../rn/releases.md#availability-labels).
 
 Läs mer om hur du får åtkomst till och arbetar med datauppsättningar i det här avsnittet: [Kom igång med datauppsättningar](../data/get-started-datasets.md)
 
