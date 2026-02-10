@@ -149,24 +149,24 @@ Bläddra bland videosjälvstudiekurser och lär dig hur du bygger de vanligaste 
     <td>
       <img src="../assets/do-not-localize/icon-quick-start.svg" width="35px">
     <br/>
-      <strong>Kundintroduktion</strong><br/><p>Lär dig implementera en kundintroduktionsresa i Journey Optimizer.</p> - <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">Titta på fallvideon </a>
+      <strong>Kundintroduktion</strong><br/><p>Lär dig implementera en kundintroduktionsresa i Journey Optimizer.</p> - <a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">Titta på fallvideon </a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-campaign.svg" width="35px">
     <br/>
-      <strong> Övergiven varukorg </strong><br/><p>Lär dig hur du implementerar det övergivna användningsexemplet för kundvagn med funktionen Playbook i [!DNL Adobe Journey Optimizer].</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">Titta på fallvideon </a>
+      <strong> Övergiven varukorg </strong><br/><p>Lär dig hur du implementerar det övergivna användningsexemplet för kundvagn med funktionen Playbook i [!DNL Adobe Journey Optimizer].</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">Titta på fallvideon </a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-content.svg" width="35px">
     <br/>
-      <strong>Återengagemang</strong><br/><p>Läs om hur Adobe anpassade användningen av intelligent återanvändning till att fungera med Lumas demosajt och byggde vidare på den grundläggande implementeringen som beskrivs i självstudiekursen om dataarkitektur och dataingenjörsvetenskap samt i självstudiekursen om Experience Platform Web SDK.</p><a href="https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma" target="_blank">Titta på fallvideor</a> 
+      <strong>Återengagemang</strong><br/><p>Läs om hur Adobe anpassade användningen av intelligent återanvändning till att fungera med Lumas demosajt och byggde vidare på den grundläggande implementeringen som beskrivs i självstudiekursen om dataarkitektur och dataingenjörsvetenskap samt i självstudiekursen om Experience Platform Web SDK.</p><a href="https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma" target="_blank">Titta på fallvideor</a> 
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="../assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Erbjudandepersonalisering i realtid</strong><br/><p>Om väderrelaterade data används i [!DNL Adobe Journey Optimizer] för att leverera erbjudanden kan företag personalisera kundupplevelser baserat på miljöförhållanden i realtid.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction" target="_blank">Följ den stegvisa självstudiekursen</a>
+      <strong>Erbjudandepersonalisering i realtid</strong><br/><p>Om väderrelaterade data används i [!DNL Adobe Journey Optimizer] för att leverera erbjudanden kan företag personalisera kundupplevelser baserat på miljöförhållanden i realtid.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction" target="_blank">Följ den stegvisa självstudiekursen</a>
     </td>
     <td>
       <img src="../assets/do-not-localize/icon-configure.svg" width="35px">
@@ -176,12 +176,12 @@ Bläddra bland videosjälvstudiekurser och lär dig hur du bygger de vanligaste 
     <td>
       <img src="../assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>Anpassa erbjudanden med rankningsformler </strong><br/><p>Lär dig hur du levererar personaliserade ekonomiska erbjudanden genom att utnyttja användarattribut som ZIP-kod och årsinkomst inom [!DNL Adobe Journey Optimizer]. Genom att använda rankningsformler kan erbjudandena poängsättas och prioriteras utifrån platsspecifika kampanjer och inkomstbaserad kvalificering.</p><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
+      <strong>Anpassa erbjudanden med rankningsformler </strong><br/><p>Lär dig hur du levererar personaliserade ekonomiska erbjudanden genom att utnyttja användarattribut som ZIP-kod och årsinkomst inom [!DNL Adobe Journey Optimizer]. Genom att använda rankningsformler kan erbjudandena poängsättas och prioriteras utifrån platsspecifika kampanjer och inkomstbaserad kvalificering.</p><a href="https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction" target="_blank">Följ den stegvisa självstudiekursen</a> 
     </td>
   </tr>
 </table>
 
-Se även videosjälvstudiekursen för [Skalning av orkestrering till flerkanalsengagemang i [!DNL Adobe Journey Optimizer]](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/scaling-orchestration-to-omnichannel-engagement/introduction){target="_blank"}: Under sex lektioner lär du dig hur du lyfter affärskommunikationen från enkla utgående meddelanden till sofistikerade flerkanalsupplevelser. Med praktiska exempel får ni insikter i hur ni skapar kundresor som sömlöst kombinerar proaktiv utåtriktad marknadsföring med lyhört engagemang.
+Se även videosjälvstudiekursen för [Skalning av orkestrering till flerkanalsengagemang i [!DNL Adobe Journey Optimizer]](https://experienceleague.adobe.com/sv/docs/journey-optimizer-learn/scaling-orchestration-to-omnichannel-engagement/introduction){target="_blank"}: Under sex lektioner lär du dig hur du lyfter affärskommunikationen från enkla utgående meddelanden till sofistikerade flerkanalsupplevelser. Med praktiska exempel får ni insikter i hur ni skapar kundresor som sömlöst kombinerar proaktiv utåtriktad marknadsföring med lyhört engagemang.
 
 
 
@@ -193,41 +193,41 @@ Bläddra bland följande blogginlägg för att hitta mer vägledning och bästa 
 <td>
 <img alt="Blogginlägg" src="../assets/do-not-localize/community.jpeg">
 <div>
-<p><a href="weekday-email-uc.md">Användningsfall: Så här skickar du e-post endast på veckodagar i [!DNL Adobe Journey Optimizer]</a> - även tillgängligt som <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400" target="_blank">community-blogginlägg</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-approval-strategies-in-adobe-journey-optimizer/ba-p/761396" target="_blank">Användningsfall: Avancerade godkännandestrategier</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510" target="_blank">Användningsfall: Daglig frekvensbegränsning</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445" target="_blank">God praxis: Läs målgruppsresor</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270" target="_blank">Användningsfall: Testa dina resor</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/deliver-with-confidence-approval-workflows-across-adobe-journey/ba-p/760900" target="_blank">Användningsfall: Arbetsflöden för godkännande</a></p>
+<p><a href="weekday-email-uc.md">Användningsfall: Så här skickar du e-post endast på veckodagar i [!DNL Adobe Journey Optimizer]</a> - även tillgängligt som <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-send-emails-only-on-weekdays-in-adobe-journey-optimizer/ba-p/760400?profile.language=sv" target="_blank">community-blogginlägg</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-approval-strategies-in-adobe-journey-optimizer/ba-p/761396?profile.language=sv" target="_blank">Användningsfall: Avancerade godkännandestrategier</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510?profile.language=sv" target="_blank">Användningsfall: Daglig frekvensbegränsning</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445?profile.language=sv" target="_blank">God praxis: Läs målgruppsresor</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/from-plan-to-perfection-how-to-test-your-ajo-journeys-for-10/ba-p/761270?profile.language=sv" target="_blank">Användningsfall: Testa dina resor</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/deliver-with-confidence-approval-workflows-across-adobe-journey/ba-p/760900?profile.language=sv" target="_blank">Användningsfall: Arbetsflöden för godkännande</a></p>
 </div>
 <p>
 </td>
 <td>
 <img alt="Stega händelser i dina resor" src="../assets/do-not-localize/list.jpeg">
 <div>
-<a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-step-events-in-adobe-journey-optimizer-fundamentals/ba-p/762024" target="_blank">Mastering Step Events i [!DNL Adobe Journey Optimizer]: Fundamentals, Schema och Essential Queries för datadrivna kampanjer
+<a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-step-events-in-adobe-journey-optimizer-fundamentals/ba-p/762024?profile.language=sv" target="_blank">Mastering Step Events i [!DNL Adobe Journey Optimizer]: Fundamentals, Schema och Essential Queries för datadrivna kampanjer
 </a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658" target="_blank">Användningsfall: Snabb extern Audience Activation med anpassad överföring</a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/personalization-beyond-the-ajo-profile-bringing-non-profile/ba-p/769225" target="_blank">Användningsfall: Personalization utanför profilen
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/fast-external-audience-activation-with-custom-upload/ba-p/761658?profile.language=sv" target="_blank">Användningsfall: Snabb extern Audience Activation med anpassad överföring</a></p>
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/personalization-beyond-the-ajo-profile-bringing-non-profile/ba-p/769225?profile.language=sv" target="_blank">Användningsfall: Personalization utanför profilen
 </a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/take-flight-with-personalization-how-airlines-can-elevate-offers/ba-p/767513" target="_blank">Take Flight with Personalization: How Airlines Can Elevate Offates with [!DNL Adobe Journey Optimizer]
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/take-flight-with-personalization-how-airlines-can-elevate-offers/ba-p/767513?profile.language=sv" target="_blank">Take Flight with Personalization: How Airlines Can Elevate Offates with [!DNL Adobe Journey Optimizer]
 </a></p>
-<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-real-time-personalization-a-marketer-s-guide-to-aem/ba-p/762606" target="_blank">Mastering Real-Time Personalization: A Marketer's Guide to AEM Content Fragments and [!DNL Adobe Journey Optimizer]
+<p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-real-time-personalization-a-marketer-s-guide-to-aem/ba-p/762606?profile.language=sv" target="_blank">Mastering Real-Time Personalization: A Marketer's Guide to AEM Content Fragments and [!DNL Adobe Journey Optimizer]
 </a></p>
 </div>
 <p></td>
 <td>
 <img alt="Anpassade åtgärder" src="../assets/do-not-localize/step-event.jpeg">
-<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323" target="_blank">Utöka [!DNL Adobe Journey Optimizer] med anpassade åtgärder: Användningsexempel för integrering
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/how-to-extend-adobe-journey-optimizer-with-custom-actions/ba-p/761323?profile.language=sv" target="_blank">Utöka [!DNL Adobe Journey Optimizer] med anpassade åtgärder: Användningsexempel för integrering
 </a></p>
 </div>
-<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/breaking-down-barriers-how-adobe-journey-optimizer-s-custom/ba-p/759223" target="_blank">[!DNL Adobe Journey Optimizer]Funktionen för anpassad delegering löser problem med företagets regelefterlevnad
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/breaking-down-barriers-how-adobe-journey-optimizer-s-custom/ba-p/759223?profile.language=sv" target="_blank">[!DNL Adobe Journey Optimizer]Funktionen för anpassad delegering löser problem med företagets regelefterlevnad
 </a></p>
 </div>
-<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/line-in-ajo-from-first-campaign-to-advanced-expression-fragment/ba-p/771048" target="_blank">LINJE i Journey Optimizer: Från den första kampanjen till avancerad uttrycksfragment och fall för användning av anpassade åtgärder
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/line-in-ajo-from-first-campaign-to-advanced-expression-fragment/ba-p/771048?profile.language=sv" target="_blank">LINJE i Journey Optimizer: Från den första kampanjen till avancerad uttrycksfragment och fall för användning av anpassade åtgärder
 </a></p>
 </div>
-<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-universal-link-integration-guide-for-ios/ba-p/768669" target="_blank">Journey Optimizer Universal Link Integration Guide for iOS
+<div><p><a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-universal-link-integration-guide-for-ios/ba-p/768669?profile.language=sv" target="_blank">Journey Optimizer Universal Link Integration Guide for iOS
 </a></p>
 </div>
 </td>

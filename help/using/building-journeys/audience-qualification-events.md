@@ -69,7 +69,7 @@ Så här konfigurerar du aktiviteten **[!UICONTROL Audience Qualification]**:
    >[!NOTE]
    >
    >**[!UICONTROL Enter]** och **[!UICONTROL Exit]** motsvarar **Realiserad** och **Avslutade** målgruppsdeltagarstatus från [!DNL Adobe Experience Platform].
-   >Se [Dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+   >Se [Dokumentation för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
 
 1. Välj ett namnutrymme. Detta behövs bara om händelsen är placerad som det första steget i resan. Som standard är fältet förifyllt med det senast använda namnutrymmet.
 
@@ -110,7 +110,7 @@ När man använder sig av Audience Qualification för direktuppspelade målgrupp
 
 Undvik att använda öppna och skicka händelser med direktuppspelningssegmentering. Använd istället riktiga användaraktivitetssignaler som klickningar, köp eller beacon-data. Använd affärsregler i stället för skicka-händelser för frekvens- eller undertryckningslogik. [Läs mer](../audience/about-audiences.md)
 
-Se [[!DNL Adobe Experience Platform] dokumentationen för direktuppspelningssegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
+Se [[!DNL Adobe Experience Platform] dokumentationen för direktuppspelningssegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Här följer några tips för att undvika att överbelasta system som används i
 
   ![Felmeddelande när målgruppen inte hittas i [!DNL Adobe Experience Platform]](assets/segment-error.png)
 
-* Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök använder du en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
+* Införa en begränsning för datakällor och åtgärder som används under resor för att undvika att överbelasta dem. Läs mer i [Journey Orchestration-dokumentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html?lang=sv-SE){target="_blank"}. Observera att begränsningsregeln inte har några nya försök. Om du behöver göra ett nytt försök använder du en alternativ sökväg under resan genom att markera kryssrutan **[!UICONTROL Add an alternative path in case of a timeout or an error]** i villkor eller åtgärder.
 
 * Innan målgruppen används i en produktionsresa bör man utvärdera den mängd individer som är kvalificerade för denna målgrupp varje dag. Det gör du genom att kontrollera menyn **[!UICONTROL Audience]**, öppna målgruppen och titta på diagrammet **[!UICONTROL Profiles over time]**.
 
@@ -182,7 +182,7 @@ Följ skyddsutkastet och rekommendationerna nedan för att skapa målgruppskompe
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
+>[Garantier för kundprofildata och segmentering i realtid &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
 
 
 

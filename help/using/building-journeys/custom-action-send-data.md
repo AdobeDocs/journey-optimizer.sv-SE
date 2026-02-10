@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Använd skiftläge: skapa en anpassad åtgärd för att skicka data till [!DNL Adobe Experience Platform]{#send-data-to-aep}
 
-Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du bekräfta ditt rykte som avsändare. Annars kan leveranser blockeras eller flyttas till mottagarnas skräppostmappar. Mer information finns i [Handboken &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"} om bästa praxis för slutleverans.
+Om du nyligen har flyttat till en annan e-postleverantör, IP-adress, e-postdomän eller underdomän måste du bekräfta ditt rykte som avsändare. Annars kan leveranser blockeras eller flyttas till mottagarnas skräppostmappar. Mer information finns i [Handboken &#x200B;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html?lang=sv-SE){target="_blank"} om bästa praxis för slutleverans.
 
 För att värma upp era immateriella tillgångar kan ni gradvis öka antalet leveranser. Läs mer om [att optimera leveransen i Journey Optimizer](../reports/deliverability.md).
 
