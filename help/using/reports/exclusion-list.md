@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a34ba1a8-87d5-4f9c-a181-2f49e74e8f09
-source-git-commit: ca6f722c93fffe0cebcddb4f730f23d9a720ef9d
+source-git-commit: 8ced9477edf8a7129e974d007755e132f3079943
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '891'
 ht-degree: 7%
 
 ---
@@ -60,6 +60,7 @@ Mer information om de specifika exkluderingsorsakerna finns i tabellen nedan.
 | EmailNoVariantDefined | 050026 | E-post | En undantagshändelse genereras när ingen variant har definierats i e-postmeddelandet. |
 | EmailNoMessageFoundForTreatment | 050027 | E-post | En undantagshändelse genereras när experimentet aktiveras för meddelandet och inget meddelande hittas för den kvalificerade behandlingen. |
 | EmailMalformedAddress | 050024 | E-post | En undantagshändelse genereras när e-postmeddelandet innehåller en felformaterad adress. |
+| UnsubscribeLinkNotValid | 050081 | E-post | En undantagshändelse genereras när längden för List-Unsubscribe mailTo-objektet är större än RFC-gränsen på 998 tecken. |
 | InAppNoVariantDefined | 050041 | InApp | En undantagshändelse genereras när ingen variant har definierats för InApp-meddelandet. |
 | InAppNoMessageFoundForTreatment | 050042 | InApp | En undantagshändelse genereras när experimentet aktiveras för meddelandet och inget meddelande hittas för den kvalificerade behandlingen. |
 | PushNoTokenFoundInProfile | 050030 | Push | En undantagshändelse genereras när profilen inte har push-tokens. |
