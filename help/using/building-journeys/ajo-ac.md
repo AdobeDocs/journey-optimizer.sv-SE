@@ -78,11 +78,11 @@ Din Campaign-instans måste etableras för den här integreringen. Funktionen f�
 
 1. Skapa en händelse. Inkludera fältet&quot;purchaseOrderNumber&quot;.
 
-   ![Konfigurationsskärmen för anpassade åtgärder för [!DNL Adobe Campaign] klassisk integrering ](assets/accintegration-uc-5.png)
+   ![Konfigurationsskärmen för anpassade åtgärder för [!DNL Adobe Campaign] klassisk integrering &#x200B;](assets/accintegration-uc-5.png)
 
 1. Skapa en åtgärd i Journey Optimizer som motsvarar er Campaign-mall. I listrutan **Åtgärdstyp** väljer du **[!DNL Adobe Campaign]Klassisk**.
 
-   ![Val av åtgärdstyp med [!DNL Adobe Campaign] Klassiskt alternativ ](assets/accintegration-uc-6.png)
+   ![Val av åtgärdstyp med [!DNL Adobe Campaign] Klassiskt alternativ &#x200B;](assets/accintegration-uc-6.png)
 
 1. Klicka på **Nyttolastfältet** och klistra in den JSON som skapades tidigare.
 

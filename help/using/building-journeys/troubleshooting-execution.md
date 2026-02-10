@@ -57,7 +57,7 @@ Du kan börja felsöka med frågorna nedan:
   Content-type - application/json
   ```
 
->>
+&#x200B;>>
 **För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
 
 ## Felsöka övergångar i testläge {#troubleshooting-test-transitions}

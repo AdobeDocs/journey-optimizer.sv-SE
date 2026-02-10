@@ -23,7 +23,7 @@ Få tydlig insyn i hur effektiva era kundresor är med hjälp av kundstatistik. 
 
 ## Förhandskrav {#prerequisites}
 
-Innan du använder dina resemått måste du lägga till en datamängd som innehåller fältgrupperna `Commerce Details`, `Web` och `Mobile` [ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} under Konfiguration > Rapportering i [!DNL Adobe Experience Platform].
+Innan du använder dina resemått måste du lägga till en datamängd som innehåller fältgrupperna `Commerce Details`, `Web` och `Mobile` [&#x200B; &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} under Konfiguration > Rapportering i [!DNL Adobe Experience Platform].
 
 Dessa fältgrupper måste väljas bland de inbyggda alternativen, inte från anpassade grupper. Se avsnittet [Lägg till datauppsättningar](../reports/reporting-configuration.md#add-datasets).
 

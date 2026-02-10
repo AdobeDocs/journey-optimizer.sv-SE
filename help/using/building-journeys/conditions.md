@@ -188,7 +188,7 @@ Följ de här stegen för att använda en målgrupp i ett resevillkor:
 
 1. Till vänster kan du visa **[!UICONTROL Audiences]**-noden. Dra och släpp den målgrupp du vill använda för ditt villkor. Som standard är villkoret för målgruppen sant.
 
-   ![Publiknod i uttrycksredigeraren för att välja [!DNL Adobe Experience Platform] målgrupper ](assets/segment4.png){width=80%}
+   ![Publiknod i uttrycksredigeraren för att välja [!DNL Adobe Experience Platform] målgrupper &#x200B;](assets/segment4.png){width=80%}
 
    >[!NOTE]
    >
