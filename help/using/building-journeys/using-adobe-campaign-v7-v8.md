@@ -48,4 +48,4 @@ Ett slutanvändarfall visas i det här [avsnittet](../building-journeys/ajo-ac.m
 >* Kampanjåtgärder v7/v8 kan användas tillsammans med åtgärder för inbyggda kanaler under samma resa. Detta gäller inte Campaign Standard åtgärder. Se [Garantier för kampanjaktiviteter](../start/guardrails.md#ac-g).
 >* Kampanjåtgärder v7/v8 kan inte användas med aktiviteter som hör till Läs målgrupp eller Audience Qualification. Se Läs skyddsutkast för målgrupps- och målgruppskvalitet på sidan Guardrails (GuarDRAils).
 
-![[!DNL Adobe Campaign] v7/v8-åtgärdskonfiguration och integreringsinställningar ](assets/accintegration2.png)
+![[!DNL Adobe Campaign] v7/v8-åtgärdskonfiguration och integreringsinställningar &#x200B;](assets/accintegration2.png)
