@@ -36,7 +36,7 @@ Du kan använda aktiviteten **[!UICONTROL Reaction]** för att utföra en åtgä
 
 ## Konfigurera reaktionshändelser {#configure}
 
-![Konfiguration av reaktionshändelser med kanalval och händelsetyp &#x200B;](assets/journey45.png)
+![Konfiguration av reaktionshändelser med kanalval och händelsetyp ](assets/journey45.png)
 
 Följ de här stegen för att konfigurera reaktionshändelser:
 

@@ -30,13 +30,13 @@ Om du har [!DNL Adobe Campaign] Standard är följande inbyggda åtgärdsaktivit
 >
 >Därför måste du konfigurera den inbyggda åtgärden. Se [den här sidan](../action/acs-action.md).
 
-För var och en av dessa kanaler väljer du en [!DNL Adobe Campaign] standardmall för transaktionsmeddelanden **2&rbrace;.** För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i [!DNL Adobe Campaign] Standard. Mer information om hur du använder den här funktionen finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
+För var och en av dessa kanaler väljer du en [!DNL Adobe Campaign] standardmall för transaktionsmeddelanden **2}.** För de inbyggda e-post-, SMS- och push-kanalerna använder vi Transactional Messaging för att skicka meddelanden. Det innebär att om du vill använda en viss meddelandemall under dina resor måste du publicera den i [!DNL Adobe Campaign] Standard. Mer information om hur du använder den här funktionen finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html?lang=sv).
 
 >[!NOTE]
 >
 >Campaign Standard transaktionsmeddelande och tillhörande händelse måste publiceras för att kunna användas i Journey Optimizer. Om händelsen publiceras men meddelandet inte visas, visas den inte i Journey Optimizer-gränssnittet. Om meddelandet publiceras men dess associerade händelse inte är det, visas det i Journey Optimizer-gränssnittet, men det går inte att använda det.
 
-![[!DNL Adobe Campaign] Standardåtgärdskonfiguration under resan &#x200B;](assets/journey59.png)
+![[!DNL Adobe Campaign] Standardåtgärdskonfiguration under resan ](assets/journey59.png)
 
 Du kan använda en händelsemall (kallas även realtid) eller en transaktionsmall för profiler.
 

@@ -149,4 +149,4 @@ Vid analys av **reserapporteringsmått** med hjälp av [!DNL Adobe Experience Pl
 
 Lär dig hur du torkar dina resor i den här videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464686/?captions=swe&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)
