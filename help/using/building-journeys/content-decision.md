@@ -7,24 +7,19 @@ feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: aktivitet, beslut, innehållsbeslut, beslutspolitik, arbetsyta, resa
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 67dd6b5d7e457c29795f53276755dbbb67c94a99
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1202'
 ht-degree: 1%
 
 ---
 
 # Aktivitet för innehållsbeslut {#content-decision}
 
->[!AVAILABILITY]
->
->Den här funktionen är bara tillgänglig för en uppsättning organisationer (begränsad tillgänglighet) och kommer att lanseras globalt i en framtida version.
-
-Med [!DNL Journey Optimizer] kan du inkludera erbjudanden på dina resor via den dedikerade **innehållsbeslutsuppgiften** på arbetsytan för resan. Du kan sedan lägga till andra aktiviteter (till exempel [anpassade åtgärder](../action/about-custom-action-configuration.md)) på dina resor för att rikta in dig på dina målgrupper med dessa personaliserade erbjudanden.
+Med [!DNL Journey Optimizer] kan du inkludera erbjudanden på dina resor via den dedikerade **innehållsbeslutsaktiviteten** på arbetsytan för resan. Du kan sedan lägga till andra aktiviteter (till exempel [anpassade åtgärder](../action/about-custom-action-configuration.md)) på dina resor för att rikta in dig på dina målgrupper med dessa personaliserade erbjudanden.
 
 >[!NOTE]
 >
@@ -78,11 +73,11 @@ Du är nu redo att utnyttja resultatet av den här innehållsbeslutsaktiviteten 
 
 **Samtyckesprinciper**
 
-Det tar upp till 48 timmar att genomföra uppdateringar av godkännandepolicyer. Om en beslutspolicy refererar till ett attribut som är knutet till en nyligen uppdaterad medgivandepolicy, kommer ändringarna inte att tillämpas omedelbart.
+* Det tar upp till 48 timmar att genomföra uppdateringar av godkännandepolicyer. Om en beslutspolicy refererar till ett attribut som är knutet till en nyligen uppdaterad medgivandepolicy, kommer ändringarna inte att tillämpas omedelbart.
 
-På samma sätt kan nya profilattribut som omfattas av en samtyckespolicy läggas till i en beslutspolicy och användas. Den relaterade principen för samtycke kommer inte att tillämpas förrän fördröjningen har passerat.
+* Om nya profilattribut som omfattas av en samtyckespolicy läggs till i en beslutspolicy kommer de att vara användbara, men den medgivandepolicy som är kopplad till dem kommer inte att tillämpas förrän förseningen har passerat.
 
-Samtyckesregler är endast tillgängliga för organisationer som har Adobe Healthcare Shield eller tillägg till Privacy and Security Shield.
+* Samtyckesregler är endast tillgängliga för organisationer som har Adobe Healthcare Shield eller tillägg till Privacy and Security Shield.
 
 ## Använd resultatet från innehållsbeslutsaktiviteten {#use-content-decision-output}
 
@@ -146,13 +141,13 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    ![Redigera den anpassade åtgärdens frågeparametrar](assets/journey-content-decision-custom-action-param.png)
 
-1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [&#x200B; i den &#x200B;](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
+1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [ i den ](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
 
    >[!CAUTION]
    >
    >Utdata från en innehållsbeslutsnod är bara tillgängliga i **[!UICONTROL Advanced mode]**.
 
-1. Bläddra igenom [erbjudandekatalogschemat](../experience-decisioning/catalogs.md#access-catalog-schema) med `items`-arrayen. Använd till exempel `itemName` för det första erbjudandet som har hämtats och `itemName` för det andra erbjudandet som har hämtats.
+1. Bläddra igenom katalogschemat [ för ](../experience-decisioning/catalogs.md#access-catalog-schema)erbjudanden med arrayen `items`. Använd till exempel `itemName` för det första erbjudandet som har hämtats och `itemName` för det andra erbjudandet som har hämtats.
 
    ![Parametrar för begäran för den anpassade åtgärden inklusive beslutsprincipen](assets/journey-content-decision-custom-action-param-ex.png)
 
@@ -181,3 +176,60 @@ När resan är [aktiverad](publish-journey.md):
 1. Det är bara profiler för vilka minst ett erbjudande hämtas som fortsätter resan (via sökvägen&quot;Kvalificerade profiler&quot;).
 
 1. Om villkoret är uppfyllt skickas motsvarande erbjudanden till ett externt system via den anpassade åtgärden.
+
+## Bestämma data i steghändelser {#decisioning-step-events}
+
+När en innehållsbeslutsaktivitet körs i en resa, görs beslutsdata tillgängliga i kundstegshändelserna. Dessa data innehåller detaljerad information om de objekt som hämtats och hur besluten fattades.
+
+För varje innehållsbeslutsaktivitet inkluderar steghändelsen beslutsdata på den översta nivån (till exempel **exdRequestID** och **propositionEventType**) och en array med **propositions**). Varje förslag har en **id**, **scopeDetails** (inklusive beslutsprovider, korrelations-ID och beslutsprincip) och en **items** -array. Varje objekt innehåller:
+
+* **id**: objektets unika identifierare
+* **namn**: objektets namn
+* **poäng**: poängen som tilldelats objektet
+* **itemSelection**: data för hur beslutet fattades och hur objektet hämtades, inklusive:
+   * **selectionDetail**: information om den urvalsstrategi som används
+   * **rankingDetail**: information om rankningsprocessen (strategi, algoritm, steg, trafiktyp)
+
+**Exempel på beslutsdata i en steghändelse:**
+
+```json
+"decisioning": {
+  "exdRequestID": "8079d2bb-a8b2-4ecf-b9e7-32923dd6ad4e",
+  "propositions": [
+    {
+      "id": "f475cb21-0842-44da-b0eb-70766ba53464",
+      "scopeDetails": {
+        "decisionProvider": "EXD",
+        "correlationID": "6940d1c46208f3c00dae2ab94f3cd31c601461b47bf6d29ff8af0d0806a9c204",
+        "decisionPolicy": {
+          "id": "b913f724-3747-447b-a51e-8a2f9178f0db"
+        }
+      },
+      "items": [
+        {
+          "id": "dps:14c7468e7f6271ff8023748a1146d11f05f77b7fc1368081:1bebbf0b7e0f1374",
+          "name": "My item name",
+          "score": 0.93,
+          "itemSelection": {
+            "selectionDetail": {
+              "strategyID": "dps:selection-strategy:1bebbfc9245cb35e",
+              "strategyName": "My selection strategy",
+              "selectionType": "selectionStrategy",
+              "version": "latest"
+            },
+            "rankingDetail": {
+              "strategyID": "4FyRZTmpjrbzuL7rX7gvmu",
+              "algorithmID": "RANDOM",
+              "step": "aiModel",
+              "trafficType": "random"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "propositionEventType": {
+    "decision": 1
+  }
+}
+```
