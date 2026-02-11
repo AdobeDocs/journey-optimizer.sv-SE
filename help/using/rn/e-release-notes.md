@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 3362242c13b404639d2a9b91742a5658cc1fb593
+source-git-commit: 22765397e7ec7a14e27a6998a28eb4dddca80f3c
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 17 februari 2026
 
@@ -121,7 +121,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Skapa Journey Agent-material</strong><br/></th>
+<th><strong>Journey Agent: Skapa kanalinnehåll</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -151,6 +151,22 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
+<th><strong>Mobile Live-aktiviteter</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Live-aktiviteter</strong> innehåller uppdateringar i realtid och interaktiva upplevelser i mobilappar, så att användarna kan hålla sig informerade om pågående händelser eller uppgifter direkt på enhetens skärm. Den här funktionen förbättrar engagemanget genom att leverera live-information, som förloppsspårning, händelseuppdateringar eller interaktivt innehåll, utan att användarna behöver öppna appen.</p>
+<p>Den här funktionen lanserades tidigare i betaversionen och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Meddelandekanal för Web Push</strong><br/></th>
 </tr>
 </thead>
@@ -159,7 +175,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <td>
 <p>Adobe Journey Optimizer har nu stöd för <strong>Web Push-meddelanden</strong>, vilket gör att push-kanalen kan användas även utanför mobila enheter. Ni kan smidigt leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen gör att ni kan engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttja samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
 <p>Den här funktionen lanserades tidigare i betaversionen och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Tillgänglighetsdatum: 11 februari 2026</p>
+<p>Tillgänglighetsdatum: 12 februari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -178,12 +194,6 @@ Förbättringar i den här versionen visas nedan.
 #### Kampanjer
 
 * **Mappar för resor och kampanjer** - Nu kan du ordna dina resor och kampanjer i <strong>mappar</strong> för att förbättra navigeringen och hanteringen i gränssnittet.
-
-#### Kanaler
-
-* **Mobila Live-aktiviteter** - <strong>Live-aktiviteter</strong> innehåller uppdateringar i realtid och interaktiva upplevelser i mobilappar, så att användarna kan hålla sig informerade om pågående händelser eller uppgifter direkt på enhetens skärm. Den här funktionen förbättrar engagemanget genom att leverera live-information, som förloppsspårning, händelseuppdateringar eller interaktivt innehåll, utan att användarna behöver öppna appen.
-
-  **Obs!**: Den här funktionen är nu tillgänglig i alla miljöer (allmän tillgänglighet).
 
 #### Konfiguration
 
@@ -222,7 +232,7 @@ Förbättringar i den här versionen visas nedan.
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: January 27, 2026
 
@@ -400,7 +410,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create Agent, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.</p>
-<p><a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-13747">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95142">Link to PRODUCT JIRA task</a></p>
 <p>Availability date: January 12, 2026</p>
 </td>
