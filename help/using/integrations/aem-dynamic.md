@@ -39,7 +39,7 @@ Förbättra och optimera materialet för alla skärmar och webbläsare genom att
 >
 >Kontrollera att Dynamic Media med OpenAPI är aktiverat i Adobe Experience Manager as a Cloud Service. [Läs mer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis){target="_blank"}.
 
-Dynamisk medieintegrering med Adobe Journey Optimizer är tillgängligt för både Dynamic Media [Scene7-läge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} och [ med OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
+Dynamisk medieintegrering med Adobe Journey Optimizer är tillgängligt för både Dynamic Media [Scene7-läge](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} och [&#x200B; med OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
 
 <!--
 >[!AVAILABILITY]
@@ -88,7 +88,7 @@ Med experimenteringsfunktionen kan du till exempel uppdatera den befintliga text
 
 >[!AVAILABILITY]
 >
->**Anpassning av textövertäckning** är endast tillgängligt i läget [Scene7 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} för dynamiska media. Eftersom Scene7-läget inte är tillgängligt för hälso- och sjukvårdskunder återges innehållet med en binär kopia av bilden från Journey Optimizer. Kontakta Adobe om du har några undantag.
+>**Anpassning av textövertäckning** är endast tillgängligt i läget [Scene7 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} för dynamiska media. Eftersom Scene7-läget inte är tillgängligt för hälso- och sjukvårdskunder återges innehållet med en binär kopia av bilden från Journey Optimizer. Kontakta Adobe om du har några undantag.
 
 Så här anpassar du textövertäckningen:
 
@@ -155,7 +155,7 @@ Du kan infoga den dynamiska mallen direkt i innehållet med komponenten Bild:
 
 1. Gå till parametrarna för mallen för dynamiska media i **bildinställningarna**.
 
-   Vilka fält som är tillgängliga beror på de parametrar som lagts till när [mallen ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} skapades i Adobe Experience Manager.
+   Vilka fält som är tillgängliga beror på de parametrar som lagts till när [mallen &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} skapades i Adobe Experience Manager.
 
    ![](assets/dynamic-media-template-3.png)
 
