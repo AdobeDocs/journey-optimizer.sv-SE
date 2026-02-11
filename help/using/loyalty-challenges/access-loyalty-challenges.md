@@ -11,13 +11,13 @@ hide: true
 hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
-source-git-commit: 5ccbddb37c0f45b6dd004cb4b70378b300228c0c
+exl-id: 8907c18e-4623-4743-a76b-333f34e13baf
+source-git-commit: c5d7cbde6e0a9b4b835abac19d33b973f9f364e4
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
-
 
 # Få tillgång till och hantera utmaningar och uppgifter {#access-loyalty-challenges}
 
@@ -26,9 +26,10 @@ ht-degree: 0%
 **Dokumentation om lojalitetsproblem:**
 
 * [Kom igång med lojalitetsutmaningar](get-started.md)
-* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här **&#x200B;**
+* **Få åtkomst till och hantera utmaningar och uppgifter** {2 }︎ ◀Du är här ****
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
+* [API-referens för lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
 >[!ENDSHADEBOX]
 

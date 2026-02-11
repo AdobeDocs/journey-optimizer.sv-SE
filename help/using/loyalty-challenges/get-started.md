@@ -12,9 +12,9 @@ hidefromtoc: true
 badge: label="Privat beta" type="Informative"
 mini-toc-levels: 1
 exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
-source-git-commit: 17d7cf7ae18ff987b7a9c9bebdec44b354ed11da
+source-git-commit: c5d7cbde6e0a9b4b835abac19d33b973f9f364e4
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,11 @@ ht-degree: 0%
 
 **Dokumentation om lojalitetsproblem:**
 
-* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här **&#x200B;**
+* **Kom igång med lojalitetsutmaningar** {2 }︎ ◀Du är här ****
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
 * [Skapa utmaningar](create-challenges.md)
 * [Skapa uppgifter](create-tasks.md)
+* [API-referens för lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
 >[!ENDSHADEBOX]
 
@@ -157,3 +158,7 @@ Nu när du vet vilka lojalitetsutmaningar som är och hur de fungerar är det da
   </td>
 </tr>
 </table>
+
+## API-referens {#api-reference}
+
+Använd API:t [Lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"} om du vill hantera lojalitetsutmaningar programmatiskt. Med API kan du skapa, uppdatera och hantera utmaningar och uppgifter via REST-slutpunkter.
