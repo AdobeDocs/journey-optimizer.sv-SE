@@ -28,7 +28,7 @@ ht-degree: 0%
 * [Kom igång med lojalitetsutmaningar](get-started.md)
 * [Få tillgång till och hantera utmaningar och uppgifter](access-loyalty-challenges.md)
 * [Skapa utmaningar](create-challenges.md)
-* **Skapa aktiviteter** {2 }︎ ◀Du är här ****
+* **Skapa aktiviteter** {2 }︎ ◀Du är här **&#x200B;**
 * [API-referens för lojalitetsutmaningar](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
 >[!ENDSHADEBOX]
@@ -82,7 +82,7 @@ Konfigurera aktivitetsattributen baserat på den valda aktivitetstypen. Bläddra
 Tillgängliga attribut för **Inköp**-aktiviteter:
 
 * **[!UICONTROL Quantity]**: Ange antalet artiklar som måste köpas för att den här uppgiften ska kunna slutföras.
-* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag ](#eligible-items-exclusions)
+* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag &#x200B;](#eligible-items-exclusions)
 * **[!UICONTROL Minimum spend value amount]**: Ange ett minimikrav för inköpsbelopp.
 * **[!UICONTROL Maximum number of transactions]**: Begränsa hur många transaktioner som kan användas för att slutföra uppgiften.
 
@@ -93,7 +93,7 @@ Tillgängliga attribut för **Inköp**-aktiviteter:
 Tillgängliga attribut för **Utlägg**-aktiviteter:
 
 * **[!UICONTROL Amount]**: Ange det totala utgiftsbeloppet som krävs för att slutföra uppgiften.
-* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag ](#eligible-items-exclusions)
+* **[!UICONTROL Eligible items & exclusions]**: Definiera objekt eller artikelgrupper som räknas som slutförda aktiviteter och de som inte gör det. [Läs mer om berättigade objekt och undantag &#x200B;](#eligible-items-exclusions)
 * **[!UICONTROL Maximum number of transactions]**: Ange hur många transaktioner som tillåts för att uppfylla utgiftsbehovet. Du kan aktivera det här attributet från parameterikonen.
 
 ![](assets/task-create-spend.png)
