@@ -141,13 +141,13 @@ Om du vill utnyttja resultatet av en innehållsbeslutsaktivitet kan du lägga ti
 
    ![Redigera den anpassade åtgärdens frågeparametrar](assets/journey-content-decision-custom-action-param.png)
 
-1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [ i den ](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
+1. Växla till **[!UICONTROL Advanced mode]** i popup-fönstret som öppnas. Öppna noden [&#x200B; i den &#x200B;](expression/expressionadvanced.md)avancerade uttrycksredigeraren **[!UICONTROL Context]** för att visa alla beslutsprincipobjekt.
 
    >[!CAUTION]
    >
    >Utdata från en innehållsbeslutsnod är bara tillgängliga i **[!UICONTROL Advanced mode]**.
 
-1. Bläddra igenom katalogschemat [ för ](../experience-decisioning/catalogs.md#access-catalog-schema)erbjudanden med arrayen `items`. Använd till exempel `itemName` för det första erbjudandet som har hämtats och `itemName` för det andra erbjudandet som har hämtats.
+1. Bläddra igenom katalogschemat [&#x200B; för &#x200B;](../experience-decisioning/catalogs.md#access-catalog-schema)erbjudanden med arrayen `items`. Använd till exempel `itemName` för det första erbjudandet som har hämtats och `itemName` för det andra erbjudandet som har hämtats.
 
    ![Parametrar för begäran för den anpassade åtgärden inklusive beslutsprincipen](assets/journey-content-decision-custom-action-param-ex.png)
 
