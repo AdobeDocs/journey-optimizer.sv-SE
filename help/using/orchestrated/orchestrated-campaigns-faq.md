@@ -5,9 +5,9 @@ title: Vanliga frågor och svar om samordnade kampanjer
 description: Frågor och svar om Journey Optimizer samordnade kampanjer
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
-source-git-commit: 478bd6df8a82c9e37ec9319dedb27d99c021ee99
+source-git-commit: 6a32a60f153ff4880ce974e77bc11eed1e20a7c7
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1884'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Nedan hittar du Frågor och svar om Adobe Journey Optimizer samordnade kampanjer.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ Vad är Campaign-samordning?
 
@@ -64,7 +64,7 @@ För att få åtkomst till kampanjsamordning måste din licens innehålla anting
 **Läs mer**
 
 * [Kom igång med samordnade kampanjer](gs-orchestrated-campaigns.md)
-* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Adobe Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
 +++
 
@@ -162,7 +162,7 @@ Du kan skapa samordnade kampanjer för att skicka **e-post**, **SMS**, **push-me
 
 +++ Kan flera kommunikationer och olika kanaler lanseras inom samma samordnade kampanj?
 
-Ja, samordnade kampanjer har stöd för flerkanalsmarknadsföring. Ni kan kombinera e-post, SMS och push-meddelanden till en kampanjarbetsyta i flera steg för att skapa heltäckande kundupplevelser.
+Ja, samordnade kampanjer har stöd för flerkanalsmarknadsföring. Ni kan kombinera aktiviteter som e-post, SMS, push-meddelanden och direktreklam till en kampanjarbetsyta i flera steg för att skapa heltäckande kundupplevelser.
 
 **Läs mer**
 
@@ -195,7 +195,7 @@ Nej, innehållsdesignern, inklusive Email Designer, är gemensam för alla Journ
 
 +++ Hur hänger de olika kanalerna ihop i samordnade kampanjer?
 
-Kanalkomponenten och körningsmiljön är gemensamma för alla Journey Optimizer-kampanjer, men de kanaler som stöds skiljer sig åt. Samordnade kampanjer har stöd för e-post, SMS och push-meddelanden.
+Kanalkomponenten och körningsmiljön är gemensamma för alla Journey Optimizer-kampanjer, men de kanaler som stöds skiljer sig åt. Samordnade kampanjer har stöd för e-post, SMS, push-meddelanden och direktreklam.
 
 **Läs mer**
 
@@ -207,7 +207,7 @@ Kanalkomponenten och körningsmiljön är gemensamma för alla Journey Optimizer
 
 +++ Kan samordnade kampanjer kopplas till utgående kanaler (webb, inApp)?
 
-Nej, inkommande kanaler som webben och appar stöds inte i samordnade kampanjer. Endast utgående kanaler (e-post, SMS och push-meddelanden) stöds.
+Nej, inkommande kanaler som webben och appar stöds inte i samordnade kampanjer. Endast utgående kanaler (e-post, SMS, push-meddelanden och direktreklam) stöds.
 
 **Läs mer**
 
@@ -383,4 +383,4 @@ Utforska följande resurser om du vill ha mer information och uppdateringar:
 * [Samordnade kampanjer skyddar mot detaljer och begränsningar](guardrails.md)
 * [Kom igång med scheman och datauppsättningar i samordnade kampanjer](gs-schemas.md)
 * [Skapa din första samordnade kampanj](gs-campaign-creation.md)
-* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
+* [Journey Optimizer produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}

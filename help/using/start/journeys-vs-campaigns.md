@@ -9,13 +9,13 @@ level: Beginner
 keywords: resa, kampanj, iscensatt, jämförelse, val, beslut, arbetsflöde, realtid, batch, orkestrering, flera steg, schemalagd, API-utlöst, händelsestyrd
 hide: true
 hidefromtoc: true
-source-git-commit: c1efa56fc3f3c93bdc4b9c7a9f4e81b58cbcff72
+exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
+source-git-commit: 6a32a60f153ff4880ce974e77bc11eed1e20a7c7
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 1%
 
 ---
-
 
 # Resor jämfört med kampanjer: Välj rätt metod {#journeys-vs-campaigns}
 
@@ -207,7 +207,7 @@ Kombinerar arbetsflödeskomplexitet med batchkörning av kampanjer.
 | Webb | ✅ | ✅ | ❌ | ❌ |
 | Kodbaserad | ✅ | ✅ | ❌ | ❌ |
 | Innehållskort | ✅ | ✅ | ❌ | ❌ |
-| Direktmeddelande | ✅ | ✅ | ❌ | ❌ |
+| Direktmeddelande | ✅ | ✅ | ❌ | ✅ |
 
 ### Avancerade funktioner
 
@@ -280,4 +280,3 @@ Vill du börja bygga? Utforska den detaljerade dokumentationen för det sätt du
 * [Jämförelse av kampanjtyper](../campaigns/get-started-with-campaigns.md#campaign-types)
 * [Vanliga frågor om resor](../building-journeys/journey-faq.md)
 * [Vanliga frågor om samordnade kampanjer](../orchestrated/orchestrated-campaigns-faq.md)
-
