@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: c42aa41ed0d5d688840cf06512a04c22d74c828c
+source-git-commit: 3362242c13b404639d2a9b91742a5658cc1fb593
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 17 februari 2026
 
@@ -151,22 +151,6 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Använd Adobe Experience Platform-data vid beslut</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Adobe Experience Platform-data</strong> i beslut är nu tillgängliga för <strong>alla kanaler</strong>. Tidigare var den här funktionen begränsad till e-post och till anpassade åtgärder på resorna.</p>
-<p>Den här funktionen är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Meddelandekanal för Web Push</strong><br/></th>
 </tr>
 </thead>
@@ -219,6 +203,8 @@ Förbättringar i den här versionen visas nedan.
 
 * **Erbjud prioriterad AI-modellövervakning** - Med Journey Optimizer kan du nu övervaka hälsa, utbildningsstatus och prestanda för dina <strong>AI-modeller</strong> i beslutet så att du kan kontrollera om kursen lyckades, felsöka och förstå hur resultatet påverkas. Den här funktionen är endast tillgänglig för personaliserade optimeringsmodeller (inte automatisk optimering).
 
+* **Använd Adobe Experience Platform-data i beslut** - <strong>Adobe Experience Platform-data</strong> i beslut är nu tillgängliga för <strong>alla kanaler</strong>. Tidigare var den här funktionen begränsad till e-post och till anpassade åtgärder på resorna.
+
 * **Förhandsgranskning av Experience Decisioning i den kodbaserade upplevelsekanalen** - Du kan nu <strong>förhandsgranska beslutsobjekt</strong> när du konfigurerar Experience Decisioning med den <strong>kodbaserade upplevelsekanalen</strong>. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras.
 
 #### Resor
@@ -236,7 +222,7 @@ Förbättringar i den här versionen visas nedan.
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: January 27, 2026
 
@@ -414,7 +400,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create Agent, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.</p>
-<p><a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-13747">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95142">Link to PRODUCT JIRA task</a></p>
 <p>Availability date: January 12, 2026</p>
 </td>
