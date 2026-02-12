@@ -7,9 +7,9 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: a9c74b396e24fec418f0556124a07d482b015825
+source-git-commit: 4b6e988d79c48d0c5417c9e7f43a8da85a7fbe28
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1553'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 17 februari 2026
 
@@ -45,24 +45,6 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <li>Användningsfall med stor volym och tidskänslighet - Passar för stora målgrupper eller när du behöver styra timing (t.ex. callcenters kapacitet, uppfartsavtal eller tidsbundna erbjudanden).</li>
 </ul>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-11533">Länka till DOCAC JIRA-aktivitet</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Carbon copy (CC) for email</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du konfigurera ett valfritt CC-fält (kopia) i inställningarna för e-postkanalen. Till skillnad från CC är CC-mottagare synliga för den primära mottagaren, vilket möjliggör transparent kommunikation och tydligare ägarskap.</p>
-<p>På så sätt kan ni automatiskt kopiera rätt intressenter för varje meddelande - t.ex. en relationshanterare eller kontoägare - och samtidigt se till att kunden vet vem som ska kontaktas för uppföljning.</p>
-<p>CC-fältet har stöd för personalisering, så en enda konfiguration kan dynamiskt dirigera kopior baserat på profildata, vilket gör det skalbart för flera användningsfall utan ytterligare konfiguration.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14051">Länka till DOCAC JIRA-aktivitet</a></p>
 </td>
 </tr>
 </tbody>
@@ -270,6 +252,10 @@ Förbättringar i den här versionen visas nedan.
 
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13918">Länka till DOCAC JIRA-aktivitet</a>
 
+* **Stöd för Firefly 3P-modeller för tredjepartsbildgenerering** - Du kan nu använda tredjepartsmodeller för bildgenerering (som OpenAI och Gemini) tillsammans med Firefly för att skapa bilder i Journey Optimizer. Detta ger dig större flexibilitet att välja rätt modell för varje användningsfall och integrera godkända externa leverantörer via Firefly 3P-gatewayen.
+
+  <a href="https://jira.corp.adobe.com/browse/DOCAC-14145">Länka till DOCAC JIRA-aktivitet</a>
+
 #### Kampanjer
 
 * **Mappar för resor och kampanjer** - Nu kan du ordna dina resor och kampanjer i mappar för att förbättra navigeringen och hanteringen i gränssnittet.
@@ -313,7 +299,7 @@ Förbättringar i den här versionen visas nedan.
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: January 27, 2026
 
@@ -491,7 +477,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create Agent, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.</p>
-<p><a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-13747">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95142">Link to PRODUCT JIRA task</a></p>
 <p>Availability date: January 12, 2026</p>
 </td>
