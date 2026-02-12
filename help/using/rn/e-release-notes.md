@@ -7,10 +7,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
-source-git-commit: 22765397e7ec7a14e27a6998a28eb4dddca80f3c
+source-git-commit: 2bd5331b1ca3ccf0056c0831a2ec7a51eb27f5ed
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 0%
+source-wordcount: '1386'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 17 februari 2026
 
@@ -51,15 +51,75 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
+<th><strong>CC i e-postkanalskonfiguration</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>En ny <strong>aktivitet för innehållsbeslut</strong> är nu tillgänglig på arbetsytan för att integrera <strong>personaliserade erbjudanden</strong> direkt på kundresorna. Med den här aktiviteten kan ni leverera beslutsbaserat innehåll och hänvisa till dessa erbjudanden under hela kundresan - under villkor för att skapa kvalificeringsbaserade förgreningar, i anpassade åtgärder för att skicka erbjudandedata till externa system och i andra aktiviteter för att skapa helt personaliserade kundupplevelser.</p>
-<p>Den här funktionen är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Tillgänglighetsdatum: 9 februari 2026</p>
+<p>Nu kan du lägga till ett valfritt <strong>CC-fält (kopia)</strong> i e-postkanalskonfigurationerna. Till skillnad från CC är CC-adressen synlig för den primära mottagaren, så att du kan skicka en kopia till rätt person per meddelande - till exempel en relationshanterare - medan kunden ser vem som är i CC och kan kontakta dem för uppföljning. CC-fältet stöder <strong>personalisering</strong> så att en konfiguration kan hantera många scenarier.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Skiljeförfarande på resan</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du använda <strong>formler</strong> och <strong>AI-modeller</strong> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kommer in på de mest relevanta resorna.</p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Agent: Skapa kanalinnehåll</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Agent finns i Journey Optimizer och används av Adobe Experience Platform Agent Orchestrator för att analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Agent: Skapa kampanjsamordning</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Använd case för att skapa kampanjsamordning via Journey Agent. Information som ska bekräftas från produkten.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Mobile Live-aktiviteter</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Live-aktiviteter</strong> innehåller uppdateringar i realtid och interaktiva upplevelser i mobilappar, så att användarna kan hålla sig informerade om pågående händelser eller uppgifter direkt på enhetens skärm. Den här funktionen förbättrar engagemanget genom att leverera live-information, som förloppsspårning, händelseuppdateringar eller interaktivt innehåll, utan att användarna behöver öppna appen.</p>
+<p>Den här funktionen lanserades tidigare i betaversionen och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 </td>
 </tr>
 </tbody>
@@ -90,92 +150,92 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
-<th><strong>Journey Agent: skapa resor</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Med Journey Create Agent kan Journey Optimizer-användare skapa och konfigurera marknadsföringsresor med ett <strong>naturligt språk</strong> -gränssnitt. Med Journey Create Agent kan du snabbt skapa resor genom att beskriva deras krav i <strong>konversationsmeddelanden</strong>. Agenten effektiviserar framtagningen av resor så att marknadsförarna kan fokusera på strategi istället för teknisk konfiguration.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Skiljeförfarande på resan</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Du kan nu använda formler och AI-modeller för att automatiskt öka <strong>prioritetspoängen för kundresor</strong> baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kommer in på de mest relevanta resorna.</p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Agent: Skapa kanalinnehåll</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Agent finns i Journey Optimizer och används av Adobe Experience Platform Agent Orchestrator för att analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>CC i e-postkanalskonfiguration</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du lägga till ett valfritt <strong>CC-fält (kopia)</strong> i e-postkanalskonfigurationerna. Till skillnad från CC är CC-adressen synlig för den primära mottagaren, så att du kan skicka en kopia till rätt person per meddelande - till exempel en relationshanterare - medan kunden ser vem som är i CC och kan kontakta dem för uppföljning. CC-fältet stöder <strong>personalisering</strong> så att en konfiguration kan hantera många scenarier.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Mobile Live-aktiviteter</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Live-aktiviteter</strong> innehåller uppdateringar i realtid och interaktiva upplevelser i mobilappar, så att användarna kan hålla sig informerade om pågående händelser eller uppgifter direkt på enhetens skärm. Den här funktionen förbättrar engagemanget genom att leverera live-information, som förloppsspårning, händelseuppdateringar eller interaktivt innehåll, utan att användarna behöver öppna appen.</p>
-<p>Den här funktionen lanserades tidigare i betaversionen och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Meddelandekanal för Web Push</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer har nu stöd för <strong>Web Push-meddelanden</strong>, vilket gör att push-kanalen kan användas även utanför mobila enheter. Ni kan smidigt leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen gör att ni kan engagera användarna med rätt, personaliserade meddelanden i realtid, och utnyttja samma arbetsflöden och målgruppsfunktioner som redan finns för mobilpush.</p>
+<p>Adobe Journey Optimizer har nu stöd för <strong>Web Push-meddelanden</strong>, vilket gör att push-kanalen kan användas även utanför mobila enheter. Ni kan smidigt leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app.</p>
 <p>Den här funktionen lanserades tidigare i betaversionen och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p>Tillgänglighetsdatum: 12 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Aktivitet för innehållsbeslut</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>En ny <strong>aktivitet för innehållsbeslut</strong> är nu tillgänglig på arbetsytan för att integrera <strong>personaliserade erbjudanden</strong> direkt på kundresorna. Med den här aktiviteten kan ni leverera beslutsbaserat innehåll och hänvisa till dessa erbjudanden under hela kundresan - under villkor för att skapa kvalificeringsbaserade förgreningar, i anpassade åtgärder för att skicka erbjudandedata till externa system och i andra aktiviteter för att skapa helt personaliserade kundupplevelser.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p><img src="assets/do-not-localize/content-decision.gif"/></p>
+<p>Mer information finns i den <a href="../building-journeys/content-decision.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 11 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Verktyg-API:er för självbetjäningsmigrering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Migreringsverktygs-API:er</strong> är nu tillgängliga för programmässig migrering av beslutshanteringsenheter till Beslutsfattare, med följande innehåll:</p>
+<ul>
+<li>Flexibla migreringsomfång (sandlåda, erbjudande eller beslutsnivå)</li>
+<li>Automatisk beroendeanalys och validering</li>
+<li>Återställningsstöd för slutförda migreringar</li>
+<li>Detaljerade migreringsrapporter med objektmappningar</li>
+</ul>
+<p>Mer information finns i den <a href="../experience-decisioning/decisioning-migration-api.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 3 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Övervakning av anpassade åtgärder</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Få djupare insikter i hälsa och prestanda för dina <strong>anpassade åtgärdsslutpunkter</strong> med en ny kontrollpanel och förbättrade händelsedata för kundsteg. Spåra lyckade samtal, fel, dataflöde, svarstider och väntetider för kön för att snabbt förstå när, var och varför avvikelser inträffar.</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Mer information finns i den <a href="../action/reporting.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 3 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Beslutsstöd i SMS-kanal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu anpassa och optimera innehållet i dina <strong>SMS-meddelanden</strong> med <strong>Beslutsfattande</strong>. Använd prioriteringspoäng, formler eller AI-modeller för att visa det bästa innehållet för era kunder.</p>
+<p>Mer information finns i den <a href="../experience-decisioning/create-decision.md">detaljerade dokumentationen</a>.</p>
+<p>Tillgänglighetsdatum: 2 februari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -185,17 +245,9 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 
 Förbättringar i den här versionen visas nedan.
 
-#### AI
-
-* **Uppdatera varumärken med nya färgflikar** - Riktlinjer för varumärken hjälper dig att se till att ert varumärke presenteras på ett enhetligt sätt över alla kontaktytor. I det nya avsnittet <strong>Färger</strong> definieras standarderna för ditt varumärkes färgsystem, som visar hur färger väljs, ordnas och används i olika upplevelser. Det säkerställer konsekvent användning av primära, sekundära, dekorativa och neutrala färger för att stödja en sammanhängande, tillgänglig och identifierbar varumärkesidentitet.
-
-* **Integrering av anpassade Firefly-modeller och tredjepartsmodeller för bildgenerering** - Aktivera sömlös integrering av Firefly-modeller och <strong>anpassade-modeller</strong>, tillsammans med godkända <strong>tredjepartsmodeller</strong> (till exempel NanoBanana), för att ge större flexibilitet, kontroll och varumärkesjustering när bilder genereras. På så sätt kan du välja den bästa modellen för varje användningsfall: standardmodell för Firefly för allmänna behov, anpassad Firefly för varumärkesgenerering eller godkända tredjepartsmodeller för specialiserade eller experimentella scenarier.
-
-#### Kampanjer
-
-* **Mappar för resor och kampanjer** - Nu kan du ordna dina resor och kampanjer i <strong>mappar</strong> för att förbättra navigeringen och hanteringen i gränssnittet.
-
 #### Konfiguration
+
+* **Återkallning av upplevelsehändelsesökning** - Samordning med produkten i nästa fas av borttagning av Experience Event-sökningsanvändning (EE) i resor: borttagning för kunder som inte har använt EE-sökning de senaste 90 dagarna. Uppdateringar av dokumentation och versionsinformation planeras; växling planeras till den 1 april.
 
 * **Metoden för delegering av underdomäner** - Nu kan du växla från en <strong>delegeringsmetod för underdomäner</strong> till en annan. Detta gör att du kan migrera domäner med CNAME-delegeringsläget till den anpassade delegeringsmetoden för att följa företagets säkerhetsprofiler.
 
@@ -203,19 +255,27 @@ Förbättringar i den här versionen visas nedan.
 
 * **Använd ett varumärkestema för att konvertera en bild till en e-postmall** - När du konverterar en bild till en e-postmall i Journey Optimizer kan du nu använda ett <strong>varumärkestema</strong> som indata så att den genererade HTML följer varumärkesparametrarna. Formatering som bakgrundsfärg, knappfärg, teckensnitt, radavstånd, marginaler och utfyllnad tillämpas automatiskt, vilket minskar det manuella arbetet och ger en mall som är klar att användas med minimala redigeringar.
 
+* **Uppdatera varumärken med nya färgflikar** - Riktlinjer för varumärken hjälper dig att se till att ert varumärke presenteras på ett enhetligt sätt över alla kontaktytor. I det nya avsnittet <strong>Färger</strong> definieras standarderna för ditt varumärkes färgsystem, som visar hur färger väljs, ordnas och används i olika upplevelser.
+
+#### AI
+
+* **Integrering av anpassade Firefly-modeller och tredjepartsmodeller för bildgenerering** - Aktivera sömlös integrering av Firefly-modeller och <strong>anpassade-modeller</strong>, tillsammans med godkända <strong>tredjepartsmodeller</strong> (till exempel NanoBanana), för att ge större flexibilitet, kontroll och varumärkesjustering när bilder genereras.
+
+#### Kampanjer
+
+* **Mappar för resor och kampanjer** - Nu kan du ordna dina resor och kampanjer i <strong>mappar</strong> för att förbättra navigeringen och hanteringen i gränssnittet.
+
 #### Experience Decision
+
+* **Förhandsgranskning av Experience Decisioning i den kodbaserade upplevelsekanalen** - Du kan nu <strong>förhandsgranska beslutsobjekt</strong> när du konfigurerar Experience Decisioning med den <strong>kodbaserade upplevelsekanalen</strong>. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras.
+
+* **Erbjud prioriterad AI-modellövervakning** - Med Journey Optimizer kan du nu övervaka hälsa, utbildningsstatus och prestanda för dina <strong>AI-modeller</strong> i beslutet så att du kan kontrollera om kursen lyckades, felsöka och förstå hur resultatet påverkas. Den här funktionen är endast tillgänglig för personaliserade optimeringsmodeller (inte automatisk optimering).
 
 * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla <strong>fragment</strong> till <strong>beslutsobjekt</strong> som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutsprinciper.
 
   **Obs!**: Den här förbättringen är nu tillgänglig för alla miljöer (allmän tillgänglighet).
 
-  Tillgänglighetsdatum: 9 februari 2026.
-
-* **Erbjud prioriterad AI-modellövervakning** - Med Journey Optimizer kan du nu övervaka hälsa, utbildningsstatus och prestanda för dina <strong>AI-modeller</strong> i beslutet så att du kan kontrollera om kursen lyckades, felsöka och förstå hur resultatet påverkas. Den här funktionen är endast tillgänglig för personaliserade optimeringsmodeller (inte automatisk optimering).
-
-* **Använd Adobe Experience Platform-data i beslut** - <strong>Adobe Experience Platform-data</strong> i beslut är nu tillgängliga för <strong>alla kanaler</strong>. Tidigare var den här funktionen begränsad till e-post och till anpassade åtgärder på resorna.
-
-* **Förhandsgranskning av Experience Decisioning i den kodbaserade upplevelsekanalen** - Du kan nu <strong>förhandsgranska beslutsobjekt</strong> när du konfigurerar Experience Decisioning med den <strong>kodbaserade upplevelsekanalen</strong>. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras.
+  Tillgänglighetsdatum: 12 februari 2026.
 
 #### Resor
 
@@ -223,16 +283,16 @@ Förbättringar i den här versionen visas nedan.
 
   **Obs!**: Den här förbättringen är nu tillgänglig för alla miljöer (allmän tillgänglighet).
 
-#### Samordnade kampanjer
+* **SMS-webbhooks** - Webbhooks stöds nu av alla SMS-leverantörer. Du kan konfigurera varje webkrok baserat på dess avsedda syfte, inkommande webbhooks för att hämta inkommande meddelanden och Feedback-webbhooks för att ta emot leveranskvitton, statusuppdateringar och andra meddelanderelaterade händelser. [Läs mer](../sms/sms-webhook.md)
 
-* **Testaktivitet i samordnade kampanjer** - <strong>Testaktiviteten</strong> är nu tillgänglig i samordnade kampanjer. Denna Flow control-aktivitet möjliggör <strong>villkorlig förgrening</strong> med flera utdataövergångar baserade på angivna villkor, så att du kan skapa dynamiska kampanjflöden som anpassar sig efter olika scenarier.
+  Tillgänglighetsdatum: 2 februari 2026.
 
 <!--
 ## January '26 pre-release notes {#jan-26-01-rn}
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: January 27, 2026
 
@@ -410,7 +470,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create Agent, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.</p>
-<p><a href="https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
+<p><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide" target="_blank">Learn more</a></p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-13747">Link to DOCAC JIRA task</a> | <a href="https://jira.corp.adobe.com/browse/CJM-95142">Link to PRODUCT JIRA task</a></p>
 <p>Availability date: January 12, 2026</p>
 </td>
