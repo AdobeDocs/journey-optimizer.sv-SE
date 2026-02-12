@@ -5,13 +5,13 @@ feature: Decisioning
 topic: Integrations
 role: Developer
 level: Experienced
-source-git-commit: 398d4c2ab3a2312a0af5b8ac835f7d1f49a61b5b
+exl-id: 3ec084ca-af9e-4b5e-b66f-ec390328a9d6
+source-git-commit: 7b1b79e9263aa2512cf69cb130f322a1558eecff
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
 
 ---
-
 
 # API för beslutsmigrering {#decisioning-migration-api}
 
@@ -70,8 +70,8 @@ Mer information om sandlådehantering finns i [Använda och tilldela sandlådor]
 
 Använd följande bas-URL:er beroende på din miljö:
 
-* **Produktion**: `https://platform.adobe.io`
-* **Förproduktion**: `https://platform-stage.adobe.io`
+* **Produktion**: `https://decisioning-migration.adobe.io`
+* **Förproduktion**: `https://decisioning-migration-stage.adobe.io`
 
 ### Autentisering {#authentication}
 
@@ -79,7 +79,6 @@ Alla API-begäranden kräver följande rubriker:
 
 * `Authorization: Bearer <IMS_ACCESS_TOKEN>`
 * `x-gw-ims-org-id: <IMS_ORG_ID>`
-* `x-api-key: <CLIENT_API_KEY>`
 * `Content-Type: application/json`
 
 Detaljerade instruktioner om hur du konfigurerar autentisering finns i [Journey Optimizer-autentiseringsguiden](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}.
@@ -91,7 +90,7 @@ Varje API-anrop skapar eller hämtar en arbetsflödesresurs. Arbetsflöden är a
 Ett arbetsflöde har följande egenskaper:
 
 * `id` - Unik identifierare för arbetsflöde (UUID)
-* `status` - Aktuell arbetsflödesstatus: `New`, `Running`, `Completed`, `Failed` eller `Cancelled`
+* `status` - Aktuell arbetsflödesstatus: `New`, `Running`, `Completed` eller `Failed`
 * `result` - Arbetsflödets utdata när det är klart (inkluderar migreringsresultat och varningar)
 * `errors` - Strukturerad felinformation vid fel
 * `_etag` - Versionsidentifierare används för borttagningsåtgärder (endast tjänstanvändare)
@@ -112,7 +111,7 @@ Använd följande API-anrop för att skapa ett arbetsflöde för beroendeanalys.
 **API-format**
 
 ```http
-POST /migration/service/dependency
+POST /workflows/generate-dependencies
 ```
 
 **Beroende på sandlådenivå (rekommenderas först)**
@@ -121,10 +120,9 @@ Börja med en analys på sandlådenivå för att få en fullständig bild av all
 
 ```shell
 curl --request POST \
-  --url "https://platform.adobe.io/migration/service/dependency" \
+  --url "https://decisioning-migration.adobe.io/workflows/generate-dependencies" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>" \
   --header "Content-Type: application/json" \
   --data '{
     "imsOrgId": "<IMS_ORG_ID>",
@@ -149,24 +147,23 @@ Avsök beroendearbetsflödet för att kontrollera när analysen är klar.
 **API-format**
 
 ```http
-GET /migration/service/dependency/{id}
+GET /workflows/generate-dependencies/{id}
 ```
 
 **Begäran**
 
 ```shell
 curl --request GET \
-  --url "https://platform.adobe.io/migration/service/dependency/<WORKFLOW_ID>" \
+  --url "https://decisioning-migration.adobe.io/workflows/generate-dependencies/<WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
-  --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>"
+  --header "x-gw-ims-org-id: <IMS_ORG_ID>"
 ```
 
 När fältet `status` visar `Completed` är beroendeanalysen klar. Använd arbetsflödets utdata för att skapa dina migreringsberoendemappningar:
 
-* **profileAttributeDependency** - Mappar källprofilattribut till målprofilattribut
-* **contextAttributeDependency** - Mappar källkontextattribut till målkontextattribut
-* **segmentsDependency** - Mappar källsegmentnycklar till målsegmentidentifierare (`{segmentNamespace, segmentId}`)
+* **profileAttributes** - Mappar källprofilattribut till målprofilattribut
+* **contextAttributes** - Mappar källkontextattribut till målkontextattribut
+* **segment** - Mappar källsegmentnycklar till målsegmentidentifierare (`{namespace, id}`)
 * **datasetName** - Anger måldatamängdens namn för migreringen
 
 ### Steg 2: Utför migreringen {#execute-migration}
@@ -180,7 +177,7 @@ Använd beroendemappningarna från steg 1 för att konfigurera och köra din mig
 **API-format**
 
 ```http
-POST /migration/service/migrations
+POST /workflows/migration
 ```
 
 **Migrering på sandlådenivå**
@@ -189,10 +186,9 @@ Så här migrerar du alla beslutsobjekt från en sandlåda till en annan:
 
 ```shell
 curl --request POST \
-  --url "https://platform.adobe.io/migration/service/migrations" \
+  --url "https://decisioning-migration.adobe.io/workflows/migration" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>" \
   --header "Content-Type: application/json" \
   --data '{
     "imsOrgId": "<IMS_ORG_ID>",
@@ -200,16 +196,16 @@ curl --request POST \
     "targetSandboxDetails": { "sandboxName": "<TARGET_SANDBOX_NAME>" },
     "createDataStream": true,
     "dependency": {
-      "profileAttributeDependency": {
+      "profileAttributes": {
         "sourceAttr1": "targetAttr1"
       },
-      "segmentsDependency": {
+      "segments": {
         "sourceSegmentKey1": {
-          "segmentNamespace": "<TARGET_SEGMENT_NAMESPACE>",
-          "segmentId": "<TARGET_SEGMENT_ID>"
+          "namespace": "<TARGET_SEGMENT_NAMESPACE>",
+          "id": "<TARGET_SEGMENT_ID>"
         }
       },
-      "contextAttributeDependency": {
+      "contextAttributes": {
         "sourceCtx1": "targetCtx1"
       },
       "datasetName": "<TARGET_DATASET_NAME>"
@@ -241,17 +237,16 @@ Avfråga migreringsarbetsflödet för att spåra dess förlopp.
 **API-format**
 
 ```http
-GET /migration/service/migrations/{id}
+GET /workflows/migration/{id}
 ```
 
 **Begäran**
 
 ```shell
 curl --request GET \
-  --url "https://platform.adobe.io/migration/service/migrations/<WORKFLOW_ID>" \
+  --url "https://decisioning-migration.adobe.io/workflows/migration/<WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
-  --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>"
+  --header "x-gw-ims-org-id: <IMS_ORG_ID>"
 ```
 
 **Migreringsresultat**
@@ -301,20 +296,21 @@ Starta en återställning genom att skapa ett återställningsarbetsflöde som r
 **API-format**
 
 ```http
-POST /migration/service/rollbacks/{migrationWorkflowId}
+POST /workflows/rollback
 ```
-
-Ersätt `{migrationWorkflowId}` med ID:t för det migreringsarbetsflöde som du vill återställa.
 
 **Begäran**
 
 ```shell
 curl --request POST \
-  --url "https://platform.adobe.io/migration/service/rollbacks/<MIGRATION_WORKFLOW_ID>" \
+  --url "https://decisioning-migration.adobe.io/workflows/rollback" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>"
+  --header "Content-Type: application/json" \
+  --data '{ "rollbackWorkflowId": "<MIGRATION_WORKFLOW_ID>" }'
 ```
+
+Ersätt `<MIGRATION_WORKFLOW_ID>` med ID:t för det migreringsarbetsflöde som du vill återställa.
 
 ### Status för skärmåterställning {#poll-rollback-status}
 
@@ -323,17 +319,16 @@ Avsök återställningsarbetsflödet för att spåra dess förlopp.
 **API-format**
 
 ```http
-GET /migration/service/rollbacks/{rollbackWorkflowId}
+GET /workflows/rollback/{rollbackWorkflowId}
 ```
 
 **Begäran**
 
 ```shell
 curl --request GET \
-  --url "https://platform.adobe.io/migration/service/rollbacks/<ROLLBACK_WORKFLOW_ID>" \
+  --url "https://decisioning-migration.adobe.io/workflows/rollback/<ROLLBACK_WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
-  --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>"
+  --header "x-gw-ims-org-id: <IMS_ORG_ID>"
 ```
 
 ## Hantera samtidiga arbetsflöden {#handle-concurrency}
@@ -363,9 +358,9 @@ Arbetsflödesresurser kan bara tas bort av tjänstanvändare. Borttagningsåtgä
 
 **Tillgängliga borttagningsåtgärder:**
 
-* `DELETE /migration/service/dependency/{id}`
-* `DELETE /migration/service/migrations/{id}`
-* `DELETE /migration/service/rollbacks/{id}`
+* `DELETE /workflows/generate-dependencies/{id}`
+* `DELETE /workflows/migration/{id}`
+* `DELETE /workflows/rollback/{id}`
 
 >[!NOTE]
 >
