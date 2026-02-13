@@ -8,16 +8,16 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-source-git-commit: 083545ff7b2dc5ce45ef3766321fdf12e1b96c5c
+source-git-commit: 279fd366b14520daec1df7f843ed337348e145a5
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1879'
 ht-degree: 3%
 
 ---
 
 # Utforma ett push-meddelande {#design-push-notification}
 
-När du har skapat ett push-meddelande kan du utforma dess innehåll för iOS- och Android-plattformar. På den här sidan får du hjälp med att komponera ditt meddelande, konfigurera klickbeteenden, lägga till media och knappar och ange avancerade alternativ för att skapa engagerande push-meddelanden som får genklang hos publiken.
+När du har skapat ett push-meddelande kan du utforma dess innehåll för iOS, Android och webbplattformar. På den här sidan får du hjälp med att komponera ditt meddelande, konfigurera klickbeteenden, lägga till media och knappar och ange avancerade alternativ för att skapa engagerande push-meddelanden som får genklang hos publiken.
 
 ## Titel och brödtext {#push-title-body}
 
@@ -30,7 +30,7 @@ När du har skapat ett push-meddelande kan du utforma dess innehåll för iOS- o
 
 Klicka på fälten **[!UICONTROL Title]** och **[!UICONTROL Body]** för att skapa meddelandet. Använd personaliseringsredigeraren för att definiera innehåll, personalisera data och lägga till dynamiskt innehåll. Läs mer om [personalisering](../personalization/personalize.md) och [dynamiskt innehåll](../personalization/get-started-dynamic-content.md) i personaliseringsredigeraren.
 
-Använd enhetens förhandsgranskningssektion för att se hur push-meddelanden visas på iOS och Android.
+Använd enhetens förhandsgranskningssektion för att se hur push-meddelanden visas på iOS, Android och webben.
 
 Snabba upp skapandet av ditt innehåll med AI Assistant och generera övertygande push-meddelanden med [AI Assistant för textgenerering](../content-management/generative-text.md) eller skapa kompletta push-meddelanden med [AI Assistant för generering av fullständigt innehåll](../content-management/generative-full-content.md).
 
@@ -96,15 +96,13 @@ När mediet har lagts till visas det till höger om meddelandetexten.
 >
 >När du inkluderar mediebilagor i nyttolasten för push-meddelanden (till exempel bilder i anpassade datafält som `adb_media`), måste ditt mobilprogram implementera en specifik hantering på klientsidan för bilderna som ska återges på enheter. Din app måste implementera ett [Notification Service-tillägg](https://developer.apple.com/documentation/usernotifications/modifying_content_in_newly_delivered_notifications){target="_blank"} för att kunna hämta och bearbeta medieinnehåll från nyttolasten. Dessutom måste alternativet **[!UICONTROL Add mutable-content flag]** aktiveras i avsnittet [Avancerade alternativ](#advanced-options-push).
 
-<!--
->[!TAB Web]
+>[!TAB Webb]
 
-Enter the media URL in the **[!UICONTROL Add media]** field. You can also include personalization tokens in the URL to customize the content for each user.
+Ange mediets URL i fältet **[!UICONTROL Add media]**. Du kan också inkludera personaliseringstoken i URL:en för att anpassa innehållet för varje användare.
 
-Click ![Edit text with the AI assistant](assets/do-not-localize/Smock_ImageAdd_18_N.svg) to quickly generate media using the Journey Optimizer AI Assistant.
+Klicka på ![Redigera text med AI-assistenten](assets/do-not-localize/Smock_ImageAdd_18_N.svg) om du snabbt vill generera media med Journey Optimizer AI Assistant.
 
 ![](assets/web-media.png)
--->
 
 >[!ENDTABS]
 
@@ -137,17 +135,15 @@ För Android kan du lägga till upp till tre knappar.
 
 För iOS anges en meddelandekategoriidentifierare. Meddelandekategorier måste vara förkonfigurerade i iOS-appen, som definierar vilka knappar som ska visas och vilka åtgärder som ska vidtas. Mer information finns i [Apple-dokumentationen](https://developer.apple.com/documentation/usernotifications/declaring_your_actionable_notification_types).
 
-<!--
->[!TAB Web]
+>[!TAB Webb]
 
 ![](assets/push_buttons-web.png)
 
-Use the **[!UICONTROL Add Button]** option to define each button's label and associated action, as detailed below:
+Använd alternativet **[!UICONTROL Add Button]** för att definiera varje knapps etikett och tillhörande åtgärd, enligt beskrivningen nedan:
 
-* **[!UICONTROL Deeplink]**: Redirect users to a specific view, section, or tab within your app. Enter the deeplink URL in the associated field.
+* **[!UICONTROL Deeplink]**: Omdirigera användare till en viss vy, avsnitt eller flik i din app. Ange URL-adressen för överordnad länk i det associerade fältet.
 
-* **[!UICONTROL Web URL]**: Redirect users to an external webpage. Enter the URL in the associated field.
--->
+* **[!UICONTROL Web URL]**: Omdirigera användare till en extern webbsida. Ange URL-adressen i det associerade fältet.
 
 >[!ENDTABS]
 
@@ -158,11 +154,9 @@ Use the **[!UICONTROL Add Button]** option to define each button's label and ass
 >title="Om tyst meddelande"
 >abstract="Skicka meddelanden utan att störa användaren. Meddelanden visas inte i meddelandecentret eller meddelandefältet."
 
-<!--
 >[!AVAILABILITY]
 >
->Web push notifications in Journey Optimizer do not support the **Silent Notification** feature.
--->
+>Webb-push-meddelanden i Journey Optimizer stöder inte funktionen **tyst meddelande**.
 
 Ett tyst push-meddelande (eller bakgrundsmeddelande) är en dold instruktion som skickas till programmet. Den används till exempel för att meddela programmet om att nytt innehåll är tillgängligt eller för att initiera en nedladdning i bakgrunden.
 
