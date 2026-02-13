@@ -7,7 +7,7 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 36152f1b57731c1ee9a5a121056746e8013b2043
+source-git-commit: 7263e5ace72823ce7a3a184d2842f9bba495c068
 workflow-type: tm+mt
 source-wordcount: '1537'
 ht-degree: 3%
@@ -25,13 +25,13 @@ ht-degree: 3%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Februari 26 förhandsversionsinformation {#feb-26-01-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 17-18 februari 2026
 
@@ -99,7 +99,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p><strong>Live Activity</strong> innehåller <strong>realtidsuppdateringar</strong> och interaktiva upplevelser i mobilappar, vilket gör att användare kan hålla sig informerade om pågående händelser eller uppgifter direkt på enhetens skärm. Den här funktionen förbättrar engagemanget genom att leverera live-information, som förloppsspårning, händelseuppdateringar eller interaktivt innehåll, utan att användarna behöver öppna appen.</p>
-<p>Den här funktionen släpptes tidigare i betaversionen och är nu tillgänglig i alla miljöer (<strong>Allmän tillgänglighet</strong>).</p>
+<p>Den här funktionen lanserades tidigare i betaversionen och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 </td>
 </tr>
 </tbody>
@@ -137,7 +137,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Adobe Journey Optimizer har nu stöd för <strong>Web Push-meddelanden</strong>, vilket gör att push-kanalen kan användas även utanför mobila enheter. Ni kan smidigt leverera meddelanden till både webbläsare för mobiler och datorer, så att ni kan nå kunder direkt på deras enheter utan att behöva använda en app. Den här förbättringen gör att du kan engagera användare med rätt, personaliserade meddelanden i realtid och utnyttja samma <strong>redigeringsarbetsflöden</strong> och <strong>målinriktningsfunktioner</strong> som redan finns för mobilpush.</p>
-<p>Den här funktionen släpptes tidigare i betaversionen och är nu tillgänglig i alla miljöer (<strong>Allmän tillgänglighet</strong>).</p>
+<p>Den här funktionen lanserades tidigare i betaversionen och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p>Tillgänglighetsdatum: 13 februari 2026</p>
 </td>
 </tr>
@@ -154,7 +154,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>En ny <strong>aktivitet för innehållsbeslut</strong> finns nu tillgänglig på <strong>arbetsytan </strong> för att integrera <strong>personaliserade erbjudanden</strong> direkt i kundresorna. Med den här aktiviteten kan ni leverera beslutsbaserat innehåll och hänvisa till dessa erbjudanden under hela kundresan, under villkor för att skapa kvalificeringsbaserade förgreningar, i anpassade åtgärder för att skicka erbjudandedata till externa system och i andra aktiviteter för att skapa helt personaliserade kundupplevelser.</p>
-<p>Den här funktionen släpptes tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer (<strong>Allmän tillgänglighet</strong>).</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p><img src="assets/do-not-localize/content-decision.gif"/></p>
 <p>Mer information finns i den <a href="../building-journeys/content-decision.md">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 11 februari 2026</p>
@@ -196,7 +196,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Få djupare insikter i hälsa och prestanda för dina <strong>anpassade åtgärdsslutpunkter</strong> med en ny <strong>övervakningsinstrumentpanel</strong> och förbättrade <strong>händelsedata för kundsteg</strong>. Spåra lyckade samtal, fel, dataflöde, svarstider och väntetider för kön för att snabbt förstå när, var och varför avvikelser inträffar.</p>
-<p>Den här funktionen släpptes tidigare i Begränsad tillgänglighet och är nu tillgänglig i alla miljöer (<strong>Allmän tillgänglighet</strong>).</p>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p>Mer information finns i den <a href="../action/reporting.md">detaljerade dokumentationen</a>.</p>
 <p>Tillgänglighetsdatum: 3 februari 2026</p>
 </td>
