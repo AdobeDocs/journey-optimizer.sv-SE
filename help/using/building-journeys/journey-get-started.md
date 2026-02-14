@@ -39,7 +39,7 @@ Journey Optimizer resedesigner har allt som marknadsförare och reseansvariga be
 :::: landing-cards-container
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=sv-SE)
 
 **Realtid och batchleverans**
 
@@ -49,7 +49,7 @@ Skicka **enhetsleverans** i realtid när en händelse tas emot, eller **i batch*
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg?lang=sv-SE)
 
 **Sammanhangsberoende data**
 
@@ -59,7 +59,7 @@ Utnyttja **sammanhangsbaserade data** från händelser, information från [!DNL 
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 **Inbyggda åtgärder**
 
@@ -69,7 +69,7 @@ Använd **inbyggda kanalåtgärder** för att skicka meddelanden som är utforma
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg?lang=sv-SE)
 
 **Anpassade åtgärder**
 
@@ -120,7 +120,7 @@ Utforska omfattande fallstudier av hela kundresan som visar på verkliga impleme
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg?lang=sv-SE)
 
 **Välkommen nya prenumeranter**
 
@@ -130,7 +130,7 @@ Skicka en personlig välkomstresa när kunderna prenumererar på tjänsten och v
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/calendar-alt.svg?lang=sv-SE)
 
 **Optimera e-posttider**
 
@@ -140,7 +140,7 @@ Använd AI-baserad optimering för sändningstid för att leverera e-postmeddela
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg?lang=sv-SE)
 
 **Dra upp leveranser**
 
@@ -208,7 +208,7 @@ Masteruttryck för dynamiska arbetsflöden, datamanipulering och avancerad reses
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/bell.svg?lang=sv-SE)
 
 **Felsök och övervaka**
 
