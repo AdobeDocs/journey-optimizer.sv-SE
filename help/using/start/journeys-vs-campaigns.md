@@ -11,7 +11,7 @@ keywords: resa, kampanj, iscensatt, jämförelse, val, beslut, arbetsflöde, rea
 hide: true
 hidefromtoc: true
 exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
-source-git-commit: 241202021c4e634e3fd1a6d67f734142c3c87c34
+source-git-commit: 4cf2b850561ef99dc8dc8300c41eeedd0cecfe32
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 1%
@@ -235,7 +235,7 @@ Kombinerar arbetsflödeskomplexitet med batchkörning av kampanjer.
 
 +++ Kan jag kombinera resor och kampanjer i min marknadsföringsstrategi?
 
-Ja. De flesta organisationer använder alla fyra metoderna för olika scenarier:
+Ja. Många organisationer använder alla fyra strategier för olika scenarier:
 
 * **Resor** för beteenden, realtidsengagemang
 * **Åtgärdskampanjer** för schemalagd sändningskommunikation
