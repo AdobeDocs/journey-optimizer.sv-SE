@@ -110,7 +110,7 @@ Låt oss ta ett exempel i 5 sekunder.
 
 Nedan finns Frågor och svar om hur du integrerar Journey Optimizer med externa system.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
 
 +++ Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?
 
