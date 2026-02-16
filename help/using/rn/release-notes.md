@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 1176d85197e956a2ed1a5cad67a76d5a1bea20a9
+source-git-commit: 0472c9bb9decc49e5da392003027df23ec528ac9
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1490'
 ht-degree: 3%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 3%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Februari 26 förhandsversionsinformation {#feb-26-01-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 17-18 februari 2026
 
@@ -61,6 +61,22 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
+<th><strong>Migrera underdomäner till anpassad delegering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du migrera underdomäner med CNAME-delegeringsläget till anpassad delegering direkt från gränssnittet, så att du kan följa striktare säkerhetsregler i enlighet med företagets riktlinjer utan att behöva skapa kanalkonfigurationer på nytt.</p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Skiljeförfarande på resan</strong><br/></th>
 </tr>
 </thead>
@@ -68,7 +84,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tr>
 <td>
 <p>Nu kan du använda <strong>rankningsformler</strong> <!--and <strong>AI models</strong> --> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kan komma in på de mest relevanta resorna.</p>
-<p>Den här funktionen är bara tillgänglig för en uppsättning organisationer (<strong>Begränsad tillgänglighet</strong>). Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
 </td>
 </tr>
 </tbody>
@@ -116,7 +132,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p>Med Journey Optimizer kan du nu övervaka hälsa, utbildningsstatus och prestanda för dina AI-modeller i dina beslut, så att du kan kontrollera om kursen lyckades, felsöka och förstå hur resultatet blir.</p>
+<p>Nu kan du övervaka hälsa, utbildningsstatus och prestanda för dina AI-modeller för beslut. På så sätt kan ni verifiera att kursen har lyckats, felsöka och förstå hur resultatet blir för att kunna välja de bästa erbjudandena för varje kund med hjälp av AI. Observera att den här funktionen endast är tillgänglig för <strong>Decision</strong> (inte för äldre beslutsmodeller).</p>
 <p>Den här funktionen är för närvarande endast tillgänglig för <strong>personaliserade optimeringsmodeller</strong> (inte automatisk optimering).</p>
 </td>
 </tr>
@@ -248,11 +264,6 @@ Förbättringar i den här versionen visas nedan.
 #### Konfiguration
 
 * **Upplev händelseanvändning i reseuttryck** - Från och med 1 april 2026 stöds inte längre användningen av upplevelsehändelseattribut i reseuttryck för organisationer som inte har använt den här funktionen de senaste 90 dagarna. Den här funktionen har redan varit otillgänglig för nya kundorganisationer sedan 8 juli 2025. Mer information finns i [Upplevelsesökning under resor](../building-journeys/exp-event-lookup.md).
-
-
-* **Migrera underdomäner till anpassad delegering** - Nu kan du migrera underdomäner med CNAME-delegeringsläget till anpassad delegering direkt från gränssnittet, så att du kan uppfylla striktare säkerhetsprinciper i enlighet med företagets riktlinjer utan att skapa kanalkonfigurationer på nytt.
-
-  **Obs!**: Den här funktionen är bara tillgänglig för en uppsättning organisationer (<strong>Begränsad tillgänglighet</strong>). Kontakta din Adobe-representant för att få åtkomst.
 
 
 #### E-postdesigner
