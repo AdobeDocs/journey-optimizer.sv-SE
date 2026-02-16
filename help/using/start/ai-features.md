@@ -7,10 +7,11 @@ feature: Overview
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
-source-git-commit: 7ec41e5b1aa51991847ef8cf9dad428b06dfcaef
+exl-id: 628a5d84-6a33-4ed8-84cb-e2e4c6cc2b80
+source-git-commit: 2ba8aecf9f9665d00f553a281ad365e3535b5efe
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 0%
+source-wordcount: '1755'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +31,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 >[!IMPORTANT]
 >
->Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
+>Du måste godkänna [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"} innan du kan använda AI Assistant.
 
 ### Vad AI-assistenten kan göra
 
@@ -60,7 +61,7 @@ Klicka på ikonen AI-assistenten i det övre fältet för att öppna assistentpa
 
 ![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
 
-[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/home){target="_blank"}
+[Läs mer om AI Assistant i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
 
 ## Avancerade AI-agenter för reseoptimering {#ai-agents}
 
@@ -82,7 +83,7 @@ Journey Agent har två kunskaper i AI Assistant: Analysera och skapa. Använd de
 
 #### Reseanalys - skicklighet {#journey-analyze-skill}
 
-Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide){target="_blank"} kan du optimera resan genom naturlig språkanalys:
+Med agenten [Reseanalys](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide){target="_blank"} kan du optimera resan genom naturlig språkanalys:
 
 +++**Nyckelfunktioner**
 
@@ -105,7 +106,7 @@ Med agenten [Reseanalys](https://experienceleague.adobe.com/sv/docs/experience-c
 
 #### Resa, skapa skicklighet {#journey-create-skill}
 
-Med [agenten för att skapa resan](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-analyze-agent-skill-overview-and-user-guide){target="_blank"} kan du skapa resor från naturliga språkuppmaningar och omvandla dina mål till strukturerade resekonfigurationer:
+Med [agenten för att skapa resan](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-analyze-agent-skill-overview-and-user-guide){target="_blank"} kan du skapa resor från naturliga språkuppmaningar och omvandla dina mål till strukturerade resekonfigurationer:
 
 +++**Nyckelfunktioner**
 
@@ -127,7 +128,7 @@ Med [agenten för att skapa resan](https://experienceleague.adobe.com/sv/docs/ex
 
 ### Experimentationsagent {#experimentation-agent}
 
-[Experimentationsagenten](https://experienceleague.adobe.com/sv/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
+[Experimentationsagenten](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-experiment){target="_blank"} moderniserar hur du kör och hanterar digitala experiment på webbplatser, i e-postmeddelanden, push-meddelanden och i program:
 
 +++**Nyckelfunktioner**
 
@@ -170,6 +171,7 @@ Använd generativ AI för att skapa och personalisera innehåll i flera kanaler,
 
 ### Viktiga funktioner
 
+* **Generera allt innehåll** - Generera kompletta innehållsupplevelser (text och bilder) i ett flöde för e-post, webben, landningssidor och push-meddelanden. [Generera fullständigt innehåll med AI Assistant](../content-management/generative-full-content.md)
 * **Textgenerering** - Skapa övertygande text baserat på din varumärkesröst och dina mål. [Generera text med AI](../content-management/generative-text.md)
 * **Bildgenerering** - Generera anpassade bilder med Adobe Firefly. [Generera bilder med AI](../content-management/generative-image.md)
 * **Innehållsvariationer** - Skapa flera variationer för A/B-testning. [Experimentera med AI](../content-management/generative-experimentation.md)
@@ -178,7 +180,7 @@ Använd generativ AI för att skapa och personalisera innehåll i flera kanaler,
 
 ### Bästa praxis
 
-* **Var specifik** - Ange tydliga, detaljerade anvisningar för bättre resultat
+* **Var specifik** - Ange tydliga, detaljerade anvisningar för bättre resultat. [Läs tips om bästa praxis](../content-management/ai-assistant-prompting-guide.md)
 * **Överför varumärkesresurser** - Använd PDF-filer, bilder eller ZIP-filer (högst 50 MB) för att upprätthålla varumärkets enhetlighet
 * **Använd egna mallar** - Använd varumärkesspecifika mallar med upp till 8-10 bilder
 * **Ge feedback** - Rate-utdata hjälper till att förbättra AI-modellerna
@@ -269,7 +271,7 @@ Bläddra bland Journey Optimizer spelböcker efter vanliga scenarier som:
 
 +++
 
-[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html?lang=sv-SE){target="_blank"} | [Läs mer i Experience Platform-dokumentationen &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=sv-SE){target="_blank"}
+[Visa alla tillgängliga spelningsböcker](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Läs mer i Experience Platform-dokumentationen ](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
 
 ## Ytterligare AI-funktioner {#additional-capabilities}
 
@@ -278,6 +280,12 @@ Bläddra bland Journey Optimizer spelböcker efter vanliga scenarier som:
 Omvandla statiska bilddesigner (JPEG, PNG) till redigerbara HTML e-postmallar med AI-baserad konverteringsteknik.
 
 [Läs mer om Image to HTML](../email/image-to-html.md)
+
+### GenStudio för prestationsbaserad marknadsföring
+
+Integrera med Adobe GenStudio for Performance Marketing för att skapa AI-baserat e-postinnehåll och importera mallar till Journey Optimizer för samordning. Exportera Journey Optimizer-mallar till GenStudio, generera variationer med AI och hämta tillbaka dem för driftsättning. (Begränsad tillgänglighet, endast e-postkanal.)
+
+[Läs mer om GenStudio](../integrations/genstudio.md)
 
 ### Klassificering av varumärkesjustering
 
