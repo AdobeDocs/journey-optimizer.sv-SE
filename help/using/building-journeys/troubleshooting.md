@@ -10,10 +10,10 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: 03fbc4f4-b0a8-46d5-91f9-620685b11493
 version: Journey Orchestration
-source-git-commit: 619db0a371b96fbe9480300a874839b7b919268d
+source-git-commit: 0b003420fd0bf466f81f5377ef58f17695283259
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 40%
+source-wordcount: '486'
+ht-degree: 38%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 40%
 
 I det här avsnittet får du lära dig hur du felsöker resor innan du testar eller publicerar. Alla kontroller som anges nedan kan utföras medan resan är i testläge eller när den är live. Rekommendationen är att göra alla kontroller nedan i testläget och sedan gå vidare till publiceringen. Läs mer om testläget på [den här sidan](../building-journeys/testing-the-journey.md).
 
-Lär dig hur du felsöker resehändelser, kontrollerar om profiler har angetts för din resa, hur de navigerar genom den och om meddelanden skickas [på den här sidan](troubleshooting-execution.md).
+Lär dig hur du felsöker resehändelser, kontrollerar om profiler har angetts för din resa, hur de navigerar genom den och om meddelanden skickas [på den här sidan](troubleshooting-execution.md). Om inga profiler anger din händelsebaserade resa trots att händelser har importerats, kontrollerar du att datatyperna för [händelsevillkoret matchar händelseschemat](troubleshooting-execution.md#verify-event-identity-and-rule-data-types).
 
 Om du använder inkommande åtgärder kan du lära dig att felsöka dem [på den här sidan](troubleshooting-inbound.md).
 
