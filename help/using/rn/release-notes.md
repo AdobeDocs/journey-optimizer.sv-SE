@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 9dbe9c4f6073f68bc7d01b2a72dc89c927870dcf
+source-git-commit: d3e361c6b7a91a1fd3b72d12a8aa6fefc295837a
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1549'
 ht-degree: 3%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 3%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Februari 26 förhandsversionsinformation {#feb-26-01-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 17-18 februari 2026
 
@@ -46,11 +46,11 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p>Du kan schemalägga utgående meddelanden från <strong>kampanjer</strong> eller <strong>resor</strong> som ska levereras i kontrollerade <strong>batchar</strong> över tid.</p>
+<p>Du kan schemalägga utgående meddelanden från kampanjer eller resor som ska levereras i kontrollerade batchar över tid.</p>
 <p>Wave-sändning ger följande fördelar:</p>
 <ul>
-<li>Bättre <strong>slutbarhet</strong> - Spridet skickar över tid för att bevara ett starkt avsändarrykte och minska risken för att flaggas som skräppost.</li>
-<li><strong>Lastkontroll</strong> - Undvik överväldigande system längre fram i kedjan (t.ex. callcenters, landningssidor) genom att begränsa hur många meddelanden som skickas samtidigt.</li>
+<li>Bättre leveransförmåga - Spridning skickar över tid för att bevara ett starkt avsändarrykte och minska risken för att flaggas som skräppost.</li>
+<li>Belastningskontroll - Undvik överväldigande system längre fram i kedjan (t.ex. callcenters, landningssidor) genom att begränsa hur många meddelanden som skickas samtidigt.</li>
 <li>Användningsfall med stor volym och tidskänslighet - Passar för stora målgrupper eller när du behöver styra timing (t.ex. callcenters kapacitet, uppfartsavtal eller tidsbundna erbjudanden).</li>
 </ul>
 </td>
@@ -67,7 +67,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p>Nu kan du använda <strong>formler</strong> och <strong>AI-modeller</strong> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kommer in på de mest relevanta resorna.</p>
+<p>Nu kan du använda <strong>rankningsformler</strong> <!--and <strong>AI models</strong> --> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kan komma in på de mest relevanta resorna.</p>
 <p>Den här funktionen är bara tillgänglig för en uppsättning organisationer (<strong>Begränsad tillgänglighet</strong>). Kontakta din Adobe-representant för att få åtkomst.</p>
 </td>
 </tr>
@@ -110,6 +110,22 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <table>
 <thead>
 <tr>
+<th><strong>Övervakning av AI-modeller</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Med Journey Optimizer kan du nu övervaka hälsa, utbildningsstatus och prestanda för dina AI-modeller i dina beslut, så att du kan kontrollera om kursen lyckades, felsöka och förstå hur resultatet blir.</p>
+<p>Den här funktionen är för närvarande endast tillgänglig för <strong>personaliserade optimeringsmodeller</strong> (inte automatisk optimering).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Verksamhet under resor</strong><br/></th>
 </tr>
 </thead>
@@ -120,8 +136,8 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <ul>
 <li>En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.</li>
 <li>Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.</li>
-<li>Möjlighet att lägga till <strong>optimering</strong> i inbyggda kanalåtgärder.</li>
-<li>Möjlighet att lägga till alternativen <strong>experiment</strong> och <strong>flerspråkig</strong> i alla åtgärder.</li>
+<li>Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.</li>
+<li>Möjlighet att lägga till både experimentella och flerspråkiga&gt; alternativ till alla åtgärder.</li>
 </ul>
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 </td>
@@ -193,11 +209,11 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p><strong>Migreringsverktygs-API:er</strong> är nu tillgängliga för programmässig migrering av entiteter för <strong>beslutshantering</strong> till <strong>beslutshantering</strong>, med:</p>
+<p>Migreringsverktygs-API:er är nu tillgängliga för programmatisk migrering av <strong>beslutshantering</strong>-entiteter till <strong>beslutshantering</strong>, med:</p>
 <ul>
-<li>Flexibla migreringsomfång (<strong>sandbox</strong>, <strong>offer</strong> eller <strong>Decision</strong> -nivå)</li>
-<li>Automatiserad <strong>beroendeanalys</strong> och validering</li>
-<li><strong>Återställningsstöd</strong> för slutförda migreringar</li>
+<li>Flexibla migreringsomfång (sandlåda, erbjudande eller beslutsnivå)</li>
+<li>Automatisk beroendeanalys och validering</li>
+<li>Återställningsstöd för slutförda migreringar</li>
 <li>Detaljerade migreringsrapporter med objektmappningar</li>
 </ul>
 <p>Mer information finns i den <a href="../experience-decisioning/decisioning-migration-api.md">detaljerade dokumentationen</a>.</p>
@@ -277,9 +293,6 @@ Förbättringar i den här versionen visas nedan.
 
 
 * **Förhandsgranskning av Experience Decisioning i den kodbaserade Experience Channel** - Du kan nu förhandsgranska beslutsobjekt när du konfigurerar Experience Decision med den kodbaserade Experience Channel. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras.
-
-
-* **Erbjud prioriterad AI-modellövervakning** - Med Journey Optimizer kan du nu övervaka hälsa, utbildningsstatus och prestanda för dina AI-modeller i beslutet, så att du kan verifiera att kursen har lyckats, felsöka fel och förstå hur resultatet påverkas. Den här funktionen är endast tillgänglig för personaliserade optimeringsmodeller (inte automatisk optimering).
 
 
 * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer.
