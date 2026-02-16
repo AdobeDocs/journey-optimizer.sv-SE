@@ -11,9 +11,9 @@ hidefromtoc: true
 keywords: uttryck, villkor, användningsfall, händelser
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
 version: Journey Orchestration
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: bc89e88baf2adfbb9bb33a60a67b74bc37f31984
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
@@ -115,6 +115,16 @@ Det här uttrycket returnerar ett booleskt värde.
 
 Därifrån kan ni lägga till ytterligare en väg på resan när produkten inte finns i butik och skicka meddelanden med engagemangserbjudandet. Konfigurera meddelandena därefter och använd personaliseringsdata för att förbättra meddelandets mål.
 
+## Tidsstämpelfiltrering i uttryck
+
+När du refererar till flera kundvagnsaktivitetshändelser anger du både ett start- och ett sluttidsstämpelfönster för att undvika att hämta historiska data. Till exempel:
+
+```json
+toDateTimeOnly(currentDataPackField.timestamp) >= toDateTimeOnly(@event{poc_UDXCartAddSavedCheckOutEv.timestamp})
+AND
+toDateTimeOnly(currentDataPackField.timestamp) < toDateTimeOnly(nowWithDelta(4, "hours"))
+```
+
 ## Exempel på strängändringar med den avancerade uttrycksredigeraren
 
 **I villkor**
@@ -165,4 +175,4 @@ substr(
 Förklaring: I det här exemplet används funktionerna `substr` och `lastIndexOf` för att ta bort klammerparenteser som omger det CRM-ID som skickas med en starthändelse för en mobilapp.
 
 
-Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html?lang=sv-SE) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
+Titta på [den här videon](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html) om du vill veta mer om hur du använder den avancerade uttrycksredigeraren.
