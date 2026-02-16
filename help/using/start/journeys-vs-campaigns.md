@@ -11,9 +11,9 @@ keywords: resa, kampanj, iscensatt, jämförelse, val, beslut, arbetsflöde, rea
 hide: true
 hidefromtoc: true
 exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
-source-git-commit: 4cf2b850561ef99dc8dc8300c41eeedd0cecfe32
+source-git-commit: fc2dc5924f4998d1285dee9c19a0d7e71a1e5722
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1593'
 ht-degree: 1%
 
 ---
@@ -288,4 +288,3 @@ Vill du börja bygga? Utforska den detaljerade dokumentationen för det sätt du
 >* [Jämförelse av kampanjtyper](../campaigns/get-started-with-campaigns.md#campaign-types)
 >* [Vanliga frågor om resan](../building-journeys/journey-faq.md)
 >* [Vanliga frågor om samordnade kampanjer](../orchestrated/orchestrated-campaigns-faq.md)
->* [God praxis](best-practices.md) - Användningsexempel i realtid och skalning med skyddsräcken
