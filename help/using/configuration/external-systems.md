@@ -8,9 +8,9 @@ role: User
 level: Beginner
 keywords: extern, API, optimerare, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
-source-git-commit: b495462aed9a67ff25c2563288bb2ca57e9b7db7
+source-git-commit: b2bfbf707adc60d3f08195c1df1b969523fb87b1
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1807'
 ht-degree: 16%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 16%
 
 På den här sidan visas de olika säkerhetsutkast som Journey Optimizer ger när ett externt system integreras, liksom de bästa sätten: hur man optimerar skyddet för det externa systemet med API:t för appning, hur man konfigurerar tidsgränsen för resan och hur försök fungerar igen.
 
-Med Journey Optimizer kan du konfigurera anslutningar till externa system via anpassade datakällor och anpassade åtgärder. På så sätt kan du till exempel berika dina resor med data från ett externt bokningssystem eller skicka meddelanden med ett tredjepartssystem som Epsilon eller Facebook.
+Med Journey Optimizer kan du konfigurera anslutningar till externa system via [anpassade datakällor](../datasource/about-data-sources.md) och [anpassade åtgärder](../action/action.md). På så sätt kan du till exempel berika dina resor med data från ett externt bokningssystem eller skicka meddelanden med ett tredjepartssystem som Epsilon eller Facebook.
 
 När du integrerar ett externt system kan du stöta på flera problem, systemet kan vara långsamt, det kan sluta svara eller så kanske det inte kan hantera en stor volym. Journey Optimizer erbjuder flera skyddsräcken för att skydda datorn mot överbelastning.
 
@@ -33,7 +33,7 @@ När Journey Optimizer gör ett anrop till ett externt API körs de tekniska gar
 
 >[!TIP]
 >
->Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning &#x200B;](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
+>Vi rekommenderar att du lämnar minst en buffert på en minut mellan det externa API:ts giltighetsperiod för token och din Journey Optimizer [`cacheDuration`-inställning ](../datasource/external-data-sources.md#custom-authentication-access-token), särskilt under stora arbetsbelastningar, för att undvika avvikelser vid förfallodatum och 401 fel.
 
 ## API:er för begränsning och begränsning {#capping}
 
@@ -110,7 +110,7 @@ Låt oss ta ett exempel i 5 sekunder.
 
 Nedan finns Frågor och svar om hur du integrerar Journey Optimizer med externa system.
 
-Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=sv){target="_blank"}.
+Behöver du mer information? Använd alternativen för feedback längst ned på den här sidan för att ställa din fråga eller kontakta [Adobe Journey Optimizer Community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++ Hur konfigurerar jag en begränsning eller begränsning? Finns det en standardregel?
 
@@ -132,7 +132,7 @@ Under varje resa kan du definiera en tidsgräns. Tidsgränsen har konfigurerats 
 
 +++ Vad är egresutkastet och när ska jag använda det?
 
-Gresproxyn tillhandahåller en **statisk IP-adress** för utgående samtal från Journey Optimizer till dina externa system. Använd det när slutpunkterna från tredje part kräver IP-tillåtelselistning.
+Gressproxyn tillhandahåller en **statisk IP-adress** för utgående anrop från Journey Optimizer **Anpassade åtgärder** till dina externa system. Använd det när slutpunkterna från tredje part kräver IP-tillåtelselistning.
 
 **Viktigt!** Gressproxyn kontrollerar INTE genomströmning, hastighetsbegränsningar eller antalet samtidiga anslutningar. Om du vill hantera samtalsvolym och anslutningsgränser använder du [API:t för begränsning](capping.md) eller [API:t för begränsning](throttling.md).
 
