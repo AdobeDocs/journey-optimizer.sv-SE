@@ -9,9 +9,9 @@ level: Intermediate
 keywords: publicera, resa, live, giltighet, kontrollera
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: bacae861439e5869890cf3fc3f0a5c17559530b6
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -137,16 +137,16 @@ Körning av körning av resedagring genererar **stepEvents**. Dessa stepEvents h
 
 ![Schemaattribut för torr körning på resan](assets/dry-run-attributes.png)
 
-* `_experience.journeyOrchestration.stepEvents.inDryRun` returnerar `true` om Torr-körningen är aktiverad, i annat fall `false`
-* `_experience.journeyOrchestration.stepEvents.dryRunID` returnerar ID:t för en instans med torr körning
+* `_experience.journeyOrchestration.stepEvents.inDryRun` returnerar `true` när resan är i körningsläge Torr och `null` för test- eller direktresor (icke-torr körning).
+* `_experience.journeyOrchestration.stepEvents.dryRunID` returnerar ID:t för den torra körningsinstansen när körningsläget är torrt. För test- eller direktresor är det `null`.
 
 
 Om du exporterar stepEvent-data till **externa system** kan du filtrera körningar med flaggan `inDryRun`.
 
-Vid analys av **reserapporteringsmått** med hjälp av [!DNL Adobe Experience Platform]-frågetjänsten måste händelser som genererats av Dry Run uteslutas. Om du vill göra det anger du flaggan `inDryRun` till `false`.
+Vid analys av **reserapporteringsmått** med hjälp av [!DNL Adobe Experience Platform]-frågetjänsten måste händelser som genererats av Dry Run uteslutas. Om du vill göra det utelämnar du steghändelser där `inDryRun` är `true` (d.v.s. endast händelser där `inDryRun` är `null` eller `false`).
 
 ## Instruktionsvideo {#dry-run-video}
 
 Lär dig hur du torkar dina resor i den här videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464686/?captions=swe&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)
