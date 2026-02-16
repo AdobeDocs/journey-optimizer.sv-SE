@@ -59,12 +59,12 @@ Du kan börja felsöka med frågorna nedan:
 
 * **Händelseläge och schemadatatyper** - Kontrollera att datatyperna som används i ditt händelservillkor (regel) matchar händelseschemat. Felmatchade typer (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och händelser ignoreras. Se [Verifiera händelsens identitet](#verify-event-identity-and-rule-data-types).
 
->>
+&#x200B;>>
 **För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
 
 ### Verifiera händelsens identitet {#verify-event-identity-and-rule-data-types}
 
-När du konfigurerar en händelsebaserad resa måste du bekräfta att nyttolastens identitetsfält matchar det [namnområde som är markerat i händelsen](../event/about-creating.md#select-the-namespace). Om händelsen innehåller fält för profilmatchning kontrollerar du att datatypen **letter** och **3} i händelseregmentet stämmer exakt överens med inkommande data.** Om till exempel händelseschemat definierar `roStatus` som en sträng, måste även reseregeln utvärdera den som en sträng. Felmatchade datatyper (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och giltiga händelser tas bort.
+När du konfigurerar en händelsebaserad resa måste du bekräfta att nyttolastens identitetsfält matchar det [namnområde som är markerat i händelsen](../event/about-creating.md#select-the-namespace). Om händelsen innehåller fält för profilmatchning kontrollerar du att datatypen **letter** och **3&rbrace; i händelseregmentet stämmer exakt överens med inkommande data.** Om till exempel händelseschemat definierar `roStatus` som en sträng, måste även reseregeln utvärdera den som en sträng. Felmatchade datatyper (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och giltiga händelser tas bort.
 
 Använd nyttolastförhandsvisningen i händelsekonfigurationen och kontrollera att typerna och värdena i regeln matchar nyttolaststrukturen om du vill validera ditt händelsevillkor i [!DNL Journey Optimizer]. Lär dig hur du [förhandsgranskar nyttolasten](../event/about-creating.md#preview-the-payload) och [konfigurerar regelbaserade händelser](../event/about-creating.md).
 
