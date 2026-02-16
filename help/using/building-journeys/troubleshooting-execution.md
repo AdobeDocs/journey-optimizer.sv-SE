@@ -10,10 +10,10 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: dd8fd1099344257a72e9f7f18ef433d35def6689
 workflow-type: tm+mt
-source-wordcount: '1592'
-ht-degree: 16%
+source-wordcount: '1754'
+ht-degree: 14%
 
 ---
 
@@ -31,7 +31,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
@@ -57,8 +57,16 @@ Du kan börja felsöka med frågorna nedan:
   Content-type - application/json
   ```
 
-&#x200B;>>
+* **Händelseläge och schemadatatyper** - Kontrollera att datatyperna som används i ditt händelservillkor (regel) matchar händelseschemat. Felmatchade typer (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och händelser ignoreras. Se [Verifiera händelsens identitet](#verify-event-identity-and-rule-data-types).
+
+>>
 **För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
+
+### Verifiera händelsens identitet {#verify-event-identity-and-rule-data-types}
+
+När du konfigurerar en händelsebaserad resa måste du bekräfta att nyttolastens identitetsfält matchar det [namnområde som är markerat i händelsen](../event/about-creating.md#select-the-namespace). Om händelsen innehåller fält för profilmatchning kontrollerar du att datatypen **letter** och **3} i händelseregmentet stämmer exakt överens med inkommande data.** Om till exempel händelseschemat definierar `roStatus` som en sträng, måste även reseregeln utvärdera den som en sträng. Felmatchade datatyper (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och giltiga händelser tas bort.
+
+Använd nyttolastförhandsvisningen i händelsekonfigurationen och kontrollera att typerna och värdena i regeln matchar nyttolaststrukturen om du vill validera ditt händelsevillkor i [!DNL Journey Optimizer]. Lär dig hur du [förhandsgranskar nyttolasten](../event/about-creating.md#preview-the-payload) och [konfigurerar regelbaserade händelser](../event/about-creating.md).
 
 ## Felsöka övergångar i testläge {#troubleshooting-test-transitions}
 
