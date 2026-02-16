@@ -10,10 +10,10 @@ level: Intermediate
 keywords: felsökning, felsökning, resa, kontroll, fel
 exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 version: Journey Orchestration
-source-git-commit: dd8fd1099344257a72e9f7f18ef433d35def6689
+source-git-commit: bae446ea38a0cb97487201f7dcf4df751578ad0a
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 14%
+source-wordcount: '1938'
+ht-degree: 13%
 
 ---
 
@@ -31,7 +31,7 @@ Startpunkten för en resa är alltid en händelse. Du kan utföra tester med ver
 
 Du kan kontrollera om API-anropet som skickas via dessa verktyg skickas korrekt eller inte. Om du får tillbaka ett fel innebär det att ditt anrop har ett problem. Kontrollera nyttolasten igen, rubriken (och särskilt ditt organisations-ID) och destinationswebbadressen. Du kan fråga administratören om vilken webbadress som ska användas.
 
-Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html?lang=sv-SE){target="_blank"} för felsökning av API:er för direktuppspelning.
+Händelser skjuts inte direkt från källan till resor. Resor förlitar sig faktiskt på [!DNL Adobe Experience Platform]s API:er för direktuppspelning. Om det gäller händelserelaterade problem kan du därför läsa [[!DNL Adobe Experience Platform] dokumentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} för felsökning av API:er för direktuppspelning.
 
 Om din resa inte kan aktivera testläge med felet `ERR_MODEL_RULES_16` kontrollerar du att händelsen som används innehåller ett [identitetsnamnutrymme](../audience/get-started-identity.md) när du använder en kanalåtgärd.
 
@@ -59,12 +59,14 @@ Du kan börja felsöka med frågorna nedan:
 
 * **Händelseläge och schemadatatyper** - Kontrollera att datatyperna som används i ditt händelservillkor (regel) matchar händelseschemat. Felmatchade typer (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och händelser ignoreras. Se [Verifiera händelsens identitet](#verify-event-identity-and-rule-data-types).
 
-&#x200B;>>
+* **Händelsen ignorerades - kvalificeringsvillkoret uppfylls inte** - För regelbaserade händelser gäller att om **kvalificeringsvillkoret** inte uppfylls av händelsenyttolasten (till exempel om ett obligatoriskt fält är tomt eller saknas, eller om ett villkor som `isNotEmpty` för ett fält misslyckas) tas händelsen **emot men ignoreras** och resan aktiveras inte. Loggar och Splunk-spår kan visa att händelsen togs emot men ignorerades eftersom den inte uppfyllde kvalificeringsvillkoret, med kasseringskoder som `notSuitableInitialEvent`. Detta är förväntat beteende: om kvalificeringsvillkoret inte uppfylls ignoreras händelsen och resan aktiveras inte för profilen. Kontrollera att händelsens nyttolast innehåller de förväntade fälten och värdena och att regeln i händelsekonfigurationen matchar de data som du skickar. Om händelsen utlöses av en **anpassad åtgärd** från en annan resa, se [Hantera ignorerade händelser och timeout vid inaktivitet](../action/troubleshoot-custom-action.md#handling-discard-events-and-idle-timeouts) i felsökning av anpassade åtgärder.
+
+>>
 **För målgruppskvalificeringsresor med direktuppspelade målgrupper**: Om du använder en målgruppskompetens som startpunkt för resan måste du vara medveten om att inte alla profiler som kvalificerar sig för målgruppen nödvändigtvis kommer att gå in på resan på grund av timingfaktorer, snabba utträden från målgruppen eller om profiler redan fanns i målgruppen före publiceringen. Läs mer om [bedömning av målgruppskvalifikation för direktuppspelning](audience-qualification-events.md#streaming-entry-caveats).
 
 ### Verifiera händelsens identitet {#verify-event-identity-and-rule-data-types}
 
-När du konfigurerar en händelsebaserad resa måste du bekräfta att nyttolastens identitetsfält matchar det [namnområde som är markerat i händelsen](../event/about-creating.md#select-the-namespace). Om händelsen innehåller fält för profilmatchning kontrollerar du att datatypen **letter** och **3&rbrace; i händelseregmentet stämmer exakt överens med inkommande data.** Om till exempel händelseschemat definierar `roStatus` som en sträng, måste även reseregeln utvärdera den som en sträng. Felmatchade datatyper (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och giltiga händelser tas bort.
+När du konfigurerar en händelsebaserad resa måste du bekräfta att nyttolastens identitetsfält matchar det [namnområde som är markerat i händelsen](../event/about-creating.md#select-the-namespace). Om händelsen innehåller fält för profilmatchning kontrollerar du att datatypen **letter** och **3} i händelseregmentet stämmer exakt överens med inkommande data.** Om till exempel händelseschemat definierar `roStatus` som en sträng, måste även reseregeln utvärdera den som en sträng. Felmatchade datatyper (till exempel sträng kontra heltal) gör att regelutvärderingen misslyckas och giltiga händelser tas bort. Om händelsen har ett **kvalificeringsvillkor** (ett fält måste till exempel vara icke-tomt), kommer händelser som inte uppfyller villkoret att **ignoreras** och inte utlösa resan. Loggar kan visa discard-koder som `notSuitableInitialEvent`.
 
 Använd nyttolastförhandsvisningen i händelsekonfigurationen och kontrollera att typerna och värdena i regeln matchar nyttolaststrukturen om du vill validera ditt händelsevillkor i [!DNL Journey Optimizer]. Lär dig hur du [förhandsgranskar nyttolasten](../event/about-creating.md#preview-the-payload) och [konfigurerar regelbaserade händelser](../event/about-creating.md).
 

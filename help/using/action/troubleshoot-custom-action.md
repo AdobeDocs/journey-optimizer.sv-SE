@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: åtgärd, tredje part, anpassad, resor, API
 exl-id: c0bb473a-82dc-4604-bd8a-020447ac0c93
-source-git-commit: 70cac01cf79d7de66667e6fd786caf9df5499dd7
+source-git-commit: bae446ea38a0cb97487201f7dcf4df751578ad0a
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,20 @@ Om begäran misslyckas kan du kontrollera:
 * Begärandemetoden (GET kontra POST) och motsvarande nyttolast.
 * API-slutpunkten och -rubrikerna som definieras i den anpassade åtgärden.
 * Använd svarsdata för att identifiera potentiella felkonfigurationer.
+
+## Hantera ignorerade händelser och timeout vid inaktivitet {#handling-discard-events-and-idle-timeouts}
+
+När en anpassad åtgärd i en resa utlöser en händelse som är avsedd att starta en **andra resa**, kontrollerar du att den andra resan är i ett giltigt tillstånd och att händelsen känns igen. Om händelsen inte uppfyller villkoren för den andra resan kan händelsen **ignoreras** och visas i loggar med koder som `notSuitableInitialEvent`. Timeout vid inaktivitet kan inträffa om den andra resan inte är klar, vilket kan leda till att händelser i loggarna kastas bort.
+
+**Vanliga orsaker:**
+
+* **Händelsekvalifikation uppfylls inte** - Den andra resan använder en regelbaserad händelse med ett kvalificeringsvillkor (ett obligatoriskt fält måste till exempel vara icke-tomt, till exempel `isNotEmpty` för ett specifikt fält). Om händelsens nyttolast inte uppfyller det villkoret (till exempel om fältet är tomt eller saknas), tas händelsen **emot men ignoreras** och den andra resan aktiveras inte. Detta är förväntat beteende. Dokumentationen och loggarna bekräftar att om kvalificeringsvillkoret inte uppfylls, kommer händelsen att ignoreras och resan kommer inte att aktiveras för den profilen. Kontrollera att nyttolasten som skickas av den anpassade åtgärden innehåller alla fält och värden som krävs för den andra resan händelsekonfiguration. Lär dig hur du [konfigurerar regelbaserade händelser](../event/about-creating.md) och [felsöker händelsemottagning](../building-journeys/troubleshooting-execution.md#checking-if-people-enter-the-journey) vid körning av resan.
+
+* **Den andra resan är inte klar** - Timeout för inaktivitet kan inträffa om den andra resan ännu inte är aktiv (t.ex. inte i testläge eller inte live), eller om det finns ett tidsintervall mellan den anpassade åtgärden som utlöses och den andra resan som ska tas emot. Se till att målresan publiceras eller i testläge innan den anpassade åtgärden aktiveras.
+
+* **Diagnostisera ignorerade händelser** - Om du ser ignorerade händelser i loggar kontrollerar du reseloggar och Splunk-spår för att bekräfta om händelsen togs emot men ignorerades på grund av kvalificering (nyttolasten uppfyllde inte regeln) eller timing. Kontrollera att startdatumet och konfigurationen för den andra resan är rätt och att resan är inom det aktiva datumfönstret.
+
+Om du vill undvika att händelser ignoreras när du kedjer resor via anpassade åtgärder, validerar du händelseryttolasten mot den andra resans händelseregel och bekräftar att målresan är live eller i test och inom dess aktiva datumfönster.
 
 ## Ytterligare resurser
 
