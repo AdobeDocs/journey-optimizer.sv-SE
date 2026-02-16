@@ -2,26 +2,27 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journeys vs Campaigns - Välj rätt metod
-description: Jämför resor, kampanjer och samordnade kampanjer för att välja rätt metod för era marknadsföringsbehov i Adobe Journey Optimizer
+description: Jämför Journeys, Action Campaigns, API-utlösta kampanjer och Orchestrated Campaigns för att välja rätt metod för era marknadsföringsbehov i Adobe Journey Optimizer.
 feature: Journeys, Campaigns, Get Started, Overview
+topic: Content Management
 role: User
 level: Beginner
 keywords: resa, kampanj, iscensatt, jämförelse, val, beslut, arbetsflöde, realtid, batch, orkestrering, flera steg, schemalagd, API-utlöst, händelsestyrd
 hide: true
 hidefromtoc: true
 exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
-source-git-commit: 6a32a60f153ff4880ce974e77bc11eed1e20a7c7
+source-git-commit: 241202021c4e634e3fd1a6d67f734142c3c87c34
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1602'
 ht-degree: 1%
 
 ---
 
 # Resor jämfört med kampanjer: Välj rätt metod {#journeys-vs-campaigns}
 
-Adobe Journey Optimizer erbjuder tre kraftfulla metoder för att nå ut till och engagera era kunder. Att förstå när de ska användas är avgörande för att skapa effektiva marknadsföringsupplevelser.
+[!DNL Adobe Journey Optimizer] erbjuder fyra sätt att nå och engagera dina kunder: **Resor**, **Åtgärdskampanjer**, **API-utlösta kampanjer** och **samordnade kampanjer**. Vilken som är rätt beror på om du behöver 1:1-samordning i realtid, schemalagda sändningar, händelsestyrda meddelanden eller komplexa batcharbetsflöden.
 
-Den här guiden hjälper dig att välja mellan **Journeys**, **Åtgärdskampanjer**, **API-utlösta kampanjer** och **Orchestrerade-kampanjer** baserat på era specifika marknadsföringsbehov.
+Den här guiden hjälper dig att välja baserat på körningsstil, databehov och användningsfall - med en snabb jämförelse, beslutsträd och konkreta exempel.
 
 ## Snabb jämförelse - översikt {#quick-overview}
 
@@ -31,6 +32,10 @@ Den här guiden hjälper dig att välja mellan **Journeys**, **Åtgärdskampanje
 | **Åtgärdskampanjer** | Schemalagda eller återkommande sändningar till målgrupper | Batchkörning - målgruppen bearbetas tillsammans vid sändning |
 | **API-utlösta kampanjer** | Händelsestyrda eller transaktionsstyrda meddelanden från externa system | On demand-körning - utlöses av API-anrop med nyttolast |
 | **Samordnade kampanjer** | Komplexa batcharbetsflöden med segmentering av flera enheter | Batcharbetsyta - alla profiler bearbetas tillsammans |
+
+>[!TIP]
+>
+>**Snabbregel för tummen:** Vill du att varje kund ska kunna agera i sin egen takt med realtidslogik? Använd **Resor**. Vill du skicka ett meddelande till en målgrupp enligt ett schema? Använd **åtgärdskampanjer**. Vill du starta från ett externt system via API? Använd **API-utlösta kampanjer**. Behöver du data för flera enheter, exakta antal eller en batcharbetsyta? Använd **samordnade kampanjer**.
 
 ## Detaljerad jämförelse {#detailed-comparison}
 
@@ -55,7 +60,7 @@ Använd den här omfattande tabellen för att förstå de viktigaste skillnadern
 
 ## Beslutsguide {#decision-guide}
 
-Välj rätt metod genom att följa det här beslutsträdet:
+Välj rätt metod genom att följa det här beslutsträdet. Många varumärken använder mer än en typ. Välj den som passar bäst för varje användningsfall.
 
 ### Steg 1: Vad är ditt krav på exekvering?
 
@@ -88,14 +93,14 @@ Välj rätt metod genom att följa det här beslutsträdet:
 | Dina behov | Rekommenderad metod | Varför |
 |-----------|---------------------|-----|
 | Välkomna nya kunder med stegvis introduktion | Resor | Realtidsinmatning, flera kontaktytor, villkorsstyrda banor |
-| Skicka månatliga nyhetsbrev till prenumeranter | Åtgärdskampanj | Enkelt schemalagt meddelande till målgruppen |
+| Skicka månatliga nyhetsbrev till prenumeranter | Åtgärdskampanjer | Enkelt schemalagt meddelande till målgruppen |
 | Avbruten kundvagn med påminnelsesekvens | Resor | Utlösare i realtid, väntetider, villkorlig uppföljning |
-| Kampanjannonsering till alla kunder | Åtgärdskampanj | Engångsmeddelande, direktleverans |
+| Kampanjannonsering till alla kunder | Åtgärdskampanjer | Engångsmeddelande, direktleverans |
 | Engagera inaktiva användare på nytt baserat på beteende | Resor | Utlöses av målgruppskvalifikationer, personaliserad kundresa |
 | Flash-försäljning utlöses av en affärshändelse | Resor (affärshändelse) | Realtidsutlösare som påverkar flera kunder |
-| Säsongskampanj med produktkatalogintegration | Samlad kampanj | Data för flera enheter, komplex segmentering, exakt antal |
-| API-utlöst transaktionsmeddelande | API-utlöst kampanj | Extern systemutlösare, omedelbar leverans |
-| Flernivåutskick per bokning | Samlad kampanj | Relationer för flera enheter, ett meddelande per bokning |
+| Säsongskampanj med produktkatalogintegration | Samordnade kampanjer | Data för flera enheter, komplex segmentering, exakt antal |
+| API-utlöst transaktionsmeddelande | API-utlösta kampanjer | Extern systemutlösare, omedelbar leverans |
+| Flernivåutskick per bokning | Samordnade kampanjer | Relationer för flera enheter, ett meddelande per bokning |
 
 ## Förklaring av viktiga distinktioner {#key-distinctions}
 
@@ -230,12 +235,14 @@ Kombinerar arbetsflödeskomplexitet med batchkörning av kampanjer.
 
 +++ Kan jag kombinera resor och kampanjer i min marknadsföringsstrategi?
 
-Absolut! De flesta organisationer använder alla tre metoder för olika scenarier:
+Ja. De flesta organisationer använder alla fyra metoderna för olika scenarier:
 
-* Resor för beteendeengagemang i realtid
-* Åtgärdskampanjer för schemalagd sändningskommunikation
-* API-utlösta kampanjer för transaktionsmeddelanden
-* Samordnade kampanjer för komplexa, dataintensiva gruppkampanjer
+* **Resor** för beteenden, realtidsengagemang
+* **Åtgärdskampanjer** för schemalagd sändningskommunikation
+* **API-utlösta kampanjer** för transaktionsmeddelanden
+* **Samordnade kampanjer** för komplexa, dataintensiva gruppkampanjer
+
+Använd rätt verktyg för varje användningsfall i stället för att tvinga fram en strategi för allt.
 
 +++
 
@@ -253,17 +260,17 @@ Action Campaigns är oftast det enklaste (ett enda meddelande till en målgrupp)
 
 +++ Vilken skala passar bäst för stora målgrupper?
 
-Alla tre kan skalas bra, men:
+Alla fyra kan skalas bra. Det rätta alternativet beror på ditt mönster:
 
-* **Läs målgrupper** och **Åtgärdskampanjer** är optimerade för stora grupper
-* **Orchestrerade kampanjer** kan inte användas vid komplex segmentering med stora datamängder
-* **Unitary Journeys** bearbetar profiler individuellt, så skalan beror på händelsens volym
+* **Läs målgrupper** och **Åtgärdskampanjer** är optimerade för stora grupper (ett meddelande eller flöde till flera profiler samtidigt).
+* **Orchestrerade kampanjer** är perfekta vid komplex segmentering med stora datamängder och data för flera enheter.
+* **Enhetliga (händelsebaserade) resor** processprofiler individuellt när händelser inträffar, så skalan beror på händelsens volym och genomströmning.
 
 +++
 
 +++ Kan jag använda samma målgrupp på alla resor och i alla kampanjer?
 
-Ja, målgrupper som skapats i Adobe Experience Platform kan användas på alla tre inriktningarna.
+Ja. Publiker som skapats i [!DNL Adobe Experience Platform] kan användas i resor, åtgärdskampanjer och samordnade kampanjer (där målgruppslogik också kan byggas on demand på arbetsytan). API-utlösta kampanjer är nyttolastdrivna och använder inte fördefinierade målgrupper på samma sätt.
 
 +++
 
@@ -271,12 +278,14 @@ Ja, målgrupper som skapats i Adobe Experience Platform kan användas på alla t
 
 Vill du börja bygga? Utforska den detaljerade dokumentationen för det sätt du valt:
 
-* **[Kom igång med resor](../building-journeys/journey.md)** - Lär dig mer om resetyper, designer och arbetsflöde
-* **[Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)** - Utforska åtgärder och API-utlösta kampanjer
-* **[Kom igång med samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)** - Upptäck arbetsflöden för arbetsytan i batch
+* **[Kom igång med resor](../building-journeys/journey.md)** - Resetyper, designer och arbetsflöde
+* **[Kom igång med kampanjer](../campaigns/get-started-with-campaigns.md)** - åtgärder och API-utlösta kampanjer
+* **[Kom igång med samordnade kampanjer](../orchestrated/gs-orchestrated-campaigns.md)** - arbetsflöden för arbetsytan Gruppera
 
-**Behöver du mer hjälp med att bestämma dig?**
-* [Jämförelse av resetyper](../building-journeys/journey.md#journey-types-comparison)
-* [Jämförelse av kampanjtyper](../campaigns/get-started-with-campaigns.md#campaign-types)
-* [Vanliga frågor om resor](../building-journeys/journey-faq.md)
-* [Vanliga frågor om samordnade kampanjer](../orchestrated/orchestrated-campaigns-faq.md)
+>[!MORELIKETHIS]
+>
+>* [Jämförelse av resetyper](../building-journeys/journey.md#journey-types-comparison)
+>* [Jämförelse av kampanjtyper](../campaigns/get-started-with-campaigns.md#campaign-types)
+>* [Vanliga frågor om resan](../building-journeys/journey-faq.md)
+>* [Vanliga frågor om samordnade kampanjer](../orchestrated/orchestrated-campaigns-faq.md)
+>* [God praxis](best-practices.md) - Användningsexempel i realtid och skalning med skyddsräcken
