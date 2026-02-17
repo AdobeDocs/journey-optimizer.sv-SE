@@ -6,9 +6,9 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 3ec084ca-af9e-4b5e-b66f-ec390328a9d6
-source-git-commit: 7b1b79e9263aa2512cf69cb130f322a1558eecff
+source-git-commit: aca4e62faa7aa09a60eef661c0732a8b0b1fa36e
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1105'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Med API:t för migreringstjänsten för beslut kan du migrera beslutshanteringsobjekt från en sandlåda till en annan. Migreringsprocessen körs som asynkrona arbetsflöden som innehåller beroendeanalys, körning och valfria återställningsfunktioner.
 
-Med detta API kan du smidigt överföra ditt beslutsinnehåll mellan miljöer (t.ex. från utveckling till staging eller från mellanlagring till produktion) samtidigt som dataintegritet och relationer upprätthålls.
+Med detta API kan du smidigt övergå ditt beslutsinnehåll mellan miljöer <!--(e.g., from development to staging, or staging to production) --> samtidigt som dataintegritet och relationer bevaras.
 
 Om du vill veta mer om fördelarna och möjligheterna med att fatta beslut jämfört med att hantera beslut kan du läsa [den här sidan](migrate-to-decisioning.md).
 
@@ -66,12 +66,12 @@ Mer information om sandlådehantering finns i [Använda och tilldela sandlådor]
 
 ## Grunderna i API {#api-basics}
 
-### Bas-URL {#base-urls}
+### Bas-URL {#base-url}
 
-Använd följande bas-URL:er beroende på din miljö:
+Använd följande bas-URL:
 
 * **Produktion**: `https://decisioning-migration.adobe.io`
-* **Förproduktion**: `https://decisioning-migration-stage.adobe.io`
+  <!--* **Staging**: `https://decisioning-migration-stage.adobe.io`-->
 
 ### Autentisering {#authentication}
 
@@ -93,8 +93,8 @@ Ett arbetsflöde har följande egenskaper:
 * `status` - Aktuell arbetsflödesstatus: `New`, `Running`, `Completed` eller `Failed`
 * `result` - Arbetsflödets utdata när det är klart (inkluderar migreringsresultat och varningar)
 * `errors` - Strukturerad felinformation vid fel
-* `_etag` - Versionsidentifierare används för borttagningsåtgärder (endast tjänstanvändare)
 * `_links.self` - Arbetsflödes-URL för att hämta status
+  <!--* `_etag` - Version identifier used for delete operations (service users only)-->
 
 ## Arbetsflöde för migrering {#migration-workflow}
 
@@ -354,17 +354,15 @@ När enheter migreras från beslutshantering till beslut mappas de på följande
 
 ## Rensa arbetsflöde {#cleanup}
 
-Arbetsflödesresurser kan bara tas bort av tjänstanvändare. Borttagningsåtgärder kräver ett `If-Match`-huvud med arbetsflödets `_etag`-värde.
+<!--Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
 
-**Tillgängliga borttagningsåtgärder:**
+**Available delete operations:**
 
 * `DELETE /workflows/generate-dependencies/{id}`
 * `DELETE /workflows/migration/{id}`
-* `DELETE /workflows/rollback/{id}`
+* `DELETE /workflows/rollback/{id}`-->
 
->[!NOTE]
->
->Borttagning av arbetsflöden är bara tillgängligt för tjänstkonton med rätt behörighet. Kontakta systemadministratören om du behöver ta bort en arbetsflödesresurs.
+Det går inte att ta bort arbetsflöden offentligt. Kontakta systemadministratören om du behöver ta bort en arbetsflödesresurs.
 
 ## Relaterade ämnen {#related-topics}
 
