@@ -7,9 +7,9 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 0472c9bb9decc49e5da392003027df23ec528ac9
+source-git-commit: 1bcd30022ea2360d44f5519e156129f603cdf149
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1525'
 ht-degree: 3%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 3%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Februari 26 förhandsversionsinformation {#feb-26-01-rn}
 
 **Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Releasedatum**: 17-18 februari 2026
 
@@ -46,12 +46,13 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <tbody>
 <tr>
 <td>
-<p>Du kan schemalägga utgående meddelanden från kampanjer eller resor som ska levereras i kontrollerade batchar över tid.</p>
+<p>Du kan nu schemalägga utgående meddelanden från Journey Optimizer-kampanjer eller resor som ska levereras i kontrollerade batchar över tid.</p>
 <p>Wave-sändning ger följande fördelar:</p>
 <ul>
 <li>Bättre leveransförmåga - Spridning skickar över tid för att bevara ett starkt avsändarrykte och minska risken för att flaggas som skräppost.</li>
 <li>Belastningskontroll - Undvik överväldigande system längre fram i kedjan (t.ex. callcenters, landningssidor) genom att begränsa hur många meddelanden som skickas samtidigt.</li>
 <li>Användningsfall med stor volym och tidskänslighet - Passar för stora målgrupper eller när du behöver styra timing (t.ex. callcenters kapacitet, uppfartsavtal eller tidsbundna erbjudanden).</li>
+<p>I kampanjer är den här funktionen tillgänglig för alla miljöer (allmän tillgänglighet). Under resor är denna kapacitet endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
 </ul>
 </td>
 </tr>
