@@ -5,7 +5,7 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 279fd366b14520daec1df7f843ed337348e145a5
+source-git-commit: 7cfeabc85b9645be9d61ed6458e57e42ea319619
 workflow-type: tm+mt
 source-wordcount: '3086'
 ht-degree: 15%
@@ -273,7 +273,6 @@ ht-degree: 15%
             + [Importera innehåll](using/email/existing-content.md)
             + [Koda eget innehåll](using/email/code-content.md)
             + [Använd e-postmallar](using/email/use-email-templates.md)
-            + [Konvertera bilder till HTML-mallar](using/email/image-to-html.md)
             + [Utnyttja e-postteman](using/email/apply-email-themes.md)
             + [Bifoga PDF-filer i e-postmeddelanden](using/email/pdf-attachments.md)
          + Designa innehåll {#add-content}
@@ -457,6 +456,7 @@ ht-degree: 15%
       + [Kom igång med innehållsmallar](using/content-management/content-templates.md)
       + [Få åtkomst till och hantera mallar](using/content-management/access-content-templates.md)
       + [Skapa innehållsmallar](using/content-management/create-content-templates.md)
+      + [Konvertera bilder till HTML-mallar](using/content-management/image-to-html.md)
       + [Lås innehåll i e-postmallar](using/content-management/content-locking.md)
       + [Testa innehållsmallar](using/content-management/test-content-templates.md)
       + [Använda innehållsmallar](using/content-management/use-content-templates.md)
@@ -849,7 +849,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

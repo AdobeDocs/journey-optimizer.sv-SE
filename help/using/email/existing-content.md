@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: e-post, import, innehåll, html, zip, css
 exl-id: 52011299-0c65-49c3-9edd-ba7bed5d7205
-source-git-commit: 7176f5a1fa4c1b6c564fdb5d65f4e9208a1dce30
+source-git-commit: 7cfeabc85b9645be9d61ed6458e57e42ea319619
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Med [!DNL Journey Optimizer] kan du importera befintligt HTML-innehåll för att
 
 >[!TIP]
 >
->Om du har bilddesigner (JPEG eller PNG) i stället för HTML-filer kan du använda [bilden till HTML-konverteraren](image-to-html.md) för att automatiskt konvertera dem till redigerbara HTML-e-postmallar med hjälp av AI.
+>Om du har bilddesigner (JPEG eller PNG) i stället för HTML-filer kan du använda [bilden till HTML-konverteraren](../content-management/image-to-html.md) för att automatiskt konvertera dem till redigerbara HTML-e-postmallar med hjälp av AI.
 
 Om du vill importera en fil som innehåller HTML-innehåll följer du stegen nedan:
 
