@@ -11,7 +11,7 @@ level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 version: Journey Orchestration
-source-git-commit: 1735324b5fd330ecfc9261a54d0317b71d57ff4f
+source-git-commit: 648c2d9d41e169b7aa64b659ee1234744805c7a8
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 0%

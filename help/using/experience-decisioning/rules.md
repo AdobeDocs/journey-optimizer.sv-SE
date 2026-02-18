@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
 version: Journey Orchestration
-source-git-commit: 27de3d2171e6f6575eb66ada20f951f6cb3abc98
+source-git-commit: 648c2d9d41e169b7aa64b659ee1234744805c7a8
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Många gånger är de en kombination av flera attribut, utöver kundbeteendehän
 
 Du kan använda dessa regler:
 
-* När du skapar [innehållsoptimering med &#x200B;](../content-management/optimization-targeting.md) som mål på resor eller kampanjer,
+* När du skapar [innehållsoptimering med ](../content-management/optimization-targeting.md) som mål på resor eller kampanjer,
 * När [optimering av kundresan](../building-journeys/optimize.md#targeting) skapas.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
@@ -137,4 +137,4 @@ Så här skapar du en regel:
 
 Lär dig hur du skapar, duplicerar och tillämpar återanvändbara **målinriktningsregler** i Adobe Journey Optimizer för att effektivt personalisera kampanjer baserat på kundattribut som region, språk och beteende, vilket sparar tid samtidigt som målgruppens precision förbättras.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476131/?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3476127/?quality=12)

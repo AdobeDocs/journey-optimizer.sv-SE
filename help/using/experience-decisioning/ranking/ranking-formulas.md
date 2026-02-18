@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
 version: Journey Orchestration
-source-git-commit: 21de0b9616c414db204a3eafebc6a8184028a1e1
+source-git-commit: 648c2d9d41e169b7aa64b659ee1234744805c7a8
 workflow-type: tm+mt
 source-wordcount: '1462'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >
