@@ -7,10 +7,10 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: 029f91599f0be6d30d1e7d73cac7390a6fb05f1f
+source-git-commit: 4f28c1e5c84e303470653803f5d2c9f5051d4ab8
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 4%
+source-wordcount: '1241'
+ht-degree: 2%
 
 ---
 
@@ -25,87 +25,20 @@ ht-degree: 4%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## Februari 26 förhandsversionsinformation {#feb-26-01-rn}
+## Versionsinformation 26 februari {#feb-26-01-rn}
 
-**Förhandsversionsinformationen nedan kan komma att ändras utan föregående meddelande till releasedatumet**. Länkar, skärmar och uppdaterad dokumentation publiceras i versionsinformationen på releasedatum.
+Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01-improv) omfattar funktioner som redan är tillgängliga. Avsnittet [Kommer snart](#coming-soon) innehåller funktioner och förbättringar som är planerade att släppas senare i februari.
 
-Se även [Förhandsversionsinformation för Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+<!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-**Releasedatum**: 17-18 februari 2026
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+
+<!--**Release date**: February 17-18, 2026-->
 
 ### Nya funktioner {#feb-26-01-features}
 
-<table>
-<thead>
-<tr>
-<th><strong>Påfyllnadssändning av utgående meddelanden</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Du kan nu schemalägga utgående meddelanden från Journey Optimizer-kampanjer eller resor som ska levereras i kontrollerade batchar över tid.</p>
-<p>Wave-sändning ger följande fördelar:</p>
-<ul>
-<li>Bättre leveransförmåga - Spridning skickar över tid för att bevara ett starkt avsändarrykte och minska risken för att flaggas som skräppost.</li>
-<li>Belastningskontroll - Undvik överväldigande system längre fram i kedjan (t.ex. callcenters, landningssidor) genom att begränsa hur många meddelanden som skickas samtidigt.</li>
-<li>Användningsfall med stor volym och tidskänslighet - Passar för stora målgrupper eller när du behöver styra timing (t.ex. callcenters kapacitet, uppfartsavtal eller tidsbundna erbjudanden).</li>
-</ul>
-<p>I kampanjer är den här funktionen tillgänglig för alla miljöer (allmän tillgänglighet).</p>
-<p>Under resor är denna kapacitet endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Migrera underdomäner till anpassad delegering</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du migrera underdomäner med CNAME-delegeringsläget till anpassad delegering direkt från gränssnittet, så att du kan följa striktare säkerhetsregler i enlighet med företagets riktlinjer utan att behöva skapa kanalkonfigurationer på nytt.</p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Skiljeförfarande på resan</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du använda <strong>rankningsformler</strong> <!--and <strong>AI models</strong> --> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kan komma in på de mest relevanta resorna.</p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Agent: Skapa kanalinnehåll</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <!--
 <table>
@@ -136,28 +69,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <td>
 <p>Nu kan du övervaka hälsa, utbildningsstatus och prestanda för dina AI-modeller för beslut. På så sätt kan ni verifiera att kursen har lyckats, felsöka och förstå hur resultatet blir för att kunna välja de bästa erbjudandena för varje kund med hjälp av AI. Observera att den här funktionen endast är tillgänglig för <strong>Decision</strong> (inte för äldre beslutsmodeller).</p>
 <p>Den här funktionen är för närvarande endast tillgänglig för <strong>personaliserade optimeringsmodeller</strong> (inte automatisk optimering).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Verksamhet under resor</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer har stöd för en ny generisk <strong>åtgärdsaktivitet</strong> som gör att du kan konfigurera både enskilda åtgärder och inkommande åtgärdsgrupper för flera åtgärder, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Den här nya funktionen gör det möjligt att:</p>
-<ul>
-<li>En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.</li>
-<li>Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.</li>
-<li>Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.</li>
-<li>Möjlighet att lägga till både experimentella och flerspråkiga&gt; alternativ till alla åtgärder.</li>
-</ul>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Tillgänglighetsdatum: 17 februari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -195,65 +107,7 @@ Se även [Förhandsversionsinformation för Adobe Experience Platform](https://e
 <p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
 <p><img src="assets/do-not-localize/content-decision.gif"/></p>
 <p>Mer information finns i den <a href="../building-journeys/content-decision.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 11 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Verktyg-API:er för självbetjäningsmigrering</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Migreringsverktygs-API:er är nu tillgängliga för programmatisk migrering av <strong>beslutshantering</strong>-entiteter till <strong>beslutshantering</strong>, med:</p>
-<ul>
-<li>Flexibla migreringsomfång (sandlåda, erbjudande eller beslutsnivå)</li>
-<li>Automatisk beroendeanalys och validering</li>
-<li>Återställningsstöd för slutförda migreringar</li>
-<li>Detaljerade migreringsrapporter med objektmappningar</li>
-</ul>
-<p>Mer information finns i den <a href="../experience-decisioning/decisioning-migration-api.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 3 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Övervakning av anpassade åtgärder</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Få djupare insikter i hälsa och prestanda för dina <strong>anpassade åtgärdsslutpunkter</strong> med en ny <strong>övervakningsinstrumentpanel</strong> och förbättrade <strong>händelsedata för kundsteg</strong>. Spåra lyckade samtal, fel, dataflöde, svarstider och väntetider för kön för att snabbt förstå när, var och varför avvikelser inträffar.</p>
-<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
-<p>Mer information finns i den <a href="../action/reporting.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 3 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Beslutsstöd i SMS-kanal</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Du kan nu anpassa och optimera innehållet i dina <strong>SMS-meddelanden</strong> med <strong>Beslutsfattande</strong>. Använd <strong>Prioritetsresultat</strong>, <strong>Formler</strong> eller <strong>AI-modeller</strong> för att visa det bästa innehållet för dina kunder.</p>
-<p>Mer information finns i den <a href="../experience-decisioning/create-decision.md">detaljerade dokumentationen</a>.</p>
-<p>Tillgänglighetsdatum: 2 februari 2026</p>
+<p>Tillgänglighetsdatum: 10 februari 2026</p>
 </td>
 </tr>
 </tbody>
@@ -267,31 +121,18 @@ Förbättringar i den här versionen visas nedan.
 
 * **Upplev händelseanvändning i reseuttryck** - Från och med 1 april 2026 stöds inte längre användningen av upplevelsehändelseattribut i reseuttryck för organisationer som inte har använt den här funktionen de senaste 90 dagarna. Den här funktionen har redan varit otillgänglig för nya kundorganisationer sedan 8 juli 2025. Mer information finns i [Upplevelsesökning under resor](../building-journeys/exp-event-lookup.md).
 
-
 #### Innehållsmallar
 
 * **Använd teman för att konvertera bilder till e-postmallar** - När du konverterar en bild till en e-postmall i Journey Optimizer kan du nu använda ett tema som indata så att den genererade HTML följer varumärkesparametrarna. Formatering som bakgrundsfärg, knappfärg, teckensnitt, radavstånd, marginaler och utfyllnad tillämpas automatiskt, vilket minskar det manuella arbetet och ger en mall som är klar att användas med minimala redigeringar. [Läs mer](../content-management/image-to-html.md)
 
-  Tillgänglighetsdatum: 13 februari 2026.
-
-
-#### E-postdesigner
-
-* **Uppdatera varumärken med nya färgflikar** - Riktlinjer för varumärken hjälper dig att se till att ert varumärke presenteras på ett enhetligt sätt över alla kontaktytor. I det nya avsnittet Färger definieras standarderna för ert varumärkes färgsystem och de visar hur färger väljs, ordnas och används i olika upplevelser. Det säkerställer konsekvent användning av primära, sekundära, dekorativa och neutrala färger för att stödja en sammanhängande, tillgänglig och identifierbar varumärkesidentitet.
-
-
-#### AI
-
-* **Integrering av anpassade Firefly-modeller och tredjepartsmodeller för bildgenerering** - Möjliggör smidig integrering av Firefly-modeller och egna, tillsammans med godkända tredjepartsmodeller (t.ex. NanoBanana), för att ge större flexibilitet, kontroll och varumärkesjustering när bilder genereras. På så sätt kan du välja den bästa modellen för varje användningsfall: standardmodell för Firefly för allmänna behov, anpassad Firefly för varumärkesgenerering eller godkända tredjepartsmodeller för specialiserade eller experimentella scenarier.
+  Tillgänglighetsdatum: 17 februari 2026.
 
 
 #### Experience Decision
 
-* **Stöd för inkommande trafik från Edge för användning av Adobe Experience Platform-data i beslut** - Om du använder Adobe Experience Platform-data i beslut stöds nu även kantinkommande användningsfall, förutom e-post och anpassade åtgärder på resor.
+* **Stöd för inkommande trafik från Edge för användning av Adobe Experience Platform-data i beslut** - Om du använder Adobe Experience Platform-data i beslut stöds nu även kantinkommande användningsfall, förutom e-post och anpassade åtgärder på resor. [Läs mer](../experience-decisioning/aep-data-exd.md)
 
   **Obs!**: Den här funktionen är bara tillgänglig för en uppsättning organisationer (<strong>Begränsad tillgänglighet</strong>). Kontakta din Adobe-representant för att få åtkomst.
-
-* **Förhandsgranskning av Experience Decisioning i den kodbaserade Experience Channel** - Du kan nu förhandsgranska beslutsobjekt när du konfigurerar Experience Decision med den kodbaserade Experience Channel. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras.
 
 
 * **Koppla fragment till beslutsobjekt** - Journey Optimizer kan nu koppla fragment till beslutsobjekt som kan utnyttjas i kodbaserade upplevelsekampanjer via beslutspolicyer. [Läs mer](../experience-decisioning/fragments-decision-policies.md)
@@ -300,9 +141,117 @@ Förbättringar i den här versionen visas nedan.
 
   Tillgänglighetsdatum: 12 februari 2026.
 
+## Kommer snart {#coming-soon}
 
-#### SMS
+Funktionerna och förbättringarna nedan är planerade att släppas senare i februari. Releasedatum och omfång kan ändras utan föregående meddelande.
 
-* **SMS-webbhooks** - <strong>Webbhooks</strong> stöds nu av alla SMS-providers. Du kan konfigurera varje webkrok baserat på dess avsedda syfte: <strong>Inkommande webhooks</strong> för att hämta inkommande meddelanden och <strong>Feedback-webhooks</strong> för att ta emot leveranskvitton, statusuppdateringar och andra meddelanderelaterade händelser. [Läs mer](../sms/sms-webhook.md)
+<table>
+<thead>
+<tr>
+<th><strong>Migrera underdomäner till anpassad delegering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du migrera underdomäner med CNAME-delegeringsläget till anpassad delegering direkt från gränssnittet, så att du kan följa striktare säkerhetsregler i enlighet med företagets riktlinjer utan att behöva skapa kanalkonfigurationer på nytt.</p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Tillgänglighetsdatum: 20 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-  Tillgänglighetsdatum: 2 februari 2026.
+<table>
+<thead>
+<tr>
+<th><strong>Journey Agent: Skapa kanalinnehåll</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> är tillgängligt i Journey Optimizer och gör att du kan analysera resor via ett naturligt språkgränssnitt. Nu kan du även generera och hantera kanalspecifikt innehåll direkt i Journey Agent, skapa innehåll för kanaler som e-post och push, tillämpa och förhandsgranska mallar, förfina ton och stil genom uppmaningar och öppna innehåll i <strong>Content Designer</strong> för kontextredigering.</p>
+<p>Tillgänglighetsdatum: 20 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Påfyllnadssändning av utgående meddelanden</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Du kan nu schemalägga utgående meddelanden från Journey Optimizer-kampanjer eller resor som ska levereras i kontrollerade batchar över tid.</p>
+<p>Wave-sändning ger följande fördelar:</p>
+<ul>
+<li>Bättre leveransförmåga - Spridning skickar över tid för att bevara ett starkt avsändarrykte och minska risken för att flaggas som skräppost.</li>
+<li>Belastningskontroll - Undvik överväldigande system längre fram i kedjan (t.ex. callcenters, landningssidor) genom att begränsa hur många meddelanden som skickas samtidigt.</li>
+<li>Användningsfall med stor volym och tidskänslighet - Passar för stora målgrupper eller när du behöver styra timing (t.ex. callcenters kapacitet, uppfartsavtal eller tidsbundna erbjudanden).</li>
+</ul>
+<p>I kampanjer är den här funktionen tillgänglig för alla miljöer (allmän tillgänglighet).</p>
+<p>Under resor är denna kapacitet endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Tillgänglighetsdatum: 20 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Skiljeförfarande på resan</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du använda <strong>rankningsformler</strong> och <strong>AI-modeller</strong> för att automatiskt öka prioritetspoängen för resan baserat på kundprofilattribut och sammanhangsberoende faktorer, så att kunderna kommer in på de mest relevanta resorna.</p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Tillgänglighetsdatum: 24 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Verksamhet under resor</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer har stöd för en ny generisk <strong>åtgärdsaktivitet</strong> som gör att du kan konfigurera både enskilda åtgärder och inkommande åtgärdsgrupper för flera åtgärder, vilket ger en smidig åtgärdskonfiguration på arbetsytan. Den här nya funktionen gör det möjligt att:</p>
+<ul>
+<li>En förenklad inbyggd åtgärdskonfiguration på arbetsytan för resan.</li>
+<li>Kapaciteten för att skapa inkommande åtgärdsgrupper med flera åtgärder.</li>
+<li>Möjlighet att lägga till optimering till alla inbyggda kanalåtgärder.</li>
+<li>Möjlighet att lägga till både experimentella och flerspråkiga alternativ i alla funktionsmakron.</li>
+</ul>
+<p>Den här funktionen lanserades tidigare i begränsad tillgänglighet och är nu tillgänglig i alla miljöer (allmän tillgänglighet).</p>
+<p>Tillgänglighetsdatum: 20 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Förbättringar {#coming-soon-improv}
+
+* **Förhandsgranskning av Experience Decisioning i den kodbaserade Experience Channel** - Du kan nu förhandsgranska beslutsobjekt när du konfigurerar Experience Decision med den kodbaserade Experience Channel. Förhandsgranskningen är tillgänglig direkt i redigeringsgränssnittet innan den publiceras.
+
+  Tillgänglighetsdatum: 20 februari 2026.
+
+* **Flera inkommande åtgärder under resor (GA)** - Journey Optimizer har nu stöd för flera inkommande åtgärder under resor (allmän tillgänglighet), vilket ger en mer flexibel resedesign och händelsehantering.
+
+  Tillgänglighetsdatum: 20 februari 2026.
+
+* **Integrering av anpassade Firefly-modeller och tredjepartsmodeller för bildgenerering** - Möjliggör smidig integrering av Firefly-modeller och egna, tillsammans med godkända tredjepartsmodeller (t.ex. NanoBanana), för att ge större flexibilitet, kontroll och varumärkesjustering när bilder genereras. På så sätt kan du välja den bästa modellen för varje användningsfall: standardmodell för Firefly för allmänna behov, anpassad Firefly för varumärkesgenerering eller godkända tredjepartsmodeller för specialiserade eller experimentella scenarier.
+
+  Tillgänglighetsdatum: 20 februari 2026.
