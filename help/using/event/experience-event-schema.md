@@ -9,9 +9,9 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: scheman, XDM, plattform, direktuppspelning, förtäring, resa
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
-source-git-commit: bdf857c010854b7f0f6ce4817012398e74a068d5
+source-git-commit: 18067694878761f3b37277dfee6f7e43987a1d42
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Därför är en viktig förutsättning för att du ska kunna konfigurera händel
 
 >[!CAUTION]
 >
->Upplevelsehändelsesökningar i resevillkor stöds inte längre. Här kan du få tips på andra sätt. Om du har en händelse som utlöste en reseupplevelse som fortfarande behöver Experience Events-sökning och som inte kan hanteras via något av alternativen i listan, ber vi dig kontakta din Adobe-representant så hjälper vi dig att nå ditt mål.
+>Från och med 8 juli 2025 kan nya kundorganisationer inte skapa uttryck med hjälp av attribut för upplevelsehändelser under resevillkor. Från och med den 1 april 2026 har organisationer som inte har haft åtkomst till upplevelsehändelser via reseuttryck de senaste 90 dagarna inte längre tillgång till den här funktionen. Alternativa strategier och bästa metoder listas i [Upplevelsehändelsesökning på resor](../building-journeys/exp-event-lookup.md).
 >
 >Åtkomst till kontext från starthändelsen av en resa påverkas inte.
 
@@ -80,7 +80,7 @@ Here is the purchase schema with the relationship defined on the product ID fiel
 
 >[!NOTE]
 >
->Learn more about schema relationships in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html?lang=sv-SE).
+>Learn more about schema relationships in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/configure-relationships-between-schemas.html).
 
 In Journey Optimizer, you can then leverage all the fields from the linked tables:
 

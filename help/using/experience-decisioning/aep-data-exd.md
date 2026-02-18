@@ -11,9 +11,9 @@ level: Intermediate
 keywords: uttryck, redigerare
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 version: Journey Orchestration
-source-git-commit: 648c2d9d41e169b7aa64b659ee1234744805c7a8
+source-git-commit: 6c85cfa27002de17f6625447fa0b7eaaceb9f829
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Med [!DNL Journey Optimizer] kan du utnyttja data från [!DNL Adobe Experience P
 
 ## Skyddsritningar och begränsningar {#guardrails}
 
-* **Kanaler som stöds** - Datauppsättningssökning med beslut fungerar för e-post och anpassade åtgärder för resor. <!--Support for code-based experience channels is coming soon.-->
-* **Attributanvändning** - Datauppsättningssökningsfunktionen för beslut utökar beslutsobjektsdefinitioner med ytterligare attribut - det utökar inte attribut till profiler
+* **Kanaler som stöds** - Datauppsättningssökning med beslut fungerar för alla kanaler där beslut är tillgängligt: kodbaserad upplevelse (inkommande), e-post, push, SMS och innehållsbeslutsnoden under resor.
+* **Attributanvändning** - Datauppsättningssökningsfunktionen för beslut utökar beslutsobjektsdefinitioner med ytterligare attribut - det utökar inte attribut till profiler.
 * **Uppslagsgränser**: [!DNL Journey Optimizer] har stöd för upp till 1 000 uppslag per princip för enstaka beslut.
 
 ## Förhandskrav

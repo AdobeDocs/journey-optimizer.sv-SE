@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
 version: Journey Orchestration
-source-git-commit: 648c2d9d41e169b7aa64b659ee1234744805c7a8
+source-git-commit: 6c85cfa27002de17f6625447fa0b7eaaceb9f829
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
@@ -66,9 +66,7 @@ Följ stegen nedan för att skapa en rankningsformel.
    >
    >Inkapslingsdjupet i en rankningsformel är begränsat till 30 nivåer. Detta mäts genom att räkna de `)` avslutande parenteserna i PQL-strängen. En regelsträng kan vara upp till 8 kB för UTF-8-kodade tecken. Detta motsvarar 8 000 ASCII-tecken (1 byte vardera), eller 2 000-4 000 icke-ASCII-tecken (2-4 byte vardera). [Läs mer om hur du bestämmer dig för skyddsprofiler och begränsningar](../decisioning-guardrails.md#ranking-formulas)
 
-1. Ni kan också använda data från Adobe Experience Platform för att dynamiskt justera rankningslogiken så att den speglar de verkliga förhållandena. Detta är särskilt användbart för attribut som ofta ändras, till exempel produkttillgänglighet eller realtidspriser.
-
-   Den här funktionen är för närvarande tillgänglig för alla kunder som en betaversion. Kontakta din kontorepresentant om du vill ha tillgång till tjänsten. [Lär dig använda Adobe Experience Platform-data för beslut](../aep-data-exd.md)
+1. Ni kan också använda data från Adobe Experience Platform för att dynamiskt justera rankningslogiken så att den speglar de verkliga förhållandena. Detta är särskilt användbart för attribut som ofta ändras, till exempel produkttillgänglighet eller realtidspriser. [Lär dig använda Adobe Experience Platform-data för beslut](../aep-data-exd.md)
 
 <!--## Select an ELS dataset {#els-dataset}
 
@@ -141,7 +139,7 @@ Om beslutsobjektets region (anpassat attribut) är lika med profilens geografisk
 
 ## Använda kodredigeraren {#ranking-code-editor}
 
-Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=sv-SE).
+Om du vill uttrycka rankningsformler i **PQL-syntax** växlar du till kodredigeraren med den dedikerade knappen längst upp till höger på skärmen. Mer information om hur du använder PQL-syntaxen finns i [dedikerad dokumentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
 >[!CAUTION]
 >

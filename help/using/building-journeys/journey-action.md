@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, meddelande, push, sms, e-post, in-app, webb, innehållskort, kodbaserad upplevelse
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 6bef70948918be30d92c0c3a1e63d5ff8681f15f
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,6 @@ ht-degree: 0%
 >id="ajo_action_activity"
 >title="Åtgärdsaktivitet"
 >abstract="Med den generiska **åtgärden** kan du konfigurera en enskild ursprunglig kanalåtgärd och flera inkommande aktiviteter med möjlighet att lägga till optimering till alla inbyggda kanalåtgärder."
-
->[!AVAILABILITY]
->
->Den här funktionen är tillgänglig med begränsad tillgänglighet. Kontakta din Adobe-representant för att få åtkomst.
 
 [!DNL Journey Optimizer] innehåller en ny allmän **Åtgärd**-aktivitet som gör att du kan konfigurera en enda inbyggd kanalåtgärd och även flera inkommande aktiviteter.
 
@@ -104,7 +100,7 @@ Snabba leveranser används när fördröjningar i meddelandeleverans är affärs
 
 Lär dig hur du aktiverar läget Snabb leverans för push-meddelanden [på den här sidan](../push/create-push.md#rapid-delivery).
 
-Mer information om prestanda när du använder läget Snabb leverans finns i [[!DNL Adobe Journey Optimizer] produktbeskrivningen](https://helpx.adobe.com/se/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+Mer information om prestanda när du använder läget Snabb leverans finns i [[!DNL Adobe Journey Optimizer] produktbeskrivningen](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 
 +++
 
