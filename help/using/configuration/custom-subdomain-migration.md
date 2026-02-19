@@ -148,6 +148,7 @@ Innan dess kontrollerar du följande:
    MIIDXTCCAkWgAwIBAgIJALc3... (base64 encoded data)
    -----END CERTIFICATE-----
    ```
+
 1. Markera rutan&quot;Jag bekräftar att jag har överfört SSL-certifikatet&quot;.
 
 ## Slinga för fullständig feedback {#feedback-loop}
