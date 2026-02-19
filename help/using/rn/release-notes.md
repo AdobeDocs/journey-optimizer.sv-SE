@@ -7,7 +7,7 @@ role: User
 level: Beginner, Intermediate
 description: Versionsinformation om Adobe Journey Optimizer
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-source-git-commit: dc6474bce5645f840d8d2354e3b955aa79b5c903
+source-git-commit: 316553be4f04e4fc0ae11bc767f7e48f64fc5ccd
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 På grund av den här modellen uppdateras versionsinformationen mellan månadsversionerna. Fullständig information om frisläppningscykeln och tillgänglighetsfaserna finns i [Journey Optimizer versionscykel](releases.md).
 
-[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html?lang=sv-SE){target="_blank"}.
+[!DNL Adobe Journey Optimizer] är inbyggd i [!DNL Adobe Experience Platform] och ärver från de senaste innovationerna och förbättringarna. Läs mer om de här ändringarna i [Adobe Experience Platform versionsinformation](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## Versionsinformation 26 februari {#feb-26-01-rn}
 
@@ -33,7 +33,7 @@ Avsnitten [Nya funktioner](#feb-26-01-features) och [Förbättringar](#feb-26-01
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/sv/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
 
@@ -57,6 +57,24 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 -->
+
+<table>
+<thead>
+<tr>
+<th><strong>Migrera underdomäner till anpassad delegering</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Nu kan du migrera underdomäner med CNAME-delegeringsläget till anpassad delegering direkt från gränssnittet, så att du kan följa striktare säkerhetsregler i enlighet med företagets riktlinjer utan att behöva skapa kanalkonfigurationer på nytt.</p>
+<p><img src="assets/do-not-localize/subdomain-migration.gif"/></p>
+<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
+<p>Tillgänglighetsdatum: 19 februari 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -127,23 +145,6 @@ Förbättringar i den här versionen visas nedan.
 ## Kommer snart {#coming-soon}
 
 Funktionerna och förbättringarna nedan är planerade att släppas senare i februari. Releasedatum och omfång kan ändras utan föregående meddelande.
-
-<table>
-<thead>
-<tr>
-<th><strong>Migrera underdomäner till anpassad delegering</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Nu kan du migrera underdomäner med CNAME-delegeringsläget till anpassad delegering direkt från gränssnittet, så att du kan följa striktare säkerhetsregler i enlighet med företagets riktlinjer utan att behöva skapa kanalkonfigurationer på nytt.</p>
-<p>Den här funktionen är endast tillgänglig för en uppsättning organisationer (begränsad tillgänglighet). Kontakta din Adobe-representant för att få åtkomst.</p>
-<p>Tillgänglighetsdatum: 20 februari 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>

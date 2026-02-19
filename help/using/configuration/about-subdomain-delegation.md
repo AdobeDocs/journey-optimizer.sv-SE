@@ -9,9 +9,9 @@ role: Admin
 level: Experienced
 keywords: underdomän, optimering, delegering
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-source-git-commit: ab29af6861e8fc1137fbbffd99b9576afa7e04f5
+source-git-commit: 316553be4f04e4fc0ae11bc767f7e48f64fc5ccd
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '996'
 ht-degree: 17%
 
 ---
@@ -92,7 +92,7 @@ Med den anpassade delegeringsmetoden kan du ha fullständig kontroll över och u
 
 I det här fallet äger och hanterar ni helt våra egna underdomäner och har full kontroll över de certifikat som genereras som en del av den här processen.
 
-Lär dig hur du konfigurerar en anpassad domän i [det här avsnittet](delegate-custom-subdomain.md).
+Lär dig hur du [konfigurerar en anpassad underdomän](delegate-custom-subdomain.md). Om din underdomän för närvarande använder CNAME kan du även [migrera från CNAME till anpassad delegering](custom-subdomain-migration.md).
 
 ## Jämföra konfigurationsmetoderna
 
@@ -110,7 +110,7 @@ Tabellen nedan tillhandahåller en sammanfattning av hur dessa metoder fungerar 
 | **CNAME-metod** | Skapa underdomänen och posten för namnrymden. Adobe tillhandahåller sedan de poster som ska placeras i dina DNS-servrar och konfigurerar motsvarande värden i Adobe Journey Optimizer DNS-servrar.<br/><br/>I den här konfigurationen delar både du och Adobe ansvaret för att underhålla DNS:er. | Hög |
 | **Anpassad delegeringsmetod** | Skapa post för underdomän och namnområde - Adobe tillhandahåller sedan de poster som ska placeras i dina DNS-servrar. Överför SSL-certifikatet som hämtats från certifikatutfärdaren och fyll i feedbackloopstegen genom att verifiera domänägarskap och rapportera e-postadress.<br/><br/>I den här konfigurationen har du fullt ansvar för att underhålla DNS. | Mycket hög |
 
-Ytterligare information om domänkonfiguration finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html?lang=sv-SE){target="_blank"}.
+Ytterligare information om domänkonfiguration finns i [den här dokumentationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html){target="_blank"}.
 
 Om du har några frågor om konfigureringsmetoder för subdomäner kan du kontakta Adobe eller kontakta kundtjänst för att få rådgivning om slutprodukten.
 

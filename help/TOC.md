@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 472bf46d7daf92860fcf208df3bf24ab3a0a029a
+source-git-commit: 316553be4f04e4fc0ae11bc767f7e48f64fc5ccd
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3093'
 ht-degree: 15%
 
 ---
@@ -850,7 +850,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}
@@ -867,6 +867,7 @@ ht-degree: 15%
       + [Kom igång med delegering till underdomäner](using/configuration/about-subdomain-delegation.md)
       + [Delegera en underdomän](using/configuration/delegate-subdomain.md)
       + [Konfigurera en anpassad underdomän](using/configuration/delegate-custom-subdomain.md)
+      + [Migrera från CNAME till anpassad delegering](using/configuration/custom-subdomain-migration.md)
       + [Ställ in DMARC-post](using/configuration/dmarc-record.md)
       + [Lägg till en Google TXT-post](using/configuration/google-txt.md)
       + [Få åtkomst till och redigera PTR-poster](using/configuration/ptr-records.md)
