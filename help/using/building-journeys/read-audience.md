@@ -7,12 +7,12 @@ feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
 level: Intermediate
-keywords: aktivitet, resa, läsning, målgrupp, plattform
+keywords: aktivitet, resa, läsare, målgrupp, segment, batch, startpunkt, utlösare, schema, målgruppskvalifikation
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 version: Journey Orchestration
-source-git-commit: ac7793f9ac38528fbe9252ad2f12921ca7fe0665
+source-git-commit: 2823164e60521fd3b81980d8cc1aac90c148e657
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '3340'
 ht-degree: 0%
 
 ---
@@ -21,22 +21,31 @@ ht-degree: 0%
 
 Använd aktiviteten Läs målgrupp för att starta resor med definierade målgrupper.
 
-## Om aktiviteten Läs målgrupp {#about-segment-trigger-actvitiy}
+## Om aktiviteten Läs målgrupp {#about-segment-trigger-activity}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
 >title="Läs målgruppsaktivitet"
->abstract="Med aktiviteten Läs målgrupp kan du göra så att alla personer som tillhör en [!DNL Adobe Experience Platform]-målgrupp kan delta i en resa. Ingången till en resa kan genomföras antingen en gång eller regelbundet."
+>abstract="Lägg till alla kvalificerade profiler från en vald [!DNL Adobe Experience Platform]-målgrupp på den här resan. Kör en gång eller enligt ett schema."
 
-Använd aktiviteten **Läs målgrupp** för att få alla personer i en målgrupp att komma in på resan. Ingången till en resa kan genomföras antingen en gång eller regelbundet.
+Aktiviteten **Läs målgrupp** är den startpunktsaktivitet för resan som lägger till alla profiler från en vald [!DNL Adobe Experience Platform] målgrupp till en resa. Du kan köra ingången en gång eller enligt ett återkommande schema. I API:er och tekniska referenser kallas den här aktiviteten även för segmentutlösare eller målgruppsbaserad resepost.
 
-Låt oss som exempel ta målgruppen&quot;Luma app opening and checkout&quot; som skapats i [Build audiences](../audience/about-audiences.md) -användningsexemplet. Med aktiviteten Läs målgrupp kan du göra så att alla personer som tillhör den här målgruppen går in på en resa. De kommer att flöda in i individuella resor som utnyttjar alla resefunktioner: villkor, tidtagare, händelser, aktiviteter.
+**När ska jag använda behörigheten Läs publik kontra Målgrupp**
+
+| Använd **Läs målgrupp** när | Använd **[målgruppskvalifikation](audience-qualification-events.md)** när |
+|----------------------------|-----------------------------------------------------------------------|
+| Du vill köra en resa en gång eller enligt ett schema (batch). | Ni behöver profiler för att komma in på resan i realtid när de kvalificerar er. |
+| Din målgrupp är grupputvärderad (t.ex. ögonblicksbild varje dag). | Målgruppen är strömmande eller händelsebaserad. |
+| Du är okej med en fördröjning mellan målgruppsutvärdering och reseanmälan. | Du måste ange omedelbart när en profil kvalificerar sig. |
+
+**Nyckelbegränsningar:** En läsmålgrupp per resa (måste vara den första aktiviteten), en målgrupp per aktivitet, upp till fem samtidiga läsningar per organisation, 20 000 profiler per sekund per sandlåda, 12 timmars tidsgräns för jobb. Fullständig information i [Skrivbord och rekommendationer](#must-read).
+
+**Förutsättningar:** En [!DNL Adobe Experience Platform] målgrupp som har byggts och utvärderats (Realized status), ett personbaserat ID-namnområde som har valts för resan och - för återkommande körningar - förståelse för [schemaläggnings- och genomströmningsbegränsningar](#must-read).
+
+`Luma app opening and checkout`-målgruppen som skapats i [Skapa målgrupper](../audience/about-audiences.md) kan till exempel användas som startpunkt. Alla kvalificerade profiler går in på resan och förflyttar sig på individanpassade vägar med villkor, tidtagare, händelser och åtgärder.
 
 ➡️ [Upptäck den här funktionen i en video](#video)
 
->[!NOTE]
->
->När en läsmålgruppsaktivitet körs genererar systemet interna händelser (så kallade `segmentExportJob`-händelser) som spårar målgruppsexportåtgärdens livscykel. Dessa händelser registreras på aktivitetsnivå, inte per enskild profil, och kan efterfrågas i övervaknings- och felsökningssyfte. Läs mer om [frågor om Read Audience-händelser](../reports/query-examples.md#read-segment-queries).
 
 >[!CAUTION]
 >
@@ -59,12 +68,12 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
    >[!NOTE]
    >
    >Dessutom kan du rikta in dig på [!DNL Adobe Experience Platform] målgrupper som skapats med [målgruppskompositioner](../audience/get-started-audience-orchestration.md).
-   >Du kan även rikta in målgrupper [som har överförts från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE#import-audience){target="_blank"}.
+   >Du kan även rikta in målgrupper [som har överförts från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
    >[Läs mer om hur du genererar och målgruppsanpassar i Journey Optimizer](../audience/about-audiences.md).
 
    Observera att du kan anpassa kolumnerna som visas i listan och sortera dem.
 
-   ![Gränssnitt för målgruppsval som visar tillgängliga [!DNL Adobe Experience Platform] målgrupper &#x200B;](assets/read-segment-selection.png)
+   ![Gränssnitt för målgruppsval som visar tillgängliga [!DNL Adobe Experience Platform] målgrupper ](assets/read-segment-selection.png)
 
    När målgruppen har lagts till kan du med knappen **[!UICONTROL Copy]** kopiera dess namn och ID:
 
@@ -74,7 +83,7 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
 
    >[!NOTE]
    >
-   >Det är bara de personer som har **Realiserad**-målgruppsdeltagarstatus som går in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=sv-SE#interpret-segment-results){target="_blank"}.
+   >Det är bara de personer som har **Realiserad**-målgruppsdeltagarstatus som går in på resan. Mer information om hur du utvärderar en målgrupp finns i [dokumentationen för segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. I fältet **[!UICONTROL Namespace]** väljer du det namnutrymme som ska användas för att identifiera personerna. Som standard är fältet förifyllt med det senast använda namnutrymmet. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
 
@@ -94,7 +103,7 @@ Stegen för att konfigurera aktiviteten Läs målgrupp är följande.
 
 * Vi rekommenderar att du bara använder gruppmålgrupper i en **Läs målgrupp** -aktivitet. Detta ger en tillförlitlig och enhetlig räkning för de målgrupper som används under en resa. Läsarna är utformade för att gruppbearbetas. Om ditt användningsfall behöver realtidsdata använder du aktiviteten **[Målgruppskvalificering](audience-qualification-events.md)**.
 
-* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=sv-SE#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
+* Publiker [som har importerats från en CSV-fil](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) eller som är resultatet av [dispositionsarbetsflöden](../audience/get-started-audience-orchestration.md) kan väljas i aktiviteten **Läs målgrupp**. Dessa målgrupper är inte tillgängliga i aktiviteten **Målgruppskvalificering**.
 
 * Concurrent Read Audience Limit per Organization: Varje organisation kan köra upp till fem Read Audience-instanser samtidigt. Detta omfattar både schemalagda körningar och körningar som utlöses av affärshändelser. Gränsen gäller för alla sandlådor och resor. Den här gränsen tillämpas för att säkerställa en rättvis och balanserad resursallokering för alla organisationer.
 
@@ -108,7 +117,7 @@ Guardrutor för aktiviteten **Läs målgrupp** visas på [den här sidan](../sta
 
 >[!CAUTION]
 >
->[Garantier för kundprofildata och segmentering i realtid &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=sv-SE){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
+>[Garantier för kundprofildata och segmentering i realtid ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} gäller även [!DNL Adobe Journey Optimizer].
 
 ### Hantera profilinträde under resan
 
@@ -293,25 +302,48 @@ Om du till exempel har följt en annan upplevelse under tio dagar på en resa ka
 
 ![Resebanor som sammanfogas igen efter segmentering med union](assets/read-segment-audience3.png)
 
-## Felsökning av antal träffar för målgrupper {#audience-count-mismatch}
+## Felsökning {#audience-count-mismatch}
 
-Om du upptäcker skillnader mellan uppskattat antal målgrupper, kvalificerade profiler och faktiska profiler för din resa bör du tänka på följande:
+I det här avsnittet får du hjälp med att lösa **målgruppsfelmatchningar** (färre eller fler profiler än förväntat), **noll profiler bearbetade** (Läs målgruppsvarning eller inga poster) och **fördröjda eller saknade poster** (timing och dataspridning).
 
-### Tidsplanering och dataspridning
+>[!NOTE]
+>
+>När en läsmålgruppsaktivitet körs genererar systemet interna händelser (så kallade `segmentExportJob`-händelser) som spårar målgruppsexportåtgärdens livscykel. Dessa händelser registreras på aktivitetsnivå, inte per enskild profil, och kan efterfrågas i övervaknings- och felsökningssyfte. Läs mer om [frågor om Read Audience-händelser](../reports/query-examples.md#read-segment-queries).
 
-* **Slutförande av batchsegmenteringsjobb**: För batchmålgrupper kontrollerar du att det dagliga batchsegmenteringsjobbet har slutförts och att ögonblicksbilder uppdateras innan resan körs. Batchmålgrupper blir klara att använda cirka **2 timmar** efter att segmenteringsjobbet har slutförts. Läs mer om [metoder för målgruppsutvärdering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=sv-SE#evaluate-segments){target="_blank"}.
+**Hitta ditt problem:**
 
-* **Tidsåtgång för datainförsel**: Verifiera att inmatningen av profildata har slutförts innan resan kördes. Om profiler förtärdes kort innan resan påbörjas kanske de ännu inte återspeglas i målgruppen. Läs mer om [dataöverföring i [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE){target="_blank"}.
+| Symptom | Gå till |
+|---------|--------|
+| Färre (eller fler) profiler än målgruppens storlek | [Timing och dataspridning](#timing-and-data-propagation), [Datavalidering och övervakning](#data-validation-and-monitoring) |
+| Läs målgruppen som behandlats med noll profiler; aviseringen utlöses | [Nollprofiler bearbetade](#zero-profiles-processed) |
+| Poster som är fördröjda eller saknas för batchmålgrupper | [Timing och dataspridning](#timing-and-data-propagation) |
+| Måste verifiera segmentjobbstatus eller namnområde | [Dataverifiering och övervakning](#data-validation-and-monitoring) |
+
+### Nollprofiler har bearbetats {#zero-profiles-processed}
+
+Om aktiviteten **Läs målgrupp** inte har bearbetat någon profil (du ser t.ex. aviseringen [Läs målgrupp](../reports/alerts.md#alert-read-audiences)):
+
+1. **Kontrollera om målgruppen är tom** - I [!DNL Adobe Experience Platform] kontrollerar du målgruppens storlek och att profilerna har statusen **Realized**. En tom eller ännu ej utvärderad publik resulterar i noll poster.
+2. **Kontrollera namnområde** - Det namnområde som valts i aktiviteten Läs målgrupp måste finnas i profilerna hos din målgrupp. Profiler utan den identiteten kan inte komma in på resan. [Läs mer om namnutrymmen](../event/about-creating.md#select-the-namespace).
+3. **Granska aviseringar och försök igen** - Fel rapporteras i **Varningar**. Systemet försöker exportera jobb som skapats var 10:e minut i upp till 1 timme. [Läs mer om återförsök och aviseringar](#read-audience-retry).
+
+Om problemet kvarstår efter dessa kontroller kan du läsa [Timing och dataspridning](#timing-and-data-propagation) och [Datavalidering och övervakning](#data-validation-and-monitoring) för att se om det finns några batch- och konfigurationsorsaker.
+
+### Tidsplanering och dataspridning {#timing-and-data-propagation}
+
+* **Slutförande av batchsegmenteringsjobb**: För batchmålgrupper kontrollerar du att det dagliga batchsegmenteringsjobbet har slutförts och att ögonblicksbilder uppdateras innan resan körs. Batchmålgrupper blir klara att använda cirka **2 timmar** efter att segmenteringsjobbet har slutförts. Läs mer om [metoder för målgruppsutvärdering](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#evaluate-segments){target="_blank"}.
+
+* **Tidsåtgång för datainförsel**: Verifiera att inmatningen av profildata har slutförts innan resan kördes. Om profiler förtärdes kort innan resan påbörjas kanske de ännu inte återspeglas i målgruppen. Läs mer om [dataöverföring i [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 * **Använd alternativet Utlösare efter utvärdering av gruppmålgrupp**: För dagliga schemalagda resor med gruppmålgrupper bör du överväga att aktivera alternativet **[!UICONTROL Trigger after batch audience evaluation]**. Detta garanterar att resan väntar på nya målgruppsdata (upp till 6 timmar) innan den körs. [Läs mer om schemaläggning](#schedule)
 
 * **Lägg till en vänteaktivitet**: För direktuppspelande målgrupper med nyligen inspelade data bör du lägga till en **Wait**-aktivitet i början av resan, så att du kan använda tiden för dataspridning och profilkvalificering. [Läs mer om aktiviteten Vänta](wait-activity.md)
 
-### Datavalidering och övervakning
+### Datavalidering och övervakning {#data-validation-and-monitoring}
 
-* **Kontrollera segmenteringsjobbstatus**: Övervaka jobbslutförandetider för gruppsegmentering på [!DNL Adobe Experience Platform] [kontrollpanelen för övervakning](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=sv-SE){target="_blank"}. Använd det för att verifiera när målgruppsdata är klara.
+* **Kontrollera segmenteringsjobbstatus**: Övervaka jobbslutförandetider för gruppsegmentering på [!DNL Adobe Experience Platform] [kontrollpanelen för övervakning](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html){target="_blank"}. Använd det för att verifiera när målgruppsdata är klara.
 
-* **Verifiera sammanfogningsprinciper**: Kontrollera att den sammanfogningsprincip som har konfigurerats för din målgrupp matchar det förväntade beteendet för att kombinera profildata från olika källor. Läs mer om [sammanslagningsprinciper i [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=sv-SE){target="_blank"}.
+* **Verifiera sammanfogningsprinciper**: Kontrollera att den sammanfogningsprincip som har konfigurerats för din målgrupp matchar det förväntade beteendet för att kombinera profildata från olika källor. Läs mer om [sammanslagningsprinciper i [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html){target="_blank"}.
 
 * **Granska segmentdefinitioner**: Bekräfta att segmentdefinitionerna är korrekt konfigurerade och inkludera alla förväntade kvalificeringskriterier. Läs mer om att [bygga målgrupper](../audience/creating-a-segment-definition.md). Var särskilt uppmärksam på:
    * Tidsbaserade villkor som kan exkludera profiler baserade på händelsetidsstämplar
@@ -320,7 +352,7 @@ Om du upptäcker skillnader mellan uppskattat antal målgrupper, kvalificerade p
 
 * **Verifiera namnområdeskonfiguration**: Kontrollera att det namnutrymme som valts i aktiviteten **Läs målgrupp** matchar den primära identitet som används av profilerna i målgruppen. Profiler utan det valda namnutrymmet kommer inte att gå in på resan. Läs mer om [identitetsnamnutrymmen](../event/about-creating.md#select-the-namespace).
 
-### Bästa tillvägagångssätt för att förhindra avvikelser
+### Bästa tillvägagångssätt för att förhindra missnöjda målgrupper
 
 * **Schemalägg resor efter segmentering**: För batchmålgrupper schemalägger du körning av resan minst 2-3 timmar efter den typiska jobbslutstiden för batchsegmentering. [Läs mer om schemaläggning av resor](#schedule)
 
@@ -330,7 +362,9 @@ Om du upptäcker skillnader mellan uppskattat antal målgrupper, kvalificerade p
 
 * **Övervaka regelbundet**: Ställ in regelbunden övervakning av målgruppsstorlekar och resemätvärden för att upptäcka avvikelser tidigt. Läs mer om [resefrekvenser och hantering av inträde](entry-management.md).
 
-Om antalet avvikelser kvarstår efter att du har utfört dessa steg kontaktar du Adobe support med information om målgrupp, konfiguration av resan och iakttagna avvikelser.
+### Kontakta supporten
+
+Om antalet avvikelser eller nollprofilen kvarstår efter att du följt instruktionerna ovan kontaktar du Adobe support. Ha klart: målgruppsnamn/ID, resenamn/ID, schemalagd körtid(er), sandlåda och en kort beskrivning av diskrepansen (t.ex.&quot;Målgruppen visar 10 kB realiserat, endast 2 kB gick in på resan [date]&quot;).
 
 ## Försök igen {#read-audience-retry}
 
@@ -350,4 +384,4 @@ Om antalet avvikelser kvarstår efter att du har utfört dessa steg kontaktar du
 
 Förstå tillämpliga användningsfall för en resa som triggas av läsmålgruppsaktiviteten. Lär dig hur du bygger batchbaserade resor och vilka metodtips som ska användas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430367?captions=swe&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3424997?quality=12)
