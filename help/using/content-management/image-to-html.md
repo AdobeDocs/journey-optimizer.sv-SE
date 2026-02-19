@@ -10,7 +10,7 @@ level: Beginner
 badge: label="Begränsad tillgänglighet" type="Informative"
 keywords: e-post, mall, bild, HTML, AI, design, konverterare
 exl-id: d13467b7-2f3c-4707-a7e0-9b46cb6cafb1
-source-git-commit: 7cfeabc85b9645be9d61ed6458e57e42ea319619
+source-git-commit: e5b02fe84f00dec189d4002280e9a69b782cd91f
 workflow-type: tm+mt
 source-wordcount: '1640'
 ht-degree: 0%
@@ -50,6 +50,26 @@ Bilden till HTML-konverteraren är perfekt för:
 * **Minska tekniska beroenden**: Gör det möjligt för marknadsförare att skapa och iterera på e-postmallar oberoende av varandra, vilket snabbar upp kampanjkörningen.
 
 +++
+
+## Skyddsutkast och rekommendationer {#limitations}
+
+Tänk på följande begränsningar när du konverterar bilder till HTML innehållsmallar.
+
+* **AI-tolkning**: AI genererar HTML baserat på den visuella tolkningen av din bild. Komplexa eller ovanliga designer kan kräva manuella justeringar efter konverteringen.
+
+* **Textprecision**: Även om AI försöker identifiera och återge text korrekt måste du alltid verifiera textinnehållet och göra nödvändiga korrigeringar.
+
+* **Dynamiskt innehåll**: Vid konverteringen skapas statisk HTML baserat på din bild. Ni måste lägga till personalisering, dynamiskt innehåll och spårning manuellt efter konverteringen.
+
+* **Komplexa layouter**: Mycket komplexa designer med komplicerade lager, ovanliga former eller element som inte är standard kanske inte konverteras perfekt. Enklare design ger i allmänhet bättre resultat.
+
+* **Bearbetningstid**: Konverteringsprocessen kan ta upp till 5 minuter beroende på bildens komplexitet och storlek. AI-bearbetningen sker i bakgrunden, vilket gör att du kan arbeta med andra uppgifter utan att behöva hålla skärmen öppen. Mallen sparas automatiskt som ett utkast när konverteringen är klar.
+
+* **Begränsad tillgänglighet**: Som en begränsad tillgänglighetsfunktion förbättras kontinuerligt bilden till HTML-konverteraren. Funktionaliteten och exaktheten kan variera och din feedback förbättrar funktionen.
+
+>[!NOTE]
+>
+>Konverteraren för bilder till HTML är utformad för att ge en bra startpunkt för e-postgenerering. Den genererade HTML bör granskas och förfinas med e-post-Designer för att säkerställa att den uppfyller dina exakta krav.
 
 ## Konvertera en bild till en HTML-mall {#convert-image}
 
@@ -114,12 +134,14 @@ Din mall är nu tillgänglig i innehållsmallbiblioteket och kan användas när 
 
 Följ de här rekommendationerna för att få optimala resultat när du konverterar bilder till HTML innehållsmallar.
 
-**Innan du börjar**
++++Innan du börjar
 
 * **Spara befintligt innehåll**: Om du konverterar en bild till HTML ersätts allt befintligt innehåll i e-postmeddelandet. Spara alltid ditt aktuella arbete innan du använder den här funktionen.
 * **Planera ditt arbetsflöde**: Använd konverteraren för bilden till HTML i början av e-postprocessen eller kontrollera att du är redo att ersätta allt aktuellt innehåll.
 
-**Bildförberedelse**
++++
+
++++Bildförberedelse
 
 * **Upplösning**: Använd högupplösta bilder (minst 1 200 pixlar bred) för bättre textigenkänning och elementidentifiering
 * **Klarhet**: Kontrollera att texten är tydligt läsbar och att visuella element är väldefinierade
@@ -127,7 +149,9 @@ Följ de här rekommendationerna för att få optimala resultat när du konverte
 * **Filformat**: Använd JPEG- eller PNG-format - undvik komprimerade bilder eller bilder med låg kvalitet
 * **Fullständig design**: Inkludera den fullständiga e-postdesignen i en enda bild, från sidhuvud till sidfot
 
-**Designöverväganden**
++++
+
++++Designöverväganden
 
 * **Enkla layouter**: Enklare, välstrukturerade layouter konverteras exaktare än mycket komplexa designer
 * **Standardelement**: Använd vanliga designmönster för e-post (sidhuvud, brödavsnitt, CTA:er, sidfot)
@@ -135,7 +159,9 @@ Följ de här rekommendationerna för att få optimala resultat när du konverte
 * **Webbsäkra teckensnitt**: Designer som använder vanliga webbsäkra teckensnitt har bättre återgivning
 * **Undvik överlappande element**: Behåll designelement tydligt separerade för bättre strukturegenkänning
 
-**Efter konvertering**
++++
+
++++Efter konvertering
 
 * **Granska utkastet**: När konverteringen är klar sparas mallen automatiskt som ett utkast. Granska den genererade HTML noggrant
 * **Testa noggrant**: Testa e-postmeddelandet på olika e-postklienter och enheter
@@ -144,25 +170,7 @@ Följ de här rekommendationerna för att få optimala resultat när du konverte
 * **Personalization**: Lägg till dynamiska innehålls- och personaliseringstoken efter behov
 * **Hjälpmedel**: Granska och förbättra tillgänglighetsfunktioner om det behövs
 
-## Skyddsutkast och rekommendationer {#limitations}
-
-Tänk på följande begränsningar när du konverterar bilder till HTML innehållsmallar.
-
-* **AI-tolkning**: AI genererar HTML baserat på den visuella tolkningen av din bild. Komplexa eller ovanliga designer kan kräva manuella justeringar efter konverteringen.
-
-* **Textprecision**: Även om AI försöker identifiera och återge text korrekt måste du alltid verifiera textinnehållet och göra nödvändiga korrigeringar.
-
-* **Dynamiskt innehåll**: Vid konverteringen skapas statisk HTML baserat på din bild. Ni måste lägga till personalisering, dynamiskt innehåll och spårning manuellt efter konverteringen.
-
-* **Komplexa layouter**: Mycket komplexa designer med komplicerade lager, ovanliga former eller element som inte är standard kanske inte konverteras perfekt. Enklare design ger i allmänhet bättre resultat.
-
-* **Bearbetningstid**: Konverteringsprocessen kan ta upp till 5 minuter beroende på bildens komplexitet och storlek. AI-bearbetningen sker i bakgrunden, vilket gör att du kan arbeta med andra uppgifter utan att behöva hålla skärmen öppen. Mallen sparas automatiskt som ett utkast när konverteringen är klar.
-
-* **Begränsad tillgänglighet**: Som en begränsad tillgänglighetsfunktion förbättras kontinuerligt bilden till HTML-konverteraren. Funktionaliteten och exaktheten kan variera och din feedback förbättrar funktionen.
-
->[!NOTE]
->
->Konverteraren för bilder till HTML är utformad för att ge en bra startpunkt för e-postgenerering. Den genererade HTML bör granskas och förfinas med e-post-Designer för att säkerställa att den uppfyller dina exakta krav.
++++
 
 ## Vanliga frågor och svar {#faq}
 
