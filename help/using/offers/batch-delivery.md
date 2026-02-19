@@ -9,9 +9,9 @@ role: User
 level: Intermediate
 exl-id: 810c05b3-2bae-4368-bf12-3ea8c2f31c01
 version: Journey Orchestration
-source-git-commit: 8732a73118b807eaa7f57cfdad60355b535282ff
+source-git-commit: 77fdbd9ea47d20fa2b2534cc9520a9b3cd011ac5
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '840'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->Beslutsfattandet, [!DNL Adobe Journey Optimizer]s nya beslutsfunktion, är nu tillgängligt via den kodbaserade upplevelsen och e-postkanalerna! [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
+>Beslutsfattandet, [!DNL Adobe Journey Optimizer]:s nya beslutsfunktion, är nu tillgängligt via kodbaserad upplevelse, e-post, SMS och push-kanaler! [Läs mer](../experience-decisioning/gs-experience-decisioning.md)
 
 ## Kom igång med batchbeslut {#start}
 
@@ -34,7 +34,7 @@ Batchleverans kan också utföras med API:er. Mer information finns i [API-dokum
 
 Innan du konfigurerar en jobbförfrågan bör du kontrollera att du har skapat:
 
-* **En datauppsättning** i Adobe Experience Platform. Den här datauppsättningen används för att lagra beslutsresultatet med ODE-schema för beslutshändelser. Läs mer i [dokumentationen för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=sv-SE).
+* **En datauppsättning** i Adobe Experience Platform. Den här datauppsättningen används för att lagra beslutsresultatet med ODE-schema för beslutshändelser. Läs mer i [dokumentationen för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
 * **En målgrupp** i Adobe Experience Platform. Publiken bör utvärderas och sedan uppdateras. Lär dig hur du uppdaterar utvärdering av målgruppsmedlemskap i [dokumentationen för segmenteringstjänsten](https://www.adobe.com/go/segmentation-overview-en)
 
