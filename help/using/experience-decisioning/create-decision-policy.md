@@ -7,10 +7,10 @@ role: User
 level: Experienced
 version: Journey Orchestration
 exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
-source-git-commit: 743165991c3f4d351cd6ab15e94ece0309c8e82a
+source-git-commit: 708c67796974e019417efbf086ab60d26dfca866
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 1%
+source-wordcount: '2105'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 >id="ajo_code_based_strategy"
 >title="Vad är en strategi?"
 >abstract="Sekvensen med urvalsstrategi avgör vilken strategi som ska utvärderas först. Minst en strategi krävs. Beslutsposter i kombinerade strategier kommer att utvärderas tillsammans."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="Skapa strategier"
 
 Om du vill presentera det bästa dynamiska erbjudandet och upplevelsen för dina kunder lägger du till en beslutsprincip i innehållet i en kampanj eller resa och konfigurerar sedan objekten som ska returneras och urvalsstrategin som ska användas. För att göra detta, följ nedanstående steg:
 
@@ -113,7 +113,9 @@ För kodbaserade upplevelser kan du lägga till en ny beslutsprincip med antinge
 
    >[!NOTE]
    >
-   >Med **[!UICONTROL Reuse decision output]** kan du återanvända en beslutsprincip som redan har skapats i det här e-postmeddelandet.
+   >Med alternativet **[!UICONTROL Reuse decision output]** kan du återanvända en beslutsprincip som redan har skapats i det här e-postmeddelandet. Det är särskilt användbart när du vill visa samma erbjudande på flera platser (till exempel sidhuvud och sidfot).
+   >
+   >När samma erbjudande kan väljas genom mer än en beslutspolicy i e-postmeddelandet deduplicerar motorn erbjudanden: varje placering får ett annat erbjudande, så samma erbjudande visas inte på båda ställena. Om du vill visa samma erbjudande på flera platser använder du **[!UICONTROL Reuse decision output]** för att återanvända utdata från en befintlig beslutsprincip i det här e-postmeddelandet.
 
 >[!TAB SMS]
 

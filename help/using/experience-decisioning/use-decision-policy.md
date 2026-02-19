@@ -8,9 +8,9 @@ level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
 exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
-source-git-commit: 71a5b2163500b26ef3ea61e55d18cad539bfeb7f
+source-git-commit: 708c67796974e019417efbf086ab60d26dfca866
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,10 @@ När du har lagt till en beslutsprincip i innehållet kan du använda attribut f
 3. Om ingen placering ännu har tilldelats komponenten väljer du en i listan och klickar på **[!UICONTROL Assign]**.
 
    ![](assets/decision-policy-placement.png)
+
+   >[!NOTE]
+   >
+   >Om du använder flera beslutsprinciper i samma e-postmeddelande (till exempel en för sidhuvudet och en för sidfoten), dedupliceras samma erbjudande för alla ersättningar: varje område får ett eget erbjudande. Om du vill visa samma erbjudande i flera områden använder du **[!UICONTROL Reuse decision output]** när du lägger till en beslutsprincip. [Lär dig hur du skapar beslutsprofiler](create-decision-policy.md).
 
 >[!TAB SMS]
 
