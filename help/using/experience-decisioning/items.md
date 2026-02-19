@@ -7,9 +7,9 @@ role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
 version: Journey Orchestration
-source-git-commit: 6c85cfa27002de17f6625447fa0b7eaaceb9f829
+source-git-commit: 8d1de57221e73e8ffeea71377e1e9cd8e5ff6f0e
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2140'
 ht-degree: 0%
 
 ---
@@ -78,8 +78,8 @@ Börja med att definiera beslutsobjektets standardattribut och anpassade attribu
 >abstract="Som standard är alla profiler berättigade att ta emot beslutsobjektet, men du kan använda målgrupper eller regler för att begränsa objektet till enbart vissa profiler."
 
 <!--
->"additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Use audiences"
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Use decision rules"
+>"additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences" text="Use audiences"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/rules" text="Use decision rules"
 -->
 
 
@@ -136,13 +136,25 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan stegen nedan 
    * **[!UICONTROL Decision event]** (standardvärde): Maximalt antal gånger ett erbjudande kan presenteras.
    * **[!UICONTROL Impression]** (endast inkommande kanaler): Maximalt antal gånger som erbjudandet kan visas för en användare.
    * **[!UICONTROL Clicks]**: Maximalt antal gånger en användare kan klicka på beslutsobjektet.
-   * **[!UICONTROL Custom event]**: Du kan definiera en anpassad händelse som ska användas för att ange hur många gånger objektet ska skickas. Du kan t.ex. sätta ett tak för antalet inlösen tills de blir 10 000 eller tills en viss profil har lösts in 1 gång. Använd [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}-scheman för att skapa en anpassad händelseregel.
+   * **[!UICONTROL Custom event]**: Karta baserad på händelser i företags- eller beteendeupplevelser som du spårar i Adobe Experience Platform, t.ex. inlösen, köp eller kundvagn. Vid anpassad händelsebegränsning används [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv){target="_blank"}-upplevelsehändelser som du importerar. I listrutan mappar du den specifika upplevelsehändelse som ska styra ändpunkten så att fästräknaren ökar varje gång händelsen tas emot. Fånga efter kanalleveranshändelser som e-postutskick stöds inte: Anpassad händelse gäller bara för upplevelsehändelser som du anger, inte för leverans- eller skicka-händelser.
 
-   >[!NOTE]
-   >
-   >För alla takthändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, vilket kan leda till att appningsräknaren inte ökas korrekt. För att vara säker på att varje takthändelse spåras och tas med i appningsräknaren måste du se till att schemat som används för att samla in upplevelsehändelser innehåller rätt fältgrupp för den händelsen. Detaljerad information om datainsamling finns i Journey Optimizer beslutsdokumentation:
-   >* [Datainsamling för beslutshantering](data-collection/data-collection.md)
-   >* [Konfigurera datainsamling](data-collection/schema-requirement.md)
+   +++Takning för Push-kanalen
+
+   Standard **[!UICONTROL Clicks]** och **[!UICONTROL Impression]**-begränsning stöds inte för Push-kanalen. Använd **[!UICONTROL Custom event]**-appning och ställ in händelsetypen till **Push Tracking Application Opened** eller **Push Tracking Custom Action** om du vill ange att erbjudanden ska levereras via Push.
+
+   För push-meddelanden inkluderar spårningshändelser från mobilkanalen Experience Cloud-id (ECID). Vi rekommenderar att du använder ECID i Campaign- eller Journey-konfigurationen för att bibehålla en konsekvent identitet och säkerställa att appningen fungerar som förväntat.
+
+   ![](assets/push-capping.png)
+
+   +++
+
+   +++Spåra takthändelser (schema- och datainsamling)
+
+   För alla takthändelser utom beslutshändelser kanske feedback för beslutshanteringen inte samlas in automatiskt, vilket kan leda till att appningsräknaren inte ökas korrekt. För att vara säker på att varje takthändelse spåras och tas med i appningsräknaren måste du se till att schemat som används för att samla in upplevelsehändelser innehåller rätt fältgrupp för den händelsen. Detaljerad information om datainsamling finns i Journey Optimizer beslutsdokumentation:
+   * [Insamling av data för beslutshantering](data-collection/data-collection.md)
+   * [Konfigurera datainsamling](data-collection/schema-requirement.md)
+
+   +++
 
 1. Välj typ av begränsning:
 
@@ -176,7 +188,7 @@ Klicka på knappen **[!UICONTROL Create capping]** och följ sedan stegen nedan 
 
    +++
 
-1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **&#x200B;**&#x200B;i det andra fältet.
+1. I listrutan **[!UICONTROL Reset capping frequency]** anger du med vilken frekvens räknaren för fästning ska återställas. Det gör du genom att definiera tidsperioden för inventeringen (varje dag, varje vecka eller varje månad) och ange hur många dagar/veckor/månader du vill ha. Om du till exempel vill att antalet capping ska återställas varannan vecka, väljer du **[!UICONTROL Weekly]** i motsvarande listruta och skriver **** i det andra fältet.
 
    * Räknaren för frekvensbegränsning återställs kl. **12 UTC**, den dag du definierade eller den första dagen i veckan/månaden, om tillämpligt. Veckostartdagen är **Söndag**. En varaktighet som du väljer får inte vara längre än **2 år** (d.v.s. motsvarande antal månader, veckor eller dagar).
 
