@@ -5,9 +5,9 @@ user-guide-title: Användarhandbok om Journey Optimizer
 user-guide-description: Använd Journey Optimizer för att skapa och leverera sammankopplade, kontextuella och personanpassade upplevelser till kunderna
 type: Documentation
 solution: Journey Optimizer
-source-git-commit: 316553be4f04e4fc0ae11bc767f7e48f64fc5ccd
+source-git-commit: 6c509ef134c4240b243d255fd1ab7ec6bb062bf0
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3101'
 ht-degree: 15%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 15%
       + [Skapa en resa](/help/rp_landing_pages/create-journey-landing-page.md)
       + [Skapa den första resan](using/building-journeys/journey-gs.md)
       + [Ange egenskaper för din resa](using/building-journeys/journey-properties.md)
+      + [Skicka med vågor på resor](using/building-journeys/send-using-waves.md)
       + [Konfigurera och spåra dina resemått](using/building-journeys/success-metrics.md)
       + [Designa din resa](using/building-journeys/using-the-journey-designer.md)
       + [Testa din resa](using/building-journeys/testing-the-journey.md)
@@ -150,6 +151,7 @@ ht-degree: 15%
       + [Redigera kampanjinnehållet](using/campaigns/campaign-content.md)
       + [Definiera kampanjmålgruppen](using/campaigns/campaign-audience.md)
       + [Schemalägg kampanjen](using/campaigns/campaign-schedule.md)
+      + [Skicka med vågor](using/campaigns/send-using-waves.md)
       + [Granska och aktivera en åtgärdskampanj](using/campaigns/review-activate-campaign.md)
    + API-utlösta kampanjer {#api-triggered-campaigns}
       + [API-utlösta kampanjer](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
@@ -850,7 +852,7 @@ ht-degree: 15%
       + [Datauppsättningar TTL-skyddsutkast (Time-to-live)](using/data/datasets-ttl.md)
       + [Exportera Journey Optimizer-datauppsättningar](using/data/export-datasets.md)
       + [Frågeexempel](using/data/datasets-query-examples.md)
-      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=sv-SE)
+      + [Inbyggda scheman >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
    + [Använd Adobe Experience Platform-data](using/data/lookup-aep-data.md)
    + [Frågor](using/data/get-started-queries.md)
 + Kanalkonfiguration {#configuration}

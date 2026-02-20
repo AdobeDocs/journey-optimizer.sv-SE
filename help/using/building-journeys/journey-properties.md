@@ -10,9 +10,9 @@ level: Intermediate
 keywords: resa, konfiguration, egenskaper
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 version: Journey Orchestration
-source-git-commit: 70653bafbbe8f1ece409e3005256d9dff035b518
+source-git-commit: 6c509ef134c4240b243d255fd1ab7ec6bb062bf0
 workflow-type: tm+mt
-source-wordcount: '2839'
+source-wordcount: '2865'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Hanteringen av profilentréer beror på typen av resa. Läs mer om hantering av 
 >id="ajo_journey_properties_entrance"
 >title="Tillåt återinträde"
 >abstract="Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** till exempel om du vill erbjuda en engångspresentation när en person går in i en affär."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **Tillåt återinträde** för engångsresor, till exempel om du vill erbjuda en engångsgåva när en person går till en affär.
 
@@ -73,7 +73,7 @@ Som standard tillåter nya resor återinträde. Du kan avmarkera alternativet **
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Vänteperiod för återinträde"
 >abstract="Ställ in väntetiden innan du tillåter att en profil går in på resan igen med enhetsresor. Detta förhindrar att användarna kommer in på resan igen under en viss tid. Maximal varaktighet: 90 dagar."
->additional-url="https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profilingångshantering"
 
 När alternativet **Tillåt återinträde** är aktiverat visas fältet **Återkommande vänteperiod**. I det här fältet kan du definiera väntetiden innan du tillåter en profil att gå in på resan igen med en enda resa (med början från en händelse eller en målgruppskvalifikation). Detta förhindrar att resor utlöses felaktigt flera gånger för samma händelse. Som standard är fältet inställt på 5 minuter. Maximala längden är 90 dagar.
 
@@ -260,7 +260,7 @@ Från och med [!DNL Adobe Journey Optimizer] juni 2024 har den globala tidsgrän
 
 [!DNL Adobe Journey Optimizer] tillämpar den sammanslagningsprincip som används under hela resan. Om flera målgrupper används i en resa (till exempel med in [`inAudience`-funktioner](functions/functioninaudience.md)) skapas därför inkonsekvenser med den sammanfogningsprincip som används för resan. Ett fel genereras och publikationen blockeras. Men om en inkonsekvent målgrupp används i meddelandepersonalisering visas ingen varning trots inkonsekvensen. Därför rekommenderar vi att du kontrollerar vilken sammanfogningspolicy som är kopplad till målgruppen när den här målgruppen används i meddelandepersonalisering.
 
-Mer information om sammanfogningsprinciper finns i [[!DNL Adobe Experience Platform] dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+Mer information om sammanfogningsprinciper finns i [[!DNL Adobe Experience Platform] dokumentationen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 >[!NOTE]
 >
@@ -351,7 +351,12 @@ Följande skyddsutkast gäller när du använder funktionen [Profilattributsbase
 
 ## Reseschema {#schedule}
 
-Avsnittet **[!UICONTROL Schedule]** är bara tillgängligt när en **[!UICONTROL Read Audience]**-aktivitet har släppts på arbetsytan. Det gör att du kan definiera ett specifikt datum/tid och en viss frekvens som resan ska köras med. [Lär dig schemalägga en läsarresa](../building-journeys/read-audience.md)
+Avsnittet **[!UICONTROL Schedule]** är bara tillgängligt när en **[!UICONTROL Read Audience]**-aktivitet har släppts på arbetsytan. Det gör att du kan definiera ett specifikt datum/tid och en viss frekvens som resan ska köras med. [Lär dig schemalägga en läsarresa](read-audience.md#schedule)
+
+>[!TIP]
+>
+>När du schemalägger resan kan du även konfigurera vågsändning så att den levererar reseåtgärder i grupper över tid. [Lär dig hur du skickar med vågor på resor](send-using-waves.md)
+
 
 ## Konflikthantering {#conflict}
 

@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: 617d623c-e038-4b5b-a367-5254116b7815
-source-git-commit: d1fd0b60ae60c2642108a1eb308564c9d04f5f9e
+source-git-commit: 6c509ef134c4240b243d255fd1ab7ec6bb062bf0
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '213'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ Innan du börjar med kampanjer bör du kontrollera följande krav som anges [i d
 1. [Konfigurera kampanjåtgärden](campaign-action.md)
 1. [Redigera innehållet i åtgärdskampanjen](campaign-content.md)
 1. [Definiera målgruppen för Action-kampanjen](campaign-audience.md)
-1. [Schemalägg åtgärdskampanjen](campaign-schedule.md)
+1. [Schemalägg åtgärdskampanjen](campaign-schedule.md). Du kan också [skicka med vågor](send-using-waves.md) om du vill leverera meddelandet i grupper över tid.
 1. [Granska och aktivera åtgärdskampanjen](review-activate-campaign.md)
 
 Läs mer om det [kompletta arbetsflödet för kampanjskapande med typspecifika guider →](get-started-with-campaigns.md#workflow)

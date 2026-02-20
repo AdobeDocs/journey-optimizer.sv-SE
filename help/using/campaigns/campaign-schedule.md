@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: b183eeb8-606f-444d-9302-274f159c3847
-source-git-commit: 2458a0f84aa0318f956a0a7edff20aff711159a5
+source-git-commit: 6c509ef134c4240b243d255fd1ab7ec6bb062bf0
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,12 @@ Om du vill ange hastighetskontroll aktiverar du alternativet **[!UICONTROL Throt
 >[!IMPORTANT]
 >
 >När du anger en leveransfrekvens är den maximala tidsram som kampanjens målgrupp kan genomföra 12 timmar. Om leveransfrekvensen är inställd på ett värde som inte tillåter att alla målgrupper får meddelandet inom 12-timmars tidsram, kommer de återstående profilerna att uteslutas från kampanjen. Du kan se antalet uteslutna profiler i kampanjrapporten.
+
+## Skicka med vågor
+
+Om ni vill leverera kampanjmeddelanden gruppvis i stället för alla samtidigt kan ni använda vågutskick. Detta bidrar till att balansera belastning, leveransförmåga och undvika överväldigande system i efterföljande led (till exempel callcenters eller landningssidor). Du definierar antalet vågor, deras storlek (i procent eller absolut antal) och schemat för varje våg.
+
+[Lär dig hur du skickar med vågor](send-using-waves.md).
 
 ## Nästa steg {#next}
 
