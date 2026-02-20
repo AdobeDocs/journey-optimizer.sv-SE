@@ -10,9 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: skapa, optimera, kampanj, yta, meddelanden
 exl-id: b183eeb8-606f-444d-9302-274f159c3847
-source-git-commit: e6aa361229f068c475732c715160b7c644189e51
+source-git-commit: 2458a0f84aa0318f956a0a7edff20aff711159a5
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,6 @@ Om du t.ex. schemalägger en kampanj att skickas kl. 9.00 med tidszon för profi
 
 >[!AVAILABILITY]
 >
->Den här funktionen är begränsad. Kontakta din Adobe-representant för att få åtkomst.
->
 >Schemaläggning med tidszoner för profiler är endast tillgängligt för dessa utgående kanaler: Email, Push, SMS, WhatsApp och LINE.
 
 Så här aktiverar du tidszonsplanering för profiler:
@@ -62,7 +60,9 @@ Kampanjen behåller statusen **Live** medan meddelanden levereras över alla tid
 
 **Tidszonsidentifierare som stöds:**
 
-Journey Optimizer validerar värdet `profile.timeZone` mot IANA-standardidentifierare för tidszon. Identifierare är skiftlägeskänsliga och måste matcha det officiella IANA-namnet. Förskjutningar kan ändras över tid på grund av sommarregler och historiska uppdateringar. I [IANA-tidszonsdatabasen](https://www.iana.org/time-zones){_blank} finns en officiell lista över identifierare.
+Formatet `profile.timeZone` kan vara antingen IANA-namn eller definierat som UTC-förskjutningar. IANA-namngivning är det format som du föredrar, eftersom det automatiskt justeras för regler som sparar dagsljus.
+
+För IANA-namngivning är identifierarna skiftlägeskänsliga och måste matcha det officiella IANA-namnet. Förskjutningar kan ändras över tid på grund av sommarregler och historiska uppdateringar. I [IANA-tidszonsdatabasen](https://www.iana.org/time-zones){_blank} finns en officiell lista över identifierare.
 
 ## Ange en körningsfrekvens
 
