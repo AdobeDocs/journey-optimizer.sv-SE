@@ -4,11 +4,11 @@ product: journey optimizer
 title: Skicka med vågor
 description: Schemalägg utgående kampanjmeddelanden som ska levereras i kontrollerade batchar över tid. Påfyllnadssändning stöder leverans och bidrar till att upprätthålla avsändarens anseende.
 feature: Campaigns
-topic: Campaign scheduling
+topic: Content Management
 role: User
 level: Intermediate
 keywords: vågor, batchar, schema, kampanj, resa, leveransbarhet
-source-git-commit: 6c509ef134c4240b243d255fd1ab7ec6bb062bf0
+source-git-commit: 7df05e41b086c60724576328c5bcfee47cab65ca
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
